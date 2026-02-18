@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcEndpointRouteTableAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface VpcEndpointRouteTableAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_route_table_association#id VpcEndpointRouteTableAssociation#id}
   *
@@ -38,7 +38,7 @@ export interface VpcEndpointRouteTableAssociationConfig extends cdktf.TerraformM
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_route_table_association aws_vpc_endpoint_route_table_association}
 */
-export class VpcEndpointRouteTableAssociation extends cdktf.TerraformResource {
+export class VpcEndpointRouteTableAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class VpcEndpointRouteTableAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcEndpointRouteTableAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcEndpointRouteTableAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcEndpointRouteTableAssociation to import
   * @param importFromId The id of the existing VpcEndpointRouteTableAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_route_table_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcEndpointRouteTableAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_endpoint_route_table_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_endpoint_route_table_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class VpcEndpointRouteTableAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      route_table_id: cdktf.stringToTerraform(this._routeTableId),
-      vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      route_table_id: cdktn.stringToTerraform(this._routeTableId),
+      vpc_endpoint_id: cdktn.stringToTerraform(this._vpcEndpointId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       route_table_id: {
-        value: cdktf.stringToHclTerraform(this._routeTableId),
+        value: cdktn.stringToHclTerraform(this._routeTableId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._vpcEndpointId),
+        value: cdktn.stringToHclTerraform(this._vpcEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamOrganizationsFeaturesConfig extends cdktf.TerraformMetaArguments {
+export interface IamOrganizationsFeaturesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}
   */
@@ -21,7 +21,7 @@ export interface IamOrganizationsFeaturesConfig extends cdktf.TerraformMetaArgum
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_organizations_features aws_iam_organizations_features}
 */
-export class IamOrganizationsFeatures extends cdktf.TerraformResource {
+export class IamOrganizationsFeatures extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -32,14 +32,14 @@ export class IamOrganizationsFeatures extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamOrganizationsFeatures resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamOrganizationsFeatures resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamOrganizationsFeatures to import
   * @param importFromId The id of the existing IamOrganizationsFeatures that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_organizations_features#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamOrganizationsFeatures to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_organizations_features", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_organizations_features", importId: importFromId, provider });
       }
 
   // ===========
@@ -79,7 +79,7 @@ export class IamOrganizationsFeatures extends cdktf.TerraformResource {
   // enabled_features - computed: false, optional: false, required: true
   private _enabledFeatures?: string[]; 
   public get enabledFeatures() {
-    return cdktf.Fn.tolist(this.getListAttribute('enabled_features'));
+    return cdktn.Fn.tolist(this.getListAttribute('enabled_features'));
   }
   public set enabledFeatures(value: string[]) {
     this._enabledFeatures = value;
@@ -100,14 +100,14 @@ export class IamOrganizationsFeatures extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled_features: cdktf.listMapper(cdktf.stringToTerraform, false)(this._enabledFeatures),
+      enabled_features: cdktn.listMapper(cdktn.stringToTerraform, false)(this._enabledFeatures),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enabled_features: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._enabledFeatures),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._enabledFeatures),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

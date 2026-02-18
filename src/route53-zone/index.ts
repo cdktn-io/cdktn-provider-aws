@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Route53ZoneConfig extends cdktf.TerraformMetaArguments {
+export interface Route53ZoneConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_zone#comment Route53Zone#comment}
   */
@@ -23,11 +23,11 @@ export interface Route53ZoneConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_zone#enable_accelerated_recovery Route53Zone#enable_accelerated_recovery}
   */
-  readonly enableAcceleratedRecovery?: boolean | cdktf.IResolvable;
+  readonly enableAcceleratedRecovery?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_zone#force_destroy Route53Zone#force_destroy}
   */
-  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_zone#id Route53Zone#id}
   *
@@ -58,7 +58,7 @@ export interface Route53ZoneConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_zone#vpc Route53Zone#vpc}
   */
-  readonly vpc?: Route53ZoneVpc[] | cdktf.IResolvable;
+  readonly vpc?: Route53ZoneVpc[] | cdktn.IResolvable;
 }
 export interface Route53ZoneTimeouts {
   /**
@@ -75,39 +75,39 @@ export interface Route53ZoneTimeouts {
   readonly update?: string;
 }
 
-export function route53ZoneTimeoutsToTerraform(struct?: Route53ZoneTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53ZoneTimeoutsToTerraform(struct?: Route53ZoneTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function route53ZoneTimeoutsToHclTerraform(struct?: Route53ZoneTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53ZoneTimeoutsToHclTerraform(struct?: Route53ZoneTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,19 +118,19 @@ export function route53ZoneTimeoutsToHclTerraform(struct?: Route53ZoneTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53ZoneTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Route53ZoneTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Route53ZoneTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53ZoneTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -151,7 +151,7 @@ export class Route53ZoneTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53ZoneTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53ZoneTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -159,7 +159,7 @@ export class Route53ZoneTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -231,32 +231,32 @@ export interface Route53ZoneVpc {
   readonly vpcRegion?: string;
 }
 
-export function route53ZoneVpcToTerraform(struct?: Route53ZoneVpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53ZoneVpcToTerraform(struct?: Route53ZoneVpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
-    vpc_region: cdktf.stringToTerraform(struct!.vpcRegion),
+    vpc_id: cdktn.stringToTerraform(struct!.vpcId),
+    vpc_region: cdktn.stringToTerraform(struct!.vpcRegion),
   }
 }
 
 
-export function route53ZoneVpcToHclTerraform(struct?: Route53ZoneVpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53ZoneVpcToHclTerraform(struct?: Route53ZoneVpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     vpc_id: {
-      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      value: cdktn.stringToHclTerraform(struct!.vpcId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vpc_region: {
-      value: cdktf.stringToHclTerraform(struct!.vpcRegion),
+      value: cdktn.stringToHclTerraform(struct!.vpcRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -267,9 +267,9 @@ export function route53ZoneVpcToHclTerraform(struct?: Route53ZoneVpc | cdktf.IRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53ZoneVpcOutputReference extends cdktf.ComplexObject {
+export class Route53ZoneVpcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -277,11 +277,11 @@ export class Route53ZoneVpcOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Route53ZoneVpc | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53ZoneVpc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -298,14 +298,14 @@ export class Route53ZoneVpcOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53ZoneVpc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53ZoneVpc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._vpcId = undefined;
       this._vpcRegion = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -347,15 +347,15 @@ export class Route53ZoneVpcOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class Route53ZoneVpcList extends cdktf.ComplexList {
-  public internalValue? : Route53ZoneVpc[] | cdktf.IResolvable
+export class Route53ZoneVpcList extends cdktn.ComplexList {
+  public internalValue? : Route53ZoneVpc[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -370,7 +370,7 @@ export class Route53ZoneVpcList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_zone aws_route53_zone}
 */
-export class Route53Zone extends cdktf.TerraformResource {
+export class Route53Zone extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -381,14 +381,14 @@ export class Route53Zone extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Route53Zone resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Route53Zone resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53Zone to import
   * @param importFromId The id of the existing Route53Zone that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_zone#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53Zone to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_zone", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_zone", importId: importFromId, provider });
       }
 
   // ===========
@@ -472,11 +472,11 @@ export class Route53Zone extends cdktf.TerraformResource {
   }
 
   // enable_accelerated_recovery - computed: true, optional: true, required: false
-  private _enableAcceleratedRecovery?: boolean | cdktf.IResolvable; 
+  private _enableAcceleratedRecovery?: boolean | cdktn.IResolvable; 
   public get enableAcceleratedRecovery() {
     return this.getBooleanAttribute('enable_accelerated_recovery');
   }
-  public set enableAcceleratedRecovery(value: boolean | cdktf.IResolvable) {
+  public set enableAcceleratedRecovery(value: boolean | cdktn.IResolvable) {
     this._enableAcceleratedRecovery = value;
   }
   public resetEnableAcceleratedRecovery() {
@@ -488,11 +488,11 @@ export class Route53Zone extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  private _forceDestroy?: boolean | cdktn.IResolvable; 
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+  public set forceDestroy(value: boolean | cdktn.IResolvable) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -600,7 +600,7 @@ export class Route53Zone extends cdktf.TerraformResource {
   public get vpc() {
     return this._vpc;
   }
-  public putVpc(value: Route53ZoneVpc[] | cdktf.IResolvable) {
+  public putVpc(value: Route53ZoneVpc[] | cdktn.IResolvable) {
     this._vpc.internalValue = value;
   }
   public resetVpc() {
@@ -617,65 +617,65 @@ export class Route53Zone extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      delegation_set_id: cdktf.stringToTerraform(this._delegationSetId),
-      enable_accelerated_recovery: cdktf.booleanToTerraform(this._enableAcceleratedRecovery),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      comment: cdktn.stringToTerraform(this._comment),
+      delegation_set_id: cdktn.stringToTerraform(this._delegationSetId),
+      enable_accelerated_recovery: cdktn.booleanToTerraform(this._enableAcceleratedRecovery),
+      force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       timeouts: route53ZoneTimeoutsToTerraform(this._timeouts.internalValue),
-      vpc: cdktf.listMapper(route53ZoneVpcToTerraform, true)(this._vpc.internalValue),
+      vpc: cdktn.listMapper(route53ZoneVpcToTerraform, true)(this._vpc.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delegation_set_id: {
-        value: cdktf.stringToHclTerraform(this._delegationSetId),
+        value: cdktn.stringToHclTerraform(this._delegationSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_accelerated_recovery: {
-        value: cdktf.booleanToHclTerraform(this._enableAcceleratedRecovery),
+        value: cdktn.booleanToHclTerraform(this._enableAcceleratedRecovery),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_destroy: {
-        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        value: cdktn.booleanToHclTerraform(this._forceDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -687,7 +687,7 @@ export class Route53Zone extends cdktf.TerraformResource {
         storageClassType: "Route53ZoneTimeouts",
       },
       vpc: {
-        value: cdktf.listMapperHcl(route53ZoneVpcToHclTerraform, true)(this._vpc.internalValue),
+        value: cdktn.listMapperHcl(route53ZoneVpcToHclTerraform, true)(this._vpc.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "Route53ZoneVpcList",

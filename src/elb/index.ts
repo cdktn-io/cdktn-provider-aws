@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ElbConfig extends cdktf.TerraformMetaArguments {
+export interface ElbConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elb#availability_zones Elb#availability_zones}
   */
@@ -19,7 +19,7 @@ export interface ElbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elb#connection_draining Elb#connection_draining}
   */
-  readonly connectionDraining?: boolean | cdktf.IResolvable;
+  readonly connectionDraining?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elb#connection_draining_timeout Elb#connection_draining_timeout}
   */
@@ -27,7 +27,7 @@ export interface ElbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elb#cross_zone_load_balancing Elb#cross_zone_load_balancing}
   */
-  readonly crossZoneLoadBalancing?: boolean | cdktf.IResolvable;
+  readonly crossZoneLoadBalancing?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elb#desync_mitigation_mode Elb#desync_mitigation_mode}
   */
@@ -50,7 +50,7 @@ export interface ElbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elb#internal Elb#internal}
   */
-  readonly internal?: boolean | cdktf.IResolvable;
+  readonly internal?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elb#name Elb#name}
   */
@@ -102,7 +102,7 @@ export interface ElbConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elb#listener Elb#listener}
   */
-  readonly listener: ElbListener[] | cdktf.IResolvable;
+  readonly listener: ElbListener[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -122,7 +122,7 @@ export interface ElbAccessLogs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elb#enabled Elb#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elb#interval Elb#interval}
   */
@@ -130,45 +130,45 @@ export interface ElbAccessLogs {
 }
 
 export function elbAccessLogsToTerraform(struct?: ElbAccessLogsOutputReference | ElbAccessLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    bucket_prefix: cdktf.stringToTerraform(struct!.bucketPrefix),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    bucket_prefix: cdktn.stringToTerraform(struct!.bucketPrefix),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function elbAccessLogsToHclTerraform(struct?: ElbAccessLogsOutputReference | ElbAccessLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.bucketPrefix),
+      value: cdktn.stringToHclTerraform(struct!.bucketPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -179,14 +179,14 @@ export function elbAccessLogsToHclTerraform(struct?: ElbAccessLogsOutputReferenc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElbAccessLogsOutputReference extends cdktf.ComplexObject {
+export class ElbAccessLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -259,11 +259,11 @@ export class ElbAccessLogsOutputReference extends cdktf.ComplexObject {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -314,52 +314,52 @@ export interface ElbHealthCheck {
 }
 
 export function elbHealthCheckToTerraform(struct?: ElbHealthCheckOutputReference | ElbHealthCheck): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    healthy_threshold: cdktf.numberToTerraform(struct!.healthyThreshold),
-    interval: cdktf.numberToTerraform(struct!.interval),
-    target: cdktf.stringToTerraform(struct!.target),
-    timeout: cdktf.numberToTerraform(struct!.timeout),
-    unhealthy_threshold: cdktf.numberToTerraform(struct!.unhealthyThreshold),
+    healthy_threshold: cdktn.numberToTerraform(struct!.healthyThreshold),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    target: cdktn.stringToTerraform(struct!.target),
+    timeout: cdktn.numberToTerraform(struct!.timeout),
+    unhealthy_threshold: cdktn.numberToTerraform(struct!.unhealthyThreshold),
   }
 }
 
 
 export function elbHealthCheckToHclTerraform(struct?: ElbHealthCheckOutputReference | ElbHealthCheck): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     healthy_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.healthyThreshold),
+      value: cdktn.numberToHclTerraform(struct!.healthyThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout: {
-      value: cdktf.numberToHclTerraform(struct!.timeout),
+      value: cdktn.numberToHclTerraform(struct!.timeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     unhealthy_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.unhealthyThreshold),
+      value: cdktn.numberToHclTerraform(struct!.unhealthyThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -370,14 +370,14 @@ export function elbHealthCheckToHclTerraform(struct?: ElbHealthCheckOutputRefere
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElbHealthCheckOutputReference extends cdktf.ComplexObject {
+export class ElbHealthCheckOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -514,53 +514,53 @@ export interface ElbListener {
   readonly sslCertificateId?: string;
 }
 
-export function elbListenerToTerraform(struct?: ElbListener | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elbListenerToTerraform(struct?: ElbListener | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_port: cdktf.numberToTerraform(struct!.instancePort),
-    instance_protocol: cdktf.stringToTerraform(struct!.instanceProtocol),
-    lb_port: cdktf.numberToTerraform(struct!.lbPort),
-    lb_protocol: cdktf.stringToTerraform(struct!.lbProtocol),
-    ssl_certificate_id: cdktf.stringToTerraform(struct!.sslCertificateId),
+    instance_port: cdktn.numberToTerraform(struct!.instancePort),
+    instance_protocol: cdktn.stringToTerraform(struct!.instanceProtocol),
+    lb_port: cdktn.numberToTerraform(struct!.lbPort),
+    lb_protocol: cdktn.stringToTerraform(struct!.lbProtocol),
+    ssl_certificate_id: cdktn.stringToTerraform(struct!.sslCertificateId),
   }
 }
 
 
-export function elbListenerToHclTerraform(struct?: ElbListener | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elbListenerToHclTerraform(struct?: ElbListener | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_port: {
-      value: cdktf.numberToHclTerraform(struct!.instancePort),
+      value: cdktn.numberToHclTerraform(struct!.instancePort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     instance_protocol: {
-      value: cdktf.stringToHclTerraform(struct!.instanceProtocol),
+      value: cdktn.stringToHclTerraform(struct!.instanceProtocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lb_port: {
-      value: cdktf.numberToHclTerraform(struct!.lbPort),
+      value: cdktn.numberToHclTerraform(struct!.lbPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     lb_protocol: {
-      value: cdktf.stringToHclTerraform(struct!.lbProtocol),
+      value: cdktn.stringToHclTerraform(struct!.lbProtocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssl_certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.sslCertificateId),
+      value: cdktn.stringToHclTerraform(struct!.sslCertificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -571,9 +571,9 @@ export function elbListenerToHclTerraform(struct?: ElbListener | cdktf.IResolvab
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElbListenerOutputReference extends cdktf.ComplexObject {
+export class ElbListenerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -581,11 +581,11 @@ export class ElbListenerOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ElbListener | cdktf.IResolvable | undefined {
+  public get internalValue(): ElbListener | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -614,7 +614,7 @@ export class ElbListenerOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElbListener | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElbListener | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -624,7 +624,7 @@ export class ElbListenerOutputReference extends cdktf.ComplexObject {
       this._lbProtocol = undefined;
       this._sslCertificateId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -708,15 +708,15 @@ export class ElbListenerOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ElbListenerList extends cdktf.ComplexList {
-  public internalValue? : ElbListener[] | cdktf.IResolvable
+export class ElbListenerList extends cdktn.ComplexList {
+  public internalValue? : ElbListener[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -738,32 +738,32 @@ export interface ElbTimeouts {
   readonly update?: string;
 }
 
-export function elbTimeoutsToTerraform(struct?: ElbTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elbTimeoutsToTerraform(struct?: ElbTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function elbTimeoutsToHclTerraform(struct?: ElbTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elbTimeoutsToHclTerraform(struct?: ElbTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -774,19 +774,19 @@ export function elbTimeoutsToHclTerraform(struct?: ElbTimeouts | cdktf.IResolvab
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElbTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ElbTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ElbTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ElbTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -803,14 +803,14 @@ export class ElbTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElbTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElbTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -858,7 +858,7 @@ export class ElbTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elb aws_elb}
 */
-export class Elb extends cdktf.TerraformResource {
+export class Elb extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -869,14 +869,14 @@ export class Elb extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Elb resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Elb resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Elb to import
   * @param importFromId The id of the existing Elb that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elb#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Elb to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_elb", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_elb", importId: importFromId, provider });
       }
 
   // ===========
@@ -941,7 +941,7 @@ export class Elb extends cdktf.TerraformResource {
   // availability_zones - computed: true, optional: true, required: false
   private _availabilityZones?: string[]; 
   public get availabilityZones() {
-    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('availability_zones'));
   }
   public set availabilityZones(value: string[]) {
     this._availabilityZones = value;
@@ -955,11 +955,11 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // connection_draining - computed: false, optional: true, required: false
-  private _connectionDraining?: boolean | cdktf.IResolvable; 
+  private _connectionDraining?: boolean | cdktn.IResolvable; 
   public get connectionDraining() {
     return this.getBooleanAttribute('connection_draining');
   }
-  public set connectionDraining(value: boolean | cdktf.IResolvable) {
+  public set connectionDraining(value: boolean | cdktn.IResolvable) {
     this._connectionDraining = value;
   }
   public resetConnectionDraining() {
@@ -987,11 +987,11 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // cross_zone_load_balancing - computed: false, optional: true, required: false
-  private _crossZoneLoadBalancing?: boolean | cdktf.IResolvable; 
+  private _crossZoneLoadBalancing?: boolean | cdktn.IResolvable; 
   public get crossZoneLoadBalancing() {
     return this.getBooleanAttribute('cross_zone_load_balancing');
   }
-  public set crossZoneLoadBalancing(value: boolean | cdktf.IResolvable) {
+  public set crossZoneLoadBalancing(value: boolean | cdktn.IResolvable) {
     this._crossZoneLoadBalancing = value;
   }
   public resetCrossZoneLoadBalancing() {
@@ -1058,7 +1058,7 @@ export class Elb extends cdktf.TerraformResource {
   // instances - computed: true, optional: true, required: false
   private _instances?: string[]; 
   public get instances() {
-    return cdktf.Fn.tolist(this.getListAttribute('instances'));
+    return cdktn.Fn.tolist(this.getListAttribute('instances'));
   }
   public set instances(value: string[]) {
     this._instances = value;
@@ -1072,11 +1072,11 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // internal - computed: true, optional: true, required: false
-  private _internal?: boolean | cdktf.IResolvable; 
+  private _internal?: boolean | cdktn.IResolvable; 
   public get internal() {
     return this.getBooleanAttribute('internal');
   }
-  public set internal(value: boolean | cdktf.IResolvable) {
+  public set internal(value: boolean | cdktn.IResolvable) {
     this._internal = value;
   }
   public resetInternal() {
@@ -1138,7 +1138,7 @@ export class Elb extends cdktf.TerraformResource {
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -1175,7 +1175,7 @@ export class Elb extends cdktf.TerraformResource {
   // subnets - computed: true, optional: true, required: false
   private _subnets?: string[]; 
   public get subnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -1262,7 +1262,7 @@ export class Elb extends cdktf.TerraformResource {
   public get listener() {
     return this._listener;
   }
-  public putListener(value: ElbListener[] | cdktf.IResolvable) {
+  public putListener(value: ElbListener[] | cdktn.IResolvable) {
     this._listener.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1292,26 +1292,26 @@ export class Elb extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availabilityZones),
-      connection_draining: cdktf.booleanToTerraform(this._connectionDraining),
-      connection_draining_timeout: cdktf.numberToTerraform(this._connectionDrainingTimeout),
-      cross_zone_load_balancing: cdktf.booleanToTerraform(this._crossZoneLoadBalancing),
-      desync_mitigation_mode: cdktf.stringToTerraform(this._desyncMitigationMode),
-      id: cdktf.stringToTerraform(this._id),
-      idle_timeout: cdktf.numberToTerraform(this._idleTimeout),
-      instances: cdktf.listMapper(cdktf.stringToTerraform, false)(this._instances),
-      internal: cdktf.booleanToTerraform(this._internal),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      region: cdktf.stringToTerraform(this._region),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
-      source_security_group: cdktf.stringToTerraform(this._sourceSecurityGroup),
-      subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnets),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      availability_zones: cdktn.listMapper(cdktn.stringToTerraform, false)(this._availabilityZones),
+      connection_draining: cdktn.booleanToTerraform(this._connectionDraining),
+      connection_draining_timeout: cdktn.numberToTerraform(this._connectionDrainingTimeout),
+      cross_zone_load_balancing: cdktn.booleanToTerraform(this._crossZoneLoadBalancing),
+      desync_mitigation_mode: cdktn.stringToTerraform(this._desyncMitigationMode),
+      id: cdktn.stringToTerraform(this._id),
+      idle_timeout: cdktn.numberToTerraform(this._idleTimeout),
+      instances: cdktn.listMapper(cdktn.stringToTerraform, false)(this._instances),
+      internal: cdktn.booleanToTerraform(this._internal),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      region: cdktn.stringToTerraform(this._region),
+      security_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroups),
+      source_security_group: cdktn.stringToTerraform(this._sourceSecurityGroup),
+      subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnets),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       access_logs: elbAccessLogsToTerraform(this._accessLogs.internalValue),
       health_check: elbHealthCheckToTerraform(this._healthCheck.internalValue),
-      listener: cdktf.listMapper(elbListenerToTerraform, true)(this._listener.internalValue),
+      listener: cdktn.listMapper(elbListenerToTerraform, true)(this._listener.internalValue),
       timeouts: elbTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1319,103 +1319,103 @@ export class Elb extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       availability_zones: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._availabilityZones),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._availabilityZones),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       connection_draining: {
-        value: cdktf.booleanToHclTerraform(this._connectionDraining),
+        value: cdktn.booleanToHclTerraform(this._connectionDraining),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       connection_draining_timeout: {
-        value: cdktf.numberToHclTerraform(this._connectionDrainingTimeout),
+        value: cdktn.numberToHclTerraform(this._connectionDrainingTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       cross_zone_load_balancing: {
-        value: cdktf.booleanToHclTerraform(this._crossZoneLoadBalancing),
+        value: cdktn.booleanToHclTerraform(this._crossZoneLoadBalancing),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       desync_mitigation_mode: {
-        value: cdktf.stringToHclTerraform(this._desyncMitigationMode),
+        value: cdktn.stringToHclTerraform(this._desyncMitigationMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idle_timeout: {
-        value: cdktf.numberToHclTerraform(this._idleTimeout),
+        value: cdktn.numberToHclTerraform(this._idleTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       instances: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._instances),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._instances),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       internal: {
-        value: cdktf.booleanToHclTerraform(this._internal),
+        value: cdktn.booleanToHclTerraform(this._internal),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroups),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       source_security_group: {
-        value: cdktf.stringToHclTerraform(this._sourceSecurityGroup),
+        value: cdktn.stringToHclTerraform(this._sourceSecurityGroup),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnets: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnets),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnets),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -1433,7 +1433,7 @@ export class Elb extends cdktf.TerraformResource {
         storageClassType: "ElbHealthCheckList",
       },
       listener: {
-        value: cdktf.listMapperHcl(elbListenerToHclTerraform, true)(this._listener.internalValue),
+        value: cdktn.listMapperHcl(elbListenerToHclTerraform, true)(this._listener.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ElbListenerList",

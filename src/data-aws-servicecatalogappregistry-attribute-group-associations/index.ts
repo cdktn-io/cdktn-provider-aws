@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/servicecatalogappregistry_attribute_group_associations#id DataAwsServicecatalogappregistryAttributeGroupAssociations#id}
   *
@@ -34,7 +34,7 @@ export interface DataAwsServicecatalogappregistryAttributeGroupAssociationsConfi
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/servicecatalogappregistry_attribute_group_associations aws_servicecatalogappregistry_attribute_group_associations}
 */
-export class DataAwsServicecatalogappregistryAttributeGroupAssociations extends cdktf.TerraformDataSource {
+export class DataAwsServicecatalogappregistryAttributeGroupAssociations extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -45,14 +45,14 @@ export class DataAwsServicecatalogappregistryAttributeGroupAssociations extends 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsServicecatalogappregistryAttributeGroupAssociations resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsServicecatalogappregistryAttributeGroupAssociations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsServicecatalogappregistryAttributeGroupAssociations to import
   * @param importFromId The id of the existing DataAwsServicecatalogappregistryAttributeGroupAssociations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/servicecatalogappregistry_attribute_group_associations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsServicecatalogappregistryAttributeGroupAssociations to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_servicecatalogappregistry_attribute_group_associations", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_servicecatalogappregistry_attribute_group_associations", importId: importFromId, provider });
       }
 
   // ===========
@@ -93,7 +93,7 @@ export class DataAwsServicecatalogappregistryAttributeGroupAssociations extends 
 
   // attribute_group_ids - computed: true, optional: false, required: false
   public get attributeGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('attribute_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('attribute_group_ids'));
   }
 
   // id - computed: false, optional: true, required: false
@@ -150,28 +150,28 @@ export class DataAwsServicecatalogappregistryAttributeGroupAssociations extends 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

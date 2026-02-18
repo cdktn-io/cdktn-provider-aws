@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsMskVpcConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsMskVpcConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/msk_vpc_connection#arn DataAwsMskVpcConnection#arn}
   */
@@ -38,7 +38,7 @@ export interface DataAwsMskVpcConnectionConfig extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/msk_vpc_connection aws_msk_vpc_connection}
 */
-export class DataAwsMskVpcConnection extends cdktf.TerraformDataSource {
+export class DataAwsMskVpcConnection extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class DataAwsMskVpcConnection extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsMskVpcConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsMskVpcConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsMskVpcConnection to import
   * @param importFromId The id of the existing DataAwsMskVpcConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/msk_vpc_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsMskVpcConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_msk_vpc_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_msk_vpc_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -116,7 +116,7 @@ export class DataAwsMskVpcConnection extends cdktf.TerraformDataSource {
 
   // client_subnets - computed: true, optional: false, required: false
   public get clientSubnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('client_subnets'));
+    return cdktn.Fn.tolist(this.getListAttribute('client_subnets'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -153,7 +153,7 @@ export class DataAwsMskVpcConnection extends cdktf.TerraformDataSource {
 
   // security_groups - computed: true, optional: false, required: false
   public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups'));
   }
 
   // tags - computed: true, optional: true, required: false
@@ -188,35 +188,35 @@ export class DataAwsMskVpcConnection extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: cdktf.stringToTerraform(this._arn),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      arn: cdktn.stringToTerraform(this._arn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       arn: {
-        value: cdktf.stringToHclTerraform(this._arn),
+        value: cdktn.stringToHclTerraform(this._arn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkspaceswebBrowserSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface WorkspaceswebBrowserSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_browser_settings#additional_encryption_context WorkspaceswebBrowserSettings#additional_encryption_context}
   */
@@ -39,7 +39,7 @@ export interface WorkspaceswebBrowserSettingsConfig extends cdktf.TerraformMetaA
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_browser_settings aws_workspacesweb_browser_settings}
 */
-export class WorkspaceswebBrowserSettings extends cdktf.TerraformResource {
+export class WorkspaceswebBrowserSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -50,14 +50,14 @@ export class WorkspaceswebBrowserSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkspaceswebBrowserSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkspaceswebBrowserSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceswebBrowserSettings to import
   * @param importFromId The id of the existing WorkspaceswebBrowserSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_browser_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceswebBrowserSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_browser_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_browser_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -186,7 +186,7 @@ export class WorkspaceswebBrowserSettings extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -197,42 +197,42 @@ export class WorkspaceswebBrowserSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_encryption_context: cdktf.hashMapper(cdktf.stringToTerraform)(this._additionalEncryptionContext),
-      browser_policy: cdktf.stringToTerraform(this._browserPolicy),
-      customer_managed_key: cdktf.stringToTerraform(this._customerManagedKey),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      additional_encryption_context: cdktn.hashMapper(cdktn.stringToTerraform)(this._additionalEncryptionContext),
+      browser_policy: cdktn.stringToTerraform(this._browserPolicy),
+      customer_managed_key: cdktn.stringToTerraform(this._customerManagedKey),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_encryption_context: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._additionalEncryptionContext),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._additionalEncryptionContext),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       browser_policy: {
-        value: cdktf.stringToHclTerraform(this._browserPolicy),
+        value: cdktn.stringToHclTerraform(this._browserPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_managed_key: {
-        value: cdktf.stringToHclTerraform(this._customerManagedKey),
+        value: cdktn.stringToHclTerraform(this._customerManagedKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface VpnConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#customer_gateway_id VpnConnection#customer_gateway_id}
   */
@@ -19,7 +19,7 @@ export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#enable_acceleration VpnConnection#enable_acceleration}
   */
-  readonly enableAcceleration?: boolean | cdktf.IResolvable;
+  readonly enableAcceleration?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#id VpnConnection#id}
   *
@@ -60,7 +60,7 @@ export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#static_routes_only VpnConnection#static_routes_only}
   */
-  readonly staticRoutesOnly?: boolean | cdktf.IResolvable;
+  readonly staticRoutesOnly?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#tags VpnConnection#tags}
   */
@@ -88,7 +88,7 @@ export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#tunnel1_enable_tunnel_lifecycle_control VpnConnection#tunnel1_enable_tunnel_lifecycle_control}
   */
-  readonly tunnel1EnableTunnelLifecycleControl?: boolean | cdktf.IResolvable;
+  readonly tunnel1EnableTunnelLifecycleControl?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#tunnel1_ike_versions VpnConnection#tunnel1_ike_versions}
   */
@@ -164,7 +164,7 @@ export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#tunnel2_enable_tunnel_lifecycle_control VpnConnection#tunnel2_enable_tunnel_lifecycle_control}
   */
-  readonly tunnel2EnableTunnelLifecycleControl?: boolean | cdktf.IResolvable;
+  readonly tunnel2EnableTunnelLifecycleControl?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#tunnel2_ike_versions VpnConnection#tunnel2_ike_versions}
   */
@@ -266,8 +266,8 @@ export interface VpnConnectionRoutes {
 }
 
 export function vpnConnectionRoutesToTerraform(struct?: VpnConnectionRoutes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -276,8 +276,8 @@ export function vpnConnectionRoutesToTerraform(struct?: VpnConnectionRoutes): an
 
 
 export function vpnConnectionRoutesToHclTerraform(struct?: VpnConnectionRoutes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -285,7 +285,7 @@ export function vpnConnectionRoutesToHclTerraform(struct?: VpnConnectionRoutes):
   return attrs;
 }
 
-export class VpnConnectionRoutesOutputReference extends cdktf.ComplexObject {
+export class VpnConnectionRoutesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -294,7 +294,7 @@ export class VpnConnectionRoutesOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -329,14 +329,14 @@ export class VpnConnectionRoutesOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class VpnConnectionRoutesList extends cdktf.ComplexList {
+export class VpnConnectionRoutesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -351,8 +351,8 @@ export interface VpnConnectionVgwTelemetry {
 }
 
 export function vpnConnectionVgwTelemetryToTerraform(struct?: VpnConnectionVgwTelemetry): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -361,8 +361,8 @@ export function vpnConnectionVgwTelemetryToTerraform(struct?: VpnConnectionVgwTe
 
 
 export function vpnConnectionVgwTelemetryToHclTerraform(struct?: VpnConnectionVgwTelemetry): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -370,7 +370,7 @@ export function vpnConnectionVgwTelemetryToHclTerraform(struct?: VpnConnectionVg
   return attrs;
 }
 
-export class VpnConnectionVgwTelemetryOutputReference extends cdktf.ComplexObject {
+export class VpnConnectionVgwTelemetryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -379,7 +379,7 @@ export class VpnConnectionVgwTelemetryOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -429,14 +429,14 @@ export class VpnConnectionVgwTelemetryOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class VpnConnectionVgwTelemetryList extends cdktf.ComplexList {
+export class VpnConnectionVgwTelemetryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -451,7 +451,7 @@ export interface VpnConnectionTunnel1LogOptionsCloudwatchLogOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#bgp_log_enabled VpnConnection#bgp_log_enabled}
   */
-  readonly bgpLogEnabled?: boolean | cdktf.IResolvable;
+  readonly bgpLogEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#bgp_log_group_arn VpnConnection#bgp_log_group_arn}
   */
@@ -463,7 +463,7 @@ export interface VpnConnectionTunnel1LogOptionsCloudwatchLogOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#log_enabled VpnConnection#log_enabled}
   */
-  readonly logEnabled?: boolean | cdktf.IResolvable;
+  readonly logEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#log_group_arn VpnConnection#log_group_arn}
   */
@@ -475,59 +475,59 @@ export interface VpnConnectionTunnel1LogOptionsCloudwatchLogOptions {
 }
 
 export function vpnConnectionTunnel1LogOptionsCloudwatchLogOptionsToTerraform(struct?: VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference | VpnConnectionTunnel1LogOptionsCloudwatchLogOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bgp_log_enabled: cdktf.booleanToTerraform(struct!.bgpLogEnabled),
-    bgp_log_group_arn: cdktf.stringToTerraform(struct!.bgpLogGroupArn),
-    bgp_log_output_format: cdktf.stringToTerraform(struct!.bgpLogOutputFormat),
-    log_enabled: cdktf.booleanToTerraform(struct!.logEnabled),
-    log_group_arn: cdktf.stringToTerraform(struct!.logGroupArn),
-    log_output_format: cdktf.stringToTerraform(struct!.logOutputFormat),
+    bgp_log_enabled: cdktn.booleanToTerraform(struct!.bgpLogEnabled),
+    bgp_log_group_arn: cdktn.stringToTerraform(struct!.bgpLogGroupArn),
+    bgp_log_output_format: cdktn.stringToTerraform(struct!.bgpLogOutputFormat),
+    log_enabled: cdktn.booleanToTerraform(struct!.logEnabled),
+    log_group_arn: cdktn.stringToTerraform(struct!.logGroupArn),
+    log_output_format: cdktn.stringToTerraform(struct!.logOutputFormat),
   }
 }
 
 
 export function vpnConnectionTunnel1LogOptionsCloudwatchLogOptionsToHclTerraform(struct?: VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference | VpnConnectionTunnel1LogOptionsCloudwatchLogOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bgp_log_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.bgpLogEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.bgpLogEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     bgp_log_group_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bgpLogGroupArn),
+      value: cdktn.stringToHclTerraform(struct!.bgpLogGroupArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bgp_log_output_format: {
-      value: cdktf.stringToHclTerraform(struct!.bgpLogOutputFormat),
+      value: cdktn.stringToHclTerraform(struct!.bgpLogOutputFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.logEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.logEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_arn: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupArn),
+      value: cdktn.stringToHclTerraform(struct!.logGroupArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_output_format: {
-      value: cdktf.stringToHclTerraform(struct!.logOutputFormat),
+      value: cdktn.stringToHclTerraform(struct!.logOutputFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -538,14 +538,14 @@ export function vpnConnectionTunnel1LogOptionsCloudwatchLogOptionsToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference extends cdktf.ComplexObject {
+export class VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -601,11 +601,11 @@ export class VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference e
   }
 
   // bgp_log_enabled - computed: false, optional: true, required: false
-  private _bgpLogEnabled?: boolean | cdktf.IResolvable; 
+  private _bgpLogEnabled?: boolean | cdktn.IResolvable; 
   public get bgpLogEnabled() {
     return this.getBooleanAttribute('bgp_log_enabled');
   }
-  public set bgpLogEnabled(value: boolean | cdktf.IResolvable) {
+  public set bgpLogEnabled(value: boolean | cdktn.IResolvable) {
     this._bgpLogEnabled = value;
   }
   public resetBgpLogEnabled() {
@@ -649,11 +649,11 @@ export class VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference e
   }
 
   // log_enabled - computed: false, optional: true, required: false
-  private _logEnabled?: boolean | cdktf.IResolvable; 
+  private _logEnabled?: boolean | cdktn.IResolvable; 
   public get logEnabled() {
     return this.getBooleanAttribute('log_enabled');
   }
-  public set logEnabled(value: boolean | cdktf.IResolvable) {
+  public set logEnabled(value: boolean | cdktn.IResolvable) {
     this._logEnabled = value;
   }
   public resetLogEnabled() {
@@ -706,8 +706,8 @@ export interface VpnConnectionTunnel1LogOptions {
 }
 
 export function vpnConnectionTunnel1LogOptionsToTerraform(struct?: VpnConnectionTunnel1LogOptionsOutputReference | VpnConnectionTunnel1LogOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -717,8 +717,8 @@ export function vpnConnectionTunnel1LogOptionsToTerraform(struct?: VpnConnection
 
 
 export function vpnConnectionTunnel1LogOptionsToHclTerraform(struct?: VpnConnectionTunnel1LogOptionsOutputReference | VpnConnectionTunnel1LogOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -734,14 +734,14 @@ export function vpnConnectionTunnel1LogOptionsToHclTerraform(struct?: VpnConnect
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpnConnectionTunnel1LogOptionsOutputReference extends cdktf.ComplexObject {
+export class VpnConnectionTunnel1LogOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -786,7 +786,7 @@ export interface VpnConnectionTunnel2LogOptionsCloudwatchLogOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#bgp_log_enabled VpnConnection#bgp_log_enabled}
   */
-  readonly bgpLogEnabled?: boolean | cdktf.IResolvable;
+  readonly bgpLogEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#bgp_log_group_arn VpnConnection#bgp_log_group_arn}
   */
@@ -798,7 +798,7 @@ export interface VpnConnectionTunnel2LogOptionsCloudwatchLogOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#log_enabled VpnConnection#log_enabled}
   */
-  readonly logEnabled?: boolean | cdktf.IResolvable;
+  readonly logEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#log_group_arn VpnConnection#log_group_arn}
   */
@@ -810,59 +810,59 @@ export interface VpnConnectionTunnel2LogOptionsCloudwatchLogOptions {
 }
 
 export function vpnConnectionTunnel2LogOptionsCloudwatchLogOptionsToTerraform(struct?: VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference | VpnConnectionTunnel2LogOptionsCloudwatchLogOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bgp_log_enabled: cdktf.booleanToTerraform(struct!.bgpLogEnabled),
-    bgp_log_group_arn: cdktf.stringToTerraform(struct!.bgpLogGroupArn),
-    bgp_log_output_format: cdktf.stringToTerraform(struct!.bgpLogOutputFormat),
-    log_enabled: cdktf.booleanToTerraform(struct!.logEnabled),
-    log_group_arn: cdktf.stringToTerraform(struct!.logGroupArn),
-    log_output_format: cdktf.stringToTerraform(struct!.logOutputFormat),
+    bgp_log_enabled: cdktn.booleanToTerraform(struct!.bgpLogEnabled),
+    bgp_log_group_arn: cdktn.stringToTerraform(struct!.bgpLogGroupArn),
+    bgp_log_output_format: cdktn.stringToTerraform(struct!.bgpLogOutputFormat),
+    log_enabled: cdktn.booleanToTerraform(struct!.logEnabled),
+    log_group_arn: cdktn.stringToTerraform(struct!.logGroupArn),
+    log_output_format: cdktn.stringToTerraform(struct!.logOutputFormat),
   }
 }
 
 
 export function vpnConnectionTunnel2LogOptionsCloudwatchLogOptionsToHclTerraform(struct?: VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference | VpnConnectionTunnel2LogOptionsCloudwatchLogOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bgp_log_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.bgpLogEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.bgpLogEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     bgp_log_group_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bgpLogGroupArn),
+      value: cdktn.stringToHclTerraform(struct!.bgpLogGroupArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bgp_log_output_format: {
-      value: cdktf.stringToHclTerraform(struct!.bgpLogOutputFormat),
+      value: cdktn.stringToHclTerraform(struct!.bgpLogOutputFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.logEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.logEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_arn: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupArn),
+      value: cdktn.stringToHclTerraform(struct!.logGroupArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_output_format: {
-      value: cdktf.stringToHclTerraform(struct!.logOutputFormat),
+      value: cdktn.stringToHclTerraform(struct!.logOutputFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -873,14 +873,14 @@ export function vpnConnectionTunnel2LogOptionsCloudwatchLogOptionsToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference extends cdktf.ComplexObject {
+export class VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -936,11 +936,11 @@ export class VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference e
   }
 
   // bgp_log_enabled - computed: false, optional: true, required: false
-  private _bgpLogEnabled?: boolean | cdktf.IResolvable; 
+  private _bgpLogEnabled?: boolean | cdktn.IResolvable; 
   public get bgpLogEnabled() {
     return this.getBooleanAttribute('bgp_log_enabled');
   }
-  public set bgpLogEnabled(value: boolean | cdktf.IResolvable) {
+  public set bgpLogEnabled(value: boolean | cdktn.IResolvable) {
     this._bgpLogEnabled = value;
   }
   public resetBgpLogEnabled() {
@@ -984,11 +984,11 @@ export class VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference e
   }
 
   // log_enabled - computed: false, optional: true, required: false
-  private _logEnabled?: boolean | cdktf.IResolvable; 
+  private _logEnabled?: boolean | cdktn.IResolvable; 
   public get logEnabled() {
     return this.getBooleanAttribute('log_enabled');
   }
-  public set logEnabled(value: boolean | cdktf.IResolvable) {
+  public set logEnabled(value: boolean | cdktn.IResolvable) {
     this._logEnabled = value;
   }
   public resetLogEnabled() {
@@ -1041,8 +1041,8 @@ export interface VpnConnectionTunnel2LogOptions {
 }
 
 export function vpnConnectionTunnel2LogOptionsToTerraform(struct?: VpnConnectionTunnel2LogOptionsOutputReference | VpnConnectionTunnel2LogOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1052,8 +1052,8 @@ export function vpnConnectionTunnel2LogOptionsToTerraform(struct?: VpnConnection
 
 
 export function vpnConnectionTunnel2LogOptionsToHclTerraform(struct?: VpnConnectionTunnel2LogOptionsOutputReference | VpnConnectionTunnel2LogOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1069,14 +1069,14 @@ export function vpnConnectionTunnel2LogOptionsToHclTerraform(struct?: VpnConnect
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpnConnectionTunnel2LogOptionsOutputReference extends cdktf.ComplexObject {
+export class VpnConnectionTunnel2LogOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1121,7 +1121,7 @@ export class VpnConnectionTunnel2LogOptionsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection aws_vpn_connection}
 */
-export class VpnConnection extends cdktf.TerraformResource {
+export class VpnConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1132,14 +1132,14 @@ export class VpnConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpnConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpnConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpnConnection to import
   * @param importFromId The id of the existing VpnConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpnConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpn_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpn_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -1269,11 +1269,11 @@ export class VpnConnection extends cdktf.TerraformResource {
   }
 
   // enable_acceleration - computed: true, optional: true, required: false
-  private _enableAcceleration?: boolean | cdktf.IResolvable; 
+  private _enableAcceleration?: boolean | cdktn.IResolvable; 
   public get enableAcceleration() {
     return this.getBooleanAttribute('enable_acceleration');
   }
-  public set enableAcceleration(value: boolean | cdktf.IResolvable) {
+  public set enableAcceleration(value: boolean | cdktn.IResolvable) {
     this._enableAcceleration = value;
   }
   public resetEnableAcceleration() {
@@ -1424,11 +1424,11 @@ export class VpnConnection extends cdktf.TerraformResource {
   }
 
   // static_routes_only - computed: true, optional: true, required: false
-  private _staticRoutesOnly?: boolean | cdktf.IResolvable; 
+  private _staticRoutesOnly?: boolean | cdktn.IResolvable; 
   public get staticRoutesOnly() {
     return this.getBooleanAttribute('static_routes_only');
   }
-  public set staticRoutesOnly(value: boolean | cdktf.IResolvable) {
+  public set staticRoutesOnly(value: boolean | cdktn.IResolvable) {
     this._staticRoutesOnly = value;
   }
   public resetStaticRoutesOnly() {
@@ -1561,11 +1561,11 @@ export class VpnConnection extends cdktf.TerraformResource {
   }
 
   // tunnel1_enable_tunnel_lifecycle_control - computed: false, optional: true, required: false
-  private _tunnel1EnableTunnelLifecycleControl?: boolean | cdktf.IResolvable; 
+  private _tunnel1EnableTunnelLifecycleControl?: boolean | cdktn.IResolvable; 
   public get tunnel1EnableTunnelLifecycleControl() {
     return this.getBooleanAttribute('tunnel1_enable_tunnel_lifecycle_control');
   }
-  public set tunnel1EnableTunnelLifecycleControl(value: boolean | cdktf.IResolvable) {
+  public set tunnel1EnableTunnelLifecycleControl(value: boolean | cdktn.IResolvable) {
     this._tunnel1EnableTunnelLifecycleControl = value;
   }
   public resetTunnel1EnableTunnelLifecycleControl() {
@@ -1579,7 +1579,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel1_ike_versions - computed: false, optional: true, required: false
   private _tunnel1IkeVersions?: string[]; 
   public get tunnel1IkeVersions() {
-    return cdktf.Fn.tolist(this.getListAttribute('tunnel1_ike_versions'));
+    return cdktn.Fn.tolist(this.getListAttribute('tunnel1_ike_versions'));
   }
   public set tunnel1IkeVersions(value: string[]) {
     this._tunnel1IkeVersions = value;
@@ -1627,7 +1627,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel1_phase1_dh_group_numbers - computed: false, optional: true, required: false
   private _tunnel1Phase1DhGroupNumbers?: number[]; 
   public get tunnel1Phase1DhGroupNumbers() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('tunnel1_phase1_dh_group_numbers')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('tunnel1_phase1_dh_group_numbers')));
   }
   public set tunnel1Phase1DhGroupNumbers(value: number[]) {
     this._tunnel1Phase1DhGroupNumbers = value;
@@ -1643,7 +1643,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel1_phase1_encryption_algorithms - computed: false, optional: true, required: false
   private _tunnel1Phase1EncryptionAlgorithms?: string[]; 
   public get tunnel1Phase1EncryptionAlgorithms() {
-    return cdktf.Fn.tolist(this.getListAttribute('tunnel1_phase1_encryption_algorithms'));
+    return cdktn.Fn.tolist(this.getListAttribute('tunnel1_phase1_encryption_algorithms'));
   }
   public set tunnel1Phase1EncryptionAlgorithms(value: string[]) {
     this._tunnel1Phase1EncryptionAlgorithms = value;
@@ -1659,7 +1659,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel1_phase1_integrity_algorithms - computed: false, optional: true, required: false
   private _tunnel1Phase1IntegrityAlgorithms?: string[]; 
   public get tunnel1Phase1IntegrityAlgorithms() {
-    return cdktf.Fn.tolist(this.getListAttribute('tunnel1_phase1_integrity_algorithms'));
+    return cdktn.Fn.tolist(this.getListAttribute('tunnel1_phase1_integrity_algorithms'));
   }
   public set tunnel1Phase1IntegrityAlgorithms(value: string[]) {
     this._tunnel1Phase1IntegrityAlgorithms = value;
@@ -1691,7 +1691,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel1_phase2_dh_group_numbers - computed: false, optional: true, required: false
   private _tunnel1Phase2DhGroupNumbers?: number[]; 
   public get tunnel1Phase2DhGroupNumbers() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('tunnel1_phase2_dh_group_numbers')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('tunnel1_phase2_dh_group_numbers')));
   }
   public set tunnel1Phase2DhGroupNumbers(value: number[]) {
     this._tunnel1Phase2DhGroupNumbers = value;
@@ -1707,7 +1707,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel1_phase2_encryption_algorithms - computed: false, optional: true, required: false
   private _tunnel1Phase2EncryptionAlgorithms?: string[]; 
   public get tunnel1Phase2EncryptionAlgorithms() {
-    return cdktf.Fn.tolist(this.getListAttribute('tunnel1_phase2_encryption_algorithms'));
+    return cdktn.Fn.tolist(this.getListAttribute('tunnel1_phase2_encryption_algorithms'));
   }
   public set tunnel1Phase2EncryptionAlgorithms(value: string[]) {
     this._tunnel1Phase2EncryptionAlgorithms = value;
@@ -1723,7 +1723,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel1_phase2_integrity_algorithms - computed: false, optional: true, required: false
   private _tunnel1Phase2IntegrityAlgorithms?: string[]; 
   public get tunnel1Phase2IntegrityAlgorithms() {
-    return cdktf.Fn.tolist(this.getListAttribute('tunnel1_phase2_integrity_algorithms'));
+    return cdktn.Fn.tolist(this.getListAttribute('tunnel1_phase2_integrity_algorithms'));
   }
   public set tunnel1Phase2IntegrityAlgorithms(value: string[]) {
     this._tunnel1Phase2IntegrityAlgorithms = value;
@@ -1890,11 +1890,11 @@ export class VpnConnection extends cdktf.TerraformResource {
   }
 
   // tunnel2_enable_tunnel_lifecycle_control - computed: false, optional: true, required: false
-  private _tunnel2EnableTunnelLifecycleControl?: boolean | cdktf.IResolvable; 
+  private _tunnel2EnableTunnelLifecycleControl?: boolean | cdktn.IResolvable; 
   public get tunnel2EnableTunnelLifecycleControl() {
     return this.getBooleanAttribute('tunnel2_enable_tunnel_lifecycle_control');
   }
-  public set tunnel2EnableTunnelLifecycleControl(value: boolean | cdktf.IResolvable) {
+  public set tunnel2EnableTunnelLifecycleControl(value: boolean | cdktn.IResolvable) {
     this._tunnel2EnableTunnelLifecycleControl = value;
   }
   public resetTunnel2EnableTunnelLifecycleControl() {
@@ -1908,7 +1908,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel2_ike_versions - computed: false, optional: true, required: false
   private _tunnel2IkeVersions?: string[]; 
   public get tunnel2IkeVersions() {
-    return cdktf.Fn.tolist(this.getListAttribute('tunnel2_ike_versions'));
+    return cdktn.Fn.tolist(this.getListAttribute('tunnel2_ike_versions'));
   }
   public set tunnel2IkeVersions(value: string[]) {
     this._tunnel2IkeVersions = value;
@@ -1956,7 +1956,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel2_phase1_dh_group_numbers - computed: false, optional: true, required: false
   private _tunnel2Phase1DhGroupNumbers?: number[]; 
   public get tunnel2Phase1DhGroupNumbers() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('tunnel2_phase1_dh_group_numbers')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('tunnel2_phase1_dh_group_numbers')));
   }
   public set tunnel2Phase1DhGroupNumbers(value: number[]) {
     this._tunnel2Phase1DhGroupNumbers = value;
@@ -1972,7 +1972,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel2_phase1_encryption_algorithms - computed: false, optional: true, required: false
   private _tunnel2Phase1EncryptionAlgorithms?: string[]; 
   public get tunnel2Phase1EncryptionAlgorithms() {
-    return cdktf.Fn.tolist(this.getListAttribute('tunnel2_phase1_encryption_algorithms'));
+    return cdktn.Fn.tolist(this.getListAttribute('tunnel2_phase1_encryption_algorithms'));
   }
   public set tunnel2Phase1EncryptionAlgorithms(value: string[]) {
     this._tunnel2Phase1EncryptionAlgorithms = value;
@@ -1988,7 +1988,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel2_phase1_integrity_algorithms - computed: false, optional: true, required: false
   private _tunnel2Phase1IntegrityAlgorithms?: string[]; 
   public get tunnel2Phase1IntegrityAlgorithms() {
-    return cdktf.Fn.tolist(this.getListAttribute('tunnel2_phase1_integrity_algorithms'));
+    return cdktn.Fn.tolist(this.getListAttribute('tunnel2_phase1_integrity_algorithms'));
   }
   public set tunnel2Phase1IntegrityAlgorithms(value: string[]) {
     this._tunnel2Phase1IntegrityAlgorithms = value;
@@ -2020,7 +2020,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel2_phase2_dh_group_numbers - computed: false, optional: true, required: false
   private _tunnel2Phase2DhGroupNumbers?: number[]; 
   public get tunnel2Phase2DhGroupNumbers() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('tunnel2_phase2_dh_group_numbers')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('tunnel2_phase2_dh_group_numbers')));
   }
   public set tunnel2Phase2DhGroupNumbers(value: number[]) {
     this._tunnel2Phase2DhGroupNumbers = value;
@@ -2036,7 +2036,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel2_phase2_encryption_algorithms - computed: false, optional: true, required: false
   private _tunnel2Phase2EncryptionAlgorithms?: string[]; 
   public get tunnel2Phase2EncryptionAlgorithms() {
-    return cdktf.Fn.tolist(this.getListAttribute('tunnel2_phase2_encryption_algorithms'));
+    return cdktn.Fn.tolist(this.getListAttribute('tunnel2_phase2_encryption_algorithms'));
   }
   public set tunnel2Phase2EncryptionAlgorithms(value: string[]) {
     this._tunnel2Phase2EncryptionAlgorithms = value;
@@ -2052,7 +2052,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel2_phase2_integrity_algorithms - computed: false, optional: true, required: false
   private _tunnel2Phase2IntegrityAlgorithms?: string[]; 
   public get tunnel2Phase2IntegrityAlgorithms() {
-    return cdktf.Fn.tolist(this.getListAttribute('tunnel2_phase2_integrity_algorithms'));
+    return cdktn.Fn.tolist(this.getListAttribute('tunnel2_phase2_integrity_algorithms'));
   }
   public set tunnel2Phase2IntegrityAlgorithms(value: string[]) {
     this._tunnel2Phase2IntegrityAlgorithms = value;
@@ -2287,64 +2287,64 @@ export class VpnConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      customer_gateway_id: cdktf.stringToTerraform(this._customerGatewayId),
-      enable_acceleration: cdktf.booleanToTerraform(this._enableAcceleration),
-      id: cdktf.stringToTerraform(this._id),
-      local_ipv4_network_cidr: cdktf.stringToTerraform(this._localIpv4NetworkCidr),
-      local_ipv6_network_cidr: cdktf.stringToTerraform(this._localIpv6NetworkCidr),
-      outside_ip_address_type: cdktf.stringToTerraform(this._outsideIpAddressType),
-      preshared_key_storage: cdktf.stringToTerraform(this._presharedKeyStorage),
-      region: cdktf.stringToTerraform(this._region),
-      remote_ipv4_network_cidr: cdktf.stringToTerraform(this._remoteIpv4NetworkCidr),
-      remote_ipv6_network_cidr: cdktf.stringToTerraform(this._remoteIpv6NetworkCidr),
-      static_routes_only: cdktf.booleanToTerraform(this._staticRoutesOnly),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
-      transport_transit_gateway_attachment_id: cdktf.stringToTerraform(this._transportTransitGatewayAttachmentId),
-      tunnel1_dpd_timeout_action: cdktf.stringToTerraform(this._tunnel1DpdTimeoutAction),
-      tunnel1_dpd_timeout_seconds: cdktf.numberToTerraform(this._tunnel1DpdTimeoutSeconds),
-      tunnel1_enable_tunnel_lifecycle_control: cdktf.booleanToTerraform(this._tunnel1EnableTunnelLifecycleControl),
-      tunnel1_ike_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tunnel1IkeVersions),
-      tunnel1_inside_cidr: cdktf.stringToTerraform(this._tunnel1InsideCidr),
-      tunnel1_inside_ipv6_cidr: cdktf.stringToTerraform(this._tunnel1InsideIpv6Cidr),
-      tunnel1_phase1_dh_group_numbers: cdktf.listMapper(cdktf.numberToTerraform, false)(this._tunnel1Phase1DhGroupNumbers),
-      tunnel1_phase1_encryption_algorithms: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tunnel1Phase1EncryptionAlgorithms),
-      tunnel1_phase1_integrity_algorithms: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tunnel1Phase1IntegrityAlgorithms),
-      tunnel1_phase1_lifetime_seconds: cdktf.numberToTerraform(this._tunnel1Phase1LifetimeSeconds),
-      tunnel1_phase2_dh_group_numbers: cdktf.listMapper(cdktf.numberToTerraform, false)(this._tunnel1Phase2DhGroupNumbers),
-      tunnel1_phase2_encryption_algorithms: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tunnel1Phase2EncryptionAlgorithms),
-      tunnel1_phase2_integrity_algorithms: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tunnel1Phase2IntegrityAlgorithms),
-      tunnel1_phase2_lifetime_seconds: cdktf.numberToTerraform(this._tunnel1Phase2LifetimeSeconds),
-      tunnel1_preshared_key: cdktf.stringToTerraform(this._tunnel1PresharedKey),
-      tunnel1_rekey_fuzz_percentage: cdktf.numberToTerraform(this._tunnel1RekeyFuzzPercentage),
-      tunnel1_rekey_margin_time_seconds: cdktf.numberToTerraform(this._tunnel1RekeyMarginTimeSeconds),
-      tunnel1_replay_window_size: cdktf.numberToTerraform(this._tunnel1ReplayWindowSize),
-      tunnel1_startup_action: cdktf.stringToTerraform(this._tunnel1StartupAction),
-      tunnel2_dpd_timeout_action: cdktf.stringToTerraform(this._tunnel2DpdTimeoutAction),
-      tunnel2_dpd_timeout_seconds: cdktf.numberToTerraform(this._tunnel2DpdTimeoutSeconds),
-      tunnel2_enable_tunnel_lifecycle_control: cdktf.booleanToTerraform(this._tunnel2EnableTunnelLifecycleControl),
-      tunnel2_ike_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tunnel2IkeVersions),
-      tunnel2_inside_cidr: cdktf.stringToTerraform(this._tunnel2InsideCidr),
-      tunnel2_inside_ipv6_cidr: cdktf.stringToTerraform(this._tunnel2InsideIpv6Cidr),
-      tunnel2_phase1_dh_group_numbers: cdktf.listMapper(cdktf.numberToTerraform, false)(this._tunnel2Phase1DhGroupNumbers),
-      tunnel2_phase1_encryption_algorithms: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tunnel2Phase1EncryptionAlgorithms),
-      tunnel2_phase1_integrity_algorithms: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tunnel2Phase1IntegrityAlgorithms),
-      tunnel2_phase1_lifetime_seconds: cdktf.numberToTerraform(this._tunnel2Phase1LifetimeSeconds),
-      tunnel2_phase2_dh_group_numbers: cdktf.listMapper(cdktf.numberToTerraform, false)(this._tunnel2Phase2DhGroupNumbers),
-      tunnel2_phase2_encryption_algorithms: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tunnel2Phase2EncryptionAlgorithms),
-      tunnel2_phase2_integrity_algorithms: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tunnel2Phase2IntegrityAlgorithms),
-      tunnel2_phase2_lifetime_seconds: cdktf.numberToTerraform(this._tunnel2Phase2LifetimeSeconds),
-      tunnel2_preshared_key: cdktf.stringToTerraform(this._tunnel2PresharedKey),
-      tunnel2_rekey_fuzz_percentage: cdktf.numberToTerraform(this._tunnel2RekeyFuzzPercentage),
-      tunnel2_rekey_margin_time_seconds: cdktf.numberToTerraform(this._tunnel2RekeyMarginTimeSeconds),
-      tunnel2_replay_window_size: cdktf.numberToTerraform(this._tunnel2ReplayWindowSize),
-      tunnel2_startup_action: cdktf.stringToTerraform(this._tunnel2StartupAction),
-      tunnel_bandwidth: cdktf.stringToTerraform(this._tunnelBandwidth),
-      tunnel_inside_ip_version: cdktf.stringToTerraform(this._tunnelInsideIpVersion),
-      type: cdktf.stringToTerraform(this._type),
-      vpn_concentrator_id: cdktf.stringToTerraform(this._vpnConcentratorId),
-      vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
+      customer_gateway_id: cdktn.stringToTerraform(this._customerGatewayId),
+      enable_acceleration: cdktn.booleanToTerraform(this._enableAcceleration),
+      id: cdktn.stringToTerraform(this._id),
+      local_ipv4_network_cidr: cdktn.stringToTerraform(this._localIpv4NetworkCidr),
+      local_ipv6_network_cidr: cdktn.stringToTerraform(this._localIpv6NetworkCidr),
+      outside_ip_address_type: cdktn.stringToTerraform(this._outsideIpAddressType),
+      preshared_key_storage: cdktn.stringToTerraform(this._presharedKeyStorage),
+      region: cdktn.stringToTerraform(this._region),
+      remote_ipv4_network_cidr: cdktn.stringToTerraform(this._remoteIpv4NetworkCidr),
+      remote_ipv6_network_cidr: cdktn.stringToTerraform(this._remoteIpv6NetworkCidr),
+      static_routes_only: cdktn.booleanToTerraform(this._staticRoutesOnly),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      transit_gateway_id: cdktn.stringToTerraform(this._transitGatewayId),
+      transport_transit_gateway_attachment_id: cdktn.stringToTerraform(this._transportTransitGatewayAttachmentId),
+      tunnel1_dpd_timeout_action: cdktn.stringToTerraform(this._tunnel1DpdTimeoutAction),
+      tunnel1_dpd_timeout_seconds: cdktn.numberToTerraform(this._tunnel1DpdTimeoutSeconds),
+      tunnel1_enable_tunnel_lifecycle_control: cdktn.booleanToTerraform(this._tunnel1EnableTunnelLifecycleControl),
+      tunnel1_ike_versions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tunnel1IkeVersions),
+      tunnel1_inside_cidr: cdktn.stringToTerraform(this._tunnel1InsideCidr),
+      tunnel1_inside_ipv6_cidr: cdktn.stringToTerraform(this._tunnel1InsideIpv6Cidr),
+      tunnel1_phase1_dh_group_numbers: cdktn.listMapper(cdktn.numberToTerraform, false)(this._tunnel1Phase1DhGroupNumbers),
+      tunnel1_phase1_encryption_algorithms: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tunnel1Phase1EncryptionAlgorithms),
+      tunnel1_phase1_integrity_algorithms: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tunnel1Phase1IntegrityAlgorithms),
+      tunnel1_phase1_lifetime_seconds: cdktn.numberToTerraform(this._tunnel1Phase1LifetimeSeconds),
+      tunnel1_phase2_dh_group_numbers: cdktn.listMapper(cdktn.numberToTerraform, false)(this._tunnel1Phase2DhGroupNumbers),
+      tunnel1_phase2_encryption_algorithms: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tunnel1Phase2EncryptionAlgorithms),
+      tunnel1_phase2_integrity_algorithms: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tunnel1Phase2IntegrityAlgorithms),
+      tunnel1_phase2_lifetime_seconds: cdktn.numberToTerraform(this._tunnel1Phase2LifetimeSeconds),
+      tunnel1_preshared_key: cdktn.stringToTerraform(this._tunnel1PresharedKey),
+      tunnel1_rekey_fuzz_percentage: cdktn.numberToTerraform(this._tunnel1RekeyFuzzPercentage),
+      tunnel1_rekey_margin_time_seconds: cdktn.numberToTerraform(this._tunnel1RekeyMarginTimeSeconds),
+      tunnel1_replay_window_size: cdktn.numberToTerraform(this._tunnel1ReplayWindowSize),
+      tunnel1_startup_action: cdktn.stringToTerraform(this._tunnel1StartupAction),
+      tunnel2_dpd_timeout_action: cdktn.stringToTerraform(this._tunnel2DpdTimeoutAction),
+      tunnel2_dpd_timeout_seconds: cdktn.numberToTerraform(this._tunnel2DpdTimeoutSeconds),
+      tunnel2_enable_tunnel_lifecycle_control: cdktn.booleanToTerraform(this._tunnel2EnableTunnelLifecycleControl),
+      tunnel2_ike_versions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tunnel2IkeVersions),
+      tunnel2_inside_cidr: cdktn.stringToTerraform(this._tunnel2InsideCidr),
+      tunnel2_inside_ipv6_cidr: cdktn.stringToTerraform(this._tunnel2InsideIpv6Cidr),
+      tunnel2_phase1_dh_group_numbers: cdktn.listMapper(cdktn.numberToTerraform, false)(this._tunnel2Phase1DhGroupNumbers),
+      tunnel2_phase1_encryption_algorithms: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tunnel2Phase1EncryptionAlgorithms),
+      tunnel2_phase1_integrity_algorithms: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tunnel2Phase1IntegrityAlgorithms),
+      tunnel2_phase1_lifetime_seconds: cdktn.numberToTerraform(this._tunnel2Phase1LifetimeSeconds),
+      tunnel2_phase2_dh_group_numbers: cdktn.listMapper(cdktn.numberToTerraform, false)(this._tunnel2Phase2DhGroupNumbers),
+      tunnel2_phase2_encryption_algorithms: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tunnel2Phase2EncryptionAlgorithms),
+      tunnel2_phase2_integrity_algorithms: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tunnel2Phase2IntegrityAlgorithms),
+      tunnel2_phase2_lifetime_seconds: cdktn.numberToTerraform(this._tunnel2Phase2LifetimeSeconds),
+      tunnel2_preshared_key: cdktn.stringToTerraform(this._tunnel2PresharedKey),
+      tunnel2_rekey_fuzz_percentage: cdktn.numberToTerraform(this._tunnel2RekeyFuzzPercentage),
+      tunnel2_rekey_margin_time_seconds: cdktn.numberToTerraform(this._tunnel2RekeyMarginTimeSeconds),
+      tunnel2_replay_window_size: cdktn.numberToTerraform(this._tunnel2ReplayWindowSize),
+      tunnel2_startup_action: cdktn.stringToTerraform(this._tunnel2StartupAction),
+      tunnel_bandwidth: cdktn.stringToTerraform(this._tunnelBandwidth),
+      tunnel_inside_ip_version: cdktn.stringToTerraform(this._tunnelInsideIpVersion),
+      type: cdktn.stringToTerraform(this._type),
+      vpn_concentrator_id: cdktn.stringToTerraform(this._vpnConcentratorId),
+      vpn_gateway_id: cdktn.stringToTerraform(this._vpnGatewayId),
       tunnel1_log_options: vpnConnectionTunnel1LogOptionsToTerraform(this._tunnel1LogOptions.internalValue),
       tunnel2_log_options: vpnConnectionTunnel2LogOptionsToTerraform(this._tunnel2LogOptions.internalValue),
     };
@@ -2353,349 +2353,349 @@ export class VpnConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       customer_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._customerGatewayId),
+        value: cdktn.stringToHclTerraform(this._customerGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_acceleration: {
-        value: cdktf.booleanToHclTerraform(this._enableAcceleration),
+        value: cdktn.booleanToHclTerraform(this._enableAcceleration),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local_ipv4_network_cidr: {
-        value: cdktf.stringToHclTerraform(this._localIpv4NetworkCidr),
+        value: cdktn.stringToHclTerraform(this._localIpv4NetworkCidr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local_ipv6_network_cidr: {
-        value: cdktf.stringToHclTerraform(this._localIpv6NetworkCidr),
+        value: cdktn.stringToHclTerraform(this._localIpv6NetworkCidr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       outside_ip_address_type: {
-        value: cdktf.stringToHclTerraform(this._outsideIpAddressType),
+        value: cdktn.stringToHclTerraform(this._outsideIpAddressType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preshared_key_storage: {
-        value: cdktf.stringToHclTerraform(this._presharedKeyStorage),
+        value: cdktn.stringToHclTerraform(this._presharedKeyStorage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       remote_ipv4_network_cidr: {
-        value: cdktf.stringToHclTerraform(this._remoteIpv4NetworkCidr),
+        value: cdktn.stringToHclTerraform(this._remoteIpv4NetworkCidr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       remote_ipv6_network_cidr: {
-        value: cdktf.stringToHclTerraform(this._remoteIpv6NetworkCidr),
+        value: cdktn.stringToHclTerraform(this._remoteIpv6NetworkCidr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       static_routes_only: {
-        value: cdktf.booleanToHclTerraform(this._staticRoutesOnly),
+        value: cdktn.booleanToHclTerraform(this._staticRoutesOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       transit_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._transitGatewayId),
+        value: cdktn.stringToHclTerraform(this._transitGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transport_transit_gateway_attachment_id: {
-        value: cdktf.stringToHclTerraform(this._transportTransitGatewayAttachmentId),
+        value: cdktn.stringToHclTerraform(this._transportTransitGatewayAttachmentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tunnel1_dpd_timeout_action: {
-        value: cdktf.stringToHclTerraform(this._tunnel1DpdTimeoutAction),
+        value: cdktn.stringToHclTerraform(this._tunnel1DpdTimeoutAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tunnel1_dpd_timeout_seconds: {
-        value: cdktf.numberToHclTerraform(this._tunnel1DpdTimeoutSeconds),
+        value: cdktn.numberToHclTerraform(this._tunnel1DpdTimeoutSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tunnel1_enable_tunnel_lifecycle_control: {
-        value: cdktf.booleanToHclTerraform(this._tunnel1EnableTunnelLifecycleControl),
+        value: cdktn.booleanToHclTerraform(this._tunnel1EnableTunnelLifecycleControl),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tunnel1_ike_versions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tunnel1IkeVersions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tunnel1IkeVersions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tunnel1_inside_cidr: {
-        value: cdktf.stringToHclTerraform(this._tunnel1InsideCidr),
+        value: cdktn.stringToHclTerraform(this._tunnel1InsideCidr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tunnel1_inside_ipv6_cidr: {
-        value: cdktf.stringToHclTerraform(this._tunnel1InsideIpv6Cidr),
+        value: cdktn.stringToHclTerraform(this._tunnel1InsideIpv6Cidr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tunnel1_phase1_dh_group_numbers: {
-        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._tunnel1Phase1DhGroupNumbers),
+        value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(this._tunnel1Phase1DhGroupNumbers),
         isBlock: false,
         type: "set",
         storageClassType: "numberList",
       },
       tunnel1_phase1_encryption_algorithms: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tunnel1Phase1EncryptionAlgorithms),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tunnel1Phase1EncryptionAlgorithms),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tunnel1_phase1_integrity_algorithms: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tunnel1Phase1IntegrityAlgorithms),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tunnel1Phase1IntegrityAlgorithms),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tunnel1_phase1_lifetime_seconds: {
-        value: cdktf.numberToHclTerraform(this._tunnel1Phase1LifetimeSeconds),
+        value: cdktn.numberToHclTerraform(this._tunnel1Phase1LifetimeSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tunnel1_phase2_dh_group_numbers: {
-        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._tunnel1Phase2DhGroupNumbers),
+        value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(this._tunnel1Phase2DhGroupNumbers),
         isBlock: false,
         type: "set",
         storageClassType: "numberList",
       },
       tunnel1_phase2_encryption_algorithms: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tunnel1Phase2EncryptionAlgorithms),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tunnel1Phase2EncryptionAlgorithms),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tunnel1_phase2_integrity_algorithms: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tunnel1Phase2IntegrityAlgorithms),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tunnel1Phase2IntegrityAlgorithms),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tunnel1_phase2_lifetime_seconds: {
-        value: cdktf.numberToHclTerraform(this._tunnel1Phase2LifetimeSeconds),
+        value: cdktn.numberToHclTerraform(this._tunnel1Phase2LifetimeSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tunnel1_preshared_key: {
-        value: cdktf.stringToHclTerraform(this._tunnel1PresharedKey),
+        value: cdktn.stringToHclTerraform(this._tunnel1PresharedKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tunnel1_rekey_fuzz_percentage: {
-        value: cdktf.numberToHclTerraform(this._tunnel1RekeyFuzzPercentage),
+        value: cdktn.numberToHclTerraform(this._tunnel1RekeyFuzzPercentage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tunnel1_rekey_margin_time_seconds: {
-        value: cdktf.numberToHclTerraform(this._tunnel1RekeyMarginTimeSeconds),
+        value: cdktn.numberToHclTerraform(this._tunnel1RekeyMarginTimeSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tunnel1_replay_window_size: {
-        value: cdktf.numberToHclTerraform(this._tunnel1ReplayWindowSize),
+        value: cdktn.numberToHclTerraform(this._tunnel1ReplayWindowSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tunnel1_startup_action: {
-        value: cdktf.stringToHclTerraform(this._tunnel1StartupAction),
+        value: cdktn.stringToHclTerraform(this._tunnel1StartupAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tunnel2_dpd_timeout_action: {
-        value: cdktf.stringToHclTerraform(this._tunnel2DpdTimeoutAction),
+        value: cdktn.stringToHclTerraform(this._tunnel2DpdTimeoutAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tunnel2_dpd_timeout_seconds: {
-        value: cdktf.numberToHclTerraform(this._tunnel2DpdTimeoutSeconds),
+        value: cdktn.numberToHclTerraform(this._tunnel2DpdTimeoutSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tunnel2_enable_tunnel_lifecycle_control: {
-        value: cdktf.booleanToHclTerraform(this._tunnel2EnableTunnelLifecycleControl),
+        value: cdktn.booleanToHclTerraform(this._tunnel2EnableTunnelLifecycleControl),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tunnel2_ike_versions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tunnel2IkeVersions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tunnel2IkeVersions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tunnel2_inside_cidr: {
-        value: cdktf.stringToHclTerraform(this._tunnel2InsideCidr),
+        value: cdktn.stringToHclTerraform(this._tunnel2InsideCidr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tunnel2_inside_ipv6_cidr: {
-        value: cdktf.stringToHclTerraform(this._tunnel2InsideIpv6Cidr),
+        value: cdktn.stringToHclTerraform(this._tunnel2InsideIpv6Cidr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tunnel2_phase1_dh_group_numbers: {
-        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._tunnel2Phase1DhGroupNumbers),
+        value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(this._tunnel2Phase1DhGroupNumbers),
         isBlock: false,
         type: "set",
         storageClassType: "numberList",
       },
       tunnel2_phase1_encryption_algorithms: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tunnel2Phase1EncryptionAlgorithms),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tunnel2Phase1EncryptionAlgorithms),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tunnel2_phase1_integrity_algorithms: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tunnel2Phase1IntegrityAlgorithms),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tunnel2Phase1IntegrityAlgorithms),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tunnel2_phase1_lifetime_seconds: {
-        value: cdktf.numberToHclTerraform(this._tunnel2Phase1LifetimeSeconds),
+        value: cdktn.numberToHclTerraform(this._tunnel2Phase1LifetimeSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tunnel2_phase2_dh_group_numbers: {
-        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._tunnel2Phase2DhGroupNumbers),
+        value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(this._tunnel2Phase2DhGroupNumbers),
         isBlock: false,
         type: "set",
         storageClassType: "numberList",
       },
       tunnel2_phase2_encryption_algorithms: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tunnel2Phase2EncryptionAlgorithms),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tunnel2Phase2EncryptionAlgorithms),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tunnel2_phase2_integrity_algorithms: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tunnel2Phase2IntegrityAlgorithms),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tunnel2Phase2IntegrityAlgorithms),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tunnel2_phase2_lifetime_seconds: {
-        value: cdktf.numberToHclTerraform(this._tunnel2Phase2LifetimeSeconds),
+        value: cdktn.numberToHclTerraform(this._tunnel2Phase2LifetimeSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tunnel2_preshared_key: {
-        value: cdktf.stringToHclTerraform(this._tunnel2PresharedKey),
+        value: cdktn.stringToHclTerraform(this._tunnel2PresharedKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tunnel2_rekey_fuzz_percentage: {
-        value: cdktf.numberToHclTerraform(this._tunnel2RekeyFuzzPercentage),
+        value: cdktn.numberToHclTerraform(this._tunnel2RekeyFuzzPercentage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tunnel2_rekey_margin_time_seconds: {
-        value: cdktf.numberToHclTerraform(this._tunnel2RekeyMarginTimeSeconds),
+        value: cdktn.numberToHclTerraform(this._tunnel2RekeyMarginTimeSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tunnel2_replay_window_size: {
-        value: cdktf.numberToHclTerraform(this._tunnel2ReplayWindowSize),
+        value: cdktn.numberToHclTerraform(this._tunnel2ReplayWindowSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tunnel2_startup_action: {
-        value: cdktf.stringToHclTerraform(this._tunnel2StartupAction),
+        value: cdktn.stringToHclTerraform(this._tunnel2StartupAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tunnel_bandwidth: {
-        value: cdktf.stringToHclTerraform(this._tunnelBandwidth),
+        value: cdktn.stringToHclTerraform(this._tunnelBandwidth),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tunnel_inside_ip_version: {
-        value: cdktf.stringToHclTerraform(this._tunnelInsideIpVersion),
+        value: cdktn.stringToHclTerraform(this._tunnelInsideIpVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpn_concentrator_id: {
-        value: cdktf.stringToHclTerraform(this._vpnConcentratorId),
+        value: cdktn.stringToHclTerraform(this._vpnConcentratorId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpn_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._vpnGatewayId),
+        value: cdktn.stringToHclTerraform(this._vpnGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

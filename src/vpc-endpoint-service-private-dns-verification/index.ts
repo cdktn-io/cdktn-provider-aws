@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcEndpointServicePrivateDnsVerificationConfig extends cdktf.TerraformMetaArguments {
+export interface VpcEndpointServicePrivateDnsVerificationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -25,7 +25,7 @@ export interface VpcEndpointServicePrivateDnsVerificationConfig extends cdktf.Te
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_service_private_dns_verification#wait_for_verification VpcEndpointServicePrivateDnsVerification#wait_for_verification}
   */
-  readonly waitForVerification?: boolean | cdktf.IResolvable;
+  readonly waitForVerification?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -42,25 +42,25 @@ export interface VpcEndpointServicePrivateDnsVerificationTimeouts {
   readonly create?: string;
 }
 
-export function vpcEndpointServicePrivateDnsVerificationTimeoutsToTerraform(struct?: VpcEndpointServicePrivateDnsVerificationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcEndpointServicePrivateDnsVerificationTimeoutsToTerraform(struct?: VpcEndpointServicePrivateDnsVerificationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function vpcEndpointServicePrivateDnsVerificationTimeoutsToHclTerraform(struct?: VpcEndpointServicePrivateDnsVerificationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcEndpointServicePrivateDnsVerificationTimeoutsToHclTerraform(struct?: VpcEndpointServicePrivateDnsVerificationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -71,19 +71,19 @@ export function vpcEndpointServicePrivateDnsVerificationTimeoutsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcEndpointServicePrivateDnsVerificationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VpcEndpointServicePrivateDnsVerificationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VpcEndpointServicePrivateDnsVerificationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VpcEndpointServicePrivateDnsVerificationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -96,13 +96,13 @@ export class VpcEndpointServicePrivateDnsVerificationTimeoutsOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpcEndpointServicePrivateDnsVerificationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpcEndpointServicePrivateDnsVerificationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -133,7 +133,7 @@ export class VpcEndpointServicePrivateDnsVerificationTimeoutsOutputReference ext
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_service_private_dns_verification aws_vpc_endpoint_service_private_dns_verification}
 */
-export class VpcEndpointServicePrivateDnsVerification extends cdktf.TerraformResource {
+export class VpcEndpointServicePrivateDnsVerification extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -144,14 +144,14 @@ export class VpcEndpointServicePrivateDnsVerification extends cdktf.TerraformRes
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcEndpointServicePrivateDnsVerification resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcEndpointServicePrivateDnsVerification resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcEndpointServicePrivateDnsVerification to import
   * @param importFromId The id of the existing VpcEndpointServicePrivateDnsVerification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_service_private_dns_verification#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcEndpointServicePrivateDnsVerification to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_endpoint_service_private_dns_verification", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_endpoint_service_private_dns_verification", importId: importFromId, provider });
       }
 
   // ===========
@@ -221,11 +221,11 @@ export class VpcEndpointServicePrivateDnsVerification extends cdktf.TerraformRes
   }
 
   // wait_for_verification - computed: false, optional: true, required: false
-  private _waitForVerification?: boolean | cdktf.IResolvable; 
+  private _waitForVerification?: boolean | cdktn.IResolvable; 
   public get waitForVerification() {
     return this.getBooleanAttribute('wait_for_verification');
   }
-  public set waitForVerification(value: boolean | cdktf.IResolvable) {
+  public set waitForVerification(value: boolean | cdktn.IResolvable) {
     this._waitForVerification = value;
   }
   public resetWaitForVerification() {
@@ -258,9 +258,9 @@ export class VpcEndpointServicePrivateDnsVerification extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      service_id: cdktf.stringToTerraform(this._serviceId),
-      wait_for_verification: cdktf.booleanToTerraform(this._waitForVerification),
+      region: cdktn.stringToTerraform(this._region),
+      service_id: cdktn.stringToTerraform(this._serviceId),
+      wait_for_verification: cdktn.booleanToTerraform(this._waitForVerification),
       timeouts: vpcEndpointServicePrivateDnsVerificationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -268,19 +268,19 @@ export class VpcEndpointServicePrivateDnsVerification extends cdktf.TerraformRes
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_id: {
-        value: cdktf.stringToHclTerraform(this._serviceId),
+        value: cdktn.stringToHclTerraform(this._serviceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       wait_for_verification: {
-        value: cdktf.booleanToHclTerraform(this._waitForVerification),
+        value: cdktn.booleanToHclTerraform(this._waitForVerification),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

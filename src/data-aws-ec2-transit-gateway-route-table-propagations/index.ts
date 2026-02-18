@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsEc2TransitGatewayRouteTablePropagationsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEc2TransitGatewayRouteTablePropagationsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ec2_transit_gateway_route_table_propagations#id DataAwsEc2TransitGatewayRouteTablePropagations#id}
   *
@@ -34,7 +34,7 @@ export interface DataAwsEc2TransitGatewayRouteTablePropagationsConfig extends cd
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ec2_transit_gateway_route_table_propagations#filter DataAwsEc2TransitGatewayRouteTablePropagations#filter}
   */
-  readonly filter?: DataAwsEc2TransitGatewayRouteTablePropagationsFilter[] | cdktf.IResolvable;
+  readonly filter?: DataAwsEc2TransitGatewayRouteTablePropagationsFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -53,32 +53,32 @@ export interface DataAwsEc2TransitGatewayRouteTablePropagationsFilter {
   readonly values: string[];
 }
 
-export function dataAwsEc2TransitGatewayRouteTablePropagationsFilterToTerraform(struct?: DataAwsEc2TransitGatewayRouteTablePropagationsFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEc2TransitGatewayRouteTablePropagationsFilterToTerraform(struct?: DataAwsEc2TransitGatewayRouteTablePropagationsFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataAwsEc2TransitGatewayRouteTablePropagationsFilterToHclTerraform(struct?: DataAwsEc2TransitGatewayRouteTablePropagationsFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEc2TransitGatewayRouteTablePropagationsFilterToHclTerraform(struct?: DataAwsEc2TransitGatewayRouteTablePropagationsFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -89,9 +89,9 @@ export function dataAwsEc2TransitGatewayRouteTablePropagationsFilterToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEc2TransitGatewayRouteTablePropagationsFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsEc2TransitGatewayRouteTablePropagationsFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -99,11 +99,11 @@ export class DataAwsEc2TransitGatewayRouteTablePropagationsFilterOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsEc2TransitGatewayRouteTablePropagationsFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsEc2TransitGatewayRouteTablePropagationsFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -120,14 +120,14 @@ export class DataAwsEc2TransitGatewayRouteTablePropagationsFilterOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEc2TransitGatewayRouteTablePropagationsFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEc2TransitGatewayRouteTablePropagationsFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -155,7 +155,7 @@ export class DataAwsEc2TransitGatewayRouteTablePropagationsFilterOutputReference
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -166,15 +166,15 @@ export class DataAwsEc2TransitGatewayRouteTablePropagationsFilterOutputReference
   }
 }
 
-export class DataAwsEc2TransitGatewayRouteTablePropagationsFilterList extends cdktf.ComplexList {
-  public internalValue? : DataAwsEc2TransitGatewayRouteTablePropagationsFilter[] | cdktf.IResolvable
+export class DataAwsEc2TransitGatewayRouteTablePropagationsFilterList extends cdktn.ComplexList {
+  public internalValue? : DataAwsEc2TransitGatewayRouteTablePropagationsFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -192,25 +192,25 @@ export interface DataAwsEc2TransitGatewayRouteTablePropagationsTimeouts {
   readonly read?: string;
 }
 
-export function dataAwsEc2TransitGatewayRouteTablePropagationsTimeoutsToTerraform(struct?: DataAwsEc2TransitGatewayRouteTablePropagationsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEc2TransitGatewayRouteTablePropagationsTimeoutsToTerraform(struct?: DataAwsEc2TransitGatewayRouteTablePropagationsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAwsEc2TransitGatewayRouteTablePropagationsTimeoutsToHclTerraform(struct?: DataAwsEc2TransitGatewayRouteTablePropagationsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEc2TransitGatewayRouteTablePropagationsTimeoutsToHclTerraform(struct?: DataAwsEc2TransitGatewayRouteTablePropagationsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -221,19 +221,19 @@ export function dataAwsEc2TransitGatewayRouteTablePropagationsTimeoutsToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEc2TransitGatewayRouteTablePropagationsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAwsEc2TransitGatewayRouteTablePropagationsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAwsEc2TransitGatewayRouteTablePropagationsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsEc2TransitGatewayRouteTablePropagationsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -246,13 +246,13 @@ export class DataAwsEc2TransitGatewayRouteTablePropagationsTimeoutsOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEc2TransitGatewayRouteTablePropagationsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEc2TransitGatewayRouteTablePropagationsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -283,7 +283,7 @@ export class DataAwsEc2TransitGatewayRouteTablePropagationsTimeoutsOutputReferen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ec2_transit_gateway_route_table_propagations aws_ec2_transit_gateway_route_table_propagations}
 */
-export class DataAwsEc2TransitGatewayRouteTablePropagations extends cdktf.TerraformDataSource {
+export class DataAwsEc2TransitGatewayRouteTablePropagations extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -294,14 +294,14 @@ export class DataAwsEc2TransitGatewayRouteTablePropagations extends cdktf.Terraf
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsEc2TransitGatewayRouteTablePropagations resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsEc2TransitGatewayRouteTablePropagations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEc2TransitGatewayRouteTablePropagations to import
   * @param importFromId The id of the existing DataAwsEc2TransitGatewayRouteTablePropagations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ec2_transit_gateway_route_table_propagations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEc2TransitGatewayRouteTablePropagations to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway_route_table_propagations", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway_route_table_propagations", importId: importFromId, provider });
       }
 
   // ===========
@@ -397,7 +397,7 @@ export class DataAwsEc2TransitGatewayRouteTablePropagations extends cdktf.Terraf
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: DataAwsEc2TransitGatewayRouteTablePropagationsFilter[] | cdktf.IResolvable) {
+  public putFilter(value: DataAwsEc2TransitGatewayRouteTablePropagationsFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -430,10 +430,10 @@ export class DataAwsEc2TransitGatewayRouteTablePropagations extends cdktf.Terraf
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      transit_gateway_route_table_id: cdktf.stringToTerraform(this._transitGatewayRouteTableId),
-      filter: cdktf.listMapper(dataAwsEc2TransitGatewayRouteTablePropagationsFilterToTerraform, true)(this._filter.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      transit_gateway_route_table_id: cdktn.stringToTerraform(this._transitGatewayRouteTableId),
+      filter: cdktn.listMapper(dataAwsEc2TransitGatewayRouteTablePropagationsFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsEc2TransitGatewayRouteTablePropagationsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -441,25 +441,25 @@ export class DataAwsEc2TransitGatewayRouteTablePropagations extends cdktf.Terraf
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transit_gateway_route_table_id: {
-        value: cdktf.stringToHclTerraform(this._transitGatewayRouteTableId),
+        value: cdktn.stringToHclTerraform(this._transitGatewayRouteTableId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter: {
-        value: cdktf.listMapperHcl(dataAwsEc2TransitGatewayRouteTablePropagationsFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(dataAwsEc2TransitGatewayRouteTablePropagationsFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsEc2TransitGatewayRouteTablePropagationsFilterList",

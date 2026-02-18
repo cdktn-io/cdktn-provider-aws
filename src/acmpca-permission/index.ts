@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AcmpcaPermissionConfig extends cdktf.TerraformMetaArguments {
+export interface AcmpcaPermissionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acmpca_permission#actions AcmpcaPermission#actions}
   */
@@ -46,7 +46,7 @@ export interface AcmpcaPermissionConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acmpca_permission aws_acmpca_permission}
 */
-export class AcmpcaPermission extends cdktf.TerraformResource {
+export class AcmpcaPermission extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class AcmpcaPermission extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AcmpcaPermission resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AcmpcaPermission resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AcmpcaPermission to import
   * @param importFromId The id of the existing AcmpcaPermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acmpca_permission#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AcmpcaPermission to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_acmpca_permission", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_acmpca_permission", importId: importFromId, provider });
       }
 
   // ===========
@@ -109,7 +109,7 @@ export class AcmpcaPermission extends cdktf.TerraformResource {
   // actions - computed: false, optional: false, required: true
   private _actions?: string[]; 
   public get actions() {
-    return cdktf.Fn.tolist(this.getListAttribute('actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('actions'));
   }
   public set actions(value: string[]) {
     this._actions = value;
@@ -204,49 +204,49 @@ export class AcmpcaPermission extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._actions),
-      certificate_authority_arn: cdktf.stringToTerraform(this._certificateAuthorityArn),
-      id: cdktf.stringToTerraform(this._id),
-      principal: cdktf.stringToTerraform(this._principal),
-      region: cdktf.stringToTerraform(this._region),
-      source_account: cdktf.stringToTerraform(this._sourceAccount),
+      actions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._actions),
+      certificate_authority_arn: cdktn.stringToTerraform(this._certificateAuthorityArn),
+      id: cdktn.stringToTerraform(this._id),
+      principal: cdktn.stringToTerraform(this._principal),
+      region: cdktn.stringToTerraform(this._region),
+      source_account: cdktn.stringToTerraform(this._sourceAccount),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       actions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._actions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._actions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       certificate_authority_arn: {
-        value: cdktf.stringToHclTerraform(this._certificateAuthorityArn),
+        value: cdktn.stringToHclTerraform(this._certificateAuthorityArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal: {
-        value: cdktf.stringToHclTerraform(this._principal),
+        value: cdktn.stringToHclTerraform(this._principal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_account: {
-        value: cdktf.stringToHclTerraform(this._sourceAccount),
+        value: cdktn.stringToHclTerraform(this._sourceAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

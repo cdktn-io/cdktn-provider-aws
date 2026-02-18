@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcEndpointPrivateDnsConfig extends cdktf.TerraformMetaArguments {
+export interface VpcEndpointPrivateDnsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_private_dns#private_dns_enabled VpcEndpointPrivateDns#private_dns_enabled}
   */
-  readonly privateDnsEnabled: boolean | cdktf.IResolvable;
+  readonly privateDnsEnabled: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -31,7 +31,7 @@ export interface VpcEndpointPrivateDnsConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_private_dns aws_vpc_endpoint_private_dns}
 */
-export class VpcEndpointPrivateDns extends cdktf.TerraformResource {
+export class VpcEndpointPrivateDns extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -42,14 +42,14 @@ export class VpcEndpointPrivateDns extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcEndpointPrivateDns resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcEndpointPrivateDns resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcEndpointPrivateDns to import
   * @param importFromId The id of the existing VpcEndpointPrivateDns that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_private_dns#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcEndpointPrivateDns to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_endpoint_private_dns", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_endpoint_private_dns", importId: importFromId, provider });
       }
 
   // ===========
@@ -89,11 +89,11 @@ export class VpcEndpointPrivateDns extends cdktf.TerraformResource {
   // ==========
 
   // private_dns_enabled - computed: false, optional: false, required: true
-  private _privateDnsEnabled?: boolean | cdktf.IResolvable; 
+  private _privateDnsEnabled?: boolean | cdktn.IResolvable; 
   public get privateDnsEnabled() {
     return this.getBooleanAttribute('private_dns_enabled');
   }
-  public set privateDnsEnabled(value: boolean | cdktf.IResolvable) {
+  public set privateDnsEnabled(value: boolean | cdktn.IResolvable) {
     this._privateDnsEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -136,28 +136,28 @@ export class VpcEndpointPrivateDns extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      private_dns_enabled: cdktf.booleanToTerraform(this._privateDnsEnabled),
-      region: cdktf.stringToTerraform(this._region),
-      vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
+      private_dns_enabled: cdktn.booleanToTerraform(this._privateDnsEnabled),
+      region: cdktn.stringToTerraform(this._region),
+      vpc_endpoint_id: cdktn.stringToTerraform(this._vpcEndpointId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       private_dns_enabled: {
-        value: cdktf.booleanToHclTerraform(this._privateDnsEnabled),
+        value: cdktn.booleanToHclTerraform(this._privateDnsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._vpcEndpointId),
+        value: cdktn.stringToHclTerraform(this._vpcEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

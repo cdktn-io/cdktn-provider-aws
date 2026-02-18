@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsCurReportDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCurReportDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}
   *
@@ -32,7 +32,7 @@ export interface DataAwsCurReportDefinitionConfig extends cdktf.TerraformMetaArg
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cur_report_definition aws_cur_report_definition}
 */
-export class DataAwsCurReportDefinition extends cdktf.TerraformDataSource {
+export class DataAwsCurReportDefinition extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class DataAwsCurReportDefinition extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsCurReportDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsCurReportDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCurReportDefinition to import
   * @param importFromId The id of the existing DataAwsCurReportDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cur_report_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCurReportDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cur_report_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cur_report_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -91,12 +91,12 @@ export class DataAwsCurReportDefinition extends cdktf.TerraformDataSource {
 
   // additional_artifacts - computed: true, optional: false, required: false
   public get additionalArtifacts() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_artifacts'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_artifacts'));
   }
 
   // additional_schema_elements - computed: true, optional: false, required: false
   public get additionalSchemaElements() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_schema_elements'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_schema_elements'));
   }
 
   // compression - computed: true, optional: false, required: false
@@ -190,28 +190,28 @@ export class DataAwsCurReportDefinition extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      report_name: cdktf.stringToTerraform(this._reportName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      report_name: cdktn.stringToTerraform(this._reportName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       report_name: {
-        value: cdktf.stringToHclTerraform(this._reportName),
+        value: cdktn.stringToHclTerraform(this._reportName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecurityhubAutomationRuleConfig extends cdktf.TerraformMetaArguments {
+export interface SecurityhubAutomationRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}
   */
@@ -19,7 +19,7 @@ export interface SecurityhubAutomationRuleConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}
   */
-  readonly isTerminal?: boolean | cdktf.IResolvable;
+  readonly isTerminal?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -47,13 +47,13 @@ export interface SecurityhubAutomationRuleConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#actions SecurityhubAutomationRule#actions}
   */
-  readonly actions?: SecurityhubAutomationRuleActions[] | cdktf.IResolvable;
+  readonly actions?: SecurityhubAutomationRuleActions[] | cdktn.IResolvable;
   /**
   * criteria block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#criteria SecurityhubAutomationRule#criteria}
   */
-  readonly criteria?: SecurityhubAutomationRuleCriteria[] | cdktf.IResolvable;
+  readonly criteria?: SecurityhubAutomationRuleCriteria[] | cdktn.IResolvable;
 }
 export interface SecurityhubAutomationRuleActionsFindingFieldsUpdateNote {
   /**
@@ -66,32 +66,32 @@ export interface SecurityhubAutomationRuleActionsFindingFieldsUpdateNote {
   readonly updatedBy: string;
 }
 
-export function securityhubAutomationRuleActionsFindingFieldsUpdateNoteToTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateNote | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleActionsFindingFieldsUpdateNoteToTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateNote | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    text: cdktf.stringToTerraform(struct!.text),
-    updated_by: cdktf.stringToTerraform(struct!.updatedBy),
+    text: cdktn.stringToTerraform(struct!.text),
+    updated_by: cdktn.stringToTerraform(struct!.updatedBy),
   }
 }
 
 
-export function securityhubAutomationRuleActionsFindingFieldsUpdateNoteToHclTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateNote | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleActionsFindingFieldsUpdateNoteToHclTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateNote | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     text: {
-      value: cdktf.stringToHclTerraform(struct!.text),
+      value: cdktn.stringToHclTerraform(struct!.text),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     updated_by: {
-      value: cdktf.stringToHclTerraform(struct!.updatedBy),
+      value: cdktn.stringToHclTerraform(struct!.updatedBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -102,9 +102,9 @@ export function securityhubAutomationRuleActionsFindingFieldsUpdateNoteToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -112,11 +112,11 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleActionsFindingFieldsUpdateNote | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleActionsFindingFieldsUpdateNote | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,14 +133,14 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateNote | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateNote | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._text = undefined;
       this._updatedBy = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -179,15 +179,15 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputRefere
   }
 }
 
-export class SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleActionsFindingFieldsUpdateNote[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleActionsFindingFieldsUpdateNote[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -212,32 +212,32 @@ export interface SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindi
   readonly productArn: string;
 }
 
-export function securityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsToTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsToTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    product_arn: cdktf.stringToTerraform(struct!.productArn),
+    id: cdktn.stringToTerraform(struct!.id),
+    product_arn: cdktn.stringToTerraform(struct!.productArn),
   }
 }
 
 
-export function securityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsToHclTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsToHclTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     product_arn: {
-      value: cdktf.stringToHclTerraform(struct!.productArn),
+      value: cdktn.stringToHclTerraform(struct!.productArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -248,9 +248,9 @@ export function securityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -258,11 +258,11 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -279,14 +279,14 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._productArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -325,15 +325,15 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsO
   }
 }
 
-export class SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -355,32 +355,32 @@ export interface SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity {
   readonly product?: number;
 }
 
-export function securityhubAutomationRuleActionsFindingFieldsUpdateSeverityToTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleActionsFindingFieldsUpdateSeverityToTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    label: cdktf.stringToTerraform(struct!.label),
-    product: cdktf.numberToTerraform(struct!.product),
+    label: cdktn.stringToTerraform(struct!.label),
+    product: cdktn.numberToTerraform(struct!.product),
   }
 }
 
 
-export function securityhubAutomationRuleActionsFindingFieldsUpdateSeverityToHclTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleActionsFindingFieldsUpdateSeverityToHclTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     product: {
-      value: cdktf.numberToHclTerraform(struct!.product),
+      value: cdktn.numberToHclTerraform(struct!.product),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -391,9 +391,9 @@ export function securityhubAutomationRuleActionsFindingFieldsUpdateSeverityToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -401,11 +401,11 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -422,14 +422,14 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._label = undefined;
       this._product = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -474,15 +474,15 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputRe
   }
 }
 
-export class SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -500,25 +500,25 @@ export interface SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow {
   readonly status?: string;
 }
 
-export function securityhubAutomationRuleActionsFindingFieldsUpdateWorkflowToTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleActionsFindingFieldsUpdateWorkflowToTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    status: cdktf.stringToTerraform(struct!.status),
+    status: cdktn.stringToTerraform(struct!.status),
   }
 }
 
 
-export function securityhubAutomationRuleActionsFindingFieldsUpdateWorkflowToHclTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleActionsFindingFieldsUpdateWorkflowToHclTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -529,9 +529,9 @@ export function securityhubAutomationRuleActionsFindingFieldsUpdateWorkflowToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -539,11 +539,11 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -556,13 +556,13 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._status = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -590,15 +590,15 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputRe
   }
 }
 
-export class SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -635,102 +635,102 @@ export interface SecurityhubAutomationRuleActionsFindingFieldsUpdate {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#note SecurityhubAutomationRule#note}
   */
-  readonly note?: SecurityhubAutomationRuleActionsFindingFieldsUpdateNote[] | cdktf.IResolvable;
+  readonly note?: SecurityhubAutomationRuleActionsFindingFieldsUpdateNote[] | cdktn.IResolvable;
   /**
   * related_findings block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#related_findings SecurityhubAutomationRule#related_findings}
   */
-  readonly relatedFindings?: SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings[] | cdktf.IResolvable;
+  readonly relatedFindings?: SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings[] | cdktn.IResolvable;
   /**
   * severity block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#severity SecurityhubAutomationRule#severity}
   */
-  readonly severity?: SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity[] | cdktf.IResolvable;
+  readonly severity?: SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity[] | cdktn.IResolvable;
   /**
   * workflow block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#workflow SecurityhubAutomationRule#workflow}
   */
-  readonly workflow?: SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow[] | cdktf.IResolvable;
+  readonly workflow?: SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow[] | cdktn.IResolvable;
 }
 
-export function securityhubAutomationRuleActionsFindingFieldsUpdateToTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleActionsFindingFieldsUpdateToTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    confidence: cdktf.numberToTerraform(struct!.confidence),
-    criticality: cdktf.numberToTerraform(struct!.criticality),
-    types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.types),
-    user_defined_fields: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.userDefinedFields),
-    verification_state: cdktf.stringToTerraform(struct!.verificationState),
-    note: cdktf.listMapper(securityhubAutomationRuleActionsFindingFieldsUpdateNoteToTerraform, true)(struct!.note),
-    related_findings: cdktf.listMapper(securityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsToTerraform, true)(struct!.relatedFindings),
-    severity: cdktf.listMapper(securityhubAutomationRuleActionsFindingFieldsUpdateSeverityToTerraform, true)(struct!.severity),
-    workflow: cdktf.listMapper(securityhubAutomationRuleActionsFindingFieldsUpdateWorkflowToTerraform, true)(struct!.workflow),
+    confidence: cdktn.numberToTerraform(struct!.confidence),
+    criticality: cdktn.numberToTerraform(struct!.criticality),
+    types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.types),
+    user_defined_fields: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.userDefinedFields),
+    verification_state: cdktn.stringToTerraform(struct!.verificationState),
+    note: cdktn.listMapper(securityhubAutomationRuleActionsFindingFieldsUpdateNoteToTerraform, true)(struct!.note),
+    related_findings: cdktn.listMapper(securityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsToTerraform, true)(struct!.relatedFindings),
+    severity: cdktn.listMapper(securityhubAutomationRuleActionsFindingFieldsUpdateSeverityToTerraform, true)(struct!.severity),
+    workflow: cdktn.listMapper(securityhubAutomationRuleActionsFindingFieldsUpdateWorkflowToTerraform, true)(struct!.workflow),
   }
 }
 
 
-export function securityhubAutomationRuleActionsFindingFieldsUpdateToHclTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleActionsFindingFieldsUpdateToHclTerraform(struct?: SecurityhubAutomationRuleActionsFindingFieldsUpdate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     confidence: {
-      value: cdktf.numberToHclTerraform(struct!.confidence),
+      value: cdktn.numberToHclTerraform(struct!.confidence),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     criticality: {
-      value: cdktf.numberToHclTerraform(struct!.criticality),
+      value: cdktn.numberToHclTerraform(struct!.criticality),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.types),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.types),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     user_defined_fields: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.userDefinedFields),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.userDefinedFields),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     verification_state: {
-      value: cdktf.stringToHclTerraform(struct!.verificationState),
+      value: cdktn.stringToHclTerraform(struct!.verificationState),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     note: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleActionsFindingFieldsUpdateNoteToHclTerraform, true)(struct!.note),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleActionsFindingFieldsUpdateNoteToHclTerraform, true)(struct!.note),
       isBlock: true,
       type: "list",
       storageClassType: "SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList",
     },
     related_findings: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsToHclTerraform, true)(struct!.relatedFindings),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsToHclTerraform, true)(struct!.relatedFindings),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList",
     },
     severity: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleActionsFindingFieldsUpdateSeverityToHclTerraform, true)(struct!.severity),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleActionsFindingFieldsUpdateSeverityToHclTerraform, true)(struct!.severity),
       isBlock: true,
       type: "list",
       storageClassType: "SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList",
     },
     workflow: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleActionsFindingFieldsUpdateWorkflowToHclTerraform, true)(struct!.workflow),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleActionsFindingFieldsUpdateWorkflowToHclTerraform, true)(struct!.workflow),
       isBlock: true,
       type: "list",
       storageClassType: "SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList",
@@ -741,9 +741,9 @@ export function securityhubAutomationRuleActionsFindingFieldsUpdateToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -751,11 +751,11 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleActionsFindingFieldsUpdate | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleActionsFindingFieldsUpdate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -800,7 +800,7 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleActionsFindingFieldsUpdate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleActionsFindingFieldsUpdate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -814,7 +814,7 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference 
       this._severity.internalValue = undefined;
       this._workflow.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -918,7 +918,7 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference 
   public get note() {
     return this._note;
   }
-  public putNote(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateNote[] | cdktf.IResolvable) {
+  public putNote(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateNote[] | cdktn.IResolvable) {
     this._note.internalValue = value;
   }
   public resetNote() {
@@ -934,7 +934,7 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference 
   public get relatedFindings() {
     return this._relatedFindings;
   }
-  public putRelatedFindings(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings[] | cdktf.IResolvable) {
+  public putRelatedFindings(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings[] | cdktn.IResolvable) {
     this._relatedFindings.internalValue = value;
   }
   public resetRelatedFindings() {
@@ -950,7 +950,7 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference 
   public get severity() {
     return this._severity;
   }
-  public putSeverity(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity[] | cdktf.IResolvable) {
+  public putSeverity(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity[] | cdktn.IResolvable) {
     this._severity.internalValue = value;
   }
   public resetSeverity() {
@@ -966,7 +966,7 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference 
   public get workflow() {
     return this._workflow;
   }
-  public putWorkflow(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow[] | cdktf.IResolvable) {
+  public putWorkflow(value: SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow[] | cdktn.IResolvable) {
     this._workflow.internalValue = value;
   }
   public resetWorkflow() {
@@ -978,15 +978,15 @@ export class SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference 
   }
 }
 
-export class SecurityhubAutomationRuleActionsFindingFieldsUpdateList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleActionsFindingFieldsUpdate[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleActionsFindingFieldsUpdateList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleActionsFindingFieldsUpdate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1007,35 +1007,35 @@ export interface SecurityhubAutomationRuleActions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#finding_fields_update SecurityhubAutomationRule#finding_fields_update}
   */
-  readonly findingFieldsUpdate?: SecurityhubAutomationRuleActionsFindingFieldsUpdate[] | cdktf.IResolvable;
+  readonly findingFieldsUpdate?: SecurityhubAutomationRuleActionsFindingFieldsUpdate[] | cdktn.IResolvable;
 }
 
-export function securityhubAutomationRuleActionsToTerraform(struct?: SecurityhubAutomationRuleActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleActionsToTerraform(struct?: SecurityhubAutomationRuleActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    finding_fields_update: cdktf.listMapper(securityhubAutomationRuleActionsFindingFieldsUpdateToTerraform, true)(struct!.findingFieldsUpdate),
+    type: cdktn.stringToTerraform(struct!.type),
+    finding_fields_update: cdktn.listMapper(securityhubAutomationRuleActionsFindingFieldsUpdateToTerraform, true)(struct!.findingFieldsUpdate),
   }
 }
 
 
-export function securityhubAutomationRuleActionsToHclTerraform(struct?: SecurityhubAutomationRuleActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleActionsToHclTerraform(struct?: SecurityhubAutomationRuleActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     finding_fields_update: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleActionsFindingFieldsUpdateToHclTerraform, true)(struct!.findingFieldsUpdate),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleActionsFindingFieldsUpdateToHclTerraform, true)(struct!.findingFieldsUpdate),
       isBlock: true,
       type: "list",
       storageClassType: "SecurityhubAutomationRuleActionsFindingFieldsUpdateList",
@@ -1046,9 +1046,9 @@ export function securityhubAutomationRuleActionsToHclTerraform(struct?: Security
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleActionsOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleActionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1056,11 +1056,11 @@ export class SecurityhubAutomationRuleActionsOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleActions | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleActions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1077,14 +1077,14 @@ export class SecurityhubAutomationRuleActionsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleActions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleActions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._findingFieldsUpdate.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1117,7 +1117,7 @@ export class SecurityhubAutomationRuleActionsOutputReference extends cdktf.Compl
   public get findingFieldsUpdate() {
     return this._findingFieldsUpdate;
   }
-  public putFindingFieldsUpdate(value: SecurityhubAutomationRuleActionsFindingFieldsUpdate[] | cdktf.IResolvable) {
+  public putFindingFieldsUpdate(value: SecurityhubAutomationRuleActionsFindingFieldsUpdate[] | cdktn.IResolvable) {
     this._findingFieldsUpdate.internalValue = value;
   }
   public resetFindingFieldsUpdate() {
@@ -1129,15 +1129,15 @@ export class SecurityhubAutomationRuleActionsOutputReference extends cdktf.Compl
   }
 }
 
-export class SecurityhubAutomationRuleActionsList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleActions[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleActionsList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleActions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1159,32 +1159,32 @@ export interface SecurityhubAutomationRuleCriteriaAwsAccountId {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaAwsAccountIdToTerraform(struct?: SecurityhubAutomationRuleCriteriaAwsAccountId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaAwsAccountIdToTerraform(struct?: SecurityhubAutomationRuleCriteriaAwsAccountId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaAwsAccountIdToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaAwsAccountId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaAwsAccountIdToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaAwsAccountId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1195,9 +1195,9 @@ export function securityhubAutomationRuleCriteriaAwsAccountIdToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1205,11 +1205,11 @@ export class SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaAwsAccountId | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaAwsAccountId | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1226,14 +1226,14 @@ export class SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaAwsAccountId | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaAwsAccountId | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1272,15 +1272,15 @@ export class SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference extend
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaAwsAccountIdList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaAwsAccountId[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaAwsAccountIdList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaAwsAccountId[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1302,32 +1302,32 @@ export interface SecurityhubAutomationRuleCriteriaAwsAccountName {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaAwsAccountNameToTerraform(struct?: SecurityhubAutomationRuleCriteriaAwsAccountName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaAwsAccountNameToTerraform(struct?: SecurityhubAutomationRuleCriteriaAwsAccountName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaAwsAccountNameToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaAwsAccountName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaAwsAccountNameToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaAwsAccountName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1338,9 +1338,9 @@ export function securityhubAutomationRuleCriteriaAwsAccountNameToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1348,11 +1348,11 @@ export class SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaAwsAccountName | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaAwsAccountName | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1369,14 +1369,14 @@ export class SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaAwsAccountName | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaAwsAccountName | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1415,15 +1415,15 @@ export class SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference exte
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaAwsAccountNameList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaAwsAccountName[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaAwsAccountNameList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaAwsAccountName[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1445,32 +1445,32 @@ export interface SecurityhubAutomationRuleCriteriaCompanyName {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaCompanyNameToTerraform(struct?: SecurityhubAutomationRuleCriteriaCompanyName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaCompanyNameToTerraform(struct?: SecurityhubAutomationRuleCriteriaCompanyName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaCompanyNameToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaCompanyName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaCompanyNameToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaCompanyName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1481,9 +1481,9 @@ export function securityhubAutomationRuleCriteriaCompanyNameToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaCompanyNameOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaCompanyNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1491,11 +1491,11 @@ export class SecurityhubAutomationRuleCriteriaCompanyNameOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaCompanyName | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaCompanyName | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1512,14 +1512,14 @@ export class SecurityhubAutomationRuleCriteriaCompanyNameOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaCompanyName | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaCompanyName | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1558,15 +1558,15 @@ export class SecurityhubAutomationRuleCriteriaCompanyNameOutputReference extends
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaCompanyNameList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaCompanyName[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaCompanyNameList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaCompanyName[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1588,32 +1588,32 @@ export interface SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsI
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdToTerraform(struct?: SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdToTerraform(struct?: SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1624,9 +1624,9 @@ export function securityhubAutomationRuleCriteriaComplianceAssociatedStandardsId
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1634,11 +1634,11 @@ export class SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1655,14 +1655,14 @@ export class SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1701,15 +1701,15 @@ export class SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOut
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1731,32 +1731,32 @@ export interface SecurityhubAutomationRuleCriteriaComplianceSecurityControlId {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaComplianceSecurityControlIdToTerraform(struct?: SecurityhubAutomationRuleCriteriaComplianceSecurityControlId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaComplianceSecurityControlIdToTerraform(struct?: SecurityhubAutomationRuleCriteriaComplianceSecurityControlId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaComplianceSecurityControlIdToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaComplianceSecurityControlId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaComplianceSecurityControlIdToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaComplianceSecurityControlId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1767,9 +1767,9 @@ export function securityhubAutomationRuleCriteriaComplianceSecurityControlIdToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1777,11 +1777,11 @@ export class SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaComplianceSecurityControlId | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaComplianceSecurityControlId | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1798,14 +1798,14 @@ export class SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaComplianceSecurityControlId | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaComplianceSecurityControlId | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1844,15 +1844,15 @@ export class SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputR
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaComplianceSecurityControlId[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaComplianceSecurityControlId[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1874,32 +1874,32 @@ export interface SecurityhubAutomationRuleCriteriaComplianceStatus {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaComplianceStatusToTerraform(struct?: SecurityhubAutomationRuleCriteriaComplianceStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaComplianceStatusToTerraform(struct?: SecurityhubAutomationRuleCriteriaComplianceStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaComplianceStatusToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaComplianceStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaComplianceStatusToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaComplianceStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1910,9 +1910,9 @@ export function securityhubAutomationRuleCriteriaComplianceStatusToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1920,11 +1920,11 @@ export class SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaComplianceStatus | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaComplianceStatus | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1941,14 +1941,14 @@ export class SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaComplianceStatus | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaComplianceStatus | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1987,15 +1987,15 @@ export class SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference ex
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaComplianceStatusList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaComplianceStatus[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaComplianceStatusList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaComplianceStatus[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2029,53 +2029,53 @@ export interface SecurityhubAutomationRuleCriteriaConfidence {
   readonly lte?: number;
 }
 
-export function securityhubAutomationRuleCriteriaConfidenceToTerraform(struct?: SecurityhubAutomationRuleCriteriaConfidence | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaConfidenceToTerraform(struct?: SecurityhubAutomationRuleCriteriaConfidence | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    eq: cdktf.numberToTerraform(struct!.eq),
-    gt: cdktf.numberToTerraform(struct!.gt),
-    gte: cdktf.numberToTerraform(struct!.gte),
-    lt: cdktf.numberToTerraform(struct!.lt),
-    lte: cdktf.numberToTerraform(struct!.lte),
+    eq: cdktn.numberToTerraform(struct!.eq),
+    gt: cdktn.numberToTerraform(struct!.gt),
+    gte: cdktn.numberToTerraform(struct!.gte),
+    lt: cdktn.numberToTerraform(struct!.lt),
+    lte: cdktn.numberToTerraform(struct!.lte),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaConfidenceToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaConfidence | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaConfidenceToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaConfidence | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     eq: {
-      value: cdktf.numberToHclTerraform(struct!.eq),
+      value: cdktn.numberToHclTerraform(struct!.eq),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     gt: {
-      value: cdktf.numberToHclTerraform(struct!.gt),
+      value: cdktn.numberToHclTerraform(struct!.gt),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     gte: {
-      value: cdktf.numberToHclTerraform(struct!.gte),
+      value: cdktn.numberToHclTerraform(struct!.gte),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     lt: {
-      value: cdktf.numberToHclTerraform(struct!.lt),
+      value: cdktn.numberToHclTerraform(struct!.lt),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     lte: {
-      value: cdktf.numberToHclTerraform(struct!.lte),
+      value: cdktn.numberToHclTerraform(struct!.lte),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2086,9 +2086,9 @@ export function securityhubAutomationRuleCriteriaConfidenceToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaConfidenceOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaConfidenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2096,11 +2096,11 @@ export class SecurityhubAutomationRuleCriteriaConfidenceOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaConfidence | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaConfidence | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2129,7 +2129,7 @@ export class SecurityhubAutomationRuleCriteriaConfidenceOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaConfidence | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaConfidence | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2139,7 +2139,7 @@ export class SecurityhubAutomationRuleCriteriaConfidenceOutputReference extends 
       this._lt = undefined;
       this._lte = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2235,15 +2235,15 @@ export class SecurityhubAutomationRuleCriteriaConfidenceOutputReference extends 
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaConfidenceList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaConfidence[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaConfidenceList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaConfidence[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2265,32 +2265,32 @@ export interface SecurityhubAutomationRuleCriteriaCreatedAtDateRange {
   readonly value: number;
 }
 
-export function securityhubAutomationRuleCriteriaCreatedAtDateRangeToTerraform(struct?: SecurityhubAutomationRuleCriteriaCreatedAtDateRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaCreatedAtDateRangeToTerraform(struct?: SecurityhubAutomationRuleCriteriaCreatedAtDateRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit: cdktf.stringToTerraform(struct!.unit),
-    value: cdktf.numberToTerraform(struct!.value),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaCreatedAtDateRangeToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaCreatedAtDateRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaCreatedAtDateRangeToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaCreatedAtDateRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2301,9 +2301,9 @@ export function securityhubAutomationRuleCriteriaCreatedAtDateRangeToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2311,11 +2311,11 @@ export class SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaCreatedAtDateRange | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaCreatedAtDateRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2332,14 +2332,14 @@ export class SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaCreatedAtDateRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaCreatedAtDateRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._unit = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2378,15 +2378,15 @@ export class SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference 
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaCreatedAtDateRange[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaCreatedAtDateRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2411,42 +2411,42 @@ export interface SecurityhubAutomationRuleCriteriaCreatedAt {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
   */
-  readonly dateRange?: SecurityhubAutomationRuleCriteriaCreatedAtDateRange[] | cdktf.IResolvable;
+  readonly dateRange?: SecurityhubAutomationRuleCriteriaCreatedAtDateRange[] | cdktn.IResolvable;
 }
 
-export function securityhubAutomationRuleCriteriaCreatedAtToTerraform(struct?: SecurityhubAutomationRuleCriteriaCreatedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaCreatedAtToTerraform(struct?: SecurityhubAutomationRuleCriteriaCreatedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end: cdktf.stringToTerraform(struct!.end),
-    start: cdktf.stringToTerraform(struct!.start),
-    date_range: cdktf.listMapper(securityhubAutomationRuleCriteriaCreatedAtDateRangeToTerraform, true)(struct!.dateRange),
+    end: cdktn.stringToTerraform(struct!.end),
+    start: cdktn.stringToTerraform(struct!.start),
+    date_range: cdktn.listMapper(securityhubAutomationRuleCriteriaCreatedAtDateRangeToTerraform, true)(struct!.dateRange),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaCreatedAtToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaCreatedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaCreatedAtToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaCreatedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end: {
-      value: cdktf.stringToHclTerraform(struct!.end),
+      value: cdktn.stringToHclTerraform(struct!.end),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start: {
-      value: cdktf.stringToHclTerraform(struct!.start),
+      value: cdktn.stringToHclTerraform(struct!.start),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     date_range: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaCreatedAtDateRangeToHclTerraform, true)(struct!.dateRange),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaCreatedAtDateRangeToHclTerraform, true)(struct!.dateRange),
       isBlock: true,
       type: "list",
       storageClassType: "SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList",
@@ -2457,9 +2457,9 @@ export function securityhubAutomationRuleCriteriaCreatedAtToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaCreatedAtOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaCreatedAtOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2467,11 +2467,11 @@ export class SecurityhubAutomationRuleCriteriaCreatedAtOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaCreatedAt | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaCreatedAt | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2492,7 +2492,7 @@ export class SecurityhubAutomationRuleCriteriaCreatedAtOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaCreatedAt | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaCreatedAt | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2500,7 +2500,7 @@ export class SecurityhubAutomationRuleCriteriaCreatedAtOutputReference extends c
       this._start = undefined;
       this._dateRange.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2550,7 +2550,7 @@ export class SecurityhubAutomationRuleCriteriaCreatedAtOutputReference extends c
   public get dateRange() {
     return this._dateRange;
   }
-  public putDateRange(value: SecurityhubAutomationRuleCriteriaCreatedAtDateRange[] | cdktf.IResolvable) {
+  public putDateRange(value: SecurityhubAutomationRuleCriteriaCreatedAtDateRange[] | cdktn.IResolvable) {
     this._dateRange.internalValue = value;
   }
   public resetDateRange() {
@@ -2562,15 +2562,15 @@ export class SecurityhubAutomationRuleCriteriaCreatedAtOutputReference extends c
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaCreatedAtList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaCreatedAt[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaCreatedAtList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaCreatedAt[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2604,53 +2604,53 @@ export interface SecurityhubAutomationRuleCriteriaCriticality {
   readonly lte?: number;
 }
 
-export function securityhubAutomationRuleCriteriaCriticalityToTerraform(struct?: SecurityhubAutomationRuleCriteriaCriticality | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaCriticalityToTerraform(struct?: SecurityhubAutomationRuleCriteriaCriticality | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    eq: cdktf.numberToTerraform(struct!.eq),
-    gt: cdktf.numberToTerraform(struct!.gt),
-    gte: cdktf.numberToTerraform(struct!.gte),
-    lt: cdktf.numberToTerraform(struct!.lt),
-    lte: cdktf.numberToTerraform(struct!.lte),
+    eq: cdktn.numberToTerraform(struct!.eq),
+    gt: cdktn.numberToTerraform(struct!.gt),
+    gte: cdktn.numberToTerraform(struct!.gte),
+    lt: cdktn.numberToTerraform(struct!.lt),
+    lte: cdktn.numberToTerraform(struct!.lte),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaCriticalityToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaCriticality | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaCriticalityToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaCriticality | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     eq: {
-      value: cdktf.numberToHclTerraform(struct!.eq),
+      value: cdktn.numberToHclTerraform(struct!.eq),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     gt: {
-      value: cdktf.numberToHclTerraform(struct!.gt),
+      value: cdktn.numberToHclTerraform(struct!.gt),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     gte: {
-      value: cdktf.numberToHclTerraform(struct!.gte),
+      value: cdktn.numberToHclTerraform(struct!.gte),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     lt: {
-      value: cdktf.numberToHclTerraform(struct!.lt),
+      value: cdktn.numberToHclTerraform(struct!.lt),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     lte: {
-      value: cdktf.numberToHclTerraform(struct!.lte),
+      value: cdktn.numberToHclTerraform(struct!.lte),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2661,9 +2661,9 @@ export function securityhubAutomationRuleCriteriaCriticalityToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaCriticalityOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaCriticalityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2671,11 +2671,11 @@ export class SecurityhubAutomationRuleCriteriaCriticalityOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaCriticality | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaCriticality | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2704,7 +2704,7 @@ export class SecurityhubAutomationRuleCriteriaCriticalityOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaCriticality | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaCriticality | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2714,7 +2714,7 @@ export class SecurityhubAutomationRuleCriteriaCriticalityOutputReference extends
       this._lt = undefined;
       this._lte = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2810,15 +2810,15 @@ export class SecurityhubAutomationRuleCriteriaCriticalityOutputReference extends
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaCriticalityList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaCriticality[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaCriticalityList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaCriticality[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2840,32 +2840,32 @@ export interface SecurityhubAutomationRuleCriteriaDescription {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaDescriptionToTerraform(struct?: SecurityhubAutomationRuleCriteriaDescription | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaDescriptionToTerraform(struct?: SecurityhubAutomationRuleCriteriaDescription | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaDescriptionToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaDescription | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaDescriptionToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaDescription | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2876,9 +2876,9 @@ export function securityhubAutomationRuleCriteriaDescriptionToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaDescriptionOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaDescriptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2886,11 +2886,11 @@ export class SecurityhubAutomationRuleCriteriaDescriptionOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaDescription | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaDescription | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2907,14 +2907,14 @@ export class SecurityhubAutomationRuleCriteriaDescriptionOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaDescription | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaDescription | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2953,15 +2953,15 @@ export class SecurityhubAutomationRuleCriteriaDescriptionOutputReference extends
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaDescriptionList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaDescription[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaDescriptionList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaDescription[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2983,32 +2983,32 @@ export interface SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange {
   readonly value: number;
 }
 
-export function securityhubAutomationRuleCriteriaFirstObservedAtDateRangeToTerraform(struct?: SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaFirstObservedAtDateRangeToTerraform(struct?: SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit: cdktf.stringToTerraform(struct!.unit),
-    value: cdktf.numberToTerraform(struct!.value),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaFirstObservedAtDateRangeToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaFirstObservedAtDateRangeToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3019,9 +3019,9 @@ export function securityhubAutomationRuleCriteriaFirstObservedAtDateRangeToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3029,11 +3029,11 @@ export class SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3050,14 +3050,14 @@ export class SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._unit = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3096,15 +3096,15 @@ export class SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputRefe
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3129,42 +3129,42 @@ export interface SecurityhubAutomationRuleCriteriaFirstObservedAt {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
   */
-  readonly dateRange?: SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange[] | cdktf.IResolvable;
+  readonly dateRange?: SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange[] | cdktn.IResolvable;
 }
 
-export function securityhubAutomationRuleCriteriaFirstObservedAtToTerraform(struct?: SecurityhubAutomationRuleCriteriaFirstObservedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaFirstObservedAtToTerraform(struct?: SecurityhubAutomationRuleCriteriaFirstObservedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end: cdktf.stringToTerraform(struct!.end),
-    start: cdktf.stringToTerraform(struct!.start),
-    date_range: cdktf.listMapper(securityhubAutomationRuleCriteriaFirstObservedAtDateRangeToTerraform, true)(struct!.dateRange),
+    end: cdktn.stringToTerraform(struct!.end),
+    start: cdktn.stringToTerraform(struct!.start),
+    date_range: cdktn.listMapper(securityhubAutomationRuleCriteriaFirstObservedAtDateRangeToTerraform, true)(struct!.dateRange),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaFirstObservedAtToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaFirstObservedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaFirstObservedAtToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaFirstObservedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end: {
-      value: cdktf.stringToHclTerraform(struct!.end),
+      value: cdktn.stringToHclTerraform(struct!.end),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start: {
-      value: cdktf.stringToHclTerraform(struct!.start),
+      value: cdktn.stringToHclTerraform(struct!.start),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     date_range: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaFirstObservedAtDateRangeToHclTerraform, true)(struct!.dateRange),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaFirstObservedAtDateRangeToHclTerraform, true)(struct!.dateRange),
       isBlock: true,
       type: "list",
       storageClassType: "SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList",
@@ -3175,9 +3175,9 @@ export function securityhubAutomationRuleCriteriaFirstObservedAtToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3185,11 +3185,11 @@ export class SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaFirstObservedAt | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaFirstObservedAt | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3210,7 +3210,7 @@ export class SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaFirstObservedAt | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaFirstObservedAt | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3218,7 +3218,7 @@ export class SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference ext
       this._start = undefined;
       this._dateRange.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3268,7 +3268,7 @@ export class SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference ext
   public get dateRange() {
     return this._dateRange;
   }
-  public putDateRange(value: SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange[] | cdktf.IResolvable) {
+  public putDateRange(value: SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange[] | cdktn.IResolvable) {
     this._dateRange.internalValue = value;
   }
   public resetDateRange() {
@@ -3280,15 +3280,15 @@ export class SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference ext
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaFirstObservedAtList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaFirstObservedAt[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaFirstObservedAtList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaFirstObservedAt[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3310,32 +3310,32 @@ export interface SecurityhubAutomationRuleCriteriaGeneratorId {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaGeneratorIdToTerraform(struct?: SecurityhubAutomationRuleCriteriaGeneratorId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaGeneratorIdToTerraform(struct?: SecurityhubAutomationRuleCriteriaGeneratorId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaGeneratorIdToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaGeneratorId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaGeneratorIdToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaGeneratorId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3346,9 +3346,9 @@ export function securityhubAutomationRuleCriteriaGeneratorIdToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3356,11 +3356,11 @@ export class SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaGeneratorId | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaGeneratorId | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3377,14 +3377,14 @@ export class SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaGeneratorId | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaGeneratorId | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3423,15 +3423,15 @@ export class SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference extends
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaGeneratorIdList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaGeneratorId[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaGeneratorIdList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaGeneratorId[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3453,32 +3453,32 @@ export interface SecurityhubAutomationRuleCriteriaId {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaIdToTerraform(struct?: SecurityhubAutomationRuleCriteriaId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaIdToTerraform(struct?: SecurityhubAutomationRuleCriteriaId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaIdToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaIdToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3489,9 +3489,9 @@ export function securityhubAutomationRuleCriteriaIdToHclTerraform(struct?: Secur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaIdOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3499,11 +3499,11 @@ export class SecurityhubAutomationRuleCriteriaIdOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaId | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaId | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3520,14 +3520,14 @@ export class SecurityhubAutomationRuleCriteriaIdOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaId | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaId | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3566,15 +3566,15 @@ export class SecurityhubAutomationRuleCriteriaIdOutputReference extends cdktf.Co
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaIdList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaId[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaIdList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaId[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3596,32 +3596,32 @@ export interface SecurityhubAutomationRuleCriteriaLastObservedAtDateRange {
   readonly value: number;
 }
 
-export function securityhubAutomationRuleCriteriaLastObservedAtDateRangeToTerraform(struct?: SecurityhubAutomationRuleCriteriaLastObservedAtDateRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaLastObservedAtDateRangeToTerraform(struct?: SecurityhubAutomationRuleCriteriaLastObservedAtDateRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit: cdktf.stringToTerraform(struct!.unit),
-    value: cdktf.numberToTerraform(struct!.value),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaLastObservedAtDateRangeToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaLastObservedAtDateRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaLastObservedAtDateRangeToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaLastObservedAtDateRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3632,9 +3632,9 @@ export function securityhubAutomationRuleCriteriaLastObservedAtDateRangeToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3642,11 +3642,11 @@ export class SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaLastObservedAtDateRange | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaLastObservedAtDateRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3663,14 +3663,14 @@ export class SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaLastObservedAtDateRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaLastObservedAtDateRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._unit = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3709,15 +3709,15 @@ export class SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputRefer
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaLastObservedAtDateRange[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaLastObservedAtDateRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3742,42 +3742,42 @@ export interface SecurityhubAutomationRuleCriteriaLastObservedAt {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
   */
-  readonly dateRange?: SecurityhubAutomationRuleCriteriaLastObservedAtDateRange[] | cdktf.IResolvable;
+  readonly dateRange?: SecurityhubAutomationRuleCriteriaLastObservedAtDateRange[] | cdktn.IResolvable;
 }
 
-export function securityhubAutomationRuleCriteriaLastObservedAtToTerraform(struct?: SecurityhubAutomationRuleCriteriaLastObservedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaLastObservedAtToTerraform(struct?: SecurityhubAutomationRuleCriteriaLastObservedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end: cdktf.stringToTerraform(struct!.end),
-    start: cdktf.stringToTerraform(struct!.start),
-    date_range: cdktf.listMapper(securityhubAutomationRuleCriteriaLastObservedAtDateRangeToTerraform, true)(struct!.dateRange),
+    end: cdktn.stringToTerraform(struct!.end),
+    start: cdktn.stringToTerraform(struct!.start),
+    date_range: cdktn.listMapper(securityhubAutomationRuleCriteriaLastObservedAtDateRangeToTerraform, true)(struct!.dateRange),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaLastObservedAtToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaLastObservedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaLastObservedAtToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaLastObservedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end: {
-      value: cdktf.stringToHclTerraform(struct!.end),
+      value: cdktn.stringToHclTerraform(struct!.end),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start: {
-      value: cdktf.stringToHclTerraform(struct!.start),
+      value: cdktn.stringToHclTerraform(struct!.start),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     date_range: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaLastObservedAtDateRangeToHclTerraform, true)(struct!.dateRange),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaLastObservedAtDateRangeToHclTerraform, true)(struct!.dateRange),
       isBlock: true,
       type: "list",
       storageClassType: "SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList",
@@ -3788,9 +3788,9 @@ export function securityhubAutomationRuleCriteriaLastObservedAtToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3798,11 +3798,11 @@ export class SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaLastObservedAt | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaLastObservedAt | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3823,7 +3823,7 @@ export class SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaLastObservedAt | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaLastObservedAt | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3831,7 +3831,7 @@ export class SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference exte
       this._start = undefined;
       this._dateRange.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3881,7 +3881,7 @@ export class SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference exte
   public get dateRange() {
     return this._dateRange;
   }
-  public putDateRange(value: SecurityhubAutomationRuleCriteriaLastObservedAtDateRange[] | cdktf.IResolvable) {
+  public putDateRange(value: SecurityhubAutomationRuleCriteriaLastObservedAtDateRange[] | cdktn.IResolvable) {
     this._dateRange.internalValue = value;
   }
   public resetDateRange() {
@@ -3893,15 +3893,15 @@ export class SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference exte
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaLastObservedAtList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaLastObservedAt[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaLastObservedAtList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaLastObservedAt[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3923,32 +3923,32 @@ export interface SecurityhubAutomationRuleCriteriaNoteText {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaNoteTextToTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteText | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaNoteTextToTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteText | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaNoteTextToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteText | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaNoteTextToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteText | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3959,9 +3959,9 @@ export function securityhubAutomationRuleCriteriaNoteTextToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaNoteTextOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaNoteTextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3969,11 +3969,11 @@ export class SecurityhubAutomationRuleCriteriaNoteTextOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaNoteText | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaNoteText | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3990,14 +3990,14 @@ export class SecurityhubAutomationRuleCriteriaNoteTextOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaNoteText | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaNoteText | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4036,15 +4036,15 @@ export class SecurityhubAutomationRuleCriteriaNoteTextOutputReference extends cd
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaNoteTextList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaNoteText[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaNoteTextList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaNoteText[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4066,32 +4066,32 @@ export interface SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange {
   readonly value: number;
 }
 
-export function securityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeToTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeToTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit: cdktf.stringToTerraform(struct!.unit),
-    value: cdktf.numberToTerraform(struct!.value),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -4102,9 +4102,9 @@ export function securityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4112,11 +4112,11 @@ export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4133,14 +4133,14 @@ export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._unit = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4179,15 +4179,15 @@ export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputRefere
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4212,42 +4212,42 @@ export interface SecurityhubAutomationRuleCriteriaNoteUpdatedAt {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
   */
-  readonly dateRange?: SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange[] | cdktf.IResolvable;
+  readonly dateRange?: SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange[] | cdktn.IResolvable;
 }
 
-export function securityhubAutomationRuleCriteriaNoteUpdatedAtToTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteUpdatedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaNoteUpdatedAtToTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteUpdatedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end: cdktf.stringToTerraform(struct!.end),
-    start: cdktf.stringToTerraform(struct!.start),
-    date_range: cdktf.listMapper(securityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeToTerraform, true)(struct!.dateRange),
+    end: cdktn.stringToTerraform(struct!.end),
+    start: cdktn.stringToTerraform(struct!.start),
+    date_range: cdktn.listMapper(securityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeToTerraform, true)(struct!.dateRange),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaNoteUpdatedAtToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteUpdatedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaNoteUpdatedAtToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteUpdatedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end: {
-      value: cdktf.stringToHclTerraform(struct!.end),
+      value: cdktn.stringToHclTerraform(struct!.end),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start: {
-      value: cdktf.stringToHclTerraform(struct!.start),
+      value: cdktn.stringToHclTerraform(struct!.start),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     date_range: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeToHclTerraform, true)(struct!.dateRange),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeToHclTerraform, true)(struct!.dateRange),
       isBlock: true,
       type: "list",
       storageClassType: "SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList",
@@ -4258,9 +4258,9 @@ export function securityhubAutomationRuleCriteriaNoteUpdatedAtToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4268,11 +4268,11 @@ export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaNoteUpdatedAt | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaNoteUpdatedAt | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4293,7 +4293,7 @@ export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaNoteUpdatedAt | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaNoteUpdatedAt | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4301,7 +4301,7 @@ export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference exten
       this._start = undefined;
       this._dateRange.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4351,7 +4351,7 @@ export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference exten
   public get dateRange() {
     return this._dateRange;
   }
-  public putDateRange(value: SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange[] | cdktf.IResolvable) {
+  public putDateRange(value: SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange[] | cdktn.IResolvable) {
     this._dateRange.internalValue = value;
   }
   public resetDateRange() {
@@ -4363,15 +4363,15 @@ export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference exten
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaNoteUpdatedAt[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaNoteUpdatedAtList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaNoteUpdatedAt[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4393,32 +4393,32 @@ export interface SecurityhubAutomationRuleCriteriaNoteUpdatedBy {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaNoteUpdatedByToTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteUpdatedBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaNoteUpdatedByToTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteUpdatedBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaNoteUpdatedByToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteUpdatedBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaNoteUpdatedByToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaNoteUpdatedBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4429,9 +4429,9 @@ export function securityhubAutomationRuleCriteriaNoteUpdatedByToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4439,11 +4439,11 @@ export class SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaNoteUpdatedBy | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaNoteUpdatedBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4460,14 +4460,14 @@ export class SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaNoteUpdatedBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaNoteUpdatedBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4506,15 +4506,15 @@ export class SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference exten
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaNoteUpdatedByList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaNoteUpdatedBy[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaNoteUpdatedByList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaNoteUpdatedBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4536,32 +4536,32 @@ export interface SecurityhubAutomationRuleCriteriaProductArn {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaProductArnToTerraform(struct?: SecurityhubAutomationRuleCriteriaProductArn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaProductArnToTerraform(struct?: SecurityhubAutomationRuleCriteriaProductArn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaProductArnToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaProductArn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaProductArnToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaProductArn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4572,9 +4572,9 @@ export function securityhubAutomationRuleCriteriaProductArnToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaProductArnOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaProductArnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4582,11 +4582,11 @@ export class SecurityhubAutomationRuleCriteriaProductArnOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaProductArn | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaProductArn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4603,14 +4603,14 @@ export class SecurityhubAutomationRuleCriteriaProductArnOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaProductArn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaProductArn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4649,15 +4649,15 @@ export class SecurityhubAutomationRuleCriteriaProductArnOutputReference extends 
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaProductArnList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaProductArn[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaProductArnList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaProductArn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4679,32 +4679,32 @@ export interface SecurityhubAutomationRuleCriteriaProductName {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaProductNameToTerraform(struct?: SecurityhubAutomationRuleCriteriaProductName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaProductNameToTerraform(struct?: SecurityhubAutomationRuleCriteriaProductName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaProductNameToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaProductName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaProductNameToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaProductName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4715,9 +4715,9 @@ export function securityhubAutomationRuleCriteriaProductNameToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaProductNameOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaProductNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4725,11 +4725,11 @@ export class SecurityhubAutomationRuleCriteriaProductNameOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaProductName | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaProductName | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4746,14 +4746,14 @@ export class SecurityhubAutomationRuleCriteriaProductNameOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaProductName | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaProductName | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4792,15 +4792,15 @@ export class SecurityhubAutomationRuleCriteriaProductNameOutputReference extends
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaProductNameList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaProductName[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaProductNameList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaProductName[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4822,32 +4822,32 @@ export interface SecurityhubAutomationRuleCriteriaRecordState {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaRecordStateToTerraform(struct?: SecurityhubAutomationRuleCriteriaRecordState | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaRecordStateToTerraform(struct?: SecurityhubAutomationRuleCriteriaRecordState | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaRecordStateToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaRecordState | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaRecordStateToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaRecordState | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4858,9 +4858,9 @@ export function securityhubAutomationRuleCriteriaRecordStateToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaRecordStateOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaRecordStateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4868,11 +4868,11 @@ export class SecurityhubAutomationRuleCriteriaRecordStateOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaRecordState | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaRecordState | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4889,14 +4889,14 @@ export class SecurityhubAutomationRuleCriteriaRecordStateOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaRecordState | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaRecordState | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4935,15 +4935,15 @@ export class SecurityhubAutomationRuleCriteriaRecordStateOutputReference extends
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaRecordStateList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaRecordState[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaRecordStateList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaRecordState[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4965,32 +4965,32 @@ export interface SecurityhubAutomationRuleCriteriaRelatedFindingsId {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaRelatedFindingsIdToTerraform(struct?: SecurityhubAutomationRuleCriteriaRelatedFindingsId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaRelatedFindingsIdToTerraform(struct?: SecurityhubAutomationRuleCriteriaRelatedFindingsId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaRelatedFindingsIdToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaRelatedFindingsId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaRelatedFindingsIdToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaRelatedFindingsId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5001,9 +5001,9 @@ export function securityhubAutomationRuleCriteriaRelatedFindingsIdToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5011,11 +5011,11 @@ export class SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaRelatedFindingsId | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaRelatedFindingsId | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5032,14 +5032,14 @@ export class SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaRelatedFindingsId | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaRelatedFindingsId | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5078,15 +5078,15 @@ export class SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference e
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaRelatedFindingsIdList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaRelatedFindingsId[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaRelatedFindingsIdList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaRelatedFindingsId[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5108,32 +5108,32 @@ export interface SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaRelatedFindingsProductArnToTerraform(struct?: SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaRelatedFindingsProductArnToTerraform(struct?: SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaRelatedFindingsProductArnToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaRelatedFindingsProductArnToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5144,9 +5144,9 @@ export function securityhubAutomationRuleCriteriaRelatedFindingsProductArnToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5154,11 +5154,11 @@ export class SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5175,14 +5175,14 @@ export class SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5221,15 +5221,15 @@ export class SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputRef
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5251,32 +5251,32 @@ export interface SecurityhubAutomationRuleCriteriaResourceApplicationArn {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaResourceApplicationArnToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceApplicationArn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourceApplicationArnToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceApplicationArn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaResourceApplicationArnToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceApplicationArn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourceApplicationArnToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceApplicationArn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5287,9 +5287,9 @@ export function securityhubAutomationRuleCriteriaResourceApplicationArnToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5297,11 +5297,11 @@ export class SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaResourceApplicationArn | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaResourceApplicationArn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5318,14 +5318,14 @@ export class SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourceApplicationArn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourceApplicationArn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5364,15 +5364,15 @@ export class SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputRefere
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaResourceApplicationArnList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaResourceApplicationArn[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaResourceApplicationArnList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaResourceApplicationArn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5394,32 +5394,32 @@ export interface SecurityhubAutomationRuleCriteriaResourceApplicationName {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaResourceApplicationNameToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceApplicationName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourceApplicationNameToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceApplicationName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaResourceApplicationNameToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceApplicationName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourceApplicationNameToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceApplicationName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5430,9 +5430,9 @@ export function securityhubAutomationRuleCriteriaResourceApplicationNameToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5440,11 +5440,11 @@ export class SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaResourceApplicationName | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaResourceApplicationName | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5461,14 +5461,14 @@ export class SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourceApplicationName | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourceApplicationName | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5507,15 +5507,15 @@ export class SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputRefer
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaResourceApplicationNameList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaResourceApplicationName[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaResourceApplicationNameList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaResourceApplicationName[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5541,39 +5541,39 @@ export interface SecurityhubAutomationRuleCriteriaResourceDetailsOther {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaResourceDetailsOtherToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceDetailsOther | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourceDetailsOtherToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceDetailsOther | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaResourceDetailsOtherToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceDetailsOther | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourceDetailsOtherToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceDetailsOther | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5584,9 +5584,9 @@ export function securityhubAutomationRuleCriteriaResourceDetailsOtherToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5594,11 +5594,11 @@ export class SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaResourceDetailsOther | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaResourceDetailsOther | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5619,7 +5619,7 @@ export class SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourceDetailsOther | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourceDetailsOther | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5627,7 +5627,7 @@ export class SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReferenc
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5680,15 +5680,15 @@ export class SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReferenc
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaResourceDetailsOtherList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaResourceDetailsOther[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaResourceDetailsOtherList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaResourceDetailsOther[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5710,32 +5710,32 @@ export interface SecurityhubAutomationRuleCriteriaResourceId {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaResourceIdToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourceIdToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaResourceIdToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourceIdToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5746,9 +5746,9 @@ export function securityhubAutomationRuleCriteriaResourceIdToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaResourceIdOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaResourceIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5756,11 +5756,11 @@ export class SecurityhubAutomationRuleCriteriaResourceIdOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaResourceId | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaResourceId | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5777,14 +5777,14 @@ export class SecurityhubAutomationRuleCriteriaResourceIdOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourceId | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourceId | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5823,15 +5823,15 @@ export class SecurityhubAutomationRuleCriteriaResourceIdOutputReference extends 
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaResourceIdList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaResourceId[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaResourceIdList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaResourceId[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5853,32 +5853,32 @@ export interface SecurityhubAutomationRuleCriteriaResourcePartition {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaResourcePartitionToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourcePartition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourcePartitionToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourcePartition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaResourcePartitionToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourcePartition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourcePartitionToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourcePartition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5889,9 +5889,9 @@ export function securityhubAutomationRuleCriteriaResourcePartitionToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5899,11 +5899,11 @@ export class SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaResourcePartition | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaResourcePartition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5920,14 +5920,14 @@ export class SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourcePartition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourcePartition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5966,15 +5966,15 @@ export class SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference e
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaResourcePartitionList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaResourcePartition[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaResourcePartitionList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaResourcePartition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5996,32 +5996,32 @@ export interface SecurityhubAutomationRuleCriteriaResourceRegion {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaResourceRegionToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceRegion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourceRegionToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceRegion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaResourceRegionToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceRegion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourceRegionToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceRegion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6032,9 +6032,9 @@ export function securityhubAutomationRuleCriteriaResourceRegionToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaResourceRegionOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaResourceRegionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6042,11 +6042,11 @@ export class SecurityhubAutomationRuleCriteriaResourceRegionOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaResourceRegion | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaResourceRegion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6063,14 +6063,14 @@ export class SecurityhubAutomationRuleCriteriaResourceRegionOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourceRegion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourceRegion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6109,15 +6109,15 @@ export class SecurityhubAutomationRuleCriteriaResourceRegionOutputReference exte
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaResourceRegionList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaResourceRegion[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaResourceRegionList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaResourceRegion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6143,39 +6143,39 @@ export interface SecurityhubAutomationRuleCriteriaResourceTags {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaResourceTagsToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourceTagsToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaResourceTagsToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourceTagsToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6186,9 +6186,9 @@ export function securityhubAutomationRuleCriteriaResourceTagsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaResourceTagsOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaResourceTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6196,11 +6196,11 @@ export class SecurityhubAutomationRuleCriteriaResourceTagsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaResourceTags | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaResourceTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6221,7 +6221,7 @@ export class SecurityhubAutomationRuleCriteriaResourceTagsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourceTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourceTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6229,7 +6229,7 @@ export class SecurityhubAutomationRuleCriteriaResourceTagsOutputReference extend
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6282,15 +6282,15 @@ export class SecurityhubAutomationRuleCriteriaResourceTagsOutputReference extend
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaResourceTagsList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaResourceTags[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaResourceTagsList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaResourceTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6312,32 +6312,32 @@ export interface SecurityhubAutomationRuleCriteriaResourceType {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaResourceTypeToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourceTypeToTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaResourceTypeToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaResourceTypeToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaResourceType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6348,9 +6348,9 @@ export function securityhubAutomationRuleCriteriaResourceTypeToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaResourceTypeOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaResourceTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6358,11 +6358,11 @@ export class SecurityhubAutomationRuleCriteriaResourceTypeOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaResourceType | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaResourceType | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6379,14 +6379,14 @@ export class SecurityhubAutomationRuleCriteriaResourceTypeOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourceType | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaResourceType | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6425,15 +6425,15 @@ export class SecurityhubAutomationRuleCriteriaResourceTypeOutputReference extend
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaResourceTypeList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaResourceType[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaResourceTypeList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaResourceType[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6455,32 +6455,32 @@ export interface SecurityhubAutomationRuleCriteriaSeverityLabel {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaSeverityLabelToTerraform(struct?: SecurityhubAutomationRuleCriteriaSeverityLabel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaSeverityLabelToTerraform(struct?: SecurityhubAutomationRuleCriteriaSeverityLabel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaSeverityLabelToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaSeverityLabel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaSeverityLabelToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaSeverityLabel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6491,9 +6491,9 @@ export function securityhubAutomationRuleCriteriaSeverityLabelToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6501,11 +6501,11 @@ export class SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaSeverityLabel | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaSeverityLabel | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6522,14 +6522,14 @@ export class SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaSeverityLabel | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaSeverityLabel | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6568,15 +6568,15 @@ export class SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference exten
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaSeverityLabelList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaSeverityLabel[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaSeverityLabelList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaSeverityLabel[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6598,32 +6598,32 @@ export interface SecurityhubAutomationRuleCriteriaSourceUrl {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaSourceUrlToTerraform(struct?: SecurityhubAutomationRuleCriteriaSourceUrl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaSourceUrlToTerraform(struct?: SecurityhubAutomationRuleCriteriaSourceUrl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaSourceUrlToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaSourceUrl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaSourceUrlToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaSourceUrl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6634,9 +6634,9 @@ export function securityhubAutomationRuleCriteriaSourceUrlToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaSourceUrlOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaSourceUrlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6644,11 +6644,11 @@ export class SecurityhubAutomationRuleCriteriaSourceUrlOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaSourceUrl | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaSourceUrl | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6665,14 +6665,14 @@ export class SecurityhubAutomationRuleCriteriaSourceUrlOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaSourceUrl | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaSourceUrl | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6711,15 +6711,15 @@ export class SecurityhubAutomationRuleCriteriaSourceUrlOutputReference extends c
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaSourceUrlList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaSourceUrl[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaSourceUrlList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaSourceUrl[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6741,32 +6741,32 @@ export interface SecurityhubAutomationRuleCriteriaTitle {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaTitleToTerraform(struct?: SecurityhubAutomationRuleCriteriaTitle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaTitleToTerraform(struct?: SecurityhubAutomationRuleCriteriaTitle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaTitleToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaTitle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaTitleToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaTitle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6777,9 +6777,9 @@ export function securityhubAutomationRuleCriteriaTitleToHclTerraform(struct?: Se
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaTitleOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaTitleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6787,11 +6787,11 @@ export class SecurityhubAutomationRuleCriteriaTitleOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaTitle | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaTitle | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6808,14 +6808,14 @@ export class SecurityhubAutomationRuleCriteriaTitleOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaTitle | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaTitle | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6854,15 +6854,15 @@ export class SecurityhubAutomationRuleCriteriaTitleOutputReference extends cdktf
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaTitleList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaTitle[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaTitleList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaTitle[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6884,32 +6884,32 @@ export interface SecurityhubAutomationRuleCriteriaType {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaTypeToTerraform(struct?: SecurityhubAutomationRuleCriteriaType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaTypeToTerraform(struct?: SecurityhubAutomationRuleCriteriaType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaTypeToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaTypeToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6920,9 +6920,9 @@ export function securityhubAutomationRuleCriteriaTypeToHclTerraform(struct?: Sec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaTypeOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6930,11 +6930,11 @@ export class SecurityhubAutomationRuleCriteriaTypeOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaType | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaType | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6951,14 +6951,14 @@ export class SecurityhubAutomationRuleCriteriaTypeOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaType | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaType | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6997,15 +6997,15 @@ export class SecurityhubAutomationRuleCriteriaTypeOutputReference extends cdktf.
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaTypeList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaType[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaTypeList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaType[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7027,32 +7027,32 @@ export interface SecurityhubAutomationRuleCriteriaUpdatedAtDateRange {
   readonly value: number;
 }
 
-export function securityhubAutomationRuleCriteriaUpdatedAtDateRangeToTerraform(struct?: SecurityhubAutomationRuleCriteriaUpdatedAtDateRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaUpdatedAtDateRangeToTerraform(struct?: SecurityhubAutomationRuleCriteriaUpdatedAtDateRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit: cdktf.stringToTerraform(struct!.unit),
-    value: cdktf.numberToTerraform(struct!.value),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaUpdatedAtDateRangeToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaUpdatedAtDateRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaUpdatedAtDateRangeToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaUpdatedAtDateRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -7063,9 +7063,9 @@ export function securityhubAutomationRuleCriteriaUpdatedAtDateRangeToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7073,11 +7073,11 @@ export class SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaUpdatedAtDateRange | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaUpdatedAtDateRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7094,14 +7094,14 @@ export class SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaUpdatedAtDateRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaUpdatedAtDateRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._unit = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7140,15 +7140,15 @@ export class SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference 
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaUpdatedAtDateRange[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaUpdatedAtDateRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7173,42 +7173,42 @@ export interface SecurityhubAutomationRuleCriteriaUpdatedAt {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
   */
-  readonly dateRange?: SecurityhubAutomationRuleCriteriaUpdatedAtDateRange[] | cdktf.IResolvable;
+  readonly dateRange?: SecurityhubAutomationRuleCriteriaUpdatedAtDateRange[] | cdktn.IResolvable;
 }
 
-export function securityhubAutomationRuleCriteriaUpdatedAtToTerraform(struct?: SecurityhubAutomationRuleCriteriaUpdatedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaUpdatedAtToTerraform(struct?: SecurityhubAutomationRuleCriteriaUpdatedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end: cdktf.stringToTerraform(struct!.end),
-    start: cdktf.stringToTerraform(struct!.start),
-    date_range: cdktf.listMapper(securityhubAutomationRuleCriteriaUpdatedAtDateRangeToTerraform, true)(struct!.dateRange),
+    end: cdktn.stringToTerraform(struct!.end),
+    start: cdktn.stringToTerraform(struct!.start),
+    date_range: cdktn.listMapper(securityhubAutomationRuleCriteriaUpdatedAtDateRangeToTerraform, true)(struct!.dateRange),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaUpdatedAtToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaUpdatedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaUpdatedAtToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaUpdatedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end: {
-      value: cdktf.stringToHclTerraform(struct!.end),
+      value: cdktn.stringToHclTerraform(struct!.end),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start: {
-      value: cdktf.stringToHclTerraform(struct!.start),
+      value: cdktn.stringToHclTerraform(struct!.start),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     date_range: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaUpdatedAtDateRangeToHclTerraform, true)(struct!.dateRange),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaUpdatedAtDateRangeToHclTerraform, true)(struct!.dateRange),
       isBlock: true,
       type: "list",
       storageClassType: "SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList",
@@ -7219,9 +7219,9 @@ export function securityhubAutomationRuleCriteriaUpdatedAtToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7229,11 +7229,11 @@ export class SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaUpdatedAt | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaUpdatedAt | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7254,7 +7254,7 @@ export class SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaUpdatedAt | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaUpdatedAt | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7262,7 +7262,7 @@ export class SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference extends c
       this._start = undefined;
       this._dateRange.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7312,7 +7312,7 @@ export class SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference extends c
   public get dateRange() {
     return this._dateRange;
   }
-  public putDateRange(value: SecurityhubAutomationRuleCriteriaUpdatedAtDateRange[] | cdktf.IResolvable) {
+  public putDateRange(value: SecurityhubAutomationRuleCriteriaUpdatedAtDateRange[] | cdktn.IResolvable) {
     this._dateRange.internalValue = value;
   }
   public resetDateRange() {
@@ -7324,15 +7324,15 @@ export class SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference extends c
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaUpdatedAtList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaUpdatedAt[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaUpdatedAtList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaUpdatedAt[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7358,39 +7358,39 @@ export interface SecurityhubAutomationRuleCriteriaUserDefinedFields {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaUserDefinedFieldsToTerraform(struct?: SecurityhubAutomationRuleCriteriaUserDefinedFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaUserDefinedFieldsToTerraform(struct?: SecurityhubAutomationRuleCriteriaUserDefinedFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaUserDefinedFieldsToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaUserDefinedFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaUserDefinedFieldsToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaUserDefinedFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7401,9 +7401,9 @@ export function securityhubAutomationRuleCriteriaUserDefinedFieldsToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7411,11 +7411,11 @@ export class SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaUserDefinedFields | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaUserDefinedFields | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7436,7 +7436,7 @@ export class SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaUserDefinedFields | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaUserDefinedFields | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7444,7 +7444,7 @@ export class SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference e
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7497,15 +7497,15 @@ export class SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference e
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaUserDefinedFieldsList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaUserDefinedFields[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaUserDefinedFieldsList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaUserDefinedFields[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7527,32 +7527,32 @@ export interface SecurityhubAutomationRuleCriteriaVerificationState {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaVerificationStateToTerraform(struct?: SecurityhubAutomationRuleCriteriaVerificationState | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaVerificationStateToTerraform(struct?: SecurityhubAutomationRuleCriteriaVerificationState | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaVerificationStateToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaVerificationState | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaVerificationStateToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaVerificationState | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7563,9 +7563,9 @@ export function securityhubAutomationRuleCriteriaVerificationStateToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaVerificationStateOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaVerificationStateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7573,11 +7573,11 @@ export class SecurityhubAutomationRuleCriteriaVerificationStateOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaVerificationState | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaVerificationState | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7594,14 +7594,14 @@ export class SecurityhubAutomationRuleCriteriaVerificationStateOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaVerificationState | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaVerificationState | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7640,15 +7640,15 @@ export class SecurityhubAutomationRuleCriteriaVerificationStateOutputReference e
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaVerificationStateList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaVerificationState[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaVerificationStateList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaVerificationState[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7670,32 +7670,32 @@ export interface SecurityhubAutomationRuleCriteriaWorkflowStatus {
   readonly value: string;
 }
 
-export function securityhubAutomationRuleCriteriaWorkflowStatusToTerraform(struct?: SecurityhubAutomationRuleCriteriaWorkflowStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaWorkflowStatusToTerraform(struct?: SecurityhubAutomationRuleCriteriaWorkflowStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaWorkflowStatusToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaWorkflowStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaWorkflowStatusToHclTerraform(struct?: SecurityhubAutomationRuleCriteriaWorkflowStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7706,9 +7706,9 @@ export function securityhubAutomationRuleCriteriaWorkflowStatusToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7716,11 +7716,11 @@ export class SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteriaWorkflowStatus | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteriaWorkflowStatus | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7737,14 +7737,14 @@ export class SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteriaWorkflowStatus | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteriaWorkflowStatus | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7783,15 +7783,15 @@ export class SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference exte
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaWorkflowStatusList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteriaWorkflowStatus[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaWorkflowStatusList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteriaWorkflowStatus[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7808,73 +7808,73 @@ export interface SecurityhubAutomationRuleCriteria {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#aws_account_id SecurityhubAutomationRule#aws_account_id}
   */
-  readonly awsAccountId?: SecurityhubAutomationRuleCriteriaAwsAccountId[] | cdktf.IResolvable;
+  readonly awsAccountId?: SecurityhubAutomationRuleCriteriaAwsAccountId[] | cdktn.IResolvable;
   /**
   * aws_account_name block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#aws_account_name SecurityhubAutomationRule#aws_account_name}
   */
-  readonly awsAccountName?: SecurityhubAutomationRuleCriteriaAwsAccountName[] | cdktf.IResolvable;
+  readonly awsAccountName?: SecurityhubAutomationRuleCriteriaAwsAccountName[] | cdktn.IResolvable;
   /**
   * company_name block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#company_name SecurityhubAutomationRule#company_name}
   */
-  readonly companyName?: SecurityhubAutomationRuleCriteriaCompanyName[] | cdktf.IResolvable;
+  readonly companyName?: SecurityhubAutomationRuleCriteriaCompanyName[] | cdktn.IResolvable;
   /**
   * compliance_associated_standards_id block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#compliance_associated_standards_id SecurityhubAutomationRule#compliance_associated_standards_id}
   */
-  readonly complianceAssociatedStandardsId?: SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId[] | cdktf.IResolvable;
+  readonly complianceAssociatedStandardsId?: SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId[] | cdktn.IResolvable;
   /**
   * compliance_security_control_id block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#compliance_security_control_id SecurityhubAutomationRule#compliance_security_control_id}
   */
-  readonly complianceSecurityControlId?: SecurityhubAutomationRuleCriteriaComplianceSecurityControlId[] | cdktf.IResolvable;
+  readonly complianceSecurityControlId?: SecurityhubAutomationRuleCriteriaComplianceSecurityControlId[] | cdktn.IResolvable;
   /**
   * compliance_status block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#compliance_status SecurityhubAutomationRule#compliance_status}
   */
-  readonly complianceStatus?: SecurityhubAutomationRuleCriteriaComplianceStatus[] | cdktf.IResolvable;
+  readonly complianceStatus?: SecurityhubAutomationRuleCriteriaComplianceStatus[] | cdktn.IResolvable;
   /**
   * confidence block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}
   */
-  readonly confidence?: SecurityhubAutomationRuleCriteriaConfidence[] | cdktf.IResolvable;
+  readonly confidence?: SecurityhubAutomationRuleCriteriaConfidence[] | cdktn.IResolvable;
   /**
   * created_at block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#created_at SecurityhubAutomationRule#created_at}
   */
-  readonly createdAt?: SecurityhubAutomationRuleCriteriaCreatedAt[] | cdktf.IResolvable;
+  readonly createdAt?: SecurityhubAutomationRuleCriteriaCreatedAt[] | cdktn.IResolvable;
   /**
   * criticality block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}
   */
-  readonly criticality?: SecurityhubAutomationRuleCriteriaCriticality[] | cdktf.IResolvable;
+  readonly criticality?: SecurityhubAutomationRuleCriteriaCriticality[] | cdktn.IResolvable;
   /**
   * description block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}
   */
-  readonly description?: SecurityhubAutomationRuleCriteriaDescription[] | cdktf.IResolvable;
+  readonly description?: SecurityhubAutomationRuleCriteriaDescription[] | cdktn.IResolvable;
   /**
   * first_observed_at block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#first_observed_at SecurityhubAutomationRule#first_observed_at}
   */
-  readonly firstObservedAt?: SecurityhubAutomationRuleCriteriaFirstObservedAt[] | cdktf.IResolvable;
+  readonly firstObservedAt?: SecurityhubAutomationRuleCriteriaFirstObservedAt[] | cdktn.IResolvable;
   /**
   * generator_id block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#generator_id SecurityhubAutomationRule#generator_id}
   */
-  readonly generatorId?: SecurityhubAutomationRuleCriteriaGeneratorId[] | cdktf.IResolvable;
+  readonly generatorId?: SecurityhubAutomationRuleCriteriaGeneratorId[] | cdktn.IResolvable;
   /**
   * id block
   *
@@ -7883,437 +7883,437 @@ export interface SecurityhubAutomationRuleCriteria {
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
-  readonly id?: SecurityhubAutomationRuleCriteriaId[] | cdktf.IResolvable;
+  readonly id?: SecurityhubAutomationRuleCriteriaId[] | cdktn.IResolvable;
   /**
   * last_observed_at block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#last_observed_at SecurityhubAutomationRule#last_observed_at}
   */
-  readonly lastObservedAt?: SecurityhubAutomationRuleCriteriaLastObservedAt[] | cdktf.IResolvable;
+  readonly lastObservedAt?: SecurityhubAutomationRuleCriteriaLastObservedAt[] | cdktn.IResolvable;
   /**
   * note_text block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#note_text SecurityhubAutomationRule#note_text}
   */
-  readonly noteText?: SecurityhubAutomationRuleCriteriaNoteText[] | cdktf.IResolvable;
+  readonly noteText?: SecurityhubAutomationRuleCriteriaNoteText[] | cdktn.IResolvable;
   /**
   * note_updated_at block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#note_updated_at SecurityhubAutomationRule#note_updated_at}
   */
-  readonly noteUpdatedAt?: SecurityhubAutomationRuleCriteriaNoteUpdatedAt[] | cdktf.IResolvable;
+  readonly noteUpdatedAt?: SecurityhubAutomationRuleCriteriaNoteUpdatedAt[] | cdktn.IResolvable;
   /**
   * note_updated_by block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#note_updated_by SecurityhubAutomationRule#note_updated_by}
   */
-  readonly noteUpdatedBy?: SecurityhubAutomationRuleCriteriaNoteUpdatedBy[] | cdktf.IResolvable;
+  readonly noteUpdatedBy?: SecurityhubAutomationRuleCriteriaNoteUpdatedBy[] | cdktn.IResolvable;
   /**
   * product_arn block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#product_arn SecurityhubAutomationRule#product_arn}
   */
-  readonly productArn?: SecurityhubAutomationRuleCriteriaProductArn[] | cdktf.IResolvable;
+  readonly productArn?: SecurityhubAutomationRuleCriteriaProductArn[] | cdktn.IResolvable;
   /**
   * product_name block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#product_name SecurityhubAutomationRule#product_name}
   */
-  readonly productName?: SecurityhubAutomationRuleCriteriaProductName[] | cdktf.IResolvable;
+  readonly productName?: SecurityhubAutomationRuleCriteriaProductName[] | cdktn.IResolvable;
   /**
   * record_state block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#record_state SecurityhubAutomationRule#record_state}
   */
-  readonly recordState?: SecurityhubAutomationRuleCriteriaRecordState[] | cdktf.IResolvable;
+  readonly recordState?: SecurityhubAutomationRuleCriteriaRecordState[] | cdktn.IResolvable;
   /**
   * related_findings_id block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#related_findings_id SecurityhubAutomationRule#related_findings_id}
   */
-  readonly relatedFindingsId?: SecurityhubAutomationRuleCriteriaRelatedFindingsId[] | cdktf.IResolvable;
+  readonly relatedFindingsId?: SecurityhubAutomationRuleCriteriaRelatedFindingsId[] | cdktn.IResolvable;
   /**
   * related_findings_product_arn block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#related_findings_product_arn SecurityhubAutomationRule#related_findings_product_arn}
   */
-  readonly relatedFindingsProductArn?: SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn[] | cdktf.IResolvable;
+  readonly relatedFindingsProductArn?: SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn[] | cdktn.IResolvable;
   /**
   * resource_application_arn block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#resource_application_arn SecurityhubAutomationRule#resource_application_arn}
   */
-  readonly resourceApplicationArn?: SecurityhubAutomationRuleCriteriaResourceApplicationArn[] | cdktf.IResolvable;
+  readonly resourceApplicationArn?: SecurityhubAutomationRuleCriteriaResourceApplicationArn[] | cdktn.IResolvable;
   /**
   * resource_application_name block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#resource_application_name SecurityhubAutomationRule#resource_application_name}
   */
-  readonly resourceApplicationName?: SecurityhubAutomationRuleCriteriaResourceApplicationName[] | cdktf.IResolvable;
+  readonly resourceApplicationName?: SecurityhubAutomationRuleCriteriaResourceApplicationName[] | cdktn.IResolvable;
   /**
   * resource_details_other block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#resource_details_other SecurityhubAutomationRule#resource_details_other}
   */
-  readonly resourceDetailsOther?: SecurityhubAutomationRuleCriteriaResourceDetailsOther[] | cdktf.IResolvable;
+  readonly resourceDetailsOther?: SecurityhubAutomationRuleCriteriaResourceDetailsOther[] | cdktn.IResolvable;
   /**
   * resource_id block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#resource_id SecurityhubAutomationRule#resource_id}
   */
-  readonly resourceId?: SecurityhubAutomationRuleCriteriaResourceId[] | cdktf.IResolvable;
+  readonly resourceId?: SecurityhubAutomationRuleCriteriaResourceId[] | cdktn.IResolvable;
   /**
   * resource_partition block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#resource_partition SecurityhubAutomationRule#resource_partition}
   */
-  readonly resourcePartition?: SecurityhubAutomationRuleCriteriaResourcePartition[] | cdktf.IResolvable;
+  readonly resourcePartition?: SecurityhubAutomationRuleCriteriaResourcePartition[] | cdktn.IResolvable;
   /**
   * resource_region block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#resource_region SecurityhubAutomationRule#resource_region}
   */
-  readonly resourceRegion?: SecurityhubAutomationRuleCriteriaResourceRegion[] | cdktf.IResolvable;
+  readonly resourceRegion?: SecurityhubAutomationRuleCriteriaResourceRegion[] | cdktn.IResolvable;
   /**
   * resource_tags block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#resource_tags SecurityhubAutomationRule#resource_tags}
   */
-  readonly resourceTags?: SecurityhubAutomationRuleCriteriaResourceTags[] | cdktf.IResolvable;
+  readonly resourceTags?: SecurityhubAutomationRuleCriteriaResourceTags[] | cdktn.IResolvable;
   /**
   * resource_type block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#resource_type SecurityhubAutomationRule#resource_type}
   */
-  readonly resourceType?: SecurityhubAutomationRuleCriteriaResourceType[] | cdktf.IResolvable;
+  readonly resourceType?: SecurityhubAutomationRuleCriteriaResourceType[] | cdktn.IResolvable;
   /**
   * severity_label block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#severity_label SecurityhubAutomationRule#severity_label}
   */
-  readonly severityLabel?: SecurityhubAutomationRuleCriteriaSeverityLabel[] | cdktf.IResolvable;
+  readonly severityLabel?: SecurityhubAutomationRuleCriteriaSeverityLabel[] | cdktn.IResolvable;
   /**
   * source_url block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#source_url SecurityhubAutomationRule#source_url}
   */
-  readonly sourceUrl?: SecurityhubAutomationRuleCriteriaSourceUrl[] | cdktf.IResolvable;
+  readonly sourceUrl?: SecurityhubAutomationRuleCriteriaSourceUrl[] | cdktn.IResolvable;
   /**
   * title block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#title SecurityhubAutomationRule#title}
   */
-  readonly title?: SecurityhubAutomationRuleCriteriaTitle[] | cdktf.IResolvable;
+  readonly title?: SecurityhubAutomationRuleCriteriaTitle[] | cdktn.IResolvable;
   /**
   * type block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}
   */
-  readonly type?: SecurityhubAutomationRuleCriteriaType[] | cdktf.IResolvable;
+  readonly type?: SecurityhubAutomationRuleCriteriaType[] | cdktn.IResolvable;
   /**
   * updated_at block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#updated_at SecurityhubAutomationRule#updated_at}
   */
-  readonly updatedAt?: SecurityhubAutomationRuleCriteriaUpdatedAt[] | cdktf.IResolvable;
+  readonly updatedAt?: SecurityhubAutomationRuleCriteriaUpdatedAt[] | cdktn.IResolvable;
   /**
   * user_defined_fields block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}
   */
-  readonly userDefinedFields?: SecurityhubAutomationRuleCriteriaUserDefinedFields[] | cdktf.IResolvable;
+  readonly userDefinedFields?: SecurityhubAutomationRuleCriteriaUserDefinedFields[] | cdktn.IResolvable;
   /**
   * verification_state block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}
   */
-  readonly verificationState?: SecurityhubAutomationRuleCriteriaVerificationState[] | cdktf.IResolvable;
+  readonly verificationState?: SecurityhubAutomationRuleCriteriaVerificationState[] | cdktn.IResolvable;
   /**
   * workflow_status block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#workflow_status SecurityhubAutomationRule#workflow_status}
   */
-  readonly workflowStatus?: SecurityhubAutomationRuleCriteriaWorkflowStatus[] | cdktf.IResolvable;
+  readonly workflowStatus?: SecurityhubAutomationRuleCriteriaWorkflowStatus[] | cdktn.IResolvable;
 }
 
-export function securityhubAutomationRuleCriteriaToTerraform(struct?: SecurityhubAutomationRuleCriteria | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaToTerraform(struct?: SecurityhubAutomationRuleCriteria | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_account_id: cdktf.listMapper(securityhubAutomationRuleCriteriaAwsAccountIdToTerraform, true)(struct!.awsAccountId),
-    aws_account_name: cdktf.listMapper(securityhubAutomationRuleCriteriaAwsAccountNameToTerraform, true)(struct!.awsAccountName),
-    company_name: cdktf.listMapper(securityhubAutomationRuleCriteriaCompanyNameToTerraform, true)(struct!.companyName),
-    compliance_associated_standards_id: cdktf.listMapper(securityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdToTerraform, true)(struct!.complianceAssociatedStandardsId),
-    compliance_security_control_id: cdktf.listMapper(securityhubAutomationRuleCriteriaComplianceSecurityControlIdToTerraform, true)(struct!.complianceSecurityControlId),
-    compliance_status: cdktf.listMapper(securityhubAutomationRuleCriteriaComplianceStatusToTerraform, true)(struct!.complianceStatus),
-    confidence: cdktf.listMapper(securityhubAutomationRuleCriteriaConfidenceToTerraform, true)(struct!.confidence),
-    created_at: cdktf.listMapper(securityhubAutomationRuleCriteriaCreatedAtToTerraform, true)(struct!.createdAt),
-    criticality: cdktf.listMapper(securityhubAutomationRuleCriteriaCriticalityToTerraform, true)(struct!.criticality),
-    description: cdktf.listMapper(securityhubAutomationRuleCriteriaDescriptionToTerraform, true)(struct!.description),
-    first_observed_at: cdktf.listMapper(securityhubAutomationRuleCriteriaFirstObservedAtToTerraform, true)(struct!.firstObservedAt),
-    generator_id: cdktf.listMapper(securityhubAutomationRuleCriteriaGeneratorIdToTerraform, true)(struct!.generatorId),
-    id: cdktf.listMapper(securityhubAutomationRuleCriteriaIdToTerraform, true)(struct!.id),
-    last_observed_at: cdktf.listMapper(securityhubAutomationRuleCriteriaLastObservedAtToTerraform, true)(struct!.lastObservedAt),
-    note_text: cdktf.listMapper(securityhubAutomationRuleCriteriaNoteTextToTerraform, true)(struct!.noteText),
-    note_updated_at: cdktf.listMapper(securityhubAutomationRuleCriteriaNoteUpdatedAtToTerraform, true)(struct!.noteUpdatedAt),
-    note_updated_by: cdktf.listMapper(securityhubAutomationRuleCriteriaNoteUpdatedByToTerraform, true)(struct!.noteUpdatedBy),
-    product_arn: cdktf.listMapper(securityhubAutomationRuleCriteriaProductArnToTerraform, true)(struct!.productArn),
-    product_name: cdktf.listMapper(securityhubAutomationRuleCriteriaProductNameToTerraform, true)(struct!.productName),
-    record_state: cdktf.listMapper(securityhubAutomationRuleCriteriaRecordStateToTerraform, true)(struct!.recordState),
-    related_findings_id: cdktf.listMapper(securityhubAutomationRuleCriteriaRelatedFindingsIdToTerraform, true)(struct!.relatedFindingsId),
-    related_findings_product_arn: cdktf.listMapper(securityhubAutomationRuleCriteriaRelatedFindingsProductArnToTerraform, true)(struct!.relatedFindingsProductArn),
-    resource_application_arn: cdktf.listMapper(securityhubAutomationRuleCriteriaResourceApplicationArnToTerraform, true)(struct!.resourceApplicationArn),
-    resource_application_name: cdktf.listMapper(securityhubAutomationRuleCriteriaResourceApplicationNameToTerraform, true)(struct!.resourceApplicationName),
-    resource_details_other: cdktf.listMapper(securityhubAutomationRuleCriteriaResourceDetailsOtherToTerraform, true)(struct!.resourceDetailsOther),
-    resource_id: cdktf.listMapper(securityhubAutomationRuleCriteriaResourceIdToTerraform, true)(struct!.resourceId),
-    resource_partition: cdktf.listMapper(securityhubAutomationRuleCriteriaResourcePartitionToTerraform, true)(struct!.resourcePartition),
-    resource_region: cdktf.listMapper(securityhubAutomationRuleCriteriaResourceRegionToTerraform, true)(struct!.resourceRegion),
-    resource_tags: cdktf.listMapper(securityhubAutomationRuleCriteriaResourceTagsToTerraform, true)(struct!.resourceTags),
-    resource_type: cdktf.listMapper(securityhubAutomationRuleCriteriaResourceTypeToTerraform, true)(struct!.resourceType),
-    severity_label: cdktf.listMapper(securityhubAutomationRuleCriteriaSeverityLabelToTerraform, true)(struct!.severityLabel),
-    source_url: cdktf.listMapper(securityhubAutomationRuleCriteriaSourceUrlToTerraform, true)(struct!.sourceUrl),
-    title: cdktf.listMapper(securityhubAutomationRuleCriteriaTitleToTerraform, true)(struct!.title),
-    type: cdktf.listMapper(securityhubAutomationRuleCriteriaTypeToTerraform, true)(struct!.type),
-    updated_at: cdktf.listMapper(securityhubAutomationRuleCriteriaUpdatedAtToTerraform, true)(struct!.updatedAt),
-    user_defined_fields: cdktf.listMapper(securityhubAutomationRuleCriteriaUserDefinedFieldsToTerraform, true)(struct!.userDefinedFields),
-    verification_state: cdktf.listMapper(securityhubAutomationRuleCriteriaVerificationStateToTerraform, true)(struct!.verificationState),
-    workflow_status: cdktf.listMapper(securityhubAutomationRuleCriteriaWorkflowStatusToTerraform, true)(struct!.workflowStatus),
+    aws_account_id: cdktn.listMapper(securityhubAutomationRuleCriteriaAwsAccountIdToTerraform, true)(struct!.awsAccountId),
+    aws_account_name: cdktn.listMapper(securityhubAutomationRuleCriteriaAwsAccountNameToTerraform, true)(struct!.awsAccountName),
+    company_name: cdktn.listMapper(securityhubAutomationRuleCriteriaCompanyNameToTerraform, true)(struct!.companyName),
+    compliance_associated_standards_id: cdktn.listMapper(securityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdToTerraform, true)(struct!.complianceAssociatedStandardsId),
+    compliance_security_control_id: cdktn.listMapper(securityhubAutomationRuleCriteriaComplianceSecurityControlIdToTerraform, true)(struct!.complianceSecurityControlId),
+    compliance_status: cdktn.listMapper(securityhubAutomationRuleCriteriaComplianceStatusToTerraform, true)(struct!.complianceStatus),
+    confidence: cdktn.listMapper(securityhubAutomationRuleCriteriaConfidenceToTerraform, true)(struct!.confidence),
+    created_at: cdktn.listMapper(securityhubAutomationRuleCriteriaCreatedAtToTerraform, true)(struct!.createdAt),
+    criticality: cdktn.listMapper(securityhubAutomationRuleCriteriaCriticalityToTerraform, true)(struct!.criticality),
+    description: cdktn.listMapper(securityhubAutomationRuleCriteriaDescriptionToTerraform, true)(struct!.description),
+    first_observed_at: cdktn.listMapper(securityhubAutomationRuleCriteriaFirstObservedAtToTerraform, true)(struct!.firstObservedAt),
+    generator_id: cdktn.listMapper(securityhubAutomationRuleCriteriaGeneratorIdToTerraform, true)(struct!.generatorId),
+    id: cdktn.listMapper(securityhubAutomationRuleCriteriaIdToTerraform, true)(struct!.id),
+    last_observed_at: cdktn.listMapper(securityhubAutomationRuleCriteriaLastObservedAtToTerraform, true)(struct!.lastObservedAt),
+    note_text: cdktn.listMapper(securityhubAutomationRuleCriteriaNoteTextToTerraform, true)(struct!.noteText),
+    note_updated_at: cdktn.listMapper(securityhubAutomationRuleCriteriaNoteUpdatedAtToTerraform, true)(struct!.noteUpdatedAt),
+    note_updated_by: cdktn.listMapper(securityhubAutomationRuleCriteriaNoteUpdatedByToTerraform, true)(struct!.noteUpdatedBy),
+    product_arn: cdktn.listMapper(securityhubAutomationRuleCriteriaProductArnToTerraform, true)(struct!.productArn),
+    product_name: cdktn.listMapper(securityhubAutomationRuleCriteriaProductNameToTerraform, true)(struct!.productName),
+    record_state: cdktn.listMapper(securityhubAutomationRuleCriteriaRecordStateToTerraform, true)(struct!.recordState),
+    related_findings_id: cdktn.listMapper(securityhubAutomationRuleCriteriaRelatedFindingsIdToTerraform, true)(struct!.relatedFindingsId),
+    related_findings_product_arn: cdktn.listMapper(securityhubAutomationRuleCriteriaRelatedFindingsProductArnToTerraform, true)(struct!.relatedFindingsProductArn),
+    resource_application_arn: cdktn.listMapper(securityhubAutomationRuleCriteriaResourceApplicationArnToTerraform, true)(struct!.resourceApplicationArn),
+    resource_application_name: cdktn.listMapper(securityhubAutomationRuleCriteriaResourceApplicationNameToTerraform, true)(struct!.resourceApplicationName),
+    resource_details_other: cdktn.listMapper(securityhubAutomationRuleCriteriaResourceDetailsOtherToTerraform, true)(struct!.resourceDetailsOther),
+    resource_id: cdktn.listMapper(securityhubAutomationRuleCriteriaResourceIdToTerraform, true)(struct!.resourceId),
+    resource_partition: cdktn.listMapper(securityhubAutomationRuleCriteriaResourcePartitionToTerraform, true)(struct!.resourcePartition),
+    resource_region: cdktn.listMapper(securityhubAutomationRuleCriteriaResourceRegionToTerraform, true)(struct!.resourceRegion),
+    resource_tags: cdktn.listMapper(securityhubAutomationRuleCriteriaResourceTagsToTerraform, true)(struct!.resourceTags),
+    resource_type: cdktn.listMapper(securityhubAutomationRuleCriteriaResourceTypeToTerraform, true)(struct!.resourceType),
+    severity_label: cdktn.listMapper(securityhubAutomationRuleCriteriaSeverityLabelToTerraform, true)(struct!.severityLabel),
+    source_url: cdktn.listMapper(securityhubAutomationRuleCriteriaSourceUrlToTerraform, true)(struct!.sourceUrl),
+    title: cdktn.listMapper(securityhubAutomationRuleCriteriaTitleToTerraform, true)(struct!.title),
+    type: cdktn.listMapper(securityhubAutomationRuleCriteriaTypeToTerraform, true)(struct!.type),
+    updated_at: cdktn.listMapper(securityhubAutomationRuleCriteriaUpdatedAtToTerraform, true)(struct!.updatedAt),
+    user_defined_fields: cdktn.listMapper(securityhubAutomationRuleCriteriaUserDefinedFieldsToTerraform, true)(struct!.userDefinedFields),
+    verification_state: cdktn.listMapper(securityhubAutomationRuleCriteriaVerificationStateToTerraform, true)(struct!.verificationState),
+    workflow_status: cdktn.listMapper(securityhubAutomationRuleCriteriaWorkflowStatusToTerraform, true)(struct!.workflowStatus),
   }
 }
 
 
-export function securityhubAutomationRuleCriteriaToHclTerraform(struct?: SecurityhubAutomationRuleCriteria | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubAutomationRuleCriteriaToHclTerraform(struct?: SecurityhubAutomationRuleCriteria | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_account_id: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaAwsAccountIdToHclTerraform, true)(struct!.awsAccountId),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaAwsAccountIdToHclTerraform, true)(struct!.awsAccountId),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaAwsAccountIdList",
     },
     aws_account_name: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaAwsAccountNameToHclTerraform, true)(struct!.awsAccountName),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaAwsAccountNameToHclTerraform, true)(struct!.awsAccountName),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaAwsAccountNameList",
     },
     company_name: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaCompanyNameToHclTerraform, true)(struct!.companyName),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaCompanyNameToHclTerraform, true)(struct!.companyName),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaCompanyNameList",
     },
     compliance_associated_standards_id: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdToHclTerraform, true)(struct!.complianceAssociatedStandardsId),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdToHclTerraform, true)(struct!.complianceAssociatedStandardsId),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList",
     },
     compliance_security_control_id: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaComplianceSecurityControlIdToHclTerraform, true)(struct!.complianceSecurityControlId),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaComplianceSecurityControlIdToHclTerraform, true)(struct!.complianceSecurityControlId),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList",
     },
     compliance_status: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaComplianceStatusToHclTerraform, true)(struct!.complianceStatus),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaComplianceStatusToHclTerraform, true)(struct!.complianceStatus),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaComplianceStatusList",
     },
     confidence: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaConfidenceToHclTerraform, true)(struct!.confidence),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaConfidenceToHclTerraform, true)(struct!.confidence),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaConfidenceList",
     },
     created_at: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaCreatedAtToHclTerraform, true)(struct!.createdAt),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaCreatedAtToHclTerraform, true)(struct!.createdAt),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaCreatedAtList",
     },
     criticality: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaCriticalityToHclTerraform, true)(struct!.criticality),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaCriticalityToHclTerraform, true)(struct!.criticality),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaCriticalityList",
     },
     description: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaDescriptionToHclTerraform, true)(struct!.description),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaDescriptionToHclTerraform, true)(struct!.description),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaDescriptionList",
     },
     first_observed_at: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaFirstObservedAtToHclTerraform, true)(struct!.firstObservedAt),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaFirstObservedAtToHclTerraform, true)(struct!.firstObservedAt),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaFirstObservedAtList",
     },
     generator_id: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaGeneratorIdToHclTerraform, true)(struct!.generatorId),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaGeneratorIdToHclTerraform, true)(struct!.generatorId),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaGeneratorIdList",
     },
     id: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaIdToHclTerraform, true)(struct!.id),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaIdToHclTerraform, true)(struct!.id),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaIdList",
     },
     last_observed_at: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaLastObservedAtToHclTerraform, true)(struct!.lastObservedAt),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaLastObservedAtToHclTerraform, true)(struct!.lastObservedAt),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaLastObservedAtList",
     },
     note_text: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaNoteTextToHclTerraform, true)(struct!.noteText),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaNoteTextToHclTerraform, true)(struct!.noteText),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaNoteTextList",
     },
     note_updated_at: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaNoteUpdatedAtToHclTerraform, true)(struct!.noteUpdatedAt),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaNoteUpdatedAtToHclTerraform, true)(struct!.noteUpdatedAt),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaNoteUpdatedAtList",
     },
     note_updated_by: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaNoteUpdatedByToHclTerraform, true)(struct!.noteUpdatedBy),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaNoteUpdatedByToHclTerraform, true)(struct!.noteUpdatedBy),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaNoteUpdatedByList",
     },
     product_arn: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaProductArnToHclTerraform, true)(struct!.productArn),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaProductArnToHclTerraform, true)(struct!.productArn),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaProductArnList",
     },
     product_name: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaProductNameToHclTerraform, true)(struct!.productName),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaProductNameToHclTerraform, true)(struct!.productName),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaProductNameList",
     },
     record_state: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaRecordStateToHclTerraform, true)(struct!.recordState),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaRecordStateToHclTerraform, true)(struct!.recordState),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaRecordStateList",
     },
     related_findings_id: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaRelatedFindingsIdToHclTerraform, true)(struct!.relatedFindingsId),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaRelatedFindingsIdToHclTerraform, true)(struct!.relatedFindingsId),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaRelatedFindingsIdList",
     },
     related_findings_product_arn: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaRelatedFindingsProductArnToHclTerraform, true)(struct!.relatedFindingsProductArn),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaRelatedFindingsProductArnToHclTerraform, true)(struct!.relatedFindingsProductArn),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList",
     },
     resource_application_arn: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaResourceApplicationArnToHclTerraform, true)(struct!.resourceApplicationArn),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaResourceApplicationArnToHclTerraform, true)(struct!.resourceApplicationArn),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaResourceApplicationArnList",
     },
     resource_application_name: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaResourceApplicationNameToHclTerraform, true)(struct!.resourceApplicationName),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaResourceApplicationNameToHclTerraform, true)(struct!.resourceApplicationName),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaResourceApplicationNameList",
     },
     resource_details_other: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaResourceDetailsOtherToHclTerraform, true)(struct!.resourceDetailsOther),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaResourceDetailsOtherToHclTerraform, true)(struct!.resourceDetailsOther),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaResourceDetailsOtherList",
     },
     resource_id: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaResourceIdToHclTerraform, true)(struct!.resourceId),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaResourceIdToHclTerraform, true)(struct!.resourceId),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaResourceIdList",
     },
     resource_partition: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaResourcePartitionToHclTerraform, true)(struct!.resourcePartition),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaResourcePartitionToHclTerraform, true)(struct!.resourcePartition),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaResourcePartitionList",
     },
     resource_region: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaResourceRegionToHclTerraform, true)(struct!.resourceRegion),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaResourceRegionToHclTerraform, true)(struct!.resourceRegion),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaResourceRegionList",
     },
     resource_tags: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaResourceTagsToHclTerraform, true)(struct!.resourceTags),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaResourceTagsToHclTerraform, true)(struct!.resourceTags),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaResourceTagsList",
     },
     resource_type: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaResourceTypeToHclTerraform, true)(struct!.resourceType),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaResourceTypeToHclTerraform, true)(struct!.resourceType),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaResourceTypeList",
     },
     severity_label: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaSeverityLabelToHclTerraform, true)(struct!.severityLabel),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaSeverityLabelToHclTerraform, true)(struct!.severityLabel),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaSeverityLabelList",
     },
     source_url: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaSourceUrlToHclTerraform, true)(struct!.sourceUrl),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaSourceUrlToHclTerraform, true)(struct!.sourceUrl),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaSourceUrlList",
     },
     title: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaTitleToHclTerraform, true)(struct!.title),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaTitleToHclTerraform, true)(struct!.title),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaTitleList",
     },
     type: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaTypeToHclTerraform, true)(struct!.type),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaTypeToHclTerraform, true)(struct!.type),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaTypeList",
     },
     updated_at: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaUpdatedAtToHclTerraform, true)(struct!.updatedAt),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaUpdatedAtToHclTerraform, true)(struct!.updatedAt),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaUpdatedAtList",
     },
     user_defined_fields: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaUserDefinedFieldsToHclTerraform, true)(struct!.userDefinedFields),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaUserDefinedFieldsToHclTerraform, true)(struct!.userDefinedFields),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaUserDefinedFieldsList",
     },
     verification_state: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaVerificationStateToHclTerraform, true)(struct!.verificationState),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaVerificationStateToHclTerraform, true)(struct!.verificationState),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaVerificationStateList",
     },
     workflow_status: {
-      value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaWorkflowStatusToHclTerraform, true)(struct!.workflowStatus),
+      value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaWorkflowStatusToHclTerraform, true)(struct!.workflowStatus),
       isBlock: true,
       type: "set",
       storageClassType: "SecurityhubAutomationRuleCriteriaWorkflowStatusList",
@@ -8324,9 +8324,9 @@ export function securityhubAutomationRuleCriteriaToHclTerraform(struct?: Securit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.ComplexObject {
+export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8334,11 +8334,11 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityhubAutomationRuleCriteria | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubAutomationRuleCriteria | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8499,7 +8499,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubAutomationRuleCriteria | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubAutomationRuleCriteria | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8542,7 +8542,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
       this._verificationState.internalValue = undefined;
       this._workflowStatus.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8595,7 +8595,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get awsAccountId() {
     return this._awsAccountId;
   }
-  public putAwsAccountId(value: SecurityhubAutomationRuleCriteriaAwsAccountId[] | cdktf.IResolvable) {
+  public putAwsAccountId(value: SecurityhubAutomationRuleCriteriaAwsAccountId[] | cdktn.IResolvable) {
     this._awsAccountId.internalValue = value;
   }
   public resetAwsAccountId() {
@@ -8611,7 +8611,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get awsAccountName() {
     return this._awsAccountName;
   }
-  public putAwsAccountName(value: SecurityhubAutomationRuleCriteriaAwsAccountName[] | cdktf.IResolvable) {
+  public putAwsAccountName(value: SecurityhubAutomationRuleCriteriaAwsAccountName[] | cdktn.IResolvable) {
     this._awsAccountName.internalValue = value;
   }
   public resetAwsAccountName() {
@@ -8627,7 +8627,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get companyName() {
     return this._companyName;
   }
-  public putCompanyName(value: SecurityhubAutomationRuleCriteriaCompanyName[] | cdktf.IResolvable) {
+  public putCompanyName(value: SecurityhubAutomationRuleCriteriaCompanyName[] | cdktn.IResolvable) {
     this._companyName.internalValue = value;
   }
   public resetCompanyName() {
@@ -8643,7 +8643,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get complianceAssociatedStandardsId() {
     return this._complianceAssociatedStandardsId;
   }
-  public putComplianceAssociatedStandardsId(value: SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId[] | cdktf.IResolvable) {
+  public putComplianceAssociatedStandardsId(value: SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId[] | cdktn.IResolvable) {
     this._complianceAssociatedStandardsId.internalValue = value;
   }
   public resetComplianceAssociatedStandardsId() {
@@ -8659,7 +8659,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get complianceSecurityControlId() {
     return this._complianceSecurityControlId;
   }
-  public putComplianceSecurityControlId(value: SecurityhubAutomationRuleCriteriaComplianceSecurityControlId[] | cdktf.IResolvable) {
+  public putComplianceSecurityControlId(value: SecurityhubAutomationRuleCriteriaComplianceSecurityControlId[] | cdktn.IResolvable) {
     this._complianceSecurityControlId.internalValue = value;
   }
   public resetComplianceSecurityControlId() {
@@ -8675,7 +8675,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get complianceStatus() {
     return this._complianceStatus;
   }
-  public putComplianceStatus(value: SecurityhubAutomationRuleCriteriaComplianceStatus[] | cdktf.IResolvable) {
+  public putComplianceStatus(value: SecurityhubAutomationRuleCriteriaComplianceStatus[] | cdktn.IResolvable) {
     this._complianceStatus.internalValue = value;
   }
   public resetComplianceStatus() {
@@ -8691,7 +8691,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get confidence() {
     return this._confidence;
   }
-  public putConfidence(value: SecurityhubAutomationRuleCriteriaConfidence[] | cdktf.IResolvable) {
+  public putConfidence(value: SecurityhubAutomationRuleCriteriaConfidence[] | cdktn.IResolvable) {
     this._confidence.internalValue = value;
   }
   public resetConfidence() {
@@ -8707,7 +8707,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get createdAt() {
     return this._createdAt;
   }
-  public putCreatedAt(value: SecurityhubAutomationRuleCriteriaCreatedAt[] | cdktf.IResolvable) {
+  public putCreatedAt(value: SecurityhubAutomationRuleCriteriaCreatedAt[] | cdktn.IResolvable) {
     this._createdAt.internalValue = value;
   }
   public resetCreatedAt() {
@@ -8723,7 +8723,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get criticality() {
     return this._criticality;
   }
-  public putCriticality(value: SecurityhubAutomationRuleCriteriaCriticality[] | cdktf.IResolvable) {
+  public putCriticality(value: SecurityhubAutomationRuleCriteriaCriticality[] | cdktn.IResolvable) {
     this._criticality.internalValue = value;
   }
   public resetCriticality() {
@@ -8739,7 +8739,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get description() {
     return this._description;
   }
-  public putDescription(value: SecurityhubAutomationRuleCriteriaDescription[] | cdktf.IResolvable) {
+  public putDescription(value: SecurityhubAutomationRuleCriteriaDescription[] | cdktn.IResolvable) {
     this._description.internalValue = value;
   }
   public resetDescription() {
@@ -8755,7 +8755,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get firstObservedAt() {
     return this._firstObservedAt;
   }
-  public putFirstObservedAt(value: SecurityhubAutomationRuleCriteriaFirstObservedAt[] | cdktf.IResolvable) {
+  public putFirstObservedAt(value: SecurityhubAutomationRuleCriteriaFirstObservedAt[] | cdktn.IResolvable) {
     this._firstObservedAt.internalValue = value;
   }
   public resetFirstObservedAt() {
@@ -8771,7 +8771,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get generatorId() {
     return this._generatorId;
   }
-  public putGeneratorId(value: SecurityhubAutomationRuleCriteriaGeneratorId[] | cdktf.IResolvable) {
+  public putGeneratorId(value: SecurityhubAutomationRuleCriteriaGeneratorId[] | cdktn.IResolvable) {
     this._generatorId.internalValue = value;
   }
   public resetGeneratorId() {
@@ -8787,7 +8787,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get id() {
     return this._id;
   }
-  public putId(value: SecurityhubAutomationRuleCriteriaId[] | cdktf.IResolvable) {
+  public putId(value: SecurityhubAutomationRuleCriteriaId[] | cdktn.IResolvable) {
     this._id.internalValue = value;
   }
   public resetId() {
@@ -8803,7 +8803,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get lastObservedAt() {
     return this._lastObservedAt;
   }
-  public putLastObservedAt(value: SecurityhubAutomationRuleCriteriaLastObservedAt[] | cdktf.IResolvable) {
+  public putLastObservedAt(value: SecurityhubAutomationRuleCriteriaLastObservedAt[] | cdktn.IResolvable) {
     this._lastObservedAt.internalValue = value;
   }
   public resetLastObservedAt() {
@@ -8819,7 +8819,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get noteText() {
     return this._noteText;
   }
-  public putNoteText(value: SecurityhubAutomationRuleCriteriaNoteText[] | cdktf.IResolvable) {
+  public putNoteText(value: SecurityhubAutomationRuleCriteriaNoteText[] | cdktn.IResolvable) {
     this._noteText.internalValue = value;
   }
   public resetNoteText() {
@@ -8835,7 +8835,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get noteUpdatedAt() {
     return this._noteUpdatedAt;
   }
-  public putNoteUpdatedAt(value: SecurityhubAutomationRuleCriteriaNoteUpdatedAt[] | cdktf.IResolvable) {
+  public putNoteUpdatedAt(value: SecurityhubAutomationRuleCriteriaNoteUpdatedAt[] | cdktn.IResolvable) {
     this._noteUpdatedAt.internalValue = value;
   }
   public resetNoteUpdatedAt() {
@@ -8851,7 +8851,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get noteUpdatedBy() {
     return this._noteUpdatedBy;
   }
-  public putNoteUpdatedBy(value: SecurityhubAutomationRuleCriteriaNoteUpdatedBy[] | cdktf.IResolvable) {
+  public putNoteUpdatedBy(value: SecurityhubAutomationRuleCriteriaNoteUpdatedBy[] | cdktn.IResolvable) {
     this._noteUpdatedBy.internalValue = value;
   }
   public resetNoteUpdatedBy() {
@@ -8867,7 +8867,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get productArn() {
     return this._productArn;
   }
-  public putProductArn(value: SecurityhubAutomationRuleCriteriaProductArn[] | cdktf.IResolvable) {
+  public putProductArn(value: SecurityhubAutomationRuleCriteriaProductArn[] | cdktn.IResolvable) {
     this._productArn.internalValue = value;
   }
   public resetProductArn() {
@@ -8883,7 +8883,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get productName() {
     return this._productName;
   }
-  public putProductName(value: SecurityhubAutomationRuleCriteriaProductName[] | cdktf.IResolvable) {
+  public putProductName(value: SecurityhubAutomationRuleCriteriaProductName[] | cdktn.IResolvable) {
     this._productName.internalValue = value;
   }
   public resetProductName() {
@@ -8899,7 +8899,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get recordState() {
     return this._recordState;
   }
-  public putRecordState(value: SecurityhubAutomationRuleCriteriaRecordState[] | cdktf.IResolvable) {
+  public putRecordState(value: SecurityhubAutomationRuleCriteriaRecordState[] | cdktn.IResolvable) {
     this._recordState.internalValue = value;
   }
   public resetRecordState() {
@@ -8915,7 +8915,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get relatedFindingsId() {
     return this._relatedFindingsId;
   }
-  public putRelatedFindingsId(value: SecurityhubAutomationRuleCriteriaRelatedFindingsId[] | cdktf.IResolvable) {
+  public putRelatedFindingsId(value: SecurityhubAutomationRuleCriteriaRelatedFindingsId[] | cdktn.IResolvable) {
     this._relatedFindingsId.internalValue = value;
   }
   public resetRelatedFindingsId() {
@@ -8931,7 +8931,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get relatedFindingsProductArn() {
     return this._relatedFindingsProductArn;
   }
-  public putRelatedFindingsProductArn(value: SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn[] | cdktf.IResolvable) {
+  public putRelatedFindingsProductArn(value: SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn[] | cdktn.IResolvable) {
     this._relatedFindingsProductArn.internalValue = value;
   }
   public resetRelatedFindingsProductArn() {
@@ -8947,7 +8947,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get resourceApplicationArn() {
     return this._resourceApplicationArn;
   }
-  public putResourceApplicationArn(value: SecurityhubAutomationRuleCriteriaResourceApplicationArn[] | cdktf.IResolvable) {
+  public putResourceApplicationArn(value: SecurityhubAutomationRuleCriteriaResourceApplicationArn[] | cdktn.IResolvable) {
     this._resourceApplicationArn.internalValue = value;
   }
   public resetResourceApplicationArn() {
@@ -8963,7 +8963,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get resourceApplicationName() {
     return this._resourceApplicationName;
   }
-  public putResourceApplicationName(value: SecurityhubAutomationRuleCriteriaResourceApplicationName[] | cdktf.IResolvable) {
+  public putResourceApplicationName(value: SecurityhubAutomationRuleCriteriaResourceApplicationName[] | cdktn.IResolvable) {
     this._resourceApplicationName.internalValue = value;
   }
   public resetResourceApplicationName() {
@@ -8979,7 +8979,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get resourceDetailsOther() {
     return this._resourceDetailsOther;
   }
-  public putResourceDetailsOther(value: SecurityhubAutomationRuleCriteriaResourceDetailsOther[] | cdktf.IResolvable) {
+  public putResourceDetailsOther(value: SecurityhubAutomationRuleCriteriaResourceDetailsOther[] | cdktn.IResolvable) {
     this._resourceDetailsOther.internalValue = value;
   }
   public resetResourceDetailsOther() {
@@ -8995,7 +8995,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get resourceId() {
     return this._resourceId;
   }
-  public putResourceId(value: SecurityhubAutomationRuleCriteriaResourceId[] | cdktf.IResolvable) {
+  public putResourceId(value: SecurityhubAutomationRuleCriteriaResourceId[] | cdktn.IResolvable) {
     this._resourceId.internalValue = value;
   }
   public resetResourceId() {
@@ -9011,7 +9011,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get resourcePartition() {
     return this._resourcePartition;
   }
-  public putResourcePartition(value: SecurityhubAutomationRuleCriteriaResourcePartition[] | cdktf.IResolvable) {
+  public putResourcePartition(value: SecurityhubAutomationRuleCriteriaResourcePartition[] | cdktn.IResolvable) {
     this._resourcePartition.internalValue = value;
   }
   public resetResourcePartition() {
@@ -9027,7 +9027,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get resourceRegion() {
     return this._resourceRegion;
   }
-  public putResourceRegion(value: SecurityhubAutomationRuleCriteriaResourceRegion[] | cdktf.IResolvable) {
+  public putResourceRegion(value: SecurityhubAutomationRuleCriteriaResourceRegion[] | cdktn.IResolvable) {
     this._resourceRegion.internalValue = value;
   }
   public resetResourceRegion() {
@@ -9043,7 +9043,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get resourceTags() {
     return this._resourceTags;
   }
-  public putResourceTags(value: SecurityhubAutomationRuleCriteriaResourceTags[] | cdktf.IResolvable) {
+  public putResourceTags(value: SecurityhubAutomationRuleCriteriaResourceTags[] | cdktn.IResolvable) {
     this._resourceTags.internalValue = value;
   }
   public resetResourceTags() {
@@ -9059,7 +9059,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get resourceType() {
     return this._resourceType;
   }
-  public putResourceType(value: SecurityhubAutomationRuleCriteriaResourceType[] | cdktf.IResolvable) {
+  public putResourceType(value: SecurityhubAutomationRuleCriteriaResourceType[] | cdktn.IResolvable) {
     this._resourceType.internalValue = value;
   }
   public resetResourceType() {
@@ -9075,7 +9075,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get severityLabel() {
     return this._severityLabel;
   }
-  public putSeverityLabel(value: SecurityhubAutomationRuleCriteriaSeverityLabel[] | cdktf.IResolvable) {
+  public putSeverityLabel(value: SecurityhubAutomationRuleCriteriaSeverityLabel[] | cdktn.IResolvable) {
     this._severityLabel.internalValue = value;
   }
   public resetSeverityLabel() {
@@ -9091,7 +9091,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get sourceUrl() {
     return this._sourceUrl;
   }
-  public putSourceUrl(value: SecurityhubAutomationRuleCriteriaSourceUrl[] | cdktf.IResolvable) {
+  public putSourceUrl(value: SecurityhubAutomationRuleCriteriaSourceUrl[] | cdktn.IResolvable) {
     this._sourceUrl.internalValue = value;
   }
   public resetSourceUrl() {
@@ -9107,7 +9107,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get title() {
     return this._title;
   }
-  public putTitle(value: SecurityhubAutomationRuleCriteriaTitle[] | cdktf.IResolvable) {
+  public putTitle(value: SecurityhubAutomationRuleCriteriaTitle[] | cdktn.IResolvable) {
     this._title.internalValue = value;
   }
   public resetTitle() {
@@ -9123,7 +9123,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get type() {
     return this._type;
   }
-  public putType(value: SecurityhubAutomationRuleCriteriaType[] | cdktf.IResolvable) {
+  public putType(value: SecurityhubAutomationRuleCriteriaType[] | cdktn.IResolvable) {
     this._type.internalValue = value;
   }
   public resetType() {
@@ -9139,7 +9139,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get updatedAt() {
     return this._updatedAt;
   }
-  public putUpdatedAt(value: SecurityhubAutomationRuleCriteriaUpdatedAt[] | cdktf.IResolvable) {
+  public putUpdatedAt(value: SecurityhubAutomationRuleCriteriaUpdatedAt[] | cdktn.IResolvable) {
     this._updatedAt.internalValue = value;
   }
   public resetUpdatedAt() {
@@ -9155,7 +9155,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get userDefinedFields() {
     return this._userDefinedFields;
   }
-  public putUserDefinedFields(value: SecurityhubAutomationRuleCriteriaUserDefinedFields[] | cdktf.IResolvable) {
+  public putUserDefinedFields(value: SecurityhubAutomationRuleCriteriaUserDefinedFields[] | cdktn.IResolvable) {
     this._userDefinedFields.internalValue = value;
   }
   public resetUserDefinedFields() {
@@ -9171,7 +9171,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get verificationState() {
     return this._verificationState;
   }
-  public putVerificationState(value: SecurityhubAutomationRuleCriteriaVerificationState[] | cdktf.IResolvable) {
+  public putVerificationState(value: SecurityhubAutomationRuleCriteriaVerificationState[] | cdktn.IResolvable) {
     this._verificationState.internalValue = value;
   }
   public resetVerificationState() {
@@ -9187,7 +9187,7 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   public get workflowStatus() {
     return this._workflowStatus;
   }
-  public putWorkflowStatus(value: SecurityhubAutomationRuleCriteriaWorkflowStatus[] | cdktf.IResolvable) {
+  public putWorkflowStatus(value: SecurityhubAutomationRuleCriteriaWorkflowStatus[] | cdktn.IResolvable) {
     this._workflowStatus.internalValue = value;
   }
   public resetWorkflowStatus() {
@@ -9199,15 +9199,15 @@ export class SecurityhubAutomationRuleCriteriaOutputReference extends cdktf.Comp
   }
 }
 
-export class SecurityhubAutomationRuleCriteriaList extends cdktf.ComplexList {
-  public internalValue? : SecurityhubAutomationRuleCriteria[] | cdktf.IResolvable
+export class SecurityhubAutomationRuleCriteriaList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubAutomationRuleCriteria[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9222,7 +9222,7 @@ export class SecurityhubAutomationRuleCriteriaList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule aws_securityhub_automation_rule}
 */
-export class SecurityhubAutomationRule extends cdktf.TerraformResource {
+export class SecurityhubAutomationRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -9233,14 +9233,14 @@ export class SecurityhubAutomationRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecurityhubAutomationRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecurityhubAutomationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityhubAutomationRule to import
   * @param importFromId The id of the existing SecurityhubAutomationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityhubAutomationRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_securityhub_automation_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_securityhub_automation_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -9309,11 +9309,11 @@ export class SecurityhubAutomationRule extends cdktf.TerraformResource {
   }
 
   // is_terminal - computed: true, optional: true, required: false
-  private _isTerminal?: boolean | cdktf.IResolvable; 
+  private _isTerminal?: boolean | cdktn.IResolvable; 
   public get isTerminal() {
     return this.getBooleanAttribute('is_terminal');
   }
-  public set isTerminal(value: boolean | cdktf.IResolvable) {
+  public set isTerminal(value: boolean | cdktn.IResolvable) {
     this._isTerminal = value;
   }
   public resetIsTerminal() {
@@ -9399,7 +9399,7 @@ export class SecurityhubAutomationRule extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -9409,7 +9409,7 @@ export class SecurityhubAutomationRule extends cdktf.TerraformResource {
   public get actions() {
     return this._actions;
   }
-  public putActions(value: SecurityhubAutomationRuleActions[] | cdktf.IResolvable) {
+  public putActions(value: SecurityhubAutomationRuleActions[] | cdktn.IResolvable) {
     this._actions.internalValue = value;
   }
   public resetActions() {
@@ -9425,7 +9425,7 @@ export class SecurityhubAutomationRule extends cdktf.TerraformResource {
   public get criteria() {
     return this._criteria;
   }
-  public putCriteria(value: SecurityhubAutomationRuleCriteria[] | cdktf.IResolvable) {
+  public putCriteria(value: SecurityhubAutomationRuleCriteria[] | cdktn.IResolvable) {
     this._criteria.internalValue = value;
   }
   public resetCriteria() {
@@ -9442,70 +9442,70 @@ export class SecurityhubAutomationRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      is_terminal: cdktf.booleanToTerraform(this._isTerminal),
-      region: cdktf.stringToTerraform(this._region),
-      rule_name: cdktf.stringToTerraform(this._ruleName),
-      rule_order: cdktf.numberToTerraform(this._ruleOrder),
-      rule_status: cdktf.stringToTerraform(this._ruleStatus),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      actions: cdktf.listMapper(securityhubAutomationRuleActionsToTerraform, true)(this._actions.internalValue),
-      criteria: cdktf.listMapper(securityhubAutomationRuleCriteriaToTerraform, true)(this._criteria.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      is_terminal: cdktn.booleanToTerraform(this._isTerminal),
+      region: cdktn.stringToTerraform(this._region),
+      rule_name: cdktn.stringToTerraform(this._ruleName),
+      rule_order: cdktn.numberToTerraform(this._ruleOrder),
+      rule_status: cdktn.stringToTerraform(this._ruleStatus),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      actions: cdktn.listMapper(securityhubAutomationRuleActionsToTerraform, true)(this._actions.internalValue),
+      criteria: cdktn.listMapper(securityhubAutomationRuleCriteriaToTerraform, true)(this._criteria.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_terminal: {
-        value: cdktf.booleanToHclTerraform(this._isTerminal),
+        value: cdktn.booleanToHclTerraform(this._isTerminal),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule_name: {
-        value: cdktf.stringToHclTerraform(this._ruleName),
+        value: cdktn.stringToHclTerraform(this._ruleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule_order: {
-        value: cdktf.numberToHclTerraform(this._ruleOrder),
+        value: cdktn.numberToHclTerraform(this._ruleOrder),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       rule_status: {
-        value: cdktf.stringToHclTerraform(this._ruleStatus),
+        value: cdktn.stringToHclTerraform(this._ruleStatus),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       actions: {
-        value: cdktf.listMapperHcl(securityhubAutomationRuleActionsToHclTerraform, true)(this._actions.internalValue),
+        value: cdktn.listMapperHcl(securityhubAutomationRuleActionsToHclTerraform, true)(this._actions.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SecurityhubAutomationRuleActionsList",
       },
       criteria: {
-        value: cdktf.listMapperHcl(securityhubAutomationRuleCriteriaToHclTerraform, true)(this._criteria.internalValue),
+        value: cdktn.listMapperHcl(securityhubAutomationRuleCriteriaToHclTerraform, true)(this._criteria.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SecurityhubAutomationRuleCriteriaList",

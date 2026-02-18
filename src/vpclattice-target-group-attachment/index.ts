@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpclatticeTargetGroupAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface VpclatticeTargetGroupAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpclattice_target_group_attachment#id VpclatticeTargetGroupAttachment#id}
   *
@@ -57,31 +57,31 @@ export interface VpclatticeTargetGroupAttachmentTarget {
 }
 
 export function vpclatticeTargetGroupAttachmentTargetToTerraform(struct?: VpclatticeTargetGroupAttachmentTargetOutputReference | VpclatticeTargetGroupAttachmentTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    port: cdktf.numberToTerraform(struct!.port),
+    id: cdktn.stringToTerraform(struct!.id),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
 export function vpclatticeTargetGroupAttachmentTargetToHclTerraform(struct?: VpclatticeTargetGroupAttachmentTargetOutputReference | VpclatticeTargetGroupAttachmentTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -92,14 +92,14 @@ export function vpclatticeTargetGroupAttachmentTargetToHclTerraform(struct?: Vpc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpclatticeTargetGroupAttachmentTargetOutputReference extends cdktf.ComplexObject {
+export class VpclatticeTargetGroupAttachmentTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -170,32 +170,32 @@ export interface VpclatticeTargetGroupAttachmentTimeouts {
   readonly delete?: string;
 }
 
-export function vpclatticeTargetGroupAttachmentTimeoutsToTerraform(struct?: VpclatticeTargetGroupAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpclatticeTargetGroupAttachmentTimeoutsToTerraform(struct?: VpclatticeTargetGroupAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function vpclatticeTargetGroupAttachmentTimeoutsToHclTerraform(struct?: VpclatticeTargetGroupAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpclatticeTargetGroupAttachmentTimeoutsToHclTerraform(struct?: VpclatticeTargetGroupAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -206,19 +206,19 @@ export function vpclatticeTargetGroupAttachmentTimeoutsToHclTerraform(struct?: V
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpclatticeTargetGroupAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VpclatticeTargetGroupAttachmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VpclatticeTargetGroupAttachmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VpclatticeTargetGroupAttachmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -235,14 +235,14 @@ export class VpclatticeTargetGroupAttachmentTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpclatticeTargetGroupAttachmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpclatticeTargetGroupAttachmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -290,7 +290,7 @@ export class VpclatticeTargetGroupAttachmentTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpclattice_target_group_attachment aws_vpclattice_target_group_attachment}
 */
-export class VpclatticeTargetGroupAttachment extends cdktf.TerraformResource {
+export class VpclatticeTargetGroupAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -301,14 +301,14 @@ export class VpclatticeTargetGroupAttachment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpclatticeTargetGroupAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpclatticeTargetGroupAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpclatticeTargetGroupAttachment to import
   * @param importFromId The id of the existing VpclatticeTargetGroupAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpclattice_target_group_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpclatticeTargetGroupAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpclattice_target_group_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpclattice_target_group_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -429,9 +429,9 @@ export class VpclatticeTargetGroupAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      target_group_identifier: cdktf.stringToTerraform(this._targetGroupIdentifier),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      target_group_identifier: cdktn.stringToTerraform(this._targetGroupIdentifier),
       target: vpclatticeTargetGroupAttachmentTargetToTerraform(this._target.internalValue),
       timeouts: vpclatticeTargetGroupAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -440,19 +440,19 @@ export class VpclatticeTargetGroupAttachment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_group_identifier: {
-        value: cdktf.stringToHclTerraform(this._targetGroupIdentifier),
+        value: cdktn.stringToHclTerraform(this._targetGroupIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

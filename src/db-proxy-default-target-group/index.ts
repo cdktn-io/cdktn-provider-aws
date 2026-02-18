@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DbProxyDefaultTargetGroupConfig extends cdktf.TerraformMetaArguments {
+export interface DbProxyDefaultTargetGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_proxy_default_target_group#db_proxy_name DbProxyDefaultTargetGroup#db_proxy_name}
   */
@@ -66,52 +66,52 @@ export interface DbProxyDefaultTargetGroupConnectionPoolConfig {
 }
 
 export function dbProxyDefaultTargetGroupConnectionPoolConfigToTerraform(struct?: DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference | DbProxyDefaultTargetGroupConnectionPoolConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connection_borrow_timeout: cdktf.numberToTerraform(struct!.connectionBorrowTimeout),
-    init_query: cdktf.stringToTerraform(struct!.initQuery),
-    max_connections_percent: cdktf.numberToTerraform(struct!.maxConnectionsPercent),
-    max_idle_connections_percent: cdktf.numberToTerraform(struct!.maxIdleConnectionsPercent),
-    session_pinning_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sessionPinningFilters),
+    connection_borrow_timeout: cdktn.numberToTerraform(struct!.connectionBorrowTimeout),
+    init_query: cdktn.stringToTerraform(struct!.initQuery),
+    max_connections_percent: cdktn.numberToTerraform(struct!.maxConnectionsPercent),
+    max_idle_connections_percent: cdktn.numberToTerraform(struct!.maxIdleConnectionsPercent),
+    session_pinning_filters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sessionPinningFilters),
   }
 }
 
 
 export function dbProxyDefaultTargetGroupConnectionPoolConfigToHclTerraform(struct?: DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference | DbProxyDefaultTargetGroupConnectionPoolConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connection_borrow_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.connectionBorrowTimeout),
+      value: cdktn.numberToHclTerraform(struct!.connectionBorrowTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     init_query: {
-      value: cdktf.stringToHclTerraform(struct!.initQuery),
+      value: cdktn.stringToHclTerraform(struct!.initQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_connections_percent: {
-      value: cdktf.numberToHclTerraform(struct!.maxConnectionsPercent),
+      value: cdktn.numberToHclTerraform(struct!.maxConnectionsPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_idle_connections_percent: {
-      value: cdktf.numberToHclTerraform(struct!.maxIdleConnectionsPercent),
+      value: cdktn.numberToHclTerraform(struct!.maxIdleConnectionsPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     session_pinning_filters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sessionPinningFilters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sessionPinningFilters),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -122,14 +122,14 @@ export function dbProxyDefaultTargetGroupConnectionPoolConfigToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference extends cdktf.ComplexObject {
+export class DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -245,7 +245,7 @@ export class DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference extend
   // session_pinning_filters - computed: false, optional: true, required: false
   private _sessionPinningFilters?: string[]; 
   public get sessionPinningFilters() {
-    return cdktf.Fn.tolist(this.getListAttribute('session_pinning_filters'));
+    return cdktn.Fn.tolist(this.getListAttribute('session_pinning_filters'));
   }
   public set sessionPinningFilters(value: string[]) {
     this._sessionPinningFilters = value;
@@ -269,32 +269,32 @@ export interface DbProxyDefaultTargetGroupTimeouts {
   readonly update?: string;
 }
 
-export function dbProxyDefaultTargetGroupTimeoutsToTerraform(struct?: DbProxyDefaultTargetGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dbProxyDefaultTargetGroupTimeoutsToTerraform(struct?: DbProxyDefaultTargetGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dbProxyDefaultTargetGroupTimeoutsToHclTerraform(struct?: DbProxyDefaultTargetGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dbProxyDefaultTargetGroupTimeoutsToHclTerraform(struct?: DbProxyDefaultTargetGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -305,19 +305,19 @@ export function dbProxyDefaultTargetGroupTimeoutsToHclTerraform(struct?: DbProxy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DbProxyDefaultTargetGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DbProxyDefaultTargetGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DbProxyDefaultTargetGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DbProxyDefaultTargetGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -334,14 +334,14 @@ export class DbProxyDefaultTargetGroupTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DbProxyDefaultTargetGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DbProxyDefaultTargetGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -389,7 +389,7 @@ export class DbProxyDefaultTargetGroupTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_proxy_default_target_group aws_db_proxy_default_target_group}
 */
-export class DbProxyDefaultTargetGroup extends cdktf.TerraformResource {
+export class DbProxyDefaultTargetGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -400,14 +400,14 @@ export class DbProxyDefaultTargetGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DbProxyDefaultTargetGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DbProxyDefaultTargetGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DbProxyDefaultTargetGroup to import
   * @param importFromId The id of the existing DbProxyDefaultTargetGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_proxy_default_target_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DbProxyDefaultTargetGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_db_proxy_default_target_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_db_proxy_default_target_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -541,9 +541,9 @@ export class DbProxyDefaultTargetGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_proxy_name: cdktf.stringToTerraform(this._dbProxyName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      db_proxy_name: cdktn.stringToTerraform(this._dbProxyName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
       connection_pool_config: dbProxyDefaultTargetGroupConnectionPoolConfigToTerraform(this._connectionPoolConfig.internalValue),
       timeouts: dbProxyDefaultTargetGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -552,19 +552,19 @@ export class DbProxyDefaultTargetGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       db_proxy_name: {
-        value: cdktf.stringToHclTerraform(this._dbProxyName),
+        value: cdktn.stringToHclTerraform(this._dbProxyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

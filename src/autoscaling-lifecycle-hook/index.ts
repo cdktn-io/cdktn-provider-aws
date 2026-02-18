@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AutoscalingLifecycleHookConfig extends cdktf.TerraformMetaArguments {
+export interface AutoscalingLifecycleHookConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/autoscaling_lifecycle_hook#autoscaling_group_name AutoscalingLifecycleHook#autoscaling_group_name}
   */
@@ -62,7 +62,7 @@ export interface AutoscalingLifecycleHookConfig extends cdktf.TerraformMetaArgum
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/autoscaling_lifecycle_hook aws_autoscaling_lifecycle_hook}
 */
-export class AutoscalingLifecycleHook extends cdktf.TerraformResource {
+export class AutoscalingLifecycleHook extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -73,14 +73,14 @@ export class AutoscalingLifecycleHook extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AutoscalingLifecycleHook resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AutoscalingLifecycleHook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutoscalingLifecycleHook to import
   * @param importFromId The id of the existing AutoscalingLifecycleHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/autoscaling_lifecycle_hook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutoscalingLifecycleHook to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_autoscaling_lifecycle_hook", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_autoscaling_lifecycle_hook", importId: importFromId, provider });
       }
 
   // ===========
@@ -283,77 +283,77 @@ export class AutoscalingLifecycleHook extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      autoscaling_group_name: cdktf.stringToTerraform(this._autoscalingGroupName),
-      default_result: cdktf.stringToTerraform(this._defaultResult),
-      heartbeat_timeout: cdktf.numberToTerraform(this._heartbeatTimeout),
-      id: cdktf.stringToTerraform(this._id),
-      lifecycle_transition: cdktf.stringToTerraform(this._lifecycleTransition),
-      name: cdktf.stringToTerraform(this._name),
-      notification_metadata: cdktf.stringToTerraform(this._notificationMetadata),
-      notification_target_arn: cdktf.stringToTerraform(this._notificationTargetArn),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
+      autoscaling_group_name: cdktn.stringToTerraform(this._autoscalingGroupName),
+      default_result: cdktn.stringToTerraform(this._defaultResult),
+      heartbeat_timeout: cdktn.numberToTerraform(this._heartbeatTimeout),
+      id: cdktn.stringToTerraform(this._id),
+      lifecycle_transition: cdktn.stringToTerraform(this._lifecycleTransition),
+      name: cdktn.stringToTerraform(this._name),
+      notification_metadata: cdktn.stringToTerraform(this._notificationMetadata),
+      notification_target_arn: cdktn.stringToTerraform(this._notificationTargetArn),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       autoscaling_group_name: {
-        value: cdktf.stringToHclTerraform(this._autoscalingGroupName),
+        value: cdktn.stringToHclTerraform(this._autoscalingGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_result: {
-        value: cdktf.stringToHclTerraform(this._defaultResult),
+        value: cdktn.stringToHclTerraform(this._defaultResult),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       heartbeat_timeout: {
-        value: cdktf.numberToHclTerraform(this._heartbeatTimeout),
+        value: cdktn.numberToHclTerraform(this._heartbeatTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lifecycle_transition: {
-        value: cdktf.stringToHclTerraform(this._lifecycleTransition),
+        value: cdktn.stringToHclTerraform(this._lifecycleTransition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_metadata: {
-        value: cdktf.stringToHclTerraform(this._notificationMetadata),
+        value: cdktn.stringToHclTerraform(this._notificationMetadata),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_target_arn: {
-        value: cdktf.stringToHclTerraform(this._notificationTargetArn),
+        value: cdktn.stringToHclTerraform(this._notificationTargetArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

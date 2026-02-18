@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QuicksightAccountSubscriptionConfig extends cdktf.TerraformMetaArguments {
+export interface QuicksightAccountSubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_account_subscription#account_name QuicksightAccountSubscription#account_name}
   */
@@ -123,39 +123,39 @@ export interface QuicksightAccountSubscriptionTimeouts {
   readonly read?: string;
 }
 
-export function quicksightAccountSubscriptionTimeoutsToTerraform(struct?: QuicksightAccountSubscriptionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAccountSubscriptionTimeoutsToTerraform(struct?: QuicksightAccountSubscriptionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function quicksightAccountSubscriptionTimeoutsToHclTerraform(struct?: QuicksightAccountSubscriptionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAccountSubscriptionTimeoutsToHclTerraform(struct?: QuicksightAccountSubscriptionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -166,19 +166,19 @@ export function quicksightAccountSubscriptionTimeoutsToHclTerraform(struct?: Qui
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightAccountSubscriptionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class QuicksightAccountSubscriptionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): QuicksightAccountSubscriptionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightAccountSubscriptionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -199,7 +199,7 @@ export class QuicksightAccountSubscriptionTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightAccountSubscriptionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightAccountSubscriptionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -207,7 +207,7 @@ export class QuicksightAccountSubscriptionTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -272,7 +272,7 @@ export class QuicksightAccountSubscriptionTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription}
 */
-export class QuicksightAccountSubscription extends cdktf.TerraformResource {
+export class QuicksightAccountSubscription extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -283,14 +283,14 @@ export class QuicksightAccountSubscription extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QuicksightAccountSubscription resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QuicksightAccountSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightAccountSubscription to import
   * @param importFromId The id of the existing QuicksightAccountSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_account_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightAccountSubscription to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_account_subscription", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_account_subscription", importId: importFromId, provider });
       }
 
   // ===========
@@ -699,27 +699,27 @@ export class QuicksightAccountSubscription extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_name: cdktf.stringToTerraform(this._accountName),
-      active_directory_name: cdktf.stringToTerraform(this._activeDirectoryName),
-      admin_group: cdktf.listMapper(cdktf.stringToTerraform, false)(this._adminGroup),
-      admin_pro_group: cdktf.listMapper(cdktf.stringToTerraform, false)(this._adminProGroup),
-      authentication_method: cdktf.stringToTerraform(this._authenticationMethod),
-      author_group: cdktf.listMapper(cdktf.stringToTerraform, false)(this._authorGroup),
-      author_pro_group: cdktf.listMapper(cdktf.stringToTerraform, false)(this._authorProGroup),
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      contact_number: cdktf.stringToTerraform(this._contactNumber),
-      directory_id: cdktf.stringToTerraform(this._directoryId),
-      edition: cdktf.stringToTerraform(this._edition),
-      email_address: cdktf.stringToTerraform(this._emailAddress),
-      first_name: cdktf.stringToTerraform(this._firstName),
-      iam_identity_center_instance_arn: cdktf.stringToTerraform(this._iamIdentityCenterInstanceArn),
-      id: cdktf.stringToTerraform(this._id),
-      last_name: cdktf.stringToTerraform(this._lastName),
-      notification_email: cdktf.stringToTerraform(this._notificationEmail),
-      reader_group: cdktf.listMapper(cdktf.stringToTerraform, false)(this._readerGroup),
-      reader_pro_group: cdktf.listMapper(cdktf.stringToTerraform, false)(this._readerProGroup),
-      realm: cdktf.stringToTerraform(this._realm),
-      region: cdktf.stringToTerraform(this._region),
+      account_name: cdktn.stringToTerraform(this._accountName),
+      active_directory_name: cdktn.stringToTerraform(this._activeDirectoryName),
+      admin_group: cdktn.listMapper(cdktn.stringToTerraform, false)(this._adminGroup),
+      admin_pro_group: cdktn.listMapper(cdktn.stringToTerraform, false)(this._adminProGroup),
+      authentication_method: cdktn.stringToTerraform(this._authenticationMethod),
+      author_group: cdktn.listMapper(cdktn.stringToTerraform, false)(this._authorGroup),
+      author_pro_group: cdktn.listMapper(cdktn.stringToTerraform, false)(this._authorProGroup),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      contact_number: cdktn.stringToTerraform(this._contactNumber),
+      directory_id: cdktn.stringToTerraform(this._directoryId),
+      edition: cdktn.stringToTerraform(this._edition),
+      email_address: cdktn.stringToTerraform(this._emailAddress),
+      first_name: cdktn.stringToTerraform(this._firstName),
+      iam_identity_center_instance_arn: cdktn.stringToTerraform(this._iamIdentityCenterInstanceArn),
+      id: cdktn.stringToTerraform(this._id),
+      last_name: cdktn.stringToTerraform(this._lastName),
+      notification_email: cdktn.stringToTerraform(this._notificationEmail),
+      reader_group: cdktn.listMapper(cdktn.stringToTerraform, false)(this._readerGroup),
+      reader_pro_group: cdktn.listMapper(cdktn.stringToTerraform, false)(this._readerProGroup),
+      realm: cdktn.stringToTerraform(this._realm),
+      region: cdktn.stringToTerraform(this._region),
       timeouts: quicksightAccountSubscriptionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -727,127 +727,127 @@ export class QuicksightAccountSubscription extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_name: {
-        value: cdktf.stringToHclTerraform(this._accountName),
+        value: cdktn.stringToHclTerraform(this._accountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       active_directory_name: {
-        value: cdktf.stringToHclTerraform(this._activeDirectoryName),
+        value: cdktn.stringToHclTerraform(this._activeDirectoryName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       admin_group: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._adminGroup),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._adminGroup),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       admin_pro_group: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._adminProGroup),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._adminProGroup),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       authentication_method: {
-        value: cdktf.stringToHclTerraform(this._authenticationMethod),
+        value: cdktn.stringToHclTerraform(this._authenticationMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       author_group: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._authorGroup),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._authorGroup),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       author_pro_group: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._authorProGroup),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._authorProGroup),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       contact_number: {
-        value: cdktf.stringToHclTerraform(this._contactNumber),
+        value: cdktn.stringToHclTerraform(this._contactNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       directory_id: {
-        value: cdktf.stringToHclTerraform(this._directoryId),
+        value: cdktn.stringToHclTerraform(this._directoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       edition: {
-        value: cdktf.stringToHclTerraform(this._edition),
+        value: cdktn.stringToHclTerraform(this._edition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email_address: {
-        value: cdktf.stringToHclTerraform(this._emailAddress),
+        value: cdktn.stringToHclTerraform(this._emailAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       first_name: {
-        value: cdktf.stringToHclTerraform(this._firstName),
+        value: cdktn.stringToHclTerraform(this._firstName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_identity_center_instance_arn: {
-        value: cdktf.stringToHclTerraform(this._iamIdentityCenterInstanceArn),
+        value: cdktn.stringToHclTerraform(this._iamIdentityCenterInstanceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       last_name: {
-        value: cdktf.stringToHclTerraform(this._lastName),
+        value: cdktn.stringToHclTerraform(this._lastName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_email: {
-        value: cdktf.stringToHclTerraform(this._notificationEmail),
+        value: cdktn.stringToHclTerraform(this._notificationEmail),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reader_group: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._readerGroup),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._readerGroup),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       reader_pro_group: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._readerProGroup),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._readerProGroup),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       realm: {
-        value: cdktf.stringToHclTerraform(this._realm),
+        value: cdktn.stringToHclTerraform(this._realm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsRoute53TrafficPolicyDocumentConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRoute53TrafficPolicyDocumentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#id DataAwsRoute53TrafficPolicyDocument#id}
   *
@@ -40,13 +40,13 @@ export interface DataAwsRoute53TrafficPolicyDocumentConfig extends cdktf.Terrafo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#endpoint DataAwsRoute53TrafficPolicyDocument#endpoint}
   */
-  readonly endpoint?: DataAwsRoute53TrafficPolicyDocumentEndpoint[] | cdktf.IResolvable;
+  readonly endpoint?: DataAwsRoute53TrafficPolicyDocumentEndpoint[] | cdktn.IResolvable;
   /**
   * rule block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#rule DataAwsRoute53TrafficPolicyDocument#rule}
   */
-  readonly rule?: DataAwsRoute53TrafficPolicyDocumentRule[] | cdktf.IResolvable;
+  readonly rule?: DataAwsRoute53TrafficPolicyDocumentRule[] | cdktn.IResolvable;
 }
 export interface DataAwsRoute53TrafficPolicyDocumentEndpoint {
   /**
@@ -70,46 +70,46 @@ export interface DataAwsRoute53TrafficPolicyDocumentEndpoint {
   readonly value?: string;
 }
 
-export function dataAwsRoute53TrafficPolicyDocumentEndpointToTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentEndpoint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRoute53TrafficPolicyDocumentEndpointToTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentEndpoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    region: cdktf.stringToTerraform(struct!.region),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    id: cdktn.stringToTerraform(struct!.id),
+    region: cdktn.stringToTerraform(struct!.region),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dataAwsRoute53TrafficPolicyDocumentEndpointToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentEndpoint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRoute53TrafficPolicyDocumentEndpointToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentEndpoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,9 +120,9 @@ export function dataAwsRoute53TrafficPolicyDocumentEndpointToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsRoute53TrafficPolicyDocumentEndpointOutputReference extends cdktf.ComplexObject {
+export class DataAwsRoute53TrafficPolicyDocumentEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -130,11 +130,11 @@ export class DataAwsRoute53TrafficPolicyDocumentEndpointOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsRoute53TrafficPolicyDocumentEndpoint | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsRoute53TrafficPolicyDocumentEndpoint | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -159,7 +159,7 @@ export class DataAwsRoute53TrafficPolicyDocumentEndpointOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsRoute53TrafficPolicyDocumentEndpoint | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsRoute53TrafficPolicyDocumentEndpoint | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -168,7 +168,7 @@ export class DataAwsRoute53TrafficPolicyDocumentEndpointOutputReference extends 
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -244,15 +244,15 @@ export class DataAwsRoute53TrafficPolicyDocumentEndpointOutputReference extends 
   }
 }
 
-export class DataAwsRoute53TrafficPolicyDocumentEndpointList extends cdktf.ComplexList {
-  public internalValue? : DataAwsRoute53TrafficPolicyDocumentEndpoint[] | cdktf.IResolvable
+export class DataAwsRoute53TrafficPolicyDocumentEndpointList extends cdktn.ComplexList {
+  public internalValue? : DataAwsRoute53TrafficPolicyDocumentEndpoint[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -275,7 +275,7 @@ export interface DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#evaluate_target_health DataAwsRoute53TrafficPolicyDocument#evaluate_target_health}
   */
-  readonly evaluateTargetHealth?: boolean | cdktf.IResolvable;
+  readonly evaluateTargetHealth?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#health_check DataAwsRoute53TrafficPolicyDocument#health_check}
   */
@@ -298,74 +298,74 @@ export interface DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation {
   readonly ruleReference?: string;
 }
 
-export function dataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationToTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationToTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bias: cdktf.stringToTerraform(struct!.bias),
-    endpoint_reference: cdktf.stringToTerraform(struct!.endpointReference),
-    evaluate_target_health: cdktf.booleanToTerraform(struct!.evaluateTargetHealth),
-    health_check: cdktf.stringToTerraform(struct!.healthCheck),
-    latitude: cdktf.stringToTerraform(struct!.latitude),
-    longitude: cdktf.stringToTerraform(struct!.longitude),
-    region: cdktf.stringToTerraform(struct!.region),
-    rule_reference: cdktf.stringToTerraform(struct!.ruleReference),
+    bias: cdktn.stringToTerraform(struct!.bias),
+    endpoint_reference: cdktn.stringToTerraform(struct!.endpointReference),
+    evaluate_target_health: cdktn.booleanToTerraform(struct!.evaluateTargetHealth),
+    health_check: cdktn.stringToTerraform(struct!.healthCheck),
+    latitude: cdktn.stringToTerraform(struct!.latitude),
+    longitude: cdktn.stringToTerraform(struct!.longitude),
+    region: cdktn.stringToTerraform(struct!.region),
+    rule_reference: cdktn.stringToTerraform(struct!.ruleReference),
   }
 }
 
 
-export function dataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bias: {
-      value: cdktf.stringToHclTerraform(struct!.bias),
+      value: cdktn.stringToHclTerraform(struct!.bias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint_reference: {
-      value: cdktf.stringToHclTerraform(struct!.endpointReference),
+      value: cdktn.stringToHclTerraform(struct!.endpointReference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     evaluate_target_health: {
-      value: cdktf.booleanToHclTerraform(struct!.evaluateTargetHealth),
+      value: cdktn.booleanToHclTerraform(struct!.evaluateTargetHealth),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     health_check: {
-      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      value: cdktn.stringToHclTerraform(struct!.healthCheck),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     latitude: {
-      value: cdktf.stringToHclTerraform(struct!.latitude),
+      value: cdktn.stringToHclTerraform(struct!.latitude),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     longitude: {
-      value: cdktf.stringToHclTerraform(struct!.longitude),
+      value: cdktn.stringToHclTerraform(struct!.longitude),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_reference: {
-      value: cdktf.stringToHclTerraform(struct!.ruleReference),
+      value: cdktn.stringToHclTerraform(struct!.ruleReference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -376,9 +376,9 @@ export function dataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputReference extends cdktf.ComplexObject {
+export class DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -386,11 +386,11 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -431,7 +431,7 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -444,7 +444,7 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputRe
       this._region = undefined;
       this._ruleReference = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -495,11 +495,11 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputRe
   }
 
   // evaluate_target_health - computed: false, optional: true, required: false
-  private _evaluateTargetHealth?: boolean | cdktf.IResolvable; 
+  private _evaluateTargetHealth?: boolean | cdktn.IResolvable; 
   public get evaluateTargetHealth() {
     return this.getBooleanAttribute('evaluate_target_health');
   }
-  public set evaluateTargetHealth(value: boolean | cdktf.IResolvable) {
+  public set evaluateTargetHealth(value: boolean | cdktn.IResolvable) {
     this._evaluateTargetHealth = value;
   }
   public resetEvaluateTargetHealth() {
@@ -591,15 +591,15 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputRe
   }
 }
 
-export class DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationList extends cdktf.ComplexList {
-  public internalValue? : DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation[] | cdktf.IResolvable
+export class DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationList extends cdktn.ComplexList {
+  public internalValue? : DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -621,32 +621,32 @@ export interface DataAwsRoute53TrafficPolicyDocumentRuleItems {
   readonly healthCheck?: string;
 }
 
-export function dataAwsRoute53TrafficPolicyDocumentRuleItemsToTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRoute53TrafficPolicyDocumentRuleItemsToTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint_reference: cdktf.stringToTerraform(struct!.endpointReference),
-    health_check: cdktf.stringToTerraform(struct!.healthCheck),
+    endpoint_reference: cdktn.stringToTerraform(struct!.endpointReference),
+    health_check: cdktn.stringToTerraform(struct!.healthCheck),
   }
 }
 
 
-export function dataAwsRoute53TrafficPolicyDocumentRuleItemsToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRoute53TrafficPolicyDocumentRuleItemsToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint_reference: {
-      value: cdktf.stringToHclTerraform(struct!.endpointReference),
+      value: cdktn.stringToHclTerraform(struct!.endpointReference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     health_check: {
-      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      value: cdktn.stringToHclTerraform(struct!.healthCheck),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -657,9 +657,9 @@ export function dataAwsRoute53TrafficPolicyDocumentRuleItemsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsRoute53TrafficPolicyDocumentRuleItemsOutputReference extends cdktf.ComplexObject {
+export class DataAwsRoute53TrafficPolicyDocumentRuleItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -667,11 +667,11 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleItemsOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsRoute53TrafficPolicyDocumentRuleItems | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsRoute53TrafficPolicyDocumentRuleItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -688,14 +688,14 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleItemsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsRoute53TrafficPolicyDocumentRuleItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsRoute53TrafficPolicyDocumentRuleItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._endpointReference = undefined;
       this._healthCheck = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -740,15 +740,15 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleItemsOutputReference extends
   }
 }
 
-export class DataAwsRoute53TrafficPolicyDocumentRuleItemsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsRoute53TrafficPolicyDocumentRuleItems[] | cdktf.IResolvable
+export class DataAwsRoute53TrafficPolicyDocumentRuleItemsList extends cdktn.ComplexList {
+  public internalValue? : DataAwsRoute53TrafficPolicyDocumentRuleItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -775,7 +775,7 @@ export interface DataAwsRoute53TrafficPolicyDocumentRuleLocation {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#evaluate_target_health DataAwsRoute53TrafficPolicyDocument#evaluate_target_health}
   */
-  readonly evaluateTargetHealth?: boolean | cdktf.IResolvable;
+  readonly evaluateTargetHealth?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#health_check DataAwsRoute53TrafficPolicyDocument#health_check}
   */
@@ -783,7 +783,7 @@ export interface DataAwsRoute53TrafficPolicyDocumentRuleLocation {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#is_default DataAwsRoute53TrafficPolicyDocument#is_default}
   */
-  readonly isDefault?: boolean | cdktf.IResolvable;
+  readonly isDefault?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#rule_reference DataAwsRoute53TrafficPolicyDocument#rule_reference}
   */
@@ -794,74 +794,74 @@ export interface DataAwsRoute53TrafficPolicyDocumentRuleLocation {
   readonly subdivision?: string;
 }
 
-export function dataAwsRoute53TrafficPolicyDocumentRuleLocationToTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRoute53TrafficPolicyDocumentRuleLocationToTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    continent: cdktf.stringToTerraform(struct!.continent),
-    country: cdktf.stringToTerraform(struct!.country),
-    endpoint_reference: cdktf.stringToTerraform(struct!.endpointReference),
-    evaluate_target_health: cdktf.booleanToTerraform(struct!.evaluateTargetHealth),
-    health_check: cdktf.stringToTerraform(struct!.healthCheck),
-    is_default: cdktf.booleanToTerraform(struct!.isDefault),
-    rule_reference: cdktf.stringToTerraform(struct!.ruleReference),
-    subdivision: cdktf.stringToTerraform(struct!.subdivision),
+    continent: cdktn.stringToTerraform(struct!.continent),
+    country: cdktn.stringToTerraform(struct!.country),
+    endpoint_reference: cdktn.stringToTerraform(struct!.endpointReference),
+    evaluate_target_health: cdktn.booleanToTerraform(struct!.evaluateTargetHealth),
+    health_check: cdktn.stringToTerraform(struct!.healthCheck),
+    is_default: cdktn.booleanToTerraform(struct!.isDefault),
+    rule_reference: cdktn.stringToTerraform(struct!.ruleReference),
+    subdivision: cdktn.stringToTerraform(struct!.subdivision),
   }
 }
 
 
-export function dataAwsRoute53TrafficPolicyDocumentRuleLocationToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRoute53TrafficPolicyDocumentRuleLocationToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     continent: {
-      value: cdktf.stringToHclTerraform(struct!.continent),
+      value: cdktn.stringToHclTerraform(struct!.continent),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     country: {
-      value: cdktf.stringToHclTerraform(struct!.country),
+      value: cdktn.stringToHclTerraform(struct!.country),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint_reference: {
-      value: cdktf.stringToHclTerraform(struct!.endpointReference),
+      value: cdktn.stringToHclTerraform(struct!.endpointReference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     evaluate_target_health: {
-      value: cdktf.booleanToHclTerraform(struct!.evaluateTargetHealth),
+      value: cdktn.booleanToHclTerraform(struct!.evaluateTargetHealth),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     health_check: {
-      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      value: cdktn.stringToHclTerraform(struct!.healthCheck),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_default: {
-      value: cdktf.booleanToHclTerraform(struct!.isDefault),
+      value: cdktn.booleanToHclTerraform(struct!.isDefault),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     rule_reference: {
-      value: cdktf.stringToHclTerraform(struct!.ruleReference),
+      value: cdktn.stringToHclTerraform(struct!.ruleReference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subdivision: {
-      value: cdktf.stringToHclTerraform(struct!.subdivision),
+      value: cdktn.stringToHclTerraform(struct!.subdivision),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -872,9 +872,9 @@ export function dataAwsRoute53TrafficPolicyDocumentRuleLocationToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsRoute53TrafficPolicyDocumentRuleLocationOutputReference extends cdktf.ComplexObject {
+export class DataAwsRoute53TrafficPolicyDocumentRuleLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -882,11 +882,11 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleLocationOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsRoute53TrafficPolicyDocumentRuleLocation | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsRoute53TrafficPolicyDocumentRuleLocation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -927,7 +927,7 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleLocationOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsRoute53TrafficPolicyDocumentRuleLocation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsRoute53TrafficPolicyDocumentRuleLocation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -940,7 +940,7 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleLocationOutputReference exte
       this._ruleReference = undefined;
       this._subdivision = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1007,11 +1007,11 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleLocationOutputReference exte
   }
 
   // evaluate_target_health - computed: false, optional: true, required: false
-  private _evaluateTargetHealth?: boolean | cdktf.IResolvable; 
+  private _evaluateTargetHealth?: boolean | cdktn.IResolvable; 
   public get evaluateTargetHealth() {
     return this.getBooleanAttribute('evaluate_target_health');
   }
-  public set evaluateTargetHealth(value: boolean | cdktf.IResolvable) {
+  public set evaluateTargetHealth(value: boolean | cdktn.IResolvable) {
     this._evaluateTargetHealth = value;
   }
   public resetEvaluateTargetHealth() {
@@ -1039,11 +1039,11 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleLocationOutputReference exte
   }
 
   // is_default - computed: false, optional: true, required: false
-  private _isDefault?: boolean | cdktf.IResolvable; 
+  private _isDefault?: boolean | cdktn.IResolvable; 
   public get isDefault() {
     return this.getBooleanAttribute('is_default');
   }
-  public set isDefault(value: boolean | cdktf.IResolvable) {
+  public set isDefault(value: boolean | cdktn.IResolvable) {
     this._isDefault = value;
   }
   public resetIsDefault() {
@@ -1087,15 +1087,15 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleLocationOutputReference exte
   }
 }
 
-export class DataAwsRoute53TrafficPolicyDocumentRuleLocationList extends cdktf.ComplexList {
-  public internalValue? : DataAwsRoute53TrafficPolicyDocumentRuleLocation[] | cdktf.IResolvable
+export class DataAwsRoute53TrafficPolicyDocumentRuleLocationList extends cdktn.ComplexList {
+  public internalValue? : DataAwsRoute53TrafficPolicyDocumentRuleLocation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1114,7 +1114,7 @@ export interface DataAwsRoute53TrafficPolicyDocumentRulePrimary {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#evaluate_target_health DataAwsRoute53TrafficPolicyDocument#evaluate_target_health}
   */
-  readonly evaluateTargetHealth?: boolean | cdktf.IResolvable;
+  readonly evaluateTargetHealth?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#health_check DataAwsRoute53TrafficPolicyDocument#health_check}
   */
@@ -1126,45 +1126,45 @@ export interface DataAwsRoute53TrafficPolicyDocumentRulePrimary {
 }
 
 export function dataAwsRoute53TrafficPolicyDocumentRulePrimaryToTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRulePrimaryOutputReference | DataAwsRoute53TrafficPolicyDocumentRulePrimary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint_reference: cdktf.stringToTerraform(struct!.endpointReference),
-    evaluate_target_health: cdktf.booleanToTerraform(struct!.evaluateTargetHealth),
-    health_check: cdktf.stringToTerraform(struct!.healthCheck),
-    rule_reference: cdktf.stringToTerraform(struct!.ruleReference),
+    endpoint_reference: cdktn.stringToTerraform(struct!.endpointReference),
+    evaluate_target_health: cdktn.booleanToTerraform(struct!.evaluateTargetHealth),
+    health_check: cdktn.stringToTerraform(struct!.healthCheck),
+    rule_reference: cdktn.stringToTerraform(struct!.ruleReference),
   }
 }
 
 
 export function dataAwsRoute53TrafficPolicyDocumentRulePrimaryToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRulePrimaryOutputReference | DataAwsRoute53TrafficPolicyDocumentRulePrimary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint_reference: {
-      value: cdktf.stringToHclTerraform(struct!.endpointReference),
+      value: cdktn.stringToHclTerraform(struct!.endpointReference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     evaluate_target_health: {
-      value: cdktf.booleanToHclTerraform(struct!.evaluateTargetHealth),
+      value: cdktn.booleanToHclTerraform(struct!.evaluateTargetHealth),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     health_check: {
-      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      value: cdktn.stringToHclTerraform(struct!.healthCheck),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_reference: {
-      value: cdktf.stringToHclTerraform(struct!.ruleReference),
+      value: cdktn.stringToHclTerraform(struct!.ruleReference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1175,14 +1175,14 @@ export function dataAwsRoute53TrafficPolicyDocumentRulePrimaryToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsRoute53TrafficPolicyDocumentRulePrimaryOutputReference extends cdktf.ComplexObject {
+export class DataAwsRoute53TrafficPolicyDocumentRulePrimaryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1242,11 +1242,11 @@ export class DataAwsRoute53TrafficPolicyDocumentRulePrimaryOutputReference exten
   }
 
   // evaluate_target_health - computed: false, optional: true, required: false
-  private _evaluateTargetHealth?: boolean | cdktf.IResolvable; 
+  private _evaluateTargetHealth?: boolean | cdktn.IResolvable; 
   public get evaluateTargetHealth() {
     return this.getBooleanAttribute('evaluate_target_health');
   }
-  public set evaluateTargetHealth(value: boolean | cdktf.IResolvable) {
+  public set evaluateTargetHealth(value: boolean | cdktn.IResolvable) {
     this._evaluateTargetHealth = value;
   }
   public resetEvaluateTargetHealth() {
@@ -1297,7 +1297,7 @@ export interface DataAwsRoute53TrafficPolicyDocumentRuleRegion {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#evaluate_target_health DataAwsRoute53TrafficPolicyDocument#evaluate_target_health}
   */
-  readonly evaluateTargetHealth?: boolean | cdktf.IResolvable;
+  readonly evaluateTargetHealth?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#health_check DataAwsRoute53TrafficPolicyDocument#health_check}
   */
@@ -1312,53 +1312,53 @@ export interface DataAwsRoute53TrafficPolicyDocumentRuleRegion {
   readonly ruleReference?: string;
 }
 
-export function dataAwsRoute53TrafficPolicyDocumentRuleRegionToTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleRegion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRoute53TrafficPolicyDocumentRuleRegionToTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleRegion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint_reference: cdktf.stringToTerraform(struct!.endpointReference),
-    evaluate_target_health: cdktf.booleanToTerraform(struct!.evaluateTargetHealth),
-    health_check: cdktf.stringToTerraform(struct!.healthCheck),
-    region: cdktf.stringToTerraform(struct!.region),
-    rule_reference: cdktf.stringToTerraform(struct!.ruleReference),
+    endpoint_reference: cdktn.stringToTerraform(struct!.endpointReference),
+    evaluate_target_health: cdktn.booleanToTerraform(struct!.evaluateTargetHealth),
+    health_check: cdktn.stringToTerraform(struct!.healthCheck),
+    region: cdktn.stringToTerraform(struct!.region),
+    rule_reference: cdktn.stringToTerraform(struct!.ruleReference),
   }
 }
 
 
-export function dataAwsRoute53TrafficPolicyDocumentRuleRegionToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleRegion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRoute53TrafficPolicyDocumentRuleRegionToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleRegion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint_reference: {
-      value: cdktf.stringToHclTerraform(struct!.endpointReference),
+      value: cdktn.stringToHclTerraform(struct!.endpointReference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     evaluate_target_health: {
-      value: cdktf.booleanToHclTerraform(struct!.evaluateTargetHealth),
+      value: cdktn.booleanToHclTerraform(struct!.evaluateTargetHealth),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     health_check: {
-      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      value: cdktn.stringToHclTerraform(struct!.healthCheck),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_reference: {
-      value: cdktf.stringToHclTerraform(struct!.ruleReference),
+      value: cdktn.stringToHclTerraform(struct!.ruleReference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1369,9 +1369,9 @@ export function dataAwsRoute53TrafficPolicyDocumentRuleRegionToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference extends cdktf.ComplexObject {
+export class DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1379,11 +1379,11 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsRoute53TrafficPolicyDocumentRuleRegion | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsRoute53TrafficPolicyDocumentRuleRegion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1412,7 +1412,7 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsRoute53TrafficPolicyDocumentRuleRegion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsRoute53TrafficPolicyDocumentRuleRegion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1422,7 +1422,7 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference extend
       this._region = undefined;
       this._ruleReference = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1454,11 +1454,11 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference extend
   }
 
   // evaluate_target_health - computed: false, optional: true, required: false
-  private _evaluateTargetHealth?: boolean | cdktf.IResolvable; 
+  private _evaluateTargetHealth?: boolean | cdktn.IResolvable; 
   public get evaluateTargetHealth() {
     return this.getBooleanAttribute('evaluate_target_health');
   }
-  public set evaluateTargetHealth(value: boolean | cdktf.IResolvable) {
+  public set evaluateTargetHealth(value: boolean | cdktn.IResolvable) {
     this._evaluateTargetHealth = value;
   }
   public resetEvaluateTargetHealth() {
@@ -1518,15 +1518,15 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference extend
   }
 }
 
-export class DataAwsRoute53TrafficPolicyDocumentRuleRegionList extends cdktf.ComplexList {
-  public internalValue? : DataAwsRoute53TrafficPolicyDocumentRuleRegion[] | cdktf.IResolvable
+export class DataAwsRoute53TrafficPolicyDocumentRuleRegionList extends cdktn.ComplexList {
+  public internalValue? : DataAwsRoute53TrafficPolicyDocumentRuleRegion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1545,7 +1545,7 @@ export interface DataAwsRoute53TrafficPolicyDocumentRuleSecondary {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#evaluate_target_health DataAwsRoute53TrafficPolicyDocument#evaluate_target_health}
   */
-  readonly evaluateTargetHealth?: boolean | cdktf.IResolvable;
+  readonly evaluateTargetHealth?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#health_check DataAwsRoute53TrafficPolicyDocument#health_check}
   */
@@ -1557,45 +1557,45 @@ export interface DataAwsRoute53TrafficPolicyDocumentRuleSecondary {
 }
 
 export function dataAwsRoute53TrafficPolicyDocumentRuleSecondaryToTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference | DataAwsRoute53TrafficPolicyDocumentRuleSecondary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint_reference: cdktf.stringToTerraform(struct!.endpointReference),
-    evaluate_target_health: cdktf.booleanToTerraform(struct!.evaluateTargetHealth),
-    health_check: cdktf.stringToTerraform(struct!.healthCheck),
-    rule_reference: cdktf.stringToTerraform(struct!.ruleReference),
+    endpoint_reference: cdktn.stringToTerraform(struct!.endpointReference),
+    evaluate_target_health: cdktn.booleanToTerraform(struct!.evaluateTargetHealth),
+    health_check: cdktn.stringToTerraform(struct!.healthCheck),
+    rule_reference: cdktn.stringToTerraform(struct!.ruleReference),
   }
 }
 
 
 export function dataAwsRoute53TrafficPolicyDocumentRuleSecondaryToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference | DataAwsRoute53TrafficPolicyDocumentRuleSecondary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint_reference: {
-      value: cdktf.stringToHclTerraform(struct!.endpointReference),
+      value: cdktn.stringToHclTerraform(struct!.endpointReference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     evaluate_target_health: {
-      value: cdktf.booleanToHclTerraform(struct!.evaluateTargetHealth),
+      value: cdktn.booleanToHclTerraform(struct!.evaluateTargetHealth),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     health_check: {
-      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      value: cdktn.stringToHclTerraform(struct!.healthCheck),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_reference: {
-      value: cdktf.stringToHclTerraform(struct!.ruleReference),
+      value: cdktn.stringToHclTerraform(struct!.ruleReference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1606,14 +1606,14 @@ export function dataAwsRoute53TrafficPolicyDocumentRuleSecondaryToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference extends cdktf.ComplexObject {
+export class DataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1673,11 +1673,11 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference ext
   }
 
   // evaluate_target_health - computed: false, optional: true, required: false
-  private _evaluateTargetHealth?: boolean | cdktf.IResolvable; 
+  private _evaluateTargetHealth?: boolean | cdktn.IResolvable; 
   public get evaluateTargetHealth() {
     return this.getBooleanAttribute('evaluate_target_health');
   }
-  public set evaluateTargetHealth(value: boolean | cdktf.IResolvable) {
+  public set evaluateTargetHealth(value: boolean | cdktn.IResolvable) {
     this._evaluateTargetHealth = value;
   }
   public resetEvaluateTargetHealth() {
@@ -1737,19 +1737,19 @@ export interface DataAwsRoute53TrafficPolicyDocumentRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#geo_proximity_location DataAwsRoute53TrafficPolicyDocument#geo_proximity_location}
   */
-  readonly geoProximityLocation?: DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation[] | cdktf.IResolvable;
+  readonly geoProximityLocation?: DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation[] | cdktn.IResolvable;
   /**
   * items block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#items DataAwsRoute53TrafficPolicyDocument#items}
   */
-  readonly items?: DataAwsRoute53TrafficPolicyDocumentRuleItems[] | cdktf.IResolvable;
+  readonly items?: DataAwsRoute53TrafficPolicyDocumentRuleItems[] | cdktn.IResolvable;
   /**
   * location block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#location DataAwsRoute53TrafficPolicyDocument#location}
   */
-  readonly location?: DataAwsRoute53TrafficPolicyDocumentRuleLocation[] | cdktf.IResolvable;
+  readonly location?: DataAwsRoute53TrafficPolicyDocumentRuleLocation[] | cdktn.IResolvable;
   /**
   * primary block
   *
@@ -1761,7 +1761,7 @@ export interface DataAwsRoute53TrafficPolicyDocumentRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#region DataAwsRoute53TrafficPolicyDocument#region}
   */
-  readonly region?: DataAwsRoute53TrafficPolicyDocumentRuleRegion[] | cdktf.IResolvable;
+  readonly region?: DataAwsRoute53TrafficPolicyDocumentRuleRegion[] | cdktn.IResolvable;
   /**
   * secondary block
   *
@@ -1770,56 +1770,56 @@ export interface DataAwsRoute53TrafficPolicyDocumentRule {
   readonly secondary?: DataAwsRoute53TrafficPolicyDocumentRuleSecondary;
 }
 
-export function dataAwsRoute53TrafficPolicyDocumentRuleToTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRoute53TrafficPolicyDocumentRuleToTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    type: cdktf.stringToTerraform(struct!.type),
-    geo_proximity_location: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationToTerraform, true)(struct!.geoProximityLocation),
-    items: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleItemsToTerraform, true)(struct!.items),
-    location: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleLocationToTerraform, true)(struct!.location),
+    id: cdktn.stringToTerraform(struct!.id),
+    type: cdktn.stringToTerraform(struct!.type),
+    geo_proximity_location: cdktn.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationToTerraform, true)(struct!.geoProximityLocation),
+    items: cdktn.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleItemsToTerraform, true)(struct!.items),
+    location: cdktn.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleLocationToTerraform, true)(struct!.location),
     primary: dataAwsRoute53TrafficPolicyDocumentRulePrimaryToTerraform(struct!.primary),
-    region: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleRegionToTerraform, true)(struct!.region),
+    region: cdktn.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleRegionToTerraform, true)(struct!.region),
     secondary: dataAwsRoute53TrafficPolicyDocumentRuleSecondaryToTerraform(struct!.secondary),
   }
 }
 
 
-export function dataAwsRoute53TrafficPolicyDocumentRuleToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRoute53TrafficPolicyDocumentRuleToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     geo_proximity_location: {
-      value: cdktf.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationToHclTerraform, true)(struct!.geoProximityLocation),
+      value: cdktn.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationToHclTerraform, true)(struct!.geoProximityLocation),
       isBlock: true,
       type: "set",
       storageClassType: "DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationList",
     },
     items: {
-      value: cdktf.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentRuleItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentRuleItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "set",
       storageClassType: "DataAwsRoute53TrafficPolicyDocumentRuleItemsList",
     },
     location: {
-      value: cdktf.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentRuleLocationToHclTerraform, true)(struct!.location),
+      value: cdktn.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentRuleLocationToHclTerraform, true)(struct!.location),
       isBlock: true,
       type: "set",
       storageClassType: "DataAwsRoute53TrafficPolicyDocumentRuleLocationList",
@@ -1831,7 +1831,7 @@ export function dataAwsRoute53TrafficPolicyDocumentRuleToHclTerraform(struct?: D
       storageClassType: "DataAwsRoute53TrafficPolicyDocumentRulePrimaryList",
     },
     region: {
-      value: cdktf.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentRuleRegionToHclTerraform, true)(struct!.region),
+      value: cdktn.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentRuleRegionToHclTerraform, true)(struct!.region),
       isBlock: true,
       type: "set",
       storageClassType: "DataAwsRoute53TrafficPolicyDocumentRuleRegionList",
@@ -1848,9 +1848,9 @@ export function dataAwsRoute53TrafficPolicyDocumentRuleToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsRoute53TrafficPolicyDocumentRuleOutputReference extends cdktf.ComplexObject {
+export class DataAwsRoute53TrafficPolicyDocumentRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1858,11 +1858,11 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsRoute53TrafficPolicyDocumentRule | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsRoute53TrafficPolicyDocumentRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1903,7 +1903,7 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsRoute53TrafficPolicyDocumentRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsRoute53TrafficPolicyDocumentRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1916,7 +1916,7 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleOutputReference extends cdkt
       this._region.internalValue = undefined;
       this._secondary.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1968,7 +1968,7 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleOutputReference extends cdkt
   public get geoProximityLocation() {
     return this._geoProximityLocation;
   }
-  public putGeoProximityLocation(value: DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation[] | cdktf.IResolvable) {
+  public putGeoProximityLocation(value: DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation[] | cdktn.IResolvable) {
     this._geoProximityLocation.internalValue = value;
   }
   public resetGeoProximityLocation() {
@@ -1984,7 +1984,7 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleOutputReference extends cdkt
   public get items() {
     return this._items;
   }
-  public putItems(value: DataAwsRoute53TrafficPolicyDocumentRuleItems[] | cdktf.IResolvable) {
+  public putItems(value: DataAwsRoute53TrafficPolicyDocumentRuleItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -2000,7 +2000,7 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleOutputReference extends cdkt
   public get location() {
     return this._location;
   }
-  public putLocation(value: DataAwsRoute53TrafficPolicyDocumentRuleLocation[] | cdktf.IResolvable) {
+  public putLocation(value: DataAwsRoute53TrafficPolicyDocumentRuleLocation[] | cdktn.IResolvable) {
     this._location.internalValue = value;
   }
   public resetLocation() {
@@ -2032,7 +2032,7 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleOutputReference extends cdkt
   public get region() {
     return this._region;
   }
-  public putRegion(value: DataAwsRoute53TrafficPolicyDocumentRuleRegion[] | cdktf.IResolvable) {
+  public putRegion(value: DataAwsRoute53TrafficPolicyDocumentRuleRegion[] | cdktn.IResolvable) {
     this._region.internalValue = value;
   }
   public resetRegion() {
@@ -2060,15 +2060,15 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleOutputReference extends cdkt
   }
 }
 
-export class DataAwsRoute53TrafficPolicyDocumentRuleList extends cdktf.ComplexList {
-  public internalValue? : DataAwsRoute53TrafficPolicyDocumentRule[] | cdktf.IResolvable
+export class DataAwsRoute53TrafficPolicyDocumentRuleList extends cdktn.ComplexList {
+  public internalValue? : DataAwsRoute53TrafficPolicyDocumentRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2083,7 +2083,7 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleList extends cdktf.ComplexLi
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document aws_route53_traffic_policy_document}
 */
-export class DataAwsRoute53TrafficPolicyDocument extends cdktf.TerraformDataSource {
+export class DataAwsRoute53TrafficPolicyDocument extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -2094,14 +2094,14 @@ export class DataAwsRoute53TrafficPolicyDocument extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsRoute53TrafficPolicyDocument resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsRoute53TrafficPolicyDocument resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRoute53TrafficPolicyDocument to import
   * @param importFromId The id of the existing DataAwsRoute53TrafficPolicyDocument that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_traffic_policy_document#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRoute53TrafficPolicyDocument to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_traffic_policy_document", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_traffic_policy_document", importId: importFromId, provider });
       }
 
   // ===========
@@ -2234,7 +2234,7 @@ export class DataAwsRoute53TrafficPolicyDocument extends cdktf.TerraformDataSour
   public get endpoint() {
     return this._endpoint;
   }
-  public putEndpoint(value: DataAwsRoute53TrafficPolicyDocumentEndpoint[] | cdktf.IResolvable) {
+  public putEndpoint(value: DataAwsRoute53TrafficPolicyDocumentEndpoint[] | cdktn.IResolvable) {
     this._endpoint.internalValue = value;
   }
   public resetEndpoint() {
@@ -2250,7 +2250,7 @@ export class DataAwsRoute53TrafficPolicyDocument extends cdktf.TerraformDataSour
   public get rule() {
     return this._rule;
   }
-  public putRule(value: DataAwsRoute53TrafficPolicyDocumentRule[] | cdktf.IResolvable) {
+  public putRule(value: DataAwsRoute53TrafficPolicyDocumentRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -2267,56 +2267,56 @@ export class DataAwsRoute53TrafficPolicyDocument extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      record_type: cdktf.stringToTerraform(this._recordType),
-      start_endpoint: cdktf.stringToTerraform(this._startEndpoint),
-      start_rule: cdktf.stringToTerraform(this._startRule),
-      version: cdktf.stringToTerraform(this._version),
-      endpoint: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentEndpointToTerraform, true)(this._endpoint.internalValue),
-      rule: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleToTerraform, true)(this._rule.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      record_type: cdktn.stringToTerraform(this._recordType),
+      start_endpoint: cdktn.stringToTerraform(this._startEndpoint),
+      start_rule: cdktn.stringToTerraform(this._startRule),
+      version: cdktn.stringToTerraform(this._version),
+      endpoint: cdktn.listMapper(dataAwsRoute53TrafficPolicyDocumentEndpointToTerraform, true)(this._endpoint.internalValue),
+      rule: cdktn.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       record_type: {
-        value: cdktf.stringToHclTerraform(this._recordType),
+        value: cdktn.stringToHclTerraform(this._recordType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_endpoint: {
-        value: cdktf.stringToHclTerraform(this._startEndpoint),
+        value: cdktn.stringToHclTerraform(this._startEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_rule: {
-        value: cdktf.stringToHclTerraform(this._startRule),
+        value: cdktn.stringToHclTerraform(this._startRule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint: {
-        value: cdktf.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentEndpointToHclTerraform, true)(this._endpoint.internalValue),
+        value: cdktn.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentEndpointToHclTerraform, true)(this._endpoint.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsRoute53TrafficPolicyDocumentEndpointList",
       },
       rule: {
-        value: cdktf.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentRuleToHclTerraform, true)(this._rule.internalValue),
+        value: cdktn.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentRuleToHclTerraform, true)(this._rule.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsRoute53TrafficPolicyDocumentRuleList",

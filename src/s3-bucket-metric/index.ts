@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3BucketMetricConfig extends cdktf.TerraformMetaArguments {
+export interface S3BucketMetricConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_metric#bucket S3BucketMetric#bucket}
   */
@@ -56,38 +56,38 @@ export interface S3BucketMetricFilter {
 }
 
 export function s3BucketMetricFilterToTerraform(struct?: S3BucketMetricFilterOutputReference | S3BucketMetricFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_point: cdktf.stringToTerraform(struct!.accessPoint),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
+    access_point: cdktn.stringToTerraform(struct!.accessPoint),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tags),
   }
 }
 
 
 export function s3BucketMetricFilterToHclTerraform(struct?: S3BucketMetricFilterOutputReference | S3BucketMetricFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_point: {
-      value: cdktf.stringToHclTerraform(struct!.accessPoint),
+      value: cdktn.stringToHclTerraform(struct!.accessPoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -98,14 +98,14 @@ export function s3BucketMetricFilterToHclTerraform(struct?: S3BucketMetricFilter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketMetricFilterOutputReference extends cdktf.ComplexObject {
+export class S3BucketMetricFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -194,7 +194,7 @@ export class S3BucketMetricFilterOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_metric aws_s3_bucket_metric}
 */
-export class S3BucketMetric extends cdktf.TerraformResource {
+export class S3BucketMetric extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -205,14 +205,14 @@ export class S3BucketMetric extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3BucketMetric resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3BucketMetric resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketMetric to import
   * @param importFromId The id of the existing S3BucketMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_metric#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketMetric to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_metric", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_metric", importId: importFromId, provider });
       }
 
   // ===========
@@ -333,10 +333,10 @@ export class S3BucketMetric extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
       filter: s3BucketMetricFilterToTerraform(this._filter.internalValue),
     };
   }
@@ -344,25 +344,25 @@ export class S3BucketMetric extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

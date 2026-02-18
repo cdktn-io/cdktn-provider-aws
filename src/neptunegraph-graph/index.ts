@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NeptunegraphGraphConfig extends cdktf.TerraformMetaArguments {
+export interface NeptunegraphGraphConfig extends cdktn.TerraformMetaArguments {
   /**
   * A value that indicates whether the graph has deletion protection enabled. The graph can't be deleted when deletion protection is enabled.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptunegraph_graph#deletion_protection NeptunegraphGraph#deletion_protection}
   */
-  readonly deletionProtection?: boolean | cdktf.IResolvable;
+  readonly deletionProtection?: boolean | cdktn.IResolvable;
   /**
   * The graph name. For example: my-graph-1.
   * 								The name must contain from 1 to 63 letters, numbers, or hyphens, 
@@ -56,7 +56,7 @@ export interface NeptunegraphGraphConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptunegraph_graph#public_connectivity NeptunegraphGraph#public_connectivity}
   */
-  readonly publicConnectivity?: boolean | cdktf.IResolvable;
+  readonly publicConnectivity?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -84,7 +84,7 @@ export interface NeptunegraphGraphConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptunegraph_graph#vector_search_configuration NeptunegraphGraph#vector_search_configuration}
   */
-  readonly vectorSearchConfiguration?: NeptunegraphGraphVectorSearchConfiguration[] | cdktf.IResolvable;
+  readonly vectorSearchConfiguration?: NeptunegraphGraphVectorSearchConfiguration[] | cdktn.IResolvable;
 }
 export interface NeptunegraphGraphTimeouts {
   /**
@@ -107,39 +107,39 @@ export interface NeptunegraphGraphTimeouts {
   readonly update?: string;
 }
 
-export function neptunegraphGraphTimeoutsToTerraform(struct?: NeptunegraphGraphTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function neptunegraphGraphTimeoutsToTerraform(struct?: NeptunegraphGraphTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function neptunegraphGraphTimeoutsToHclTerraform(struct?: NeptunegraphGraphTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function neptunegraphGraphTimeoutsToHclTerraform(struct?: NeptunegraphGraphTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -150,19 +150,19 @@ export function neptunegraphGraphTimeoutsToHclTerraform(struct?: NeptunegraphGra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NeptunegraphGraphTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NeptunegraphGraphTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NeptunegraphGraphTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NeptunegraphGraphTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -183,7 +183,7 @@ export class NeptunegraphGraphTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NeptunegraphGraphTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NeptunegraphGraphTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -191,7 +191,7 @@ export class NeptunegraphGraphTimeoutsOutputReference extends cdktf.ComplexObjec
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -261,25 +261,25 @@ export interface NeptunegraphGraphVectorSearchConfiguration {
   readonly vectorSearchDimension?: number;
 }
 
-export function neptunegraphGraphVectorSearchConfigurationToTerraform(struct?: NeptunegraphGraphVectorSearchConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function neptunegraphGraphVectorSearchConfigurationToTerraform(struct?: NeptunegraphGraphVectorSearchConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    vector_search_dimension: cdktf.numberToTerraform(struct!.vectorSearchDimension),
+    vector_search_dimension: cdktn.numberToTerraform(struct!.vectorSearchDimension),
   }
 }
 
 
-export function neptunegraphGraphVectorSearchConfigurationToHclTerraform(struct?: NeptunegraphGraphVectorSearchConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function neptunegraphGraphVectorSearchConfigurationToHclTerraform(struct?: NeptunegraphGraphVectorSearchConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     vector_search_dimension: {
-      value: cdktf.numberToHclTerraform(struct!.vectorSearchDimension),
+      value: cdktn.numberToHclTerraform(struct!.vectorSearchDimension),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -290,9 +290,9 @@ export function neptunegraphGraphVectorSearchConfigurationToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NeptunegraphGraphVectorSearchConfigurationOutputReference extends cdktf.ComplexObject {
+export class NeptunegraphGraphVectorSearchConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -300,11 +300,11 @@ export class NeptunegraphGraphVectorSearchConfigurationOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NeptunegraphGraphVectorSearchConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): NeptunegraphGraphVectorSearchConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -317,13 +317,13 @@ export class NeptunegraphGraphVectorSearchConfigurationOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NeptunegraphGraphVectorSearchConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NeptunegraphGraphVectorSearchConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._vectorSearchDimension = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -351,15 +351,15 @@ export class NeptunegraphGraphVectorSearchConfigurationOutputReference extends c
   }
 }
 
-export class NeptunegraphGraphVectorSearchConfigurationList extends cdktf.ComplexList {
-  public internalValue? : NeptunegraphGraphVectorSearchConfiguration[] | cdktf.IResolvable
+export class NeptunegraphGraphVectorSearchConfigurationList extends cdktn.ComplexList {
+  public internalValue? : NeptunegraphGraphVectorSearchConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -374,7 +374,7 @@ export class NeptunegraphGraphVectorSearchConfigurationList extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptunegraph_graph aws_neptunegraph_graph}
 */
-export class NeptunegraphGraph extends cdktf.TerraformResource {
+export class NeptunegraphGraph extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -385,14 +385,14 @@ export class NeptunegraphGraph extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NeptunegraphGraph resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NeptunegraphGraph resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NeptunegraphGraph to import
   * @param importFromId The id of the existing NeptunegraphGraph that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptunegraph_graph#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NeptunegraphGraph to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_neptunegraph_graph", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_neptunegraph_graph", importId: importFromId, provider });
       }
 
   // ===========
@@ -445,11 +445,11 @@ export class NeptunegraphGraph extends cdktf.TerraformResource {
   }
 
   // deletion_protection - computed: true, optional: true, required: false
-  private _deletionProtection?: boolean | cdktf.IResolvable; 
+  private _deletionProtection?: boolean | cdktn.IResolvable; 
   public get deletionProtection() {
     return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean | cdktf.IResolvable) {
+  public set deletionProtection(value: boolean | cdktn.IResolvable) {
     this._deletionProtection = value;
   }
   public resetDeletionProtection() {
@@ -532,11 +532,11 @@ export class NeptunegraphGraph extends cdktf.TerraformResource {
   }
 
   // public_connectivity - computed: true, optional: true, required: false
-  private _publicConnectivity?: boolean | cdktf.IResolvable; 
+  private _publicConnectivity?: boolean | cdktn.IResolvable; 
   public get publicConnectivity() {
     return this.getBooleanAttribute('public_connectivity');
   }
-  public set publicConnectivity(value: boolean | cdktf.IResolvable) {
+  public set publicConnectivity(value: boolean | cdktn.IResolvable) {
     this._publicConnectivity = value;
   }
   public resetPublicConnectivity() {
@@ -596,7 +596,7 @@ export class NeptunegraphGraph extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -622,7 +622,7 @@ export class NeptunegraphGraph extends cdktf.TerraformResource {
   public get vectorSearchConfiguration() {
     return this._vectorSearchConfiguration;
   }
-  public putVectorSearchConfiguration(value: NeptunegraphGraphVectorSearchConfiguration[] | cdktf.IResolvable) {
+  public putVectorSearchConfiguration(value: NeptunegraphGraphVectorSearchConfiguration[] | cdktn.IResolvable) {
     this._vectorSearchConfiguration.internalValue = value;
   }
   public resetVectorSearchConfiguration() {
@@ -639,72 +639,72 @@ export class NeptunegraphGraph extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
-      graph_name: cdktf.stringToTerraform(this._graphName),
-      graph_name_prefix: cdktf.stringToTerraform(this._graphNamePrefix),
-      kms_key_identifier: cdktf.stringToTerraform(this._kmsKeyIdentifier),
-      provisioned_memory: cdktf.numberToTerraform(this._provisionedMemory),
-      public_connectivity: cdktf.booleanToTerraform(this._publicConnectivity),
-      region: cdktf.stringToTerraform(this._region),
-      replica_count: cdktf.numberToTerraform(this._replicaCount),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      deletion_protection: cdktn.booleanToTerraform(this._deletionProtection),
+      graph_name: cdktn.stringToTerraform(this._graphName),
+      graph_name_prefix: cdktn.stringToTerraform(this._graphNamePrefix),
+      kms_key_identifier: cdktn.stringToTerraform(this._kmsKeyIdentifier),
+      provisioned_memory: cdktn.numberToTerraform(this._provisionedMemory),
+      public_connectivity: cdktn.booleanToTerraform(this._publicConnectivity),
+      region: cdktn.stringToTerraform(this._region),
+      replica_count: cdktn.numberToTerraform(this._replicaCount),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: neptunegraphGraphTimeoutsToTerraform(this._timeouts.internalValue),
-      vector_search_configuration: cdktf.listMapper(neptunegraphGraphVectorSearchConfigurationToTerraform, true)(this._vectorSearchConfiguration.internalValue),
+      vector_search_configuration: cdktn.listMapper(neptunegraphGraphVectorSearchConfigurationToTerraform, true)(this._vectorSearchConfiguration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deletion_protection: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtection),
+        value: cdktn.booleanToHclTerraform(this._deletionProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       graph_name: {
-        value: cdktf.stringToHclTerraform(this._graphName),
+        value: cdktn.stringToHclTerraform(this._graphName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       graph_name_prefix: {
-        value: cdktf.stringToHclTerraform(this._graphNamePrefix),
+        value: cdktn.stringToHclTerraform(this._graphNamePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_identifier: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyIdentifier),
+        value: cdktn.stringToHclTerraform(this._kmsKeyIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provisioned_memory: {
-        value: cdktf.numberToHclTerraform(this._provisionedMemory),
+        value: cdktn.numberToHclTerraform(this._provisionedMemory),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       public_connectivity: {
-        value: cdktf.booleanToHclTerraform(this._publicConnectivity),
+        value: cdktn.booleanToHclTerraform(this._publicConnectivity),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replica_count: {
-        value: cdktf.numberToHclTerraform(this._replicaCount),
+        value: cdktn.numberToHclTerraform(this._replicaCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -716,7 +716,7 @@ export class NeptunegraphGraph extends cdktf.TerraformResource {
         storageClassType: "NeptunegraphGraphTimeouts",
       },
       vector_search_configuration: {
-        value: cdktf.listMapperHcl(neptunegraphGraphVectorSearchConfigurationToHclTerraform, true)(this._vectorSearchConfiguration.internalValue),
+        value: cdktn.listMapperHcl(neptunegraphGraphVectorSearchConfigurationToHclTerraform, true)(this._vectorSearchConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NeptunegraphGraphVectorSearchConfigurationList",

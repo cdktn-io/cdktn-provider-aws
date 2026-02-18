@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DlmLifecyclePolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DlmLifecyclePolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#default_policy DlmLifecyclePolicy#default_policy}
   */
@@ -64,35 +64,35 @@ export interface DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionC
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#encrypted DlmLifecyclePolicy#encrypted}
   */
-  readonly encrypted?: boolean | cdktf.IResolvable;
+  readonly encrypted?: boolean | cdktn.IResolvable;
 }
 
 export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationOutputReference | DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cmk_arn: cdktf.stringToTerraform(struct!.cmkArn),
-    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
+    cmk_arn: cdktn.stringToTerraform(struct!.cmkArn),
+    encrypted: cdktn.booleanToTerraform(struct!.encrypted),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationOutputReference | DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cmk_arn: {
-      value: cdktf.stringToHclTerraform(struct!.cmkArn),
+      value: cdktn.stringToHclTerraform(struct!.cmkArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encrypted: {
-      value: cdktf.booleanToHclTerraform(struct!.encrypted),
+      value: cdktn.booleanToHclTerraform(struct!.encrypted),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -103,14 +103,14 @@ export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -158,11 +158,11 @@ export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfi
   }
 
   // encrypted - computed: false, optional: true, required: false
-  private _encrypted?: boolean | cdktf.IResolvable; 
+  private _encrypted?: boolean | cdktn.IResolvable; 
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
-  public set encrypted(value: boolean | cdktf.IResolvable) {
+  public set encrypted(value: boolean | cdktn.IResolvable) {
     this._encrypted = value;
   }
   public resetEncrypted() {
@@ -185,31 +185,31 @@ export interface DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule 
 }
 
 export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference | DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    interval: cdktf.numberToTerraform(struct!.interval),
-    interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    interval_unit: cdktn.stringToTerraform(struct!.intervalUnit),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference | DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval_unit: {
-      value: cdktf.stringToHclTerraform(struct!.intervalUnit),
+      value: cdktn.stringToHclTerraform(struct!.intervalUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -220,14 +220,14 @@ export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -303,27 +303,27 @@ export interface DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy {
   readonly retainRule?: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule;
 }
 
-export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target: cdktf.stringToTerraform(struct!.target),
+    target: cdktn.stringToTerraform(struct!.target),
     encryption_configuration: dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationToTerraform(struct!.encryptionConfiguration),
     retain_rule: dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleToTerraform(struct!.retainRule),
   }
 }
 
 
-export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -346,9 +346,9 @@ export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -356,11 +356,11 @@ export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy | cdktf.IResolvable | undefined {
+  public get internalValue(): DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -381,7 +381,7 @@ export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -389,7 +389,7 @@ export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference
       this._encryptionConfiguration.internalValue = undefined;
       this._retainRule.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -445,15 +445,15 @@ export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference
   }
 }
 
-export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList extends cdktf.ComplexList {
-  public internalValue? : DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy[] | cdktf.IResolvable
+export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList extends cdktn.ComplexList {
+  public internalValue? : DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -474,35 +474,35 @@ export interface DlmLifecyclePolicyPolicyDetailsAction {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#cross_region_copy DlmLifecyclePolicy#cross_region_copy}
   */
-  readonly crossRegionCopy: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy[] | cdktf.IResolvable;
+  readonly crossRegionCopy: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy[] | cdktn.IResolvable;
 }
 
 export function dlmLifecyclePolicyPolicyDetailsActionToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsActionOutputReference | DlmLifecyclePolicyPolicyDetailsAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    cross_region_copy: cdktf.listMapper(dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyToTerraform, true)(struct!.crossRegionCopy),
+    name: cdktn.stringToTerraform(struct!.name),
+    cross_region_copy: cdktn.listMapper(dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyToTerraform, true)(struct!.crossRegionCopy),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsActionToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsActionOutputReference | DlmLifecyclePolicyPolicyDetailsAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_region_copy: {
-      value: cdktf.listMapperHcl(dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyToHclTerraform, true)(struct!.crossRegionCopy),
+      value: cdktn.listMapperHcl(dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyToHclTerraform, true)(struct!.crossRegionCopy),
       isBlock: true,
       type: "set",
       storageClassType: "DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList",
@@ -513,14 +513,14 @@ export function dlmLifecyclePolicyPolicyDetailsActionToHclTerraform(struct?: Dlm
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsActionOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -569,7 +569,7 @@ export class DlmLifecyclePolicyPolicyDetailsActionOutputReference extends cdktf.
   public get crossRegionCopy() {
     return this._crossRegionCopy;
   }
-  public putCrossRegionCopy(value: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy[] | cdktf.IResolvable) {
+  public putCrossRegionCopy(value: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy[] | cdktn.IResolvable) {
     this._crossRegionCopy.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -593,38 +593,38 @@ export interface DlmLifecyclePolicyPolicyDetailsEventSourceParameters {
 }
 
 export function dlmLifecyclePolicyPolicyDetailsEventSourceParametersToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference | DlmLifecyclePolicyPolicyDetailsEventSourceParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description_regex: cdktf.stringToTerraform(struct!.descriptionRegex),
-    event_type: cdktf.stringToTerraform(struct!.eventType),
-    snapshot_owner: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.snapshotOwner),
+    description_regex: cdktn.stringToTerraform(struct!.descriptionRegex),
+    event_type: cdktn.stringToTerraform(struct!.eventType),
+    snapshot_owner: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.snapshotOwner),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsEventSourceParametersToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference | DlmLifecyclePolicyPolicyDetailsEventSourceParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description_regex: {
-      value: cdktf.stringToHclTerraform(struct!.descriptionRegex),
+      value: cdktn.stringToHclTerraform(struct!.descriptionRegex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     event_type: {
-      value: cdktf.stringToHclTerraform(struct!.eventType),
+      value: cdktn.stringToHclTerraform(struct!.eventType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     snapshot_owner: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.snapshotOwner),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.snapshotOwner),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -635,14 +635,14 @@ export function dlmLifecyclePolicyPolicyDetailsEventSourceParametersToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -708,7 +708,7 @@ export class DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference
   // snapshot_owner - computed: false, optional: false, required: true
   private _snapshotOwner?: string[]; 
   public get snapshotOwner() {
-    return cdktf.Fn.tolist(this.getListAttribute('snapshot_owner'));
+    return cdktn.Fn.tolist(this.getListAttribute('snapshot_owner'));
   }
   public set snapshotOwner(value: string[]) {
     this._snapshotOwner = value;
@@ -732,25 +732,25 @@ export interface DlmLifecyclePolicyPolicyDetailsEventSource {
 }
 
 export function dlmLifecyclePolicyPolicyDetailsEventSourceToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsEventSourceOutputReference | DlmLifecyclePolicyPolicyDetailsEventSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
     parameters: dlmLifecyclePolicyPolicyDetailsEventSourceParametersToTerraform(struct!.parameters),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsEventSourceToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsEventSourceOutputReference | DlmLifecyclePolicyPolicyDetailsEventSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -767,14 +767,14 @@ export function dlmLifecyclePolicyPolicyDetailsEventSourceToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsEventSourceOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsEventSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -835,7 +835,7 @@ export interface DlmLifecyclePolicyPolicyDetailsExclusions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#exclude_boot_volumes DlmLifecyclePolicy#exclude_boot_volumes}
   */
-  readonly excludeBootVolumes?: boolean | cdktf.IResolvable;
+  readonly excludeBootVolumes?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#exclude_tags DlmLifecyclePolicy#exclude_tags}
   */
@@ -847,38 +847,38 @@ export interface DlmLifecyclePolicyPolicyDetailsExclusions {
 }
 
 export function dlmLifecyclePolicyPolicyDetailsExclusionsToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsExclusionsOutputReference | DlmLifecyclePolicyPolicyDetailsExclusions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude_boot_volumes: cdktf.booleanToTerraform(struct!.excludeBootVolumes),
-    exclude_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.excludeTags),
-    exclude_volume_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeVolumeTypes),
+    exclude_boot_volumes: cdktn.booleanToTerraform(struct!.excludeBootVolumes),
+    exclude_tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.excludeTags),
+    exclude_volume_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeVolumeTypes),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsExclusionsToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsExclusionsOutputReference | DlmLifecyclePolicyPolicyDetailsExclusions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exclude_boot_volumes: {
-      value: cdktf.booleanToHclTerraform(struct!.excludeBootVolumes),
+      value: cdktn.booleanToHclTerraform(struct!.excludeBootVolumes),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     exclude_tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.excludeTags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.excludeTags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     exclude_volume_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludeVolumeTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeVolumeTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -889,14 +889,14 @@ export function dlmLifecyclePolicyPolicyDetailsExclusionsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsExclusionsOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsExclusionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -934,11 +934,11 @@ export class DlmLifecyclePolicyPolicyDetailsExclusionsOutputReference extends cd
   }
 
   // exclude_boot_volumes - computed: false, optional: true, required: false
-  private _excludeBootVolumes?: boolean | cdktf.IResolvable; 
+  private _excludeBootVolumes?: boolean | cdktn.IResolvable; 
   public get excludeBootVolumes() {
     return this.getBooleanAttribute('exclude_boot_volumes');
   }
-  public set excludeBootVolumes(value: boolean | cdktf.IResolvable) {
+  public set excludeBootVolumes(value: boolean | cdktn.IResolvable) {
     this._excludeBootVolumes = value;
   }
   public resetExcludeBootVolumes() {
@@ -985,39 +985,39 @@ export interface DlmLifecyclePolicyPolicyDetailsParameters {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#exclude_boot_volume DlmLifecyclePolicy#exclude_boot_volume}
   */
-  readonly excludeBootVolume?: boolean | cdktf.IResolvable;
+  readonly excludeBootVolume?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#no_reboot DlmLifecyclePolicy#no_reboot}
   */
-  readonly noReboot?: boolean | cdktf.IResolvable;
+  readonly noReboot?: boolean | cdktn.IResolvable;
 }
 
 export function dlmLifecyclePolicyPolicyDetailsParametersToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsParametersOutputReference | DlmLifecyclePolicyPolicyDetailsParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude_boot_volume: cdktf.booleanToTerraform(struct!.excludeBootVolume),
-    no_reboot: cdktf.booleanToTerraform(struct!.noReboot),
+    exclude_boot_volume: cdktn.booleanToTerraform(struct!.excludeBootVolume),
+    no_reboot: cdktn.booleanToTerraform(struct!.noReboot),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsParametersToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsParametersOutputReference | DlmLifecyclePolicyPolicyDetailsParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exclude_boot_volume: {
-      value: cdktf.booleanToHclTerraform(struct!.excludeBootVolume),
+      value: cdktn.booleanToHclTerraform(struct!.excludeBootVolume),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     no_reboot: {
-      value: cdktf.booleanToHclTerraform(struct!.noReboot),
+      value: cdktn.booleanToHclTerraform(struct!.noReboot),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1028,14 +1028,14 @@ export function dlmLifecyclePolicyPolicyDetailsParametersToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsParametersOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1067,11 +1067,11 @@ export class DlmLifecyclePolicyPolicyDetailsParametersOutputReference extends cd
   }
 
   // exclude_boot_volume - computed: false, optional: true, required: false
-  private _excludeBootVolume?: boolean | cdktf.IResolvable; 
+  private _excludeBootVolume?: boolean | cdktn.IResolvable; 
   public get excludeBootVolume() {
     return this.getBooleanAttribute('exclude_boot_volume');
   }
-  public set excludeBootVolume(value: boolean | cdktf.IResolvable) {
+  public set excludeBootVolume(value: boolean | cdktn.IResolvable) {
     this._excludeBootVolume = value;
   }
   public resetExcludeBootVolume() {
@@ -1083,11 +1083,11 @@ export class DlmLifecyclePolicyPolicyDetailsParametersOutputReference extends cd
   }
 
   // no_reboot - computed: false, optional: true, required: false
-  private _noReboot?: boolean | cdktf.IResolvable; 
+  private _noReboot?: boolean | cdktn.IResolvable; 
   public get noReboot() {
     return this.getBooleanAttribute('no_reboot');
   }
-  public set noReboot(value: boolean | cdktf.IResolvable) {
+  public set noReboot(value: boolean | cdktn.IResolvable) {
     this._noReboot = value;
   }
   public resetNoReboot() {
@@ -1114,38 +1114,38 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetain
 }
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTierToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTierOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    interval: cdktf.numberToTerraform(struct!.interval),
-    interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
+    count: cdktn.numberToTerraform(struct!.count),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    interval_unit: cdktn.stringToTerraform(struct!.intervalUnit),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTierToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTierOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval_unit: {
-      value: cdktf.stringToHclTerraform(struct!.intervalUnit),
+      value: cdktn.stringToHclTerraform(struct!.intervalUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1156,14 +1156,14 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTierOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTierOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1258,8 +1258,8 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetain
 }
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1269,8 +1269,8 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainR
 
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1286,14 +1286,14 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1341,8 +1341,8 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule {
 }
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1352,8 +1352,8 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleToTerraform(st
 
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1369,14 +1369,14 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1418,7 +1418,7 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#execute_operation_on_script_failure DlmLifecyclePolicy#execute_operation_on_script_failure}
   */
-  readonly executeOperationOnScriptFailure?: boolean | cdktf.IResolvable;
+  readonly executeOperationOnScriptFailure?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#execution_handler DlmLifecyclePolicy#execution_handler}
   */
@@ -1442,59 +1442,59 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts {
 }
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    execute_operation_on_script_failure: cdktf.booleanToTerraform(struct!.executeOperationOnScriptFailure),
-    execution_handler: cdktf.stringToTerraform(struct!.executionHandler),
-    execution_handler_service: cdktf.stringToTerraform(struct!.executionHandlerService),
-    execution_timeout: cdktf.numberToTerraform(struct!.executionTimeout),
-    maximum_retry_count: cdktf.numberToTerraform(struct!.maximumRetryCount),
-    stages: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.stages),
+    execute_operation_on_script_failure: cdktn.booleanToTerraform(struct!.executeOperationOnScriptFailure),
+    execution_handler: cdktn.stringToTerraform(struct!.executionHandler),
+    execution_handler_service: cdktn.stringToTerraform(struct!.executionHandlerService),
+    execution_timeout: cdktn.numberToTerraform(struct!.executionTimeout),
+    maximum_retry_count: cdktn.numberToTerraform(struct!.maximumRetryCount),
+    stages: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.stages),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     execute_operation_on_script_failure: {
-      value: cdktf.booleanToHclTerraform(struct!.executeOperationOnScriptFailure),
+      value: cdktn.booleanToHclTerraform(struct!.executeOperationOnScriptFailure),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     execution_handler: {
-      value: cdktf.stringToHclTerraform(struct!.executionHandler),
+      value: cdktn.stringToHclTerraform(struct!.executionHandler),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     execution_handler_service: {
-      value: cdktf.stringToHclTerraform(struct!.executionHandlerService),
+      value: cdktn.stringToHclTerraform(struct!.executionHandlerService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     execution_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.executionTimeout),
+      value: cdktn.numberToHclTerraform(struct!.executionTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maximum_retry_count: {
-      value: cdktf.numberToHclTerraform(struct!.maximumRetryCount),
+      value: cdktn.numberToHclTerraform(struct!.maximumRetryCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     stages: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.stages),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.stages),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1505,14 +1505,14 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1568,11 +1568,11 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutputRefer
   }
 
   // execute_operation_on_script_failure - computed: true, optional: true, required: false
-  private _executeOperationOnScriptFailure?: boolean | cdktf.IResolvable; 
+  private _executeOperationOnScriptFailure?: boolean | cdktn.IResolvable; 
   public get executeOperationOnScriptFailure() {
     return this.getBooleanAttribute('execute_operation_on_script_failure');
   }
-  public set executeOperationOnScriptFailure(value: boolean | cdktf.IResolvable) {
+  public set executeOperationOnScriptFailure(value: boolean | cdktn.IResolvable) {
     this._executeOperationOnScriptFailure = value;
   }
   public resetExecuteOperationOnScriptFailure() {
@@ -1690,53 +1690,53 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleCreateRule {
 }
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleCreateRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cron_expression: cdktf.stringToTerraform(struct!.cronExpression),
-    interval: cdktf.numberToTerraform(struct!.interval),
-    interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
-    location: cdktf.stringToTerraform(struct!.location),
-    times: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.times),
+    cron_expression: cdktn.stringToTerraform(struct!.cronExpression),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    interval_unit: cdktn.stringToTerraform(struct!.intervalUnit),
+    location: cdktn.stringToTerraform(struct!.location),
+    times: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.times),
     scripts: dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsToTerraform(struct!.scripts),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleCreateRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cron_expression: {
-      value: cdktf.stringToHclTerraform(struct!.cronExpression),
+      value: cdktn.stringToHclTerraform(struct!.cronExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval_unit: {
-      value: cdktf.stringToHclTerraform(struct!.intervalUnit),
+      value: cdktn.stringToHclTerraform(struct!.intervalUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     times: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.times),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.times),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1753,14 +1753,14 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1923,31 +1923,31 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDepre
 }
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    interval: cdktf.numberToTerraform(struct!.interval),
-    interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    interval_unit: cdktn.stringToTerraform(struct!.intervalUnit),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval_unit: {
-      value: cdktf.stringToHclTerraform(struct!.intervalUnit),
+      value: cdktn.stringToHclTerraform(struct!.intervalUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1958,14 +1958,14 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2034,31 +2034,31 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetai
 }
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    interval: cdktf.numberToTerraform(struct!.interval),
-    interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    interval_unit: cdktn.stringToTerraform(struct!.intervalUnit),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval_unit: {
-      value: cdktf.stringToHclTerraform(struct!.intervalUnit),
+      value: cdktn.stringToHclTerraform(struct!.intervalUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2069,14 +2069,14 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetain
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2141,11 +2141,11 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}
   */
-  readonly copyTags?: boolean | cdktf.IResolvable;
+  readonly copyTags?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#encrypted DlmLifecyclePolicy#encrypted}
   */
-  readonly encrypted: boolean | cdktf.IResolvable;
+  readonly encrypted: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#target DlmLifecyclePolicy#target}
   */
@@ -2168,55 +2168,55 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule {
   readonly retainRule?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule;
 }
 
-export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cmk_arn: cdktf.stringToTerraform(struct!.cmkArn),
-    copy_tags: cdktf.booleanToTerraform(struct!.copyTags),
-    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
-    target: cdktf.stringToTerraform(struct!.target),
-    target_region: cdktf.stringToTerraform(struct!.targetRegion),
+    cmk_arn: cdktn.stringToTerraform(struct!.cmkArn),
+    copy_tags: cdktn.booleanToTerraform(struct!.copyTags),
+    encrypted: cdktn.booleanToTerraform(struct!.encrypted),
+    target: cdktn.stringToTerraform(struct!.target),
+    target_region: cdktn.stringToTerraform(struct!.targetRegion),
     deprecate_rule: dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleToTerraform(struct!.deprecateRule),
     retain_rule: dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleToTerraform(struct!.retainRule),
   }
 }
 
 
-export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cmk_arn: {
-      value: cdktf.stringToHclTerraform(struct!.cmkArn),
+      value: cdktn.stringToHclTerraform(struct!.cmkArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     copy_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.copyTags),
+      value: cdktn.booleanToHclTerraform(struct!.copyTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encrypted: {
-      value: cdktf.booleanToHclTerraform(struct!.encrypted),
+      value: cdktn.booleanToHclTerraform(struct!.encrypted),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_region: {
-      value: cdktf.stringToHclTerraform(struct!.targetRegion),
+      value: cdktn.stringToHclTerraform(struct!.targetRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2239,9 +2239,9 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2249,11 +2249,11 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule | cdktf.IResolvable | undefined {
+  public get internalValue(): DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2290,7 +2290,7 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2302,7 +2302,7 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputRef
       this._deprecateRule.internalValue = undefined;
       this._retainRule.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2336,11 +2336,11 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputRef
   }
 
   // copy_tags - computed: true, optional: true, required: false
-  private _copyTags?: boolean | cdktf.IResolvable; 
+  private _copyTags?: boolean | cdktn.IResolvable; 
   public get copyTags() {
     return this.getBooleanAttribute('copy_tags');
   }
-  public set copyTags(value: boolean | cdktf.IResolvable) {
+  public set copyTags(value: boolean | cdktn.IResolvable) {
     this._copyTags = value;
   }
   public resetCopyTags() {
@@ -2352,11 +2352,11 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputRef
   }
 
   // encrypted - computed: false, optional: false, required: true
-  private _encrypted?: boolean | cdktf.IResolvable; 
+  private _encrypted?: boolean | cdktn.IResolvable; 
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
-  public set encrypted(value: boolean | cdktf.IResolvable) {
+  public set encrypted(value: boolean | cdktn.IResolvable) {
     this._encrypted = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2429,15 +2429,15 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputRef
   }
 }
 
-export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleList extends cdktf.ComplexList {
-  public internalValue? : DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule[] | cdktf.IResolvable
+export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleList extends cdktn.ComplexList {
+  public internalValue? : DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2464,38 +2464,38 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule {
 }
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    interval: cdktf.numberToTerraform(struct!.interval),
-    interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
+    count: cdktn.numberToTerraform(struct!.count),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    interval_unit: cdktn.stringToTerraform(struct!.intervalUnit),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval_unit: {
-      value: cdktf.stringToHclTerraform(struct!.intervalUnit),
+      value: cdktn.stringToHclTerraform(struct!.intervalUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2506,14 +2506,14 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2618,45 +2618,45 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule {
 }
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.availabilityZones),
-    count: cdktf.numberToTerraform(struct!.count),
-    interval: cdktf.numberToTerraform(struct!.interval),
-    interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
+    availability_zones: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.availabilityZones),
+    count: cdktn.numberToTerraform(struct!.count),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    interval_unit: cdktn.stringToTerraform(struct!.intervalUnit),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability_zones: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.availabilityZones),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.availabilityZones),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval_unit: {
-      value: cdktf.stringToHclTerraform(struct!.intervalUnit),
+      value: cdktn.stringToHclTerraform(struct!.intervalUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2667,14 +2667,14 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2720,7 +2720,7 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReferen
   // availability_zones - computed: false, optional: false, required: true
   private _availabilityZones?: string[]; 
   public get availabilityZones() {
-    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('availability_zones'));
   }
   public set availabilityZones(value: string[]) {
     this._availabilityZones = value;
@@ -2794,38 +2794,38 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleRetainRule {
 }
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleRetainRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleRetainRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleRetainRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    interval: cdktf.numberToTerraform(struct!.interval),
-    interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
+    count: cdktn.numberToTerraform(struct!.count),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    interval_unit: cdktn.stringToTerraform(struct!.intervalUnit),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleRetainRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleRetainRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleRetainRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval_unit: {
-      value: cdktf.stringToHclTerraform(struct!.intervalUnit),
+      value: cdktn.stringToHclTerraform(struct!.intervalUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2836,14 +2836,14 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleRetainRuleToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsScheduleRetainRuleOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsScheduleRetainRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2944,38 +2944,38 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleShareRule {
 }
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleShareRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleShareRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetAccounts),
-    unshare_interval: cdktf.numberToTerraform(struct!.unshareInterval),
-    unshare_interval_unit: cdktf.stringToTerraform(struct!.unshareIntervalUnit),
+    target_accounts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.targetAccounts),
+    unshare_interval: cdktn.numberToTerraform(struct!.unshareInterval),
+    unshare_interval_unit: cdktn.stringToTerraform(struct!.unshareIntervalUnit),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsScheduleShareRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleShareRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     target_accounts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.targetAccounts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.targetAccounts),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     unshare_interval: {
-      value: cdktf.numberToHclTerraform(struct!.unshareInterval),
+      value: cdktn.numberToHclTerraform(struct!.unshareInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     unshare_interval_unit: {
-      value: cdktf.stringToHclTerraform(struct!.unshareIntervalUnit),
+      value: cdktn.stringToHclTerraform(struct!.unshareIntervalUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2986,14 +2986,14 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleShareRuleToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3033,7 +3033,7 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference ext
   // target_accounts - computed: false, optional: false, required: true
   private _targetAccounts?: string[]; 
   public get targetAccounts() {
-    return cdktf.Fn.tolist(this.getListAttribute('target_accounts'));
+    return cdktn.Fn.tolist(this.getListAttribute('target_accounts'));
   }
   public set targetAccounts(value: string[]) {
     this._targetAccounts = value;
@@ -3079,7 +3079,7 @@ export interface DlmLifecyclePolicyPolicyDetailsSchedule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}
   */
-  readonly copyTags?: boolean | cdktf.IResolvable;
+  readonly copyTags?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#name DlmLifecyclePolicy#name}
   */
@@ -3109,7 +3109,7 @@ export interface DlmLifecyclePolicyPolicyDetailsSchedule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#cross_region_copy_rule DlmLifecyclePolicy#cross_region_copy_rule}
   */
-  readonly crossRegionCopyRule?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule[] | cdktf.IResolvable;
+  readonly crossRegionCopyRule?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule[] | cdktn.IResolvable;
   /**
   * deprecate_rule block
   *
@@ -3136,19 +3136,19 @@ export interface DlmLifecyclePolicyPolicyDetailsSchedule {
   readonly shareRule?: DlmLifecyclePolicyPolicyDetailsScheduleShareRule;
 }
 
-export function dlmLifecyclePolicyPolicyDetailsScheduleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dlmLifecyclePolicyPolicyDetailsScheduleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    copy_tags: cdktf.booleanToTerraform(struct!.copyTags),
-    name: cdktf.stringToTerraform(struct!.name),
-    tags_to_add: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tagsToAdd),
-    variable_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.variableTags),
+    copy_tags: cdktn.booleanToTerraform(struct!.copyTags),
+    name: cdktn.stringToTerraform(struct!.name),
+    tags_to_add: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tagsToAdd),
+    variable_tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.variableTags),
     archive_rule: dlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleToTerraform(struct!.archiveRule),
     create_rule: dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleToTerraform(struct!.createRule),
-    cross_region_copy_rule: cdktf.listMapper(dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToTerraform, true)(struct!.crossRegionCopyRule),
+    cross_region_copy_rule: cdktn.listMapper(dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToTerraform, true)(struct!.crossRegionCopyRule),
     deprecate_rule: dlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleToTerraform(struct!.deprecateRule),
     fast_restore_rule: dlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleToTerraform(struct!.fastRestoreRule),
     retain_rule: dlmLifecyclePolicyPolicyDetailsScheduleRetainRuleToTerraform(struct!.retainRule),
@@ -3157,32 +3157,32 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleToTerraform(struct?: DlmL
 }
 
 
-export function dlmLifecyclePolicyPolicyDetailsScheduleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dlmLifecyclePolicyPolicyDetailsScheduleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     copy_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.copyTags),
+      value: cdktn.booleanToHclTerraform(struct!.copyTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags_to_add: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tagsToAdd),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tagsToAdd),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     variable_tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.variableTags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.variableTags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -3200,7 +3200,7 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleToHclTerraform(struct?: D
       storageClassType: "DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleList",
     },
     cross_region_copy_rule: {
-      value: cdktf.listMapperHcl(dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToHclTerraform, true)(struct!.crossRegionCopyRule),
+      value: cdktn.listMapperHcl(dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToHclTerraform, true)(struct!.crossRegionCopyRule),
       isBlock: true,
       type: "set",
       storageClassType: "DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleList",
@@ -3235,9 +3235,9 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsScheduleOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3245,11 +3245,11 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DlmLifecyclePolicyPolicyDetailsSchedule | cdktf.IResolvable | undefined {
+  public get internalValue(): DlmLifecyclePolicyPolicyDetailsSchedule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3302,7 +3302,7 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DlmLifecyclePolicyPolicyDetailsSchedule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DlmLifecyclePolicyPolicyDetailsSchedule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3318,7 +3318,7 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleOutputReference extends cdkt
       this._retainRule.internalValue = undefined;
       this._shareRule.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3340,11 +3340,11 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleOutputReference extends cdkt
   }
 
   // copy_tags - computed: true, optional: true, required: false
-  private _copyTags?: boolean | cdktf.IResolvable; 
+  private _copyTags?: boolean | cdktn.IResolvable; 
   public get copyTags() {
     return this.getBooleanAttribute('copy_tags');
   }
-  public set copyTags(value: boolean | cdktf.IResolvable) {
+  public set copyTags(value: boolean | cdktn.IResolvable) {
     this._copyTags = value;
   }
   public resetCopyTags() {
@@ -3434,7 +3434,7 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleOutputReference extends cdkt
   public get crossRegionCopyRule() {
     return this._crossRegionCopyRule;
   }
-  public putCrossRegionCopyRule(value: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule[] | cdktf.IResolvable) {
+  public putCrossRegionCopyRule(value: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule[] | cdktn.IResolvable) {
     this._crossRegionCopyRule.internalValue = value;
   }
   public resetCrossRegionCopyRule() {
@@ -3507,15 +3507,15 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleOutputReference extends cdkt
   }
 }
 
-export class DlmLifecyclePolicyPolicyDetailsScheduleList extends cdktf.ComplexList {
-  public internalValue? : DlmLifecyclePolicyPolicyDetailsSchedule[] | cdktf.IResolvable
+export class DlmLifecyclePolicyPolicyDetailsScheduleList extends cdktn.ComplexList {
+  public internalValue? : DlmLifecyclePolicyPolicyDetailsSchedule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3530,7 +3530,7 @@ export interface DlmLifecyclePolicyPolicyDetails {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}
   */
-  readonly copyTags?: boolean | cdktf.IResolvable;
+  readonly copyTags?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#create_interval DlmLifecyclePolicy#create_interval}
   */
@@ -3538,7 +3538,7 @@ export interface DlmLifecyclePolicyPolicyDetails {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#extend_deletion DlmLifecyclePolicy#extend_deletion}
   */
-  readonly extendDeletion?: boolean | cdktf.IResolvable;
+  readonly extendDeletion?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#policy_language DlmLifecyclePolicy#policy_language}
   */
@@ -3596,96 +3596,96 @@ export interface DlmLifecyclePolicyPolicyDetails {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#schedule DlmLifecyclePolicy#schedule}
   */
-  readonly schedule?: DlmLifecyclePolicyPolicyDetailsSchedule[] | cdktf.IResolvable;
+  readonly schedule?: DlmLifecyclePolicyPolicyDetailsSchedule[] | cdktn.IResolvable;
 }
 
 export function dlmLifecyclePolicyPolicyDetailsToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsOutputReference | DlmLifecyclePolicyPolicyDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    copy_tags: cdktf.booleanToTerraform(struct!.copyTags),
-    create_interval: cdktf.numberToTerraform(struct!.createInterval),
-    extend_deletion: cdktf.booleanToTerraform(struct!.extendDeletion),
-    policy_language: cdktf.stringToTerraform(struct!.policyLanguage),
-    policy_type: cdktf.stringToTerraform(struct!.policyType),
-    resource_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceLocations),
-    resource_type: cdktf.stringToTerraform(struct!.resourceType),
-    resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
-    retain_interval: cdktf.numberToTerraform(struct!.retainInterval),
-    target_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.targetTags),
+    copy_tags: cdktn.booleanToTerraform(struct!.copyTags),
+    create_interval: cdktn.numberToTerraform(struct!.createInterval),
+    extend_deletion: cdktn.booleanToTerraform(struct!.extendDeletion),
+    policy_language: cdktn.stringToTerraform(struct!.policyLanguage),
+    policy_type: cdktn.stringToTerraform(struct!.policyType),
+    resource_locations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceLocations),
+    resource_type: cdktn.stringToTerraform(struct!.resourceType),
+    resource_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceTypes),
+    retain_interval: cdktn.numberToTerraform(struct!.retainInterval),
+    target_tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.targetTags),
     action: dlmLifecyclePolicyPolicyDetailsActionToTerraform(struct!.action),
     event_source: dlmLifecyclePolicyPolicyDetailsEventSourceToTerraform(struct!.eventSource),
     exclusions: dlmLifecyclePolicyPolicyDetailsExclusionsToTerraform(struct!.exclusions),
     parameters: dlmLifecyclePolicyPolicyDetailsParametersToTerraform(struct!.parameters),
-    schedule: cdktf.listMapper(dlmLifecyclePolicyPolicyDetailsScheduleToTerraform, true)(struct!.schedule),
+    schedule: cdktn.listMapper(dlmLifecyclePolicyPolicyDetailsScheduleToTerraform, true)(struct!.schedule),
   }
 }
 
 
 export function dlmLifecyclePolicyPolicyDetailsToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsOutputReference | DlmLifecyclePolicyPolicyDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     copy_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.copyTags),
+      value: cdktn.booleanToHclTerraform(struct!.copyTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     create_interval: {
-      value: cdktf.numberToHclTerraform(struct!.createInterval),
+      value: cdktn.numberToHclTerraform(struct!.createInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     extend_deletion: {
-      value: cdktf.booleanToHclTerraform(struct!.extendDeletion),
+      value: cdktn.booleanToHclTerraform(struct!.extendDeletion),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     policy_language: {
-      value: cdktf.stringToHclTerraform(struct!.policyLanguage),
+      value: cdktn.stringToHclTerraform(struct!.policyLanguage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     policy_type: {
-      value: cdktf.stringToHclTerraform(struct!.policyType),
+      value: cdktn.stringToHclTerraform(struct!.policyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_locations: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceLocations),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceLocations),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     resource_type: {
-      value: cdktf.stringToHclTerraform(struct!.resourceType),
+      value: cdktn.stringToHclTerraform(struct!.resourceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     retain_interval: {
-      value: cdktf.numberToHclTerraform(struct!.retainInterval),
+      value: cdktn.numberToHclTerraform(struct!.retainInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     target_tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.targetTags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.targetTags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -3715,7 +3715,7 @@ export function dlmLifecyclePolicyPolicyDetailsToHclTerraform(struct?: DlmLifecy
       storageClassType: "DlmLifecyclePolicyPolicyDetailsParametersList",
     },
     schedule: {
-      value: cdktf.listMapperHcl(dlmLifecyclePolicyPolicyDetailsScheduleToHclTerraform, true)(struct!.schedule),
+      value: cdktn.listMapperHcl(dlmLifecyclePolicyPolicyDetailsScheduleToHclTerraform, true)(struct!.schedule),
       isBlock: true,
       type: "list",
       storageClassType: "DlmLifecyclePolicyPolicyDetailsScheduleList",
@@ -3726,14 +3726,14 @@ export function dlmLifecyclePolicyPolicyDetailsToHclTerraform(struct?: DlmLifecy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DlmLifecyclePolicyPolicyDetailsOutputReference extends cdktf.ComplexObject {
+export class DlmLifecyclePolicyPolicyDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3843,11 +3843,11 @@ export class DlmLifecyclePolicyPolicyDetailsOutputReference extends cdktf.Comple
   }
 
   // copy_tags - computed: false, optional: true, required: false
-  private _copyTags?: boolean | cdktf.IResolvable; 
+  private _copyTags?: boolean | cdktn.IResolvable; 
   public get copyTags() {
     return this.getBooleanAttribute('copy_tags');
   }
-  public set copyTags(value: boolean | cdktf.IResolvable) {
+  public set copyTags(value: boolean | cdktn.IResolvable) {
     this._copyTags = value;
   }
   public resetCopyTags() {
@@ -3875,11 +3875,11 @@ export class DlmLifecyclePolicyPolicyDetailsOutputReference extends cdktf.Comple
   }
 
   // extend_deletion - computed: false, optional: true, required: false
-  private _extendDeletion?: boolean | cdktf.IResolvable; 
+  private _extendDeletion?: boolean | cdktn.IResolvable; 
   public get extendDeletion() {
     return this.getBooleanAttribute('extend_deletion');
   }
-  public set extendDeletion(value: boolean | cdktf.IResolvable) {
+  public set extendDeletion(value: boolean | cdktn.IResolvable) {
     this._extendDeletion = value;
   }
   public resetExtendDeletion() {
@@ -4071,7 +4071,7 @@ export class DlmLifecyclePolicyPolicyDetailsOutputReference extends cdktf.Comple
   public get schedule() {
     return this._schedule;
   }
-  public putSchedule(value: DlmLifecyclePolicyPolicyDetailsSchedule[] | cdktf.IResolvable) {
+  public putSchedule(value: DlmLifecyclePolicyPolicyDetailsSchedule[] | cdktn.IResolvable) {
     this._schedule.internalValue = value;
   }
   public resetSchedule() {
@@ -4086,7 +4086,7 @@ export class DlmLifecyclePolicyPolicyDetailsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy}
 */
-export class DlmLifecyclePolicy extends cdktf.TerraformResource {
+export class DlmLifecyclePolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -4097,14 +4097,14 @@ export class DlmLifecyclePolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DlmLifecyclePolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DlmLifecyclePolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DlmLifecyclePolicy to import
   * @param importFromId The id of the existing DlmLifecyclePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dlm_lifecycle_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DlmLifecyclePolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dlm_lifecycle_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dlm_lifecycle_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -4295,14 +4295,14 @@ export class DlmLifecyclePolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_policy: cdktf.stringToTerraform(this._defaultPolicy),
-      description: cdktf.stringToTerraform(this._description),
-      execution_role_arn: cdktf.stringToTerraform(this._executionRoleArn),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      state: cdktf.stringToTerraform(this._state),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      default_policy: cdktn.stringToTerraform(this._defaultPolicy),
+      description: cdktn.stringToTerraform(this._description),
+      execution_role_arn: cdktn.stringToTerraform(this._executionRoleArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      state: cdktn.stringToTerraform(this._state),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       policy_details: dlmLifecyclePolicyPolicyDetailsToTerraform(this._policyDetails.internalValue),
     };
   }
@@ -4310,49 +4310,49 @@ export class DlmLifecyclePolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       default_policy: {
-        value: cdktf.stringToHclTerraform(this._defaultPolicy),
+        value: cdktn.stringToHclTerraform(this._defaultPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       execution_role_arn: {
-        value: cdktf.stringToHclTerraform(this._executionRoleArn),
+        value: cdktn.stringToHclTerraform(this._executionRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       state: {
-        value: cdktf.stringToHclTerraform(this._state),
+        value: cdktn.stringToHclTerraform(this._state),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

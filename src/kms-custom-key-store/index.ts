@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KmsCustomKeyStoreConfig extends cdktf.TerraformMetaArguments {
+export interface KmsCustomKeyStoreConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_custom_key_store#cloud_hsm_cluster_id KmsCustomKeyStore#cloud_hsm_cluster_id}
   */
@@ -89,39 +89,39 @@ export interface KmsCustomKeyStoreTimeouts {
   readonly update?: string;
 }
 
-export function kmsCustomKeyStoreTimeoutsToTerraform(struct?: KmsCustomKeyStoreTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kmsCustomKeyStoreTimeoutsToTerraform(struct?: KmsCustomKeyStoreTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function kmsCustomKeyStoreTimeoutsToHclTerraform(struct?: KmsCustomKeyStoreTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kmsCustomKeyStoreTimeoutsToHclTerraform(struct?: KmsCustomKeyStoreTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -132,19 +132,19 @@ export function kmsCustomKeyStoreTimeoutsToHclTerraform(struct?: KmsCustomKeySto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KmsCustomKeyStoreTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KmsCustomKeyStoreTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KmsCustomKeyStoreTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KmsCustomKeyStoreTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -165,7 +165,7 @@ export class KmsCustomKeyStoreTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KmsCustomKeyStoreTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KmsCustomKeyStoreTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class KmsCustomKeyStoreTimeoutsOutputReference extends cdktf.ComplexObjec
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -246,31 +246,31 @@ export interface KmsCustomKeyStoreXksProxyAuthenticationCredential {
 }
 
 export function kmsCustomKeyStoreXksProxyAuthenticationCredentialToTerraform(struct?: KmsCustomKeyStoreXksProxyAuthenticationCredentialOutputReference | KmsCustomKeyStoreXksProxyAuthenticationCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_key_id: cdktf.stringToTerraform(struct!.accessKeyId),
-    raw_secret_access_key: cdktf.stringToTerraform(struct!.rawSecretAccessKey),
+    access_key_id: cdktn.stringToTerraform(struct!.accessKeyId),
+    raw_secret_access_key: cdktn.stringToTerraform(struct!.rawSecretAccessKey),
   }
 }
 
 
 export function kmsCustomKeyStoreXksProxyAuthenticationCredentialToHclTerraform(struct?: KmsCustomKeyStoreXksProxyAuthenticationCredentialOutputReference | KmsCustomKeyStoreXksProxyAuthenticationCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.accessKeyId),
+      value: cdktn.stringToHclTerraform(struct!.accessKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     raw_secret_access_key: {
-      value: cdktf.stringToHclTerraform(struct!.rawSecretAccessKey),
+      value: cdktn.stringToHclTerraform(struct!.rawSecretAccessKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -281,14 +281,14 @@ export function kmsCustomKeyStoreXksProxyAuthenticationCredentialToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KmsCustomKeyStoreXksProxyAuthenticationCredentialOutputReference extends cdktf.ComplexObject {
+export class KmsCustomKeyStoreXksProxyAuthenticationCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -349,7 +349,7 @@ export class KmsCustomKeyStoreXksProxyAuthenticationCredentialOutputReference ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_custom_key_store aws_kms_custom_key_store}
 */
-export class KmsCustomKeyStore extends cdktf.TerraformResource {
+export class KmsCustomKeyStore extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -360,14 +360,14 @@ export class KmsCustomKeyStore extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KmsCustomKeyStore resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KmsCustomKeyStore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmsCustomKeyStore to import
   * @param importFromId The id of the existing KmsCustomKeyStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_custom_key_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmsCustomKeyStore to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_kms_custom_key_store", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_kms_custom_key_store", importId: importFromId, provider });
       }
 
   // ===========
@@ -627,17 +627,17 @@ export class KmsCustomKeyStore extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cloud_hsm_cluster_id: cdktf.stringToTerraform(this._cloudHsmClusterId),
-      custom_key_store_name: cdktf.stringToTerraform(this._customKeyStoreName),
-      custom_key_store_type: cdktf.stringToTerraform(this._customKeyStoreType),
-      id: cdktf.stringToTerraform(this._id),
-      key_store_password: cdktf.stringToTerraform(this._keyStorePassword),
-      region: cdktf.stringToTerraform(this._region),
-      trust_anchor_certificate: cdktf.stringToTerraform(this._trustAnchorCertificate),
-      xks_proxy_connectivity: cdktf.stringToTerraform(this._xksProxyConnectivity),
-      xks_proxy_uri_endpoint: cdktf.stringToTerraform(this._xksProxyUriEndpoint),
-      xks_proxy_uri_path: cdktf.stringToTerraform(this._xksProxyUriPath),
-      xks_proxy_vpc_endpoint_service_name: cdktf.stringToTerraform(this._xksProxyVpcEndpointServiceName),
+      cloud_hsm_cluster_id: cdktn.stringToTerraform(this._cloudHsmClusterId),
+      custom_key_store_name: cdktn.stringToTerraform(this._customKeyStoreName),
+      custom_key_store_type: cdktn.stringToTerraform(this._customKeyStoreType),
+      id: cdktn.stringToTerraform(this._id),
+      key_store_password: cdktn.stringToTerraform(this._keyStorePassword),
+      region: cdktn.stringToTerraform(this._region),
+      trust_anchor_certificate: cdktn.stringToTerraform(this._trustAnchorCertificate),
+      xks_proxy_connectivity: cdktn.stringToTerraform(this._xksProxyConnectivity),
+      xks_proxy_uri_endpoint: cdktn.stringToTerraform(this._xksProxyUriEndpoint),
+      xks_proxy_uri_path: cdktn.stringToTerraform(this._xksProxyUriPath),
+      xks_proxy_vpc_endpoint_service_name: cdktn.stringToTerraform(this._xksProxyVpcEndpointServiceName),
       timeouts: kmsCustomKeyStoreTimeoutsToTerraform(this._timeouts.internalValue),
       xks_proxy_authentication_credential: kmsCustomKeyStoreXksProxyAuthenticationCredentialToTerraform(this._xksProxyAuthenticationCredential.internalValue),
     };
@@ -646,67 +646,67 @@ export class KmsCustomKeyStore extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cloud_hsm_cluster_id: {
-        value: cdktf.stringToHclTerraform(this._cloudHsmClusterId),
+        value: cdktn.stringToHclTerraform(this._cloudHsmClusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_key_store_name: {
-        value: cdktf.stringToHclTerraform(this._customKeyStoreName),
+        value: cdktn.stringToHclTerraform(this._customKeyStoreName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_key_store_type: {
-        value: cdktf.stringToHclTerraform(this._customKeyStoreType),
+        value: cdktn.stringToHclTerraform(this._customKeyStoreType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_store_password: {
-        value: cdktf.stringToHclTerraform(this._keyStorePassword),
+        value: cdktn.stringToHclTerraform(this._keyStorePassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trust_anchor_certificate: {
-        value: cdktf.stringToHclTerraform(this._trustAnchorCertificate),
+        value: cdktn.stringToHclTerraform(this._trustAnchorCertificate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       xks_proxy_connectivity: {
-        value: cdktf.stringToHclTerraform(this._xksProxyConnectivity),
+        value: cdktn.stringToHclTerraform(this._xksProxyConnectivity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       xks_proxy_uri_endpoint: {
-        value: cdktf.stringToHclTerraform(this._xksProxyUriEndpoint),
+        value: cdktn.stringToHclTerraform(this._xksProxyUriEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       xks_proxy_uri_path: {
-        value: cdktf.stringToHclTerraform(this._xksProxyUriPath),
+        value: cdktn.stringToHclTerraform(this._xksProxyUriPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       xks_proxy_vpc_endpoint_service_name: {
-        value: cdktf.stringToHclTerraform(this._xksProxyVpcEndpointServiceName),
+        value: cdktn.stringToHclTerraform(this._xksProxyVpcEndpointServiceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

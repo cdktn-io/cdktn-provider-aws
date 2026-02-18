@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudfrontPublicKeyConfig extends cdktf.TerraformMetaArguments {
+export interface CloudfrontPublicKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_public_key#comment CloudfrontPublicKey#comment}
   */
@@ -40,7 +40,7 @@ export interface CloudfrontPublicKeyConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_public_key aws_cloudfront_public_key}
 */
-export class CloudfrontPublicKey extends cdktf.TerraformResource {
+export class CloudfrontPublicKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -51,14 +51,14 @@ export class CloudfrontPublicKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudfrontPublicKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudfrontPublicKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudfrontPublicKey to import
   * @param importFromId The id of the existing CloudfrontPublicKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_public_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudfrontPublicKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_public_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_public_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -192,42 +192,42 @@ export class CloudfrontPublicKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      encoded_key: cdktf.stringToTerraform(this._encodedKey),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      comment: cdktn.stringToTerraform(this._comment),
+      encoded_key: cdktn.stringToTerraform(this._encodedKey),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encoded_key: {
-        value: cdktf.stringToHclTerraform(this._encodedKey),
+        value: cdktn.stringToHclTerraform(this._encodedKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

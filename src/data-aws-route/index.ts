@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsRouteConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRouteConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route#carrier_gateway_id DataAwsRoute#carrier_gateway_id}
   */
@@ -95,25 +95,25 @@ export interface DataAwsRouteTimeouts {
   readonly read?: string;
 }
 
-export function dataAwsRouteTimeoutsToTerraform(struct?: DataAwsRouteTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRouteTimeoutsToTerraform(struct?: DataAwsRouteTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAwsRouteTimeoutsToHclTerraform(struct?: DataAwsRouteTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRouteTimeoutsToHclTerraform(struct?: DataAwsRouteTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -124,19 +124,19 @@ export function dataAwsRouteTimeoutsToHclTerraform(struct?: DataAwsRouteTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsRouteTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAwsRouteTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAwsRouteTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsRouteTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -149,13 +149,13 @@ export class DataAwsRouteTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsRouteTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsRouteTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -186,7 +186,7 @@ export class DataAwsRouteTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route aws_route}
 */
-export class DataAwsRoute extends cdktf.TerraformDataSource {
+export class DataAwsRoute extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -197,14 +197,14 @@ export class DataAwsRoute extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsRoute resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsRoute resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRoute to import
   * @param importFromId The id of the existing DataAwsRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRoute to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route", importId: importFromId, provider });
       }
 
   // ===========
@@ -532,22 +532,22 @@ export class DataAwsRoute extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      carrier_gateway_id: cdktf.stringToTerraform(this._carrierGatewayId),
-      core_network_arn: cdktf.stringToTerraform(this._coreNetworkArn),
-      destination_cidr_block: cdktf.stringToTerraform(this._destinationCidrBlock),
-      destination_ipv6_cidr_block: cdktf.stringToTerraform(this._destinationIpv6CidrBlock),
-      destination_prefix_list_id: cdktf.stringToTerraform(this._destinationPrefixListId),
-      egress_only_gateway_id: cdktf.stringToTerraform(this._egressOnlyGatewayId),
-      gateway_id: cdktf.stringToTerraform(this._gatewayId),
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      local_gateway_id: cdktf.stringToTerraform(this._localGatewayId),
-      nat_gateway_id: cdktf.stringToTerraform(this._natGatewayId),
-      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
-      region: cdktf.stringToTerraform(this._region),
-      route_table_id: cdktf.stringToTerraform(this._routeTableId),
-      transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
-      vpc_peering_connection_id: cdktf.stringToTerraform(this._vpcPeeringConnectionId),
+      carrier_gateway_id: cdktn.stringToTerraform(this._carrierGatewayId),
+      core_network_arn: cdktn.stringToTerraform(this._coreNetworkArn),
+      destination_cidr_block: cdktn.stringToTerraform(this._destinationCidrBlock),
+      destination_ipv6_cidr_block: cdktn.stringToTerraform(this._destinationIpv6CidrBlock),
+      destination_prefix_list_id: cdktn.stringToTerraform(this._destinationPrefixListId),
+      egress_only_gateway_id: cdktn.stringToTerraform(this._egressOnlyGatewayId),
+      gateway_id: cdktn.stringToTerraform(this._gatewayId),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      local_gateway_id: cdktn.stringToTerraform(this._localGatewayId),
+      nat_gateway_id: cdktn.stringToTerraform(this._natGatewayId),
+      network_interface_id: cdktn.stringToTerraform(this._networkInterfaceId),
+      region: cdktn.stringToTerraform(this._region),
+      route_table_id: cdktn.stringToTerraform(this._routeTableId),
+      transit_gateway_id: cdktn.stringToTerraform(this._transitGatewayId),
+      vpc_peering_connection_id: cdktn.stringToTerraform(this._vpcPeeringConnectionId),
       timeouts: dataAwsRouteTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -555,97 +555,97 @@ export class DataAwsRoute extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       carrier_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._carrierGatewayId),
+        value: cdktn.stringToHclTerraform(this._carrierGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       core_network_arn: {
-        value: cdktf.stringToHclTerraform(this._coreNetworkArn),
+        value: cdktn.stringToHclTerraform(this._coreNetworkArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_cidr_block: {
-        value: cdktf.stringToHclTerraform(this._destinationCidrBlock),
+        value: cdktn.stringToHclTerraform(this._destinationCidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_ipv6_cidr_block: {
-        value: cdktf.stringToHclTerraform(this._destinationIpv6CidrBlock),
+        value: cdktn.stringToHclTerraform(this._destinationIpv6CidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_prefix_list_id: {
-        value: cdktf.stringToHclTerraform(this._destinationPrefixListId),
+        value: cdktn.stringToHclTerraform(this._destinationPrefixListId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       egress_only_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._egressOnlyGatewayId),
+        value: cdktn.stringToHclTerraform(this._egressOnlyGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_id: {
-        value: cdktf.stringToHclTerraform(this._gatewayId),
+        value: cdktn.stringToHclTerraform(this._gatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._localGatewayId),
+        value: cdktn.stringToHclTerraform(this._localGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       nat_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._natGatewayId),
+        value: cdktn.stringToHclTerraform(this._natGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_interface_id: {
-        value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        value: cdktn.stringToHclTerraform(this._networkInterfaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       route_table_id: {
-        value: cdktf.stringToHclTerraform(this._routeTableId),
+        value: cdktn.stringToHclTerraform(this._routeTableId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transit_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._transitGatewayId),
+        value: cdktn.stringToHclTerraform(this._transitGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_peering_connection_id: {
-        value: cdktf.stringToHclTerraform(this._vpcPeeringConnectionId),
+        value: cdktn.stringToHclTerraform(this._vpcPeeringConnectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

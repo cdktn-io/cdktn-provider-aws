@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SagemakerLabelingJobConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerLabelingJobConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#label_attribute_name SagemakerLabelingJob#label_attribute_name}
   */
@@ -37,7 +37,7 @@ export interface SagemakerLabelingJobConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#stopping_conditions SagemakerLabelingJob#stopping_conditions}
   */
-  readonly stoppingConditions?: SagemakerLabelingJobStoppingConditions[] | cdktf.IResolvable;
+  readonly stoppingConditions?: SagemakerLabelingJobStoppingConditions[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#tags SagemakerLabelingJob#tags}
   */
@@ -47,32 +47,32 @@ export interface SagemakerLabelingJobConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#human_task_config SagemakerLabelingJob#human_task_config}
   */
-  readonly humanTaskConfig?: SagemakerLabelingJobHumanTaskConfig[] | cdktf.IResolvable;
+  readonly humanTaskConfig?: SagemakerLabelingJobHumanTaskConfig[] | cdktn.IResolvable;
   /**
   * input_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#input_config SagemakerLabelingJob#input_config}
   */
-  readonly inputConfig?: SagemakerLabelingJobInputConfig[] | cdktf.IResolvable;
+  readonly inputConfig?: SagemakerLabelingJobInputConfig[] | cdktn.IResolvable;
   /**
   * labeling_job_algorithms_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#labeling_job_algorithms_config SagemakerLabelingJob#labeling_job_algorithms_config}
   */
-  readonly labelingJobAlgorithmsConfig?: SagemakerLabelingJobLabelingJobAlgorithmsConfig[] | cdktf.IResolvable;
+  readonly labelingJobAlgorithmsConfig?: SagemakerLabelingJobLabelingJobAlgorithmsConfig[] | cdktn.IResolvable;
   /**
   * output_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#output_config SagemakerLabelingJob#output_config}
   */
-  readonly outputConfig?: SagemakerLabelingJobOutputConfig[] | cdktf.IResolvable;
+  readonly outputConfig?: SagemakerLabelingJobOutputConfig[] | cdktn.IResolvable;
 }
 export interface SagemakerLabelingJobLabelCounters {
 }
 
 export function sagemakerLabelingJobLabelCountersToTerraform(struct?: SagemakerLabelingJobLabelCounters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -81,8 +81,8 @@ export function sagemakerLabelingJobLabelCountersToTerraform(struct?: SagemakerL
 
 
 export function sagemakerLabelingJobLabelCountersToHclTerraform(struct?: SagemakerLabelingJobLabelCounters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -90,7 +90,7 @@ export function sagemakerLabelingJobLabelCountersToHclTerraform(struct?: Sagemak
   return attrs;
 }
 
-export class SagemakerLabelingJobLabelCountersOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobLabelCountersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -99,7 +99,7 @@ export class SagemakerLabelingJobLabelCountersOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -144,14 +144,14 @@ export class SagemakerLabelingJobLabelCountersOutputReference extends cdktf.Comp
   }
 }
 
-export class SagemakerLabelingJobLabelCountersList extends cdktf.ComplexList {
+export class SagemakerLabelingJobLabelCountersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -173,32 +173,32 @@ export interface SagemakerLabelingJobStoppingConditions {
   readonly maxPercentageOfInputDatasetLabeled?: number;
 }
 
-export function sagemakerLabelingJobStoppingConditionsToTerraform(struct?: SagemakerLabelingJobStoppingConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobStoppingConditionsToTerraform(struct?: SagemakerLabelingJobStoppingConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_human_labeled_object_count: cdktf.numberToTerraform(struct!.maxHumanLabeledObjectCount),
-    max_percentage_of_input_dataset_labeled: cdktf.numberToTerraform(struct!.maxPercentageOfInputDatasetLabeled),
+    max_human_labeled_object_count: cdktn.numberToTerraform(struct!.maxHumanLabeledObjectCount),
+    max_percentage_of_input_dataset_labeled: cdktn.numberToTerraform(struct!.maxPercentageOfInputDatasetLabeled),
   }
 }
 
 
-export function sagemakerLabelingJobStoppingConditionsToHclTerraform(struct?: SagemakerLabelingJobStoppingConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobStoppingConditionsToHclTerraform(struct?: SagemakerLabelingJobStoppingConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_human_labeled_object_count: {
-      value: cdktf.numberToHclTerraform(struct!.maxHumanLabeledObjectCount),
+      value: cdktn.numberToHclTerraform(struct!.maxHumanLabeledObjectCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_percentage_of_input_dataset_labeled: {
-      value: cdktf.numberToHclTerraform(struct!.maxPercentageOfInputDatasetLabeled),
+      value: cdktn.numberToHclTerraform(struct!.maxPercentageOfInputDatasetLabeled),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -209,9 +209,9 @@ export function sagemakerLabelingJobStoppingConditionsToHclTerraform(struct?: Sa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerLabelingJobStoppingConditionsOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobStoppingConditionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -219,11 +219,11 @@ export class SagemakerLabelingJobStoppingConditionsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerLabelingJobStoppingConditions | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerLabelingJobStoppingConditions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -240,14 +240,14 @@ export class SagemakerLabelingJobStoppingConditionsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerLabelingJobStoppingConditions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerLabelingJobStoppingConditions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._maxHumanLabeledObjectCount = undefined;
       this._maxPercentageOfInputDatasetLabeled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -292,15 +292,15 @@ export class SagemakerLabelingJobStoppingConditionsOutputReference extends cdktf
   }
 }
 
-export class SagemakerLabelingJobStoppingConditionsList extends cdktf.ComplexList {
-  public internalValue? : SagemakerLabelingJobStoppingConditions[] | cdktf.IResolvable
+export class SagemakerLabelingJobStoppingConditionsList extends cdktn.ComplexList {
+  public internalValue? : SagemakerLabelingJobStoppingConditions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -318,25 +318,25 @@ export interface SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfi
   readonly annotationConsolidationLambdaArn: string;
 }
 
-export function sagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigToTerraform(struct?: SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigToTerraform(struct?: SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotation_consolidation_lambda_arn: cdktf.stringToTerraform(struct!.annotationConsolidationLambdaArn),
+    annotation_consolidation_lambda_arn: cdktn.stringToTerraform(struct!.annotationConsolidationLambdaArn),
   }
 }
 
 
-export function sagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigToHclTerraform(struct?: SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigToHclTerraform(struct?: SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotation_consolidation_lambda_arn: {
-      value: cdktf.stringToHclTerraform(struct!.annotationConsolidationLambdaArn),
+      value: cdktn.stringToHclTerraform(struct!.annotationConsolidationLambdaArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -347,9 +347,9 @@ export function sagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -357,11 +357,11 @@ export class SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -374,13 +374,13 @@ export class SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._annotationConsolidationLambdaArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -405,15 +405,15 @@ export class SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigOut
   }
 }
 
-export class SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigList extends cdktf.ComplexList {
-  public internalValue? : SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig[] | cdktf.IResolvable
+export class SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigList extends cdktn.ComplexList {
+  public internalValue? : SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -439,39 +439,39 @@ export interface SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmou
   readonly tenthFractionsOfACent?: number;
 }
 
-export function sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdToTerraform(struct?: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdToTerraform(struct?: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cents: cdktf.numberToTerraform(struct!.cents),
-    dollars: cdktf.numberToTerraform(struct!.dollars),
-    tenth_fractions_of_a_cent: cdktf.numberToTerraform(struct!.tenthFractionsOfACent),
+    cents: cdktn.numberToTerraform(struct!.cents),
+    dollars: cdktn.numberToTerraform(struct!.dollars),
+    tenth_fractions_of_a_cent: cdktn.numberToTerraform(struct!.tenthFractionsOfACent),
   }
 }
 
 
-export function sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdToHclTerraform(struct?: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdToHclTerraform(struct?: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cents: {
-      value: cdktf.numberToHclTerraform(struct!.cents),
+      value: cdktn.numberToHclTerraform(struct!.cents),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     dollars: {
-      value: cdktf.numberToHclTerraform(struct!.dollars),
+      value: cdktn.numberToHclTerraform(struct!.dollars),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tenth_fractions_of_a_cent: {
-      value: cdktf.numberToHclTerraform(struct!.tenthFractionsOfACent),
+      value: cdktn.numberToHclTerraform(struct!.tenthFractionsOfACent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -482,9 +482,9 @@ export function sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmoun
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -492,11 +492,11 @@ export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountIn
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -517,7 +517,7 @@ export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountIn
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -525,7 +525,7 @@ export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountIn
       this._dollars = undefined;
       this._tenthFractionsOfACent = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -587,15 +587,15 @@ export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountIn
   }
 }
 
-export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdList extends cdktf.ComplexList {
-  public internalValue? : SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd[] | cdktf.IResolvable
+export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdList extends cdktn.ComplexList {
+  public internalValue? : SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -612,28 +612,28 @@ export interface SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#amount_in_usd SagemakerLabelingJob#amount_in_usd}
   */
-  readonly amountInUsd?: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd[] | cdktf.IResolvable;
+  readonly amountInUsd?: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd[] | cdktn.IResolvable;
 }
 
-export function sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceToTerraform(struct?: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceToTerraform(struct?: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    amount_in_usd: cdktf.listMapper(sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdToTerraform, true)(struct!.amountInUsd),
+    amount_in_usd: cdktn.listMapper(sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdToTerraform, true)(struct!.amountInUsd),
   }
 }
 
 
-export function sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceToHclTerraform(struct?: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceToHclTerraform(struct?: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     amount_in_usd: {
-      value: cdktf.listMapperHcl(sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdToHclTerraform, true)(struct!.amountInUsd),
+      value: cdktn.listMapperHcl(sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdToHclTerraform, true)(struct!.amountInUsd),
       isBlock: true,
       type: "list",
       storageClassType: "SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdList",
@@ -644,9 +644,9 @@ export function sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -654,11 +654,11 @@ export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -671,13 +671,13 @@ export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._amountInUsd.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -693,7 +693,7 @@ export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceOutputRe
   public get amountInUsd() {
     return this._amountInUsd;
   }
-  public putAmountInUsd(value: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd[] | cdktf.IResolvable) {
+  public putAmountInUsd(value: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd[] | cdktn.IResolvable) {
     this._amountInUsd.internalValue = value;
   }
   public resetAmountInUsd() {
@@ -705,15 +705,15 @@ export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceOutputRe
   }
 }
 
-export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceList extends cdktf.ComplexList {
-  public internalValue? : SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice[] | cdktf.IResolvable
+export class SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceList extends cdktn.ComplexList {
+  public internalValue? : SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -735,32 +735,32 @@ export interface SagemakerLabelingJobHumanTaskConfigUiConfig {
   readonly uiTemplateS3Uri?: string;
 }
 
-export function sagemakerLabelingJobHumanTaskConfigUiConfigToTerraform(struct?: SagemakerLabelingJobHumanTaskConfigUiConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobHumanTaskConfigUiConfigToTerraform(struct?: SagemakerLabelingJobHumanTaskConfigUiConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    human_task_ui_arn: cdktf.stringToTerraform(struct!.humanTaskUiArn),
-    ui_template_s3_uri: cdktf.stringToTerraform(struct!.uiTemplateS3Uri),
+    human_task_ui_arn: cdktn.stringToTerraform(struct!.humanTaskUiArn),
+    ui_template_s3_uri: cdktn.stringToTerraform(struct!.uiTemplateS3Uri),
   }
 }
 
 
-export function sagemakerLabelingJobHumanTaskConfigUiConfigToHclTerraform(struct?: SagemakerLabelingJobHumanTaskConfigUiConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobHumanTaskConfigUiConfigToHclTerraform(struct?: SagemakerLabelingJobHumanTaskConfigUiConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     human_task_ui_arn: {
-      value: cdktf.stringToHclTerraform(struct!.humanTaskUiArn),
+      value: cdktn.stringToHclTerraform(struct!.humanTaskUiArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ui_template_s3_uri: {
-      value: cdktf.stringToHclTerraform(struct!.uiTemplateS3Uri),
+      value: cdktn.stringToHclTerraform(struct!.uiTemplateS3Uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -771,9 +771,9 @@ export function sagemakerLabelingJobHumanTaskConfigUiConfigToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerLabelingJobHumanTaskConfigUiConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobHumanTaskConfigUiConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -781,11 +781,11 @@ export class SagemakerLabelingJobHumanTaskConfigUiConfigOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerLabelingJobHumanTaskConfigUiConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerLabelingJobHumanTaskConfigUiConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -802,14 +802,14 @@ export class SagemakerLabelingJobHumanTaskConfigUiConfigOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerLabelingJobHumanTaskConfigUiConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerLabelingJobHumanTaskConfigUiConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._humanTaskUiArn = undefined;
       this._uiTemplateS3Uri = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -854,15 +854,15 @@ export class SagemakerLabelingJobHumanTaskConfigUiConfigOutputReference extends 
   }
 }
 
-export class SagemakerLabelingJobHumanTaskConfigUiConfigList extends cdktf.ComplexList {
-  public internalValue? : SagemakerLabelingJobHumanTaskConfigUiConfig[] | cdktf.IResolvable
+export class SagemakerLabelingJobHumanTaskConfigUiConfigList extends cdktn.ComplexList {
+  public internalValue? : SagemakerLabelingJobHumanTaskConfigUiConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -915,117 +915,117 @@ export interface SagemakerLabelingJobHumanTaskConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#annotation_consolidation_config SagemakerLabelingJob#annotation_consolidation_config}
   */
-  readonly annotationConsolidationConfig?: SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig[] | cdktf.IResolvable;
+  readonly annotationConsolidationConfig?: SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig[] | cdktn.IResolvable;
   /**
   * public_workforce_task_price block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#public_workforce_task_price SagemakerLabelingJob#public_workforce_task_price}
   */
-  readonly publicWorkforceTaskPrice?: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice[] | cdktf.IResolvable;
+  readonly publicWorkforceTaskPrice?: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice[] | cdktn.IResolvable;
   /**
   * ui_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#ui_config SagemakerLabelingJob#ui_config}
   */
-  readonly uiConfig?: SagemakerLabelingJobHumanTaskConfigUiConfig[] | cdktf.IResolvable;
+  readonly uiConfig?: SagemakerLabelingJobHumanTaskConfigUiConfig[] | cdktn.IResolvable;
 }
 
-export function sagemakerLabelingJobHumanTaskConfigToTerraform(struct?: SagemakerLabelingJobHumanTaskConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobHumanTaskConfigToTerraform(struct?: SagemakerLabelingJobHumanTaskConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_concurrent_task_count: cdktf.numberToTerraform(struct!.maxConcurrentTaskCount),
-    number_of_human_workers_per_data_object: cdktf.numberToTerraform(struct!.numberOfHumanWorkersPerDataObject),
-    pre_human_task_lambda_arn: cdktf.stringToTerraform(struct!.preHumanTaskLambdaArn),
-    task_availability_lifetime_in_seconds: cdktf.numberToTerraform(struct!.taskAvailabilityLifetimeInSeconds),
-    task_description: cdktf.stringToTerraform(struct!.taskDescription),
-    task_keywords: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.taskKeywords),
-    task_time_limit_in_seconds: cdktf.numberToTerraform(struct!.taskTimeLimitInSeconds),
-    task_title: cdktf.stringToTerraform(struct!.taskTitle),
-    workteam_arn: cdktf.stringToTerraform(struct!.workteamArn),
-    annotation_consolidation_config: cdktf.listMapper(sagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigToTerraform, true)(struct!.annotationConsolidationConfig),
-    public_workforce_task_price: cdktf.listMapper(sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceToTerraform, true)(struct!.publicWorkforceTaskPrice),
-    ui_config: cdktf.listMapper(sagemakerLabelingJobHumanTaskConfigUiConfigToTerraform, true)(struct!.uiConfig),
+    max_concurrent_task_count: cdktn.numberToTerraform(struct!.maxConcurrentTaskCount),
+    number_of_human_workers_per_data_object: cdktn.numberToTerraform(struct!.numberOfHumanWorkersPerDataObject),
+    pre_human_task_lambda_arn: cdktn.stringToTerraform(struct!.preHumanTaskLambdaArn),
+    task_availability_lifetime_in_seconds: cdktn.numberToTerraform(struct!.taskAvailabilityLifetimeInSeconds),
+    task_description: cdktn.stringToTerraform(struct!.taskDescription),
+    task_keywords: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.taskKeywords),
+    task_time_limit_in_seconds: cdktn.numberToTerraform(struct!.taskTimeLimitInSeconds),
+    task_title: cdktn.stringToTerraform(struct!.taskTitle),
+    workteam_arn: cdktn.stringToTerraform(struct!.workteamArn),
+    annotation_consolidation_config: cdktn.listMapper(sagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigToTerraform, true)(struct!.annotationConsolidationConfig),
+    public_workforce_task_price: cdktn.listMapper(sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceToTerraform, true)(struct!.publicWorkforceTaskPrice),
+    ui_config: cdktn.listMapper(sagemakerLabelingJobHumanTaskConfigUiConfigToTerraform, true)(struct!.uiConfig),
   }
 }
 
 
-export function sagemakerLabelingJobHumanTaskConfigToHclTerraform(struct?: SagemakerLabelingJobHumanTaskConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobHumanTaskConfigToHclTerraform(struct?: SagemakerLabelingJobHumanTaskConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_concurrent_task_count: {
-      value: cdktf.numberToHclTerraform(struct!.maxConcurrentTaskCount),
+      value: cdktn.numberToHclTerraform(struct!.maxConcurrentTaskCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     number_of_human_workers_per_data_object: {
-      value: cdktf.numberToHclTerraform(struct!.numberOfHumanWorkersPerDataObject),
+      value: cdktn.numberToHclTerraform(struct!.numberOfHumanWorkersPerDataObject),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     pre_human_task_lambda_arn: {
-      value: cdktf.stringToHclTerraform(struct!.preHumanTaskLambdaArn),
+      value: cdktn.stringToHclTerraform(struct!.preHumanTaskLambdaArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     task_availability_lifetime_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.taskAvailabilityLifetimeInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.taskAvailabilityLifetimeInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     task_description: {
-      value: cdktf.stringToHclTerraform(struct!.taskDescription),
+      value: cdktn.stringToHclTerraform(struct!.taskDescription),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     task_keywords: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.taskKeywords),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.taskKeywords),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     task_time_limit_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.taskTimeLimitInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.taskTimeLimitInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     task_title: {
-      value: cdktf.stringToHclTerraform(struct!.taskTitle),
+      value: cdktn.stringToHclTerraform(struct!.taskTitle),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workteam_arn: {
-      value: cdktf.stringToHclTerraform(struct!.workteamArn),
+      value: cdktn.stringToHclTerraform(struct!.workteamArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     annotation_consolidation_config: {
-      value: cdktf.listMapperHcl(sagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigToHclTerraform, true)(struct!.annotationConsolidationConfig),
+      value: cdktn.listMapperHcl(sagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigToHclTerraform, true)(struct!.annotationConsolidationConfig),
       isBlock: true,
       type: "list",
       storageClassType: "SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigList",
     },
     public_workforce_task_price: {
-      value: cdktf.listMapperHcl(sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceToHclTerraform, true)(struct!.publicWorkforceTaskPrice),
+      value: cdktn.listMapperHcl(sagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceToHclTerraform, true)(struct!.publicWorkforceTaskPrice),
       isBlock: true,
       type: "list",
       storageClassType: "SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceList",
     },
     ui_config: {
-      value: cdktf.listMapperHcl(sagemakerLabelingJobHumanTaskConfigUiConfigToHclTerraform, true)(struct!.uiConfig),
+      value: cdktn.listMapperHcl(sagemakerLabelingJobHumanTaskConfigUiConfigToHclTerraform, true)(struct!.uiConfig),
       isBlock: true,
       type: "list",
       storageClassType: "SagemakerLabelingJobHumanTaskConfigUiConfigList",
@@ -1036,9 +1036,9 @@ export function sagemakerLabelingJobHumanTaskConfigToHclTerraform(struct?: Sagem
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerLabelingJobHumanTaskConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobHumanTaskConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1046,11 +1046,11 @@ export class SagemakerLabelingJobHumanTaskConfigOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerLabelingJobHumanTaskConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerLabelingJobHumanTaskConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1107,7 +1107,7 @@ export class SagemakerLabelingJobHumanTaskConfigOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerLabelingJobHumanTaskConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerLabelingJobHumanTaskConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1124,7 +1124,7 @@ export class SagemakerLabelingJobHumanTaskConfigOutputReference extends cdktf.Co
       this._publicWorkforceTaskPrice.internalValue = undefined;
       this._uiConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1223,7 +1223,7 @@ export class SagemakerLabelingJobHumanTaskConfigOutputReference extends cdktf.Co
   // task_keywords - computed: false, optional: true, required: false
   private _taskKeywords?: string[]; 
   public get taskKeywords() {
-    return cdktf.Fn.tolist(this.getListAttribute('task_keywords'));
+    return cdktn.Fn.tolist(this.getListAttribute('task_keywords'));
   }
   public set taskKeywords(value: string[]) {
     this._taskKeywords = value;
@@ -1280,7 +1280,7 @@ export class SagemakerLabelingJobHumanTaskConfigOutputReference extends cdktf.Co
   public get annotationConsolidationConfig() {
     return this._annotationConsolidationConfig;
   }
-  public putAnnotationConsolidationConfig(value: SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig[] | cdktf.IResolvable) {
+  public putAnnotationConsolidationConfig(value: SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig[] | cdktn.IResolvable) {
     this._annotationConsolidationConfig.internalValue = value;
   }
   public resetAnnotationConsolidationConfig() {
@@ -1296,7 +1296,7 @@ export class SagemakerLabelingJobHumanTaskConfigOutputReference extends cdktf.Co
   public get publicWorkforceTaskPrice() {
     return this._publicWorkforceTaskPrice;
   }
-  public putPublicWorkforceTaskPrice(value: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice[] | cdktf.IResolvable) {
+  public putPublicWorkforceTaskPrice(value: SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice[] | cdktn.IResolvable) {
     this._publicWorkforceTaskPrice.internalValue = value;
   }
   public resetPublicWorkforceTaskPrice() {
@@ -1312,7 +1312,7 @@ export class SagemakerLabelingJobHumanTaskConfigOutputReference extends cdktf.Co
   public get uiConfig() {
     return this._uiConfig;
   }
-  public putUiConfig(value: SagemakerLabelingJobHumanTaskConfigUiConfig[] | cdktf.IResolvable) {
+  public putUiConfig(value: SagemakerLabelingJobHumanTaskConfigUiConfig[] | cdktn.IResolvable) {
     this._uiConfig.internalValue = value;
   }
   public resetUiConfig() {
@@ -1324,15 +1324,15 @@ export class SagemakerLabelingJobHumanTaskConfigOutputReference extends cdktf.Co
   }
 }
 
-export class SagemakerLabelingJobHumanTaskConfigList extends cdktf.ComplexList {
-  public internalValue? : SagemakerLabelingJobHumanTaskConfig[] | cdktf.IResolvable
+export class SagemakerLabelingJobHumanTaskConfigList extends cdktn.ComplexList {
+  public internalValue? : SagemakerLabelingJobHumanTaskConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1350,25 +1350,25 @@ export interface SagemakerLabelingJobInputConfigDataAttributes {
   readonly contentClassifiers?: string[];
 }
 
-export function sagemakerLabelingJobInputConfigDataAttributesToTerraform(struct?: SagemakerLabelingJobInputConfigDataAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobInputConfigDataAttributesToTerraform(struct?: SagemakerLabelingJobInputConfigDataAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content_classifiers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.contentClassifiers),
+    content_classifiers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.contentClassifiers),
   }
 }
 
 
-export function sagemakerLabelingJobInputConfigDataAttributesToHclTerraform(struct?: SagemakerLabelingJobInputConfigDataAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobInputConfigDataAttributesToHclTerraform(struct?: SagemakerLabelingJobInputConfigDataAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content_classifiers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.contentClassifiers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.contentClassifiers),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1379,9 +1379,9 @@ export function sagemakerLabelingJobInputConfigDataAttributesToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerLabelingJobInputConfigDataAttributesOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobInputConfigDataAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1389,11 +1389,11 @@ export class SagemakerLabelingJobInputConfigDataAttributesOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerLabelingJobInputConfigDataAttributes | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerLabelingJobInputConfigDataAttributes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1406,13 +1406,13 @@ export class SagemakerLabelingJobInputConfigDataAttributesOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerLabelingJobInputConfigDataAttributes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerLabelingJobInputConfigDataAttributes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._contentClassifiers = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1426,7 +1426,7 @@ export class SagemakerLabelingJobInputConfigDataAttributesOutputReference extend
   // content_classifiers - computed: false, optional: true, required: false
   private _contentClassifiers?: string[]; 
   public get contentClassifiers() {
-    return cdktf.Fn.tolist(this.getListAttribute('content_classifiers'));
+    return cdktn.Fn.tolist(this.getListAttribute('content_classifiers'));
   }
   public set contentClassifiers(value: string[]) {
     this._contentClassifiers = value;
@@ -1440,15 +1440,15 @@ export class SagemakerLabelingJobInputConfigDataAttributesOutputReference extend
   }
 }
 
-export class SagemakerLabelingJobInputConfigDataAttributesList extends cdktf.ComplexList {
-  public internalValue? : SagemakerLabelingJobInputConfigDataAttributes[] | cdktf.IResolvable
+export class SagemakerLabelingJobInputConfigDataAttributesList extends cdktn.ComplexList {
+  public internalValue? : SagemakerLabelingJobInputConfigDataAttributes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1466,25 +1466,25 @@ export interface SagemakerLabelingJobInputConfigDataSourceS3DataSource {
   readonly manifestS3Uri: string;
 }
 
-export function sagemakerLabelingJobInputConfigDataSourceS3DataSourceToTerraform(struct?: SagemakerLabelingJobInputConfigDataSourceS3DataSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobInputConfigDataSourceS3DataSourceToTerraform(struct?: SagemakerLabelingJobInputConfigDataSourceS3DataSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    manifest_s3_uri: cdktf.stringToTerraform(struct!.manifestS3Uri),
+    manifest_s3_uri: cdktn.stringToTerraform(struct!.manifestS3Uri),
   }
 }
 
 
-export function sagemakerLabelingJobInputConfigDataSourceS3DataSourceToHclTerraform(struct?: SagemakerLabelingJobInputConfigDataSourceS3DataSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobInputConfigDataSourceS3DataSourceToHclTerraform(struct?: SagemakerLabelingJobInputConfigDataSourceS3DataSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     manifest_s3_uri: {
-      value: cdktf.stringToHclTerraform(struct!.manifestS3Uri),
+      value: cdktn.stringToHclTerraform(struct!.manifestS3Uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1495,9 +1495,9 @@ export function sagemakerLabelingJobInputConfigDataSourceS3DataSourceToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerLabelingJobInputConfigDataSourceS3DataSourceOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobInputConfigDataSourceS3DataSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1505,11 +1505,11 @@ export class SagemakerLabelingJobInputConfigDataSourceS3DataSourceOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerLabelingJobInputConfigDataSourceS3DataSource | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerLabelingJobInputConfigDataSourceS3DataSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1522,13 +1522,13 @@ export class SagemakerLabelingJobInputConfigDataSourceS3DataSourceOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerLabelingJobInputConfigDataSourceS3DataSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerLabelingJobInputConfigDataSourceS3DataSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._manifestS3Uri = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1553,15 +1553,15 @@ export class SagemakerLabelingJobInputConfigDataSourceS3DataSourceOutputReferenc
   }
 }
 
-export class SagemakerLabelingJobInputConfigDataSourceS3DataSourceList extends cdktf.ComplexList {
-  public internalValue? : SagemakerLabelingJobInputConfigDataSourceS3DataSource[] | cdktf.IResolvable
+export class SagemakerLabelingJobInputConfigDataSourceS3DataSourceList extends cdktn.ComplexList {
+  public internalValue? : SagemakerLabelingJobInputConfigDataSourceS3DataSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1579,25 +1579,25 @@ export interface SagemakerLabelingJobInputConfigDataSourceSnsDataSource {
   readonly snsTopicArn: string;
 }
 
-export function sagemakerLabelingJobInputConfigDataSourceSnsDataSourceToTerraform(struct?: SagemakerLabelingJobInputConfigDataSourceSnsDataSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobInputConfigDataSourceSnsDataSourceToTerraform(struct?: SagemakerLabelingJobInputConfigDataSourceSnsDataSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    sns_topic_arn: cdktf.stringToTerraform(struct!.snsTopicArn),
+    sns_topic_arn: cdktn.stringToTerraform(struct!.snsTopicArn),
   }
 }
 
 
-export function sagemakerLabelingJobInputConfigDataSourceSnsDataSourceToHclTerraform(struct?: SagemakerLabelingJobInputConfigDataSourceSnsDataSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobInputConfigDataSourceSnsDataSourceToHclTerraform(struct?: SagemakerLabelingJobInputConfigDataSourceSnsDataSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     sns_topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.snsTopicArn),
+      value: cdktn.stringToHclTerraform(struct!.snsTopicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1608,9 +1608,9 @@ export function sagemakerLabelingJobInputConfigDataSourceSnsDataSourceToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerLabelingJobInputConfigDataSourceSnsDataSourceOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobInputConfigDataSourceSnsDataSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1618,11 +1618,11 @@ export class SagemakerLabelingJobInputConfigDataSourceSnsDataSourceOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerLabelingJobInputConfigDataSourceSnsDataSource | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerLabelingJobInputConfigDataSourceSnsDataSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1635,13 +1635,13 @@ export class SagemakerLabelingJobInputConfigDataSourceSnsDataSourceOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerLabelingJobInputConfigDataSourceSnsDataSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerLabelingJobInputConfigDataSourceSnsDataSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._snsTopicArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1666,15 +1666,15 @@ export class SagemakerLabelingJobInputConfigDataSourceSnsDataSourceOutputReferen
   }
 }
 
-export class SagemakerLabelingJobInputConfigDataSourceSnsDataSourceList extends cdktf.ComplexList {
-  public internalValue? : SagemakerLabelingJobInputConfigDataSourceSnsDataSource[] | cdktf.IResolvable
+export class SagemakerLabelingJobInputConfigDataSourceSnsDataSourceList extends cdktn.ComplexList {
+  public internalValue? : SagemakerLabelingJobInputConfigDataSourceSnsDataSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1691,41 +1691,41 @@ export interface SagemakerLabelingJobInputConfigDataSource {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#s3_data_source SagemakerLabelingJob#s3_data_source}
   */
-  readonly s3DataSource?: SagemakerLabelingJobInputConfigDataSourceS3DataSource[] | cdktf.IResolvable;
+  readonly s3DataSource?: SagemakerLabelingJobInputConfigDataSourceS3DataSource[] | cdktn.IResolvable;
   /**
   * sns_data_source block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#sns_data_source SagemakerLabelingJob#sns_data_source}
   */
-  readonly snsDataSource?: SagemakerLabelingJobInputConfigDataSourceSnsDataSource[] | cdktf.IResolvable;
+  readonly snsDataSource?: SagemakerLabelingJobInputConfigDataSourceSnsDataSource[] | cdktn.IResolvable;
 }
 
-export function sagemakerLabelingJobInputConfigDataSourceToTerraform(struct?: SagemakerLabelingJobInputConfigDataSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobInputConfigDataSourceToTerraform(struct?: SagemakerLabelingJobInputConfigDataSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_data_source: cdktf.listMapper(sagemakerLabelingJobInputConfigDataSourceS3DataSourceToTerraform, true)(struct!.s3DataSource),
-    sns_data_source: cdktf.listMapper(sagemakerLabelingJobInputConfigDataSourceSnsDataSourceToTerraform, true)(struct!.snsDataSource),
+    s3_data_source: cdktn.listMapper(sagemakerLabelingJobInputConfigDataSourceS3DataSourceToTerraform, true)(struct!.s3DataSource),
+    sns_data_source: cdktn.listMapper(sagemakerLabelingJobInputConfigDataSourceSnsDataSourceToTerraform, true)(struct!.snsDataSource),
   }
 }
 
 
-export function sagemakerLabelingJobInputConfigDataSourceToHclTerraform(struct?: SagemakerLabelingJobInputConfigDataSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobInputConfigDataSourceToHclTerraform(struct?: SagemakerLabelingJobInputConfigDataSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_data_source: {
-      value: cdktf.listMapperHcl(sagemakerLabelingJobInputConfigDataSourceS3DataSourceToHclTerraform, true)(struct!.s3DataSource),
+      value: cdktn.listMapperHcl(sagemakerLabelingJobInputConfigDataSourceS3DataSourceToHclTerraform, true)(struct!.s3DataSource),
       isBlock: true,
       type: "list",
       storageClassType: "SagemakerLabelingJobInputConfigDataSourceS3DataSourceList",
     },
     sns_data_source: {
-      value: cdktf.listMapperHcl(sagemakerLabelingJobInputConfigDataSourceSnsDataSourceToHclTerraform, true)(struct!.snsDataSource),
+      value: cdktn.listMapperHcl(sagemakerLabelingJobInputConfigDataSourceSnsDataSourceToHclTerraform, true)(struct!.snsDataSource),
       isBlock: true,
       type: "list",
       storageClassType: "SagemakerLabelingJobInputConfigDataSourceSnsDataSourceList",
@@ -1736,9 +1736,9 @@ export function sagemakerLabelingJobInputConfigDataSourceToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerLabelingJobInputConfigDataSourceOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobInputConfigDataSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1746,11 +1746,11 @@ export class SagemakerLabelingJobInputConfigDataSourceOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerLabelingJobInputConfigDataSource | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerLabelingJobInputConfigDataSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1767,14 +1767,14 @@ export class SagemakerLabelingJobInputConfigDataSourceOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerLabelingJobInputConfigDataSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerLabelingJobInputConfigDataSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._s3DataSource.internalValue = undefined;
       this._snsDataSource.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1791,7 +1791,7 @@ export class SagemakerLabelingJobInputConfigDataSourceOutputReference extends cd
   public get s3DataSource() {
     return this._s3DataSource;
   }
-  public putS3DataSource(value: SagemakerLabelingJobInputConfigDataSourceS3DataSource[] | cdktf.IResolvable) {
+  public putS3DataSource(value: SagemakerLabelingJobInputConfigDataSourceS3DataSource[] | cdktn.IResolvable) {
     this._s3DataSource.internalValue = value;
   }
   public resetS3DataSource() {
@@ -1807,7 +1807,7 @@ export class SagemakerLabelingJobInputConfigDataSourceOutputReference extends cd
   public get snsDataSource() {
     return this._snsDataSource;
   }
-  public putSnsDataSource(value: SagemakerLabelingJobInputConfigDataSourceSnsDataSource[] | cdktf.IResolvable) {
+  public putSnsDataSource(value: SagemakerLabelingJobInputConfigDataSourceSnsDataSource[] | cdktn.IResolvable) {
     this._snsDataSource.internalValue = value;
   }
   public resetSnsDataSource() {
@@ -1819,15 +1819,15 @@ export class SagemakerLabelingJobInputConfigDataSourceOutputReference extends cd
   }
 }
 
-export class SagemakerLabelingJobInputConfigDataSourceList extends cdktf.ComplexList {
-  public internalValue? : SagemakerLabelingJobInputConfigDataSource[] | cdktf.IResolvable
+export class SagemakerLabelingJobInputConfigDataSourceList extends cdktn.ComplexList {
+  public internalValue? : SagemakerLabelingJobInputConfigDataSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1844,41 +1844,41 @@ export interface SagemakerLabelingJobInputConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#data_attributes SagemakerLabelingJob#data_attributes}
   */
-  readonly dataAttributes?: SagemakerLabelingJobInputConfigDataAttributes[] | cdktf.IResolvable;
+  readonly dataAttributes?: SagemakerLabelingJobInputConfigDataAttributes[] | cdktn.IResolvable;
   /**
   * data_source block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#data_source SagemakerLabelingJob#data_source}
   */
-  readonly dataSource?: SagemakerLabelingJobInputConfigDataSource[] | cdktf.IResolvable;
+  readonly dataSource?: SagemakerLabelingJobInputConfigDataSource[] | cdktn.IResolvable;
 }
 
-export function sagemakerLabelingJobInputConfigToTerraform(struct?: SagemakerLabelingJobInputConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobInputConfigToTerraform(struct?: SagemakerLabelingJobInputConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_attributes: cdktf.listMapper(sagemakerLabelingJobInputConfigDataAttributesToTerraform, true)(struct!.dataAttributes),
-    data_source: cdktf.listMapper(sagemakerLabelingJobInputConfigDataSourceToTerraform, true)(struct!.dataSource),
+    data_attributes: cdktn.listMapper(sagemakerLabelingJobInputConfigDataAttributesToTerraform, true)(struct!.dataAttributes),
+    data_source: cdktn.listMapper(sagemakerLabelingJobInputConfigDataSourceToTerraform, true)(struct!.dataSource),
   }
 }
 
 
-export function sagemakerLabelingJobInputConfigToHclTerraform(struct?: SagemakerLabelingJobInputConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobInputConfigToHclTerraform(struct?: SagemakerLabelingJobInputConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_attributes: {
-      value: cdktf.listMapperHcl(sagemakerLabelingJobInputConfigDataAttributesToHclTerraform, true)(struct!.dataAttributes),
+      value: cdktn.listMapperHcl(sagemakerLabelingJobInputConfigDataAttributesToHclTerraform, true)(struct!.dataAttributes),
       isBlock: true,
       type: "list",
       storageClassType: "SagemakerLabelingJobInputConfigDataAttributesList",
     },
     data_source: {
-      value: cdktf.listMapperHcl(sagemakerLabelingJobInputConfigDataSourceToHclTerraform, true)(struct!.dataSource),
+      value: cdktn.listMapperHcl(sagemakerLabelingJobInputConfigDataSourceToHclTerraform, true)(struct!.dataSource),
       isBlock: true,
       type: "list",
       storageClassType: "SagemakerLabelingJobInputConfigDataSourceList",
@@ -1889,9 +1889,9 @@ export function sagemakerLabelingJobInputConfigToHclTerraform(struct?: Sagemaker
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerLabelingJobInputConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobInputConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1899,11 +1899,11 @@ export class SagemakerLabelingJobInputConfigOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerLabelingJobInputConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerLabelingJobInputConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1920,14 +1920,14 @@ export class SagemakerLabelingJobInputConfigOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerLabelingJobInputConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerLabelingJobInputConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataAttributes.internalValue = undefined;
       this._dataSource.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1944,7 +1944,7 @@ export class SagemakerLabelingJobInputConfigOutputReference extends cdktf.Comple
   public get dataAttributes() {
     return this._dataAttributes;
   }
-  public putDataAttributes(value: SagemakerLabelingJobInputConfigDataAttributes[] | cdktf.IResolvable) {
+  public putDataAttributes(value: SagemakerLabelingJobInputConfigDataAttributes[] | cdktn.IResolvable) {
     this._dataAttributes.internalValue = value;
   }
   public resetDataAttributes() {
@@ -1960,7 +1960,7 @@ export class SagemakerLabelingJobInputConfigOutputReference extends cdktf.Comple
   public get dataSource() {
     return this._dataSource;
   }
-  public putDataSource(value: SagemakerLabelingJobInputConfigDataSource[] | cdktf.IResolvable) {
+  public putDataSource(value: SagemakerLabelingJobInputConfigDataSource[] | cdktn.IResolvable) {
     this._dataSource.internalValue = value;
   }
   public resetDataSource() {
@@ -1972,15 +1972,15 @@ export class SagemakerLabelingJobInputConfigOutputReference extends cdktf.Comple
   }
 }
 
-export class SagemakerLabelingJobInputConfigList extends cdktf.ComplexList {
-  public internalValue? : SagemakerLabelingJobInputConfig[] | cdktf.IResolvable
+export class SagemakerLabelingJobInputConfigList extends cdktn.ComplexList {
+  public internalValue? : SagemakerLabelingJobInputConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2002,32 +2002,32 @@ export interface SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResou
   readonly subnets: string[];
 }
 
-export function sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigToTerraform(struct?: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigToTerraform(struct?: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnets),
   }
 }
 
 
-export function sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigToHclTerraform(struct?: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigToHclTerraform(struct?: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnets: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnets),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -2038,9 +2038,9 @@ export function sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2048,11 +2048,11 @@ export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceC
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2069,14 +2069,14 @@ export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceC
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._securityGroupIds = undefined;
       this._subnets = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2091,7 +2091,7 @@ export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceC
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -2104,7 +2104,7 @@ export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceC
   // subnets - computed: false, optional: false, required: true
   private _subnets?: string[]; 
   public get subnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -2115,15 +2115,15 @@ export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceC
   }
 }
 
-export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigList extends cdktf.ComplexList {
-  public internalValue? : SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig[] | cdktf.IResolvable
+export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigList extends cdktn.ComplexList {
+  public internalValue? : SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2144,35 +2144,35 @@ export interface SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResou
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#vpc_config SagemakerLabelingJob#vpc_config}
   */
-  readonly vpcConfig?: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig[] | cdktf.IResolvable;
+  readonly vpcConfig?: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig[] | cdktn.IResolvable;
 }
 
-export function sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigToTerraform(struct?: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigToTerraform(struct?: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    volume_kms_key_id: cdktf.stringToTerraform(struct!.volumeKmsKeyId),
-    vpc_config: cdktf.listMapper(sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigToTerraform, true)(struct!.vpcConfig),
+    volume_kms_key_id: cdktn.stringToTerraform(struct!.volumeKmsKeyId),
+    vpc_config: cdktn.listMapper(sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigToTerraform, true)(struct!.vpcConfig),
   }
 }
 
 
-export function sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigToHclTerraform(struct?: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigToHclTerraform(struct?: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     volume_kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.volumeKmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.volumeKmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vpc_config: {
-      value: cdktf.listMapperHcl(sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigToHclTerraform, true)(struct!.vpcConfig),
+      value: cdktn.listMapperHcl(sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigToHclTerraform, true)(struct!.vpcConfig),
       isBlock: true,
       type: "list",
       storageClassType: "SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigList",
@@ -2183,9 +2183,9 @@ export function sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2193,11 +2193,11 @@ export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceC
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2214,14 +2214,14 @@ export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceC
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._volumeKmsKeyId = undefined;
       this._vpcConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2254,7 +2254,7 @@ export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceC
   public get vpcConfig() {
     return this._vpcConfig;
   }
-  public putVpcConfig(value: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig[] | cdktf.IResolvable) {
+  public putVpcConfig(value: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig[] | cdktn.IResolvable) {
     this._vpcConfig.internalValue = value;
   }
   public resetVpcConfig() {
@@ -2266,15 +2266,15 @@ export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceC
   }
 }
 
-export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigList extends cdktf.ComplexList {
-  public internalValue? : SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig[] | cdktf.IResolvable
+export class SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigList extends cdktn.ComplexList {
+  public internalValue? : SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2299,42 +2299,42 @@ export interface SagemakerLabelingJobLabelingJobAlgorithmsConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#labeling_job_resource_config SagemakerLabelingJob#labeling_job_resource_config}
   */
-  readonly labelingJobResourceConfig?: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig[] | cdktf.IResolvable;
+  readonly labelingJobResourceConfig?: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig[] | cdktn.IResolvable;
 }
 
-export function sagemakerLabelingJobLabelingJobAlgorithmsConfigToTerraform(struct?: SagemakerLabelingJobLabelingJobAlgorithmsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobLabelingJobAlgorithmsConfigToTerraform(struct?: SagemakerLabelingJobLabelingJobAlgorithmsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    initial_active_learning_model_arn: cdktf.stringToTerraform(struct!.initialActiveLearningModelArn),
-    labeling_job_algorithm_specification_arn: cdktf.stringToTerraform(struct!.labelingJobAlgorithmSpecificationArn),
-    labeling_job_resource_config: cdktf.listMapper(sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigToTerraform, true)(struct!.labelingJobResourceConfig),
+    initial_active_learning_model_arn: cdktn.stringToTerraform(struct!.initialActiveLearningModelArn),
+    labeling_job_algorithm_specification_arn: cdktn.stringToTerraform(struct!.labelingJobAlgorithmSpecificationArn),
+    labeling_job_resource_config: cdktn.listMapper(sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigToTerraform, true)(struct!.labelingJobResourceConfig),
   }
 }
 
 
-export function sagemakerLabelingJobLabelingJobAlgorithmsConfigToHclTerraform(struct?: SagemakerLabelingJobLabelingJobAlgorithmsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobLabelingJobAlgorithmsConfigToHclTerraform(struct?: SagemakerLabelingJobLabelingJobAlgorithmsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     initial_active_learning_model_arn: {
-      value: cdktf.stringToHclTerraform(struct!.initialActiveLearningModelArn),
+      value: cdktn.stringToHclTerraform(struct!.initialActiveLearningModelArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labeling_job_algorithm_specification_arn: {
-      value: cdktf.stringToHclTerraform(struct!.labelingJobAlgorithmSpecificationArn),
+      value: cdktn.stringToHclTerraform(struct!.labelingJobAlgorithmSpecificationArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labeling_job_resource_config: {
-      value: cdktf.listMapperHcl(sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigToHclTerraform, true)(struct!.labelingJobResourceConfig),
+      value: cdktn.listMapperHcl(sagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigToHclTerraform, true)(struct!.labelingJobResourceConfig),
       isBlock: true,
       type: "list",
       storageClassType: "SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigList",
@@ -2345,9 +2345,9 @@ export function sagemakerLabelingJobLabelingJobAlgorithmsConfigToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerLabelingJobLabelingJobAlgorithmsConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobLabelingJobAlgorithmsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2355,11 +2355,11 @@ export class SagemakerLabelingJobLabelingJobAlgorithmsConfigOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerLabelingJobLabelingJobAlgorithmsConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerLabelingJobLabelingJobAlgorithmsConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2380,7 +2380,7 @@ export class SagemakerLabelingJobLabelingJobAlgorithmsConfigOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerLabelingJobLabelingJobAlgorithmsConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerLabelingJobLabelingJobAlgorithmsConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2388,7 +2388,7 @@ export class SagemakerLabelingJobLabelingJobAlgorithmsConfigOutputReference exte
       this._labelingJobAlgorithmSpecificationArn = undefined;
       this._labelingJobResourceConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2435,7 +2435,7 @@ export class SagemakerLabelingJobLabelingJobAlgorithmsConfigOutputReference exte
   public get labelingJobResourceConfig() {
     return this._labelingJobResourceConfig;
   }
-  public putLabelingJobResourceConfig(value: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig[] | cdktf.IResolvable) {
+  public putLabelingJobResourceConfig(value: SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig[] | cdktn.IResolvable) {
     this._labelingJobResourceConfig.internalValue = value;
   }
   public resetLabelingJobResourceConfig() {
@@ -2447,15 +2447,15 @@ export class SagemakerLabelingJobLabelingJobAlgorithmsConfigOutputReference exte
   }
 }
 
-export class SagemakerLabelingJobLabelingJobAlgorithmsConfigList extends cdktf.ComplexList {
-  public internalValue? : SagemakerLabelingJobLabelingJobAlgorithmsConfig[] | cdktf.IResolvable
+export class SagemakerLabelingJobLabelingJobAlgorithmsConfigList extends cdktn.ComplexList {
+  public internalValue? : SagemakerLabelingJobLabelingJobAlgorithmsConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2481,39 +2481,39 @@ export interface SagemakerLabelingJobOutputConfig {
   readonly snsTopicArn?: string;
 }
 
-export function sagemakerLabelingJobOutputConfigToTerraform(struct?: SagemakerLabelingJobOutputConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobOutputConfigToTerraform(struct?: SagemakerLabelingJobOutputConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
-    s3_output_path: cdktf.stringToTerraform(struct!.s3OutputPath),
-    sns_topic_arn: cdktf.stringToTerraform(struct!.snsTopicArn),
+    kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
+    s3_output_path: cdktn.stringToTerraform(struct!.s3OutputPath),
+    sns_topic_arn: cdktn.stringToTerraform(struct!.snsTopicArn),
   }
 }
 
 
-export function sagemakerLabelingJobOutputConfigToHclTerraform(struct?: SagemakerLabelingJobOutputConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerLabelingJobOutputConfigToHclTerraform(struct?: SagemakerLabelingJobOutputConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_output_path: {
-      value: cdktf.stringToHclTerraform(struct!.s3OutputPath),
+      value: cdktn.stringToHclTerraform(struct!.s3OutputPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sns_topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.snsTopicArn),
+      value: cdktn.stringToHclTerraform(struct!.snsTopicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2524,9 +2524,9 @@ export function sagemakerLabelingJobOutputConfigToHclTerraform(struct?: Sagemake
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerLabelingJobOutputConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerLabelingJobOutputConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2534,11 +2534,11 @@ export class SagemakerLabelingJobOutputConfigOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerLabelingJobOutputConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerLabelingJobOutputConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2559,7 +2559,7 @@ export class SagemakerLabelingJobOutputConfigOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerLabelingJobOutputConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerLabelingJobOutputConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2567,7 +2567,7 @@ export class SagemakerLabelingJobOutputConfigOutputReference extends cdktf.Compl
       this._s3OutputPath = undefined;
       this._snsTopicArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2626,15 +2626,15 @@ export class SagemakerLabelingJobOutputConfigOutputReference extends cdktf.Compl
   }
 }
 
-export class SagemakerLabelingJobOutputConfigList extends cdktf.ComplexList {
-  public internalValue? : SagemakerLabelingJobOutputConfig[] | cdktf.IResolvable
+export class SagemakerLabelingJobOutputConfigList extends cdktn.ComplexList {
+  public internalValue? : SagemakerLabelingJobOutputConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2649,7 +2649,7 @@ export class SagemakerLabelingJobOutputConfigList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job aws_sagemaker_labeling_job}
 */
-export class SagemakerLabelingJob extends cdktf.TerraformResource {
+export class SagemakerLabelingJob extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2660,14 +2660,14 @@ export class SagemakerLabelingJob extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SagemakerLabelingJob resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SagemakerLabelingJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerLabelingJob to import
   * @param importFromId The id of the existing SagemakerLabelingJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_labeling_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerLabelingJob to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_labeling_job", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_labeling_job", importId: importFromId, provider });
       }
 
   // ===========
@@ -2816,7 +2816,7 @@ export class SagemakerLabelingJob extends cdktf.TerraformResource {
   public get stoppingConditions() {
     return this._stoppingConditions;
   }
-  public putStoppingConditions(value: SagemakerLabelingJobStoppingConditions[] | cdktf.IResolvable) {
+  public putStoppingConditions(value: SagemakerLabelingJobStoppingConditions[] | cdktn.IResolvable) {
     this._stoppingConditions.internalValue = value;
   }
   public resetStoppingConditions() {
@@ -2844,7 +2844,7 @@ export class SagemakerLabelingJob extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -2854,7 +2854,7 @@ export class SagemakerLabelingJob extends cdktf.TerraformResource {
   public get humanTaskConfig() {
     return this._humanTaskConfig;
   }
-  public putHumanTaskConfig(value: SagemakerLabelingJobHumanTaskConfig[] | cdktf.IResolvable) {
+  public putHumanTaskConfig(value: SagemakerLabelingJobHumanTaskConfig[] | cdktn.IResolvable) {
     this._humanTaskConfig.internalValue = value;
   }
   public resetHumanTaskConfig() {
@@ -2870,7 +2870,7 @@ export class SagemakerLabelingJob extends cdktf.TerraformResource {
   public get inputConfig() {
     return this._inputConfig;
   }
-  public putInputConfig(value: SagemakerLabelingJobInputConfig[] | cdktf.IResolvable) {
+  public putInputConfig(value: SagemakerLabelingJobInputConfig[] | cdktn.IResolvable) {
     this._inputConfig.internalValue = value;
   }
   public resetInputConfig() {
@@ -2886,7 +2886,7 @@ export class SagemakerLabelingJob extends cdktf.TerraformResource {
   public get labelingJobAlgorithmsConfig() {
     return this._labelingJobAlgorithmsConfig;
   }
-  public putLabelingJobAlgorithmsConfig(value: SagemakerLabelingJobLabelingJobAlgorithmsConfig[] | cdktf.IResolvable) {
+  public putLabelingJobAlgorithmsConfig(value: SagemakerLabelingJobLabelingJobAlgorithmsConfig[] | cdktn.IResolvable) {
     this._labelingJobAlgorithmsConfig.internalValue = value;
   }
   public resetLabelingJobAlgorithmsConfig() {
@@ -2902,7 +2902,7 @@ export class SagemakerLabelingJob extends cdktf.TerraformResource {
   public get outputConfig() {
     return this._outputConfig;
   }
-  public putOutputConfig(value: SagemakerLabelingJobOutputConfig[] | cdktf.IResolvable) {
+  public putOutputConfig(value: SagemakerLabelingJobOutputConfig[] | cdktn.IResolvable) {
     this._outputConfig.internalValue = value;
   }
   public resetOutputConfig() {
@@ -2919,84 +2919,84 @@ export class SagemakerLabelingJob extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      label_attribute_name: cdktf.stringToTerraform(this._labelAttributeName),
-      label_category_config_s3_uri: cdktf.stringToTerraform(this._labelCategoryConfigS3Uri),
-      labeling_job_name: cdktf.stringToTerraform(this._labelingJobName),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      stopping_conditions: cdktf.listMapper(sagemakerLabelingJobStoppingConditionsToTerraform, false)(this._stoppingConditions.internalValue),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      human_task_config: cdktf.listMapper(sagemakerLabelingJobHumanTaskConfigToTerraform, true)(this._humanTaskConfig.internalValue),
-      input_config: cdktf.listMapper(sagemakerLabelingJobInputConfigToTerraform, true)(this._inputConfig.internalValue),
-      labeling_job_algorithms_config: cdktf.listMapper(sagemakerLabelingJobLabelingJobAlgorithmsConfigToTerraform, true)(this._labelingJobAlgorithmsConfig.internalValue),
-      output_config: cdktf.listMapper(sagemakerLabelingJobOutputConfigToTerraform, true)(this._outputConfig.internalValue),
+      label_attribute_name: cdktn.stringToTerraform(this._labelAttributeName),
+      label_category_config_s3_uri: cdktn.stringToTerraform(this._labelCategoryConfigS3Uri),
+      labeling_job_name: cdktn.stringToTerraform(this._labelingJobName),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      stopping_conditions: cdktn.listMapper(sagemakerLabelingJobStoppingConditionsToTerraform, false)(this._stoppingConditions.internalValue),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      human_task_config: cdktn.listMapper(sagemakerLabelingJobHumanTaskConfigToTerraform, true)(this._humanTaskConfig.internalValue),
+      input_config: cdktn.listMapper(sagemakerLabelingJobInputConfigToTerraform, true)(this._inputConfig.internalValue),
+      labeling_job_algorithms_config: cdktn.listMapper(sagemakerLabelingJobLabelingJobAlgorithmsConfigToTerraform, true)(this._labelingJobAlgorithmsConfig.internalValue),
+      output_config: cdktn.listMapper(sagemakerLabelingJobOutputConfigToTerraform, true)(this._outputConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       label_attribute_name: {
-        value: cdktf.stringToHclTerraform(this._labelAttributeName),
+        value: cdktn.stringToHclTerraform(this._labelAttributeName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       label_category_config_s3_uri: {
-        value: cdktf.stringToHclTerraform(this._labelCategoryConfigS3Uri),
+        value: cdktn.stringToHclTerraform(this._labelCategoryConfigS3Uri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labeling_job_name: {
-        value: cdktf.stringToHclTerraform(this._labelingJobName),
+        value: cdktn.stringToHclTerraform(this._labelingJobName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stopping_conditions: {
-        value: cdktf.listMapperHcl(sagemakerLabelingJobStoppingConditionsToHclTerraform, false)(this._stoppingConditions.internalValue),
+        value: cdktn.listMapperHcl(sagemakerLabelingJobStoppingConditionsToHclTerraform, false)(this._stoppingConditions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SagemakerLabelingJobStoppingConditionsList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       human_task_config: {
-        value: cdktf.listMapperHcl(sagemakerLabelingJobHumanTaskConfigToHclTerraform, true)(this._humanTaskConfig.internalValue),
+        value: cdktn.listMapperHcl(sagemakerLabelingJobHumanTaskConfigToHclTerraform, true)(this._humanTaskConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SagemakerLabelingJobHumanTaskConfigList",
       },
       input_config: {
-        value: cdktf.listMapperHcl(sagemakerLabelingJobInputConfigToHclTerraform, true)(this._inputConfig.internalValue),
+        value: cdktn.listMapperHcl(sagemakerLabelingJobInputConfigToHclTerraform, true)(this._inputConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SagemakerLabelingJobInputConfigList",
       },
       labeling_job_algorithms_config: {
-        value: cdktf.listMapperHcl(sagemakerLabelingJobLabelingJobAlgorithmsConfigToHclTerraform, true)(this._labelingJobAlgorithmsConfig.internalValue),
+        value: cdktn.listMapperHcl(sagemakerLabelingJobLabelingJobAlgorithmsConfigToHclTerraform, true)(this._labelingJobAlgorithmsConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SagemakerLabelingJobLabelingJobAlgorithmsConfigList",
       },
       output_config: {
-        value: cdktf.listMapperHcl(sagemakerLabelingJobOutputConfigToHclTerraform, true)(this._outputConfig.internalValue),
+        value: cdktn.listMapperHcl(sagemakerLabelingJobOutputConfigToHclTerraform, true)(this._outputConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SagemakerLabelingJobOutputConfigList",

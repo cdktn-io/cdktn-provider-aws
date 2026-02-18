@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ElasticacheServerlessCacheConfig extends cdktf.TerraformMetaArguments {
+export interface ElasticacheServerlessCacheConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_serverless_cache#daily_snapshot_time ElasticacheServerlessCache#daily_snapshot_time}
   */
@@ -71,7 +71,7 @@ export interface ElasticacheServerlessCacheConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_serverless_cache#cache_usage_limits ElasticacheServerlessCache#cache_usage_limits}
   */
-  readonly cacheUsageLimits?: ElasticacheServerlessCacheCacheUsageLimits[] | cdktf.IResolvable;
+  readonly cacheUsageLimits?: ElasticacheServerlessCacheCacheUsageLimits[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -83,8 +83,8 @@ export interface ElasticacheServerlessCacheEndpoint {
 }
 
 export function elasticacheServerlessCacheEndpointToTerraform(struct?: ElasticacheServerlessCacheEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -93,8 +93,8 @@ export function elasticacheServerlessCacheEndpointToTerraform(struct?: Elasticac
 
 
 export function elasticacheServerlessCacheEndpointToHclTerraform(struct?: ElasticacheServerlessCacheEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -102,7 +102,7 @@ export function elasticacheServerlessCacheEndpointToHclTerraform(struct?: Elasti
   return attrs;
 }
 
-export class ElasticacheServerlessCacheEndpointOutputReference extends cdktf.ComplexObject {
+export class ElasticacheServerlessCacheEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -111,7 +111,7 @@ export class ElasticacheServerlessCacheEndpointOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -141,14 +141,14 @@ export class ElasticacheServerlessCacheEndpointOutputReference extends cdktf.Com
   }
 }
 
-export class ElasticacheServerlessCacheEndpointList extends cdktf.ComplexList {
+export class ElasticacheServerlessCacheEndpointList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -163,8 +163,8 @@ export interface ElasticacheServerlessCacheReaderEndpoint {
 }
 
 export function elasticacheServerlessCacheReaderEndpointToTerraform(struct?: ElasticacheServerlessCacheReaderEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -173,8 +173,8 @@ export function elasticacheServerlessCacheReaderEndpointToTerraform(struct?: Ela
 
 
 export function elasticacheServerlessCacheReaderEndpointToHclTerraform(struct?: ElasticacheServerlessCacheReaderEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -182,7 +182,7 @@ export function elasticacheServerlessCacheReaderEndpointToHclTerraform(struct?: 
   return attrs;
 }
 
-export class ElasticacheServerlessCacheReaderEndpointOutputReference extends cdktf.ComplexObject {
+export class ElasticacheServerlessCacheReaderEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -191,7 +191,7 @@ export class ElasticacheServerlessCacheReaderEndpointOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -221,14 +221,14 @@ export class ElasticacheServerlessCacheReaderEndpointOutputReference extends cdk
   }
 }
 
-export class ElasticacheServerlessCacheReaderEndpointList extends cdktf.ComplexList {
+export class ElasticacheServerlessCacheReaderEndpointList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -254,39 +254,39 @@ export interface ElasticacheServerlessCacheCacheUsageLimitsDataStorage {
   readonly unit: string;
 }
 
-export function elasticacheServerlessCacheCacheUsageLimitsDataStorageToTerraform(struct?: ElasticacheServerlessCacheCacheUsageLimitsDataStorage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheServerlessCacheCacheUsageLimitsDataStorageToTerraform(struct?: ElasticacheServerlessCacheCacheUsageLimitsDataStorage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    maximum: cdktf.numberToTerraform(struct!.maximum),
-    minimum: cdktf.numberToTerraform(struct!.minimum),
-    unit: cdktf.stringToTerraform(struct!.unit),
+    maximum: cdktn.numberToTerraform(struct!.maximum),
+    minimum: cdktn.numberToTerraform(struct!.minimum),
+    unit: cdktn.stringToTerraform(struct!.unit),
   }
 }
 
 
-export function elasticacheServerlessCacheCacheUsageLimitsDataStorageToHclTerraform(struct?: ElasticacheServerlessCacheCacheUsageLimitsDataStorage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheServerlessCacheCacheUsageLimitsDataStorageToHclTerraform(struct?: ElasticacheServerlessCacheCacheUsageLimitsDataStorage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     maximum: {
-      value: cdktf.numberToHclTerraform(struct!.maximum),
+      value: cdktn.numberToHclTerraform(struct!.maximum),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minimum: {
-      value: cdktf.numberToHclTerraform(struct!.minimum),
+      value: cdktn.numberToHclTerraform(struct!.minimum),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -297,9 +297,9 @@ export function elasticacheServerlessCacheCacheUsageLimitsDataStorageToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference extends cdktf.ComplexObject {
+export class ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -307,11 +307,11 @@ export class ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ElasticacheServerlessCacheCacheUsageLimitsDataStorage | cdktf.IResolvable | undefined {
+  public get internalValue(): ElasticacheServerlessCacheCacheUsageLimitsDataStorage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -332,7 +332,7 @@ export class ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElasticacheServerlessCacheCacheUsageLimitsDataStorage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElasticacheServerlessCacheCacheUsageLimitsDataStorage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -340,7 +340,7 @@ export class ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReferenc
       this._minimum = undefined;
       this._unit = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -399,15 +399,15 @@ export class ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReferenc
   }
 }
 
-export class ElasticacheServerlessCacheCacheUsageLimitsDataStorageList extends cdktf.ComplexList {
-  public internalValue? : ElasticacheServerlessCacheCacheUsageLimitsDataStorage[] | cdktf.IResolvable
+export class ElasticacheServerlessCacheCacheUsageLimitsDataStorageList extends cdktn.ComplexList {
+  public internalValue? : ElasticacheServerlessCacheCacheUsageLimitsDataStorage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -429,32 +429,32 @@ export interface ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond {
   readonly minimum?: number;
 }
 
-export function elasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondToTerraform(struct?: ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondToTerraform(struct?: ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    maximum: cdktf.numberToTerraform(struct!.maximum),
-    minimum: cdktf.numberToTerraform(struct!.minimum),
+    maximum: cdktn.numberToTerraform(struct!.maximum),
+    minimum: cdktn.numberToTerraform(struct!.minimum),
   }
 }
 
 
-export function elasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondToHclTerraform(struct?: ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondToHclTerraform(struct?: ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     maximum: {
-      value: cdktf.numberToHclTerraform(struct!.maximum),
+      value: cdktn.numberToHclTerraform(struct!.maximum),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minimum: {
-      value: cdktf.numberToHclTerraform(struct!.minimum),
+      value: cdktn.numberToHclTerraform(struct!.minimum),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -465,9 +465,9 @@ export function elasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondOutputReference extends cdktf.ComplexObject {
+export class ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -475,11 +475,11 @@ export class ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond | cdktf.IResolvable | undefined {
+  public get internalValue(): ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -496,14 +496,14 @@ export class ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._maximum = undefined;
       this._minimum = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -548,15 +548,15 @@ export class ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondOutputRefere
   }
 }
 
-export class ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondList extends cdktf.ComplexList {
-  public internalValue? : ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond[] | cdktf.IResolvable
+export class ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondList extends cdktn.ComplexList {
+  public internalValue? : ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -573,41 +573,41 @@ export interface ElasticacheServerlessCacheCacheUsageLimits {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_serverless_cache#data_storage ElasticacheServerlessCache#data_storage}
   */
-  readonly dataStorage?: ElasticacheServerlessCacheCacheUsageLimitsDataStorage[] | cdktf.IResolvable;
+  readonly dataStorage?: ElasticacheServerlessCacheCacheUsageLimitsDataStorage[] | cdktn.IResolvable;
   /**
   * ecpu_per_second block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_serverless_cache#ecpu_per_second ElasticacheServerlessCache#ecpu_per_second}
   */
-  readonly ecpuPerSecond?: ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond[] | cdktf.IResolvable;
+  readonly ecpuPerSecond?: ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond[] | cdktn.IResolvable;
 }
 
-export function elasticacheServerlessCacheCacheUsageLimitsToTerraform(struct?: ElasticacheServerlessCacheCacheUsageLimits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheServerlessCacheCacheUsageLimitsToTerraform(struct?: ElasticacheServerlessCacheCacheUsageLimits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_storage: cdktf.listMapper(elasticacheServerlessCacheCacheUsageLimitsDataStorageToTerraform, true)(struct!.dataStorage),
-    ecpu_per_second: cdktf.listMapper(elasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondToTerraform, true)(struct!.ecpuPerSecond),
+    data_storage: cdktn.listMapper(elasticacheServerlessCacheCacheUsageLimitsDataStorageToTerraform, true)(struct!.dataStorage),
+    ecpu_per_second: cdktn.listMapper(elasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondToTerraform, true)(struct!.ecpuPerSecond),
   }
 }
 
 
-export function elasticacheServerlessCacheCacheUsageLimitsToHclTerraform(struct?: ElasticacheServerlessCacheCacheUsageLimits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheServerlessCacheCacheUsageLimitsToHclTerraform(struct?: ElasticacheServerlessCacheCacheUsageLimits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_storage: {
-      value: cdktf.listMapperHcl(elasticacheServerlessCacheCacheUsageLimitsDataStorageToHclTerraform, true)(struct!.dataStorage),
+      value: cdktn.listMapperHcl(elasticacheServerlessCacheCacheUsageLimitsDataStorageToHclTerraform, true)(struct!.dataStorage),
       isBlock: true,
       type: "list",
       storageClassType: "ElasticacheServerlessCacheCacheUsageLimitsDataStorageList",
     },
     ecpu_per_second: {
-      value: cdktf.listMapperHcl(elasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondToHclTerraform, true)(struct!.ecpuPerSecond),
+      value: cdktn.listMapperHcl(elasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondToHclTerraform, true)(struct!.ecpuPerSecond),
       isBlock: true,
       type: "list",
       storageClassType: "ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondList",
@@ -618,9 +618,9 @@ export function elasticacheServerlessCacheCacheUsageLimitsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticacheServerlessCacheCacheUsageLimitsOutputReference extends cdktf.ComplexObject {
+export class ElasticacheServerlessCacheCacheUsageLimitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -628,11 +628,11 @@ export class ElasticacheServerlessCacheCacheUsageLimitsOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ElasticacheServerlessCacheCacheUsageLimits | cdktf.IResolvable | undefined {
+  public get internalValue(): ElasticacheServerlessCacheCacheUsageLimits | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -649,14 +649,14 @@ export class ElasticacheServerlessCacheCacheUsageLimitsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElasticacheServerlessCacheCacheUsageLimits | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElasticacheServerlessCacheCacheUsageLimits | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataStorage.internalValue = undefined;
       this._ecpuPerSecond.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -673,7 +673,7 @@ export class ElasticacheServerlessCacheCacheUsageLimitsOutputReference extends c
   public get dataStorage() {
     return this._dataStorage;
   }
-  public putDataStorage(value: ElasticacheServerlessCacheCacheUsageLimitsDataStorage[] | cdktf.IResolvable) {
+  public putDataStorage(value: ElasticacheServerlessCacheCacheUsageLimitsDataStorage[] | cdktn.IResolvable) {
     this._dataStorage.internalValue = value;
   }
   public resetDataStorage() {
@@ -689,7 +689,7 @@ export class ElasticacheServerlessCacheCacheUsageLimitsOutputReference extends c
   public get ecpuPerSecond() {
     return this._ecpuPerSecond;
   }
-  public putEcpuPerSecond(value: ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond[] | cdktf.IResolvable) {
+  public putEcpuPerSecond(value: ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond[] | cdktn.IResolvable) {
     this._ecpuPerSecond.internalValue = value;
   }
   public resetEcpuPerSecond() {
@@ -701,15 +701,15 @@ export class ElasticacheServerlessCacheCacheUsageLimitsOutputReference extends c
   }
 }
 
-export class ElasticacheServerlessCacheCacheUsageLimitsList extends cdktf.ComplexList {
-  public internalValue? : ElasticacheServerlessCacheCacheUsageLimits[] | cdktf.IResolvable
+export class ElasticacheServerlessCacheCacheUsageLimitsList extends cdktn.ComplexList {
+  public internalValue? : ElasticacheServerlessCacheCacheUsageLimits[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -741,39 +741,39 @@ export interface ElasticacheServerlessCacheTimeouts {
   readonly update?: string;
 }
 
-export function elasticacheServerlessCacheTimeoutsToTerraform(struct?: ElasticacheServerlessCacheTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheServerlessCacheTimeoutsToTerraform(struct?: ElasticacheServerlessCacheTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function elasticacheServerlessCacheTimeoutsToHclTerraform(struct?: ElasticacheServerlessCacheTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheServerlessCacheTimeoutsToHclTerraform(struct?: ElasticacheServerlessCacheTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -784,19 +784,19 @@ export function elasticacheServerlessCacheTimeoutsToHclTerraform(struct?: Elasti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticacheServerlessCacheTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ElasticacheServerlessCacheTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ElasticacheServerlessCacheTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ElasticacheServerlessCacheTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -817,7 +817,7 @@ export class ElasticacheServerlessCacheTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElasticacheServerlessCacheTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElasticacheServerlessCacheTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -825,7 +825,7 @@ export class ElasticacheServerlessCacheTimeoutsOutputReference extends cdktf.Com
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -890,7 +890,7 @@ export class ElasticacheServerlessCacheTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_serverless_cache aws_elasticache_serverless_cache}
 */
-export class ElasticacheServerlessCache extends cdktf.TerraformResource {
+export class ElasticacheServerlessCache extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -901,14 +901,14 @@ export class ElasticacheServerlessCache extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ElasticacheServerlessCache resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ElasticacheServerlessCache resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElasticacheServerlessCache to import
   * @param importFromId The id of the existing ElasticacheServerlessCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_serverless_cache#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElasticacheServerlessCache to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticache_serverless_cache", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticache_serverless_cache", importId: importFromId, provider });
       }
 
   // ===========
@@ -1100,7 +1100,7 @@ export class ElasticacheServerlessCache extends cdktf.TerraformResource {
   // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -1153,7 +1153,7 @@ export class ElasticacheServerlessCache extends cdktf.TerraformResource {
   // subnet_ids - computed: true, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -1183,7 +1183,7 @@ export class ElasticacheServerlessCache extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1209,7 +1209,7 @@ export class ElasticacheServerlessCache extends cdktf.TerraformResource {
   public get cacheUsageLimits() {
     return this._cacheUsageLimits;
   }
-  public putCacheUsageLimits(value: ElasticacheServerlessCacheCacheUsageLimits[] | cdktf.IResolvable) {
+  public putCacheUsageLimits(value: ElasticacheServerlessCacheCacheUsageLimits[] | cdktn.IResolvable) {
     this._cacheUsageLimits.internalValue = value;
   }
   public resetCacheUsageLimits() {
@@ -1242,20 +1242,20 @@ export class ElasticacheServerlessCache extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      daily_snapshot_time: cdktf.stringToTerraform(this._dailySnapshotTime),
-      description: cdktf.stringToTerraform(this._description),
-      engine: cdktf.stringToTerraform(this._engine),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      major_engine_version: cdktf.stringToTerraform(this._majorEngineVersion),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
-      snapshot_arns_to_restore: cdktf.listMapper(cdktf.stringToTerraform, false)(this._snapshotArnsToRestore),
-      snapshot_retention_limit: cdktf.numberToTerraform(this._snapshotRetentionLimit),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      user_group_id: cdktf.stringToTerraform(this._userGroupId),
-      cache_usage_limits: cdktf.listMapper(elasticacheServerlessCacheCacheUsageLimitsToTerraform, true)(this._cacheUsageLimits.internalValue),
+      daily_snapshot_time: cdktn.stringToTerraform(this._dailySnapshotTime),
+      description: cdktn.stringToTerraform(this._description),
+      engine: cdktn.stringToTerraform(this._engine),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      major_engine_version: cdktn.stringToTerraform(this._majorEngineVersion),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupIds),
+      snapshot_arns_to_restore: cdktn.listMapper(cdktn.stringToTerraform, false)(this._snapshotArnsToRestore),
+      snapshot_retention_limit: cdktn.numberToTerraform(this._snapshotRetentionLimit),
+      subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnetIds),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      user_group_id: cdktn.stringToTerraform(this._userGroupId),
+      cache_usage_limits: cdktn.listMapper(elasticacheServerlessCacheCacheUsageLimitsToTerraform, true)(this._cacheUsageLimits.internalValue),
       timeouts: elasticacheServerlessCacheTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1263,85 +1263,85 @@ export class ElasticacheServerlessCache extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       daily_snapshot_time: {
-        value: cdktf.stringToHclTerraform(this._dailySnapshotTime),
+        value: cdktn.stringToHclTerraform(this._dailySnapshotTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       major_engine_version: {
-        value: cdktf.stringToHclTerraform(this._majorEngineVersion),
+        value: cdktn.stringToHclTerraform(this._majorEngineVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       snapshot_arns_to_restore: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._snapshotArnsToRestore),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._snapshotArnsToRestore),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       snapshot_retention_limit: {
-        value: cdktf.numberToHclTerraform(this._snapshotRetentionLimit),
+        value: cdktn.numberToHclTerraform(this._snapshotRetentionLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       subnet_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnetIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       user_group_id: {
-        value: cdktf.stringToHclTerraform(this._userGroupId),
+        value: cdktn.stringToHclTerraform(this._userGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cache_usage_limits: {
-        value: cdktf.listMapperHcl(elasticacheServerlessCacheCacheUsageLimitsToHclTerraform, true)(this._cacheUsageLimits.internalValue),
+        value: cdktn.listMapperHcl(elasticacheServerlessCacheCacheUsageLimitsToHclTerraform, true)(this._cacheUsageLimits.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ElasticacheServerlessCacheCacheUsageLimitsList",

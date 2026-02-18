@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudwatchQueryDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchQueryDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_query_definition#id CloudwatchQueryDefinition#id}
   *
@@ -42,7 +42,7 @@ export interface CloudwatchQueryDefinitionConfig extends cdktf.TerraformMetaArgu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_query_definition aws_cloudwatch_query_definition}
 */
-export class CloudwatchQueryDefinition extends cdktf.TerraformResource {
+export class CloudwatchQueryDefinition extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class CloudwatchQueryDefinition extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudwatchQueryDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudwatchQueryDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchQueryDefinition to import
   * @param importFromId The id of the existing CloudwatchQueryDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_query_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchQueryDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_query_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_query_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -186,42 +186,42 @@ export class CloudwatchQueryDefinition extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      log_group_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._logGroupNames),
-      name: cdktf.stringToTerraform(this._name),
-      query_string: cdktf.stringToTerraform(this._queryString),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      log_group_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._logGroupNames),
+      name: cdktn.stringToTerraform(this._name),
+      query_string: cdktn.stringToTerraform(this._queryString),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_group_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._logGroupNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._logGroupNames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_string: {
-        value: cdktf.stringToHclTerraform(this._queryString),
+        value: cdktn.stringToHclTerraform(this._queryString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

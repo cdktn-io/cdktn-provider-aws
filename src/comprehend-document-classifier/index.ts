@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComprehendDocumentClassifierConfig extends cdktf.TerraformMetaArguments {
+export interface ComprehendDocumentClassifierConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/comprehend_document_classifier#data_access_role_arn ComprehendDocumentClassifier#data_access_role_arn}
   */
@@ -117,60 +117,60 @@ export interface ComprehendDocumentClassifierInputDataConfigAugmentedManifests {
   readonly split?: string;
 }
 
-export function comprehendDocumentClassifierInputDataConfigAugmentedManifestsToTerraform(struct?: ComprehendDocumentClassifierInputDataConfigAugmentedManifests | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function comprehendDocumentClassifierInputDataConfigAugmentedManifestsToTerraform(struct?: ComprehendDocumentClassifierInputDataConfigAugmentedManifests | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotation_data_s3_uri: cdktf.stringToTerraform(struct!.annotationDataS3Uri),
-    attribute_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.attributeNames),
-    document_type: cdktf.stringToTerraform(struct!.documentType),
-    s3_uri: cdktf.stringToTerraform(struct!.s3Uri),
-    source_documents_s3_uri: cdktf.stringToTerraform(struct!.sourceDocumentsS3Uri),
-    split: cdktf.stringToTerraform(struct!.split),
+    annotation_data_s3_uri: cdktn.stringToTerraform(struct!.annotationDataS3Uri),
+    attribute_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.attributeNames),
+    document_type: cdktn.stringToTerraform(struct!.documentType),
+    s3_uri: cdktn.stringToTerraform(struct!.s3Uri),
+    source_documents_s3_uri: cdktn.stringToTerraform(struct!.sourceDocumentsS3Uri),
+    split: cdktn.stringToTerraform(struct!.split),
   }
 }
 
 
-export function comprehendDocumentClassifierInputDataConfigAugmentedManifestsToHclTerraform(struct?: ComprehendDocumentClassifierInputDataConfigAugmentedManifests | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function comprehendDocumentClassifierInputDataConfigAugmentedManifestsToHclTerraform(struct?: ComprehendDocumentClassifierInputDataConfigAugmentedManifests | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotation_data_s3_uri: {
-      value: cdktf.stringToHclTerraform(struct!.annotationDataS3Uri),
+      value: cdktn.stringToHclTerraform(struct!.annotationDataS3Uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     attribute_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.attributeNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.attributeNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     document_type: {
-      value: cdktf.stringToHclTerraform(struct!.documentType),
+      value: cdktn.stringToHclTerraform(struct!.documentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_uri: {
-      value: cdktf.stringToHclTerraform(struct!.s3Uri),
+      value: cdktn.stringToHclTerraform(struct!.s3Uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_documents_s3_uri: {
-      value: cdktf.stringToHclTerraform(struct!.sourceDocumentsS3Uri),
+      value: cdktn.stringToHclTerraform(struct!.sourceDocumentsS3Uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     split: {
-      value: cdktf.stringToHclTerraform(struct!.split),
+      value: cdktn.stringToHclTerraform(struct!.split),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -181,9 +181,9 @@ export function comprehendDocumentClassifierInputDataConfigAugmentedManifestsToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference extends cdktf.ComplexObject {
+export class ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -191,11 +191,11 @@ export class ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComprehendDocumentClassifierInputDataConfigAugmentedManifests | cdktf.IResolvable | undefined {
+  public get internalValue(): ComprehendDocumentClassifierInputDataConfigAugmentedManifests | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -228,7 +228,7 @@ export class ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComprehendDocumentClassifierInputDataConfigAugmentedManifests | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComprehendDocumentClassifierInputDataConfigAugmentedManifests | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -239,7 +239,7 @@ export class ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutput
       this._sourceDocumentsS3Uri = undefined;
       this._split = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -346,15 +346,15 @@ export class ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutput
   }
 }
 
-export class ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList extends cdktf.ComplexList {
-  public internalValue? : ComprehendDocumentClassifierInputDataConfigAugmentedManifests[] | cdktf.IResolvable
+export class ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList extends cdktn.ComplexList {
+  public internalValue? : ComprehendDocumentClassifierInputDataConfigAugmentedManifests[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -387,56 +387,56 @@ export interface ComprehendDocumentClassifierInputDataConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/comprehend_document_classifier#augmented_manifests ComprehendDocumentClassifier#augmented_manifests}
   */
-  readonly augmentedManifests?: ComprehendDocumentClassifierInputDataConfigAugmentedManifests[] | cdktf.IResolvable;
+  readonly augmentedManifests?: ComprehendDocumentClassifierInputDataConfigAugmentedManifests[] | cdktn.IResolvable;
 }
 
 export function comprehendDocumentClassifierInputDataConfigToTerraform(struct?: ComprehendDocumentClassifierInputDataConfigOutputReference | ComprehendDocumentClassifierInputDataConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_format: cdktf.stringToTerraform(struct!.dataFormat),
-    label_delimiter: cdktf.stringToTerraform(struct!.labelDelimiter),
-    s3_uri: cdktf.stringToTerraform(struct!.s3Uri),
-    test_s3_uri: cdktf.stringToTerraform(struct!.testS3Uri),
-    augmented_manifests: cdktf.listMapper(comprehendDocumentClassifierInputDataConfigAugmentedManifestsToTerraform, true)(struct!.augmentedManifests),
+    data_format: cdktn.stringToTerraform(struct!.dataFormat),
+    label_delimiter: cdktn.stringToTerraform(struct!.labelDelimiter),
+    s3_uri: cdktn.stringToTerraform(struct!.s3Uri),
+    test_s3_uri: cdktn.stringToTerraform(struct!.testS3Uri),
+    augmented_manifests: cdktn.listMapper(comprehendDocumentClassifierInputDataConfigAugmentedManifestsToTerraform, true)(struct!.augmentedManifests),
   }
 }
 
 
 export function comprehendDocumentClassifierInputDataConfigToHclTerraform(struct?: ComprehendDocumentClassifierInputDataConfigOutputReference | ComprehendDocumentClassifierInputDataConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_format: {
-      value: cdktf.stringToHclTerraform(struct!.dataFormat),
+      value: cdktn.stringToHclTerraform(struct!.dataFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     label_delimiter: {
-      value: cdktf.stringToHclTerraform(struct!.labelDelimiter),
+      value: cdktn.stringToHclTerraform(struct!.labelDelimiter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_uri: {
-      value: cdktf.stringToHclTerraform(struct!.s3Uri),
+      value: cdktn.stringToHclTerraform(struct!.s3Uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     test_s3_uri: {
-      value: cdktf.stringToHclTerraform(struct!.testS3Uri),
+      value: cdktn.stringToHclTerraform(struct!.testS3Uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     augmented_manifests: {
-      value: cdktf.listMapperHcl(comprehendDocumentClassifierInputDataConfigAugmentedManifestsToHclTerraform, true)(struct!.augmentedManifests),
+      value: cdktn.listMapperHcl(comprehendDocumentClassifierInputDataConfigAugmentedManifestsToHclTerraform, true)(struct!.augmentedManifests),
       isBlock: true,
       type: "set",
       storageClassType: "ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList",
@@ -447,14 +447,14 @@ export function comprehendDocumentClassifierInputDataConfigToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComprehendDocumentClassifierInputDataConfigOutputReference extends cdktf.ComplexObject {
+export class ComprehendDocumentClassifierInputDataConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -572,7 +572,7 @@ export class ComprehendDocumentClassifierInputDataConfigOutputReference extends 
   public get augmentedManifests() {
     return this._augmentedManifests;
   }
-  public putAugmentedManifests(value: ComprehendDocumentClassifierInputDataConfigAugmentedManifests[] | cdktf.IResolvable) {
+  public putAugmentedManifests(value: ComprehendDocumentClassifierInputDataConfigAugmentedManifests[] | cdktn.IResolvable) {
     this._augmentedManifests.internalValue = value;
   }
   public resetAugmentedManifests() {
@@ -595,31 +595,31 @@ export interface ComprehendDocumentClassifierOutputDataConfig {
 }
 
 export function comprehendDocumentClassifierOutputDataConfigToTerraform(struct?: ComprehendDocumentClassifierOutputDataConfigOutputReference | ComprehendDocumentClassifierOutputDataConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
-    s3_uri: cdktf.stringToTerraform(struct!.s3Uri),
+    kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
+    s3_uri: cdktn.stringToTerraform(struct!.s3Uri),
   }
 }
 
 
 export function comprehendDocumentClassifierOutputDataConfigToHclTerraform(struct?: ComprehendDocumentClassifierOutputDataConfigOutputReference | ComprehendDocumentClassifierOutputDataConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_uri: {
-      value: cdktf.stringToHclTerraform(struct!.s3Uri),
+      value: cdktn.stringToHclTerraform(struct!.s3Uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -630,14 +630,14 @@ export function comprehendDocumentClassifierOutputDataConfigToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComprehendDocumentClassifierOutputDataConfigOutputReference extends cdktf.ComplexObject {
+export class ComprehendDocumentClassifierOutputDataConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -717,39 +717,39 @@ export interface ComprehendDocumentClassifierTimeouts {
   readonly update?: string;
 }
 
-export function comprehendDocumentClassifierTimeoutsToTerraform(struct?: ComprehendDocumentClassifierTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function comprehendDocumentClassifierTimeoutsToTerraform(struct?: ComprehendDocumentClassifierTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function comprehendDocumentClassifierTimeoutsToHclTerraform(struct?: ComprehendDocumentClassifierTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function comprehendDocumentClassifierTimeoutsToHclTerraform(struct?: ComprehendDocumentClassifierTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -760,19 +760,19 @@ export function comprehendDocumentClassifierTimeoutsToHclTerraform(struct?: Comp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComprehendDocumentClassifierTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComprehendDocumentClassifierTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComprehendDocumentClassifierTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComprehendDocumentClassifierTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -793,7 +793,7 @@ export class ComprehendDocumentClassifierTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComprehendDocumentClassifierTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComprehendDocumentClassifierTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -801,7 +801,7 @@ export class ComprehendDocumentClassifierTimeoutsOutputReference extends cdktf.C
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -874,31 +874,31 @@ export interface ComprehendDocumentClassifierVpcConfig {
 }
 
 export function comprehendDocumentClassifierVpcConfigToTerraform(struct?: ComprehendDocumentClassifierVpcConfigOutputReference | ComprehendDocumentClassifierVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnets),
   }
 }
 
 
 export function comprehendDocumentClassifierVpcConfigToHclTerraform(struct?: ComprehendDocumentClassifierVpcConfigOutputReference | ComprehendDocumentClassifierVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnets: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnets),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -909,14 +909,14 @@ export function comprehendDocumentClassifierVpcConfigToHclTerraform(struct?: Com
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComprehendDocumentClassifierVpcConfigOutputReference extends cdktf.ComplexObject {
+export class ComprehendDocumentClassifierVpcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -950,7 +950,7 @@ export class ComprehendDocumentClassifierVpcConfigOutputReference extends cdktf.
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -963,7 +963,7 @@ export class ComprehendDocumentClassifierVpcConfigOutputReference extends cdktf.
   // subnets - computed: false, optional: false, required: true
   private _subnets?: string[]; 
   public get subnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -977,7 +977,7 @@ export class ComprehendDocumentClassifierVpcConfigOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/comprehend_document_classifier aws_comprehend_document_classifier}
 */
-export class ComprehendDocumentClassifier extends cdktf.TerraformResource {
+export class ComprehendDocumentClassifier extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -988,14 +988,14 @@ export class ComprehendDocumentClassifier extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComprehendDocumentClassifier resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComprehendDocumentClassifier resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComprehendDocumentClassifier to import
   * @param importFromId The id of the existing ComprehendDocumentClassifier that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/comprehend_document_classifier#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComprehendDocumentClassifier to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_comprehend_document_classifier", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_comprehend_document_classifier", importId: importFromId, provider });
       }
 
   // ===========
@@ -1302,18 +1302,18 @@ export class ComprehendDocumentClassifier extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_access_role_arn: cdktf.stringToTerraform(this._dataAccessRoleArn),
-      id: cdktf.stringToTerraform(this._id),
-      language_code: cdktf.stringToTerraform(this._languageCode),
-      mode: cdktf.stringToTerraform(this._mode),
-      model_kms_key_id: cdktf.stringToTerraform(this._modelKmsKeyId),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      version_name: cdktf.stringToTerraform(this._versionName),
-      version_name_prefix: cdktf.stringToTerraform(this._versionNamePrefix),
-      volume_kms_key_id: cdktf.stringToTerraform(this._volumeKmsKeyId),
+      data_access_role_arn: cdktn.stringToTerraform(this._dataAccessRoleArn),
+      id: cdktn.stringToTerraform(this._id),
+      language_code: cdktn.stringToTerraform(this._languageCode),
+      mode: cdktn.stringToTerraform(this._mode),
+      model_kms_key_id: cdktn.stringToTerraform(this._modelKmsKeyId),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      version_name: cdktn.stringToTerraform(this._versionName),
+      version_name_prefix: cdktn.stringToTerraform(this._versionNamePrefix),
+      volume_kms_key_id: cdktn.stringToTerraform(this._volumeKmsKeyId),
       input_data_config: comprehendDocumentClassifierInputDataConfigToTerraform(this._inputDataConfig.internalValue),
       output_data_config: comprehendDocumentClassifierOutputDataConfigToTerraform(this._outputDataConfig.internalValue),
       timeouts: comprehendDocumentClassifierTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1324,73 +1324,73 @@ export class ComprehendDocumentClassifier extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_access_role_arn: {
-        value: cdktf.stringToHclTerraform(this._dataAccessRoleArn),
+        value: cdktn.stringToHclTerraform(this._dataAccessRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       language_code: {
-        value: cdktf.stringToHclTerraform(this._languageCode),
+        value: cdktn.stringToHclTerraform(this._languageCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mode: {
-        value: cdktf.stringToHclTerraform(this._mode),
+        value: cdktn.stringToHclTerraform(this._mode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       model_kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._modelKmsKeyId),
+        value: cdktn.stringToHclTerraform(this._modelKmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       version_name: {
-        value: cdktf.stringToHclTerraform(this._versionName),
+        value: cdktn.stringToHclTerraform(this._versionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version_name_prefix: {
-        value: cdktf.stringToHclTerraform(this._versionNamePrefix),
+        value: cdktn.stringToHclTerraform(this._versionNamePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       volume_kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._volumeKmsKeyId),
+        value: cdktn.stringToHclTerraform(this._volumeKmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

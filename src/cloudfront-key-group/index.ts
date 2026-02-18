@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudfrontKeyGroupConfig extends cdktf.TerraformMetaArguments {
+export interface CloudfrontKeyGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_key_group#comment CloudfrontKeyGroup#comment}
   */
@@ -36,7 +36,7 @@ export interface CloudfrontKeyGroupConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_key_group aws_cloudfront_key_group}
 */
-export class CloudfrontKeyGroup extends cdktf.TerraformResource {
+export class CloudfrontKeyGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class CloudfrontKeyGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudfrontKeyGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudfrontKeyGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudfrontKeyGroup to import
   * @param importFromId The id of the existing CloudfrontKeyGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_key_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudfrontKeyGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_key_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_key_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -134,7 +134,7 @@ export class CloudfrontKeyGroup extends cdktf.TerraformResource {
   // items - computed: false, optional: false, required: true
   private _items?: string[]; 
   public get items() {
-    return cdktf.Fn.tolist(this.getListAttribute('items'));
+    return cdktn.Fn.tolist(this.getListAttribute('items'));
   }
   public set items(value: string[]) {
     this._items = value;
@@ -163,35 +163,35 @@ export class CloudfrontKeyGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      id: cdktf.stringToTerraform(this._id),
-      items: cdktf.listMapper(cdktf.stringToTerraform, false)(this._items),
-      name: cdktf.stringToTerraform(this._name),
+      comment: cdktn.stringToTerraform(this._comment),
+      id: cdktn.stringToTerraform(this._id),
+      items: cdktn.listMapper(cdktn.stringToTerraform, false)(this._items),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       items: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._items),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._items),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

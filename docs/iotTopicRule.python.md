@@ -57,42 +57,42 @@ iotTopicRule.IotTopicRule(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#name IotTopicRule#name}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.sql">sql</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#sql IotTopicRule#sql}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.sqlVersion">sql_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#sql_version IotTopicRule#sql_version}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.cloudwatchAlarm">cloudwatch_alarm</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]</code> | cloudwatch_alarm block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.cloudwatchLogs">cloudwatch_logs</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]</code> | cloudwatch_logs block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.cloudwatchMetric">cloudwatch_metric</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]</code> | cloudwatch_metric block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.cloudwatchAlarm">cloudwatch_alarm</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]</code> | cloudwatch_alarm block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.cloudwatchLogs">cloudwatch_logs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]</code> | cloudwatch_logs block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.cloudwatchMetric">cloudwatch_metric</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]</code> | cloudwatch_metric block. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#description IotTopicRule#description}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.dynamodb">dynamodb</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]</code> | dynamodb block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.dynamodbv2">dynamodbv2</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]</code> | dynamodbv2 block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.elasticsearch">elasticsearch</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]</code> | elasticsearch block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.dynamodb">dynamodb</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]</code> | dynamodb block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.dynamodbv2">dynamodbv2</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]</code> | dynamodbv2 block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.elasticsearch">elasticsearch</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]</code> | elasticsearch block. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.errorAction">error_action</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorAction">IotTopicRuleErrorAction</a></code> | error_action block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.firehose">firehose</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]</code> | firehose block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.http">http</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]</code> | http block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.firehose">firehose</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]</code> | firehose block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.http">http</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]</code> | http block. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#id IotTopicRule#id}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.iotAnalytics">iot_analytics</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]</code> | iot_analytics block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.iotEvents">iot_events</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]</code> | iot_events block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.kafka">kafka</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]</code> | kafka block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.kinesis">kinesis</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]</code> | kinesis block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.lambda">lambda</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]</code> | lambda block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.iotAnalytics">iot_analytics</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]</code> | iot_analytics block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.iotEvents">iot_events</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]</code> | iot_events block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.kafka">kafka</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]</code> | kafka block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.kinesis">kinesis</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]</code> | kinesis block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.lambda">lambda</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]</code> | lambda block. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.republish">republish</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]</code> | republish block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.s3">s3</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]</code> | s3 block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.sns">sns</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]</code> | sns block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.sqs">sqs</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]</code> | sqs block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.stepFunctions">step_functions</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]</code> | step_functions block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.republish">republish</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]</code> | republish block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.s3">s3</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]</code> | s3 block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.sns">sns</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]</code> | sns block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.sqs">sqs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]</code> | sqs block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.stepFunctions">step_functions</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]</code> | step_functions block. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#tags IotTopicRule#tags}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#tags_all IotTopicRule#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.timestream">timestream</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]</code> | timestream block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.timestream">timestream</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]</code> | timestream block. |
 
 ---
 
@@ -116,49 +116,49 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}.
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `cloudwatch_alarm`<sup>Optional</sup> <a name="cloudwatch_alarm" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.cloudwatchAlarm"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]
 
 cloudwatch_alarm block.
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `cloudwatch_logs`<sup>Optional</sup> <a name="cloudwatch_logs" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.cloudwatchLogs"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]
 
 cloudwatch_logs block.
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `cloudwatch_metric`<sup>Optional</sup> <a name="cloudwatch_metric" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.cloudwatchMetric"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]
 
 cloudwatch_metric block.
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `dynamodb`<sup>Optional</sup> <a name="dynamodb" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.dynamodb"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]
 
 dynamodb block.
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `dynamodbv2`<sup>Optional</sup> <a name="dynamodbv2" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.dynamodbv2"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]
 
 dynamodbv2 block.
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `elasticsearch`<sup>Optional</sup> <a name="elasticsearch" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.elasticsearch"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]
 
 elasticsearch block.
 
@@ -268,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `firehose`<sup>Optional</sup> <a name="firehose" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.firehose"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]
 
 firehose block.
 
@@ -278,7 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `http`<sup>Optional</sup> <a name="http" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.http"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]
 
 http block.
 
@@ -299,7 +299,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `iot_analytics`<sup>Optional</sup> <a name="iot_analytics" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.iotAnalytics"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]
 
 iot_analytics block.
 
@@ -309,7 +309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `iot_events`<sup>Optional</sup> <a name="iot_events" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.iotEvents"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]
 
 iot_events block.
 
@@ -319,7 +319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `kafka`<sup>Optional</sup> <a name="kafka" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.kafka"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]
 
 kafka block.
 
@@ -329,7 +329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `kinesis`<sup>Optional</sup> <a name="kinesis" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.kinesis"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]
 
 kinesis block.
 
@@ -339,7 +339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `lambda`<sup>Optional</sup> <a name="lambda" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.lambda"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]
 
 lambda block.
 
@@ -359,7 +359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `republish`<sup>Optional</sup> <a name="republish" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.republish"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]
 
 republish block.
 
@@ -369,7 +369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `s3`<sup>Optional</sup> <a name="s3" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.s3"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]
 
 s3 block.
 
@@ -379,7 +379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `sns`<sup>Optional</sup> <a name="sns" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.sns"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]
 
 sns block.
 
@@ -389,7 +389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `sqs`<sup>Optional</sup> <a name="sqs" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.sqs"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]
 
 sqs block.
 
@@ -399,7 +399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `step_functions`<sup>Optional</sup> <a name="step_functions" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.stepFunctions"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]
 
 step_functions block.
 
@@ -425,7 +425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `timestream`<sup>Optional</sup> <a name="timestream" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.timestream"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]
 
 timestream block.
 
@@ -750,7 +750,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -843,7 +843,7 @@ def put_cloudwatch_alarm(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putCloudwatchAlarm.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]
 
 ---
 
@@ -857,7 +857,7 @@ def put_cloudwatch_logs(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putCloudwatchLogs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]
 
 ---
 
@@ -871,7 +871,7 @@ def put_cloudwatch_metric(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putCloudwatchMetric.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]
 
 ---
 
@@ -885,7 +885,7 @@ def put_dynamodb(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putDynamodb.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]
 
 ---
 
@@ -899,7 +899,7 @@ def put_dynamodbv2(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putDynamodbv2.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]
 
 ---
 
@@ -913,7 +913,7 @@ def put_elasticsearch(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putElasticsearch.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]
 
 ---
 
@@ -1143,7 +1143,7 @@ def put_firehose(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putFirehose.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]
 
 ---
 
@@ -1157,7 +1157,7 @@ def put_http(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putHttp.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]
 
 ---
 
@@ -1171,7 +1171,7 @@ def put_iot_analytics(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putIotAnalytics.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]
 
 ---
 
@@ -1185,7 +1185,7 @@ def put_iot_events(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putIotEvents.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]
 
 ---
 
@@ -1199,7 +1199,7 @@ def put_kafka(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putKafka.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]
 
 ---
 
@@ -1213,7 +1213,7 @@ def put_kinesis(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putKinesis.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]
 
 ---
 
@@ -1227,7 +1227,7 @@ def put_lambda(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putLambda.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]
 
 ---
 
@@ -1241,7 +1241,7 @@ def put_republish(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putRepublish.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]
 
 ---
 
@@ -1255,7 +1255,7 @@ def put_s3(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putS3.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]
 
 ---
 
@@ -1269,7 +1269,7 @@ def put_sns(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putSns.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]
 
 ---
 
@@ -1283,7 +1283,7 @@ def put_sqs(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putSqs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]
 
 ---
 
@@ -1297,7 +1297,7 @@ def put_step_functions(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putStepFunctions.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]
 
 ---
 
@@ -1311,7 +1311,7 @@ def put_timestream(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.putTimestream.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]
 
 ---
 
@@ -1472,7 +1472,7 @@ def reset_timestream() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a IotTopicRule resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a IotTopicRule resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -1555,7 +1555,7 @@ iotTopicRule.IotTopicRule.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a IotTopicRule resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a IotTopicRule resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.generateConfigForImport.parameter.scope"></a>
 
@@ -1585,7 +1585,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.iotTopicRule.IotTopicRule.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the IotTopicRule to import is found.
 
@@ -1596,19 +1596,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchAlarm">cloudwatch_alarm</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList">IotTopicRuleCloudwatchAlarmList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchLogs">cloudwatch_logs</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList">IotTopicRuleCloudwatchLogsList</a></code> | *No description.* |
@@ -1630,37 +1630,37 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.sqs">sqs</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsList">IotTopicRuleSqsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.stepFunctions">step_functions</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList">IotTopicRuleStepFunctionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.timestream">timestream</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamList">IotTopicRuleTimestreamList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchAlarmInput">cloudwatch_alarm_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchLogsInput">cloudwatch_logs_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchMetricInput">cloudwatch_metric_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchAlarmInput">cloudwatch_alarm_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchLogsInput">cloudwatch_logs_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchMetricInput">cloudwatch_metric_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.dynamodbInput">dynamodb_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.dynamodbv2Input">dynamodbv2_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.elasticsearchInput">elasticsearch_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.dynamodbInput">dynamodb_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.dynamodbv2Input">dynamodbv2_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.elasticsearchInput">elasticsearch_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.errorActionInput">error_action_input</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorAction">IotTopicRuleErrorAction</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.firehoseInput">firehose_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.httpInput">http_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.firehoseInput">firehose_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.httpInput">http_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.iotAnalyticsInput">iot_analytics_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.iotEventsInput">iot_events_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.kafkaInput">kafka_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.kinesisInput">kinesis_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.lambdaInput">lambda_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.iotAnalyticsInput">iot_analytics_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.iotEventsInput">iot_events_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.kafkaInput">kafka_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.kinesisInput">kinesis_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.lambdaInput">lambda_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.republishInput">republish_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.s3Input">s3_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.snsInput">sns_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.republishInput">republish_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.s3Input">s3_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.snsInput">sns_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.sqlInput">sql_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.sqlVersionInput">sql_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.sqsInput">sqs_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.stepFunctionsInput">step_functions_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.sqsInput">sqs_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.stepFunctionsInput">step_functions_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.timestreamInput">timestream_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.timestreamInput">timestream_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRule.property.region">region</a></code> | <code>str</code> | *No description.* |
@@ -1689,7 +1689,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1739,7 +1739,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1749,7 +1749,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1759,7 +1759,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1779,7 +1779,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1789,7 +1789,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1799,7 +1799,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1809,7 +1809,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2029,7 +2029,7 @@ timestream: IotTopicRuleTimestreamList
 cloudwatch_alarm_input: IResolvable | typing.List[IotTopicRuleCloudwatchAlarm]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]
 
 ---
 
@@ -2039,7 +2039,7 @@ cloudwatch_alarm_input: IResolvable | typing.List[IotTopicRuleCloudwatchAlarm]
 cloudwatch_logs_input: IResolvable | typing.List[IotTopicRuleCloudwatchLogs]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]
 
 ---
 
@@ -2049,7 +2049,7 @@ cloudwatch_logs_input: IResolvable | typing.List[IotTopicRuleCloudwatchLogs]
 cloudwatch_metric_input: IResolvable | typing.List[IotTopicRuleCloudwatchMetric]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]
 
 ---
 
@@ -2069,7 +2069,7 @@ description_input: str
 dynamodb_input: IResolvable | typing.List[IotTopicRuleDynamodb]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]
 
 ---
 
@@ -2079,7 +2079,7 @@ dynamodb_input: IResolvable | typing.List[IotTopicRuleDynamodb]
 dynamodbv2_input: IResolvable | typing.List[IotTopicRuleDynamodbv2]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]
 
 ---
 
@@ -2089,7 +2089,7 @@ dynamodbv2_input: IResolvable | typing.List[IotTopicRuleDynamodbv2]
 elasticsearch_input: IResolvable | typing.List[IotTopicRuleElasticsearch]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]
 
 ---
 
@@ -2099,7 +2099,7 @@ elasticsearch_input: IResolvable | typing.List[IotTopicRuleElasticsearch]
 enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2119,7 +2119,7 @@ error_action_input: IotTopicRuleErrorAction
 firehose_input: IResolvable | typing.List[IotTopicRuleFirehose]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]
 
 ---
 
@@ -2129,7 +2129,7 @@ firehose_input: IResolvable | typing.List[IotTopicRuleFirehose]
 http_input: IResolvable | typing.List[IotTopicRuleHttp]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]
 
 ---
 
@@ -2149,7 +2149,7 @@ id_input: str
 iot_analytics_input: IResolvable | typing.List[IotTopicRuleIotAnalytics]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]
 
 ---
 
@@ -2159,7 +2159,7 @@ iot_analytics_input: IResolvable | typing.List[IotTopicRuleIotAnalytics]
 iot_events_input: IResolvable | typing.List[IotTopicRuleIotEvents]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]
 
 ---
 
@@ -2169,7 +2169,7 @@ iot_events_input: IResolvable | typing.List[IotTopicRuleIotEvents]
 kafka_input: IResolvable | typing.List[IotTopicRuleKafka]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]
 
 ---
 
@@ -2179,7 +2179,7 @@ kafka_input: IResolvable | typing.List[IotTopicRuleKafka]
 kinesis_input: IResolvable | typing.List[IotTopicRuleKinesis]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]
 
 ---
 
@@ -2189,7 +2189,7 @@ kinesis_input: IResolvable | typing.List[IotTopicRuleKinesis]
 lambda_input: IResolvable | typing.List[IotTopicRuleLambda]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]
 
 ---
 
@@ -2219,7 +2219,7 @@ region_input: str
 republish_input: IResolvable | typing.List[IotTopicRuleRepublish]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]
 
 ---
 
@@ -2229,7 +2229,7 @@ republish_input: IResolvable | typing.List[IotTopicRuleRepublish]
 s3_input: IResolvable | typing.List[IotTopicRuleS3]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]
 
 ---
 
@@ -2239,7 +2239,7 @@ s3_input: IResolvable | typing.List[IotTopicRuleS3]
 sns_input: IResolvable | typing.List[IotTopicRuleSns]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]
 
 ---
 
@@ -2269,7 +2269,7 @@ sql_version_input: str
 sqs_input: IResolvable | typing.List[IotTopicRuleSqs]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]
 
 ---
 
@@ -2279,7 +2279,7 @@ sqs_input: IResolvable | typing.List[IotTopicRuleSqs]
 step_functions_input: IResolvable | typing.List[IotTopicRuleStepFunctions]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]
 
 ---
 
@@ -2309,7 +2309,7 @@ tags_input: typing.Mapping[str]
 timestream_input: IResolvable | typing.List[IotTopicRuleTimestream]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]
 
 ---
 
@@ -2329,7 +2329,7 @@ description: str
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2517,7 +2517,7 @@ iotTopicRule.IotTopicRuleCloudwatchLogs(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.property.logGroupName">log_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 
 ---
 
@@ -2551,7 +2551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -2710,42 +2710,42 @@ iotTopicRule.IotTopicRuleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#name IotTopicRule#name}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sql">sql</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#sql IotTopicRule#sql}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sqlVersion">sql_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#sql_version IotTopicRule#sql_version}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchAlarm">cloudwatch_alarm</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]</code> | cloudwatch_alarm block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchLogs">cloudwatch_logs</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]</code> | cloudwatch_logs block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchMetric">cloudwatch_metric</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]</code> | cloudwatch_metric block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchAlarm">cloudwatch_alarm</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]</code> | cloudwatch_alarm block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchLogs">cloudwatch_logs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]</code> | cloudwatch_logs block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchMetric">cloudwatch_metric</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]</code> | cloudwatch_metric block. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#description IotTopicRule#description}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.dynamodb">dynamodb</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]</code> | dynamodb block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.dynamodbv2">dynamodbv2</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]</code> | dynamodbv2 block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.elasticsearch">elasticsearch</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]</code> | elasticsearch block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.dynamodb">dynamodb</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]</code> | dynamodb block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.dynamodbv2">dynamodbv2</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]</code> | dynamodbv2 block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.elasticsearch">elasticsearch</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]</code> | elasticsearch block. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.errorAction">error_action</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorAction">IotTopicRuleErrorAction</a></code> | error_action block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.firehose">firehose</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]</code> | firehose block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.http">http</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]</code> | http block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.firehose">firehose</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]</code> | firehose block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.http">http</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]</code> | http block. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#id IotTopicRule#id}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.iotAnalytics">iot_analytics</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]</code> | iot_analytics block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.iotEvents">iot_events</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]</code> | iot_events block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.kafka">kafka</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]</code> | kafka block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.kinesis">kinesis</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]</code> | kinesis block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.lambda">lambda</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]</code> | lambda block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.iotAnalytics">iot_analytics</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]</code> | iot_analytics block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.iotEvents">iot_events</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]</code> | iot_events block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.kafka">kafka</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]</code> | kafka block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.kinesis">kinesis</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]</code> | kinesis block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.lambda">lambda</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]</code> | lambda block. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.republish">republish</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]</code> | republish block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.s3">s3</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]</code> | s3 block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sns">sns</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]</code> | sns block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sqs">sqs</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]</code> | sqs block. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.stepFunctions">step_functions</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]</code> | step_functions block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.republish">republish</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]</code> | republish block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.s3">s3</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]</code> | s3 block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sns">sns</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]</code> | sns block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sqs">sqs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]</code> | sqs block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.stepFunctions">step_functions</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]</code> | step_functions block. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#tags IotTopicRule#tags}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#tags_all IotTopicRule#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.timestream">timestream</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]</code> | timestream block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleConfig.property.timestream">timestream</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]</code> | timestream block. |
 
 ---
 
@@ -2755,7 +2755,7 @@ iotTopicRule.IotTopicRuleConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -2765,7 +2765,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -2775,7 +2775,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -2785,7 +2785,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -2795,7 +2795,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -2805,7 +2805,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -2815,7 +2815,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2825,7 +2825,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}.
 
@@ -2873,7 +2873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 cloudwatch_alarm: IResolvable | typing.List[IotTopicRuleCloudwatchAlarm]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]
 
 cloudwatch_alarm block.
 
@@ -2887,7 +2887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 cloudwatch_logs: IResolvable | typing.List[IotTopicRuleCloudwatchLogs]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]
 
 cloudwatch_logs block.
 
@@ -2901,7 +2901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 cloudwatch_metric: IResolvable | typing.List[IotTopicRuleCloudwatchMetric]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]
 
 cloudwatch_metric block.
 
@@ -2927,7 +2927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 dynamodb: IResolvable | typing.List[IotTopicRuleDynamodb]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]
 
 dynamodb block.
 
@@ -2941,7 +2941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 dynamodbv2: IResolvable | typing.List[IotTopicRuleDynamodbv2]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]
 
 dynamodbv2 block.
 
@@ -2955,7 +2955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 elasticsearch: IResolvable | typing.List[IotTopicRuleElasticsearch]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]
 
 elasticsearch block.
 
@@ -2983,7 +2983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 firehose: IResolvable | typing.List[IotTopicRuleFirehose]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]
 
 firehose block.
 
@@ -2997,7 +2997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 http: IResolvable | typing.List[IotTopicRuleHttp]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]
 
 http block.
 
@@ -3026,7 +3026,7 @@ If you experience problems setting this value it might not be settable. Please t
 iot_analytics: IResolvable | typing.List[IotTopicRuleIotAnalytics]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]
 
 iot_analytics block.
 
@@ -3040,7 +3040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 iot_events: IResolvable | typing.List[IotTopicRuleIotEvents]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]
 
 iot_events block.
 
@@ -3054,7 +3054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 kafka: IResolvable | typing.List[IotTopicRuleKafka]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]
 
 kafka block.
 
@@ -3068,7 +3068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 kinesis: IResolvable | typing.List[IotTopicRuleKinesis]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]
 
 kinesis block.
 
@@ -3082,7 +3082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 lambda: IResolvable | typing.List[IotTopicRuleLambda]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]
 
 lambda block.
 
@@ -3110,7 +3110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 republish: IResolvable | typing.List[IotTopicRuleRepublish]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]
 
 republish block.
 
@@ -3124,7 +3124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 s3: IResolvable | typing.List[IotTopicRuleS3]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]
 
 s3 block.
 
@@ -3138,7 +3138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 sns: IResolvable | typing.List[IotTopicRuleSns]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]
 
 sns block.
 
@@ -3152,7 +3152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 sqs: IResolvable | typing.List[IotTopicRuleSqs]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]
 
 sqs block.
 
@@ -3166,7 +3166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 step_functions: IResolvable | typing.List[IotTopicRuleStepFunctions]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]
 
 step_functions block.
 
@@ -3204,7 +3204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 timestream: IResolvable | typing.List[IotTopicRuleTimestream]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]
 
 timestream block.
 
@@ -3957,7 +3957,7 @@ iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.property.logGroupName">log_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 
 ---
 
@@ -3991,7 +3991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -4449,7 +4449,7 @@ iotTopicRule.IotTopicRuleErrorActionFirehose(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.deliveryStreamName">delivery_stream_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.separator">separator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#separator IotTopicRule#separator}. |
 
 ---
@@ -4484,7 +4484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -4522,7 +4522,7 @@ iotTopicRule.IotTopicRuleErrorActionHttp(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#url IotTopicRule#url}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp.property.confirmationUrl">confirmation_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp.property.httpHeader">http_header</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]</code> | http_header block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp.property.httpHeader">http_header</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]</code> | http_header block. |
 
 ---
 
@@ -4556,7 +4556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 http_header: IResolvable | typing.List[IotTopicRuleErrorActionHttpHttpHeader]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]
 
 http_header block.
 
@@ -4630,7 +4630,7 @@ iotTopicRule.IotTopicRuleErrorActionIotAnalytics(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.property.channelName">channel_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 
 ---
 
@@ -4664,7 +4664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -4691,7 +4691,7 @@ iotTopicRule.IotTopicRuleErrorActionIotEvents(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.inputName">input_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.messageId">message_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}. |
 
 ---
@@ -4726,7 +4726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -4768,7 +4768,7 @@ iotTopicRule.IotTopicRuleErrorActionKafka(
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.clientProperties">client_properties</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.destinationArn">destination_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.topic">topic</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#topic IotTopicRule#topic}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.header">header</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]</code> | header block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.header">header</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]</code> | header block. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.partition">partition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#partition IotTopicRule#partition}. |
 
@@ -4816,7 +4816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 header: IResolvable | typing.List[IotTopicRuleErrorActionKafkaHeader]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]
 
 header block.
 
@@ -5200,7 +5200,7 @@ iotTopicRule.IotTopicRuleErrorActionSqs(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.property.queueUrl">queue_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.property.useBase64">use_base64</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.property.useBase64">use_base64</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}. |
 
 ---
 
@@ -5234,7 +5234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 use_base64: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}.
 
@@ -5321,7 +5321,7 @@ iotTopicRule.IotTopicRuleErrorActionTimestream(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.dimension">dimension</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]</code> | dimension block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.dimension">dimension</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]</code> | dimension block. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.timestamp">timestamp</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp">IotTopicRuleErrorActionTimestreamTimestamp</a></code> | timestamp block. |
@@ -5346,7 +5346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 dimension: IResolvable | typing.List[IotTopicRuleErrorActionTimestreamDimension]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]
 
 dimension block.
 
@@ -5505,7 +5505,7 @@ iotTopicRule.IotTopicRuleFirehose(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.deliveryStreamName">delivery_stream_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.separator">separator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#separator IotTopicRule#separator}. |
 
 ---
@@ -5540,7 +5540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -5578,7 +5578,7 @@ iotTopicRule.IotTopicRuleHttp(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#url IotTopicRule#url}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp.property.confirmationUrl">confirmation_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp.property.httpHeader">http_header</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]</code> | http_header block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp.property.httpHeader">http_header</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]</code> | http_header block. |
 
 ---
 
@@ -5612,7 +5612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 http_header: IResolvable | typing.List[IotTopicRuleHttpHttpHeader]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]
 
 http_header block.
 
@@ -5686,7 +5686,7 @@ iotTopicRule.IotTopicRuleIotAnalytics(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.property.channelName">channel_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 
 ---
 
@@ -5720,7 +5720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -5747,7 +5747,7 @@ iotTopicRule.IotTopicRuleIotEvents(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.inputName">input_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.messageId">message_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}. |
 
 ---
@@ -5782,7 +5782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -5824,7 +5824,7 @@ iotTopicRule.IotTopicRuleKafka(
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka.property.clientProperties">client_properties</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka.property.destinationArn">destination_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka.property.topic">topic</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#topic IotTopicRule#topic}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka.property.header">header</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>]</code> | header block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka.property.header">header</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>]</code> | header block. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka.property.partition">partition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#partition IotTopicRule#partition}. |
 
@@ -5872,7 +5872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 header: IResolvable | typing.List[IotTopicRuleKafkaHeader]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>]
 
 header block.
 
@@ -6256,7 +6256,7 @@ iotTopicRule.IotTopicRuleSqs(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs.property.queueUrl">queue_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs.property.useBase64">use_base64</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs.property.useBase64">use_base64</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}. |
 
 ---
 
@@ -6290,7 +6290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 use_base64: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}.
 
@@ -6377,7 +6377,7 @@ iotTopicRule.IotTopicRuleTimestream(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}. |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.dimension">dimension</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]</code> | dimension block. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.dimension">dimension</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]</code> | dimension block. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.timestamp">timestamp</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestamp">IotTopicRuleTimestreamTimestamp</a></code> | timestamp block. |
@@ -6402,7 +6402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 dimension: IResolvable | typing.List[IotTopicRuleTimestreamDimension]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]
 
 dimension block.
 
@@ -6558,7 +6558,7 @@ iotTopicRule.IotTopicRuleCloudwatchAlarmList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6566,7 +6566,7 @@ iotTopicRule.IotTopicRuleCloudwatchAlarmList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6636,7 +6636,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6673,7 +6673,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]</code> | *No description.* |
 
 ---
 
@@ -6707,7 +6707,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleCloudwatchAlarm]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]
 
 ---
 
@@ -6729,7 +6729,7 @@ iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6738,7 +6738,7 @@ iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6946,7 +6946,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6975,7 +6975,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.stateReason">state_reason</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.stateValue">state_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a></code> | *No description.* |
 
 ---
 
@@ -7089,7 +7089,7 @@ state_value: str
 internal_value: IResolvable | IotTopicRuleCloudwatchAlarm
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>
 
 ---
 
@@ -7110,7 +7110,7 @@ iotTopicRule.IotTopicRuleCloudwatchLogsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7118,7 +7118,7 @@ iotTopicRule.IotTopicRuleCloudwatchLogsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7188,7 +7188,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7225,7 +7225,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]</code> | *No description.* |
 
 ---
 
@@ -7259,7 +7259,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleCloudwatchLogs]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]
 
 ---
 
@@ -7281,7 +7281,7 @@ iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7290,7 +7290,7 @@ iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7499,7 +7499,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7526,13 +7526,13 @@ def reset_batch_mode() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.logGroupNameInput">log_group_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.logGroupName">log_group_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a></code> | *No description.* |
 
 ---
 
@@ -7566,7 +7566,7 @@ fqn: str
 batch_mode_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -7596,7 +7596,7 @@ role_arn_input: str
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -7626,7 +7626,7 @@ role_arn: str
 internal_value: IResolvable | IotTopicRuleCloudwatchLogs
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>
 
 ---
 
@@ -7647,7 +7647,7 @@ iotTopicRule.IotTopicRuleCloudwatchMetricList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7655,7 +7655,7 @@ iotTopicRule.IotTopicRuleCloudwatchMetricList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7725,7 +7725,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7762,7 +7762,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]</code> | *No description.* |
 
 ---
 
@@ -7796,7 +7796,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleCloudwatchMetric]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]
 
 ---
 
@@ -7818,7 +7818,7 @@ iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7827,7 +7827,7 @@ iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8036,7 +8036,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8075,7 +8075,7 @@ def reset_metric_timestamp() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.metricUnit">metric_unit</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.metricValue">metric_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a></code> | *No description.* |
 
 ---
 
@@ -8229,7 +8229,7 @@ role_arn: str
 internal_value: IResolvable | IotTopicRuleCloudwatchMetric
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>
 
 ---
 
@@ -8250,7 +8250,7 @@ iotTopicRule.IotTopicRuleDynamodbList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8258,7 +8258,7 @@ iotTopicRule.IotTopicRuleDynamodbList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8328,7 +8328,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8365,7 +8365,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]</code> | *No description.* |
 
 ---
 
@@ -8399,7 +8399,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleDynamodb]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]
 
 ---
 
@@ -8421,7 +8421,7 @@ iotTopicRule.IotTopicRuleDynamodbOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8430,7 +8430,7 @@ iotTopicRule.IotTopicRuleDynamodbOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8644,7 +8644,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8721,7 +8721,7 @@ def reset_range_key_value() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.rangeKeyValue">range_key_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.tableName">table_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a></code> | *No description.* |
 
 ---
 
@@ -8955,7 +8955,7 @@ table_name: str
 internal_value: IResolvable | IotTopicRuleDynamodb
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>
 
 ---
 
@@ -8976,7 +8976,7 @@ iotTopicRule.IotTopicRuleDynamodbv2List(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8984,7 +8984,7 @@ iotTopicRule.IotTopicRuleDynamodbv2List(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9054,7 +9054,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9091,7 +9091,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]</code> | *No description.* |
 
 ---
 
@@ -9125,7 +9125,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleDynamodbv2]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]
 
 ---
 
@@ -9147,7 +9147,7 @@ iotTopicRule.IotTopicRuleDynamodbv2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9156,7 +9156,7 @@ iotTopicRule.IotTopicRuleDynamodbv2OutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9366,7 +9366,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9413,7 +9413,7 @@ def reset_put_item() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.putItemInput">put_item_input</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItem">IotTopicRuleDynamodbv2PutItem</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a></code> | *No description.* |
 
 ---
 
@@ -9487,7 +9487,7 @@ role_arn: str
 internal_value: IResolvable | IotTopicRuleDynamodbv2
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>
 
 ---
 
@@ -9507,14 +9507,14 @@ iotTopicRule.IotTopicRuleDynamodbv2PutItemOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItemOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItemOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItemOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItemOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9706,7 +9706,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItemOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9804,7 +9804,7 @@ iotTopicRule.IotTopicRuleElasticsearchList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9812,7 +9812,7 @@ iotTopicRule.IotTopicRuleElasticsearchList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9882,7 +9882,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9919,7 +9919,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]</code> | *No description.* |
 
 ---
 
@@ -9953,7 +9953,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleElasticsearch]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]
 
 ---
 
@@ -9975,7 +9975,7 @@ iotTopicRule.IotTopicRuleElasticsearchOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9984,7 +9984,7 @@ iotTopicRule.IotTopicRuleElasticsearchOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10192,7 +10192,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10223,7 +10223,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.index">index</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a></code> | *No description.* |
 
 ---
 
@@ -10357,7 +10357,7 @@ type: str
 internal_value: IResolvable | IotTopicRuleElasticsearch
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>
 
 ---
 
@@ -10377,14 +10377,14 @@ iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarmOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarmOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarmOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarmOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarmOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10576,7 +10576,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarmOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10739,14 +10739,14 @@ iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10939,7 +10939,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10966,10 +10966,10 @@ def reset_batch_mode() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.logGroupNameInput">log_group_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.logGroupName">log_group_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs">IotTopicRuleErrorActionCloudwatchLogs</a></code> | *No description.* |
@@ -11006,7 +11006,7 @@ fqn: str
 batch_mode_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11036,7 +11036,7 @@ role_arn_input: str
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11086,14 +11086,14 @@ iotTopicRule.IotTopicRuleErrorActionCloudwatchMetricOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetricOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetricOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetricOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetricOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11286,7 +11286,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetricOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11499,14 +11499,14 @@ iotTopicRule.IotTopicRuleErrorActionDynamodbOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11704,7 +11704,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12035,14 +12035,14 @@ iotTopicRule.IotTopicRuleErrorActionDynamodbv2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12236,7 +12236,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12377,14 +12377,14 @@ iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItemOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItemOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItemOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItemOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItemOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12576,7 +12576,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItemOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12673,14 +12673,14 @@ iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12872,7 +12872,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13057,14 +13057,14 @@ iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13258,7 +13258,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13291,11 +13291,11 @@ def reset_separator() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.deliveryStreamNameInput">delivery_stream_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.separatorInput">separator_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.deliveryStreamName">delivery_stream_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.separator">separator</a></code> | <code>str</code> | *No description.* |
@@ -13333,7 +13333,7 @@ fqn: str
 batch_mode_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -13373,7 +13373,7 @@ separator_input: str
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -13434,7 +13434,7 @@ iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13442,7 +13442,7 @@ iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13512,7 +13512,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13549,7 +13549,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]</code> | *No description.* |
 
 ---
 
@@ -13583,7 +13583,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleErrorActionHttpHttpHeader]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]
 
 ---
 
@@ -13605,7 +13605,7 @@ iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13614,7 +13614,7 @@ iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13822,7 +13822,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13847,7 +13847,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a></code> | *No description.* |
 
 ---
 
@@ -13921,7 +13921,7 @@ value: str
 internal_value: IResolvable | IotTopicRuleErrorActionHttpHttpHeader
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>
 
 ---
 
@@ -13941,14 +13941,14 @@ iotTopicRule.IotTopicRuleErrorActionHttpOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14143,7 +14143,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14167,7 +14167,7 @@ def put_http_header(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.putHttpHeader.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]
 
 ---
 
@@ -14192,7 +14192,7 @@ def reset_http_header() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.httpHeader">http_header</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList">IotTopicRuleErrorActionHttpHttpHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.confirmationUrlInput">confirmation_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.httpHeaderInput">http_header_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.httpHeaderInput">http_header_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.confirmationUrl">confirmation_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
@@ -14250,7 +14250,7 @@ confirmation_url_input: str
 http_header_input: IResolvable | typing.List[IotTopicRuleErrorActionHttpHttpHeader]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]
 
 ---
 
@@ -14310,14 +14310,14 @@ iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14510,7 +14510,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14537,10 +14537,10 @@ def reset_batch_mode() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.channelNameInput">channel_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.channelName">channel_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics">IotTopicRuleErrorActionIotAnalytics</a></code> | *No description.* |
@@ -14577,7 +14577,7 @@ fqn: str
 batch_mode_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -14607,7 +14607,7 @@ role_arn_input: str
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -14657,14 +14657,14 @@ iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14858,7 +14858,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14891,11 +14891,11 @@ def reset_message_id() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.inputNameInput">input_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.messageIdInput">message_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.inputName">input_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.messageId">message_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
@@ -14933,7 +14933,7 @@ fqn: str
 batch_mode_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -14973,7 +14973,7 @@ role_arn_input: str
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -15034,7 +15034,7 @@ iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15042,7 +15042,7 @@ iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15112,7 +15112,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15149,7 +15149,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]</code> | *No description.* |
 
 ---
 
@@ -15183,7 +15183,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleErrorActionKafkaHeader]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]
 
 ---
 
@@ -15205,7 +15205,7 @@ iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15214,7 +15214,7 @@ iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15422,7 +15422,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15447,7 +15447,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a></code> | *No description.* |
 
 ---
 
@@ -15521,7 +15521,7 @@ value: str
 internal_value: IResolvable | IotTopicRuleErrorActionKafkaHeader
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>
 
 ---
 
@@ -15541,14 +15541,14 @@ iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15744,7 +15744,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15768,7 +15768,7 @@ def put_header(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.putHeader.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]
 
 ---
 
@@ -15800,7 +15800,7 @@ def reset_partition() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.header">header</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList">IotTopicRuleErrorActionKafkaHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.clientPropertiesInput">client_properties_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.destinationArnInput">destination_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.headerInput">header_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.headerInput">header_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.partitionInput">partition_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.topicInput">topic_input</a></code> | <code>str</code> | *No description.* |
@@ -15873,7 +15873,7 @@ destination_arn_input: str
 header_input: IResolvable | typing.List[IotTopicRuleErrorActionKafkaHeader]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]
 
 ---
 
@@ -15983,14 +15983,14 @@ iotTopicRule.IotTopicRuleErrorActionKinesisOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesisOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesisOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesisOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesisOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16183,7 +16183,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesisOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16330,14 +16330,14 @@ iotTopicRule.IotTopicRuleErrorActionLambdaOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionLambdaOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionLambdaOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionLambdaOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionLambdaOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16529,7 +16529,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionLambdaOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16626,14 +16626,14 @@ iotTopicRule.IotTopicRuleErrorActionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16863,7 +16863,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16948,7 +16948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `batch_mode`<sup>Optional</sup> <a name="batch_mode" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference.putCloudwatchLogs.parameter.batchMode"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -17223,7 +17223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `batch_mode`<sup>Optional</sup> <a name="batch_mode" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference.putFirehose.parameter.batchMode"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -17265,7 +17265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `http_header`<sup>Optional</sup> <a name="http_header" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference.putHttp.parameter.httpHeader"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]
 
 http_header block.
 
@@ -17301,7 +17301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `batch_mode`<sup>Optional</sup> <a name="batch_mode" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference.putIotAnalytics.parameter.batchMode"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -17336,7 +17336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `batch_mode`<sup>Optional</sup> <a name="batch_mode" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference.putIotEvents.parameter.batchMode"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -17389,7 +17389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `header`<sup>Optional</sup> <a name="header" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference.putKafka.parameter.header"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]
 
 header block.
 
@@ -17602,7 +17602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `use_base64`<sup>Required</sup> <a name="use_base64" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference.putSqs.parameter.useBase64"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}.
 
@@ -17664,7 +17664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `dimension`<sup>Required</sup> <a name="dimension" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference.putTimestream.parameter.dimension"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]
 
 dimension block.
 
@@ -18291,14 +18291,14 @@ iotTopicRule.IotTopicRuleErrorActionRepublishOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublishOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublishOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublishOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublishOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18491,7 +18491,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublishOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18638,14 +18638,14 @@ iotTopicRule.IotTopicRuleErrorActionS3OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18838,7 +18838,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19007,14 +19007,14 @@ iotTopicRule.IotTopicRuleErrorActionSnsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSnsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSnsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSnsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSnsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19207,7 +19207,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSnsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19354,14 +19354,14 @@ iotTopicRule.IotTopicRuleErrorActionSqsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19553,7 +19553,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19576,10 +19576,10 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.queueUrlInput">queue_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.useBase64Input">use_base64_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.useBase64Input">use_base64_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.queueUrl">queue_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.useBase64">use_base64</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.useBase64">use_base64</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs">IotTopicRuleErrorActionSqs</a></code> | *No description.* |
 
 ---
@@ -19634,7 +19634,7 @@ role_arn_input: str
 use_base64_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -19664,7 +19664,7 @@ role_arn: str
 use_base64: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -19694,14 +19694,14 @@ iotTopicRule.IotTopicRuleErrorActionStepFunctionsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19894,7 +19894,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20042,7 +20042,7 @@ iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20050,7 +20050,7 @@ iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20120,7 +20120,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20157,7 +20157,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]</code> | *No description.* |
 
 ---
 
@@ -20191,7 +20191,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleErrorActionTimestreamDimension]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]
 
 ---
 
@@ -20213,7 +20213,7 @@ iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20222,7 +20222,7 @@ iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20430,7 +20430,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20455,7 +20455,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a></code> | *No description.* |
 
 ---
 
@@ -20529,7 +20529,7 @@ value: str
 internal_value: IResolvable | IotTopicRuleErrorActionTimestreamDimension
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>
 
 ---
 
@@ -20549,14 +20549,14 @@ iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20751,7 +20751,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20775,7 +20775,7 @@ def put_dimension(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.putDimension.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]
 
 ---
 
@@ -20820,7 +20820,7 @@ def reset_timestamp() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.dimension">dimension</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList">IotTopicRuleErrorActionTimestreamDimensionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.timestamp">timestamp</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference">IotTopicRuleErrorActionTimestreamTimestampOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.databaseNameInput">database_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.dimensionInput">dimension_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.dimensionInput">dimension_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.tableNameInput">table_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.timestampInput">timestamp_input</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp">IotTopicRuleErrorActionTimestreamTimestamp</a></code> | *No description.* |
@@ -20891,7 +20891,7 @@ database_name_input: str
 dimension_input: IResolvable | typing.List[IotTopicRuleErrorActionTimestreamDimension]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]
 
 ---
 
@@ -20981,14 +20981,14 @@ iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21180,7 +21180,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21300,7 +21300,7 @@ iotTopicRule.IotTopicRuleFirehoseList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21308,7 +21308,7 @@ iotTopicRule.IotTopicRuleFirehoseList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21378,7 +21378,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21415,7 +21415,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]</code> | *No description.* |
 
 ---
 
@@ -21449,7 +21449,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleFirehose]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]
 
 ---
 
@@ -21471,7 +21471,7 @@ iotTopicRule.IotTopicRuleFirehoseOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -21480,7 +21480,7 @@ iotTopicRule.IotTopicRuleFirehoseOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21690,7 +21690,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21723,15 +21723,15 @@ def reset_separator() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.deliveryStreamNameInput">delivery_stream_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.separatorInput">separator_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.deliveryStreamName">delivery_stream_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.separator">separator</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a></code> | *No description.* |
 
 ---
 
@@ -21765,7 +21765,7 @@ fqn: str
 batch_mode_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -21805,7 +21805,7 @@ separator_input: str
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -21845,7 +21845,7 @@ separator: str
 internal_value: IResolvable | IotTopicRuleFirehose
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>
 
 ---
 
@@ -21866,7 +21866,7 @@ iotTopicRule.IotTopicRuleHttpHttpHeaderList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21874,7 +21874,7 @@ iotTopicRule.IotTopicRuleHttpHttpHeaderList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21944,7 +21944,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21981,7 +21981,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]</code> | *No description.* |
 
 ---
 
@@ -22015,7 +22015,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleHttpHttpHeader]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]
 
 ---
 
@@ -22037,7 +22037,7 @@ iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -22046,7 +22046,7 @@ iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22254,7 +22254,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22279,7 +22279,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a></code> | *No description.* |
 
 ---
 
@@ -22353,7 +22353,7 @@ value: str
 internal_value: IResolvable | IotTopicRuleHttpHttpHeader
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>
 
 ---
 
@@ -22374,7 +22374,7 @@ iotTopicRule.IotTopicRuleHttpList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -22382,7 +22382,7 @@ iotTopicRule.IotTopicRuleHttpList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22452,7 +22452,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22489,7 +22489,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]</code> | *No description.* |
 
 ---
 
@@ -22523,7 +22523,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleHttp]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]
 
 ---
 
@@ -22545,7 +22545,7 @@ iotTopicRule.IotTopicRuleHttpOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -22554,7 +22554,7 @@ iotTopicRule.IotTopicRuleHttpOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22765,7 +22765,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22789,7 +22789,7 @@ def put_http_header(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.putHttpHeader.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]
 
 ---
 
@@ -22814,11 +22814,11 @@ def reset_http_header() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.httpHeader">http_header</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList">IotTopicRuleHttpHttpHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.confirmationUrlInput">confirmation_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.httpHeaderInput">http_header_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.httpHeaderInput">http_header_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.confirmationUrl">confirmation_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a></code> | *No description.* |
 
 ---
 
@@ -22872,7 +22872,7 @@ confirmation_url_input: str
 http_header_input: IResolvable | typing.List[IotTopicRuleHttpHttpHeader]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]
 
 ---
 
@@ -22912,7 +22912,7 @@ url: str
 internal_value: IResolvable | IotTopicRuleHttp
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>
 
 ---
 
@@ -22933,7 +22933,7 @@ iotTopicRule.IotTopicRuleIotAnalyticsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -22941,7 +22941,7 @@ iotTopicRule.IotTopicRuleIotAnalyticsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23011,7 +23011,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23048,7 +23048,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]</code> | *No description.* |
 
 ---
 
@@ -23082,7 +23082,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleIotAnalytics]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]
 
 ---
 
@@ -23104,7 +23104,7 @@ iotTopicRule.IotTopicRuleIotAnalyticsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -23113,7 +23113,7 @@ iotTopicRule.IotTopicRuleIotAnalyticsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23322,7 +23322,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23349,13 +23349,13 @@ def reset_batch_mode() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.channelNameInput">channel_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.channelName">channel_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a></code> | *No description.* |
 
 ---
 
@@ -23389,7 +23389,7 @@ fqn: str
 batch_mode_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -23419,7 +23419,7 @@ role_arn_input: str
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -23449,7 +23449,7 @@ role_arn: str
 internal_value: IResolvable | IotTopicRuleIotAnalytics
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>
 
 ---
 
@@ -23470,7 +23470,7 @@ iotTopicRule.IotTopicRuleIotEventsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -23478,7 +23478,7 @@ iotTopicRule.IotTopicRuleIotEventsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23548,7 +23548,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23585,7 +23585,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]</code> | *No description.* |
 
 ---
 
@@ -23619,7 +23619,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleIotEvents]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]
 
 ---
 
@@ -23641,7 +23641,7 @@ iotTopicRule.IotTopicRuleIotEventsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -23650,7 +23650,7 @@ iotTopicRule.IotTopicRuleIotEventsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23860,7 +23860,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23893,15 +23893,15 @@ def reset_message_id() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.inputNameInput">input_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.messageIdInput">message_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.batchMode">batch_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.inputName">input_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.messageId">message_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a></code> | *No description.* |
 
 ---
 
@@ -23935,7 +23935,7 @@ fqn: str
 batch_mode_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -23975,7 +23975,7 @@ role_arn_input: str
 batch_mode: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -24015,7 +24015,7 @@ role_arn: str
 internal_value: IResolvable | IotTopicRuleIotEvents
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>
 
 ---
 
@@ -24036,7 +24036,7 @@ iotTopicRule.IotTopicRuleKafkaHeaderList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -24044,7 +24044,7 @@ iotTopicRule.IotTopicRuleKafkaHeaderList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24114,7 +24114,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24151,7 +24151,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>]</code> | *No description.* |
 
 ---
 
@@ -24185,7 +24185,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleKafkaHeader]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>]
 
 ---
 
@@ -24207,7 +24207,7 @@ iotTopicRule.IotTopicRuleKafkaHeaderOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24216,7 +24216,7 @@ iotTopicRule.IotTopicRuleKafkaHeaderOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24424,7 +24424,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24449,7 +24449,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a></code> | *No description.* |
 
 ---
 
@@ -24523,7 +24523,7 @@ value: str
 internal_value: IResolvable | IotTopicRuleKafkaHeader
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>
 
 ---
 
@@ -24544,7 +24544,7 @@ iotTopicRule.IotTopicRuleKafkaList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -24552,7 +24552,7 @@ iotTopicRule.IotTopicRuleKafkaList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24622,7 +24622,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24659,7 +24659,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]</code> | *No description.* |
 
 ---
 
@@ -24693,7 +24693,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleKafka]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]
 
 ---
 
@@ -24715,7 +24715,7 @@ iotTopicRule.IotTopicRuleKafkaOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24724,7 +24724,7 @@ iotTopicRule.IotTopicRuleKafkaOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24936,7 +24936,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24960,7 +24960,7 @@ def put_header(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.putHeader.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>]
 
 ---
 
@@ -24992,7 +24992,7 @@ def reset_partition() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.header">header</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList">IotTopicRuleKafkaHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.clientPropertiesInput">client_properties_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.destinationArnInput">destination_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.headerInput">header_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.headerInput">header_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.partitionInput">partition_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.topicInput">topic_input</a></code> | <code>str</code> | *No description.* |
@@ -25001,7 +25001,7 @@ def reset_partition() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.partition">partition</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.topic">topic</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a></code> | *No description.* |
 
 ---
 
@@ -25065,7 +25065,7 @@ destination_arn_input: str
 header_input: IResolvable | typing.List[IotTopicRuleKafkaHeader]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>]
 
 ---
 
@@ -25155,7 +25155,7 @@ topic: str
 internal_value: IResolvable | IotTopicRuleKafka
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>
 
 ---
 
@@ -25176,7 +25176,7 @@ iotTopicRule.IotTopicRuleKinesisList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25184,7 +25184,7 @@ iotTopicRule.IotTopicRuleKinesisList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25254,7 +25254,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25291,7 +25291,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]</code> | *No description.* |
 
 ---
 
@@ -25325,7 +25325,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleKinesis]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]
 
 ---
 
@@ -25347,7 +25347,7 @@ iotTopicRule.IotTopicRuleKinesisOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -25356,7 +25356,7 @@ iotTopicRule.IotTopicRuleKinesisOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25565,7 +25565,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25598,7 +25598,7 @@ def reset_partition_key() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.partitionKey">partition_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.streamName">stream_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a></code> | *No description.* |
 
 ---
 
@@ -25692,7 +25692,7 @@ stream_name: str
 internal_value: IResolvable | IotTopicRuleKinesis
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>
 
 ---
 
@@ -25713,7 +25713,7 @@ iotTopicRule.IotTopicRuleLambdaList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25721,7 +25721,7 @@ iotTopicRule.IotTopicRuleLambdaList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25791,7 +25791,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25828,7 +25828,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]</code> | *No description.* |
 
 ---
 
@@ -25862,7 +25862,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleLambda]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]
 
 ---
 
@@ -25884,7 +25884,7 @@ iotTopicRule.IotTopicRuleLambdaOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -25893,7 +25893,7 @@ iotTopicRule.IotTopicRuleLambdaOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26101,7 +26101,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26124,7 +26124,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.functionArnInput">function_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.functionArn">function_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a></code> | *No description.* |
 
 ---
 
@@ -26178,7 +26178,7 @@ function_arn: str
 internal_value: IResolvable | IotTopicRuleLambda
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>
 
 ---
 
@@ -26199,7 +26199,7 @@ iotTopicRule.IotTopicRuleRepublishList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -26207,7 +26207,7 @@ iotTopicRule.IotTopicRuleRepublishList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26277,7 +26277,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26314,7 +26314,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]</code> | *No description.* |
 
 ---
 
@@ -26348,7 +26348,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleRepublish]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]
 
 ---
 
@@ -26370,7 +26370,7 @@ iotTopicRule.IotTopicRuleRepublishOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -26379,7 +26379,7 @@ iotTopicRule.IotTopicRuleRepublishOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26588,7 +26588,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26621,7 +26621,7 @@ def reset_qos() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.qos">qos</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.topic">topic</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a></code> | *No description.* |
 
 ---
 
@@ -26715,7 +26715,7 @@ topic: str
 internal_value: IResolvable | IotTopicRuleRepublish
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>
 
 ---
 
@@ -26736,7 +26736,7 @@ iotTopicRule.IotTopicRuleS3List(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3List.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3List.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3List.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3List.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -26744,7 +26744,7 @@ iotTopicRule.IotTopicRuleS3List(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3List.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26814,7 +26814,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3List.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26851,7 +26851,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3List.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3List.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3List.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3List.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]</code> | *No description.* |
 
 ---
 
@@ -26885,7 +26885,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleS3]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]
 
 ---
 
@@ -26907,7 +26907,7 @@ iotTopicRule.IotTopicRuleS3OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -26916,7 +26916,7 @@ iotTopicRule.IotTopicRuleS3OutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27125,7 +27125,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27160,7 +27160,7 @@ def reset_canned_acl() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.cannedAcl">canned_acl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a></code> | *No description.* |
 
 ---
 
@@ -27274,7 +27274,7 @@ role_arn: str
 internal_value: IResolvable | IotTopicRuleS3
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>
 
 ---
 
@@ -27295,7 +27295,7 @@ iotTopicRule.IotTopicRuleSnsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -27303,7 +27303,7 @@ iotTopicRule.IotTopicRuleSnsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27373,7 +27373,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27410,7 +27410,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]</code> | *No description.* |
 
 ---
 
@@ -27444,7 +27444,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleSns]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]
 
 ---
 
@@ -27466,7 +27466,7 @@ iotTopicRule.IotTopicRuleSnsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -27475,7 +27475,7 @@ iotTopicRule.IotTopicRuleSnsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27684,7 +27684,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27717,7 +27717,7 @@ def reset_message_format() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.messageFormat">message_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.targetArn">target_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a></code> | *No description.* |
 
 ---
 
@@ -27811,7 +27811,7 @@ target_arn: str
 internal_value: IResolvable | IotTopicRuleSns
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>
 
 ---
 
@@ -27832,7 +27832,7 @@ iotTopicRule.IotTopicRuleSqsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -27840,7 +27840,7 @@ iotTopicRule.IotTopicRuleSqsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27910,7 +27910,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27947,7 +27947,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]</code> | *No description.* |
 
 ---
 
@@ -27981,7 +27981,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleSqs]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]
 
 ---
 
@@ -28003,7 +28003,7 @@ iotTopicRule.IotTopicRuleSqsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -28012,7 +28012,7 @@ iotTopicRule.IotTopicRuleSqsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28220,7 +28220,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28243,11 +28243,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.queueUrlInput">queue_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.useBase64Input">use_base64_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.useBase64Input">use_base64_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.queueUrl">queue_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.useBase64">use_base64</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.useBase64">use_base64</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a></code> | *No description.* |
 
 ---
 
@@ -28301,7 +28301,7 @@ role_arn_input: str
 use_base64_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -28331,7 +28331,7 @@ role_arn: str
 use_base64: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -28341,7 +28341,7 @@ use_base64: bool | IResolvable
 internal_value: IResolvable | IotTopicRuleSqs
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>
 
 ---
 
@@ -28362,7 +28362,7 @@ iotTopicRule.IotTopicRuleStepFunctionsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -28370,7 +28370,7 @@ iotTopicRule.IotTopicRuleStepFunctionsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28440,7 +28440,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28477,7 +28477,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]</code> | *No description.* |
 
 ---
 
@@ -28511,7 +28511,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleStepFunctions]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]
 
 ---
 
@@ -28533,7 +28533,7 @@ iotTopicRule.IotTopicRuleStepFunctionsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -28542,7 +28542,7 @@ iotTopicRule.IotTopicRuleStepFunctionsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28751,7 +28751,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28784,7 +28784,7 @@ def reset_execution_name_prefix() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.executionNamePrefix">execution_name_prefix</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.stateMachineName">state_machine_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a></code> | *No description.* |
 
 ---
 
@@ -28878,7 +28878,7 @@ state_machine_name: str
 internal_value: IResolvable | IotTopicRuleStepFunctions
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>
 
 ---
 
@@ -28899,7 +28899,7 @@ iotTopicRule.IotTopicRuleTimestreamDimensionList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -28907,7 +28907,7 @@ iotTopicRule.IotTopicRuleTimestreamDimensionList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28977,7 +28977,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29014,7 +29014,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]</code> | *No description.* |
 
 ---
 
@@ -29048,7 +29048,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleTimestreamDimension]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]
 
 ---
 
@@ -29070,7 +29070,7 @@ iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29079,7 +29079,7 @@ iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29287,7 +29287,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29312,7 +29312,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a></code> | *No description.* |
 
 ---
 
@@ -29386,7 +29386,7 @@ value: str
 internal_value: IResolvable | IotTopicRuleTimestreamDimension
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>
 
 ---
 
@@ -29407,7 +29407,7 @@ iotTopicRule.IotTopicRuleTimestreamList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -29415,7 +29415,7 @@ iotTopicRule.IotTopicRuleTimestreamList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29485,7 +29485,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29522,7 +29522,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]</code> | *No description.* |
 
 ---
 
@@ -29556,7 +29556,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IotTopicRuleTimestream]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]
 
 ---
 
@@ -29578,7 +29578,7 @@ iotTopicRule.IotTopicRuleTimestreamOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29587,7 +29587,7 @@ iotTopicRule.IotTopicRuleTimestreamOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29798,7 +29798,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29822,7 +29822,7 @@ def put_dimension(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.putDimension.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]
 
 ---
 
@@ -29867,14 +29867,14 @@ def reset_timestamp() -> None
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.dimension">dimension</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList">IotTopicRuleTimestreamDimensionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.timestamp">timestamp</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestampOutputReference">IotTopicRuleTimestreamTimestampOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.databaseNameInput">database_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.dimensionInput">dimension_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.dimensionInput">dimension_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.tableNameInput">table_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.timestampInput">timestamp_input</a></code> | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestamp">IotTopicRuleTimestreamTimestamp</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.databaseName">database_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.tableName">table_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a></code> | *No description.* |
 
 ---
 
@@ -29938,7 +29938,7 @@ database_name_input: str
 dimension_input: IResolvable | typing.List[IotTopicRuleTimestreamDimension]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]
 
 ---
 
@@ -30008,7 +30008,7 @@ table_name: str
 internal_value: IResolvable | IotTopicRuleTimestream
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>
 
 ---
 
@@ -30028,14 +30028,14 @@ iotTopicRule.IotTopicRuleTimestreamTimestampOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestampOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestampOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestampOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestampOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30227,7 +30227,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestampOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 

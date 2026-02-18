@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppsyncChannelNamespaceConfig extends cdktf.TerraformMetaArguments {
+export interface AppsyncChannelNamespaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_channel_namespace#api_id AppsyncChannelNamespace#api_id}
   */
@@ -39,19 +39,19 @@ export interface AppsyncChannelNamespaceConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_channel_namespace#handler_configs AppsyncChannelNamespace#handler_configs}
   */
-  readonly handlerConfigs?: AppsyncChannelNamespaceHandlerConfigs[] | cdktf.IResolvable;
+  readonly handlerConfigs?: AppsyncChannelNamespaceHandlerConfigs[] | cdktn.IResolvable;
   /**
   * publish_auth_mode block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_channel_namespace#publish_auth_mode AppsyncChannelNamespace#publish_auth_mode}
   */
-  readonly publishAuthMode?: AppsyncChannelNamespacePublishAuthMode[] | cdktf.IResolvable;
+  readonly publishAuthMode?: AppsyncChannelNamespacePublishAuthMode[] | cdktn.IResolvable;
   /**
   * subscribe_auth_mode block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_channel_namespace#subscribe_auth_mode AppsyncChannelNamespace#subscribe_auth_mode}
   */
-  readonly subscribeAuthMode?: AppsyncChannelNamespaceSubscribeAuthMode[] | cdktf.IResolvable;
+  readonly subscribeAuthMode?: AppsyncChannelNamespaceSubscribeAuthMode[] | cdktn.IResolvable;
 }
 export interface AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig {
   /**
@@ -60,25 +60,25 @@ export interface AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambda
   readonly invokeType?: string;
 }
 
-export function appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigToTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigToTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    invoke_type: cdktf.stringToTerraform(struct!.invokeType),
+    invoke_type: cdktn.stringToTerraform(struct!.invokeType),
   }
 }
 
 
-export function appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigToHclTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigToHclTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     invoke_type: {
-      value: cdktf.stringToHclTerraform(struct!.invokeType),
+      value: cdktn.stringToHclTerraform(struct!.invokeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -89,9 +89,9 @@ export function appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -99,11 +99,11 @@ export class AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -116,13 +116,13 @@ export class AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._invokeType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -150,15 +150,15 @@ export class AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConf
   }
 }
 
-export class AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigList extends cdktf.ComplexList {
-  public internalValue? : AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig[] | cdktf.IResolvable
+export class AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigList extends cdktn.ComplexList {
+  public internalValue? : AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -179,35 +179,35 @@ export interface AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_channel_namespace#lambda_config AppsyncChannelNamespace#lambda_config}
   */
-  readonly lambdaConfig?: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig[] | cdktf.IResolvable;
+  readonly lambdaConfig?: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig[] | cdktn.IResolvable;
 }
 
-export function appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationToTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationToTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_source_name: cdktf.stringToTerraform(struct!.dataSourceName),
-    lambda_config: cdktf.listMapper(appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigToTerraform, true)(struct!.lambdaConfig),
+    data_source_name: cdktn.stringToTerraform(struct!.dataSourceName),
+    lambda_config: cdktn.listMapper(appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigToTerraform, true)(struct!.lambdaConfig),
   }
 }
 
 
-export function appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationToHclTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationToHclTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_source_name: {
-      value: cdktf.stringToHclTerraform(struct!.dataSourceName),
+      value: cdktn.stringToHclTerraform(struct!.dataSourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lambda_config: {
-      value: cdktf.listMapperHcl(appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigToHclTerraform, true)(struct!.lambdaConfig),
+      value: cdktn.listMapperHcl(appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigToHclTerraform, true)(struct!.lambdaConfig),
       isBlock: true,
       type: "list",
       storageClassType: "AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigList",
@@ -218,9 +218,9 @@ export function appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationOutputReference extends cdktf.ComplexObject {
+export class AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -228,11 +228,11 @@ export class AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -249,14 +249,14 @@ export class AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataSourceName = undefined;
       this._lambdaConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -286,7 +286,7 @@ export class AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationOutputRefe
   public get lambdaConfig() {
     return this._lambdaConfig;
   }
-  public putLambdaConfig(value: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig[] | cdktf.IResolvable) {
+  public putLambdaConfig(value: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig[] | cdktn.IResolvable) {
     this._lambdaConfig.internalValue = value;
   }
   public resetLambdaConfig() {
@@ -298,15 +298,15 @@ export class AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationOutputRefe
   }
 }
 
-export class AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationList extends cdktf.ComplexList {
-  public internalValue? : AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration[] | cdktf.IResolvable
+export class AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationList extends cdktn.ComplexList {
+  public internalValue? : AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -327,35 +327,35 @@ export interface AppsyncChannelNamespaceHandlerConfigsOnPublish {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_channel_namespace#integration AppsyncChannelNamespace#integration}
   */
-  readonly integration?: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration[] | cdktf.IResolvable;
+  readonly integration?: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration[] | cdktn.IResolvable;
 }
 
-export function appsyncChannelNamespaceHandlerConfigsOnPublishToTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnPublish | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceHandlerConfigsOnPublishToTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnPublish | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    behavior: cdktf.stringToTerraform(struct!.behavior),
-    integration: cdktf.listMapper(appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationToTerraform, true)(struct!.integration),
+    behavior: cdktn.stringToTerraform(struct!.behavior),
+    integration: cdktn.listMapper(appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationToTerraform, true)(struct!.integration),
   }
 }
 
 
-export function appsyncChannelNamespaceHandlerConfigsOnPublishToHclTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnPublish | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceHandlerConfigsOnPublishToHclTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnPublish | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     behavior: {
-      value: cdktf.stringToHclTerraform(struct!.behavior),
+      value: cdktn.stringToHclTerraform(struct!.behavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     integration: {
-      value: cdktf.listMapperHcl(appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationToHclTerraform, true)(struct!.integration),
+      value: cdktn.listMapperHcl(appsyncChannelNamespaceHandlerConfigsOnPublishIntegrationToHclTerraform, true)(struct!.integration),
       isBlock: true,
       type: "list",
       storageClassType: "AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationList",
@@ -366,9 +366,9 @@ export function appsyncChannelNamespaceHandlerConfigsOnPublishToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncChannelNamespaceHandlerConfigsOnPublishOutputReference extends cdktf.ComplexObject {
+export class AppsyncChannelNamespaceHandlerConfigsOnPublishOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -376,11 +376,11 @@ export class AppsyncChannelNamespaceHandlerConfigsOnPublishOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncChannelNamespaceHandlerConfigsOnPublish | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncChannelNamespaceHandlerConfigsOnPublish | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -397,14 +397,14 @@ export class AppsyncChannelNamespaceHandlerConfigsOnPublishOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncChannelNamespaceHandlerConfigsOnPublish | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncChannelNamespaceHandlerConfigsOnPublish | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._behavior = undefined;
       this._integration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -434,7 +434,7 @@ export class AppsyncChannelNamespaceHandlerConfigsOnPublishOutputReference exten
   public get integration() {
     return this._integration;
   }
-  public putIntegration(value: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration[] | cdktf.IResolvable) {
+  public putIntegration(value: AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration[] | cdktn.IResolvable) {
     this._integration.internalValue = value;
   }
   public resetIntegration() {
@@ -446,15 +446,15 @@ export class AppsyncChannelNamespaceHandlerConfigsOnPublishOutputReference exten
   }
 }
 
-export class AppsyncChannelNamespaceHandlerConfigsOnPublishList extends cdktf.ComplexList {
-  public internalValue? : AppsyncChannelNamespaceHandlerConfigsOnPublish[] | cdktf.IResolvable
+export class AppsyncChannelNamespaceHandlerConfigsOnPublishList extends cdktn.ComplexList {
+  public internalValue? : AppsyncChannelNamespaceHandlerConfigsOnPublish[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -472,25 +472,25 @@ export interface AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLamb
   readonly invokeType?: string;
 }
 
-export function appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigToTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigToTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    invoke_type: cdktf.stringToTerraform(struct!.invokeType),
+    invoke_type: cdktn.stringToTerraform(struct!.invokeType),
   }
 }
 
 
-export function appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigToHclTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigToHclTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     invoke_type: {
-      value: cdktf.stringToHclTerraform(struct!.invokeType),
+      value: cdktn.stringToHclTerraform(struct!.invokeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -501,9 +501,9 @@ export function appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -511,11 +511,11 @@ export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaCo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -528,13 +528,13 @@ export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaCo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._invokeType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -562,15 +562,15 @@ export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaCo
   }
 }
 
-export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigList extends cdktf.ComplexList {
-  public internalValue? : AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig[] | cdktf.IResolvable
+export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigList extends cdktn.ComplexList {
+  public internalValue? : AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -591,35 +591,35 @@ export interface AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_channel_namespace#lambda_config AppsyncChannelNamespace#lambda_config}
   */
-  readonly lambdaConfig?: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig[] | cdktf.IResolvable;
+  readonly lambdaConfig?: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig[] | cdktn.IResolvable;
 }
 
-export function appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationToTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationToTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_source_name: cdktf.stringToTerraform(struct!.dataSourceName),
-    lambda_config: cdktf.listMapper(appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigToTerraform, true)(struct!.lambdaConfig),
+    data_source_name: cdktn.stringToTerraform(struct!.dataSourceName),
+    lambda_config: cdktn.listMapper(appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigToTerraform, true)(struct!.lambdaConfig),
   }
 }
 
 
-export function appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationToHclTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationToHclTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_source_name: {
-      value: cdktf.stringToHclTerraform(struct!.dataSourceName),
+      value: cdktn.stringToHclTerraform(struct!.dataSourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lambda_config: {
-      value: cdktf.listMapperHcl(appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigToHclTerraform, true)(struct!.lambdaConfig),
+      value: cdktn.listMapperHcl(appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigToHclTerraform, true)(struct!.lambdaConfig),
       isBlock: true,
       type: "list",
       storageClassType: "AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigList",
@@ -630,9 +630,9 @@ export function appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationOutputReference extends cdktf.ComplexObject {
+export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -640,11 +640,11 @@ export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -661,14 +661,14 @@ export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataSourceName = undefined;
       this._lambdaConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -698,7 +698,7 @@ export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationOutputRe
   public get lambdaConfig() {
     return this._lambdaConfig;
   }
-  public putLambdaConfig(value: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig[] | cdktf.IResolvable) {
+  public putLambdaConfig(value: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig[] | cdktn.IResolvable) {
     this._lambdaConfig.internalValue = value;
   }
   public resetLambdaConfig() {
@@ -710,15 +710,15 @@ export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationOutputRe
   }
 }
 
-export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationList extends cdktf.ComplexList {
-  public internalValue? : AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration[] | cdktf.IResolvable
+export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationList extends cdktn.ComplexList {
+  public internalValue? : AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -739,35 +739,35 @@ export interface AppsyncChannelNamespaceHandlerConfigsOnSubscribe {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_channel_namespace#integration AppsyncChannelNamespace#integration}
   */
-  readonly integration?: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration[] | cdktf.IResolvable;
+  readonly integration?: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration[] | cdktn.IResolvable;
 }
 
-export function appsyncChannelNamespaceHandlerConfigsOnSubscribeToTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnSubscribe | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceHandlerConfigsOnSubscribeToTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnSubscribe | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    behavior: cdktf.stringToTerraform(struct!.behavior),
-    integration: cdktf.listMapper(appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationToTerraform, true)(struct!.integration),
+    behavior: cdktn.stringToTerraform(struct!.behavior),
+    integration: cdktn.listMapper(appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationToTerraform, true)(struct!.integration),
   }
 }
 
 
-export function appsyncChannelNamespaceHandlerConfigsOnSubscribeToHclTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnSubscribe | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceHandlerConfigsOnSubscribeToHclTerraform(struct?: AppsyncChannelNamespaceHandlerConfigsOnSubscribe | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     behavior: {
-      value: cdktf.stringToHclTerraform(struct!.behavior),
+      value: cdktn.stringToHclTerraform(struct!.behavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     integration: {
-      value: cdktf.listMapperHcl(appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationToHclTerraform, true)(struct!.integration),
+      value: cdktn.listMapperHcl(appsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationToHclTerraform, true)(struct!.integration),
       isBlock: true,
       type: "list",
       storageClassType: "AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationList",
@@ -778,9 +778,9 @@ export function appsyncChannelNamespaceHandlerConfigsOnSubscribeToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeOutputReference extends cdktf.ComplexObject {
+export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -788,11 +788,11 @@ export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncChannelNamespaceHandlerConfigsOnSubscribe | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncChannelNamespaceHandlerConfigsOnSubscribe | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -809,14 +809,14 @@ export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncChannelNamespaceHandlerConfigsOnSubscribe | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncChannelNamespaceHandlerConfigsOnSubscribe | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._behavior = undefined;
       this._integration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -846,7 +846,7 @@ export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeOutputReference ext
   public get integration() {
     return this._integration;
   }
-  public putIntegration(value: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration[] | cdktf.IResolvable) {
+  public putIntegration(value: AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration[] | cdktn.IResolvable) {
     this._integration.internalValue = value;
   }
   public resetIntegration() {
@@ -858,15 +858,15 @@ export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeOutputReference ext
   }
 }
 
-export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeList extends cdktf.ComplexList {
-  public internalValue? : AppsyncChannelNamespaceHandlerConfigsOnSubscribe[] | cdktf.IResolvable
+export class AppsyncChannelNamespaceHandlerConfigsOnSubscribeList extends cdktn.ComplexList {
+  public internalValue? : AppsyncChannelNamespaceHandlerConfigsOnSubscribe[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -883,41 +883,41 @@ export interface AppsyncChannelNamespaceHandlerConfigs {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_channel_namespace#on_publish AppsyncChannelNamespace#on_publish}
   */
-  readonly onPublish?: AppsyncChannelNamespaceHandlerConfigsOnPublish[] | cdktf.IResolvable;
+  readonly onPublish?: AppsyncChannelNamespaceHandlerConfigsOnPublish[] | cdktn.IResolvable;
   /**
   * on_subscribe block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_channel_namespace#on_subscribe AppsyncChannelNamespace#on_subscribe}
   */
-  readonly onSubscribe?: AppsyncChannelNamespaceHandlerConfigsOnSubscribe[] | cdktf.IResolvable;
+  readonly onSubscribe?: AppsyncChannelNamespaceHandlerConfigsOnSubscribe[] | cdktn.IResolvable;
 }
 
-export function appsyncChannelNamespaceHandlerConfigsToTerraform(struct?: AppsyncChannelNamespaceHandlerConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceHandlerConfigsToTerraform(struct?: AppsyncChannelNamespaceHandlerConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    on_publish: cdktf.listMapper(appsyncChannelNamespaceHandlerConfigsOnPublishToTerraform, true)(struct!.onPublish),
-    on_subscribe: cdktf.listMapper(appsyncChannelNamespaceHandlerConfigsOnSubscribeToTerraform, true)(struct!.onSubscribe),
+    on_publish: cdktn.listMapper(appsyncChannelNamespaceHandlerConfigsOnPublishToTerraform, true)(struct!.onPublish),
+    on_subscribe: cdktn.listMapper(appsyncChannelNamespaceHandlerConfigsOnSubscribeToTerraform, true)(struct!.onSubscribe),
   }
 }
 
 
-export function appsyncChannelNamespaceHandlerConfigsToHclTerraform(struct?: AppsyncChannelNamespaceHandlerConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceHandlerConfigsToHclTerraform(struct?: AppsyncChannelNamespaceHandlerConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     on_publish: {
-      value: cdktf.listMapperHcl(appsyncChannelNamespaceHandlerConfigsOnPublishToHclTerraform, true)(struct!.onPublish),
+      value: cdktn.listMapperHcl(appsyncChannelNamespaceHandlerConfigsOnPublishToHclTerraform, true)(struct!.onPublish),
       isBlock: true,
       type: "list",
       storageClassType: "AppsyncChannelNamespaceHandlerConfigsOnPublishList",
     },
     on_subscribe: {
-      value: cdktf.listMapperHcl(appsyncChannelNamespaceHandlerConfigsOnSubscribeToHclTerraform, true)(struct!.onSubscribe),
+      value: cdktn.listMapperHcl(appsyncChannelNamespaceHandlerConfigsOnSubscribeToHclTerraform, true)(struct!.onSubscribe),
       isBlock: true,
       type: "list",
       storageClassType: "AppsyncChannelNamespaceHandlerConfigsOnSubscribeList",
@@ -928,9 +928,9 @@ export function appsyncChannelNamespaceHandlerConfigsToHclTerraform(struct?: App
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncChannelNamespaceHandlerConfigsOutputReference extends cdktf.ComplexObject {
+export class AppsyncChannelNamespaceHandlerConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -938,11 +938,11 @@ export class AppsyncChannelNamespaceHandlerConfigsOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncChannelNamespaceHandlerConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncChannelNamespaceHandlerConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -959,14 +959,14 @@ export class AppsyncChannelNamespaceHandlerConfigsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncChannelNamespaceHandlerConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncChannelNamespaceHandlerConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._onPublish.internalValue = undefined;
       this._onSubscribe.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -983,7 +983,7 @@ export class AppsyncChannelNamespaceHandlerConfigsOutputReference extends cdktf.
   public get onPublish() {
     return this._onPublish;
   }
-  public putOnPublish(value: AppsyncChannelNamespaceHandlerConfigsOnPublish[] | cdktf.IResolvable) {
+  public putOnPublish(value: AppsyncChannelNamespaceHandlerConfigsOnPublish[] | cdktn.IResolvable) {
     this._onPublish.internalValue = value;
   }
   public resetOnPublish() {
@@ -999,7 +999,7 @@ export class AppsyncChannelNamespaceHandlerConfigsOutputReference extends cdktf.
   public get onSubscribe() {
     return this._onSubscribe;
   }
-  public putOnSubscribe(value: AppsyncChannelNamespaceHandlerConfigsOnSubscribe[] | cdktf.IResolvable) {
+  public putOnSubscribe(value: AppsyncChannelNamespaceHandlerConfigsOnSubscribe[] | cdktn.IResolvable) {
     this._onSubscribe.internalValue = value;
   }
   public resetOnSubscribe() {
@@ -1011,15 +1011,15 @@ export class AppsyncChannelNamespaceHandlerConfigsOutputReference extends cdktf.
   }
 }
 
-export class AppsyncChannelNamespaceHandlerConfigsList extends cdktf.ComplexList {
-  public internalValue? : AppsyncChannelNamespaceHandlerConfigs[] | cdktf.IResolvable
+export class AppsyncChannelNamespaceHandlerConfigsList extends cdktn.ComplexList {
+  public internalValue? : AppsyncChannelNamespaceHandlerConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1037,25 +1037,25 @@ export interface AppsyncChannelNamespacePublishAuthMode {
   readonly authType: string;
 }
 
-export function appsyncChannelNamespacePublishAuthModeToTerraform(struct?: AppsyncChannelNamespacePublishAuthMode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespacePublishAuthModeToTerraform(struct?: AppsyncChannelNamespacePublishAuthMode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_type: cdktf.stringToTerraform(struct!.authType),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
   }
 }
 
 
-export function appsyncChannelNamespacePublishAuthModeToHclTerraform(struct?: AppsyncChannelNamespacePublishAuthMode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespacePublishAuthModeToHclTerraform(struct?: AppsyncChannelNamespacePublishAuthMode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1066,9 +1066,9 @@ export function appsyncChannelNamespacePublishAuthModeToHclTerraform(struct?: Ap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncChannelNamespacePublishAuthModeOutputReference extends cdktf.ComplexObject {
+export class AppsyncChannelNamespacePublishAuthModeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1076,11 +1076,11 @@ export class AppsyncChannelNamespacePublishAuthModeOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncChannelNamespacePublishAuthMode | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncChannelNamespacePublishAuthMode | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1093,13 +1093,13 @@ export class AppsyncChannelNamespacePublishAuthModeOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncChannelNamespacePublishAuthMode | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncChannelNamespacePublishAuthMode | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._authType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1124,15 +1124,15 @@ export class AppsyncChannelNamespacePublishAuthModeOutputReference extends cdktf
   }
 }
 
-export class AppsyncChannelNamespacePublishAuthModeList extends cdktf.ComplexList {
-  public internalValue? : AppsyncChannelNamespacePublishAuthMode[] | cdktf.IResolvable
+export class AppsyncChannelNamespacePublishAuthModeList extends cdktn.ComplexList {
+  public internalValue? : AppsyncChannelNamespacePublishAuthMode[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1150,25 +1150,25 @@ export interface AppsyncChannelNamespaceSubscribeAuthMode {
   readonly authType: string;
 }
 
-export function appsyncChannelNamespaceSubscribeAuthModeToTerraform(struct?: AppsyncChannelNamespaceSubscribeAuthMode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceSubscribeAuthModeToTerraform(struct?: AppsyncChannelNamespaceSubscribeAuthMode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_type: cdktf.stringToTerraform(struct!.authType),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
   }
 }
 
 
-export function appsyncChannelNamespaceSubscribeAuthModeToHclTerraform(struct?: AppsyncChannelNamespaceSubscribeAuthMode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncChannelNamespaceSubscribeAuthModeToHclTerraform(struct?: AppsyncChannelNamespaceSubscribeAuthMode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1179,9 +1179,9 @@ export function appsyncChannelNamespaceSubscribeAuthModeToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncChannelNamespaceSubscribeAuthModeOutputReference extends cdktf.ComplexObject {
+export class AppsyncChannelNamespaceSubscribeAuthModeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1189,11 +1189,11 @@ export class AppsyncChannelNamespaceSubscribeAuthModeOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncChannelNamespaceSubscribeAuthMode | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncChannelNamespaceSubscribeAuthMode | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1206,13 +1206,13 @@ export class AppsyncChannelNamespaceSubscribeAuthModeOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncChannelNamespaceSubscribeAuthMode | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncChannelNamespaceSubscribeAuthMode | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._authType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1237,15 +1237,15 @@ export class AppsyncChannelNamespaceSubscribeAuthModeOutputReference extends cdk
   }
 }
 
-export class AppsyncChannelNamespaceSubscribeAuthModeList extends cdktf.ComplexList {
-  public internalValue? : AppsyncChannelNamespaceSubscribeAuthMode[] | cdktf.IResolvable
+export class AppsyncChannelNamespaceSubscribeAuthModeList extends cdktn.ComplexList {
+  public internalValue? : AppsyncChannelNamespaceSubscribeAuthMode[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1260,7 +1260,7 @@ export class AppsyncChannelNamespaceSubscribeAuthModeList extends cdktf.ComplexL
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_channel_namespace aws_appsync_channel_namespace}
 */
-export class AppsyncChannelNamespace extends cdktf.TerraformResource {
+export class AppsyncChannelNamespace extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1271,14 +1271,14 @@ export class AppsyncChannelNamespace extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppsyncChannelNamespace resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppsyncChannelNamespace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppsyncChannelNamespace to import
   * @param importFromId The id of the existing AppsyncChannelNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_channel_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppsyncChannelNamespace to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appsync_channel_namespace", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appsync_channel_namespace", importId: importFromId, provider });
       }
 
   // ===========
@@ -1402,7 +1402,7 @@ export class AppsyncChannelNamespace extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1412,7 +1412,7 @@ export class AppsyncChannelNamespace extends cdktf.TerraformResource {
   public get handlerConfigs() {
     return this._handlerConfigs;
   }
-  public putHandlerConfigs(value: AppsyncChannelNamespaceHandlerConfigs[] | cdktf.IResolvable) {
+  public putHandlerConfigs(value: AppsyncChannelNamespaceHandlerConfigs[] | cdktn.IResolvable) {
     this._handlerConfigs.internalValue = value;
   }
   public resetHandlerConfigs() {
@@ -1428,7 +1428,7 @@ export class AppsyncChannelNamespace extends cdktf.TerraformResource {
   public get publishAuthMode() {
     return this._publishAuthMode;
   }
-  public putPublishAuthMode(value: AppsyncChannelNamespacePublishAuthMode[] | cdktf.IResolvable) {
+  public putPublishAuthMode(value: AppsyncChannelNamespacePublishAuthMode[] | cdktn.IResolvable) {
     this._publishAuthMode.internalValue = value;
   }
   public resetPublishAuthMode() {
@@ -1444,7 +1444,7 @@ export class AppsyncChannelNamespace extends cdktf.TerraformResource {
   public get subscribeAuthMode() {
     return this._subscribeAuthMode;
   }
-  public putSubscribeAuthMode(value: AppsyncChannelNamespaceSubscribeAuthMode[] | cdktf.IResolvable) {
+  public putSubscribeAuthMode(value: AppsyncChannelNamespaceSubscribeAuthMode[] | cdktn.IResolvable) {
     this._subscribeAuthMode.internalValue = value;
   }
   public resetSubscribeAuthMode() {
@@ -1461,63 +1461,63 @@ export class AppsyncChannelNamespace extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      code_handlers: cdktf.stringToTerraform(this._codeHandlers),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      handler_configs: cdktf.listMapper(appsyncChannelNamespaceHandlerConfigsToTerraform, true)(this._handlerConfigs.internalValue),
-      publish_auth_mode: cdktf.listMapper(appsyncChannelNamespacePublishAuthModeToTerraform, true)(this._publishAuthMode.internalValue),
-      subscribe_auth_mode: cdktf.listMapper(appsyncChannelNamespaceSubscribeAuthModeToTerraform, true)(this._subscribeAuthMode.internalValue),
+      api_id: cdktn.stringToTerraform(this._apiId),
+      code_handlers: cdktn.stringToTerraform(this._codeHandlers),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      handler_configs: cdktn.listMapper(appsyncChannelNamespaceHandlerConfigsToTerraform, true)(this._handlerConfigs.internalValue),
+      publish_auth_mode: cdktn.listMapper(appsyncChannelNamespacePublishAuthModeToTerraform, true)(this._publishAuthMode.internalValue),
+      subscribe_auth_mode: cdktn.listMapper(appsyncChannelNamespaceSubscribeAuthModeToTerraform, true)(this._subscribeAuthMode.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_id: {
-        value: cdktf.stringToHclTerraform(this._apiId),
+        value: cdktn.stringToHclTerraform(this._apiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       code_handlers: {
-        value: cdktf.stringToHclTerraform(this._codeHandlers),
+        value: cdktn.stringToHclTerraform(this._codeHandlers),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       handler_configs: {
-        value: cdktf.listMapperHcl(appsyncChannelNamespaceHandlerConfigsToHclTerraform, true)(this._handlerConfigs.internalValue),
+        value: cdktn.listMapperHcl(appsyncChannelNamespaceHandlerConfigsToHclTerraform, true)(this._handlerConfigs.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppsyncChannelNamespaceHandlerConfigsList",
       },
       publish_auth_mode: {
-        value: cdktf.listMapperHcl(appsyncChannelNamespacePublishAuthModeToHclTerraform, true)(this._publishAuthMode.internalValue),
+        value: cdktn.listMapperHcl(appsyncChannelNamespacePublishAuthModeToHclTerraform, true)(this._publishAuthMode.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppsyncChannelNamespacePublishAuthModeList",
       },
       subscribe_auth_mode: {
-        value: cdktf.listMapperHcl(appsyncChannelNamespaceSubscribeAuthModeToHclTerraform, true)(this._subscribeAuthMode.internalValue),
+        value: cdktn.listMapperHcl(appsyncChannelNamespaceSubscribeAuthModeToHclTerraform, true)(this._subscribeAuthMode.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppsyncChannelNamespaceSubscribeAuthModeList",

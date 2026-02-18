@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AthenaDatabaseConfig extends cdktf.TerraformMetaArguments {
+export interface AthenaDatabaseConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_database#bucket AthenaDatabase#bucket}
   */
@@ -27,7 +27,7 @@ export interface AthenaDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_database#force_destroy AthenaDatabase#force_destroy}
   */
-  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_database#id AthenaDatabase#id}
   *
@@ -74,24 +74,24 @@ export interface AthenaDatabaseAclConfiguration {
 }
 
 export function athenaDatabaseAclConfigurationToTerraform(struct?: AthenaDatabaseAclConfigurationOutputReference | AthenaDatabaseAclConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_acl_option: cdktf.stringToTerraform(struct!.s3AclOption),
+    s3_acl_option: cdktn.stringToTerraform(struct!.s3AclOption),
   }
 }
 
 
 export function athenaDatabaseAclConfigurationToHclTerraform(struct?: AthenaDatabaseAclConfigurationOutputReference | AthenaDatabaseAclConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_acl_option: {
-      value: cdktf.stringToHclTerraform(struct!.s3AclOption),
+      value: cdktn.stringToHclTerraform(struct!.s3AclOption),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -102,14 +102,14 @@ export function athenaDatabaseAclConfigurationToHclTerraform(struct?: AthenaData
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaDatabaseAclConfigurationOutputReference extends cdktf.ComplexObject {
+export class AthenaDatabaseAclConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -159,31 +159,31 @@ export interface AthenaDatabaseEncryptionConfiguration {
 }
 
 export function athenaDatabaseEncryptionConfigurationToTerraform(struct?: AthenaDatabaseEncryptionConfigurationOutputReference | AthenaDatabaseEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    encryption_option: cdktf.stringToTerraform(struct!.encryptionOption),
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
+    encryption_option: cdktn.stringToTerraform(struct!.encryptionOption),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
   }
 }
 
 
 export function athenaDatabaseEncryptionConfigurationToHclTerraform(struct?: AthenaDatabaseEncryptionConfigurationOutputReference | AthenaDatabaseEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     encryption_option: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionOption),
+      value: cdktn.stringToHclTerraform(struct!.encryptionOption),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -194,14 +194,14 @@ export function athenaDatabaseEncryptionConfigurationToHclTerraform(struct?: Ath
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaDatabaseEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class AthenaDatabaseEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -265,7 +265,7 @@ export class AthenaDatabaseEncryptionConfigurationOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_database aws_athena_database}
 */
-export class AthenaDatabase extends cdktf.TerraformResource {
+export class AthenaDatabase extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -276,14 +276,14 @@ export class AthenaDatabase extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AthenaDatabase resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AthenaDatabase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AthenaDatabase to import
   * @param importFromId The id of the existing AthenaDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AthenaDatabase to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_athena_database", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_athena_database", importId: importFromId, provider });
       }
 
   // ===========
@@ -379,11 +379,11 @@ export class AthenaDatabase extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  private _forceDestroy?: boolean | cdktn.IResolvable; 
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+  public set forceDestroy(value: boolean | cdktn.IResolvable) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -509,15 +509,15 @@ export class AthenaDatabase extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      comment: cdktf.stringToTerraform(this._comment),
-      expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
-      region: cdktf.stringToTerraform(this._region),
-      workgroup: cdktf.stringToTerraform(this._workgroup),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      comment: cdktn.stringToTerraform(this._comment),
+      expected_bucket_owner: cdktn.stringToTerraform(this._expectedBucketOwner),
+      force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._properties),
+      region: cdktn.stringToTerraform(this._region),
+      workgroup: cdktn.stringToTerraform(this._workgroup),
       acl_configuration: athenaDatabaseAclConfigurationToTerraform(this._aclConfiguration.internalValue),
       encryption_configuration: athenaDatabaseEncryptionConfigurationToTerraform(this._encryptionConfiguration.internalValue),
     };
@@ -526,55 +526,55 @@ export class AthenaDatabase extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expected_bucket_owner: {
-        value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
+        value: cdktn.stringToHclTerraform(this._expectedBucketOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_destroy: {
-        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        value: cdktn.booleanToHclTerraform(this._forceDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._properties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._properties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workgroup: {
-        value: cdktf.stringToHclTerraform(this._workgroup),
+        value: cdktn.stringToHclTerraform(this._workgroup),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

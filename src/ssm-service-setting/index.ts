@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsmServiceSettingConfig extends cdktf.TerraformMetaArguments {
+export interface SsmServiceSettingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_service_setting#id SsmServiceSetting#id}
   *
@@ -38,7 +38,7 @@ export interface SsmServiceSettingConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_service_setting aws_ssm_service_setting}
 */
-export class SsmServiceSetting extends cdktf.TerraformResource {
+export class SsmServiceSetting extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class SsmServiceSetting extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsmServiceSetting resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsmServiceSetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmServiceSetting to import
   * @param importFromId The id of the existing SsmServiceSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_service_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmServiceSetting to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_service_setting", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_service_setting", importId: importFromId, provider });
       }
 
   // ===========
@@ -170,35 +170,35 @@ export class SsmServiceSetting extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      setting_id: cdktf.stringToTerraform(this._settingId),
-      setting_value: cdktf.stringToTerraform(this._settingValue),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      setting_id: cdktn.stringToTerraform(this._settingId),
+      setting_value: cdktn.stringToTerraform(this._settingValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       setting_id: {
-        value: cdktf.stringToHclTerraform(this._settingId),
+        value: cdktn.stringToHclTerraform(this._settingId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       setting_value: {
-        value: cdktf.stringToHclTerraform(this._settingValue),
+        value: cdktn.stringToHclTerraform(this._settingValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

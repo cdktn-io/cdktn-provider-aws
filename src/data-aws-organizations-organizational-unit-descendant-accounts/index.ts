@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsOrganizationsOrganizationalUnitDescendantAccountsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOrganizationsOrganizationalUnitDescendantAccountsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/organizations_organizational_unit_descendant_accounts#id DataAwsOrganizationsOrganizationalUnitDescendantAccounts#id}
   *
@@ -28,8 +28,8 @@ export interface DataAwsOrganizationsOrganizationalUnitDescendantAccountsAccount
 }
 
 export function dataAwsOrganizationsOrganizationalUnitDescendantAccountsAccountsToTerraform(struct?: DataAwsOrganizationsOrganizationalUnitDescendantAccountsAccounts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -38,8 +38,8 @@ export function dataAwsOrganizationsOrganizationalUnitDescendantAccountsAccounts
 
 
 export function dataAwsOrganizationsOrganizationalUnitDescendantAccountsAccountsToHclTerraform(struct?: DataAwsOrganizationsOrganizationalUnitDescendantAccountsAccounts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -47,7 +47,7 @@ export function dataAwsOrganizationsOrganizationalUnitDescendantAccountsAccounts
   return attrs;
 }
 
-export class DataAwsOrganizationsOrganizationalUnitDescendantAccountsAccountsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOrganizationsOrganizationalUnitDescendantAccountsAccountsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -56,7 +56,7 @@ export class DataAwsOrganizationsOrganizationalUnitDescendantAccountsAccountsOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -116,14 +116,14 @@ export class DataAwsOrganizationsOrganizationalUnitDescendantAccountsAccountsOut
   }
 }
 
-export class DataAwsOrganizationsOrganizationalUnitDescendantAccountsAccountsList extends cdktf.ComplexList {
+export class DataAwsOrganizationsOrganizationalUnitDescendantAccountsAccountsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -138,7 +138,7 @@ export class DataAwsOrganizationsOrganizationalUnitDescendantAccountsAccountsLis
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/organizations_organizational_unit_descendant_accounts aws_organizations_organizational_unit_descendant_accounts}
 */
-export class DataAwsOrganizationsOrganizationalUnitDescendantAccounts extends cdktf.TerraformDataSource {
+export class DataAwsOrganizationsOrganizationalUnitDescendantAccounts extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -149,14 +149,14 @@ export class DataAwsOrganizationsOrganizationalUnitDescendantAccounts extends cd
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsOrganizationsOrganizationalUnitDescendantAccounts resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsOrganizationsOrganizationalUnitDescendantAccounts resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOrganizationsOrganizationalUnitDescendantAccounts to import
   * @param importFromId The id of the existing DataAwsOrganizationsOrganizationalUnitDescendantAccounts that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/organizations_organizational_unit_descendant_accounts#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOrganizationsOrganizationalUnitDescendantAccounts to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_organizations_organizational_unit_descendant_accounts", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_organizations_organizational_unit_descendant_accounts", importId: importFromId, provider });
       }
 
   // ===========
@@ -235,21 +235,21 @@ export class DataAwsOrganizationsOrganizationalUnitDescendantAccounts extends cd
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      parent_id: cdktf.stringToTerraform(this._parentId),
+      id: cdktn.stringToTerraform(this._id),
+      parent_id: cdktn.stringToTerraform(this._parentId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent_id: {
-        value: cdktf.stringToHclTerraform(this._parentId),
+        value: cdktn.stringToHclTerraform(this._parentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

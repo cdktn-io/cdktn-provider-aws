@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DmsReplicationTaskConfig extends cdktf.TerraformMetaArguments {
+export interface DmsReplicationTaskConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_task#cdc_start_position DmsReplicationTask#cdc_start_position}
   */
@@ -60,7 +60,7 @@ export interface DmsReplicationTaskConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_task#start_replication_task DmsReplicationTask#start_replication_task}
   */
-  readonly startReplicationTask?: boolean | cdktf.IResolvable;
+  readonly startReplicationTask?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_task#table_mappings DmsReplicationTask#table_mappings}
   */
@@ -82,7 +82,7 @@ export interface DmsReplicationTaskConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_task aws_dms_replication_task}
 */
-export class DmsReplicationTask extends cdktf.TerraformResource {
+export class DmsReplicationTask extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -93,14 +93,14 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DmsReplicationTask resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DmsReplicationTask resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DmsReplicationTask to import
   * @param importFromId The id of the existing DmsReplicationTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_task#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DmsReplicationTask to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dms_replication_task", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dms_replication_task", importId: importFromId, provider });
       }
 
   // ===========
@@ -305,11 +305,11 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
   }
 
   // start_replication_task - computed: false, optional: true, required: false
-  private _startReplicationTask?: boolean | cdktf.IResolvable; 
+  private _startReplicationTask?: boolean | cdktn.IResolvable; 
   public get startReplicationTask() {
     return this.getBooleanAttribute('start_replication_task');
   }
-  public set startReplicationTask(value: boolean | cdktf.IResolvable) {
+  public set startReplicationTask(value: boolean | cdktn.IResolvable) {
     this._startReplicationTask = value;
   }
   public resetStartReplicationTask() {
@@ -389,112 +389,112 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cdc_start_position: cdktf.stringToTerraform(this._cdcStartPosition),
-      cdc_start_time: cdktf.stringToTerraform(this._cdcStartTime),
-      id: cdktf.stringToTerraform(this._id),
-      migration_type: cdktf.stringToTerraform(this._migrationType),
-      region: cdktf.stringToTerraform(this._region),
-      replication_instance_arn: cdktf.stringToTerraform(this._replicationInstanceArn),
-      replication_task_id: cdktf.stringToTerraform(this._replicationTaskId),
-      replication_task_settings: cdktf.stringToTerraform(this._replicationTaskSettings),
-      resource_identifier: cdktf.stringToTerraform(this._resourceIdentifier),
-      source_endpoint_arn: cdktf.stringToTerraform(this._sourceEndpointArn),
-      start_replication_task: cdktf.booleanToTerraform(this._startReplicationTask),
-      table_mappings: cdktf.stringToTerraform(this._tableMappings),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target_endpoint_arn: cdktf.stringToTerraform(this._targetEndpointArn),
+      cdc_start_position: cdktn.stringToTerraform(this._cdcStartPosition),
+      cdc_start_time: cdktn.stringToTerraform(this._cdcStartTime),
+      id: cdktn.stringToTerraform(this._id),
+      migration_type: cdktn.stringToTerraform(this._migrationType),
+      region: cdktn.stringToTerraform(this._region),
+      replication_instance_arn: cdktn.stringToTerraform(this._replicationInstanceArn),
+      replication_task_id: cdktn.stringToTerraform(this._replicationTaskId),
+      replication_task_settings: cdktn.stringToTerraform(this._replicationTaskSettings),
+      resource_identifier: cdktn.stringToTerraform(this._resourceIdentifier),
+      source_endpoint_arn: cdktn.stringToTerraform(this._sourceEndpointArn),
+      start_replication_task: cdktn.booleanToTerraform(this._startReplicationTask),
+      table_mappings: cdktn.stringToTerraform(this._tableMappings),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      target_endpoint_arn: cdktn.stringToTerraform(this._targetEndpointArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cdc_start_position: {
-        value: cdktf.stringToHclTerraform(this._cdcStartPosition),
+        value: cdktn.stringToHclTerraform(this._cdcStartPosition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cdc_start_time: {
-        value: cdktf.stringToHclTerraform(this._cdcStartTime),
+        value: cdktn.stringToHclTerraform(this._cdcStartTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       migration_type: {
-        value: cdktf.stringToHclTerraform(this._migrationType),
+        value: cdktn.stringToHclTerraform(this._migrationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication_instance_arn: {
-        value: cdktf.stringToHclTerraform(this._replicationInstanceArn),
+        value: cdktn.stringToHclTerraform(this._replicationInstanceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication_task_id: {
-        value: cdktf.stringToHclTerraform(this._replicationTaskId),
+        value: cdktn.stringToHclTerraform(this._replicationTaskId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication_task_settings: {
-        value: cdktf.stringToHclTerraform(this._replicationTaskSettings),
+        value: cdktn.stringToHclTerraform(this._replicationTaskSettings),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_identifier: {
-        value: cdktf.stringToHclTerraform(this._resourceIdentifier),
+        value: cdktn.stringToHclTerraform(this._resourceIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_endpoint_arn: {
-        value: cdktf.stringToHclTerraform(this._sourceEndpointArn),
+        value: cdktn.stringToHclTerraform(this._sourceEndpointArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_replication_task: {
-        value: cdktf.booleanToHclTerraform(this._startReplicationTask),
+        value: cdktn.booleanToHclTerraform(this._startReplicationTask),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       table_mappings: {
-        value: cdktf.stringToHclTerraform(this._tableMappings),
+        value: cdktn.stringToHclTerraform(this._tableMappings),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target_endpoint_arn: {
-        value: cdktf.stringToHclTerraform(this._targetEndpointArn),
+        value: cdktn.stringToHclTerraform(this._targetEndpointArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

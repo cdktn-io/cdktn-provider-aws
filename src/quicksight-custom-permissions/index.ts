@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QuicksightCustomPermissionsConfig extends cdktf.TerraformMetaArguments {
+export interface QuicksightCustomPermissionsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_custom_permissions#aws_account_id QuicksightCustomPermissions#aws_account_id}
   */
@@ -35,7 +35,7 @@ export interface QuicksightCustomPermissionsConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_custom_permissions#capabilities QuicksightCustomPermissions#capabilities}
   */
-  readonly capabilities?: QuicksightCustomPermissionsCapabilities[] | cdktf.IResolvable;
+  readonly capabilities?: QuicksightCustomPermissionsCapabilities[] | cdktn.IResolvable;
 }
 export interface QuicksightCustomPermissionsCapabilities {
   /**
@@ -132,179 +132,179 @@ export interface QuicksightCustomPermissionsCapabilities {
   readonly viewAccountSpiceCapacity?: string;
 }
 
-export function quicksightCustomPermissionsCapabilitiesToTerraform(struct?: QuicksightCustomPermissionsCapabilities | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightCustomPermissionsCapabilitiesToTerraform(struct?: QuicksightCustomPermissionsCapabilities | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    add_or_run_anomaly_detection_for_analyses: cdktf.stringToTerraform(struct!.addOrRunAnomalyDetectionForAnalyses),
-    create_and_update_dashboard_email_reports: cdktf.stringToTerraform(struct!.createAndUpdateDashboardEmailReports),
-    create_and_update_data_sources: cdktf.stringToTerraform(struct!.createAndUpdateDataSources),
-    create_and_update_datasets: cdktf.stringToTerraform(struct!.createAndUpdateDatasets),
-    create_and_update_themes: cdktf.stringToTerraform(struct!.createAndUpdateThemes),
-    create_and_update_threshold_alerts: cdktf.stringToTerraform(struct!.createAndUpdateThresholdAlerts),
-    create_shared_folders: cdktf.stringToTerraform(struct!.createSharedFolders),
-    create_spice_dataset: cdktf.stringToTerraform(struct!.createSpiceDataset),
-    export_to_csv: cdktf.stringToTerraform(struct!.exportToCsv),
-    export_to_csv_in_scheduled_reports: cdktf.stringToTerraform(struct!.exportToCsvInScheduledReports),
-    export_to_excel: cdktf.stringToTerraform(struct!.exportToExcel),
-    export_to_excel_in_scheduled_reports: cdktf.stringToTerraform(struct!.exportToExcelInScheduledReports),
-    export_to_pdf: cdktf.stringToTerraform(struct!.exportToPdf),
-    export_to_pdf_in_scheduled_reports: cdktf.stringToTerraform(struct!.exportToPdfInScheduledReports),
-    include_content_in_scheduled_reports_email: cdktf.stringToTerraform(struct!.includeContentInScheduledReportsEmail),
-    print_reports: cdktf.stringToTerraform(struct!.printReports),
-    rename_shared_folders: cdktf.stringToTerraform(struct!.renameSharedFolders),
-    share_analyses: cdktf.stringToTerraform(struct!.shareAnalyses),
-    share_dashboards: cdktf.stringToTerraform(struct!.shareDashboards),
-    share_data_sources: cdktf.stringToTerraform(struct!.shareDataSources),
-    share_datasets: cdktf.stringToTerraform(struct!.shareDatasets),
-    subscribe_dashboard_email_reports: cdktf.stringToTerraform(struct!.subscribeDashboardEmailReports),
-    view_account_spice_capacity: cdktf.stringToTerraform(struct!.viewAccountSpiceCapacity),
+    add_or_run_anomaly_detection_for_analyses: cdktn.stringToTerraform(struct!.addOrRunAnomalyDetectionForAnalyses),
+    create_and_update_dashboard_email_reports: cdktn.stringToTerraform(struct!.createAndUpdateDashboardEmailReports),
+    create_and_update_data_sources: cdktn.stringToTerraform(struct!.createAndUpdateDataSources),
+    create_and_update_datasets: cdktn.stringToTerraform(struct!.createAndUpdateDatasets),
+    create_and_update_themes: cdktn.stringToTerraform(struct!.createAndUpdateThemes),
+    create_and_update_threshold_alerts: cdktn.stringToTerraform(struct!.createAndUpdateThresholdAlerts),
+    create_shared_folders: cdktn.stringToTerraform(struct!.createSharedFolders),
+    create_spice_dataset: cdktn.stringToTerraform(struct!.createSpiceDataset),
+    export_to_csv: cdktn.stringToTerraform(struct!.exportToCsv),
+    export_to_csv_in_scheduled_reports: cdktn.stringToTerraform(struct!.exportToCsvInScheduledReports),
+    export_to_excel: cdktn.stringToTerraform(struct!.exportToExcel),
+    export_to_excel_in_scheduled_reports: cdktn.stringToTerraform(struct!.exportToExcelInScheduledReports),
+    export_to_pdf: cdktn.stringToTerraform(struct!.exportToPdf),
+    export_to_pdf_in_scheduled_reports: cdktn.stringToTerraform(struct!.exportToPdfInScheduledReports),
+    include_content_in_scheduled_reports_email: cdktn.stringToTerraform(struct!.includeContentInScheduledReportsEmail),
+    print_reports: cdktn.stringToTerraform(struct!.printReports),
+    rename_shared_folders: cdktn.stringToTerraform(struct!.renameSharedFolders),
+    share_analyses: cdktn.stringToTerraform(struct!.shareAnalyses),
+    share_dashboards: cdktn.stringToTerraform(struct!.shareDashboards),
+    share_data_sources: cdktn.stringToTerraform(struct!.shareDataSources),
+    share_datasets: cdktn.stringToTerraform(struct!.shareDatasets),
+    subscribe_dashboard_email_reports: cdktn.stringToTerraform(struct!.subscribeDashboardEmailReports),
+    view_account_spice_capacity: cdktn.stringToTerraform(struct!.viewAccountSpiceCapacity),
   }
 }
 
 
-export function quicksightCustomPermissionsCapabilitiesToHclTerraform(struct?: QuicksightCustomPermissionsCapabilities | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightCustomPermissionsCapabilitiesToHclTerraform(struct?: QuicksightCustomPermissionsCapabilities | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     add_or_run_anomaly_detection_for_analyses: {
-      value: cdktf.stringToHclTerraform(struct!.addOrRunAnomalyDetectionForAnalyses),
+      value: cdktn.stringToHclTerraform(struct!.addOrRunAnomalyDetectionForAnalyses),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     create_and_update_dashboard_email_reports: {
-      value: cdktf.stringToHclTerraform(struct!.createAndUpdateDashboardEmailReports),
+      value: cdktn.stringToHclTerraform(struct!.createAndUpdateDashboardEmailReports),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     create_and_update_data_sources: {
-      value: cdktf.stringToHclTerraform(struct!.createAndUpdateDataSources),
+      value: cdktn.stringToHclTerraform(struct!.createAndUpdateDataSources),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     create_and_update_datasets: {
-      value: cdktf.stringToHclTerraform(struct!.createAndUpdateDatasets),
+      value: cdktn.stringToHclTerraform(struct!.createAndUpdateDatasets),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     create_and_update_themes: {
-      value: cdktf.stringToHclTerraform(struct!.createAndUpdateThemes),
+      value: cdktn.stringToHclTerraform(struct!.createAndUpdateThemes),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     create_and_update_threshold_alerts: {
-      value: cdktf.stringToHclTerraform(struct!.createAndUpdateThresholdAlerts),
+      value: cdktn.stringToHclTerraform(struct!.createAndUpdateThresholdAlerts),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     create_shared_folders: {
-      value: cdktf.stringToHclTerraform(struct!.createSharedFolders),
+      value: cdktn.stringToHclTerraform(struct!.createSharedFolders),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     create_spice_dataset: {
-      value: cdktf.stringToHclTerraform(struct!.createSpiceDataset),
+      value: cdktn.stringToHclTerraform(struct!.createSpiceDataset),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     export_to_csv: {
-      value: cdktf.stringToHclTerraform(struct!.exportToCsv),
+      value: cdktn.stringToHclTerraform(struct!.exportToCsv),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     export_to_csv_in_scheduled_reports: {
-      value: cdktf.stringToHclTerraform(struct!.exportToCsvInScheduledReports),
+      value: cdktn.stringToHclTerraform(struct!.exportToCsvInScheduledReports),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     export_to_excel: {
-      value: cdktf.stringToHclTerraform(struct!.exportToExcel),
+      value: cdktn.stringToHclTerraform(struct!.exportToExcel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     export_to_excel_in_scheduled_reports: {
-      value: cdktf.stringToHclTerraform(struct!.exportToExcelInScheduledReports),
+      value: cdktn.stringToHclTerraform(struct!.exportToExcelInScheduledReports),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     export_to_pdf: {
-      value: cdktf.stringToHclTerraform(struct!.exportToPdf),
+      value: cdktn.stringToHclTerraform(struct!.exportToPdf),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     export_to_pdf_in_scheduled_reports: {
-      value: cdktf.stringToHclTerraform(struct!.exportToPdfInScheduledReports),
+      value: cdktn.stringToHclTerraform(struct!.exportToPdfInScheduledReports),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     include_content_in_scheduled_reports_email: {
-      value: cdktf.stringToHclTerraform(struct!.includeContentInScheduledReportsEmail),
+      value: cdktn.stringToHclTerraform(struct!.includeContentInScheduledReportsEmail),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     print_reports: {
-      value: cdktf.stringToHclTerraform(struct!.printReports),
+      value: cdktn.stringToHclTerraform(struct!.printReports),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rename_shared_folders: {
-      value: cdktf.stringToHclTerraform(struct!.renameSharedFolders),
+      value: cdktn.stringToHclTerraform(struct!.renameSharedFolders),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     share_analyses: {
-      value: cdktf.stringToHclTerraform(struct!.shareAnalyses),
+      value: cdktn.stringToHclTerraform(struct!.shareAnalyses),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     share_dashboards: {
-      value: cdktf.stringToHclTerraform(struct!.shareDashboards),
+      value: cdktn.stringToHclTerraform(struct!.shareDashboards),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     share_data_sources: {
-      value: cdktf.stringToHclTerraform(struct!.shareDataSources),
+      value: cdktn.stringToHclTerraform(struct!.shareDataSources),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     share_datasets: {
-      value: cdktf.stringToHclTerraform(struct!.shareDatasets),
+      value: cdktn.stringToHclTerraform(struct!.shareDatasets),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subscribe_dashboard_email_reports: {
-      value: cdktf.stringToHclTerraform(struct!.subscribeDashboardEmailReports),
+      value: cdktn.stringToHclTerraform(struct!.subscribeDashboardEmailReports),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     view_account_spice_capacity: {
-      value: cdktf.stringToHclTerraform(struct!.viewAccountSpiceCapacity),
+      value: cdktn.stringToHclTerraform(struct!.viewAccountSpiceCapacity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -315,9 +315,9 @@ export function quicksightCustomPermissionsCapabilitiesToHclTerraform(struct?: Q
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightCustomPermissionsCapabilitiesOutputReference extends cdktf.ComplexObject {
+export class QuicksightCustomPermissionsCapabilitiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -325,11 +325,11 @@ export class QuicksightCustomPermissionsCapabilitiesOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightCustomPermissionsCapabilities | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightCustomPermissionsCapabilities | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -430,7 +430,7 @@ export class QuicksightCustomPermissionsCapabilitiesOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightCustomPermissionsCapabilities | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightCustomPermissionsCapabilities | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -458,7 +458,7 @@ export class QuicksightCustomPermissionsCapabilitiesOutputReference extends cdkt
       this._subscribeDashboardEmailReports = undefined;
       this._viewAccountSpiceCapacity = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -860,15 +860,15 @@ export class QuicksightCustomPermissionsCapabilitiesOutputReference extends cdkt
   }
 }
 
-export class QuicksightCustomPermissionsCapabilitiesList extends cdktf.ComplexList {
-  public internalValue? : QuicksightCustomPermissionsCapabilities[] | cdktf.IResolvable
+export class QuicksightCustomPermissionsCapabilitiesList extends cdktn.ComplexList {
+  public internalValue? : QuicksightCustomPermissionsCapabilities[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -883,7 +883,7 @@ export class QuicksightCustomPermissionsCapabilitiesList extends cdktf.ComplexLi
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_custom_permissions aws_quicksight_custom_permissions}
 */
-export class QuicksightCustomPermissions extends cdktf.TerraformResource {
+export class QuicksightCustomPermissions extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -894,14 +894,14 @@ export class QuicksightCustomPermissions extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QuicksightCustomPermissions resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QuicksightCustomPermissions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightCustomPermissions to import
   * @param importFromId The id of the existing QuicksightCustomPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_custom_permissions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightCustomPermissions to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_custom_permissions", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_custom_permissions", importId: importFromId, provider });
       }
 
   // ===========
@@ -1009,7 +1009,7 @@ export class QuicksightCustomPermissions extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1019,7 +1019,7 @@ export class QuicksightCustomPermissions extends cdktf.TerraformResource {
   public get capabilities() {
     return this._capabilities;
   }
-  public putCapabilities(value: QuicksightCustomPermissionsCapabilities[] | cdktf.IResolvable) {
+  public putCapabilities(value: QuicksightCustomPermissionsCapabilities[] | cdktn.IResolvable) {
     this._capabilities.internalValue = value;
   }
   public resetCapabilities() {
@@ -1036,42 +1036,42 @@ export class QuicksightCustomPermissions extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      custom_permissions_name: cdktf.stringToTerraform(this._customPermissionsName),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      capabilities: cdktf.listMapper(quicksightCustomPermissionsCapabilitiesToTerraform, true)(this._capabilities.internalValue),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      custom_permissions_name: cdktn.stringToTerraform(this._customPermissionsName),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      capabilities: cdktn.listMapper(quicksightCustomPermissionsCapabilitiesToTerraform, true)(this._capabilities.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_permissions_name: {
-        value: cdktf.stringToHclTerraform(this._customPermissionsName),
+        value: cdktn.stringToHclTerraform(this._customPermissionsName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       capabilities: {
-        value: cdktf.listMapperHcl(quicksightCustomPermissionsCapabilitiesToHclTerraform, true)(this._capabilities.internalValue),
+        value: cdktn.listMapperHcl(quicksightCustomPermissionsCapabilitiesToHclTerraform, true)(this._capabilities.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "QuicksightCustomPermissionsCapabilitiesList",

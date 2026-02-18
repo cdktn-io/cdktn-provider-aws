@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedshiftIdcApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftIdcApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_idc_application#application_type RedshiftIdcApplication#application_type}
   */
@@ -51,13 +51,13 @@ export interface RedshiftIdcApplicationConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_idc_application#authorized_token_issuer RedshiftIdcApplication#authorized_token_issuer}
   */
-  readonly authorizedTokenIssuer?: RedshiftIdcApplicationAuthorizedTokenIssuer[] | cdktf.IResolvable;
+  readonly authorizedTokenIssuer?: RedshiftIdcApplicationAuthorizedTokenIssuer[] | cdktn.IResolvable;
   /**
   * service_integration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_idc_application#service_integration RedshiftIdcApplication#service_integration}
   */
-  readonly serviceIntegration?: RedshiftIdcApplicationServiceIntegration[] | cdktf.IResolvable;
+  readonly serviceIntegration?: RedshiftIdcApplicationServiceIntegration[] | cdktn.IResolvable;
 }
 export interface RedshiftIdcApplicationAuthorizedTokenIssuer {
   /**
@@ -70,32 +70,32 @@ export interface RedshiftIdcApplicationAuthorizedTokenIssuer {
   readonly trustedTokenIssuerArn?: string;
 }
 
-export function redshiftIdcApplicationAuthorizedTokenIssuerToTerraform(struct?: RedshiftIdcApplicationAuthorizedTokenIssuer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationAuthorizedTokenIssuerToTerraform(struct?: RedshiftIdcApplicationAuthorizedTokenIssuer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authorized_audiences_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.authorizedAudiencesList),
-    trusted_token_issuer_arn: cdktf.stringToTerraform(struct!.trustedTokenIssuerArn),
+    authorized_audiences_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.authorizedAudiencesList),
+    trusted_token_issuer_arn: cdktn.stringToTerraform(struct!.trustedTokenIssuerArn),
   }
 }
 
 
-export function redshiftIdcApplicationAuthorizedTokenIssuerToHclTerraform(struct?: RedshiftIdcApplicationAuthorizedTokenIssuer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationAuthorizedTokenIssuerToHclTerraform(struct?: RedshiftIdcApplicationAuthorizedTokenIssuer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authorized_audiences_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.authorizedAudiencesList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.authorizedAudiencesList),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     trusted_token_issuer_arn: {
-      value: cdktf.stringToHclTerraform(struct!.trustedTokenIssuerArn),
+      value: cdktn.stringToHclTerraform(struct!.trustedTokenIssuerArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -106,9 +106,9 @@ export function redshiftIdcApplicationAuthorizedTokenIssuerToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedshiftIdcApplicationAuthorizedTokenIssuerOutputReference extends cdktf.ComplexObject {
+export class RedshiftIdcApplicationAuthorizedTokenIssuerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -116,11 +116,11 @@ export class RedshiftIdcApplicationAuthorizedTokenIssuerOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedshiftIdcApplicationAuthorizedTokenIssuer | cdktf.IResolvable | undefined {
+  public get internalValue(): RedshiftIdcApplicationAuthorizedTokenIssuer | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -137,14 +137,14 @@ export class RedshiftIdcApplicationAuthorizedTokenIssuerOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedshiftIdcApplicationAuthorizedTokenIssuer | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedshiftIdcApplicationAuthorizedTokenIssuer | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._authorizedAudiencesList = undefined;
       this._trustedTokenIssuerArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -189,15 +189,15 @@ export class RedshiftIdcApplicationAuthorizedTokenIssuerOutputReference extends 
   }
 }
 
-export class RedshiftIdcApplicationAuthorizedTokenIssuerList extends cdktf.ComplexList {
-  public internalValue? : RedshiftIdcApplicationAuthorizedTokenIssuer[] | cdktf.IResolvable
+export class RedshiftIdcApplicationAuthorizedTokenIssuerList extends cdktn.ComplexList {
+  public internalValue? : RedshiftIdcApplicationAuthorizedTokenIssuer[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -215,25 +215,25 @@ export interface RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormat
   readonly authorization: string;
 }
 
-export function redshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authorization: cdktf.stringToTerraform(struct!.authorization),
+    authorization: cdktn.stringToTerraform(struct!.authorization),
   }
 }
 
 
-export function redshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authorization: {
-      value: cdktf.stringToHclTerraform(struct!.authorization),
+      value: cdktn.stringToHclTerraform(struct!.authorization),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -244,9 +244,9 @@ export function redshiftIdcApplicationServiceIntegrationLakeFormationLakeFormati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryOutputReference extends cdktf.ComplexObject {
+export class RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -254,11 +254,11 @@ export class RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQ
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery | cdktf.IResolvable | undefined {
+  public get internalValue(): RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -271,13 +271,13 @@ export class RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._authorization = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -302,15 +302,15 @@ export class RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQ
   }
 }
 
-export class RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryList extends cdktf.ComplexList {
-  public internalValue? : RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery[] | cdktf.IResolvable
+export class RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryList extends cdktn.ComplexList {
+  public internalValue? : RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -327,28 +327,28 @@ export interface RedshiftIdcApplicationServiceIntegrationLakeFormation {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_idc_application#lake_formation_query RedshiftIdcApplication#lake_formation_query}
   */
-  readonly lakeFormationQuery?: RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery[] | cdktf.IResolvable;
+  readonly lakeFormationQuery?: RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery[] | cdktn.IResolvable;
 }
 
-export function redshiftIdcApplicationServiceIntegrationLakeFormationToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationLakeFormation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationServiceIntegrationLakeFormationToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationLakeFormation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lake_formation_query: cdktf.listMapper(redshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryToTerraform, true)(struct!.lakeFormationQuery),
+    lake_formation_query: cdktn.listMapper(redshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryToTerraform, true)(struct!.lakeFormationQuery),
   }
 }
 
 
-export function redshiftIdcApplicationServiceIntegrationLakeFormationToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationLakeFormation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationServiceIntegrationLakeFormationToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationLakeFormation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lake_formation_query: {
-      value: cdktf.listMapperHcl(redshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryToHclTerraform, true)(struct!.lakeFormationQuery),
+      value: cdktn.listMapperHcl(redshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryToHclTerraform, true)(struct!.lakeFormationQuery),
       isBlock: true,
       type: "list",
       storageClassType: "RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryList",
@@ -359,9 +359,9 @@ export function redshiftIdcApplicationServiceIntegrationLakeFormationToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedshiftIdcApplicationServiceIntegrationLakeFormationOutputReference extends cdktf.ComplexObject {
+export class RedshiftIdcApplicationServiceIntegrationLakeFormationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -369,11 +369,11 @@ export class RedshiftIdcApplicationServiceIntegrationLakeFormationOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedshiftIdcApplicationServiceIntegrationLakeFormation | cdktf.IResolvable | undefined {
+  public get internalValue(): RedshiftIdcApplicationServiceIntegrationLakeFormation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -386,13 +386,13 @@ export class RedshiftIdcApplicationServiceIntegrationLakeFormationOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedshiftIdcApplicationServiceIntegrationLakeFormation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedshiftIdcApplicationServiceIntegrationLakeFormation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._lakeFormationQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -408,7 +408,7 @@ export class RedshiftIdcApplicationServiceIntegrationLakeFormationOutputReferenc
   public get lakeFormationQuery() {
     return this._lakeFormationQuery;
   }
-  public putLakeFormationQuery(value: RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery[] | cdktf.IResolvable) {
+  public putLakeFormationQuery(value: RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery[] | cdktn.IResolvable) {
     this._lakeFormationQuery.internalValue = value;
   }
   public resetLakeFormationQuery() {
@@ -420,15 +420,15 @@ export class RedshiftIdcApplicationServiceIntegrationLakeFormationOutputReferenc
   }
 }
 
-export class RedshiftIdcApplicationServiceIntegrationLakeFormationList extends cdktf.ComplexList {
-  public internalValue? : RedshiftIdcApplicationServiceIntegrationLakeFormation[] | cdktf.IResolvable
+export class RedshiftIdcApplicationServiceIntegrationLakeFormationList extends cdktn.ComplexList {
+  public internalValue? : RedshiftIdcApplicationServiceIntegrationLakeFormation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -446,25 +446,25 @@ export interface RedshiftIdcApplicationServiceIntegrationRedshiftConnect {
   readonly authorization: string;
 }
 
-export function redshiftIdcApplicationServiceIntegrationRedshiftConnectToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationRedshiftConnect | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationServiceIntegrationRedshiftConnectToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationRedshiftConnect | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authorization: cdktf.stringToTerraform(struct!.authorization),
+    authorization: cdktn.stringToTerraform(struct!.authorization),
   }
 }
 
 
-export function redshiftIdcApplicationServiceIntegrationRedshiftConnectToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationRedshiftConnect | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationServiceIntegrationRedshiftConnectToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationRedshiftConnect | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authorization: {
-      value: cdktf.stringToHclTerraform(struct!.authorization),
+      value: cdktn.stringToHclTerraform(struct!.authorization),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -475,9 +475,9 @@ export function redshiftIdcApplicationServiceIntegrationRedshiftConnectToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedshiftIdcApplicationServiceIntegrationRedshiftConnectOutputReference extends cdktf.ComplexObject {
+export class RedshiftIdcApplicationServiceIntegrationRedshiftConnectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -485,11 +485,11 @@ export class RedshiftIdcApplicationServiceIntegrationRedshiftConnectOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedshiftIdcApplicationServiceIntegrationRedshiftConnect | cdktf.IResolvable | undefined {
+  public get internalValue(): RedshiftIdcApplicationServiceIntegrationRedshiftConnect | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -502,13 +502,13 @@ export class RedshiftIdcApplicationServiceIntegrationRedshiftConnectOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedshiftIdcApplicationServiceIntegrationRedshiftConnect | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedshiftIdcApplicationServiceIntegrationRedshiftConnect | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._authorization = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -533,15 +533,15 @@ export class RedshiftIdcApplicationServiceIntegrationRedshiftConnectOutputRefere
   }
 }
 
-export class RedshiftIdcApplicationServiceIntegrationRedshiftConnectList extends cdktf.ComplexList {
-  public internalValue? : RedshiftIdcApplicationServiceIntegrationRedshiftConnect[] | cdktf.IResolvable
+export class RedshiftIdcApplicationServiceIntegrationRedshiftConnectList extends cdktn.ComplexList {
+  public internalValue? : RedshiftIdcApplicationServiceIntegrationRedshiftConnect[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -558,28 +558,28 @@ export interface RedshiftIdcApplicationServiceIntegrationRedshift {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_idc_application#connect RedshiftIdcApplication#connect}
   */
-  readonly connect?: RedshiftIdcApplicationServiceIntegrationRedshiftConnect[] | cdktf.IResolvable;
+  readonly connect?: RedshiftIdcApplicationServiceIntegrationRedshiftConnect[] | cdktn.IResolvable;
 }
 
-export function redshiftIdcApplicationServiceIntegrationRedshiftToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationRedshift | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationServiceIntegrationRedshiftToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationRedshift | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connect: cdktf.listMapper(redshiftIdcApplicationServiceIntegrationRedshiftConnectToTerraform, true)(struct!.connect),
+    connect: cdktn.listMapper(redshiftIdcApplicationServiceIntegrationRedshiftConnectToTerraform, true)(struct!.connect),
   }
 }
 
 
-export function redshiftIdcApplicationServiceIntegrationRedshiftToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationRedshift | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationServiceIntegrationRedshiftToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationRedshift | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connect: {
-      value: cdktf.listMapperHcl(redshiftIdcApplicationServiceIntegrationRedshiftConnectToHclTerraform, true)(struct!.connect),
+      value: cdktn.listMapperHcl(redshiftIdcApplicationServiceIntegrationRedshiftConnectToHclTerraform, true)(struct!.connect),
       isBlock: true,
       type: "list",
       storageClassType: "RedshiftIdcApplicationServiceIntegrationRedshiftConnectList",
@@ -590,9 +590,9 @@ export function redshiftIdcApplicationServiceIntegrationRedshiftToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedshiftIdcApplicationServiceIntegrationRedshiftOutputReference extends cdktf.ComplexObject {
+export class RedshiftIdcApplicationServiceIntegrationRedshiftOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -600,11 +600,11 @@ export class RedshiftIdcApplicationServiceIntegrationRedshiftOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedshiftIdcApplicationServiceIntegrationRedshift | cdktf.IResolvable | undefined {
+  public get internalValue(): RedshiftIdcApplicationServiceIntegrationRedshift | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -617,13 +617,13 @@ export class RedshiftIdcApplicationServiceIntegrationRedshiftOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedshiftIdcApplicationServiceIntegrationRedshift | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedshiftIdcApplicationServiceIntegrationRedshift | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._connect.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -639,7 +639,7 @@ export class RedshiftIdcApplicationServiceIntegrationRedshiftOutputReference ext
   public get connect() {
     return this._connect;
   }
-  public putConnect(value: RedshiftIdcApplicationServiceIntegrationRedshiftConnect[] | cdktf.IResolvable) {
+  public putConnect(value: RedshiftIdcApplicationServiceIntegrationRedshiftConnect[] | cdktn.IResolvable) {
     this._connect.internalValue = value;
   }
   public resetConnect() {
@@ -651,15 +651,15 @@ export class RedshiftIdcApplicationServiceIntegrationRedshiftOutputReference ext
   }
 }
 
-export class RedshiftIdcApplicationServiceIntegrationRedshiftList extends cdktf.ComplexList {
-  public internalValue? : RedshiftIdcApplicationServiceIntegrationRedshift[] | cdktf.IResolvable
+export class RedshiftIdcApplicationServiceIntegrationRedshiftList extends cdktn.ComplexList {
+  public internalValue? : RedshiftIdcApplicationServiceIntegrationRedshift[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -677,25 +677,25 @@ export interface RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWrite
   readonly authorization: string;
 }
 
-export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authorization: cdktf.stringToTerraform(struct!.authorization),
+    authorization: cdktn.stringToTerraform(struct!.authorization),
   }
 }
 
 
-export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authorization: {
-      value: cdktf.stringToHclTerraform(struct!.authorization),
+      value: cdktn.stringToHclTerraform(struct!.authorization),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -706,9 +706,9 @@ export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessOutputReference extends cdktf.ComplexObject {
+export class RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -716,11 +716,11 @@ export class RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAcce
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess | cdktf.IResolvable | undefined {
+  public get internalValue(): RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -733,13 +733,13 @@ export class RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAcce
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._authorization = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -764,15 +764,15 @@ export class RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAcce
   }
 }
 
-export class RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessList extends cdktf.ComplexList {
-  public internalValue? : RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess[] | cdktf.IResolvable
+export class RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessList extends cdktn.ComplexList {
+  public internalValue? : RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -789,28 +789,28 @@ export interface RedshiftIdcApplicationServiceIntegrationS3AccessGrants {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_idc_application#read_write_access RedshiftIdcApplication#read_write_access}
   */
-  readonly readWriteAccess?: RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess[] | cdktf.IResolvable;
+  readonly readWriteAccess?: RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess[] | cdktn.IResolvable;
 }
 
-export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationS3AccessGrants | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationS3AccessGrants | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read_write_access: cdktf.listMapper(redshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessToTerraform, true)(struct!.readWriteAccess),
+    read_write_access: cdktn.listMapper(redshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessToTerraform, true)(struct!.readWriteAccess),
   }
 }
 
 
-export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationS3AccessGrants | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationS3AccessGrants | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read_write_access: {
-      value: cdktf.listMapperHcl(redshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessToHclTerraform, true)(struct!.readWriteAccess),
+      value: cdktn.listMapperHcl(redshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessToHclTerraform, true)(struct!.readWriteAccess),
       isBlock: true,
       type: "list",
       storageClassType: "RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessList",
@@ -821,9 +821,9 @@ export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedshiftIdcApplicationServiceIntegrationS3AccessGrantsOutputReference extends cdktf.ComplexObject {
+export class RedshiftIdcApplicationServiceIntegrationS3AccessGrantsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -831,11 +831,11 @@ export class RedshiftIdcApplicationServiceIntegrationS3AccessGrantsOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedshiftIdcApplicationServiceIntegrationS3AccessGrants | cdktf.IResolvable | undefined {
+  public get internalValue(): RedshiftIdcApplicationServiceIntegrationS3AccessGrants | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -848,13 +848,13 @@ export class RedshiftIdcApplicationServiceIntegrationS3AccessGrantsOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedshiftIdcApplicationServiceIntegrationS3AccessGrants | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedshiftIdcApplicationServiceIntegrationS3AccessGrants | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._readWriteAccess.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -870,7 +870,7 @@ export class RedshiftIdcApplicationServiceIntegrationS3AccessGrantsOutputReferen
   public get readWriteAccess() {
     return this._readWriteAccess;
   }
-  public putReadWriteAccess(value: RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess[] | cdktf.IResolvable) {
+  public putReadWriteAccess(value: RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess[] | cdktn.IResolvable) {
     this._readWriteAccess.internalValue = value;
   }
   public resetReadWriteAccess() {
@@ -882,15 +882,15 @@ export class RedshiftIdcApplicationServiceIntegrationS3AccessGrantsOutputReferen
   }
 }
 
-export class RedshiftIdcApplicationServiceIntegrationS3AccessGrantsList extends cdktf.ComplexList {
-  public internalValue? : RedshiftIdcApplicationServiceIntegrationS3AccessGrants[] | cdktf.IResolvable
+export class RedshiftIdcApplicationServiceIntegrationS3AccessGrantsList extends cdktn.ComplexList {
+  public internalValue? : RedshiftIdcApplicationServiceIntegrationS3AccessGrants[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -907,54 +907,54 @@ export interface RedshiftIdcApplicationServiceIntegration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_idc_application#lake_formation RedshiftIdcApplication#lake_formation}
   */
-  readonly lakeFormation?: RedshiftIdcApplicationServiceIntegrationLakeFormation[] | cdktf.IResolvable;
+  readonly lakeFormation?: RedshiftIdcApplicationServiceIntegrationLakeFormation[] | cdktn.IResolvable;
   /**
   * redshift block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_idc_application#redshift RedshiftIdcApplication#redshift}
   */
-  readonly redshift?: RedshiftIdcApplicationServiceIntegrationRedshift[] | cdktf.IResolvable;
+  readonly redshift?: RedshiftIdcApplicationServiceIntegrationRedshift[] | cdktn.IResolvable;
   /**
   * s3_access_grants block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_idc_application#s3_access_grants RedshiftIdcApplication#s3_access_grants}
   */
-  readonly s3AccessGrants?: RedshiftIdcApplicationServiceIntegrationS3AccessGrants[] | cdktf.IResolvable;
+  readonly s3AccessGrants?: RedshiftIdcApplicationServiceIntegrationS3AccessGrants[] | cdktn.IResolvable;
 }
 
-export function redshiftIdcApplicationServiceIntegrationToTerraform(struct?: RedshiftIdcApplicationServiceIntegration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationServiceIntegrationToTerraform(struct?: RedshiftIdcApplicationServiceIntegration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lake_formation: cdktf.listMapper(redshiftIdcApplicationServiceIntegrationLakeFormationToTerraform, true)(struct!.lakeFormation),
-    redshift: cdktf.listMapper(redshiftIdcApplicationServiceIntegrationRedshiftToTerraform, true)(struct!.redshift),
-    s3_access_grants: cdktf.listMapper(redshiftIdcApplicationServiceIntegrationS3AccessGrantsToTerraform, true)(struct!.s3AccessGrants),
+    lake_formation: cdktn.listMapper(redshiftIdcApplicationServiceIntegrationLakeFormationToTerraform, true)(struct!.lakeFormation),
+    redshift: cdktn.listMapper(redshiftIdcApplicationServiceIntegrationRedshiftToTerraform, true)(struct!.redshift),
+    s3_access_grants: cdktn.listMapper(redshiftIdcApplicationServiceIntegrationS3AccessGrantsToTerraform, true)(struct!.s3AccessGrants),
   }
 }
 
 
-export function redshiftIdcApplicationServiceIntegrationToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftIdcApplicationServiceIntegrationToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lake_formation: {
-      value: cdktf.listMapperHcl(redshiftIdcApplicationServiceIntegrationLakeFormationToHclTerraform, true)(struct!.lakeFormation),
+      value: cdktn.listMapperHcl(redshiftIdcApplicationServiceIntegrationLakeFormationToHclTerraform, true)(struct!.lakeFormation),
       isBlock: true,
       type: "list",
       storageClassType: "RedshiftIdcApplicationServiceIntegrationLakeFormationList",
     },
     redshift: {
-      value: cdktf.listMapperHcl(redshiftIdcApplicationServiceIntegrationRedshiftToHclTerraform, true)(struct!.redshift),
+      value: cdktn.listMapperHcl(redshiftIdcApplicationServiceIntegrationRedshiftToHclTerraform, true)(struct!.redshift),
       isBlock: true,
       type: "list",
       storageClassType: "RedshiftIdcApplicationServiceIntegrationRedshiftList",
     },
     s3_access_grants: {
-      value: cdktf.listMapperHcl(redshiftIdcApplicationServiceIntegrationS3AccessGrantsToHclTerraform, true)(struct!.s3AccessGrants),
+      value: cdktn.listMapperHcl(redshiftIdcApplicationServiceIntegrationS3AccessGrantsToHclTerraform, true)(struct!.s3AccessGrants),
       isBlock: true,
       type: "list",
       storageClassType: "RedshiftIdcApplicationServiceIntegrationS3AccessGrantsList",
@@ -965,9 +965,9 @@ export function redshiftIdcApplicationServiceIntegrationToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedshiftIdcApplicationServiceIntegrationOutputReference extends cdktf.ComplexObject {
+export class RedshiftIdcApplicationServiceIntegrationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -975,11 +975,11 @@ export class RedshiftIdcApplicationServiceIntegrationOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedshiftIdcApplicationServiceIntegration | cdktf.IResolvable | undefined {
+  public get internalValue(): RedshiftIdcApplicationServiceIntegration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1000,7 +1000,7 @@ export class RedshiftIdcApplicationServiceIntegrationOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedshiftIdcApplicationServiceIntegration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedshiftIdcApplicationServiceIntegration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1008,7 +1008,7 @@ export class RedshiftIdcApplicationServiceIntegrationOutputReference extends cdk
       this._redshift.internalValue = undefined;
       this._s3AccessGrants.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1026,7 +1026,7 @@ export class RedshiftIdcApplicationServiceIntegrationOutputReference extends cdk
   public get lakeFormation() {
     return this._lakeFormation;
   }
-  public putLakeFormation(value: RedshiftIdcApplicationServiceIntegrationLakeFormation[] | cdktf.IResolvable) {
+  public putLakeFormation(value: RedshiftIdcApplicationServiceIntegrationLakeFormation[] | cdktn.IResolvable) {
     this._lakeFormation.internalValue = value;
   }
   public resetLakeFormation() {
@@ -1042,7 +1042,7 @@ export class RedshiftIdcApplicationServiceIntegrationOutputReference extends cdk
   public get redshift() {
     return this._redshift;
   }
-  public putRedshift(value: RedshiftIdcApplicationServiceIntegrationRedshift[] | cdktf.IResolvable) {
+  public putRedshift(value: RedshiftIdcApplicationServiceIntegrationRedshift[] | cdktn.IResolvable) {
     this._redshift.internalValue = value;
   }
   public resetRedshift() {
@@ -1058,7 +1058,7 @@ export class RedshiftIdcApplicationServiceIntegrationOutputReference extends cdk
   public get s3AccessGrants() {
     return this._s3AccessGrants;
   }
-  public putS3AccessGrants(value: RedshiftIdcApplicationServiceIntegrationS3AccessGrants[] | cdktf.IResolvable) {
+  public putS3AccessGrants(value: RedshiftIdcApplicationServiceIntegrationS3AccessGrants[] | cdktn.IResolvable) {
     this._s3AccessGrants.internalValue = value;
   }
   public resetS3AccessGrants() {
@@ -1070,15 +1070,15 @@ export class RedshiftIdcApplicationServiceIntegrationOutputReference extends cdk
   }
 }
 
-export class RedshiftIdcApplicationServiceIntegrationList extends cdktf.ComplexList {
-  public internalValue? : RedshiftIdcApplicationServiceIntegration[] | cdktf.IResolvable
+export class RedshiftIdcApplicationServiceIntegrationList extends cdktn.ComplexList {
+  public internalValue? : RedshiftIdcApplicationServiceIntegration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1093,7 +1093,7 @@ export class RedshiftIdcApplicationServiceIntegrationList extends cdktf.ComplexL
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_idc_application aws_redshift_idc_application}
 */
-export class RedshiftIdcApplication extends cdktf.TerraformResource {
+export class RedshiftIdcApplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1104,14 +1104,14 @@ export class RedshiftIdcApplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedshiftIdcApplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedshiftIdcApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftIdcApplication to import
   * @param importFromId The id of the existing RedshiftIdcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_idc_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftIdcApplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_idc_application", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_idc_application", importId: importFromId, provider });
       }
 
   // ===========
@@ -1284,7 +1284,7 @@ export class RedshiftIdcApplication extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1294,7 +1294,7 @@ export class RedshiftIdcApplication extends cdktf.TerraformResource {
   public get authorizedTokenIssuer() {
     return this._authorizedTokenIssuer;
   }
-  public putAuthorizedTokenIssuer(value: RedshiftIdcApplicationAuthorizedTokenIssuer[] | cdktf.IResolvable) {
+  public putAuthorizedTokenIssuer(value: RedshiftIdcApplicationAuthorizedTokenIssuer[] | cdktn.IResolvable) {
     this._authorizedTokenIssuer.internalValue = value;
   }
   public resetAuthorizedTokenIssuer() {
@@ -1310,7 +1310,7 @@ export class RedshiftIdcApplication extends cdktf.TerraformResource {
   public get serviceIntegration() {
     return this._serviceIntegration;
   }
-  public putServiceIntegration(value: RedshiftIdcApplicationServiceIntegration[] | cdktf.IResolvable) {
+  public putServiceIntegration(value: RedshiftIdcApplicationServiceIntegration[] | cdktn.IResolvable) {
     this._serviceIntegration.internalValue = value;
   }
   public resetServiceIntegration() {
@@ -1327,77 +1327,77 @@ export class RedshiftIdcApplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_type: cdktf.stringToTerraform(this._applicationType),
-      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
-      idc_display_name: cdktf.stringToTerraform(this._idcDisplayName),
-      idc_instance_arn: cdktf.stringToTerraform(this._idcInstanceArn),
-      identity_namespace: cdktf.stringToTerraform(this._identityNamespace),
-      redshift_idc_application_name: cdktf.stringToTerraform(this._redshiftIdcApplicationName),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      authorized_token_issuer: cdktf.listMapper(redshiftIdcApplicationAuthorizedTokenIssuerToTerraform, true)(this._authorizedTokenIssuer.internalValue),
-      service_integration: cdktf.listMapper(redshiftIdcApplicationServiceIntegrationToTerraform, true)(this._serviceIntegration.internalValue),
+      application_type: cdktn.stringToTerraform(this._applicationType),
+      iam_role_arn: cdktn.stringToTerraform(this._iamRoleArn),
+      idc_display_name: cdktn.stringToTerraform(this._idcDisplayName),
+      idc_instance_arn: cdktn.stringToTerraform(this._idcInstanceArn),
+      identity_namespace: cdktn.stringToTerraform(this._identityNamespace),
+      redshift_idc_application_name: cdktn.stringToTerraform(this._redshiftIdcApplicationName),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      authorized_token_issuer: cdktn.listMapper(redshiftIdcApplicationAuthorizedTokenIssuerToTerraform, true)(this._authorizedTokenIssuer.internalValue),
+      service_integration: cdktn.listMapper(redshiftIdcApplicationServiceIntegrationToTerraform, true)(this._serviceIntegration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_type: {
-        value: cdktf.stringToHclTerraform(this._applicationType),
+        value: cdktn.stringToHclTerraform(this._applicationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_role_arn: {
-        value: cdktf.stringToHclTerraform(this._iamRoleArn),
+        value: cdktn.stringToHclTerraform(this._iamRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idc_display_name: {
-        value: cdktf.stringToHclTerraform(this._idcDisplayName),
+        value: cdktn.stringToHclTerraform(this._idcDisplayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idc_instance_arn: {
-        value: cdktf.stringToHclTerraform(this._idcInstanceArn),
+        value: cdktn.stringToHclTerraform(this._idcInstanceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_namespace: {
-        value: cdktf.stringToHclTerraform(this._identityNamespace),
+        value: cdktn.stringToHclTerraform(this._identityNamespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redshift_idc_application_name: {
-        value: cdktf.stringToHclTerraform(this._redshiftIdcApplicationName),
+        value: cdktn.stringToHclTerraform(this._redshiftIdcApplicationName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       authorized_token_issuer: {
-        value: cdktf.listMapperHcl(redshiftIdcApplicationAuthorizedTokenIssuerToHclTerraform, true)(this._authorizedTokenIssuer.internalValue),
+        value: cdktn.listMapperHcl(redshiftIdcApplicationAuthorizedTokenIssuerToHclTerraform, true)(this._authorizedTokenIssuer.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RedshiftIdcApplicationAuthorizedTokenIssuerList",
       },
       service_integration: {
-        value: cdktf.listMapperHcl(redshiftIdcApplicationServiceIntegrationToHclTerraform, true)(this._serviceIntegration.internalValue),
+        value: cdktn.listMapperHcl(redshiftIdcApplicationServiceIntegrationToHclTerraform, true)(this._serviceIntegration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RedshiftIdcApplicationServiceIntegrationList",

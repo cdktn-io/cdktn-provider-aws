@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsSecretsmanagerSecretVersionsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSecretsmanagerSecretVersionsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_secret_versions#include_deprecated DataAwsSecretsmanagerSecretVersions#include_deprecated}
   */
-  readonly includeDeprecated?: boolean | cdktf.IResolvable;
+  readonly includeDeprecated?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -31,8 +31,8 @@ export interface DataAwsSecretsmanagerSecretVersionsVersions {
 }
 
 export function dataAwsSecretsmanagerSecretVersionsVersionsToTerraform(struct?: DataAwsSecretsmanagerSecretVersionsVersions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -41,8 +41,8 @@ export function dataAwsSecretsmanagerSecretVersionsVersionsToTerraform(struct?: 
 
 
 export function dataAwsSecretsmanagerSecretVersionsVersionsToHclTerraform(struct?: DataAwsSecretsmanagerSecretVersionsVersions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -50,7 +50,7 @@ export function dataAwsSecretsmanagerSecretVersionsVersionsToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsSecretsmanagerSecretVersionsVersionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsSecretsmanagerSecretVersionsVersionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -59,7 +59,7 @@ export class DataAwsSecretsmanagerSecretVersionsVersionsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -99,14 +99,14 @@ export class DataAwsSecretsmanagerSecretVersionsVersionsOutputReference extends 
   }
 }
 
-export class DataAwsSecretsmanagerSecretVersionsVersionsList extends cdktf.ComplexList {
+export class DataAwsSecretsmanagerSecretVersionsVersionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -121,7 +121,7 @@ export class DataAwsSecretsmanagerSecretVersionsVersionsList extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_secret_versions aws_secretsmanager_secret_versions}
 */
-export class DataAwsSecretsmanagerSecretVersions extends cdktf.TerraformDataSource {
+export class DataAwsSecretsmanagerSecretVersions extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -132,14 +132,14 @@ export class DataAwsSecretsmanagerSecretVersions extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsSecretsmanagerSecretVersions resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsSecretsmanagerSecretVersions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSecretsmanagerSecretVersions to import
   * @param importFromId The id of the existing DataAwsSecretsmanagerSecretVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_secret_versions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSecretsmanagerSecretVersions to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_secretsmanager_secret_versions", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_secretsmanager_secret_versions", importId: importFromId, provider });
       }
 
   // ===========
@@ -184,11 +184,11 @@ export class DataAwsSecretsmanagerSecretVersions extends cdktf.TerraformDataSour
   }
 
   // include_deprecated - computed: false, optional: true, required: false
-  private _includeDeprecated?: boolean | cdktf.IResolvable; 
+  private _includeDeprecated?: boolean | cdktn.IResolvable; 
   public get includeDeprecated() {
     return this.getBooleanAttribute('include_deprecated');
   }
-  public set includeDeprecated(value: boolean | cdktf.IResolvable) {
+  public set includeDeprecated(value: boolean | cdktn.IResolvable) {
     this._includeDeprecated = value;
   }
   public resetIncludeDeprecated() {
@@ -245,28 +245,28 @@ export class DataAwsSecretsmanagerSecretVersions extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      include_deprecated: cdktf.booleanToTerraform(this._includeDeprecated),
-      region: cdktf.stringToTerraform(this._region),
-      secret_id: cdktf.stringToTerraform(this._secretId),
+      include_deprecated: cdktn.booleanToTerraform(this._includeDeprecated),
+      region: cdktn.stringToTerraform(this._region),
+      secret_id: cdktn.stringToTerraform(this._secretId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       include_deprecated: {
-        value: cdktf.booleanToHclTerraform(this._includeDeprecated),
+        value: cdktn.booleanToHclTerraform(this._includeDeprecated),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_id: {
-        value: cdktf.stringToHclTerraform(this._secretId),
+        value: cdktn.stringToHclTerraform(this._secretId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

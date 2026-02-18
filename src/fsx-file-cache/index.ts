@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FsxFileCacheConfig extends cdktf.TerraformMetaArguments {
+export interface FsxFileCacheConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_file_cache#copy_tags_to_data_repository_associations FsxFileCache#copy_tags_to_data_repository_associations}
   */
-  readonly copyTagsToDataRepositoryAssociations?: boolean | cdktf.IResolvable;
+  readonly copyTagsToDataRepositoryAssociations?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_file_cache#file_cache_type FsxFileCache#file_cache_type}
   */
@@ -66,13 +66,13 @@ export interface FsxFileCacheConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_file_cache#data_repository_association FsxFileCache#data_repository_association}
   */
-  readonly dataRepositoryAssociation?: FsxFileCacheDataRepositoryAssociation[] | cdktf.IResolvable;
+  readonly dataRepositoryAssociation?: FsxFileCacheDataRepositoryAssociation[] | cdktn.IResolvable;
   /**
   * lustre_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_file_cache#lustre_configuration FsxFileCache#lustre_configuration}
   */
-  readonly lustreConfiguration?: FsxFileCacheLustreConfiguration[] | cdktf.IResolvable;
+  readonly lustreConfiguration?: FsxFileCacheLustreConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -91,32 +91,32 @@ export interface FsxFileCacheDataRepositoryAssociationNfs {
   readonly version: string;
 }
 
-export function fsxFileCacheDataRepositoryAssociationNfsToTerraform(struct?: FsxFileCacheDataRepositoryAssociationNfs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fsxFileCacheDataRepositoryAssociationNfsToTerraform(struct?: FsxFileCacheDataRepositoryAssociationNfs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dns_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dnsIps),
-    version: cdktf.stringToTerraform(struct!.version),
+    dns_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dnsIps),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
-export function fsxFileCacheDataRepositoryAssociationNfsToHclTerraform(struct?: FsxFileCacheDataRepositoryAssociationNfs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fsxFileCacheDataRepositoryAssociationNfsToHclTerraform(struct?: FsxFileCacheDataRepositoryAssociationNfs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dns_ips: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsIps),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dnsIps),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,9 +127,9 @@ export function fsxFileCacheDataRepositoryAssociationNfsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxFileCacheDataRepositoryAssociationNfsOutputReference extends cdktf.ComplexObject {
+export class FsxFileCacheDataRepositoryAssociationNfsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -137,11 +137,11 @@ export class FsxFileCacheDataRepositoryAssociationNfsOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FsxFileCacheDataRepositoryAssociationNfs | cdktf.IResolvable | undefined {
+  public get internalValue(): FsxFileCacheDataRepositoryAssociationNfs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -158,14 +158,14 @@ export class FsxFileCacheDataRepositoryAssociationNfsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FsxFileCacheDataRepositoryAssociationNfs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FsxFileCacheDataRepositoryAssociationNfs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dnsIps = undefined;
       this._version = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -180,7 +180,7 @@ export class FsxFileCacheDataRepositoryAssociationNfsOutputReference extends cdk
   // dns_ips - computed: false, optional: true, required: false
   private _dnsIps?: string[]; 
   public get dnsIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('dns_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('dns_ips'));
   }
   public set dnsIps(value: string[]) {
     this._dnsIps = value;
@@ -207,15 +207,15 @@ export class FsxFileCacheDataRepositoryAssociationNfsOutputReference extends cdk
   }
 }
 
-export class FsxFileCacheDataRepositoryAssociationNfsList extends cdktf.ComplexList {
-  public internalValue? : FsxFileCacheDataRepositoryAssociationNfs[] | cdktf.IResolvable
+export class FsxFileCacheDataRepositoryAssociationNfsList extends cdktn.ComplexList {
+  public internalValue? : FsxFileCacheDataRepositoryAssociationNfs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -248,56 +248,56 @@ export interface FsxFileCacheDataRepositoryAssociation {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_file_cache#nfs FsxFileCache#nfs}
   */
-  readonly nfs?: FsxFileCacheDataRepositoryAssociationNfs[] | cdktf.IResolvable;
+  readonly nfs?: FsxFileCacheDataRepositoryAssociationNfs[] | cdktn.IResolvable;
 }
 
-export function fsxFileCacheDataRepositoryAssociationToTerraform(struct?: FsxFileCacheDataRepositoryAssociation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fsxFileCacheDataRepositoryAssociationToTerraform(struct?: FsxFileCacheDataRepositoryAssociation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_repository_path: cdktf.stringToTerraform(struct!.dataRepositoryPath),
-    data_repository_subdirectories: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dataRepositorySubdirectories),
-    file_cache_path: cdktf.stringToTerraform(struct!.fileCachePath),
-    tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
-    nfs: cdktf.listMapper(fsxFileCacheDataRepositoryAssociationNfsToTerraform, true)(struct!.nfs),
+    data_repository_path: cdktn.stringToTerraform(struct!.dataRepositoryPath),
+    data_repository_subdirectories: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dataRepositorySubdirectories),
+    file_cache_path: cdktn.stringToTerraform(struct!.fileCachePath),
+    tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tags),
+    nfs: cdktn.listMapper(fsxFileCacheDataRepositoryAssociationNfsToTerraform, true)(struct!.nfs),
   }
 }
 
 
-export function fsxFileCacheDataRepositoryAssociationToHclTerraform(struct?: FsxFileCacheDataRepositoryAssociation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fsxFileCacheDataRepositoryAssociationToHclTerraform(struct?: FsxFileCacheDataRepositoryAssociation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_repository_path: {
-      value: cdktf.stringToHclTerraform(struct!.dataRepositoryPath),
+      value: cdktn.stringToHclTerraform(struct!.dataRepositoryPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_repository_subdirectories: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dataRepositorySubdirectories),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dataRepositorySubdirectories),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     file_cache_path: {
-      value: cdktf.stringToHclTerraform(struct!.fileCachePath),
+      value: cdktn.stringToHclTerraform(struct!.fileCachePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     nfs: {
-      value: cdktf.listMapperHcl(fsxFileCacheDataRepositoryAssociationNfsToHclTerraform, true)(struct!.nfs),
+      value: cdktn.listMapperHcl(fsxFileCacheDataRepositoryAssociationNfsToHclTerraform, true)(struct!.nfs),
       isBlock: true,
       type: "set",
       storageClassType: "FsxFileCacheDataRepositoryAssociationNfsList",
@@ -308,9 +308,9 @@ export function fsxFileCacheDataRepositoryAssociationToHclTerraform(struct?: Fsx
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxFileCacheDataRepositoryAssociationOutputReference extends cdktf.ComplexObject {
+export class FsxFileCacheDataRepositoryAssociationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -318,11 +318,11 @@ export class FsxFileCacheDataRepositoryAssociationOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FsxFileCacheDataRepositoryAssociation | cdktf.IResolvable | undefined {
+  public get internalValue(): FsxFileCacheDataRepositoryAssociation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -351,7 +351,7 @@ export class FsxFileCacheDataRepositoryAssociationOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FsxFileCacheDataRepositoryAssociation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FsxFileCacheDataRepositoryAssociation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -361,7 +361,7 @@ export class FsxFileCacheDataRepositoryAssociationOutputReference extends cdktf.
       this._tags = undefined;
       this._nfs.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -397,7 +397,7 @@ export class FsxFileCacheDataRepositoryAssociationOutputReference extends cdktf.
   // data_repository_subdirectories - computed: false, optional: true, required: false
   private _dataRepositorySubdirectories?: string[]; 
   public get dataRepositorySubdirectories() {
-    return cdktf.Fn.tolist(this.getListAttribute('data_repository_subdirectories'));
+    return cdktn.Fn.tolist(this.getListAttribute('data_repository_subdirectories'));
   }
   public set dataRepositorySubdirectories(value: string[]) {
     this._dataRepositorySubdirectories = value;
@@ -469,7 +469,7 @@ export class FsxFileCacheDataRepositoryAssociationOutputReference extends cdktf.
   public get nfs() {
     return this._nfs;
   }
-  public putNfs(value: FsxFileCacheDataRepositoryAssociationNfs[] | cdktf.IResolvable) {
+  public putNfs(value: FsxFileCacheDataRepositoryAssociationNfs[] | cdktn.IResolvable) {
     this._nfs.internalValue = value;
   }
   public resetNfs() {
@@ -481,15 +481,15 @@ export class FsxFileCacheDataRepositoryAssociationOutputReference extends cdktf.
   }
 }
 
-export class FsxFileCacheDataRepositoryAssociationList extends cdktf.ComplexList {
-  public internalValue? : FsxFileCacheDataRepositoryAssociation[] | cdktf.IResolvable
+export class FsxFileCacheDataRepositoryAssociationList extends cdktn.ComplexList {
+  public internalValue? : FsxFileCacheDataRepositoryAssociation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -504,8 +504,8 @@ export interface FsxFileCacheLustreConfigurationLogConfiguration {
 }
 
 export function fsxFileCacheLustreConfigurationLogConfigurationToTerraform(struct?: FsxFileCacheLustreConfigurationLogConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -514,8 +514,8 @@ export function fsxFileCacheLustreConfigurationLogConfigurationToTerraform(struc
 
 
 export function fsxFileCacheLustreConfigurationLogConfigurationToHclTerraform(struct?: FsxFileCacheLustreConfigurationLogConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -523,7 +523,7 @@ export function fsxFileCacheLustreConfigurationLogConfigurationToHclTerraform(st
   return attrs;
 }
 
-export class FsxFileCacheLustreConfigurationLogConfigurationOutputReference extends cdktf.ComplexObject {
+export class FsxFileCacheLustreConfigurationLogConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -532,7 +532,7 @@ export class FsxFileCacheLustreConfigurationLogConfigurationOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -562,14 +562,14 @@ export class FsxFileCacheLustreConfigurationLogConfigurationOutputReference exte
   }
 }
 
-export class FsxFileCacheLustreConfigurationLogConfigurationList extends cdktf.ComplexList {
+export class FsxFileCacheLustreConfigurationLogConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -587,25 +587,25 @@ export interface FsxFileCacheLustreConfigurationMetadataConfiguration {
   readonly storageCapacity: number;
 }
 
-export function fsxFileCacheLustreConfigurationMetadataConfigurationToTerraform(struct?: FsxFileCacheLustreConfigurationMetadataConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fsxFileCacheLustreConfigurationMetadataConfigurationToTerraform(struct?: FsxFileCacheLustreConfigurationMetadataConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    storage_capacity: cdktf.numberToTerraform(struct!.storageCapacity),
+    storage_capacity: cdktn.numberToTerraform(struct!.storageCapacity),
   }
 }
 
 
-export function fsxFileCacheLustreConfigurationMetadataConfigurationToHclTerraform(struct?: FsxFileCacheLustreConfigurationMetadataConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fsxFileCacheLustreConfigurationMetadataConfigurationToHclTerraform(struct?: FsxFileCacheLustreConfigurationMetadataConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     storage_capacity: {
-      value: cdktf.numberToHclTerraform(struct!.storageCapacity),
+      value: cdktn.numberToHclTerraform(struct!.storageCapacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -616,9 +616,9 @@ export function fsxFileCacheLustreConfigurationMetadataConfigurationToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference extends cdktf.ComplexObject {
+export class FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -626,11 +626,11 @@ export class FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FsxFileCacheLustreConfigurationMetadataConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): FsxFileCacheLustreConfigurationMetadataConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -643,13 +643,13 @@ export class FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FsxFileCacheLustreConfigurationMetadataConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FsxFileCacheLustreConfigurationMetadataConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._storageCapacity = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -674,15 +674,15 @@ export class FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference
   }
 }
 
-export class FsxFileCacheLustreConfigurationMetadataConfigurationList extends cdktf.ComplexList {
-  public internalValue? : FsxFileCacheLustreConfigurationMetadataConfiguration[] | cdktf.IResolvable
+export class FsxFileCacheLustreConfigurationMetadataConfigurationList extends cdktn.ComplexList {
+  public internalValue? : FsxFileCacheLustreConfigurationMetadataConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -711,49 +711,49 @@ export interface FsxFileCacheLustreConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_file_cache#metadata_configuration FsxFileCache#metadata_configuration}
   */
-  readonly metadataConfiguration: FsxFileCacheLustreConfigurationMetadataConfiguration[] | cdktf.IResolvable;
+  readonly metadataConfiguration: FsxFileCacheLustreConfigurationMetadataConfiguration[] | cdktn.IResolvable;
 }
 
-export function fsxFileCacheLustreConfigurationToTerraform(struct?: FsxFileCacheLustreConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fsxFileCacheLustreConfigurationToTerraform(struct?: FsxFileCacheLustreConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    deployment_type: cdktf.stringToTerraform(struct!.deploymentType),
-    per_unit_storage_throughput: cdktf.numberToTerraform(struct!.perUnitStorageThroughput),
-    weekly_maintenance_start_time: cdktf.stringToTerraform(struct!.weeklyMaintenanceStartTime),
-    metadata_configuration: cdktf.listMapper(fsxFileCacheLustreConfigurationMetadataConfigurationToTerraform, true)(struct!.metadataConfiguration),
+    deployment_type: cdktn.stringToTerraform(struct!.deploymentType),
+    per_unit_storage_throughput: cdktn.numberToTerraform(struct!.perUnitStorageThroughput),
+    weekly_maintenance_start_time: cdktn.stringToTerraform(struct!.weeklyMaintenanceStartTime),
+    metadata_configuration: cdktn.listMapper(fsxFileCacheLustreConfigurationMetadataConfigurationToTerraform, true)(struct!.metadataConfiguration),
   }
 }
 
 
-export function fsxFileCacheLustreConfigurationToHclTerraform(struct?: FsxFileCacheLustreConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fsxFileCacheLustreConfigurationToHclTerraform(struct?: FsxFileCacheLustreConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     deployment_type: {
-      value: cdktf.stringToHclTerraform(struct!.deploymentType),
+      value: cdktn.stringToHclTerraform(struct!.deploymentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     per_unit_storage_throughput: {
-      value: cdktf.numberToHclTerraform(struct!.perUnitStorageThroughput),
+      value: cdktn.numberToHclTerraform(struct!.perUnitStorageThroughput),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     weekly_maintenance_start_time: {
-      value: cdktf.stringToHclTerraform(struct!.weeklyMaintenanceStartTime),
+      value: cdktn.stringToHclTerraform(struct!.weeklyMaintenanceStartTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metadata_configuration: {
-      value: cdktf.listMapperHcl(fsxFileCacheLustreConfigurationMetadataConfigurationToHclTerraform, true)(struct!.metadataConfiguration),
+      value: cdktn.listMapperHcl(fsxFileCacheLustreConfigurationMetadataConfigurationToHclTerraform, true)(struct!.metadataConfiguration),
       isBlock: true,
       type: "set",
       storageClassType: "FsxFileCacheLustreConfigurationMetadataConfigurationList",
@@ -764,9 +764,9 @@ export function fsxFileCacheLustreConfigurationToHclTerraform(struct?: FsxFileCa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxFileCacheLustreConfigurationOutputReference extends cdktf.ComplexObject {
+export class FsxFileCacheLustreConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -774,11 +774,11 @@ export class FsxFileCacheLustreConfigurationOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FsxFileCacheLustreConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): FsxFileCacheLustreConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -803,7 +803,7 @@ export class FsxFileCacheLustreConfigurationOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FsxFileCacheLustreConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FsxFileCacheLustreConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -812,7 +812,7 @@ export class FsxFileCacheLustreConfigurationOutputReference extends cdktf.Comple
       this._weeklyMaintenanceStartTime = undefined;
       this._metadataConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -884,7 +884,7 @@ export class FsxFileCacheLustreConfigurationOutputReference extends cdktf.Comple
   public get metadataConfiguration() {
     return this._metadataConfiguration;
   }
-  public putMetadataConfiguration(value: FsxFileCacheLustreConfigurationMetadataConfiguration[] | cdktf.IResolvable) {
+  public putMetadataConfiguration(value: FsxFileCacheLustreConfigurationMetadataConfiguration[] | cdktn.IResolvable) {
     this._metadataConfiguration.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -893,15 +893,15 @@ export class FsxFileCacheLustreConfigurationOutputReference extends cdktf.Comple
   }
 }
 
-export class FsxFileCacheLustreConfigurationList extends cdktf.ComplexList {
-  public internalValue? : FsxFileCacheLustreConfiguration[] | cdktf.IResolvable
+export class FsxFileCacheLustreConfigurationList extends cdktn.ComplexList {
+  public internalValue? : FsxFileCacheLustreConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -927,39 +927,39 @@ export interface FsxFileCacheTimeouts {
   readonly update?: string;
 }
 
-export function fsxFileCacheTimeoutsToTerraform(struct?: FsxFileCacheTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fsxFileCacheTimeoutsToTerraform(struct?: FsxFileCacheTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function fsxFileCacheTimeoutsToHclTerraform(struct?: FsxFileCacheTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fsxFileCacheTimeoutsToHclTerraform(struct?: FsxFileCacheTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -970,19 +970,19 @@ export function fsxFileCacheTimeoutsToHclTerraform(struct?: FsxFileCacheTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxFileCacheTimeoutsOutputReference extends cdktf.ComplexObject {
+export class FsxFileCacheTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): FsxFileCacheTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): FsxFileCacheTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1003,7 +1003,7 @@ export class FsxFileCacheTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FsxFileCacheTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FsxFileCacheTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1011,7 +1011,7 @@ export class FsxFileCacheTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1076,7 +1076,7 @@ export class FsxFileCacheTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_file_cache aws_fsx_file_cache}
 */
-export class FsxFileCache extends cdktf.TerraformResource {
+export class FsxFileCache extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1087,14 +1087,14 @@ export class FsxFileCache extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a FsxFileCache resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a FsxFileCache resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FsxFileCache to import
   * @param importFromId The id of the existing FsxFileCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_file_cache#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FsxFileCache to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_fsx_file_cache", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_fsx_file_cache", importId: importFromId, provider });
       }
 
   // ===========
@@ -1150,11 +1150,11 @@ export class FsxFileCache extends cdktf.TerraformResource {
   }
 
   // copy_tags_to_data_repository_associations - computed: false, optional: true, required: false
-  private _copyTagsToDataRepositoryAssociations?: boolean | cdktf.IResolvable; 
+  private _copyTagsToDataRepositoryAssociations?: boolean | cdktn.IResolvable; 
   public get copyTagsToDataRepositoryAssociations() {
     return this.getBooleanAttribute('copy_tags_to_data_repository_associations');
   }
-  public set copyTagsToDataRepositoryAssociations(value: boolean | cdktf.IResolvable) {
+  public set copyTagsToDataRepositoryAssociations(value: boolean | cdktn.IResolvable) {
     this._copyTagsToDataRepositoryAssociations = value;
   }
   public resetCopyTagsToDataRepositoryAssociations() {
@@ -1167,7 +1167,7 @@ export class FsxFileCache extends cdktf.TerraformResource {
 
   // data_repository_association_ids - computed: true, optional: false, required: false
   public get dataRepositoryAssociationIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('data_repository_association_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('data_repository_association_ids'));
   }
 
   // dns_name - computed: true, optional: false, required: false
@@ -1240,7 +1240,7 @@ export class FsxFileCache extends cdktf.TerraformResource {
 
   // network_interface_ids - computed: true, optional: false, required: false
   public get networkInterfaceIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('network_interface_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('network_interface_ids'));
   }
 
   // owner_id - computed: true, optional: false, required: false
@@ -1267,7 +1267,7 @@ export class FsxFileCache extends cdktf.TerraformResource {
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -1348,7 +1348,7 @@ export class FsxFileCache extends cdktf.TerraformResource {
   public get dataRepositoryAssociation() {
     return this._dataRepositoryAssociation;
   }
-  public putDataRepositoryAssociation(value: FsxFileCacheDataRepositoryAssociation[] | cdktf.IResolvable) {
+  public putDataRepositoryAssociation(value: FsxFileCacheDataRepositoryAssociation[] | cdktn.IResolvable) {
     this._dataRepositoryAssociation.internalValue = value;
   }
   public resetDataRepositoryAssociation() {
@@ -1364,7 +1364,7 @@ export class FsxFileCache extends cdktf.TerraformResource {
   public get lustreConfiguration() {
     return this._lustreConfiguration;
   }
-  public putLustreConfiguration(value: FsxFileCacheLustreConfiguration[] | cdktf.IResolvable) {
+  public putLustreConfiguration(value: FsxFileCacheLustreConfiguration[] | cdktn.IResolvable) {
     this._lustreConfiguration.internalValue = value;
   }
   public resetLustreConfiguration() {
@@ -1397,19 +1397,19 @@ export class FsxFileCache extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      copy_tags_to_data_repository_associations: cdktf.booleanToTerraform(this._copyTagsToDataRepositoryAssociations),
-      file_cache_type: cdktf.stringToTerraform(this._fileCacheType),
-      file_cache_type_version: cdktf.stringToTerraform(this._fileCacheTypeVersion),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      region: cdktf.stringToTerraform(this._region),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
-      storage_capacity: cdktf.numberToTerraform(this._storageCapacity),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      data_repository_association: cdktf.listMapper(fsxFileCacheDataRepositoryAssociationToTerraform, true)(this._dataRepositoryAssociation.internalValue),
-      lustre_configuration: cdktf.listMapper(fsxFileCacheLustreConfigurationToTerraform, true)(this._lustreConfiguration.internalValue),
+      copy_tags_to_data_repository_associations: cdktn.booleanToTerraform(this._copyTagsToDataRepositoryAssociations),
+      file_cache_type: cdktn.stringToTerraform(this._fileCacheType),
+      file_cache_type_version: cdktn.stringToTerraform(this._fileCacheTypeVersion),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      region: cdktn.stringToTerraform(this._region),
+      security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupIds),
+      storage_capacity: cdktn.numberToTerraform(this._storageCapacity),
+      subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnetIds),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      data_repository_association: cdktn.listMapper(fsxFileCacheDataRepositoryAssociationToTerraform, true)(this._dataRepositoryAssociation.internalValue),
+      lustre_configuration: cdktn.listMapper(fsxFileCacheLustreConfigurationToTerraform, true)(this._lustreConfiguration.internalValue),
       timeouts: fsxFileCacheTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1417,79 +1417,79 @@ export class FsxFileCache extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       copy_tags_to_data_repository_associations: {
-        value: cdktf.booleanToHclTerraform(this._copyTagsToDataRepositoryAssociations),
+        value: cdktn.booleanToHclTerraform(this._copyTagsToDataRepositoryAssociations),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       file_cache_type: {
-        value: cdktf.stringToHclTerraform(this._fileCacheType),
+        value: cdktn.stringToHclTerraform(this._fileCacheType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file_cache_type_version: {
-        value: cdktf.stringToHclTerraform(this._fileCacheTypeVersion),
+        value: cdktn.stringToHclTerraform(this._fileCacheTypeVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       storage_capacity: {
-        value: cdktf.numberToHclTerraform(this._storageCapacity),
+        value: cdktn.numberToHclTerraform(this._storageCapacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       subnet_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnetIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       data_repository_association: {
-        value: cdktf.listMapperHcl(fsxFileCacheDataRepositoryAssociationToHclTerraform, true)(this._dataRepositoryAssociation.internalValue),
+        value: cdktn.listMapperHcl(fsxFileCacheDataRepositoryAssociationToHclTerraform, true)(this._dataRepositoryAssociation.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "FsxFileCacheDataRepositoryAssociationList",
       },
       lustre_configuration: {
-        value: cdktf.listMapperHcl(fsxFileCacheLustreConfigurationToHclTerraform, true)(this._lustreConfiguration.internalValue),
+        value: cdktn.listMapperHcl(fsxFileCacheLustreConfigurationToHclTerraform, true)(this._lustreConfiguration.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "FsxFileCacheLustreConfigurationList",

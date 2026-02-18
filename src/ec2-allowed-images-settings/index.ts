@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2AllowedImagesSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2AllowedImagesSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -27,7 +27,7 @@ export interface Ec2AllowedImagesSettingsConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_allowed_images_settings#image_criterion Ec2AllowedImagesSettings#image_criterion}
   */
-  readonly imageCriterion?: Ec2AllowedImagesSettingsImageCriterion[] | cdktf.IResolvable;
+  readonly imageCriterion?: Ec2AllowedImagesSettingsImageCriterion[] | cdktn.IResolvable;
 }
 export interface Ec2AllowedImagesSettingsImageCriterionCreationDateCondition {
   /**
@@ -36,25 +36,25 @@ export interface Ec2AllowedImagesSettingsImageCriterionCreationDateCondition {
   readonly maximumDaysSinceCreated?: number;
 }
 
-export function ec2AllowedImagesSettingsImageCriterionCreationDateConditionToTerraform(struct?: Ec2AllowedImagesSettingsImageCriterionCreationDateCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2AllowedImagesSettingsImageCriterionCreationDateConditionToTerraform(struct?: Ec2AllowedImagesSettingsImageCriterionCreationDateCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    maximum_days_since_created: cdktf.numberToTerraform(struct!.maximumDaysSinceCreated),
+    maximum_days_since_created: cdktn.numberToTerraform(struct!.maximumDaysSinceCreated),
   }
 }
 
 
-export function ec2AllowedImagesSettingsImageCriterionCreationDateConditionToHclTerraform(struct?: Ec2AllowedImagesSettingsImageCriterionCreationDateCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2AllowedImagesSettingsImageCriterionCreationDateConditionToHclTerraform(struct?: Ec2AllowedImagesSettingsImageCriterionCreationDateCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     maximum_days_since_created: {
-      value: cdktf.numberToHclTerraform(struct!.maximumDaysSinceCreated),
+      value: cdktn.numberToHclTerraform(struct!.maximumDaysSinceCreated),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -65,9 +65,9 @@ export function ec2AllowedImagesSettingsImageCriterionCreationDateConditionToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2AllowedImagesSettingsImageCriterionCreationDateConditionOutputReference extends cdktf.ComplexObject {
+export class Ec2AllowedImagesSettingsImageCriterionCreationDateConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -75,11 +75,11 @@ export class Ec2AllowedImagesSettingsImageCriterionCreationDateConditionOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Ec2AllowedImagesSettingsImageCriterionCreationDateCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): Ec2AllowedImagesSettingsImageCriterionCreationDateCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -92,13 +92,13 @@ export class Ec2AllowedImagesSettingsImageCriterionCreationDateConditionOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Ec2AllowedImagesSettingsImageCriterionCreationDateCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Ec2AllowedImagesSettingsImageCriterionCreationDateCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._maximumDaysSinceCreated = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -126,15 +126,15 @@ export class Ec2AllowedImagesSettingsImageCriterionCreationDateConditionOutputRe
   }
 }
 
-export class Ec2AllowedImagesSettingsImageCriterionCreationDateConditionList extends cdktf.ComplexList {
-  public internalValue? : Ec2AllowedImagesSettingsImageCriterionCreationDateCondition[] | cdktf.IResolvable
+export class Ec2AllowedImagesSettingsImageCriterionCreationDateConditionList extends cdktn.ComplexList {
+  public internalValue? : Ec2AllowedImagesSettingsImageCriterionCreationDateCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -152,25 +152,25 @@ export interface Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition 
   readonly maximumDaysSinceDeprecated?: number;
 }
 
-export function ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionToTerraform(struct?: Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionToTerraform(struct?: Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    maximum_days_since_deprecated: cdktf.numberToTerraform(struct!.maximumDaysSinceDeprecated),
+    maximum_days_since_deprecated: cdktn.numberToTerraform(struct!.maximumDaysSinceDeprecated),
   }
 }
 
 
-export function ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionToHclTerraform(struct?: Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionToHclTerraform(struct?: Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     maximum_days_since_deprecated: {
-      value: cdktf.numberToHclTerraform(struct!.maximumDaysSinceDeprecated),
+      value: cdktn.numberToHclTerraform(struct!.maximumDaysSinceDeprecated),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -181,9 +181,9 @@ export function ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionOutputReference extends cdktf.ComplexObject {
+export class Ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -191,11 +191,11 @@ export class Ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -208,13 +208,13 @@ export class Ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._maximumDaysSinceDeprecated = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -242,15 +242,15 @@ export class Ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionOutpu
   }
 }
 
-export class Ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionList extends cdktf.ComplexList {
-  public internalValue? : Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition[] | cdktf.IResolvable
+export class Ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionList extends cdktn.ComplexList {
+  public internalValue? : Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -279,62 +279,62 @@ export interface Ec2AllowedImagesSettingsImageCriterion {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_allowed_images_settings#creation_date_condition Ec2AllowedImagesSettings#creation_date_condition}
   */
-  readonly creationDateCondition?: Ec2AllowedImagesSettingsImageCriterionCreationDateCondition[] | cdktf.IResolvable;
+  readonly creationDateCondition?: Ec2AllowedImagesSettingsImageCriterionCreationDateCondition[] | cdktn.IResolvable;
   /**
   * deprecation_time_condition block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_allowed_images_settings#deprecation_time_condition Ec2AllowedImagesSettings#deprecation_time_condition}
   */
-  readonly deprecationTimeCondition?: Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition[] | cdktf.IResolvable;
+  readonly deprecationTimeCondition?: Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition[] | cdktn.IResolvable;
 }
 
-export function ec2AllowedImagesSettingsImageCriterionToTerraform(struct?: Ec2AllowedImagesSettingsImageCriterion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2AllowedImagesSettingsImageCriterionToTerraform(struct?: Ec2AllowedImagesSettingsImageCriterion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    image_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.imageNames),
-    image_providers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.imageProviders),
-    marketplace_product_codes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.marketplaceProductCodes),
-    creation_date_condition: cdktf.listMapper(ec2AllowedImagesSettingsImageCriterionCreationDateConditionToTerraform, true)(struct!.creationDateCondition),
-    deprecation_time_condition: cdktf.listMapper(ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionToTerraform, true)(struct!.deprecationTimeCondition),
+    image_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.imageNames),
+    image_providers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.imageProviders),
+    marketplace_product_codes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.marketplaceProductCodes),
+    creation_date_condition: cdktn.listMapper(ec2AllowedImagesSettingsImageCriterionCreationDateConditionToTerraform, true)(struct!.creationDateCondition),
+    deprecation_time_condition: cdktn.listMapper(ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionToTerraform, true)(struct!.deprecationTimeCondition),
   }
 }
 
 
-export function ec2AllowedImagesSettingsImageCriterionToHclTerraform(struct?: Ec2AllowedImagesSettingsImageCriterion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2AllowedImagesSettingsImageCriterionToHclTerraform(struct?: Ec2AllowedImagesSettingsImageCriterion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     image_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.imageNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.imageNames),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     image_providers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.imageProviders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.imageProviders),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     marketplace_product_codes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.marketplaceProductCodes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.marketplaceProductCodes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     creation_date_condition: {
-      value: cdktf.listMapperHcl(ec2AllowedImagesSettingsImageCriterionCreationDateConditionToHclTerraform, true)(struct!.creationDateCondition),
+      value: cdktn.listMapperHcl(ec2AllowedImagesSettingsImageCriterionCreationDateConditionToHclTerraform, true)(struct!.creationDateCondition),
       isBlock: true,
       type: "list",
       storageClassType: "Ec2AllowedImagesSettingsImageCriterionCreationDateConditionList",
     },
     deprecation_time_condition: {
-      value: cdktf.listMapperHcl(ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionToHclTerraform, true)(struct!.deprecationTimeCondition),
+      value: cdktn.listMapperHcl(ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionToHclTerraform, true)(struct!.deprecationTimeCondition),
       isBlock: true,
       type: "list",
       storageClassType: "Ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionList",
@@ -345,9 +345,9 @@ export function ec2AllowedImagesSettingsImageCriterionToHclTerraform(struct?: Ec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2AllowedImagesSettingsImageCriterionOutputReference extends cdktf.ComplexObject {
+export class Ec2AllowedImagesSettingsImageCriterionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -355,11 +355,11 @@ export class Ec2AllowedImagesSettingsImageCriterionOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Ec2AllowedImagesSettingsImageCriterion | cdktf.IResolvable | undefined {
+  public get internalValue(): Ec2AllowedImagesSettingsImageCriterion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -388,7 +388,7 @@ export class Ec2AllowedImagesSettingsImageCriterionOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Ec2AllowedImagesSettingsImageCriterion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Ec2AllowedImagesSettingsImageCriterion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -398,7 +398,7 @@ export class Ec2AllowedImagesSettingsImageCriterionOutputReference extends cdktf
       this._creationDateCondition.internalValue = undefined;
       this._deprecationTimeCondition.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -416,7 +416,7 @@ export class Ec2AllowedImagesSettingsImageCriterionOutputReference extends cdktf
   // image_names - computed: false, optional: true, required: false
   private _imageNames?: string[]; 
   public get imageNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('image_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('image_names'));
   }
   public set imageNames(value: string[]) {
     this._imageNames = value;
@@ -432,7 +432,7 @@ export class Ec2AllowedImagesSettingsImageCriterionOutputReference extends cdktf
   // image_providers - computed: false, optional: true, required: false
   private _imageProviders?: string[]; 
   public get imageProviders() {
-    return cdktf.Fn.tolist(this.getListAttribute('image_providers'));
+    return cdktn.Fn.tolist(this.getListAttribute('image_providers'));
   }
   public set imageProviders(value: string[]) {
     this._imageProviders = value;
@@ -448,7 +448,7 @@ export class Ec2AllowedImagesSettingsImageCriterionOutputReference extends cdktf
   // marketplace_product_codes - computed: false, optional: true, required: false
   private _marketplaceProductCodes?: string[]; 
   public get marketplaceProductCodes() {
-    return cdktf.Fn.tolist(this.getListAttribute('marketplace_product_codes'));
+    return cdktn.Fn.tolist(this.getListAttribute('marketplace_product_codes'));
   }
   public set marketplaceProductCodes(value: string[]) {
     this._marketplaceProductCodes = value;
@@ -466,7 +466,7 @@ export class Ec2AllowedImagesSettingsImageCriterionOutputReference extends cdktf
   public get creationDateCondition() {
     return this._creationDateCondition;
   }
-  public putCreationDateCondition(value: Ec2AllowedImagesSettingsImageCriterionCreationDateCondition[] | cdktf.IResolvable) {
+  public putCreationDateCondition(value: Ec2AllowedImagesSettingsImageCriterionCreationDateCondition[] | cdktn.IResolvable) {
     this._creationDateCondition.internalValue = value;
   }
   public resetCreationDateCondition() {
@@ -482,7 +482,7 @@ export class Ec2AllowedImagesSettingsImageCriterionOutputReference extends cdktf
   public get deprecationTimeCondition() {
     return this._deprecationTimeCondition;
   }
-  public putDeprecationTimeCondition(value: Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition[] | cdktf.IResolvable) {
+  public putDeprecationTimeCondition(value: Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition[] | cdktn.IResolvable) {
     this._deprecationTimeCondition.internalValue = value;
   }
   public resetDeprecationTimeCondition() {
@@ -494,15 +494,15 @@ export class Ec2AllowedImagesSettingsImageCriterionOutputReference extends cdktf
   }
 }
 
-export class Ec2AllowedImagesSettingsImageCriterionList extends cdktf.ComplexList {
-  public internalValue? : Ec2AllowedImagesSettingsImageCriterion[] | cdktf.IResolvable
+export class Ec2AllowedImagesSettingsImageCriterionList extends cdktn.ComplexList {
+  public internalValue? : Ec2AllowedImagesSettingsImageCriterion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -517,7 +517,7 @@ export class Ec2AllowedImagesSettingsImageCriterionList extends cdktf.ComplexLis
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_allowed_images_settings aws_ec2_allowed_images_settings}
 */
-export class Ec2AllowedImagesSettings extends cdktf.TerraformResource {
+export class Ec2AllowedImagesSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -528,14 +528,14 @@ export class Ec2AllowedImagesSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2AllowedImagesSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2AllowedImagesSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2AllowedImagesSettings to import
   * @param importFromId The id of the existing Ec2AllowedImagesSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_allowed_images_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2AllowedImagesSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_allowed_images_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_allowed_images_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -608,7 +608,7 @@ export class Ec2AllowedImagesSettings extends cdktf.TerraformResource {
   public get imageCriterion() {
     return this._imageCriterion;
   }
-  public putImageCriterion(value: Ec2AllowedImagesSettingsImageCriterion[] | cdktf.IResolvable) {
+  public putImageCriterion(value: Ec2AllowedImagesSettingsImageCriterion[] | cdktn.IResolvable) {
     this._imageCriterion.internalValue = value;
   }
   public resetImageCriterion() {
@@ -625,28 +625,28 @@ export class Ec2AllowedImagesSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      state: cdktf.stringToTerraform(this._state),
-      image_criterion: cdktf.listMapper(ec2AllowedImagesSettingsImageCriterionToTerraform, true)(this._imageCriterion.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      state: cdktn.stringToTerraform(this._state),
+      image_criterion: cdktn.listMapper(ec2AllowedImagesSettingsImageCriterionToTerraform, true)(this._imageCriterion.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       state: {
-        value: cdktf.stringToHclTerraform(this._state),
+        value: cdktn.stringToHclTerraform(this._state),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_criterion: {
-        value: cdktf.listMapperHcl(ec2AllowedImagesSettingsImageCriterionToHclTerraform, true)(this._imageCriterion.internalValue),
+        value: cdktn.listMapperHcl(ec2AllowedImagesSettingsImageCriterionToHclTerraform, true)(this._imageCriterion.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Ec2AllowedImagesSettingsImageCriterionList",

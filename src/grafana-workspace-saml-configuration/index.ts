@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GrafanaWorkspaceSamlConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface GrafanaWorkspaceSamlConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/grafana_workspace_saml_configuration#admin_role_values GrafanaWorkspaceSamlConfiguration#admin_role_values}
   */
@@ -95,32 +95,32 @@ export interface GrafanaWorkspaceSamlConfigurationTimeouts {
   readonly delete?: string;
 }
 
-export function grafanaWorkspaceSamlConfigurationTimeoutsToTerraform(struct?: GrafanaWorkspaceSamlConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function grafanaWorkspaceSamlConfigurationTimeoutsToTerraform(struct?: GrafanaWorkspaceSamlConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function grafanaWorkspaceSamlConfigurationTimeoutsToHclTerraform(struct?: GrafanaWorkspaceSamlConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function grafanaWorkspaceSamlConfigurationTimeoutsToHclTerraform(struct?: GrafanaWorkspaceSamlConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,19 +131,19 @@ export function grafanaWorkspaceSamlConfigurationTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GrafanaWorkspaceSamlConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GrafanaWorkspaceSamlConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -160,14 +160,14 @@ export class GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GrafanaWorkspaceSamlConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GrafanaWorkspaceSamlConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -215,7 +215,7 @@ export class GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/grafana_workspace_saml_configuration aws_grafana_workspace_saml_configuration}
 */
-export class GrafanaWorkspaceSamlConfiguration extends cdktf.TerraformResource {
+export class GrafanaWorkspaceSamlConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -226,14 +226,14 @@ export class GrafanaWorkspaceSamlConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GrafanaWorkspaceSamlConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GrafanaWorkspaceSamlConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GrafanaWorkspaceSamlConfiguration to import
   * @param importFromId The id of the existing GrafanaWorkspaceSamlConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/grafana_workspace_saml_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GrafanaWorkspaceSamlConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_grafana_workspace_saml_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_grafana_workspace_saml_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -546,21 +546,21 @@ export class GrafanaWorkspaceSamlConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      admin_role_values: cdktf.listMapper(cdktf.stringToTerraform, false)(this._adminRoleValues),
-      allowed_organizations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedOrganizations),
-      editor_role_values: cdktf.listMapper(cdktf.stringToTerraform, false)(this._editorRoleValues),
-      email_assertion: cdktf.stringToTerraform(this._emailAssertion),
-      groups_assertion: cdktf.stringToTerraform(this._groupsAssertion),
-      id: cdktf.stringToTerraform(this._id),
-      idp_metadata_url: cdktf.stringToTerraform(this._idpMetadataUrl),
-      idp_metadata_xml: cdktf.stringToTerraform(this._idpMetadataXml),
-      login_assertion: cdktf.stringToTerraform(this._loginAssertion),
-      login_validity_duration: cdktf.numberToTerraform(this._loginValidityDuration),
-      name_assertion: cdktf.stringToTerraform(this._nameAssertion),
-      org_assertion: cdktf.stringToTerraform(this._orgAssertion),
-      region: cdktf.stringToTerraform(this._region),
-      role_assertion: cdktf.stringToTerraform(this._roleAssertion),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
+      admin_role_values: cdktn.listMapper(cdktn.stringToTerraform, false)(this._adminRoleValues),
+      allowed_organizations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedOrganizations),
+      editor_role_values: cdktn.listMapper(cdktn.stringToTerraform, false)(this._editorRoleValues),
+      email_assertion: cdktn.stringToTerraform(this._emailAssertion),
+      groups_assertion: cdktn.stringToTerraform(this._groupsAssertion),
+      id: cdktn.stringToTerraform(this._id),
+      idp_metadata_url: cdktn.stringToTerraform(this._idpMetadataUrl),
+      idp_metadata_xml: cdktn.stringToTerraform(this._idpMetadataXml),
+      login_assertion: cdktn.stringToTerraform(this._loginAssertion),
+      login_validity_duration: cdktn.numberToTerraform(this._loginValidityDuration),
+      name_assertion: cdktn.stringToTerraform(this._nameAssertion),
+      org_assertion: cdktn.stringToTerraform(this._orgAssertion),
+      region: cdktn.stringToTerraform(this._region),
+      role_assertion: cdktn.stringToTerraform(this._roleAssertion),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
       timeouts: grafanaWorkspaceSamlConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -568,91 +568,91 @@ export class GrafanaWorkspaceSamlConfiguration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       admin_role_values: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._adminRoleValues),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._adminRoleValues),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       allowed_organizations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedOrganizations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedOrganizations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       editor_role_values: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._editorRoleValues),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._editorRoleValues),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       email_assertion: {
-        value: cdktf.stringToHclTerraform(this._emailAssertion),
+        value: cdktn.stringToHclTerraform(this._emailAssertion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       groups_assertion: {
-        value: cdktf.stringToHclTerraform(this._groupsAssertion),
+        value: cdktn.stringToHclTerraform(this._groupsAssertion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idp_metadata_url: {
-        value: cdktf.stringToHclTerraform(this._idpMetadataUrl),
+        value: cdktn.stringToHclTerraform(this._idpMetadataUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idp_metadata_xml: {
-        value: cdktf.stringToHclTerraform(this._idpMetadataXml),
+        value: cdktn.stringToHclTerraform(this._idpMetadataXml),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       login_assertion: {
-        value: cdktf.stringToHclTerraform(this._loginAssertion),
+        value: cdktn.stringToHclTerraform(this._loginAssertion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       login_validity_duration: {
-        value: cdktf.numberToHclTerraform(this._loginValidityDuration),
+        value: cdktn.numberToHclTerraform(this._loginValidityDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name_assertion: {
-        value: cdktf.stringToHclTerraform(this._nameAssertion),
+        value: cdktn.stringToHclTerraform(this._nameAssertion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       org_assertion: {
-        value: cdktf.stringToHclTerraform(this._orgAssertion),
+        value: cdktn.stringToHclTerraform(this._orgAssertion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_assertion: {
-        value: cdktf.stringToHclTerraform(this._roleAssertion),
+        value: cdktn.stringToHclTerraform(this._roleAssertion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ElastictranscoderPresetConfig extends cdktf.TerraformMetaArguments {
+export interface ElastictranscoderPresetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastictranscoder_preset#container ElastictranscoderPreset#container}
   */
@@ -74,7 +74,7 @@ export interface ElastictranscoderPresetConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastictranscoder_preset#video_watermarks ElastictranscoderPreset#video_watermarks}
   */
-  readonly videoWatermarks?: ElastictranscoderPresetVideoWatermarks[] | cdktf.IResolvable;
+  readonly videoWatermarks?: ElastictranscoderPresetVideoWatermarks[] | cdktn.IResolvable;
 }
 export interface ElastictranscoderPresetAudio {
   /**
@@ -100,52 +100,52 @@ export interface ElastictranscoderPresetAudio {
 }
 
 export function elastictranscoderPresetAudioToTerraform(struct?: ElastictranscoderPresetAudioOutputReference | ElastictranscoderPresetAudio): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audio_packing_mode: cdktf.stringToTerraform(struct!.audioPackingMode),
-    bit_rate: cdktf.stringToTerraform(struct!.bitRate),
-    channels: cdktf.stringToTerraform(struct!.channels),
-    codec: cdktf.stringToTerraform(struct!.codec),
-    sample_rate: cdktf.stringToTerraform(struct!.sampleRate),
+    audio_packing_mode: cdktn.stringToTerraform(struct!.audioPackingMode),
+    bit_rate: cdktn.stringToTerraform(struct!.bitRate),
+    channels: cdktn.stringToTerraform(struct!.channels),
+    codec: cdktn.stringToTerraform(struct!.codec),
+    sample_rate: cdktn.stringToTerraform(struct!.sampleRate),
   }
 }
 
 
 export function elastictranscoderPresetAudioToHclTerraform(struct?: ElastictranscoderPresetAudioOutputReference | ElastictranscoderPresetAudio): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audio_packing_mode: {
-      value: cdktf.stringToHclTerraform(struct!.audioPackingMode),
+      value: cdktn.stringToHclTerraform(struct!.audioPackingMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bit_rate: {
-      value: cdktf.stringToHclTerraform(struct!.bitRate),
+      value: cdktn.stringToHclTerraform(struct!.bitRate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     channels: {
-      value: cdktf.stringToHclTerraform(struct!.channels),
+      value: cdktn.stringToHclTerraform(struct!.channels),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     codec: {
-      value: cdktf.stringToHclTerraform(struct!.codec),
+      value: cdktn.stringToHclTerraform(struct!.codec),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sample_rate: {
-      value: cdktf.stringToHclTerraform(struct!.sampleRate),
+      value: cdktn.stringToHclTerraform(struct!.sampleRate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -156,14 +156,14 @@ export function elastictranscoderPresetAudioToHclTerraform(struct?: Elastictrans
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElastictranscoderPresetAudioOutputReference extends cdktf.ComplexObject {
+export class ElastictranscoderPresetAudioOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -312,45 +312,45 @@ export interface ElastictranscoderPresetAudioCodecOptions {
 }
 
 export function elastictranscoderPresetAudioCodecOptionsToTerraform(struct?: ElastictranscoderPresetAudioCodecOptionsOutputReference | ElastictranscoderPresetAudioCodecOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bit_depth: cdktf.stringToTerraform(struct!.bitDepth),
-    bit_order: cdktf.stringToTerraform(struct!.bitOrder),
-    profile: cdktf.stringToTerraform(struct!.profile),
-    signed: cdktf.stringToTerraform(struct!.signed),
+    bit_depth: cdktn.stringToTerraform(struct!.bitDepth),
+    bit_order: cdktn.stringToTerraform(struct!.bitOrder),
+    profile: cdktn.stringToTerraform(struct!.profile),
+    signed: cdktn.stringToTerraform(struct!.signed),
   }
 }
 
 
 export function elastictranscoderPresetAudioCodecOptionsToHclTerraform(struct?: ElastictranscoderPresetAudioCodecOptionsOutputReference | ElastictranscoderPresetAudioCodecOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bit_depth: {
-      value: cdktf.stringToHclTerraform(struct!.bitDepth),
+      value: cdktn.stringToHclTerraform(struct!.bitDepth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bit_order: {
-      value: cdktf.stringToHclTerraform(struct!.bitOrder),
+      value: cdktn.stringToHclTerraform(struct!.bitOrder),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     profile: {
-      value: cdktf.stringToHclTerraform(struct!.profile),
+      value: cdktn.stringToHclTerraform(struct!.profile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     signed: {
-      value: cdktf.stringToHclTerraform(struct!.signed),
+      value: cdktn.stringToHclTerraform(struct!.signed),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -361,14 +361,14 @@ export function elastictranscoderPresetAudioCodecOptionsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElastictranscoderPresetAudioCodecOptionsOutputReference extends cdktf.ComplexObject {
+export class ElastictranscoderPresetAudioCodecOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -511,73 +511,73 @@ export interface ElastictranscoderPresetThumbnails {
 }
 
 export function elastictranscoderPresetThumbnailsToTerraform(struct?: ElastictranscoderPresetThumbnailsOutputReference | ElastictranscoderPresetThumbnails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aspect_ratio: cdktf.stringToTerraform(struct!.aspectRatio),
-    format: cdktf.stringToTerraform(struct!.format),
-    interval: cdktf.stringToTerraform(struct!.interval),
-    max_height: cdktf.stringToTerraform(struct!.maxHeight),
-    max_width: cdktf.stringToTerraform(struct!.maxWidth),
-    padding_policy: cdktf.stringToTerraform(struct!.paddingPolicy),
-    resolution: cdktf.stringToTerraform(struct!.resolution),
-    sizing_policy: cdktf.stringToTerraform(struct!.sizingPolicy),
+    aspect_ratio: cdktn.stringToTerraform(struct!.aspectRatio),
+    format: cdktn.stringToTerraform(struct!.format),
+    interval: cdktn.stringToTerraform(struct!.interval),
+    max_height: cdktn.stringToTerraform(struct!.maxHeight),
+    max_width: cdktn.stringToTerraform(struct!.maxWidth),
+    padding_policy: cdktn.stringToTerraform(struct!.paddingPolicy),
+    resolution: cdktn.stringToTerraform(struct!.resolution),
+    sizing_policy: cdktn.stringToTerraform(struct!.sizingPolicy),
   }
 }
 
 
 export function elastictranscoderPresetThumbnailsToHclTerraform(struct?: ElastictranscoderPresetThumbnailsOutputReference | ElastictranscoderPresetThumbnails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aspect_ratio: {
-      value: cdktf.stringToHclTerraform(struct!.aspectRatio),
+      value: cdktn.stringToHclTerraform(struct!.aspectRatio),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     format: {
-      value: cdktf.stringToHclTerraform(struct!.format),
+      value: cdktn.stringToHclTerraform(struct!.format),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.stringToHclTerraform(struct!.interval),
+      value: cdktn.stringToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_height: {
-      value: cdktf.stringToHclTerraform(struct!.maxHeight),
+      value: cdktn.stringToHclTerraform(struct!.maxHeight),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_width: {
-      value: cdktf.stringToHclTerraform(struct!.maxWidth),
+      value: cdktn.stringToHclTerraform(struct!.maxWidth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     padding_policy: {
-      value: cdktf.stringToHclTerraform(struct!.paddingPolicy),
+      value: cdktn.stringToHclTerraform(struct!.paddingPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resolution: {
-      value: cdktf.stringToHclTerraform(struct!.resolution),
+      value: cdktn.stringToHclTerraform(struct!.resolution),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sizing_policy: {
-      value: cdktf.stringToHclTerraform(struct!.sizingPolicy),
+      value: cdktn.stringToHclTerraform(struct!.sizingPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -588,14 +588,14 @@ export function elastictranscoderPresetThumbnailsToHclTerraform(struct?: Elastic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElastictranscoderPresetThumbnailsOutputReference extends cdktf.ComplexObject {
+export class ElastictranscoderPresetThumbnailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -846,108 +846,108 @@ export interface ElastictranscoderPresetVideo {
 }
 
 export function elastictranscoderPresetVideoToTerraform(struct?: ElastictranscoderPresetVideoOutputReference | ElastictranscoderPresetVideo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aspect_ratio: cdktf.stringToTerraform(struct!.aspectRatio),
-    bit_rate: cdktf.stringToTerraform(struct!.bitRate),
-    codec: cdktf.stringToTerraform(struct!.codec),
-    display_aspect_ratio: cdktf.stringToTerraform(struct!.displayAspectRatio),
-    fixed_gop: cdktf.stringToTerraform(struct!.fixedGop),
-    frame_rate: cdktf.stringToTerraform(struct!.frameRate),
-    keyframes_max_dist: cdktf.stringToTerraform(struct!.keyframesMaxDist),
-    max_frame_rate: cdktf.stringToTerraform(struct!.maxFrameRate),
-    max_height: cdktf.stringToTerraform(struct!.maxHeight),
-    max_width: cdktf.stringToTerraform(struct!.maxWidth),
-    padding_policy: cdktf.stringToTerraform(struct!.paddingPolicy),
-    resolution: cdktf.stringToTerraform(struct!.resolution),
-    sizing_policy: cdktf.stringToTerraform(struct!.sizingPolicy),
+    aspect_ratio: cdktn.stringToTerraform(struct!.aspectRatio),
+    bit_rate: cdktn.stringToTerraform(struct!.bitRate),
+    codec: cdktn.stringToTerraform(struct!.codec),
+    display_aspect_ratio: cdktn.stringToTerraform(struct!.displayAspectRatio),
+    fixed_gop: cdktn.stringToTerraform(struct!.fixedGop),
+    frame_rate: cdktn.stringToTerraform(struct!.frameRate),
+    keyframes_max_dist: cdktn.stringToTerraform(struct!.keyframesMaxDist),
+    max_frame_rate: cdktn.stringToTerraform(struct!.maxFrameRate),
+    max_height: cdktn.stringToTerraform(struct!.maxHeight),
+    max_width: cdktn.stringToTerraform(struct!.maxWidth),
+    padding_policy: cdktn.stringToTerraform(struct!.paddingPolicy),
+    resolution: cdktn.stringToTerraform(struct!.resolution),
+    sizing_policy: cdktn.stringToTerraform(struct!.sizingPolicy),
   }
 }
 
 
 export function elastictranscoderPresetVideoToHclTerraform(struct?: ElastictranscoderPresetVideoOutputReference | ElastictranscoderPresetVideo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aspect_ratio: {
-      value: cdktf.stringToHclTerraform(struct!.aspectRatio),
+      value: cdktn.stringToHclTerraform(struct!.aspectRatio),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bit_rate: {
-      value: cdktf.stringToHclTerraform(struct!.bitRate),
+      value: cdktn.stringToHclTerraform(struct!.bitRate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     codec: {
-      value: cdktf.stringToHclTerraform(struct!.codec),
+      value: cdktn.stringToHclTerraform(struct!.codec),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     display_aspect_ratio: {
-      value: cdktf.stringToHclTerraform(struct!.displayAspectRatio),
+      value: cdktn.stringToHclTerraform(struct!.displayAspectRatio),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fixed_gop: {
-      value: cdktf.stringToHclTerraform(struct!.fixedGop),
+      value: cdktn.stringToHclTerraform(struct!.fixedGop),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     frame_rate: {
-      value: cdktf.stringToHclTerraform(struct!.frameRate),
+      value: cdktn.stringToHclTerraform(struct!.frameRate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     keyframes_max_dist: {
-      value: cdktf.stringToHclTerraform(struct!.keyframesMaxDist),
+      value: cdktn.stringToHclTerraform(struct!.keyframesMaxDist),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_frame_rate: {
-      value: cdktf.stringToHclTerraform(struct!.maxFrameRate),
+      value: cdktn.stringToHclTerraform(struct!.maxFrameRate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_height: {
-      value: cdktf.stringToHclTerraform(struct!.maxHeight),
+      value: cdktn.stringToHclTerraform(struct!.maxHeight),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_width: {
-      value: cdktf.stringToHclTerraform(struct!.maxWidth),
+      value: cdktn.stringToHclTerraform(struct!.maxWidth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     padding_policy: {
-      value: cdktf.stringToHclTerraform(struct!.paddingPolicy),
+      value: cdktn.stringToHclTerraform(struct!.paddingPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resolution: {
-      value: cdktf.stringToHclTerraform(struct!.resolution),
+      value: cdktn.stringToHclTerraform(struct!.resolution),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sizing_policy: {
-      value: cdktf.stringToHclTerraform(struct!.sizingPolicy),
+      value: cdktn.stringToHclTerraform(struct!.sizingPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -958,14 +958,14 @@ export function elastictranscoderPresetVideoToHclTerraform(struct?: Elastictrans
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElastictranscoderPresetVideoOutputReference extends cdktf.ComplexObject {
+export class ElastictranscoderPresetVideoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1316,88 +1316,88 @@ export interface ElastictranscoderPresetVideoWatermarks {
   readonly verticalOffset?: string;
 }
 
-export function elastictranscoderPresetVideoWatermarksToTerraform(struct?: ElastictranscoderPresetVideoWatermarks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elastictranscoderPresetVideoWatermarksToTerraform(struct?: ElastictranscoderPresetVideoWatermarks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    horizontal_align: cdktf.stringToTerraform(struct!.horizontalAlign),
-    horizontal_offset: cdktf.stringToTerraform(struct!.horizontalOffset),
-    id: cdktf.stringToTerraform(struct!.id),
-    max_height: cdktf.stringToTerraform(struct!.maxHeight),
-    max_width: cdktf.stringToTerraform(struct!.maxWidth),
-    opacity: cdktf.stringToTerraform(struct!.opacity),
-    sizing_policy: cdktf.stringToTerraform(struct!.sizingPolicy),
-    target: cdktf.stringToTerraform(struct!.target),
-    vertical_align: cdktf.stringToTerraform(struct!.verticalAlign),
-    vertical_offset: cdktf.stringToTerraform(struct!.verticalOffset),
+    horizontal_align: cdktn.stringToTerraform(struct!.horizontalAlign),
+    horizontal_offset: cdktn.stringToTerraform(struct!.horizontalOffset),
+    id: cdktn.stringToTerraform(struct!.id),
+    max_height: cdktn.stringToTerraform(struct!.maxHeight),
+    max_width: cdktn.stringToTerraform(struct!.maxWidth),
+    opacity: cdktn.stringToTerraform(struct!.opacity),
+    sizing_policy: cdktn.stringToTerraform(struct!.sizingPolicy),
+    target: cdktn.stringToTerraform(struct!.target),
+    vertical_align: cdktn.stringToTerraform(struct!.verticalAlign),
+    vertical_offset: cdktn.stringToTerraform(struct!.verticalOffset),
   }
 }
 
 
-export function elastictranscoderPresetVideoWatermarksToHclTerraform(struct?: ElastictranscoderPresetVideoWatermarks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elastictranscoderPresetVideoWatermarksToHclTerraform(struct?: ElastictranscoderPresetVideoWatermarks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     horizontal_align: {
-      value: cdktf.stringToHclTerraform(struct!.horizontalAlign),
+      value: cdktn.stringToHclTerraform(struct!.horizontalAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     horizontal_offset: {
-      value: cdktf.stringToHclTerraform(struct!.horizontalOffset),
+      value: cdktn.stringToHclTerraform(struct!.horizontalOffset),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_height: {
-      value: cdktf.stringToHclTerraform(struct!.maxHeight),
+      value: cdktn.stringToHclTerraform(struct!.maxHeight),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_width: {
-      value: cdktf.stringToHclTerraform(struct!.maxWidth),
+      value: cdktn.stringToHclTerraform(struct!.maxWidth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     opacity: {
-      value: cdktf.stringToHclTerraform(struct!.opacity),
+      value: cdktn.stringToHclTerraform(struct!.opacity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sizing_policy: {
-      value: cdktf.stringToHclTerraform(struct!.sizingPolicy),
+      value: cdktn.stringToHclTerraform(struct!.sizingPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vertical_align: {
-      value: cdktf.stringToHclTerraform(struct!.verticalAlign),
+      value: cdktn.stringToHclTerraform(struct!.verticalAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vertical_offset: {
-      value: cdktf.stringToHclTerraform(struct!.verticalOffset),
+      value: cdktn.stringToHclTerraform(struct!.verticalOffset),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1408,9 +1408,9 @@ export function elastictranscoderPresetVideoWatermarksToHclTerraform(struct?: El
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElastictranscoderPresetVideoWatermarksOutputReference extends cdktf.ComplexObject {
+export class ElastictranscoderPresetVideoWatermarksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1418,11 +1418,11 @@ export class ElastictranscoderPresetVideoWatermarksOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ElastictranscoderPresetVideoWatermarks | cdktf.IResolvable | undefined {
+  public get internalValue(): ElastictranscoderPresetVideoWatermarks | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1471,7 +1471,7 @@ export class ElastictranscoderPresetVideoWatermarksOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElastictranscoderPresetVideoWatermarks | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElastictranscoderPresetVideoWatermarks | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1486,7 +1486,7 @@ export class ElastictranscoderPresetVideoWatermarksOutputReference extends cdktf
       this._verticalAlign = undefined;
       this._verticalOffset = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1667,15 +1667,15 @@ export class ElastictranscoderPresetVideoWatermarksOutputReference extends cdktf
   }
 }
 
-export class ElastictranscoderPresetVideoWatermarksList extends cdktf.ComplexList {
-  public internalValue? : ElastictranscoderPresetVideoWatermarks[] | cdktf.IResolvable
+export class ElastictranscoderPresetVideoWatermarksList extends cdktn.ComplexList {
+  public internalValue? : ElastictranscoderPresetVideoWatermarks[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1690,7 +1690,7 @@ export class ElastictranscoderPresetVideoWatermarksList extends cdktf.ComplexLis
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastictranscoder_preset aws_elastictranscoder_preset}
 */
-export class ElastictranscoderPreset extends cdktf.TerraformResource {
+export class ElastictranscoderPreset extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1701,14 +1701,14 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ElastictranscoderPreset resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ElastictranscoderPreset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElastictranscoderPreset to import
   * @param importFromId The id of the existing ElastictranscoderPreset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastictranscoder_preset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElastictranscoderPreset to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_elastictranscoder_preset", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_elastictranscoder_preset", importId: importFromId, provider });
       }
 
   // ===========
@@ -1939,7 +1939,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   public get videoWatermarks() {
     return this._videoWatermarks;
   }
-  public putVideoWatermarks(value: ElastictranscoderPresetVideoWatermarks[] | cdktf.IResolvable) {
+  public putVideoWatermarks(value: ElastictranscoderPresetVideoWatermarks[] | cdktn.IResolvable) {
     this._videoWatermarks.internalValue = value;
   }
   public resetVideoWatermarks() {
@@ -1956,61 +1956,61 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      container: cdktf.stringToTerraform(this._container),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      type: cdktf.stringToTerraform(this._type),
-      video_codec_options: cdktf.hashMapper(cdktf.stringToTerraform)(this._videoCodecOptions),
+      container: cdktn.stringToTerraform(this._container),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      type: cdktn.stringToTerraform(this._type),
+      video_codec_options: cdktn.hashMapper(cdktn.stringToTerraform)(this._videoCodecOptions),
       audio: elastictranscoderPresetAudioToTerraform(this._audio.internalValue),
       audio_codec_options: elastictranscoderPresetAudioCodecOptionsToTerraform(this._audioCodecOptions.internalValue),
       thumbnails: elastictranscoderPresetThumbnailsToTerraform(this._thumbnails.internalValue),
       video: elastictranscoderPresetVideoToTerraform(this._video.internalValue),
-      video_watermarks: cdktf.listMapper(elastictranscoderPresetVideoWatermarksToTerraform, true)(this._videoWatermarks.internalValue),
+      video_watermarks: cdktn.listMapper(elastictranscoderPresetVideoWatermarksToTerraform, true)(this._videoWatermarks.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       container: {
-        value: cdktf.stringToHclTerraform(this._container),
+        value: cdktn.stringToHclTerraform(this._container),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       video_codec_options: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._videoCodecOptions),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._videoCodecOptions),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -2040,7 +2040,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
         storageClassType: "ElastictranscoderPresetVideoList",
       },
       video_watermarks: {
-        value: cdktf.listMapperHcl(elastictranscoderPresetVideoWatermarksToHclTerraform, true)(this._videoWatermarks.internalValue),
+        value: cdktn.listMapperHcl(elastictranscoderPresetVideoWatermarksToHclTerraform, true)(this._videoWatermarks.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ElastictranscoderPresetVideoWatermarksList",

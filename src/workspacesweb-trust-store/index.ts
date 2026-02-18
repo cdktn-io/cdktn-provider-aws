@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkspaceswebTrustStoreConfig extends cdktf.TerraformMetaArguments {
+export interface WorkspaceswebTrustStoreConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -27,7 +27,7 @@ export interface WorkspaceswebTrustStoreConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_trust_store#certificate WorkspaceswebTrustStore#certificate}
   */
-  readonly certificate?: WorkspaceswebTrustStoreCertificate[] | cdktf.IResolvable;
+  readonly certificate?: WorkspaceswebTrustStoreCertificate[] | cdktn.IResolvable;
 }
 export interface WorkspaceswebTrustStoreCertificate {
   /**
@@ -36,25 +36,25 @@ export interface WorkspaceswebTrustStoreCertificate {
   readonly body: string;
 }
 
-export function workspaceswebTrustStoreCertificateToTerraform(struct?: WorkspaceswebTrustStoreCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebTrustStoreCertificateToTerraform(struct?: WorkspaceswebTrustStoreCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    body: cdktf.stringToTerraform(struct!.body),
+    body: cdktn.stringToTerraform(struct!.body),
   }
 }
 
 
-export function workspaceswebTrustStoreCertificateToHclTerraform(struct?: WorkspaceswebTrustStoreCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebTrustStoreCertificateToHclTerraform(struct?: WorkspaceswebTrustStoreCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     body: {
-      value: cdktf.stringToHclTerraform(struct!.body),
+      value: cdktn.stringToHclTerraform(struct!.body),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -65,9 +65,9 @@ export function workspaceswebTrustStoreCertificateToHclTerraform(struct?: Worksp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceswebTrustStoreCertificateOutputReference extends cdktf.ComplexObject {
+export class WorkspaceswebTrustStoreCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -75,11 +75,11 @@ export class WorkspaceswebTrustStoreCertificateOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkspaceswebTrustStoreCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceswebTrustStoreCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -92,13 +92,13 @@ export class WorkspaceswebTrustStoreCertificateOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceswebTrustStoreCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceswebTrustStoreCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._body = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -148,15 +148,15 @@ export class WorkspaceswebTrustStoreCertificateOutputReference extends cdktf.Com
   }
 }
 
-export class WorkspaceswebTrustStoreCertificateList extends cdktf.ComplexList {
-  public internalValue? : WorkspaceswebTrustStoreCertificate[] | cdktf.IResolvable
+export class WorkspaceswebTrustStoreCertificateList extends cdktn.ComplexList {
+  public internalValue? : WorkspaceswebTrustStoreCertificate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -171,7 +171,7 @@ export class WorkspaceswebTrustStoreCertificateList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_trust_store aws_workspacesweb_trust_store}
 */
-export class WorkspaceswebTrustStore extends cdktf.TerraformResource {
+export class WorkspaceswebTrustStore extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -182,14 +182,14 @@ export class WorkspaceswebTrustStore extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkspaceswebTrustStore resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkspaceswebTrustStore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceswebTrustStore to import
   * @param importFromId The id of the existing WorkspaceswebTrustStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_trust_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceswebTrustStore to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_trust_store", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_trust_store", importId: importFromId, provider });
       }
 
   // ===========
@@ -266,7 +266,7 @@ export class WorkspaceswebTrustStore extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -281,7 +281,7 @@ export class WorkspaceswebTrustStore extends cdktf.TerraformResource {
   public get certificate() {
     return this._certificate;
   }
-  public putCertificate(value: WorkspaceswebTrustStoreCertificate[] | cdktf.IResolvable) {
+  public putCertificate(value: WorkspaceswebTrustStoreCertificate[] | cdktn.IResolvable) {
     this._certificate.internalValue = value;
   }
   public resetCertificate() {
@@ -298,28 +298,28 @@ export class WorkspaceswebTrustStore extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      certificate: cdktf.listMapper(workspaceswebTrustStoreCertificateToTerraform, true)(this._certificate.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      certificate: cdktn.listMapper(workspaceswebTrustStoreCertificateToTerraform, true)(this._certificate.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       certificate: {
-        value: cdktf.listMapperHcl(workspaceswebTrustStoreCertificateToHclTerraform, true)(this._certificate.internalValue),
+        value: cdktn.listMapperHcl(workspaceswebTrustStoreCertificateToHclTerraform, true)(this._certificate.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "WorkspaceswebTrustStoreCertificateList",

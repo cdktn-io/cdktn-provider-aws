@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsmincidentsResponsePlanConfig extends cdktf.TerraformMetaArguments {
+export interface SsmincidentsResponsePlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmincidents_response_plan#chat_channel SsmincidentsResponsePlan#chat_channel}
   */
@@ -79,32 +79,32 @@ export interface SsmincidentsResponsePlanActionSsmAutomationParameter {
   readonly values: string[];
 }
 
-export function ssmincidentsResponsePlanActionSsmAutomationParameterToTerraform(struct?: SsmincidentsResponsePlanActionSsmAutomationParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmincidentsResponsePlanActionSsmAutomationParameterToTerraform(struct?: SsmincidentsResponsePlanActionSsmAutomationParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function ssmincidentsResponsePlanActionSsmAutomationParameterToHclTerraform(struct?: SsmincidentsResponsePlanActionSsmAutomationParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmincidentsResponsePlanActionSsmAutomationParameterToHclTerraform(struct?: SsmincidentsResponsePlanActionSsmAutomationParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -115,9 +115,9 @@ export function ssmincidentsResponsePlanActionSsmAutomationParameterToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmincidentsResponsePlanActionSsmAutomationParameterOutputReference extends cdktf.ComplexObject {
+export class SsmincidentsResponsePlanActionSsmAutomationParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -125,11 +125,11 @@ export class SsmincidentsResponsePlanActionSsmAutomationParameterOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmincidentsResponsePlanActionSsmAutomationParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmincidentsResponsePlanActionSsmAutomationParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -146,14 +146,14 @@ export class SsmincidentsResponsePlanActionSsmAutomationParameterOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmincidentsResponsePlanActionSsmAutomationParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmincidentsResponsePlanActionSsmAutomationParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -181,7 +181,7 @@ export class SsmincidentsResponsePlanActionSsmAutomationParameterOutputReference
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -192,15 +192,15 @@ export class SsmincidentsResponsePlanActionSsmAutomationParameterOutputReference
   }
 }
 
-export class SsmincidentsResponsePlanActionSsmAutomationParameterList extends cdktf.ComplexList {
-  public internalValue? : SsmincidentsResponsePlanActionSsmAutomationParameter[] | cdktf.IResolvable
+export class SsmincidentsResponsePlanActionSsmAutomationParameterList extends cdktn.ComplexList {
+  public internalValue? : SsmincidentsResponsePlanActionSsmAutomationParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -237,63 +237,63 @@ export interface SsmincidentsResponsePlanActionSsmAutomation {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmincidents_response_plan#parameter SsmincidentsResponsePlan#parameter}
   */
-  readonly parameter?: SsmincidentsResponsePlanActionSsmAutomationParameter[] | cdktf.IResolvable;
+  readonly parameter?: SsmincidentsResponsePlanActionSsmAutomationParameter[] | cdktn.IResolvable;
 }
 
-export function ssmincidentsResponsePlanActionSsmAutomationToTerraform(struct?: SsmincidentsResponsePlanActionSsmAutomation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmincidentsResponsePlanActionSsmAutomationToTerraform(struct?: SsmincidentsResponsePlanActionSsmAutomation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    document_name: cdktf.stringToTerraform(struct!.documentName),
-    document_version: cdktf.stringToTerraform(struct!.documentVersion),
-    dynamic_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.dynamicParameters),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    target_account: cdktf.stringToTerraform(struct!.targetAccount),
-    parameter: cdktf.listMapper(ssmincidentsResponsePlanActionSsmAutomationParameterToTerraform, true)(struct!.parameter),
+    document_name: cdktn.stringToTerraform(struct!.documentName),
+    document_version: cdktn.stringToTerraform(struct!.documentVersion),
+    dynamic_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.dynamicParameters),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    target_account: cdktn.stringToTerraform(struct!.targetAccount),
+    parameter: cdktn.listMapper(ssmincidentsResponsePlanActionSsmAutomationParameterToTerraform, true)(struct!.parameter),
   }
 }
 
 
-export function ssmincidentsResponsePlanActionSsmAutomationToHclTerraform(struct?: SsmincidentsResponsePlanActionSsmAutomation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmincidentsResponsePlanActionSsmAutomationToHclTerraform(struct?: SsmincidentsResponsePlanActionSsmAutomation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     document_name: {
-      value: cdktf.stringToHclTerraform(struct!.documentName),
+      value: cdktn.stringToHclTerraform(struct!.documentName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     document_version: {
-      value: cdktf.stringToHclTerraform(struct!.documentVersion),
+      value: cdktn.stringToHclTerraform(struct!.documentVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dynamic_parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.dynamicParameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.dynamicParameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_account: {
-      value: cdktf.stringToHclTerraform(struct!.targetAccount),
+      value: cdktn.stringToHclTerraform(struct!.targetAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter: {
-      value: cdktf.listMapperHcl(ssmincidentsResponsePlanActionSsmAutomationParameterToHclTerraform, true)(struct!.parameter),
+      value: cdktn.listMapperHcl(ssmincidentsResponsePlanActionSsmAutomationParameterToHclTerraform, true)(struct!.parameter),
       isBlock: true,
       type: "set",
       storageClassType: "SsmincidentsResponsePlanActionSsmAutomationParameterList",
@@ -304,9 +304,9 @@ export function ssmincidentsResponsePlanActionSsmAutomationToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmincidentsResponsePlanActionSsmAutomationOutputReference extends cdktf.ComplexObject {
+export class SsmincidentsResponsePlanActionSsmAutomationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -314,11 +314,11 @@ export class SsmincidentsResponsePlanActionSsmAutomationOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmincidentsResponsePlanActionSsmAutomation | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmincidentsResponsePlanActionSsmAutomation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -351,7 +351,7 @@ export class SsmincidentsResponsePlanActionSsmAutomationOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmincidentsResponsePlanActionSsmAutomation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmincidentsResponsePlanActionSsmAutomation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -362,7 +362,7 @@ export class SsmincidentsResponsePlanActionSsmAutomationOutputReference extends 
       this._targetAccount = undefined;
       this._parameter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -457,7 +457,7 @@ export class SsmincidentsResponsePlanActionSsmAutomationOutputReference extends 
   public get parameter() {
     return this._parameter;
   }
-  public putParameter(value: SsmincidentsResponsePlanActionSsmAutomationParameter[] | cdktf.IResolvable) {
+  public putParameter(value: SsmincidentsResponsePlanActionSsmAutomationParameter[] | cdktn.IResolvable) {
     this._parameter.internalValue = value;
   }
   public resetParameter() {
@@ -469,15 +469,15 @@ export class SsmincidentsResponsePlanActionSsmAutomationOutputReference extends 
   }
 }
 
-export class SsmincidentsResponsePlanActionSsmAutomationList extends cdktf.ComplexList {
-  public internalValue? : SsmincidentsResponsePlanActionSsmAutomation[] | cdktf.IResolvable
+export class SsmincidentsResponsePlanActionSsmAutomationList extends cdktn.ComplexList {
+  public internalValue? : SsmincidentsResponsePlanActionSsmAutomation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -494,28 +494,28 @@ export interface SsmincidentsResponsePlanAction {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmincidents_response_plan#ssm_automation SsmincidentsResponsePlan#ssm_automation}
   */
-  readonly ssmAutomation?: SsmincidentsResponsePlanActionSsmAutomation[] | cdktf.IResolvable;
+  readonly ssmAutomation?: SsmincidentsResponsePlanActionSsmAutomation[] | cdktn.IResolvable;
 }
 
 export function ssmincidentsResponsePlanActionToTerraform(struct?: SsmincidentsResponsePlanActionOutputReference | SsmincidentsResponsePlanAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ssm_automation: cdktf.listMapper(ssmincidentsResponsePlanActionSsmAutomationToTerraform, true)(struct!.ssmAutomation),
+    ssm_automation: cdktn.listMapper(ssmincidentsResponsePlanActionSsmAutomationToTerraform, true)(struct!.ssmAutomation),
   }
 }
 
 
 export function ssmincidentsResponsePlanActionToHclTerraform(struct?: SsmincidentsResponsePlanActionOutputReference | SsmincidentsResponsePlanAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ssm_automation: {
-      value: cdktf.listMapperHcl(ssmincidentsResponsePlanActionSsmAutomationToHclTerraform, true)(struct!.ssmAutomation),
+      value: cdktn.listMapperHcl(ssmincidentsResponsePlanActionSsmAutomationToHclTerraform, true)(struct!.ssmAutomation),
       isBlock: true,
       type: "list",
       storageClassType: "SsmincidentsResponsePlanActionSsmAutomationList",
@@ -526,14 +526,14 @@ export function ssmincidentsResponsePlanActionToHclTerraform(struct?: Ssminciden
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmincidentsResponsePlanActionOutputReference extends cdktf.ComplexObject {
+export class SsmincidentsResponsePlanActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -563,7 +563,7 @@ export class SsmincidentsResponsePlanActionOutputReference extends cdktf.Complex
   public get ssmAutomation() {
     return this._ssmAutomation;
   }
-  public putSsmAutomation(value: SsmincidentsResponsePlanActionSsmAutomation[] | cdktf.IResolvable) {
+  public putSsmAutomation(value: SsmincidentsResponsePlanActionSsmAutomation[] | cdktn.IResolvable) {
     this._ssmAutomation.internalValue = value;
   }
   public resetSsmAutomation() {
@@ -581,25 +581,25 @@ export interface SsmincidentsResponsePlanIncidentTemplateNotificationTarget {
   readonly snsTopicArn: string;
 }
 
-export function ssmincidentsResponsePlanIncidentTemplateNotificationTargetToTerraform(struct?: SsmincidentsResponsePlanIncidentTemplateNotificationTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmincidentsResponsePlanIncidentTemplateNotificationTargetToTerraform(struct?: SsmincidentsResponsePlanIncidentTemplateNotificationTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    sns_topic_arn: cdktf.stringToTerraform(struct!.snsTopicArn),
+    sns_topic_arn: cdktn.stringToTerraform(struct!.snsTopicArn),
   }
 }
 
 
-export function ssmincidentsResponsePlanIncidentTemplateNotificationTargetToHclTerraform(struct?: SsmincidentsResponsePlanIncidentTemplateNotificationTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmincidentsResponsePlanIncidentTemplateNotificationTargetToHclTerraform(struct?: SsmincidentsResponsePlanIncidentTemplateNotificationTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     sns_topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.snsTopicArn),
+      value: cdktn.stringToHclTerraform(struct!.snsTopicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -610,9 +610,9 @@ export function ssmincidentsResponsePlanIncidentTemplateNotificationTargetToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmincidentsResponsePlanIncidentTemplateNotificationTargetOutputReference extends cdktf.ComplexObject {
+export class SsmincidentsResponsePlanIncidentTemplateNotificationTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -620,11 +620,11 @@ export class SsmincidentsResponsePlanIncidentTemplateNotificationTargetOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmincidentsResponsePlanIncidentTemplateNotificationTarget | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmincidentsResponsePlanIncidentTemplateNotificationTarget | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -637,13 +637,13 @@ export class SsmincidentsResponsePlanIncidentTemplateNotificationTargetOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmincidentsResponsePlanIncidentTemplateNotificationTarget | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmincidentsResponsePlanIncidentTemplateNotificationTarget | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._snsTopicArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -668,15 +668,15 @@ export class SsmincidentsResponsePlanIncidentTemplateNotificationTargetOutputRef
   }
 }
 
-export class SsmincidentsResponsePlanIncidentTemplateNotificationTargetList extends cdktf.ComplexList {
-  public internalValue? : SsmincidentsResponsePlanIncidentTemplateNotificationTarget[] | cdktf.IResolvable
+export class SsmincidentsResponsePlanIncidentTemplateNotificationTargetList extends cdktn.ComplexList {
+  public internalValue? : SsmincidentsResponsePlanIncidentTemplateNotificationTarget[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -713,63 +713,63 @@ export interface SsmincidentsResponsePlanIncidentTemplate {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmincidents_response_plan#notification_target SsmincidentsResponsePlan#notification_target}
   */
-  readonly notificationTarget?: SsmincidentsResponsePlanIncidentTemplateNotificationTarget[] | cdktf.IResolvable;
+  readonly notificationTarget?: SsmincidentsResponsePlanIncidentTemplateNotificationTarget[] | cdktn.IResolvable;
 }
 
 export function ssmincidentsResponsePlanIncidentTemplateToTerraform(struct?: SsmincidentsResponsePlanIncidentTemplateOutputReference | SsmincidentsResponsePlanIncidentTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dedupe_string: cdktf.stringToTerraform(struct!.dedupeString),
-    impact: cdktf.numberToTerraform(struct!.impact),
-    incident_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.incidentTags),
-    summary: cdktf.stringToTerraform(struct!.summary),
-    title: cdktf.stringToTerraform(struct!.title),
-    notification_target: cdktf.listMapper(ssmincidentsResponsePlanIncidentTemplateNotificationTargetToTerraform, true)(struct!.notificationTarget),
+    dedupe_string: cdktn.stringToTerraform(struct!.dedupeString),
+    impact: cdktn.numberToTerraform(struct!.impact),
+    incident_tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.incidentTags),
+    summary: cdktn.stringToTerraform(struct!.summary),
+    title: cdktn.stringToTerraform(struct!.title),
+    notification_target: cdktn.listMapper(ssmincidentsResponsePlanIncidentTemplateNotificationTargetToTerraform, true)(struct!.notificationTarget),
   }
 }
 
 
 export function ssmincidentsResponsePlanIncidentTemplateToHclTerraform(struct?: SsmincidentsResponsePlanIncidentTemplateOutputReference | SsmincidentsResponsePlanIncidentTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dedupe_string: {
-      value: cdktf.stringToHclTerraform(struct!.dedupeString),
+      value: cdktn.stringToHclTerraform(struct!.dedupeString),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     impact: {
-      value: cdktf.numberToHclTerraform(struct!.impact),
+      value: cdktn.numberToHclTerraform(struct!.impact),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     incident_tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.incidentTags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.incidentTags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     summary: {
-      value: cdktf.stringToHclTerraform(struct!.summary),
+      value: cdktn.stringToHclTerraform(struct!.summary),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     notification_target: {
-      value: cdktf.listMapperHcl(ssmincidentsResponsePlanIncidentTemplateNotificationTargetToHclTerraform, true)(struct!.notificationTarget),
+      value: cdktn.listMapperHcl(ssmincidentsResponsePlanIncidentTemplateNotificationTargetToHclTerraform, true)(struct!.notificationTarget),
       isBlock: true,
       type: "set",
       storageClassType: "SsmincidentsResponsePlanIncidentTemplateNotificationTargetList",
@@ -780,14 +780,14 @@ export function ssmincidentsResponsePlanIncidentTemplateToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmincidentsResponsePlanIncidentTemplateOutputReference extends cdktf.ComplexObject {
+export class SsmincidentsResponsePlanIncidentTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -921,7 +921,7 @@ export class SsmincidentsResponsePlanIncidentTemplateOutputReference extends cdk
   public get notificationTarget() {
     return this._notificationTarget;
   }
-  public putNotificationTarget(value: SsmincidentsResponsePlanIncidentTemplateNotificationTarget[] | cdktf.IResolvable) {
+  public putNotificationTarget(value: SsmincidentsResponsePlanIncidentTemplateNotificationTarget[] | cdktn.IResolvable) {
     this._notificationTarget.internalValue = value;
   }
   public resetNotificationTarget() {
@@ -947,39 +947,39 @@ export interface SsmincidentsResponsePlanIntegrationPagerduty {
   readonly serviceId: string;
 }
 
-export function ssmincidentsResponsePlanIntegrationPagerdutyToTerraform(struct?: SsmincidentsResponsePlanIntegrationPagerduty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmincidentsResponsePlanIntegrationPagerdutyToTerraform(struct?: SsmincidentsResponsePlanIntegrationPagerduty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    secret_id: cdktf.stringToTerraform(struct!.secretId),
-    service_id: cdktf.stringToTerraform(struct!.serviceId),
+    name: cdktn.stringToTerraform(struct!.name),
+    secret_id: cdktn.stringToTerraform(struct!.secretId),
+    service_id: cdktn.stringToTerraform(struct!.serviceId),
   }
 }
 
 
-export function ssmincidentsResponsePlanIntegrationPagerdutyToHclTerraform(struct?: SsmincidentsResponsePlanIntegrationPagerduty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmincidentsResponsePlanIntegrationPagerdutyToHclTerraform(struct?: SsmincidentsResponsePlanIntegrationPagerduty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_id: {
-      value: cdktf.stringToHclTerraform(struct!.secretId),
+      value: cdktn.stringToHclTerraform(struct!.secretId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_id: {
-      value: cdktf.stringToHclTerraform(struct!.serviceId),
+      value: cdktn.stringToHclTerraform(struct!.serviceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -990,9 +990,9 @@ export function ssmincidentsResponsePlanIntegrationPagerdutyToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmincidentsResponsePlanIntegrationPagerdutyOutputReference extends cdktf.ComplexObject {
+export class SsmincidentsResponsePlanIntegrationPagerdutyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1000,11 +1000,11 @@ export class SsmincidentsResponsePlanIntegrationPagerdutyOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmincidentsResponsePlanIntegrationPagerduty | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmincidentsResponsePlanIntegrationPagerduty | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1025,7 +1025,7 @@ export class SsmincidentsResponsePlanIntegrationPagerdutyOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmincidentsResponsePlanIntegrationPagerduty | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmincidentsResponsePlanIntegrationPagerduty | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1033,7 +1033,7 @@ export class SsmincidentsResponsePlanIntegrationPagerdutyOutputReference extends
       this._secretId = undefined;
       this._serviceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1086,15 +1086,15 @@ export class SsmincidentsResponsePlanIntegrationPagerdutyOutputReference extends
   }
 }
 
-export class SsmincidentsResponsePlanIntegrationPagerdutyList extends cdktf.ComplexList {
-  public internalValue? : SsmincidentsResponsePlanIntegrationPagerduty[] | cdktf.IResolvable
+export class SsmincidentsResponsePlanIntegrationPagerdutyList extends cdktn.ComplexList {
+  public internalValue? : SsmincidentsResponsePlanIntegrationPagerduty[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1111,28 +1111,28 @@ export interface SsmincidentsResponsePlanIntegration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmincidents_response_plan#pagerduty SsmincidentsResponsePlan#pagerduty}
   */
-  readonly pagerduty?: SsmincidentsResponsePlanIntegrationPagerduty[] | cdktf.IResolvable;
+  readonly pagerduty?: SsmincidentsResponsePlanIntegrationPagerduty[] | cdktn.IResolvable;
 }
 
 export function ssmincidentsResponsePlanIntegrationToTerraform(struct?: SsmincidentsResponsePlanIntegrationOutputReference | SsmincidentsResponsePlanIntegration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pagerduty: cdktf.listMapper(ssmincidentsResponsePlanIntegrationPagerdutyToTerraform, true)(struct!.pagerduty),
+    pagerduty: cdktn.listMapper(ssmincidentsResponsePlanIntegrationPagerdutyToTerraform, true)(struct!.pagerduty),
   }
 }
 
 
 export function ssmincidentsResponsePlanIntegrationToHclTerraform(struct?: SsmincidentsResponsePlanIntegrationOutputReference | SsmincidentsResponsePlanIntegration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     pagerduty: {
-      value: cdktf.listMapperHcl(ssmincidentsResponsePlanIntegrationPagerdutyToHclTerraform, true)(struct!.pagerduty),
+      value: cdktn.listMapperHcl(ssmincidentsResponsePlanIntegrationPagerdutyToHclTerraform, true)(struct!.pagerduty),
       isBlock: true,
       type: "list",
       storageClassType: "SsmincidentsResponsePlanIntegrationPagerdutyList",
@@ -1143,14 +1143,14 @@ export function ssmincidentsResponsePlanIntegrationToHclTerraform(struct?: Ssmin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmincidentsResponsePlanIntegrationOutputReference extends cdktf.ComplexObject {
+export class SsmincidentsResponsePlanIntegrationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1180,7 +1180,7 @@ export class SsmincidentsResponsePlanIntegrationOutputReference extends cdktf.Co
   public get pagerduty() {
     return this._pagerduty;
   }
-  public putPagerduty(value: SsmincidentsResponsePlanIntegrationPagerduty[] | cdktf.IResolvable) {
+  public putPagerduty(value: SsmincidentsResponsePlanIntegrationPagerduty[] | cdktn.IResolvable) {
     this._pagerduty.internalValue = value;
   }
   public resetPagerduty() {
@@ -1195,7 +1195,7 @@ export class SsmincidentsResponsePlanIntegrationOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmincidents_response_plan aws_ssmincidents_response_plan}
 */
-export class SsmincidentsResponsePlan extends cdktf.TerraformResource {
+export class SsmincidentsResponsePlan extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1206,14 +1206,14 @@ export class SsmincidentsResponsePlan extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsmincidentsResponsePlan resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsmincidentsResponsePlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmincidentsResponsePlan to import
   * @param importFromId The id of the existing SsmincidentsResponsePlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmincidents_response_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmincidentsResponsePlan to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssmincidents_response_plan", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssmincidents_response_plan", importId: importFromId, provider });
       }
 
   // ===========
@@ -1268,7 +1268,7 @@ export class SsmincidentsResponsePlan extends cdktf.TerraformResource {
   // chat_channel - computed: false, optional: true, required: false
   private _chatChannel?: string[]; 
   public get chatChannel() {
-    return cdktf.Fn.tolist(this.getListAttribute('chat_channel'));
+    return cdktn.Fn.tolist(this.getListAttribute('chat_channel'));
   }
   public set chatChannel(value: string[]) {
     this._chatChannel = value;
@@ -1300,7 +1300,7 @@ export class SsmincidentsResponsePlan extends cdktf.TerraformResource {
   // engagements - computed: false, optional: true, required: false
   private _engagements?: string[]; 
   public get engagements() {
-    return cdktf.Fn.tolist(this.getListAttribute('engagements'));
+    return cdktn.Fn.tolist(this.getListAttribute('engagements'));
   }
   public set engagements(value: string[]) {
     this._engagements = value;
@@ -1441,14 +1441,14 @@ export class SsmincidentsResponsePlan extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      chat_channel: cdktf.listMapper(cdktf.stringToTerraform, false)(this._chatChannel),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      engagements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._engagements),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      chat_channel: cdktn.listMapper(cdktn.stringToTerraform, false)(this._chatChannel),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      engagements: cdktn.listMapper(cdktn.stringToTerraform, false)(this._engagements),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       action: ssmincidentsResponsePlanActionToTerraform(this._action.internalValue),
       incident_template: ssmincidentsResponsePlanIncidentTemplateToTerraform(this._incidentTemplate.internalValue),
       integration: ssmincidentsResponsePlanIntegrationToTerraform(this._integration.internalValue),
@@ -1458,49 +1458,49 @@ export class SsmincidentsResponsePlan extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       chat_channel: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._chatChannel),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._chatChannel),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engagements: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._engagements),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._engagements),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

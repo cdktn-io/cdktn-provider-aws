@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OpensearchDomainPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface OpensearchDomainPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_domain_policy#access_policies OpensearchDomainPolicy#access_policies}
   */
@@ -51,32 +51,32 @@ export interface OpensearchDomainPolicyTimeouts {
   readonly update?: string;
 }
 
-export function opensearchDomainPolicyTimeoutsToTerraform(struct?: OpensearchDomainPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function opensearchDomainPolicyTimeoutsToTerraform(struct?: OpensearchDomainPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function opensearchDomainPolicyTimeoutsToHclTerraform(struct?: OpensearchDomainPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function opensearchDomainPolicyTimeoutsToHclTerraform(struct?: OpensearchDomainPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -87,19 +87,19 @@ export function opensearchDomainPolicyTimeoutsToHclTerraform(struct?: Opensearch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OpensearchDomainPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OpensearchDomainPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OpensearchDomainPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OpensearchDomainPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -116,14 +116,14 @@ export class OpensearchDomainPolicyTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OpensearchDomainPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OpensearchDomainPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -171,7 +171,7 @@ export class OpensearchDomainPolicyTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_domain_policy aws_opensearch_domain_policy}
 */
-export class OpensearchDomainPolicy extends cdktf.TerraformResource {
+export class OpensearchDomainPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -182,14 +182,14 @@ export class OpensearchDomainPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OpensearchDomainPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OpensearchDomainPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpensearchDomainPolicy to import
   * @param importFromId The id of the existing OpensearchDomainPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_domain_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpensearchDomainPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_opensearch_domain_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_opensearch_domain_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -310,10 +310,10 @@ export class OpensearchDomainPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_policies: cdktf.stringToTerraform(this._accessPolicies),
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      access_policies: cdktn.stringToTerraform(this._accessPolicies),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
       timeouts: opensearchDomainPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -321,25 +321,25 @@ export class OpensearchDomainPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_policies: {
-        value: cdktf.stringToHclTerraform(this._accessPolicies),
+        value: cdktn.stringToHclTerraform(this._accessPolicies),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

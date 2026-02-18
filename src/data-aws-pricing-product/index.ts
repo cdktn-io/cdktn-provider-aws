@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsPricingProductConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsPricingProductConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/pricing_product#id DataAwsPricingProduct#id}
   *
@@ -28,7 +28,7 @@ export interface DataAwsPricingProductConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/pricing_product#filters DataAwsPricingProduct#filters}
   */
-  readonly filters: DataAwsPricingProductFilters[] | cdktf.IResolvable;
+  readonly filters: DataAwsPricingProductFilters[] | cdktn.IResolvable;
 }
 export interface DataAwsPricingProductFilters {
   /**
@@ -41,32 +41,32 @@ export interface DataAwsPricingProductFilters {
   readonly value: string;
 }
 
-export function dataAwsPricingProductFiltersToTerraform(struct?: DataAwsPricingProductFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsPricingProductFiltersToTerraform(struct?: DataAwsPricingProductFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    field: cdktf.stringToTerraform(struct!.field),
-    value: cdktf.stringToTerraform(struct!.value),
+    field: cdktn.stringToTerraform(struct!.field),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dataAwsPricingProductFiltersToHclTerraform(struct?: DataAwsPricingProductFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsPricingProductFiltersToHclTerraform(struct?: DataAwsPricingProductFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     field: {
-      value: cdktf.stringToHclTerraform(struct!.field),
+      value: cdktn.stringToHclTerraform(struct!.field),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -77,9 +77,9 @@ export function dataAwsPricingProductFiltersToHclTerraform(struct?: DataAwsPrici
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsPricingProductFiltersOutputReference extends cdktf.ComplexObject {
+export class DataAwsPricingProductFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -87,11 +87,11 @@ export class DataAwsPricingProductFiltersOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsPricingProductFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsPricingProductFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -108,14 +108,14 @@ export class DataAwsPricingProductFiltersOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsPricingProductFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsPricingProductFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._field = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -154,15 +154,15 @@ export class DataAwsPricingProductFiltersOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DataAwsPricingProductFiltersList extends cdktf.ComplexList {
-  public internalValue? : DataAwsPricingProductFilters[] | cdktf.IResolvable
+export class DataAwsPricingProductFiltersList extends cdktn.ComplexList {
+  public internalValue? : DataAwsPricingProductFilters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -177,7 +177,7 @@ export class DataAwsPricingProductFiltersList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/pricing_product aws_pricing_product}
 */
-export class DataAwsPricingProduct extends cdktf.TerraformDataSource {
+export class DataAwsPricingProduct extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -188,14 +188,14 @@ export class DataAwsPricingProduct extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsPricingProduct resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsPricingProduct resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsPricingProduct to import
   * @param importFromId The id of the existing DataAwsPricingProduct that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/pricing_product#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsPricingProduct to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_pricing_product", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_pricing_product", importId: importFromId, provider });
       }
 
   // ===========
@@ -273,7 +273,7 @@ export class DataAwsPricingProduct extends cdktf.TerraformDataSource {
   public get filters() {
     return this._filters;
   }
-  public putFilters(value: DataAwsPricingProductFilters[] | cdktf.IResolvable) {
+  public putFilters(value: DataAwsPricingProductFilters[] | cdktn.IResolvable) {
     this._filters.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -287,28 +287,28 @@ export class DataAwsPricingProduct extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      service_code: cdktf.stringToTerraform(this._serviceCode),
-      filters: cdktf.listMapper(dataAwsPricingProductFiltersToTerraform, true)(this._filters.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      service_code: cdktn.stringToTerraform(this._serviceCode),
+      filters: cdktn.listMapper(dataAwsPricingProductFiltersToTerraform, true)(this._filters.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_code: {
-        value: cdktf.stringToHclTerraform(this._serviceCode),
+        value: cdktn.stringToHclTerraform(this._serviceCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filters: {
-        value: cdktf.listMapperHcl(dataAwsPricingProductFiltersToHclTerraform, true)(this._filters.internalValue),
+        value: cdktn.listMapperHcl(dataAwsPricingProductFiltersToHclTerraform, true)(this._filters.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsPricingProductFiltersList",

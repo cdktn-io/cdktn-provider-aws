@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OdbCloudExadataInfrastructureConfig extends cdktf.TerraformMetaArguments {
+export interface OdbCloudExadataInfrastructureConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the Availability Zone (AZ) where the Exadata infrastructure is located. Changing this will force terraform to create new resource
   *
@@ -35,7 +35,7 @@ export interface OdbCloudExadataInfrastructureConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_exadata_infrastructure#customer_contacts_to_send_to_oci OdbCloudExadataInfrastructure#customer_contacts_to_send_to_oci}
   */
-  readonly customerContactsToSendToOci?: OdbCloudExadataInfrastructureCustomerContactsToSendToOci[] | cdktf.IResolvable;
+  readonly customerContactsToSendToOci?: OdbCloudExadataInfrastructureCustomerContactsToSendToOci[] | cdktn.IResolvable;
   /**
   * The database server model type of the Exadata infrastructure. For the list of valid model names, use the ListDbSystemShapes operation
   *
@@ -81,7 +81,7 @@ export interface OdbCloudExadataInfrastructureConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_exadata_infrastructure#maintenance_window OdbCloudExadataInfrastructure#maintenance_window}
   */
-  readonly maintenanceWindow?: OdbCloudExadataInfrastructureMaintenanceWindow[] | cdktf.IResolvable;
+  readonly maintenanceWindow?: OdbCloudExadataInfrastructureMaintenanceWindow[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -96,25 +96,25 @@ export interface OdbCloudExadataInfrastructureCustomerContactsToSendToOci {
   readonly email?: string;
 }
 
-export function odbCloudExadataInfrastructureCustomerContactsToSendToOciToTerraform(struct?: OdbCloudExadataInfrastructureCustomerContactsToSendToOci | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudExadataInfrastructureCustomerContactsToSendToOciToTerraform(struct?: OdbCloudExadataInfrastructureCustomerContactsToSendToOci | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
+    email: cdktn.stringToTerraform(struct!.email),
   }
 }
 
 
-export function odbCloudExadataInfrastructureCustomerContactsToSendToOciToHclTerraform(struct?: OdbCloudExadataInfrastructureCustomerContactsToSendToOci | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudExadataInfrastructureCustomerContactsToSendToOciToHclTerraform(struct?: OdbCloudExadataInfrastructureCustomerContactsToSendToOci | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,9 +125,9 @@ export function odbCloudExadataInfrastructureCustomerContactsToSendToOciToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OdbCloudExadataInfrastructureCustomerContactsToSendToOciOutputReference extends cdktf.ComplexObject {
+export class OdbCloudExadataInfrastructureCustomerContactsToSendToOciOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -135,11 +135,11 @@ export class OdbCloudExadataInfrastructureCustomerContactsToSendToOciOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OdbCloudExadataInfrastructureCustomerContactsToSendToOci | cdktf.IResolvable | undefined {
+  public get internalValue(): OdbCloudExadataInfrastructureCustomerContactsToSendToOci | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,13 +152,13 @@ export class OdbCloudExadataInfrastructureCustomerContactsToSendToOciOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OdbCloudExadataInfrastructureCustomerContactsToSendToOci | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OdbCloudExadataInfrastructureCustomerContactsToSendToOci | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._email = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -186,15 +186,15 @@ export class OdbCloudExadataInfrastructureCustomerContactsToSendToOciOutputRefer
   }
 }
 
-export class OdbCloudExadataInfrastructureCustomerContactsToSendToOciList extends cdktf.ComplexList {
-  public internalValue? : OdbCloudExadataInfrastructureCustomerContactsToSendToOci[] | cdktf.IResolvable
+export class OdbCloudExadataInfrastructureCustomerContactsToSendToOciList extends cdktn.ComplexList {
+  public internalValue? : OdbCloudExadataInfrastructureCustomerContactsToSendToOci[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -212,25 +212,25 @@ export interface OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek {
   readonly name?: string;
 }
 
-export function odbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekToTerraform(struct?: OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekToTerraform(struct?: OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function odbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekToHclTerraform(struct?: OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekToHclTerraform(struct?: OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -241,9 +241,9 @@ export function odbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutputReference extends cdktf.ComplexObject {
+export class OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -251,11 +251,11 @@ export class OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek | cdktf.IResolvable | undefined {
+  public get internalValue(): OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -268,13 +268,13 @@ export class OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -302,15 +302,15 @@ export class OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutputRefer
   }
 }
 
-export class OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekList extends cdktf.ComplexList {
-  public internalValue? : OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek[] | cdktf.IResolvable
+export class OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekList extends cdktn.ComplexList {
+  public internalValue? : OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -328,25 +328,25 @@ export interface OdbCloudExadataInfrastructureMaintenanceWindowMonths {
   readonly name?: string;
 }
 
-export function odbCloudExadataInfrastructureMaintenanceWindowMonthsToTerraform(struct?: OdbCloudExadataInfrastructureMaintenanceWindowMonths | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudExadataInfrastructureMaintenanceWindowMonthsToTerraform(struct?: OdbCloudExadataInfrastructureMaintenanceWindowMonths | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function odbCloudExadataInfrastructureMaintenanceWindowMonthsToHclTerraform(struct?: OdbCloudExadataInfrastructureMaintenanceWindowMonths | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudExadataInfrastructureMaintenanceWindowMonthsToHclTerraform(struct?: OdbCloudExadataInfrastructureMaintenanceWindowMonths | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -357,9 +357,9 @@ export function odbCloudExadataInfrastructureMaintenanceWindowMonthsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OdbCloudExadataInfrastructureMaintenanceWindowMonthsOutputReference extends cdktf.ComplexObject {
+export class OdbCloudExadataInfrastructureMaintenanceWindowMonthsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -367,11 +367,11 @@ export class OdbCloudExadataInfrastructureMaintenanceWindowMonthsOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OdbCloudExadataInfrastructureMaintenanceWindowMonths | cdktf.IResolvable | undefined {
+  public get internalValue(): OdbCloudExadataInfrastructureMaintenanceWindowMonths | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -384,13 +384,13 @@ export class OdbCloudExadataInfrastructureMaintenanceWindowMonthsOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OdbCloudExadataInfrastructureMaintenanceWindowMonths | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OdbCloudExadataInfrastructureMaintenanceWindowMonths | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -418,15 +418,15 @@ export class OdbCloudExadataInfrastructureMaintenanceWindowMonthsOutputReference
   }
 }
 
-export class OdbCloudExadataInfrastructureMaintenanceWindowMonthsList extends cdktf.ComplexList {
-  public internalValue? : OdbCloudExadataInfrastructureMaintenanceWindowMonths[] | cdktf.IResolvable
+export class OdbCloudExadataInfrastructureMaintenanceWindowMonthsList extends cdktn.ComplexList {
+  public internalValue? : OdbCloudExadataInfrastructureMaintenanceWindowMonths[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -445,7 +445,7 @@ export interface OdbCloudExadataInfrastructureMaintenanceWindow {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_exadata_infrastructure#days_of_week OdbCloudExadataInfrastructure#days_of_week}
   */
-  readonly daysOfWeek?: OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek[] | cdktf.IResolvable;
+  readonly daysOfWeek?: OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_exadata_infrastructure#hours_of_day OdbCloudExadataInfrastructure#hours_of_day}
   */
@@ -453,7 +453,7 @@ export interface OdbCloudExadataInfrastructureMaintenanceWindow {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_exadata_infrastructure#is_custom_action_timeout_enabled OdbCloudExadataInfrastructure#is_custom_action_timeout_enabled}
   */
-  readonly isCustomActionTimeoutEnabled: boolean | cdktf.IResolvable;
+  readonly isCustomActionTimeoutEnabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_exadata_infrastructure#lead_time_in_weeks OdbCloudExadataInfrastructure#lead_time_in_weeks}
   */
@@ -461,7 +461,7 @@ export interface OdbCloudExadataInfrastructureMaintenanceWindow {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_exadata_infrastructure#months OdbCloudExadataInfrastructure#months}
   */
-  readonly months?: OdbCloudExadataInfrastructureMaintenanceWindowMonths[] | cdktf.IResolvable;
+  readonly months?: OdbCloudExadataInfrastructureMaintenanceWindowMonths[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_exadata_infrastructure#patching_mode OdbCloudExadataInfrastructure#patching_mode}
   */
@@ -476,81 +476,81 @@ export interface OdbCloudExadataInfrastructureMaintenanceWindow {
   readonly weeksOfMonth?: number[];
 }
 
-export function odbCloudExadataInfrastructureMaintenanceWindowToTerraform(struct?: OdbCloudExadataInfrastructureMaintenanceWindow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudExadataInfrastructureMaintenanceWindowToTerraform(struct?: OdbCloudExadataInfrastructureMaintenanceWindow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_action_timeout_in_mins: cdktf.numberToTerraform(struct!.customActionTimeoutInMins),
-    days_of_week: cdktf.listMapper(odbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekToTerraform, false)(struct!.daysOfWeek),
-    hours_of_day: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.hoursOfDay),
-    is_custom_action_timeout_enabled: cdktf.booleanToTerraform(struct!.isCustomActionTimeoutEnabled),
-    lead_time_in_weeks: cdktf.numberToTerraform(struct!.leadTimeInWeeks),
-    months: cdktf.listMapper(odbCloudExadataInfrastructureMaintenanceWindowMonthsToTerraform, false)(struct!.months),
-    patching_mode: cdktf.stringToTerraform(struct!.patchingMode),
-    preference: cdktf.stringToTerraform(struct!.preference),
-    weeks_of_month: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.weeksOfMonth),
+    custom_action_timeout_in_mins: cdktn.numberToTerraform(struct!.customActionTimeoutInMins),
+    days_of_week: cdktn.listMapper(odbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekToTerraform, false)(struct!.daysOfWeek),
+    hours_of_day: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.hoursOfDay),
+    is_custom_action_timeout_enabled: cdktn.booleanToTerraform(struct!.isCustomActionTimeoutEnabled),
+    lead_time_in_weeks: cdktn.numberToTerraform(struct!.leadTimeInWeeks),
+    months: cdktn.listMapper(odbCloudExadataInfrastructureMaintenanceWindowMonthsToTerraform, false)(struct!.months),
+    patching_mode: cdktn.stringToTerraform(struct!.patchingMode),
+    preference: cdktn.stringToTerraform(struct!.preference),
+    weeks_of_month: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.weeksOfMonth),
   }
 }
 
 
-export function odbCloudExadataInfrastructureMaintenanceWindowToHclTerraform(struct?: OdbCloudExadataInfrastructureMaintenanceWindow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudExadataInfrastructureMaintenanceWindowToHclTerraform(struct?: OdbCloudExadataInfrastructureMaintenanceWindow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_action_timeout_in_mins: {
-      value: cdktf.numberToHclTerraform(struct!.customActionTimeoutInMins),
+      value: cdktn.numberToHclTerraform(struct!.customActionTimeoutInMins),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     days_of_week: {
-      value: cdktf.listMapperHcl(odbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekToHclTerraform, false)(struct!.daysOfWeek),
+      value: cdktn.listMapperHcl(odbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekToHclTerraform, false)(struct!.daysOfWeek),
       isBlock: true,
       type: "set",
       storageClassType: "OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekList",
     },
     hours_of_day: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.hoursOfDay),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.hoursOfDay),
       isBlock: false,
       type: "set",
       storageClassType: "numberList",
     },
     is_custom_action_timeout_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isCustomActionTimeoutEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isCustomActionTimeoutEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     lead_time_in_weeks: {
-      value: cdktf.numberToHclTerraform(struct!.leadTimeInWeeks),
+      value: cdktn.numberToHclTerraform(struct!.leadTimeInWeeks),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     months: {
-      value: cdktf.listMapperHcl(odbCloudExadataInfrastructureMaintenanceWindowMonthsToHclTerraform, false)(struct!.months),
+      value: cdktn.listMapperHcl(odbCloudExadataInfrastructureMaintenanceWindowMonthsToHclTerraform, false)(struct!.months),
       isBlock: true,
       type: "set",
       storageClassType: "OdbCloudExadataInfrastructureMaintenanceWindowMonthsList",
     },
     patching_mode: {
-      value: cdktf.stringToHclTerraform(struct!.patchingMode),
+      value: cdktn.stringToHclTerraform(struct!.patchingMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     preference: {
-      value: cdktf.stringToHclTerraform(struct!.preference),
+      value: cdktn.stringToHclTerraform(struct!.preference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weeks_of_month: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.weeksOfMonth),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.weeksOfMonth),
       isBlock: false,
       type: "set",
       storageClassType: "numberList",
@@ -561,9 +561,9 @@ export function odbCloudExadataInfrastructureMaintenanceWindowToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OdbCloudExadataInfrastructureMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+export class OdbCloudExadataInfrastructureMaintenanceWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -571,11 +571,11 @@ export class OdbCloudExadataInfrastructureMaintenanceWindowOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OdbCloudExadataInfrastructureMaintenanceWindow | cdktf.IResolvable | undefined {
+  public get internalValue(): OdbCloudExadataInfrastructureMaintenanceWindow | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -620,7 +620,7 @@ export class OdbCloudExadataInfrastructureMaintenanceWindowOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OdbCloudExadataInfrastructureMaintenanceWindow | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OdbCloudExadataInfrastructureMaintenanceWindow | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -634,7 +634,7 @@ export class OdbCloudExadataInfrastructureMaintenanceWindowOutputReference exten
       this._preference = undefined;
       this._weeksOfMonth = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -671,7 +671,7 @@ export class OdbCloudExadataInfrastructureMaintenanceWindowOutputReference exten
   public get daysOfWeek() {
     return this._daysOfWeek;
   }
-  public putDaysOfWeek(value: OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek[] | cdktf.IResolvable) {
+  public putDaysOfWeek(value: OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek[] | cdktn.IResolvable) {
     this._daysOfWeek.internalValue = value;
   }
   public resetDaysOfWeek() {
@@ -685,7 +685,7 @@ export class OdbCloudExadataInfrastructureMaintenanceWindowOutputReference exten
   // hours_of_day - computed: true, optional: true, required: false
   private _hoursOfDay?: number[]; 
   public get hoursOfDay() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('hours_of_day')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('hours_of_day')));
   }
   public set hoursOfDay(value: number[]) {
     this._hoursOfDay = value;
@@ -699,11 +699,11 @@ export class OdbCloudExadataInfrastructureMaintenanceWindowOutputReference exten
   }
 
   // is_custom_action_timeout_enabled - computed: false, optional: false, required: true
-  private _isCustomActionTimeoutEnabled?: boolean | cdktf.IResolvable; 
+  private _isCustomActionTimeoutEnabled?: boolean | cdktn.IResolvable; 
   public get isCustomActionTimeoutEnabled() {
     return this.getBooleanAttribute('is_custom_action_timeout_enabled');
   }
-  public set isCustomActionTimeoutEnabled(value: boolean | cdktf.IResolvable) {
+  public set isCustomActionTimeoutEnabled(value: boolean | cdktn.IResolvable) {
     this._isCustomActionTimeoutEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -732,7 +732,7 @@ export class OdbCloudExadataInfrastructureMaintenanceWindowOutputReference exten
   public get months() {
     return this._months;
   }
-  public putMonths(value: OdbCloudExadataInfrastructureMaintenanceWindowMonths[] | cdktf.IResolvable) {
+  public putMonths(value: OdbCloudExadataInfrastructureMaintenanceWindowMonths[] | cdktn.IResolvable) {
     this._months.internalValue = value;
   }
   public resetMonths() {
@@ -772,7 +772,7 @@ export class OdbCloudExadataInfrastructureMaintenanceWindowOutputReference exten
   // weeks_of_month - computed: true, optional: true, required: false
   private _weeksOfMonth?: number[]; 
   public get weeksOfMonth() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('weeks_of_month')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('weeks_of_month')));
   }
   public set weeksOfMonth(value: number[]) {
     this._weeksOfMonth = value;
@@ -786,15 +786,15 @@ export class OdbCloudExadataInfrastructureMaintenanceWindowOutputReference exten
   }
 }
 
-export class OdbCloudExadataInfrastructureMaintenanceWindowList extends cdktf.ComplexList {
-  public internalValue? : OdbCloudExadataInfrastructureMaintenanceWindow[] | cdktf.IResolvable
+export class OdbCloudExadataInfrastructureMaintenanceWindowList extends cdktn.ComplexList {
+  public internalValue? : OdbCloudExadataInfrastructureMaintenanceWindow[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -826,39 +826,39 @@ export interface OdbCloudExadataInfrastructureTimeouts {
   readonly update?: string;
 }
 
-export function odbCloudExadataInfrastructureTimeoutsToTerraform(struct?: OdbCloudExadataInfrastructureTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudExadataInfrastructureTimeoutsToTerraform(struct?: OdbCloudExadataInfrastructureTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function odbCloudExadataInfrastructureTimeoutsToHclTerraform(struct?: OdbCloudExadataInfrastructureTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudExadataInfrastructureTimeoutsToHclTerraform(struct?: OdbCloudExadataInfrastructureTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -869,19 +869,19 @@ export function odbCloudExadataInfrastructureTimeoutsToHclTerraform(struct?: Odb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OdbCloudExadataInfrastructureTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OdbCloudExadataInfrastructureTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OdbCloudExadataInfrastructureTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OdbCloudExadataInfrastructureTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -902,7 +902,7 @@ export class OdbCloudExadataInfrastructureTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OdbCloudExadataInfrastructureTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OdbCloudExadataInfrastructureTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -910,7 +910,7 @@ export class OdbCloudExadataInfrastructureTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -975,7 +975,7 @@ export class OdbCloudExadataInfrastructureTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_exadata_infrastructure aws_odb_cloud_exadata_infrastructure}
 */
-export class OdbCloudExadataInfrastructure extends cdktf.TerraformResource {
+export class OdbCloudExadataInfrastructure extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -986,14 +986,14 @@ export class OdbCloudExadataInfrastructure extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OdbCloudExadataInfrastructure resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OdbCloudExadataInfrastructure resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OdbCloudExadataInfrastructure to import
   * @param importFromId The id of the existing OdbCloudExadataInfrastructure that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_exadata_infrastructure#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OdbCloudExadataInfrastructure to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_cloud_exadata_infrastructure", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_cloud_exadata_infrastructure", importId: importFromId, provider });
       }
 
   // ===========
@@ -1127,7 +1127,7 @@ export class OdbCloudExadataInfrastructure extends cdktf.TerraformResource {
   public get customerContactsToSendToOci() {
     return this._customerContactsToSendToOci;
   }
-  public putCustomerContactsToSendToOci(value: OdbCloudExadataInfrastructureCustomerContactsToSendToOci[] | cdktf.IResolvable) {
+  public putCustomerContactsToSendToOci(value: OdbCloudExadataInfrastructureCustomerContactsToSendToOci[] | cdktn.IResolvable) {
     this._customerContactsToSendToOci.internalValue = value;
   }
   public resetCustomerContactsToSendToOci() {
@@ -1345,7 +1345,7 @@ export class OdbCloudExadataInfrastructure extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1360,7 +1360,7 @@ export class OdbCloudExadataInfrastructure extends cdktf.TerraformResource {
   public get maintenanceWindow() {
     return this._maintenanceWindow;
   }
-  public putMaintenanceWindow(value: OdbCloudExadataInfrastructureMaintenanceWindow[] | cdktf.IResolvable) {
+  public putMaintenanceWindow(value: OdbCloudExadataInfrastructureMaintenanceWindow[] | cdktn.IResolvable) {
     this._maintenanceWindow.internalValue = value;
   }
   public resetMaintenanceWindow() {
@@ -1393,18 +1393,18 @@ export class OdbCloudExadataInfrastructure extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      availability_zone_id: cdktf.stringToTerraform(this._availabilityZoneId),
-      compute_count: cdktf.numberToTerraform(this._computeCount),
-      customer_contacts_to_send_to_oci: cdktf.listMapper(odbCloudExadataInfrastructureCustomerContactsToSendToOciToTerraform, false)(this._customerContactsToSendToOci.internalValue),
-      database_server_type: cdktf.stringToTerraform(this._databaseServerType),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      region: cdktf.stringToTerraform(this._region),
-      shape: cdktf.stringToTerraform(this._shape),
-      storage_count: cdktf.numberToTerraform(this._storageCount),
-      storage_server_type: cdktf.stringToTerraform(this._storageServerType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      maintenance_window: cdktf.listMapper(odbCloudExadataInfrastructureMaintenanceWindowToTerraform, true)(this._maintenanceWindow.internalValue),
+      availability_zone: cdktn.stringToTerraform(this._availabilityZone),
+      availability_zone_id: cdktn.stringToTerraform(this._availabilityZoneId),
+      compute_count: cdktn.numberToTerraform(this._computeCount),
+      customer_contacts_to_send_to_oci: cdktn.listMapper(odbCloudExadataInfrastructureCustomerContactsToSendToOciToTerraform, false)(this._customerContactsToSendToOci.internalValue),
+      database_server_type: cdktn.stringToTerraform(this._databaseServerType),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      region: cdktn.stringToTerraform(this._region),
+      shape: cdktn.stringToTerraform(this._shape),
+      storage_count: cdktn.numberToTerraform(this._storageCount),
+      storage_server_type: cdktn.stringToTerraform(this._storageServerType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      maintenance_window: cdktn.listMapper(odbCloudExadataInfrastructureMaintenanceWindowToTerraform, true)(this._maintenanceWindow.internalValue),
       timeouts: odbCloudExadataInfrastructureTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1412,73 +1412,73 @@ export class OdbCloudExadataInfrastructure extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       availability_zone: {
-        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        value: cdktn.stringToHclTerraform(this._availabilityZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       availability_zone_id: {
-        value: cdktf.stringToHclTerraform(this._availabilityZoneId),
+        value: cdktn.stringToHclTerraform(this._availabilityZoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       compute_count: {
-        value: cdktf.numberToHclTerraform(this._computeCount),
+        value: cdktn.numberToHclTerraform(this._computeCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       customer_contacts_to_send_to_oci: {
-        value: cdktf.listMapperHcl(odbCloudExadataInfrastructureCustomerContactsToSendToOciToHclTerraform, false)(this._customerContactsToSendToOci.internalValue),
+        value: cdktn.listMapperHcl(odbCloudExadataInfrastructureCustomerContactsToSendToOciToHclTerraform, false)(this._customerContactsToSendToOci.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "OdbCloudExadataInfrastructureCustomerContactsToSendToOciList",
       },
       database_server_type: {
-        value: cdktf.stringToHclTerraform(this._databaseServerType),
+        value: cdktn.stringToHclTerraform(this._databaseServerType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       shape: {
-        value: cdktf.stringToHclTerraform(this._shape),
+        value: cdktn.stringToHclTerraform(this._shape),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_count: {
-        value: cdktf.numberToHclTerraform(this._storageCount),
+        value: cdktn.numberToHclTerraform(this._storageCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       storage_server_type: {
-        value: cdktf.stringToHclTerraform(this._storageServerType),
+        value: cdktn.stringToHclTerraform(this._storageServerType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       maintenance_window: {
-        value: cdktf.listMapperHcl(odbCloudExadataInfrastructureMaintenanceWindowToHclTerraform, true)(this._maintenanceWindow.internalValue),
+        value: cdktn.listMapperHcl(odbCloudExadataInfrastructureMaintenanceWindowToHclTerraform, true)(this._maintenanceWindow.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OdbCloudExadataInfrastructureMaintenanceWindowList",

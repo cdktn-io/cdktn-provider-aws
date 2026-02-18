@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BedrockagentcoreCodeInterpreterConfig extends cdktf.TerraformMetaArguments {
+export interface BedrockagentcoreCodeInterpreterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_code_interpreter#description BedrockagentcoreCodeInterpreter#description}
   */
@@ -39,7 +39,7 @@ export interface BedrockagentcoreCodeInterpreterConfig extends cdktf.TerraformMe
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_code_interpreter#network_configuration BedrockagentcoreCodeInterpreter#network_configuration}
   */
-  readonly networkConfiguration?: BedrockagentcoreCodeInterpreterNetworkConfiguration[] | cdktf.IResolvable;
+  readonly networkConfiguration?: BedrockagentcoreCodeInterpreterNetworkConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -58,32 +58,32 @@ export interface BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig {
   readonly subnets: string[];
 }
 
-export function bedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigToTerraform(struct?: BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigToTerraform(struct?: BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
+    security_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroups),
+    subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnets),
   }
 }
 
 
-export function bedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigToHclTerraform(struct?: BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigToHclTerraform(struct?: BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroups),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnets: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnets),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -94,9 +94,9 @@ export function bedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -104,11 +104,11 @@ export class BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -125,14 +125,14 @@ export class BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._securityGroups = undefined;
       this._subnets = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -147,7 +147,7 @@ export class BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigOutputR
   // security_groups - computed: false, optional: false, required: true
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -160,7 +160,7 @@ export class BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigOutputR
   // subnets - computed: false, optional: false, required: true
   private _subnets?: string[]; 
   public get subnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -171,15 +171,15 @@ export class BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigOutputR
   }
 }
 
-export class BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig[] | cdktf.IResolvable
+export class BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -200,35 +200,35 @@ export interface BedrockagentcoreCodeInterpreterNetworkConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_code_interpreter#vpc_config BedrockagentcoreCodeInterpreter#vpc_config}
   */
-  readonly vpcConfig?: BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig[] | cdktf.IResolvable;
+  readonly vpcConfig?: BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreCodeInterpreterNetworkConfigurationToTerraform(struct?: BedrockagentcoreCodeInterpreterNetworkConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreCodeInterpreterNetworkConfigurationToTerraform(struct?: BedrockagentcoreCodeInterpreterNetworkConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network_mode: cdktf.stringToTerraform(struct!.networkMode),
-    vpc_config: cdktf.listMapper(bedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigToTerraform, true)(struct!.vpcConfig),
+    network_mode: cdktn.stringToTerraform(struct!.networkMode),
+    vpc_config: cdktn.listMapper(bedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigToTerraform, true)(struct!.vpcConfig),
   }
 }
 
 
-export function bedrockagentcoreCodeInterpreterNetworkConfigurationToHclTerraform(struct?: BedrockagentcoreCodeInterpreterNetworkConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreCodeInterpreterNetworkConfigurationToHclTerraform(struct?: BedrockagentcoreCodeInterpreterNetworkConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network_mode: {
-      value: cdktf.stringToHclTerraform(struct!.networkMode),
+      value: cdktn.stringToHclTerraform(struct!.networkMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vpc_config: {
-      value: cdktf.listMapperHcl(bedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigToHclTerraform, true)(struct!.vpcConfig),
+      value: cdktn.listMapperHcl(bedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigToHclTerraform, true)(struct!.vpcConfig),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigList",
@@ -239,9 +239,9 @@ export function bedrockagentcoreCodeInterpreterNetworkConfigurationToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreCodeInterpreterNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreCodeInterpreterNetworkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -249,11 +249,11 @@ export class BedrockagentcoreCodeInterpreterNetworkConfigurationOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreCodeInterpreterNetworkConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreCodeInterpreterNetworkConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -270,14 +270,14 @@ export class BedrockagentcoreCodeInterpreterNetworkConfigurationOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreCodeInterpreterNetworkConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreCodeInterpreterNetworkConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._networkMode = undefined;
       this._vpcConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -307,7 +307,7 @@ export class BedrockagentcoreCodeInterpreterNetworkConfigurationOutputReference 
   public get vpcConfig() {
     return this._vpcConfig;
   }
-  public putVpcConfig(value: BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig[] | cdktf.IResolvable) {
+  public putVpcConfig(value: BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig[] | cdktn.IResolvable) {
     this._vpcConfig.internalValue = value;
   }
   public resetVpcConfig() {
@@ -319,15 +319,15 @@ export class BedrockagentcoreCodeInterpreterNetworkConfigurationOutputReference 
   }
 }
 
-export class BedrockagentcoreCodeInterpreterNetworkConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreCodeInterpreterNetworkConfiguration[] | cdktf.IResolvable
+export class BedrockagentcoreCodeInterpreterNetworkConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreCodeInterpreterNetworkConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -353,32 +353,32 @@ export interface BedrockagentcoreCodeInterpreterTimeouts {
   readonly delete?: string;
 }
 
-export function bedrockagentcoreCodeInterpreterTimeoutsToTerraform(struct?: BedrockagentcoreCodeInterpreterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreCodeInterpreterTimeoutsToTerraform(struct?: BedrockagentcoreCodeInterpreterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function bedrockagentcoreCodeInterpreterTimeoutsToHclTerraform(struct?: BedrockagentcoreCodeInterpreterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreCodeInterpreterTimeoutsToHclTerraform(struct?: BedrockagentcoreCodeInterpreterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -389,19 +389,19 @@ export function bedrockagentcoreCodeInterpreterTimeoutsToHclTerraform(struct?: B
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreCodeInterpreterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreCodeInterpreterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BedrockagentcoreCodeInterpreterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreCodeInterpreterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -418,14 +418,14 @@ export class BedrockagentcoreCodeInterpreterTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreCodeInterpreterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreCodeInterpreterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -473,7 +473,7 @@ export class BedrockagentcoreCodeInterpreterTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_code_interpreter aws_bedrockagentcore_code_interpreter}
 */
-export class BedrockagentcoreCodeInterpreter extends cdktf.TerraformResource {
+export class BedrockagentcoreCodeInterpreter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -484,14 +484,14 @@ export class BedrockagentcoreCodeInterpreter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BedrockagentcoreCodeInterpreter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BedrockagentcoreCodeInterpreter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentcoreCodeInterpreter to import
   * @param importFromId The id of the existing BedrockagentcoreCodeInterpreter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_code_interpreter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentcoreCodeInterpreter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagentcore_code_interpreter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagentcore_code_interpreter", importId: importFromId, provider });
       }
 
   // ===========
@@ -622,7 +622,7 @@ export class BedrockagentcoreCodeInterpreter extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -632,7 +632,7 @@ export class BedrockagentcoreCodeInterpreter extends cdktf.TerraformResource {
   public get networkConfiguration() {
     return this._networkConfiguration;
   }
-  public putNetworkConfiguration(value: BedrockagentcoreCodeInterpreterNetworkConfiguration[] | cdktf.IResolvable) {
+  public putNetworkConfiguration(value: BedrockagentcoreCodeInterpreterNetworkConfiguration[] | cdktn.IResolvable) {
     this._networkConfiguration.internalValue = value;
   }
   public resetNetworkConfiguration() {
@@ -665,12 +665,12 @@ export class BedrockagentcoreCodeInterpreter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      execution_role_arn: cdktf.stringToTerraform(this._executionRoleArn),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      network_configuration: cdktf.listMapper(bedrockagentcoreCodeInterpreterNetworkConfigurationToTerraform, true)(this._networkConfiguration.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      execution_role_arn: cdktn.stringToTerraform(this._executionRoleArn),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      network_configuration: cdktn.listMapper(bedrockagentcoreCodeInterpreterNetworkConfigurationToTerraform, true)(this._networkConfiguration.internalValue),
       timeouts: bedrockagentcoreCodeInterpreterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -678,37 +678,37 @@ export class BedrockagentcoreCodeInterpreter extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       execution_role_arn: {
-        value: cdktf.stringToHclTerraform(this._executionRoleArn),
+        value: cdktn.stringToHclTerraform(this._executionRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       network_configuration: {
-        value: cdktf.listMapperHcl(bedrockagentcoreCodeInterpreterNetworkConfigurationToHclTerraform, true)(this._networkConfiguration.internalValue),
+        value: cdktn.listMapperHcl(bedrockagentcoreCodeInterpreterNetworkConfigurationToHclTerraform, true)(this._networkConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockagentcoreCodeInterpreterNetworkConfigurationList",

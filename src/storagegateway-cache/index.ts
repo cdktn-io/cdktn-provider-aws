@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StoragegatewayCacheConfig extends cdktf.TerraformMetaArguments {
+export interface StoragegatewayCacheConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_cache#disk_id StoragegatewayCache#disk_id}
   */
@@ -38,7 +38,7 @@ export interface StoragegatewayCacheConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_cache aws_storagegateway_cache}
 */
-export class StoragegatewayCache extends cdktf.TerraformResource {
+export class StoragegatewayCache extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class StoragegatewayCache extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StoragegatewayCache resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StoragegatewayCache resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StoragegatewayCache to import
   * @param importFromId The id of the existing StoragegatewayCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_cache#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StoragegatewayCache to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_cache", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_cache", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class StoragegatewayCache extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disk_id: cdktf.stringToTerraform(this._diskId),
-      gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      disk_id: cdktn.stringToTerraform(this._diskId),
+      gateway_arn: cdktn.stringToTerraform(this._gatewayArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       disk_id: {
-        value: cdktf.stringToHclTerraform(this._diskId),
+        value: cdktn.stringToHclTerraform(this._diskId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_arn: {
-        value: cdktf.stringToHclTerraform(this._gatewayArn),
+        value: cdktn.stringToHclTerraform(this._gatewayArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

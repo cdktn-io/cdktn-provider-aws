@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IotThingPrincipalAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface IotThingPrincipalAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_thing_principal_attachment#id IotThingPrincipalAttachment#id}
   *
@@ -42,7 +42,7 @@ export interface IotThingPrincipalAttachmentConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_thing_principal_attachment aws_iot_thing_principal_attachment}
 */
-export class IotThingPrincipalAttachment extends cdktf.TerraformResource {
+export class IotThingPrincipalAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class IotThingPrincipalAttachment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IotThingPrincipalAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IotThingPrincipalAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotThingPrincipalAttachment to import
   * @param importFromId The id of the existing IotThingPrincipalAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_thing_principal_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotThingPrincipalAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_thing_principal_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_thing_principal_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -181,42 +181,42 @@ export class IotThingPrincipalAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      principal: cdktf.stringToTerraform(this._principal),
-      region: cdktf.stringToTerraform(this._region),
-      thing: cdktf.stringToTerraform(this._thing),
-      thing_principal_type: cdktf.stringToTerraform(this._thingPrincipalType),
+      id: cdktn.stringToTerraform(this._id),
+      principal: cdktn.stringToTerraform(this._principal),
+      region: cdktn.stringToTerraform(this._region),
+      thing: cdktn.stringToTerraform(this._thing),
+      thing_principal_type: cdktn.stringToTerraform(this._thingPrincipalType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal: {
-        value: cdktf.stringToHclTerraform(this._principal),
+        value: cdktn.stringToHclTerraform(this._principal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       thing: {
-        value: cdktf.stringToHclTerraform(this._thing),
+        value: cdktn.stringToHclTerraform(this._thing),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       thing_principal_type: {
-        value: cdktf.stringToHclTerraform(this._thingPrincipalType),
+        value: cdktn.stringToHclTerraform(this._thingPrincipalType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

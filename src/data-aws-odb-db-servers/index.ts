@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsOdbDbServersConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOdbDbServersConfig extends cdktn.TerraformMetaArguments {
   /**
   * The cloud exadata infrastructure ID. Mandatory field.
   *
@@ -29,8 +29,8 @@ export interface DataAwsOdbDbServersDbServersDbServerPatchingDetails {
 }
 
 export function dataAwsOdbDbServersDbServersDbServerPatchingDetailsToTerraform(struct?: DataAwsOdbDbServersDbServersDbServerPatchingDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -39,8 +39,8 @@ export function dataAwsOdbDbServersDbServersDbServerPatchingDetailsToTerraform(s
 
 
 export function dataAwsOdbDbServersDbServersDbServerPatchingDetailsToHclTerraform(struct?: DataAwsOdbDbServersDbServersDbServerPatchingDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -48,7 +48,7 @@ export function dataAwsOdbDbServersDbServersDbServerPatchingDetailsToHclTerrafor
   return attrs;
 }
 
-export class DataAwsOdbDbServersDbServersDbServerPatchingDetailsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOdbDbServersDbServersDbServerPatchingDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -57,7 +57,7 @@ export class DataAwsOdbDbServersDbServersDbServerPatchingDetailsOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -97,14 +97,14 @@ export class DataAwsOdbDbServersDbServersDbServerPatchingDetailsOutputReference 
   }
 }
 
-export class DataAwsOdbDbServersDbServersDbServerPatchingDetailsList extends cdktf.ComplexList {
+export class DataAwsOdbDbServersDbServersDbServerPatchingDetailsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -119,8 +119,8 @@ export interface DataAwsOdbDbServersDbServers {
 }
 
 export function dataAwsOdbDbServersDbServersToTerraform(struct?: DataAwsOdbDbServersDbServers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -129,8 +129,8 @@ export function dataAwsOdbDbServersDbServersToTerraform(struct?: DataAwsOdbDbSer
 
 
 export function dataAwsOdbDbServersDbServersToHclTerraform(struct?: DataAwsOdbDbServersDbServers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -138,7 +138,7 @@ export function dataAwsOdbDbServersDbServersToHclTerraform(struct?: DataAwsOdbDb
   return attrs;
 }
 
-export class DataAwsOdbDbServersDbServersOutputReference extends cdktf.ComplexObject {
+export class DataAwsOdbDbServersDbServersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -147,7 +147,7 @@ export class DataAwsOdbDbServersDbServersOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -268,14 +268,14 @@ export class DataAwsOdbDbServersDbServersOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DataAwsOdbDbServersDbServersList extends cdktf.ComplexList {
+export class DataAwsOdbDbServersDbServersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -290,7 +290,7 @@ export class DataAwsOdbDbServersDbServersList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/odb_db_servers aws_odb_db_servers}
 */
-export class DataAwsOdbDbServers extends cdktf.TerraformDataSource {
+export class DataAwsOdbDbServers extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -301,14 +301,14 @@ export class DataAwsOdbDbServers extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsOdbDbServers resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsOdbDbServers resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOdbDbServers to import
   * @param importFromId The id of the existing DataAwsOdbDbServers that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/odb_db_servers#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOdbDbServers to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_db_servers", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_db_servers", importId: importFromId, provider });
       }
 
   // ===========
@@ -387,21 +387,21 @@ export class DataAwsOdbDbServers extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cloud_exadata_infrastructure_id: cdktf.stringToTerraform(this._cloudExadataInfrastructureId),
-      region: cdktf.stringToTerraform(this._region),
+      cloud_exadata_infrastructure_id: cdktn.stringToTerraform(this._cloudExadataInfrastructureId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cloud_exadata_infrastructure_id: {
-        value: cdktf.stringToHclTerraform(this._cloudExadataInfrastructureId),
+        value: cdktn.stringToHclTerraform(this._cloudExadataInfrastructureId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

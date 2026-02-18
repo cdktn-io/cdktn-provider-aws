@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlacierVaultConfig extends cdktf.TerraformMetaArguments {
+export interface GlacierVaultConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glacier_vault#access_policy GlacierVault#access_policy}
   */
@@ -60,31 +60,31 @@ export interface GlacierVaultNotification {
 }
 
 export function glacierVaultNotificationToTerraform(struct?: GlacierVaultNotificationOutputReference | GlacierVaultNotification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
-    sns_topic: cdktf.stringToTerraform(struct!.snsTopic),
+    events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.events),
+    sns_topic: cdktn.stringToTerraform(struct!.snsTopic),
   }
 }
 
 
 export function glacierVaultNotificationToHclTerraform(struct?: GlacierVaultNotificationOutputReference | GlacierVaultNotification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     events: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.events),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     sns_topic: {
-      value: cdktf.stringToHclTerraform(struct!.snsTopic),
+      value: cdktn.stringToHclTerraform(struct!.snsTopic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -95,14 +95,14 @@ export function glacierVaultNotificationToHclTerraform(struct?: GlacierVaultNoti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlacierVaultNotificationOutputReference extends cdktf.ComplexObject {
+export class GlacierVaultNotificationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -136,7 +136,7 @@ export class GlacierVaultNotificationOutputReference extends cdktf.ComplexObject
   // events - computed: false, optional: false, required: true
   private _events?: string[]; 
   public get events() {
-    return cdktf.Fn.tolist(this.getListAttribute('events'));
+    return cdktn.Fn.tolist(this.getListAttribute('events'));
   }
   public set events(value: string[]) {
     this._events = value;
@@ -163,7 +163,7 @@ export class GlacierVaultNotificationOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glacier_vault aws_glacier_vault}
 */
-export class GlacierVault extends cdktf.TerraformResource {
+export class GlacierVault extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -174,14 +174,14 @@ export class GlacierVault extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlacierVault resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlacierVault resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlacierVault to import
   * @param importFromId The id of the existing GlacierVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glacier_vault#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlacierVault to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_glacier_vault", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_glacier_vault", importId: importFromId, provider });
       }
 
   // ===========
@@ -349,12 +349,12 @@ export class GlacierVault extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_policy: cdktf.stringToTerraform(this._accessPolicy),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      access_policy: cdktn.stringToTerraform(this._accessPolicy),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       notification: glacierVaultNotificationToTerraform(this._notification.internalValue),
     };
   }
@@ -362,37 +362,37 @@ export class GlacierVault extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_policy: {
-        value: cdktf.stringToHclTerraform(this._accessPolicy),
+        value: cdktn.stringToHclTerraform(this._accessPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

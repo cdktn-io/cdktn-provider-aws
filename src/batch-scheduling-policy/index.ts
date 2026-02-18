@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BatchSchedulingPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface BatchSchedulingPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/batch_scheduling_policy#id BatchSchedulingPolicy#id}
   *
@@ -55,32 +55,32 @@ export interface BatchSchedulingPolicyFairSharePolicyShareDistribution {
   readonly weightFactor?: number;
 }
 
-export function batchSchedulingPolicyFairSharePolicyShareDistributionToTerraform(struct?: BatchSchedulingPolicyFairSharePolicyShareDistribution | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchSchedulingPolicyFairSharePolicyShareDistributionToTerraform(struct?: BatchSchedulingPolicyFairSharePolicyShareDistribution | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    share_identifier: cdktf.stringToTerraform(struct!.shareIdentifier),
-    weight_factor: cdktf.numberToTerraform(struct!.weightFactor),
+    share_identifier: cdktn.stringToTerraform(struct!.shareIdentifier),
+    weight_factor: cdktn.numberToTerraform(struct!.weightFactor),
   }
 }
 
 
-export function batchSchedulingPolicyFairSharePolicyShareDistributionToHclTerraform(struct?: BatchSchedulingPolicyFairSharePolicyShareDistribution | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchSchedulingPolicyFairSharePolicyShareDistributionToHclTerraform(struct?: BatchSchedulingPolicyFairSharePolicyShareDistribution | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     share_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.shareIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.shareIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weight_factor: {
-      value: cdktf.numberToHclTerraform(struct!.weightFactor),
+      value: cdktn.numberToHclTerraform(struct!.weightFactor),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -91,9 +91,9 @@ export function batchSchedulingPolicyFairSharePolicyShareDistributionToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference extends cdktf.ComplexObject {
+export class BatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -101,11 +101,11 @@ export class BatchSchedulingPolicyFairSharePolicyShareDistributionOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchSchedulingPolicyFairSharePolicyShareDistribution | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchSchedulingPolicyFairSharePolicyShareDistribution | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -122,14 +122,14 @@ export class BatchSchedulingPolicyFairSharePolicyShareDistributionOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchSchedulingPolicyFairSharePolicyShareDistribution | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchSchedulingPolicyFairSharePolicyShareDistribution | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._shareIdentifier = undefined;
       this._weightFactor = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -171,15 +171,15 @@ export class BatchSchedulingPolicyFairSharePolicyShareDistributionOutputReferenc
   }
 }
 
-export class BatchSchedulingPolicyFairSharePolicyShareDistributionList extends cdktf.ComplexList {
-  public internalValue? : BatchSchedulingPolicyFairSharePolicyShareDistribution[] | cdktf.IResolvable
+export class BatchSchedulingPolicyFairSharePolicyShareDistributionList extends cdktn.ComplexList {
+  public internalValue? : BatchSchedulingPolicyFairSharePolicyShareDistribution[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -204,42 +204,42 @@ export interface BatchSchedulingPolicyFairSharePolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/batch_scheduling_policy#share_distribution BatchSchedulingPolicy#share_distribution}
   */
-  readonly shareDistribution?: BatchSchedulingPolicyFairSharePolicyShareDistribution[] | cdktf.IResolvable;
+  readonly shareDistribution?: BatchSchedulingPolicyFairSharePolicyShareDistribution[] | cdktn.IResolvable;
 }
 
 export function batchSchedulingPolicyFairSharePolicyToTerraform(struct?: BatchSchedulingPolicyFairSharePolicyOutputReference | BatchSchedulingPolicyFairSharePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    compute_reservation: cdktf.numberToTerraform(struct!.computeReservation),
-    share_decay_seconds: cdktf.numberToTerraform(struct!.shareDecaySeconds),
-    share_distribution: cdktf.listMapper(batchSchedulingPolicyFairSharePolicyShareDistributionToTerraform, true)(struct!.shareDistribution),
+    compute_reservation: cdktn.numberToTerraform(struct!.computeReservation),
+    share_decay_seconds: cdktn.numberToTerraform(struct!.shareDecaySeconds),
+    share_distribution: cdktn.listMapper(batchSchedulingPolicyFairSharePolicyShareDistributionToTerraform, true)(struct!.shareDistribution),
   }
 }
 
 
 export function batchSchedulingPolicyFairSharePolicyToHclTerraform(struct?: BatchSchedulingPolicyFairSharePolicyOutputReference | BatchSchedulingPolicyFairSharePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     compute_reservation: {
-      value: cdktf.numberToHclTerraform(struct!.computeReservation),
+      value: cdktn.numberToHclTerraform(struct!.computeReservation),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     share_decay_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.shareDecaySeconds),
+      value: cdktn.numberToHclTerraform(struct!.shareDecaySeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     share_distribution: {
-      value: cdktf.listMapperHcl(batchSchedulingPolicyFairSharePolicyShareDistributionToHclTerraform, true)(struct!.shareDistribution),
+      value: cdktn.listMapperHcl(batchSchedulingPolicyFairSharePolicyShareDistributionToHclTerraform, true)(struct!.shareDistribution),
       isBlock: true,
       type: "set",
       storageClassType: "BatchSchedulingPolicyFairSharePolicyShareDistributionList",
@@ -250,14 +250,14 @@ export function batchSchedulingPolicyFairSharePolicyToHclTerraform(struct?: Batc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchSchedulingPolicyFairSharePolicyOutputReference extends cdktf.ComplexObject {
+export class BatchSchedulingPolicyFairSharePolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -331,7 +331,7 @@ export class BatchSchedulingPolicyFairSharePolicyOutputReference extends cdktf.C
   public get shareDistribution() {
     return this._shareDistribution;
   }
-  public putShareDistribution(value: BatchSchedulingPolicyFairSharePolicyShareDistribution[] | cdktf.IResolvable) {
+  public putShareDistribution(value: BatchSchedulingPolicyFairSharePolicyShareDistribution[] | cdktn.IResolvable) {
     this._shareDistribution.internalValue = value;
   }
   public resetShareDistribution() {
@@ -346,7 +346,7 @@ export class BatchSchedulingPolicyFairSharePolicyOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/batch_scheduling_policy aws_batch_scheduling_policy}
 */
-export class BatchSchedulingPolicy extends cdktf.TerraformResource {
+export class BatchSchedulingPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -357,14 +357,14 @@ export class BatchSchedulingPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BatchSchedulingPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BatchSchedulingPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BatchSchedulingPolicy to import
   * @param importFromId The id of the existing BatchSchedulingPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/batch_scheduling_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BatchSchedulingPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_batch_scheduling_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_batch_scheduling_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -510,11 +510,11 @@ export class BatchSchedulingPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       fair_share_policy: batchSchedulingPolicyFairSharePolicyToTerraform(this._fairSharePolicy.internalValue),
     };
   }
@@ -522,31 +522,31 @@ export class BatchSchedulingPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

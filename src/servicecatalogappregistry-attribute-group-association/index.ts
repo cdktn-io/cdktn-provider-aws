@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServicecatalogappregistryAttributeGroupAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface ServicecatalogappregistryAttributeGroupAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * ID of the application.
   *
@@ -35,7 +35,7 @@ export interface ServicecatalogappregistryAttributeGroupAssociationConfig extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/servicecatalogappregistry_attribute_group_association aws_servicecatalogappregistry_attribute_group_association}
 */
-export class ServicecatalogappregistryAttributeGroupAssociation extends cdktf.TerraformResource {
+export class ServicecatalogappregistryAttributeGroupAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -46,14 +46,14 @@ export class ServicecatalogappregistryAttributeGroupAssociation extends cdktf.Te
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServicecatalogappregistryAttributeGroupAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServicecatalogappregistryAttributeGroupAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicecatalogappregistryAttributeGroupAssociation to import
   * @param importFromId The id of the existing ServicecatalogappregistryAttributeGroupAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/servicecatalogappregistry_attribute_group_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicecatalogappregistryAttributeGroupAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_servicecatalogappregistry_attribute_group_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_servicecatalogappregistry_attribute_group_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -140,28 +140,28 @@ export class ServicecatalogappregistryAttributeGroupAssociation extends cdktf.Te
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      attribute_group_id: cdktf.stringToTerraform(this._attributeGroupId),
-      region: cdktf.stringToTerraform(this._region),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      attribute_group_id: cdktn.stringToTerraform(this._attributeGroupId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       attribute_group_id: {
-        value: cdktf.stringToHclTerraform(this._attributeGroupId),
+        value: cdktn.stringToHclTerraform(this._attributeGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IotBillingGroupConfig extends cdktf.TerraformMetaArguments {
+export interface IotBillingGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_billing_group#name IotBillingGroup#name}
   */
@@ -31,14 +31,14 @@ export interface IotBillingGroupConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_billing_group#properties IotBillingGroup#properties}
   */
-  readonly properties?: IotBillingGroupProperties[] | cdktf.IResolvable;
+  readonly properties?: IotBillingGroupProperties[] | cdktn.IResolvable;
 }
 export interface IotBillingGroupMetadata {
 }
 
 export function iotBillingGroupMetadataToTerraform(struct?: IotBillingGroupMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -47,8 +47,8 @@ export function iotBillingGroupMetadataToTerraform(struct?: IotBillingGroupMetad
 
 
 export function iotBillingGroupMetadataToHclTerraform(struct?: IotBillingGroupMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -56,7 +56,7 @@ export function iotBillingGroupMetadataToHclTerraform(struct?: IotBillingGroupMe
   return attrs;
 }
 
-export class IotBillingGroupMetadataOutputReference extends cdktf.ComplexObject {
+export class IotBillingGroupMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -65,7 +65,7 @@ export class IotBillingGroupMetadataOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -90,14 +90,14 @@ export class IotBillingGroupMetadataOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class IotBillingGroupMetadataList extends cdktf.ComplexList {
+export class IotBillingGroupMetadataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -115,25 +115,25 @@ export interface IotBillingGroupProperties {
   readonly description?: string;
 }
 
-export function iotBillingGroupPropertiesToTerraform(struct?: IotBillingGroupProperties | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotBillingGroupPropertiesToTerraform(struct?: IotBillingGroupProperties | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
+    description: cdktn.stringToTerraform(struct!.description),
   }
 }
 
 
-export function iotBillingGroupPropertiesToHclTerraform(struct?: IotBillingGroupProperties | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotBillingGroupPropertiesToHclTerraform(struct?: IotBillingGroupProperties | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -144,9 +144,9 @@ export function iotBillingGroupPropertiesToHclTerraform(struct?: IotBillingGroup
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotBillingGroupPropertiesOutputReference extends cdktf.ComplexObject {
+export class IotBillingGroupPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -154,11 +154,11 @@ export class IotBillingGroupPropertiesOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotBillingGroupProperties | cdktf.IResolvable | undefined {
+  public get internalValue(): IotBillingGroupProperties | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -171,13 +171,13 @@ export class IotBillingGroupPropertiesOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotBillingGroupProperties | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotBillingGroupProperties | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._description = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -205,15 +205,15 @@ export class IotBillingGroupPropertiesOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class IotBillingGroupPropertiesList extends cdktf.ComplexList {
-  public internalValue? : IotBillingGroupProperties[] | cdktf.IResolvable
+export class IotBillingGroupPropertiesList extends cdktn.ComplexList {
+  public internalValue? : IotBillingGroupProperties[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -228,7 +228,7 @@ export class IotBillingGroupPropertiesList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_billing_group aws_iot_billing_group}
 */
-export class IotBillingGroup extends cdktf.TerraformResource {
+export class IotBillingGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -239,14 +239,14 @@ export class IotBillingGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IotBillingGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IotBillingGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotBillingGroup to import
   * @param importFromId The id of the existing IotBillingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_billing_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotBillingGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_billing_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_billing_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -348,7 +348,7 @@ export class IotBillingGroup extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -363,7 +363,7 @@ export class IotBillingGroup extends cdktf.TerraformResource {
   public get properties() {
     return this._properties;
   }
-  public putProperties(value: IotBillingGroupProperties[] | cdktf.IResolvable) {
+  public putProperties(value: IotBillingGroupProperties[] | cdktn.IResolvable) {
     this._properties.internalValue = value;
   }
   public resetProperties() {
@@ -380,35 +380,35 @@ export class IotBillingGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      properties: cdktf.listMapper(iotBillingGroupPropertiesToTerraform, true)(this._properties.internalValue),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      properties: cdktn.listMapper(iotBillingGroupPropertiesToTerraform, true)(this._properties.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       properties: {
-        value: cdktf.listMapperHcl(iotBillingGroupPropertiesToHclTerraform, true)(this._properties.internalValue),
+        value: cdktn.listMapperHcl(iotBillingGroupPropertiesToHclTerraform, true)(this._properties.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "IotBillingGroupPropertiesList",

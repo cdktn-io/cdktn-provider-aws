@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsNetworkmanagerConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsNetworkmanagerConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_connection#connection_id DataAwsNetworkmanagerConnection#connection_id}
   */
@@ -36,7 +36,7 @@ export interface DataAwsNetworkmanagerConnectionConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_connection aws_networkmanager_connection}
 */
-export class DataAwsNetworkmanagerConnection extends cdktf.TerraformDataSource {
+export class DataAwsNetworkmanagerConnection extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class DataAwsNetworkmanagerConnection extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsNetworkmanagerConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsNetworkmanagerConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsNetworkmanagerConnection to import
   * @param importFromId The id of the existing DataAwsNetworkmanagerConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsNetworkmanagerConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -188,35 +188,35 @@ export class DataAwsNetworkmanagerConnection extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_id: cdktf.stringToTerraform(this._connectionId),
-      global_network_id: cdktf.stringToTerraform(this._globalNetworkId),
-      id: cdktf.stringToTerraform(this._id),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      connection_id: cdktn.stringToTerraform(this._connectionId),
+      global_network_id: cdktn.stringToTerraform(this._globalNetworkId),
+      id: cdktn.stringToTerraform(this._id),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       connection_id: {
-        value: cdktf.stringToHclTerraform(this._connectionId),
+        value: cdktn.stringToHclTerraform(this._connectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       global_network_id: {
-        value: cdktf.stringToHclTerraform(this._globalNetworkId),
+        value: cdktn.stringToHclTerraform(this._globalNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

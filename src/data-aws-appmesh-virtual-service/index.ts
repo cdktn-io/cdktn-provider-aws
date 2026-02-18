@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsAppmeshVirtualServiceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsAppmeshVirtualServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/appmesh_virtual_service#id DataAwsAppmeshVirtualService#id}
   *
@@ -46,8 +46,8 @@ export interface DataAwsAppmeshVirtualServiceSpecProviderVirtualNode {
 }
 
 export function dataAwsAppmeshVirtualServiceSpecProviderVirtualNodeToTerraform(struct?: DataAwsAppmeshVirtualServiceSpecProviderVirtualNode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -56,8 +56,8 @@ export function dataAwsAppmeshVirtualServiceSpecProviderVirtualNodeToTerraform(s
 
 
 export function dataAwsAppmeshVirtualServiceSpecProviderVirtualNodeToHclTerraform(struct?: DataAwsAppmeshVirtualServiceSpecProviderVirtualNode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -65,7 +65,7 @@ export function dataAwsAppmeshVirtualServiceSpecProviderVirtualNodeToHclTerrafor
   return attrs;
 }
 
-export class DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -74,7 +74,7 @@ export class DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -99,14 +99,14 @@ export class DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeOutputReference 
   }
 }
 
-export class DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeList extends cdktf.ComplexList {
+export class DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -121,8 +121,8 @@ export interface DataAwsAppmeshVirtualServiceSpecProviderVirtualRouter {
 }
 
 export function dataAwsAppmeshVirtualServiceSpecProviderVirtualRouterToTerraform(struct?: DataAwsAppmeshVirtualServiceSpecProviderVirtualRouter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -131,8 +131,8 @@ export function dataAwsAppmeshVirtualServiceSpecProviderVirtualRouterToTerraform
 
 
 export function dataAwsAppmeshVirtualServiceSpecProviderVirtualRouterToHclTerraform(struct?: DataAwsAppmeshVirtualServiceSpecProviderVirtualRouter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -140,7 +140,7 @@ export function dataAwsAppmeshVirtualServiceSpecProviderVirtualRouterToHclTerraf
   return attrs;
 }
 
-export class DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -149,7 +149,7 @@ export class DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -174,14 +174,14 @@ export class DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputReferenc
   }
 }
 
-export class DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterList extends cdktf.ComplexList {
+export class DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -196,8 +196,8 @@ export interface DataAwsAppmeshVirtualServiceSpecProvider {
 }
 
 export function dataAwsAppmeshVirtualServiceSpecProviderToTerraform(struct?: DataAwsAppmeshVirtualServiceSpecProvider): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -206,8 +206,8 @@ export function dataAwsAppmeshVirtualServiceSpecProviderToTerraform(struct?: Dat
 
 
 export function dataAwsAppmeshVirtualServiceSpecProviderToHclTerraform(struct?: DataAwsAppmeshVirtualServiceSpecProvider): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -215,7 +215,7 @@ export function dataAwsAppmeshVirtualServiceSpecProviderToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataAwsAppmeshVirtualServiceSpecProviderOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshVirtualServiceSpecProviderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -224,7 +224,7 @@ export class DataAwsAppmeshVirtualServiceSpecProviderOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -256,14 +256,14 @@ export class DataAwsAppmeshVirtualServiceSpecProviderOutputReference extends cdk
   }
 }
 
-export class DataAwsAppmeshVirtualServiceSpecProviderList extends cdktf.ComplexList {
+export class DataAwsAppmeshVirtualServiceSpecProviderList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -278,8 +278,8 @@ export interface DataAwsAppmeshVirtualServiceSpec {
 }
 
 export function dataAwsAppmeshVirtualServiceSpecToTerraform(struct?: DataAwsAppmeshVirtualServiceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -288,8 +288,8 @@ export function dataAwsAppmeshVirtualServiceSpecToTerraform(struct?: DataAwsAppm
 
 
 export function dataAwsAppmeshVirtualServiceSpecToHclTerraform(struct?: DataAwsAppmeshVirtualServiceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -297,7 +297,7 @@ export function dataAwsAppmeshVirtualServiceSpecToHclTerraform(struct?: DataAwsA
   return attrs;
 }
 
-export class DataAwsAppmeshVirtualServiceSpecOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshVirtualServiceSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -306,7 +306,7 @@ export class DataAwsAppmeshVirtualServiceSpecOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -332,14 +332,14 @@ export class DataAwsAppmeshVirtualServiceSpecOutputReference extends cdktf.Compl
   }
 }
 
-export class DataAwsAppmeshVirtualServiceSpecList extends cdktf.ComplexList {
+export class DataAwsAppmeshVirtualServiceSpecList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -354,7 +354,7 @@ export class DataAwsAppmeshVirtualServiceSpecList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/appmesh_virtual_service aws_appmesh_virtual_service}
 */
-export class DataAwsAppmeshVirtualService extends cdktf.TerraformDataSource {
+export class DataAwsAppmeshVirtualService extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -365,14 +365,14 @@ export class DataAwsAppmeshVirtualService extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsAppmeshVirtualService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsAppmeshVirtualService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAppmeshVirtualService to import
   * @param importFromId The id of the existing DataAwsAppmeshVirtualService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/appmesh_virtual_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAppmeshVirtualService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appmesh_virtual_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appmesh_virtual_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -536,49 +536,49 @@ export class DataAwsAppmeshVirtualService extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      mesh_name: cdktf.stringToTerraform(this._meshName),
-      mesh_owner: cdktf.stringToTerraform(this._meshOwner),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      mesh_name: cdktn.stringToTerraform(this._meshName),
+      mesh_owner: cdktn.stringToTerraform(this._meshOwner),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mesh_name: {
-        value: cdktf.stringToHclTerraform(this._meshName),
+        value: cdktn.stringToHclTerraform(this._meshName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mesh_owner: {
-        value: cdktf.stringToHclTerraform(this._meshOwner),
+        value: cdktn.stringToHclTerraform(this._meshOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DirectoryServiceConditionalForwarderConfig extends cdktf.TerraformMetaArguments {
+export interface DirectoryServiceConditionalForwarderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_conditional_forwarder#directory_id DirectoryServiceConditionalForwarder#directory_id}
   */
@@ -42,7 +42,7 @@ export interface DirectoryServiceConditionalForwarderConfig extends cdktf.Terraf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_conditional_forwarder aws_directory_service_conditional_forwarder}
 */
-export class DirectoryServiceConditionalForwarder extends cdktf.TerraformResource {
+export class DirectoryServiceConditionalForwarder extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class DirectoryServiceConditionalForwarder extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DirectoryServiceConditionalForwarder resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DirectoryServiceConditionalForwarder resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DirectoryServiceConditionalForwarder to import
   * @param importFromId The id of the existing DirectoryServiceConditionalForwarder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_conditional_forwarder#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DirectoryServiceConditionalForwarder to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_directory_service_conditional_forwarder", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_directory_service_conditional_forwarder", importId: importFromId, provider });
       }
 
   // ===========
@@ -178,42 +178,42 @@ export class DirectoryServiceConditionalForwarder extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      directory_id: cdktf.stringToTerraform(this._directoryId),
-      dns_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dnsIps),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      remote_domain_name: cdktf.stringToTerraform(this._remoteDomainName),
+      directory_id: cdktn.stringToTerraform(this._directoryId),
+      dns_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(this._dnsIps),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      remote_domain_name: cdktn.stringToTerraform(this._remoteDomainName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       directory_id: {
-        value: cdktf.stringToHclTerraform(this._directoryId),
+        value: cdktn.stringToHclTerraform(this._directoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dns_ips: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dnsIps),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._dnsIps),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       remote_domain_name: {
-        value: cdktf.stringToHclTerraform(this._remoteDomainName),
+        value: cdktn.stringToHclTerraform(this._remoteDomainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SnsSmsPreferencesConfig extends cdktf.TerraformMetaArguments {
+export interface SnsSmsPreferencesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_sms_preferences#default_sender_id SnsSmsPreferences#default_sender_id}
   */
@@ -54,7 +54,7 @@ export interface SnsSmsPreferencesConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_sms_preferences aws_sns_sms_preferences}
 */
-export class SnsSmsPreferences extends cdktf.TerraformResource {
+export class SnsSmsPreferences extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class SnsSmsPreferences extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SnsSmsPreferences resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SnsSmsPreferences resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SnsSmsPreferences to import
   * @param importFromId The id of the existing SnsSmsPreferences that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_sms_preferences#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SnsSmsPreferences to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sns_sms_preferences", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sns_sms_preferences", importId: importFromId, provider });
       }
 
   // ===========
@@ -250,63 +250,63 @@ export class SnsSmsPreferences extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_sender_id: cdktf.stringToTerraform(this._defaultSenderId),
-      default_sms_type: cdktf.stringToTerraform(this._defaultSmsType),
-      delivery_status_iam_role_arn: cdktf.stringToTerraform(this._deliveryStatusIamRoleArn),
-      delivery_status_success_sampling_rate: cdktf.stringToTerraform(this._deliveryStatusSuccessSamplingRate),
-      id: cdktf.stringToTerraform(this._id),
-      monthly_spend_limit: cdktf.numberToTerraform(this._monthlySpendLimit),
-      region: cdktf.stringToTerraform(this._region),
-      usage_report_s3_bucket: cdktf.stringToTerraform(this._usageReportS3Bucket),
+      default_sender_id: cdktn.stringToTerraform(this._defaultSenderId),
+      default_sms_type: cdktn.stringToTerraform(this._defaultSmsType),
+      delivery_status_iam_role_arn: cdktn.stringToTerraform(this._deliveryStatusIamRoleArn),
+      delivery_status_success_sampling_rate: cdktn.stringToTerraform(this._deliveryStatusSuccessSamplingRate),
+      id: cdktn.stringToTerraform(this._id),
+      monthly_spend_limit: cdktn.numberToTerraform(this._monthlySpendLimit),
+      region: cdktn.stringToTerraform(this._region),
+      usage_report_s3_bucket: cdktn.stringToTerraform(this._usageReportS3Bucket),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       default_sender_id: {
-        value: cdktf.stringToHclTerraform(this._defaultSenderId),
+        value: cdktn.stringToHclTerraform(this._defaultSenderId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_sms_type: {
-        value: cdktf.stringToHclTerraform(this._defaultSmsType),
+        value: cdktn.stringToHclTerraform(this._defaultSmsType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delivery_status_iam_role_arn: {
-        value: cdktf.stringToHclTerraform(this._deliveryStatusIamRoleArn),
+        value: cdktn.stringToHclTerraform(this._deliveryStatusIamRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delivery_status_success_sampling_rate: {
-        value: cdktf.stringToHclTerraform(this._deliveryStatusSuccessSamplingRate),
+        value: cdktn.stringToHclTerraform(this._deliveryStatusSuccessSamplingRate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       monthly_spend_limit: {
-        value: cdktf.numberToHclTerraform(this._monthlySpendLimit),
+        value: cdktn.numberToHclTerraform(this._monthlySpendLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       usage_report_s3_bucket: {
-        value: cdktf.stringToHclTerraform(this._usageReportS3Bucket),
+        value: cdktn.stringToHclTerraform(this._usageReportS3Bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

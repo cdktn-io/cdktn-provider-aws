@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsoadminApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface SsoadminApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_application#application_provider_arn SsoadminApplication#application_provider_arn}
   */
@@ -51,7 +51,7 @@ export interface SsoadminApplicationConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_application#portal_options SsoadminApplication#portal_options}
   */
-  readonly portalOptions?: SsoadminApplicationPortalOptions[] | cdktf.IResolvable;
+  readonly portalOptions?: SsoadminApplicationPortalOptions[] | cdktn.IResolvable;
 }
 export interface SsoadminApplicationPortalOptionsSignInOptions {
   /**
@@ -64,32 +64,32 @@ export interface SsoadminApplicationPortalOptionsSignInOptions {
   readonly origin: string;
 }
 
-export function ssoadminApplicationPortalOptionsSignInOptionsToTerraform(struct?: SsoadminApplicationPortalOptionsSignInOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminApplicationPortalOptionsSignInOptionsToTerraform(struct?: SsoadminApplicationPortalOptionsSignInOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    application_url: cdktf.stringToTerraform(struct!.applicationUrl),
-    origin: cdktf.stringToTerraform(struct!.origin),
+    application_url: cdktn.stringToTerraform(struct!.applicationUrl),
+    origin: cdktn.stringToTerraform(struct!.origin),
   }
 }
 
 
-export function ssoadminApplicationPortalOptionsSignInOptionsToHclTerraform(struct?: SsoadminApplicationPortalOptionsSignInOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminApplicationPortalOptionsSignInOptionsToHclTerraform(struct?: SsoadminApplicationPortalOptionsSignInOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     application_url: {
-      value: cdktf.stringToHclTerraform(struct!.applicationUrl),
+      value: cdktn.stringToHclTerraform(struct!.applicationUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     origin: {
-      value: cdktf.stringToHclTerraform(struct!.origin),
+      value: cdktn.stringToHclTerraform(struct!.origin),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,9 +100,9 @@ export function ssoadminApplicationPortalOptionsSignInOptionsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsoadminApplicationPortalOptionsSignInOptionsOutputReference extends cdktf.ComplexObject {
+export class SsoadminApplicationPortalOptionsSignInOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -110,11 +110,11 @@ export class SsoadminApplicationPortalOptionsSignInOptionsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsoadminApplicationPortalOptionsSignInOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): SsoadminApplicationPortalOptionsSignInOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -131,14 +131,14 @@ export class SsoadminApplicationPortalOptionsSignInOptionsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsoadminApplicationPortalOptionsSignInOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsoadminApplicationPortalOptionsSignInOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._applicationUrl = undefined;
       this._origin = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -180,15 +180,15 @@ export class SsoadminApplicationPortalOptionsSignInOptionsOutputReference extend
   }
 }
 
-export class SsoadminApplicationPortalOptionsSignInOptionsList extends cdktf.ComplexList {
-  public internalValue? : SsoadminApplicationPortalOptionsSignInOptions[] | cdktf.IResolvable
+export class SsoadminApplicationPortalOptionsSignInOptionsList extends cdktn.ComplexList {
+  public internalValue? : SsoadminApplicationPortalOptionsSignInOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -209,35 +209,35 @@ export interface SsoadminApplicationPortalOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_application#sign_in_options SsoadminApplication#sign_in_options}
   */
-  readonly signInOptions?: SsoadminApplicationPortalOptionsSignInOptions[] | cdktf.IResolvable;
+  readonly signInOptions?: SsoadminApplicationPortalOptionsSignInOptions[] | cdktn.IResolvable;
 }
 
-export function ssoadminApplicationPortalOptionsToTerraform(struct?: SsoadminApplicationPortalOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminApplicationPortalOptionsToTerraform(struct?: SsoadminApplicationPortalOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    visibility: cdktf.stringToTerraform(struct!.visibility),
-    sign_in_options: cdktf.listMapper(ssoadminApplicationPortalOptionsSignInOptionsToTerraform, true)(struct!.signInOptions),
+    visibility: cdktn.stringToTerraform(struct!.visibility),
+    sign_in_options: cdktn.listMapper(ssoadminApplicationPortalOptionsSignInOptionsToTerraform, true)(struct!.signInOptions),
   }
 }
 
 
-export function ssoadminApplicationPortalOptionsToHclTerraform(struct?: SsoadminApplicationPortalOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminApplicationPortalOptionsToHclTerraform(struct?: SsoadminApplicationPortalOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     visibility: {
-      value: cdktf.stringToHclTerraform(struct!.visibility),
+      value: cdktn.stringToHclTerraform(struct!.visibility),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sign_in_options: {
-      value: cdktf.listMapperHcl(ssoadminApplicationPortalOptionsSignInOptionsToHclTerraform, true)(struct!.signInOptions),
+      value: cdktn.listMapperHcl(ssoadminApplicationPortalOptionsSignInOptionsToHclTerraform, true)(struct!.signInOptions),
       isBlock: true,
       type: "list",
       storageClassType: "SsoadminApplicationPortalOptionsSignInOptionsList",
@@ -248,9 +248,9 @@ export function ssoadminApplicationPortalOptionsToHclTerraform(struct?: Ssoadmin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsoadminApplicationPortalOptionsOutputReference extends cdktf.ComplexObject {
+export class SsoadminApplicationPortalOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -258,11 +258,11 @@ export class SsoadminApplicationPortalOptionsOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsoadminApplicationPortalOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): SsoadminApplicationPortalOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -279,14 +279,14 @@ export class SsoadminApplicationPortalOptionsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsoadminApplicationPortalOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsoadminApplicationPortalOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._visibility = undefined;
       this._signInOptions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -319,7 +319,7 @@ export class SsoadminApplicationPortalOptionsOutputReference extends cdktf.Compl
   public get signInOptions() {
     return this._signInOptions;
   }
-  public putSignInOptions(value: SsoadminApplicationPortalOptionsSignInOptions[] | cdktf.IResolvable) {
+  public putSignInOptions(value: SsoadminApplicationPortalOptionsSignInOptions[] | cdktn.IResolvable) {
     this._signInOptions.internalValue = value;
   }
   public resetSignInOptions() {
@@ -331,15 +331,15 @@ export class SsoadminApplicationPortalOptionsOutputReference extends cdktf.Compl
   }
 }
 
-export class SsoadminApplicationPortalOptionsList extends cdktf.ComplexList {
-  public internalValue? : SsoadminApplicationPortalOptions[] | cdktf.IResolvable
+export class SsoadminApplicationPortalOptionsList extends cdktn.ComplexList {
+  public internalValue? : SsoadminApplicationPortalOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -354,7 +354,7 @@ export class SsoadminApplicationPortalOptionsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_application aws_ssoadmin_application}
 */
-export class SsoadminApplication extends cdktf.TerraformResource {
+export class SsoadminApplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -365,14 +365,14 @@ export class SsoadminApplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsoadminApplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsoadminApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsoadminApplication to import
   * @param importFromId The id of the existing SsoadminApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsoadminApplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_application", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_application", importId: importFromId, provider });
       }
 
   // ===========
@@ -557,7 +557,7 @@ export class SsoadminApplication extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -567,7 +567,7 @@ export class SsoadminApplication extends cdktf.TerraformResource {
   public get portalOptions() {
     return this._portalOptions;
   }
-  public putPortalOptions(value: SsoadminApplicationPortalOptions[] | cdktf.IResolvable) {
+  public putPortalOptions(value: SsoadminApplicationPortalOptions[] | cdktn.IResolvable) {
     this._portalOptions.internalValue = value;
   }
   public resetPortalOptions() {
@@ -584,70 +584,70 @@ export class SsoadminApplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_provider_arn: cdktf.stringToTerraform(this._applicationProviderArn),
-      client_token: cdktf.stringToTerraform(this._clientToken),
-      description: cdktf.stringToTerraform(this._description),
-      instance_arn: cdktf.stringToTerraform(this._instanceArn),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      status: cdktf.stringToTerraform(this._status),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      portal_options: cdktf.listMapper(ssoadminApplicationPortalOptionsToTerraform, true)(this._portalOptions.internalValue),
+      application_provider_arn: cdktn.stringToTerraform(this._applicationProviderArn),
+      client_token: cdktn.stringToTerraform(this._clientToken),
+      description: cdktn.stringToTerraform(this._description),
+      instance_arn: cdktn.stringToTerraform(this._instanceArn),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      status: cdktn.stringToTerraform(this._status),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      portal_options: cdktn.listMapper(ssoadminApplicationPortalOptionsToTerraform, true)(this._portalOptions.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_provider_arn: {
-        value: cdktf.stringToHclTerraform(this._applicationProviderArn),
+        value: cdktn.stringToHclTerraform(this._applicationProviderArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_token: {
-        value: cdktf.stringToHclTerraform(this._clientToken),
+        value: cdktn.stringToHclTerraform(this._clientToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_arn: {
-        value: cdktf.stringToHclTerraform(this._instanceArn),
+        value: cdktn.stringToHclTerraform(this._instanceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       portal_options: {
-        value: cdktf.listMapperHcl(ssoadminApplicationPortalOptionsToHclTerraform, true)(this._portalOptions.internalValue),
+        value: cdktn.listMapperHcl(ssoadminApplicationPortalOptionsToHclTerraform, true)(this._portalOptions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SsoadminApplicationPortalOptionsList",

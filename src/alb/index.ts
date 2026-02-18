@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AlbConfig extends cdktf.TerraformMetaArguments {
+export interface AlbConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#client_keep_alive Alb#client_keep_alive}
   */
@@ -31,35 +31,35 @@ export interface AlbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#drop_invalid_header_fields Alb#drop_invalid_header_fields}
   */
-  readonly dropInvalidHeaderFields?: boolean | cdktf.IResolvable;
+  readonly dropInvalidHeaderFields?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#enable_cross_zone_load_balancing Alb#enable_cross_zone_load_balancing}
   */
-  readonly enableCrossZoneLoadBalancing?: boolean | cdktf.IResolvable;
+  readonly enableCrossZoneLoadBalancing?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#enable_deletion_protection Alb#enable_deletion_protection}
   */
-  readonly enableDeletionProtection?: boolean | cdktf.IResolvable;
+  readonly enableDeletionProtection?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#enable_http2 Alb#enable_http2}
   */
-  readonly enableHttp2?: boolean | cdktf.IResolvable;
+  readonly enableHttp2?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#enable_tls_version_and_cipher_suite_headers Alb#enable_tls_version_and_cipher_suite_headers}
   */
-  readonly enableTlsVersionAndCipherSuiteHeaders?: boolean | cdktf.IResolvable;
+  readonly enableTlsVersionAndCipherSuiteHeaders?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#enable_waf_fail_open Alb#enable_waf_fail_open}
   */
-  readonly enableWafFailOpen?: boolean | cdktf.IResolvable;
+  readonly enableWafFailOpen?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#enable_xff_client_port Alb#enable_xff_client_port}
   */
-  readonly enableXffClientPort?: boolean | cdktf.IResolvable;
+  readonly enableXffClientPort?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#enable_zonal_shift Alb#enable_zonal_shift}
   */
-  readonly enableZonalShift?: boolean | cdktf.IResolvable;
+  readonly enableZonalShift?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#enforce_security_group_inbound_rules_on_private_link_traffic Alb#enforce_security_group_inbound_rules_on_private_link_traffic}
   */
@@ -78,7 +78,7 @@ export interface AlbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#internal Alb#internal}
   */
-  readonly internal?: boolean | cdktf.IResolvable;
+  readonly internal?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#ip_address_type Alb#ip_address_type}
   */
@@ -98,7 +98,7 @@ export interface AlbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#preserve_host_header Alb#preserve_host_header}
   */
-  readonly preserveHostHeader?: boolean | cdktf.IResolvable;
+  readonly preserveHostHeader?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -164,7 +164,7 @@ export interface AlbConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#subnet_mapping Alb#subnet_mapping}
   */
-  readonly subnetMapping?: AlbSubnetMapping[] | cdktf.IResolvable;
+  readonly subnetMapping?: AlbSubnetMapping[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -180,7 +180,7 @@ export interface AlbAccessLogs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#enabled Alb#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#prefix Alb#prefix}
   */
@@ -188,38 +188,38 @@ export interface AlbAccessLogs {
 }
 
 export function albAccessLogsToTerraform(struct?: AlbAccessLogsOutputReference | AlbAccessLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
   }
 }
 
 
 export function albAccessLogsToHclTerraform(struct?: AlbAccessLogsOutputReference | AlbAccessLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -230,14 +230,14 @@ export function albAccessLogsToHclTerraform(struct?: AlbAccessLogsOutputReferenc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbAccessLogsOutputReference extends cdktf.ComplexObject {
+export class AlbAccessLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -288,11 +288,11 @@ export class AlbAccessLogsOutputReference extends cdktf.ComplexObject {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -327,7 +327,7 @@ export interface AlbConnectionLogs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#enabled Alb#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#prefix Alb#prefix}
   */
@@ -335,38 +335,38 @@ export interface AlbConnectionLogs {
 }
 
 export function albConnectionLogsToTerraform(struct?: AlbConnectionLogsOutputReference | AlbConnectionLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
   }
 }
 
 
 export function albConnectionLogsToHclTerraform(struct?: AlbConnectionLogsOutputReference | AlbConnectionLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -377,14 +377,14 @@ export function albConnectionLogsToHclTerraform(struct?: AlbConnectionLogsOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbConnectionLogsOutputReference extends cdktf.ComplexObject {
+export class AlbConnectionLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -435,11 +435,11 @@ export class AlbConnectionLogsOutputReference extends cdktf.ComplexObject {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -474,7 +474,7 @@ export interface AlbHealthCheckLogs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#enabled Alb#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#prefix Alb#prefix}
   */
@@ -482,38 +482,38 @@ export interface AlbHealthCheckLogs {
 }
 
 export function albHealthCheckLogsToTerraform(struct?: AlbHealthCheckLogsOutputReference | AlbHealthCheckLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
   }
 }
 
 
 export function albHealthCheckLogsToHclTerraform(struct?: AlbHealthCheckLogsOutputReference | AlbHealthCheckLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -524,14 +524,14 @@ export function albHealthCheckLogsToHclTerraform(struct?: AlbHealthCheckLogsOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbHealthCheckLogsOutputReference extends cdktf.ComplexObject {
+export class AlbHealthCheckLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -582,11 +582,11 @@ export class AlbHealthCheckLogsOutputReference extends cdktf.ComplexObject {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -621,24 +621,24 @@ export interface AlbIpamPools {
 }
 
 export function albIpamPoolsToTerraform(struct?: AlbIpamPoolsOutputReference | AlbIpamPools): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ipv4_ipam_pool_id: cdktf.stringToTerraform(struct!.ipv4IpamPoolId),
+    ipv4_ipam_pool_id: cdktn.stringToTerraform(struct!.ipv4IpamPoolId),
   }
 }
 
 
 export function albIpamPoolsToHclTerraform(struct?: AlbIpamPoolsOutputReference | AlbIpamPools): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ipv4_ipam_pool_id: {
-      value: cdktf.stringToHclTerraform(struct!.ipv4IpamPoolId),
+      value: cdktn.stringToHclTerraform(struct!.ipv4IpamPoolId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -649,14 +649,14 @@ export function albIpamPoolsToHclTerraform(struct?: AlbIpamPoolsOutputReference 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbIpamPoolsOutputReference extends cdktf.ComplexObject {
+export class AlbIpamPoolsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -702,24 +702,24 @@ export interface AlbMinimumLoadBalancerCapacity {
 }
 
 export function albMinimumLoadBalancerCapacityToTerraform(struct?: AlbMinimumLoadBalancerCapacityOutputReference | AlbMinimumLoadBalancerCapacity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity_units: cdktf.numberToTerraform(struct!.capacityUnits),
+    capacity_units: cdktn.numberToTerraform(struct!.capacityUnits),
   }
 }
 
 
 export function albMinimumLoadBalancerCapacityToHclTerraform(struct?: AlbMinimumLoadBalancerCapacityOutputReference | AlbMinimumLoadBalancerCapacity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity_units: {
-      value: cdktf.numberToHclTerraform(struct!.capacityUnits),
+      value: cdktn.numberToHclTerraform(struct!.capacityUnits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -730,14 +730,14 @@ export function albMinimumLoadBalancerCapacityToHclTerraform(struct?: AlbMinimum
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbMinimumLoadBalancerCapacityOutputReference extends cdktf.ComplexObject {
+export class AlbMinimumLoadBalancerCapacityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -794,46 +794,46 @@ export interface AlbSubnetMapping {
   readonly subnetId: string;
 }
 
-export function albSubnetMappingToTerraform(struct?: AlbSubnetMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albSubnetMappingToTerraform(struct?: AlbSubnetMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allocation_id: cdktf.stringToTerraform(struct!.allocationId),
-    ipv6_address: cdktf.stringToTerraform(struct!.ipv6Address),
-    private_ipv4_address: cdktf.stringToTerraform(struct!.privateIpv4Address),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    allocation_id: cdktn.stringToTerraform(struct!.allocationId),
+    ipv6_address: cdktn.stringToTerraform(struct!.ipv6Address),
+    private_ipv4_address: cdktn.stringToTerraform(struct!.privateIpv4Address),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
-export function albSubnetMappingToHclTerraform(struct?: AlbSubnetMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albSubnetMappingToHclTerraform(struct?: AlbSubnetMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allocation_id: {
-      value: cdktf.stringToHclTerraform(struct!.allocationId),
+      value: cdktn.stringToHclTerraform(struct!.allocationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ipv6_address: {
-      value: cdktf.stringToHclTerraform(struct!.ipv6Address),
+      value: cdktn.stringToHclTerraform(struct!.ipv6Address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_ipv4_address: {
-      value: cdktf.stringToHclTerraform(struct!.privateIpv4Address),
+      value: cdktn.stringToHclTerraform(struct!.privateIpv4Address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -844,9 +844,9 @@ export function albSubnetMappingToHclTerraform(struct?: AlbSubnetMapping | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbSubnetMappingOutputReference extends cdktf.ComplexObject {
+export class AlbSubnetMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -854,11 +854,11 @@ export class AlbSubnetMappingOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AlbSubnetMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): AlbSubnetMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -883,7 +883,7 @@ export class AlbSubnetMappingOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlbSubnetMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlbSubnetMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -892,7 +892,7 @@ export class AlbSubnetMappingOutputReference extends cdktf.ComplexObject {
       this._privateIpv4Address = undefined;
       this._subnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -973,15 +973,15 @@ export class AlbSubnetMappingOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class AlbSubnetMappingList extends cdktf.ComplexList {
-  public internalValue? : AlbSubnetMapping[] | cdktf.IResolvable
+export class AlbSubnetMappingList extends cdktn.ComplexList {
+  public internalValue? : AlbSubnetMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1007,39 +1007,39 @@ export interface AlbTimeouts {
   readonly update?: string;
 }
 
-export function albTimeoutsToTerraform(struct?: AlbTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albTimeoutsToTerraform(struct?: AlbTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function albTimeoutsToHclTerraform(struct?: AlbTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albTimeoutsToHclTerraform(struct?: AlbTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1050,19 +1050,19 @@ export function albTimeoutsToHclTerraform(struct?: AlbTimeouts | cdktf.IResolvab
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AlbTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AlbTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AlbTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1083,7 +1083,7 @@ export class AlbTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlbTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlbTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1091,7 +1091,7 @@ export class AlbTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1156,7 +1156,7 @@ export class AlbTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb aws_alb}
 */
-export class Alb extends cdktf.TerraformResource {
+export class Alb extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1167,14 +1167,14 @@ export class Alb extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Alb resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Alb resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Alb to import
   * @param importFromId The id of the existing Alb that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Alb to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_alb", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_alb", importId: importFromId, provider });
       }
 
   // ===========
@@ -1325,11 +1325,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // drop_invalid_header_fields - computed: false, optional: true, required: false
-  private _dropInvalidHeaderFields?: boolean | cdktf.IResolvable; 
+  private _dropInvalidHeaderFields?: boolean | cdktn.IResolvable; 
   public get dropInvalidHeaderFields() {
     return this.getBooleanAttribute('drop_invalid_header_fields');
   }
-  public set dropInvalidHeaderFields(value: boolean | cdktf.IResolvable) {
+  public set dropInvalidHeaderFields(value: boolean | cdktn.IResolvable) {
     this._dropInvalidHeaderFields = value;
   }
   public resetDropInvalidHeaderFields() {
@@ -1341,11 +1341,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // enable_cross_zone_load_balancing - computed: false, optional: true, required: false
-  private _enableCrossZoneLoadBalancing?: boolean | cdktf.IResolvable; 
+  private _enableCrossZoneLoadBalancing?: boolean | cdktn.IResolvable; 
   public get enableCrossZoneLoadBalancing() {
     return this.getBooleanAttribute('enable_cross_zone_load_balancing');
   }
-  public set enableCrossZoneLoadBalancing(value: boolean | cdktf.IResolvable) {
+  public set enableCrossZoneLoadBalancing(value: boolean | cdktn.IResolvable) {
     this._enableCrossZoneLoadBalancing = value;
   }
   public resetEnableCrossZoneLoadBalancing() {
@@ -1357,11 +1357,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // enable_deletion_protection - computed: false, optional: true, required: false
-  private _enableDeletionProtection?: boolean | cdktf.IResolvable; 
+  private _enableDeletionProtection?: boolean | cdktn.IResolvable; 
   public get enableDeletionProtection() {
     return this.getBooleanAttribute('enable_deletion_protection');
   }
-  public set enableDeletionProtection(value: boolean | cdktf.IResolvable) {
+  public set enableDeletionProtection(value: boolean | cdktn.IResolvable) {
     this._enableDeletionProtection = value;
   }
   public resetEnableDeletionProtection() {
@@ -1373,11 +1373,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // enable_http2 - computed: false, optional: true, required: false
-  private _enableHttp2?: boolean | cdktf.IResolvable; 
+  private _enableHttp2?: boolean | cdktn.IResolvable; 
   public get enableHttp2() {
     return this.getBooleanAttribute('enable_http2');
   }
-  public set enableHttp2(value: boolean | cdktf.IResolvable) {
+  public set enableHttp2(value: boolean | cdktn.IResolvable) {
     this._enableHttp2 = value;
   }
   public resetEnableHttp2() {
@@ -1389,11 +1389,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // enable_tls_version_and_cipher_suite_headers - computed: false, optional: true, required: false
-  private _enableTlsVersionAndCipherSuiteHeaders?: boolean | cdktf.IResolvable; 
+  private _enableTlsVersionAndCipherSuiteHeaders?: boolean | cdktn.IResolvable; 
   public get enableTlsVersionAndCipherSuiteHeaders() {
     return this.getBooleanAttribute('enable_tls_version_and_cipher_suite_headers');
   }
-  public set enableTlsVersionAndCipherSuiteHeaders(value: boolean | cdktf.IResolvable) {
+  public set enableTlsVersionAndCipherSuiteHeaders(value: boolean | cdktn.IResolvable) {
     this._enableTlsVersionAndCipherSuiteHeaders = value;
   }
   public resetEnableTlsVersionAndCipherSuiteHeaders() {
@@ -1405,11 +1405,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // enable_waf_fail_open - computed: false, optional: true, required: false
-  private _enableWafFailOpen?: boolean | cdktf.IResolvable; 
+  private _enableWafFailOpen?: boolean | cdktn.IResolvable; 
   public get enableWafFailOpen() {
     return this.getBooleanAttribute('enable_waf_fail_open');
   }
-  public set enableWafFailOpen(value: boolean | cdktf.IResolvable) {
+  public set enableWafFailOpen(value: boolean | cdktn.IResolvable) {
     this._enableWafFailOpen = value;
   }
   public resetEnableWafFailOpen() {
@@ -1421,11 +1421,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // enable_xff_client_port - computed: false, optional: true, required: false
-  private _enableXffClientPort?: boolean | cdktf.IResolvable; 
+  private _enableXffClientPort?: boolean | cdktn.IResolvable; 
   public get enableXffClientPort() {
     return this.getBooleanAttribute('enable_xff_client_port');
   }
-  public set enableXffClientPort(value: boolean | cdktf.IResolvable) {
+  public set enableXffClientPort(value: boolean | cdktn.IResolvable) {
     this._enableXffClientPort = value;
   }
   public resetEnableXffClientPort() {
@@ -1437,11 +1437,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // enable_zonal_shift - computed: false, optional: true, required: false
-  private _enableZonalShift?: boolean | cdktf.IResolvable; 
+  private _enableZonalShift?: boolean | cdktn.IResolvable; 
   public get enableZonalShift() {
     return this.getBooleanAttribute('enable_zonal_shift');
   }
-  public set enableZonalShift(value: boolean | cdktf.IResolvable) {
+  public set enableZonalShift(value: boolean | cdktn.IResolvable) {
     this._enableZonalShift = value;
   }
   public resetEnableZonalShift() {
@@ -1501,11 +1501,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // internal - computed: true, optional: true, required: false
-  private _internal?: boolean | cdktf.IResolvable; 
+  private _internal?: boolean | cdktn.IResolvable; 
   public get internal() {
     return this.getBooleanAttribute('internal');
   }
-  public set internal(value: boolean | cdktf.IResolvable) {
+  public set internal(value: boolean | cdktn.IResolvable) {
     this._internal = value;
   }
   public resetInternal() {
@@ -1581,11 +1581,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // preserve_host_header - computed: false, optional: true, required: false
-  private _preserveHostHeader?: boolean | cdktf.IResolvable; 
+  private _preserveHostHeader?: boolean | cdktn.IResolvable; 
   public get preserveHostHeader() {
     return this.getBooleanAttribute('preserve_host_header');
   }
-  public set preserveHostHeader(value: boolean | cdktf.IResolvable) {
+  public set preserveHostHeader(value: boolean | cdktn.IResolvable) {
     this._preserveHostHeader = value;
   }
   public resetPreserveHostHeader() {
@@ -1631,7 +1631,7 @@ export class Alb extends cdktf.TerraformResource {
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -1647,7 +1647,7 @@ export class Alb extends cdktf.TerraformResource {
   // subnets - computed: true, optional: true, required: false
   private _subnets?: string[]; 
   public get subnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -1803,7 +1803,7 @@ export class Alb extends cdktf.TerraformResource {
   public get subnetMapping() {
     return this._subnetMapping;
   }
-  public putSubnetMapping(value: AlbSubnetMapping[] | cdktf.IResolvable) {
+  public putSubnetMapping(value: AlbSubnetMapping[] | cdktn.IResolvable) {
     this._subnetMapping.internalValue = value;
   }
   public resetSubnetMapping() {
@@ -1836,40 +1836,40 @@ export class Alb extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_keep_alive: cdktf.numberToTerraform(this._clientKeepAlive),
-      customer_owned_ipv4_pool: cdktf.stringToTerraform(this._customerOwnedIpv4Pool),
-      desync_mitigation_mode: cdktf.stringToTerraform(this._desyncMitigationMode),
-      dns_record_client_routing_policy: cdktf.stringToTerraform(this._dnsRecordClientRoutingPolicy),
-      drop_invalid_header_fields: cdktf.booleanToTerraform(this._dropInvalidHeaderFields),
-      enable_cross_zone_load_balancing: cdktf.booleanToTerraform(this._enableCrossZoneLoadBalancing),
-      enable_deletion_protection: cdktf.booleanToTerraform(this._enableDeletionProtection),
-      enable_http2: cdktf.booleanToTerraform(this._enableHttp2),
-      enable_tls_version_and_cipher_suite_headers: cdktf.booleanToTerraform(this._enableTlsVersionAndCipherSuiteHeaders),
-      enable_waf_fail_open: cdktf.booleanToTerraform(this._enableWafFailOpen),
-      enable_xff_client_port: cdktf.booleanToTerraform(this._enableXffClientPort),
-      enable_zonal_shift: cdktf.booleanToTerraform(this._enableZonalShift),
-      enforce_security_group_inbound_rules_on_private_link_traffic: cdktf.stringToTerraform(this._enforceSecurityGroupInboundRulesOnPrivateLinkTraffic),
-      id: cdktf.stringToTerraform(this._id),
-      idle_timeout: cdktf.numberToTerraform(this._idleTimeout),
-      internal: cdktf.booleanToTerraform(this._internal),
-      ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
-      load_balancer_type: cdktf.stringToTerraform(this._loadBalancerType),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      preserve_host_header: cdktf.booleanToTerraform(this._preserveHostHeader),
-      region: cdktf.stringToTerraform(this._region),
-      secondary_ips_auto_assigned_per_subnet: cdktf.numberToTerraform(this._secondaryIpsAutoAssignedPerSubnet),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
-      subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnets),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      xff_header_processing_mode: cdktf.stringToTerraform(this._xffHeaderProcessingMode),
+      client_keep_alive: cdktn.numberToTerraform(this._clientKeepAlive),
+      customer_owned_ipv4_pool: cdktn.stringToTerraform(this._customerOwnedIpv4Pool),
+      desync_mitigation_mode: cdktn.stringToTerraform(this._desyncMitigationMode),
+      dns_record_client_routing_policy: cdktn.stringToTerraform(this._dnsRecordClientRoutingPolicy),
+      drop_invalid_header_fields: cdktn.booleanToTerraform(this._dropInvalidHeaderFields),
+      enable_cross_zone_load_balancing: cdktn.booleanToTerraform(this._enableCrossZoneLoadBalancing),
+      enable_deletion_protection: cdktn.booleanToTerraform(this._enableDeletionProtection),
+      enable_http2: cdktn.booleanToTerraform(this._enableHttp2),
+      enable_tls_version_and_cipher_suite_headers: cdktn.booleanToTerraform(this._enableTlsVersionAndCipherSuiteHeaders),
+      enable_waf_fail_open: cdktn.booleanToTerraform(this._enableWafFailOpen),
+      enable_xff_client_port: cdktn.booleanToTerraform(this._enableXffClientPort),
+      enable_zonal_shift: cdktn.booleanToTerraform(this._enableZonalShift),
+      enforce_security_group_inbound_rules_on_private_link_traffic: cdktn.stringToTerraform(this._enforceSecurityGroupInboundRulesOnPrivateLinkTraffic),
+      id: cdktn.stringToTerraform(this._id),
+      idle_timeout: cdktn.numberToTerraform(this._idleTimeout),
+      internal: cdktn.booleanToTerraform(this._internal),
+      ip_address_type: cdktn.stringToTerraform(this._ipAddressType),
+      load_balancer_type: cdktn.stringToTerraform(this._loadBalancerType),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      preserve_host_header: cdktn.booleanToTerraform(this._preserveHostHeader),
+      region: cdktn.stringToTerraform(this._region),
+      secondary_ips_auto_assigned_per_subnet: cdktn.numberToTerraform(this._secondaryIpsAutoAssignedPerSubnet),
+      security_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroups),
+      subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnets),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      xff_header_processing_mode: cdktn.stringToTerraform(this._xffHeaderProcessingMode),
       access_logs: albAccessLogsToTerraform(this._accessLogs.internalValue),
       connection_logs: albConnectionLogsToTerraform(this._connectionLogs.internalValue),
       health_check_logs: albHealthCheckLogsToTerraform(this._healthCheckLogs.internalValue),
       ipam_pools: albIpamPoolsToTerraform(this._ipamPools.internalValue),
       minimum_load_balancer_capacity: albMinimumLoadBalancerCapacityToTerraform(this._minimumLoadBalancerCapacity.internalValue),
-      subnet_mapping: cdktf.listMapper(albSubnetMappingToTerraform, true)(this._subnetMapping.internalValue),
+      subnet_mapping: cdktn.listMapper(albSubnetMappingToTerraform, true)(this._subnetMapping.internalValue),
       timeouts: albTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1877,169 +1877,169 @@ export class Alb extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       client_keep_alive: {
-        value: cdktf.numberToHclTerraform(this._clientKeepAlive),
+        value: cdktn.numberToHclTerraform(this._clientKeepAlive),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       customer_owned_ipv4_pool: {
-        value: cdktf.stringToHclTerraform(this._customerOwnedIpv4Pool),
+        value: cdktn.stringToHclTerraform(this._customerOwnedIpv4Pool),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       desync_mitigation_mode: {
-        value: cdktf.stringToHclTerraform(this._desyncMitigationMode),
+        value: cdktn.stringToHclTerraform(this._desyncMitigationMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dns_record_client_routing_policy: {
-        value: cdktf.stringToHclTerraform(this._dnsRecordClientRoutingPolicy),
+        value: cdktn.stringToHclTerraform(this._dnsRecordClientRoutingPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       drop_invalid_header_fields: {
-        value: cdktf.booleanToHclTerraform(this._dropInvalidHeaderFields),
+        value: cdktn.booleanToHclTerraform(this._dropInvalidHeaderFields),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_cross_zone_load_balancing: {
-        value: cdktf.booleanToHclTerraform(this._enableCrossZoneLoadBalancing),
+        value: cdktn.booleanToHclTerraform(this._enableCrossZoneLoadBalancing),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_deletion_protection: {
-        value: cdktf.booleanToHclTerraform(this._enableDeletionProtection),
+        value: cdktn.booleanToHclTerraform(this._enableDeletionProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_http2: {
-        value: cdktf.booleanToHclTerraform(this._enableHttp2),
+        value: cdktn.booleanToHclTerraform(this._enableHttp2),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_tls_version_and_cipher_suite_headers: {
-        value: cdktf.booleanToHclTerraform(this._enableTlsVersionAndCipherSuiteHeaders),
+        value: cdktn.booleanToHclTerraform(this._enableTlsVersionAndCipherSuiteHeaders),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_waf_fail_open: {
-        value: cdktf.booleanToHclTerraform(this._enableWafFailOpen),
+        value: cdktn.booleanToHclTerraform(this._enableWafFailOpen),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_xff_client_port: {
-        value: cdktf.booleanToHclTerraform(this._enableXffClientPort),
+        value: cdktn.booleanToHclTerraform(this._enableXffClientPort),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_zonal_shift: {
-        value: cdktf.booleanToHclTerraform(this._enableZonalShift),
+        value: cdktn.booleanToHclTerraform(this._enableZonalShift),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enforce_security_group_inbound_rules_on_private_link_traffic: {
-        value: cdktf.stringToHclTerraform(this._enforceSecurityGroupInboundRulesOnPrivateLinkTraffic),
+        value: cdktn.stringToHclTerraform(this._enforceSecurityGroupInboundRulesOnPrivateLinkTraffic),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idle_timeout: {
-        value: cdktf.numberToHclTerraform(this._idleTimeout),
+        value: cdktn.numberToHclTerraform(this._idleTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       internal: {
-        value: cdktf.booleanToHclTerraform(this._internal),
+        value: cdktn.booleanToHclTerraform(this._internal),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ip_address_type: {
-        value: cdktf.stringToHclTerraform(this._ipAddressType),
+        value: cdktn.stringToHclTerraform(this._ipAddressType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       load_balancer_type: {
-        value: cdktf.stringToHclTerraform(this._loadBalancerType),
+        value: cdktn.stringToHclTerraform(this._loadBalancerType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preserve_host_header: {
-        value: cdktf.booleanToHclTerraform(this._preserveHostHeader),
+        value: cdktn.booleanToHclTerraform(this._preserveHostHeader),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secondary_ips_auto_assigned_per_subnet: {
-        value: cdktf.numberToHclTerraform(this._secondaryIpsAutoAssignedPerSubnet),
+        value: cdktn.numberToHclTerraform(this._secondaryIpsAutoAssignedPerSubnet),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       security_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroups),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       subnets: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnets),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnets),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       xff_header_processing_mode: {
-        value: cdktf.stringToHclTerraform(this._xffHeaderProcessingMode),
+        value: cdktn.stringToHclTerraform(this._xffHeaderProcessingMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -2075,7 +2075,7 @@ export class Alb extends cdktf.TerraformResource {
         storageClassType: "AlbMinimumLoadBalancerCapacityList",
       },
       subnet_mapping: {
-        value: cdktf.listMapperHcl(albSubnetMappingToHclTerraform, true)(this._subnetMapping.internalValue),
+        value: cdktn.listMapperHcl(albSubnetMappingToHclTerraform, true)(this._subnetMapping.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AlbSubnetMappingList",

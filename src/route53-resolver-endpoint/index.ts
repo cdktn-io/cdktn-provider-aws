@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Route53ResolverEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface Route53ResolverEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_endpoint#direction Route53ResolverEndpoint#direction}
   */
@@ -44,7 +44,7 @@ export interface Route53ResolverEndpointConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_endpoint#rni_enhanced_metrics_enabled Route53ResolverEndpoint#rni_enhanced_metrics_enabled}
   */
-  readonly rniEnhancedMetricsEnabled?: boolean | cdktf.IResolvable;
+  readonly rniEnhancedMetricsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_endpoint#security_group_ids Route53ResolverEndpoint#security_group_ids}
   */
@@ -60,13 +60,13 @@ export interface Route53ResolverEndpointConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_endpoint#target_name_server_metrics_enabled Route53ResolverEndpoint#target_name_server_metrics_enabled}
   */
-  readonly targetNameServerMetricsEnabled?: boolean | cdktf.IResolvable;
+  readonly targetNameServerMetricsEnabled?: boolean | cdktn.IResolvable;
   /**
   * ip_address block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_endpoint#ip_address Route53ResolverEndpoint#ip_address}
   */
-  readonly ipAddress: Route53ResolverEndpointIpAddress[] | cdktf.IResolvable;
+  readonly ipAddress: Route53ResolverEndpointIpAddress[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -89,39 +89,39 @@ export interface Route53ResolverEndpointIpAddress {
   readonly subnetId: string;
 }
 
-export function route53ResolverEndpointIpAddressToTerraform(struct?: Route53ResolverEndpointIpAddress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53ResolverEndpointIpAddressToTerraform(struct?: Route53ResolverEndpointIpAddress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip: cdktf.stringToTerraform(struct!.ip),
-    ipv6: cdktf.stringToTerraform(struct!.ipv6),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    ip: cdktn.stringToTerraform(struct!.ip),
+    ipv6: cdktn.stringToTerraform(struct!.ipv6),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
-export function route53ResolverEndpointIpAddressToHclTerraform(struct?: Route53ResolverEndpointIpAddress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53ResolverEndpointIpAddressToHclTerraform(struct?: Route53ResolverEndpointIpAddress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip: {
-      value: cdktf.stringToHclTerraform(struct!.ip),
+      value: cdktn.stringToHclTerraform(struct!.ip),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ipv6: {
-      value: cdktf.stringToHclTerraform(struct!.ipv6),
+      value: cdktn.stringToHclTerraform(struct!.ipv6),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -132,9 +132,9 @@ export function route53ResolverEndpointIpAddressToHclTerraform(struct?: Route53R
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53ResolverEndpointIpAddressOutputReference extends cdktf.ComplexObject {
+export class Route53ResolverEndpointIpAddressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -142,11 +142,11 @@ export class Route53ResolverEndpointIpAddressOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Route53ResolverEndpointIpAddress | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53ResolverEndpointIpAddress | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -167,7 +167,7 @@ export class Route53ResolverEndpointIpAddressOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53ResolverEndpointIpAddress | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53ResolverEndpointIpAddress | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -175,7 +175,7 @@ export class Route53ResolverEndpointIpAddressOutputReference extends cdktf.Compl
       this._ipv6 = undefined;
       this._subnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -239,15 +239,15 @@ export class Route53ResolverEndpointIpAddressOutputReference extends cdktf.Compl
   }
 }
 
-export class Route53ResolverEndpointIpAddressList extends cdktf.ComplexList {
-  public internalValue? : Route53ResolverEndpointIpAddress[] | cdktf.IResolvable
+export class Route53ResolverEndpointIpAddressList extends cdktn.ComplexList {
+  public internalValue? : Route53ResolverEndpointIpAddress[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -273,39 +273,39 @@ export interface Route53ResolverEndpointTimeouts {
   readonly update?: string;
 }
 
-export function route53ResolverEndpointTimeoutsToTerraform(struct?: Route53ResolverEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53ResolverEndpointTimeoutsToTerraform(struct?: Route53ResolverEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function route53ResolverEndpointTimeoutsToHclTerraform(struct?: Route53ResolverEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53ResolverEndpointTimeoutsToHclTerraform(struct?: Route53ResolverEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -316,19 +316,19 @@ export function route53ResolverEndpointTimeoutsToHclTerraform(struct?: Route53Re
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53ResolverEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Route53ResolverEndpointTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Route53ResolverEndpointTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53ResolverEndpointTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -349,7 +349,7 @@ export class Route53ResolverEndpointTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53ResolverEndpointTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53ResolverEndpointTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -357,7 +357,7 @@ export class Route53ResolverEndpointTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -422,7 +422,7 @@ export class Route53ResolverEndpointTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_endpoint aws_route53_resolver_endpoint}
 */
-export class Route53ResolverEndpoint extends cdktf.TerraformResource {
+export class Route53ResolverEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -433,14 +433,14 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Route53ResolverEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Route53ResolverEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53ResolverEndpoint to import
   * @param importFromId The id of the existing Route53ResolverEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53ResolverEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_resolver_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_resolver_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -547,7 +547,7 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
   // protocols - computed: true, optional: true, required: false
   private _protocols?: string[]; 
   public get protocols() {
-    return cdktf.Fn.tolist(this.getListAttribute('protocols'));
+    return cdktn.Fn.tolist(this.getListAttribute('protocols'));
   }
   public set protocols(value: string[]) {
     this._protocols = value;
@@ -593,11 +593,11 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
   }
 
   // rni_enhanced_metrics_enabled - computed: true, optional: true, required: false
-  private _rniEnhancedMetricsEnabled?: boolean | cdktf.IResolvable; 
+  private _rniEnhancedMetricsEnabled?: boolean | cdktn.IResolvable; 
   public get rniEnhancedMetricsEnabled() {
     return this.getBooleanAttribute('rni_enhanced_metrics_enabled');
   }
-  public set rniEnhancedMetricsEnabled(value: boolean | cdktf.IResolvable) {
+  public set rniEnhancedMetricsEnabled(value: boolean | cdktn.IResolvable) {
     this._rniEnhancedMetricsEnabled = value;
   }
   public resetRniEnhancedMetricsEnabled() {
@@ -611,7 +611,7 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -654,11 +654,11 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
   }
 
   // target_name_server_metrics_enabled - computed: true, optional: true, required: false
-  private _targetNameServerMetricsEnabled?: boolean | cdktf.IResolvable; 
+  private _targetNameServerMetricsEnabled?: boolean | cdktn.IResolvable; 
   public get targetNameServerMetricsEnabled() {
     return this.getBooleanAttribute('target_name_server_metrics_enabled');
   }
-  public set targetNameServerMetricsEnabled(value: boolean | cdktf.IResolvable) {
+  public set targetNameServerMetricsEnabled(value: boolean | cdktn.IResolvable) {
     this._targetNameServerMetricsEnabled = value;
   }
   public resetTargetNameServerMetricsEnabled() {
@@ -674,7 +674,7 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
   public get ipAddress() {
     return this._ipAddress;
   }
-  public putIpAddress(value: Route53ResolverEndpointIpAddress[] | cdktf.IResolvable) {
+  public putIpAddress(value: Route53ResolverEndpointIpAddress[] | cdktn.IResolvable) {
     this._ipAddress.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -704,18 +704,18 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      direction: cdktf.stringToTerraform(this._direction),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(this._protocols),
-      region: cdktf.stringToTerraform(this._region),
-      resolver_endpoint_type: cdktf.stringToTerraform(this._resolverEndpointType),
-      rni_enhanced_metrics_enabled: cdktf.booleanToTerraform(this._rniEnhancedMetricsEnabled),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target_name_server_metrics_enabled: cdktf.booleanToTerraform(this._targetNameServerMetricsEnabled),
-      ip_address: cdktf.listMapper(route53ResolverEndpointIpAddressToTerraform, true)(this._ipAddress.internalValue),
+      direction: cdktn.stringToTerraform(this._direction),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      protocols: cdktn.listMapper(cdktn.stringToTerraform, false)(this._protocols),
+      region: cdktn.stringToTerraform(this._region),
+      resolver_endpoint_type: cdktn.stringToTerraform(this._resolverEndpointType),
+      rni_enhanced_metrics_enabled: cdktn.booleanToTerraform(this._rniEnhancedMetricsEnabled),
+      security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupIds),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      target_name_server_metrics_enabled: cdktn.booleanToTerraform(this._targetNameServerMetricsEnabled),
+      ip_address: cdktn.listMapper(route53ResolverEndpointIpAddressToTerraform, true)(this._ipAddress.internalValue),
       timeouts: route53ResolverEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -723,73 +723,73 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       direction: {
-        value: cdktf.stringToHclTerraform(this._direction),
+        value: cdktn.stringToHclTerraform(this._direction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocols: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._protocols),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._protocols),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resolver_endpoint_type: {
-        value: cdktf.stringToHclTerraform(this._resolverEndpointType),
+        value: cdktn.stringToHclTerraform(this._resolverEndpointType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rni_enhanced_metrics_enabled: {
-        value: cdktf.booleanToHclTerraform(this._rniEnhancedMetricsEnabled),
+        value: cdktn.booleanToHclTerraform(this._rniEnhancedMetricsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target_name_server_metrics_enabled: {
-        value: cdktf.booleanToHclTerraform(this._targetNameServerMetricsEnabled),
+        value: cdktn.booleanToHclTerraform(this._targetNameServerMetricsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ip_address: {
-        value: cdktf.listMapperHcl(route53ResolverEndpointIpAddressToHclTerraform, true)(this._ipAddress.internalValue),
+        value: cdktn.listMapperHcl(route53ResolverEndpointIpAddressToHclTerraform, true)(this._ipAddress.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "Route53ResolverEndpointIpAddressList",

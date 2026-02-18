@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ObservabilityadminCentralizationRuleForOrganizationConfig extends cdktf.TerraformMetaArguments {
+export interface ObservabilityadminCentralizationRuleForOrganizationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -31,7 +31,7 @@ export interface ObservabilityadminCentralizationRuleForOrganizationConfig exten
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/observabilityadmin_centralization_rule_for_organization#rule ObservabilityadminCentralizationRuleForOrganization#rule}
   */
-  readonly rule?: ObservabilityadminCentralizationRuleForOrganizationRule[] | cdktf.IResolvable;
+  readonly rule?: ObservabilityadminCentralizationRuleForOrganizationRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -50,32 +50,32 @@ export interface ObservabilityadminCentralizationRuleForOrganizationRuleDestinat
   readonly region?: string;
 }
 
-export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    region: cdktf.stringToTerraform(struct!.region),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
-export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -86,9 +86,9 @@ export function observabilityadminCentralizationRuleForOrganizationRuleDestinati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationOutputReference extends cdktf.ComplexObject {
+export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -96,11 +96,11 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationD
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -117,14 +117,14 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationD
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._kmsKeyArn = undefined;
       this._region = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -169,15 +169,15 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationD
   }
 }
 
-export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration[] | cdktf.IResolvable
+export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -203,39 +203,39 @@ export interface ObservabilityadminCentralizationRuleForOrganizationRuleDestinat
   readonly kmsKeyArn?: string;
 }
 
-export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    encryption_conflict_resolution_strategy: cdktf.stringToTerraform(struct!.encryptionConflictResolutionStrategy),
-    encryption_strategy: cdktf.stringToTerraform(struct!.encryptionStrategy),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+    encryption_conflict_resolution_strategy: cdktn.stringToTerraform(struct!.encryptionConflictResolutionStrategy),
+    encryption_strategy: cdktn.stringToTerraform(struct!.encryptionStrategy),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
   }
 }
 
 
-export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     encryption_conflict_resolution_strategy: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionConflictResolutionStrategy),
+      value: cdktn.stringToHclTerraform(struct!.encryptionConflictResolutionStrategy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encryption_strategy: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionStrategy),
+      value: cdktn.stringToHclTerraform(struct!.encryptionStrategy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -246,9 +246,9 @@ export function observabilityadminCentralizationRuleForOrganizationRuleDestinati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -256,11 +256,11 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationD
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -281,7 +281,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationD
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -289,7 +289,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationD
       this._encryptionStrategy = undefined;
       this._kmsKeyArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -348,15 +348,15 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationD
   }
 }
 
-export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration[] | cdktf.IResolvable
+export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -373,41 +373,41 @@ export interface ObservabilityadminCentralizationRuleForOrganizationRuleDestinat
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/observabilityadmin_centralization_rule_for_organization#backup_configuration ObservabilityadminCentralizationRuleForOrganization#backup_configuration}
   */
-  readonly backupConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration[] | cdktf.IResolvable;
+  readonly backupConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration[] | cdktn.IResolvable;
   /**
   * logs_encryption_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/observabilityadmin_centralization_rule_for_organization#logs_encryption_configuration ObservabilityadminCentralizationRuleForOrganization#logs_encryption_configuration}
   */
-  readonly logsEncryptionConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration[] | cdktf.IResolvable;
+  readonly logsEncryptionConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration[] | cdktn.IResolvable;
 }
 
-export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backup_configuration: cdktf.listMapper(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationToTerraform, true)(struct!.backupConfiguration),
-    logs_encryption_configuration: cdktf.listMapper(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationToTerraform, true)(struct!.logsEncryptionConfiguration),
+    backup_configuration: cdktn.listMapper(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationToTerraform, true)(struct!.backupConfiguration),
+    logs_encryption_configuration: cdktn.listMapper(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationToTerraform, true)(struct!.logsEncryptionConfiguration),
   }
 }
 
 
-export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backup_configuration: {
-      value: cdktf.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationToHclTerraform, true)(struct!.backupConfiguration),
+      value: cdktn.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationToHclTerraform, true)(struct!.backupConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationList",
     },
     logs_encryption_configuration: {
-      value: cdktf.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationToHclTerraform, true)(struct!.logsEncryptionConfiguration),
+      value: cdktn.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationToHclTerraform, true)(struct!.logsEncryptionConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationList",
@@ -418,9 +418,9 @@ export function observabilityadminCentralizationRuleForOrganizationRuleDestinati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationOutputReference extends cdktf.ComplexObject {
+export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -428,11 +428,11 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationD
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -449,14 +449,14 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationD
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._backupConfiguration.internalValue = undefined;
       this._logsEncryptionConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -473,7 +473,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationD
   public get backupConfiguration() {
     return this._backupConfiguration;
   }
-  public putBackupConfiguration(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration[] | cdktf.IResolvable) {
+  public putBackupConfiguration(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration[] | cdktn.IResolvable) {
     this._backupConfiguration.internalValue = value;
   }
   public resetBackupConfiguration() {
@@ -489,7 +489,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationD
   public get logsEncryptionConfiguration() {
     return this._logsEncryptionConfiguration;
   }
-  public putLogsEncryptionConfiguration(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration[] | cdktf.IResolvable) {
+  public putLogsEncryptionConfiguration(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration[] | cdktn.IResolvable) {
     this._logsEncryptionConfiguration.internalValue = value;
   }
   public resetLogsEncryptionConfiguration() {
@@ -501,15 +501,15 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationD
   }
 }
 
-export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration[] | cdktf.IResolvable
+export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -534,42 +534,42 @@ export interface ObservabilityadminCentralizationRuleForOrganizationRuleDestinat
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/observabilityadmin_centralization_rule_for_organization#destination_logs_configuration ObservabilityadminCentralizationRuleForOrganization#destination_logs_configuration}
   */
-  readonly destinationLogsConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration[] | cdktf.IResolvable;
+  readonly destinationLogsConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration[] | cdktn.IResolvable;
 }
 
-export function observabilityadminCentralizationRuleForOrganizationRuleDestinationToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationRuleDestinationToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account: cdktf.stringToTerraform(struct!.account),
-    region: cdktf.stringToTerraform(struct!.region),
-    destination_logs_configuration: cdktf.listMapper(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationToTerraform, true)(struct!.destinationLogsConfiguration),
+    account: cdktn.stringToTerraform(struct!.account),
+    region: cdktn.stringToTerraform(struct!.region),
+    destination_logs_configuration: cdktn.listMapper(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationToTerraform, true)(struct!.destinationLogsConfiguration),
   }
 }
 
 
-export function observabilityadminCentralizationRuleForOrganizationRuleDestinationToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationRuleDestinationToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account: {
-      value: cdktf.stringToHclTerraform(struct!.account),
+      value: cdktn.stringToHclTerraform(struct!.account),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination_logs_configuration: {
-      value: cdktf.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationToHclTerraform, true)(struct!.destinationLogsConfiguration),
+      value: cdktn.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationToHclTerraform, true)(struct!.destinationLogsConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationList",
@@ -580,9 +580,9 @@ export function observabilityadminCentralizationRuleForOrganizationRuleDestinati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationOutputReference extends cdktf.ComplexObject {
+export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -590,11 +590,11 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRuleDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRuleDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -615,7 +615,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -623,7 +623,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationO
       this._region = undefined;
       this._destinationLogsConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -667,7 +667,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationO
   public get destinationLogsConfiguration() {
     return this._destinationLogsConfiguration;
   }
-  public putDestinationLogsConfiguration(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration[] | cdktf.IResolvable) {
+  public putDestinationLogsConfiguration(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration[] | cdktn.IResolvable) {
     this._destinationLogsConfiguration.internalValue = value;
   }
   public resetDestinationLogsConfiguration() {
@@ -679,15 +679,15 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationO
   }
 }
 
-export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationList extends cdktf.ComplexList {
-  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRuleDestination[] | cdktf.IResolvable
+export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRuleDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -709,32 +709,32 @@ export interface ObservabilityadminCentralizationRuleForOrganizationRuleSourceSo
   readonly logGroupSelectionCriteria: string;
 }
 
-export function observabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    encrypted_log_group_strategy: cdktf.stringToTerraform(struct!.encryptedLogGroupStrategy),
-    log_group_selection_criteria: cdktf.stringToTerraform(struct!.logGroupSelectionCriteria),
+    encrypted_log_group_strategy: cdktn.stringToTerraform(struct!.encryptedLogGroupStrategy),
+    log_group_selection_criteria: cdktn.stringToTerraform(struct!.logGroupSelectionCriteria),
   }
 }
 
 
-export function observabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     encrypted_log_group_strategy: {
-      value: cdktf.stringToHclTerraform(struct!.encryptedLogGroupStrategy),
+      value: cdktn.stringToHclTerraform(struct!.encryptedLogGroupStrategy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_group_selection_criteria: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupSelectionCriteria),
+      value: cdktn.stringToHclTerraform(struct!.logGroupSelectionCriteria),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -745,9 +745,9 @@ export function observabilityadminCentralizationRuleForOrganizationRuleSourceSou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationOutputReference extends cdktf.ComplexObject {
+export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -755,11 +755,11 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceSource
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -776,14 +776,14 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceSource
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._encryptedLogGroupStrategy = undefined;
       this._logGroupSelectionCriteria = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -822,15 +822,15 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceSource
   }
 }
 
-export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration[] | cdktf.IResolvable
+export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -855,42 +855,42 @@ export interface ObservabilityadminCentralizationRuleForOrganizationRuleSource {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/observabilityadmin_centralization_rule_for_organization#source_logs_configuration ObservabilityadminCentralizationRuleForOrganization#source_logs_configuration}
   */
-  readonly sourceLogsConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration[] | cdktf.IResolvable;
+  readonly sourceLogsConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration[] | cdktn.IResolvable;
 }
 
-export function observabilityadminCentralizationRuleForOrganizationRuleSourceToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationRuleSourceToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
-    scope: cdktf.stringToTerraform(struct!.scope),
-    source_logs_configuration: cdktf.listMapper(observabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationToTerraform, true)(struct!.sourceLogsConfiguration),
+    regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.regions),
+    scope: cdktn.stringToTerraform(struct!.scope),
+    source_logs_configuration: cdktn.listMapper(observabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationToTerraform, true)(struct!.sourceLogsConfiguration),
   }
 }
 
 
-export function observabilityadminCentralizationRuleForOrganizationRuleSourceToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationRuleSourceToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.regions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.regions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_logs_configuration: {
-      value: cdktf.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationToHclTerraform, true)(struct!.sourceLogsConfiguration),
+      value: cdktn.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationToHclTerraform, true)(struct!.sourceLogsConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationList",
@@ -901,9 +901,9 @@ export function observabilityadminCentralizationRuleForOrganizationRuleSourceToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceOutputReference extends cdktf.ComplexObject {
+export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -911,11 +911,11 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRuleSource | cdktf.IResolvable | undefined {
+  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRuleSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -936,7 +936,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRuleSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRuleSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -944,7 +944,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceOutput
       this._scope = undefined;
       this._sourceLogsConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -960,7 +960,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceOutput
   // regions - computed: false, optional: false, required: true
   private _regions?: string[]; 
   public get regions() {
-    return cdktf.Fn.tolist(this.getListAttribute('regions'));
+    return cdktn.Fn.tolist(this.getListAttribute('regions'));
   }
   public set regions(value: string[]) {
     this._regions = value;
@@ -988,7 +988,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceOutput
   public get sourceLogsConfiguration() {
     return this._sourceLogsConfiguration;
   }
-  public putSourceLogsConfiguration(value: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration[] | cdktf.IResolvable) {
+  public putSourceLogsConfiguration(value: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration[] | cdktn.IResolvable) {
     this._sourceLogsConfiguration.internalValue = value;
   }
   public resetSourceLogsConfiguration() {
@@ -1000,15 +1000,15 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceOutput
   }
 }
 
-export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceList extends cdktf.ComplexList {
-  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRuleSource[] | cdktf.IResolvable
+export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRuleSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1025,41 +1025,41 @@ export interface ObservabilityadminCentralizationRuleForOrganizationRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/observabilityadmin_centralization_rule_for_organization#destination ObservabilityadminCentralizationRuleForOrganization#destination}
   */
-  readonly destination?: ObservabilityadminCentralizationRuleForOrganizationRuleDestination[] | cdktf.IResolvable;
+  readonly destination?: ObservabilityadminCentralizationRuleForOrganizationRuleDestination[] | cdktn.IResolvable;
   /**
   * source block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/observabilityadmin_centralization_rule_for_organization#source ObservabilityadminCentralizationRuleForOrganization#source}
   */
-  readonly source?: ObservabilityadminCentralizationRuleForOrganizationRuleSource[] | cdktf.IResolvable;
+  readonly source?: ObservabilityadminCentralizationRuleForOrganizationRuleSource[] | cdktn.IResolvable;
 }
 
-export function observabilityadminCentralizationRuleForOrganizationRuleToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationRuleToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.listMapper(observabilityadminCentralizationRuleForOrganizationRuleDestinationToTerraform, true)(struct!.destination),
-    source: cdktf.listMapper(observabilityadminCentralizationRuleForOrganizationRuleSourceToTerraform, true)(struct!.source),
+    destination: cdktn.listMapper(observabilityadminCentralizationRuleForOrganizationRuleDestinationToTerraform, true)(struct!.destination),
+    source: cdktn.listMapper(observabilityadminCentralizationRuleForOrganizationRuleSourceToTerraform, true)(struct!.source),
   }
 }
 
 
-export function observabilityadminCentralizationRuleForOrganizationRuleToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationRuleToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleDestinationToHclTerraform, true)(struct!.destination),
+      value: cdktn.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleDestinationToHclTerraform, true)(struct!.destination),
       isBlock: true,
       type: "list",
       storageClassType: "ObservabilityadminCentralizationRuleForOrganizationRuleDestinationList",
     },
     source: {
-      value: cdktf.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleSourceToHclTerraform, true)(struct!.source),
+      value: cdktn.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleSourceToHclTerraform, true)(struct!.source),
       isBlock: true,
       type: "list",
       storageClassType: "ObservabilityadminCentralizationRuleForOrganizationRuleSourceList",
@@ -1070,9 +1070,9 @@ export function observabilityadminCentralizationRuleForOrganizationRuleToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ObservabilityadminCentralizationRuleForOrganizationRuleOutputReference extends cdktf.ComplexObject {
+export class ObservabilityadminCentralizationRuleForOrganizationRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1080,11 +1080,11 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRule | cdktf.IResolvable | undefined {
+  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1101,14 +1101,14 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._destination.internalValue = undefined;
       this._source.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1125,7 +1125,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleOutputRefere
   public get destination() {
     return this._destination;
   }
-  public putDestination(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestination[] | cdktf.IResolvable) {
+  public putDestination(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestination[] | cdktn.IResolvable) {
     this._destination.internalValue = value;
   }
   public resetDestination() {
@@ -1141,7 +1141,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleOutputRefere
   public get source() {
     return this._source;
   }
-  public putSource(value: ObservabilityadminCentralizationRuleForOrganizationRuleSource[] | cdktf.IResolvable) {
+  public putSource(value: ObservabilityadminCentralizationRuleForOrganizationRuleSource[] | cdktn.IResolvable) {
     this._source.internalValue = value;
   }
   public resetSource() {
@@ -1153,15 +1153,15 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleOutputRefere
   }
 }
 
-export class ObservabilityadminCentralizationRuleForOrganizationRuleList extends cdktf.ComplexList {
-  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRule[] | cdktf.IResolvable
+export class ObservabilityadminCentralizationRuleForOrganizationRuleList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1187,32 +1187,32 @@ export interface ObservabilityadminCentralizationRuleForOrganizationTimeouts {
   readonly update?: string;
 }
 
-export function observabilityadminCentralizationRuleForOrganizationTimeoutsToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationTimeoutsToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function observabilityadminCentralizationRuleForOrganizationTimeoutsToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function observabilityadminCentralizationRuleForOrganizationTimeoutsToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1223,19 +1223,19 @@ export function observabilityadminCentralizationRuleForOrganizationTimeoutsToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ObservabilityadminCentralizationRuleForOrganizationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ObservabilityadminCentralizationRuleForOrganizationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1252,14 +1252,14 @@ export class ObservabilityadminCentralizationRuleForOrganizationTimeoutsOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1307,7 +1307,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationTimeoutsOutputRe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/observabilityadmin_centralization_rule_for_organization aws_observabilityadmin_centralization_rule_for_organization}
 */
-export class ObservabilityadminCentralizationRuleForOrganization extends cdktf.TerraformResource {
+export class ObservabilityadminCentralizationRuleForOrganization extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1318,14 +1318,14 @@ export class ObservabilityadminCentralizationRuleForOrganization extends cdktf.T
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ObservabilityadminCentralizationRuleForOrganization resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ObservabilityadminCentralizationRuleForOrganization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObservabilityadminCentralizationRuleForOrganization to import
   * @param importFromId The id of the existing ObservabilityadminCentralizationRuleForOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/observabilityadmin_centralization_rule_for_organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObservabilityadminCentralizationRuleForOrganization to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_observabilityadmin_centralization_rule_for_organization", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_observabilityadmin_centralization_rule_for_organization", importId: importFromId, provider });
       }
 
   // ===========
@@ -1417,7 +1417,7 @@ export class ObservabilityadminCentralizationRuleForOrganization extends cdktf.T
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1427,7 +1427,7 @@ export class ObservabilityadminCentralizationRuleForOrganization extends cdktf.T
   public get rule() {
     return this._rule;
   }
-  public putRule(value: ObservabilityadminCentralizationRuleForOrganizationRule[] | cdktf.IResolvable) {
+  public putRule(value: ObservabilityadminCentralizationRuleForOrganizationRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -1460,10 +1460,10 @@ export class ObservabilityadminCentralizationRuleForOrganization extends cdktf.T
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      rule_name: cdktf.stringToTerraform(this._ruleName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      rule: cdktf.listMapper(observabilityadminCentralizationRuleForOrganizationRuleToTerraform, true)(this._rule.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      rule_name: cdktn.stringToTerraform(this._ruleName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      rule: cdktn.listMapper(observabilityadminCentralizationRuleForOrganizationRuleToTerraform, true)(this._rule.internalValue),
       timeouts: observabilityadminCentralizationRuleForOrganizationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1471,25 +1471,25 @@ export class ObservabilityadminCentralizationRuleForOrganization extends cdktf.T
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule_name: {
-        value: cdktf.stringToHclTerraform(this._ruleName),
+        value: cdktn.stringToHclTerraform(this._ruleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       rule: {
-        value: cdktf.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleToHclTerraform, true)(this._rule.internalValue),
+        value: cdktn.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleToHclTerraform, true)(this._rule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ObservabilityadminCentralizationRuleForOrganizationRuleList",

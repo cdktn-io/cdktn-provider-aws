@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsElasticacheServerlessCacheConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsElasticacheServerlessCacheConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/elasticache_serverless_cache#name DataAwsElasticacheServerlessCache#name}
   */
@@ -27,8 +27,8 @@ export interface DataAwsElasticacheServerlessCacheCacheUsageLimitsDataStorage {
 }
 
 export function dataAwsElasticacheServerlessCacheCacheUsageLimitsDataStorageToTerraform(struct?: DataAwsElasticacheServerlessCacheCacheUsageLimitsDataStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -37,8 +37,8 @@ export function dataAwsElasticacheServerlessCacheCacheUsageLimitsDataStorageToTe
 
 
 export function dataAwsElasticacheServerlessCacheCacheUsageLimitsDataStorageToHclTerraform(struct?: DataAwsElasticacheServerlessCacheCacheUsageLimitsDataStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -46,14 +46,14 @@ export function dataAwsElasticacheServerlessCacheCacheUsageLimitsDataStorageToHc
   return attrs;
 }
 
-export class DataAwsElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference extends cdktf.ComplexObject {
+export class DataAwsElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -91,8 +91,8 @@ export interface DataAwsElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond 
 }
 
 export function dataAwsElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondToTerraform(struct?: DataAwsElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -101,8 +101,8 @@ export function dataAwsElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondTo
 
 
 export function dataAwsElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondToHclTerraform(struct?: DataAwsElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -110,14 +110,14 @@ export function dataAwsElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondTo
   return attrs;
 }
 
-export class DataAwsElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondOutputReference extends cdktf.ComplexObject {
+export class DataAwsElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -150,8 +150,8 @@ export interface DataAwsElasticacheServerlessCacheCacheUsageLimits {
 }
 
 export function dataAwsElasticacheServerlessCacheCacheUsageLimitsToTerraform(struct?: DataAwsElasticacheServerlessCacheCacheUsageLimits): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -160,8 +160,8 @@ export function dataAwsElasticacheServerlessCacheCacheUsageLimitsToTerraform(str
 
 
 export function dataAwsElasticacheServerlessCacheCacheUsageLimitsToHclTerraform(struct?: DataAwsElasticacheServerlessCacheCacheUsageLimits): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -169,14 +169,14 @@ export function dataAwsElasticacheServerlessCacheCacheUsageLimitsToHclTerraform(
   return attrs;
 }
 
-export class DataAwsElasticacheServerlessCacheCacheUsageLimitsOutputReference extends cdktf.ComplexObject {
+export class DataAwsElasticacheServerlessCacheCacheUsageLimitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -211,8 +211,8 @@ export interface DataAwsElasticacheServerlessCacheEndpoint {
 }
 
 export function dataAwsElasticacheServerlessCacheEndpointToTerraform(struct?: DataAwsElasticacheServerlessCacheEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -221,8 +221,8 @@ export function dataAwsElasticacheServerlessCacheEndpointToTerraform(struct?: Da
 
 
 export function dataAwsElasticacheServerlessCacheEndpointToHclTerraform(struct?: DataAwsElasticacheServerlessCacheEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -230,14 +230,14 @@ export function dataAwsElasticacheServerlessCacheEndpointToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataAwsElasticacheServerlessCacheEndpointOutputReference extends cdktf.ComplexObject {
+export class DataAwsElasticacheServerlessCacheEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -270,8 +270,8 @@ export interface DataAwsElasticacheServerlessCacheReaderEndpoint {
 }
 
 export function dataAwsElasticacheServerlessCacheReaderEndpointToTerraform(struct?: DataAwsElasticacheServerlessCacheReaderEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -280,8 +280,8 @@ export function dataAwsElasticacheServerlessCacheReaderEndpointToTerraform(struc
 
 
 export function dataAwsElasticacheServerlessCacheReaderEndpointToHclTerraform(struct?: DataAwsElasticacheServerlessCacheReaderEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -289,14 +289,14 @@ export function dataAwsElasticacheServerlessCacheReaderEndpointToHclTerraform(st
   return attrs;
 }
 
-export class DataAwsElasticacheServerlessCacheReaderEndpointOutputReference extends cdktf.ComplexObject {
+export class DataAwsElasticacheServerlessCacheReaderEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -329,7 +329,7 @@ export class DataAwsElasticacheServerlessCacheReaderEndpointOutputReference exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/elasticache_serverless_cache aws_elasticache_serverless_cache}
 */
-export class DataAwsElasticacheServerlessCache extends cdktf.TerraformDataSource {
+export class DataAwsElasticacheServerlessCache extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -340,14 +340,14 @@ export class DataAwsElasticacheServerlessCache extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsElasticacheServerlessCache resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsElasticacheServerlessCache resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsElasticacheServerlessCache to import
   * @param importFromId The id of the existing DataAwsElasticacheServerlessCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/elasticache_serverless_cache#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsElasticacheServerlessCache to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticache_serverless_cache", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticache_serverless_cache", importId: importFromId, provider });
       }
 
   // ===========
@@ -503,21 +503,21 @@ export class DataAwsElasticacheServerlessCache extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

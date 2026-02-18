@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MedialiveMultiplexProgramConfig extends cdktf.TerraformMetaArguments {
+export interface MedialiveMultiplexProgramConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_multiplex_program#multiplex_id MedialiveMultiplexProgram#multiplex_id}
   */
@@ -31,7 +31,7 @@ export interface MedialiveMultiplexProgramConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_multiplex_program#multiplex_program_settings MedialiveMultiplexProgram#multiplex_program_settings}
   */
-  readonly multiplexProgramSettings?: MedialiveMultiplexProgramMultiplexProgramSettings[] | cdktf.IResolvable;
+  readonly multiplexProgramSettings?: MedialiveMultiplexProgramMultiplexProgramSettings[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -50,32 +50,32 @@ export interface MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescrip
   readonly serviceName: string;
 }
 
-export function medialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorToTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorToTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    provider_name: cdktf.stringToTerraform(struct!.providerName),
-    service_name: cdktf.stringToTerraform(struct!.serviceName),
+    provider_name: cdktn.stringToTerraform(struct!.providerName),
+    service_name: cdktn.stringToTerraform(struct!.serviceName),
   }
 }
 
 
-export function medialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorToHclTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorToHclTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     provider_name: {
-      value: cdktf.stringToHclTerraform(struct!.providerName),
+      value: cdktn.stringToHclTerraform(struct!.providerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_name: {
-      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      value: cdktn.stringToHclTerraform(struct!.serviceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -86,9 +86,9 @@ export function medialiveMultiplexProgramMultiplexProgramSettingsServiceDescript
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference extends cdktf.ComplexObject {
+export class MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -96,11 +96,11 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor | cdktf.IResolvable | undefined {
+  public get internalValue(): MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -117,14 +117,14 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._providerName = undefined;
       this._serviceName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -163,15 +163,15 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorO
   }
 }
 
-export class MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList extends cdktf.ComplexList {
-  public internalValue? : MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor[] | cdktf.IResolvable
+export class MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList extends cdktn.ComplexList {
+  public internalValue? : MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -197,39 +197,39 @@ export interface MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsS
   readonly priority?: number;
 }
 
-export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsToTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsToTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    maximum_bitrate: cdktf.numberToTerraform(struct!.maximumBitrate),
-    minimum_bitrate: cdktf.numberToTerraform(struct!.minimumBitrate),
-    priority: cdktf.numberToTerraform(struct!.priority),
+    maximum_bitrate: cdktn.numberToTerraform(struct!.maximumBitrate),
+    minimum_bitrate: cdktn.numberToTerraform(struct!.minimumBitrate),
+    priority: cdktn.numberToTerraform(struct!.priority),
   }
 }
 
 
-export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsToHclTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsToHclTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     maximum_bitrate: {
-      value: cdktf.numberToHclTerraform(struct!.maximumBitrate),
+      value: cdktn.numberToHclTerraform(struct!.maximumBitrate),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minimum_bitrate: {
-      value: cdktf.numberToHclTerraform(struct!.minimumBitrate),
+      value: cdktn.numberToHclTerraform(struct!.minimumBitrate),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -240,9 +240,9 @@ export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsSt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference extends cdktf.ComplexObject {
+export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -250,11 +250,11 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatm
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -275,7 +275,7 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatm
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -283,7 +283,7 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatm
       this._minimumBitrate = undefined;
       this._priority = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -345,15 +345,15 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatm
   }
 }
 
-export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList extends cdktf.ComplexList {
-  public internalValue? : MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings[] | cdktf.IResolvable
+export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList extends cdktn.ComplexList {
+  public internalValue? : MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -374,35 +374,35 @@ export interface MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_multiplex_program#statmux_settings MedialiveMultiplexProgram#statmux_settings}
   */
-  readonly statmuxSettings?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings[] | cdktf.IResolvable;
+  readonly statmuxSettings?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings[] | cdktn.IResolvable;
 }
 
-export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsToTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsToTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    constant_bitrate: cdktf.numberToTerraform(struct!.constantBitrate),
-    statmux_settings: cdktf.listMapper(medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsToTerraform, true)(struct!.statmuxSettings),
+    constant_bitrate: cdktn.numberToTerraform(struct!.constantBitrate),
+    statmux_settings: cdktn.listMapper(medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsToTerraform, true)(struct!.statmuxSettings),
   }
 }
 
 
-export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsToHclTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsToHclTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     constant_bitrate: {
-      value: cdktf.numberToHclTerraform(struct!.constantBitrate),
+      value: cdktn.numberToHclTerraform(struct!.constantBitrate),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     statmux_settings: {
-      value: cdktf.listMapperHcl(medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsToHclTerraform, true)(struct!.statmuxSettings),
+      value: cdktn.listMapperHcl(medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsToHclTerraform, true)(struct!.statmuxSettings),
       isBlock: true,
       type: "list",
       storageClassType: "MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList",
@@ -413,9 +413,9 @@ export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference extends cdktf.ComplexObject {
+export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -423,11 +423,11 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -444,14 +444,14 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._constantBitrate = undefined;
       this._statmuxSettings.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -484,7 +484,7 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutpu
   public get statmuxSettings() {
     return this._statmuxSettings;
   }
-  public putStatmuxSettings(value: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings[] | cdktf.IResolvable) {
+  public putStatmuxSettings(value: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings[] | cdktn.IResolvable) {
     this._statmuxSettings.internalValue = value;
   }
   public resetStatmuxSettings() {
@@ -496,15 +496,15 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutpu
   }
 }
 
-export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsList extends cdktf.ComplexList {
-  public internalValue? : MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings[] | cdktf.IResolvable
+export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsList extends cdktn.ComplexList {
+  public internalValue? : MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -529,55 +529,55 @@ export interface MedialiveMultiplexProgramMultiplexProgramSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_multiplex_program#service_descriptor MedialiveMultiplexProgram#service_descriptor}
   */
-  readonly serviceDescriptor?: MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor[] | cdktf.IResolvable;
+  readonly serviceDescriptor?: MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor[] | cdktn.IResolvable;
   /**
   * video_settings block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_multiplex_program#video_settings MedialiveMultiplexProgram#video_settings}
   */
-  readonly videoSettings?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings[] | cdktf.IResolvable;
+  readonly videoSettings?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings[] | cdktn.IResolvable;
 }
 
-export function medialiveMultiplexProgramMultiplexProgramSettingsToTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveMultiplexProgramMultiplexProgramSettingsToTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    preferred_channel_pipeline: cdktf.stringToTerraform(struct!.preferredChannelPipeline),
-    program_number: cdktf.numberToTerraform(struct!.programNumber),
-    service_descriptor: cdktf.listMapper(medialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorToTerraform, true)(struct!.serviceDescriptor),
-    video_settings: cdktf.listMapper(medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsToTerraform, true)(struct!.videoSettings),
+    preferred_channel_pipeline: cdktn.stringToTerraform(struct!.preferredChannelPipeline),
+    program_number: cdktn.numberToTerraform(struct!.programNumber),
+    service_descriptor: cdktn.listMapper(medialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorToTerraform, true)(struct!.serviceDescriptor),
+    video_settings: cdktn.listMapper(medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsToTerraform, true)(struct!.videoSettings),
   }
 }
 
 
-export function medialiveMultiplexProgramMultiplexProgramSettingsToHclTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveMultiplexProgramMultiplexProgramSettingsToHclTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     preferred_channel_pipeline: {
-      value: cdktf.stringToHclTerraform(struct!.preferredChannelPipeline),
+      value: cdktn.stringToHclTerraform(struct!.preferredChannelPipeline),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     program_number: {
-      value: cdktf.numberToHclTerraform(struct!.programNumber),
+      value: cdktn.numberToHclTerraform(struct!.programNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service_descriptor: {
-      value: cdktf.listMapperHcl(medialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorToHclTerraform, true)(struct!.serviceDescriptor),
+      value: cdktn.listMapperHcl(medialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorToHclTerraform, true)(struct!.serviceDescriptor),
       isBlock: true,
       type: "list",
       storageClassType: "MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList",
     },
     video_settings: {
-      value: cdktf.listMapperHcl(medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsToHclTerraform, true)(struct!.videoSettings),
+      value: cdktn.listMapperHcl(medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsToHclTerraform, true)(struct!.videoSettings),
       isBlock: true,
       type: "list",
       storageClassType: "MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsList",
@@ -588,9 +588,9 @@ export function medialiveMultiplexProgramMultiplexProgramSettingsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference extends cdktf.ComplexObject {
+export class MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -598,11 +598,11 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MedialiveMultiplexProgramMultiplexProgramSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): MedialiveMultiplexProgramMultiplexProgramSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -627,7 +627,7 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MedialiveMultiplexProgramMultiplexProgramSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MedialiveMultiplexProgramMultiplexProgramSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -636,7 +636,7 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference ex
       this._serviceDescriptor.internalValue = undefined;
       this._videoSettings.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -681,7 +681,7 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference ex
   public get serviceDescriptor() {
     return this._serviceDescriptor;
   }
-  public putServiceDescriptor(value: MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor[] | cdktf.IResolvable) {
+  public putServiceDescriptor(value: MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor[] | cdktn.IResolvable) {
     this._serviceDescriptor.internalValue = value;
   }
   public resetServiceDescriptor() {
@@ -697,7 +697,7 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference ex
   public get videoSettings() {
     return this._videoSettings;
   }
-  public putVideoSettings(value: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings[] | cdktf.IResolvable) {
+  public putVideoSettings(value: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings[] | cdktn.IResolvable) {
     this._videoSettings.internalValue = value;
   }
   public resetVideoSettings() {
@@ -709,15 +709,15 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference ex
   }
 }
 
-export class MedialiveMultiplexProgramMultiplexProgramSettingsList extends cdktf.ComplexList {
-  public internalValue? : MedialiveMultiplexProgramMultiplexProgramSettings[] | cdktf.IResolvable
+export class MedialiveMultiplexProgramMultiplexProgramSettingsList extends cdktn.ComplexList {
+  public internalValue? : MedialiveMultiplexProgramMultiplexProgramSettings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -737,25 +737,25 @@ export interface MedialiveMultiplexProgramTimeouts {
   readonly create?: string;
 }
 
-export function medialiveMultiplexProgramTimeoutsToTerraform(struct?: MedialiveMultiplexProgramTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveMultiplexProgramTimeoutsToTerraform(struct?: MedialiveMultiplexProgramTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function medialiveMultiplexProgramTimeoutsToHclTerraform(struct?: MedialiveMultiplexProgramTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveMultiplexProgramTimeoutsToHclTerraform(struct?: MedialiveMultiplexProgramTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -766,19 +766,19 @@ export function medialiveMultiplexProgramTimeoutsToHclTerraform(struct?: Mediali
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MedialiveMultiplexProgramTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MedialiveMultiplexProgramTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MedialiveMultiplexProgramTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MedialiveMultiplexProgramTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -791,13 +791,13 @@ export class MedialiveMultiplexProgramTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MedialiveMultiplexProgramTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MedialiveMultiplexProgramTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -828,7 +828,7 @@ export class MedialiveMultiplexProgramTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program}
 */
-export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
+export class MedialiveMultiplexProgram extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -839,14 +839,14 @@ export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MedialiveMultiplexProgram resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MedialiveMultiplexProgram resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MedialiveMultiplexProgram to import
   * @param importFromId The id of the existing MedialiveMultiplexProgram that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_multiplex_program#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MedialiveMultiplexProgram to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_medialive_multiplex_program", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_medialive_multiplex_program", importId: importFromId, provider });
       }
 
   // ===========
@@ -939,7 +939,7 @@ export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
   public get multiplexProgramSettings() {
     return this._multiplexProgramSettings;
   }
-  public putMultiplexProgramSettings(value: MedialiveMultiplexProgramMultiplexProgramSettings[] | cdktf.IResolvable) {
+  public putMultiplexProgramSettings(value: MedialiveMultiplexProgramMultiplexProgramSettings[] | cdktn.IResolvable) {
     this._multiplexProgramSettings.internalValue = value;
   }
   public resetMultiplexProgramSettings() {
@@ -972,10 +972,10 @@ export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      multiplex_id: cdktf.stringToTerraform(this._multiplexId),
-      program_name: cdktf.stringToTerraform(this._programName),
-      region: cdktf.stringToTerraform(this._region),
-      multiplex_program_settings: cdktf.listMapper(medialiveMultiplexProgramMultiplexProgramSettingsToTerraform, true)(this._multiplexProgramSettings.internalValue),
+      multiplex_id: cdktn.stringToTerraform(this._multiplexId),
+      program_name: cdktn.stringToTerraform(this._programName),
+      region: cdktn.stringToTerraform(this._region),
+      multiplex_program_settings: cdktn.listMapper(medialiveMultiplexProgramMultiplexProgramSettingsToTerraform, true)(this._multiplexProgramSettings.internalValue),
       timeouts: medialiveMultiplexProgramTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -983,25 +983,25 @@ export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       multiplex_id: {
-        value: cdktf.stringToHclTerraform(this._multiplexId),
+        value: cdktn.stringToHclTerraform(this._multiplexId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       program_name: {
-        value: cdktf.stringToHclTerraform(this._programName),
+        value: cdktn.stringToHclTerraform(this._programName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multiplex_program_settings: {
-        value: cdktf.listMapperHcl(medialiveMultiplexProgramMultiplexProgramSettingsToHclTerraform, true)(this._multiplexProgramSettings.internalValue),
+        value: cdktn.listMapperHcl(medialiveMultiplexProgramMultiplexProgramSettingsToHclTerraform, true)(this._multiplexProgramSettings.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "MedialiveMultiplexProgramMultiplexProgramSettingsList",

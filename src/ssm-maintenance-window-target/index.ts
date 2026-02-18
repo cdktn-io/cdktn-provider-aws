@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsmMaintenanceWindowTargetConfig extends cdktf.TerraformMetaArguments {
+export interface SsmMaintenanceWindowTargetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window_target#description SsmMaintenanceWindowTarget#description}
   */
@@ -50,7 +50,7 @@ export interface SsmMaintenanceWindowTargetConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window_target#targets SsmMaintenanceWindowTarget#targets}
   */
-  readonly targets: SsmMaintenanceWindowTargetTargets[] | cdktf.IResolvable;
+  readonly targets: SsmMaintenanceWindowTargetTargets[] | cdktn.IResolvable;
 }
 export interface SsmMaintenanceWindowTargetTargets {
   /**
@@ -63,32 +63,32 @@ export interface SsmMaintenanceWindowTargetTargets {
   readonly values: string[];
 }
 
-export function ssmMaintenanceWindowTargetTargetsToTerraform(struct?: SsmMaintenanceWindowTargetTargets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmMaintenanceWindowTargetTargetsToTerraform(struct?: SsmMaintenanceWindowTargetTargets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function ssmMaintenanceWindowTargetTargetsToHclTerraform(struct?: SsmMaintenanceWindowTargetTargets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmMaintenanceWindowTargetTargetsToHclTerraform(struct?: SsmMaintenanceWindowTargetTargets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -99,9 +99,9 @@ export function ssmMaintenanceWindowTargetTargetsToHclTerraform(struct?: SsmMain
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmMaintenanceWindowTargetTargetsOutputReference extends cdktf.ComplexObject {
+export class SsmMaintenanceWindowTargetTargetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -109,11 +109,11 @@ export class SsmMaintenanceWindowTargetTargetsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmMaintenanceWindowTargetTargets | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmMaintenanceWindowTargetTargets | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -130,14 +130,14 @@ export class SsmMaintenanceWindowTargetTargetsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmMaintenanceWindowTargetTargets | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmMaintenanceWindowTargetTargets | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -176,15 +176,15 @@ export class SsmMaintenanceWindowTargetTargetsOutputReference extends cdktf.Comp
   }
 }
 
-export class SsmMaintenanceWindowTargetTargetsList extends cdktf.ComplexList {
-  public internalValue? : SsmMaintenanceWindowTargetTargets[] | cdktf.IResolvable
+export class SsmMaintenanceWindowTargetTargetsList extends cdktn.ComplexList {
+  public internalValue? : SsmMaintenanceWindowTargetTargets[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -199,7 +199,7 @@ export class SsmMaintenanceWindowTargetTargetsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window_target aws_ssm_maintenance_window_target}
 */
-export class SsmMaintenanceWindowTarget extends cdktf.TerraformResource {
+export class SsmMaintenanceWindowTarget extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -210,14 +210,14 @@ export class SsmMaintenanceWindowTarget extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsmMaintenanceWindowTarget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsmMaintenanceWindowTarget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmMaintenanceWindowTarget to import
   * @param importFromId The id of the existing SsmMaintenanceWindowTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmMaintenanceWindowTarget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_maintenance_window_target", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_maintenance_window_target", importId: importFromId, provider });
       }
 
   // ===========
@@ -372,7 +372,7 @@ export class SsmMaintenanceWindowTarget extends cdktf.TerraformResource {
   public get targets() {
     return this._targets;
   }
-  public putTargets(value: SsmMaintenanceWindowTargetTargets[] | cdktf.IResolvable) {
+  public putTargets(value: SsmMaintenanceWindowTargetTargets[] | cdktn.IResolvable) {
     this._targets.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -386,63 +386,63 @@ export class SsmMaintenanceWindowTarget extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      owner_information: cdktf.stringToTerraform(this._ownerInformation),
-      region: cdktf.stringToTerraform(this._region),
-      resource_type: cdktf.stringToTerraform(this._resourceType),
-      window_id: cdktf.stringToTerraform(this._windowId),
-      targets: cdktf.listMapper(ssmMaintenanceWindowTargetTargetsToTerraform, true)(this._targets.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      owner_information: cdktn.stringToTerraform(this._ownerInformation),
+      region: cdktn.stringToTerraform(this._region),
+      resource_type: cdktn.stringToTerraform(this._resourceType),
+      window_id: cdktn.stringToTerraform(this._windowId),
+      targets: cdktn.listMapper(ssmMaintenanceWindowTargetTargetsToTerraform, true)(this._targets.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner_information: {
-        value: cdktf.stringToHclTerraform(this._ownerInformation),
+        value: cdktn.stringToHclTerraform(this._ownerInformation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_type: {
-        value: cdktf.stringToHclTerraform(this._resourceType),
+        value: cdktn.stringToHclTerraform(this._resourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       window_id: {
-        value: cdktf.stringToHclTerraform(this._windowId),
+        value: cdktn.stringToHclTerraform(this._windowId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       targets: {
-        value: cdktf.listMapperHcl(ssmMaintenanceWindowTargetTargetsToHclTerraform, true)(this._targets.internalValue),
+        value: cdktn.listMapperHcl(ssmMaintenanceWindowTargetTargetsToHclTerraform, true)(this._targets.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SsmMaintenanceWindowTargetTargetsList",

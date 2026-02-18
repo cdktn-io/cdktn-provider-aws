@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsEcsContainerDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEcsContainerDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_container_definition#container_name DataAwsEcsContainerDefinition#container_name}
   */
@@ -38,7 +38,7 @@ export interface DataAwsEcsContainerDefinitionConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_container_definition aws_ecs_container_definition}
 */
-export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
+export class DataAwsEcsContainerDefinition extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsEcsContainerDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsEcsContainerDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEcsContainerDefinition to import
   * @param importFromId The id of the existing DataAwsEcsContainerDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_container_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEcsContainerDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecs_container_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecs_container_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -120,13 +120,13 @@ export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
   }
 
   // docker_labels - computed: true, optional: false, required: false
-  private _dockerLabels = new cdktf.StringMap(this, "docker_labels");
+  private _dockerLabels = new cdktn.StringMap(this, "docker_labels");
   public get dockerLabels() {
     return this._dockerLabels;
   }
 
   // environment - computed: true, optional: false, required: false
-  private _environment = new cdktf.StringMap(this, "environment");
+  private _environment = new cdktn.StringMap(this, "environment");
   public get environment() {
     return this._environment;
   }
@@ -202,35 +202,35 @@ export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      container_name: cdktf.stringToTerraform(this._containerName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      task_definition: cdktf.stringToTerraform(this._taskDefinition),
+      container_name: cdktn.stringToTerraform(this._containerName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      task_definition: cdktn.stringToTerraform(this._taskDefinition),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       container_name: {
-        value: cdktf.stringToHclTerraform(this._containerName),
+        value: cdktn.stringToHclTerraform(this._containerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       task_definition: {
-        value: cdktf.stringToHclTerraform(this._taskDefinition),
+        value: cdktn.stringToHclTerraform(this._taskDefinition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

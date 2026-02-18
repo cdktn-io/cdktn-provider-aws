@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration#name ChimesdkmediapipelinesMediaInsightsPipelineConfiguration#name}
   */
@@ -39,7 +39,7 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationConfig 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration#elements ChimesdkmediapipelinesMediaInsightsPipelineConfiguration#elements}
   */
-  readonly elements: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements[] | cdktf.IResolvable;
+  readonly elements: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements[] | cdktn.IResolvable;
   /**
   * real_time_alert_configuration block
   *
@@ -73,45 +73,45 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElement
 }
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettingsToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettingsOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content_redaction_output: cdktf.stringToTerraform(struct!.contentRedactionOutput),
-    data_access_role_arn: cdktf.stringToTerraform(struct!.dataAccessRoleArn),
-    output_encryption_kms_key_id: cdktf.stringToTerraform(struct!.outputEncryptionKmsKeyId),
-    output_location: cdktf.stringToTerraform(struct!.outputLocation),
+    content_redaction_output: cdktn.stringToTerraform(struct!.contentRedactionOutput),
+    data_access_role_arn: cdktn.stringToTerraform(struct!.dataAccessRoleArn),
+    output_encryption_kms_key_id: cdktn.stringToTerraform(struct!.outputEncryptionKmsKeyId),
+    output_location: cdktn.stringToTerraform(struct!.outputLocation),
   }
 }
 
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettingsToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettingsOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content_redaction_output: {
-      value: cdktf.stringToHclTerraform(struct!.contentRedactionOutput),
+      value: cdktn.stringToHclTerraform(struct!.contentRedactionOutput),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_access_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.dataAccessRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.dataAccessRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     output_encryption_kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.outputEncryptionKmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.outputEncryptionKmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     output_location: {
-      value: cdktf.stringToHclTerraform(struct!.outputLocation),
+      value: cdktn.stringToHclTerraform(struct!.outputLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -122,14 +122,14 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElements
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettingsOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -246,11 +246,11 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElement
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration#enable_partial_results_stabilization ChimesdkmediapipelinesMediaInsightsPipelineConfiguration#enable_partial_results_stabilization}
   */
-  readonly enablePartialResultsStabilization?: boolean | cdktf.IResolvable;
+  readonly enablePartialResultsStabilization?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration#filter_partial_results ChimesdkmediapipelinesMediaInsightsPipelineConfiguration#filter_partial_results}
   */
-  readonly filterPartialResults?: boolean | cdktf.IResolvable;
+  readonly filterPartialResults?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration#language_code ChimesdkmediapipelinesMediaInsightsPipelineConfiguration#language_code}
   */
@@ -288,102 +288,102 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElement
 }
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    call_analytics_stream_categories: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.callAnalyticsStreamCategories),
-    content_identification_type: cdktf.stringToTerraform(struct!.contentIdentificationType),
-    content_redaction_type: cdktf.stringToTerraform(struct!.contentRedactionType),
-    enable_partial_results_stabilization: cdktf.booleanToTerraform(struct!.enablePartialResultsStabilization),
-    filter_partial_results: cdktf.booleanToTerraform(struct!.filterPartialResults),
-    language_code: cdktf.stringToTerraform(struct!.languageCode),
-    language_model_name: cdktf.stringToTerraform(struct!.languageModelName),
-    partial_results_stability: cdktf.stringToTerraform(struct!.partialResultsStability),
-    pii_entity_types: cdktf.stringToTerraform(struct!.piiEntityTypes),
-    vocabulary_filter_method: cdktf.stringToTerraform(struct!.vocabularyFilterMethod),
-    vocabulary_filter_name: cdktf.stringToTerraform(struct!.vocabularyFilterName),
-    vocabulary_name: cdktf.stringToTerraform(struct!.vocabularyName),
+    call_analytics_stream_categories: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.callAnalyticsStreamCategories),
+    content_identification_type: cdktn.stringToTerraform(struct!.contentIdentificationType),
+    content_redaction_type: cdktn.stringToTerraform(struct!.contentRedactionType),
+    enable_partial_results_stabilization: cdktn.booleanToTerraform(struct!.enablePartialResultsStabilization),
+    filter_partial_results: cdktn.booleanToTerraform(struct!.filterPartialResults),
+    language_code: cdktn.stringToTerraform(struct!.languageCode),
+    language_model_name: cdktn.stringToTerraform(struct!.languageModelName),
+    partial_results_stability: cdktn.stringToTerraform(struct!.partialResultsStability),
+    pii_entity_types: cdktn.stringToTerraform(struct!.piiEntityTypes),
+    vocabulary_filter_method: cdktn.stringToTerraform(struct!.vocabularyFilterMethod),
+    vocabulary_filter_name: cdktn.stringToTerraform(struct!.vocabularyFilterName),
+    vocabulary_name: cdktn.stringToTerraform(struct!.vocabularyName),
     post_call_analytics_settings: chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettingsToTerraform(struct!.postCallAnalyticsSettings),
   }
 }
 
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     call_analytics_stream_categories: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.callAnalyticsStreamCategories),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.callAnalyticsStreamCategories),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     content_identification_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentIdentificationType),
+      value: cdktn.stringToHclTerraform(struct!.contentIdentificationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     content_redaction_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentRedactionType),
+      value: cdktn.stringToHclTerraform(struct!.contentRedactionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_partial_results_stabilization: {
-      value: cdktf.booleanToHclTerraform(struct!.enablePartialResultsStabilization),
+      value: cdktn.booleanToHclTerraform(struct!.enablePartialResultsStabilization),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     filter_partial_results: {
-      value: cdktf.booleanToHclTerraform(struct!.filterPartialResults),
+      value: cdktn.booleanToHclTerraform(struct!.filterPartialResults),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     language_code: {
-      value: cdktf.stringToHclTerraform(struct!.languageCode),
+      value: cdktn.stringToHclTerraform(struct!.languageCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     language_model_name: {
-      value: cdktf.stringToHclTerraform(struct!.languageModelName),
+      value: cdktn.stringToHclTerraform(struct!.languageModelName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     partial_results_stability: {
-      value: cdktf.stringToHclTerraform(struct!.partialResultsStability),
+      value: cdktn.stringToHclTerraform(struct!.partialResultsStability),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pii_entity_types: {
-      value: cdktf.stringToHclTerraform(struct!.piiEntityTypes),
+      value: cdktn.stringToHclTerraform(struct!.piiEntityTypes),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vocabulary_filter_method: {
-      value: cdktf.stringToHclTerraform(struct!.vocabularyFilterMethod),
+      value: cdktn.stringToHclTerraform(struct!.vocabularyFilterMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vocabulary_filter_name: {
-      value: cdktf.stringToHclTerraform(struct!.vocabularyFilterName),
+      value: cdktn.stringToHclTerraform(struct!.vocabularyFilterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vocabulary_name: {
-      value: cdktf.stringToHclTerraform(struct!.vocabularyName),
+      value: cdktn.stringToHclTerraform(struct!.vocabularyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -400,14 +400,14 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElements
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -553,11 +553,11 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAma
   }
 
   // enable_partial_results_stabilization - computed: false, optional: true, required: false
-  private _enablePartialResultsStabilization?: boolean | cdktf.IResolvable; 
+  private _enablePartialResultsStabilization?: boolean | cdktn.IResolvable; 
   public get enablePartialResultsStabilization() {
     return this.getBooleanAttribute('enable_partial_results_stabilization');
   }
-  public set enablePartialResultsStabilization(value: boolean | cdktf.IResolvable) {
+  public set enablePartialResultsStabilization(value: boolean | cdktn.IResolvable) {
     this._enablePartialResultsStabilization = value;
   }
   public resetEnablePartialResultsStabilization() {
@@ -569,11 +569,11 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAma
   }
 
   // filter_partial_results - computed: false, optional: true, required: false
-  private _filterPartialResults?: boolean | cdktf.IResolvable; 
+  private _filterPartialResults?: boolean | cdktn.IResolvable; 
   public get filterPartialResults() {
     return this.getBooleanAttribute('filter_partial_results');
   }
-  public set filterPartialResults(value: boolean | cdktf.IResolvable) {
+  public set filterPartialResults(value: boolean | cdktn.IResolvable) {
     this._filterPartialResults = value;
   }
   public resetFilterPartialResults() {
@@ -721,11 +721,11 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElement
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration#enable_partial_results_stabilization ChimesdkmediapipelinesMediaInsightsPipelineConfiguration#enable_partial_results_stabilization}
   */
-  readonly enablePartialResultsStabilization?: boolean | cdktf.IResolvable;
+  readonly enablePartialResultsStabilization?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration#filter_partial_results ChimesdkmediapipelinesMediaInsightsPipelineConfiguration#filter_partial_results}
   */
-  readonly filterPartialResults?: boolean | cdktf.IResolvable;
+  readonly filterPartialResults?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration#language_code ChimesdkmediapipelinesMediaInsightsPipelineConfiguration#language_code}
   */
@@ -745,7 +745,7 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElement
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration#show_speaker_label ChimesdkmediapipelinesMediaInsightsPipelineConfiguration#show_speaker_label}
   */
-  readonly showSpeakerLabel?: boolean | cdktf.IResolvable;
+  readonly showSpeakerLabel?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration#vocabulary_filter_method ChimesdkmediapipelinesMediaInsightsPipelineConfiguration#vocabulary_filter_method}
   */
@@ -761,101 +761,101 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElement
 }
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfigurationToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content_identification_type: cdktf.stringToTerraform(struct!.contentIdentificationType),
-    content_redaction_type: cdktf.stringToTerraform(struct!.contentRedactionType),
-    enable_partial_results_stabilization: cdktf.booleanToTerraform(struct!.enablePartialResultsStabilization),
-    filter_partial_results: cdktf.booleanToTerraform(struct!.filterPartialResults),
-    language_code: cdktf.stringToTerraform(struct!.languageCode),
-    language_model_name: cdktf.stringToTerraform(struct!.languageModelName),
-    partial_results_stability: cdktf.stringToTerraform(struct!.partialResultsStability),
-    pii_entity_types: cdktf.stringToTerraform(struct!.piiEntityTypes),
-    show_speaker_label: cdktf.booleanToTerraform(struct!.showSpeakerLabel),
-    vocabulary_filter_method: cdktf.stringToTerraform(struct!.vocabularyFilterMethod),
-    vocabulary_filter_name: cdktf.stringToTerraform(struct!.vocabularyFilterName),
-    vocabulary_name: cdktf.stringToTerraform(struct!.vocabularyName),
+    content_identification_type: cdktn.stringToTerraform(struct!.contentIdentificationType),
+    content_redaction_type: cdktn.stringToTerraform(struct!.contentRedactionType),
+    enable_partial_results_stabilization: cdktn.booleanToTerraform(struct!.enablePartialResultsStabilization),
+    filter_partial_results: cdktn.booleanToTerraform(struct!.filterPartialResults),
+    language_code: cdktn.stringToTerraform(struct!.languageCode),
+    language_model_name: cdktn.stringToTerraform(struct!.languageModelName),
+    partial_results_stability: cdktn.stringToTerraform(struct!.partialResultsStability),
+    pii_entity_types: cdktn.stringToTerraform(struct!.piiEntityTypes),
+    show_speaker_label: cdktn.booleanToTerraform(struct!.showSpeakerLabel),
+    vocabulary_filter_method: cdktn.stringToTerraform(struct!.vocabularyFilterMethod),
+    vocabulary_filter_name: cdktn.stringToTerraform(struct!.vocabularyFilterName),
+    vocabulary_name: cdktn.stringToTerraform(struct!.vocabularyName),
   }
 }
 
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfigurationToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content_identification_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentIdentificationType),
+      value: cdktn.stringToHclTerraform(struct!.contentIdentificationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     content_redaction_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentRedactionType),
+      value: cdktn.stringToHclTerraform(struct!.contentRedactionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_partial_results_stabilization: {
-      value: cdktf.booleanToHclTerraform(struct!.enablePartialResultsStabilization),
+      value: cdktn.booleanToHclTerraform(struct!.enablePartialResultsStabilization),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     filter_partial_results: {
-      value: cdktf.booleanToHclTerraform(struct!.filterPartialResults),
+      value: cdktn.booleanToHclTerraform(struct!.filterPartialResults),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     language_code: {
-      value: cdktf.stringToHclTerraform(struct!.languageCode),
+      value: cdktn.stringToHclTerraform(struct!.languageCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     language_model_name: {
-      value: cdktf.stringToHclTerraform(struct!.languageModelName),
+      value: cdktn.stringToHclTerraform(struct!.languageModelName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     partial_results_stability: {
-      value: cdktf.stringToHclTerraform(struct!.partialResultsStability),
+      value: cdktn.stringToHclTerraform(struct!.partialResultsStability),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pii_entity_types: {
-      value: cdktf.stringToHclTerraform(struct!.piiEntityTypes),
+      value: cdktn.stringToHclTerraform(struct!.piiEntityTypes),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     show_speaker_label: {
-      value: cdktf.booleanToHclTerraform(struct!.showSpeakerLabel),
+      value: cdktn.booleanToHclTerraform(struct!.showSpeakerLabel),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     vocabulary_filter_method: {
-      value: cdktf.stringToHclTerraform(struct!.vocabularyFilterMethod),
+      value: cdktn.stringToHclTerraform(struct!.vocabularyFilterMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vocabulary_filter_name: {
-      value: cdktf.stringToHclTerraform(struct!.vocabularyFilterName),
+      value: cdktn.stringToHclTerraform(struct!.vocabularyFilterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vocabulary_name: {
-      value: cdktf.stringToHclTerraform(struct!.vocabularyName),
+      value: cdktn.stringToHclTerraform(struct!.vocabularyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -866,14 +866,14 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElements
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfigurationOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -997,11 +997,11 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAma
   }
 
   // enable_partial_results_stabilization - computed: false, optional: true, required: false
-  private _enablePartialResultsStabilization?: boolean | cdktf.IResolvable; 
+  private _enablePartialResultsStabilization?: boolean | cdktn.IResolvable; 
   public get enablePartialResultsStabilization() {
     return this.getBooleanAttribute('enable_partial_results_stabilization');
   }
-  public set enablePartialResultsStabilization(value: boolean | cdktf.IResolvable) {
+  public set enablePartialResultsStabilization(value: boolean | cdktn.IResolvable) {
     this._enablePartialResultsStabilization = value;
   }
   public resetEnablePartialResultsStabilization() {
@@ -1013,11 +1013,11 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAma
   }
 
   // filter_partial_results - computed: false, optional: true, required: false
-  private _filterPartialResults?: boolean | cdktf.IResolvable; 
+  private _filterPartialResults?: boolean | cdktn.IResolvable; 
   public get filterPartialResults() {
     return this.getBooleanAttribute('filter_partial_results');
   }
-  public set filterPartialResults(value: boolean | cdktf.IResolvable) {
+  public set filterPartialResults(value: boolean | cdktn.IResolvable) {
     this._filterPartialResults = value;
   }
   public resetFilterPartialResults() {
@@ -1090,11 +1090,11 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAma
   }
 
   // show_speaker_label - computed: false, optional: true, required: false
-  private _showSpeakerLabel?: boolean | cdktf.IResolvable; 
+  private _showSpeakerLabel?: boolean | cdktn.IResolvable; 
   public get showSpeakerLabel() {
     return this.getBooleanAttribute('show_speaker_label');
   }
-  public set showSpeakerLabel(value: boolean | cdktf.IResolvable) {
+  public set showSpeakerLabel(value: boolean | cdktn.IResolvable) {
     this._showSpeakerLabel = value;
   }
   public resetShowSpeakerLabel() {
@@ -1161,24 +1161,24 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElement
 }
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfigurationToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    insights_target: cdktf.stringToTerraform(struct!.insightsTarget),
+    insights_target: cdktn.stringToTerraform(struct!.insightsTarget),
   }
 }
 
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfigurationToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     insights_target: {
-      value: cdktf.stringToHclTerraform(struct!.insightsTarget),
+      value: cdktn.stringToHclTerraform(struct!.insightsTarget),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1189,14 +1189,14 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElements
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfigurationOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1242,24 +1242,24 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElement
 }
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsLambdaFunctionSinkConfigurationToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsLambdaFunctionSinkConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsLambdaFunctionSinkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    insights_target: cdktf.stringToTerraform(struct!.insightsTarget),
+    insights_target: cdktn.stringToTerraform(struct!.insightsTarget),
   }
 }
 
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsLambdaFunctionSinkConfigurationToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsLambdaFunctionSinkConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsLambdaFunctionSinkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     insights_target: {
-      value: cdktf.stringToHclTerraform(struct!.insightsTarget),
+      value: cdktn.stringToHclTerraform(struct!.insightsTarget),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1270,14 +1270,14 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElements
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsLambdaFunctionSinkConfigurationOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsLambdaFunctionSinkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1323,24 +1323,24 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElement
 }
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsS3RecordingSinkConfigurationToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsS3RecordingSinkConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsS3RecordingSinkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsS3RecordingSinkConfigurationToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsS3RecordingSinkConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsS3RecordingSinkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1351,14 +1351,14 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElements
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsS3RecordingSinkConfigurationOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsS3RecordingSinkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1407,24 +1407,24 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElement
 }
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSnsTopicSinkConfigurationToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSnsTopicSinkConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSnsTopicSinkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    insights_target: cdktf.stringToTerraform(struct!.insightsTarget),
+    insights_target: cdktn.stringToTerraform(struct!.insightsTarget),
   }
 }
 
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSnsTopicSinkConfigurationToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSnsTopicSinkConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSnsTopicSinkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     insights_target: {
-      value: cdktf.stringToHclTerraform(struct!.insightsTarget),
+      value: cdktn.stringToHclTerraform(struct!.insightsTarget),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1435,14 +1435,14 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElements
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSnsTopicSinkConfigurationOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSnsTopicSinkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1488,24 +1488,24 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElement
 }
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSqsQueueSinkConfigurationToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSqsQueueSinkConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSqsQueueSinkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    insights_target: cdktf.stringToTerraform(struct!.insightsTarget),
+    insights_target: cdktn.stringToTerraform(struct!.insightsTarget),
   }
 }
 
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSqsQueueSinkConfigurationToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSqsQueueSinkConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSqsQueueSinkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     insights_target: {
-      value: cdktf.stringToHclTerraform(struct!.insightsTarget),
+      value: cdktn.stringToHclTerraform(struct!.insightsTarget),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1516,14 +1516,14 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElements
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSqsQueueSinkConfigurationOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSqsQueueSinkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1573,31 +1573,31 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElement
 }
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfigurationToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    speaker_search_status: cdktf.stringToTerraform(struct!.speakerSearchStatus),
-    voice_tone_analysis_status: cdktf.stringToTerraform(struct!.voiceToneAnalysisStatus),
+    speaker_search_status: cdktn.stringToTerraform(struct!.speakerSearchStatus),
+    voice_tone_analysis_status: cdktn.stringToTerraform(struct!.voiceToneAnalysisStatus),
   }
 }
 
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfigurationToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     speaker_search_status: {
-      value: cdktf.stringToHclTerraform(struct!.speakerSearchStatus),
+      value: cdktn.stringToHclTerraform(struct!.speakerSearchStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     voice_tone_analysis_status: {
-      value: cdktf.stringToHclTerraform(struct!.voiceToneAnalysisStatus),
+      value: cdktn.stringToHclTerraform(struct!.voiceToneAnalysisStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1608,14 +1608,14 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElements
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfigurationOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1727,13 +1727,13 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElement
   readonly voiceAnalyticsProcessorConfiguration?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfiguration;
 }
 
-export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
     amazon_transcribe_call_analytics_processor_configuration: chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationToTerraform(struct!.amazonTranscribeCallAnalyticsProcessorConfiguration),
     amazon_transcribe_processor_configuration: chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfigurationToTerraform(struct!.amazonTranscribeProcessorConfiguration),
     kinesis_data_stream_sink_configuration: chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfigurationToTerraform(struct!.kinesisDataStreamSinkConfiguration),
@@ -1746,14 +1746,14 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElements
 }
 
 
-export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1812,9 +1812,9 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationElements
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1822,11 +1822,11 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements | cdktf.IResolvable | undefined {
+  public get internalValue(): ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1871,7 +1871,7 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1885,7 +1885,7 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsOut
       this._sqsQueueSinkConfiguration.internalValue = undefined;
       this._voiceAnalyticsProcessorConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2046,15 +2046,15 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsOut
   }
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsList extends cdktf.ComplexList {
-  public internalValue? : ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements[] | cdktf.IResolvable
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsList extends cdktn.ComplexList {
+  public internalValue? : ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2073,24 +2073,24 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTim
 }
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfigurationToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rule_name: cdktf.stringToTerraform(struct!.ruleName),
+    rule_name: cdktn.stringToTerraform(struct!.ruleName),
   }
 }
 
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfigurationToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rule_name: {
-      value: cdktf.stringToHclTerraform(struct!.ruleName),
+      value: cdktn.stringToHclTerraform(struct!.ruleName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2101,14 +2101,14 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfigurationOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2154,7 +2154,7 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTim
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration#negate ChimesdkmediapipelinesMediaInsightsPipelineConfiguration#negate}
   */
-  readonly negate?: boolean | cdktf.IResolvable;
+  readonly negate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration#rule_name ChimesdkmediapipelinesMediaInsightsPipelineConfiguration#rule_name}
   */
@@ -2162,38 +2162,38 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTim
 }
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfigurationToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    keywords: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keywords),
-    negate: cdktf.booleanToTerraform(struct!.negate),
-    rule_name: cdktf.stringToTerraform(struct!.ruleName),
+    keywords: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.keywords),
+    negate: cdktn.booleanToTerraform(struct!.negate),
+    rule_name: cdktn.stringToTerraform(struct!.ruleName),
   }
 }
 
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfigurationToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     keywords: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.keywords),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.keywords),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     negate: {
-      value: cdktf.booleanToHclTerraform(struct!.negate),
+      value: cdktn.booleanToHclTerraform(struct!.negate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     rule_name: {
-      value: cdktf.stringToHclTerraform(struct!.ruleName),
+      value: cdktn.stringToHclTerraform(struct!.ruleName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2204,14 +2204,14 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfigurationOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2262,11 +2262,11 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAle
   }
 
   // negate - computed: true, optional: true, required: false
-  private _negate?: boolean | cdktf.IResolvable; 
+  private _negate?: boolean | cdktn.IResolvable; 
   public get negate() {
     return this.getBooleanAttribute('negate');
   }
-  public set negate(value: boolean | cdktf.IResolvable) {
+  public set negate(value: boolean | cdktn.IResolvable) {
     this._negate = value;
   }
   public resetNegate() {
@@ -2306,38 +2306,38 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTim
 }
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfigurationToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rule_name: cdktf.stringToTerraform(struct!.ruleName),
-    sentiment_type: cdktf.stringToTerraform(struct!.sentimentType),
-    time_period: cdktf.numberToTerraform(struct!.timePeriod),
+    rule_name: cdktn.stringToTerraform(struct!.ruleName),
+    sentiment_type: cdktn.stringToTerraform(struct!.sentimentType),
+    time_period: cdktn.numberToTerraform(struct!.timePeriod),
   }
 }
 
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfigurationToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rule_name: {
-      value: cdktf.stringToHclTerraform(struct!.ruleName),
+      value: cdktn.stringToHclTerraform(struct!.ruleName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sentiment_type: {
-      value: cdktf.stringToHclTerraform(struct!.sentimentType),
+      value: cdktn.stringToHclTerraform(struct!.sentimentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_period: {
-      value: cdktf.numberToHclTerraform(struct!.timePeriod),
+      value: cdktn.numberToHclTerraform(struct!.timePeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2348,14 +2348,14 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfigurationOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2456,13 +2456,13 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTim
   readonly sentimentConfiguration?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfiguration;
 }
 
-export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
     issue_detection_configuration: chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfigurationToTerraform(struct!.issueDetectionConfiguration),
     keyword_match_configuration: chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfigurationToTerraform(struct!.keywordMatchConfiguration),
     sentiment_configuration: chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfigurationToTerraform(struct!.sentimentConfiguration),
@@ -2470,14 +2470,14 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTime
 }
 
 
-export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2506,9 +2506,9 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2516,11 +2516,11 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAle
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules | cdktf.IResolvable | undefined {
+  public get internalValue(): ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2545,7 +2545,7 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAle
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2554,7 +2554,7 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAle
       this._keywordMatchConfiguration.internalValue = undefined;
       this._sentimentConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2630,15 +2630,15 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAle
   }
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesList extends cdktf.ComplexList {
-  public internalValue? : ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules[] | cdktf.IResolvable
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesList extends cdktn.ComplexList {
+  public internalValue? : ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2653,41 +2653,41 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTim
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration#disabled ChimesdkmediapipelinesMediaInsightsPipelineConfiguration#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * rules block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration#rules ChimesdkmediapipelinesMediaInsightsPipelineConfiguration#rules}
   */
-  readonly rules: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules[] | cdktf.IResolvable;
+  readonly rules: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules[] | cdktn.IResolvable;
 }
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disabled: cdktf.booleanToTerraform(struct!.disabled),
-    rules: cdktf.listMapper(chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesToTerraform, true)(struct!.rules),
+    disabled: cdktn.booleanToTerraform(struct!.disabled),
+    rules: cdktn.listMapper(chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesToTerraform, true)(struct!.rules),
   }
 }
 
 
 export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationOutputReference | ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      value: cdktn.booleanToHclTerraform(struct!.disabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     rules: {
-      value: cdktf.listMapperHcl(chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesToHclTerraform, true)(struct!.rules),
+      value: cdktn.listMapperHcl(chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesToHclTerraform, true)(struct!.rules),
       isBlock: true,
       type: "list",
       storageClassType: "ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesList",
@@ -2698,14 +2698,14 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2737,11 +2737,11 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAle
   }
 
   // disabled - computed: true, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -2757,7 +2757,7 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAle
   public get rules() {
     return this._rules;
   }
-  public putRules(value: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules[] | cdktf.IResolvable) {
+  public putRules(value: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules[] | cdktn.IResolvable) {
     this._rules.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2780,39 +2780,39 @@ export interface ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeout
   readonly update?: string;
 }
 
-export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeoutsToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeoutsToTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeoutsToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeoutsToHclTerraform(struct?: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2823,19 +2823,19 @@ export function chimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2856,7 +2856,7 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeoutsOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2864,7 +2864,7 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeoutsOut
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2929,7 +2929,7 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeoutsOut
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration aws_chimesdkmediapipelines_media_insights_pipeline_configuration}
 */
-export class ChimesdkmediapipelinesMediaInsightsPipelineConfiguration extends cdktf.TerraformResource {
+export class ChimesdkmediapipelinesMediaInsightsPipelineConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2940,14 +2940,14 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfiguration extends cd
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ChimesdkmediapipelinesMediaInsightsPipelineConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ChimesdkmediapipelinesMediaInsightsPipelineConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChimesdkmediapipelinesMediaInsightsPipelineConfiguration to import
   * @param importFromId The id of the existing ChimesdkmediapipelinesMediaInsightsPipelineConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChimesdkmediapipelinesMediaInsightsPipelineConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_chimesdkmediapipelines_media_insights_pipeline_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_chimesdkmediapipelines_media_insights_pipeline_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -3080,7 +3080,7 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfiguration extends cd
   public get elements() {
     return this._elements;
   }
-  public putElements(value: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements[] | cdktf.IResolvable) {
+  public putElements(value: ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements[] | cdktn.IResolvable) {
     this._elements.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3126,12 +3126,12 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfiguration extends cd
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      resource_access_role_arn: cdktf.stringToTerraform(this._resourceAccessRoleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      elements: cdktf.listMapper(chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsToTerraform, true)(this._elements.internalValue),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      resource_access_role_arn: cdktn.stringToTerraform(this._resourceAccessRoleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      elements: cdktn.listMapper(chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsToTerraform, true)(this._elements.internalValue),
       real_time_alert_configuration: chimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationToTerraform(this._realTimeAlertConfiguration.internalValue),
       timeouts: chimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -3140,37 +3140,37 @@ export class ChimesdkmediapipelinesMediaInsightsPipelineConfiguration extends cd
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_access_role_arn: {
-        value: cdktf.stringToHclTerraform(this._resourceAccessRoleArn),
+        value: cdktn.stringToHclTerraform(this._resourceAccessRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       elements: {
-        value: cdktf.listMapperHcl(chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsToHclTerraform, true)(this._elements.internalValue),
+        value: cdktn.listMapperHcl(chimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsToHclTerraform, true)(this._elements.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsList",

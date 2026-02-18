@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlacierVaultLockConfig extends cdktf.TerraformMetaArguments {
+export interface GlacierVaultLockConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glacier_vault_lock#complete_lock GlacierVaultLock#complete_lock}
   */
-  readonly completeLock: boolean | cdktf.IResolvable;
+  readonly completeLock: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glacier_vault_lock#id GlacierVaultLock#id}
   *
@@ -26,7 +26,7 @@ export interface GlacierVaultLockConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glacier_vault_lock#ignore_deletion_error GlacierVaultLock#ignore_deletion_error}
   */
-  readonly ignoreDeletionError?: boolean | cdktf.IResolvable;
+  readonly ignoreDeletionError?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glacier_vault_lock#policy GlacierVaultLock#policy}
   */
@@ -46,7 +46,7 @@ export interface GlacierVaultLockConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glacier_vault_lock aws_glacier_vault_lock}
 */
-export class GlacierVaultLock extends cdktf.TerraformResource {
+export class GlacierVaultLock extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlacierVaultLock resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlacierVaultLock resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlacierVaultLock to import
   * @param importFromId The id of the existing GlacierVaultLock that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glacier_vault_lock#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlacierVaultLock to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_glacier_vault_lock", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_glacier_vault_lock", importId: importFromId, provider });
       }
 
   // ===========
@@ -107,11 +107,11 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
   // ==========
 
   // complete_lock - computed: false, optional: false, required: true
-  private _completeLock?: boolean | cdktf.IResolvable; 
+  private _completeLock?: boolean | cdktn.IResolvable; 
   public get completeLock() {
     return this.getBooleanAttribute('complete_lock');
   }
-  public set completeLock(value: boolean | cdktf.IResolvable) {
+  public set completeLock(value: boolean | cdktn.IResolvable) {
     this._completeLock = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -136,11 +136,11 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
   }
 
   // ignore_deletion_error - computed: false, optional: true, required: false
-  private _ignoreDeletionError?: boolean | cdktf.IResolvable; 
+  private _ignoreDeletionError?: boolean | cdktn.IResolvable; 
   public get ignoreDeletionError() {
     return this.getBooleanAttribute('ignore_deletion_error');
   }
-  public set ignoreDeletionError(value: boolean | cdktf.IResolvable) {
+  public set ignoreDeletionError(value: boolean | cdktn.IResolvable) {
     this._ignoreDeletionError = value;
   }
   public resetIgnoreDeletionError() {
@@ -199,49 +199,49 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      complete_lock: cdktf.booleanToTerraform(this._completeLock),
-      id: cdktf.stringToTerraform(this._id),
-      ignore_deletion_error: cdktf.booleanToTerraform(this._ignoreDeletionError),
-      policy: cdktf.stringToTerraform(this._policy),
-      region: cdktf.stringToTerraform(this._region),
-      vault_name: cdktf.stringToTerraform(this._vaultName),
+      complete_lock: cdktn.booleanToTerraform(this._completeLock),
+      id: cdktn.stringToTerraform(this._id),
+      ignore_deletion_error: cdktn.booleanToTerraform(this._ignoreDeletionError),
+      policy: cdktn.stringToTerraform(this._policy),
+      region: cdktn.stringToTerraform(this._region),
+      vault_name: cdktn.stringToTerraform(this._vaultName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       complete_lock: {
-        value: cdktf.booleanToHclTerraform(this._completeLock),
+        value: cdktn.booleanToHclTerraform(this._completeLock),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ignore_deletion_error: {
-        value: cdktf.booleanToHclTerraform(this._ignoreDeletionError),
+        value: cdktn.booleanToHclTerraform(this._ignoreDeletionError),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       policy: {
-        value: cdktf.stringToHclTerraform(this._policy),
+        value: cdktn.stringToHclTerraform(this._policy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vault_name: {
-        value: cdktf.stringToHclTerraform(this._vaultName),
+        value: cdktn.stringToHclTerraform(this._vaultName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

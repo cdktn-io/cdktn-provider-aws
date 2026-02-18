@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RamPermissionConfig extends cdktf.TerraformMetaArguments {
+export interface RamPermissionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ram_permission#name RamPermission#name}
   */
@@ -50,25 +50,25 @@ export interface RamPermissionTimeouts {
   readonly delete?: string;
 }
 
-export function ramPermissionTimeoutsToTerraform(struct?: RamPermissionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ramPermissionTimeoutsToTerraform(struct?: RamPermissionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete: cdktf.stringToTerraform(struct!.delete),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function ramPermissionTimeoutsToHclTerraform(struct?: RamPermissionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ramPermissionTimeoutsToHclTerraform(struct?: RamPermissionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -79,19 +79,19 @@ export function ramPermissionTimeoutsToHclTerraform(struct?: RamPermissionTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RamPermissionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RamPermissionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RamPermissionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RamPermissionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -104,13 +104,13 @@ export class RamPermissionTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RamPermissionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RamPermissionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -141,7 +141,7 @@ export class RamPermissionTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ram_permission aws_ram_permission}
 */
-export class RamPermission extends cdktf.TerraformResource {
+export class RamPermission extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -152,14 +152,14 @@ export class RamPermission extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RamPermission resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RamPermission resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RamPermission to import
   * @param importFromId The id of the existing RamPermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ram_permission#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RamPermission to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ram_permission", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ram_permission", importId: importFromId, provider });
       }
 
   // ===========
@@ -288,7 +288,7 @@ export class RamPermission extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -320,11 +320,11 @@ export class RamPermission extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      policy_template: cdktf.stringToTerraform(this._policyTemplate),
-      region: cdktf.stringToTerraform(this._region),
-      resource_type: cdktf.stringToTerraform(this._resourceType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      name: cdktn.stringToTerraform(this._name),
+      policy_template: cdktn.stringToTerraform(this._policyTemplate),
+      region: cdktn.stringToTerraform(this._region),
+      resource_type: cdktn.stringToTerraform(this._resourceType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: ramPermissionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -332,31 +332,31 @@ export class RamPermission extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_template: {
-        value: cdktf.stringToHclTerraform(this._policyTemplate),
+        value: cdktn.stringToHclTerraform(this._policyTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_type: {
-        value: cdktf.stringToHclTerraform(this._resourceType),
+        value: cdktn.stringToHclTerraform(this._resourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

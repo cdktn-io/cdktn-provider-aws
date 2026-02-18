@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsIamServerCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsIamServerCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/iam_server_certificate#id DataAwsIamServerCertificate#id}
   *
@@ -22,7 +22,7 @@ export interface DataAwsIamServerCertificateConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/iam_server_certificate#latest DataAwsIamServerCertificate#latest}
   */
-  readonly latest?: boolean | cdktf.IResolvable;
+  readonly latest?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/iam_server_certificate#name DataAwsIamServerCertificate#name}
   */
@@ -40,7 +40,7 @@ export interface DataAwsIamServerCertificateConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/iam_server_certificate aws_iam_server_certificate}
 */
-export class DataAwsIamServerCertificate extends cdktf.TerraformDataSource {
+export class DataAwsIamServerCertificate extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -51,14 +51,14 @@ export class DataAwsIamServerCertificate extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsIamServerCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsIamServerCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsIamServerCertificate to import
   * @param importFromId The id of the existing DataAwsIamServerCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/iam_server_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsIamServerCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_server_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_server_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -136,11 +136,11 @@ export class DataAwsIamServerCertificate extends cdktf.TerraformDataSource {
   }
 
   // latest - computed: false, optional: true, required: false
-  private _latest?: boolean | cdktf.IResolvable; 
+  private _latest?: boolean | cdktn.IResolvable; 
   public get latest() {
     return this.getBooleanAttribute('latest');
   }
-  public set latest(value: boolean | cdktf.IResolvable) {
+  public set latest(value: boolean | cdktn.IResolvable) {
     this._latest = value;
   }
   public resetLatest() {
@@ -215,42 +215,42 @@ export class DataAwsIamServerCertificate extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      latest: cdktf.booleanToTerraform(this._latest),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      path_prefix: cdktf.stringToTerraform(this._pathPrefix),
+      id: cdktn.stringToTerraform(this._id),
+      latest: cdktn.booleanToTerraform(this._latest),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      path_prefix: cdktn.stringToTerraform(this._pathPrefix),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       latest: {
-        value: cdktf.booleanToHclTerraform(this._latest),
+        value: cdktn.booleanToHclTerraform(this._latest),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path_prefix: {
-        value: cdktf.stringToHclTerraform(this._pathPrefix),
+        value: cdktn.stringToHclTerraform(this._pathPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

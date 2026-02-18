@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OdbCloudAutonomousVmClusterConfig extends cdktf.TerraformMetaArguments {
+export interface OdbCloudAutonomousVmClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * The data storage size allocated for Autonomous Databases in the Autonomous VM cluster, in TB. Changing this will force terraform to create new resource.
   *
@@ -59,7 +59,7 @@ export interface OdbCloudAutonomousVmClusterConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_autonomous_vm_cluster#is_mtls_enabled_vm_cluster OdbCloudAutonomousVmCluster#is_mtls_enabled_vm_cluster}
   */
-  readonly isMtlsEnabledVmCluster?: boolean | cdktf.IResolvable;
+  readonly isMtlsEnabledVmCluster?: boolean | cdktn.IResolvable;
   /**
   * The license model for the Autonomous VM cluster. Valid values are LICENSE_INCLUDED or BRING_YOUR_OWN_LICENSE . Changing this will force terraform to create new resource.
   *
@@ -123,7 +123,7 @@ export interface OdbCloudAutonomousVmClusterConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_autonomous_vm_cluster#maintenance_window OdbCloudAutonomousVmCluster#maintenance_window}
   */
-  readonly maintenanceWindow?: OdbCloudAutonomousVmClusterMaintenanceWindow[] | cdktf.IResolvable;
+  readonly maintenanceWindow?: OdbCloudAutonomousVmClusterMaintenanceWindow[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -138,25 +138,25 @@ export interface OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek {
   readonly name?: string;
 }
 
-export function odbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekToTerraform(struct?: OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekToTerraform(struct?: OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function odbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekToHclTerraform(struct?: OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekToHclTerraform(struct?: OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -167,9 +167,9 @@ export function odbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekOutputReference extends cdktf.ComplexObject {
+export class OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -177,11 +177,11 @@ export class OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek | cdktf.IResolvable | undefined {
+  public get internalValue(): OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -194,13 +194,13 @@ export class OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -228,15 +228,15 @@ export class OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekOutputReferen
   }
 }
 
-export class OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekList extends cdktf.ComplexList {
-  public internalValue? : OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek[] | cdktf.IResolvable
+export class OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekList extends cdktn.ComplexList {
+  public internalValue? : OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -254,25 +254,25 @@ export interface OdbCloudAutonomousVmClusterMaintenanceWindowMonths {
   readonly name?: string;
 }
 
-export function odbCloudAutonomousVmClusterMaintenanceWindowMonthsToTerraform(struct?: OdbCloudAutonomousVmClusterMaintenanceWindowMonths | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudAutonomousVmClusterMaintenanceWindowMonthsToTerraform(struct?: OdbCloudAutonomousVmClusterMaintenanceWindowMonths | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function odbCloudAutonomousVmClusterMaintenanceWindowMonthsToHclTerraform(struct?: OdbCloudAutonomousVmClusterMaintenanceWindowMonths | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudAutonomousVmClusterMaintenanceWindowMonthsToHclTerraform(struct?: OdbCloudAutonomousVmClusterMaintenanceWindowMonths | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -283,9 +283,9 @@ export function odbCloudAutonomousVmClusterMaintenanceWindowMonthsToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputReference extends cdktf.ComplexObject {
+export class OdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -293,11 +293,11 @@ export class OdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OdbCloudAutonomousVmClusterMaintenanceWindowMonths | cdktf.IResolvable | undefined {
+  public get internalValue(): OdbCloudAutonomousVmClusterMaintenanceWindowMonths | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -310,13 +310,13 @@ export class OdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OdbCloudAutonomousVmClusterMaintenanceWindowMonths | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OdbCloudAutonomousVmClusterMaintenanceWindowMonths | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -344,15 +344,15 @@ export class OdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputReference e
   }
 }
 
-export class OdbCloudAutonomousVmClusterMaintenanceWindowMonthsList extends cdktf.ComplexList {
-  public internalValue? : OdbCloudAutonomousVmClusterMaintenanceWindowMonths[] | cdktf.IResolvable
+export class OdbCloudAutonomousVmClusterMaintenanceWindowMonthsList extends cdktn.ComplexList {
+  public internalValue? : OdbCloudAutonomousVmClusterMaintenanceWindowMonths[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -369,7 +369,7 @@ export interface OdbCloudAutonomousVmClusterMaintenanceWindow {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_autonomous_vm_cluster#days_of_week OdbCloudAutonomousVmCluster#days_of_week}
   */
-  readonly daysOfWeek?: OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek[] | cdktf.IResolvable;
+  readonly daysOfWeek?: OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek[] | cdktn.IResolvable;
   /**
   * The hours of the day when maintenance can be performed.
   *
@@ -387,7 +387,7 @@ export interface OdbCloudAutonomousVmClusterMaintenanceWindow {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_autonomous_vm_cluster#months OdbCloudAutonomousVmCluster#months}
   */
-  readonly months?: OdbCloudAutonomousVmClusterMaintenanceWindowMonths[] | cdktf.IResolvable;
+  readonly months?: OdbCloudAutonomousVmClusterMaintenanceWindowMonths[] | cdktn.IResolvable;
   /**
   * The preference for the maintenance window scheduling.
   *
@@ -402,60 +402,60 @@ export interface OdbCloudAutonomousVmClusterMaintenanceWindow {
   readonly weeksOfMonth?: number[];
 }
 
-export function odbCloudAutonomousVmClusterMaintenanceWindowToTerraform(struct?: OdbCloudAutonomousVmClusterMaintenanceWindow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudAutonomousVmClusterMaintenanceWindowToTerraform(struct?: OdbCloudAutonomousVmClusterMaintenanceWindow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days_of_week: cdktf.listMapper(odbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekToTerraform, false)(struct!.daysOfWeek),
-    hours_of_day: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.hoursOfDay),
-    lead_time_in_weeks: cdktf.numberToTerraform(struct!.leadTimeInWeeks),
-    months: cdktf.listMapper(odbCloudAutonomousVmClusterMaintenanceWindowMonthsToTerraform, false)(struct!.months),
-    preference: cdktf.stringToTerraform(struct!.preference),
-    weeks_of_month: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.weeksOfMonth),
+    days_of_week: cdktn.listMapper(odbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekToTerraform, false)(struct!.daysOfWeek),
+    hours_of_day: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.hoursOfDay),
+    lead_time_in_weeks: cdktn.numberToTerraform(struct!.leadTimeInWeeks),
+    months: cdktn.listMapper(odbCloudAutonomousVmClusterMaintenanceWindowMonthsToTerraform, false)(struct!.months),
+    preference: cdktn.stringToTerraform(struct!.preference),
+    weeks_of_month: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.weeksOfMonth),
   }
 }
 
 
-export function odbCloudAutonomousVmClusterMaintenanceWindowToHclTerraform(struct?: OdbCloudAutonomousVmClusterMaintenanceWindow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudAutonomousVmClusterMaintenanceWindowToHclTerraform(struct?: OdbCloudAutonomousVmClusterMaintenanceWindow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days_of_week: {
-      value: cdktf.listMapperHcl(odbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekToHclTerraform, false)(struct!.daysOfWeek),
+      value: cdktn.listMapperHcl(odbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekToHclTerraform, false)(struct!.daysOfWeek),
       isBlock: true,
       type: "set",
       storageClassType: "OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekList",
     },
     hours_of_day: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.hoursOfDay),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.hoursOfDay),
       isBlock: false,
       type: "set",
       storageClassType: "numberList",
     },
     lead_time_in_weeks: {
-      value: cdktf.numberToHclTerraform(struct!.leadTimeInWeeks),
+      value: cdktn.numberToHclTerraform(struct!.leadTimeInWeeks),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     months: {
-      value: cdktf.listMapperHcl(odbCloudAutonomousVmClusterMaintenanceWindowMonthsToHclTerraform, false)(struct!.months),
+      value: cdktn.listMapperHcl(odbCloudAutonomousVmClusterMaintenanceWindowMonthsToHclTerraform, false)(struct!.months),
       isBlock: true,
       type: "set",
       storageClassType: "OdbCloudAutonomousVmClusterMaintenanceWindowMonthsList",
     },
     preference: {
-      value: cdktf.stringToHclTerraform(struct!.preference),
+      value: cdktn.stringToHclTerraform(struct!.preference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weeks_of_month: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.weeksOfMonth),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.weeksOfMonth),
       isBlock: false,
       type: "set",
       storageClassType: "numberList",
@@ -466,9 +466,9 @@ export function odbCloudAutonomousVmClusterMaintenanceWindowToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OdbCloudAutonomousVmClusterMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+export class OdbCloudAutonomousVmClusterMaintenanceWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -476,11 +476,11 @@ export class OdbCloudAutonomousVmClusterMaintenanceWindowOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OdbCloudAutonomousVmClusterMaintenanceWindow | cdktf.IResolvable | undefined {
+  public get internalValue(): OdbCloudAutonomousVmClusterMaintenanceWindow | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -513,7 +513,7 @@ export class OdbCloudAutonomousVmClusterMaintenanceWindowOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OdbCloudAutonomousVmClusterMaintenanceWindow | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OdbCloudAutonomousVmClusterMaintenanceWindow | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -524,7 +524,7 @@ export class OdbCloudAutonomousVmClusterMaintenanceWindowOutputReference extends
       this._preference = undefined;
       this._weeksOfMonth = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -545,7 +545,7 @@ export class OdbCloudAutonomousVmClusterMaintenanceWindowOutputReference extends
   public get daysOfWeek() {
     return this._daysOfWeek;
   }
-  public putDaysOfWeek(value: OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek[] | cdktf.IResolvable) {
+  public putDaysOfWeek(value: OdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek[] | cdktn.IResolvable) {
     this._daysOfWeek.internalValue = value;
   }
   public resetDaysOfWeek() {
@@ -559,7 +559,7 @@ export class OdbCloudAutonomousVmClusterMaintenanceWindowOutputReference extends
   // hours_of_day - computed: false, optional: true, required: false
   private _hoursOfDay?: number[]; 
   public get hoursOfDay() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('hours_of_day')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('hours_of_day')));
   }
   public set hoursOfDay(value: number[]) {
     this._hoursOfDay = value;
@@ -593,7 +593,7 @@ export class OdbCloudAutonomousVmClusterMaintenanceWindowOutputReference extends
   public get months() {
     return this._months;
   }
-  public putMonths(value: OdbCloudAutonomousVmClusterMaintenanceWindowMonths[] | cdktf.IResolvable) {
+  public putMonths(value: OdbCloudAutonomousVmClusterMaintenanceWindowMonths[] | cdktn.IResolvable) {
     this._months.internalValue = value;
   }
   public resetMonths() {
@@ -620,7 +620,7 @@ export class OdbCloudAutonomousVmClusterMaintenanceWindowOutputReference extends
   // weeks_of_month - computed: false, optional: true, required: false
   private _weeksOfMonth?: number[]; 
   public get weeksOfMonth() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('weeks_of_month')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('weeks_of_month')));
   }
   public set weeksOfMonth(value: number[]) {
     this._weeksOfMonth = value;
@@ -634,15 +634,15 @@ export class OdbCloudAutonomousVmClusterMaintenanceWindowOutputReference extends
   }
 }
 
-export class OdbCloudAutonomousVmClusterMaintenanceWindowList extends cdktf.ComplexList {
-  public internalValue? : OdbCloudAutonomousVmClusterMaintenanceWindow[] | cdktf.IResolvable
+export class OdbCloudAutonomousVmClusterMaintenanceWindowList extends cdktn.ComplexList {
+  public internalValue? : OdbCloudAutonomousVmClusterMaintenanceWindow[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -674,39 +674,39 @@ export interface OdbCloudAutonomousVmClusterTimeouts {
   readonly update?: string;
 }
 
-export function odbCloudAutonomousVmClusterTimeoutsToTerraform(struct?: OdbCloudAutonomousVmClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudAutonomousVmClusterTimeoutsToTerraform(struct?: OdbCloudAutonomousVmClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function odbCloudAutonomousVmClusterTimeoutsToHclTerraform(struct?: OdbCloudAutonomousVmClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudAutonomousVmClusterTimeoutsToHclTerraform(struct?: OdbCloudAutonomousVmClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -717,19 +717,19 @@ export function odbCloudAutonomousVmClusterTimeoutsToHclTerraform(struct?: OdbCl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OdbCloudAutonomousVmClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OdbCloudAutonomousVmClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OdbCloudAutonomousVmClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OdbCloudAutonomousVmClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -750,7 +750,7 @@ export class OdbCloudAutonomousVmClusterTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OdbCloudAutonomousVmClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OdbCloudAutonomousVmClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -758,7 +758,7 @@ export class OdbCloudAutonomousVmClusterTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -823,7 +823,7 @@ export class OdbCloudAutonomousVmClusterTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_autonomous_vm_cluster aws_odb_cloud_autonomous_vm_cluster}
 */
-export class OdbCloudAutonomousVmCluster extends cdktf.TerraformResource {
+export class OdbCloudAutonomousVmCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -834,14 +834,14 @@ export class OdbCloudAutonomousVmCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OdbCloudAutonomousVmCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OdbCloudAutonomousVmCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OdbCloudAutonomousVmCluster to import
   * @param importFromId The id of the existing OdbCloudAutonomousVmCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_autonomous_vm_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OdbCloudAutonomousVmCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_cloud_autonomous_vm_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_cloud_autonomous_vm_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -1013,7 +1013,7 @@ export class OdbCloudAutonomousVmCluster extends cdktf.TerraformResource {
   // db_servers - computed: false, optional: false, required: true
   private _dbServers?: string[]; 
   public get dbServers() {
-    return cdktf.Fn.tolist(this.getListAttribute('db_servers'));
+    return cdktn.Fn.tolist(this.getListAttribute('db_servers'));
   }
   public set dbServers(value: string[]) {
     this._dbServers = value;
@@ -1073,11 +1073,11 @@ export class OdbCloudAutonomousVmCluster extends cdktf.TerraformResource {
   }
 
   // is_mtls_enabled_vm_cluster - computed: true, optional: true, required: false
-  private _isMtlsEnabledVmCluster?: boolean | cdktf.IResolvable; 
+  private _isMtlsEnabledVmCluster?: boolean | cdktn.IResolvable; 
   public get isMtlsEnabledVmCluster() {
     return this.getBooleanAttribute('is_mtls_enabled_vm_cluster');
   }
-  public set isMtlsEnabledVmCluster(value: boolean | cdktf.IResolvable) {
+  public set isMtlsEnabledVmCluster(value: boolean | cdktn.IResolvable) {
     this._isMtlsEnabledVmCluster = value;
   }
   public resetIsMtlsEnabledVmCluster() {
@@ -1293,7 +1293,7 @@ export class OdbCloudAutonomousVmCluster extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1342,7 +1342,7 @@ export class OdbCloudAutonomousVmCluster extends cdktf.TerraformResource {
   public get maintenanceWindow() {
     return this._maintenanceWindow;
   }
-  public putMaintenanceWindow(value: OdbCloudAutonomousVmClusterMaintenanceWindow[] | cdktf.IResolvable) {
+  public putMaintenanceWindow(value: OdbCloudAutonomousVmClusterMaintenanceWindow[] | cdktn.IResolvable) {
     this._maintenanceWindow.internalValue = value;
   }
   public resetMaintenanceWindow() {
@@ -1375,25 +1375,25 @@ export class OdbCloudAutonomousVmCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      autonomous_data_storage_size_in_tbs: cdktf.numberToTerraform(this._autonomousDataStorageSizeInTbs),
-      cloud_exadata_infrastructure_arn: cdktf.stringToTerraform(this._cloudExadataInfrastructureArn),
-      cloud_exadata_infrastructure_id: cdktf.stringToTerraform(this._cloudExadataInfrastructureId),
-      cpu_core_count_per_node: cdktf.numberToTerraform(this._cpuCoreCountPerNode),
-      db_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dbServers),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      is_mtls_enabled_vm_cluster: cdktf.booleanToTerraform(this._isMtlsEnabledVmCluster),
-      license_model: cdktf.stringToTerraform(this._licenseModel),
-      memory_per_oracle_compute_unit_in_gbs: cdktf.numberToTerraform(this._memoryPerOracleComputeUnitInGbs),
-      odb_network_arn: cdktf.stringToTerraform(this._odbNetworkArn),
-      odb_network_id: cdktf.stringToTerraform(this._odbNetworkId),
-      region: cdktf.stringToTerraform(this._region),
-      scan_listener_port_non_tls: cdktf.numberToTerraform(this._scanListenerPortNonTls),
-      scan_listener_port_tls: cdktf.numberToTerraform(this._scanListenerPortTls),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      time_zone: cdktf.stringToTerraform(this._timeZone),
-      total_container_databases: cdktf.numberToTerraform(this._totalContainerDatabases),
-      maintenance_window: cdktf.listMapper(odbCloudAutonomousVmClusterMaintenanceWindowToTerraform, true)(this._maintenanceWindow.internalValue),
+      autonomous_data_storage_size_in_tbs: cdktn.numberToTerraform(this._autonomousDataStorageSizeInTbs),
+      cloud_exadata_infrastructure_arn: cdktn.stringToTerraform(this._cloudExadataInfrastructureArn),
+      cloud_exadata_infrastructure_id: cdktn.stringToTerraform(this._cloudExadataInfrastructureId),
+      cpu_core_count_per_node: cdktn.numberToTerraform(this._cpuCoreCountPerNode),
+      db_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._dbServers),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      is_mtls_enabled_vm_cluster: cdktn.booleanToTerraform(this._isMtlsEnabledVmCluster),
+      license_model: cdktn.stringToTerraform(this._licenseModel),
+      memory_per_oracle_compute_unit_in_gbs: cdktn.numberToTerraform(this._memoryPerOracleComputeUnitInGbs),
+      odb_network_arn: cdktn.stringToTerraform(this._odbNetworkArn),
+      odb_network_id: cdktn.stringToTerraform(this._odbNetworkId),
+      region: cdktn.stringToTerraform(this._region),
+      scan_listener_port_non_tls: cdktn.numberToTerraform(this._scanListenerPortNonTls),
+      scan_listener_port_tls: cdktn.numberToTerraform(this._scanListenerPortTls),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      time_zone: cdktn.stringToTerraform(this._timeZone),
+      total_container_databases: cdktn.numberToTerraform(this._totalContainerDatabases),
+      maintenance_window: cdktn.listMapper(odbCloudAutonomousVmClusterMaintenanceWindowToTerraform, true)(this._maintenanceWindow.internalValue),
       timeouts: odbCloudAutonomousVmClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1401,115 +1401,115 @@ export class OdbCloudAutonomousVmCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       autonomous_data_storage_size_in_tbs: {
-        value: cdktf.numberToHclTerraform(this._autonomousDataStorageSizeInTbs),
+        value: cdktn.numberToHclTerraform(this._autonomousDataStorageSizeInTbs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       cloud_exadata_infrastructure_arn: {
-        value: cdktf.stringToHclTerraform(this._cloudExadataInfrastructureArn),
+        value: cdktn.stringToHclTerraform(this._cloudExadataInfrastructureArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_exadata_infrastructure_id: {
-        value: cdktf.stringToHclTerraform(this._cloudExadataInfrastructureId),
+        value: cdktn.stringToHclTerraform(this._cloudExadataInfrastructureId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cpu_core_count_per_node: {
-        value: cdktf.numberToHclTerraform(this._cpuCoreCountPerNode),
+        value: cdktn.numberToHclTerraform(this._cpuCoreCountPerNode),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       db_servers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dbServers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._dbServers),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_mtls_enabled_vm_cluster: {
-        value: cdktf.booleanToHclTerraform(this._isMtlsEnabledVmCluster),
+        value: cdktn.booleanToHclTerraform(this._isMtlsEnabledVmCluster),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       license_model: {
-        value: cdktf.stringToHclTerraform(this._licenseModel),
+        value: cdktn.stringToHclTerraform(this._licenseModel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       memory_per_oracle_compute_unit_in_gbs: {
-        value: cdktf.numberToHclTerraform(this._memoryPerOracleComputeUnitInGbs),
+        value: cdktn.numberToHclTerraform(this._memoryPerOracleComputeUnitInGbs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       odb_network_arn: {
-        value: cdktf.stringToHclTerraform(this._odbNetworkArn),
+        value: cdktn.stringToHclTerraform(this._odbNetworkArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       odb_network_id: {
-        value: cdktf.stringToHclTerraform(this._odbNetworkId),
+        value: cdktn.stringToHclTerraform(this._odbNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scan_listener_port_non_tls: {
-        value: cdktf.numberToHclTerraform(this._scanListenerPortNonTls),
+        value: cdktn.numberToHclTerraform(this._scanListenerPortNonTls),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       scan_listener_port_tls: {
-        value: cdktf.numberToHclTerraform(this._scanListenerPortTls),
+        value: cdktn.numberToHclTerraform(this._scanListenerPortTls),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       time_zone: {
-        value: cdktf.stringToHclTerraform(this._timeZone),
+        value: cdktn.stringToHclTerraform(this._timeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       total_container_databases: {
-        value: cdktf.numberToHclTerraform(this._totalContainerDatabases),
+        value: cdktn.numberToHclTerraform(this._totalContainerDatabases),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       maintenance_window: {
-        value: cdktf.listMapperHcl(odbCloudAutonomousVmClusterMaintenanceWindowToHclTerraform, true)(this._maintenanceWindow.internalValue),
+        value: cdktn.listMapperHcl(odbCloudAutonomousVmClusterMaintenanceWindowToHclTerraform, true)(this._maintenanceWindow.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OdbCloudAutonomousVmClusterMaintenanceWindowList",

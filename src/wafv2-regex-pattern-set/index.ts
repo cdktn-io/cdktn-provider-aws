@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Wafv2RegexPatternSetConfig extends cdktf.TerraformMetaArguments {
+export interface Wafv2RegexPatternSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_regex_pattern_set#description Wafv2RegexPatternSet#description}
   */
@@ -54,7 +54,7 @@ export interface Wafv2RegexPatternSetConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_regex_pattern_set#regular_expression Wafv2RegexPatternSet#regular_expression}
   */
-  readonly regularExpression?: Wafv2RegexPatternSetRegularExpression[] | cdktf.IResolvable;
+  readonly regularExpression?: Wafv2RegexPatternSetRegularExpression[] | cdktn.IResolvable;
 }
 export interface Wafv2RegexPatternSetRegularExpression {
   /**
@@ -63,25 +63,25 @@ export interface Wafv2RegexPatternSetRegularExpression {
   readonly regexString: string;
 }
 
-export function wafv2RegexPatternSetRegularExpressionToTerraform(struct?: Wafv2RegexPatternSetRegularExpression | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RegexPatternSetRegularExpressionToTerraform(struct?: Wafv2RegexPatternSetRegularExpression | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    regex_string: cdktf.stringToTerraform(struct!.regexString),
+    regex_string: cdktn.stringToTerraform(struct!.regexString),
   }
 }
 
 
-export function wafv2RegexPatternSetRegularExpressionToHclTerraform(struct?: Wafv2RegexPatternSetRegularExpression | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RegexPatternSetRegularExpressionToHclTerraform(struct?: Wafv2RegexPatternSetRegularExpression | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     regex_string: {
-      value: cdktf.stringToHclTerraform(struct!.regexString),
+      value: cdktn.stringToHclTerraform(struct!.regexString),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,9 +92,9 @@ export function wafv2RegexPatternSetRegularExpressionToHclTerraform(struct?: Waf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RegexPatternSetRegularExpressionOutputReference extends cdktf.ComplexObject {
+export class Wafv2RegexPatternSetRegularExpressionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -102,11 +102,11 @@ export class Wafv2RegexPatternSetRegularExpressionOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RegexPatternSetRegularExpression | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RegexPatternSetRegularExpression | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -119,13 +119,13 @@ export class Wafv2RegexPatternSetRegularExpressionOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RegexPatternSetRegularExpression | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RegexPatternSetRegularExpression | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._regexString = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -150,15 +150,15 @@ export class Wafv2RegexPatternSetRegularExpressionOutputReference extends cdktf.
   }
 }
 
-export class Wafv2RegexPatternSetRegularExpressionList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RegexPatternSetRegularExpression[] | cdktf.IResolvable
+export class Wafv2RegexPatternSetRegularExpressionList extends cdktn.ComplexList {
+  public internalValue? : Wafv2RegexPatternSetRegularExpression[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -173,7 +173,7 @@ export class Wafv2RegexPatternSetRegularExpressionList extends cdktf.ComplexList
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set}
 */
-export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
+export class Wafv2RegexPatternSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -184,14 +184,14 @@ export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Wafv2RegexPatternSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Wafv2RegexPatternSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Wafv2RegexPatternSet to import
   * @param importFromId The id of the existing Wafv2RegexPatternSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_regex_pattern_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Wafv2RegexPatternSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafv2_regex_pattern_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafv2_regex_pattern_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -376,7 +376,7 @@ export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
   public get regularExpression() {
     return this._regularExpression;
   }
-  public putRegularExpression(value: Wafv2RegexPatternSetRegularExpression[] | cdktf.IResolvable) {
+  public putRegularExpression(value: Wafv2RegexPatternSetRegularExpression[] | cdktn.IResolvable) {
     this._regularExpression.internalValue = value;
   }
   public resetRegularExpression() {
@@ -393,70 +393,70 @@ export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      region: cdktf.stringToTerraform(this._region),
-      scope: cdktf.stringToTerraform(this._scope),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      regular_expression: cdktf.listMapper(wafv2RegexPatternSetRegularExpressionToTerraform, true)(this._regularExpression.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      region: cdktn.stringToTerraform(this._region),
+      scope: cdktn.stringToTerraform(this._scope),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      regular_expression: cdktn.listMapper(wafv2RegexPatternSetRegularExpressionToTerraform, true)(this._regularExpression.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope: {
-        value: cdktf.stringToHclTerraform(this._scope),
+        value: cdktn.stringToHclTerraform(this._scope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       regular_expression: {
-        value: cdktf.listMapperHcl(wafv2RegexPatternSetRegularExpressionToHclTerraform, true)(this._regularExpression.internalValue),
+        value: cdktn.listMapperHcl(wafv2RegexPatternSetRegularExpressionToHclTerraform, true)(this._regularExpression.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "Wafv2RegexPatternSetRegularExpressionList",

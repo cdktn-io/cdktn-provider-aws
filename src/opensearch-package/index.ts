@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OpensearchPackageConfig extends cdktf.TerraformMetaArguments {
+export interface OpensearchPackageConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_package#engine_version OpensearchPackage#engine_version}
   */
@@ -60,31 +60,31 @@ export interface OpensearchPackagePackageSource {
 }
 
 export function opensearchPackagePackageSourceToTerraform(struct?: OpensearchPackagePackageSourceOutputReference | OpensearchPackagePackageSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
-    s3_key: cdktf.stringToTerraform(struct!.s3Key),
+    s3_bucket_name: cdktn.stringToTerraform(struct!.s3BucketName),
+    s3_key: cdktn.stringToTerraform(struct!.s3Key),
   }
 }
 
 
 export function opensearchPackagePackageSourceToHclTerraform(struct?: OpensearchPackagePackageSourceOutputReference | OpensearchPackagePackageSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.s3BucketName),
+      value: cdktn.stringToHclTerraform(struct!.s3BucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_key: {
-      value: cdktf.stringToHclTerraform(struct!.s3Key),
+      value: cdktn.stringToHclTerraform(struct!.s3Key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -95,14 +95,14 @@ export function opensearchPackagePackageSourceToHclTerraform(struct?: Opensearch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OpensearchPackagePackageSourceOutputReference extends cdktf.ComplexObject {
+export class OpensearchPackagePackageSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -163,7 +163,7 @@ export class OpensearchPackagePackageSourceOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_package aws_opensearch_package}
 */
-export class OpensearchPackage extends cdktf.TerraformResource {
+export class OpensearchPackage extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -174,14 +174,14 @@ export class OpensearchPackage extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OpensearchPackage resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OpensearchPackage resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpensearchPackage to import
   * @param importFromId The id of the existing OpensearchPackage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_package#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpensearchPackage to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_opensearch_package", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_opensearch_package", importId: importFromId, provider });
       }
 
   // ===========
@@ -343,12 +343,12 @@ export class OpensearchPackage extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      id: cdktf.stringToTerraform(this._id),
-      package_description: cdktf.stringToTerraform(this._packageDescription),
-      package_name: cdktf.stringToTerraform(this._packageName),
-      package_type: cdktf.stringToTerraform(this._packageType),
-      region: cdktf.stringToTerraform(this._region),
+      engine_version: cdktn.stringToTerraform(this._engineVersion),
+      id: cdktn.stringToTerraform(this._id),
+      package_description: cdktn.stringToTerraform(this._packageDescription),
+      package_name: cdktn.stringToTerraform(this._packageName),
+      package_type: cdktn.stringToTerraform(this._packageType),
+      region: cdktn.stringToTerraform(this._region),
       package_source: opensearchPackagePackageSourceToTerraform(this._packageSource.internalValue),
     };
   }
@@ -356,37 +356,37 @@ export class OpensearchPackage extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       engine_version: {
-        value: cdktf.stringToHclTerraform(this._engineVersion),
+        value: cdktn.stringToHclTerraform(this._engineVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       package_description: {
-        value: cdktf.stringToHclTerraform(this._packageDescription),
+        value: cdktn.stringToHclTerraform(this._packageDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       package_name: {
-        value: cdktf.stringToHclTerraform(this._packageName),
+        value: cdktn.stringToHclTerraform(this._packageName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       package_type: {
-        value: cdktf.stringToHclTerraform(this._packageType),
+        value: cdktn.stringToHclTerraform(this._packageType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

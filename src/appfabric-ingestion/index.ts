@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppfabricIngestionConfig extends cdktf.TerraformMetaArguments {
+export interface AppfabricIngestionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_ingestion#app AppfabricIngestion#app}
   */
@@ -43,7 +43,7 @@ export interface AppfabricIngestionConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_ingestion aws_appfabric_ingestion}
 */
-export class AppfabricIngestion extends cdktf.TerraformResource {
+export class AppfabricIngestion extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -54,14 +54,14 @@ export class AppfabricIngestion extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppfabricIngestion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppfabricIngestion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppfabricIngestion to import
   * @param importFromId The id of the existing AppfabricIngestion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_ingestion#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppfabricIngestion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appfabric_ingestion", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appfabric_ingestion", importId: importFromId, provider });
       }
 
   // ===========
@@ -185,7 +185,7 @@ export class AppfabricIngestion extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -209,49 +209,49 @@ export class AppfabricIngestion extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app: cdktf.stringToTerraform(this._app),
-      app_bundle_arn: cdktf.stringToTerraform(this._appBundleArn),
-      ingestion_type: cdktf.stringToTerraform(this._ingestionType),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tenant_id: cdktf.stringToTerraform(this._tenantId),
+      app: cdktn.stringToTerraform(this._app),
+      app_bundle_arn: cdktn.stringToTerraform(this._appBundleArn),
+      ingestion_type: cdktn.stringToTerraform(this._ingestionType),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tenant_id: cdktn.stringToTerraform(this._tenantId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app: {
-        value: cdktf.stringToHclTerraform(this._app),
+        value: cdktn.stringToHclTerraform(this._app),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       app_bundle_arn: {
-        value: cdktf.stringToHclTerraform(this._appBundleArn),
+        value: cdktn.stringToHclTerraform(this._appBundleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ingestion_type: {
-        value: cdktf.stringToHclTerraform(this._ingestionType),
+        value: cdktn.stringToHclTerraform(this._ingestionType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tenant_id: {
-        value: cdktf.stringToHclTerraform(this._tenantId),
+        value: cdktn.stringToHclTerraform(this._tenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

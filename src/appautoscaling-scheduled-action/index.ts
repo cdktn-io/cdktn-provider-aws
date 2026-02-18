@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppautoscalingScheduledActionConfig extends cdktf.TerraformMetaArguments {
+export interface AppautoscalingScheduledActionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appautoscaling_scheduled_action#end_time AppautoscalingScheduledAction#end_time}
   */
@@ -76,31 +76,31 @@ export interface AppautoscalingScheduledActionScalableTargetAction {
 }
 
 export function appautoscalingScheduledActionScalableTargetActionToTerraform(struct?: AppautoscalingScheduledActionScalableTargetActionOutputReference | AppautoscalingScheduledActionScalableTargetAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_capacity: cdktf.stringToTerraform(struct!.maxCapacity),
-    min_capacity: cdktf.stringToTerraform(struct!.minCapacity),
+    max_capacity: cdktn.stringToTerraform(struct!.maxCapacity),
+    min_capacity: cdktn.stringToTerraform(struct!.minCapacity),
   }
 }
 
 
 export function appautoscalingScheduledActionScalableTargetActionToHclTerraform(struct?: AppautoscalingScheduledActionScalableTargetActionOutputReference | AppautoscalingScheduledActionScalableTargetAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_capacity: {
-      value: cdktf.stringToHclTerraform(struct!.maxCapacity),
+      value: cdktn.stringToHclTerraform(struct!.maxCapacity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     min_capacity: {
-      value: cdktf.stringToHclTerraform(struct!.minCapacity),
+      value: cdktn.stringToHclTerraform(struct!.minCapacity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,14 +111,14 @@ export function appautoscalingScheduledActionScalableTargetActionToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppautoscalingScheduledActionScalableTargetActionOutputReference extends cdktf.ComplexObject {
+export class AppautoscalingScheduledActionScalableTargetActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -185,7 +185,7 @@ export class AppautoscalingScheduledActionScalableTargetActionOutputReference ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appautoscaling_scheduled_action aws_appautoscaling_scheduled_action}
 */
-export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
+export class AppautoscalingScheduledAction extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -196,14 +196,14 @@ export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppautoscalingScheduledAction resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppautoscalingScheduledAction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppautoscalingScheduledAction to import
   * @param importFromId The id of the existing AppautoscalingScheduledAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appautoscaling_scheduled_action#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppautoscalingScheduledAction to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appautoscaling_scheduled_action", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appautoscaling_scheduled_action", importId: importFromId, provider });
       }
 
   // ===========
@@ -419,16 +419,16 @@ export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      end_time: cdktf.stringToTerraform(this._endTime),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      resource_id: cdktf.stringToTerraform(this._resourceId),
-      scalable_dimension: cdktf.stringToTerraform(this._scalableDimension),
-      schedule: cdktf.stringToTerraform(this._schedule),
-      service_namespace: cdktf.stringToTerraform(this._serviceNamespace),
-      start_time: cdktf.stringToTerraform(this._startTime),
-      timezone: cdktf.stringToTerraform(this._timezone),
+      end_time: cdktn.stringToTerraform(this._endTime),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      resource_id: cdktn.stringToTerraform(this._resourceId),
+      scalable_dimension: cdktn.stringToTerraform(this._scalableDimension),
+      schedule: cdktn.stringToTerraform(this._schedule),
+      service_namespace: cdktn.stringToTerraform(this._serviceNamespace),
+      start_time: cdktn.stringToTerraform(this._startTime),
+      timezone: cdktn.stringToTerraform(this._timezone),
       scalable_target_action: appautoscalingScheduledActionScalableTargetActionToTerraform(this._scalableTargetAction.internalValue),
     };
   }
@@ -436,61 +436,61 @@ export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       end_time: {
-        value: cdktf.stringToHclTerraform(this._endTime),
+        value: cdktn.stringToHclTerraform(this._endTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_id: {
-        value: cdktf.stringToHclTerraform(this._resourceId),
+        value: cdktn.stringToHclTerraform(this._resourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scalable_dimension: {
-        value: cdktf.stringToHclTerraform(this._scalableDimension),
+        value: cdktn.stringToHclTerraform(this._scalableDimension),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schedule: {
-        value: cdktf.stringToHclTerraform(this._schedule),
+        value: cdktn.stringToHclTerraform(this._schedule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_namespace: {
-        value: cdktf.stringToHclTerraform(this._serviceNamespace),
+        value: cdktn.stringToHclTerraform(this._serviceNamespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_time: {
-        value: cdktf.stringToHclTerraform(this._startTime),
+        value: cdktn.stringToHclTerraform(this._startTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timezone: {
-        value: cdktf.stringToHclTerraform(this._timezone),
+        value: cdktn.stringToHclTerraform(this._timezone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

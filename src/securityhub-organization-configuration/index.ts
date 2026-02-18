@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecurityhubOrganizationConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface SecurityhubOrganizationConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_organization_configuration#auto_enable SecurityhubOrganizationConfiguration#auto_enable}
   */
-  readonly autoEnable: boolean | cdktf.IResolvable;
+  readonly autoEnable: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_organization_configuration#auto_enable_standards SecurityhubOrganizationConfiguration#auto_enable_standards}
   */
@@ -54,24 +54,24 @@ export interface SecurityhubOrganizationConfigurationOrganizationConfiguration {
 }
 
 export function securityhubOrganizationConfigurationOrganizationConfigurationToTerraform(struct?: SecurityhubOrganizationConfigurationOrganizationConfigurationOutputReference | SecurityhubOrganizationConfigurationOrganizationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    configuration_type: cdktf.stringToTerraform(struct!.configurationType),
+    configuration_type: cdktn.stringToTerraform(struct!.configurationType),
   }
 }
 
 
 export function securityhubOrganizationConfigurationOrganizationConfigurationToHclTerraform(struct?: SecurityhubOrganizationConfigurationOrganizationConfigurationOutputReference | SecurityhubOrganizationConfigurationOrganizationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     configuration_type: {
-      value: cdktf.stringToHclTerraform(struct!.configurationType),
+      value: cdktn.stringToHclTerraform(struct!.configurationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -82,14 +82,14 @@ export function securityhubOrganizationConfigurationOrganizationConfigurationToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubOrganizationConfigurationOrganizationConfigurationOutputReference extends cdktf.ComplexObject {
+export class SecurityhubOrganizationConfigurationOrganizationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -142,39 +142,39 @@ export interface SecurityhubOrganizationConfigurationTimeouts {
   readonly update?: string;
 }
 
-export function securityhubOrganizationConfigurationTimeoutsToTerraform(struct?: SecurityhubOrganizationConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubOrganizationConfigurationTimeoutsToTerraform(struct?: SecurityhubOrganizationConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function securityhubOrganizationConfigurationTimeoutsToHclTerraform(struct?: SecurityhubOrganizationConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubOrganizationConfigurationTimeoutsToHclTerraform(struct?: SecurityhubOrganizationConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -185,19 +185,19 @@ export function securityhubOrganizationConfigurationTimeoutsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubOrganizationConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SecurityhubOrganizationConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SecurityhubOrganizationConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubOrganizationConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -218,7 +218,7 @@ export class SecurityhubOrganizationConfigurationTimeoutsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubOrganizationConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubOrganizationConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -226,7 +226,7 @@ export class SecurityhubOrganizationConfigurationTimeoutsOutputReference extends
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -291,7 +291,7 @@ export class SecurityhubOrganizationConfigurationTimeoutsOutputReference extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_organization_configuration aws_securityhub_organization_configuration}
 */
-export class SecurityhubOrganizationConfiguration extends cdktf.TerraformResource {
+export class SecurityhubOrganizationConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -302,14 +302,14 @@ export class SecurityhubOrganizationConfiguration extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecurityhubOrganizationConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecurityhubOrganizationConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityhubOrganizationConfiguration to import
   * @param importFromId The id of the existing SecurityhubOrganizationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_organization_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityhubOrganizationConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_securityhub_organization_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_securityhub_organization_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -352,11 +352,11 @@ export class SecurityhubOrganizationConfiguration extends cdktf.TerraformResourc
   // ==========
 
   // auto_enable - computed: false, optional: false, required: true
-  private _autoEnable?: boolean | cdktf.IResolvable; 
+  private _autoEnable?: boolean | cdktn.IResolvable; 
   public get autoEnable() {
     return this.getBooleanAttribute('auto_enable');
   }
-  public set autoEnable(value: boolean | cdktf.IResolvable) {
+  public set autoEnable(value: boolean | cdktn.IResolvable) {
     this._autoEnable = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -450,10 +450,10 @@ export class SecurityhubOrganizationConfiguration extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_enable: cdktf.booleanToTerraform(this._autoEnable),
-      auto_enable_standards: cdktf.stringToTerraform(this._autoEnableStandards),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      auto_enable: cdktn.booleanToTerraform(this._autoEnable),
+      auto_enable_standards: cdktn.stringToTerraform(this._autoEnableStandards),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
       organization_configuration: securityhubOrganizationConfigurationOrganizationConfigurationToTerraform(this._organizationConfiguration.internalValue),
       timeouts: securityhubOrganizationConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -462,25 +462,25 @@ export class SecurityhubOrganizationConfiguration extends cdktf.TerraformResourc
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_enable: {
-        value: cdktf.booleanToHclTerraform(this._autoEnable),
+        value: cdktn.booleanToHclTerraform(this._autoEnable),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auto_enable_standards: {
-        value: cdktf.stringToHclTerraform(this._autoEnableStandards),
+        value: cdktn.stringToHclTerraform(this._autoEnableStandards),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

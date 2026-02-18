@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CustomerprofilesProfileConfig extends cdktf.TerraformMetaArguments {
+export interface CustomerprofilesProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/customerprofiles_profile#account_number CustomerprofilesProfile#account_number}
   */
@@ -166,87 +166,87 @@ export interface CustomerprofilesProfileAddress {
 }
 
 export function customerprofilesProfileAddressToTerraform(struct?: CustomerprofilesProfileAddressOutputReference | CustomerprofilesProfileAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_1: cdktf.stringToTerraform(struct!.address1),
-    address_2: cdktf.stringToTerraform(struct!.address2),
-    address_3: cdktf.stringToTerraform(struct!.address3),
-    address_4: cdktf.stringToTerraform(struct!.address4),
-    city: cdktf.stringToTerraform(struct!.city),
-    country: cdktf.stringToTerraform(struct!.country),
-    county: cdktf.stringToTerraform(struct!.county),
-    postal_code: cdktf.stringToTerraform(struct!.postalCode),
-    province: cdktf.stringToTerraform(struct!.province),
-    state: cdktf.stringToTerraform(struct!.state),
+    address_1: cdktn.stringToTerraform(struct!.address1),
+    address_2: cdktn.stringToTerraform(struct!.address2),
+    address_3: cdktn.stringToTerraform(struct!.address3),
+    address_4: cdktn.stringToTerraform(struct!.address4),
+    city: cdktn.stringToTerraform(struct!.city),
+    country: cdktn.stringToTerraform(struct!.country),
+    county: cdktn.stringToTerraform(struct!.county),
+    postal_code: cdktn.stringToTerraform(struct!.postalCode),
+    province: cdktn.stringToTerraform(struct!.province),
+    state: cdktn.stringToTerraform(struct!.state),
   }
 }
 
 
 export function customerprofilesProfileAddressToHclTerraform(struct?: CustomerprofilesProfileAddressOutputReference | CustomerprofilesProfileAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_1: {
-      value: cdktf.stringToHclTerraform(struct!.address1),
+      value: cdktn.stringToHclTerraform(struct!.address1),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_2: {
-      value: cdktf.stringToHclTerraform(struct!.address2),
+      value: cdktn.stringToHclTerraform(struct!.address2),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_3: {
-      value: cdktf.stringToHclTerraform(struct!.address3),
+      value: cdktn.stringToHclTerraform(struct!.address3),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_4: {
-      value: cdktf.stringToHclTerraform(struct!.address4),
+      value: cdktn.stringToHclTerraform(struct!.address4),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     city: {
-      value: cdktf.stringToHclTerraform(struct!.city),
+      value: cdktn.stringToHclTerraform(struct!.city),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     country: {
-      value: cdktf.stringToHclTerraform(struct!.country),
+      value: cdktn.stringToHclTerraform(struct!.country),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     county: {
-      value: cdktf.stringToHclTerraform(struct!.county),
+      value: cdktn.stringToHclTerraform(struct!.county),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     postal_code: {
-      value: cdktf.stringToHclTerraform(struct!.postalCode),
+      value: cdktn.stringToHclTerraform(struct!.postalCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     province: {
-      value: cdktf.stringToHclTerraform(struct!.province),
+      value: cdktn.stringToHclTerraform(struct!.province),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -257,14 +257,14 @@ export function customerprofilesProfileAddressToHclTerraform(struct?: Customerpr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesProfileAddressOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesProfileAddressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -547,87 +547,87 @@ export interface CustomerprofilesProfileBillingAddress {
 }
 
 export function customerprofilesProfileBillingAddressToTerraform(struct?: CustomerprofilesProfileBillingAddressOutputReference | CustomerprofilesProfileBillingAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_1: cdktf.stringToTerraform(struct!.address1),
-    address_2: cdktf.stringToTerraform(struct!.address2),
-    address_3: cdktf.stringToTerraform(struct!.address3),
-    address_4: cdktf.stringToTerraform(struct!.address4),
-    city: cdktf.stringToTerraform(struct!.city),
-    country: cdktf.stringToTerraform(struct!.country),
-    county: cdktf.stringToTerraform(struct!.county),
-    postal_code: cdktf.stringToTerraform(struct!.postalCode),
-    province: cdktf.stringToTerraform(struct!.province),
-    state: cdktf.stringToTerraform(struct!.state),
+    address_1: cdktn.stringToTerraform(struct!.address1),
+    address_2: cdktn.stringToTerraform(struct!.address2),
+    address_3: cdktn.stringToTerraform(struct!.address3),
+    address_4: cdktn.stringToTerraform(struct!.address4),
+    city: cdktn.stringToTerraform(struct!.city),
+    country: cdktn.stringToTerraform(struct!.country),
+    county: cdktn.stringToTerraform(struct!.county),
+    postal_code: cdktn.stringToTerraform(struct!.postalCode),
+    province: cdktn.stringToTerraform(struct!.province),
+    state: cdktn.stringToTerraform(struct!.state),
   }
 }
 
 
 export function customerprofilesProfileBillingAddressToHclTerraform(struct?: CustomerprofilesProfileBillingAddressOutputReference | CustomerprofilesProfileBillingAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_1: {
-      value: cdktf.stringToHclTerraform(struct!.address1),
+      value: cdktn.stringToHclTerraform(struct!.address1),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_2: {
-      value: cdktf.stringToHclTerraform(struct!.address2),
+      value: cdktn.stringToHclTerraform(struct!.address2),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_3: {
-      value: cdktf.stringToHclTerraform(struct!.address3),
+      value: cdktn.stringToHclTerraform(struct!.address3),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_4: {
-      value: cdktf.stringToHclTerraform(struct!.address4),
+      value: cdktn.stringToHclTerraform(struct!.address4),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     city: {
-      value: cdktf.stringToHclTerraform(struct!.city),
+      value: cdktn.stringToHclTerraform(struct!.city),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     country: {
-      value: cdktf.stringToHclTerraform(struct!.country),
+      value: cdktn.stringToHclTerraform(struct!.country),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     county: {
-      value: cdktf.stringToHclTerraform(struct!.county),
+      value: cdktn.stringToHclTerraform(struct!.county),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     postal_code: {
-      value: cdktf.stringToHclTerraform(struct!.postalCode),
+      value: cdktn.stringToHclTerraform(struct!.postalCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     province: {
-      value: cdktf.stringToHclTerraform(struct!.province),
+      value: cdktn.stringToHclTerraform(struct!.province),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -638,14 +638,14 @@ export function customerprofilesProfileBillingAddressToHclTerraform(struct?: Cus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesProfileBillingAddressOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesProfileBillingAddressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -928,87 +928,87 @@ export interface CustomerprofilesProfileMailingAddress {
 }
 
 export function customerprofilesProfileMailingAddressToTerraform(struct?: CustomerprofilesProfileMailingAddressOutputReference | CustomerprofilesProfileMailingAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_1: cdktf.stringToTerraform(struct!.address1),
-    address_2: cdktf.stringToTerraform(struct!.address2),
-    address_3: cdktf.stringToTerraform(struct!.address3),
-    address_4: cdktf.stringToTerraform(struct!.address4),
-    city: cdktf.stringToTerraform(struct!.city),
-    country: cdktf.stringToTerraform(struct!.country),
-    county: cdktf.stringToTerraform(struct!.county),
-    postal_code: cdktf.stringToTerraform(struct!.postalCode),
-    province: cdktf.stringToTerraform(struct!.province),
-    state: cdktf.stringToTerraform(struct!.state),
+    address_1: cdktn.stringToTerraform(struct!.address1),
+    address_2: cdktn.stringToTerraform(struct!.address2),
+    address_3: cdktn.stringToTerraform(struct!.address3),
+    address_4: cdktn.stringToTerraform(struct!.address4),
+    city: cdktn.stringToTerraform(struct!.city),
+    country: cdktn.stringToTerraform(struct!.country),
+    county: cdktn.stringToTerraform(struct!.county),
+    postal_code: cdktn.stringToTerraform(struct!.postalCode),
+    province: cdktn.stringToTerraform(struct!.province),
+    state: cdktn.stringToTerraform(struct!.state),
   }
 }
 
 
 export function customerprofilesProfileMailingAddressToHclTerraform(struct?: CustomerprofilesProfileMailingAddressOutputReference | CustomerprofilesProfileMailingAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_1: {
-      value: cdktf.stringToHclTerraform(struct!.address1),
+      value: cdktn.stringToHclTerraform(struct!.address1),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_2: {
-      value: cdktf.stringToHclTerraform(struct!.address2),
+      value: cdktn.stringToHclTerraform(struct!.address2),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_3: {
-      value: cdktf.stringToHclTerraform(struct!.address3),
+      value: cdktn.stringToHclTerraform(struct!.address3),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_4: {
-      value: cdktf.stringToHclTerraform(struct!.address4),
+      value: cdktn.stringToHclTerraform(struct!.address4),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     city: {
-      value: cdktf.stringToHclTerraform(struct!.city),
+      value: cdktn.stringToHclTerraform(struct!.city),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     country: {
-      value: cdktf.stringToHclTerraform(struct!.country),
+      value: cdktn.stringToHclTerraform(struct!.country),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     county: {
-      value: cdktf.stringToHclTerraform(struct!.county),
+      value: cdktn.stringToHclTerraform(struct!.county),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     postal_code: {
-      value: cdktf.stringToHclTerraform(struct!.postalCode),
+      value: cdktn.stringToHclTerraform(struct!.postalCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     province: {
-      value: cdktf.stringToHclTerraform(struct!.province),
+      value: cdktn.stringToHclTerraform(struct!.province),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1019,14 +1019,14 @@ export function customerprofilesProfileMailingAddressToHclTerraform(struct?: Cus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesProfileMailingAddressOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesProfileMailingAddressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1309,87 +1309,87 @@ export interface CustomerprofilesProfileShippingAddress {
 }
 
 export function customerprofilesProfileShippingAddressToTerraform(struct?: CustomerprofilesProfileShippingAddressOutputReference | CustomerprofilesProfileShippingAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_1: cdktf.stringToTerraform(struct!.address1),
-    address_2: cdktf.stringToTerraform(struct!.address2),
-    address_3: cdktf.stringToTerraform(struct!.address3),
-    address_4: cdktf.stringToTerraform(struct!.address4),
-    city: cdktf.stringToTerraform(struct!.city),
-    country: cdktf.stringToTerraform(struct!.country),
-    county: cdktf.stringToTerraform(struct!.county),
-    postal_code: cdktf.stringToTerraform(struct!.postalCode),
-    province: cdktf.stringToTerraform(struct!.province),
-    state: cdktf.stringToTerraform(struct!.state),
+    address_1: cdktn.stringToTerraform(struct!.address1),
+    address_2: cdktn.stringToTerraform(struct!.address2),
+    address_3: cdktn.stringToTerraform(struct!.address3),
+    address_4: cdktn.stringToTerraform(struct!.address4),
+    city: cdktn.stringToTerraform(struct!.city),
+    country: cdktn.stringToTerraform(struct!.country),
+    county: cdktn.stringToTerraform(struct!.county),
+    postal_code: cdktn.stringToTerraform(struct!.postalCode),
+    province: cdktn.stringToTerraform(struct!.province),
+    state: cdktn.stringToTerraform(struct!.state),
   }
 }
 
 
 export function customerprofilesProfileShippingAddressToHclTerraform(struct?: CustomerprofilesProfileShippingAddressOutputReference | CustomerprofilesProfileShippingAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_1: {
-      value: cdktf.stringToHclTerraform(struct!.address1),
+      value: cdktn.stringToHclTerraform(struct!.address1),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_2: {
-      value: cdktf.stringToHclTerraform(struct!.address2),
+      value: cdktn.stringToHclTerraform(struct!.address2),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_3: {
-      value: cdktf.stringToHclTerraform(struct!.address3),
+      value: cdktn.stringToHclTerraform(struct!.address3),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_4: {
-      value: cdktf.stringToHclTerraform(struct!.address4),
+      value: cdktn.stringToHclTerraform(struct!.address4),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     city: {
-      value: cdktf.stringToHclTerraform(struct!.city),
+      value: cdktn.stringToHclTerraform(struct!.city),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     country: {
-      value: cdktf.stringToHclTerraform(struct!.country),
+      value: cdktn.stringToHclTerraform(struct!.country),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     county: {
-      value: cdktf.stringToHclTerraform(struct!.county),
+      value: cdktn.stringToHclTerraform(struct!.county),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     postal_code: {
-      value: cdktf.stringToHclTerraform(struct!.postalCode),
+      value: cdktn.stringToHclTerraform(struct!.postalCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     province: {
-      value: cdktf.stringToHclTerraform(struct!.province),
+      value: cdktn.stringToHclTerraform(struct!.province),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1400,14 +1400,14 @@ export function customerprofilesProfileShippingAddressToHclTerraform(struct?: Cu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesProfileShippingAddressOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesProfileShippingAddressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1650,7 +1650,7 @@ export class CustomerprofilesProfileShippingAddressOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/customerprofiles_profile aws_customerprofiles_profile}
 */
-export class CustomerprofilesProfile extends cdktf.TerraformResource {
+export class CustomerprofilesProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1661,14 +1661,14 @@ export class CustomerprofilesProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CustomerprofilesProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CustomerprofilesProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomerprofilesProfile to import
   * @param importFromId The id of the existing CustomerprofilesProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/customerprofiles_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomerprofilesProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_customerprofiles_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_customerprofiles_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -2115,26 +2115,26 @@ export class CustomerprofilesProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_number: cdktf.stringToTerraform(this._accountNumber),
-      additional_information: cdktf.stringToTerraform(this._additionalInformation),
-      attributes: cdktf.hashMapper(cdktf.stringToTerraform)(this._attributes),
-      birth_date: cdktf.stringToTerraform(this._birthDate),
-      business_email_address: cdktf.stringToTerraform(this._businessEmailAddress),
-      business_name: cdktf.stringToTerraform(this._businessName),
-      business_phone_number: cdktf.stringToTerraform(this._businessPhoneNumber),
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      email_address: cdktf.stringToTerraform(this._emailAddress),
-      first_name: cdktf.stringToTerraform(this._firstName),
-      gender_string: cdktf.stringToTerraform(this._genderString),
-      home_phone_number: cdktf.stringToTerraform(this._homePhoneNumber),
-      id: cdktf.stringToTerraform(this._id),
-      last_name: cdktf.stringToTerraform(this._lastName),
-      middle_name: cdktf.stringToTerraform(this._middleName),
-      mobile_phone_number: cdktf.stringToTerraform(this._mobilePhoneNumber),
-      party_type_string: cdktf.stringToTerraform(this._partyTypeString),
-      personal_email_address: cdktf.stringToTerraform(this._personalEmailAddress),
-      phone_number: cdktf.stringToTerraform(this._phoneNumber),
-      region: cdktf.stringToTerraform(this._region),
+      account_number: cdktn.stringToTerraform(this._accountNumber),
+      additional_information: cdktn.stringToTerraform(this._additionalInformation),
+      attributes: cdktn.hashMapper(cdktn.stringToTerraform)(this._attributes),
+      birth_date: cdktn.stringToTerraform(this._birthDate),
+      business_email_address: cdktn.stringToTerraform(this._businessEmailAddress),
+      business_name: cdktn.stringToTerraform(this._businessName),
+      business_phone_number: cdktn.stringToTerraform(this._businessPhoneNumber),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      email_address: cdktn.stringToTerraform(this._emailAddress),
+      first_name: cdktn.stringToTerraform(this._firstName),
+      gender_string: cdktn.stringToTerraform(this._genderString),
+      home_phone_number: cdktn.stringToTerraform(this._homePhoneNumber),
+      id: cdktn.stringToTerraform(this._id),
+      last_name: cdktn.stringToTerraform(this._lastName),
+      middle_name: cdktn.stringToTerraform(this._middleName),
+      mobile_phone_number: cdktn.stringToTerraform(this._mobilePhoneNumber),
+      party_type_string: cdktn.stringToTerraform(this._partyTypeString),
+      personal_email_address: cdktn.stringToTerraform(this._personalEmailAddress),
+      phone_number: cdktn.stringToTerraform(this._phoneNumber),
+      region: cdktn.stringToTerraform(this._region),
       address: customerprofilesProfileAddressToTerraform(this._address.internalValue),
       billing_address: customerprofilesProfileBillingAddressToTerraform(this._billingAddress.internalValue),
       mailing_address: customerprofilesProfileMailingAddressToTerraform(this._mailingAddress.internalValue),
@@ -2145,121 +2145,121 @@ export class CustomerprofilesProfile extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_number: {
-        value: cdktf.stringToHclTerraform(this._accountNumber),
+        value: cdktn.stringToHclTerraform(this._accountNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       additional_information: {
-        value: cdktf.stringToHclTerraform(this._additionalInformation),
+        value: cdktn.stringToHclTerraform(this._additionalInformation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       attributes: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._attributes),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._attributes),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       birth_date: {
-        value: cdktf.stringToHclTerraform(this._birthDate),
+        value: cdktn.stringToHclTerraform(this._birthDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       business_email_address: {
-        value: cdktf.stringToHclTerraform(this._businessEmailAddress),
+        value: cdktn.stringToHclTerraform(this._businessEmailAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       business_name: {
-        value: cdktf.stringToHclTerraform(this._businessName),
+        value: cdktn.stringToHclTerraform(this._businessName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       business_phone_number: {
-        value: cdktf.stringToHclTerraform(this._businessPhoneNumber),
+        value: cdktn.stringToHclTerraform(this._businessPhoneNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email_address: {
-        value: cdktf.stringToHclTerraform(this._emailAddress),
+        value: cdktn.stringToHclTerraform(this._emailAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       first_name: {
-        value: cdktf.stringToHclTerraform(this._firstName),
+        value: cdktn.stringToHclTerraform(this._firstName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gender_string: {
-        value: cdktf.stringToHclTerraform(this._genderString),
+        value: cdktn.stringToHclTerraform(this._genderString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       home_phone_number: {
-        value: cdktf.stringToHclTerraform(this._homePhoneNumber),
+        value: cdktn.stringToHclTerraform(this._homePhoneNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       last_name: {
-        value: cdktf.stringToHclTerraform(this._lastName),
+        value: cdktn.stringToHclTerraform(this._lastName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       middle_name: {
-        value: cdktf.stringToHclTerraform(this._middleName),
+        value: cdktn.stringToHclTerraform(this._middleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mobile_phone_number: {
-        value: cdktf.stringToHclTerraform(this._mobilePhoneNumber),
+        value: cdktn.stringToHclTerraform(this._mobilePhoneNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       party_type_string: {
-        value: cdktf.stringToHclTerraform(this._partyTypeString),
+        value: cdktn.stringToHclTerraform(this._partyTypeString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       personal_email_address: {
-        value: cdktf.stringToHclTerraform(this._personalEmailAddress),
+        value: cdktn.stringToHclTerraform(this._personalEmailAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       phone_number: {
-        value: cdktf.stringToHclTerraform(this._phoneNumber),
+        value: cdktn.stringToHclTerraform(this._phoneNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

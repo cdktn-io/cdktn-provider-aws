@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServicequotasTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface ServicequotasTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/servicequotas_template#aws_region ServicequotasTemplate#aws_region}
   */
@@ -37,7 +37,7 @@ export interface ServicequotasTemplateConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/servicequotas_template aws_servicequotas_template}
 */
-export class ServicequotasTemplate extends cdktf.TerraformResource {
+export class ServicequotasTemplate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -48,14 +48,14 @@ export class ServicequotasTemplate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServicequotasTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServicequotasTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicequotasTemplate to import
   * @param importFromId The id of the existing ServicequotasTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/servicequotas_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicequotasTemplate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_servicequotas_template", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_servicequotas_template", importId: importFromId, provider });
       }
 
   // ===========
@@ -198,42 +198,42 @@ export class ServicequotasTemplate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_region: cdktf.stringToTerraform(this._awsRegion),
-      quota_code: cdktf.stringToTerraform(this._quotaCode),
-      region: cdktf.stringToTerraform(this._region),
-      service_code: cdktf.stringToTerraform(this._serviceCode),
-      value: cdktf.numberToTerraform(this._value),
+      aws_region: cdktn.stringToTerraform(this._awsRegion),
+      quota_code: cdktn.stringToTerraform(this._quotaCode),
+      region: cdktn.stringToTerraform(this._region),
+      service_code: cdktn.stringToTerraform(this._serviceCode),
+      value: cdktn.numberToTerraform(this._value),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_region: {
-        value: cdktf.stringToHclTerraform(this._awsRegion),
+        value: cdktn.stringToHclTerraform(this._awsRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       quota_code: {
-        value: cdktf.stringToHclTerraform(this._quotaCode),
+        value: cdktn.stringToHclTerraform(this._quotaCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_code: {
-        value: cdktf.stringToHclTerraform(this._serviceCode),
+        value: cdktn.stringToHclTerraform(this._serviceCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       value: {
-        value: cdktf.numberToHclTerraform(this._value),
+        value: cdktn.numberToHclTerraform(this._value),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

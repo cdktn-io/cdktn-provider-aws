@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Route53KeySigningKeyConfig extends cdktf.TerraformMetaArguments {
+export interface Route53KeySigningKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_key_signing_key#hosted_zone_id Route53KeySigningKey#hosted_zone_id}
   */
@@ -57,39 +57,39 @@ export interface Route53KeySigningKeyTimeouts {
   readonly update?: string;
 }
 
-export function route53KeySigningKeyTimeoutsToTerraform(struct?: Route53KeySigningKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53KeySigningKeyTimeoutsToTerraform(struct?: Route53KeySigningKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function route53KeySigningKeyTimeoutsToHclTerraform(struct?: Route53KeySigningKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53KeySigningKeyTimeoutsToHclTerraform(struct?: Route53KeySigningKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,19 +100,19 @@ export function route53KeySigningKeyTimeoutsToHclTerraform(struct?: Route53KeySi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53KeySigningKeyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Route53KeySigningKeyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Route53KeySigningKeyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53KeySigningKeyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,7 +133,7 @@ export class Route53KeySigningKeyTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53KeySigningKeyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53KeySigningKeyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -141,7 +141,7 @@ export class Route53KeySigningKeyTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -206,7 +206,7 @@ export class Route53KeySigningKeyTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_key_signing_key aws_route53_key_signing_key}
 */
-export class Route53KeySigningKey extends cdktf.TerraformResource {
+export class Route53KeySigningKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -217,14 +217,14 @@ export class Route53KeySigningKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Route53KeySigningKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Route53KeySigningKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53KeySigningKey to import
   * @param importFromId The id of the existing Route53KeySigningKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_key_signing_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53KeySigningKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_key_signing_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_key_signing_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -409,11 +409,11 @@ export class Route53KeySigningKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hosted_zone_id: cdktf.stringToTerraform(this._hostedZoneId),
-      id: cdktf.stringToTerraform(this._id),
-      key_management_service_arn: cdktf.stringToTerraform(this._keyManagementServiceArn),
-      name: cdktf.stringToTerraform(this._name),
-      status: cdktf.stringToTerraform(this._status),
+      hosted_zone_id: cdktn.stringToTerraform(this._hostedZoneId),
+      id: cdktn.stringToTerraform(this._id),
+      key_management_service_arn: cdktn.stringToTerraform(this._keyManagementServiceArn),
+      name: cdktn.stringToTerraform(this._name),
+      status: cdktn.stringToTerraform(this._status),
       timeouts: route53KeySigningKeyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -421,31 +421,31 @@ export class Route53KeySigningKey extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       hosted_zone_id: {
-        value: cdktf.stringToHclTerraform(this._hostedZoneId),
+        value: cdktn.stringToHclTerraform(this._hostedZoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_management_service_arn: {
-        value: cdktf.stringToHclTerraform(this._keyManagementServiceArn),
+        value: cdktn.stringToHclTerraform(this._keyManagementServiceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

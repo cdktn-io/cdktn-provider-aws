@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KinesisFirehoseDeliveryStreamConfig extends cdktf.TerraformMetaArguments {
+export interface KinesisFirehoseDeliveryStreamConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#arn KinesisFirehoseDeliveryStream#arn}
   */
@@ -136,7 +136,7 @@ export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwat
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -148,38 +148,38 @@ export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwat
 }
 
 export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -190,14 +190,14 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -235,11 +235,11 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLo
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -293,32 +293,32 @@ export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessi
   readonly parameterValue: string;
 }
 
-export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameter_name: cdktf.stringToTerraform(struct!.parameterName),
-    parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
+    parameter_name: cdktn.stringToTerraform(struct!.parameterName),
+    parameter_value: cdktn.stringToTerraform(struct!.parameterValue),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameter_name: {
-      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      value: cdktn.stringToHclTerraform(struct!.parameterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter_value: {
-      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      value: cdktn.stringToHclTerraform(struct!.parameterValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -329,9 +329,9 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -339,11 +339,11 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -360,14 +360,14 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._parameterName = undefined;
       this._parameterValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -406,15 +406,15 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
   }
 }
 
-export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -435,35 +435,35 @@ export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessi
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#parameters KinesisFirehoseDeliveryStream#parameters}
   */
-  readonly parameters?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable;
+  readonly parameters?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable;
 }
 
-export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
+    type: cdktn.stringToTerraform(struct!.type),
+    parameters: cdktn.listMapper(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
       isBlock: true,
       type: "set",
       storageClassType: "KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersList",
@@ -474,9 +474,9 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -484,11 +484,11 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -505,14 +505,14 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._parameters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -542,7 +542,7 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
   public get parameters() {
     return this._parameters;
   }
-  public putParameters(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable) {
+  public putParameters(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable) {
     this._parameters.internalValue = value;
   }
   public resetParameters() {
@@ -554,15 +554,15 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
   }
 }
 
-export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -577,41 +577,41 @@ export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessi
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * processors block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#processors KinesisFirehoseDeliveryStream#processors}
   */
-  readonly processors?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable;
+  readonly processors?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable;
 }
 
 export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    processors: cdktn.listMapper(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     processors: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
       isBlock: true,
       type: "list",
       storageClassType: "KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsList",
@@ -622,14 +622,14 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -661,11 +661,11 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -681,7 +681,7 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
   public get processors() {
     return this._processors;
   }
-  public putProcessors(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
+  public putProcessors(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable) {
     this._processors.internalValue = value;
   }
   public resetProcessors() {
@@ -696,7 +696,7 @@ export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Config
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -708,38 +708,38 @@ export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Config
 }
 
 export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -750,14 +750,14 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -795,11 +795,11 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configurat
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -884,74 +884,74 @@ export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Config
 }
 
 export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_arn: cdktf.stringToTerraform(struct!.bucketArn),
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    compression_format: cdktf.stringToTerraform(struct!.compressionFormat),
-    error_output_prefix: cdktf.stringToTerraform(struct!.errorOutputPrefix),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    bucket_arn: cdktn.stringToTerraform(struct!.bucketArn),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    compression_format: cdktn.stringToTerraform(struct!.compressionFormat),
+    error_output_prefix: cdktn.stringToTerraform(struct!.errorOutputPrefix),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      value: cdktn.stringToHclTerraform(struct!.bucketArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     compression_format: {
-      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      value: cdktn.stringToHclTerraform(struct!.compressionFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     error_output_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      value: cdktn.stringToHclTerraform(struct!.errorOutputPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -968,14 +968,14 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1202,38 +1202,38 @@ export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfi
 }
 
 export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigToTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1244,14 +1244,14 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1304,7 +1304,7 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOut
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -1317,7 +1317,7 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOut
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -1400,21 +1400,21 @@ export interface KinesisFirehoseDeliveryStreamElasticsearchConfiguration {
 }
 
 export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    cluster_endpoint: cdktf.stringToTerraform(struct!.clusterEndpoint),
-    domain_arn: cdktf.stringToTerraform(struct!.domainArn),
-    index_name: cdktf.stringToTerraform(struct!.indexName),
-    index_rotation_period: cdktf.stringToTerraform(struct!.indexRotationPeriod),
-    retry_duration: cdktf.numberToTerraform(struct!.retryDuration),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    s3_backup_mode: cdktf.stringToTerraform(struct!.s3BackupMode),
-    type_name: cdktf.stringToTerraform(struct!.typeName),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    cluster_endpoint: cdktn.stringToTerraform(struct!.clusterEndpoint),
+    domain_arn: cdktn.stringToTerraform(struct!.domainArn),
+    index_name: cdktn.stringToTerraform(struct!.indexName),
+    index_rotation_period: cdktn.stringToTerraform(struct!.indexRotationPeriod),
+    retry_duration: cdktn.numberToTerraform(struct!.retryDuration),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    s3_backup_mode: cdktn.stringToTerraform(struct!.s3BackupMode),
+    type_name: cdktn.stringToTerraform(struct!.typeName),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
     processing_configuration: kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationToTerraform(struct!.processingConfiguration),
     s3_configuration: kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationToTerraform(struct!.s3Configuration),
@@ -1424,67 +1424,67 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationToTerrafo
 
 
 export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     cluster_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.clusterEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.clusterEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     domain_arn: {
-      value: cdktf.stringToHclTerraform(struct!.domainArn),
+      value: cdktn.stringToHclTerraform(struct!.domainArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     index_name: {
-      value: cdktf.stringToHclTerraform(struct!.indexName),
+      value: cdktn.stringToHclTerraform(struct!.indexName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     index_rotation_period: {
-      value: cdktf.stringToHclTerraform(struct!.indexRotationPeriod),
+      value: cdktn.stringToHclTerraform(struct!.indexRotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retry_duration: {
-      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      value: cdktn.numberToHclTerraform(struct!.retryDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_backup_mode: {
-      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      value: cdktn.stringToHclTerraform(struct!.s3BackupMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type_name: {
-      value: cdktf.stringToHclTerraform(struct!.typeName),
+      value: cdktn.stringToHclTerraform(struct!.typeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1519,14 +1519,14 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1848,7 +1848,7 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchL
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -1860,38 +1860,38 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchL
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1902,14 +1902,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1947,11 +1947,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggi
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -2002,24 +2002,24 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    timestamp_formats: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.timestampFormats),
+    timestamp_formats: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.timestampFormats),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     timestamp_formats: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.timestampFormats),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.timestampFormats),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2030,14 +2030,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2082,7 +2082,7 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#case_insensitive KinesisFirehoseDeliveryStream#case_insensitive}
   */
-  readonly caseInsensitive?: boolean | cdktf.IResolvable;
+  readonly caseInsensitive?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#column_to_json_key_mappings KinesisFirehoseDeliveryStream#column_to_json_key_mappings}
   */
@@ -2090,42 +2090,42 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#convert_dots_in_json_keys_to_underscores KinesisFirehoseDeliveryStream#convert_dots_in_json_keys_to_underscores}
   */
-  readonly convertDotsInJsonKeysToUnderscores?: boolean | cdktf.IResolvable;
+  readonly convertDotsInJsonKeysToUnderscores?: boolean | cdktn.IResolvable;
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    case_insensitive: cdktf.booleanToTerraform(struct!.caseInsensitive),
-    column_to_json_key_mappings: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.columnToJsonKeyMappings),
-    convert_dots_in_json_keys_to_underscores: cdktf.booleanToTerraform(struct!.convertDotsInJsonKeysToUnderscores),
+    case_insensitive: cdktn.booleanToTerraform(struct!.caseInsensitive),
+    column_to_json_key_mappings: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.columnToJsonKeyMappings),
+    convert_dots_in_json_keys_to_underscores: cdktn.booleanToTerraform(struct!.convertDotsInJsonKeysToUnderscores),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     case_insensitive: {
-      value: cdktf.booleanToHclTerraform(struct!.caseInsensitive),
+      value: cdktn.booleanToHclTerraform(struct!.caseInsensitive),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     column_to_json_key_mappings: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.columnToJsonKeyMappings),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.columnToJsonKeyMappings),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     convert_dots_in_json_keys_to_underscores: {
-      value: cdktf.booleanToHclTerraform(struct!.convertDotsInJsonKeysToUnderscores),
+      value: cdktn.booleanToHclTerraform(struct!.convertDotsInJsonKeysToUnderscores),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2136,14 +2136,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2181,11 +2181,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   }
 
   // case_insensitive - computed: false, optional: true, required: false
-  private _caseInsensitive?: boolean | cdktf.IResolvable; 
+  private _caseInsensitive?: boolean | cdktn.IResolvable; 
   public get caseInsensitive() {
     return this.getBooleanAttribute('case_insensitive');
   }
-  public set caseInsensitive(value: boolean | cdktf.IResolvable) {
+  public set caseInsensitive(value: boolean | cdktn.IResolvable) {
     this._caseInsensitive = value;
   }
   public resetCaseInsensitive() {
@@ -2213,11 +2213,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   }
 
   // convert_dots_in_json_keys_to_underscores - computed: false, optional: true, required: false
-  private _convertDotsInJsonKeysToUnderscores?: boolean | cdktf.IResolvable; 
+  private _convertDotsInJsonKeysToUnderscores?: boolean | cdktn.IResolvable; 
   public get convertDotsInJsonKeysToUnderscores() {
     return this.getBooleanAttribute('convert_dots_in_json_keys_to_underscores');
   }
-  public set convertDotsInJsonKeysToUnderscores(value: boolean | cdktf.IResolvable) {
+  public set convertDotsInJsonKeysToUnderscores(value: boolean | cdktn.IResolvable) {
     this._convertDotsInJsonKeysToUnderscores = value;
   }
   public resetConvertDotsInJsonKeysToUnderscores() {
@@ -2244,8 +2244,8 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2256,8 +2256,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2279,14 +2279,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2359,8 +2359,8 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2370,8 +2370,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2387,14 +2387,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2456,7 +2456,7 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enable_padding KinesisFirehoseDeliveryStream#enable_padding}
   */
-  readonly enablePadding?: boolean | cdktf.IResolvable;
+  readonly enablePadding?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#format_version KinesisFirehoseDeliveryStream#format_version}
   */
@@ -2476,87 +2476,87 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    block_size_bytes: cdktf.numberToTerraform(struct!.blockSizeBytes),
-    bloom_filter_columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.bloomFilterColumns),
-    bloom_filter_false_positive_probability: cdktf.numberToTerraform(struct!.bloomFilterFalsePositiveProbability),
-    compression: cdktf.stringToTerraform(struct!.compression),
-    dictionary_key_threshold: cdktf.numberToTerraform(struct!.dictionaryKeyThreshold),
-    enable_padding: cdktf.booleanToTerraform(struct!.enablePadding),
-    format_version: cdktf.stringToTerraform(struct!.formatVersion),
-    padding_tolerance: cdktf.numberToTerraform(struct!.paddingTolerance),
-    row_index_stride: cdktf.numberToTerraform(struct!.rowIndexStride),
-    stripe_size_bytes: cdktf.numberToTerraform(struct!.stripeSizeBytes),
+    block_size_bytes: cdktn.numberToTerraform(struct!.blockSizeBytes),
+    bloom_filter_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.bloomFilterColumns),
+    bloom_filter_false_positive_probability: cdktn.numberToTerraform(struct!.bloomFilterFalsePositiveProbability),
+    compression: cdktn.stringToTerraform(struct!.compression),
+    dictionary_key_threshold: cdktn.numberToTerraform(struct!.dictionaryKeyThreshold),
+    enable_padding: cdktn.booleanToTerraform(struct!.enablePadding),
+    format_version: cdktn.stringToTerraform(struct!.formatVersion),
+    padding_tolerance: cdktn.numberToTerraform(struct!.paddingTolerance),
+    row_index_stride: cdktn.numberToTerraform(struct!.rowIndexStride),
+    stripe_size_bytes: cdktn.numberToTerraform(struct!.stripeSizeBytes),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     block_size_bytes: {
-      value: cdktf.numberToHclTerraform(struct!.blockSizeBytes),
+      value: cdktn.numberToHclTerraform(struct!.blockSizeBytes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     bloom_filter_columns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.bloomFilterColumns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.bloomFilterColumns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     bloom_filter_false_positive_probability: {
-      value: cdktf.numberToHclTerraform(struct!.bloomFilterFalsePositiveProbability),
+      value: cdktn.numberToHclTerraform(struct!.bloomFilterFalsePositiveProbability),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     compression: {
-      value: cdktf.stringToHclTerraform(struct!.compression),
+      value: cdktn.stringToHclTerraform(struct!.compression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dictionary_key_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.dictionaryKeyThreshold),
+      value: cdktn.numberToHclTerraform(struct!.dictionaryKeyThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     enable_padding: {
-      value: cdktf.booleanToHclTerraform(struct!.enablePadding),
+      value: cdktn.booleanToHclTerraform(struct!.enablePadding),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     format_version: {
-      value: cdktf.stringToHclTerraform(struct!.formatVersion),
+      value: cdktn.stringToHclTerraform(struct!.formatVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     padding_tolerance: {
-      value: cdktf.numberToHclTerraform(struct!.paddingTolerance),
+      value: cdktn.numberToHclTerraform(struct!.paddingTolerance),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     row_index_stride: {
-      value: cdktf.numberToHclTerraform(struct!.rowIndexStride),
+      value: cdktn.numberToHclTerraform(struct!.rowIndexStride),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     stripe_size_bytes: {
-      value: cdktf.numberToHclTerraform(struct!.stripeSizeBytes),
+      value: cdktn.numberToHclTerraform(struct!.stripeSizeBytes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2567,14 +2567,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2734,11 +2734,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   }
 
   // enable_padding - computed: false, optional: true, required: false
-  private _enablePadding?: boolean | cdktf.IResolvable; 
+  private _enablePadding?: boolean | cdktn.IResolvable; 
   public get enablePadding() {
     return this.getBooleanAttribute('enable_padding');
   }
-  public set enablePadding(value: boolean | cdktf.IResolvable) {
+  public set enablePadding(value: boolean | cdktn.IResolvable) {
     this._enablePadding = value;
   }
   public resetEnablePadding() {
@@ -2825,7 +2825,7 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enable_dictionary_compression KinesisFirehoseDeliveryStream#enable_dictionary_compression}
   */
-  readonly enableDictionaryCompression?: boolean | cdktf.IResolvable;
+  readonly enableDictionaryCompression?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#max_padding_bytes KinesisFirehoseDeliveryStream#max_padding_bytes}
   */
@@ -2841,59 +2841,59 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    block_size_bytes: cdktf.numberToTerraform(struct!.blockSizeBytes),
-    compression: cdktf.stringToTerraform(struct!.compression),
-    enable_dictionary_compression: cdktf.booleanToTerraform(struct!.enableDictionaryCompression),
-    max_padding_bytes: cdktf.numberToTerraform(struct!.maxPaddingBytes),
-    page_size_bytes: cdktf.numberToTerraform(struct!.pageSizeBytes),
-    writer_version: cdktf.stringToTerraform(struct!.writerVersion),
+    block_size_bytes: cdktn.numberToTerraform(struct!.blockSizeBytes),
+    compression: cdktn.stringToTerraform(struct!.compression),
+    enable_dictionary_compression: cdktn.booleanToTerraform(struct!.enableDictionaryCompression),
+    max_padding_bytes: cdktn.numberToTerraform(struct!.maxPaddingBytes),
+    page_size_bytes: cdktn.numberToTerraform(struct!.pageSizeBytes),
+    writer_version: cdktn.stringToTerraform(struct!.writerVersion),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     block_size_bytes: {
-      value: cdktf.numberToHclTerraform(struct!.blockSizeBytes),
+      value: cdktn.numberToHclTerraform(struct!.blockSizeBytes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     compression: {
-      value: cdktf.stringToHclTerraform(struct!.compression),
+      value: cdktn.stringToHclTerraform(struct!.compression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_dictionary_compression: {
-      value: cdktf.booleanToHclTerraform(struct!.enableDictionaryCompression),
+      value: cdktn.booleanToHclTerraform(struct!.enableDictionaryCompression),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_padding_bytes: {
-      value: cdktf.numberToHclTerraform(struct!.maxPaddingBytes),
+      value: cdktn.numberToHclTerraform(struct!.maxPaddingBytes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     page_size_bytes: {
-      value: cdktf.numberToHclTerraform(struct!.pageSizeBytes),
+      value: cdktn.numberToHclTerraform(struct!.pageSizeBytes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     writer_version: {
-      value: cdktf.stringToHclTerraform(struct!.writerVersion),
+      value: cdktn.stringToHclTerraform(struct!.writerVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2904,14 +2904,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2999,11 +2999,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   }
 
   // enable_dictionary_compression - computed: false, optional: true, required: false
-  private _enableDictionaryCompression?: boolean | cdktf.IResolvable; 
+  private _enableDictionaryCompression?: boolean | cdktn.IResolvable; 
   public get enableDictionaryCompression() {
     return this.getBooleanAttribute('enable_dictionary_compression');
   }
-  public set enableDictionaryCompression(value: boolean | cdktf.IResolvable) {
+  public set enableDictionaryCompression(value: boolean | cdktn.IResolvable) {
     this._enableDictionaryCompression = value;
   }
   public resetEnableDictionaryCompression() {
@@ -3078,8 +3078,8 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3090,8 +3090,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3113,14 +3113,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3193,8 +3193,8 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3204,8 +3204,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3221,14 +3221,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3294,59 +3294,59 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog_id: cdktf.stringToTerraform(struct!.catalogId),
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    region: cdktf.stringToTerraform(struct!.region),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    table_name: cdktf.stringToTerraform(struct!.tableName),
-    version_id: cdktf.stringToTerraform(struct!.versionId),
+    catalog_id: cdktn.stringToTerraform(struct!.catalogId),
+    database_name: cdktn.stringToTerraform(struct!.databaseName),
+    region: cdktn.stringToTerraform(struct!.region),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
+    version_id: cdktn.stringToTerraform(struct!.versionId),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog_id: {
-      value: cdktf.stringToHclTerraform(struct!.catalogId),
+      value: cdktn.stringToHclTerraform(struct!.catalogId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      value: cdktn.stringToHclTerraform(struct!.databaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version_id: {
-      value: cdktf.stringToHclTerraform(struct!.versionId),
+      value: cdktn.stringToHclTerraform(struct!.versionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3357,14 +3357,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3510,7 +3510,7 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * input_format_configuration block
   *
@@ -3532,12 +3532,12 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
     input_format_configuration: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationToTerraform(struct!.inputFormatConfiguration),
     output_format_configuration: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationToTerraform(struct!.outputFormatConfiguration),
     schema_configuration: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationToTerraform(struct!.schemaConfiguration),
@@ -3546,13 +3546,13 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3581,14 +3581,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3632,11 +3632,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -3690,7 +3690,7 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPart
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#retry_duration KinesisFirehoseDeliveryStream#retry_duration}
   */
@@ -3698,31 +3698,31 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPart
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    retry_duration: cdktf.numberToTerraform(struct!.retryDuration),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    retry_duration: cdktn.numberToTerraform(struct!.retryDuration),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     retry_duration: {
-      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      value: cdktn.numberToHclTerraform(struct!.retryDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3733,14 +3733,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicParti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3772,11 +3772,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitio
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -3814,32 +3814,32 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingC
   readonly parameterValue: string;
 }
 
-export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameter_name: cdktf.stringToTerraform(struct!.parameterName),
-    parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
+    parameter_name: cdktn.stringToTerraform(struct!.parameterName),
+    parameter_value: cdktn.stringToTerraform(struct!.parameterValue),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameter_name: {
-      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      value: cdktn.stringToHclTerraform(struct!.parameterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter_value: {
-      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      value: cdktn.stringToHclTerraform(struct!.parameterValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3850,9 +3850,9 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3860,11 +3860,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3881,14 +3881,14 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._parameterName = undefined;
       this._parameterValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3927,15 +3927,15 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
   }
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3956,35 +3956,35 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingC
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#parameters KinesisFirehoseDeliveryStream#parameters}
   */
-  readonly parameters?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable;
+  readonly parameters?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable;
 }
 
-export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
+    type: cdktn.stringToTerraform(struct!.type),
+    parameters: cdktn.listMapper(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
       isBlock: true,
       type: "set",
       storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersList",
@@ -3995,9 +3995,9 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4005,11 +4005,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4026,14 +4026,14 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._parameters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4063,7 +4063,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
   public get parameters() {
     return this._parameters;
   }
-  public putParameters(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable) {
+  public putParameters(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable) {
     this._parameters.internalValue = value;
   }
   public resetParameters() {
@@ -4075,15 +4075,15 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
   }
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4098,41 +4098,41 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingC
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * processors block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#processors KinesisFirehoseDeliveryStream#processors}
   */
-  readonly processors?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable;
+  readonly processors?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable;
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    processors: cdktn.listMapper(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     processors: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
       isBlock: true,
       type: "list",
       storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsList",
@@ -4143,14 +4143,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4182,11 +4182,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -4202,7 +4202,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
   public get processors() {
     return this._processors;
   }
-  public putProcessors(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
+  public putProcessors(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable) {
     this._processors.internalValue = value;
   }
   public resetProcessors() {
@@ -4217,7 +4217,7 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupCon
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -4229,38 +4229,38 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupCon
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4271,14 +4271,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4316,11 +4316,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigu
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -4405,74 +4405,74 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupCon
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_arn: cdktf.stringToTerraform(struct!.bucketArn),
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    compression_format: cdktf.stringToTerraform(struct!.compressionFormat),
-    error_output_prefix: cdktf.stringToTerraform(struct!.errorOutputPrefix),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    bucket_arn: cdktn.stringToTerraform(struct!.bucketArn),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    compression_format: cdktn.stringToTerraform(struct!.compressionFormat),
+    error_output_prefix: cdktn.stringToTerraform(struct!.errorOutputPrefix),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      value: cdktn.stringToHclTerraform(struct!.bucketArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     compression_format: {
-      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      value: cdktn.stringToHclTerraform(struct!.compressionFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     error_output_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      value: cdktn.stringToHclTerraform(struct!.errorOutputPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4489,14 +4489,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4785,22 +4785,22 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3Configuration {
 }
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_arn: cdktf.stringToTerraform(struct!.bucketArn),
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    compression_format: cdktf.stringToTerraform(struct!.compressionFormat),
-    custom_time_zone: cdktf.stringToTerraform(struct!.customTimeZone),
-    error_output_prefix: cdktf.stringToTerraform(struct!.errorOutputPrefix),
-    file_extension: cdktf.stringToTerraform(struct!.fileExtension),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    s3_backup_mode: cdktf.stringToTerraform(struct!.s3BackupMode),
+    bucket_arn: cdktn.stringToTerraform(struct!.bucketArn),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    compression_format: cdktn.stringToTerraform(struct!.compressionFormat),
+    custom_time_zone: cdktn.stringToTerraform(struct!.customTimeZone),
+    error_output_prefix: cdktn.stringToTerraform(struct!.errorOutputPrefix),
+    file_extension: cdktn.stringToTerraform(struct!.fileExtension),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    s3_backup_mode: cdktn.stringToTerraform(struct!.s3BackupMode),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
     data_format_conversion_configuration: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationToTerraform(struct!.dataFormatConversionConfiguration),
     dynamic_partitioning_configuration: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationToTerraform(struct!.dynamicPartitioningConfiguration),
@@ -4811,73 +4811,73 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationToTerraform(
 
 
 export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      value: cdktn.stringToHclTerraform(struct!.bucketArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     compression_format: {
-      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      value: cdktn.stringToHclTerraform(struct!.compressionFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_time_zone: {
-      value: cdktf.stringToHclTerraform(struct!.customTimeZone),
+      value: cdktn.stringToHclTerraform(struct!.customTimeZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     error_output_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      value: cdktn.stringToHclTerraform(struct!.errorOutputPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     file_extension: {
-      value: cdktf.stringToHclTerraform(struct!.fileExtension),
+      value: cdktn.stringToHclTerraform(struct!.fileExtension),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_backup_mode: {
-      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      value: cdktn.stringToHclTerraform(struct!.s3BackupMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4918,14 +4918,14 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5294,7 +5294,7 @@ export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatc
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -5306,38 +5306,38 @@ export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatc
 }
 
 export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5348,14 +5348,14 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5393,11 +5393,11 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLog
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -5451,32 +5451,32 @@ export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessin
   readonly parameterValue: string;
 }
 
-export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameter_name: cdktf.stringToTerraform(struct!.parameterName),
-    parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
+    parameter_name: cdktn.stringToTerraform(struct!.parameterName),
+    parameter_value: cdktn.stringToTerraform(struct!.parameterValue),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameter_name: {
-      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      value: cdktn.stringToHclTerraform(struct!.parameterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter_value: {
-      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      value: cdktn.stringToHclTerraform(struct!.parameterValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5487,9 +5487,9 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessing
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5497,11 +5497,11 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5518,14 +5518,14 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._parameterName = undefined;
       this._parameterValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5564,15 +5564,15 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
   }
 }
 
-export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5593,35 +5593,35 @@ export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessin
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#parameters KinesisFirehoseDeliveryStream#parameters}
   */
-  readonly parameters?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable;
+  readonly parameters?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable;
 }
 
-export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
+    type: cdktn.stringToTerraform(struct!.type),
+    parameters: cdktn.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
       isBlock: true,
       type: "set",
       storageClassType: "KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersList",
@@ -5632,9 +5632,9 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessing
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5642,11 +5642,11 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5663,14 +5663,14 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._parameters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5700,7 +5700,7 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
   public get parameters() {
     return this._parameters;
   }
-  public putParameters(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable) {
+  public putParameters(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable) {
     this._parameters.internalValue = value;
   }
   public resetParameters() {
@@ -5712,15 +5712,15 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
   }
 }
 
-export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5735,41 +5735,41 @@ export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessin
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * processors block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#processors KinesisFirehoseDeliveryStream#processors}
   */
-  readonly processors?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable;
+  readonly processors?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable;
 }
 
 export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    processors: cdktn.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     processors: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
       isBlock: true,
       type: "list",
       storageClassType: "KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList",
@@ -5780,14 +5780,14 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessing
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5819,11 +5819,11 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -5839,7 +5839,7 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
   public get processors() {
     return this._processors;
   }
-  public putProcessors(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
+  public putProcessors(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable) {
     this._processors.internalValue = value;
   }
   public resetProcessors() {
@@ -5861,32 +5861,32 @@ export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestCo
   readonly value: string;
 }
 
-export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5897,9 +5897,9 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5907,11 +5907,11 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfig
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5928,14 +5928,14 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfig
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5974,15 +5974,15 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfig
   }
 }
 
-export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6003,35 +6003,35 @@ export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestCo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#common_attributes KinesisFirehoseDeliveryStream#common_attributes}
   */
-  readonly commonAttributes?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes[] | cdktf.IResolvable;
+  readonly commonAttributes?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes[] | cdktn.IResolvable;
 }
 
 export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content_encoding: cdktf.stringToTerraform(struct!.contentEncoding),
-    common_attributes: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesToTerraform, true)(struct!.commonAttributes),
+    content_encoding: cdktn.stringToTerraform(struct!.contentEncoding),
+    common_attributes: cdktn.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesToTerraform, true)(struct!.commonAttributes),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content_encoding: {
-      value: cdktf.stringToHclTerraform(struct!.contentEncoding),
+      value: cdktn.stringToHclTerraform(struct!.contentEncoding),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     common_attributes: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesToHclTerraform, true)(struct!.commonAttributes),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesToHclTerraform, true)(struct!.commonAttributes),
       isBlock: true,
       type: "list",
       storageClassType: "KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesList",
@@ -6042,14 +6042,14 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6101,7 +6101,7 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfig
   public get commonAttributes() {
     return this._commonAttributes;
   }
-  public putCommonAttributes(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes[] | cdktf.IResolvable) {
+  public putCommonAttributes(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes[] | cdktn.IResolvable) {
     this._commonAttributes.internalValue = value;
   }
   public resetCommonAttributes() {
@@ -6116,7 +6116,7 @@ export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -6128,38 +6128,38 @@ export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configu
 }
 
 export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6170,14 +6170,14 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6215,11 +6215,11 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configurati
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -6304,74 +6304,74 @@ export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configu
 }
 
 export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_arn: cdktf.stringToTerraform(struct!.bucketArn),
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    compression_format: cdktf.stringToTerraform(struct!.compressionFormat),
-    error_output_prefix: cdktf.stringToTerraform(struct!.errorOutputPrefix),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    bucket_arn: cdktn.stringToTerraform(struct!.bucketArn),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    compression_format: cdktn.stringToTerraform(struct!.compressionFormat),
+    error_output_prefix: cdktn.stringToTerraform(struct!.errorOutputPrefix),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      value: cdktn.stringToHclTerraform(struct!.bucketArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     compression_format: {
-      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      value: cdktn.stringToHclTerraform(struct!.compressionFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     error_output_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      value: cdktn.stringToHclTerraform(struct!.errorOutputPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6388,14 +6388,14 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6610,7 +6610,7 @@ export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsMa
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#role_arn KinesisFirehoseDeliveryStream#role_arn}
   */
@@ -6622,38 +6622,38 @@ export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsMa
 }
 
 export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsManagerConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsManagerConfigurationOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsManagerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    secret_arn: cdktf.stringToTerraform(struct!.secretArn),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    secret_arn: cdktn.stringToTerraform(struct!.secretArn),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsManagerConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsManagerConfigurationOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsManagerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_arn: {
-      value: cdktf.stringToHclTerraform(struct!.secretArn),
+      value: cdktn.stringToHclTerraform(struct!.secretArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6664,14 +6664,14 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsMan
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsManagerConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsManagerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6709,11 +6709,11 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsManage
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -6822,19 +6822,19 @@ export interface KinesisFirehoseDeliveryStreamHttpEndpointConfiguration {
 }
 
 export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_key: cdktf.stringToTerraform(struct!.accessKey),
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    name: cdktf.stringToTerraform(struct!.name),
-    retry_duration: cdktf.numberToTerraform(struct!.retryDuration),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    s3_backup_mode: cdktf.stringToTerraform(struct!.s3BackupMode),
-    url: cdktf.stringToTerraform(struct!.url),
+    access_key: cdktn.stringToTerraform(struct!.accessKey),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    name: cdktn.stringToTerraform(struct!.name),
+    retry_duration: cdktn.numberToTerraform(struct!.retryDuration),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    s3_backup_mode: cdktn.stringToTerraform(struct!.s3BackupMode),
+    url: cdktn.stringToTerraform(struct!.url),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
     processing_configuration: kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationToTerraform(struct!.processingConfiguration),
     request_configuration: kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationToTerraform(struct!.requestConfiguration),
@@ -6845,55 +6845,55 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationToTerrafor
 
 
 export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_key: {
-      value: cdktf.stringToHclTerraform(struct!.accessKey),
+      value: cdktn.stringToHclTerraform(struct!.accessKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retry_duration: {
-      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      value: cdktn.numberToHclTerraform(struct!.retryDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_backup_mode: {
-      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      value: cdktn.stringToHclTerraform(struct!.s3BackupMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6934,14 +6934,14 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7244,7 +7244,7 @@ export interface KinesisFirehoseDeliveryStreamIcebergConfigurationCloudwatchLogg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -7256,38 +7256,38 @@ export interface KinesisFirehoseDeliveryStreamIcebergConfigurationCloudwatchLogg
 }
 
 export function kinesisFirehoseDeliveryStreamIcebergConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamIcebergConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamIcebergConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamIcebergConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7298,14 +7298,14 @@ export function kinesisFirehoseDeliveryStreamIcebergConfigurationCloudwatchLoggi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamIcebergConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamIcebergConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7343,11 +7343,11 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationCloudwatchLoggingO
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -7409,46 +7409,46 @@ export interface KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTab
   readonly uniqueKeys?: string[];
 }
 
-export function kinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    s3_error_output_prefix: cdktf.stringToTerraform(struct!.s3ErrorOutputPrefix),
-    table_name: cdktf.stringToTerraform(struct!.tableName),
-    unique_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.uniqueKeys),
+    database_name: cdktn.stringToTerraform(struct!.databaseName),
+    s3_error_output_prefix: cdktn.stringToTerraform(struct!.s3ErrorOutputPrefix),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
+    unique_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.uniqueKeys),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      value: cdktn.stringToHclTerraform(struct!.databaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_error_output_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.s3ErrorOutputPrefix),
+      value: cdktn.stringToHclTerraform(struct!.s3ErrorOutputPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unique_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.uniqueKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.uniqueKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -7459,9 +7459,9 @@ export function kinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTabl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7469,11 +7469,11 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableCo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7498,7 +7498,7 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableCo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7507,7 +7507,7 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableCo
       this._tableName = undefined;
       this._uniqueKeys = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7580,15 +7580,15 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableCo
   }
 }
 
-export class KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfigurationList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfiguration[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfigurationList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7610,32 +7610,32 @@ export interface KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConf
   readonly parameterValue: string;
 }
 
-export function kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameter_name: cdktf.stringToTerraform(struct!.parameterName),
-    parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
+    parameter_name: cdktn.stringToTerraform(struct!.parameterName),
+    parameter_value: cdktn.stringToTerraform(struct!.parameterValue),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameter_name: {
-      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      value: cdktn.stringToHclTerraform(struct!.parameterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter_value: {
-      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      value: cdktn.stringToHclTerraform(struct!.parameterValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7646,9 +7646,9 @@ export function kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7656,11 +7656,11 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigur
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7677,14 +7677,14 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigur
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._parameterName = undefined;
       this._parameterValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7723,15 +7723,15 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigur
   }
 }
 
-export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParametersList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParametersList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7752,35 +7752,35 @@ export interface KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConf
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#parameters KinesisFirehoseDeliveryStream#parameters}
   */
-  readonly parameters?: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable;
+  readonly parameters?: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable;
 }
 
-export function kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
+    type: cdktn.stringToTerraform(struct!.type),
+    parameters: cdktn.listMapper(kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
       isBlock: true,
       type: "set",
       storageClassType: "KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParametersList",
@@ -7791,9 +7791,9 @@ export function kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7801,11 +7801,11 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigur
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7822,14 +7822,14 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigur
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._parameters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7859,7 +7859,7 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigur
   public get parameters() {
     return this._parameters;
   }
-  public putParameters(value: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable) {
+  public putParameters(value: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable) {
     this._parameters.internalValue = value;
   }
   public resetParameters() {
@@ -7871,15 +7871,15 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigur
   }
 }
 
-export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7894,41 +7894,41 @@ export interface KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConf
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * processors block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#processors KinesisFirehoseDeliveryStream#processors}
   */
-  readonly processors?: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable;
+  readonly processors?: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable;
 }
 
 export function kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    processors: cdktn.listMapper(kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     processors: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
       isBlock: true,
       type: "list",
       storageClassType: "KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsList",
@@ -7939,14 +7939,14 @@ export function kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7978,11 +7978,11 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigur
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -7998,7 +7998,7 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigur
   public get processors() {
     return this._processors;
   }
-  public putProcessors(value: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
+  public putProcessors(value: KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable) {
     this._processors.internalValue = value;
   }
   public resetProcessors() {
@@ -8013,7 +8013,7 @@ export interface KinesisFirehoseDeliveryStreamIcebergConfigurationS3Configuratio
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -8025,38 +8025,38 @@ export interface KinesisFirehoseDeliveryStreamIcebergConfigurationS3Configuratio
 }
 
 export function kinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8067,14 +8067,14 @@ export function kinesisFirehoseDeliveryStreamIcebergConfigurationS3Configuration
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8112,11 +8112,11 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationClo
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -8201,74 +8201,74 @@ export interface KinesisFirehoseDeliveryStreamIcebergConfigurationS3Configuratio
 }
 
 export function kinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamIcebergConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_arn: cdktf.stringToTerraform(struct!.bucketArn),
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    compression_format: cdktf.stringToTerraform(struct!.compressionFormat),
-    error_output_prefix: cdktf.stringToTerraform(struct!.errorOutputPrefix),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    bucket_arn: cdktn.stringToTerraform(struct!.bucketArn),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    compression_format: cdktn.stringToTerraform(struct!.compressionFormat),
+    error_output_prefix: cdktn.stringToTerraform(struct!.errorOutputPrefix),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamIcebergConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      value: cdktn.stringToHclTerraform(struct!.bucketArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     compression_format: {
-      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      value: cdktn.stringToHclTerraform(struct!.compressionFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     error_output_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      value: cdktn.stringToHclTerraform(struct!.errorOutputPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8285,14 +8285,14 @@ export function kinesisFirehoseDeliveryStreamIcebergConfigurationS3Configuration
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8507,7 +8507,7 @@ export interface KinesisFirehoseDeliveryStreamIcebergConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#append_only KinesisFirehoseDeliveryStream#append_only}
   */
-  readonly appendOnly?: boolean | cdktf.IResolvable;
+  readonly appendOnly?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#buffering_interval KinesisFirehoseDeliveryStream#buffering_interval}
   */
@@ -8543,7 +8543,7 @@ export interface KinesisFirehoseDeliveryStreamIcebergConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#destination_table_configuration KinesisFirehoseDeliveryStream#destination_table_configuration}
   */
-  readonly destinationTableConfiguration?: KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfiguration[] | cdktf.IResolvable;
+  readonly destinationTableConfiguration?: KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfiguration[] | cdktn.IResolvable;
   /**
   * processing_configuration block
   *
@@ -8559,20 +8559,20 @@ export interface KinesisFirehoseDeliveryStreamIcebergConfiguration {
 }
 
 export function kinesisFirehoseDeliveryStreamIcebergConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference | KinesisFirehoseDeliveryStreamIcebergConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    append_only: cdktf.booleanToTerraform(struct!.appendOnly),
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    catalog_arn: cdktf.stringToTerraform(struct!.catalogArn),
-    retry_duration: cdktf.numberToTerraform(struct!.retryDuration),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    s3_backup_mode: cdktf.stringToTerraform(struct!.s3BackupMode),
+    append_only: cdktn.booleanToTerraform(struct!.appendOnly),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    catalog_arn: cdktn.stringToTerraform(struct!.catalogArn),
+    retry_duration: cdktn.numberToTerraform(struct!.retryDuration),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    s3_backup_mode: cdktn.stringToTerraform(struct!.s3BackupMode),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamIcebergConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
-    destination_table_configuration: cdktf.listMapper(kinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfigurationToTerraform, true)(struct!.destinationTableConfiguration),
+    destination_table_configuration: cdktn.listMapper(kinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfigurationToTerraform, true)(struct!.destinationTableConfiguration),
     processing_configuration: kinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationToTerraform(struct!.processingConfiguration),
     s3_configuration: kinesisFirehoseDeliveryStreamIcebergConfigurationS3ConfigurationToTerraform(struct!.s3Configuration),
   }
@@ -8580,49 +8580,49 @@ export function kinesisFirehoseDeliveryStreamIcebergConfigurationToTerraform(str
 
 
 export function kinesisFirehoseDeliveryStreamIcebergConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference | KinesisFirehoseDeliveryStreamIcebergConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     append_only: {
-      value: cdktf.booleanToHclTerraform(struct!.appendOnly),
+      value: cdktn.booleanToHclTerraform(struct!.appendOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     catalog_arn: {
-      value: cdktf.stringToHclTerraform(struct!.catalogArn),
+      value: cdktn.stringToHclTerraform(struct!.catalogArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retry_duration: {
-      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      value: cdktn.numberToHclTerraform(struct!.retryDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_backup_mode: {
-      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      value: cdktn.stringToHclTerraform(struct!.s3BackupMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8634,7 +8634,7 @@ export function kinesisFirehoseDeliveryStreamIcebergConfigurationToHclTerraform(
       storageClassType: "KinesisFirehoseDeliveryStreamIcebergConfigurationCloudwatchLoggingOptionsList",
     },
     destination_table_configuration: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfigurationToHclTerraform, true)(struct!.destinationTableConfiguration),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfigurationToHclTerraform, true)(struct!.destinationTableConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfigurationList",
@@ -8657,14 +8657,14 @@ export function kinesisFirehoseDeliveryStreamIcebergConfigurationToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8750,11 +8750,11 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference ex
   }
 
   // append_only - computed: true, optional: true, required: false
-  private _appendOnly?: boolean | cdktf.IResolvable; 
+  private _appendOnly?: boolean | cdktn.IResolvable; 
   public get appendOnly() {
     return this.getBooleanAttribute('append_only');
   }
-  public set appendOnly(value: boolean | cdktf.IResolvable) {
+  public set appendOnly(value: boolean | cdktn.IResolvable) {
     this._appendOnly = value;
   }
   public resetAppendOnly() {
@@ -8876,7 +8876,7 @@ export class KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference ex
   public get destinationTableConfiguration() {
     return this._destinationTableConfiguration;
   }
-  public putDestinationTableConfiguration(value: KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfiguration[] | cdktf.IResolvable) {
+  public putDestinationTableConfiguration(value: KinesisFirehoseDeliveryStreamIcebergConfigurationDestinationTableConfiguration[] | cdktn.IResolvable) {
     this._destinationTableConfiguration.internalValue = value;
   }
   public resetDestinationTableConfiguration() {
@@ -8928,31 +8928,31 @@ export interface KinesisFirehoseDeliveryStreamKinesisSourceConfiguration {
 }
 
 export function kinesisFirehoseDeliveryStreamKinesisSourceConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference | KinesisFirehoseDeliveryStreamKinesisSourceConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kinesis_stream_arn: cdktf.stringToTerraform(struct!.kinesisStreamArn),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    kinesis_stream_arn: cdktn.stringToTerraform(struct!.kinesisStreamArn),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamKinesisSourceConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference | KinesisFirehoseDeliveryStreamKinesisSourceConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kinesis_stream_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kinesisStreamArn),
+      value: cdktn.stringToHclTerraform(struct!.kinesisStreamArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8963,14 +8963,14 @@ export function kinesisFirehoseDeliveryStreamKinesisSourceConfigurationToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9039,31 +9039,31 @@ export interface KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticati
 }
 
 export function kinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationOutputReference | KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connectivity: cdktf.stringToTerraform(struct!.connectivity),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    connectivity: cdktn.stringToTerraform(struct!.connectivity),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationOutputReference | KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connectivity: {
-      value: cdktf.stringToHclTerraform(struct!.connectivity),
+      value: cdktn.stringToHclTerraform(struct!.connectivity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9074,14 +9074,14 @@ export function kinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticatio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9160,39 +9160,39 @@ export interface KinesisFirehoseDeliveryStreamMskSourceConfiguration {
 }
 
 export function kinesisFirehoseDeliveryStreamMskSourceConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference | KinesisFirehoseDeliveryStreamMskSourceConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    msk_cluster_arn: cdktf.stringToTerraform(struct!.mskClusterArn),
-    read_from_timestamp: cdktf.stringToTerraform(struct!.readFromTimestamp),
-    topic_name: cdktf.stringToTerraform(struct!.topicName),
+    msk_cluster_arn: cdktn.stringToTerraform(struct!.mskClusterArn),
+    read_from_timestamp: cdktn.stringToTerraform(struct!.readFromTimestamp),
+    topic_name: cdktn.stringToTerraform(struct!.topicName),
     authentication_configuration: kinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationToTerraform(struct!.authenticationConfiguration),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamMskSourceConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference | KinesisFirehoseDeliveryStreamMskSourceConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     msk_cluster_arn: {
-      value: cdktf.stringToHclTerraform(struct!.mskClusterArn),
+      value: cdktn.stringToHclTerraform(struct!.mskClusterArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_from_timestamp: {
-      value: cdktf.stringToHclTerraform(struct!.readFromTimestamp),
+      value: cdktn.stringToHclTerraform(struct!.readFromTimestamp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic_name: {
-      value: cdktf.stringToHclTerraform(struct!.topicName),
+      value: cdktn.stringToHclTerraform(struct!.topicName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9209,14 +9209,14 @@ export function kinesisFirehoseDeliveryStreamMskSourceConfigurationToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9318,7 +9318,7 @@ export interface KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchL
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -9330,38 +9330,38 @@ export interface KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchL
 }
 
 export function kinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9372,14 +9372,14 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9417,11 +9417,11 @@ export class KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggi
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -9472,24 +9472,24 @@ export interface KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdO
 }
 
 export function kinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_document_id_format: cdktf.stringToTerraform(struct!.defaultDocumentIdFormat),
+    default_document_id_format: cdktn.stringToTerraform(struct!.defaultDocumentIdFormat),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_document_id_format: {
-      value: cdktf.stringToHclTerraform(struct!.defaultDocumentIdFormat),
+      value: cdktn.stringToHclTerraform(struct!.defaultDocumentIdFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9500,14 +9500,14 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9556,32 +9556,32 @@ export interface KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingC
   readonly parameterValue: string;
 }
 
-export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameter_name: cdktf.stringToTerraform(struct!.parameterName),
-    parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
+    parameter_name: cdktn.stringToTerraform(struct!.parameterName),
+    parameter_value: cdktn.stringToTerraform(struct!.parameterValue),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameter_name: {
-      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      value: cdktn.stringToHclTerraform(struct!.parameterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter_value: {
-      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      value: cdktn.stringToHclTerraform(struct!.parameterValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9592,9 +9592,9 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9602,11 +9602,11 @@ export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9623,14 +9623,14 @@ export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._parameterName = undefined;
       this._parameterValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9669,15 +9669,15 @@ export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfi
   }
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9698,35 +9698,35 @@ export interface KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingC
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#parameters KinesisFirehoseDeliveryStream#parameters}
   */
-  readonly parameters?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable;
+  readonly parameters?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable;
 }
 
-export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
+    type: cdktn.stringToTerraform(struct!.type),
+    parameters: cdktn.listMapper(kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
       isBlock: true,
       type: "set",
       storageClassType: "KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersList",
@@ -9737,9 +9737,9 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9747,11 +9747,11 @@ export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9768,14 +9768,14 @@ export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._parameters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9805,7 +9805,7 @@ export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfi
   public get parameters() {
     return this._parameters;
   }
-  public putParameters(value: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable) {
+  public putParameters(value: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable) {
     this._parameters.internalValue = value;
   }
   public resetParameters() {
@@ -9817,15 +9817,15 @@ export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfi
   }
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9840,41 +9840,41 @@ export interface KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingC
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * processors block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#processors KinesisFirehoseDeliveryStream#processors}
   */
-  readonly processors?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable;
+  readonly processors?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable;
 }
 
 export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    processors: cdktn.listMapper(kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     processors: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
       isBlock: true,
       type: "list",
       storageClassType: "KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsList",
@@ -9885,14 +9885,14 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9924,11 +9924,11 @@ export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfi
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -9944,7 +9944,7 @@ export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfi
   public get processors() {
     return this._processors;
   }
-  public putProcessors(value: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
+  public putProcessors(value: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable) {
     this._processors.internalValue = value;
   }
   public resetProcessors() {
@@ -9959,7 +9959,7 @@ export interface KinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configura
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -9971,38 +9971,38 @@ export interface KinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configura
 }
 
 export function kinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10013,14 +10013,14 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configurat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10058,11 +10058,11 @@ export class KinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configuration
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -10147,74 +10147,74 @@ export interface KinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configura
 }
 
 export function kinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_arn: cdktf.stringToTerraform(struct!.bucketArn),
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    compression_format: cdktf.stringToTerraform(struct!.compressionFormat),
-    error_output_prefix: cdktf.stringToTerraform(struct!.errorOutputPrefix),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    bucket_arn: cdktn.stringToTerraform(struct!.bucketArn),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    compression_format: cdktn.stringToTerraform(struct!.compressionFormat),
+    error_output_prefix: cdktn.stringToTerraform(struct!.errorOutputPrefix),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      value: cdktn.stringToHclTerraform(struct!.bucketArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     compression_format: {
-      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      value: cdktn.stringToHclTerraform(struct!.compressionFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     error_output_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      value: cdktn.stringToHclTerraform(struct!.errorOutputPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10231,14 +10231,14 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configurat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10465,38 +10465,38 @@ export interface KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfig {
 }
 
 export function kinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -10507,14 +10507,14 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10567,7 +10567,7 @@ export class KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigOutput
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -10580,7 +10580,7 @@ export class KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigOutput
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -10669,21 +10669,21 @@ export interface KinesisFirehoseDeliveryStreamOpensearchConfiguration {
 }
 
 export function kinesisFirehoseDeliveryStreamOpensearchConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    cluster_endpoint: cdktf.stringToTerraform(struct!.clusterEndpoint),
-    domain_arn: cdktf.stringToTerraform(struct!.domainArn),
-    index_name: cdktf.stringToTerraform(struct!.indexName),
-    index_rotation_period: cdktf.stringToTerraform(struct!.indexRotationPeriod),
-    retry_duration: cdktf.numberToTerraform(struct!.retryDuration),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    s3_backup_mode: cdktf.stringToTerraform(struct!.s3BackupMode),
-    type_name: cdktf.stringToTerraform(struct!.typeName),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    cluster_endpoint: cdktn.stringToTerraform(struct!.clusterEndpoint),
+    domain_arn: cdktn.stringToTerraform(struct!.domainArn),
+    index_name: cdktn.stringToTerraform(struct!.indexName),
+    index_rotation_period: cdktn.stringToTerraform(struct!.indexRotationPeriod),
+    retry_duration: cdktn.numberToTerraform(struct!.retryDuration),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    s3_backup_mode: cdktn.stringToTerraform(struct!.s3BackupMode),
+    type_name: cdktn.stringToTerraform(struct!.typeName),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
     document_id_options: kinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsToTerraform(struct!.documentIdOptions),
     processing_configuration: kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationToTerraform(struct!.processingConfiguration),
@@ -10694,67 +10694,67 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationToTerraform(
 
 
 export function kinesisFirehoseDeliveryStreamOpensearchConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     cluster_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.clusterEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.clusterEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     domain_arn: {
-      value: cdktf.stringToHclTerraform(struct!.domainArn),
+      value: cdktn.stringToHclTerraform(struct!.domainArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     index_name: {
-      value: cdktf.stringToHclTerraform(struct!.indexName),
+      value: cdktn.stringToHclTerraform(struct!.indexName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     index_rotation_period: {
-      value: cdktf.stringToHclTerraform(struct!.indexRotationPeriod),
+      value: cdktn.stringToHclTerraform(struct!.indexRotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retry_duration: {
-      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      value: cdktn.numberToHclTerraform(struct!.retryDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_backup_mode: {
-      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      value: cdktn.stringToHclTerraform(struct!.s3BackupMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type_name: {
-      value: cdktf.stringToHclTerraform(struct!.typeName),
+      value: cdktn.stringToHclTerraform(struct!.typeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10795,14 +10795,14 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11146,7 +11146,7 @@ export interface KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationC
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -11158,38 +11158,38 @@ export interface KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationC
 }
 
 export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11200,14 +11200,14 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11245,11 +11245,11 @@ export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloud
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -11303,32 +11303,32 @@ export interface KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationP
   readonly parameterValue: string;
 }
 
-export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameter_name: cdktf.stringToTerraform(struct!.parameterName),
-    parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
+    parameter_name: cdktn.stringToTerraform(struct!.parameterName),
+    parameter_value: cdktn.stringToTerraform(struct!.parameterValue),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameter_name: {
-      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      value: cdktn.stringToHclTerraform(struct!.parameterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter_value: {
-      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      value: cdktn.stringToHclTerraform(struct!.parameterValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11339,9 +11339,9 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationPr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11349,11 +11349,11 @@ export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProce
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11370,14 +11370,14 @@ export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProce
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._parameterName = undefined;
       this._parameterValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11416,15 +11416,15 @@ export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProce
   }
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11445,35 +11445,35 @@ export interface KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationP
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#parameters KinesisFirehoseDeliveryStream#parameters}
   */
-  readonly parameters?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable;
+  readonly parameters?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable;
 }
 
-export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
+    type: cdktn.stringToTerraform(struct!.type),
+    parameters: cdktn.listMapper(kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
       isBlock: true,
       type: "set",
       storageClassType: "KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersList",
@@ -11484,9 +11484,9 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationPr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11494,11 +11494,11 @@ export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProce
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11515,14 +11515,14 @@ export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProce
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._parameters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11552,7 +11552,7 @@ export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProce
   public get parameters() {
     return this._parameters;
   }
-  public putParameters(value: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable) {
+  public putParameters(value: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable) {
     this._parameters.internalValue = value;
   }
   public resetParameters() {
@@ -11564,15 +11564,15 @@ export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProce
   }
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11587,41 +11587,41 @@ export interface KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationP
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * processors block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#processors KinesisFirehoseDeliveryStream#processors}
   */
-  readonly processors?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable;
+  readonly processors?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable;
 }
 
 export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    processors: cdktn.listMapper(kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     processors: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
       isBlock: true,
       type: "list",
       storageClassType: "KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsList",
@@ -11632,14 +11632,14 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationPr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11671,11 +11671,11 @@ export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProce
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -11691,7 +11691,7 @@ export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProce
   public get processors() {
     return this._processors;
   }
-  public putProcessors(value: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
+  public putProcessors(value: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable) {
     this._processors.internalValue = value;
   }
   public resetProcessors() {
@@ -11706,7 +11706,7 @@ export interface KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -11718,38 +11718,38 @@ export interface KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS
 }
 
 export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11760,14 +11760,14 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11805,11 +11805,11 @@ export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3Con
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -11894,74 +11894,74 @@ export interface KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS
 }
 
 export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_arn: cdktf.stringToTerraform(struct!.bucketArn),
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    compression_format: cdktf.stringToTerraform(struct!.compressionFormat),
-    error_output_prefix: cdktf.stringToTerraform(struct!.errorOutputPrefix),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    bucket_arn: cdktn.stringToTerraform(struct!.bucketArn),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    compression_format: cdktn.stringToTerraform(struct!.compressionFormat),
+    error_output_prefix: cdktn.stringToTerraform(struct!.errorOutputPrefix),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      value: cdktn.stringToHclTerraform(struct!.bucketArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     compression_format: {
-      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      value: cdktn.stringToHclTerraform(struct!.compressionFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     error_output_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      value: cdktn.stringToHclTerraform(struct!.errorOutputPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11978,14 +11978,14 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12212,38 +12212,38 @@ export interface KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationV
 }
 
 export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -12254,14 +12254,14 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12314,7 +12314,7 @@ export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcCo
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -12327,7 +12327,7 @@ export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcCo
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -12398,18 +12398,18 @@ export interface KinesisFirehoseDeliveryStreamOpensearchserverlessConfiguration 
 }
 
 export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    collection_endpoint: cdktf.stringToTerraform(struct!.collectionEndpoint),
-    index_name: cdktf.stringToTerraform(struct!.indexName),
-    retry_duration: cdktf.numberToTerraform(struct!.retryDuration),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    s3_backup_mode: cdktf.stringToTerraform(struct!.s3BackupMode),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    collection_endpoint: cdktn.stringToTerraform(struct!.collectionEndpoint),
+    index_name: cdktn.stringToTerraform(struct!.indexName),
+    retry_duration: cdktn.numberToTerraform(struct!.retryDuration),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    s3_backup_mode: cdktn.stringToTerraform(struct!.s3BackupMode),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
     processing_configuration: kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationToTerraform(struct!.processingConfiguration),
     s3_configuration: kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationToTerraform(struct!.s3Configuration),
@@ -12419,49 +12419,49 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationTo
 
 
 export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     collection_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.collectionEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.collectionEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     index_name: {
-      value: cdktf.stringToHclTerraform(struct!.indexName),
+      value: cdktn.stringToHclTerraform(struct!.indexName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retry_duration: {
-      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      value: cdktn.numberToHclTerraform(struct!.retryDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_backup_mode: {
-      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      value: cdktn.stringToHclTerraform(struct!.s3BackupMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12496,14 +12496,14 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12756,7 +12756,7 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLog
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -12768,38 +12768,38 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLog
 }
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12810,14 +12810,14 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLogg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12855,11 +12855,11 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLogging
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -12913,32 +12913,32 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingCon
   readonly parameterValue: string;
 }
 
-export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameter_name: cdktf.stringToTerraform(struct!.parameterName),
-    parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
+    parameter_name: cdktn.stringToTerraform(struct!.parameterName),
+    parameter_value: cdktn.stringToTerraform(struct!.parameterValue),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameter_name: {
-      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      value: cdktn.stringToHclTerraform(struct!.parameterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter_value: {
-      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      value: cdktn.stringToHclTerraform(struct!.parameterValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12949,9 +12949,9 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -12959,11 +12959,11 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -12980,14 +12980,14 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._parameterName = undefined;
       this._parameterValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -13026,15 +13026,15 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
   }
 }
 
-export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13055,35 +13055,35 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingCon
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#parameters KinesisFirehoseDeliveryStream#parameters}
   */
-  readonly parameters?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable;
+  readonly parameters?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable;
 }
 
-export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
+    type: cdktn.stringToTerraform(struct!.type),
+    parameters: cdktn.listMapper(kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
       isBlock: true,
       type: "set",
       storageClassType: "KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersList",
@@ -13094,9 +13094,9 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13104,11 +13104,11 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13125,14 +13125,14 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._parameters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -13162,7 +13162,7 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
   public get parameters() {
     return this._parameters;
   }
-  public putParameters(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable) {
+  public putParameters(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable) {
     this._parameters.internalValue = value;
   }
   public resetParameters() {
@@ -13174,15 +13174,15 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
   }
 }
 
-export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13197,41 +13197,41 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingCon
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * processors block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#processors KinesisFirehoseDeliveryStream#processors}
   */
-  readonly processors?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable;
+  readonly processors?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable;
 }
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    processors: cdktn.listMapper(kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     processors: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
       isBlock: true,
       type: "list",
       storageClassType: "KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsList",
@@ -13242,14 +13242,14 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13281,11 +13281,11 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -13301,7 +13301,7 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
   public get processors() {
     return this._processors;
   }
-  public putProcessors(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
+  public putProcessors(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable) {
     this._processors.internalValue = value;
   }
   public resetProcessors() {
@@ -13316,7 +13316,7 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfi
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -13328,38 +13328,38 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfi
 }
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13370,14 +13370,14 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13415,11 +13415,11 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigura
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -13504,74 +13504,74 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfi
 }
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_arn: cdktf.stringToTerraform(struct!.bucketArn),
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    compression_format: cdktf.stringToTerraform(struct!.compressionFormat),
-    error_output_prefix: cdktf.stringToTerraform(struct!.errorOutputPrefix),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    bucket_arn: cdktn.stringToTerraform(struct!.bucketArn),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    compression_format: cdktn.stringToTerraform(struct!.compressionFormat),
+    error_output_prefix: cdktn.stringToTerraform(struct!.errorOutputPrefix),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      value: cdktn.stringToHclTerraform(struct!.bucketArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     compression_format: {
-      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      value: cdktn.stringToHclTerraform(struct!.compressionFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     error_output_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      value: cdktn.stringToHclTerraform(struct!.errorOutputPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13588,14 +13588,14 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13810,7 +13810,7 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configurati
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -13822,38 +13822,38 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configurati
 }
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13864,14 +13864,14 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuratio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13909,11 +13909,11 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCl
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -13998,74 +13998,74 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configurati
 }
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_arn: cdktf.stringToTerraform(struct!.bucketArn),
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    compression_format: cdktf.stringToTerraform(struct!.compressionFormat),
-    error_output_prefix: cdktf.stringToTerraform(struct!.errorOutputPrefix),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    bucket_arn: cdktn.stringToTerraform(struct!.bucketArn),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    compression_format: cdktn.stringToTerraform(struct!.compressionFormat),
+    error_output_prefix: cdktn.stringToTerraform(struct!.errorOutputPrefix),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      value: cdktn.stringToHclTerraform(struct!.bucketArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     compression_format: {
-      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      value: cdktn.stringToHclTerraform(struct!.compressionFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     error_output_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      value: cdktn.stringToHclTerraform(struct!.errorOutputPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14082,14 +14082,14 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuratio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14304,7 +14304,7 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManage
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#role_arn KinesisFirehoseDeliveryStream#role_arn}
   */
@@ -14316,38 +14316,38 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManage
 }
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfigurationOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    secret_arn: cdktf.stringToTerraform(struct!.secretArn),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    secret_arn: cdktn.stringToTerraform(struct!.secretArn),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfigurationOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_arn: {
-      value: cdktf.stringToHclTerraform(struct!.secretArn),
+      value: cdktn.stringToHclTerraform(struct!.secretArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14358,14 +14358,14 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManager
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14403,11 +14403,11 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerCon
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -14520,20 +14520,20 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfiguration {
 }
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_jdbcurl: cdktf.stringToTerraform(struct!.clusterJdbcurl),
-    copy_options: cdktf.stringToTerraform(struct!.copyOptions),
-    data_table_columns: cdktf.stringToTerraform(struct!.dataTableColumns),
-    data_table_name: cdktf.stringToTerraform(struct!.dataTableName),
-    password: cdktf.stringToTerraform(struct!.password),
-    retry_duration: cdktf.numberToTerraform(struct!.retryDuration),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    s3_backup_mode: cdktf.stringToTerraform(struct!.s3BackupMode),
-    username: cdktf.stringToTerraform(struct!.username),
+    cluster_jdbcurl: cdktn.stringToTerraform(struct!.clusterJdbcurl),
+    copy_options: cdktn.stringToTerraform(struct!.copyOptions),
+    data_table_columns: cdktn.stringToTerraform(struct!.dataTableColumns),
+    data_table_name: cdktn.stringToTerraform(struct!.dataTableName),
+    password: cdktn.stringToTerraform(struct!.password),
+    retry_duration: cdktn.numberToTerraform(struct!.retryDuration),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    s3_backup_mode: cdktn.stringToTerraform(struct!.s3BackupMode),
+    username: cdktn.stringToTerraform(struct!.username),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
     processing_configuration: kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationToTerraform(struct!.processingConfiguration),
     s3_backup_configuration: kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationToTerraform(struct!.s3BackupConfiguration),
@@ -14544,61 +14544,61 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationToTerraform(st
 
 
 export function kinesisFirehoseDeliveryStreamRedshiftConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_jdbcurl: {
-      value: cdktf.stringToHclTerraform(struct!.clusterJdbcurl),
+      value: cdktn.stringToHclTerraform(struct!.clusterJdbcurl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     copy_options: {
-      value: cdktf.stringToHclTerraform(struct!.copyOptions),
+      value: cdktn.stringToHclTerraform(struct!.copyOptions),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_table_columns: {
-      value: cdktf.stringToHclTerraform(struct!.dataTableColumns),
+      value: cdktn.stringToHclTerraform(struct!.dataTableColumns),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_table_name: {
-      value: cdktf.stringToHclTerraform(struct!.dataTableName),
+      value: cdktn.stringToHclTerraform(struct!.dataTableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retry_duration: {
-      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      value: cdktn.numberToHclTerraform(struct!.retryDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_backup_mode: {
-      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      value: cdktn.stringToHclTerraform(struct!.s3BackupMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14639,14 +14639,14 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14965,7 +14965,7 @@ export interface KinesisFirehoseDeliveryStreamServerSideEncryption {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#key_arn KinesisFirehoseDeliveryStream#key_arn}
   */
@@ -14977,38 +14977,38 @@ export interface KinesisFirehoseDeliveryStreamServerSideEncryption {
 }
 
 export function kinesisFirehoseDeliveryStreamServerSideEncryptionToTerraform(struct?: KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference | KinesisFirehoseDeliveryStreamServerSideEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    key_arn: cdktf.stringToTerraform(struct!.keyArn),
-    key_type: cdktf.stringToTerraform(struct!.keyType),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    key_arn: cdktn.stringToTerraform(struct!.keyArn),
+    key_type: cdktn.stringToTerraform(struct!.keyType),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamServerSideEncryptionToHclTerraform(struct?: KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference | KinesisFirehoseDeliveryStreamServerSideEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.keyArn),
+      value: cdktn.stringToHclTerraform(struct!.keyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_type: {
-      value: cdktf.stringToHclTerraform(struct!.keyType),
+      value: cdktn.stringToHclTerraform(struct!.keyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15019,14 +15019,14 @@ export function kinesisFirehoseDeliveryStreamServerSideEncryptionToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15064,11 +15064,11 @@ export class KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference ex
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -15115,7 +15115,7 @@ export interface KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLo
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -15127,38 +15127,38 @@ export interface KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLo
 }
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15169,14 +15169,14 @@ export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLog
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15214,11 +15214,11 @@ export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggin
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -15272,32 +15272,32 @@ export interface KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingCo
   readonly parameterValue: string;
 }
 
-export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameter_name: cdktf.stringToTerraform(struct!.parameterName),
-    parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
+    parameter_name: cdktn.stringToTerraform(struct!.parameterName),
+    parameter_value: cdktn.stringToTerraform(struct!.parameterValue),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameter_name: {
-      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      value: cdktn.stringToHclTerraform(struct!.parameterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter_value: {
-      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      value: cdktn.stringToHclTerraform(struct!.parameterValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15308,9 +15308,9 @@ export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -15318,11 +15318,11 @@ export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfig
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -15339,14 +15339,14 @@ export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfig
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._parameterName = undefined;
       this._parameterValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -15385,15 +15385,15 @@ export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfig
   }
 }
 
-export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -15414,35 +15414,35 @@ export interface KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingCo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#parameters KinesisFirehoseDeliveryStream#parameters}
   */
-  readonly parameters?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable;
+  readonly parameters?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable;
 }
 
-export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
+    type: cdktn.stringToTerraform(struct!.type),
+    parameters: cdktn.listMapper(kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
       isBlock: true,
       type: "set",
       storageClassType: "KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersList",
@@ -15453,9 +15453,9 @@ export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -15463,11 +15463,11 @@ export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfig
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -15484,14 +15484,14 @@ export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfig
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._parameters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -15521,7 +15521,7 @@ export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfig
   public get parameters() {
     return this._parameters;
   }
-  public putParameters(value: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable) {
+  public putParameters(value: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable) {
     this._parameters.internalValue = value;
   }
   public resetParameters() {
@@ -15533,15 +15533,15 @@ export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfig
   }
 }
 
-export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -15556,41 +15556,41 @@ export interface KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingCo
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * processors block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#processors KinesisFirehoseDeliveryStream#processors}
   */
-  readonly processors?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable;
+  readonly processors?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable;
 }
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    processors: cdktn.listMapper(kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     processors: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
       isBlock: true,
       type: "list",
       storageClassType: "KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsList",
@@ -15601,14 +15601,14 @@ export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15640,11 +15640,11 @@ export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfig
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -15660,7 +15660,7 @@ export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfig
   public get processors() {
     return this._processors;
   }
-  public putProcessors(value: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
+  public putProcessors(value: KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable) {
     this._processors.internalValue = value;
   }
   public resetProcessors() {
@@ -15675,7 +15675,7 @@ export interface KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3Configurat
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -15687,38 +15687,38 @@ export interface KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3Configurat
 }
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15729,14 +15729,14 @@ export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationS3Configurati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15774,11 +15774,11 @@ export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationC
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -15863,74 +15863,74 @@ export interface KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3Configurat
 }
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_arn: cdktf.stringToTerraform(struct!.bucketArn),
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    compression_format: cdktf.stringToTerraform(struct!.compressionFormat),
-    error_output_prefix: cdktf.stringToTerraform(struct!.errorOutputPrefix),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    bucket_arn: cdktn.stringToTerraform(struct!.bucketArn),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    compression_format: cdktn.stringToTerraform(struct!.compressionFormat),
+    error_output_prefix: cdktn.stringToTerraform(struct!.errorOutputPrefix),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      value: cdktn.stringToHclTerraform(struct!.bucketArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     compression_format: {
-      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      value: cdktn.stringToHclTerraform(struct!.compressionFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     error_output_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      value: cdktn.stringToHclTerraform(struct!.errorOutputPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15947,14 +15947,14 @@ export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationS3Configurati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16169,7 +16169,7 @@ export interface KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManag
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#role_arn KinesisFirehoseDeliveryStream#role_arn}
   */
@@ -16181,38 +16181,38 @@ export interface KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManag
 }
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfigurationOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    secret_arn: cdktf.stringToTerraform(struct!.secretArn),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    secret_arn: cdktn.stringToTerraform(struct!.secretArn),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfigurationOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_arn: {
-      value: cdktf.stringToHclTerraform(struct!.secretArn),
+      value: cdktn.stringToHclTerraform(struct!.secretArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16223,14 +16223,14 @@ export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManage
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16268,11 +16268,11 @@ export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerCo
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -16319,7 +16319,7 @@ export interface KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRol
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#snowflake_role KinesisFirehoseDeliveryStream#snowflake_role}
   */
@@ -16327,31 +16327,31 @@ export interface KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRol
 }
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfigurationOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    snowflake_role: cdktf.stringToTerraform(struct!.snowflakeRole),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    snowflake_role: cdktn.stringToTerraform(struct!.snowflakeRole),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfigurationOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     snowflake_role: {
-      value: cdktf.stringToHclTerraform(struct!.snowflakeRole),
+      value: cdktn.stringToHclTerraform(struct!.snowflakeRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16362,14 +16362,14 @@ export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRole
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16401,11 +16401,11 @@ export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleCon
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -16440,24 +16440,24 @@ export interface KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpc
 }
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfigurationOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    private_link_vpce_id: cdktf.stringToTerraform(struct!.privateLinkVpceId),
+    private_link_vpce_id: cdktn.stringToTerraform(struct!.privateLinkVpceId),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfigurationOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     private_link_vpce_id: {
-      value: cdktf.stringToHclTerraform(struct!.privateLinkVpceId),
+      value: cdktn.stringToHclTerraform(struct!.privateLinkVpceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16468,14 +16468,14 @@ export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16613,26 +16613,26 @@ export interface KinesisFirehoseDeliveryStreamSnowflakeConfiguration {
 }
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_url: cdktf.stringToTerraform(struct!.accountUrl),
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    content_column_name: cdktf.stringToTerraform(struct!.contentColumnName),
-    data_loading_option: cdktf.stringToTerraform(struct!.dataLoadingOption),
-    database: cdktf.stringToTerraform(struct!.database),
-    key_passphrase: cdktf.stringToTerraform(struct!.keyPassphrase),
-    metadata_column_name: cdktf.stringToTerraform(struct!.metadataColumnName),
-    private_key: cdktf.stringToTerraform(struct!.privateKey),
-    retry_duration: cdktf.numberToTerraform(struct!.retryDuration),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    s3_backup_mode: cdktf.stringToTerraform(struct!.s3BackupMode),
-    schema: cdktf.stringToTerraform(struct!.schema),
-    table: cdktf.stringToTerraform(struct!.table),
-    user: cdktf.stringToTerraform(struct!.user),
+    account_url: cdktn.stringToTerraform(struct!.accountUrl),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    content_column_name: cdktn.stringToTerraform(struct!.contentColumnName),
+    data_loading_option: cdktn.stringToTerraform(struct!.dataLoadingOption),
+    database: cdktn.stringToTerraform(struct!.database),
+    key_passphrase: cdktn.stringToTerraform(struct!.keyPassphrase),
+    metadata_column_name: cdktn.stringToTerraform(struct!.metadataColumnName),
+    private_key: cdktn.stringToTerraform(struct!.privateKey),
+    retry_duration: cdktn.numberToTerraform(struct!.retryDuration),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    s3_backup_mode: cdktn.stringToTerraform(struct!.s3BackupMode),
+    schema: cdktn.stringToTerraform(struct!.schema),
+    table: cdktn.stringToTerraform(struct!.table),
+    user: cdktn.stringToTerraform(struct!.user),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
     processing_configuration: kinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationToTerraform(struct!.processingConfiguration),
     s3_configuration: kinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationToTerraform(struct!.s3Configuration),
@@ -16644,97 +16644,97 @@ export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationToTerraform(s
 
 
 export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference | KinesisFirehoseDeliveryStreamSnowflakeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_url: {
-      value: cdktf.stringToHclTerraform(struct!.accountUrl),
+      value: cdktn.stringToHclTerraform(struct!.accountUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     content_column_name: {
-      value: cdktf.stringToHclTerraform(struct!.contentColumnName),
+      value: cdktn.stringToHclTerraform(struct!.contentColumnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_loading_option: {
-      value: cdktf.stringToHclTerraform(struct!.dataLoadingOption),
+      value: cdktn.stringToHclTerraform(struct!.dataLoadingOption),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_passphrase: {
-      value: cdktf.stringToHclTerraform(struct!.keyPassphrase),
+      value: cdktn.stringToHclTerraform(struct!.keyPassphrase),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metadata_column_name: {
-      value: cdktf.stringToHclTerraform(struct!.metadataColumnName),
+      value: cdktn.stringToHclTerraform(struct!.metadataColumnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_key: {
-      value: cdktf.stringToHclTerraform(struct!.privateKey),
+      value: cdktn.stringToHclTerraform(struct!.privateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retry_duration: {
-      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      value: cdktn.numberToHclTerraform(struct!.retryDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_backup_mode: {
-      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      value: cdktn.stringToHclTerraform(struct!.s3BackupMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schema: {
-      value: cdktf.stringToHclTerraform(struct!.schema),
+      value: cdktn.stringToHclTerraform(struct!.schema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table: {
-      value: cdktf.stringToHclTerraform(struct!.table),
+      value: cdktn.stringToHclTerraform(struct!.table),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user: {
-      value: cdktf.stringToHclTerraform(struct!.user),
+      value: cdktn.stringToHclTerraform(struct!.user),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16781,14 +16781,14 @@ export function kinesisFirehoseDeliveryStreamSnowflakeConfigurationToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17255,7 +17255,7 @@ export interface KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggi
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -17267,38 +17267,38 @@ export interface KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggi
 }
 
 export function kinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17309,14 +17309,14 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17354,11 +17354,11 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOp
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -17412,32 +17412,32 @@ export interface KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfi
   readonly parameterValue: string;
 }
 
-export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameter_name: cdktf.stringToTerraform(struct!.parameterName),
-    parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
+    parameter_name: cdktn.stringToTerraform(struct!.parameterName),
+    parameter_value: cdktn.stringToTerraform(struct!.parameterValue),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameter_name: {
-      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      value: cdktn.stringToHclTerraform(struct!.parameterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter_value: {
-      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      value: cdktn.stringToHclTerraform(struct!.parameterValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17448,9 +17448,9 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -17458,11 +17458,11 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -17479,14 +17479,14 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._parameterName = undefined;
       this._parameterValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -17525,15 +17525,15 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
   }
 }
 
-export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -17554,35 +17554,35 @@ export interface KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfi
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#parameters KinesisFirehoseDeliveryStream#parameters}
   */
-  readonly parameters?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable;
+  readonly parameters?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable;
 }
 
-export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
+    type: cdktn.stringToTerraform(struct!.type),
+    parameters: cdktn.listMapper(kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
       isBlock: true,
       type: "set",
       storageClassType: "KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersList",
@@ -17593,9 +17593,9 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -17603,11 +17603,11 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -17624,14 +17624,14 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._parameters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -17661,7 +17661,7 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
   public get parameters() {
     return this._parameters;
   }
-  public putParameters(value: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable) {
+  public putParameters(value: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters[] | cdktn.IResolvable) {
     this._parameters.internalValue = value;
   }
   public resetParameters() {
@@ -17673,15 +17673,15 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
   }
 }
 
-export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsList extends cdktf.ComplexList {
-  public internalValue? : KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable
+export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsList extends cdktn.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -17696,41 +17696,41 @@ export interface KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfi
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * processors block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#processors KinesisFirehoseDeliveryStream#processors}
   */
-  readonly processors?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable;
+  readonly processors?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable;
 }
 
 export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    processors: cdktn.listMapper(kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     processors: {
-      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      value: cdktn.listMapperHcl(kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
       isBlock: true,
       type: "list",
       storageClassType: "KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsList",
@@ -17741,14 +17741,14 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17780,11 +17780,11 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -17800,7 +17800,7 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
   public get processors() {
     return this._processors;
   }
-  public putProcessors(value: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
+  public putProcessors(value: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors[] | cdktn.IResolvable) {
     this._processors.internalValue = value;
   }
   public resetProcessors() {
@@ -17815,7 +17815,7 @@ export interface KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -17827,38 +17827,38 @@ export interface KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration
 }
 
 export function kinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17869,14 +17869,14 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17914,11 +17914,11 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationClou
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -18003,74 +18003,74 @@ export interface KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration
 }
 
 export function kinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_arn: cdktf.stringToTerraform(struct!.bucketArn),
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    compression_format: cdktf.stringToTerraform(struct!.compressionFormat),
-    error_output_prefix: cdktf.stringToTerraform(struct!.errorOutputPrefix),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    bucket_arn: cdktn.stringToTerraform(struct!.bucketArn),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    compression_format: cdktn.stringToTerraform(struct!.compressionFormat),
+    error_output_prefix: cdktn.stringToTerraform(struct!.errorOutputPrefix),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      value: cdktn.stringToHclTerraform(struct!.bucketArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     compression_format: {
-      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      value: cdktn.stringToHclTerraform(struct!.compressionFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     error_output_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      value: cdktn.stringToHclTerraform(struct!.errorOutputPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -18087,14 +18087,14 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18309,7 +18309,7 @@ export interface KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerC
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#role_arn KinesisFirehoseDeliveryStream#role_arn}
   */
@@ -18321,38 +18321,38 @@ export interface KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerC
 }
 
 export function kinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfigurationOutputReference | KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    secret_arn: cdktf.stringToTerraform(struct!.secretArn),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    secret_arn: cdktn.stringToTerraform(struct!.secretArn),
   }
 }
 
 
 export function kinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfigurationOutputReference | KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_arn: {
-      value: cdktf.stringToHclTerraform(struct!.secretArn),
+      value: cdktn.stringToHclTerraform(struct!.secretArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -18363,14 +18363,14 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18408,11 +18408,11 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfi
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -18515,19 +18515,19 @@ export interface KinesisFirehoseDeliveryStreamSplunkConfiguration {
 }
 
 export function kinesisFirehoseDeliveryStreamSplunkConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference | KinesisFirehoseDeliveryStreamSplunkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
-    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
-    hec_acknowledgment_timeout: cdktf.numberToTerraform(struct!.hecAcknowledgmentTimeout),
-    hec_endpoint: cdktf.stringToTerraform(struct!.hecEndpoint),
-    hec_endpoint_type: cdktf.stringToTerraform(struct!.hecEndpointType),
-    hec_token: cdktf.stringToTerraform(struct!.hecToken),
-    retry_duration: cdktf.numberToTerraform(struct!.retryDuration),
-    s3_backup_mode: cdktf.stringToTerraform(struct!.s3BackupMode),
+    buffering_interval: cdktn.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktn.numberToTerraform(struct!.bufferingSize),
+    hec_acknowledgment_timeout: cdktn.numberToTerraform(struct!.hecAcknowledgmentTimeout),
+    hec_endpoint: cdktn.stringToTerraform(struct!.hecEndpoint),
+    hec_endpoint_type: cdktn.stringToTerraform(struct!.hecEndpointType),
+    hec_token: cdktn.stringToTerraform(struct!.hecToken),
+    retry_duration: cdktn.numberToTerraform(struct!.retryDuration),
+    s3_backup_mode: cdktn.stringToTerraform(struct!.s3BackupMode),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
     processing_configuration: kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationToTerraform(struct!.processingConfiguration),
     s3_configuration: kinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationToTerraform(struct!.s3Configuration),
@@ -18537,55 +18537,55 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationToTerraform(stru
 
 
 export function kinesisFirehoseDeliveryStreamSplunkConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference | KinesisFirehoseDeliveryStreamSplunkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     buffering_interval: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      value: cdktn.numberToHclTerraform(struct!.bufferingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     buffering_size: {
-      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      value: cdktn.numberToHclTerraform(struct!.bufferingSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     hec_acknowledgment_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.hecAcknowledgmentTimeout),
+      value: cdktn.numberToHclTerraform(struct!.hecAcknowledgmentTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     hec_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.hecEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.hecEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hec_endpoint_type: {
-      value: cdktf.stringToHclTerraform(struct!.hecEndpointType),
+      value: cdktn.stringToHclTerraform(struct!.hecEndpointType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hec_token: {
-      value: cdktf.stringToHclTerraform(struct!.hecToken),
+      value: cdktn.stringToHclTerraform(struct!.hecToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retry_duration: {
-      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      value: cdktn.numberToHclTerraform(struct!.retryDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     s3_backup_mode: {
-      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      value: cdktn.stringToHclTerraform(struct!.s3BackupMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -18620,14 +18620,14 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18919,39 +18919,39 @@ export interface KinesisFirehoseDeliveryStreamTimeouts {
   readonly update?: string;
 }
 
-export function kinesisFirehoseDeliveryStreamTimeoutsToTerraform(struct?: KinesisFirehoseDeliveryStreamTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamTimeoutsToTerraform(struct?: KinesisFirehoseDeliveryStreamTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function kinesisFirehoseDeliveryStreamTimeoutsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisFirehoseDeliveryStreamTimeoutsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -18962,19 +18962,19 @@ export function kinesisFirehoseDeliveryStreamTimeoutsToHclTerraform(struct?: Kin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisFirehoseDeliveryStreamTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KinesisFirehoseDeliveryStreamTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KinesisFirehoseDeliveryStreamTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisFirehoseDeliveryStreamTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -18995,7 +18995,7 @@ export class KinesisFirehoseDeliveryStreamTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisFirehoseDeliveryStreamTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisFirehoseDeliveryStreamTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -19003,7 +19003,7 @@ export class KinesisFirehoseDeliveryStreamTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -19068,7 +19068,7 @@ export class KinesisFirehoseDeliveryStreamTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}
 */
-export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
+export class KinesisFirehoseDeliveryStream extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -19079,14 +19079,14 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KinesisFirehoseDeliveryStream resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KinesisFirehoseDeliveryStream resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KinesisFirehoseDeliveryStream to import
   * @param importFromId The id of the existing KinesisFirehoseDeliveryStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_firehose_delivery_stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KinesisFirehoseDeliveryStream to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_kinesis_firehose_delivery_stream", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_kinesis_firehose_delivery_stream", importId: importFromId, provider });
       }
 
   // ===========
@@ -19496,15 +19496,15 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: cdktf.stringToTerraform(this._arn),
-      destination: cdktf.stringToTerraform(this._destination),
-      destination_id: cdktf.stringToTerraform(this._destinationId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      version_id: cdktf.stringToTerraform(this._versionId),
+      arn: cdktn.stringToTerraform(this._arn),
+      destination: cdktn.stringToTerraform(this._destination),
+      destination_id: cdktn.stringToTerraform(this._destinationId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      version_id: cdktn.stringToTerraform(this._versionId),
       elasticsearch_configuration: kinesisFirehoseDeliveryStreamElasticsearchConfigurationToTerraform(this._elasticsearchConfiguration.internalValue),
       extended_s3_configuration: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationToTerraform(this._extendedS3Configuration.internalValue),
       http_endpoint_configuration: kinesisFirehoseDeliveryStreamHttpEndpointConfigurationToTerraform(this._httpEndpointConfiguration.internalValue),
@@ -19524,55 +19524,55 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       arn: {
-        value: cdktf.stringToHclTerraform(this._arn),
+        value: cdktn.stringToHclTerraform(this._arn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination: {
-        value: cdktf.stringToHclTerraform(this._destination),
+        value: cdktn.stringToHclTerraform(this._destination),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_id: {
-        value: cdktf.stringToHclTerraform(this._destinationId),
+        value: cdktn.stringToHclTerraform(this._destinationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       version_id: {
-        value: cdktf.stringToHclTerraform(this._versionId),
+        value: cdktn.stringToHclTerraform(this._versionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

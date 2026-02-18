@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NotificationsEventRuleConfig extends cdktf.TerraformMetaArguments {
+export interface NotificationsEventRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/notifications_event_rule#event_pattern NotificationsEventRule#event_pattern}
   */
@@ -37,7 +37,7 @@ export interface NotificationsEventRuleConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/notifications_event_rule aws_notifications_event_rule}
 */
-export class NotificationsEventRule extends cdktf.TerraformResource {
+export class NotificationsEventRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -48,14 +48,14 @@ export class NotificationsEventRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NotificationsEventRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NotificationsEventRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationsEventRule to import
   * @param importFromId The id of the existing NotificationsEventRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/notifications_event_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationsEventRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_notifications_event_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_notifications_event_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -146,7 +146,7 @@ export class NotificationsEventRule extends cdktf.TerraformResource {
   // regions - computed: false, optional: false, required: true
   private _regions?: string[]; 
   public get regions() {
-    return cdktf.Fn.tolist(this.getListAttribute('regions'));
+    return cdktn.Fn.tolist(this.getListAttribute('regions'));
   }
   public set regions(value: string[]) {
     this._regions = value;
@@ -175,42 +175,42 @@ export class NotificationsEventRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      event_pattern: cdktf.stringToTerraform(this._eventPattern),
-      event_type: cdktf.stringToTerraform(this._eventType),
-      notification_configuration_arn: cdktf.stringToTerraform(this._notificationConfigurationArn),
-      regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._regions),
-      source: cdktf.stringToTerraform(this._source),
+      event_pattern: cdktn.stringToTerraform(this._eventPattern),
+      event_type: cdktn.stringToTerraform(this._eventType),
+      notification_configuration_arn: cdktn.stringToTerraform(this._notificationConfigurationArn),
+      regions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._regions),
+      source: cdktn.stringToTerraform(this._source),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       event_pattern: {
-        value: cdktf.stringToHclTerraform(this._eventPattern),
+        value: cdktn.stringToHclTerraform(this._eventPattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_type: {
-        value: cdktf.stringToHclTerraform(this._eventType),
+        value: cdktn.stringToHclTerraform(this._eventType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_configuration_arn: {
-        value: cdktf.stringToHclTerraform(this._notificationConfigurationArn),
+        value: cdktn.stringToHclTerraform(this._notificationConfigurationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       regions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._regions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._regions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       source: {
-        value: cdktf.stringToHclTerraform(this._source),
+        value: cdktn.stringToHclTerraform(this._source),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatasyncLocationSmbConfig extends cdktf.TerraformMetaArguments {
+export interface DatasyncLocationSmbConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_smb#agent_arns DatasyncLocationSmb#agent_arns}
   */
@@ -72,24 +72,24 @@ export interface DatasyncLocationSmbMountOptions {
 }
 
 export function datasyncLocationSmbMountOptionsToTerraform(struct?: DatasyncLocationSmbMountOptionsOutputReference | DatasyncLocationSmbMountOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    version: cdktf.stringToTerraform(struct!.version),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function datasyncLocationSmbMountOptionsToHclTerraform(struct?: DatasyncLocationSmbMountOptionsOutputReference | DatasyncLocationSmbMountOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,14 +100,14 @@ export function datasyncLocationSmbMountOptionsToHclTerraform(struct?: DatasyncL
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncLocationSmbMountOptionsOutputReference extends cdktf.ComplexObject {
+export class DatasyncLocationSmbMountOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -152,7 +152,7 @@ export class DatasyncLocationSmbMountOptionsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_smb aws_datasync_location_smb}
 */
-export class DatasyncLocationSmb extends cdktf.TerraformResource {
+export class DatasyncLocationSmb extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -163,14 +163,14 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatasyncLocationSmb resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatasyncLocationSmb resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatasyncLocationSmb to import
   * @param importFromId The id of the existing DatasyncLocationSmb that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_smb#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatasyncLocationSmb to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_datasync_location_smb", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_datasync_location_smb", importId: importFromId, provider });
       }
 
   // ===========
@@ -220,7 +220,7 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
   // agent_arns - computed: false, optional: false, required: true
   private _agentArns?: string[]; 
   public get agentArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('agent_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('agent_arns'));
   }
   public set agentArns(value: string[]) {
     this._agentArns = value;
@@ -394,16 +394,16 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      agent_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._agentArns),
-      domain: cdktf.stringToTerraform(this._domain),
-      id: cdktf.stringToTerraform(this._id),
-      password: cdktf.stringToTerraform(this._password),
-      region: cdktf.stringToTerraform(this._region),
-      server_hostname: cdktf.stringToTerraform(this._serverHostname),
-      subdirectory: cdktf.stringToTerraform(this._subdirectory),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      user: cdktf.stringToTerraform(this._user),
+      agent_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._agentArns),
+      domain: cdktn.stringToTerraform(this._domain),
+      id: cdktn.stringToTerraform(this._id),
+      password: cdktn.stringToTerraform(this._password),
+      region: cdktn.stringToTerraform(this._region),
+      server_hostname: cdktn.stringToTerraform(this._serverHostname),
+      subdirectory: cdktn.stringToTerraform(this._subdirectory),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      user: cdktn.stringToTerraform(this._user),
       mount_options: datasyncLocationSmbMountOptionsToTerraform(this._mountOptions.internalValue),
     };
   }
@@ -411,61 +411,61 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       agent_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._agentArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._agentArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       domain: {
-        value: cdktf.stringToHclTerraform(this._domain),
+        value: cdktn.stringToHclTerraform(this._domain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_hostname: {
-        value: cdktf.stringToHclTerraform(this._serverHostname),
+        value: cdktn.stringToHclTerraform(this._serverHostname),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subdirectory: {
-        value: cdktf.stringToHclTerraform(this._subdirectory),
+        value: cdktn.stringToHclTerraform(this._subdirectory),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       user: {
-        value: cdktf.stringToHclTerraform(this._user),
+        value: cdktn.stringToHclTerraform(this._user),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcIpv6CidrBlockAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface VpcIpv6CidrBlockAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipv6_cidr_block_association#assign_generated_ipv6_cidr_block VpcIpv6CidrBlockAssociation#assign_generated_ipv6_cidr_block}
   */
-  readonly assignGeneratedIpv6CidrBlock?: boolean | cdktf.IResolvable;
+  readonly assignGeneratedIpv6CidrBlock?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipv6_cidr_block_association#id VpcIpv6CidrBlockAssociation#id}
   *
@@ -67,32 +67,32 @@ export interface VpcIpv6CidrBlockAssociationTimeouts {
   readonly delete?: string;
 }
 
-export function vpcIpv6CidrBlockAssociationTimeoutsToTerraform(struct?: VpcIpv6CidrBlockAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcIpv6CidrBlockAssociationTimeoutsToTerraform(struct?: VpcIpv6CidrBlockAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function vpcIpv6CidrBlockAssociationTimeoutsToHclTerraform(struct?: VpcIpv6CidrBlockAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcIpv6CidrBlockAssociationTimeoutsToHclTerraform(struct?: VpcIpv6CidrBlockAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,19 +103,19 @@ export function vpcIpv6CidrBlockAssociationTimeoutsToHclTerraform(struct?: VpcIp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcIpv6CidrBlockAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VpcIpv6CidrBlockAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VpcIpv6CidrBlockAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VpcIpv6CidrBlockAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -132,14 +132,14 @@ export class VpcIpv6CidrBlockAssociationTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpcIpv6CidrBlockAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpcIpv6CidrBlockAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -187,7 +187,7 @@ export class VpcIpv6CidrBlockAssociationTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association}
 */
-export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
+export class VpcIpv6CidrBlockAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -198,14 +198,14 @@ export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcIpv6CidrBlockAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcIpv6CidrBlockAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcIpv6CidrBlockAssociation to import
   * @param importFromId The id of the existing VpcIpv6CidrBlockAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipv6_cidr_block_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcIpv6CidrBlockAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_ipv6_cidr_block_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_ipv6_cidr_block_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -251,11 +251,11 @@ export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
   // ==========
 
   // assign_generated_ipv6_cidr_block - computed: true, optional: true, required: false
-  private _assignGeneratedIpv6CidrBlock?: boolean | cdktf.IResolvable; 
+  private _assignGeneratedIpv6CidrBlock?: boolean | cdktn.IResolvable; 
   public get assignGeneratedIpv6CidrBlock() {
     return this.getBooleanAttribute('assign_generated_ipv6_cidr_block');
   }
-  public set assignGeneratedIpv6CidrBlock(value: boolean | cdktf.IResolvable) {
+  public set assignGeneratedIpv6CidrBlock(value: boolean | cdktn.IResolvable) {
     this._assignGeneratedIpv6CidrBlock = value;
   }
   public resetAssignGeneratedIpv6CidrBlock() {
@@ -407,14 +407,14 @@ export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assign_generated_ipv6_cidr_block: cdktf.booleanToTerraform(this._assignGeneratedIpv6CidrBlock),
-      id: cdktf.stringToTerraform(this._id),
-      ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
-      ipv6_ipam_pool_id: cdktf.stringToTerraform(this._ipv6IpamPoolId),
-      ipv6_netmask_length: cdktf.numberToTerraform(this._ipv6NetmaskLength),
-      ipv6_pool: cdktf.stringToTerraform(this._ipv6Pool),
-      region: cdktf.stringToTerraform(this._region),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      assign_generated_ipv6_cidr_block: cdktn.booleanToTerraform(this._assignGeneratedIpv6CidrBlock),
+      id: cdktn.stringToTerraform(this._id),
+      ipv6_cidr_block: cdktn.stringToTerraform(this._ipv6CidrBlock),
+      ipv6_ipam_pool_id: cdktn.stringToTerraform(this._ipv6IpamPoolId),
+      ipv6_netmask_length: cdktn.numberToTerraform(this._ipv6NetmaskLength),
+      ipv6_pool: cdktn.stringToTerraform(this._ipv6Pool),
+      region: cdktn.stringToTerraform(this._region),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
       timeouts: vpcIpv6CidrBlockAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -422,49 +422,49 @@ export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       assign_generated_ipv6_cidr_block: {
-        value: cdktf.booleanToHclTerraform(this._assignGeneratedIpv6CidrBlock),
+        value: cdktn.booleanToHclTerraform(this._assignGeneratedIpv6CidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv6_cidr_block: {
-        value: cdktf.stringToHclTerraform(this._ipv6CidrBlock),
+        value: cdktn.stringToHclTerraform(this._ipv6CidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv6_ipam_pool_id: {
-        value: cdktf.stringToHclTerraform(this._ipv6IpamPoolId),
+        value: cdktn.stringToHclTerraform(this._ipv6IpamPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv6_netmask_length: {
-        value: cdktf.numberToHclTerraform(this._ipv6NetmaskLength),
+        value: cdktn.numberToHclTerraform(this._ipv6NetmaskLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       ipv6_pool: {
-        value: cdktf.stringToHclTerraform(this._ipv6Pool),
+        value: cdktn.stringToHclTerraform(this._ipv6Pool),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

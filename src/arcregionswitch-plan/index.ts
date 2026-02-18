@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ArcregionswitchPlanConfig extends cdktf.TerraformMetaArguments {
+export interface ArcregionswitchPlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
   */
@@ -55,7 +55,7 @@ export interface ArcregionswitchPlanConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#associated_alarms ArcregionswitchPlan#associated_alarms}
   */
-  readonly associatedAlarms?: ArcregionswitchPlanAssociatedAlarms[] | cdktf.IResolvable;
+  readonly associatedAlarms?: ArcregionswitchPlanAssociatedAlarms[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -67,13 +67,13 @@ export interface ArcregionswitchPlanConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#triggers ArcregionswitchPlan#triggers}
   */
-  readonly triggers?: ArcregionswitchPlanTriggers[] | cdktf.IResolvable;
+  readonly triggers?: ArcregionswitchPlanTriggers[] | cdktn.IResolvable;
   /**
   * workflow block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#workflow ArcregionswitchPlan#workflow}
   */
-  readonly workflow?: ArcregionswitchPlanWorkflow[] | cdktf.IResolvable;
+  readonly workflow?: ArcregionswitchPlanWorkflow[] | cdktn.IResolvable;
 }
 export interface ArcregionswitchPlanAssociatedAlarms {
   /**
@@ -98,53 +98,53 @@ export interface ArcregionswitchPlanAssociatedAlarms {
   readonly resourceIdentifier: string;
 }
 
-export function arcregionswitchPlanAssociatedAlarmsToTerraform(struct?: ArcregionswitchPlanAssociatedAlarms | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanAssociatedAlarmsToTerraform(struct?: ArcregionswitchPlanAssociatedAlarms | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alarm_type: cdktf.stringToTerraform(struct!.alarmType),
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    map_block_key: cdktf.stringToTerraform(struct!.mapBlockKey),
-    resource_identifier: cdktf.stringToTerraform(struct!.resourceIdentifier),
+    alarm_type: cdktn.stringToTerraform(struct!.alarmType),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    map_block_key: cdktn.stringToTerraform(struct!.mapBlockKey),
+    resource_identifier: cdktn.stringToTerraform(struct!.resourceIdentifier),
   }
 }
 
 
-export function arcregionswitchPlanAssociatedAlarmsToHclTerraform(struct?: ArcregionswitchPlanAssociatedAlarms | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanAssociatedAlarmsToHclTerraform(struct?: ArcregionswitchPlanAssociatedAlarms | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alarm_type: {
-      value: cdktf.stringToHclTerraform(struct!.alarmType),
+      value: cdktn.stringToHclTerraform(struct!.alarmType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     map_block_key: {
-      value: cdktf.stringToHclTerraform(struct!.mapBlockKey),
+      value: cdktn.stringToHclTerraform(struct!.mapBlockKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.resourceIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.resourceIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -155,9 +155,9 @@ export function arcregionswitchPlanAssociatedAlarmsToHclTerraform(struct?: Arcre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanAssociatedAlarmsOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanAssociatedAlarmsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -165,11 +165,11 @@ export class ArcregionswitchPlanAssociatedAlarmsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanAssociatedAlarms | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanAssociatedAlarms | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -198,7 +198,7 @@ export class ArcregionswitchPlanAssociatedAlarmsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanAssociatedAlarms | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanAssociatedAlarms | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -208,7 +208,7 @@ export class ArcregionswitchPlanAssociatedAlarmsOutputReference extends cdktf.Co
       this._mapBlockKey = undefined;
       this._resourceIdentifier = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -295,15 +295,15 @@ export class ArcregionswitchPlanAssociatedAlarmsOutputReference extends cdktf.Co
   }
 }
 
-export class ArcregionswitchPlanAssociatedAlarmsList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanAssociatedAlarms[] | cdktf.IResolvable
+export class ArcregionswitchPlanAssociatedAlarmsList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanAssociatedAlarms[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -335,39 +335,39 @@ export interface ArcregionswitchPlanTimeouts {
   readonly update?: string;
 }
 
-export function arcregionswitchPlanTimeoutsToTerraform(struct?: ArcregionswitchPlanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanTimeoutsToTerraform(struct?: ArcregionswitchPlanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function arcregionswitchPlanTimeoutsToHclTerraform(struct?: ArcregionswitchPlanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanTimeoutsToHclTerraform(struct?: ArcregionswitchPlanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -378,19 +378,19 @@ export function arcregionswitchPlanTimeoutsToHclTerraform(struct?: Arcregionswit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ArcregionswitchPlanTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -411,7 +411,7 @@ export class ArcregionswitchPlanTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -419,7 +419,7 @@ export class ArcregionswitchPlanTimeoutsOutputReference extends cdktf.ComplexObj
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -491,32 +491,32 @@ export interface ArcregionswitchPlanTriggersConditions {
   readonly condition: string;
 }
 
-export function arcregionswitchPlanTriggersConditionsToTerraform(struct?: ArcregionswitchPlanTriggersConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanTriggersConditionsToTerraform(struct?: ArcregionswitchPlanTriggersConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    associated_alarm_name: cdktf.stringToTerraform(struct!.associatedAlarmName),
-    condition: cdktf.stringToTerraform(struct!.condition),
+    associated_alarm_name: cdktn.stringToTerraform(struct!.associatedAlarmName),
+    condition: cdktn.stringToTerraform(struct!.condition),
   }
 }
 
 
-export function arcregionswitchPlanTriggersConditionsToHclTerraform(struct?: ArcregionswitchPlanTriggersConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanTriggersConditionsToHclTerraform(struct?: ArcregionswitchPlanTriggersConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     associated_alarm_name: {
-      value: cdktf.stringToHclTerraform(struct!.associatedAlarmName),
+      value: cdktn.stringToHclTerraform(struct!.associatedAlarmName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     condition: {
-      value: cdktf.stringToHclTerraform(struct!.condition),
+      value: cdktn.stringToHclTerraform(struct!.condition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -527,9 +527,9 @@ export function arcregionswitchPlanTriggersConditionsToHclTerraform(struct?: Arc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanTriggersConditionsOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanTriggersConditionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -537,11 +537,11 @@ export class ArcregionswitchPlanTriggersConditionsOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanTriggersConditions | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanTriggersConditions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -558,14 +558,14 @@ export class ArcregionswitchPlanTriggersConditionsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanTriggersConditions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanTriggersConditions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._associatedAlarmName = undefined;
       this._condition = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -604,15 +604,15 @@ export class ArcregionswitchPlanTriggersConditionsOutputReference extends cdktf.
   }
 }
 
-export class ArcregionswitchPlanTriggersConditionsList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanTriggersConditions[] | cdktf.IResolvable
+export class ArcregionswitchPlanTriggersConditionsList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanTriggersConditions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -645,56 +645,56 @@ export interface ArcregionswitchPlanTriggers {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#conditions ArcregionswitchPlan#conditions}
   */
-  readonly conditions?: ArcregionswitchPlanTriggersConditions[] | cdktf.IResolvable;
+  readonly conditions?: ArcregionswitchPlanTriggersConditions[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanTriggersToTerraform(struct?: ArcregionswitchPlanTriggers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanTriggersToTerraform(struct?: ArcregionswitchPlanTriggers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    description: cdktf.stringToTerraform(struct!.description),
-    min_delay_minutes_between_executions: cdktf.numberToTerraform(struct!.minDelayMinutesBetweenExecutions),
-    target_region: cdktf.stringToTerraform(struct!.targetRegion),
-    conditions: cdktf.listMapper(arcregionswitchPlanTriggersConditionsToTerraform, true)(struct!.conditions),
+    action: cdktn.stringToTerraform(struct!.action),
+    description: cdktn.stringToTerraform(struct!.description),
+    min_delay_minutes_between_executions: cdktn.numberToTerraform(struct!.minDelayMinutesBetweenExecutions),
+    target_region: cdktn.stringToTerraform(struct!.targetRegion),
+    conditions: cdktn.listMapper(arcregionswitchPlanTriggersConditionsToTerraform, true)(struct!.conditions),
   }
 }
 
 
-export function arcregionswitchPlanTriggersToHclTerraform(struct?: ArcregionswitchPlanTriggers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanTriggersToHclTerraform(struct?: ArcregionswitchPlanTriggers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     min_delay_minutes_between_executions: {
-      value: cdktf.numberToHclTerraform(struct!.minDelayMinutesBetweenExecutions),
+      value: cdktn.numberToHclTerraform(struct!.minDelayMinutesBetweenExecutions),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     target_region: {
-      value: cdktf.stringToHclTerraform(struct!.targetRegion),
+      value: cdktn.stringToHclTerraform(struct!.targetRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     conditions: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanTriggersConditionsToHclTerraform, true)(struct!.conditions),
+      value: cdktn.listMapperHcl(arcregionswitchPlanTriggersConditionsToHclTerraform, true)(struct!.conditions),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanTriggersConditionsList",
@@ -705,9 +705,9 @@ export function arcregionswitchPlanTriggersToHclTerraform(struct?: Arcregionswit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanTriggersOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanTriggersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -715,11 +715,11 @@ export class ArcregionswitchPlanTriggersOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanTriggers | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanTriggers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -748,7 +748,7 @@ export class ArcregionswitchPlanTriggersOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanTriggers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanTriggers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -758,7 +758,7 @@ export class ArcregionswitchPlanTriggersOutputReference extends cdktf.ComplexObj
       this._targetRegion = undefined;
       this._conditions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -833,7 +833,7 @@ export class ArcregionswitchPlanTriggersOutputReference extends cdktf.ComplexObj
   public get conditions() {
     return this._conditions;
   }
-  public putConditions(value: ArcregionswitchPlanTriggersConditions[] | cdktf.IResolvable) {
+  public putConditions(value: ArcregionswitchPlanTriggersConditions[] | cdktn.IResolvable) {
     this._conditions.internalValue = value;
   }
   public resetConditions() {
@@ -845,15 +845,15 @@ export class ArcregionswitchPlanTriggersOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class ArcregionswitchPlanTriggersList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanTriggers[] | cdktf.IResolvable
+export class ArcregionswitchPlanTriggersList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanTriggers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -875,32 +875,32 @@ export interface ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAnd
   readonly state: string;
 }
 
-export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    routing_control_arn: cdktf.stringToTerraform(struct!.routingControlArn),
-    state: cdktf.stringToTerraform(struct!.state),
+    routing_control_arn: cdktn.stringToTerraform(struct!.routingControlArn),
+    state: cdktn.stringToTerraform(struct!.state),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     routing_control_arn: {
-      value: cdktf.stringToHclTerraform(struct!.routingControlArn),
+      value: cdktn.stringToHclTerraform(struct!.routingControlArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -911,9 +911,9 @@ export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -921,11 +921,11 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRout
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -942,14 +942,14 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRout
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._routingControlArn = undefined;
       this._state = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -988,15 +988,15 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRout
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1017,35 +1017,35 @@ export interface ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAnd
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
   */
-  readonly routingControl?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktf.IResolvable;
+  readonly routingControl?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsToTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsToTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    region: cdktf.stringToTerraform(struct!.region),
-    routing_control: cdktf.listMapper(arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToTerraform, true)(struct!.routingControl),
+    region: cdktn.stringToTerraform(struct!.region),
+    routing_control: cdktn.listMapper(arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToTerraform, true)(struct!.routingControl),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     routing_control: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToHclTerraform, true)(struct!.routingControl),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToHclTerraform, true)(struct!.routingControl),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlList",
@@ -1056,9 +1056,9 @@ export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1066,11 +1066,11 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRout
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1087,14 +1087,14 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRout
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._region = undefined;
       this._routingControl.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1124,7 +1124,7 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRout
   public get routingControl() {
     return this._routingControl;
   }
-  public putRoutingControl(value: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktf.IResolvable) {
+  public putRoutingControl(value: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktn.IResolvable) {
     this._routingControl.internalValue = value;
   }
   public resetRoutingControl() {
@@ -1136,15 +1136,15 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRout
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1173,49 +1173,49 @@ export interface ArcregionswitchPlanWorkflowStepArcRoutingControlConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
   */
-  readonly regionAndRoutingControls?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktf.IResolvable;
+  readonly regionAndRoutingControls?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    region_and_routing_controls: cdktf.listMapper(arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsToTerraform, true)(struct!.regionAndRoutingControls),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    region_and_routing_controls: cdktn.listMapper(arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsToTerraform, true)(struct!.regionAndRoutingControls),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     region_and_routing_controls: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsToHclTerraform, true)(struct!.regionAndRoutingControls),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsToHclTerraform, true)(struct!.regionAndRoutingControls),
       isBlock: true,
       type: "set",
       storageClassType: "ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsList",
@@ -1226,9 +1226,9 @@ export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1236,11 +1236,11 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepArcRoutingControlConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepArcRoutingControlConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1265,7 +1265,7 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepArcRoutingControlConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepArcRoutingControlConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1274,7 +1274,7 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigOutputReferen
       this._timeoutMinutes = undefined;
       this._regionAndRoutingControls.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1341,7 +1341,7 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigOutputReferen
   public get regionAndRoutingControls() {
     return this._regionAndRoutingControls;
   }
-  public putRegionAndRoutingControls(value: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktf.IResolvable) {
+  public putRegionAndRoutingControls(value: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktn.IResolvable) {
     this._regionAndRoutingControls.internalValue = value;
   }
   public resetRegionAndRoutingControls() {
@@ -1353,15 +1353,15 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigOutputReferen
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepArcRoutingControlConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepArcRoutingControlConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1387,39 +1387,39 @@ export interface ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda {
   readonly externalId?: string;
 }
 
-export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaToTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaToTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
+    arn: cdktn.stringToTerraform(struct!.arn),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1430,9 +1430,9 @@ export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1440,11 +1440,11 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1465,7 +1465,7 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1473,7 +1473,7 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaOutput
       this._crossAccountRole = undefined;
       this._externalId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1532,15 +1532,15 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaOutput
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1558,25 +1558,25 @@ export interface ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracef
   readonly behavior: string;
 }
 
-export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    behavior: cdktf.stringToTerraform(struct!.behavior),
+    behavior: cdktn.stringToTerraform(struct!.behavior),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     behavior: {
-      value: cdktf.stringToHclTerraform(struct!.behavior),
+      value: cdktn.stringToHclTerraform(struct!.behavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1587,9 +1587,9 @@ export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1597,11 +1597,11 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1614,13 +1614,13 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._behavior = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1645,15 +1645,15 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulOu
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1682,62 +1682,62 @@ export interface ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
   */
-  readonly lambda?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda[] | cdktf.IResolvable;
+  readonly lambda?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
-  readonly ungraceful?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful[] | cdktf.IResolvable;
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    region_to_run: cdktf.stringToTerraform(struct!.regionToRun),
-    retry_interval_minutes: cdktf.numberToTerraform(struct!.retryIntervalMinutes),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    lambda: cdktf.listMapper(arcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaToTerraform, true)(struct!.lambda),
-    ungraceful: cdktf.listMapper(arcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulToTerraform, true)(struct!.ungraceful),
+    region_to_run: cdktn.stringToTerraform(struct!.regionToRun),
+    retry_interval_minutes: cdktn.numberToTerraform(struct!.retryIntervalMinutes),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    lambda: cdktn.listMapper(arcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaToTerraform, true)(struct!.lambda),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulToTerraform, true)(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     region_to_run: {
-      value: cdktf.stringToHclTerraform(struct!.regionToRun),
+      value: cdktn.stringToHclTerraform(struct!.regionToRun),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retry_interval_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.retryIntervalMinutes),
+      value: cdktn.numberToHclTerraform(struct!.retryIntervalMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     lambda: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaToHclTerraform, true)(struct!.lambda),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaToHclTerraform, true)(struct!.lambda),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaList",
     },
     ungraceful: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulList",
@@ -1748,9 +1748,9 @@ export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1758,11 +1758,11 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1791,7 +1791,7 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1801,7 +1801,7 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigOutputRefere
       this._lambda.internalValue = undefined;
       this._ungraceful.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1863,7 +1863,7 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigOutputRefere
   public get lambda() {
     return this._lambda;
   }
-  public putLambda(value: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda[] | cdktf.IResolvable) {
+  public putLambda(value: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda[] | cdktn.IResolvable) {
     this._lambda.internalValue = value;
   }
   public resetLambda() {
@@ -1879,7 +1879,7 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigOutputRefere
   public get ungraceful() {
     return this._ungraceful;
   }
-  public putUngraceful(value: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful[] | cdktf.IResolvable) {
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful[] | cdktn.IResolvable) {
     this._ungraceful.internalValue = value;
   }
   public resetUngraceful() {
@@ -1891,15 +1891,15 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigOutputRefere
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1917,25 +1917,25 @@ export interface ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful {
   readonly ungraceful: string;
 }
 
-export function arcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ungraceful: cdktf.stringToTerraform(struct!.ungraceful),
+    ungraceful: cdktn.stringToTerraform(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ungraceful: {
-      value: cdktf.stringToHclTerraform(struct!.ungraceful),
+      value: cdktn.stringToHclTerraform(struct!.ungraceful),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1946,9 +1946,9 @@ export function arcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1956,11 +1956,11 @@ export class ArcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1973,13 +1973,13 @@ export class ArcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ungraceful = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2004,15 +2004,15 @@ export class ArcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulOutputRefe
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2053,70 +2053,70 @@ export interface ArcregionswitchPlanWorkflowStepDocumentDbConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
-  readonly ungraceful?: ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful[] | cdktf.IResolvable;
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepDocumentDbConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepDocumentDbConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepDocumentDbConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepDocumentDbConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    behavior: cdktf.stringToTerraform(struct!.behavior),
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    database_cluster_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.databaseClusterArns),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    global_cluster_identifier: cdktf.stringToTerraform(struct!.globalClusterIdentifier),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    ungraceful: cdktf.listMapper(arcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulToTerraform, true)(struct!.ungraceful),
+    behavior: cdktn.stringToTerraform(struct!.behavior),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    database_cluster_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.databaseClusterArns),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    global_cluster_identifier: cdktn.stringToTerraform(struct!.globalClusterIdentifier),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulToTerraform, true)(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepDocumentDbConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepDocumentDbConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepDocumentDbConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepDocumentDbConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     behavior: {
-      value: cdktf.stringToHclTerraform(struct!.behavior),
+      value: cdktn.stringToHclTerraform(struct!.behavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database_cluster_arns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.databaseClusterArns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.databaseClusterArns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     global_cluster_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.globalClusterIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.globalClusterIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ungraceful: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulList",
@@ -2127,9 +2127,9 @@ export function arcregionswitchPlanWorkflowStepDocumentDbConfigToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepDocumentDbConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepDocumentDbConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2137,11 +2137,11 @@ export class ArcregionswitchPlanWorkflowStepDocumentDbConfigOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepDocumentDbConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepDocumentDbConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2178,7 +2178,7 @@ export class ArcregionswitchPlanWorkflowStepDocumentDbConfigOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepDocumentDbConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepDocumentDbConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2190,7 +2190,7 @@ export class ArcregionswitchPlanWorkflowStepDocumentDbConfigOutputReference exte
       this._timeoutMinutes = undefined;
       this._ungraceful.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2299,7 +2299,7 @@ export class ArcregionswitchPlanWorkflowStepDocumentDbConfigOutputReference exte
   public get ungraceful() {
     return this._ungraceful;
   }
-  public putUngraceful(value: ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful[] | cdktf.IResolvable) {
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful[] | cdktn.IResolvable) {
     this._ungraceful.internalValue = value;
   }
   public resetUngraceful() {
@@ -2311,15 +2311,15 @@ export class ArcregionswitchPlanWorkflowStepDocumentDbConfigOutputReference exte
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepDocumentDbConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepDocumentDbConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepDocumentDbConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepDocumentDbConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2345,39 +2345,39 @@ export interface ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg 
   readonly externalId?: string;
 }
 
-export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgToTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgToTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
+    arn: cdktn.stringToTerraform(struct!.arn),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2388,9 +2388,9 @@ export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2398,11 +2398,11 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2423,7 +2423,7 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2431,7 +2431,7 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgOutpu
       this._crossAccountRole = undefined;
       this._externalId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2490,15 +2490,15 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgOutpu
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2516,25 +2516,25 @@ export interface ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngr
   readonly minimumSuccessPercentage: number;
 }
 
-export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    minimum_success_percentage: cdktf.numberToTerraform(struct!.minimumSuccessPercentage),
+    minimum_success_percentage: cdktn.numberToTerraform(struct!.minimumSuccessPercentage),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     minimum_success_percentage: {
-      value: cdktf.numberToHclTerraform(struct!.minimumSuccessPercentage),
+      value: cdktn.numberToHclTerraform(struct!.minimumSuccessPercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2545,9 +2545,9 @@ export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2555,11 +2555,11 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2572,13 +2572,13 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._minimumSuccessPercentage = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2603,15 +2603,15 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracef
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2640,62 +2640,62 @@ export interface ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
   */
-  readonly asg?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg[] | cdktf.IResolvable;
+  readonly asg?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
-  readonly ungraceful?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktf.IResolvable;
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity_monitoring_approach: cdktf.stringToTerraform(struct!.capacityMonitoringApproach),
-    target_percent: cdktf.numberToTerraform(struct!.targetPercent),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    asg: cdktf.listMapper(arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgToTerraform, true)(struct!.asg),
-    ungraceful: cdktf.listMapper(arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulToTerraform, true)(struct!.ungraceful),
+    capacity_monitoring_approach: cdktn.stringToTerraform(struct!.capacityMonitoringApproach),
+    target_percent: cdktn.numberToTerraform(struct!.targetPercent),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    asg: cdktn.listMapper(arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgToTerraform, true)(struct!.asg),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulToTerraform, true)(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity_monitoring_approach: {
-      value: cdktf.stringToHclTerraform(struct!.capacityMonitoringApproach),
+      value: cdktn.stringToHclTerraform(struct!.capacityMonitoringApproach),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_percent: {
-      value: cdktf.numberToHclTerraform(struct!.targetPercent),
+      value: cdktn.numberToHclTerraform(struct!.targetPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     asg: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgToHclTerraform, true)(struct!.asg),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgToHclTerraform, true)(struct!.asg),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgList",
     },
     ungraceful: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulList",
@@ -2706,9 +2706,9 @@ export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2716,11 +2716,11 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2749,7 +2749,7 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2759,7 +2759,7 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigOutputRe
       this._asg.internalValue = undefined;
       this._ungraceful.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2824,7 +2824,7 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigOutputRe
   public get asg() {
     return this._asg;
   }
-  public putAsg(value: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg[] | cdktf.IResolvable) {
+  public putAsg(value: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg[] | cdktn.IResolvable) {
     this._asg.internalValue = value;
   }
   public resetAsg() {
@@ -2840,7 +2840,7 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigOutputRe
   public get ungraceful() {
     return this._ungraceful;
   }
-  public putUngraceful(value: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktf.IResolvable) {
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable) {
     this._ungraceful.internalValue = value;
   }
   public resetUngraceful() {
@@ -2852,15 +2852,15 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigOutputRe
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2890,46 +2890,46 @@ export interface ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService
   readonly serviceArn: string;
 }
 
-export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceToTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceToTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_arn: cdktf.stringToTerraform(struct!.clusterArn),
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    service_arn: cdktf.stringToTerraform(struct!.serviceArn),
+    cluster_arn: cdktn.stringToTerraform(struct!.clusterArn),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    service_arn: cdktn.stringToTerraform(struct!.serviceArn),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_arn: {
-      value: cdktf.stringToHclTerraform(struct!.clusterArn),
+      value: cdktn.stringToHclTerraform(struct!.clusterArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_arn: {
-      value: cdktf.stringToHclTerraform(struct!.serviceArn),
+      value: cdktn.stringToHclTerraform(struct!.serviceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2940,9 +2940,9 @@ export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2950,11 +2950,11 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2979,7 +2979,7 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2988,7 +2988,7 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceOutp
       this._externalId = undefined;
       this._serviceArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3061,15 +3061,15 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceOutp
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3087,25 +3087,25 @@ export interface ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngrace
   readonly minimumSuccessPercentage: number;
 }
 
-export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    minimum_success_percentage: cdktf.numberToTerraform(struct!.minimumSuccessPercentage),
+    minimum_success_percentage: cdktn.numberToTerraform(struct!.minimumSuccessPercentage),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     minimum_success_percentage: {
-      value: cdktf.numberToHclTerraform(struct!.minimumSuccessPercentage),
+      value: cdktn.numberToHclTerraform(struct!.minimumSuccessPercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3116,9 +3116,9 @@ export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracef
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3126,11 +3126,11 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3143,13 +3143,13 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._minimumSuccessPercentage = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3174,15 +3174,15 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulO
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3211,62 +3211,62 @@ export interface ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
   */
-  readonly service?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService[] | cdktf.IResolvable;
+  readonly service?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
-  readonly ungraceful?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful[] | cdktf.IResolvable;
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity_monitoring_approach: cdktf.stringToTerraform(struct!.capacityMonitoringApproach),
-    target_percent: cdktf.numberToTerraform(struct!.targetPercent),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    service: cdktf.listMapper(arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceToTerraform, true)(struct!.service),
-    ungraceful: cdktf.listMapper(arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulToTerraform, true)(struct!.ungraceful),
+    capacity_monitoring_approach: cdktn.stringToTerraform(struct!.capacityMonitoringApproach),
+    target_percent: cdktn.numberToTerraform(struct!.targetPercent),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    service: cdktn.listMapper(arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceToTerraform, true)(struct!.service),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulToTerraform, true)(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity_monitoring_approach: {
-      value: cdktf.stringToHclTerraform(struct!.capacityMonitoringApproach),
+      value: cdktn.stringToHclTerraform(struct!.capacityMonitoringApproach),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_percent: {
-      value: cdktf.numberToHclTerraform(struct!.targetPercent),
+      value: cdktn.numberToHclTerraform(struct!.targetPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceToHclTerraform, true)(struct!.service),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceToHclTerraform, true)(struct!.service),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceList",
     },
     ungraceful: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulList",
@@ -3277,9 +3277,9 @@ export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3287,11 +3287,11 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3320,7 +3320,7 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3330,7 +3330,7 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigOutputRefer
       this._service.internalValue = undefined;
       this._ungraceful.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3395,7 +3395,7 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigOutputRefer
   public get service() {
     return this._service;
   }
-  public putService(value: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService[] | cdktf.IResolvable) {
+  public putService(value: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService[] | cdktn.IResolvable) {
     this._service.internalValue = value;
   }
   public resetService() {
@@ -3411,7 +3411,7 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigOutputRefer
   public get ungraceful() {
     return this._ungraceful;
   }
-  public putUngraceful(value: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful[] | cdktf.IResolvable) {
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable) {
     this._ungraceful.internalValue = value;
   }
   public resetUngraceful() {
@@ -3423,15 +3423,15 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigOutputRefer
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3457,39 +3457,39 @@ export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClust
   readonly externalId?: string;
 }
 
-export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_arn: cdktf.stringToTerraform(struct!.clusterArn),
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
+    cluster_arn: cdktn.stringToTerraform(struct!.clusterArn),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_arn: {
-      value: cdktf.stringToHclTerraform(struct!.clusterArn),
+      value: cdktn.stringToHclTerraform(struct!.clusterArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3500,9 +3500,9 @@ export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigEksCluste
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3510,11 +3510,11 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3535,7 +3535,7 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3543,7 +3543,7 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersO
       this._crossAccountRole = undefined;
       this._externalId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3602,15 +3602,15 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersO
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3632,32 +3632,32 @@ export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernet
   readonly kind: string;
 }
 
-export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_version: cdktf.stringToTerraform(struct!.apiVersion),
-    kind: cdktf.stringToTerraform(struct!.kind),
+    api_version: cdktn.stringToTerraform(struct!.apiVersion),
+    kind: cdktn.stringToTerraform(struct!.kind),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_version: {
-      value: cdktf.stringToHclTerraform(struct!.apiVersion),
+      value: cdktn.stringToHclTerraform(struct!.apiVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kind: {
-      value: cdktf.stringToHclTerraform(struct!.kind),
+      value: cdktn.stringToHclTerraform(struct!.kind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3668,9 +3668,9 @@ export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernete
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3678,11 +3678,11 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3699,14 +3699,14 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._apiVersion = undefined;
       this._kind = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3745,15 +3745,15 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesRe
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3783,46 +3783,46 @@ export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingR
   readonly resourceName: string;
 }
 
-export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResourcesToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResourcesToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hpa_name: cdktf.stringToTerraform(struct!.hpaName),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    hpa_name: cdktn.stringToTerraform(struct!.hpaName),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    resource_name: cdktn.stringToTerraform(struct!.resourceName),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResourcesToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResourcesToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hpa_name: {
-      value: cdktf.stringToHclTerraform(struct!.hpaName),
+      value: cdktn.stringToHclTerraform(struct!.hpaName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_name: {
-      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      value: cdktn.stringToHclTerraform(struct!.resourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3833,9 +3833,9 @@ export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResourcesOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3843,11 +3843,11 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResou
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3872,7 +3872,7 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResou
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3881,7 +3881,7 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResou
       this._namespace = undefined;
       this._resourceName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3951,15 +3951,15 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResou
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResourcesList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResourcesList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3980,35 +3980,35 @@ export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingR
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
   */
-  readonly resources?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources[] | cdktf.IResolvable;
+  readonly resources?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    resources: cdktf.listMapper(arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResourcesToTerraform, true)(struct!.resources),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    resources: cdktn.listMapper(arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResourcesToTerraform, true)(struct!.resources),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resources: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResourcesToHclTerraform, true)(struct!.resources),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResourcesToHclTerraform, true)(struct!.resources),
       isBlock: true,
       type: "set",
       storageClassType: "ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResourcesList",
@@ -4019,9 +4019,9 @@ export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4029,11 +4029,11 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResou
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4050,14 +4050,14 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResou
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._namespace = undefined;
       this._resources.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4087,7 +4087,7 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResou
   public get resources() {
     return this._resources;
   }
-  public putResources(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources[] | cdktf.IResolvable) {
+  public putResources(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources[] | cdktn.IResolvable) {
     this._resources.internalValue = value;
   }
   public resetResources() {
@@ -4099,15 +4099,15 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResou
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4125,25 +4125,25 @@ export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracef
   readonly minimumSuccessPercentage: number;
 }
 
-export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    minimum_success_percentage: cdktf.numberToTerraform(struct!.minimumSuccessPercentage),
+    minimum_success_percentage: cdktn.numberToTerraform(struct!.minimumSuccessPercentage),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     minimum_success_percentage: {
-      value: cdktf.numberToHclTerraform(struct!.minimumSuccessPercentage),
+      value: cdktn.numberToHclTerraform(struct!.minimumSuccessPercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -4154,9 +4154,9 @@ export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4164,11 +4164,11 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4181,13 +4181,13 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._minimumSuccessPercentage = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4212,15 +4212,15 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulOu
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4249,88 +4249,88 @@ export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
   */
-  readonly eksClusters?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters[] | cdktf.IResolvable;
+  readonly eksClusters?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters[] | cdktn.IResolvable;
   /**
   * kubernetes_resource_type block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
   */
-  readonly kubernetesResourceType?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType[] | cdktf.IResolvable;
+  readonly kubernetesResourceType?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType[] | cdktn.IResolvable;
   /**
   * scaling_resources block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
   */
-  readonly scalingResources?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources[] | cdktf.IResolvable;
+  readonly scalingResources?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
-  readonly ungraceful?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful[] | cdktf.IResolvable;
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity_monitoring_approach: cdktf.stringToTerraform(struct!.capacityMonitoringApproach),
-    target_percent: cdktf.numberToTerraform(struct!.targetPercent),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    eks_clusters: cdktf.listMapper(arcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersToTerraform, true)(struct!.eksClusters),
-    kubernetes_resource_type: cdktf.listMapper(arcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeToTerraform, true)(struct!.kubernetesResourceType),
-    scaling_resources: cdktf.listMapper(arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesToTerraform, true)(struct!.scalingResources),
-    ungraceful: cdktf.listMapper(arcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulToTerraform, true)(struct!.ungraceful),
+    capacity_monitoring_approach: cdktn.stringToTerraform(struct!.capacityMonitoringApproach),
+    target_percent: cdktn.numberToTerraform(struct!.targetPercent),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    eks_clusters: cdktn.listMapper(arcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersToTerraform, true)(struct!.eksClusters),
+    kubernetes_resource_type: cdktn.listMapper(arcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeToTerraform, true)(struct!.kubernetesResourceType),
+    scaling_resources: cdktn.listMapper(arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesToTerraform, true)(struct!.scalingResources),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulToTerraform, true)(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity_monitoring_approach: {
-      value: cdktf.stringToHclTerraform(struct!.capacityMonitoringApproach),
+      value: cdktn.stringToHclTerraform(struct!.capacityMonitoringApproach),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_percent: {
-      value: cdktf.numberToHclTerraform(struct!.targetPercent),
+      value: cdktn.numberToHclTerraform(struct!.targetPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     eks_clusters: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersToHclTerraform, true)(struct!.eksClusters),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersToHclTerraform, true)(struct!.eksClusters),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersList",
     },
     kubernetes_resource_type: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeToHclTerraform, true)(struct!.kubernetesResourceType),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeToHclTerraform, true)(struct!.kubernetesResourceType),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeList",
     },
     scaling_resources: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesToHclTerraform, true)(struct!.scalingResources),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesToHclTerraform, true)(struct!.scalingResources),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesList",
     },
     ungraceful: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulList",
@@ -4341,9 +4341,9 @@ export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4351,11 +4351,11 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepEksResourceScalingConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepEksResourceScalingConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4392,7 +4392,7 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4404,7 +4404,7 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigOutputRefere
       this._scalingResources.internalValue = undefined;
       this._ungraceful.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4468,7 +4468,7 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigOutputRefere
   public get eksClusters() {
     return this._eksClusters;
   }
-  public putEksClusters(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters[] | cdktf.IResolvable) {
+  public putEksClusters(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters[] | cdktn.IResolvable) {
     this._eksClusters.internalValue = value;
   }
   public resetEksClusters() {
@@ -4484,7 +4484,7 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigOutputRefere
   public get kubernetesResourceType() {
     return this._kubernetesResourceType;
   }
-  public putKubernetesResourceType(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType[] | cdktf.IResolvable) {
+  public putKubernetesResourceType(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType[] | cdktn.IResolvable) {
     this._kubernetesResourceType.internalValue = value;
   }
   public resetKubernetesResourceType() {
@@ -4500,7 +4500,7 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigOutputRefere
   public get scalingResources() {
     return this._scalingResources;
   }
-  public putScalingResources(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources[] | cdktf.IResolvable) {
+  public putScalingResources(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources[] | cdktn.IResolvable) {
     this._scalingResources.internalValue = value;
   }
   public resetScalingResources() {
@@ -4516,7 +4516,7 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigOutputRefere
   public get ungraceful() {
     return this._ungraceful;
   }
-  public putUngraceful(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful[] | cdktf.IResolvable) {
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful[] | cdktn.IResolvable) {
     this._ungraceful.internalValue = value;
   }
   public resetUngraceful() {
@@ -4528,15 +4528,15 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigOutputRefere
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepEksResourceScalingConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepEksResourceScalingConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4558,32 +4558,32 @@ export interface ArcregionswitchPlanWorkflowStepExecutionApprovalConfig {
   readonly timeoutMinutes?: number;
 }
 
-export function arcregionswitchPlanWorkflowStepExecutionApprovalConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepExecutionApprovalConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepExecutionApprovalConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepExecutionApprovalConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    approval_role: cdktf.stringToTerraform(struct!.approvalRole),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
+    approval_role: cdktn.stringToTerraform(struct!.approvalRole),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepExecutionApprovalConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepExecutionApprovalConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepExecutionApprovalConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepExecutionApprovalConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     approval_role: {
-      value: cdktf.stringToHclTerraform(struct!.approvalRole),
+      value: cdktn.stringToHclTerraform(struct!.approvalRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -4594,9 +4594,9 @@ export function arcregionswitchPlanWorkflowStepExecutionApprovalConfigToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepExecutionApprovalConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepExecutionApprovalConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4604,11 +4604,11 @@ export class ArcregionswitchPlanWorkflowStepExecutionApprovalConfigOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepExecutionApprovalConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepExecutionApprovalConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4625,14 +4625,14 @@ export class ArcregionswitchPlanWorkflowStepExecutionApprovalConfigOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepExecutionApprovalConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepExecutionApprovalConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._approvalRole = undefined;
       this._timeoutMinutes = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4674,15 +4674,15 @@ export class ArcregionswitchPlanWorkflowStepExecutionApprovalConfigOutputReferen
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepExecutionApprovalConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepExecutionApprovalConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepExecutionApprovalConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepExecutionApprovalConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4700,25 +4700,25 @@ export interface ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful {
   readonly ungraceful: string;
 }
 
-export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ungraceful: cdktf.stringToTerraform(struct!.ungraceful),
+    ungraceful: cdktn.stringToTerraform(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ungraceful: {
-      value: cdktf.stringToHclTerraform(struct!.ungraceful),
+      value: cdktn.stringToHclTerraform(struct!.ungraceful),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4729,9 +4729,9 @@ export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4739,11 +4739,11 @@ export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4756,13 +4756,13 @@ export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ungraceful = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4787,15 +4787,15 @@ export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulOutputRe
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4836,70 +4836,70 @@ export interface ArcregionswitchPlanWorkflowStepGlobalAuroraConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
-  readonly ungraceful?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful[] | cdktf.IResolvable;
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    behavior: cdktf.stringToTerraform(struct!.behavior),
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    database_cluster_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.databaseClusterArns),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    global_cluster_identifier: cdktf.stringToTerraform(struct!.globalClusterIdentifier),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    ungraceful: cdktf.listMapper(arcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulToTerraform, true)(struct!.ungraceful),
+    behavior: cdktn.stringToTerraform(struct!.behavior),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    database_cluster_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.databaseClusterArns),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    global_cluster_identifier: cdktn.stringToTerraform(struct!.globalClusterIdentifier),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulToTerraform, true)(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     behavior: {
-      value: cdktf.stringToHclTerraform(struct!.behavior),
+      value: cdktn.stringToHclTerraform(struct!.behavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database_cluster_arns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.databaseClusterArns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.databaseClusterArns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     global_cluster_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.globalClusterIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.globalClusterIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ungraceful: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulList",
@@ -4910,9 +4910,9 @@ export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4920,11 +4920,11 @@ export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepGlobalAuroraConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepGlobalAuroraConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4961,7 +4961,7 @@ export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepGlobalAuroraConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepGlobalAuroraConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4973,7 +4973,7 @@ export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigOutputReference ex
       this._timeoutMinutes = undefined;
       this._ungraceful.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5082,7 +5082,7 @@ export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigOutputReference ex
   public get ungraceful() {
     return this._ungraceful;
   }
-  public putUngraceful(value: ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful[] | cdktf.IResolvable) {
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful[] | cdktn.IResolvable) {
     this._ungraceful.internalValue = value;
   }
   public resetUngraceful() {
@@ -5094,15 +5094,15 @@ export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigOutputReference ex
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepGlobalAuroraConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepGlobalAuroraConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5124,32 +5124,32 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingCont
   readonly state: string;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    routing_control_arn: cdktf.stringToTerraform(struct!.routingControlArn),
-    state: cdktf.stringToTerraform(struct!.state),
+    routing_control_arn: cdktn.stringToTerraform(struct!.routingControlArn),
+    state: cdktn.stringToTerraform(struct!.state),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     routing_control_arn: {
-      value: cdktf.stringToHclTerraform(struct!.routingControlArn),
+      value: cdktn.stringToHclTerraform(struct!.routingControlArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5160,9 +5160,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingContr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5170,11 +5170,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5191,14 +5191,14 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._routingControlArn = undefined;
       this._state = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5237,15 +5237,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5266,35 +5266,35 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingCont
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
   */
-  readonly routingControl?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktf.IResolvable;
+  readonly routingControl?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    region: cdktf.stringToTerraform(struct!.region),
-    routing_control: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToTerraform, true)(struct!.routingControl),
+    region: cdktn.stringToTerraform(struct!.region),
+    routing_control: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToTerraform, true)(struct!.routingControl),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     routing_control: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToHclTerraform, true)(struct!.routingControl),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToHclTerraform, true)(struct!.routingControl),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlList",
@@ -5305,9 +5305,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingContr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5315,11 +5315,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5336,14 +5336,14 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._region = undefined;
       this._routingControl.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5373,7 +5373,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
   public get routingControl() {
     return this._routingControl;
   }
-  public putRoutingControl(value: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktf.IResolvable) {
+  public putRoutingControl(value: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktn.IResolvable) {
     this._routingControl.internalValue = value;
   }
   public resetRoutingControl() {
@@ -5385,15 +5385,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5422,49 +5422,49 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingCont
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
   */
-  readonly regionAndRoutingControls?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktf.IResolvable;
+  readonly regionAndRoutingControls?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    region_and_routing_controls: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsToTerraform, true)(struct!.regionAndRoutingControls),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    region_and_routing_controls: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsToTerraform, true)(struct!.regionAndRoutingControls),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     region_and_routing_controls: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsToHclTerraform, true)(struct!.regionAndRoutingControls),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsToHclTerraform, true)(struct!.regionAndRoutingControls),
       isBlock: true,
       type: "set",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsList",
@@ -5475,9 +5475,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingContr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5485,11 +5485,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5514,7 +5514,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5523,7 +5523,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
       this._timeoutMinutes = undefined;
       this._regionAndRoutingControls.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5590,7 +5590,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
   public get regionAndRoutingControls() {
     return this._regionAndRoutingControls;
   }
-  public putRegionAndRoutingControls(value: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktf.IResolvable) {
+  public putRegionAndRoutingControls(value: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktn.IResolvable) {
     this._regionAndRoutingControls.internalValue = value;
   }
   public resetRegionAndRoutingControls() {
@@ -5602,15 +5602,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5636,39 +5636,39 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLa
   readonly externalId?: string;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
+    arn: cdktn.stringToTerraform(struct!.arn),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5679,9 +5679,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLam
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5689,11 +5689,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5714,7 +5714,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5722,7 +5722,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
       this._crossAccountRole = undefined;
       this._externalId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5781,15 +5781,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5807,25 +5807,25 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLa
   readonly behavior: string;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    behavior: cdktf.stringToTerraform(struct!.behavior),
+    behavior: cdktn.stringToTerraform(struct!.behavior),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     behavior: {
-      value: cdktf.stringToHclTerraform(struct!.behavior),
+      value: cdktn.stringToHclTerraform(struct!.behavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5836,9 +5836,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLam
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5846,11 +5846,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5863,13 +5863,13 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._behavior = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5894,15 +5894,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5931,62 +5931,62 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLa
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
   */
-  readonly lambda?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda[] | cdktf.IResolvable;
+  readonly lambda?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
-  readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful[] | cdktf.IResolvable;
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    region_to_run: cdktf.stringToTerraform(struct!.regionToRun),
-    retry_interval_minutes: cdktf.numberToTerraform(struct!.retryIntervalMinutes),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    lambda: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaToTerraform, true)(struct!.lambda),
-    ungraceful: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulToTerraform, true)(struct!.ungraceful),
+    region_to_run: cdktn.stringToTerraform(struct!.regionToRun),
+    retry_interval_minutes: cdktn.numberToTerraform(struct!.retryIntervalMinutes),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    lambda: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaToTerraform, true)(struct!.lambda),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulToTerraform, true)(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     region_to_run: {
-      value: cdktf.stringToHclTerraform(struct!.regionToRun),
+      value: cdktn.stringToHclTerraform(struct!.regionToRun),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retry_interval_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.retryIntervalMinutes),
+      value: cdktn.numberToHclTerraform(struct!.retryIntervalMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     lambda: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaToHclTerraform, true)(struct!.lambda),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaToHclTerraform, true)(struct!.lambda),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaList",
     },
     ungraceful: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulList",
@@ -5997,9 +5997,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLam
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6007,11 +6007,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6040,7 +6040,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6050,7 +6050,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
       this._lambda.internalValue = undefined;
       this._ungraceful.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6112,7 +6112,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
   public get lambda() {
     return this._lambda;
   }
-  public putLambda(value: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda[] | cdktf.IResolvable) {
+  public putLambda(value: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda[] | cdktn.IResolvable) {
     this._lambda.internalValue = value;
   }
   public resetLambda() {
@@ -6128,7 +6128,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
   public get ungraceful() {
     return this._ungraceful;
   }
-  public putUngraceful(value: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful[] | cdktf.IResolvable) {
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful[] | cdktn.IResolvable) {
     this._ungraceful.internalValue = value;
   }
   public resetUngraceful() {
@@ -6140,15 +6140,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6166,25 +6166,25 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConf
   readonly ungraceful: string;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ungraceful: cdktf.stringToTerraform(struct!.ungraceful),
+    ungraceful: cdktn.stringToTerraform(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ungraceful: {
-      value: cdktf.stringToHclTerraform(struct!.ungraceful),
+      value: cdktn.stringToHclTerraform(struct!.ungraceful),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6195,9 +6195,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6205,11 +6205,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUn
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6222,13 +6222,13 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUn
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ungraceful = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6253,15 +6253,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUn
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6302,70 +6302,70 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConf
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
-  readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful[] | cdktf.IResolvable;
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    behavior: cdktf.stringToTerraform(struct!.behavior),
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    database_cluster_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.databaseClusterArns),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    global_cluster_identifier: cdktf.stringToTerraform(struct!.globalClusterIdentifier),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    ungraceful: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulToTerraform, true)(struct!.ungraceful),
+    behavior: cdktn.stringToTerraform(struct!.behavior),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    database_cluster_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.databaseClusterArns),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    global_cluster_identifier: cdktn.stringToTerraform(struct!.globalClusterIdentifier),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulToTerraform, true)(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     behavior: {
-      value: cdktf.stringToHclTerraform(struct!.behavior),
+      value: cdktn.stringToHclTerraform(struct!.behavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database_cluster_arns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.databaseClusterArns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.databaseClusterArns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     global_cluster_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.globalClusterIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.globalClusterIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ungraceful: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulList",
@@ -6376,9 +6376,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6386,11 +6386,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6427,7 +6427,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6439,7 +6439,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigOu
       this._timeoutMinutes = undefined;
       this._ungraceful.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6548,7 +6548,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigOu
   public get ungraceful() {
     return this._ungraceful;
   }
-  public putUngraceful(value: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful[] | cdktf.IResolvable) {
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful[] | cdktn.IResolvable) {
     this._ungraceful.internalValue = value;
   }
   public resetUngraceful() {
@@ -6560,15 +6560,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigOu
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6594,39 +6594,39 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacity
   readonly externalId?: string;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
+    arn: cdktn.stringToTerraform(struct!.arn),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6637,9 +6637,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6647,11 +6647,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6672,7 +6672,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6680,7 +6680,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
       this._crossAccountRole = undefined;
       this._externalId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6739,15 +6739,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6765,25 +6765,25 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacity
   readonly minimumSuccessPercentage: number;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    minimum_success_percentage: cdktf.numberToTerraform(struct!.minimumSuccessPercentage),
+    minimum_success_percentage: cdktn.numberToTerraform(struct!.minimumSuccessPercentage),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     minimum_success_percentage: {
-      value: cdktf.numberToHclTerraform(struct!.minimumSuccessPercentage),
+      value: cdktn.numberToHclTerraform(struct!.minimumSuccessPercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -6794,9 +6794,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6804,11 +6804,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6821,13 +6821,13 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._minimumSuccessPercentage = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6852,15 +6852,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6889,62 +6889,62 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacity
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
   */
-  readonly asg?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg[] | cdktf.IResolvable;
+  readonly asg?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
-  readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktf.IResolvable;
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity_monitoring_approach: cdktf.stringToTerraform(struct!.capacityMonitoringApproach),
-    target_percent: cdktf.numberToTerraform(struct!.targetPercent),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    asg: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgToTerraform, true)(struct!.asg),
-    ungraceful: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulToTerraform, true)(struct!.ungraceful),
+    capacity_monitoring_approach: cdktn.stringToTerraform(struct!.capacityMonitoringApproach),
+    target_percent: cdktn.numberToTerraform(struct!.targetPercent),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    asg: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgToTerraform, true)(struct!.asg),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulToTerraform, true)(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity_monitoring_approach: {
-      value: cdktf.stringToHclTerraform(struct!.capacityMonitoringApproach),
+      value: cdktn.stringToHclTerraform(struct!.capacityMonitoringApproach),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_percent: {
-      value: cdktf.numberToHclTerraform(struct!.targetPercent),
+      value: cdktn.numberToHclTerraform(struct!.targetPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     asg: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgToHclTerraform, true)(struct!.asg),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgToHclTerraform, true)(struct!.asg),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgList",
     },
     ungraceful: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulList",
@@ -6955,9 +6955,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6965,11 +6965,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6998,7 +6998,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7008,7 +7008,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
       this._asg.internalValue = undefined;
       this._ungraceful.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7073,7 +7073,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
   public get asg() {
     return this._asg;
   }
-  public putAsg(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg[] | cdktf.IResolvable) {
+  public putAsg(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg[] | cdktn.IResolvable) {
     this._asg.internalValue = value;
   }
   public resetAsg() {
@@ -7089,7 +7089,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
   public get ungraceful() {
     return this._ungraceful;
   }
-  public putUngraceful(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktf.IResolvable) {
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable) {
     this._ungraceful.internalValue = value;
   }
   public resetUngraceful() {
@@ -7101,15 +7101,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7139,46 +7139,46 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityInc
   readonly serviceArn: string;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_arn: cdktf.stringToTerraform(struct!.clusterArn),
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    service_arn: cdktf.stringToTerraform(struct!.serviceArn),
+    cluster_arn: cdktn.stringToTerraform(struct!.clusterArn),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    service_arn: cdktn.stringToTerraform(struct!.serviceArn),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_arn: {
-      value: cdktf.stringToHclTerraform(struct!.clusterArn),
+      value: cdktn.stringToHclTerraform(struct!.clusterArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_arn: {
-      value: cdktf.stringToHclTerraform(struct!.serviceArn),
+      value: cdktn.stringToHclTerraform(struct!.serviceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7189,9 +7189,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7199,11 +7199,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7228,7 +7228,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7237,7 +7237,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
       this._externalId = undefined;
       this._serviceArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7310,15 +7310,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7336,25 +7336,25 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityInc
   readonly minimumSuccessPercentage: number;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    minimum_success_percentage: cdktf.numberToTerraform(struct!.minimumSuccessPercentage),
+    minimum_success_percentage: cdktn.numberToTerraform(struct!.minimumSuccessPercentage),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     minimum_success_percentage: {
-      value: cdktf.numberToHclTerraform(struct!.minimumSuccessPercentage),
+      value: cdktn.numberToHclTerraform(struct!.minimumSuccessPercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -7365,9 +7365,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7375,11 +7375,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7392,13 +7392,13 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._minimumSuccessPercentage = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7423,15 +7423,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7460,62 +7460,62 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityInc
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
   */
-  readonly service?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService[] | cdktf.IResolvable;
+  readonly service?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
-  readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful[] | cdktf.IResolvable;
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity_monitoring_approach: cdktf.stringToTerraform(struct!.capacityMonitoringApproach),
-    target_percent: cdktf.numberToTerraform(struct!.targetPercent),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    service: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceToTerraform, true)(struct!.service),
-    ungraceful: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulToTerraform, true)(struct!.ungraceful),
+    capacity_monitoring_approach: cdktn.stringToTerraform(struct!.capacityMonitoringApproach),
+    target_percent: cdktn.numberToTerraform(struct!.targetPercent),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    service: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceToTerraform, true)(struct!.service),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulToTerraform, true)(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity_monitoring_approach: {
-      value: cdktf.stringToHclTerraform(struct!.capacityMonitoringApproach),
+      value: cdktn.stringToHclTerraform(struct!.capacityMonitoringApproach),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_percent: {
-      value: cdktf.numberToHclTerraform(struct!.targetPercent),
+      value: cdktn.numberToHclTerraform(struct!.targetPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceToHclTerraform, true)(struct!.service),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceToHclTerraform, true)(struct!.service),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceList",
     },
     ungraceful: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulList",
@@ -7526,9 +7526,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7536,11 +7536,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7569,7 +7569,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7579,7 +7579,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
       this._service.internalValue = undefined;
       this._ungraceful.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7644,7 +7644,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
   public get service() {
     return this._service;
   }
-  public putService(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService[] | cdktf.IResolvable) {
+  public putService(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService[] | cdktn.IResolvable) {
     this._service.internalValue = value;
   }
   public resetService() {
@@ -7660,7 +7660,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
   public get ungraceful() {
     return this._ungraceful;
   }
-  public putUngraceful(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful[] | cdktf.IResolvable) {
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable) {
     this._ungraceful.internalValue = value;
   }
   public resetUngraceful() {
@@ -7672,15 +7672,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7706,39 +7706,39 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceSca
   readonly externalId?: string;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClustersToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClustersToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_arn: cdktf.stringToTerraform(struct!.clusterArn),
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
+    cluster_arn: cdktn.stringToTerraform(struct!.clusterArn),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClustersToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClustersToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_arn: {
-      value: cdktf.stringToHclTerraform(struct!.clusterArn),
+      value: cdktn.stringToHclTerraform(struct!.clusterArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7749,9 +7749,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScal
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClustersOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClustersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7759,11 +7759,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7784,7 +7784,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7792,7 +7792,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
       this._crossAccountRole = undefined;
       this._externalId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7851,15 +7851,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClustersList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClustersList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7881,32 +7881,32 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceSca
   readonly kind: string;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_version: cdktf.stringToTerraform(struct!.apiVersion),
-    kind: cdktf.stringToTerraform(struct!.kind),
+    api_version: cdktn.stringToTerraform(struct!.apiVersion),
+    kind: cdktn.stringToTerraform(struct!.kind),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_version: {
-      value: cdktf.stringToHclTerraform(struct!.apiVersion),
+      value: cdktn.stringToHclTerraform(struct!.apiVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kind: {
-      value: cdktf.stringToHclTerraform(struct!.kind),
+      value: cdktn.stringToHclTerraform(struct!.kind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7917,9 +7917,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScal
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7927,11 +7927,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7948,14 +7948,14 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._apiVersion = undefined;
       this._kind = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7994,15 +7994,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8032,46 +8032,46 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceSca
   readonly resourceName: string;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResourcesToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResourcesToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hpa_name: cdktf.stringToTerraform(struct!.hpaName),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    hpa_name: cdktn.stringToTerraform(struct!.hpaName),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    resource_name: cdktn.stringToTerraform(struct!.resourceName),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResourcesToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResourcesToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hpa_name: {
-      value: cdktf.stringToHclTerraform(struct!.hpaName),
+      value: cdktn.stringToHclTerraform(struct!.hpaName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_name: {
-      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      value: cdktn.stringToHclTerraform(struct!.resourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8082,9 +8082,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScal
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResourcesOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8092,11 +8092,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8121,7 +8121,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8130,7 +8130,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
       this._namespace = undefined;
       this._resourceName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8200,15 +8200,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResourcesList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResourcesList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8229,35 +8229,35 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceSca
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
   */
-  readonly resources?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources[] | cdktf.IResolvable;
+  readonly resources?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    resources: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResourcesToTerraform, true)(struct!.resources),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    resources: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResourcesToTerraform, true)(struct!.resources),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resources: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResourcesToHclTerraform, true)(struct!.resources),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResourcesToHclTerraform, true)(struct!.resources),
       isBlock: true,
       type: "set",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResourcesList",
@@ -8268,9 +8268,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScal
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8278,11 +8278,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8299,14 +8299,14 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._namespace = undefined;
       this._resources.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8336,7 +8336,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   public get resources() {
     return this._resources;
   }
-  public putResources(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources[] | cdktf.IResolvable) {
+  public putResources(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources[] | cdktn.IResolvable) {
     this._resources.internalValue = value;
   }
   public resetResources() {
@@ -8348,15 +8348,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8374,25 +8374,25 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceSca
   readonly minimumSuccessPercentage: number;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    minimum_success_percentage: cdktf.numberToTerraform(struct!.minimumSuccessPercentage),
+    minimum_success_percentage: cdktn.numberToTerraform(struct!.minimumSuccessPercentage),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     minimum_success_percentage: {
-      value: cdktf.numberToHclTerraform(struct!.minimumSuccessPercentage),
+      value: cdktn.numberToHclTerraform(struct!.minimumSuccessPercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -8403,9 +8403,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScal
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8413,11 +8413,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8430,13 +8430,13 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._minimumSuccessPercentage = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8461,15 +8461,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8498,88 +8498,88 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceSca
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
   */
-  readonly eksClusters?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters[] | cdktf.IResolvable;
+  readonly eksClusters?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters[] | cdktn.IResolvable;
   /**
   * kubernetes_resource_type block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
   */
-  readonly kubernetesResourceType?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType[] | cdktf.IResolvable;
+  readonly kubernetesResourceType?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType[] | cdktn.IResolvable;
   /**
   * scaling_resources block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
   */
-  readonly scalingResources?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources[] | cdktf.IResolvable;
+  readonly scalingResources?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
-  readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful[] | cdktf.IResolvable;
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity_monitoring_approach: cdktf.stringToTerraform(struct!.capacityMonitoringApproach),
-    target_percent: cdktf.numberToTerraform(struct!.targetPercent),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    eks_clusters: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClustersToTerraform, true)(struct!.eksClusters),
-    kubernetes_resource_type: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeToTerraform, true)(struct!.kubernetesResourceType),
-    scaling_resources: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesToTerraform, true)(struct!.scalingResources),
-    ungraceful: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulToTerraform, true)(struct!.ungraceful),
+    capacity_monitoring_approach: cdktn.stringToTerraform(struct!.capacityMonitoringApproach),
+    target_percent: cdktn.numberToTerraform(struct!.targetPercent),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    eks_clusters: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClustersToTerraform, true)(struct!.eksClusters),
+    kubernetes_resource_type: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeToTerraform, true)(struct!.kubernetesResourceType),
+    scaling_resources: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesToTerraform, true)(struct!.scalingResources),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulToTerraform, true)(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity_monitoring_approach: {
-      value: cdktf.stringToHclTerraform(struct!.capacityMonitoringApproach),
+      value: cdktn.stringToHclTerraform(struct!.capacityMonitoringApproach),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_percent: {
-      value: cdktf.numberToHclTerraform(struct!.targetPercent),
+      value: cdktn.numberToHclTerraform(struct!.targetPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     eks_clusters: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClustersToHclTerraform, true)(struct!.eksClusters),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClustersToHclTerraform, true)(struct!.eksClusters),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClustersList",
     },
     kubernetes_resource_type: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeToHclTerraform, true)(struct!.kubernetesResourceType),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeToHclTerraform, true)(struct!.kubernetesResourceType),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeList",
     },
     scaling_resources: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesToHclTerraform, true)(struct!.scalingResources),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesToHclTerraform, true)(struct!.scalingResources),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesList",
     },
     ungraceful: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulList",
@@ -8590,9 +8590,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScal
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8600,11 +8600,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8641,7 +8641,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8653,7 +8653,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
       this._scalingResources.internalValue = undefined;
       this._ungraceful.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8717,7 +8717,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   public get eksClusters() {
     return this._eksClusters;
   }
-  public putEksClusters(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters[] | cdktf.IResolvable) {
+  public putEksClusters(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters[] | cdktn.IResolvable) {
     this._eksClusters.internalValue = value;
   }
   public resetEksClusters() {
@@ -8733,7 +8733,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   public get kubernetesResourceType() {
     return this._kubernetesResourceType;
   }
-  public putKubernetesResourceType(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType[] | cdktf.IResolvable) {
+  public putKubernetesResourceType(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType[] | cdktn.IResolvable) {
     this._kubernetesResourceType.internalValue = value;
   }
   public resetKubernetesResourceType() {
@@ -8749,7 +8749,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   public get scalingResources() {
     return this._scalingResources;
   }
-  public putScalingResources(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources[] | cdktf.IResolvable) {
+  public putScalingResources(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources[] | cdktn.IResolvable) {
     this._scalingResources.internalValue = value;
   }
   public resetScalingResources() {
@@ -8765,7 +8765,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   public get ungraceful() {
     return this._ungraceful;
   }
-  public putUngraceful(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful[] | cdktf.IResolvable) {
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful[] | cdktn.IResolvable) {
     this._ungraceful.internalValue = value;
   }
   public resetUngraceful() {
@@ -8777,15 +8777,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8807,32 +8807,32 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionAppro
   readonly timeoutMinutes?: number;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    approval_role: cdktf.stringToTerraform(struct!.approvalRole),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
+    approval_role: cdktn.stringToTerraform(struct!.approvalRole),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     approval_role: {
-      value: cdktf.stringToHclTerraform(struct!.approvalRole),
+      value: cdktn.stringToHclTerraform(struct!.approvalRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -8843,9 +8843,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprov
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8853,11 +8853,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalC
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8874,14 +8874,14 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalC
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._approvalRole = undefined;
       this._timeoutMinutes = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8923,15 +8923,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalC
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8949,25 +8949,25 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraCo
   readonly ungraceful: string;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ungraceful: cdktf.stringToTerraform(struct!.ungraceful),
+    ungraceful: cdktn.stringToTerraform(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ungraceful: {
-      value: cdktf.stringToHclTerraform(struct!.ungraceful),
+      value: cdktn.stringToHclTerraform(struct!.ungraceful),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8978,9 +8978,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8988,11 +8988,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9005,13 +9005,13 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ungraceful = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9036,15 +9036,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9085,70 +9085,70 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraCo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
-  readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful[] | cdktf.IResolvable;
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    behavior: cdktf.stringToTerraform(struct!.behavior),
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    database_cluster_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.databaseClusterArns),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    global_cluster_identifier: cdktf.stringToTerraform(struct!.globalClusterIdentifier),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    ungraceful: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulToTerraform, true)(struct!.ungraceful),
+    behavior: cdktn.stringToTerraform(struct!.behavior),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    database_cluster_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.databaseClusterArns),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    global_cluster_identifier: cdktn.stringToTerraform(struct!.globalClusterIdentifier),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulToTerraform, true)(struct!.ungraceful),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     behavior: {
-      value: cdktf.stringToHclTerraform(struct!.behavior),
+      value: cdktn.stringToHclTerraform(struct!.behavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database_cluster_arns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.databaseClusterArns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.databaseClusterArns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     global_cluster_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.globalClusterIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.globalClusterIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ungraceful: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulList",
@@ -9159,9 +9159,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9169,11 +9169,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9210,7 +9210,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9222,7 +9222,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig
       this._timeoutMinutes = undefined;
       this._ungraceful.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9331,7 +9331,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig
   public get ungraceful() {
     return this._ungraceful;
   }
-  public putUngraceful(value: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful[] | cdktf.IResolvable) {
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful[] | cdktn.IResolvable) {
     this._ungraceful.internalValue = value;
   }
   public resetUngraceful() {
@@ -9343,15 +9343,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9377,39 +9377,39 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPl
   readonly externalId?: string;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
+    arn: cdktn.stringToTerraform(struct!.arn),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9420,9 +9420,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPla
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9430,11 +9430,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanCo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9455,7 +9455,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanCo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9463,7 +9463,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanCo
       this._crossAccountRole = undefined;
       this._externalId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9522,15 +9522,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanCo
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9552,32 +9552,32 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthC
   readonly region: string;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    record_set_identifier: cdktf.stringToTerraform(struct!.recordSetIdentifier),
-    region: cdktf.stringToTerraform(struct!.region),
+    record_set_identifier: cdktn.stringToTerraform(struct!.recordSetIdentifier),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     record_set_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.recordSetIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.recordSetIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9588,9 +9588,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCh
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9598,11 +9598,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheck
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9619,14 +9619,14 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheck
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._recordSetIdentifier = undefined;
       this._region = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9665,15 +9665,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheck
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9710,63 +9710,63 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthC
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
   */
-  readonly recordSet?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet[] | cdktf.IResolvable;
+  readonly recordSet?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    hosted_zone_id: cdktf.stringToTerraform(struct!.hostedZoneId),
-    record_name: cdktf.stringToTerraform(struct!.recordName),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    record_set: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetToTerraform, true)(struct!.recordSet),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    hosted_zone_id: cdktn.stringToTerraform(struct!.hostedZoneId),
+    record_name: cdktn.stringToTerraform(struct!.recordName),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    record_set: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetToTerraform, true)(struct!.recordSet),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hosted_zone_id: {
-      value: cdktf.stringToHclTerraform(struct!.hostedZoneId),
+      value: cdktn.stringToHclTerraform(struct!.hostedZoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     record_name: {
-      value: cdktf.stringToHclTerraform(struct!.recordName),
+      value: cdktn.stringToHclTerraform(struct!.recordName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     record_set: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetToHclTerraform, true)(struct!.recordSet),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetToHclTerraform, true)(struct!.recordSet),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetList",
@@ -9777,9 +9777,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCh
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9787,11 +9787,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheck
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9824,7 +9824,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheck
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9835,7 +9835,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheck
       this._timeoutMinutes = undefined;
       this._recordSet.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9930,7 +9930,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheck
   public get recordSet() {
     return this._recordSet;
   }
-  public putRecordSet(value: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet[] | cdktf.IResolvable) {
+  public putRecordSet(value: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet[] | cdktn.IResolvable) {
     this._recordSet.internalValue = value;
   }
   public resetRecordSet() {
@@ -9942,15 +9942,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheck
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9979,166 +9979,166 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStep {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
   */
-  readonly arcRoutingControlConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig[] | cdktf.IResolvable;
+  readonly arcRoutingControlConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig[] | cdktn.IResolvable;
   /**
   * custom_action_lambda_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
   */
-  readonly customActionLambdaConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig[] | cdktf.IResolvable;
+  readonly customActionLambdaConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig[] | cdktn.IResolvable;
   /**
   * document_db_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
   */
-  readonly documentDbConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig[] | cdktf.IResolvable;
+  readonly documentDbConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig[] | cdktn.IResolvable;
   /**
   * ec2_asg_capacity_increase_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
   */
-  readonly ec2AsgCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig[] | cdktf.IResolvable;
+  readonly ec2AsgCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig[] | cdktn.IResolvable;
   /**
   * ecs_capacity_increase_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
   */
-  readonly ecsCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig[] | cdktf.IResolvable;
+  readonly ecsCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig[] | cdktn.IResolvable;
   /**
   * eks_resource_scaling_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
   */
-  readonly eksResourceScalingConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig[] | cdktf.IResolvable;
+  readonly eksResourceScalingConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig[] | cdktn.IResolvable;
   /**
   * execution_approval_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
   */
-  readonly executionApprovalConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig[] | cdktf.IResolvable;
+  readonly executionApprovalConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig[] | cdktn.IResolvable;
   /**
   * global_aurora_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
   */
-  readonly globalAuroraConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig[] | cdktf.IResolvable;
+  readonly globalAuroraConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig[] | cdktn.IResolvable;
   /**
   * region_switch_plan_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
   */
-  readonly regionSwitchPlanConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig[] | cdktf.IResolvable;
+  readonly regionSwitchPlanConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig[] | cdktn.IResolvable;
   /**
   * route53_health_check_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
   */
-  readonly route53HealthCheckConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig[] | cdktf.IResolvable;
+  readonly route53HealthCheckConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStep | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStep | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    execution_block_type: cdktf.stringToTerraform(struct!.executionBlockType),
-    name: cdktf.stringToTerraform(struct!.name),
-    arc_routing_control_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigToTerraform, true)(struct!.arcRoutingControlConfig),
-    custom_action_lambda_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigToTerraform, true)(struct!.customActionLambdaConfig),
-    document_db_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigToTerraform, true)(struct!.documentDbConfig),
-    ec2_asg_capacity_increase_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigToTerraform, true)(struct!.ec2AsgCapacityIncreaseConfig),
-    ecs_capacity_increase_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigToTerraform, true)(struct!.ecsCapacityIncreaseConfig),
-    eks_resource_scaling_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigToTerraform, true)(struct!.eksResourceScalingConfig),
-    execution_approval_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigToTerraform, true)(struct!.executionApprovalConfig),
-    global_aurora_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigToTerraform, true)(struct!.globalAuroraConfig),
-    region_switch_plan_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigToTerraform, true)(struct!.regionSwitchPlanConfig),
-    route53_health_check_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigToTerraform, true)(struct!.route53HealthCheckConfig),
+    description: cdktn.stringToTerraform(struct!.description),
+    execution_block_type: cdktn.stringToTerraform(struct!.executionBlockType),
+    name: cdktn.stringToTerraform(struct!.name),
+    arc_routing_control_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigToTerraform, true)(struct!.arcRoutingControlConfig),
+    custom_action_lambda_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigToTerraform, true)(struct!.customActionLambdaConfig),
+    document_db_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigToTerraform, true)(struct!.documentDbConfig),
+    ec2_asg_capacity_increase_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigToTerraform, true)(struct!.ec2AsgCapacityIncreaseConfig),
+    ecs_capacity_increase_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigToTerraform, true)(struct!.ecsCapacityIncreaseConfig),
+    eks_resource_scaling_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigToTerraform, true)(struct!.eksResourceScalingConfig),
+    execution_approval_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigToTerraform, true)(struct!.executionApprovalConfig),
+    global_aurora_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigToTerraform, true)(struct!.globalAuroraConfig),
+    region_switch_plan_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigToTerraform, true)(struct!.regionSwitchPlanConfig),
+    route53_health_check_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigToTerraform, true)(struct!.route53HealthCheckConfig),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigStepToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStep | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigStepToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStep | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     execution_block_type: {
-      value: cdktf.stringToHclTerraform(struct!.executionBlockType),
+      value: cdktn.stringToHclTerraform(struct!.executionBlockType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     arc_routing_control_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigToHclTerraform, true)(struct!.arcRoutingControlConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigToHclTerraform, true)(struct!.arcRoutingControlConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigList",
     },
     custom_action_lambda_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigToHclTerraform, true)(struct!.customActionLambdaConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigToHclTerraform, true)(struct!.customActionLambdaConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigList",
     },
     document_db_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigToHclTerraform, true)(struct!.documentDbConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigToHclTerraform, true)(struct!.documentDbConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigList",
     },
     ec2_asg_capacity_increase_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigToHclTerraform, true)(struct!.ec2AsgCapacityIncreaseConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigToHclTerraform, true)(struct!.ec2AsgCapacityIncreaseConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigList",
     },
     ecs_capacity_increase_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigToHclTerraform, true)(struct!.ecsCapacityIncreaseConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigToHclTerraform, true)(struct!.ecsCapacityIncreaseConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigList",
     },
     eks_resource_scaling_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigToHclTerraform, true)(struct!.eksResourceScalingConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigToHclTerraform, true)(struct!.eksResourceScalingConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigList",
     },
     execution_approval_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigToHclTerraform, true)(struct!.executionApprovalConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigToHclTerraform, true)(struct!.executionApprovalConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigList",
     },
     global_aurora_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigToHclTerraform, true)(struct!.globalAuroraConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigToHclTerraform, true)(struct!.globalAuroraConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigList",
     },
     region_switch_plan_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigToHclTerraform, true)(struct!.regionSwitchPlanConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigToHclTerraform, true)(struct!.regionSwitchPlanConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigList",
     },
     route53_health_check_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigToHclTerraform, true)(struct!.route53HealthCheckConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigToHclTerraform, true)(struct!.route53HealthCheckConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigList",
@@ -10149,9 +10149,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10159,11 +10159,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStep | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStep | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10224,7 +10224,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStep | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStep | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10242,7 +10242,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
       this._regionSwitchPlanConfig.internalValue = undefined;
       this._route53HealthCheckConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10312,7 +10312,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
   public get arcRoutingControlConfig() {
     return this._arcRoutingControlConfig;
   }
-  public putArcRoutingControlConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig[] | cdktf.IResolvable) {
+  public putArcRoutingControlConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig[] | cdktn.IResolvable) {
     this._arcRoutingControlConfig.internalValue = value;
   }
   public resetArcRoutingControlConfig() {
@@ -10328,7 +10328,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
   public get customActionLambdaConfig() {
     return this._customActionLambdaConfig;
   }
-  public putCustomActionLambdaConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig[] | cdktf.IResolvable) {
+  public putCustomActionLambdaConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig[] | cdktn.IResolvable) {
     this._customActionLambdaConfig.internalValue = value;
   }
   public resetCustomActionLambdaConfig() {
@@ -10344,7 +10344,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
   public get documentDbConfig() {
     return this._documentDbConfig;
   }
-  public putDocumentDbConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig[] | cdktf.IResolvable) {
+  public putDocumentDbConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig[] | cdktn.IResolvable) {
     this._documentDbConfig.internalValue = value;
   }
   public resetDocumentDbConfig() {
@@ -10360,7 +10360,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
   public get ec2AsgCapacityIncreaseConfig() {
     return this._ec2AsgCapacityIncreaseConfig;
   }
-  public putEc2AsgCapacityIncreaseConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig[] | cdktf.IResolvable) {
+  public putEc2AsgCapacityIncreaseConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig[] | cdktn.IResolvable) {
     this._ec2AsgCapacityIncreaseConfig.internalValue = value;
   }
   public resetEc2AsgCapacityIncreaseConfig() {
@@ -10376,7 +10376,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
   public get ecsCapacityIncreaseConfig() {
     return this._ecsCapacityIncreaseConfig;
   }
-  public putEcsCapacityIncreaseConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig[] | cdktf.IResolvable) {
+  public putEcsCapacityIncreaseConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig[] | cdktn.IResolvable) {
     this._ecsCapacityIncreaseConfig.internalValue = value;
   }
   public resetEcsCapacityIncreaseConfig() {
@@ -10392,7 +10392,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
   public get eksResourceScalingConfig() {
     return this._eksResourceScalingConfig;
   }
-  public putEksResourceScalingConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig[] | cdktf.IResolvable) {
+  public putEksResourceScalingConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig[] | cdktn.IResolvable) {
     this._eksResourceScalingConfig.internalValue = value;
   }
   public resetEksResourceScalingConfig() {
@@ -10408,7 +10408,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
   public get executionApprovalConfig() {
     return this._executionApprovalConfig;
   }
-  public putExecutionApprovalConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig[] | cdktf.IResolvable) {
+  public putExecutionApprovalConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig[] | cdktn.IResolvable) {
     this._executionApprovalConfig.internalValue = value;
   }
   public resetExecutionApprovalConfig() {
@@ -10424,7 +10424,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
   public get globalAuroraConfig() {
     return this._globalAuroraConfig;
   }
-  public putGlobalAuroraConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig[] | cdktf.IResolvable) {
+  public putGlobalAuroraConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig[] | cdktn.IResolvable) {
     this._globalAuroraConfig.internalValue = value;
   }
   public resetGlobalAuroraConfig() {
@@ -10440,7 +10440,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
   public get regionSwitchPlanConfig() {
     return this._regionSwitchPlanConfig;
   }
-  public putRegionSwitchPlanConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig[] | cdktf.IResolvable) {
+  public putRegionSwitchPlanConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig[] | cdktn.IResolvable) {
     this._regionSwitchPlanConfig.internalValue = value;
   }
   public resetRegionSwitchPlanConfig() {
@@ -10456,7 +10456,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
   public get route53HealthCheckConfig() {
     return this._route53HealthCheckConfig;
   }
-  public putRoute53HealthCheckConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig[] | cdktf.IResolvable) {
+  public putRoute53HealthCheckConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig[] | cdktn.IResolvable) {
     this._route53HealthCheckConfig.internalValue = value;
   }
   public resetRoute53HealthCheckConfig() {
@@ -10468,15 +10468,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigStepList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStep[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStep[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10493,28 +10493,28 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
   */
-  readonly step?: ArcregionswitchPlanWorkflowStepParallelConfigStep[] | cdktf.IResolvable;
+  readonly step?: ArcregionswitchPlanWorkflowStepParallelConfigStep[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepParallelConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    step: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepToTerraform, true)(struct!.step),
+    step: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepToTerraform, true)(struct!.step),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepParallelConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepParallelConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     step: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepToHclTerraform, true)(struct!.step),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepToHclTerraform, true)(struct!.step),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepList",
@@ -10525,9 +10525,9 @@ export function arcregionswitchPlanWorkflowStepParallelConfigToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepParallelConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10535,11 +10535,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10552,13 +10552,13 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._step.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10574,7 +10574,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigOutputReference extend
   public get step() {
     return this._step;
   }
-  public putStep(value: ArcregionswitchPlanWorkflowStepParallelConfigStep[] | cdktf.IResolvable) {
+  public putStep(value: ArcregionswitchPlanWorkflowStepParallelConfigStep[] | cdktn.IResolvable) {
     this._step.internalValue = value;
   }
   public resetStep() {
@@ -10586,15 +10586,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigOutputReference extend
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepParallelConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepParallelConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10620,39 +10620,39 @@ export interface ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig {
   readonly externalId?: string;
 }
 
-export function arcregionswitchPlanWorkflowStepRegionSwitchPlanConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepRegionSwitchPlanConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
+    arn: cdktn.stringToTerraform(struct!.arn),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepRegionSwitchPlanConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepRegionSwitchPlanConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10663,9 +10663,9 @@ export function arcregionswitchPlanWorkflowStepRegionSwitchPlanConfigToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10673,11 +10673,11 @@ export class ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfigOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10698,7 +10698,7 @@ export class ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfigOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10706,7 +10706,7 @@ export class ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfigOutputReferenc
       this._crossAccountRole = undefined;
       this._externalId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10765,15 +10765,15 @@ export class ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfigOutputReferenc
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10795,32 +10795,32 @@ export interface ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSe
   readonly region: string;
 }
 
-export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetToTerraform(struct?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetToTerraform(struct?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    record_set_identifier: cdktf.stringToTerraform(struct!.recordSetIdentifier),
-    region: cdktf.stringToTerraform(struct!.region),
+    record_set_identifier: cdktn.stringToTerraform(struct!.recordSetIdentifier),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     record_set_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.recordSetIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.recordSetIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10831,9 +10831,9 @@ export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10841,11 +10841,11 @@ export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10862,14 +10862,14 @@ export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._recordSetIdentifier = undefined;
       this._region = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10908,15 +10908,15 @@ export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetOut
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10953,63 +10953,63 @@ export interface ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
   */
-  readonly recordSet?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet[] | cdktf.IResolvable;
+  readonly recordSet?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cross_account_role: cdktf.stringToTerraform(struct!.crossAccountRole),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    hosted_zone_id: cdktf.stringToTerraform(struct!.hostedZoneId),
-    record_name: cdktf.stringToTerraform(struct!.recordName),
-    timeout_minutes: cdktf.numberToTerraform(struct!.timeoutMinutes),
-    record_set: cdktf.listMapper(arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetToTerraform, true)(struct!.recordSet),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    hosted_zone_id: cdktn.stringToTerraform(struct!.hostedZoneId),
+    record_name: cdktn.stringToTerraform(struct!.recordName),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    record_set: cdktn.listMapper(arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetToTerraform, true)(struct!.recordSet),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cross_account_role: {
-      value: cdktf.stringToHclTerraform(struct!.crossAccountRole),
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hosted_zone_id: {
-      value: cdktf.stringToHclTerraform(struct!.hostedZoneId),
+      value: cdktn.stringToHclTerraform(struct!.hostedZoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     record_name: {
-      value: cdktf.stringToHclTerraform(struct!.recordName),
+      value: cdktn.stringToHclTerraform(struct!.recordName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     record_set: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetToHclTerraform, true)(struct!.recordSet),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetToHclTerraform, true)(struct!.recordSet),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetList",
@@ -11020,9 +11020,9 @@ export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11030,11 +11030,11 @@ export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11067,7 +11067,7 @@ export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11078,7 +11078,7 @@ export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigOutputRefere
       this._timeoutMinutes = undefined;
       this._recordSet.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11173,7 +11173,7 @@ export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigOutputRefere
   public get recordSet() {
     return this._recordSet;
   }
-  public putRecordSet(value: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet[] | cdktf.IResolvable) {
+  public putRecordSet(value: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet[] | cdktn.IResolvable) {
     this._recordSet.internalValue = value;
   }
   public resetRecordSet() {
@@ -11185,15 +11185,15 @@ export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigOutputRefere
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11222,179 +11222,179 @@ export interface ArcregionswitchPlanWorkflowStep {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
   */
-  readonly arcRoutingControlConfig?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfig[] | cdktf.IResolvable;
+  readonly arcRoutingControlConfig?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfig[] | cdktn.IResolvable;
   /**
   * custom_action_lambda_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
   */
-  readonly customActionLambdaConfig?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig[] | cdktf.IResolvable;
+  readonly customActionLambdaConfig?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig[] | cdktn.IResolvable;
   /**
   * document_db_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
   */
-  readonly documentDbConfig?: ArcregionswitchPlanWorkflowStepDocumentDbConfig[] | cdktf.IResolvable;
+  readonly documentDbConfig?: ArcregionswitchPlanWorkflowStepDocumentDbConfig[] | cdktn.IResolvable;
   /**
   * ec2_asg_capacity_increase_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
   */
-  readonly ec2AsgCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig[] | cdktf.IResolvable;
+  readonly ec2AsgCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig[] | cdktn.IResolvable;
   /**
   * ecs_capacity_increase_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
   */
-  readonly ecsCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig[] | cdktf.IResolvable;
+  readonly ecsCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig[] | cdktn.IResolvable;
   /**
   * eks_resource_scaling_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
   */
-  readonly eksResourceScalingConfig?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfig[] | cdktf.IResolvable;
+  readonly eksResourceScalingConfig?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfig[] | cdktn.IResolvable;
   /**
   * execution_approval_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
   */
-  readonly executionApprovalConfig?: ArcregionswitchPlanWorkflowStepExecutionApprovalConfig[] | cdktf.IResolvable;
+  readonly executionApprovalConfig?: ArcregionswitchPlanWorkflowStepExecutionApprovalConfig[] | cdktn.IResolvable;
   /**
   * global_aurora_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
   */
-  readonly globalAuroraConfig?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfig[] | cdktf.IResolvable;
+  readonly globalAuroraConfig?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfig[] | cdktn.IResolvable;
   /**
   * parallel_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#parallel_config ArcregionswitchPlan#parallel_config}
   */
-  readonly parallelConfig?: ArcregionswitchPlanWorkflowStepParallelConfig[] | cdktf.IResolvable;
+  readonly parallelConfig?: ArcregionswitchPlanWorkflowStepParallelConfig[] | cdktn.IResolvable;
   /**
   * region_switch_plan_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
   */
-  readonly regionSwitchPlanConfig?: ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig[] | cdktf.IResolvable;
+  readonly regionSwitchPlanConfig?: ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig[] | cdktn.IResolvable;
   /**
   * route53_health_check_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
   */
-  readonly route53HealthCheckConfig?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig[] | cdktf.IResolvable;
+  readonly route53HealthCheckConfig?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowStepToTerraform(struct?: ArcregionswitchPlanWorkflowStep | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepToTerraform(struct?: ArcregionswitchPlanWorkflowStep | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    execution_block_type: cdktf.stringToTerraform(struct!.executionBlockType),
-    name: cdktf.stringToTerraform(struct!.name),
-    arc_routing_control_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepArcRoutingControlConfigToTerraform, true)(struct!.arcRoutingControlConfig),
-    custom_action_lambda_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepCustomActionLambdaConfigToTerraform, true)(struct!.customActionLambdaConfig),
-    document_db_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepDocumentDbConfigToTerraform, true)(struct!.documentDbConfig),
-    ec2_asg_capacity_increase_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigToTerraform, true)(struct!.ec2AsgCapacityIncreaseConfig),
-    ecs_capacity_increase_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigToTerraform, true)(struct!.ecsCapacityIncreaseConfig),
-    eks_resource_scaling_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepEksResourceScalingConfigToTerraform, true)(struct!.eksResourceScalingConfig),
-    execution_approval_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepExecutionApprovalConfigToTerraform, true)(struct!.executionApprovalConfig),
-    global_aurora_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepGlobalAuroraConfigToTerraform, true)(struct!.globalAuroraConfig),
-    parallel_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepParallelConfigToTerraform, true)(struct!.parallelConfig),
-    region_switch_plan_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepRegionSwitchPlanConfigToTerraform, true)(struct!.regionSwitchPlanConfig),
-    route53_health_check_config: cdktf.listMapper(arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigToTerraform, true)(struct!.route53HealthCheckConfig),
+    description: cdktn.stringToTerraform(struct!.description),
+    execution_block_type: cdktn.stringToTerraform(struct!.executionBlockType),
+    name: cdktn.stringToTerraform(struct!.name),
+    arc_routing_control_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepArcRoutingControlConfigToTerraform, true)(struct!.arcRoutingControlConfig),
+    custom_action_lambda_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepCustomActionLambdaConfigToTerraform, true)(struct!.customActionLambdaConfig),
+    document_db_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepDocumentDbConfigToTerraform, true)(struct!.documentDbConfig),
+    ec2_asg_capacity_increase_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigToTerraform, true)(struct!.ec2AsgCapacityIncreaseConfig),
+    ecs_capacity_increase_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigToTerraform, true)(struct!.ecsCapacityIncreaseConfig),
+    eks_resource_scaling_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepEksResourceScalingConfigToTerraform, true)(struct!.eksResourceScalingConfig),
+    execution_approval_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepExecutionApprovalConfigToTerraform, true)(struct!.executionApprovalConfig),
+    global_aurora_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepGlobalAuroraConfigToTerraform, true)(struct!.globalAuroraConfig),
+    parallel_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigToTerraform, true)(struct!.parallelConfig),
+    region_switch_plan_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepRegionSwitchPlanConfigToTerraform, true)(struct!.regionSwitchPlanConfig),
+    route53_health_check_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigToTerraform, true)(struct!.route53HealthCheckConfig),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowStepToHclTerraform(struct?: ArcregionswitchPlanWorkflowStep | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowStepToHclTerraform(struct?: ArcregionswitchPlanWorkflowStep | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     execution_block_type: {
-      value: cdktf.stringToHclTerraform(struct!.executionBlockType),
+      value: cdktn.stringToHclTerraform(struct!.executionBlockType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     arc_routing_control_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepArcRoutingControlConfigToHclTerraform, true)(struct!.arcRoutingControlConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepArcRoutingControlConfigToHclTerraform, true)(struct!.arcRoutingControlConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepArcRoutingControlConfigList",
     },
     custom_action_lambda_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepCustomActionLambdaConfigToHclTerraform, true)(struct!.customActionLambdaConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepCustomActionLambdaConfigToHclTerraform, true)(struct!.customActionLambdaConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigList",
     },
     document_db_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepDocumentDbConfigToHclTerraform, true)(struct!.documentDbConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepDocumentDbConfigToHclTerraform, true)(struct!.documentDbConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepDocumentDbConfigList",
     },
     ec2_asg_capacity_increase_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigToHclTerraform, true)(struct!.ec2AsgCapacityIncreaseConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigToHclTerraform, true)(struct!.ec2AsgCapacityIncreaseConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigList",
     },
     ecs_capacity_increase_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigToHclTerraform, true)(struct!.ecsCapacityIncreaseConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigToHclTerraform, true)(struct!.ecsCapacityIncreaseConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigList",
     },
     eks_resource_scaling_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepEksResourceScalingConfigToHclTerraform, true)(struct!.eksResourceScalingConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepEksResourceScalingConfigToHclTerraform, true)(struct!.eksResourceScalingConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepEksResourceScalingConfigList",
     },
     execution_approval_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepExecutionApprovalConfigToHclTerraform, true)(struct!.executionApprovalConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepExecutionApprovalConfigToHclTerraform, true)(struct!.executionApprovalConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepExecutionApprovalConfigList",
     },
     global_aurora_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepGlobalAuroraConfigToHclTerraform, true)(struct!.globalAuroraConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepGlobalAuroraConfigToHclTerraform, true)(struct!.globalAuroraConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepGlobalAuroraConfigList",
     },
     parallel_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigToHclTerraform, true)(struct!.parallelConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigToHclTerraform, true)(struct!.parallelConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigList",
     },
     region_switch_plan_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepRegionSwitchPlanConfigToHclTerraform, true)(struct!.regionSwitchPlanConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepRegionSwitchPlanConfigToHclTerraform, true)(struct!.regionSwitchPlanConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfigList",
     },
     route53_health_check_config: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigToHclTerraform, true)(struct!.route53HealthCheckConfig),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigToHclTerraform, true)(struct!.route53HealthCheckConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigList",
@@ -11405,9 +11405,9 @@ export function arcregionswitchPlanWorkflowStepToHclTerraform(struct?: Arcregion
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11415,11 +11415,11 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflowStep | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflowStep | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11484,7 +11484,7 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflowStep | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflowStep | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11503,7 +11503,7 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.Comple
       this._regionSwitchPlanConfig.internalValue = undefined;
       this._route53HealthCheckConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11574,7 +11574,7 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.Comple
   public get arcRoutingControlConfig() {
     return this._arcRoutingControlConfig;
   }
-  public putArcRoutingControlConfig(value: ArcregionswitchPlanWorkflowStepArcRoutingControlConfig[] | cdktf.IResolvable) {
+  public putArcRoutingControlConfig(value: ArcregionswitchPlanWorkflowStepArcRoutingControlConfig[] | cdktn.IResolvable) {
     this._arcRoutingControlConfig.internalValue = value;
   }
   public resetArcRoutingControlConfig() {
@@ -11590,7 +11590,7 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.Comple
   public get customActionLambdaConfig() {
     return this._customActionLambdaConfig;
   }
-  public putCustomActionLambdaConfig(value: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig[] | cdktf.IResolvable) {
+  public putCustomActionLambdaConfig(value: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig[] | cdktn.IResolvable) {
     this._customActionLambdaConfig.internalValue = value;
   }
   public resetCustomActionLambdaConfig() {
@@ -11606,7 +11606,7 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.Comple
   public get documentDbConfig() {
     return this._documentDbConfig;
   }
-  public putDocumentDbConfig(value: ArcregionswitchPlanWorkflowStepDocumentDbConfig[] | cdktf.IResolvable) {
+  public putDocumentDbConfig(value: ArcregionswitchPlanWorkflowStepDocumentDbConfig[] | cdktn.IResolvable) {
     this._documentDbConfig.internalValue = value;
   }
   public resetDocumentDbConfig() {
@@ -11622,7 +11622,7 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.Comple
   public get ec2AsgCapacityIncreaseConfig() {
     return this._ec2AsgCapacityIncreaseConfig;
   }
-  public putEc2AsgCapacityIncreaseConfig(value: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig[] | cdktf.IResolvable) {
+  public putEc2AsgCapacityIncreaseConfig(value: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig[] | cdktn.IResolvable) {
     this._ec2AsgCapacityIncreaseConfig.internalValue = value;
   }
   public resetEc2AsgCapacityIncreaseConfig() {
@@ -11638,7 +11638,7 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.Comple
   public get ecsCapacityIncreaseConfig() {
     return this._ecsCapacityIncreaseConfig;
   }
-  public putEcsCapacityIncreaseConfig(value: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig[] | cdktf.IResolvable) {
+  public putEcsCapacityIncreaseConfig(value: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig[] | cdktn.IResolvable) {
     this._ecsCapacityIncreaseConfig.internalValue = value;
   }
   public resetEcsCapacityIncreaseConfig() {
@@ -11654,7 +11654,7 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.Comple
   public get eksResourceScalingConfig() {
     return this._eksResourceScalingConfig;
   }
-  public putEksResourceScalingConfig(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfig[] | cdktf.IResolvable) {
+  public putEksResourceScalingConfig(value: ArcregionswitchPlanWorkflowStepEksResourceScalingConfig[] | cdktn.IResolvable) {
     this._eksResourceScalingConfig.internalValue = value;
   }
   public resetEksResourceScalingConfig() {
@@ -11670,7 +11670,7 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.Comple
   public get executionApprovalConfig() {
     return this._executionApprovalConfig;
   }
-  public putExecutionApprovalConfig(value: ArcregionswitchPlanWorkflowStepExecutionApprovalConfig[] | cdktf.IResolvable) {
+  public putExecutionApprovalConfig(value: ArcregionswitchPlanWorkflowStepExecutionApprovalConfig[] | cdktn.IResolvable) {
     this._executionApprovalConfig.internalValue = value;
   }
   public resetExecutionApprovalConfig() {
@@ -11686,7 +11686,7 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.Comple
   public get globalAuroraConfig() {
     return this._globalAuroraConfig;
   }
-  public putGlobalAuroraConfig(value: ArcregionswitchPlanWorkflowStepGlobalAuroraConfig[] | cdktf.IResolvable) {
+  public putGlobalAuroraConfig(value: ArcregionswitchPlanWorkflowStepGlobalAuroraConfig[] | cdktn.IResolvable) {
     this._globalAuroraConfig.internalValue = value;
   }
   public resetGlobalAuroraConfig() {
@@ -11702,7 +11702,7 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.Comple
   public get parallelConfig() {
     return this._parallelConfig;
   }
-  public putParallelConfig(value: ArcregionswitchPlanWorkflowStepParallelConfig[] | cdktf.IResolvable) {
+  public putParallelConfig(value: ArcregionswitchPlanWorkflowStepParallelConfig[] | cdktn.IResolvable) {
     this._parallelConfig.internalValue = value;
   }
   public resetParallelConfig() {
@@ -11718,7 +11718,7 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.Comple
   public get regionSwitchPlanConfig() {
     return this._regionSwitchPlanConfig;
   }
-  public putRegionSwitchPlanConfig(value: ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig[] | cdktf.IResolvable) {
+  public putRegionSwitchPlanConfig(value: ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig[] | cdktn.IResolvable) {
     this._regionSwitchPlanConfig.internalValue = value;
   }
   public resetRegionSwitchPlanConfig() {
@@ -11734,7 +11734,7 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.Comple
   public get route53HealthCheckConfig() {
     return this._route53HealthCheckConfig;
   }
-  public putRoute53HealthCheckConfig(value: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig[] | cdktf.IResolvable) {
+  public putRoute53HealthCheckConfig(value: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig[] | cdktn.IResolvable) {
     this._route53HealthCheckConfig.internalValue = value;
   }
   public resetRoute53HealthCheckConfig() {
@@ -11746,15 +11746,15 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktf.Comple
   }
 }
 
-export class ArcregionswitchPlanWorkflowStepList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflowStep[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowStepList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStep[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11783,49 +11783,49 @@ export interface ArcregionswitchPlanWorkflow {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
   */
-  readonly step?: ArcregionswitchPlanWorkflowStep[] | cdktf.IResolvable;
+  readonly step?: ArcregionswitchPlanWorkflowStep[] | cdktn.IResolvable;
 }
 
-export function arcregionswitchPlanWorkflowToTerraform(struct?: ArcregionswitchPlanWorkflow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowToTerraform(struct?: ArcregionswitchPlanWorkflow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workflow_description: cdktf.stringToTerraform(struct!.workflowDescription),
-    workflow_target_action: cdktf.stringToTerraform(struct!.workflowTargetAction),
-    workflow_target_region: cdktf.stringToTerraform(struct!.workflowTargetRegion),
-    step: cdktf.listMapper(arcregionswitchPlanWorkflowStepToTerraform, true)(struct!.step),
+    workflow_description: cdktn.stringToTerraform(struct!.workflowDescription),
+    workflow_target_action: cdktn.stringToTerraform(struct!.workflowTargetAction),
+    workflow_target_region: cdktn.stringToTerraform(struct!.workflowTargetRegion),
+    step: cdktn.listMapper(arcregionswitchPlanWorkflowStepToTerraform, true)(struct!.step),
   }
 }
 
 
-export function arcregionswitchPlanWorkflowToHclTerraform(struct?: ArcregionswitchPlanWorkflow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcregionswitchPlanWorkflowToHclTerraform(struct?: ArcregionswitchPlanWorkflow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workflow_description: {
-      value: cdktf.stringToHclTerraform(struct!.workflowDescription),
+      value: cdktn.stringToHclTerraform(struct!.workflowDescription),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workflow_target_action: {
-      value: cdktf.stringToHclTerraform(struct!.workflowTargetAction),
+      value: cdktn.stringToHclTerraform(struct!.workflowTargetAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workflow_target_region: {
-      value: cdktf.stringToHclTerraform(struct!.workflowTargetRegion),
+      value: cdktn.stringToHclTerraform(struct!.workflowTargetRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     step: {
-      value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowStepToHclTerraform, true)(struct!.step),
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepToHclTerraform, true)(struct!.step),
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepList",
@@ -11836,9 +11836,9 @@ export function arcregionswitchPlanWorkflowToHclTerraform(struct?: Arcregionswit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcregionswitchPlanWorkflowOutputReference extends cdktf.ComplexObject {
+export class ArcregionswitchPlanWorkflowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11846,11 +11846,11 @@ export class ArcregionswitchPlanWorkflowOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcregionswitchPlanWorkflow | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcregionswitchPlanWorkflow | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11875,7 +11875,7 @@ export class ArcregionswitchPlanWorkflowOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcregionswitchPlanWorkflow | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcregionswitchPlanWorkflow | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11884,7 +11884,7 @@ export class ArcregionswitchPlanWorkflowOutputReference extends cdktf.ComplexObj
       this._workflowTargetRegion = undefined;
       this._step.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11948,7 +11948,7 @@ export class ArcregionswitchPlanWorkflowOutputReference extends cdktf.ComplexObj
   public get step() {
     return this._step;
   }
-  public putStep(value: ArcregionswitchPlanWorkflowStep[] | cdktf.IResolvable) {
+  public putStep(value: ArcregionswitchPlanWorkflowStep[] | cdktn.IResolvable) {
     this._step.internalValue = value;
   }
   public resetStep() {
@@ -11960,15 +11960,15 @@ export class ArcregionswitchPlanWorkflowOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class ArcregionswitchPlanWorkflowList extends cdktf.ComplexList {
-  public internalValue? : ArcregionswitchPlanWorkflow[] | cdktf.IResolvable
+export class ArcregionswitchPlanWorkflowList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflow[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11983,7 +11983,7 @@ export class ArcregionswitchPlanWorkflowList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan aws_arcregionswitch_plan}
 */
-export class ArcregionswitchPlan extends cdktf.TerraformResource {
+export class ArcregionswitchPlan extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -11994,14 +11994,14 @@ export class ArcregionswitchPlan extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ArcregionswitchPlan resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ArcregionswitchPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ArcregionswitchPlan to import
   * @param importFromId The id of the existing ArcregionswitchPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/arcregionswitch_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ArcregionswitchPlan to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_arcregionswitch_plan", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_arcregionswitch_plan", importId: importFromId, provider });
       }
 
   // ===========
@@ -12188,7 +12188,7 @@ export class ArcregionswitchPlan extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -12198,7 +12198,7 @@ export class ArcregionswitchPlan extends cdktf.TerraformResource {
   public get associatedAlarms() {
     return this._associatedAlarms;
   }
-  public putAssociatedAlarms(value: ArcregionswitchPlanAssociatedAlarms[] | cdktf.IResolvable) {
+  public putAssociatedAlarms(value: ArcregionswitchPlanAssociatedAlarms[] | cdktn.IResolvable) {
     this._associatedAlarms.internalValue = value;
   }
   public resetAssociatedAlarms() {
@@ -12230,7 +12230,7 @@ export class ArcregionswitchPlan extends cdktf.TerraformResource {
   public get triggers() {
     return this._triggers;
   }
-  public putTriggers(value: ArcregionswitchPlanTriggers[] | cdktf.IResolvable) {
+  public putTriggers(value: ArcregionswitchPlanTriggers[] | cdktn.IResolvable) {
     this._triggers.internalValue = value;
   }
   public resetTriggers() {
@@ -12246,7 +12246,7 @@ export class ArcregionswitchPlan extends cdktf.TerraformResource {
   public get workflow() {
     return this._workflow;
   }
-  public putWorkflow(value: ArcregionswitchPlanWorkflow[] | cdktf.IResolvable) {
+  public putWorkflow(value: ArcregionswitchPlanWorkflow[] | cdktn.IResolvable) {
     this._workflow.internalValue = value;
   }
   public resetWorkflow() {
@@ -12263,80 +12263,80 @@ export class ArcregionswitchPlan extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      execution_role: cdktf.stringToTerraform(this._executionRole),
-      name: cdktf.stringToTerraform(this._name),
-      primary_region: cdktf.stringToTerraform(this._primaryRegion),
-      recovery_approach: cdktf.stringToTerraform(this._recoveryApproach),
-      recovery_time_objective_minutes: cdktf.numberToTerraform(this._recoveryTimeObjectiveMinutes),
-      region: cdktf.stringToTerraform(this._region),
-      regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._regions),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      associated_alarms: cdktf.listMapper(arcregionswitchPlanAssociatedAlarmsToTerraform, true)(this._associatedAlarms.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      execution_role: cdktn.stringToTerraform(this._executionRole),
+      name: cdktn.stringToTerraform(this._name),
+      primary_region: cdktn.stringToTerraform(this._primaryRegion),
+      recovery_approach: cdktn.stringToTerraform(this._recoveryApproach),
+      recovery_time_objective_minutes: cdktn.numberToTerraform(this._recoveryTimeObjectiveMinutes),
+      region: cdktn.stringToTerraform(this._region),
+      regions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._regions),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      associated_alarms: cdktn.listMapper(arcregionswitchPlanAssociatedAlarmsToTerraform, true)(this._associatedAlarms.internalValue),
       timeouts: arcregionswitchPlanTimeoutsToTerraform(this._timeouts.internalValue),
-      triggers: cdktf.listMapper(arcregionswitchPlanTriggersToTerraform, true)(this._triggers.internalValue),
-      workflow: cdktf.listMapper(arcregionswitchPlanWorkflowToTerraform, true)(this._workflow.internalValue),
+      triggers: cdktn.listMapper(arcregionswitchPlanTriggersToTerraform, true)(this._triggers.internalValue),
+      workflow: cdktn.listMapper(arcregionswitchPlanWorkflowToTerraform, true)(this._workflow.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       execution_role: {
-        value: cdktf.stringToHclTerraform(this._executionRole),
+        value: cdktn.stringToHclTerraform(this._executionRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       primary_region: {
-        value: cdktf.stringToHclTerraform(this._primaryRegion),
+        value: cdktn.stringToHclTerraform(this._primaryRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_approach: {
-        value: cdktf.stringToHclTerraform(this._recoveryApproach),
+        value: cdktn.stringToHclTerraform(this._recoveryApproach),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_time_objective_minutes: {
-        value: cdktf.numberToHclTerraform(this._recoveryTimeObjectiveMinutes),
+        value: cdktn.numberToHclTerraform(this._recoveryTimeObjectiveMinutes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       regions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._regions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._regions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       associated_alarms: {
-        value: cdktf.listMapperHcl(arcregionswitchPlanAssociatedAlarmsToHclTerraform, true)(this._associatedAlarms.internalValue),
+        value: cdktn.listMapperHcl(arcregionswitchPlanAssociatedAlarmsToHclTerraform, true)(this._associatedAlarms.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ArcregionswitchPlanAssociatedAlarmsList",
@@ -12348,13 +12348,13 @@ export class ArcregionswitchPlan extends cdktf.TerraformResource {
         storageClassType: "ArcregionswitchPlanTimeouts",
       },
       triggers: {
-        value: cdktf.listMapperHcl(arcregionswitchPlanTriggersToHclTerraform, true)(this._triggers.internalValue),
+        value: cdktn.listMapperHcl(arcregionswitchPlanTriggersToHclTerraform, true)(this._triggers.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ArcregionswitchPlanTriggersList",
       },
       workflow: {
-        value: cdktf.listMapperHcl(arcregionswitchPlanWorkflowToHclTerraform, true)(this._workflow.internalValue),
+        value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowToHclTerraform, true)(this._workflow.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ArcregionswitchPlanWorkflowList",

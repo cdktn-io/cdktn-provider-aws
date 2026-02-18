@@ -226,7 +226,7 @@ jobs:
         run: rm -f .repo/dist/go/.copywrite.hcl
       - name: Remove some text from the README that doesn't apply to Go
         run: |-
-          sed -i 's/# CDKTF prebuilt bindings for/# CDKTF Go bindings for/' .repo/dist/go/*/README.md
+          sed -i 's/# CDKTN prebuilt bindings for/# CDKTN Go bindings for/' .repo/dist/go/*/README.md
           sed -i -e '/## Available Packages/,/### Go/!b' -e '/### Go/!d;p; s/### Go/## Go Package/' -e 'd' .repo/dist/go/*/README.md
           sed -i 's/### Go/## Go Package/' .repo/dist/go/*/README.md
           sed -i -e '/API.typescript.md/,/You can also visit a hosted version/!b' -e 'd' .repo/dist/go/*/README.md

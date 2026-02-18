@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkspaceswebNetworkSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface WorkspaceswebNetworkSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -39,7 +39,7 @@ export interface WorkspaceswebNetworkSettingsConfig extends cdktf.TerraformMetaA
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_network_settings aws_workspacesweb_network_settings}
 */
-export class WorkspaceswebNetworkSettings extends cdktf.TerraformResource {
+export class WorkspaceswebNetworkSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -50,14 +50,14 @@ export class WorkspaceswebNetworkSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkspaceswebNetworkSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkspaceswebNetworkSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceswebNetworkSettings to import
   * @param importFromId The id of the existing WorkspaceswebNetworkSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_network_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceswebNetworkSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_network_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_network_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -127,7 +127,7 @@ export class WorkspaceswebNetworkSettings extends cdktf.TerraformResource {
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -140,7 +140,7 @@ export class WorkspaceswebNetworkSettings extends cdktf.TerraformResource {
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -167,7 +167,7 @@ export class WorkspaceswebNetworkSettings extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -191,42 +191,42 @@ export class WorkspaceswebNetworkSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      region: cdktn.stringToTerraform(this._region),
+      security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupIds),
+      subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnetIds),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       subnet_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnetIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

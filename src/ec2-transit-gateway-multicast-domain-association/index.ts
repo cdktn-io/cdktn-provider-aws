@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2TransitGatewayMulticastDomainAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2TransitGatewayMulticastDomainAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_multicast_domain_association#id Ec2TransitGatewayMulticastDomainAssociation#id}
   *
@@ -55,32 +55,32 @@ export interface Ec2TransitGatewayMulticastDomainAssociationTimeouts {
   readonly delete?: string;
 }
 
-export function ec2TransitGatewayMulticastDomainAssociationTimeoutsToTerraform(struct?: Ec2TransitGatewayMulticastDomainAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2TransitGatewayMulticastDomainAssociationTimeoutsToTerraform(struct?: Ec2TransitGatewayMulticastDomainAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function ec2TransitGatewayMulticastDomainAssociationTimeoutsToHclTerraform(struct?: Ec2TransitGatewayMulticastDomainAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2TransitGatewayMulticastDomainAssociationTimeoutsToHclTerraform(struct?: Ec2TransitGatewayMulticastDomainAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,19 +91,19 @@ export function ec2TransitGatewayMulticastDomainAssociationTimeoutsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2TransitGatewayMulticastDomainAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Ec2TransitGatewayMulticastDomainAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Ec2TransitGatewayMulticastDomainAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Ec2TransitGatewayMulticastDomainAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -120,14 +120,14 @@ export class Ec2TransitGatewayMulticastDomainAssociationTimeoutsOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Ec2TransitGatewayMulticastDomainAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Ec2TransitGatewayMulticastDomainAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -175,7 +175,7 @@ export class Ec2TransitGatewayMulticastDomainAssociationTimeoutsOutputReference 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_multicast_domain_association aws_ec2_transit_gateway_multicast_domain_association}
 */
-export class Ec2TransitGatewayMulticastDomainAssociation extends cdktf.TerraformResource {
+export class Ec2TransitGatewayMulticastDomainAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -186,14 +186,14 @@ export class Ec2TransitGatewayMulticastDomainAssociation extends cdktf.Terraform
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2TransitGatewayMulticastDomainAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2TransitGatewayMulticastDomainAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2TransitGatewayMulticastDomainAssociation to import
   * @param importFromId The id of the existing Ec2TransitGatewayMulticastDomainAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_multicast_domain_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2TransitGatewayMulticastDomainAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway_multicast_domain_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway_multicast_domain_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -328,11 +328,11 @@ export class Ec2TransitGatewayMulticastDomainAssociation extends cdktf.Terraform
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      transit_gateway_attachment_id: cdktf.stringToTerraform(this._transitGatewayAttachmentId),
-      transit_gateway_multicast_domain_id: cdktf.stringToTerraform(this._transitGatewayMulticastDomainId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      transit_gateway_attachment_id: cdktn.stringToTerraform(this._transitGatewayAttachmentId),
+      transit_gateway_multicast_domain_id: cdktn.stringToTerraform(this._transitGatewayMulticastDomainId),
       timeouts: ec2TransitGatewayMulticastDomainAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -340,31 +340,31 @@ export class Ec2TransitGatewayMulticastDomainAssociation extends cdktf.Terraform
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transit_gateway_attachment_id: {
-        value: cdktf.stringToHclTerraform(this._transitGatewayAttachmentId),
+        value: cdktn.stringToHclTerraform(this._transitGatewayAttachmentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transit_gateway_multicast_domain_id: {
-        value: cdktf.stringToHclTerraform(this._transitGatewayMulticastDomainId),
+        value: cdktn.stringToHclTerraform(this._transitGatewayMulticastDomainId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

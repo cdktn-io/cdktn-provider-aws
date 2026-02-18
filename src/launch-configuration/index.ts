@@ -7,23 +7,23 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LaunchConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface LaunchConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#associate_public_ip_address LaunchConfiguration#associate_public_ip_address}
   */
-  readonly associatePublicIpAddress?: boolean | cdktf.IResolvable;
+  readonly associatePublicIpAddress?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#ebs_optimized LaunchConfiguration#ebs_optimized}
   */
-  readonly ebsOptimized?: boolean | cdktf.IResolvable;
+  readonly ebsOptimized?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#enable_monitoring LaunchConfiguration#enable_monitoring}
   */
-  readonly enableMonitoring?: boolean | cdktf.IResolvable;
+  readonly enableMonitoring?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#iam_instance_profile LaunchConfiguration#iam_instance_profile}
   */
@@ -86,13 +86,13 @@ export interface LaunchConfigurationConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#ebs_block_device LaunchConfiguration#ebs_block_device}
   */
-  readonly ebsBlockDevice?: LaunchConfigurationEbsBlockDevice[] | cdktf.IResolvable;
+  readonly ebsBlockDevice?: LaunchConfigurationEbsBlockDevice[] | cdktn.IResolvable;
   /**
   * ephemeral_block_device block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#ephemeral_block_device LaunchConfiguration#ephemeral_block_device}
   */
-  readonly ephemeralBlockDevice?: LaunchConfigurationEphemeralBlockDevice[] | cdktf.IResolvable;
+  readonly ephemeralBlockDevice?: LaunchConfigurationEphemeralBlockDevice[] | cdktn.IResolvable;
   /**
   * metadata_options block
   *
@@ -110,7 +110,7 @@ export interface LaunchConfigurationEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#delete_on_termination LaunchConfiguration#delete_on_termination}
   */
-  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
+  readonly deleteOnTermination?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#device_name LaunchConfiguration#device_name}
   */
@@ -118,7 +118,7 @@ export interface LaunchConfigurationEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#encrypted LaunchConfiguration#encrypted}
   */
-  readonly encrypted?: boolean | cdktf.IResolvable;
+  readonly encrypted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#iops LaunchConfiguration#iops}
   */
@@ -126,7 +126,7 @@ export interface LaunchConfigurationEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#no_device LaunchConfiguration#no_device}
   */
-  readonly noDevice?: boolean | cdktf.IResolvable;
+  readonly noDevice?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#snapshot_id LaunchConfiguration#snapshot_id}
   */
@@ -145,81 +145,81 @@ export interface LaunchConfigurationEbsBlockDevice {
   readonly volumeType?: string;
 }
 
-export function launchConfigurationEbsBlockDeviceToTerraform(struct?: LaunchConfigurationEbsBlockDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function launchConfigurationEbsBlockDeviceToTerraform(struct?: LaunchConfigurationEbsBlockDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
-    device_name: cdktf.stringToTerraform(struct!.deviceName),
-    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
-    iops: cdktf.numberToTerraform(struct!.iops),
-    no_device: cdktf.booleanToTerraform(struct!.noDevice),
-    snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
-    throughput: cdktf.numberToTerraform(struct!.throughput),
-    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
-    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+    delete_on_termination: cdktn.booleanToTerraform(struct!.deleteOnTermination),
+    device_name: cdktn.stringToTerraform(struct!.deviceName),
+    encrypted: cdktn.booleanToTerraform(struct!.encrypted),
+    iops: cdktn.numberToTerraform(struct!.iops),
+    no_device: cdktn.booleanToTerraform(struct!.noDevice),
+    snapshot_id: cdktn.stringToTerraform(struct!.snapshotId),
+    throughput: cdktn.numberToTerraform(struct!.throughput),
+    volume_size: cdktn.numberToTerraform(struct!.volumeSize),
+    volume_type: cdktn.stringToTerraform(struct!.volumeType),
   }
 }
 
 
-export function launchConfigurationEbsBlockDeviceToHclTerraform(struct?: LaunchConfigurationEbsBlockDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function launchConfigurationEbsBlockDeviceToHclTerraform(struct?: LaunchConfigurationEbsBlockDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete_on_termination: {
-      value: cdktf.booleanToHclTerraform(struct!.deleteOnTermination),
+      value: cdktn.booleanToHclTerraform(struct!.deleteOnTermination),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     device_name: {
-      value: cdktf.stringToHclTerraform(struct!.deviceName),
+      value: cdktn.stringToHclTerraform(struct!.deviceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encrypted: {
-      value: cdktf.booleanToHclTerraform(struct!.encrypted),
+      value: cdktn.booleanToHclTerraform(struct!.encrypted),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     iops: {
-      value: cdktf.numberToHclTerraform(struct!.iops),
+      value: cdktn.numberToHclTerraform(struct!.iops),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     no_device: {
-      value: cdktf.booleanToHclTerraform(struct!.noDevice),
+      value: cdktn.booleanToHclTerraform(struct!.noDevice),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     snapshot_id: {
-      value: cdktf.stringToHclTerraform(struct!.snapshotId),
+      value: cdktn.stringToHclTerraform(struct!.snapshotId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     throughput: {
-      value: cdktf.numberToHclTerraform(struct!.throughput),
+      value: cdktn.numberToHclTerraform(struct!.throughput),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     volume_size: {
-      value: cdktf.numberToHclTerraform(struct!.volumeSize),
+      value: cdktn.numberToHclTerraform(struct!.volumeSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     volume_type: {
-      value: cdktf.stringToHclTerraform(struct!.volumeType),
+      value: cdktn.stringToHclTerraform(struct!.volumeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -230,9 +230,9 @@ export function launchConfigurationEbsBlockDeviceToHclTerraform(struct?: LaunchC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LaunchConfigurationEbsBlockDeviceOutputReference extends cdktf.ComplexObject {
+export class LaunchConfigurationEbsBlockDeviceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -240,11 +240,11 @@ export class LaunchConfigurationEbsBlockDeviceOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LaunchConfigurationEbsBlockDevice | cdktf.IResolvable | undefined {
+  public get internalValue(): LaunchConfigurationEbsBlockDevice | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -289,7 +289,7 @@ export class LaunchConfigurationEbsBlockDeviceOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LaunchConfigurationEbsBlockDevice | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LaunchConfigurationEbsBlockDevice | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -303,7 +303,7 @@ export class LaunchConfigurationEbsBlockDeviceOutputReference extends cdktf.Comp
       this._volumeSize = undefined;
       this._volumeType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -323,11 +323,11 @@ export class LaunchConfigurationEbsBlockDeviceOutputReference extends cdktf.Comp
   }
 
   // delete_on_termination - computed: false, optional: true, required: false
-  private _deleteOnTermination?: boolean | cdktf.IResolvable; 
+  private _deleteOnTermination?: boolean | cdktn.IResolvable; 
   public get deleteOnTermination() {
     return this.getBooleanAttribute('delete_on_termination');
   }
-  public set deleteOnTermination(value: boolean | cdktf.IResolvable) {
+  public set deleteOnTermination(value: boolean | cdktn.IResolvable) {
     this._deleteOnTermination = value;
   }
   public resetDeleteOnTermination() {
@@ -352,11 +352,11 @@ export class LaunchConfigurationEbsBlockDeviceOutputReference extends cdktf.Comp
   }
 
   // encrypted - computed: true, optional: true, required: false
-  private _encrypted?: boolean | cdktf.IResolvable; 
+  private _encrypted?: boolean | cdktn.IResolvable; 
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
-  public set encrypted(value: boolean | cdktf.IResolvable) {
+  public set encrypted(value: boolean | cdktn.IResolvable) {
     this._encrypted = value;
   }
   public resetEncrypted() {
@@ -384,11 +384,11 @@ export class LaunchConfigurationEbsBlockDeviceOutputReference extends cdktf.Comp
   }
 
   // no_device - computed: false, optional: true, required: false
-  private _noDevice?: boolean | cdktf.IResolvable; 
+  private _noDevice?: boolean | cdktn.IResolvable; 
   public get noDevice() {
     return this.getBooleanAttribute('no_device');
   }
-  public set noDevice(value: boolean | cdktf.IResolvable) {
+  public set noDevice(value: boolean | cdktn.IResolvable) {
     this._noDevice = value;
   }
   public resetNoDevice() {
@@ -464,15 +464,15 @@ export class LaunchConfigurationEbsBlockDeviceOutputReference extends cdktf.Comp
   }
 }
 
-export class LaunchConfigurationEbsBlockDeviceList extends cdktf.ComplexList {
-  public internalValue? : LaunchConfigurationEbsBlockDevice[] | cdktf.IResolvable
+export class LaunchConfigurationEbsBlockDeviceList extends cdktn.ComplexList {
+  public internalValue? : LaunchConfigurationEbsBlockDevice[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -491,46 +491,46 @@ export interface LaunchConfigurationEphemeralBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#no_device LaunchConfiguration#no_device}
   */
-  readonly noDevice?: boolean | cdktf.IResolvable;
+  readonly noDevice?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#virtual_name LaunchConfiguration#virtual_name}
   */
   readonly virtualName?: string;
 }
 
-export function launchConfigurationEphemeralBlockDeviceToTerraform(struct?: LaunchConfigurationEphemeralBlockDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function launchConfigurationEphemeralBlockDeviceToTerraform(struct?: LaunchConfigurationEphemeralBlockDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    device_name: cdktf.stringToTerraform(struct!.deviceName),
-    no_device: cdktf.booleanToTerraform(struct!.noDevice),
-    virtual_name: cdktf.stringToTerraform(struct!.virtualName),
+    device_name: cdktn.stringToTerraform(struct!.deviceName),
+    no_device: cdktn.booleanToTerraform(struct!.noDevice),
+    virtual_name: cdktn.stringToTerraform(struct!.virtualName),
   }
 }
 
 
-export function launchConfigurationEphemeralBlockDeviceToHclTerraform(struct?: LaunchConfigurationEphemeralBlockDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function launchConfigurationEphemeralBlockDeviceToHclTerraform(struct?: LaunchConfigurationEphemeralBlockDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     device_name: {
-      value: cdktf.stringToHclTerraform(struct!.deviceName),
+      value: cdktn.stringToHclTerraform(struct!.deviceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     no_device: {
-      value: cdktf.booleanToHclTerraform(struct!.noDevice),
+      value: cdktn.booleanToHclTerraform(struct!.noDevice),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     virtual_name: {
-      value: cdktf.stringToHclTerraform(struct!.virtualName),
+      value: cdktn.stringToHclTerraform(struct!.virtualName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -541,9 +541,9 @@ export function launchConfigurationEphemeralBlockDeviceToHclTerraform(struct?: L
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LaunchConfigurationEphemeralBlockDeviceOutputReference extends cdktf.ComplexObject {
+export class LaunchConfigurationEphemeralBlockDeviceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -551,11 +551,11 @@ export class LaunchConfigurationEphemeralBlockDeviceOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LaunchConfigurationEphemeralBlockDevice | cdktf.IResolvable | undefined {
+  public get internalValue(): LaunchConfigurationEphemeralBlockDevice | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -576,7 +576,7 @@ export class LaunchConfigurationEphemeralBlockDeviceOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LaunchConfigurationEphemeralBlockDevice | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LaunchConfigurationEphemeralBlockDevice | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -584,7 +584,7 @@ export class LaunchConfigurationEphemeralBlockDeviceOutputReference extends cdkt
       this._noDevice = undefined;
       this._virtualName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -611,11 +611,11 @@ export class LaunchConfigurationEphemeralBlockDeviceOutputReference extends cdkt
   }
 
   // no_device - computed: false, optional: true, required: false
-  private _noDevice?: boolean | cdktf.IResolvable; 
+  private _noDevice?: boolean | cdktn.IResolvable; 
   public get noDevice() {
     return this.getBooleanAttribute('no_device');
   }
-  public set noDevice(value: boolean | cdktf.IResolvable) {
+  public set noDevice(value: boolean | cdktn.IResolvable) {
     this._noDevice = value;
   }
   public resetNoDevice() {
@@ -643,15 +643,15 @@ export class LaunchConfigurationEphemeralBlockDeviceOutputReference extends cdkt
   }
 }
 
-export class LaunchConfigurationEphemeralBlockDeviceList extends cdktf.ComplexList {
-  public internalValue? : LaunchConfigurationEphemeralBlockDevice[] | cdktf.IResolvable
+export class LaunchConfigurationEphemeralBlockDeviceList extends cdktn.ComplexList {
+  public internalValue? : LaunchConfigurationEphemeralBlockDevice[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -678,38 +678,38 @@ export interface LaunchConfigurationMetadataOptions {
 }
 
 export function launchConfigurationMetadataOptionsToTerraform(struct?: LaunchConfigurationMetadataOptionsOutputReference | LaunchConfigurationMetadataOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    http_endpoint: cdktf.stringToTerraform(struct!.httpEndpoint),
-    http_put_response_hop_limit: cdktf.numberToTerraform(struct!.httpPutResponseHopLimit),
-    http_tokens: cdktf.stringToTerraform(struct!.httpTokens),
+    http_endpoint: cdktn.stringToTerraform(struct!.httpEndpoint),
+    http_put_response_hop_limit: cdktn.numberToTerraform(struct!.httpPutResponseHopLimit),
+    http_tokens: cdktn.stringToTerraform(struct!.httpTokens),
   }
 }
 
 
 export function launchConfigurationMetadataOptionsToHclTerraform(struct?: LaunchConfigurationMetadataOptionsOutputReference | LaunchConfigurationMetadataOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     http_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.httpEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.httpEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_put_response_hop_limit: {
-      value: cdktf.numberToHclTerraform(struct!.httpPutResponseHopLimit),
+      value: cdktn.numberToHclTerraform(struct!.httpPutResponseHopLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     http_tokens: {
-      value: cdktf.stringToHclTerraform(struct!.httpTokens),
+      value: cdktn.stringToHclTerraform(struct!.httpTokens),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -720,14 +720,14 @@ export function launchConfigurationMetadataOptionsToHclTerraform(struct?: Launch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LaunchConfigurationMetadataOptionsOutputReference extends cdktf.ComplexObject {
+export class LaunchConfigurationMetadataOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -816,11 +816,11 @@ export interface LaunchConfigurationRootBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#delete_on_termination LaunchConfiguration#delete_on_termination}
   */
-  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
+  readonly deleteOnTermination?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#encrypted LaunchConfiguration#encrypted}
   */
-  readonly encrypted?: boolean | cdktf.IResolvable;
+  readonly encrypted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#iops LaunchConfiguration#iops}
   */
@@ -840,59 +840,59 @@ export interface LaunchConfigurationRootBlockDevice {
 }
 
 export function launchConfigurationRootBlockDeviceToTerraform(struct?: LaunchConfigurationRootBlockDeviceOutputReference | LaunchConfigurationRootBlockDevice): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
-    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
-    iops: cdktf.numberToTerraform(struct!.iops),
-    throughput: cdktf.numberToTerraform(struct!.throughput),
-    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
-    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+    delete_on_termination: cdktn.booleanToTerraform(struct!.deleteOnTermination),
+    encrypted: cdktn.booleanToTerraform(struct!.encrypted),
+    iops: cdktn.numberToTerraform(struct!.iops),
+    throughput: cdktn.numberToTerraform(struct!.throughput),
+    volume_size: cdktn.numberToTerraform(struct!.volumeSize),
+    volume_type: cdktn.stringToTerraform(struct!.volumeType),
   }
 }
 
 
 export function launchConfigurationRootBlockDeviceToHclTerraform(struct?: LaunchConfigurationRootBlockDeviceOutputReference | LaunchConfigurationRootBlockDevice): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete_on_termination: {
-      value: cdktf.booleanToHclTerraform(struct!.deleteOnTermination),
+      value: cdktn.booleanToHclTerraform(struct!.deleteOnTermination),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encrypted: {
-      value: cdktf.booleanToHclTerraform(struct!.encrypted),
+      value: cdktn.booleanToHclTerraform(struct!.encrypted),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     iops: {
-      value: cdktf.numberToHclTerraform(struct!.iops),
+      value: cdktn.numberToHclTerraform(struct!.iops),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     throughput: {
-      value: cdktf.numberToHclTerraform(struct!.throughput),
+      value: cdktn.numberToHclTerraform(struct!.throughput),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     volume_size: {
-      value: cdktf.numberToHclTerraform(struct!.volumeSize),
+      value: cdktn.numberToHclTerraform(struct!.volumeSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     volume_type: {
-      value: cdktf.stringToHclTerraform(struct!.volumeType),
+      value: cdktn.stringToHclTerraform(struct!.volumeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -903,14 +903,14 @@ export function launchConfigurationRootBlockDeviceToHclTerraform(struct?: Launch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LaunchConfigurationRootBlockDeviceOutputReference extends cdktf.ComplexObject {
+export class LaunchConfigurationRootBlockDeviceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -966,11 +966,11 @@ export class LaunchConfigurationRootBlockDeviceOutputReference extends cdktf.Com
   }
 
   // delete_on_termination - computed: false, optional: true, required: false
-  private _deleteOnTermination?: boolean | cdktf.IResolvable; 
+  private _deleteOnTermination?: boolean | cdktn.IResolvable; 
   public get deleteOnTermination() {
     return this.getBooleanAttribute('delete_on_termination');
   }
-  public set deleteOnTermination(value: boolean | cdktf.IResolvable) {
+  public set deleteOnTermination(value: boolean | cdktn.IResolvable) {
     this._deleteOnTermination = value;
   }
   public resetDeleteOnTermination() {
@@ -982,11 +982,11 @@ export class LaunchConfigurationRootBlockDeviceOutputReference extends cdktf.Com
   }
 
   // encrypted - computed: true, optional: true, required: false
-  private _encrypted?: boolean | cdktf.IResolvable; 
+  private _encrypted?: boolean | cdktn.IResolvable; 
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
-  public set encrypted(value: boolean | cdktf.IResolvable) {
+  public set encrypted(value: boolean | cdktn.IResolvable) {
     this._encrypted = value;
   }
   public resetEncrypted() {
@@ -1065,7 +1065,7 @@ export class LaunchConfigurationRootBlockDeviceOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration aws_launch_configuration}
 */
-export class LaunchConfiguration extends cdktf.TerraformResource {
+export class LaunchConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1076,14 +1076,14 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LaunchConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LaunchConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LaunchConfiguration to import
   * @param importFromId The id of the existing LaunchConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/launch_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LaunchConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_launch_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_launch_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -1145,11 +1145,11 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   }
 
   // associate_public_ip_address - computed: true, optional: true, required: false
-  private _associatePublicIpAddress?: boolean | cdktf.IResolvable; 
+  private _associatePublicIpAddress?: boolean | cdktn.IResolvable; 
   public get associatePublicIpAddress() {
     return this.getBooleanAttribute('associate_public_ip_address');
   }
-  public set associatePublicIpAddress(value: boolean | cdktf.IResolvable) {
+  public set associatePublicIpAddress(value: boolean | cdktn.IResolvable) {
     this._associatePublicIpAddress = value;
   }
   public resetAssociatePublicIpAddress() {
@@ -1161,11 +1161,11 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   }
 
   // ebs_optimized - computed: true, optional: true, required: false
-  private _ebsOptimized?: boolean | cdktf.IResolvable; 
+  private _ebsOptimized?: boolean | cdktn.IResolvable; 
   public get ebsOptimized() {
     return this.getBooleanAttribute('ebs_optimized');
   }
-  public set ebsOptimized(value: boolean | cdktf.IResolvable) {
+  public set ebsOptimized(value: boolean | cdktn.IResolvable) {
     this._ebsOptimized = value;
   }
   public resetEbsOptimized() {
@@ -1177,11 +1177,11 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   }
 
   // enable_monitoring - computed: false, optional: true, required: false
-  private _enableMonitoring?: boolean | cdktf.IResolvable; 
+  private _enableMonitoring?: boolean | cdktn.IResolvable; 
   public get enableMonitoring() {
     return this.getBooleanAttribute('enable_monitoring');
   }
-  public set enableMonitoring(value: boolean | cdktf.IResolvable) {
+  public set enableMonitoring(value: boolean | cdktn.IResolvable) {
     this._enableMonitoring = value;
   }
   public resetEnableMonitoring() {
@@ -1333,7 +1333,7 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   // security_groups - computed: false, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -1399,7 +1399,7 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   public get ebsBlockDevice() {
     return this._ebsBlockDevice;
   }
-  public putEbsBlockDevice(value: LaunchConfigurationEbsBlockDevice[] | cdktf.IResolvable) {
+  public putEbsBlockDevice(value: LaunchConfigurationEbsBlockDevice[] | cdktn.IResolvable) {
     this._ebsBlockDevice.internalValue = value;
   }
   public resetEbsBlockDevice() {
@@ -1415,7 +1415,7 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   public get ephemeralBlockDevice() {
     return this._ephemeralBlockDevice;
   }
-  public putEphemeralBlockDevice(value: LaunchConfigurationEphemeralBlockDevice[] | cdktf.IResolvable) {
+  public putEphemeralBlockDevice(value: LaunchConfigurationEphemeralBlockDevice[] | cdktn.IResolvable) {
     this._ephemeralBlockDevice.internalValue = value;
   }
   public resetEphemeralBlockDevice() {
@@ -1464,24 +1464,24 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      associate_public_ip_address: cdktf.booleanToTerraform(this._associatePublicIpAddress),
-      ebs_optimized: cdktf.booleanToTerraform(this._ebsOptimized),
-      enable_monitoring: cdktf.booleanToTerraform(this._enableMonitoring),
-      iam_instance_profile: cdktf.stringToTerraform(this._iamInstanceProfile),
-      id: cdktf.stringToTerraform(this._id),
-      image_id: cdktf.stringToTerraform(this._imageId),
-      instance_type: cdktf.stringToTerraform(this._instanceType),
-      key_name: cdktf.stringToTerraform(this._keyName),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      placement_tenancy: cdktf.stringToTerraform(this._placementTenancy),
-      region: cdktf.stringToTerraform(this._region),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
-      spot_price: cdktf.stringToTerraform(this._spotPrice),
-      user_data: cdktf.stringToTerraform(this._userData),
-      user_data_base64: cdktf.stringToTerraform(this._userDataBase64),
-      ebs_block_device: cdktf.listMapper(launchConfigurationEbsBlockDeviceToTerraform, true)(this._ebsBlockDevice.internalValue),
-      ephemeral_block_device: cdktf.listMapper(launchConfigurationEphemeralBlockDeviceToTerraform, true)(this._ephemeralBlockDevice.internalValue),
+      associate_public_ip_address: cdktn.booleanToTerraform(this._associatePublicIpAddress),
+      ebs_optimized: cdktn.booleanToTerraform(this._ebsOptimized),
+      enable_monitoring: cdktn.booleanToTerraform(this._enableMonitoring),
+      iam_instance_profile: cdktn.stringToTerraform(this._iamInstanceProfile),
+      id: cdktn.stringToTerraform(this._id),
+      image_id: cdktn.stringToTerraform(this._imageId),
+      instance_type: cdktn.stringToTerraform(this._instanceType),
+      key_name: cdktn.stringToTerraform(this._keyName),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      placement_tenancy: cdktn.stringToTerraform(this._placementTenancy),
+      region: cdktn.stringToTerraform(this._region),
+      security_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroups),
+      spot_price: cdktn.stringToTerraform(this._spotPrice),
+      user_data: cdktn.stringToTerraform(this._userData),
+      user_data_base64: cdktn.stringToTerraform(this._userDataBase64),
+      ebs_block_device: cdktn.listMapper(launchConfigurationEbsBlockDeviceToTerraform, true)(this._ebsBlockDevice.internalValue),
+      ephemeral_block_device: cdktn.listMapper(launchConfigurationEphemeralBlockDeviceToTerraform, true)(this._ephemeralBlockDevice.internalValue),
       metadata_options: launchConfigurationMetadataOptionsToTerraform(this._metadataOptions.internalValue),
       root_block_device: launchConfigurationRootBlockDeviceToTerraform(this._rootBlockDevice.internalValue),
     };
@@ -1490,109 +1490,109 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       associate_public_ip_address: {
-        value: cdktf.booleanToHclTerraform(this._associatePublicIpAddress),
+        value: cdktn.booleanToHclTerraform(this._associatePublicIpAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ebs_optimized: {
-        value: cdktf.booleanToHclTerraform(this._ebsOptimized),
+        value: cdktn.booleanToHclTerraform(this._ebsOptimized),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_monitoring: {
-        value: cdktf.booleanToHclTerraform(this._enableMonitoring),
+        value: cdktn.booleanToHclTerraform(this._enableMonitoring),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       iam_instance_profile: {
-        value: cdktf.stringToHclTerraform(this._iamInstanceProfile),
+        value: cdktn.stringToHclTerraform(this._iamInstanceProfile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_id: {
-        value: cdktf.stringToHclTerraform(this._imageId),
+        value: cdktn.stringToHclTerraform(this._imageId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_type: {
-        value: cdktf.stringToHclTerraform(this._instanceType),
+        value: cdktn.stringToHclTerraform(this._instanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_name: {
-        value: cdktf.stringToHclTerraform(this._keyName),
+        value: cdktn.stringToHclTerraform(this._keyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       placement_tenancy: {
-        value: cdktf.stringToHclTerraform(this._placementTenancy),
+        value: cdktn.stringToHclTerraform(this._placementTenancy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroups),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       spot_price: {
-        value: cdktf.stringToHclTerraform(this._spotPrice),
+        value: cdktn.stringToHclTerraform(this._spotPrice),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_data: {
-        value: cdktf.stringToHclTerraform(this._userData),
+        value: cdktn.stringToHclTerraform(this._userData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_data_base64: {
-        value: cdktf.stringToHclTerraform(this._userDataBase64),
+        value: cdktn.stringToHclTerraform(this._userDataBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ebs_block_device: {
-        value: cdktf.listMapperHcl(launchConfigurationEbsBlockDeviceToHclTerraform, true)(this._ebsBlockDevice.internalValue),
+        value: cdktn.listMapperHcl(launchConfigurationEbsBlockDeviceToHclTerraform, true)(this._ebsBlockDevice.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LaunchConfigurationEbsBlockDeviceList",
       },
       ephemeral_block_device: {
-        value: cdktf.listMapperHcl(launchConfigurationEphemeralBlockDeviceToHclTerraform, true)(this._ephemeralBlockDevice.internalValue),
+        value: cdktn.listMapperHcl(launchConfigurationEphemeralBlockDeviceToHclTerraform, true)(this._ephemeralBlockDevice.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LaunchConfigurationEphemeralBlockDeviceList",

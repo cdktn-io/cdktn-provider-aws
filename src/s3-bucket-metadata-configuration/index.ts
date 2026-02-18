@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3BucketMetadataConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface S3BucketMetadataConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_metadata_configuration#bucket S3BucketMetadataConfiguration#bucket}
   */
@@ -31,7 +31,7 @@ export interface S3BucketMetadataConfigurationConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_metadata_configuration#metadata_configuration S3BucketMetadataConfiguration#metadata_configuration}
   */
-  readonly metadataConfiguration?: S3BucketMetadataConfigurationMetadataConfiguration[] | cdktf.IResolvable;
+  readonly metadataConfiguration?: S3BucketMetadataConfigurationMetadataConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -43,8 +43,8 @@ export interface S3BucketMetadataConfigurationMetadataConfigurationDestination {
 }
 
 export function s3BucketMetadataConfigurationMetadataConfigurationDestinationToTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -53,8 +53,8 @@ export function s3BucketMetadataConfigurationMetadataConfigurationDestinationToT
 
 
 export function s3BucketMetadataConfigurationMetadataConfigurationDestinationToHclTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -62,7 +62,7 @@ export function s3BucketMetadataConfigurationMetadataConfigurationDestinationToH
   return attrs;
 }
 
-export class S3BucketMetadataConfigurationMetadataConfigurationDestinationOutputReference extends cdktf.ComplexObject {
+export class S3BucketMetadataConfigurationMetadataConfigurationDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -71,7 +71,7 @@ export class S3BucketMetadataConfigurationMetadataConfigurationDestinationOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -106,14 +106,14 @@ export class S3BucketMetadataConfigurationMetadataConfigurationDestinationOutput
   }
 }
 
-export class S3BucketMetadataConfigurationMetadataConfigurationDestinationList extends cdktf.ComplexList {
+export class S3BucketMetadataConfigurationMetadataConfigurationDestinationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -135,32 +135,32 @@ export interface S3BucketMetadataConfigurationMetadataConfigurationInventoryTabl
   readonly sseAlgorithm: string;
 }
 
-export function s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationToTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationToTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    sse_algorithm: cdktf.stringToTerraform(struct!.sseAlgorithm),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    sse_algorithm: cdktn.stringToTerraform(struct!.sseAlgorithm),
   }
 }
 
 
-export function s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationToHclTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationToHclTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sse_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.sseAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.sseAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -171,9 +171,9 @@ export function s3BucketMetadataConfigurationMetadataConfigurationInventoryTable
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -181,11 +181,11 @@ export class S3BucketMetadataConfigurationMetadataConfigurationInventoryTableCon
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -202,14 +202,14 @@ export class S3BucketMetadataConfigurationMetadataConfigurationInventoryTableCon
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._kmsKeyArn = undefined;
       this._sseAlgorithm = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -251,15 +251,15 @@ export class S3BucketMetadataConfigurationMetadataConfigurationInventoryTableCon
   }
 }
 
-export class S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationList extends cdktf.ComplexList {
-  public internalValue? : S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration[] | cdktf.IResolvable
+export class S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationList extends cdktn.ComplexList {
+  public internalValue? : S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -280,35 +280,35 @@ export interface S3BucketMetadataConfigurationMetadataConfigurationInventoryTabl
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_metadata_configuration#encryption_configuration S3BucketMetadataConfiguration#encryption_configuration}
   */
-  readonly encryptionConfiguration?: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration[] | cdktf.IResolvable;
+  readonly encryptionConfiguration?: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration[] | cdktn.IResolvable;
 }
 
-export function s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationToTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationToTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    configuration_state: cdktf.stringToTerraform(struct!.configurationState),
-    encryption_configuration: cdktf.listMapper(s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationToTerraform, true)(struct!.encryptionConfiguration),
+    configuration_state: cdktn.stringToTerraform(struct!.configurationState),
+    encryption_configuration: cdktn.listMapper(s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationToTerraform, true)(struct!.encryptionConfiguration),
   }
 }
 
 
-export function s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationToHclTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationToHclTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     configuration_state: {
-      value: cdktf.stringToHclTerraform(struct!.configurationState),
+      value: cdktn.stringToHclTerraform(struct!.configurationState),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encryption_configuration: {
-      value: cdktf.listMapperHcl(s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationToHclTerraform, true)(struct!.encryptionConfiguration),
+      value: cdktn.listMapperHcl(s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationToHclTerraform, true)(struct!.encryptionConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationList",
@@ -319,9 +319,9 @@ export function s3BucketMetadataConfigurationMetadataConfigurationInventoryTable
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationOutputReference extends cdktf.ComplexObject {
+export class S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -329,11 +329,11 @@ export class S3BucketMetadataConfigurationMetadataConfigurationInventoryTableCon
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -350,14 +350,14 @@ export class S3BucketMetadataConfigurationMetadataConfigurationInventoryTableCon
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._configurationState = undefined;
       this._encryptionConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -397,7 +397,7 @@ export class S3BucketMetadataConfigurationMetadataConfigurationInventoryTableCon
   public get encryptionConfiguration() {
     return this._encryptionConfiguration;
   }
-  public putEncryptionConfiguration(value: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration[] | cdktf.IResolvable) {
+  public putEncryptionConfiguration(value: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration[] | cdktn.IResolvable) {
     this._encryptionConfiguration.internalValue = value;
   }
   public resetEncryptionConfiguration() {
@@ -409,15 +409,15 @@ export class S3BucketMetadataConfigurationMetadataConfigurationInventoryTableCon
   }
 }
 
-export class S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationList extends cdktf.ComplexList {
-  public internalValue? : S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration[] | cdktf.IResolvable
+export class S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationList extends cdktn.ComplexList {
+  public internalValue? : S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -439,32 +439,32 @@ export interface S3BucketMetadataConfigurationMetadataConfigurationJournalTableC
   readonly sseAlgorithm: string;
 }
 
-export function s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationToTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationToTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    sse_algorithm: cdktf.stringToTerraform(struct!.sseAlgorithm),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    sse_algorithm: cdktn.stringToTerraform(struct!.sseAlgorithm),
   }
 }
 
 
-export function s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationToHclTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationToHclTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sse_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.sseAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.sseAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -475,9 +475,9 @@ export function s3BucketMetadataConfigurationMetadataConfigurationJournalTableCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -485,11 +485,11 @@ export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -506,14 +506,14 @@ export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._kmsKeyArn = undefined;
       this._sseAlgorithm = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -555,15 +555,15 @@ export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfi
   }
 }
 
-export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationList extends cdktf.ComplexList {
-  public internalValue? : S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration[] | cdktf.IResolvable
+export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationList extends cdktn.ComplexList {
+  public internalValue? : S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -585,32 +585,32 @@ export interface S3BucketMetadataConfigurationMetadataConfigurationJournalTableC
   readonly expiration: string;
 }
 
-export function s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationToTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationToTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days: cdktf.numberToTerraform(struct!.days),
-    expiration: cdktf.stringToTerraform(struct!.expiration),
+    days: cdktn.numberToTerraform(struct!.days),
+    expiration: cdktn.stringToTerraform(struct!.expiration),
   }
 }
 
 
-export function s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationToHclTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationToHclTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days: {
-      value: cdktf.numberToHclTerraform(struct!.days),
+      value: cdktn.numberToHclTerraform(struct!.days),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     expiration: {
-      value: cdktf.stringToHclTerraform(struct!.expiration),
+      value: cdktn.stringToHclTerraform(struct!.expiration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -621,9 +621,9 @@ export function s3BucketMetadataConfigurationMetadataConfigurationJournalTableCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationOutputReference extends cdktf.ComplexObject {
+export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -631,11 +631,11 @@ export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration | cdktf.IResolvable | undefined {
+  public get internalValue(): S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -652,14 +652,14 @@ export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._days = undefined;
       this._expiration = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -701,15 +701,15 @@ export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfi
   }
 }
 
-export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationList extends cdktf.ComplexList {
-  public internalValue? : S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration[] | cdktf.IResolvable
+export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationList extends cdktn.ComplexList {
+  public internalValue? : S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -726,41 +726,41 @@ export interface S3BucketMetadataConfigurationMetadataConfigurationJournalTableC
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_metadata_configuration#encryption_configuration S3BucketMetadataConfiguration#encryption_configuration}
   */
-  readonly encryptionConfiguration?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration[] | cdktf.IResolvable;
+  readonly encryptionConfiguration?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration[] | cdktn.IResolvable;
   /**
   * record_expiration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_metadata_configuration#record_expiration S3BucketMetadataConfiguration#record_expiration}
   */
-  readonly recordExpiration?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration[] | cdktf.IResolvable;
+  readonly recordExpiration?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration[] | cdktn.IResolvable;
 }
 
-export function s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationToTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationToTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    encryption_configuration: cdktf.listMapper(s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationToTerraform, true)(struct!.encryptionConfiguration),
-    record_expiration: cdktf.listMapper(s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationToTerraform, true)(struct!.recordExpiration),
+    encryption_configuration: cdktn.listMapper(s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationToTerraform, true)(struct!.encryptionConfiguration),
+    record_expiration: cdktn.listMapper(s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationToTerraform, true)(struct!.recordExpiration),
   }
 }
 
 
-export function s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationToHclTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationToHclTerraform(struct?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     encryption_configuration: {
-      value: cdktf.listMapperHcl(s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationToHclTerraform, true)(struct!.encryptionConfiguration),
+      value: cdktn.listMapperHcl(s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationToHclTerraform, true)(struct!.encryptionConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationList",
     },
     record_expiration: {
-      value: cdktf.listMapperHcl(s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationToHclTerraform, true)(struct!.recordExpiration),
+      value: cdktn.listMapperHcl(s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationToHclTerraform, true)(struct!.recordExpiration),
       isBlock: true,
       type: "list",
       storageClassType: "S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationList",
@@ -771,9 +771,9 @@ export function s3BucketMetadataConfigurationMetadataConfigurationJournalTableCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationOutputReference extends cdktf.ComplexObject {
+export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -781,11 +781,11 @@ export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -802,14 +802,14 @@ export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._encryptionConfiguration.internalValue = undefined;
       this._recordExpiration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -836,7 +836,7 @@ export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfi
   public get encryptionConfiguration() {
     return this._encryptionConfiguration;
   }
-  public putEncryptionConfiguration(value: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration[] | cdktf.IResolvable) {
+  public putEncryptionConfiguration(value: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration[] | cdktn.IResolvable) {
     this._encryptionConfiguration.internalValue = value;
   }
   public resetEncryptionConfiguration() {
@@ -852,7 +852,7 @@ export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfi
   public get recordExpiration() {
     return this._recordExpiration;
   }
-  public putRecordExpiration(value: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration[] | cdktf.IResolvable) {
+  public putRecordExpiration(value: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration[] | cdktn.IResolvable) {
     this._recordExpiration.internalValue = value;
   }
   public resetRecordExpiration() {
@@ -864,15 +864,15 @@ export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfi
   }
 }
 
-export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationList extends cdktf.ComplexList {
-  public internalValue? : S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration[] | cdktf.IResolvable
+export class S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationList extends cdktn.ComplexList {
+  public internalValue? : S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -889,41 +889,41 @@ export interface S3BucketMetadataConfigurationMetadataConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_metadata_configuration#inventory_table_configuration S3BucketMetadataConfiguration#inventory_table_configuration}
   */
-  readonly inventoryTableConfiguration?: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration[] | cdktf.IResolvable;
+  readonly inventoryTableConfiguration?: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration[] | cdktn.IResolvable;
   /**
   * journal_table_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_metadata_configuration#journal_table_configuration S3BucketMetadataConfiguration#journal_table_configuration}
   */
-  readonly journalTableConfiguration?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration[] | cdktf.IResolvable;
+  readonly journalTableConfiguration?: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration[] | cdktn.IResolvable;
 }
 
-export function s3BucketMetadataConfigurationMetadataConfigurationToTerraform(struct?: S3BucketMetadataConfigurationMetadataConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketMetadataConfigurationMetadataConfigurationToTerraform(struct?: S3BucketMetadataConfigurationMetadataConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    inventory_table_configuration: cdktf.listMapper(s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationToTerraform, true)(struct!.inventoryTableConfiguration),
-    journal_table_configuration: cdktf.listMapper(s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationToTerraform, true)(struct!.journalTableConfiguration),
+    inventory_table_configuration: cdktn.listMapper(s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationToTerraform, true)(struct!.inventoryTableConfiguration),
+    journal_table_configuration: cdktn.listMapper(s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationToTerraform, true)(struct!.journalTableConfiguration),
   }
 }
 
 
-export function s3BucketMetadataConfigurationMetadataConfigurationToHclTerraform(struct?: S3BucketMetadataConfigurationMetadataConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketMetadataConfigurationMetadataConfigurationToHclTerraform(struct?: S3BucketMetadataConfigurationMetadataConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     inventory_table_configuration: {
-      value: cdktf.listMapperHcl(s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationToHclTerraform, true)(struct!.inventoryTableConfiguration),
+      value: cdktn.listMapperHcl(s3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationToHclTerraform, true)(struct!.inventoryTableConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationList",
     },
     journal_table_configuration: {
-      value: cdktf.listMapperHcl(s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationToHclTerraform, true)(struct!.journalTableConfiguration),
+      value: cdktn.listMapperHcl(s3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationToHclTerraform, true)(struct!.journalTableConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationList",
@@ -934,9 +934,9 @@ export function s3BucketMetadataConfigurationMetadataConfigurationToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketMetadataConfigurationMetadataConfigurationOutputReference extends cdktf.ComplexObject {
+export class S3BucketMetadataConfigurationMetadataConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -944,11 +944,11 @@ export class S3BucketMetadataConfigurationMetadataConfigurationOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketMetadataConfigurationMetadataConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): S3BucketMetadataConfigurationMetadataConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -965,14 +965,14 @@ export class S3BucketMetadataConfigurationMetadataConfigurationOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketMetadataConfigurationMetadataConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3BucketMetadataConfigurationMetadataConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._inventoryTableConfiguration.internalValue = undefined;
       this._journalTableConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -995,7 +995,7 @@ export class S3BucketMetadataConfigurationMetadataConfigurationOutputReference e
   public get inventoryTableConfiguration() {
     return this._inventoryTableConfiguration;
   }
-  public putInventoryTableConfiguration(value: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration[] | cdktf.IResolvable) {
+  public putInventoryTableConfiguration(value: S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration[] | cdktn.IResolvable) {
     this._inventoryTableConfiguration.internalValue = value;
   }
   public resetInventoryTableConfiguration() {
@@ -1011,7 +1011,7 @@ export class S3BucketMetadataConfigurationMetadataConfigurationOutputReference e
   public get journalTableConfiguration() {
     return this._journalTableConfiguration;
   }
-  public putJournalTableConfiguration(value: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration[] | cdktf.IResolvable) {
+  public putJournalTableConfiguration(value: S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration[] | cdktn.IResolvable) {
     this._journalTableConfiguration.internalValue = value;
   }
   public resetJournalTableConfiguration() {
@@ -1023,15 +1023,15 @@ export class S3BucketMetadataConfigurationMetadataConfigurationOutputReference e
   }
 }
 
-export class S3BucketMetadataConfigurationMetadataConfigurationList extends cdktf.ComplexList {
-  public internalValue? : S3BucketMetadataConfigurationMetadataConfiguration[] | cdktf.IResolvable
+export class S3BucketMetadataConfigurationMetadataConfigurationList extends cdktn.ComplexList {
+  public internalValue? : S3BucketMetadataConfigurationMetadataConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1051,25 +1051,25 @@ export interface S3BucketMetadataConfigurationTimeouts {
   readonly create?: string;
 }
 
-export function s3BucketMetadataConfigurationTimeoutsToTerraform(struct?: S3BucketMetadataConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketMetadataConfigurationTimeoutsToTerraform(struct?: S3BucketMetadataConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function s3BucketMetadataConfigurationTimeoutsToHclTerraform(struct?: S3BucketMetadataConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketMetadataConfigurationTimeoutsToHclTerraform(struct?: S3BucketMetadataConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1080,19 +1080,19 @@ export function s3BucketMetadataConfigurationTimeoutsToHclTerraform(struct?: S3B
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketMetadataConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class S3BucketMetadataConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): S3BucketMetadataConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): S3BucketMetadataConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1105,13 +1105,13 @@ export class S3BucketMetadataConfigurationTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketMetadataConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3BucketMetadataConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1142,7 +1142,7 @@ export class S3BucketMetadataConfigurationTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_metadata_configuration aws_s3_bucket_metadata_configuration}
 */
-export class S3BucketMetadataConfiguration extends cdktf.TerraformResource {
+export class S3BucketMetadataConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1153,14 +1153,14 @@ export class S3BucketMetadataConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3BucketMetadataConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3BucketMetadataConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketMetadataConfiguration to import
   * @param importFromId The id of the existing S3BucketMetadataConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_metadata_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketMetadataConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_metadata_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_metadata_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -1251,7 +1251,7 @@ export class S3BucketMetadataConfiguration extends cdktf.TerraformResource {
   public get metadataConfiguration() {
     return this._metadataConfiguration;
   }
-  public putMetadataConfiguration(value: S3BucketMetadataConfigurationMetadataConfiguration[] | cdktf.IResolvable) {
+  public putMetadataConfiguration(value: S3BucketMetadataConfigurationMetadataConfiguration[] | cdktn.IResolvable) {
     this._metadataConfiguration.internalValue = value;
   }
   public resetMetadataConfiguration() {
@@ -1284,10 +1284,10 @@ export class S3BucketMetadataConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
-      region: cdktf.stringToTerraform(this._region),
-      metadata_configuration: cdktf.listMapper(s3BucketMetadataConfigurationMetadataConfigurationToTerraform, true)(this._metadataConfiguration.internalValue),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      expected_bucket_owner: cdktn.stringToTerraform(this._expectedBucketOwner),
+      region: cdktn.stringToTerraform(this._region),
+      metadata_configuration: cdktn.listMapper(s3BucketMetadataConfigurationMetadataConfigurationToTerraform, true)(this._metadataConfiguration.internalValue),
       timeouts: s3BucketMetadataConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1295,25 +1295,25 @@ export class S3BucketMetadataConfiguration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expected_bucket_owner: {
-        value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
+        value: cdktn.stringToHclTerraform(this._expectedBucketOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata_configuration: {
-        value: cdktf.listMapperHcl(s3BucketMetadataConfigurationMetadataConfigurationToHclTerraform, true)(this._metadataConfiguration.internalValue),
+        value: cdktn.listMapperHcl(s3BucketMetadataConfigurationMetadataConfigurationToHclTerraform, true)(this._metadataConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "S3BucketMetadataConfigurationMetadataConfigurationList",

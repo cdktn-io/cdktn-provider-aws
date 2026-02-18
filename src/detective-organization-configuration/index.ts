@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DetectiveOrganizationConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface DetectiveOrganizationConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/detective_organization_configuration#auto_enable DetectiveOrganizationConfiguration#auto_enable}
   */
-  readonly autoEnable: boolean | cdktf.IResolvable;
+  readonly autoEnable: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/detective_organization_configuration#graph_arn DetectiveOrganizationConfiguration#graph_arn}
   */
@@ -38,7 +38,7 @@ export interface DetectiveOrganizationConfigurationConfig extends cdktf.Terrafor
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/detective_organization_configuration aws_detective_organization_configuration}
 */
-export class DetectiveOrganizationConfiguration extends cdktf.TerraformResource {
+export class DetectiveOrganizationConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class DetectiveOrganizationConfiguration extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DetectiveOrganizationConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DetectiveOrganizationConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DetectiveOrganizationConfiguration to import
   * @param importFromId The id of the existing DetectiveOrganizationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/detective_organization_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DetectiveOrganizationConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_detective_organization_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_detective_organization_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -97,11 +97,11 @@ export class DetectiveOrganizationConfiguration extends cdktf.TerraformResource 
   // ==========
 
   // auto_enable - computed: false, optional: false, required: true
-  private _autoEnable?: boolean | cdktf.IResolvable; 
+  private _autoEnable?: boolean | cdktn.IResolvable; 
   public get autoEnable() {
     return this.getBooleanAttribute('auto_enable');
   }
-  public set autoEnable(value: boolean | cdktf.IResolvable) {
+  public set autoEnable(value: boolean | cdktn.IResolvable) {
     this._autoEnable = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -160,35 +160,35 @@ export class DetectiveOrganizationConfiguration extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_enable: cdktf.booleanToTerraform(this._autoEnable),
-      graph_arn: cdktf.stringToTerraform(this._graphArn),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      auto_enable: cdktn.booleanToTerraform(this._autoEnable),
+      graph_arn: cdktn.stringToTerraform(this._graphArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_enable: {
-        value: cdktf.booleanToHclTerraform(this._autoEnable),
+        value: cdktn.booleanToHclTerraform(this._autoEnable),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       graph_arn: {
-        value: cdktf.stringToHclTerraform(this._graphArn),
+        value: cdktn.stringToHclTerraform(this._graphArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

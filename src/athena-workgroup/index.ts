@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AthenaWorkgroupConfig extends cdktf.TerraformMetaArguments {
+export interface AthenaWorkgroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#description AthenaWorkgroup#description}
   */
@@ -19,7 +19,7 @@ export interface AthenaWorkgroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#force_destroy AthenaWorkgroup#force_destroy}
   */
-  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#id AthenaWorkgroup#id}
   *
@@ -64,24 +64,24 @@ export interface AthenaWorkgroupConfigurationCustomerContentEncryptionConfigurat
 }
 
 export function athenaWorkgroupConfigurationCustomerContentEncryptionConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationCustomerContentEncryptionConfigurationOutputReference | AthenaWorkgroupConfigurationCustomerContentEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
   }
 }
 
 
 export function athenaWorkgroupConfigurationCustomerContentEncryptionConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationCustomerContentEncryptionConfigurationOutputReference | AthenaWorkgroupConfigurationCustomerContentEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,14 +92,14 @@ export function athenaWorkgroupConfigurationCustomerContentEncryptionConfigurati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaWorkgroupConfigurationCustomerContentEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class AthenaWorkgroupConfigurationCustomerContentEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -148,24 +148,24 @@ export interface AthenaWorkgroupConfigurationEngineVersion {
 }
 
 export function athenaWorkgroupConfigurationEngineVersionToTerraform(struct?: AthenaWorkgroupConfigurationEngineVersionOutputReference | AthenaWorkgroupConfigurationEngineVersion): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    selected_engine_version: cdktf.stringToTerraform(struct!.selectedEngineVersion),
+    selected_engine_version: cdktn.stringToTerraform(struct!.selectedEngineVersion),
   }
 }
 
 
 export function athenaWorkgroupConfigurationEngineVersionToHclTerraform(struct?: AthenaWorkgroupConfigurationEngineVersionOutputReference | AthenaWorkgroupConfigurationEngineVersion): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     selected_engine_version: {
-      value: cdktf.stringToHclTerraform(struct!.selectedEngineVersion),
+      value: cdktn.stringToHclTerraform(struct!.selectedEngineVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -176,14 +176,14 @@ export function athenaWorkgroupConfigurationEngineVersionToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaWorkgroupConfigurationEngineVersionOutputReference extends cdktf.ComplexObject {
+export class AthenaWorkgroupConfigurationEngineVersionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -233,7 +233,7 @@ export interface AthenaWorkgroupConfigurationIdentityCenterConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#enable_identity_center AthenaWorkgroup#enable_identity_center}
   */
-  readonly enableIdentityCenter?: boolean | cdktf.IResolvable;
+  readonly enableIdentityCenter?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#identity_center_instance_arn AthenaWorkgroup#identity_center_instance_arn}
   */
@@ -241,31 +241,31 @@ export interface AthenaWorkgroupConfigurationIdentityCenterConfiguration {
 }
 
 export function athenaWorkgroupConfigurationIdentityCenterConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationIdentityCenterConfigurationOutputReference | AthenaWorkgroupConfigurationIdentityCenterConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_identity_center: cdktf.booleanToTerraform(struct!.enableIdentityCenter),
-    identity_center_instance_arn: cdktf.stringToTerraform(struct!.identityCenterInstanceArn),
+    enable_identity_center: cdktn.booleanToTerraform(struct!.enableIdentityCenter),
+    identity_center_instance_arn: cdktn.stringToTerraform(struct!.identityCenterInstanceArn),
   }
 }
 
 
 export function athenaWorkgroupConfigurationIdentityCenterConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationIdentityCenterConfigurationOutputReference | AthenaWorkgroupConfigurationIdentityCenterConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_identity_center: {
-      value: cdktf.booleanToHclTerraform(struct!.enableIdentityCenter),
+      value: cdktn.booleanToHclTerraform(struct!.enableIdentityCenter),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     identity_center_instance_arn: {
-      value: cdktf.stringToHclTerraform(struct!.identityCenterInstanceArn),
+      value: cdktn.stringToHclTerraform(struct!.identityCenterInstanceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -276,14 +276,14 @@ export function athenaWorkgroupConfigurationIdentityCenterConfigurationToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaWorkgroupConfigurationIdentityCenterConfigurationOutputReference extends cdktf.ComplexObject {
+export class AthenaWorkgroupConfigurationIdentityCenterConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -315,11 +315,11 @@ export class AthenaWorkgroupConfigurationIdentityCenterConfigurationOutputRefere
   }
 
   // enable_identity_center - computed: false, optional: true, required: false
-  private _enableIdentityCenter?: boolean | cdktf.IResolvable; 
+  private _enableIdentityCenter?: boolean | cdktn.IResolvable; 
   public get enableIdentityCenter() {
     return this.getBooleanAttribute('enable_identity_center');
   }
-  public set enableIdentityCenter(value: boolean | cdktf.IResolvable) {
+  public set enableIdentityCenter(value: boolean | cdktn.IResolvable) {
     this._enableIdentityCenter = value;
   }
   public resetEnableIdentityCenter() {
@@ -354,24 +354,24 @@ export interface AthenaWorkgroupConfigurationManagedQueryResultsConfigurationEnc
 }
 
 export function athenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurationOutputReference | AthenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
   }
 }
 
 
 export function athenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurationOutputReference | AthenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -382,14 +382,14 @@ export function athenaWorkgroupConfigurationManagedQueryResultsConfigurationEncr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class AthenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -434,7 +434,7 @@ export interface AthenaWorkgroupConfigurationManagedQueryResultsConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#enabled AthenaWorkgroup#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * encryption_configuration block
   *
@@ -444,25 +444,25 @@ export interface AthenaWorkgroupConfigurationManagedQueryResultsConfiguration {
 }
 
 export function athenaWorkgroupConfigurationManagedQueryResultsConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationManagedQueryResultsConfigurationOutputReference | AthenaWorkgroupConfigurationManagedQueryResultsConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
     encryption_configuration: athenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurationToTerraform(struct!.encryptionConfiguration),
   }
 }
 
 
 export function athenaWorkgroupConfigurationManagedQueryResultsConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationManagedQueryResultsConfigurationOutputReference | AthenaWorkgroupConfigurationManagedQueryResultsConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -479,14 +479,14 @@ export function athenaWorkgroupConfigurationManagedQueryResultsConfigurationToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaWorkgroupConfigurationManagedQueryResultsConfigurationOutputReference extends cdktf.ComplexObject {
+export class AthenaWorkgroupConfigurationManagedQueryResultsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -518,11 +518,11 @@ export class AthenaWorkgroupConfigurationManagedQueryResultsConfigurationOutputR
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -560,32 +560,32 @@ export interface AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLo
   readonly values: string[];
 }
 
-export function athenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeToTerraform(struct?: AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function athenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeToTerraform(struct?: AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function athenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeToHclTerraform(struct?: AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function athenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeToHclTerraform(struct?: AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -596,9 +596,9 @@ export function athenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLog
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeOutputReference extends cdktf.ComplexObject {
+export class AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -606,11 +606,11 @@ export class AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggin
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType | cdktf.IResolvable | undefined {
+  public get internalValue(): AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -627,14 +627,14 @@ export class AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggin
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -662,7 +662,7 @@ export class AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggin
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -673,15 +673,15 @@ export class AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggin
   }
 }
 
-export class AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeList extends cdktf.ComplexList {
-  public internalValue? : AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType[] | cdktf.IResolvable
+export class AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeList extends cdktn.ComplexList {
+  public internalValue? : AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -696,7 +696,7 @@ export interface AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLo
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#enabled AthenaWorkgroup#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#log_group AthenaWorkgroup#log_group}
   */
@@ -710,49 +710,49 @@ export interface AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#log_type AthenaWorkgroup#log_type}
   */
-  readonly logType?: AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType[] | cdktf.IResolvable;
+  readonly logType?: AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType[] | cdktn.IResolvable;
 }
 
 export function athenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationOutputReference | AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group: cdktf.stringToTerraform(struct!.logGroup),
-    log_stream_name_prefix: cdktf.stringToTerraform(struct!.logStreamNamePrefix),
-    log_type: cdktf.listMapper(athenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeToTerraform, true)(struct!.logType),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group: cdktn.stringToTerraform(struct!.logGroup),
+    log_stream_name_prefix: cdktn.stringToTerraform(struct!.logStreamNamePrefix),
+    log_type: cdktn.listMapper(athenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeToTerraform, true)(struct!.logType),
   }
 }
 
 
 export function athenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationOutputReference | AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group: {
-      value: cdktf.stringToHclTerraform(struct!.logGroup),
+      value: cdktn.stringToHclTerraform(struct!.logGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamNamePrefix),
+      value: cdktn.stringToHclTerraform(struct!.logStreamNamePrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_type: {
-      value: cdktf.listMapperHcl(athenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeToHclTerraform, true)(struct!.logType),
+      value: cdktn.listMapperHcl(athenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeToHclTerraform, true)(struct!.logType),
       isBlock: true,
       type: "set",
       storageClassType: "AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeList",
@@ -763,14 +763,14 @@ export function athenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLog
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationOutputReference extends cdktf.ComplexObject {
+export class AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -814,11 +814,11 @@ export class AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggin
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -863,7 +863,7 @@ export class AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggin
   public get logType() {
     return this._logType;
   }
-  public putLogType(value: AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType[] | cdktf.IResolvable) {
+  public putLogType(value: AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType[] | cdktn.IResolvable) {
     this._logType.internalValue = value;
   }
   public resetLogType() {
@@ -878,7 +878,7 @@ export interface AthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggi
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#enabled AthenaWorkgroup#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#kms_key AthenaWorkgroup#kms_key}
   */
@@ -886,31 +886,31 @@ export interface AthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggi
 }
 
 export function athenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingConfigurationOutputReference | AthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
   }
 }
 
 
 export function athenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingConfigurationOutputReference | AthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -921,14 +921,14 @@ export function athenaWorkgroupConfigurationMonitoringConfigurationManagedLoggin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingConfigurationOutputReference extends cdktf.ComplexObject {
+export class AthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -960,11 +960,11 @@ export class AthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingCo
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -992,7 +992,7 @@ export interface AthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingCon
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#enabled AthenaWorkgroup#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#kms_key AthenaWorkgroup#kms_key}
   */
@@ -1004,38 +1004,38 @@ export interface AthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingCon
 }
 
 export function athenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfigurationOutputReference | AthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
-    log_location: cdktf.stringToTerraform(struct!.logLocation),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
+    log_location: cdktn.stringToTerraform(struct!.logLocation),
   }
 }
 
 
 export function athenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfigurationOutputReference | AthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_location: {
-      value: cdktf.stringToHclTerraform(struct!.logLocation),
+      value: cdktn.stringToHclTerraform(struct!.logLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1046,14 +1046,14 @@ export function athenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfigurationOutputReference extends cdktf.ComplexObject {
+export class AthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1091,11 +1091,11 @@ export class AthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfigu
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1157,8 +1157,8 @@ export interface AthenaWorkgroupConfigurationMonitoringConfiguration {
 }
 
 export function athenaWorkgroupConfigurationMonitoringConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationMonitoringConfigurationOutputReference | AthenaWorkgroupConfigurationMonitoringConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1170,8 +1170,8 @@ export function athenaWorkgroupConfigurationMonitoringConfigurationToTerraform(s
 
 
 export function athenaWorkgroupConfigurationMonitoringConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationMonitoringConfigurationOutputReference | AthenaWorkgroupConfigurationMonitoringConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1199,14 +1199,14 @@ export function athenaWorkgroupConfigurationMonitoringConfigurationToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaWorkgroupConfigurationMonitoringConfigurationOutputReference extends cdktf.ComplexObject {
+export class AthenaWorkgroupConfigurationMonitoringConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1299,24 +1299,24 @@ export interface AthenaWorkgroupConfigurationResultConfigurationAclConfiguration
 }
 
 export function athenaWorkgroupConfigurationResultConfigurationAclConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference | AthenaWorkgroupConfigurationResultConfigurationAclConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_acl_option: cdktf.stringToTerraform(struct!.s3AclOption),
+    s3_acl_option: cdktn.stringToTerraform(struct!.s3AclOption),
   }
 }
 
 
 export function athenaWorkgroupConfigurationResultConfigurationAclConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference | AthenaWorkgroupConfigurationResultConfigurationAclConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_acl_option: {
-      value: cdktf.stringToHclTerraform(struct!.s3AclOption),
+      value: cdktn.stringToHclTerraform(struct!.s3AclOption),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1327,14 +1327,14 @@ export function athenaWorkgroupConfigurationResultConfigurationAclConfigurationT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference extends cdktf.ComplexObject {
+export class AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1384,31 +1384,31 @@ export interface AthenaWorkgroupConfigurationResultConfigurationEncryptionConfig
 }
 
 export function athenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference | AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    encryption_option: cdktf.stringToTerraform(struct!.encryptionOption),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+    encryption_option: cdktn.stringToTerraform(struct!.encryptionOption),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
   }
 }
 
 
 export function athenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference | AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     encryption_option: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionOption),
+      value: cdktn.stringToHclTerraform(struct!.encryptionOption),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1419,14 +1419,14 @@ export function athenaWorkgroupConfigurationResultConfigurationEncryptionConfigu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1513,13 +1513,13 @@ export interface AthenaWorkgroupConfigurationResultConfiguration {
 }
 
 export function athenaWorkgroupConfigurationResultConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationResultConfigurationOutputReference | AthenaWorkgroupConfigurationResultConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expected_bucket_owner: cdktf.stringToTerraform(struct!.expectedBucketOwner),
-    output_location: cdktf.stringToTerraform(struct!.outputLocation),
+    expected_bucket_owner: cdktn.stringToTerraform(struct!.expectedBucketOwner),
+    output_location: cdktn.stringToTerraform(struct!.outputLocation),
     acl_configuration: athenaWorkgroupConfigurationResultConfigurationAclConfigurationToTerraform(struct!.aclConfiguration),
     encryption_configuration: athenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationToTerraform(struct!.encryptionConfiguration),
   }
@@ -1527,19 +1527,19 @@ export function athenaWorkgroupConfigurationResultConfigurationToTerraform(struc
 
 
 export function athenaWorkgroupConfigurationResultConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationResultConfigurationOutputReference | AthenaWorkgroupConfigurationResultConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expected_bucket_owner: {
-      value: cdktf.stringToHclTerraform(struct!.expectedBucketOwner),
+      value: cdktn.stringToHclTerraform(struct!.expectedBucketOwner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     output_location: {
-      value: cdktf.stringToHclTerraform(struct!.outputLocation),
+      value: cdktn.stringToHclTerraform(struct!.outputLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1562,14 +1562,14 @@ export function athenaWorkgroupConfigurationResultConfigurationToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaWorkgroupConfigurationResultConfigurationOutputReference extends cdktf.ComplexObject {
+export class AthenaWorkgroupConfigurationResultConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1684,11 +1684,11 @@ export interface AthenaWorkgroupConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#enable_minimum_encryption_configuration AthenaWorkgroup#enable_minimum_encryption_configuration}
   */
-  readonly enableMinimumEncryptionConfiguration?: boolean | cdktf.IResolvable;
+  readonly enableMinimumEncryptionConfiguration?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#enforce_workgroup_configuration AthenaWorkgroup#enforce_workgroup_configuration}
   */
-  readonly enforceWorkgroupConfiguration?: boolean | cdktf.IResolvable;
+  readonly enforceWorkgroupConfiguration?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#execution_role AthenaWorkgroup#execution_role}
   */
@@ -1696,11 +1696,11 @@ export interface AthenaWorkgroupConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#publish_cloudwatch_metrics_enabled AthenaWorkgroup#publish_cloudwatch_metrics_enabled}
   */
-  readonly publishCloudwatchMetricsEnabled?: boolean | cdktf.IResolvable;
+  readonly publishCloudwatchMetricsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#requester_pays_enabled AthenaWorkgroup#requester_pays_enabled}
   */
-  readonly requesterPaysEnabled?: boolean | cdktf.IResolvable;
+  readonly requesterPaysEnabled?: boolean | cdktn.IResolvable;
   /**
   * customer_content_encryption_configuration block
   *
@@ -1740,17 +1740,17 @@ export interface AthenaWorkgroupConfiguration {
 }
 
 export function athenaWorkgroupConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationOutputReference | AthenaWorkgroupConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bytes_scanned_cutoff_per_query: cdktf.numberToTerraform(struct!.bytesScannedCutoffPerQuery),
-    enable_minimum_encryption_configuration: cdktf.booleanToTerraform(struct!.enableMinimumEncryptionConfiguration),
-    enforce_workgroup_configuration: cdktf.booleanToTerraform(struct!.enforceWorkgroupConfiguration),
-    execution_role: cdktf.stringToTerraform(struct!.executionRole),
-    publish_cloudwatch_metrics_enabled: cdktf.booleanToTerraform(struct!.publishCloudwatchMetricsEnabled),
-    requester_pays_enabled: cdktf.booleanToTerraform(struct!.requesterPaysEnabled),
+    bytes_scanned_cutoff_per_query: cdktn.numberToTerraform(struct!.bytesScannedCutoffPerQuery),
+    enable_minimum_encryption_configuration: cdktn.booleanToTerraform(struct!.enableMinimumEncryptionConfiguration),
+    enforce_workgroup_configuration: cdktn.booleanToTerraform(struct!.enforceWorkgroupConfiguration),
+    execution_role: cdktn.stringToTerraform(struct!.executionRole),
+    publish_cloudwatch_metrics_enabled: cdktn.booleanToTerraform(struct!.publishCloudwatchMetricsEnabled),
+    requester_pays_enabled: cdktn.booleanToTerraform(struct!.requesterPaysEnabled),
     customer_content_encryption_configuration: athenaWorkgroupConfigurationCustomerContentEncryptionConfigurationToTerraform(struct!.customerContentEncryptionConfiguration),
     engine_version: athenaWorkgroupConfigurationEngineVersionToTerraform(struct!.engineVersion),
     identity_center_configuration: athenaWorkgroupConfigurationIdentityCenterConfigurationToTerraform(struct!.identityCenterConfiguration),
@@ -1762,43 +1762,43 @@ export function athenaWorkgroupConfigurationToTerraform(struct?: AthenaWorkgroup
 
 
 export function athenaWorkgroupConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationOutputReference | AthenaWorkgroupConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bytes_scanned_cutoff_per_query: {
-      value: cdktf.numberToHclTerraform(struct!.bytesScannedCutoffPerQuery),
+      value: cdktn.numberToHclTerraform(struct!.bytesScannedCutoffPerQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     enable_minimum_encryption_configuration: {
-      value: cdktf.booleanToHclTerraform(struct!.enableMinimumEncryptionConfiguration),
+      value: cdktn.booleanToHclTerraform(struct!.enableMinimumEncryptionConfiguration),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enforce_workgroup_configuration: {
-      value: cdktf.booleanToHclTerraform(struct!.enforceWorkgroupConfiguration),
+      value: cdktn.booleanToHclTerraform(struct!.enforceWorkgroupConfiguration),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     execution_role: {
-      value: cdktf.stringToHclTerraform(struct!.executionRole),
+      value: cdktn.stringToHclTerraform(struct!.executionRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publish_cloudwatch_metrics_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.publishCloudwatchMetricsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.publishCloudwatchMetricsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     requester_pays_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.requesterPaysEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.requesterPaysEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1845,14 +1845,14 @@ export function athenaWorkgroupConfigurationToHclTerraform(struct?: AthenaWorkgr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexObject {
+export class AthenaWorkgroupConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1960,11 +1960,11 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   }
 
   // enable_minimum_encryption_configuration - computed: true, optional: true, required: false
-  private _enableMinimumEncryptionConfiguration?: boolean | cdktf.IResolvable; 
+  private _enableMinimumEncryptionConfiguration?: boolean | cdktn.IResolvable; 
   public get enableMinimumEncryptionConfiguration() {
     return this.getBooleanAttribute('enable_minimum_encryption_configuration');
   }
-  public set enableMinimumEncryptionConfiguration(value: boolean | cdktf.IResolvable) {
+  public set enableMinimumEncryptionConfiguration(value: boolean | cdktn.IResolvable) {
     this._enableMinimumEncryptionConfiguration = value;
   }
   public resetEnableMinimumEncryptionConfiguration() {
@@ -1976,11 +1976,11 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   }
 
   // enforce_workgroup_configuration - computed: false, optional: true, required: false
-  private _enforceWorkgroupConfiguration?: boolean | cdktf.IResolvable; 
+  private _enforceWorkgroupConfiguration?: boolean | cdktn.IResolvable; 
   public get enforceWorkgroupConfiguration() {
     return this.getBooleanAttribute('enforce_workgroup_configuration');
   }
-  public set enforceWorkgroupConfiguration(value: boolean | cdktf.IResolvable) {
+  public set enforceWorkgroupConfiguration(value: boolean | cdktn.IResolvable) {
     this._enforceWorkgroupConfiguration = value;
   }
   public resetEnforceWorkgroupConfiguration() {
@@ -2008,11 +2008,11 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   }
 
   // publish_cloudwatch_metrics_enabled - computed: false, optional: true, required: false
-  private _publishCloudwatchMetricsEnabled?: boolean | cdktf.IResolvable; 
+  private _publishCloudwatchMetricsEnabled?: boolean | cdktn.IResolvable; 
   public get publishCloudwatchMetricsEnabled() {
     return this.getBooleanAttribute('publish_cloudwatch_metrics_enabled');
   }
-  public set publishCloudwatchMetricsEnabled(value: boolean | cdktf.IResolvable) {
+  public set publishCloudwatchMetricsEnabled(value: boolean | cdktn.IResolvable) {
     this._publishCloudwatchMetricsEnabled = value;
   }
   public resetPublishCloudwatchMetricsEnabled() {
@@ -2024,11 +2024,11 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   }
 
   // requester_pays_enabled - computed: false, optional: true, required: false
-  private _requesterPaysEnabled?: boolean | cdktf.IResolvable; 
+  private _requesterPaysEnabled?: boolean | cdktn.IResolvable; 
   public get requesterPaysEnabled() {
     return this.getBooleanAttribute('requester_pays_enabled');
   }
-  public set requesterPaysEnabled(value: boolean | cdktf.IResolvable) {
+  public set requesterPaysEnabled(value: boolean | cdktn.IResolvable) {
     this._requesterPaysEnabled = value;
   }
   public resetRequesterPaysEnabled() {
@@ -2139,7 +2139,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup aws_athena_workgroup}
 */
-export class AthenaWorkgroup extends cdktf.TerraformResource {
+export class AthenaWorkgroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2150,14 +2150,14 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AthenaWorkgroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AthenaWorkgroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AthenaWorkgroup to import
   * @param importFromId The id of the existing AthenaWorkgroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/athena_workgroup#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AthenaWorkgroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_athena_workgroup", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_athena_workgroup", importId: importFromId, provider });
       }
 
   // ===========
@@ -2224,11 +2224,11 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  private _forceDestroy?: boolean | cdktn.IResolvable; 
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+  public set forceDestroy(value: boolean | cdktn.IResolvable) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -2354,14 +2354,14 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      state: cdktf.stringToTerraform(this._state),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      description: cdktn.stringToTerraform(this._description),
+      force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      state: cdktn.stringToTerraform(this._state),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       configuration: athenaWorkgroupConfigurationToTerraform(this._configuration.internalValue),
     };
   }
@@ -2369,49 +2369,49 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_destroy: {
-        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        value: cdktn.booleanToHclTerraform(this._forceDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       state: {
-        value: cdktf.stringToHclTerraform(this._state),
+        value: cdktn.stringToHclTerraform(this._state),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

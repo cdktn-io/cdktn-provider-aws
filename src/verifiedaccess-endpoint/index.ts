@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VerifiedaccessEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface VerifiedaccessEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_endpoint#application_domain VerifiedaccessEndpoint#application_domain}
   */
@@ -117,32 +117,32 @@ export interface VerifiedaccessEndpointCidrOptionsPortRange {
   readonly toPort: number;
 }
 
-export function verifiedaccessEndpointCidrOptionsPortRangeToTerraform(struct?: VerifiedaccessEndpointCidrOptionsPortRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedaccessEndpointCidrOptionsPortRangeToTerraform(struct?: VerifiedaccessEndpointCidrOptionsPortRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from_port: cdktf.numberToTerraform(struct!.fromPort),
-    to_port: cdktf.numberToTerraform(struct!.toPort),
+    from_port: cdktn.numberToTerraform(struct!.fromPort),
+    to_port: cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
-export function verifiedaccessEndpointCidrOptionsPortRangeToHclTerraform(struct?: VerifiedaccessEndpointCidrOptionsPortRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedaccessEndpointCidrOptionsPortRangeToHclTerraform(struct?: VerifiedaccessEndpointCidrOptionsPortRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from_port: {
-      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      value: cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to_port: {
-      value: cdktf.numberToHclTerraform(struct!.toPort),
+      value: cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -153,9 +153,9 @@ export function verifiedaccessEndpointCidrOptionsPortRangeToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessEndpointCidrOptionsPortRangeOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessEndpointCidrOptionsPortRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -163,11 +163,11 @@ export class VerifiedaccessEndpointCidrOptionsPortRangeOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedaccessEndpointCidrOptionsPortRange | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedaccessEndpointCidrOptionsPortRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -184,14 +184,14 @@ export class VerifiedaccessEndpointCidrOptionsPortRangeOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedaccessEndpointCidrOptionsPortRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedaccessEndpointCidrOptionsPortRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._fromPort = undefined;
       this._toPort = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -230,15 +230,15 @@ export class VerifiedaccessEndpointCidrOptionsPortRangeOutputReference extends c
   }
 }
 
-export class VerifiedaccessEndpointCidrOptionsPortRangeList extends cdktf.ComplexList {
-  public internalValue? : VerifiedaccessEndpointCidrOptionsPortRange[] | cdktf.IResolvable
+export class VerifiedaccessEndpointCidrOptionsPortRangeList extends cdktn.ComplexList {
+  public internalValue? : VerifiedaccessEndpointCidrOptionsPortRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -267,49 +267,49 @@ export interface VerifiedaccessEndpointCidrOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_endpoint#port_range VerifiedaccessEndpoint#port_range}
   */
-  readonly portRange: VerifiedaccessEndpointCidrOptionsPortRange[] | cdktf.IResolvable;
+  readonly portRange: VerifiedaccessEndpointCidrOptionsPortRange[] | cdktn.IResolvable;
 }
 
 export function verifiedaccessEndpointCidrOptionsToTerraform(struct?: VerifiedaccessEndpointCidrOptionsOutputReference | VerifiedaccessEndpointCidrOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr: cdktf.stringToTerraform(struct!.cidr),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
-    port_range: cdktf.listMapper(verifiedaccessEndpointCidrOptionsPortRangeToTerraform, true)(struct!.portRange),
+    cidr: cdktn.stringToTerraform(struct!.cidr),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
+    port_range: cdktn.listMapper(verifiedaccessEndpointCidrOptionsPortRangeToTerraform, true)(struct!.portRange),
   }
 }
 
 
 export function verifiedaccessEndpointCidrOptionsToHclTerraform(struct?: VerifiedaccessEndpointCidrOptionsOutputReference | VerifiedaccessEndpointCidrOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cidr: {
-      value: cdktf.stringToHclTerraform(struct!.cidr),
+      value: cdktn.stringToHclTerraform(struct!.cidr),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     port_range: {
-      value: cdktf.listMapperHcl(verifiedaccessEndpointCidrOptionsPortRangeToHclTerraform, true)(struct!.portRange),
+      value: cdktn.listMapperHcl(verifiedaccessEndpointCidrOptionsPortRangeToHclTerraform, true)(struct!.portRange),
       isBlock: true,
       type: "set",
       storageClassType: "VerifiedaccessEndpointCidrOptionsPortRangeList",
@@ -320,14 +320,14 @@ export function verifiedaccessEndpointCidrOptionsToHclTerraform(struct?: Verifie
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessEndpointCidrOptionsOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessEndpointCidrOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -402,7 +402,7 @@ export class VerifiedaccessEndpointCidrOptionsOutputReference extends cdktf.Comp
   // subnet_ids - computed: false, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -420,7 +420,7 @@ export class VerifiedaccessEndpointCidrOptionsOutputReference extends cdktf.Comp
   public get portRange() {
     return this._portRange;
   }
-  public putPortRange(value: VerifiedaccessEndpointCidrOptionsPortRange[] | cdktf.IResolvable) {
+  public putPortRange(value: VerifiedaccessEndpointCidrOptionsPortRange[] | cdktn.IResolvable) {
     this._portRange.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -439,32 +439,32 @@ export interface VerifiedaccessEndpointLoadBalancerOptionsPortRange {
   readonly toPort: number;
 }
 
-export function verifiedaccessEndpointLoadBalancerOptionsPortRangeToTerraform(struct?: VerifiedaccessEndpointLoadBalancerOptionsPortRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedaccessEndpointLoadBalancerOptionsPortRangeToTerraform(struct?: VerifiedaccessEndpointLoadBalancerOptionsPortRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from_port: cdktf.numberToTerraform(struct!.fromPort),
-    to_port: cdktf.numberToTerraform(struct!.toPort),
+    from_port: cdktn.numberToTerraform(struct!.fromPort),
+    to_port: cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
-export function verifiedaccessEndpointLoadBalancerOptionsPortRangeToHclTerraform(struct?: VerifiedaccessEndpointLoadBalancerOptionsPortRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedaccessEndpointLoadBalancerOptionsPortRangeToHclTerraform(struct?: VerifiedaccessEndpointLoadBalancerOptionsPortRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from_port: {
-      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      value: cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to_port: {
-      value: cdktf.numberToHclTerraform(struct!.toPort),
+      value: cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -475,9 +475,9 @@ export function verifiedaccessEndpointLoadBalancerOptionsPortRangeToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessEndpointLoadBalancerOptionsPortRangeOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessEndpointLoadBalancerOptionsPortRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -485,11 +485,11 @@ export class VerifiedaccessEndpointLoadBalancerOptionsPortRangeOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedaccessEndpointLoadBalancerOptionsPortRange | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedaccessEndpointLoadBalancerOptionsPortRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -506,14 +506,14 @@ export class VerifiedaccessEndpointLoadBalancerOptionsPortRangeOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedaccessEndpointLoadBalancerOptionsPortRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedaccessEndpointLoadBalancerOptionsPortRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._fromPort = undefined;
       this._toPort = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -552,15 +552,15 @@ export class VerifiedaccessEndpointLoadBalancerOptionsPortRangeOutputReference e
   }
 }
 
-export class VerifiedaccessEndpointLoadBalancerOptionsPortRangeList extends cdktf.ComplexList {
-  public internalValue? : VerifiedaccessEndpointLoadBalancerOptionsPortRange[] | cdktf.IResolvable
+export class VerifiedaccessEndpointLoadBalancerOptionsPortRangeList extends cdktn.ComplexList {
+  public internalValue? : VerifiedaccessEndpointLoadBalancerOptionsPortRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -593,56 +593,56 @@ export interface VerifiedaccessEndpointLoadBalancerOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_endpoint#port_range VerifiedaccessEndpoint#port_range}
   */
-  readonly portRange?: VerifiedaccessEndpointLoadBalancerOptionsPortRange[] | cdktf.IResolvable;
+  readonly portRange?: VerifiedaccessEndpointLoadBalancerOptionsPortRange[] | cdktn.IResolvable;
 }
 
 export function verifiedaccessEndpointLoadBalancerOptionsToTerraform(struct?: VerifiedaccessEndpointLoadBalancerOptionsOutputReference | VerifiedaccessEndpointLoadBalancerOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    load_balancer_arn: cdktf.stringToTerraform(struct!.loadBalancerArn),
-    port: cdktf.numberToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
-    port_range: cdktf.listMapper(verifiedaccessEndpointLoadBalancerOptionsPortRangeToTerraform, true)(struct!.portRange),
+    load_balancer_arn: cdktn.stringToTerraform(struct!.loadBalancerArn),
+    port: cdktn.numberToTerraform(struct!.port),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
+    port_range: cdktn.listMapper(verifiedaccessEndpointLoadBalancerOptionsPortRangeToTerraform, true)(struct!.portRange),
   }
 }
 
 
 export function verifiedaccessEndpointLoadBalancerOptionsToHclTerraform(struct?: VerifiedaccessEndpointLoadBalancerOptionsOutputReference | VerifiedaccessEndpointLoadBalancerOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     load_balancer_arn: {
-      value: cdktf.stringToHclTerraform(struct!.loadBalancerArn),
+      value: cdktn.stringToHclTerraform(struct!.loadBalancerArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     port_range: {
-      value: cdktf.listMapperHcl(verifiedaccessEndpointLoadBalancerOptionsPortRangeToHclTerraform, true)(struct!.portRange),
+      value: cdktn.listMapperHcl(verifiedaccessEndpointLoadBalancerOptionsPortRangeToHclTerraform, true)(struct!.portRange),
       isBlock: true,
       type: "set",
       storageClassType: "VerifiedaccessEndpointLoadBalancerOptionsPortRangeList",
@@ -653,14 +653,14 @@ export function verifiedaccessEndpointLoadBalancerOptionsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessEndpointLoadBalancerOptionsOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessEndpointLoadBalancerOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -760,7 +760,7 @@ export class VerifiedaccessEndpointLoadBalancerOptionsOutputReference extends cd
   // subnet_ids - computed: false, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -778,7 +778,7 @@ export class VerifiedaccessEndpointLoadBalancerOptionsOutputReference extends cd
   public get portRange() {
     return this._portRange;
   }
-  public putPortRange(value: VerifiedaccessEndpointLoadBalancerOptionsPortRange[] | cdktf.IResolvable) {
+  public putPortRange(value: VerifiedaccessEndpointLoadBalancerOptionsPortRange[] | cdktn.IResolvable) {
     this._portRange.internalValue = value;
   }
   public resetPortRange() {
@@ -800,32 +800,32 @@ export interface VerifiedaccessEndpointNetworkInterfaceOptionsPortRange {
   readonly toPort: number;
 }
 
-export function verifiedaccessEndpointNetworkInterfaceOptionsPortRangeToTerraform(struct?: VerifiedaccessEndpointNetworkInterfaceOptionsPortRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedaccessEndpointNetworkInterfaceOptionsPortRangeToTerraform(struct?: VerifiedaccessEndpointNetworkInterfaceOptionsPortRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from_port: cdktf.numberToTerraform(struct!.fromPort),
-    to_port: cdktf.numberToTerraform(struct!.toPort),
+    from_port: cdktn.numberToTerraform(struct!.fromPort),
+    to_port: cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
-export function verifiedaccessEndpointNetworkInterfaceOptionsPortRangeToHclTerraform(struct?: VerifiedaccessEndpointNetworkInterfaceOptionsPortRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedaccessEndpointNetworkInterfaceOptionsPortRangeToHclTerraform(struct?: VerifiedaccessEndpointNetworkInterfaceOptionsPortRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from_port: {
-      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      value: cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to_port: {
-      value: cdktf.numberToHclTerraform(struct!.toPort),
+      value: cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -836,9 +836,9 @@ export function verifiedaccessEndpointNetworkInterfaceOptionsPortRangeToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -846,11 +846,11 @@ export class VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedaccessEndpointNetworkInterfaceOptionsPortRange | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedaccessEndpointNetworkInterfaceOptionsPortRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -867,14 +867,14 @@ export class VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedaccessEndpointNetworkInterfaceOptionsPortRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedaccessEndpointNetworkInterfaceOptionsPortRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._fromPort = undefined;
       this._toPort = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -913,15 +913,15 @@ export class VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeOutputReferen
   }
 }
 
-export class VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeList extends cdktf.ComplexList {
-  public internalValue? : VerifiedaccessEndpointNetworkInterfaceOptionsPortRange[] | cdktf.IResolvable
+export class VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeList extends cdktn.ComplexList {
+  public internalValue? : VerifiedaccessEndpointNetworkInterfaceOptionsPortRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -950,49 +950,49 @@ export interface VerifiedaccessEndpointNetworkInterfaceOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_endpoint#port_range VerifiedaccessEndpoint#port_range}
   */
-  readonly portRange?: VerifiedaccessEndpointNetworkInterfaceOptionsPortRange[] | cdktf.IResolvable;
+  readonly portRange?: VerifiedaccessEndpointNetworkInterfaceOptionsPortRange[] | cdktn.IResolvable;
 }
 
 export function verifiedaccessEndpointNetworkInterfaceOptionsToTerraform(struct?: VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference | VerifiedaccessEndpointNetworkInterfaceOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network_interface_id: cdktf.stringToTerraform(struct!.networkInterfaceId),
-    port: cdktf.numberToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    port_range: cdktf.listMapper(verifiedaccessEndpointNetworkInterfaceOptionsPortRangeToTerraform, true)(struct!.portRange),
+    network_interface_id: cdktn.stringToTerraform(struct!.networkInterfaceId),
+    port: cdktn.numberToTerraform(struct!.port),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    port_range: cdktn.listMapper(verifiedaccessEndpointNetworkInterfaceOptionsPortRangeToTerraform, true)(struct!.portRange),
   }
 }
 
 
 export function verifiedaccessEndpointNetworkInterfaceOptionsToHclTerraform(struct?: VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference | VerifiedaccessEndpointNetworkInterfaceOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network_interface_id: {
-      value: cdktf.stringToHclTerraform(struct!.networkInterfaceId),
+      value: cdktn.stringToHclTerraform(struct!.networkInterfaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port_range: {
-      value: cdktf.listMapperHcl(verifiedaccessEndpointNetworkInterfaceOptionsPortRangeToHclTerraform, true)(struct!.portRange),
+      value: cdktn.listMapperHcl(verifiedaccessEndpointNetworkInterfaceOptionsPortRangeToHclTerraform, true)(struct!.portRange),
       isBlock: true,
       type: "set",
       storageClassType: "VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeList",
@@ -1003,14 +1003,14 @@ export function verifiedaccessEndpointNetworkInterfaceOptionsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1106,7 +1106,7 @@ export class VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference extend
   public get portRange() {
     return this._portRange;
   }
-  public putPortRange(value: VerifiedaccessEndpointNetworkInterfaceOptionsPortRange[] | cdktf.IResolvable) {
+  public putPortRange(value: VerifiedaccessEndpointNetworkInterfaceOptionsPortRange[] | cdktn.IResolvable) {
     this._portRange.internalValue = value;
   }
   public resetPortRange() {
@@ -1149,66 +1149,66 @@ export interface VerifiedaccessEndpointRdsOptions {
 }
 
 export function verifiedaccessEndpointRdsOptionsToTerraform(struct?: VerifiedaccessEndpointRdsOptionsOutputReference | VerifiedaccessEndpointRdsOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.numberToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    rds_db_cluster_arn: cdktf.stringToTerraform(struct!.rdsDbClusterArn),
-    rds_db_instance_arn: cdktf.stringToTerraform(struct!.rdsDbInstanceArn),
-    rds_db_proxy_arn: cdktf.stringToTerraform(struct!.rdsDbProxyArn),
-    rds_endpoint: cdktf.stringToTerraform(struct!.rdsEndpoint),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    port: cdktn.numberToTerraform(struct!.port),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    rds_db_cluster_arn: cdktn.stringToTerraform(struct!.rdsDbClusterArn),
+    rds_db_instance_arn: cdktn.stringToTerraform(struct!.rdsDbInstanceArn),
+    rds_db_proxy_arn: cdktn.stringToTerraform(struct!.rdsDbProxyArn),
+    rds_endpoint: cdktn.stringToTerraform(struct!.rdsEndpoint),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
 
 export function verifiedaccessEndpointRdsOptionsToHclTerraform(struct?: VerifiedaccessEndpointRdsOptionsOutputReference | VerifiedaccessEndpointRdsOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rds_db_cluster_arn: {
-      value: cdktf.stringToHclTerraform(struct!.rdsDbClusterArn),
+      value: cdktn.stringToHclTerraform(struct!.rdsDbClusterArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rds_db_instance_arn: {
-      value: cdktf.stringToHclTerraform(struct!.rdsDbInstanceArn),
+      value: cdktn.stringToHclTerraform(struct!.rdsDbInstanceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rds_db_proxy_arn: {
-      value: cdktf.stringToHclTerraform(struct!.rdsDbProxyArn),
+      value: cdktn.stringToHclTerraform(struct!.rdsDbProxyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rds_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.rdsEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.rdsEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1219,14 +1219,14 @@ export function verifiedaccessEndpointRdsOptionsToHclTerraform(struct?: Verified
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessEndpointRdsOptionsOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessEndpointRdsOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1386,7 +1386,7 @@ export class VerifiedaccessEndpointRdsOptionsOutputReference extends cdktf.Compl
   // subnet_ids - computed: false, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -1403,7 +1403,7 @@ export interface VerifiedaccessEndpointSseSpecification {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_endpoint#customer_managed_key_enabled VerifiedaccessEndpoint#customer_managed_key_enabled}
   */
-  readonly customerManagedKeyEnabled?: boolean | cdktf.IResolvable;
+  readonly customerManagedKeyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_endpoint#kms_key_arn VerifiedaccessEndpoint#kms_key_arn}
   */
@@ -1411,31 +1411,31 @@ export interface VerifiedaccessEndpointSseSpecification {
 }
 
 export function verifiedaccessEndpointSseSpecificationToTerraform(struct?: VerifiedaccessEndpointSseSpecificationOutputReference | VerifiedaccessEndpointSseSpecification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    customer_managed_key_enabled: cdktf.booleanToTerraform(struct!.customerManagedKeyEnabled),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+    customer_managed_key_enabled: cdktn.booleanToTerraform(struct!.customerManagedKeyEnabled),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
   }
 }
 
 
 export function verifiedaccessEndpointSseSpecificationToHclTerraform(struct?: VerifiedaccessEndpointSseSpecificationOutputReference | VerifiedaccessEndpointSseSpecification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     customer_managed_key_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.customerManagedKeyEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.customerManagedKeyEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1446,14 +1446,14 @@ export function verifiedaccessEndpointSseSpecificationToHclTerraform(struct?: Ve
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessEndpointSseSpecificationOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessEndpointSseSpecificationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1485,11 +1485,11 @@ export class VerifiedaccessEndpointSseSpecificationOutputReference extends cdktf
   }
 
   // customer_managed_key_enabled - computed: false, optional: true, required: false
-  private _customerManagedKeyEnabled?: boolean | cdktf.IResolvable; 
+  private _customerManagedKeyEnabled?: boolean | cdktn.IResolvable; 
   public get customerManagedKeyEnabled() {
     return this.getBooleanAttribute('customer_managed_key_enabled');
   }
-  public set customerManagedKeyEnabled(value: boolean | cdktf.IResolvable) {
+  public set customerManagedKeyEnabled(value: boolean | cdktn.IResolvable) {
     this._customerManagedKeyEnabled = value;
   }
   public resetCustomerManagedKeyEnabled() {
@@ -1531,39 +1531,39 @@ export interface VerifiedaccessEndpointTimeouts {
   readonly update?: string;
 }
 
-export function verifiedaccessEndpointTimeoutsToTerraform(struct?: VerifiedaccessEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedaccessEndpointTimeoutsToTerraform(struct?: VerifiedaccessEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function verifiedaccessEndpointTimeoutsToHclTerraform(struct?: VerifiedaccessEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedaccessEndpointTimeoutsToHclTerraform(struct?: VerifiedaccessEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1574,19 +1574,19 @@ export function verifiedaccessEndpointTimeoutsToHclTerraform(struct?: Verifiedac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessEndpointTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VerifiedaccessEndpointTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedaccessEndpointTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1607,7 +1607,7 @@ export class VerifiedaccessEndpointTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedaccessEndpointTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedaccessEndpointTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1615,7 +1615,7 @@ export class VerifiedaccessEndpointTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1680,7 +1680,7 @@ export class VerifiedaccessEndpointTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint}
 */
-export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
+export class VerifiedaccessEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1691,14 +1691,14 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VerifiedaccessEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VerifiedaccessEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedaccessEndpoint to import
   * @param importFromId The id of the existing VerifiedaccessEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedaccessEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedaccess_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedaccess_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -1904,7 +1904,7 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -2069,19 +2069,19 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_domain: cdktf.stringToTerraform(this._applicationDomain),
-      attachment_type: cdktf.stringToTerraform(this._attachmentType),
-      description: cdktf.stringToTerraform(this._description),
-      domain_certificate_arn: cdktf.stringToTerraform(this._domainCertificateArn),
-      endpoint_domain_prefix: cdktf.stringToTerraform(this._endpointDomainPrefix),
-      endpoint_type: cdktf.stringToTerraform(this._endpointType),
-      id: cdktf.stringToTerraform(this._id),
-      policy_document: cdktf.stringToTerraform(this._policyDocument),
-      region: cdktf.stringToTerraform(this._region),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      verified_access_group_id: cdktf.stringToTerraform(this._verifiedAccessGroupId),
+      application_domain: cdktn.stringToTerraform(this._applicationDomain),
+      attachment_type: cdktn.stringToTerraform(this._attachmentType),
+      description: cdktn.stringToTerraform(this._description),
+      domain_certificate_arn: cdktn.stringToTerraform(this._domainCertificateArn),
+      endpoint_domain_prefix: cdktn.stringToTerraform(this._endpointDomainPrefix),
+      endpoint_type: cdktn.stringToTerraform(this._endpointType),
+      id: cdktn.stringToTerraform(this._id),
+      policy_document: cdktn.stringToTerraform(this._policyDocument),
+      region: cdktn.stringToTerraform(this._region),
+      security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupIds),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      verified_access_group_id: cdktn.stringToTerraform(this._verifiedAccessGroupId),
       cidr_options: verifiedaccessEndpointCidrOptionsToTerraform(this._cidrOptions.internalValue),
       load_balancer_options: verifiedaccessEndpointLoadBalancerOptionsToTerraform(this._loadBalancerOptions.internalValue),
       network_interface_options: verifiedaccessEndpointNetworkInterfaceOptionsToTerraform(this._networkInterfaceOptions.internalValue),
@@ -2094,79 +2094,79 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_domain: {
-        value: cdktf.stringToHclTerraform(this._applicationDomain),
+        value: cdktn.stringToHclTerraform(this._applicationDomain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       attachment_type: {
-        value: cdktf.stringToHclTerraform(this._attachmentType),
+        value: cdktn.stringToHclTerraform(this._attachmentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_certificate_arn: {
-        value: cdktf.stringToHclTerraform(this._domainCertificateArn),
+        value: cdktn.stringToHclTerraform(this._domainCertificateArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_domain_prefix: {
-        value: cdktf.stringToHclTerraform(this._endpointDomainPrefix),
+        value: cdktn.stringToHclTerraform(this._endpointDomainPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_type: {
-        value: cdktf.stringToHclTerraform(this._endpointType),
+        value: cdktn.stringToHclTerraform(this._endpointType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_document: {
-        value: cdktf.stringToHclTerraform(this._policyDocument),
+        value: cdktn.stringToHclTerraform(this._policyDocument),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       verified_access_group_id: {
-        value: cdktf.stringToHclTerraform(this._verifiedAccessGroupId),
+        value: cdktn.stringToHclTerraform(this._verifiedAccessGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

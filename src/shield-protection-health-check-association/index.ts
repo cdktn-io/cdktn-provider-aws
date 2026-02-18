@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ShieldProtectionHealthCheckAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface ShieldProtectionHealthCheckAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/shield_protection_health_check_association#health_check_arn ShieldProtectionHealthCheckAssociation#health_check_arn}
   */
@@ -32,7 +32,7 @@ export interface ShieldProtectionHealthCheckAssociationConfig extends cdktf.Terr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/shield_protection_health_check_association aws_shield_protection_health_check_association}
 */
-export class ShieldProtectionHealthCheckAssociation extends cdktf.TerraformResource {
+export class ShieldProtectionHealthCheckAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class ShieldProtectionHealthCheckAssociation extends cdktf.TerraformResou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ShieldProtectionHealthCheckAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ShieldProtectionHealthCheckAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ShieldProtectionHealthCheckAssociation to import
   * @param importFromId The id of the existing ShieldProtectionHealthCheckAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/shield_protection_health_check_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ShieldProtectionHealthCheckAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_shield_protection_health_check_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_shield_protection_health_check_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -137,28 +137,28 @@ export class ShieldProtectionHealthCheckAssociation extends cdktf.TerraformResou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      health_check_arn: cdktf.stringToTerraform(this._healthCheckArn),
-      id: cdktf.stringToTerraform(this._id),
-      shield_protection_id: cdktf.stringToTerraform(this._shieldProtectionId),
+      health_check_arn: cdktn.stringToTerraform(this._healthCheckArn),
+      id: cdktn.stringToTerraform(this._id),
+      shield_protection_id: cdktn.stringToTerraform(this._shieldProtectionId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       health_check_arn: {
-        value: cdktf.stringToHclTerraform(this._healthCheckArn),
+        value: cdktn.stringToHclTerraform(this._healthCheckArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       shield_protection_id: {
-        value: cdktf.stringToHclTerraform(this._shieldProtectionId),
+        value: cdktn.stringToHclTerraform(this._shieldProtectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

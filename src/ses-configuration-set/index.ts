@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SesConfigurationSetConfig extends cdktf.TerraformMetaArguments {
+export interface SesConfigurationSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_configuration_set#id SesConfigurationSet#id}
   *
@@ -32,11 +32,11 @@ export interface SesConfigurationSetConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_configuration_set#reputation_metrics_enabled SesConfigurationSet#reputation_metrics_enabled}
   */
-  readonly reputationMetricsEnabled?: boolean | cdktf.IResolvable;
+  readonly reputationMetricsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_configuration_set#sending_enabled SesConfigurationSet#sending_enabled}
   */
-  readonly sendingEnabled?: boolean | cdktf.IResolvable;
+  readonly sendingEnabled?: boolean | cdktn.IResolvable;
   /**
   * delivery_options block
   *
@@ -58,24 +58,24 @@ export interface SesConfigurationSetDeliveryOptions {
 }
 
 export function sesConfigurationSetDeliveryOptionsToTerraform(struct?: SesConfigurationSetDeliveryOptionsOutputReference | SesConfigurationSetDeliveryOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tls_policy: cdktf.stringToTerraform(struct!.tlsPolicy),
+    tls_policy: cdktn.stringToTerraform(struct!.tlsPolicy),
   }
 }
 
 
 export function sesConfigurationSetDeliveryOptionsToHclTerraform(struct?: SesConfigurationSetDeliveryOptionsOutputReference | SesConfigurationSetDeliveryOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     tls_policy: {
-      value: cdktf.stringToHclTerraform(struct!.tlsPolicy),
+      value: cdktn.stringToHclTerraform(struct!.tlsPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -86,14 +86,14 @@ export function sesConfigurationSetDeliveryOptionsToHclTerraform(struct?: SesCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SesConfigurationSetDeliveryOptionsOutputReference extends cdktf.ComplexObject {
+export class SesConfigurationSetDeliveryOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -142,24 +142,24 @@ export interface SesConfigurationSetTrackingOptions {
 }
 
 export function sesConfigurationSetTrackingOptionsToTerraform(struct?: SesConfigurationSetTrackingOptionsOutputReference | SesConfigurationSetTrackingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_redirect_domain: cdktf.stringToTerraform(struct!.customRedirectDomain),
+    custom_redirect_domain: cdktn.stringToTerraform(struct!.customRedirectDomain),
   }
 }
 
 
 export function sesConfigurationSetTrackingOptionsToHclTerraform(struct?: SesConfigurationSetTrackingOptionsOutputReference | SesConfigurationSetTrackingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_redirect_domain: {
-      value: cdktf.stringToHclTerraform(struct!.customRedirectDomain),
+      value: cdktn.stringToHclTerraform(struct!.customRedirectDomain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -170,14 +170,14 @@ export function sesConfigurationSetTrackingOptionsToHclTerraform(struct?: SesCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SesConfigurationSetTrackingOptionsOutputReference extends cdktf.ComplexObject {
+export class SesConfigurationSetTrackingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -222,7 +222,7 @@ export class SesConfigurationSetTrackingOptionsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_configuration_set aws_ses_configuration_set}
 */
-export class SesConfigurationSet extends cdktf.TerraformResource {
+export class SesConfigurationSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -233,14 +233,14 @@ export class SesConfigurationSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SesConfigurationSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SesConfigurationSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SesConfigurationSet to import
   * @param importFromId The id of the existing SesConfigurationSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_configuration_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SesConfigurationSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ses_configuration_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ses_configuration_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -339,11 +339,11 @@ export class SesConfigurationSet extends cdktf.TerraformResource {
   }
 
   // reputation_metrics_enabled - computed: false, optional: true, required: false
-  private _reputationMetricsEnabled?: boolean | cdktf.IResolvable; 
+  private _reputationMetricsEnabled?: boolean | cdktn.IResolvable; 
   public get reputationMetricsEnabled() {
     return this.getBooleanAttribute('reputation_metrics_enabled');
   }
-  public set reputationMetricsEnabled(value: boolean | cdktf.IResolvable) {
+  public set reputationMetricsEnabled(value: boolean | cdktn.IResolvable) {
     this._reputationMetricsEnabled = value;
   }
   public resetReputationMetricsEnabled() {
@@ -355,11 +355,11 @@ export class SesConfigurationSet extends cdktf.TerraformResource {
   }
 
   // sending_enabled - computed: false, optional: true, required: false
-  private _sendingEnabled?: boolean | cdktf.IResolvable; 
+  private _sendingEnabled?: boolean | cdktn.IResolvable; 
   public get sendingEnabled() {
     return this.getBooleanAttribute('sending_enabled');
   }
-  public set sendingEnabled(value: boolean | cdktf.IResolvable) {
+  public set sendingEnabled(value: boolean | cdktn.IResolvable) {
     this._sendingEnabled = value;
   }
   public resetSendingEnabled() {
@@ -408,11 +408,11 @@ export class SesConfigurationSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      reputation_metrics_enabled: cdktf.booleanToTerraform(this._reputationMetricsEnabled),
-      sending_enabled: cdktf.booleanToTerraform(this._sendingEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      reputation_metrics_enabled: cdktn.booleanToTerraform(this._reputationMetricsEnabled),
+      sending_enabled: cdktn.booleanToTerraform(this._sendingEnabled),
       delivery_options: sesConfigurationSetDeliveryOptionsToTerraform(this._deliveryOptions.internalValue),
       tracking_options: sesConfigurationSetTrackingOptionsToTerraform(this._trackingOptions.internalValue),
     };
@@ -421,31 +421,31 @@ export class SesConfigurationSet extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reputation_metrics_enabled: {
-        value: cdktf.booleanToHclTerraform(this._reputationMetricsEnabled),
+        value: cdktn.booleanToHclTerraform(this._reputationMetricsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       sending_enabled: {
-        value: cdktf.booleanToHclTerraform(this._sendingEnabled),
+        value: cdktn.booleanToHclTerraform(this._sendingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

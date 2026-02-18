@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LakeformationResourceConfig extends cdktf.TerraformMetaArguments {
+export interface LakeformationResourceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_resource#arn LakeformationResource#arn}
   */
@@ -19,7 +19,7 @@ export interface LakeformationResourceConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_resource#hybrid_access_enabled LakeformationResource#hybrid_access_enabled}
   */
-  readonly hybridAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly hybridAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_resource#id LakeformationResource#id}
   *
@@ -40,21 +40,21 @@ export interface LakeformationResourceConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_resource#use_service_linked_role LakeformationResource#use_service_linked_role}
   */
-  readonly useServiceLinkedRole?: boolean | cdktf.IResolvable;
+  readonly useServiceLinkedRole?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_resource#with_federation LakeformationResource#with_federation}
   */
-  readonly withFederation?: boolean | cdktf.IResolvable;
+  readonly withFederation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_resource#with_privileged_access LakeformationResource#with_privileged_access}
   */
-  readonly withPrivilegedAccess?: boolean | cdktf.IResolvable;
+  readonly withPrivilegedAccess?: boolean | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_resource aws_lakeformation_resource}
 */
-export class LakeformationResource extends cdktf.TerraformResource {
+export class LakeformationResource extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class LakeformationResource extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LakeformationResource resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LakeformationResource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LakeformationResource to import
   * @param importFromId The id of the existing LakeformationResource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_resource#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LakeformationResource to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lakeformation_resource", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lakeformation_resource", importId: importFromId, provider });
       }
 
   // ===========
@@ -130,11 +130,11 @@ export class LakeformationResource extends cdktf.TerraformResource {
   }
 
   // hybrid_access_enabled - computed: true, optional: true, required: false
-  private _hybridAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _hybridAccessEnabled?: boolean | cdktn.IResolvable; 
   public get hybridAccessEnabled() {
     return this.getBooleanAttribute('hybrid_access_enabled');
   }
-  public set hybridAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set hybridAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._hybridAccessEnabled = value;
   }
   public resetHybridAccessEnabled() {
@@ -199,11 +199,11 @@ export class LakeformationResource extends cdktf.TerraformResource {
   }
 
   // use_service_linked_role - computed: false, optional: true, required: false
-  private _useServiceLinkedRole?: boolean | cdktf.IResolvable; 
+  private _useServiceLinkedRole?: boolean | cdktn.IResolvable; 
   public get useServiceLinkedRole() {
     return this.getBooleanAttribute('use_service_linked_role');
   }
-  public set useServiceLinkedRole(value: boolean | cdktf.IResolvable) {
+  public set useServiceLinkedRole(value: boolean | cdktn.IResolvable) {
     this._useServiceLinkedRole = value;
   }
   public resetUseServiceLinkedRole() {
@@ -215,11 +215,11 @@ export class LakeformationResource extends cdktf.TerraformResource {
   }
 
   // with_federation - computed: true, optional: true, required: false
-  private _withFederation?: boolean | cdktf.IResolvable; 
+  private _withFederation?: boolean | cdktn.IResolvable; 
   public get withFederation() {
     return this.getBooleanAttribute('with_federation');
   }
-  public set withFederation(value: boolean | cdktf.IResolvable) {
+  public set withFederation(value: boolean | cdktn.IResolvable) {
     this._withFederation = value;
   }
   public resetWithFederation() {
@@ -231,11 +231,11 @@ export class LakeformationResource extends cdktf.TerraformResource {
   }
 
   // with_privileged_access - computed: true, optional: true, required: false
-  private _withPrivilegedAccess?: boolean | cdktf.IResolvable; 
+  private _withPrivilegedAccess?: boolean | cdktn.IResolvable; 
   public get withPrivilegedAccess() {
     return this.getBooleanAttribute('with_privileged_access');
   }
-  public set withPrivilegedAccess(value: boolean | cdktf.IResolvable) {
+  public set withPrivilegedAccess(value: boolean | cdktn.IResolvable) {
     this._withPrivilegedAccess = value;
   }
   public resetWithPrivilegedAccess() {
@@ -252,63 +252,63 @@ export class LakeformationResource extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: cdktf.stringToTerraform(this._arn),
-      hybrid_access_enabled: cdktf.booleanToTerraform(this._hybridAccessEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      use_service_linked_role: cdktf.booleanToTerraform(this._useServiceLinkedRole),
-      with_federation: cdktf.booleanToTerraform(this._withFederation),
-      with_privileged_access: cdktf.booleanToTerraform(this._withPrivilegedAccess),
+      arn: cdktn.stringToTerraform(this._arn),
+      hybrid_access_enabled: cdktn.booleanToTerraform(this._hybridAccessEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      use_service_linked_role: cdktn.booleanToTerraform(this._useServiceLinkedRole),
+      with_federation: cdktn.booleanToTerraform(this._withFederation),
+      with_privileged_access: cdktn.booleanToTerraform(this._withPrivilegedAccess),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       arn: {
-        value: cdktf.stringToHclTerraform(this._arn),
+        value: cdktn.stringToHclTerraform(this._arn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hybrid_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._hybridAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._hybridAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_service_linked_role: {
-        value: cdktf.booleanToHclTerraform(this._useServiceLinkedRole),
+        value: cdktn.booleanToHclTerraform(this._useServiceLinkedRole),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       with_federation: {
-        value: cdktf.booleanToHclTerraform(this._withFederation),
+        value: cdktn.booleanToHclTerraform(this._withFederation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       with_privileged_access: {
-        value: cdktf.booleanToHclTerraform(this._withPrivilegedAccess),
+        value: cdktn.booleanToHclTerraform(this._withPrivilegedAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

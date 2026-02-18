@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlueDevEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface GlueDevEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_dev_endpoint#arguments GlueDevEndpoint#arguments}
   */
@@ -94,7 +94,7 @@ export interface GlueDevEndpointConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_dev_endpoint aws_glue_dev_endpoint}
 */
-export class GlueDevEndpoint extends cdktf.TerraformResource {
+export class GlueDevEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -105,14 +105,14 @@ export class GlueDevEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlueDevEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlueDevEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlueDevEndpoint to import
   * @param importFromId The id of the existing GlueDevEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_dev_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlueDevEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_dev_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_dev_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -335,7 +335,7 @@ export class GlueDevEndpoint extends cdktf.TerraformResource {
   // public_keys - computed: false, optional: true, required: false
   private _publicKeys?: string[]; 
   public get publicKeys() {
-    return cdktf.Fn.tolist(this.getListAttribute('public_keys'));
+    return cdktn.Fn.tolist(this.getListAttribute('public_keys'));
   }
   public set publicKeys(value: string[]) {
     this._publicKeys = value;
@@ -396,7 +396,7 @@ export class GlueDevEndpoint extends cdktf.TerraformResource {
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -499,133 +499,133 @@ export class GlueDevEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arguments: cdktf.hashMapper(cdktf.stringToTerraform)(this._arguments),
-      extra_jars_s3_path: cdktf.stringToTerraform(this._extraJarsS3Path),
-      extra_python_libs_s3_path: cdktf.stringToTerraform(this._extraPythonLibsS3Path),
-      glue_version: cdktf.stringToTerraform(this._glueVersion),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      number_of_nodes: cdktf.numberToTerraform(this._numberOfNodes),
-      number_of_workers: cdktf.numberToTerraform(this._numberOfWorkers),
-      public_key: cdktf.stringToTerraform(this._publicKey),
-      public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._publicKeys),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      security_configuration: cdktf.stringToTerraform(this._securityConfiguration),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      worker_type: cdktf.stringToTerraform(this._workerType),
+      arguments: cdktn.hashMapper(cdktn.stringToTerraform)(this._arguments),
+      extra_jars_s3_path: cdktn.stringToTerraform(this._extraJarsS3Path),
+      extra_python_libs_s3_path: cdktn.stringToTerraform(this._extraPythonLibsS3Path),
+      glue_version: cdktn.stringToTerraform(this._glueVersion),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      number_of_nodes: cdktn.numberToTerraform(this._numberOfNodes),
+      number_of_workers: cdktn.numberToTerraform(this._numberOfWorkers),
+      public_key: cdktn.stringToTerraform(this._publicKey),
+      public_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._publicKeys),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      security_configuration: cdktn.stringToTerraform(this._securityConfiguration),
+      security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupIds),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      worker_type: cdktn.stringToTerraform(this._workerType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       arguments: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._arguments),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._arguments),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       extra_jars_s3_path: {
-        value: cdktf.stringToHclTerraform(this._extraJarsS3Path),
+        value: cdktn.stringToHclTerraform(this._extraJarsS3Path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       extra_python_libs_s3_path: {
-        value: cdktf.stringToHclTerraform(this._extraPythonLibsS3Path),
+        value: cdktn.stringToHclTerraform(this._extraPythonLibsS3Path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       glue_version: {
-        value: cdktf.stringToHclTerraform(this._glueVersion),
+        value: cdktn.stringToHclTerraform(this._glueVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       number_of_nodes: {
-        value: cdktf.numberToHclTerraform(this._numberOfNodes),
+        value: cdktn.numberToHclTerraform(this._numberOfNodes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       number_of_workers: {
-        value: cdktf.numberToHclTerraform(this._numberOfWorkers),
+        value: cdktn.numberToHclTerraform(this._numberOfWorkers),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       public_key: {
-        value: cdktf.stringToHclTerraform(this._publicKey),
+        value: cdktn.stringToHclTerraform(this._publicKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_keys: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._publicKeys),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._publicKeys),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_configuration: {
-        value: cdktf.stringToHclTerraform(this._securityConfiguration),
+        value: cdktn.stringToHclTerraform(this._securityConfiguration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       worker_type: {
-        value: cdktf.stringToHclTerraform(this._workerType),
+        value: cdktn.stringToHclTerraform(this._workerType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

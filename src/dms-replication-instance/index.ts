@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DmsReplicationInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface DmsReplicationInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_instance#allocated_storage DmsReplicationInstance#allocated_storage}
   */
@@ -19,15 +19,15 @@ export interface DmsReplicationInstanceConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_instance#allow_major_version_upgrade DmsReplicationInstance#allow_major_version_upgrade}
   */
-  readonly allowMajorVersionUpgrade?: boolean | cdktf.IResolvable;
+  readonly allowMajorVersionUpgrade?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_instance#apply_immediately DmsReplicationInstance#apply_immediately}
   */
-  readonly applyImmediately?: boolean | cdktf.IResolvable;
+  readonly applyImmediately?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_instance#auto_minor_version_upgrade DmsReplicationInstance#auto_minor_version_upgrade}
   */
-  readonly autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
+  readonly autoMinorVersionUpgrade?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_instance#availability_zone DmsReplicationInstance#availability_zone}
   */
@@ -54,7 +54,7 @@ export interface DmsReplicationInstanceConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_instance#multi_az DmsReplicationInstance#multi_az}
   */
-  readonly multiAz?: boolean | cdktf.IResolvable;
+  readonly multiAz?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_instance#network_type DmsReplicationInstance#network_type}
   */
@@ -66,7 +66,7 @@ export interface DmsReplicationInstanceConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_instance#publicly_accessible DmsReplicationInstance#publicly_accessible}
   */
-  readonly publiclyAccessible?: boolean | cdktf.IResolvable;
+  readonly publiclyAccessible?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -126,38 +126,38 @@ export interface DmsReplicationInstanceKerberosAuthenticationSettings {
 }
 
 export function dmsReplicationInstanceKerberosAuthenticationSettingsToTerraform(struct?: DmsReplicationInstanceKerberosAuthenticationSettingsOutputReference | DmsReplicationInstanceKerberosAuthenticationSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_cache_secret_iam_arn: cdktf.stringToTerraform(struct!.keyCacheSecretIamArn),
-    key_cache_secret_id: cdktf.stringToTerraform(struct!.keyCacheSecretId),
-    krb5_file_contents: cdktf.stringToTerraform(struct!.krb5FileContents),
+    key_cache_secret_iam_arn: cdktn.stringToTerraform(struct!.keyCacheSecretIamArn),
+    key_cache_secret_id: cdktn.stringToTerraform(struct!.keyCacheSecretId),
+    krb5_file_contents: cdktn.stringToTerraform(struct!.krb5FileContents),
   }
 }
 
 
 export function dmsReplicationInstanceKerberosAuthenticationSettingsToHclTerraform(struct?: DmsReplicationInstanceKerberosAuthenticationSettingsOutputReference | DmsReplicationInstanceKerberosAuthenticationSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_cache_secret_iam_arn: {
-      value: cdktf.stringToHclTerraform(struct!.keyCacheSecretIamArn),
+      value: cdktn.stringToHclTerraform(struct!.keyCacheSecretIamArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_cache_secret_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyCacheSecretId),
+      value: cdktn.stringToHclTerraform(struct!.keyCacheSecretId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     krb5_file_contents: {
-      value: cdktf.stringToHclTerraform(struct!.krb5FileContents),
+      value: cdktn.stringToHclTerraform(struct!.krb5FileContents),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -168,14 +168,14 @@ export function dmsReplicationInstanceKerberosAuthenticationSettingsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DmsReplicationInstanceKerberosAuthenticationSettingsOutputReference extends cdktf.ComplexObject {
+export class DmsReplicationInstanceKerberosAuthenticationSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -266,39 +266,39 @@ export interface DmsReplicationInstanceTimeouts {
   readonly update?: string;
 }
 
-export function dmsReplicationInstanceTimeoutsToTerraform(struct?: DmsReplicationInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dmsReplicationInstanceTimeoutsToTerraform(struct?: DmsReplicationInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dmsReplicationInstanceTimeoutsToHclTerraform(struct?: DmsReplicationInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dmsReplicationInstanceTimeoutsToHclTerraform(struct?: DmsReplicationInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -309,19 +309,19 @@ export function dmsReplicationInstanceTimeoutsToHclTerraform(struct?: DmsReplica
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DmsReplicationInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DmsReplicationInstanceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DmsReplicationInstanceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DmsReplicationInstanceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -342,7 +342,7 @@ export class DmsReplicationInstanceTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DmsReplicationInstanceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DmsReplicationInstanceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -350,7 +350,7 @@ export class DmsReplicationInstanceTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -415,7 +415,7 @@ export class DmsReplicationInstanceTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_instance aws_dms_replication_instance}
 */
-export class DmsReplicationInstance extends cdktf.TerraformResource {
+export class DmsReplicationInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -426,14 +426,14 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DmsReplicationInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DmsReplicationInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DmsReplicationInstance to import
   * @param importFromId The id of the existing DmsReplicationInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DmsReplicationInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dms_replication_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dms_replication_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -508,11 +508,11 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   }
 
   // allow_major_version_upgrade - computed: false, optional: true, required: false
-  private _allowMajorVersionUpgrade?: boolean | cdktf.IResolvable; 
+  private _allowMajorVersionUpgrade?: boolean | cdktn.IResolvable; 
   public get allowMajorVersionUpgrade() {
     return this.getBooleanAttribute('allow_major_version_upgrade');
   }
-  public set allowMajorVersionUpgrade(value: boolean | cdktf.IResolvable) {
+  public set allowMajorVersionUpgrade(value: boolean | cdktn.IResolvable) {
     this._allowMajorVersionUpgrade = value;
   }
   public resetAllowMajorVersionUpgrade() {
@@ -524,11 +524,11 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   }
 
   // apply_immediately - computed: false, optional: true, required: false
-  private _applyImmediately?: boolean | cdktf.IResolvable; 
+  private _applyImmediately?: boolean | cdktn.IResolvable; 
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean | cdktf.IResolvable) {
+  public set applyImmediately(value: boolean | cdktn.IResolvable) {
     this._applyImmediately = value;
   }
   public resetApplyImmediately() {
@@ -540,11 +540,11 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   }
 
   // auto_minor_version_upgrade - computed: true, optional: true, required: false
-  private _autoMinorVersionUpgrade?: boolean | cdktf.IResolvable; 
+  private _autoMinorVersionUpgrade?: boolean | cdktn.IResolvable; 
   public get autoMinorVersionUpgrade() {
     return this.getBooleanAttribute('auto_minor_version_upgrade');
   }
-  public set autoMinorVersionUpgrade(value: boolean | cdktf.IResolvable) {
+  public set autoMinorVersionUpgrade(value: boolean | cdktn.IResolvable) {
     this._autoMinorVersionUpgrade = value;
   }
   public resetAutoMinorVersionUpgrade() {
@@ -636,11 +636,11 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   }
 
   // multi_az - computed: true, optional: true, required: false
-  private _multiAz?: boolean | cdktf.IResolvable; 
+  private _multiAz?: boolean | cdktn.IResolvable; 
   public get multiAz() {
     return this.getBooleanAttribute('multi_az');
   }
-  public set multiAz(value: boolean | cdktf.IResolvable) {
+  public set multiAz(value: boolean | cdktn.IResolvable) {
     this._multiAz = value;
   }
   public resetMultiAz() {
@@ -684,11 +684,11 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   }
 
   // publicly_accessible - computed: true, optional: true, required: false
-  private _publiclyAccessible?: boolean | cdktf.IResolvable; 
+  private _publiclyAccessible?: boolean | cdktn.IResolvable; 
   public get publiclyAccessible() {
     return this.getBooleanAttribute('publicly_accessible');
   }
-  public set publiclyAccessible(value: boolean | cdktf.IResolvable) {
+  public set publiclyAccessible(value: boolean | cdktn.IResolvable) {
     this._publiclyAccessible = value;
   }
   public resetPubliclyAccessible() {
@@ -807,7 +807,7 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[]; 
   public get vpcSecurityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
   }
   public set vpcSecurityGroupIds(value: string[]) {
     this._vpcSecurityGroupIds = value;
@@ -858,26 +858,26 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocated_storage: cdktf.numberToTerraform(this._allocatedStorage),
-      allow_major_version_upgrade: cdktf.booleanToTerraform(this._allowMajorVersionUpgrade),
-      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
-      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      dns_name_servers: cdktf.stringToTerraform(this._dnsNameServers),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
-      multi_az: cdktf.booleanToTerraform(this._multiAz),
-      network_type: cdktf.stringToTerraform(this._networkType),
-      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
-      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
-      region: cdktf.stringToTerraform(this._region),
-      replication_instance_class: cdktf.stringToTerraform(this._replicationInstanceClass),
-      replication_instance_id: cdktf.stringToTerraform(this._replicationInstanceId),
-      replication_subnet_group_id: cdktf.stringToTerraform(this._replicationSubnetGroupId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
+      allocated_storage: cdktn.numberToTerraform(this._allocatedStorage),
+      allow_major_version_upgrade: cdktn.booleanToTerraform(this._allowMajorVersionUpgrade),
+      apply_immediately: cdktn.booleanToTerraform(this._applyImmediately),
+      auto_minor_version_upgrade: cdktn.booleanToTerraform(this._autoMinorVersionUpgrade),
+      availability_zone: cdktn.stringToTerraform(this._availabilityZone),
+      dns_name_servers: cdktn.stringToTerraform(this._dnsNameServers),
+      engine_version: cdktn.stringToTerraform(this._engineVersion),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_arn: cdktn.stringToTerraform(this._kmsKeyArn),
+      multi_az: cdktn.booleanToTerraform(this._multiAz),
+      network_type: cdktn.stringToTerraform(this._networkType),
+      preferred_maintenance_window: cdktn.stringToTerraform(this._preferredMaintenanceWindow),
+      publicly_accessible: cdktn.booleanToTerraform(this._publiclyAccessible),
+      region: cdktn.stringToTerraform(this._region),
+      replication_instance_class: cdktn.stringToTerraform(this._replicationInstanceClass),
+      replication_instance_id: cdktn.stringToTerraform(this._replicationInstanceId),
+      replication_subnet_group_id: cdktn.stringToTerraform(this._replicationSubnetGroupId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      vpc_security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._vpcSecurityGroupIds),
       kerberos_authentication_settings: dmsReplicationInstanceKerberosAuthenticationSettingsToTerraform(this._kerberosAuthenticationSettings.internalValue),
       timeouts: dmsReplicationInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -886,121 +886,121 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allocated_storage: {
-        value: cdktf.numberToHclTerraform(this._allocatedStorage),
+        value: cdktn.numberToHclTerraform(this._allocatedStorage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       allow_major_version_upgrade: {
-        value: cdktf.booleanToHclTerraform(this._allowMajorVersionUpgrade),
+        value: cdktn.booleanToHclTerraform(this._allowMajorVersionUpgrade),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       apply_immediately: {
-        value: cdktf.booleanToHclTerraform(this._applyImmediately),
+        value: cdktn.booleanToHclTerraform(this._applyImmediately),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auto_minor_version_upgrade: {
-        value: cdktf.booleanToHclTerraform(this._autoMinorVersionUpgrade),
+        value: cdktn.booleanToHclTerraform(this._autoMinorVersionUpgrade),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       availability_zone: {
-        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        value: cdktn.stringToHclTerraform(this._availabilityZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dns_name_servers: {
-        value: cdktf.stringToHclTerraform(this._dnsNameServers),
+        value: cdktn.stringToHclTerraform(this._dnsNameServers),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_version: {
-        value: cdktf.stringToHclTerraform(this._engineVersion),
+        value: cdktn.stringToHclTerraform(this._engineVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_arn: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyArn),
+        value: cdktn.stringToHclTerraform(this._kmsKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multi_az: {
-        value: cdktf.booleanToHclTerraform(this._multiAz),
+        value: cdktn.booleanToHclTerraform(this._multiAz),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       network_type: {
-        value: cdktf.stringToHclTerraform(this._networkType),
+        value: cdktn.stringToHclTerraform(this._networkType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_maintenance_window: {
-        value: cdktf.stringToHclTerraform(this._preferredMaintenanceWindow),
+        value: cdktn.stringToHclTerraform(this._preferredMaintenanceWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publicly_accessible: {
-        value: cdktf.booleanToHclTerraform(this._publiclyAccessible),
+        value: cdktn.booleanToHclTerraform(this._publiclyAccessible),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication_instance_class: {
-        value: cdktf.stringToHclTerraform(this._replicationInstanceClass),
+        value: cdktn.stringToHclTerraform(this._replicationInstanceClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication_instance_id: {
-        value: cdktf.stringToHclTerraform(this._replicationInstanceId),
+        value: cdktn.stringToHclTerraform(this._replicationInstanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication_subnet_group_id: {
-        value: cdktf.stringToHclTerraform(this._replicationSubnetGroupId),
+        value: cdktn.stringToHclTerraform(this._replicationSubnetGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vpcSecurityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._vpcSecurityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

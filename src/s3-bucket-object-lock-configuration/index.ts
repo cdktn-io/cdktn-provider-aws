@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3BucketObjectLockConfigurationAConfig extends cdktf.TerraformMetaArguments {
+export interface S3BucketObjectLockConfigurationAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_object_lock_configuration#bucket S3BucketObjectLockConfigurationA#bucket}
   */
@@ -64,38 +64,38 @@ export interface S3BucketObjectLockConfigurationRuleDefaultRetentionA {
 }
 
 export function s3BucketObjectLockConfigurationRuleDefaultRetentionAToTerraform(struct?: S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference | S3BucketObjectLockConfigurationRuleDefaultRetentionA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days: cdktf.numberToTerraform(struct!.days),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    years: cdktf.numberToTerraform(struct!.years),
+    days: cdktn.numberToTerraform(struct!.days),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    years: cdktn.numberToTerraform(struct!.years),
   }
 }
 
 
 export function s3BucketObjectLockConfigurationRuleDefaultRetentionAToHclTerraform(struct?: S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference | S3BucketObjectLockConfigurationRuleDefaultRetentionA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days: {
-      value: cdktf.numberToHclTerraform(struct!.days),
+      value: cdktn.numberToHclTerraform(struct!.days),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     years: {
-      value: cdktf.numberToHclTerraform(struct!.years),
+      value: cdktn.numberToHclTerraform(struct!.years),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -106,14 +106,14 @@ export function s3BucketObjectLockConfigurationRuleDefaultRetentionAToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference extends cdktf.ComplexObject {
+export class S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -208,8 +208,8 @@ export interface S3BucketObjectLockConfigurationRuleA {
 }
 
 export function s3BucketObjectLockConfigurationRuleAToTerraform(struct?: S3BucketObjectLockConfigurationRuleAOutputReference | S3BucketObjectLockConfigurationRuleA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -219,8 +219,8 @@ export function s3BucketObjectLockConfigurationRuleAToTerraform(struct?: S3Bucke
 
 
 export function s3BucketObjectLockConfigurationRuleAToHclTerraform(struct?: S3BucketObjectLockConfigurationRuleAOutputReference | S3BucketObjectLockConfigurationRuleA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -236,14 +236,14 @@ export function s3BucketObjectLockConfigurationRuleAToHclTerraform(struct?: S3Bu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketObjectLockConfigurationRuleAOutputReference extends cdktf.ComplexObject {
+export class S3BucketObjectLockConfigurationRuleAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -285,7 +285,7 @@ export class S3BucketObjectLockConfigurationRuleAOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_object_lock_configuration aws_s3_bucket_object_lock_configuration}
 */
-export class S3BucketObjectLockConfigurationA extends cdktf.TerraformResource {
+export class S3BucketObjectLockConfigurationA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -296,14 +296,14 @@ export class S3BucketObjectLockConfigurationA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3BucketObjectLockConfigurationA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3BucketObjectLockConfigurationA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketObjectLockConfigurationA to import
   * @param importFromId The id of the existing S3BucketObjectLockConfigurationA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_object_lock_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketObjectLockConfigurationA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_object_lock_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_object_lock_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -461,12 +461,12 @@ export class S3BucketObjectLockConfigurationA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
-      id: cdktf.stringToTerraform(this._id),
-      object_lock_enabled: cdktf.stringToTerraform(this._objectLockEnabled),
-      region: cdktf.stringToTerraform(this._region),
-      token: cdktf.stringToTerraform(this._token),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      expected_bucket_owner: cdktn.stringToTerraform(this._expectedBucketOwner),
+      id: cdktn.stringToTerraform(this._id),
+      object_lock_enabled: cdktn.stringToTerraform(this._objectLockEnabled),
+      region: cdktn.stringToTerraform(this._region),
+      token: cdktn.stringToTerraform(this._token),
       rule: s3BucketObjectLockConfigurationRuleAToTerraform(this._rule.internalValue),
     };
   }
@@ -474,37 +474,37 @@ export class S3BucketObjectLockConfigurationA extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expected_bucket_owner: {
-        value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
+        value: cdktn.stringToHclTerraform(this._expectedBucketOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_lock_enabled: {
-        value: cdktf.stringToHclTerraform(this._objectLockEnabled),
+        value: cdktn.stringToHclTerraform(this._objectLockEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token: {
-        value: cdktf.stringToHclTerraform(this._token),
+        value: cdktn.stringToHclTerraform(this._token),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

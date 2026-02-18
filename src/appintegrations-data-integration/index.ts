@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppintegrationsDataIntegrationConfig extends cdktf.TerraformMetaArguments {
+export interface AppintegrationsDataIntegrationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appintegrations_data_integration#description AppintegrationsDataIntegration#description}
   */
@@ -72,38 +72,38 @@ export interface AppintegrationsDataIntegrationScheduleConfig {
 }
 
 export function appintegrationsDataIntegrationScheduleConfigToTerraform(struct?: AppintegrationsDataIntegrationScheduleConfigOutputReference | AppintegrationsDataIntegrationScheduleConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    first_execution_from: cdktf.stringToTerraform(struct!.firstExecutionFrom),
-    object: cdktf.stringToTerraform(struct!.object),
-    schedule_expression: cdktf.stringToTerraform(struct!.scheduleExpression),
+    first_execution_from: cdktn.stringToTerraform(struct!.firstExecutionFrom),
+    object: cdktn.stringToTerraform(struct!.object),
+    schedule_expression: cdktn.stringToTerraform(struct!.scheduleExpression),
   }
 }
 
 
 export function appintegrationsDataIntegrationScheduleConfigToHclTerraform(struct?: AppintegrationsDataIntegrationScheduleConfigOutputReference | AppintegrationsDataIntegrationScheduleConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     first_execution_from: {
-      value: cdktf.stringToHclTerraform(struct!.firstExecutionFrom),
+      value: cdktn.stringToHclTerraform(struct!.firstExecutionFrom),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     object: {
-      value: cdktf.stringToHclTerraform(struct!.object),
+      value: cdktn.stringToHclTerraform(struct!.object),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schedule_expression: {
-      value: cdktf.stringToHclTerraform(struct!.scheduleExpression),
+      value: cdktn.stringToHclTerraform(struct!.scheduleExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -114,14 +114,14 @@ export function appintegrationsDataIntegrationScheduleConfigToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppintegrationsDataIntegrationScheduleConfigOutputReference extends cdktf.ComplexObject {
+export class AppintegrationsDataIntegrationScheduleConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -201,7 +201,7 @@ export class AppintegrationsDataIntegrationScheduleConfigOutputReference extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appintegrations_data_integration aws_appintegrations_data_integration}
 */
-export class AppintegrationsDataIntegration extends cdktf.TerraformResource {
+export class AppintegrationsDataIntegration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -212,14 +212,14 @@ export class AppintegrationsDataIntegration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppintegrationsDataIntegration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppintegrationsDataIntegration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppintegrationsDataIntegration to import
   * @param importFromId The id of the existing AppintegrationsDataIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appintegrations_data_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppintegrationsDataIntegration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appintegrations_data_integration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appintegrations_data_integration", importId: importFromId, provider });
       }
 
   // ===========
@@ -407,14 +407,14 @@ export class AppintegrationsDataIntegration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key: cdktf.stringToTerraform(this._kmsKey),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      source_uri: cdktf.stringToTerraform(this._sourceUri),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key: cdktn.stringToTerraform(this._kmsKey),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      source_uri: cdktn.stringToTerraform(this._sourceUri),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       schedule_config: appintegrationsDataIntegrationScheduleConfigToTerraform(this._scheduleConfig.internalValue),
     };
   }
@@ -422,49 +422,49 @@ export class AppintegrationsDataIntegration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key: {
-        value: cdktf.stringToHclTerraform(this._kmsKey),
+        value: cdktn.stringToHclTerraform(this._kmsKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_uri: {
-        value: cdktf.stringToHclTerraform(this._sourceUri),
+        value: cdktn.stringToHclTerraform(this._sourceUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

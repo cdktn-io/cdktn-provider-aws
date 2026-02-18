@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsAcmCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsAcmCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/acm_certificate#domain DataAwsAcmCertificate#domain}
   */
@@ -30,7 +30,7 @@ export interface DataAwsAcmCertificateConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/acm_certificate#most_recent DataAwsAcmCertificate#most_recent}
   */
-  readonly mostRecent?: boolean | cdktf.IResolvable;
+  readonly mostRecent?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -54,7 +54,7 @@ export interface DataAwsAcmCertificateConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/acm_certificate aws_acm_certificate}
 */
-export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
+export class DataAwsAcmCertificate extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsAcmCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsAcmCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAcmCertificate to import
   * @param importFromId The id of the existing DataAwsAcmCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/acm_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAcmCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_acm_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_acm_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -166,7 +166,7 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
   // key_types - computed: false, optional: true, required: false
   private _keyTypes?: string[]; 
   public get keyTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('key_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('key_types'));
   }
   public set keyTypes(value: string[]) {
     this._keyTypes = value;
@@ -180,11 +180,11 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
   }
 
   // most_recent - computed: false, optional: true, required: false
-  private _mostRecent?: boolean | cdktf.IResolvable; 
+  private _mostRecent?: boolean | cdktn.IResolvable; 
   public get mostRecent() {
     return this.getBooleanAttribute('most_recent');
   }
-  public set mostRecent(value: boolean | cdktf.IResolvable) {
+  public set mostRecent(value: boolean | cdktn.IResolvable) {
     this._mostRecent = value;
   }
   public resetMostRecent() {
@@ -270,63 +270,63 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain: cdktf.stringToTerraform(this._domain),
-      id: cdktf.stringToTerraform(this._id),
-      key_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._keyTypes),
-      most_recent: cdktf.booleanToTerraform(this._mostRecent),
-      region: cdktf.stringToTerraform(this._region),
-      statuses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._statuses),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._types),
+      domain: cdktn.stringToTerraform(this._domain),
+      id: cdktn.stringToTerraform(this._id),
+      key_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._keyTypes),
+      most_recent: cdktn.booleanToTerraform(this._mostRecent),
+      region: cdktn.stringToTerraform(this._region),
+      statuses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._statuses),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._types),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain: {
-        value: cdktf.stringToHclTerraform(this._domain),
+        value: cdktn.stringToHclTerraform(this._domain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._keyTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._keyTypes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       most_recent: {
-        value: cdktf.booleanToHclTerraform(this._mostRecent),
+        value: cdktn.booleanToHclTerraform(this._mostRecent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       statuses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._statuses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._statuses),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._types),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._types),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

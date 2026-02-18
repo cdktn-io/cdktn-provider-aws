@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StoragegatewayNfsFileShareConfig extends cdktf.TerraformMetaArguments {
+export interface StoragegatewayNfsFileShareConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_nfs_file_share#audit_destination_arn StoragegatewayNfsFileShare#audit_destination_arn}
   */
@@ -39,7 +39,7 @@ export interface StoragegatewayNfsFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_nfs_file_share#guess_mime_type_enabled StoragegatewayNfsFileShare#guess_mime_type_enabled}
   */
-  readonly guessMimeTypeEnabled?: boolean | cdktf.IResolvable;
+  readonly guessMimeTypeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_nfs_file_share#id StoragegatewayNfsFileShare#id}
   *
@@ -50,7 +50,7 @@ export interface StoragegatewayNfsFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_nfs_file_share#kms_encrypted StoragegatewayNfsFileShare#kms_encrypted}
   */
-  readonly kmsEncrypted?: boolean | cdktf.IResolvable;
+  readonly kmsEncrypted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_nfs_file_share#kms_key_arn StoragegatewayNfsFileShare#kms_key_arn}
   */
@@ -70,7 +70,7 @@ export interface StoragegatewayNfsFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_nfs_file_share#read_only StoragegatewayNfsFileShare#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -80,7 +80,7 @@ export interface StoragegatewayNfsFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_nfs_file_share#requester_pays StoragegatewayNfsFileShare#requester_pays}
   */
-  readonly requesterPays?: boolean | cdktf.IResolvable;
+  readonly requesterPays?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_nfs_file_share#role_arn StoragegatewayNfsFileShare#role_arn}
   */
@@ -128,24 +128,24 @@ export interface StoragegatewayNfsFileShareCacheAttributes {
 }
 
 export function storagegatewayNfsFileShareCacheAttributesToTerraform(struct?: StoragegatewayNfsFileShareCacheAttributesOutputReference | StoragegatewayNfsFileShareCacheAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cache_stale_timeout_in_seconds: cdktf.numberToTerraform(struct!.cacheStaleTimeoutInSeconds),
+    cache_stale_timeout_in_seconds: cdktn.numberToTerraform(struct!.cacheStaleTimeoutInSeconds),
   }
 }
 
 
 export function storagegatewayNfsFileShareCacheAttributesToHclTerraform(struct?: StoragegatewayNfsFileShareCacheAttributesOutputReference | StoragegatewayNfsFileShareCacheAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cache_stale_timeout_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.cacheStaleTimeoutInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.cacheStaleTimeoutInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -156,14 +156,14 @@ export function storagegatewayNfsFileShareCacheAttributesToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StoragegatewayNfsFileShareCacheAttributesOutputReference extends cdktf.ComplexObject {
+export class StoragegatewayNfsFileShareCacheAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -224,45 +224,45 @@ export interface StoragegatewayNfsFileShareNfsFileShareDefaults {
 }
 
 export function storagegatewayNfsFileShareNfsFileShareDefaultsToTerraform(struct?: StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference | StoragegatewayNfsFileShareNfsFileShareDefaults): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    directory_mode: cdktf.stringToTerraform(struct!.directoryMode),
-    file_mode: cdktf.stringToTerraform(struct!.fileMode),
-    group_id: cdktf.stringToTerraform(struct!.groupId),
-    owner_id: cdktf.stringToTerraform(struct!.ownerId),
+    directory_mode: cdktn.stringToTerraform(struct!.directoryMode),
+    file_mode: cdktn.stringToTerraform(struct!.fileMode),
+    group_id: cdktn.stringToTerraform(struct!.groupId),
+    owner_id: cdktn.stringToTerraform(struct!.ownerId),
   }
 }
 
 
 export function storagegatewayNfsFileShareNfsFileShareDefaultsToHclTerraform(struct?: StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference | StoragegatewayNfsFileShareNfsFileShareDefaults): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     directory_mode: {
-      value: cdktf.stringToHclTerraform(struct!.directoryMode),
+      value: cdktn.stringToHclTerraform(struct!.directoryMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     file_mode: {
-      value: cdktf.stringToHclTerraform(struct!.fileMode),
+      value: cdktn.stringToHclTerraform(struct!.fileMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_id: {
-      value: cdktf.stringToHclTerraform(struct!.groupId),
+      value: cdktn.stringToHclTerraform(struct!.groupId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     owner_id: {
-      value: cdktf.stringToHclTerraform(struct!.ownerId),
+      value: cdktn.stringToHclTerraform(struct!.ownerId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -273,14 +273,14 @@ export function storagegatewayNfsFileShareNfsFileShareDefaultsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference extends cdktf.ComplexObject {
+export class StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -402,39 +402,39 @@ export interface StoragegatewayNfsFileShareTimeouts {
   readonly update?: string;
 }
 
-export function storagegatewayNfsFileShareTimeoutsToTerraform(struct?: StoragegatewayNfsFileShareTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storagegatewayNfsFileShareTimeoutsToTerraform(struct?: StoragegatewayNfsFileShareTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function storagegatewayNfsFileShareTimeoutsToHclTerraform(struct?: StoragegatewayNfsFileShareTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storagegatewayNfsFileShareTimeoutsToHclTerraform(struct?: StoragegatewayNfsFileShareTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -445,19 +445,19 @@ export function storagegatewayNfsFileShareTimeoutsToHclTerraform(struct?: Storag
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StoragegatewayNfsFileShareTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StoragegatewayNfsFileShareTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StoragegatewayNfsFileShareTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StoragegatewayNfsFileShareTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -478,7 +478,7 @@ export class StoragegatewayNfsFileShareTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StoragegatewayNfsFileShareTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StoragegatewayNfsFileShareTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -486,7 +486,7 @@ export class StoragegatewayNfsFileShareTimeoutsOutputReference extends cdktf.Com
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -551,7 +551,7 @@ export class StoragegatewayNfsFileShareTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_nfs_file_share aws_storagegateway_nfs_file_share}
 */
-export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
+export class StoragegatewayNfsFileShare extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -562,14 +562,14 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StoragegatewayNfsFileShare resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StoragegatewayNfsFileShare resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StoragegatewayNfsFileShare to import
   * @param importFromId The id of the existing StoragegatewayNfsFileShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_nfs_file_share#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StoragegatewayNfsFileShare to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_nfs_file_share", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_nfs_file_share", importId: importFromId, provider });
       }
 
   // ===========
@@ -669,7 +669,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   // client_list - computed: false, optional: false, required: true
   private _clientList?: string[]; 
   public get clientList() {
-    return cdktf.Fn.tolist(this.getListAttribute('client_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('client_list'));
   }
   public set clientList(value: string[]) {
     this._clientList = value;
@@ -730,11 +730,11 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // guess_mime_type_enabled - computed: false, optional: true, required: false
-  private _guessMimeTypeEnabled?: boolean | cdktf.IResolvable; 
+  private _guessMimeTypeEnabled?: boolean | cdktn.IResolvable; 
   public get guessMimeTypeEnabled() {
     return this.getBooleanAttribute('guess_mime_type_enabled');
   }
-  public set guessMimeTypeEnabled(value: boolean | cdktf.IResolvable) {
+  public set guessMimeTypeEnabled(value: boolean | cdktn.IResolvable) {
     this._guessMimeTypeEnabled = value;
   }
   public resetGuessMimeTypeEnabled() {
@@ -762,11 +762,11 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // kms_encrypted - computed: false, optional: true, required: false
-  private _kmsEncrypted?: boolean | cdktf.IResolvable; 
+  private _kmsEncrypted?: boolean | cdktn.IResolvable; 
   public get kmsEncrypted() {
     return this.getBooleanAttribute('kms_encrypted');
   }
-  public set kmsEncrypted(value: boolean | cdktf.IResolvable) {
+  public set kmsEncrypted(value: boolean | cdktn.IResolvable) {
     this._kmsEncrypted = value;
   }
   public resetKmsEncrypted() {
@@ -844,11 +844,11 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -876,11 +876,11 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // requester_pays - computed: false, optional: true, required: false
-  private _requesterPays?: boolean | cdktf.IResolvable; 
+  private _requesterPays?: boolean | cdktn.IResolvable; 
   public get requesterPays() {
     return this.getBooleanAttribute('requester_pays');
   }
-  public set requesterPays(value: boolean | cdktf.IResolvable) {
+  public set requesterPays(value: boolean | cdktn.IResolvable) {
     this._requesterPays = value;
   }
   public resetRequesterPays() {
@@ -1022,27 +1022,27 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      audit_destination_arn: cdktf.stringToTerraform(this._auditDestinationArn),
-      bucket_region: cdktf.stringToTerraform(this._bucketRegion),
-      client_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._clientList),
-      default_storage_class: cdktf.stringToTerraform(this._defaultStorageClass),
-      file_share_name: cdktf.stringToTerraform(this._fileShareName),
-      gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
-      guess_mime_type_enabled: cdktf.booleanToTerraform(this._guessMimeTypeEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      kms_encrypted: cdktf.booleanToTerraform(this._kmsEncrypted),
-      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
-      location_arn: cdktf.stringToTerraform(this._locationArn),
-      notification_policy: cdktf.stringToTerraform(this._notificationPolicy),
-      object_acl: cdktf.stringToTerraform(this._objectAcl),
-      read_only: cdktf.booleanToTerraform(this._readOnly),
-      region: cdktf.stringToTerraform(this._region),
-      requester_pays: cdktf.booleanToTerraform(this._requesterPays),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      squash: cdktf.stringToTerraform(this._squash),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_endpoint_dns_name: cdktf.stringToTerraform(this._vpcEndpointDnsName),
+      audit_destination_arn: cdktn.stringToTerraform(this._auditDestinationArn),
+      bucket_region: cdktn.stringToTerraform(this._bucketRegion),
+      client_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._clientList),
+      default_storage_class: cdktn.stringToTerraform(this._defaultStorageClass),
+      file_share_name: cdktn.stringToTerraform(this._fileShareName),
+      gateway_arn: cdktn.stringToTerraform(this._gatewayArn),
+      guess_mime_type_enabled: cdktn.booleanToTerraform(this._guessMimeTypeEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      kms_encrypted: cdktn.booleanToTerraform(this._kmsEncrypted),
+      kms_key_arn: cdktn.stringToTerraform(this._kmsKeyArn),
+      location_arn: cdktn.stringToTerraform(this._locationArn),
+      notification_policy: cdktn.stringToTerraform(this._notificationPolicy),
+      object_acl: cdktn.stringToTerraform(this._objectAcl),
+      read_only: cdktn.booleanToTerraform(this._readOnly),
+      region: cdktn.stringToTerraform(this._region),
+      requester_pays: cdktn.booleanToTerraform(this._requesterPays),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      squash: cdktn.stringToTerraform(this._squash),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      vpc_endpoint_dns_name: cdktn.stringToTerraform(this._vpcEndpointDnsName),
       cache_attributes: storagegatewayNfsFileShareCacheAttributesToTerraform(this._cacheAttributes.internalValue),
       nfs_file_share_defaults: storagegatewayNfsFileShareNfsFileShareDefaultsToTerraform(this._nfsFileShareDefaults.internalValue),
       timeouts: storagegatewayNfsFileShareTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1052,127 +1052,127 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       audit_destination_arn: {
-        value: cdktf.stringToHclTerraform(this._auditDestinationArn),
+        value: cdktn.stringToHclTerraform(this._auditDestinationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bucket_region: {
-        value: cdktf.stringToHclTerraform(this._bucketRegion),
+        value: cdktn.stringToHclTerraform(this._bucketRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._clientList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._clientList),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       default_storage_class: {
-        value: cdktf.stringToHclTerraform(this._defaultStorageClass),
+        value: cdktn.stringToHclTerraform(this._defaultStorageClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file_share_name: {
-        value: cdktf.stringToHclTerraform(this._fileShareName),
+        value: cdktn.stringToHclTerraform(this._fileShareName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_arn: {
-        value: cdktf.stringToHclTerraform(this._gatewayArn),
+        value: cdktn.stringToHclTerraform(this._gatewayArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       guess_mime_type_enabled: {
-        value: cdktf.booleanToHclTerraform(this._guessMimeTypeEnabled),
+        value: cdktn.booleanToHclTerraform(this._guessMimeTypeEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_encrypted: {
-        value: cdktf.booleanToHclTerraform(this._kmsEncrypted),
+        value: cdktn.booleanToHclTerraform(this._kmsEncrypted),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       kms_key_arn: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyArn),
+        value: cdktn.stringToHclTerraform(this._kmsKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location_arn: {
-        value: cdktf.stringToHclTerraform(this._locationArn),
+        value: cdktn.stringToHclTerraform(this._locationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_policy: {
-        value: cdktf.stringToHclTerraform(this._notificationPolicy),
+        value: cdktn.stringToHclTerraform(this._notificationPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_acl: {
-        value: cdktf.stringToHclTerraform(this._objectAcl),
+        value: cdktn.stringToHclTerraform(this._objectAcl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       read_only: {
-        value: cdktf.booleanToHclTerraform(this._readOnly),
+        value: cdktn.booleanToHclTerraform(this._readOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       requester_pays: {
-        value: cdktf.booleanToHclTerraform(this._requesterPays),
+        value: cdktn.booleanToHclTerraform(this._requesterPays),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       squash: {
-        value: cdktf.stringToHclTerraform(this._squash),
+        value: cdktn.stringToHclTerraform(this._squash),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_endpoint_dns_name: {
-        value: cdktf.stringToHclTerraform(this._vpcEndpointDnsName),
+        value: cdktn.stringToHclTerraform(this._vpcEndpointDnsName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsInstancesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsInstancesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/instances#id DataAwsInstances#id}
   *
@@ -38,7 +38,7 @@ export interface DataAwsInstancesConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/instances#filter DataAwsInstances#filter}
   */
-  readonly filter?: DataAwsInstancesFilter[] | cdktf.IResolvable;
+  readonly filter?: DataAwsInstancesFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -57,32 +57,32 @@ export interface DataAwsInstancesFilter {
   readonly values: string[];
 }
 
-export function dataAwsInstancesFilterToTerraform(struct?: DataAwsInstancesFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsInstancesFilterToTerraform(struct?: DataAwsInstancesFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataAwsInstancesFilterToHclTerraform(struct?: DataAwsInstancesFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsInstancesFilterToHclTerraform(struct?: DataAwsInstancesFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -93,9 +93,9 @@ export function dataAwsInstancesFilterToHclTerraform(struct?: DataAwsInstancesFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsInstancesFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsInstancesFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -103,11 +103,11 @@ export class DataAwsInstancesFilterOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsInstancesFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsInstancesFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -124,14 +124,14 @@ export class DataAwsInstancesFilterOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsInstancesFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsInstancesFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -159,7 +159,7 @@ export class DataAwsInstancesFilterOutputReference extends cdktf.ComplexObject {
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -170,15 +170,15 @@ export class DataAwsInstancesFilterOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DataAwsInstancesFilterList extends cdktf.ComplexList {
-  public internalValue? : DataAwsInstancesFilter[] | cdktf.IResolvable
+export class DataAwsInstancesFilterList extends cdktn.ComplexList {
+  public internalValue? : DataAwsInstancesFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -196,25 +196,25 @@ export interface DataAwsInstancesTimeouts {
   readonly read?: string;
 }
 
-export function dataAwsInstancesTimeoutsToTerraform(struct?: DataAwsInstancesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsInstancesTimeoutsToTerraform(struct?: DataAwsInstancesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAwsInstancesTimeoutsToHclTerraform(struct?: DataAwsInstancesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsInstancesTimeoutsToHclTerraform(struct?: DataAwsInstancesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -225,19 +225,19 @@ export function dataAwsInstancesTimeoutsToHclTerraform(struct?: DataAwsInstances
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsInstancesTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAwsInstancesTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAwsInstancesTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsInstancesTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -250,13 +250,13 @@ export class DataAwsInstancesTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsInstancesTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsInstancesTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -287,7 +287,7 @@ export class DataAwsInstancesTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/instances aws_instances}
 */
-export class DataAwsInstances extends cdktf.TerraformDataSource {
+export class DataAwsInstances extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -298,14 +298,14 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsInstances resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsInstances resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsInstances to import
   * @param importFromId The id of the existing DataAwsInstances that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/instances#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsInstances to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_instances", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_instances", importId: importFromId, provider });
       }
 
   // ===========
@@ -371,7 +371,7 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
   // instance_state_names - computed: false, optional: true, required: false
   private _instanceStateNames?: string[]; 
   public get instanceStateNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('instance_state_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('instance_state_names'));
   }
   public set instanceStateNames(value: string[]) {
     this._instanceStateNames = value;
@@ -436,7 +436,7 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: DataAwsInstancesFilter[] | cdktf.IResolvable) {
+  public putFilter(value: DataAwsInstancesFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -469,11 +469,11 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      instance_state_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._instanceStateNames),
-      instance_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._instanceTags),
-      region: cdktf.stringToTerraform(this._region),
-      filter: cdktf.listMapper(dataAwsInstancesFilterToTerraform, true)(this._filter.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      instance_state_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._instanceStateNames),
+      instance_tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._instanceTags),
+      region: cdktn.stringToTerraform(this._region),
+      filter: cdktn.listMapper(dataAwsInstancesFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsInstancesTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -481,31 +481,31 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_state_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._instanceStateNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._instanceStateNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       instance_tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._instanceTags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._instanceTags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter: {
-        value: cdktf.listMapperHcl(dataAwsInstancesFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(dataAwsInstancesFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsInstancesFilterList",

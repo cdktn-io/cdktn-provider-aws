@@ -296,7 +296,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.inspector2Filter.Inspector2Filter.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -378,7 +378,7 @@ public putFilterCriteria(value: IResolvable | Inspector2FilterFilterCriteria[]):
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2Filter.putFilterCriteria.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]
 
 ---
 
@@ -419,7 +419,7 @@ public resetTags(): void
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a Inspector2Filter resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a Inspector2Filter resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -491,7 +491,7 @@ import { inspector2Filter } from '@cdktn/provider-aws'
 inspector2Filter.Inspector2Filter.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a Inspector2Filter resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a Inspector2Filter resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.inspector2Filter.Inspector2Filter.generateConfigForImport.parameter.scope"></a>
 
@@ -521,7 +521,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.inspector2Filter.Inspector2Filter.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the Inspector2Filter to import is found.
 
@@ -532,25 +532,25 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.filterCriteria">filterCriteria</a></code> | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList">Inspector2FilterFilterCriteriaList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.tagsAll">tagsAll</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.tagsAll">tagsAll</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.actionInput">actionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.filterCriteriaInput">filterCriteriaInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.filterCriteriaInput">filterCriteriaInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.reasonInput">reasonInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2Filter.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
@@ -582,7 +582,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -632,7 +632,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -642,7 +642,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -652,7 +652,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -672,7 +672,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -682,7 +682,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -692,7 +692,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -702,7 +702,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -732,7 +732,7 @@ public readonly filterCriteria: Inspector2FilterFilterCriteriaList;
 public readonly tagsAll: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -762,7 +762,7 @@ public readonly descriptionInput: string;
 public readonly filterCriteriaInput: IResolvable | Inspector2FilterFilterCriteria[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]
 
 ---
 
@@ -900,17 +900,17 @@ const inspector2FilterConfig: inspector2Filter.Inspector2FilterConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.action">action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#action Inspector2Filter#action}. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#name Inspector2Filter#name}. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#description Inspector2Filter#description}. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.filterCriteria">filterCriteria</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]</code> | filter_criteria block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.filterCriteria">filterCriteria</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]</code> | filter_criteria block. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.reason">reason</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#reason Inspector2Filter#reason}. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#tags Inspector2Filter#tags}. |
@@ -923,7 +923,7 @@ const inspector2FilterConfig: inspector2Filter.Inspector2FilterConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -933,7 +933,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -943,7 +943,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -953,7 +953,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -963,7 +963,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -973,7 +973,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -983,7 +983,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly filterCriteria: IResolvable | Inspector2FilterFilterCriteria[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]
 
 filter_criteria block.
 
@@ -1089,52 +1089,52 @@ const inspector2FilterFilterCriteria: inspector2Filter.Inspector2FilterFilterCri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.awsAccountId">awsAccountId</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]</code> | aws_account_id block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProjectName">codeRepositoryProjectName</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]</code> | code_repository_project_name block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProviderType">codeRepositoryProviderType</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]</code> | code_repository_provider_type block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorName">codeVulnerabilityDetectorName</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]</code> | code_vulnerability_detector_name block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorTags">codeVulnerabilityDetectorTags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]</code> | code_vulnerability_detector_tags block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityFilePath">codeVulnerabilityFilePath</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]</code> | code_vulnerability_file_path block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentId">componentId</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]</code> | component_id block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentType">componentType</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]</code> | component_type block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceImageId">ec2InstanceImageId</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]</code> | ec2_instance_image_id block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceSubnetId">ec2InstanceSubnetId</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]</code> | ec2_instance_subnet_id block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceVpcId">ec2InstanceVpcId</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]</code> | ec2_instance_vpc_id block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageArchitecture">ecrImageArchitecture</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]</code> | ecr_image_architecture block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageHash">ecrImageHash</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]</code> | ecr_image_hash block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageInUseCount">ecrImageInUseCount</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]</code> | ecr_image_in_use_count block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageLastInUseAt">ecrImageLastInUseAt</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]</code> | ecr_image_last_in_use_at block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImagePushedAt">ecrImagePushedAt</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]</code> | ecr_image_pushed_at block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRegistry">ecrImageRegistry</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]</code> | ecr_image_registry block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRepositoryName">ecrImageRepositoryName</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]</code> | ecr_image_repository_name block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageTags">ecrImageTags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]</code> | ecr_image_tags block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.epssScore">epssScore</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]</code> | epss_score block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.exploitAvailable">exploitAvailable</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]</code> | exploit_available block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingArn">findingArn</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]</code> | finding_arn block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingStatus">findingStatus</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]</code> | finding_status block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingType">findingType</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]</code> | finding_type block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.firstObservedAt">firstObservedAt</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]</code> | first_observed_at block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.fixAvailable">fixAvailable</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]</code> | fix_available block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.inspectorScore">inspectorScore</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]</code> | inspector_score block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionExecutionRoleArn">lambdaFunctionExecutionRoleArn</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]</code> | lambda_function_execution_role_arn block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLastModifiedAt">lambdaFunctionLastModifiedAt</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]</code> | lambda_function_last_modified_at block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLayers">lambdaFunctionLayers</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]</code> | lambda_function_layers block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionName">lambdaFunctionName</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]</code> | lambda_function_name block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionRuntime">lambdaFunctionRuntime</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]</code> | lambda_function_runtime block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lastObservedAt">lastObservedAt</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]</code> | last_observed_at block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.networkProtocol">networkProtocol</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]</code> | network_protocol block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.portRange">portRange</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]</code> | port_range block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.relatedVulnerabilities">relatedVulnerabilities</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]</code> | related_vulnerabilities block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceId">resourceId</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]</code> | resource_id block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceTags">resourceTags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]</code> | resource_tags block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceType">resourceType</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]</code> | resource_type block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.severity">severity</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]</code> | severity block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.title">title</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]</code> | title block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.updatedAt">updatedAt</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]</code> | updated_at block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vendorSeverity">vendorSeverity</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]</code> | vendor_severity block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilityId">vulnerabilityId</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]</code> | vulnerability_id block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilitySource">vulnerabilitySource</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]</code> | vulnerability_source block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerablePackages">vulnerablePackages</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]</code> | vulnerable_packages block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.awsAccountId">awsAccountId</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]</code> | aws_account_id block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProjectName">codeRepositoryProjectName</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]</code> | code_repository_project_name block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProviderType">codeRepositoryProviderType</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]</code> | code_repository_provider_type block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorName">codeVulnerabilityDetectorName</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]</code> | code_vulnerability_detector_name block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorTags">codeVulnerabilityDetectorTags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]</code> | code_vulnerability_detector_tags block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityFilePath">codeVulnerabilityFilePath</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]</code> | code_vulnerability_file_path block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentId">componentId</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]</code> | component_id block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentType">componentType</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]</code> | component_type block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceImageId">ec2InstanceImageId</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]</code> | ec2_instance_image_id block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceSubnetId">ec2InstanceSubnetId</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]</code> | ec2_instance_subnet_id block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceVpcId">ec2InstanceVpcId</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]</code> | ec2_instance_vpc_id block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageArchitecture">ecrImageArchitecture</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]</code> | ecr_image_architecture block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageHash">ecrImageHash</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]</code> | ecr_image_hash block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageInUseCount">ecrImageInUseCount</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]</code> | ecr_image_in_use_count block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageLastInUseAt">ecrImageLastInUseAt</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]</code> | ecr_image_last_in_use_at block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImagePushedAt">ecrImagePushedAt</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]</code> | ecr_image_pushed_at block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRegistry">ecrImageRegistry</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]</code> | ecr_image_registry block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRepositoryName">ecrImageRepositoryName</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]</code> | ecr_image_repository_name block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageTags">ecrImageTags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]</code> | ecr_image_tags block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.epssScore">epssScore</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]</code> | epss_score block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.exploitAvailable">exploitAvailable</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]</code> | exploit_available block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingArn">findingArn</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]</code> | finding_arn block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingStatus">findingStatus</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]</code> | finding_status block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingType">findingType</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]</code> | finding_type block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.firstObservedAt">firstObservedAt</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]</code> | first_observed_at block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.fixAvailable">fixAvailable</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]</code> | fix_available block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.inspectorScore">inspectorScore</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]</code> | inspector_score block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionExecutionRoleArn">lambdaFunctionExecutionRoleArn</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]</code> | lambda_function_execution_role_arn block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLastModifiedAt">lambdaFunctionLastModifiedAt</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]</code> | lambda_function_last_modified_at block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLayers">lambdaFunctionLayers</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]</code> | lambda_function_layers block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionName">lambdaFunctionName</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]</code> | lambda_function_name block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionRuntime">lambdaFunctionRuntime</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]</code> | lambda_function_runtime block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lastObservedAt">lastObservedAt</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]</code> | last_observed_at block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.networkProtocol">networkProtocol</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]</code> | network_protocol block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.portRange">portRange</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]</code> | port_range block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.relatedVulnerabilities">relatedVulnerabilities</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]</code> | related_vulnerabilities block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceId">resourceId</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]</code> | resource_id block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceTags">resourceTags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]</code> | resource_tags block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceType">resourceType</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]</code> | resource_type block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.severity">severity</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]</code> | severity block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.title">title</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]</code> | title block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.updatedAt">updatedAt</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]</code> | updated_at block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vendorSeverity">vendorSeverity</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]</code> | vendor_severity block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilityId">vulnerabilityId</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]</code> | vulnerability_id block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilitySource">vulnerabilitySource</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]</code> | vulnerability_source block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerablePackages">vulnerablePackages</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]</code> | vulnerable_packages block. |
 
 ---
 
@@ -1144,7 +1144,7 @@ const inspector2FilterFilterCriteria: inspector2Filter.Inspector2FilterFilterCri
 public readonly awsAccountId: IResolvable | Inspector2FilterFilterCriteriaAwsAccountId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]
 
 aws_account_id block.
 
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly codeRepositoryProjectName: IResolvable | Inspector2FilterFilterCriteriaCodeRepositoryProjectName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]
 
 code_repository_project_name block.
 
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly codeRepositoryProviderType: IResolvable | Inspector2FilterFilterCriteriaCodeRepositoryProviderType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]
 
 code_repository_provider_type block.
 
@@ -1186,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly codeVulnerabilityDetectorName: IResolvable | Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]
 
 code_vulnerability_detector_name block.
 
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly codeVulnerabilityDetectorTags: IResolvable | Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]
 
 code_vulnerability_detector_tags block.
 
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly codeVulnerabilityFilePath: IResolvable | Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]
 
 code_vulnerability_file_path block.
 
@@ -1228,7 +1228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly componentId: IResolvable | Inspector2FilterFilterCriteriaComponentId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]
 
 component_id block.
 
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly componentType: IResolvable | Inspector2FilterFilterCriteriaComponentType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]
 
 component_type block.
 
@@ -1256,7 +1256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ec2InstanceImageId: IResolvable | Inspector2FilterFilterCriteriaEc2InstanceImageId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]
 
 ec2_instance_image_id block.
 
@@ -1270,7 +1270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ec2InstanceSubnetId: IResolvable | Inspector2FilterFilterCriteriaEc2InstanceSubnetId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]
 
 ec2_instance_subnet_id block.
 
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ec2InstanceVpcId: IResolvable | Inspector2FilterFilterCriteriaEc2InstanceVpcId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]
 
 ec2_instance_vpc_id block.
 
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ecrImageArchitecture: IResolvable | Inspector2FilterFilterCriteriaEcrImageArchitecture[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]
 
 ecr_image_architecture block.
 
@@ -1312,7 +1312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ecrImageHash: IResolvable | Inspector2FilterFilterCriteriaEcrImageHash[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]
 
 ecr_image_hash block.
 
@@ -1326,7 +1326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ecrImageInUseCount: IResolvable | Inspector2FilterFilterCriteriaEcrImageInUseCount[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]
 
 ecr_image_in_use_count block.
 
@@ -1340,7 +1340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ecrImageLastInUseAt: IResolvable | Inspector2FilterFilterCriteriaEcrImageLastInUseAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]
 
 ecr_image_last_in_use_at block.
 
@@ -1354,7 +1354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ecrImagePushedAt: IResolvable | Inspector2FilterFilterCriteriaEcrImagePushedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]
 
 ecr_image_pushed_at block.
 
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ecrImageRegistry: IResolvable | Inspector2FilterFilterCriteriaEcrImageRegistry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]
 
 ecr_image_registry block.
 
@@ -1382,7 +1382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ecrImageRepositoryName: IResolvable | Inspector2FilterFilterCriteriaEcrImageRepositoryName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]
 
 ecr_image_repository_name block.
 
@@ -1396,7 +1396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ecrImageTags: IResolvable | Inspector2FilterFilterCriteriaEcrImageTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]
 
 ecr_image_tags block.
 
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly epssScore: IResolvable | Inspector2FilterFilterCriteriaEpssScore[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]
 
 epss_score block.
 
@@ -1424,7 +1424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly exploitAvailable: IResolvable | Inspector2FilterFilterCriteriaExploitAvailable[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]
 
 exploit_available block.
 
@@ -1438,7 +1438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly findingArn: IResolvable | Inspector2FilterFilterCriteriaFindingArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]
 
 finding_arn block.
 
@@ -1452,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly findingStatus: IResolvable | Inspector2FilterFilterCriteriaFindingStatus[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]
 
 finding_status block.
 
@@ -1466,7 +1466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly findingType: IResolvable | Inspector2FilterFilterCriteriaFindingType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]
 
 finding_type block.
 
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly firstObservedAt: IResolvable | Inspector2FilterFilterCriteriaFirstObservedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]
 
 first_observed_at block.
 
@@ -1494,7 +1494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly fixAvailable: IResolvable | Inspector2FilterFilterCriteriaFixAvailable[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]
 
 fix_available block.
 
@@ -1508,7 +1508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly inspectorScore: IResolvable | Inspector2FilterFilterCriteriaInspectorScore[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]
 
 inspector_score block.
 
@@ -1522,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly lambdaFunctionExecutionRoleArn: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]
 
 lambda_function_execution_role_arn block.
 
@@ -1536,7 +1536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly lambdaFunctionLastModifiedAt: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]
 
 lambda_function_last_modified_at block.
 
@@ -1550,7 +1550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly lambdaFunctionLayers: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionLayers[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]
 
 lambda_function_layers block.
 
@@ -1564,7 +1564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly lambdaFunctionName: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]
 
 lambda_function_name block.
 
@@ -1578,7 +1578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly lambdaFunctionRuntime: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionRuntime[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]
 
 lambda_function_runtime block.
 
@@ -1592,7 +1592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly lastObservedAt: IResolvable | Inspector2FilterFilterCriteriaLastObservedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]
 
 last_observed_at block.
 
@@ -1606,7 +1606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly networkProtocol: IResolvable | Inspector2FilterFilterCriteriaNetworkProtocol[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]
 
 network_protocol block.
 
@@ -1620,7 +1620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly portRange: IResolvable | Inspector2FilterFilterCriteriaPortRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]
 
 port_range block.
 
@@ -1634,7 +1634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly relatedVulnerabilities: IResolvable | Inspector2FilterFilterCriteriaRelatedVulnerabilities[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]
 
 related_vulnerabilities block.
 
@@ -1648,7 +1648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly resourceId: IResolvable | Inspector2FilterFilterCriteriaResourceId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]
 
 resource_id block.
 
@@ -1662,7 +1662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly resourceTags: IResolvable | Inspector2FilterFilterCriteriaResourceTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]
 
 resource_tags block.
 
@@ -1676,7 +1676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly resourceType: IResolvable | Inspector2FilterFilterCriteriaResourceType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]
 
 resource_type block.
 
@@ -1690,7 +1690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly severity: IResolvable | Inspector2FilterFilterCriteriaSeverity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]
 
 severity block.
 
@@ -1704,7 +1704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly title: IResolvable | Inspector2FilterFilterCriteriaTitle[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]
 
 title block.
 
@@ -1718,7 +1718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly updatedAt: IResolvable | Inspector2FilterFilterCriteriaUpdatedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]
 
 updated_at block.
 
@@ -1732,7 +1732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly vendorSeverity: IResolvable | Inspector2FilterFilterCriteriaVendorSeverity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]
 
 vendor_severity block.
 
@@ -1746,7 +1746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly vulnerabilityId: IResolvable | Inspector2FilterFilterCriteriaVulnerabilityId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]
 
 vulnerability_id block.
 
@@ -1760,7 +1760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly vulnerabilitySource: IResolvable | Inspector2FilterFilterCriteriaVulnerabilitySource[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]
 
 vulnerability_source block.
 
@@ -1774,7 +1774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly vulnerablePackages: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackages[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]
 
 vulnerable_packages block.
 
@@ -3744,14 +3744,14 @@ const inspector2FilterFilterCriteriaVulnerablePackages: inspector2Filter.Inspect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.architecture">architecture</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]</code> | architecture block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.epoch">epoch</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]</code> | epoch block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.filePath">filePath</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]</code> | file_path block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.name">name</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]</code> | name block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.release">release</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]</code> | release block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLambdaLayerArn">sourceLambdaLayerArn</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]</code> | source_lambda_layer_arn block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLayerHash">sourceLayerHash</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]</code> | source_layer_hash block. |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.version">version</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]</code> | version block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.architecture">architecture</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]</code> | architecture block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.epoch">epoch</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]</code> | epoch block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.filePath">filePath</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]</code> | file_path block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.name">name</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]</code> | name block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.release">release</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]</code> | release block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLambdaLayerArn">sourceLambdaLayerArn</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]</code> | source_lambda_layer_arn block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLayerHash">sourceLayerHash</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]</code> | source_layer_hash block. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.version">version</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]</code> | version block. |
 
 ---
 
@@ -3761,7 +3761,7 @@ const inspector2FilterFilterCriteriaVulnerablePackages: inspector2Filter.Inspect
 public readonly architecture: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]
 
 architecture block.
 
@@ -3775,7 +3775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly epoch: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesEpoch[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]
 
 epoch block.
 
@@ -3789,7 +3789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly filePath: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesFilePath[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]
 
 file_path block.
 
@@ -3803,7 +3803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly name: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]
 
 name block.
 
@@ -3817,7 +3817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly release: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesRelease[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]
 
 release block.
 
@@ -3831,7 +3831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly sourceLambdaLayerArn: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]
 
 source_lambda_layer_arn block.
 
@@ -3845,7 +3845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly sourceLayerHash: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]
 
 source_layer_hash block.
 
@@ -3859,7 +3859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly version: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesVersion[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]
 
 version block.
 
@@ -4225,7 +4225,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4233,7 +4233,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4299,7 +4299,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4334,7 +4334,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]</code> | *No description.* |
 
 ---
 
@@ -4368,7 +4368,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaAwsAccountId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]
 
 ---
 
@@ -4385,7 +4385,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4394,7 +4394,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4580,7 +4580,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4605,7 +4605,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a></code> | *No description.* |
 
 ---
 
@@ -4679,7 +4679,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaAwsAccountId;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>
 
 ---
 
@@ -4696,7 +4696,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4704,7 +4704,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4770,7 +4770,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4805,7 +4805,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]</code> | *No description.* |
 
 ---
 
@@ -4839,7 +4839,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaCodeRepositoryProjectName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]
 
 ---
 
@@ -4856,7 +4856,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4865,7 +4865,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5051,7 +5051,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5076,7 +5076,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a></code> | *No description.* |
 
 ---
 
@@ -5150,7 +5150,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaCodeRepositoryProjectName;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>
 
 ---
 
@@ -5167,7 +5167,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5175,7 +5175,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5241,7 +5241,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5276,7 +5276,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]</code> | *No description.* |
 
 ---
 
@@ -5310,7 +5310,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaCodeRepositoryProviderType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]
 
 ---
 
@@ -5327,7 +5327,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5336,7 +5336,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5522,7 +5522,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5547,7 +5547,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a></code> | *No description.* |
 
 ---
 
@@ -5621,7 +5621,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaCodeRepositoryProviderType;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>
 
 ---
 
@@ -5638,7 +5638,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5646,7 +5646,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5712,7 +5712,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5747,7 +5747,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]</code> | *No description.* |
 
 ---
 
@@ -5781,7 +5781,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]
 
 ---
 
@@ -5798,7 +5798,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5807,7 +5807,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5993,7 +5993,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6018,7 +6018,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a></code> | *No description.* |
 
 ---
 
@@ -6092,7 +6092,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>
 
 ---
 
@@ -6109,7 +6109,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6117,7 +6117,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6183,7 +6183,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6218,7 +6218,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]</code> | *No description.* |
 
 ---
 
@@ -6252,7 +6252,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]
 
 ---
 
@@ -6269,7 +6269,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6278,7 +6278,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6464,7 +6464,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6489,7 +6489,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a></code> | *No description.* |
 
 ---
 
@@ -6563,7 +6563,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>
 
 ---
 
@@ -6580,7 +6580,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6588,7 +6588,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6654,7 +6654,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6689,7 +6689,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]</code> | *No description.* |
 
 ---
 
@@ -6723,7 +6723,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]
 
 ---
 
@@ -6740,7 +6740,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6749,7 +6749,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6935,7 +6935,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6960,7 +6960,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a></code> | *No description.* |
 
 ---
 
@@ -7034,7 +7034,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>
 
 ---
 
@@ -7051,7 +7051,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7059,7 +7059,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7125,7 +7125,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7160,7 +7160,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]</code> | *No description.* |
 
 ---
 
@@ -7194,7 +7194,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaComponentId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]
 
 ---
 
@@ -7211,7 +7211,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7220,7 +7220,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7406,7 +7406,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7431,7 +7431,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a></code> | *No description.* |
 
 ---
 
@@ -7505,7 +7505,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaComponentId;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>
 
 ---
 
@@ -7522,7 +7522,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7530,7 +7530,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList(terraformRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7596,7 +7596,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7631,7 +7631,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]</code> | *No description.* |
 
 ---
 
@@ -7665,7 +7665,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaComponentType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]
 
 ---
 
@@ -7682,7 +7682,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7691,7 +7691,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7877,7 +7877,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7902,7 +7902,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a></code> | *No description.* |
 
 ---
 
@@ -7976,7 +7976,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaComponentType;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>
 
 ---
 
@@ -7993,7 +7993,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8001,7 +8001,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8067,7 +8067,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8102,7 +8102,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]</code> | *No description.* |
 
 ---
 
@@ -8136,7 +8136,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEc2InstanceImageId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]
 
 ---
 
@@ -8153,7 +8153,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8162,7 +8162,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputRefer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8348,7 +8348,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8373,7 +8373,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a></code> | *No description.* |
 
 ---
 
@@ -8447,7 +8447,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEc2InstanceImageId;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>
 
 ---
 
@@ -8464,7 +8464,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8472,7 +8472,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList(terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8538,7 +8538,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8573,7 +8573,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]</code> | *No description.* |
 
 ---
 
@@ -8607,7 +8607,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEc2InstanceSubnetId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]
 
 ---
 
@@ -8624,7 +8624,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8633,7 +8633,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputRefe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8819,7 +8819,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8844,7 +8844,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a></code> | *No description.* |
 
 ---
 
@@ -8918,7 +8918,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEc2InstanceSubnetId;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>
 
 ---
 
@@ -8935,7 +8935,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8943,7 +8943,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9009,7 +9009,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9044,7 +9044,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]</code> | *No description.* |
 
 ---
 
@@ -9078,7 +9078,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEc2InstanceVpcId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]
 
 ---
 
@@ -9095,7 +9095,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9104,7 +9104,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReferen
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9290,7 +9290,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9315,7 +9315,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a></code> | *No description.* |
 
 ---
 
@@ -9389,7 +9389,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEc2InstanceVpcId;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>
 
 ---
 
@@ -9406,7 +9406,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9414,7 +9414,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9480,7 +9480,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9515,7 +9515,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]</code> | *No description.* |
 
 ---
 
@@ -9549,7 +9549,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImageArchitecture[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]
 
 ---
 
@@ -9566,7 +9566,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9575,7 +9575,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputRef
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9761,7 +9761,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9786,7 +9786,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a></code> | *No description.* |
 
 ---
 
@@ -9860,7 +9860,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImageArchitecture;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>
 
 ---
 
@@ -9877,7 +9877,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9885,7 +9885,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9951,7 +9951,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9986,7 +9986,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]</code> | *No description.* |
 
 ---
 
@@ -10020,7 +10020,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImageHash[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]
 
 ---
 
@@ -10037,7 +10037,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10046,7 +10046,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10232,7 +10232,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10257,7 +10257,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a></code> | *No description.* |
 
 ---
 
@@ -10331,7 +10331,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImageHash;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>
 
 ---
 
@@ -10348,7 +10348,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10356,7 +10356,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10422,7 +10422,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10457,7 +10457,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]</code> | *No description.* |
 
 ---
 
@@ -10491,7 +10491,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImageInUseCount[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]
 
 ---
 
@@ -10508,7 +10508,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10517,7 +10517,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputRefer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10703,7 +10703,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10728,7 +10728,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.upperInclusiveInput">upperInclusiveInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.lowerInclusive">lowerInclusive</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.upperInclusive">upperInclusive</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a></code> | *No description.* |
 
 ---
 
@@ -10802,7 +10802,7 @@ public readonly upperInclusive: number;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImageInUseCount;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>
 
 ---
 
@@ -10819,7 +10819,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10827,7 +10827,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList(terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10893,7 +10893,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10928,7 +10928,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -10962,7 +10962,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImageLastInUseAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]
 
 ---
 
@@ -10979,7 +10979,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10988,7 +10988,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputRefe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11176,7 +11176,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11213,7 +11213,7 @@ public resetStartInclusive(): void
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.startInclusiveInput">startInclusiveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.endInclusive">endInclusive</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.startInclusive">startInclusive</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a></code> | *No description.* |
 
 ---
 
@@ -11287,7 +11287,7 @@ public readonly startInclusive: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImageLastInUseAt;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>
 
 ---
 
@@ -11304,7 +11304,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11312,7 +11312,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11378,7 +11378,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11413,7 +11413,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -11447,7 +11447,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImagePushedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]
 
 ---
 
@@ -11464,7 +11464,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11473,7 +11473,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReferen
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11661,7 +11661,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11698,7 +11698,7 @@ public resetStartInclusive(): void
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.startInclusiveInput">startInclusiveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.endInclusive">endInclusive</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.startInclusive">startInclusive</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a></code> | *No description.* |
 
 ---
 
@@ -11772,7 +11772,7 @@ public readonly startInclusive: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImagePushedAt;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>
 
 ---
 
@@ -11789,7 +11789,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11797,7 +11797,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11863,7 +11863,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11898,7 +11898,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]</code> | *No description.* |
 
 ---
 
@@ -11932,7 +11932,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImageRegistry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]
 
 ---
 
@@ -11949,7 +11949,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11958,7 +11958,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReferen
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12144,7 +12144,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12169,7 +12169,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a></code> | *No description.* |
 
 ---
 
@@ -12243,7 +12243,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImageRegistry;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>
 
 ---
 
@@ -12260,7 +12260,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12268,7 +12268,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12334,7 +12334,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12369,7 +12369,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]</code> | *No description.* |
 
 ---
 
@@ -12403,7 +12403,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImageRepositoryName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]
 
 ---
 
@@ -12420,7 +12420,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12429,7 +12429,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12615,7 +12615,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12640,7 +12640,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a></code> | *No description.* |
 
 ---
 
@@ -12714,7 +12714,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImageRepositoryName;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>
 
 ---
 
@@ -12731,7 +12731,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12739,7 +12739,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12805,7 +12805,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12840,7 +12840,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]</code> | *No description.* |
 
 ---
 
@@ -12874,7 +12874,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImageTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]
 
 ---
 
@@ -12891,7 +12891,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12900,7 +12900,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13086,7 +13086,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13111,7 +13111,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a></code> | *No description.* |
 
 ---
 
@@ -13185,7 +13185,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEcrImageTags;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>
 
 ---
 
@@ -13202,7 +13202,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13210,7 +13210,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList(terraformResour
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13276,7 +13276,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13311,7 +13311,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]</code> | *No description.* |
 
 ---
 
@@ -13345,7 +13345,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEpssScore[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]
 
 ---
 
@@ -13362,7 +13362,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13371,7 +13371,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13557,7 +13557,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13582,7 +13582,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.upperInclusiveInput">upperInclusiveInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.lowerInclusive">lowerInclusive</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.upperInclusive">upperInclusive</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a></code> | *No description.* |
 
 ---
 
@@ -13656,7 +13656,7 @@ public readonly upperInclusive: number;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaEpssScore;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>
 
 ---
 
@@ -13673,7 +13673,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13681,7 +13681,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13747,7 +13747,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13782,7 +13782,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]</code> | *No description.* |
 
 ---
 
@@ -13816,7 +13816,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaExploitAvailable[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]
 
 ---
 
@@ -13833,7 +13833,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13842,7 +13842,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReferen
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14028,7 +14028,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14053,7 +14053,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a></code> | *No description.* |
 
 ---
 
@@ -14127,7 +14127,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaExploitAvailable;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>
 
 ---
 
@@ -14144,7 +14144,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList(terraformResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14152,7 +14152,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList(terraformResou
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14218,7 +14218,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14253,7 +14253,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]</code> | *No description.* |
 
 ---
 
@@ -14287,7 +14287,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaFindingArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]
 
 ---
 
@@ -14304,7 +14304,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14313,7 +14313,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference(ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14499,7 +14499,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14524,7 +14524,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a></code> | *No description.* |
 
 ---
 
@@ -14598,7 +14598,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaFindingArn;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>
 
 ---
 
@@ -14615,7 +14615,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14623,7 +14623,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList(terraformRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14689,7 +14689,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14724,7 +14724,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]</code> | *No description.* |
 
 ---
 
@@ -14758,7 +14758,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaFindingStatus[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]
 
 ---
 
@@ -14775,7 +14775,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14784,7 +14784,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14970,7 +14970,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14995,7 +14995,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a></code> | *No description.* |
 
 ---
 
@@ -15069,7 +15069,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaFindingStatus;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>
 
 ---
 
@@ -15086,7 +15086,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15094,7 +15094,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15160,7 +15160,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15195,7 +15195,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]</code> | *No description.* |
 
 ---
 
@@ -15229,7 +15229,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaFindingType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]
 
 ---
 
@@ -15246,7 +15246,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15255,7 +15255,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15441,7 +15441,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15466,7 +15466,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a></code> | *No description.* |
 
 ---
 
@@ -15540,7 +15540,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaFindingType;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>
 
 ---
 
@@ -15557,7 +15557,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15565,7 +15565,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList(terraform
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15631,7 +15631,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15666,7 +15666,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -15700,7 +15700,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaFirstObservedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]
 
 ---
 
@@ -15717,7 +15717,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15726,7 +15726,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReferenc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15914,7 +15914,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15951,7 +15951,7 @@ public resetStartInclusive(): void
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.startInclusiveInput">startInclusiveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.endInclusive">endInclusive</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.startInclusive">startInclusive</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -16025,7 +16025,7 @@ public readonly startInclusive: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaFirstObservedAt;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>
 
 ---
 
@@ -16042,7 +16042,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16050,7 +16050,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16116,7 +16116,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16151,7 +16151,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]</code> | *No description.* |
 
 ---
 
@@ -16185,7 +16185,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaFixAvailable[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]
 
 ---
 
@@ -16202,7 +16202,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16211,7 +16211,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16397,7 +16397,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16422,7 +16422,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a></code> | *No description.* |
 
 ---
 
@@ -16496,7 +16496,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaFixAvailable;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>
 
 ---
 
@@ -16513,7 +16513,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16521,7 +16521,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList(terraformR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16587,7 +16587,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16622,7 +16622,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]</code> | *No description.* |
 
 ---
 
@@ -16656,7 +16656,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaInspectorScore[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]
 
 ---
 
@@ -16673,7 +16673,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16682,7 +16682,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16868,7 +16868,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16893,7 +16893,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.upperInclusiveInput">upperInclusiveInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.lowerInclusive">lowerInclusive</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.upperInclusive">upperInclusive</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a></code> | *No description.* |
 
 ---
 
@@ -16967,7 +16967,7 @@ public readonly upperInclusive: number;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaInspectorScore;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>
 
 ---
 
@@ -16984,7 +16984,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleAr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16992,7 +16992,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleAr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17058,7 +17058,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17093,7 +17093,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]</code> | *No description.* |
 
 ---
 
@@ -17127,7 +17127,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]
 
 ---
 
@@ -17144,7 +17144,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleAr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17153,7 +17153,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleAr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17339,7 +17339,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17364,7 +17364,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a></code> | *No description.* |
 
 ---
 
@@ -17438,7 +17438,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>
 
 ---
 
@@ -17455,7 +17455,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17463,7 +17463,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtL
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17529,7 +17529,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17564,7 +17564,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -17598,7 +17598,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]
 
 ---
 
@@ -17615,7 +17615,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17624,7 +17624,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtO
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17812,7 +17812,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17849,7 +17849,7 @@ public resetStartInclusive(): void
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.startInclusiveInput">startInclusiveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.endInclusive">endInclusive</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.startInclusive">startInclusive</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a></code> | *No description.* |
 
 ---
 
@@ -17923,7 +17923,7 @@ public readonly startInclusive: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>
 
 ---
 
@@ -17940,7 +17940,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17948,7 +17948,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18014,7 +18014,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18049,7 +18049,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]</code> | *No description.* |
 
 ---
 
@@ -18083,7 +18083,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionLayers[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]
 
 ---
 
@@ -18100,7 +18100,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -18109,7 +18109,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputRef
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18295,7 +18295,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18320,7 +18320,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a></code> | *No description.* |
 
 ---
 
@@ -18394,7 +18394,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionLayers;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>
 
 ---
 
@@ -18411,7 +18411,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -18419,7 +18419,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18485,7 +18485,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18520,7 +18520,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]</code> | *No description.* |
 
 ---
 
@@ -18554,7 +18554,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]
 
 ---
 
@@ -18571,7 +18571,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -18580,7 +18580,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputRefer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18766,7 +18766,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18791,7 +18791,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a></code> | *No description.* |
 
 ---
 
@@ -18865,7 +18865,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionName;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>
 
 ---
 
@@ -18882,7 +18882,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -18890,7 +18890,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList(ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18956,7 +18956,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18991,7 +18991,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]</code> | *No description.* |
 
 ---
 
@@ -19025,7 +19025,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionRuntime[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]
 
 ---
 
@@ -19042,7 +19042,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19051,7 +19051,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19237,7 +19237,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19262,7 +19262,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a></code> | *No description.* |
 
 ---
 
@@ -19336,7 +19336,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionRuntime;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>
 
 ---
 
@@ -19353,7 +19353,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19361,7 +19361,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList(terraformR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19427,7 +19427,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19462,7 +19462,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -19496,7 +19496,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaLastObservedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]
 
 ---
 
@@ -19513,7 +19513,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19522,7 +19522,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19710,7 +19710,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19747,7 +19747,7 @@ public resetStartInclusive(): void
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.startInclusiveInput">startInclusiveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.endInclusive">endInclusive</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.startInclusive">startInclusive</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -19821,7 +19821,7 @@ public readonly startInclusive: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaLastObservedAt;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>
 
 ---
 
@@ -19838,7 +19838,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaList(terraformResource: IInte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19846,7 +19846,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaList(terraformResource: IInte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19912,7 +19912,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19947,7 +19947,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]</code> | *No description.* |
 
 ---
 
@@ -19981,7 +19981,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteria[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]
 
 ---
 
@@ -19998,7 +19998,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20006,7 +20006,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList(terraform
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20072,7 +20072,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20107,7 +20107,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]</code> | *No description.* |
 
 ---
 
@@ -20141,7 +20141,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaNetworkProtocol[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]
 
 ---
 
@@ -20158,7 +20158,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20167,7 +20167,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReferenc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20353,7 +20353,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20378,7 +20378,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a></code> | *No description.* |
 
 ---
 
@@ -20452,7 +20452,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaNetworkProtocol;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>
 
 ---
 
@@ -20469,7 +20469,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20478,7 +20478,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaOutputReference(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20756,7 +20756,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20778,7 +20778,7 @@ public putAwsAccountId(value: IResolvable | Inspector2FilterFilterCriteriaAwsAcc
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putAwsAccountId.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]
 
 ---
 
@@ -20790,7 +20790,7 @@ public putCodeRepositoryProjectName(value: IResolvable | Inspector2FilterFilterC
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProjectName.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]
 
 ---
 
@@ -20802,7 +20802,7 @@ public putCodeRepositoryProviderType(value: IResolvable | Inspector2FilterFilter
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProviderType.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]
 
 ---
 
@@ -20814,7 +20814,7 @@ public putCodeVulnerabilityDetectorName(value: IResolvable | Inspector2FilterFil
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityDetectorName.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]
 
 ---
 
@@ -20826,7 +20826,7 @@ public putCodeVulnerabilityDetectorTags(value: IResolvable | Inspector2FilterFil
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityDetectorTags.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]
 
 ---
 
@@ -20838,7 +20838,7 @@ public putCodeVulnerabilityFilePath(value: IResolvable | Inspector2FilterFilterC
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityFilePath.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]
 
 ---
 
@@ -20850,7 +20850,7 @@ public putComponentId(value: IResolvable | Inspector2FilterFilterCriteriaCompone
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putComponentId.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]
 
 ---
 
@@ -20862,7 +20862,7 @@ public putComponentType(value: IResolvable | Inspector2FilterFilterCriteriaCompo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putComponentType.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]
 
 ---
 
@@ -20874,7 +20874,7 @@ public putEc2InstanceImageId(value: IResolvable | Inspector2FilterFilterCriteria
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceImageId.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]
 
 ---
 
@@ -20886,7 +20886,7 @@ public putEc2InstanceSubnetId(value: IResolvable | Inspector2FilterFilterCriteri
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceSubnetId.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]
 
 ---
 
@@ -20898,7 +20898,7 @@ public putEc2InstanceVpcId(value: IResolvable | Inspector2FilterFilterCriteriaEc
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceVpcId.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]
 
 ---
 
@@ -20910,7 +20910,7 @@ public putEcrImageArchitecture(value: IResolvable | Inspector2FilterFilterCriter
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageArchitecture.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]
 
 ---
 
@@ -20922,7 +20922,7 @@ public putEcrImageHash(value: IResolvable | Inspector2FilterFilterCriteriaEcrIma
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageHash.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]
 
 ---
 
@@ -20934,7 +20934,7 @@ public putEcrImageInUseCount(value: IResolvable | Inspector2FilterFilterCriteria
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageInUseCount.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]
 
 ---
 
@@ -20946,7 +20946,7 @@ public putEcrImageLastInUseAt(value: IResolvable | Inspector2FilterFilterCriteri
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageLastInUseAt.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]
 
 ---
 
@@ -20958,7 +20958,7 @@ public putEcrImagePushedAt(value: IResolvable | Inspector2FilterFilterCriteriaEc
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImagePushedAt.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]
 
 ---
 
@@ -20970,7 +20970,7 @@ public putEcrImageRegistry(value: IResolvable | Inspector2FilterFilterCriteriaEc
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageRegistry.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]
 
 ---
 
@@ -20982,7 +20982,7 @@ public putEcrImageRepositoryName(value: IResolvable | Inspector2FilterFilterCrit
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageRepositoryName.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]
 
 ---
 
@@ -20994,7 +20994,7 @@ public putEcrImageTags(value: IResolvable | Inspector2FilterFilterCriteriaEcrIma
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageTags.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]
 
 ---
 
@@ -21006,7 +21006,7 @@ public putEpssScore(value: IResolvable | Inspector2FilterFilterCriteriaEpssScore
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEpssScore.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]
 
 ---
 
@@ -21018,7 +21018,7 @@ public putExploitAvailable(value: IResolvable | Inspector2FilterFilterCriteriaEx
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putExploitAvailable.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]
 
 ---
 
@@ -21030,7 +21030,7 @@ public putFindingArn(value: IResolvable | Inspector2FilterFilterCriteriaFindingA
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingArn.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]
 
 ---
 
@@ -21042,7 +21042,7 @@ public putFindingStatus(value: IResolvable | Inspector2FilterFilterCriteriaFindi
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingStatus.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]
 
 ---
 
@@ -21054,7 +21054,7 @@ public putFindingType(value: IResolvable | Inspector2FilterFilterCriteriaFinding
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingType.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]
 
 ---
 
@@ -21066,7 +21066,7 @@ public putFirstObservedAt(value: IResolvable | Inspector2FilterFilterCriteriaFir
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFirstObservedAt.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]
 
 ---
 
@@ -21078,7 +21078,7 @@ public putFixAvailable(value: IResolvable | Inspector2FilterFilterCriteriaFixAva
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFixAvailable.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]
 
 ---
 
@@ -21090,7 +21090,7 @@ public putInspectorScore(value: IResolvable | Inspector2FilterFilterCriteriaInsp
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putInspectorScore.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]
 
 ---
 
@@ -21102,7 +21102,7 @@ public putLambdaFunctionExecutionRoleArn(value: IResolvable | Inspector2FilterFi
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionExecutionRoleArn.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]
 
 ---
 
@@ -21114,7 +21114,7 @@ public putLambdaFunctionLastModifiedAt(value: IResolvable | Inspector2FilterFilt
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionLastModifiedAt.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]
 
 ---
 
@@ -21126,7 +21126,7 @@ public putLambdaFunctionLayers(value: IResolvable | Inspector2FilterFilterCriter
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionLayers.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]
 
 ---
 
@@ -21138,7 +21138,7 @@ public putLambdaFunctionName(value: IResolvable | Inspector2FilterFilterCriteria
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionName.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]
 
 ---
 
@@ -21150,7 +21150,7 @@ public putLambdaFunctionRuntime(value: IResolvable | Inspector2FilterFilterCrite
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionRuntime.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]
 
 ---
 
@@ -21162,7 +21162,7 @@ public putLastObservedAt(value: IResolvable | Inspector2FilterFilterCriteriaLast
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLastObservedAt.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]
 
 ---
 
@@ -21174,7 +21174,7 @@ public putNetworkProtocol(value: IResolvable | Inspector2FilterFilterCriteriaNet
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putNetworkProtocol.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]
 
 ---
 
@@ -21186,7 +21186,7 @@ public putPortRange(value: IResolvable | Inspector2FilterFilterCriteriaPortRange
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putPortRange.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]
 
 ---
 
@@ -21198,7 +21198,7 @@ public putRelatedVulnerabilities(value: IResolvable | Inspector2FilterFilterCrit
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putRelatedVulnerabilities.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]
 
 ---
 
@@ -21210,7 +21210,7 @@ public putResourceId(value: IResolvable | Inspector2FilterFilterCriteriaResource
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceId.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]
 
 ---
 
@@ -21222,7 +21222,7 @@ public putResourceTags(value: IResolvable | Inspector2FilterFilterCriteriaResour
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceTags.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]
 
 ---
 
@@ -21234,7 +21234,7 @@ public putResourceType(value: IResolvable | Inspector2FilterFilterCriteriaResour
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceType.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]
 
 ---
 
@@ -21246,7 +21246,7 @@ public putSeverity(value: IResolvable | Inspector2FilterFilterCriteriaSeverity[]
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putSeverity.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]
 
 ---
 
@@ -21258,7 +21258,7 @@ public putTitle(value: IResolvable | Inspector2FilterFilterCriteriaTitle[]): voi
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putTitle.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]
 
 ---
 
@@ -21270,7 +21270,7 @@ public putUpdatedAt(value: IResolvable | Inspector2FilterFilterCriteriaUpdatedAt
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putUpdatedAt.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]
 
 ---
 
@@ -21282,7 +21282,7 @@ public putVendorSeverity(value: IResolvable | Inspector2FilterFilterCriteriaVend
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVendorSeverity.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]
 
 ---
 
@@ -21294,7 +21294,7 @@ public putVulnerabilityId(value: IResolvable | Inspector2FilterFilterCriteriaVul
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerabilityId.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]
 
 ---
 
@@ -21306,7 +21306,7 @@ public putVulnerabilitySource(value: IResolvable | Inspector2FilterFilterCriteri
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerabilitySource.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]
 
 ---
 
@@ -21318,7 +21318,7 @@ public putVulnerablePackages(value: IResolvable | Inspector2FilterFilterCriteria
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerablePackages.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]
 
 ---
 
@@ -21651,53 +21651,53 @@ public resetVulnerablePackages(): void
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilityId">vulnerabilityId</a></code> | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList">Inspector2FilterFilterCriteriaVulnerabilityIdList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySource">vulnerabilitySource</a></code> | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList">Inspector2FilterFilterCriteriaVulnerabilitySourceList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackages">vulnerablePackages</a></code> | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList">Inspector2FilterFilterCriteriaVulnerablePackagesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.awsAccountIdInput">awsAccountIdInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProjectNameInput">codeRepositoryProjectNameInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProviderTypeInput">codeRepositoryProviderTypeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorNameInput">codeVulnerabilityDetectorNameInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorTagsInput">codeVulnerabilityDetectorTagsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityFilePathInput">codeVulnerabilityFilePathInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentIdInput">componentIdInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentTypeInput">componentTypeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceImageIdInput">ec2InstanceImageIdInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceSubnetIdInput">ec2InstanceSubnetIdInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceVpcIdInput">ec2InstanceVpcIdInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageArchitectureInput">ecrImageArchitectureInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageHashInput">ecrImageHashInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageInUseCountInput">ecrImageInUseCountInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageLastInUseAtInput">ecrImageLastInUseAtInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImagePushedAtInput">ecrImagePushedAtInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRegistryInput">ecrImageRegistryInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRepositoryNameInput">ecrImageRepositoryNameInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageTagsInput">ecrImageTagsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.epssScoreInput">epssScoreInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.exploitAvailableInput">exploitAvailableInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingArnInput">findingArnInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingStatusInput">findingStatusInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingTypeInput">findingTypeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.firstObservedAtInput">firstObservedAtInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.fixAvailableInput">fixAvailableInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.inspectorScoreInput">inspectorScoreInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionExecutionRoleArnInput">lambdaFunctionExecutionRoleArnInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLastModifiedAtInput">lambdaFunctionLastModifiedAtInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLayersInput">lambdaFunctionLayersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionNameInput">lambdaFunctionNameInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionRuntimeInput">lambdaFunctionRuntimeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lastObservedAtInput">lastObservedAtInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.networkProtocolInput">networkProtocolInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.portRangeInput">portRangeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.relatedVulnerabilitiesInput">relatedVulnerabilitiesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceIdInput">resourceIdInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTagsInput">resourceTagsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTypeInput">resourceTypeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.severityInput">severityInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.titleInput">titleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.updatedAtInput">updatedAtInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vendorSeverityInput">vendorSeverityInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilityIdInput">vulnerabilityIdInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySourceInput">vulnerabilitySourceInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackagesInput">vulnerablePackagesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.awsAccountIdInput">awsAccountIdInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProjectNameInput">codeRepositoryProjectNameInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProviderTypeInput">codeRepositoryProviderTypeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorNameInput">codeVulnerabilityDetectorNameInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorTagsInput">codeVulnerabilityDetectorTagsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityFilePathInput">codeVulnerabilityFilePathInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentIdInput">componentIdInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentTypeInput">componentTypeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceImageIdInput">ec2InstanceImageIdInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceSubnetIdInput">ec2InstanceSubnetIdInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceVpcIdInput">ec2InstanceVpcIdInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageArchitectureInput">ecrImageArchitectureInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageHashInput">ecrImageHashInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageInUseCountInput">ecrImageInUseCountInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageLastInUseAtInput">ecrImageLastInUseAtInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImagePushedAtInput">ecrImagePushedAtInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRegistryInput">ecrImageRegistryInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRepositoryNameInput">ecrImageRepositoryNameInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageTagsInput">ecrImageTagsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.epssScoreInput">epssScoreInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.exploitAvailableInput">exploitAvailableInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingArnInput">findingArnInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingStatusInput">findingStatusInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingTypeInput">findingTypeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.firstObservedAtInput">firstObservedAtInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.fixAvailableInput">fixAvailableInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.inspectorScoreInput">inspectorScoreInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionExecutionRoleArnInput">lambdaFunctionExecutionRoleArnInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLastModifiedAtInput">lambdaFunctionLastModifiedAtInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLayersInput">lambdaFunctionLayersInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionNameInput">lambdaFunctionNameInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionRuntimeInput">lambdaFunctionRuntimeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lastObservedAtInput">lastObservedAtInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.networkProtocolInput">networkProtocolInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.portRangeInput">portRangeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.relatedVulnerabilitiesInput">relatedVulnerabilitiesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceIdInput">resourceIdInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTagsInput">resourceTagsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTypeInput">resourceTypeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.severityInput">severityInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.titleInput">titleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.updatedAtInput">updatedAtInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vendorSeverityInput">vendorSeverityInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilityIdInput">vulnerabilityIdInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySourceInput">vulnerabilitySourceInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackagesInput">vulnerablePackagesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a></code> | *No description.* |
 
 ---
 
@@ -22191,7 +22191,7 @@ public readonly vulnerablePackages: Inspector2FilterFilterCriteriaVulnerablePack
 public readonly awsAccountIdInput: IResolvable | Inspector2FilterFilterCriteriaAwsAccountId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]
 
 ---
 
@@ -22201,7 +22201,7 @@ public readonly awsAccountIdInput: IResolvable | Inspector2FilterFilterCriteriaA
 public readonly codeRepositoryProjectNameInput: IResolvable | Inspector2FilterFilterCriteriaCodeRepositoryProjectName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]
 
 ---
 
@@ -22211,7 +22211,7 @@ public readonly codeRepositoryProjectNameInput: IResolvable | Inspector2FilterFi
 public readonly codeRepositoryProviderTypeInput: IResolvable | Inspector2FilterFilterCriteriaCodeRepositoryProviderType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]
 
 ---
 
@@ -22221,7 +22221,7 @@ public readonly codeRepositoryProviderTypeInput: IResolvable | Inspector2FilterF
 public readonly codeVulnerabilityDetectorNameInput: IResolvable | Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]
 
 ---
 
@@ -22231,7 +22231,7 @@ public readonly codeVulnerabilityDetectorNameInput: IResolvable | Inspector2Filt
 public readonly codeVulnerabilityDetectorTagsInput: IResolvable | Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]
 
 ---
 
@@ -22241,7 +22241,7 @@ public readonly codeVulnerabilityDetectorTagsInput: IResolvable | Inspector2Filt
 public readonly codeVulnerabilityFilePathInput: IResolvable | Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]
 
 ---
 
@@ -22251,7 +22251,7 @@ public readonly codeVulnerabilityFilePathInput: IResolvable | Inspector2FilterFi
 public readonly componentIdInput: IResolvable | Inspector2FilterFilterCriteriaComponentId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]
 
 ---
 
@@ -22261,7 +22261,7 @@ public readonly componentIdInput: IResolvable | Inspector2FilterFilterCriteriaCo
 public readonly componentTypeInput: IResolvable | Inspector2FilterFilterCriteriaComponentType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]
 
 ---
 
@@ -22271,7 +22271,7 @@ public readonly componentTypeInput: IResolvable | Inspector2FilterFilterCriteria
 public readonly ec2InstanceImageIdInput: IResolvable | Inspector2FilterFilterCriteriaEc2InstanceImageId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]
 
 ---
 
@@ -22281,7 +22281,7 @@ public readonly ec2InstanceImageIdInput: IResolvable | Inspector2FilterFilterCri
 public readonly ec2InstanceSubnetIdInput: IResolvable | Inspector2FilterFilterCriteriaEc2InstanceSubnetId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]
 
 ---
 
@@ -22291,7 +22291,7 @@ public readonly ec2InstanceSubnetIdInput: IResolvable | Inspector2FilterFilterCr
 public readonly ec2InstanceVpcIdInput: IResolvable | Inspector2FilterFilterCriteriaEc2InstanceVpcId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]
 
 ---
 
@@ -22301,7 +22301,7 @@ public readonly ec2InstanceVpcIdInput: IResolvable | Inspector2FilterFilterCrite
 public readonly ecrImageArchitectureInput: IResolvable | Inspector2FilterFilterCriteriaEcrImageArchitecture[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]
 
 ---
 
@@ -22311,7 +22311,7 @@ public readonly ecrImageArchitectureInput: IResolvable | Inspector2FilterFilterC
 public readonly ecrImageHashInput: IResolvable | Inspector2FilterFilterCriteriaEcrImageHash[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]
 
 ---
 
@@ -22321,7 +22321,7 @@ public readonly ecrImageHashInput: IResolvable | Inspector2FilterFilterCriteriaE
 public readonly ecrImageInUseCountInput: IResolvable | Inspector2FilterFilterCriteriaEcrImageInUseCount[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]
 
 ---
 
@@ -22331,7 +22331,7 @@ public readonly ecrImageInUseCountInput: IResolvable | Inspector2FilterFilterCri
 public readonly ecrImageLastInUseAtInput: IResolvable | Inspector2FilterFilterCriteriaEcrImageLastInUseAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]
 
 ---
 
@@ -22341,7 +22341,7 @@ public readonly ecrImageLastInUseAtInput: IResolvable | Inspector2FilterFilterCr
 public readonly ecrImagePushedAtInput: IResolvable | Inspector2FilterFilterCriteriaEcrImagePushedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]
 
 ---
 
@@ -22351,7 +22351,7 @@ public readonly ecrImagePushedAtInput: IResolvable | Inspector2FilterFilterCrite
 public readonly ecrImageRegistryInput: IResolvable | Inspector2FilterFilterCriteriaEcrImageRegistry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]
 
 ---
 
@@ -22361,7 +22361,7 @@ public readonly ecrImageRegistryInput: IResolvable | Inspector2FilterFilterCrite
 public readonly ecrImageRepositoryNameInput: IResolvable | Inspector2FilterFilterCriteriaEcrImageRepositoryName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]
 
 ---
 
@@ -22371,7 +22371,7 @@ public readonly ecrImageRepositoryNameInput: IResolvable | Inspector2FilterFilte
 public readonly ecrImageTagsInput: IResolvable | Inspector2FilterFilterCriteriaEcrImageTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]
 
 ---
 
@@ -22381,7 +22381,7 @@ public readonly ecrImageTagsInput: IResolvable | Inspector2FilterFilterCriteriaE
 public readonly epssScoreInput: IResolvable | Inspector2FilterFilterCriteriaEpssScore[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]
 
 ---
 
@@ -22391,7 +22391,7 @@ public readonly epssScoreInput: IResolvable | Inspector2FilterFilterCriteriaEpss
 public readonly exploitAvailableInput: IResolvable | Inspector2FilterFilterCriteriaExploitAvailable[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]
 
 ---
 
@@ -22401,7 +22401,7 @@ public readonly exploitAvailableInput: IResolvable | Inspector2FilterFilterCrite
 public readonly findingArnInput: IResolvable | Inspector2FilterFilterCriteriaFindingArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]
 
 ---
 
@@ -22411,7 +22411,7 @@ public readonly findingArnInput: IResolvable | Inspector2FilterFilterCriteriaFin
 public readonly findingStatusInput: IResolvable | Inspector2FilterFilterCriteriaFindingStatus[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]
 
 ---
 
@@ -22421,7 +22421,7 @@ public readonly findingStatusInput: IResolvable | Inspector2FilterFilterCriteria
 public readonly findingTypeInput: IResolvable | Inspector2FilterFilterCriteriaFindingType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]
 
 ---
 
@@ -22431,7 +22431,7 @@ public readonly findingTypeInput: IResolvable | Inspector2FilterFilterCriteriaFi
 public readonly firstObservedAtInput: IResolvable | Inspector2FilterFilterCriteriaFirstObservedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]
 
 ---
 
@@ -22441,7 +22441,7 @@ public readonly firstObservedAtInput: IResolvable | Inspector2FilterFilterCriter
 public readonly fixAvailableInput: IResolvable | Inspector2FilterFilterCriteriaFixAvailable[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]
 
 ---
 
@@ -22451,7 +22451,7 @@ public readonly fixAvailableInput: IResolvable | Inspector2FilterFilterCriteriaF
 public readonly inspectorScoreInput: IResolvable | Inspector2FilterFilterCriteriaInspectorScore[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]
 
 ---
 
@@ -22461,7 +22461,7 @@ public readonly inspectorScoreInput: IResolvable | Inspector2FilterFilterCriteri
 public readonly lambdaFunctionExecutionRoleArnInput: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]
 
 ---
 
@@ -22471,7 +22471,7 @@ public readonly lambdaFunctionExecutionRoleArnInput: IResolvable | Inspector2Fil
 public readonly lambdaFunctionLastModifiedAtInput: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]
 
 ---
 
@@ -22481,7 +22481,7 @@ public readonly lambdaFunctionLastModifiedAtInput: IResolvable | Inspector2Filte
 public readonly lambdaFunctionLayersInput: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionLayers[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]
 
 ---
 
@@ -22491,7 +22491,7 @@ public readonly lambdaFunctionLayersInput: IResolvable | Inspector2FilterFilterC
 public readonly lambdaFunctionNameInput: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]
 
 ---
 
@@ -22501,7 +22501,7 @@ public readonly lambdaFunctionNameInput: IResolvable | Inspector2FilterFilterCri
 public readonly lambdaFunctionRuntimeInput: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionRuntime[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]
 
 ---
 
@@ -22511,7 +22511,7 @@ public readonly lambdaFunctionRuntimeInput: IResolvable | Inspector2FilterFilter
 public readonly lastObservedAtInput: IResolvable | Inspector2FilterFilterCriteriaLastObservedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]
 
 ---
 
@@ -22521,7 +22521,7 @@ public readonly lastObservedAtInput: IResolvable | Inspector2FilterFilterCriteri
 public readonly networkProtocolInput: IResolvable | Inspector2FilterFilterCriteriaNetworkProtocol[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]
 
 ---
 
@@ -22531,7 +22531,7 @@ public readonly networkProtocolInput: IResolvable | Inspector2FilterFilterCriter
 public readonly portRangeInput: IResolvable | Inspector2FilterFilterCriteriaPortRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]
 
 ---
 
@@ -22541,7 +22541,7 @@ public readonly portRangeInput: IResolvable | Inspector2FilterFilterCriteriaPort
 public readonly relatedVulnerabilitiesInput: IResolvable | Inspector2FilterFilterCriteriaRelatedVulnerabilities[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]
 
 ---
 
@@ -22551,7 +22551,7 @@ public readonly relatedVulnerabilitiesInput: IResolvable | Inspector2FilterFilte
 public readonly resourceIdInput: IResolvable | Inspector2FilterFilterCriteriaResourceId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]
 
 ---
 
@@ -22561,7 +22561,7 @@ public readonly resourceIdInput: IResolvable | Inspector2FilterFilterCriteriaRes
 public readonly resourceTagsInput: IResolvable | Inspector2FilterFilterCriteriaResourceTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]
 
 ---
 
@@ -22571,7 +22571,7 @@ public readonly resourceTagsInput: IResolvable | Inspector2FilterFilterCriteriaR
 public readonly resourceTypeInput: IResolvable | Inspector2FilterFilterCriteriaResourceType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]
 
 ---
 
@@ -22581,7 +22581,7 @@ public readonly resourceTypeInput: IResolvable | Inspector2FilterFilterCriteriaR
 public readonly severityInput: IResolvable | Inspector2FilterFilterCriteriaSeverity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]
 
 ---
 
@@ -22591,7 +22591,7 @@ public readonly severityInput: IResolvable | Inspector2FilterFilterCriteriaSever
 public readonly titleInput: IResolvable | Inspector2FilterFilterCriteriaTitle[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]
 
 ---
 
@@ -22601,7 +22601,7 @@ public readonly titleInput: IResolvable | Inspector2FilterFilterCriteriaTitle[];
 public readonly updatedAtInput: IResolvable | Inspector2FilterFilterCriteriaUpdatedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]
 
 ---
 
@@ -22611,7 +22611,7 @@ public readonly updatedAtInput: IResolvable | Inspector2FilterFilterCriteriaUpda
 public readonly vendorSeverityInput: IResolvable | Inspector2FilterFilterCriteriaVendorSeverity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]
 
 ---
 
@@ -22621,7 +22621,7 @@ public readonly vendorSeverityInput: IResolvable | Inspector2FilterFilterCriteri
 public readonly vulnerabilityIdInput: IResolvable | Inspector2FilterFilterCriteriaVulnerabilityId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]
 
 ---
 
@@ -22631,7 +22631,7 @@ public readonly vulnerabilityIdInput: IResolvable | Inspector2FilterFilterCriter
 public readonly vulnerabilitySourceInput: IResolvable | Inspector2FilterFilterCriteriaVulnerabilitySource[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]
 
 ---
 
@@ -22641,7 +22641,7 @@ public readonly vulnerabilitySourceInput: IResolvable | Inspector2FilterFilterCr
 public readonly vulnerablePackagesInput: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackages[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]
 
 ---
 
@@ -22651,7 +22651,7 @@ public readonly vulnerablePackagesInput: IResolvable | Inspector2FilterFilterCri
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteria;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>
 
 ---
 
@@ -22668,7 +22668,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -22676,7 +22676,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList(terraformResour
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22742,7 +22742,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22777,7 +22777,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]</code> | *No description.* |
 
 ---
 
@@ -22811,7 +22811,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaPortRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]
 
 ---
 
@@ -22828,7 +22828,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -22837,7 +22837,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23023,7 +23023,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23048,7 +23048,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.endInclusiveInput">endInclusiveInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.beginInclusive">beginInclusive</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.endInclusive">endInclusive</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a></code> | *No description.* |
 
 ---
 
@@ -23122,7 +23122,7 @@ public readonly endInclusive: number;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaPortRange;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>
 
 ---
 
@@ -23139,7 +23139,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -23147,7 +23147,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23213,7 +23213,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23248,7 +23248,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]</code> | *No description.* |
 
 ---
 
@@ -23282,7 +23282,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaRelatedVulnerabilities[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]
 
 ---
 
@@ -23299,7 +23299,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -23308,7 +23308,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23494,7 +23494,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23519,7 +23519,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a></code> | *No description.* |
 
 ---
 
@@ -23593,7 +23593,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaRelatedVulnerabilities;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>
 
 ---
 
@@ -23610,7 +23610,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList(terraformResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -23618,7 +23618,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList(terraformResou
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23684,7 +23684,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23719,7 +23719,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]</code> | *No description.* |
 
 ---
 
@@ -23753,7 +23753,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaResourceId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]
 
 ---
 
@@ -23770,7 +23770,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -23779,7 +23779,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference(ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23965,7 +23965,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23990,7 +23990,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a></code> | *No description.* |
 
 ---
 
@@ -24064,7 +24064,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaResourceId;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>
 
 ---
 
@@ -24081,7 +24081,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -24089,7 +24089,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24155,7 +24155,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24190,7 +24190,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]</code> | *No description.* |
 
 ---
 
@@ -24224,7 +24224,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaResourceTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]
 
 ---
 
@@ -24241,7 +24241,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24250,7 +24250,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24436,7 +24436,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24463,7 +24463,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a></code> | *No description.* |
 
 ---
 
@@ -24557,7 +24557,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaResourceTags;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>
 
 ---
 
@@ -24574,7 +24574,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -24582,7 +24582,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24648,7 +24648,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24683,7 +24683,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]</code> | *No description.* |
 
 ---
 
@@ -24717,7 +24717,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaResourceType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]
 
 ---
 
@@ -24734,7 +24734,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24743,7 +24743,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24929,7 +24929,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24954,7 +24954,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a></code> | *No description.* |
 
 ---
 
@@ -25028,7 +25028,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaResourceType;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>
 
 ---
 
@@ -25045,7 +25045,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaSeverityList(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25053,7 +25053,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaSeverityList(terraformResourc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25119,7 +25119,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25154,7 +25154,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]</code> | *No description.* |
 
 ---
 
@@ -25188,7 +25188,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaSeverity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]
 
 ---
 
@@ -25205,7 +25205,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -25214,7 +25214,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference(terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25400,7 +25400,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25425,7 +25425,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a></code> | *No description.* |
 
 ---
 
@@ -25499,7 +25499,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaSeverity;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>
 
 ---
 
@@ -25516,7 +25516,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaTitleList(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25524,7 +25524,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaTitleList(terraformResource: 
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25590,7 +25590,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25625,7 +25625,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]</code> | *No description.* |
 
 ---
 
@@ -25659,7 +25659,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaTitle[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]
 
 ---
 
@@ -25676,7 +25676,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -25685,7 +25685,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25871,7 +25871,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25896,7 +25896,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a></code> | *No description.* |
 
 ---
 
@@ -25970,7 +25970,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaTitle;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>
 
 ---
 
@@ -25987,7 +25987,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25995,7 +25995,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList(terraformResour
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26061,7 +26061,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26096,7 +26096,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -26130,7 +26130,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaUpdatedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]
 
 ---
 
@@ -26147,7 +26147,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -26156,7 +26156,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26344,7 +26344,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26381,7 +26381,7 @@ public resetStartInclusive(): void
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.startInclusiveInput">startInclusiveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.endInclusive">endInclusive</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.startInclusive">startInclusive</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -26455,7 +26455,7 @@ public readonly startInclusive: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaUpdatedAt;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>
 
 ---
 
@@ -26472,7 +26472,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -26480,7 +26480,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList(terraformR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26546,7 +26546,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26581,7 +26581,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]</code> | *No description.* |
 
 ---
 
@@ -26615,7 +26615,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVendorSeverity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]
 
 ---
 
@@ -26632,7 +26632,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -26641,7 +26641,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26827,7 +26827,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26852,7 +26852,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a></code> | *No description.* |
 
 ---
 
@@ -26926,7 +26926,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVendorSeverity;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>
 
 ---
 
@@ -26943,7 +26943,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -26951,7 +26951,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList(terraform
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27017,7 +27017,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27052,7 +27052,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]</code> | *No description.* |
 
 ---
 
@@ -27086,7 +27086,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerabilityId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]
 
 ---
 
@@ -27103,7 +27103,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -27112,7 +27112,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReferenc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27298,7 +27298,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27323,7 +27323,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a></code> | *No description.* |
 
 ---
 
@@ -27397,7 +27397,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerabilityId;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>
 
 ---
 
@@ -27414,7 +27414,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -27422,7 +27422,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList(terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27488,7 +27488,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27523,7 +27523,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]</code> | *No description.* |
 
 ---
 
@@ -27557,7 +27557,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerabilitySource[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]
 
 ---
 
@@ -27574,7 +27574,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -27583,7 +27583,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputRefe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27769,7 +27769,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27794,7 +27794,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a></code> | *No description.* |
 
 ---
 
@@ -27868,7 +27868,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerabilitySource;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>
 
 ---
 
@@ -27885,7 +27885,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -27893,7 +27893,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectur
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27959,7 +27959,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27994,7 +27994,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]</code> | *No description.* |
 
 ---
 
@@ -28028,7 +28028,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]
 
 ---
 
@@ -28045,7 +28045,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -28054,7 +28054,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectur
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28240,7 +28240,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28265,7 +28265,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a></code> | *No description.* |
 
 ---
 
@@ -28339,7 +28339,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>
 
 ---
 
@@ -28356,7 +28356,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -28364,7 +28364,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28430,7 +28430,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28465,7 +28465,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]</code> | *No description.* |
 
 ---
 
@@ -28499,7 +28499,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesEpoch[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]
 
 ---
 
@@ -28516,7 +28516,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -28525,7 +28525,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28711,7 +28711,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28736,7 +28736,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.upperInclusiveInput">upperInclusiveInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.lowerInclusive">lowerInclusive</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.upperInclusive">upperInclusive</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a></code> | *No description.* |
 
 ---
 
@@ -28810,7 +28810,7 @@ public readonly upperInclusive: number;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesEpoch;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>
 
 ---
 
@@ -28827,7 +28827,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -28835,7 +28835,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28901,7 +28901,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28936,7 +28936,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]</code> | *No description.* |
 
 ---
 
@@ -28970,7 +28970,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesFilePath[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]
 
 ---
 
@@ -28987,7 +28987,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -28996,7 +28996,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29182,7 +29182,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29207,7 +29207,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a></code> | *No description.* |
 
 ---
 
@@ -29281,7 +29281,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesFilePath;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>
 
 ---
 
@@ -29298,7 +29298,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -29306,7 +29306,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29372,7 +29372,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29407,7 +29407,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]</code> | *No description.* |
 
 ---
 
@@ -29441,7 +29441,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackages[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]
 
 ---
 
@@ -29458,7 +29458,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -29466,7 +29466,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29532,7 +29532,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29567,7 +29567,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]</code> | *No description.* |
 
 ---
 
@@ -29601,7 +29601,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]
 
 ---
 
@@ -29618,7 +29618,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29627,7 +29627,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29813,7 +29813,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29838,7 +29838,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a></code> | *No description.* |
 
 ---
 
@@ -29912,7 +29912,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesName;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>
 
 ---
 
@@ -29929,7 +29929,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29938,7 +29938,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputRefer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30140,7 +30140,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30162,7 +30162,7 @@ public putArchitecture(value: IResolvable | Inspector2FilterFilterCriteriaVulner
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putArchitecture.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]
 
 ---
 
@@ -30174,7 +30174,7 @@ public putEpoch(value: IResolvable | Inspector2FilterFilterCriteriaVulnerablePac
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putEpoch.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]
 
 ---
 
@@ -30186,7 +30186,7 @@ public putFilePath(value: IResolvable | Inspector2FilterFilterCriteriaVulnerable
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putFilePath.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]
 
 ---
 
@@ -30198,7 +30198,7 @@ public putName(value: IResolvable | Inspector2FilterFilterCriteriaVulnerablePack
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putName.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]
 
 ---
 
@@ -30210,7 +30210,7 @@ public putRelease(value: IResolvable | Inspector2FilterFilterCriteriaVulnerableP
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putRelease.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]
 
 ---
 
@@ -30222,7 +30222,7 @@ public putSourceLambdaLayerArn(value: IResolvable | Inspector2FilterFilterCriter
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putSourceLambdaLayerArn.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]
 
 ---
 
@@ -30234,7 +30234,7 @@ public putSourceLayerHash(value: IResolvable | Inspector2FilterFilterCriteriaVul
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putSourceLayerHash.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]
 
 ---
 
@@ -30246,7 +30246,7 @@ public putVersion(value: IResolvable | Inspector2FilterFilterCriteriaVulnerableP
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putVersion.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]
 
 ---
 
@@ -30313,15 +30313,15 @@ public resetVersion(): void
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLambdaLayerArn">sourceLambdaLayerArn</a></code> | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLayerHash">sourceLayerHash</a></code> | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.version">version</a></code> | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList">Inspector2FilterFilterCriteriaVulnerablePackagesVersionList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.architectureInput">architectureInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.epochInput">epochInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.filePathInput">filePathInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.nameInput">nameInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.releaseInput">releaseInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLambdaLayerArnInput">sourceLambdaLayerArnInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLayerHashInput">sourceLayerHashInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.versionInput">versionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.architectureInput">architectureInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.epochInput">epochInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.filePathInput">filePathInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.nameInput">nameInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.releaseInput">releaseInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLambdaLayerArnInput">sourceLambdaLayerArnInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLayerHashInput">sourceLayerHashInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.versionInput">versionInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a></code> | *No description.* |
 
 ---
 
@@ -30435,7 +30435,7 @@ public readonly version: Inspector2FilterFilterCriteriaVulnerablePackagesVersion
 public readonly architectureInput: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]
 
 ---
 
@@ -30445,7 +30445,7 @@ public readonly architectureInput: IResolvable | Inspector2FilterFilterCriteriaV
 public readonly epochInput: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesEpoch[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]
 
 ---
 
@@ -30455,7 +30455,7 @@ public readonly epochInput: IResolvable | Inspector2FilterFilterCriteriaVulnerab
 public readonly filePathInput: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesFilePath[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]
 
 ---
 
@@ -30465,7 +30465,7 @@ public readonly filePathInput: IResolvable | Inspector2FilterFilterCriteriaVulne
 public readonly nameInput: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]
 
 ---
 
@@ -30475,7 +30475,7 @@ public readonly nameInput: IResolvable | Inspector2FilterFilterCriteriaVulnerabl
 public readonly releaseInput: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesRelease[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]
 
 ---
 
@@ -30485,7 +30485,7 @@ public readonly releaseInput: IResolvable | Inspector2FilterFilterCriteriaVulner
 public readonly sourceLambdaLayerArnInput: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]
 
 ---
 
@@ -30495,7 +30495,7 @@ public readonly sourceLambdaLayerArnInput: IResolvable | Inspector2FilterFilterC
 public readonly sourceLayerHashInput: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]
 
 ---
 
@@ -30505,7 +30505,7 @@ public readonly sourceLayerHashInput: IResolvable | Inspector2FilterFilterCriter
 public readonly versionInput: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesVersion[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]
 
 ---
 
@@ -30515,7 +30515,7 @@ public readonly versionInput: IResolvable | Inspector2FilterFilterCriteriaVulner
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackages;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>
 
 ---
 
@@ -30532,7 +30532,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -30540,7 +30540,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30606,7 +30606,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30641,7 +30641,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]</code> | *No description.* |
 
 ---
 
@@ -30675,7 +30675,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesRelease[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]
 
 ---
 
@@ -30692,7 +30692,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -30701,7 +30701,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30887,7 +30887,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30912,7 +30912,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a></code> | *No description.* |
 
 ---
 
@@ -30986,7 +30986,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesRelease;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>
 
 ---
 
@@ -31003,7 +31003,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -31011,7 +31011,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambd
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31077,7 +31077,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31112,7 +31112,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]</code> | *No description.* |
 
 ---
 
@@ -31146,7 +31146,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]
 
 ---
 
@@ -31163,7 +31163,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -31172,7 +31172,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambd
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31358,7 +31358,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31383,7 +31383,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a></code> | *No description.* |
 
 ---
 
@@ -31457,7 +31457,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>
 
 ---
 
@@ -31474,7 +31474,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -31482,7 +31482,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31548,7 +31548,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31583,7 +31583,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]</code> | *No description.* |
 
 ---
 
@@ -31617,7 +31617,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]
 
 ---
 
@@ -31634,7 +31634,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -31643,7 +31643,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31829,7 +31829,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31854,7 +31854,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a></code> | *No description.* |
 
 ---
 
@@ -31928,7 +31928,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>
 
 ---
 
@@ -31945,7 +31945,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -31953,7 +31953,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32019,7 +32019,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32054,7 +32054,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]</code> | *No description.* |
 
 ---
 
@@ -32088,7 +32088,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesVersion[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]
 
 ---
 
@@ -32105,7 +32105,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -32114,7 +32114,7 @@ new inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32300,7 +32300,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32325,7 +32325,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a></code> | *No description.* |
 
 ---
 
@@ -32399,7 +32399,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesVersion;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>
 
 ---
 

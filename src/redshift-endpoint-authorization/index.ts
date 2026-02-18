@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedshiftEndpointAuthorizationConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftEndpointAuthorizationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_endpoint_authorization#account RedshiftEndpointAuthorization#account}
   */
@@ -23,7 +23,7 @@ export interface RedshiftEndpointAuthorizationConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_endpoint_authorization#force_delete RedshiftEndpointAuthorization#force_delete}
   */
-  readonly forceDelete?: boolean | cdktf.IResolvable;
+  readonly forceDelete?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_endpoint_authorization#id RedshiftEndpointAuthorization#id}
   *
@@ -46,7 +46,7 @@ export interface RedshiftEndpointAuthorizationConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_endpoint_authorization aws_redshift_endpoint_authorization}
 */
-export class RedshiftEndpointAuthorization extends cdktf.TerraformResource {
+export class RedshiftEndpointAuthorization extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class RedshiftEndpointAuthorization extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedshiftEndpointAuthorization resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedshiftEndpointAuthorization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftEndpointAuthorization to import
   * @param importFromId The id of the existing RedshiftEndpointAuthorization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_endpoint_authorization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftEndpointAuthorization to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_endpoint_authorization", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_endpoint_authorization", importId: importFromId, provider });
       }
 
   // ===========
@@ -143,11 +143,11 @@ export class RedshiftEndpointAuthorization extends cdktf.TerraformResource {
   }
 
   // force_delete - computed: false, optional: true, required: false
-  private _forceDelete?: boolean | cdktf.IResolvable; 
+  private _forceDelete?: boolean | cdktn.IResolvable; 
   public get forceDelete() {
     return this.getBooleanAttribute('force_delete');
   }
-  public set forceDelete(value: boolean | cdktf.IResolvable) {
+  public set forceDelete(value: boolean | cdktn.IResolvable) {
     this._forceDelete = value;
   }
   public resetForceDelete() {
@@ -203,7 +203,7 @@ export class RedshiftEndpointAuthorization extends cdktf.TerraformResource {
   // vpc_ids - computed: false, optional: true, required: false
   private _vpcIds?: string[]; 
   public get vpcIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('vpc_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('vpc_ids'));
   }
   public set vpcIds(value: string[]) {
     this._vpcIds = value;
@@ -222,49 +222,49 @@ export class RedshiftEndpointAuthorization extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account: cdktf.stringToTerraform(this._account),
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      force_delete: cdktf.booleanToTerraform(this._forceDelete),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      vpc_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcIds),
+      account: cdktn.stringToTerraform(this._account),
+      cluster_identifier: cdktn.stringToTerraform(this._clusterIdentifier),
+      force_delete: cdktn.booleanToTerraform(this._forceDelete),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      vpc_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._vpcIds),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account: {
-        value: cdktf.stringToHclTerraform(this._account),
+        value: cdktn.stringToHclTerraform(this._account),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._clusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_delete: {
-        value: cdktf.booleanToHclTerraform(this._forceDelete),
+        value: cdktn.booleanToHclTerraform(this._forceDelete),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vpcIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._vpcIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

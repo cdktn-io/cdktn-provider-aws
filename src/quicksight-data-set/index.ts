@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QuicksightDataSetConfig extends cdktf.TerraformMetaArguments {
+export interface QuicksightDataSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#aws_account_id QuicksightDataSet#aws_account_id}
   */
@@ -58,13 +58,13 @@ export interface QuicksightDataSetConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#column_groups QuicksightDataSet#column_groups}
   */
-  readonly columnGroups?: QuicksightDataSetColumnGroups[] | cdktf.IResolvable;
+  readonly columnGroups?: QuicksightDataSetColumnGroups[] | cdktn.IResolvable;
   /**
   * column_level_permission_rules block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#column_level_permission_rules QuicksightDataSet#column_level_permission_rules}
   */
-  readonly columnLevelPermissionRules?: QuicksightDataSetColumnLevelPermissionRules[] | cdktf.IResolvable;
+  readonly columnLevelPermissionRules?: QuicksightDataSetColumnLevelPermissionRules[] | cdktn.IResolvable;
   /**
   * data_set_usage_configuration block
   *
@@ -76,25 +76,25 @@ export interface QuicksightDataSetConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#field_folders QuicksightDataSet#field_folders}
   */
-  readonly fieldFolders?: QuicksightDataSetFieldFolders[] | cdktf.IResolvable;
+  readonly fieldFolders?: QuicksightDataSetFieldFolders[] | cdktn.IResolvable;
   /**
   * logical_table_map block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#logical_table_map QuicksightDataSet#logical_table_map}
   */
-  readonly logicalTableMap?: QuicksightDataSetLogicalTableMap[] | cdktf.IResolvable;
+  readonly logicalTableMap?: QuicksightDataSetLogicalTableMap[] | cdktn.IResolvable;
   /**
   * permissions block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#permissions QuicksightDataSet#permissions}
   */
-  readonly permissions?: QuicksightDataSetPermissions[] | cdktf.IResolvable;
+  readonly permissions?: QuicksightDataSetPermissions[] | cdktn.IResolvable;
   /**
   * physical_table_map block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#physical_table_map QuicksightDataSet#physical_table_map}
   */
-  readonly physicalTableMap?: QuicksightDataSetPhysicalTableMap[] | cdktf.IResolvable;
+  readonly physicalTableMap?: QuicksightDataSetPhysicalTableMap[] | cdktn.IResolvable;
   /**
   * refresh_properties block
   *
@@ -118,8 +118,8 @@ export interface QuicksightDataSetOutputColumns {
 }
 
 export function quicksightDataSetOutputColumnsToTerraform(struct?: QuicksightDataSetOutputColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -128,8 +128,8 @@ export function quicksightDataSetOutputColumnsToTerraform(struct?: QuicksightDat
 
 
 export function quicksightDataSetOutputColumnsToHclTerraform(struct?: QuicksightDataSetOutputColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -137,7 +137,7 @@ export function quicksightDataSetOutputColumnsToHclTerraform(struct?: Quicksight
   return attrs;
 }
 
-export class QuicksightDataSetOutputColumnsOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetOutputColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -146,7 +146,7 @@ export class QuicksightDataSetOutputColumnsOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -181,14 +181,14 @@ export class QuicksightDataSetOutputColumnsOutputReference extends cdktf.Complex
   }
 }
 
-export class QuicksightDataSetOutputColumnsList extends cdktf.ComplexList {
+export class QuicksightDataSetOutputColumnsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -215,38 +215,38 @@ export interface QuicksightDataSetColumnGroupsGeoSpatialColumnGroup {
 }
 
 export function quicksightDataSetColumnGroupsGeoSpatialColumnGroupToTerraform(struct?: QuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference | QuicksightDataSetColumnGroupsGeoSpatialColumnGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.columns),
-    country_code: cdktf.stringToTerraform(struct!.countryCode),
-    name: cdktf.stringToTerraform(struct!.name),
+    columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.columns),
+    country_code: cdktn.stringToTerraform(struct!.countryCode),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function quicksightDataSetColumnGroupsGeoSpatialColumnGroupToHclTerraform(struct?: QuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference | QuicksightDataSetColumnGroupsGeoSpatialColumnGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     columns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.columns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.columns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     country_code: {
-      value: cdktf.stringToHclTerraform(struct!.countryCode),
+      value: cdktn.stringToHclTerraform(struct!.countryCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -257,14 +257,14 @@ export function quicksightDataSetColumnGroupsGeoSpatialColumnGroupToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -349,9 +349,9 @@ export interface QuicksightDataSetColumnGroups {
   readonly geoSpatialColumnGroup?: QuicksightDataSetColumnGroupsGeoSpatialColumnGroup;
 }
 
-export function quicksightDataSetColumnGroupsToTerraform(struct?: QuicksightDataSetColumnGroups | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetColumnGroupsToTerraform(struct?: QuicksightDataSetColumnGroups | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -360,9 +360,9 @@ export function quicksightDataSetColumnGroupsToTerraform(struct?: QuicksightData
 }
 
 
-export function quicksightDataSetColumnGroupsToHclTerraform(struct?: QuicksightDataSetColumnGroups | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetColumnGroupsToHclTerraform(struct?: QuicksightDataSetColumnGroups | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -378,9 +378,9 @@ export function quicksightDataSetColumnGroupsToHclTerraform(struct?: QuicksightD
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetColumnGroupsOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetColumnGroupsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -388,11 +388,11 @@ export class QuicksightDataSetColumnGroupsOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightDataSetColumnGroups | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightDataSetColumnGroups | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -405,13 +405,13 @@ export class QuicksightDataSetColumnGroupsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightDataSetColumnGroups | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightDataSetColumnGroups | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._geoSpatialColumnGroup.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -439,15 +439,15 @@ export class QuicksightDataSetColumnGroupsOutputReference extends cdktf.ComplexO
   }
 }
 
-export class QuicksightDataSetColumnGroupsList extends cdktf.ComplexList {
-  public internalValue? : QuicksightDataSetColumnGroups[] | cdktf.IResolvable
+export class QuicksightDataSetColumnGroupsList extends cdktn.ComplexList {
+  public internalValue? : QuicksightDataSetColumnGroups[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -469,32 +469,32 @@ export interface QuicksightDataSetColumnLevelPermissionRules {
   readonly principals?: string[];
 }
 
-export function quicksightDataSetColumnLevelPermissionRulesToTerraform(struct?: QuicksightDataSetColumnLevelPermissionRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetColumnLevelPermissionRulesToTerraform(struct?: QuicksightDataSetColumnLevelPermissionRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.columnNames),
-    principals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.principals),
+    column_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.columnNames),
+    principals: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.principals),
   }
 }
 
 
-export function quicksightDataSetColumnLevelPermissionRulesToHclTerraform(struct?: QuicksightDataSetColumnLevelPermissionRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetColumnLevelPermissionRulesToHclTerraform(struct?: QuicksightDataSetColumnLevelPermissionRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.columnNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.columnNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     principals: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.principals),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.principals),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -505,9 +505,9 @@ export function quicksightDataSetColumnLevelPermissionRulesToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetColumnLevelPermissionRulesOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetColumnLevelPermissionRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -515,11 +515,11 @@ export class QuicksightDataSetColumnLevelPermissionRulesOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightDataSetColumnLevelPermissionRules | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightDataSetColumnLevelPermissionRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -536,14 +536,14 @@ export class QuicksightDataSetColumnLevelPermissionRulesOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightDataSetColumnLevelPermissionRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightDataSetColumnLevelPermissionRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._columnNames = undefined;
       this._principals = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -588,15 +588,15 @@ export class QuicksightDataSetColumnLevelPermissionRulesOutputReference extends 
   }
 }
 
-export class QuicksightDataSetColumnLevelPermissionRulesList extends cdktf.ComplexList {
-  public internalValue? : QuicksightDataSetColumnLevelPermissionRules[] | cdktf.IResolvable
+export class QuicksightDataSetColumnLevelPermissionRulesList extends cdktn.ComplexList {
+  public internalValue? : QuicksightDataSetColumnLevelPermissionRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -611,39 +611,39 @@ export interface QuicksightDataSetDataSetUsageConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#disable_use_as_direct_query_source QuicksightDataSet#disable_use_as_direct_query_source}
   */
-  readonly disableUseAsDirectQuerySource?: boolean | cdktf.IResolvable;
+  readonly disableUseAsDirectQuerySource?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#disable_use_as_imported_source QuicksightDataSet#disable_use_as_imported_source}
   */
-  readonly disableUseAsImportedSource?: boolean | cdktf.IResolvable;
+  readonly disableUseAsImportedSource?: boolean | cdktn.IResolvable;
 }
 
 export function quicksightDataSetDataSetUsageConfigurationToTerraform(struct?: QuicksightDataSetDataSetUsageConfigurationOutputReference | QuicksightDataSetDataSetUsageConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disable_use_as_direct_query_source: cdktf.booleanToTerraform(struct!.disableUseAsDirectQuerySource),
-    disable_use_as_imported_source: cdktf.booleanToTerraform(struct!.disableUseAsImportedSource),
+    disable_use_as_direct_query_source: cdktn.booleanToTerraform(struct!.disableUseAsDirectQuerySource),
+    disable_use_as_imported_source: cdktn.booleanToTerraform(struct!.disableUseAsImportedSource),
   }
 }
 
 
 export function quicksightDataSetDataSetUsageConfigurationToHclTerraform(struct?: QuicksightDataSetDataSetUsageConfigurationOutputReference | QuicksightDataSetDataSetUsageConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disable_use_as_direct_query_source: {
-      value: cdktf.booleanToHclTerraform(struct!.disableUseAsDirectQuerySource),
+      value: cdktn.booleanToHclTerraform(struct!.disableUseAsDirectQuerySource),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     disable_use_as_imported_source: {
-      value: cdktf.booleanToHclTerraform(struct!.disableUseAsImportedSource),
+      value: cdktn.booleanToHclTerraform(struct!.disableUseAsImportedSource),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -654,14 +654,14 @@ export function quicksightDataSetDataSetUsageConfigurationToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetDataSetUsageConfigurationOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetDataSetUsageConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -693,11 +693,11 @@ export class QuicksightDataSetDataSetUsageConfigurationOutputReference extends c
   }
 
   // disable_use_as_direct_query_source - computed: true, optional: true, required: false
-  private _disableUseAsDirectQuerySource?: boolean | cdktf.IResolvable; 
+  private _disableUseAsDirectQuerySource?: boolean | cdktn.IResolvable; 
   public get disableUseAsDirectQuerySource() {
     return this.getBooleanAttribute('disable_use_as_direct_query_source');
   }
-  public set disableUseAsDirectQuerySource(value: boolean | cdktf.IResolvable) {
+  public set disableUseAsDirectQuerySource(value: boolean | cdktn.IResolvable) {
     this._disableUseAsDirectQuerySource = value;
   }
   public resetDisableUseAsDirectQuerySource() {
@@ -709,11 +709,11 @@ export class QuicksightDataSetDataSetUsageConfigurationOutputReference extends c
   }
 
   // disable_use_as_imported_source - computed: true, optional: true, required: false
-  private _disableUseAsImportedSource?: boolean | cdktf.IResolvable; 
+  private _disableUseAsImportedSource?: boolean | cdktn.IResolvable; 
   public get disableUseAsImportedSource() {
     return this.getBooleanAttribute('disable_use_as_imported_source');
   }
-  public set disableUseAsImportedSource(value: boolean | cdktf.IResolvable) {
+  public set disableUseAsImportedSource(value: boolean | cdktn.IResolvable) {
     this._disableUseAsImportedSource = value;
   }
   public resetDisableUseAsImportedSource() {
@@ -739,39 +739,39 @@ export interface QuicksightDataSetFieldFolders {
   readonly fieldFoldersId: string;
 }
 
-export function quicksightDataSetFieldFoldersToTerraform(struct?: QuicksightDataSetFieldFolders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetFieldFoldersToTerraform(struct?: QuicksightDataSetFieldFolders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.columns),
-    description: cdktf.stringToTerraform(struct!.description),
-    field_folders_id: cdktf.stringToTerraform(struct!.fieldFoldersId),
+    columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.columns),
+    description: cdktn.stringToTerraform(struct!.description),
+    field_folders_id: cdktn.stringToTerraform(struct!.fieldFoldersId),
   }
 }
 
 
-export function quicksightDataSetFieldFoldersToHclTerraform(struct?: QuicksightDataSetFieldFolders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetFieldFoldersToHclTerraform(struct?: QuicksightDataSetFieldFolders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     columns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.columns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.columns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_folders_id: {
-      value: cdktf.stringToHclTerraform(struct!.fieldFoldersId),
+      value: cdktn.stringToHclTerraform(struct!.fieldFoldersId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -782,9 +782,9 @@ export function quicksightDataSetFieldFoldersToHclTerraform(struct?: QuicksightD
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetFieldFoldersOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetFieldFoldersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -792,11 +792,11 @@ export class QuicksightDataSetFieldFoldersOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightDataSetFieldFolders | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightDataSetFieldFolders | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -817,7 +817,7 @@ export class QuicksightDataSetFieldFoldersOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightDataSetFieldFolders | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightDataSetFieldFolders | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -825,7 +825,7 @@ export class QuicksightDataSetFieldFoldersOutputReference extends cdktf.ComplexO
       this._description = undefined;
       this._fieldFoldersId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -884,15 +884,15 @@ export class QuicksightDataSetFieldFoldersOutputReference extends cdktf.ComplexO
   }
 }
 
-export class QuicksightDataSetFieldFoldersList extends cdktf.ComplexList {
-  public internalValue? : QuicksightDataSetFieldFolders[] | cdktf.IResolvable
+export class QuicksightDataSetFieldFoldersList extends cdktn.ComplexList {
+  public internalValue? : QuicksightDataSetFieldFolders[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -919,38 +919,38 @@ export interface QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOpe
 }
 
 export function quicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationToTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationOutputReference | QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column_name: cdktf.stringToTerraform(struct!.columnName),
-    format: cdktf.stringToTerraform(struct!.format),
-    new_column_type: cdktf.stringToTerraform(struct!.newColumnType),
+    column_name: cdktn.stringToTerraform(struct!.columnName),
+    format: cdktn.stringToTerraform(struct!.format),
+    new_column_type: cdktn.stringToTerraform(struct!.newColumnType),
   }
 }
 
 
 export function quicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationToHclTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationOutputReference | QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column_name: {
-      value: cdktf.stringToHclTerraform(struct!.columnName),
+      value: cdktn.stringToHclTerraform(struct!.columnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     format: {
-      value: cdktf.stringToHclTerraform(struct!.format),
+      value: cdktn.stringToHclTerraform(struct!.format),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     new_column_type: {
-      value: cdktf.stringToHclTerraform(struct!.newColumnType),
+      value: cdktn.stringToHclTerraform(struct!.newColumnType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -961,14 +961,14 @@ export function quicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOper
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1062,39 +1062,39 @@ export interface QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOper
   readonly expression: string;
 }
 
-export function quicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsToTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsToTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column_id: cdktf.stringToTerraform(struct!.columnId),
-    column_name: cdktf.stringToTerraform(struct!.columnName),
-    expression: cdktf.stringToTerraform(struct!.expression),
+    column_id: cdktn.stringToTerraform(struct!.columnId),
+    column_name: cdktn.stringToTerraform(struct!.columnName),
+    expression: cdktn.stringToTerraform(struct!.expression),
   }
 }
 
 
-export function quicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsToHclTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsToHclTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column_id: {
-      value: cdktf.stringToHclTerraform(struct!.columnId),
+      value: cdktn.stringToHclTerraform(struct!.columnId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     column_name: {
-      value: cdktf.stringToHclTerraform(struct!.columnName),
+      value: cdktn.stringToHclTerraform(struct!.columnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1105,9 +1105,9 @@ export function quicksightDataSetLogicalTableMapDataTransformsCreateColumnsOpera
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1115,11 +1115,11 @@ export class QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperatio
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1140,7 +1140,7 @@ export class QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperatio
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1148,7 +1148,7 @@ export class QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperatio
       this._columnName = undefined;
       this._expression = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1201,15 +1201,15 @@ export class QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperatio
   }
 }
 
-export class QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsList extends cdktf.ComplexList {
-  public internalValue? : QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns[] | cdktf.IResolvable
+export class QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsList extends cdktn.ComplexList {
+  public internalValue? : QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1226,28 +1226,28 @@ export interface QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOper
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}
   */
-  readonly columns: QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns[] | cdktf.IResolvable;
+  readonly columns: QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns[] | cdktn.IResolvable;
 }
 
 export function quicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationToTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationOutputReference | QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    columns: cdktf.listMapper(quicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsToTerraform, true)(struct!.columns),
+    columns: cdktn.listMapper(quicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsToTerraform, true)(struct!.columns),
   }
 }
 
 
 export function quicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationToHclTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationOutputReference | QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     columns: {
-      value: cdktf.listMapperHcl(quicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsToHclTerraform, true)(struct!.columns),
+      value: cdktn.listMapperHcl(quicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsToHclTerraform, true)(struct!.columns),
       isBlock: true,
       type: "list",
       storageClassType: "QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsList",
@@ -1258,14 +1258,14 @@ export function quicksightDataSetLogicalTableMapDataTransformsCreateColumnsOpera
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1295,7 +1295,7 @@ export class QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperatio
   public get columns() {
     return this._columns;
   }
-  public putColumns(value: QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns[] | cdktf.IResolvable) {
+  public putColumns(value: QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns[] | cdktn.IResolvable) {
     this._columns.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1311,24 +1311,24 @@ export interface QuicksightDataSetLogicalTableMapDataTransformsFilterOperation {
 }
 
 export function quicksightDataSetLogicalTableMapDataTransformsFilterOperationToTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsFilterOperationOutputReference | QuicksightDataSetLogicalTableMapDataTransformsFilterOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    condition_expression: cdktf.stringToTerraform(struct!.conditionExpression),
+    condition_expression: cdktn.stringToTerraform(struct!.conditionExpression),
   }
 }
 
 
 export function quicksightDataSetLogicalTableMapDataTransformsFilterOperationToHclTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsFilterOperationOutputReference | QuicksightDataSetLogicalTableMapDataTransformsFilterOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     condition_expression: {
-      value: cdktf.stringToHclTerraform(struct!.conditionExpression),
+      value: cdktn.stringToHclTerraform(struct!.conditionExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1339,14 +1339,14 @@ export function quicksightDataSetLogicalTableMapDataTransformsFilterOperationToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapDataTransformsFilterOperationOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapDataTransformsFilterOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1392,24 +1392,24 @@ export interface QuicksightDataSetLogicalTableMapDataTransformsProjectOperation 
 }
 
 export function quicksightDataSetLogicalTableMapDataTransformsProjectOperationToTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsProjectOperationOutputReference | QuicksightDataSetLogicalTableMapDataTransformsProjectOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    projected_columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.projectedColumns),
+    projected_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.projectedColumns),
   }
 }
 
 
 export function quicksightDataSetLogicalTableMapDataTransformsProjectOperationToHclTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsProjectOperationOutputReference | QuicksightDataSetLogicalTableMapDataTransformsProjectOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     projected_columns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.projectedColumns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.projectedColumns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1420,14 +1420,14 @@ export function quicksightDataSetLogicalTableMapDataTransformsProjectOperationTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapDataTransformsProjectOperationOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapDataTransformsProjectOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1477,31 +1477,31 @@ export interface QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOpera
 }
 
 export function quicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationToTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationOutputReference | QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column_name: cdktf.stringToTerraform(struct!.columnName),
-    new_column_name: cdktf.stringToTerraform(struct!.newColumnName),
+    column_name: cdktn.stringToTerraform(struct!.columnName),
+    new_column_name: cdktn.stringToTerraform(struct!.newColumnName),
   }
 }
 
 
 export function quicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationToHclTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationOutputReference | QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column_name: {
-      value: cdktf.stringToHclTerraform(struct!.columnName),
+      value: cdktn.stringToHclTerraform(struct!.columnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     new_column_name: {
-      value: cdktf.stringToHclTerraform(struct!.newColumnName),
+      value: cdktn.stringToHclTerraform(struct!.newColumnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1512,14 +1512,14 @@ export function quicksightDataSetLogicalTableMapDataTransformsRenameColumnOperat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1584,24 +1584,24 @@ export interface QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperatio
 }
 
 export function quicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionToTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionOutputReference | QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    text: cdktf.stringToTerraform(struct!.text),
+    text: cdktn.stringToTerraform(struct!.text),
   }
 }
 
 
 export function quicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionToHclTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionOutputReference | QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     text: {
-      value: cdktf.stringToHclTerraform(struct!.text),
+      value: cdktn.stringToHclTerraform(struct!.text),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1612,14 +1612,14 @@ export function quicksightDataSetLogicalTableMapDataTransformsTagColumnOperation
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1673,26 +1673,26 @@ export interface QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperatio
   readonly columnDescription?: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription;
 }
 
-export function quicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsToTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsToTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column_geographic_role: cdktf.stringToTerraform(struct!.columnGeographicRole),
+    column_geographic_role: cdktn.stringToTerraform(struct!.columnGeographicRole),
     column_description: quicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionToTerraform(struct!.columnDescription),
   }
 }
 
 
-export function quicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsToHclTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsToHclTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column_geographic_role: {
-      value: cdktf.stringToHclTerraform(struct!.columnGeographicRole),
+      value: cdktn.stringToHclTerraform(struct!.columnGeographicRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1709,9 +1709,9 @@ export function quicksightDataSetLogicalTableMapDataTransformsTagColumnOperation
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1719,11 +1719,11 @@ export class QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTag
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1740,14 +1740,14 @@ export class QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTag
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._columnGeographicRole = undefined;
       this._columnDescription.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1792,15 +1792,15 @@ export class QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTag
   }
 }
 
-export class QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsList extends cdktf.ComplexList {
-  public internalValue? : QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags[] | cdktf.IResolvable
+export class QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsList extends cdktn.ComplexList {
+  public internalValue? : QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1821,35 +1821,35 @@ export interface QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperatio
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#tags QuicksightDataSet#tags}
   */
-  readonly tags: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags[] | cdktf.IResolvable;
+  readonly tags: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags[] | cdktn.IResolvable;
 }
 
 export function quicksightDataSetLogicalTableMapDataTransformsTagColumnOperationToTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationOutputReference | QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column_name: cdktf.stringToTerraform(struct!.columnName),
-    tags: cdktf.listMapper(quicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsToTerraform, true)(struct!.tags),
+    column_name: cdktn.stringToTerraform(struct!.columnName),
+    tags: cdktn.listMapper(quicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsToTerraform, true)(struct!.tags),
   }
 }
 
 
 export function quicksightDataSetLogicalTableMapDataTransformsTagColumnOperationToHclTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationOutputReference | QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column_name: {
-      value: cdktf.stringToHclTerraform(struct!.columnName),
+      value: cdktn.stringToHclTerraform(struct!.columnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags: {
-      value: cdktf.listMapperHcl(quicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsToHclTerraform, true)(struct!.tags),
+      value: cdktn.listMapperHcl(quicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsToHclTerraform, true)(struct!.tags),
       isBlock: true,
       type: "list",
       storageClassType: "QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsList",
@@ -1860,14 +1860,14 @@ export function quicksightDataSetLogicalTableMapDataTransformsTagColumnOperation
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1916,7 +1916,7 @@ export class QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationOut
   public get tags() {
     return this._tags;
   }
-  public putTags(value: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags[] | cdktf.IResolvable) {
+  public putTags(value: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags[] | cdktn.IResolvable) {
     this._tags.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1936,31 +1936,31 @@ export interface QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperat
 }
 
 export function quicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationToTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationOutputReference | QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column_name: cdktf.stringToTerraform(struct!.columnName),
-    tag_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagNames),
+    column_name: cdktn.stringToTerraform(struct!.columnName),
+    tag_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tagNames),
   }
 }
 
 
 export function quicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationToHclTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationOutputReference | QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column_name: {
-      value: cdktf.stringToHclTerraform(struct!.columnName),
+      value: cdktn.stringToHclTerraform(struct!.columnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tagNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tagNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1971,14 +1971,14 @@ export function quicksightDataSetLogicalTableMapDataTransformsUntagColumnOperati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2080,9 +2080,9 @@ export interface QuicksightDataSetLogicalTableMapDataTransforms {
   readonly untagColumnOperation?: QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation;
 }
 
-export function quicksightDataSetLogicalTableMapDataTransformsToTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransforms | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetLogicalTableMapDataTransformsToTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransforms | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2097,9 +2097,9 @@ export function quicksightDataSetLogicalTableMapDataTransformsToTerraform(struct
 }
 
 
-export function quicksightDataSetLogicalTableMapDataTransformsToHclTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransforms | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetLogicalTableMapDataTransformsToHclTerraform(struct?: QuicksightDataSetLogicalTableMapDataTransforms | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2151,9 +2151,9 @@ export function quicksightDataSetLogicalTableMapDataTransformsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapDataTransformsOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapDataTransformsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2161,11 +2161,11 @@ export class QuicksightDataSetLogicalTableMapDataTransformsOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightDataSetLogicalTableMapDataTransforms | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightDataSetLogicalTableMapDataTransforms | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2202,7 +2202,7 @@ export class QuicksightDataSetLogicalTableMapDataTransformsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightDataSetLogicalTableMapDataTransforms | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightDataSetLogicalTableMapDataTransforms | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2214,7 +2214,7 @@ export class QuicksightDataSetLogicalTableMapDataTransformsOutputReference exten
       this._tagColumnOperation.internalValue = undefined;
       this._untagColumnOperation.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2344,15 +2344,15 @@ export class QuicksightDataSetLogicalTableMapDataTransformsOutputReference exten
   }
 }
 
-export class QuicksightDataSetLogicalTableMapDataTransformsList extends cdktf.ComplexList {
-  public internalValue? : QuicksightDataSetLogicalTableMapDataTransforms[] | cdktf.IResolvable
+export class QuicksightDataSetLogicalTableMapDataTransformsList extends cdktn.ComplexList {
+  public internalValue? : QuicksightDataSetLogicalTableMapDataTransforms[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2367,28 +2367,28 @@ export interface QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKe
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#unique_key QuicksightDataSet#unique_key}
   */
-  readonly uniqueKey?: boolean | cdktf.IResolvable;
+  readonly uniqueKey?: boolean | cdktn.IResolvable;
 }
 
 export function quicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesToTerraform(struct?: QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesOutputReference | QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unique_key: cdktf.booleanToTerraform(struct!.uniqueKey),
+    unique_key: cdktn.booleanToTerraform(struct!.uniqueKey),
   }
 }
 
 
 export function quicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesToHclTerraform(struct?: QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesOutputReference | QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unique_key: {
-      value: cdktf.booleanToHclTerraform(struct!.uniqueKey),
+      value: cdktn.booleanToHclTerraform(struct!.uniqueKey),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2399,14 +2399,14 @@ export function quicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKey
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2432,11 +2432,11 @@ export class QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPro
   }
 
   // unique_key - computed: true, optional: true, required: false
-  private _uniqueKey?: boolean | cdktf.IResolvable; 
+  private _uniqueKey?: boolean | cdktn.IResolvable; 
   public get uniqueKey() {
     return this.getBooleanAttribute('unique_key');
   }
-  public set uniqueKey(value: boolean | cdktf.IResolvable) {
+  public set uniqueKey(value: boolean | cdktn.IResolvable) {
     this._uniqueKey = value;
   }
   public resetUniqueKey() {
@@ -2451,28 +2451,28 @@ export interface QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinK
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#unique_key QuicksightDataSet#unique_key}
   */
-  readonly uniqueKey?: boolean | cdktf.IResolvable;
+  readonly uniqueKey?: boolean | cdktn.IResolvable;
 }
 
 export function quicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesToTerraform(struct?: QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesOutputReference | QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unique_key: cdktf.booleanToTerraform(struct!.uniqueKey),
+    unique_key: cdktn.booleanToTerraform(struct!.uniqueKey),
   }
 }
 
 
 export function quicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesToHclTerraform(struct?: QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesOutputReference | QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unique_key: {
-      value: cdktf.booleanToHclTerraform(struct!.uniqueKey),
+      value: cdktn.booleanToHclTerraform(struct!.uniqueKey),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2483,14 +2483,14 @@ export function quicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2516,11 +2516,11 @@ export class QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPr
   }
 
   // unique_key - computed: true, optional: true, required: false
-  private _uniqueKey?: boolean | cdktf.IResolvable; 
+  private _uniqueKey?: boolean | cdktn.IResolvable; 
   public get uniqueKey() {
     return this.getBooleanAttribute('unique_key');
   }
-  public set uniqueKey(value: boolean | cdktf.IResolvable) {
+  public set uniqueKey(value: boolean | cdktn.IResolvable) {
     this._uniqueKey = value;
   }
   public resetUniqueKey() {
@@ -2563,15 +2563,15 @@ export interface QuicksightDataSetLogicalTableMapSourceJoinInstruction {
 }
 
 export function quicksightDataSetLogicalTableMapSourceJoinInstructionToTerraform(struct?: QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference | QuicksightDataSetLogicalTableMapSourceJoinInstruction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    left_operand: cdktf.stringToTerraform(struct!.leftOperand),
-    on_clause: cdktf.stringToTerraform(struct!.onClause),
-    right_operand: cdktf.stringToTerraform(struct!.rightOperand),
-    type: cdktf.stringToTerraform(struct!.type),
+    left_operand: cdktn.stringToTerraform(struct!.leftOperand),
+    on_clause: cdktn.stringToTerraform(struct!.onClause),
+    right_operand: cdktn.stringToTerraform(struct!.rightOperand),
+    type: cdktn.stringToTerraform(struct!.type),
     left_join_key_properties: quicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesToTerraform(struct!.leftJoinKeyProperties),
     right_join_key_properties: quicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesToTerraform(struct!.rightJoinKeyProperties),
   }
@@ -2579,31 +2579,31 @@ export function quicksightDataSetLogicalTableMapSourceJoinInstructionToTerraform
 
 
 export function quicksightDataSetLogicalTableMapSourceJoinInstructionToHclTerraform(struct?: QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference | QuicksightDataSetLogicalTableMapSourceJoinInstruction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     left_operand: {
-      value: cdktf.stringToHclTerraform(struct!.leftOperand),
+      value: cdktn.stringToHclTerraform(struct!.leftOperand),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     on_clause: {
-      value: cdktf.stringToHclTerraform(struct!.onClause),
+      value: cdktn.stringToHclTerraform(struct!.onClause),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     right_operand: {
-      value: cdktf.stringToHclTerraform(struct!.rightOperand),
+      value: cdktn.stringToHclTerraform(struct!.rightOperand),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2626,14 +2626,14 @@ export function quicksightDataSetLogicalTableMapSourceJoinInstructionToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2790,32 +2790,32 @@ export interface QuicksightDataSetLogicalTableMapSource {
 }
 
 export function quicksightDataSetLogicalTableMapSourceToTerraform(struct?: QuicksightDataSetLogicalTableMapSourceOutputReference | QuicksightDataSetLogicalTableMapSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_set_arn: cdktf.stringToTerraform(struct!.dataSetArn),
-    physical_table_id: cdktf.stringToTerraform(struct!.physicalTableId),
+    data_set_arn: cdktn.stringToTerraform(struct!.dataSetArn),
+    physical_table_id: cdktn.stringToTerraform(struct!.physicalTableId),
     join_instruction: quicksightDataSetLogicalTableMapSourceJoinInstructionToTerraform(struct!.joinInstruction),
   }
 }
 
 
 export function quicksightDataSetLogicalTableMapSourceToHclTerraform(struct?: QuicksightDataSetLogicalTableMapSourceOutputReference | QuicksightDataSetLogicalTableMapSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_set_arn: {
-      value: cdktf.stringToHclTerraform(struct!.dataSetArn),
+      value: cdktn.stringToHclTerraform(struct!.dataSetArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     physical_table_id: {
-      value: cdktf.stringToHclTerraform(struct!.physicalTableId),
+      value: cdktn.stringToHclTerraform(struct!.physicalTableId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2832,14 +2832,14 @@ export function quicksightDataSetLogicalTableMapSourceToHclTerraform(struct?: Qu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapSourceOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2938,7 +2938,7 @@ export interface QuicksightDataSetLogicalTableMap {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#data_transforms QuicksightDataSet#data_transforms}
   */
-  readonly dataTransforms?: QuicksightDataSetLogicalTableMapDataTransforms[] | cdktf.IResolvable;
+  readonly dataTransforms?: QuicksightDataSetLogicalTableMapDataTransforms[] | cdktn.IResolvable;
   /**
   * source block
   *
@@ -2947,40 +2947,40 @@ export interface QuicksightDataSetLogicalTableMap {
   readonly source: QuicksightDataSetLogicalTableMapSource;
 }
 
-export function quicksightDataSetLogicalTableMapToTerraform(struct?: QuicksightDataSetLogicalTableMap | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetLogicalTableMapToTerraform(struct?: QuicksightDataSetLogicalTableMap | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alias: cdktf.stringToTerraform(struct!.alias),
-    logical_table_map_id: cdktf.stringToTerraform(struct!.logicalTableMapId),
-    data_transforms: cdktf.listMapper(quicksightDataSetLogicalTableMapDataTransformsToTerraform, true)(struct!.dataTransforms),
+    alias: cdktn.stringToTerraform(struct!.alias),
+    logical_table_map_id: cdktn.stringToTerraform(struct!.logicalTableMapId),
+    data_transforms: cdktn.listMapper(quicksightDataSetLogicalTableMapDataTransformsToTerraform, true)(struct!.dataTransforms),
     source: quicksightDataSetLogicalTableMapSourceToTerraform(struct!.source),
   }
 }
 
 
-export function quicksightDataSetLogicalTableMapToHclTerraform(struct?: QuicksightDataSetLogicalTableMap | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetLogicalTableMapToHclTerraform(struct?: QuicksightDataSetLogicalTableMap | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alias: {
-      value: cdktf.stringToHclTerraform(struct!.alias),
+      value: cdktn.stringToHclTerraform(struct!.alias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     logical_table_map_id: {
-      value: cdktf.stringToHclTerraform(struct!.logicalTableMapId),
+      value: cdktn.stringToHclTerraform(struct!.logicalTableMapId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_transforms: {
-      value: cdktf.listMapperHcl(quicksightDataSetLogicalTableMapDataTransformsToHclTerraform, true)(struct!.dataTransforms),
+      value: cdktn.listMapperHcl(quicksightDataSetLogicalTableMapDataTransformsToHclTerraform, true)(struct!.dataTransforms),
       isBlock: true,
       type: "list",
       storageClassType: "QuicksightDataSetLogicalTableMapDataTransformsList",
@@ -2997,9 +2997,9 @@ export function quicksightDataSetLogicalTableMapToHclTerraform(struct?: Quicksig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetLogicalTableMapOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetLogicalTableMapOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3007,11 +3007,11 @@ export class QuicksightDataSetLogicalTableMapOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightDataSetLogicalTableMap | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightDataSetLogicalTableMap | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3036,7 +3036,7 @@ export class QuicksightDataSetLogicalTableMapOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightDataSetLogicalTableMap | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightDataSetLogicalTableMap | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3045,7 +3045,7 @@ export class QuicksightDataSetLogicalTableMapOutputReference extends cdktf.Compl
       this._dataTransforms.internalValue = undefined;
       this._source.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3090,7 +3090,7 @@ export class QuicksightDataSetLogicalTableMapOutputReference extends cdktf.Compl
   public get dataTransforms() {
     return this._dataTransforms;
   }
-  public putDataTransforms(value: QuicksightDataSetLogicalTableMapDataTransforms[] | cdktf.IResolvable) {
+  public putDataTransforms(value: QuicksightDataSetLogicalTableMapDataTransforms[] | cdktn.IResolvable) {
     this._dataTransforms.internalValue = value;
   }
   public resetDataTransforms() {
@@ -3115,15 +3115,15 @@ export class QuicksightDataSetLogicalTableMapOutputReference extends cdktf.Compl
   }
 }
 
-export class QuicksightDataSetLogicalTableMapList extends cdktf.ComplexList {
-  public internalValue? : QuicksightDataSetLogicalTableMap[] | cdktf.IResolvable
+export class QuicksightDataSetLogicalTableMapList extends cdktn.ComplexList {
+  public internalValue? : QuicksightDataSetLogicalTableMap[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3145,32 +3145,32 @@ export interface QuicksightDataSetPermissions {
   readonly principal: string;
 }
 
-export function quicksightDataSetPermissionsToTerraform(struct?: QuicksightDataSetPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetPermissionsToTerraform(struct?: QuicksightDataSetPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
-    principal: cdktf.stringToTerraform(struct!.principal),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
+    principal: cdktn.stringToTerraform(struct!.principal),
   }
 }
 
 
-export function quicksightDataSetPermissionsToHclTerraform(struct?: QuicksightDataSetPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetPermissionsToHclTerraform(struct?: QuicksightDataSetPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     principal: {
-      value: cdktf.stringToHclTerraform(struct!.principal),
+      value: cdktn.stringToHclTerraform(struct!.principal),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3181,9 +3181,9 @@ export function quicksightDataSetPermissionsToHclTerraform(struct?: QuicksightDa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetPermissionsOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3191,11 +3191,11 @@ export class QuicksightDataSetPermissionsOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightDataSetPermissions | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightDataSetPermissions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3212,14 +3212,14 @@ export class QuicksightDataSetPermissionsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightDataSetPermissions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightDataSetPermissions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._actions = undefined;
       this._principal = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3234,7 +3234,7 @@ export class QuicksightDataSetPermissionsOutputReference extends cdktf.ComplexOb
   // actions - computed: false, optional: false, required: true
   private _actions?: string[]; 
   public get actions() {
-    return cdktf.Fn.tolist(this.getListAttribute('actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('actions'));
   }
   public set actions(value: string[]) {
     this._actions = value;
@@ -3258,15 +3258,15 @@ export class QuicksightDataSetPermissionsOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class QuicksightDataSetPermissionsList extends cdktf.ComplexList {
-  public internalValue? : QuicksightDataSetPermissions[] | cdktf.IResolvable
+export class QuicksightDataSetPermissionsList extends cdktn.ComplexList {
+  public internalValue? : QuicksightDataSetPermissions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3288,32 +3288,32 @@ export interface QuicksightDataSetPhysicalTableMapCustomSqlColumns {
   readonly type: string;
 }
 
-export function quicksightDataSetPhysicalTableMapCustomSqlColumnsToTerraform(struct?: QuicksightDataSetPhysicalTableMapCustomSqlColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetPhysicalTableMapCustomSqlColumnsToTerraform(struct?: QuicksightDataSetPhysicalTableMapCustomSqlColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function quicksightDataSetPhysicalTableMapCustomSqlColumnsToHclTerraform(struct?: QuicksightDataSetPhysicalTableMapCustomSqlColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetPhysicalTableMapCustomSqlColumnsToHclTerraform(struct?: QuicksightDataSetPhysicalTableMapCustomSqlColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3324,9 +3324,9 @@ export function quicksightDataSetPhysicalTableMapCustomSqlColumnsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3334,11 +3334,11 @@ export class QuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightDataSetPhysicalTableMapCustomSqlColumns | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightDataSetPhysicalTableMapCustomSqlColumns | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3355,14 +3355,14 @@ export class QuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightDataSetPhysicalTableMapCustomSqlColumns | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightDataSetPhysicalTableMapCustomSqlColumns | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3401,15 +3401,15 @@ export class QuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference ex
   }
 }
 
-export class QuicksightDataSetPhysicalTableMapCustomSqlColumnsList extends cdktf.ComplexList {
-  public internalValue? : QuicksightDataSetPhysicalTableMapCustomSqlColumns[] | cdktf.IResolvable
+export class QuicksightDataSetPhysicalTableMapCustomSqlColumnsList extends cdktn.ComplexList {
+  public internalValue? : QuicksightDataSetPhysicalTableMapCustomSqlColumns[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3438,49 +3438,49 @@ export interface QuicksightDataSetPhysicalTableMapCustomSql {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}
   */
-  readonly columns?: QuicksightDataSetPhysicalTableMapCustomSqlColumns[] | cdktf.IResolvable;
+  readonly columns?: QuicksightDataSetPhysicalTableMapCustomSqlColumns[] | cdktn.IResolvable;
 }
 
 export function quicksightDataSetPhysicalTableMapCustomSqlToTerraform(struct?: QuicksightDataSetPhysicalTableMapCustomSqlOutputReference | QuicksightDataSetPhysicalTableMapCustomSql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_source_arn: cdktf.stringToTerraform(struct!.dataSourceArn),
-    name: cdktf.stringToTerraform(struct!.name),
-    sql_query: cdktf.stringToTerraform(struct!.sqlQuery),
-    columns: cdktf.listMapper(quicksightDataSetPhysicalTableMapCustomSqlColumnsToTerraform, true)(struct!.columns),
+    data_source_arn: cdktn.stringToTerraform(struct!.dataSourceArn),
+    name: cdktn.stringToTerraform(struct!.name),
+    sql_query: cdktn.stringToTerraform(struct!.sqlQuery),
+    columns: cdktn.listMapper(quicksightDataSetPhysicalTableMapCustomSqlColumnsToTerraform, true)(struct!.columns),
   }
 }
 
 
 export function quicksightDataSetPhysicalTableMapCustomSqlToHclTerraform(struct?: QuicksightDataSetPhysicalTableMapCustomSqlOutputReference | QuicksightDataSetPhysicalTableMapCustomSql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_source_arn: {
-      value: cdktf.stringToHclTerraform(struct!.dataSourceArn),
+      value: cdktn.stringToHclTerraform(struct!.dataSourceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sql_query: {
-      value: cdktf.stringToHclTerraform(struct!.sqlQuery),
+      value: cdktn.stringToHclTerraform(struct!.sqlQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     columns: {
-      value: cdktf.listMapperHcl(quicksightDataSetPhysicalTableMapCustomSqlColumnsToHclTerraform, true)(struct!.columns),
+      value: cdktn.listMapperHcl(quicksightDataSetPhysicalTableMapCustomSqlColumnsToHclTerraform, true)(struct!.columns),
       isBlock: true,
       type: "list",
       storageClassType: "QuicksightDataSetPhysicalTableMapCustomSqlColumnsList",
@@ -3491,14 +3491,14 @@ export function quicksightDataSetPhysicalTableMapCustomSqlToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetPhysicalTableMapCustomSqlOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetPhysicalTableMapCustomSqlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3585,7 +3585,7 @@ export class QuicksightDataSetPhysicalTableMapCustomSqlOutputReference extends c
   public get columns() {
     return this._columns;
   }
-  public putColumns(value: QuicksightDataSetPhysicalTableMapCustomSqlColumns[] | cdktf.IResolvable) {
+  public putColumns(value: QuicksightDataSetPhysicalTableMapCustomSqlColumns[] | cdktn.IResolvable) {
     this._columns.internalValue = value;
   }
   public resetColumns() {
@@ -3607,32 +3607,32 @@ export interface QuicksightDataSetPhysicalTableMapRelationalTableInputColumns {
   readonly type: string;
 }
 
-export function quicksightDataSetPhysicalTableMapRelationalTableInputColumnsToTerraform(struct?: QuicksightDataSetPhysicalTableMapRelationalTableInputColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetPhysicalTableMapRelationalTableInputColumnsToTerraform(struct?: QuicksightDataSetPhysicalTableMapRelationalTableInputColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function quicksightDataSetPhysicalTableMapRelationalTableInputColumnsToHclTerraform(struct?: QuicksightDataSetPhysicalTableMapRelationalTableInputColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetPhysicalTableMapRelationalTableInputColumnsToHclTerraform(struct?: QuicksightDataSetPhysicalTableMapRelationalTableInputColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3643,9 +3643,9 @@ export function quicksightDataSetPhysicalTableMapRelationalTableInputColumnsToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3653,11 +3653,11 @@ export class QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightDataSetPhysicalTableMapRelationalTableInputColumns | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightDataSetPhysicalTableMapRelationalTableInputColumns | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3674,14 +3674,14 @@ export class QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightDataSetPhysicalTableMapRelationalTableInputColumns | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightDataSetPhysicalTableMapRelationalTableInputColumns | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3720,15 +3720,15 @@ export class QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputR
   }
 }
 
-export class QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsList extends cdktf.ComplexList {
-  public internalValue? : QuicksightDataSetPhysicalTableMapRelationalTableInputColumns[] | cdktf.IResolvable
+export class QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsList extends cdktn.ComplexList {
+  public internalValue? : QuicksightDataSetPhysicalTableMapRelationalTableInputColumns[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3761,56 +3761,56 @@ export interface QuicksightDataSetPhysicalTableMapRelationalTable {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#input_columns QuicksightDataSet#input_columns}
   */
-  readonly inputColumns: QuicksightDataSetPhysicalTableMapRelationalTableInputColumns[] | cdktf.IResolvable;
+  readonly inputColumns: QuicksightDataSetPhysicalTableMapRelationalTableInputColumns[] | cdktn.IResolvable;
 }
 
 export function quicksightDataSetPhysicalTableMapRelationalTableToTerraform(struct?: QuicksightDataSetPhysicalTableMapRelationalTableOutputReference | QuicksightDataSetPhysicalTableMapRelationalTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog: cdktf.stringToTerraform(struct!.catalog),
-    data_source_arn: cdktf.stringToTerraform(struct!.dataSourceArn),
-    name: cdktf.stringToTerraform(struct!.name),
-    schema: cdktf.stringToTerraform(struct!.schema),
-    input_columns: cdktf.listMapper(quicksightDataSetPhysicalTableMapRelationalTableInputColumnsToTerraform, true)(struct!.inputColumns),
+    catalog: cdktn.stringToTerraform(struct!.catalog),
+    data_source_arn: cdktn.stringToTerraform(struct!.dataSourceArn),
+    name: cdktn.stringToTerraform(struct!.name),
+    schema: cdktn.stringToTerraform(struct!.schema),
+    input_columns: cdktn.listMapper(quicksightDataSetPhysicalTableMapRelationalTableInputColumnsToTerraform, true)(struct!.inputColumns),
   }
 }
 
 
 export function quicksightDataSetPhysicalTableMapRelationalTableToHclTerraform(struct?: QuicksightDataSetPhysicalTableMapRelationalTableOutputReference | QuicksightDataSetPhysicalTableMapRelationalTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog: {
-      value: cdktf.stringToHclTerraform(struct!.catalog),
+      value: cdktn.stringToHclTerraform(struct!.catalog),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_source_arn: {
-      value: cdktf.stringToHclTerraform(struct!.dataSourceArn),
+      value: cdktn.stringToHclTerraform(struct!.dataSourceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schema: {
-      value: cdktf.stringToHclTerraform(struct!.schema),
+      value: cdktn.stringToHclTerraform(struct!.schema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     input_columns: {
-      value: cdktf.listMapperHcl(quicksightDataSetPhysicalTableMapRelationalTableInputColumnsToHclTerraform, true)(struct!.inputColumns),
+      value: cdktn.listMapperHcl(quicksightDataSetPhysicalTableMapRelationalTableInputColumnsToHclTerraform, true)(struct!.inputColumns),
       isBlock: true,
       type: "list",
       storageClassType: "QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsList",
@@ -3821,14 +3821,14 @@ export function quicksightDataSetPhysicalTableMapRelationalTableToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetPhysicalTableMapRelationalTableOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetPhysicalTableMapRelationalTableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3940,7 +3940,7 @@ export class QuicksightDataSetPhysicalTableMapRelationalTableOutputReference ext
   public get inputColumns() {
     return this._inputColumns;
   }
-  public putInputColumns(value: QuicksightDataSetPhysicalTableMapRelationalTableInputColumns[] | cdktf.IResolvable) {
+  public putInputColumns(value: QuicksightDataSetPhysicalTableMapRelationalTableInputColumns[] | cdktn.IResolvable) {
     this._inputColumns.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3959,32 +3959,32 @@ export interface QuicksightDataSetPhysicalTableMapS3SourceInputColumns {
   readonly type: string;
 }
 
-export function quicksightDataSetPhysicalTableMapS3SourceInputColumnsToTerraform(struct?: QuicksightDataSetPhysicalTableMapS3SourceInputColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetPhysicalTableMapS3SourceInputColumnsToTerraform(struct?: QuicksightDataSetPhysicalTableMapS3SourceInputColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function quicksightDataSetPhysicalTableMapS3SourceInputColumnsToHclTerraform(struct?: QuicksightDataSetPhysicalTableMapS3SourceInputColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetPhysicalTableMapS3SourceInputColumnsToHclTerraform(struct?: QuicksightDataSetPhysicalTableMapS3SourceInputColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3995,9 +3995,9 @@ export function quicksightDataSetPhysicalTableMapS3SourceInputColumnsToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4005,11 +4005,11 @@ export class QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightDataSetPhysicalTableMapS3SourceInputColumns | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightDataSetPhysicalTableMapS3SourceInputColumns | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4026,14 +4026,14 @@ export class QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightDataSetPhysicalTableMapS3SourceInputColumns | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightDataSetPhysicalTableMapS3SourceInputColumns | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4072,15 +4072,15 @@ export class QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReferenc
   }
 }
 
-export class QuicksightDataSetPhysicalTableMapS3SourceInputColumnsList extends cdktf.ComplexList {
-  public internalValue? : QuicksightDataSetPhysicalTableMapS3SourceInputColumns[] | cdktf.IResolvable
+export class QuicksightDataSetPhysicalTableMapS3SourceInputColumnsList extends cdktn.ComplexList {
+  public internalValue? : QuicksightDataSetPhysicalTableMapS3SourceInputColumns[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4095,7 +4095,7 @@ export interface QuicksightDataSetPhysicalTableMapS3SourceUploadSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#contains_header QuicksightDataSet#contains_header}
   */
-  readonly containsHeader?: boolean | cdktf.IResolvable;
+  readonly containsHeader?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#delimiter QuicksightDataSet#delimiter}
   */
@@ -4115,52 +4115,52 @@ export interface QuicksightDataSetPhysicalTableMapS3SourceUploadSettings {
 }
 
 export function quicksightDataSetPhysicalTableMapS3SourceUploadSettingsToTerraform(struct?: QuicksightDataSetPhysicalTableMapS3SourceUploadSettingsOutputReference | QuicksightDataSetPhysicalTableMapS3SourceUploadSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    contains_header: cdktf.booleanToTerraform(struct!.containsHeader),
-    delimiter: cdktf.stringToTerraform(struct!.delimiter),
-    format: cdktf.stringToTerraform(struct!.format),
-    start_from_row: cdktf.numberToTerraform(struct!.startFromRow),
-    text_qualifier: cdktf.stringToTerraform(struct!.textQualifier),
+    contains_header: cdktn.booleanToTerraform(struct!.containsHeader),
+    delimiter: cdktn.stringToTerraform(struct!.delimiter),
+    format: cdktn.stringToTerraform(struct!.format),
+    start_from_row: cdktn.numberToTerraform(struct!.startFromRow),
+    text_qualifier: cdktn.stringToTerraform(struct!.textQualifier),
   }
 }
 
 
 export function quicksightDataSetPhysicalTableMapS3SourceUploadSettingsToHclTerraform(struct?: QuicksightDataSetPhysicalTableMapS3SourceUploadSettingsOutputReference | QuicksightDataSetPhysicalTableMapS3SourceUploadSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     contains_header: {
-      value: cdktf.booleanToHclTerraform(struct!.containsHeader),
+      value: cdktn.booleanToHclTerraform(struct!.containsHeader),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     delimiter: {
-      value: cdktf.stringToHclTerraform(struct!.delimiter),
+      value: cdktn.stringToHclTerraform(struct!.delimiter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     format: {
-      value: cdktf.stringToHclTerraform(struct!.format),
+      value: cdktn.stringToHclTerraform(struct!.format),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_from_row: {
-      value: cdktf.numberToHclTerraform(struct!.startFromRow),
+      value: cdktn.numberToHclTerraform(struct!.startFromRow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     text_qualifier: {
-      value: cdktf.stringToHclTerraform(struct!.textQualifier),
+      value: cdktn.stringToHclTerraform(struct!.textQualifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4171,14 +4171,14 @@ export function quicksightDataSetPhysicalTableMapS3SourceUploadSettingsToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetPhysicalTableMapS3SourceUploadSettingsOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetPhysicalTableMapS3SourceUploadSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4228,11 +4228,11 @@ export class QuicksightDataSetPhysicalTableMapS3SourceUploadSettingsOutputRefere
   }
 
   // contains_header - computed: true, optional: true, required: false
-  private _containsHeader?: boolean | cdktf.IResolvable; 
+  private _containsHeader?: boolean | cdktn.IResolvable; 
   public get containsHeader() {
     return this.getBooleanAttribute('contains_header');
   }
-  public set containsHeader(value: boolean | cdktf.IResolvable) {
+  public set containsHeader(value: boolean | cdktn.IResolvable) {
     this._containsHeader = value;
   }
   public resetContainsHeader() {
@@ -4317,7 +4317,7 @@ export interface QuicksightDataSetPhysicalTableMapS3Source {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#input_columns QuicksightDataSet#input_columns}
   */
-  readonly inputColumns: QuicksightDataSetPhysicalTableMapS3SourceInputColumns[] | cdktf.IResolvable;
+  readonly inputColumns: QuicksightDataSetPhysicalTableMapS3SourceInputColumns[] | cdktn.IResolvable;
   /**
   * upload_settings block
   *
@@ -4327,32 +4327,32 @@ export interface QuicksightDataSetPhysicalTableMapS3Source {
 }
 
 export function quicksightDataSetPhysicalTableMapS3SourceToTerraform(struct?: QuicksightDataSetPhysicalTableMapS3SourceOutputReference | QuicksightDataSetPhysicalTableMapS3Source): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_source_arn: cdktf.stringToTerraform(struct!.dataSourceArn),
-    input_columns: cdktf.listMapper(quicksightDataSetPhysicalTableMapS3SourceInputColumnsToTerraform, true)(struct!.inputColumns),
+    data_source_arn: cdktn.stringToTerraform(struct!.dataSourceArn),
+    input_columns: cdktn.listMapper(quicksightDataSetPhysicalTableMapS3SourceInputColumnsToTerraform, true)(struct!.inputColumns),
     upload_settings: quicksightDataSetPhysicalTableMapS3SourceUploadSettingsToTerraform(struct!.uploadSettings),
   }
 }
 
 
 export function quicksightDataSetPhysicalTableMapS3SourceToHclTerraform(struct?: QuicksightDataSetPhysicalTableMapS3SourceOutputReference | QuicksightDataSetPhysicalTableMapS3Source): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_source_arn: {
-      value: cdktf.stringToHclTerraform(struct!.dataSourceArn),
+      value: cdktn.stringToHclTerraform(struct!.dataSourceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     input_columns: {
-      value: cdktf.listMapperHcl(quicksightDataSetPhysicalTableMapS3SourceInputColumnsToHclTerraform, true)(struct!.inputColumns),
+      value: cdktn.listMapperHcl(quicksightDataSetPhysicalTableMapS3SourceInputColumnsToHclTerraform, true)(struct!.inputColumns),
       isBlock: true,
       type: "list",
       storageClassType: "QuicksightDataSetPhysicalTableMapS3SourceInputColumnsList",
@@ -4369,14 +4369,14 @@ export function quicksightDataSetPhysicalTableMapS3SourceToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetPhysicalTableMapS3SourceOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetPhysicalTableMapS3SourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4431,7 +4431,7 @@ export class QuicksightDataSetPhysicalTableMapS3SourceOutputReference extends cd
   public get inputColumns() {
     return this._inputColumns;
   }
-  public putInputColumns(value: QuicksightDataSetPhysicalTableMapS3SourceInputColumns[] | cdktf.IResolvable) {
+  public putInputColumns(value: QuicksightDataSetPhysicalTableMapS3SourceInputColumns[] | cdktn.IResolvable) {
     this._inputColumns.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4477,13 +4477,13 @@ export interface QuicksightDataSetPhysicalTableMap {
   readonly s3Source?: QuicksightDataSetPhysicalTableMapS3Source;
 }
 
-export function quicksightDataSetPhysicalTableMapToTerraform(struct?: QuicksightDataSetPhysicalTableMap | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetPhysicalTableMapToTerraform(struct?: QuicksightDataSetPhysicalTableMap | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    physical_table_map_id: cdktf.stringToTerraform(struct!.physicalTableMapId),
+    physical_table_map_id: cdktn.stringToTerraform(struct!.physicalTableMapId),
     custom_sql: quicksightDataSetPhysicalTableMapCustomSqlToTerraform(struct!.customSql),
     relational_table: quicksightDataSetPhysicalTableMapRelationalTableToTerraform(struct!.relationalTable),
     s3_source: quicksightDataSetPhysicalTableMapS3SourceToTerraform(struct!.s3Source),
@@ -4491,14 +4491,14 @@ export function quicksightDataSetPhysicalTableMapToTerraform(struct?: Quicksight
 }
 
 
-export function quicksightDataSetPhysicalTableMapToHclTerraform(struct?: QuicksightDataSetPhysicalTableMap | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetPhysicalTableMapToHclTerraform(struct?: QuicksightDataSetPhysicalTableMap | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     physical_table_map_id: {
-      value: cdktf.stringToHclTerraform(struct!.physicalTableMapId),
+      value: cdktn.stringToHclTerraform(struct!.physicalTableMapId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4527,9 +4527,9 @@ export function quicksightDataSetPhysicalTableMapToHclTerraform(struct?: Quicksi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetPhysicalTableMapOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetPhysicalTableMapOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4537,11 +4537,11 @@ export class QuicksightDataSetPhysicalTableMapOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightDataSetPhysicalTableMap | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightDataSetPhysicalTableMap | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4566,7 +4566,7 @@ export class QuicksightDataSetPhysicalTableMapOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightDataSetPhysicalTableMap | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightDataSetPhysicalTableMap | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4575,7 +4575,7 @@ export class QuicksightDataSetPhysicalTableMapOutputReference extends cdktf.Comp
       this._relationalTable.internalValue = undefined;
       this._s3Source.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4651,15 +4651,15 @@ export class QuicksightDataSetPhysicalTableMapOutputReference extends cdktf.Comp
   }
 }
 
-export class QuicksightDataSetPhysicalTableMapList extends cdktf.ComplexList {
-  public internalValue? : QuicksightDataSetPhysicalTableMap[] | cdktf.IResolvable
+export class QuicksightDataSetPhysicalTableMapList extends cdktn.ComplexList {
+  public internalValue? : QuicksightDataSetPhysicalTableMap[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4686,38 +4686,38 @@ export interface QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrement
 }
 
 export function quicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindowToTerraform(struct?: QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindowOutputReference | QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column_name: cdktf.stringToTerraform(struct!.columnName),
-    size: cdktf.numberToTerraform(struct!.size),
-    size_unit: cdktf.stringToTerraform(struct!.sizeUnit),
+    column_name: cdktn.stringToTerraform(struct!.columnName),
+    size: cdktn.numberToTerraform(struct!.size),
+    size_unit: cdktn.stringToTerraform(struct!.sizeUnit),
   }
 }
 
 
 export function quicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindowToHclTerraform(struct?: QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindowOutputReference | QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column_name: {
-      value: cdktf.stringToHclTerraform(struct!.columnName),
+      value: cdktn.stringToHclTerraform(struct!.columnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     size: {
-      value: cdktf.numberToHclTerraform(struct!.size),
+      value: cdktn.numberToHclTerraform(struct!.size),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     size_unit: {
-      value: cdktf.stringToHclTerraform(struct!.sizeUnit),
+      value: cdktn.stringToHclTerraform(struct!.sizeUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4728,14 +4728,14 @@ export function quicksightDataSetRefreshPropertiesRefreshConfigurationIncrementa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindowOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4821,8 +4821,8 @@ export interface QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrement
 }
 
 export function quicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshToTerraform(struct?: QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshOutputReference | QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefresh): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4832,8 +4832,8 @@ export function quicksightDataSetRefreshPropertiesRefreshConfigurationIncrementa
 
 
 export function quicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshToHclTerraform(struct?: QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshOutputReference | QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefresh): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4849,14 +4849,14 @@ export function quicksightDataSetRefreshPropertiesRefreshConfigurationIncrementa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4904,8 +4904,8 @@ export interface QuicksightDataSetRefreshPropertiesRefreshConfiguration {
 }
 
 export function quicksightDataSetRefreshPropertiesRefreshConfigurationToTerraform(struct?: QuicksightDataSetRefreshPropertiesRefreshConfigurationOutputReference | QuicksightDataSetRefreshPropertiesRefreshConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4915,8 +4915,8 @@ export function quicksightDataSetRefreshPropertiesRefreshConfigurationToTerrafor
 
 
 export function quicksightDataSetRefreshPropertiesRefreshConfigurationToHclTerraform(struct?: QuicksightDataSetRefreshPropertiesRefreshConfigurationOutputReference | QuicksightDataSetRefreshPropertiesRefreshConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4932,14 +4932,14 @@ export function quicksightDataSetRefreshPropertiesRefreshConfigurationToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetRefreshPropertiesRefreshConfigurationOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetRefreshPropertiesRefreshConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4987,8 +4987,8 @@ export interface QuicksightDataSetRefreshProperties {
 }
 
 export function quicksightDataSetRefreshPropertiesToTerraform(struct?: QuicksightDataSetRefreshPropertiesOutputReference | QuicksightDataSetRefreshProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4998,8 +4998,8 @@ export function quicksightDataSetRefreshPropertiesToTerraform(struct?: Quicksigh
 
 
 export function quicksightDataSetRefreshPropertiesToHclTerraform(struct?: QuicksightDataSetRefreshPropertiesOutputReference | QuicksightDataSetRefreshProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5015,14 +5015,14 @@ export function quicksightDataSetRefreshPropertiesToHclTerraform(struct?: Quicks
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetRefreshPropertiesOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetRefreshPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5084,52 +5084,52 @@ export interface QuicksightDataSetRowLevelPermissionDataSet {
 }
 
 export function quicksightDataSetRowLevelPermissionDataSetToTerraform(struct?: QuicksightDataSetRowLevelPermissionDataSetOutputReference | QuicksightDataSetRowLevelPermissionDataSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
-    format_version: cdktf.stringToTerraform(struct!.formatVersion),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    permission_policy: cdktf.stringToTerraform(struct!.permissionPolicy),
-    status: cdktf.stringToTerraform(struct!.status),
+    arn: cdktn.stringToTerraform(struct!.arn),
+    format_version: cdktn.stringToTerraform(struct!.formatVersion),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    permission_policy: cdktn.stringToTerraform(struct!.permissionPolicy),
+    status: cdktn.stringToTerraform(struct!.status),
   }
 }
 
 
 export function quicksightDataSetRowLevelPermissionDataSetToHclTerraform(struct?: QuicksightDataSetRowLevelPermissionDataSetOutputReference | QuicksightDataSetRowLevelPermissionDataSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     format_version: {
-      value: cdktf.stringToHclTerraform(struct!.formatVersion),
+      value: cdktn.stringToHclTerraform(struct!.formatVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     permission_policy: {
-      value: cdktf.stringToHclTerraform(struct!.permissionPolicy),
+      value: cdktn.stringToHclTerraform(struct!.permissionPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5140,14 +5140,14 @@ export function quicksightDataSetRowLevelPermissionDataSetToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetRowLevelPermissionDataSetOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetRowLevelPermissionDataSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5289,46 +5289,46 @@ export interface QuicksightDataSetRowLevelPermissionTagConfigurationTagRules {
   readonly tagMultiValueDelimiter?: string;
 }
 
-export function quicksightDataSetRowLevelPermissionTagConfigurationTagRulesToTerraform(struct?: QuicksightDataSetRowLevelPermissionTagConfigurationTagRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetRowLevelPermissionTagConfigurationTagRulesToTerraform(struct?: QuicksightDataSetRowLevelPermissionTagConfigurationTagRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column_name: cdktf.stringToTerraform(struct!.columnName),
-    match_all_value: cdktf.stringToTerraform(struct!.matchAllValue),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_multi_value_delimiter: cdktf.stringToTerraform(struct!.tagMultiValueDelimiter),
+    column_name: cdktn.stringToTerraform(struct!.columnName),
+    match_all_value: cdktn.stringToTerraform(struct!.matchAllValue),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_multi_value_delimiter: cdktn.stringToTerraform(struct!.tagMultiValueDelimiter),
   }
 }
 
 
-export function quicksightDataSetRowLevelPermissionTagConfigurationTagRulesToHclTerraform(struct?: QuicksightDataSetRowLevelPermissionTagConfigurationTagRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSetRowLevelPermissionTagConfigurationTagRulesToHclTerraform(struct?: QuicksightDataSetRowLevelPermissionTagConfigurationTagRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column_name: {
-      value: cdktf.stringToHclTerraform(struct!.columnName),
+      value: cdktn.stringToHclTerraform(struct!.columnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_all_value: {
-      value: cdktf.stringToHclTerraform(struct!.matchAllValue),
+      value: cdktn.stringToHclTerraform(struct!.matchAllValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_multi_value_delimiter: {
-      value: cdktf.stringToHclTerraform(struct!.tagMultiValueDelimiter),
+      value: cdktn.stringToHclTerraform(struct!.tagMultiValueDelimiter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5339,9 +5339,9 @@ export function quicksightDataSetRowLevelPermissionTagConfigurationTagRulesToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5349,11 +5349,11 @@ export class QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightDataSetRowLevelPermissionTagConfigurationTagRules | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightDataSetRowLevelPermissionTagConfigurationTagRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5378,7 +5378,7 @@ export class QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightDataSetRowLevelPermissionTagConfigurationTagRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightDataSetRowLevelPermissionTagConfigurationTagRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5387,7 +5387,7 @@ export class QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputRe
       this._tagKey = undefined;
       this._tagMultiValueDelimiter = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5460,15 +5460,15 @@ export class QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputRe
   }
 }
 
-export class QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesList extends cdktf.ComplexList {
-  public internalValue? : QuicksightDataSetRowLevelPermissionTagConfigurationTagRules[] | cdktf.IResolvable
+export class QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesList extends cdktn.ComplexList {
+  public internalValue? : QuicksightDataSetRowLevelPermissionTagConfigurationTagRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5489,35 +5489,35 @@ export interface QuicksightDataSetRowLevelPermissionTagConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#tag_rules QuicksightDataSet#tag_rules}
   */
-  readonly tagRules: QuicksightDataSetRowLevelPermissionTagConfigurationTagRules[] | cdktf.IResolvable;
+  readonly tagRules: QuicksightDataSetRowLevelPermissionTagConfigurationTagRules[] | cdktn.IResolvable;
 }
 
 export function quicksightDataSetRowLevelPermissionTagConfigurationToTerraform(struct?: QuicksightDataSetRowLevelPermissionTagConfigurationOutputReference | QuicksightDataSetRowLevelPermissionTagConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    status: cdktf.stringToTerraform(struct!.status),
-    tag_rules: cdktf.listMapper(quicksightDataSetRowLevelPermissionTagConfigurationTagRulesToTerraform, true)(struct!.tagRules),
+    status: cdktn.stringToTerraform(struct!.status),
+    tag_rules: cdktn.listMapper(quicksightDataSetRowLevelPermissionTagConfigurationTagRulesToTerraform, true)(struct!.tagRules),
   }
 }
 
 
 export function quicksightDataSetRowLevelPermissionTagConfigurationToHclTerraform(struct?: QuicksightDataSetRowLevelPermissionTagConfigurationOutputReference | QuicksightDataSetRowLevelPermissionTagConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_rules: {
-      value: cdktf.listMapperHcl(quicksightDataSetRowLevelPermissionTagConfigurationTagRulesToHclTerraform, true)(struct!.tagRules),
+      value: cdktn.listMapperHcl(quicksightDataSetRowLevelPermissionTagConfigurationTagRulesToHclTerraform, true)(struct!.tagRules),
       isBlock: true,
       type: "list",
       storageClassType: "QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesList",
@@ -5528,14 +5528,14 @@ export function quicksightDataSetRowLevelPermissionTagConfigurationToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSetRowLevelPermissionTagConfigurationOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSetRowLevelPermissionTagConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5587,7 +5587,7 @@ export class QuicksightDataSetRowLevelPermissionTagConfigurationOutputReference 
   public get tagRules() {
     return this._tagRules;
   }
-  public putTagRules(value: QuicksightDataSetRowLevelPermissionTagConfigurationTagRules[] | cdktf.IResolvable) {
+  public putTagRules(value: QuicksightDataSetRowLevelPermissionTagConfigurationTagRules[] | cdktn.IResolvable) {
     this._tagRules.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -5599,7 +5599,7 @@ export class QuicksightDataSetRowLevelPermissionTagConfigurationOutputReference 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set aws_quicksight_data_set}
 */
-export class QuicksightDataSet extends cdktf.TerraformResource {
+export class QuicksightDataSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -5610,14 +5610,14 @@ export class QuicksightDataSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QuicksightDataSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QuicksightDataSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightDataSet to import
   * @param importFromId The id of the existing QuicksightDataSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightDataSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_data_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_data_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -5823,7 +5823,7 @@ export class QuicksightDataSet extends cdktf.TerraformResource {
   public get columnGroups() {
     return this._columnGroups;
   }
-  public putColumnGroups(value: QuicksightDataSetColumnGroups[] | cdktf.IResolvable) {
+  public putColumnGroups(value: QuicksightDataSetColumnGroups[] | cdktn.IResolvable) {
     this._columnGroups.internalValue = value;
   }
   public resetColumnGroups() {
@@ -5839,7 +5839,7 @@ export class QuicksightDataSet extends cdktf.TerraformResource {
   public get columnLevelPermissionRules() {
     return this._columnLevelPermissionRules;
   }
-  public putColumnLevelPermissionRules(value: QuicksightDataSetColumnLevelPermissionRules[] | cdktf.IResolvable) {
+  public putColumnLevelPermissionRules(value: QuicksightDataSetColumnLevelPermissionRules[] | cdktn.IResolvable) {
     this._columnLevelPermissionRules.internalValue = value;
   }
   public resetColumnLevelPermissionRules() {
@@ -5871,7 +5871,7 @@ export class QuicksightDataSet extends cdktf.TerraformResource {
   public get fieldFolders() {
     return this._fieldFolders;
   }
-  public putFieldFolders(value: QuicksightDataSetFieldFolders[] | cdktf.IResolvable) {
+  public putFieldFolders(value: QuicksightDataSetFieldFolders[] | cdktn.IResolvable) {
     this._fieldFolders.internalValue = value;
   }
   public resetFieldFolders() {
@@ -5887,7 +5887,7 @@ export class QuicksightDataSet extends cdktf.TerraformResource {
   public get logicalTableMap() {
     return this._logicalTableMap;
   }
-  public putLogicalTableMap(value: QuicksightDataSetLogicalTableMap[] | cdktf.IResolvable) {
+  public putLogicalTableMap(value: QuicksightDataSetLogicalTableMap[] | cdktn.IResolvable) {
     this._logicalTableMap.internalValue = value;
   }
   public resetLogicalTableMap() {
@@ -5903,7 +5903,7 @@ export class QuicksightDataSet extends cdktf.TerraformResource {
   public get permissions() {
     return this._permissions;
   }
-  public putPermissions(value: QuicksightDataSetPermissions[] | cdktf.IResolvable) {
+  public putPermissions(value: QuicksightDataSetPermissions[] | cdktn.IResolvable) {
     this._permissions.internalValue = value;
   }
   public resetPermissions() {
@@ -5919,7 +5919,7 @@ export class QuicksightDataSet extends cdktf.TerraformResource {
   public get physicalTableMap() {
     return this._physicalTableMap;
   }
-  public putPhysicalTableMap(value: QuicksightDataSetPhysicalTableMap[] | cdktf.IResolvable) {
+  public putPhysicalTableMap(value: QuicksightDataSetPhysicalTableMap[] | cdktn.IResolvable) {
     this._physicalTableMap.internalValue = value;
   }
   public resetPhysicalTableMap() {
@@ -5984,22 +5984,22 @@ export class QuicksightDataSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      data_set_id: cdktf.stringToTerraform(this._dataSetId),
-      id: cdktf.stringToTerraform(this._id),
-      import_mode: cdktf.stringToTerraform(this._importMode),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      use_as: cdktf.stringToTerraform(this._useAs),
-      column_groups: cdktf.listMapper(quicksightDataSetColumnGroupsToTerraform, true)(this._columnGroups.internalValue),
-      column_level_permission_rules: cdktf.listMapper(quicksightDataSetColumnLevelPermissionRulesToTerraform, true)(this._columnLevelPermissionRules.internalValue),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      data_set_id: cdktn.stringToTerraform(this._dataSetId),
+      id: cdktn.stringToTerraform(this._id),
+      import_mode: cdktn.stringToTerraform(this._importMode),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      use_as: cdktn.stringToTerraform(this._useAs),
+      column_groups: cdktn.listMapper(quicksightDataSetColumnGroupsToTerraform, true)(this._columnGroups.internalValue),
+      column_level_permission_rules: cdktn.listMapper(quicksightDataSetColumnLevelPermissionRulesToTerraform, true)(this._columnLevelPermissionRules.internalValue),
       data_set_usage_configuration: quicksightDataSetDataSetUsageConfigurationToTerraform(this._dataSetUsageConfiguration.internalValue),
-      field_folders: cdktf.listMapper(quicksightDataSetFieldFoldersToTerraform, true)(this._fieldFolders.internalValue),
-      logical_table_map: cdktf.listMapper(quicksightDataSetLogicalTableMapToTerraform, true)(this._logicalTableMap.internalValue),
-      permissions: cdktf.listMapper(quicksightDataSetPermissionsToTerraform, true)(this._permissions.internalValue),
-      physical_table_map: cdktf.listMapper(quicksightDataSetPhysicalTableMapToTerraform, true)(this._physicalTableMap.internalValue),
+      field_folders: cdktn.listMapper(quicksightDataSetFieldFoldersToTerraform, true)(this._fieldFolders.internalValue),
+      logical_table_map: cdktn.listMapper(quicksightDataSetLogicalTableMapToTerraform, true)(this._logicalTableMap.internalValue),
+      permissions: cdktn.listMapper(quicksightDataSetPermissionsToTerraform, true)(this._permissions.internalValue),
+      physical_table_map: cdktn.listMapper(quicksightDataSetPhysicalTableMapToTerraform, true)(this._physicalTableMap.internalValue),
       refresh_properties: quicksightDataSetRefreshPropertiesToTerraform(this._refreshProperties.internalValue),
       row_level_permission_data_set: quicksightDataSetRowLevelPermissionDataSetToTerraform(this._rowLevelPermissionDataSet.internalValue),
       row_level_permission_tag_configuration: quicksightDataSetRowLevelPermissionTagConfigurationToTerraform(this._rowLevelPermissionTagConfiguration.internalValue),
@@ -6009,67 +6009,67 @@ export class QuicksightDataSet extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_set_id: {
-        value: cdktf.stringToHclTerraform(this._dataSetId),
+        value: cdktn.stringToHclTerraform(this._dataSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       import_mode: {
-        value: cdktf.stringToHclTerraform(this._importMode),
+        value: cdktn.stringToHclTerraform(this._importMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       use_as: {
-        value: cdktf.stringToHclTerraform(this._useAs),
+        value: cdktn.stringToHclTerraform(this._useAs),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       column_groups: {
-        value: cdktf.listMapperHcl(quicksightDataSetColumnGroupsToHclTerraform, true)(this._columnGroups.internalValue),
+        value: cdktn.listMapperHcl(quicksightDataSetColumnGroupsToHclTerraform, true)(this._columnGroups.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "QuicksightDataSetColumnGroupsList",
       },
       column_level_permission_rules: {
-        value: cdktf.listMapperHcl(quicksightDataSetColumnLevelPermissionRulesToHclTerraform, true)(this._columnLevelPermissionRules.internalValue),
+        value: cdktn.listMapperHcl(quicksightDataSetColumnLevelPermissionRulesToHclTerraform, true)(this._columnLevelPermissionRules.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "QuicksightDataSetColumnLevelPermissionRulesList",
@@ -6081,25 +6081,25 @@ export class QuicksightDataSet extends cdktf.TerraformResource {
         storageClassType: "QuicksightDataSetDataSetUsageConfigurationList",
       },
       field_folders: {
-        value: cdktf.listMapperHcl(quicksightDataSetFieldFoldersToHclTerraform, true)(this._fieldFolders.internalValue),
+        value: cdktn.listMapperHcl(quicksightDataSetFieldFoldersToHclTerraform, true)(this._fieldFolders.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "QuicksightDataSetFieldFoldersList",
       },
       logical_table_map: {
-        value: cdktf.listMapperHcl(quicksightDataSetLogicalTableMapToHclTerraform, true)(this._logicalTableMap.internalValue),
+        value: cdktn.listMapperHcl(quicksightDataSetLogicalTableMapToHclTerraform, true)(this._logicalTableMap.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "QuicksightDataSetLogicalTableMapList",
       },
       permissions: {
-        value: cdktf.listMapperHcl(quicksightDataSetPermissionsToHclTerraform, true)(this._permissions.internalValue),
+        value: cdktn.listMapperHcl(quicksightDataSetPermissionsToHclTerraform, true)(this._permissions.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "QuicksightDataSetPermissionsList",
       },
       physical_table_map: {
-        value: cdktf.listMapperHcl(quicksightDataSetPhysicalTableMapToHclTerraform, true)(this._physicalTableMap.internalValue),
+        value: cdktn.listMapperHcl(quicksightDataSetPhysicalTableMapToHclTerraform, true)(this._physicalTableMap.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "QuicksightDataSetPhysicalTableMapList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2ClientVpnEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2ClientVpnEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_client_vpn_endpoint#client_cidr_block Ec2ClientVpnEndpoint#client_cidr_block}
   */
@@ -23,7 +23,7 @@ export interface Ec2ClientVpnEndpointConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_client_vpn_endpoint#disconnect_on_session_timeout Ec2ClientVpnEndpoint#disconnect_on_session_timeout}
   */
-  readonly disconnectOnSessionTimeout?: boolean | cdktf.IResolvable;
+  readonly disconnectOnSessionTimeout?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_client_vpn_endpoint#dns_servers Ec2ClientVpnEndpoint#dns_servers}
   */
@@ -64,7 +64,7 @@ export interface Ec2ClientVpnEndpointConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_client_vpn_endpoint#split_tunnel Ec2ClientVpnEndpoint#split_tunnel}
   */
-  readonly splitTunnel?: boolean | cdktf.IResolvable;
+  readonly splitTunnel?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_client_vpn_endpoint#tags Ec2ClientVpnEndpoint#tags}
   */
@@ -94,7 +94,7 @@ export interface Ec2ClientVpnEndpointConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_client_vpn_endpoint#authentication_options Ec2ClientVpnEndpoint#authentication_options}
   */
-  readonly authenticationOptions: Ec2ClientVpnEndpointAuthenticationOptions[] | cdktf.IResolvable;
+  readonly authenticationOptions: Ec2ClientVpnEndpointAuthenticationOptions[] | cdktn.IResolvable;
   /**
   * client_connect_options block
   *
@@ -143,53 +143,53 @@ export interface Ec2ClientVpnEndpointAuthenticationOptions {
   readonly type: string;
 }
 
-export function ec2ClientVpnEndpointAuthenticationOptionsToTerraform(struct?: Ec2ClientVpnEndpointAuthenticationOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2ClientVpnEndpointAuthenticationOptionsToTerraform(struct?: Ec2ClientVpnEndpointAuthenticationOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    active_directory_id: cdktf.stringToTerraform(struct!.activeDirectoryId),
-    root_certificate_chain_arn: cdktf.stringToTerraform(struct!.rootCertificateChainArn),
-    saml_provider_arn: cdktf.stringToTerraform(struct!.samlProviderArn),
-    self_service_saml_provider_arn: cdktf.stringToTerraform(struct!.selfServiceSamlProviderArn),
-    type: cdktf.stringToTerraform(struct!.type),
+    active_directory_id: cdktn.stringToTerraform(struct!.activeDirectoryId),
+    root_certificate_chain_arn: cdktn.stringToTerraform(struct!.rootCertificateChainArn),
+    saml_provider_arn: cdktn.stringToTerraform(struct!.samlProviderArn),
+    self_service_saml_provider_arn: cdktn.stringToTerraform(struct!.selfServiceSamlProviderArn),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function ec2ClientVpnEndpointAuthenticationOptionsToHclTerraform(struct?: Ec2ClientVpnEndpointAuthenticationOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2ClientVpnEndpointAuthenticationOptionsToHclTerraform(struct?: Ec2ClientVpnEndpointAuthenticationOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     active_directory_id: {
-      value: cdktf.stringToHclTerraform(struct!.activeDirectoryId),
+      value: cdktn.stringToHclTerraform(struct!.activeDirectoryId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_certificate_chain_arn: {
-      value: cdktf.stringToHclTerraform(struct!.rootCertificateChainArn),
+      value: cdktn.stringToHclTerraform(struct!.rootCertificateChainArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     saml_provider_arn: {
-      value: cdktf.stringToHclTerraform(struct!.samlProviderArn),
+      value: cdktn.stringToHclTerraform(struct!.samlProviderArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     self_service_saml_provider_arn: {
-      value: cdktf.stringToHclTerraform(struct!.selfServiceSamlProviderArn),
+      value: cdktn.stringToHclTerraform(struct!.selfServiceSamlProviderArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -200,9 +200,9 @@ export function ec2ClientVpnEndpointAuthenticationOptionsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2ClientVpnEndpointAuthenticationOptionsOutputReference extends cdktf.ComplexObject {
+export class Ec2ClientVpnEndpointAuthenticationOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -210,11 +210,11 @@ export class Ec2ClientVpnEndpointAuthenticationOptionsOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Ec2ClientVpnEndpointAuthenticationOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): Ec2ClientVpnEndpointAuthenticationOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -243,7 +243,7 @@ export class Ec2ClientVpnEndpointAuthenticationOptionsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Ec2ClientVpnEndpointAuthenticationOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Ec2ClientVpnEndpointAuthenticationOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -253,7 +253,7 @@ export class Ec2ClientVpnEndpointAuthenticationOptionsOutputReference extends cd
       this._selfServiceSamlProviderArn = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -346,15 +346,15 @@ export class Ec2ClientVpnEndpointAuthenticationOptionsOutputReference extends cd
   }
 }
 
-export class Ec2ClientVpnEndpointAuthenticationOptionsList extends cdktf.ComplexList {
-  public internalValue? : Ec2ClientVpnEndpointAuthenticationOptions[] | cdktf.IResolvable
+export class Ec2ClientVpnEndpointAuthenticationOptionsList extends cdktn.ComplexList {
+  public internalValue? : Ec2ClientVpnEndpointAuthenticationOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -369,7 +369,7 @@ export interface Ec2ClientVpnEndpointClientConnectOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_client_vpn_endpoint#enabled Ec2ClientVpnEndpoint#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_client_vpn_endpoint#lambda_function_arn Ec2ClientVpnEndpoint#lambda_function_arn}
   */
@@ -377,31 +377,31 @@ export interface Ec2ClientVpnEndpointClientConnectOptions {
 }
 
 export function ec2ClientVpnEndpointClientConnectOptionsToTerraform(struct?: Ec2ClientVpnEndpointClientConnectOptionsOutputReference | Ec2ClientVpnEndpointClientConnectOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    lambda_function_arn: cdktf.stringToTerraform(struct!.lambdaFunctionArn),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    lambda_function_arn: cdktn.stringToTerraform(struct!.lambdaFunctionArn),
   }
 }
 
 
 export function ec2ClientVpnEndpointClientConnectOptionsToHclTerraform(struct?: Ec2ClientVpnEndpointClientConnectOptionsOutputReference | Ec2ClientVpnEndpointClientConnectOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     lambda_function_arn: {
-      value: cdktf.stringToHclTerraform(struct!.lambdaFunctionArn),
+      value: cdktn.stringToHclTerraform(struct!.lambdaFunctionArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -412,14 +412,14 @@ export function ec2ClientVpnEndpointClientConnectOptionsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2ClientVpnEndpointClientConnectOptionsOutputReference extends cdktf.ComplexObject {
+export class Ec2ClientVpnEndpointClientConnectOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -451,11 +451,11 @@ export class Ec2ClientVpnEndpointClientConnectOptionsOutputReference extends cdk
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -490,35 +490,35 @@ export interface Ec2ClientVpnEndpointClientLoginBannerOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_client_vpn_endpoint#enabled Ec2ClientVpnEndpoint#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
 export function ec2ClientVpnEndpointClientLoginBannerOptionsToTerraform(struct?: Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference | Ec2ClientVpnEndpointClientLoginBannerOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    banner_text: cdktf.stringToTerraform(struct!.bannerText),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    banner_text: cdktn.stringToTerraform(struct!.bannerText),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function ec2ClientVpnEndpointClientLoginBannerOptionsToHclTerraform(struct?: Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference | Ec2ClientVpnEndpointClientLoginBannerOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     banner_text: {
-      value: cdktf.stringToHclTerraform(struct!.bannerText),
+      value: cdktn.stringToHclTerraform(struct!.bannerText),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -529,14 +529,14 @@ export function ec2ClientVpnEndpointClientLoginBannerOptionsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference extends cdktf.ComplexObject {
+export class Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -584,11 +584,11 @@ export class Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference extends
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -603,28 +603,28 @@ export interface Ec2ClientVpnEndpointClientRouteEnforcementOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_client_vpn_endpoint#enforced Ec2ClientVpnEndpoint#enforced}
   */
-  readonly enforced?: boolean | cdktf.IResolvable;
+  readonly enforced?: boolean | cdktn.IResolvable;
 }
 
 export function ec2ClientVpnEndpointClientRouteEnforcementOptionsToTerraform(struct?: Ec2ClientVpnEndpointClientRouteEnforcementOptionsOutputReference | Ec2ClientVpnEndpointClientRouteEnforcementOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enforced: cdktf.booleanToTerraform(struct!.enforced),
+    enforced: cdktn.booleanToTerraform(struct!.enforced),
   }
 }
 
 
 export function ec2ClientVpnEndpointClientRouteEnforcementOptionsToHclTerraform(struct?: Ec2ClientVpnEndpointClientRouteEnforcementOptionsOutputReference | Ec2ClientVpnEndpointClientRouteEnforcementOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enforced: {
-      value: cdktf.booleanToHclTerraform(struct!.enforced),
+      value: cdktn.booleanToHclTerraform(struct!.enforced),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -635,14 +635,14 @@ export function ec2ClientVpnEndpointClientRouteEnforcementOptionsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2ClientVpnEndpointClientRouteEnforcementOptionsOutputReference extends cdktf.ComplexObject {
+export class Ec2ClientVpnEndpointClientRouteEnforcementOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -668,11 +668,11 @@ export class Ec2ClientVpnEndpointClientRouteEnforcementOptionsOutputReference ex
   }
 
   // enforced - computed: true, optional: true, required: false
-  private _enforced?: boolean | cdktf.IResolvable; 
+  private _enforced?: boolean | cdktn.IResolvable; 
   public get enforced() {
     return this.getBooleanAttribute('enforced');
   }
-  public set enforced(value: boolean | cdktf.IResolvable) {
+  public set enforced(value: boolean | cdktn.IResolvable) {
     this._enforced = value;
   }
   public resetEnforced() {
@@ -695,42 +695,42 @@ export interface Ec2ClientVpnEndpointConnectionLogOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_client_vpn_endpoint#enabled Ec2ClientVpnEndpoint#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
 }
 
 export function ec2ClientVpnEndpointConnectionLogOptionsToTerraform(struct?: Ec2ClientVpnEndpointConnectionLogOptionsOutputReference | Ec2ClientVpnEndpointConnectionLogOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloudwatch_log_group: cdktf.stringToTerraform(struct!.cloudwatchLogGroup),
-    cloudwatch_log_stream: cdktf.stringToTerraform(struct!.cloudwatchLogStream),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    cloudwatch_log_group: cdktn.stringToTerraform(struct!.cloudwatchLogGroup),
+    cloudwatch_log_stream: cdktn.stringToTerraform(struct!.cloudwatchLogStream),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function ec2ClientVpnEndpointConnectionLogOptionsToHclTerraform(struct?: Ec2ClientVpnEndpointConnectionLogOptionsOutputReference | Ec2ClientVpnEndpointConnectionLogOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloudwatch_log_group: {
-      value: cdktf.stringToHclTerraform(struct!.cloudwatchLogGroup),
+      value: cdktn.stringToHclTerraform(struct!.cloudwatchLogGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cloudwatch_log_stream: {
-      value: cdktf.stringToHclTerraform(struct!.cloudwatchLogStream),
+      value: cdktn.stringToHclTerraform(struct!.cloudwatchLogStream),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -741,14 +741,14 @@ export function ec2ClientVpnEndpointConnectionLogOptionsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2ClientVpnEndpointConnectionLogOptionsOutputReference extends cdktf.ComplexObject {
+export class Ec2ClientVpnEndpointConnectionLogOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -818,11 +818,11 @@ export class Ec2ClientVpnEndpointConnectionLogOptionsOutputReference extends cdk
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -834,7 +834,7 @@ export class Ec2ClientVpnEndpointConnectionLogOptionsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint}
 */
-export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
+export class Ec2ClientVpnEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -845,14 +845,14 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2ClientVpnEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2ClientVpnEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2ClientVpnEndpoint to import
   * @param importFromId The id of the existing Ec2ClientVpnEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_client_vpn_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2ClientVpnEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_client_vpn_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_client_vpn_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -949,11 +949,11 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   }
 
   // disconnect_on_session_timeout - computed: true, optional: true, required: false
-  private _disconnectOnSessionTimeout?: boolean | cdktf.IResolvable; 
+  private _disconnectOnSessionTimeout?: boolean | cdktn.IResolvable; 
   public get disconnectOnSessionTimeout() {
     return this.getBooleanAttribute('disconnect_on_session_timeout');
   }
-  public set disconnectOnSessionTimeout(value: boolean | cdktf.IResolvable) {
+  public set disconnectOnSessionTimeout(value: boolean | cdktn.IResolvable) {
     this._disconnectOnSessionTimeout = value;
   }
   public resetDisconnectOnSessionTimeout() {
@@ -1036,7 +1036,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -1100,11 +1100,11 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   }
 
   // split_tunnel - computed: false, optional: true, required: false
-  private _splitTunnel?: boolean | cdktf.IResolvable; 
+  private _splitTunnel?: boolean | cdktn.IResolvable; 
   public get splitTunnel() {
     return this.getBooleanAttribute('split_tunnel');
   }
-  public set splitTunnel(value: boolean | cdktf.IResolvable) {
+  public set splitTunnel(value: boolean | cdktn.IResolvable) {
     this._splitTunnel = value;
   }
   public resetSplitTunnel() {
@@ -1216,7 +1216,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   public get authenticationOptions() {
     return this._authenticationOptions;
   }
-  public putAuthenticationOptions(value: Ec2ClientVpnEndpointAuthenticationOptions[] | cdktf.IResolvable) {
+  public putAuthenticationOptions(value: Ec2ClientVpnEndpointAuthenticationOptions[] | cdktn.IResolvable) {
     this._authenticationOptions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1291,25 +1291,25 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_cidr_block: cdktf.stringToTerraform(this._clientCidrBlock),
-      description: cdktf.stringToTerraform(this._description),
-      disconnect_on_session_timeout: cdktf.booleanToTerraform(this._disconnectOnSessionTimeout),
-      dns_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dnsServers),
-      endpoint_ip_address_type: cdktf.stringToTerraform(this._endpointIpAddressType),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
-      self_service_portal: cdktf.stringToTerraform(this._selfServicePortal),
-      server_certificate_arn: cdktf.stringToTerraform(this._serverCertificateArn),
-      session_timeout_hours: cdktf.numberToTerraform(this._sessionTimeoutHours),
-      split_tunnel: cdktf.booleanToTerraform(this._splitTunnel),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      traffic_ip_address_type: cdktf.stringToTerraform(this._trafficIpAddressType),
-      transport_protocol: cdktf.stringToTerraform(this._transportProtocol),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
-      vpn_port: cdktf.numberToTerraform(this._vpnPort),
-      authentication_options: cdktf.listMapper(ec2ClientVpnEndpointAuthenticationOptionsToTerraform, true)(this._authenticationOptions.internalValue),
+      client_cidr_block: cdktn.stringToTerraform(this._clientCidrBlock),
+      description: cdktn.stringToTerraform(this._description),
+      disconnect_on_session_timeout: cdktn.booleanToTerraform(this._disconnectOnSessionTimeout),
+      dns_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._dnsServers),
+      endpoint_ip_address_type: cdktn.stringToTerraform(this._endpointIpAddressType),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupIds),
+      self_service_portal: cdktn.stringToTerraform(this._selfServicePortal),
+      server_certificate_arn: cdktn.stringToTerraform(this._serverCertificateArn),
+      session_timeout_hours: cdktn.numberToTerraform(this._sessionTimeoutHours),
+      split_tunnel: cdktn.booleanToTerraform(this._splitTunnel),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      traffic_ip_address_type: cdktn.stringToTerraform(this._trafficIpAddressType),
+      transport_protocol: cdktn.stringToTerraform(this._transportProtocol),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
+      vpn_port: cdktn.numberToTerraform(this._vpnPort),
+      authentication_options: cdktn.listMapper(ec2ClientVpnEndpointAuthenticationOptionsToTerraform, true)(this._authenticationOptions.internalValue),
       client_connect_options: ec2ClientVpnEndpointClientConnectOptionsToTerraform(this._clientConnectOptions.internalValue),
       client_login_banner_options: ec2ClientVpnEndpointClientLoginBannerOptionsToTerraform(this._clientLoginBannerOptions.internalValue),
       client_route_enforcement_options: ec2ClientVpnEndpointClientRouteEnforcementOptionsToTerraform(this._clientRouteEnforcementOptions.internalValue),
@@ -1320,115 +1320,115 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       client_cidr_block: {
-        value: cdktf.stringToHclTerraform(this._clientCidrBlock),
+        value: cdktn.stringToHclTerraform(this._clientCidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disconnect_on_session_timeout: {
-        value: cdktf.booleanToHclTerraform(this._disconnectOnSessionTimeout),
+        value: cdktn.booleanToHclTerraform(this._disconnectOnSessionTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       dns_servers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dnsServers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._dnsServers),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       endpoint_ip_address_type: {
-        value: cdktf.stringToHclTerraform(this._endpointIpAddressType),
+        value: cdktn.stringToHclTerraform(this._endpointIpAddressType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       self_service_portal: {
-        value: cdktf.stringToHclTerraform(this._selfServicePortal),
+        value: cdktn.stringToHclTerraform(this._selfServicePortal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_certificate_arn: {
-        value: cdktf.stringToHclTerraform(this._serverCertificateArn),
+        value: cdktn.stringToHclTerraform(this._serverCertificateArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       session_timeout_hours: {
-        value: cdktf.numberToHclTerraform(this._sessionTimeoutHours),
+        value: cdktn.numberToHclTerraform(this._sessionTimeoutHours),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       split_tunnel: {
-        value: cdktf.booleanToHclTerraform(this._splitTunnel),
+        value: cdktn.booleanToHclTerraform(this._splitTunnel),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       traffic_ip_address_type: {
-        value: cdktf.stringToHclTerraform(this._trafficIpAddressType),
+        value: cdktn.stringToHclTerraform(this._trafficIpAddressType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transport_protocol: {
-        value: cdktf.stringToHclTerraform(this._transportProtocol),
+        value: cdktn.stringToHclTerraform(this._transportProtocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpn_port: {
-        value: cdktf.numberToHclTerraform(this._vpnPort),
+        value: cdktn.numberToHclTerraform(this._vpnPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       authentication_options: {
-        value: cdktf.listMapperHcl(ec2ClientVpnEndpointAuthenticationOptionsToHclTerraform, true)(this._authenticationOptions.internalValue),
+        value: cdktn.listMapperHcl(ec2ClientVpnEndpointAuthenticationOptionsToHclTerraform, true)(this._authenticationOptions.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "Ec2ClientVpnEndpointAuthenticationOptionsList",

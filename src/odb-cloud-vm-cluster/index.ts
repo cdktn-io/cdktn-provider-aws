@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OdbCloudVmClusterConfig extends cdktf.TerraformMetaArguments {
+export interface OdbCloudVmClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * The unique identifier of the Exadata infrastructure for this VM cluster. Changing this will create a new resource.
   *
@@ -77,13 +77,13 @@ export interface OdbCloudVmClusterConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_vm_cluster#is_local_backup_enabled OdbCloudVmCluster#is_local_backup_enabled}
   */
-  readonly isLocalBackupEnabled?: boolean | cdktf.IResolvable;
+  readonly isLocalBackupEnabled?: boolean | cdktn.IResolvable;
   /**
   * Specifies whether to create a sparse disk group for the VM cluster. Changing this will create a new resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_vm_cluster#is_sparse_diskgroup_enabled OdbCloudVmCluster#is_sparse_diskgroup_enabled}
   */
-  readonly isSparseDiskgroupEnabled?: boolean | cdktf.IResolvable;
+  readonly isSparseDiskgroupEnabled?: boolean | cdktn.IResolvable;
   /**
   * The Oracle license model to apply to the VM cluster. Default: LICENSE_INCLUDED. Changing this will create a new resource.
   *
@@ -141,7 +141,7 @@ export interface OdbCloudVmClusterConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_vm_cluster#data_collection_options OdbCloudVmCluster#data_collection_options}
   */
-  readonly dataCollectionOptions?: OdbCloudVmClusterDataCollectionOptions[] | cdktf.IResolvable;
+  readonly dataCollectionOptions?: OdbCloudVmClusterDataCollectionOptions[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -153,8 +153,8 @@ export interface OdbCloudVmClusterIormConfigCacheDbPlans {
 }
 
 export function odbCloudVmClusterIormConfigCacheDbPlansToTerraform(struct?: OdbCloudVmClusterIormConfigCacheDbPlans): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -163,8 +163,8 @@ export function odbCloudVmClusterIormConfigCacheDbPlansToTerraform(struct?: OdbC
 
 
 export function odbCloudVmClusterIormConfigCacheDbPlansToHclTerraform(struct?: OdbCloudVmClusterIormConfigCacheDbPlans): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -172,7 +172,7 @@ export function odbCloudVmClusterIormConfigCacheDbPlansToHclTerraform(struct?: O
   return attrs;
 }
 
-export class OdbCloudVmClusterIormConfigCacheDbPlansOutputReference extends cdktf.ComplexObject {
+export class OdbCloudVmClusterIormConfigCacheDbPlansOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -181,7 +181,7 @@ export class OdbCloudVmClusterIormConfigCacheDbPlansOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -216,14 +216,14 @@ export class OdbCloudVmClusterIormConfigCacheDbPlansOutputReference extends cdkt
   }
 }
 
-export class OdbCloudVmClusterIormConfigCacheDbPlansList extends cdktf.ComplexList {
+export class OdbCloudVmClusterIormConfigCacheDbPlansList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -238,8 +238,8 @@ export interface OdbCloudVmClusterIormConfigCache {
 }
 
 export function odbCloudVmClusterIormConfigCacheToTerraform(struct?: OdbCloudVmClusterIormConfigCache): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -248,8 +248,8 @@ export function odbCloudVmClusterIormConfigCacheToTerraform(struct?: OdbCloudVmC
 
 
 export function odbCloudVmClusterIormConfigCacheToHclTerraform(struct?: OdbCloudVmClusterIormConfigCache): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -257,7 +257,7 @@ export function odbCloudVmClusterIormConfigCacheToHclTerraform(struct?: OdbCloud
   return attrs;
 }
 
-export class OdbCloudVmClusterIormConfigCacheOutputReference extends cdktf.ComplexObject {
+export class OdbCloudVmClusterIormConfigCacheOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -266,7 +266,7 @@ export class OdbCloudVmClusterIormConfigCacheOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -307,14 +307,14 @@ export class OdbCloudVmClusterIormConfigCacheOutputReference extends cdktf.Compl
   }
 }
 
-export class OdbCloudVmClusterIormConfigCacheList extends cdktf.ComplexList {
+export class OdbCloudVmClusterIormConfigCacheList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -329,50 +329,50 @@ export interface OdbCloudVmClusterDataCollectionOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_vm_cluster#is_diagnostics_events_enabled OdbCloudVmCluster#is_diagnostics_events_enabled}
   */
-  readonly isDiagnosticsEventsEnabled: boolean | cdktf.IResolvable;
+  readonly isDiagnosticsEventsEnabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_vm_cluster#is_health_monitoring_enabled OdbCloudVmCluster#is_health_monitoring_enabled}
   */
-  readonly isHealthMonitoringEnabled: boolean | cdktf.IResolvable;
+  readonly isHealthMonitoringEnabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_vm_cluster#is_incident_logs_enabled OdbCloudVmCluster#is_incident_logs_enabled}
   */
-  readonly isIncidentLogsEnabled: boolean | cdktf.IResolvable;
+  readonly isIncidentLogsEnabled: boolean | cdktn.IResolvable;
 }
 
-export function odbCloudVmClusterDataCollectionOptionsToTerraform(struct?: OdbCloudVmClusterDataCollectionOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudVmClusterDataCollectionOptionsToTerraform(struct?: OdbCloudVmClusterDataCollectionOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_diagnostics_events_enabled: cdktf.booleanToTerraform(struct!.isDiagnosticsEventsEnabled),
-    is_health_monitoring_enabled: cdktf.booleanToTerraform(struct!.isHealthMonitoringEnabled),
-    is_incident_logs_enabled: cdktf.booleanToTerraform(struct!.isIncidentLogsEnabled),
+    is_diagnostics_events_enabled: cdktn.booleanToTerraform(struct!.isDiagnosticsEventsEnabled),
+    is_health_monitoring_enabled: cdktn.booleanToTerraform(struct!.isHealthMonitoringEnabled),
+    is_incident_logs_enabled: cdktn.booleanToTerraform(struct!.isIncidentLogsEnabled),
   }
 }
 
 
-export function odbCloudVmClusterDataCollectionOptionsToHclTerraform(struct?: OdbCloudVmClusterDataCollectionOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudVmClusterDataCollectionOptionsToHclTerraform(struct?: OdbCloudVmClusterDataCollectionOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_diagnostics_events_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isDiagnosticsEventsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isDiagnosticsEventsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_health_monitoring_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isHealthMonitoringEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isHealthMonitoringEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_incident_logs_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isIncidentLogsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isIncidentLogsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -383,9 +383,9 @@ export function odbCloudVmClusterDataCollectionOptionsToHclTerraform(struct?: Od
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OdbCloudVmClusterDataCollectionOptionsOutputReference extends cdktf.ComplexObject {
+export class OdbCloudVmClusterDataCollectionOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -393,11 +393,11 @@ export class OdbCloudVmClusterDataCollectionOptionsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OdbCloudVmClusterDataCollectionOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): OdbCloudVmClusterDataCollectionOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -418,7 +418,7 @@ export class OdbCloudVmClusterDataCollectionOptionsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OdbCloudVmClusterDataCollectionOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OdbCloudVmClusterDataCollectionOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -426,7 +426,7 @@ export class OdbCloudVmClusterDataCollectionOptionsOutputReference extends cdktf
       this._isHealthMonitoringEnabled = undefined;
       this._isIncidentLogsEnabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -440,11 +440,11 @@ export class OdbCloudVmClusterDataCollectionOptionsOutputReference extends cdktf
   }
 
   // is_diagnostics_events_enabled - computed: false, optional: false, required: true
-  private _isDiagnosticsEventsEnabled?: boolean | cdktf.IResolvable; 
+  private _isDiagnosticsEventsEnabled?: boolean | cdktn.IResolvable; 
   public get isDiagnosticsEventsEnabled() {
     return this.getBooleanAttribute('is_diagnostics_events_enabled');
   }
-  public set isDiagnosticsEventsEnabled(value: boolean | cdktf.IResolvable) {
+  public set isDiagnosticsEventsEnabled(value: boolean | cdktn.IResolvable) {
     this._isDiagnosticsEventsEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -453,11 +453,11 @@ export class OdbCloudVmClusterDataCollectionOptionsOutputReference extends cdktf
   }
 
   // is_health_monitoring_enabled - computed: false, optional: false, required: true
-  private _isHealthMonitoringEnabled?: boolean | cdktf.IResolvable; 
+  private _isHealthMonitoringEnabled?: boolean | cdktn.IResolvable; 
   public get isHealthMonitoringEnabled() {
     return this.getBooleanAttribute('is_health_monitoring_enabled');
   }
-  public set isHealthMonitoringEnabled(value: boolean | cdktf.IResolvable) {
+  public set isHealthMonitoringEnabled(value: boolean | cdktn.IResolvable) {
     this._isHealthMonitoringEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -466,11 +466,11 @@ export class OdbCloudVmClusterDataCollectionOptionsOutputReference extends cdktf
   }
 
   // is_incident_logs_enabled - computed: false, optional: false, required: true
-  private _isIncidentLogsEnabled?: boolean | cdktf.IResolvable; 
+  private _isIncidentLogsEnabled?: boolean | cdktn.IResolvable; 
   public get isIncidentLogsEnabled() {
     return this.getBooleanAttribute('is_incident_logs_enabled');
   }
-  public set isIncidentLogsEnabled(value: boolean | cdktf.IResolvable) {
+  public set isIncidentLogsEnabled(value: boolean | cdktn.IResolvable) {
     this._isIncidentLogsEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -479,15 +479,15 @@ export class OdbCloudVmClusterDataCollectionOptionsOutputReference extends cdktf
   }
 }
 
-export class OdbCloudVmClusterDataCollectionOptionsList extends cdktf.ComplexList {
-  public internalValue? : OdbCloudVmClusterDataCollectionOptions[] | cdktf.IResolvable
+export class OdbCloudVmClusterDataCollectionOptionsList extends cdktn.ComplexList {
+  public internalValue? : OdbCloudVmClusterDataCollectionOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -519,39 +519,39 @@ export interface OdbCloudVmClusterTimeouts {
   readonly update?: string;
 }
 
-export function odbCloudVmClusterTimeoutsToTerraform(struct?: OdbCloudVmClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudVmClusterTimeoutsToTerraform(struct?: OdbCloudVmClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function odbCloudVmClusterTimeoutsToHclTerraform(struct?: OdbCloudVmClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbCloudVmClusterTimeoutsToHclTerraform(struct?: OdbCloudVmClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -562,19 +562,19 @@ export function odbCloudVmClusterTimeoutsToHclTerraform(struct?: OdbCloudVmClust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OdbCloudVmClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OdbCloudVmClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OdbCloudVmClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OdbCloudVmClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -595,7 +595,7 @@ export class OdbCloudVmClusterTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OdbCloudVmClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OdbCloudVmClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -603,7 +603,7 @@ export class OdbCloudVmClusterTimeoutsOutputReference extends cdktf.ComplexObjec
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -668,7 +668,7 @@ export class OdbCloudVmClusterTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster}
 */
-export class OdbCloudVmCluster extends cdktf.TerraformResource {
+export class OdbCloudVmCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -679,14 +679,14 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OdbCloudVmCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OdbCloudVmCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OdbCloudVmCluster to import
   * @param importFromId The id of the existing OdbCloudVmCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_cloud_vm_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OdbCloudVmCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_cloud_vm_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_cloud_vm_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -853,7 +853,7 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
   // db_servers - computed: false, optional: false, required: true
   private _dbServers?: string[]; 
   public get dbServers() {
-    return cdktf.Fn.tolist(this.getListAttribute('db_servers'));
+    return cdktn.Fn.tolist(this.getListAttribute('db_servers'));
   }
   public set dbServers(value: string[]) {
     this._dbServers = value;
@@ -934,11 +934,11 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
   }
 
   // is_local_backup_enabled - computed: true, optional: true, required: false
-  private _isLocalBackupEnabled?: boolean | cdktf.IResolvable; 
+  private _isLocalBackupEnabled?: boolean | cdktn.IResolvable; 
   public get isLocalBackupEnabled() {
     return this.getBooleanAttribute('is_local_backup_enabled');
   }
-  public set isLocalBackupEnabled(value: boolean | cdktf.IResolvable) {
+  public set isLocalBackupEnabled(value: boolean | cdktn.IResolvable) {
     this._isLocalBackupEnabled = value;
   }
   public resetIsLocalBackupEnabled() {
@@ -950,11 +950,11 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
   }
 
   // is_sparse_diskgroup_enabled - computed: true, optional: true, required: false
-  private _isSparseDiskgroupEnabled?: boolean | cdktf.IResolvable; 
+  private _isSparseDiskgroupEnabled?: boolean | cdktn.IResolvable; 
   public get isSparseDiskgroupEnabled() {
     return this.getBooleanAttribute('is_sparse_diskgroup_enabled');
   }
-  public set isSparseDiskgroupEnabled(value: boolean | cdktf.IResolvable) {
+  public set isSparseDiskgroupEnabled(value: boolean | cdktn.IResolvable) {
     this._isSparseDiskgroupEnabled = value;
   }
   public resetIsSparseDiskgroupEnabled() {
@@ -1119,7 +1119,7 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
   // ssh_public_keys - computed: false, optional: false, required: true
   private _sshPublicKeys?: string[]; 
   public get sshPublicKeys() {
-    return cdktf.Fn.tolist(this.getListAttribute('ssh_public_keys'));
+    return cdktn.Fn.tolist(this.getListAttribute('ssh_public_keys'));
   }
   public set sshPublicKeys(value: string[]) {
     this._sshPublicKeys = value;
@@ -1166,7 +1166,7 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1197,7 +1197,7 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
   public get dataCollectionOptions() {
     return this._dataCollectionOptions;
   }
-  public putDataCollectionOptions(value: OdbCloudVmClusterDataCollectionOptions[] | cdktf.IResolvable) {
+  public putDataCollectionOptions(value: OdbCloudVmClusterDataCollectionOptions[] | cdktn.IResolvable) {
     this._dataCollectionOptions.internalValue = value;
   }
   public resetDataCollectionOptions() {
@@ -1230,28 +1230,28 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cloud_exadata_infrastructure_arn: cdktf.stringToTerraform(this._cloudExadataInfrastructureArn),
-      cloud_exadata_infrastructure_id: cdktf.stringToTerraform(this._cloudExadataInfrastructureId),
-      cluster_name: cdktf.stringToTerraform(this._clusterName),
-      cpu_core_count: cdktf.numberToTerraform(this._cpuCoreCount),
-      data_storage_size_in_tbs: cdktf.numberToTerraform(this._dataStorageSizeInTbs),
-      db_node_storage_size_in_gbs: cdktf.numberToTerraform(this._dbNodeStorageSizeInGbs),
-      db_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dbServers),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      gi_version: cdktf.stringToTerraform(this._giVersion),
-      hostname_prefix: cdktf.stringToTerraform(this._hostnamePrefix),
-      is_local_backup_enabled: cdktf.booleanToTerraform(this._isLocalBackupEnabled),
-      is_sparse_diskgroup_enabled: cdktf.booleanToTerraform(this._isSparseDiskgroupEnabled),
-      license_model: cdktf.stringToTerraform(this._licenseModel),
-      memory_size_in_gbs: cdktf.numberToTerraform(this._memorySizeInGbs),
-      odb_network_arn: cdktf.stringToTerraform(this._odbNetworkArn),
-      odb_network_id: cdktf.stringToTerraform(this._odbNetworkId),
-      region: cdktf.stringToTerraform(this._region),
-      scan_listener_port_tcp: cdktf.numberToTerraform(this._scanListenerPortTcp),
-      ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sshPublicKeys),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      timezone: cdktf.stringToTerraform(this._timezone),
-      data_collection_options: cdktf.listMapper(odbCloudVmClusterDataCollectionOptionsToTerraform, true)(this._dataCollectionOptions.internalValue),
+      cloud_exadata_infrastructure_arn: cdktn.stringToTerraform(this._cloudExadataInfrastructureArn),
+      cloud_exadata_infrastructure_id: cdktn.stringToTerraform(this._cloudExadataInfrastructureId),
+      cluster_name: cdktn.stringToTerraform(this._clusterName),
+      cpu_core_count: cdktn.numberToTerraform(this._cpuCoreCount),
+      data_storage_size_in_tbs: cdktn.numberToTerraform(this._dataStorageSizeInTbs),
+      db_node_storage_size_in_gbs: cdktn.numberToTerraform(this._dbNodeStorageSizeInGbs),
+      db_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._dbServers),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      gi_version: cdktn.stringToTerraform(this._giVersion),
+      hostname_prefix: cdktn.stringToTerraform(this._hostnamePrefix),
+      is_local_backup_enabled: cdktn.booleanToTerraform(this._isLocalBackupEnabled),
+      is_sparse_diskgroup_enabled: cdktn.booleanToTerraform(this._isSparseDiskgroupEnabled),
+      license_model: cdktn.stringToTerraform(this._licenseModel),
+      memory_size_in_gbs: cdktn.numberToTerraform(this._memorySizeInGbs),
+      odb_network_arn: cdktn.stringToTerraform(this._odbNetworkArn),
+      odb_network_id: cdktn.stringToTerraform(this._odbNetworkId),
+      region: cdktn.stringToTerraform(this._region),
+      scan_listener_port_tcp: cdktn.numberToTerraform(this._scanListenerPortTcp),
+      ssh_public_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._sshPublicKeys),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      timezone: cdktn.stringToTerraform(this._timezone),
+      data_collection_options: cdktn.listMapper(odbCloudVmClusterDataCollectionOptionsToTerraform, true)(this._dataCollectionOptions.internalValue),
       timeouts: odbCloudVmClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1259,133 +1259,133 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cloud_exadata_infrastructure_arn: {
-        value: cdktf.stringToHclTerraform(this._cloudExadataInfrastructureArn),
+        value: cdktn.stringToHclTerraform(this._cloudExadataInfrastructureArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_exadata_infrastructure_id: {
-        value: cdktf.stringToHclTerraform(this._cloudExadataInfrastructureId),
+        value: cdktn.stringToHclTerraform(this._cloudExadataInfrastructureId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_name: {
-        value: cdktf.stringToHclTerraform(this._clusterName),
+        value: cdktn.stringToHclTerraform(this._clusterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cpu_core_count: {
-        value: cdktf.numberToHclTerraform(this._cpuCoreCount),
+        value: cdktn.numberToHclTerraform(this._cpuCoreCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       data_storage_size_in_tbs: {
-        value: cdktf.numberToHclTerraform(this._dataStorageSizeInTbs),
+        value: cdktn.numberToHclTerraform(this._dataStorageSizeInTbs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       db_node_storage_size_in_gbs: {
-        value: cdktf.numberToHclTerraform(this._dbNodeStorageSizeInGbs),
+        value: cdktn.numberToHclTerraform(this._dbNodeStorageSizeInGbs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       db_servers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dbServers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._dbServers),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gi_version: {
-        value: cdktf.stringToHclTerraform(this._giVersion),
+        value: cdktn.stringToHclTerraform(this._giVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hostname_prefix: {
-        value: cdktf.stringToHclTerraform(this._hostnamePrefix),
+        value: cdktn.stringToHclTerraform(this._hostnamePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_local_backup_enabled: {
-        value: cdktf.booleanToHclTerraform(this._isLocalBackupEnabled),
+        value: cdktn.booleanToHclTerraform(this._isLocalBackupEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       is_sparse_diskgroup_enabled: {
-        value: cdktf.booleanToHclTerraform(this._isSparseDiskgroupEnabled),
+        value: cdktn.booleanToHclTerraform(this._isSparseDiskgroupEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       license_model: {
-        value: cdktf.stringToHclTerraform(this._licenseModel),
+        value: cdktn.stringToHclTerraform(this._licenseModel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       memory_size_in_gbs: {
-        value: cdktf.numberToHclTerraform(this._memorySizeInGbs),
+        value: cdktn.numberToHclTerraform(this._memorySizeInGbs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       odb_network_arn: {
-        value: cdktf.stringToHclTerraform(this._odbNetworkArn),
+        value: cdktn.stringToHclTerraform(this._odbNetworkArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       odb_network_id: {
-        value: cdktf.stringToHclTerraform(this._odbNetworkId),
+        value: cdktn.stringToHclTerraform(this._odbNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scan_listener_port_tcp: {
-        value: cdktf.numberToHclTerraform(this._scanListenerPortTcp),
+        value: cdktn.numberToHclTerraform(this._scanListenerPortTcp),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       ssh_public_keys: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sshPublicKeys),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._sshPublicKeys),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       timezone: {
-        value: cdktf.stringToHclTerraform(this._timezone),
+        value: cdktn.stringToHclTerraform(this._timezone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_collection_options: {
-        value: cdktf.listMapperHcl(odbCloudVmClusterDataCollectionOptionsToHclTerraform, true)(this._dataCollectionOptions.internalValue),
+        value: cdktn.listMapperHcl(odbCloudVmClusterDataCollectionOptionsToHclTerraform, true)(this._dataCollectionOptions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OdbCloudVmClusterDataCollectionOptionsList",

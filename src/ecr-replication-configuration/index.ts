@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EcrReplicationConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface EcrReplicationConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_replication_configuration#id EcrReplicationConfiguration#id}
   *
@@ -43,32 +43,32 @@ export interface EcrReplicationConfigurationReplicationConfigurationRuleDestinat
   readonly registryId: string;
 }
 
-export function ecrReplicationConfigurationReplicationConfigurationRuleDestinationToTerraform(struct?: EcrReplicationConfigurationReplicationConfigurationRuleDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrReplicationConfigurationReplicationConfigurationRuleDestinationToTerraform(struct?: EcrReplicationConfigurationReplicationConfigurationRuleDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    region: cdktf.stringToTerraform(struct!.region),
-    registry_id: cdktf.stringToTerraform(struct!.registryId),
+    region: cdktn.stringToTerraform(struct!.region),
+    registry_id: cdktn.stringToTerraform(struct!.registryId),
   }
 }
 
 
-export function ecrReplicationConfigurationReplicationConfigurationRuleDestinationToHclTerraform(struct?: EcrReplicationConfigurationReplicationConfigurationRuleDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrReplicationConfigurationReplicationConfigurationRuleDestinationToHclTerraform(struct?: EcrReplicationConfigurationReplicationConfigurationRuleDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     registry_id: {
-      value: cdktf.stringToHclTerraform(struct!.registryId),
+      value: cdktn.stringToHclTerraform(struct!.registryId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -79,9 +79,9 @@ export function ecrReplicationConfigurationReplicationConfigurationRuleDestinati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EcrReplicationConfigurationReplicationConfigurationRuleDestinationOutputReference extends cdktf.ComplexObject {
+export class EcrReplicationConfigurationReplicationConfigurationRuleDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -89,11 +89,11 @@ export class EcrReplicationConfigurationReplicationConfigurationRuleDestinationO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EcrReplicationConfigurationReplicationConfigurationRuleDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): EcrReplicationConfigurationReplicationConfigurationRuleDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -110,14 +110,14 @@ export class EcrReplicationConfigurationReplicationConfigurationRuleDestinationO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EcrReplicationConfigurationReplicationConfigurationRuleDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EcrReplicationConfigurationReplicationConfigurationRuleDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._region = undefined;
       this._registryId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -156,15 +156,15 @@ export class EcrReplicationConfigurationReplicationConfigurationRuleDestinationO
   }
 }
 
-export class EcrReplicationConfigurationReplicationConfigurationRuleDestinationList extends cdktf.ComplexList {
-  public internalValue? : EcrReplicationConfigurationReplicationConfigurationRuleDestination[] | cdktf.IResolvable
+export class EcrReplicationConfigurationReplicationConfigurationRuleDestinationList extends cdktn.ComplexList {
+  public internalValue? : EcrReplicationConfigurationReplicationConfigurationRuleDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -186,32 +186,32 @@ export interface EcrReplicationConfigurationReplicationConfigurationRuleReposito
   readonly filterType: string;
 }
 
-export function ecrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterToTerraform(struct?: EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterToTerraform(struct?: EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter: cdktf.stringToTerraform(struct!.filter),
-    filter_type: cdktf.stringToTerraform(struct!.filterType),
+    filter: cdktn.stringToTerraform(struct!.filter),
+    filter_type: cdktn.stringToTerraform(struct!.filterType),
   }
 }
 
 
-export function ecrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterToHclTerraform(struct?: EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterToHclTerraform(struct?: EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter: {
-      value: cdktf.stringToHclTerraform(struct!.filter),
+      value: cdktn.stringToHclTerraform(struct!.filter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filter_type: {
-      value: cdktf.stringToHclTerraform(struct!.filterType),
+      value: cdktn.stringToHclTerraform(struct!.filterType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -222,9 +222,9 @@ export function ecrReplicationConfigurationReplicationConfigurationRuleRepositor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterOutputReference extends cdktf.ComplexObject {
+export class EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -232,11 +232,11 @@ export class EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -253,14 +253,14 @@ export class EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._filter = undefined;
       this._filterType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -299,15 +299,15 @@ export class EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFi
   }
 }
 
-export class EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList extends cdktf.ComplexList {
-  public internalValue? : EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter[] | cdktf.IResolvable
+export class EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList extends cdktn.ComplexList {
+  public internalValue? : EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -324,41 +324,41 @@ export interface EcrReplicationConfigurationReplicationConfigurationRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_replication_configuration#destination EcrReplicationConfiguration#destination}
   */
-  readonly destination: EcrReplicationConfigurationReplicationConfigurationRuleDestination[] | cdktf.IResolvable;
+  readonly destination: EcrReplicationConfigurationReplicationConfigurationRuleDestination[] | cdktn.IResolvable;
   /**
   * repository_filter block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_replication_configuration#repository_filter EcrReplicationConfiguration#repository_filter}
   */
-  readonly repositoryFilter?: EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter[] | cdktf.IResolvable;
+  readonly repositoryFilter?: EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter[] | cdktn.IResolvable;
 }
 
-export function ecrReplicationConfigurationReplicationConfigurationRuleToTerraform(struct?: EcrReplicationConfigurationReplicationConfigurationRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrReplicationConfigurationReplicationConfigurationRuleToTerraform(struct?: EcrReplicationConfigurationReplicationConfigurationRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.listMapper(ecrReplicationConfigurationReplicationConfigurationRuleDestinationToTerraform, true)(struct!.destination),
-    repository_filter: cdktf.listMapper(ecrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterToTerraform, true)(struct!.repositoryFilter),
+    destination: cdktn.listMapper(ecrReplicationConfigurationReplicationConfigurationRuleDestinationToTerraform, true)(struct!.destination),
+    repository_filter: cdktn.listMapper(ecrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterToTerraform, true)(struct!.repositoryFilter),
   }
 }
 
 
-export function ecrReplicationConfigurationReplicationConfigurationRuleToHclTerraform(struct?: EcrReplicationConfigurationReplicationConfigurationRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrReplicationConfigurationReplicationConfigurationRuleToHclTerraform(struct?: EcrReplicationConfigurationReplicationConfigurationRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.listMapperHcl(ecrReplicationConfigurationReplicationConfigurationRuleDestinationToHclTerraform, true)(struct!.destination),
+      value: cdktn.listMapperHcl(ecrReplicationConfigurationReplicationConfigurationRuleDestinationToHclTerraform, true)(struct!.destination),
       isBlock: true,
       type: "list",
       storageClassType: "EcrReplicationConfigurationReplicationConfigurationRuleDestinationList",
     },
     repository_filter: {
-      value: cdktf.listMapperHcl(ecrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterToHclTerraform, true)(struct!.repositoryFilter),
+      value: cdktn.listMapperHcl(ecrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterToHclTerraform, true)(struct!.repositoryFilter),
       isBlock: true,
       type: "list",
       storageClassType: "EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList",
@@ -369,9 +369,9 @@ export function ecrReplicationConfigurationReplicationConfigurationRuleToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EcrReplicationConfigurationReplicationConfigurationRuleOutputReference extends cdktf.ComplexObject {
+export class EcrReplicationConfigurationReplicationConfigurationRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -379,11 +379,11 @@ export class EcrReplicationConfigurationReplicationConfigurationRuleOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EcrReplicationConfigurationReplicationConfigurationRule | cdktf.IResolvable | undefined {
+  public get internalValue(): EcrReplicationConfigurationReplicationConfigurationRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -400,14 +400,14 @@ export class EcrReplicationConfigurationReplicationConfigurationRuleOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EcrReplicationConfigurationReplicationConfigurationRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EcrReplicationConfigurationReplicationConfigurationRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._destination.internalValue = undefined;
       this._repositoryFilter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -424,7 +424,7 @@ export class EcrReplicationConfigurationReplicationConfigurationRuleOutputRefere
   public get destination() {
     return this._destination;
   }
-  public putDestination(value: EcrReplicationConfigurationReplicationConfigurationRuleDestination[] | cdktf.IResolvable) {
+  public putDestination(value: EcrReplicationConfigurationReplicationConfigurationRuleDestination[] | cdktn.IResolvable) {
     this._destination.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -437,7 +437,7 @@ export class EcrReplicationConfigurationReplicationConfigurationRuleOutputRefere
   public get repositoryFilter() {
     return this._repositoryFilter;
   }
-  public putRepositoryFilter(value: EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter[] | cdktf.IResolvable) {
+  public putRepositoryFilter(value: EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter[] | cdktn.IResolvable) {
     this._repositoryFilter.internalValue = value;
   }
   public resetRepositoryFilter() {
@@ -449,15 +449,15 @@ export class EcrReplicationConfigurationReplicationConfigurationRuleOutputRefere
   }
 }
 
-export class EcrReplicationConfigurationReplicationConfigurationRuleList extends cdktf.ComplexList {
-  public internalValue? : EcrReplicationConfigurationReplicationConfigurationRule[] | cdktf.IResolvable
+export class EcrReplicationConfigurationReplicationConfigurationRuleList extends cdktn.ComplexList {
+  public internalValue? : EcrReplicationConfigurationReplicationConfigurationRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -474,28 +474,28 @@ export interface EcrReplicationConfigurationReplicationConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_replication_configuration#rule EcrReplicationConfiguration#rule}
   */
-  readonly rule: EcrReplicationConfigurationReplicationConfigurationRule[] | cdktf.IResolvable;
+  readonly rule: EcrReplicationConfigurationReplicationConfigurationRule[] | cdktn.IResolvable;
 }
 
 export function ecrReplicationConfigurationReplicationConfigurationToTerraform(struct?: EcrReplicationConfigurationReplicationConfigurationOutputReference | EcrReplicationConfigurationReplicationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rule: cdktf.listMapper(ecrReplicationConfigurationReplicationConfigurationRuleToTerraform, true)(struct!.rule),
+    rule: cdktn.listMapper(ecrReplicationConfigurationReplicationConfigurationRuleToTerraform, true)(struct!.rule),
   }
 }
 
 
 export function ecrReplicationConfigurationReplicationConfigurationToHclTerraform(struct?: EcrReplicationConfigurationReplicationConfigurationOutputReference | EcrReplicationConfigurationReplicationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rule: {
-      value: cdktf.listMapperHcl(ecrReplicationConfigurationReplicationConfigurationRuleToHclTerraform, true)(struct!.rule),
+      value: cdktn.listMapperHcl(ecrReplicationConfigurationReplicationConfigurationRuleToHclTerraform, true)(struct!.rule),
       isBlock: true,
       type: "list",
       storageClassType: "EcrReplicationConfigurationReplicationConfigurationRuleList",
@@ -506,14 +506,14 @@ export function ecrReplicationConfigurationReplicationConfigurationToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EcrReplicationConfigurationReplicationConfigurationOutputReference extends cdktf.ComplexObject {
+export class EcrReplicationConfigurationReplicationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -543,7 +543,7 @@ export class EcrReplicationConfigurationReplicationConfigurationOutputReference 
   public get rule() {
     return this._rule;
   }
-  public putRule(value: EcrReplicationConfigurationReplicationConfigurationRule[] | cdktf.IResolvable) {
+  public putRule(value: EcrReplicationConfigurationReplicationConfigurationRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -555,7 +555,7 @@ export class EcrReplicationConfigurationReplicationConfigurationOutputReference 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_replication_configuration aws_ecr_replication_configuration}
 */
-export class EcrReplicationConfiguration extends cdktf.TerraformResource {
+export class EcrReplicationConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -566,14 +566,14 @@ export class EcrReplicationConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EcrReplicationConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EcrReplicationConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EcrReplicationConfiguration to import
   * @param importFromId The id of the existing EcrReplicationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_replication_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EcrReplicationConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_replication_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_replication_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -671,8 +671,8 @@ export class EcrReplicationConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
       replication_configuration: ecrReplicationConfigurationReplicationConfigurationToTerraform(this._replicationConfiguration.internalValue),
     };
   }
@@ -680,13 +680,13 @@ export class EcrReplicationConfiguration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

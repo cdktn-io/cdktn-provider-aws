@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3AccessPointConfig extends cdktf.TerraformMetaArguments {
+export interface S3AccessPointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_access_point#account_id S3AccessPoint#account_id}
   */
@@ -70,61 +70,61 @@ export interface S3AccessPointPublicAccessBlockConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_access_point#block_public_acls S3AccessPoint#block_public_acls}
   */
-  readonly blockPublicAcls?: boolean | cdktf.IResolvable;
+  readonly blockPublicAcls?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_access_point#block_public_policy S3AccessPoint#block_public_policy}
   */
-  readonly blockPublicPolicy?: boolean | cdktf.IResolvable;
+  readonly blockPublicPolicy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_access_point#ignore_public_acls S3AccessPoint#ignore_public_acls}
   */
-  readonly ignorePublicAcls?: boolean | cdktf.IResolvable;
+  readonly ignorePublicAcls?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_access_point#restrict_public_buckets S3AccessPoint#restrict_public_buckets}
   */
-  readonly restrictPublicBuckets?: boolean | cdktf.IResolvable;
+  readonly restrictPublicBuckets?: boolean | cdktn.IResolvable;
 }
 
 export function s3AccessPointPublicAccessBlockConfigurationToTerraform(struct?: S3AccessPointPublicAccessBlockConfigurationOutputReference | S3AccessPointPublicAccessBlockConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    block_public_acls: cdktf.booleanToTerraform(struct!.blockPublicAcls),
-    block_public_policy: cdktf.booleanToTerraform(struct!.blockPublicPolicy),
-    ignore_public_acls: cdktf.booleanToTerraform(struct!.ignorePublicAcls),
-    restrict_public_buckets: cdktf.booleanToTerraform(struct!.restrictPublicBuckets),
+    block_public_acls: cdktn.booleanToTerraform(struct!.blockPublicAcls),
+    block_public_policy: cdktn.booleanToTerraform(struct!.blockPublicPolicy),
+    ignore_public_acls: cdktn.booleanToTerraform(struct!.ignorePublicAcls),
+    restrict_public_buckets: cdktn.booleanToTerraform(struct!.restrictPublicBuckets),
   }
 }
 
 
 export function s3AccessPointPublicAccessBlockConfigurationToHclTerraform(struct?: S3AccessPointPublicAccessBlockConfigurationOutputReference | S3AccessPointPublicAccessBlockConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     block_public_acls: {
-      value: cdktf.booleanToHclTerraform(struct!.blockPublicAcls),
+      value: cdktn.booleanToHclTerraform(struct!.blockPublicAcls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     block_public_policy: {
-      value: cdktf.booleanToHclTerraform(struct!.blockPublicPolicy),
+      value: cdktn.booleanToHclTerraform(struct!.blockPublicPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ignore_public_acls: {
-      value: cdktf.booleanToHclTerraform(struct!.ignorePublicAcls),
+      value: cdktn.booleanToHclTerraform(struct!.ignorePublicAcls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     restrict_public_buckets: {
-      value: cdktf.booleanToHclTerraform(struct!.restrictPublicBuckets),
+      value: cdktn.booleanToHclTerraform(struct!.restrictPublicBuckets),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -135,14 +135,14 @@ export function s3AccessPointPublicAccessBlockConfigurationToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends cdktf.ComplexObject {
+export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -186,11 +186,11 @@ export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends 
   }
 
   // block_public_acls - computed: false, optional: true, required: false
-  private _blockPublicAcls?: boolean | cdktf.IResolvable; 
+  private _blockPublicAcls?: boolean | cdktn.IResolvable; 
   public get blockPublicAcls() {
     return this.getBooleanAttribute('block_public_acls');
   }
-  public set blockPublicAcls(value: boolean | cdktf.IResolvable) {
+  public set blockPublicAcls(value: boolean | cdktn.IResolvable) {
     this._blockPublicAcls = value;
   }
   public resetBlockPublicAcls() {
@@ -202,11 +202,11 @@ export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends 
   }
 
   // block_public_policy - computed: false, optional: true, required: false
-  private _blockPublicPolicy?: boolean | cdktf.IResolvable; 
+  private _blockPublicPolicy?: boolean | cdktn.IResolvable; 
   public get blockPublicPolicy() {
     return this.getBooleanAttribute('block_public_policy');
   }
-  public set blockPublicPolicy(value: boolean | cdktf.IResolvable) {
+  public set blockPublicPolicy(value: boolean | cdktn.IResolvable) {
     this._blockPublicPolicy = value;
   }
   public resetBlockPublicPolicy() {
@@ -218,11 +218,11 @@ export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends 
   }
 
   // ignore_public_acls - computed: false, optional: true, required: false
-  private _ignorePublicAcls?: boolean | cdktf.IResolvable; 
+  private _ignorePublicAcls?: boolean | cdktn.IResolvable; 
   public get ignorePublicAcls() {
     return this.getBooleanAttribute('ignore_public_acls');
   }
-  public set ignorePublicAcls(value: boolean | cdktf.IResolvable) {
+  public set ignorePublicAcls(value: boolean | cdktn.IResolvable) {
     this._ignorePublicAcls = value;
   }
   public resetIgnorePublicAcls() {
@@ -234,11 +234,11 @@ export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends 
   }
 
   // restrict_public_buckets - computed: false, optional: true, required: false
-  private _restrictPublicBuckets?: boolean | cdktf.IResolvable; 
+  private _restrictPublicBuckets?: boolean | cdktn.IResolvable; 
   public get restrictPublicBuckets() {
     return this.getBooleanAttribute('restrict_public_buckets');
   }
-  public set restrictPublicBuckets(value: boolean | cdktf.IResolvable) {
+  public set restrictPublicBuckets(value: boolean | cdktn.IResolvable) {
     this._restrictPublicBuckets = value;
   }
   public resetRestrictPublicBuckets() {
@@ -257,24 +257,24 @@ export interface S3AccessPointVpcConfiguration {
 }
 
 export function s3AccessPointVpcConfigurationToTerraform(struct?: S3AccessPointVpcConfigurationOutputReference | S3AccessPointVpcConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+    vpc_id: cdktn.stringToTerraform(struct!.vpcId),
   }
 }
 
 
 export function s3AccessPointVpcConfigurationToHclTerraform(struct?: S3AccessPointVpcConfigurationOutputReference | S3AccessPointVpcConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     vpc_id: {
-      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      value: cdktn.stringToHclTerraform(struct!.vpcId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -285,14 +285,14 @@ export function s3AccessPointVpcConfigurationToHclTerraform(struct?: S3AccessPoi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3AccessPointVpcConfigurationOutputReference extends cdktf.ComplexObject {
+export class S3AccessPointVpcConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -334,7 +334,7 @@ export class S3AccessPointVpcConfigurationOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_access_point aws_s3_access_point}
 */
-export class S3AccessPoint extends cdktf.TerraformResource {
+export class S3AccessPoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -345,14 +345,14 @@ export class S3AccessPoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3AccessPoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3AccessPoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3AccessPoint to import
   * @param importFromId The id of the existing S3AccessPoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_access_point#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3AccessPoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_access_point", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_access_point", importId: importFromId, provider });
       }
 
   // ===========
@@ -460,7 +460,7 @@ export class S3AccessPoint extends cdktf.TerraformResource {
   }
 
   // endpoints - computed: true, optional: false, required: false
-  private _endpoints = new cdktf.StringMap(this, "endpoints");
+  private _endpoints = new cdktn.StringMap(this, "endpoints");
   public get endpoints() {
     return this._endpoints;
   }
@@ -606,15 +606,15 @@ export class S3AccessPoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      bucket: cdktf.stringToTerraform(this._bucket),
-      bucket_account_id: cdktf.stringToTerraform(this._bucketAccountId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      policy: cdktf.stringToTerraform(this._policy),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      bucket_account_id: cdktn.stringToTerraform(this._bucketAccountId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      policy: cdktn.stringToTerraform(this._policy),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       public_access_block_configuration: s3AccessPointPublicAccessBlockConfigurationToTerraform(this._publicAccessBlockConfiguration.internalValue),
       vpc_configuration: s3AccessPointVpcConfigurationToTerraform(this._vpcConfiguration.internalValue),
     };
@@ -623,55 +623,55 @@ export class S3AccessPoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bucket_account_id: {
-        value: cdktf.stringToHclTerraform(this._bucketAccountId),
+        value: cdktn.stringToHclTerraform(this._bucketAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy: {
-        value: cdktf.stringToHclTerraform(this._policy),
+        value: cdktn.stringToHclTerraform(this._policy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

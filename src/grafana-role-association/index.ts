@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GrafanaRoleAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface GrafanaRoleAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/grafana_role_association#group_ids GrafanaRoleAssociation#group_ids}
   */
@@ -59,32 +59,32 @@ export interface GrafanaRoleAssociationTimeouts {
   readonly delete?: string;
 }
 
-export function grafanaRoleAssociationTimeoutsToTerraform(struct?: GrafanaRoleAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function grafanaRoleAssociationTimeoutsToTerraform(struct?: GrafanaRoleAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function grafanaRoleAssociationTimeoutsToHclTerraform(struct?: GrafanaRoleAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function grafanaRoleAssociationTimeoutsToHclTerraform(struct?: GrafanaRoleAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -95,19 +95,19 @@ export function grafanaRoleAssociationTimeoutsToHclTerraform(struct?: GrafanaRol
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GrafanaRoleAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GrafanaRoleAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GrafanaRoleAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GrafanaRoleAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -124,14 +124,14 @@ export class GrafanaRoleAssociationTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GrafanaRoleAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GrafanaRoleAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -179,7 +179,7 @@ export class GrafanaRoleAssociationTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/grafana_role_association aws_grafana_role_association}
 */
-export class GrafanaRoleAssociation extends cdktf.TerraformResource {
+export class GrafanaRoleAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -190,14 +190,14 @@ export class GrafanaRoleAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GrafanaRoleAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GrafanaRoleAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GrafanaRoleAssociation to import
   * @param importFromId The id of the existing GrafanaRoleAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/grafana_role_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GrafanaRoleAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_grafana_role_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_grafana_role_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -243,7 +243,7 @@ export class GrafanaRoleAssociation extends cdktf.TerraformResource {
   // group_ids - computed: false, optional: true, required: false
   private _groupIds?: string[]; 
   public get groupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('group_ids'));
   }
   public set groupIds(value: string[]) {
     this._groupIds = value;
@@ -304,7 +304,7 @@ export class GrafanaRoleAssociation extends cdktf.TerraformResource {
   // user_ids - computed: false, optional: true, required: false
   private _userIds?: string[]; 
   public get userIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('user_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('user_ids'));
   }
   public set userIds(value: string[]) {
     this._userIds = value;
@@ -352,12 +352,12 @@ export class GrafanaRoleAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupIds),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      role: cdktf.stringToTerraform(this._role),
-      user_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userIds),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
+      group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._groupIds),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      role: cdktn.stringToTerraform(this._role),
+      user_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._userIds),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
       timeouts: grafanaRoleAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -365,37 +365,37 @@ export class GrafanaRoleAssociation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._groupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._userIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._userIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

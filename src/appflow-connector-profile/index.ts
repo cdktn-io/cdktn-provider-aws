@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppflowConnectorProfileConfig extends cdktf.TerraformMetaArguments {
+export interface AppflowConnectorProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appflow_connector_profile#connection_mode AppflowConnectorProfile#connection_mode}
   */
@@ -64,31 +64,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_key: cdktf.stringToTerraform(struct!.apiKey),
-    secret_key: cdktf.stringToTerraform(struct!.secretKey),
+    api_key: cdktn.stringToTerraform(struct!.apiKey),
+    secret_key: cdktn.stringToTerraform(struct!.secretKey),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_key: {
-      value: cdktf.stringToHclTerraform(struct!.apiKey),
+      value: cdktn.stringToHclTerraform(struct!.apiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_key: {
-      value: cdktf.stringToHclTerraform(struct!.secretKey),
+      value: cdktn.stringToHclTerraform(struct!.secretKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -99,14 +99,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -175,31 +175,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_key: cdktf.stringToTerraform(struct!.apiKey),
-    api_secret_key: cdktf.stringToTerraform(struct!.apiSecretKey),
+    api_key: cdktn.stringToTerraform(struct!.apiKey),
+    api_secret_key: cdktn.stringToTerraform(struct!.apiSecretKey),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_key: {
-      value: cdktf.stringToHclTerraform(struct!.apiKey),
+      value: cdktn.stringToHclTerraform(struct!.apiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     api_secret_key: {
-      value: cdktf.stringToHclTerraform(struct!.apiSecretKey),
+      value: cdktn.stringToHclTerraform(struct!.apiSecretKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -210,14 +210,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -289,31 +289,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -324,14 +324,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -400,31 +400,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    credentials_map: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.credentialsMap),
-    custom_authentication_type: cdktf.stringToTerraform(struct!.customAuthenticationType),
+    credentials_map: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.credentialsMap),
+    custom_authentication_type: cdktn.stringToTerraform(struct!.customAuthenticationType),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     credentials_map: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.credentialsMap),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.credentialsMap),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     custom_authentication_type: {
-      value: cdktf.stringToHclTerraform(struct!.customAuthenticationType),
+      value: cdktn.stringToHclTerraform(struct!.customAuthenticationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -435,14 +435,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -514,31 +514,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_code: cdktf.stringToTerraform(struct!.authCode),
-    redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
+    auth_code: cdktn.stringToTerraform(struct!.authCode),
+    redirect_uri: cdktn.stringToTerraform(struct!.redirectUri),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_code: {
-      value: cdktf.stringToHclTerraform(struct!.authCode),
+      value: cdktn.stringToHclTerraform(struct!.authCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_uri: {
-      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      value: cdktn.stringToHclTerraform(struct!.redirectUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -549,14 +549,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -645,46 +645,46 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2ToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token: cdktf.stringToTerraform(struct!.accessToken),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
+    access_token: cdktn.stringToTerraform(struct!.accessToken),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    refresh_token: cdktn.stringToTerraform(struct!.refreshToken),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestToTerraform(struct!.oauthRequest),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2ToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_token: {
-      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      value: cdktn.stringToHclTerraform(struct!.accessToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     refresh_token: {
-      value: cdktf.stringToHclTerraform(struct!.refreshToken),
+      value: cdktn.stringToHclTerraform(struct!.refreshToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -701,14 +701,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -869,12 +869,12 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authentication_type: cdktf.stringToTerraform(struct!.authenticationType),
+    authentication_type: cdktn.stringToTerraform(struct!.authenticationType),
     api_key: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyToTerraform(struct!.apiKey),
     basic: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicToTerraform(struct!.basic),
     custom: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomToTerraform(struct!.custom),
@@ -884,13 +884,13 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authentication_type: {
-      value: cdktf.stringToHclTerraform(struct!.authenticationType),
+      value: cdktn.stringToHclTerraform(struct!.authenticationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -925,14 +925,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1070,31 +1070,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_key: cdktf.stringToTerraform(struct!.apiKey),
-    application_key: cdktf.stringToTerraform(struct!.applicationKey),
+    api_key: cdktn.stringToTerraform(struct!.apiKey),
+    application_key: cdktn.stringToTerraform(struct!.applicationKey),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_key: {
-      value: cdktf.stringToHclTerraform(struct!.apiKey),
+      value: cdktn.stringToHclTerraform(struct!.apiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     application_key: {
-      value: cdktf.stringToHclTerraform(struct!.applicationKey),
+      value: cdktn.stringToHclTerraform(struct!.applicationKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1105,14 +1105,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1177,24 +1177,24 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_token: cdktf.stringToTerraform(struct!.apiToken),
+    api_token: cdktn.stringToTerraform(struct!.apiToken),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_token: {
-      value: cdktf.stringToHclTerraform(struct!.apiToken),
+      value: cdktn.stringToHclTerraform(struct!.apiToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1205,14 +1205,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1262,31 +1262,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_code: cdktf.stringToTerraform(struct!.authCode),
-    redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
+    auth_code: cdktn.stringToTerraform(struct!.authCode),
+    redirect_uri: cdktn.stringToTerraform(struct!.redirectUri),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_code: {
-      value: cdktf.stringToHclTerraform(struct!.authCode),
+      value: cdktn.stringToHclTerraform(struct!.authCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_uri: {
-      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      value: cdktn.stringToHclTerraform(struct!.redirectUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1297,14 +1297,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1393,46 +1393,46 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token: cdktf.stringToTerraform(struct!.accessToken),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
+    access_token: cdktn.stringToTerraform(struct!.accessToken),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    refresh_token: cdktn.stringToTerraform(struct!.refreshToken),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestToTerraform(struct!.oauthRequest),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_token: {
-      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      value: cdktn.stringToHclTerraform(struct!.accessToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     refresh_token: {
-      value: cdktf.stringToHclTerraform(struct!.refreshToken),
+      value: cdktn.stringToHclTerraform(struct!.refreshToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1449,14 +1449,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1591,31 +1591,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_code: cdktf.stringToTerraform(struct!.authCode),
-    redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
+    auth_code: cdktn.stringToTerraform(struct!.authCode),
+    redirect_uri: cdktn.stringToTerraform(struct!.redirectUri),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_code: {
-      value: cdktf.stringToHclTerraform(struct!.authCode),
+      value: cdktn.stringToHclTerraform(struct!.authCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_uri: {
-      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      value: cdktn.stringToHclTerraform(struct!.redirectUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1626,14 +1626,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1714,32 +1714,32 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token: cdktf.stringToTerraform(struct!.accessToken),
-    refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
+    access_token: cdktn.stringToTerraform(struct!.accessToken),
+    refresh_token: cdktn.stringToTerraform(struct!.refreshToken),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestToTerraform(struct!.oauthRequest),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_token: {
-      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      value: cdktn.stringToHclTerraform(struct!.accessToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     refresh_token: {
-      value: cdktf.stringToHclTerraform(struct!.refreshToken),
+      value: cdktn.stringToHclTerraform(struct!.refreshToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1756,14 +1756,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1868,45 +1868,45 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_key_id: cdktf.stringToTerraform(struct!.accessKeyId),
-    datakey: cdktf.stringToTerraform(struct!.datakey),
-    secret_access_key: cdktf.stringToTerraform(struct!.secretAccessKey),
-    user_id: cdktf.stringToTerraform(struct!.userId),
+    access_key_id: cdktn.stringToTerraform(struct!.accessKeyId),
+    datakey: cdktn.stringToTerraform(struct!.datakey),
+    secret_access_key: cdktn.stringToTerraform(struct!.secretAccessKey),
+    user_id: cdktn.stringToTerraform(struct!.userId),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.accessKeyId),
+      value: cdktn.stringToHclTerraform(struct!.accessKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     datakey: {
-      value: cdktf.stringToHclTerraform(struct!.datakey),
+      value: cdktn.stringToHclTerraform(struct!.datakey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_access_key: {
-      value: cdktf.stringToHclTerraform(struct!.secretAccessKey),
+      value: cdktn.stringToHclTerraform(struct!.secretAccessKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_id: {
-      value: cdktf.stringToHclTerraform(struct!.userId),
+      value: cdktn.stringToHclTerraform(struct!.userId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1917,14 +1917,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2031,31 +2031,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_code: cdktf.stringToTerraform(struct!.authCode),
-    redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
+    auth_code: cdktn.stringToTerraform(struct!.authCode),
+    redirect_uri: cdktn.stringToTerraform(struct!.redirectUri),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_code: {
-      value: cdktf.stringToHclTerraform(struct!.authCode),
+      value: cdktn.stringToHclTerraform(struct!.authCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_uri: {
-      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      value: cdktn.stringToHclTerraform(struct!.redirectUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2066,14 +2066,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2158,39 +2158,39 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token: cdktf.stringToTerraform(struct!.accessToken),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
+    access_token: cdktn.stringToTerraform(struct!.accessToken),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestToTerraform(struct!.oauthRequest),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_token: {
-      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      value: cdktn.stringToHclTerraform(struct!.accessToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2207,14 +2207,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2327,31 +2327,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2362,14 +2362,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2438,31 +2438,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_code: cdktf.stringToTerraform(struct!.authCode),
-    redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
+    auth_code: cdktn.stringToTerraform(struct!.authCode),
+    redirect_uri: cdktn.stringToTerraform(struct!.redirectUri),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_code: {
-      value: cdktf.stringToHclTerraform(struct!.authCode),
+      value: cdktn.stringToHclTerraform(struct!.authCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_uri: {
-      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      value: cdktn.stringToHclTerraform(struct!.redirectUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2473,14 +2473,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2573,53 +2573,53 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token: cdktf.stringToTerraform(struct!.accessToken),
-    client_credentials_arn: cdktf.stringToTerraform(struct!.clientCredentialsArn),
-    jwt_token: cdktf.stringToTerraform(struct!.jwtToken),
-    oauth2_grant_type: cdktf.stringToTerraform(struct!.oauth2GrantType),
-    refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
+    access_token: cdktn.stringToTerraform(struct!.accessToken),
+    client_credentials_arn: cdktn.stringToTerraform(struct!.clientCredentialsArn),
+    jwt_token: cdktn.stringToTerraform(struct!.jwtToken),
+    oauth2_grant_type: cdktn.stringToTerraform(struct!.oauth2GrantType),
+    refresh_token: cdktn.stringToTerraform(struct!.refreshToken),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestToTerraform(struct!.oauthRequest),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_token: {
-      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      value: cdktn.stringToHclTerraform(struct!.accessToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_credentials_arn: {
-      value: cdktf.stringToHclTerraform(struct!.clientCredentialsArn),
+      value: cdktn.stringToHclTerraform(struct!.clientCredentialsArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jwt_token: {
-      value: cdktf.stringToHclTerraform(struct!.jwtToken),
+      value: cdktn.stringToHclTerraform(struct!.jwtToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     oauth2_grant_type: {
-      value: cdktf.stringToHclTerraform(struct!.oauth2GrantType),
+      value: cdktn.stringToHclTerraform(struct!.oauth2GrantType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     refresh_token: {
-      value: cdktf.stringToHclTerraform(struct!.refreshToken),
+      value: cdktn.stringToHclTerraform(struct!.refreshToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2636,14 +2636,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2806,31 +2806,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2841,14 +2841,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2917,31 +2917,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_code: cdktf.stringToTerraform(struct!.authCode),
-    redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
+    auth_code: cdktn.stringToTerraform(struct!.authCode),
+    redirect_uri: cdktn.stringToTerraform(struct!.redirectUri),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_code: {
-      value: cdktf.stringToHclTerraform(struct!.authCode),
+      value: cdktn.stringToHclTerraform(struct!.authCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_uri: {
-      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      value: cdktn.stringToHclTerraform(struct!.redirectUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2952,14 +2952,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3048,46 +3048,46 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token: cdktf.stringToTerraform(struct!.accessToken),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
+    access_token: cdktn.stringToTerraform(struct!.accessToken),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    refresh_token: cdktn.stringToTerraform(struct!.refreshToken),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestToTerraform(struct!.oauthRequest),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_token: {
-      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      value: cdktn.stringToHclTerraform(struct!.accessToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     refresh_token: {
-      value: cdktf.stringToHclTerraform(struct!.refreshToken),
+      value: cdktn.stringToHclTerraform(struct!.refreshToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3104,14 +3104,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3250,8 +3250,8 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3262,8 +3262,8 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3285,14 +3285,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3367,31 +3367,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3402,14 +3402,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3474,24 +3474,24 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_key: cdktf.stringToTerraform(struct!.apiKey),
+    api_key: cdktn.stringToTerraform(struct!.apiKey),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_key: {
-      value: cdktf.stringToHclTerraform(struct!.apiKey),
+      value: cdktn.stringToHclTerraform(struct!.apiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3502,14 +3502,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3559,31 +3559,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_code: cdktf.stringToTerraform(struct!.authCode),
-    redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
+    auth_code: cdktn.stringToTerraform(struct!.authCode),
+    redirect_uri: cdktn.stringToTerraform(struct!.redirectUri),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_code: {
-      value: cdktf.stringToHclTerraform(struct!.authCode),
+      value: cdktn.stringToHclTerraform(struct!.authCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_uri: {
-      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      value: cdktn.stringToHclTerraform(struct!.redirectUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3594,14 +3594,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3686,39 +3686,39 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token: cdktf.stringToTerraform(struct!.accessToken),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
+    access_token: cdktn.stringToTerraform(struct!.accessToken),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestToTerraform(struct!.oauthRequest),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_token: {
-      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      value: cdktn.stringToHclTerraform(struct!.accessToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3735,14 +3735,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3855,31 +3855,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3890,14 +3890,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3962,24 +3962,24 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_secret_key: cdktf.stringToTerraform(struct!.apiSecretKey),
+    api_secret_key: cdktn.stringToTerraform(struct!.apiSecretKey),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_secret_key: {
-      value: cdktf.stringToHclTerraform(struct!.apiSecretKey),
+      value: cdktn.stringToHclTerraform(struct!.apiSecretKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3990,14 +3990,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4047,31 +4047,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4082,14 +4082,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4158,31 +4158,31 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_code: cdktf.stringToTerraform(struct!.authCode),
-    redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
+    auth_code: cdktn.stringToTerraform(struct!.authCode),
+    redirect_uri: cdktn.stringToTerraform(struct!.redirectUri),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_code: {
-      value: cdktf.stringToHclTerraform(struct!.authCode),
+      value: cdktn.stringToHclTerraform(struct!.authCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_uri: {
-      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      value: cdktn.stringToHclTerraform(struct!.redirectUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4193,14 +4193,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4285,39 +4285,39 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token: cdktf.stringToTerraform(struct!.accessToken),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
+    access_token: cdktn.stringToTerraform(struct!.accessToken),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
     oauth_request: appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestToTerraform(struct!.oauthRequest),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_token: {
-      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      value: cdktn.stringToHclTerraform(struct!.accessToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4334,14 +4334,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4554,8 +4554,8 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4582,8 +4582,8 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4701,14 +4701,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfileCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5127,8 +5127,8 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5137,8 +5137,8 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5146,14 +5146,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return attrs;
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5188,38 +5188,38 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    oauth2_grant_type: cdktf.stringToTerraform(struct!.oauth2GrantType),
-    token_url: cdktf.stringToTerraform(struct!.tokenUrl),
-    token_url_custom_properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tokenUrlCustomProperties),
+    oauth2_grant_type: cdktn.stringToTerraform(struct!.oauth2GrantType),
+    token_url: cdktn.stringToTerraform(struct!.tokenUrl),
+    token_url_custom_properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tokenUrlCustomProperties),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     oauth2_grant_type: {
-      value: cdktf.stringToHclTerraform(struct!.oauth2GrantType),
+      value: cdktn.stringToHclTerraform(struct!.oauth2GrantType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_url: {
-      value: cdktf.stringToHclTerraform(struct!.tokenUrl),
+      value: cdktn.stringToHclTerraform(struct!.tokenUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_url_custom_properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tokenUrlCustomProperties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tokenUrlCustomProperties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -5230,14 +5230,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5330,25 +5330,25 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    profile_properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.profileProperties),
+    profile_properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.profileProperties),
     oauth2_properties: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesToTerraform(struct!.oauth2Properties),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     profile_properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.profileProperties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.profileProperties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -5365,14 +5365,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5443,24 +5443,24 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_url: cdktf.stringToTerraform(struct!.instanceUrl),
+    instance_url: cdktn.stringToTerraform(struct!.instanceUrl),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_url: {
-      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      value: cdktn.stringToHclTerraform(struct!.instanceUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5471,14 +5471,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5524,24 +5524,24 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_url: cdktf.stringToTerraform(struct!.instanceUrl),
+    instance_url: cdktn.stringToTerraform(struct!.instanceUrl),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_url: {
-      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      value: cdktn.stringToHclTerraform(struct!.instanceUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5552,14 +5552,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5601,8 +5601,8 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalytics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5611,8 +5611,8 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalytics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5620,14 +5620,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return attrs;
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5650,8 +5650,8 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5660,8 +5660,8 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5669,14 +5669,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return attrs;
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5703,24 +5703,24 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_url: cdktf.stringToTerraform(struct!.instanceUrl),
+    instance_url: cdktn.stringToTerraform(struct!.instanceUrl),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_url: {
-      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      value: cdktn.stringToHclTerraform(struct!.instanceUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5731,14 +5731,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5784,24 +5784,24 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_url: cdktf.stringToTerraform(struct!.instanceUrl),
+    instance_url: cdktn.stringToTerraform(struct!.instanceUrl),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_url: {
-      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      value: cdktn.stringToHclTerraform(struct!.instanceUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5812,14 +5812,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5889,66 +5889,66 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    bucket_prefix: cdktf.stringToTerraform(struct!.bucketPrefix),
-    cluster_identifier: cdktf.stringToTerraform(struct!.clusterIdentifier),
-    data_api_role_arn: cdktf.stringToTerraform(struct!.dataApiRoleArn),
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    database_url: cdktf.stringToTerraform(struct!.databaseUrl),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    bucket_prefix: cdktn.stringToTerraform(struct!.bucketPrefix),
+    cluster_identifier: cdktn.stringToTerraform(struct!.clusterIdentifier),
+    data_api_role_arn: cdktn.stringToTerraform(struct!.dataApiRoleArn),
+    database_name: cdktn.stringToTerraform(struct!.databaseName),
+    database_url: cdktn.stringToTerraform(struct!.databaseUrl),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.bucketPrefix),
+      value: cdktn.stringToHclTerraform(struct!.bucketPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cluster_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.clusterIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.clusterIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_api_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.dataApiRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.dataApiRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      value: cdktn.stringToHclTerraform(struct!.databaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database_url: {
-      value: cdktf.stringToHclTerraform(struct!.databaseUrl),
+      value: cdktn.stringToHclTerraform(struct!.databaseUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5959,14 +5959,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6141,46 +6141,46 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appflow_connector_profile#is_sandbox_environment AppflowConnectorProfile#is_sandbox_environment}
   */
-  readonly isSandboxEnvironment?: boolean | cdktf.IResolvable;
+  readonly isSandboxEnvironment?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appflow_connector_profile#use_privatelink_for_metadata_and_authorization AppflowConnectorProfile#use_privatelink_for_metadata_and_authorization}
   */
-  readonly usePrivatelinkForMetadataAndAuthorization?: boolean | cdktf.IResolvable;
+  readonly usePrivatelinkForMetadataAndAuthorization?: boolean | cdktn.IResolvable;
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_url: cdktf.stringToTerraform(struct!.instanceUrl),
-    is_sandbox_environment: cdktf.booleanToTerraform(struct!.isSandboxEnvironment),
-    use_privatelink_for_metadata_and_authorization: cdktf.booleanToTerraform(struct!.usePrivatelinkForMetadataAndAuthorization),
+    instance_url: cdktn.stringToTerraform(struct!.instanceUrl),
+    is_sandbox_environment: cdktn.booleanToTerraform(struct!.isSandboxEnvironment),
+    use_privatelink_for_metadata_and_authorization: cdktn.booleanToTerraform(struct!.usePrivatelinkForMetadataAndAuthorization),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_url: {
-      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      value: cdktn.stringToHclTerraform(struct!.instanceUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_sandbox_environment: {
-      value: cdktf.booleanToHclTerraform(struct!.isSandboxEnvironment),
+      value: cdktn.booleanToHclTerraform(struct!.isSandboxEnvironment),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     use_privatelink_for_metadata_and_authorization: {
-      value: cdktf.booleanToHclTerraform(struct!.usePrivatelinkForMetadataAndAuthorization),
+      value: cdktn.booleanToHclTerraform(struct!.usePrivatelinkForMetadataAndAuthorization),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -6191,14 +6191,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6252,11 +6252,11 @@ export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileProper
   }
 
   // is_sandbox_environment - computed: false, optional: true, required: false
-  private _isSandboxEnvironment?: boolean | cdktf.IResolvable; 
+  private _isSandboxEnvironment?: boolean | cdktn.IResolvable; 
   public get isSandboxEnvironment() {
     return this.getBooleanAttribute('is_sandbox_environment');
   }
-  public set isSandboxEnvironment(value: boolean | cdktf.IResolvable) {
+  public set isSandboxEnvironment(value: boolean | cdktn.IResolvable) {
     this._isSandboxEnvironment = value;
   }
   public resetIsSandboxEnvironment() {
@@ -6268,11 +6268,11 @@ export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileProper
   }
 
   // use_privatelink_for_metadata_and_authorization - computed: false, optional: true, required: false
-  private _usePrivatelinkForMetadataAndAuthorization?: boolean | cdktf.IResolvable; 
+  private _usePrivatelinkForMetadataAndAuthorization?: boolean | cdktn.IResolvable; 
   public get usePrivatelinkForMetadataAndAuthorization() {
     return this.getBooleanAttribute('use_privatelink_for_metadata_and_authorization');
   }
-  public set usePrivatelinkForMetadataAndAuthorization(value: boolean | cdktf.IResolvable) {
+  public set usePrivatelinkForMetadataAndAuthorization(value: boolean | cdktn.IResolvable) {
     this._usePrivatelinkForMetadataAndAuthorization = value;
   }
   public resetUsePrivatelinkForMetadataAndAuthorization() {
@@ -6299,38 +6299,38 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_code_url: cdktf.stringToTerraform(struct!.authCodeUrl),
-    oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.oauthScopes),
-    token_url: cdktf.stringToTerraform(struct!.tokenUrl),
+    auth_code_url: cdktn.stringToTerraform(struct!.authCodeUrl),
+    oauth_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.oauthScopes),
+    token_url: cdktn.stringToTerraform(struct!.tokenUrl),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_code_url: {
-      value: cdktf.stringToHclTerraform(struct!.authCodeUrl),
+      value: cdktn.stringToHclTerraform(struct!.authCodeUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     oauth_scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.oauthScopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.oauthScopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     token_url: {
-      value: cdktf.stringToHclTerraform(struct!.tokenUrl),
+      value: cdktn.stringToHclTerraform(struct!.tokenUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6341,14 +6341,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6458,60 +6458,60 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    application_host_url: cdktf.stringToTerraform(struct!.applicationHostUrl),
-    application_service_path: cdktf.stringToTerraform(struct!.applicationServicePath),
-    client_number: cdktf.stringToTerraform(struct!.clientNumber),
-    logon_language: cdktf.stringToTerraform(struct!.logonLanguage),
-    port_number: cdktf.numberToTerraform(struct!.portNumber),
-    private_link_service_name: cdktf.stringToTerraform(struct!.privateLinkServiceName),
+    application_host_url: cdktn.stringToTerraform(struct!.applicationHostUrl),
+    application_service_path: cdktn.stringToTerraform(struct!.applicationServicePath),
+    client_number: cdktn.stringToTerraform(struct!.clientNumber),
+    logon_language: cdktn.stringToTerraform(struct!.logonLanguage),
+    port_number: cdktn.numberToTerraform(struct!.portNumber),
+    private_link_service_name: cdktn.stringToTerraform(struct!.privateLinkServiceName),
     oauth_properties: appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesToTerraform(struct!.oauthProperties),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     application_host_url: {
-      value: cdktf.stringToHclTerraform(struct!.applicationHostUrl),
+      value: cdktn.stringToHclTerraform(struct!.applicationHostUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     application_service_path: {
-      value: cdktf.stringToHclTerraform(struct!.applicationServicePath),
+      value: cdktn.stringToHclTerraform(struct!.applicationServicePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_number: {
-      value: cdktf.stringToHclTerraform(struct!.clientNumber),
+      value: cdktn.stringToHclTerraform(struct!.clientNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     logon_language: {
-      value: cdktf.stringToHclTerraform(struct!.logonLanguage),
+      value: cdktn.stringToHclTerraform(struct!.logonLanguage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port_number: {
-      value: cdktf.numberToHclTerraform(struct!.portNumber),
+      value: cdktn.numberToHclTerraform(struct!.portNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     private_link_service_name: {
-      value: cdktf.stringToHclTerraform(struct!.privateLinkServiceName),
+      value: cdktn.stringToHclTerraform(struct!.privateLinkServiceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6528,14 +6528,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6704,24 +6704,24 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_url: cdktf.stringToTerraform(struct!.instanceUrl),
+    instance_url: cdktn.stringToTerraform(struct!.instanceUrl),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_url: {
-      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      value: cdktn.stringToHclTerraform(struct!.instanceUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6732,14 +6732,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6781,8 +6781,8 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6791,8 +6791,8 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6800,14 +6800,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return attrs;
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6834,24 +6834,24 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_url: cdktf.stringToTerraform(struct!.instanceUrl),
+    instance_url: cdktn.stringToTerraform(struct!.instanceUrl),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_url: {
-      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      value: cdktn.stringToHclTerraform(struct!.instanceUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6862,14 +6862,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6939,66 +6939,66 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_name: cdktf.stringToTerraform(struct!.accountName),
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    bucket_prefix: cdktf.stringToTerraform(struct!.bucketPrefix),
-    private_link_service_name: cdktf.stringToTerraform(struct!.privateLinkServiceName),
-    region: cdktf.stringToTerraform(struct!.region),
-    stage: cdktf.stringToTerraform(struct!.stage),
-    warehouse: cdktf.stringToTerraform(struct!.warehouse),
+    account_name: cdktn.stringToTerraform(struct!.accountName),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    bucket_prefix: cdktn.stringToTerraform(struct!.bucketPrefix),
+    private_link_service_name: cdktn.stringToTerraform(struct!.privateLinkServiceName),
+    region: cdktn.stringToTerraform(struct!.region),
+    stage: cdktn.stringToTerraform(struct!.stage),
+    warehouse: cdktn.stringToTerraform(struct!.warehouse),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_name: {
-      value: cdktf.stringToHclTerraform(struct!.accountName),
+      value: cdktn.stringToHclTerraform(struct!.accountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.bucketPrefix),
+      value: cdktn.stringToHclTerraform(struct!.bucketPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_link_service_name: {
-      value: cdktf.stringToHclTerraform(struct!.privateLinkServiceName),
+      value: cdktn.stringToHclTerraform(struct!.privateLinkServiceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stage: {
-      value: cdktf.stringToHclTerraform(struct!.stage),
+      value: cdktn.stringToHclTerraform(struct!.stage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     warehouse: {
-      value: cdktf.stringToHclTerraform(struct!.warehouse),
+      value: cdktn.stringToHclTerraform(struct!.warehouse),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7009,14 +7009,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7184,8 +7184,8 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -7194,8 +7194,8 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -7203,14 +7203,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return attrs;
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7237,24 +7237,24 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_url: cdktf.stringToTerraform(struct!.instanceUrl),
+    instance_url: cdktn.stringToTerraform(struct!.instanceUrl),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_url: {
-      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      value: cdktn.stringToHclTerraform(struct!.instanceUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7265,14 +7265,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7318,24 +7318,24 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_url: cdktf.stringToTerraform(struct!.instanceUrl),
+    instance_url: cdktn.stringToTerraform(struct!.instanceUrl),
   }
 }
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_url: {
-      value: cdktf.stringToHclTerraform(struct!.instanceUrl),
+      value: cdktn.stringToHclTerraform(struct!.instanceUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7346,14 +7346,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7503,8 +7503,8 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 }
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -7531,8 +7531,8 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
 
 
 export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference | AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -7650,14 +7650,14 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8088,8 +8088,8 @@ export interface AppflowConnectorProfileConnectorProfileConfig {
 }
 
 export function appflowConnectorProfileConnectorProfileConfigToTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigOutputReference | AppflowConnectorProfileConnectorProfileConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -8100,8 +8100,8 @@ export function appflowConnectorProfileConnectorProfileConfigToTerraform(struct?
 
 
 export function appflowConnectorProfileConnectorProfileConfigToHclTerraform(struct?: AppflowConnectorProfileConnectorProfileConfigOutputReference | AppflowConnectorProfileConnectorProfileConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -8123,14 +8123,14 @@ export function appflowConnectorProfileConnectorProfileConfigToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppflowConnectorProfileConnectorProfileConfigOutputReference extends cdktf.ComplexObject {
+export class AppflowConnectorProfileConnectorProfileConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8191,7 +8191,7 @@ export class AppflowConnectorProfileConnectorProfileConfigOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appflow_connector_profile aws_appflow_connector_profile}
 */
-export class AppflowConnectorProfile extends cdktf.TerraformResource {
+export class AppflowConnectorProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -8202,14 +8202,14 @@ export class AppflowConnectorProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppflowConnectorProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppflowConnectorProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppflowConnectorProfile to import
   * @param importFromId The id of the existing AppflowConnectorProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appflow_connector_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppflowConnectorProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appflow_connector_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appflow_connector_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -8385,13 +8385,13 @@ export class AppflowConnectorProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_mode: cdktf.stringToTerraform(this._connectionMode),
-      connector_label: cdktf.stringToTerraform(this._connectorLabel),
-      connector_type: cdktf.stringToTerraform(this._connectorType),
-      id: cdktf.stringToTerraform(this._id),
-      kms_arn: cdktf.stringToTerraform(this._kmsArn),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      connection_mode: cdktn.stringToTerraform(this._connectionMode),
+      connector_label: cdktn.stringToTerraform(this._connectorLabel),
+      connector_type: cdktn.stringToTerraform(this._connectorType),
+      id: cdktn.stringToTerraform(this._id),
+      kms_arn: cdktn.stringToTerraform(this._kmsArn),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
       connector_profile_config: appflowConnectorProfileConnectorProfileConfigToTerraform(this._connectorProfileConfig.internalValue),
     };
   }
@@ -8399,43 +8399,43 @@ export class AppflowConnectorProfile extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       connection_mode: {
-        value: cdktf.stringToHclTerraform(this._connectionMode),
+        value: cdktn.stringToHclTerraform(this._connectionMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connector_label: {
-        value: cdktf.stringToHclTerraform(this._connectorLabel),
+        value: cdktn.stringToHclTerraform(this._connectorLabel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connector_type: {
-        value: cdktf.stringToHclTerraform(this._connectorType),
+        value: cdktn.stringToHclTerraform(this._connectorType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_arn: {
-        value: cdktf.stringToHclTerraform(this._kmsArn),
+        value: cdktn.stringToHclTerraform(this._kmsArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

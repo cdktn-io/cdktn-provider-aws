@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BedrockagentAgentConfig extends cdktf.TerraformMetaArguments {
+export interface BedrockagentAgentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent#agent_collaboration BedrockagentAgent#agent_collaboration}
   */
@@ -39,7 +39,7 @@ export interface BedrockagentAgentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent#guardrail_configuration BedrockagentAgent#guardrail_configuration}
   */
-  readonly guardrailConfiguration?: BedrockagentAgentGuardrailConfiguration[] | cdktf.IResolvable;
+  readonly guardrailConfiguration?: BedrockagentAgentGuardrailConfiguration[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent#idle_session_ttl_in_seconds BedrockagentAgent#idle_session_ttl_in_seconds}
   */
@@ -51,15 +51,15 @@ export interface BedrockagentAgentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent#memory_configuration BedrockagentAgent#memory_configuration}
   */
-  readonly memoryConfiguration?: BedrockagentAgentMemoryConfiguration[] | cdktf.IResolvable;
+  readonly memoryConfiguration?: BedrockagentAgentMemoryConfiguration[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent#prepare_agent BedrockagentAgent#prepare_agent}
   */
-  readonly prepareAgent?: boolean | cdktf.IResolvable;
+  readonly prepareAgent?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent#prompt_override_configuration BedrockagentAgent#prompt_override_configuration}
   */
-  readonly promptOverrideConfiguration?: BedrockagentAgentPromptOverrideConfiguration[] | cdktf.IResolvable;
+  readonly promptOverrideConfiguration?: BedrockagentAgentPromptOverrideConfiguration[] | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -69,7 +69,7 @@ export interface BedrockagentAgentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent#skip_resource_in_use_check BedrockagentAgent#skip_resource_in_use_check}
   */
-  readonly skipResourceInUseCheck?: boolean | cdktf.IResolvable;
+  readonly skipResourceInUseCheck?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent#tags BedrockagentAgent#tags}
   */
@@ -92,32 +92,32 @@ export interface BedrockagentAgentGuardrailConfiguration {
   readonly guardrailVersion?: string;
 }
 
-export function bedrockagentAgentGuardrailConfigurationToTerraform(struct?: BedrockagentAgentGuardrailConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentGuardrailConfigurationToTerraform(struct?: BedrockagentAgentGuardrailConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    guardrail_identifier: cdktf.stringToTerraform(struct!.guardrailIdentifier),
-    guardrail_version: cdktf.stringToTerraform(struct!.guardrailVersion),
+    guardrail_identifier: cdktn.stringToTerraform(struct!.guardrailIdentifier),
+    guardrail_version: cdktn.stringToTerraform(struct!.guardrailVersion),
   }
 }
 
 
-export function bedrockagentAgentGuardrailConfigurationToHclTerraform(struct?: BedrockagentAgentGuardrailConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentGuardrailConfigurationToHclTerraform(struct?: BedrockagentAgentGuardrailConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     guardrail_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.guardrailIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.guardrailIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     guardrail_version: {
-      value: cdktf.stringToHclTerraform(struct!.guardrailVersion),
+      value: cdktn.stringToHclTerraform(struct!.guardrailVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -128,9 +128,9 @@ export function bedrockagentAgentGuardrailConfigurationToHclTerraform(struct?: B
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentGuardrailConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentGuardrailConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -138,11 +138,11 @@ export class BedrockagentAgentGuardrailConfigurationOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentAgentGuardrailConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentGuardrailConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -159,14 +159,14 @@ export class BedrockagentAgentGuardrailConfigurationOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentGuardrailConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentGuardrailConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._guardrailIdentifier = undefined;
       this._guardrailVersion = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -211,15 +211,15 @@ export class BedrockagentAgentGuardrailConfigurationOutputReference extends cdkt
   }
 }
 
-export class BedrockagentAgentGuardrailConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentAgentGuardrailConfiguration[] | cdktf.IResolvable
+export class BedrockagentAgentGuardrailConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentAgentGuardrailConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -237,25 +237,25 @@ export interface BedrockagentAgentMemoryConfigurationSessionSummaryConfiguration
   readonly maxRecentSessions?: number;
 }
 
-export function bedrockagentAgentMemoryConfigurationSessionSummaryConfigurationToTerraform(struct?: BedrockagentAgentMemoryConfigurationSessionSummaryConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentMemoryConfigurationSessionSummaryConfigurationToTerraform(struct?: BedrockagentAgentMemoryConfigurationSessionSummaryConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_recent_sessions: cdktf.numberToTerraform(struct!.maxRecentSessions),
+    max_recent_sessions: cdktn.numberToTerraform(struct!.maxRecentSessions),
   }
 }
 
 
-export function bedrockagentAgentMemoryConfigurationSessionSummaryConfigurationToHclTerraform(struct?: BedrockagentAgentMemoryConfigurationSessionSummaryConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentMemoryConfigurationSessionSummaryConfigurationToHclTerraform(struct?: BedrockagentAgentMemoryConfigurationSessionSummaryConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_recent_sessions: {
-      value: cdktf.numberToHclTerraform(struct!.maxRecentSessions),
+      value: cdktn.numberToHclTerraform(struct!.maxRecentSessions),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -266,9 +266,9 @@ export function bedrockagentAgentMemoryConfigurationSessionSummaryConfigurationT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentMemoryConfigurationSessionSummaryConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentMemoryConfigurationSessionSummaryConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -276,11 +276,11 @@ export class BedrockagentAgentMemoryConfigurationSessionSummaryConfigurationOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentAgentMemoryConfigurationSessionSummaryConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentMemoryConfigurationSessionSummaryConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -293,13 +293,13 @@ export class BedrockagentAgentMemoryConfigurationSessionSummaryConfigurationOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentMemoryConfigurationSessionSummaryConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentMemoryConfigurationSessionSummaryConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._maxRecentSessions = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -327,15 +327,15 @@ export class BedrockagentAgentMemoryConfigurationSessionSummaryConfigurationOutp
   }
 }
 
-export class BedrockagentAgentMemoryConfigurationSessionSummaryConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentAgentMemoryConfigurationSessionSummaryConfiguration[] | cdktf.IResolvable
+export class BedrockagentAgentMemoryConfigurationSessionSummaryConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentAgentMemoryConfigurationSessionSummaryConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -354,46 +354,46 @@ export interface BedrockagentAgentMemoryConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent#session_summary_configuration BedrockagentAgent#session_summary_configuration}
   */
-  readonly sessionSummaryConfiguration?: BedrockagentAgentMemoryConfigurationSessionSummaryConfiguration[] | cdktf.IResolvable;
+  readonly sessionSummaryConfiguration?: BedrockagentAgentMemoryConfigurationSessionSummaryConfiguration[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent#storage_days BedrockagentAgent#storage_days}
   */
   readonly storageDays?: number;
 }
 
-export function bedrockagentAgentMemoryConfigurationToTerraform(struct?: BedrockagentAgentMemoryConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentMemoryConfigurationToTerraform(struct?: BedrockagentAgentMemoryConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled_memory_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.enabledMemoryTypes),
-    session_summary_configuration: cdktf.listMapper(bedrockagentAgentMemoryConfigurationSessionSummaryConfigurationToTerraform, false)(struct!.sessionSummaryConfiguration),
-    storage_days: cdktf.numberToTerraform(struct!.storageDays),
+    enabled_memory_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.enabledMemoryTypes),
+    session_summary_configuration: cdktn.listMapper(bedrockagentAgentMemoryConfigurationSessionSummaryConfigurationToTerraform, false)(struct!.sessionSummaryConfiguration),
+    storage_days: cdktn.numberToTerraform(struct!.storageDays),
   }
 }
 
 
-export function bedrockagentAgentMemoryConfigurationToHclTerraform(struct?: BedrockagentAgentMemoryConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentMemoryConfigurationToHclTerraform(struct?: BedrockagentAgentMemoryConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled_memory_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.enabledMemoryTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.enabledMemoryTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     session_summary_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentAgentMemoryConfigurationSessionSummaryConfigurationToHclTerraform, false)(struct!.sessionSummaryConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentAgentMemoryConfigurationSessionSummaryConfigurationToHclTerraform, false)(struct!.sessionSummaryConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentAgentMemoryConfigurationSessionSummaryConfigurationList",
     },
     storage_days: {
-      value: cdktf.numberToHclTerraform(struct!.storageDays),
+      value: cdktn.numberToHclTerraform(struct!.storageDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -404,9 +404,9 @@ export function bedrockagentAgentMemoryConfigurationToHclTerraform(struct?: Bedr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentMemoryConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentMemoryConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -414,11 +414,11 @@ export class BedrockagentAgentMemoryConfigurationOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentAgentMemoryConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentMemoryConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -439,7 +439,7 @@ export class BedrockagentAgentMemoryConfigurationOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentMemoryConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentMemoryConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -447,7 +447,7 @@ export class BedrockagentAgentMemoryConfigurationOutputReference extends cdktf.C
       this._sessionSummaryConfiguration.internalValue = undefined;
       this._storageDays = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -481,7 +481,7 @@ export class BedrockagentAgentMemoryConfigurationOutputReference extends cdktf.C
   public get sessionSummaryConfiguration() {
     return this._sessionSummaryConfiguration;
   }
-  public putSessionSummaryConfiguration(value: BedrockagentAgentMemoryConfigurationSessionSummaryConfiguration[] | cdktf.IResolvable) {
+  public putSessionSummaryConfiguration(value: BedrockagentAgentMemoryConfigurationSessionSummaryConfiguration[] | cdktn.IResolvable) {
     this._sessionSummaryConfiguration.internalValue = value;
   }
   public resetSessionSummaryConfiguration() {
@@ -509,15 +509,15 @@ export class BedrockagentAgentMemoryConfigurationOutputReference extends cdktf.C
   }
 }
 
-export class BedrockagentAgentMemoryConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentAgentMemoryConfiguration[] | cdktf.IResolvable
+export class BedrockagentAgentMemoryConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentAgentMemoryConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -551,53 +551,53 @@ export interface BedrockagentAgentPromptOverrideConfigurationPromptConfiguration
   readonly topP?: number;
 }
 
-export function bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationToTerraform(struct?: BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationToTerraform(struct?: BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_length: cdktf.numberToTerraform(struct!.maxLength),
-    stop_sequences: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.stopSequences),
-    temperature: cdktf.numberToTerraform(struct!.temperature),
-    top_k: cdktf.numberToTerraform(struct!.topK),
-    top_p: cdktf.numberToTerraform(struct!.topP),
+    max_length: cdktn.numberToTerraform(struct!.maxLength),
+    stop_sequences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.stopSequences),
+    temperature: cdktn.numberToTerraform(struct!.temperature),
+    top_k: cdktn.numberToTerraform(struct!.topK),
+    top_p: cdktn.numberToTerraform(struct!.topP),
   }
 }
 
 
-export function bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationToHclTerraform(struct?: BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationToHclTerraform(struct?: BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_length: {
-      value: cdktf.numberToHclTerraform(struct!.maxLength),
+      value: cdktn.numberToHclTerraform(struct!.maxLength),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     stop_sequences: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.stopSequences),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.stopSequences),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     temperature: {
-      value: cdktf.numberToHclTerraform(struct!.temperature),
+      value: cdktn.numberToHclTerraform(struct!.temperature),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     top_k: {
-      value: cdktf.numberToHclTerraform(struct!.topK),
+      value: cdktn.numberToHclTerraform(struct!.topK),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     top_p: {
-      value: cdktf.numberToHclTerraform(struct!.topP),
+      value: cdktn.numberToHclTerraform(struct!.topP),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -608,9 +608,9 @@ export function bedrockagentAgentPromptOverrideConfigurationPromptConfigurations
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -618,11 +618,11 @@ export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -651,7 +651,7 @@ export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -661,7 +661,7 @@ export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInf
       this._topK = undefined;
       this._topP = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -757,15 +757,15 @@ export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInf
   }
 }
 
-export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration[] | cdktf.IResolvable
+export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -784,7 +784,7 @@ export interface BedrockagentAgentPromptOverrideConfigurationPromptConfiguration
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent#inference_configuration BedrockagentAgent#inference_configuration}
   */
-  readonly inferenceConfiguration?: BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration[] | cdktf.IResolvable;
+  readonly inferenceConfiguration?: BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent#parser_mode BedrockagentAgent#parser_mode}
   */
@@ -803,60 +803,60 @@ export interface BedrockagentAgentPromptOverrideConfigurationPromptConfiguration
   readonly promptType?: string;
 }
 
-export function bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsToTerraform(struct?: BedrockagentAgentPromptOverrideConfigurationPromptConfigurations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsToTerraform(struct?: BedrockagentAgentPromptOverrideConfigurationPromptConfigurations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    base_prompt_template: cdktf.stringToTerraform(struct!.basePromptTemplate),
-    inference_configuration: cdktf.listMapper(bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationToTerraform, false)(struct!.inferenceConfiguration),
-    parser_mode: cdktf.stringToTerraform(struct!.parserMode),
-    prompt_creation_mode: cdktf.stringToTerraform(struct!.promptCreationMode),
-    prompt_state: cdktf.stringToTerraform(struct!.promptState),
-    prompt_type: cdktf.stringToTerraform(struct!.promptType),
+    base_prompt_template: cdktn.stringToTerraform(struct!.basePromptTemplate),
+    inference_configuration: cdktn.listMapper(bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationToTerraform, false)(struct!.inferenceConfiguration),
+    parser_mode: cdktn.stringToTerraform(struct!.parserMode),
+    prompt_creation_mode: cdktn.stringToTerraform(struct!.promptCreationMode),
+    prompt_state: cdktn.stringToTerraform(struct!.promptState),
+    prompt_type: cdktn.stringToTerraform(struct!.promptType),
   }
 }
 
 
-export function bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsToHclTerraform(struct?: BedrockagentAgentPromptOverrideConfigurationPromptConfigurations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsToHclTerraform(struct?: BedrockagentAgentPromptOverrideConfigurationPromptConfigurations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     base_prompt_template: {
-      value: cdktf.stringToHclTerraform(struct!.basePromptTemplate),
+      value: cdktn.stringToHclTerraform(struct!.basePromptTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     inference_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationToHclTerraform, false)(struct!.inferenceConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationToHclTerraform, false)(struct!.inferenceConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationList",
     },
     parser_mode: {
-      value: cdktf.stringToHclTerraform(struct!.parserMode),
+      value: cdktn.stringToHclTerraform(struct!.parserMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prompt_creation_mode: {
-      value: cdktf.stringToHclTerraform(struct!.promptCreationMode),
+      value: cdktn.stringToHclTerraform(struct!.promptCreationMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prompt_state: {
-      value: cdktf.stringToHclTerraform(struct!.promptState),
+      value: cdktn.stringToHclTerraform(struct!.promptState),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prompt_type: {
-      value: cdktf.stringToHclTerraform(struct!.promptType),
+      value: cdktn.stringToHclTerraform(struct!.promptType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -867,9 +867,9 @@ export function bedrockagentAgentPromptOverrideConfigurationPromptConfigurations
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -877,11 +877,11 @@ export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentAgentPromptOverrideConfigurationPromptConfigurations | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentPromptOverrideConfigurationPromptConfigurations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -914,7 +914,7 @@ export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentPromptOverrideConfigurationPromptConfigurations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentPromptOverrideConfigurationPromptConfigurations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -925,7 +925,7 @@ export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsOut
       this._promptState = undefined;
       this._promptType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -962,7 +962,7 @@ export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsOut
   public get inferenceConfiguration() {
     return this._inferenceConfiguration;
   }
-  public putInferenceConfiguration(value: BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration[] | cdktf.IResolvable) {
+  public putInferenceConfiguration(value: BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration[] | cdktn.IResolvable) {
     this._inferenceConfiguration.internalValue = value;
   }
   public resetInferenceConfiguration() {
@@ -1038,15 +1038,15 @@ export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsOut
   }
 }
 
-export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentAgentPromptOverrideConfigurationPromptConfigurations[] | cdktf.IResolvable
+export class BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentAgentPromptOverrideConfigurationPromptConfigurations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1065,35 +1065,35 @@ export interface BedrockagentAgentPromptOverrideConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent#prompt_configurations BedrockagentAgent#prompt_configurations}
   */
-  readonly promptConfigurations?: BedrockagentAgentPromptOverrideConfigurationPromptConfigurations[] | cdktf.IResolvable;
+  readonly promptConfigurations?: BedrockagentAgentPromptOverrideConfigurationPromptConfigurations[] | cdktn.IResolvable;
 }
 
-export function bedrockagentAgentPromptOverrideConfigurationToTerraform(struct?: BedrockagentAgentPromptOverrideConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentPromptOverrideConfigurationToTerraform(struct?: BedrockagentAgentPromptOverrideConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    override_lambda: cdktf.stringToTerraform(struct!.overrideLambda),
-    prompt_configurations: cdktf.listMapper(bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsToTerraform, false)(struct!.promptConfigurations),
+    override_lambda: cdktn.stringToTerraform(struct!.overrideLambda),
+    prompt_configurations: cdktn.listMapper(bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsToTerraform, false)(struct!.promptConfigurations),
   }
 }
 
 
-export function bedrockagentAgentPromptOverrideConfigurationToHclTerraform(struct?: BedrockagentAgentPromptOverrideConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentPromptOverrideConfigurationToHclTerraform(struct?: BedrockagentAgentPromptOverrideConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     override_lambda: {
-      value: cdktf.stringToHclTerraform(struct!.overrideLambda),
+      value: cdktn.stringToHclTerraform(struct!.overrideLambda),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prompt_configurations: {
-      value: cdktf.listMapperHcl(bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsToHclTerraform, false)(struct!.promptConfigurations),
+      value: cdktn.listMapperHcl(bedrockagentAgentPromptOverrideConfigurationPromptConfigurationsToHclTerraform, false)(struct!.promptConfigurations),
       isBlock: true,
       type: "set",
       storageClassType: "BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsList",
@@ -1104,9 +1104,9 @@ export function bedrockagentAgentPromptOverrideConfigurationToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentPromptOverrideConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentPromptOverrideConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1114,11 +1114,11 @@ export class BedrockagentAgentPromptOverrideConfigurationOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentAgentPromptOverrideConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentPromptOverrideConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1135,14 +1135,14 @@ export class BedrockagentAgentPromptOverrideConfigurationOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentPromptOverrideConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentPromptOverrideConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._overrideLambda = undefined;
       this._promptConfigurations.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1175,7 +1175,7 @@ export class BedrockagentAgentPromptOverrideConfigurationOutputReference extends
   public get promptConfigurations() {
     return this._promptConfigurations;
   }
-  public putPromptConfigurations(value: BedrockagentAgentPromptOverrideConfigurationPromptConfigurations[] | cdktf.IResolvable) {
+  public putPromptConfigurations(value: BedrockagentAgentPromptOverrideConfigurationPromptConfigurations[] | cdktn.IResolvable) {
     this._promptConfigurations.internalValue = value;
   }
   public resetPromptConfigurations() {
@@ -1187,15 +1187,15 @@ export class BedrockagentAgentPromptOverrideConfigurationOutputReference extends
   }
 }
 
-export class BedrockagentAgentPromptOverrideConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentAgentPromptOverrideConfiguration[] | cdktf.IResolvable
+export class BedrockagentAgentPromptOverrideConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentAgentPromptOverrideConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1227,39 +1227,39 @@ export interface BedrockagentAgentTimeouts {
   readonly update?: string;
 }
 
-export function bedrockagentAgentTimeoutsToTerraform(struct?: BedrockagentAgentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentTimeoutsToTerraform(struct?: BedrockagentAgentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function bedrockagentAgentTimeoutsToHclTerraform(struct?: BedrockagentAgentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentTimeoutsToHclTerraform(struct?: BedrockagentAgentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1270,19 +1270,19 @@ export function bedrockagentAgentTimeoutsToHclTerraform(struct?: BedrockagentAge
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BedrockagentAgentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1303,7 +1303,7 @@ export class BedrockagentAgentTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1311,7 +1311,7 @@ export class BedrockagentAgentTimeoutsOutputReference extends cdktf.ComplexObjec
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1376,7 +1376,7 @@ export class BedrockagentAgentTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent aws_bedrockagent_agent}
 */
-export class BedrockagentAgent extends cdktf.TerraformResource {
+export class BedrockagentAgent extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1387,14 +1387,14 @@ export class BedrockagentAgent extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BedrockagentAgent resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BedrockagentAgent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentAgent to import
   * @param importFromId The id of the existing BedrockagentAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentAgent to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagent_agent", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagent_agent", importId: importFromId, provider });
       }
 
   // ===========
@@ -1553,7 +1553,7 @@ export class BedrockagentAgent extends cdktf.TerraformResource {
   public get guardrailConfiguration() {
     return this._guardrailConfiguration;
   }
-  public putGuardrailConfiguration(value: BedrockagentAgentGuardrailConfiguration[] | cdktf.IResolvable) {
+  public putGuardrailConfiguration(value: BedrockagentAgentGuardrailConfiguration[] | cdktn.IResolvable) {
     this._guardrailConfiguration.internalValue = value;
   }
   public resetGuardrailConfiguration() {
@@ -1606,7 +1606,7 @@ export class BedrockagentAgent extends cdktf.TerraformResource {
   public get memoryConfiguration() {
     return this._memoryConfiguration;
   }
-  public putMemoryConfiguration(value: BedrockagentAgentMemoryConfiguration[] | cdktf.IResolvable) {
+  public putMemoryConfiguration(value: BedrockagentAgentMemoryConfiguration[] | cdktn.IResolvable) {
     this._memoryConfiguration.internalValue = value;
   }
   public resetMemoryConfiguration() {
@@ -1618,11 +1618,11 @@ export class BedrockagentAgent extends cdktf.TerraformResource {
   }
 
   // prepare_agent - computed: true, optional: true, required: false
-  private _prepareAgent?: boolean | cdktf.IResolvable; 
+  private _prepareAgent?: boolean | cdktn.IResolvable; 
   public get prepareAgent() {
     return this.getBooleanAttribute('prepare_agent');
   }
-  public set prepareAgent(value: boolean | cdktf.IResolvable) {
+  public set prepareAgent(value: boolean | cdktn.IResolvable) {
     this._prepareAgent = value;
   }
   public resetPrepareAgent() {
@@ -1643,7 +1643,7 @@ export class BedrockagentAgent extends cdktf.TerraformResource {
   public get promptOverrideConfiguration() {
     return this._promptOverrideConfiguration;
   }
-  public putPromptOverrideConfiguration(value: BedrockagentAgentPromptOverrideConfiguration[] | cdktf.IResolvable) {
+  public putPromptOverrideConfiguration(value: BedrockagentAgentPromptOverrideConfiguration[] | cdktn.IResolvable) {
     this._promptOverrideConfiguration.internalValue = value;
   }
   public resetPromptOverrideConfiguration() {
@@ -1671,11 +1671,11 @@ export class BedrockagentAgent extends cdktf.TerraformResource {
   }
 
   // skip_resource_in_use_check - computed: true, optional: true, required: false
-  private _skipResourceInUseCheck?: boolean | cdktf.IResolvable; 
+  private _skipResourceInUseCheck?: boolean | cdktn.IResolvable; 
   public get skipResourceInUseCheck() {
     return this.getBooleanAttribute('skip_resource_in_use_check');
   }
-  public set skipResourceInUseCheck(value: boolean | cdktf.IResolvable) {
+  public set skipResourceInUseCheck(value: boolean | cdktn.IResolvable) {
     this._skipResourceInUseCheck = value;
   }
   public resetSkipResourceInUseCheck() {
@@ -1703,7 +1703,7 @@ export class BedrockagentAgent extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1730,21 +1730,21 @@ export class BedrockagentAgent extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      agent_collaboration: cdktf.stringToTerraform(this._agentCollaboration),
-      agent_name: cdktf.stringToTerraform(this._agentName),
-      agent_resource_role_arn: cdktf.stringToTerraform(this._agentResourceRoleArn),
-      customer_encryption_key_arn: cdktf.stringToTerraform(this._customerEncryptionKeyArn),
-      description: cdktf.stringToTerraform(this._description),
-      foundation_model: cdktf.stringToTerraform(this._foundationModel),
-      guardrail_configuration: cdktf.listMapper(bedrockagentAgentGuardrailConfigurationToTerraform, false)(this._guardrailConfiguration.internalValue),
-      idle_session_ttl_in_seconds: cdktf.numberToTerraform(this._idleSessionTtlInSeconds),
-      instruction: cdktf.stringToTerraform(this._instruction),
-      memory_configuration: cdktf.listMapper(bedrockagentAgentMemoryConfigurationToTerraform, false)(this._memoryConfiguration.internalValue),
-      prepare_agent: cdktf.booleanToTerraform(this._prepareAgent),
-      prompt_override_configuration: cdktf.listMapper(bedrockagentAgentPromptOverrideConfigurationToTerraform, false)(this._promptOverrideConfiguration.internalValue),
-      region: cdktf.stringToTerraform(this._region),
-      skip_resource_in_use_check: cdktf.booleanToTerraform(this._skipResourceInUseCheck),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      agent_collaboration: cdktn.stringToTerraform(this._agentCollaboration),
+      agent_name: cdktn.stringToTerraform(this._agentName),
+      agent_resource_role_arn: cdktn.stringToTerraform(this._agentResourceRoleArn),
+      customer_encryption_key_arn: cdktn.stringToTerraform(this._customerEncryptionKeyArn),
+      description: cdktn.stringToTerraform(this._description),
+      foundation_model: cdktn.stringToTerraform(this._foundationModel),
+      guardrail_configuration: cdktn.listMapper(bedrockagentAgentGuardrailConfigurationToTerraform, false)(this._guardrailConfiguration.internalValue),
+      idle_session_ttl_in_seconds: cdktn.numberToTerraform(this._idleSessionTtlInSeconds),
+      instruction: cdktn.stringToTerraform(this._instruction),
+      memory_configuration: cdktn.listMapper(bedrockagentAgentMemoryConfigurationToTerraform, false)(this._memoryConfiguration.internalValue),
+      prepare_agent: cdktn.booleanToTerraform(this._prepareAgent),
+      prompt_override_configuration: cdktn.listMapper(bedrockagentAgentPromptOverrideConfigurationToTerraform, false)(this._promptOverrideConfiguration.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      skip_resource_in_use_check: cdktn.booleanToTerraform(this._skipResourceInUseCheck),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: bedrockagentAgentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1752,91 +1752,91 @@ export class BedrockagentAgent extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       agent_collaboration: {
-        value: cdktf.stringToHclTerraform(this._agentCollaboration),
+        value: cdktn.stringToHclTerraform(this._agentCollaboration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       agent_name: {
-        value: cdktf.stringToHclTerraform(this._agentName),
+        value: cdktn.stringToHclTerraform(this._agentName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       agent_resource_role_arn: {
-        value: cdktf.stringToHclTerraform(this._agentResourceRoleArn),
+        value: cdktn.stringToHclTerraform(this._agentResourceRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_encryption_key_arn: {
-        value: cdktf.stringToHclTerraform(this._customerEncryptionKeyArn),
+        value: cdktn.stringToHclTerraform(this._customerEncryptionKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       foundation_model: {
-        value: cdktf.stringToHclTerraform(this._foundationModel),
+        value: cdktn.stringToHclTerraform(this._foundationModel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       guardrail_configuration: {
-        value: cdktf.listMapperHcl(bedrockagentAgentGuardrailConfigurationToHclTerraform, false)(this._guardrailConfiguration.internalValue),
+        value: cdktn.listMapperHcl(bedrockagentAgentGuardrailConfigurationToHclTerraform, false)(this._guardrailConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockagentAgentGuardrailConfigurationList",
       },
       idle_session_ttl_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._idleSessionTtlInSeconds),
+        value: cdktn.numberToHclTerraform(this._idleSessionTtlInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       instruction: {
-        value: cdktf.stringToHclTerraform(this._instruction),
+        value: cdktn.stringToHclTerraform(this._instruction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       memory_configuration: {
-        value: cdktf.listMapperHcl(bedrockagentAgentMemoryConfigurationToHclTerraform, false)(this._memoryConfiguration.internalValue),
+        value: cdktn.listMapperHcl(bedrockagentAgentMemoryConfigurationToHclTerraform, false)(this._memoryConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockagentAgentMemoryConfigurationList",
       },
       prepare_agent: {
-        value: cdktf.booleanToHclTerraform(this._prepareAgent),
+        value: cdktn.booleanToHclTerraform(this._prepareAgent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       prompt_override_configuration: {
-        value: cdktf.listMapperHcl(bedrockagentAgentPromptOverrideConfigurationToHclTerraform, false)(this._promptOverrideConfiguration.internalValue),
+        value: cdktn.listMapperHcl(bedrockagentAgentPromptOverrideConfigurationToHclTerraform, false)(this._promptOverrideConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockagentAgentPromptOverrideConfigurationList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_resource_in_use_check: {
-        value: cdktf.booleanToHclTerraform(this._skipResourceInUseCheck),
+        value: cdktn.booleanToHclTerraform(this._skipResourceInUseCheck),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

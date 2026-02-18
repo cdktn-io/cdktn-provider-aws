@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Resourceexplorer2ViewConfig extends cdktf.TerraformMetaArguments {
+export interface Resourceexplorer2ViewConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/resourceexplorer2_view#default_view Resourceexplorer2View#default_view}
   */
-  readonly defaultView?: boolean | cdktf.IResolvable;
+  readonly defaultView?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/resourceexplorer2_view#name Resourceexplorer2View#name}
   */
@@ -39,13 +39,13 @@ export interface Resourceexplorer2ViewConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/resourceexplorer2_view#filters Resourceexplorer2View#filters}
   */
-  readonly filters?: Resourceexplorer2ViewFilters[] | cdktf.IResolvable;
+  readonly filters?: Resourceexplorer2ViewFilters[] | cdktn.IResolvable;
   /**
   * included_property block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/resourceexplorer2_view#included_property Resourceexplorer2View#included_property}
   */
-  readonly includedProperty?: Resourceexplorer2ViewIncludedProperty[] | cdktf.IResolvable;
+  readonly includedProperty?: Resourceexplorer2ViewIncludedProperty[] | cdktn.IResolvable;
 }
 export interface Resourceexplorer2ViewFilters {
   /**
@@ -54,25 +54,25 @@ export interface Resourceexplorer2ViewFilters {
   readonly filterString: string;
 }
 
-export function resourceexplorer2ViewFiltersToTerraform(struct?: Resourceexplorer2ViewFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourceexplorer2ViewFiltersToTerraform(struct?: Resourceexplorer2ViewFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter_string: cdktf.stringToTerraform(struct!.filterString),
+    filter_string: cdktn.stringToTerraform(struct!.filterString),
   }
 }
 
 
-export function resourceexplorer2ViewFiltersToHclTerraform(struct?: Resourceexplorer2ViewFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourceexplorer2ViewFiltersToHclTerraform(struct?: Resourceexplorer2ViewFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter_string: {
-      value: cdktf.stringToHclTerraform(struct!.filterString),
+      value: cdktn.stringToHclTerraform(struct!.filterString),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,9 +83,9 @@ export function resourceexplorer2ViewFiltersToHclTerraform(struct?: Resourceexpl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Resourceexplorer2ViewFiltersOutputReference extends cdktf.ComplexObject {
+export class Resourceexplorer2ViewFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -93,11 +93,11 @@ export class Resourceexplorer2ViewFiltersOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Resourceexplorer2ViewFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): Resourceexplorer2ViewFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -110,13 +110,13 @@ export class Resourceexplorer2ViewFiltersOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Resourceexplorer2ViewFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Resourceexplorer2ViewFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._filterString = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -141,15 +141,15 @@ export class Resourceexplorer2ViewFiltersOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class Resourceexplorer2ViewFiltersList extends cdktf.ComplexList {
-  public internalValue? : Resourceexplorer2ViewFilters[] | cdktf.IResolvable
+export class Resourceexplorer2ViewFiltersList extends cdktn.ComplexList {
+  public internalValue? : Resourceexplorer2ViewFilters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -167,25 +167,25 @@ export interface Resourceexplorer2ViewIncludedProperty {
   readonly name: string;
 }
 
-export function resourceexplorer2ViewIncludedPropertyToTerraform(struct?: Resourceexplorer2ViewIncludedProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourceexplorer2ViewIncludedPropertyToTerraform(struct?: Resourceexplorer2ViewIncludedProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function resourceexplorer2ViewIncludedPropertyToHclTerraform(struct?: Resourceexplorer2ViewIncludedProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourceexplorer2ViewIncludedPropertyToHclTerraform(struct?: Resourceexplorer2ViewIncludedProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -196,9 +196,9 @@ export function resourceexplorer2ViewIncludedPropertyToHclTerraform(struct?: Res
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Resourceexplorer2ViewIncludedPropertyOutputReference extends cdktf.ComplexObject {
+export class Resourceexplorer2ViewIncludedPropertyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -206,11 +206,11 @@ export class Resourceexplorer2ViewIncludedPropertyOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Resourceexplorer2ViewIncludedProperty | cdktf.IResolvable | undefined {
+  public get internalValue(): Resourceexplorer2ViewIncludedProperty | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -223,13 +223,13 @@ export class Resourceexplorer2ViewIncludedPropertyOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Resourceexplorer2ViewIncludedProperty | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Resourceexplorer2ViewIncludedProperty | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -254,15 +254,15 @@ export class Resourceexplorer2ViewIncludedPropertyOutputReference extends cdktf.
   }
 }
 
-export class Resourceexplorer2ViewIncludedPropertyList extends cdktf.ComplexList {
-  public internalValue? : Resourceexplorer2ViewIncludedProperty[] | cdktf.IResolvable
+export class Resourceexplorer2ViewIncludedPropertyList extends cdktn.ComplexList {
+  public internalValue? : Resourceexplorer2ViewIncludedProperty[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -277,7 +277,7 @@ export class Resourceexplorer2ViewIncludedPropertyList extends cdktf.ComplexList
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view}
 */
-export class Resourceexplorer2View extends cdktf.TerraformResource {
+export class Resourceexplorer2View extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -288,14 +288,14 @@ export class Resourceexplorer2View extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Resourceexplorer2View resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Resourceexplorer2View resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Resourceexplorer2View to import
   * @param importFromId The id of the existing Resourceexplorer2View that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/resourceexplorer2_view#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Resourceexplorer2View to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_resourceexplorer2_view", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_resourceexplorer2_view", importId: importFromId, provider });
       }
 
   // ===========
@@ -344,11 +344,11 @@ export class Resourceexplorer2View extends cdktf.TerraformResource {
   }
 
   // default_view - computed: true, optional: true, required: false
-  private _defaultView?: boolean | cdktf.IResolvable; 
+  private _defaultView?: boolean | cdktn.IResolvable; 
   public get defaultView() {
     return this.getBooleanAttribute('default_view');
   }
-  public set defaultView(value: boolean | cdktf.IResolvable) {
+  public set defaultView(value: boolean | cdktn.IResolvable) {
     this._defaultView = value;
   }
   public resetDefaultView() {
@@ -426,7 +426,7 @@ export class Resourceexplorer2View extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -436,7 +436,7 @@ export class Resourceexplorer2View extends cdktf.TerraformResource {
   public get filters() {
     return this._filters;
   }
-  public putFilters(value: Resourceexplorer2ViewFilters[] | cdktf.IResolvable) {
+  public putFilters(value: Resourceexplorer2ViewFilters[] | cdktn.IResolvable) {
     this._filters.internalValue = value;
   }
   public resetFilters() {
@@ -452,7 +452,7 @@ export class Resourceexplorer2View extends cdktf.TerraformResource {
   public get includedProperty() {
     return this._includedProperty;
   }
-  public putIncludedProperty(value: Resourceexplorer2ViewIncludedProperty[] | cdktf.IResolvable) {
+  public putIncludedProperty(value: Resourceexplorer2ViewIncludedProperty[] | cdktn.IResolvable) {
     this._includedProperty.internalValue = value;
   }
   public resetIncludedProperty() {
@@ -469,56 +469,56 @@ export class Resourceexplorer2View extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_view: cdktf.booleanToTerraform(this._defaultView),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      scope: cdktf.stringToTerraform(this._scope),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filters: cdktf.listMapper(resourceexplorer2ViewFiltersToTerraform, true)(this._filters.internalValue),
-      included_property: cdktf.listMapper(resourceexplorer2ViewIncludedPropertyToTerraform, true)(this._includedProperty.internalValue),
+      default_view: cdktn.booleanToTerraform(this._defaultView),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      scope: cdktn.stringToTerraform(this._scope),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      filters: cdktn.listMapper(resourceexplorer2ViewFiltersToTerraform, true)(this._filters.internalValue),
+      included_property: cdktn.listMapper(resourceexplorer2ViewIncludedPropertyToTerraform, true)(this._includedProperty.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       default_view: {
-        value: cdktf.booleanToHclTerraform(this._defaultView),
+        value: cdktn.booleanToHclTerraform(this._defaultView),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope: {
-        value: cdktf.stringToHclTerraform(this._scope),
+        value: cdktn.stringToHclTerraform(this._scope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       filters: {
-        value: cdktf.listMapperHcl(resourceexplorer2ViewFiltersToHclTerraform, true)(this._filters.internalValue),
+        value: cdktn.listMapperHcl(resourceexplorer2ViewFiltersToHclTerraform, true)(this._filters.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Resourceexplorer2ViewFiltersList",
       },
       included_property: {
-        value: cdktf.listMapperHcl(resourceexplorer2ViewIncludedPropertyToHclTerraform, true)(this._includedProperty.internalValue),
+        value: cdktn.listMapperHcl(resourceexplorer2ViewIncludedPropertyToHclTerraform, true)(this._includedProperty.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Resourceexplorer2ViewIncludedPropertyList",

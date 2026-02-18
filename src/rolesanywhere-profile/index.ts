@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RolesanywhereProfileConfig extends cdktf.TerraformMetaArguments {
+export interface RolesanywhereProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rolesanywhere_profile#accept_role_session_name RolesanywhereProfile#accept_role_session_name}
   */
-  readonly acceptRoleSessionName?: boolean | cdktf.IResolvable;
+  readonly acceptRoleSessionName?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rolesanywhere_profile#duration_seconds RolesanywhereProfile#duration_seconds}
   */
@@ -23,7 +23,7 @@ export interface RolesanywhereProfileConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rolesanywhere_profile#enabled RolesanywhereProfile#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rolesanywhere_profile#id RolesanywhereProfile#id}
   *
@@ -42,7 +42,7 @@ export interface RolesanywhereProfileConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rolesanywhere_profile#require_instance_properties RolesanywhereProfile#require_instance_properties}
   */
-  readonly requireInstanceProperties?: boolean | cdktf.IResolvable;
+  readonly requireInstanceProperties?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rolesanywhere_profile#role_arns RolesanywhereProfile#role_arns}
   */
@@ -64,7 +64,7 @@ export interface RolesanywhereProfileConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile}
 */
-export class RolesanywhereProfile extends cdktf.TerraformResource {
+export class RolesanywhereProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -75,14 +75,14 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RolesanywhereProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RolesanywhereProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RolesanywhereProfile to import
   * @param importFromId The id of the existing RolesanywhereProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rolesanywhere_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RolesanywhereProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_rolesanywhere_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_rolesanywhere_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -130,11 +130,11 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
   // ==========
 
   // accept_role_session_name - computed: false, optional: true, required: false
-  private _acceptRoleSessionName?: boolean | cdktf.IResolvable; 
+  private _acceptRoleSessionName?: boolean | cdktn.IResolvable; 
   public get acceptRoleSessionName() {
     return this.getBooleanAttribute('accept_role_session_name');
   }
-  public set acceptRoleSessionName(value: boolean | cdktf.IResolvable) {
+  public set acceptRoleSessionName(value: boolean | cdktn.IResolvable) {
     this._acceptRoleSessionName = value;
   }
   public resetAcceptRoleSessionName() {
@@ -167,11 +167,11 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -201,7 +201,7 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
   // managed_policy_arns - computed: false, optional: true, required: false
   private _managedPolicyArns?: string[]; 
   public get managedPolicyArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('managed_policy_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('managed_policy_arns'));
   }
   public set managedPolicyArns(value: string[]) {
     this._managedPolicyArns = value;
@@ -228,11 +228,11 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
   }
 
   // require_instance_properties - computed: false, optional: true, required: false
-  private _requireInstanceProperties?: boolean | cdktf.IResolvable; 
+  private _requireInstanceProperties?: boolean | cdktn.IResolvable; 
   public get requireInstanceProperties() {
     return this.getBooleanAttribute('require_instance_properties');
   }
-  public set requireInstanceProperties(value: boolean | cdktf.IResolvable) {
+  public set requireInstanceProperties(value: boolean | cdktn.IResolvable) {
     this._requireInstanceProperties = value;
   }
   public resetRequireInstanceProperties() {
@@ -246,7 +246,7 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
   // role_arns - computed: false, optional: true, required: false
   private _roleArns?: string[]; 
   public get roleArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('role_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('role_arns'));
   }
   public set roleArns(value: string[]) {
     this._roleArns = value;
@@ -313,84 +313,84 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      accept_role_session_name: cdktf.booleanToTerraform(this._acceptRoleSessionName),
-      duration_seconds: cdktf.numberToTerraform(this._durationSeconds),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      managed_policy_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._managedPolicyArns),
-      name: cdktf.stringToTerraform(this._name),
-      require_instance_properties: cdktf.booleanToTerraform(this._requireInstanceProperties),
-      role_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roleArns),
-      session_policy: cdktf.stringToTerraform(this._sessionPolicy),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      accept_role_session_name: cdktn.booleanToTerraform(this._acceptRoleSessionName),
+      duration_seconds: cdktn.numberToTerraform(this._durationSeconds),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      managed_policy_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._managedPolicyArns),
+      name: cdktn.stringToTerraform(this._name),
+      require_instance_properties: cdktn.booleanToTerraform(this._requireInstanceProperties),
+      role_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._roleArns),
+      session_policy: cdktn.stringToTerraform(this._sessionPolicy),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       accept_role_session_name: {
-        value: cdktf.booleanToHclTerraform(this._acceptRoleSessionName),
+        value: cdktn.booleanToHclTerraform(this._acceptRoleSessionName),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       duration_seconds: {
-        value: cdktf.numberToHclTerraform(this._durationSeconds),
+        value: cdktn.numberToHclTerraform(this._durationSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_policy_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._managedPolicyArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._managedPolicyArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       require_instance_properties: {
-        value: cdktf.booleanToHclTerraform(this._requireInstanceProperties),
+        value: cdktn.booleanToHclTerraform(this._requireInstanceProperties),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       role_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roleArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._roleArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       session_policy: {
-        value: cdktf.stringToHclTerraform(this._sessionPolicy),
+        value: cdktn.stringToHclTerraform(this._sessionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

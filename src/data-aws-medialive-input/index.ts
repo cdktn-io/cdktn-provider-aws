@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsMedialiveInputConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsMedialiveInputConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/medialive_input#id DataAwsMedialiveInput#id}
   *
@@ -30,8 +30,8 @@ export interface DataAwsMedialiveInputDestinationsVpc {
 }
 
 export function dataAwsMedialiveInputDestinationsVpcToTerraform(struct?: DataAwsMedialiveInputDestinationsVpc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -40,8 +40,8 @@ export function dataAwsMedialiveInputDestinationsVpcToTerraform(struct?: DataAws
 
 
 export function dataAwsMedialiveInputDestinationsVpcToHclTerraform(struct?: DataAwsMedialiveInputDestinationsVpc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -49,7 +49,7 @@ export function dataAwsMedialiveInputDestinationsVpcToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAwsMedialiveInputDestinationsVpcOutputReference extends cdktf.ComplexObject {
+export class DataAwsMedialiveInputDestinationsVpcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -58,7 +58,7 @@ export class DataAwsMedialiveInputDestinationsVpcOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -88,14 +88,14 @@ export class DataAwsMedialiveInputDestinationsVpcOutputReference extends cdktf.C
   }
 }
 
-export class DataAwsMedialiveInputDestinationsVpcList extends cdktf.ComplexList {
+export class DataAwsMedialiveInputDestinationsVpcList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -110,8 +110,8 @@ export interface DataAwsMedialiveInputDestinations {
 }
 
 export function dataAwsMedialiveInputDestinationsToTerraform(struct?: DataAwsMedialiveInputDestinations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -120,8 +120,8 @@ export function dataAwsMedialiveInputDestinationsToTerraform(struct?: DataAwsMed
 
 
 export function dataAwsMedialiveInputDestinationsToHclTerraform(struct?: DataAwsMedialiveInputDestinations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -129,7 +129,7 @@ export function dataAwsMedialiveInputDestinationsToHclTerraform(struct?: DataAws
   return attrs;
 }
 
-export class DataAwsMedialiveInputDestinationsOutputReference extends cdktf.ComplexObject {
+export class DataAwsMedialiveInputDestinationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -138,7 +138,7 @@ export class DataAwsMedialiveInputDestinationsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -179,14 +179,14 @@ export class DataAwsMedialiveInputDestinationsOutputReference extends cdktf.Comp
   }
 }
 
-export class DataAwsMedialiveInputDestinationsList extends cdktf.ComplexList {
+export class DataAwsMedialiveInputDestinationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -201,8 +201,8 @@ export interface DataAwsMedialiveInputInputDevices {
 }
 
 export function dataAwsMedialiveInputInputDevicesToTerraform(struct?: DataAwsMedialiveInputInputDevices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -211,8 +211,8 @@ export function dataAwsMedialiveInputInputDevicesToTerraform(struct?: DataAwsMed
 
 
 export function dataAwsMedialiveInputInputDevicesToHclTerraform(struct?: DataAwsMedialiveInputInputDevices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -220,7 +220,7 @@ export function dataAwsMedialiveInputInputDevicesToHclTerraform(struct?: DataAws
   return attrs;
 }
 
-export class DataAwsMedialiveInputInputDevicesOutputReference extends cdktf.ComplexObject {
+export class DataAwsMedialiveInputInputDevicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -229,7 +229,7 @@ export class DataAwsMedialiveInputInputDevicesOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -254,14 +254,14 @@ export class DataAwsMedialiveInputInputDevicesOutputReference extends cdktf.Comp
   }
 }
 
-export class DataAwsMedialiveInputInputDevicesList extends cdktf.ComplexList {
+export class DataAwsMedialiveInputInputDevicesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -276,8 +276,8 @@ export interface DataAwsMedialiveInputMediaConnectFlows {
 }
 
 export function dataAwsMedialiveInputMediaConnectFlowsToTerraform(struct?: DataAwsMedialiveInputMediaConnectFlows): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -286,8 +286,8 @@ export function dataAwsMedialiveInputMediaConnectFlowsToTerraform(struct?: DataA
 
 
 export function dataAwsMedialiveInputMediaConnectFlowsToHclTerraform(struct?: DataAwsMedialiveInputMediaConnectFlows): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -295,7 +295,7 @@ export function dataAwsMedialiveInputMediaConnectFlowsToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsMedialiveInputMediaConnectFlowsOutputReference extends cdktf.ComplexObject {
+export class DataAwsMedialiveInputMediaConnectFlowsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -304,7 +304,7 @@ export class DataAwsMedialiveInputMediaConnectFlowsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -329,14 +329,14 @@ export class DataAwsMedialiveInputMediaConnectFlowsOutputReference extends cdktf
   }
 }
 
-export class DataAwsMedialiveInputMediaConnectFlowsList extends cdktf.ComplexList {
+export class DataAwsMedialiveInputMediaConnectFlowsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -351,8 +351,8 @@ export interface DataAwsMedialiveInputSources {
 }
 
 export function dataAwsMedialiveInputSourcesToTerraform(struct?: DataAwsMedialiveInputSources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -361,8 +361,8 @@ export function dataAwsMedialiveInputSourcesToTerraform(struct?: DataAwsMedialiv
 
 
 export function dataAwsMedialiveInputSourcesToHclTerraform(struct?: DataAwsMedialiveInputSources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -370,7 +370,7 @@ export function dataAwsMedialiveInputSourcesToHclTerraform(struct?: DataAwsMedia
   return attrs;
 }
 
-export class DataAwsMedialiveInputSourcesOutputReference extends cdktf.ComplexObject {
+export class DataAwsMedialiveInputSourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -379,7 +379,7 @@ export class DataAwsMedialiveInputSourcesOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -414,14 +414,14 @@ export class DataAwsMedialiveInputSourcesOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DataAwsMedialiveInputSourcesList extends cdktf.ComplexList {
+export class DataAwsMedialiveInputSourcesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -436,7 +436,7 @@ export class DataAwsMedialiveInputSourcesList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/medialive_input aws_medialive_input}
 */
-export class DataAwsMedialiveInput extends cdktf.TerraformDataSource {
+export class DataAwsMedialiveInput extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -447,14 +447,14 @@ export class DataAwsMedialiveInput extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsMedialiveInput resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsMedialiveInput resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsMedialiveInput to import
   * @param importFromId The id of the existing DataAwsMedialiveInput that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/medialive_input#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsMedialiveInput to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_medialive_input", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_medialive_input", importId: importFromId, provider });
       }
 
   // ===========
@@ -591,7 +591,7 @@ export class DataAwsMedialiveInput extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -607,21 +607,21 @@ export class DataAwsMedialiveInput extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

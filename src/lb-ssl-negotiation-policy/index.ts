@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LbSslNegotiationPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface LbSslNegotiationPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_ssl_negotiation_policy#id LbSslNegotiationPolicy#id}
   *
@@ -46,7 +46,7 @@ export interface LbSslNegotiationPolicyConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_ssl_negotiation_policy#attribute LbSslNegotiationPolicy#attribute}
   */
-  readonly attribute?: LbSslNegotiationPolicyAttribute[] | cdktf.IResolvable;
+  readonly attribute?: LbSslNegotiationPolicyAttribute[] | cdktn.IResolvable;
 }
 export interface LbSslNegotiationPolicyAttribute {
   /**
@@ -59,32 +59,32 @@ export interface LbSslNegotiationPolicyAttribute {
   readonly value: string;
 }
 
-export function lbSslNegotiationPolicyAttributeToTerraform(struct?: LbSslNegotiationPolicyAttribute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lbSslNegotiationPolicyAttributeToTerraform(struct?: LbSslNegotiationPolicyAttribute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function lbSslNegotiationPolicyAttributeToHclTerraform(struct?: LbSslNegotiationPolicyAttribute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lbSslNegotiationPolicyAttributeToHclTerraform(struct?: LbSslNegotiationPolicyAttribute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -95,9 +95,9 @@ export function lbSslNegotiationPolicyAttributeToHclTerraform(struct?: LbSslNego
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LbSslNegotiationPolicyAttributeOutputReference extends cdktf.ComplexObject {
+export class LbSslNegotiationPolicyAttributeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -105,11 +105,11 @@ export class LbSslNegotiationPolicyAttributeOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LbSslNegotiationPolicyAttribute | cdktf.IResolvable | undefined {
+  public get internalValue(): LbSslNegotiationPolicyAttribute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -126,14 +126,14 @@ export class LbSslNegotiationPolicyAttributeOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LbSslNegotiationPolicyAttribute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LbSslNegotiationPolicyAttribute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -172,15 +172,15 @@ export class LbSslNegotiationPolicyAttributeOutputReference extends cdktf.Comple
   }
 }
 
-export class LbSslNegotiationPolicyAttributeList extends cdktf.ComplexList {
-  public internalValue? : LbSslNegotiationPolicyAttribute[] | cdktf.IResolvable
+export class LbSslNegotiationPolicyAttributeList extends cdktn.ComplexList {
+  public internalValue? : LbSslNegotiationPolicyAttribute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -195,7 +195,7 @@ export class LbSslNegotiationPolicyAttributeList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_ssl_negotiation_policy aws_lb_ssl_negotiation_policy}
 */
-export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
+export class LbSslNegotiationPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -206,14 +206,14 @@ export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LbSslNegotiationPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LbSslNegotiationPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LbSslNegotiationPolicy to import
   * @param importFromId The id of the existing LbSslNegotiationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_ssl_negotiation_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LbSslNegotiationPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lb_ssl_negotiation_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lb_ssl_negotiation_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -348,7 +348,7 @@ export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
   public get attribute() {
     return this._attribute;
   }
-  public putAttribute(value: LbSslNegotiationPolicyAttribute[] | cdktf.IResolvable) {
+  public putAttribute(value: LbSslNegotiationPolicyAttribute[] | cdktn.IResolvable) {
     this._attribute.internalValue = value;
   }
   public resetAttribute() {
@@ -365,56 +365,56 @@ export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      lb_port: cdktf.numberToTerraform(this._lbPort),
-      load_balancer: cdktf.stringToTerraform(this._loadBalancer),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      triggers: cdktf.hashMapper(cdktf.stringToTerraform)(this._triggers),
-      attribute: cdktf.listMapper(lbSslNegotiationPolicyAttributeToTerraform, true)(this._attribute.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      lb_port: cdktn.numberToTerraform(this._lbPort),
+      load_balancer: cdktn.stringToTerraform(this._loadBalancer),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      triggers: cdktn.hashMapper(cdktn.stringToTerraform)(this._triggers),
+      attribute: cdktn.listMapper(lbSslNegotiationPolicyAttributeToTerraform, true)(this._attribute.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lb_port: {
-        value: cdktf.numberToHclTerraform(this._lbPort),
+        value: cdktn.numberToHclTerraform(this._lbPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       load_balancer: {
-        value: cdktf.stringToHclTerraform(this._loadBalancer),
+        value: cdktn.stringToHclTerraform(this._loadBalancer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       triggers: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._triggers),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._triggers),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       attribute: {
-        value: cdktf.listMapperHcl(lbSslNegotiationPolicyAttributeToHclTerraform, true)(this._attribute.internalValue),
+        value: cdktn.listMapperHcl(lbSslNegotiationPolicyAttributeToHclTerraform, true)(this._attribute.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LbSslNegotiationPolicyAttributeList",

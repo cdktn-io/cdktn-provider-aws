@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VerifiedaccessInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface VerifiedaccessInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_instance#cidr_endpoints_custom_subdomain VerifiedaccessInstance#cidr_endpoints_custom_subdomain}
   */
@@ -23,7 +23,7 @@ export interface VerifiedaccessInstanceConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_instance#fips_enabled VerifiedaccessInstance#fips_enabled}
   */
-  readonly fipsEnabled?: boolean | cdktf.IResolvable;
+  readonly fipsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_instance#id VerifiedaccessInstance#id}
   *
@@ -50,8 +50,8 @@ export interface VerifiedaccessInstanceVerifiedAccessTrustProviders {
 }
 
 export function verifiedaccessInstanceVerifiedAccessTrustProvidersToTerraform(struct?: VerifiedaccessInstanceVerifiedAccessTrustProviders): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -60,8 +60,8 @@ export function verifiedaccessInstanceVerifiedAccessTrustProvidersToTerraform(st
 
 
 export function verifiedaccessInstanceVerifiedAccessTrustProvidersToHclTerraform(struct?: VerifiedaccessInstanceVerifiedAccessTrustProviders): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -69,7 +69,7 @@ export function verifiedaccessInstanceVerifiedAccessTrustProvidersToHclTerraform
   return attrs;
 }
 
-export class VerifiedaccessInstanceVerifiedAccessTrustProvidersOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessInstanceVerifiedAccessTrustProvidersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -78,7 +78,7 @@ export class VerifiedaccessInstanceVerifiedAccessTrustProvidersOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -123,14 +123,14 @@ export class VerifiedaccessInstanceVerifiedAccessTrustProvidersOutputReference e
   }
 }
 
-export class VerifiedaccessInstanceVerifiedAccessTrustProvidersList extends cdktf.ComplexList {
+export class VerifiedaccessInstanceVerifiedAccessTrustProvidersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -145,7 +145,7 @@ export class VerifiedaccessInstanceVerifiedAccessTrustProvidersList extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance}
 */
-export class VerifiedaccessInstance extends cdktf.TerraformResource {
+export class VerifiedaccessInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -156,14 +156,14 @@ export class VerifiedaccessInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VerifiedaccessInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VerifiedaccessInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedaccessInstance to import
   * @param importFromId The id of the existing VerifiedaccessInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedaccessInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedaccess_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedaccess_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -244,11 +244,11 @@ export class VerifiedaccessInstance extends cdktf.TerraformResource {
   }
 
   // fips_enabled - computed: false, optional: true, required: false
-  private _fipsEnabled?: boolean | cdktf.IResolvable; 
+  private _fipsEnabled?: boolean | cdktn.IResolvable; 
   public get fipsEnabled() {
     return this.getBooleanAttribute('fips_enabled');
   }
-  public set fipsEnabled(value: boolean | cdktf.IResolvable) {
+  public set fipsEnabled(value: boolean | cdktn.IResolvable) {
     this._fipsEnabled = value;
   }
   public resetFipsEnabled() {
@@ -282,7 +282,7 @@ export class VerifiedaccessInstance extends cdktf.TerraformResource {
 
   // name_servers - computed: true, optional: false, required: false
   public get nameServers() {
-    return cdktf.Fn.tolist(this.getListAttribute('name_servers'));
+    return cdktn.Fn.tolist(this.getListAttribute('name_servers'));
   }
 
   // region - computed: true, optional: true, required: false
@@ -345,56 +345,56 @@ export class VerifiedaccessInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr_endpoints_custom_subdomain: cdktf.stringToTerraform(this._cidrEndpointsCustomSubdomain),
-      description: cdktf.stringToTerraform(this._description),
-      fips_enabled: cdktf.booleanToTerraform(this._fipsEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      cidr_endpoints_custom_subdomain: cdktn.stringToTerraform(this._cidrEndpointsCustomSubdomain),
+      description: cdktn.stringToTerraform(this._description),
+      fips_enabled: cdktn.booleanToTerraform(this._fipsEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cidr_endpoints_custom_subdomain: {
-        value: cdktf.stringToHclTerraform(this._cidrEndpointsCustomSubdomain),
+        value: cdktn.stringToHclTerraform(this._cidrEndpointsCustomSubdomain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       fips_enabled: {
-        value: cdktf.booleanToHclTerraform(this._fipsEnabled),
+        value: cdktn.booleanToHclTerraform(this._fipsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

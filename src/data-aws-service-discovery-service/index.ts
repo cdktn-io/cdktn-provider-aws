@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsServiceDiscoveryServiceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsServiceDiscoveryServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/service_discovery_service#id DataAwsServiceDiscoveryService#id}
   *
@@ -42,8 +42,8 @@ export interface DataAwsServiceDiscoveryServiceDnsConfigDnsRecords {
 }
 
 export function dataAwsServiceDiscoveryServiceDnsConfigDnsRecordsToTerraform(struct?: DataAwsServiceDiscoveryServiceDnsConfigDnsRecords): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataAwsServiceDiscoveryServiceDnsConfigDnsRecordsToTerraform(str
 
 
 export function dataAwsServiceDiscoveryServiceDnsConfigDnsRecordsToHclTerraform(struct?: DataAwsServiceDiscoveryServiceDnsConfigDnsRecords): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataAwsServiceDiscoveryServiceDnsConfigDnsRecordsToHclTerraform(
   return attrs;
 }
 
-export class DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference extends cdktf.ComplexObject {
+export class DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -100,14 +100,14 @@ export class DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference ex
   }
 }
 
-export class DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList extends cdktf.ComplexList {
+export class DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -122,8 +122,8 @@ export interface DataAwsServiceDiscoveryServiceDnsConfig {
 }
 
 export function dataAwsServiceDiscoveryServiceDnsConfigToTerraform(struct?: DataAwsServiceDiscoveryServiceDnsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -132,8 +132,8 @@ export function dataAwsServiceDiscoveryServiceDnsConfigToTerraform(struct?: Data
 
 
 export function dataAwsServiceDiscoveryServiceDnsConfigToHclTerraform(struct?: DataAwsServiceDiscoveryServiceDnsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -141,7 +141,7 @@ export function dataAwsServiceDiscoveryServiceDnsConfigToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsServiceDiscoveryServiceDnsConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsServiceDiscoveryServiceDnsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -150,7 +150,7 @@ export class DataAwsServiceDiscoveryServiceDnsConfigOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -186,14 +186,14 @@ export class DataAwsServiceDiscoveryServiceDnsConfigOutputReference extends cdkt
   }
 }
 
-export class DataAwsServiceDiscoveryServiceDnsConfigList extends cdktf.ComplexList {
+export class DataAwsServiceDiscoveryServiceDnsConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -208,8 +208,8 @@ export interface DataAwsServiceDiscoveryServiceHealthCheckConfig {
 }
 
 export function dataAwsServiceDiscoveryServiceHealthCheckConfigToTerraform(struct?: DataAwsServiceDiscoveryServiceHealthCheckConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -218,8 +218,8 @@ export function dataAwsServiceDiscoveryServiceHealthCheckConfigToTerraform(struc
 
 
 export function dataAwsServiceDiscoveryServiceHealthCheckConfigToHclTerraform(struct?: DataAwsServiceDiscoveryServiceHealthCheckConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -227,7 +227,7 @@ export function dataAwsServiceDiscoveryServiceHealthCheckConfigToHclTerraform(st
   return attrs;
 }
 
-export class DataAwsServiceDiscoveryServiceHealthCheckConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsServiceDiscoveryServiceHealthCheckConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -236,7 +236,7 @@ export class DataAwsServiceDiscoveryServiceHealthCheckConfigOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -271,14 +271,14 @@ export class DataAwsServiceDiscoveryServiceHealthCheckConfigOutputReference exte
   }
 }
 
-export class DataAwsServiceDiscoveryServiceHealthCheckConfigList extends cdktf.ComplexList {
+export class DataAwsServiceDiscoveryServiceHealthCheckConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -293,8 +293,8 @@ export interface DataAwsServiceDiscoveryServiceHealthCheckCustomConfig {
 }
 
 export function dataAwsServiceDiscoveryServiceHealthCheckCustomConfigToTerraform(struct?: DataAwsServiceDiscoveryServiceHealthCheckCustomConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -303,8 +303,8 @@ export function dataAwsServiceDiscoveryServiceHealthCheckCustomConfigToTerraform
 
 
 export function dataAwsServiceDiscoveryServiceHealthCheckCustomConfigToHclTerraform(struct?: DataAwsServiceDiscoveryServiceHealthCheckCustomConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -312,7 +312,7 @@ export function dataAwsServiceDiscoveryServiceHealthCheckCustomConfigToHclTerraf
   return attrs;
 }
 
-export class DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -321,7 +321,7 @@ export class DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -346,14 +346,14 @@ export class DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReferenc
   }
 }
 
-export class DataAwsServiceDiscoveryServiceHealthCheckCustomConfigList extends cdktf.ComplexList {
+export class DataAwsServiceDiscoveryServiceHealthCheckCustomConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -368,7 +368,7 @@ export class DataAwsServiceDiscoveryServiceHealthCheckCustomConfigList extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/service_discovery_service aws_service_discovery_service}
 */
-export class DataAwsServiceDiscoveryService extends cdktf.TerraformDataSource {
+export class DataAwsServiceDiscoveryService extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -379,14 +379,14 @@ export class DataAwsServiceDiscoveryService extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsServiceDiscoveryService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsServiceDiscoveryService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsServiceDiscoveryService to import
   * @param importFromId The id of the existing DataAwsServiceDiscoveryService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/service_discovery_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsServiceDiscoveryService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_service_discovery_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_service_discovery_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -535,42 +535,42 @@ export class DataAwsServiceDiscoveryService extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      namespace_id: cdktf.stringToTerraform(this._namespaceId),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      namespace_id: cdktn.stringToTerraform(this._namespaceId),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace_id: {
-        value: cdktf.stringToHclTerraform(this._namespaceId),
+        value: cdktn.stringToHclTerraform(this._namespaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

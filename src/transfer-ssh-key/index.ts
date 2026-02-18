@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TransferSshKeyConfig extends cdktf.TerraformMetaArguments {
+export interface TransferSshKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_ssh_key#body TransferSshKey#body}
   */
@@ -42,7 +42,7 @@ export interface TransferSshKeyConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_ssh_key aws_transfer_ssh_key}
 */
-export class TransferSshKey extends cdktf.TerraformResource {
+export class TransferSshKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class TransferSshKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TransferSshKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TransferSshKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransferSshKey to import
   * @param importFromId The id of the existing TransferSshKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_ssh_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransferSshKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_ssh_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_ssh_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -183,42 +183,42 @@ export class TransferSshKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      body: cdktf.stringToTerraform(this._body),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      server_id: cdktf.stringToTerraform(this._serverId),
-      user_name: cdktf.stringToTerraform(this._userName),
+      body: cdktn.stringToTerraform(this._body),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      server_id: cdktn.stringToTerraform(this._serverId),
+      user_name: cdktn.stringToTerraform(this._userName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       body: {
-        value: cdktf.stringToHclTerraform(this._body),
+        value: cdktn.stringToHclTerraform(this._body),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_id: {
-        value: cdktf.stringToHclTerraform(this._serverId),
+        value: cdktn.stringToHclTerraform(this._serverId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_name: {
-        value: cdktf.stringToHclTerraform(this._userName),
+        value: cdktn.stringToHclTerraform(this._userName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

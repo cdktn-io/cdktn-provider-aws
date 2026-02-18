@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DbInstanceAutomatedBackupsReplicationConfig extends cdktf.TerraformMetaArguments {
+export interface DbInstanceAutomatedBackupsReplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_instance_automated_backups_replication#id DbInstanceAutomatedBackupsReplication#id}
   *
@@ -59,32 +59,32 @@ export interface DbInstanceAutomatedBackupsReplicationTimeouts {
   readonly delete?: string;
 }
 
-export function dbInstanceAutomatedBackupsReplicationTimeoutsToTerraform(struct?: DbInstanceAutomatedBackupsReplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dbInstanceAutomatedBackupsReplicationTimeoutsToTerraform(struct?: DbInstanceAutomatedBackupsReplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function dbInstanceAutomatedBackupsReplicationTimeoutsToHclTerraform(struct?: DbInstanceAutomatedBackupsReplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dbInstanceAutomatedBackupsReplicationTimeoutsToHclTerraform(struct?: DbInstanceAutomatedBackupsReplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -95,19 +95,19 @@ export function dbInstanceAutomatedBackupsReplicationTimeoutsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DbInstanceAutomatedBackupsReplicationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DbInstanceAutomatedBackupsReplicationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -124,14 +124,14 @@ export class DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DbInstanceAutomatedBackupsReplicationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DbInstanceAutomatedBackupsReplicationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -179,7 +179,7 @@ export class DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_instance_automated_backups_replication aws_db_instance_automated_backups_replication}
 */
-export class DbInstanceAutomatedBackupsReplication extends cdktf.TerraformResource {
+export class DbInstanceAutomatedBackupsReplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -190,14 +190,14 @@ export class DbInstanceAutomatedBackupsReplication extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DbInstanceAutomatedBackupsReplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DbInstanceAutomatedBackupsReplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DbInstanceAutomatedBackupsReplication to import
   * @param importFromId The id of the existing DbInstanceAutomatedBackupsReplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_instance_automated_backups_replication#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DbInstanceAutomatedBackupsReplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_db_instance_automated_backups_replication", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_db_instance_automated_backups_replication", importId: importFromId, provider });
       }
 
   // ===========
@@ -355,12 +355,12 @@ export class DbInstanceAutomatedBackupsReplication extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      pre_signed_url: cdktf.stringToTerraform(this._preSignedUrl),
-      region: cdktf.stringToTerraform(this._region),
-      retention_period: cdktf.numberToTerraform(this._retentionPeriod),
-      source_db_instance_arn: cdktf.stringToTerraform(this._sourceDbInstanceArn),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      pre_signed_url: cdktn.stringToTerraform(this._preSignedUrl),
+      region: cdktn.stringToTerraform(this._region),
+      retention_period: cdktn.numberToTerraform(this._retentionPeriod),
+      source_db_instance_arn: cdktn.stringToTerraform(this._sourceDbInstanceArn),
       timeouts: dbInstanceAutomatedBackupsReplicationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -368,37 +368,37 @@ export class DbInstanceAutomatedBackupsReplication extends cdktf.TerraformResour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pre_signed_url: {
-        value: cdktf.stringToHclTerraform(this._preSignedUrl),
+        value: cdktn.stringToHclTerraform(this._preSignedUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_period: {
-        value: cdktf.numberToHclTerraform(this._retentionPeriod),
+        value: cdktn.numberToHclTerraform(this._retentionPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       source_db_instance_arn: {
-        value: cdktf.stringToHclTerraform(this._sourceDbInstanceArn),
+        value: cdktn.stringToHclTerraform(this._sourceDbInstanceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

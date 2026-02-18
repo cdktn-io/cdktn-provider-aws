@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LambdaFunctionUrlConfig extends cdktf.TerraformMetaArguments {
+export interface LambdaFunctionUrlConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function_url#authorization_type LambdaFunctionUrl#authorization_type}
   */
@@ -58,7 +58,7 @@ export interface LambdaFunctionUrlCors {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function_url#allow_credentials LambdaFunctionUrl#allow_credentials}
   */
-  readonly allowCredentials?: boolean | cdktf.IResolvable;
+  readonly allowCredentials?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function_url#allow_headers LambdaFunctionUrl#allow_headers}
   */
@@ -82,59 +82,59 @@ export interface LambdaFunctionUrlCors {
 }
 
 export function lambdaFunctionUrlCorsToTerraform(struct?: LambdaFunctionUrlCorsOutputReference | LambdaFunctionUrlCors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_credentials: cdktf.booleanToTerraform(struct!.allowCredentials),
-    allow_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowHeaders),
-    allow_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowMethods),
-    allow_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowOrigins),
-    expose_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposeHeaders),
-    max_age: cdktf.numberToTerraform(struct!.maxAge),
+    allow_credentials: cdktn.booleanToTerraform(struct!.allowCredentials),
+    allow_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowHeaders),
+    allow_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowMethods),
+    allow_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowOrigins),
+    expose_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exposeHeaders),
+    max_age: cdktn.numberToTerraform(struct!.maxAge),
   }
 }
 
 
 export function lambdaFunctionUrlCorsToHclTerraform(struct?: LambdaFunctionUrlCorsOutputReference | LambdaFunctionUrlCors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_credentials: {
-      value: cdktf.booleanToHclTerraform(struct!.allowCredentials),
+      value: cdktn.booleanToHclTerraform(struct!.allowCredentials),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowHeaders),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     allow_methods: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowMethods),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowMethods),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     allow_origins: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowOrigins),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowOrigins),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     expose_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exposeHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exposeHeaders),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     max_age: {
-      value: cdktf.numberToHclTerraform(struct!.maxAge),
+      value: cdktn.numberToHclTerraform(struct!.maxAge),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -145,14 +145,14 @@ export function lambdaFunctionUrlCorsToHclTerraform(struct?: LambdaFunctionUrlCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionUrlCorsOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionUrlCorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -208,11 +208,11 @@ export class LambdaFunctionUrlCorsOutputReference extends cdktf.ComplexObject {
   }
 
   // allow_credentials - computed: false, optional: true, required: false
-  private _allowCredentials?: boolean | cdktf.IResolvable; 
+  private _allowCredentials?: boolean | cdktn.IResolvable; 
   public get allowCredentials() {
     return this.getBooleanAttribute('allow_credentials');
   }
-  public set allowCredentials(value: boolean | cdktf.IResolvable) {
+  public set allowCredentials(value: boolean | cdktn.IResolvable) {
     this._allowCredentials = value;
   }
   public resetAllowCredentials() {
@@ -226,7 +226,7 @@ export class LambdaFunctionUrlCorsOutputReference extends cdktf.ComplexObject {
   // allow_headers - computed: false, optional: true, required: false
   private _allowHeaders?: string[]; 
   public get allowHeaders() {
-    return cdktf.Fn.tolist(this.getListAttribute('allow_headers'));
+    return cdktn.Fn.tolist(this.getListAttribute('allow_headers'));
   }
   public set allowHeaders(value: string[]) {
     this._allowHeaders = value;
@@ -242,7 +242,7 @@ export class LambdaFunctionUrlCorsOutputReference extends cdktf.ComplexObject {
   // allow_methods - computed: false, optional: true, required: false
   private _allowMethods?: string[]; 
   public get allowMethods() {
-    return cdktf.Fn.tolist(this.getListAttribute('allow_methods'));
+    return cdktn.Fn.tolist(this.getListAttribute('allow_methods'));
   }
   public set allowMethods(value: string[]) {
     this._allowMethods = value;
@@ -258,7 +258,7 @@ export class LambdaFunctionUrlCorsOutputReference extends cdktf.ComplexObject {
   // allow_origins - computed: false, optional: true, required: false
   private _allowOrigins?: string[]; 
   public get allowOrigins() {
-    return cdktf.Fn.tolist(this.getListAttribute('allow_origins'));
+    return cdktn.Fn.tolist(this.getListAttribute('allow_origins'));
   }
   public set allowOrigins(value: string[]) {
     this._allowOrigins = value;
@@ -274,7 +274,7 @@ export class LambdaFunctionUrlCorsOutputReference extends cdktf.ComplexObject {
   // expose_headers - computed: false, optional: true, required: false
   private _exposeHeaders?: string[]; 
   public get exposeHeaders() {
-    return cdktf.Fn.tolist(this.getListAttribute('expose_headers'));
+    return cdktn.Fn.tolist(this.getListAttribute('expose_headers'));
   }
   public set exposeHeaders(value: string[]) {
     this._exposeHeaders = value;
@@ -310,25 +310,25 @@ export interface LambdaFunctionUrlTimeouts {
   readonly create?: string;
 }
 
-export function lambdaFunctionUrlTimeoutsToTerraform(struct?: LambdaFunctionUrlTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaFunctionUrlTimeoutsToTerraform(struct?: LambdaFunctionUrlTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function lambdaFunctionUrlTimeoutsToHclTerraform(struct?: LambdaFunctionUrlTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaFunctionUrlTimeoutsToHclTerraform(struct?: LambdaFunctionUrlTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -339,19 +339,19 @@ export function lambdaFunctionUrlTimeoutsToHclTerraform(struct?: LambdaFunctionU
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionUrlTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionUrlTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LambdaFunctionUrlTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LambdaFunctionUrlTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -364,13 +364,13 @@ export class LambdaFunctionUrlTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LambdaFunctionUrlTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LambdaFunctionUrlTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -401,7 +401,7 @@ export class LambdaFunctionUrlTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function_url aws_lambda_function_url}
 */
-export class LambdaFunctionUrl extends cdktf.TerraformResource {
+export class LambdaFunctionUrl extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -412,14 +412,14 @@ export class LambdaFunctionUrl extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LambdaFunctionUrl resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LambdaFunctionUrl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LambdaFunctionUrl to import
   * @param importFromId The id of the existing LambdaFunctionUrl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function_url#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LambdaFunctionUrl to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_function_url", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_function_url", importId: importFromId, provider });
       }
 
   // ===========
@@ -606,12 +606,12 @@ export class LambdaFunctionUrl extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authorization_type: cdktf.stringToTerraform(this._authorizationType),
-      function_name: cdktf.stringToTerraform(this._functionName),
-      id: cdktf.stringToTerraform(this._id),
-      invoke_mode: cdktf.stringToTerraform(this._invokeMode),
-      qualifier: cdktf.stringToTerraform(this._qualifier),
-      region: cdktf.stringToTerraform(this._region),
+      authorization_type: cdktn.stringToTerraform(this._authorizationType),
+      function_name: cdktn.stringToTerraform(this._functionName),
+      id: cdktn.stringToTerraform(this._id),
+      invoke_mode: cdktn.stringToTerraform(this._invokeMode),
+      qualifier: cdktn.stringToTerraform(this._qualifier),
+      region: cdktn.stringToTerraform(this._region),
       cors: lambdaFunctionUrlCorsToTerraform(this._cors.internalValue),
       timeouts: lambdaFunctionUrlTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -620,37 +620,37 @@ export class LambdaFunctionUrl extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authorization_type: {
-        value: cdktf.stringToHclTerraform(this._authorizationType),
+        value: cdktn.stringToHclTerraform(this._authorizationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       function_name: {
-        value: cdktf.stringToHclTerraform(this._functionName),
+        value: cdktn.stringToHclTerraform(this._functionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       invoke_mode: {
-        value: cdktf.stringToHclTerraform(this._invokeMode),
+        value: cdktn.stringToHclTerraform(this._invokeMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       qualifier: {
-        value: cdktf.stringToHclTerraform(this._qualifier),
+        value: cdktn.stringToHclTerraform(this._qualifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

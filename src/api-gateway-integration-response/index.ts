@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiGatewayIntegrationResponseConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayIntegrationResponseConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_integration_response#content_handling ApiGatewayIntegrationResponse#content_handling}
   */
@@ -62,7 +62,7 @@ export interface ApiGatewayIntegrationResponseConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_integration_response aws_api_gateway_integration_response}
 */
-export class ApiGatewayIntegrationResponse extends cdktf.TerraformResource {
+export class ApiGatewayIntegrationResponse extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -73,14 +73,14 @@ export class ApiGatewayIntegrationResponse extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiGatewayIntegrationResponse resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiGatewayIntegrationResponse resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiGatewayIntegrationResponse to import
   * @param importFromId The id of the existing ApiGatewayIntegrationResponse that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_integration_response#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiGatewayIntegrationResponse to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_integration_response", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_integration_response", importId: importFromId, provider });
       }
 
   // ===========
@@ -280,77 +280,77 @@ export class ApiGatewayIntegrationResponse extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content_handling: cdktf.stringToTerraform(this._contentHandling),
-      http_method: cdktf.stringToTerraform(this._httpMethod),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      resource_id: cdktf.stringToTerraform(this._resourceId),
-      response_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._responseParameters),
-      response_templates: cdktf.hashMapper(cdktf.stringToTerraform)(this._responseTemplates),
-      rest_api_id: cdktf.stringToTerraform(this._restApiId),
-      selection_pattern: cdktf.stringToTerraform(this._selectionPattern),
-      status_code: cdktf.stringToTerraform(this._statusCode),
+      content_handling: cdktn.stringToTerraform(this._contentHandling),
+      http_method: cdktn.stringToTerraform(this._httpMethod),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      resource_id: cdktn.stringToTerraform(this._resourceId),
+      response_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._responseParameters),
+      response_templates: cdktn.hashMapper(cdktn.stringToTerraform)(this._responseTemplates),
+      rest_api_id: cdktn.stringToTerraform(this._restApiId),
+      selection_pattern: cdktn.stringToTerraform(this._selectionPattern),
+      status_code: cdktn.stringToTerraform(this._statusCode),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       content_handling: {
-        value: cdktf.stringToHclTerraform(this._contentHandling),
+        value: cdktn.stringToHclTerraform(this._contentHandling),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       http_method: {
-        value: cdktf.stringToHclTerraform(this._httpMethod),
+        value: cdktn.stringToHclTerraform(this._httpMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_id: {
-        value: cdktf.stringToHclTerraform(this._resourceId),
+        value: cdktn.stringToHclTerraform(this._resourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       response_parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._responseParameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._responseParameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       response_templates: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._responseTemplates),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._responseTemplates),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       rest_api_id: {
-        value: cdktf.stringToHclTerraform(this._restApiId),
+        value: cdktn.stringToHclTerraform(this._restApiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       selection_pattern: {
-        value: cdktf.stringToHclTerraform(this._selectionPattern),
+        value: cdktn.stringToHclTerraform(this._selectionPattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status_code: {
-        value: cdktf.stringToHclTerraform(this._statusCode),
+        value: cdktn.stringToHclTerraform(this._statusCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

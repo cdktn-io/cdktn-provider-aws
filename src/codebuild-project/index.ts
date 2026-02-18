@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CodebuildProjectConfig extends cdktf.TerraformMetaArguments {
+export interface CodebuildProjectConfig extends cdktn.TerraformMetaArguments {
   /**
   * Maximum number of additional automatic retries after a failed build. The default value is 0.
   *
@@ -21,7 +21,7 @@ export interface CodebuildProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#badge_enabled CodebuildProject#badge_enabled}
   */
-  readonly badgeEnabled?: boolean | cdktf.IResolvable;
+  readonly badgeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#build_timeout CodebuildProject#build_timeout}
   */
@@ -112,7 +112,7 @@ export interface CodebuildProjectConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#file_system_locations CodebuildProject#file_system_locations}
   */
-  readonly fileSystemLocations?: CodebuildProjectFileSystemLocations[] | cdktf.IResolvable;
+  readonly fileSystemLocations?: CodebuildProjectFileSystemLocations[] | cdktn.IResolvable;
   /**
   * logs_config block
   *
@@ -124,19 +124,19 @@ export interface CodebuildProjectConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#secondary_artifacts CodebuildProject#secondary_artifacts}
   */
-  readonly secondaryArtifacts?: CodebuildProjectSecondaryArtifacts[] | cdktf.IResolvable;
+  readonly secondaryArtifacts?: CodebuildProjectSecondaryArtifacts[] | cdktn.IResolvable;
   /**
   * secondary_source_version block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#secondary_source_version CodebuildProject#secondary_source_version}
   */
-  readonly secondarySourceVersion?: CodebuildProjectSecondarySourceVersion[] | cdktf.IResolvable;
+  readonly secondarySourceVersion?: CodebuildProjectSecondarySourceVersion[] | cdktn.IResolvable;
   /**
   * secondary_sources block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#secondary_sources CodebuildProject#secondary_sources}
   */
-  readonly secondarySources?: CodebuildProjectSecondarySources[] | cdktf.IResolvable;
+  readonly secondarySources?: CodebuildProjectSecondarySources[] | cdktn.IResolvable;
   /**
   * source block
   *
@@ -162,7 +162,7 @@ export interface CodebuildProjectArtifacts {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#encryption_disabled CodebuildProject#encryption_disabled}
   */
-  readonly encryptionDisabled?: boolean | cdktf.IResolvable;
+  readonly encryptionDisabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#location CodebuildProject#location}
   */
@@ -178,7 +178,7 @@ export interface CodebuildProjectArtifacts {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#override_artifact_name CodebuildProject#override_artifact_name}
   */
-  readonly overrideArtifactName?: boolean | cdktf.IResolvable;
+  readonly overrideArtifactName?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#packaging CodebuildProject#packaging}
   */
@@ -194,87 +194,87 @@ export interface CodebuildProjectArtifacts {
 }
 
 export function codebuildProjectArtifactsToTerraform(struct?: CodebuildProjectArtifactsOutputReference | CodebuildProjectArtifacts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    artifact_identifier: cdktf.stringToTerraform(struct!.artifactIdentifier),
-    bucket_owner_access: cdktf.stringToTerraform(struct!.bucketOwnerAccess),
-    encryption_disabled: cdktf.booleanToTerraform(struct!.encryptionDisabled),
-    location: cdktf.stringToTerraform(struct!.location),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace_type: cdktf.stringToTerraform(struct!.namespaceType),
-    override_artifact_name: cdktf.booleanToTerraform(struct!.overrideArtifactName),
-    packaging: cdktf.stringToTerraform(struct!.packaging),
-    path: cdktf.stringToTerraform(struct!.path),
-    type: cdktf.stringToTerraform(struct!.type),
+    artifact_identifier: cdktn.stringToTerraform(struct!.artifactIdentifier),
+    bucket_owner_access: cdktn.stringToTerraform(struct!.bucketOwnerAccess),
+    encryption_disabled: cdktn.booleanToTerraform(struct!.encryptionDisabled),
+    location: cdktn.stringToTerraform(struct!.location),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace_type: cdktn.stringToTerraform(struct!.namespaceType),
+    override_artifact_name: cdktn.booleanToTerraform(struct!.overrideArtifactName),
+    packaging: cdktn.stringToTerraform(struct!.packaging),
+    path: cdktn.stringToTerraform(struct!.path),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function codebuildProjectArtifactsToHclTerraform(struct?: CodebuildProjectArtifactsOutputReference | CodebuildProjectArtifacts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     artifact_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.artifactIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.artifactIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket_owner_access: {
-      value: cdktf.stringToHclTerraform(struct!.bucketOwnerAccess),
+      value: cdktn.stringToHclTerraform(struct!.bucketOwnerAccess),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encryption_disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.encryptionDisabled),
+      value: cdktn.booleanToHclTerraform(struct!.encryptionDisabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace_type: {
-      value: cdktf.stringToHclTerraform(struct!.namespaceType),
+      value: cdktn.stringToHclTerraform(struct!.namespaceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     override_artifact_name: {
-      value: cdktf.booleanToHclTerraform(struct!.overrideArtifactName),
+      value: cdktn.booleanToHclTerraform(struct!.overrideArtifactName),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     packaging: {
-      value: cdktf.stringToHclTerraform(struct!.packaging),
+      value: cdktn.stringToHclTerraform(struct!.packaging),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -285,14 +285,14 @@ export function codebuildProjectArtifactsToHclTerraform(struct?: CodebuildProjec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectArtifactsOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectArtifactsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -404,11 +404,11 @@ export class CodebuildProjectArtifactsOutputReference extends cdktf.ComplexObjec
   }
 
   // encryption_disabled - computed: false, optional: true, required: false
-  private _encryptionDisabled?: boolean | cdktf.IResolvable; 
+  private _encryptionDisabled?: boolean | cdktn.IResolvable; 
   public get encryptionDisabled() {
     return this.getBooleanAttribute('encryption_disabled');
   }
-  public set encryptionDisabled(value: boolean | cdktf.IResolvable) {
+  public set encryptionDisabled(value: boolean | cdktn.IResolvable) {
     this._encryptionDisabled = value;
   }
   public resetEncryptionDisabled() {
@@ -468,11 +468,11 @@ export class CodebuildProjectArtifactsOutputReference extends cdktf.ComplexObjec
   }
 
   // override_artifact_name - computed: false, optional: true, required: false
-  private _overrideArtifactName?: boolean | cdktf.IResolvable; 
+  private _overrideArtifactName?: boolean | cdktn.IResolvable; 
   public get overrideArtifactName() {
     return this.getBooleanAttribute('override_artifact_name');
   }
-  public set overrideArtifactName(value: boolean | cdktf.IResolvable) {
+  public set overrideArtifactName(value: boolean | cdktn.IResolvable) {
     this._overrideArtifactName = value;
   }
   public resetOverrideArtifactName() {
@@ -540,31 +540,31 @@ export interface CodebuildProjectBuildBatchConfigRestrictions {
 }
 
 export function codebuildProjectBuildBatchConfigRestrictionsToTerraform(struct?: CodebuildProjectBuildBatchConfigRestrictionsOutputReference | CodebuildProjectBuildBatchConfigRestrictions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    compute_types_allowed: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.computeTypesAllowed),
-    maximum_builds_allowed: cdktf.numberToTerraform(struct!.maximumBuildsAllowed),
+    compute_types_allowed: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.computeTypesAllowed),
+    maximum_builds_allowed: cdktn.numberToTerraform(struct!.maximumBuildsAllowed),
   }
 }
 
 
 export function codebuildProjectBuildBatchConfigRestrictionsToHclTerraform(struct?: CodebuildProjectBuildBatchConfigRestrictionsOutputReference | CodebuildProjectBuildBatchConfigRestrictions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     compute_types_allowed: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.computeTypesAllowed),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.computeTypesAllowed),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     maximum_builds_allowed: {
-      value: cdktf.numberToHclTerraform(struct!.maximumBuildsAllowed),
+      value: cdktn.numberToHclTerraform(struct!.maximumBuildsAllowed),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -575,14 +575,14 @@ export function codebuildProjectBuildBatchConfigRestrictionsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectBuildBatchConfigRestrictionsOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectBuildBatchConfigRestrictionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -649,7 +649,7 @@ export interface CodebuildProjectBuildBatchConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#combine_artifacts CodebuildProject#combine_artifacts}
   */
-  readonly combineArtifacts?: boolean | cdktf.IResolvable;
+  readonly combineArtifacts?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#service_role CodebuildProject#service_role}
   */
@@ -667,39 +667,39 @@ export interface CodebuildProjectBuildBatchConfig {
 }
 
 export function codebuildProjectBuildBatchConfigToTerraform(struct?: CodebuildProjectBuildBatchConfigOutputReference | CodebuildProjectBuildBatchConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    combine_artifacts: cdktf.booleanToTerraform(struct!.combineArtifacts),
-    service_role: cdktf.stringToTerraform(struct!.serviceRole),
-    timeout_in_mins: cdktf.numberToTerraform(struct!.timeoutInMins),
+    combine_artifacts: cdktn.booleanToTerraform(struct!.combineArtifacts),
+    service_role: cdktn.stringToTerraform(struct!.serviceRole),
+    timeout_in_mins: cdktn.numberToTerraform(struct!.timeoutInMins),
     restrictions: codebuildProjectBuildBatchConfigRestrictionsToTerraform(struct!.restrictions),
   }
 }
 
 
 export function codebuildProjectBuildBatchConfigToHclTerraform(struct?: CodebuildProjectBuildBatchConfigOutputReference | CodebuildProjectBuildBatchConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     combine_artifacts: {
-      value: cdktf.booleanToHclTerraform(struct!.combineArtifacts),
+      value: cdktn.booleanToHclTerraform(struct!.combineArtifacts),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     service_role: {
-      value: cdktf.stringToHclTerraform(struct!.serviceRole),
+      value: cdktn.stringToHclTerraform(struct!.serviceRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_in_mins: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutInMins),
+      value: cdktn.numberToHclTerraform(struct!.timeoutInMins),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -716,14 +716,14 @@ export function codebuildProjectBuildBatchConfigToHclTerraform(struct?: Codebuil
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectBuildBatchConfigOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectBuildBatchConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -767,11 +767,11 @@ export class CodebuildProjectBuildBatchConfigOutputReference extends cdktf.Compl
   }
 
   // combine_artifacts - computed: false, optional: true, required: false
-  private _combineArtifacts?: boolean | cdktf.IResolvable; 
+  private _combineArtifacts?: boolean | cdktn.IResolvable; 
   public get combineArtifacts() {
     return this.getBooleanAttribute('combine_artifacts');
   }
-  public set combineArtifacts(value: boolean | cdktf.IResolvable) {
+  public set combineArtifacts(value: boolean | cdktn.IResolvable) {
     this._combineArtifacts = value;
   }
   public resetCombineArtifacts() {
@@ -847,45 +847,45 @@ export interface CodebuildProjectCache {
 }
 
 export function codebuildProjectCacheToTerraform(struct?: CodebuildProjectCacheOutputReference | CodebuildProjectCache): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cache_namespace: cdktf.stringToTerraform(struct!.cacheNamespace),
-    location: cdktf.stringToTerraform(struct!.location),
-    modes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.modes),
-    type: cdktf.stringToTerraform(struct!.type),
+    cache_namespace: cdktn.stringToTerraform(struct!.cacheNamespace),
+    location: cdktn.stringToTerraform(struct!.location),
+    modes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.modes),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function codebuildProjectCacheToHclTerraform(struct?: CodebuildProjectCacheOutputReference | CodebuildProjectCache): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cache_namespace: {
-      value: cdktf.stringToHclTerraform(struct!.cacheNamespace),
+      value: cdktn.stringToHclTerraform(struct!.cacheNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     modes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.modes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.modes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -896,14 +896,14 @@ export function codebuildProjectCacheToHclTerraform(struct?: CodebuildProjectCac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectCacheOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectCacheOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1022,31 +1022,31 @@ export interface CodebuildProjectEnvironmentDockerServer {
 }
 
 export function codebuildProjectEnvironmentDockerServerToTerraform(struct?: CodebuildProjectEnvironmentDockerServerOutputReference | CodebuildProjectEnvironmentDockerServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    compute_type: cdktf.stringToTerraform(struct!.computeType),
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
+    compute_type: cdktn.stringToTerraform(struct!.computeType),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
   }
 }
 
 
 export function codebuildProjectEnvironmentDockerServerToHclTerraform(struct?: CodebuildProjectEnvironmentDockerServerOutputReference | CodebuildProjectEnvironmentDockerServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     compute_type: {
-      value: cdktf.stringToHclTerraform(struct!.computeType),
+      value: cdktn.stringToHclTerraform(struct!.computeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1057,14 +1057,14 @@ export function codebuildProjectEnvironmentDockerServerToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectEnvironmentDockerServerOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectEnvironmentDockerServerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1139,39 +1139,39 @@ export interface CodebuildProjectEnvironmentEnvironmentVariable {
   readonly value: string;
 }
 
-export function codebuildProjectEnvironmentEnvironmentVariableToTerraform(struct?: CodebuildProjectEnvironmentEnvironmentVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codebuildProjectEnvironmentEnvironmentVariableToTerraform(struct?: CodebuildProjectEnvironmentEnvironmentVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function codebuildProjectEnvironmentEnvironmentVariableToHclTerraform(struct?: CodebuildProjectEnvironmentEnvironmentVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codebuildProjectEnvironmentEnvironmentVariableToHclTerraform(struct?: CodebuildProjectEnvironmentEnvironmentVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1182,9 +1182,9 @@ export function codebuildProjectEnvironmentEnvironmentVariableToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectEnvironmentEnvironmentVariableOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectEnvironmentEnvironmentVariableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1192,11 +1192,11 @@ export class CodebuildProjectEnvironmentEnvironmentVariableOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodebuildProjectEnvironmentEnvironmentVariable | cdktf.IResolvable | undefined {
+  public get internalValue(): CodebuildProjectEnvironmentEnvironmentVariable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1217,7 +1217,7 @@ export class CodebuildProjectEnvironmentEnvironmentVariableOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodebuildProjectEnvironmentEnvironmentVariable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodebuildProjectEnvironmentEnvironmentVariable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1225,7 +1225,7 @@ export class CodebuildProjectEnvironmentEnvironmentVariableOutputReference exten
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1281,15 +1281,15 @@ export class CodebuildProjectEnvironmentEnvironmentVariableOutputReference exten
   }
 }
 
-export class CodebuildProjectEnvironmentEnvironmentVariableList extends cdktf.ComplexList {
-  public internalValue? : CodebuildProjectEnvironmentEnvironmentVariable[] | cdktf.IResolvable
+export class CodebuildProjectEnvironmentEnvironmentVariableList extends cdktn.ComplexList {
+  public internalValue? : CodebuildProjectEnvironmentEnvironmentVariable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1308,24 +1308,24 @@ export interface CodebuildProjectEnvironmentFleet {
 }
 
 export function codebuildProjectEnvironmentFleetToTerraform(struct?: CodebuildProjectEnvironmentFleetOutputReference | CodebuildProjectEnvironmentFleet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fleet_arn: cdktf.stringToTerraform(struct!.fleetArn),
+    fleet_arn: cdktn.stringToTerraform(struct!.fleetArn),
   }
 }
 
 
 export function codebuildProjectEnvironmentFleetToHclTerraform(struct?: CodebuildProjectEnvironmentFleetOutputReference | CodebuildProjectEnvironmentFleet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fleet_arn: {
-      value: cdktf.stringToHclTerraform(struct!.fleetArn),
+      value: cdktn.stringToHclTerraform(struct!.fleetArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1336,14 +1336,14 @@ export function codebuildProjectEnvironmentFleetToHclTerraform(struct?: Codebuil
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectEnvironmentFleetOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectEnvironmentFleetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1396,31 +1396,31 @@ export interface CodebuildProjectEnvironmentRegistryCredential {
 }
 
 export function codebuildProjectEnvironmentRegistryCredentialToTerraform(struct?: CodebuildProjectEnvironmentRegistryCredentialOutputReference | CodebuildProjectEnvironmentRegistryCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    credential: cdktf.stringToTerraform(struct!.credential),
-    credential_provider: cdktf.stringToTerraform(struct!.credentialProvider),
+    credential: cdktn.stringToTerraform(struct!.credential),
+    credential_provider: cdktn.stringToTerraform(struct!.credentialProvider),
   }
 }
 
 
 export function codebuildProjectEnvironmentRegistryCredentialToHclTerraform(struct?: CodebuildProjectEnvironmentRegistryCredentialOutputReference | CodebuildProjectEnvironmentRegistryCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     credential: {
-      value: cdktf.stringToHclTerraform(struct!.credential),
+      value: cdktn.stringToHclTerraform(struct!.credential),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     credential_provider: {
-      value: cdktf.stringToHclTerraform(struct!.credentialProvider),
+      value: cdktn.stringToHclTerraform(struct!.credentialProvider),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1431,14 +1431,14 @@ export function codebuildProjectEnvironmentRegistryCredentialToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectEnvironmentRegistryCredentialOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectEnvironmentRegistryCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1515,7 +1515,7 @@ export interface CodebuildProjectEnvironment {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#privileged_mode CodebuildProject#privileged_mode}
   */
-  readonly privilegedMode?: boolean | cdktf.IResolvable;
+  readonly privilegedMode?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#type CodebuildProject#type}
   */
@@ -1531,7 +1531,7 @@ export interface CodebuildProjectEnvironment {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#environment_variable CodebuildProject#environment_variable}
   */
-  readonly environmentVariable?: CodebuildProjectEnvironmentEnvironmentVariable[] | cdktf.IResolvable;
+  readonly environmentVariable?: CodebuildProjectEnvironmentEnvironmentVariable[] | cdktn.IResolvable;
   /**
   * fleet block
   *
@@ -1547,19 +1547,19 @@ export interface CodebuildProjectEnvironment {
 }
 
 export function codebuildProjectEnvironmentToTerraform(struct?: CodebuildProjectEnvironmentOutputReference | CodebuildProjectEnvironment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate: cdktf.stringToTerraform(struct!.certificate),
-    compute_type: cdktf.stringToTerraform(struct!.computeType),
-    image: cdktf.stringToTerraform(struct!.image),
-    image_pull_credentials_type: cdktf.stringToTerraform(struct!.imagePullCredentialsType),
-    privileged_mode: cdktf.booleanToTerraform(struct!.privilegedMode),
-    type: cdktf.stringToTerraform(struct!.type),
+    certificate: cdktn.stringToTerraform(struct!.certificate),
+    compute_type: cdktn.stringToTerraform(struct!.computeType),
+    image: cdktn.stringToTerraform(struct!.image),
+    image_pull_credentials_type: cdktn.stringToTerraform(struct!.imagePullCredentialsType),
+    privileged_mode: cdktn.booleanToTerraform(struct!.privilegedMode),
+    type: cdktn.stringToTerraform(struct!.type),
     docker_server: codebuildProjectEnvironmentDockerServerToTerraform(struct!.dockerServer),
-    environment_variable: cdktf.listMapper(codebuildProjectEnvironmentEnvironmentVariableToTerraform, true)(struct!.environmentVariable),
+    environment_variable: cdktn.listMapper(codebuildProjectEnvironmentEnvironmentVariableToTerraform, true)(struct!.environmentVariable),
     fleet: codebuildProjectEnvironmentFleetToTerraform(struct!.fleet),
     registry_credential: codebuildProjectEnvironmentRegistryCredentialToTerraform(struct!.registryCredential),
   }
@@ -1567,43 +1567,43 @@ export function codebuildProjectEnvironmentToTerraform(struct?: CodebuildProject
 
 
 export function codebuildProjectEnvironmentToHclTerraform(struct?: CodebuildProjectEnvironmentOutputReference | CodebuildProjectEnvironment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate: {
-      value: cdktf.stringToHclTerraform(struct!.certificate),
+      value: cdktn.stringToHclTerraform(struct!.certificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     compute_type: {
-      value: cdktf.stringToHclTerraform(struct!.computeType),
+      value: cdktn.stringToHclTerraform(struct!.computeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     image: {
-      value: cdktf.stringToHclTerraform(struct!.image),
+      value: cdktn.stringToHclTerraform(struct!.image),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     image_pull_credentials_type: {
-      value: cdktf.stringToHclTerraform(struct!.imagePullCredentialsType),
+      value: cdktn.stringToHclTerraform(struct!.imagePullCredentialsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     privileged_mode: {
-      value: cdktf.booleanToHclTerraform(struct!.privilegedMode),
+      value: cdktn.booleanToHclTerraform(struct!.privilegedMode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1615,7 +1615,7 @@ export function codebuildProjectEnvironmentToHclTerraform(struct?: CodebuildProj
       storageClassType: "CodebuildProjectEnvironmentDockerServerList",
     },
     environment_variable: {
-      value: cdktf.listMapperHcl(codebuildProjectEnvironmentEnvironmentVariableToHclTerraform, true)(struct!.environmentVariable),
+      value: cdktn.listMapperHcl(codebuildProjectEnvironmentEnvironmentVariableToHclTerraform, true)(struct!.environmentVariable),
       isBlock: true,
       type: "list",
       storageClassType: "CodebuildProjectEnvironmentEnvironmentVariableList",
@@ -1638,14 +1638,14 @@ export function codebuildProjectEnvironmentToHclTerraform(struct?: CodebuildProj
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectEnvironmentOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectEnvironmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1783,11 +1783,11 @@ export class CodebuildProjectEnvironmentOutputReference extends cdktf.ComplexObj
   }
 
   // privileged_mode - computed: false, optional: true, required: false
-  private _privilegedMode?: boolean | cdktf.IResolvable; 
+  private _privilegedMode?: boolean | cdktn.IResolvable; 
   public get privilegedMode() {
     return this.getBooleanAttribute('privileged_mode');
   }
-  public set privilegedMode(value: boolean | cdktf.IResolvable) {
+  public set privilegedMode(value: boolean | cdktn.IResolvable) {
     this._privilegedMode = value;
   }
   public resetPrivilegedMode() {
@@ -1832,7 +1832,7 @@ export class CodebuildProjectEnvironmentOutputReference extends cdktf.ComplexObj
   public get environmentVariable() {
     return this._environmentVariable;
   }
-  public putEnvironmentVariable(value: CodebuildProjectEnvironmentEnvironmentVariable[] | cdktf.IResolvable) {
+  public putEnvironmentVariable(value: CodebuildProjectEnvironmentEnvironmentVariable[] | cdktn.IResolvable) {
     this._environmentVariable.internalValue = value;
   }
   public resetEnvironmentVariable() {
@@ -1898,53 +1898,53 @@ export interface CodebuildProjectFileSystemLocations {
   readonly type?: string;
 }
 
-export function codebuildProjectFileSystemLocationsToTerraform(struct?: CodebuildProjectFileSystemLocations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codebuildProjectFileSystemLocationsToTerraform(struct?: CodebuildProjectFileSystemLocations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identifier: cdktf.stringToTerraform(struct!.identifier),
-    location: cdktf.stringToTerraform(struct!.location),
-    mount_options: cdktf.stringToTerraform(struct!.mountOptions),
-    mount_point: cdktf.stringToTerraform(struct!.mountPoint),
-    type: cdktf.stringToTerraform(struct!.type),
+    identifier: cdktn.stringToTerraform(struct!.identifier),
+    location: cdktn.stringToTerraform(struct!.location),
+    mount_options: cdktn.stringToTerraform(struct!.mountOptions),
+    mount_point: cdktn.stringToTerraform(struct!.mountPoint),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function codebuildProjectFileSystemLocationsToHclTerraform(struct?: CodebuildProjectFileSystemLocations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codebuildProjectFileSystemLocationsToHclTerraform(struct?: CodebuildProjectFileSystemLocations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identifier: {
-      value: cdktf.stringToHclTerraform(struct!.identifier),
+      value: cdktn.stringToHclTerraform(struct!.identifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount_options: {
-      value: cdktf.stringToHclTerraform(struct!.mountOptions),
+      value: cdktn.stringToHclTerraform(struct!.mountOptions),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount_point: {
-      value: cdktf.stringToHclTerraform(struct!.mountPoint),
+      value: cdktn.stringToHclTerraform(struct!.mountPoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1955,9 +1955,9 @@ export function codebuildProjectFileSystemLocationsToHclTerraform(struct?: Codeb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectFileSystemLocationsOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectFileSystemLocationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1965,11 +1965,11 @@ export class CodebuildProjectFileSystemLocationsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodebuildProjectFileSystemLocations | cdktf.IResolvable | undefined {
+  public get internalValue(): CodebuildProjectFileSystemLocations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1998,7 +1998,7 @@ export class CodebuildProjectFileSystemLocationsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodebuildProjectFileSystemLocations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodebuildProjectFileSystemLocations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2008,7 +2008,7 @@ export class CodebuildProjectFileSystemLocationsOutputReference extends cdktf.Co
       this._mountPoint = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2104,15 +2104,15 @@ export class CodebuildProjectFileSystemLocationsOutputReference extends cdktf.Co
   }
 }
 
-export class CodebuildProjectFileSystemLocationsList extends cdktf.ComplexList {
-  public internalValue? : CodebuildProjectFileSystemLocations[] | cdktf.IResolvable
+export class CodebuildProjectFileSystemLocationsList extends cdktn.ComplexList {
+  public internalValue? : CodebuildProjectFileSystemLocations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2139,38 +2139,38 @@ export interface CodebuildProjectLogsConfigCloudwatchLogs {
 }
 
 export function codebuildProjectLogsConfigCloudwatchLogsToTerraform(struct?: CodebuildProjectLogsConfigCloudwatchLogsOutputReference | CodebuildProjectLogsConfigCloudwatchLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_name: cdktf.stringToTerraform(struct!.groupName),
-    status: cdktf.stringToTerraform(struct!.status),
-    stream_name: cdktf.stringToTerraform(struct!.streamName),
+    group_name: cdktn.stringToTerraform(struct!.groupName),
+    status: cdktn.stringToTerraform(struct!.status),
+    stream_name: cdktn.stringToTerraform(struct!.streamName),
   }
 }
 
 
 export function codebuildProjectLogsConfigCloudwatchLogsToHclTerraform(struct?: CodebuildProjectLogsConfigCloudwatchLogsOutputReference | CodebuildProjectLogsConfigCloudwatchLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group_name: {
-      value: cdktf.stringToHclTerraform(struct!.groupName),
+      value: cdktn.stringToHclTerraform(struct!.groupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.streamName),
+      value: cdktn.stringToHclTerraform(struct!.streamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2181,14 +2181,14 @@ export function codebuildProjectLogsConfigCloudwatchLogsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectLogsConfigCloudwatchLogsOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectLogsConfigCloudwatchLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2281,7 +2281,7 @@ export interface CodebuildProjectLogsConfigS3Logs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#encryption_disabled CodebuildProject#encryption_disabled}
   */
-  readonly encryptionDisabled?: boolean | cdktf.IResolvable;
+  readonly encryptionDisabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#location CodebuildProject#location}
   */
@@ -2293,45 +2293,45 @@ export interface CodebuildProjectLogsConfigS3Logs {
 }
 
 export function codebuildProjectLogsConfigS3LogsToTerraform(struct?: CodebuildProjectLogsConfigS3LogsOutputReference | CodebuildProjectLogsConfigS3Logs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_owner_access: cdktf.stringToTerraform(struct!.bucketOwnerAccess),
-    encryption_disabled: cdktf.booleanToTerraform(struct!.encryptionDisabled),
-    location: cdktf.stringToTerraform(struct!.location),
-    status: cdktf.stringToTerraform(struct!.status),
+    bucket_owner_access: cdktn.stringToTerraform(struct!.bucketOwnerAccess),
+    encryption_disabled: cdktn.booleanToTerraform(struct!.encryptionDisabled),
+    location: cdktn.stringToTerraform(struct!.location),
+    status: cdktn.stringToTerraform(struct!.status),
   }
 }
 
 
 export function codebuildProjectLogsConfigS3LogsToHclTerraform(struct?: CodebuildProjectLogsConfigS3LogsOutputReference | CodebuildProjectLogsConfigS3Logs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_owner_access: {
-      value: cdktf.stringToHclTerraform(struct!.bucketOwnerAccess),
+      value: cdktn.stringToHclTerraform(struct!.bucketOwnerAccess),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encryption_disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.encryptionDisabled),
+      value: cdktn.booleanToHclTerraform(struct!.encryptionDisabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2342,14 +2342,14 @@ export function codebuildProjectLogsConfigS3LogsToHclTerraform(struct?: Codebuil
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectLogsConfigS3LogsOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectLogsConfigS3LogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2409,11 +2409,11 @@ export class CodebuildProjectLogsConfigS3LogsOutputReference extends cdktf.Compl
   }
 
   // encryption_disabled - computed: false, optional: true, required: false
-  private _encryptionDisabled?: boolean | cdktf.IResolvable; 
+  private _encryptionDisabled?: boolean | cdktn.IResolvable; 
   public get encryptionDisabled() {
     return this.getBooleanAttribute('encryption_disabled');
   }
-  public set encryptionDisabled(value: boolean | cdktf.IResolvable) {
+  public set encryptionDisabled(value: boolean | cdktn.IResolvable) {
     this._encryptionDisabled = value;
   }
   public resetEncryptionDisabled() {
@@ -2472,8 +2472,8 @@ export interface CodebuildProjectLogsConfig {
 }
 
 export function codebuildProjectLogsConfigToTerraform(struct?: CodebuildProjectLogsConfigOutputReference | CodebuildProjectLogsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2484,8 +2484,8 @@ export function codebuildProjectLogsConfigToTerraform(struct?: CodebuildProjectL
 
 
 export function codebuildProjectLogsConfigToHclTerraform(struct?: CodebuildProjectLogsConfigOutputReference | CodebuildProjectLogsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2507,14 +2507,14 @@ export function codebuildProjectLogsConfigToHclTerraform(struct?: CodebuildProje
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectLogsConfigOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectLogsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2589,7 +2589,7 @@ export interface CodebuildProjectSecondaryArtifacts {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#encryption_disabled CodebuildProject#encryption_disabled}
   */
-  readonly encryptionDisabled?: boolean | cdktf.IResolvable;
+  readonly encryptionDisabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#location CodebuildProject#location}
   */
@@ -2605,7 +2605,7 @@ export interface CodebuildProjectSecondaryArtifacts {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#override_artifact_name CodebuildProject#override_artifact_name}
   */
-  readonly overrideArtifactName?: boolean | cdktf.IResolvable;
+  readonly overrideArtifactName?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#packaging CodebuildProject#packaging}
   */
@@ -2620,88 +2620,88 @@ export interface CodebuildProjectSecondaryArtifacts {
   readonly type: string;
 }
 
-export function codebuildProjectSecondaryArtifactsToTerraform(struct?: CodebuildProjectSecondaryArtifacts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codebuildProjectSecondaryArtifactsToTerraform(struct?: CodebuildProjectSecondaryArtifacts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    artifact_identifier: cdktf.stringToTerraform(struct!.artifactIdentifier),
-    bucket_owner_access: cdktf.stringToTerraform(struct!.bucketOwnerAccess),
-    encryption_disabled: cdktf.booleanToTerraform(struct!.encryptionDisabled),
-    location: cdktf.stringToTerraform(struct!.location),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace_type: cdktf.stringToTerraform(struct!.namespaceType),
-    override_artifact_name: cdktf.booleanToTerraform(struct!.overrideArtifactName),
-    packaging: cdktf.stringToTerraform(struct!.packaging),
-    path: cdktf.stringToTerraform(struct!.path),
-    type: cdktf.stringToTerraform(struct!.type),
+    artifact_identifier: cdktn.stringToTerraform(struct!.artifactIdentifier),
+    bucket_owner_access: cdktn.stringToTerraform(struct!.bucketOwnerAccess),
+    encryption_disabled: cdktn.booleanToTerraform(struct!.encryptionDisabled),
+    location: cdktn.stringToTerraform(struct!.location),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace_type: cdktn.stringToTerraform(struct!.namespaceType),
+    override_artifact_name: cdktn.booleanToTerraform(struct!.overrideArtifactName),
+    packaging: cdktn.stringToTerraform(struct!.packaging),
+    path: cdktn.stringToTerraform(struct!.path),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function codebuildProjectSecondaryArtifactsToHclTerraform(struct?: CodebuildProjectSecondaryArtifacts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codebuildProjectSecondaryArtifactsToHclTerraform(struct?: CodebuildProjectSecondaryArtifacts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     artifact_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.artifactIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.artifactIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket_owner_access: {
-      value: cdktf.stringToHclTerraform(struct!.bucketOwnerAccess),
+      value: cdktn.stringToHclTerraform(struct!.bucketOwnerAccess),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encryption_disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.encryptionDisabled),
+      value: cdktn.booleanToHclTerraform(struct!.encryptionDisabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace_type: {
-      value: cdktf.stringToHclTerraform(struct!.namespaceType),
+      value: cdktn.stringToHclTerraform(struct!.namespaceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     override_artifact_name: {
-      value: cdktf.booleanToHclTerraform(struct!.overrideArtifactName),
+      value: cdktn.booleanToHclTerraform(struct!.overrideArtifactName),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     packaging: {
-      value: cdktf.stringToHclTerraform(struct!.packaging),
+      value: cdktn.stringToHclTerraform(struct!.packaging),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2712,9 +2712,9 @@ export function codebuildProjectSecondaryArtifactsToHclTerraform(struct?: Codebu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectSecondaryArtifactsOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectSecondaryArtifactsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2722,11 +2722,11 @@ export class CodebuildProjectSecondaryArtifactsOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodebuildProjectSecondaryArtifacts | cdktf.IResolvable | undefined {
+  public get internalValue(): CodebuildProjectSecondaryArtifacts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2775,7 +2775,7 @@ export class CodebuildProjectSecondaryArtifactsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodebuildProjectSecondaryArtifacts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodebuildProjectSecondaryArtifacts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2790,7 +2790,7 @@ export class CodebuildProjectSecondaryArtifactsOutputReference extends cdktf.Com
       this._path = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2840,11 +2840,11 @@ export class CodebuildProjectSecondaryArtifactsOutputReference extends cdktf.Com
   }
 
   // encryption_disabled - computed: false, optional: true, required: false
-  private _encryptionDisabled?: boolean | cdktf.IResolvable; 
+  private _encryptionDisabled?: boolean | cdktn.IResolvable; 
   public get encryptionDisabled() {
     return this.getBooleanAttribute('encryption_disabled');
   }
-  public set encryptionDisabled(value: boolean | cdktf.IResolvable) {
+  public set encryptionDisabled(value: boolean | cdktn.IResolvable) {
     this._encryptionDisabled = value;
   }
   public resetEncryptionDisabled() {
@@ -2904,11 +2904,11 @@ export class CodebuildProjectSecondaryArtifactsOutputReference extends cdktf.Com
   }
 
   // override_artifact_name - computed: false, optional: true, required: false
-  private _overrideArtifactName?: boolean | cdktf.IResolvable; 
+  private _overrideArtifactName?: boolean | cdktn.IResolvable; 
   public get overrideArtifactName() {
     return this.getBooleanAttribute('override_artifact_name');
   }
-  public set overrideArtifactName(value: boolean | cdktf.IResolvable) {
+  public set overrideArtifactName(value: boolean | cdktn.IResolvable) {
     this._overrideArtifactName = value;
   }
   public resetOverrideArtifactName() {
@@ -2965,15 +2965,15 @@ export class CodebuildProjectSecondaryArtifactsOutputReference extends cdktf.Com
   }
 }
 
-export class CodebuildProjectSecondaryArtifactsList extends cdktf.ComplexList {
-  public internalValue? : CodebuildProjectSecondaryArtifacts[] | cdktf.IResolvable
+export class CodebuildProjectSecondaryArtifactsList extends cdktn.ComplexList {
+  public internalValue? : CodebuildProjectSecondaryArtifacts[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2995,32 +2995,32 @@ export interface CodebuildProjectSecondarySourceVersion {
   readonly sourceVersion: string;
 }
 
-export function codebuildProjectSecondarySourceVersionToTerraform(struct?: CodebuildProjectSecondarySourceVersion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codebuildProjectSecondarySourceVersionToTerraform(struct?: CodebuildProjectSecondarySourceVersion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source_identifier: cdktf.stringToTerraform(struct!.sourceIdentifier),
-    source_version: cdktf.stringToTerraform(struct!.sourceVersion),
+    source_identifier: cdktn.stringToTerraform(struct!.sourceIdentifier),
+    source_version: cdktn.stringToTerraform(struct!.sourceVersion),
   }
 }
 
 
-export function codebuildProjectSecondarySourceVersionToHclTerraform(struct?: CodebuildProjectSecondarySourceVersion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codebuildProjectSecondarySourceVersionToHclTerraform(struct?: CodebuildProjectSecondarySourceVersion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.sourceIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.sourceIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_version: {
-      value: cdktf.stringToHclTerraform(struct!.sourceVersion),
+      value: cdktn.stringToHclTerraform(struct!.sourceVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3031,9 +3031,9 @@ export function codebuildProjectSecondarySourceVersionToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectSecondarySourceVersionOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectSecondarySourceVersionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3041,11 +3041,11 @@ export class CodebuildProjectSecondarySourceVersionOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodebuildProjectSecondarySourceVersion | cdktf.IResolvable | undefined {
+  public get internalValue(): CodebuildProjectSecondarySourceVersion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3062,14 +3062,14 @@ export class CodebuildProjectSecondarySourceVersionOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodebuildProjectSecondarySourceVersion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodebuildProjectSecondarySourceVersion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._sourceIdentifier = undefined;
       this._sourceVersion = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3108,15 +3108,15 @@ export class CodebuildProjectSecondarySourceVersionOutputReference extends cdktf
   }
 }
 
-export class CodebuildProjectSecondarySourceVersionList extends cdktf.ComplexList {
-  public internalValue? : CodebuildProjectSecondarySourceVersion[] | cdktf.IResolvable
+export class CodebuildProjectSecondarySourceVersionList extends cdktn.ComplexList {
+  public internalValue? : CodebuildProjectSecondarySourceVersion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3139,31 +3139,31 @@ export interface CodebuildProjectSecondarySourcesAuth {
 }
 
 export function codebuildProjectSecondarySourcesAuthToTerraform(struct?: CodebuildProjectSecondarySourcesAuthOutputReference | CodebuildProjectSecondarySourcesAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource: cdktf.stringToTerraform(struct!.resource),
-    type: cdktf.stringToTerraform(struct!.type),
+    resource: cdktn.stringToTerraform(struct!.resource),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function codebuildProjectSecondarySourcesAuthToHclTerraform(struct?: CodebuildProjectSecondarySourcesAuthOutputReference | CodebuildProjectSecondarySourcesAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3174,14 +3174,14 @@ export function codebuildProjectSecondarySourcesAuthToHclTerraform(struct?: Code
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectSecondarySourcesAuthOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectSecondarySourcesAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3250,31 +3250,31 @@ export interface CodebuildProjectSecondarySourcesBuildStatusConfig {
 }
 
 export function codebuildProjectSecondarySourcesBuildStatusConfigToTerraform(struct?: CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference | CodebuildProjectSecondarySourcesBuildStatusConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    context: cdktf.stringToTerraform(struct!.context),
-    target_url: cdktf.stringToTerraform(struct!.targetUrl),
+    context: cdktn.stringToTerraform(struct!.context),
+    target_url: cdktn.stringToTerraform(struct!.targetUrl),
   }
 }
 
 
 export function codebuildProjectSecondarySourcesBuildStatusConfigToHclTerraform(struct?: CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference | CodebuildProjectSecondarySourcesBuildStatusConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     context: {
-      value: cdktf.stringToHclTerraform(struct!.context),
+      value: cdktn.stringToHclTerraform(struct!.context),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_url: {
-      value: cdktf.stringToHclTerraform(struct!.targetUrl),
+      value: cdktn.stringToHclTerraform(struct!.targetUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3285,14 +3285,14 @@ export function codebuildProjectSecondarySourcesBuildStatusConfigToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3359,28 +3359,28 @@ export interface CodebuildProjectSecondarySourcesGitSubmodulesConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#fetch_submodules CodebuildProject#fetch_submodules}
   */
-  readonly fetchSubmodules: boolean | cdktf.IResolvable;
+  readonly fetchSubmodules: boolean | cdktn.IResolvable;
 }
 
 export function codebuildProjectSecondarySourcesGitSubmodulesConfigToTerraform(struct?: CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference | CodebuildProjectSecondarySourcesGitSubmodulesConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fetch_submodules: cdktf.booleanToTerraform(struct!.fetchSubmodules),
+    fetch_submodules: cdktn.booleanToTerraform(struct!.fetchSubmodules),
   }
 }
 
 
 export function codebuildProjectSecondarySourcesGitSubmodulesConfigToHclTerraform(struct?: CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference | CodebuildProjectSecondarySourcesGitSubmodulesConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fetch_submodules: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchSubmodules),
+      value: cdktn.booleanToHclTerraform(struct!.fetchSubmodules),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3391,14 +3391,14 @@ export function codebuildProjectSecondarySourcesGitSubmodulesConfigToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3424,11 +3424,11 @@ export class CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference 
   }
 
   // fetch_submodules - computed: false, optional: false, required: true
-  private _fetchSubmodules?: boolean | cdktf.IResolvable; 
+  private _fetchSubmodules?: boolean | cdktn.IResolvable; 
   public get fetchSubmodules() {
     return this.getBooleanAttribute('fetch_submodules');
   }
-  public set fetchSubmodules(value: boolean | cdktf.IResolvable) {
+  public set fetchSubmodules(value: boolean | cdktn.IResolvable) {
     this._fetchSubmodules = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3448,7 +3448,7 @@ export interface CodebuildProjectSecondarySources {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#insecure_ssl CodebuildProject#insecure_ssl}
   */
-  readonly insecureSsl?: boolean | cdktf.IResolvable;
+  readonly insecureSsl?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#location CodebuildProject#location}
   */
@@ -3456,7 +3456,7 @@ export interface CodebuildProjectSecondarySources {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#report_build_status CodebuildProject#report_build_status}
   */
-  readonly reportBuildStatus?: boolean | cdktf.IResolvable;
+  readonly reportBuildStatus?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#source_identifier CodebuildProject#source_identifier}
   */
@@ -3485,19 +3485,19 @@ export interface CodebuildProjectSecondarySources {
   readonly gitSubmodulesConfig?: CodebuildProjectSecondarySourcesGitSubmodulesConfig;
 }
 
-export function codebuildProjectSecondarySourcesToTerraform(struct?: CodebuildProjectSecondarySources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codebuildProjectSecondarySourcesToTerraform(struct?: CodebuildProjectSecondarySources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    buildspec: cdktf.stringToTerraform(struct!.buildspec),
-    git_clone_depth: cdktf.numberToTerraform(struct!.gitCloneDepth),
-    insecure_ssl: cdktf.booleanToTerraform(struct!.insecureSsl),
-    location: cdktf.stringToTerraform(struct!.location),
-    report_build_status: cdktf.booleanToTerraform(struct!.reportBuildStatus),
-    source_identifier: cdktf.stringToTerraform(struct!.sourceIdentifier),
-    type: cdktf.stringToTerraform(struct!.type),
+    buildspec: cdktn.stringToTerraform(struct!.buildspec),
+    git_clone_depth: cdktn.numberToTerraform(struct!.gitCloneDepth),
+    insecure_ssl: cdktn.booleanToTerraform(struct!.insecureSsl),
+    location: cdktn.stringToTerraform(struct!.location),
+    report_build_status: cdktn.booleanToTerraform(struct!.reportBuildStatus),
+    source_identifier: cdktn.stringToTerraform(struct!.sourceIdentifier),
+    type: cdktn.stringToTerraform(struct!.type),
     auth: codebuildProjectSecondarySourcesAuthToTerraform(struct!.auth),
     build_status_config: codebuildProjectSecondarySourcesBuildStatusConfigToTerraform(struct!.buildStatusConfig),
     git_submodules_config: codebuildProjectSecondarySourcesGitSubmodulesConfigToTerraform(struct!.gitSubmodulesConfig),
@@ -3505,50 +3505,50 @@ export function codebuildProjectSecondarySourcesToTerraform(struct?: CodebuildPr
 }
 
 
-export function codebuildProjectSecondarySourcesToHclTerraform(struct?: CodebuildProjectSecondarySources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codebuildProjectSecondarySourcesToHclTerraform(struct?: CodebuildProjectSecondarySources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     buildspec: {
-      value: cdktf.stringToHclTerraform(struct!.buildspec),
+      value: cdktn.stringToHclTerraform(struct!.buildspec),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     git_clone_depth: {
-      value: cdktf.numberToHclTerraform(struct!.gitCloneDepth),
+      value: cdktn.numberToHclTerraform(struct!.gitCloneDepth),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     insecure_ssl: {
-      value: cdktf.booleanToHclTerraform(struct!.insecureSsl),
+      value: cdktn.booleanToHclTerraform(struct!.insecureSsl),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     report_build_status: {
-      value: cdktf.booleanToHclTerraform(struct!.reportBuildStatus),
+      value: cdktn.booleanToHclTerraform(struct!.reportBuildStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     source_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.sourceIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.sourceIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3577,9 +3577,9 @@ export function codebuildProjectSecondarySourcesToHclTerraform(struct?: Codebuil
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectSecondarySourcesOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectSecondarySourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3587,11 +3587,11 @@ export class CodebuildProjectSecondarySourcesOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodebuildProjectSecondarySources | cdktf.IResolvable | undefined {
+  public get internalValue(): CodebuildProjectSecondarySources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3640,7 +3640,7 @@ export class CodebuildProjectSecondarySourcesOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodebuildProjectSecondarySources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodebuildProjectSecondarySources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3655,7 +3655,7 @@ export class CodebuildProjectSecondarySourcesOutputReference extends cdktf.Compl
       this._buildStatusConfig.internalValue = undefined;
       this._gitSubmodulesConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3708,11 +3708,11 @@ export class CodebuildProjectSecondarySourcesOutputReference extends cdktf.Compl
   }
 
   // insecure_ssl - computed: false, optional: true, required: false
-  private _insecureSsl?: boolean | cdktf.IResolvable; 
+  private _insecureSsl?: boolean | cdktn.IResolvable; 
   public get insecureSsl() {
     return this.getBooleanAttribute('insecure_ssl');
   }
-  public set insecureSsl(value: boolean | cdktf.IResolvable) {
+  public set insecureSsl(value: boolean | cdktn.IResolvable) {
     this._insecureSsl = value;
   }
   public resetInsecureSsl() {
@@ -3740,11 +3740,11 @@ export class CodebuildProjectSecondarySourcesOutputReference extends cdktf.Compl
   }
 
   // report_build_status - computed: false, optional: true, required: false
-  private _reportBuildStatus?: boolean | cdktf.IResolvable; 
+  private _reportBuildStatus?: boolean | cdktn.IResolvable; 
   public get reportBuildStatus() {
     return this.getBooleanAttribute('report_build_status');
   }
-  public set reportBuildStatus(value: boolean | cdktf.IResolvable) {
+  public set reportBuildStatus(value: boolean | cdktn.IResolvable) {
     this._reportBuildStatus = value;
   }
   public resetReportBuildStatus() {
@@ -3830,15 +3830,15 @@ export class CodebuildProjectSecondarySourcesOutputReference extends cdktf.Compl
   }
 }
 
-export class CodebuildProjectSecondarySourcesList extends cdktf.ComplexList {
-  public internalValue? : CodebuildProjectSecondarySources[] | cdktf.IResolvable
+export class CodebuildProjectSecondarySourcesList extends cdktn.ComplexList {
+  public internalValue? : CodebuildProjectSecondarySources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3861,31 +3861,31 @@ export interface CodebuildProjectSourceAuth {
 }
 
 export function codebuildProjectSourceAuthToTerraform(struct?: CodebuildProjectSourceAuthOutputReference | CodebuildProjectSourceAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource: cdktf.stringToTerraform(struct!.resource),
-    type: cdktf.stringToTerraform(struct!.type),
+    resource: cdktn.stringToTerraform(struct!.resource),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function codebuildProjectSourceAuthToHclTerraform(struct?: CodebuildProjectSourceAuthOutputReference | CodebuildProjectSourceAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3896,14 +3896,14 @@ export function codebuildProjectSourceAuthToHclTerraform(struct?: CodebuildProje
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectSourceAuthOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectSourceAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3972,31 +3972,31 @@ export interface CodebuildProjectSourceBuildStatusConfig {
 }
 
 export function codebuildProjectSourceBuildStatusConfigToTerraform(struct?: CodebuildProjectSourceBuildStatusConfigOutputReference | CodebuildProjectSourceBuildStatusConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    context: cdktf.stringToTerraform(struct!.context),
-    target_url: cdktf.stringToTerraform(struct!.targetUrl),
+    context: cdktn.stringToTerraform(struct!.context),
+    target_url: cdktn.stringToTerraform(struct!.targetUrl),
   }
 }
 
 
 export function codebuildProjectSourceBuildStatusConfigToHclTerraform(struct?: CodebuildProjectSourceBuildStatusConfigOutputReference | CodebuildProjectSourceBuildStatusConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     context: {
-      value: cdktf.stringToHclTerraform(struct!.context),
+      value: cdktn.stringToHclTerraform(struct!.context),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_url: {
-      value: cdktf.stringToHclTerraform(struct!.targetUrl),
+      value: cdktn.stringToHclTerraform(struct!.targetUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4007,14 +4007,14 @@ export function codebuildProjectSourceBuildStatusConfigToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectSourceBuildStatusConfigOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectSourceBuildStatusConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4081,28 +4081,28 @@ export interface CodebuildProjectSourceGitSubmodulesConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#fetch_submodules CodebuildProject#fetch_submodules}
   */
-  readonly fetchSubmodules: boolean | cdktf.IResolvable;
+  readonly fetchSubmodules: boolean | cdktn.IResolvable;
 }
 
 export function codebuildProjectSourceGitSubmodulesConfigToTerraform(struct?: CodebuildProjectSourceGitSubmodulesConfigOutputReference | CodebuildProjectSourceGitSubmodulesConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fetch_submodules: cdktf.booleanToTerraform(struct!.fetchSubmodules),
+    fetch_submodules: cdktn.booleanToTerraform(struct!.fetchSubmodules),
   }
 }
 
 
 export function codebuildProjectSourceGitSubmodulesConfigToHclTerraform(struct?: CodebuildProjectSourceGitSubmodulesConfigOutputReference | CodebuildProjectSourceGitSubmodulesConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fetch_submodules: {
-      value: cdktf.booleanToHclTerraform(struct!.fetchSubmodules),
+      value: cdktn.booleanToHclTerraform(struct!.fetchSubmodules),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -4113,14 +4113,14 @@ export function codebuildProjectSourceGitSubmodulesConfigToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectSourceGitSubmodulesConfigOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectSourceGitSubmodulesConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4146,11 +4146,11 @@ export class CodebuildProjectSourceGitSubmodulesConfigOutputReference extends cd
   }
 
   // fetch_submodules - computed: false, optional: false, required: true
-  private _fetchSubmodules?: boolean | cdktf.IResolvable; 
+  private _fetchSubmodules?: boolean | cdktn.IResolvable; 
   public get fetchSubmodules() {
     return this.getBooleanAttribute('fetch_submodules');
   }
-  public set fetchSubmodules(value: boolean | cdktf.IResolvable) {
+  public set fetchSubmodules(value: boolean | cdktn.IResolvable) {
     this._fetchSubmodules = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4170,7 +4170,7 @@ export interface CodebuildProjectSource {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#insecure_ssl CodebuildProject#insecure_ssl}
   */
-  readonly insecureSsl?: boolean | cdktf.IResolvable;
+  readonly insecureSsl?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#location CodebuildProject#location}
   */
@@ -4178,7 +4178,7 @@ export interface CodebuildProjectSource {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#report_build_status CodebuildProject#report_build_status}
   */
-  readonly reportBuildStatus?: boolean | cdktf.IResolvable;
+  readonly reportBuildStatus?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#type CodebuildProject#type}
   */
@@ -4204,17 +4204,17 @@ export interface CodebuildProjectSource {
 }
 
 export function codebuildProjectSourceToTerraform(struct?: CodebuildProjectSourceOutputReference | CodebuildProjectSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    buildspec: cdktf.stringToTerraform(struct!.buildspec),
-    git_clone_depth: cdktf.numberToTerraform(struct!.gitCloneDepth),
-    insecure_ssl: cdktf.booleanToTerraform(struct!.insecureSsl),
-    location: cdktf.stringToTerraform(struct!.location),
-    report_build_status: cdktf.booleanToTerraform(struct!.reportBuildStatus),
-    type: cdktf.stringToTerraform(struct!.type),
+    buildspec: cdktn.stringToTerraform(struct!.buildspec),
+    git_clone_depth: cdktn.numberToTerraform(struct!.gitCloneDepth),
+    insecure_ssl: cdktn.booleanToTerraform(struct!.insecureSsl),
+    location: cdktn.stringToTerraform(struct!.location),
+    report_build_status: cdktn.booleanToTerraform(struct!.reportBuildStatus),
+    type: cdktn.stringToTerraform(struct!.type),
     auth: codebuildProjectSourceAuthToTerraform(struct!.auth),
     build_status_config: codebuildProjectSourceBuildStatusConfigToTerraform(struct!.buildStatusConfig),
     git_submodules_config: codebuildProjectSourceGitSubmodulesConfigToTerraform(struct!.gitSubmodulesConfig),
@@ -4223,43 +4223,43 @@ export function codebuildProjectSourceToTerraform(struct?: CodebuildProjectSourc
 
 
 export function codebuildProjectSourceToHclTerraform(struct?: CodebuildProjectSourceOutputReference | CodebuildProjectSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     buildspec: {
-      value: cdktf.stringToHclTerraform(struct!.buildspec),
+      value: cdktn.stringToHclTerraform(struct!.buildspec),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     git_clone_depth: {
-      value: cdktf.numberToHclTerraform(struct!.gitCloneDepth),
+      value: cdktn.numberToHclTerraform(struct!.gitCloneDepth),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     insecure_ssl: {
-      value: cdktf.booleanToHclTerraform(struct!.insecureSsl),
+      value: cdktn.booleanToHclTerraform(struct!.insecureSsl),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     report_build_status: {
-      value: cdktf.booleanToHclTerraform(struct!.reportBuildStatus),
+      value: cdktn.booleanToHclTerraform(struct!.reportBuildStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4288,14 +4288,14 @@ export function codebuildProjectSourceToHclTerraform(struct?: CodebuildProjectSo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4401,11 +4401,11 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
   }
 
   // insecure_ssl - computed: false, optional: true, required: false
-  private _insecureSsl?: boolean | cdktf.IResolvable; 
+  private _insecureSsl?: boolean | cdktn.IResolvable; 
   public get insecureSsl() {
     return this.getBooleanAttribute('insecure_ssl');
   }
-  public set insecureSsl(value: boolean | cdktf.IResolvable) {
+  public set insecureSsl(value: boolean | cdktn.IResolvable) {
     this._insecureSsl = value;
   }
   public resetInsecureSsl() {
@@ -4433,11 +4433,11 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
   }
 
   // report_build_status - computed: false, optional: true, required: false
-  private _reportBuildStatus?: boolean | cdktf.IResolvable; 
+  private _reportBuildStatus?: boolean | cdktn.IResolvable; 
   public get reportBuildStatus() {
     return this.getBooleanAttribute('report_build_status');
   }
-  public set reportBuildStatus(value: boolean | cdktf.IResolvable) {
+  public set reportBuildStatus(value: boolean | cdktn.IResolvable) {
     this._reportBuildStatus = value;
   }
   public resetReportBuildStatus() {
@@ -4525,38 +4525,38 @@ export interface CodebuildProjectVpcConfig {
 }
 
 export function codebuildProjectVpcConfigToTerraform(struct?: CodebuildProjectVpcConfigOutputReference | CodebuildProjectVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
-    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnets),
+    vpc_id: cdktn.stringToTerraform(struct!.vpcId),
   }
 }
 
 
 export function codebuildProjectVpcConfigToHclTerraform(struct?: CodebuildProjectVpcConfigOutputReference | CodebuildProjectVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnets: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnets),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     vpc_id: {
-      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      value: cdktn.stringToHclTerraform(struct!.vpcId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4567,14 +4567,14 @@ export function codebuildProjectVpcConfigToHclTerraform(struct?: CodebuildProjec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildProjectVpcConfigOutputReference extends cdktf.ComplexObject {
+export class CodebuildProjectVpcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4614,7 +4614,7 @@ export class CodebuildProjectVpcConfigOutputReference extends cdktf.ComplexObjec
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -4627,7 +4627,7 @@ export class CodebuildProjectVpcConfigOutputReference extends cdktf.ComplexObjec
   // subnets - computed: false, optional: false, required: true
   private _subnets?: string[]; 
   public get subnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -4654,7 +4654,7 @@ export class CodebuildProjectVpcConfigOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project aws_codebuild_project}
 */
-export class CodebuildProject extends cdktf.TerraformResource {
+export class CodebuildProject extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -4665,14 +4665,14 @@ export class CodebuildProject extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CodebuildProject resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CodebuildProject resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodebuildProject to import
   * @param importFromId The id of the existing CodebuildProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodebuildProject to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_codebuild_project", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_codebuild_project", importId: importFromId, provider });
       }
 
   // ===========
@@ -4757,11 +4757,11 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // badge_enabled - computed: false, optional: true, required: false
-  private _badgeEnabled?: boolean | cdktf.IResolvable; 
+  private _badgeEnabled?: boolean | cdktn.IResolvable; 
   public get badgeEnabled() {
     return this.getBooleanAttribute('badge_enabled');
   }
-  public set badgeEnabled(value: boolean | cdktf.IResolvable) {
+  public set badgeEnabled(value: boolean | cdktn.IResolvable) {
     this._badgeEnabled = value;
   }
   public resetBadgeEnabled() {
@@ -5063,7 +5063,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   public get fileSystemLocations() {
     return this._fileSystemLocations;
   }
-  public putFileSystemLocations(value: CodebuildProjectFileSystemLocations[] | cdktf.IResolvable) {
+  public putFileSystemLocations(value: CodebuildProjectFileSystemLocations[] | cdktn.IResolvable) {
     this._fileSystemLocations.internalValue = value;
   }
   public resetFileSystemLocations() {
@@ -5095,7 +5095,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   public get secondaryArtifacts() {
     return this._secondaryArtifacts;
   }
-  public putSecondaryArtifacts(value: CodebuildProjectSecondaryArtifacts[] | cdktf.IResolvable) {
+  public putSecondaryArtifacts(value: CodebuildProjectSecondaryArtifacts[] | cdktn.IResolvable) {
     this._secondaryArtifacts.internalValue = value;
   }
   public resetSecondaryArtifacts() {
@@ -5111,7 +5111,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   public get secondarySourceVersion() {
     return this._secondarySourceVersion;
   }
-  public putSecondarySourceVersion(value: CodebuildProjectSecondarySourceVersion[] | cdktf.IResolvable) {
+  public putSecondarySourceVersion(value: CodebuildProjectSecondarySourceVersion[] | cdktn.IResolvable) {
     this._secondarySourceVersion.internalValue = value;
   }
   public resetSecondarySourceVersion() {
@@ -5127,7 +5127,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   public get secondarySources() {
     return this._secondarySources;
   }
-  public putSecondarySources(value: CodebuildProjectSecondarySources[] | cdktf.IResolvable) {
+  public putSecondarySources(value: CodebuildProjectSecondarySources[] | cdktn.IResolvable) {
     this._secondarySources.internalValue = value;
   }
   public resetSecondarySources() {
@@ -5173,31 +5173,31 @@ export class CodebuildProject extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_retry_limit: cdktf.numberToTerraform(this._autoRetryLimit),
-      badge_enabled: cdktf.booleanToTerraform(this._badgeEnabled),
-      build_timeout: cdktf.numberToTerraform(this._buildTimeout),
-      concurrent_build_limit: cdktf.numberToTerraform(this._concurrentBuildLimit),
-      description: cdktf.stringToTerraform(this._description),
-      encryption_key: cdktf.stringToTerraform(this._encryptionKey),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project_visibility: cdktf.stringToTerraform(this._projectVisibility),
-      queued_timeout: cdktf.numberToTerraform(this._queuedTimeout),
-      region: cdktf.stringToTerraform(this._region),
-      resource_access_role: cdktf.stringToTerraform(this._resourceAccessRole),
-      service_role: cdktf.stringToTerraform(this._serviceRole),
-      source_version: cdktf.stringToTerraform(this._sourceVersion),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      auto_retry_limit: cdktn.numberToTerraform(this._autoRetryLimit),
+      badge_enabled: cdktn.booleanToTerraform(this._badgeEnabled),
+      build_timeout: cdktn.numberToTerraform(this._buildTimeout),
+      concurrent_build_limit: cdktn.numberToTerraform(this._concurrentBuildLimit),
+      description: cdktn.stringToTerraform(this._description),
+      encryption_key: cdktn.stringToTerraform(this._encryptionKey),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project_visibility: cdktn.stringToTerraform(this._projectVisibility),
+      queued_timeout: cdktn.numberToTerraform(this._queuedTimeout),
+      region: cdktn.stringToTerraform(this._region),
+      resource_access_role: cdktn.stringToTerraform(this._resourceAccessRole),
+      service_role: cdktn.stringToTerraform(this._serviceRole),
+      source_version: cdktn.stringToTerraform(this._sourceVersion),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       artifacts: codebuildProjectArtifactsToTerraform(this._artifacts.internalValue),
       build_batch_config: codebuildProjectBuildBatchConfigToTerraform(this._buildBatchConfig.internalValue),
       cache: codebuildProjectCacheToTerraform(this._cache.internalValue),
       environment: codebuildProjectEnvironmentToTerraform(this._environment.internalValue),
-      file_system_locations: cdktf.listMapper(codebuildProjectFileSystemLocationsToTerraform, true)(this._fileSystemLocations.internalValue),
+      file_system_locations: cdktn.listMapper(codebuildProjectFileSystemLocationsToTerraform, true)(this._fileSystemLocations.internalValue),
       logs_config: codebuildProjectLogsConfigToTerraform(this._logsConfig.internalValue),
-      secondary_artifacts: cdktf.listMapper(codebuildProjectSecondaryArtifactsToTerraform, true)(this._secondaryArtifacts.internalValue),
-      secondary_source_version: cdktf.listMapper(codebuildProjectSecondarySourceVersionToTerraform, true)(this._secondarySourceVersion.internalValue),
-      secondary_sources: cdktf.listMapper(codebuildProjectSecondarySourcesToTerraform, true)(this._secondarySources.internalValue),
+      secondary_artifacts: cdktn.listMapper(codebuildProjectSecondaryArtifactsToTerraform, true)(this._secondaryArtifacts.internalValue),
+      secondary_source_version: cdktn.listMapper(codebuildProjectSecondarySourceVersionToTerraform, true)(this._secondarySourceVersion.internalValue),
+      secondary_sources: cdktn.listMapper(codebuildProjectSecondarySourcesToTerraform, true)(this._secondarySources.internalValue),
       source: codebuildProjectSourceToTerraform(this._source.internalValue),
       vpc_config: codebuildProjectVpcConfigToTerraform(this._vpcConfig.internalValue),
     };
@@ -5206,97 +5206,97 @@ export class CodebuildProject extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_retry_limit: {
-        value: cdktf.numberToHclTerraform(this._autoRetryLimit),
+        value: cdktn.numberToHclTerraform(this._autoRetryLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       badge_enabled: {
-        value: cdktf.booleanToHclTerraform(this._badgeEnabled),
+        value: cdktn.booleanToHclTerraform(this._badgeEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       build_timeout: {
-        value: cdktf.numberToHclTerraform(this._buildTimeout),
+        value: cdktn.numberToHclTerraform(this._buildTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       concurrent_build_limit: {
-        value: cdktf.numberToHclTerraform(this._concurrentBuildLimit),
+        value: cdktn.numberToHclTerraform(this._concurrentBuildLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encryption_key: {
-        value: cdktf.stringToHclTerraform(this._encryptionKey),
+        value: cdktn.stringToHclTerraform(this._encryptionKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_visibility: {
-        value: cdktf.stringToHclTerraform(this._projectVisibility),
+        value: cdktn.stringToHclTerraform(this._projectVisibility),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       queued_timeout: {
-        value: cdktf.numberToHclTerraform(this._queuedTimeout),
+        value: cdktn.numberToHclTerraform(this._queuedTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_access_role: {
-        value: cdktf.stringToHclTerraform(this._resourceAccessRole),
+        value: cdktn.stringToHclTerraform(this._resourceAccessRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_role: {
-        value: cdktf.stringToHclTerraform(this._serviceRole),
+        value: cdktn.stringToHclTerraform(this._serviceRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_version: {
-        value: cdktf.stringToHclTerraform(this._sourceVersion),
+        value: cdktn.stringToHclTerraform(this._sourceVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -5326,7 +5326,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
         storageClassType: "CodebuildProjectEnvironmentList",
       },
       file_system_locations: {
-        value: cdktf.listMapperHcl(codebuildProjectFileSystemLocationsToHclTerraform, true)(this._fileSystemLocations.internalValue),
+        value: cdktn.listMapperHcl(codebuildProjectFileSystemLocationsToHclTerraform, true)(this._fileSystemLocations.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CodebuildProjectFileSystemLocationsList",
@@ -5338,19 +5338,19 @@ export class CodebuildProject extends cdktf.TerraformResource {
         storageClassType: "CodebuildProjectLogsConfigList",
       },
       secondary_artifacts: {
-        value: cdktf.listMapperHcl(codebuildProjectSecondaryArtifactsToHclTerraform, true)(this._secondaryArtifacts.internalValue),
+        value: cdktn.listMapperHcl(codebuildProjectSecondaryArtifactsToHclTerraform, true)(this._secondaryArtifacts.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CodebuildProjectSecondaryArtifactsList",
       },
       secondary_source_version: {
-        value: cdktf.listMapperHcl(codebuildProjectSecondarySourceVersionToHclTerraform, true)(this._secondarySourceVersion.internalValue),
+        value: cdktn.listMapperHcl(codebuildProjectSecondarySourceVersionToHclTerraform, true)(this._secondarySourceVersion.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CodebuildProjectSecondarySourceVersionList",
       },
       secondary_sources: {
-        value: cdktf.listMapperHcl(codebuildProjectSecondarySourcesToHclTerraform, true)(this._secondarySources.internalValue),
+        value: cdktn.listMapperHcl(codebuildProjectSecondarySourcesToHclTerraform, true)(this._secondarySources.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CodebuildProjectSecondarySourcesList",

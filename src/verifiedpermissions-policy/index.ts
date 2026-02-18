@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VerifiedpermissionsPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface VerifiedpermissionsPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_policy#policy_store_id VerifiedpermissionsPolicy#policy_store_id}
   */
@@ -27,7 +27,7 @@ export interface VerifiedpermissionsPolicyConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_policy#definition VerifiedpermissionsPolicy#definition}
   */
-  readonly definition?: VerifiedpermissionsPolicyDefinition[] | cdktf.IResolvable;
+  readonly definition?: VerifiedpermissionsPolicyDefinition[] | cdktn.IResolvable;
 }
 export interface VerifiedpermissionsPolicyDefinitionStatic {
   /**
@@ -40,32 +40,32 @@ export interface VerifiedpermissionsPolicyDefinitionStatic {
   readonly statement: string;
 }
 
-export function verifiedpermissionsPolicyDefinitionStaticToTerraform(struct?: VerifiedpermissionsPolicyDefinitionStatic | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsPolicyDefinitionStaticToTerraform(struct?: VerifiedpermissionsPolicyDefinitionStatic | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    statement: cdktf.stringToTerraform(struct!.statement),
+    description: cdktn.stringToTerraform(struct!.description),
+    statement: cdktn.stringToTerraform(struct!.statement),
   }
 }
 
 
-export function verifiedpermissionsPolicyDefinitionStaticToHclTerraform(struct?: VerifiedpermissionsPolicyDefinitionStatic | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsPolicyDefinitionStaticToHclTerraform(struct?: VerifiedpermissionsPolicyDefinitionStatic | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     statement: {
-      value: cdktf.stringToHclTerraform(struct!.statement),
+      value: cdktn.stringToHclTerraform(struct!.statement),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -76,9 +76,9 @@ export function verifiedpermissionsPolicyDefinitionStaticToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedpermissionsPolicyDefinitionStaticOutputReference extends cdktf.ComplexObject {
+export class VerifiedpermissionsPolicyDefinitionStaticOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -86,11 +86,11 @@ export class VerifiedpermissionsPolicyDefinitionStaticOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedpermissionsPolicyDefinitionStatic | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedpermissionsPolicyDefinitionStatic | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -107,14 +107,14 @@ export class VerifiedpermissionsPolicyDefinitionStaticOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedpermissionsPolicyDefinitionStatic | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedpermissionsPolicyDefinitionStatic | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._description = undefined;
       this._statement = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -156,15 +156,15 @@ export class VerifiedpermissionsPolicyDefinitionStaticOutputReference extends cd
   }
 }
 
-export class VerifiedpermissionsPolicyDefinitionStaticList extends cdktf.ComplexList {
-  public internalValue? : VerifiedpermissionsPolicyDefinitionStatic[] | cdktf.IResolvable
+export class VerifiedpermissionsPolicyDefinitionStaticList extends cdktn.ComplexList {
+  public internalValue? : VerifiedpermissionsPolicyDefinitionStatic[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -186,32 +186,32 @@ export interface VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal {
   readonly entityType: string;
 }
 
-export function verifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalToTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalToTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entity_id: cdktf.stringToTerraform(struct!.entityId),
-    entity_type: cdktf.stringToTerraform(struct!.entityType),
+    entity_id: cdktn.stringToTerraform(struct!.entityId),
+    entity_type: cdktn.stringToTerraform(struct!.entityType),
   }
 }
 
 
-export function verifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalToHclTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalToHclTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entity_id: {
-      value: cdktf.stringToHclTerraform(struct!.entityId),
+      value: cdktn.stringToHclTerraform(struct!.entityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     entity_type: {
-      value: cdktf.stringToHclTerraform(struct!.entityType),
+      value: cdktn.stringToHclTerraform(struct!.entityType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -222,9 +222,9 @@ export function verifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalOutputReference extends cdktf.ComplexObject {
+export class VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -232,11 +232,11 @@ export class VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -253,14 +253,14 @@ export class VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._entityId = undefined;
       this._entityType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -299,15 +299,15 @@ export class VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalOutputRef
   }
 }
 
-export class VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalList extends cdktf.ComplexList {
-  public internalValue? : VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal[] | cdktf.IResolvable
+export class VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalList extends cdktn.ComplexList {
+  public internalValue? : VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -329,32 +329,32 @@ export interface VerifiedpermissionsPolicyDefinitionTemplateLinkedResource {
   readonly entityType: string;
 }
 
-export function verifiedpermissionsPolicyDefinitionTemplateLinkedResourceToTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinkedResource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsPolicyDefinitionTemplateLinkedResourceToTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinkedResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entity_id: cdktf.stringToTerraform(struct!.entityId),
-    entity_type: cdktf.stringToTerraform(struct!.entityType),
+    entity_id: cdktn.stringToTerraform(struct!.entityId),
+    entity_type: cdktn.stringToTerraform(struct!.entityType),
   }
 }
 
 
-export function verifiedpermissionsPolicyDefinitionTemplateLinkedResourceToHclTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinkedResource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsPolicyDefinitionTemplateLinkedResourceToHclTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinkedResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entity_id: {
-      value: cdktf.stringToHclTerraform(struct!.entityId),
+      value: cdktn.stringToHclTerraform(struct!.entityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     entity_type: {
-      value: cdktf.stringToHclTerraform(struct!.entityType),
+      value: cdktn.stringToHclTerraform(struct!.entityType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -365,9 +365,9 @@ export function verifiedpermissionsPolicyDefinitionTemplateLinkedResourceToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedpermissionsPolicyDefinitionTemplateLinkedResourceOutputReference extends cdktf.ComplexObject {
+export class VerifiedpermissionsPolicyDefinitionTemplateLinkedResourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -375,11 +375,11 @@ export class VerifiedpermissionsPolicyDefinitionTemplateLinkedResourceOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedpermissionsPolicyDefinitionTemplateLinkedResource | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedpermissionsPolicyDefinitionTemplateLinkedResource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -396,14 +396,14 @@ export class VerifiedpermissionsPolicyDefinitionTemplateLinkedResourceOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedpermissionsPolicyDefinitionTemplateLinkedResource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedpermissionsPolicyDefinitionTemplateLinkedResource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._entityId = undefined;
       this._entityType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -442,15 +442,15 @@ export class VerifiedpermissionsPolicyDefinitionTemplateLinkedResourceOutputRefe
   }
 }
 
-export class VerifiedpermissionsPolicyDefinitionTemplateLinkedResourceList extends cdktf.ComplexList {
-  public internalValue? : VerifiedpermissionsPolicyDefinitionTemplateLinkedResource[] | cdktf.IResolvable
+export class VerifiedpermissionsPolicyDefinitionTemplateLinkedResourceList extends cdktn.ComplexList {
+  public internalValue? : VerifiedpermissionsPolicyDefinitionTemplateLinkedResource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -471,48 +471,48 @@ export interface VerifiedpermissionsPolicyDefinitionTemplateLinked {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_policy#principal VerifiedpermissionsPolicy#principal}
   */
-  readonly principal?: VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal[] | cdktf.IResolvable;
+  readonly principal?: VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal[] | cdktn.IResolvable;
   /**
   * resource block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_policy#resource VerifiedpermissionsPolicy#resource}
   */
-  readonly resource?: VerifiedpermissionsPolicyDefinitionTemplateLinkedResource[] | cdktf.IResolvable;
+  readonly resource?: VerifiedpermissionsPolicyDefinitionTemplateLinkedResource[] | cdktn.IResolvable;
 }
 
-export function verifiedpermissionsPolicyDefinitionTemplateLinkedToTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinked | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsPolicyDefinitionTemplateLinkedToTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinked | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    policy_template_id: cdktf.stringToTerraform(struct!.policyTemplateId),
-    principal: cdktf.listMapper(verifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalToTerraform, true)(struct!.principal),
-    resource: cdktf.listMapper(verifiedpermissionsPolicyDefinitionTemplateLinkedResourceToTerraform, true)(struct!.resource),
+    policy_template_id: cdktn.stringToTerraform(struct!.policyTemplateId),
+    principal: cdktn.listMapper(verifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalToTerraform, true)(struct!.principal),
+    resource: cdktn.listMapper(verifiedpermissionsPolicyDefinitionTemplateLinkedResourceToTerraform, true)(struct!.resource),
   }
 }
 
 
-export function verifiedpermissionsPolicyDefinitionTemplateLinkedToHclTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinked | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsPolicyDefinitionTemplateLinkedToHclTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinked | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     policy_template_id: {
-      value: cdktf.stringToHclTerraform(struct!.policyTemplateId),
+      value: cdktn.stringToHclTerraform(struct!.policyTemplateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     principal: {
-      value: cdktf.listMapperHcl(verifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalToHclTerraform, true)(struct!.principal),
+      value: cdktn.listMapperHcl(verifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalToHclTerraform, true)(struct!.principal),
       isBlock: true,
       type: "list",
       storageClassType: "VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalList",
     },
     resource: {
-      value: cdktf.listMapperHcl(verifiedpermissionsPolicyDefinitionTemplateLinkedResourceToHclTerraform, true)(struct!.resource),
+      value: cdktn.listMapperHcl(verifiedpermissionsPolicyDefinitionTemplateLinkedResourceToHclTerraform, true)(struct!.resource),
       isBlock: true,
       type: "list",
       storageClassType: "VerifiedpermissionsPolicyDefinitionTemplateLinkedResourceList",
@@ -523,9 +523,9 @@ export function verifiedpermissionsPolicyDefinitionTemplateLinkedToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedpermissionsPolicyDefinitionTemplateLinkedOutputReference extends cdktf.ComplexObject {
+export class VerifiedpermissionsPolicyDefinitionTemplateLinkedOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -533,11 +533,11 @@ export class VerifiedpermissionsPolicyDefinitionTemplateLinkedOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedpermissionsPolicyDefinitionTemplateLinked | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedpermissionsPolicyDefinitionTemplateLinked | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -558,7 +558,7 @@ export class VerifiedpermissionsPolicyDefinitionTemplateLinkedOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedpermissionsPolicyDefinitionTemplateLinked | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedpermissionsPolicyDefinitionTemplateLinked | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -566,7 +566,7 @@ export class VerifiedpermissionsPolicyDefinitionTemplateLinkedOutputReference ex
       this._principal.internalValue = undefined;
       this._resource.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -597,7 +597,7 @@ export class VerifiedpermissionsPolicyDefinitionTemplateLinkedOutputReference ex
   public get principal() {
     return this._principal;
   }
-  public putPrincipal(value: VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal[] | cdktf.IResolvable) {
+  public putPrincipal(value: VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal[] | cdktn.IResolvable) {
     this._principal.internalValue = value;
   }
   public resetPrincipal() {
@@ -613,7 +613,7 @@ export class VerifiedpermissionsPolicyDefinitionTemplateLinkedOutputReference ex
   public get resource() {
     return this._resource;
   }
-  public putResource(value: VerifiedpermissionsPolicyDefinitionTemplateLinkedResource[] | cdktf.IResolvable) {
+  public putResource(value: VerifiedpermissionsPolicyDefinitionTemplateLinkedResource[] | cdktn.IResolvable) {
     this._resource.internalValue = value;
   }
   public resetResource() {
@@ -625,15 +625,15 @@ export class VerifiedpermissionsPolicyDefinitionTemplateLinkedOutputReference ex
   }
 }
 
-export class VerifiedpermissionsPolicyDefinitionTemplateLinkedList extends cdktf.ComplexList {
-  public internalValue? : VerifiedpermissionsPolicyDefinitionTemplateLinked[] | cdktf.IResolvable
+export class VerifiedpermissionsPolicyDefinitionTemplateLinkedList extends cdktn.ComplexList {
+  public internalValue? : VerifiedpermissionsPolicyDefinitionTemplateLinked[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -650,41 +650,41 @@ export interface VerifiedpermissionsPolicyDefinition {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_policy#static VerifiedpermissionsPolicy#static}
   */
-  readonly static?: VerifiedpermissionsPolicyDefinitionStatic[] | cdktf.IResolvable;
+  readonly static?: VerifiedpermissionsPolicyDefinitionStatic[] | cdktn.IResolvable;
   /**
   * template_linked block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_policy#template_linked VerifiedpermissionsPolicy#template_linked}
   */
-  readonly templateLinked?: VerifiedpermissionsPolicyDefinitionTemplateLinked[] | cdktf.IResolvable;
+  readonly templateLinked?: VerifiedpermissionsPolicyDefinitionTemplateLinked[] | cdktn.IResolvable;
 }
 
-export function verifiedpermissionsPolicyDefinitionToTerraform(struct?: VerifiedpermissionsPolicyDefinition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsPolicyDefinitionToTerraform(struct?: VerifiedpermissionsPolicyDefinition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    static: cdktf.listMapper(verifiedpermissionsPolicyDefinitionStaticToTerraform, true)(struct!.static),
-    template_linked: cdktf.listMapper(verifiedpermissionsPolicyDefinitionTemplateLinkedToTerraform, true)(struct!.templateLinked),
+    static: cdktn.listMapper(verifiedpermissionsPolicyDefinitionStaticToTerraform, true)(struct!.static),
+    template_linked: cdktn.listMapper(verifiedpermissionsPolicyDefinitionTemplateLinkedToTerraform, true)(struct!.templateLinked),
   }
 }
 
 
-export function verifiedpermissionsPolicyDefinitionToHclTerraform(struct?: VerifiedpermissionsPolicyDefinition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsPolicyDefinitionToHclTerraform(struct?: VerifiedpermissionsPolicyDefinition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     static: {
-      value: cdktf.listMapperHcl(verifiedpermissionsPolicyDefinitionStaticToHclTerraform, true)(struct!.static),
+      value: cdktn.listMapperHcl(verifiedpermissionsPolicyDefinitionStaticToHclTerraform, true)(struct!.static),
       isBlock: true,
       type: "list",
       storageClassType: "VerifiedpermissionsPolicyDefinitionStaticList",
     },
     template_linked: {
-      value: cdktf.listMapperHcl(verifiedpermissionsPolicyDefinitionTemplateLinkedToHclTerraform, true)(struct!.templateLinked),
+      value: cdktn.listMapperHcl(verifiedpermissionsPolicyDefinitionTemplateLinkedToHclTerraform, true)(struct!.templateLinked),
       isBlock: true,
       type: "list",
       storageClassType: "VerifiedpermissionsPolicyDefinitionTemplateLinkedList",
@@ -695,9 +695,9 @@ export function verifiedpermissionsPolicyDefinitionToHclTerraform(struct?: Verif
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedpermissionsPolicyDefinitionOutputReference extends cdktf.ComplexObject {
+export class VerifiedpermissionsPolicyDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -705,11 +705,11 @@ export class VerifiedpermissionsPolicyDefinitionOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedpermissionsPolicyDefinition | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedpermissionsPolicyDefinition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -726,14 +726,14 @@ export class VerifiedpermissionsPolicyDefinitionOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedpermissionsPolicyDefinition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedpermissionsPolicyDefinition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._static.internalValue = undefined;
       this._templateLinked.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -750,7 +750,7 @@ export class VerifiedpermissionsPolicyDefinitionOutputReference extends cdktf.Co
   public get static() {
     return this._static;
   }
-  public putStatic(value: VerifiedpermissionsPolicyDefinitionStatic[] | cdktf.IResolvable) {
+  public putStatic(value: VerifiedpermissionsPolicyDefinitionStatic[] | cdktn.IResolvable) {
     this._static.internalValue = value;
   }
   public resetStatic() {
@@ -766,7 +766,7 @@ export class VerifiedpermissionsPolicyDefinitionOutputReference extends cdktf.Co
   public get templateLinked() {
     return this._templateLinked;
   }
-  public putTemplateLinked(value: VerifiedpermissionsPolicyDefinitionTemplateLinked[] | cdktf.IResolvable) {
+  public putTemplateLinked(value: VerifiedpermissionsPolicyDefinitionTemplateLinked[] | cdktn.IResolvable) {
     this._templateLinked.internalValue = value;
   }
   public resetTemplateLinked() {
@@ -778,15 +778,15 @@ export class VerifiedpermissionsPolicyDefinitionOutputReference extends cdktf.Co
   }
 }
 
-export class VerifiedpermissionsPolicyDefinitionList extends cdktf.ComplexList {
-  public internalValue? : VerifiedpermissionsPolicyDefinition[] | cdktf.IResolvable
+export class VerifiedpermissionsPolicyDefinitionList extends cdktn.ComplexList {
+  public internalValue? : VerifiedpermissionsPolicyDefinition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -801,7 +801,7 @@ export class VerifiedpermissionsPolicyDefinitionList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_policy aws_verifiedpermissions_policy}
 */
-export class VerifiedpermissionsPolicy extends cdktf.TerraformResource {
+export class VerifiedpermissionsPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -812,14 +812,14 @@ export class VerifiedpermissionsPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VerifiedpermissionsPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VerifiedpermissionsPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedpermissionsPolicy to import
   * @param importFromId The id of the existing VerifiedpermissionsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedpermissionsPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedpermissions_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedpermissions_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -907,7 +907,7 @@ export class VerifiedpermissionsPolicy extends cdktf.TerraformResource {
   public get definition() {
     return this._definition;
   }
-  public putDefinition(value: VerifiedpermissionsPolicyDefinition[] | cdktf.IResolvable) {
+  public putDefinition(value: VerifiedpermissionsPolicyDefinition[] | cdktn.IResolvable) {
     this._definition.internalValue = value;
   }
   public resetDefinition() {
@@ -924,28 +924,28 @@ export class VerifiedpermissionsPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy_store_id: cdktf.stringToTerraform(this._policyStoreId),
-      region: cdktf.stringToTerraform(this._region),
-      definition: cdktf.listMapper(verifiedpermissionsPolicyDefinitionToTerraform, true)(this._definition.internalValue),
+      policy_store_id: cdktn.stringToTerraform(this._policyStoreId),
+      region: cdktn.stringToTerraform(this._region),
+      definition: cdktn.listMapper(verifiedpermissionsPolicyDefinitionToTerraform, true)(this._definition.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       policy_store_id: {
-        value: cdktf.stringToHclTerraform(this._policyStoreId),
+        value: cdktn.stringToHclTerraform(this._policyStoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       definition: {
-        value: cdktf.listMapperHcl(verifiedpermissionsPolicyDefinitionToHclTerraform, true)(this._definition.internalValue),
+        value: cdktn.listMapperHcl(verifiedpermissionsPolicyDefinitionToHclTerraform, true)(this._definition.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VerifiedpermissionsPolicyDefinitionList",

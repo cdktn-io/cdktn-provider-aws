@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EbsSnapshotConfig extends cdktf.TerraformMetaArguments {
+export interface EbsSnapshotConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_snapshot#description EbsSnapshot#description}
   */
@@ -30,7 +30,7 @@ export interface EbsSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_snapshot#permanent_restore EbsSnapshot#permanent_restore}
   */
-  readonly permanentRestore?: boolean | cdktf.IResolvable;
+  readonly permanentRestore?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -75,32 +75,32 @@ export interface EbsSnapshotTimeouts {
   readonly delete?: string;
 }
 
-export function ebsSnapshotTimeoutsToTerraform(struct?: EbsSnapshotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ebsSnapshotTimeoutsToTerraform(struct?: EbsSnapshotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function ebsSnapshotTimeoutsToHclTerraform(struct?: EbsSnapshotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ebsSnapshotTimeoutsToHclTerraform(struct?: EbsSnapshotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,19 +111,19 @@ export function ebsSnapshotTimeoutsToHclTerraform(struct?: EbsSnapshotTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EbsSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EbsSnapshotTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EbsSnapshotTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EbsSnapshotTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -140,14 +140,14 @@ export class EbsSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EbsSnapshotTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EbsSnapshotTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -195,7 +195,7 @@ export class EbsSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_snapshot aws_ebs_snapshot}
 */
-export class EbsSnapshot extends cdktf.TerraformResource {
+export class EbsSnapshot extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -206,14 +206,14 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EbsSnapshot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EbsSnapshot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EbsSnapshot to import
   * @param importFromId The id of the existing EbsSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EbsSnapshot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ebs_snapshot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ebs_snapshot", importId: importFromId, provider });
       }
 
   // ===========
@@ -339,11 +339,11 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   }
 
   // permanent_restore - computed: false, optional: true, required: false
-  private _permanentRestore?: boolean | cdktf.IResolvable; 
+  private _permanentRestore?: boolean | cdktn.IResolvable; 
   public get permanentRestore() {
     return this.getBooleanAttribute('permanent_restore');
   }
-  public set permanentRestore(value: boolean | cdktf.IResolvable) {
+  public set permanentRestore(value: boolean | cdktn.IResolvable) {
     this._permanentRestore = value;
   }
   public resetPermanentRestore() {
@@ -474,16 +474,16 @@ export class EbsSnapshot extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      outpost_arn: cdktf.stringToTerraform(this._outpostArn),
-      permanent_restore: cdktf.booleanToTerraform(this._permanentRestore),
-      region: cdktf.stringToTerraform(this._region),
-      storage_tier: cdktf.stringToTerraform(this._storageTier),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      temporary_restore_days: cdktf.numberToTerraform(this._temporaryRestoreDays),
-      volume_id: cdktf.stringToTerraform(this._volumeId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      outpost_arn: cdktn.stringToTerraform(this._outpostArn),
+      permanent_restore: cdktn.booleanToTerraform(this._permanentRestore),
+      region: cdktn.stringToTerraform(this._region),
+      storage_tier: cdktn.stringToTerraform(this._storageTier),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      temporary_restore_days: cdktn.numberToTerraform(this._temporaryRestoreDays),
+      volume_id: cdktn.stringToTerraform(this._volumeId),
       timeouts: ebsSnapshotTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -491,61 +491,61 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       outpost_arn: {
-        value: cdktf.stringToHclTerraform(this._outpostArn),
+        value: cdktn.stringToHclTerraform(this._outpostArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permanent_restore: {
-        value: cdktf.booleanToHclTerraform(this._permanentRestore),
+        value: cdktn.booleanToHclTerraform(this._permanentRestore),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_tier: {
-        value: cdktf.stringToHclTerraform(this._storageTier),
+        value: cdktn.stringToHclTerraform(this._storageTier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       temporary_restore_days: {
-        value: cdktf.numberToHclTerraform(this._temporaryRestoreDays),
+        value: cdktn.numberToHclTerraform(this._temporaryRestoreDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       volume_id: {
-        value: cdktf.stringToHclTerraform(this._volumeId),
+        value: cdktn.stringToHclTerraform(this._volumeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsPollyVoicesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsPollyVoicesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/polly_voices#engine DataAwsPollyVoices#engine}
   */
@@ -19,7 +19,7 @@ export interface DataAwsPollyVoicesConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/polly_voices#include_additional_language_codes DataAwsPollyVoices#include_additional_language_codes}
   */
-  readonly includeAdditionalLanguageCodes?: boolean | cdktf.IResolvable;
+  readonly includeAdditionalLanguageCodes?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/polly_voices#language_code DataAwsPollyVoices#language_code}
   */
@@ -35,14 +35,14 @@ export interface DataAwsPollyVoicesConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/polly_voices#voices DataAwsPollyVoices#voices}
   */
-  readonly voices?: DataAwsPollyVoicesVoices[] | cdktf.IResolvable;
+  readonly voices?: DataAwsPollyVoicesVoices[] | cdktn.IResolvable;
 }
 export interface DataAwsPollyVoicesVoices {
 }
 
-export function dataAwsPollyVoicesVoicesToTerraform(struct?: DataAwsPollyVoicesVoices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsPollyVoicesVoicesToTerraform(struct?: DataAwsPollyVoicesVoices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -50,9 +50,9 @@ export function dataAwsPollyVoicesVoicesToTerraform(struct?: DataAwsPollyVoicesV
 }
 
 
-export function dataAwsPollyVoicesVoicesToHclTerraform(struct?: DataAwsPollyVoicesVoices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsPollyVoicesVoicesToHclTerraform(struct?: DataAwsPollyVoicesVoices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -60,9 +60,9 @@ export function dataAwsPollyVoicesVoicesToHclTerraform(struct?: DataAwsPollyVoic
   return attrs;
 }
 
-export class DataAwsPollyVoicesVoicesOutputReference extends cdktf.ComplexObject {
+export class DataAwsPollyVoicesVoicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -70,11 +70,11 @@ export class DataAwsPollyVoicesVoicesOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsPollyVoicesVoices | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsPollyVoicesVoices | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -83,12 +83,12 @@ export class DataAwsPollyVoicesVoicesOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsPollyVoicesVoices | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsPollyVoicesVoices | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -134,15 +134,15 @@ export class DataAwsPollyVoicesVoicesOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class DataAwsPollyVoicesVoicesList extends cdktf.ComplexList {
-  public internalValue? : DataAwsPollyVoicesVoices[] | cdktf.IResolvable
+export class DataAwsPollyVoicesVoicesList extends cdktn.ComplexList {
+  public internalValue? : DataAwsPollyVoicesVoices[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -157,7 +157,7 @@ export class DataAwsPollyVoicesVoicesList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/polly_voices aws_polly_voices}
 */
-export class DataAwsPollyVoices extends cdktf.TerraformDataSource {
+export class DataAwsPollyVoices extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -168,14 +168,14 @@ export class DataAwsPollyVoices extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsPollyVoices resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsPollyVoices resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsPollyVoices to import
   * @param importFromId The id of the existing DataAwsPollyVoices that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/polly_voices#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsPollyVoices to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_polly_voices", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_polly_voices", importId: importFromId, provider });
       }
 
   // ===========
@@ -238,11 +238,11 @@ export class DataAwsPollyVoices extends cdktf.TerraformDataSource {
   }
 
   // include_additional_language_codes - computed: false, optional: true, required: false
-  private _includeAdditionalLanguageCodes?: boolean | cdktf.IResolvable; 
+  private _includeAdditionalLanguageCodes?: boolean | cdktn.IResolvable; 
   public get includeAdditionalLanguageCodes() {
     return this.getBooleanAttribute('include_additional_language_codes');
   }
-  public set includeAdditionalLanguageCodes(value: boolean | cdktf.IResolvable) {
+  public set includeAdditionalLanguageCodes(value: boolean | cdktn.IResolvable) {
     this._includeAdditionalLanguageCodes = value;
   }
   public resetIncludeAdditionalLanguageCodes() {
@@ -290,7 +290,7 @@ export class DataAwsPollyVoices extends cdktf.TerraformDataSource {
   public get voices() {
     return this._voices;
   }
-  public putVoices(value: DataAwsPollyVoicesVoices[] | cdktf.IResolvable) {
+  public putVoices(value: DataAwsPollyVoicesVoices[] | cdktn.IResolvable) {
     this._voices.internalValue = value;
   }
   public resetVoices() {
@@ -307,42 +307,42 @@ export class DataAwsPollyVoices extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      engine: cdktf.stringToTerraform(this._engine),
-      include_additional_language_codes: cdktf.booleanToTerraform(this._includeAdditionalLanguageCodes),
-      language_code: cdktf.stringToTerraform(this._languageCode),
-      region: cdktf.stringToTerraform(this._region),
-      voices: cdktf.listMapper(dataAwsPollyVoicesVoicesToTerraform, true)(this._voices.internalValue),
+      engine: cdktn.stringToTerraform(this._engine),
+      include_additional_language_codes: cdktn.booleanToTerraform(this._includeAdditionalLanguageCodes),
+      language_code: cdktn.stringToTerraform(this._languageCode),
+      region: cdktn.stringToTerraform(this._region),
+      voices: cdktn.listMapper(dataAwsPollyVoicesVoicesToTerraform, true)(this._voices.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_additional_language_codes: {
-        value: cdktf.booleanToHclTerraform(this._includeAdditionalLanguageCodes),
+        value: cdktn.booleanToHclTerraform(this._includeAdditionalLanguageCodes),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       language_code: {
-        value: cdktf.stringToHclTerraform(this._languageCode),
+        value: cdktn.stringToHclTerraform(this._languageCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       voices: {
-        value: cdktf.listMapperHcl(dataAwsPollyVoicesVoicesToHclTerraform, true)(this._voices.internalValue),
+        value: cdktn.listMapperHcl(dataAwsPollyVoicesVoicesToHclTerraform, true)(this._voices.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsPollyVoicesVoicesList",

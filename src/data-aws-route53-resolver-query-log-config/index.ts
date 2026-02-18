@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsRoute53ResolverQueryLogConfigConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRoute53ResolverQueryLogConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_resolver_query_log_config#id DataAwsRoute53ResolverQueryLogConfig#id}
   *
@@ -42,7 +42,7 @@ export interface DataAwsRoute53ResolverQueryLogConfigConfig extends cdktf.Terraf
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_resolver_query_log_config#filter DataAwsRoute53ResolverQueryLogConfig#filter}
   */
-  readonly filter?: DataAwsRoute53ResolverQueryLogConfigFilter[] | cdktf.IResolvable;
+  readonly filter?: DataAwsRoute53ResolverQueryLogConfigFilter[] | cdktn.IResolvable;
 }
 export interface DataAwsRoute53ResolverQueryLogConfigFilter {
   /**
@@ -55,32 +55,32 @@ export interface DataAwsRoute53ResolverQueryLogConfigFilter {
   readonly values: string[];
 }
 
-export function dataAwsRoute53ResolverQueryLogConfigFilterToTerraform(struct?: DataAwsRoute53ResolverQueryLogConfigFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRoute53ResolverQueryLogConfigFilterToTerraform(struct?: DataAwsRoute53ResolverQueryLogConfigFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataAwsRoute53ResolverQueryLogConfigFilterToHclTerraform(struct?: DataAwsRoute53ResolverQueryLogConfigFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRoute53ResolverQueryLogConfigFilterToHclTerraform(struct?: DataAwsRoute53ResolverQueryLogConfigFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -91,9 +91,9 @@ export function dataAwsRoute53ResolverQueryLogConfigFilterToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsRoute53ResolverQueryLogConfigFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsRoute53ResolverQueryLogConfigFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -101,11 +101,11 @@ export class DataAwsRoute53ResolverQueryLogConfigFilterOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsRoute53ResolverQueryLogConfigFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsRoute53ResolverQueryLogConfigFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -122,14 +122,14 @@ export class DataAwsRoute53ResolverQueryLogConfigFilterOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsRoute53ResolverQueryLogConfigFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsRoute53ResolverQueryLogConfigFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -157,7 +157,7 @@ export class DataAwsRoute53ResolverQueryLogConfigFilterOutputReference extends c
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -168,15 +168,15 @@ export class DataAwsRoute53ResolverQueryLogConfigFilterOutputReference extends c
   }
 }
 
-export class DataAwsRoute53ResolverQueryLogConfigFilterList extends cdktf.ComplexList {
-  public internalValue? : DataAwsRoute53ResolverQueryLogConfigFilter[] | cdktf.IResolvable
+export class DataAwsRoute53ResolverQueryLogConfigFilterList extends cdktn.ComplexList {
+  public internalValue? : DataAwsRoute53ResolverQueryLogConfigFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -191,7 +191,7 @@ export class DataAwsRoute53ResolverQueryLogConfigFilterList extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_resolver_query_log_config aws_route53_resolver_query_log_config}
 */
-export class DataAwsRoute53ResolverQueryLogConfig extends cdktf.TerraformDataSource {
+export class DataAwsRoute53ResolverQueryLogConfig extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -202,14 +202,14 @@ export class DataAwsRoute53ResolverQueryLogConfig extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsRoute53ResolverQueryLogConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsRoute53ResolverQueryLogConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRoute53ResolverQueryLogConfig to import
   * @param importFromId The id of the existing DataAwsRoute53ResolverQueryLogConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_resolver_query_log_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRoute53ResolverQueryLogConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_resolver_query_log_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_resolver_query_log_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -356,7 +356,7 @@ export class DataAwsRoute53ResolverQueryLogConfig extends cdktf.TerraformDataSou
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: DataAwsRoute53ResolverQueryLogConfigFilter[] | cdktf.IResolvable) {
+  public putFilter(value: DataAwsRoute53ResolverQueryLogConfigFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -373,49 +373,49 @@ export class DataAwsRoute53ResolverQueryLogConfig extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      resolver_query_log_config_id: cdktf.stringToTerraform(this._resolverQueryLogConfigId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsRoute53ResolverQueryLogConfigFilterToTerraform, true)(this._filter.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      resolver_query_log_config_id: cdktn.stringToTerraform(this._resolverQueryLogConfigId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      filter: cdktn.listMapper(dataAwsRoute53ResolverQueryLogConfigFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resolver_query_log_config_id: {
-        value: cdktf.stringToHclTerraform(this._resolverQueryLogConfigId),
+        value: cdktn.stringToHclTerraform(this._resolverQueryLogConfigId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       filter: {
-        value: cdktf.listMapperHcl(dataAwsRoute53ResolverQueryLogConfigFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(dataAwsRoute53ResolverQueryLogConfigFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsRoute53ResolverQueryLogConfigFilterList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Macie2ClassificationExportConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface Macie2ClassificationExportConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_classification_export_configuration#id Macie2ClassificationExportConfiguration#id}
   *
@@ -48,38 +48,38 @@ export interface Macie2ClassificationExportConfigurationS3Destination {
 }
 
 export function macie2ClassificationExportConfigurationS3DestinationToTerraform(struct?: Macie2ClassificationExportConfigurationS3DestinationOutputReference | Macie2ClassificationExportConfigurationS3Destination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    key_prefix: cdktf.stringToTerraform(struct!.keyPrefix),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    key_prefix: cdktn.stringToTerraform(struct!.keyPrefix),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
   }
 }
 
 
 export function macie2ClassificationExportConfigurationS3DestinationToHclTerraform(struct?: Macie2ClassificationExportConfigurationS3DestinationOutputReference | Macie2ClassificationExportConfigurationS3Destination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.keyPrefix),
+      value: cdktn.stringToHclTerraform(struct!.keyPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -90,14 +90,14 @@ export function macie2ClassificationExportConfigurationS3DestinationToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Macie2ClassificationExportConfigurationS3DestinationOutputReference extends cdktf.ComplexObject {
+export class Macie2ClassificationExportConfigurationS3DestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -180,7 +180,7 @@ export class Macie2ClassificationExportConfigurationS3DestinationOutputReference
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_classification_export_configuration aws_macie2_classification_export_configuration}
 */
-export class Macie2ClassificationExportConfiguration extends cdktf.TerraformResource {
+export class Macie2ClassificationExportConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -191,14 +191,14 @@ export class Macie2ClassificationExportConfiguration extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Macie2ClassificationExportConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Macie2ClassificationExportConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Macie2ClassificationExportConfiguration to import
   * @param importFromId The id of the existing Macie2ClassificationExportConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_classification_export_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Macie2ClassificationExportConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_macie2_classification_export_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_macie2_classification_export_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -288,8 +288,8 @@ export class Macie2ClassificationExportConfiguration extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
       s3_destination: macie2ClassificationExportConfigurationS3DestinationToTerraform(this._s3Destination.internalValue),
     };
   }
@@ -297,13 +297,13 @@ export class Macie2ClassificationExportConfiguration extends cdktf.TerraformReso
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

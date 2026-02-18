@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ConfigOrganizationCustomRuleConfig extends cdktf.TerraformMetaArguments {
+export interface ConfigOrganizationCustomRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_organization_custom_rule#description ConfigOrganizationCustomRule#description}
   */
@@ -91,39 +91,39 @@ export interface ConfigOrganizationCustomRuleTimeouts {
   readonly update?: string;
 }
 
-export function configOrganizationCustomRuleTimeoutsToTerraform(struct?: ConfigOrganizationCustomRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function configOrganizationCustomRuleTimeoutsToTerraform(struct?: ConfigOrganizationCustomRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function configOrganizationCustomRuleTimeoutsToHclTerraform(struct?: ConfigOrganizationCustomRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function configOrganizationCustomRuleTimeoutsToHclTerraform(struct?: ConfigOrganizationCustomRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -134,19 +134,19 @@ export function configOrganizationCustomRuleTimeoutsToHclTerraform(struct?: Conf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConfigOrganizationCustomRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ConfigOrganizationCustomRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ConfigOrganizationCustomRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ConfigOrganizationCustomRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -167,7 +167,7 @@ export class ConfigOrganizationCustomRuleTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConfigOrganizationCustomRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConfigOrganizationCustomRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -175,7 +175,7 @@ export class ConfigOrganizationCustomRuleTimeoutsOutputReference extends cdktf.C
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -240,7 +240,7 @@ export class ConfigOrganizationCustomRuleTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_organization_custom_rule aws_config_organization_custom_rule}
 */
-export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
+export class ConfigOrganizationCustomRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -251,14 +251,14 @@ export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ConfigOrganizationCustomRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ConfigOrganizationCustomRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfigOrganizationCustomRule to import
   * @param importFromId The id of the existing ConfigOrganizationCustomRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_organization_custom_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfigOrganizationCustomRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_config_organization_custom_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_config_organization_custom_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -332,7 +332,7 @@ export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
   // excluded_accounts - computed: false, optional: true, required: false
   private _excludedAccounts?: string[]; 
   public get excludedAccounts() {
-    return cdktf.Fn.tolist(this.getListAttribute('excluded_accounts'));
+    return cdktn.Fn.tolist(this.getListAttribute('excluded_accounts'));
   }
   public set excludedAccounts(value: string[]) {
     this._excludedAccounts = value;
@@ -454,7 +454,7 @@ export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
   // resource_types_scope - computed: false, optional: true, required: false
   private _resourceTypesScope?: string[]; 
   public get resourceTypesScope() {
-    return cdktf.Fn.tolist(this.getListAttribute('resource_types_scope'));
+    return cdktn.Fn.tolist(this.getListAttribute('resource_types_scope'));
   }
   public set resourceTypesScope(value: string[]) {
     this._resourceTypesScope = value;
@@ -502,7 +502,7 @@ export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
   // trigger_types - computed: false, optional: false, required: true
   private _triggerTypes?: string[]; 
   public get triggerTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('trigger_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('trigger_types'));
   }
   public set triggerTypes(value: string[]) {
     this._triggerTypes = value;
@@ -534,19 +534,19 @@ export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      excluded_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludedAccounts),
-      id: cdktf.stringToTerraform(this._id),
-      input_parameters: cdktf.stringToTerraform(this._inputParameters),
-      lambda_function_arn: cdktf.stringToTerraform(this._lambdaFunctionArn),
-      maximum_execution_frequency: cdktf.stringToTerraform(this._maximumExecutionFrequency),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      resource_id_scope: cdktf.stringToTerraform(this._resourceIdScope),
-      resource_types_scope: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourceTypesScope),
-      tag_key_scope: cdktf.stringToTerraform(this._tagKeyScope),
-      tag_value_scope: cdktf.stringToTerraform(this._tagValueScope),
-      trigger_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._triggerTypes),
+      description: cdktn.stringToTerraform(this._description),
+      excluded_accounts: cdktn.listMapper(cdktn.stringToTerraform, false)(this._excludedAccounts),
+      id: cdktn.stringToTerraform(this._id),
+      input_parameters: cdktn.stringToTerraform(this._inputParameters),
+      lambda_function_arn: cdktn.stringToTerraform(this._lambdaFunctionArn),
+      maximum_execution_frequency: cdktn.stringToTerraform(this._maximumExecutionFrequency),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      resource_id_scope: cdktn.stringToTerraform(this._resourceIdScope),
+      resource_types_scope: cdktn.listMapper(cdktn.stringToTerraform, false)(this._resourceTypesScope),
+      tag_key_scope: cdktn.stringToTerraform(this._tagKeyScope),
+      tag_value_scope: cdktn.stringToTerraform(this._tagValueScope),
+      trigger_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._triggerTypes),
       timeouts: configOrganizationCustomRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -554,79 +554,79 @@ export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       excluded_accounts: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludedAccounts),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._excludedAccounts),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       input_parameters: {
-        value: cdktf.stringToHclTerraform(this._inputParameters),
+        value: cdktn.stringToHclTerraform(this._inputParameters),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lambda_function_arn: {
-        value: cdktf.stringToHclTerraform(this._lambdaFunctionArn),
+        value: cdktn.stringToHclTerraform(this._lambdaFunctionArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       maximum_execution_frequency: {
-        value: cdktf.stringToHclTerraform(this._maximumExecutionFrequency),
+        value: cdktn.stringToHclTerraform(this._maximumExecutionFrequency),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_id_scope: {
-        value: cdktf.stringToHclTerraform(this._resourceIdScope),
+        value: cdktn.stringToHclTerraform(this._resourceIdScope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_types_scope: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resourceTypesScope),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._resourceTypesScope),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tag_key_scope: {
-        value: cdktf.stringToHclTerraform(this._tagKeyScope),
+        value: cdktn.stringToHclTerraform(this._tagKeyScope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tag_value_scope: {
-        value: cdktf.stringToHclTerraform(this._tagValueScope),
+        value: cdktn.stringToHclTerraform(this._tagValueScope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trigger_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._triggerTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._triggerTypes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

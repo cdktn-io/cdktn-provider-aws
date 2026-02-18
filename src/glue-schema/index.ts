@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlueSchemaConfig extends cdktf.TerraformMetaArguments {
+export interface GlueSchemaConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_schema#compatibility GlueSchema#compatibility}
   */
@@ -62,7 +62,7 @@ export interface GlueSchemaConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_schema aws_glue_schema}
 */
-export class GlueSchema extends cdktf.TerraformResource {
+export class GlueSchema extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -73,14 +73,14 @@ export class GlueSchema extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlueSchema resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlueSchema resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlueSchema to import
   * @param importFromId The id of the existing GlueSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_schema#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlueSchema to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_schema", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_schema", importId: importFromId, provider });
       }
 
   // ===========
@@ -305,77 +305,77 @@ export class GlueSchema extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compatibility: cdktf.stringToTerraform(this._compatibility),
-      data_format: cdktf.stringToTerraform(this._dataFormat),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      registry_arn: cdktf.stringToTerraform(this._registryArn),
-      schema_definition: cdktf.stringToTerraform(this._schemaDefinition),
-      schema_name: cdktf.stringToTerraform(this._schemaName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      compatibility: cdktn.stringToTerraform(this._compatibility),
+      data_format: cdktn.stringToTerraform(this._dataFormat),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      registry_arn: cdktn.stringToTerraform(this._registryArn),
+      schema_definition: cdktn.stringToTerraform(this._schemaDefinition),
+      schema_name: cdktn.stringToTerraform(this._schemaName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       compatibility: {
-        value: cdktf.stringToHclTerraform(this._compatibility),
+        value: cdktn.stringToHclTerraform(this._compatibility),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_format: {
-        value: cdktf.stringToHclTerraform(this._dataFormat),
+        value: cdktn.stringToHclTerraform(this._dataFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       registry_arn: {
-        value: cdktf.stringToHclTerraform(this._registryArn),
+        value: cdktn.stringToHclTerraform(this._registryArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema_definition: {
-        value: cdktf.stringToHclTerraform(this._schemaDefinition),
+        value: cdktn.stringToHclTerraform(this._schemaDefinition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema_name: {
-        value: cdktf.stringToHclTerraform(this._schemaName),
+        value: cdktn.stringToHclTerraform(this._schemaName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

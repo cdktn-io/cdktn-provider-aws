@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MqBrokerConfig extends cdktf.TerraformMetaArguments {
+export interface MqBrokerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#apply_immediately MqBroker#apply_immediately}
   */
-  readonly applyImmediately?: boolean | cdktf.IResolvable;
+  readonly applyImmediately?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#authentication_strategy MqBroker#authentication_strategy}
   */
@@ -23,7 +23,7 @@ export interface MqBrokerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#auto_minor_version_upgrade MqBroker#auto_minor_version_upgrade}
   */
-  readonly autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
+  readonly autoMinorVersionUpgrade?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#broker_name MqBroker#broker_name}
   */
@@ -62,7 +62,7 @@ export interface MqBrokerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#publicly_accessible MqBroker#publicly_accessible}
   */
-  readonly publiclyAccessible?: boolean | cdktf.IResolvable;
+  readonly publiclyAccessible?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -130,14 +130,14 @@ export interface MqBrokerConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#user MqBroker#user}
   */
-  readonly user: MqBrokerUser[] | cdktf.IResolvable;
+  readonly user: MqBrokerUser[] | cdktn.IResolvable;
 }
 export interface MqBrokerInstances {
 }
 
 export function mqBrokerInstancesToTerraform(struct?: MqBrokerInstances): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -146,8 +146,8 @@ export function mqBrokerInstancesToTerraform(struct?: MqBrokerInstances): any {
 
 
 export function mqBrokerInstancesToHclTerraform(struct?: MqBrokerInstances): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -155,7 +155,7 @@ export function mqBrokerInstancesToHclTerraform(struct?: MqBrokerInstances): any
   return attrs;
 }
 
-export class MqBrokerInstancesOutputReference extends cdktf.ComplexObject {
+export class MqBrokerInstancesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -164,7 +164,7 @@ export class MqBrokerInstancesOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -199,14 +199,14 @@ export class MqBrokerInstancesOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class MqBrokerInstancesList extends cdktf.ComplexList {
+export class MqBrokerInstancesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -232,31 +232,31 @@ export interface MqBrokerConfiguration {
 }
 
 export function mqBrokerConfigurationToTerraform(struct?: MqBrokerConfigurationOutputReference | MqBrokerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    revision: cdktf.numberToTerraform(struct!.revision),
+    id: cdktn.stringToTerraform(struct!.id),
+    revision: cdktn.numberToTerraform(struct!.revision),
   }
 }
 
 
 export function mqBrokerConfigurationToHclTerraform(struct?: MqBrokerConfigurationOutputReference | MqBrokerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     revision: {
-      value: cdktf.numberToHclTerraform(struct!.revision),
+      value: cdktn.numberToHclTerraform(struct!.revision),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -267,14 +267,14 @@ export function mqBrokerConfigurationToHclTerraform(struct?: MqBrokerConfigurati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MqBrokerConfigurationOutputReference extends cdktf.ComplexObject {
+export class MqBrokerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -345,35 +345,35 @@ export interface MqBrokerEncryptionOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#use_aws_owned_key MqBroker#use_aws_owned_key}
   */
-  readonly useAwsOwnedKey?: boolean | cdktf.IResolvable;
+  readonly useAwsOwnedKey?: boolean | cdktn.IResolvable;
 }
 
 export function mqBrokerEncryptionOptionsToTerraform(struct?: MqBrokerEncryptionOptionsOutputReference | MqBrokerEncryptionOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
-    use_aws_owned_key: cdktf.booleanToTerraform(struct!.useAwsOwnedKey),
+    kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
+    use_aws_owned_key: cdktn.booleanToTerraform(struct!.useAwsOwnedKey),
   }
 }
 
 
 export function mqBrokerEncryptionOptionsToHclTerraform(struct?: MqBrokerEncryptionOptionsOutputReference | MqBrokerEncryptionOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_aws_owned_key: {
-      value: cdktf.booleanToHclTerraform(struct!.useAwsOwnedKey),
+      value: cdktn.booleanToHclTerraform(struct!.useAwsOwnedKey),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -384,14 +384,14 @@ export function mqBrokerEncryptionOptionsToHclTerraform(struct?: MqBrokerEncrypt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MqBrokerEncryptionOptionsOutputReference extends cdktf.ComplexObject {
+export class MqBrokerEncryptionOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -439,11 +439,11 @@ export class MqBrokerEncryptionOptionsOutputReference extends cdktf.ComplexObjec
   }
 
   // use_aws_owned_key - computed: false, optional: true, required: false
-  private _useAwsOwnedKey?: boolean | cdktf.IResolvable; 
+  private _useAwsOwnedKey?: boolean | cdktn.IResolvable; 
   public get useAwsOwnedKey() {
     return this.getBooleanAttribute('use_aws_owned_key');
   }
-  public set useAwsOwnedKey(value: boolean | cdktf.IResolvable) {
+  public set useAwsOwnedKey(value: boolean | cdktn.IResolvable) {
     this._useAwsOwnedKey = value;
   }
   public resetUseAwsOwnedKey() {
@@ -474,7 +474,7 @@ export interface MqBrokerLdapServerMetadata {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#role_search_subtree MqBroker#role_search_subtree}
   */
-  readonly roleSearchSubtree?: boolean | cdktf.IResolvable;
+  readonly roleSearchSubtree?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#service_account_password MqBroker#service_account_password}
   */
@@ -498,98 +498,98 @@ export interface MqBrokerLdapServerMetadata {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#user_search_subtree MqBroker#user_search_subtree}
   */
-  readonly userSearchSubtree?: boolean | cdktf.IResolvable;
+  readonly userSearchSubtree?: boolean | cdktn.IResolvable;
 }
 
 export function mqBrokerLdapServerMetadataToTerraform(struct?: MqBrokerLdapServerMetadataOutputReference | MqBrokerLdapServerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hosts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hosts),
-    role_base: cdktf.stringToTerraform(struct!.roleBase),
-    role_name: cdktf.stringToTerraform(struct!.roleName),
-    role_search_matching: cdktf.stringToTerraform(struct!.roleSearchMatching),
-    role_search_subtree: cdktf.booleanToTerraform(struct!.roleSearchSubtree),
-    service_account_password: cdktf.stringToTerraform(struct!.serviceAccountPassword),
-    service_account_username: cdktf.stringToTerraform(struct!.serviceAccountUsername),
-    user_base: cdktf.stringToTerraform(struct!.userBase),
-    user_role_name: cdktf.stringToTerraform(struct!.userRoleName),
-    user_search_matching: cdktf.stringToTerraform(struct!.userSearchMatching),
-    user_search_subtree: cdktf.booleanToTerraform(struct!.userSearchSubtree),
+    hosts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.hosts),
+    role_base: cdktn.stringToTerraform(struct!.roleBase),
+    role_name: cdktn.stringToTerraform(struct!.roleName),
+    role_search_matching: cdktn.stringToTerraform(struct!.roleSearchMatching),
+    role_search_subtree: cdktn.booleanToTerraform(struct!.roleSearchSubtree),
+    service_account_password: cdktn.stringToTerraform(struct!.serviceAccountPassword),
+    service_account_username: cdktn.stringToTerraform(struct!.serviceAccountUsername),
+    user_base: cdktn.stringToTerraform(struct!.userBase),
+    user_role_name: cdktn.stringToTerraform(struct!.userRoleName),
+    user_search_matching: cdktn.stringToTerraform(struct!.userSearchMatching),
+    user_search_subtree: cdktn.booleanToTerraform(struct!.userSearchSubtree),
   }
 }
 
 
 export function mqBrokerLdapServerMetadataToHclTerraform(struct?: MqBrokerLdapServerMetadataOutputReference | MqBrokerLdapServerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hosts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.hosts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.hosts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     role_base: {
-      value: cdktf.stringToHclTerraform(struct!.roleBase),
+      value: cdktn.stringToHclTerraform(struct!.roleBase),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_name: {
-      value: cdktf.stringToHclTerraform(struct!.roleName),
+      value: cdktn.stringToHclTerraform(struct!.roleName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_search_matching: {
-      value: cdktf.stringToHclTerraform(struct!.roleSearchMatching),
+      value: cdktn.stringToHclTerraform(struct!.roleSearchMatching),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_search_subtree: {
-      value: cdktf.booleanToHclTerraform(struct!.roleSearchSubtree),
+      value: cdktn.booleanToHclTerraform(struct!.roleSearchSubtree),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     service_account_password: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountPassword),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_account_username: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountUsername),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountUsername),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_base: {
-      value: cdktf.stringToHclTerraform(struct!.userBase),
+      value: cdktn.stringToHclTerraform(struct!.userBase),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_role_name: {
-      value: cdktf.stringToHclTerraform(struct!.userRoleName),
+      value: cdktn.stringToHclTerraform(struct!.userRoleName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_search_matching: {
-      value: cdktf.stringToHclTerraform(struct!.userSearchMatching),
+      value: cdktn.stringToHclTerraform(struct!.userSearchMatching),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_search_subtree: {
-      value: cdktf.booleanToHclTerraform(struct!.userSearchSubtree),
+      value: cdktn.booleanToHclTerraform(struct!.userSearchSubtree),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -600,14 +600,14 @@ export function mqBrokerLdapServerMetadataToHclTerraform(struct?: MqBrokerLdapSe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MqBrokerLdapServerMetadataOutputReference extends cdktf.ComplexObject {
+export class MqBrokerLdapServerMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -757,11 +757,11 @@ export class MqBrokerLdapServerMetadataOutputReference extends cdktf.ComplexObje
   }
 
   // role_search_subtree - computed: false, optional: true, required: false
-  private _roleSearchSubtree?: boolean | cdktf.IResolvable; 
+  private _roleSearchSubtree?: boolean | cdktn.IResolvable; 
   public get roleSearchSubtree() {
     return this.getBooleanAttribute('role_search_subtree');
   }
-  public set roleSearchSubtree(value: boolean | cdktf.IResolvable) {
+  public set roleSearchSubtree(value: boolean | cdktn.IResolvable) {
     this._roleSearchSubtree = value;
   }
   public resetRoleSearchSubtree() {
@@ -853,11 +853,11 @@ export class MqBrokerLdapServerMetadataOutputReference extends cdktf.ComplexObje
   }
 
   // user_search_subtree - computed: false, optional: true, required: false
-  private _userSearchSubtree?: boolean | cdktf.IResolvable; 
+  private _userSearchSubtree?: boolean | cdktn.IResolvable; 
   public get userSearchSubtree() {
     return this.getBooleanAttribute('user_search_subtree');
   }
-  public set userSearchSubtree(value: boolean | cdktf.IResolvable) {
+  public set userSearchSubtree(value: boolean | cdktn.IResolvable) {
     this._userSearchSubtree = value;
   }
   public resetUserSearchSubtree() {
@@ -876,35 +876,35 @@ export interface MqBrokerLogs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#general MqBroker#general}
   */
-  readonly general?: boolean | cdktf.IResolvable;
+  readonly general?: boolean | cdktn.IResolvable;
 }
 
 export function mqBrokerLogsToTerraform(struct?: MqBrokerLogsOutputReference | MqBrokerLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audit: cdktf.stringToTerraform(struct!.audit),
-    general: cdktf.booleanToTerraform(struct!.general),
+    audit: cdktn.stringToTerraform(struct!.audit),
+    general: cdktn.booleanToTerraform(struct!.general),
   }
 }
 
 
 export function mqBrokerLogsToHclTerraform(struct?: MqBrokerLogsOutputReference | MqBrokerLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audit: {
-      value: cdktf.stringToHclTerraform(struct!.audit),
+      value: cdktn.stringToHclTerraform(struct!.audit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     general: {
-      value: cdktf.booleanToHclTerraform(struct!.general),
+      value: cdktn.booleanToHclTerraform(struct!.general),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -915,14 +915,14 @@ export function mqBrokerLogsToHclTerraform(struct?: MqBrokerLogsOutputReference 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MqBrokerLogsOutputReference extends cdktf.ComplexObject {
+export class MqBrokerLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -970,11 +970,11 @@ export class MqBrokerLogsOutputReference extends cdktf.ComplexObject {
   }
 
   // general - computed: false, optional: true, required: false
-  private _general?: boolean | cdktf.IResolvable; 
+  private _general?: boolean | cdktn.IResolvable; 
   public get general() {
     return this.getBooleanAttribute('general');
   }
-  public set general(value: boolean | cdktf.IResolvable) {
+  public set general(value: boolean | cdktn.IResolvable) {
     this._general = value;
   }
   public resetGeneral() {
@@ -1001,38 +1001,38 @@ export interface MqBrokerMaintenanceWindowStartTime {
 }
 
 export function mqBrokerMaintenanceWindowStartTimeToTerraform(struct?: MqBrokerMaintenanceWindowStartTimeOutputReference | MqBrokerMaintenanceWindowStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_week: cdktf.stringToTerraform(struct!.dayOfWeek),
-    time_of_day: cdktf.stringToTerraform(struct!.timeOfDay),
-    time_zone: cdktf.stringToTerraform(struct!.timeZone),
+    day_of_week: cdktn.stringToTerraform(struct!.dayOfWeek),
+    time_of_day: cdktn.stringToTerraform(struct!.timeOfDay),
+    time_zone: cdktn.stringToTerraform(struct!.timeZone),
   }
 }
 
 
 export function mqBrokerMaintenanceWindowStartTimeToHclTerraform(struct?: MqBrokerMaintenanceWindowStartTimeOutputReference | MqBrokerMaintenanceWindowStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_week: {
-      value: cdktf.stringToHclTerraform(struct!.dayOfWeek),
+      value: cdktn.stringToHclTerraform(struct!.dayOfWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_of_day: {
-      value: cdktf.stringToHclTerraform(struct!.timeOfDay),
+      value: cdktn.stringToHclTerraform(struct!.timeOfDay),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_zone: {
-      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      value: cdktn.stringToHclTerraform(struct!.timeZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1043,14 +1043,14 @@ export function mqBrokerMaintenanceWindowStartTimeToHclTerraform(struct?: MqBrok
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MqBrokerMaintenanceWindowStartTimeOutputReference extends cdktf.ComplexObject {
+export class MqBrokerMaintenanceWindowStartTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1141,39 +1141,39 @@ export interface MqBrokerTimeouts {
   readonly update?: string;
 }
 
-export function mqBrokerTimeoutsToTerraform(struct?: MqBrokerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mqBrokerTimeoutsToTerraform(struct?: MqBrokerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mqBrokerTimeoutsToHclTerraform(struct?: MqBrokerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mqBrokerTimeoutsToHclTerraform(struct?: MqBrokerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1184,19 +1184,19 @@ export function mqBrokerTimeoutsToHclTerraform(struct?: MqBrokerTimeouts | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MqBrokerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MqBrokerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MqBrokerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MqBrokerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1217,7 +1217,7 @@ export class MqBrokerTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MqBrokerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MqBrokerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1225,7 +1225,7 @@ export class MqBrokerTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1290,7 +1290,7 @@ export interface MqBrokerUser {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#console_access MqBroker#console_access}
   */
-  readonly consoleAccess?: boolean | cdktf.IResolvable;
+  readonly consoleAccess?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#groups MqBroker#groups}
   */
@@ -1302,60 +1302,60 @@ export interface MqBrokerUser {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#replication_user MqBroker#replication_user}
   */
-  readonly replicationUser?: boolean | cdktf.IResolvable;
+  readonly replicationUser?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#username MqBroker#username}
   */
   readonly username: string;
 }
 
-export function mqBrokerUserToTerraform(struct?: MqBrokerUser | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mqBrokerUserToTerraform(struct?: MqBrokerUser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    console_access: cdktf.booleanToTerraform(struct!.consoleAccess),
-    groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groups),
-    password: cdktf.stringToTerraform(struct!.password),
-    replication_user: cdktf.booleanToTerraform(struct!.replicationUser),
-    username: cdktf.stringToTerraform(struct!.username),
+    console_access: cdktn.booleanToTerraform(struct!.consoleAccess),
+    groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groups),
+    password: cdktn.stringToTerraform(struct!.password),
+    replication_user: cdktn.booleanToTerraform(struct!.replicationUser),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function mqBrokerUserToHclTerraform(struct?: MqBrokerUser | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mqBrokerUserToHclTerraform(struct?: MqBrokerUser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     console_access: {
-      value: cdktf.booleanToHclTerraform(struct!.consoleAccess),
+      value: cdktn.booleanToHclTerraform(struct!.consoleAccess),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.groups),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replication_user: {
-      value: cdktf.booleanToHclTerraform(struct!.replicationUser),
+      value: cdktn.booleanToHclTerraform(struct!.replicationUser),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1366,9 +1366,9 @@ export function mqBrokerUserToHclTerraform(struct?: MqBrokerUser | cdktf.IResolv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MqBrokerUserOutputReference extends cdktf.ComplexObject {
+export class MqBrokerUserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1376,11 +1376,11 @@ export class MqBrokerUserOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MqBrokerUser | cdktf.IResolvable | undefined {
+  public get internalValue(): MqBrokerUser | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1409,7 +1409,7 @@ export class MqBrokerUserOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MqBrokerUser | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MqBrokerUser | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1419,7 +1419,7 @@ export class MqBrokerUserOutputReference extends cdktf.ComplexObject {
       this._replicationUser = undefined;
       this._username = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1435,11 +1435,11 @@ export class MqBrokerUserOutputReference extends cdktf.ComplexObject {
   }
 
   // console_access - computed: false, optional: true, required: false
-  private _consoleAccess?: boolean | cdktf.IResolvable; 
+  private _consoleAccess?: boolean | cdktn.IResolvable; 
   public get consoleAccess() {
     return this.getBooleanAttribute('console_access');
   }
-  public set consoleAccess(value: boolean | cdktf.IResolvable) {
+  public set consoleAccess(value: boolean | cdktn.IResolvable) {
     this._consoleAccess = value;
   }
   public resetConsoleAccess() {
@@ -1453,7 +1453,7 @@ export class MqBrokerUserOutputReference extends cdktf.ComplexObject {
   // groups - computed: false, optional: true, required: false
   private _groups?: string[]; 
   public get groups() {
-    return cdktf.Fn.tolist(this.getListAttribute('groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('groups'));
   }
   public set groups(value: string[]) {
     this._groups = value;
@@ -1480,11 +1480,11 @@ export class MqBrokerUserOutputReference extends cdktf.ComplexObject {
   }
 
   // replication_user - computed: false, optional: true, required: false
-  private _replicationUser?: boolean | cdktf.IResolvable; 
+  private _replicationUser?: boolean | cdktn.IResolvable; 
   public get replicationUser() {
     return this.getBooleanAttribute('replication_user');
   }
-  public set replicationUser(value: boolean | cdktf.IResolvable) {
+  public set replicationUser(value: boolean | cdktn.IResolvable) {
     this._replicationUser = value;
   }
   public resetReplicationUser() {
@@ -1509,15 +1509,15 @@ export class MqBrokerUserOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class MqBrokerUserList extends cdktf.ComplexList {
-  public internalValue? : MqBrokerUser[] | cdktf.IResolvable
+export class MqBrokerUserList extends cdktn.ComplexList {
+  public internalValue? : MqBrokerUser[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1532,7 +1532,7 @@ export class MqBrokerUserList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker aws_mq_broker}
 */
-export class MqBroker extends cdktf.TerraformResource {
+export class MqBroker extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1543,14 +1543,14 @@ export class MqBroker extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MqBroker resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MqBroker resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MqBroker to import
   * @param importFromId The id of the existing MqBroker that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mq_broker#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MqBroker to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_mq_broker", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_mq_broker", importId: importFromId, provider });
       }
 
   // ===========
@@ -1612,11 +1612,11 @@ export class MqBroker extends cdktf.TerraformResource {
   // ==========
 
   // apply_immediately - computed: false, optional: true, required: false
-  private _applyImmediately?: boolean | cdktf.IResolvable; 
+  private _applyImmediately?: boolean | cdktn.IResolvable; 
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean | cdktf.IResolvable) {
+  public set applyImmediately(value: boolean | cdktn.IResolvable) {
     this._applyImmediately = value;
   }
   public resetApplyImmediately() {
@@ -1649,11 +1649,11 @@ export class MqBroker extends cdktf.TerraformResource {
   }
 
   // auto_minor_version_upgrade - computed: false, optional: true, required: false
-  private _autoMinorVersionUpgrade?: boolean | cdktf.IResolvable; 
+  private _autoMinorVersionUpgrade?: boolean | cdktn.IResolvable; 
   public get autoMinorVersionUpgrade() {
     return this.getBooleanAttribute('auto_minor_version_upgrade');
   }
-  public set autoMinorVersionUpgrade(value: boolean | cdktf.IResolvable) {
+  public set autoMinorVersionUpgrade(value: boolean | cdktn.IResolvable) {
     this._autoMinorVersionUpgrade = value;
   }
   public resetAutoMinorVersionUpgrade() {
@@ -1792,11 +1792,11 @@ export class MqBroker extends cdktf.TerraformResource {
   }
 
   // publicly_accessible - computed: false, optional: true, required: false
-  private _publiclyAccessible?: boolean | cdktf.IResolvable; 
+  private _publiclyAccessible?: boolean | cdktn.IResolvable; 
   public get publiclyAccessible() {
     return this.getBooleanAttribute('publicly_accessible');
   }
-  public set publiclyAccessible(value: boolean | cdktf.IResolvable) {
+  public set publiclyAccessible(value: boolean | cdktn.IResolvable) {
     this._publiclyAccessible = value;
   }
   public resetPubliclyAccessible() {
@@ -1826,7 +1826,7 @@ export class MqBroker extends cdktf.TerraformResource {
   // security_groups - computed: false, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -1858,7 +1858,7 @@ export class MqBroker extends cdktf.TerraformResource {
   // subnet_ids - computed: true, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -2004,7 +2004,7 @@ export class MqBroker extends cdktf.TerraformResource {
   public get user() {
     return this._user;
   }
-  public putUser(value: MqBrokerUser[] | cdktf.IResolvable) {
+  public putUser(value: MqBrokerUser[] | cdktn.IResolvable) {
     this._user.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2018,140 +2018,140 @@ export class MqBroker extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
-      authentication_strategy: cdktf.stringToTerraform(this._authenticationStrategy),
-      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
-      broker_name: cdktf.stringToTerraform(this._brokerName),
-      data_replication_mode: cdktf.stringToTerraform(this._dataReplicationMode),
-      data_replication_primary_broker_arn: cdktf.stringToTerraform(this._dataReplicationPrimaryBrokerArn),
-      deployment_mode: cdktf.stringToTerraform(this._deploymentMode),
-      engine_type: cdktf.stringToTerraform(this._engineType),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      host_instance_type: cdktf.stringToTerraform(this._hostInstanceType),
-      id: cdktf.stringToTerraform(this._id),
-      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
-      region: cdktf.stringToTerraform(this._region),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
-      storage_type: cdktf.stringToTerraform(this._storageType),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      apply_immediately: cdktn.booleanToTerraform(this._applyImmediately),
+      authentication_strategy: cdktn.stringToTerraform(this._authenticationStrategy),
+      auto_minor_version_upgrade: cdktn.booleanToTerraform(this._autoMinorVersionUpgrade),
+      broker_name: cdktn.stringToTerraform(this._brokerName),
+      data_replication_mode: cdktn.stringToTerraform(this._dataReplicationMode),
+      data_replication_primary_broker_arn: cdktn.stringToTerraform(this._dataReplicationPrimaryBrokerArn),
+      deployment_mode: cdktn.stringToTerraform(this._deploymentMode),
+      engine_type: cdktn.stringToTerraform(this._engineType),
+      engine_version: cdktn.stringToTerraform(this._engineVersion),
+      host_instance_type: cdktn.stringToTerraform(this._hostInstanceType),
+      id: cdktn.stringToTerraform(this._id),
+      publicly_accessible: cdktn.booleanToTerraform(this._publiclyAccessible),
+      region: cdktn.stringToTerraform(this._region),
+      security_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroups),
+      storage_type: cdktn.stringToTerraform(this._storageType),
+      subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnetIds),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       configuration: mqBrokerConfigurationToTerraform(this._configuration.internalValue),
       encryption_options: mqBrokerEncryptionOptionsToTerraform(this._encryptionOptions.internalValue),
       ldap_server_metadata: mqBrokerLdapServerMetadataToTerraform(this._ldapServerMetadata.internalValue),
       logs: mqBrokerLogsToTerraform(this._logs.internalValue),
       maintenance_window_start_time: mqBrokerMaintenanceWindowStartTimeToTerraform(this._maintenanceWindowStartTime.internalValue),
       timeouts: mqBrokerTimeoutsToTerraform(this._timeouts.internalValue),
-      user: cdktf.listMapper(mqBrokerUserToTerraform, true)(this._user.internalValue),
+      user: cdktn.listMapper(mqBrokerUserToTerraform, true)(this._user.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       apply_immediately: {
-        value: cdktf.booleanToHclTerraform(this._applyImmediately),
+        value: cdktn.booleanToHclTerraform(this._applyImmediately),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       authentication_strategy: {
-        value: cdktf.stringToHclTerraform(this._authenticationStrategy),
+        value: cdktn.stringToHclTerraform(this._authenticationStrategy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auto_minor_version_upgrade: {
-        value: cdktf.booleanToHclTerraform(this._autoMinorVersionUpgrade),
+        value: cdktn.booleanToHclTerraform(this._autoMinorVersionUpgrade),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       broker_name: {
-        value: cdktf.stringToHclTerraform(this._brokerName),
+        value: cdktn.stringToHclTerraform(this._brokerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_replication_mode: {
-        value: cdktf.stringToHclTerraform(this._dataReplicationMode),
+        value: cdktn.stringToHclTerraform(this._dataReplicationMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_replication_primary_broker_arn: {
-        value: cdktf.stringToHclTerraform(this._dataReplicationPrimaryBrokerArn),
+        value: cdktn.stringToHclTerraform(this._dataReplicationPrimaryBrokerArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deployment_mode: {
-        value: cdktf.stringToHclTerraform(this._deploymentMode),
+        value: cdktn.stringToHclTerraform(this._deploymentMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_type: {
-        value: cdktf.stringToHclTerraform(this._engineType),
+        value: cdktn.stringToHclTerraform(this._engineType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_version: {
-        value: cdktf.stringToHclTerraform(this._engineVersion),
+        value: cdktn.stringToHclTerraform(this._engineVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host_instance_type: {
-        value: cdktf.stringToHclTerraform(this._hostInstanceType),
+        value: cdktn.stringToHclTerraform(this._hostInstanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publicly_accessible: {
-        value: cdktf.booleanToHclTerraform(this._publiclyAccessible),
+        value: cdktn.booleanToHclTerraform(this._publiclyAccessible),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroups),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       storage_type: {
-        value: cdktf.stringToHclTerraform(this._storageType),
+        value: cdktn.stringToHclTerraform(this._storageType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnetIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -2193,7 +2193,7 @@ export class MqBroker extends cdktf.TerraformResource {
         storageClassType: "MqBrokerTimeouts",
       },
       user: {
-        value: cdktf.listMapperHcl(mqBrokerUserToHclTerraform, true)(this._user.internalValue),
+        value: cdktn.listMapperHcl(mqBrokerUserToHclTerraform, true)(this._user.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "MqBrokerUserList",

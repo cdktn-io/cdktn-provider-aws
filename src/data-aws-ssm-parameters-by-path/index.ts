@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsSsmParametersByPathConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSsmParametersByPathConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssm_parameters_by_path#id DataAwsSsmParametersByPath#id}
   *
@@ -26,7 +26,7 @@ export interface DataAwsSsmParametersByPathConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssm_parameters_by_path#recursive DataAwsSsmParametersByPath#recursive}
   */
-  readonly recursive?: boolean | cdktf.IResolvable;
+  readonly recursive?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -36,13 +36,13 @@ export interface DataAwsSsmParametersByPathConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssm_parameters_by_path#with_decryption DataAwsSsmParametersByPath#with_decryption}
   */
-  readonly withDecryption?: boolean | cdktf.IResolvable;
+  readonly withDecryption?: boolean | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path}
 */
-export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
+export class DataAwsSsmParametersByPath extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsSsmParametersByPath resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsSsmParametersByPath resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSsmParametersByPath to import
   * @param importFromId The id of the existing DataAwsSsmParametersByPath that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssm_parameters_by_path#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSsmParametersByPath to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_parameters_by_path", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_parameters_by_path", importId: importFromId, provider });
       }
 
   // ===========
@@ -141,11 +141,11 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
   }
 
   // recursive - computed: false, optional: true, required: false
-  private _recursive?: boolean | cdktf.IResolvable; 
+  private _recursive?: boolean | cdktn.IResolvable; 
   public get recursive() {
     return this.getBooleanAttribute('recursive');
   }
-  public set recursive(value: boolean | cdktf.IResolvable) {
+  public set recursive(value: boolean | cdktn.IResolvable) {
     this._recursive = value;
   }
   public resetRecursive() {
@@ -183,11 +183,11 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
   }
 
   // with_decryption - computed: false, optional: true, required: false
-  private _withDecryption?: boolean | cdktf.IResolvable; 
+  private _withDecryption?: boolean | cdktn.IResolvable; 
   public get withDecryption() {
     return this.getBooleanAttribute('with_decryption');
   }
-  public set withDecryption(value: boolean | cdktf.IResolvable) {
+  public set withDecryption(value: boolean | cdktn.IResolvable) {
     this._withDecryption = value;
   }
   public resetWithDecryption() {
@@ -204,42 +204,42 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      path: cdktf.stringToTerraform(this._path),
-      recursive: cdktf.booleanToTerraform(this._recursive),
-      region: cdktf.stringToTerraform(this._region),
-      with_decryption: cdktf.booleanToTerraform(this._withDecryption),
+      id: cdktn.stringToTerraform(this._id),
+      path: cdktn.stringToTerraform(this._path),
+      recursive: cdktn.booleanToTerraform(this._recursive),
+      region: cdktn.stringToTerraform(this._region),
+      with_decryption: cdktn.booleanToTerraform(this._withDecryption),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recursive: {
-        value: cdktf.booleanToHclTerraform(this._recursive),
+        value: cdktn.booleanToHclTerraform(this._recursive),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       with_decryption: {
-        value: cdktf.booleanToHclTerraform(this._withDecryption),
+        value: cdktn.booleanToHclTerraform(this._withDecryption),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

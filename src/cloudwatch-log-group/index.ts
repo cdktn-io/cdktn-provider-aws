@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudwatchLogGroupConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchLogGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_group#deletion_protection_enabled CloudwatchLogGroup#deletion_protection_enabled}
   */
-  readonly deletionProtectionEnabled?: boolean | cdktf.IResolvable;
+  readonly deletionProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_group#id CloudwatchLogGroup#id}
   *
@@ -52,7 +52,7 @@ export interface CloudwatchLogGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_group#skip_destroy CloudwatchLogGroup#skip_destroy}
   */
-  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  readonly skipDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_group#tags CloudwatchLogGroup#tags}
   */
@@ -66,7 +66,7 @@ export interface CloudwatchLogGroupConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_group aws_cloudwatch_log_group}
 */
-export class CloudwatchLogGroup extends cdktf.TerraformResource {
+export class CloudwatchLogGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudwatchLogGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudwatchLogGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchLogGroup to import
   * @param importFromId The id of the existing CloudwatchLogGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchLogGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -137,11 +137,11 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
   }
 
   // deletion_protection_enabled - computed: true, optional: true, required: false
-  private _deletionProtectionEnabled?: boolean | cdktf.IResolvable; 
+  private _deletionProtectionEnabled?: boolean | cdktn.IResolvable; 
   public get deletionProtectionEnabled() {
     return this.getBooleanAttribute('deletion_protection_enabled');
   }
-  public set deletionProtectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set deletionProtectionEnabled(value: boolean | cdktn.IResolvable) {
     this._deletionProtectionEnabled = value;
   }
   public resetDeletionProtectionEnabled() {
@@ -265,11 +265,11 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
   }
 
   // skip_destroy - computed: false, optional: true, required: false
-  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  private _skipDestroy?: boolean | cdktn.IResolvable; 
   public get skipDestroy() {
     return this.getBooleanAttribute('skip_destroy');
   }
-  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+  public set skipDestroy(value: boolean | cdktn.IResolvable) {
     this._skipDestroy = value;
   }
   public resetSkipDestroy() {
@@ -318,84 +318,84 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_protection_enabled: cdktf.booleanToTerraform(this._deletionProtectionEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      log_group_class: cdktf.stringToTerraform(this._logGroupClass),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      region: cdktf.stringToTerraform(this._region),
-      retention_in_days: cdktf.numberToTerraform(this._retentionInDays),
-      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      deletion_protection_enabled: cdktn.booleanToTerraform(this._deletionProtectionEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      log_group_class: cdktn.stringToTerraform(this._logGroupClass),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      region: cdktn.stringToTerraform(this._region),
+      retention_in_days: cdktn.numberToTerraform(this._retentionInDays),
+      skip_destroy: cdktn.booleanToTerraform(this._skipDestroy),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deletion_protection_enabled: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtectionEnabled),
+        value: cdktn.booleanToHclTerraform(this._deletionProtectionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_group_class: {
-        value: cdktf.stringToHclTerraform(this._logGroupClass),
+        value: cdktn.stringToHclTerraform(this._logGroupClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_in_days: {
-        value: cdktf.numberToHclTerraform(this._retentionInDays),
+        value: cdktn.numberToHclTerraform(this._retentionInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       skip_destroy: {
-        value: cdktf.booleanToHclTerraform(this._skipDestroy),
+        value: cdktn.booleanToHclTerraform(this._skipDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

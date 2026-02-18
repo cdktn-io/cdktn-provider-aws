@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TransferProfileConfig extends cdktf.TerraformMetaArguments {
+export interface TransferProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_profile#as2_id TransferProfile#as2_id}
   */
@@ -50,7 +50,7 @@ export interface TransferProfileConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_profile aws_transfer_profile}
 */
-export class TransferProfile extends cdktf.TerraformResource {
+export class TransferProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class TransferProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TransferProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TransferProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransferProfile to import
   * @param importFromId The id of the existing TransferProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransferProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -132,7 +132,7 @@ export class TransferProfile extends cdktf.TerraformResource {
   // certificate_ids - computed: false, optional: true, required: false
   private _certificateIds?: string[]; 
   public get certificateIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('certificate_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('certificate_ids'));
   }
   public set certificateIds(value: string[]) {
     this._certificateIds = value;
@@ -233,56 +233,56 @@ export class TransferProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      as2_id: cdktf.stringToTerraform(this._as2Id),
-      certificate_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._certificateIds),
-      id: cdktf.stringToTerraform(this._id),
-      profile_type: cdktf.stringToTerraform(this._profileType),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      as2_id: cdktn.stringToTerraform(this._as2Id),
+      certificate_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._certificateIds),
+      id: cdktn.stringToTerraform(this._id),
+      profile_type: cdktn.stringToTerraform(this._profileType),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       as2_id: {
-        value: cdktf.stringToHclTerraform(this._as2Id),
+        value: cdktn.stringToHclTerraform(this._as2Id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._certificateIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._certificateIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       profile_type: {
-        value: cdktf.stringToHclTerraform(this._profileType),
+        value: cdktn.stringToHclTerraform(this._profileType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

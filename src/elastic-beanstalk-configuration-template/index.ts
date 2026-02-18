@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ElasticBeanstalkConfigurationTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface ElasticBeanstalkConfigurationTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastic_beanstalk_configuration_template#application ElasticBeanstalkConfigurationTemplate#application}
   */
@@ -50,7 +50,7 @@ export interface ElasticBeanstalkConfigurationTemplateConfig extends cdktf.Terra
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastic_beanstalk_configuration_template#setting ElasticBeanstalkConfigurationTemplate#setting}
   */
-  readonly setting?: ElasticBeanstalkConfigurationTemplateSetting[] | cdktf.IResolvable;
+  readonly setting?: ElasticBeanstalkConfigurationTemplateSetting[] | cdktn.IResolvable;
 }
 export interface ElasticBeanstalkConfigurationTemplateSetting {
   /**
@@ -71,46 +71,46 @@ export interface ElasticBeanstalkConfigurationTemplateSetting {
   readonly value: string;
 }
 
-export function elasticBeanstalkConfigurationTemplateSettingToTerraform(struct?: ElasticBeanstalkConfigurationTemplateSetting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticBeanstalkConfigurationTemplateSettingToTerraform(struct?: ElasticBeanstalkConfigurationTemplateSetting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    resource: cdktf.stringToTerraform(struct!.resource),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    resource: cdktn.stringToTerraform(struct!.resource),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function elasticBeanstalkConfigurationTemplateSettingToHclTerraform(struct?: ElasticBeanstalkConfigurationTemplateSetting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticBeanstalkConfigurationTemplateSettingToHclTerraform(struct?: ElasticBeanstalkConfigurationTemplateSetting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -121,9 +121,9 @@ export function elasticBeanstalkConfigurationTemplateSettingToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticBeanstalkConfigurationTemplateSettingOutputReference extends cdktf.ComplexObject {
+export class ElasticBeanstalkConfigurationTemplateSettingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -131,11 +131,11 @@ export class ElasticBeanstalkConfigurationTemplateSettingOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ElasticBeanstalkConfigurationTemplateSetting | cdktf.IResolvable | undefined {
+  public get internalValue(): ElasticBeanstalkConfigurationTemplateSetting | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -160,7 +160,7 @@ export class ElasticBeanstalkConfigurationTemplateSettingOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElasticBeanstalkConfigurationTemplateSetting | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElasticBeanstalkConfigurationTemplateSetting | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class ElasticBeanstalkConfigurationTemplateSettingOutputReference extends
       this._resource = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -239,15 +239,15 @@ export class ElasticBeanstalkConfigurationTemplateSettingOutputReference extends
   }
 }
 
-export class ElasticBeanstalkConfigurationTemplateSettingList extends cdktf.ComplexList {
-  public internalValue? : ElasticBeanstalkConfigurationTemplateSetting[] | cdktf.IResolvable
+export class ElasticBeanstalkConfigurationTemplateSettingList extends cdktn.ComplexList {
+  public internalValue? : ElasticBeanstalkConfigurationTemplateSetting[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -262,7 +262,7 @@ export class ElasticBeanstalkConfigurationTemplateSettingList extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastic_beanstalk_configuration_template aws_elastic_beanstalk_configuration_template}
 */
-export class ElasticBeanstalkConfigurationTemplate extends cdktf.TerraformResource {
+export class ElasticBeanstalkConfigurationTemplate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -273,14 +273,14 @@ export class ElasticBeanstalkConfigurationTemplate extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ElasticBeanstalkConfigurationTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ElasticBeanstalkConfigurationTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElasticBeanstalkConfigurationTemplate to import
   * @param importFromId The id of the existing ElasticBeanstalkConfigurationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastic_beanstalk_configuration_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElasticBeanstalkConfigurationTemplate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_elastic_beanstalk_configuration_template", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_elastic_beanstalk_configuration_template", importId: importFromId, provider });
       }
 
   // ===========
@@ -435,7 +435,7 @@ export class ElasticBeanstalkConfigurationTemplate extends cdktf.TerraformResour
   public get setting() {
     return this._setting;
   }
-  public putSetting(value: ElasticBeanstalkConfigurationTemplateSetting[] | cdktf.IResolvable) {
+  public putSetting(value: ElasticBeanstalkConfigurationTemplateSetting[] | cdktn.IResolvable) {
     this._setting.internalValue = value;
   }
   public resetSetting() {
@@ -452,63 +452,63 @@ export class ElasticBeanstalkConfigurationTemplate extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application: cdktf.stringToTerraform(this._application),
-      description: cdktf.stringToTerraform(this._description),
-      environment_id: cdktf.stringToTerraform(this._environmentId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      solution_stack_name: cdktf.stringToTerraform(this._solutionStackName),
-      setting: cdktf.listMapper(elasticBeanstalkConfigurationTemplateSettingToTerraform, true)(this._setting.internalValue),
+      application: cdktn.stringToTerraform(this._application),
+      description: cdktn.stringToTerraform(this._description),
+      environment_id: cdktn.stringToTerraform(this._environmentId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      solution_stack_name: cdktn.stringToTerraform(this._solutionStackName),
+      setting: cdktn.listMapper(elasticBeanstalkConfigurationTemplateSettingToTerraform, true)(this._setting.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application: {
-        value: cdktf.stringToHclTerraform(this._application),
+        value: cdktn.stringToHclTerraform(this._application),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       environment_id: {
-        value: cdktf.stringToHclTerraform(this._environmentId),
+        value: cdktn.stringToHclTerraform(this._environmentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       solution_stack_name: {
-        value: cdktf.stringToHclTerraform(this._solutionStackName),
+        value: cdktn.stringToHclTerraform(this._solutionStackName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       setting: {
-        value: cdktf.listMapperHcl(elasticBeanstalkConfigurationTemplateSettingToHclTerraform, true)(this._setting.internalValue),
+        value: cdktn.listMapperHcl(elasticBeanstalkConfigurationTemplateSettingToHclTerraform, true)(this._setting.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ElasticBeanstalkConfigurationTemplateSettingList",

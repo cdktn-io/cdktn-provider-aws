@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamOpenidConnectProviderConfig extends cdktf.TerraformMetaArguments {
+export interface IamOpenidConnectProviderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_openid_connect_provider#client_id_list IamOpenidConnectProvider#client_id_list}
   */
@@ -44,7 +44,7 @@ export interface IamOpenidConnectProviderConfig extends cdktf.TerraformMetaArgum
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_openid_connect_provider aws_iam_openid_connect_provider}
 */
-export class IamOpenidConnectProvider extends cdktf.TerraformResource {
+export class IamOpenidConnectProvider extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -55,14 +55,14 @@ export class IamOpenidConnectProvider extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamOpenidConnectProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamOpenidConnectProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamOpenidConnectProvider to import
   * @param importFromId The id of the existing IamOpenidConnectProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_openid_connect_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamOpenidConnectProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_openid_connect_provider", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_openid_connect_provider", importId: importFromId, provider });
       }
 
   // ===========
@@ -112,7 +112,7 @@ export class IamOpenidConnectProvider extends cdktf.TerraformResource {
   // client_id_list - computed: false, optional: false, required: true
   private _clientIdList?: string[]; 
   public get clientIdList() {
-    return cdktf.Fn.tolist(this.getListAttribute('client_id_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('client_id_list'));
   }
   public set clientIdList(value: string[]) {
     this._clientIdList = value;
@@ -205,49 +205,49 @@ export class IamOpenidConnectProvider extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_id_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._clientIdList),
-      id: cdktf.stringToTerraform(this._id),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      thumbprint_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._thumbprintList),
-      url: cdktf.stringToTerraform(this._url),
+      client_id_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._clientIdList),
+      id: cdktn.stringToTerraform(this._id),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      thumbprint_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._thumbprintList),
+      url: cdktn.stringToTerraform(this._url),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       client_id_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._clientIdList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._clientIdList),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       thumbprint_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._thumbprintList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._thumbprintList),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       url: {
-        value: cdktf.stringToHclTerraform(this._url),
+        value: cdktn.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

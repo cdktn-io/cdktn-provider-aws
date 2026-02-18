@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsIpRangesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsIpRangesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ip_ranges#id DataAwsIpRanges#id}
   *
@@ -36,7 +36,7 @@ export interface DataAwsIpRangesConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ip_ranges aws_ip_ranges}
 */
-export class DataAwsIpRanges extends cdktf.TerraformDataSource {
+export class DataAwsIpRanges extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class DataAwsIpRanges extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsIpRanges resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsIpRanges resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsIpRanges to import
   * @param importFromId The id of the existing DataAwsIpRanges that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ip_ranges#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsIpRanges to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ip_ranges", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ip_ranges", importId: importFromId, provider });
       }
 
   // ===========
@@ -128,7 +128,7 @@ export class DataAwsIpRanges extends cdktf.TerraformDataSource {
   // regions - computed: false, optional: true, required: false
   private _regions?: string[]; 
   public get regions() {
-    return cdktf.Fn.tolist(this.getListAttribute('regions'));
+    return cdktn.Fn.tolist(this.getListAttribute('regions'));
   }
   public set regions(value: string[]) {
     this._regions = value;
@@ -144,7 +144,7 @@ export class DataAwsIpRanges extends cdktf.TerraformDataSource {
   // services - computed: false, optional: false, required: true
   private _services?: string[]; 
   public get services() {
-    return cdktf.Fn.tolist(this.getListAttribute('services'));
+    return cdktn.Fn.tolist(this.getListAttribute('services'));
   }
   public set services(value: string[]) {
     this._services = value;
@@ -181,35 +181,35 @@ export class DataAwsIpRanges extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._regions),
-      services: cdktf.listMapper(cdktf.stringToTerraform, false)(this._services),
-      url: cdktf.stringToTerraform(this._url),
+      id: cdktn.stringToTerraform(this._id),
+      regions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._regions),
+      services: cdktn.listMapper(cdktn.stringToTerraform, false)(this._services),
+      url: cdktn.stringToTerraform(this._url),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       regions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._regions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._regions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       services: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._services),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._services),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       url: {
-        value: cdktf.stringToHclTerraform(this._url),
+        value: cdktn.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

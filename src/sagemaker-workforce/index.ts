@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SagemakerWorkforceConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerWorkforceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_workforce#id SagemakerWorkforce#id}
   *
@@ -66,31 +66,31 @@ export interface SagemakerWorkforceCognitoConfig {
 }
 
 export function sagemakerWorkforceCognitoConfigToTerraform(struct?: SagemakerWorkforceCognitoConfigOutputReference | SagemakerWorkforceCognitoConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    user_pool: cdktf.stringToTerraform(struct!.userPool),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    user_pool: cdktn.stringToTerraform(struct!.userPool),
   }
 }
 
 
 export function sagemakerWorkforceCognitoConfigToHclTerraform(struct?: SagemakerWorkforceCognitoConfigOutputReference | SagemakerWorkforceCognitoConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_pool: {
-      value: cdktf.stringToHclTerraform(struct!.userPool),
+      value: cdktn.stringToHclTerraform(struct!.userPool),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -101,14 +101,14 @@ export function sagemakerWorkforceCognitoConfigToHclTerraform(struct?: Sagemaker
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerWorkforceCognitoConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerWorkforceCognitoConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -209,87 +209,87 @@ export interface SagemakerWorkforceOidcConfig {
 }
 
 export function sagemakerWorkforceOidcConfigToTerraform(struct?: SagemakerWorkforceOidcConfigOutputReference | SagemakerWorkforceOidcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authentication_request_extra_params: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.authenticationRequestExtraParams),
-    authorization_endpoint: cdktf.stringToTerraform(struct!.authorizationEndpoint),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
-    jwks_uri: cdktf.stringToTerraform(struct!.jwksUri),
-    logout_endpoint: cdktf.stringToTerraform(struct!.logoutEndpoint),
-    scope: cdktf.stringToTerraform(struct!.scope),
-    token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
-    user_info_endpoint: cdktf.stringToTerraform(struct!.userInfoEndpoint),
+    authentication_request_extra_params: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.authenticationRequestExtraParams),
+    authorization_endpoint: cdktn.stringToTerraform(struct!.authorizationEndpoint),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
+    jwks_uri: cdktn.stringToTerraform(struct!.jwksUri),
+    logout_endpoint: cdktn.stringToTerraform(struct!.logoutEndpoint),
+    scope: cdktn.stringToTerraform(struct!.scope),
+    token_endpoint: cdktn.stringToTerraform(struct!.tokenEndpoint),
+    user_info_endpoint: cdktn.stringToTerraform(struct!.userInfoEndpoint),
   }
 }
 
 
 export function sagemakerWorkforceOidcConfigToHclTerraform(struct?: SagemakerWorkforceOidcConfigOutputReference | SagemakerWorkforceOidcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authentication_request_extra_params: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.authenticationRequestExtraParams),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.authenticationRequestExtraParams),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     authorization_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.authorizationEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.authorizationEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jwks_uri: {
-      value: cdktf.stringToHclTerraform(struct!.jwksUri),
+      value: cdktn.stringToHclTerraform(struct!.jwksUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     logout_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.logoutEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.logoutEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.tokenEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.tokenEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_info_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.userInfoEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.userInfoEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -300,14 +300,14 @@ export function sagemakerWorkforceOidcConfigToHclTerraform(struct?: SagemakerWor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerWorkforceOidcConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerWorkforceOidcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -530,24 +530,24 @@ export interface SagemakerWorkforceSourceIpConfig {
 }
 
 export function sagemakerWorkforceSourceIpConfigToTerraform(struct?: SagemakerWorkforceSourceIpConfigOutputReference | SagemakerWorkforceSourceIpConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cidrs),
+    cidrs: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cidrs),
   }
 }
 
 
 export function sagemakerWorkforceSourceIpConfigToHclTerraform(struct?: SagemakerWorkforceSourceIpConfigOutputReference | SagemakerWorkforceSourceIpConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cidrs: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cidrs),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.cidrs),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -558,14 +558,14 @@ export function sagemakerWorkforceSourceIpConfigToHclTerraform(struct?: Sagemake
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerWorkforceSourceIpConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerWorkforceSourceIpConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -593,7 +593,7 @@ export class SagemakerWorkforceSourceIpConfigOutputReference extends cdktf.Compl
   // cidrs - computed: false, optional: false, required: true
   private _cidrs?: string[]; 
   public get cidrs() {
-    return cdktf.Fn.tolist(this.getListAttribute('cidrs'));
+    return cdktn.Fn.tolist(this.getListAttribute('cidrs'));
   }
   public set cidrs(value: string[]) {
     this._cidrs = value;
@@ -619,38 +619,38 @@ export interface SagemakerWorkforceWorkforceVpcConfig {
 }
 
 export function sagemakerWorkforceWorkforceVpcConfigToTerraform(struct?: SagemakerWorkforceWorkforceVpcConfigOutputReference | SagemakerWorkforceWorkforceVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
-    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnets),
+    vpc_id: cdktn.stringToTerraform(struct!.vpcId),
   }
 }
 
 
 export function sagemakerWorkforceWorkforceVpcConfigToHclTerraform(struct?: SagemakerWorkforceWorkforceVpcConfigOutputReference | SagemakerWorkforceWorkforceVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnets: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnets),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     vpc_id: {
-      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      value: cdktn.stringToHclTerraform(struct!.vpcId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -661,14 +661,14 @@ export function sagemakerWorkforceWorkforceVpcConfigToHclTerraform(struct?: Sage
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerWorkforceWorkforceVpcConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerWorkforceWorkforceVpcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -708,7 +708,7 @@ export class SagemakerWorkforceWorkforceVpcConfigOutputReference extends cdktf.C
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -724,7 +724,7 @@ export class SagemakerWorkforceWorkforceVpcConfigOutputReference extends cdktf.C
   // subnets - computed: false, optional: true, required: false
   private _subnets?: string[]; 
   public get subnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -762,7 +762,7 @@ export class SagemakerWorkforceWorkforceVpcConfigOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_workforce aws_sagemaker_workforce}
 */
-export class SagemakerWorkforce extends cdktf.TerraformResource {
+export class SagemakerWorkforce extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -773,14 +773,14 @@ export class SagemakerWorkforce extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SagemakerWorkforce resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SagemakerWorkforce resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerWorkforce to import
   * @param importFromId The id of the existing SagemakerWorkforce that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_workforce#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerWorkforce to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_workforce", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_workforce", importId: importFromId, provider });
       }
 
   // ===========
@@ -948,9 +948,9 @@ export class SagemakerWorkforce extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      workforce_name: cdktf.stringToTerraform(this._workforceName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      workforce_name: cdktn.stringToTerraform(this._workforceName),
       cognito_config: sagemakerWorkforceCognitoConfigToTerraform(this._cognitoConfig.internalValue),
       oidc_config: sagemakerWorkforceOidcConfigToTerraform(this._oidcConfig.internalValue),
       source_ip_config: sagemakerWorkforceSourceIpConfigToTerraform(this._sourceIpConfig.internalValue),
@@ -961,19 +961,19 @@ export class SagemakerWorkforce extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workforce_name: {
-        value: cdktf.stringToHclTerraform(this._workforceName),
+        value: cdktn.stringToHclTerraform(this._workforceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

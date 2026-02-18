@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NotificationsManagedNotificationAccountContactAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface NotificationsManagedNotificationAccountContactAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/notifications_managed_notification_account_contact_association#contact_identifier NotificationsManagedNotificationAccountContactAssociation#contact_identifier}
   */
@@ -25,7 +25,7 @@ export interface NotificationsManagedNotificationAccountContactAssociationConfig
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/notifications_managed_notification_account_contact_association aws_notifications_managed_notification_account_contact_association}
 */
-export class NotificationsManagedNotificationAccountContactAssociation extends cdktf.TerraformResource {
+export class NotificationsManagedNotificationAccountContactAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -36,14 +36,14 @@ export class NotificationsManagedNotificationAccountContactAssociation extends c
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NotificationsManagedNotificationAccountContactAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NotificationsManagedNotificationAccountContactAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationsManagedNotificationAccountContactAssociation to import
   * @param importFromId The id of the existing NotificationsManagedNotificationAccountContactAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/notifications_managed_notification_account_contact_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationsManagedNotificationAccountContactAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_notifications_managed_notification_account_contact_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_notifications_managed_notification_account_contact_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -113,21 +113,21 @@ export class NotificationsManagedNotificationAccountContactAssociation extends c
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      contact_identifier: cdktf.stringToTerraform(this._contactIdentifier),
-      managed_notification_configuration_arn: cdktf.stringToTerraform(this._managedNotificationConfigurationArn),
+      contact_identifier: cdktn.stringToTerraform(this._contactIdentifier),
+      managed_notification_configuration_arn: cdktn.stringToTerraform(this._managedNotificationConfigurationArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       contact_identifier: {
-        value: cdktf.stringToHclTerraform(this._contactIdentifier),
+        value: cdktn.stringToHclTerraform(this._contactIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_notification_configuration_arn: {
-        value: cdktf.stringToHclTerraform(this._managedNotificationConfigurationArn),
+        value: cdktn.stringToHclTerraform(this._managedNotificationConfigurationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

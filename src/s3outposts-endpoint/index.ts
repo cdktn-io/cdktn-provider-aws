@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3OutpostsEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface S3OutpostsEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3outposts_endpoint#access_type S3OutpostsEndpoint#access_type}
   */
@@ -50,8 +50,8 @@ export interface S3OutpostsEndpointNetworkInterfaces {
 }
 
 export function s3OutpostsEndpointNetworkInterfacesToTerraform(struct?: S3OutpostsEndpointNetworkInterfaces): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -60,8 +60,8 @@ export function s3OutpostsEndpointNetworkInterfacesToTerraform(struct?: S3Outpos
 
 
 export function s3OutpostsEndpointNetworkInterfacesToHclTerraform(struct?: S3OutpostsEndpointNetworkInterfaces): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -69,7 +69,7 @@ export function s3OutpostsEndpointNetworkInterfacesToHclTerraform(struct?: S3Out
   return attrs;
 }
 
-export class S3OutpostsEndpointNetworkInterfacesOutputReference extends cdktf.ComplexObject {
+export class S3OutpostsEndpointNetworkInterfacesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -78,7 +78,7 @@ export class S3OutpostsEndpointNetworkInterfacesOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -103,14 +103,14 @@ export class S3OutpostsEndpointNetworkInterfacesOutputReference extends cdktf.Co
   }
 }
 
-export class S3OutpostsEndpointNetworkInterfacesList extends cdktf.ComplexList {
+export class S3OutpostsEndpointNetworkInterfacesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -125,7 +125,7 @@ export class S3OutpostsEndpointNetworkInterfacesList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint}
 */
-export class S3OutpostsEndpoint extends cdktf.TerraformResource {
+export class S3OutpostsEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -136,14 +136,14 @@ export class S3OutpostsEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3OutpostsEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3OutpostsEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3OutpostsEndpoint to import
   * @param importFromId The id of the existing S3OutpostsEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3outposts_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3OutpostsEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3outposts_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3outposts_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -316,56 +316,56 @@ export class S3OutpostsEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_type: cdktf.stringToTerraform(this._accessType),
-      customer_owned_ipv4_pool: cdktf.stringToTerraform(this._customerOwnedIpv4Pool),
-      id: cdktf.stringToTerraform(this._id),
-      outpost_id: cdktf.stringToTerraform(this._outpostId),
-      region: cdktf.stringToTerraform(this._region),
-      security_group_id: cdktf.stringToTerraform(this._securityGroupId),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      access_type: cdktn.stringToTerraform(this._accessType),
+      customer_owned_ipv4_pool: cdktn.stringToTerraform(this._customerOwnedIpv4Pool),
+      id: cdktn.stringToTerraform(this._id),
+      outpost_id: cdktn.stringToTerraform(this._outpostId),
+      region: cdktn.stringToTerraform(this._region),
+      security_group_id: cdktn.stringToTerraform(this._securityGroupId),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_type: {
-        value: cdktf.stringToHclTerraform(this._accessType),
+        value: cdktn.stringToHclTerraform(this._accessType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_owned_ipv4_pool: {
-        value: cdktf.stringToHclTerraform(this._customerOwnedIpv4Pool),
+        value: cdktn.stringToHclTerraform(this._customerOwnedIpv4Pool),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       outpost_id: {
-        value: cdktf.stringToHclTerraform(this._outpostId),
+        value: cdktn.stringToHclTerraform(this._outpostId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_id: {
-        value: cdktf.stringToHclTerraform(this._securityGroupId),
+        value: cdktn.stringToHclTerraform(this._securityGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

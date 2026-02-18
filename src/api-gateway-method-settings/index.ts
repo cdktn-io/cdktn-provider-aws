@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiGatewayMethodSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayMethodSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_method_settings#id ApiGatewayMethodSettings#id}
   *
@@ -48,7 +48,7 @@ export interface ApiGatewayMethodSettingsSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_method_settings#cache_data_encrypted ApiGatewayMethodSettings#cache_data_encrypted}
   */
-  readonly cacheDataEncrypted?: boolean | cdktf.IResolvable;
+  readonly cacheDataEncrypted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_method_settings#cache_ttl_in_seconds ApiGatewayMethodSettings#cache_ttl_in_seconds}
   */
@@ -56,11 +56,11 @@ export interface ApiGatewayMethodSettingsSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_method_settings#caching_enabled ApiGatewayMethodSettings#caching_enabled}
   */
-  readonly cachingEnabled?: boolean | cdktf.IResolvable;
+  readonly cachingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_method_settings#data_trace_enabled ApiGatewayMethodSettings#data_trace_enabled}
   */
-  readonly dataTraceEnabled?: boolean | cdktf.IResolvable;
+  readonly dataTraceEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_method_settings#logging_level ApiGatewayMethodSettings#logging_level}
   */
@@ -68,11 +68,11 @@ export interface ApiGatewayMethodSettingsSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_method_settings#metrics_enabled ApiGatewayMethodSettings#metrics_enabled}
   */
-  readonly metricsEnabled?: boolean | cdktf.IResolvable;
+  readonly metricsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_method_settings#require_authorization_for_cache_control ApiGatewayMethodSettings#require_authorization_for_cache_control}
   */
-  readonly requireAuthorizationForCacheControl?: boolean | cdktf.IResolvable;
+  readonly requireAuthorizationForCacheControl?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_method_settings#throttling_burst_limit ApiGatewayMethodSettings#throttling_burst_limit}
   */
@@ -88,87 +88,87 @@ export interface ApiGatewayMethodSettingsSettings {
 }
 
 export function apiGatewayMethodSettingsSettingsToTerraform(struct?: ApiGatewayMethodSettingsSettingsOutputReference | ApiGatewayMethodSettingsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cache_data_encrypted: cdktf.booleanToTerraform(struct!.cacheDataEncrypted),
-    cache_ttl_in_seconds: cdktf.numberToTerraform(struct!.cacheTtlInSeconds),
-    caching_enabled: cdktf.booleanToTerraform(struct!.cachingEnabled),
-    data_trace_enabled: cdktf.booleanToTerraform(struct!.dataTraceEnabled),
-    logging_level: cdktf.stringToTerraform(struct!.loggingLevel),
-    metrics_enabled: cdktf.booleanToTerraform(struct!.metricsEnabled),
-    require_authorization_for_cache_control: cdktf.booleanToTerraform(struct!.requireAuthorizationForCacheControl),
-    throttling_burst_limit: cdktf.numberToTerraform(struct!.throttlingBurstLimit),
-    throttling_rate_limit: cdktf.numberToTerraform(struct!.throttlingRateLimit),
-    unauthorized_cache_control_header_strategy: cdktf.stringToTerraform(struct!.unauthorizedCacheControlHeaderStrategy),
+    cache_data_encrypted: cdktn.booleanToTerraform(struct!.cacheDataEncrypted),
+    cache_ttl_in_seconds: cdktn.numberToTerraform(struct!.cacheTtlInSeconds),
+    caching_enabled: cdktn.booleanToTerraform(struct!.cachingEnabled),
+    data_trace_enabled: cdktn.booleanToTerraform(struct!.dataTraceEnabled),
+    logging_level: cdktn.stringToTerraform(struct!.loggingLevel),
+    metrics_enabled: cdktn.booleanToTerraform(struct!.metricsEnabled),
+    require_authorization_for_cache_control: cdktn.booleanToTerraform(struct!.requireAuthorizationForCacheControl),
+    throttling_burst_limit: cdktn.numberToTerraform(struct!.throttlingBurstLimit),
+    throttling_rate_limit: cdktn.numberToTerraform(struct!.throttlingRateLimit),
+    unauthorized_cache_control_header_strategy: cdktn.stringToTerraform(struct!.unauthorizedCacheControlHeaderStrategy),
   }
 }
 
 
 export function apiGatewayMethodSettingsSettingsToHclTerraform(struct?: ApiGatewayMethodSettingsSettingsOutputReference | ApiGatewayMethodSettingsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cache_data_encrypted: {
-      value: cdktf.booleanToHclTerraform(struct!.cacheDataEncrypted),
+      value: cdktn.booleanToHclTerraform(struct!.cacheDataEncrypted),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     cache_ttl_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.cacheTtlInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.cacheTtlInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     caching_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.cachingEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.cachingEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     data_trace_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.dataTraceEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.dataTraceEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     logging_level: {
-      value: cdktf.stringToHclTerraform(struct!.loggingLevel),
+      value: cdktn.stringToHclTerraform(struct!.loggingLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metrics_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.metricsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.metricsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     require_authorization_for_cache_control: {
-      value: cdktf.booleanToHclTerraform(struct!.requireAuthorizationForCacheControl),
+      value: cdktn.booleanToHclTerraform(struct!.requireAuthorizationForCacheControl),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     throttling_burst_limit: {
-      value: cdktf.numberToHclTerraform(struct!.throttlingBurstLimit),
+      value: cdktn.numberToHclTerraform(struct!.throttlingBurstLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     throttling_rate_limit: {
-      value: cdktf.numberToHclTerraform(struct!.throttlingRateLimit),
+      value: cdktn.numberToHclTerraform(struct!.throttlingRateLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     unauthorized_cache_control_header_strategy: {
-      value: cdktf.stringToHclTerraform(struct!.unauthorizedCacheControlHeaderStrategy),
+      value: cdktn.stringToHclTerraform(struct!.unauthorizedCacheControlHeaderStrategy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -179,14 +179,14 @@ export function apiGatewayMethodSettingsSettingsToHclTerraform(struct?: ApiGatew
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.ComplexObject {
+export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -266,11 +266,11 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
   }
 
   // cache_data_encrypted - computed: true, optional: true, required: false
-  private _cacheDataEncrypted?: boolean | cdktf.IResolvable; 
+  private _cacheDataEncrypted?: boolean | cdktn.IResolvable; 
   public get cacheDataEncrypted() {
     return this.getBooleanAttribute('cache_data_encrypted');
   }
-  public set cacheDataEncrypted(value: boolean | cdktf.IResolvable) {
+  public set cacheDataEncrypted(value: boolean | cdktn.IResolvable) {
     this._cacheDataEncrypted = value;
   }
   public resetCacheDataEncrypted() {
@@ -298,11 +298,11 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
   }
 
   // caching_enabled - computed: true, optional: true, required: false
-  private _cachingEnabled?: boolean | cdktf.IResolvable; 
+  private _cachingEnabled?: boolean | cdktn.IResolvable; 
   public get cachingEnabled() {
     return this.getBooleanAttribute('caching_enabled');
   }
-  public set cachingEnabled(value: boolean | cdktf.IResolvable) {
+  public set cachingEnabled(value: boolean | cdktn.IResolvable) {
     this._cachingEnabled = value;
   }
   public resetCachingEnabled() {
@@ -314,11 +314,11 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
   }
 
   // data_trace_enabled - computed: true, optional: true, required: false
-  private _dataTraceEnabled?: boolean | cdktf.IResolvable; 
+  private _dataTraceEnabled?: boolean | cdktn.IResolvable; 
   public get dataTraceEnabled() {
     return this.getBooleanAttribute('data_trace_enabled');
   }
-  public set dataTraceEnabled(value: boolean | cdktf.IResolvable) {
+  public set dataTraceEnabled(value: boolean | cdktn.IResolvable) {
     this._dataTraceEnabled = value;
   }
   public resetDataTraceEnabled() {
@@ -346,11 +346,11 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
   }
 
   // metrics_enabled - computed: true, optional: true, required: false
-  private _metricsEnabled?: boolean | cdktf.IResolvable; 
+  private _metricsEnabled?: boolean | cdktn.IResolvable; 
   public get metricsEnabled() {
     return this.getBooleanAttribute('metrics_enabled');
   }
-  public set metricsEnabled(value: boolean | cdktf.IResolvable) {
+  public set metricsEnabled(value: boolean | cdktn.IResolvable) {
     this._metricsEnabled = value;
   }
   public resetMetricsEnabled() {
@@ -362,11 +362,11 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
   }
 
   // require_authorization_for_cache_control - computed: true, optional: true, required: false
-  private _requireAuthorizationForCacheControl?: boolean | cdktf.IResolvable; 
+  private _requireAuthorizationForCacheControl?: boolean | cdktn.IResolvable; 
   public get requireAuthorizationForCacheControl() {
     return this.getBooleanAttribute('require_authorization_for_cache_control');
   }
-  public set requireAuthorizationForCacheControl(value: boolean | cdktf.IResolvable) {
+  public set requireAuthorizationForCacheControl(value: boolean | cdktn.IResolvable) {
     this._requireAuthorizationForCacheControl = value;
   }
   public resetRequireAuthorizationForCacheControl() {
@@ -429,7 +429,7 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_method_settings aws_api_gateway_method_settings}
 */
-export class ApiGatewayMethodSettings extends cdktf.TerraformResource {
+export class ApiGatewayMethodSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -440,14 +440,14 @@ export class ApiGatewayMethodSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiGatewayMethodSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiGatewayMethodSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiGatewayMethodSettings to import
   * @param importFromId The id of the existing ApiGatewayMethodSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_method_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiGatewayMethodSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_method_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_method_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -579,11 +579,11 @@ export class ApiGatewayMethodSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      method_path: cdktf.stringToTerraform(this._methodPath),
-      region: cdktf.stringToTerraform(this._region),
-      rest_api_id: cdktf.stringToTerraform(this._restApiId),
-      stage_name: cdktf.stringToTerraform(this._stageName),
+      id: cdktn.stringToTerraform(this._id),
+      method_path: cdktn.stringToTerraform(this._methodPath),
+      region: cdktn.stringToTerraform(this._region),
+      rest_api_id: cdktn.stringToTerraform(this._restApiId),
+      stage_name: cdktn.stringToTerraform(this._stageName),
       settings: apiGatewayMethodSettingsSettingsToTerraform(this._settings.internalValue),
     };
   }
@@ -591,31 +591,31 @@ export class ApiGatewayMethodSettings extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       method_path: {
-        value: cdktf.stringToHclTerraform(this._methodPath),
+        value: cdktn.stringToHclTerraform(this._methodPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rest_api_id: {
-        value: cdktf.stringToHclTerraform(this._restApiId),
+        value: cdktn.stringToHclTerraform(this._restApiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stage_name: {
-        value: cdktf.stringToHclTerraform(this._stageName),
+        value: cdktn.stringToHclTerraform(this._stageName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

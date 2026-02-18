@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QuicksightUserCustomPermissionConfig extends cdktf.TerraformMetaArguments {
+export interface QuicksightUserCustomPermissionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_user_custom_permission#aws_account_id QuicksightUserCustomPermission#aws_account_id}
   */
@@ -39,7 +39,7 @@ export interface QuicksightUserCustomPermissionConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_user_custom_permission aws_quicksight_user_custom_permission}
 */
-export class QuicksightUserCustomPermission extends cdktf.TerraformResource {
+export class QuicksightUserCustomPermission extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -50,14 +50,14 @@ export class QuicksightUserCustomPermission extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QuicksightUserCustomPermission resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QuicksightUserCustomPermission resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightUserCustomPermission to import
   * @param importFromId The id of the existing QuicksightUserCustomPermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_user_custom_permission#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightUserCustomPermission to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_user_custom_permission", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_user_custom_permission", importId: importFromId, provider });
       }
 
   // ===========
@@ -178,42 +178,42 @@ export class QuicksightUserCustomPermission extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      custom_permissions_name: cdktf.stringToTerraform(this._customPermissionsName),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      region: cdktf.stringToTerraform(this._region),
-      user_name: cdktf.stringToTerraform(this._userName),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      custom_permissions_name: cdktn.stringToTerraform(this._customPermissionsName),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      region: cdktn.stringToTerraform(this._region),
+      user_name: cdktn.stringToTerraform(this._userName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_permissions_name: {
-        value: cdktf.stringToHclTerraform(this._customPermissionsName),
+        value: cdktn.stringToHclTerraform(this._customPermissionsName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_name: {
-        value: cdktf.stringToHclTerraform(this._userName),
+        value: cdktn.stringToHclTerraform(this._userName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsSesv2DedicatedIpPoolConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSesv2DedicatedIpPoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/sesv2_dedicated_ip_pool#id DataAwsSesv2DedicatedIpPool#id}
   *
@@ -38,8 +38,8 @@ export interface DataAwsSesv2DedicatedIpPoolDedicatedIps {
 }
 
 export function dataAwsSesv2DedicatedIpPoolDedicatedIpsToTerraform(struct?: DataAwsSesv2DedicatedIpPoolDedicatedIps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAwsSesv2DedicatedIpPoolDedicatedIpsToTerraform(struct?: Data
 
 
 export function dataAwsSesv2DedicatedIpPoolDedicatedIpsToHclTerraform(struct?: DataAwsSesv2DedicatedIpPoolDedicatedIps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAwsSesv2DedicatedIpPoolDedicatedIpsToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference extends cdktf.ComplexObject {
+export class DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -101,14 +101,14 @@ export class DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference extends cdkt
   }
 }
 
-export class DataAwsSesv2DedicatedIpPoolDedicatedIpsList extends cdktf.ComplexList {
+export class DataAwsSesv2DedicatedIpPoolDedicatedIpsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -123,7 +123,7 @@ export class DataAwsSesv2DedicatedIpPoolDedicatedIpsList extends cdktf.ComplexLi
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool}
 */
-export class DataAwsSesv2DedicatedIpPool extends cdktf.TerraformDataSource {
+export class DataAwsSesv2DedicatedIpPool extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -134,14 +134,14 @@ export class DataAwsSesv2DedicatedIpPool extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsSesv2DedicatedIpPool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsSesv2DedicatedIpPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSesv2DedicatedIpPool to import
   * @param importFromId The id of the existing DataAwsSesv2DedicatedIpPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/sesv2_dedicated_ip_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSesv2DedicatedIpPool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_dedicated_ip_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_dedicated_ip_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -264,35 +264,35 @@ export class DataAwsSesv2DedicatedIpPool extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      pool_name: cdktf.stringToTerraform(this._poolName),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      pool_name: cdktn.stringToTerraform(this._poolName),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pool_name: {
-        value: cdktf.stringToHclTerraform(this._poolName),
+        value: cdktn.stringToHclTerraform(this._poolName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

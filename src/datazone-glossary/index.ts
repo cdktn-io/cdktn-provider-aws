@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatazoneGlossaryConfig extends cdktf.TerraformMetaArguments {
+export interface DatazoneGlossaryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_glossary#description DatazoneGlossary#description}
   */
@@ -43,7 +43,7 @@ export interface DatazoneGlossaryConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_glossary aws_datazone_glossary}
 */
-export class DatazoneGlossary extends cdktf.TerraformResource {
+export class DatazoneGlossary extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -54,14 +54,14 @@ export class DatazoneGlossary extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatazoneGlossary resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatazoneGlossary resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatazoneGlossary to import
   * @param importFromId The id of the existing DatazoneGlossary that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_glossary#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatazoneGlossary to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_glossary", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_glossary", importId: importFromId, provider });
       }
 
   // ===========
@@ -201,49 +201,49 @@ export class DatazoneGlossary extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      domain_identifier: cdktf.stringToTerraform(this._domainIdentifier),
-      name: cdktf.stringToTerraform(this._name),
-      owning_project_identifier: cdktf.stringToTerraform(this._owningProjectIdentifier),
-      region: cdktf.stringToTerraform(this._region),
-      status: cdktf.stringToTerraform(this._status),
+      description: cdktn.stringToTerraform(this._description),
+      domain_identifier: cdktn.stringToTerraform(this._domainIdentifier),
+      name: cdktn.stringToTerraform(this._name),
+      owning_project_identifier: cdktn.stringToTerraform(this._owningProjectIdentifier),
+      region: cdktn.stringToTerraform(this._region),
+      status: cdktn.stringToTerraform(this._status),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_identifier: {
-        value: cdktf.stringToHclTerraform(this._domainIdentifier),
+        value: cdktn.stringToHclTerraform(this._domainIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owning_project_identifier: {
-        value: cdktf.stringToHclTerraform(this._owningProjectIdentifier),
+        value: cdktn.stringToHclTerraform(this._owningProjectIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

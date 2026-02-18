@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CodeartifactRepositoryPermissionsPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface CodeartifactRepositoryPermissionsPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codeartifact_repository_permissions_policy#domain CodeartifactRepositoryPermissionsPolicy#domain}
   */
@@ -50,7 +50,7 @@ export interface CodeartifactRepositoryPermissionsPolicyConfig extends cdktf.Ter
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codeartifact_repository_permissions_policy aws_codeartifact_repository_permissions_policy}
 */
-export class CodeartifactRepositoryPermissionsPolicy extends cdktf.TerraformResource {
+export class CodeartifactRepositoryPermissionsPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class CodeartifactRepositoryPermissionsPolicy extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CodeartifactRepositoryPermissionsPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CodeartifactRepositoryPermissionsPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodeartifactRepositoryPermissionsPolicy to import
   * @param importFromId The id of the existing CodeartifactRepositoryPermissionsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codeartifact_repository_permissions_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodeartifactRepositoryPermissionsPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_codeartifact_repository_permissions_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_codeartifact_repository_permissions_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -225,56 +225,56 @@ export class CodeartifactRepositoryPermissionsPolicy extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain: cdktf.stringToTerraform(this._domain),
-      domain_owner: cdktf.stringToTerraform(this._domainOwner),
-      id: cdktf.stringToTerraform(this._id),
-      policy_document: cdktf.stringToTerraform(this._policyDocument),
-      policy_revision: cdktf.stringToTerraform(this._policyRevision),
-      region: cdktf.stringToTerraform(this._region),
-      repository: cdktf.stringToTerraform(this._repository),
+      domain: cdktn.stringToTerraform(this._domain),
+      domain_owner: cdktn.stringToTerraform(this._domainOwner),
+      id: cdktn.stringToTerraform(this._id),
+      policy_document: cdktn.stringToTerraform(this._policyDocument),
+      policy_revision: cdktn.stringToTerraform(this._policyRevision),
+      region: cdktn.stringToTerraform(this._region),
+      repository: cdktn.stringToTerraform(this._repository),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain: {
-        value: cdktf.stringToHclTerraform(this._domain),
+        value: cdktn.stringToHclTerraform(this._domain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_owner: {
-        value: cdktf.stringToHclTerraform(this._domainOwner),
+        value: cdktn.stringToHclTerraform(this._domainOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_document: {
-        value: cdktf.stringToHclTerraform(this._policyDocument),
+        value: cdktn.stringToHclTerraform(this._policyDocument),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_revision: {
-        value: cdktf.stringToHclTerraform(this._policyRevision),
+        value: cdktn.stringToHclTerraform(this._policyRevision),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository: {
-        value: cdktf.stringToHclTerraform(this._repository),
+        value: cdktn.stringToHclTerraform(this._repository),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

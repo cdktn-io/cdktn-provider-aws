@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsSsmParameterConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSsmParameterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssm_parameter#id DataAwsSsmParameter#id}
   *
@@ -32,13 +32,13 @@ export interface DataAwsSsmParameterConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssm_parameter#with_decryption DataAwsSsmParameter#with_decryption}
   */
-  readonly withDecryption?: boolean | cdktf.IResolvable;
+  readonly withDecryption?: boolean | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssm_parameter aws_ssm_parameter}
 */
-export class DataAwsSsmParameter extends cdktf.TerraformDataSource {
+export class DataAwsSsmParameter extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class DataAwsSsmParameter extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsSsmParameter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsSsmParameter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSsmParameter to import
   * @param importFromId The id of the existing DataAwsSsmParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssm_parameter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSsmParameter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_parameter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_parameter", importId: importFromId, provider });
       }
 
   // ===========
@@ -167,11 +167,11 @@ export class DataAwsSsmParameter extends cdktf.TerraformDataSource {
   }
 
   // with_decryption - computed: false, optional: true, required: false
-  private _withDecryption?: boolean | cdktf.IResolvable; 
+  private _withDecryption?: boolean | cdktn.IResolvable; 
   public get withDecryption() {
     return this.getBooleanAttribute('with_decryption');
   }
-  public set withDecryption(value: boolean | cdktf.IResolvable) {
+  public set withDecryption(value: boolean | cdktn.IResolvable) {
     this._withDecryption = value;
   }
   public resetWithDecryption() {
@@ -188,35 +188,35 @@ export class DataAwsSsmParameter extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      with_decryption: cdktf.booleanToTerraform(this._withDecryption),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      with_decryption: cdktn.booleanToTerraform(this._withDecryption),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       with_decryption: {
-        value: cdktf.booleanToHclTerraform(this._withDecryption),
+        value: cdktn.booleanToHclTerraform(this._withDecryption),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

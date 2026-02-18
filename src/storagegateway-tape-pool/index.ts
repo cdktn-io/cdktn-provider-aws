@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StoragegatewayTapePoolConfig extends cdktf.TerraformMetaArguments {
+export interface StoragegatewayTapePoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_tape_pool#id StoragegatewayTapePool#id}
   *
@@ -54,7 +54,7 @@ export interface StoragegatewayTapePoolConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_tape_pool aws_storagegateway_tape_pool}
 */
-export class StoragegatewayTapePool extends cdktf.TerraformResource {
+export class StoragegatewayTapePool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class StoragegatewayTapePool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StoragegatewayTapePool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StoragegatewayTapePool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StoragegatewayTapePool to import
   * @param importFromId The id of the existing StoragegatewayTapePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_tape_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StoragegatewayTapePool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_tape_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_tape_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -249,63 +249,63 @@ export class StoragegatewayTapePool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      pool_name: cdktf.stringToTerraform(this._poolName),
-      region: cdktf.stringToTerraform(this._region),
-      retention_lock_time_in_days: cdktf.numberToTerraform(this._retentionLockTimeInDays),
-      retention_lock_type: cdktf.stringToTerraform(this._retentionLockType),
-      storage_class: cdktf.stringToTerraform(this._storageClass),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      id: cdktn.stringToTerraform(this._id),
+      pool_name: cdktn.stringToTerraform(this._poolName),
+      region: cdktn.stringToTerraform(this._region),
+      retention_lock_time_in_days: cdktn.numberToTerraform(this._retentionLockTimeInDays),
+      retention_lock_type: cdktn.stringToTerraform(this._retentionLockType),
+      storage_class: cdktn.stringToTerraform(this._storageClass),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pool_name: {
-        value: cdktf.stringToHclTerraform(this._poolName),
+        value: cdktn.stringToHclTerraform(this._poolName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_lock_time_in_days: {
-        value: cdktf.numberToHclTerraform(this._retentionLockTimeInDays),
+        value: cdktn.numberToHclTerraform(this._retentionLockTimeInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       retention_lock_type: {
-        value: cdktf.stringToHclTerraform(this._retentionLockType),
+        value: cdktn.stringToHclTerraform(this._retentionLockType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_class: {
-        value: cdktf.stringToHclTerraform(this._storageClass),
+        value: cdktn.stringToHclTerraform(this._storageClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

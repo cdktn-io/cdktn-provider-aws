@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppstreamUserConfig extends cdktf.TerraformMetaArguments {
+export interface AppstreamUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_user#authentication_type AppstreamUser#authentication_type}
   */
@@ -19,7 +19,7 @@ export interface AppstreamUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_user#enabled AppstreamUser#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_user#first_name AppstreamUser#first_name}
   */
@@ -44,7 +44,7 @@ export interface AppstreamUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_user#send_email_notification AppstreamUser#send_email_notification}
   */
-  readonly sendEmailNotification?: boolean | cdktf.IResolvable;
+  readonly sendEmailNotification?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_user#user_name AppstreamUser#user_name}
   */
@@ -54,7 +54,7 @@ export interface AppstreamUserConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_user aws_appstream_user}
 */
-export class AppstreamUser extends cdktf.TerraformResource {
+export class AppstreamUser extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class AppstreamUser extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppstreamUser resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppstreamUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppstreamUser to import
   * @param importFromId The id of the existing AppstreamUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppstreamUser to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appstream_user", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appstream_user", importId: importFromId, provider });
       }
 
   // ===========
@@ -140,11 +140,11 @@ export class AppstreamUser extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -220,11 +220,11 @@ export class AppstreamUser extends cdktf.TerraformResource {
   }
 
   // send_email_notification - computed: false, optional: true, required: false
-  private _sendEmailNotification?: boolean | cdktf.IResolvable; 
+  private _sendEmailNotification?: boolean | cdktn.IResolvable; 
   public get sendEmailNotification() {
     return this.getBooleanAttribute('send_email_notification');
   }
-  public set sendEmailNotification(value: boolean | cdktf.IResolvable) {
+  public set sendEmailNotification(value: boolean | cdktn.IResolvable) {
     this._sendEmailNotification = value;
   }
   public resetSendEmailNotification() {
@@ -254,63 +254,63 @@ export class AppstreamUser extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authentication_type: cdktf.stringToTerraform(this._authenticationType),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      first_name: cdktf.stringToTerraform(this._firstName),
-      id: cdktf.stringToTerraform(this._id),
-      last_name: cdktf.stringToTerraform(this._lastName),
-      region: cdktf.stringToTerraform(this._region),
-      send_email_notification: cdktf.booleanToTerraform(this._sendEmailNotification),
-      user_name: cdktf.stringToTerraform(this._userName),
+      authentication_type: cdktn.stringToTerraform(this._authenticationType),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      first_name: cdktn.stringToTerraform(this._firstName),
+      id: cdktn.stringToTerraform(this._id),
+      last_name: cdktn.stringToTerraform(this._lastName),
+      region: cdktn.stringToTerraform(this._region),
+      send_email_notification: cdktn.booleanToTerraform(this._sendEmailNotification),
+      user_name: cdktn.stringToTerraform(this._userName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authentication_type: {
-        value: cdktf.stringToHclTerraform(this._authenticationType),
+        value: cdktn.stringToHclTerraform(this._authenticationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       first_name: {
-        value: cdktf.stringToHclTerraform(this._firstName),
+        value: cdktn.stringToHclTerraform(this._firstName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       last_name: {
-        value: cdktf.stringToHclTerraform(this._lastName),
+        value: cdktn.stringToHclTerraform(this._lastName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       send_email_notification: {
-        value: cdktf.booleanToHclTerraform(this._sendEmailNotification),
+        value: cdktn.booleanToHclTerraform(this._sendEmailNotification),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       user_name: {
-        value: cdktf.stringToHclTerraform(this._userName),
+        value: cdktn.stringToHclTerraform(this._userName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcRouteServerPeerConfig extends cdktf.TerraformMetaArguments {
+export interface VpcRouteServerPeerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_route_server_peer#peer_address VpcRouteServerPeer#peer_address}
   */
@@ -35,7 +35,7 @@ export interface VpcRouteServerPeerConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_route_server_peer#bgp_options VpcRouteServerPeer#bgp_options}
   */
-  readonly bgpOptions?: VpcRouteServerPeerBgpOptions[] | cdktf.IResolvable;
+  readonly bgpOptions?: VpcRouteServerPeerBgpOptions[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -54,32 +54,32 @@ export interface VpcRouteServerPeerBgpOptions {
   readonly peerLivenessDetection?: string;
 }
 
-export function vpcRouteServerPeerBgpOptionsToTerraform(struct?: VpcRouteServerPeerBgpOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcRouteServerPeerBgpOptionsToTerraform(struct?: VpcRouteServerPeerBgpOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    peer_asn: cdktf.numberToTerraform(struct!.peerAsn),
-    peer_liveness_detection: cdktf.stringToTerraform(struct!.peerLivenessDetection),
+    peer_asn: cdktn.numberToTerraform(struct!.peerAsn),
+    peer_liveness_detection: cdktn.stringToTerraform(struct!.peerLivenessDetection),
   }
 }
 
 
-export function vpcRouteServerPeerBgpOptionsToHclTerraform(struct?: VpcRouteServerPeerBgpOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcRouteServerPeerBgpOptionsToHclTerraform(struct?: VpcRouteServerPeerBgpOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     peer_asn: {
-      value: cdktf.numberToHclTerraform(struct!.peerAsn),
+      value: cdktn.numberToHclTerraform(struct!.peerAsn),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     peer_liveness_detection: {
-      value: cdktf.stringToHclTerraform(struct!.peerLivenessDetection),
+      value: cdktn.stringToHclTerraform(struct!.peerLivenessDetection),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -90,9 +90,9 @@ export function vpcRouteServerPeerBgpOptionsToHclTerraform(struct?: VpcRouteServ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcRouteServerPeerBgpOptionsOutputReference extends cdktf.ComplexObject {
+export class VpcRouteServerPeerBgpOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -100,11 +100,11 @@ export class VpcRouteServerPeerBgpOptionsOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VpcRouteServerPeerBgpOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): VpcRouteServerPeerBgpOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -121,14 +121,14 @@ export class VpcRouteServerPeerBgpOptionsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpcRouteServerPeerBgpOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpcRouteServerPeerBgpOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._peerAsn = undefined;
       this._peerLivenessDetection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -170,15 +170,15 @@ export class VpcRouteServerPeerBgpOptionsOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class VpcRouteServerPeerBgpOptionsList extends cdktf.ComplexList {
-  public internalValue? : VpcRouteServerPeerBgpOptions[] | cdktf.IResolvable
+export class VpcRouteServerPeerBgpOptionsList extends cdktn.ComplexList {
+  public internalValue? : VpcRouteServerPeerBgpOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -204,32 +204,32 @@ export interface VpcRouteServerPeerTimeouts {
   readonly delete?: string;
 }
 
-export function vpcRouteServerPeerTimeoutsToTerraform(struct?: VpcRouteServerPeerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcRouteServerPeerTimeoutsToTerraform(struct?: VpcRouteServerPeerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function vpcRouteServerPeerTimeoutsToHclTerraform(struct?: VpcRouteServerPeerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcRouteServerPeerTimeoutsToHclTerraform(struct?: VpcRouteServerPeerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -240,19 +240,19 @@ export function vpcRouteServerPeerTimeoutsToHclTerraform(struct?: VpcRouteServer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcRouteServerPeerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VpcRouteServerPeerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VpcRouteServerPeerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VpcRouteServerPeerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -269,14 +269,14 @@ export class VpcRouteServerPeerTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpcRouteServerPeerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpcRouteServerPeerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -324,7 +324,7 @@ export class VpcRouteServerPeerTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_route_server_peer aws_vpc_route_server_peer}
 */
-export class VpcRouteServerPeer extends cdktf.TerraformResource {
+export class VpcRouteServerPeer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -335,14 +335,14 @@ export class VpcRouteServerPeer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcRouteServerPeer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcRouteServerPeer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcRouteServerPeer to import
   * @param importFromId The id of the existing VpcRouteServerPeer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_route_server_peer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcRouteServerPeer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_route_server_peer", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_route_server_peer", importId: importFromId, provider });
       }
 
   // ===========
@@ -473,7 +473,7 @@ export class VpcRouteServerPeer extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -488,7 +488,7 @@ export class VpcRouteServerPeer extends cdktf.TerraformResource {
   public get bgpOptions() {
     return this._bgpOptions;
   }
-  public putBgpOptions(value: VpcRouteServerPeerBgpOptions[] | cdktf.IResolvable) {
+  public putBgpOptions(value: VpcRouteServerPeerBgpOptions[] | cdktn.IResolvable) {
     this._bgpOptions.internalValue = value;
   }
   public resetBgpOptions() {
@@ -521,11 +521,11 @@ export class VpcRouteServerPeer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      peer_address: cdktf.stringToTerraform(this._peerAddress),
-      region: cdktf.stringToTerraform(this._region),
-      route_server_endpoint_id: cdktf.stringToTerraform(this._routeServerEndpointId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      bgp_options: cdktf.listMapper(vpcRouteServerPeerBgpOptionsToTerraform, true)(this._bgpOptions.internalValue),
+      peer_address: cdktn.stringToTerraform(this._peerAddress),
+      region: cdktn.stringToTerraform(this._region),
+      route_server_endpoint_id: cdktn.stringToTerraform(this._routeServerEndpointId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      bgp_options: cdktn.listMapper(vpcRouteServerPeerBgpOptionsToTerraform, true)(this._bgpOptions.internalValue),
       timeouts: vpcRouteServerPeerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -533,31 +533,31 @@ export class VpcRouteServerPeer extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       peer_address: {
-        value: cdktf.stringToHclTerraform(this._peerAddress),
+        value: cdktn.stringToHclTerraform(this._peerAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       route_server_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._routeServerEndpointId),
+        value: cdktn.stringToHclTerraform(this._routeServerEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       bgp_options: {
-        value: cdktf.listMapperHcl(vpcRouteServerPeerBgpOptionsToHclTerraform, true)(this._bgpOptions.internalValue),
+        value: cdktn.listMapperHcl(vpcRouteServerPeerBgpOptionsToHclTerraform, true)(this._bgpOptions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VpcRouteServerPeerBgpOptionsList",

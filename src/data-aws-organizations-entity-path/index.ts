@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsOrganizationsEntityPathConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOrganizationsEntityPathConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/organizations_entity_path#entity_id DataAwsOrganizationsEntityPath#entity_id}
   */
@@ -21,7 +21,7 @@ export interface DataAwsOrganizationsEntityPathConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/organizations_entity_path aws_organizations_entity_path}
 */
-export class DataAwsOrganizationsEntityPath extends cdktf.TerraformDataSource {
+export class DataAwsOrganizationsEntityPath extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -32,14 +32,14 @@ export class DataAwsOrganizationsEntityPath extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsOrganizationsEntityPath resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsOrganizationsEntityPath resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOrganizationsEntityPath to import
   * @param importFromId The id of the existing DataAwsOrganizationsEntityPath that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/organizations_entity_path#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOrganizationsEntityPath to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_organizations_entity_path", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_organizations_entity_path", importId: importFromId, provider });
       }
 
   // ===========
@@ -100,14 +100,14 @@ export class DataAwsOrganizationsEntityPath extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      entity_id: cdktf.stringToTerraform(this._entityId),
+      entity_id: cdktn.stringToTerraform(this._entityId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       entity_id: {
-        value: cdktf.stringToHclTerraform(this._entityId),
+        value: cdktn.stringToHclTerraform(this._entityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

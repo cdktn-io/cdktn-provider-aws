@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LakeformationLfTagConfig extends cdktf.TerraformMetaArguments {
+export interface LakeformationLfTagConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_lf_tag#catalog_id LakeformationLfTag#catalog_id}
   */
@@ -42,7 +42,7 @@ export interface LakeformationLfTagConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_lf_tag aws_lakeformation_lf_tag}
 */
-export class LakeformationLfTag extends cdktf.TerraformResource {
+export class LakeformationLfTag extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class LakeformationLfTag extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LakeformationLfTag resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LakeformationLfTag resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LakeformationLfTag to import
   * @param importFromId The id of the existing LakeformationLfTag that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_lf_tag#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LakeformationLfTag to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lakeformation_lf_tag", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lakeformation_lf_tag", importId: importFromId, provider });
       }
 
   // ===========
@@ -165,7 +165,7 @@ export class LakeformationLfTag extends cdktf.TerraformResource {
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -181,42 +181,42 @@ export class LakeformationLfTag extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog_id: cdktf.stringToTerraform(this._catalogId),
-      id: cdktf.stringToTerraform(this._id),
-      key: cdktf.stringToTerraform(this._key),
-      region: cdktf.stringToTerraform(this._region),
-      values: cdktf.listMapper(cdktf.stringToTerraform, false)(this._values),
+      catalog_id: cdktn.stringToTerraform(this._catalogId),
+      id: cdktn.stringToTerraform(this._id),
+      key: cdktn.stringToTerraform(this._key),
+      region: cdktn.stringToTerraform(this._region),
+      values: cdktn.listMapper(cdktn.stringToTerraform, false)(this._values),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       catalog_id: {
-        value: cdktf.stringToHclTerraform(this._catalogId),
+        value: cdktn.stringToHclTerraform(this._catalogId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key: {
-        value: cdktf.stringToHclTerraform(this._key),
+        value: cdktn.stringToHclTerraform(this._key),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       values: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._values),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._values),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface IamPolicyAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_policy_attachment#groups IamPolicyAttachment#groups}
   */
@@ -44,7 +44,7 @@ export interface IamPolicyAttachmentConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_policy_attachment aws_iam_policy_attachment}
 */
-export class IamPolicyAttachment extends cdktf.TerraformResource {
+export class IamPolicyAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -55,14 +55,14 @@ export class IamPolicyAttachment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamPolicyAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamPolicyAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamPolicyAttachment to import
   * @param importFromId The id of the existing IamPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_policy_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamPolicyAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_policy_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_policy_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -107,7 +107,7 @@ export class IamPolicyAttachment extends cdktf.TerraformResource {
   // groups - computed: false, optional: true, required: false
   private _groups?: string[]; 
   public get groups() {
-    return cdktf.Fn.tolist(this.getListAttribute('groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('groups'));
   }
   public set groups(value: string[]) {
     this._groups = value;
@@ -165,7 +165,7 @@ export class IamPolicyAttachment extends cdktf.TerraformResource {
   // roles - computed: false, optional: true, required: false
   private _roles?: string[]; 
   public get roles() {
-    return cdktf.Fn.tolist(this.getListAttribute('roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('roles'));
   }
   public set roles(value: string[]) {
     this._roles = value;
@@ -181,7 +181,7 @@ export class IamPolicyAttachment extends cdktf.TerraformResource {
   // users - computed: false, optional: true, required: false
   private _users?: string[]; 
   public get users() {
-    return cdktf.Fn.tolist(this.getListAttribute('users'));
+    return cdktn.Fn.tolist(this.getListAttribute('users'));
   }
   public set users(value: string[]) {
     this._users = value;
@@ -200,49 +200,49 @@ export class IamPolicyAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groups),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      policy_arn: cdktf.stringToTerraform(this._policyArn),
-      roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
-      users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._users),
+      groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._groups),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      policy_arn: cdktn.stringToTerraform(this._policyArn),
+      roles: cdktn.listMapper(cdktn.stringToTerraform, false)(this._roles),
+      users: cdktn.listMapper(cdktn.stringToTerraform, false)(this._users),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._groups),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_arn: {
-        value: cdktf.stringToHclTerraform(this._policyArn),
+        value: cdktn.stringToHclTerraform(this._policyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       roles: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roles),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._roles),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       users: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._users),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._users),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IotEventConfigurationsConfig extends cdktf.TerraformMetaArguments {
+export interface IotEventConfigurationsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_event_configurations#event_configurations IotEventConfigurations#event_configurations}
   */
-  readonly eventConfigurations: { [key: string]: (boolean | cdktf.IResolvable) };
+  readonly eventConfigurations: { [key: string]: (boolean | cdktn.IResolvable) };
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_event_configurations#id IotEventConfigurations#id}
   *
@@ -34,7 +34,7 @@ export interface IotEventConfigurationsConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_event_configurations aws_iot_event_configurations}
 */
-export class IotEventConfigurations extends cdktf.TerraformResource {
+export class IotEventConfigurations extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -45,14 +45,14 @@ export class IotEventConfigurations extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IotEventConfigurations resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IotEventConfigurations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotEventConfigurations to import
   * @param importFromId The id of the existing IotEventConfigurations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_event_configurations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotEventConfigurations to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_event_configurations", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_event_configurations", importId: importFromId, provider });
       }
 
   // ===========
@@ -92,11 +92,11 @@ export class IotEventConfigurations extends cdktf.TerraformResource {
   // ==========
 
   // event_configurations - computed: false, optional: false, required: true
-  private _eventConfigurations?: { [key: string]: (boolean | cdktf.IResolvable) }; 
+  private _eventConfigurations?: { [key: string]: (boolean | cdktn.IResolvable) }; 
   public get eventConfigurations() {
     return this.getBooleanMapAttribute('event_configurations');
   }
-  public set eventConfigurations(value: { [key: string]: (boolean | cdktf.IResolvable) }) {
+  public set eventConfigurations(value: { [key: string]: (boolean | cdktn.IResolvable) }) {
     this._eventConfigurations = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -142,28 +142,28 @@ export class IotEventConfigurations extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      event_configurations: cdktf.hashMapper(cdktf.booleanToTerraform)(this._eventConfigurations),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      event_configurations: cdktn.hashMapper(cdktn.booleanToTerraform)(this._eventConfigurations),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       event_configurations: {
-        value: cdktf.hashMapperHcl(cdktf.booleanToHclTerraform)(this._eventConfigurations),
+        value: cdktn.hashMapperHcl(cdktn.booleanToHclTerraform)(this._eventConfigurations),
         isBlock: false,
         type: "map",
         storageClassType: "booleanMap",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

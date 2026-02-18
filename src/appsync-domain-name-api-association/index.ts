@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppsyncDomainNameApiAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface AppsyncDomainNameApiAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_domain_name_api_association#api_id AppsyncDomainNameApiAssociation#api_id}
   */
@@ -38,7 +38,7 @@ export interface AppsyncDomainNameApiAssociationConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_domain_name_api_association aws_appsync_domain_name_api_association}
 */
-export class AppsyncDomainNameApiAssociation extends cdktf.TerraformResource {
+export class AppsyncDomainNameApiAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class AppsyncDomainNameApiAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppsyncDomainNameApiAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppsyncDomainNameApiAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppsyncDomainNameApiAssociation to import
   * @param importFromId The id of the existing AppsyncDomainNameApiAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_domain_name_api_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppsyncDomainNameApiAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appsync_domain_name_api_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appsync_domain_name_api_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class AppsyncDomainNameApiAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      api_id: cdktn.stringToTerraform(this._apiId),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_id: {
-        value: cdktf.stringToHclTerraform(this._apiId),
+        value: cdktn.stringToHclTerraform(this._apiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

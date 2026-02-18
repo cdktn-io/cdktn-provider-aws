@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsRedshiftOrderableClusterConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRedshiftOrderableClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/redshift_orderable_cluster#cluster_type DataAwsRedshiftOrderableCluster#cluster_type}
   */
@@ -46,7 +46,7 @@ export interface DataAwsRedshiftOrderableClusterConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster}
 */
-export class DataAwsRedshiftOrderableCluster extends cdktf.TerraformDataSource {
+export class DataAwsRedshiftOrderableCluster extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class DataAwsRedshiftOrderableCluster extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsRedshiftOrderableCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsRedshiftOrderableCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRedshiftOrderableCluster to import
   * @param importFromId The id of the existing DataAwsRedshiftOrderableCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/redshift_orderable_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRedshiftOrderableCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_orderable_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_orderable_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -213,49 +213,49 @@ export class DataAwsRedshiftOrderableCluster extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_type: cdktf.stringToTerraform(this._clusterType),
-      cluster_version: cdktf.stringToTerraform(this._clusterVersion),
-      id: cdktf.stringToTerraform(this._id),
-      node_type: cdktf.stringToTerraform(this._nodeType),
-      preferred_node_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredNodeTypes),
-      region: cdktf.stringToTerraform(this._region),
+      cluster_type: cdktn.stringToTerraform(this._clusterType),
+      cluster_version: cdktn.stringToTerraform(this._clusterVersion),
+      id: cdktn.stringToTerraform(this._id),
+      node_type: cdktn.stringToTerraform(this._nodeType),
+      preferred_node_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._preferredNodeTypes),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_type: {
-        value: cdktf.stringToHclTerraform(this._clusterType),
+        value: cdktn.stringToHclTerraform(this._clusterType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_version: {
-        value: cdktf.stringToHclTerraform(this._clusterVersion),
+        value: cdktn.stringToHclTerraform(this._clusterVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       node_type: {
-        value: cdktf.stringToHclTerraform(this._nodeType),
+        value: cdktn.stringToHclTerraform(this._nodeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_node_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredNodeTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._preferredNodeTypes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

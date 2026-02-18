@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecurityhubInviteAccepterConfig extends cdktf.TerraformMetaArguments {
+export interface SecurityhubInviteAccepterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_invite_accepter#id SecurityhubInviteAccepter#id}
   *
@@ -34,7 +34,7 @@ export interface SecurityhubInviteAccepterConfig extends cdktf.TerraformMetaArgu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_invite_accepter aws_securityhub_invite_accepter}
 */
-export class SecurityhubInviteAccepter extends cdktf.TerraformResource {
+export class SecurityhubInviteAccepter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -45,14 +45,14 @@ export class SecurityhubInviteAccepter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecurityhubInviteAccepter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecurityhubInviteAccepter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityhubInviteAccepter to import
   * @param importFromId The id of the existing SecurityhubInviteAccepter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_invite_accepter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityhubInviteAccepter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_securityhub_invite_accepter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_securityhub_invite_accepter", importId: importFromId, provider });
       }
 
   // ===========
@@ -147,28 +147,28 @@ export class SecurityhubInviteAccepter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      master_id: cdktf.stringToTerraform(this._masterId),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      master_id: cdktn.stringToTerraform(this._masterId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       master_id: {
-        value: cdktf.stringToHclTerraform(this._masterId),
+        value: cdktn.stringToHclTerraform(this._masterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

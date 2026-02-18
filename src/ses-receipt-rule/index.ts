@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SesReceiptRuleConfig extends cdktf.TerraformMetaArguments {
+export interface SesReceiptRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_receipt_rule#after SesReceiptRule#after}
   */
@@ -19,7 +19,7 @@ export interface SesReceiptRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_receipt_rule#enabled SesReceiptRule#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_receipt_rule#id SesReceiptRule#id}
   *
@@ -48,7 +48,7 @@ export interface SesReceiptRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_receipt_rule#scan_enabled SesReceiptRule#scan_enabled}
   */
-  readonly scanEnabled?: boolean | cdktf.IResolvable;
+  readonly scanEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_receipt_rule#tls_policy SesReceiptRule#tls_policy}
   */
@@ -58,43 +58,43 @@ export interface SesReceiptRuleConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_receipt_rule#add_header_action SesReceiptRule#add_header_action}
   */
-  readonly addHeaderAction?: SesReceiptRuleAddHeaderAction[] | cdktf.IResolvable;
+  readonly addHeaderAction?: SesReceiptRuleAddHeaderAction[] | cdktn.IResolvable;
   /**
   * bounce_action block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_receipt_rule#bounce_action SesReceiptRule#bounce_action}
   */
-  readonly bounceAction?: SesReceiptRuleBounceAction[] | cdktf.IResolvable;
+  readonly bounceAction?: SesReceiptRuleBounceAction[] | cdktn.IResolvable;
   /**
   * lambda_action block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_receipt_rule#lambda_action SesReceiptRule#lambda_action}
   */
-  readonly lambdaAction?: SesReceiptRuleLambdaAction[] | cdktf.IResolvable;
+  readonly lambdaAction?: SesReceiptRuleLambdaAction[] | cdktn.IResolvable;
   /**
   * s3_action block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_receipt_rule#s3_action SesReceiptRule#s3_action}
   */
-  readonly s3Action?: SesReceiptRuleS3Action[] | cdktf.IResolvable;
+  readonly s3Action?: SesReceiptRuleS3Action[] | cdktn.IResolvable;
   /**
   * sns_action block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_receipt_rule#sns_action SesReceiptRule#sns_action}
   */
-  readonly snsAction?: SesReceiptRuleSnsAction[] | cdktf.IResolvable;
+  readonly snsAction?: SesReceiptRuleSnsAction[] | cdktn.IResolvable;
   /**
   * stop_action block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_receipt_rule#stop_action SesReceiptRule#stop_action}
   */
-  readonly stopAction?: SesReceiptRuleStopAction[] | cdktf.IResolvable;
+  readonly stopAction?: SesReceiptRuleStopAction[] | cdktn.IResolvable;
   /**
   * workmail_action block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_receipt_rule#workmail_action SesReceiptRule#workmail_action}
   */
-  readonly workmailAction?: SesReceiptRuleWorkmailAction[] | cdktf.IResolvable;
+  readonly workmailAction?: SesReceiptRuleWorkmailAction[] | cdktn.IResolvable;
 }
 export interface SesReceiptRuleAddHeaderAction {
   /**
@@ -111,39 +111,39 @@ export interface SesReceiptRuleAddHeaderAction {
   readonly position: number;
 }
 
-export function sesReceiptRuleAddHeaderActionToTerraform(struct?: SesReceiptRuleAddHeaderAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesReceiptRuleAddHeaderActionToTerraform(struct?: SesReceiptRuleAddHeaderAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
-    position: cdktf.numberToTerraform(struct!.position),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
+    position: cdktn.numberToTerraform(struct!.position),
   }
 }
 
 
-export function sesReceiptRuleAddHeaderActionToHclTerraform(struct?: SesReceiptRuleAddHeaderAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesReceiptRuleAddHeaderActionToHclTerraform(struct?: SesReceiptRuleAddHeaderAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     position: {
-      value: cdktf.numberToHclTerraform(struct!.position),
+      value: cdktn.numberToHclTerraform(struct!.position),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -154,9 +154,9 @@ export function sesReceiptRuleAddHeaderActionToHclTerraform(struct?: SesReceiptR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SesReceiptRuleAddHeaderActionOutputReference extends cdktf.ComplexObject {
+export class SesReceiptRuleAddHeaderActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -164,11 +164,11 @@ export class SesReceiptRuleAddHeaderActionOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SesReceiptRuleAddHeaderAction | cdktf.IResolvable | undefined {
+  public get internalValue(): SesReceiptRuleAddHeaderAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -189,7 +189,7 @@ export class SesReceiptRuleAddHeaderActionOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SesReceiptRuleAddHeaderAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SesReceiptRuleAddHeaderAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -197,7 +197,7 @@ export class SesReceiptRuleAddHeaderActionOutputReference extends cdktf.ComplexO
       this._headerValue = undefined;
       this._position = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -250,15 +250,15 @@ export class SesReceiptRuleAddHeaderActionOutputReference extends cdktf.ComplexO
   }
 }
 
-export class SesReceiptRuleAddHeaderActionList extends cdktf.ComplexList {
-  public internalValue? : SesReceiptRuleAddHeaderAction[] | cdktf.IResolvable
+export class SesReceiptRuleAddHeaderActionList extends cdktn.ComplexList {
+  public internalValue? : SesReceiptRuleAddHeaderAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -296,60 +296,60 @@ export interface SesReceiptRuleBounceAction {
   readonly topicArn?: string;
 }
 
-export function sesReceiptRuleBounceActionToTerraform(struct?: SesReceiptRuleBounceAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesReceiptRuleBounceActionToTerraform(struct?: SesReceiptRuleBounceAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message: cdktf.stringToTerraform(struct!.message),
-    position: cdktf.numberToTerraform(struct!.position),
-    sender: cdktf.stringToTerraform(struct!.sender),
-    smtp_reply_code: cdktf.stringToTerraform(struct!.smtpReplyCode),
-    status_code: cdktf.stringToTerraform(struct!.statusCode),
-    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+    message: cdktn.stringToTerraform(struct!.message),
+    position: cdktn.numberToTerraform(struct!.position),
+    sender: cdktn.stringToTerraform(struct!.sender),
+    smtp_reply_code: cdktn.stringToTerraform(struct!.smtpReplyCode),
+    status_code: cdktn.stringToTerraform(struct!.statusCode),
+    topic_arn: cdktn.stringToTerraform(struct!.topicArn),
   }
 }
 
 
-export function sesReceiptRuleBounceActionToHclTerraform(struct?: SesReceiptRuleBounceAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesReceiptRuleBounceActionToHclTerraform(struct?: SesReceiptRuleBounceAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     message: {
-      value: cdktf.stringToHclTerraform(struct!.message),
+      value: cdktn.stringToHclTerraform(struct!.message),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     position: {
-      value: cdktf.numberToHclTerraform(struct!.position),
+      value: cdktn.numberToHclTerraform(struct!.position),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     sender: {
-      value: cdktf.stringToHclTerraform(struct!.sender),
+      value: cdktn.stringToHclTerraform(struct!.sender),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     smtp_reply_code: {
-      value: cdktf.stringToHclTerraform(struct!.smtpReplyCode),
+      value: cdktn.stringToHclTerraform(struct!.smtpReplyCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status_code: {
-      value: cdktf.stringToHclTerraform(struct!.statusCode),
+      value: cdktn.stringToHclTerraform(struct!.statusCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      value: cdktn.stringToHclTerraform(struct!.topicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -360,9 +360,9 @@ export function sesReceiptRuleBounceActionToHclTerraform(struct?: SesReceiptRule
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SesReceiptRuleBounceActionOutputReference extends cdktf.ComplexObject {
+export class SesReceiptRuleBounceActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -370,11 +370,11 @@ export class SesReceiptRuleBounceActionOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SesReceiptRuleBounceAction | cdktf.IResolvable | undefined {
+  public get internalValue(): SesReceiptRuleBounceAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -407,7 +407,7 @@ export class SesReceiptRuleBounceActionOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SesReceiptRuleBounceAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SesReceiptRuleBounceAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -418,7 +418,7 @@ export class SesReceiptRuleBounceActionOutputReference extends cdktf.ComplexObje
       this._statusCode = undefined;
       this._topicArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -519,15 +519,15 @@ export class SesReceiptRuleBounceActionOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class SesReceiptRuleBounceActionList extends cdktf.ComplexList {
-  public internalValue? : SesReceiptRuleBounceAction[] | cdktf.IResolvable
+export class SesReceiptRuleBounceActionList extends cdktn.ComplexList {
+  public internalValue? : SesReceiptRuleBounceAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -557,46 +557,46 @@ export interface SesReceiptRuleLambdaAction {
   readonly topicArn?: string;
 }
 
-export function sesReceiptRuleLambdaActionToTerraform(struct?: SesReceiptRuleLambdaAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesReceiptRuleLambdaActionToTerraform(struct?: SesReceiptRuleLambdaAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    function_arn: cdktf.stringToTerraform(struct!.functionArn),
-    invocation_type: cdktf.stringToTerraform(struct!.invocationType),
-    position: cdktf.numberToTerraform(struct!.position),
-    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+    function_arn: cdktn.stringToTerraform(struct!.functionArn),
+    invocation_type: cdktn.stringToTerraform(struct!.invocationType),
+    position: cdktn.numberToTerraform(struct!.position),
+    topic_arn: cdktn.stringToTerraform(struct!.topicArn),
   }
 }
 
 
-export function sesReceiptRuleLambdaActionToHclTerraform(struct?: SesReceiptRuleLambdaAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesReceiptRuleLambdaActionToHclTerraform(struct?: SesReceiptRuleLambdaAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     function_arn: {
-      value: cdktf.stringToHclTerraform(struct!.functionArn),
+      value: cdktn.stringToHclTerraform(struct!.functionArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     invocation_type: {
-      value: cdktf.stringToHclTerraform(struct!.invocationType),
+      value: cdktn.stringToHclTerraform(struct!.invocationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     position: {
-      value: cdktf.numberToHclTerraform(struct!.position),
+      value: cdktn.numberToHclTerraform(struct!.position),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      value: cdktn.stringToHclTerraform(struct!.topicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -607,9 +607,9 @@ export function sesReceiptRuleLambdaActionToHclTerraform(struct?: SesReceiptRule
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SesReceiptRuleLambdaActionOutputReference extends cdktf.ComplexObject {
+export class SesReceiptRuleLambdaActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -617,11 +617,11 @@ export class SesReceiptRuleLambdaActionOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SesReceiptRuleLambdaAction | cdktf.IResolvable | undefined {
+  public get internalValue(): SesReceiptRuleLambdaAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -646,7 +646,7 @@ export class SesReceiptRuleLambdaActionOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SesReceiptRuleLambdaAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SesReceiptRuleLambdaAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -655,7 +655,7 @@ export class SesReceiptRuleLambdaActionOutputReference extends cdktf.ComplexObje
       this._position = undefined;
       this._topicArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -728,15 +728,15 @@ export class SesReceiptRuleLambdaActionOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class SesReceiptRuleLambdaActionList extends cdktf.ComplexList {
-  public internalValue? : SesReceiptRuleLambdaAction[] | cdktf.IResolvable
+export class SesReceiptRuleLambdaActionList extends cdktn.ComplexList {
+  public internalValue? : SesReceiptRuleLambdaAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -774,60 +774,60 @@ export interface SesReceiptRuleS3Action {
   readonly topicArn?: string;
 }
 
-export function sesReceiptRuleS3ActionToTerraform(struct?: SesReceiptRuleS3Action | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesReceiptRuleS3ActionToTerraform(struct?: SesReceiptRuleS3Action | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    iam_role_arn: cdktf.stringToTerraform(struct!.iamRoleArn),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    object_key_prefix: cdktf.stringToTerraform(struct!.objectKeyPrefix),
-    position: cdktf.numberToTerraform(struct!.position),
-    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    iam_role_arn: cdktn.stringToTerraform(struct!.iamRoleArn),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    object_key_prefix: cdktn.stringToTerraform(struct!.objectKeyPrefix),
+    position: cdktn.numberToTerraform(struct!.position),
+    topic_arn: cdktn.stringToTerraform(struct!.topicArn),
   }
 }
 
 
-export function sesReceiptRuleS3ActionToHclTerraform(struct?: SesReceiptRuleS3Action | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesReceiptRuleS3ActionToHclTerraform(struct?: SesReceiptRuleS3Action | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     iam_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.iamRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.iamRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     object_key_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.objectKeyPrefix),
+      value: cdktn.stringToHclTerraform(struct!.objectKeyPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     position: {
-      value: cdktf.numberToHclTerraform(struct!.position),
+      value: cdktn.numberToHclTerraform(struct!.position),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      value: cdktn.stringToHclTerraform(struct!.topicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -838,9 +838,9 @@ export function sesReceiptRuleS3ActionToHclTerraform(struct?: SesReceiptRuleS3Ac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SesReceiptRuleS3ActionOutputReference extends cdktf.ComplexObject {
+export class SesReceiptRuleS3ActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -848,11 +848,11 @@ export class SesReceiptRuleS3ActionOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SesReceiptRuleS3Action | cdktf.IResolvable | undefined {
+  public get internalValue(): SesReceiptRuleS3Action | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -885,7 +885,7 @@ export class SesReceiptRuleS3ActionOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SesReceiptRuleS3Action | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SesReceiptRuleS3Action | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -896,7 +896,7 @@ export class SesReceiptRuleS3ActionOutputReference extends cdktf.ComplexObject {
       this._position = undefined;
       this._topicArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1003,15 +1003,15 @@ export class SesReceiptRuleS3ActionOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SesReceiptRuleS3ActionList extends cdktf.ComplexList {
-  public internalValue? : SesReceiptRuleS3Action[] | cdktf.IResolvable
+export class SesReceiptRuleS3ActionList extends cdktn.ComplexList {
+  public internalValue? : SesReceiptRuleS3Action[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1037,39 +1037,39 @@ export interface SesReceiptRuleSnsAction {
   readonly topicArn: string;
 }
 
-export function sesReceiptRuleSnsActionToTerraform(struct?: SesReceiptRuleSnsAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesReceiptRuleSnsActionToTerraform(struct?: SesReceiptRuleSnsAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    encoding: cdktf.stringToTerraform(struct!.encoding),
-    position: cdktf.numberToTerraform(struct!.position),
-    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+    encoding: cdktn.stringToTerraform(struct!.encoding),
+    position: cdktn.numberToTerraform(struct!.position),
+    topic_arn: cdktn.stringToTerraform(struct!.topicArn),
   }
 }
 
 
-export function sesReceiptRuleSnsActionToHclTerraform(struct?: SesReceiptRuleSnsAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesReceiptRuleSnsActionToHclTerraform(struct?: SesReceiptRuleSnsAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     encoding: {
-      value: cdktf.stringToHclTerraform(struct!.encoding),
+      value: cdktn.stringToHclTerraform(struct!.encoding),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     position: {
-      value: cdktf.numberToHclTerraform(struct!.position),
+      value: cdktn.numberToHclTerraform(struct!.position),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      value: cdktn.stringToHclTerraform(struct!.topicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1080,9 +1080,9 @@ export function sesReceiptRuleSnsActionToHclTerraform(struct?: SesReceiptRuleSns
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SesReceiptRuleSnsActionOutputReference extends cdktf.ComplexObject {
+export class SesReceiptRuleSnsActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1090,11 +1090,11 @@ export class SesReceiptRuleSnsActionOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SesReceiptRuleSnsAction | cdktf.IResolvable | undefined {
+  public get internalValue(): SesReceiptRuleSnsAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1115,7 +1115,7 @@ export class SesReceiptRuleSnsActionOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SesReceiptRuleSnsAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SesReceiptRuleSnsAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1123,7 +1123,7 @@ export class SesReceiptRuleSnsActionOutputReference extends cdktf.ComplexObject 
       this._position = undefined;
       this._topicArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1179,15 +1179,15 @@ export class SesReceiptRuleSnsActionOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class SesReceiptRuleSnsActionList extends cdktf.ComplexList {
-  public internalValue? : SesReceiptRuleSnsAction[] | cdktf.IResolvable
+export class SesReceiptRuleSnsActionList extends cdktn.ComplexList {
+  public internalValue? : SesReceiptRuleSnsAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1213,39 +1213,39 @@ export interface SesReceiptRuleStopAction {
   readonly topicArn?: string;
 }
 
-export function sesReceiptRuleStopActionToTerraform(struct?: SesReceiptRuleStopAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesReceiptRuleStopActionToTerraform(struct?: SesReceiptRuleStopAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    position: cdktf.numberToTerraform(struct!.position),
-    scope: cdktf.stringToTerraform(struct!.scope),
-    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+    position: cdktn.numberToTerraform(struct!.position),
+    scope: cdktn.stringToTerraform(struct!.scope),
+    topic_arn: cdktn.stringToTerraform(struct!.topicArn),
   }
 }
 
 
-export function sesReceiptRuleStopActionToHclTerraform(struct?: SesReceiptRuleStopAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesReceiptRuleStopActionToHclTerraform(struct?: SesReceiptRuleStopAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     position: {
-      value: cdktf.numberToHclTerraform(struct!.position),
+      value: cdktn.numberToHclTerraform(struct!.position),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      value: cdktn.stringToHclTerraform(struct!.topicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1256,9 +1256,9 @@ export function sesReceiptRuleStopActionToHclTerraform(struct?: SesReceiptRuleSt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SesReceiptRuleStopActionOutputReference extends cdktf.ComplexObject {
+export class SesReceiptRuleStopActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1266,11 +1266,11 @@ export class SesReceiptRuleStopActionOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SesReceiptRuleStopAction | cdktf.IResolvable | undefined {
+  public get internalValue(): SesReceiptRuleStopAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1291,7 +1291,7 @@ export class SesReceiptRuleStopActionOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SesReceiptRuleStopAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SesReceiptRuleStopAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1299,7 +1299,7 @@ export class SesReceiptRuleStopActionOutputReference extends cdktf.ComplexObject
       this._scope = undefined;
       this._topicArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1355,15 +1355,15 @@ export class SesReceiptRuleStopActionOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class SesReceiptRuleStopActionList extends cdktf.ComplexList {
-  public internalValue? : SesReceiptRuleStopAction[] | cdktf.IResolvable
+export class SesReceiptRuleStopActionList extends cdktn.ComplexList {
+  public internalValue? : SesReceiptRuleStopAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1389,39 +1389,39 @@ export interface SesReceiptRuleWorkmailAction {
   readonly topicArn?: string;
 }
 
-export function sesReceiptRuleWorkmailActionToTerraform(struct?: SesReceiptRuleWorkmailAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesReceiptRuleWorkmailActionToTerraform(struct?: SesReceiptRuleWorkmailAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    organization_arn: cdktf.stringToTerraform(struct!.organizationArn),
-    position: cdktf.numberToTerraform(struct!.position),
-    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+    organization_arn: cdktn.stringToTerraform(struct!.organizationArn),
+    position: cdktn.numberToTerraform(struct!.position),
+    topic_arn: cdktn.stringToTerraform(struct!.topicArn),
   }
 }
 
 
-export function sesReceiptRuleWorkmailActionToHclTerraform(struct?: SesReceiptRuleWorkmailAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesReceiptRuleWorkmailActionToHclTerraform(struct?: SesReceiptRuleWorkmailAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     organization_arn: {
-      value: cdktf.stringToHclTerraform(struct!.organizationArn),
+      value: cdktn.stringToHclTerraform(struct!.organizationArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     position: {
-      value: cdktf.numberToHclTerraform(struct!.position),
+      value: cdktn.numberToHclTerraform(struct!.position),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      value: cdktn.stringToHclTerraform(struct!.topicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1432,9 +1432,9 @@ export function sesReceiptRuleWorkmailActionToHclTerraform(struct?: SesReceiptRu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SesReceiptRuleWorkmailActionOutputReference extends cdktf.ComplexObject {
+export class SesReceiptRuleWorkmailActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1442,11 +1442,11 @@ export class SesReceiptRuleWorkmailActionOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SesReceiptRuleWorkmailAction | cdktf.IResolvable | undefined {
+  public get internalValue(): SesReceiptRuleWorkmailAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1467,7 +1467,7 @@ export class SesReceiptRuleWorkmailActionOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SesReceiptRuleWorkmailAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SesReceiptRuleWorkmailAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1475,7 +1475,7 @@ export class SesReceiptRuleWorkmailActionOutputReference extends cdktf.ComplexOb
       this._position = undefined;
       this._topicArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1531,15 +1531,15 @@ export class SesReceiptRuleWorkmailActionOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class SesReceiptRuleWorkmailActionList extends cdktf.ComplexList {
-  public internalValue? : SesReceiptRuleWorkmailAction[] | cdktf.IResolvable
+export class SesReceiptRuleWorkmailActionList extends cdktn.ComplexList {
+  public internalValue? : SesReceiptRuleWorkmailAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1554,7 +1554,7 @@ export class SesReceiptRuleWorkmailActionList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_receipt_rule aws_ses_receipt_rule}
 */
-export class SesReceiptRule extends cdktf.TerraformResource {
+export class SesReceiptRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1565,14 +1565,14 @@ export class SesReceiptRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SesReceiptRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SesReceiptRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SesReceiptRule to import
   * @param importFromId The id of the existing SesReceiptRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_receipt_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SesReceiptRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ses_receipt_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ses_receipt_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -1646,11 +1646,11 @@ export class SesReceiptRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1693,7 +1693,7 @@ export class SesReceiptRule extends cdktf.TerraformResource {
   // recipients - computed: false, optional: true, required: false
   private _recipients?: string[]; 
   public get recipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('recipients'));
   }
   public set recipients(value: string[]) {
     this._recipients = value;
@@ -1736,11 +1736,11 @@ export class SesReceiptRule extends cdktf.TerraformResource {
   }
 
   // scan_enabled - computed: false, optional: true, required: false
-  private _scanEnabled?: boolean | cdktf.IResolvable; 
+  private _scanEnabled?: boolean | cdktn.IResolvable; 
   public get scanEnabled() {
     return this.getBooleanAttribute('scan_enabled');
   }
-  public set scanEnabled(value: boolean | cdktf.IResolvable) {
+  public set scanEnabled(value: boolean | cdktn.IResolvable) {
     this._scanEnabled = value;
   }
   public resetScanEnabled() {
@@ -1772,7 +1772,7 @@ export class SesReceiptRule extends cdktf.TerraformResource {
   public get addHeaderAction() {
     return this._addHeaderAction;
   }
-  public putAddHeaderAction(value: SesReceiptRuleAddHeaderAction[] | cdktf.IResolvable) {
+  public putAddHeaderAction(value: SesReceiptRuleAddHeaderAction[] | cdktn.IResolvable) {
     this._addHeaderAction.internalValue = value;
   }
   public resetAddHeaderAction() {
@@ -1788,7 +1788,7 @@ export class SesReceiptRule extends cdktf.TerraformResource {
   public get bounceAction() {
     return this._bounceAction;
   }
-  public putBounceAction(value: SesReceiptRuleBounceAction[] | cdktf.IResolvable) {
+  public putBounceAction(value: SesReceiptRuleBounceAction[] | cdktn.IResolvable) {
     this._bounceAction.internalValue = value;
   }
   public resetBounceAction() {
@@ -1804,7 +1804,7 @@ export class SesReceiptRule extends cdktf.TerraformResource {
   public get lambdaAction() {
     return this._lambdaAction;
   }
-  public putLambdaAction(value: SesReceiptRuleLambdaAction[] | cdktf.IResolvable) {
+  public putLambdaAction(value: SesReceiptRuleLambdaAction[] | cdktn.IResolvable) {
     this._lambdaAction.internalValue = value;
   }
   public resetLambdaAction() {
@@ -1820,7 +1820,7 @@ export class SesReceiptRule extends cdktf.TerraformResource {
   public get s3Action() {
     return this._s3Action;
   }
-  public putS3Action(value: SesReceiptRuleS3Action[] | cdktf.IResolvable) {
+  public putS3Action(value: SesReceiptRuleS3Action[] | cdktn.IResolvable) {
     this._s3Action.internalValue = value;
   }
   public resetS3Action() {
@@ -1836,7 +1836,7 @@ export class SesReceiptRule extends cdktf.TerraformResource {
   public get snsAction() {
     return this._snsAction;
   }
-  public putSnsAction(value: SesReceiptRuleSnsAction[] | cdktf.IResolvable) {
+  public putSnsAction(value: SesReceiptRuleSnsAction[] | cdktn.IResolvable) {
     this._snsAction.internalValue = value;
   }
   public resetSnsAction() {
@@ -1852,7 +1852,7 @@ export class SesReceiptRule extends cdktf.TerraformResource {
   public get stopAction() {
     return this._stopAction;
   }
-  public putStopAction(value: SesReceiptRuleStopAction[] | cdktf.IResolvable) {
+  public putStopAction(value: SesReceiptRuleStopAction[] | cdktn.IResolvable) {
     this._stopAction.internalValue = value;
   }
   public resetStopAction() {
@@ -1868,7 +1868,7 @@ export class SesReceiptRule extends cdktf.TerraformResource {
   public get workmailAction() {
     return this._workmailAction;
   }
-  public putWorkmailAction(value: SesReceiptRuleWorkmailAction[] | cdktf.IResolvable) {
+  public putWorkmailAction(value: SesReceiptRuleWorkmailAction[] | cdktn.IResolvable) {
     this._workmailAction.internalValue = value;
   }
   public resetWorkmailAction() {
@@ -1885,119 +1885,119 @@ export class SesReceiptRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      after: cdktf.stringToTerraform(this._after),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(this._recipients),
-      region: cdktf.stringToTerraform(this._region),
-      rule_set_name: cdktf.stringToTerraform(this._ruleSetName),
-      scan_enabled: cdktf.booleanToTerraform(this._scanEnabled),
-      tls_policy: cdktf.stringToTerraform(this._tlsPolicy),
-      add_header_action: cdktf.listMapper(sesReceiptRuleAddHeaderActionToTerraform, true)(this._addHeaderAction.internalValue),
-      bounce_action: cdktf.listMapper(sesReceiptRuleBounceActionToTerraform, true)(this._bounceAction.internalValue),
-      lambda_action: cdktf.listMapper(sesReceiptRuleLambdaActionToTerraform, true)(this._lambdaAction.internalValue),
-      s3_action: cdktf.listMapper(sesReceiptRuleS3ActionToTerraform, true)(this._s3Action.internalValue),
-      sns_action: cdktf.listMapper(sesReceiptRuleSnsActionToTerraform, true)(this._snsAction.internalValue),
-      stop_action: cdktf.listMapper(sesReceiptRuleStopActionToTerraform, true)(this._stopAction.internalValue),
-      workmail_action: cdktf.listMapper(sesReceiptRuleWorkmailActionToTerraform, true)(this._workmailAction.internalValue),
+      after: cdktn.stringToTerraform(this._after),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(this._recipients),
+      region: cdktn.stringToTerraform(this._region),
+      rule_set_name: cdktn.stringToTerraform(this._ruleSetName),
+      scan_enabled: cdktn.booleanToTerraform(this._scanEnabled),
+      tls_policy: cdktn.stringToTerraform(this._tlsPolicy),
+      add_header_action: cdktn.listMapper(sesReceiptRuleAddHeaderActionToTerraform, true)(this._addHeaderAction.internalValue),
+      bounce_action: cdktn.listMapper(sesReceiptRuleBounceActionToTerraform, true)(this._bounceAction.internalValue),
+      lambda_action: cdktn.listMapper(sesReceiptRuleLambdaActionToTerraform, true)(this._lambdaAction.internalValue),
+      s3_action: cdktn.listMapper(sesReceiptRuleS3ActionToTerraform, true)(this._s3Action.internalValue),
+      sns_action: cdktn.listMapper(sesReceiptRuleSnsActionToTerraform, true)(this._snsAction.internalValue),
+      stop_action: cdktn.listMapper(sesReceiptRuleStopActionToTerraform, true)(this._stopAction.internalValue),
+      workmail_action: cdktn.listMapper(sesReceiptRuleWorkmailActionToTerraform, true)(this._workmailAction.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       after: {
-        value: cdktf.stringToHclTerraform(this._after),
+        value: cdktn.stringToHclTerraform(this._after),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recipients: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._recipients),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._recipients),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule_set_name: {
-        value: cdktf.stringToHclTerraform(this._ruleSetName),
+        value: cdktn.stringToHclTerraform(this._ruleSetName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scan_enabled: {
-        value: cdktf.booleanToHclTerraform(this._scanEnabled),
+        value: cdktn.booleanToHclTerraform(this._scanEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tls_policy: {
-        value: cdktf.stringToHclTerraform(this._tlsPolicy),
+        value: cdktn.stringToHclTerraform(this._tlsPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       add_header_action: {
-        value: cdktf.listMapperHcl(sesReceiptRuleAddHeaderActionToHclTerraform, true)(this._addHeaderAction.internalValue),
+        value: cdktn.listMapperHcl(sesReceiptRuleAddHeaderActionToHclTerraform, true)(this._addHeaderAction.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SesReceiptRuleAddHeaderActionList",
       },
       bounce_action: {
-        value: cdktf.listMapperHcl(sesReceiptRuleBounceActionToHclTerraform, true)(this._bounceAction.internalValue),
+        value: cdktn.listMapperHcl(sesReceiptRuleBounceActionToHclTerraform, true)(this._bounceAction.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SesReceiptRuleBounceActionList",
       },
       lambda_action: {
-        value: cdktf.listMapperHcl(sesReceiptRuleLambdaActionToHclTerraform, true)(this._lambdaAction.internalValue),
+        value: cdktn.listMapperHcl(sesReceiptRuleLambdaActionToHclTerraform, true)(this._lambdaAction.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SesReceiptRuleLambdaActionList",
       },
       s3_action: {
-        value: cdktf.listMapperHcl(sesReceiptRuleS3ActionToHclTerraform, true)(this._s3Action.internalValue),
+        value: cdktn.listMapperHcl(sesReceiptRuleS3ActionToHclTerraform, true)(this._s3Action.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SesReceiptRuleS3ActionList",
       },
       sns_action: {
-        value: cdktf.listMapperHcl(sesReceiptRuleSnsActionToHclTerraform, true)(this._snsAction.internalValue),
+        value: cdktn.listMapperHcl(sesReceiptRuleSnsActionToHclTerraform, true)(this._snsAction.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SesReceiptRuleSnsActionList",
       },
       stop_action: {
-        value: cdktf.listMapperHcl(sesReceiptRuleStopActionToHclTerraform, true)(this._stopAction.internalValue),
+        value: cdktn.listMapperHcl(sesReceiptRuleStopActionToHclTerraform, true)(this._stopAction.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SesReceiptRuleStopActionList",
       },
       workmail_action: {
-        value: cdktf.listMapperHcl(sesReceiptRuleWorkmailActionToHclTerraform, true)(this._workmailAction.internalValue),
+        value: cdktn.listMapperHcl(sesReceiptRuleWorkmailActionToHclTerraform, true)(this._workmailAction.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SesReceiptRuleWorkmailActionList",

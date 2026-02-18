@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RbinRuleConfig extends cdktf.TerraformMetaArguments {
+export interface RbinRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rbin_rule#description RbinRule#description}
   */
@@ -39,7 +39,7 @@ export interface RbinRuleConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rbin_rule#exclude_resource_tags RbinRule#exclude_resource_tags}
   */
-  readonly excludeResourceTags?: RbinRuleExcludeResourceTags[] | cdktf.IResolvable;
+  readonly excludeResourceTags?: RbinRuleExcludeResourceTags[] | cdktn.IResolvable;
   /**
   * lock_configuration block
   *
@@ -51,7 +51,7 @@ export interface RbinRuleConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rbin_rule#resource_tags RbinRule#resource_tags}
   */
-  readonly resourceTags?: RbinRuleResourceTags[] | cdktf.IResolvable;
+  readonly resourceTags?: RbinRuleResourceTags[] | cdktn.IResolvable;
   /**
   * retention_period block
   *
@@ -76,32 +76,32 @@ export interface RbinRuleExcludeResourceTags {
   readonly resourceTagValue?: string;
 }
 
-export function rbinRuleExcludeResourceTagsToTerraform(struct?: RbinRuleExcludeResourceTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rbinRuleExcludeResourceTagsToTerraform(struct?: RbinRuleExcludeResourceTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_tag_key: cdktf.stringToTerraform(struct!.resourceTagKey),
-    resource_tag_value: cdktf.stringToTerraform(struct!.resourceTagValue),
+    resource_tag_key: cdktn.stringToTerraform(struct!.resourceTagKey),
+    resource_tag_value: cdktn.stringToTerraform(struct!.resourceTagValue),
   }
 }
 
 
-export function rbinRuleExcludeResourceTagsToHclTerraform(struct?: RbinRuleExcludeResourceTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rbinRuleExcludeResourceTagsToHclTerraform(struct?: RbinRuleExcludeResourceTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource_tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.resourceTagKey),
+      value: cdktn.stringToHclTerraform(struct!.resourceTagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.resourceTagValue),
+      value: cdktn.stringToHclTerraform(struct!.resourceTagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -112,9 +112,9 @@ export function rbinRuleExcludeResourceTagsToHclTerraform(struct?: RbinRuleExclu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RbinRuleExcludeResourceTagsOutputReference extends cdktf.ComplexObject {
+export class RbinRuleExcludeResourceTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -122,11 +122,11 @@ export class RbinRuleExcludeResourceTagsOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RbinRuleExcludeResourceTags | cdktf.IResolvable | undefined {
+  public get internalValue(): RbinRuleExcludeResourceTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -143,14 +143,14 @@ export class RbinRuleExcludeResourceTagsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RbinRuleExcludeResourceTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RbinRuleExcludeResourceTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._resourceTagKey = undefined;
       this._resourceTagValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -192,15 +192,15 @@ export class RbinRuleExcludeResourceTagsOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class RbinRuleExcludeResourceTagsList extends cdktf.ComplexList {
-  public internalValue? : RbinRuleExcludeResourceTags[] | cdktf.IResolvable
+export class RbinRuleExcludeResourceTagsList extends cdktn.ComplexList {
+  public internalValue? : RbinRuleExcludeResourceTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -223,31 +223,31 @@ export interface RbinRuleLockConfigurationUnlockDelay {
 }
 
 export function rbinRuleLockConfigurationUnlockDelayToTerraform(struct?: RbinRuleLockConfigurationUnlockDelayOutputReference | RbinRuleLockConfigurationUnlockDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unlock_delay_unit: cdktf.stringToTerraform(struct!.unlockDelayUnit),
-    unlock_delay_value: cdktf.numberToTerraform(struct!.unlockDelayValue),
+    unlock_delay_unit: cdktn.stringToTerraform(struct!.unlockDelayUnit),
+    unlock_delay_value: cdktn.numberToTerraform(struct!.unlockDelayValue),
   }
 }
 
 
 export function rbinRuleLockConfigurationUnlockDelayToHclTerraform(struct?: RbinRuleLockConfigurationUnlockDelayOutputReference | RbinRuleLockConfigurationUnlockDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unlock_delay_unit: {
-      value: cdktf.stringToHclTerraform(struct!.unlockDelayUnit),
+      value: cdktn.stringToHclTerraform(struct!.unlockDelayUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unlock_delay_value: {
-      value: cdktf.numberToHclTerraform(struct!.unlockDelayValue),
+      value: cdktn.numberToHclTerraform(struct!.unlockDelayValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -258,14 +258,14 @@ export function rbinRuleLockConfigurationUnlockDelayToHclTerraform(struct?: Rbin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RbinRuleLockConfigurationUnlockDelayOutputReference extends cdktf.ComplexObject {
+export class RbinRuleLockConfigurationUnlockDelayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -332,8 +332,8 @@ export interface RbinRuleLockConfiguration {
 }
 
 export function rbinRuleLockConfigurationToTerraform(struct?: RbinRuleLockConfigurationOutputReference | RbinRuleLockConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -343,8 +343,8 @@ export function rbinRuleLockConfigurationToTerraform(struct?: RbinRuleLockConfig
 
 
 export function rbinRuleLockConfigurationToHclTerraform(struct?: RbinRuleLockConfigurationOutputReference | RbinRuleLockConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -360,14 +360,14 @@ export function rbinRuleLockConfigurationToHclTerraform(struct?: RbinRuleLockCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RbinRuleLockConfigurationOutputReference extends cdktf.ComplexObject {
+export class RbinRuleLockConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -416,32 +416,32 @@ export interface RbinRuleResourceTags {
   readonly resourceTagValue?: string;
 }
 
-export function rbinRuleResourceTagsToTerraform(struct?: RbinRuleResourceTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rbinRuleResourceTagsToTerraform(struct?: RbinRuleResourceTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_tag_key: cdktf.stringToTerraform(struct!.resourceTagKey),
-    resource_tag_value: cdktf.stringToTerraform(struct!.resourceTagValue),
+    resource_tag_key: cdktn.stringToTerraform(struct!.resourceTagKey),
+    resource_tag_value: cdktn.stringToTerraform(struct!.resourceTagValue),
   }
 }
 
 
-export function rbinRuleResourceTagsToHclTerraform(struct?: RbinRuleResourceTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rbinRuleResourceTagsToHclTerraform(struct?: RbinRuleResourceTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource_tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.resourceTagKey),
+      value: cdktn.stringToHclTerraform(struct!.resourceTagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.resourceTagValue),
+      value: cdktn.stringToHclTerraform(struct!.resourceTagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -452,9 +452,9 @@ export function rbinRuleResourceTagsToHclTerraform(struct?: RbinRuleResourceTags
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RbinRuleResourceTagsOutputReference extends cdktf.ComplexObject {
+export class RbinRuleResourceTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -462,11 +462,11 @@ export class RbinRuleResourceTagsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RbinRuleResourceTags | cdktf.IResolvable | undefined {
+  public get internalValue(): RbinRuleResourceTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -483,14 +483,14 @@ export class RbinRuleResourceTagsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RbinRuleResourceTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RbinRuleResourceTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._resourceTagKey = undefined;
       this._resourceTagValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -532,15 +532,15 @@ export class RbinRuleResourceTagsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class RbinRuleResourceTagsList extends cdktf.ComplexList {
-  public internalValue? : RbinRuleResourceTags[] | cdktf.IResolvable
+export class RbinRuleResourceTagsList extends cdktn.ComplexList {
+  public internalValue? : RbinRuleResourceTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -563,31 +563,31 @@ export interface RbinRuleRetentionPeriod {
 }
 
 export function rbinRuleRetentionPeriodToTerraform(struct?: RbinRuleRetentionPeriodOutputReference | RbinRuleRetentionPeriod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    retention_period_unit: cdktf.stringToTerraform(struct!.retentionPeriodUnit),
-    retention_period_value: cdktf.numberToTerraform(struct!.retentionPeriodValue),
+    retention_period_unit: cdktn.stringToTerraform(struct!.retentionPeriodUnit),
+    retention_period_value: cdktn.numberToTerraform(struct!.retentionPeriodValue),
   }
 }
 
 
 export function rbinRuleRetentionPeriodToHclTerraform(struct?: RbinRuleRetentionPeriodOutputReference | RbinRuleRetentionPeriod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     retention_period_unit: {
-      value: cdktf.stringToHclTerraform(struct!.retentionPeriodUnit),
+      value: cdktn.stringToHclTerraform(struct!.retentionPeriodUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retention_period_value: {
-      value: cdktf.numberToHclTerraform(struct!.retentionPeriodValue),
+      value: cdktn.numberToHclTerraform(struct!.retentionPeriodValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -598,14 +598,14 @@ export function rbinRuleRetentionPeriodToHclTerraform(struct?: RbinRuleRetention
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RbinRuleRetentionPeriodOutputReference extends cdktf.ComplexObject {
+export class RbinRuleRetentionPeriodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -677,39 +677,39 @@ export interface RbinRuleTimeouts {
   readonly update?: string;
 }
 
-export function rbinRuleTimeoutsToTerraform(struct?: RbinRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rbinRuleTimeoutsToTerraform(struct?: RbinRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function rbinRuleTimeoutsToHclTerraform(struct?: RbinRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rbinRuleTimeoutsToHclTerraform(struct?: RbinRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -720,19 +720,19 @@ export function rbinRuleTimeoutsToHclTerraform(struct?: RbinRuleTimeouts | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RbinRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RbinRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RbinRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RbinRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -753,7 +753,7 @@ export class RbinRuleTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RbinRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RbinRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -761,7 +761,7 @@ export class RbinRuleTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -826,7 +826,7 @@ export class RbinRuleTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rbin_rule aws_rbin_rule}
 */
-export class RbinRule extends cdktf.TerraformResource {
+export class RbinRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -837,14 +837,14 @@ export class RbinRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RbinRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RbinRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RbinRule to import
   * @param importFromId The id of the existing RbinRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rbin_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RbinRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_rbin_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_rbin_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -997,7 +997,7 @@ export class RbinRule extends cdktf.TerraformResource {
   public get excludeResourceTags() {
     return this._excludeResourceTags;
   }
-  public putExcludeResourceTags(value: RbinRuleExcludeResourceTags[] | cdktf.IResolvable) {
+  public putExcludeResourceTags(value: RbinRuleExcludeResourceTags[] | cdktn.IResolvable) {
     this._excludeResourceTags.internalValue = value;
   }
   public resetExcludeResourceTags() {
@@ -1029,7 +1029,7 @@ export class RbinRule extends cdktf.TerraformResource {
   public get resourceTags() {
     return this._resourceTags;
   }
-  public putResourceTags(value: RbinRuleResourceTags[] | cdktf.IResolvable) {
+  public putResourceTags(value: RbinRuleResourceTags[] | cdktn.IResolvable) {
     this._resourceTags.internalValue = value;
   }
   public resetResourceTags() {
@@ -1075,14 +1075,14 @@ export class RbinRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      region: cdktf.stringToTerraform(this._region),
-      resource_type: cdktf.stringToTerraform(this._resourceType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      exclude_resource_tags: cdktf.listMapper(rbinRuleExcludeResourceTagsToTerraform, true)(this._excludeResourceTags.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      region: cdktn.stringToTerraform(this._region),
+      resource_type: cdktn.stringToTerraform(this._resourceType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      exclude_resource_tags: cdktn.listMapper(rbinRuleExcludeResourceTagsToTerraform, true)(this._excludeResourceTags.internalValue),
       lock_configuration: rbinRuleLockConfigurationToTerraform(this._lockConfiguration.internalValue),
-      resource_tags: cdktf.listMapper(rbinRuleResourceTagsToTerraform, true)(this._resourceTags.internalValue),
+      resource_tags: cdktn.listMapper(rbinRuleResourceTagsToTerraform, true)(this._resourceTags.internalValue),
       retention_period: rbinRuleRetentionPeriodToTerraform(this._retentionPeriod.internalValue),
       timeouts: rbinRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1091,37 +1091,37 @@ export class RbinRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_type: {
-        value: cdktf.stringToHclTerraform(this._resourceType),
+        value: cdktn.stringToHclTerraform(this._resourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       exclude_resource_tags: {
-        value: cdktf.listMapperHcl(rbinRuleExcludeResourceTagsToHclTerraform, true)(this._excludeResourceTags.internalValue),
+        value: cdktn.listMapperHcl(rbinRuleExcludeResourceTagsToHclTerraform, true)(this._excludeResourceTags.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "RbinRuleExcludeResourceTagsList",
@@ -1133,7 +1133,7 @@ export class RbinRule extends cdktf.TerraformResource {
         storageClassType: "RbinRuleLockConfigurationList",
       },
       resource_tags: {
-        value: cdktf.listMapperHcl(rbinRuleResourceTagsToHclTerraform, true)(this._resourceTags.internalValue),
+        value: cdktn.listMapperHcl(rbinRuleResourceTagsToHclTerraform, true)(this._resourceTags.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "RbinRuleResourceTagsList",

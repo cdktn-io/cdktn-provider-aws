@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ChimeVoiceConnectorTerminationCredentialsConfig extends cdktf.TerraformMetaArguments {
+export interface ChimeVoiceConnectorTerminationCredentialsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector_termination_credentials#id ChimeVoiceConnectorTerminationCredentials#id}
   *
@@ -34,7 +34,7 @@ export interface ChimeVoiceConnectorTerminationCredentialsConfig extends cdktf.T
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector_termination_credentials#credentials ChimeVoiceConnectorTerminationCredentials#credentials}
   */
-  readonly credentials: ChimeVoiceConnectorTerminationCredentialsCredentials[] | cdktf.IResolvable;
+  readonly credentials: ChimeVoiceConnectorTerminationCredentialsCredentials[] | cdktn.IResolvable;
 }
 export interface ChimeVoiceConnectorTerminationCredentialsCredentials {
   /**
@@ -47,32 +47,32 @@ export interface ChimeVoiceConnectorTerminationCredentialsCredentials {
   readonly username: string;
 }
 
-export function chimeVoiceConnectorTerminationCredentialsCredentialsToTerraform(struct?: ChimeVoiceConnectorTerminationCredentialsCredentials | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chimeVoiceConnectorTerminationCredentialsCredentialsToTerraform(struct?: ChimeVoiceConnectorTerminationCredentialsCredentials | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function chimeVoiceConnectorTerminationCredentialsCredentialsToHclTerraform(struct?: ChimeVoiceConnectorTerminationCredentialsCredentials | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chimeVoiceConnectorTerminationCredentialsCredentialsToHclTerraform(struct?: ChimeVoiceConnectorTerminationCredentialsCredentials | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,9 +83,9 @@ export function chimeVoiceConnectorTerminationCredentialsCredentialsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference extends cdktf.ComplexObject {
+export class ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -93,11 +93,11 @@ export class ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ChimeVoiceConnectorTerminationCredentialsCredentials | cdktf.IResolvable | undefined {
+  public get internalValue(): ChimeVoiceConnectorTerminationCredentialsCredentials | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -114,14 +114,14 @@ export class ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChimeVoiceConnectorTerminationCredentialsCredentials | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChimeVoiceConnectorTerminationCredentialsCredentials | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._password = undefined;
       this._username = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -160,15 +160,15 @@ export class ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference
   }
 }
 
-export class ChimeVoiceConnectorTerminationCredentialsCredentialsList extends cdktf.ComplexList {
-  public internalValue? : ChimeVoiceConnectorTerminationCredentialsCredentials[] | cdktf.IResolvable
+export class ChimeVoiceConnectorTerminationCredentialsCredentialsList extends cdktn.ComplexList {
+  public internalValue? : ChimeVoiceConnectorTerminationCredentialsCredentials[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -183,7 +183,7 @@ export class ChimeVoiceConnectorTerminationCredentialsCredentialsList extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials}
 */
-export class ChimeVoiceConnectorTerminationCredentials extends cdktf.TerraformResource {
+export class ChimeVoiceConnectorTerminationCredentials extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -194,14 +194,14 @@ export class ChimeVoiceConnectorTerminationCredentials extends cdktf.TerraformRe
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ChimeVoiceConnectorTerminationCredentials resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ChimeVoiceConnectorTerminationCredentials resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChimeVoiceConnectorTerminationCredentials to import
   * @param importFromId The id of the existing ChimeVoiceConnectorTerminationCredentials that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector_termination_credentials#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChimeVoiceConnectorTerminationCredentials to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_chime_voice_connector_termination_credentials", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_chime_voice_connector_termination_credentials", importId: importFromId, provider });
       }
 
   // ===========
@@ -291,7 +291,7 @@ export class ChimeVoiceConnectorTerminationCredentials extends cdktf.TerraformRe
   public get credentials() {
     return this._credentials;
   }
-  public putCredentials(value: ChimeVoiceConnectorTerminationCredentialsCredentials[] | cdktf.IResolvable) {
+  public putCredentials(value: ChimeVoiceConnectorTerminationCredentialsCredentials[] | cdktn.IResolvable) {
     this._credentials.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -305,35 +305,35 @@ export class ChimeVoiceConnectorTerminationCredentials extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      voice_connector_id: cdktf.stringToTerraform(this._voiceConnectorId),
-      credentials: cdktf.listMapper(chimeVoiceConnectorTerminationCredentialsCredentialsToTerraform, true)(this._credentials.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      voice_connector_id: cdktn.stringToTerraform(this._voiceConnectorId),
+      credentials: cdktn.listMapper(chimeVoiceConnectorTerminationCredentialsCredentialsToTerraform, true)(this._credentials.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       voice_connector_id: {
-        value: cdktf.stringToHclTerraform(this._voiceConnectorId),
+        value: cdktn.stringToHclTerraform(this._voiceConnectorId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       credentials: {
-        value: cdktf.listMapperHcl(chimeVoiceConnectorTerminationCredentialsCredentialsToHclTerraform, true)(this._credentials.internalValue),
+        value: cdktn.listMapperHcl(chimeVoiceConnectorTerminationCredentialsCredentialsToHclTerraform, true)(this._credentials.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ChimeVoiceConnectorTerminationCredentialsCredentialsList",

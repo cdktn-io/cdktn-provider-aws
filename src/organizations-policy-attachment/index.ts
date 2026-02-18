@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OrganizationsPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface OrganizationsPolicyAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/organizations_policy_attachment#id OrganizationsPolicyAttachment#id}
   *
@@ -26,7 +26,7 @@ export interface OrganizationsPolicyAttachmentConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/organizations_policy_attachment#skip_destroy OrganizationsPolicyAttachment#skip_destroy}
   */
-  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  readonly skipDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/organizations_policy_attachment#target_id OrganizationsPolicyAttachment#target_id}
   */
@@ -36,7 +36,7 @@ export interface OrganizationsPolicyAttachmentConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/organizations_policy_attachment aws_organizations_policy_attachment}
 */
-export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
+export class OrganizationsPolicyAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OrganizationsPolicyAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OrganizationsPolicyAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationsPolicyAttachment to import
   * @param importFromId The id of the existing OrganizationsPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/organizations_policy_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationsPolicyAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_organizations_policy_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_organizations_policy_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -124,11 +124,11 @@ export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
   }
 
   // skip_destroy - computed: false, optional: true, required: false
-  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  private _skipDestroy?: boolean | cdktn.IResolvable; 
   public get skipDestroy() {
     return this.getBooleanAttribute('skip_destroy');
   }
-  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+  public set skipDestroy(value: boolean | cdktn.IResolvable) {
     this._skipDestroy = value;
   }
   public resetSkipDestroy() {
@@ -158,35 +158,35 @@ export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      policy_id: cdktf.stringToTerraform(this._policyId),
-      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
-      target_id: cdktf.stringToTerraform(this._targetId),
+      id: cdktn.stringToTerraform(this._id),
+      policy_id: cdktn.stringToTerraform(this._policyId),
+      skip_destroy: cdktn.booleanToTerraform(this._skipDestroy),
+      target_id: cdktn.stringToTerraform(this._targetId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_id: {
-        value: cdktf.stringToHclTerraform(this._policyId),
+        value: cdktn.stringToHclTerraform(this._policyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_destroy: {
-        value: cdktf.booleanToHclTerraform(this._skipDestroy),
+        value: cdktn.booleanToHclTerraform(this._skipDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       target_id: {
-        value: cdktf.stringToHclTerraform(this._targetId),
+        value: cdktn.stringToHclTerraform(this._targetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

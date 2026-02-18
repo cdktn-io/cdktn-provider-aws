@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ElastictranscoderPipelineConfig extends cdktf.TerraformMetaArguments {
+export interface ElastictranscoderPipelineConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastictranscoder_pipeline#aws_kms_key_arn ElastictranscoderPipeline#aws_kms_key_arn}
   */
@@ -56,7 +56,7 @@ export interface ElastictranscoderPipelineConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastictranscoder_pipeline#content_config_permissions ElastictranscoderPipeline#content_config_permissions}
   */
-  readonly contentConfigPermissions?: ElastictranscoderPipelineContentConfigPermissions[] | cdktf.IResolvable;
+  readonly contentConfigPermissions?: ElastictranscoderPipelineContentConfigPermissions[] | cdktn.IResolvable;
   /**
   * notifications block
   *
@@ -74,7 +74,7 @@ export interface ElastictranscoderPipelineConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastictranscoder_pipeline#thumbnail_config_permissions ElastictranscoderPipeline#thumbnail_config_permissions}
   */
-  readonly thumbnailConfigPermissions?: ElastictranscoderPipelineThumbnailConfigPermissions[] | cdktf.IResolvable;
+  readonly thumbnailConfigPermissions?: ElastictranscoderPipelineThumbnailConfigPermissions[] | cdktn.IResolvable;
 }
 export interface ElastictranscoderPipelineContentConfig {
   /**
@@ -88,31 +88,31 @@ export interface ElastictranscoderPipelineContentConfig {
 }
 
 export function elastictranscoderPipelineContentConfigToTerraform(struct?: ElastictranscoderPipelineContentConfigOutputReference | ElastictranscoderPipelineContentConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    storage_class: cdktf.stringToTerraform(struct!.storageClass),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    storage_class: cdktn.stringToTerraform(struct!.storageClass),
   }
 }
 
 
 export function elastictranscoderPipelineContentConfigToHclTerraform(struct?: ElastictranscoderPipelineContentConfigOutputReference | ElastictranscoderPipelineContentConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_class: {
-      value: cdktf.stringToHclTerraform(struct!.storageClass),
+      value: cdktn.stringToHclTerraform(struct!.storageClass),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,14 +123,14 @@ export function elastictranscoderPipelineContentConfigToHclTerraform(struct?: El
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElastictranscoderPipelineContentConfigOutputReference extends cdktf.ComplexObject {
+export class ElastictranscoderPipelineContentConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -208,39 +208,39 @@ export interface ElastictranscoderPipelineContentConfigPermissions {
   readonly granteeType?: string;
 }
 
-export function elastictranscoderPipelineContentConfigPermissionsToTerraform(struct?: ElastictranscoderPipelineContentConfigPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elastictranscoderPipelineContentConfigPermissionsToTerraform(struct?: ElastictranscoderPipelineContentConfigPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.access),
-    grantee: cdktf.stringToTerraform(struct!.grantee),
-    grantee_type: cdktf.stringToTerraform(struct!.granteeType),
+    access: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.access),
+    grantee: cdktn.stringToTerraform(struct!.grantee),
+    grantee_type: cdktn.stringToTerraform(struct!.granteeType),
   }
 }
 
 
-export function elastictranscoderPipelineContentConfigPermissionsToHclTerraform(struct?: ElastictranscoderPipelineContentConfigPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elastictranscoderPipelineContentConfigPermissionsToHclTerraform(struct?: ElastictranscoderPipelineContentConfigPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.access),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.access),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     grantee: {
-      value: cdktf.stringToHclTerraform(struct!.grantee),
+      value: cdktn.stringToHclTerraform(struct!.grantee),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     grantee_type: {
-      value: cdktf.stringToHclTerraform(struct!.granteeType),
+      value: cdktn.stringToHclTerraform(struct!.granteeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -251,9 +251,9 @@ export function elastictranscoderPipelineContentConfigPermissionsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElastictranscoderPipelineContentConfigPermissionsOutputReference extends cdktf.ComplexObject {
+export class ElastictranscoderPipelineContentConfigPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -261,11 +261,11 @@ export class ElastictranscoderPipelineContentConfigPermissionsOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ElastictranscoderPipelineContentConfigPermissions | cdktf.IResolvable | undefined {
+  public get internalValue(): ElastictranscoderPipelineContentConfigPermissions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -286,7 +286,7 @@ export class ElastictranscoderPipelineContentConfigPermissionsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElastictranscoderPipelineContentConfigPermissions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElastictranscoderPipelineContentConfigPermissions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -294,7 +294,7 @@ export class ElastictranscoderPipelineContentConfigPermissionsOutputReference ex
       this._grantee = undefined;
       this._granteeType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -356,15 +356,15 @@ export class ElastictranscoderPipelineContentConfigPermissionsOutputReference ex
   }
 }
 
-export class ElastictranscoderPipelineContentConfigPermissionsList extends cdktf.ComplexList {
-  public internalValue? : ElastictranscoderPipelineContentConfigPermissions[] | cdktf.IResolvable
+export class ElastictranscoderPipelineContentConfigPermissionsList extends cdktn.ComplexList {
+  public internalValue? : ElastictranscoderPipelineContentConfigPermissions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -395,45 +395,45 @@ export interface ElastictranscoderPipelineNotifications {
 }
 
 export function elastictranscoderPipelineNotificationsToTerraform(struct?: ElastictranscoderPipelineNotificationsOutputReference | ElastictranscoderPipelineNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    completed: cdktf.stringToTerraform(struct!.completed),
-    error: cdktf.stringToTerraform(struct!.error),
-    progressing: cdktf.stringToTerraform(struct!.progressing),
-    warning: cdktf.stringToTerraform(struct!.warning),
+    completed: cdktn.stringToTerraform(struct!.completed),
+    error: cdktn.stringToTerraform(struct!.error),
+    progressing: cdktn.stringToTerraform(struct!.progressing),
+    warning: cdktn.stringToTerraform(struct!.warning),
   }
 }
 
 
 export function elastictranscoderPipelineNotificationsToHclTerraform(struct?: ElastictranscoderPipelineNotificationsOutputReference | ElastictranscoderPipelineNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     completed: {
-      value: cdktf.stringToHclTerraform(struct!.completed),
+      value: cdktn.stringToHclTerraform(struct!.completed),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     error: {
-      value: cdktf.stringToHclTerraform(struct!.error),
+      value: cdktn.stringToHclTerraform(struct!.error),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     progressing: {
-      value: cdktf.stringToHclTerraform(struct!.progressing),
+      value: cdktn.stringToHclTerraform(struct!.progressing),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     warning: {
-      value: cdktf.stringToHclTerraform(struct!.warning),
+      value: cdktn.stringToHclTerraform(struct!.warning),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -444,14 +444,14 @@ export function elastictranscoderPipelineNotificationsToHclTerraform(struct?: El
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElastictranscoderPipelineNotificationsOutputReference extends cdktf.ComplexObject {
+export class ElastictranscoderPipelineNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -570,31 +570,31 @@ export interface ElastictranscoderPipelineThumbnailConfig {
 }
 
 export function elastictranscoderPipelineThumbnailConfigToTerraform(struct?: ElastictranscoderPipelineThumbnailConfigOutputReference | ElastictranscoderPipelineThumbnailConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    storage_class: cdktf.stringToTerraform(struct!.storageClass),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    storage_class: cdktn.stringToTerraform(struct!.storageClass),
   }
 }
 
 
 export function elastictranscoderPipelineThumbnailConfigToHclTerraform(struct?: ElastictranscoderPipelineThumbnailConfigOutputReference | ElastictranscoderPipelineThumbnailConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_class: {
-      value: cdktf.stringToHclTerraform(struct!.storageClass),
+      value: cdktn.stringToHclTerraform(struct!.storageClass),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -605,14 +605,14 @@ export function elastictranscoderPipelineThumbnailConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElastictranscoderPipelineThumbnailConfigOutputReference extends cdktf.ComplexObject {
+export class ElastictranscoderPipelineThumbnailConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -690,39 +690,39 @@ export interface ElastictranscoderPipelineThumbnailConfigPermissions {
   readonly granteeType?: string;
 }
 
-export function elastictranscoderPipelineThumbnailConfigPermissionsToTerraform(struct?: ElastictranscoderPipelineThumbnailConfigPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elastictranscoderPipelineThumbnailConfigPermissionsToTerraform(struct?: ElastictranscoderPipelineThumbnailConfigPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.access),
-    grantee: cdktf.stringToTerraform(struct!.grantee),
-    grantee_type: cdktf.stringToTerraform(struct!.granteeType),
+    access: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.access),
+    grantee: cdktn.stringToTerraform(struct!.grantee),
+    grantee_type: cdktn.stringToTerraform(struct!.granteeType),
   }
 }
 
 
-export function elastictranscoderPipelineThumbnailConfigPermissionsToHclTerraform(struct?: ElastictranscoderPipelineThumbnailConfigPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elastictranscoderPipelineThumbnailConfigPermissionsToHclTerraform(struct?: ElastictranscoderPipelineThumbnailConfigPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.access),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.access),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     grantee: {
-      value: cdktf.stringToHclTerraform(struct!.grantee),
+      value: cdktn.stringToHclTerraform(struct!.grantee),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     grantee_type: {
-      value: cdktf.stringToHclTerraform(struct!.granteeType),
+      value: cdktn.stringToHclTerraform(struct!.granteeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -733,9 +733,9 @@ export function elastictranscoderPipelineThumbnailConfigPermissionsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference extends cdktf.ComplexObject {
+export class ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -743,11 +743,11 @@ export class ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ElastictranscoderPipelineThumbnailConfigPermissions | cdktf.IResolvable | undefined {
+  public get internalValue(): ElastictranscoderPipelineThumbnailConfigPermissions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -768,7 +768,7 @@ export class ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElastictranscoderPipelineThumbnailConfigPermissions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElastictranscoderPipelineThumbnailConfigPermissions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -776,7 +776,7 @@ export class ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference 
       this._grantee = undefined;
       this._granteeType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -838,15 +838,15 @@ export class ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference 
   }
 }
 
-export class ElastictranscoderPipelineThumbnailConfigPermissionsList extends cdktf.ComplexList {
-  public internalValue? : ElastictranscoderPipelineThumbnailConfigPermissions[] | cdktf.IResolvable
+export class ElastictranscoderPipelineThumbnailConfigPermissionsList extends cdktn.ComplexList {
+  public internalValue? : ElastictranscoderPipelineThumbnailConfigPermissions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -861,7 +861,7 @@ export class ElastictranscoderPipelineThumbnailConfigPermissionsList extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline}
 */
-export class ElastictranscoderPipeline extends cdktf.TerraformResource {
+export class ElastictranscoderPipeline extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -872,14 +872,14 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ElastictranscoderPipeline resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ElastictranscoderPipeline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElastictranscoderPipeline to import
   * @param importFromId The id of the existing ElastictranscoderPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastictranscoder_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElastictranscoderPipeline to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_elastictranscoder_pipeline", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_elastictranscoder_pipeline", importId: importFromId, provider });
       }
 
   // ===========
@@ -1059,7 +1059,7 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
   public get contentConfigPermissions() {
     return this._contentConfigPermissions;
   }
-  public putContentConfigPermissions(value: ElastictranscoderPipelineContentConfigPermissions[] | cdktf.IResolvable) {
+  public putContentConfigPermissions(value: ElastictranscoderPipelineContentConfigPermissions[] | cdktn.IResolvable) {
     this._contentConfigPermissions.internalValue = value;
   }
   public resetContentConfigPermissions() {
@@ -1107,7 +1107,7 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
   public get thumbnailConfigPermissions() {
     return this._thumbnailConfigPermissions;
   }
-  public putThumbnailConfigPermissions(value: ElastictranscoderPipelineThumbnailConfigPermissions[] | cdktf.IResolvable) {
+  public putThumbnailConfigPermissions(value: ElastictranscoderPipelineThumbnailConfigPermissions[] | cdktn.IResolvable) {
     this._thumbnailConfigPermissions.internalValue = value;
   }
   public resetThumbnailConfigPermissions() {
@@ -1124,61 +1124,61 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_kms_key_arn: cdktf.stringToTerraform(this._awsKmsKeyArn),
-      id: cdktf.stringToTerraform(this._id),
-      input_bucket: cdktf.stringToTerraform(this._inputBucket),
-      name: cdktf.stringToTerraform(this._name),
-      output_bucket: cdktf.stringToTerraform(this._outputBucket),
-      region: cdktf.stringToTerraform(this._region),
-      role: cdktf.stringToTerraform(this._role),
+      aws_kms_key_arn: cdktn.stringToTerraform(this._awsKmsKeyArn),
+      id: cdktn.stringToTerraform(this._id),
+      input_bucket: cdktn.stringToTerraform(this._inputBucket),
+      name: cdktn.stringToTerraform(this._name),
+      output_bucket: cdktn.stringToTerraform(this._outputBucket),
+      region: cdktn.stringToTerraform(this._region),
+      role: cdktn.stringToTerraform(this._role),
       content_config: elastictranscoderPipelineContentConfigToTerraform(this._contentConfig.internalValue),
-      content_config_permissions: cdktf.listMapper(elastictranscoderPipelineContentConfigPermissionsToTerraform, true)(this._contentConfigPermissions.internalValue),
+      content_config_permissions: cdktn.listMapper(elastictranscoderPipelineContentConfigPermissionsToTerraform, true)(this._contentConfigPermissions.internalValue),
       notifications: elastictranscoderPipelineNotificationsToTerraform(this._notifications.internalValue),
       thumbnail_config: elastictranscoderPipelineThumbnailConfigToTerraform(this._thumbnailConfig.internalValue),
-      thumbnail_config_permissions: cdktf.listMapper(elastictranscoderPipelineThumbnailConfigPermissionsToTerraform, true)(this._thumbnailConfigPermissions.internalValue),
+      thumbnail_config_permissions: cdktn.listMapper(elastictranscoderPipelineThumbnailConfigPermissionsToTerraform, true)(this._thumbnailConfigPermissions.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_kms_key_arn: {
-        value: cdktf.stringToHclTerraform(this._awsKmsKeyArn),
+        value: cdktn.stringToHclTerraform(this._awsKmsKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       input_bucket: {
-        value: cdktf.stringToHclTerraform(this._inputBucket),
+        value: cdktn.stringToHclTerraform(this._inputBucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       output_bucket: {
-        value: cdktf.stringToHclTerraform(this._outputBucket),
+        value: cdktn.stringToHclTerraform(this._outputBucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1190,7 +1190,7 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
         storageClassType: "ElastictranscoderPipelineContentConfigList",
       },
       content_config_permissions: {
-        value: cdktf.listMapperHcl(elastictranscoderPipelineContentConfigPermissionsToHclTerraform, true)(this._contentConfigPermissions.internalValue),
+        value: cdktn.listMapperHcl(elastictranscoderPipelineContentConfigPermissionsToHclTerraform, true)(this._contentConfigPermissions.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ElastictranscoderPipelineContentConfigPermissionsList",
@@ -1208,7 +1208,7 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
         storageClassType: "ElastictranscoderPipelineThumbnailConfigList",
       },
       thumbnail_config_permissions: {
-        value: cdktf.listMapperHcl(elastictranscoderPipelineThumbnailConfigPermissionsToHclTerraform, true)(this._thumbnailConfigPermissions.internalValue),
+        value: cdktn.listMapperHcl(elastictranscoderPipelineThumbnailConfigPermissionsToHclTerraform, true)(this._thumbnailConfigPermissions.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ElastictranscoderPipelineThumbnailConfigPermissionsList",

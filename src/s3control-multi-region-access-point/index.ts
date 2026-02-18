@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3ControlMultiRegionAccessPointConfig extends cdktf.TerraformMetaArguments {
+export interface S3ControlMultiRegionAccessPointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_multi_region_access_point#account_id S3ControlMultiRegionAccessPoint#account_id}
   */
@@ -46,61 +46,61 @@ export interface S3ControlMultiRegionAccessPointDetailsPublicAccessBlock {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_multi_region_access_point#block_public_acls S3ControlMultiRegionAccessPoint#block_public_acls}
   */
-  readonly blockPublicAcls?: boolean | cdktf.IResolvable;
+  readonly blockPublicAcls?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_multi_region_access_point#block_public_policy S3ControlMultiRegionAccessPoint#block_public_policy}
   */
-  readonly blockPublicPolicy?: boolean | cdktf.IResolvable;
+  readonly blockPublicPolicy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_multi_region_access_point#ignore_public_acls S3ControlMultiRegionAccessPoint#ignore_public_acls}
   */
-  readonly ignorePublicAcls?: boolean | cdktf.IResolvable;
+  readonly ignorePublicAcls?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_multi_region_access_point#restrict_public_buckets S3ControlMultiRegionAccessPoint#restrict_public_buckets}
   */
-  readonly restrictPublicBuckets?: boolean | cdktf.IResolvable;
+  readonly restrictPublicBuckets?: boolean | cdktn.IResolvable;
 }
 
 export function s3ControlMultiRegionAccessPointDetailsPublicAccessBlockToTerraform(struct?: S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference | S3ControlMultiRegionAccessPointDetailsPublicAccessBlock): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    block_public_acls: cdktf.booleanToTerraform(struct!.blockPublicAcls),
-    block_public_policy: cdktf.booleanToTerraform(struct!.blockPublicPolicy),
-    ignore_public_acls: cdktf.booleanToTerraform(struct!.ignorePublicAcls),
-    restrict_public_buckets: cdktf.booleanToTerraform(struct!.restrictPublicBuckets),
+    block_public_acls: cdktn.booleanToTerraform(struct!.blockPublicAcls),
+    block_public_policy: cdktn.booleanToTerraform(struct!.blockPublicPolicy),
+    ignore_public_acls: cdktn.booleanToTerraform(struct!.ignorePublicAcls),
+    restrict_public_buckets: cdktn.booleanToTerraform(struct!.restrictPublicBuckets),
   }
 }
 
 
 export function s3ControlMultiRegionAccessPointDetailsPublicAccessBlockToHclTerraform(struct?: S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference | S3ControlMultiRegionAccessPointDetailsPublicAccessBlock): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     block_public_acls: {
-      value: cdktf.booleanToHclTerraform(struct!.blockPublicAcls),
+      value: cdktn.booleanToHclTerraform(struct!.blockPublicAcls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     block_public_policy: {
-      value: cdktf.booleanToHclTerraform(struct!.blockPublicPolicy),
+      value: cdktn.booleanToHclTerraform(struct!.blockPublicPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ignore_public_acls: {
-      value: cdktf.booleanToHclTerraform(struct!.ignorePublicAcls),
+      value: cdktn.booleanToHclTerraform(struct!.ignorePublicAcls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     restrict_public_buckets: {
-      value: cdktf.booleanToHclTerraform(struct!.restrictPublicBuckets),
+      value: cdktn.booleanToHclTerraform(struct!.restrictPublicBuckets),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -111,14 +111,14 @@ export function s3ControlMultiRegionAccessPointDetailsPublicAccessBlockToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference extends cdktf.ComplexObject {
+export class S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -162,11 +162,11 @@ export class S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputRefere
   }
 
   // block_public_acls - computed: false, optional: true, required: false
-  private _blockPublicAcls?: boolean | cdktf.IResolvable; 
+  private _blockPublicAcls?: boolean | cdktn.IResolvable; 
   public get blockPublicAcls() {
     return this.getBooleanAttribute('block_public_acls');
   }
-  public set blockPublicAcls(value: boolean | cdktf.IResolvable) {
+  public set blockPublicAcls(value: boolean | cdktn.IResolvable) {
     this._blockPublicAcls = value;
   }
   public resetBlockPublicAcls() {
@@ -178,11 +178,11 @@ export class S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputRefere
   }
 
   // block_public_policy - computed: false, optional: true, required: false
-  private _blockPublicPolicy?: boolean | cdktf.IResolvable; 
+  private _blockPublicPolicy?: boolean | cdktn.IResolvable; 
   public get blockPublicPolicy() {
     return this.getBooleanAttribute('block_public_policy');
   }
-  public set blockPublicPolicy(value: boolean | cdktf.IResolvable) {
+  public set blockPublicPolicy(value: boolean | cdktn.IResolvable) {
     this._blockPublicPolicy = value;
   }
   public resetBlockPublicPolicy() {
@@ -194,11 +194,11 @@ export class S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputRefere
   }
 
   // ignore_public_acls - computed: false, optional: true, required: false
-  private _ignorePublicAcls?: boolean | cdktf.IResolvable; 
+  private _ignorePublicAcls?: boolean | cdktn.IResolvable; 
   public get ignorePublicAcls() {
     return this.getBooleanAttribute('ignore_public_acls');
   }
-  public set ignorePublicAcls(value: boolean | cdktf.IResolvable) {
+  public set ignorePublicAcls(value: boolean | cdktn.IResolvable) {
     this._ignorePublicAcls = value;
   }
   public resetIgnorePublicAcls() {
@@ -210,11 +210,11 @@ export class S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputRefere
   }
 
   // restrict_public_buckets - computed: false, optional: true, required: false
-  private _restrictPublicBuckets?: boolean | cdktf.IResolvable; 
+  private _restrictPublicBuckets?: boolean | cdktn.IResolvable; 
   public get restrictPublicBuckets() {
     return this.getBooleanAttribute('restrict_public_buckets');
   }
-  public set restrictPublicBuckets(value: boolean | cdktf.IResolvable) {
+  public set restrictPublicBuckets(value: boolean | cdktn.IResolvable) {
     this._restrictPublicBuckets = value;
   }
   public resetRestrictPublicBuckets() {
@@ -236,32 +236,32 @@ export interface S3ControlMultiRegionAccessPointDetailsRegion {
   readonly bucketAccountId?: string;
 }
 
-export function s3ControlMultiRegionAccessPointDetailsRegionToTerraform(struct?: S3ControlMultiRegionAccessPointDetailsRegion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3ControlMultiRegionAccessPointDetailsRegionToTerraform(struct?: S3ControlMultiRegionAccessPointDetailsRegion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    bucket_account_id: cdktf.stringToTerraform(struct!.bucketAccountId),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    bucket_account_id: cdktn.stringToTerraform(struct!.bucketAccountId),
   }
 }
 
 
-export function s3ControlMultiRegionAccessPointDetailsRegionToHclTerraform(struct?: S3ControlMultiRegionAccessPointDetailsRegion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3ControlMultiRegionAccessPointDetailsRegionToHclTerraform(struct?: S3ControlMultiRegionAccessPointDetailsRegion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.bucketAccountId),
+      value: cdktn.stringToHclTerraform(struct!.bucketAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -272,9 +272,9 @@ export function s3ControlMultiRegionAccessPointDetailsRegionToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3ControlMultiRegionAccessPointDetailsRegionOutputReference extends cdktf.ComplexObject {
+export class S3ControlMultiRegionAccessPointDetailsRegionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -282,11 +282,11 @@ export class S3ControlMultiRegionAccessPointDetailsRegionOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3ControlMultiRegionAccessPointDetailsRegion | cdktf.IResolvable | undefined {
+  public get internalValue(): S3ControlMultiRegionAccessPointDetailsRegion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -303,14 +303,14 @@ export class S3ControlMultiRegionAccessPointDetailsRegionOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3ControlMultiRegionAccessPointDetailsRegion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3ControlMultiRegionAccessPointDetailsRegion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._bucket = undefined;
       this._bucketAccountId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -357,15 +357,15 @@ export class S3ControlMultiRegionAccessPointDetailsRegionOutputReference extends
   }
 }
 
-export class S3ControlMultiRegionAccessPointDetailsRegionList extends cdktf.ComplexList {
-  public internalValue? : S3ControlMultiRegionAccessPointDetailsRegion[] | cdktf.IResolvable
+export class S3ControlMultiRegionAccessPointDetailsRegionList extends cdktn.ComplexList {
+  public internalValue? : S3ControlMultiRegionAccessPointDetailsRegion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -392,30 +392,30 @@ export interface S3ControlMultiRegionAccessPointDetails {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_multi_region_access_point#region S3ControlMultiRegionAccessPoint#region}
   */
-  readonly region: S3ControlMultiRegionAccessPointDetailsRegion[] | cdktf.IResolvable;
+  readonly region: S3ControlMultiRegionAccessPointDetailsRegion[] | cdktn.IResolvable;
 }
 
 export function s3ControlMultiRegionAccessPointDetailsToTerraform(struct?: S3ControlMultiRegionAccessPointDetailsOutputReference | S3ControlMultiRegionAccessPointDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
     public_access_block: s3ControlMultiRegionAccessPointDetailsPublicAccessBlockToTerraform(struct!.publicAccessBlock),
-    region: cdktf.listMapper(s3ControlMultiRegionAccessPointDetailsRegionToTerraform, true)(struct!.region),
+    region: cdktn.listMapper(s3ControlMultiRegionAccessPointDetailsRegionToTerraform, true)(struct!.region),
   }
 }
 
 
 export function s3ControlMultiRegionAccessPointDetailsToHclTerraform(struct?: S3ControlMultiRegionAccessPointDetailsOutputReference | S3ControlMultiRegionAccessPointDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -427,7 +427,7 @@ export function s3ControlMultiRegionAccessPointDetailsToHclTerraform(struct?: S3
       storageClassType: "S3ControlMultiRegionAccessPointDetailsPublicAccessBlockList",
     },
     region: {
-      value: cdktf.listMapperHcl(s3ControlMultiRegionAccessPointDetailsRegionToHclTerraform, true)(struct!.region),
+      value: cdktn.listMapperHcl(s3ControlMultiRegionAccessPointDetailsRegionToHclTerraform, true)(struct!.region),
       isBlock: true,
       type: "set",
       storageClassType: "S3ControlMultiRegionAccessPointDetailsRegionList",
@@ -438,14 +438,14 @@ export function s3ControlMultiRegionAccessPointDetailsToHclTerraform(struct?: S3
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3ControlMultiRegionAccessPointDetailsOutputReference extends cdktf.ComplexObject {
+export class S3ControlMultiRegionAccessPointDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -516,7 +516,7 @@ export class S3ControlMultiRegionAccessPointDetailsOutputReference extends cdktf
   public get region() {
     return this._region;
   }
-  public putRegion(value: S3ControlMultiRegionAccessPointDetailsRegion[] | cdktf.IResolvable) {
+  public putRegion(value: S3ControlMultiRegionAccessPointDetailsRegion[] | cdktn.IResolvable) {
     this._region.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -535,32 +535,32 @@ export interface S3ControlMultiRegionAccessPointTimeouts {
   readonly delete?: string;
 }
 
-export function s3ControlMultiRegionAccessPointTimeoutsToTerraform(struct?: S3ControlMultiRegionAccessPointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3ControlMultiRegionAccessPointTimeoutsToTerraform(struct?: S3ControlMultiRegionAccessPointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function s3ControlMultiRegionAccessPointTimeoutsToHclTerraform(struct?: S3ControlMultiRegionAccessPointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3ControlMultiRegionAccessPointTimeoutsToHclTerraform(struct?: S3ControlMultiRegionAccessPointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -571,19 +571,19 @@ export function s3ControlMultiRegionAccessPointTimeoutsToHclTerraform(struct?: S
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3ControlMultiRegionAccessPointTimeoutsOutputReference extends cdktf.ComplexObject {
+export class S3ControlMultiRegionAccessPointTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): S3ControlMultiRegionAccessPointTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): S3ControlMultiRegionAccessPointTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -600,14 +600,14 @@ export class S3ControlMultiRegionAccessPointTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3ControlMultiRegionAccessPointTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3ControlMultiRegionAccessPointTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -655,7 +655,7 @@ export class S3ControlMultiRegionAccessPointTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_multi_region_access_point aws_s3control_multi_region_access_point}
 */
-export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
+export class S3ControlMultiRegionAccessPoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -666,14 +666,14 @@ export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3ControlMultiRegionAccessPoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3ControlMultiRegionAccessPoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3ControlMultiRegionAccessPoint to import
   * @param importFromId The id of the existing S3ControlMultiRegionAccessPoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_multi_region_access_point#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3ControlMultiRegionAccessPoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3control_multi_region_access_point", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3control_multi_region_access_point", importId: importFromId, provider });
       }
 
   // ===========
@@ -817,9 +817,9 @@ export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
       details: s3ControlMultiRegionAccessPointDetailsToTerraform(this._details.internalValue),
       timeouts: s3ControlMultiRegionAccessPointTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -828,19 +828,19 @@ export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

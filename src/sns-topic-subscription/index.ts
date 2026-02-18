@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SnsTopicSubscriptionConfig extends cdktf.TerraformMetaArguments {
+export interface SnsTopicSubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_topic_subscription#confirmation_timeout_in_minutes SnsTopicSubscription#confirmation_timeout_in_minutes}
   */
@@ -27,7 +27,7 @@ export interface SnsTopicSubscriptionConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_topic_subscription#endpoint_auto_confirms SnsTopicSubscription#endpoint_auto_confirms}
   */
-  readonly endpointAutoConfirms?: boolean | cdktf.IResolvable;
+  readonly endpointAutoConfirms?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_topic_subscription#filter_policy SnsTopicSubscription#filter_policy}
   */
@@ -50,7 +50,7 @@ export interface SnsTopicSubscriptionConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_topic_subscription#raw_message_delivery SnsTopicSubscription#raw_message_delivery}
   */
-  readonly rawMessageDelivery?: boolean | cdktf.IResolvable;
+  readonly rawMessageDelivery?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_topic_subscription#redrive_policy SnsTopicSubscription#redrive_policy}
   */
@@ -78,7 +78,7 @@ export interface SnsTopicSubscriptionConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_topic_subscription aws_sns_topic_subscription}
 */
-export class SnsTopicSubscription extends cdktf.TerraformResource {
+export class SnsTopicSubscription extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -89,14 +89,14 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SnsTopicSubscription resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SnsTopicSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SnsTopicSubscription to import
   * @param importFromId The id of the existing SnsTopicSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_topic_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SnsTopicSubscription to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sns_topic_subscription", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sns_topic_subscription", importId: importFromId, provider });
       }
 
   // ===========
@@ -202,11 +202,11 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
   }
 
   // endpoint_auto_confirms - computed: false, optional: true, required: false
-  private _endpointAutoConfirms?: boolean | cdktf.IResolvable; 
+  private _endpointAutoConfirms?: boolean | cdktn.IResolvable; 
   public get endpointAutoConfirms() {
     return this.getBooleanAttribute('endpoint_auto_confirms');
   }
-  public set endpointAutoConfirms(value: boolean | cdktf.IResolvable) {
+  public set endpointAutoConfirms(value: boolean | cdktn.IResolvable) {
     this._endpointAutoConfirms = value;
   }
   public resetEndpointAutoConfirms() {
@@ -289,11 +289,11 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
   }
 
   // raw_message_delivery - computed: false, optional: true, required: false
-  private _rawMessageDelivery?: boolean | cdktf.IResolvable; 
+  private _rawMessageDelivery?: boolean | cdktn.IResolvable; 
   public get rawMessageDelivery() {
     return this.getBooleanAttribute('raw_message_delivery');
   }
-  public set rawMessageDelivery(value: boolean | cdktf.IResolvable) {
+  public set rawMessageDelivery(value: boolean | cdktn.IResolvable) {
     this._rawMessageDelivery = value;
   }
   public resetRawMessageDelivery() {
@@ -387,105 +387,105 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      confirmation_timeout_in_minutes: cdktf.numberToTerraform(this._confirmationTimeoutInMinutes),
-      delivery_policy: cdktf.stringToTerraform(this._deliveryPolicy),
-      endpoint: cdktf.stringToTerraform(this._endpoint),
-      endpoint_auto_confirms: cdktf.booleanToTerraform(this._endpointAutoConfirms),
-      filter_policy: cdktf.stringToTerraform(this._filterPolicy),
-      filter_policy_scope: cdktf.stringToTerraform(this._filterPolicyScope),
-      id: cdktf.stringToTerraform(this._id),
-      protocol: cdktf.stringToTerraform(this._protocol),
-      raw_message_delivery: cdktf.booleanToTerraform(this._rawMessageDelivery),
-      redrive_policy: cdktf.stringToTerraform(this._redrivePolicy),
-      region: cdktf.stringToTerraform(this._region),
-      replay_policy: cdktf.stringToTerraform(this._replayPolicy),
-      subscription_role_arn: cdktf.stringToTerraform(this._subscriptionRoleArn),
-      topic_arn: cdktf.stringToTerraform(this._topicArn),
+      confirmation_timeout_in_minutes: cdktn.numberToTerraform(this._confirmationTimeoutInMinutes),
+      delivery_policy: cdktn.stringToTerraform(this._deliveryPolicy),
+      endpoint: cdktn.stringToTerraform(this._endpoint),
+      endpoint_auto_confirms: cdktn.booleanToTerraform(this._endpointAutoConfirms),
+      filter_policy: cdktn.stringToTerraform(this._filterPolicy),
+      filter_policy_scope: cdktn.stringToTerraform(this._filterPolicyScope),
+      id: cdktn.stringToTerraform(this._id),
+      protocol: cdktn.stringToTerraform(this._protocol),
+      raw_message_delivery: cdktn.booleanToTerraform(this._rawMessageDelivery),
+      redrive_policy: cdktn.stringToTerraform(this._redrivePolicy),
+      region: cdktn.stringToTerraform(this._region),
+      replay_policy: cdktn.stringToTerraform(this._replayPolicy),
+      subscription_role_arn: cdktn.stringToTerraform(this._subscriptionRoleArn),
+      topic_arn: cdktn.stringToTerraform(this._topicArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       confirmation_timeout_in_minutes: {
-        value: cdktf.numberToHclTerraform(this._confirmationTimeoutInMinutes),
+        value: cdktn.numberToHclTerraform(this._confirmationTimeoutInMinutes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       delivery_policy: {
-        value: cdktf.stringToHclTerraform(this._deliveryPolicy),
+        value: cdktn.stringToHclTerraform(this._deliveryPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint: {
-        value: cdktf.stringToHclTerraform(this._endpoint),
+        value: cdktn.stringToHclTerraform(this._endpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_auto_confirms: {
-        value: cdktf.booleanToHclTerraform(this._endpointAutoConfirms),
+        value: cdktn.booleanToHclTerraform(this._endpointAutoConfirms),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       filter_policy: {
-        value: cdktf.stringToHclTerraform(this._filterPolicy),
+        value: cdktn.stringToHclTerraform(this._filterPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter_policy_scope: {
-        value: cdktf.stringToHclTerraform(this._filterPolicyScope),
+        value: cdktn.stringToHclTerraform(this._filterPolicyScope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocol: {
-        value: cdktf.stringToHclTerraform(this._protocol),
+        value: cdktn.stringToHclTerraform(this._protocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       raw_message_delivery: {
-        value: cdktf.booleanToHclTerraform(this._rawMessageDelivery),
+        value: cdktn.booleanToHclTerraform(this._rawMessageDelivery),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       redrive_policy: {
-        value: cdktf.stringToHclTerraform(this._redrivePolicy),
+        value: cdktn.stringToHclTerraform(this._redrivePolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replay_policy: {
-        value: cdktf.stringToHclTerraform(this._replayPolicy),
+        value: cdktn.stringToHclTerraform(this._replayPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subscription_role_arn: {
-        value: cdktf.stringToHclTerraform(this._subscriptionRoleArn),
+        value: cdktn.stringToHclTerraform(this._subscriptionRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       topic_arn: {
-        value: cdktf.stringToHclTerraform(this._topicArn),
+        value: cdktn.stringToHclTerraform(this._topicArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

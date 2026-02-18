@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsRedshiftClusterCredentialsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRedshiftClusterCredentialsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/redshift_cluster_credentials#auto_create DataAwsRedshiftClusterCredentials#auto_create}
   */
-  readonly autoCreate?: boolean | cdktf.IResolvable;
+  readonly autoCreate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/redshift_cluster_credentials#cluster_identifier DataAwsRedshiftClusterCredentials#cluster_identifier}
   */
@@ -54,7 +54,7 @@ export interface DataAwsRedshiftClusterCredentialsConfig extends cdktf.Terraform
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/redshift_cluster_credentials aws_redshift_cluster_credentials}
 */
-export class DataAwsRedshiftClusterCredentials extends cdktf.TerraformDataSource {
+export class DataAwsRedshiftClusterCredentials extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class DataAwsRedshiftClusterCredentials extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsRedshiftClusterCredentials resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsRedshiftClusterCredentials resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRedshiftClusterCredentials to import
   * @param importFromId The id of the existing DataAwsRedshiftClusterCredentials that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/redshift_cluster_credentials#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRedshiftClusterCredentials to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_cluster_credentials", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_cluster_credentials", importId: importFromId, provider });
       }
 
   // ===========
@@ -117,11 +117,11 @@ export class DataAwsRedshiftClusterCredentials extends cdktf.TerraformDataSource
   // ==========
 
   // auto_create - computed: false, optional: true, required: false
-  private _autoCreate?: boolean | cdktf.IResolvable; 
+  private _autoCreate?: boolean | cdktn.IResolvable; 
   public get autoCreate() {
     return this.getBooleanAttribute('auto_create');
   }
-  public set autoCreate(value: boolean | cdktf.IResolvable) {
+  public set autoCreate(value: boolean | cdktn.IResolvable) {
     this._autoCreate = value;
   }
   public resetAutoCreate() {
@@ -148,7 +148,7 @@ export class DataAwsRedshiftClusterCredentials extends cdktf.TerraformDataSource
   // db_groups - computed: false, optional: true, required: false
   private _dbGroups?: string[]; 
   public get dbGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('db_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('db_groups'));
   }
   public set dbGroups(value: string[]) {
     this._dbGroups = value;
@@ -254,63 +254,63 @@ export class DataAwsRedshiftClusterCredentials extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_create: cdktf.booleanToTerraform(this._autoCreate),
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      db_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dbGroups),
-      db_name: cdktf.stringToTerraform(this._dbName),
-      db_user: cdktf.stringToTerraform(this._dbUser),
-      duration_seconds: cdktf.numberToTerraform(this._durationSeconds),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      auto_create: cdktn.booleanToTerraform(this._autoCreate),
+      cluster_identifier: cdktn.stringToTerraform(this._clusterIdentifier),
+      db_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._dbGroups),
+      db_name: cdktn.stringToTerraform(this._dbName),
+      db_user: cdktn.stringToTerraform(this._dbUser),
+      duration_seconds: cdktn.numberToTerraform(this._durationSeconds),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_create: {
-        value: cdktf.booleanToHclTerraform(this._autoCreate),
+        value: cdktn.booleanToHclTerraform(this._autoCreate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._clusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dbGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._dbGroups),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       db_name: {
-        value: cdktf.stringToHclTerraform(this._dbName),
+        value: cdktn.stringToHclTerraform(this._dbName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_user: {
-        value: cdktf.stringToHclTerraform(this._dbUser),
+        value: cdktn.stringToHclTerraform(this._dbUser),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       duration_seconds: {
-        value: cdktf.numberToHclTerraform(this._durationSeconds),
+        value: cdktn.numberToHclTerraform(this._durationSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

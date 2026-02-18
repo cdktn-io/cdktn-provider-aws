@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamGroupPolicyAttachmentsExclusiveConfig extends cdktf.TerraformMetaArguments {
+export interface IamGroupPolicyAttachmentsExclusiveConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_group_policy_attachments_exclusive#group_name IamGroupPolicyAttachmentsExclusive#group_name}
   */
@@ -25,7 +25,7 @@ export interface IamGroupPolicyAttachmentsExclusiveConfig extends cdktf.Terrafor
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_group_policy_attachments_exclusive aws_iam_group_policy_attachments_exclusive}
 */
-export class IamGroupPolicyAttachmentsExclusive extends cdktf.TerraformResource {
+export class IamGroupPolicyAttachmentsExclusive extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -36,14 +36,14 @@ export class IamGroupPolicyAttachmentsExclusive extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamGroupPolicyAttachmentsExclusive resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamGroupPolicyAttachmentsExclusive resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamGroupPolicyAttachmentsExclusive to import
   * @param importFromId The id of the existing IamGroupPolicyAttachmentsExclusive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_group_policy_attachments_exclusive#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamGroupPolicyAttachmentsExclusive to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_group_policy_attachments_exclusive", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_group_policy_attachments_exclusive", importId: importFromId, provider });
       }
 
   // ===========
@@ -97,7 +97,7 @@ export class IamGroupPolicyAttachmentsExclusive extends cdktf.TerraformResource 
   // policy_arns - computed: false, optional: false, required: true
   private _policyArns?: string[]; 
   public get policyArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('policy_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('policy_arns'));
   }
   public set policyArns(value: string[]) {
     this._policyArns = value;
@@ -113,21 +113,21 @@ export class IamGroupPolicyAttachmentsExclusive extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_name: cdktf.stringToTerraform(this._groupName),
-      policy_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policyArns),
+      group_name: cdktn.stringToTerraform(this._groupName),
+      policy_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._policyArns),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       group_name: {
-        value: cdktf.stringToHclTerraform(this._groupName),
+        value: cdktn.stringToHclTerraform(this._groupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policyArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._policyArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

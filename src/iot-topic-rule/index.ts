@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IotTopicRuleConfig extends cdktf.TerraformMetaArguments {
+export interface IotTopicRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#description IotTopicRule#description}
   */
@@ -19,7 +19,7 @@ export interface IotTopicRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#id IotTopicRule#id}
   *
@@ -58,37 +58,37 @@ export interface IotTopicRuleConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
   */
-  readonly cloudwatchAlarm?: IotTopicRuleCloudwatchAlarm[] | cdktf.IResolvable;
+  readonly cloudwatchAlarm?: IotTopicRuleCloudwatchAlarm[] | cdktn.IResolvable;
   /**
   * cloudwatch_logs block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
   */
-  readonly cloudwatchLogs?: IotTopicRuleCloudwatchLogs[] | cdktf.IResolvable;
+  readonly cloudwatchLogs?: IotTopicRuleCloudwatchLogs[] | cdktn.IResolvable;
   /**
   * cloudwatch_metric block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
   */
-  readonly cloudwatchMetric?: IotTopicRuleCloudwatchMetric[] | cdktf.IResolvable;
+  readonly cloudwatchMetric?: IotTopicRuleCloudwatchMetric[] | cdktn.IResolvable;
   /**
   * dynamodb block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
   */
-  readonly dynamodb?: IotTopicRuleDynamodb[] | cdktf.IResolvable;
+  readonly dynamodb?: IotTopicRuleDynamodb[] | cdktn.IResolvable;
   /**
   * dynamodbv2 block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
   */
-  readonly dynamodbv2?: IotTopicRuleDynamodbv2[] | cdktf.IResolvable;
+  readonly dynamodbv2?: IotTopicRuleDynamodbv2[] | cdktn.IResolvable;
   /**
   * elasticsearch block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
   */
-  readonly elasticsearch?: IotTopicRuleElasticsearch[] | cdktf.IResolvable;
+  readonly elasticsearch?: IotTopicRuleElasticsearch[] | cdktn.IResolvable;
   /**
   * error_action block
   *
@@ -100,79 +100,79 @@ export interface IotTopicRuleConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#firehose IotTopicRule#firehose}
   */
-  readonly firehose?: IotTopicRuleFirehose[] | cdktf.IResolvable;
+  readonly firehose?: IotTopicRuleFirehose[] | cdktn.IResolvable;
   /**
   * http block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#http IotTopicRule#http}
   */
-  readonly http?: IotTopicRuleHttp[] | cdktf.IResolvable;
+  readonly http?: IotTopicRuleHttp[] | cdktn.IResolvable;
   /**
   * iot_analytics block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
   */
-  readonly iotAnalytics?: IotTopicRuleIotAnalytics[] | cdktf.IResolvable;
+  readonly iotAnalytics?: IotTopicRuleIotAnalytics[] | cdktn.IResolvable;
   /**
   * iot_events block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#iot_events IotTopicRule#iot_events}
   */
-  readonly iotEvents?: IotTopicRuleIotEvents[] | cdktf.IResolvable;
+  readonly iotEvents?: IotTopicRuleIotEvents[] | cdktn.IResolvable;
   /**
   * kafka block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#kafka IotTopicRule#kafka}
   */
-  readonly kafka?: IotTopicRuleKafka[] | cdktf.IResolvable;
+  readonly kafka?: IotTopicRuleKafka[] | cdktn.IResolvable;
   /**
   * kinesis block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#kinesis IotTopicRule#kinesis}
   */
-  readonly kinesis?: IotTopicRuleKinesis[] | cdktf.IResolvable;
+  readonly kinesis?: IotTopicRuleKinesis[] | cdktn.IResolvable;
   /**
   * lambda block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#lambda IotTopicRule#lambda}
   */
-  readonly lambda?: IotTopicRuleLambda[] | cdktf.IResolvable;
+  readonly lambda?: IotTopicRuleLambda[] | cdktn.IResolvable;
   /**
   * republish block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#republish IotTopicRule#republish}
   */
-  readonly republish?: IotTopicRuleRepublish[] | cdktf.IResolvable;
+  readonly republish?: IotTopicRuleRepublish[] | cdktn.IResolvable;
   /**
   * s3 block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#s3 IotTopicRule#s3}
   */
-  readonly s3?: IotTopicRuleS3[] | cdktf.IResolvable;
+  readonly s3?: IotTopicRuleS3[] | cdktn.IResolvable;
   /**
   * sns block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#sns IotTopicRule#sns}
   */
-  readonly sns?: IotTopicRuleSns[] | cdktf.IResolvable;
+  readonly sns?: IotTopicRuleSns[] | cdktn.IResolvable;
   /**
   * sqs block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#sqs IotTopicRule#sqs}
   */
-  readonly sqs?: IotTopicRuleSqs[] | cdktf.IResolvable;
+  readonly sqs?: IotTopicRuleSqs[] | cdktn.IResolvable;
   /**
   * step_functions block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#step_functions IotTopicRule#step_functions}
   */
-  readonly stepFunctions?: IotTopicRuleStepFunctions[] | cdktf.IResolvable;
+  readonly stepFunctions?: IotTopicRuleStepFunctions[] | cdktn.IResolvable;
   /**
   * timestream block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#timestream IotTopicRule#timestream}
   */
-  readonly timestream?: IotTopicRuleTimestream[] | cdktf.IResolvable;
+  readonly timestream?: IotTopicRuleTimestream[] | cdktn.IResolvable;
 }
 export interface IotTopicRuleCloudwatchAlarm {
   /**
@@ -193,46 +193,46 @@ export interface IotTopicRuleCloudwatchAlarm {
   readonly stateValue: string;
 }
 
-export function iotTopicRuleCloudwatchAlarmToTerraform(struct?: IotTopicRuleCloudwatchAlarm | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleCloudwatchAlarmToTerraform(struct?: IotTopicRuleCloudwatchAlarm | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alarm_name: cdktf.stringToTerraform(struct!.alarmName),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    state_reason: cdktf.stringToTerraform(struct!.stateReason),
-    state_value: cdktf.stringToTerraform(struct!.stateValue),
+    alarm_name: cdktn.stringToTerraform(struct!.alarmName),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    state_reason: cdktn.stringToTerraform(struct!.stateReason),
+    state_value: cdktn.stringToTerraform(struct!.stateValue),
   }
 }
 
 
-export function iotTopicRuleCloudwatchAlarmToHclTerraform(struct?: IotTopicRuleCloudwatchAlarm | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleCloudwatchAlarmToHclTerraform(struct?: IotTopicRuleCloudwatchAlarm | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alarm_name: {
-      value: cdktf.stringToHclTerraform(struct!.alarmName),
+      value: cdktn.stringToHclTerraform(struct!.alarmName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state_reason: {
-      value: cdktf.stringToHclTerraform(struct!.stateReason),
+      value: cdktn.stringToHclTerraform(struct!.stateReason),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state_value: {
-      value: cdktf.stringToHclTerraform(struct!.stateValue),
+      value: cdktn.stringToHclTerraform(struct!.stateValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -243,9 +243,9 @@ export function iotTopicRuleCloudwatchAlarmToHclTerraform(struct?: IotTopicRuleC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleCloudwatchAlarmOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleCloudwatchAlarmOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -253,11 +253,11 @@ export class IotTopicRuleCloudwatchAlarmOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleCloudwatchAlarm | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleCloudwatchAlarm | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -282,7 +282,7 @@ export class IotTopicRuleCloudwatchAlarmOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleCloudwatchAlarm | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleCloudwatchAlarm | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -291,7 +291,7 @@ export class IotTopicRuleCloudwatchAlarmOutputReference extends cdktf.ComplexObj
       this._stateReason = undefined;
       this._stateValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -358,15 +358,15 @@ export class IotTopicRuleCloudwatchAlarmOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class IotTopicRuleCloudwatchAlarmList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleCloudwatchAlarm[] | cdktf.IResolvable
+export class IotTopicRuleCloudwatchAlarmList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleCloudwatchAlarm[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -381,7 +381,7 @@ export interface IotTopicRuleCloudwatchLogs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
-  readonly batchMode?: boolean | cdktf.IResolvable;
+  readonly batchMode?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}
   */
@@ -392,39 +392,39 @@ export interface IotTopicRuleCloudwatchLogs {
   readonly roleArn: string;
 }
 
-export function iotTopicRuleCloudwatchLogsToTerraform(struct?: IotTopicRuleCloudwatchLogs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleCloudwatchLogsToTerraform(struct?: IotTopicRuleCloudwatchLogs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_mode: cdktf.booleanToTerraform(struct!.batchMode),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
-export function iotTopicRuleCloudwatchLogsToHclTerraform(struct?: IotTopicRuleCloudwatchLogs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleCloudwatchLogsToHclTerraform(struct?: IotTopicRuleCloudwatchLogs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_mode: {
-      value: cdktf.booleanToHclTerraform(struct!.batchMode),
+      value: cdktn.booleanToHclTerraform(struct!.batchMode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -435,9 +435,9 @@ export function iotTopicRuleCloudwatchLogsToHclTerraform(struct?: IotTopicRuleCl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleCloudwatchLogsOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleCloudwatchLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -445,11 +445,11 @@ export class IotTopicRuleCloudwatchLogsOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleCloudwatchLogs | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleCloudwatchLogs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -470,7 +470,7 @@ export class IotTopicRuleCloudwatchLogsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleCloudwatchLogs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleCloudwatchLogs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -478,7 +478,7 @@ export class IotTopicRuleCloudwatchLogsOutputReference extends cdktf.ComplexObje
       this._logGroupName = undefined;
       this._roleArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -492,11 +492,11 @@ export class IotTopicRuleCloudwatchLogsOutputReference extends cdktf.ComplexObje
   }
 
   // batch_mode - computed: false, optional: true, required: false
-  private _batchMode?: boolean | cdktf.IResolvable; 
+  private _batchMode?: boolean | cdktn.IResolvable; 
   public get batchMode() {
     return this.getBooleanAttribute('batch_mode');
   }
-  public set batchMode(value: boolean | cdktf.IResolvable) {
+  public set batchMode(value: boolean | cdktn.IResolvable) {
     this._batchMode = value;
   }
   public resetBatchMode() {
@@ -534,15 +534,15 @@ export class IotTopicRuleCloudwatchLogsOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class IotTopicRuleCloudwatchLogsList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleCloudwatchLogs[] | cdktf.IResolvable
+export class IotTopicRuleCloudwatchLogsList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleCloudwatchLogs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -580,60 +580,60 @@ export interface IotTopicRuleCloudwatchMetric {
   readonly roleArn: string;
 }
 
-export function iotTopicRuleCloudwatchMetricToTerraform(struct?: IotTopicRuleCloudwatchMetric | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleCloudwatchMetricToTerraform(struct?: IotTopicRuleCloudwatchMetric | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metric_name: cdktf.stringToTerraform(struct!.metricName),
-    metric_namespace: cdktf.stringToTerraform(struct!.metricNamespace),
-    metric_timestamp: cdktf.stringToTerraform(struct!.metricTimestamp),
-    metric_unit: cdktf.stringToTerraform(struct!.metricUnit),
-    metric_value: cdktf.stringToTerraform(struct!.metricValue),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    metric_name: cdktn.stringToTerraform(struct!.metricName),
+    metric_namespace: cdktn.stringToTerraform(struct!.metricNamespace),
+    metric_timestamp: cdktn.stringToTerraform(struct!.metricTimestamp),
+    metric_unit: cdktn.stringToTerraform(struct!.metricUnit),
+    metric_value: cdktn.stringToTerraform(struct!.metricValue),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
-export function iotTopicRuleCloudwatchMetricToHclTerraform(struct?: IotTopicRuleCloudwatchMetric | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleCloudwatchMetricToHclTerraform(struct?: IotTopicRuleCloudwatchMetric | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metric_name: {
-      value: cdktf.stringToHclTerraform(struct!.metricName),
+      value: cdktn.stringToHclTerraform(struct!.metricName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric_namespace: {
-      value: cdktf.stringToHclTerraform(struct!.metricNamespace),
+      value: cdktn.stringToHclTerraform(struct!.metricNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric_timestamp: {
-      value: cdktf.stringToHclTerraform(struct!.metricTimestamp),
+      value: cdktn.stringToHclTerraform(struct!.metricTimestamp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric_unit: {
-      value: cdktf.stringToHclTerraform(struct!.metricUnit),
+      value: cdktn.stringToHclTerraform(struct!.metricUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric_value: {
-      value: cdktf.stringToHclTerraform(struct!.metricValue),
+      value: cdktn.stringToHclTerraform(struct!.metricValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -644,9 +644,9 @@ export function iotTopicRuleCloudwatchMetricToHclTerraform(struct?: IotTopicRule
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleCloudwatchMetricOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleCloudwatchMetricOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -654,11 +654,11 @@ export class IotTopicRuleCloudwatchMetricOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleCloudwatchMetric | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleCloudwatchMetric | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -691,7 +691,7 @@ export class IotTopicRuleCloudwatchMetricOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleCloudwatchMetric | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleCloudwatchMetric | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -702,7 +702,7 @@ export class IotTopicRuleCloudwatchMetricOutputReference extends cdktf.ComplexOb
       this._metricValue = undefined;
       this._roleArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -800,15 +800,15 @@ export class IotTopicRuleCloudwatchMetricOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class IotTopicRuleCloudwatchMetricList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleCloudwatchMetric[] | cdktf.IResolvable
+export class IotTopicRuleCloudwatchMetricList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleCloudwatchMetric[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -862,88 +862,88 @@ export interface IotTopicRuleDynamodb {
   readonly tableName: string;
 }
 
-export function iotTopicRuleDynamodbToTerraform(struct?: IotTopicRuleDynamodb | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleDynamodbToTerraform(struct?: IotTopicRuleDynamodb | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hash_key_field: cdktf.stringToTerraform(struct!.hashKeyField),
-    hash_key_type: cdktf.stringToTerraform(struct!.hashKeyType),
-    hash_key_value: cdktf.stringToTerraform(struct!.hashKeyValue),
-    operation: cdktf.stringToTerraform(struct!.operation),
-    payload_field: cdktf.stringToTerraform(struct!.payloadField),
-    range_key_field: cdktf.stringToTerraform(struct!.rangeKeyField),
-    range_key_type: cdktf.stringToTerraform(struct!.rangeKeyType),
-    range_key_value: cdktf.stringToTerraform(struct!.rangeKeyValue),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    table_name: cdktf.stringToTerraform(struct!.tableName),
+    hash_key_field: cdktn.stringToTerraform(struct!.hashKeyField),
+    hash_key_type: cdktn.stringToTerraform(struct!.hashKeyType),
+    hash_key_value: cdktn.stringToTerraform(struct!.hashKeyValue),
+    operation: cdktn.stringToTerraform(struct!.operation),
+    payload_field: cdktn.stringToTerraform(struct!.payloadField),
+    range_key_field: cdktn.stringToTerraform(struct!.rangeKeyField),
+    range_key_type: cdktn.stringToTerraform(struct!.rangeKeyType),
+    range_key_value: cdktn.stringToTerraform(struct!.rangeKeyValue),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
   }
 }
 
 
-export function iotTopicRuleDynamodbToHclTerraform(struct?: IotTopicRuleDynamodb | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleDynamodbToHclTerraform(struct?: IotTopicRuleDynamodb | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hash_key_field: {
-      value: cdktf.stringToHclTerraform(struct!.hashKeyField),
+      value: cdktn.stringToHclTerraform(struct!.hashKeyField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hash_key_type: {
-      value: cdktf.stringToHclTerraform(struct!.hashKeyType),
+      value: cdktn.stringToHclTerraform(struct!.hashKeyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hash_key_value: {
-      value: cdktf.stringToHclTerraform(struct!.hashKeyValue),
+      value: cdktn.stringToHclTerraform(struct!.hashKeyValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operation: {
-      value: cdktf.stringToHclTerraform(struct!.operation),
+      value: cdktn.stringToHclTerraform(struct!.operation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     payload_field: {
-      value: cdktf.stringToHclTerraform(struct!.payloadField),
+      value: cdktn.stringToHclTerraform(struct!.payloadField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     range_key_field: {
-      value: cdktf.stringToHclTerraform(struct!.rangeKeyField),
+      value: cdktn.stringToHclTerraform(struct!.rangeKeyField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     range_key_type: {
-      value: cdktf.stringToHclTerraform(struct!.rangeKeyType),
+      value: cdktn.stringToHclTerraform(struct!.rangeKeyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     range_key_value: {
-      value: cdktf.stringToHclTerraform(struct!.rangeKeyValue),
+      value: cdktn.stringToHclTerraform(struct!.rangeKeyValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -954,9 +954,9 @@ export function iotTopicRuleDynamodbToHclTerraform(struct?: IotTopicRuleDynamodb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleDynamodbOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleDynamodbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -964,11 +964,11 @@ export class IotTopicRuleDynamodbOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleDynamodb | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleDynamodb | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1017,7 +1017,7 @@ export class IotTopicRuleDynamodbOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleDynamodb | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleDynamodb | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1032,7 +1032,7 @@ export class IotTopicRuleDynamodbOutputReference extends cdktf.ComplexObject {
       this._roleArn = undefined;
       this._tableName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1201,15 +1201,15 @@ export class IotTopicRuleDynamodbOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class IotTopicRuleDynamodbList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleDynamodb[] | cdktf.IResolvable
+export class IotTopicRuleDynamodbList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleDynamodb[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1228,24 +1228,24 @@ export interface IotTopicRuleDynamodbv2PutItem {
 }
 
 export function iotTopicRuleDynamodbv2PutItemToTerraform(struct?: IotTopicRuleDynamodbv2PutItemOutputReference | IotTopicRuleDynamodbv2PutItem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    table_name: cdktf.stringToTerraform(struct!.tableName),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
   }
 }
 
 
 export function iotTopicRuleDynamodbv2PutItemToHclTerraform(struct?: IotTopicRuleDynamodbv2PutItemOutputReference | IotTopicRuleDynamodbv2PutItem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1256,14 +1256,14 @@ export function iotTopicRuleDynamodbv2PutItemToHclTerraform(struct?: IotTopicRul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleDynamodbv2PutItemOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleDynamodbv2PutItemOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1314,26 +1314,26 @@ export interface IotTopicRuleDynamodbv2 {
   readonly putItem?: IotTopicRuleDynamodbv2PutItem;
 }
 
-export function iotTopicRuleDynamodbv2ToTerraform(struct?: IotTopicRuleDynamodbv2 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleDynamodbv2ToTerraform(struct?: IotTopicRuleDynamodbv2 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
     put_item: iotTopicRuleDynamodbv2PutItemToTerraform(struct!.putItem),
   }
 }
 
 
-export function iotTopicRuleDynamodbv2ToHclTerraform(struct?: IotTopicRuleDynamodbv2 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleDynamodbv2ToHclTerraform(struct?: IotTopicRuleDynamodbv2 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1350,9 +1350,9 @@ export function iotTopicRuleDynamodbv2ToHclTerraform(struct?: IotTopicRuleDynamo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleDynamodbv2OutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleDynamodbv2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1360,11 +1360,11 @@ export class IotTopicRuleDynamodbv2OutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleDynamodbv2 | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleDynamodbv2 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1381,14 +1381,14 @@ export class IotTopicRuleDynamodbv2OutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleDynamodbv2 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleDynamodbv2 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._roleArn = undefined;
       this._putItem.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1430,15 +1430,15 @@ export class IotTopicRuleDynamodbv2OutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class IotTopicRuleDynamodbv2List extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleDynamodbv2[] | cdktf.IResolvable
+export class IotTopicRuleDynamodbv2List extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleDynamodbv2[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1475,53 +1475,53 @@ export interface IotTopicRuleElasticsearch {
   readonly type: string;
 }
 
-export function iotTopicRuleElasticsearchToTerraform(struct?: IotTopicRuleElasticsearch | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleElasticsearchToTerraform(struct?: IotTopicRuleElasticsearch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
-    id: cdktf.stringToTerraform(struct!.id),
-    index: cdktf.stringToTerraform(struct!.index),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    type: cdktf.stringToTerraform(struct!.type),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    id: cdktn.stringToTerraform(struct!.id),
+    index: cdktn.stringToTerraform(struct!.index),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function iotTopicRuleElasticsearchToHclTerraform(struct?: IotTopicRuleElasticsearch | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleElasticsearchToHclTerraform(struct?: IotTopicRuleElasticsearch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1532,9 +1532,9 @@ export function iotTopicRuleElasticsearchToHclTerraform(struct?: IotTopicRuleEla
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleElasticsearchOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleElasticsearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1542,11 +1542,11 @@ export class IotTopicRuleElasticsearchOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleElasticsearch | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleElasticsearch | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1575,7 +1575,7 @@ export class IotTopicRuleElasticsearchOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleElasticsearch | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleElasticsearch | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1585,7 +1585,7 @@ export class IotTopicRuleElasticsearchOutputReference extends cdktf.ComplexObjec
       this._roleArn = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1666,15 +1666,15 @@ export class IotTopicRuleElasticsearchOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class IotTopicRuleElasticsearchList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleElasticsearch[] | cdktf.IResolvable
+export class IotTopicRuleElasticsearchList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleElasticsearch[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1705,45 +1705,45 @@ export interface IotTopicRuleErrorActionCloudwatchAlarm {
 }
 
 export function iotTopicRuleErrorActionCloudwatchAlarmToTerraform(struct?: IotTopicRuleErrorActionCloudwatchAlarmOutputReference | IotTopicRuleErrorActionCloudwatchAlarm): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alarm_name: cdktf.stringToTerraform(struct!.alarmName),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    state_reason: cdktf.stringToTerraform(struct!.stateReason),
-    state_value: cdktf.stringToTerraform(struct!.stateValue),
+    alarm_name: cdktn.stringToTerraform(struct!.alarmName),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    state_reason: cdktn.stringToTerraform(struct!.stateReason),
+    state_value: cdktn.stringToTerraform(struct!.stateValue),
   }
 }
 
 
 export function iotTopicRuleErrorActionCloudwatchAlarmToHclTerraform(struct?: IotTopicRuleErrorActionCloudwatchAlarmOutputReference | IotTopicRuleErrorActionCloudwatchAlarm): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alarm_name: {
-      value: cdktf.stringToHclTerraform(struct!.alarmName),
+      value: cdktn.stringToHclTerraform(struct!.alarmName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state_reason: {
-      value: cdktf.stringToHclTerraform(struct!.stateReason),
+      value: cdktn.stringToHclTerraform(struct!.stateReason),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state_value: {
-      value: cdktf.stringToHclTerraform(struct!.stateValue),
+      value: cdktn.stringToHclTerraform(struct!.stateValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1754,14 +1754,14 @@ export function iotTopicRuleErrorActionCloudwatchAlarmToHclTerraform(struct?: Io
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionCloudwatchAlarmOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionCloudwatchAlarmOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1860,7 +1860,7 @@ export interface IotTopicRuleErrorActionCloudwatchLogs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
-  readonly batchMode?: boolean | cdktf.IResolvable;
+  readonly batchMode?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}
   */
@@ -1872,38 +1872,38 @@ export interface IotTopicRuleErrorActionCloudwatchLogs {
 }
 
 export function iotTopicRuleErrorActionCloudwatchLogsToTerraform(struct?: IotTopicRuleErrorActionCloudwatchLogsOutputReference | IotTopicRuleErrorActionCloudwatchLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_mode: cdktf.booleanToTerraform(struct!.batchMode),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
 export function iotTopicRuleErrorActionCloudwatchLogsToHclTerraform(struct?: IotTopicRuleErrorActionCloudwatchLogsOutputReference | IotTopicRuleErrorActionCloudwatchLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_mode: {
-      value: cdktf.booleanToHclTerraform(struct!.batchMode),
+      value: cdktn.booleanToHclTerraform(struct!.batchMode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1914,14 +1914,14 @@ export function iotTopicRuleErrorActionCloudwatchLogsToHclTerraform(struct?: Iot
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionCloudwatchLogsOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionCloudwatchLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1959,11 +1959,11 @@ export class IotTopicRuleErrorActionCloudwatchLogsOutputReference extends cdktf.
   }
 
   // batch_mode - computed: false, optional: true, required: false
-  private _batchMode?: boolean | cdktf.IResolvable; 
+  private _batchMode?: boolean | cdktn.IResolvable; 
   public get batchMode() {
     return this.getBooleanAttribute('batch_mode');
   }
-  public set batchMode(value: boolean | cdktf.IResolvable) {
+  public set batchMode(value: boolean | cdktn.IResolvable) {
     this._batchMode = value;
   }
   public resetBatchMode() {
@@ -2028,59 +2028,59 @@ export interface IotTopicRuleErrorActionCloudwatchMetric {
 }
 
 export function iotTopicRuleErrorActionCloudwatchMetricToTerraform(struct?: IotTopicRuleErrorActionCloudwatchMetricOutputReference | IotTopicRuleErrorActionCloudwatchMetric): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metric_name: cdktf.stringToTerraform(struct!.metricName),
-    metric_namespace: cdktf.stringToTerraform(struct!.metricNamespace),
-    metric_timestamp: cdktf.stringToTerraform(struct!.metricTimestamp),
-    metric_unit: cdktf.stringToTerraform(struct!.metricUnit),
-    metric_value: cdktf.stringToTerraform(struct!.metricValue),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    metric_name: cdktn.stringToTerraform(struct!.metricName),
+    metric_namespace: cdktn.stringToTerraform(struct!.metricNamespace),
+    metric_timestamp: cdktn.stringToTerraform(struct!.metricTimestamp),
+    metric_unit: cdktn.stringToTerraform(struct!.metricUnit),
+    metric_value: cdktn.stringToTerraform(struct!.metricValue),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
 export function iotTopicRuleErrorActionCloudwatchMetricToHclTerraform(struct?: IotTopicRuleErrorActionCloudwatchMetricOutputReference | IotTopicRuleErrorActionCloudwatchMetric): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metric_name: {
-      value: cdktf.stringToHclTerraform(struct!.metricName),
+      value: cdktn.stringToHclTerraform(struct!.metricName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric_namespace: {
-      value: cdktf.stringToHclTerraform(struct!.metricNamespace),
+      value: cdktn.stringToHclTerraform(struct!.metricNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric_timestamp: {
-      value: cdktf.stringToHclTerraform(struct!.metricTimestamp),
+      value: cdktn.stringToHclTerraform(struct!.metricTimestamp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric_unit: {
-      value: cdktf.stringToHclTerraform(struct!.metricUnit),
+      value: cdktn.stringToHclTerraform(struct!.metricUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric_value: {
-      value: cdktf.stringToHclTerraform(struct!.metricValue),
+      value: cdktn.stringToHclTerraform(struct!.metricValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2091,14 +2091,14 @@ export function iotTopicRuleErrorActionCloudwatchMetricToHclTerraform(struct?: I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionCloudwatchMetricOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionCloudwatchMetricOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2278,87 +2278,87 @@ export interface IotTopicRuleErrorActionDynamodb {
 }
 
 export function iotTopicRuleErrorActionDynamodbToTerraform(struct?: IotTopicRuleErrorActionDynamodbOutputReference | IotTopicRuleErrorActionDynamodb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hash_key_field: cdktf.stringToTerraform(struct!.hashKeyField),
-    hash_key_type: cdktf.stringToTerraform(struct!.hashKeyType),
-    hash_key_value: cdktf.stringToTerraform(struct!.hashKeyValue),
-    operation: cdktf.stringToTerraform(struct!.operation),
-    payload_field: cdktf.stringToTerraform(struct!.payloadField),
-    range_key_field: cdktf.stringToTerraform(struct!.rangeKeyField),
-    range_key_type: cdktf.stringToTerraform(struct!.rangeKeyType),
-    range_key_value: cdktf.stringToTerraform(struct!.rangeKeyValue),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    table_name: cdktf.stringToTerraform(struct!.tableName),
+    hash_key_field: cdktn.stringToTerraform(struct!.hashKeyField),
+    hash_key_type: cdktn.stringToTerraform(struct!.hashKeyType),
+    hash_key_value: cdktn.stringToTerraform(struct!.hashKeyValue),
+    operation: cdktn.stringToTerraform(struct!.operation),
+    payload_field: cdktn.stringToTerraform(struct!.payloadField),
+    range_key_field: cdktn.stringToTerraform(struct!.rangeKeyField),
+    range_key_type: cdktn.stringToTerraform(struct!.rangeKeyType),
+    range_key_value: cdktn.stringToTerraform(struct!.rangeKeyValue),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
   }
 }
 
 
 export function iotTopicRuleErrorActionDynamodbToHclTerraform(struct?: IotTopicRuleErrorActionDynamodbOutputReference | IotTopicRuleErrorActionDynamodb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hash_key_field: {
-      value: cdktf.stringToHclTerraform(struct!.hashKeyField),
+      value: cdktn.stringToHclTerraform(struct!.hashKeyField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hash_key_type: {
-      value: cdktf.stringToHclTerraform(struct!.hashKeyType),
+      value: cdktn.stringToHclTerraform(struct!.hashKeyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hash_key_value: {
-      value: cdktf.stringToHclTerraform(struct!.hashKeyValue),
+      value: cdktn.stringToHclTerraform(struct!.hashKeyValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operation: {
-      value: cdktf.stringToHclTerraform(struct!.operation),
+      value: cdktn.stringToHclTerraform(struct!.operation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     payload_field: {
-      value: cdktf.stringToHclTerraform(struct!.payloadField),
+      value: cdktn.stringToHclTerraform(struct!.payloadField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     range_key_field: {
-      value: cdktf.stringToHclTerraform(struct!.rangeKeyField),
+      value: cdktn.stringToHclTerraform(struct!.rangeKeyField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     range_key_type: {
-      value: cdktf.stringToHclTerraform(struct!.rangeKeyType),
+      value: cdktn.stringToHclTerraform(struct!.rangeKeyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     range_key_value: {
-      value: cdktf.stringToHclTerraform(struct!.rangeKeyValue),
+      value: cdktn.stringToHclTerraform(struct!.rangeKeyValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2369,14 +2369,14 @@ export function iotTopicRuleErrorActionDynamodbToHclTerraform(struct?: IotTopicR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionDynamodbOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionDynamodbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2611,24 +2611,24 @@ export interface IotTopicRuleErrorActionDynamodbv2PutItem {
 }
 
 export function iotTopicRuleErrorActionDynamodbv2PutItemToTerraform(struct?: IotTopicRuleErrorActionDynamodbv2PutItemOutputReference | IotTopicRuleErrorActionDynamodbv2PutItem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    table_name: cdktf.stringToTerraform(struct!.tableName),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
   }
 }
 
 
 export function iotTopicRuleErrorActionDynamodbv2PutItemToHclTerraform(struct?: IotTopicRuleErrorActionDynamodbv2PutItemOutputReference | IotTopicRuleErrorActionDynamodbv2PutItem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2639,14 +2639,14 @@ export function iotTopicRuleErrorActionDynamodbv2PutItemToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionDynamodbv2PutItemOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionDynamodbv2PutItemOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2698,25 +2698,25 @@ export interface IotTopicRuleErrorActionDynamodbv2 {
 }
 
 export function iotTopicRuleErrorActionDynamodbv2ToTerraform(struct?: IotTopicRuleErrorActionDynamodbv2OutputReference | IotTopicRuleErrorActionDynamodbv2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
     put_item: iotTopicRuleErrorActionDynamodbv2PutItemToTerraform(struct!.putItem),
   }
 }
 
 
 export function iotTopicRuleErrorActionDynamodbv2ToHclTerraform(struct?: IotTopicRuleErrorActionDynamodbv2OutputReference | IotTopicRuleErrorActionDynamodbv2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2733,14 +2733,14 @@ export function iotTopicRuleErrorActionDynamodbv2ToHclTerraform(struct?: IotTopi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionDynamodbv2OutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionDynamodbv2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2827,52 +2827,52 @@ export interface IotTopicRuleErrorActionElasticsearch {
 }
 
 export function iotTopicRuleErrorActionElasticsearchToTerraform(struct?: IotTopicRuleErrorActionElasticsearchOutputReference | IotTopicRuleErrorActionElasticsearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
-    id: cdktf.stringToTerraform(struct!.id),
-    index: cdktf.stringToTerraform(struct!.index),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    type: cdktf.stringToTerraform(struct!.type),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    id: cdktn.stringToTerraform(struct!.id),
+    index: cdktn.stringToTerraform(struct!.index),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function iotTopicRuleErrorActionElasticsearchToHclTerraform(struct?: IotTopicRuleErrorActionElasticsearchOutputReference | IotTopicRuleErrorActionElasticsearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2883,14 +2883,14 @@ export function iotTopicRuleErrorActionElasticsearchToHclTerraform(struct?: IotT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionElasticsearchOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionElasticsearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3008,7 +3008,7 @@ export interface IotTopicRuleErrorActionFirehose {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
-  readonly batchMode?: boolean | cdktf.IResolvable;
+  readonly batchMode?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}
   */
@@ -3024,45 +3024,45 @@ export interface IotTopicRuleErrorActionFirehose {
 }
 
 export function iotTopicRuleErrorActionFirehoseToTerraform(struct?: IotTopicRuleErrorActionFirehoseOutputReference | IotTopicRuleErrorActionFirehose): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_mode: cdktf.booleanToTerraform(struct!.batchMode),
-    delivery_stream_name: cdktf.stringToTerraform(struct!.deliveryStreamName),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    separator: cdktf.stringToTerraform(struct!.separator),
+    batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
+    delivery_stream_name: cdktn.stringToTerraform(struct!.deliveryStreamName),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    separator: cdktn.stringToTerraform(struct!.separator),
   }
 }
 
 
 export function iotTopicRuleErrorActionFirehoseToHclTerraform(struct?: IotTopicRuleErrorActionFirehoseOutputReference | IotTopicRuleErrorActionFirehose): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_mode: {
-      value: cdktf.booleanToHclTerraform(struct!.batchMode),
+      value: cdktn.booleanToHclTerraform(struct!.batchMode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     delivery_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.deliveryStreamName),
+      value: cdktn.stringToHclTerraform(struct!.deliveryStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     separator: {
-      value: cdktf.stringToHclTerraform(struct!.separator),
+      value: cdktn.stringToHclTerraform(struct!.separator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3073,14 +3073,14 @@ export function iotTopicRuleErrorActionFirehoseToHclTerraform(struct?: IotTopicR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionFirehoseOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionFirehoseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3124,11 +3124,11 @@ export class IotTopicRuleErrorActionFirehoseOutputReference extends cdktf.Comple
   }
 
   // batch_mode - computed: false, optional: true, required: false
-  private _batchMode?: boolean | cdktf.IResolvable; 
+  private _batchMode?: boolean | cdktn.IResolvable; 
   public get batchMode() {
     return this.getBooleanAttribute('batch_mode');
   }
-  public set batchMode(value: boolean | cdktf.IResolvable) {
+  public set batchMode(value: boolean | cdktn.IResolvable) {
     this._batchMode = value;
   }
   public resetBatchMode() {
@@ -3192,32 +3192,32 @@ export interface IotTopicRuleErrorActionHttpHttpHeader {
   readonly value: string;
 }
 
-export function iotTopicRuleErrorActionHttpHttpHeaderToTerraform(struct?: IotTopicRuleErrorActionHttpHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleErrorActionHttpHttpHeaderToTerraform(struct?: IotTopicRuleErrorActionHttpHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function iotTopicRuleErrorActionHttpHttpHeaderToHclTerraform(struct?: IotTopicRuleErrorActionHttpHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleErrorActionHttpHttpHeaderToHclTerraform(struct?: IotTopicRuleErrorActionHttpHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3228,9 +3228,9 @@ export function iotTopicRuleErrorActionHttpHttpHeaderToHclTerraform(struct?: Iot
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionHttpHttpHeaderOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionHttpHttpHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3238,11 +3238,11 @@ export class IotTopicRuleErrorActionHttpHttpHeaderOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleErrorActionHttpHttpHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleErrorActionHttpHttpHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3259,14 +3259,14 @@ export class IotTopicRuleErrorActionHttpHttpHeaderOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleErrorActionHttpHttpHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleErrorActionHttpHttpHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3305,15 +3305,15 @@ export class IotTopicRuleErrorActionHttpHttpHeaderOutputReference extends cdktf.
   }
 }
 
-export class IotTopicRuleErrorActionHttpHttpHeaderList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleErrorActionHttpHttpHeader[] | cdktf.IResolvable
+export class IotTopicRuleErrorActionHttpHttpHeaderList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleErrorActionHttpHttpHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3338,42 +3338,42 @@ export interface IotTopicRuleErrorActionHttp {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#http_header IotTopicRule#http_header}
   */
-  readonly httpHeader?: IotTopicRuleErrorActionHttpHttpHeader[] | cdktf.IResolvable;
+  readonly httpHeader?: IotTopicRuleErrorActionHttpHttpHeader[] | cdktn.IResolvable;
 }
 
 export function iotTopicRuleErrorActionHttpToTerraform(struct?: IotTopicRuleErrorActionHttpOutputReference | IotTopicRuleErrorActionHttp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    confirmation_url: cdktf.stringToTerraform(struct!.confirmationUrl),
-    url: cdktf.stringToTerraform(struct!.url),
-    http_header: cdktf.listMapper(iotTopicRuleErrorActionHttpHttpHeaderToTerraform, true)(struct!.httpHeader),
+    confirmation_url: cdktn.stringToTerraform(struct!.confirmationUrl),
+    url: cdktn.stringToTerraform(struct!.url),
+    http_header: cdktn.listMapper(iotTopicRuleErrorActionHttpHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
 
 export function iotTopicRuleErrorActionHttpToHclTerraform(struct?: IotTopicRuleErrorActionHttpOutputReference | IotTopicRuleErrorActionHttp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     confirmation_url: {
-      value: cdktf.stringToHclTerraform(struct!.confirmationUrl),
+      value: cdktn.stringToHclTerraform(struct!.confirmationUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_header: {
-      value: cdktf.listMapperHcl(iotTopicRuleErrorActionHttpHttpHeaderToHclTerraform, true)(struct!.httpHeader),
+      value: cdktn.listMapperHcl(iotTopicRuleErrorActionHttpHttpHeaderToHclTerraform, true)(struct!.httpHeader),
       isBlock: true,
       type: "list",
       storageClassType: "IotTopicRuleErrorActionHttpHttpHeaderList",
@@ -3384,14 +3384,14 @@ export function iotTopicRuleErrorActionHttpToHclTerraform(struct?: IotTopicRuleE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionHttpOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionHttpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3462,7 +3462,7 @@ export class IotTopicRuleErrorActionHttpOutputReference extends cdktf.ComplexObj
   public get httpHeader() {
     return this._httpHeader;
   }
-  public putHttpHeader(value: IotTopicRuleErrorActionHttpHttpHeader[] | cdktf.IResolvable) {
+  public putHttpHeader(value: IotTopicRuleErrorActionHttpHttpHeader[] | cdktn.IResolvable) {
     this._httpHeader.internalValue = value;
   }
   public resetHttpHeader() {
@@ -3477,7 +3477,7 @@ export interface IotTopicRuleErrorActionIotAnalytics {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
-  readonly batchMode?: boolean | cdktf.IResolvable;
+  readonly batchMode?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}
   */
@@ -3489,38 +3489,38 @@ export interface IotTopicRuleErrorActionIotAnalytics {
 }
 
 export function iotTopicRuleErrorActionIotAnalyticsToTerraform(struct?: IotTopicRuleErrorActionIotAnalyticsOutputReference | IotTopicRuleErrorActionIotAnalytics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_mode: cdktf.booleanToTerraform(struct!.batchMode),
-    channel_name: cdktf.stringToTerraform(struct!.channelName),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
+    channel_name: cdktn.stringToTerraform(struct!.channelName),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
 export function iotTopicRuleErrorActionIotAnalyticsToHclTerraform(struct?: IotTopicRuleErrorActionIotAnalyticsOutputReference | IotTopicRuleErrorActionIotAnalytics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_mode: {
-      value: cdktf.booleanToHclTerraform(struct!.batchMode),
+      value: cdktn.booleanToHclTerraform(struct!.batchMode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     channel_name: {
-      value: cdktf.stringToHclTerraform(struct!.channelName),
+      value: cdktn.stringToHclTerraform(struct!.channelName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3531,14 +3531,14 @@ export function iotTopicRuleErrorActionIotAnalyticsToHclTerraform(struct?: IotTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionIotAnalyticsOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionIotAnalyticsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3576,11 +3576,11 @@ export class IotTopicRuleErrorActionIotAnalyticsOutputReference extends cdktf.Co
   }
 
   // batch_mode - computed: false, optional: true, required: false
-  private _batchMode?: boolean | cdktf.IResolvable; 
+  private _batchMode?: boolean | cdktn.IResolvable; 
   public get batchMode() {
     return this.getBooleanAttribute('batch_mode');
   }
-  public set batchMode(value: boolean | cdktf.IResolvable) {
+  public set batchMode(value: boolean | cdktn.IResolvable) {
     this._batchMode = value;
   }
   public resetBatchMode() {
@@ -3621,7 +3621,7 @@ export interface IotTopicRuleErrorActionIotEvents {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
-  readonly batchMode?: boolean | cdktf.IResolvable;
+  readonly batchMode?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}
   */
@@ -3637,45 +3637,45 @@ export interface IotTopicRuleErrorActionIotEvents {
 }
 
 export function iotTopicRuleErrorActionIotEventsToTerraform(struct?: IotTopicRuleErrorActionIotEventsOutputReference | IotTopicRuleErrorActionIotEvents): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_mode: cdktf.booleanToTerraform(struct!.batchMode),
-    input_name: cdktf.stringToTerraform(struct!.inputName),
-    message_id: cdktf.stringToTerraform(struct!.messageId),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
+    input_name: cdktn.stringToTerraform(struct!.inputName),
+    message_id: cdktn.stringToTerraform(struct!.messageId),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
 export function iotTopicRuleErrorActionIotEventsToHclTerraform(struct?: IotTopicRuleErrorActionIotEventsOutputReference | IotTopicRuleErrorActionIotEvents): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_mode: {
-      value: cdktf.booleanToHclTerraform(struct!.batchMode),
+      value: cdktn.booleanToHclTerraform(struct!.batchMode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     input_name: {
-      value: cdktf.stringToHclTerraform(struct!.inputName),
+      value: cdktn.stringToHclTerraform(struct!.inputName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message_id: {
-      value: cdktf.stringToHclTerraform(struct!.messageId),
+      value: cdktn.stringToHclTerraform(struct!.messageId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3686,14 +3686,14 @@ export function iotTopicRuleErrorActionIotEventsToHclTerraform(struct?: IotTopic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionIotEventsOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionIotEventsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3737,11 +3737,11 @@ export class IotTopicRuleErrorActionIotEventsOutputReference extends cdktf.Compl
   }
 
   // batch_mode - computed: false, optional: true, required: false
-  private _batchMode?: boolean | cdktf.IResolvable; 
+  private _batchMode?: boolean | cdktn.IResolvable; 
   public get batchMode() {
     return this.getBooleanAttribute('batch_mode');
   }
-  public set batchMode(value: boolean | cdktf.IResolvable) {
+  public set batchMode(value: boolean | cdktn.IResolvable) {
     this._batchMode = value;
   }
   public resetBatchMode() {
@@ -3805,32 +3805,32 @@ export interface IotTopicRuleErrorActionKafkaHeader {
   readonly value: string;
 }
 
-export function iotTopicRuleErrorActionKafkaHeaderToTerraform(struct?: IotTopicRuleErrorActionKafkaHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleErrorActionKafkaHeaderToTerraform(struct?: IotTopicRuleErrorActionKafkaHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function iotTopicRuleErrorActionKafkaHeaderToHclTerraform(struct?: IotTopicRuleErrorActionKafkaHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleErrorActionKafkaHeaderToHclTerraform(struct?: IotTopicRuleErrorActionKafkaHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3841,9 +3841,9 @@ export function iotTopicRuleErrorActionKafkaHeaderToHclTerraform(struct?: IotTop
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionKafkaHeaderOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionKafkaHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3851,11 +3851,11 @@ export class IotTopicRuleErrorActionKafkaHeaderOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleErrorActionKafkaHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleErrorActionKafkaHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3872,14 +3872,14 @@ export class IotTopicRuleErrorActionKafkaHeaderOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleErrorActionKafkaHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleErrorActionKafkaHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3918,15 +3918,15 @@ export class IotTopicRuleErrorActionKafkaHeaderOutputReference extends cdktf.Com
   }
 }
 
-export class IotTopicRuleErrorActionKafkaHeaderList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleErrorActionKafkaHeader[] | cdktf.IResolvable
+export class IotTopicRuleErrorActionKafkaHeaderList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleErrorActionKafkaHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3963,63 +3963,63 @@ export interface IotTopicRuleErrorActionKafka {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#header IotTopicRule#header}
   */
-  readonly header?: IotTopicRuleErrorActionKafkaHeader[] | cdktf.IResolvable;
+  readonly header?: IotTopicRuleErrorActionKafkaHeader[] | cdktn.IResolvable;
 }
 
 export function iotTopicRuleErrorActionKafkaToTerraform(struct?: IotTopicRuleErrorActionKafkaOutputReference | IotTopicRuleErrorActionKafka): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.clientProperties),
-    destination_arn: cdktf.stringToTerraform(struct!.destinationArn),
-    key: cdktf.stringToTerraform(struct!.key),
-    partition: cdktf.stringToTerraform(struct!.partition),
-    topic: cdktf.stringToTerraform(struct!.topic),
-    header: cdktf.listMapper(iotTopicRuleErrorActionKafkaHeaderToTerraform, true)(struct!.header),
+    client_properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.clientProperties),
+    destination_arn: cdktn.stringToTerraform(struct!.destinationArn),
+    key: cdktn.stringToTerraform(struct!.key),
+    partition: cdktn.stringToTerraform(struct!.partition),
+    topic: cdktn.stringToTerraform(struct!.topic),
+    header: cdktn.listMapper(iotTopicRuleErrorActionKafkaHeaderToTerraform, true)(struct!.header),
   }
 }
 
 
 export function iotTopicRuleErrorActionKafkaToHclTerraform(struct?: IotTopicRuleErrorActionKafkaOutputReference | IotTopicRuleErrorActionKafka): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.clientProperties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.clientProperties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     destination_arn: {
-      value: cdktf.stringToHclTerraform(struct!.destinationArn),
+      value: cdktn.stringToHclTerraform(struct!.destinationArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     partition: {
-      value: cdktf.stringToHclTerraform(struct!.partition),
+      value: cdktn.stringToHclTerraform(struct!.partition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic: {
-      value: cdktf.stringToHclTerraform(struct!.topic),
+      value: cdktn.stringToHclTerraform(struct!.topic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header: {
-      value: cdktf.listMapperHcl(iotTopicRuleErrorActionKafkaHeaderToHclTerraform, true)(struct!.header),
+      value: cdktn.listMapperHcl(iotTopicRuleErrorActionKafkaHeaderToHclTerraform, true)(struct!.header),
       isBlock: true,
       type: "list",
       storageClassType: "IotTopicRuleErrorActionKafkaHeaderList",
@@ -4030,14 +4030,14 @@ export function iotTopicRuleErrorActionKafkaToHclTerraform(struct?: IotTopicRule
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionKafkaOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionKafkaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4168,7 +4168,7 @@ export class IotTopicRuleErrorActionKafkaOutputReference extends cdktf.ComplexOb
   public get header() {
     return this._header;
   }
-  public putHeader(value: IotTopicRuleErrorActionKafkaHeader[] | cdktf.IResolvable) {
+  public putHeader(value: IotTopicRuleErrorActionKafkaHeader[] | cdktn.IResolvable) {
     this._header.internalValue = value;
   }
   public resetHeader() {
@@ -4195,38 +4195,38 @@ export interface IotTopicRuleErrorActionKinesis {
 }
 
 export function iotTopicRuleErrorActionKinesisToTerraform(struct?: IotTopicRuleErrorActionKinesisOutputReference | IotTopicRuleErrorActionKinesis): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    partition_key: cdktf.stringToTerraform(struct!.partitionKey),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    stream_name: cdktf.stringToTerraform(struct!.streamName),
+    partition_key: cdktn.stringToTerraform(struct!.partitionKey),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    stream_name: cdktn.stringToTerraform(struct!.streamName),
   }
 }
 
 
 export function iotTopicRuleErrorActionKinesisToHclTerraform(struct?: IotTopicRuleErrorActionKinesisOutputReference | IotTopicRuleErrorActionKinesis): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     partition_key: {
-      value: cdktf.stringToHclTerraform(struct!.partitionKey),
+      value: cdktn.stringToHclTerraform(struct!.partitionKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.streamName),
+      value: cdktn.stringToHclTerraform(struct!.streamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4237,14 +4237,14 @@ export function iotTopicRuleErrorActionKinesisToHclTerraform(struct?: IotTopicRu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionKinesisOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionKinesisOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4331,24 +4331,24 @@ export interface IotTopicRuleErrorActionLambda {
 }
 
 export function iotTopicRuleErrorActionLambdaToTerraform(struct?: IotTopicRuleErrorActionLambdaOutputReference | IotTopicRuleErrorActionLambda): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    function_arn: cdktf.stringToTerraform(struct!.functionArn),
+    function_arn: cdktn.stringToTerraform(struct!.functionArn),
   }
 }
 
 
 export function iotTopicRuleErrorActionLambdaToHclTerraform(struct?: IotTopicRuleErrorActionLambdaOutputReference | IotTopicRuleErrorActionLambda): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     function_arn: {
-      value: cdktf.stringToHclTerraform(struct!.functionArn),
+      value: cdktn.stringToHclTerraform(struct!.functionArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4359,14 +4359,14 @@ export function iotTopicRuleErrorActionLambdaToHclTerraform(struct?: IotTopicRul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionLambdaOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionLambdaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4420,38 +4420,38 @@ export interface IotTopicRuleErrorActionRepublish {
 }
 
 export function iotTopicRuleErrorActionRepublishToTerraform(struct?: IotTopicRuleErrorActionRepublishOutputReference | IotTopicRuleErrorActionRepublish): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    qos: cdktf.numberToTerraform(struct!.qos),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    topic: cdktf.stringToTerraform(struct!.topic),
+    qos: cdktn.numberToTerraform(struct!.qos),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    topic: cdktn.stringToTerraform(struct!.topic),
   }
 }
 
 
 export function iotTopicRuleErrorActionRepublishToHclTerraform(struct?: IotTopicRuleErrorActionRepublishOutputReference | IotTopicRuleErrorActionRepublish): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     qos: {
-      value: cdktf.numberToHclTerraform(struct!.qos),
+      value: cdktn.numberToHclTerraform(struct!.qos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic: {
-      value: cdktf.stringToHclTerraform(struct!.topic),
+      value: cdktn.stringToHclTerraform(struct!.topic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4462,14 +4462,14 @@ export function iotTopicRuleErrorActionRepublishToHclTerraform(struct?: IotTopic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionRepublishOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionRepublishOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4568,45 +4568,45 @@ export interface IotTopicRuleErrorActionS3 {
 }
 
 export function iotTopicRuleErrorActionS3ToTerraform(struct?: IotTopicRuleErrorActionS3OutputReference | IotTopicRuleErrorActionS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    canned_acl: cdktf.stringToTerraform(struct!.cannedAcl),
-    key: cdktf.stringToTerraform(struct!.key),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    canned_acl: cdktn.stringToTerraform(struct!.cannedAcl),
+    key: cdktn.stringToTerraform(struct!.key),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
 export function iotTopicRuleErrorActionS3ToHclTerraform(struct?: IotTopicRuleErrorActionS3OutputReference | IotTopicRuleErrorActionS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     canned_acl: {
-      value: cdktf.stringToHclTerraform(struct!.cannedAcl),
+      value: cdktn.stringToHclTerraform(struct!.cannedAcl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4617,14 +4617,14 @@ export function iotTopicRuleErrorActionS3ToHclTerraform(struct?: IotTopicRuleErr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionS3OutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4738,38 +4738,38 @@ export interface IotTopicRuleErrorActionSns {
 }
 
 export function iotTopicRuleErrorActionSnsToTerraform(struct?: IotTopicRuleErrorActionSnsOutputReference | IotTopicRuleErrorActionSns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message_format: cdktf.stringToTerraform(struct!.messageFormat),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    target_arn: cdktf.stringToTerraform(struct!.targetArn),
+    message_format: cdktn.stringToTerraform(struct!.messageFormat),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    target_arn: cdktn.stringToTerraform(struct!.targetArn),
   }
 }
 
 
 export function iotTopicRuleErrorActionSnsToHclTerraform(struct?: IotTopicRuleErrorActionSnsOutputReference | IotTopicRuleErrorActionSns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     message_format: {
-      value: cdktf.stringToHclTerraform(struct!.messageFormat),
+      value: cdktn.stringToHclTerraform(struct!.messageFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_arn: {
-      value: cdktf.stringToHclTerraform(struct!.targetArn),
+      value: cdktn.stringToHclTerraform(struct!.targetArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4780,14 +4780,14 @@ export function iotTopicRuleErrorActionSnsToHclTerraform(struct?: IotTopicRuleEr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionSnsOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionSnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4878,42 +4878,42 @@ export interface IotTopicRuleErrorActionSqs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}
   */
-  readonly useBase64: boolean | cdktf.IResolvable;
+  readonly useBase64: boolean | cdktn.IResolvable;
 }
 
 export function iotTopicRuleErrorActionSqsToTerraform(struct?: IotTopicRuleErrorActionSqsOutputReference | IotTopicRuleErrorActionSqs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    queue_url: cdktf.stringToTerraform(struct!.queueUrl),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    use_base64: cdktf.booleanToTerraform(struct!.useBase64),
+    queue_url: cdktn.stringToTerraform(struct!.queueUrl),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    use_base64: cdktn.booleanToTerraform(struct!.useBase64),
   }
 }
 
 
 export function iotTopicRuleErrorActionSqsToHclTerraform(struct?: IotTopicRuleErrorActionSqsOutputReference | IotTopicRuleErrorActionSqs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     queue_url: {
-      value: cdktf.stringToHclTerraform(struct!.queueUrl),
+      value: cdktn.stringToHclTerraform(struct!.queueUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_base64: {
-      value: cdktf.booleanToHclTerraform(struct!.useBase64),
+      value: cdktn.booleanToHclTerraform(struct!.useBase64),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -4924,14 +4924,14 @@ export function iotTopicRuleErrorActionSqsToHclTerraform(struct?: IotTopicRuleEr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionSqsOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionSqsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4995,11 +4995,11 @@ export class IotTopicRuleErrorActionSqsOutputReference extends cdktf.ComplexObje
   }
 
   // use_base64 - computed: false, optional: false, required: true
-  private _useBase64?: boolean | cdktf.IResolvable; 
+  private _useBase64?: boolean | cdktn.IResolvable; 
   public get useBase64() {
     return this.getBooleanAttribute('use_base64');
   }
-  public set useBase64(value: boolean | cdktf.IResolvable) {
+  public set useBase64(value: boolean | cdktn.IResolvable) {
     this._useBase64 = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -5023,38 +5023,38 @@ export interface IotTopicRuleErrorActionStepFunctions {
 }
 
 export function iotTopicRuleErrorActionStepFunctionsToTerraform(struct?: IotTopicRuleErrorActionStepFunctionsOutputReference | IotTopicRuleErrorActionStepFunctions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    execution_name_prefix: cdktf.stringToTerraform(struct!.executionNamePrefix),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    state_machine_name: cdktf.stringToTerraform(struct!.stateMachineName),
+    execution_name_prefix: cdktn.stringToTerraform(struct!.executionNamePrefix),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    state_machine_name: cdktn.stringToTerraform(struct!.stateMachineName),
   }
 }
 
 
 export function iotTopicRuleErrorActionStepFunctionsToHclTerraform(struct?: IotTopicRuleErrorActionStepFunctionsOutputReference | IotTopicRuleErrorActionStepFunctions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     execution_name_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.executionNamePrefix),
+      value: cdktn.stringToHclTerraform(struct!.executionNamePrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state_machine_name: {
-      value: cdktf.stringToHclTerraform(struct!.stateMachineName),
+      value: cdktn.stringToHclTerraform(struct!.stateMachineName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5065,14 +5065,14 @@ export function iotTopicRuleErrorActionStepFunctionsToHclTerraform(struct?: IotT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionStepFunctionsOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionStepFunctionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5162,32 +5162,32 @@ export interface IotTopicRuleErrorActionTimestreamDimension {
   readonly value: string;
 }
 
-export function iotTopicRuleErrorActionTimestreamDimensionToTerraform(struct?: IotTopicRuleErrorActionTimestreamDimension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleErrorActionTimestreamDimensionToTerraform(struct?: IotTopicRuleErrorActionTimestreamDimension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function iotTopicRuleErrorActionTimestreamDimensionToHclTerraform(struct?: IotTopicRuleErrorActionTimestreamDimension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleErrorActionTimestreamDimensionToHclTerraform(struct?: IotTopicRuleErrorActionTimestreamDimension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5198,9 +5198,9 @@ export function iotTopicRuleErrorActionTimestreamDimensionToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionTimestreamDimensionOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionTimestreamDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5208,11 +5208,11 @@ export class IotTopicRuleErrorActionTimestreamDimensionOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleErrorActionTimestreamDimension | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleErrorActionTimestreamDimension | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5229,14 +5229,14 @@ export class IotTopicRuleErrorActionTimestreamDimensionOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleErrorActionTimestreamDimension | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleErrorActionTimestreamDimension | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5275,15 +5275,15 @@ export class IotTopicRuleErrorActionTimestreamDimensionOutputReference extends c
   }
 }
 
-export class IotTopicRuleErrorActionTimestreamDimensionList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleErrorActionTimestreamDimension[] | cdktf.IResolvable
+export class IotTopicRuleErrorActionTimestreamDimensionList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleErrorActionTimestreamDimension[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5306,31 +5306,31 @@ export interface IotTopicRuleErrorActionTimestreamTimestamp {
 }
 
 export function iotTopicRuleErrorActionTimestreamTimestampToTerraform(struct?: IotTopicRuleErrorActionTimestreamTimestampOutputReference | IotTopicRuleErrorActionTimestreamTimestamp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit: cdktf.stringToTerraform(struct!.unit),
-    value: cdktf.stringToTerraform(struct!.value),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function iotTopicRuleErrorActionTimestreamTimestampToHclTerraform(struct?: IotTopicRuleErrorActionTimestreamTimestampOutputReference | IotTopicRuleErrorActionTimestreamTimestamp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5341,14 +5341,14 @@ export function iotTopicRuleErrorActionTimestreamTimestampToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionTimestreamTimestampOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionTimestreamTimestampOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5423,7 +5423,7 @@ export interface IotTopicRuleErrorActionTimestream {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#dimension IotTopicRule#dimension}
   */
-  readonly dimension: IotTopicRuleErrorActionTimestreamDimension[] | cdktf.IResolvable;
+  readonly dimension: IotTopicRuleErrorActionTimestreamDimension[] | cdktn.IResolvable;
   /**
   * timestamp block
   *
@@ -5433,46 +5433,46 @@ export interface IotTopicRuleErrorActionTimestream {
 }
 
 export function iotTopicRuleErrorActionTimestreamToTerraform(struct?: IotTopicRuleErrorActionTimestreamOutputReference | IotTopicRuleErrorActionTimestream): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    table_name: cdktf.stringToTerraform(struct!.tableName),
-    dimension: cdktf.listMapper(iotTopicRuleErrorActionTimestreamDimensionToTerraform, true)(struct!.dimension),
+    database_name: cdktn.stringToTerraform(struct!.databaseName),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
+    dimension: cdktn.listMapper(iotTopicRuleErrorActionTimestreamDimensionToTerraform, true)(struct!.dimension),
     timestamp: iotTopicRuleErrorActionTimestreamTimestampToTerraform(struct!.timestamp),
   }
 }
 
 
 export function iotTopicRuleErrorActionTimestreamToHclTerraform(struct?: IotTopicRuleErrorActionTimestreamOutputReference | IotTopicRuleErrorActionTimestream): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      value: cdktn.stringToHclTerraform(struct!.databaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dimension: {
-      value: cdktf.listMapperHcl(iotTopicRuleErrorActionTimestreamDimensionToHclTerraform, true)(struct!.dimension),
+      value: cdktn.listMapperHcl(iotTopicRuleErrorActionTimestreamDimensionToHclTerraform, true)(struct!.dimension),
       isBlock: true,
       type: "set",
       storageClassType: "IotTopicRuleErrorActionTimestreamDimensionList",
@@ -5489,14 +5489,14 @@ export function iotTopicRuleErrorActionTimestreamToHclTerraform(struct?: IotTopi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionTimestreamOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionTimestreamOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5589,7 +5589,7 @@ export class IotTopicRuleErrorActionTimestreamOutputReference extends cdktf.Comp
   public get dimension() {
     return this._dimension;
   }
-  public putDimension(value: IotTopicRuleErrorActionTimestreamDimension[] | cdktf.IResolvable) {
+  public putDimension(value: IotTopicRuleErrorActionTimestreamDimension[] | cdktn.IResolvable) {
     this._dimension.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -5731,8 +5731,8 @@ export interface IotTopicRuleErrorAction {
 }
 
 export function iotTopicRuleErrorActionToTerraform(struct?: IotTopicRuleErrorActionOutputReference | IotTopicRuleErrorAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5760,8 +5760,8 @@ export function iotTopicRuleErrorActionToTerraform(struct?: IotTopicRuleErrorAct
 
 
 export function iotTopicRuleErrorActionToHclTerraform(struct?: IotTopicRuleErrorActionOutputReference | IotTopicRuleErrorAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5885,14 +5885,14 @@ export function iotTopicRuleErrorActionToHclTerraform(struct?: IotTopicRuleError
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleErrorActionOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleErrorActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6333,7 +6333,7 @@ export interface IotTopicRuleFirehose {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
-  readonly batchMode?: boolean | cdktf.IResolvable;
+  readonly batchMode?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}
   */
@@ -6348,46 +6348,46 @@ export interface IotTopicRuleFirehose {
   readonly separator?: string;
 }
 
-export function iotTopicRuleFirehoseToTerraform(struct?: IotTopicRuleFirehose | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleFirehoseToTerraform(struct?: IotTopicRuleFirehose | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_mode: cdktf.booleanToTerraform(struct!.batchMode),
-    delivery_stream_name: cdktf.stringToTerraform(struct!.deliveryStreamName),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    separator: cdktf.stringToTerraform(struct!.separator),
+    batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
+    delivery_stream_name: cdktn.stringToTerraform(struct!.deliveryStreamName),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    separator: cdktn.stringToTerraform(struct!.separator),
   }
 }
 
 
-export function iotTopicRuleFirehoseToHclTerraform(struct?: IotTopicRuleFirehose | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleFirehoseToHclTerraform(struct?: IotTopicRuleFirehose | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_mode: {
-      value: cdktf.booleanToHclTerraform(struct!.batchMode),
+      value: cdktn.booleanToHclTerraform(struct!.batchMode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     delivery_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.deliveryStreamName),
+      value: cdktn.stringToHclTerraform(struct!.deliveryStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     separator: {
-      value: cdktf.stringToHclTerraform(struct!.separator),
+      value: cdktn.stringToHclTerraform(struct!.separator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6398,9 +6398,9 @@ export function iotTopicRuleFirehoseToHclTerraform(struct?: IotTopicRuleFirehose
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleFirehoseOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleFirehoseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6408,11 +6408,11 @@ export class IotTopicRuleFirehoseOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleFirehose | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleFirehose | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6437,7 +6437,7 @@ export class IotTopicRuleFirehoseOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleFirehose | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleFirehose | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6446,7 +6446,7 @@ export class IotTopicRuleFirehoseOutputReference extends cdktf.ComplexObject {
       this._roleArn = undefined;
       this._separator = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6461,11 +6461,11 @@ export class IotTopicRuleFirehoseOutputReference extends cdktf.ComplexObject {
   }
 
   // batch_mode - computed: false, optional: true, required: false
-  private _batchMode?: boolean | cdktf.IResolvable; 
+  private _batchMode?: boolean | cdktn.IResolvable; 
   public get batchMode() {
     return this.getBooleanAttribute('batch_mode');
   }
-  public set batchMode(value: boolean | cdktf.IResolvable) {
+  public set batchMode(value: boolean | cdktn.IResolvable) {
     this._batchMode = value;
   }
   public resetBatchMode() {
@@ -6519,15 +6519,15 @@ export class IotTopicRuleFirehoseOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class IotTopicRuleFirehoseList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleFirehose[] | cdktf.IResolvable
+export class IotTopicRuleFirehoseList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleFirehose[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6549,32 +6549,32 @@ export interface IotTopicRuleHttpHttpHeader {
   readonly value: string;
 }
 
-export function iotTopicRuleHttpHttpHeaderToTerraform(struct?: IotTopicRuleHttpHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleHttpHttpHeaderToTerraform(struct?: IotTopicRuleHttpHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function iotTopicRuleHttpHttpHeaderToHclTerraform(struct?: IotTopicRuleHttpHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleHttpHttpHeaderToHclTerraform(struct?: IotTopicRuleHttpHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6585,9 +6585,9 @@ export function iotTopicRuleHttpHttpHeaderToHclTerraform(struct?: IotTopicRuleHt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleHttpHttpHeaderOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleHttpHttpHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6595,11 +6595,11 @@ export class IotTopicRuleHttpHttpHeaderOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleHttpHttpHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleHttpHttpHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6616,14 +6616,14 @@ export class IotTopicRuleHttpHttpHeaderOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleHttpHttpHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleHttpHttpHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6662,15 +6662,15 @@ export class IotTopicRuleHttpHttpHeaderOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class IotTopicRuleHttpHttpHeaderList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleHttpHttpHeader[] | cdktf.IResolvable
+export class IotTopicRuleHttpHttpHeaderList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleHttpHttpHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6695,42 +6695,42 @@ export interface IotTopicRuleHttp {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#http_header IotTopicRule#http_header}
   */
-  readonly httpHeader?: IotTopicRuleHttpHttpHeader[] | cdktf.IResolvable;
+  readonly httpHeader?: IotTopicRuleHttpHttpHeader[] | cdktn.IResolvable;
 }
 
-export function iotTopicRuleHttpToTerraform(struct?: IotTopicRuleHttp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleHttpToTerraform(struct?: IotTopicRuleHttp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    confirmation_url: cdktf.stringToTerraform(struct!.confirmationUrl),
-    url: cdktf.stringToTerraform(struct!.url),
-    http_header: cdktf.listMapper(iotTopicRuleHttpHttpHeaderToTerraform, true)(struct!.httpHeader),
+    confirmation_url: cdktn.stringToTerraform(struct!.confirmationUrl),
+    url: cdktn.stringToTerraform(struct!.url),
+    http_header: cdktn.listMapper(iotTopicRuleHttpHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
 
-export function iotTopicRuleHttpToHclTerraform(struct?: IotTopicRuleHttp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleHttpToHclTerraform(struct?: IotTopicRuleHttp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     confirmation_url: {
-      value: cdktf.stringToHclTerraform(struct!.confirmationUrl),
+      value: cdktn.stringToHclTerraform(struct!.confirmationUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_header: {
-      value: cdktf.listMapperHcl(iotTopicRuleHttpHttpHeaderToHclTerraform, true)(struct!.httpHeader),
+      value: cdktn.listMapperHcl(iotTopicRuleHttpHttpHeaderToHclTerraform, true)(struct!.httpHeader),
       isBlock: true,
       type: "list",
       storageClassType: "IotTopicRuleHttpHttpHeaderList",
@@ -6741,9 +6741,9 @@ export function iotTopicRuleHttpToHclTerraform(struct?: IotTopicRuleHttp | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleHttpOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleHttpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6751,11 +6751,11 @@ export class IotTopicRuleHttpOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleHttp | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleHttp | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6776,7 +6776,7 @@ export class IotTopicRuleHttpOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleHttp | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleHttp | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6784,7 +6784,7 @@ export class IotTopicRuleHttpOutputReference extends cdktf.ComplexObject {
       this._url = undefined;
       this._httpHeader.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6831,7 +6831,7 @@ export class IotTopicRuleHttpOutputReference extends cdktf.ComplexObject {
   public get httpHeader() {
     return this._httpHeader;
   }
-  public putHttpHeader(value: IotTopicRuleHttpHttpHeader[] | cdktf.IResolvable) {
+  public putHttpHeader(value: IotTopicRuleHttpHttpHeader[] | cdktn.IResolvable) {
     this._httpHeader.internalValue = value;
   }
   public resetHttpHeader() {
@@ -6843,15 +6843,15 @@ export class IotTopicRuleHttpOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class IotTopicRuleHttpList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleHttp[] | cdktf.IResolvable
+export class IotTopicRuleHttpList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleHttp[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6866,7 +6866,7 @@ export interface IotTopicRuleIotAnalytics {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
-  readonly batchMode?: boolean | cdktf.IResolvable;
+  readonly batchMode?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}
   */
@@ -6877,39 +6877,39 @@ export interface IotTopicRuleIotAnalytics {
   readonly roleArn: string;
 }
 
-export function iotTopicRuleIotAnalyticsToTerraform(struct?: IotTopicRuleIotAnalytics | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleIotAnalyticsToTerraform(struct?: IotTopicRuleIotAnalytics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_mode: cdktf.booleanToTerraform(struct!.batchMode),
-    channel_name: cdktf.stringToTerraform(struct!.channelName),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
+    channel_name: cdktn.stringToTerraform(struct!.channelName),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
-export function iotTopicRuleIotAnalyticsToHclTerraform(struct?: IotTopicRuleIotAnalytics | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleIotAnalyticsToHclTerraform(struct?: IotTopicRuleIotAnalytics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_mode: {
-      value: cdktf.booleanToHclTerraform(struct!.batchMode),
+      value: cdktn.booleanToHclTerraform(struct!.batchMode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     channel_name: {
-      value: cdktf.stringToHclTerraform(struct!.channelName),
+      value: cdktn.stringToHclTerraform(struct!.channelName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6920,9 +6920,9 @@ export function iotTopicRuleIotAnalyticsToHclTerraform(struct?: IotTopicRuleIotA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleIotAnalyticsOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleIotAnalyticsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6930,11 +6930,11 @@ export class IotTopicRuleIotAnalyticsOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleIotAnalytics | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleIotAnalytics | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6955,7 +6955,7 @@ export class IotTopicRuleIotAnalyticsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleIotAnalytics | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleIotAnalytics | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6963,7 +6963,7 @@ export class IotTopicRuleIotAnalyticsOutputReference extends cdktf.ComplexObject
       this._channelName = undefined;
       this._roleArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6977,11 +6977,11 @@ export class IotTopicRuleIotAnalyticsOutputReference extends cdktf.ComplexObject
   }
 
   // batch_mode - computed: false, optional: true, required: false
-  private _batchMode?: boolean | cdktf.IResolvable; 
+  private _batchMode?: boolean | cdktn.IResolvable; 
   public get batchMode() {
     return this.getBooleanAttribute('batch_mode');
   }
-  public set batchMode(value: boolean | cdktf.IResolvable) {
+  public set batchMode(value: boolean | cdktn.IResolvable) {
     this._batchMode = value;
   }
   public resetBatchMode() {
@@ -7019,15 +7019,15 @@ export class IotTopicRuleIotAnalyticsOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class IotTopicRuleIotAnalyticsList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleIotAnalytics[] | cdktf.IResolvable
+export class IotTopicRuleIotAnalyticsList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleIotAnalytics[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7042,7 +7042,7 @@ export interface IotTopicRuleIotEvents {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
-  readonly batchMode?: boolean | cdktf.IResolvable;
+  readonly batchMode?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}
   */
@@ -7057,46 +7057,46 @@ export interface IotTopicRuleIotEvents {
   readonly roleArn: string;
 }
 
-export function iotTopicRuleIotEventsToTerraform(struct?: IotTopicRuleIotEvents | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleIotEventsToTerraform(struct?: IotTopicRuleIotEvents | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_mode: cdktf.booleanToTerraform(struct!.batchMode),
-    input_name: cdktf.stringToTerraform(struct!.inputName),
-    message_id: cdktf.stringToTerraform(struct!.messageId),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
+    input_name: cdktn.stringToTerraform(struct!.inputName),
+    message_id: cdktn.stringToTerraform(struct!.messageId),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
-export function iotTopicRuleIotEventsToHclTerraform(struct?: IotTopicRuleIotEvents | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleIotEventsToHclTerraform(struct?: IotTopicRuleIotEvents | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_mode: {
-      value: cdktf.booleanToHclTerraform(struct!.batchMode),
+      value: cdktn.booleanToHclTerraform(struct!.batchMode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     input_name: {
-      value: cdktf.stringToHclTerraform(struct!.inputName),
+      value: cdktn.stringToHclTerraform(struct!.inputName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message_id: {
-      value: cdktf.stringToHclTerraform(struct!.messageId),
+      value: cdktn.stringToHclTerraform(struct!.messageId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7107,9 +7107,9 @@ export function iotTopicRuleIotEventsToHclTerraform(struct?: IotTopicRuleIotEven
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleIotEventsOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleIotEventsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7117,11 +7117,11 @@ export class IotTopicRuleIotEventsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleIotEvents | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleIotEvents | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7146,7 +7146,7 @@ export class IotTopicRuleIotEventsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleIotEvents | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleIotEvents | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7155,7 +7155,7 @@ export class IotTopicRuleIotEventsOutputReference extends cdktf.ComplexObject {
       this._messageId = undefined;
       this._roleArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7170,11 +7170,11 @@ export class IotTopicRuleIotEventsOutputReference extends cdktf.ComplexObject {
   }
 
   // batch_mode - computed: false, optional: true, required: false
-  private _batchMode?: boolean | cdktf.IResolvable; 
+  private _batchMode?: boolean | cdktn.IResolvable; 
   public get batchMode() {
     return this.getBooleanAttribute('batch_mode');
   }
-  public set batchMode(value: boolean | cdktf.IResolvable) {
+  public set batchMode(value: boolean | cdktn.IResolvable) {
     this._batchMode = value;
   }
   public resetBatchMode() {
@@ -7228,15 +7228,15 @@ export class IotTopicRuleIotEventsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class IotTopicRuleIotEventsList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleIotEvents[] | cdktf.IResolvable
+export class IotTopicRuleIotEventsList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleIotEvents[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7258,32 +7258,32 @@ export interface IotTopicRuleKafkaHeader {
   readonly value: string;
 }
 
-export function iotTopicRuleKafkaHeaderToTerraform(struct?: IotTopicRuleKafkaHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleKafkaHeaderToTerraform(struct?: IotTopicRuleKafkaHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function iotTopicRuleKafkaHeaderToHclTerraform(struct?: IotTopicRuleKafkaHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleKafkaHeaderToHclTerraform(struct?: IotTopicRuleKafkaHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7294,9 +7294,9 @@ export function iotTopicRuleKafkaHeaderToHclTerraform(struct?: IotTopicRuleKafka
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleKafkaHeaderOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleKafkaHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7304,11 +7304,11 @@ export class IotTopicRuleKafkaHeaderOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleKafkaHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleKafkaHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7325,14 +7325,14 @@ export class IotTopicRuleKafkaHeaderOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleKafkaHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleKafkaHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7371,15 +7371,15 @@ export class IotTopicRuleKafkaHeaderOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class IotTopicRuleKafkaHeaderList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleKafkaHeader[] | cdktf.IResolvable
+export class IotTopicRuleKafkaHeaderList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleKafkaHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7416,63 +7416,63 @@ export interface IotTopicRuleKafka {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#header IotTopicRule#header}
   */
-  readonly header?: IotTopicRuleKafkaHeader[] | cdktf.IResolvable;
+  readonly header?: IotTopicRuleKafkaHeader[] | cdktn.IResolvable;
 }
 
-export function iotTopicRuleKafkaToTerraform(struct?: IotTopicRuleKafka | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleKafkaToTerraform(struct?: IotTopicRuleKafka | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.clientProperties),
-    destination_arn: cdktf.stringToTerraform(struct!.destinationArn),
-    key: cdktf.stringToTerraform(struct!.key),
-    partition: cdktf.stringToTerraform(struct!.partition),
-    topic: cdktf.stringToTerraform(struct!.topic),
-    header: cdktf.listMapper(iotTopicRuleKafkaHeaderToTerraform, true)(struct!.header),
+    client_properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.clientProperties),
+    destination_arn: cdktn.stringToTerraform(struct!.destinationArn),
+    key: cdktn.stringToTerraform(struct!.key),
+    partition: cdktn.stringToTerraform(struct!.partition),
+    topic: cdktn.stringToTerraform(struct!.topic),
+    header: cdktn.listMapper(iotTopicRuleKafkaHeaderToTerraform, true)(struct!.header),
   }
 }
 
 
-export function iotTopicRuleKafkaToHclTerraform(struct?: IotTopicRuleKafka | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleKafkaToHclTerraform(struct?: IotTopicRuleKafka | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.clientProperties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.clientProperties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     destination_arn: {
-      value: cdktf.stringToHclTerraform(struct!.destinationArn),
+      value: cdktn.stringToHclTerraform(struct!.destinationArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     partition: {
-      value: cdktf.stringToHclTerraform(struct!.partition),
+      value: cdktn.stringToHclTerraform(struct!.partition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic: {
-      value: cdktf.stringToHclTerraform(struct!.topic),
+      value: cdktn.stringToHclTerraform(struct!.topic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header: {
-      value: cdktf.listMapperHcl(iotTopicRuleKafkaHeaderToHclTerraform, true)(struct!.header),
+      value: cdktn.listMapperHcl(iotTopicRuleKafkaHeaderToHclTerraform, true)(struct!.header),
       isBlock: true,
       type: "list",
       storageClassType: "IotTopicRuleKafkaHeaderList",
@@ -7483,9 +7483,9 @@ export function iotTopicRuleKafkaToHclTerraform(struct?: IotTopicRuleKafka | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleKafkaOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleKafkaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7493,11 +7493,11 @@ export class IotTopicRuleKafkaOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleKafka | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleKafka | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7530,7 +7530,7 @@ export class IotTopicRuleKafkaOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleKafka | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleKafka | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7541,7 +7541,7 @@ export class IotTopicRuleKafkaOutputReference extends cdktf.ComplexObject {
       this._topic = undefined;
       this._header.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7633,7 +7633,7 @@ export class IotTopicRuleKafkaOutputReference extends cdktf.ComplexObject {
   public get header() {
     return this._header;
   }
-  public putHeader(value: IotTopicRuleKafkaHeader[] | cdktf.IResolvable) {
+  public putHeader(value: IotTopicRuleKafkaHeader[] | cdktn.IResolvable) {
     this._header.internalValue = value;
   }
   public resetHeader() {
@@ -7645,15 +7645,15 @@ export class IotTopicRuleKafkaOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class IotTopicRuleKafkaList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleKafka[] | cdktf.IResolvable
+export class IotTopicRuleKafkaList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleKafka[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7679,39 +7679,39 @@ export interface IotTopicRuleKinesis {
   readonly streamName: string;
 }
 
-export function iotTopicRuleKinesisToTerraform(struct?: IotTopicRuleKinesis | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleKinesisToTerraform(struct?: IotTopicRuleKinesis | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    partition_key: cdktf.stringToTerraform(struct!.partitionKey),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    stream_name: cdktf.stringToTerraform(struct!.streamName),
+    partition_key: cdktn.stringToTerraform(struct!.partitionKey),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    stream_name: cdktn.stringToTerraform(struct!.streamName),
   }
 }
 
 
-export function iotTopicRuleKinesisToHclTerraform(struct?: IotTopicRuleKinesis | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleKinesisToHclTerraform(struct?: IotTopicRuleKinesis | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     partition_key: {
-      value: cdktf.stringToHclTerraform(struct!.partitionKey),
+      value: cdktn.stringToHclTerraform(struct!.partitionKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.streamName),
+      value: cdktn.stringToHclTerraform(struct!.streamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7722,9 +7722,9 @@ export function iotTopicRuleKinesisToHclTerraform(struct?: IotTopicRuleKinesis |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleKinesisOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleKinesisOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7732,11 +7732,11 @@ export class IotTopicRuleKinesisOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleKinesis | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleKinesis | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7757,7 +7757,7 @@ export class IotTopicRuleKinesisOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleKinesis | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleKinesis | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7765,7 +7765,7 @@ export class IotTopicRuleKinesisOutputReference extends cdktf.ComplexObject {
       this._roleArn = undefined;
       this._streamName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7821,15 +7821,15 @@ export class IotTopicRuleKinesisOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class IotTopicRuleKinesisList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleKinesis[] | cdktf.IResolvable
+export class IotTopicRuleKinesisList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleKinesis[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7847,25 +7847,25 @@ export interface IotTopicRuleLambda {
   readonly functionArn: string;
 }
 
-export function iotTopicRuleLambdaToTerraform(struct?: IotTopicRuleLambda | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleLambdaToTerraform(struct?: IotTopicRuleLambda | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    function_arn: cdktf.stringToTerraform(struct!.functionArn),
+    function_arn: cdktn.stringToTerraform(struct!.functionArn),
   }
 }
 
 
-export function iotTopicRuleLambdaToHclTerraform(struct?: IotTopicRuleLambda | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleLambdaToHclTerraform(struct?: IotTopicRuleLambda | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     function_arn: {
-      value: cdktf.stringToHclTerraform(struct!.functionArn),
+      value: cdktn.stringToHclTerraform(struct!.functionArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7876,9 +7876,9 @@ export function iotTopicRuleLambdaToHclTerraform(struct?: IotTopicRuleLambda | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleLambdaOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleLambdaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7886,11 +7886,11 @@ export class IotTopicRuleLambdaOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleLambda | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleLambda | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7903,13 +7903,13 @@ export class IotTopicRuleLambdaOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleLambda | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleLambda | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._functionArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7934,15 +7934,15 @@ export class IotTopicRuleLambdaOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class IotTopicRuleLambdaList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleLambda[] | cdktf.IResolvable
+export class IotTopicRuleLambdaList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleLambda[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7968,39 +7968,39 @@ export interface IotTopicRuleRepublish {
   readonly topic: string;
 }
 
-export function iotTopicRuleRepublishToTerraform(struct?: IotTopicRuleRepublish | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleRepublishToTerraform(struct?: IotTopicRuleRepublish | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    qos: cdktf.numberToTerraform(struct!.qos),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    topic: cdktf.stringToTerraform(struct!.topic),
+    qos: cdktn.numberToTerraform(struct!.qos),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    topic: cdktn.stringToTerraform(struct!.topic),
   }
 }
 
 
-export function iotTopicRuleRepublishToHclTerraform(struct?: IotTopicRuleRepublish | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleRepublishToHclTerraform(struct?: IotTopicRuleRepublish | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     qos: {
-      value: cdktf.numberToHclTerraform(struct!.qos),
+      value: cdktn.numberToHclTerraform(struct!.qos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic: {
-      value: cdktf.stringToHclTerraform(struct!.topic),
+      value: cdktn.stringToHclTerraform(struct!.topic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8011,9 +8011,9 @@ export function iotTopicRuleRepublishToHclTerraform(struct?: IotTopicRuleRepubli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleRepublishOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleRepublishOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8021,11 +8021,11 @@ export class IotTopicRuleRepublishOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleRepublish | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleRepublish | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8046,7 +8046,7 @@ export class IotTopicRuleRepublishOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleRepublish | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleRepublish | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8054,7 +8054,7 @@ export class IotTopicRuleRepublishOutputReference extends cdktf.ComplexObject {
       this._roleArn = undefined;
       this._topic = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8110,15 +8110,15 @@ export class IotTopicRuleRepublishOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class IotTopicRuleRepublishList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleRepublish[] | cdktf.IResolvable
+export class IotTopicRuleRepublishList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleRepublish[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8148,46 +8148,46 @@ export interface IotTopicRuleS3 {
   readonly roleArn: string;
 }
 
-export function iotTopicRuleS3ToTerraform(struct?: IotTopicRuleS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleS3ToTerraform(struct?: IotTopicRuleS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    canned_acl: cdktf.stringToTerraform(struct!.cannedAcl),
-    key: cdktf.stringToTerraform(struct!.key),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    canned_acl: cdktn.stringToTerraform(struct!.cannedAcl),
+    key: cdktn.stringToTerraform(struct!.key),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
-export function iotTopicRuleS3ToHclTerraform(struct?: IotTopicRuleS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleS3ToHclTerraform(struct?: IotTopicRuleS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     canned_acl: {
-      value: cdktf.stringToHclTerraform(struct!.cannedAcl),
+      value: cdktn.stringToHclTerraform(struct!.cannedAcl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8198,9 +8198,9 @@ export function iotTopicRuleS3ToHclTerraform(struct?: IotTopicRuleS3 | cdktf.IRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleS3OutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8208,11 +8208,11 @@ export class IotTopicRuleS3OutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleS3 | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleS3 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8237,7 +8237,7 @@ export class IotTopicRuleS3OutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleS3 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleS3 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8246,7 +8246,7 @@ export class IotTopicRuleS3OutputReference extends cdktf.ComplexObject {
       this._key = undefined;
       this._roleArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8316,15 +8316,15 @@ export class IotTopicRuleS3OutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class IotTopicRuleS3List extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleS3[] | cdktf.IResolvable
+export class IotTopicRuleS3List extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleS3[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8350,39 +8350,39 @@ export interface IotTopicRuleSns {
   readonly targetArn: string;
 }
 
-export function iotTopicRuleSnsToTerraform(struct?: IotTopicRuleSns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleSnsToTerraform(struct?: IotTopicRuleSns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message_format: cdktf.stringToTerraform(struct!.messageFormat),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    target_arn: cdktf.stringToTerraform(struct!.targetArn),
+    message_format: cdktn.stringToTerraform(struct!.messageFormat),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    target_arn: cdktn.stringToTerraform(struct!.targetArn),
   }
 }
 
 
-export function iotTopicRuleSnsToHclTerraform(struct?: IotTopicRuleSns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleSnsToHclTerraform(struct?: IotTopicRuleSns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     message_format: {
-      value: cdktf.stringToHclTerraform(struct!.messageFormat),
+      value: cdktn.stringToHclTerraform(struct!.messageFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_arn: {
-      value: cdktf.stringToHclTerraform(struct!.targetArn),
+      value: cdktn.stringToHclTerraform(struct!.targetArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8393,9 +8393,9 @@ export function iotTopicRuleSnsToHclTerraform(struct?: IotTopicRuleSns | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleSnsOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleSnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8403,11 +8403,11 @@ export class IotTopicRuleSnsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleSns | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleSns | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8428,7 +8428,7 @@ export class IotTopicRuleSnsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleSns | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleSns | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8436,7 +8436,7 @@ export class IotTopicRuleSnsOutputReference extends cdktf.ComplexObject {
       this._roleArn = undefined;
       this._targetArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8492,15 +8492,15 @@ export class IotTopicRuleSnsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class IotTopicRuleSnsList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleSns[] | cdktf.IResolvable
+export class IotTopicRuleSnsList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleSns[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8523,42 +8523,42 @@ export interface IotTopicRuleSqs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}
   */
-  readonly useBase64: boolean | cdktf.IResolvable;
+  readonly useBase64: boolean | cdktn.IResolvable;
 }
 
-export function iotTopicRuleSqsToTerraform(struct?: IotTopicRuleSqs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleSqsToTerraform(struct?: IotTopicRuleSqs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    queue_url: cdktf.stringToTerraform(struct!.queueUrl),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    use_base64: cdktf.booleanToTerraform(struct!.useBase64),
+    queue_url: cdktn.stringToTerraform(struct!.queueUrl),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    use_base64: cdktn.booleanToTerraform(struct!.useBase64),
   }
 }
 
 
-export function iotTopicRuleSqsToHclTerraform(struct?: IotTopicRuleSqs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleSqsToHclTerraform(struct?: IotTopicRuleSqs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     queue_url: {
-      value: cdktf.stringToHclTerraform(struct!.queueUrl),
+      value: cdktn.stringToHclTerraform(struct!.queueUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_base64: {
-      value: cdktf.booleanToHclTerraform(struct!.useBase64),
+      value: cdktn.booleanToHclTerraform(struct!.useBase64),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -8569,9 +8569,9 @@ export function iotTopicRuleSqsToHclTerraform(struct?: IotTopicRuleSqs | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleSqsOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleSqsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8579,11 +8579,11 @@ export class IotTopicRuleSqsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleSqs | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleSqs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8604,7 +8604,7 @@ export class IotTopicRuleSqsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleSqs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleSqs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8612,7 +8612,7 @@ export class IotTopicRuleSqsOutputReference extends cdktf.ComplexObject {
       this._roleArn = undefined;
       this._useBase64 = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8652,11 +8652,11 @@ export class IotTopicRuleSqsOutputReference extends cdktf.ComplexObject {
   }
 
   // use_base64 - computed: false, optional: false, required: true
-  private _useBase64?: boolean | cdktf.IResolvable; 
+  private _useBase64?: boolean | cdktn.IResolvable; 
   public get useBase64() {
     return this.getBooleanAttribute('use_base64');
   }
-  public set useBase64(value: boolean | cdktf.IResolvable) {
+  public set useBase64(value: boolean | cdktn.IResolvable) {
     this._useBase64 = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -8665,15 +8665,15 @@ export class IotTopicRuleSqsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class IotTopicRuleSqsList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleSqs[] | cdktf.IResolvable
+export class IotTopicRuleSqsList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleSqs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8699,39 +8699,39 @@ export interface IotTopicRuleStepFunctions {
   readonly stateMachineName: string;
 }
 
-export function iotTopicRuleStepFunctionsToTerraform(struct?: IotTopicRuleStepFunctions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleStepFunctionsToTerraform(struct?: IotTopicRuleStepFunctions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    execution_name_prefix: cdktf.stringToTerraform(struct!.executionNamePrefix),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    state_machine_name: cdktf.stringToTerraform(struct!.stateMachineName),
+    execution_name_prefix: cdktn.stringToTerraform(struct!.executionNamePrefix),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    state_machine_name: cdktn.stringToTerraform(struct!.stateMachineName),
   }
 }
 
 
-export function iotTopicRuleStepFunctionsToHclTerraform(struct?: IotTopicRuleStepFunctions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleStepFunctionsToHclTerraform(struct?: IotTopicRuleStepFunctions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     execution_name_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.executionNamePrefix),
+      value: cdktn.stringToHclTerraform(struct!.executionNamePrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state_machine_name: {
-      value: cdktf.stringToHclTerraform(struct!.stateMachineName),
+      value: cdktn.stringToHclTerraform(struct!.stateMachineName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8742,9 +8742,9 @@ export function iotTopicRuleStepFunctionsToHclTerraform(struct?: IotTopicRuleSte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleStepFunctionsOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleStepFunctionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8752,11 +8752,11 @@ export class IotTopicRuleStepFunctionsOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleStepFunctions | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleStepFunctions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8777,7 +8777,7 @@ export class IotTopicRuleStepFunctionsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleStepFunctions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleStepFunctions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8785,7 +8785,7 @@ export class IotTopicRuleStepFunctionsOutputReference extends cdktf.ComplexObjec
       this._roleArn = undefined;
       this._stateMachineName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8841,15 +8841,15 @@ export class IotTopicRuleStepFunctionsOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class IotTopicRuleStepFunctionsList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleStepFunctions[] | cdktf.IResolvable
+export class IotTopicRuleStepFunctionsList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleStepFunctions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8871,32 +8871,32 @@ export interface IotTopicRuleTimestreamDimension {
   readonly value: string;
 }
 
-export function iotTopicRuleTimestreamDimensionToTerraform(struct?: IotTopicRuleTimestreamDimension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleTimestreamDimensionToTerraform(struct?: IotTopicRuleTimestreamDimension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function iotTopicRuleTimestreamDimensionToHclTerraform(struct?: IotTopicRuleTimestreamDimension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleTimestreamDimensionToHclTerraform(struct?: IotTopicRuleTimestreamDimension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8907,9 +8907,9 @@ export function iotTopicRuleTimestreamDimensionToHclTerraform(struct?: IotTopicR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleTimestreamDimensionOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleTimestreamDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8917,11 +8917,11 @@ export class IotTopicRuleTimestreamDimensionOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleTimestreamDimension | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleTimestreamDimension | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8938,14 +8938,14 @@ export class IotTopicRuleTimestreamDimensionOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleTimestreamDimension | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleTimestreamDimension | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8984,15 +8984,15 @@ export class IotTopicRuleTimestreamDimensionOutputReference extends cdktf.Comple
   }
 }
 
-export class IotTopicRuleTimestreamDimensionList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleTimestreamDimension[] | cdktf.IResolvable
+export class IotTopicRuleTimestreamDimensionList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleTimestreamDimension[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9015,31 +9015,31 @@ export interface IotTopicRuleTimestreamTimestamp {
 }
 
 export function iotTopicRuleTimestreamTimestampToTerraform(struct?: IotTopicRuleTimestreamTimestampOutputReference | IotTopicRuleTimestreamTimestamp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit: cdktf.stringToTerraform(struct!.unit),
-    value: cdktf.stringToTerraform(struct!.value),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function iotTopicRuleTimestreamTimestampToHclTerraform(struct?: IotTopicRuleTimestreamTimestampOutputReference | IotTopicRuleTimestreamTimestamp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9050,14 +9050,14 @@ export function iotTopicRuleTimestreamTimestampToHclTerraform(struct?: IotTopicR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleTimestreamTimestampOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleTimestreamTimestampOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9132,7 +9132,7 @@ export interface IotTopicRuleTimestream {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#dimension IotTopicRule#dimension}
   */
-  readonly dimension: IotTopicRuleTimestreamDimension[] | cdktf.IResolvable;
+  readonly dimension: IotTopicRuleTimestreamDimension[] | cdktn.IResolvable;
   /**
   * timestamp block
   *
@@ -9141,47 +9141,47 @@ export interface IotTopicRuleTimestream {
   readonly timestamp?: IotTopicRuleTimestreamTimestamp;
 }
 
-export function iotTopicRuleTimestreamToTerraform(struct?: IotTopicRuleTimestream | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleTimestreamToTerraform(struct?: IotTopicRuleTimestream | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    table_name: cdktf.stringToTerraform(struct!.tableName),
-    dimension: cdktf.listMapper(iotTopicRuleTimestreamDimensionToTerraform, true)(struct!.dimension),
+    database_name: cdktn.stringToTerraform(struct!.databaseName),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
+    dimension: cdktn.listMapper(iotTopicRuleTimestreamDimensionToTerraform, true)(struct!.dimension),
     timestamp: iotTopicRuleTimestreamTimestampToTerraform(struct!.timestamp),
   }
 }
 
 
-export function iotTopicRuleTimestreamToHclTerraform(struct?: IotTopicRuleTimestream | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotTopicRuleTimestreamToHclTerraform(struct?: IotTopicRuleTimestream | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      value: cdktn.stringToHclTerraform(struct!.databaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dimension: {
-      value: cdktf.listMapperHcl(iotTopicRuleTimestreamDimensionToHclTerraform, true)(struct!.dimension),
+      value: cdktn.listMapperHcl(iotTopicRuleTimestreamDimensionToHclTerraform, true)(struct!.dimension),
       isBlock: true,
       type: "set",
       storageClassType: "IotTopicRuleTimestreamDimensionList",
@@ -9198,9 +9198,9 @@ export function iotTopicRuleTimestreamToHclTerraform(struct?: IotTopicRuleTimest
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotTopicRuleTimestreamOutputReference extends cdktf.ComplexObject {
+export class IotTopicRuleTimestreamOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9208,11 +9208,11 @@ export class IotTopicRuleTimestreamOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotTopicRuleTimestream | cdktf.IResolvable | undefined {
+  public get internalValue(): IotTopicRuleTimestream | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9241,7 +9241,7 @@ export class IotTopicRuleTimestreamOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotTopicRuleTimestream | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotTopicRuleTimestream | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9251,7 +9251,7 @@ export class IotTopicRuleTimestreamOutputReference extends cdktf.ComplexObject {
       this._dimension.internalValue = undefined;
       this._timestamp.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9310,7 +9310,7 @@ export class IotTopicRuleTimestreamOutputReference extends cdktf.ComplexObject {
   public get dimension() {
     return this._dimension;
   }
-  public putDimension(value: IotTopicRuleTimestreamDimension[] | cdktf.IResolvable) {
+  public putDimension(value: IotTopicRuleTimestreamDimension[] | cdktn.IResolvable) {
     this._dimension.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9335,15 +9335,15 @@ export class IotTopicRuleTimestreamOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class IotTopicRuleTimestreamList extends cdktf.ComplexList {
-  public internalValue? : IotTopicRuleTimestream[] | cdktf.IResolvable
+export class IotTopicRuleTimestreamList extends cdktn.ComplexList {
+  public internalValue? : IotTopicRuleTimestream[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9358,7 +9358,7 @@ export class IotTopicRuleTimestreamList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule aws_iot_topic_rule}
 */
-export class IotTopicRule extends cdktf.TerraformResource {
+export class IotTopicRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -9369,14 +9369,14 @@ export class IotTopicRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IotTopicRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IotTopicRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotTopicRule to import
   * @param importFromId The id of the existing IotTopicRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_topic_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotTopicRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_topic_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_topic_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -9463,11 +9463,11 @@ export class IotTopicRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9583,7 +9583,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get cloudwatchAlarm() {
     return this._cloudwatchAlarm;
   }
-  public putCloudwatchAlarm(value: IotTopicRuleCloudwatchAlarm[] | cdktf.IResolvable) {
+  public putCloudwatchAlarm(value: IotTopicRuleCloudwatchAlarm[] | cdktn.IResolvable) {
     this._cloudwatchAlarm.internalValue = value;
   }
   public resetCloudwatchAlarm() {
@@ -9599,7 +9599,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get cloudwatchLogs() {
     return this._cloudwatchLogs;
   }
-  public putCloudwatchLogs(value: IotTopicRuleCloudwatchLogs[] | cdktf.IResolvable) {
+  public putCloudwatchLogs(value: IotTopicRuleCloudwatchLogs[] | cdktn.IResolvable) {
     this._cloudwatchLogs.internalValue = value;
   }
   public resetCloudwatchLogs() {
@@ -9615,7 +9615,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get cloudwatchMetric() {
     return this._cloudwatchMetric;
   }
-  public putCloudwatchMetric(value: IotTopicRuleCloudwatchMetric[] | cdktf.IResolvable) {
+  public putCloudwatchMetric(value: IotTopicRuleCloudwatchMetric[] | cdktn.IResolvable) {
     this._cloudwatchMetric.internalValue = value;
   }
   public resetCloudwatchMetric() {
@@ -9631,7 +9631,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get dynamodb() {
     return this._dynamodb;
   }
-  public putDynamodb(value: IotTopicRuleDynamodb[] | cdktf.IResolvable) {
+  public putDynamodb(value: IotTopicRuleDynamodb[] | cdktn.IResolvable) {
     this._dynamodb.internalValue = value;
   }
   public resetDynamodb() {
@@ -9647,7 +9647,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get dynamodbv2() {
     return this._dynamodbv2;
   }
-  public putDynamodbv2(value: IotTopicRuleDynamodbv2[] | cdktf.IResolvable) {
+  public putDynamodbv2(value: IotTopicRuleDynamodbv2[] | cdktn.IResolvable) {
     this._dynamodbv2.internalValue = value;
   }
   public resetDynamodbv2() {
@@ -9663,7 +9663,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get elasticsearch() {
     return this._elasticsearch;
   }
-  public putElasticsearch(value: IotTopicRuleElasticsearch[] | cdktf.IResolvable) {
+  public putElasticsearch(value: IotTopicRuleElasticsearch[] | cdktn.IResolvable) {
     this._elasticsearch.internalValue = value;
   }
   public resetElasticsearch() {
@@ -9695,7 +9695,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get firehose() {
     return this._firehose;
   }
-  public putFirehose(value: IotTopicRuleFirehose[] | cdktf.IResolvable) {
+  public putFirehose(value: IotTopicRuleFirehose[] | cdktn.IResolvable) {
     this._firehose.internalValue = value;
   }
   public resetFirehose() {
@@ -9711,7 +9711,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get http() {
     return this._http;
   }
-  public putHttp(value: IotTopicRuleHttp[] | cdktf.IResolvable) {
+  public putHttp(value: IotTopicRuleHttp[] | cdktn.IResolvable) {
     this._http.internalValue = value;
   }
   public resetHttp() {
@@ -9727,7 +9727,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get iotAnalytics() {
     return this._iotAnalytics;
   }
-  public putIotAnalytics(value: IotTopicRuleIotAnalytics[] | cdktf.IResolvable) {
+  public putIotAnalytics(value: IotTopicRuleIotAnalytics[] | cdktn.IResolvable) {
     this._iotAnalytics.internalValue = value;
   }
   public resetIotAnalytics() {
@@ -9743,7 +9743,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get iotEvents() {
     return this._iotEvents;
   }
-  public putIotEvents(value: IotTopicRuleIotEvents[] | cdktf.IResolvable) {
+  public putIotEvents(value: IotTopicRuleIotEvents[] | cdktn.IResolvable) {
     this._iotEvents.internalValue = value;
   }
   public resetIotEvents() {
@@ -9759,7 +9759,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get kafka() {
     return this._kafka;
   }
-  public putKafka(value: IotTopicRuleKafka[] | cdktf.IResolvable) {
+  public putKafka(value: IotTopicRuleKafka[] | cdktn.IResolvable) {
     this._kafka.internalValue = value;
   }
   public resetKafka() {
@@ -9775,7 +9775,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get kinesis() {
     return this._kinesis;
   }
-  public putKinesis(value: IotTopicRuleKinesis[] | cdktf.IResolvable) {
+  public putKinesis(value: IotTopicRuleKinesis[] | cdktn.IResolvable) {
     this._kinesis.internalValue = value;
   }
   public resetKinesis() {
@@ -9791,7 +9791,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get lambda() {
     return this._lambda;
   }
-  public putLambda(value: IotTopicRuleLambda[] | cdktf.IResolvable) {
+  public putLambda(value: IotTopicRuleLambda[] | cdktn.IResolvable) {
     this._lambda.internalValue = value;
   }
   public resetLambda() {
@@ -9807,7 +9807,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get republish() {
     return this._republish;
   }
-  public putRepublish(value: IotTopicRuleRepublish[] | cdktf.IResolvable) {
+  public putRepublish(value: IotTopicRuleRepublish[] | cdktn.IResolvable) {
     this._republish.internalValue = value;
   }
   public resetRepublish() {
@@ -9823,7 +9823,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get s3() {
     return this._s3;
   }
-  public putS3(value: IotTopicRuleS3[] | cdktf.IResolvable) {
+  public putS3(value: IotTopicRuleS3[] | cdktn.IResolvable) {
     this._s3.internalValue = value;
   }
   public resetS3() {
@@ -9839,7 +9839,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get sns() {
     return this._sns;
   }
-  public putSns(value: IotTopicRuleSns[] | cdktf.IResolvable) {
+  public putSns(value: IotTopicRuleSns[] | cdktn.IResolvable) {
     this._sns.internalValue = value;
   }
   public resetSns() {
@@ -9855,7 +9855,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get sqs() {
     return this._sqs;
   }
-  public putSqs(value: IotTopicRuleSqs[] | cdktf.IResolvable) {
+  public putSqs(value: IotTopicRuleSqs[] | cdktn.IResolvable) {
     this._sqs.internalValue = value;
   }
   public resetSqs() {
@@ -9871,7 +9871,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get stepFunctions() {
     return this._stepFunctions;
   }
-  public putStepFunctions(value: IotTopicRuleStepFunctions[] | cdktf.IResolvable) {
+  public putStepFunctions(value: IotTopicRuleStepFunctions[] | cdktn.IResolvable) {
     this._stepFunctions.internalValue = value;
   }
   public resetStepFunctions() {
@@ -9887,7 +9887,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   public get timestream() {
     return this._timestream;
   }
-  public putTimestream(value: IotTopicRuleTimestream[] | cdktf.IResolvable) {
+  public putTimestream(value: IotTopicRuleTimestream[] | cdktn.IResolvable) {
     this._timestream.internalValue = value;
   }
   public resetTimestream() {
@@ -9904,126 +9904,126 @@ export class IotTopicRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      sql: cdktf.stringToTerraform(this._sql),
-      sql_version: cdktf.stringToTerraform(this._sqlVersion),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      cloudwatch_alarm: cdktf.listMapper(iotTopicRuleCloudwatchAlarmToTerraform, true)(this._cloudwatchAlarm.internalValue),
-      cloudwatch_logs: cdktf.listMapper(iotTopicRuleCloudwatchLogsToTerraform, true)(this._cloudwatchLogs.internalValue),
-      cloudwatch_metric: cdktf.listMapper(iotTopicRuleCloudwatchMetricToTerraform, true)(this._cloudwatchMetric.internalValue),
-      dynamodb: cdktf.listMapper(iotTopicRuleDynamodbToTerraform, true)(this._dynamodb.internalValue),
-      dynamodbv2: cdktf.listMapper(iotTopicRuleDynamodbv2ToTerraform, true)(this._dynamodbv2.internalValue),
-      elasticsearch: cdktf.listMapper(iotTopicRuleElasticsearchToTerraform, true)(this._elasticsearch.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      sql: cdktn.stringToTerraform(this._sql),
+      sql_version: cdktn.stringToTerraform(this._sqlVersion),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      cloudwatch_alarm: cdktn.listMapper(iotTopicRuleCloudwatchAlarmToTerraform, true)(this._cloudwatchAlarm.internalValue),
+      cloudwatch_logs: cdktn.listMapper(iotTopicRuleCloudwatchLogsToTerraform, true)(this._cloudwatchLogs.internalValue),
+      cloudwatch_metric: cdktn.listMapper(iotTopicRuleCloudwatchMetricToTerraform, true)(this._cloudwatchMetric.internalValue),
+      dynamodb: cdktn.listMapper(iotTopicRuleDynamodbToTerraform, true)(this._dynamodb.internalValue),
+      dynamodbv2: cdktn.listMapper(iotTopicRuleDynamodbv2ToTerraform, true)(this._dynamodbv2.internalValue),
+      elasticsearch: cdktn.listMapper(iotTopicRuleElasticsearchToTerraform, true)(this._elasticsearch.internalValue),
       error_action: iotTopicRuleErrorActionToTerraform(this._errorAction.internalValue),
-      firehose: cdktf.listMapper(iotTopicRuleFirehoseToTerraform, true)(this._firehose.internalValue),
-      http: cdktf.listMapper(iotTopicRuleHttpToTerraform, true)(this._http.internalValue),
-      iot_analytics: cdktf.listMapper(iotTopicRuleIotAnalyticsToTerraform, true)(this._iotAnalytics.internalValue),
-      iot_events: cdktf.listMapper(iotTopicRuleIotEventsToTerraform, true)(this._iotEvents.internalValue),
-      kafka: cdktf.listMapper(iotTopicRuleKafkaToTerraform, true)(this._kafka.internalValue),
-      kinesis: cdktf.listMapper(iotTopicRuleKinesisToTerraform, true)(this._kinesis.internalValue),
-      lambda: cdktf.listMapper(iotTopicRuleLambdaToTerraform, true)(this._lambda.internalValue),
-      republish: cdktf.listMapper(iotTopicRuleRepublishToTerraform, true)(this._republish.internalValue),
-      s3: cdktf.listMapper(iotTopicRuleS3ToTerraform, true)(this._s3.internalValue),
-      sns: cdktf.listMapper(iotTopicRuleSnsToTerraform, true)(this._sns.internalValue),
-      sqs: cdktf.listMapper(iotTopicRuleSqsToTerraform, true)(this._sqs.internalValue),
-      step_functions: cdktf.listMapper(iotTopicRuleStepFunctionsToTerraform, true)(this._stepFunctions.internalValue),
-      timestream: cdktf.listMapper(iotTopicRuleTimestreamToTerraform, true)(this._timestream.internalValue),
+      firehose: cdktn.listMapper(iotTopicRuleFirehoseToTerraform, true)(this._firehose.internalValue),
+      http: cdktn.listMapper(iotTopicRuleHttpToTerraform, true)(this._http.internalValue),
+      iot_analytics: cdktn.listMapper(iotTopicRuleIotAnalyticsToTerraform, true)(this._iotAnalytics.internalValue),
+      iot_events: cdktn.listMapper(iotTopicRuleIotEventsToTerraform, true)(this._iotEvents.internalValue),
+      kafka: cdktn.listMapper(iotTopicRuleKafkaToTerraform, true)(this._kafka.internalValue),
+      kinesis: cdktn.listMapper(iotTopicRuleKinesisToTerraform, true)(this._kinesis.internalValue),
+      lambda: cdktn.listMapper(iotTopicRuleLambdaToTerraform, true)(this._lambda.internalValue),
+      republish: cdktn.listMapper(iotTopicRuleRepublishToTerraform, true)(this._republish.internalValue),
+      s3: cdktn.listMapper(iotTopicRuleS3ToTerraform, true)(this._s3.internalValue),
+      sns: cdktn.listMapper(iotTopicRuleSnsToTerraform, true)(this._sns.internalValue),
+      sqs: cdktn.listMapper(iotTopicRuleSqsToTerraform, true)(this._sqs.internalValue),
+      step_functions: cdktn.listMapper(iotTopicRuleStepFunctionsToTerraform, true)(this._stepFunctions.internalValue),
+      timestream: cdktn.listMapper(iotTopicRuleTimestreamToTerraform, true)(this._timestream.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql: {
-        value: cdktf.stringToHclTerraform(this._sql),
+        value: cdktn.stringToHclTerraform(this._sql),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql_version: {
-        value: cdktf.stringToHclTerraform(this._sqlVersion),
+        value: cdktn.stringToHclTerraform(this._sqlVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       cloudwatch_alarm: {
-        value: cdktf.listMapperHcl(iotTopicRuleCloudwatchAlarmToHclTerraform, true)(this._cloudwatchAlarm.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleCloudwatchAlarmToHclTerraform, true)(this._cloudwatchAlarm.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleCloudwatchAlarmList",
       },
       cloudwatch_logs: {
-        value: cdktf.listMapperHcl(iotTopicRuleCloudwatchLogsToHclTerraform, true)(this._cloudwatchLogs.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleCloudwatchLogsToHclTerraform, true)(this._cloudwatchLogs.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleCloudwatchLogsList",
       },
       cloudwatch_metric: {
-        value: cdktf.listMapperHcl(iotTopicRuleCloudwatchMetricToHclTerraform, true)(this._cloudwatchMetric.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleCloudwatchMetricToHclTerraform, true)(this._cloudwatchMetric.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleCloudwatchMetricList",
       },
       dynamodb: {
-        value: cdktf.listMapperHcl(iotTopicRuleDynamodbToHclTerraform, true)(this._dynamodb.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleDynamodbToHclTerraform, true)(this._dynamodb.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleDynamodbList",
       },
       dynamodbv2: {
-        value: cdktf.listMapperHcl(iotTopicRuleDynamodbv2ToHclTerraform, true)(this._dynamodbv2.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleDynamodbv2ToHclTerraform, true)(this._dynamodbv2.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleDynamodbv2List",
       },
       elasticsearch: {
-        value: cdktf.listMapperHcl(iotTopicRuleElasticsearchToHclTerraform, true)(this._elasticsearch.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleElasticsearchToHclTerraform, true)(this._elasticsearch.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleElasticsearchList",
@@ -10035,79 +10035,79 @@ export class IotTopicRule extends cdktf.TerraformResource {
         storageClassType: "IotTopicRuleErrorActionList",
       },
       firehose: {
-        value: cdktf.listMapperHcl(iotTopicRuleFirehoseToHclTerraform, true)(this._firehose.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleFirehoseToHclTerraform, true)(this._firehose.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleFirehoseList",
       },
       http: {
-        value: cdktf.listMapperHcl(iotTopicRuleHttpToHclTerraform, true)(this._http.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleHttpToHclTerraform, true)(this._http.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleHttpList",
       },
       iot_analytics: {
-        value: cdktf.listMapperHcl(iotTopicRuleIotAnalyticsToHclTerraform, true)(this._iotAnalytics.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleIotAnalyticsToHclTerraform, true)(this._iotAnalytics.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleIotAnalyticsList",
       },
       iot_events: {
-        value: cdktf.listMapperHcl(iotTopicRuleIotEventsToHclTerraform, true)(this._iotEvents.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleIotEventsToHclTerraform, true)(this._iotEvents.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleIotEventsList",
       },
       kafka: {
-        value: cdktf.listMapperHcl(iotTopicRuleKafkaToHclTerraform, true)(this._kafka.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleKafkaToHclTerraform, true)(this._kafka.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleKafkaList",
       },
       kinesis: {
-        value: cdktf.listMapperHcl(iotTopicRuleKinesisToHclTerraform, true)(this._kinesis.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleKinesisToHclTerraform, true)(this._kinesis.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleKinesisList",
       },
       lambda: {
-        value: cdktf.listMapperHcl(iotTopicRuleLambdaToHclTerraform, true)(this._lambda.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleLambdaToHclTerraform, true)(this._lambda.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleLambdaList",
       },
       republish: {
-        value: cdktf.listMapperHcl(iotTopicRuleRepublishToHclTerraform, true)(this._republish.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleRepublishToHclTerraform, true)(this._republish.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleRepublishList",
       },
       s3: {
-        value: cdktf.listMapperHcl(iotTopicRuleS3ToHclTerraform, true)(this._s3.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleS3ToHclTerraform, true)(this._s3.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleS3List",
       },
       sns: {
-        value: cdktf.listMapperHcl(iotTopicRuleSnsToHclTerraform, true)(this._sns.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleSnsToHclTerraform, true)(this._sns.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleSnsList",
       },
       sqs: {
-        value: cdktf.listMapperHcl(iotTopicRuleSqsToHclTerraform, true)(this._sqs.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleSqsToHclTerraform, true)(this._sqs.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleSqsList",
       },
       step_functions: {
-        value: cdktf.listMapperHcl(iotTopicRuleStepFunctionsToHclTerraform, true)(this._stepFunctions.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleStepFunctionsToHclTerraform, true)(this._stepFunctions.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleStepFunctionsList",
       },
       timestream: {
-        value: cdktf.listMapperHcl(iotTopicRuleTimestreamToHclTerraform, true)(this._timestream.internalValue),
+        value: cdktn.listMapperHcl(iotTopicRuleTimestreamToHclTerraform, true)(this._timestream.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotTopicRuleTimestreamList",

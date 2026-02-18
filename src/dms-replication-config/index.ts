@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DmsReplicationConfigConfig extends cdktf.TerraformMetaArguments {
+export interface DmsReplicationConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_config#id DmsReplicationConfig#id}
   *
@@ -48,7 +48,7 @@ export interface DmsReplicationConfigConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_config#start_replication DmsReplicationConfig#start_replication}
   */
-  readonly startReplication?: boolean | cdktf.IResolvable;
+  readonly startReplication?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_config#supplemental_settings DmsReplicationConfig#supplemental_settings}
   */
@@ -106,7 +106,7 @@ export interface DmsReplicationConfigComputeConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_config#multi_az DmsReplicationConfig#multi_az}
   */
-  readonly multiAz?: boolean | cdktf.IResolvable;
+  readonly multiAz?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_config#preferred_maintenance_window DmsReplicationConfig#preferred_maintenance_window}
   */
@@ -122,80 +122,80 @@ export interface DmsReplicationConfigComputeConfig {
 }
 
 export function dmsReplicationConfigComputeConfigToTerraform(struct?: DmsReplicationConfigComputeConfigOutputReference | DmsReplicationConfigComputeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
-    dns_name_servers: cdktf.stringToTerraform(struct!.dnsNameServers),
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
-    max_capacity_units: cdktf.numberToTerraform(struct!.maxCapacityUnits),
-    min_capacity_units: cdktf.numberToTerraform(struct!.minCapacityUnits),
-    multi_az: cdktf.booleanToTerraform(struct!.multiAz),
-    preferred_maintenance_window: cdktf.stringToTerraform(struct!.preferredMaintenanceWindow),
-    replication_subnet_group_id: cdktf.stringToTerraform(struct!.replicationSubnetGroupId),
-    vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.vpcSecurityGroupIds),
+    availability_zone: cdktn.stringToTerraform(struct!.availabilityZone),
+    dns_name_servers: cdktn.stringToTerraform(struct!.dnsNameServers),
+    kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
+    max_capacity_units: cdktn.numberToTerraform(struct!.maxCapacityUnits),
+    min_capacity_units: cdktn.numberToTerraform(struct!.minCapacityUnits),
+    multi_az: cdktn.booleanToTerraform(struct!.multiAz),
+    preferred_maintenance_window: cdktn.stringToTerraform(struct!.preferredMaintenanceWindow),
+    replication_subnet_group_id: cdktn.stringToTerraform(struct!.replicationSubnetGroupId),
+    vpc_security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.vpcSecurityGroupIds),
   }
 }
 
 
 export function dmsReplicationConfigComputeConfigToHclTerraform(struct?: DmsReplicationConfigComputeConfigOutputReference | DmsReplicationConfigComputeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability_zone: {
-      value: cdktf.stringToHclTerraform(struct!.availabilityZone),
+      value: cdktn.stringToHclTerraform(struct!.availabilityZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dns_name_servers: {
-      value: cdktf.stringToHclTerraform(struct!.dnsNameServers),
+      value: cdktn.stringToHclTerraform(struct!.dnsNameServers),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_capacity_units: {
-      value: cdktf.numberToHclTerraform(struct!.maxCapacityUnits),
+      value: cdktn.numberToHclTerraform(struct!.maxCapacityUnits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_capacity_units: {
-      value: cdktf.numberToHclTerraform(struct!.minCapacityUnits),
+      value: cdktn.numberToHclTerraform(struct!.minCapacityUnits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     multi_az: {
-      value: cdktf.booleanToHclTerraform(struct!.multiAz),
+      value: cdktn.booleanToHclTerraform(struct!.multiAz),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     preferred_maintenance_window: {
-      value: cdktf.stringToHclTerraform(struct!.preferredMaintenanceWindow),
+      value: cdktn.stringToHclTerraform(struct!.preferredMaintenanceWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replication_subnet_group_id: {
-      value: cdktf.stringToHclTerraform(struct!.replicationSubnetGroupId),
+      value: cdktn.stringToHclTerraform(struct!.replicationSubnetGroupId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vpc_security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.vpcSecurityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.vpcSecurityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -206,14 +206,14 @@ export function dmsReplicationConfigComputeConfigToHclTerraform(struct?: DmsRepl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DmsReplicationConfigComputeConfigOutputReference extends cdktf.ComplexObject {
+export class DmsReplicationConfigComputeConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -367,11 +367,11 @@ export class DmsReplicationConfigComputeConfigOutputReference extends cdktf.Comp
   }
 
   // multi_az - computed: true, optional: true, required: false
-  private _multiAz?: boolean | cdktf.IResolvable; 
+  private _multiAz?: boolean | cdktn.IResolvable; 
   public get multiAz() {
     return this.getBooleanAttribute('multi_az');
   }
-  public set multiAz(value: boolean | cdktf.IResolvable) {
+  public set multiAz(value: boolean | cdktn.IResolvable) {
     this._multiAz = value;
   }
   public resetMultiAz() {
@@ -414,7 +414,7 @@ export class DmsReplicationConfigComputeConfigOutputReference extends cdktf.Comp
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[]; 
   public get vpcSecurityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
   }
   public set vpcSecurityGroupIds(value: string[]) {
     this._vpcSecurityGroupIds = value;
@@ -442,39 +442,39 @@ export interface DmsReplicationConfigTimeouts {
   readonly update?: string;
 }
 
-export function dmsReplicationConfigTimeoutsToTerraform(struct?: DmsReplicationConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dmsReplicationConfigTimeoutsToTerraform(struct?: DmsReplicationConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dmsReplicationConfigTimeoutsToHclTerraform(struct?: DmsReplicationConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dmsReplicationConfigTimeoutsToHclTerraform(struct?: DmsReplicationConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -485,19 +485,19 @@ export function dmsReplicationConfigTimeoutsToHclTerraform(struct?: DmsReplicati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DmsReplicationConfigTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DmsReplicationConfigTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DmsReplicationConfigTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DmsReplicationConfigTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -518,7 +518,7 @@ export class DmsReplicationConfigTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DmsReplicationConfigTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DmsReplicationConfigTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -526,7 +526,7 @@ export class DmsReplicationConfigTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -591,7 +591,7 @@ export class DmsReplicationConfigTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_config aws_dms_replication_config}
 */
-export class DmsReplicationConfig extends cdktf.TerraformResource {
+export class DmsReplicationConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -602,14 +602,14 @@ export class DmsReplicationConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DmsReplicationConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DmsReplicationConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DmsReplicationConfig to import
   * @param importFromId The id of the existing DmsReplicationConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_replication_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DmsReplicationConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dms_replication_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dms_replication_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -769,11 +769,11 @@ export class DmsReplicationConfig extends cdktf.TerraformResource {
   }
 
   // start_replication - computed: false, optional: true, required: false
-  private _startReplication?: boolean | cdktf.IResolvable; 
+  private _startReplication?: boolean | cdktn.IResolvable; 
   public get startReplication() {
     return this.getBooleanAttribute('start_replication');
   }
-  public set startReplication(value: boolean | cdktf.IResolvable) {
+  public set startReplication(value: boolean | cdktn.IResolvable) {
     this._startReplication = value;
   }
   public resetStartReplication() {
@@ -893,19 +893,19 @@ export class DmsReplicationConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      replication_config_identifier: cdktf.stringToTerraform(this._replicationConfigIdentifier),
-      replication_settings: cdktf.stringToTerraform(this._replicationSettings),
-      replication_type: cdktf.stringToTerraform(this._replicationType),
-      resource_identifier: cdktf.stringToTerraform(this._resourceIdentifier),
-      source_endpoint_arn: cdktf.stringToTerraform(this._sourceEndpointArn),
-      start_replication: cdktf.booleanToTerraform(this._startReplication),
-      supplemental_settings: cdktf.stringToTerraform(this._supplementalSettings),
-      table_mappings: cdktf.stringToTerraform(this._tableMappings),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target_endpoint_arn: cdktf.stringToTerraform(this._targetEndpointArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      replication_config_identifier: cdktn.stringToTerraform(this._replicationConfigIdentifier),
+      replication_settings: cdktn.stringToTerraform(this._replicationSettings),
+      replication_type: cdktn.stringToTerraform(this._replicationType),
+      resource_identifier: cdktn.stringToTerraform(this._resourceIdentifier),
+      source_endpoint_arn: cdktn.stringToTerraform(this._sourceEndpointArn),
+      start_replication: cdktn.booleanToTerraform(this._startReplication),
+      supplemental_settings: cdktn.stringToTerraform(this._supplementalSettings),
+      table_mappings: cdktn.stringToTerraform(this._tableMappings),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      target_endpoint_arn: cdktn.stringToTerraform(this._targetEndpointArn),
       compute_config: dmsReplicationConfigComputeConfigToTerraform(this._computeConfig.internalValue),
       timeouts: dmsReplicationConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -914,79 +914,79 @@ export class DmsReplicationConfig extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication_config_identifier: {
-        value: cdktf.stringToHclTerraform(this._replicationConfigIdentifier),
+        value: cdktn.stringToHclTerraform(this._replicationConfigIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication_settings: {
-        value: cdktf.stringToHclTerraform(this._replicationSettings),
+        value: cdktn.stringToHclTerraform(this._replicationSettings),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication_type: {
-        value: cdktf.stringToHclTerraform(this._replicationType),
+        value: cdktn.stringToHclTerraform(this._replicationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_identifier: {
-        value: cdktf.stringToHclTerraform(this._resourceIdentifier),
+        value: cdktn.stringToHclTerraform(this._resourceIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_endpoint_arn: {
-        value: cdktf.stringToHclTerraform(this._sourceEndpointArn),
+        value: cdktn.stringToHclTerraform(this._sourceEndpointArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_replication: {
-        value: cdktf.booleanToHclTerraform(this._startReplication),
+        value: cdktn.booleanToHclTerraform(this._startReplication),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       supplemental_settings: {
-        value: cdktf.stringToHclTerraform(this._supplementalSettings),
+        value: cdktn.stringToHclTerraform(this._supplementalSettings),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_mappings: {
-        value: cdktf.stringToHclTerraform(this._tableMappings),
+        value: cdktn.stringToHclTerraform(this._tableMappings),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target_endpoint_arn: {
-        value: cdktf.stringToHclTerraform(this._targetEndpointArn),
+        value: cdktn.stringToHclTerraform(this._targetEndpointArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

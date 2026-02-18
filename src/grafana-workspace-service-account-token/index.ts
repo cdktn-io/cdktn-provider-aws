@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GrafanaWorkspaceServiceAccountTokenConfig extends cdktf.TerraformMetaArguments {
+export interface GrafanaWorkspaceServiceAccountTokenConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/grafana_workspace_service_account_token#name GrafanaWorkspaceServiceAccountToken#name}
   */
@@ -39,7 +39,7 @@ export interface GrafanaWorkspaceServiceAccountTokenConfig extends cdktf.Terrafo
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/grafana_workspace_service_account_token aws_grafana_workspace_service_account_token}
 */
-export class GrafanaWorkspaceServiceAccountToken extends cdktf.TerraformResource {
+export class GrafanaWorkspaceServiceAccountToken extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -50,14 +50,14 @@ export class GrafanaWorkspaceServiceAccountToken extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GrafanaWorkspaceServiceAccountToken resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GrafanaWorkspaceServiceAccountToken resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GrafanaWorkspaceServiceAccountToken to import
   * @param importFromId The id of the existing GrafanaWorkspaceServiceAccountToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/grafana_workspace_service_account_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GrafanaWorkspaceServiceAccountToken to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_grafana_workspace_service_account_token", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_grafana_workspace_service_account_token", importId: importFromId, provider });
       }
 
   // ===========
@@ -197,42 +197,42 @@ export class GrafanaWorkspaceServiceAccountToken extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      seconds_to_live: cdktf.numberToTerraform(this._secondsToLive),
-      service_account_id: cdktf.stringToTerraform(this._serviceAccountId),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      seconds_to_live: cdktn.numberToTerraform(this._secondsToLive),
+      service_account_id: cdktn.stringToTerraform(this._serviceAccountId),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       seconds_to_live: {
-        value: cdktf.numberToHclTerraform(this._secondsToLive),
+        value: cdktn.numberToHclTerraform(this._secondsToLive),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       service_account_id: {
-        value: cdktf.stringToHclTerraform(this._serviceAccountId),
+        value: cdktn.stringToHclTerraform(this._serviceAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

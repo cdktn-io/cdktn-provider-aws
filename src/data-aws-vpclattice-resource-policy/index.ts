@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsVpclatticeResourcePolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsVpclatticeResourcePolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/vpclattice_resource_policy#id DataAwsVpclatticeResourcePolicy#id}
   *
@@ -34,7 +34,7 @@ export interface DataAwsVpclatticeResourcePolicyConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/vpclattice_resource_policy aws_vpclattice_resource_policy}
 */
-export class DataAwsVpclatticeResourcePolicy extends cdktf.TerraformDataSource {
+export class DataAwsVpclatticeResourcePolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -45,14 +45,14 @@ export class DataAwsVpclatticeResourcePolicy extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsVpclatticeResourcePolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsVpclatticeResourcePolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsVpclatticeResourcePolicy to import
   * @param importFromId The id of the existing DataAwsVpclatticeResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/vpclattice_resource_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsVpclatticeResourcePolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpclattice_resource_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpclattice_resource_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -147,28 +147,28 @@ export class DataAwsVpclatticeResourcePolicy extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      resource_arn: cdktf.stringToTerraform(this._resourceArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      resource_arn: cdktn.stringToTerraform(this._resourceArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_arn: {
-        value: cdktf.stringToHclTerraform(this._resourceArn),
+        value: cdktn.stringToHclTerraform(this._resourceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

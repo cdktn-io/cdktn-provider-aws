@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsGuarddutyFindingIdsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsGuarddutyFindingIdsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/guardduty_finding_ids#detector_id DataAwsGuarddutyFindingIds#detector_id}
   */
@@ -27,7 +27,7 @@ export interface DataAwsGuarddutyFindingIdsConfig extends cdktf.TerraformMetaArg
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids}
 */
-export class DataAwsGuarddutyFindingIds extends cdktf.TerraformDataSource {
+export class DataAwsGuarddutyFindingIds extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -38,14 +38,14 @@ export class DataAwsGuarddutyFindingIds extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsGuarddutyFindingIds resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsGuarddutyFindingIds resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsGuarddutyFindingIds to import
   * @param importFromId The id of the existing DataAwsGuarddutyFindingIds that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/guardduty_finding_ids#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsGuarddutyFindingIds to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_guardduty_finding_ids", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_guardduty_finding_ids", importId: importFromId, provider });
       }
 
   // ===========
@@ -133,21 +133,21 @@ export class DataAwsGuarddutyFindingIds extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      detector_id: cdktf.stringToTerraform(this._detectorId),
-      region: cdktf.stringToTerraform(this._region),
+      detector_id: cdktn.stringToTerraform(this._detectorId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       detector_id: {
-        value: cdktf.stringToHclTerraform(this._detectorId),
+        value: cdktn.stringToHclTerraform(this._detectorId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

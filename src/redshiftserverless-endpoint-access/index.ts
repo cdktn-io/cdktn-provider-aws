@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedshiftserverlessEndpointAccessConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftserverlessEndpointAccessConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftserverless_endpoint_access#endpoint_name RedshiftserverlessEndpointAccess#endpoint_name}
   */
@@ -50,8 +50,8 @@ export interface RedshiftserverlessEndpointAccessVpcEndpointNetworkInterface {
 }
 
 export function redshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceToTerraform(struct?: RedshiftserverlessEndpointAccessVpcEndpointNetworkInterface): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -60,8 +60,8 @@ export function redshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceToTer
 
 
 export function redshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceToHclTerraform(struct?: RedshiftserverlessEndpointAccessVpcEndpointNetworkInterface): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -69,7 +69,7 @@ export function redshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceToHcl
   return attrs;
 }
 
-export class RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceOutputReference extends cdktf.ComplexObject {
+export class RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -78,7 +78,7 @@ export class RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -118,14 +118,14 @@ export class RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceOutputRe
   }
 }
 
-export class RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList extends cdktf.ComplexList {
+export class RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -140,8 +140,8 @@ export interface RedshiftserverlessEndpointAccessVpcEndpoint {
 }
 
 export function redshiftserverlessEndpointAccessVpcEndpointToTerraform(struct?: RedshiftserverlessEndpointAccessVpcEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -150,8 +150,8 @@ export function redshiftserverlessEndpointAccessVpcEndpointToTerraform(struct?: 
 
 
 export function redshiftserverlessEndpointAccessVpcEndpointToHclTerraform(struct?: RedshiftserverlessEndpointAccessVpcEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -159,7 +159,7 @@ export function redshiftserverlessEndpointAccessVpcEndpointToHclTerraform(struct
   return attrs;
 }
 
-export class RedshiftserverlessEndpointAccessVpcEndpointOutputReference extends cdktf.ComplexObject {
+export class RedshiftserverlessEndpointAccessVpcEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -168,7 +168,7 @@ export class RedshiftserverlessEndpointAccessVpcEndpointOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -204,14 +204,14 @@ export class RedshiftserverlessEndpointAccessVpcEndpointOutputReference extends 
   }
 }
 
-export class RedshiftserverlessEndpointAccessVpcEndpointList extends cdktf.ComplexList {
+export class RedshiftserverlessEndpointAccessVpcEndpointList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -226,7 +226,7 @@ export class RedshiftserverlessEndpointAccessVpcEndpointList extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftserverless_endpoint_access aws_redshiftserverless_endpoint_access}
 */
-export class RedshiftserverlessEndpointAccess extends cdktf.TerraformResource {
+export class RedshiftserverlessEndpointAccess extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -237,14 +237,14 @@ export class RedshiftserverlessEndpointAccess extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedshiftserverlessEndpointAccess resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedshiftserverlessEndpointAccess resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftserverlessEndpointAccess to import
   * @param importFromId The id of the existing RedshiftserverlessEndpointAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftserverless_endpoint_access#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftserverlessEndpointAccess to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshiftserverless_endpoint_access", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshiftserverless_endpoint_access", importId: importFromId, provider });
       }
 
   // ===========
@@ -366,7 +366,7 @@ export class RedshiftserverlessEndpointAccess extends cdktf.TerraformResource {
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -385,7 +385,7 @@ export class RedshiftserverlessEndpointAccess extends cdktf.TerraformResource {
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[]; 
   public get vpcSecurityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
   }
   public set vpcSecurityGroupIds(value: string[]) {
     this._vpcSecurityGroupIds = value;
@@ -417,56 +417,56 @@ export class RedshiftserverlessEndpointAccess extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      endpoint_name: cdktf.stringToTerraform(this._endpointName),
-      id: cdktf.stringToTerraform(this._id),
-      owner_account: cdktf.stringToTerraform(this._ownerAccount),
-      region: cdktf.stringToTerraform(this._region),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
-      workgroup_name: cdktf.stringToTerraform(this._workgroupName),
+      endpoint_name: cdktn.stringToTerraform(this._endpointName),
+      id: cdktn.stringToTerraform(this._id),
+      owner_account: cdktn.stringToTerraform(this._ownerAccount),
+      region: cdktn.stringToTerraform(this._region),
+      subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnetIds),
+      vpc_security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._vpcSecurityGroupIds),
+      workgroup_name: cdktn.stringToTerraform(this._workgroupName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       endpoint_name: {
-        value: cdktf.stringToHclTerraform(this._endpointName),
+        value: cdktn.stringToHclTerraform(this._endpointName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner_account: {
-        value: cdktf.stringToHclTerraform(this._ownerAccount),
+        value: cdktn.stringToHclTerraform(this._ownerAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnetIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       vpc_security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vpcSecurityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._vpcSecurityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       workgroup_name: {
-        value: cdktf.stringToHclTerraform(this._workgroupName),
+        value: cdktn.stringToHclTerraform(this._workgroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

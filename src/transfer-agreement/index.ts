@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TransferAgreementConfig extends cdktf.TerraformMetaArguments {
+export interface TransferAgreementConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_agreement#access_role TransferAgreement#access_role}
   */
@@ -62,7 +62,7 @@ export interface TransferAgreementConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_agreement aws_transfer_agreement}
 */
-export class TransferAgreement extends cdktf.TerraformResource {
+export class TransferAgreement extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -73,14 +73,14 @@ export class TransferAgreement extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TransferAgreement resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TransferAgreement resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransferAgreement to import
   * @param importFromId The id of the existing TransferAgreement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_agreement#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransferAgreement to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_agreement", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_agreement", importId: importFromId, provider });
       }
 
   // ===========
@@ -292,77 +292,77 @@ export class TransferAgreement extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_role: cdktf.stringToTerraform(this._accessRole),
-      base_directory: cdktf.stringToTerraform(this._baseDirectory),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      local_profile_id: cdktf.stringToTerraform(this._localProfileId),
-      partner_profile_id: cdktf.stringToTerraform(this._partnerProfileId),
-      region: cdktf.stringToTerraform(this._region),
-      server_id: cdktf.stringToTerraform(this._serverId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      access_role: cdktn.stringToTerraform(this._accessRole),
+      base_directory: cdktn.stringToTerraform(this._baseDirectory),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      local_profile_id: cdktn.stringToTerraform(this._localProfileId),
+      partner_profile_id: cdktn.stringToTerraform(this._partnerProfileId),
+      region: cdktn.stringToTerraform(this._region),
+      server_id: cdktn.stringToTerraform(this._serverId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_role: {
-        value: cdktf.stringToHclTerraform(this._accessRole),
+        value: cdktn.stringToHclTerraform(this._accessRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       base_directory: {
-        value: cdktf.stringToHclTerraform(this._baseDirectory),
+        value: cdktn.stringToHclTerraform(this._baseDirectory),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local_profile_id: {
-        value: cdktf.stringToHclTerraform(this._localProfileId),
+        value: cdktn.stringToHclTerraform(this._localProfileId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       partner_profile_id: {
-        value: cdktf.stringToHclTerraform(this._partnerProfileId),
+        value: cdktn.stringToHclTerraform(this._partnerProfileId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_id: {
-        value: cdktf.stringToHclTerraform(this._serverId),
+        value: cdktn.stringToHclTerraform(this._serverId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

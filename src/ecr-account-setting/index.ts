@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EcrAccountSettingConfig extends cdktf.TerraformMetaArguments {
+export interface EcrAccountSettingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_account_setting#name EcrAccountSetting#name}
   */
@@ -31,7 +31,7 @@ export interface EcrAccountSettingConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_account_setting aws_ecr_account_setting}
 */
-export class EcrAccountSetting extends cdktf.TerraformResource {
+export class EcrAccountSetting extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -42,14 +42,14 @@ export class EcrAccountSetting extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EcrAccountSetting resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EcrAccountSetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EcrAccountSetting to import
   * @param importFromId The id of the existing EcrAccountSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_account_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EcrAccountSetting to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_account_setting", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_account_setting", importId: importFromId, provider });
       }
 
   // ===========
@@ -136,28 +136,28 @@ export class EcrAccountSetting extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      value: cdktf.stringToTerraform(this._value),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      value: cdktn.stringToTerraform(this._value),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       value: {
-        value: cdktf.stringToHclTerraform(this._value),
+        value: cdktn.stringToHclTerraform(this._value),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

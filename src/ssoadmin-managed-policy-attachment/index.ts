@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsoadminManagedPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface SsoadminManagedPolicyAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_managed_policy_attachment#id SsoadminManagedPolicyAttachment#id}
   *
@@ -55,32 +55,32 @@ export interface SsoadminManagedPolicyAttachmentTimeouts {
   readonly delete?: string;
 }
 
-export function ssoadminManagedPolicyAttachmentTimeoutsToTerraform(struct?: SsoadminManagedPolicyAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminManagedPolicyAttachmentTimeoutsToTerraform(struct?: SsoadminManagedPolicyAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function ssoadminManagedPolicyAttachmentTimeoutsToHclTerraform(struct?: SsoadminManagedPolicyAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminManagedPolicyAttachmentTimeoutsToHclTerraform(struct?: SsoadminManagedPolicyAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,19 +91,19 @@ export function ssoadminManagedPolicyAttachmentTimeoutsToHclTerraform(struct?: S
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsoadminManagedPolicyAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SsoadminManagedPolicyAttachmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SsoadminManagedPolicyAttachmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SsoadminManagedPolicyAttachmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -120,14 +120,14 @@ export class SsoadminManagedPolicyAttachmentTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsoadminManagedPolicyAttachmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsoadminManagedPolicyAttachmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -175,7 +175,7 @@ export class SsoadminManagedPolicyAttachmentTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_managed_policy_attachment aws_ssoadmin_managed_policy_attachment}
 */
-export class SsoadminManagedPolicyAttachment extends cdktf.TerraformResource {
+export class SsoadminManagedPolicyAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -186,14 +186,14 @@ export class SsoadminManagedPolicyAttachment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsoadminManagedPolicyAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsoadminManagedPolicyAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsoadminManagedPolicyAttachment to import
   * @param importFromId The id of the existing SsoadminManagedPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_managed_policy_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsoadminManagedPolicyAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_managed_policy_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_managed_policy_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -333,11 +333,11 @@ export class SsoadminManagedPolicyAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      instance_arn: cdktf.stringToTerraform(this._instanceArn),
-      managed_policy_arn: cdktf.stringToTerraform(this._managedPolicyArn),
-      permission_set_arn: cdktf.stringToTerraform(this._permissionSetArn),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      instance_arn: cdktn.stringToTerraform(this._instanceArn),
+      managed_policy_arn: cdktn.stringToTerraform(this._managedPolicyArn),
+      permission_set_arn: cdktn.stringToTerraform(this._permissionSetArn),
+      region: cdktn.stringToTerraform(this._region),
       timeouts: ssoadminManagedPolicyAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -345,31 +345,31 @@ export class SsoadminManagedPolicyAttachment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_arn: {
-        value: cdktf.stringToHclTerraform(this._instanceArn),
+        value: cdktn.stringToHclTerraform(this._instanceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_policy_arn: {
-        value: cdktf.stringToHclTerraform(this._managedPolicyArn),
+        value: cdktn.stringToHclTerraform(this._managedPolicyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permission_set_arn: {
-        value: cdktf.stringToHclTerraform(this._permissionSetArn),
+        value: cdktn.stringToHclTerraform(this._permissionSetArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

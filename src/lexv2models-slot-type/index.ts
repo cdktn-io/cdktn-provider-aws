@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Lexv2ModelsSlotTypeConfig extends cdktf.TerraformMetaArguments {
+export interface Lexv2ModelsSlotTypeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot_type#bot_id Lexv2ModelsSlotType#bot_id}
   */
@@ -47,19 +47,19 @@ export interface Lexv2ModelsSlotTypeConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot_type#composite_slot_type_setting Lexv2ModelsSlotType#composite_slot_type_setting}
   */
-  readonly compositeSlotTypeSetting?: Lexv2ModelsSlotTypeCompositeSlotTypeSetting[] | cdktf.IResolvable;
+  readonly compositeSlotTypeSetting?: Lexv2ModelsSlotTypeCompositeSlotTypeSetting[] | cdktn.IResolvable;
   /**
   * external_source_setting block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot_type#external_source_setting Lexv2ModelsSlotType#external_source_setting}
   */
-  readonly externalSourceSetting?: Lexv2ModelsSlotTypeExternalSourceSetting[] | cdktf.IResolvable;
+  readonly externalSourceSetting?: Lexv2ModelsSlotTypeExternalSourceSetting[] | cdktn.IResolvable;
   /**
   * slot_type_values block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot_type#slot_type_values Lexv2ModelsSlotType#slot_type_values}
   */
-  readonly slotTypeValues?: Lexv2ModelsSlotTypeSlotTypeValues[] | cdktf.IResolvable;
+  readonly slotTypeValues?: Lexv2ModelsSlotTypeSlotTypeValues[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -71,7 +71,7 @@ export interface Lexv2ModelsSlotTypeConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot_type#value_selection_setting Lexv2ModelsSlotType#value_selection_setting}
   */
-  readonly valueSelectionSetting?: Lexv2ModelsSlotTypeValueSelectionSetting[] | cdktf.IResolvable;
+  readonly valueSelectionSetting?: Lexv2ModelsSlotTypeValueSelectionSetting[] | cdktn.IResolvable;
 }
 export interface Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots {
   /**
@@ -84,32 +84,32 @@ export interface Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots {
   readonly slotTypeId: string;
 }
 
-export function lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsToTerraform(struct?: Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsToTerraform(struct?: Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    slot_type_id: cdktf.stringToTerraform(struct!.slotTypeId),
+    name: cdktn.stringToTerraform(struct!.name),
+    slot_type_id: cdktn.stringToTerraform(struct!.slotTypeId),
   }
 }
 
 
-export function lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsToHclTerraform(struct?: Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsToHclTerraform(struct?: Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     slot_type_id: {
-      value: cdktf.stringToHclTerraform(struct!.slotTypeId),
+      value: cdktn.stringToHclTerraform(struct!.slotTypeId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,9 +120,9 @@ export function lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -130,11 +130,11 @@ export class Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -151,14 +151,14 @@ export class Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._slotTypeId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -197,15 +197,15 @@ export class Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsOutputReference 
   }
 }
 
-export class Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots[] | cdktf.IResolvable
+export class Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -222,28 +222,28 @@ export interface Lexv2ModelsSlotTypeCompositeSlotTypeSetting {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot_type#sub_slots Lexv2ModelsSlotType#sub_slots}
   */
-  readonly subSlots?: Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots[] | cdktf.IResolvable;
+  readonly subSlots?: Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots[] | cdktn.IResolvable;
 }
 
-export function lexv2ModelsSlotTypeCompositeSlotTypeSettingToTerraform(struct?: Lexv2ModelsSlotTypeCompositeSlotTypeSetting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeCompositeSlotTypeSettingToTerraform(struct?: Lexv2ModelsSlotTypeCompositeSlotTypeSetting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    sub_slots: cdktf.listMapper(lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsToTerraform, true)(struct!.subSlots),
+    sub_slots: cdktn.listMapper(lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsToTerraform, true)(struct!.subSlots),
   }
 }
 
 
-export function lexv2ModelsSlotTypeCompositeSlotTypeSettingToHclTerraform(struct?: Lexv2ModelsSlotTypeCompositeSlotTypeSetting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeCompositeSlotTypeSettingToHclTerraform(struct?: Lexv2ModelsSlotTypeCompositeSlotTypeSetting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     sub_slots: {
-      value: cdktf.listMapperHcl(lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsToHclTerraform, true)(struct!.subSlots),
+      value: cdktn.listMapperHcl(lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsToHclTerraform, true)(struct!.subSlots),
       isBlock: true,
       type: "list",
       storageClassType: "Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList",
@@ -254,9 +254,9 @@ export function lexv2ModelsSlotTypeCompositeSlotTypeSettingToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -264,11 +264,11 @@ export class Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotTypeCompositeSlotTypeSetting | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotTypeCompositeSlotTypeSetting | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -281,13 +281,13 @@ export class Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotTypeCompositeSlotTypeSetting | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotTypeCompositeSlotTypeSetting | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._subSlots.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -303,7 +303,7 @@ export class Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference extends 
   public get subSlots() {
     return this._subSlots;
   }
-  public putSubSlots(value: Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots[] | cdktf.IResolvable) {
+  public putSubSlots(value: Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots[] | cdktn.IResolvable) {
     this._subSlots.internalValue = value;
   }
   public resetSubSlots() {
@@ -315,15 +315,15 @@ export class Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference extends 
   }
 }
 
-export class Lexv2ModelsSlotTypeCompositeSlotTypeSettingList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotTypeCompositeSlotTypeSetting[] | cdktf.IResolvable
+export class Lexv2ModelsSlotTypeCompositeSlotTypeSettingList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsSlotTypeCompositeSlotTypeSetting[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -349,39 +349,39 @@ export interface Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingS
   readonly s3ObjectKey: string;
 }
 
-export function lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceToTerraform(struct?: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceToTerraform(struct?: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
-    s3_object_key: cdktf.stringToTerraform(struct!.s3ObjectKey),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    s3_bucket_name: cdktn.stringToTerraform(struct!.s3BucketName),
+    s3_object_key: cdktn.stringToTerraform(struct!.s3ObjectKey),
   }
 }
 
 
-export function lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceToHclTerraform(struct?: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceToHclTerraform(struct?: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.s3BucketName),
+      value: cdktn.stringToHclTerraform(struct!.s3BucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_object_key: {
-      value: cdktf.stringToHclTerraform(struct!.s3ObjectKey),
+      value: cdktn.stringToHclTerraform(struct!.s3ObjectKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -392,9 +392,9 @@ export function lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -402,11 +402,11 @@ export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -427,7 +427,7 @@ export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -435,7 +435,7 @@ export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourc
       this._s3BucketName = undefined;
       this._s3ObjectKey = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -488,15 +488,15 @@ export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourc
   }
 }
 
-export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource[] | cdktf.IResolvable
+export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -513,28 +513,28 @@ export interface Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot_type#source Lexv2ModelsSlotType#source}
   */
-  readonly source?: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource[] | cdktf.IResolvable;
+  readonly source?: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource[] | cdktn.IResolvable;
 }
 
-export function lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingToTerraform(struct?: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingToTerraform(struct?: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source: cdktf.listMapper(lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceToTerraform, true)(struct!.source),
+    source: cdktn.listMapper(lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceToTerraform, true)(struct!.source),
   }
 }
 
 
-export function lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingToHclTerraform(struct?: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingToHclTerraform(struct?: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source: {
-      value: cdktf.listMapperHcl(lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceToHclTerraform, true)(struct!.source),
+      value: cdktn.listMapperHcl(lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceToHclTerraform, true)(struct!.source),
       isBlock: true,
       type: "list",
       storageClassType: "Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceList",
@@ -545,9 +545,9 @@ export function lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -555,11 +555,11 @@ export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -572,13 +572,13 @@ export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._source.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -594,7 +594,7 @@ export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingOutpu
   public get source() {
     return this._source;
   }
-  public putSource(value: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource[] | cdktf.IResolvable) {
+  public putSource(value: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource[] | cdktn.IResolvable) {
     this._source.internalValue = value;
   }
   public resetSource() {
@@ -606,15 +606,15 @@ export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingOutpu
   }
 }
 
-export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting[] | cdktf.IResolvable
+export class Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -631,28 +631,28 @@ export interface Lexv2ModelsSlotTypeExternalSourceSetting {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot_type#grammar_slot_type_setting Lexv2ModelsSlotType#grammar_slot_type_setting}
   */
-  readonly grammarSlotTypeSetting?: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting[] | cdktf.IResolvable;
+  readonly grammarSlotTypeSetting?: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting[] | cdktn.IResolvable;
 }
 
-export function lexv2ModelsSlotTypeExternalSourceSettingToTerraform(struct?: Lexv2ModelsSlotTypeExternalSourceSetting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeExternalSourceSettingToTerraform(struct?: Lexv2ModelsSlotTypeExternalSourceSetting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    grammar_slot_type_setting: cdktf.listMapper(lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingToTerraform, true)(struct!.grammarSlotTypeSetting),
+    grammar_slot_type_setting: cdktn.listMapper(lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingToTerraform, true)(struct!.grammarSlotTypeSetting),
   }
 }
 
 
-export function lexv2ModelsSlotTypeExternalSourceSettingToHclTerraform(struct?: Lexv2ModelsSlotTypeExternalSourceSetting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeExternalSourceSettingToHclTerraform(struct?: Lexv2ModelsSlotTypeExternalSourceSetting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     grammar_slot_type_setting: {
-      value: cdktf.listMapperHcl(lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingToHclTerraform, true)(struct!.grammarSlotTypeSetting),
+      value: cdktn.listMapperHcl(lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingToHclTerraform, true)(struct!.grammarSlotTypeSetting),
       isBlock: true,
       type: "list",
       storageClassType: "Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingList",
@@ -663,9 +663,9 @@ export function lexv2ModelsSlotTypeExternalSourceSettingToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotTypeExternalSourceSettingOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotTypeExternalSourceSettingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -673,11 +673,11 @@ export class Lexv2ModelsSlotTypeExternalSourceSettingOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotTypeExternalSourceSetting | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotTypeExternalSourceSetting | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -690,13 +690,13 @@ export class Lexv2ModelsSlotTypeExternalSourceSettingOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotTypeExternalSourceSetting | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotTypeExternalSourceSetting | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._grammarSlotTypeSetting.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -712,7 +712,7 @@ export class Lexv2ModelsSlotTypeExternalSourceSettingOutputReference extends cdk
   public get grammarSlotTypeSetting() {
     return this._grammarSlotTypeSetting;
   }
-  public putGrammarSlotTypeSetting(value: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting[] | cdktf.IResolvable) {
+  public putGrammarSlotTypeSetting(value: Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting[] | cdktn.IResolvable) {
     this._grammarSlotTypeSetting.internalValue = value;
   }
   public resetGrammarSlotTypeSetting() {
@@ -724,15 +724,15 @@ export class Lexv2ModelsSlotTypeExternalSourceSettingOutputReference extends cdk
   }
 }
 
-export class Lexv2ModelsSlotTypeExternalSourceSettingList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotTypeExternalSourceSetting[] | cdktf.IResolvable
+export class Lexv2ModelsSlotTypeExternalSourceSettingList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsSlotTypeExternalSourceSetting[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -750,25 +750,25 @@ export interface Lexv2ModelsSlotTypeSlotTypeValuesSampleValue {
   readonly value: string;
 }
 
-export function lexv2ModelsSlotTypeSlotTypeValuesSampleValueToTerraform(struct?: Lexv2ModelsSlotTypeSlotTypeValuesSampleValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeSlotTypeValuesSampleValueToTerraform(struct?: Lexv2ModelsSlotTypeSlotTypeValuesSampleValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.stringToTerraform(struct!.value),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function lexv2ModelsSlotTypeSlotTypeValuesSampleValueToHclTerraform(struct?: Lexv2ModelsSlotTypeSlotTypeValuesSampleValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeSlotTypeValuesSampleValueToHclTerraform(struct?: Lexv2ModelsSlotTypeSlotTypeValuesSampleValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -779,9 +779,9 @@ export function lexv2ModelsSlotTypeSlotTypeValuesSampleValueToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotTypeSlotTypeValuesSampleValueOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotTypeSlotTypeValuesSampleValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -789,11 +789,11 @@ export class Lexv2ModelsSlotTypeSlotTypeValuesSampleValueOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotTypeSlotTypeValuesSampleValue | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotTypeSlotTypeValuesSampleValue | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -806,13 +806,13 @@ export class Lexv2ModelsSlotTypeSlotTypeValuesSampleValueOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotTypeSlotTypeValuesSampleValue | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotTypeSlotTypeValuesSampleValue | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -837,15 +837,15 @@ export class Lexv2ModelsSlotTypeSlotTypeValuesSampleValueOutputReference extends
   }
 }
 
-export class Lexv2ModelsSlotTypeSlotTypeValuesSampleValueList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotTypeSlotTypeValuesSampleValue[] | cdktf.IResolvable
+export class Lexv2ModelsSlotTypeSlotTypeValuesSampleValueList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsSlotTypeSlotTypeValuesSampleValue[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -863,25 +863,25 @@ export interface Lexv2ModelsSlotTypeSlotTypeValuesSynonyms {
   readonly value: string;
 }
 
-export function lexv2ModelsSlotTypeSlotTypeValuesSynonymsToTerraform(struct?: Lexv2ModelsSlotTypeSlotTypeValuesSynonyms | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeSlotTypeValuesSynonymsToTerraform(struct?: Lexv2ModelsSlotTypeSlotTypeValuesSynonyms | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.stringToTerraform(struct!.value),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function lexv2ModelsSlotTypeSlotTypeValuesSynonymsToHclTerraform(struct?: Lexv2ModelsSlotTypeSlotTypeValuesSynonyms | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeSlotTypeValuesSynonymsToHclTerraform(struct?: Lexv2ModelsSlotTypeSlotTypeValuesSynonyms | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -892,9 +892,9 @@ export function lexv2ModelsSlotTypeSlotTypeValuesSynonymsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotTypeSlotTypeValuesSynonymsOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotTypeSlotTypeValuesSynonymsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -902,11 +902,11 @@ export class Lexv2ModelsSlotTypeSlotTypeValuesSynonymsOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotTypeSlotTypeValuesSynonyms | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotTypeSlotTypeValuesSynonyms | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -919,13 +919,13 @@ export class Lexv2ModelsSlotTypeSlotTypeValuesSynonymsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotTypeSlotTypeValuesSynonyms | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotTypeSlotTypeValuesSynonyms | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -950,15 +950,15 @@ export class Lexv2ModelsSlotTypeSlotTypeValuesSynonymsOutputReference extends cd
   }
 }
 
-export class Lexv2ModelsSlotTypeSlotTypeValuesSynonymsList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotTypeSlotTypeValuesSynonyms[] | cdktf.IResolvable
+export class Lexv2ModelsSlotTypeSlotTypeValuesSynonymsList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsSlotTypeSlotTypeValuesSynonyms[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -975,41 +975,41 @@ export interface Lexv2ModelsSlotTypeSlotTypeValues {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot_type#sample_value Lexv2ModelsSlotType#sample_value}
   */
-  readonly sampleValue?: Lexv2ModelsSlotTypeSlotTypeValuesSampleValue[] | cdktf.IResolvable;
+  readonly sampleValue?: Lexv2ModelsSlotTypeSlotTypeValuesSampleValue[] | cdktn.IResolvable;
   /**
   * synonyms block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot_type#synonyms Lexv2ModelsSlotType#synonyms}
   */
-  readonly synonyms?: Lexv2ModelsSlotTypeSlotTypeValuesSynonyms[] | cdktf.IResolvable;
+  readonly synonyms?: Lexv2ModelsSlotTypeSlotTypeValuesSynonyms[] | cdktn.IResolvable;
 }
 
-export function lexv2ModelsSlotTypeSlotTypeValuesToTerraform(struct?: Lexv2ModelsSlotTypeSlotTypeValues | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeSlotTypeValuesToTerraform(struct?: Lexv2ModelsSlotTypeSlotTypeValues | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    sample_value: cdktf.listMapper(lexv2ModelsSlotTypeSlotTypeValuesSampleValueToTerraform, true)(struct!.sampleValue),
-    synonyms: cdktf.listMapper(lexv2ModelsSlotTypeSlotTypeValuesSynonymsToTerraform, true)(struct!.synonyms),
+    sample_value: cdktn.listMapper(lexv2ModelsSlotTypeSlotTypeValuesSampleValueToTerraform, true)(struct!.sampleValue),
+    synonyms: cdktn.listMapper(lexv2ModelsSlotTypeSlotTypeValuesSynonymsToTerraform, true)(struct!.synonyms),
   }
 }
 
 
-export function lexv2ModelsSlotTypeSlotTypeValuesToHclTerraform(struct?: Lexv2ModelsSlotTypeSlotTypeValues | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeSlotTypeValuesToHclTerraform(struct?: Lexv2ModelsSlotTypeSlotTypeValues | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     sample_value: {
-      value: cdktf.listMapperHcl(lexv2ModelsSlotTypeSlotTypeValuesSampleValueToHclTerraform, true)(struct!.sampleValue),
+      value: cdktn.listMapperHcl(lexv2ModelsSlotTypeSlotTypeValuesSampleValueToHclTerraform, true)(struct!.sampleValue),
       isBlock: true,
       type: "list",
       storageClassType: "Lexv2ModelsSlotTypeSlotTypeValuesSampleValueList",
     },
     synonyms: {
-      value: cdktf.listMapperHcl(lexv2ModelsSlotTypeSlotTypeValuesSynonymsToHclTerraform, true)(struct!.synonyms),
+      value: cdktn.listMapperHcl(lexv2ModelsSlotTypeSlotTypeValuesSynonymsToHclTerraform, true)(struct!.synonyms),
       isBlock: true,
       type: "list",
       storageClassType: "Lexv2ModelsSlotTypeSlotTypeValuesSynonymsList",
@@ -1020,9 +1020,9 @@ export function lexv2ModelsSlotTypeSlotTypeValuesToHclTerraform(struct?: Lexv2Mo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotTypeSlotTypeValuesOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotTypeSlotTypeValuesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1030,11 +1030,11 @@ export class Lexv2ModelsSlotTypeSlotTypeValuesOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotTypeSlotTypeValues | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotTypeSlotTypeValues | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1051,14 +1051,14 @@ export class Lexv2ModelsSlotTypeSlotTypeValuesOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotTypeSlotTypeValues | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotTypeSlotTypeValues | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._sampleValue.internalValue = undefined;
       this._synonyms.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1075,7 +1075,7 @@ export class Lexv2ModelsSlotTypeSlotTypeValuesOutputReference extends cdktf.Comp
   public get sampleValue() {
     return this._sampleValue;
   }
-  public putSampleValue(value: Lexv2ModelsSlotTypeSlotTypeValuesSampleValue[] | cdktf.IResolvable) {
+  public putSampleValue(value: Lexv2ModelsSlotTypeSlotTypeValuesSampleValue[] | cdktn.IResolvable) {
     this._sampleValue.internalValue = value;
   }
   public resetSampleValue() {
@@ -1091,7 +1091,7 @@ export class Lexv2ModelsSlotTypeSlotTypeValuesOutputReference extends cdktf.Comp
   public get synonyms() {
     return this._synonyms;
   }
-  public putSynonyms(value: Lexv2ModelsSlotTypeSlotTypeValuesSynonyms[] | cdktf.IResolvable) {
+  public putSynonyms(value: Lexv2ModelsSlotTypeSlotTypeValuesSynonyms[] | cdktn.IResolvable) {
     this._synonyms.internalValue = value;
   }
   public resetSynonyms() {
@@ -1103,15 +1103,15 @@ export class Lexv2ModelsSlotTypeSlotTypeValuesOutputReference extends cdktf.Comp
   }
 }
 
-export class Lexv2ModelsSlotTypeSlotTypeValuesList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotTypeSlotTypeValues[] | cdktf.IResolvable
+export class Lexv2ModelsSlotTypeSlotTypeValuesList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsSlotTypeSlotTypeValues[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1143,39 +1143,39 @@ export interface Lexv2ModelsSlotTypeTimeouts {
   readonly update?: string;
 }
 
-export function lexv2ModelsSlotTypeTimeoutsToTerraform(struct?: Lexv2ModelsSlotTypeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeTimeoutsToTerraform(struct?: Lexv2ModelsSlotTypeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function lexv2ModelsSlotTypeTimeoutsToHclTerraform(struct?: Lexv2ModelsSlotTypeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeTimeoutsToHclTerraform(struct?: Lexv2ModelsSlotTypeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1186,19 +1186,19 @@ export function lexv2ModelsSlotTypeTimeoutsToHclTerraform(struct?: Lexv2ModelsSl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotTypeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotTypeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Lexv2ModelsSlotTypeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotTypeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1219,7 +1219,7 @@ export class Lexv2ModelsSlotTypeTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotTypeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotTypeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1227,7 +1227,7 @@ export class Lexv2ModelsSlotTypeTimeoutsOutputReference extends cdktf.ComplexObj
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1295,25 +1295,25 @@ export interface Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSett
   readonly audioRecognitionStrategy?: string;
 }
 
-export function lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingToTerraform(struct?: Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingToTerraform(struct?: Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audio_recognition_strategy: cdktf.stringToTerraform(struct!.audioRecognitionStrategy),
+    audio_recognition_strategy: cdktn.stringToTerraform(struct!.audioRecognitionStrategy),
   }
 }
 
 
-export function lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingToHclTerraform(struct?: Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingToHclTerraform(struct?: Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audio_recognition_strategy: {
-      value: cdktf.stringToHclTerraform(struct!.audioRecognitionStrategy),
+      value: cdktn.stringToHclTerraform(struct!.audioRecognitionStrategy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1324,9 +1324,9 @@ export function lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1334,11 +1334,11 @@ export class Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1351,13 +1351,13 @@ export class Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._audioRecognitionStrategy = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1385,15 +1385,15 @@ export class Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingO
   }
 }
 
-export class Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting[] | cdktf.IResolvable
+export class Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1411,25 +1411,25 @@ export interface Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter {
   readonly pattern: string;
 }
 
-export function lexv2ModelsSlotTypeValueSelectionSettingRegexFilterToTerraform(struct?: Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeValueSelectionSettingRegexFilterToTerraform(struct?: Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pattern: cdktf.stringToTerraform(struct!.pattern),
+    pattern: cdktn.stringToTerraform(struct!.pattern),
   }
 }
 
 
-export function lexv2ModelsSlotTypeValueSelectionSettingRegexFilterToHclTerraform(struct?: Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeValueSelectionSettingRegexFilterToHclTerraform(struct?: Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     pattern: {
-      value: cdktf.stringToHclTerraform(struct!.pattern),
+      value: cdktn.stringToHclTerraform(struct!.pattern),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1440,9 +1440,9 @@ export function lexv2ModelsSlotTypeValueSelectionSettingRegexFilterToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1450,11 +1450,11 @@ export class Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1467,13 +1467,13 @@ export class Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._pattern = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1498,15 +1498,15 @@ export class Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterOutputReference 
   }
 }
 
-export class Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter[] | cdktf.IResolvable
+export class Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1527,48 +1527,48 @@ export interface Lexv2ModelsSlotTypeValueSelectionSetting {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot_type#advanced_recognition_setting Lexv2ModelsSlotType#advanced_recognition_setting}
   */
-  readonly advancedRecognitionSetting?: Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting[] | cdktf.IResolvable;
+  readonly advancedRecognitionSetting?: Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting[] | cdktn.IResolvable;
   /**
   * regex_filter block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot_type#regex_filter Lexv2ModelsSlotType#regex_filter}
   */
-  readonly regexFilter?: Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter[] | cdktf.IResolvable;
+  readonly regexFilter?: Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter[] | cdktn.IResolvable;
 }
 
-export function lexv2ModelsSlotTypeValueSelectionSettingToTerraform(struct?: Lexv2ModelsSlotTypeValueSelectionSetting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeValueSelectionSettingToTerraform(struct?: Lexv2ModelsSlotTypeValueSelectionSetting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resolution_strategy: cdktf.stringToTerraform(struct!.resolutionStrategy),
-    advanced_recognition_setting: cdktf.listMapper(lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingToTerraform, true)(struct!.advancedRecognitionSetting),
-    regex_filter: cdktf.listMapper(lexv2ModelsSlotTypeValueSelectionSettingRegexFilterToTerraform, true)(struct!.regexFilter),
+    resolution_strategy: cdktn.stringToTerraform(struct!.resolutionStrategy),
+    advanced_recognition_setting: cdktn.listMapper(lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingToTerraform, true)(struct!.advancedRecognitionSetting),
+    regex_filter: cdktn.listMapper(lexv2ModelsSlotTypeValueSelectionSettingRegexFilterToTerraform, true)(struct!.regexFilter),
   }
 }
 
 
-export function lexv2ModelsSlotTypeValueSelectionSettingToHclTerraform(struct?: Lexv2ModelsSlotTypeValueSelectionSetting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsSlotTypeValueSelectionSettingToHclTerraform(struct?: Lexv2ModelsSlotTypeValueSelectionSetting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resolution_strategy: {
-      value: cdktf.stringToHclTerraform(struct!.resolutionStrategy),
+      value: cdktn.stringToHclTerraform(struct!.resolutionStrategy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     advanced_recognition_setting: {
-      value: cdktf.listMapperHcl(lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingToHclTerraform, true)(struct!.advancedRecognitionSetting),
+      value: cdktn.listMapperHcl(lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingToHclTerraform, true)(struct!.advancedRecognitionSetting),
       isBlock: true,
       type: "list",
       storageClassType: "Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingList",
     },
     regex_filter: {
-      value: cdktf.listMapperHcl(lexv2ModelsSlotTypeValueSelectionSettingRegexFilterToHclTerraform, true)(struct!.regexFilter),
+      value: cdktn.listMapperHcl(lexv2ModelsSlotTypeValueSelectionSettingRegexFilterToHclTerraform, true)(struct!.regexFilter),
       isBlock: true,
       type: "list",
       storageClassType: "Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterList",
@@ -1579,9 +1579,9 @@ export function lexv2ModelsSlotTypeValueSelectionSettingToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotTypeValueSelectionSettingOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotTypeValueSelectionSettingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1589,11 +1589,11 @@ export class Lexv2ModelsSlotTypeValueSelectionSettingOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotTypeValueSelectionSetting | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotTypeValueSelectionSetting | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1614,7 +1614,7 @@ export class Lexv2ModelsSlotTypeValueSelectionSettingOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotTypeValueSelectionSetting | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotTypeValueSelectionSetting | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1622,7 +1622,7 @@ export class Lexv2ModelsSlotTypeValueSelectionSettingOutputReference extends cdk
       this._advancedRecognitionSetting.internalValue = undefined;
       this._regexFilter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1653,7 +1653,7 @@ export class Lexv2ModelsSlotTypeValueSelectionSettingOutputReference extends cdk
   public get advancedRecognitionSetting() {
     return this._advancedRecognitionSetting;
   }
-  public putAdvancedRecognitionSetting(value: Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting[] | cdktf.IResolvable) {
+  public putAdvancedRecognitionSetting(value: Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting[] | cdktn.IResolvable) {
     this._advancedRecognitionSetting.internalValue = value;
   }
   public resetAdvancedRecognitionSetting() {
@@ -1669,7 +1669,7 @@ export class Lexv2ModelsSlotTypeValueSelectionSettingOutputReference extends cdk
   public get regexFilter() {
     return this._regexFilter;
   }
-  public putRegexFilter(value: Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter[] | cdktf.IResolvable) {
+  public putRegexFilter(value: Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter[] | cdktn.IResolvable) {
     this._regexFilter.internalValue = value;
   }
   public resetRegexFilter() {
@@ -1681,15 +1681,15 @@ export class Lexv2ModelsSlotTypeValueSelectionSettingOutputReference extends cdk
   }
 }
 
-export class Lexv2ModelsSlotTypeValueSelectionSettingList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotTypeValueSelectionSetting[] | cdktf.IResolvable
+export class Lexv2ModelsSlotTypeValueSelectionSettingList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsSlotTypeValueSelectionSetting[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1704,7 +1704,7 @@ export class Lexv2ModelsSlotTypeValueSelectionSettingList extends cdktf.ComplexL
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot_type aws_lexv2models_slot_type}
 */
-export class Lexv2ModelsSlotType extends cdktf.TerraformResource {
+export class Lexv2ModelsSlotType extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1715,14 +1715,14 @@ export class Lexv2ModelsSlotType extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Lexv2ModelsSlotType resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Lexv2ModelsSlotType resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Lexv2ModelsSlotType to import
   * @param importFromId The id of the existing Lexv2ModelsSlotType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Lexv2ModelsSlotType to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lexv2models_slot_type", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lexv2models_slot_type", importId: importFromId, provider });
       }
 
   // ===========
@@ -1885,7 +1885,7 @@ export class Lexv2ModelsSlotType extends cdktf.TerraformResource {
   public get compositeSlotTypeSetting() {
     return this._compositeSlotTypeSetting;
   }
-  public putCompositeSlotTypeSetting(value: Lexv2ModelsSlotTypeCompositeSlotTypeSetting[] | cdktf.IResolvable) {
+  public putCompositeSlotTypeSetting(value: Lexv2ModelsSlotTypeCompositeSlotTypeSetting[] | cdktn.IResolvable) {
     this._compositeSlotTypeSetting.internalValue = value;
   }
   public resetCompositeSlotTypeSetting() {
@@ -1901,7 +1901,7 @@ export class Lexv2ModelsSlotType extends cdktf.TerraformResource {
   public get externalSourceSetting() {
     return this._externalSourceSetting;
   }
-  public putExternalSourceSetting(value: Lexv2ModelsSlotTypeExternalSourceSetting[] | cdktf.IResolvable) {
+  public putExternalSourceSetting(value: Lexv2ModelsSlotTypeExternalSourceSetting[] | cdktn.IResolvable) {
     this._externalSourceSetting.internalValue = value;
   }
   public resetExternalSourceSetting() {
@@ -1917,7 +1917,7 @@ export class Lexv2ModelsSlotType extends cdktf.TerraformResource {
   public get slotTypeValues() {
     return this._slotTypeValues;
   }
-  public putSlotTypeValues(value: Lexv2ModelsSlotTypeSlotTypeValues[] | cdktf.IResolvable) {
+  public putSlotTypeValues(value: Lexv2ModelsSlotTypeSlotTypeValues[] | cdktn.IResolvable) {
     this._slotTypeValues.internalValue = value;
   }
   public resetSlotTypeValues() {
@@ -1949,7 +1949,7 @@ export class Lexv2ModelsSlotType extends cdktf.TerraformResource {
   public get valueSelectionSetting() {
     return this._valueSelectionSetting;
   }
-  public putValueSelectionSetting(value: Lexv2ModelsSlotTypeValueSelectionSetting[] | cdktf.IResolvable) {
+  public putValueSelectionSetting(value: Lexv2ModelsSlotTypeValueSelectionSetting[] | cdktn.IResolvable) {
     this._valueSelectionSetting.internalValue = value;
   }
   public resetValueSelectionSetting() {
@@ -1966,79 +1966,79 @@ export class Lexv2ModelsSlotType extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bot_id: cdktf.stringToTerraform(this._botId),
-      bot_version: cdktf.stringToTerraform(this._botVersion),
-      description: cdktf.stringToTerraform(this._description),
-      locale_id: cdktf.stringToTerraform(this._localeId),
-      name: cdktf.stringToTerraform(this._name),
-      parent_slot_type_signature: cdktf.stringToTerraform(this._parentSlotTypeSignature),
-      region: cdktf.stringToTerraform(this._region),
-      composite_slot_type_setting: cdktf.listMapper(lexv2ModelsSlotTypeCompositeSlotTypeSettingToTerraform, true)(this._compositeSlotTypeSetting.internalValue),
-      external_source_setting: cdktf.listMapper(lexv2ModelsSlotTypeExternalSourceSettingToTerraform, true)(this._externalSourceSetting.internalValue),
-      slot_type_values: cdktf.listMapper(lexv2ModelsSlotTypeSlotTypeValuesToTerraform, true)(this._slotTypeValues.internalValue),
+      bot_id: cdktn.stringToTerraform(this._botId),
+      bot_version: cdktn.stringToTerraform(this._botVersion),
+      description: cdktn.stringToTerraform(this._description),
+      locale_id: cdktn.stringToTerraform(this._localeId),
+      name: cdktn.stringToTerraform(this._name),
+      parent_slot_type_signature: cdktn.stringToTerraform(this._parentSlotTypeSignature),
+      region: cdktn.stringToTerraform(this._region),
+      composite_slot_type_setting: cdktn.listMapper(lexv2ModelsSlotTypeCompositeSlotTypeSettingToTerraform, true)(this._compositeSlotTypeSetting.internalValue),
+      external_source_setting: cdktn.listMapper(lexv2ModelsSlotTypeExternalSourceSettingToTerraform, true)(this._externalSourceSetting.internalValue),
+      slot_type_values: cdktn.listMapper(lexv2ModelsSlotTypeSlotTypeValuesToTerraform, true)(this._slotTypeValues.internalValue),
       timeouts: lexv2ModelsSlotTypeTimeoutsToTerraform(this._timeouts.internalValue),
-      value_selection_setting: cdktf.listMapper(lexv2ModelsSlotTypeValueSelectionSettingToTerraform, true)(this._valueSelectionSetting.internalValue),
+      value_selection_setting: cdktn.listMapper(lexv2ModelsSlotTypeValueSelectionSettingToTerraform, true)(this._valueSelectionSetting.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bot_id: {
-        value: cdktf.stringToHclTerraform(this._botId),
+        value: cdktn.stringToHclTerraform(this._botId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bot_version: {
-        value: cdktf.stringToHclTerraform(this._botVersion),
+        value: cdktn.stringToHclTerraform(this._botVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       locale_id: {
-        value: cdktf.stringToHclTerraform(this._localeId),
+        value: cdktn.stringToHclTerraform(this._localeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent_slot_type_signature: {
-        value: cdktf.stringToHclTerraform(this._parentSlotTypeSignature),
+        value: cdktn.stringToHclTerraform(this._parentSlotTypeSignature),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       composite_slot_type_setting: {
-        value: cdktf.listMapperHcl(lexv2ModelsSlotTypeCompositeSlotTypeSettingToHclTerraform, true)(this._compositeSlotTypeSetting.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsSlotTypeCompositeSlotTypeSettingToHclTerraform, true)(this._compositeSlotTypeSetting.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsSlotTypeCompositeSlotTypeSettingList",
       },
       external_source_setting: {
-        value: cdktf.listMapperHcl(lexv2ModelsSlotTypeExternalSourceSettingToHclTerraform, true)(this._externalSourceSetting.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsSlotTypeExternalSourceSettingToHclTerraform, true)(this._externalSourceSetting.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsSlotTypeExternalSourceSettingList",
       },
       slot_type_values: {
-        value: cdktf.listMapperHcl(lexv2ModelsSlotTypeSlotTypeValuesToHclTerraform, true)(this._slotTypeValues.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsSlotTypeSlotTypeValuesToHclTerraform, true)(this._slotTypeValues.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsSlotTypeSlotTypeValuesList",
@@ -2050,7 +2050,7 @@ export class Lexv2ModelsSlotType extends cdktf.TerraformResource {
         storageClassType: "Lexv2ModelsSlotTypeTimeouts",
       },
       value_selection_setting: {
-        value: cdktf.listMapperHcl(lexv2ModelsSlotTypeValueSelectionSettingToHclTerraform, true)(this._valueSelectionSetting.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsSlotTypeValueSelectionSettingToHclTerraform, true)(this._valueSelectionSetting.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsSlotTypeValueSelectionSettingList",

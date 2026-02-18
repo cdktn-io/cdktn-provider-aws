@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LexSlotTypeConfig extends cdktf.TerraformMetaArguments {
+export interface LexSlotTypeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_slot_type#create_version LexSlotType#create_version}
   */
-  readonly createVersion?: boolean | cdktf.IResolvable;
+  readonly createVersion?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_slot_type#description LexSlotType#description}
   */
@@ -46,7 +46,7 @@ export interface LexSlotTypeConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_slot_type#enumeration_value LexSlotType#enumeration_value}
   */
-  readonly enumerationValue: LexSlotTypeEnumerationValue[] | cdktf.IResolvable;
+  readonly enumerationValue: LexSlotTypeEnumerationValue[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -65,32 +65,32 @@ export interface LexSlotTypeEnumerationValue {
   readonly value: string;
 }
 
-export function lexSlotTypeEnumerationValueToTerraform(struct?: LexSlotTypeEnumerationValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexSlotTypeEnumerationValueToTerraform(struct?: LexSlotTypeEnumerationValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    synonyms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.synonyms),
-    value: cdktf.stringToTerraform(struct!.value),
+    synonyms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.synonyms),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function lexSlotTypeEnumerationValueToHclTerraform(struct?: LexSlotTypeEnumerationValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexSlotTypeEnumerationValueToHclTerraform(struct?: LexSlotTypeEnumerationValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     synonyms: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.synonyms),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.synonyms),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -101,9 +101,9 @@ export function lexSlotTypeEnumerationValueToHclTerraform(struct?: LexSlotTypeEn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexSlotTypeEnumerationValueOutputReference extends cdktf.ComplexObject {
+export class LexSlotTypeEnumerationValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -111,11 +111,11 @@ export class LexSlotTypeEnumerationValueOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LexSlotTypeEnumerationValue | cdktf.IResolvable | undefined {
+  public get internalValue(): LexSlotTypeEnumerationValue | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -132,14 +132,14 @@ export class LexSlotTypeEnumerationValueOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexSlotTypeEnumerationValue | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LexSlotTypeEnumerationValue | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._synonyms = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -154,7 +154,7 @@ export class LexSlotTypeEnumerationValueOutputReference extends cdktf.ComplexObj
   // synonyms - computed: false, optional: true, required: false
   private _synonyms?: string[]; 
   public get synonyms() {
-    return cdktf.Fn.tolist(this.getListAttribute('synonyms'));
+    return cdktn.Fn.tolist(this.getListAttribute('synonyms'));
   }
   public set synonyms(value: string[]) {
     this._synonyms = value;
@@ -181,15 +181,15 @@ export class LexSlotTypeEnumerationValueOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class LexSlotTypeEnumerationValueList extends cdktf.ComplexList {
-  public internalValue? : LexSlotTypeEnumerationValue[] | cdktf.IResolvable
+export class LexSlotTypeEnumerationValueList extends cdktn.ComplexList {
+  public internalValue? : LexSlotTypeEnumerationValue[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -215,39 +215,39 @@ export interface LexSlotTypeTimeouts {
   readonly update?: string;
 }
 
-export function lexSlotTypeTimeoutsToTerraform(struct?: LexSlotTypeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexSlotTypeTimeoutsToTerraform(struct?: LexSlotTypeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function lexSlotTypeTimeoutsToHclTerraform(struct?: LexSlotTypeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexSlotTypeTimeoutsToHclTerraform(struct?: LexSlotTypeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -258,19 +258,19 @@ export function lexSlotTypeTimeoutsToHclTerraform(struct?: LexSlotTypeTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexSlotTypeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LexSlotTypeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LexSlotTypeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LexSlotTypeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -291,7 +291,7 @@ export class LexSlotTypeTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexSlotTypeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LexSlotTypeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -299,7 +299,7 @@ export class LexSlotTypeTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -364,7 +364,7 @@ export class LexSlotTypeTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_slot_type aws_lex_slot_type}
 */
-export class LexSlotType extends cdktf.TerraformResource {
+export class LexSlotType extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -375,14 +375,14 @@ export class LexSlotType extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LexSlotType resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LexSlotType resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LexSlotType to import
   * @param importFromId The id of the existing LexSlotType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_slot_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LexSlotType to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lex_slot_type", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lex_slot_type", importId: importFromId, provider });
       }
 
   // ===========
@@ -432,11 +432,11 @@ export class LexSlotType extends cdktf.TerraformResource {
   }
 
   // create_version - computed: false, optional: true, required: false
-  private _createVersion?: boolean | cdktf.IResolvable; 
+  private _createVersion?: boolean | cdktn.IResolvable; 
   public get createVersion() {
     return this.getBooleanAttribute('create_version');
   }
-  public set createVersion(value: boolean | cdktf.IResolvable) {
+  public set createVersion(value: boolean | cdktn.IResolvable) {
     this._createVersion = value;
   }
   public resetCreateVersion() {
@@ -544,7 +544,7 @@ export class LexSlotType extends cdktf.TerraformResource {
   public get enumerationValue() {
     return this._enumerationValue;
   }
-  public putEnumerationValue(value: LexSlotTypeEnumerationValue[] | cdktf.IResolvable) {
+  public putEnumerationValue(value: LexSlotTypeEnumerationValue[] | cdktn.IResolvable) {
     this._enumerationValue.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -574,13 +574,13 @@ export class LexSlotType extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      create_version: cdktf.booleanToTerraform(this._createVersion),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      value_selection_strategy: cdktf.stringToTerraform(this._valueSelectionStrategy),
-      enumeration_value: cdktf.listMapper(lexSlotTypeEnumerationValueToTerraform, true)(this._enumerationValue.internalValue),
+      create_version: cdktn.booleanToTerraform(this._createVersion),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      value_selection_strategy: cdktn.stringToTerraform(this._valueSelectionStrategy),
+      enumeration_value: cdktn.listMapper(lexSlotTypeEnumerationValueToTerraform, true)(this._enumerationValue.internalValue),
       timeouts: lexSlotTypeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -588,43 +588,43 @@ export class LexSlotType extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       create_version: {
-        value: cdktf.booleanToHclTerraform(this._createVersion),
+        value: cdktn.booleanToHclTerraform(this._createVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       value_selection_strategy: {
-        value: cdktf.stringToHclTerraform(this._valueSelectionStrategy),
+        value: cdktn.stringToHclTerraform(this._valueSelectionStrategy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enumeration_value: {
-        value: cdktf.listMapperHcl(lexSlotTypeEnumerationValueToHclTerraform, true)(this._enumerationValue.internalValue),
+        value: cdktn.listMapperHcl(lexSlotTypeEnumerationValueToHclTerraform, true)(this._enumerationValue.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LexSlotTypeEnumerationValueList",

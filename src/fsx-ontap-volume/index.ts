@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FsxOntapVolumeConfig extends cdktf.TerraformMetaArguments {
+export interface FsxOntapVolumeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_ontap_volume#bypass_snaplock_enterprise_retention FsxOntapVolume#bypass_snaplock_enterprise_retention}
   */
-  readonly bypassSnaplockEnterpriseRetention?: boolean | cdktf.IResolvable;
+  readonly bypassSnaplockEnterpriseRetention?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_ontap_volume#copy_tags_to_backups FsxOntapVolume#copy_tags_to_backups}
   */
-  readonly copyTagsToBackups?: boolean | cdktf.IResolvable;
+  readonly copyTagsToBackups?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_ontap_volume#final_backup_tags FsxOntapVolume#final_backup_tags}
   */
@@ -64,7 +64,7 @@ export interface FsxOntapVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_ontap_volume#skip_final_backup FsxOntapVolume#skip_final_backup}
   */
-  readonly skipFinalBackup?: boolean | cdktf.IResolvable;
+  readonly skipFinalBackup?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_ontap_volume#snapshot_policy FsxOntapVolume#snapshot_policy}
   */
@@ -72,7 +72,7 @@ export interface FsxOntapVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_ontap_volume#storage_efficiency_enabled FsxOntapVolume#storage_efficiency_enabled}
   */
-  readonly storageEfficiencyEnabled?: boolean | cdktf.IResolvable;
+  readonly storageEfficiencyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_ontap_volume#storage_virtual_machine_id FsxOntapVolume#storage_virtual_machine_id}
   */
@@ -130,31 +130,31 @@ export interface FsxOntapVolumeAggregateConfiguration {
 }
 
 export function fsxOntapVolumeAggregateConfigurationToTerraform(struct?: FsxOntapVolumeAggregateConfigurationOutputReference | FsxOntapVolumeAggregateConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregates: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.aggregates),
-    constituents_per_aggregate: cdktf.numberToTerraform(struct!.constituentsPerAggregate),
+    aggregates: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.aggregates),
+    constituents_per_aggregate: cdktn.numberToTerraform(struct!.constituentsPerAggregate),
   }
 }
 
 
 export function fsxOntapVolumeAggregateConfigurationToHclTerraform(struct?: FsxOntapVolumeAggregateConfigurationOutputReference | FsxOntapVolumeAggregateConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregates: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.aggregates),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.aggregates),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     constituents_per_aggregate: {
-      value: cdktf.numberToHclTerraform(struct!.constituentsPerAggregate),
+      value: cdktn.numberToHclTerraform(struct!.constituentsPerAggregate),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -165,14 +165,14 @@ export function fsxOntapVolumeAggregateConfigurationToHclTerraform(struct?: FsxO
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxOntapVolumeAggregateConfigurationOutputReference extends cdktf.ComplexObject {
+export class FsxOntapVolumeAggregateConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -252,31 +252,31 @@ export interface FsxOntapVolumeSnaplockConfigurationAutocommitPeriod {
 }
 
 export function fsxOntapVolumeSnaplockConfigurationAutocommitPeriodToTerraform(struct?: FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference | FsxOntapVolumeSnaplockConfigurationAutocommitPeriod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.numberToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
 export function fsxOntapVolumeSnaplockConfigurationAutocommitPeriodToHclTerraform(struct?: FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference | FsxOntapVolumeSnaplockConfigurationAutocommitPeriod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -287,14 +287,14 @@ export function fsxOntapVolumeSnaplockConfigurationAutocommitPeriodToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference extends cdktf.ComplexObject {
+export class FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -369,31 +369,31 @@ export interface FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetent
 }
 
 export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionToTerraform(struct?: FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionOutputReference | FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.numberToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
 export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionToHclTerraform(struct?: FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionOutputReference | FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -404,14 +404,14 @@ export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetenti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionOutputReference extends cdktf.ComplexObject {
+export class FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -486,31 +486,31 @@ export interface FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetent
 }
 
 export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionToTerraform(struct?: FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference | FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.numberToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
 export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionToHclTerraform(struct?: FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference | FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -521,14 +521,14 @@ export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetenti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference extends cdktf.ComplexObject {
+export class FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -603,31 +603,31 @@ export interface FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetent
 }
 
 export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionToTerraform(struct?: FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionOutputReference | FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.numberToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
 export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionToHclTerraform(struct?: FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionOutputReference | FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -638,14 +638,14 @@ export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetenti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionOutputReference extends cdktf.ComplexObject {
+export class FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -730,8 +730,8 @@ export interface FsxOntapVolumeSnaplockConfigurationRetentionPeriod {
 }
 
 export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodToTerraform(struct?: FsxOntapVolumeSnaplockConfigurationRetentionPeriodOutputReference | FsxOntapVolumeSnaplockConfigurationRetentionPeriod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -743,8 +743,8 @@ export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodToTerraform(st
 
 
 export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodToHclTerraform(struct?: FsxOntapVolumeSnaplockConfigurationRetentionPeriodOutputReference | FsxOntapVolumeSnaplockConfigurationRetentionPeriod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -772,14 +772,14 @@ export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxOntapVolumeSnaplockConfigurationRetentionPeriodOutputReference extends cdktf.ComplexObject {
+export class FsxOntapVolumeSnaplockConfigurationRetentionPeriodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -868,7 +868,7 @@ export interface FsxOntapVolumeSnaplockConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_ontap_volume#audit_log_volume FsxOntapVolume#audit_log_volume}
   */
-  readonly auditLogVolume?: boolean | cdktf.IResolvable;
+  readonly auditLogVolume?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_ontap_volume#privileged_delete FsxOntapVolume#privileged_delete}
   */
@@ -880,7 +880,7 @@ export interface FsxOntapVolumeSnaplockConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_ontap_volume#volume_append_mode_enabled FsxOntapVolume#volume_append_mode_enabled}
   */
-  readonly volumeAppendModeEnabled?: boolean | cdktf.IResolvable;
+  readonly volumeAppendModeEnabled?: boolean | cdktn.IResolvable;
   /**
   * autocommit_period block
   *
@@ -896,15 +896,15 @@ export interface FsxOntapVolumeSnaplockConfiguration {
 }
 
 export function fsxOntapVolumeSnaplockConfigurationToTerraform(struct?: FsxOntapVolumeSnaplockConfigurationOutputReference | FsxOntapVolumeSnaplockConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audit_log_volume: cdktf.booleanToTerraform(struct!.auditLogVolume),
-    privileged_delete: cdktf.stringToTerraform(struct!.privilegedDelete),
-    snaplock_type: cdktf.stringToTerraform(struct!.snaplockType),
-    volume_append_mode_enabled: cdktf.booleanToTerraform(struct!.volumeAppendModeEnabled),
+    audit_log_volume: cdktn.booleanToTerraform(struct!.auditLogVolume),
+    privileged_delete: cdktn.stringToTerraform(struct!.privilegedDelete),
+    snaplock_type: cdktn.stringToTerraform(struct!.snaplockType),
+    volume_append_mode_enabled: cdktn.booleanToTerraform(struct!.volumeAppendModeEnabled),
     autocommit_period: fsxOntapVolumeSnaplockConfigurationAutocommitPeriodToTerraform(struct!.autocommitPeriod),
     retention_period: fsxOntapVolumeSnaplockConfigurationRetentionPeriodToTerraform(struct!.retentionPeriod),
   }
@@ -912,31 +912,31 @@ export function fsxOntapVolumeSnaplockConfigurationToTerraform(struct?: FsxOntap
 
 
 export function fsxOntapVolumeSnaplockConfigurationToHclTerraform(struct?: FsxOntapVolumeSnaplockConfigurationOutputReference | FsxOntapVolumeSnaplockConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audit_log_volume: {
-      value: cdktf.booleanToHclTerraform(struct!.auditLogVolume),
+      value: cdktn.booleanToHclTerraform(struct!.auditLogVolume),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     privileged_delete: {
-      value: cdktf.stringToHclTerraform(struct!.privilegedDelete),
+      value: cdktn.stringToHclTerraform(struct!.privilegedDelete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     snaplock_type: {
-      value: cdktf.stringToHclTerraform(struct!.snaplockType),
+      value: cdktn.stringToHclTerraform(struct!.snaplockType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_append_mode_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.volumeAppendModeEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.volumeAppendModeEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -959,14 +959,14 @@ export function fsxOntapVolumeSnaplockConfigurationToHclTerraform(struct?: FsxOn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxOntapVolumeSnaplockConfigurationOutputReference extends cdktf.ComplexObject {
+export class FsxOntapVolumeSnaplockConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1022,11 +1022,11 @@ export class FsxOntapVolumeSnaplockConfigurationOutputReference extends cdktf.Co
   }
 
   // audit_log_volume - computed: false, optional: true, required: false
-  private _auditLogVolume?: boolean | cdktf.IResolvable; 
+  private _auditLogVolume?: boolean | cdktn.IResolvable; 
   public get auditLogVolume() {
     return this.getBooleanAttribute('audit_log_volume');
   }
-  public set auditLogVolume(value: boolean | cdktf.IResolvable) {
+  public set auditLogVolume(value: boolean | cdktn.IResolvable) {
     this._auditLogVolume = value;
   }
   public resetAuditLogVolume() {
@@ -1067,11 +1067,11 @@ export class FsxOntapVolumeSnaplockConfigurationOutputReference extends cdktf.Co
   }
 
   // volume_append_mode_enabled - computed: false, optional: true, required: false
-  private _volumeAppendModeEnabled?: boolean | cdktf.IResolvable; 
+  private _volumeAppendModeEnabled?: boolean | cdktn.IResolvable; 
   public get volumeAppendModeEnabled() {
     return this.getBooleanAttribute('volume_append_mode_enabled');
   }
-  public set volumeAppendModeEnabled(value: boolean | cdktf.IResolvable) {
+  public set volumeAppendModeEnabled(value: boolean | cdktn.IResolvable) {
     this._volumeAppendModeEnabled = value;
   }
   public resetVolumeAppendModeEnabled() {
@@ -1126,31 +1126,31 @@ export interface FsxOntapVolumeTieringPolicy {
 }
 
 export function fsxOntapVolumeTieringPolicyToTerraform(struct?: FsxOntapVolumeTieringPolicyOutputReference | FsxOntapVolumeTieringPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cooling_period: cdktf.numberToTerraform(struct!.coolingPeriod),
-    name: cdktf.stringToTerraform(struct!.name),
+    cooling_period: cdktn.numberToTerraform(struct!.coolingPeriod),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function fsxOntapVolumeTieringPolicyToHclTerraform(struct?: FsxOntapVolumeTieringPolicyOutputReference | FsxOntapVolumeTieringPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cooling_period: {
-      value: cdktf.numberToHclTerraform(struct!.coolingPeriod),
+      value: cdktn.numberToHclTerraform(struct!.coolingPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1161,14 +1161,14 @@ export function fsxOntapVolumeTieringPolicyToHclTerraform(struct?: FsxOntapVolum
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxOntapVolumeTieringPolicyOutputReference extends cdktf.ComplexObject {
+export class FsxOntapVolumeTieringPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1246,39 +1246,39 @@ export interface FsxOntapVolumeTimeouts {
   readonly update?: string;
 }
 
-export function fsxOntapVolumeTimeoutsToTerraform(struct?: FsxOntapVolumeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fsxOntapVolumeTimeoutsToTerraform(struct?: FsxOntapVolumeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function fsxOntapVolumeTimeoutsToHclTerraform(struct?: FsxOntapVolumeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fsxOntapVolumeTimeoutsToHclTerraform(struct?: FsxOntapVolumeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1289,19 +1289,19 @@ export function fsxOntapVolumeTimeoutsToHclTerraform(struct?: FsxOntapVolumeTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxOntapVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class FsxOntapVolumeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): FsxOntapVolumeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): FsxOntapVolumeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1322,7 +1322,7 @@ export class FsxOntapVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FsxOntapVolumeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FsxOntapVolumeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1330,7 +1330,7 @@ export class FsxOntapVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1395,7 +1395,7 @@ export class FsxOntapVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume}
 */
-export class FsxOntapVolume extends cdktf.TerraformResource {
+export class FsxOntapVolume extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1406,14 +1406,14 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a FsxOntapVolume resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a FsxOntapVolume resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FsxOntapVolume to import
   * @param importFromId The id of the existing FsxOntapVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_ontap_volume#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FsxOntapVolume to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_fsx_ontap_volume", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_fsx_ontap_volume", importId: importFromId, provider });
       }
 
   // ===========
@@ -1478,11 +1478,11 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
   }
 
   // bypass_snaplock_enterprise_retention - computed: false, optional: true, required: false
-  private _bypassSnaplockEnterpriseRetention?: boolean | cdktf.IResolvable; 
+  private _bypassSnaplockEnterpriseRetention?: boolean | cdktn.IResolvable; 
   public get bypassSnaplockEnterpriseRetention() {
     return this.getBooleanAttribute('bypass_snaplock_enterprise_retention');
   }
-  public set bypassSnaplockEnterpriseRetention(value: boolean | cdktf.IResolvable) {
+  public set bypassSnaplockEnterpriseRetention(value: boolean | cdktn.IResolvable) {
     this._bypassSnaplockEnterpriseRetention = value;
   }
   public resetBypassSnaplockEnterpriseRetention() {
@@ -1494,11 +1494,11 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
   }
 
   // copy_tags_to_backups - computed: false, optional: true, required: false
-  private _copyTagsToBackups?: boolean | cdktf.IResolvable; 
+  private _copyTagsToBackups?: boolean | cdktn.IResolvable; 
   public get copyTagsToBackups() {
     return this.getBooleanAttribute('copy_tags_to_backups');
   }
-  public set copyTagsToBackups(value: boolean | cdktf.IResolvable) {
+  public set copyTagsToBackups(value: boolean | cdktn.IResolvable) {
     this._copyTagsToBackups = value;
   }
   public resetCopyTagsToBackups() {
@@ -1661,11 +1661,11 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
   }
 
   // skip_final_backup - computed: false, optional: true, required: false
-  private _skipFinalBackup?: boolean | cdktf.IResolvable; 
+  private _skipFinalBackup?: boolean | cdktn.IResolvable; 
   public get skipFinalBackup() {
     return this.getBooleanAttribute('skip_final_backup');
   }
-  public set skipFinalBackup(value: boolean | cdktf.IResolvable) {
+  public set skipFinalBackup(value: boolean | cdktn.IResolvable) {
     this._skipFinalBackup = value;
   }
   public resetSkipFinalBackup() {
@@ -1693,11 +1693,11 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
   }
 
   // storage_efficiency_enabled - computed: false, optional: true, required: false
-  private _storageEfficiencyEnabled?: boolean | cdktf.IResolvable; 
+  private _storageEfficiencyEnabled?: boolean | cdktn.IResolvable; 
   public get storageEfficiencyEnabled() {
     return this.getBooleanAttribute('storage_efficiency_enabled');
   }
-  public set storageEfficiencyEnabled(value: boolean | cdktf.IResolvable) {
+  public set storageEfficiencyEnabled(value: boolean | cdktn.IResolvable) {
     this._storageEfficiencyEnabled = value;
   }
   public resetStorageEfficiencyEnabled() {
@@ -1860,25 +1860,25 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bypass_snaplock_enterprise_retention: cdktf.booleanToTerraform(this._bypassSnaplockEnterpriseRetention),
-      copy_tags_to_backups: cdktf.booleanToTerraform(this._copyTagsToBackups),
-      final_backup_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._finalBackupTags),
-      id: cdktf.stringToTerraform(this._id),
-      junction_path: cdktf.stringToTerraform(this._junctionPath),
-      name: cdktf.stringToTerraform(this._name),
-      ontap_volume_type: cdktf.stringToTerraform(this._ontapVolumeType),
-      region: cdktf.stringToTerraform(this._region),
-      security_style: cdktf.stringToTerraform(this._securityStyle),
-      size_in_bytes: cdktf.stringToTerraform(this._sizeInBytes),
-      size_in_megabytes: cdktf.numberToTerraform(this._sizeInMegabytes),
-      skip_final_backup: cdktf.booleanToTerraform(this._skipFinalBackup),
-      snapshot_policy: cdktf.stringToTerraform(this._snapshotPolicy),
-      storage_efficiency_enabled: cdktf.booleanToTerraform(this._storageEfficiencyEnabled),
-      storage_virtual_machine_id: cdktf.stringToTerraform(this._storageVirtualMachineId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      volume_style: cdktf.stringToTerraform(this._volumeStyle),
-      volume_type: cdktf.stringToTerraform(this._volumeType),
+      bypass_snaplock_enterprise_retention: cdktn.booleanToTerraform(this._bypassSnaplockEnterpriseRetention),
+      copy_tags_to_backups: cdktn.booleanToTerraform(this._copyTagsToBackups),
+      final_backup_tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._finalBackupTags),
+      id: cdktn.stringToTerraform(this._id),
+      junction_path: cdktn.stringToTerraform(this._junctionPath),
+      name: cdktn.stringToTerraform(this._name),
+      ontap_volume_type: cdktn.stringToTerraform(this._ontapVolumeType),
+      region: cdktn.stringToTerraform(this._region),
+      security_style: cdktn.stringToTerraform(this._securityStyle),
+      size_in_bytes: cdktn.stringToTerraform(this._sizeInBytes),
+      size_in_megabytes: cdktn.numberToTerraform(this._sizeInMegabytes),
+      skip_final_backup: cdktn.booleanToTerraform(this._skipFinalBackup),
+      snapshot_policy: cdktn.stringToTerraform(this._snapshotPolicy),
+      storage_efficiency_enabled: cdktn.booleanToTerraform(this._storageEfficiencyEnabled),
+      storage_virtual_machine_id: cdktn.stringToTerraform(this._storageVirtualMachineId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      volume_style: cdktn.stringToTerraform(this._volumeStyle),
+      volume_type: cdktn.stringToTerraform(this._volumeType),
       aggregate_configuration: fsxOntapVolumeAggregateConfigurationToTerraform(this._aggregateConfiguration.internalValue),
       snaplock_configuration: fsxOntapVolumeSnaplockConfigurationToTerraform(this._snaplockConfiguration.internalValue),
       tiering_policy: fsxOntapVolumeTieringPolicyToTerraform(this._tieringPolicy.internalValue),
@@ -1889,115 +1889,115 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bypass_snaplock_enterprise_retention: {
-        value: cdktf.booleanToHclTerraform(this._bypassSnaplockEnterpriseRetention),
+        value: cdktn.booleanToHclTerraform(this._bypassSnaplockEnterpriseRetention),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       copy_tags_to_backups: {
-        value: cdktf.booleanToHclTerraform(this._copyTagsToBackups),
+        value: cdktn.booleanToHclTerraform(this._copyTagsToBackups),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       final_backup_tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._finalBackupTags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._finalBackupTags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       junction_path: {
-        value: cdktf.stringToHclTerraform(this._junctionPath),
+        value: cdktn.stringToHclTerraform(this._junctionPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ontap_volume_type: {
-        value: cdktf.stringToHclTerraform(this._ontapVolumeType),
+        value: cdktn.stringToHclTerraform(this._ontapVolumeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_style: {
-        value: cdktf.stringToHclTerraform(this._securityStyle),
+        value: cdktn.stringToHclTerraform(this._securityStyle),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       size_in_bytes: {
-        value: cdktf.stringToHclTerraform(this._sizeInBytes),
+        value: cdktn.stringToHclTerraform(this._sizeInBytes),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       size_in_megabytes: {
-        value: cdktf.numberToHclTerraform(this._sizeInMegabytes),
+        value: cdktn.numberToHclTerraform(this._sizeInMegabytes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       skip_final_backup: {
-        value: cdktf.booleanToHclTerraform(this._skipFinalBackup),
+        value: cdktn.booleanToHclTerraform(this._skipFinalBackup),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       snapshot_policy: {
-        value: cdktf.stringToHclTerraform(this._snapshotPolicy),
+        value: cdktn.stringToHclTerraform(this._snapshotPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_efficiency_enabled: {
-        value: cdktf.booleanToHclTerraform(this._storageEfficiencyEnabled),
+        value: cdktn.booleanToHclTerraform(this._storageEfficiencyEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       storage_virtual_machine_id: {
-        value: cdktf.stringToHclTerraform(this._storageVirtualMachineId),
+        value: cdktn.stringToHclTerraform(this._storageVirtualMachineId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       volume_style: {
-        value: cdktf.stringToHclTerraform(this._volumeStyle),
+        value: cdktn.stringToHclTerraform(this._volumeStyle),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       volume_type: {
-        value: cdktf.stringToHclTerraform(this._volumeType),
+        value: cdktn.stringToHclTerraform(this._volumeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

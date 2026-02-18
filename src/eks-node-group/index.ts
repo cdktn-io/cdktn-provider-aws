@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
+export interface EksNodeGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}
   */
@@ -31,7 +31,7 @@ export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}
   */
-  readonly forceUpdateVersion?: boolean | cdktf.IResolvable;
+  readonly forceUpdateVersion?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_node_group#id EksNodeGroup#id}
   *
@@ -114,7 +114,7 @@ export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_node_group#taint EksNodeGroup#taint}
   */
-  readonly taint?: EksNodeGroupTaint[] | cdktf.IResolvable;
+  readonly taint?: EksNodeGroupTaint[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -132,8 +132,8 @@ export interface EksNodeGroupResourcesAutoscalingGroups {
 }
 
 export function eksNodeGroupResourcesAutoscalingGroupsToTerraform(struct?: EksNodeGroupResourcesAutoscalingGroups): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -142,8 +142,8 @@ export function eksNodeGroupResourcesAutoscalingGroupsToTerraform(struct?: EksNo
 
 
 export function eksNodeGroupResourcesAutoscalingGroupsToHclTerraform(struct?: EksNodeGroupResourcesAutoscalingGroups): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -151,7 +151,7 @@ export function eksNodeGroupResourcesAutoscalingGroupsToHclTerraform(struct?: Ek
   return attrs;
 }
 
-export class EksNodeGroupResourcesAutoscalingGroupsOutputReference extends cdktf.ComplexObject {
+export class EksNodeGroupResourcesAutoscalingGroupsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -160,7 +160,7 @@ export class EksNodeGroupResourcesAutoscalingGroupsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -185,14 +185,14 @@ export class EksNodeGroupResourcesAutoscalingGroupsOutputReference extends cdktf
   }
 }
 
-export class EksNodeGroupResourcesAutoscalingGroupsList extends cdktf.ComplexList {
+export class EksNodeGroupResourcesAutoscalingGroupsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -207,8 +207,8 @@ export interface EksNodeGroupResources {
 }
 
 export function eksNodeGroupResourcesToTerraform(struct?: EksNodeGroupResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -217,8 +217,8 @@ export function eksNodeGroupResourcesToTerraform(struct?: EksNodeGroupResources)
 
 
 export function eksNodeGroupResourcesToHclTerraform(struct?: EksNodeGroupResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -226,7 +226,7 @@ export function eksNodeGroupResourcesToHclTerraform(struct?: EksNodeGroupResourc
   return attrs;
 }
 
-export class EksNodeGroupResourcesOutputReference extends cdktf.ComplexObject {
+export class EksNodeGroupResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -235,7 +235,7 @@ export class EksNodeGroupResourcesOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -266,14 +266,14 @@ export class EksNodeGroupResourcesOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class EksNodeGroupResourcesList extends cdktf.ComplexList {
+export class EksNodeGroupResourcesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -303,38 +303,38 @@ export interface EksNodeGroupLaunchTemplate {
 }
 
 export function eksNodeGroupLaunchTemplateToTerraform(struct?: EksNodeGroupLaunchTemplateOutputReference | EksNodeGroupLaunchTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    name: cdktf.stringToTerraform(struct!.name),
-    version: cdktf.stringToTerraform(struct!.version),
+    id: cdktn.stringToTerraform(struct!.id),
+    name: cdktn.stringToTerraform(struct!.name),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function eksNodeGroupLaunchTemplateToHclTerraform(struct?: EksNodeGroupLaunchTemplateOutputReference | EksNodeGroupLaunchTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -345,14 +345,14 @@ export function eksNodeGroupLaunchTemplateToHclTerraform(struct?: EksNodeGroupLa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksNodeGroupLaunchTemplateOutputReference extends cdktf.ComplexObject {
+export class EksNodeGroupLaunchTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -453,46 +453,46 @@ export interface EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides {
   readonly repairAction: string;
 }
 
-export function eksNodeGroupNodeRepairConfigNodeRepairConfigOverridesToTerraform(struct?: EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksNodeGroupNodeRepairConfigNodeRepairConfigOverridesToTerraform(struct?: EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    min_repair_wait_time_mins: cdktf.numberToTerraform(struct!.minRepairWaitTimeMins),
-    node_monitoring_condition: cdktf.stringToTerraform(struct!.nodeMonitoringCondition),
-    node_unhealthy_reason: cdktf.stringToTerraform(struct!.nodeUnhealthyReason),
-    repair_action: cdktf.stringToTerraform(struct!.repairAction),
+    min_repair_wait_time_mins: cdktn.numberToTerraform(struct!.minRepairWaitTimeMins),
+    node_monitoring_condition: cdktn.stringToTerraform(struct!.nodeMonitoringCondition),
+    node_unhealthy_reason: cdktn.stringToTerraform(struct!.nodeUnhealthyReason),
+    repair_action: cdktn.stringToTerraform(struct!.repairAction),
   }
 }
 
 
-export function eksNodeGroupNodeRepairConfigNodeRepairConfigOverridesToHclTerraform(struct?: EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksNodeGroupNodeRepairConfigNodeRepairConfigOverridesToHclTerraform(struct?: EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     min_repair_wait_time_mins: {
-      value: cdktf.numberToHclTerraform(struct!.minRepairWaitTimeMins),
+      value: cdktn.numberToHclTerraform(struct!.minRepairWaitTimeMins),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     node_monitoring_condition: {
-      value: cdktf.stringToHclTerraform(struct!.nodeMonitoringCondition),
+      value: cdktn.stringToHclTerraform(struct!.nodeMonitoringCondition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     node_unhealthy_reason: {
-      value: cdktf.stringToHclTerraform(struct!.nodeUnhealthyReason),
+      value: cdktn.stringToHclTerraform(struct!.nodeUnhealthyReason),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repair_action: {
-      value: cdktf.stringToHclTerraform(struct!.repairAction),
+      value: cdktn.stringToHclTerraform(struct!.repairAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -503,9 +503,9 @@ export function eksNodeGroupNodeRepairConfigNodeRepairConfigOverridesToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference extends cdktf.ComplexObject {
+export class EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -513,11 +513,11 @@ export class EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -542,7 +542,7 @@ export class EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -551,7 +551,7 @@ export class EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReferenc
       this._nodeUnhealthyReason = undefined;
       this._repairAction = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -618,15 +618,15 @@ export class EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReferenc
   }
 }
 
-export class EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList extends cdktf.ComplexList {
-  public internalValue? : EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides[] | cdktf.IResolvable
+export class EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList extends cdktn.ComplexList {
+  public internalValue? : EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -641,7 +641,7 @@ export interface EksNodeGroupNodeRepairConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_node_group#enabled EksNodeGroup#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_node_group#max_parallel_nodes_repaired_count EksNodeGroup#max_parallel_nodes_repaired_count}
   */
@@ -663,63 +663,63 @@ export interface EksNodeGroupNodeRepairConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_node_group#node_repair_config_overrides EksNodeGroup#node_repair_config_overrides}
   */
-  readonly nodeRepairConfigOverrides?: EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides[] | cdktf.IResolvable;
+  readonly nodeRepairConfigOverrides?: EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides[] | cdktn.IResolvable;
 }
 
 export function eksNodeGroupNodeRepairConfigToTerraform(struct?: EksNodeGroupNodeRepairConfigOutputReference | EksNodeGroupNodeRepairConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    max_parallel_nodes_repaired_count: cdktf.numberToTerraform(struct!.maxParallelNodesRepairedCount),
-    max_parallel_nodes_repaired_percentage: cdktf.numberToTerraform(struct!.maxParallelNodesRepairedPercentage),
-    max_unhealthy_node_threshold_count: cdktf.numberToTerraform(struct!.maxUnhealthyNodeThresholdCount),
-    max_unhealthy_node_threshold_percentage: cdktf.numberToTerraform(struct!.maxUnhealthyNodeThresholdPercentage),
-    node_repair_config_overrides: cdktf.listMapper(eksNodeGroupNodeRepairConfigNodeRepairConfigOverridesToTerraform, true)(struct!.nodeRepairConfigOverrides),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    max_parallel_nodes_repaired_count: cdktn.numberToTerraform(struct!.maxParallelNodesRepairedCount),
+    max_parallel_nodes_repaired_percentage: cdktn.numberToTerraform(struct!.maxParallelNodesRepairedPercentage),
+    max_unhealthy_node_threshold_count: cdktn.numberToTerraform(struct!.maxUnhealthyNodeThresholdCount),
+    max_unhealthy_node_threshold_percentage: cdktn.numberToTerraform(struct!.maxUnhealthyNodeThresholdPercentage),
+    node_repair_config_overrides: cdktn.listMapper(eksNodeGroupNodeRepairConfigNodeRepairConfigOverridesToTerraform, true)(struct!.nodeRepairConfigOverrides),
   }
 }
 
 
 export function eksNodeGroupNodeRepairConfigToHclTerraform(struct?: EksNodeGroupNodeRepairConfigOutputReference | EksNodeGroupNodeRepairConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_parallel_nodes_repaired_count: {
-      value: cdktf.numberToHclTerraform(struct!.maxParallelNodesRepairedCount),
+      value: cdktn.numberToHclTerraform(struct!.maxParallelNodesRepairedCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_parallel_nodes_repaired_percentage: {
-      value: cdktf.numberToHclTerraform(struct!.maxParallelNodesRepairedPercentage),
+      value: cdktn.numberToHclTerraform(struct!.maxParallelNodesRepairedPercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_unhealthy_node_threshold_count: {
-      value: cdktf.numberToHclTerraform(struct!.maxUnhealthyNodeThresholdCount),
+      value: cdktn.numberToHclTerraform(struct!.maxUnhealthyNodeThresholdCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_unhealthy_node_threshold_percentage: {
-      value: cdktf.numberToHclTerraform(struct!.maxUnhealthyNodeThresholdPercentage),
+      value: cdktn.numberToHclTerraform(struct!.maxUnhealthyNodeThresholdPercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     node_repair_config_overrides: {
-      value: cdktf.listMapperHcl(eksNodeGroupNodeRepairConfigNodeRepairConfigOverridesToHclTerraform, true)(struct!.nodeRepairConfigOverrides),
+      value: cdktn.listMapperHcl(eksNodeGroupNodeRepairConfigNodeRepairConfigOverridesToHclTerraform, true)(struct!.nodeRepairConfigOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList",
@@ -730,14 +730,14 @@ export function eksNodeGroupNodeRepairConfigToHclTerraform(struct?: EksNodeGroup
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksNodeGroupNodeRepairConfigOutputReference extends cdktf.ComplexObject {
+export class EksNodeGroupNodeRepairConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -793,11 +793,11 @@ export class EksNodeGroupNodeRepairConfigOutputReference extends cdktf.ComplexOb
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -877,7 +877,7 @@ export class EksNodeGroupNodeRepairConfigOutputReference extends cdktf.ComplexOb
   public get nodeRepairConfigOverrides() {
     return this._nodeRepairConfigOverrides;
   }
-  public putNodeRepairConfigOverrides(value: EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides[] | cdktf.IResolvable) {
+  public putNodeRepairConfigOverrides(value: EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides[] | cdktn.IResolvable) {
     this._nodeRepairConfigOverrides.internalValue = value;
   }
   public resetNodeRepairConfigOverrides() {
@@ -900,31 +900,31 @@ export interface EksNodeGroupRemoteAccess {
 }
 
 export function eksNodeGroupRemoteAccessToTerraform(struct?: EksNodeGroupRemoteAccessOutputReference | EksNodeGroupRemoteAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ec2_ssh_key: cdktf.stringToTerraform(struct!.ec2SshKey),
-    source_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sourceSecurityGroupIds),
+    ec2_ssh_key: cdktn.stringToTerraform(struct!.ec2SshKey),
+    source_security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sourceSecurityGroupIds),
   }
 }
 
 
 export function eksNodeGroupRemoteAccessToHclTerraform(struct?: EksNodeGroupRemoteAccessOutputReference | EksNodeGroupRemoteAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ec2_ssh_key: {
-      value: cdktf.stringToHclTerraform(struct!.ec2SshKey),
+      value: cdktn.stringToHclTerraform(struct!.ec2SshKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceSecurityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sourceSecurityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -935,14 +935,14 @@ export function eksNodeGroupRemoteAccessToHclTerraform(struct?: EksNodeGroupRemo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksNodeGroupRemoteAccessOutputReference extends cdktf.ComplexObject {
+export class EksNodeGroupRemoteAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -992,7 +992,7 @@ export class EksNodeGroupRemoteAccessOutputReference extends cdktf.ComplexObject
   // source_security_group_ids - computed: false, optional: true, required: false
   private _sourceSecurityGroupIds?: string[]; 
   public get sourceSecurityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('source_security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('source_security_group_ids'));
   }
   public set sourceSecurityGroupIds(value: string[]) {
     this._sourceSecurityGroupIds = value;
@@ -1021,38 +1021,38 @@ export interface EksNodeGroupScalingConfig {
 }
 
 export function eksNodeGroupScalingConfigToTerraform(struct?: EksNodeGroupScalingConfigOutputReference | EksNodeGroupScalingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    desired_size: cdktf.numberToTerraform(struct!.desiredSize),
-    max_size: cdktf.numberToTerraform(struct!.maxSize),
-    min_size: cdktf.numberToTerraform(struct!.minSize),
+    desired_size: cdktn.numberToTerraform(struct!.desiredSize),
+    max_size: cdktn.numberToTerraform(struct!.maxSize),
+    min_size: cdktn.numberToTerraform(struct!.minSize),
   }
 }
 
 
 export function eksNodeGroupScalingConfigToHclTerraform(struct?: EksNodeGroupScalingConfigOutputReference | EksNodeGroupScalingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     desired_size: {
-      value: cdktf.numberToHclTerraform(struct!.desiredSize),
+      value: cdktn.numberToHclTerraform(struct!.desiredSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_size: {
-      value: cdktf.numberToHclTerraform(struct!.maxSize),
+      value: cdktn.numberToHclTerraform(struct!.maxSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_size: {
-      value: cdktf.numberToHclTerraform(struct!.minSize),
+      value: cdktn.numberToHclTerraform(struct!.minSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1063,14 +1063,14 @@ export function eksNodeGroupScalingConfigToHclTerraform(struct?: EksNodeGroupSca
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksNodeGroupScalingConfigOutputReference extends cdktf.ComplexObject {
+export class EksNodeGroupScalingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1161,39 +1161,39 @@ export interface EksNodeGroupTaint {
   readonly value?: string;
 }
 
-export function eksNodeGroupTaintToTerraform(struct?: EksNodeGroupTaint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksNodeGroupTaintToTerraform(struct?: EksNodeGroupTaint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    effect: cdktf.stringToTerraform(struct!.effect),
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    effect: cdktn.stringToTerraform(struct!.effect),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function eksNodeGroupTaintToHclTerraform(struct?: EksNodeGroupTaint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksNodeGroupTaintToHclTerraform(struct?: EksNodeGroupTaint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     effect: {
-      value: cdktf.stringToHclTerraform(struct!.effect),
+      value: cdktn.stringToHclTerraform(struct!.effect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1204,9 +1204,9 @@ export function eksNodeGroupTaintToHclTerraform(struct?: EksNodeGroupTaint | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksNodeGroupTaintOutputReference extends cdktf.ComplexObject {
+export class EksNodeGroupTaintOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1214,11 +1214,11 @@ export class EksNodeGroupTaintOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EksNodeGroupTaint | cdktf.IResolvable | undefined {
+  public get internalValue(): EksNodeGroupTaint | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1239,7 +1239,7 @@ export class EksNodeGroupTaintOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EksNodeGroupTaint | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EksNodeGroupTaint | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1247,7 +1247,7 @@ export class EksNodeGroupTaintOutputReference extends cdktf.ComplexObject {
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1303,15 +1303,15 @@ export class EksNodeGroupTaintOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class EksNodeGroupTaintList extends cdktf.ComplexList {
-  public internalValue? : EksNodeGroupTaint[] | cdktf.IResolvable
+export class EksNodeGroupTaintList extends cdktn.ComplexList {
+  public internalValue? : EksNodeGroupTaint[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1337,39 +1337,39 @@ export interface EksNodeGroupTimeouts {
   readonly update?: string;
 }
 
-export function eksNodeGroupTimeoutsToTerraform(struct?: EksNodeGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksNodeGroupTimeoutsToTerraform(struct?: EksNodeGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function eksNodeGroupTimeoutsToHclTerraform(struct?: EksNodeGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksNodeGroupTimeoutsToHclTerraform(struct?: EksNodeGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1380,19 +1380,19 @@ export function eksNodeGroupTimeoutsToHclTerraform(struct?: EksNodeGroupTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EksNodeGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EksNodeGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EksNodeGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1413,7 +1413,7 @@ export class EksNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EksNodeGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EksNodeGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1421,7 +1421,7 @@ export class EksNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1498,38 +1498,38 @@ export interface EksNodeGroupUpdateConfig {
 }
 
 export function eksNodeGroupUpdateConfigToTerraform(struct?: EksNodeGroupUpdateConfigOutputReference | EksNodeGroupUpdateConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_unavailable: cdktf.numberToTerraform(struct!.maxUnavailable),
-    max_unavailable_percentage: cdktf.numberToTerraform(struct!.maxUnavailablePercentage),
-    update_strategy: cdktf.stringToTerraform(struct!.updateStrategy),
+    max_unavailable: cdktn.numberToTerraform(struct!.maxUnavailable),
+    max_unavailable_percentage: cdktn.numberToTerraform(struct!.maxUnavailablePercentage),
+    update_strategy: cdktn.stringToTerraform(struct!.updateStrategy),
   }
 }
 
 
 export function eksNodeGroupUpdateConfigToHclTerraform(struct?: EksNodeGroupUpdateConfigOutputReference | EksNodeGroupUpdateConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_unavailable: {
-      value: cdktf.numberToHclTerraform(struct!.maxUnavailable),
+      value: cdktn.numberToHclTerraform(struct!.maxUnavailable),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_unavailable_percentage: {
-      value: cdktf.numberToHclTerraform(struct!.maxUnavailablePercentage),
+      value: cdktn.numberToHclTerraform(struct!.maxUnavailablePercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     update_strategy: {
-      value: cdktf.stringToHclTerraform(struct!.updateStrategy),
+      value: cdktn.stringToHclTerraform(struct!.updateStrategy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1540,14 +1540,14 @@ export function eksNodeGroupUpdateConfigToHclTerraform(struct?: EksNodeGroupUpda
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksNodeGroupUpdateConfigOutputReference extends cdktf.ComplexObject {
+export class EksNodeGroupUpdateConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1636,7 +1636,7 @@ export class EksNodeGroupUpdateConfigOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_node_group aws_eks_node_group}
 */
-export class EksNodeGroup extends cdktf.TerraformResource {
+export class EksNodeGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1647,14 +1647,14 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EksNodeGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EksNodeGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EksNodeGroup to import
   * @param importFromId The id of the existing EksNodeGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_node_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EksNodeGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_node_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_node_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -1781,11 +1781,11 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   }
 
   // force_update_version - computed: false, optional: true, required: false
-  private _forceUpdateVersion?: boolean | cdktf.IResolvable; 
+  private _forceUpdateVersion?: boolean | cdktn.IResolvable; 
   public get forceUpdateVersion() {
     return this.getBooleanAttribute('force_update_version');
   }
-  public set forceUpdateVersion(value: boolean | cdktf.IResolvable) {
+  public set forceUpdateVersion(value: boolean | cdktn.IResolvable) {
     this._forceUpdateVersion = value;
   }
   public resetForceUpdateVersion() {
@@ -1935,7 +1935,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -2059,7 +2059,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   public get taint() {
     return this._taint;
   }
-  public putTaint(value: EksNodeGroupTaint[] | cdktf.IResolvable) {
+  public putTaint(value: EksNodeGroupTaint[] | cdktn.IResolvable) {
     this._taint.internalValue = value;
   }
   public resetTaint() {
@@ -2108,28 +2108,28 @@ export class EksNodeGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      ami_type: cdktf.stringToTerraform(this._amiType),
-      capacity_type: cdktf.stringToTerraform(this._capacityType),
-      cluster_name: cdktf.stringToTerraform(this._clusterName),
-      disk_size: cdktf.numberToTerraform(this._diskSize),
-      force_update_version: cdktf.booleanToTerraform(this._forceUpdateVersion),
-      id: cdktf.stringToTerraform(this._id),
-      instance_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._instanceTypes),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      node_group_name: cdktf.stringToTerraform(this._nodeGroupName),
-      node_group_name_prefix: cdktf.stringToTerraform(this._nodeGroupNamePrefix),
-      node_role_arn: cdktf.stringToTerraform(this._nodeRoleArn),
-      region: cdktf.stringToTerraform(this._region),
-      release_version: cdktf.stringToTerraform(this._releaseVersion),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      version: cdktf.stringToTerraform(this._version),
+      ami_type: cdktn.stringToTerraform(this._amiType),
+      capacity_type: cdktn.stringToTerraform(this._capacityType),
+      cluster_name: cdktn.stringToTerraform(this._clusterName),
+      disk_size: cdktn.numberToTerraform(this._diskSize),
+      force_update_version: cdktn.booleanToTerraform(this._forceUpdateVersion),
+      id: cdktn.stringToTerraform(this._id),
+      instance_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._instanceTypes),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      node_group_name: cdktn.stringToTerraform(this._nodeGroupName),
+      node_group_name_prefix: cdktn.stringToTerraform(this._nodeGroupNamePrefix),
+      node_role_arn: cdktn.stringToTerraform(this._nodeRoleArn),
+      region: cdktn.stringToTerraform(this._region),
+      release_version: cdktn.stringToTerraform(this._releaseVersion),
+      subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnetIds),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      version: cdktn.stringToTerraform(this._version),
       launch_template: eksNodeGroupLaunchTemplateToTerraform(this._launchTemplate.internalValue),
       node_repair_config: eksNodeGroupNodeRepairConfigToTerraform(this._nodeRepairConfig.internalValue),
       remote_access: eksNodeGroupRemoteAccessToTerraform(this._remoteAccess.internalValue),
       scaling_config: eksNodeGroupScalingConfigToTerraform(this._scalingConfig.internalValue),
-      taint: cdktf.listMapper(eksNodeGroupTaintToTerraform, true)(this._taint.internalValue),
+      taint: cdktn.listMapper(eksNodeGroupTaintToTerraform, true)(this._taint.internalValue),
       timeouts: eksNodeGroupTimeoutsToTerraform(this._timeouts.internalValue),
       update_config: eksNodeGroupUpdateConfigToTerraform(this._updateConfig.internalValue),
     };
@@ -2138,103 +2138,103 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       ami_type: {
-        value: cdktf.stringToHclTerraform(this._amiType),
+        value: cdktn.stringToHclTerraform(this._amiType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       capacity_type: {
-        value: cdktf.stringToHclTerraform(this._capacityType),
+        value: cdktn.stringToHclTerraform(this._capacityType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_name: {
-        value: cdktf.stringToHclTerraform(this._clusterName),
+        value: cdktn.stringToHclTerraform(this._clusterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disk_size: {
-        value: cdktf.numberToHclTerraform(this._diskSize),
+        value: cdktn.numberToHclTerraform(this._diskSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       force_update_version: {
-        value: cdktf.booleanToHclTerraform(this._forceUpdateVersion),
+        value: cdktn.booleanToHclTerraform(this._forceUpdateVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._instanceTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._instanceTypes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       node_group_name: {
-        value: cdktf.stringToHclTerraform(this._nodeGroupName),
+        value: cdktn.stringToHclTerraform(this._nodeGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       node_group_name_prefix: {
-        value: cdktf.stringToHclTerraform(this._nodeGroupNamePrefix),
+        value: cdktn.stringToHclTerraform(this._nodeGroupNamePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       node_role_arn: {
-        value: cdktf.stringToHclTerraform(this._nodeRoleArn),
+        value: cdktn.stringToHclTerraform(this._nodeRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       release_version: {
-        value: cdktf.stringToHclTerraform(this._releaseVersion),
+        value: cdktn.stringToHclTerraform(this._releaseVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnetIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -2264,7 +2264,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
         storageClassType: "EksNodeGroupScalingConfigList",
       },
       taint: {
-        value: cdktf.listMapperHcl(eksNodeGroupTaintToHclTerraform, true)(this._taint.internalValue),
+        value: cdktn.listMapperHcl(eksNodeGroupTaintToHclTerraform, true)(this._taint.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "EksNodeGroupTaintList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsmDocumentConfig extends cdktf.TerraformMetaArguments {
+export interface SsmDocumentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_document#content SsmDocument#content}
   */
@@ -66,14 +66,14 @@ export interface SsmDocumentConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_document#attachments_source SsmDocument#attachments_source}
   */
-  readonly attachmentsSource?: SsmDocumentAttachmentsSource[] | cdktf.IResolvable;
+  readonly attachmentsSource?: SsmDocumentAttachmentsSource[] | cdktn.IResolvable;
 }
 export interface SsmDocumentParameter {
 }
 
 export function ssmDocumentParameterToTerraform(struct?: SsmDocumentParameter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -82,8 +82,8 @@ export function ssmDocumentParameterToTerraform(struct?: SsmDocumentParameter): 
 
 
 export function ssmDocumentParameterToHclTerraform(struct?: SsmDocumentParameter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -91,7 +91,7 @@ export function ssmDocumentParameterToHclTerraform(struct?: SsmDocumentParameter
   return attrs;
 }
 
-export class SsmDocumentParameterOutputReference extends cdktf.ComplexObject {
+export class SsmDocumentParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -100,7 +100,7 @@ export class SsmDocumentParameterOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -140,14 +140,14 @@ export class SsmDocumentParameterOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SsmDocumentParameterList extends cdktf.ComplexList {
+export class SsmDocumentParameterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -173,39 +173,39 @@ export interface SsmDocumentAttachmentsSource {
   readonly values: string[];
 }
 
-export function ssmDocumentAttachmentsSourceToTerraform(struct?: SsmDocumentAttachmentsSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmDocumentAttachmentsSourceToTerraform(struct?: SsmDocumentAttachmentsSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function ssmDocumentAttachmentsSourceToHclTerraform(struct?: SsmDocumentAttachmentsSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmDocumentAttachmentsSourceToHclTerraform(struct?: SsmDocumentAttachmentsSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -216,9 +216,9 @@ export function ssmDocumentAttachmentsSourceToHclTerraform(struct?: SsmDocumentA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmDocumentAttachmentsSourceOutputReference extends cdktf.ComplexObject {
+export class SsmDocumentAttachmentsSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -226,11 +226,11 @@ export class SsmDocumentAttachmentsSourceOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmDocumentAttachmentsSource | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmDocumentAttachmentsSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -251,7 +251,7 @@ export class SsmDocumentAttachmentsSourceOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmDocumentAttachmentsSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmDocumentAttachmentsSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -259,7 +259,7 @@ export class SsmDocumentAttachmentsSourceOutputReference extends cdktf.ComplexOb
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -315,15 +315,15 @@ export class SsmDocumentAttachmentsSourceOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class SsmDocumentAttachmentsSourceList extends cdktf.ComplexList {
-  public internalValue? : SsmDocumentAttachmentsSource[] | cdktf.IResolvable
+export class SsmDocumentAttachmentsSourceList extends cdktn.ComplexList {
+  public internalValue? : SsmDocumentAttachmentsSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -338,7 +338,7 @@ export class SsmDocumentAttachmentsSourceList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_document aws_ssm_document}
 */
-export class SsmDocument extends cdktf.TerraformResource {
+export class SsmDocument extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -349,14 +349,14 @@ export class SsmDocument extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsmDocument resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsmDocument resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmDocument to import
   * @param importFromId The id of the existing SsmDocument that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_document#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmDocument to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_document", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_document", importId: importFromId, provider });
       }
 
   // ===========
@@ -642,7 +642,7 @@ export class SsmDocument extends cdktf.TerraformResource {
   public get attachmentsSource() {
     return this._attachmentsSource;
   }
-  public putAttachmentsSource(value: SsmDocumentAttachmentsSource[] | cdktf.IResolvable) {
+  public putAttachmentsSource(value: SsmDocumentAttachmentsSource[] | cdktn.IResolvable) {
     this._attachmentsSource.internalValue = value;
   }
   public resetAttachmentsSource() {
@@ -659,91 +659,91 @@ export class SsmDocument extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content: cdktf.stringToTerraform(this._content),
-      document_format: cdktf.stringToTerraform(this._documentFormat),
-      document_type: cdktf.stringToTerraform(this._documentType),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      permissions: cdktf.hashMapper(cdktf.stringToTerraform)(this._permissions),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target_type: cdktf.stringToTerraform(this._targetType),
-      version_name: cdktf.stringToTerraform(this._versionName),
-      attachments_source: cdktf.listMapper(ssmDocumentAttachmentsSourceToTerraform, true)(this._attachmentsSource.internalValue),
+      content: cdktn.stringToTerraform(this._content),
+      document_format: cdktn.stringToTerraform(this._documentFormat),
+      document_type: cdktn.stringToTerraform(this._documentType),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      permissions: cdktn.hashMapper(cdktn.stringToTerraform)(this._permissions),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      target_type: cdktn.stringToTerraform(this._targetType),
+      version_name: cdktn.stringToTerraform(this._versionName),
+      attachments_source: cdktn.listMapper(ssmDocumentAttachmentsSourceToTerraform, true)(this._attachmentsSource.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       content: {
-        value: cdktf.stringToHclTerraform(this._content),
+        value: cdktn.stringToHclTerraform(this._content),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       document_format: {
-        value: cdktf.stringToHclTerraform(this._documentFormat),
+        value: cdktn.stringToHclTerraform(this._documentFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       document_type: {
-        value: cdktf.stringToHclTerraform(this._documentType),
+        value: cdktn.stringToHclTerraform(this._documentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permissions: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._permissions),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._permissions),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target_type: {
-        value: cdktf.stringToHclTerraform(this._targetType),
+        value: cdktn.stringToHclTerraform(this._targetType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version_name: {
-        value: cdktf.stringToHclTerraform(this._versionName),
+        value: cdktn.stringToHclTerraform(this._versionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       attachments_source: {
-        value: cdktf.listMapperHcl(ssmDocumentAttachmentsSourceToHclTerraform, true)(this._attachmentsSource.internalValue),
+        value: cdktn.listMapperHcl(ssmDocumentAttachmentsSourceToHclTerraform, true)(this._attachmentsSource.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SsmDocumentAttachmentsSourceList",

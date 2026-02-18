@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiGatewayIntegrationConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayIntegrationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_integration#cache_key_parameters ApiGatewayIntegration#cache_key_parameters}
   */
@@ -108,28 +108,28 @@ export interface ApiGatewayIntegrationTlsConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_integration#insecure_skip_verification ApiGatewayIntegration#insecure_skip_verification}
   */
-  readonly insecureSkipVerification?: boolean | cdktf.IResolvable;
+  readonly insecureSkipVerification?: boolean | cdktn.IResolvable;
 }
 
 export function apiGatewayIntegrationTlsConfigToTerraform(struct?: ApiGatewayIntegrationTlsConfigOutputReference | ApiGatewayIntegrationTlsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    insecure_skip_verification: cdktf.booleanToTerraform(struct!.insecureSkipVerification),
+    insecure_skip_verification: cdktn.booleanToTerraform(struct!.insecureSkipVerification),
   }
 }
 
 
 export function apiGatewayIntegrationTlsConfigToHclTerraform(struct?: ApiGatewayIntegrationTlsConfigOutputReference | ApiGatewayIntegrationTlsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     insecure_skip_verification: {
-      value: cdktf.booleanToHclTerraform(struct!.insecureSkipVerification),
+      value: cdktn.booleanToHclTerraform(struct!.insecureSkipVerification),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -140,14 +140,14 @@ export function apiGatewayIntegrationTlsConfigToHclTerraform(struct?: ApiGateway
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiGatewayIntegrationTlsConfigOutputReference extends cdktf.ComplexObject {
+export class ApiGatewayIntegrationTlsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -173,11 +173,11 @@ export class ApiGatewayIntegrationTlsConfigOutputReference extends cdktf.Complex
   }
 
   // insecure_skip_verification - computed: false, optional: true, required: false
-  private _insecureSkipVerification?: boolean | cdktf.IResolvable; 
+  private _insecureSkipVerification?: boolean | cdktn.IResolvable; 
   public get insecureSkipVerification() {
     return this.getBooleanAttribute('insecure_skip_verification');
   }
-  public set insecureSkipVerification(value: boolean | cdktf.IResolvable) {
+  public set insecureSkipVerification(value: boolean | cdktn.IResolvable) {
     this._insecureSkipVerification = value;
   }
   public resetInsecureSkipVerification() {
@@ -192,7 +192,7 @@ export class ApiGatewayIntegrationTlsConfigOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_integration aws_api_gateway_integration}
 */
-export class ApiGatewayIntegration extends cdktf.TerraformResource {
+export class ApiGatewayIntegration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -203,14 +203,14 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiGatewayIntegration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiGatewayIntegration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiGatewayIntegration to import
   * @param importFromId The id of the existing ApiGatewayIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiGatewayIntegration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_integration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_integration", importId: importFromId, provider });
       }
 
   // ===========
@@ -270,7 +270,7 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
   // cache_key_parameters - computed: false, optional: true, required: false
   private _cacheKeyParameters?: string[]; 
   public get cacheKeyParameters() {
-    return cdktf.Fn.tolist(this.getListAttribute('cache_key_parameters'));
+    return cdktn.Fn.tolist(this.getListAttribute('cache_key_parameters'));
   }
   public set cacheKeyParameters(value: string[]) {
     this._cacheKeyParameters = value;
@@ -597,26 +597,26 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cache_key_parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(this._cacheKeyParameters),
-      cache_namespace: cdktf.stringToTerraform(this._cacheNamespace),
-      connection_id: cdktf.stringToTerraform(this._connectionId),
-      connection_type: cdktf.stringToTerraform(this._connectionType),
-      content_handling: cdktf.stringToTerraform(this._contentHandling),
-      credentials: cdktf.stringToTerraform(this._credentials),
-      http_method: cdktf.stringToTerraform(this._httpMethod),
-      id: cdktf.stringToTerraform(this._id),
-      integration_http_method: cdktf.stringToTerraform(this._integrationHttpMethod),
-      integration_target: cdktf.stringToTerraform(this._integrationTarget),
-      passthrough_behavior: cdktf.stringToTerraform(this._passthroughBehavior),
-      region: cdktf.stringToTerraform(this._region),
-      request_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._requestParameters),
-      request_templates: cdktf.hashMapper(cdktf.stringToTerraform)(this._requestTemplates),
-      resource_id: cdktf.stringToTerraform(this._resourceId),
-      response_transfer_mode: cdktf.stringToTerraform(this._responseTransferMode),
-      rest_api_id: cdktf.stringToTerraform(this._restApiId),
-      timeout_milliseconds: cdktf.numberToTerraform(this._timeoutMilliseconds),
-      type: cdktf.stringToTerraform(this._type),
-      uri: cdktf.stringToTerraform(this._uri),
+      cache_key_parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(this._cacheKeyParameters),
+      cache_namespace: cdktn.stringToTerraform(this._cacheNamespace),
+      connection_id: cdktn.stringToTerraform(this._connectionId),
+      connection_type: cdktn.stringToTerraform(this._connectionType),
+      content_handling: cdktn.stringToTerraform(this._contentHandling),
+      credentials: cdktn.stringToTerraform(this._credentials),
+      http_method: cdktn.stringToTerraform(this._httpMethod),
+      id: cdktn.stringToTerraform(this._id),
+      integration_http_method: cdktn.stringToTerraform(this._integrationHttpMethod),
+      integration_target: cdktn.stringToTerraform(this._integrationTarget),
+      passthrough_behavior: cdktn.stringToTerraform(this._passthroughBehavior),
+      region: cdktn.stringToTerraform(this._region),
+      request_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._requestParameters),
+      request_templates: cdktn.hashMapper(cdktn.stringToTerraform)(this._requestTemplates),
+      resource_id: cdktn.stringToTerraform(this._resourceId),
+      response_transfer_mode: cdktn.stringToTerraform(this._responseTransferMode),
+      rest_api_id: cdktn.stringToTerraform(this._restApiId),
+      timeout_milliseconds: cdktn.numberToTerraform(this._timeoutMilliseconds),
+      type: cdktn.stringToTerraform(this._type),
+      uri: cdktn.stringToTerraform(this._uri),
       tls_config: apiGatewayIntegrationTlsConfigToTerraform(this._tlsConfig.internalValue),
     };
   }
@@ -624,121 +624,121 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cache_key_parameters: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._cacheKeyParameters),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._cacheKeyParameters),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       cache_namespace: {
-        value: cdktf.stringToHclTerraform(this._cacheNamespace),
+        value: cdktn.stringToHclTerraform(this._cacheNamespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connection_id: {
-        value: cdktf.stringToHclTerraform(this._connectionId),
+        value: cdktn.stringToHclTerraform(this._connectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connection_type: {
-        value: cdktf.stringToHclTerraform(this._connectionType),
+        value: cdktn.stringToHclTerraform(this._connectionType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_handling: {
-        value: cdktf.stringToHclTerraform(this._contentHandling),
+        value: cdktn.stringToHclTerraform(this._contentHandling),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       credentials: {
-        value: cdktf.stringToHclTerraform(this._credentials),
+        value: cdktn.stringToHclTerraform(this._credentials),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       http_method: {
-        value: cdktf.stringToHclTerraform(this._httpMethod),
+        value: cdktn.stringToHclTerraform(this._httpMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_http_method: {
-        value: cdktf.stringToHclTerraform(this._integrationHttpMethod),
+        value: cdktn.stringToHclTerraform(this._integrationHttpMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_target: {
-        value: cdktf.stringToHclTerraform(this._integrationTarget),
+        value: cdktn.stringToHclTerraform(this._integrationTarget),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       passthrough_behavior: {
-        value: cdktf.stringToHclTerraform(this._passthroughBehavior),
+        value: cdktn.stringToHclTerraform(this._passthroughBehavior),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._requestParameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._requestParameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       request_templates: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._requestTemplates),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._requestTemplates),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       resource_id: {
-        value: cdktf.stringToHclTerraform(this._resourceId),
+        value: cdktn.stringToHclTerraform(this._resourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       response_transfer_mode: {
-        value: cdktf.stringToHclTerraform(this._responseTransferMode),
+        value: cdktn.stringToHclTerraform(this._responseTransferMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rest_api_id: {
-        value: cdktf.stringToHclTerraform(this._restApiId),
+        value: cdktn.stringToHclTerraform(this._restApiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timeout_milliseconds: {
-        value: cdktf.numberToHclTerraform(this._timeoutMilliseconds),
+        value: cdktn.numberToHclTerraform(this._timeoutMilliseconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       uri: {
-        value: cdktf.stringToHclTerraform(this._uri),
+        value: cdktn.stringToHclTerraform(this._uri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

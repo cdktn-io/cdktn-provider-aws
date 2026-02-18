@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cloudwatch_log_data_protection_policy_document#description DataAwsCloudwatchLogDataProtectionPolicyDocument#description}
   */
@@ -42,7 +42,7 @@ export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentConfig extends 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cloudwatch_log_data_protection_policy_document#statement DataAwsCloudwatchLogDataProtectionPolicyDocument#statement}
   */
-  readonly statement: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement[] | cdktf.IResolvable;
+  readonly statement: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement[] | cdktn.IResolvable;
 }
 export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifier {
   /**
@@ -55,32 +55,32 @@ export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCu
   readonly regex: string;
 }
 
-export function dataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierToTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifier | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierToTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifier | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    regex: cdktf.stringToTerraform(struct!.regex),
+    name: cdktn.stringToTerraform(struct!.name),
+    regex: cdktn.stringToTerraform(struct!.regex),
   }
 }
 
 
-export function dataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifier | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifier | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     regex: {
-      value: cdktf.stringToHclTerraform(struct!.regex),
+      value: cdktn.stringToHclTerraform(struct!.regex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,9 +91,9 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierOutputReference extends cdktf.ComplexObject {
+export class DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -101,11 +101,11 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustom
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifier | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifier | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -122,14 +122,14 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustom
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifier | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifier | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._regex = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -168,15 +168,15 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustom
   }
 }
 
-export class DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierList extends cdktf.ComplexList {
-  public internalValue? : DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifier[] | cdktf.IResolvable
+export class DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierList extends cdktn.ComplexList {
+  public internalValue? : DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifier[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -193,28 +193,28 @@ export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cloudwatch_log_data_protection_policy_document#custom_data_identifier DataAwsCloudwatchLogDataProtectionPolicyDocument#custom_data_identifier}
   */
-  readonly customDataIdentifier?: DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifier[] | cdktf.IResolvable;
+  readonly customDataIdentifier?: DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifier[] | cdktn.IResolvable;
 }
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationToTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_data_identifier: cdktf.listMapper(dataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierToTerraform, true)(struct!.customDataIdentifier),
+    custom_data_identifier: cdktn.listMapper(dataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierToTerraform, true)(struct!.customDataIdentifier),
   }
 }
 
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_data_identifier: {
-      value: cdktf.listMapperHcl(dataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierToHclTerraform, true)(struct!.customDataIdentifier),
+      value: cdktn.listMapperHcl(dataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierToHclTerraform, true)(struct!.customDataIdentifier),
       isBlock: true,
       type: "list",
       storageClassType: "DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierList",
@@ -225,14 +225,14 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -262,7 +262,7 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationOutput
   public get customDataIdentifier() {
     return this._customDataIdentifier;
   }
-  public putCustomDataIdentifier(value: DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifier[] | cdktf.IResolvable) {
+  public putCustomDataIdentifier(value: DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifier[] | cdktn.IResolvable) {
     this._customDataIdentifier.internalValue = value;
   }
   public resetCustomDataIdentifier() {
@@ -281,24 +281,24 @@ export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperat
 }
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogsToTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogsOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    log_group: cdktf.stringToTerraform(struct!.logGroup),
+    log_group: cdktn.stringToTerraform(struct!.logGroup),
   }
 }
 
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogsToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogsOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     log_group: {
-      value: cdktf.stringToHclTerraform(struct!.logGroup),
+      value: cdktn.stringToHclTerraform(struct!.logGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -309,14 +309,14 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -362,24 +362,24 @@ export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperat
 }
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseToTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehose): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delivery_stream: cdktf.stringToTerraform(struct!.deliveryStream),
+    delivery_stream: cdktn.stringToTerraform(struct!.deliveryStream),
   }
 }
 
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehose): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delivery_stream: {
-      value: cdktf.stringToHclTerraform(struct!.deliveryStream),
+      value: cdktn.stringToHclTerraform(struct!.deliveryStream),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -390,14 +390,14 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseOutputReference extends cdktf.ComplexObject {
+export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -443,24 +443,24 @@ export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperat
 }
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3ToTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3OutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
   }
 }
 
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3ToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3OutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -471,14 +471,14 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3OutputReference extends cdktf.ComplexObject {
+export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -538,8 +538,8 @@ export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperat
 }
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationToTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -551,8 +551,8 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
 
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -580,14 +580,14 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationOutputReference extends cdktf.ComplexObject {
+export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -682,8 +682,8 @@ export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperat
 }
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditToTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAudit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -693,8 +693,8 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
 
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAudit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -710,14 +710,14 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditOutputReference extends cdktf.ComplexObject {
+export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -759,8 +759,8 @@ export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperat
 }
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigToTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -769,8 +769,8 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
 
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -778,14 +778,14 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
   return attrs;
 }
 
-export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -814,8 +814,8 @@ export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperat
 }
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyToTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentify): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -825,8 +825,8 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
 
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentify): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -842,14 +842,14 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyOutputReference extends cdktf.ComplexObject {
+export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -903,8 +903,8 @@ export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperat
 }
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationToTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -915,8 +915,8 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
 
 
 export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationOutputReference | DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -938,14 +938,14 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationOutputReference extends cdktf.ComplexObject {
+export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1025,33 +1025,33 @@ export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement {
   readonly operation: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperation;
 }
 
-export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementToTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementToTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_identifiers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dataIdentifiers),
-    sid: cdktf.stringToTerraform(struct!.sid),
+    data_identifiers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dataIdentifiers),
+    sid: cdktn.stringToTerraform(struct!.sid),
     operation: dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationToTerraform(struct!.operation),
   }
 }
 
 
-export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementToHclTerraform(struct?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_identifiers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dataIdentifiers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dataIdentifiers),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     sid: {
-      value: cdktf.stringToHclTerraform(struct!.sid),
+      value: cdktn.stringToHclTerraform(struct!.sid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1068,9 +1068,9 @@ export function dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOutputReference extends cdktf.ComplexObject {
+export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1078,11 +1078,11 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1103,7 +1103,7 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1111,7 +1111,7 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOutputRefe
       this._sid = undefined;
       this._operation.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1127,7 +1127,7 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOutputRefe
   // data_identifiers - computed: false, optional: false, required: true
   private _dataIdentifiers?: string[]; 
   public get dataIdentifiers() {
-    return cdktf.Fn.tolist(this.getListAttribute('data_identifiers'));
+    return cdktn.Fn.tolist(this.getListAttribute('data_identifiers'));
   }
   public set dataIdentifiers(value: string[]) {
     this._dataIdentifiers = value;
@@ -1167,15 +1167,15 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOutputRefe
   }
 }
 
-export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList extends cdktf.ComplexList {
-  public internalValue? : DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement[] | cdktf.IResolvable
+export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList extends cdktn.ComplexList {
+  public internalValue? : DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1190,7 +1190,7 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList exten
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cloudwatch_log_data_protection_policy_document aws_cloudwatch_log_data_protection_policy_document}
 */
-export class DataAwsCloudwatchLogDataProtectionPolicyDocument extends cdktf.TerraformDataSource {
+export class DataAwsCloudwatchLogDataProtectionPolicyDocument extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -1201,14 +1201,14 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocument extends cdktf.Terr
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsCloudwatchLogDataProtectionPolicyDocument resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsCloudwatchLogDataProtectionPolicyDocument resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCloudwatchLogDataProtectionPolicyDocument to import
   * @param importFromId The id of the existing DataAwsCloudwatchLogDataProtectionPolicyDocument that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cloudwatch_log_data_protection_policy_document#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCloudwatchLogDataProtectionPolicyDocument to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_data_protection_policy_document", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_data_protection_policy_document", importId: importFromId, provider });
       }
 
   // ===========
@@ -1337,7 +1337,7 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocument extends cdktf.Terr
   public get statement() {
     return this._statement;
   }
-  public putStatement(value: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement[] | cdktf.IResolvable) {
+  public putStatement(value: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement[] | cdktn.IResolvable) {
     this._statement.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1351,37 +1351,37 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocument extends cdktf.Terr
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      version: cdktf.stringToTerraform(this._version),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      version: cdktn.stringToTerraform(this._version),
       configuration: dataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationToTerraform(this._configuration.internalValue),
-      statement: cdktf.listMapper(dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementToTerraform, true)(this._statement.internalValue),
+      statement: cdktn.listMapper(dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementToTerraform, true)(this._statement.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1393,7 +1393,7 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocument extends cdktf.Terr
         storageClassType: "DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationList",
       },
       statement: {
-        value: cdktf.listMapperHcl(dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementToHclTerraform, true)(this._statement.internalValue),
+        value: cdktn.listMapperHcl(dataAwsCloudwatchLogDataProtectionPolicyDocumentStatementToHclTerraform, true)(this._statement.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList",

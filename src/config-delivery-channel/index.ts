@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ConfigDeliveryChannelConfig extends cdktf.TerraformMetaArguments {
+export interface ConfigDeliveryChannelConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_delivery_channel#id ConfigDeliveryChannel#id}
   *
@@ -60,24 +60,24 @@ export interface ConfigDeliveryChannelSnapshotDeliveryProperties {
 }
 
 export function configDeliveryChannelSnapshotDeliveryPropertiesToTerraform(struct?: ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference | ConfigDeliveryChannelSnapshotDeliveryProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delivery_frequency: cdktf.stringToTerraform(struct!.deliveryFrequency),
+    delivery_frequency: cdktn.stringToTerraform(struct!.deliveryFrequency),
   }
 }
 
 
 export function configDeliveryChannelSnapshotDeliveryPropertiesToHclTerraform(struct?: ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference | ConfigDeliveryChannelSnapshotDeliveryProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delivery_frequency: {
-      value: cdktf.stringToHclTerraform(struct!.deliveryFrequency),
+      value: cdktn.stringToHclTerraform(struct!.deliveryFrequency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -88,14 +88,14 @@ export function configDeliveryChannelSnapshotDeliveryPropertiesToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference extends cdktf.ComplexObject {
+export class ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -140,7 +140,7 @@ export class ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_delivery_channel aws_config_delivery_channel}
 */
-export class ConfigDeliveryChannel extends cdktf.TerraformResource {
+export class ConfigDeliveryChannel extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -151,14 +151,14 @@ export class ConfigDeliveryChannel extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ConfigDeliveryChannel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ConfigDeliveryChannel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfigDeliveryChannel to import
   * @param importFromId The id of the existing ConfigDeliveryChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_delivery_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfigDeliveryChannel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_config_delivery_channel", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_config_delivery_channel", importId: importFromId, provider });
       }
 
   // ===========
@@ -333,13 +333,13 @@ export class ConfigDeliveryChannel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      s3_bucket_name: cdktf.stringToTerraform(this._s3BucketName),
-      s3_key_prefix: cdktf.stringToTerraform(this._s3KeyPrefix),
-      s3_kms_key_arn: cdktf.stringToTerraform(this._s3KmsKeyArn),
-      sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      s3_bucket_name: cdktn.stringToTerraform(this._s3BucketName),
+      s3_key_prefix: cdktn.stringToTerraform(this._s3KeyPrefix),
+      s3_kms_key_arn: cdktn.stringToTerraform(this._s3KmsKeyArn),
+      sns_topic_arn: cdktn.stringToTerraform(this._snsTopicArn),
       snapshot_delivery_properties: configDeliveryChannelSnapshotDeliveryPropertiesToTerraform(this._snapshotDeliveryProperties.internalValue),
     };
   }
@@ -347,43 +347,43 @@ export class ConfigDeliveryChannel extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_bucket_name: {
-        value: cdktf.stringToHclTerraform(this._s3BucketName),
+        value: cdktn.stringToHclTerraform(this._s3BucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_key_prefix: {
-        value: cdktf.stringToHclTerraform(this._s3KeyPrefix),
+        value: cdktn.stringToHclTerraform(this._s3KeyPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_kms_key_arn: {
-        value: cdktf.stringToHclTerraform(this._s3KmsKeyArn),
+        value: cdktn.stringToHclTerraform(this._s3KmsKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sns_topic_arn: {
-        value: cdktf.stringToHclTerraform(this._snsTopicArn),
+        value: cdktn.stringToHclTerraform(this._snsTopicArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

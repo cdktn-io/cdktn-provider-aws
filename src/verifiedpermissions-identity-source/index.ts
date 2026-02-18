@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VerifiedpermissionsIdentitySourceConfig extends cdktf.TerraformMetaArguments {
+export interface VerifiedpermissionsIdentitySourceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_identity_source#policy_store_id VerifiedpermissionsIdentitySource#policy_store_id}
   */
@@ -31,7 +31,7 @@ export interface VerifiedpermissionsIdentitySourceConfig extends cdktf.Terraform
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_identity_source#configuration VerifiedpermissionsIdentitySource#configuration}
   */
-  readonly configuration?: VerifiedpermissionsIdentitySourceConfiguration[] | cdktf.IResolvable;
+  readonly configuration?: VerifiedpermissionsIdentitySourceConfiguration[] | cdktn.IResolvable;
 }
 export interface VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration {
   /**
@@ -40,25 +40,25 @@ export interface VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolCo
   readonly groupEntityType: string;
 }
 
-export function verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationToTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationToTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_entity_type: cdktf.stringToTerraform(struct!.groupEntityType),
+    group_entity_type: cdktn.stringToTerraform(struct!.groupEntityType),
   }
 }
 
 
-export function verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group_entity_type: {
-      value: cdktf.stringToHclTerraform(struct!.groupEntityType),
+      value: cdktn.stringToHclTerraform(struct!.groupEntityType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -69,9 +69,9 @@ export function verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationOutputReference extends cdktf.ComplexObject {
+export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -79,11 +79,11 @@ export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfig
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -96,13 +96,13 @@ export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfig
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._groupEntityType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -127,15 +127,15 @@ export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfig
   }
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationList extends cdktf.ComplexList {
-  public internalValue? : VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration[] | cdktf.IResolvable
+export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationList extends cdktn.ComplexList {
+  public internalValue? : VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -160,42 +160,42 @@ export interface VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolCo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_identity_source#group_configuration VerifiedpermissionsIdentitySource#group_configuration}
   */
-  readonly groupConfiguration?: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration[] | cdktf.IResolvable;
+  readonly groupConfiguration?: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration[] | cdktn.IResolvable;
 }
 
-export function verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationToTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationToTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.clientIds),
-    user_pool_arn: cdktf.stringToTerraform(struct!.userPoolArn),
-    group_configuration: cdktf.listMapper(verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationToTerraform, true)(struct!.groupConfiguration),
+    client_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.clientIds),
+    user_pool_arn: cdktn.stringToTerraform(struct!.userPoolArn),
+    group_configuration: cdktn.listMapper(verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationToTerraform, true)(struct!.groupConfiguration),
   }
 }
 
 
-export function verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.clientIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.clientIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     user_pool_arn: {
-      value: cdktf.stringToHclTerraform(struct!.userPoolArn),
+      value: cdktn.stringToHclTerraform(struct!.userPoolArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_configuration: {
-      value: cdktf.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationToHclTerraform, true)(struct!.groupConfiguration),
+      value: cdktn.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationToHclTerraform, true)(struct!.groupConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationList",
@@ -206,9 +206,9 @@ export function verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationOutputReference extends cdktf.ComplexObject {
+export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -216,11 +216,11 @@ export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfig
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -241,7 +241,7 @@ export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfig
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -249,7 +249,7 @@ export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfig
       this._userPoolArn = undefined;
       this._groupConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -296,7 +296,7 @@ export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfig
   public get groupConfiguration() {
     return this._groupConfiguration;
   }
-  public putGroupConfiguration(value: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration[] | cdktf.IResolvable) {
+  public putGroupConfiguration(value: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration[] | cdktn.IResolvable) {
     this._groupConfiguration.internalValue = value;
   }
   public resetGroupConfiguration() {
@@ -308,15 +308,15 @@ export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfig
   }
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationList extends cdktf.ComplexList {
-  public internalValue? : VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration[] | cdktf.IResolvable
+export class VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationList extends cdktn.ComplexList {
+  public internalValue? : VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -338,32 +338,32 @@ export interface VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConf
   readonly groupEntityType: string;
 }
 
-export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationToTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationToTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_claim: cdktf.stringToTerraform(struct!.groupClaim),
-    group_entity_type: cdktf.stringToTerraform(struct!.groupEntityType),
+    group_claim: cdktn.stringToTerraform(struct!.groupClaim),
+    group_entity_type: cdktn.stringToTerraform(struct!.groupEntityType),
   }
 }
 
 
-export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group_claim: {
-      value: cdktf.stringToHclTerraform(struct!.groupClaim),
+      value: cdktn.stringToHclTerraform(struct!.groupClaim),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_entity_type: {
-      value: cdktf.stringToHclTerraform(struct!.groupEntityType),
+      value: cdktn.stringToHclTerraform(struct!.groupEntityType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -374,9 +374,9 @@ export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationOutputReference extends cdktf.ComplexObject {
+export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -384,11 +384,11 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -405,14 +405,14 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._groupClaim = undefined;
       this._groupEntityType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -451,15 +451,15 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
   }
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationList extends cdktf.ComplexList {
-  public internalValue? : VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration[] | cdktf.IResolvable
+export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationList extends cdktn.ComplexList {
+  public internalValue? : VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -481,32 +481,32 @@ export interface VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConf
   readonly principalIdClaim?: string;
 }
 
-export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyToTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyToTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audiences: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.audiences),
-    principal_id_claim: cdktf.stringToTerraform(struct!.principalIdClaim),
+    audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.audiences),
+    principal_id_claim: cdktn.stringToTerraform(struct!.principalIdClaim),
   }
 }
 
 
-export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audiences: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.audiences),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.audiences),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     principal_id_claim: {
-      value: cdktf.stringToHclTerraform(struct!.principalIdClaim),
+      value: cdktn.stringToHclTerraform(struct!.principalIdClaim),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -517,9 +517,9 @@ export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyOutputReference extends cdktf.ComplexObject {
+export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -527,11 +527,11 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -548,14 +548,14 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._audiences = undefined;
       this._principalIdClaim = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -600,15 +600,15 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
   }
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyList extends cdktf.ComplexList {
-  public internalValue? : VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly[] | cdktf.IResolvable
+export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyList extends cdktn.ComplexList {
+  public internalValue? : VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -630,32 +630,32 @@ export interface VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConf
   readonly principalIdClaim?: string;
 }
 
-export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyToTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyToTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.clientIds),
-    principal_id_claim: cdktf.stringToTerraform(struct!.principalIdClaim),
+    client_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.clientIds),
+    principal_id_claim: cdktn.stringToTerraform(struct!.principalIdClaim),
   }
 }
 
 
-export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.clientIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.clientIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     principal_id_claim: {
-      value: cdktf.stringToHclTerraform(struct!.principalIdClaim),
+      value: cdktn.stringToHclTerraform(struct!.principalIdClaim),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -666,9 +666,9 @@ export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyOutputReference extends cdktf.ComplexObject {
+export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -676,11 +676,11 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -697,14 +697,14 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._clientIds = undefined;
       this._principalIdClaim = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -749,15 +749,15 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
   }
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyList extends cdktf.ComplexList {
-  public internalValue? : VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly[] | cdktf.IResolvable
+export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyList extends cdktn.ComplexList {
+  public internalValue? : VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -774,41 +774,41 @@ export interface VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConf
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_identity_source#access_token_only VerifiedpermissionsIdentitySource#access_token_only}
   */
-  readonly accessTokenOnly?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly[] | cdktf.IResolvable;
+  readonly accessTokenOnly?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly[] | cdktn.IResolvable;
   /**
   * identity_token_only block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_identity_source#identity_token_only VerifiedpermissionsIdentitySource#identity_token_only}
   */
-  readonly identityTokenOnly?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly[] | cdktf.IResolvable;
+  readonly identityTokenOnly?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly[] | cdktn.IResolvable;
 }
 
-export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionToTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionToTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token_only: cdktf.listMapper(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyToTerraform, true)(struct!.accessTokenOnly),
-    identity_token_only: cdktf.listMapper(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyToTerraform, true)(struct!.identityTokenOnly),
+    access_token_only: cdktn.listMapper(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyToTerraform, true)(struct!.accessTokenOnly),
+    identity_token_only: cdktn.listMapper(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyToTerraform, true)(struct!.identityTokenOnly),
   }
 }
 
 
-export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_token_only: {
-      value: cdktf.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyToHclTerraform, true)(struct!.accessTokenOnly),
+      value: cdktn.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyToHclTerraform, true)(struct!.accessTokenOnly),
       isBlock: true,
       type: "list",
       storageClassType: "VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyList",
     },
     identity_token_only: {
-      value: cdktf.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyToHclTerraform, true)(struct!.identityTokenOnly),
+      value: cdktn.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyToHclTerraform, true)(struct!.identityTokenOnly),
       isBlock: true,
       type: "list",
       storageClassType: "VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyList",
@@ -819,9 +819,9 @@ export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionOutputReference extends cdktf.ComplexObject {
+export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -829,11 +829,11 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -850,14 +850,14 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accessTokenOnly.internalValue = undefined;
       this._identityTokenOnly.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -874,7 +874,7 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
   public get accessTokenOnly() {
     return this._accessTokenOnly;
   }
-  public putAccessTokenOnly(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly[] | cdktf.IResolvable) {
+  public putAccessTokenOnly(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly[] | cdktn.IResolvable) {
     this._accessTokenOnly.internalValue = value;
   }
   public resetAccessTokenOnly() {
@@ -890,7 +890,7 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
   public get identityTokenOnly() {
     return this._identityTokenOnly;
   }
-  public putIdentityTokenOnly(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly[] | cdktf.IResolvable) {
+  public putIdentityTokenOnly(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly[] | cdktn.IResolvable) {
     this._identityTokenOnly.internalValue = value;
   }
   public resetIdentityTokenOnly() {
@@ -902,15 +902,15 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
   }
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionList extends cdktf.ComplexList {
-  public internalValue? : VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection[] | cdktf.IResolvable
+export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionList extends cdktn.ComplexList {
+  public internalValue? : VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -935,55 +935,55 @@ export interface VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConf
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_identity_source#group_configuration VerifiedpermissionsIdentitySource#group_configuration}
   */
-  readonly groupConfiguration?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration[] | cdktf.IResolvable;
+  readonly groupConfiguration?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration[] | cdktn.IResolvable;
   /**
   * token_selection block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_identity_source#token_selection VerifiedpermissionsIdentitySource#token_selection}
   */
-  readonly tokenSelection?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection[] | cdktf.IResolvable;
+  readonly tokenSelection?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection[] | cdktn.IResolvable;
 }
 
-export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationToTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationToTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entity_id_prefix: cdktf.stringToTerraform(struct!.entityIdPrefix),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
-    group_configuration: cdktf.listMapper(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationToTerraform, true)(struct!.groupConfiguration),
-    token_selection: cdktf.listMapper(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionToTerraform, true)(struct!.tokenSelection),
+    entity_id_prefix: cdktn.stringToTerraform(struct!.entityIdPrefix),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
+    group_configuration: cdktn.listMapper(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationToTerraform, true)(struct!.groupConfiguration),
+    token_selection: cdktn.listMapper(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionToTerraform, true)(struct!.tokenSelection),
   }
 }
 
 
-export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entity_id_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.entityIdPrefix),
+      value: cdktn.stringToHclTerraform(struct!.entityIdPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_configuration: {
-      value: cdktf.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationToHclTerraform, true)(struct!.groupConfiguration),
+      value: cdktn.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationToHclTerraform, true)(struct!.groupConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationList",
     },
     token_selection: {
-      value: cdktf.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionToHclTerraform, true)(struct!.tokenSelection),
+      value: cdktn.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionToHclTerraform, true)(struct!.tokenSelection),
       isBlock: true,
       type: "list",
       storageClassType: "VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionList",
@@ -994,9 +994,9 @@ export function verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationOutputReference extends cdktf.ComplexObject {
+export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1004,11 +1004,11 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1033,7 +1033,7 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1042,7 +1042,7 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
       this._groupConfiguration.internalValue = undefined;
       this._tokenSelection.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1090,7 +1090,7 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
   public get groupConfiguration() {
     return this._groupConfiguration;
   }
-  public putGroupConfiguration(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration[] | cdktf.IResolvable) {
+  public putGroupConfiguration(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration[] | cdktn.IResolvable) {
     this._groupConfiguration.internalValue = value;
   }
   public resetGroupConfiguration() {
@@ -1106,7 +1106,7 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
   public get tokenSelection() {
     return this._tokenSelection;
   }
-  public putTokenSelection(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection[] | cdktf.IResolvable) {
+  public putTokenSelection(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection[] | cdktn.IResolvable) {
     this._tokenSelection.internalValue = value;
   }
   public resetTokenSelection() {
@@ -1118,15 +1118,15 @@ export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigur
   }
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationList extends cdktf.ComplexList {
-  public internalValue? : VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration[] | cdktf.IResolvable
+export class VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationList extends cdktn.ComplexList {
+  public internalValue? : VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1143,41 +1143,41 @@ export interface VerifiedpermissionsIdentitySourceConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_identity_source#cognito_user_pool_configuration VerifiedpermissionsIdentitySource#cognito_user_pool_configuration}
   */
-  readonly cognitoUserPoolConfiguration?: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration[] | cdktf.IResolvable;
+  readonly cognitoUserPoolConfiguration?: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration[] | cdktn.IResolvable;
   /**
   * open_id_connect_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_identity_source#open_id_connect_configuration VerifiedpermissionsIdentitySource#open_id_connect_configuration}
   */
-  readonly openIdConnectConfiguration?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration[] | cdktf.IResolvable;
+  readonly openIdConnectConfiguration?: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration[] | cdktn.IResolvable;
 }
 
-export function verifiedpermissionsIdentitySourceConfigurationToTerraform(struct?: VerifiedpermissionsIdentitySourceConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationToTerraform(struct?: VerifiedpermissionsIdentitySourceConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cognito_user_pool_configuration: cdktf.listMapper(verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationToTerraform, true)(struct!.cognitoUserPoolConfiguration),
-    open_id_connect_configuration: cdktf.listMapper(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationToTerraform, true)(struct!.openIdConnectConfiguration),
+    cognito_user_pool_configuration: cdktn.listMapper(verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationToTerraform, true)(struct!.cognitoUserPoolConfiguration),
+    open_id_connect_configuration: cdktn.listMapper(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationToTerraform, true)(struct!.openIdConnectConfiguration),
   }
 }
 
 
-export function verifiedpermissionsIdentitySourceConfigurationToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsIdentitySourceConfigurationToHclTerraform(struct?: VerifiedpermissionsIdentitySourceConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cognito_user_pool_configuration: {
-      value: cdktf.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationToHclTerraform, true)(struct!.cognitoUserPoolConfiguration),
+      value: cdktn.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationToHclTerraform, true)(struct!.cognitoUserPoolConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationList",
     },
     open_id_connect_configuration: {
-      value: cdktf.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationToHclTerraform, true)(struct!.openIdConnectConfiguration),
+      value: cdktn.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationToHclTerraform, true)(struct!.openIdConnectConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationList",
@@ -1188,9 +1188,9 @@ export function verifiedpermissionsIdentitySourceConfigurationToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationOutputReference extends cdktf.ComplexObject {
+export class VerifiedpermissionsIdentitySourceConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1198,11 +1198,11 @@ export class VerifiedpermissionsIdentitySourceConfigurationOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedpermissionsIdentitySourceConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedpermissionsIdentitySourceConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1219,14 +1219,14 @@ export class VerifiedpermissionsIdentitySourceConfigurationOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedpermissionsIdentitySourceConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedpermissionsIdentitySourceConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cognitoUserPoolConfiguration.internalValue = undefined;
       this._openIdConnectConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1243,7 +1243,7 @@ export class VerifiedpermissionsIdentitySourceConfigurationOutputReference exten
   public get cognitoUserPoolConfiguration() {
     return this._cognitoUserPoolConfiguration;
   }
-  public putCognitoUserPoolConfiguration(value: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration[] | cdktf.IResolvable) {
+  public putCognitoUserPoolConfiguration(value: VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration[] | cdktn.IResolvable) {
     this._cognitoUserPoolConfiguration.internalValue = value;
   }
   public resetCognitoUserPoolConfiguration() {
@@ -1259,7 +1259,7 @@ export class VerifiedpermissionsIdentitySourceConfigurationOutputReference exten
   public get openIdConnectConfiguration() {
     return this._openIdConnectConfiguration;
   }
-  public putOpenIdConnectConfiguration(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration[] | cdktf.IResolvable) {
+  public putOpenIdConnectConfiguration(value: VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration[] | cdktn.IResolvable) {
     this._openIdConnectConfiguration.internalValue = value;
   }
   public resetOpenIdConnectConfiguration() {
@@ -1271,15 +1271,15 @@ export class VerifiedpermissionsIdentitySourceConfigurationOutputReference exten
   }
 }
 
-export class VerifiedpermissionsIdentitySourceConfigurationList extends cdktf.ComplexList {
-  public internalValue? : VerifiedpermissionsIdentitySourceConfiguration[] | cdktf.IResolvable
+export class VerifiedpermissionsIdentitySourceConfigurationList extends cdktn.ComplexList {
+  public internalValue? : VerifiedpermissionsIdentitySourceConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1294,7 +1294,7 @@ export class VerifiedpermissionsIdentitySourceConfigurationList extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_identity_source aws_verifiedpermissions_identity_source}
 */
-export class VerifiedpermissionsIdentitySource extends cdktf.TerraformResource {
+export class VerifiedpermissionsIdentitySource extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1305,14 +1305,14 @@ export class VerifiedpermissionsIdentitySource extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VerifiedpermissionsIdentitySource resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VerifiedpermissionsIdentitySource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedpermissionsIdentitySource to import
   * @param importFromId The id of the existing VerifiedpermissionsIdentitySource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_identity_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedpermissionsIdentitySource to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedpermissions_identity_source", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedpermissions_identity_source", importId: importFromId, provider });
       }
 
   // ===========
@@ -1407,7 +1407,7 @@ export class VerifiedpermissionsIdentitySource extends cdktf.TerraformResource {
   public get configuration() {
     return this._configuration;
   }
-  public putConfiguration(value: VerifiedpermissionsIdentitySourceConfiguration[] | cdktf.IResolvable) {
+  public putConfiguration(value: VerifiedpermissionsIdentitySourceConfiguration[] | cdktn.IResolvable) {
     this._configuration.internalValue = value;
   }
   public resetConfiguration() {
@@ -1424,35 +1424,35 @@ export class VerifiedpermissionsIdentitySource extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy_store_id: cdktf.stringToTerraform(this._policyStoreId),
-      principal_entity_type: cdktf.stringToTerraform(this._principalEntityType),
-      region: cdktf.stringToTerraform(this._region),
-      configuration: cdktf.listMapper(verifiedpermissionsIdentitySourceConfigurationToTerraform, true)(this._configuration.internalValue),
+      policy_store_id: cdktn.stringToTerraform(this._policyStoreId),
+      principal_entity_type: cdktn.stringToTerraform(this._principalEntityType),
+      region: cdktn.stringToTerraform(this._region),
+      configuration: cdktn.listMapper(verifiedpermissionsIdentitySourceConfigurationToTerraform, true)(this._configuration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       policy_store_id: {
-        value: cdktf.stringToHclTerraform(this._policyStoreId),
+        value: cdktn.stringToHclTerraform(this._policyStoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal_entity_type: {
-        value: cdktf.stringToHclTerraform(this._principalEntityType),
+        value: cdktn.stringToHclTerraform(this._principalEntityType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       configuration: {
-        value: cdktf.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationToHclTerraform, true)(this._configuration.internalValue),
+        value: cdktn.listMapperHcl(verifiedpermissionsIdentitySourceConfigurationToHclTerraform, true)(this._configuration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VerifiedpermissionsIdentitySourceConfigurationList",

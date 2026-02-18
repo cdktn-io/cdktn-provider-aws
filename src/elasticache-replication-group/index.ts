@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaArguments {
+export interface ElasticacheReplicationGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_replication_group#apply_immediately ElasticacheReplicationGroup#apply_immediately}
   */
-  readonly applyImmediately?: boolean | cdktf.IResolvable;
+  readonly applyImmediately?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_replication_group#at_rest_encryption_enabled ElasticacheReplicationGroup#at_rest_encryption_enabled}
   */
@@ -35,7 +35,7 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_replication_group#automatic_failover_enabled ElasticacheReplicationGroup#automatic_failover_enabled}
   */
-  readonly automaticFailoverEnabled?: boolean | cdktf.IResolvable;
+  readonly automaticFailoverEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_replication_group#cluster_mode ElasticacheReplicationGroup#cluster_mode}
   */
@@ -43,7 +43,7 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_replication_group#data_tiering_enabled ElasticacheReplicationGroup#data_tiering_enabled}
   */
-  readonly dataTieringEnabled?: boolean | cdktf.IResolvable;
+  readonly dataTieringEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_replication_group#description ElasticacheReplicationGroup#description}
   */
@@ -86,7 +86,7 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_replication_group#multi_az_enabled ElasticacheReplicationGroup#multi_az_enabled}
   */
-  readonly multiAzEnabled?: boolean | cdktf.IResolvable;
+  readonly multiAzEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_replication_group#network_type ElasticacheReplicationGroup#network_type}
   */
@@ -172,7 +172,7 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_replication_group#transit_encryption_enabled ElasticacheReplicationGroup#transit_encryption_enabled}
   */
-  readonly transitEncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly transitEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_replication_group#transit_encryption_mode ElasticacheReplicationGroup#transit_encryption_mode}
   */
@@ -186,13 +186,13 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_replication_group#log_delivery_configuration ElasticacheReplicationGroup#log_delivery_configuration}
   */
-  readonly logDeliveryConfiguration?: ElasticacheReplicationGroupLogDeliveryConfiguration[] | cdktf.IResolvable;
+  readonly logDeliveryConfiguration?: ElasticacheReplicationGroupLogDeliveryConfiguration[] | cdktn.IResolvable;
   /**
   * node_group_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_replication_group#node_group_configuration ElasticacheReplicationGroup#node_group_configuration}
   */
-  readonly nodeGroupConfiguration?: ElasticacheReplicationGroupNodeGroupConfiguration[] | cdktf.IResolvable;
+  readonly nodeGroupConfiguration?: ElasticacheReplicationGroupNodeGroupConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -219,46 +219,46 @@ export interface ElasticacheReplicationGroupLogDeliveryConfiguration {
   readonly logType: string;
 }
 
-export function elasticacheReplicationGroupLogDeliveryConfigurationToTerraform(struct?: ElasticacheReplicationGroupLogDeliveryConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheReplicationGroupLogDeliveryConfigurationToTerraform(struct?: ElasticacheReplicationGroupLogDeliveryConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
-    destination_type: cdktf.stringToTerraform(struct!.destinationType),
-    log_format: cdktf.stringToTerraform(struct!.logFormat),
-    log_type: cdktf.stringToTerraform(struct!.logType),
+    destination: cdktn.stringToTerraform(struct!.destination),
+    destination_type: cdktn.stringToTerraform(struct!.destinationType),
+    log_format: cdktn.stringToTerraform(struct!.logFormat),
+    log_type: cdktn.stringToTerraform(struct!.logType),
   }
 }
 
 
-export function elasticacheReplicationGroupLogDeliveryConfigurationToHclTerraform(struct?: ElasticacheReplicationGroupLogDeliveryConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheReplicationGroupLogDeliveryConfigurationToHclTerraform(struct?: ElasticacheReplicationGroupLogDeliveryConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination_type: {
-      value: cdktf.stringToHclTerraform(struct!.destinationType),
+      value: cdktn.stringToHclTerraform(struct!.destinationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_format: {
-      value: cdktf.stringToHclTerraform(struct!.logFormat),
+      value: cdktn.stringToHclTerraform(struct!.logFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_type: {
-      value: cdktf.stringToHclTerraform(struct!.logType),
+      value: cdktn.stringToHclTerraform(struct!.logType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -269,9 +269,9 @@ export function elasticacheReplicationGroupLogDeliveryConfigurationToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference extends cdktf.ComplexObject {
+export class ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -279,11 +279,11 @@ export class ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ElasticacheReplicationGroupLogDeliveryConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ElasticacheReplicationGroupLogDeliveryConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -308,7 +308,7 @@ export class ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElasticacheReplicationGroupLogDeliveryConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElasticacheReplicationGroupLogDeliveryConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -317,7 +317,7 @@ export class ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference 
       this._logFormat = undefined;
       this._logType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -384,15 +384,15 @@ export class ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference 
   }
 }
 
-export class ElasticacheReplicationGroupLogDeliveryConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ElasticacheReplicationGroupLogDeliveryConfiguration[] | cdktf.IResolvable
+export class ElasticacheReplicationGroupLogDeliveryConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ElasticacheReplicationGroupLogDeliveryConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -434,67 +434,67 @@ export interface ElasticacheReplicationGroupNodeGroupConfiguration {
   readonly slots?: string;
 }
 
-export function elasticacheReplicationGroupNodeGroupConfigurationToTerraform(struct?: ElasticacheReplicationGroupNodeGroupConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheReplicationGroupNodeGroupConfigurationToTerraform(struct?: ElasticacheReplicationGroupNodeGroupConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    node_group_id: cdktf.stringToTerraform(struct!.nodeGroupId),
-    primary_availability_zone: cdktf.stringToTerraform(struct!.primaryAvailabilityZone),
-    primary_outpost_arn: cdktf.stringToTerraform(struct!.primaryOutpostArn),
-    replica_availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.replicaAvailabilityZones),
-    replica_count: cdktf.numberToTerraform(struct!.replicaCount),
-    replica_outpost_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.replicaOutpostArns),
-    slots: cdktf.stringToTerraform(struct!.slots),
+    node_group_id: cdktn.stringToTerraform(struct!.nodeGroupId),
+    primary_availability_zone: cdktn.stringToTerraform(struct!.primaryAvailabilityZone),
+    primary_outpost_arn: cdktn.stringToTerraform(struct!.primaryOutpostArn),
+    replica_availability_zones: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.replicaAvailabilityZones),
+    replica_count: cdktn.numberToTerraform(struct!.replicaCount),
+    replica_outpost_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.replicaOutpostArns),
+    slots: cdktn.stringToTerraform(struct!.slots),
   }
 }
 
 
-export function elasticacheReplicationGroupNodeGroupConfigurationToHclTerraform(struct?: ElasticacheReplicationGroupNodeGroupConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheReplicationGroupNodeGroupConfigurationToHclTerraform(struct?: ElasticacheReplicationGroupNodeGroupConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     node_group_id: {
-      value: cdktf.stringToHclTerraform(struct!.nodeGroupId),
+      value: cdktn.stringToHclTerraform(struct!.nodeGroupId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_availability_zone: {
-      value: cdktf.stringToHclTerraform(struct!.primaryAvailabilityZone),
+      value: cdktn.stringToHclTerraform(struct!.primaryAvailabilityZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_outpost_arn: {
-      value: cdktf.stringToHclTerraform(struct!.primaryOutpostArn),
+      value: cdktn.stringToHclTerraform(struct!.primaryOutpostArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replica_availability_zones: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.replicaAvailabilityZones),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.replicaAvailabilityZones),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     replica_count: {
-      value: cdktf.numberToHclTerraform(struct!.replicaCount),
+      value: cdktn.numberToHclTerraform(struct!.replicaCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     replica_outpost_arns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.replicaOutpostArns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.replicaOutpostArns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     slots: {
-      value: cdktf.stringToHclTerraform(struct!.slots),
+      value: cdktn.stringToHclTerraform(struct!.slots),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -505,9 +505,9 @@ export function elasticacheReplicationGroupNodeGroupConfigurationToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticacheReplicationGroupNodeGroupConfigurationOutputReference extends cdktf.ComplexObject {
+export class ElasticacheReplicationGroupNodeGroupConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -515,11 +515,11 @@ export class ElasticacheReplicationGroupNodeGroupConfigurationOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ElasticacheReplicationGroupNodeGroupConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ElasticacheReplicationGroupNodeGroupConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -556,7 +556,7 @@ export class ElasticacheReplicationGroupNodeGroupConfigurationOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElasticacheReplicationGroupNodeGroupConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElasticacheReplicationGroupNodeGroupConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -568,7 +568,7 @@ export class ElasticacheReplicationGroupNodeGroupConfigurationOutputReference ex
       this._replicaOutpostArns = undefined;
       this._slots = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -698,15 +698,15 @@ export class ElasticacheReplicationGroupNodeGroupConfigurationOutputReference ex
   }
 }
 
-export class ElasticacheReplicationGroupNodeGroupConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ElasticacheReplicationGroupNodeGroupConfiguration[] | cdktf.IResolvable
+export class ElasticacheReplicationGroupNodeGroupConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ElasticacheReplicationGroupNodeGroupConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -732,39 +732,39 @@ export interface ElasticacheReplicationGroupTimeouts {
   readonly update?: string;
 }
 
-export function elasticacheReplicationGroupTimeoutsToTerraform(struct?: ElasticacheReplicationGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheReplicationGroupTimeoutsToTerraform(struct?: ElasticacheReplicationGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function elasticacheReplicationGroupTimeoutsToHclTerraform(struct?: ElasticacheReplicationGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheReplicationGroupTimeoutsToHclTerraform(struct?: ElasticacheReplicationGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -775,19 +775,19 @@ export function elasticacheReplicationGroupTimeoutsToHclTerraform(struct?: Elast
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticacheReplicationGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ElasticacheReplicationGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ElasticacheReplicationGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ElasticacheReplicationGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -808,7 +808,7 @@ export class ElasticacheReplicationGroupTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElasticacheReplicationGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElasticacheReplicationGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -816,7 +816,7 @@ export class ElasticacheReplicationGroupTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -881,7 +881,7 @@ export class ElasticacheReplicationGroupTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_replication_group aws_elasticache_replication_group}
 */
-export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
+export class ElasticacheReplicationGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -892,14 +892,14 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ElasticacheReplicationGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ElasticacheReplicationGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElasticacheReplicationGroup to import
   * @param importFromId The id of the existing ElasticacheReplicationGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_replication_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElasticacheReplicationGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticache_replication_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticache_replication_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -980,11 +980,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   // ==========
 
   // apply_immediately - computed: true, optional: true, required: false
-  private _applyImmediately?: boolean | cdktf.IResolvable; 
+  private _applyImmediately?: boolean | cdktn.IResolvable; 
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean | cdktf.IResolvable) {
+  public set applyImmediately(value: boolean | cdktn.IResolvable) {
     this._applyImmediately = value;
   }
   public resetApplyImmediately() {
@@ -1065,11 +1065,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   }
 
   // automatic_failover_enabled - computed: false, optional: true, required: false
-  private _automaticFailoverEnabled?: boolean | cdktf.IResolvable; 
+  private _automaticFailoverEnabled?: boolean | cdktn.IResolvable; 
   public get automaticFailoverEnabled() {
     return this.getBooleanAttribute('automatic_failover_enabled');
   }
-  public set automaticFailoverEnabled(value: boolean | cdktf.IResolvable) {
+  public set automaticFailoverEnabled(value: boolean | cdktn.IResolvable) {
     this._automaticFailoverEnabled = value;
   }
   public resetAutomaticFailoverEnabled() {
@@ -1107,11 +1107,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   }
 
   // data_tiering_enabled - computed: true, optional: true, required: false
-  private _dataTieringEnabled?: boolean | cdktf.IResolvable; 
+  private _dataTieringEnabled?: boolean | cdktn.IResolvable; 
   public get dataTieringEnabled() {
     return this.getBooleanAttribute('data_tiering_enabled');
   }
-  public set dataTieringEnabled(value: boolean | cdktf.IResolvable) {
+  public set dataTieringEnabled(value: boolean | cdktn.IResolvable) {
     this._dataTieringEnabled = value;
   }
   public resetDataTieringEnabled() {
@@ -1270,15 +1270,15 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
 
   // member_clusters - computed: true, optional: false, required: false
   public get memberClusters() {
-    return cdktf.Fn.tolist(this.getListAttribute('member_clusters'));
+    return cdktn.Fn.tolist(this.getListAttribute('member_clusters'));
   }
 
   // multi_az_enabled - computed: false, optional: true, required: false
-  private _multiAzEnabled?: boolean | cdktf.IResolvable; 
+  private _multiAzEnabled?: boolean | cdktn.IResolvable; 
   public get multiAzEnabled() {
     return this.getBooleanAttribute('multi_az_enabled');
   }
-  public set multiAzEnabled(value: boolean | cdktf.IResolvable) {
+  public set multiAzEnabled(value: boolean | cdktn.IResolvable) {
     this._multiAzEnabled = value;
   }
   public resetMultiAzEnabled() {
@@ -1475,7 +1475,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -1491,7 +1491,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   // security_group_names - computed: true, optional: true, required: false
   private _securityGroupNames?: string[]; 
   public get securityGroupNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_names'));
   }
   public set securityGroupNames(value: string[]) {
     this._securityGroupNames = value;
@@ -1507,7 +1507,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   // snapshot_arns - computed: false, optional: true, required: false
   private _snapshotArns?: string[]; 
   public get snapshotArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('snapshot_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('snapshot_arns'));
   }
   public set snapshotArns(value: string[]) {
     this._snapshotArns = value;
@@ -1617,11 +1617,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   }
 
   // transit_encryption_enabled - computed: true, optional: true, required: false
-  private _transitEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _transitEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get transitEncryptionEnabled() {
     return this.getBooleanAttribute('transit_encryption_enabled');
   }
-  public set transitEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set transitEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._transitEncryptionEnabled = value;
   }
   public resetTransitEncryptionEnabled() {
@@ -1651,7 +1651,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   // user_group_ids - computed: false, optional: true, required: false
   private _userGroupIds?: string[]; 
   public get userGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('user_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('user_group_ids'));
   }
   public set userGroupIds(value: string[]) {
     this._userGroupIds = value;
@@ -1669,7 +1669,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   public get logDeliveryConfiguration() {
     return this._logDeliveryConfiguration;
   }
-  public putLogDeliveryConfiguration(value: ElasticacheReplicationGroupLogDeliveryConfiguration[] | cdktf.IResolvable) {
+  public putLogDeliveryConfiguration(value: ElasticacheReplicationGroupLogDeliveryConfiguration[] | cdktn.IResolvable) {
     this._logDeliveryConfiguration.internalValue = value;
   }
   public resetLogDeliveryConfiguration() {
@@ -1685,7 +1685,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   public get nodeGroupConfiguration() {
     return this._nodeGroupConfiguration;
   }
-  public putNodeGroupConfiguration(value: ElasticacheReplicationGroupNodeGroupConfiguration[] | cdktf.IResolvable) {
+  public putNodeGroupConfiguration(value: ElasticacheReplicationGroupNodeGroupConfiguration[] | cdktn.IResolvable) {
     this._nodeGroupConfiguration.internalValue = value;
   }
   public resetNodeGroupConfiguration() {
@@ -1718,49 +1718,49 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
-      at_rest_encryption_enabled: cdktf.stringToTerraform(this._atRestEncryptionEnabled),
-      auth_token: cdktf.stringToTerraform(this._authToken),
-      auth_token_update_strategy: cdktf.stringToTerraform(this._authTokenUpdateStrategy),
-      auto_minor_version_upgrade: cdktf.stringToTerraform(this._autoMinorVersionUpgrade),
-      automatic_failover_enabled: cdktf.booleanToTerraform(this._automaticFailoverEnabled),
-      cluster_mode: cdktf.stringToTerraform(this._clusterMode),
-      data_tiering_enabled: cdktf.booleanToTerraform(this._dataTieringEnabled),
-      description: cdktf.stringToTerraform(this._description),
-      engine: cdktf.stringToTerraform(this._engine),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
-      global_replication_group_id: cdktf.stringToTerraform(this._globalReplicationGroupId),
-      id: cdktf.stringToTerraform(this._id),
-      ip_discovery: cdktf.stringToTerraform(this._ipDiscovery),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      maintenance_window: cdktf.stringToTerraform(this._maintenanceWindow),
-      multi_az_enabled: cdktf.booleanToTerraform(this._multiAzEnabled),
-      network_type: cdktf.stringToTerraform(this._networkType),
-      node_type: cdktf.stringToTerraform(this._nodeType),
-      notification_topic_arn: cdktf.stringToTerraform(this._notificationTopicArn),
-      num_cache_clusters: cdktf.numberToTerraform(this._numCacheClusters),
-      num_node_groups: cdktf.numberToTerraform(this._numNodeGroups),
-      parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
-      port: cdktf.numberToTerraform(this._port),
-      preferred_cache_cluster_azs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredCacheClusterAzs),
-      region: cdktf.stringToTerraform(this._region),
-      replicas_per_node_group: cdktf.numberToTerraform(this._replicasPerNodeGroup),
-      replication_group_id: cdktf.stringToTerraform(this._replicationGroupId),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
-      security_group_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupNames),
-      snapshot_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._snapshotArns),
-      snapshot_name: cdktf.stringToTerraform(this._snapshotName),
-      snapshot_retention_limit: cdktf.numberToTerraform(this._snapshotRetentionLimit),
-      snapshot_window: cdktf.stringToTerraform(this._snapshotWindow),
-      subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      transit_encryption_enabled: cdktf.booleanToTerraform(this._transitEncryptionEnabled),
-      transit_encryption_mode: cdktf.stringToTerraform(this._transitEncryptionMode),
-      user_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userGroupIds),
-      log_delivery_configuration: cdktf.listMapper(elasticacheReplicationGroupLogDeliveryConfigurationToTerraform, true)(this._logDeliveryConfiguration.internalValue),
-      node_group_configuration: cdktf.listMapper(elasticacheReplicationGroupNodeGroupConfigurationToTerraform, true)(this._nodeGroupConfiguration.internalValue),
+      apply_immediately: cdktn.booleanToTerraform(this._applyImmediately),
+      at_rest_encryption_enabled: cdktn.stringToTerraform(this._atRestEncryptionEnabled),
+      auth_token: cdktn.stringToTerraform(this._authToken),
+      auth_token_update_strategy: cdktn.stringToTerraform(this._authTokenUpdateStrategy),
+      auto_minor_version_upgrade: cdktn.stringToTerraform(this._autoMinorVersionUpgrade),
+      automatic_failover_enabled: cdktn.booleanToTerraform(this._automaticFailoverEnabled),
+      cluster_mode: cdktn.stringToTerraform(this._clusterMode),
+      data_tiering_enabled: cdktn.booleanToTerraform(this._dataTieringEnabled),
+      description: cdktn.stringToTerraform(this._description),
+      engine: cdktn.stringToTerraform(this._engine),
+      engine_version: cdktn.stringToTerraform(this._engineVersion),
+      final_snapshot_identifier: cdktn.stringToTerraform(this._finalSnapshotIdentifier),
+      global_replication_group_id: cdktn.stringToTerraform(this._globalReplicationGroupId),
+      id: cdktn.stringToTerraform(this._id),
+      ip_discovery: cdktn.stringToTerraform(this._ipDiscovery),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      maintenance_window: cdktn.stringToTerraform(this._maintenanceWindow),
+      multi_az_enabled: cdktn.booleanToTerraform(this._multiAzEnabled),
+      network_type: cdktn.stringToTerraform(this._networkType),
+      node_type: cdktn.stringToTerraform(this._nodeType),
+      notification_topic_arn: cdktn.stringToTerraform(this._notificationTopicArn),
+      num_cache_clusters: cdktn.numberToTerraform(this._numCacheClusters),
+      num_node_groups: cdktn.numberToTerraform(this._numNodeGroups),
+      parameter_group_name: cdktn.stringToTerraform(this._parameterGroupName),
+      port: cdktn.numberToTerraform(this._port),
+      preferred_cache_cluster_azs: cdktn.listMapper(cdktn.stringToTerraform, false)(this._preferredCacheClusterAzs),
+      region: cdktn.stringToTerraform(this._region),
+      replicas_per_node_group: cdktn.numberToTerraform(this._replicasPerNodeGroup),
+      replication_group_id: cdktn.stringToTerraform(this._replicationGroupId),
+      security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupIds),
+      security_group_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupNames),
+      snapshot_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._snapshotArns),
+      snapshot_name: cdktn.stringToTerraform(this._snapshotName),
+      snapshot_retention_limit: cdktn.numberToTerraform(this._snapshotRetentionLimit),
+      snapshot_window: cdktn.stringToTerraform(this._snapshotWindow),
+      subnet_group_name: cdktn.stringToTerraform(this._subnetGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      transit_encryption_enabled: cdktn.booleanToTerraform(this._transitEncryptionEnabled),
+      transit_encryption_mode: cdktn.stringToTerraform(this._transitEncryptionMode),
+      user_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._userGroupIds),
+      log_delivery_configuration: cdktn.listMapper(elasticacheReplicationGroupLogDeliveryConfigurationToTerraform, true)(this._logDeliveryConfiguration.internalValue),
+      node_group_configuration: cdktn.listMapper(elasticacheReplicationGroupNodeGroupConfigurationToTerraform, true)(this._nodeGroupConfiguration.internalValue),
       timeouts: elasticacheReplicationGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1768,259 +1768,259 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       apply_immediately: {
-        value: cdktf.booleanToHclTerraform(this._applyImmediately),
+        value: cdktn.booleanToHclTerraform(this._applyImmediately),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       at_rest_encryption_enabled: {
-        value: cdktf.stringToHclTerraform(this._atRestEncryptionEnabled),
+        value: cdktn.stringToHclTerraform(this._atRestEncryptionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auth_token: {
-        value: cdktf.stringToHclTerraform(this._authToken),
+        value: cdktn.stringToHclTerraform(this._authToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auth_token_update_strategy: {
-        value: cdktf.stringToHclTerraform(this._authTokenUpdateStrategy),
+        value: cdktn.stringToHclTerraform(this._authTokenUpdateStrategy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auto_minor_version_upgrade: {
-        value: cdktf.stringToHclTerraform(this._autoMinorVersionUpgrade),
+        value: cdktn.stringToHclTerraform(this._autoMinorVersionUpgrade),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       automatic_failover_enabled: {
-        value: cdktf.booleanToHclTerraform(this._automaticFailoverEnabled),
+        value: cdktn.booleanToHclTerraform(this._automaticFailoverEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cluster_mode: {
-        value: cdktf.stringToHclTerraform(this._clusterMode),
+        value: cdktn.stringToHclTerraform(this._clusterMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_tiering_enabled: {
-        value: cdktf.booleanToHclTerraform(this._dataTieringEnabled),
+        value: cdktn.booleanToHclTerraform(this._dataTieringEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_version: {
-        value: cdktf.stringToHclTerraform(this._engineVersion),
+        value: cdktn.stringToHclTerraform(this._engineVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       final_snapshot_identifier: {
-        value: cdktf.stringToHclTerraform(this._finalSnapshotIdentifier),
+        value: cdktn.stringToHclTerraform(this._finalSnapshotIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       global_replication_group_id: {
-        value: cdktf.stringToHclTerraform(this._globalReplicationGroupId),
+        value: cdktn.stringToHclTerraform(this._globalReplicationGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_discovery: {
-        value: cdktf.stringToHclTerraform(this._ipDiscovery),
+        value: cdktn.stringToHclTerraform(this._ipDiscovery),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       maintenance_window: {
-        value: cdktf.stringToHclTerraform(this._maintenanceWindow),
+        value: cdktn.stringToHclTerraform(this._maintenanceWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multi_az_enabled: {
-        value: cdktf.booleanToHclTerraform(this._multiAzEnabled),
+        value: cdktn.booleanToHclTerraform(this._multiAzEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       network_type: {
-        value: cdktf.stringToHclTerraform(this._networkType),
+        value: cdktn.stringToHclTerraform(this._networkType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       node_type: {
-        value: cdktf.stringToHclTerraform(this._nodeType),
+        value: cdktn.stringToHclTerraform(this._nodeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_topic_arn: {
-        value: cdktf.stringToHclTerraform(this._notificationTopicArn),
+        value: cdktn.stringToHclTerraform(this._notificationTopicArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       num_cache_clusters: {
-        value: cdktf.numberToHclTerraform(this._numCacheClusters),
+        value: cdktn.numberToHclTerraform(this._numCacheClusters),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       num_node_groups: {
-        value: cdktf.numberToHclTerraform(this._numNodeGroups),
+        value: cdktn.numberToHclTerraform(this._numNodeGroups),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       parameter_group_name: {
-        value: cdktf.stringToHclTerraform(this._parameterGroupName),
+        value: cdktn.stringToHclTerraform(this._parameterGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       preferred_cache_cluster_azs: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredCacheClusterAzs),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._preferredCacheClusterAzs),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replicas_per_node_group: {
-        value: cdktf.numberToHclTerraform(this._replicasPerNodeGroup),
+        value: cdktn.numberToHclTerraform(this._replicasPerNodeGroup),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       replication_group_id: {
-        value: cdktf.stringToHclTerraform(this._replicationGroupId),
+        value: cdktn.stringToHclTerraform(this._replicationGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       security_group_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       snapshot_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._snapshotArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._snapshotArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       snapshot_name: {
-        value: cdktf.stringToHclTerraform(this._snapshotName),
+        value: cdktn.stringToHclTerraform(this._snapshotName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       snapshot_retention_limit: {
-        value: cdktf.numberToHclTerraform(this._snapshotRetentionLimit),
+        value: cdktn.numberToHclTerraform(this._snapshotRetentionLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       snapshot_window: {
-        value: cdktf.stringToHclTerraform(this._snapshotWindow),
+        value: cdktn.stringToHclTerraform(this._snapshotWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_group_name: {
-        value: cdktf.stringToHclTerraform(this._subnetGroupName),
+        value: cdktn.stringToHclTerraform(this._subnetGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       transit_encryption_enabled: {
-        value: cdktf.booleanToHclTerraform(this._transitEncryptionEnabled),
+        value: cdktn.booleanToHclTerraform(this._transitEncryptionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       transit_encryption_mode: {
-        value: cdktf.stringToHclTerraform(this._transitEncryptionMode),
+        value: cdktn.stringToHclTerraform(this._transitEncryptionMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._userGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._userGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       log_delivery_configuration: {
-        value: cdktf.listMapperHcl(elasticacheReplicationGroupLogDeliveryConfigurationToHclTerraform, true)(this._logDeliveryConfiguration.internalValue),
+        value: cdktn.listMapperHcl(elasticacheReplicationGroupLogDeliveryConfigurationToHclTerraform, true)(this._logDeliveryConfiguration.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ElasticacheReplicationGroupLogDeliveryConfigurationList",
       },
       node_group_configuration: {
-        value: cdktf.listMapperHcl(elasticacheReplicationGroupNodeGroupConfigurationToHclTerraform, true)(this._nodeGroupConfiguration.internalValue),
+        value: cdktn.listMapperHcl(elasticacheReplicationGroupNodeGroupConfigurationToHclTerraform, true)(this._nodeGroupConfiguration.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ElasticacheReplicationGroupNodeGroupConfigurationList",

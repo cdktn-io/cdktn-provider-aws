@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsIdentitystoreUserConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsIdentitystoreUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/identitystore_user#id DataAwsIdentitystoreUser#id}
   *
@@ -44,8 +44,8 @@ export interface DataAwsIdentitystoreUserAddresses {
 }
 
 export function dataAwsIdentitystoreUserAddressesToTerraform(struct?: DataAwsIdentitystoreUserAddresses): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -54,8 +54,8 @@ export function dataAwsIdentitystoreUserAddressesToTerraform(struct?: DataAwsIde
 
 
 export function dataAwsIdentitystoreUserAddressesToHclTerraform(struct?: DataAwsIdentitystoreUserAddresses): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -63,7 +63,7 @@ export function dataAwsIdentitystoreUserAddressesToHclTerraform(struct?: DataAws
   return attrs;
 }
 
-export class DataAwsIdentitystoreUserAddressesOutputReference extends cdktf.ComplexObject {
+export class DataAwsIdentitystoreUserAddressesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -72,7 +72,7 @@ export class DataAwsIdentitystoreUserAddressesOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -132,14 +132,14 @@ export class DataAwsIdentitystoreUserAddressesOutputReference extends cdktf.Comp
   }
 }
 
-export class DataAwsIdentitystoreUserAddressesList extends cdktf.ComplexList {
+export class DataAwsIdentitystoreUserAddressesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -154,8 +154,8 @@ export interface DataAwsIdentitystoreUserEmails {
 }
 
 export function dataAwsIdentitystoreUserEmailsToTerraform(struct?: DataAwsIdentitystoreUserEmails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -164,8 +164,8 @@ export function dataAwsIdentitystoreUserEmailsToTerraform(struct?: DataAwsIdenti
 
 
 export function dataAwsIdentitystoreUserEmailsToHclTerraform(struct?: DataAwsIdentitystoreUserEmails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -173,7 +173,7 @@ export function dataAwsIdentitystoreUserEmailsToHclTerraform(struct?: DataAwsIde
   return attrs;
 }
 
-export class DataAwsIdentitystoreUserEmailsOutputReference extends cdktf.ComplexObject {
+export class DataAwsIdentitystoreUserEmailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -182,7 +182,7 @@ export class DataAwsIdentitystoreUserEmailsOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -217,14 +217,14 @@ export class DataAwsIdentitystoreUserEmailsOutputReference extends cdktf.Complex
   }
 }
 
-export class DataAwsIdentitystoreUserEmailsList extends cdktf.ComplexList {
+export class DataAwsIdentitystoreUserEmailsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -239,8 +239,8 @@ export interface DataAwsIdentitystoreUserExternalIds {
 }
 
 export function dataAwsIdentitystoreUserExternalIdsToTerraform(struct?: DataAwsIdentitystoreUserExternalIds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -249,8 +249,8 @@ export function dataAwsIdentitystoreUserExternalIdsToTerraform(struct?: DataAwsI
 
 
 export function dataAwsIdentitystoreUserExternalIdsToHclTerraform(struct?: DataAwsIdentitystoreUserExternalIds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -258,7 +258,7 @@ export function dataAwsIdentitystoreUserExternalIdsToHclTerraform(struct?: DataA
   return attrs;
 }
 
-export class DataAwsIdentitystoreUserExternalIdsOutputReference extends cdktf.ComplexObject {
+export class DataAwsIdentitystoreUserExternalIdsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -267,7 +267,7 @@ export class DataAwsIdentitystoreUserExternalIdsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -297,14 +297,14 @@ export class DataAwsIdentitystoreUserExternalIdsOutputReference extends cdktf.Co
   }
 }
 
-export class DataAwsIdentitystoreUserExternalIdsList extends cdktf.ComplexList {
+export class DataAwsIdentitystoreUserExternalIdsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -319,8 +319,8 @@ export interface DataAwsIdentitystoreUserName {
 }
 
 export function dataAwsIdentitystoreUserNameToTerraform(struct?: DataAwsIdentitystoreUserName): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -329,8 +329,8 @@ export function dataAwsIdentitystoreUserNameToTerraform(struct?: DataAwsIdentity
 
 
 export function dataAwsIdentitystoreUserNameToHclTerraform(struct?: DataAwsIdentitystoreUserName): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -338,7 +338,7 @@ export function dataAwsIdentitystoreUserNameToHclTerraform(struct?: DataAwsIdent
   return attrs;
 }
 
-export class DataAwsIdentitystoreUserNameOutputReference extends cdktf.ComplexObject {
+export class DataAwsIdentitystoreUserNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -347,7 +347,7 @@ export class DataAwsIdentitystoreUserNameOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -397,14 +397,14 @@ export class DataAwsIdentitystoreUserNameOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DataAwsIdentitystoreUserNameList extends cdktf.ComplexList {
+export class DataAwsIdentitystoreUserNameList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -419,8 +419,8 @@ export interface DataAwsIdentitystoreUserPhoneNumbers {
 }
 
 export function dataAwsIdentitystoreUserPhoneNumbersToTerraform(struct?: DataAwsIdentitystoreUserPhoneNumbers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -429,8 +429,8 @@ export function dataAwsIdentitystoreUserPhoneNumbersToTerraform(struct?: DataAws
 
 
 export function dataAwsIdentitystoreUserPhoneNumbersToHclTerraform(struct?: DataAwsIdentitystoreUserPhoneNumbers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -438,7 +438,7 @@ export function dataAwsIdentitystoreUserPhoneNumbersToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAwsIdentitystoreUserPhoneNumbersOutputReference extends cdktf.ComplexObject {
+export class DataAwsIdentitystoreUserPhoneNumbersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -447,7 +447,7 @@ export class DataAwsIdentitystoreUserPhoneNumbersOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -482,14 +482,14 @@ export class DataAwsIdentitystoreUserPhoneNumbersOutputReference extends cdktf.C
   }
 }
 
-export class DataAwsIdentitystoreUserPhoneNumbersList extends cdktf.ComplexList {
+export class DataAwsIdentitystoreUserPhoneNumbersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -515,31 +515,31 @@ export interface DataAwsIdentitystoreUserAlternateIdentifierExternalId {
 }
 
 export function dataAwsIdentitystoreUserAlternateIdentifierExternalIdToTerraform(struct?: DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference | DataAwsIdentitystoreUserAlternateIdentifierExternalId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
+    id: cdktn.stringToTerraform(struct!.id),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
   }
 }
 
 
 export function dataAwsIdentitystoreUserAlternateIdentifierExternalIdToHclTerraform(struct?: DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference | DataAwsIdentitystoreUserAlternateIdentifierExternalId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -550,14 +550,14 @@ export function dataAwsIdentitystoreUserAlternateIdentifierExternalIdToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference extends cdktf.ComplexObject {
+export class DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -626,31 +626,31 @@ export interface DataAwsIdentitystoreUserAlternateIdentifierUniqueAttribute {
 }
 
 export function dataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeToTerraform(struct?: DataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOutputReference | DataAwsIdentitystoreUserAlternateIdentifierUniqueAttribute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attribute_path: cdktf.stringToTerraform(struct!.attributePath),
-    attribute_value: cdktf.stringToTerraform(struct!.attributeValue),
+    attribute_path: cdktn.stringToTerraform(struct!.attributePath),
+    attribute_value: cdktn.stringToTerraform(struct!.attributeValue),
   }
 }
 
 
 export function dataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeToHclTerraform(struct?: DataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOutputReference | DataAwsIdentitystoreUserAlternateIdentifierUniqueAttribute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attribute_path: {
-      value: cdktf.stringToHclTerraform(struct!.attributePath),
+      value: cdktn.stringToHclTerraform(struct!.attributePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     attribute_value: {
-      value: cdktf.stringToHclTerraform(struct!.attributeValue),
+      value: cdktn.stringToHclTerraform(struct!.attributeValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -661,14 +661,14 @@ export function dataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOutputReference extends cdktf.ComplexObject {
+export class DataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -741,8 +741,8 @@ export interface DataAwsIdentitystoreUserAlternateIdentifier {
 }
 
 export function dataAwsIdentitystoreUserAlternateIdentifierToTerraform(struct?: DataAwsIdentitystoreUserAlternateIdentifierOutputReference | DataAwsIdentitystoreUserAlternateIdentifier): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -753,8 +753,8 @@ export function dataAwsIdentitystoreUserAlternateIdentifierToTerraform(struct?: 
 
 
 export function dataAwsIdentitystoreUserAlternateIdentifierToHclTerraform(struct?: DataAwsIdentitystoreUserAlternateIdentifierOutputReference | DataAwsIdentitystoreUserAlternateIdentifier): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -776,14 +776,14 @@ export function dataAwsIdentitystoreUserAlternateIdentifierToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsIdentitystoreUserAlternateIdentifierOutputReference extends cdktf.ComplexObject {
+export class DataAwsIdentitystoreUserAlternateIdentifierOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -850,7 +850,7 @@ export class DataAwsIdentitystoreUserAlternateIdentifierOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/identitystore_user aws_identitystore_user}
 */
-export class DataAwsIdentitystoreUser extends cdktf.TerraformDataSource {
+export class DataAwsIdentitystoreUser extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -861,14 +861,14 @@ export class DataAwsIdentitystoreUser extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsIdentitystoreUser resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsIdentitystoreUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsIdentitystoreUser to import
   * @param importFromId The id of the existing DataAwsIdentitystoreUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/identitystore_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsIdentitystoreUser to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_identitystore_user", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_identitystore_user", importId: importFromId, provider });
       }
 
   // ===========
@@ -1067,10 +1067,10 @@ export class DataAwsIdentitystoreUser extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      identity_store_id: cdktf.stringToTerraform(this._identityStoreId),
-      region: cdktf.stringToTerraform(this._region),
-      user_id: cdktf.stringToTerraform(this._userId),
+      id: cdktn.stringToTerraform(this._id),
+      identity_store_id: cdktn.stringToTerraform(this._identityStoreId),
+      region: cdktn.stringToTerraform(this._region),
+      user_id: cdktn.stringToTerraform(this._userId),
       alternate_identifier: dataAwsIdentitystoreUserAlternateIdentifierToTerraform(this._alternateIdentifier.internalValue),
     };
   }
@@ -1078,25 +1078,25 @@ export class DataAwsIdentitystoreUser extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_store_id: {
-        value: cdktf.stringToHclTerraform(this._identityStoreId),
+        value: cdktn.stringToHclTerraform(this._identityStoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_id: {
-        value: cdktf.stringToHclTerraform(this._userId),
+        value: cdktn.stringToHclTerraform(this._userId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

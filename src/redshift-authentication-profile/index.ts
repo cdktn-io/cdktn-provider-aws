@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedshiftAuthenticationProfileConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftAuthenticationProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_authentication_profile#authentication_profile_content RedshiftAuthenticationProfile#authentication_profile_content}
   */
@@ -38,7 +38,7 @@ export interface RedshiftAuthenticationProfileConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_authentication_profile aws_redshift_authentication_profile}
 */
-export class RedshiftAuthenticationProfile extends cdktf.TerraformResource {
+export class RedshiftAuthenticationProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class RedshiftAuthenticationProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedshiftAuthenticationProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedshiftAuthenticationProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftAuthenticationProfile to import
   * @param importFromId The id of the existing RedshiftAuthenticationProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_authentication_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftAuthenticationProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_authentication_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_authentication_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class RedshiftAuthenticationProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authentication_profile_content: cdktf.stringToTerraform(this._authenticationProfileContent),
-      authentication_profile_name: cdktf.stringToTerraform(this._authenticationProfileName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      authentication_profile_content: cdktn.stringToTerraform(this._authenticationProfileContent),
+      authentication_profile_name: cdktn.stringToTerraform(this._authenticationProfileName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authentication_profile_content: {
-        value: cdktf.stringToHclTerraform(this._authenticationProfileContent),
+        value: cdktn.stringToHclTerraform(this._authenticationProfileContent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authentication_profile_name: {
-        value: cdktf.stringToHclTerraform(this._authenticationProfileName),
+        value: cdktn.stringToHclTerraform(this._authenticationProfileName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

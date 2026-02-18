@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BedrockagentcoreMemoryConfig extends cdktf.TerraformMetaArguments {
+export interface BedrockagentcoreMemoryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_memory#description BedrockagentcoreMemory#description}
   */
@@ -64,32 +64,32 @@ export interface BedrockagentcoreMemoryTimeouts {
   readonly delete?: string;
 }
 
-export function bedrockagentcoreMemoryTimeoutsToTerraform(struct?: BedrockagentcoreMemoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreMemoryTimeoutsToTerraform(struct?: BedrockagentcoreMemoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function bedrockagentcoreMemoryTimeoutsToHclTerraform(struct?: BedrockagentcoreMemoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreMemoryTimeoutsToHclTerraform(struct?: BedrockagentcoreMemoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,19 +100,19 @@ export function bedrockagentcoreMemoryTimeoutsToHclTerraform(struct?: Bedrockage
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreMemoryTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreMemoryTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BedrockagentcoreMemoryTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreMemoryTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -129,14 +129,14 @@ export class BedrockagentcoreMemoryTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreMemoryTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreMemoryTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -184,7 +184,7 @@ export class BedrockagentcoreMemoryTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_memory aws_bedrockagentcore_memory}
 */
-export class BedrockagentcoreMemory extends cdktf.TerraformResource {
+export class BedrockagentcoreMemory extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -195,14 +195,14 @@ export class BedrockagentcoreMemory extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BedrockagentcoreMemory resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BedrockagentcoreMemory resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentcoreMemory to import
   * @param importFromId The id of the existing BedrockagentcoreMemory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_memory#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentcoreMemory to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagentcore_memory", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagentcore_memory", importId: importFromId, provider });
       }
 
   // ===========
@@ -363,7 +363,7 @@ export class BedrockagentcoreMemory extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -390,13 +390,13 @@ export class BedrockagentcoreMemory extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      encryption_key_arn: cdktf.stringToTerraform(this._encryptionKeyArn),
-      event_expiry_duration: cdktf.numberToTerraform(this._eventExpiryDuration),
-      memory_execution_role_arn: cdktf.stringToTerraform(this._memoryExecutionRoleArn),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      description: cdktn.stringToTerraform(this._description),
+      encryption_key_arn: cdktn.stringToTerraform(this._encryptionKeyArn),
+      event_expiry_duration: cdktn.numberToTerraform(this._eventExpiryDuration),
+      memory_execution_role_arn: cdktn.stringToTerraform(this._memoryExecutionRoleArn),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: bedrockagentcoreMemoryTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -404,43 +404,43 @@ export class BedrockagentcoreMemory extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encryption_key_arn: {
-        value: cdktf.stringToHclTerraform(this._encryptionKeyArn),
+        value: cdktn.stringToHclTerraform(this._encryptionKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_expiry_duration: {
-        value: cdktf.numberToHclTerraform(this._eventExpiryDuration),
+        value: cdktn.numberToHclTerraform(this._eventExpiryDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       memory_execution_role_arn: {
-        value: cdktf.stringToHclTerraform(this._memoryExecutionRoleArn),
+        value: cdktn.stringToHclTerraform(this._memoryExecutionRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

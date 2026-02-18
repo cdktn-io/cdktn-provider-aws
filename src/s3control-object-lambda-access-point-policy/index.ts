@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3ControlObjectLambdaAccessPointPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface S3ControlObjectLambdaAccessPointPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_object_lambda_access_point_policy#account_id S3ControlObjectLambdaAccessPointPolicy#account_id}
   */
@@ -42,7 +42,7 @@ export interface S3ControlObjectLambdaAccessPointPolicyConfig extends cdktf.Terr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_object_lambda_access_point_policy aws_s3control_object_lambda_access_point_policy}
 */
-export class S3ControlObjectLambdaAccessPointPolicy extends cdktf.TerraformResource {
+export class S3ControlObjectLambdaAccessPointPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class S3ControlObjectLambdaAccessPointPolicy extends cdktf.TerraformResou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3ControlObjectLambdaAccessPointPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3ControlObjectLambdaAccessPointPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3ControlObjectLambdaAccessPointPolicy to import
   * @param importFromId The id of the existing S3ControlObjectLambdaAccessPointPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_object_lambda_access_point_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3ControlObjectLambdaAccessPointPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3control_object_lambda_access_point_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3control_object_lambda_access_point_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -186,42 +186,42 @@ export class S3ControlObjectLambdaAccessPointPolicy extends cdktf.TerraformResou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      policy: cdktf.stringToTerraform(this._policy),
-      region: cdktf.stringToTerraform(this._region),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      policy: cdktn.stringToTerraform(this._policy),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy: {
-        value: cdktf.stringToHclTerraform(this._policy),
+        value: cdktn.stringToHclTerraform(this._policy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

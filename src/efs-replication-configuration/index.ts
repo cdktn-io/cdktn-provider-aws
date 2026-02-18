@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EfsReplicationConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface EfsReplicationConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_replication_configuration#id EfsReplicationConfiguration#id}
   *
@@ -62,45 +62,45 @@ export interface EfsReplicationConfigurationDestination {
 }
 
 export function efsReplicationConfigurationDestinationToTerraform(struct?: EfsReplicationConfigurationDestinationOutputReference | EfsReplicationConfigurationDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability_zone_name: cdktf.stringToTerraform(struct!.availabilityZoneName),
-    file_system_id: cdktf.stringToTerraform(struct!.fileSystemId),
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
-    region: cdktf.stringToTerraform(struct!.region),
+    availability_zone_name: cdktn.stringToTerraform(struct!.availabilityZoneName),
+    file_system_id: cdktn.stringToTerraform(struct!.fileSystemId),
+    kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
 export function efsReplicationConfigurationDestinationToHclTerraform(struct?: EfsReplicationConfigurationDestinationOutputReference | EfsReplicationConfigurationDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability_zone_name: {
-      value: cdktf.stringToHclTerraform(struct!.availabilityZoneName),
+      value: cdktn.stringToHclTerraform(struct!.availabilityZoneName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     file_system_id: {
-      value: cdktf.stringToHclTerraform(struct!.fileSystemId),
+      value: cdktn.stringToHclTerraform(struct!.fileSystemId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,14 +111,14 @@ export function efsReplicationConfigurationDestinationToHclTerraform(struct?: Ef
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EfsReplicationConfigurationDestinationOutputReference extends cdktf.ComplexObject {
+export class EfsReplicationConfigurationDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -241,32 +241,32 @@ export interface EfsReplicationConfigurationTimeouts {
   readonly delete?: string;
 }
 
-export function efsReplicationConfigurationTimeoutsToTerraform(struct?: EfsReplicationConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function efsReplicationConfigurationTimeoutsToTerraform(struct?: EfsReplicationConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function efsReplicationConfigurationTimeoutsToHclTerraform(struct?: EfsReplicationConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function efsReplicationConfigurationTimeoutsToHclTerraform(struct?: EfsReplicationConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -277,19 +277,19 @@ export function efsReplicationConfigurationTimeoutsToHclTerraform(struct?: EfsRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EfsReplicationConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EfsReplicationConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EfsReplicationConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EfsReplicationConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -306,14 +306,14 @@ export class EfsReplicationConfigurationTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EfsReplicationConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EfsReplicationConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -361,7 +361,7 @@ export class EfsReplicationConfigurationTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_replication_configuration aws_efs_replication_configuration}
 */
-export class EfsReplicationConfiguration extends cdktf.TerraformResource {
+export class EfsReplicationConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -372,14 +372,14 @@ export class EfsReplicationConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EfsReplicationConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EfsReplicationConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EfsReplicationConfiguration to import
   * @param importFromId The id of the existing EfsReplicationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_replication_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EfsReplicationConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_efs_replication_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_efs_replication_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -520,9 +520,9 @@ export class EfsReplicationConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      source_file_system_id: cdktf.stringToTerraform(this._sourceFileSystemId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      source_file_system_id: cdktn.stringToTerraform(this._sourceFileSystemId),
       destination: efsReplicationConfigurationDestinationToTerraform(this._destination.internalValue),
       timeouts: efsReplicationConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -531,19 +531,19 @@ export class EfsReplicationConfiguration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_file_system_id: {
-        value: cdktf.stringToHclTerraform(this._sourceFileSystemId),
+        value: cdktn.stringToHclTerraform(this._sourceFileSystemId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

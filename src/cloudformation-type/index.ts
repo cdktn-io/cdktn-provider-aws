@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudformationTypeConfig extends cdktf.TerraformMetaArguments {
+export interface CloudformationTypeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudformation_type#execution_role_arn CloudformationType#execution_role_arn}
   */
@@ -60,31 +60,31 @@ export interface CloudformationTypeLoggingConfig {
 }
 
 export function cloudformationTypeLoggingConfigToTerraform(struct?: CloudformationTypeLoggingConfigOutputReference | CloudformationTypeLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_role_arn: cdktf.stringToTerraform(struct!.logRoleArn),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_role_arn: cdktn.stringToTerraform(struct!.logRoleArn),
   }
 }
 
 
 export function cloudformationTypeLoggingConfigToHclTerraform(struct?: CloudformationTypeLoggingConfigOutputReference | CloudformationTypeLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.logRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.logRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -95,14 +95,14 @@ export function cloudformationTypeLoggingConfigToHclTerraform(struct?: Cloudform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudformationTypeLoggingConfigOutputReference extends cdktf.ComplexObject {
+export class CloudformationTypeLoggingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -163,7 +163,7 @@ export class CloudformationTypeLoggingConfigOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudformation_type aws_cloudformation_type}
 */
-export class CloudformationType extends cdktf.TerraformResource {
+export class CloudformationType extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -174,14 +174,14 @@ export class CloudformationType extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudformationType resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudformationType resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudformationType to import
   * @param importFromId The id of the existing CloudformationType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudformation_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudformationType to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudformation_type", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudformation_type", importId: importFromId, provider });
       }
 
   // ===========
@@ -396,12 +396,12 @@ export class CloudformationType extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      execution_role_arn: cdktf.stringToTerraform(this._executionRoleArn),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      schema_handler_package: cdktf.stringToTerraform(this._schemaHandlerPackage),
-      type: cdktf.stringToTerraform(this._type),
-      type_name: cdktf.stringToTerraform(this._typeName),
+      execution_role_arn: cdktn.stringToTerraform(this._executionRoleArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      schema_handler_package: cdktn.stringToTerraform(this._schemaHandlerPackage),
+      type: cdktn.stringToTerraform(this._type),
+      type_name: cdktn.stringToTerraform(this._typeName),
       logging_config: cloudformationTypeLoggingConfigToTerraform(this._loggingConfig.internalValue),
     };
   }
@@ -409,37 +409,37 @@ export class CloudformationType extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       execution_role_arn: {
-        value: cdktf.stringToHclTerraform(this._executionRoleArn),
+        value: cdktn.stringToHclTerraform(this._executionRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema_handler_package: {
-        value: cdktf.stringToHclTerraform(this._schemaHandlerPackage),
+        value: cdktn.stringToHclTerraform(this._schemaHandlerPackage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type_name: {
-        value: cdktf.stringToHclTerraform(this._typeName),
+        value: cdktn.stringToHclTerraform(this._typeName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AcmpcaCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface AcmpcaCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acmpca_certificate#api_passthrough AcmpcaCertificate#api_passthrough}
   */
@@ -64,31 +64,31 @@ export interface AcmpcaCertificateValidity {
 }
 
 export function acmpcaCertificateValidityToTerraform(struct?: AcmpcaCertificateValidityOutputReference | AcmpcaCertificateValidity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function acmpcaCertificateValidityToHclTerraform(struct?: AcmpcaCertificateValidityOutputReference | AcmpcaCertificateValidity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -99,14 +99,14 @@ export function acmpcaCertificateValidityToHclTerraform(struct?: AcmpcaCertifica
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AcmpcaCertificateValidityOutputReference extends cdktf.ComplexObject {
+export class AcmpcaCertificateValidityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -167,7 +167,7 @@ export class AcmpcaCertificateValidityOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acmpca_certificate aws_acmpca_certificate}
 */
-export class AcmpcaCertificate extends cdktf.TerraformResource {
+export class AcmpcaCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -178,14 +178,14 @@ export class AcmpcaCertificate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AcmpcaCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AcmpcaCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AcmpcaCertificate to import
   * @param importFromId The id of the existing AcmpcaCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acmpca_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AcmpcaCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_acmpca_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_acmpca_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -366,13 +366,13 @@ export class AcmpcaCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_passthrough: cdktf.stringToTerraform(this._apiPassthrough),
-      certificate_authority_arn: cdktf.stringToTerraform(this._certificateAuthorityArn),
-      certificate_signing_request: cdktf.stringToTerraform(this._certificateSigningRequest),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      signing_algorithm: cdktf.stringToTerraform(this._signingAlgorithm),
-      template_arn: cdktf.stringToTerraform(this._templateArn),
+      api_passthrough: cdktn.stringToTerraform(this._apiPassthrough),
+      certificate_authority_arn: cdktn.stringToTerraform(this._certificateAuthorityArn),
+      certificate_signing_request: cdktn.stringToTerraform(this._certificateSigningRequest),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      signing_algorithm: cdktn.stringToTerraform(this._signingAlgorithm),
+      template_arn: cdktn.stringToTerraform(this._templateArn),
       validity: acmpcaCertificateValidityToTerraform(this._validity.internalValue),
     };
   }
@@ -380,43 +380,43 @@ export class AcmpcaCertificate extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_passthrough: {
-        value: cdktf.stringToHclTerraform(this._apiPassthrough),
+        value: cdktn.stringToHclTerraform(this._apiPassthrough),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_authority_arn: {
-        value: cdktf.stringToHclTerraform(this._certificateAuthorityArn),
+        value: cdktn.stringToHclTerraform(this._certificateAuthorityArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_signing_request: {
-        value: cdktf.stringToHclTerraform(this._certificateSigningRequest),
+        value: cdktn.stringToHclTerraform(this._certificateSigningRequest),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       signing_algorithm: {
-        value: cdktf.stringToHclTerraform(this._signingAlgorithm),
+        value: cdktn.stringToHclTerraform(this._signingAlgorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       template_arn: {
-        value: cdktf.stringToHclTerraform(this._templateArn),
+        value: cdktn.stringToHclTerraform(this._templateArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

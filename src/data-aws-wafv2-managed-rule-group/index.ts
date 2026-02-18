@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsWafv2ManagedRuleGroupConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsWafv2ManagedRuleGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/wafv2_managed_rule_group#name DataAwsWafv2ManagedRuleGroup#name}
   */
@@ -39,8 +39,8 @@ export interface DataAwsWafv2ManagedRuleGroupAvailableLabels {
 }
 
 export function dataAwsWafv2ManagedRuleGroupAvailableLabelsToTerraform(struct?: DataAwsWafv2ManagedRuleGroupAvailableLabels): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -49,8 +49,8 @@ export function dataAwsWafv2ManagedRuleGroupAvailableLabelsToTerraform(struct?: 
 
 
 export function dataAwsWafv2ManagedRuleGroupAvailableLabelsToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupAvailableLabels): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -58,7 +58,7 @@ export function dataAwsWafv2ManagedRuleGroupAvailableLabelsToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupAvailableLabelsOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupAvailableLabelsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -67,7 +67,7 @@ export class DataAwsWafv2ManagedRuleGroupAvailableLabelsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -92,14 +92,14 @@ export class DataAwsWafv2ManagedRuleGroupAvailableLabelsOutputReference extends 
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupAvailableLabelsList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupAvailableLabelsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -114,8 +114,8 @@ export interface DataAwsWafv2ManagedRuleGroupConsumedLabels {
 }
 
 export function dataAwsWafv2ManagedRuleGroupConsumedLabelsToTerraform(struct?: DataAwsWafv2ManagedRuleGroupConsumedLabels): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -124,8 +124,8 @@ export function dataAwsWafv2ManagedRuleGroupConsumedLabelsToTerraform(struct?: D
 
 
 export function dataAwsWafv2ManagedRuleGroupConsumedLabelsToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupConsumedLabels): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -133,7 +133,7 @@ export function dataAwsWafv2ManagedRuleGroupConsumedLabelsToHclTerraform(struct?
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupConsumedLabelsOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupConsumedLabelsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -142,7 +142,7 @@ export class DataAwsWafv2ManagedRuleGroupConsumedLabelsOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -167,14 +167,14 @@ export class DataAwsWafv2ManagedRuleGroupConsumedLabelsOutputReference extends c
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupConsumedLabelsList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupConsumedLabelsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -189,8 +189,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandli
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeaderToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -199,8 +199,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlin
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeaderToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -208,7 +208,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlin
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeaderOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -217,7 +217,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingIn
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -247,14 +247,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingIn
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeaderList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeaderList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -269,8 +269,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandli
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -279,8 +279,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlin
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -288,7 +288,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlin
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -297,7 +297,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -323,14 +323,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingOu
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -345,8 +345,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesActionAllow {
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionAllowToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionAllow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -355,8 +355,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionAllowToTerraform(struct?:
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionAllowToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionAllow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -364,7 +364,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionAllowToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionAllowOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionAllowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -373,7 +373,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionAllowOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -399,14 +399,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionAllowOutputReference extends
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionAllowList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionAllowList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -421,8 +421,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseRespo
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeaderToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -431,8 +431,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseRespon
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeaderToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -440,7 +440,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseRespon
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeaderOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -449,7 +449,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseH
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -479,14 +479,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseH
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeaderList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeaderList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -501,8 +501,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponse {
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponse): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -511,8 +511,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseToTerr
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponse): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -520,7 +520,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseToHclT
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -529,7 +529,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -565,14 +565,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseOutputRef
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -587,8 +587,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesActionBlock {
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionBlockToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionBlock): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -597,8 +597,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionBlockToTerraform(struct?:
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionBlockToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionBlock): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -606,7 +606,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionBlockToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionBlockOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionBlockOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -615,7 +615,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionBlockOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -641,14 +641,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionBlockOutputReference extends
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionBlockList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionBlockList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -663,8 +663,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHand
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeaderToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -673,8 +673,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandl
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeaderToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -682,7 +682,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandl
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeaderOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -691,7 +691,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandling
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -721,14 +721,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandling
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeaderList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeaderList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -743,8 +743,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHand
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -753,8 +753,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandl
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -762,7 +762,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandl
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -771,7 +771,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandling
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -797,14 +797,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandling
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -819,8 +819,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesActionCaptcha {
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionCaptchaToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionCaptcha): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -829,8 +829,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionCaptchaToTerraform(struct
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionCaptchaToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionCaptcha): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -838,7 +838,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionCaptchaToHclTerraform(str
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -847,7 +847,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -873,14 +873,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaOutputReference exten
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionCaptchaList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -895,8 +895,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHa
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeaderToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -905,8 +905,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHan
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeaderToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -914,7 +914,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHan
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeaderOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -923,7 +923,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandli
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -953,14 +953,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandli
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeaderList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeaderList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -975,8 +975,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHa
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -985,8 +985,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHan
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -994,7 +994,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHan
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1003,7 +1003,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandli
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1029,14 +1029,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandli
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1051,8 +1051,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesActionChallenge {
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionChallengeToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionChallenge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1061,8 +1061,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionChallengeToTerraform(stru
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionChallengeToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionChallenge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1070,7 +1070,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionChallengeToHclTerraform(s
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1079,7 +1079,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1105,14 +1105,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeOutputReference ext
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionChallengeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1127,8 +1127,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandli
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeaderToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1137,8 +1137,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlin
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeaderToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1146,7 +1146,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlin
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeaderOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1155,7 +1155,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingIn
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1185,14 +1185,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingIn
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeaderList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeaderList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1207,8 +1207,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandli
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1217,8 +1217,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlin
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1226,7 +1226,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlin
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1235,7 +1235,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1261,14 +1261,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingOu
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1283,8 +1283,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesActionCount {
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionCountToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionCount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1293,8 +1293,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionCountToTerraform(struct?:
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionCountToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesActionCount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1302,7 +1302,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionCountToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionCountOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionCountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1311,7 +1311,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionCountOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1337,14 +1337,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionCountOutputReference extends
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionCountList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionCountList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1359,8 +1359,8 @@ export interface DataAwsWafv2ManagedRuleGroupRulesAction {
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1369,8 +1369,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionToTerraform(struct?: Data
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesActionToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRulesAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1378,7 +1378,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesActionToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1387,7 +1387,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1437,14 +1437,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesActionOutputReference extends cdkt
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesActionList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesActionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1459,8 +1459,8 @@ export interface DataAwsWafv2ManagedRuleGroupRules {
 }
 
 export function dataAwsWafv2ManagedRuleGroupRulesToTerraform(struct?: DataAwsWafv2ManagedRuleGroupRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1469,8 +1469,8 @@ export function dataAwsWafv2ManagedRuleGroupRulesToTerraform(struct?: DataAwsWaf
 
 
 export function dataAwsWafv2ManagedRuleGroupRulesToHclTerraform(struct?: DataAwsWafv2ManagedRuleGroupRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1478,7 +1478,7 @@ export function dataAwsWafv2ManagedRuleGroupRulesToHclTerraform(struct?: DataAws
   return attrs;
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesOutputReference extends cdktf.ComplexObject {
+export class DataAwsWafv2ManagedRuleGroupRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1487,7 +1487,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1518,14 +1518,14 @@ export class DataAwsWafv2ManagedRuleGroupRulesOutputReference extends cdktf.Comp
   }
 }
 
-export class DataAwsWafv2ManagedRuleGroupRulesList extends cdktf.ComplexList {
+export class DataAwsWafv2ManagedRuleGroupRulesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1540,7 +1540,7 @@ export class DataAwsWafv2ManagedRuleGroupRulesList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/wafv2_managed_rule_group aws_wafv2_managed_rule_group}
 */
-export class DataAwsWafv2ManagedRuleGroup extends cdktf.TerraformDataSource {
+export class DataAwsWafv2ManagedRuleGroup extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -1551,14 +1551,14 @@ export class DataAwsWafv2ManagedRuleGroup extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsWafv2ManagedRuleGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsWafv2ManagedRuleGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsWafv2ManagedRuleGroup to import
   * @param importFromId The id of the existing DataAwsWafv2ManagedRuleGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/wafv2_managed_rule_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsWafv2ManagedRuleGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafv2_managed_rule_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafv2_managed_rule_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -1709,42 +1709,42 @@ export class DataAwsWafv2ManagedRuleGroup extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      scope: cdktf.stringToTerraform(this._scope),
-      vendor_name: cdktf.stringToTerraform(this._vendorName),
-      version_name: cdktf.stringToTerraform(this._versionName),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      scope: cdktn.stringToTerraform(this._scope),
+      vendor_name: cdktn.stringToTerraform(this._vendorName),
+      version_name: cdktn.stringToTerraform(this._versionName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope: {
-        value: cdktf.stringToHclTerraform(this._scope),
+        value: cdktn.stringToHclTerraform(this._scope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vendor_name: {
-        value: cdktf.stringToHclTerraform(this._vendorName),
+        value: cdktn.stringToHclTerraform(this._vendorName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version_name: {
-        value: cdktf.stringToHclTerraform(this._versionName),
+        value: cdktn.stringToHclTerraform(this._versionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

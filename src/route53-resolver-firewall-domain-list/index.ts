@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Route53ResolverFirewallDomainListConfig extends cdktf.TerraformMetaArguments {
+export interface Route53ResolverFirewallDomainListConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}
   */
@@ -46,7 +46,7 @@ export interface Route53ResolverFirewallDomainListConfig extends cdktf.Terraform
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list}
 */
-export class Route53ResolverFirewallDomainList extends cdktf.TerraformResource {
+export class Route53ResolverFirewallDomainList extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class Route53ResolverFirewallDomainList extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Route53ResolverFirewallDomainList resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Route53ResolverFirewallDomainList resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53ResolverFirewallDomainList to import
   * @param importFromId The id of the existing Route53ResolverFirewallDomainList that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_firewall_domain_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53ResolverFirewallDomainList to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_resolver_firewall_domain_list", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_resolver_firewall_domain_list", importId: importFromId, provider });
       }
 
   // ===========
@@ -114,7 +114,7 @@ export class Route53ResolverFirewallDomainList extends cdktf.TerraformResource {
   // domains - computed: false, optional: true, required: false
   private _domains?: string[]; 
   public get domains() {
-    return cdktf.Fn.tolist(this.getListAttribute('domains'));
+    return cdktn.Fn.tolist(this.getListAttribute('domains'));
   }
   public set domains(value: string[]) {
     this._domains = value;
@@ -210,49 +210,49 @@ export class Route53ResolverFirewallDomainList extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._domains),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      domains: cdktn.listMapper(cdktn.stringToTerraform, false)(this._domains),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domains: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._domains),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._domains),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3ControlAccessGrantsLocationConfig extends cdktf.TerraformMetaArguments {
+export interface S3ControlAccessGrantsLocationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_access_grants_location#account_id S3ControlAccessGrantsLocation#account_id}
   */
@@ -39,7 +39,7 @@ export interface S3ControlAccessGrantsLocationConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_access_grants_location aws_s3control_access_grants_location}
 */
-export class S3ControlAccessGrantsLocation extends cdktf.TerraformResource {
+export class S3ControlAccessGrantsLocation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -50,14 +50,14 @@ export class S3ControlAccessGrantsLocation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3ControlAccessGrantsLocation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3ControlAccessGrantsLocation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3ControlAccessGrantsLocation to import
   * @param importFromId The id of the existing S3ControlAccessGrantsLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_access_grants_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3ControlAccessGrantsLocation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3control_access_grants_location", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3control_access_grants_location", importId: importFromId, provider });
       }
 
   // ===========
@@ -188,7 +188,7 @@ export class S3ControlAccessGrantsLocation extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -199,42 +199,42 @@ export class S3ControlAccessGrantsLocation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
-      location_scope: cdktf.stringToTerraform(this._locationScope),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      iam_role_arn: cdktn.stringToTerraform(this._iamRoleArn),
+      location_scope: cdktn.stringToTerraform(this._locationScope),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_role_arn: {
-        value: cdktf.stringToHclTerraform(this._iamRoleArn),
+        value: cdktn.stringToHclTerraform(this._iamRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location_scope: {
-        value: cdktf.stringToHclTerraform(this._locationScope),
+        value: cdktn.stringToHclTerraform(this._locationScope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

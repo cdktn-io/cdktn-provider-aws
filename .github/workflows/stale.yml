@@ -18,7 +18,7 @@ jobs:
           days-before-close: -1
           days-before-pr-stale: 1
           days-before-pr-close: 0
-          stale-pr-message: Closing this PR, if it has not merged there is most likely a CI or CDKTF issue preventing it from merging. If this has been a manual PR, please reopen it and add the `no-auto-close` label to prevent this from happening again.
+          stale-pr-message: Closing this PR, if it has not merged there is most likely a CI or CDKTN issue preventing it from merging. If this has been a manual PR, please reopen it and add the `no-auto-close` label to prevent this from happening again.
           close-pr-message: Closing this pull request as it hasn't seen activity for a while. Please add a comment @mentioning a maintainer to reopen. If you wish to exclude this issue from being marked as stale, add the "no-auto-close" label.
           stale-pr-label: stale
           exempt-pr-labels: no-auto-close

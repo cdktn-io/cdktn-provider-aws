@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DevopsguruEventSourcesConfigConfig extends cdktf.TerraformMetaArguments {
+export interface DevopsguruEventSourcesConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -23,7 +23,7 @@ export interface DevopsguruEventSourcesConfigConfig extends cdktf.TerraformMetaA
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_event_sources_config#event_sources DevopsguruEventSourcesConfig#event_sources}
   */
-  readonly eventSources?: DevopsguruEventSourcesConfigEventSources[] | cdktf.IResolvable;
+  readonly eventSources?: DevopsguruEventSourcesConfigEventSources[] | cdktn.IResolvable;
 }
 export interface DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler {
   /**
@@ -32,25 +32,25 @@ export interface DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler 
   readonly status: string;
 }
 
-export function devopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerToTerraform(struct?: DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerToTerraform(struct?: DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    status: cdktf.stringToTerraform(struct!.status),
+    status: cdktn.stringToTerraform(struct!.status),
   }
 }
 
 
-export function devopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerToHclTerraform(struct?: DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerToHclTerraform(struct?: DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -61,9 +61,9 @@ export function devopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerOutputReference extends cdktf.ComplexObject {
+export class DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -71,11 +71,11 @@ export class DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler | cdktf.IResolvable | undefined {
+  public get internalValue(): DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -88,13 +88,13 @@ export class DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._status = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -119,15 +119,15 @@ export class DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerOutpu
   }
 }
 
-export class DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerList extends cdktf.ComplexList {
-  public internalValue? : DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler[] | cdktf.IResolvable
+export class DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerList extends cdktn.ComplexList {
+  public internalValue? : DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -144,28 +144,28 @@ export interface DevopsguruEventSourcesConfigEventSources {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_event_sources_config#amazon_code_guru_profiler DevopsguruEventSourcesConfig#amazon_code_guru_profiler}
   */
-  readonly amazonCodeGuruProfiler?: DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler[] | cdktf.IResolvable;
+  readonly amazonCodeGuruProfiler?: DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler[] | cdktn.IResolvable;
 }
 
-export function devopsguruEventSourcesConfigEventSourcesToTerraform(struct?: DevopsguruEventSourcesConfigEventSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruEventSourcesConfigEventSourcesToTerraform(struct?: DevopsguruEventSourcesConfigEventSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    amazon_code_guru_profiler: cdktf.listMapper(devopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerToTerraform, true)(struct!.amazonCodeGuruProfiler),
+    amazon_code_guru_profiler: cdktn.listMapper(devopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerToTerraform, true)(struct!.amazonCodeGuruProfiler),
   }
 }
 
 
-export function devopsguruEventSourcesConfigEventSourcesToHclTerraform(struct?: DevopsguruEventSourcesConfigEventSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruEventSourcesConfigEventSourcesToHclTerraform(struct?: DevopsguruEventSourcesConfigEventSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     amazon_code_guru_profiler: {
-      value: cdktf.listMapperHcl(devopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerToHclTerraform, true)(struct!.amazonCodeGuruProfiler),
+      value: cdktn.listMapperHcl(devopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerToHclTerraform, true)(struct!.amazonCodeGuruProfiler),
       isBlock: true,
       type: "list",
       storageClassType: "DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerList",
@@ -176,9 +176,9 @@ export function devopsguruEventSourcesConfigEventSourcesToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevopsguruEventSourcesConfigEventSourcesOutputReference extends cdktf.ComplexObject {
+export class DevopsguruEventSourcesConfigEventSourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -186,11 +186,11 @@ export class DevopsguruEventSourcesConfigEventSourcesOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DevopsguruEventSourcesConfigEventSources | cdktf.IResolvable | undefined {
+  public get internalValue(): DevopsguruEventSourcesConfigEventSources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -203,13 +203,13 @@ export class DevopsguruEventSourcesConfigEventSourcesOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DevopsguruEventSourcesConfigEventSources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DevopsguruEventSourcesConfigEventSources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._amazonCodeGuruProfiler.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -225,7 +225,7 @@ export class DevopsguruEventSourcesConfigEventSourcesOutputReference extends cdk
   public get amazonCodeGuruProfiler() {
     return this._amazonCodeGuruProfiler;
   }
-  public putAmazonCodeGuruProfiler(value: DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler[] | cdktf.IResolvable) {
+  public putAmazonCodeGuruProfiler(value: DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler[] | cdktn.IResolvable) {
     this._amazonCodeGuruProfiler.internalValue = value;
   }
   public resetAmazonCodeGuruProfiler() {
@@ -237,15 +237,15 @@ export class DevopsguruEventSourcesConfigEventSourcesOutputReference extends cdk
   }
 }
 
-export class DevopsguruEventSourcesConfigEventSourcesList extends cdktf.ComplexList {
-  public internalValue? : DevopsguruEventSourcesConfigEventSources[] | cdktf.IResolvable
+export class DevopsguruEventSourcesConfigEventSourcesList extends cdktn.ComplexList {
+  public internalValue? : DevopsguruEventSourcesConfigEventSources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -260,7 +260,7 @@ export class DevopsguruEventSourcesConfigEventSourcesList extends cdktf.ComplexL
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config}
 */
-export class DevopsguruEventSourcesConfig extends cdktf.TerraformResource {
+export class DevopsguruEventSourcesConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -271,14 +271,14 @@ export class DevopsguruEventSourcesConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DevopsguruEventSourcesConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DevopsguruEventSourcesConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevopsguruEventSourcesConfig to import
   * @param importFromId The id of the existing DevopsguruEventSourcesConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_event_sources_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevopsguruEventSourcesConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_devopsguru_event_sources_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_devopsguru_event_sources_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -342,7 +342,7 @@ export class DevopsguruEventSourcesConfig extends cdktf.TerraformResource {
   public get eventSources() {
     return this._eventSources;
   }
-  public putEventSources(value: DevopsguruEventSourcesConfigEventSources[] | cdktf.IResolvable) {
+  public putEventSources(value: DevopsguruEventSourcesConfigEventSources[] | cdktn.IResolvable) {
     this._eventSources.internalValue = value;
   }
   public resetEventSources() {
@@ -359,21 +359,21 @@ export class DevopsguruEventSourcesConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      event_sources: cdktf.listMapper(devopsguruEventSourcesConfigEventSourcesToTerraform, true)(this._eventSources.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      event_sources: cdktn.listMapper(devopsguruEventSourcesConfigEventSourcesToTerraform, true)(this._eventSources.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_sources: {
-        value: cdktf.listMapperHcl(devopsguruEventSourcesConfigEventSourcesToHclTerraform, true)(this._eventSources.internalValue),
+        value: cdktn.listMapperHcl(devopsguruEventSourcesConfigEventSourcesToHclTerraform, true)(this._eventSources.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DevopsguruEventSourcesConfigEventSourcesList",

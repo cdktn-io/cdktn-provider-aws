@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsCloudcontrolapiResourceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCloudcontrolapiResourceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cloudcontrolapi_resource#id DataAwsCloudcontrolapiResource#id}
   *
@@ -46,7 +46,7 @@ export interface DataAwsCloudcontrolapiResourceConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cloudcontrolapi_resource aws_cloudcontrolapi_resource}
 */
-export class DataAwsCloudcontrolapiResource extends cdktf.TerraformDataSource {
+export class DataAwsCloudcontrolapiResource extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class DataAwsCloudcontrolapiResource extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsCloudcontrolapiResource resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsCloudcontrolapiResource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCloudcontrolapiResource to import
   * @param importFromId The id of the existing DataAwsCloudcontrolapiResource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cloudcontrolapi_resource#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCloudcontrolapiResource to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudcontrolapi_resource", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudcontrolapi_resource", importId: importFromId, provider });
       }
 
   // ===========
@@ -207,49 +207,49 @@ export class DataAwsCloudcontrolapiResource extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      identifier: cdktf.stringToTerraform(this._identifier),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      type_name: cdktf.stringToTerraform(this._typeName),
-      type_version_id: cdktf.stringToTerraform(this._typeVersionId),
+      id: cdktn.stringToTerraform(this._id),
+      identifier: cdktn.stringToTerraform(this._identifier),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      type_name: cdktn.stringToTerraform(this._typeName),
+      type_version_id: cdktn.stringToTerraform(this._typeVersionId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identifier: {
-        value: cdktf.stringToHclTerraform(this._identifier),
+        value: cdktn.stringToHclTerraform(this._identifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type_name: {
-        value: cdktf.stringToHclTerraform(this._typeName),
+        value: cdktn.stringToHclTerraform(this._typeName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type_version_id: {
-        value: cdktf.stringToHclTerraform(this._typeVersionId),
+        value: cdktn.stringToHclTerraform(this._typeVersionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DxConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface DxConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_connection#bandwidth DxConnection#bandwidth}
   */
@@ -48,11 +48,11 @@ export interface DxConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_connection#request_macsec DxConnection#request_macsec}
   */
-  readonly requestMacsec?: boolean | cdktf.IResolvable;
+  readonly requestMacsec?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_connection#skip_destroy DxConnection#skip_destroy}
   */
-  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  readonly skipDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_connection#tags DxConnection#tags}
   */
@@ -66,7 +66,7 @@ export interface DxConnectionConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_connection aws_dx_connection}
 */
-export class DxConnection extends cdktf.TerraformResource {
+export class DxConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class DxConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DxConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DxConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DxConnection to import
   * @param importFromId The id of the existing DxConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DxConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -275,11 +275,11 @@ export class DxConnection extends cdktf.TerraformResource {
   }
 
   // request_macsec - computed: false, optional: true, required: false
-  private _requestMacsec?: boolean | cdktf.IResolvable; 
+  private _requestMacsec?: boolean | cdktn.IResolvable; 
   public get requestMacsec() {
     return this.getBooleanAttribute('request_macsec');
   }
-  public set requestMacsec(value: boolean | cdktf.IResolvable) {
+  public set requestMacsec(value: boolean | cdktn.IResolvable) {
     this._requestMacsec = value;
   }
   public resetRequestMacsec() {
@@ -291,11 +291,11 @@ export class DxConnection extends cdktf.TerraformResource {
   }
 
   // skip_destroy - computed: false, optional: true, required: false
-  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  private _skipDestroy?: boolean | cdktn.IResolvable; 
   public get skipDestroy() {
     return this.getBooleanAttribute('skip_destroy');
   }
-  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+  public set skipDestroy(value: boolean | cdktn.IResolvable) {
     this._skipDestroy = value;
   }
   public resetSkipDestroy() {
@@ -349,84 +349,84 @@ export class DxConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bandwidth: cdktf.stringToTerraform(this._bandwidth),
-      encryption_mode: cdktf.stringToTerraform(this._encryptionMode),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      provider_name: cdktf.stringToTerraform(this._providerName),
-      region: cdktf.stringToTerraform(this._region),
-      request_macsec: cdktf.booleanToTerraform(this._requestMacsec),
-      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      bandwidth: cdktn.stringToTerraform(this._bandwidth),
+      encryption_mode: cdktn.stringToTerraform(this._encryptionMode),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      provider_name: cdktn.stringToTerraform(this._providerName),
+      region: cdktn.stringToTerraform(this._region),
+      request_macsec: cdktn.booleanToTerraform(this._requestMacsec),
+      skip_destroy: cdktn.booleanToTerraform(this._skipDestroy),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bandwidth: {
-        value: cdktf.stringToHclTerraform(this._bandwidth),
+        value: cdktn.stringToHclTerraform(this._bandwidth),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encryption_mode: {
-        value: cdktf.stringToHclTerraform(this._encryptionMode),
+        value: cdktn.stringToHclTerraform(this._encryptionMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provider_name: {
-        value: cdktf.stringToHclTerraform(this._providerName),
+        value: cdktn.stringToHclTerraform(this._providerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_macsec: {
-        value: cdktf.booleanToHclTerraform(this._requestMacsec),
+        value: cdktn.booleanToHclTerraform(this._requestMacsec),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       skip_destroy: {
-        value: cdktf.booleanToHclTerraform(this._skipDestroy),
+        value: cdktn.booleanToHclTerraform(this._skipDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

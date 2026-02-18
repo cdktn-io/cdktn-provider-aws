@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SagemakerPipelineConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerPipelineConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_pipeline#id SagemakerPipeline#id}
   *
@@ -74,24 +74,24 @@ export interface SagemakerPipelineParallelismConfiguration {
 }
 
 export function sagemakerPipelineParallelismConfigurationToTerraform(struct?: SagemakerPipelineParallelismConfigurationOutputReference | SagemakerPipelineParallelismConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_parallel_execution_steps: cdktf.numberToTerraform(struct!.maxParallelExecutionSteps),
+    max_parallel_execution_steps: cdktn.numberToTerraform(struct!.maxParallelExecutionSteps),
   }
 }
 
 
 export function sagemakerPipelineParallelismConfigurationToHclTerraform(struct?: SagemakerPipelineParallelismConfigurationOutputReference | SagemakerPipelineParallelismConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_parallel_execution_steps: {
-      value: cdktf.numberToHclTerraform(struct!.maxParallelExecutionSteps),
+      value: cdktn.numberToHclTerraform(struct!.maxParallelExecutionSteps),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -102,14 +102,14 @@ export function sagemakerPipelineParallelismConfigurationToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerPipelineParallelismConfigurationOutputReference extends cdktf.ComplexObject {
+export class SagemakerPipelineParallelismConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -163,38 +163,38 @@ export interface SagemakerPipelinePipelineDefinitionS3Location {
 }
 
 export function sagemakerPipelinePipelineDefinitionS3LocationToTerraform(struct?: SagemakerPipelinePipelineDefinitionS3LocationOutputReference | SagemakerPipelinePipelineDefinitionS3Location): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    object_key: cdktf.stringToTerraform(struct!.objectKey),
-    version_id: cdktf.stringToTerraform(struct!.versionId),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    object_key: cdktn.stringToTerraform(struct!.objectKey),
+    version_id: cdktn.stringToTerraform(struct!.versionId),
   }
 }
 
 
 export function sagemakerPipelinePipelineDefinitionS3LocationToHclTerraform(struct?: SagemakerPipelinePipelineDefinitionS3LocationOutputReference | SagemakerPipelinePipelineDefinitionS3Location): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     object_key: {
-      value: cdktf.stringToHclTerraform(struct!.objectKey),
+      value: cdktn.stringToHclTerraform(struct!.objectKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version_id: {
-      value: cdktf.stringToHclTerraform(struct!.versionId),
+      value: cdktn.stringToHclTerraform(struct!.versionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -205,14 +205,14 @@ export function sagemakerPipelinePipelineDefinitionS3LocationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerPipelinePipelineDefinitionS3LocationOutputReference extends cdktf.ComplexObject {
+export class SagemakerPipelinePipelineDefinitionS3LocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -295,7 +295,7 @@ export class SagemakerPipelinePipelineDefinitionS3LocationOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_pipeline aws_sagemaker_pipeline}
 */
-export class SagemakerPipeline extends cdktf.TerraformResource {
+export class SagemakerPipeline extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -306,14 +306,14 @@ export class SagemakerPipeline extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SagemakerPipeline resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SagemakerPipeline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerPipeline to import
   * @param importFromId The id of the existing SagemakerPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerPipeline to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_pipeline", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_pipeline", importId: importFromId, provider });
       }
 
   // ===========
@@ -541,15 +541,15 @@ export class SagemakerPipeline extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      pipeline_definition: cdktf.stringToTerraform(this._pipelineDefinition),
-      pipeline_description: cdktf.stringToTerraform(this._pipelineDescription),
-      pipeline_display_name: cdktf.stringToTerraform(this._pipelineDisplayName),
-      pipeline_name: cdktf.stringToTerraform(this._pipelineName),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      id: cdktn.stringToTerraform(this._id),
+      pipeline_definition: cdktn.stringToTerraform(this._pipelineDefinition),
+      pipeline_description: cdktn.stringToTerraform(this._pipelineDescription),
+      pipeline_display_name: cdktn.stringToTerraform(this._pipelineDisplayName),
+      pipeline_name: cdktn.stringToTerraform(this._pipelineName),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       parallelism_configuration: sagemakerPipelineParallelismConfigurationToTerraform(this._parallelismConfiguration.internalValue),
       pipeline_definition_s3_location: sagemakerPipelinePipelineDefinitionS3LocationToTerraform(this._pipelineDefinitionS3Location.internalValue),
     };
@@ -558,55 +558,55 @@ export class SagemakerPipeline extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pipeline_definition: {
-        value: cdktf.stringToHclTerraform(this._pipelineDefinition),
+        value: cdktn.stringToHclTerraform(this._pipelineDefinition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pipeline_description: {
-        value: cdktf.stringToHclTerraform(this._pipelineDescription),
+        value: cdktn.stringToHclTerraform(this._pipelineDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pipeline_display_name: {
-        value: cdktf.stringToHclTerraform(this._pipelineDisplayName),
+        value: cdktn.stringToHclTerraform(this._pipelineDisplayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pipeline_name: {
-        value: cdktf.stringToHclTerraform(this._pipelineName),
+        value: cdktn.stringToHclTerraform(this._pipelineName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

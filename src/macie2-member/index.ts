@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Macie2MemberConfig extends cdktf.TerraformMetaArguments {
+export interface Macie2MemberConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_member#account_id Macie2Member#account_id}
   */
@@ -30,7 +30,7 @@ export interface Macie2MemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_member#invitation_disable_email_notification Macie2Member#invitation_disable_email_notification}
   */
-  readonly invitationDisableEmailNotification?: boolean | cdktf.IResolvable;
+  readonly invitationDisableEmailNotification?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_member#invitation_message Macie2Member#invitation_message}
   */
@@ -38,7 +38,7 @@ export interface Macie2MemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_member#invite Macie2Member#invite}
   */
-  readonly invite?: boolean | cdktf.IResolvable;
+  readonly invite?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -75,32 +75,32 @@ export interface Macie2MemberTimeouts {
   readonly update?: string;
 }
 
-export function macie2MemberTimeoutsToTerraform(struct?: Macie2MemberTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function macie2MemberTimeoutsToTerraform(struct?: Macie2MemberTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function macie2MemberTimeoutsToHclTerraform(struct?: Macie2MemberTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function macie2MemberTimeoutsToHclTerraform(struct?: Macie2MemberTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,19 +111,19 @@ export function macie2MemberTimeoutsToHclTerraform(struct?: Macie2MemberTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Macie2MemberTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Macie2MemberTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Macie2MemberTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Macie2MemberTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -140,14 +140,14 @@ export class Macie2MemberTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Macie2MemberTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Macie2MemberTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -195,7 +195,7 @@ export class Macie2MemberTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_member aws_macie2_member}
 */
-export class Macie2Member extends cdktf.TerraformResource {
+export class Macie2Member extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -206,14 +206,14 @@ export class Macie2Member extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Macie2Member resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Macie2Member resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Macie2Member to import
   * @param importFromId The id of the existing Macie2Member that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Macie2Member to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_macie2_member", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_macie2_member", importId: importFromId, provider });
       }
 
   // ===========
@@ -313,11 +313,11 @@ export class Macie2Member extends cdktf.TerraformResource {
   }
 
   // invitation_disable_email_notification - computed: false, optional: true, required: false
-  private _invitationDisableEmailNotification?: boolean | cdktf.IResolvable; 
+  private _invitationDisableEmailNotification?: boolean | cdktn.IResolvable; 
   public get invitationDisableEmailNotification() {
     return this.getBooleanAttribute('invitation_disable_email_notification');
   }
-  public set invitationDisableEmailNotification(value: boolean | cdktf.IResolvable) {
+  public set invitationDisableEmailNotification(value: boolean | cdktn.IResolvable) {
     this._invitationDisableEmailNotification = value;
   }
   public resetInvitationDisableEmailNotification() {
@@ -345,11 +345,11 @@ export class Macie2Member extends cdktf.TerraformResource {
   }
 
   // invite - computed: true, optional: true, required: false
-  private _invite?: boolean | cdktf.IResolvable; 
+  private _invite?: boolean | cdktn.IResolvable; 
   public get invite() {
     return this.getBooleanAttribute('invite');
   }
-  public set invite(value: boolean | cdktf.IResolvable) {
+  public set invite(value: boolean | cdktn.IResolvable) {
     this._invite = value;
   }
   public resetInvite() {
@@ -466,16 +466,16 @@ export class Macie2Member extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      email: cdktf.stringToTerraform(this._email),
-      id: cdktf.stringToTerraform(this._id),
-      invitation_disable_email_notification: cdktf.booleanToTerraform(this._invitationDisableEmailNotification),
-      invitation_message: cdktf.stringToTerraform(this._invitationMessage),
-      invite: cdktf.booleanToTerraform(this._invite),
-      region: cdktf.stringToTerraform(this._region),
-      status: cdktf.stringToTerraform(this._status),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      email: cdktn.stringToTerraform(this._email),
+      id: cdktn.stringToTerraform(this._id),
+      invitation_disable_email_notification: cdktn.booleanToTerraform(this._invitationDisableEmailNotification),
+      invitation_message: cdktn.stringToTerraform(this._invitationMessage),
+      invite: cdktn.booleanToTerraform(this._invite),
+      region: cdktn.stringToTerraform(this._region),
+      status: cdktn.stringToTerraform(this._status),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       timeouts: macie2MemberTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -483,61 +483,61 @@ export class Macie2Member extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email: {
-        value: cdktf.stringToHclTerraform(this._email),
+        value: cdktn.stringToHclTerraform(this._email),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       invitation_disable_email_notification: {
-        value: cdktf.booleanToHclTerraform(this._invitationDisableEmailNotification),
+        value: cdktn.booleanToHclTerraform(this._invitationDisableEmailNotification),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       invitation_message: {
-        value: cdktf.stringToHclTerraform(this._invitationMessage),
+        value: cdktn.stringToHclTerraform(this._invitationMessage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       invite: {
-        value: cdktf.booleanToHclTerraform(this._invite),
+        value: cdktn.booleanToHclTerraform(this._invite),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

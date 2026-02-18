@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkmonitorProbeConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkmonitorProbeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmonitor_probe#destination NetworkmonitorProbe#destination}
   */
@@ -51,7 +51,7 @@ export interface NetworkmonitorProbeConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmonitor_probe aws_networkmonitor_probe}
 */
-export class NetworkmonitorProbe extends cdktf.TerraformResource {
+export class NetworkmonitorProbe extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -62,14 +62,14 @@ export class NetworkmonitorProbe extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkmonitorProbe resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkmonitorProbe resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkmonitorProbe to import
   * @param importFromId The id of the existing NetworkmonitorProbe that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmonitor_probe#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkmonitorProbe to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmonitor_probe", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmonitor_probe", importId: importFromId, provider });
       }
 
   // ===========
@@ -250,7 +250,7 @@ export class NetworkmonitorProbe extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -266,63 +266,63 @@ export class NetworkmonitorProbe extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination: cdktf.stringToTerraform(this._destination),
-      destination_port: cdktf.numberToTerraform(this._destinationPort),
-      monitor_name: cdktf.stringToTerraform(this._monitorName),
-      packet_size: cdktf.numberToTerraform(this._packetSize),
-      protocol: cdktf.stringToTerraform(this._protocol),
-      region: cdktf.stringToTerraform(this._region),
-      source_arn: cdktf.stringToTerraform(this._sourceArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      destination: cdktn.stringToTerraform(this._destination),
+      destination_port: cdktn.numberToTerraform(this._destinationPort),
+      monitor_name: cdktn.stringToTerraform(this._monitorName),
+      packet_size: cdktn.numberToTerraform(this._packetSize),
+      protocol: cdktn.stringToTerraform(this._protocol),
+      region: cdktn.stringToTerraform(this._region),
+      source_arn: cdktn.stringToTerraform(this._sourceArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       destination: {
-        value: cdktf.stringToHclTerraform(this._destination),
+        value: cdktn.stringToHclTerraform(this._destination),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_port: {
-        value: cdktf.numberToHclTerraform(this._destinationPort),
+        value: cdktn.numberToHclTerraform(this._destinationPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       monitor_name: {
-        value: cdktf.stringToHclTerraform(this._monitorName),
+        value: cdktn.stringToHclTerraform(this._monitorName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       packet_size: {
-        value: cdktf.numberToHclTerraform(this._packetSize),
+        value: cdktn.numberToHclTerraform(this._packetSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       protocol: {
-        value: cdktf.stringToHclTerraform(this._protocol),
+        value: cdktn.stringToHclTerraform(this._protocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_arn: {
-        value: cdktf.stringToHclTerraform(this._sourceArn),
+        value: cdktn.stringToHclTerraform(this._sourceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

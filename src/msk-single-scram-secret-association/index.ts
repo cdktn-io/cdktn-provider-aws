@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MskSingleScramSecretAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface MskSingleScramSecretAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_single_scram_secret_association#cluster_arn MskSingleScramSecretAssociation#cluster_arn}
   */
@@ -31,7 +31,7 @@ export interface MskSingleScramSecretAssociationConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_single_scram_secret_association aws_msk_single_scram_secret_association}
 */
-export class MskSingleScramSecretAssociation extends cdktf.TerraformResource {
+export class MskSingleScramSecretAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -42,14 +42,14 @@ export class MskSingleScramSecretAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MskSingleScramSecretAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MskSingleScramSecretAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MskSingleScramSecretAssociation to import
   * @param importFromId The id of the existing MskSingleScramSecretAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_single_scram_secret_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MskSingleScramSecretAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_msk_single_scram_secret_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_msk_single_scram_secret_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -141,28 +141,28 @@ export class MskSingleScramSecretAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_arn: cdktf.stringToTerraform(this._clusterArn),
-      region: cdktf.stringToTerraform(this._region),
-      secret_arn: cdktf.stringToTerraform(this._secretArn),
+      cluster_arn: cdktn.stringToTerraform(this._clusterArn),
+      region: cdktn.stringToTerraform(this._region),
+      secret_arn: cdktn.stringToTerraform(this._secretArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_arn: {
-        value: cdktf.stringToHclTerraform(this._clusterArn),
+        value: cdktn.stringToHclTerraform(this._clusterArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_arn: {
-        value: cdktf.stringToHclTerraform(this._secretArn),
+        value: cdktn.stringToHclTerraform(this._secretArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

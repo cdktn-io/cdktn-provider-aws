@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsCognitoUserPoolClientsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCognitoUserPoolClientsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cognito_user_pool_clients#id DataAwsCognitoUserPoolClients#id}
   *
@@ -34,7 +34,7 @@ export interface DataAwsCognitoUserPoolClientsConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cognito_user_pool_clients aws_cognito_user_pool_clients}
 */
-export class DataAwsCognitoUserPoolClients extends cdktf.TerraformDataSource {
+export class DataAwsCognitoUserPoolClients extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -45,14 +45,14 @@ export class DataAwsCognitoUserPoolClients extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsCognitoUserPoolClients resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsCognitoUserPoolClients resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCognitoUserPoolClients to import
   * @param importFromId The id of the existing DataAwsCognitoUserPoolClients that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cognito_user_pool_clients#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCognitoUserPoolClients to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_user_pool_clients", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_user_pool_clients", importId: importFromId, provider });
       }
 
   // ===========
@@ -152,28 +152,28 @@ export class DataAwsCognitoUserPoolClients extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      user_pool_id: cdktn.stringToTerraform(this._userPoolId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_pool_id: {
-        value: cdktf.stringToHclTerraform(this._userPoolId),
+        value: cdktn.stringToHclTerraform(this._userPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

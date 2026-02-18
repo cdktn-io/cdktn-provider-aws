@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LightsailLbAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface LightsailLbAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_lb_attachment#id LightsailLbAttachment#id}
   *
@@ -38,7 +38,7 @@ export interface LightsailLbAttachmentConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_lb_attachment aws_lightsail_lb_attachment}
 */
-export class LightsailLbAttachment extends cdktf.TerraformResource {
+export class LightsailLbAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class LightsailLbAttachment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LightsailLbAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LightsailLbAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LightsailLbAttachment to import
   * @param importFromId The id of the existing LightsailLbAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_lb_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LightsailLbAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lightsail_lb_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lightsail_lb_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class LightsailLbAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      instance_name: cdktf.stringToTerraform(this._instanceName),
-      lb_name: cdktf.stringToTerraform(this._lbName),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      instance_name: cdktn.stringToTerraform(this._instanceName),
+      lb_name: cdktn.stringToTerraform(this._lbName),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_name: {
-        value: cdktf.stringToHclTerraform(this._instanceName),
+        value: cdktn.stringToHclTerraform(this._instanceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lb_name: {
-        value: cdktf.stringToHclTerraform(this._lbName),
+        value: cdktn.stringToHclTerraform(this._lbName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecuritylakeCustomLogSourceConfig extends cdktf.TerraformMetaArguments {
+export interface SecuritylakeCustomLogSourceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_custom_log_source#event_classes SecuritylakeCustomLogSource#event_classes}
   */
@@ -35,14 +35,14 @@ export interface SecuritylakeCustomLogSourceConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_custom_log_source#configuration SecuritylakeCustomLogSource#configuration}
   */
-  readonly configuration?: SecuritylakeCustomLogSourceConfiguration[] | cdktf.IResolvable;
+  readonly configuration?: SecuritylakeCustomLogSourceConfiguration[] | cdktn.IResolvable;
 }
 export interface SecuritylakeCustomLogSourceAttributes {
 }
 
 export function securitylakeCustomLogSourceAttributesToTerraform(struct?: SecuritylakeCustomLogSourceAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -51,8 +51,8 @@ export function securitylakeCustomLogSourceAttributesToTerraform(struct?: Securi
 
 
 export function securitylakeCustomLogSourceAttributesToHclTerraform(struct?: SecuritylakeCustomLogSourceAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -60,7 +60,7 @@ export function securitylakeCustomLogSourceAttributesToHclTerraform(struct?: Sec
   return attrs;
 }
 
-export class SecuritylakeCustomLogSourceAttributesOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeCustomLogSourceAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -69,7 +69,7 @@ export class SecuritylakeCustomLogSourceAttributesOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -104,14 +104,14 @@ export class SecuritylakeCustomLogSourceAttributesOutputReference extends cdktf.
   }
 }
 
-export class SecuritylakeCustomLogSourceAttributesList extends cdktf.ComplexList {
+export class SecuritylakeCustomLogSourceAttributesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -126,8 +126,8 @@ export interface SecuritylakeCustomLogSourceProviderDetails {
 }
 
 export function securitylakeCustomLogSourceProviderDetailsToTerraform(struct?: SecuritylakeCustomLogSourceProviderDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -136,8 +136,8 @@ export function securitylakeCustomLogSourceProviderDetailsToTerraform(struct?: S
 
 
 export function securitylakeCustomLogSourceProviderDetailsToHclTerraform(struct?: SecuritylakeCustomLogSourceProviderDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -145,7 +145,7 @@ export function securitylakeCustomLogSourceProviderDetailsToHclTerraform(struct?
   return attrs;
 }
 
-export class SecuritylakeCustomLogSourceProviderDetailsOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeCustomLogSourceProviderDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -154,7 +154,7 @@ export class SecuritylakeCustomLogSourceProviderDetailsOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -184,14 +184,14 @@ export class SecuritylakeCustomLogSourceProviderDetailsOutputReference extends c
   }
 }
 
-export class SecuritylakeCustomLogSourceProviderDetailsList extends cdktf.ComplexList {
+export class SecuritylakeCustomLogSourceProviderDetailsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -209,25 +209,25 @@ export interface SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration {
   readonly roleArn: string;
 }
 
-export function securitylakeCustomLogSourceConfigurationCrawlerConfigurationToTerraform(struct?: SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeCustomLogSourceConfigurationCrawlerConfigurationToTerraform(struct?: SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
-export function securitylakeCustomLogSourceConfigurationCrawlerConfigurationToHclTerraform(struct?: SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeCustomLogSourceConfigurationCrawlerConfigurationToHclTerraform(struct?: SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -238,9 +238,9 @@ export function securitylakeCustomLogSourceConfigurationCrawlerConfigurationToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -248,11 +248,11 @@ export class SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -265,13 +265,13 @@ export class SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._roleArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -296,15 +296,15 @@ export class SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationOutputR
   }
 }
 
-export class SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration[] | cdktf.IResolvable
+export class SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -326,32 +326,32 @@ export interface SecuritylakeCustomLogSourceConfigurationProviderIdentity {
   readonly principal: string;
 }
 
-export function securitylakeCustomLogSourceConfigurationProviderIdentityToTerraform(struct?: SecuritylakeCustomLogSourceConfigurationProviderIdentity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeCustomLogSourceConfigurationProviderIdentityToTerraform(struct?: SecuritylakeCustomLogSourceConfigurationProviderIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    principal: cdktf.stringToTerraform(struct!.principal),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    principal: cdktn.stringToTerraform(struct!.principal),
   }
 }
 
 
-export function securitylakeCustomLogSourceConfigurationProviderIdentityToHclTerraform(struct?: SecuritylakeCustomLogSourceConfigurationProviderIdentity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeCustomLogSourceConfigurationProviderIdentityToHclTerraform(struct?: SecuritylakeCustomLogSourceConfigurationProviderIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     principal: {
-      value: cdktf.stringToHclTerraform(struct!.principal),
+      value: cdktn.stringToHclTerraform(struct!.principal),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -362,9 +362,9 @@ export function securitylakeCustomLogSourceConfigurationProviderIdentityToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeCustomLogSourceConfigurationProviderIdentityOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeCustomLogSourceConfigurationProviderIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -372,11 +372,11 @@ export class SecuritylakeCustomLogSourceConfigurationProviderIdentityOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeCustomLogSourceConfigurationProviderIdentity | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeCustomLogSourceConfigurationProviderIdentity | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -393,14 +393,14 @@ export class SecuritylakeCustomLogSourceConfigurationProviderIdentityOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeCustomLogSourceConfigurationProviderIdentity | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeCustomLogSourceConfigurationProviderIdentity | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._externalId = undefined;
       this._principal = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -439,15 +439,15 @@ export class SecuritylakeCustomLogSourceConfigurationProviderIdentityOutputRefer
   }
 }
 
-export class SecuritylakeCustomLogSourceConfigurationProviderIdentityList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeCustomLogSourceConfigurationProviderIdentity[] | cdktf.IResolvable
+export class SecuritylakeCustomLogSourceConfigurationProviderIdentityList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeCustomLogSourceConfigurationProviderIdentity[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -464,41 +464,41 @@ export interface SecuritylakeCustomLogSourceConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_custom_log_source#crawler_configuration SecuritylakeCustomLogSource#crawler_configuration}
   */
-  readonly crawlerConfiguration?: SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration[] | cdktf.IResolvable;
+  readonly crawlerConfiguration?: SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration[] | cdktn.IResolvable;
   /**
   * provider_identity block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_custom_log_source#provider_identity SecuritylakeCustomLogSource#provider_identity}
   */
-  readonly providerIdentity?: SecuritylakeCustomLogSourceConfigurationProviderIdentity[] | cdktf.IResolvable;
+  readonly providerIdentity?: SecuritylakeCustomLogSourceConfigurationProviderIdentity[] | cdktn.IResolvable;
 }
 
-export function securitylakeCustomLogSourceConfigurationToTerraform(struct?: SecuritylakeCustomLogSourceConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeCustomLogSourceConfigurationToTerraform(struct?: SecuritylakeCustomLogSourceConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    crawler_configuration: cdktf.listMapper(securitylakeCustomLogSourceConfigurationCrawlerConfigurationToTerraform, true)(struct!.crawlerConfiguration),
-    provider_identity: cdktf.listMapper(securitylakeCustomLogSourceConfigurationProviderIdentityToTerraform, true)(struct!.providerIdentity),
+    crawler_configuration: cdktn.listMapper(securitylakeCustomLogSourceConfigurationCrawlerConfigurationToTerraform, true)(struct!.crawlerConfiguration),
+    provider_identity: cdktn.listMapper(securitylakeCustomLogSourceConfigurationProviderIdentityToTerraform, true)(struct!.providerIdentity),
   }
 }
 
 
-export function securitylakeCustomLogSourceConfigurationToHclTerraform(struct?: SecuritylakeCustomLogSourceConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeCustomLogSourceConfigurationToHclTerraform(struct?: SecuritylakeCustomLogSourceConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     crawler_configuration: {
-      value: cdktf.listMapperHcl(securitylakeCustomLogSourceConfigurationCrawlerConfigurationToHclTerraform, true)(struct!.crawlerConfiguration),
+      value: cdktn.listMapperHcl(securitylakeCustomLogSourceConfigurationCrawlerConfigurationToHclTerraform, true)(struct!.crawlerConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationList",
     },
     provider_identity: {
-      value: cdktf.listMapperHcl(securitylakeCustomLogSourceConfigurationProviderIdentityToHclTerraform, true)(struct!.providerIdentity),
+      value: cdktn.listMapperHcl(securitylakeCustomLogSourceConfigurationProviderIdentityToHclTerraform, true)(struct!.providerIdentity),
       isBlock: true,
       type: "list",
       storageClassType: "SecuritylakeCustomLogSourceConfigurationProviderIdentityList",
@@ -509,9 +509,9 @@ export function securitylakeCustomLogSourceConfigurationToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeCustomLogSourceConfigurationOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeCustomLogSourceConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -519,11 +519,11 @@ export class SecuritylakeCustomLogSourceConfigurationOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeCustomLogSourceConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeCustomLogSourceConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -540,14 +540,14 @@ export class SecuritylakeCustomLogSourceConfigurationOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeCustomLogSourceConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeCustomLogSourceConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._crawlerConfiguration.internalValue = undefined;
       this._providerIdentity.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -564,7 +564,7 @@ export class SecuritylakeCustomLogSourceConfigurationOutputReference extends cdk
   public get crawlerConfiguration() {
     return this._crawlerConfiguration;
   }
-  public putCrawlerConfiguration(value: SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration[] | cdktf.IResolvable) {
+  public putCrawlerConfiguration(value: SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration[] | cdktn.IResolvable) {
     this._crawlerConfiguration.internalValue = value;
   }
   public resetCrawlerConfiguration() {
@@ -580,7 +580,7 @@ export class SecuritylakeCustomLogSourceConfigurationOutputReference extends cdk
   public get providerIdentity() {
     return this._providerIdentity;
   }
-  public putProviderIdentity(value: SecuritylakeCustomLogSourceConfigurationProviderIdentity[] | cdktf.IResolvable) {
+  public putProviderIdentity(value: SecuritylakeCustomLogSourceConfigurationProviderIdentity[] | cdktn.IResolvable) {
     this._providerIdentity.internalValue = value;
   }
   public resetProviderIdentity() {
@@ -592,15 +592,15 @@ export class SecuritylakeCustomLogSourceConfigurationOutputReference extends cdk
   }
 }
 
-export class SecuritylakeCustomLogSourceConfigurationList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeCustomLogSourceConfiguration[] | cdktf.IResolvable
+export class SecuritylakeCustomLogSourceConfigurationList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeCustomLogSourceConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -615,7 +615,7 @@ export class SecuritylakeCustomLogSourceConfigurationList extends cdktf.ComplexL
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_custom_log_source aws_securitylake_custom_log_source}
 */
-export class SecuritylakeCustomLogSource extends cdktf.TerraformResource {
+export class SecuritylakeCustomLogSource extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -626,14 +626,14 @@ export class SecuritylakeCustomLogSource extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecuritylakeCustomLogSource resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecuritylakeCustomLogSource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecuritylakeCustomLogSource to import
   * @param importFromId The id of the existing SecuritylakeCustomLogSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_custom_log_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecuritylakeCustomLogSource to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_securitylake_custom_log_source", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_securitylake_custom_log_source", importId: importFromId, provider });
       }
 
   // ===========
@@ -683,7 +683,7 @@ export class SecuritylakeCustomLogSource extends cdktf.TerraformResource {
   // event_classes - computed: false, optional: true, required: false
   private _eventClasses?: string[]; 
   public get eventClasses() {
-    return cdktf.Fn.tolist(this.getListAttribute('event_classes'));
+    return cdktn.Fn.tolist(this.getListAttribute('event_classes'));
   }
   public set eventClasses(value: string[]) {
     this._eventClasses = value;
@@ -757,7 +757,7 @@ export class SecuritylakeCustomLogSource extends cdktf.TerraformResource {
   public get configuration() {
     return this._configuration;
   }
-  public putConfiguration(value: SecuritylakeCustomLogSourceConfiguration[] | cdktf.IResolvable) {
+  public putConfiguration(value: SecuritylakeCustomLogSourceConfiguration[] | cdktn.IResolvable) {
     this._configuration.internalValue = value;
   }
   public resetConfiguration() {
@@ -774,42 +774,42 @@ export class SecuritylakeCustomLogSource extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      event_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._eventClasses),
-      region: cdktf.stringToTerraform(this._region),
-      source_name: cdktf.stringToTerraform(this._sourceName),
-      source_version: cdktf.stringToTerraform(this._sourceVersion),
-      configuration: cdktf.listMapper(securitylakeCustomLogSourceConfigurationToTerraform, true)(this._configuration.internalValue),
+      event_classes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._eventClasses),
+      region: cdktn.stringToTerraform(this._region),
+      source_name: cdktn.stringToTerraform(this._sourceName),
+      source_version: cdktn.stringToTerraform(this._sourceVersion),
+      configuration: cdktn.listMapper(securitylakeCustomLogSourceConfigurationToTerraform, true)(this._configuration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       event_classes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._eventClasses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._eventClasses),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_name: {
-        value: cdktf.stringToHclTerraform(this._sourceName),
+        value: cdktn.stringToHclTerraform(this._sourceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_version: {
-        value: cdktf.stringToHclTerraform(this._sourceVersion),
+        value: cdktn.stringToHclTerraform(this._sourceVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       configuration: {
-        value: cdktf.listMapperHcl(securitylakeCustomLogSourceConfigurationToHclTerraform, true)(this._configuration.internalValue),
+        value: cdktn.listMapperHcl(securitylakeCustomLogSourceConfigurationToHclTerraform, true)(this._configuration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SecuritylakeCustomLogSourceConfigurationList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CodecatalystDevEnvironmentConfig extends cdktf.TerraformMetaArguments {
+export interface CodecatalystDevEnvironmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codecatalyst_dev_environment#alias CodecatalystDevEnvironment#alias}
   */
@@ -62,7 +62,7 @@ export interface CodecatalystDevEnvironmentConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codecatalyst_dev_environment#repositories CodecatalystDevEnvironment#repositories}
   */
-  readonly repositories?: CodecatalystDevEnvironmentRepositories[] | cdktf.IResolvable;
+  readonly repositories?: CodecatalystDevEnvironmentRepositories[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -82,31 +82,31 @@ export interface CodecatalystDevEnvironmentIdes {
 }
 
 export function codecatalystDevEnvironmentIdesToTerraform(struct?: CodecatalystDevEnvironmentIdesOutputReference | CodecatalystDevEnvironmentIdes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    runtime: cdktf.stringToTerraform(struct!.runtime),
+    name: cdktn.stringToTerraform(struct!.name),
+    runtime: cdktn.stringToTerraform(struct!.runtime),
   }
 }
 
 
 export function codecatalystDevEnvironmentIdesToHclTerraform(struct?: CodecatalystDevEnvironmentIdesOutputReference | CodecatalystDevEnvironmentIdes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runtime: {
-      value: cdktf.stringToHclTerraform(struct!.runtime),
+      value: cdktn.stringToHclTerraform(struct!.runtime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,14 +117,14 @@ export function codecatalystDevEnvironmentIdesToHclTerraform(struct?: Codecataly
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodecatalystDevEnvironmentIdesOutputReference extends cdktf.ComplexObject {
+export class CodecatalystDevEnvironmentIdesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -195,24 +195,24 @@ export interface CodecatalystDevEnvironmentPersistentStorage {
 }
 
 export function codecatalystDevEnvironmentPersistentStorageToTerraform(struct?: CodecatalystDevEnvironmentPersistentStorageOutputReference | CodecatalystDevEnvironmentPersistentStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    size: cdktf.numberToTerraform(struct!.size),
+    size: cdktn.numberToTerraform(struct!.size),
   }
 }
 
 
 export function codecatalystDevEnvironmentPersistentStorageToHclTerraform(struct?: CodecatalystDevEnvironmentPersistentStorageOutputReference | CodecatalystDevEnvironmentPersistentStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     size: {
-      value: cdktf.numberToHclTerraform(struct!.size),
+      value: cdktn.numberToHclTerraform(struct!.size),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -223,14 +223,14 @@ export function codecatalystDevEnvironmentPersistentStorageToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodecatalystDevEnvironmentPersistentStorageOutputReference extends cdktf.ComplexObject {
+export class CodecatalystDevEnvironmentPersistentStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -279,32 +279,32 @@ export interface CodecatalystDevEnvironmentRepositories {
   readonly repositoryName: string;
 }
 
-export function codecatalystDevEnvironmentRepositoriesToTerraform(struct?: CodecatalystDevEnvironmentRepositories | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codecatalystDevEnvironmentRepositoriesToTerraform(struct?: CodecatalystDevEnvironmentRepositories | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    branch_name: cdktf.stringToTerraform(struct!.branchName),
-    repository_name: cdktf.stringToTerraform(struct!.repositoryName),
+    branch_name: cdktn.stringToTerraform(struct!.branchName),
+    repository_name: cdktn.stringToTerraform(struct!.repositoryName),
   }
 }
 
 
-export function codecatalystDevEnvironmentRepositoriesToHclTerraform(struct?: CodecatalystDevEnvironmentRepositories | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codecatalystDevEnvironmentRepositoriesToHclTerraform(struct?: CodecatalystDevEnvironmentRepositories | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     branch_name: {
-      value: cdktf.stringToHclTerraform(struct!.branchName),
+      value: cdktn.stringToHclTerraform(struct!.branchName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repository_name: {
-      value: cdktf.stringToHclTerraform(struct!.repositoryName),
+      value: cdktn.stringToHclTerraform(struct!.repositoryName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -315,9 +315,9 @@ export function codecatalystDevEnvironmentRepositoriesToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodecatalystDevEnvironmentRepositoriesOutputReference extends cdktf.ComplexObject {
+export class CodecatalystDevEnvironmentRepositoriesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -325,11 +325,11 @@ export class CodecatalystDevEnvironmentRepositoriesOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodecatalystDevEnvironmentRepositories | cdktf.IResolvable | undefined {
+  public get internalValue(): CodecatalystDevEnvironmentRepositories | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -346,14 +346,14 @@ export class CodecatalystDevEnvironmentRepositoriesOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodecatalystDevEnvironmentRepositories | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodecatalystDevEnvironmentRepositories | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._branchName = undefined;
       this._repositoryName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -395,15 +395,15 @@ export class CodecatalystDevEnvironmentRepositoriesOutputReference extends cdktf
   }
 }
 
-export class CodecatalystDevEnvironmentRepositoriesList extends cdktf.ComplexList {
-  public internalValue? : CodecatalystDevEnvironmentRepositories[] | cdktf.IResolvable
+export class CodecatalystDevEnvironmentRepositoriesList extends cdktn.ComplexList {
+  public internalValue? : CodecatalystDevEnvironmentRepositories[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -429,39 +429,39 @@ export interface CodecatalystDevEnvironmentTimeouts {
   readonly update?: string;
 }
 
-export function codecatalystDevEnvironmentTimeoutsToTerraform(struct?: CodecatalystDevEnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codecatalystDevEnvironmentTimeoutsToTerraform(struct?: CodecatalystDevEnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function codecatalystDevEnvironmentTimeoutsToHclTerraform(struct?: CodecatalystDevEnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codecatalystDevEnvironmentTimeoutsToHclTerraform(struct?: CodecatalystDevEnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -472,19 +472,19 @@ export function codecatalystDevEnvironmentTimeoutsToHclTerraform(struct?: Codeca
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodecatalystDevEnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CodecatalystDevEnvironmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CodecatalystDevEnvironmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CodecatalystDevEnvironmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -505,7 +505,7 @@ export class CodecatalystDevEnvironmentTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodecatalystDevEnvironmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodecatalystDevEnvironmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -513,7 +513,7 @@ export class CodecatalystDevEnvironmentTimeoutsOutputReference extends cdktf.Com
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -578,7 +578,7 @@ export class CodecatalystDevEnvironmentTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codecatalyst_dev_environment aws_codecatalyst_dev_environment}
 */
-export class CodecatalystDevEnvironment extends cdktf.TerraformResource {
+export class CodecatalystDevEnvironment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -589,14 +589,14 @@ export class CodecatalystDevEnvironment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CodecatalystDevEnvironment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CodecatalystDevEnvironment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodecatalystDevEnvironment to import
   * @param importFromId The id of the existing CodecatalystDevEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codecatalyst_dev_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodecatalystDevEnvironment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_codecatalyst_dev_environment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_codecatalyst_dev_environment", importId: importFromId, provider });
       }
 
   // ===========
@@ -777,7 +777,7 @@ export class CodecatalystDevEnvironment extends cdktf.TerraformResource {
   public get repositories() {
     return this._repositories;
   }
-  public putRepositories(value: CodecatalystDevEnvironmentRepositories[] | cdktf.IResolvable) {
+  public putRepositories(value: CodecatalystDevEnvironmentRepositories[] | cdktn.IResolvable) {
     this._repositories.internalValue = value;
   }
   public resetRepositories() {
@@ -810,16 +810,16 @@ export class CodecatalystDevEnvironment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias: cdktf.stringToTerraform(this._alias),
-      id: cdktf.stringToTerraform(this._id),
-      inactivity_timeout_minutes: cdktf.numberToTerraform(this._inactivityTimeoutMinutes),
-      instance_type: cdktf.stringToTerraform(this._instanceType),
-      project_name: cdktf.stringToTerraform(this._projectName),
-      region: cdktf.stringToTerraform(this._region),
-      space_name: cdktf.stringToTerraform(this._spaceName),
+      alias: cdktn.stringToTerraform(this._alias),
+      id: cdktn.stringToTerraform(this._id),
+      inactivity_timeout_minutes: cdktn.numberToTerraform(this._inactivityTimeoutMinutes),
+      instance_type: cdktn.stringToTerraform(this._instanceType),
+      project_name: cdktn.stringToTerraform(this._projectName),
+      region: cdktn.stringToTerraform(this._region),
+      space_name: cdktn.stringToTerraform(this._spaceName),
       ides: codecatalystDevEnvironmentIdesToTerraform(this._ides.internalValue),
       persistent_storage: codecatalystDevEnvironmentPersistentStorageToTerraform(this._persistentStorage.internalValue),
-      repositories: cdktf.listMapper(codecatalystDevEnvironmentRepositoriesToTerraform, true)(this._repositories.internalValue),
+      repositories: cdktn.listMapper(codecatalystDevEnvironmentRepositoriesToTerraform, true)(this._repositories.internalValue),
       timeouts: codecatalystDevEnvironmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -827,43 +827,43 @@ export class CodecatalystDevEnvironment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       inactivity_timeout_minutes: {
-        value: cdktf.numberToHclTerraform(this._inactivityTimeoutMinutes),
+        value: cdktn.numberToHclTerraform(this._inactivityTimeoutMinutes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       instance_type: {
-        value: cdktf.stringToHclTerraform(this._instanceType),
+        value: cdktn.stringToHclTerraform(this._instanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_name: {
-        value: cdktf.stringToHclTerraform(this._projectName),
+        value: cdktn.stringToHclTerraform(this._projectName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       space_name: {
-        value: cdktf.stringToHclTerraform(this._spaceName),
+        value: cdktn.stringToHclTerraform(this._spaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -881,7 +881,7 @@ export class CodecatalystDevEnvironment extends cdktf.TerraformResource {
         storageClassType: "CodecatalystDevEnvironmentPersistentStorageList",
       },
       repositories: {
-        value: cdktf.listMapperHcl(codecatalystDevEnvironmentRepositoriesToHclTerraform, true)(this._repositories.internalValue),
+        value: cdktn.listMapperHcl(codecatalystDevEnvironmentRepositoriesToHclTerraform, true)(this._repositories.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CodecatalystDevEnvironmentRepositoriesList",

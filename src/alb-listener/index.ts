@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AlbListenerConfig extends cdktf.TerraformMetaArguments {
+export interface AlbListenerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_listener#alpn_policy AlbListener#alpn_policy}
   */
@@ -108,7 +108,7 @@ export interface AlbListenerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_listener#routing_http_response_server_enabled AlbListener#routing_http_response_server_enabled}
   */
-  readonly routingHttpResponseServerEnabled?: boolean | cdktf.IResolvable;
+  readonly routingHttpResponseServerEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_listener#routing_http_response_strict_transport_security_header_value AlbListener#routing_http_response_strict_transport_security_header_value}
   */
@@ -142,7 +142,7 @@ export interface AlbListenerConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_listener#default_action AlbListener#default_action}
   */
-  readonly defaultAction: AlbListenerDefaultAction[] | cdktf.IResolvable;
+  readonly defaultAction: AlbListenerDefaultAction[] | cdktn.IResolvable;
   /**
   * mutual_authentication block
   *
@@ -192,73 +192,73 @@ export interface AlbListenerDefaultActionAuthenticateCognito {
 }
 
 export function albListenerDefaultActionAuthenticateCognitoToTerraform(struct?: AlbListenerDefaultActionAuthenticateCognitoOutputReference | AlbListenerDefaultActionAuthenticateCognito): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authentication_request_extra_params: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.authenticationRequestExtraParams),
-    on_unauthenticated_request: cdktf.stringToTerraform(struct!.onUnauthenticatedRequest),
-    scope: cdktf.stringToTerraform(struct!.scope),
-    session_cookie_name: cdktf.stringToTerraform(struct!.sessionCookieName),
-    session_timeout: cdktf.numberToTerraform(struct!.sessionTimeout),
-    user_pool_arn: cdktf.stringToTerraform(struct!.userPoolArn),
-    user_pool_client_id: cdktf.stringToTerraform(struct!.userPoolClientId),
-    user_pool_domain: cdktf.stringToTerraform(struct!.userPoolDomain),
+    authentication_request_extra_params: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.authenticationRequestExtraParams),
+    on_unauthenticated_request: cdktn.stringToTerraform(struct!.onUnauthenticatedRequest),
+    scope: cdktn.stringToTerraform(struct!.scope),
+    session_cookie_name: cdktn.stringToTerraform(struct!.sessionCookieName),
+    session_timeout: cdktn.numberToTerraform(struct!.sessionTimeout),
+    user_pool_arn: cdktn.stringToTerraform(struct!.userPoolArn),
+    user_pool_client_id: cdktn.stringToTerraform(struct!.userPoolClientId),
+    user_pool_domain: cdktn.stringToTerraform(struct!.userPoolDomain),
   }
 }
 
 
 export function albListenerDefaultActionAuthenticateCognitoToHclTerraform(struct?: AlbListenerDefaultActionAuthenticateCognitoOutputReference | AlbListenerDefaultActionAuthenticateCognito): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authentication_request_extra_params: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.authenticationRequestExtraParams),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.authenticationRequestExtraParams),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     on_unauthenticated_request: {
-      value: cdktf.stringToHclTerraform(struct!.onUnauthenticatedRequest),
+      value: cdktn.stringToHclTerraform(struct!.onUnauthenticatedRequest),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     session_cookie_name: {
-      value: cdktf.stringToHclTerraform(struct!.sessionCookieName),
+      value: cdktn.stringToHclTerraform(struct!.sessionCookieName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     session_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.sessionTimeout),
+      value: cdktn.numberToHclTerraform(struct!.sessionTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     user_pool_arn: {
-      value: cdktf.stringToHclTerraform(struct!.userPoolArn),
+      value: cdktn.stringToHclTerraform(struct!.userPoolArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_pool_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.userPoolClientId),
+      value: cdktn.stringToHclTerraform(struct!.userPoolClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_pool_domain: {
-      value: cdktf.stringToHclTerraform(struct!.userPoolDomain),
+      value: cdktn.stringToHclTerraform(struct!.userPoolDomain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -269,14 +269,14 @@ export function albListenerDefaultActionAuthenticateCognitoToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbListenerDefaultActionAuthenticateCognitoOutputReference extends cdktf.ComplexObject {
+export class AlbListenerDefaultActionAuthenticateCognitoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -510,94 +510,94 @@ export interface AlbListenerDefaultActionAuthenticateOidc {
 }
 
 export function albListenerDefaultActionAuthenticateOidcToTerraform(struct?: AlbListenerDefaultActionAuthenticateOidcOutputReference | AlbListenerDefaultActionAuthenticateOidc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authentication_request_extra_params: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.authenticationRequestExtraParams),
-    authorization_endpoint: cdktf.stringToTerraform(struct!.authorizationEndpoint),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
-    on_unauthenticated_request: cdktf.stringToTerraform(struct!.onUnauthenticatedRequest),
-    scope: cdktf.stringToTerraform(struct!.scope),
-    session_cookie_name: cdktf.stringToTerraform(struct!.sessionCookieName),
-    session_timeout: cdktf.numberToTerraform(struct!.sessionTimeout),
-    token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
-    user_info_endpoint: cdktf.stringToTerraform(struct!.userInfoEndpoint),
+    authentication_request_extra_params: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.authenticationRequestExtraParams),
+    authorization_endpoint: cdktn.stringToTerraform(struct!.authorizationEndpoint),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
+    on_unauthenticated_request: cdktn.stringToTerraform(struct!.onUnauthenticatedRequest),
+    scope: cdktn.stringToTerraform(struct!.scope),
+    session_cookie_name: cdktn.stringToTerraform(struct!.sessionCookieName),
+    session_timeout: cdktn.numberToTerraform(struct!.sessionTimeout),
+    token_endpoint: cdktn.stringToTerraform(struct!.tokenEndpoint),
+    user_info_endpoint: cdktn.stringToTerraform(struct!.userInfoEndpoint),
   }
 }
 
 
 export function albListenerDefaultActionAuthenticateOidcToHclTerraform(struct?: AlbListenerDefaultActionAuthenticateOidcOutputReference | AlbListenerDefaultActionAuthenticateOidc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authentication_request_extra_params: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.authenticationRequestExtraParams),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.authenticationRequestExtraParams),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     authorization_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.authorizationEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.authorizationEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     on_unauthenticated_request: {
-      value: cdktf.stringToHclTerraform(struct!.onUnauthenticatedRequest),
+      value: cdktn.stringToHclTerraform(struct!.onUnauthenticatedRequest),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     session_cookie_name: {
-      value: cdktf.stringToHclTerraform(struct!.sessionCookieName),
+      value: cdktn.stringToHclTerraform(struct!.sessionCookieName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     session_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.sessionTimeout),
+      value: cdktn.numberToHclTerraform(struct!.sessionTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     token_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.tokenEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.tokenEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_info_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.userInfoEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.userInfoEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -608,14 +608,14 @@ export function albListenerDefaultActionAuthenticateOidcToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbListenerDefaultActionAuthenticateOidcOutputReference extends cdktf.ComplexObject {
+export class AlbListenerDefaultActionAuthenticateOidcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -874,38 +874,38 @@ export interface AlbListenerDefaultActionFixedResponse {
 }
 
 export function albListenerDefaultActionFixedResponseToTerraform(struct?: AlbListenerDefaultActionFixedResponseOutputReference | AlbListenerDefaultActionFixedResponse): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content_type: cdktf.stringToTerraform(struct!.contentType),
-    message_body: cdktf.stringToTerraform(struct!.messageBody),
-    status_code: cdktf.stringToTerraform(struct!.statusCode),
+    content_type: cdktn.stringToTerraform(struct!.contentType),
+    message_body: cdktn.stringToTerraform(struct!.messageBody),
+    status_code: cdktn.stringToTerraform(struct!.statusCode),
   }
 }
 
 
 export function albListenerDefaultActionFixedResponseToHclTerraform(struct?: AlbListenerDefaultActionFixedResponseOutputReference | AlbListenerDefaultActionFixedResponse): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentType),
+      value: cdktn.stringToHclTerraform(struct!.contentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message_body: {
-      value: cdktf.stringToHclTerraform(struct!.messageBody),
+      value: cdktn.stringToHclTerraform(struct!.messageBody),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status_code: {
-      value: cdktf.stringToHclTerraform(struct!.statusCode),
+      value: cdktn.stringToHclTerraform(struct!.statusCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -916,14 +916,14 @@ export function albListenerDefaultActionFixedResponseToHclTerraform(struct?: Alb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbListenerDefaultActionFixedResponseOutputReference extends cdktf.ComplexObject {
+export class AlbListenerDefaultActionFixedResponseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1013,35 +1013,35 @@ export interface AlbListenerDefaultActionForwardStickiness {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_listener#enabled AlbListener#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
 export function albListenerDefaultActionForwardStickinessToTerraform(struct?: AlbListenerDefaultActionForwardStickinessOutputReference | AlbListenerDefaultActionForwardStickiness): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    duration: cdktf.numberToTerraform(struct!.duration),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    duration: cdktn.numberToTerraform(struct!.duration),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function albListenerDefaultActionForwardStickinessToHclTerraform(struct?: AlbListenerDefaultActionForwardStickinessOutputReference | AlbListenerDefaultActionForwardStickiness): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     duration: {
-      value: cdktf.numberToHclTerraform(struct!.duration),
+      value: cdktn.numberToHclTerraform(struct!.duration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1052,14 +1052,14 @@ export function albListenerDefaultActionForwardStickinessToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbListenerDefaultActionForwardStickinessOutputReference extends cdktf.ComplexObject {
+export class AlbListenerDefaultActionForwardStickinessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1104,11 +1104,11 @@ export class AlbListenerDefaultActionForwardStickinessOutputReference extends cd
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1130,32 +1130,32 @@ export interface AlbListenerDefaultActionForwardTargetGroup {
   readonly weight?: number;
 }
 
-export function albListenerDefaultActionForwardTargetGroupToTerraform(struct?: AlbListenerDefaultActionForwardTargetGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albListenerDefaultActionForwardTargetGroupToTerraform(struct?: AlbListenerDefaultActionForwardTargetGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
-    weight: cdktf.numberToTerraform(struct!.weight),
+    arn: cdktn.stringToTerraform(struct!.arn),
+    weight: cdktn.numberToTerraform(struct!.weight),
   }
 }
 
 
-export function albListenerDefaultActionForwardTargetGroupToHclTerraform(struct?: AlbListenerDefaultActionForwardTargetGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albListenerDefaultActionForwardTargetGroupToHclTerraform(struct?: AlbListenerDefaultActionForwardTargetGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1166,9 +1166,9 @@ export function albListenerDefaultActionForwardTargetGroupToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbListenerDefaultActionForwardTargetGroupOutputReference extends cdktf.ComplexObject {
+export class AlbListenerDefaultActionForwardTargetGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1176,11 +1176,11 @@ export class AlbListenerDefaultActionForwardTargetGroupOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AlbListenerDefaultActionForwardTargetGroup | cdktf.IResolvable | undefined {
+  public get internalValue(): AlbListenerDefaultActionForwardTargetGroup | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1197,14 +1197,14 @@ export class AlbListenerDefaultActionForwardTargetGroupOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlbListenerDefaultActionForwardTargetGroup | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlbListenerDefaultActionForwardTargetGroup | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._arn = undefined;
       this._weight = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1246,15 +1246,15 @@ export class AlbListenerDefaultActionForwardTargetGroupOutputReference extends c
   }
 }
 
-export class AlbListenerDefaultActionForwardTargetGroupList extends cdktf.ComplexList {
-  public internalValue? : AlbListenerDefaultActionForwardTargetGroup[] | cdktf.IResolvable
+export class AlbListenerDefaultActionForwardTargetGroupList extends cdktn.ComplexList {
+  public internalValue? : AlbListenerDefaultActionForwardTargetGroup[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1277,24 +1277,24 @@ export interface AlbListenerDefaultActionForward {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_listener#target_group AlbListener#target_group}
   */
-  readonly targetGroup: AlbListenerDefaultActionForwardTargetGroup[] | cdktf.IResolvable;
+  readonly targetGroup: AlbListenerDefaultActionForwardTargetGroup[] | cdktn.IResolvable;
 }
 
 export function albListenerDefaultActionForwardToTerraform(struct?: AlbListenerDefaultActionForwardOutputReference | AlbListenerDefaultActionForward): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     stickiness: albListenerDefaultActionForwardStickinessToTerraform(struct!.stickiness),
-    target_group: cdktf.listMapper(albListenerDefaultActionForwardTargetGroupToTerraform, true)(struct!.targetGroup),
+    target_group: cdktn.listMapper(albListenerDefaultActionForwardTargetGroupToTerraform, true)(struct!.targetGroup),
   }
 }
 
 
 export function albListenerDefaultActionForwardToHclTerraform(struct?: AlbListenerDefaultActionForwardOutputReference | AlbListenerDefaultActionForward): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1305,7 +1305,7 @@ export function albListenerDefaultActionForwardToHclTerraform(struct?: AlbListen
       storageClassType: "AlbListenerDefaultActionForwardStickinessList",
     },
     target_group: {
-      value: cdktf.listMapperHcl(albListenerDefaultActionForwardTargetGroupToHclTerraform, true)(struct!.targetGroup),
+      value: cdktn.listMapperHcl(albListenerDefaultActionForwardTargetGroupToHclTerraform, true)(struct!.targetGroup),
       isBlock: true,
       type: "set",
       storageClassType: "AlbListenerDefaultActionForwardTargetGroupList",
@@ -1316,14 +1316,14 @@ export function albListenerDefaultActionForwardToHclTerraform(struct?: AlbListen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbListenerDefaultActionForwardOutputReference extends cdktf.ComplexObject {
+export class AlbListenerDefaultActionForwardOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1375,7 +1375,7 @@ export class AlbListenerDefaultActionForwardOutputReference extends cdktf.Comple
   public get targetGroup() {
     return this._targetGroup;
   }
-  public putTargetGroup(value: AlbListenerDefaultActionForwardTargetGroup[] | cdktf.IResolvable) {
+  public putTargetGroup(value: AlbListenerDefaultActionForwardTargetGroup[] | cdktn.IResolvable) {
     this._targetGroup.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1398,39 +1398,39 @@ export interface AlbListenerDefaultActionJwtValidationAdditionalClaim {
   readonly values: string[];
 }
 
-export function albListenerDefaultActionJwtValidationAdditionalClaimToTerraform(struct?: AlbListenerDefaultActionJwtValidationAdditionalClaim | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albListenerDefaultActionJwtValidationAdditionalClaimToTerraform(struct?: AlbListenerDefaultActionJwtValidationAdditionalClaim | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    format: cdktf.stringToTerraform(struct!.format),
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    format: cdktn.stringToTerraform(struct!.format),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function albListenerDefaultActionJwtValidationAdditionalClaimToHclTerraform(struct?: AlbListenerDefaultActionJwtValidationAdditionalClaim | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albListenerDefaultActionJwtValidationAdditionalClaimToHclTerraform(struct?: AlbListenerDefaultActionJwtValidationAdditionalClaim | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     format: {
-      value: cdktf.stringToHclTerraform(struct!.format),
+      value: cdktn.stringToHclTerraform(struct!.format),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1441,9 +1441,9 @@ export function albListenerDefaultActionJwtValidationAdditionalClaimToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbListenerDefaultActionJwtValidationAdditionalClaimOutputReference extends cdktf.ComplexObject {
+export class AlbListenerDefaultActionJwtValidationAdditionalClaimOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1451,11 +1451,11 @@ export class AlbListenerDefaultActionJwtValidationAdditionalClaimOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AlbListenerDefaultActionJwtValidationAdditionalClaim | cdktf.IResolvable | undefined {
+  public get internalValue(): AlbListenerDefaultActionJwtValidationAdditionalClaim | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1476,7 +1476,7 @@ export class AlbListenerDefaultActionJwtValidationAdditionalClaimOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlbListenerDefaultActionJwtValidationAdditionalClaim | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlbListenerDefaultActionJwtValidationAdditionalClaim | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1484,7 +1484,7 @@ export class AlbListenerDefaultActionJwtValidationAdditionalClaimOutputReference
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1526,7 +1526,7 @@ export class AlbListenerDefaultActionJwtValidationAdditionalClaimOutputReference
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1537,15 +1537,15 @@ export class AlbListenerDefaultActionJwtValidationAdditionalClaimOutputReference
   }
 }
 
-export class AlbListenerDefaultActionJwtValidationAdditionalClaimList extends cdktf.ComplexList {
-  public internalValue? : AlbListenerDefaultActionJwtValidationAdditionalClaim[] | cdktf.IResolvable
+export class AlbListenerDefaultActionJwtValidationAdditionalClaimList extends cdktn.ComplexList {
+  public internalValue? : AlbListenerDefaultActionJwtValidationAdditionalClaim[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1570,42 +1570,42 @@ export interface AlbListenerDefaultActionJwtValidation {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_listener#additional_claim AlbListener#additional_claim}
   */
-  readonly additionalClaim?: AlbListenerDefaultActionJwtValidationAdditionalClaim[] | cdktf.IResolvable;
+  readonly additionalClaim?: AlbListenerDefaultActionJwtValidationAdditionalClaim[] | cdktn.IResolvable;
 }
 
 export function albListenerDefaultActionJwtValidationToTerraform(struct?: AlbListenerDefaultActionJwtValidationOutputReference | AlbListenerDefaultActionJwtValidation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    issuer: cdktf.stringToTerraform(struct!.issuer),
-    jwks_endpoint: cdktf.stringToTerraform(struct!.jwksEndpoint),
-    additional_claim: cdktf.listMapper(albListenerDefaultActionJwtValidationAdditionalClaimToTerraform, true)(struct!.additionalClaim),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
+    jwks_endpoint: cdktn.stringToTerraform(struct!.jwksEndpoint),
+    additional_claim: cdktn.listMapper(albListenerDefaultActionJwtValidationAdditionalClaimToTerraform, true)(struct!.additionalClaim),
   }
 }
 
 
 export function albListenerDefaultActionJwtValidationToHclTerraform(struct?: AlbListenerDefaultActionJwtValidationOutputReference | AlbListenerDefaultActionJwtValidation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jwks_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.jwksEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.jwksEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     additional_claim: {
-      value: cdktf.listMapperHcl(albListenerDefaultActionJwtValidationAdditionalClaimToHclTerraform, true)(struct!.additionalClaim),
+      value: cdktn.listMapperHcl(albListenerDefaultActionJwtValidationAdditionalClaimToHclTerraform, true)(struct!.additionalClaim),
       isBlock: true,
       type: "set",
       storageClassType: "AlbListenerDefaultActionJwtValidationAdditionalClaimList",
@@ -1616,14 +1616,14 @@ export function albListenerDefaultActionJwtValidationToHclTerraform(struct?: Alb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbListenerDefaultActionJwtValidationOutputReference extends cdktf.ComplexObject {
+export class AlbListenerDefaultActionJwtValidationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1691,7 +1691,7 @@ export class AlbListenerDefaultActionJwtValidationOutputReference extends cdktf.
   public get additionalClaim() {
     return this._additionalClaim;
   }
-  public putAdditionalClaim(value: AlbListenerDefaultActionJwtValidationAdditionalClaim[] | cdktf.IResolvable) {
+  public putAdditionalClaim(value: AlbListenerDefaultActionJwtValidationAdditionalClaim[] | cdktn.IResolvable) {
     this._additionalClaim.internalValue = value;
   }
   public resetAdditionalClaim() {
@@ -1730,59 +1730,59 @@ export interface AlbListenerDefaultActionRedirect {
 }
 
 export function albListenerDefaultActionRedirectToTerraform(struct?: AlbListenerDefaultActionRedirectOutputReference | AlbListenerDefaultActionRedirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.stringToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    query: cdktf.stringToTerraform(struct!.query),
-    status_code: cdktf.stringToTerraform(struct!.statusCode),
+    host: cdktn.stringToTerraform(struct!.host),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.stringToTerraform(struct!.port),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    query: cdktn.stringToTerraform(struct!.query),
+    status_code: cdktn.stringToTerraform(struct!.statusCode),
   }
 }
 
 
 export function albListenerDefaultActionRedirectToHclTerraform(struct?: AlbListenerDefaultActionRedirectOutputReference | AlbListenerDefaultActionRedirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status_code: {
-      value: cdktf.stringToHclTerraform(struct!.statusCode),
+      value: cdktn.stringToHclTerraform(struct!.statusCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1793,14 +1793,14 @@ export function albListenerDefaultActionRedirectToHclTerraform(struct?: AlbListe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbListenerDefaultActionRedirectOutputReference extends cdktf.ComplexObject {
+export class AlbListenerDefaultActionRedirectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1999,15 +1999,15 @@ export interface AlbListenerDefaultAction {
   readonly redirect?: AlbListenerDefaultActionRedirect;
 }
 
-export function albListenerDefaultActionToTerraform(struct?: AlbListenerDefaultAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albListenerDefaultActionToTerraform(struct?: AlbListenerDefaultAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    order: cdktf.numberToTerraform(struct!.order),
-    target_group_arn: cdktf.stringToTerraform(struct!.targetGroupArn),
-    type: cdktf.stringToTerraform(struct!.type),
+    order: cdktn.numberToTerraform(struct!.order),
+    target_group_arn: cdktn.stringToTerraform(struct!.targetGroupArn),
+    type: cdktn.stringToTerraform(struct!.type),
     authenticate_cognito: albListenerDefaultActionAuthenticateCognitoToTerraform(struct!.authenticateCognito),
     authenticate_oidc: albListenerDefaultActionAuthenticateOidcToTerraform(struct!.authenticateOidc),
     fixed_response: albListenerDefaultActionFixedResponseToTerraform(struct!.fixedResponse),
@@ -2018,26 +2018,26 @@ export function albListenerDefaultActionToTerraform(struct?: AlbListenerDefaultA
 }
 
 
-export function albListenerDefaultActionToHclTerraform(struct?: AlbListenerDefaultAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albListenerDefaultActionToHclTerraform(struct?: AlbListenerDefaultAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     order: {
-      value: cdktf.numberToHclTerraform(struct!.order),
+      value: cdktn.numberToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     target_group_arn: {
-      value: cdktf.stringToHclTerraform(struct!.targetGroupArn),
+      value: cdktn.stringToHclTerraform(struct!.targetGroupArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2084,9 +2084,9 @@ export function albListenerDefaultActionToHclTerraform(struct?: AlbListenerDefau
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbListenerDefaultActionOutputReference extends cdktf.ComplexObject {
+export class AlbListenerDefaultActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2094,11 +2094,11 @@ export class AlbListenerDefaultActionOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AlbListenerDefaultAction | cdktf.IResolvable | undefined {
+  public get internalValue(): AlbListenerDefaultAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2143,7 +2143,7 @@ export class AlbListenerDefaultActionOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlbListenerDefaultAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlbListenerDefaultAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2157,7 +2157,7 @@ export class AlbListenerDefaultActionOutputReference extends cdktf.ComplexObject
       this._jwtValidation.internalValue = undefined;
       this._redirect.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2318,15 +2318,15 @@ export class AlbListenerDefaultActionOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class AlbListenerDefaultActionList extends cdktf.ComplexList {
-  public internalValue? : AlbListenerDefaultAction[] | cdktf.IResolvable
+export class AlbListenerDefaultActionList extends cdktn.ComplexList {
+  public internalValue? : AlbListenerDefaultAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2345,7 +2345,7 @@ export interface AlbListenerMutualAuthentication {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_listener#ignore_client_certificate_expiry AlbListener#ignore_client_certificate_expiry}
   */
-  readonly ignoreClientCertificateExpiry?: boolean | cdktf.IResolvable;
+  readonly ignoreClientCertificateExpiry?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_listener#mode AlbListener#mode}
   */
@@ -2357,45 +2357,45 @@ export interface AlbListenerMutualAuthentication {
 }
 
 export function albListenerMutualAuthenticationToTerraform(struct?: AlbListenerMutualAuthenticationOutputReference | AlbListenerMutualAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    advertise_trust_store_ca_names: cdktf.stringToTerraform(struct!.advertiseTrustStoreCaNames),
-    ignore_client_certificate_expiry: cdktf.booleanToTerraform(struct!.ignoreClientCertificateExpiry),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    trust_store_arn: cdktf.stringToTerraform(struct!.trustStoreArn),
+    advertise_trust_store_ca_names: cdktn.stringToTerraform(struct!.advertiseTrustStoreCaNames),
+    ignore_client_certificate_expiry: cdktn.booleanToTerraform(struct!.ignoreClientCertificateExpiry),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    trust_store_arn: cdktn.stringToTerraform(struct!.trustStoreArn),
   }
 }
 
 
 export function albListenerMutualAuthenticationToHclTerraform(struct?: AlbListenerMutualAuthenticationOutputReference | AlbListenerMutualAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     advertise_trust_store_ca_names: {
-      value: cdktf.stringToHclTerraform(struct!.advertiseTrustStoreCaNames),
+      value: cdktn.stringToHclTerraform(struct!.advertiseTrustStoreCaNames),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ignore_client_certificate_expiry: {
-      value: cdktf.booleanToHclTerraform(struct!.ignoreClientCertificateExpiry),
+      value: cdktn.booleanToHclTerraform(struct!.ignoreClientCertificateExpiry),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     trust_store_arn: {
-      value: cdktf.stringToHclTerraform(struct!.trustStoreArn),
+      value: cdktn.stringToHclTerraform(struct!.trustStoreArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2406,14 +2406,14 @@ export function albListenerMutualAuthenticationToHclTerraform(struct?: AlbListen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbListenerMutualAuthenticationOutputReference extends cdktf.ComplexObject {
+export class AlbListenerMutualAuthenticationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2473,11 +2473,11 @@ export class AlbListenerMutualAuthenticationOutputReference extends cdktf.Comple
   }
 
   // ignore_client_certificate_expiry - computed: false, optional: true, required: false
-  private _ignoreClientCertificateExpiry?: boolean | cdktf.IResolvable; 
+  private _ignoreClientCertificateExpiry?: boolean | cdktn.IResolvable; 
   public get ignoreClientCertificateExpiry() {
     return this.getBooleanAttribute('ignore_client_certificate_expiry');
   }
-  public set ignoreClientCertificateExpiry(value: boolean | cdktf.IResolvable) {
+  public set ignoreClientCertificateExpiry(value: boolean | cdktn.IResolvable) {
     this._ignoreClientCertificateExpiry = value;
   }
   public resetIgnoreClientCertificateExpiry() {
@@ -2528,32 +2528,32 @@ export interface AlbListenerTimeouts {
   readonly update?: string;
 }
 
-export function albListenerTimeoutsToTerraform(struct?: AlbListenerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albListenerTimeoutsToTerraform(struct?: AlbListenerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function albListenerTimeoutsToHclTerraform(struct?: AlbListenerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albListenerTimeoutsToHclTerraform(struct?: AlbListenerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2564,19 +2564,19 @@ export function albListenerTimeoutsToHclTerraform(struct?: AlbListenerTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbListenerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AlbListenerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AlbListenerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AlbListenerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2593,14 +2593,14 @@ export class AlbListenerTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlbListenerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlbListenerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2648,7 +2648,7 @@ export class AlbListenerTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_listener aws_alb_listener}
 */
-export class AlbListener extends cdktf.TerraformResource {
+export class AlbListener extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2659,14 +2659,14 @@ export class AlbListener extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AlbListener resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AlbListener resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlbListener to import
   * @param importFromId The id of the existing AlbListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_listener#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlbListener to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_alb_listener", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_alb_listener", importId: importFromId, provider });
       }
 
   // ===========
@@ -3090,11 +3090,11 @@ export class AlbListener extends cdktf.TerraformResource {
   }
 
   // routing_http_response_server_enabled - computed: true, optional: true, required: false
-  private _routingHttpResponseServerEnabled?: boolean | cdktf.IResolvable; 
+  private _routingHttpResponseServerEnabled?: boolean | cdktn.IResolvable; 
   public get routingHttpResponseServerEnabled() {
     return this.getBooleanAttribute('routing_http_response_server_enabled');
   }
-  public set routingHttpResponseServerEnabled(value: boolean | cdktf.IResolvable) {
+  public set routingHttpResponseServerEnabled(value: boolean | cdktn.IResolvable) {
     this._routingHttpResponseServerEnabled = value;
   }
   public resetRoutingHttpResponseServerEnabled() {
@@ -3222,7 +3222,7 @@ export class AlbListener extends cdktf.TerraformResource {
   public get defaultAction() {
     return this._defaultAction;
   }
-  public putDefaultAction(value: AlbListenerDefaultAction[] | cdktf.IResolvable) {
+  public putDefaultAction(value: AlbListenerDefaultAction[] | cdktn.IResolvable) {
     this._defaultAction.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3268,37 +3268,37 @@ export class AlbListener extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alpn_policy: cdktf.stringToTerraform(this._alpnPolicy),
-      certificate_arn: cdktf.stringToTerraform(this._certificateArn),
-      id: cdktf.stringToTerraform(this._id),
-      load_balancer_arn: cdktf.stringToTerraform(this._loadBalancerArn),
-      port: cdktf.numberToTerraform(this._port),
-      protocol: cdktf.stringToTerraform(this._protocol),
-      region: cdktf.stringToTerraform(this._region),
-      routing_http_request_x_amzn_mtls_clientcert_header_name: cdktf.stringToTerraform(this._routingHttpRequestXAmznMtlsClientcertHeaderName),
-      routing_http_request_x_amzn_mtls_clientcert_issuer_header_name: cdktf.stringToTerraform(this._routingHttpRequestXAmznMtlsClientcertIssuerHeaderName),
-      routing_http_request_x_amzn_mtls_clientcert_leaf_header_name: cdktf.stringToTerraform(this._routingHttpRequestXAmznMtlsClientcertLeafHeaderName),
-      routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name: cdktf.stringToTerraform(this._routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName),
-      routing_http_request_x_amzn_mtls_clientcert_subject_header_name: cdktf.stringToTerraform(this._routingHttpRequestXAmznMtlsClientcertSubjectHeaderName),
-      routing_http_request_x_amzn_mtls_clientcert_validity_header_name: cdktf.stringToTerraform(this._routingHttpRequestXAmznMtlsClientcertValidityHeaderName),
-      routing_http_request_x_amzn_tls_cipher_suite_header_name: cdktf.stringToTerraform(this._routingHttpRequestXAmznTlsCipherSuiteHeaderName),
-      routing_http_request_x_amzn_tls_version_header_name: cdktf.stringToTerraform(this._routingHttpRequestXAmznTlsVersionHeaderName),
-      routing_http_response_access_control_allow_credentials_header_value: cdktf.stringToTerraform(this._routingHttpResponseAccessControlAllowCredentialsHeaderValue),
-      routing_http_response_access_control_allow_headers_header_value: cdktf.stringToTerraform(this._routingHttpResponseAccessControlAllowHeadersHeaderValue),
-      routing_http_response_access_control_allow_methods_header_value: cdktf.stringToTerraform(this._routingHttpResponseAccessControlAllowMethodsHeaderValue),
-      routing_http_response_access_control_allow_origin_header_value: cdktf.stringToTerraform(this._routingHttpResponseAccessControlAllowOriginHeaderValue),
-      routing_http_response_access_control_expose_headers_header_value: cdktf.stringToTerraform(this._routingHttpResponseAccessControlExposeHeadersHeaderValue),
-      routing_http_response_access_control_max_age_header_value: cdktf.stringToTerraform(this._routingHttpResponseAccessControlMaxAgeHeaderValue),
-      routing_http_response_content_security_policy_header_value: cdktf.stringToTerraform(this._routingHttpResponseContentSecurityPolicyHeaderValue),
-      routing_http_response_server_enabled: cdktf.booleanToTerraform(this._routingHttpResponseServerEnabled),
-      routing_http_response_strict_transport_security_header_value: cdktf.stringToTerraform(this._routingHttpResponseStrictTransportSecurityHeaderValue),
-      routing_http_response_x_content_type_options_header_value: cdktf.stringToTerraform(this._routingHttpResponseXContentTypeOptionsHeaderValue),
-      routing_http_response_x_frame_options_header_value: cdktf.stringToTerraform(this._routingHttpResponseXFrameOptionsHeaderValue),
-      ssl_policy: cdktf.stringToTerraform(this._sslPolicy),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      tcp_idle_timeout_seconds: cdktf.numberToTerraform(this._tcpIdleTimeoutSeconds),
-      default_action: cdktf.listMapper(albListenerDefaultActionToTerraform, true)(this._defaultAction.internalValue),
+      alpn_policy: cdktn.stringToTerraform(this._alpnPolicy),
+      certificate_arn: cdktn.stringToTerraform(this._certificateArn),
+      id: cdktn.stringToTerraform(this._id),
+      load_balancer_arn: cdktn.stringToTerraform(this._loadBalancerArn),
+      port: cdktn.numberToTerraform(this._port),
+      protocol: cdktn.stringToTerraform(this._protocol),
+      region: cdktn.stringToTerraform(this._region),
+      routing_http_request_x_amzn_mtls_clientcert_header_name: cdktn.stringToTerraform(this._routingHttpRequestXAmznMtlsClientcertHeaderName),
+      routing_http_request_x_amzn_mtls_clientcert_issuer_header_name: cdktn.stringToTerraform(this._routingHttpRequestXAmznMtlsClientcertIssuerHeaderName),
+      routing_http_request_x_amzn_mtls_clientcert_leaf_header_name: cdktn.stringToTerraform(this._routingHttpRequestXAmznMtlsClientcertLeafHeaderName),
+      routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name: cdktn.stringToTerraform(this._routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName),
+      routing_http_request_x_amzn_mtls_clientcert_subject_header_name: cdktn.stringToTerraform(this._routingHttpRequestXAmznMtlsClientcertSubjectHeaderName),
+      routing_http_request_x_amzn_mtls_clientcert_validity_header_name: cdktn.stringToTerraform(this._routingHttpRequestXAmznMtlsClientcertValidityHeaderName),
+      routing_http_request_x_amzn_tls_cipher_suite_header_name: cdktn.stringToTerraform(this._routingHttpRequestXAmznTlsCipherSuiteHeaderName),
+      routing_http_request_x_amzn_tls_version_header_name: cdktn.stringToTerraform(this._routingHttpRequestXAmznTlsVersionHeaderName),
+      routing_http_response_access_control_allow_credentials_header_value: cdktn.stringToTerraform(this._routingHttpResponseAccessControlAllowCredentialsHeaderValue),
+      routing_http_response_access_control_allow_headers_header_value: cdktn.stringToTerraform(this._routingHttpResponseAccessControlAllowHeadersHeaderValue),
+      routing_http_response_access_control_allow_methods_header_value: cdktn.stringToTerraform(this._routingHttpResponseAccessControlAllowMethodsHeaderValue),
+      routing_http_response_access_control_allow_origin_header_value: cdktn.stringToTerraform(this._routingHttpResponseAccessControlAllowOriginHeaderValue),
+      routing_http_response_access_control_expose_headers_header_value: cdktn.stringToTerraform(this._routingHttpResponseAccessControlExposeHeadersHeaderValue),
+      routing_http_response_access_control_max_age_header_value: cdktn.stringToTerraform(this._routingHttpResponseAccessControlMaxAgeHeaderValue),
+      routing_http_response_content_security_policy_header_value: cdktn.stringToTerraform(this._routingHttpResponseContentSecurityPolicyHeaderValue),
+      routing_http_response_server_enabled: cdktn.booleanToTerraform(this._routingHttpResponseServerEnabled),
+      routing_http_response_strict_transport_security_header_value: cdktn.stringToTerraform(this._routingHttpResponseStrictTransportSecurityHeaderValue),
+      routing_http_response_x_content_type_options_header_value: cdktn.stringToTerraform(this._routingHttpResponseXContentTypeOptionsHeaderValue),
+      routing_http_response_x_frame_options_header_value: cdktn.stringToTerraform(this._routingHttpResponseXFrameOptionsHeaderValue),
+      ssl_policy: cdktn.stringToTerraform(this._sslPolicy),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      tcp_idle_timeout_seconds: cdktn.numberToTerraform(this._tcpIdleTimeoutSeconds),
+      default_action: cdktn.listMapper(albListenerDefaultActionToTerraform, true)(this._defaultAction.internalValue),
       mutual_authentication: albListenerMutualAuthenticationToTerraform(this._mutualAuthentication.internalValue),
       timeouts: albListenerTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -3307,187 +3307,187 @@ export class AlbListener extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alpn_policy: {
-        value: cdktf.stringToHclTerraform(this._alpnPolicy),
+        value: cdktn.stringToHclTerraform(this._alpnPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_arn: {
-        value: cdktf.stringToHclTerraform(this._certificateArn),
+        value: cdktn.stringToHclTerraform(this._certificateArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       load_balancer_arn: {
-        value: cdktf.stringToHclTerraform(this._loadBalancerArn),
+        value: cdktn.stringToHclTerraform(this._loadBalancerArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       protocol: {
-        value: cdktf.stringToHclTerraform(this._protocol),
+        value: cdktn.stringToHclTerraform(this._protocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_request_x_amzn_mtls_clientcert_header_name: {
-        value: cdktf.stringToHclTerraform(this._routingHttpRequestXAmznMtlsClientcertHeaderName),
+        value: cdktn.stringToHclTerraform(this._routingHttpRequestXAmznMtlsClientcertHeaderName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_request_x_amzn_mtls_clientcert_issuer_header_name: {
-        value: cdktf.stringToHclTerraform(this._routingHttpRequestXAmznMtlsClientcertIssuerHeaderName),
+        value: cdktn.stringToHclTerraform(this._routingHttpRequestXAmznMtlsClientcertIssuerHeaderName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_request_x_amzn_mtls_clientcert_leaf_header_name: {
-        value: cdktf.stringToHclTerraform(this._routingHttpRequestXAmznMtlsClientcertLeafHeaderName),
+        value: cdktn.stringToHclTerraform(this._routingHttpRequestXAmznMtlsClientcertLeafHeaderName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name: {
-        value: cdktf.stringToHclTerraform(this._routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName),
+        value: cdktn.stringToHclTerraform(this._routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_request_x_amzn_mtls_clientcert_subject_header_name: {
-        value: cdktf.stringToHclTerraform(this._routingHttpRequestXAmznMtlsClientcertSubjectHeaderName),
+        value: cdktn.stringToHclTerraform(this._routingHttpRequestXAmznMtlsClientcertSubjectHeaderName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_request_x_amzn_mtls_clientcert_validity_header_name: {
-        value: cdktf.stringToHclTerraform(this._routingHttpRequestXAmznMtlsClientcertValidityHeaderName),
+        value: cdktn.stringToHclTerraform(this._routingHttpRequestXAmznMtlsClientcertValidityHeaderName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_request_x_amzn_tls_cipher_suite_header_name: {
-        value: cdktf.stringToHclTerraform(this._routingHttpRequestXAmznTlsCipherSuiteHeaderName),
+        value: cdktn.stringToHclTerraform(this._routingHttpRequestXAmznTlsCipherSuiteHeaderName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_request_x_amzn_tls_version_header_name: {
-        value: cdktf.stringToHclTerraform(this._routingHttpRequestXAmznTlsVersionHeaderName),
+        value: cdktn.stringToHclTerraform(this._routingHttpRequestXAmznTlsVersionHeaderName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_response_access_control_allow_credentials_header_value: {
-        value: cdktf.stringToHclTerraform(this._routingHttpResponseAccessControlAllowCredentialsHeaderValue),
+        value: cdktn.stringToHclTerraform(this._routingHttpResponseAccessControlAllowCredentialsHeaderValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_response_access_control_allow_headers_header_value: {
-        value: cdktf.stringToHclTerraform(this._routingHttpResponseAccessControlAllowHeadersHeaderValue),
+        value: cdktn.stringToHclTerraform(this._routingHttpResponseAccessControlAllowHeadersHeaderValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_response_access_control_allow_methods_header_value: {
-        value: cdktf.stringToHclTerraform(this._routingHttpResponseAccessControlAllowMethodsHeaderValue),
+        value: cdktn.stringToHclTerraform(this._routingHttpResponseAccessControlAllowMethodsHeaderValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_response_access_control_allow_origin_header_value: {
-        value: cdktf.stringToHclTerraform(this._routingHttpResponseAccessControlAllowOriginHeaderValue),
+        value: cdktn.stringToHclTerraform(this._routingHttpResponseAccessControlAllowOriginHeaderValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_response_access_control_expose_headers_header_value: {
-        value: cdktf.stringToHclTerraform(this._routingHttpResponseAccessControlExposeHeadersHeaderValue),
+        value: cdktn.stringToHclTerraform(this._routingHttpResponseAccessControlExposeHeadersHeaderValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_response_access_control_max_age_header_value: {
-        value: cdktf.stringToHclTerraform(this._routingHttpResponseAccessControlMaxAgeHeaderValue),
+        value: cdktn.stringToHclTerraform(this._routingHttpResponseAccessControlMaxAgeHeaderValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_response_content_security_policy_header_value: {
-        value: cdktf.stringToHclTerraform(this._routingHttpResponseContentSecurityPolicyHeaderValue),
+        value: cdktn.stringToHclTerraform(this._routingHttpResponseContentSecurityPolicyHeaderValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_response_server_enabled: {
-        value: cdktf.booleanToHclTerraform(this._routingHttpResponseServerEnabled),
+        value: cdktn.booleanToHclTerraform(this._routingHttpResponseServerEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       routing_http_response_strict_transport_security_header_value: {
-        value: cdktf.stringToHclTerraform(this._routingHttpResponseStrictTransportSecurityHeaderValue),
+        value: cdktn.stringToHclTerraform(this._routingHttpResponseStrictTransportSecurityHeaderValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_response_x_content_type_options_header_value: {
-        value: cdktf.stringToHclTerraform(this._routingHttpResponseXContentTypeOptionsHeaderValue),
+        value: cdktn.stringToHclTerraform(this._routingHttpResponseXContentTypeOptionsHeaderValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_http_response_x_frame_options_header_value: {
-        value: cdktf.stringToHclTerraform(this._routingHttpResponseXFrameOptionsHeaderValue),
+        value: cdktn.stringToHclTerraform(this._routingHttpResponseXFrameOptionsHeaderValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ssl_policy: {
-        value: cdktf.stringToHclTerraform(this._sslPolicy),
+        value: cdktn.stringToHclTerraform(this._sslPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tcp_idle_timeout_seconds: {
-        value: cdktf.numberToHclTerraform(this._tcpIdleTimeoutSeconds),
+        value: cdktn.numberToHclTerraform(this._tcpIdleTimeoutSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       default_action: {
-        value: cdktf.listMapperHcl(albListenerDefaultActionToHclTerraform, true)(this._defaultAction.internalValue),
+        value: cdktn.listMapperHcl(albListenerDefaultActionToHclTerraform, true)(this._defaultAction.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AlbListenerDefaultActionList",

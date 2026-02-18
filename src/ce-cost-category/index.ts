@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CeCostCategoryConfig extends cdktf.TerraformMetaArguments {
+export interface CeCostCategoryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}
   */
@@ -48,13 +48,13 @@ export interface CeCostCategoryConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#rule CeCostCategory#rule}
   */
-  readonly rule: CeCostCategoryRule[] | cdktf.IResolvable;
+  readonly rule: CeCostCategoryRule[] | cdktn.IResolvable;
   /**
   * split_charge_rule block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#split_charge_rule CeCostCategory#split_charge_rule}
   */
-  readonly splitChargeRule?: CeCostCategorySplitChargeRule[] | cdktf.IResolvable;
+  readonly splitChargeRule?: CeCostCategorySplitChargeRule[] | cdktn.IResolvable;
 }
 export interface CeCostCategoryRuleInheritedValue {
   /**
@@ -68,31 +68,31 @@ export interface CeCostCategoryRuleInheritedValue {
 }
 
 export function ceCostCategoryRuleInheritedValueToTerraform(struct?: CeCostCategoryRuleInheritedValueOutputReference | CeCostCategoryRuleInheritedValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dimension_key: cdktf.stringToTerraform(struct!.dimensionKey),
-    dimension_name: cdktf.stringToTerraform(struct!.dimensionName),
+    dimension_key: cdktn.stringToTerraform(struct!.dimensionKey),
+    dimension_name: cdktn.stringToTerraform(struct!.dimensionName),
   }
 }
 
 
 export function ceCostCategoryRuleInheritedValueToHclTerraform(struct?: CeCostCategoryRuleInheritedValueOutputReference | CeCostCategoryRuleInheritedValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dimension_key: {
-      value: cdktf.stringToHclTerraform(struct!.dimensionKey),
+      value: cdktn.stringToHclTerraform(struct!.dimensionKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dimension_name: {
-      value: cdktf.stringToHclTerraform(struct!.dimensionName),
+      value: cdktn.stringToHclTerraform(struct!.dimensionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,14 +103,14 @@ export function ceCostCategoryRuleInheritedValueToHclTerraform(struct?: CeCostCa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleInheritedValueOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleInheritedValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -189,38 +189,38 @@ export interface CeCostCategoryRuleRuleAndAndCostCategory {
 }
 
 export function ceCostCategoryRuleRuleAndAndCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleAndAndCostCategoryOutputReference | CeCostCategoryRuleRuleAndAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleAndAndCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleAndAndCostCategoryOutputReference | CeCostCategoryRuleRuleAndAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -231,14 +231,14 @@ export function ceCostCategoryRuleRuleAndAndCostCategoryToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndAndCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndAndCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -294,7 +294,7 @@ export class CeCostCategoryRuleRuleAndAndCostCategoryOutputReference extends cdk
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -310,7 +310,7 @@ export class CeCostCategoryRuleRuleAndAndCostCategoryOutputReference extends cdk
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -339,38 +339,38 @@ export interface CeCostCategoryRuleRuleAndAndDimension {
 }
 
 export function ceCostCategoryRuleRuleAndAndDimensionToTerraform(struct?: CeCostCategoryRuleRuleAndAndDimensionOutputReference | CeCostCategoryRuleRuleAndAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleAndAndDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleAndAndDimensionOutputReference | CeCostCategoryRuleRuleAndAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -381,14 +381,14 @@ export function ceCostCategoryRuleRuleAndAndDimensionToHclTerraform(struct?: CeC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndAndDimensionOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndAndDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -444,7 +444,7 @@ export class CeCostCategoryRuleRuleAndAndDimensionOutputReference extends cdktf.
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -460,7 +460,7 @@ export class CeCostCategoryRuleRuleAndAndDimensionOutputReference extends cdktf.
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -489,38 +489,38 @@ export interface CeCostCategoryRuleRuleAndAndTags {
 }
 
 export function ceCostCategoryRuleRuleAndAndTagsToTerraform(struct?: CeCostCategoryRuleRuleAndAndTagsOutputReference | CeCostCategoryRuleRuleAndAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleAndAndTagsToHclTerraform(struct?: CeCostCategoryRuleRuleAndAndTagsOutputReference | CeCostCategoryRuleRuleAndAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -531,14 +531,14 @@ export function ceCostCategoryRuleRuleAndAndTagsToHclTerraform(struct?: CeCostCa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndAndTagsOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndAndTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -594,7 +594,7 @@ export class CeCostCategoryRuleRuleAndAndTagsOutputReference extends cdktf.Compl
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -610,7 +610,7 @@ export class CeCostCategoryRuleRuleAndAndTagsOutputReference extends cdktf.Compl
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -644,9 +644,9 @@ export interface CeCostCategoryRuleRuleAndAnd {
   readonly tags?: CeCostCategoryRuleRuleAndAndTags;
 }
 
-export function ceCostCategoryRuleRuleAndAndToTerraform(struct?: CeCostCategoryRuleRuleAndAnd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleAndAndToTerraform(struct?: CeCostCategoryRuleRuleAndAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -657,9 +657,9 @@ export function ceCostCategoryRuleRuleAndAndToTerraform(struct?: CeCostCategoryR
 }
 
 
-export function ceCostCategoryRuleRuleAndAndToHclTerraform(struct?: CeCostCategoryRuleRuleAndAnd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleAndAndToHclTerraform(struct?: CeCostCategoryRuleRuleAndAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -687,9 +687,9 @@ export function ceCostCategoryRuleRuleAndAndToHclTerraform(struct?: CeCostCatego
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndAndOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndAndOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -697,11 +697,11 @@ export class CeCostCategoryRuleRuleAndAndOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CeCostCategoryRuleRuleAndAnd | cdktf.IResolvable | undefined {
+  public get internalValue(): CeCostCategoryRuleRuleAndAnd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -722,7 +722,7 @@ export class CeCostCategoryRuleRuleAndAndOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CeCostCategoryRuleRuleAndAnd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CeCostCategoryRuleRuleAndAnd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -730,7 +730,7 @@ export class CeCostCategoryRuleRuleAndAndOutputReference extends cdktf.ComplexOb
       this._dimension.internalValue = undefined;
       this._tags.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -792,15 +792,15 @@ export class CeCostCategoryRuleRuleAndAndOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class CeCostCategoryRuleRuleAndAndList extends cdktf.ComplexList {
-  public internalValue? : CeCostCategoryRuleRuleAndAnd[] | cdktf.IResolvable
+export class CeCostCategoryRuleRuleAndAndList extends cdktn.ComplexList {
+  public internalValue? : CeCostCategoryRuleRuleAndAnd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -827,38 +827,38 @@ export interface CeCostCategoryRuleRuleAndCostCategory {
 }
 
 export function ceCostCategoryRuleRuleAndCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleAndCostCategoryOutputReference | CeCostCategoryRuleRuleAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleAndCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleAndCostCategoryOutputReference | CeCostCategoryRuleRuleAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -869,14 +869,14 @@ export function ceCostCategoryRuleRuleAndCostCategoryToHclTerraform(struct?: CeC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -932,7 +932,7 @@ export class CeCostCategoryRuleRuleAndCostCategoryOutputReference extends cdktf.
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -948,7 +948,7 @@ export class CeCostCategoryRuleRuleAndCostCategoryOutputReference extends cdktf.
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -977,38 +977,38 @@ export interface CeCostCategoryRuleRuleAndDimension {
 }
 
 export function ceCostCategoryRuleRuleAndDimensionToTerraform(struct?: CeCostCategoryRuleRuleAndDimensionOutputReference | CeCostCategoryRuleRuleAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleAndDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleAndDimensionOutputReference | CeCostCategoryRuleRuleAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1019,14 +1019,14 @@ export function ceCostCategoryRuleRuleAndDimensionToHclTerraform(struct?: CeCost
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndDimensionOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1082,7 +1082,7 @@ export class CeCostCategoryRuleRuleAndDimensionOutputReference extends cdktf.Com
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -1098,7 +1098,7 @@ export class CeCostCategoryRuleRuleAndDimensionOutputReference extends cdktf.Com
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1127,38 +1127,38 @@ export interface CeCostCategoryRuleRuleAndNotCostCategory {
 }
 
 export function ceCostCategoryRuleRuleAndNotCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleAndNotCostCategoryOutputReference | CeCostCategoryRuleRuleAndNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleAndNotCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleAndNotCostCategoryOutputReference | CeCostCategoryRuleRuleAndNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1169,14 +1169,14 @@ export function ceCostCategoryRuleRuleAndNotCostCategoryToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndNotCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndNotCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1232,7 +1232,7 @@ export class CeCostCategoryRuleRuleAndNotCostCategoryOutputReference extends cdk
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -1248,7 +1248,7 @@ export class CeCostCategoryRuleRuleAndNotCostCategoryOutputReference extends cdk
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1277,38 +1277,38 @@ export interface CeCostCategoryRuleRuleAndNotDimension {
 }
 
 export function ceCostCategoryRuleRuleAndNotDimensionToTerraform(struct?: CeCostCategoryRuleRuleAndNotDimensionOutputReference | CeCostCategoryRuleRuleAndNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleAndNotDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleAndNotDimensionOutputReference | CeCostCategoryRuleRuleAndNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1319,14 +1319,14 @@ export function ceCostCategoryRuleRuleAndNotDimensionToHclTerraform(struct?: CeC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndNotDimensionOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndNotDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1382,7 +1382,7 @@ export class CeCostCategoryRuleRuleAndNotDimensionOutputReference extends cdktf.
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -1398,7 +1398,7 @@ export class CeCostCategoryRuleRuleAndNotDimensionOutputReference extends cdktf.
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1427,38 +1427,38 @@ export interface CeCostCategoryRuleRuleAndNotTags {
 }
 
 export function ceCostCategoryRuleRuleAndNotTagsToTerraform(struct?: CeCostCategoryRuleRuleAndNotTagsOutputReference | CeCostCategoryRuleRuleAndNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleAndNotTagsToHclTerraform(struct?: CeCostCategoryRuleRuleAndNotTagsOutputReference | CeCostCategoryRuleRuleAndNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1469,14 +1469,14 @@ export function ceCostCategoryRuleRuleAndNotTagsToHclTerraform(struct?: CeCostCa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndNotTagsOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndNotTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1532,7 +1532,7 @@ export class CeCostCategoryRuleRuleAndNotTagsOutputReference extends cdktf.Compl
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -1548,7 +1548,7 @@ export class CeCostCategoryRuleRuleAndNotTagsOutputReference extends cdktf.Compl
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1583,8 +1583,8 @@ export interface CeCostCategoryRuleRuleAndNot {
 }
 
 export function ceCostCategoryRuleRuleAndNotToTerraform(struct?: CeCostCategoryRuleRuleAndNotOutputReference | CeCostCategoryRuleRuleAndNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1596,8 +1596,8 @@ export function ceCostCategoryRuleRuleAndNotToTerraform(struct?: CeCostCategoryR
 
 
 export function ceCostCategoryRuleRuleAndNotToHclTerraform(struct?: CeCostCategoryRuleRuleAndNotOutputReference | CeCostCategoryRuleRuleAndNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1625,14 +1625,14 @@ export function ceCostCategoryRuleRuleAndNotToHclTerraform(struct?: CeCostCatego
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndNotOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndNotOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1733,38 +1733,38 @@ export interface CeCostCategoryRuleRuleAndOrCostCategory {
 }
 
 export function ceCostCategoryRuleRuleAndOrCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleAndOrCostCategoryOutputReference | CeCostCategoryRuleRuleAndOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleAndOrCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleAndOrCostCategoryOutputReference | CeCostCategoryRuleRuleAndOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1775,14 +1775,14 @@ export function ceCostCategoryRuleRuleAndOrCostCategoryToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndOrCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndOrCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1838,7 +1838,7 @@ export class CeCostCategoryRuleRuleAndOrCostCategoryOutputReference extends cdkt
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -1854,7 +1854,7 @@ export class CeCostCategoryRuleRuleAndOrCostCategoryOutputReference extends cdkt
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1883,38 +1883,38 @@ export interface CeCostCategoryRuleRuleAndOrDimension {
 }
 
 export function ceCostCategoryRuleRuleAndOrDimensionToTerraform(struct?: CeCostCategoryRuleRuleAndOrDimensionOutputReference | CeCostCategoryRuleRuleAndOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleAndOrDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleAndOrDimensionOutputReference | CeCostCategoryRuleRuleAndOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1925,14 +1925,14 @@ export function ceCostCategoryRuleRuleAndOrDimensionToHclTerraform(struct?: CeCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndOrDimensionOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndOrDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1988,7 +1988,7 @@ export class CeCostCategoryRuleRuleAndOrDimensionOutputReference extends cdktf.C
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -2004,7 +2004,7 @@ export class CeCostCategoryRuleRuleAndOrDimensionOutputReference extends cdktf.C
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -2033,38 +2033,38 @@ export interface CeCostCategoryRuleRuleAndOrTags {
 }
 
 export function ceCostCategoryRuleRuleAndOrTagsToTerraform(struct?: CeCostCategoryRuleRuleAndOrTagsOutputReference | CeCostCategoryRuleRuleAndOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleAndOrTagsToHclTerraform(struct?: CeCostCategoryRuleRuleAndOrTagsOutputReference | CeCostCategoryRuleRuleAndOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -2075,14 +2075,14 @@ export function ceCostCategoryRuleRuleAndOrTagsToHclTerraform(struct?: CeCostCat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndOrTagsOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndOrTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2138,7 +2138,7 @@ export class CeCostCategoryRuleRuleAndOrTagsOutputReference extends cdktf.Comple
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -2154,7 +2154,7 @@ export class CeCostCategoryRuleRuleAndOrTagsOutputReference extends cdktf.Comple
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -2188,9 +2188,9 @@ export interface CeCostCategoryRuleRuleAndOr {
   readonly tags?: CeCostCategoryRuleRuleAndOrTags;
 }
 
-export function ceCostCategoryRuleRuleAndOrToTerraform(struct?: CeCostCategoryRuleRuleAndOr | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleAndOrToTerraform(struct?: CeCostCategoryRuleRuleAndOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2201,9 +2201,9 @@ export function ceCostCategoryRuleRuleAndOrToTerraform(struct?: CeCostCategoryRu
 }
 
 
-export function ceCostCategoryRuleRuleAndOrToHclTerraform(struct?: CeCostCategoryRuleRuleAndOr | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleAndOrToHclTerraform(struct?: CeCostCategoryRuleRuleAndOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2231,9 +2231,9 @@ export function ceCostCategoryRuleRuleAndOrToHclTerraform(struct?: CeCostCategor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndOrOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndOrOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2241,11 +2241,11 @@ export class CeCostCategoryRuleRuleAndOrOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CeCostCategoryRuleRuleAndOr | cdktf.IResolvable | undefined {
+  public get internalValue(): CeCostCategoryRuleRuleAndOr | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2266,7 +2266,7 @@ export class CeCostCategoryRuleRuleAndOrOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CeCostCategoryRuleRuleAndOr | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CeCostCategoryRuleRuleAndOr | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2274,7 +2274,7 @@ export class CeCostCategoryRuleRuleAndOrOutputReference extends cdktf.ComplexObj
       this._dimension.internalValue = undefined;
       this._tags.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2336,15 +2336,15 @@ export class CeCostCategoryRuleRuleAndOrOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class CeCostCategoryRuleRuleAndOrList extends cdktf.ComplexList {
-  public internalValue? : CeCostCategoryRuleRuleAndOr[] | cdktf.IResolvable
+export class CeCostCategoryRuleRuleAndOrList extends cdktn.ComplexList {
+  public internalValue? : CeCostCategoryRuleRuleAndOr[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2371,38 +2371,38 @@ export interface CeCostCategoryRuleRuleAndTags {
 }
 
 export function ceCostCategoryRuleRuleAndTagsToTerraform(struct?: CeCostCategoryRuleRuleAndTagsOutputReference | CeCostCategoryRuleRuleAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleAndTagsToHclTerraform(struct?: CeCostCategoryRuleRuleAndTagsOutputReference | CeCostCategoryRuleRuleAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -2413,14 +2413,14 @@ export function ceCostCategoryRuleRuleAndTagsToHclTerraform(struct?: CeCostCateg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndTagsOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2476,7 +2476,7 @@ export class CeCostCategoryRuleRuleAndTagsOutputReference extends cdktf.ComplexO
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -2492,7 +2492,7 @@ export class CeCostCategoryRuleRuleAndTagsOutputReference extends cdktf.ComplexO
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -2511,7 +2511,7 @@ export interface CeCostCategoryRuleRuleAnd {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#and CeCostCategory#and}
   */
-  readonly and?: CeCostCategoryRuleRuleAndAnd[] | cdktf.IResolvable;
+  readonly and?: CeCostCategoryRuleRuleAndAnd[] | cdktn.IResolvable;
   /**
   * cost_category block
   *
@@ -2535,7 +2535,7 @@ export interface CeCostCategoryRuleRuleAnd {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#or CeCostCategory#or}
   */
-  readonly or?: CeCostCategoryRuleRuleAndOr[] | cdktf.IResolvable;
+  readonly or?: CeCostCategoryRuleRuleAndOr[] | cdktn.IResolvable;
   /**
   * tags block
   *
@@ -2544,30 +2544,30 @@ export interface CeCostCategoryRuleRuleAnd {
   readonly tags?: CeCostCategoryRuleRuleAndTags;
 }
 
-export function ceCostCategoryRuleRuleAndToTerraform(struct?: CeCostCategoryRuleRuleAnd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleAndToTerraform(struct?: CeCostCategoryRuleRuleAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    and: cdktf.listMapper(ceCostCategoryRuleRuleAndAndToTerraform, true)(struct!.and),
+    and: cdktn.listMapper(ceCostCategoryRuleRuleAndAndToTerraform, true)(struct!.and),
     cost_category: ceCostCategoryRuleRuleAndCostCategoryToTerraform(struct!.costCategory),
     dimension: ceCostCategoryRuleRuleAndDimensionToTerraform(struct!.dimension),
     not: ceCostCategoryRuleRuleAndNotToTerraform(struct!.not),
-    or: cdktf.listMapper(ceCostCategoryRuleRuleAndOrToTerraform, true)(struct!.or),
+    or: cdktn.listMapper(ceCostCategoryRuleRuleAndOrToTerraform, true)(struct!.or),
     tags: ceCostCategoryRuleRuleAndTagsToTerraform(struct!.tags),
   }
 }
 
 
-export function ceCostCategoryRuleRuleAndToHclTerraform(struct?: CeCostCategoryRuleRuleAnd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleAndToHclTerraform(struct?: CeCostCategoryRuleRuleAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     and: {
-      value: cdktf.listMapperHcl(ceCostCategoryRuleRuleAndAndToHclTerraform, true)(struct!.and),
+      value: cdktn.listMapperHcl(ceCostCategoryRuleRuleAndAndToHclTerraform, true)(struct!.and),
       isBlock: true,
       type: "set",
       storageClassType: "CeCostCategoryRuleRuleAndAndList",
@@ -2591,7 +2591,7 @@ export function ceCostCategoryRuleRuleAndToHclTerraform(struct?: CeCostCategoryR
       storageClassType: "CeCostCategoryRuleRuleAndNotList",
     },
     or: {
-      value: cdktf.listMapperHcl(ceCostCategoryRuleRuleAndOrToHclTerraform, true)(struct!.or),
+      value: cdktn.listMapperHcl(ceCostCategoryRuleRuleAndOrToHclTerraform, true)(struct!.or),
       isBlock: true,
       type: "set",
       storageClassType: "CeCostCategoryRuleRuleAndOrList",
@@ -2608,9 +2608,9 @@ export function ceCostCategoryRuleRuleAndToHclTerraform(struct?: CeCostCategoryR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleAndOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleAndOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2618,11 +2618,11 @@ export class CeCostCategoryRuleRuleAndOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CeCostCategoryRuleRuleAnd | cdktf.IResolvable | undefined {
+  public get internalValue(): CeCostCategoryRuleRuleAnd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2655,7 +2655,7 @@ export class CeCostCategoryRuleRuleAndOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CeCostCategoryRuleRuleAnd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CeCostCategoryRuleRuleAnd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2666,7 +2666,7 @@ export class CeCostCategoryRuleRuleAndOutputReference extends cdktf.ComplexObjec
       this._or.internalValue = undefined;
       this._tags.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2687,7 +2687,7 @@ export class CeCostCategoryRuleRuleAndOutputReference extends cdktf.ComplexObjec
   public get and() {
     return this._and;
   }
-  public putAnd(value: CeCostCategoryRuleRuleAndAnd[] | cdktf.IResolvable) {
+  public putAnd(value: CeCostCategoryRuleRuleAndAnd[] | cdktn.IResolvable) {
     this._and.internalValue = value;
   }
   public resetAnd() {
@@ -2751,7 +2751,7 @@ export class CeCostCategoryRuleRuleAndOutputReference extends cdktf.ComplexObjec
   public get or() {
     return this._or;
   }
-  public putOr(value: CeCostCategoryRuleRuleAndOr[] | cdktf.IResolvable) {
+  public putOr(value: CeCostCategoryRuleRuleAndOr[] | cdktn.IResolvable) {
     this._or.internalValue = value;
   }
   public resetOr() {
@@ -2779,15 +2779,15 @@ export class CeCostCategoryRuleRuleAndOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class CeCostCategoryRuleRuleAndList extends cdktf.ComplexList {
-  public internalValue? : CeCostCategoryRuleRuleAnd[] | cdktf.IResolvable
+export class CeCostCategoryRuleRuleAndList extends cdktn.ComplexList {
+  public internalValue? : CeCostCategoryRuleRuleAnd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2814,38 +2814,38 @@ export interface CeCostCategoryRuleRuleCostCategory {
 }
 
 export function ceCostCategoryRuleRuleCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleCostCategoryOutputReference | CeCostCategoryRuleRuleCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleCostCategoryOutputReference | CeCostCategoryRuleRuleCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -2856,14 +2856,14 @@ export function ceCostCategoryRuleRuleCostCategoryToHclTerraform(struct?: CeCost
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2919,7 +2919,7 @@ export class CeCostCategoryRuleRuleCostCategoryOutputReference extends cdktf.Com
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -2935,7 +2935,7 @@ export class CeCostCategoryRuleRuleCostCategoryOutputReference extends cdktf.Com
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -2964,38 +2964,38 @@ export interface CeCostCategoryRuleRuleDimension {
 }
 
 export function ceCostCategoryRuleRuleDimensionToTerraform(struct?: CeCostCategoryRuleRuleDimensionOutputReference | CeCostCategoryRuleRuleDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleDimensionOutputReference | CeCostCategoryRuleRuleDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -3006,14 +3006,14 @@ export function ceCostCategoryRuleRuleDimensionToHclTerraform(struct?: CeCostCat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleDimensionOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3069,7 +3069,7 @@ export class CeCostCategoryRuleRuleDimensionOutputReference extends cdktf.Comple
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -3085,7 +3085,7 @@ export class CeCostCategoryRuleRuleDimensionOutputReference extends cdktf.Comple
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -3114,38 +3114,38 @@ export interface CeCostCategoryRuleRuleNotAndCostCategory {
 }
 
 export function ceCostCategoryRuleRuleNotAndCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleNotAndCostCategoryOutputReference | CeCostCategoryRuleRuleNotAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleNotAndCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleNotAndCostCategoryOutputReference | CeCostCategoryRuleRuleNotAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -3156,14 +3156,14 @@ export function ceCostCategoryRuleRuleNotAndCostCategoryToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotAndCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotAndCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3219,7 +3219,7 @@ export class CeCostCategoryRuleRuleNotAndCostCategoryOutputReference extends cdk
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -3235,7 +3235,7 @@ export class CeCostCategoryRuleRuleNotAndCostCategoryOutputReference extends cdk
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -3264,38 +3264,38 @@ export interface CeCostCategoryRuleRuleNotAndDimension {
 }
 
 export function ceCostCategoryRuleRuleNotAndDimensionToTerraform(struct?: CeCostCategoryRuleRuleNotAndDimensionOutputReference | CeCostCategoryRuleRuleNotAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleNotAndDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleNotAndDimensionOutputReference | CeCostCategoryRuleRuleNotAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -3306,14 +3306,14 @@ export function ceCostCategoryRuleRuleNotAndDimensionToHclTerraform(struct?: CeC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotAndDimensionOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotAndDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3369,7 +3369,7 @@ export class CeCostCategoryRuleRuleNotAndDimensionOutputReference extends cdktf.
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -3385,7 +3385,7 @@ export class CeCostCategoryRuleRuleNotAndDimensionOutputReference extends cdktf.
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -3414,38 +3414,38 @@ export interface CeCostCategoryRuleRuleNotAndTags {
 }
 
 export function ceCostCategoryRuleRuleNotAndTagsToTerraform(struct?: CeCostCategoryRuleRuleNotAndTagsOutputReference | CeCostCategoryRuleRuleNotAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleNotAndTagsToHclTerraform(struct?: CeCostCategoryRuleRuleNotAndTagsOutputReference | CeCostCategoryRuleRuleNotAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -3456,14 +3456,14 @@ export function ceCostCategoryRuleRuleNotAndTagsToHclTerraform(struct?: CeCostCa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotAndTagsOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotAndTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3519,7 +3519,7 @@ export class CeCostCategoryRuleRuleNotAndTagsOutputReference extends cdktf.Compl
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -3535,7 +3535,7 @@ export class CeCostCategoryRuleRuleNotAndTagsOutputReference extends cdktf.Compl
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -3569,9 +3569,9 @@ export interface CeCostCategoryRuleRuleNotAnd {
   readonly tags?: CeCostCategoryRuleRuleNotAndTags;
 }
 
-export function ceCostCategoryRuleRuleNotAndToTerraform(struct?: CeCostCategoryRuleRuleNotAnd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleNotAndToTerraform(struct?: CeCostCategoryRuleRuleNotAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3582,9 +3582,9 @@ export function ceCostCategoryRuleRuleNotAndToTerraform(struct?: CeCostCategoryR
 }
 
 
-export function ceCostCategoryRuleRuleNotAndToHclTerraform(struct?: CeCostCategoryRuleRuleNotAnd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleNotAndToHclTerraform(struct?: CeCostCategoryRuleRuleNotAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3612,9 +3612,9 @@ export function ceCostCategoryRuleRuleNotAndToHclTerraform(struct?: CeCostCatego
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotAndOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotAndOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3622,11 +3622,11 @@ export class CeCostCategoryRuleRuleNotAndOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CeCostCategoryRuleRuleNotAnd | cdktf.IResolvable | undefined {
+  public get internalValue(): CeCostCategoryRuleRuleNotAnd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3647,7 +3647,7 @@ export class CeCostCategoryRuleRuleNotAndOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CeCostCategoryRuleRuleNotAnd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CeCostCategoryRuleRuleNotAnd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3655,7 +3655,7 @@ export class CeCostCategoryRuleRuleNotAndOutputReference extends cdktf.ComplexOb
       this._dimension.internalValue = undefined;
       this._tags.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3717,15 +3717,15 @@ export class CeCostCategoryRuleRuleNotAndOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class CeCostCategoryRuleRuleNotAndList extends cdktf.ComplexList {
-  public internalValue? : CeCostCategoryRuleRuleNotAnd[] | cdktf.IResolvable
+export class CeCostCategoryRuleRuleNotAndList extends cdktn.ComplexList {
+  public internalValue? : CeCostCategoryRuleRuleNotAnd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3752,38 +3752,38 @@ export interface CeCostCategoryRuleRuleNotCostCategory {
 }
 
 export function ceCostCategoryRuleRuleNotCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleNotCostCategoryOutputReference | CeCostCategoryRuleRuleNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleNotCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleNotCostCategoryOutputReference | CeCostCategoryRuleRuleNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -3794,14 +3794,14 @@ export function ceCostCategoryRuleRuleNotCostCategoryToHclTerraform(struct?: CeC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3857,7 +3857,7 @@ export class CeCostCategoryRuleRuleNotCostCategoryOutputReference extends cdktf.
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -3873,7 +3873,7 @@ export class CeCostCategoryRuleRuleNotCostCategoryOutputReference extends cdktf.
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -3902,38 +3902,38 @@ export interface CeCostCategoryRuleRuleNotDimension {
 }
 
 export function ceCostCategoryRuleRuleNotDimensionToTerraform(struct?: CeCostCategoryRuleRuleNotDimensionOutputReference | CeCostCategoryRuleRuleNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleNotDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleNotDimensionOutputReference | CeCostCategoryRuleRuleNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -3944,14 +3944,14 @@ export function ceCostCategoryRuleRuleNotDimensionToHclTerraform(struct?: CeCost
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotDimensionOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4007,7 +4007,7 @@ export class CeCostCategoryRuleRuleNotDimensionOutputReference extends cdktf.Com
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -4023,7 +4023,7 @@ export class CeCostCategoryRuleRuleNotDimensionOutputReference extends cdktf.Com
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -4052,38 +4052,38 @@ export interface CeCostCategoryRuleRuleNotNotCostCategory {
 }
 
 export function ceCostCategoryRuleRuleNotNotCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleNotNotCostCategoryOutputReference | CeCostCategoryRuleRuleNotNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleNotNotCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleNotNotCostCategoryOutputReference | CeCostCategoryRuleRuleNotNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -4094,14 +4094,14 @@ export function ceCostCategoryRuleRuleNotNotCostCategoryToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotNotCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotNotCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4157,7 +4157,7 @@ export class CeCostCategoryRuleRuleNotNotCostCategoryOutputReference extends cdk
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -4173,7 +4173,7 @@ export class CeCostCategoryRuleRuleNotNotCostCategoryOutputReference extends cdk
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -4202,38 +4202,38 @@ export interface CeCostCategoryRuleRuleNotNotDimension {
 }
 
 export function ceCostCategoryRuleRuleNotNotDimensionToTerraform(struct?: CeCostCategoryRuleRuleNotNotDimensionOutputReference | CeCostCategoryRuleRuleNotNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleNotNotDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleNotNotDimensionOutputReference | CeCostCategoryRuleRuleNotNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -4244,14 +4244,14 @@ export function ceCostCategoryRuleRuleNotNotDimensionToHclTerraform(struct?: CeC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotNotDimensionOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotNotDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4307,7 +4307,7 @@ export class CeCostCategoryRuleRuleNotNotDimensionOutputReference extends cdktf.
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -4323,7 +4323,7 @@ export class CeCostCategoryRuleRuleNotNotDimensionOutputReference extends cdktf.
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -4352,38 +4352,38 @@ export interface CeCostCategoryRuleRuleNotNotTags {
 }
 
 export function ceCostCategoryRuleRuleNotNotTagsToTerraform(struct?: CeCostCategoryRuleRuleNotNotTagsOutputReference | CeCostCategoryRuleRuleNotNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleNotNotTagsToHclTerraform(struct?: CeCostCategoryRuleRuleNotNotTagsOutputReference | CeCostCategoryRuleRuleNotNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -4394,14 +4394,14 @@ export function ceCostCategoryRuleRuleNotNotTagsToHclTerraform(struct?: CeCostCa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotNotTagsOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotNotTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4457,7 +4457,7 @@ export class CeCostCategoryRuleRuleNotNotTagsOutputReference extends cdktf.Compl
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -4473,7 +4473,7 @@ export class CeCostCategoryRuleRuleNotNotTagsOutputReference extends cdktf.Compl
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -4508,8 +4508,8 @@ export interface CeCostCategoryRuleRuleNotNot {
 }
 
 export function ceCostCategoryRuleRuleNotNotToTerraform(struct?: CeCostCategoryRuleRuleNotNotOutputReference | CeCostCategoryRuleRuleNotNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4521,8 +4521,8 @@ export function ceCostCategoryRuleRuleNotNotToTerraform(struct?: CeCostCategoryR
 
 
 export function ceCostCategoryRuleRuleNotNotToHclTerraform(struct?: CeCostCategoryRuleRuleNotNotOutputReference | CeCostCategoryRuleRuleNotNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4550,14 +4550,14 @@ export function ceCostCategoryRuleRuleNotNotToHclTerraform(struct?: CeCostCatego
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotNotOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotNotOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4658,38 +4658,38 @@ export interface CeCostCategoryRuleRuleNotOrCostCategory {
 }
 
 export function ceCostCategoryRuleRuleNotOrCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleNotOrCostCategoryOutputReference | CeCostCategoryRuleRuleNotOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleNotOrCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleNotOrCostCategoryOutputReference | CeCostCategoryRuleRuleNotOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -4700,14 +4700,14 @@ export function ceCostCategoryRuleRuleNotOrCostCategoryToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotOrCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotOrCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4763,7 +4763,7 @@ export class CeCostCategoryRuleRuleNotOrCostCategoryOutputReference extends cdkt
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -4779,7 +4779,7 @@ export class CeCostCategoryRuleRuleNotOrCostCategoryOutputReference extends cdkt
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -4808,38 +4808,38 @@ export interface CeCostCategoryRuleRuleNotOrDimension {
 }
 
 export function ceCostCategoryRuleRuleNotOrDimensionToTerraform(struct?: CeCostCategoryRuleRuleNotOrDimensionOutputReference | CeCostCategoryRuleRuleNotOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleNotOrDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleNotOrDimensionOutputReference | CeCostCategoryRuleRuleNotOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -4850,14 +4850,14 @@ export function ceCostCategoryRuleRuleNotOrDimensionToHclTerraform(struct?: CeCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotOrDimensionOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotOrDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4913,7 +4913,7 @@ export class CeCostCategoryRuleRuleNotOrDimensionOutputReference extends cdktf.C
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -4929,7 +4929,7 @@ export class CeCostCategoryRuleRuleNotOrDimensionOutputReference extends cdktf.C
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -4958,38 +4958,38 @@ export interface CeCostCategoryRuleRuleNotOrTags {
 }
 
 export function ceCostCategoryRuleRuleNotOrTagsToTerraform(struct?: CeCostCategoryRuleRuleNotOrTagsOutputReference | CeCostCategoryRuleRuleNotOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleNotOrTagsToHclTerraform(struct?: CeCostCategoryRuleRuleNotOrTagsOutputReference | CeCostCategoryRuleRuleNotOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -5000,14 +5000,14 @@ export function ceCostCategoryRuleRuleNotOrTagsToHclTerraform(struct?: CeCostCat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotOrTagsOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotOrTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5063,7 +5063,7 @@ export class CeCostCategoryRuleRuleNotOrTagsOutputReference extends cdktf.Comple
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -5079,7 +5079,7 @@ export class CeCostCategoryRuleRuleNotOrTagsOutputReference extends cdktf.Comple
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -5113,9 +5113,9 @@ export interface CeCostCategoryRuleRuleNotOr {
   readonly tags?: CeCostCategoryRuleRuleNotOrTags;
 }
 
-export function ceCostCategoryRuleRuleNotOrToTerraform(struct?: CeCostCategoryRuleRuleNotOr | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleNotOrToTerraform(struct?: CeCostCategoryRuleRuleNotOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5126,9 +5126,9 @@ export function ceCostCategoryRuleRuleNotOrToTerraform(struct?: CeCostCategoryRu
 }
 
 
-export function ceCostCategoryRuleRuleNotOrToHclTerraform(struct?: CeCostCategoryRuleRuleNotOr | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleNotOrToHclTerraform(struct?: CeCostCategoryRuleRuleNotOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5156,9 +5156,9 @@ export function ceCostCategoryRuleRuleNotOrToHclTerraform(struct?: CeCostCategor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotOrOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotOrOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5166,11 +5166,11 @@ export class CeCostCategoryRuleRuleNotOrOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CeCostCategoryRuleRuleNotOr | cdktf.IResolvable | undefined {
+  public get internalValue(): CeCostCategoryRuleRuleNotOr | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5191,7 +5191,7 @@ export class CeCostCategoryRuleRuleNotOrOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CeCostCategoryRuleRuleNotOr | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CeCostCategoryRuleRuleNotOr | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5199,7 +5199,7 @@ export class CeCostCategoryRuleRuleNotOrOutputReference extends cdktf.ComplexObj
       this._dimension.internalValue = undefined;
       this._tags.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5261,15 +5261,15 @@ export class CeCostCategoryRuleRuleNotOrOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class CeCostCategoryRuleRuleNotOrList extends cdktf.ComplexList {
-  public internalValue? : CeCostCategoryRuleRuleNotOr[] | cdktf.IResolvable
+export class CeCostCategoryRuleRuleNotOrList extends cdktn.ComplexList {
+  public internalValue? : CeCostCategoryRuleRuleNotOr[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5296,38 +5296,38 @@ export interface CeCostCategoryRuleRuleNotTags {
 }
 
 export function ceCostCategoryRuleRuleNotTagsToTerraform(struct?: CeCostCategoryRuleRuleNotTagsOutputReference | CeCostCategoryRuleRuleNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleNotTagsToHclTerraform(struct?: CeCostCategoryRuleRuleNotTagsOutputReference | CeCostCategoryRuleRuleNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -5338,14 +5338,14 @@ export function ceCostCategoryRuleRuleNotTagsToHclTerraform(struct?: CeCostCateg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotTagsOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5401,7 +5401,7 @@ export class CeCostCategoryRuleRuleNotTagsOutputReference extends cdktf.ComplexO
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -5417,7 +5417,7 @@ export class CeCostCategoryRuleRuleNotTagsOutputReference extends cdktf.ComplexO
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -5436,7 +5436,7 @@ export interface CeCostCategoryRuleRuleNot {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#and CeCostCategory#and}
   */
-  readonly and?: CeCostCategoryRuleRuleNotAnd[] | cdktf.IResolvable;
+  readonly and?: CeCostCategoryRuleRuleNotAnd[] | cdktn.IResolvable;
   /**
   * cost_category block
   *
@@ -5460,7 +5460,7 @@ export interface CeCostCategoryRuleRuleNot {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#or CeCostCategory#or}
   */
-  readonly or?: CeCostCategoryRuleRuleNotOr[] | cdktf.IResolvable;
+  readonly or?: CeCostCategoryRuleRuleNotOr[] | cdktn.IResolvable;
   /**
   * tags block
   *
@@ -5470,29 +5470,29 @@ export interface CeCostCategoryRuleRuleNot {
 }
 
 export function ceCostCategoryRuleRuleNotToTerraform(struct?: CeCostCategoryRuleRuleNotOutputReference | CeCostCategoryRuleRuleNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    and: cdktf.listMapper(ceCostCategoryRuleRuleNotAndToTerraform, true)(struct!.and),
+    and: cdktn.listMapper(ceCostCategoryRuleRuleNotAndToTerraform, true)(struct!.and),
     cost_category: ceCostCategoryRuleRuleNotCostCategoryToTerraform(struct!.costCategory),
     dimension: ceCostCategoryRuleRuleNotDimensionToTerraform(struct!.dimension),
     not: ceCostCategoryRuleRuleNotNotToTerraform(struct!.not),
-    or: cdktf.listMapper(ceCostCategoryRuleRuleNotOrToTerraform, true)(struct!.or),
+    or: cdktn.listMapper(ceCostCategoryRuleRuleNotOrToTerraform, true)(struct!.or),
     tags: ceCostCategoryRuleRuleNotTagsToTerraform(struct!.tags),
   }
 }
 
 
 export function ceCostCategoryRuleRuleNotToHclTerraform(struct?: CeCostCategoryRuleRuleNotOutputReference | CeCostCategoryRuleRuleNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     and: {
-      value: cdktf.listMapperHcl(ceCostCategoryRuleRuleNotAndToHclTerraform, true)(struct!.and),
+      value: cdktn.listMapperHcl(ceCostCategoryRuleRuleNotAndToHclTerraform, true)(struct!.and),
       isBlock: true,
       type: "set",
       storageClassType: "CeCostCategoryRuleRuleNotAndList",
@@ -5516,7 +5516,7 @@ export function ceCostCategoryRuleRuleNotToHclTerraform(struct?: CeCostCategoryR
       storageClassType: "CeCostCategoryRuleRuleNotNotList",
     },
     or: {
-      value: cdktf.listMapperHcl(ceCostCategoryRuleRuleNotOrToHclTerraform, true)(struct!.or),
+      value: cdktn.listMapperHcl(ceCostCategoryRuleRuleNotOrToHclTerraform, true)(struct!.or),
       isBlock: true,
       type: "set",
       storageClassType: "CeCostCategoryRuleRuleNotOrList",
@@ -5533,14 +5533,14 @@ export function ceCostCategoryRuleRuleNotToHclTerraform(struct?: CeCostCategoryR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleNotOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleNotOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5600,7 +5600,7 @@ export class CeCostCategoryRuleRuleNotOutputReference extends cdktf.ComplexObjec
   public get and() {
     return this._and;
   }
-  public putAnd(value: CeCostCategoryRuleRuleNotAnd[] | cdktf.IResolvable) {
+  public putAnd(value: CeCostCategoryRuleRuleNotAnd[] | cdktn.IResolvable) {
     this._and.internalValue = value;
   }
   public resetAnd() {
@@ -5664,7 +5664,7 @@ export class CeCostCategoryRuleRuleNotOutputReference extends cdktf.ComplexObjec
   public get or() {
     return this._or;
   }
-  public putOr(value: CeCostCategoryRuleRuleNotOr[] | cdktf.IResolvable) {
+  public putOr(value: CeCostCategoryRuleRuleNotOr[] | cdktn.IResolvable) {
     this._or.internalValue = value;
   }
   public resetOr() {
@@ -5707,38 +5707,38 @@ export interface CeCostCategoryRuleRuleOrAndCostCategory {
 }
 
 export function ceCostCategoryRuleRuleOrAndCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleOrAndCostCategoryOutputReference | CeCostCategoryRuleRuleOrAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleOrAndCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleOrAndCostCategoryOutputReference | CeCostCategoryRuleRuleOrAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -5749,14 +5749,14 @@ export function ceCostCategoryRuleRuleOrAndCostCategoryToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrAndCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrAndCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5812,7 +5812,7 @@ export class CeCostCategoryRuleRuleOrAndCostCategoryOutputReference extends cdkt
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -5828,7 +5828,7 @@ export class CeCostCategoryRuleRuleOrAndCostCategoryOutputReference extends cdkt
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -5857,38 +5857,38 @@ export interface CeCostCategoryRuleRuleOrAndDimension {
 }
 
 export function ceCostCategoryRuleRuleOrAndDimensionToTerraform(struct?: CeCostCategoryRuleRuleOrAndDimensionOutputReference | CeCostCategoryRuleRuleOrAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleOrAndDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleOrAndDimensionOutputReference | CeCostCategoryRuleRuleOrAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -5899,14 +5899,14 @@ export function ceCostCategoryRuleRuleOrAndDimensionToHclTerraform(struct?: CeCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrAndDimensionOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrAndDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5962,7 +5962,7 @@ export class CeCostCategoryRuleRuleOrAndDimensionOutputReference extends cdktf.C
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -5978,7 +5978,7 @@ export class CeCostCategoryRuleRuleOrAndDimensionOutputReference extends cdktf.C
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -6007,38 +6007,38 @@ export interface CeCostCategoryRuleRuleOrAndTags {
 }
 
 export function ceCostCategoryRuleRuleOrAndTagsToTerraform(struct?: CeCostCategoryRuleRuleOrAndTagsOutputReference | CeCostCategoryRuleRuleOrAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleOrAndTagsToHclTerraform(struct?: CeCostCategoryRuleRuleOrAndTagsOutputReference | CeCostCategoryRuleRuleOrAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -6049,14 +6049,14 @@ export function ceCostCategoryRuleRuleOrAndTagsToHclTerraform(struct?: CeCostCat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrAndTagsOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrAndTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6112,7 +6112,7 @@ export class CeCostCategoryRuleRuleOrAndTagsOutputReference extends cdktf.Comple
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -6128,7 +6128,7 @@ export class CeCostCategoryRuleRuleOrAndTagsOutputReference extends cdktf.Comple
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -6162,9 +6162,9 @@ export interface CeCostCategoryRuleRuleOrAnd {
   readonly tags?: CeCostCategoryRuleRuleOrAndTags;
 }
 
-export function ceCostCategoryRuleRuleOrAndToTerraform(struct?: CeCostCategoryRuleRuleOrAnd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleOrAndToTerraform(struct?: CeCostCategoryRuleRuleOrAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6175,9 +6175,9 @@ export function ceCostCategoryRuleRuleOrAndToTerraform(struct?: CeCostCategoryRu
 }
 
 
-export function ceCostCategoryRuleRuleOrAndToHclTerraform(struct?: CeCostCategoryRuleRuleOrAnd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleOrAndToHclTerraform(struct?: CeCostCategoryRuleRuleOrAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6205,9 +6205,9 @@ export function ceCostCategoryRuleRuleOrAndToHclTerraform(struct?: CeCostCategor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrAndOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrAndOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6215,11 +6215,11 @@ export class CeCostCategoryRuleRuleOrAndOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CeCostCategoryRuleRuleOrAnd | cdktf.IResolvable | undefined {
+  public get internalValue(): CeCostCategoryRuleRuleOrAnd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6240,7 +6240,7 @@ export class CeCostCategoryRuleRuleOrAndOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CeCostCategoryRuleRuleOrAnd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CeCostCategoryRuleRuleOrAnd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6248,7 +6248,7 @@ export class CeCostCategoryRuleRuleOrAndOutputReference extends cdktf.ComplexObj
       this._dimension.internalValue = undefined;
       this._tags.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6310,15 +6310,15 @@ export class CeCostCategoryRuleRuleOrAndOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class CeCostCategoryRuleRuleOrAndList extends cdktf.ComplexList {
-  public internalValue? : CeCostCategoryRuleRuleOrAnd[] | cdktf.IResolvable
+export class CeCostCategoryRuleRuleOrAndList extends cdktn.ComplexList {
+  public internalValue? : CeCostCategoryRuleRuleOrAnd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6345,38 +6345,38 @@ export interface CeCostCategoryRuleRuleOrCostCategory {
 }
 
 export function ceCostCategoryRuleRuleOrCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleOrCostCategoryOutputReference | CeCostCategoryRuleRuleOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleOrCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleOrCostCategoryOutputReference | CeCostCategoryRuleRuleOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -6387,14 +6387,14 @@ export function ceCostCategoryRuleRuleOrCostCategoryToHclTerraform(struct?: CeCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6450,7 +6450,7 @@ export class CeCostCategoryRuleRuleOrCostCategoryOutputReference extends cdktf.C
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -6466,7 +6466,7 @@ export class CeCostCategoryRuleRuleOrCostCategoryOutputReference extends cdktf.C
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -6495,38 +6495,38 @@ export interface CeCostCategoryRuleRuleOrDimension {
 }
 
 export function ceCostCategoryRuleRuleOrDimensionToTerraform(struct?: CeCostCategoryRuleRuleOrDimensionOutputReference | CeCostCategoryRuleRuleOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleOrDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleOrDimensionOutputReference | CeCostCategoryRuleRuleOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -6537,14 +6537,14 @@ export function ceCostCategoryRuleRuleOrDimensionToHclTerraform(struct?: CeCostC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrDimensionOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6600,7 +6600,7 @@ export class CeCostCategoryRuleRuleOrDimensionOutputReference extends cdktf.Comp
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -6616,7 +6616,7 @@ export class CeCostCategoryRuleRuleOrDimensionOutputReference extends cdktf.Comp
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -6645,38 +6645,38 @@ export interface CeCostCategoryRuleRuleOrNotCostCategory {
 }
 
 export function ceCostCategoryRuleRuleOrNotCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleOrNotCostCategoryOutputReference | CeCostCategoryRuleRuleOrNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleOrNotCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleOrNotCostCategoryOutputReference | CeCostCategoryRuleRuleOrNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -6687,14 +6687,14 @@ export function ceCostCategoryRuleRuleOrNotCostCategoryToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrNotCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrNotCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6750,7 +6750,7 @@ export class CeCostCategoryRuleRuleOrNotCostCategoryOutputReference extends cdkt
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -6766,7 +6766,7 @@ export class CeCostCategoryRuleRuleOrNotCostCategoryOutputReference extends cdkt
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -6795,38 +6795,38 @@ export interface CeCostCategoryRuleRuleOrNotDimension {
 }
 
 export function ceCostCategoryRuleRuleOrNotDimensionToTerraform(struct?: CeCostCategoryRuleRuleOrNotDimensionOutputReference | CeCostCategoryRuleRuleOrNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleOrNotDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleOrNotDimensionOutputReference | CeCostCategoryRuleRuleOrNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -6837,14 +6837,14 @@ export function ceCostCategoryRuleRuleOrNotDimensionToHclTerraform(struct?: CeCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrNotDimensionOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrNotDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6900,7 +6900,7 @@ export class CeCostCategoryRuleRuleOrNotDimensionOutputReference extends cdktf.C
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -6916,7 +6916,7 @@ export class CeCostCategoryRuleRuleOrNotDimensionOutputReference extends cdktf.C
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -6945,38 +6945,38 @@ export interface CeCostCategoryRuleRuleOrNotTags {
 }
 
 export function ceCostCategoryRuleRuleOrNotTagsToTerraform(struct?: CeCostCategoryRuleRuleOrNotTagsOutputReference | CeCostCategoryRuleRuleOrNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleOrNotTagsToHclTerraform(struct?: CeCostCategoryRuleRuleOrNotTagsOutputReference | CeCostCategoryRuleRuleOrNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -6987,14 +6987,14 @@ export function ceCostCategoryRuleRuleOrNotTagsToHclTerraform(struct?: CeCostCat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrNotTagsOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrNotTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7050,7 +7050,7 @@ export class CeCostCategoryRuleRuleOrNotTagsOutputReference extends cdktf.Comple
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -7066,7 +7066,7 @@ export class CeCostCategoryRuleRuleOrNotTagsOutputReference extends cdktf.Comple
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -7101,8 +7101,8 @@ export interface CeCostCategoryRuleRuleOrNot {
 }
 
 export function ceCostCategoryRuleRuleOrNotToTerraform(struct?: CeCostCategoryRuleRuleOrNotOutputReference | CeCostCategoryRuleRuleOrNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -7114,8 +7114,8 @@ export function ceCostCategoryRuleRuleOrNotToTerraform(struct?: CeCostCategoryRu
 
 
 export function ceCostCategoryRuleRuleOrNotToHclTerraform(struct?: CeCostCategoryRuleRuleOrNotOutputReference | CeCostCategoryRuleRuleOrNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -7143,14 +7143,14 @@ export function ceCostCategoryRuleRuleOrNotToHclTerraform(struct?: CeCostCategor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrNotOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrNotOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7251,38 +7251,38 @@ export interface CeCostCategoryRuleRuleOrOrCostCategory {
 }
 
 export function ceCostCategoryRuleRuleOrOrCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleOrOrCostCategoryOutputReference | CeCostCategoryRuleRuleOrOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleOrOrCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleOrOrCostCategoryOutputReference | CeCostCategoryRuleRuleOrOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -7293,14 +7293,14 @@ export function ceCostCategoryRuleRuleOrOrCostCategoryToHclTerraform(struct?: Ce
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrOrCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrOrCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7356,7 +7356,7 @@ export class CeCostCategoryRuleRuleOrOrCostCategoryOutputReference extends cdktf
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -7372,7 +7372,7 @@ export class CeCostCategoryRuleRuleOrOrCostCategoryOutputReference extends cdktf
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -7401,38 +7401,38 @@ export interface CeCostCategoryRuleRuleOrOrDimension {
 }
 
 export function ceCostCategoryRuleRuleOrOrDimensionToTerraform(struct?: CeCostCategoryRuleRuleOrOrDimensionOutputReference | CeCostCategoryRuleRuleOrOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleOrOrDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleOrOrDimensionOutputReference | CeCostCategoryRuleRuleOrOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -7443,14 +7443,14 @@ export function ceCostCategoryRuleRuleOrOrDimensionToHclTerraform(struct?: CeCos
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrOrDimensionOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrOrDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7506,7 +7506,7 @@ export class CeCostCategoryRuleRuleOrOrDimensionOutputReference extends cdktf.Co
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -7522,7 +7522,7 @@ export class CeCostCategoryRuleRuleOrOrDimensionOutputReference extends cdktf.Co
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -7551,38 +7551,38 @@ export interface CeCostCategoryRuleRuleOrOrTags {
 }
 
 export function ceCostCategoryRuleRuleOrOrTagsToTerraform(struct?: CeCostCategoryRuleRuleOrOrTagsOutputReference | CeCostCategoryRuleRuleOrOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleOrOrTagsToHclTerraform(struct?: CeCostCategoryRuleRuleOrOrTagsOutputReference | CeCostCategoryRuleRuleOrOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -7593,14 +7593,14 @@ export function ceCostCategoryRuleRuleOrOrTagsToHclTerraform(struct?: CeCostCate
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrOrTagsOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrOrTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7656,7 +7656,7 @@ export class CeCostCategoryRuleRuleOrOrTagsOutputReference extends cdktf.Complex
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -7672,7 +7672,7 @@ export class CeCostCategoryRuleRuleOrOrTagsOutputReference extends cdktf.Complex
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -7706,9 +7706,9 @@ export interface CeCostCategoryRuleRuleOrOr {
   readonly tags?: CeCostCategoryRuleRuleOrOrTags;
 }
 
-export function ceCostCategoryRuleRuleOrOrToTerraform(struct?: CeCostCategoryRuleRuleOrOr | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleOrOrToTerraform(struct?: CeCostCategoryRuleRuleOrOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -7719,9 +7719,9 @@ export function ceCostCategoryRuleRuleOrOrToTerraform(struct?: CeCostCategoryRul
 }
 
 
-export function ceCostCategoryRuleRuleOrOrToHclTerraform(struct?: CeCostCategoryRuleRuleOrOr | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleOrOrToHclTerraform(struct?: CeCostCategoryRuleRuleOrOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -7749,9 +7749,9 @@ export function ceCostCategoryRuleRuleOrOrToHclTerraform(struct?: CeCostCategory
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrOrOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrOrOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7759,11 +7759,11 @@ export class CeCostCategoryRuleRuleOrOrOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CeCostCategoryRuleRuleOrOr | cdktf.IResolvable | undefined {
+  public get internalValue(): CeCostCategoryRuleRuleOrOr | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7784,7 +7784,7 @@ export class CeCostCategoryRuleRuleOrOrOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CeCostCategoryRuleRuleOrOr | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CeCostCategoryRuleRuleOrOr | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7792,7 +7792,7 @@ export class CeCostCategoryRuleRuleOrOrOutputReference extends cdktf.ComplexObje
       this._dimension.internalValue = undefined;
       this._tags.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7854,15 +7854,15 @@ export class CeCostCategoryRuleRuleOrOrOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class CeCostCategoryRuleRuleOrOrList extends cdktf.ComplexList {
-  public internalValue? : CeCostCategoryRuleRuleOrOr[] | cdktf.IResolvable
+export class CeCostCategoryRuleRuleOrOrList extends cdktn.ComplexList {
+  public internalValue? : CeCostCategoryRuleRuleOrOr[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7889,38 +7889,38 @@ export interface CeCostCategoryRuleRuleOrTags {
 }
 
 export function ceCostCategoryRuleRuleOrTagsToTerraform(struct?: CeCostCategoryRuleRuleOrTagsOutputReference | CeCostCategoryRuleRuleOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleOrTagsToHclTerraform(struct?: CeCostCategoryRuleRuleOrTagsOutputReference | CeCostCategoryRuleRuleOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -7931,14 +7931,14 @@ export function ceCostCategoryRuleRuleOrTagsToHclTerraform(struct?: CeCostCatego
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrTagsOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7994,7 +7994,7 @@ export class CeCostCategoryRuleRuleOrTagsOutputReference extends cdktf.ComplexOb
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -8010,7 +8010,7 @@ export class CeCostCategoryRuleRuleOrTagsOutputReference extends cdktf.ComplexOb
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -8029,7 +8029,7 @@ export interface CeCostCategoryRuleRuleOr {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#and CeCostCategory#and}
   */
-  readonly and?: CeCostCategoryRuleRuleOrAnd[] | cdktf.IResolvable;
+  readonly and?: CeCostCategoryRuleRuleOrAnd[] | cdktn.IResolvable;
   /**
   * cost_category block
   *
@@ -8053,7 +8053,7 @@ export interface CeCostCategoryRuleRuleOr {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#or CeCostCategory#or}
   */
-  readonly or?: CeCostCategoryRuleRuleOrOr[] | cdktf.IResolvable;
+  readonly or?: CeCostCategoryRuleRuleOrOr[] | cdktn.IResolvable;
   /**
   * tags block
   *
@@ -8062,30 +8062,30 @@ export interface CeCostCategoryRuleRuleOr {
   readonly tags?: CeCostCategoryRuleRuleOrTags;
 }
 
-export function ceCostCategoryRuleRuleOrToTerraform(struct?: CeCostCategoryRuleRuleOr | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleOrToTerraform(struct?: CeCostCategoryRuleRuleOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    and: cdktf.listMapper(ceCostCategoryRuleRuleOrAndToTerraform, true)(struct!.and),
+    and: cdktn.listMapper(ceCostCategoryRuleRuleOrAndToTerraform, true)(struct!.and),
     cost_category: ceCostCategoryRuleRuleOrCostCategoryToTerraform(struct!.costCategory),
     dimension: ceCostCategoryRuleRuleOrDimensionToTerraform(struct!.dimension),
     not: ceCostCategoryRuleRuleOrNotToTerraform(struct!.not),
-    or: cdktf.listMapper(ceCostCategoryRuleRuleOrOrToTerraform, true)(struct!.or),
+    or: cdktn.listMapper(ceCostCategoryRuleRuleOrOrToTerraform, true)(struct!.or),
     tags: ceCostCategoryRuleRuleOrTagsToTerraform(struct!.tags),
   }
 }
 
 
-export function ceCostCategoryRuleRuleOrToHclTerraform(struct?: CeCostCategoryRuleRuleOr | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleRuleOrToHclTerraform(struct?: CeCostCategoryRuleRuleOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     and: {
-      value: cdktf.listMapperHcl(ceCostCategoryRuleRuleOrAndToHclTerraform, true)(struct!.and),
+      value: cdktn.listMapperHcl(ceCostCategoryRuleRuleOrAndToHclTerraform, true)(struct!.and),
       isBlock: true,
       type: "set",
       storageClassType: "CeCostCategoryRuleRuleOrAndList",
@@ -8109,7 +8109,7 @@ export function ceCostCategoryRuleRuleOrToHclTerraform(struct?: CeCostCategoryRu
       storageClassType: "CeCostCategoryRuleRuleOrNotList",
     },
     or: {
-      value: cdktf.listMapperHcl(ceCostCategoryRuleRuleOrOrToHclTerraform, true)(struct!.or),
+      value: cdktn.listMapperHcl(ceCostCategoryRuleRuleOrOrToHclTerraform, true)(struct!.or),
       isBlock: true,
       type: "set",
       storageClassType: "CeCostCategoryRuleRuleOrOrList",
@@ -8126,9 +8126,9 @@ export function ceCostCategoryRuleRuleOrToHclTerraform(struct?: CeCostCategoryRu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOrOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOrOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8136,11 +8136,11 @@ export class CeCostCategoryRuleRuleOrOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CeCostCategoryRuleRuleOr | cdktf.IResolvable | undefined {
+  public get internalValue(): CeCostCategoryRuleRuleOr | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8173,7 +8173,7 @@ export class CeCostCategoryRuleRuleOrOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CeCostCategoryRuleRuleOr | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CeCostCategoryRuleRuleOr | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8184,7 +8184,7 @@ export class CeCostCategoryRuleRuleOrOutputReference extends cdktf.ComplexObject
       this._or.internalValue = undefined;
       this._tags.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8205,7 +8205,7 @@ export class CeCostCategoryRuleRuleOrOutputReference extends cdktf.ComplexObject
   public get and() {
     return this._and;
   }
-  public putAnd(value: CeCostCategoryRuleRuleOrAnd[] | cdktf.IResolvable) {
+  public putAnd(value: CeCostCategoryRuleRuleOrAnd[] | cdktn.IResolvable) {
     this._and.internalValue = value;
   }
   public resetAnd() {
@@ -8269,7 +8269,7 @@ export class CeCostCategoryRuleRuleOrOutputReference extends cdktf.ComplexObject
   public get or() {
     return this._or;
   }
-  public putOr(value: CeCostCategoryRuleRuleOrOr[] | cdktf.IResolvable) {
+  public putOr(value: CeCostCategoryRuleRuleOrOr[] | cdktn.IResolvable) {
     this._or.internalValue = value;
   }
   public resetOr() {
@@ -8297,15 +8297,15 @@ export class CeCostCategoryRuleRuleOrOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class CeCostCategoryRuleRuleOrList extends cdktf.ComplexList {
-  public internalValue? : CeCostCategoryRuleRuleOr[] | cdktf.IResolvable
+export class CeCostCategoryRuleRuleOrList extends cdktn.ComplexList {
+  public internalValue? : CeCostCategoryRuleRuleOr[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8332,38 +8332,38 @@ export interface CeCostCategoryRuleRuleTags {
 }
 
 export function ceCostCategoryRuleRuleTagsToTerraform(struct?: CeCostCategoryRuleRuleTagsOutputReference | CeCostCategoryRuleRuleTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceCostCategoryRuleRuleTagsToHclTerraform(struct?: CeCostCategoryRuleRuleTagsOutputReference | CeCostCategoryRuleRuleTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -8374,14 +8374,14 @@ export function ceCostCategoryRuleRuleTagsToHclTerraform(struct?: CeCostCategory
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleTagsOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8437,7 +8437,7 @@ export class CeCostCategoryRuleRuleTagsOutputReference extends cdktf.ComplexObje
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -8453,7 +8453,7 @@ export class CeCostCategoryRuleRuleTagsOutputReference extends cdktf.ComplexObje
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -8472,7 +8472,7 @@ export interface CeCostCategoryRuleRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#and CeCostCategory#and}
   */
-  readonly and?: CeCostCategoryRuleRuleAnd[] | cdktf.IResolvable;
+  readonly and?: CeCostCategoryRuleRuleAnd[] | cdktn.IResolvable;
   /**
   * cost_category block
   *
@@ -8496,7 +8496,7 @@ export interface CeCostCategoryRuleRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#or CeCostCategory#or}
   */
-  readonly or?: CeCostCategoryRuleRuleOr[] | cdktf.IResolvable;
+  readonly or?: CeCostCategoryRuleRuleOr[] | cdktn.IResolvable;
   /**
   * tags block
   *
@@ -8506,29 +8506,29 @@ export interface CeCostCategoryRuleRule {
 }
 
 export function ceCostCategoryRuleRuleToTerraform(struct?: CeCostCategoryRuleRuleOutputReference | CeCostCategoryRuleRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    and: cdktf.listMapper(ceCostCategoryRuleRuleAndToTerraform, true)(struct!.and),
+    and: cdktn.listMapper(ceCostCategoryRuleRuleAndToTerraform, true)(struct!.and),
     cost_category: ceCostCategoryRuleRuleCostCategoryToTerraform(struct!.costCategory),
     dimension: ceCostCategoryRuleRuleDimensionToTerraform(struct!.dimension),
     not: ceCostCategoryRuleRuleNotToTerraform(struct!.not),
-    or: cdktf.listMapper(ceCostCategoryRuleRuleOrToTerraform, true)(struct!.or),
+    or: cdktn.listMapper(ceCostCategoryRuleRuleOrToTerraform, true)(struct!.or),
     tags: ceCostCategoryRuleRuleTagsToTerraform(struct!.tags),
   }
 }
 
 
 export function ceCostCategoryRuleRuleToHclTerraform(struct?: CeCostCategoryRuleRuleOutputReference | CeCostCategoryRuleRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     and: {
-      value: cdktf.listMapperHcl(ceCostCategoryRuleRuleAndToHclTerraform, true)(struct!.and),
+      value: cdktn.listMapperHcl(ceCostCategoryRuleRuleAndToHclTerraform, true)(struct!.and),
       isBlock: true,
       type: "set",
       storageClassType: "CeCostCategoryRuleRuleAndList",
@@ -8552,7 +8552,7 @@ export function ceCostCategoryRuleRuleToHclTerraform(struct?: CeCostCategoryRule
       storageClassType: "CeCostCategoryRuleRuleNotList",
     },
     or: {
-      value: cdktf.listMapperHcl(ceCostCategoryRuleRuleOrToHclTerraform, true)(struct!.or),
+      value: cdktn.listMapperHcl(ceCostCategoryRuleRuleOrToHclTerraform, true)(struct!.or),
       isBlock: true,
       type: "set",
       storageClassType: "CeCostCategoryRuleRuleOrList",
@@ -8569,14 +8569,14 @@ export function ceCostCategoryRuleRuleToHclTerraform(struct?: CeCostCategoryRule
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleRuleOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8636,7 +8636,7 @@ export class CeCostCategoryRuleRuleOutputReference extends cdktf.ComplexObject {
   public get and() {
     return this._and;
   }
-  public putAnd(value: CeCostCategoryRuleRuleAnd[] | cdktf.IResolvable) {
+  public putAnd(value: CeCostCategoryRuleRuleAnd[] | cdktn.IResolvable) {
     this._and.internalValue = value;
   }
   public resetAnd() {
@@ -8700,7 +8700,7 @@ export class CeCostCategoryRuleRuleOutputReference extends cdktf.ComplexObject {
   public get or() {
     return this._or;
   }
-  public putOr(value: CeCostCategoryRuleRuleOr[] | cdktf.IResolvable) {
+  public putOr(value: CeCostCategoryRuleRuleOr[] | cdktn.IResolvable) {
     this._or.internalValue = value;
   }
   public resetOr() {
@@ -8750,34 +8750,34 @@ export interface CeCostCategoryRule {
   readonly rule?: CeCostCategoryRuleRule;
 }
 
-export function ceCostCategoryRuleToTerraform(struct?: CeCostCategoryRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleToTerraform(struct?: CeCostCategoryRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
     inherited_value: ceCostCategoryRuleInheritedValueToTerraform(struct!.inheritedValue),
     rule: ceCostCategoryRuleRuleToTerraform(struct!.rule),
   }
 }
 
 
-export function ceCostCategoryRuleToHclTerraform(struct?: CeCostCategoryRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategoryRuleToHclTerraform(struct?: CeCostCategoryRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8800,9 +8800,9 @@ export function ceCostCategoryRuleToHclTerraform(struct?: CeCostCategoryRule | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategoryRuleOutputReference extends cdktf.ComplexObject {
+export class CeCostCategoryRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8810,11 +8810,11 @@ export class CeCostCategoryRuleOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CeCostCategoryRule | cdktf.IResolvable | undefined {
+  public get internalValue(): CeCostCategoryRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8839,7 +8839,7 @@ export class CeCostCategoryRuleOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CeCostCategoryRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CeCostCategoryRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8848,7 +8848,7 @@ export class CeCostCategoryRuleOutputReference extends cdktf.ComplexObject {
       this._inheritedValue.internalValue = undefined;
       this._rule.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8927,15 +8927,15 @@ export class CeCostCategoryRuleOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class CeCostCategoryRuleList extends cdktf.ComplexList {
-  public internalValue? : CeCostCategoryRule[] | cdktf.IResolvable
+export class CeCostCategoryRuleList extends cdktn.ComplexList {
+  public internalValue? : CeCostCategoryRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8957,32 +8957,32 @@ export interface CeCostCategorySplitChargeRuleParameter {
   readonly values?: string[];
 }
 
-export function ceCostCategorySplitChargeRuleParameterToTerraform(struct?: CeCostCategorySplitChargeRuleParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategorySplitChargeRuleParameterToTerraform(struct?: CeCostCategorySplitChargeRuleParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    type: cdktn.stringToTerraform(struct!.type),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function ceCostCategorySplitChargeRuleParameterToHclTerraform(struct?: CeCostCategorySplitChargeRuleParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategorySplitChargeRuleParameterToHclTerraform(struct?: CeCostCategorySplitChargeRuleParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -8993,9 +8993,9 @@ export function ceCostCategorySplitChargeRuleParameterToHclTerraform(struct?: Ce
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategorySplitChargeRuleParameterOutputReference extends cdktf.ComplexObject {
+export class CeCostCategorySplitChargeRuleParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9003,11 +9003,11 @@ export class CeCostCategorySplitChargeRuleParameterOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CeCostCategorySplitChargeRuleParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): CeCostCategorySplitChargeRuleParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9024,14 +9024,14 @@ export class CeCostCategorySplitChargeRuleParameterOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CeCostCategorySplitChargeRuleParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CeCostCategorySplitChargeRuleParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9076,15 +9076,15 @@ export class CeCostCategorySplitChargeRuleParameterOutputReference extends cdktf
   }
 }
 
-export class CeCostCategorySplitChargeRuleParameterList extends cdktf.ComplexList {
-  public internalValue? : CeCostCategorySplitChargeRuleParameter[] | cdktf.IResolvable
+export class CeCostCategorySplitChargeRuleParameterList extends cdktn.ComplexList {
+  public internalValue? : CeCostCategorySplitChargeRuleParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9113,49 +9113,49 @@ export interface CeCostCategorySplitChargeRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#parameter CeCostCategory#parameter}
   */
-  readonly parameter?: CeCostCategorySplitChargeRuleParameter[] | cdktf.IResolvable;
+  readonly parameter?: CeCostCategorySplitChargeRuleParameter[] | cdktn.IResolvable;
 }
 
-export function ceCostCategorySplitChargeRuleToTerraform(struct?: CeCostCategorySplitChargeRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategorySplitChargeRuleToTerraform(struct?: CeCostCategorySplitChargeRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    method: cdktf.stringToTerraform(struct!.method),
-    source: cdktf.stringToTerraform(struct!.source),
-    targets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targets),
-    parameter: cdktf.listMapper(ceCostCategorySplitChargeRuleParameterToTerraform, true)(struct!.parameter),
+    method: cdktn.stringToTerraform(struct!.method),
+    source: cdktn.stringToTerraform(struct!.source),
+    targets: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.targets),
+    parameter: cdktn.listMapper(ceCostCategorySplitChargeRuleParameterToTerraform, true)(struct!.parameter),
   }
 }
 
 
-export function ceCostCategorySplitChargeRuleToHclTerraform(struct?: CeCostCategorySplitChargeRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceCostCategorySplitChargeRuleToHclTerraform(struct?: CeCostCategorySplitChargeRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     method: {
-      value: cdktf.stringToHclTerraform(struct!.method),
+      value: cdktn.stringToHclTerraform(struct!.method),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     targets: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.targets),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.targets),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     parameter: {
-      value: cdktf.listMapperHcl(ceCostCategorySplitChargeRuleParameterToHclTerraform, true)(struct!.parameter),
+      value: cdktn.listMapperHcl(ceCostCategorySplitChargeRuleParameterToHclTerraform, true)(struct!.parameter),
       isBlock: true,
       type: "set",
       storageClassType: "CeCostCategorySplitChargeRuleParameterList",
@@ -9166,9 +9166,9 @@ export function ceCostCategorySplitChargeRuleToHclTerraform(struct?: CeCostCateg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeCostCategorySplitChargeRuleOutputReference extends cdktf.ComplexObject {
+export class CeCostCategorySplitChargeRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9176,11 +9176,11 @@ export class CeCostCategorySplitChargeRuleOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CeCostCategorySplitChargeRule | cdktf.IResolvable | undefined {
+  public get internalValue(): CeCostCategorySplitChargeRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9205,7 +9205,7 @@ export class CeCostCategorySplitChargeRuleOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CeCostCategorySplitChargeRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CeCostCategorySplitChargeRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9214,7 +9214,7 @@ export class CeCostCategorySplitChargeRuleOutputReference extends cdktf.ComplexO
       this._targets = undefined;
       this._parameter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9257,7 +9257,7 @@ export class CeCostCategorySplitChargeRuleOutputReference extends cdktf.ComplexO
   // targets - computed: false, optional: false, required: true
   private _targets?: string[]; 
   public get targets() {
-    return cdktf.Fn.tolist(this.getListAttribute('targets'));
+    return cdktn.Fn.tolist(this.getListAttribute('targets'));
   }
   public set targets(value: string[]) {
     this._targets = value;
@@ -9272,7 +9272,7 @@ export class CeCostCategorySplitChargeRuleOutputReference extends cdktf.ComplexO
   public get parameter() {
     return this._parameter;
   }
-  public putParameter(value: CeCostCategorySplitChargeRuleParameter[] | cdktf.IResolvable) {
+  public putParameter(value: CeCostCategorySplitChargeRuleParameter[] | cdktn.IResolvable) {
     this._parameter.internalValue = value;
   }
   public resetParameter() {
@@ -9284,15 +9284,15 @@ export class CeCostCategorySplitChargeRuleOutputReference extends cdktf.ComplexO
   }
 }
 
-export class CeCostCategorySplitChargeRuleList extends cdktf.ComplexList {
-  public internalValue? : CeCostCategorySplitChargeRule[] | cdktf.IResolvable
+export class CeCostCategorySplitChargeRuleList extends cdktn.ComplexList {
+  public internalValue? : CeCostCategorySplitChargeRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9307,7 +9307,7 @@ export class CeCostCategorySplitChargeRuleList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category aws_ce_cost_category}
 */
-export class CeCostCategory extends cdktf.TerraformResource {
+export class CeCostCategory extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -9318,14 +9318,14 @@ export class CeCostCategory extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CeCostCategory resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CeCostCategory resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CeCostCategory to import
   * @param importFromId The id of the existing CeCostCategory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CeCostCategory to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ce_cost_category", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ce_cost_category", importId: importFromId, provider });
       }
 
   // ===========
@@ -9491,7 +9491,7 @@ export class CeCostCategory extends cdktf.TerraformResource {
   public get rule() {
     return this._rule;
   }
-  public putRule(value: CeCostCategoryRule[] | cdktf.IResolvable) {
+  public putRule(value: CeCostCategoryRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9504,7 +9504,7 @@ export class CeCostCategory extends cdktf.TerraformResource {
   public get splitChargeRule() {
     return this._splitChargeRule;
   }
-  public putSplitChargeRule(value: CeCostCategorySplitChargeRule[] | cdktf.IResolvable) {
+  public putSplitChargeRule(value: CeCostCategorySplitChargeRule[] | cdktn.IResolvable) {
     this._splitChargeRule.internalValue = value;
   }
   public resetSplitChargeRule() {
@@ -9521,70 +9521,70 @@ export class CeCostCategory extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_value: cdktf.stringToTerraform(this._defaultValue),
-      effective_start: cdktf.stringToTerraform(this._effectiveStart),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      rule_version: cdktf.stringToTerraform(this._ruleVersion),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      rule: cdktf.listMapper(ceCostCategoryRuleToTerraform, true)(this._rule.internalValue),
-      split_charge_rule: cdktf.listMapper(ceCostCategorySplitChargeRuleToTerraform, true)(this._splitChargeRule.internalValue),
+      default_value: cdktn.stringToTerraform(this._defaultValue),
+      effective_start: cdktn.stringToTerraform(this._effectiveStart),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      rule_version: cdktn.stringToTerraform(this._ruleVersion),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      rule: cdktn.listMapper(ceCostCategoryRuleToTerraform, true)(this._rule.internalValue),
+      split_charge_rule: cdktn.listMapper(ceCostCategorySplitChargeRuleToTerraform, true)(this._splitChargeRule.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       default_value: {
-        value: cdktf.stringToHclTerraform(this._defaultValue),
+        value: cdktn.stringToHclTerraform(this._defaultValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       effective_start: {
-        value: cdktf.stringToHclTerraform(this._effectiveStart),
+        value: cdktn.stringToHclTerraform(this._effectiveStart),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule_version: {
-        value: cdktf.stringToHclTerraform(this._ruleVersion),
+        value: cdktn.stringToHclTerraform(this._ruleVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       rule: {
-        value: cdktf.listMapperHcl(ceCostCategoryRuleToHclTerraform, true)(this._rule.internalValue),
+        value: cdktn.listMapperHcl(ceCostCategoryRuleToHclTerraform, true)(this._rule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CeCostCategoryRuleList",
       },
       split_charge_rule: {
-        value: cdktf.listMapperHcl(ceCostCategorySplitChargeRuleToHclTerraform, true)(this._splitChargeRule.internalValue),
+        value: cdktn.listMapperHcl(ceCostCategorySplitChargeRuleToHclTerraform, true)(this._splitChargeRule.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CeCostCategorySplitChargeRuleList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsSubnetConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSubnetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/subnet#availability_zone DataAwsSubnet#availability_zone}
   */
@@ -27,7 +27,7 @@ export interface DataAwsSubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/subnet#default_for_az DataAwsSubnet#default_for_az}
   */
-  readonly defaultForAz?: boolean | cdktf.IResolvable;
+  readonly defaultForAz?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/subnet#id DataAwsSubnet#id}
   *
@@ -62,7 +62,7 @@ export interface DataAwsSubnetConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/subnet#filter DataAwsSubnet#filter}
   */
-  readonly filter?: DataAwsSubnetFilter[] | cdktf.IResolvable;
+  readonly filter?: DataAwsSubnetFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -81,32 +81,32 @@ export interface DataAwsSubnetFilter {
   readonly values: string[];
 }
 
-export function dataAwsSubnetFilterToTerraform(struct?: DataAwsSubnetFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsSubnetFilterToTerraform(struct?: DataAwsSubnetFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataAwsSubnetFilterToHclTerraform(struct?: DataAwsSubnetFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsSubnetFilterToHclTerraform(struct?: DataAwsSubnetFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -117,9 +117,9 @@ export function dataAwsSubnetFilterToHclTerraform(struct?: DataAwsSubnetFilter |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsSubnetFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsSubnetFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -127,11 +127,11 @@ export class DataAwsSubnetFilterOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsSubnetFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsSubnetFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,14 +148,14 @@ export class DataAwsSubnetFilterOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsSubnetFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsSubnetFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -183,7 +183,7 @@ export class DataAwsSubnetFilterOutputReference extends cdktf.ComplexObject {
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -194,15 +194,15 @@ export class DataAwsSubnetFilterOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DataAwsSubnetFilterList extends cdktf.ComplexList {
-  public internalValue? : DataAwsSubnetFilter[] | cdktf.IResolvable
+export class DataAwsSubnetFilterList extends cdktn.ComplexList {
+  public internalValue? : DataAwsSubnetFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -220,25 +220,25 @@ export interface DataAwsSubnetTimeouts {
   readonly read?: string;
 }
 
-export function dataAwsSubnetTimeoutsToTerraform(struct?: DataAwsSubnetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsSubnetTimeoutsToTerraform(struct?: DataAwsSubnetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAwsSubnetTimeoutsToHclTerraform(struct?: DataAwsSubnetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsSubnetTimeoutsToHclTerraform(struct?: DataAwsSubnetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -249,19 +249,19 @@ export function dataAwsSubnetTimeoutsToHclTerraform(struct?: DataAwsSubnetTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsSubnetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAwsSubnetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAwsSubnetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsSubnetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -274,13 +274,13 @@ export class DataAwsSubnetTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsSubnetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsSubnetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -311,7 +311,7 @@ export class DataAwsSubnetTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/subnet aws_subnet}
 */
-export class DataAwsSubnet extends cdktf.TerraformDataSource {
+export class DataAwsSubnet extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -322,14 +322,14 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsSubnet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsSubnet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSubnet to import
   * @param importFromId The id of the existing DataAwsSubnet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/subnet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSubnet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_subnet", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_subnet", importId: importFromId, provider });
       }
 
   // ===========
@@ -446,11 +446,11 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
   }
 
   // default_for_az - computed: true, optional: true, required: false
-  private _defaultForAz?: boolean | cdktf.IResolvable; 
+  private _defaultForAz?: boolean | cdktn.IResolvable; 
   public get defaultForAz() {
     return this.getBooleanAttribute('default_for_az');
   }
-  public set defaultForAz(value: boolean | cdktf.IResolvable) {
+  public set defaultForAz(value: boolean | cdktn.IResolvable) {
     this._defaultForAz = value;
   }
   public resetDefaultForAz() {
@@ -617,7 +617,7 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: DataAwsSubnetFilter[] | cdktf.IResolvable) {
+  public putFilter(value: DataAwsSubnetFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -650,17 +650,17 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      availability_zone_id: cdktf.stringToTerraform(this._availabilityZoneId),
-      cidr_block: cdktf.stringToTerraform(this._cidrBlock),
-      default_for_az: cdktf.booleanToTerraform(this._defaultForAz),
-      id: cdktf.stringToTerraform(this._id),
-      ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
-      region: cdktf.stringToTerraform(this._region),
-      state: cdktf.stringToTerraform(this._state),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
-      filter: cdktf.listMapper(dataAwsSubnetFilterToTerraform, true)(this._filter.internalValue),
+      availability_zone: cdktn.stringToTerraform(this._availabilityZone),
+      availability_zone_id: cdktn.stringToTerraform(this._availabilityZoneId),
+      cidr_block: cdktn.stringToTerraform(this._cidrBlock),
+      default_for_az: cdktn.booleanToTerraform(this._defaultForAz),
+      id: cdktn.stringToTerraform(this._id),
+      ipv6_cidr_block: cdktn.stringToTerraform(this._ipv6CidrBlock),
+      region: cdktn.stringToTerraform(this._region),
+      state: cdktn.stringToTerraform(this._state),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
+      filter: cdktn.listMapper(dataAwsSubnetFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsSubnetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -668,67 +668,67 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       availability_zone: {
-        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        value: cdktn.stringToHclTerraform(this._availabilityZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       availability_zone_id: {
-        value: cdktf.stringToHclTerraform(this._availabilityZoneId),
+        value: cdktn.stringToHclTerraform(this._availabilityZoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cidr_block: {
-        value: cdktf.stringToHclTerraform(this._cidrBlock),
+        value: cdktn.stringToHclTerraform(this._cidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_for_az: {
-        value: cdktf.booleanToHclTerraform(this._defaultForAz),
+        value: cdktn.booleanToHclTerraform(this._defaultForAz),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv6_cidr_block: {
-        value: cdktf.stringToHclTerraform(this._ipv6CidrBlock),
+        value: cdktn.stringToHclTerraform(this._ipv6CidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       state: {
-        value: cdktf.stringToHclTerraform(this._state),
+        value: cdktn.stringToHclTerraform(this._state),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter: {
-        value: cdktf.listMapperHcl(dataAwsSubnetFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(dataAwsSubnetFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsSubnetFilterList",

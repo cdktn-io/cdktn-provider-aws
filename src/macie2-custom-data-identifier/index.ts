@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Macie2CustomDataIdentifierConfig extends cdktf.TerraformMetaArguments {
+export interface Macie2CustomDataIdentifierConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_custom_data_identifier#description Macie2CustomDataIdentifier#description}
   */
@@ -75,25 +75,25 @@ export interface Macie2CustomDataIdentifierTimeouts {
   readonly create?: string;
 }
 
-export function macie2CustomDataIdentifierTimeoutsToTerraform(struct?: Macie2CustomDataIdentifierTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function macie2CustomDataIdentifierTimeoutsToTerraform(struct?: Macie2CustomDataIdentifierTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function macie2CustomDataIdentifierTimeoutsToHclTerraform(struct?: Macie2CustomDataIdentifierTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function macie2CustomDataIdentifierTimeoutsToHclTerraform(struct?: Macie2CustomDataIdentifierTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,19 +104,19 @@ export function macie2CustomDataIdentifierTimeoutsToHclTerraform(struct?: Macie2
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Macie2CustomDataIdentifierTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Macie2CustomDataIdentifierTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Macie2CustomDataIdentifierTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Macie2CustomDataIdentifierTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -129,13 +129,13 @@ export class Macie2CustomDataIdentifierTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Macie2CustomDataIdentifierTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Macie2CustomDataIdentifierTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -166,7 +166,7 @@ export class Macie2CustomDataIdentifierTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier}
 */
-export class Macie2CustomDataIdentifier extends cdktf.TerraformResource {
+export class Macie2CustomDataIdentifier extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -177,14 +177,14 @@ export class Macie2CustomDataIdentifier extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Macie2CustomDataIdentifier resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Macie2CustomDataIdentifier resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Macie2CustomDataIdentifier to import
   * @param importFromId The id of the existing Macie2CustomDataIdentifier that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_custom_data_identifier#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Macie2CustomDataIdentifier to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_macie2_custom_data_identifier", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_macie2_custom_data_identifier", importId: importFromId, provider });
       }
 
   // ===========
@@ -277,7 +277,7 @@ export class Macie2CustomDataIdentifier extends cdktf.TerraformResource {
   // ignore_words - computed: false, optional: true, required: false
   private _ignoreWords?: string[]; 
   public get ignoreWords() {
-    return cdktf.Fn.tolist(this.getListAttribute('ignore_words'));
+    return cdktn.Fn.tolist(this.getListAttribute('ignore_words'));
   }
   public set ignoreWords(value: string[]) {
     this._ignoreWords = value;
@@ -293,7 +293,7 @@ export class Macie2CustomDataIdentifier extends cdktf.TerraformResource {
   // keywords - computed: false, optional: true, required: false
   private _keywords?: string[]; 
   public get keywords() {
-    return cdktf.Fn.tolist(this.getListAttribute('keywords'));
+    return cdktn.Fn.tolist(this.getListAttribute('keywords'));
   }
   public set keywords(value: string[]) {
     this._keywords = value;
@@ -440,17 +440,17 @@ export class Macie2CustomDataIdentifier extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      ignore_words: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ignoreWords),
-      keywords: cdktf.listMapper(cdktf.stringToTerraform, false)(this._keywords),
-      maximum_match_distance: cdktf.numberToTerraform(this._maximumMatchDistance),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      regex: cdktf.stringToTerraform(this._regex),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      ignore_words: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ignoreWords),
+      keywords: cdktn.listMapper(cdktn.stringToTerraform, false)(this._keywords),
+      maximum_match_distance: cdktn.numberToTerraform(this._maximumMatchDistance),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      regex: cdktn.stringToTerraform(this._regex),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       timeouts: macie2CustomDataIdentifierTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -458,67 +458,67 @@ export class Macie2CustomDataIdentifier extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ignore_words: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ignoreWords),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ignoreWords),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       keywords: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._keywords),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._keywords),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       maximum_match_distance: {
-        value: cdktf.numberToHclTerraform(this._maximumMatchDistance),
+        value: cdktn.numberToHclTerraform(this._maximumMatchDistance),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       regex: {
-        value: cdktf.stringToHclTerraform(this._regex),
+        value: cdktn.stringToHclTerraform(this._regex),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

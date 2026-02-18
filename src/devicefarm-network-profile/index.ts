@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DevicefarmNetworkProfileConfig extends cdktf.TerraformMetaArguments {
+export interface DevicefarmNetworkProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devicefarm_network_profile#description DevicefarmNetworkProfile#description}
   */
@@ -86,7 +86,7 @@ export interface DevicefarmNetworkProfileConfig extends cdktf.TerraformMetaArgum
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devicefarm_network_profile aws_devicefarm_network_profile}
 */
-export class DevicefarmNetworkProfile extends cdktf.TerraformResource {
+export class DevicefarmNetworkProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -97,14 +97,14 @@ export class DevicefarmNetworkProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DevicefarmNetworkProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DevicefarmNetworkProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevicefarmNetworkProfile to import
   * @param importFromId The id of the existing DevicefarmNetworkProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devicefarm_network_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevicefarmNetworkProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_devicefarm_network_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_devicefarm_network_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -417,119 +417,119 @@ export class DevicefarmNetworkProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      downlink_bandwidth_bits: cdktf.numberToTerraform(this._downlinkBandwidthBits),
-      downlink_delay_ms: cdktf.numberToTerraform(this._downlinkDelayMs),
-      downlink_jitter_ms: cdktf.numberToTerraform(this._downlinkJitterMs),
-      downlink_loss_percent: cdktf.numberToTerraform(this._downlinkLossPercent),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project_arn: cdktf.stringToTerraform(this._projectArn),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      type: cdktf.stringToTerraform(this._type),
-      uplink_bandwidth_bits: cdktf.numberToTerraform(this._uplinkBandwidthBits),
-      uplink_delay_ms: cdktf.numberToTerraform(this._uplinkDelayMs),
-      uplink_jitter_ms: cdktf.numberToTerraform(this._uplinkJitterMs),
-      uplink_loss_percent: cdktf.numberToTerraform(this._uplinkLossPercent),
+      description: cdktn.stringToTerraform(this._description),
+      downlink_bandwidth_bits: cdktn.numberToTerraform(this._downlinkBandwidthBits),
+      downlink_delay_ms: cdktn.numberToTerraform(this._downlinkDelayMs),
+      downlink_jitter_ms: cdktn.numberToTerraform(this._downlinkJitterMs),
+      downlink_loss_percent: cdktn.numberToTerraform(this._downlinkLossPercent),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project_arn: cdktn.stringToTerraform(this._projectArn),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      type: cdktn.stringToTerraform(this._type),
+      uplink_bandwidth_bits: cdktn.numberToTerraform(this._uplinkBandwidthBits),
+      uplink_delay_ms: cdktn.numberToTerraform(this._uplinkDelayMs),
+      uplink_jitter_ms: cdktn.numberToTerraform(this._uplinkJitterMs),
+      uplink_loss_percent: cdktn.numberToTerraform(this._uplinkLossPercent),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       downlink_bandwidth_bits: {
-        value: cdktf.numberToHclTerraform(this._downlinkBandwidthBits),
+        value: cdktn.numberToHclTerraform(this._downlinkBandwidthBits),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       downlink_delay_ms: {
-        value: cdktf.numberToHclTerraform(this._downlinkDelayMs),
+        value: cdktn.numberToHclTerraform(this._downlinkDelayMs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       downlink_jitter_ms: {
-        value: cdktf.numberToHclTerraform(this._downlinkJitterMs),
+        value: cdktn.numberToHclTerraform(this._downlinkJitterMs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       downlink_loss_percent: {
-        value: cdktf.numberToHclTerraform(this._downlinkLossPercent),
+        value: cdktn.numberToHclTerraform(this._downlinkLossPercent),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_arn: {
-        value: cdktf.stringToHclTerraform(this._projectArn),
+        value: cdktn.stringToHclTerraform(this._projectArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       uplink_bandwidth_bits: {
-        value: cdktf.numberToHclTerraform(this._uplinkBandwidthBits),
+        value: cdktn.numberToHclTerraform(this._uplinkBandwidthBits),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       uplink_delay_ms: {
-        value: cdktf.numberToHclTerraform(this._uplinkDelayMs),
+        value: cdktn.numberToHclTerraform(this._uplinkDelayMs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       uplink_jitter_ms: {
-        value: cdktf.numberToHclTerraform(this._uplinkJitterMs),
+        value: cdktn.numberToHclTerraform(this._uplinkJitterMs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       uplink_loss_percent: {
-        value: cdktf.numberToHclTerraform(this._uplinkLossPercent),
+        value: cdktn.numberToHclTerraform(this._uplinkLossPercent),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

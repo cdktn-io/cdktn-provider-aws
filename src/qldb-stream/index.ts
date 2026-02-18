@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QldbStreamConfig extends cdktf.TerraformMetaArguments {
+export interface QldbStreamConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/qldb_stream#exclusive_end_time QldbStream#exclusive_end_time}
   */
@@ -70,7 +70,7 @@ export interface QldbStreamKinesisConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/qldb_stream#aggregation_enabled QldbStream#aggregation_enabled}
   */
-  readonly aggregationEnabled?: boolean | cdktf.IResolvable;
+  readonly aggregationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/qldb_stream#stream_arn QldbStream#stream_arn}
   */
@@ -78,31 +78,31 @@ export interface QldbStreamKinesisConfiguration {
 }
 
 export function qldbStreamKinesisConfigurationToTerraform(struct?: QldbStreamKinesisConfigurationOutputReference | QldbStreamKinesisConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation_enabled: cdktf.booleanToTerraform(struct!.aggregationEnabled),
-    stream_arn: cdktf.stringToTerraform(struct!.streamArn),
+    aggregation_enabled: cdktn.booleanToTerraform(struct!.aggregationEnabled),
+    stream_arn: cdktn.stringToTerraform(struct!.streamArn),
   }
 }
 
 
 export function qldbStreamKinesisConfigurationToHclTerraform(struct?: QldbStreamKinesisConfigurationOutputReference | QldbStreamKinesisConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.aggregationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.aggregationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     stream_arn: {
-      value: cdktf.stringToHclTerraform(struct!.streamArn),
+      value: cdktn.stringToHclTerraform(struct!.streamArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,14 +113,14 @@ export function qldbStreamKinesisConfigurationToHclTerraform(struct?: QldbStream
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QldbStreamKinesisConfigurationOutputReference extends cdktf.ComplexObject {
+export class QldbStreamKinesisConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -152,11 +152,11 @@ export class QldbStreamKinesisConfigurationOutputReference extends cdktf.Complex
   }
 
   // aggregation_enabled - computed: false, optional: true, required: false
-  private _aggregationEnabled?: boolean | cdktf.IResolvable; 
+  private _aggregationEnabled?: boolean | cdktn.IResolvable; 
   public get aggregationEnabled() {
     return this.getBooleanAttribute('aggregation_enabled');
   }
-  public set aggregationEnabled(value: boolean | cdktf.IResolvable) {
+  public set aggregationEnabled(value: boolean | cdktn.IResolvable) {
     this._aggregationEnabled = value;
   }
   public resetAggregationEnabled() {
@@ -191,32 +191,32 @@ export interface QldbStreamTimeouts {
   readonly delete?: string;
 }
 
-export function qldbStreamTimeoutsToTerraform(struct?: QldbStreamTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function qldbStreamTimeoutsToTerraform(struct?: QldbStreamTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function qldbStreamTimeoutsToHclTerraform(struct?: QldbStreamTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function qldbStreamTimeoutsToHclTerraform(struct?: QldbStreamTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -227,19 +227,19 @@ export function qldbStreamTimeoutsToHclTerraform(struct?: QldbStreamTimeouts | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QldbStreamTimeoutsOutputReference extends cdktf.ComplexObject {
+export class QldbStreamTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): QldbStreamTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): QldbStreamTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -256,14 +256,14 @@ export class QldbStreamTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QldbStreamTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QldbStreamTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -311,7 +311,7 @@ export class QldbStreamTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/qldb_stream aws_qldb_stream}
 */
-export class QldbStream extends cdktf.TerraformResource {
+export class QldbStream extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -322,14 +322,14 @@ export class QldbStream extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QldbStream resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QldbStream resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QldbStream to import
   * @param importFromId The id of the existing QldbStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/qldb_stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QldbStream to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_qldb_stream", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_qldb_stream", importId: importFromId, provider });
       }
 
   // ===========
@@ -548,15 +548,15 @@ export class QldbStream extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      exclusive_end_time: cdktf.stringToTerraform(this._exclusiveEndTime),
-      id: cdktf.stringToTerraform(this._id),
-      inclusive_start_time: cdktf.stringToTerraform(this._inclusiveStartTime),
-      ledger_name: cdktf.stringToTerraform(this._ledgerName),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      stream_name: cdktf.stringToTerraform(this._streamName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      exclusive_end_time: cdktn.stringToTerraform(this._exclusiveEndTime),
+      id: cdktn.stringToTerraform(this._id),
+      inclusive_start_time: cdktn.stringToTerraform(this._inclusiveStartTime),
+      ledger_name: cdktn.stringToTerraform(this._ledgerName),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      stream_name: cdktn.stringToTerraform(this._streamName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       kinesis_configuration: qldbStreamKinesisConfigurationToTerraform(this._kinesisConfiguration.internalValue),
       timeouts: qldbStreamTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -565,55 +565,55 @@ export class QldbStream extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       exclusive_end_time: {
-        value: cdktf.stringToHclTerraform(this._exclusiveEndTime),
+        value: cdktn.stringToHclTerraform(this._exclusiveEndTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       inclusive_start_time: {
-        value: cdktf.stringToHclTerraform(this._inclusiveStartTime),
+        value: cdktn.stringToHclTerraform(this._inclusiveStartTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ledger_name: {
-        value: cdktf.stringToHclTerraform(this._ledgerName),
+        value: cdktn.stringToHclTerraform(this._ledgerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stream_name: {
-        value: cdktf.stringToHclTerraform(this._streamName),
+        value: cdktn.stringToHclTerraform(this._streamName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Sesv2DedicatedIpPoolConfig extends cdktf.TerraformMetaArguments {
+export interface Sesv2DedicatedIpPoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_dedicated_ip_pool#id Sesv2DedicatedIpPool#id}
   *
@@ -46,7 +46,7 @@ export interface Sesv2DedicatedIpPoolConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool}
 */
-export class Sesv2DedicatedIpPool extends cdktf.TerraformResource {
+export class Sesv2DedicatedIpPool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class Sesv2DedicatedIpPool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Sesv2DedicatedIpPool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Sesv2DedicatedIpPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Sesv2DedicatedIpPool to import
   * @param importFromId The id of the existing Sesv2DedicatedIpPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_dedicated_ip_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Sesv2DedicatedIpPool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_dedicated_ip_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_dedicated_ip_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -210,49 +210,49 @@ export class Sesv2DedicatedIpPool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      pool_name: cdktf.stringToTerraform(this._poolName),
-      region: cdktf.stringToTerraform(this._region),
-      scaling_mode: cdktf.stringToTerraform(this._scalingMode),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      id: cdktn.stringToTerraform(this._id),
+      pool_name: cdktn.stringToTerraform(this._poolName),
+      region: cdktn.stringToTerraform(this._region),
+      scaling_mode: cdktn.stringToTerraform(this._scalingMode),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pool_name: {
-        value: cdktf.stringToHclTerraform(this._poolName),
+        value: cdktn.stringToHclTerraform(this._poolName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scaling_mode: {
-        value: cdktf.stringToHclTerraform(this._scalingMode),
+        value: cdktn.stringToHclTerraform(this._scalingMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

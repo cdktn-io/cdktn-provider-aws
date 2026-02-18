@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsConnectHoursOfOperationConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsConnectHoursOfOperationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/connect_hours_of_operation#hours_of_operation_id DataAwsConnectHoursOfOperation#hours_of_operation_id}
   */
@@ -46,8 +46,8 @@ export interface DataAwsConnectHoursOfOperationConfigEndTime {
 }
 
 export function dataAwsConnectHoursOfOperationConfigEndTimeToTerraform(struct?: DataAwsConnectHoursOfOperationConfigEndTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -56,8 +56,8 @@ export function dataAwsConnectHoursOfOperationConfigEndTimeToTerraform(struct?: 
 
 
 export function dataAwsConnectHoursOfOperationConfigEndTimeToHclTerraform(struct?: DataAwsConnectHoursOfOperationConfigEndTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -65,7 +65,7 @@ export function dataAwsConnectHoursOfOperationConfigEndTimeToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsConnectHoursOfOperationConfigEndTimeOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectHoursOfOperationConfigEndTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -74,7 +74,7 @@ export class DataAwsConnectHoursOfOperationConfigEndTimeOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -104,14 +104,14 @@ export class DataAwsConnectHoursOfOperationConfigEndTimeOutputReference extends 
   }
 }
 
-export class DataAwsConnectHoursOfOperationConfigEndTimeList extends cdktf.ComplexList {
+export class DataAwsConnectHoursOfOperationConfigEndTimeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -126,8 +126,8 @@ export interface DataAwsConnectHoursOfOperationConfigStartTime {
 }
 
 export function dataAwsConnectHoursOfOperationConfigStartTimeToTerraform(struct?: DataAwsConnectHoursOfOperationConfigStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -136,8 +136,8 @@ export function dataAwsConnectHoursOfOperationConfigStartTimeToTerraform(struct?
 
 
 export function dataAwsConnectHoursOfOperationConfigStartTimeToHclTerraform(struct?: DataAwsConnectHoursOfOperationConfigStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -145,7 +145,7 @@ export function dataAwsConnectHoursOfOperationConfigStartTimeToHclTerraform(stru
   return attrs;
 }
 
-export class DataAwsConnectHoursOfOperationConfigStartTimeOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectHoursOfOperationConfigStartTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -154,7 +154,7 @@ export class DataAwsConnectHoursOfOperationConfigStartTimeOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -184,14 +184,14 @@ export class DataAwsConnectHoursOfOperationConfigStartTimeOutputReference extend
   }
 }
 
-export class DataAwsConnectHoursOfOperationConfigStartTimeList extends cdktf.ComplexList {
+export class DataAwsConnectHoursOfOperationConfigStartTimeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -206,8 +206,8 @@ export interface DataAwsConnectHoursOfOperationConfigA {
 }
 
 export function dataAwsConnectHoursOfOperationConfigAToTerraform(struct?: DataAwsConnectHoursOfOperationConfigA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -216,8 +216,8 @@ export function dataAwsConnectHoursOfOperationConfigAToTerraform(struct?: DataAw
 
 
 export function dataAwsConnectHoursOfOperationConfigAToHclTerraform(struct?: DataAwsConnectHoursOfOperationConfigA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -225,7 +225,7 @@ export function dataAwsConnectHoursOfOperationConfigAToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataAwsConnectHoursOfOperationConfigAOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectHoursOfOperationConfigAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -234,7 +234,7 @@ export class DataAwsConnectHoursOfOperationConfigAOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -271,14 +271,14 @@ export class DataAwsConnectHoursOfOperationConfigAOutputReference extends cdktf.
   }
 }
 
-export class DataAwsConnectHoursOfOperationConfigAList extends cdktf.ComplexList {
+export class DataAwsConnectHoursOfOperationConfigAList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -293,7 +293,7 @@ export class DataAwsConnectHoursOfOperationConfigAList extends cdktf.ComplexList
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/connect_hours_of_operation aws_connect_hours_of_operation}
 */
-export class DataAwsConnectHoursOfOperation extends cdktf.TerraformDataSource {
+export class DataAwsConnectHoursOfOperation extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -304,14 +304,14 @@ export class DataAwsConnectHoursOfOperation extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsConnectHoursOfOperation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsConnectHoursOfOperation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsConnectHoursOfOperation to import
   * @param importFromId The id of the existing DataAwsConnectHoursOfOperation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/connect_hours_of_operation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsConnectHoursOfOperation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_hours_of_operation", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_hours_of_operation", importId: importFromId, provider });
       }
 
   // ===========
@@ -473,49 +473,49 @@ export class DataAwsConnectHoursOfOperation extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hours_of_operation_id: cdktf.stringToTerraform(this._hoursOfOperationId),
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      hours_of_operation_id: cdktn.stringToTerraform(this._hoursOfOperationId),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       hours_of_operation_id: {
-        value: cdktf.stringToHclTerraform(this._hoursOfOperationId),
+        value: cdktn.stringToHclTerraform(this._hoursOfOperationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

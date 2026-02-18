@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsElasticacheReservedCacheNodeOfferingConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsElasticacheReservedCacheNodeOfferingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/elasticache_reserved_cache_node_offering#cache_node_type DataAwsElasticacheReservedCacheNodeOffering#cache_node_type}
   */
@@ -39,7 +39,7 @@ export interface DataAwsElasticacheReservedCacheNodeOfferingConfig extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/elasticache_reserved_cache_node_offering aws_elasticache_reserved_cache_node_offering}
 */
-export class DataAwsElasticacheReservedCacheNodeOffering extends cdktf.TerraformDataSource {
+export class DataAwsElasticacheReservedCacheNodeOffering extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -50,14 +50,14 @@ export class DataAwsElasticacheReservedCacheNodeOffering extends cdktf.Terraform
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsElasticacheReservedCacheNodeOffering resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsElasticacheReservedCacheNodeOffering resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsElasticacheReservedCacheNodeOffering to import
   * @param importFromId The id of the existing DataAwsElasticacheReservedCacheNodeOffering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/elasticache_reserved_cache_node_offering#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsElasticacheReservedCacheNodeOffering to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticache_reserved_cache_node_offering", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticache_reserved_cache_node_offering", importId: importFromId, provider });
       }
 
   // ===========
@@ -182,42 +182,42 @@ export class DataAwsElasticacheReservedCacheNodeOffering extends cdktf.Terraform
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cache_node_type: cdktf.stringToTerraform(this._cacheNodeType),
-      duration: cdktf.stringToTerraform(this._duration),
-      offering_type: cdktf.stringToTerraform(this._offeringType),
-      product_description: cdktf.stringToTerraform(this._productDescription),
-      region: cdktf.stringToTerraform(this._region),
+      cache_node_type: cdktn.stringToTerraform(this._cacheNodeType),
+      duration: cdktn.stringToTerraform(this._duration),
+      offering_type: cdktn.stringToTerraform(this._offeringType),
+      product_description: cdktn.stringToTerraform(this._productDescription),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cache_node_type: {
-        value: cdktf.stringToHclTerraform(this._cacheNodeType),
+        value: cdktn.stringToHclTerraform(this._cacheNodeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       duration: {
-        value: cdktf.stringToHclTerraform(this._duration),
+        value: cdktn.stringToHclTerraform(this._duration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       offering_type: {
-        value: cdktf.stringToHclTerraform(this._offeringType),
+        value: cdktn.stringToHclTerraform(this._offeringType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       product_description: {
-        value: cdktf.stringToHclTerraform(this._productDescription),
+        value: cdktn.stringToHclTerraform(this._productDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

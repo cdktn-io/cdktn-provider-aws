@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IotThingTypeConfig extends cdktf.TerraformMetaArguments {
+export interface IotThingTypeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_thing_type#deprecated IotThingType#deprecated}
   */
-  readonly deprecated?: boolean | cdktf.IResolvable;
+  readonly deprecated?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_thing_type#id IotThingType#id}
   *
@@ -60,31 +60,31 @@ export interface IotThingTypeProperties {
 }
 
 export function iotThingTypePropertiesToTerraform(struct?: IotThingTypePropertiesOutputReference | IotThingTypeProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    searchable_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.searchableAttributes),
+    description: cdktn.stringToTerraform(struct!.description),
+    searchable_attributes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.searchableAttributes),
   }
 }
 
 
 export function iotThingTypePropertiesToHclTerraform(struct?: IotThingTypePropertiesOutputReference | IotThingTypeProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     searchable_attributes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.searchableAttributes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.searchableAttributes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -95,14 +95,14 @@ export function iotThingTypePropertiesToHclTerraform(struct?: IotThingTypeProper
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotThingTypePropertiesOutputReference extends cdktf.ComplexObject {
+export class IotThingTypePropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -152,7 +152,7 @@ export class IotThingTypePropertiesOutputReference extends cdktf.ComplexObject {
   // searchable_attributes - computed: true, optional: true, required: false
   private _searchableAttributes?: string[]; 
   public get searchableAttributes() {
-    return cdktf.Fn.tolist(this.getListAttribute('searchable_attributes'));
+    return cdktn.Fn.tolist(this.getListAttribute('searchable_attributes'));
   }
   public set searchableAttributes(value: string[]) {
     this._searchableAttributes = value;
@@ -169,7 +169,7 @@ export class IotThingTypePropertiesOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_thing_type aws_iot_thing_type}
 */
-export class IotThingType extends cdktf.TerraformResource {
+export class IotThingType extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -180,14 +180,14 @@ export class IotThingType extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IotThingType resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IotThingType resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotThingType to import
   * @param importFromId The id of the existing IotThingType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_thing_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotThingType to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_thing_type", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_thing_type", importId: importFromId, provider });
       }
 
   // ===========
@@ -236,11 +236,11 @@ export class IotThingType extends cdktf.TerraformResource {
   }
 
   // deprecated - computed: false, optional: true, required: false
-  private _deprecated?: boolean | cdktf.IResolvable; 
+  private _deprecated?: boolean | cdktn.IResolvable; 
   public get deprecated() {
     return this.getBooleanAttribute('deprecated');
   }
-  public set deprecated(value: boolean | cdktf.IResolvable) {
+  public set deprecated(value: boolean | cdktn.IResolvable) {
     this._deprecated = value;
   }
   public resetDeprecated() {
@@ -350,12 +350,12 @@ export class IotThingType extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deprecated: cdktf.booleanToTerraform(this._deprecated),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      deprecated: cdktn.booleanToTerraform(this._deprecated),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       properties: iotThingTypePropertiesToTerraform(this._properties.internalValue),
     };
   }
@@ -363,37 +363,37 @@ export class IotThingType extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deprecated: {
-        value: cdktf.booleanToHclTerraform(this._deprecated),
+        value: cdktn.booleanToHclTerraform(this._deprecated),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

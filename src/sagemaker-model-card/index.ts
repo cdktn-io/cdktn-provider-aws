@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SagemakerModelCardConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerModelCardConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_model_card#content SagemakerModelCard#content}
   */
@@ -39,7 +39,7 @@ export interface SagemakerModelCardConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_model_card#security_config SagemakerModelCard#security_config}
   */
-  readonly securityConfig?: SagemakerModelCardSecurityConfig[] | cdktf.IResolvable;
+  readonly securityConfig?: SagemakerModelCardSecurityConfig[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -54,25 +54,25 @@ export interface SagemakerModelCardSecurityConfig {
   readonly kmsKeyId: string;
 }
 
-export function sagemakerModelCardSecurityConfigToTerraform(struct?: SagemakerModelCardSecurityConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerModelCardSecurityConfigToTerraform(struct?: SagemakerModelCardSecurityConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
   }
 }
 
 
-export function sagemakerModelCardSecurityConfigToHclTerraform(struct?: SagemakerModelCardSecurityConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerModelCardSecurityConfigToHclTerraform(struct?: SagemakerModelCardSecurityConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,9 +83,9 @@ export function sagemakerModelCardSecurityConfigToHclTerraform(struct?: Sagemake
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerModelCardSecurityConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerModelCardSecurityConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -93,11 +93,11 @@ export class SagemakerModelCardSecurityConfigOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerModelCardSecurityConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerModelCardSecurityConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -110,13 +110,13 @@ export class SagemakerModelCardSecurityConfigOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerModelCardSecurityConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerModelCardSecurityConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._kmsKeyId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -141,15 +141,15 @@ export class SagemakerModelCardSecurityConfigOutputReference extends cdktf.Compl
   }
 }
 
-export class SagemakerModelCardSecurityConfigList extends cdktf.ComplexList {
-  public internalValue? : SagemakerModelCardSecurityConfig[] | cdktf.IResolvable
+export class SagemakerModelCardSecurityConfigList extends cdktn.ComplexList {
+  public internalValue? : SagemakerModelCardSecurityConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -169,25 +169,25 @@ export interface SagemakerModelCardTimeouts {
   readonly delete?: string;
 }
 
-export function sagemakerModelCardTimeoutsToTerraform(struct?: SagemakerModelCardTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerModelCardTimeoutsToTerraform(struct?: SagemakerModelCardTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete: cdktf.stringToTerraform(struct!.delete),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function sagemakerModelCardTimeoutsToHclTerraform(struct?: SagemakerModelCardTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerModelCardTimeoutsToHclTerraform(struct?: SagemakerModelCardTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -198,19 +198,19 @@ export function sagemakerModelCardTimeoutsToHclTerraform(struct?: SagemakerModel
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerModelCardTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SagemakerModelCardTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SagemakerModelCardTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerModelCardTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -223,13 +223,13 @@ export class SagemakerModelCardTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerModelCardTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerModelCardTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -260,7 +260,7 @@ export class SagemakerModelCardTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_model_card aws_sagemaker_model_card}
 */
-export class SagemakerModelCard extends cdktf.TerraformResource {
+export class SagemakerModelCard extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -271,14 +271,14 @@ export class SagemakerModelCard extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SagemakerModelCard resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SagemakerModelCard resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerModelCard to import
   * @param importFromId The id of the existing SagemakerModelCard that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_model_card#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerModelCard to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_model_card", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_model_card", importId: importFromId, provider });
       }
 
   // ===========
@@ -398,7 +398,7 @@ export class SagemakerModelCard extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -408,7 +408,7 @@ export class SagemakerModelCard extends cdktf.TerraformResource {
   public get securityConfig() {
     return this._securityConfig;
   }
-  public putSecurityConfig(value: SagemakerModelCardSecurityConfig[] | cdktf.IResolvable) {
+  public putSecurityConfig(value: SagemakerModelCardSecurityConfig[] | cdktn.IResolvable) {
     this._securityConfig.internalValue = value;
   }
   public resetSecurityConfig() {
@@ -441,12 +441,12 @@ export class SagemakerModelCard extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content: cdktf.stringToTerraform(this._content),
-      model_card_name: cdktf.stringToTerraform(this._modelCardName),
-      model_card_status: cdktf.stringToTerraform(this._modelCardStatus),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      security_config: cdktf.listMapper(sagemakerModelCardSecurityConfigToTerraform, true)(this._securityConfig.internalValue),
+      content: cdktn.stringToTerraform(this._content),
+      model_card_name: cdktn.stringToTerraform(this._modelCardName),
+      model_card_status: cdktn.stringToTerraform(this._modelCardStatus),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      security_config: cdktn.listMapper(sagemakerModelCardSecurityConfigToTerraform, true)(this._securityConfig.internalValue),
       timeouts: sagemakerModelCardTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -454,37 +454,37 @@ export class SagemakerModelCard extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       content: {
-        value: cdktf.stringToHclTerraform(this._content),
+        value: cdktn.stringToHclTerraform(this._content),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       model_card_name: {
-        value: cdktf.stringToHclTerraform(this._modelCardName),
+        value: cdktn.stringToHclTerraform(this._modelCardName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       model_card_status: {
-        value: cdktf.stringToHclTerraform(this._modelCardStatus),
+        value: cdktn.stringToHclTerraform(this._modelCardStatus),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       security_config: {
-        value: cdktf.listMapperHcl(sagemakerModelCardSecurityConfigToHclTerraform, true)(this._securityConfig.internalValue),
+        value: cdktn.listMapperHcl(sagemakerModelCardSecurityConfigToHclTerraform, true)(this._securityConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SagemakerModelCardSecurityConfigList",

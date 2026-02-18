@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EksAccessPolicyAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface EksAccessPolicyAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_access_policy_association#cluster_name EksAccessPolicyAssociation#cluster_name}
   */
@@ -62,31 +62,31 @@ export interface EksAccessPolicyAssociationAccessScope {
 }
 
 export function eksAccessPolicyAssociationAccessScopeToTerraform(struct?: EksAccessPolicyAssociationAccessScopeOutputReference | EksAccessPolicyAssociationAccessScope): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespaces: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.namespaces),
-    type: cdktf.stringToTerraform(struct!.type),
+    namespaces: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.namespaces),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function eksAccessPolicyAssociationAccessScopeToHclTerraform(struct?: EksAccessPolicyAssociationAccessScopeOutputReference | EksAccessPolicyAssociationAccessScope): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespaces: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.namespaces),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.namespaces),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -97,14 +97,14 @@ export function eksAccessPolicyAssociationAccessScopeToHclTerraform(struct?: Eks
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksAccessPolicyAssociationAccessScopeOutputReference extends cdktf.ComplexObject {
+export class EksAccessPolicyAssociationAccessScopeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -138,7 +138,7 @@ export class EksAccessPolicyAssociationAccessScopeOutputReference extends cdktf.
   // namespaces - computed: false, optional: true, required: false
   private _namespaces?: string[]; 
   public get namespaces() {
-    return cdktf.Fn.tolist(this.getListAttribute('namespaces'));
+    return cdktn.Fn.tolist(this.getListAttribute('namespaces'));
   }
   public set namespaces(value: string[]) {
     this._namespaces = value;
@@ -175,32 +175,32 @@ export interface EksAccessPolicyAssociationTimeouts {
   readonly delete?: string;
 }
 
-export function eksAccessPolicyAssociationTimeoutsToTerraform(struct?: EksAccessPolicyAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksAccessPolicyAssociationTimeoutsToTerraform(struct?: EksAccessPolicyAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function eksAccessPolicyAssociationTimeoutsToHclTerraform(struct?: EksAccessPolicyAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksAccessPolicyAssociationTimeoutsToHclTerraform(struct?: EksAccessPolicyAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -211,19 +211,19 @@ export function eksAccessPolicyAssociationTimeoutsToHclTerraform(struct?: EksAcc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksAccessPolicyAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EksAccessPolicyAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EksAccessPolicyAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EksAccessPolicyAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -240,14 +240,14 @@ export class EksAccessPolicyAssociationTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EksAccessPolicyAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EksAccessPolicyAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -295,7 +295,7 @@ export class EksAccessPolicyAssociationTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_access_policy_association aws_eks_access_policy_association}
 */
-export class EksAccessPolicyAssociation extends cdktf.TerraformResource {
+export class EksAccessPolicyAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -306,14 +306,14 @@ export class EksAccessPolicyAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EksAccessPolicyAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EksAccessPolicyAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EksAccessPolicyAssociation to import
   * @param importFromId The id of the existing EksAccessPolicyAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_access_policy_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EksAccessPolicyAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_access_policy_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_access_policy_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -472,11 +472,11 @@ export class EksAccessPolicyAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_name: cdktf.stringToTerraform(this._clusterName),
-      id: cdktf.stringToTerraform(this._id),
-      policy_arn: cdktf.stringToTerraform(this._policyArn),
-      principal_arn: cdktf.stringToTerraform(this._principalArn),
-      region: cdktf.stringToTerraform(this._region),
+      cluster_name: cdktn.stringToTerraform(this._clusterName),
+      id: cdktn.stringToTerraform(this._id),
+      policy_arn: cdktn.stringToTerraform(this._policyArn),
+      principal_arn: cdktn.stringToTerraform(this._principalArn),
+      region: cdktn.stringToTerraform(this._region),
       access_scope: eksAccessPolicyAssociationAccessScopeToTerraform(this._accessScope.internalValue),
       timeouts: eksAccessPolicyAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -485,31 +485,31 @@ export class EksAccessPolicyAssociation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_name: {
-        value: cdktf.stringToHclTerraform(this._clusterName),
+        value: cdktn.stringToHclTerraform(this._clusterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_arn: {
-        value: cdktf.stringToHclTerraform(this._policyArn),
+        value: cdktn.stringToHclTerraform(this._policyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal_arn: {
-        value: cdktf.stringToHclTerraform(this._principalArn),
+        value: cdktn.stringToHclTerraform(this._principalArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

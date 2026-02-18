@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsApigatewayv2VpcLinkConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsApigatewayv2VpcLinkConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/apigatewayv2_vpc_link#id DataAwsApigatewayv2VpcLink#id}
   *
@@ -38,7 +38,7 @@ export interface DataAwsApigatewayv2VpcLinkConfig extends cdktf.TerraformMetaArg
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/apigatewayv2_vpc_link aws_apigatewayv2_vpc_link}
 */
-export class DataAwsApigatewayv2VpcLink extends cdktf.TerraformDataSource {
+export class DataAwsApigatewayv2VpcLink extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class DataAwsApigatewayv2VpcLink extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsApigatewayv2VpcLink resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsApigatewayv2VpcLink resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsApigatewayv2VpcLink to import
   * @param importFromId The id of the existing DataAwsApigatewayv2VpcLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/apigatewayv2_vpc_link#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsApigatewayv2VpcLink to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_vpc_link", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_vpc_link", importId: importFromId, provider });
       }
 
   // ===========
@@ -140,12 +140,12 @@ export class DataAwsApigatewayv2VpcLink extends cdktf.TerraformDataSource {
 
   // security_group_ids - computed: true, optional: false, required: false
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
 
   // subnet_ids - computed: true, optional: false, required: false
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
 
   // tags - computed: true, optional: true, required: false
@@ -183,35 +183,35 @@ export class DataAwsApigatewayv2VpcLink extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      vpc_link_id: cdktf.stringToTerraform(this._vpcLinkId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      vpc_link_id: cdktn.stringToTerraform(this._vpcLinkId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_link_id: {
-        value: cdktf.stringToHclTerraform(this._vpcLinkId),
+        value: cdktn.stringToHclTerraform(this._vpcLinkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcEndpointSecurityGroupAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface VpcEndpointSecurityGroupAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_security_group_association#id VpcEndpointSecurityGroupAssociation#id}
   *
@@ -28,7 +28,7 @@ export interface VpcEndpointSecurityGroupAssociationConfig extends cdktf.Terrafo
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_security_group_association#replace_default_association VpcEndpointSecurityGroupAssociation#replace_default_association}
   */
-  readonly replaceDefaultAssociation?: boolean | cdktf.IResolvable;
+  readonly replaceDefaultAssociation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_security_group_association#security_group_id VpcEndpointSecurityGroupAssociation#security_group_id}
   */
@@ -42,7 +42,7 @@ export interface VpcEndpointSecurityGroupAssociationConfig extends cdktf.Terrafo
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_security_group_association aws_vpc_endpoint_security_group_association}
 */
-export class VpcEndpointSecurityGroupAssociation extends cdktf.TerraformResource {
+export class VpcEndpointSecurityGroupAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class VpcEndpointSecurityGroupAssociation extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcEndpointSecurityGroupAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcEndpointSecurityGroupAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcEndpointSecurityGroupAssociation to import
   * @param importFromId The id of the existing VpcEndpointSecurityGroupAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_security_group_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcEndpointSecurityGroupAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_endpoint_security_group_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_endpoint_security_group_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -134,11 +134,11 @@ export class VpcEndpointSecurityGroupAssociation extends cdktf.TerraformResource
   }
 
   // replace_default_association - computed: false, optional: true, required: false
-  private _replaceDefaultAssociation?: boolean | cdktf.IResolvable; 
+  private _replaceDefaultAssociation?: boolean | cdktn.IResolvable; 
   public get replaceDefaultAssociation() {
     return this.getBooleanAttribute('replace_default_association');
   }
-  public set replaceDefaultAssociation(value: boolean | cdktf.IResolvable) {
+  public set replaceDefaultAssociation(value: boolean | cdktn.IResolvable) {
     this._replaceDefaultAssociation = value;
   }
   public resetReplaceDefaultAssociation() {
@@ -181,42 +181,42 @@ export class VpcEndpointSecurityGroupAssociation extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      replace_default_association: cdktf.booleanToTerraform(this._replaceDefaultAssociation),
-      security_group_id: cdktf.stringToTerraform(this._securityGroupId),
-      vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      replace_default_association: cdktn.booleanToTerraform(this._replaceDefaultAssociation),
+      security_group_id: cdktn.stringToTerraform(this._securityGroupId),
+      vpc_endpoint_id: cdktn.stringToTerraform(this._vpcEndpointId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replace_default_association: {
-        value: cdktf.booleanToHclTerraform(this._replaceDefaultAssociation),
+        value: cdktn.booleanToHclTerraform(this._replaceDefaultAssociation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       security_group_id: {
-        value: cdktf.stringToHclTerraform(this._securityGroupId),
+        value: cdktn.stringToHclTerraform(this._securityGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._vpcEndpointId),
+        value: cdktn.stringToHclTerraform(this._vpcEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

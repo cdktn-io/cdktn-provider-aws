@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsStoragegatewayLocalDiskConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsStoragegatewayLocalDiskConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/storagegateway_local_disk#disk_node DataAwsStoragegatewayLocalDisk#disk_node}
   */
@@ -42,7 +42,7 @@ export interface DataAwsStoragegatewayLocalDiskConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/storagegateway_local_disk aws_storagegateway_local_disk}
 */
-export class DataAwsStoragegatewayLocalDisk extends cdktf.TerraformDataSource {
+export class DataAwsStoragegatewayLocalDisk extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class DataAwsStoragegatewayLocalDisk extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsStoragegatewayLocalDisk resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsStoragegatewayLocalDisk resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsStoragegatewayLocalDisk to import
   * @param importFromId The id of the existing DataAwsStoragegatewayLocalDisk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/storagegateway_local_disk#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsStoragegatewayLocalDisk to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_local_disk", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_local_disk", importId: importFromId, provider });
       }
 
   // ===========
@@ -189,42 +189,42 @@ export class DataAwsStoragegatewayLocalDisk extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disk_node: cdktf.stringToTerraform(this._diskNode),
-      disk_path: cdktf.stringToTerraform(this._diskPath),
-      gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      disk_node: cdktn.stringToTerraform(this._diskNode),
+      disk_path: cdktn.stringToTerraform(this._diskPath),
+      gateway_arn: cdktn.stringToTerraform(this._gatewayArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       disk_node: {
-        value: cdktf.stringToHclTerraform(this._diskNode),
+        value: cdktn.stringToHclTerraform(this._diskNode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disk_path: {
-        value: cdktf.stringToHclTerraform(this._diskPath),
+        value: cdktn.stringToHclTerraform(this._diskPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_arn: {
-        value: cdktf.stringToHclTerraform(this._gatewayArn),
+        value: cdktn.stringToHclTerraform(this._gatewayArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

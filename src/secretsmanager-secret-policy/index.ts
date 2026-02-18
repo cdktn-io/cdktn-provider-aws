@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecretsmanagerSecretPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface SecretsmanagerSecretPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/secretsmanager_secret_policy#block_public_policy SecretsmanagerSecretPolicy#block_public_policy}
   */
-  readonly blockPublicPolicy?: boolean | cdktf.IResolvable;
+  readonly blockPublicPolicy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/secretsmanager_secret_policy#id SecretsmanagerSecretPolicy#id}
   *
@@ -42,7 +42,7 @@ export interface SecretsmanagerSecretPolicyConfig extends cdktf.TerraformMetaArg
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/secretsmanager_secret_policy aws_secretsmanager_secret_policy}
 */
-export class SecretsmanagerSecretPolicy extends cdktf.TerraformResource {
+export class SecretsmanagerSecretPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class SecretsmanagerSecretPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecretsmanagerSecretPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecretsmanagerSecretPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretsmanagerSecretPolicy to import
   * @param importFromId The id of the existing SecretsmanagerSecretPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/secretsmanager_secret_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretsmanagerSecretPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_secretsmanager_secret_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_secretsmanager_secret_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -102,11 +102,11 @@ export class SecretsmanagerSecretPolicy extends cdktf.TerraformResource {
   // ==========
 
   // block_public_policy - computed: false, optional: true, required: false
-  private _blockPublicPolicy?: boolean | cdktf.IResolvable; 
+  private _blockPublicPolicy?: boolean | cdktn.IResolvable; 
   public get blockPublicPolicy() {
     return this.getBooleanAttribute('block_public_policy');
   }
-  public set blockPublicPolicy(value: boolean | cdktf.IResolvable) {
+  public set blockPublicPolicy(value: boolean | cdktn.IResolvable) {
     this._blockPublicPolicy = value;
   }
   public resetBlockPublicPolicy() {
@@ -181,42 +181,42 @@ export class SecretsmanagerSecretPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      block_public_policy: cdktf.booleanToTerraform(this._blockPublicPolicy),
-      id: cdktf.stringToTerraform(this._id),
-      policy: cdktf.stringToTerraform(this._policy),
-      region: cdktf.stringToTerraform(this._region),
-      secret_arn: cdktf.stringToTerraform(this._secretArn),
+      block_public_policy: cdktn.booleanToTerraform(this._blockPublicPolicy),
+      id: cdktn.stringToTerraform(this._id),
+      policy: cdktn.stringToTerraform(this._policy),
+      region: cdktn.stringToTerraform(this._region),
+      secret_arn: cdktn.stringToTerraform(this._secretArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       block_public_policy: {
-        value: cdktf.booleanToHclTerraform(this._blockPublicPolicy),
+        value: cdktn.booleanToHclTerraform(this._blockPublicPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy: {
-        value: cdktf.stringToHclTerraform(this._policy),
+        value: cdktn.stringToHclTerraform(this._policy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_arn: {
-        value: cdktf.stringToHclTerraform(this._secretArn),
+        value: cdktn.stringToHclTerraform(this._secretArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

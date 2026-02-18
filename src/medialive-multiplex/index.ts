@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MedialiveMultiplexConfig extends cdktf.TerraformMetaArguments {
+export interface MedialiveMultiplexConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_multiplex#availability_zones MedialiveMultiplex#availability_zones}
   */
@@ -36,7 +36,7 @@ export interface MedialiveMultiplexConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_multiplex#start_multiplex MedialiveMultiplex#start_multiplex}
   */
-  readonly startMultiplex?: boolean | cdktf.IResolvable;
+  readonly startMultiplex?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_multiplex#tags MedialiveMultiplex#tags}
   */
@@ -78,45 +78,45 @@ export interface MedialiveMultiplexMultiplexSettings {
 }
 
 export function medialiveMultiplexMultiplexSettingsToTerraform(struct?: MedialiveMultiplexMultiplexSettingsOutputReference | MedialiveMultiplexMultiplexSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    maximum_video_buffer_delay_milliseconds: cdktf.numberToTerraform(struct!.maximumVideoBufferDelayMilliseconds),
-    transport_stream_bitrate: cdktf.numberToTerraform(struct!.transportStreamBitrate),
-    transport_stream_id: cdktf.numberToTerraform(struct!.transportStreamId),
-    transport_stream_reserved_bitrate: cdktf.numberToTerraform(struct!.transportStreamReservedBitrate),
+    maximum_video_buffer_delay_milliseconds: cdktn.numberToTerraform(struct!.maximumVideoBufferDelayMilliseconds),
+    transport_stream_bitrate: cdktn.numberToTerraform(struct!.transportStreamBitrate),
+    transport_stream_id: cdktn.numberToTerraform(struct!.transportStreamId),
+    transport_stream_reserved_bitrate: cdktn.numberToTerraform(struct!.transportStreamReservedBitrate),
   }
 }
 
 
 export function medialiveMultiplexMultiplexSettingsToHclTerraform(struct?: MedialiveMultiplexMultiplexSettingsOutputReference | MedialiveMultiplexMultiplexSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     maximum_video_buffer_delay_milliseconds: {
-      value: cdktf.numberToHclTerraform(struct!.maximumVideoBufferDelayMilliseconds),
+      value: cdktn.numberToHclTerraform(struct!.maximumVideoBufferDelayMilliseconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     transport_stream_bitrate: {
-      value: cdktf.numberToHclTerraform(struct!.transportStreamBitrate),
+      value: cdktn.numberToHclTerraform(struct!.transportStreamBitrate),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     transport_stream_id: {
-      value: cdktf.numberToHclTerraform(struct!.transportStreamId),
+      value: cdktn.numberToHclTerraform(struct!.transportStreamId),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     transport_stream_reserved_bitrate: {
-      value: cdktf.numberToHclTerraform(struct!.transportStreamReservedBitrate),
+      value: cdktn.numberToHclTerraform(struct!.transportStreamReservedBitrate),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -127,14 +127,14 @@ export function medialiveMultiplexMultiplexSettingsToHclTerraform(struct?: Media
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MedialiveMultiplexMultiplexSettingsOutputReference extends cdktf.ComplexObject {
+export class MedialiveMultiplexMultiplexSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -250,39 +250,39 @@ export interface MedialiveMultiplexTimeouts {
   readonly update?: string;
 }
 
-export function medialiveMultiplexTimeoutsToTerraform(struct?: MedialiveMultiplexTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveMultiplexTimeoutsToTerraform(struct?: MedialiveMultiplexTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function medialiveMultiplexTimeoutsToHclTerraform(struct?: MedialiveMultiplexTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveMultiplexTimeoutsToHclTerraform(struct?: MedialiveMultiplexTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -293,19 +293,19 @@ export function medialiveMultiplexTimeoutsToHclTerraform(struct?: MedialiveMulti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MedialiveMultiplexTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MedialiveMultiplexTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MedialiveMultiplexTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MedialiveMultiplexTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -326,7 +326,7 @@ export class MedialiveMultiplexTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MedialiveMultiplexTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MedialiveMultiplexTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -334,7 +334,7 @@ export class MedialiveMultiplexTimeoutsOutputReference extends cdktf.ComplexObje
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -399,7 +399,7 @@ export class MedialiveMultiplexTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_multiplex aws_medialive_multiplex}
 */
-export class MedialiveMultiplex extends cdktf.TerraformResource {
+export class MedialiveMultiplex extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -410,14 +410,14 @@ export class MedialiveMultiplex extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MedialiveMultiplex resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MedialiveMultiplex resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MedialiveMultiplex to import
   * @param importFromId The id of the existing MedialiveMultiplex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_multiplex#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MedialiveMultiplex to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_medialive_multiplex", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_medialive_multiplex", importId: importFromId, provider });
       }
 
   // ===========
@@ -526,11 +526,11 @@ export class MedialiveMultiplex extends cdktf.TerraformResource {
   }
 
   // start_multiplex - computed: false, optional: true, required: false
-  private _startMultiplex?: boolean | cdktf.IResolvable; 
+  private _startMultiplex?: boolean | cdktn.IResolvable; 
   public get startMultiplex() {
     return this.getBooleanAttribute('start_multiplex');
   }
-  public set startMultiplex(value: boolean | cdktf.IResolvable) {
+  public set startMultiplex(value: boolean | cdktn.IResolvable) {
     this._startMultiplex = value;
   }
   public resetStartMultiplex() {
@@ -611,13 +611,13 @@ export class MedialiveMultiplex extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availabilityZones),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      start_multiplex: cdktf.booleanToTerraform(this._startMultiplex),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      availability_zones: cdktn.listMapper(cdktn.stringToTerraform, false)(this._availabilityZones),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      start_multiplex: cdktn.booleanToTerraform(this._startMultiplex),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       multiplex_settings: medialiveMultiplexMultiplexSettingsToTerraform(this._multiplexSettings.internalValue),
       timeouts: medialiveMultiplexTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -626,43 +626,43 @@ export class MedialiveMultiplex extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       availability_zones: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._availabilityZones),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._availabilityZones),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_multiplex: {
-        value: cdktf.booleanToHclTerraform(this._startMultiplex),
+        value: cdktn.booleanToHclTerraform(this._startMultiplex),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

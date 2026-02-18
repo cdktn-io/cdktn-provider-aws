@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DbParameterGroupConfig extends cdktf.TerraformMetaArguments {
+export interface DbParameterGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_parameter_group#description DbParameterGroup#description}
   */
@@ -44,7 +44,7 @@ export interface DbParameterGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_parameter_group#skip_destroy DbParameterGroup#skip_destroy}
   */
-  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  readonly skipDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_parameter_group#tags DbParameterGroup#tags}
   */
@@ -58,7 +58,7 @@ export interface DbParameterGroupConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_parameter_group#parameter DbParameterGroup#parameter}
   */
-  readonly parameter?: DbParameterGroupParameter[] | cdktf.IResolvable;
+  readonly parameter?: DbParameterGroupParameter[] | cdktn.IResolvable;
 }
 export interface DbParameterGroupParameter {
   /**
@@ -75,39 +75,39 @@ export interface DbParameterGroupParameter {
   readonly value: string;
 }
 
-export function dbParameterGroupParameterToTerraform(struct?: DbParameterGroupParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dbParameterGroupParameterToTerraform(struct?: DbParameterGroupParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    apply_method: cdktf.stringToTerraform(struct!.applyMethod),
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    apply_method: cdktn.stringToTerraform(struct!.applyMethod),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dbParameterGroupParameterToHclTerraform(struct?: DbParameterGroupParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dbParameterGroupParameterToHclTerraform(struct?: DbParameterGroupParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     apply_method: {
-      value: cdktf.stringToHclTerraform(struct!.applyMethod),
+      value: cdktn.stringToHclTerraform(struct!.applyMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,9 +118,9 @@ export function dbParameterGroupParameterToHclTerraform(struct?: DbParameterGrou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DbParameterGroupParameterOutputReference extends cdktf.ComplexObject {
+export class DbParameterGroupParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -128,11 +128,11 @@ export class DbParameterGroupParameterOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DbParameterGroupParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): DbParameterGroupParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -153,7 +153,7 @@ export class DbParameterGroupParameterOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DbParameterGroupParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DbParameterGroupParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class DbParameterGroupParameterOutputReference extends cdktf.ComplexObjec
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -217,15 +217,15 @@ export class DbParameterGroupParameterOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class DbParameterGroupParameterList extends cdktf.ComplexList {
-  public internalValue? : DbParameterGroupParameter[] | cdktf.IResolvable
+export class DbParameterGroupParameterList extends cdktn.ComplexList {
+  public internalValue? : DbParameterGroupParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -240,7 +240,7 @@ export class DbParameterGroupParameterList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_parameter_group aws_db_parameter_group}
 */
-export class DbParameterGroup extends cdktf.TerraformResource {
+export class DbParameterGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -251,14 +251,14 @@ export class DbParameterGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DbParameterGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DbParameterGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DbParameterGroup to import
   * @param importFromId The id of the existing DbParameterGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_parameter_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DbParameterGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_db_parameter_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_db_parameter_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -403,11 +403,11 @@ export class DbParameterGroup extends cdktf.TerraformResource {
   }
 
   // skip_destroy - computed: false, optional: true, required: false
-  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  private _skipDestroy?: boolean | cdktn.IResolvable; 
   public get skipDestroy() {
     return this.getBooleanAttribute('skip_destroy');
   }
-  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+  public set skipDestroy(value: boolean | cdktn.IResolvable) {
     this._skipDestroy = value;
   }
   public resetSkipDestroy() {
@@ -455,7 +455,7 @@ export class DbParameterGroup extends cdktf.TerraformResource {
   public get parameter() {
     return this._parameter;
   }
-  public putParameter(value: DbParameterGroupParameter[] | cdktf.IResolvable) {
+  public putParameter(value: DbParameterGroupParameter[] | cdktn.IResolvable) {
     this._parameter.internalValue = value;
   }
   public resetParameter() {
@@ -472,77 +472,77 @@ export class DbParameterGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      family: cdktf.stringToTerraform(this._family),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      region: cdktf.stringToTerraform(this._region),
-      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      parameter: cdktf.listMapper(dbParameterGroupParameterToTerraform, true)(this._parameter.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      family: cdktn.stringToTerraform(this._family),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      region: cdktn.stringToTerraform(this._region),
+      skip_destroy: cdktn.booleanToTerraform(this._skipDestroy),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      parameter: cdktn.listMapper(dbParameterGroupParameterToTerraform, true)(this._parameter.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       family: {
-        value: cdktf.stringToHclTerraform(this._family),
+        value: cdktn.stringToHclTerraform(this._family),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_destroy: {
-        value: cdktf.booleanToHclTerraform(this._skipDestroy),
+        value: cdktn.booleanToHclTerraform(this._skipDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       parameter: {
-        value: cdktf.listMapperHcl(dbParameterGroupParameterToHclTerraform, true)(this._parameter.internalValue),
+        value: cdktn.listMapperHcl(dbParameterGroupParameterToHclTerraform, true)(this._parameter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DbParameterGroupParameterList",

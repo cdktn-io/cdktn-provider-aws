@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LambdaLayerVersionPermissionConfig extends cdktf.TerraformMetaArguments {
+export interface LambdaLayerVersionPermissionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_layer_version_permission#action LambdaLayerVersionPermission#action}
   */
@@ -44,7 +44,7 @@ export interface LambdaLayerVersionPermissionConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_layer_version_permission#skip_destroy LambdaLayerVersionPermission#skip_destroy}
   */
-  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  readonly skipDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_layer_version_permission#statement_id LambdaLayerVersionPermission#statement_id}
   */
@@ -58,7 +58,7 @@ export interface LambdaLayerVersionPermissionConfig extends cdktf.TerraformMetaA
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_layer_version_permission aws_lambda_layer_version_permission}
 */
-export class LambdaLayerVersionPermission extends cdktf.TerraformResource {
+export class LambdaLayerVersionPermission extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -69,14 +69,14 @@ export class LambdaLayerVersionPermission extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LambdaLayerVersionPermission resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LambdaLayerVersionPermission resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LambdaLayerVersionPermission to import
   * @param importFromId The id of the existing LambdaLayerVersionPermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_layer_version_permission#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LambdaLayerVersionPermission to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_layer_version_permission", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_layer_version_permission", importId: importFromId, provider });
       }
 
   // ===========
@@ -219,11 +219,11 @@ export class LambdaLayerVersionPermission extends cdktf.TerraformResource {
   }
 
   // skip_destroy - computed: false, optional: true, required: false
-  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  private _skipDestroy?: boolean | cdktn.IResolvable; 
   public get skipDestroy() {
     return this.getBooleanAttribute('skip_destroy');
   }
-  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+  public set skipDestroy(value: boolean | cdktn.IResolvable) {
     this._skipDestroy = value;
   }
   public resetSkipDestroy() {
@@ -266,70 +266,70 @@ export class LambdaLayerVersionPermission extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: cdktf.stringToTerraform(this._action),
-      id: cdktf.stringToTerraform(this._id),
-      layer_name: cdktf.stringToTerraform(this._layerName),
-      organization_id: cdktf.stringToTerraform(this._organizationId),
-      principal: cdktf.stringToTerraform(this._principal),
-      region: cdktf.stringToTerraform(this._region),
-      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
-      statement_id: cdktf.stringToTerraform(this._statementId),
-      version_number: cdktf.numberToTerraform(this._versionNumber),
+      action: cdktn.stringToTerraform(this._action),
+      id: cdktn.stringToTerraform(this._id),
+      layer_name: cdktn.stringToTerraform(this._layerName),
+      organization_id: cdktn.stringToTerraform(this._organizationId),
+      principal: cdktn.stringToTerraform(this._principal),
+      region: cdktn.stringToTerraform(this._region),
+      skip_destroy: cdktn.booleanToTerraform(this._skipDestroy),
+      statement_id: cdktn.stringToTerraform(this._statementId),
+      version_number: cdktn.numberToTerraform(this._versionNumber),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action: {
-        value: cdktf.stringToHclTerraform(this._action),
+        value: cdktn.stringToHclTerraform(this._action),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       layer_name: {
-        value: cdktf.stringToHclTerraform(this._layerName),
+        value: cdktn.stringToHclTerraform(this._layerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization_id: {
-        value: cdktf.stringToHclTerraform(this._organizationId),
+        value: cdktn.stringToHclTerraform(this._organizationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal: {
-        value: cdktf.stringToHclTerraform(this._principal),
+        value: cdktn.stringToHclTerraform(this._principal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_destroy: {
-        value: cdktf.booleanToHclTerraform(this._skipDestroy),
+        value: cdktn.booleanToHclTerraform(this._skipDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       statement_id: {
-        value: cdktf.stringToHclTerraform(this._statementId),
+        value: cdktn.stringToHclTerraform(this._statementId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version_number: {
-        value: cdktf.numberToHclTerraform(this._versionNumber),
+        value: cdktn.numberToHclTerraform(this._versionNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

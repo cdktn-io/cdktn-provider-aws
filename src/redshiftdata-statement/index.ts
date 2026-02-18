@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedshiftdataStatementConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftdataStatementConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftdata_statement#cluster_identifier RedshiftdataStatement#cluster_identifier}
   */
@@ -52,7 +52,7 @@ export interface RedshiftdataStatementConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftdata_statement#with_event RedshiftdataStatement#with_event}
   */
-  readonly withEvent?: boolean | cdktf.IResolvable;
+  readonly withEvent?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftdata_statement#workgroup_name RedshiftdataStatement#workgroup_name}
   */
@@ -62,7 +62,7 @@ export interface RedshiftdataStatementConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftdata_statement#parameters RedshiftdataStatement#parameters}
   */
-  readonly parameters?: RedshiftdataStatementParameters[] | cdktf.IResolvable;
+  readonly parameters?: RedshiftdataStatementParameters[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -81,32 +81,32 @@ export interface RedshiftdataStatementParameters {
   readonly value: string;
 }
 
-export function redshiftdataStatementParametersToTerraform(struct?: RedshiftdataStatementParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftdataStatementParametersToTerraform(struct?: RedshiftdataStatementParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function redshiftdataStatementParametersToHclTerraform(struct?: RedshiftdataStatementParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftdataStatementParametersToHclTerraform(struct?: RedshiftdataStatementParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,9 +117,9 @@ export function redshiftdataStatementParametersToHclTerraform(struct?: Redshiftd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedshiftdataStatementParametersOutputReference extends cdktf.ComplexObject {
+export class RedshiftdataStatementParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -127,11 +127,11 @@ export class RedshiftdataStatementParametersOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedshiftdataStatementParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): RedshiftdataStatementParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,14 +148,14 @@ export class RedshiftdataStatementParametersOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedshiftdataStatementParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedshiftdataStatementParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -194,15 +194,15 @@ export class RedshiftdataStatementParametersOutputReference extends cdktf.Comple
   }
 }
 
-export class RedshiftdataStatementParametersList extends cdktf.ComplexList {
-  public internalValue? : RedshiftdataStatementParameters[] | cdktf.IResolvable
+export class RedshiftdataStatementParametersList extends cdktn.ComplexList {
+  public internalValue? : RedshiftdataStatementParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -220,25 +220,25 @@ export interface RedshiftdataStatementTimeouts {
   readonly create?: string;
 }
 
-export function redshiftdataStatementTimeoutsToTerraform(struct?: RedshiftdataStatementTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftdataStatementTimeoutsToTerraform(struct?: RedshiftdataStatementTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function redshiftdataStatementTimeoutsToHclTerraform(struct?: RedshiftdataStatementTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftdataStatementTimeoutsToHclTerraform(struct?: RedshiftdataStatementTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -249,19 +249,19 @@ export function redshiftdataStatementTimeoutsToHclTerraform(struct?: Redshiftdat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedshiftdataStatementTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RedshiftdataStatementTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RedshiftdataStatementTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RedshiftdataStatementTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -274,13 +274,13 @@ export class RedshiftdataStatementTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedshiftdataStatementTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedshiftdataStatementTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -311,7 +311,7 @@ export class RedshiftdataStatementTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftdata_statement aws_redshiftdata_statement}
 */
-export class RedshiftdataStatement extends cdktf.TerraformResource {
+export class RedshiftdataStatement extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -322,14 +322,14 @@ export class RedshiftdataStatement extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedshiftdataStatement resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedshiftdataStatement resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftdataStatement to import
   * @param importFromId The id of the existing RedshiftdataStatement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftdata_statement#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftdataStatement to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshiftdata_statement", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshiftdata_statement", importId: importFromId, provider });
       }
 
   // ===========
@@ -500,11 +500,11 @@ export class RedshiftdataStatement extends cdktf.TerraformResource {
   }
 
   // with_event - computed: false, optional: true, required: false
-  private _withEvent?: boolean | cdktf.IResolvable; 
+  private _withEvent?: boolean | cdktn.IResolvable; 
   public get withEvent() {
     return this.getBooleanAttribute('with_event');
   }
-  public set withEvent(value: boolean | cdktf.IResolvable) {
+  public set withEvent(value: boolean | cdktn.IResolvable) {
     this._withEvent = value;
   }
   public resetWithEvent() {
@@ -536,7 +536,7 @@ export class RedshiftdataStatement extends cdktf.TerraformResource {
   public get parameters() {
     return this._parameters;
   }
-  public putParameters(value: RedshiftdataStatementParameters[] | cdktf.IResolvable) {
+  public putParameters(value: RedshiftdataStatementParameters[] | cdktn.IResolvable) {
     this._parameters.internalValue = value;
   }
   public resetParameters() {
@@ -569,17 +569,17 @@ export class RedshiftdataStatement extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      database: cdktf.stringToTerraform(this._database),
-      db_user: cdktf.stringToTerraform(this._dbUser),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      secret_arn: cdktf.stringToTerraform(this._secretArn),
-      sql: cdktf.stringToTerraform(this._sql),
-      statement_name: cdktf.stringToTerraform(this._statementName),
-      with_event: cdktf.booleanToTerraform(this._withEvent),
-      workgroup_name: cdktf.stringToTerraform(this._workgroupName),
-      parameters: cdktf.listMapper(redshiftdataStatementParametersToTerraform, true)(this._parameters.internalValue),
+      cluster_identifier: cdktn.stringToTerraform(this._clusterIdentifier),
+      database: cdktn.stringToTerraform(this._database),
+      db_user: cdktn.stringToTerraform(this._dbUser),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      secret_arn: cdktn.stringToTerraform(this._secretArn),
+      sql: cdktn.stringToTerraform(this._sql),
+      statement_name: cdktn.stringToTerraform(this._statementName),
+      with_event: cdktn.booleanToTerraform(this._withEvent),
+      workgroup_name: cdktn.stringToTerraform(this._workgroupName),
+      parameters: cdktn.listMapper(redshiftdataStatementParametersToTerraform, true)(this._parameters.internalValue),
       timeouts: redshiftdataStatementTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -587,67 +587,67 @@ export class RedshiftdataStatement extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._clusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_user: {
-        value: cdktf.stringToHclTerraform(this._dbUser),
+        value: cdktn.stringToHclTerraform(this._dbUser),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_arn: {
-        value: cdktf.stringToHclTerraform(this._secretArn),
+        value: cdktn.stringToHclTerraform(this._secretArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql: {
-        value: cdktf.stringToHclTerraform(this._sql),
+        value: cdktn.stringToHclTerraform(this._sql),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       statement_name: {
-        value: cdktf.stringToHclTerraform(this._statementName),
+        value: cdktn.stringToHclTerraform(this._statementName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       with_event: {
-        value: cdktf.booleanToHclTerraform(this._withEvent),
+        value: cdktn.booleanToHclTerraform(this._withEvent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       workgroup_name: {
-        value: cdktf.stringToHclTerraform(this._workgroupName),
+        value: cdktn.stringToHclTerraform(this._workgroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.listMapperHcl(redshiftdataStatementParametersToHclTerraform, true)(this._parameters.internalValue),
+        value: cdktn.listMapperHcl(redshiftdataStatementParametersToHclTerraform, true)(this._parameters.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RedshiftdataStatementParametersList",

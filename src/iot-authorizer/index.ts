@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IotAuthorizerConfig extends cdktf.TerraformMetaArguments {
+export interface IotAuthorizerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_authorizer#authorizer_function_arn IotAuthorizer#authorizer_function_arn}
   */
@@ -19,7 +19,7 @@ export interface IotAuthorizerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_authorizer#enable_caching_for_http IotAuthorizer#enable_caching_for_http}
   */
-  readonly enableCachingForHttp?: boolean | cdktf.IResolvable;
+  readonly enableCachingForHttp?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_authorizer#id IotAuthorizer#id}
   *
@@ -40,7 +40,7 @@ export interface IotAuthorizerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_authorizer#signing_disabled IotAuthorizer#signing_disabled}
   */
-  readonly signingDisabled?: boolean | cdktf.IResolvable;
+  readonly signingDisabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_authorizer#status IotAuthorizer#status}
   */
@@ -66,7 +66,7 @@ export interface IotAuthorizerConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_authorizer aws_iot_authorizer}
 */
-export class IotAuthorizer extends cdktf.TerraformResource {
+export class IotAuthorizer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class IotAuthorizer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IotAuthorizer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IotAuthorizer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotAuthorizer to import
   * @param importFromId The id of the existing IotAuthorizer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_authorizer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotAuthorizer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_authorizer", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_authorizer", importId: importFromId, provider });
       }
 
   // ===========
@@ -150,11 +150,11 @@ export class IotAuthorizer extends cdktf.TerraformResource {
   }
 
   // enable_caching_for_http - computed: false, optional: true, required: false
-  private _enableCachingForHttp?: boolean | cdktf.IResolvable; 
+  private _enableCachingForHttp?: boolean | cdktn.IResolvable; 
   public get enableCachingForHttp() {
     return this.getBooleanAttribute('enable_caching_for_http');
   }
-  public set enableCachingForHttp(value: boolean | cdktf.IResolvable) {
+  public set enableCachingForHttp(value: boolean | cdktn.IResolvable) {
     this._enableCachingForHttp = value;
   }
   public resetEnableCachingForHttp() {
@@ -211,11 +211,11 @@ export class IotAuthorizer extends cdktf.TerraformResource {
   }
 
   // signing_disabled - computed: false, optional: true, required: false
-  private _signingDisabled?: boolean | cdktf.IResolvable; 
+  private _signingDisabled?: boolean | cdktn.IResolvable; 
   public get signingDisabled() {
     return this.getBooleanAttribute('signing_disabled');
   }
-  public set signingDisabled(value: boolean | cdktf.IResolvable) {
+  public set signingDisabled(value: boolean | cdktn.IResolvable) {
     this._signingDisabled = value;
   }
   public resetSigningDisabled() {
@@ -312,84 +312,84 @@ export class IotAuthorizer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authorizer_function_arn: cdktf.stringToTerraform(this._authorizerFunctionArn),
-      enable_caching_for_http: cdktf.booleanToTerraform(this._enableCachingForHttp),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      signing_disabled: cdktf.booleanToTerraform(this._signingDisabled),
-      status: cdktf.stringToTerraform(this._status),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      token_key_name: cdktf.stringToTerraform(this._tokenKeyName),
-      token_signing_public_keys: cdktf.hashMapper(cdktf.stringToTerraform)(this._tokenSigningPublicKeys),
+      authorizer_function_arn: cdktn.stringToTerraform(this._authorizerFunctionArn),
+      enable_caching_for_http: cdktn.booleanToTerraform(this._enableCachingForHttp),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      signing_disabled: cdktn.booleanToTerraform(this._signingDisabled),
+      status: cdktn.stringToTerraform(this._status),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      token_key_name: cdktn.stringToTerraform(this._tokenKeyName),
+      token_signing_public_keys: cdktn.hashMapper(cdktn.stringToTerraform)(this._tokenSigningPublicKeys),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authorizer_function_arn: {
-        value: cdktf.stringToHclTerraform(this._authorizerFunctionArn),
+        value: cdktn.stringToHclTerraform(this._authorizerFunctionArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_caching_for_http: {
-        value: cdktf.booleanToHclTerraform(this._enableCachingForHttp),
+        value: cdktn.booleanToHclTerraform(this._enableCachingForHttp),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       signing_disabled: {
-        value: cdktf.booleanToHclTerraform(this._signingDisabled),
+        value: cdktn.booleanToHclTerraform(this._signingDisabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       token_key_name: {
-        value: cdktf.stringToHclTerraform(this._tokenKeyName),
+        value: cdktn.stringToHclTerraform(this._tokenKeyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token_signing_public_keys: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tokenSigningPublicKeys),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tokenSigningPublicKeys),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

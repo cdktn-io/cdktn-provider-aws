@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsEc2CapacityBlockOfferingConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEc2CapacityBlockOfferingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ec2_capacity_block_offering#capacity_duration_hours DataAwsEc2CapacityBlockOffering#capacity_duration_hours}
   */
@@ -43,7 +43,7 @@ export interface DataAwsEc2CapacityBlockOfferingConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ec2_capacity_block_offering aws_ec2_capacity_block_offering}
 */
-export class DataAwsEc2CapacityBlockOffering extends cdktf.TerraformDataSource {
+export class DataAwsEc2CapacityBlockOffering extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -54,14 +54,14 @@ export class DataAwsEc2CapacityBlockOffering extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsEc2CapacityBlockOffering resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsEc2CapacityBlockOffering resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEc2CapacityBlockOffering to import
   * @param importFromId The id of the existing DataAwsEc2CapacityBlockOffering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ec2_capacity_block_offering#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEc2CapacityBlockOffering to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_capacity_block_offering", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_capacity_block_offering", importId: importFromId, provider });
       }
 
   // ===========
@@ -221,49 +221,49 @@ export class DataAwsEc2CapacityBlockOffering extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capacity_duration_hours: cdktf.numberToTerraform(this._capacityDurationHours),
-      end_date_range: cdktf.stringToTerraform(this._endDateRange),
-      instance_count: cdktf.numberToTerraform(this._instanceCount),
-      instance_type: cdktf.stringToTerraform(this._instanceType),
-      region: cdktf.stringToTerraform(this._region),
-      start_date_range: cdktf.stringToTerraform(this._startDateRange),
+      capacity_duration_hours: cdktn.numberToTerraform(this._capacityDurationHours),
+      end_date_range: cdktn.stringToTerraform(this._endDateRange),
+      instance_count: cdktn.numberToTerraform(this._instanceCount),
+      instance_type: cdktn.stringToTerraform(this._instanceType),
+      region: cdktn.stringToTerraform(this._region),
+      start_date_range: cdktn.stringToTerraform(this._startDateRange),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       capacity_duration_hours: {
-        value: cdktf.numberToHclTerraform(this._capacityDurationHours),
+        value: cdktn.numberToHclTerraform(this._capacityDurationHours),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       end_date_range: {
-        value: cdktf.stringToHclTerraform(this._endDateRange),
+        value: cdktn.stringToHclTerraform(this._endDateRange),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_count: {
-        value: cdktf.numberToHclTerraform(this._instanceCount),
+        value: cdktn.numberToHclTerraform(this._instanceCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       instance_type: {
-        value: cdktf.stringToHclTerraform(this._instanceType),
+        value: cdktn.stringToHclTerraform(this._instanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_date_range: {
-        value: cdktf.stringToHclTerraform(this._startDateRange),
+        value: cdktn.stringToHclTerraform(this._startDateRange),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudwatchEventEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchEventEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_endpoint#description CloudwatchEventEndpoint#description}
   */
@@ -42,7 +42,7 @@ export interface CloudwatchEventEndpointConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_endpoint#event_bus CloudwatchEventEndpoint#event_bus}
   */
-  readonly eventBus: CloudwatchEventEndpointEventBus[] | cdktf.IResolvable;
+  readonly eventBus: CloudwatchEventEndpointEventBus[] | cdktn.IResolvable;
   /**
   * replication_config block
   *
@@ -63,25 +63,25 @@ export interface CloudwatchEventEndpointEventBus {
   readonly eventBusArn: string;
 }
 
-export function cloudwatchEventEndpointEventBusToTerraform(struct?: CloudwatchEventEndpointEventBus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchEventEndpointEventBusToTerraform(struct?: CloudwatchEventEndpointEventBus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event_bus_arn: cdktf.stringToTerraform(struct!.eventBusArn),
+    event_bus_arn: cdktn.stringToTerraform(struct!.eventBusArn),
   }
 }
 
 
-export function cloudwatchEventEndpointEventBusToHclTerraform(struct?: CloudwatchEventEndpointEventBus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchEventEndpointEventBusToHclTerraform(struct?: CloudwatchEventEndpointEventBus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event_bus_arn: {
-      value: cdktf.stringToHclTerraform(struct!.eventBusArn),
+      value: cdktn.stringToHclTerraform(struct!.eventBusArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,9 +92,9 @@ export function cloudwatchEventEndpointEventBusToHclTerraform(struct?: Cloudwatc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventEndpointEventBusOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventEndpointEventBusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -102,11 +102,11 @@ export class CloudwatchEventEndpointEventBusOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchEventEndpointEventBus | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchEventEndpointEventBus | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -119,13 +119,13 @@ export class CloudwatchEventEndpointEventBusOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchEventEndpointEventBus | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchEventEndpointEventBus | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._eventBusArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -150,15 +150,15 @@ export class CloudwatchEventEndpointEventBusOutputReference extends cdktf.Comple
   }
 }
 
-export class CloudwatchEventEndpointEventBusList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchEventEndpointEventBus[] | cdktf.IResolvable
+export class CloudwatchEventEndpointEventBusList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchEventEndpointEventBus[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -177,24 +177,24 @@ export interface CloudwatchEventEndpointReplicationConfig {
 }
 
 export function cloudwatchEventEndpointReplicationConfigToTerraform(struct?: CloudwatchEventEndpointReplicationConfigOutputReference | CloudwatchEventEndpointReplicationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    state: cdktf.stringToTerraform(struct!.state),
+    state: cdktn.stringToTerraform(struct!.state),
   }
 }
 
 
 export function cloudwatchEventEndpointReplicationConfigToHclTerraform(struct?: CloudwatchEventEndpointReplicationConfigOutputReference | CloudwatchEventEndpointReplicationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -205,14 +205,14 @@ export function cloudwatchEventEndpointReplicationConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventEndpointReplicationConfigOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventEndpointReplicationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -261,24 +261,24 @@ export interface CloudwatchEventEndpointRoutingConfigFailoverConfigPrimary {
 }
 
 export function cloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryToTerraform(struct?: CloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryOutputReference | CloudwatchEventEndpointRoutingConfigFailoverConfigPrimary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    health_check: cdktf.stringToTerraform(struct!.healthCheck),
+    health_check: cdktn.stringToTerraform(struct!.healthCheck),
   }
 }
 
 
 export function cloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryToHclTerraform(struct?: CloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryOutputReference | CloudwatchEventEndpointRoutingConfigFailoverConfigPrimary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     health_check: {
-      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      value: cdktn.stringToHclTerraform(struct!.healthCheck),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -289,14 +289,14 @@ export function cloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -345,24 +345,24 @@ export interface CloudwatchEventEndpointRoutingConfigFailoverConfigSecondary {
 }
 
 export function cloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryToTerraform(struct?: CloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryOutputReference | CloudwatchEventEndpointRoutingConfigFailoverConfigSecondary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    route: cdktf.stringToTerraform(struct!.route),
+    route: cdktn.stringToTerraform(struct!.route),
   }
 }
 
 
 export function cloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryToHclTerraform(struct?: CloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryOutputReference | CloudwatchEventEndpointRoutingConfigFailoverConfigSecondary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     route: {
-      value: cdktf.stringToHclTerraform(struct!.route),
+      value: cdktn.stringToHclTerraform(struct!.route),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -373,14 +373,14 @@ export function cloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -437,8 +437,8 @@ export interface CloudwatchEventEndpointRoutingConfigFailoverConfig {
 }
 
 export function cloudwatchEventEndpointRoutingConfigFailoverConfigToTerraform(struct?: CloudwatchEventEndpointRoutingConfigFailoverConfigOutputReference | CloudwatchEventEndpointRoutingConfigFailoverConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -449,8 +449,8 @@ export function cloudwatchEventEndpointRoutingConfigFailoverConfigToTerraform(st
 
 
 export function cloudwatchEventEndpointRoutingConfigFailoverConfigToHclTerraform(struct?: CloudwatchEventEndpointRoutingConfigFailoverConfigOutputReference | CloudwatchEventEndpointRoutingConfigFailoverConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -472,14 +472,14 @@ export function cloudwatchEventEndpointRoutingConfigFailoverConfigToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventEndpointRoutingConfigFailoverConfigOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventEndpointRoutingConfigFailoverConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -546,8 +546,8 @@ export interface CloudwatchEventEndpointRoutingConfig {
 }
 
 export function cloudwatchEventEndpointRoutingConfigToTerraform(struct?: CloudwatchEventEndpointRoutingConfigOutputReference | CloudwatchEventEndpointRoutingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -557,8 +557,8 @@ export function cloudwatchEventEndpointRoutingConfigToTerraform(struct?: Cloudwa
 
 
 export function cloudwatchEventEndpointRoutingConfigToHclTerraform(struct?: CloudwatchEventEndpointRoutingConfigOutputReference | CloudwatchEventEndpointRoutingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -574,14 +574,14 @@ export function cloudwatchEventEndpointRoutingConfigToHclTerraform(struct?: Clou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventEndpointRoutingConfigOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventEndpointRoutingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -623,7 +623,7 @@ export class CloudwatchEventEndpointRoutingConfigOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_endpoint aws_cloudwatch_event_endpoint}
 */
-export class CloudwatchEventEndpoint extends cdktf.TerraformResource {
+export class CloudwatchEventEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -634,14 +634,14 @@ export class CloudwatchEventEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudwatchEventEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudwatchEventEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchEventEndpoint to import
   * @param importFromId The id of the existing CloudwatchEventEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchEventEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_event_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_event_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -777,7 +777,7 @@ export class CloudwatchEventEndpoint extends cdktf.TerraformResource {
   public get eventBus() {
     return this._eventBus;
   }
-  public putEventBus(value: CloudwatchEventEndpointEventBus[] | cdktf.IResolvable) {
+  public putEventBus(value: CloudwatchEventEndpointEventBus[] | cdktn.IResolvable) {
     this._eventBus.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -820,12 +820,12 @@ export class CloudwatchEventEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      event_bus: cdktf.listMapper(cloudwatchEventEndpointEventBusToTerraform, true)(this._eventBus.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      event_bus: cdktn.listMapper(cloudwatchEventEndpointEventBusToTerraform, true)(this._eventBus.internalValue),
       replication_config: cloudwatchEventEndpointReplicationConfigToTerraform(this._replicationConfig.internalValue),
       routing_config: cloudwatchEventEndpointRoutingConfigToTerraform(this._routingConfig.internalValue),
     };
@@ -834,37 +834,37 @@ export class CloudwatchEventEndpoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_bus: {
-        value: cdktf.listMapperHcl(cloudwatchEventEndpointEventBusToHclTerraform, true)(this._eventBus.internalValue),
+        value: cdktn.listMapperHcl(cloudwatchEventEndpointEventBusToHclTerraform, true)(this._eventBus.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CloudwatchEventEndpointEventBusList",

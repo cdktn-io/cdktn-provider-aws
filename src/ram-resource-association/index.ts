@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RamResourceAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface RamResourceAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ram_resource_association#id RamResourceAssociation#id}
   *
@@ -38,7 +38,7 @@ export interface RamResourceAssociationConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ram_resource_association aws_ram_resource_association}
 */
-export class RamResourceAssociation extends cdktf.TerraformResource {
+export class RamResourceAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class RamResourceAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RamResourceAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RamResourceAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RamResourceAssociation to import
   * @param importFromId The id of the existing RamResourceAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ram_resource_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RamResourceAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ram_resource_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ram_resource_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class RamResourceAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      resource_arn: cdktf.stringToTerraform(this._resourceArn),
-      resource_share_arn: cdktf.stringToTerraform(this._resourceShareArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      resource_arn: cdktn.stringToTerraform(this._resourceArn),
+      resource_share_arn: cdktn.stringToTerraform(this._resourceShareArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_arn: {
-        value: cdktf.stringToHclTerraform(this._resourceArn),
+        value: cdktn.stringToHclTerraform(this._resourceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_share_arn: {
-        value: cdktf.stringToHclTerraform(this._resourceShareArn),
+        value: cdktn.stringToHclTerraform(this._resourceShareArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

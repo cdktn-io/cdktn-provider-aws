@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OsisPipelineConfig extends cdktf.TerraformMetaArguments {
+export interface OsisPipelineConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/osis_pipeline#max_units OsisPipeline#max_units}
   */
@@ -47,19 +47,19 @@ export interface OsisPipelineConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/osis_pipeline#buffer_options OsisPipeline#buffer_options}
   */
-  readonly bufferOptions?: OsisPipelineBufferOptions[] | cdktf.IResolvable;
+  readonly bufferOptions?: OsisPipelineBufferOptions[] | cdktn.IResolvable;
   /**
   * encryption_at_rest_options block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/osis_pipeline#encryption_at_rest_options OsisPipeline#encryption_at_rest_options}
   */
-  readonly encryptionAtRestOptions?: OsisPipelineEncryptionAtRestOptions[] | cdktf.IResolvable;
+  readonly encryptionAtRestOptions?: OsisPipelineEncryptionAtRestOptions[] | cdktn.IResolvable;
   /**
   * log_publishing_options block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/osis_pipeline#log_publishing_options OsisPipeline#log_publishing_options}
   */
-  readonly logPublishingOptions?: OsisPipelineLogPublishingOptions[] | cdktf.IResolvable;
+  readonly logPublishingOptions?: OsisPipelineLogPublishingOptions[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -71,34 +71,34 @@ export interface OsisPipelineConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/osis_pipeline#vpc_options OsisPipeline#vpc_options}
   */
-  readonly vpcOptions?: OsisPipelineVpcOptions[] | cdktf.IResolvable;
+  readonly vpcOptions?: OsisPipelineVpcOptions[] | cdktn.IResolvable;
 }
 export interface OsisPipelineBufferOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/osis_pipeline#persistent_buffer_enabled OsisPipeline#persistent_buffer_enabled}
   */
-  readonly persistentBufferEnabled: boolean | cdktf.IResolvable;
+  readonly persistentBufferEnabled: boolean | cdktn.IResolvable;
 }
 
-export function osisPipelineBufferOptionsToTerraform(struct?: OsisPipelineBufferOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function osisPipelineBufferOptionsToTerraform(struct?: OsisPipelineBufferOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    persistent_buffer_enabled: cdktf.booleanToTerraform(struct!.persistentBufferEnabled),
+    persistent_buffer_enabled: cdktn.booleanToTerraform(struct!.persistentBufferEnabled),
   }
 }
 
 
-export function osisPipelineBufferOptionsToHclTerraform(struct?: OsisPipelineBufferOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function osisPipelineBufferOptionsToHclTerraform(struct?: OsisPipelineBufferOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     persistent_buffer_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.persistentBufferEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.persistentBufferEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -109,9 +109,9 @@ export function osisPipelineBufferOptionsToHclTerraform(struct?: OsisPipelineBuf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OsisPipelineBufferOptionsOutputReference extends cdktf.ComplexObject {
+export class OsisPipelineBufferOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -119,11 +119,11 @@ export class OsisPipelineBufferOptionsOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OsisPipelineBufferOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): OsisPipelineBufferOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -136,13 +136,13 @@ export class OsisPipelineBufferOptionsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OsisPipelineBufferOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OsisPipelineBufferOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._persistentBufferEnabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -154,11 +154,11 @@ export class OsisPipelineBufferOptionsOutputReference extends cdktf.ComplexObjec
   }
 
   // persistent_buffer_enabled - computed: false, optional: false, required: true
-  private _persistentBufferEnabled?: boolean | cdktf.IResolvable; 
+  private _persistentBufferEnabled?: boolean | cdktn.IResolvable; 
   public get persistentBufferEnabled() {
     return this.getBooleanAttribute('persistent_buffer_enabled');
   }
-  public set persistentBufferEnabled(value: boolean | cdktf.IResolvable) {
+  public set persistentBufferEnabled(value: boolean | cdktn.IResolvable) {
     this._persistentBufferEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -167,15 +167,15 @@ export class OsisPipelineBufferOptionsOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class OsisPipelineBufferOptionsList extends cdktf.ComplexList {
-  public internalValue? : OsisPipelineBufferOptions[] | cdktf.IResolvable
+export class OsisPipelineBufferOptionsList extends cdktn.ComplexList {
+  public internalValue? : OsisPipelineBufferOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -193,25 +193,25 @@ export interface OsisPipelineEncryptionAtRestOptions {
   readonly kmsKeyArn: string;
 }
 
-export function osisPipelineEncryptionAtRestOptionsToTerraform(struct?: OsisPipelineEncryptionAtRestOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function osisPipelineEncryptionAtRestOptionsToTerraform(struct?: OsisPipelineEncryptionAtRestOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
   }
 }
 
 
-export function osisPipelineEncryptionAtRestOptionsToHclTerraform(struct?: OsisPipelineEncryptionAtRestOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function osisPipelineEncryptionAtRestOptionsToHclTerraform(struct?: OsisPipelineEncryptionAtRestOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -222,9 +222,9 @@ export function osisPipelineEncryptionAtRestOptionsToHclTerraform(struct?: OsisP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OsisPipelineEncryptionAtRestOptionsOutputReference extends cdktf.ComplexObject {
+export class OsisPipelineEncryptionAtRestOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -232,11 +232,11 @@ export class OsisPipelineEncryptionAtRestOptionsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OsisPipelineEncryptionAtRestOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): OsisPipelineEncryptionAtRestOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -249,13 +249,13 @@ export class OsisPipelineEncryptionAtRestOptionsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OsisPipelineEncryptionAtRestOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OsisPipelineEncryptionAtRestOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._kmsKeyArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -280,15 +280,15 @@ export class OsisPipelineEncryptionAtRestOptionsOutputReference extends cdktf.Co
   }
 }
 
-export class OsisPipelineEncryptionAtRestOptionsList extends cdktf.ComplexList {
-  public internalValue? : OsisPipelineEncryptionAtRestOptions[] | cdktf.IResolvable
+export class OsisPipelineEncryptionAtRestOptionsList extends cdktn.ComplexList {
+  public internalValue? : OsisPipelineEncryptionAtRestOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -306,25 +306,25 @@ export interface OsisPipelineLogPublishingOptionsCloudwatchLogDestination {
   readonly logGroup: string;
 }
 
-export function osisPipelineLogPublishingOptionsCloudwatchLogDestinationToTerraform(struct?: OsisPipelineLogPublishingOptionsCloudwatchLogDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function osisPipelineLogPublishingOptionsCloudwatchLogDestinationToTerraform(struct?: OsisPipelineLogPublishingOptionsCloudwatchLogDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    log_group: cdktf.stringToTerraform(struct!.logGroup),
+    log_group: cdktn.stringToTerraform(struct!.logGroup),
   }
 }
 
 
-export function osisPipelineLogPublishingOptionsCloudwatchLogDestinationToHclTerraform(struct?: OsisPipelineLogPublishingOptionsCloudwatchLogDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function osisPipelineLogPublishingOptionsCloudwatchLogDestinationToHclTerraform(struct?: OsisPipelineLogPublishingOptionsCloudwatchLogDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     log_group: {
-      value: cdktf.stringToHclTerraform(struct!.logGroup),
+      value: cdktn.stringToHclTerraform(struct!.logGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -335,9 +335,9 @@ export function osisPipelineLogPublishingOptionsCloudwatchLogDestinationToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OsisPipelineLogPublishingOptionsCloudwatchLogDestinationOutputReference extends cdktf.ComplexObject {
+export class OsisPipelineLogPublishingOptionsCloudwatchLogDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -345,11 +345,11 @@ export class OsisPipelineLogPublishingOptionsCloudwatchLogDestinationOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OsisPipelineLogPublishingOptionsCloudwatchLogDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): OsisPipelineLogPublishingOptionsCloudwatchLogDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -362,13 +362,13 @@ export class OsisPipelineLogPublishingOptionsCloudwatchLogDestinationOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OsisPipelineLogPublishingOptionsCloudwatchLogDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OsisPipelineLogPublishingOptionsCloudwatchLogDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._logGroup = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -393,15 +393,15 @@ export class OsisPipelineLogPublishingOptionsCloudwatchLogDestinationOutputRefer
   }
 }
 
-export class OsisPipelineLogPublishingOptionsCloudwatchLogDestinationList extends cdktf.ComplexList {
-  public internalValue? : OsisPipelineLogPublishingOptionsCloudwatchLogDestination[] | cdktf.IResolvable
+export class OsisPipelineLogPublishingOptionsCloudwatchLogDestinationList extends cdktn.ComplexList {
+  public internalValue? : OsisPipelineLogPublishingOptionsCloudwatchLogDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -416,41 +416,41 @@ export interface OsisPipelineLogPublishingOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/osis_pipeline#is_logging_enabled OsisPipeline#is_logging_enabled}
   */
-  readonly isLoggingEnabled?: boolean | cdktf.IResolvable;
+  readonly isLoggingEnabled?: boolean | cdktn.IResolvable;
   /**
   * cloudwatch_log_destination block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/osis_pipeline#cloudwatch_log_destination OsisPipeline#cloudwatch_log_destination}
   */
-  readonly cloudwatchLogDestination?: OsisPipelineLogPublishingOptionsCloudwatchLogDestination[] | cdktf.IResolvable;
+  readonly cloudwatchLogDestination?: OsisPipelineLogPublishingOptionsCloudwatchLogDestination[] | cdktn.IResolvable;
 }
 
-export function osisPipelineLogPublishingOptionsToTerraform(struct?: OsisPipelineLogPublishingOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function osisPipelineLogPublishingOptionsToTerraform(struct?: OsisPipelineLogPublishingOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_logging_enabled: cdktf.booleanToTerraform(struct!.isLoggingEnabled),
-    cloudwatch_log_destination: cdktf.listMapper(osisPipelineLogPublishingOptionsCloudwatchLogDestinationToTerraform, true)(struct!.cloudwatchLogDestination),
+    is_logging_enabled: cdktn.booleanToTerraform(struct!.isLoggingEnabled),
+    cloudwatch_log_destination: cdktn.listMapper(osisPipelineLogPublishingOptionsCloudwatchLogDestinationToTerraform, true)(struct!.cloudwatchLogDestination),
   }
 }
 
 
-export function osisPipelineLogPublishingOptionsToHclTerraform(struct?: OsisPipelineLogPublishingOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function osisPipelineLogPublishingOptionsToHclTerraform(struct?: OsisPipelineLogPublishingOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_logging_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isLoggingEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isLoggingEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     cloudwatch_log_destination: {
-      value: cdktf.listMapperHcl(osisPipelineLogPublishingOptionsCloudwatchLogDestinationToHclTerraform, true)(struct!.cloudwatchLogDestination),
+      value: cdktn.listMapperHcl(osisPipelineLogPublishingOptionsCloudwatchLogDestinationToHclTerraform, true)(struct!.cloudwatchLogDestination),
       isBlock: true,
       type: "list",
       storageClassType: "OsisPipelineLogPublishingOptionsCloudwatchLogDestinationList",
@@ -461,9 +461,9 @@ export function osisPipelineLogPublishingOptionsToHclTerraform(struct?: OsisPipe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OsisPipelineLogPublishingOptionsOutputReference extends cdktf.ComplexObject {
+export class OsisPipelineLogPublishingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -471,11 +471,11 @@ export class OsisPipelineLogPublishingOptionsOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OsisPipelineLogPublishingOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): OsisPipelineLogPublishingOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -492,14 +492,14 @@ export class OsisPipelineLogPublishingOptionsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OsisPipelineLogPublishingOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OsisPipelineLogPublishingOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._isLoggingEnabled = undefined;
       this._cloudwatchLogDestination.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -512,11 +512,11 @@ export class OsisPipelineLogPublishingOptionsOutputReference extends cdktf.Compl
   }
 
   // is_logging_enabled - computed: false, optional: true, required: false
-  private _isLoggingEnabled?: boolean | cdktf.IResolvable; 
+  private _isLoggingEnabled?: boolean | cdktn.IResolvable; 
   public get isLoggingEnabled() {
     return this.getBooleanAttribute('is_logging_enabled');
   }
-  public set isLoggingEnabled(value: boolean | cdktf.IResolvable) {
+  public set isLoggingEnabled(value: boolean | cdktn.IResolvable) {
     this._isLoggingEnabled = value;
   }
   public resetIsLoggingEnabled() {
@@ -532,7 +532,7 @@ export class OsisPipelineLogPublishingOptionsOutputReference extends cdktf.Compl
   public get cloudwatchLogDestination() {
     return this._cloudwatchLogDestination;
   }
-  public putCloudwatchLogDestination(value: OsisPipelineLogPublishingOptionsCloudwatchLogDestination[] | cdktf.IResolvable) {
+  public putCloudwatchLogDestination(value: OsisPipelineLogPublishingOptionsCloudwatchLogDestination[] | cdktn.IResolvable) {
     this._cloudwatchLogDestination.internalValue = value;
   }
   public resetCloudwatchLogDestination() {
@@ -544,15 +544,15 @@ export class OsisPipelineLogPublishingOptionsOutputReference extends cdktf.Compl
   }
 }
 
-export class OsisPipelineLogPublishingOptionsList extends cdktf.ComplexList {
-  public internalValue? : OsisPipelineLogPublishingOptions[] | cdktf.IResolvable
+export class OsisPipelineLogPublishingOptionsList extends cdktn.ComplexList {
+  public internalValue? : OsisPipelineLogPublishingOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -584,39 +584,39 @@ export interface OsisPipelineTimeouts {
   readonly update?: string;
 }
 
-export function osisPipelineTimeoutsToTerraform(struct?: OsisPipelineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function osisPipelineTimeoutsToTerraform(struct?: OsisPipelineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function osisPipelineTimeoutsToHclTerraform(struct?: OsisPipelineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function osisPipelineTimeoutsToHclTerraform(struct?: OsisPipelineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -627,19 +627,19 @@ export function osisPipelineTimeoutsToHclTerraform(struct?: OsisPipelineTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OsisPipelineTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OsisPipelineTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OsisPipelineTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OsisPipelineTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -660,7 +660,7 @@ export class OsisPipelineTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OsisPipelineTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OsisPipelineTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -668,7 +668,7 @@ export class OsisPipelineTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -744,39 +744,39 @@ export interface OsisPipelineVpcOptions {
   readonly vpcEndpointManagement?: string;
 }
 
-export function osisPipelineVpcOptionsToTerraform(struct?: OsisPipelineVpcOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function osisPipelineVpcOptionsToTerraform(struct?: OsisPipelineVpcOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
-    vpc_endpoint_management: cdktf.stringToTerraform(struct!.vpcEndpointManagement),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
+    vpc_endpoint_management: cdktn.stringToTerraform(struct!.vpcEndpointManagement),
   }
 }
 
 
-export function osisPipelineVpcOptionsToHclTerraform(struct?: OsisPipelineVpcOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function osisPipelineVpcOptionsToHclTerraform(struct?: OsisPipelineVpcOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     vpc_endpoint_management: {
-      value: cdktf.stringToHclTerraform(struct!.vpcEndpointManagement),
+      value: cdktn.stringToHclTerraform(struct!.vpcEndpointManagement),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -787,9 +787,9 @@ export function osisPipelineVpcOptionsToHclTerraform(struct?: OsisPipelineVpcOpt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OsisPipelineVpcOptionsOutputReference extends cdktf.ComplexObject {
+export class OsisPipelineVpcOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -797,11 +797,11 @@ export class OsisPipelineVpcOptionsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OsisPipelineVpcOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): OsisPipelineVpcOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -822,7 +822,7 @@ export class OsisPipelineVpcOptionsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OsisPipelineVpcOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OsisPipelineVpcOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -830,7 +830,7 @@ export class OsisPipelineVpcOptionsOutputReference extends cdktf.ComplexObject {
       this._subnetIds = undefined;
       this._vpcEndpointManagement = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -846,7 +846,7 @@ export class OsisPipelineVpcOptionsOutputReference extends cdktf.ComplexObject {
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -862,7 +862,7 @@ export class OsisPipelineVpcOptionsOutputReference extends cdktf.ComplexObject {
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -889,15 +889,15 @@ export class OsisPipelineVpcOptionsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class OsisPipelineVpcOptionsList extends cdktf.ComplexList {
-  public internalValue? : OsisPipelineVpcOptions[] | cdktf.IResolvable
+export class OsisPipelineVpcOptionsList extends cdktn.ComplexList {
+  public internalValue? : OsisPipelineVpcOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -912,7 +912,7 @@ export class OsisPipelineVpcOptionsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/osis_pipeline aws_osis_pipeline}
 */
-export class OsisPipeline extends cdktf.TerraformResource {
+export class OsisPipeline extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -923,14 +923,14 @@ export class OsisPipeline extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OsisPipeline resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OsisPipeline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OsisPipeline to import
   * @param importFromId The id of the existing OsisPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/osis_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OsisPipeline to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_osis_pipeline", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_osis_pipeline", importId: importFromId, provider });
       }
 
   // ===========
@@ -985,7 +985,7 @@ export class OsisPipeline extends cdktf.TerraformResource {
 
   // ingest_endpoint_urls - computed: true, optional: false, required: false
   public get ingestEndpointUrls() {
-    return cdktf.Fn.tolist(this.getListAttribute('ingest_endpoint_urls'));
+    return cdktn.Fn.tolist(this.getListAttribute('ingest_endpoint_urls'));
   }
 
   // max_units - computed: false, optional: false, required: true
@@ -1094,7 +1094,7 @@ export class OsisPipeline extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1104,7 +1104,7 @@ export class OsisPipeline extends cdktf.TerraformResource {
   public get bufferOptions() {
     return this._bufferOptions;
   }
-  public putBufferOptions(value: OsisPipelineBufferOptions[] | cdktf.IResolvable) {
+  public putBufferOptions(value: OsisPipelineBufferOptions[] | cdktn.IResolvable) {
     this._bufferOptions.internalValue = value;
   }
   public resetBufferOptions() {
@@ -1120,7 +1120,7 @@ export class OsisPipeline extends cdktf.TerraformResource {
   public get encryptionAtRestOptions() {
     return this._encryptionAtRestOptions;
   }
-  public putEncryptionAtRestOptions(value: OsisPipelineEncryptionAtRestOptions[] | cdktf.IResolvable) {
+  public putEncryptionAtRestOptions(value: OsisPipelineEncryptionAtRestOptions[] | cdktn.IResolvable) {
     this._encryptionAtRestOptions.internalValue = value;
   }
   public resetEncryptionAtRestOptions() {
@@ -1136,7 +1136,7 @@ export class OsisPipeline extends cdktf.TerraformResource {
   public get logPublishingOptions() {
     return this._logPublishingOptions;
   }
-  public putLogPublishingOptions(value: OsisPipelineLogPublishingOptions[] | cdktf.IResolvable) {
+  public putLogPublishingOptions(value: OsisPipelineLogPublishingOptions[] | cdktn.IResolvable) {
     this._logPublishingOptions.internalValue = value;
   }
   public resetLogPublishingOptions() {
@@ -1168,7 +1168,7 @@ export class OsisPipeline extends cdktf.TerraformResource {
   public get vpcOptions() {
     return this._vpcOptions;
   }
-  public putVpcOptions(value: OsisPipelineVpcOptions[] | cdktf.IResolvable) {
+  public putVpcOptions(value: OsisPipelineVpcOptions[] | cdktn.IResolvable) {
     this._vpcOptions.internalValue = value;
   }
   public resetVpcOptions() {
@@ -1185,79 +1185,79 @@ export class OsisPipeline extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      max_units: cdktf.numberToTerraform(this._maxUnits),
-      min_units: cdktf.numberToTerraform(this._minUnits),
-      pipeline_configuration_body: cdktf.stringToTerraform(this._pipelineConfigurationBody),
-      pipeline_name: cdktf.stringToTerraform(this._pipelineName),
-      pipeline_role_arn: cdktf.stringToTerraform(this._pipelineRoleArn),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      buffer_options: cdktf.listMapper(osisPipelineBufferOptionsToTerraform, true)(this._bufferOptions.internalValue),
-      encryption_at_rest_options: cdktf.listMapper(osisPipelineEncryptionAtRestOptionsToTerraform, true)(this._encryptionAtRestOptions.internalValue),
-      log_publishing_options: cdktf.listMapper(osisPipelineLogPublishingOptionsToTerraform, true)(this._logPublishingOptions.internalValue),
+      max_units: cdktn.numberToTerraform(this._maxUnits),
+      min_units: cdktn.numberToTerraform(this._minUnits),
+      pipeline_configuration_body: cdktn.stringToTerraform(this._pipelineConfigurationBody),
+      pipeline_name: cdktn.stringToTerraform(this._pipelineName),
+      pipeline_role_arn: cdktn.stringToTerraform(this._pipelineRoleArn),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      buffer_options: cdktn.listMapper(osisPipelineBufferOptionsToTerraform, true)(this._bufferOptions.internalValue),
+      encryption_at_rest_options: cdktn.listMapper(osisPipelineEncryptionAtRestOptionsToTerraform, true)(this._encryptionAtRestOptions.internalValue),
+      log_publishing_options: cdktn.listMapper(osisPipelineLogPublishingOptionsToTerraform, true)(this._logPublishingOptions.internalValue),
       timeouts: osisPipelineTimeoutsToTerraform(this._timeouts.internalValue),
-      vpc_options: cdktf.listMapper(osisPipelineVpcOptionsToTerraform, true)(this._vpcOptions.internalValue),
+      vpc_options: cdktn.listMapper(osisPipelineVpcOptionsToTerraform, true)(this._vpcOptions.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       max_units: {
-        value: cdktf.numberToHclTerraform(this._maxUnits),
+        value: cdktn.numberToHclTerraform(this._maxUnits),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_units: {
-        value: cdktf.numberToHclTerraform(this._minUnits),
+        value: cdktn.numberToHclTerraform(this._minUnits),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       pipeline_configuration_body: {
-        value: cdktf.stringToHclTerraform(this._pipelineConfigurationBody),
+        value: cdktn.stringToHclTerraform(this._pipelineConfigurationBody),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pipeline_name: {
-        value: cdktf.stringToHclTerraform(this._pipelineName),
+        value: cdktn.stringToHclTerraform(this._pipelineName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pipeline_role_arn: {
-        value: cdktf.stringToHclTerraform(this._pipelineRoleArn),
+        value: cdktn.stringToHclTerraform(this._pipelineRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       buffer_options: {
-        value: cdktf.listMapperHcl(osisPipelineBufferOptionsToHclTerraform, true)(this._bufferOptions.internalValue),
+        value: cdktn.listMapperHcl(osisPipelineBufferOptionsToHclTerraform, true)(this._bufferOptions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OsisPipelineBufferOptionsList",
       },
       encryption_at_rest_options: {
-        value: cdktf.listMapperHcl(osisPipelineEncryptionAtRestOptionsToHclTerraform, true)(this._encryptionAtRestOptions.internalValue),
+        value: cdktn.listMapperHcl(osisPipelineEncryptionAtRestOptionsToHclTerraform, true)(this._encryptionAtRestOptions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OsisPipelineEncryptionAtRestOptionsList",
       },
       log_publishing_options: {
-        value: cdktf.listMapperHcl(osisPipelineLogPublishingOptionsToHclTerraform, true)(this._logPublishingOptions.internalValue),
+        value: cdktn.listMapperHcl(osisPipelineLogPublishingOptionsToHclTerraform, true)(this._logPublishingOptions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OsisPipelineLogPublishingOptionsList",
@@ -1269,7 +1269,7 @@ export class OsisPipeline extends cdktf.TerraformResource {
         storageClassType: "OsisPipelineTimeouts",
       },
       vpc_options: {
-        value: cdktf.listMapperHcl(osisPipelineVpcOptionsToHclTerraform, true)(this._vpcOptions.internalValue),
+        value: cdktn.listMapperHcl(osisPipelineVpcOptionsToHclTerraform, true)(this._vpcOptions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OsisPipelineVpcOptionsList",

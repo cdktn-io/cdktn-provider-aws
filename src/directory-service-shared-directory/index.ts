@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DirectoryServiceSharedDirectoryConfig extends cdktf.TerraformMetaArguments {
+export interface DirectoryServiceSharedDirectoryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_shared_directory#directory_id DirectoryServiceSharedDirectory#directory_id}
   */
@@ -65,31 +65,31 @@ export interface DirectoryServiceSharedDirectoryTarget {
 }
 
 export function directoryServiceSharedDirectoryTargetToTerraform(struct?: DirectoryServiceSharedDirectoryTargetOutputReference | DirectoryServiceSharedDirectoryTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    type: cdktf.stringToTerraform(struct!.type),
+    id: cdktn.stringToTerraform(struct!.id),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function directoryServiceSharedDirectoryTargetToHclTerraform(struct?: DirectoryServiceSharedDirectoryTargetOutputReference | DirectoryServiceSharedDirectoryTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,14 +100,14 @@ export function directoryServiceSharedDirectoryTargetToHclTerraform(struct?: Dir
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DirectoryServiceSharedDirectoryTargetOutputReference extends cdktf.ComplexObject {
+export class DirectoryServiceSharedDirectoryTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -174,25 +174,25 @@ export interface DirectoryServiceSharedDirectoryTimeouts {
   readonly delete?: string;
 }
 
-export function directoryServiceSharedDirectoryTimeoutsToTerraform(struct?: DirectoryServiceSharedDirectoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function directoryServiceSharedDirectoryTimeoutsToTerraform(struct?: DirectoryServiceSharedDirectoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete: cdktf.stringToTerraform(struct!.delete),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function directoryServiceSharedDirectoryTimeoutsToHclTerraform(struct?: DirectoryServiceSharedDirectoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function directoryServiceSharedDirectoryTimeoutsToHclTerraform(struct?: DirectoryServiceSharedDirectoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -203,19 +203,19 @@ export function directoryServiceSharedDirectoryTimeoutsToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DirectoryServiceSharedDirectoryTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DirectoryServiceSharedDirectoryTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DirectoryServiceSharedDirectoryTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DirectoryServiceSharedDirectoryTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -228,13 +228,13 @@ export class DirectoryServiceSharedDirectoryTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DirectoryServiceSharedDirectoryTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DirectoryServiceSharedDirectoryTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -265,7 +265,7 @@ export class DirectoryServiceSharedDirectoryTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_shared_directory aws_directory_service_shared_directory}
 */
-export class DirectoryServiceSharedDirectory extends cdktf.TerraformResource {
+export class DirectoryServiceSharedDirectory extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -276,14 +276,14 @@ export class DirectoryServiceSharedDirectory extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DirectoryServiceSharedDirectory resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DirectoryServiceSharedDirectory resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DirectoryServiceSharedDirectory to import
   * @param importFromId The id of the existing DirectoryServiceSharedDirectory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_shared_directory#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DirectoryServiceSharedDirectory to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_directory_service_shared_directory", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_directory_service_shared_directory", importId: importFromId, provider });
       }
 
   // ===========
@@ -443,11 +443,11 @@ export class DirectoryServiceSharedDirectory extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      directory_id: cdktf.stringToTerraform(this._directoryId),
-      id: cdktf.stringToTerraform(this._id),
-      method: cdktf.stringToTerraform(this._method),
-      notes: cdktf.stringToTerraform(this._notes),
-      region: cdktf.stringToTerraform(this._region),
+      directory_id: cdktn.stringToTerraform(this._directoryId),
+      id: cdktn.stringToTerraform(this._id),
+      method: cdktn.stringToTerraform(this._method),
+      notes: cdktn.stringToTerraform(this._notes),
+      region: cdktn.stringToTerraform(this._region),
       target: directoryServiceSharedDirectoryTargetToTerraform(this._target.internalValue),
       timeouts: directoryServiceSharedDirectoryTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -456,31 +456,31 @@ export class DirectoryServiceSharedDirectory extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       directory_id: {
-        value: cdktf.stringToHclTerraform(this._directoryId),
+        value: cdktn.stringToHclTerraform(this._directoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       method: {
-        value: cdktf.stringToHclTerraform(this._method),
+        value: cdktn.stringToHclTerraform(this._method),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notes: {
-        value: cdktf.stringToHclTerraform(this._notes),
+        value: cdktn.stringToHclTerraform(this._notes),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

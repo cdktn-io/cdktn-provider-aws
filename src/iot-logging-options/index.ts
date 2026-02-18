@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IotLoggingOptionsConfig extends cdktf.TerraformMetaArguments {
+export interface IotLoggingOptionsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_logging_options#default_log_level IotLoggingOptions#default_log_level}
   */
@@ -19,7 +19,7 @@ export interface IotLoggingOptionsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_logging_options#disable_all_logs IotLoggingOptions#disable_all_logs}
   */
-  readonly disableAllLogs?: boolean | cdktf.IResolvable;
+  readonly disableAllLogs?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_logging_options#id IotLoggingOptions#id}
   *
@@ -42,7 +42,7 @@ export interface IotLoggingOptionsConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_logging_options aws_iot_logging_options}
 */
-export class IotLoggingOptions extends cdktf.TerraformResource {
+export class IotLoggingOptions extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class IotLoggingOptions extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IotLoggingOptions resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IotLoggingOptions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotLoggingOptions to import
   * @param importFromId The id of the existing IotLoggingOptions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_logging_options#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotLoggingOptions to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_logging_options", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_logging_options", importId: importFromId, provider });
       }
 
   // ===========
@@ -115,11 +115,11 @@ export class IotLoggingOptions extends cdktf.TerraformResource {
   }
 
   // disable_all_logs - computed: false, optional: true, required: false
-  private _disableAllLogs?: boolean | cdktf.IResolvable; 
+  private _disableAllLogs?: boolean | cdktn.IResolvable; 
   public get disableAllLogs() {
     return this.getBooleanAttribute('disable_all_logs');
   }
-  public set disableAllLogs(value: boolean | cdktf.IResolvable) {
+  public set disableAllLogs(value: boolean | cdktn.IResolvable) {
     this._disableAllLogs = value;
   }
   public resetDisableAllLogs() {
@@ -181,42 +181,42 @@ export class IotLoggingOptions extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_log_level: cdktf.stringToTerraform(this._defaultLogLevel),
-      disable_all_logs: cdktf.booleanToTerraform(this._disableAllLogs),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
+      default_log_level: cdktn.stringToTerraform(this._defaultLogLevel),
+      disable_all_logs: cdktn.booleanToTerraform(this._disableAllLogs),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       default_log_level: {
-        value: cdktf.stringToHclTerraform(this._defaultLogLevel),
+        value: cdktn.stringToHclTerraform(this._defaultLogLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_all_logs: {
-        value: cdktf.booleanToHclTerraform(this._disableAllLogs),
+        value: cdktn.booleanToHclTerraform(this._disableAllLogs),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

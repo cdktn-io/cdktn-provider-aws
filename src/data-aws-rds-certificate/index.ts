@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsRdsCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRdsCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_certificate#default_for_new_launches DataAwsRdsCertificate#default_for_new_launches}
   */
-  readonly defaultForNewLaunches?: boolean | cdktf.IResolvable;
+  readonly defaultForNewLaunches?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_certificate#id DataAwsRdsCertificate#id}
   *
@@ -26,7 +26,7 @@ export interface DataAwsRdsCertificateConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_certificate#latest_valid_till DataAwsRdsCertificate#latest_valid_till}
   */
-  readonly latestValidTill?: boolean | cdktf.IResolvable;
+  readonly latestValidTill?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -38,7 +38,7 @@ export interface DataAwsRdsCertificateConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_certificate aws_rds_certificate}
 */
-export class DataAwsRdsCertificate extends cdktf.TerraformDataSource {
+export class DataAwsRdsCertificate extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class DataAwsRdsCertificate extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsRdsCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsRdsCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRdsCertificate to import
   * @param importFromId The id of the existing DataAwsRdsCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRdsCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -117,11 +117,11 @@ export class DataAwsRdsCertificate extends cdktf.TerraformDataSource {
   }
 
   // default_for_new_launches - computed: false, optional: true, required: false
-  private _defaultForNewLaunches?: boolean | cdktf.IResolvable; 
+  private _defaultForNewLaunches?: boolean | cdktn.IResolvable; 
   public get defaultForNewLaunches() {
     return this.getBooleanAttribute('default_for_new_launches');
   }
-  public set defaultForNewLaunches(value: boolean | cdktf.IResolvable) {
+  public set defaultForNewLaunches(value: boolean | cdktn.IResolvable) {
     this._defaultForNewLaunches = value;
   }
   public resetDefaultForNewLaunches() {
@@ -149,11 +149,11 @@ export class DataAwsRdsCertificate extends cdktf.TerraformDataSource {
   }
 
   // latest_valid_till - computed: false, optional: true, required: false
-  private _latestValidTill?: boolean | cdktf.IResolvable; 
+  private _latestValidTill?: boolean | cdktn.IResolvable; 
   public get latestValidTill() {
     return this.getBooleanAttribute('latest_valid_till');
   }
-  public set latestValidTill(value: boolean | cdktf.IResolvable) {
+  public set latestValidTill(value: boolean | cdktn.IResolvable) {
     this._latestValidTill = value;
   }
   public resetLatestValidTill() {
@@ -201,35 +201,35 @@ export class DataAwsRdsCertificate extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_for_new_launches: cdktf.booleanToTerraform(this._defaultForNewLaunches),
-      id: cdktf.stringToTerraform(this._id),
-      latest_valid_till: cdktf.booleanToTerraform(this._latestValidTill),
-      region: cdktf.stringToTerraform(this._region),
+      default_for_new_launches: cdktn.booleanToTerraform(this._defaultForNewLaunches),
+      id: cdktn.stringToTerraform(this._id),
+      latest_valid_till: cdktn.booleanToTerraform(this._latestValidTill),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       default_for_new_launches: {
-        value: cdktf.booleanToHclTerraform(this._defaultForNewLaunches),
+        value: cdktn.booleanToHclTerraform(this._defaultForNewLaunches),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       latest_valid_till: {
-        value: cdktf.booleanToHclTerraform(this._latestValidTill),
+        value: cdktn.booleanToHclTerraform(this._latestValidTill),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

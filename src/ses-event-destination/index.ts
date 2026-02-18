@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SesEventDestinationConfig extends cdktf.TerraformMetaArguments {
+export interface SesEventDestinationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_event_destination#configuration_set_name SesEventDestination#configuration_set_name}
   */
@@ -19,7 +19,7 @@ export interface SesEventDestinationConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_event_destination#enabled SesEventDestination#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_event_destination#id SesEventDestination#id}
   *
@@ -46,7 +46,7 @@ export interface SesEventDestinationConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_event_destination#cloudwatch_destination SesEventDestination#cloudwatch_destination}
   */
-  readonly cloudwatchDestination?: SesEventDestinationCloudwatchDestination[] | cdktf.IResolvable;
+  readonly cloudwatchDestination?: SesEventDestinationCloudwatchDestination[] | cdktn.IResolvable;
   /**
   * kinesis_destination block
   *
@@ -75,39 +75,39 @@ export interface SesEventDestinationCloudwatchDestination {
   readonly valueSource: string;
 }
 
-export function sesEventDestinationCloudwatchDestinationToTerraform(struct?: SesEventDestinationCloudwatchDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesEventDestinationCloudwatchDestinationToTerraform(struct?: SesEventDestinationCloudwatchDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_value: cdktf.stringToTerraform(struct!.defaultValue),
-    dimension_name: cdktf.stringToTerraform(struct!.dimensionName),
-    value_source: cdktf.stringToTerraform(struct!.valueSource),
+    default_value: cdktn.stringToTerraform(struct!.defaultValue),
+    dimension_name: cdktn.stringToTerraform(struct!.dimensionName),
+    value_source: cdktn.stringToTerraform(struct!.valueSource),
   }
 }
 
 
-export function sesEventDestinationCloudwatchDestinationToHclTerraform(struct?: SesEventDestinationCloudwatchDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesEventDestinationCloudwatchDestinationToHclTerraform(struct?: SesEventDestinationCloudwatchDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_value: {
-      value: cdktf.stringToHclTerraform(struct!.defaultValue),
+      value: cdktn.stringToHclTerraform(struct!.defaultValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dimension_name: {
-      value: cdktf.stringToHclTerraform(struct!.dimensionName),
+      value: cdktn.stringToHclTerraform(struct!.dimensionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value_source: {
-      value: cdktf.stringToHclTerraform(struct!.valueSource),
+      value: cdktn.stringToHclTerraform(struct!.valueSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,9 +118,9 @@ export function sesEventDestinationCloudwatchDestinationToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SesEventDestinationCloudwatchDestinationOutputReference extends cdktf.ComplexObject {
+export class SesEventDestinationCloudwatchDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -128,11 +128,11 @@ export class SesEventDestinationCloudwatchDestinationOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SesEventDestinationCloudwatchDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): SesEventDestinationCloudwatchDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -153,7 +153,7 @@ export class SesEventDestinationCloudwatchDestinationOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SesEventDestinationCloudwatchDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SesEventDestinationCloudwatchDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class SesEventDestinationCloudwatchDestinationOutputReference extends cdk
       this._dimensionName = undefined;
       this._valueSource = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -214,15 +214,15 @@ export class SesEventDestinationCloudwatchDestinationOutputReference extends cdk
   }
 }
 
-export class SesEventDestinationCloudwatchDestinationList extends cdktf.ComplexList {
-  public internalValue? : SesEventDestinationCloudwatchDestination[] | cdktf.IResolvable
+export class SesEventDestinationCloudwatchDestinationList extends cdktn.ComplexList {
+  public internalValue? : SesEventDestinationCloudwatchDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -245,31 +245,31 @@ export interface SesEventDestinationKinesisDestination {
 }
 
 export function sesEventDestinationKinesisDestinationToTerraform(struct?: SesEventDestinationKinesisDestinationOutputReference | SesEventDestinationKinesisDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    stream_arn: cdktf.stringToTerraform(struct!.streamArn),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    stream_arn: cdktn.stringToTerraform(struct!.streamArn),
   }
 }
 
 
 export function sesEventDestinationKinesisDestinationToHclTerraform(struct?: SesEventDestinationKinesisDestinationOutputReference | SesEventDestinationKinesisDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stream_arn: {
-      value: cdktf.stringToHclTerraform(struct!.streamArn),
+      value: cdktn.stringToHclTerraform(struct!.streamArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -280,14 +280,14 @@ export function sesEventDestinationKinesisDestinationToHclTerraform(struct?: Ses
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SesEventDestinationKinesisDestinationOutputReference extends cdktf.ComplexObject {
+export class SesEventDestinationKinesisDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -352,24 +352,24 @@ export interface SesEventDestinationSnsDestination {
 }
 
 export function sesEventDestinationSnsDestinationToTerraform(struct?: SesEventDestinationSnsDestinationOutputReference | SesEventDestinationSnsDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+    topic_arn: cdktn.stringToTerraform(struct!.topicArn),
   }
 }
 
 
 export function sesEventDestinationSnsDestinationToHclTerraform(struct?: SesEventDestinationSnsDestinationOutputReference | SesEventDestinationSnsDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      value: cdktn.stringToHclTerraform(struct!.topicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -380,14 +380,14 @@ export function sesEventDestinationSnsDestinationToHclTerraform(struct?: SesEven
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SesEventDestinationSnsDestinationOutputReference extends cdktf.ComplexObject {
+export class SesEventDestinationSnsDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -429,7 +429,7 @@ export class SesEventDestinationSnsDestinationOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_event_destination aws_ses_event_destination}
 */
-export class SesEventDestination extends cdktf.TerraformResource {
+export class SesEventDestination extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -440,14 +440,14 @@ export class SesEventDestination extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SesEventDestination resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SesEventDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SesEventDestination to import
   * @param importFromId The id of the existing SesEventDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_event_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SesEventDestination to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ses_event_destination", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ses_event_destination", importId: importFromId, provider });
       }
 
   // ===========
@@ -511,11 +511,11 @@ export class SesEventDestination extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -545,7 +545,7 @@ export class SesEventDestination extends cdktf.TerraformResource {
   // matching_types - computed: false, optional: false, required: true
   private _matchingTypes?: string[]; 
   public get matchingTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('matching_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('matching_types'));
   }
   public set matchingTypes(value: string[]) {
     this._matchingTypes = value;
@@ -589,7 +589,7 @@ export class SesEventDestination extends cdktf.TerraformResource {
   public get cloudwatchDestination() {
     return this._cloudwatchDestination;
   }
-  public putCloudwatchDestination(value: SesEventDestinationCloudwatchDestination[] | cdktf.IResolvable) {
+  public putCloudwatchDestination(value: SesEventDestinationCloudwatchDestination[] | cdktn.IResolvable) {
     this._cloudwatchDestination.internalValue = value;
   }
   public resetCloudwatchDestination() {
@@ -638,13 +638,13 @@ export class SesEventDestination extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      configuration_set_name: cdktf.stringToTerraform(this._configurationSetName),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      matching_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._matchingTypes),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      cloudwatch_destination: cdktf.listMapper(sesEventDestinationCloudwatchDestinationToTerraform, true)(this._cloudwatchDestination.internalValue),
+      configuration_set_name: cdktn.stringToTerraform(this._configurationSetName),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      matching_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._matchingTypes),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      cloudwatch_destination: cdktn.listMapper(sesEventDestinationCloudwatchDestinationToTerraform, true)(this._cloudwatchDestination.internalValue),
       kinesis_destination: sesEventDestinationKinesisDestinationToTerraform(this._kinesisDestination.internalValue),
       sns_destination: sesEventDestinationSnsDestinationToTerraform(this._snsDestination.internalValue),
     };
@@ -653,43 +653,43 @@ export class SesEventDestination extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       configuration_set_name: {
-        value: cdktf.stringToHclTerraform(this._configurationSetName),
+        value: cdktn.stringToHclTerraform(this._configurationSetName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       matching_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._matchingTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._matchingTypes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloudwatch_destination: {
-        value: cdktf.listMapperHcl(sesEventDestinationCloudwatchDestinationToHclTerraform, true)(this._cloudwatchDestination.internalValue),
+        value: cdktn.listMapperHcl(sesEventDestinationCloudwatchDestinationToHclTerraform, true)(this._cloudwatchDestination.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SesEventDestinationCloudwatchDestinationList",

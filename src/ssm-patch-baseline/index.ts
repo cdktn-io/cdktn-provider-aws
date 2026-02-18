@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsmPatchBaselineConfig extends cdktf.TerraformMetaArguments {
+export interface SsmPatchBaselineConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_patch_baseline#approved_patches SsmPatchBaseline#approved_patches}
   */
@@ -23,7 +23,7 @@ export interface SsmPatchBaselineConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_patch_baseline#approved_patches_enable_non_security SsmPatchBaseline#approved_patches_enable_non_security}
   */
-  readonly approvedPatchesEnableNonSecurity?: boolean | cdktf.IResolvable;
+  readonly approvedPatchesEnableNonSecurity?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_patch_baseline#available_security_updates_compliance_status SsmPatchBaseline#available_security_updates_compliance_status}
   */
@@ -74,19 +74,19 @@ export interface SsmPatchBaselineConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_patch_baseline#approval_rule SsmPatchBaseline#approval_rule}
   */
-  readonly approvalRule?: SsmPatchBaselineApprovalRule[] | cdktf.IResolvable;
+  readonly approvalRule?: SsmPatchBaselineApprovalRule[] | cdktn.IResolvable;
   /**
   * global_filter block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_patch_baseline#global_filter SsmPatchBaseline#global_filter}
   */
-  readonly globalFilter?: SsmPatchBaselineGlobalFilter[] | cdktf.IResolvable;
+  readonly globalFilter?: SsmPatchBaselineGlobalFilter[] | cdktn.IResolvable;
   /**
   * source block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_patch_baseline#source SsmPatchBaseline#source}
   */
-  readonly source?: SsmPatchBaselineSource[] | cdktf.IResolvable;
+  readonly source?: SsmPatchBaselineSource[] | cdktn.IResolvable;
 }
 export interface SsmPatchBaselineApprovalRulePatchFilter {
   /**
@@ -99,32 +99,32 @@ export interface SsmPatchBaselineApprovalRulePatchFilter {
   readonly values: string[];
 }
 
-export function ssmPatchBaselineApprovalRulePatchFilterToTerraform(struct?: SsmPatchBaselineApprovalRulePatchFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmPatchBaselineApprovalRulePatchFilterToTerraform(struct?: SsmPatchBaselineApprovalRulePatchFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function ssmPatchBaselineApprovalRulePatchFilterToHclTerraform(struct?: SsmPatchBaselineApprovalRulePatchFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmPatchBaselineApprovalRulePatchFilterToHclTerraform(struct?: SsmPatchBaselineApprovalRulePatchFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -135,9 +135,9 @@ export function ssmPatchBaselineApprovalRulePatchFilterToHclTerraform(struct?: S
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmPatchBaselineApprovalRulePatchFilterOutputReference extends cdktf.ComplexObject {
+export class SsmPatchBaselineApprovalRulePatchFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -145,11 +145,11 @@ export class SsmPatchBaselineApprovalRulePatchFilterOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmPatchBaselineApprovalRulePatchFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmPatchBaselineApprovalRulePatchFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -166,14 +166,14 @@ export class SsmPatchBaselineApprovalRulePatchFilterOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmPatchBaselineApprovalRulePatchFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmPatchBaselineApprovalRulePatchFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -212,15 +212,15 @@ export class SsmPatchBaselineApprovalRulePatchFilterOutputReference extends cdkt
   }
 }
 
-export class SsmPatchBaselineApprovalRulePatchFilterList extends cdktf.ComplexList {
-  public internalValue? : SsmPatchBaselineApprovalRulePatchFilter[] | cdktf.IResolvable
+export class SsmPatchBaselineApprovalRulePatchFilterList extends cdktn.ComplexList {
+  public internalValue? : SsmPatchBaselineApprovalRulePatchFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -247,62 +247,62 @@ export interface SsmPatchBaselineApprovalRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_patch_baseline#enable_non_security SsmPatchBaseline#enable_non_security}
   */
-  readonly enableNonSecurity?: boolean | cdktf.IResolvable;
+  readonly enableNonSecurity?: boolean | cdktn.IResolvable;
   /**
   * patch_filter block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_patch_baseline#patch_filter SsmPatchBaseline#patch_filter}
   */
-  readonly patchFilter: SsmPatchBaselineApprovalRulePatchFilter[] | cdktf.IResolvable;
+  readonly patchFilter: SsmPatchBaselineApprovalRulePatchFilter[] | cdktn.IResolvable;
 }
 
-export function ssmPatchBaselineApprovalRuleToTerraform(struct?: SsmPatchBaselineApprovalRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmPatchBaselineApprovalRuleToTerraform(struct?: SsmPatchBaselineApprovalRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    approve_after_days: cdktf.numberToTerraform(struct!.approveAfterDays),
-    approve_until_date: cdktf.stringToTerraform(struct!.approveUntilDate),
-    compliance_level: cdktf.stringToTerraform(struct!.complianceLevel),
-    enable_non_security: cdktf.booleanToTerraform(struct!.enableNonSecurity),
-    patch_filter: cdktf.listMapper(ssmPatchBaselineApprovalRulePatchFilterToTerraform, true)(struct!.patchFilter),
+    approve_after_days: cdktn.numberToTerraform(struct!.approveAfterDays),
+    approve_until_date: cdktn.stringToTerraform(struct!.approveUntilDate),
+    compliance_level: cdktn.stringToTerraform(struct!.complianceLevel),
+    enable_non_security: cdktn.booleanToTerraform(struct!.enableNonSecurity),
+    patch_filter: cdktn.listMapper(ssmPatchBaselineApprovalRulePatchFilterToTerraform, true)(struct!.patchFilter),
   }
 }
 
 
-export function ssmPatchBaselineApprovalRuleToHclTerraform(struct?: SsmPatchBaselineApprovalRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmPatchBaselineApprovalRuleToHclTerraform(struct?: SsmPatchBaselineApprovalRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     approve_after_days: {
-      value: cdktf.numberToHclTerraform(struct!.approveAfterDays),
+      value: cdktn.numberToHclTerraform(struct!.approveAfterDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     approve_until_date: {
-      value: cdktf.stringToHclTerraform(struct!.approveUntilDate),
+      value: cdktn.stringToHclTerraform(struct!.approveUntilDate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     compliance_level: {
-      value: cdktf.stringToHclTerraform(struct!.complianceLevel),
+      value: cdktn.stringToHclTerraform(struct!.complianceLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_non_security: {
-      value: cdktf.booleanToHclTerraform(struct!.enableNonSecurity),
+      value: cdktn.booleanToHclTerraform(struct!.enableNonSecurity),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     patch_filter: {
-      value: cdktf.listMapperHcl(ssmPatchBaselineApprovalRulePatchFilterToHclTerraform, true)(struct!.patchFilter),
+      value: cdktn.listMapperHcl(ssmPatchBaselineApprovalRulePatchFilterToHclTerraform, true)(struct!.patchFilter),
       isBlock: true,
       type: "list",
       storageClassType: "SsmPatchBaselineApprovalRulePatchFilterList",
@@ -313,9 +313,9 @@ export function ssmPatchBaselineApprovalRuleToHclTerraform(struct?: SsmPatchBase
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmPatchBaselineApprovalRuleOutputReference extends cdktf.ComplexObject {
+export class SsmPatchBaselineApprovalRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -323,11 +323,11 @@ export class SsmPatchBaselineApprovalRuleOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmPatchBaselineApprovalRule | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmPatchBaselineApprovalRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -356,7 +356,7 @@ export class SsmPatchBaselineApprovalRuleOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmPatchBaselineApprovalRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmPatchBaselineApprovalRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -366,7 +366,7 @@ export class SsmPatchBaselineApprovalRuleOutputReference extends cdktf.ComplexOb
       this._enableNonSecurity = undefined;
       this._patchFilter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -430,11 +430,11 @@ export class SsmPatchBaselineApprovalRuleOutputReference extends cdktf.ComplexOb
   }
 
   // enable_non_security - computed: false, optional: true, required: false
-  private _enableNonSecurity?: boolean | cdktf.IResolvable; 
+  private _enableNonSecurity?: boolean | cdktn.IResolvable; 
   public get enableNonSecurity() {
     return this.getBooleanAttribute('enable_non_security');
   }
-  public set enableNonSecurity(value: boolean | cdktf.IResolvable) {
+  public set enableNonSecurity(value: boolean | cdktn.IResolvable) {
     this._enableNonSecurity = value;
   }
   public resetEnableNonSecurity() {
@@ -450,7 +450,7 @@ export class SsmPatchBaselineApprovalRuleOutputReference extends cdktf.ComplexOb
   public get patchFilter() {
     return this._patchFilter;
   }
-  public putPatchFilter(value: SsmPatchBaselineApprovalRulePatchFilter[] | cdktf.IResolvable) {
+  public putPatchFilter(value: SsmPatchBaselineApprovalRulePatchFilter[] | cdktn.IResolvable) {
     this._patchFilter.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -459,15 +459,15 @@ export class SsmPatchBaselineApprovalRuleOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class SsmPatchBaselineApprovalRuleList extends cdktf.ComplexList {
-  public internalValue? : SsmPatchBaselineApprovalRule[] | cdktf.IResolvable
+export class SsmPatchBaselineApprovalRuleList extends cdktn.ComplexList {
+  public internalValue? : SsmPatchBaselineApprovalRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -489,32 +489,32 @@ export interface SsmPatchBaselineGlobalFilter {
   readonly values: string[];
 }
 
-export function ssmPatchBaselineGlobalFilterToTerraform(struct?: SsmPatchBaselineGlobalFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmPatchBaselineGlobalFilterToTerraform(struct?: SsmPatchBaselineGlobalFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function ssmPatchBaselineGlobalFilterToHclTerraform(struct?: SsmPatchBaselineGlobalFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmPatchBaselineGlobalFilterToHclTerraform(struct?: SsmPatchBaselineGlobalFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -525,9 +525,9 @@ export function ssmPatchBaselineGlobalFilterToHclTerraform(struct?: SsmPatchBase
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmPatchBaselineGlobalFilterOutputReference extends cdktf.ComplexObject {
+export class SsmPatchBaselineGlobalFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -535,11 +535,11 @@ export class SsmPatchBaselineGlobalFilterOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmPatchBaselineGlobalFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmPatchBaselineGlobalFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -556,14 +556,14 @@ export class SsmPatchBaselineGlobalFilterOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmPatchBaselineGlobalFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmPatchBaselineGlobalFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -602,15 +602,15 @@ export class SsmPatchBaselineGlobalFilterOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class SsmPatchBaselineGlobalFilterList extends cdktf.ComplexList {
-  public internalValue? : SsmPatchBaselineGlobalFilter[] | cdktf.IResolvable
+export class SsmPatchBaselineGlobalFilterList extends cdktn.ComplexList {
+  public internalValue? : SsmPatchBaselineGlobalFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -636,39 +636,39 @@ export interface SsmPatchBaselineSource {
   readonly products: string[];
 }
 
-export function ssmPatchBaselineSourceToTerraform(struct?: SsmPatchBaselineSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmPatchBaselineSourceToTerraform(struct?: SsmPatchBaselineSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    configuration: cdktf.stringToTerraform(struct!.configuration),
-    name: cdktf.stringToTerraform(struct!.name),
-    products: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.products),
+    configuration: cdktn.stringToTerraform(struct!.configuration),
+    name: cdktn.stringToTerraform(struct!.name),
+    products: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.products),
   }
 }
 
 
-export function ssmPatchBaselineSourceToHclTerraform(struct?: SsmPatchBaselineSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmPatchBaselineSourceToHclTerraform(struct?: SsmPatchBaselineSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     configuration: {
-      value: cdktf.stringToHclTerraform(struct!.configuration),
+      value: cdktn.stringToHclTerraform(struct!.configuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     products: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.products),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.products),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -679,9 +679,9 @@ export function ssmPatchBaselineSourceToHclTerraform(struct?: SsmPatchBaselineSo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmPatchBaselineSourceOutputReference extends cdktf.ComplexObject {
+export class SsmPatchBaselineSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -689,11 +689,11 @@ export class SsmPatchBaselineSourceOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmPatchBaselineSource | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmPatchBaselineSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -714,7 +714,7 @@ export class SsmPatchBaselineSourceOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmPatchBaselineSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmPatchBaselineSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -722,7 +722,7 @@ export class SsmPatchBaselineSourceOutputReference extends cdktf.ComplexObject {
       this._name = undefined;
       this._products = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -775,15 +775,15 @@ export class SsmPatchBaselineSourceOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SsmPatchBaselineSourceList extends cdktf.ComplexList {
-  public internalValue? : SsmPatchBaselineSource[] | cdktf.IResolvable
+export class SsmPatchBaselineSourceList extends cdktn.ComplexList {
+  public internalValue? : SsmPatchBaselineSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -798,7 +798,7 @@ export class SsmPatchBaselineSourceList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline}
 */
-export class SsmPatchBaseline extends cdktf.TerraformResource {
+export class SsmPatchBaseline extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -809,14 +809,14 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsmPatchBaseline resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsmPatchBaseline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmPatchBaseline to import
   * @param importFromId The id of the existing SsmPatchBaseline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_patch_baseline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmPatchBaseline to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_patch_baseline", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_patch_baseline", importId: importFromId, provider });
       }
 
   // ===========
@@ -871,7 +871,7 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
   // approved_patches - computed: false, optional: true, required: false
   private _approvedPatches?: string[]; 
   public get approvedPatches() {
-    return cdktf.Fn.tolist(this.getListAttribute('approved_patches'));
+    return cdktn.Fn.tolist(this.getListAttribute('approved_patches'));
   }
   public set approvedPatches(value: string[]) {
     this._approvedPatches = value;
@@ -901,11 +901,11 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
   }
 
   // approved_patches_enable_non_security - computed: false, optional: true, required: false
-  private _approvedPatchesEnableNonSecurity?: boolean | cdktf.IResolvable; 
+  private _approvedPatchesEnableNonSecurity?: boolean | cdktn.IResolvable; 
   public get approvedPatchesEnableNonSecurity() {
     return this.getBooleanAttribute('approved_patches_enable_non_security');
   }
-  public set approvedPatchesEnableNonSecurity(value: boolean | cdktf.IResolvable) {
+  public set approvedPatchesEnableNonSecurity(value: boolean | cdktn.IResolvable) {
     this._approvedPatchesEnableNonSecurity = value;
   }
   public resetApprovedPatchesEnableNonSecurity() {
@@ -1022,7 +1022,7 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
   // rejected_patches - computed: false, optional: true, required: false
   private _rejectedPatches?: string[]; 
   public get rejectedPatches() {
-    return cdktf.Fn.tolist(this.getListAttribute('rejected_patches'));
+    return cdktn.Fn.tolist(this.getListAttribute('rejected_patches'));
   }
   public set rejectedPatches(value: string[]) {
     this._rejectedPatches = value;
@@ -1088,7 +1088,7 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
   public get approvalRule() {
     return this._approvalRule;
   }
-  public putApprovalRule(value: SsmPatchBaselineApprovalRule[] | cdktf.IResolvable) {
+  public putApprovalRule(value: SsmPatchBaselineApprovalRule[] | cdktn.IResolvable) {
     this._approvalRule.internalValue = value;
   }
   public resetApprovalRule() {
@@ -1104,7 +1104,7 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
   public get globalFilter() {
     return this._globalFilter;
   }
-  public putGlobalFilter(value: SsmPatchBaselineGlobalFilter[] | cdktf.IResolvable) {
+  public putGlobalFilter(value: SsmPatchBaselineGlobalFilter[] | cdktn.IResolvable) {
     this._globalFilter.internalValue = value;
   }
   public resetGlobalFilter() {
@@ -1120,7 +1120,7 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
   public get source() {
     return this._source;
   }
-  public putSource(value: SsmPatchBaselineSource[] | cdktf.IResolvable) {
+  public putSource(value: SsmPatchBaselineSource[] | cdktn.IResolvable) {
     this._source.internalValue = value;
   }
   public resetSource() {
@@ -1137,119 +1137,119 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      approved_patches: cdktf.listMapper(cdktf.stringToTerraform, false)(this._approvedPatches),
-      approved_patches_compliance_level: cdktf.stringToTerraform(this._approvedPatchesComplianceLevel),
-      approved_patches_enable_non_security: cdktf.booleanToTerraform(this._approvedPatchesEnableNonSecurity),
-      available_security_updates_compliance_status: cdktf.stringToTerraform(this._availableSecurityUpdatesComplianceStatus),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      operating_system: cdktf.stringToTerraform(this._operatingSystem),
-      region: cdktf.stringToTerraform(this._region),
-      rejected_patches: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rejectedPatches),
-      rejected_patches_action: cdktf.stringToTerraform(this._rejectedPatchesAction),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      approval_rule: cdktf.listMapper(ssmPatchBaselineApprovalRuleToTerraform, true)(this._approvalRule.internalValue),
-      global_filter: cdktf.listMapper(ssmPatchBaselineGlobalFilterToTerraform, true)(this._globalFilter.internalValue),
-      source: cdktf.listMapper(ssmPatchBaselineSourceToTerraform, true)(this._source.internalValue),
+      approved_patches: cdktn.listMapper(cdktn.stringToTerraform, false)(this._approvedPatches),
+      approved_patches_compliance_level: cdktn.stringToTerraform(this._approvedPatchesComplianceLevel),
+      approved_patches_enable_non_security: cdktn.booleanToTerraform(this._approvedPatchesEnableNonSecurity),
+      available_security_updates_compliance_status: cdktn.stringToTerraform(this._availableSecurityUpdatesComplianceStatus),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      operating_system: cdktn.stringToTerraform(this._operatingSystem),
+      region: cdktn.stringToTerraform(this._region),
+      rejected_patches: cdktn.listMapper(cdktn.stringToTerraform, false)(this._rejectedPatches),
+      rejected_patches_action: cdktn.stringToTerraform(this._rejectedPatchesAction),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      approval_rule: cdktn.listMapper(ssmPatchBaselineApprovalRuleToTerraform, true)(this._approvalRule.internalValue),
+      global_filter: cdktn.listMapper(ssmPatchBaselineGlobalFilterToTerraform, true)(this._globalFilter.internalValue),
+      source: cdktn.listMapper(ssmPatchBaselineSourceToTerraform, true)(this._source.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       approved_patches: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._approvedPatches),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._approvedPatches),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       approved_patches_compliance_level: {
-        value: cdktf.stringToHclTerraform(this._approvedPatchesComplianceLevel),
+        value: cdktn.stringToHclTerraform(this._approvedPatchesComplianceLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       approved_patches_enable_non_security: {
-        value: cdktf.booleanToHclTerraform(this._approvedPatchesEnableNonSecurity),
+        value: cdktn.booleanToHclTerraform(this._approvedPatchesEnableNonSecurity),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       available_security_updates_compliance_status: {
-        value: cdktf.stringToHclTerraform(this._availableSecurityUpdatesComplianceStatus),
+        value: cdktn.stringToHclTerraform(this._availableSecurityUpdatesComplianceStatus),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       operating_system: {
-        value: cdktf.stringToHclTerraform(this._operatingSystem),
+        value: cdktn.stringToHclTerraform(this._operatingSystem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rejected_patches: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._rejectedPatches),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._rejectedPatches),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       rejected_patches_action: {
-        value: cdktf.stringToHclTerraform(this._rejectedPatchesAction),
+        value: cdktn.stringToHclTerraform(this._rejectedPatchesAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       approval_rule: {
-        value: cdktf.listMapperHcl(ssmPatchBaselineApprovalRuleToHclTerraform, true)(this._approvalRule.internalValue),
+        value: cdktn.listMapperHcl(ssmPatchBaselineApprovalRuleToHclTerraform, true)(this._approvalRule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SsmPatchBaselineApprovalRuleList",
       },
       global_filter: {
-        value: cdktf.listMapperHcl(ssmPatchBaselineGlobalFilterToHclTerraform, true)(this._globalFilter.internalValue),
+        value: cdktn.listMapperHcl(ssmPatchBaselineGlobalFilterToHclTerraform, true)(this._globalFilter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SsmPatchBaselineGlobalFilterList",
       },
       source: {
-        value: cdktf.listMapperHcl(ssmPatchBaselineSourceToHclTerraform, true)(this._source.internalValue),
+        value: cdktn.listMapperHcl(ssmPatchBaselineSourceToHclTerraform, true)(this._source.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SsmPatchBaselineSourceList",

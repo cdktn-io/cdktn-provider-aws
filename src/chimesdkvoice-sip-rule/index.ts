@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ChimesdkvoiceSipRuleConfig extends cdktf.TerraformMetaArguments {
+export interface ChimesdkvoiceSipRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkvoice_sip_rule#disabled ChimesdkvoiceSipRule#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkvoice_sip_rule#id ChimesdkvoiceSipRule#id}
   *
@@ -46,7 +46,7 @@ export interface ChimesdkvoiceSipRuleConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkvoice_sip_rule#target_applications ChimesdkvoiceSipRule#target_applications}
   */
-  readonly targetApplications: ChimesdkvoiceSipRuleTargetApplications[] | cdktf.IResolvable;
+  readonly targetApplications: ChimesdkvoiceSipRuleTargetApplications[] | cdktn.IResolvable;
 }
 export interface ChimesdkvoiceSipRuleTargetApplications {
   /**
@@ -63,39 +63,39 @@ export interface ChimesdkvoiceSipRuleTargetApplications {
   readonly sipMediaApplicationId: string;
 }
 
-export function chimesdkvoiceSipRuleTargetApplicationsToTerraform(struct?: ChimesdkvoiceSipRuleTargetApplications | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chimesdkvoiceSipRuleTargetApplicationsToTerraform(struct?: ChimesdkvoiceSipRuleTargetApplications | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_region: cdktf.stringToTerraform(struct!.awsRegion),
-    priority: cdktf.numberToTerraform(struct!.priority),
-    sip_media_application_id: cdktf.stringToTerraform(struct!.sipMediaApplicationId),
+    aws_region: cdktn.stringToTerraform(struct!.awsRegion),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    sip_media_application_id: cdktn.stringToTerraform(struct!.sipMediaApplicationId),
   }
 }
 
 
-export function chimesdkvoiceSipRuleTargetApplicationsToHclTerraform(struct?: ChimesdkvoiceSipRuleTargetApplications | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chimesdkvoiceSipRuleTargetApplicationsToHclTerraform(struct?: ChimesdkvoiceSipRuleTargetApplications | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_region: {
-      value: cdktf.stringToHclTerraform(struct!.awsRegion),
+      value: cdktn.stringToHclTerraform(struct!.awsRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     sip_media_application_id: {
-      value: cdktf.stringToHclTerraform(struct!.sipMediaApplicationId),
+      value: cdktn.stringToHclTerraform(struct!.sipMediaApplicationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -106,9 +106,9 @@ export function chimesdkvoiceSipRuleTargetApplicationsToHclTerraform(struct?: Ch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimesdkvoiceSipRuleTargetApplicationsOutputReference extends cdktf.ComplexObject {
+export class ChimesdkvoiceSipRuleTargetApplicationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -116,11 +116,11 @@ export class ChimesdkvoiceSipRuleTargetApplicationsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ChimesdkvoiceSipRuleTargetApplications | cdktf.IResolvable | undefined {
+  public get internalValue(): ChimesdkvoiceSipRuleTargetApplications | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -141,7 +141,7 @@ export class ChimesdkvoiceSipRuleTargetApplicationsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChimesdkvoiceSipRuleTargetApplications | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChimesdkvoiceSipRuleTargetApplications | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -149,7 +149,7 @@ export class ChimesdkvoiceSipRuleTargetApplicationsOutputReference extends cdktf
       this._priority = undefined;
       this._sipMediaApplicationId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -202,15 +202,15 @@ export class ChimesdkvoiceSipRuleTargetApplicationsOutputReference extends cdktf
   }
 }
 
-export class ChimesdkvoiceSipRuleTargetApplicationsList extends cdktf.ComplexList {
-  public internalValue? : ChimesdkvoiceSipRuleTargetApplications[] | cdktf.IResolvable
+export class ChimesdkvoiceSipRuleTargetApplicationsList extends cdktn.ComplexList {
+  public internalValue? : ChimesdkvoiceSipRuleTargetApplications[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -225,7 +225,7 @@ export class ChimesdkvoiceSipRuleTargetApplicationsList extends cdktf.ComplexLis
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkvoice_sip_rule aws_chimesdkvoice_sip_rule}
 */
-export class ChimesdkvoiceSipRule extends cdktf.TerraformResource {
+export class ChimesdkvoiceSipRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -236,14 +236,14 @@ export class ChimesdkvoiceSipRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ChimesdkvoiceSipRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ChimesdkvoiceSipRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChimesdkvoiceSipRule to import
   * @param importFromId The id of the existing ChimesdkvoiceSipRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chimesdkvoice_sip_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChimesdkvoiceSipRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_chimesdkvoice_sip_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_chimesdkvoice_sip_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -287,11 +287,11 @@ export class ChimesdkvoiceSipRule extends cdktf.TerraformResource {
   // ==========
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -378,7 +378,7 @@ export class ChimesdkvoiceSipRule extends cdktf.TerraformResource {
   public get targetApplications() {
     return this._targetApplications;
   }
-  public putTargetApplications(value: ChimesdkvoiceSipRuleTargetApplications[] | cdktf.IResolvable) {
+  public putTargetApplications(value: ChimesdkvoiceSipRuleTargetApplications[] | cdktn.IResolvable) {
     this._targetApplications.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -392,56 +392,56 @@ export class ChimesdkvoiceSipRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disabled: cdktf.booleanToTerraform(this._disabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      trigger_type: cdktf.stringToTerraform(this._triggerType),
-      trigger_value: cdktf.stringToTerraform(this._triggerValue),
-      target_applications: cdktf.listMapper(chimesdkvoiceSipRuleTargetApplicationsToTerraform, true)(this._targetApplications.internalValue),
+      disabled: cdktn.booleanToTerraform(this._disabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      trigger_type: cdktn.stringToTerraform(this._triggerType),
+      trigger_value: cdktn.stringToTerraform(this._triggerValue),
+      target_applications: cdktn.listMapper(chimesdkvoiceSipRuleTargetApplicationsToTerraform, true)(this._targetApplications.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       disabled: {
-        value: cdktf.booleanToHclTerraform(this._disabled),
+        value: cdktn.booleanToHclTerraform(this._disabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trigger_type: {
-        value: cdktf.stringToHclTerraform(this._triggerType),
+        value: cdktn.stringToHclTerraform(this._triggerType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trigger_value: {
-        value: cdktf.stringToHclTerraform(this._triggerValue),
+        value: cdktn.stringToHclTerraform(this._triggerValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_applications: {
-        value: cdktf.listMapperHcl(chimesdkvoiceSipRuleTargetApplicationsToHclTerraform, true)(this._targetApplications.internalValue),
+        value: cdktn.listMapperHcl(chimesdkvoiceSipRuleTargetApplicationsToHclTerraform, true)(this._targetApplications.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ChimesdkvoiceSipRuleTargetApplicationsList",

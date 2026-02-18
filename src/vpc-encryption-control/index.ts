@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcEncryptionControlConfig extends cdktf.TerraformMetaArguments {
+export interface VpcEncryptionControlConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_encryption_control#egress_only_internet_gateway_exclusion VpcEncryptionControl#egress_only_internet_gateway_exclusion}
   */
@@ -73,8 +73,8 @@ export interface VpcEncryptionControlResourceExclusionsEgressOnlyInternetGateway
 }
 
 export function vpcEncryptionControlResourceExclusionsEgressOnlyInternetGatewayToTerraform(struct?: VpcEncryptionControlResourceExclusionsEgressOnlyInternetGateway): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -83,8 +83,8 @@ export function vpcEncryptionControlResourceExclusionsEgressOnlyInternetGatewayT
 
 
 export function vpcEncryptionControlResourceExclusionsEgressOnlyInternetGatewayToHclTerraform(struct?: VpcEncryptionControlResourceExclusionsEgressOnlyInternetGateway): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -92,14 +92,14 @@ export function vpcEncryptionControlResourceExclusionsEgressOnlyInternetGatewayT
   return attrs;
 }
 
-export class VpcEncryptionControlResourceExclusionsEgressOnlyInternetGatewayOutputReference extends cdktf.ComplexObject {
+export class VpcEncryptionControlResourceExclusionsEgressOnlyInternetGatewayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -132,8 +132,8 @@ export interface VpcEncryptionControlResourceExclusionsElasticFileSystem {
 }
 
 export function vpcEncryptionControlResourceExclusionsElasticFileSystemToTerraform(struct?: VpcEncryptionControlResourceExclusionsElasticFileSystem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -142,8 +142,8 @@ export function vpcEncryptionControlResourceExclusionsElasticFileSystemToTerrafo
 
 
 export function vpcEncryptionControlResourceExclusionsElasticFileSystemToHclTerraform(struct?: VpcEncryptionControlResourceExclusionsElasticFileSystem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -151,14 +151,14 @@ export function vpcEncryptionControlResourceExclusionsElasticFileSystemToHclTerr
   return attrs;
 }
 
-export class VpcEncryptionControlResourceExclusionsElasticFileSystemOutputReference extends cdktf.ComplexObject {
+export class VpcEncryptionControlResourceExclusionsElasticFileSystemOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -191,8 +191,8 @@ export interface VpcEncryptionControlResourceExclusionsInternetGateway {
 }
 
 export function vpcEncryptionControlResourceExclusionsInternetGatewayToTerraform(struct?: VpcEncryptionControlResourceExclusionsInternetGateway): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -201,8 +201,8 @@ export function vpcEncryptionControlResourceExclusionsInternetGatewayToTerraform
 
 
 export function vpcEncryptionControlResourceExclusionsInternetGatewayToHclTerraform(struct?: VpcEncryptionControlResourceExclusionsInternetGateway): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -210,14 +210,14 @@ export function vpcEncryptionControlResourceExclusionsInternetGatewayToHclTerraf
   return attrs;
 }
 
-export class VpcEncryptionControlResourceExclusionsInternetGatewayOutputReference extends cdktf.ComplexObject {
+export class VpcEncryptionControlResourceExclusionsInternetGatewayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -250,8 +250,8 @@ export interface VpcEncryptionControlResourceExclusionsLambda {
 }
 
 export function vpcEncryptionControlResourceExclusionsLambdaToTerraform(struct?: VpcEncryptionControlResourceExclusionsLambda): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -260,8 +260,8 @@ export function vpcEncryptionControlResourceExclusionsLambdaToTerraform(struct?:
 
 
 export function vpcEncryptionControlResourceExclusionsLambdaToHclTerraform(struct?: VpcEncryptionControlResourceExclusionsLambda): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -269,14 +269,14 @@ export function vpcEncryptionControlResourceExclusionsLambdaToHclTerraform(struc
   return attrs;
 }
 
-export class VpcEncryptionControlResourceExclusionsLambdaOutputReference extends cdktf.ComplexObject {
+export class VpcEncryptionControlResourceExclusionsLambdaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -309,8 +309,8 @@ export interface VpcEncryptionControlResourceExclusionsNatGateway {
 }
 
 export function vpcEncryptionControlResourceExclusionsNatGatewayToTerraform(struct?: VpcEncryptionControlResourceExclusionsNatGateway): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -319,8 +319,8 @@ export function vpcEncryptionControlResourceExclusionsNatGatewayToTerraform(stru
 
 
 export function vpcEncryptionControlResourceExclusionsNatGatewayToHclTerraform(struct?: VpcEncryptionControlResourceExclusionsNatGateway): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -328,14 +328,14 @@ export function vpcEncryptionControlResourceExclusionsNatGatewayToHclTerraform(s
   return attrs;
 }
 
-export class VpcEncryptionControlResourceExclusionsNatGatewayOutputReference extends cdktf.ComplexObject {
+export class VpcEncryptionControlResourceExclusionsNatGatewayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -368,8 +368,8 @@ export interface VpcEncryptionControlResourceExclusionsVirtualPrivateGateway {
 }
 
 export function vpcEncryptionControlResourceExclusionsVirtualPrivateGatewayToTerraform(struct?: VpcEncryptionControlResourceExclusionsVirtualPrivateGateway): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -378,8 +378,8 @@ export function vpcEncryptionControlResourceExclusionsVirtualPrivateGatewayToTer
 
 
 export function vpcEncryptionControlResourceExclusionsVirtualPrivateGatewayToHclTerraform(struct?: VpcEncryptionControlResourceExclusionsVirtualPrivateGateway): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -387,14 +387,14 @@ export function vpcEncryptionControlResourceExclusionsVirtualPrivateGatewayToHcl
   return attrs;
 }
 
-export class VpcEncryptionControlResourceExclusionsVirtualPrivateGatewayOutputReference extends cdktf.ComplexObject {
+export class VpcEncryptionControlResourceExclusionsVirtualPrivateGatewayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -427,8 +427,8 @@ export interface VpcEncryptionControlResourceExclusionsVpcLattice {
 }
 
 export function vpcEncryptionControlResourceExclusionsVpcLatticeToTerraform(struct?: VpcEncryptionControlResourceExclusionsVpcLattice): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -437,8 +437,8 @@ export function vpcEncryptionControlResourceExclusionsVpcLatticeToTerraform(stru
 
 
 export function vpcEncryptionControlResourceExclusionsVpcLatticeToHclTerraform(struct?: VpcEncryptionControlResourceExclusionsVpcLattice): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -446,14 +446,14 @@ export function vpcEncryptionControlResourceExclusionsVpcLatticeToHclTerraform(s
   return attrs;
 }
 
-export class VpcEncryptionControlResourceExclusionsVpcLatticeOutputReference extends cdktf.ComplexObject {
+export class VpcEncryptionControlResourceExclusionsVpcLatticeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -486,8 +486,8 @@ export interface VpcEncryptionControlResourceExclusionsVpcPeering {
 }
 
 export function vpcEncryptionControlResourceExclusionsVpcPeeringToTerraform(struct?: VpcEncryptionControlResourceExclusionsVpcPeering): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -496,8 +496,8 @@ export function vpcEncryptionControlResourceExclusionsVpcPeeringToTerraform(stru
 
 
 export function vpcEncryptionControlResourceExclusionsVpcPeeringToHclTerraform(struct?: VpcEncryptionControlResourceExclusionsVpcPeering): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -505,14 +505,14 @@ export function vpcEncryptionControlResourceExclusionsVpcPeeringToHclTerraform(s
   return attrs;
 }
 
-export class VpcEncryptionControlResourceExclusionsVpcPeeringOutputReference extends cdktf.ComplexObject {
+export class VpcEncryptionControlResourceExclusionsVpcPeeringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -545,8 +545,8 @@ export interface VpcEncryptionControlResourceExclusions {
 }
 
 export function vpcEncryptionControlResourceExclusionsToTerraform(struct?: VpcEncryptionControlResourceExclusions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -555,8 +555,8 @@ export function vpcEncryptionControlResourceExclusionsToTerraform(struct?: VpcEn
 
 
 export function vpcEncryptionControlResourceExclusionsToHclTerraform(struct?: VpcEncryptionControlResourceExclusions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -564,14 +564,14 @@ export function vpcEncryptionControlResourceExclusionsToHclTerraform(struct?: Vp
   return attrs;
 }
 
-export class VpcEncryptionControlResourceExclusionsOutputReference extends cdktf.ComplexObject {
+export class VpcEncryptionControlResourceExclusionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -659,39 +659,39 @@ export interface VpcEncryptionControlTimeouts {
   readonly update?: string;
 }
 
-export function vpcEncryptionControlTimeoutsToTerraform(struct?: VpcEncryptionControlTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcEncryptionControlTimeoutsToTerraform(struct?: VpcEncryptionControlTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function vpcEncryptionControlTimeoutsToHclTerraform(struct?: VpcEncryptionControlTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcEncryptionControlTimeoutsToHclTerraform(struct?: VpcEncryptionControlTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -702,19 +702,19 @@ export function vpcEncryptionControlTimeoutsToHclTerraform(struct?: VpcEncryptio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcEncryptionControlTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VpcEncryptionControlTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VpcEncryptionControlTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VpcEncryptionControlTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -735,7 +735,7 @@ export class VpcEncryptionControlTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpcEncryptionControlTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpcEncryptionControlTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -743,7 +743,7 @@ export class VpcEncryptionControlTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -808,7 +808,7 @@ export class VpcEncryptionControlTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_encryption_control aws_vpc_encryption_control}
 */
-export class VpcEncryptionControl extends cdktf.TerraformResource {
+export class VpcEncryptionControl extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -819,14 +819,14 @@ export class VpcEncryptionControl extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcEncryptionControl resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcEncryptionControl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcEncryptionControl to import
   * @param importFromId The id of the existing VpcEncryptionControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_encryption_control#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcEncryptionControl to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_encryption_control", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_encryption_control", importId: importFromId, provider });
       }
 
   // ===========
@@ -1022,7 +1022,7 @@ export class VpcEncryptionControl extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1110,18 +1110,18 @@ export class VpcEncryptionControl extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      egress_only_internet_gateway_exclusion: cdktf.stringToTerraform(this._egressOnlyInternetGatewayExclusion),
-      elastic_file_system_exclusion: cdktf.stringToTerraform(this._elasticFileSystemExclusion),
-      internet_gateway_exclusion: cdktf.stringToTerraform(this._internetGatewayExclusion),
-      lambda_exclusion: cdktf.stringToTerraform(this._lambdaExclusion),
-      mode: cdktf.stringToTerraform(this._mode),
-      nat_gateway_exclusion: cdktf.stringToTerraform(this._natGatewayExclusion),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      virtual_private_gateway_exclusion: cdktf.stringToTerraform(this._virtualPrivateGatewayExclusion),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
-      vpc_lattice_exclusion: cdktf.stringToTerraform(this._vpcLatticeExclusion),
-      vpc_peering_exclusion: cdktf.stringToTerraform(this._vpcPeeringExclusion),
+      egress_only_internet_gateway_exclusion: cdktn.stringToTerraform(this._egressOnlyInternetGatewayExclusion),
+      elastic_file_system_exclusion: cdktn.stringToTerraform(this._elasticFileSystemExclusion),
+      internet_gateway_exclusion: cdktn.stringToTerraform(this._internetGatewayExclusion),
+      lambda_exclusion: cdktn.stringToTerraform(this._lambdaExclusion),
+      mode: cdktn.stringToTerraform(this._mode),
+      nat_gateway_exclusion: cdktn.stringToTerraform(this._natGatewayExclusion),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      virtual_private_gateway_exclusion: cdktn.stringToTerraform(this._virtualPrivateGatewayExclusion),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
+      vpc_lattice_exclusion: cdktn.stringToTerraform(this._vpcLatticeExclusion),
+      vpc_peering_exclusion: cdktn.stringToTerraform(this._vpcPeeringExclusion),
       timeouts: vpcEncryptionControlTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1129,73 +1129,73 @@ export class VpcEncryptionControl extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       egress_only_internet_gateway_exclusion: {
-        value: cdktf.stringToHclTerraform(this._egressOnlyInternetGatewayExclusion),
+        value: cdktn.stringToHclTerraform(this._egressOnlyInternetGatewayExclusion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       elastic_file_system_exclusion: {
-        value: cdktf.stringToHclTerraform(this._elasticFileSystemExclusion),
+        value: cdktn.stringToHclTerraform(this._elasticFileSystemExclusion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       internet_gateway_exclusion: {
-        value: cdktf.stringToHclTerraform(this._internetGatewayExclusion),
+        value: cdktn.stringToHclTerraform(this._internetGatewayExclusion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lambda_exclusion: {
-        value: cdktf.stringToHclTerraform(this._lambdaExclusion),
+        value: cdktn.stringToHclTerraform(this._lambdaExclusion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mode: {
-        value: cdktf.stringToHclTerraform(this._mode),
+        value: cdktn.stringToHclTerraform(this._mode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       nat_gateway_exclusion: {
-        value: cdktf.stringToHclTerraform(this._natGatewayExclusion),
+        value: cdktn.stringToHclTerraform(this._natGatewayExclusion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       virtual_private_gateway_exclusion: {
-        value: cdktf.stringToHclTerraform(this._virtualPrivateGatewayExclusion),
+        value: cdktn.stringToHclTerraform(this._virtualPrivateGatewayExclusion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_lattice_exclusion: {
-        value: cdktf.stringToHclTerraform(this._vpcLatticeExclusion),
+        value: cdktn.stringToHclTerraform(this._vpcLatticeExclusion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_peering_exclusion: {
-        value: cdktf.stringToHclTerraform(this._vpcPeeringExclusion),
+        value: cdktn.stringToHclTerraform(this._vpcPeeringExclusion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

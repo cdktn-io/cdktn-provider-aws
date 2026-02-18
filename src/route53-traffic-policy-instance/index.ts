@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Route53TrafficPolicyInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface Route53TrafficPolicyInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_traffic_policy_instance#hosted_zone_id Route53TrafficPolicyInstance#hosted_zone_id}
   */
@@ -44,7 +44,7 @@ export interface Route53TrafficPolicyInstanceConfig extends cdktf.TerraformMetaA
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_traffic_policy_instance aws_route53_traffic_policy_instance}
 */
-export class Route53TrafficPolicyInstance extends cdktf.TerraformResource {
+export class Route53TrafficPolicyInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -55,14 +55,14 @@ export class Route53TrafficPolicyInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Route53TrafficPolicyInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Route53TrafficPolicyInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53TrafficPolicyInstance to import
   * @param importFromId The id of the existing Route53TrafficPolicyInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_traffic_policy_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53TrafficPolicyInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_traffic_policy_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_traffic_policy_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -196,49 +196,49 @@ export class Route53TrafficPolicyInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hosted_zone_id: cdktf.stringToTerraform(this._hostedZoneId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      traffic_policy_id: cdktf.stringToTerraform(this._trafficPolicyId),
-      traffic_policy_version: cdktf.numberToTerraform(this._trafficPolicyVersion),
-      ttl: cdktf.numberToTerraform(this._ttl),
+      hosted_zone_id: cdktn.stringToTerraform(this._hostedZoneId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      traffic_policy_id: cdktn.stringToTerraform(this._trafficPolicyId),
+      traffic_policy_version: cdktn.numberToTerraform(this._trafficPolicyVersion),
+      ttl: cdktn.numberToTerraform(this._ttl),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       hosted_zone_id: {
-        value: cdktf.stringToHclTerraform(this._hostedZoneId),
+        value: cdktn.stringToHclTerraform(this._hostedZoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       traffic_policy_id: {
-        value: cdktf.stringToHclTerraform(this._trafficPolicyId),
+        value: cdktn.stringToHclTerraform(this._trafficPolicyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       traffic_policy_version: {
-        value: cdktf.numberToHclTerraform(this._trafficPolicyVersion),
+        value: cdktn.numberToHclTerraform(this._trafficPolicyVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

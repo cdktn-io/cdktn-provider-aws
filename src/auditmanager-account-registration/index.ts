@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AuditmanagerAccountRegistrationConfig extends cdktf.TerraformMetaArguments {
+export interface AuditmanagerAccountRegistrationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_account_registration#delegated_admin_account AuditmanagerAccountRegistration#delegated_admin_account}
   */
@@ -19,7 +19,7 @@ export interface AuditmanagerAccountRegistrationConfig extends cdktf.TerraformMe
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_account_registration#deregister_on_destroy AuditmanagerAccountRegistration#deregister_on_destroy}
   */
-  readonly deregisterOnDestroy?: boolean | cdktf.IResolvable;
+  readonly deregisterOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_account_registration#kms_key AuditmanagerAccountRegistration#kms_key}
   */
@@ -35,7 +35,7 @@ export interface AuditmanagerAccountRegistrationConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_account_registration aws_auditmanager_account_registration}
 */
-export class AuditmanagerAccountRegistration extends cdktf.TerraformResource {
+export class AuditmanagerAccountRegistration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -46,14 +46,14 @@ export class AuditmanagerAccountRegistration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AuditmanagerAccountRegistration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AuditmanagerAccountRegistration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AuditmanagerAccountRegistration to import
   * @param importFromId The id of the existing AuditmanagerAccountRegistration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_account_registration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AuditmanagerAccountRegistration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_auditmanager_account_registration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_auditmanager_account_registration", importId: importFromId, provider });
       }
 
   // ===========
@@ -110,11 +110,11 @@ export class AuditmanagerAccountRegistration extends cdktf.TerraformResource {
   }
 
   // deregister_on_destroy - computed: false, optional: true, required: false
-  private _deregisterOnDestroy?: boolean | cdktf.IResolvable; 
+  private _deregisterOnDestroy?: boolean | cdktn.IResolvable; 
   public get deregisterOnDestroy() {
     return this.getBooleanAttribute('deregister_on_destroy');
   }
-  public set deregisterOnDestroy(value: boolean | cdktf.IResolvable) {
+  public set deregisterOnDestroy(value: boolean | cdktn.IResolvable) {
     this._deregisterOnDestroy = value;
   }
   public resetDeregisterOnDestroy() {
@@ -173,35 +173,35 @@ export class AuditmanagerAccountRegistration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      delegated_admin_account: cdktf.stringToTerraform(this._delegatedAdminAccount),
-      deregister_on_destroy: cdktf.booleanToTerraform(this._deregisterOnDestroy),
-      kms_key: cdktf.stringToTerraform(this._kmsKey),
-      region: cdktf.stringToTerraform(this._region),
+      delegated_admin_account: cdktn.stringToTerraform(this._delegatedAdminAccount),
+      deregister_on_destroy: cdktn.booleanToTerraform(this._deregisterOnDestroy),
+      kms_key: cdktn.stringToTerraform(this._kmsKey),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       delegated_admin_account: {
-        value: cdktf.stringToHclTerraform(this._delegatedAdminAccount),
+        value: cdktn.stringToHclTerraform(this._delegatedAdminAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deregister_on_destroy: {
-        value: cdktf.booleanToHclTerraform(this._deregisterOnDestroy),
+        value: cdktn.booleanToHclTerraform(this._deregisterOnDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       kms_key: {
-        value: cdktf.stringToHclTerraform(this._kmsKey),
+        value: cdktn.stringToHclTerraform(this._kmsKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

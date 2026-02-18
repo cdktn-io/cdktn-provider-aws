@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Route53CidrLocationConfig extends cdktf.TerraformMetaArguments {
+export interface Route53CidrLocationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_cidr_location#cidr_blocks Route53CidrLocation#cidr_blocks}
   */
@@ -29,7 +29,7 @@ export interface Route53CidrLocationConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_cidr_location aws_route53_cidr_location}
 */
-export class Route53CidrLocation extends cdktf.TerraformResource {
+export class Route53CidrLocation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -40,14 +40,14 @@ export class Route53CidrLocation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Route53CidrLocation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Route53CidrLocation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53CidrLocation to import
   * @param importFromId The id of the existing Route53CidrLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_cidr_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53CidrLocation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_cidr_location", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_cidr_location", importId: importFromId, provider });
       }
 
   // ===========
@@ -89,7 +89,7 @@ export class Route53CidrLocation extends cdktf.TerraformResource {
   // cidr_blocks - computed: false, optional: false, required: true
   private _cidrBlocks?: string[]; 
   public get cidrBlocks() {
-    return cdktf.Fn.tolist(this.getListAttribute('cidr_blocks'));
+    return cdktn.Fn.tolist(this.getListAttribute('cidr_blocks'));
   }
   public set cidrBlocks(value: string[]) {
     this._cidrBlocks = value;
@@ -136,28 +136,28 @@ export class Route53CidrLocation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(this._cidrBlocks),
-      cidr_collection_id: cdktf.stringToTerraform(this._cidrCollectionId),
-      name: cdktf.stringToTerraform(this._name),
+      cidr_blocks: cdktn.listMapper(cdktn.stringToTerraform, false)(this._cidrBlocks),
+      cidr_collection_id: cdktn.stringToTerraform(this._cidrCollectionId),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cidr_blocks: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._cidrBlocks),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._cidrBlocks),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       cidr_collection_id: {
-        value: cdktf.stringToHclTerraform(this._cidrCollectionId),
+        value: cdktn.stringToHclTerraform(this._cidrCollectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

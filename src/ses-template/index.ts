@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SesTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface SesTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_template#html SesTemplate#html}
   */
@@ -46,7 +46,7 @@ export interface SesTemplateConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_template aws_ses_template}
 */
-export class SesTemplate extends cdktf.TerraformResource {
+export class SesTemplate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class SesTemplate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SesTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SesTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SesTemplate to import
   * @param importFromId The id of the existing SesTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SesTemplate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ses_template", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ses_template", importId: importFromId, provider });
       }
 
   // ===========
@@ -210,49 +210,49 @@ export class SesTemplate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      html: cdktf.stringToTerraform(this._html),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      subject: cdktf.stringToTerraform(this._subject),
-      text: cdktf.stringToTerraform(this._text),
+      html: cdktn.stringToTerraform(this._html),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      subject: cdktn.stringToTerraform(this._subject),
+      text: cdktn.stringToTerraform(this._text),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       html: {
-        value: cdktf.stringToHclTerraform(this._html),
+        value: cdktn.stringToHclTerraform(this._html),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subject: {
-        value: cdktf.stringToHclTerraform(this._subject),
+        value: cdktn.stringToHclTerraform(this._subject),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       text: {
-        value: cdktf.stringToHclTerraform(this._text),
+        value: cdktn.stringToHclTerraform(this._text),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

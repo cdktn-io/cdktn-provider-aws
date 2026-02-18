@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DirectoryServiceTrustConfig extends cdktf.TerraformMetaArguments {
+export interface DirectoryServiceTrustConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_trust#conditional_forwarder_ip_addrs DirectoryServiceTrust#conditional_forwarder_ip_addrs}
   */
@@ -19,7 +19,7 @@ export interface DirectoryServiceTrustConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_trust#delete_associated_conditional_forwarder DirectoryServiceTrust#delete_associated_conditional_forwarder}
   */
-  readonly deleteAssociatedConditionalForwarder?: boolean | cdktf.IResolvable;
+  readonly deleteAssociatedConditionalForwarder?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_trust#directory_id DirectoryServiceTrust#directory_id}
   */
@@ -55,7 +55,7 @@ export interface DirectoryServiceTrustConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_trust aws_directory_service_trust}
 */
-export class DirectoryServiceTrust extends cdktf.TerraformResource {
+export class DirectoryServiceTrust extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -66,14 +66,14 @@ export class DirectoryServiceTrust extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DirectoryServiceTrust resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DirectoryServiceTrust resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DirectoryServiceTrust to import
   * @param importFromId The id of the existing DirectoryServiceTrust that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_trust#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DirectoryServiceTrust to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_directory_service_trust", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_directory_service_trust", importId: importFromId, provider });
       }
 
   // ===========
@@ -121,7 +121,7 @@ export class DirectoryServiceTrust extends cdktf.TerraformResource {
   // conditional_forwarder_ip_addrs - computed: false, optional: true, required: false
   private _conditionalForwarderIpAddrs?: string[]; 
   public get conditionalForwarderIpAddrs() {
-    return cdktf.Fn.tolist(this.getListAttribute('conditional_forwarder_ip_addrs'));
+    return cdktn.Fn.tolist(this.getListAttribute('conditional_forwarder_ip_addrs'));
   }
   public set conditionalForwarderIpAddrs(value: string[]) {
     this._conditionalForwarderIpAddrs = value;
@@ -140,11 +140,11 @@ export class DirectoryServiceTrust extends cdktf.TerraformResource {
   }
 
   // delete_associated_conditional_forwarder - computed: true, optional: true, required: false
-  private _deleteAssociatedConditionalForwarder?: boolean | cdktf.IResolvable; 
+  private _deleteAssociatedConditionalForwarder?: boolean | cdktn.IResolvable; 
   public get deleteAssociatedConditionalForwarder() {
     return this.getBooleanAttribute('delete_associated_conditional_forwarder');
   }
-  public set deleteAssociatedConditionalForwarder(value: boolean | cdktf.IResolvable) {
+  public set deleteAssociatedConditionalForwarder(value: boolean | cdktn.IResolvable) {
     this._deleteAssociatedConditionalForwarder = value;
   }
   public resetDeleteAssociatedConditionalForwarder() {
@@ -286,70 +286,70 @@ export class DirectoryServiceTrust extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      conditional_forwarder_ip_addrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._conditionalForwarderIpAddrs),
-      delete_associated_conditional_forwarder: cdktf.booleanToTerraform(this._deleteAssociatedConditionalForwarder),
-      directory_id: cdktf.stringToTerraform(this._directoryId),
-      region: cdktf.stringToTerraform(this._region),
-      remote_domain_name: cdktf.stringToTerraform(this._remoteDomainName),
-      selective_auth: cdktf.stringToTerraform(this._selectiveAuth),
-      trust_direction: cdktf.stringToTerraform(this._trustDirection),
-      trust_password: cdktf.stringToTerraform(this._trustPassword),
-      trust_type: cdktf.stringToTerraform(this._trustType),
+      conditional_forwarder_ip_addrs: cdktn.listMapper(cdktn.stringToTerraform, false)(this._conditionalForwarderIpAddrs),
+      delete_associated_conditional_forwarder: cdktn.booleanToTerraform(this._deleteAssociatedConditionalForwarder),
+      directory_id: cdktn.stringToTerraform(this._directoryId),
+      region: cdktn.stringToTerraform(this._region),
+      remote_domain_name: cdktn.stringToTerraform(this._remoteDomainName),
+      selective_auth: cdktn.stringToTerraform(this._selectiveAuth),
+      trust_direction: cdktn.stringToTerraform(this._trustDirection),
+      trust_password: cdktn.stringToTerraform(this._trustPassword),
+      trust_type: cdktn.stringToTerraform(this._trustType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       conditional_forwarder_ip_addrs: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._conditionalForwarderIpAddrs),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._conditionalForwarderIpAddrs),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       delete_associated_conditional_forwarder: {
-        value: cdktf.booleanToHclTerraform(this._deleteAssociatedConditionalForwarder),
+        value: cdktn.booleanToHclTerraform(this._deleteAssociatedConditionalForwarder),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       directory_id: {
-        value: cdktf.stringToHclTerraform(this._directoryId),
+        value: cdktn.stringToHclTerraform(this._directoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       remote_domain_name: {
-        value: cdktf.stringToHclTerraform(this._remoteDomainName),
+        value: cdktn.stringToHclTerraform(this._remoteDomainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       selective_auth: {
-        value: cdktf.stringToHclTerraform(this._selectiveAuth),
+        value: cdktn.stringToHclTerraform(this._selectiveAuth),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trust_direction: {
-        value: cdktf.stringToHclTerraform(this._trustDirection),
+        value: cdktn.stringToHclTerraform(this._trustDirection),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trust_password: {
-        value: cdktf.stringToHclTerraform(this._trustPassword),
+        value: cdktn.stringToHclTerraform(this._trustPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trust_type: {
-        value: cdktf.stringToHclTerraform(this._trustType),
+        value: cdktn.stringToHclTerraform(this._trustType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

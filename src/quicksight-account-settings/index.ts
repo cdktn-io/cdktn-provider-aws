@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QuicksightAccountSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface QuicksightAccountSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_account_settings#aws_account_id QuicksightAccountSettings#aws_account_id}
   */
@@ -29,7 +29,7 @@ export interface QuicksightAccountSettingsConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_account_settings#termination_protection_enabled QuicksightAccountSettings#termination_protection_enabled}
   */
-  readonly terminationProtectionEnabled?: boolean | cdktf.IResolvable;
+  readonly terminationProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -52,32 +52,32 @@ export interface QuicksightAccountSettingsTimeouts {
   readonly update?: string;
 }
 
-export function quicksightAccountSettingsTimeoutsToTerraform(struct?: QuicksightAccountSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAccountSettingsTimeoutsToTerraform(struct?: QuicksightAccountSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function quicksightAccountSettingsTimeoutsToHclTerraform(struct?: QuicksightAccountSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAccountSettingsTimeoutsToHclTerraform(struct?: QuicksightAccountSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -88,19 +88,19 @@ export function quicksightAccountSettingsTimeoutsToHclTerraform(struct?: Quicksi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightAccountSettingsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class QuicksightAccountSettingsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): QuicksightAccountSettingsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightAccountSettingsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -117,14 +117,14 @@ export class QuicksightAccountSettingsTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightAccountSettingsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightAccountSettingsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -172,7 +172,7 @@ export class QuicksightAccountSettingsTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_account_settings aws_quicksight_account_settings}
 */
-export class QuicksightAccountSettings extends cdktf.TerraformResource {
+export class QuicksightAccountSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -183,14 +183,14 @@ export class QuicksightAccountSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QuicksightAccountSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QuicksightAccountSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightAccountSettings to import
   * @param importFromId The id of the existing QuicksightAccountSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_account_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightAccountSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_account_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_account_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -280,11 +280,11 @@ export class QuicksightAccountSettings extends cdktf.TerraformResource {
   }
 
   // termination_protection_enabled - computed: true, optional: true, required: false
-  private _terminationProtectionEnabled?: boolean | cdktf.IResolvable; 
+  private _terminationProtectionEnabled?: boolean | cdktn.IResolvable; 
   public get terminationProtectionEnabled() {
     return this.getBooleanAttribute('termination_protection_enabled');
   }
-  public set terminationProtectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set terminationProtectionEnabled(value: boolean | cdktn.IResolvable) {
     this._terminationProtectionEnabled = value;
   }
   public resetTerminationProtectionEnabled() {
@@ -317,10 +317,10 @@ export class QuicksightAccountSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      default_namespace: cdktf.stringToTerraform(this._defaultNamespace),
-      region: cdktf.stringToTerraform(this._region),
-      termination_protection_enabled: cdktf.booleanToTerraform(this._terminationProtectionEnabled),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      default_namespace: cdktn.stringToTerraform(this._defaultNamespace),
+      region: cdktn.stringToTerraform(this._region),
+      termination_protection_enabled: cdktn.booleanToTerraform(this._terminationProtectionEnabled),
       timeouts: quicksightAccountSettingsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -328,25 +328,25 @@ export class QuicksightAccountSettings extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_namespace: {
-        value: cdktf.stringToHclTerraform(this._defaultNamespace),
+        value: cdktn.stringToHclTerraform(this._defaultNamespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       termination_protection_enabled: {
-        value: cdktf.booleanToHclTerraform(this._terminationProtectionEnabled),
+        value: cdktn.booleanToHclTerraform(this._terminationProtectionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

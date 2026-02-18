@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedshiftScheduledActionConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftScheduledActionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_scheduled_action#description RedshiftScheduledAction#description}
   */
@@ -19,7 +19,7 @@ export interface RedshiftScheduledActionConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_scheduled_action#enable RedshiftScheduledAction#enable}
   */
-  readonly enable?: boolean | cdktf.IResolvable;
+  readonly enable?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_scheduled_action#end_time RedshiftScheduledAction#end_time}
   */
@@ -68,24 +68,24 @@ export interface RedshiftScheduledActionTargetActionPauseCluster {
 }
 
 export function redshiftScheduledActionTargetActionPauseClusterToTerraform(struct?: RedshiftScheduledActionTargetActionPauseClusterOutputReference | RedshiftScheduledActionTargetActionPauseCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_identifier: cdktf.stringToTerraform(struct!.clusterIdentifier),
+    cluster_identifier: cdktn.stringToTerraform(struct!.clusterIdentifier),
   }
 }
 
 
 export function redshiftScheduledActionTargetActionPauseClusterToHclTerraform(struct?: RedshiftScheduledActionTargetActionPauseClusterOutputReference | RedshiftScheduledActionTargetActionPauseCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.clusterIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.clusterIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -96,14 +96,14 @@ export function redshiftScheduledActionTargetActionPauseClusterToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedshiftScheduledActionTargetActionPauseClusterOutputReference extends cdktf.ComplexObject {
+export class RedshiftScheduledActionTargetActionPauseClusterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -145,7 +145,7 @@ export interface RedshiftScheduledActionTargetActionResizeCluster {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_scheduled_action#classic RedshiftScheduledAction#classic}
   */
-  readonly classic?: boolean | cdktf.IResolvable;
+  readonly classic?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}
   */
@@ -165,52 +165,52 @@ export interface RedshiftScheduledActionTargetActionResizeCluster {
 }
 
 export function redshiftScheduledActionTargetActionResizeClusterToTerraform(struct?: RedshiftScheduledActionTargetActionResizeClusterOutputReference | RedshiftScheduledActionTargetActionResizeCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    classic: cdktf.booleanToTerraform(struct!.classic),
-    cluster_identifier: cdktf.stringToTerraform(struct!.clusterIdentifier),
-    cluster_type: cdktf.stringToTerraform(struct!.clusterType),
-    node_type: cdktf.stringToTerraform(struct!.nodeType),
-    number_of_nodes: cdktf.numberToTerraform(struct!.numberOfNodes),
+    classic: cdktn.booleanToTerraform(struct!.classic),
+    cluster_identifier: cdktn.stringToTerraform(struct!.clusterIdentifier),
+    cluster_type: cdktn.stringToTerraform(struct!.clusterType),
+    node_type: cdktn.stringToTerraform(struct!.nodeType),
+    number_of_nodes: cdktn.numberToTerraform(struct!.numberOfNodes),
   }
 }
 
 
 export function redshiftScheduledActionTargetActionResizeClusterToHclTerraform(struct?: RedshiftScheduledActionTargetActionResizeClusterOutputReference | RedshiftScheduledActionTargetActionResizeCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     classic: {
-      value: cdktf.booleanToHclTerraform(struct!.classic),
+      value: cdktn.booleanToHclTerraform(struct!.classic),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     cluster_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.clusterIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.clusterIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cluster_type: {
-      value: cdktf.stringToHclTerraform(struct!.clusterType),
+      value: cdktn.stringToHclTerraform(struct!.clusterType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     node_type: {
-      value: cdktf.stringToHclTerraform(struct!.nodeType),
+      value: cdktn.stringToHclTerraform(struct!.nodeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     number_of_nodes: {
-      value: cdktf.numberToHclTerraform(struct!.numberOfNodes),
+      value: cdktn.numberToHclTerraform(struct!.numberOfNodes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -221,14 +221,14 @@ export function redshiftScheduledActionTargetActionResizeClusterToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedshiftScheduledActionTargetActionResizeClusterOutputReference extends cdktf.ComplexObject {
+export class RedshiftScheduledActionTargetActionResizeClusterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -278,11 +278,11 @@ export class RedshiftScheduledActionTargetActionResizeClusterOutputReference ext
   }
 
   // classic - computed: false, optional: true, required: false
-  private _classic?: boolean | cdktf.IResolvable; 
+  private _classic?: boolean | cdktn.IResolvable; 
   public get classic() {
     return this.getBooleanAttribute('classic');
   }
-  public set classic(value: boolean | cdktf.IResolvable) {
+  public set classic(value: boolean | cdktn.IResolvable) {
     this._classic = value;
   }
   public resetClassic() {
@@ -362,24 +362,24 @@ export interface RedshiftScheduledActionTargetActionResumeCluster {
 }
 
 export function redshiftScheduledActionTargetActionResumeClusterToTerraform(struct?: RedshiftScheduledActionTargetActionResumeClusterOutputReference | RedshiftScheduledActionTargetActionResumeCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_identifier: cdktf.stringToTerraform(struct!.clusterIdentifier),
+    cluster_identifier: cdktn.stringToTerraform(struct!.clusterIdentifier),
   }
 }
 
 
 export function redshiftScheduledActionTargetActionResumeClusterToHclTerraform(struct?: RedshiftScheduledActionTargetActionResumeClusterOutputReference | RedshiftScheduledActionTargetActionResumeCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.clusterIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.clusterIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -390,14 +390,14 @@ export function redshiftScheduledActionTargetActionResumeClusterToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedshiftScheduledActionTargetActionResumeClusterOutputReference extends cdktf.ComplexObject {
+export class RedshiftScheduledActionTargetActionResumeClusterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -457,8 +457,8 @@ export interface RedshiftScheduledActionTargetAction {
 }
 
 export function redshiftScheduledActionTargetActionToTerraform(struct?: RedshiftScheduledActionTargetActionOutputReference | RedshiftScheduledActionTargetAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -470,8 +470,8 @@ export function redshiftScheduledActionTargetActionToTerraform(struct?: Redshift
 
 
 export function redshiftScheduledActionTargetActionToHclTerraform(struct?: RedshiftScheduledActionTargetActionOutputReference | RedshiftScheduledActionTargetAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -499,14 +499,14 @@ export function redshiftScheduledActionTargetActionToHclTerraform(struct?: Redsh
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.ComplexObject {
+export class RedshiftScheduledActionTargetActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -595,7 +595,7 @@ export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_scheduled_action aws_redshift_scheduled_action}
 */
-export class RedshiftScheduledAction extends cdktf.TerraformResource {
+export class RedshiftScheduledAction extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -606,14 +606,14 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedshiftScheduledAction resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedshiftScheduledAction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftScheduledAction to import
   * @param importFromId The id of the existing RedshiftScheduledAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_scheduled_action#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftScheduledAction to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_scheduled_action", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_scheduled_action", importId: importFromId, provider });
       }
 
   // ===========
@@ -676,11 +676,11 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
   }
 
   // enable - computed: false, optional: true, required: false
-  private _enable?: boolean | cdktf.IResolvable; 
+  private _enable?: boolean | cdktn.IResolvable; 
   public get enable() {
     return this.getBooleanAttribute('enable');
   }
-  public set enable(value: boolean | cdktf.IResolvable) {
+  public set enable(value: boolean | cdktn.IResolvable) {
     this._enable = value;
   }
   public resetEnable() {
@@ -813,15 +813,15 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      enable: cdktf.booleanToTerraform(this._enable),
-      end_time: cdktf.stringToTerraform(this._endTime),
-      iam_role: cdktf.stringToTerraform(this._iamRole),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      schedule: cdktf.stringToTerraform(this._schedule),
-      start_time: cdktf.stringToTerraform(this._startTime),
+      description: cdktn.stringToTerraform(this._description),
+      enable: cdktn.booleanToTerraform(this._enable),
+      end_time: cdktn.stringToTerraform(this._endTime),
+      iam_role: cdktn.stringToTerraform(this._iamRole),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      schedule: cdktn.stringToTerraform(this._schedule),
+      start_time: cdktn.stringToTerraform(this._startTime),
       target_action: redshiftScheduledActionTargetActionToTerraform(this._targetAction.internalValue),
     };
   }
@@ -829,55 +829,55 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable: {
-        value: cdktf.booleanToHclTerraform(this._enable),
+        value: cdktn.booleanToHclTerraform(this._enable),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       end_time: {
-        value: cdktf.stringToHclTerraform(this._endTime),
+        value: cdktn.stringToHclTerraform(this._endTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_role: {
-        value: cdktf.stringToHclTerraform(this._iamRole),
+        value: cdktn.stringToHclTerraform(this._iamRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schedule: {
-        value: cdktf.stringToHclTerraform(this._schedule),
+        value: cdktn.stringToHclTerraform(this._schedule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_time: {
-        value: cdktf.stringToHclTerraform(this._startTime),
+        value: cdktn.stringToHclTerraform(this._startTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudwatchEventBusConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchEventBusConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_bus#description CloudwatchEventBus#description}
   */
@@ -70,24 +70,24 @@ export interface CloudwatchEventBusDeadLetterConfig {
 }
 
 export function cloudwatchEventBusDeadLetterConfigToTerraform(struct?: CloudwatchEventBusDeadLetterConfigOutputReference | CloudwatchEventBusDeadLetterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
+    arn: cdktn.stringToTerraform(struct!.arn),
   }
 }
 
 
 export function cloudwatchEventBusDeadLetterConfigToHclTerraform(struct?: CloudwatchEventBusDeadLetterConfigOutputReference | CloudwatchEventBusDeadLetterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -98,14 +98,14 @@ export function cloudwatchEventBusDeadLetterConfigToHclTerraform(struct?: Cloudw
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventBusDeadLetterConfigOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventBusDeadLetterConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -158,31 +158,31 @@ export interface CloudwatchEventBusLogConfig {
 }
 
 export function cloudwatchEventBusLogConfigToTerraform(struct?: CloudwatchEventBusLogConfigOutputReference | CloudwatchEventBusLogConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_detail: cdktf.stringToTerraform(struct!.includeDetail),
-    level: cdktf.stringToTerraform(struct!.level),
+    include_detail: cdktn.stringToTerraform(struct!.includeDetail),
+    level: cdktn.stringToTerraform(struct!.level),
   }
 }
 
 
 export function cloudwatchEventBusLogConfigToHclTerraform(struct?: CloudwatchEventBusLogConfigOutputReference | CloudwatchEventBusLogConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_detail: {
-      value: cdktf.stringToHclTerraform(struct!.includeDetail),
+      value: cdktn.stringToHclTerraform(struct!.includeDetail),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     level: {
-      value: cdktf.stringToHclTerraform(struct!.level),
+      value: cdktn.stringToHclTerraform(struct!.level),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -193,14 +193,14 @@ export function cloudwatchEventBusLogConfigToHclTerraform(struct?: CloudwatchEve
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventBusLogConfigOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventBusLogConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -267,7 +267,7 @@ export class CloudwatchEventBusLogConfigOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_bus aws_cloudwatch_event_bus}
 */
-export class CloudwatchEventBus extends cdktf.TerraformResource {
+export class CloudwatchEventBus extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -278,14 +278,14 @@ export class CloudwatchEventBus extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudwatchEventBus resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudwatchEventBus resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchEventBus to import
   * @param importFromId The id of the existing CloudwatchEventBus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_bus#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchEventBus to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_event_bus", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_event_bus", importId: importFromId, provider });
       }
 
   // ===========
@@ -499,14 +499,14 @@ export class CloudwatchEventBus extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      event_source_name: cdktf.stringToTerraform(this._eventSourceName),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_identifier: cdktf.stringToTerraform(this._kmsKeyIdentifier),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      description: cdktn.stringToTerraform(this._description),
+      event_source_name: cdktn.stringToTerraform(this._eventSourceName),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_identifier: cdktn.stringToTerraform(this._kmsKeyIdentifier),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       dead_letter_config: cloudwatchEventBusDeadLetterConfigToTerraform(this._deadLetterConfig.internalValue),
       log_config: cloudwatchEventBusLogConfigToTerraform(this._logConfig.internalValue),
     };
@@ -515,49 +515,49 @@ export class CloudwatchEventBus extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_source_name: {
-        value: cdktf.stringToHclTerraform(this._eventSourceName),
+        value: cdktn.stringToHclTerraform(this._eventSourceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_identifier: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyIdentifier),
+        value: cdktn.stringToHclTerraform(this._kmsKeyIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

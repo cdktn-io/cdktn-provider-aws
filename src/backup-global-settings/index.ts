@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BackupGlobalSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface BackupGlobalSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_global_settings#global_settings BackupGlobalSettings#global_settings}
   */
@@ -28,7 +28,7 @@ export interface BackupGlobalSettingsConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_global_settings aws_backup_global_settings}
 */
-export class BackupGlobalSettings extends cdktf.TerraformResource {
+export class BackupGlobalSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -39,14 +39,14 @@ export class BackupGlobalSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BackupGlobalSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BackupGlobalSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupGlobalSettings to import
   * @param importFromId The id of the existing BackupGlobalSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_global_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupGlobalSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_global_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_global_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -119,21 +119,21 @@ export class BackupGlobalSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      global_settings: cdktf.hashMapper(cdktf.stringToTerraform)(this._globalSettings),
-      id: cdktf.stringToTerraform(this._id),
+      global_settings: cdktn.hashMapper(cdktn.stringToTerraform)(this._globalSettings),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       global_settings: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._globalSettings),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._globalSettings),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

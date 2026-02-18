@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AmiLaunchPermissionConfig extends cdktf.TerraformMetaArguments {
+export interface AmiLaunchPermissionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ami_launch_permission#account_id AmiLaunchPermission#account_id}
   */
@@ -50,7 +50,7 @@ export interface AmiLaunchPermissionConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ami_launch_permission aws_ami_launch_permission}
 */
-export class AmiLaunchPermission extends cdktf.TerraformResource {
+export class AmiLaunchPermission extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class AmiLaunchPermission extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AmiLaunchPermission resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AmiLaunchPermission resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AmiLaunchPermission to import
   * @param importFromId The id of the existing AmiLaunchPermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ami_launch_permission#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AmiLaunchPermission to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ami_launch_permission", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ami_launch_permission", importId: importFromId, provider });
       }
 
   // ===========
@@ -226,56 +226,56 @@ export class AmiLaunchPermission extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      group: cdktf.stringToTerraform(this._group),
-      id: cdktf.stringToTerraform(this._id),
-      image_id: cdktf.stringToTerraform(this._imageId),
-      organization_arn: cdktf.stringToTerraform(this._organizationArn),
-      organizational_unit_arn: cdktf.stringToTerraform(this._organizationalUnitArn),
-      region: cdktf.stringToTerraform(this._region),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      group: cdktn.stringToTerraform(this._group),
+      id: cdktn.stringToTerraform(this._id),
+      image_id: cdktn.stringToTerraform(this._imageId),
+      organization_arn: cdktn.stringToTerraform(this._organizationArn),
+      organizational_unit_arn: cdktn.stringToTerraform(this._organizationalUnitArn),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       group: {
-        value: cdktf.stringToHclTerraform(this._group),
+        value: cdktn.stringToHclTerraform(this._group),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_id: {
-        value: cdktf.stringToHclTerraform(this._imageId),
+        value: cdktn.stringToHclTerraform(this._imageId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization_arn: {
-        value: cdktf.stringToHclTerraform(this._organizationArn),
+        value: cdktn.stringToHclTerraform(this._organizationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organizational_unit_arn: {
-        value: cdktf.stringToHclTerraform(this._organizationalUnitArn),
+        value: cdktn.stringToHclTerraform(this._organizationalUnitArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3BucketCorsConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface S3BucketCorsConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_cors_configuration#bucket S3BucketCorsConfiguration#bucket}
   */
@@ -38,7 +38,7 @@ export interface S3BucketCorsConfigurationConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_cors_configuration#cors_rule S3BucketCorsConfiguration#cors_rule}
   */
-  readonly corsRule: S3BucketCorsConfigurationCorsRule[] | cdktf.IResolvable;
+  readonly corsRule: S3BucketCorsConfigurationCorsRule[] | cdktn.IResolvable;
 }
 export interface S3BucketCorsConfigurationCorsRule {
   /**
@@ -70,60 +70,60 @@ export interface S3BucketCorsConfigurationCorsRule {
   readonly maxAgeSeconds?: number;
 }
 
-export function s3BucketCorsConfigurationCorsRuleToTerraform(struct?: S3BucketCorsConfigurationCorsRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketCorsConfigurationCorsRuleToTerraform(struct?: S3BucketCorsConfigurationCorsRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedHeaders),
-    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedMethods),
-    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedOrigins),
-    expose_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposeHeaders),
-    id: cdktf.stringToTerraform(struct!.id),
-    max_age_seconds: cdktf.numberToTerraform(struct!.maxAgeSeconds),
+    allowed_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedHeaders),
+    allowed_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedMethods),
+    allowed_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedOrigins),
+    expose_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exposeHeaders),
+    id: cdktn.stringToTerraform(struct!.id),
+    max_age_seconds: cdktn.numberToTerraform(struct!.maxAgeSeconds),
   }
 }
 
 
-export function s3BucketCorsConfigurationCorsRuleToHclTerraform(struct?: S3BucketCorsConfigurationCorsRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketCorsConfigurationCorsRuleToHclTerraform(struct?: S3BucketCorsConfigurationCorsRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedHeaders),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     allowed_methods: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedMethods),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedMethods),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     allowed_origins: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedOrigins),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedOrigins),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     expose_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exposeHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exposeHeaders),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_age_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.maxAgeSeconds),
+      value: cdktn.numberToHclTerraform(struct!.maxAgeSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -134,9 +134,9 @@ export function s3BucketCorsConfigurationCorsRuleToHclTerraform(struct?: S3Bucke
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketCorsConfigurationCorsRuleOutputReference extends cdktf.ComplexObject {
+export class S3BucketCorsConfigurationCorsRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -144,11 +144,11 @@ export class S3BucketCorsConfigurationCorsRuleOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketCorsConfigurationCorsRule | cdktf.IResolvable | undefined {
+  public get internalValue(): S3BucketCorsConfigurationCorsRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -181,7 +181,7 @@ export class S3BucketCorsConfigurationCorsRuleOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketCorsConfigurationCorsRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3BucketCorsConfigurationCorsRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -192,7 +192,7 @@ export class S3BucketCorsConfigurationCorsRuleOutputReference extends cdktf.Comp
       this._id = undefined;
       this._maxAgeSeconds = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -211,7 +211,7 @@ export class S3BucketCorsConfigurationCorsRuleOutputReference extends cdktf.Comp
   // allowed_headers - computed: false, optional: true, required: false
   private _allowedHeaders?: string[]; 
   public get allowedHeaders() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_headers'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_headers'));
   }
   public set allowedHeaders(value: string[]) {
     this._allowedHeaders = value;
@@ -227,7 +227,7 @@ export class S3BucketCorsConfigurationCorsRuleOutputReference extends cdktf.Comp
   // allowed_methods - computed: false, optional: false, required: true
   private _allowedMethods?: string[]; 
   public get allowedMethods() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_methods'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_methods'));
   }
   public set allowedMethods(value: string[]) {
     this._allowedMethods = value;
@@ -240,7 +240,7 @@ export class S3BucketCorsConfigurationCorsRuleOutputReference extends cdktf.Comp
   // allowed_origins - computed: false, optional: false, required: true
   private _allowedOrigins?: string[]; 
   public get allowedOrigins() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_origins'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_origins'));
   }
   public set allowedOrigins(value: string[]) {
     this._allowedOrigins = value;
@@ -253,7 +253,7 @@ export class S3BucketCorsConfigurationCorsRuleOutputReference extends cdktf.Comp
   // expose_headers - computed: false, optional: true, required: false
   private _exposeHeaders?: string[]; 
   public get exposeHeaders() {
-    return cdktf.Fn.tolist(this.getListAttribute('expose_headers'));
+    return cdktn.Fn.tolist(this.getListAttribute('expose_headers'));
   }
   public set exposeHeaders(value: string[]) {
     this._exposeHeaders = value;
@@ -299,15 +299,15 @@ export class S3BucketCorsConfigurationCorsRuleOutputReference extends cdktf.Comp
   }
 }
 
-export class S3BucketCorsConfigurationCorsRuleList extends cdktf.ComplexList {
-  public internalValue? : S3BucketCorsConfigurationCorsRule[] | cdktf.IResolvable
+export class S3BucketCorsConfigurationCorsRuleList extends cdktn.ComplexList {
+  public internalValue? : S3BucketCorsConfigurationCorsRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -322,7 +322,7 @@ export class S3BucketCorsConfigurationCorsRuleList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_cors_configuration aws_s3_bucket_cors_configuration}
 */
-export class S3BucketCorsConfiguration extends cdktf.TerraformResource {
+export class S3BucketCorsConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -333,14 +333,14 @@ export class S3BucketCorsConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3BucketCorsConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3BucketCorsConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketCorsConfiguration to import
   * @param importFromId The id of the existing S3BucketCorsConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_cors_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketCorsConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_cors_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_cors_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -447,7 +447,7 @@ export class S3BucketCorsConfiguration extends cdktf.TerraformResource {
   public get corsRule() {
     return this._corsRule;
   }
-  public putCorsRule(value: S3BucketCorsConfigurationCorsRule[] | cdktf.IResolvable) {
+  public putCorsRule(value: S3BucketCorsConfigurationCorsRule[] | cdktn.IResolvable) {
     this._corsRule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -461,42 +461,42 @@ export class S3BucketCorsConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      cors_rule: cdktf.listMapper(s3BucketCorsConfigurationCorsRuleToTerraform, true)(this._corsRule.internalValue),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      expected_bucket_owner: cdktn.stringToTerraform(this._expectedBucketOwner),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      cors_rule: cdktn.listMapper(s3BucketCorsConfigurationCorsRuleToTerraform, true)(this._corsRule.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expected_bucket_owner: {
-        value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
+        value: cdktn.stringToHclTerraform(this._expectedBucketOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cors_rule: {
-        value: cdktf.listMapperHcl(s3BucketCorsConfigurationCorsRuleToHclTerraform, true)(this._corsRule.internalValue),
+        value: cdktn.listMapperHcl(s3BucketCorsConfigurationCorsRuleToHclTerraform, true)(this._corsRule.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "S3BucketCorsConfigurationCorsRuleList",

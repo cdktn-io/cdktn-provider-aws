@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GuarddutyOrganizationConfigurationFeatureConfig extends cdktf.TerraformMetaArguments {
+export interface GuarddutyOrganizationConfigurationFeatureConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_organization_configuration_feature#auto_enable GuarddutyOrganizationConfigurationFeature#auto_enable}
   */
@@ -42,7 +42,7 @@ export interface GuarddutyOrganizationConfigurationFeatureConfig extends cdktf.T
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_organization_configuration_feature#additional_configuration GuarddutyOrganizationConfigurationFeature#additional_configuration}
   */
-  readonly additionalConfiguration?: GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration[] | cdktf.IResolvable;
+  readonly additionalConfiguration?: GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration[] | cdktn.IResolvable;
 }
 export interface GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration {
   /**
@@ -55,32 +55,32 @@ export interface GuarddutyOrganizationConfigurationFeatureAdditionalConfiguratio
   readonly name: string;
 }
 
-export function guarddutyOrganizationConfigurationFeatureAdditionalConfigurationToTerraform(struct?: GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function guarddutyOrganizationConfigurationFeatureAdditionalConfigurationToTerraform(struct?: GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auto_enable: cdktf.stringToTerraform(struct!.autoEnable),
-    name: cdktf.stringToTerraform(struct!.name),
+    auto_enable: cdktn.stringToTerraform(struct!.autoEnable),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function guarddutyOrganizationConfigurationFeatureAdditionalConfigurationToHclTerraform(struct?: GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function guarddutyOrganizationConfigurationFeatureAdditionalConfigurationToHclTerraform(struct?: GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auto_enable: {
-      value: cdktf.stringToHclTerraform(struct!.autoEnable),
+      value: cdktn.stringToHclTerraform(struct!.autoEnable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,9 +91,9 @@ export function guarddutyOrganizationConfigurationFeatureAdditionalConfiguration
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationOutputReference extends cdktf.ComplexObject {
+export class GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -101,11 +101,11 @@ export class GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -122,14 +122,14 @@ export class GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._autoEnable = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -168,15 +168,15 @@ export class GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationOut
   }
 }
 
-export class GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationList extends cdktf.ComplexList {
-  public internalValue? : GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration[] | cdktf.IResolvable
+export class GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationList extends cdktn.ComplexList {
+  public internalValue? : GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -191,7 +191,7 @@ export class GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationLis
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_organization_configuration_feature aws_guardduty_organization_configuration_feature}
 */
-export class GuarddutyOrganizationConfigurationFeature extends cdktf.TerraformResource {
+export class GuarddutyOrganizationConfigurationFeature extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -202,14 +202,14 @@ export class GuarddutyOrganizationConfigurationFeature extends cdktf.TerraformRe
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GuarddutyOrganizationConfigurationFeature resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GuarddutyOrganizationConfigurationFeature resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GuarddutyOrganizationConfigurationFeature to import
   * @param importFromId The id of the existing GuarddutyOrganizationConfigurationFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_organization_configuration_feature#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GuarddutyOrganizationConfigurationFeature to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_guardduty_organization_configuration_feature", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_guardduty_organization_configuration_feature", importId: importFromId, provider });
       }
 
   // ===========
@@ -327,7 +327,7 @@ export class GuarddutyOrganizationConfigurationFeature extends cdktf.TerraformRe
   public get additionalConfiguration() {
     return this._additionalConfiguration;
   }
-  public putAdditionalConfiguration(value: GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration[] | cdktf.IResolvable) {
+  public putAdditionalConfiguration(value: GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration[] | cdktn.IResolvable) {
     this._additionalConfiguration.internalValue = value;
   }
   public resetAdditionalConfiguration() {
@@ -344,49 +344,49 @@ export class GuarddutyOrganizationConfigurationFeature extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_enable: cdktf.stringToTerraform(this._autoEnable),
-      detector_id: cdktf.stringToTerraform(this._detectorId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      additional_configuration: cdktf.listMapper(guarddutyOrganizationConfigurationFeatureAdditionalConfigurationToTerraform, true)(this._additionalConfiguration.internalValue),
+      auto_enable: cdktn.stringToTerraform(this._autoEnable),
+      detector_id: cdktn.stringToTerraform(this._detectorId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      additional_configuration: cdktn.listMapper(guarddutyOrganizationConfigurationFeatureAdditionalConfigurationToTerraform, true)(this._additionalConfiguration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_enable: {
-        value: cdktf.stringToHclTerraform(this._autoEnable),
+        value: cdktn.stringToHclTerraform(this._autoEnable),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       detector_id: {
-        value: cdktf.stringToHclTerraform(this._detectorId),
+        value: cdktn.stringToHclTerraform(this._detectorId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       additional_configuration: {
-        value: cdktf.listMapperHcl(guarddutyOrganizationConfigurationFeatureAdditionalConfigurationToHclTerraform, true)(this._additionalConfiguration.internalValue),
+        value: cdktn.listMapperHcl(guarddutyOrganizationConfigurationFeatureAdditionalConfigurationToHclTerraform, true)(this._additionalConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationList",

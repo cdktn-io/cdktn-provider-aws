@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DetectiveOrganizationAdminAccountConfig extends cdktf.TerraformMetaArguments {
+export interface DetectiveOrganizationAdminAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/detective_organization_admin_account#account_id DetectiveOrganizationAdminAccount#account_id}
   */
@@ -34,7 +34,7 @@ export interface DetectiveOrganizationAdminAccountConfig extends cdktf.Terraform
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/detective_organization_admin_account aws_detective_organization_admin_account}
 */
-export class DetectiveOrganizationAdminAccount extends cdktf.TerraformResource {
+export class DetectiveOrganizationAdminAccount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -45,14 +45,14 @@ export class DetectiveOrganizationAdminAccount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DetectiveOrganizationAdminAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DetectiveOrganizationAdminAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DetectiveOrganizationAdminAccount to import
   * @param importFromId The id of the existing DetectiveOrganizationAdminAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/detective_organization_admin_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DetectiveOrganizationAdminAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_detective_organization_admin_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_detective_organization_admin_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -142,28 +142,28 @@ export class DetectiveOrganizationAdminAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

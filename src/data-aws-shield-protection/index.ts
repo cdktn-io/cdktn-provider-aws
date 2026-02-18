@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsShieldProtectionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsShieldProtectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/shield_protection#protection_id DataAwsShieldProtection#protection_id}
   */
@@ -25,7 +25,7 @@ export interface DataAwsShieldProtectionConfig extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/shield_protection aws_shield_protection}
 */
-export class DataAwsShieldProtection extends cdktf.TerraformDataSource {
+export class DataAwsShieldProtection extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -36,14 +36,14 @@ export class DataAwsShieldProtection extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsShieldProtection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsShieldProtection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsShieldProtection to import
   * @param importFromId The id of the existing DataAwsShieldProtection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/shield_protection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsShieldProtection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_shield_protection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_shield_protection", importId: importFromId, provider });
       }
 
   // ===========
@@ -134,21 +134,21 @@ export class DataAwsShieldProtection extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      protection_id: cdktf.stringToTerraform(this._protectionId),
-      resource_arn: cdktf.stringToTerraform(this._resourceArn),
+      protection_id: cdktn.stringToTerraform(this._protectionId),
+      resource_arn: cdktn.stringToTerraform(this._resourceArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       protection_id: {
-        value: cdktf.stringToHclTerraform(this._protectionId),
+        value: cdktn.stringToHclTerraform(this._protectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_arn: {
-        value: cdktf.stringToHclTerraform(this._resourceArn),
+        value: cdktn.stringToHclTerraform(this._resourceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcIpamResourceDiscoveryConfig extends cdktf.TerraformMetaArguments {
+export interface VpcIpamResourceDiscoveryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_resource_discovery#description VpcIpamResourceDiscovery#description}
   */
@@ -42,13 +42,13 @@ export interface VpcIpamResourceDiscoveryConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_resource_discovery#operating_regions VpcIpamResourceDiscovery#operating_regions}
   */
-  readonly operatingRegions: VpcIpamResourceDiscoveryOperatingRegions[] | cdktf.IResolvable;
+  readonly operatingRegions: VpcIpamResourceDiscoveryOperatingRegions[] | cdktn.IResolvable;
   /**
   * organizational_unit_exclusion block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_resource_discovery#organizational_unit_exclusion VpcIpamResourceDiscovery#organizational_unit_exclusion}
   */
-  readonly organizationalUnitExclusion?: VpcIpamResourceDiscoveryOrganizationalUnitExclusion[] | cdktf.IResolvable;
+  readonly organizationalUnitExclusion?: VpcIpamResourceDiscoveryOrganizationalUnitExclusion[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -63,25 +63,25 @@ export interface VpcIpamResourceDiscoveryOperatingRegions {
   readonly regionName: string;
 }
 
-export function vpcIpamResourceDiscoveryOperatingRegionsToTerraform(struct?: VpcIpamResourceDiscoveryOperatingRegions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcIpamResourceDiscoveryOperatingRegionsToTerraform(struct?: VpcIpamResourceDiscoveryOperatingRegions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    region_name: cdktf.stringToTerraform(struct!.regionName),
+    region_name: cdktn.stringToTerraform(struct!.regionName),
   }
 }
 
 
-export function vpcIpamResourceDiscoveryOperatingRegionsToHclTerraform(struct?: VpcIpamResourceDiscoveryOperatingRegions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcIpamResourceDiscoveryOperatingRegionsToHclTerraform(struct?: VpcIpamResourceDiscoveryOperatingRegions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     region_name: {
-      value: cdktf.stringToHclTerraform(struct!.regionName),
+      value: cdktn.stringToHclTerraform(struct!.regionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,9 +92,9 @@ export function vpcIpamResourceDiscoveryOperatingRegionsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcIpamResourceDiscoveryOperatingRegionsOutputReference extends cdktf.ComplexObject {
+export class VpcIpamResourceDiscoveryOperatingRegionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -102,11 +102,11 @@ export class VpcIpamResourceDiscoveryOperatingRegionsOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VpcIpamResourceDiscoveryOperatingRegions | cdktf.IResolvable | undefined {
+  public get internalValue(): VpcIpamResourceDiscoveryOperatingRegions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -119,13 +119,13 @@ export class VpcIpamResourceDiscoveryOperatingRegionsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpcIpamResourceDiscoveryOperatingRegions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpcIpamResourceDiscoveryOperatingRegions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._regionName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -150,15 +150,15 @@ export class VpcIpamResourceDiscoveryOperatingRegionsOutputReference extends cdk
   }
 }
 
-export class VpcIpamResourceDiscoveryOperatingRegionsList extends cdktf.ComplexList {
-  public internalValue? : VpcIpamResourceDiscoveryOperatingRegions[] | cdktf.IResolvable
+export class VpcIpamResourceDiscoveryOperatingRegionsList extends cdktn.ComplexList {
+  public internalValue? : VpcIpamResourceDiscoveryOperatingRegions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -176,25 +176,25 @@ export interface VpcIpamResourceDiscoveryOrganizationalUnitExclusion {
   readonly organizationsEntityPath: string;
 }
 
-export function vpcIpamResourceDiscoveryOrganizationalUnitExclusionToTerraform(struct?: VpcIpamResourceDiscoveryOrganizationalUnitExclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcIpamResourceDiscoveryOrganizationalUnitExclusionToTerraform(struct?: VpcIpamResourceDiscoveryOrganizationalUnitExclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    organizations_entity_path: cdktf.stringToTerraform(struct!.organizationsEntityPath),
+    organizations_entity_path: cdktn.stringToTerraform(struct!.organizationsEntityPath),
   }
 }
 
 
-export function vpcIpamResourceDiscoveryOrganizationalUnitExclusionToHclTerraform(struct?: VpcIpamResourceDiscoveryOrganizationalUnitExclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcIpamResourceDiscoveryOrganizationalUnitExclusionToHclTerraform(struct?: VpcIpamResourceDiscoveryOrganizationalUnitExclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     organizations_entity_path: {
-      value: cdktf.stringToHclTerraform(struct!.organizationsEntityPath),
+      value: cdktn.stringToHclTerraform(struct!.organizationsEntityPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -205,9 +205,9 @@ export function vpcIpamResourceDiscoveryOrganizationalUnitExclusionToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcIpamResourceDiscoveryOrganizationalUnitExclusionOutputReference extends cdktf.ComplexObject {
+export class VpcIpamResourceDiscoveryOrganizationalUnitExclusionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -215,11 +215,11 @@ export class VpcIpamResourceDiscoveryOrganizationalUnitExclusionOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VpcIpamResourceDiscoveryOrganizationalUnitExclusion | cdktf.IResolvable | undefined {
+  public get internalValue(): VpcIpamResourceDiscoveryOrganizationalUnitExclusion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -232,13 +232,13 @@ export class VpcIpamResourceDiscoveryOrganizationalUnitExclusionOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpcIpamResourceDiscoveryOrganizationalUnitExclusion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpcIpamResourceDiscoveryOrganizationalUnitExclusion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._organizationsEntityPath = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -263,15 +263,15 @@ export class VpcIpamResourceDiscoveryOrganizationalUnitExclusionOutputReference 
   }
 }
 
-export class VpcIpamResourceDiscoveryOrganizationalUnitExclusionList extends cdktf.ComplexList {
-  public internalValue? : VpcIpamResourceDiscoveryOrganizationalUnitExclusion[] | cdktf.IResolvable
+export class VpcIpamResourceDiscoveryOrganizationalUnitExclusionList extends cdktn.ComplexList {
+  public internalValue? : VpcIpamResourceDiscoveryOrganizationalUnitExclusion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -297,39 +297,39 @@ export interface VpcIpamResourceDiscoveryTimeouts {
   readonly update?: string;
 }
 
-export function vpcIpamResourceDiscoveryTimeoutsToTerraform(struct?: VpcIpamResourceDiscoveryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcIpamResourceDiscoveryTimeoutsToTerraform(struct?: VpcIpamResourceDiscoveryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function vpcIpamResourceDiscoveryTimeoutsToHclTerraform(struct?: VpcIpamResourceDiscoveryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcIpamResourceDiscoveryTimeoutsToHclTerraform(struct?: VpcIpamResourceDiscoveryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -340,19 +340,19 @@ export function vpcIpamResourceDiscoveryTimeoutsToHclTerraform(struct?: VpcIpamR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcIpamResourceDiscoveryTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VpcIpamResourceDiscoveryTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VpcIpamResourceDiscoveryTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VpcIpamResourceDiscoveryTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -373,7 +373,7 @@ export class VpcIpamResourceDiscoveryTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpcIpamResourceDiscoveryTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpcIpamResourceDiscoveryTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -381,7 +381,7 @@ export class VpcIpamResourceDiscoveryTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -446,7 +446,7 @@ export class VpcIpamResourceDiscoveryTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery}
 */
-export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
+export class VpcIpamResourceDiscovery extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -457,14 +457,14 @@ export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcIpamResourceDiscovery resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcIpamResourceDiscovery resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcIpamResourceDiscovery to import
   * @param importFromId The id of the existing VpcIpamResourceDiscovery that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_resource_discovery#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcIpamResourceDiscovery to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_ipam_resource_discovery", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_ipam_resource_discovery", importId: importFromId, provider });
       }
 
   // ===========
@@ -613,7 +613,7 @@ export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
   public get operatingRegions() {
     return this._operatingRegions;
   }
-  public putOperatingRegions(value: VpcIpamResourceDiscoveryOperatingRegions[] | cdktf.IResolvable) {
+  public putOperatingRegions(value: VpcIpamResourceDiscoveryOperatingRegions[] | cdktn.IResolvable) {
     this._operatingRegions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -626,7 +626,7 @@ export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
   public get organizationalUnitExclusion() {
     return this._organizationalUnitExclusion;
   }
-  public putOrganizationalUnitExclusion(value: VpcIpamResourceDiscoveryOrganizationalUnitExclusion[] | cdktf.IResolvable) {
+  public putOrganizationalUnitExclusion(value: VpcIpamResourceDiscoveryOrganizationalUnitExclusion[] | cdktn.IResolvable) {
     this._organizationalUnitExclusion.internalValue = value;
   }
   public resetOrganizationalUnitExclusion() {
@@ -659,13 +659,13 @@ export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      operating_regions: cdktf.listMapper(vpcIpamResourceDiscoveryOperatingRegionsToTerraform, true)(this._operatingRegions.internalValue),
-      organizational_unit_exclusion: cdktf.listMapper(vpcIpamResourceDiscoveryOrganizationalUnitExclusionToTerraform, true)(this._organizationalUnitExclusion.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      operating_regions: cdktn.listMapper(vpcIpamResourceDiscoveryOperatingRegionsToTerraform, true)(this._operatingRegions.internalValue),
+      organizational_unit_exclusion: cdktn.listMapper(vpcIpamResourceDiscoveryOrganizationalUnitExclusionToTerraform, true)(this._organizationalUnitExclusion.internalValue),
       timeouts: vpcIpamResourceDiscoveryTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -673,43 +673,43 @@ export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       operating_regions: {
-        value: cdktf.listMapperHcl(vpcIpamResourceDiscoveryOperatingRegionsToHclTerraform, true)(this._operatingRegions.internalValue),
+        value: cdktn.listMapperHcl(vpcIpamResourceDiscoveryOperatingRegionsToHclTerraform, true)(this._operatingRegions.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "VpcIpamResourceDiscoveryOperatingRegionsList",
       },
       organizational_unit_exclusion: {
-        value: cdktf.listMapperHcl(vpcIpamResourceDiscoveryOrganizationalUnitExclusionToHclTerraform, true)(this._organizationalUnitExclusion.internalValue),
+        value: cdktn.listMapperHcl(vpcIpamResourceDiscoveryOrganizationalUnitExclusionToHclTerraform, true)(this._organizationalUnitExclusion.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "VpcIpamResourceDiscoveryOrganizationalUnitExclusionList",

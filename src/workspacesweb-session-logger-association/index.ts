@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkspaceswebSessionLoggerAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface WorkspaceswebSessionLoggerAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_session_logger_association#portal_arn WorkspaceswebSessionLoggerAssociation#portal_arn}
   */
@@ -31,7 +31,7 @@ export interface WorkspaceswebSessionLoggerAssociationConfig extends cdktf.Terra
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_session_logger_association aws_workspacesweb_session_logger_association}
 */
-export class WorkspaceswebSessionLoggerAssociation extends cdktf.TerraformResource {
+export class WorkspaceswebSessionLoggerAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -42,14 +42,14 @@ export class WorkspaceswebSessionLoggerAssociation extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkspaceswebSessionLoggerAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkspaceswebSessionLoggerAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceswebSessionLoggerAssociation to import
   * @param importFromId The id of the existing WorkspaceswebSessionLoggerAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_session_logger_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceswebSessionLoggerAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_session_logger_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_session_logger_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -136,28 +136,28 @@ export class WorkspaceswebSessionLoggerAssociation extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      portal_arn: cdktf.stringToTerraform(this._portalArn),
-      region: cdktf.stringToTerraform(this._region),
-      session_logger_arn: cdktf.stringToTerraform(this._sessionLoggerArn),
+      portal_arn: cdktn.stringToTerraform(this._portalArn),
+      region: cdktn.stringToTerraform(this._region),
+      session_logger_arn: cdktn.stringToTerraform(this._sessionLoggerArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       portal_arn: {
-        value: cdktf.stringToHclTerraform(this._portalArn),
+        value: cdktn.stringToHclTerraform(this._portalArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       session_logger_arn: {
-        value: cdktf.stringToHclTerraform(this._sessionLoggerArn),
+        value: cdktn.stringToHclTerraform(this._sessionLoggerArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

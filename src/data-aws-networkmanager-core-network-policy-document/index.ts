@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#id DataAwsNetworkmanagerCoreNetworkPolicyDocument#id}
   *
@@ -28,43 +28,43 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentConfig extends cd
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#attachment_policies DataAwsNetworkmanagerCoreNetworkPolicyDocument#attachment_policies}
   */
-  readonly attachmentPolicies?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies[] | cdktf.IResolvable;
+  readonly attachmentPolicies?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies[] | cdktn.IResolvable;
   /**
   * attachment_routing_policy_rules block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#attachment_routing_policy_rules DataAwsNetworkmanagerCoreNetworkPolicyDocument#attachment_routing_policy_rules}
   */
-  readonly attachmentRoutingPolicyRules?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRules[] | cdktf.IResolvable;
+  readonly attachmentRoutingPolicyRules?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRules[] | cdktn.IResolvable;
   /**
   * core_network_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#core_network_configuration DataAwsNetworkmanagerCoreNetworkPolicyDocument#core_network_configuration}
   */
-  readonly coreNetworkConfiguration: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfiguration[] | cdktf.IResolvable;
+  readonly coreNetworkConfiguration: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfiguration[] | cdktn.IResolvable;
   /**
   * network_function_groups block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#network_function_groups DataAwsNetworkmanagerCoreNetworkPolicyDocument#network_function_groups}
   */
-  readonly networkFunctionGroups?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups[] | cdktf.IResolvable;
+  readonly networkFunctionGroups?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups[] | cdktn.IResolvable;
   /**
   * routing_policies block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#routing_policies DataAwsNetworkmanagerCoreNetworkPolicyDocument#routing_policies}
   */
-  readonly routingPolicies?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPolicies[] | cdktf.IResolvable;
+  readonly routingPolicies?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPolicies[] | cdktn.IResolvable;
   /**
   * segment_actions block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#segment_actions DataAwsNetworkmanagerCoreNetworkPolicyDocument#segment_actions}
   */
-  readonly segmentActions?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions[] | cdktf.IResolvable;
+  readonly segmentActions?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions[] | cdktn.IResolvable;
   /**
   * segments block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#segments DataAwsNetworkmanagerCoreNetworkPolicyDocument#segments}
   */
-  readonly segments: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments[] | cdktf.IResolvable;
+  readonly segments: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments[] | cdktn.IResolvable;
 }
 export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesAction {
   /**
@@ -78,7 +78,7 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicie
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#require_acceptance DataAwsNetworkmanagerCoreNetworkPolicyDocument#require_acceptance}
   */
-  readonly requireAcceptance?: boolean | cdktf.IResolvable;
+  readonly requireAcceptance?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#segment DataAwsNetworkmanagerCoreNetworkPolicyDocument#segment}
   */
@@ -90,52 +90,52 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicie
 }
 
 export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference | DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    add_to_network_function_group: cdktf.stringToTerraform(struct!.addToNetworkFunctionGroup),
-    association_method: cdktf.stringToTerraform(struct!.associationMethod),
-    require_acceptance: cdktf.booleanToTerraform(struct!.requireAcceptance),
-    segment: cdktf.stringToTerraform(struct!.segment),
-    tag_value_of_key: cdktf.stringToTerraform(struct!.tagValueOfKey),
+    add_to_network_function_group: cdktn.stringToTerraform(struct!.addToNetworkFunctionGroup),
+    association_method: cdktn.stringToTerraform(struct!.associationMethod),
+    require_acceptance: cdktn.booleanToTerraform(struct!.requireAcceptance),
+    segment: cdktn.stringToTerraform(struct!.segment),
+    tag_value_of_key: cdktn.stringToTerraform(struct!.tagValueOfKey),
   }
 }
 
 
 export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference | DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     add_to_network_function_group: {
-      value: cdktf.stringToHclTerraform(struct!.addToNetworkFunctionGroup),
+      value: cdktn.stringToHclTerraform(struct!.addToNetworkFunctionGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     association_method: {
-      value: cdktf.stringToHclTerraform(struct!.associationMethod),
+      value: cdktn.stringToHclTerraform(struct!.associationMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     require_acceptance: {
-      value: cdktf.booleanToHclTerraform(struct!.requireAcceptance),
+      value: cdktn.booleanToHclTerraform(struct!.requireAcceptance),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     segment: {
-      value: cdktf.stringToHclTerraform(struct!.segment),
+      value: cdktn.stringToHclTerraform(struct!.segment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_value_of_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagValueOfKey),
+      value: cdktn.stringToHclTerraform(struct!.tagValueOfKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -146,14 +146,14 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -235,11 +235,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesAct
   }
 
   // require_acceptance - computed: false, optional: true, required: false
-  private _requireAcceptance?: boolean | cdktf.IResolvable; 
+  private _requireAcceptance?: boolean | cdktn.IResolvable; 
   public get requireAcceptance() {
     return this.getBooleanAttribute('require_acceptance');
   }
-  public set requireAcceptance(value: boolean | cdktf.IResolvable) {
+  public set requireAcceptance(value: boolean | cdktn.IResolvable) {
     this._requireAcceptance = value;
   }
   public resetRequireAcceptance() {
@@ -301,46 +301,46 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicie
   readonly value?: string;
 }
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -351,9 +351,9 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -361,11 +361,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesCon
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditions | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -390,7 +390,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesCon
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -399,7 +399,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesCon
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -475,15 +475,15 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesCon
   }
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditions[] | cdktf.IResolvable
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsList extends cdktn.ComplexList {
+  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -518,44 +518,44 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicie
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#conditions DataAwsNetworkmanagerCoreNetworkPolicyDocument#conditions}
   */
-  readonly conditions: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditions[] | cdktf.IResolvable;
+  readonly conditions: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditions[] | cdktn.IResolvable;
 }
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    condition_logic: cdktf.stringToTerraform(struct!.conditionLogic),
-    description: cdktf.stringToTerraform(struct!.description),
-    rule_number: cdktf.numberToTerraform(struct!.ruleNumber),
+    condition_logic: cdktn.stringToTerraform(struct!.conditionLogic),
+    description: cdktn.stringToTerraform(struct!.description),
+    rule_number: cdktn.numberToTerraform(struct!.ruleNumber),
     action: dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionToTerraform(struct!.action),
-    conditions: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsToTerraform, true)(struct!.conditions),
+    conditions: cdktn.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsToTerraform, true)(struct!.conditions),
   }
 }
 
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     condition_logic: {
-      value: cdktf.stringToHclTerraform(struct!.conditionLogic),
+      value: cdktn.stringToHclTerraform(struct!.conditionLogic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_number: {
-      value: cdktf.numberToHclTerraform(struct!.ruleNumber),
+      value: cdktn.numberToHclTerraform(struct!.ruleNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -567,7 +567,7 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies
       storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionList",
     },
     conditions: {
-      value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsToHclTerraform, true)(struct!.conditions),
+      value: cdktn.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsToHclTerraform, true)(struct!.conditions),
       isBlock: true,
       type: "list",
       storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsList",
@@ -578,9 +578,9 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -588,11 +588,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -621,7 +621,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -631,7 +631,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesOut
       this._action.internalValue = undefined;
       this._conditions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -709,7 +709,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesOut
   public get conditions() {
     return this._conditions;
   }
-  public putConditions(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditions[] | cdktf.IResolvable) {
+  public putConditions(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditions[] | cdktn.IResolvable) {
     this._conditions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -718,15 +718,15 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesOut
   }
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesList extends cdktf.ComplexList {
-  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies[] | cdktf.IResolvable
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesList extends cdktn.ComplexList {
+  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -745,24 +745,24 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRouting
 }
 
 export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesActionToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesActionOutputReference | DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    associate_routing_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.associateRoutingPolicies),
+    associate_routing_policies: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.associateRoutingPolicies),
   }
 }
 
 
 export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesActionToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesActionOutputReference | DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     associate_routing_policies: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.associateRoutingPolicies),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.associateRoutingPolicies),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -773,14 +773,14 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesActionOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -808,7 +808,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPoli
   // associate_routing_policies - computed: false, optional: false, required: true
   private _associateRoutingPolicies?: string[]; 
   public get associateRoutingPolicies() {
-    return cdktf.Fn.tolist(this.getListAttribute('associate_routing_policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('associate_routing_policies'));
   }
   public set associateRoutingPolicies(value: string[]) {
     this._associateRoutingPolicies = value;
@@ -829,32 +829,32 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRouting
   readonly value: string;
 }
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditionsToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditionsToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditionsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditionsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -865,9 +865,9 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -875,11 +875,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPoli
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditions | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -896,14 +896,14 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPoli
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -942,15 +942,15 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPoli
   }
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditionsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditions[] | cdktf.IResolvable
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditionsList extends cdktn.ComplexList {
+  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -985,44 +985,44 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRouting
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#conditions DataAwsNetworkmanagerCoreNetworkPolicyDocument#conditions}
   */
-  readonly conditions: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditions[] | cdktf.IResolvable;
+  readonly conditions: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditions[] | cdktn.IResolvable;
 }
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    edge_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.edgeLocations),
-    rule_number: cdktf.numberToTerraform(struct!.ruleNumber),
+    description: cdktn.stringToTerraform(struct!.description),
+    edge_locations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.edgeLocations),
+    rule_number: cdktn.numberToTerraform(struct!.ruleNumber),
     action: dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesActionToTerraform(struct!.action),
-    conditions: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditionsToTerraform, true)(struct!.conditions),
+    conditions: cdktn.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditionsToTerraform, true)(struct!.conditions),
   }
 }
 
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     edge_locations: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.edgeLocations),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.edgeLocations),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     rule_number: {
-      value: cdktf.numberToHclTerraform(struct!.ruleNumber),
+      value: cdktn.numberToHclTerraform(struct!.ruleNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1034,7 +1034,7 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingP
       storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesActionList",
     },
     conditions: {
-      value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditionsToHclTerraform, true)(struct!.conditions),
+      value: cdktn.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditionsToHclTerraform, true)(struct!.conditions),
       isBlock: true,
       type: "list",
       storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditionsList",
@@ -1045,9 +1045,9 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1055,11 +1055,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPoli
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRules | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1088,7 +1088,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPoli
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1098,7 +1098,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPoli
       this._action.internalValue = undefined;
       this._conditions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1132,7 +1132,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPoli
   // edge_locations - computed: false, optional: true, required: false
   private _edgeLocations?: string[]; 
   public get edgeLocations() {
-    return cdktf.Fn.tolist(this.getListAttribute('edge_locations'));
+    return cdktn.Fn.tolist(this.getListAttribute('edge_locations'));
   }
   public set edgeLocations(value: string[]) {
     this._edgeLocations = value;
@@ -1176,7 +1176,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPoli
   public get conditions() {
     return this._conditions;
   }
-  public putConditions(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditions[] | cdktf.IResolvable) {
+  public putConditions(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesConditions[] | cdktn.IResolvable) {
     this._conditions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1185,15 +1185,15 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPoli
   }
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesList extends cdktf.ComplexList {
-  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRules[] | cdktf.IResolvable
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesList extends cdktn.ComplexList {
+  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1219,39 +1219,39 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfig
   readonly location: string;
 }
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    asn: cdktf.stringToTerraform(struct!.asn),
-    inside_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.insideCidrBlocks),
-    location: cdktf.stringToTerraform(struct!.location),
+    asn: cdktn.stringToTerraform(struct!.asn),
+    inside_cidr_blocks: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.insideCidrBlocks),
+    location: cdktn.stringToTerraform(struct!.location),
   }
 }
 
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     asn: {
-      value: cdktf.stringToHclTerraform(struct!.asn),
+      value: cdktn.stringToHclTerraform(struct!.asn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     inside_cidr_blocks: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.insideCidrBlocks),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.insideCidrBlocks),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1262,9 +1262,9 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1272,11 +1272,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurat
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocations | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1297,7 +1297,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurat
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1305,7 +1305,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurat
       this._insideCidrBlocks = undefined;
       this._location = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1364,15 +1364,15 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurat
   }
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocations[] | cdktf.IResolvable
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsList extends cdktn.ComplexList {
+  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1391,7 +1391,7 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfig
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#dns_support DataAwsNetworkmanagerCoreNetworkPolicyDocument#dns_support}
   */
-  readonly dnsSupport?: boolean | cdktf.IResolvable;
+  readonly dnsSupport?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#inside_cidr_blocks DataAwsNetworkmanagerCoreNetworkPolicyDocument#inside_cidr_blocks}
   */
@@ -1399,73 +1399,73 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfig
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#security_group_referencing_support DataAwsNetworkmanagerCoreNetworkPolicyDocument#security_group_referencing_support}
   */
-  readonly securityGroupReferencingSupport?: boolean | cdktf.IResolvable;
+  readonly securityGroupReferencingSupport?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#vpn_ecmp_support DataAwsNetworkmanagerCoreNetworkPolicyDocument#vpn_ecmp_support}
   */
-  readonly vpnEcmpSupport?: boolean | cdktf.IResolvable;
+  readonly vpnEcmpSupport?: boolean | cdktn.IResolvable;
   /**
   * edge_locations block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#edge_locations DataAwsNetworkmanagerCoreNetworkPolicyDocument#edge_locations}
   */
-  readonly edgeLocations: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocations[] | cdktf.IResolvable;
+  readonly edgeLocations: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocations[] | cdktn.IResolvable;
 }
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    asn_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.asnRanges),
-    dns_support: cdktf.booleanToTerraform(struct!.dnsSupport),
-    inside_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.insideCidrBlocks),
-    security_group_referencing_support: cdktf.booleanToTerraform(struct!.securityGroupReferencingSupport),
-    vpn_ecmp_support: cdktf.booleanToTerraform(struct!.vpnEcmpSupport),
-    edge_locations: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsToTerraform, true)(struct!.edgeLocations),
+    asn_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.asnRanges),
+    dns_support: cdktn.booleanToTerraform(struct!.dnsSupport),
+    inside_cidr_blocks: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.insideCidrBlocks),
+    security_group_referencing_support: cdktn.booleanToTerraform(struct!.securityGroupReferencingSupport),
+    vpn_ecmp_support: cdktn.booleanToTerraform(struct!.vpnEcmpSupport),
+    edge_locations: cdktn.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsToTerraform, true)(struct!.edgeLocations),
   }
 }
 
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     asn_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.asnRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.asnRanges),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     dns_support: {
-      value: cdktf.booleanToHclTerraform(struct!.dnsSupport),
+      value: cdktn.booleanToHclTerraform(struct!.dnsSupport),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     inside_cidr_blocks: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.insideCidrBlocks),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.insideCidrBlocks),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     security_group_referencing_support: {
-      value: cdktf.booleanToHclTerraform(struct!.securityGroupReferencingSupport),
+      value: cdktn.booleanToHclTerraform(struct!.securityGroupReferencingSupport),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     vpn_ecmp_support: {
-      value: cdktf.booleanToHclTerraform(struct!.vpnEcmpSupport),
+      value: cdktn.booleanToHclTerraform(struct!.vpnEcmpSupport),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     edge_locations: {
-      value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsToHclTerraform, true)(struct!.edgeLocations),
+      value: cdktn.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsToHclTerraform, true)(struct!.edgeLocations),
       isBlock: true,
       type: "list",
       storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsList",
@@ -1476,9 +1476,9 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1486,11 +1486,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurat
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1523,7 +1523,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurat
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1534,7 +1534,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurat
       this._vpnEcmpSupport = undefined;
       this._edgeLocations.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1553,7 +1553,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurat
   // asn_ranges - computed: false, optional: false, required: true
   private _asnRanges?: string[]; 
   public get asnRanges() {
-    return cdktf.Fn.tolist(this.getListAttribute('asn_ranges'));
+    return cdktn.Fn.tolist(this.getListAttribute('asn_ranges'));
   }
   public set asnRanges(value: string[]) {
     this._asnRanges = value;
@@ -1564,11 +1564,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurat
   }
 
   // dns_support - computed: false, optional: true, required: false
-  private _dnsSupport?: boolean | cdktf.IResolvable; 
+  private _dnsSupport?: boolean | cdktn.IResolvable; 
   public get dnsSupport() {
     return this.getBooleanAttribute('dns_support');
   }
-  public set dnsSupport(value: boolean | cdktf.IResolvable) {
+  public set dnsSupport(value: boolean | cdktn.IResolvable) {
     this._dnsSupport = value;
   }
   public resetDnsSupport() {
@@ -1582,7 +1582,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurat
   // inside_cidr_blocks - computed: false, optional: true, required: false
   private _insideCidrBlocks?: string[]; 
   public get insideCidrBlocks() {
-    return cdktf.Fn.tolist(this.getListAttribute('inside_cidr_blocks'));
+    return cdktn.Fn.tolist(this.getListAttribute('inside_cidr_blocks'));
   }
   public set insideCidrBlocks(value: string[]) {
     this._insideCidrBlocks = value;
@@ -1596,11 +1596,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurat
   }
 
   // security_group_referencing_support - computed: false, optional: true, required: false
-  private _securityGroupReferencingSupport?: boolean | cdktf.IResolvable; 
+  private _securityGroupReferencingSupport?: boolean | cdktn.IResolvable; 
   public get securityGroupReferencingSupport() {
     return this.getBooleanAttribute('security_group_referencing_support');
   }
-  public set securityGroupReferencingSupport(value: boolean | cdktf.IResolvable) {
+  public set securityGroupReferencingSupport(value: boolean | cdktn.IResolvable) {
     this._securityGroupReferencingSupport = value;
   }
   public resetSecurityGroupReferencingSupport() {
@@ -1612,11 +1612,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurat
   }
 
   // vpn_ecmp_support - computed: false, optional: true, required: false
-  private _vpnEcmpSupport?: boolean | cdktf.IResolvable; 
+  private _vpnEcmpSupport?: boolean | cdktn.IResolvable; 
   public get vpnEcmpSupport() {
     return this.getBooleanAttribute('vpn_ecmp_support');
   }
-  public set vpnEcmpSupport(value: boolean | cdktf.IResolvable) {
+  public set vpnEcmpSupport(value: boolean | cdktn.IResolvable) {
     this._vpnEcmpSupport = value;
   }
   public resetVpnEcmpSupport() {
@@ -1632,7 +1632,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurat
   public get edgeLocations() {
     return this._edgeLocations;
   }
-  public putEdgeLocations(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocations[] | cdktf.IResolvable) {
+  public putEdgeLocations(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocations[] | cdktn.IResolvable) {
     this._edgeLocations.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1641,15 +1641,15 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurat
   }
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationList extends cdktf.ComplexList {
-  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfiguration[] | cdktf.IResolvable
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationList extends cdktn.ComplexList {
+  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1672,42 +1672,42 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#require_attachment_acceptance DataAwsNetworkmanagerCoreNetworkPolicyDocument#require_attachment_acceptance}
   */
-  readonly requireAttachmentAcceptance: boolean | cdktf.IResolvable;
+  readonly requireAttachmentAcceptance: boolean | cdktn.IResolvable;
 }
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    require_attachment_acceptance: cdktf.booleanToTerraform(struct!.requireAttachmentAcceptance),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    require_attachment_acceptance: cdktn.booleanToTerraform(struct!.requireAttachmentAcceptance),
   }
 }
 
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     require_attachment_acceptance: {
-      value: cdktf.booleanToHclTerraform(struct!.requireAttachmentAcceptance),
+      value: cdktn.booleanToHclTerraform(struct!.requireAttachmentAcceptance),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1718,9 +1718,9 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1728,11 +1728,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1753,7 +1753,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1761,7 +1761,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups
       this._name = undefined;
       this._requireAttachmentAcceptance = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1804,11 +1804,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups
   }
 
   // require_attachment_acceptance - computed: false, optional: false, required: true
-  private _requireAttachmentAcceptance?: boolean | cdktf.IResolvable; 
+  private _requireAttachmentAcceptance?: boolean | cdktn.IResolvable; 
   public get requireAttachmentAcceptance() {
     return this.getBooleanAttribute('require_attachment_acceptance');
   }
-  public set requireAttachmentAcceptance(value: boolean | cdktf.IResolvable) {
+  public set requireAttachmentAcceptance(value: boolean | cdktn.IResolvable) {
     this._requireAttachmentAcceptance = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1817,15 +1817,15 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups
   }
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups[] | cdktf.IResolvable
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsList extends cdktn.ComplexList {
+  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1848,31 +1848,31 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRo
 }
 
 export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionActionToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionActionOutputReference | DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionActionToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionActionOutputReference | DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1883,14 +1883,14 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionActionOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1961,32 +1961,32 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRo
   readonly value: string;
 }
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditionsToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditionsToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditionsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditionsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1997,9 +1997,9 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2007,11 +2007,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutin
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditions | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2028,14 +2028,14 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutin
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2074,15 +2074,15 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutin
   }
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditionsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditions[] | cdktf.IResolvable
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditionsList extends cdktn.ComplexList {
+  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2109,30 +2109,30 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#match_conditions DataAwsNetworkmanagerCoreNetworkPolicyDocument#match_conditions}
   */
-  readonly matchConditions?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditions[] | cdktf.IResolvable;
+  readonly matchConditions?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditions[] | cdktn.IResolvable;
 }
 
 export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionOutputReference | DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    condition_logic: cdktf.stringToTerraform(struct!.conditionLogic),
+    condition_logic: cdktn.stringToTerraform(struct!.conditionLogic),
     action: dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionActionToTerraform(struct!.action),
-    match_conditions: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditionsToTerraform, true)(struct!.matchConditions),
+    match_conditions: cdktn.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditionsToTerraform, true)(struct!.matchConditions),
   }
 }
 
 
 export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionOutputReference | DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     condition_logic: {
-      value: cdktf.stringToHclTerraform(struct!.conditionLogic),
+      value: cdktn.stringToHclTerraform(struct!.conditionLogic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2144,7 +2144,7 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRou
       storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionActionList",
     },
     match_conditions: {
-      value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditionsToHclTerraform, true)(struct!.matchConditions),
+      value: cdktn.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditionsToHclTerraform, true)(struct!.matchConditions),
       isBlock: true,
       type: "list",
       storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditionsList",
@@ -2155,14 +2155,14 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2233,7 +2233,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutin
   public get matchConditions() {
     return this._matchConditions;
   }
-  public putMatchConditions(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditions[] | cdktf.IResolvable) {
+  public putMatchConditions(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionMatchConditions[] | cdktn.IResolvable) {
     this._matchConditions.internalValue = value;
   }
   public resetMatchConditions() {
@@ -2257,26 +2257,26 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRo
   readonly ruleDefinition: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinition;
 }
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rule_number: cdktf.numberToTerraform(struct!.ruleNumber),
+    rule_number: cdktn.numberToTerraform(struct!.ruleNumber),
     rule_definition: dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesRuleDefinitionToTerraform(struct!.ruleDefinition),
   }
 }
 
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rule_number: {
-      value: cdktf.numberToHclTerraform(struct!.ruleNumber),
+      value: cdktn.numberToHclTerraform(struct!.ruleNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2293,9 +2293,9 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2303,11 +2303,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutin
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRules | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2324,14 +2324,14 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutin
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ruleNumber = undefined;
       this._ruleDefinition.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2370,15 +2370,15 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutin
   }
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesList extends cdktf.ComplexList {
-  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRules[] | cdktf.IResolvable
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesList extends cdktn.ComplexList {
+  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2411,56 +2411,56 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPolicies {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#routing_policy_rules DataAwsNetworkmanagerCoreNetworkPolicyDocument#routing_policy_rules}
   */
-  readonly routingPolicyRules: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRules[] | cdktf.IResolvable;
+  readonly routingPolicyRules: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRules[] | cdktn.IResolvable;
 }
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    routing_policy_description: cdktf.stringToTerraform(struct!.routingPolicyDescription),
-    routing_policy_direction: cdktf.stringToTerraform(struct!.routingPolicyDirection),
-    routing_policy_name: cdktf.stringToTerraform(struct!.routingPolicyName),
-    routing_policy_number: cdktf.numberToTerraform(struct!.routingPolicyNumber),
-    routing_policy_rules: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesToTerraform, true)(struct!.routingPolicyRules),
+    routing_policy_description: cdktn.stringToTerraform(struct!.routingPolicyDescription),
+    routing_policy_direction: cdktn.stringToTerraform(struct!.routingPolicyDirection),
+    routing_policy_name: cdktn.stringToTerraform(struct!.routingPolicyName),
+    routing_policy_number: cdktn.numberToTerraform(struct!.routingPolicyNumber),
+    routing_policy_rules: cdktn.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesToTerraform, true)(struct!.routingPolicyRules),
   }
 }
 
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     routing_policy_description: {
-      value: cdktf.stringToHclTerraform(struct!.routingPolicyDescription),
+      value: cdktn.stringToHclTerraform(struct!.routingPolicyDescription),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     routing_policy_direction: {
-      value: cdktf.stringToHclTerraform(struct!.routingPolicyDirection),
+      value: cdktn.stringToHclTerraform(struct!.routingPolicyDirection),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     routing_policy_name: {
-      value: cdktf.stringToHclTerraform(struct!.routingPolicyName),
+      value: cdktn.stringToHclTerraform(struct!.routingPolicyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     routing_policy_number: {
-      value: cdktf.numberToHclTerraform(struct!.routingPolicyNumber),
+      value: cdktn.numberToHclTerraform(struct!.routingPolicyNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     routing_policy_rules: {
-      value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesToHclTerraform, true)(struct!.routingPolicyRules),
+      value: cdktn.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesToHclTerraform, true)(struct!.routingPolicyRules),
       isBlock: true,
       type: "list",
       storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRulesList",
@@ -2471,9 +2471,9 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2481,11 +2481,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPolicies | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPolicies | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2514,7 +2514,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPolicies | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPolicies | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2524,7 +2524,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesOutput
       this._routingPolicyNumber = undefined;
       this._routingPolicyRules.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2599,7 +2599,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesOutput
   public get routingPolicyRules() {
     return this._routingPolicyRules;
   }
-  public putRoutingPolicyRules(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRules[] | cdktf.IResolvable) {
+  public putRoutingPolicyRules(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesRoutingPolicyRules[] | cdktn.IResolvable) {
     this._routingPolicyRules.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2608,15 +2608,15 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesOutput
   }
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesList extends cdktf.ComplexList {
-  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPolicies[] | cdktf.IResolvable
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesList extends cdktn.ComplexList {
+  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPolicies[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2643,38 +2643,38 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsEdg
 }
 
 export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsEdgeLocationAssociationToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsEdgeLocationAssociationOutputReference | DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsEdgeLocationAssociation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    edge_location: cdktf.stringToTerraform(struct!.edgeLocation),
-    peer_edge_location: cdktf.stringToTerraform(struct!.peerEdgeLocation),
-    routing_policy_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.routingPolicyNames),
+    edge_location: cdktn.stringToTerraform(struct!.edgeLocation),
+    peer_edge_location: cdktn.stringToTerraform(struct!.peerEdgeLocation),
+    routing_policy_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.routingPolicyNames),
   }
 }
 
 
 export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsEdgeLocationAssociationToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsEdgeLocationAssociationOutputReference | DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsEdgeLocationAssociation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     edge_location: {
-      value: cdktf.stringToHclTerraform(struct!.edgeLocation),
+      value: cdktn.stringToHclTerraform(struct!.edgeLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     peer_edge_location: {
-      value: cdktf.stringToHclTerraform(struct!.peerEdgeLocation),
+      value: cdktn.stringToHclTerraform(struct!.peerEdgeLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     routing_policy_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.routingPolicyNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.routingPolicyNames),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -2685,14 +2685,14 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsEdge
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsEdgeLocationAssociationOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsEdgeLocationAssociationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2758,7 +2758,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsEdgeLoc
   // routing_policy_names - computed: false, optional: false, required: true
   private _routingPolicyNames?: string[]; 
   public get routingPolicyNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('routing_policy_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('routing_policy_names'));
   }
   public set routingPolicyNames(value: string[]) {
     this._routingPolicyNames = value;
@@ -2772,7 +2772,7 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsVia
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#edge_sets DataAwsNetworkmanagerCoreNetworkPolicyDocument#edge_sets}
   */
-  readonly edgeSets?: string[][] | cdktf.IResolvable;
+  readonly edgeSets?: string[][] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#use_edge DataAwsNetworkmanagerCoreNetworkPolicyDocument#use_edge}
   */
@@ -2783,39 +2783,39 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsVia
   readonly useEdgeLocation?: string;
 }
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverride | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    edge_sets: cdktf.listMapper(cdktf.listMapper(cdktf.stringToTerraform, false), false)(struct!.edgeSets),
-    use_edge: cdktf.stringToTerraform(struct!.useEdge),
-    use_edge_location: cdktf.stringToTerraform(struct!.useEdgeLocation),
+    edge_sets: cdktn.listMapper(cdktn.listMapper(cdktn.stringToTerraform, false), false)(struct!.edgeSets),
+    use_edge: cdktn.stringToTerraform(struct!.useEdge),
+    use_edge_location: cdktn.stringToTerraform(struct!.useEdgeLocation),
   }
 }
 
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverride | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     edge_sets: {
-      value: cdktf.listMapperHcl(cdktf.listMapperHcl(cdktf.stringToHclTerraform, false), false)(struct!.edgeSets),
+      value: cdktn.listMapperHcl(cdktn.listMapperHcl(cdktn.stringToHclTerraform, false), false)(struct!.edgeSets),
       isBlock: false,
       type: "set",
       storageClassType: "stringListList",
     },
     use_edge: {
-      value: cdktf.stringToHclTerraform(struct!.useEdge),
+      value: cdktn.stringToHclTerraform(struct!.useEdge),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_edge_location: {
-      value: cdktf.stringToHclTerraform(struct!.useEdgeLocation),
+      value: cdktn.stringToHclTerraform(struct!.useEdgeLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2826,9 +2826,9 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaW
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2836,11 +2836,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWith
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverride | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverride | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2861,7 +2861,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWith
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverride | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverride | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2869,7 +2869,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWith
       this._useEdge = undefined;
       this._useEdgeLocation = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2883,11 +2883,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWith
   }
 
   // edge_sets - computed: false, optional: true, required: false
-  private _edgeSets?: string[][] | cdktf.IResolvable; 
+  private _edgeSets?: string[][] | cdktn.IResolvable; 
   public get edgeSets() {
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('edge_sets')));
+    return cdktn.Token.asAny(cdktn.Fn.tolist(this.interpolationForAttribute('edge_sets')));
   }
-  public set edgeSets(value: string[][] | cdktf.IResolvable) {
+  public set edgeSets(value: string[][] | cdktn.IResolvable) {
     this._edgeSets = value;
   }
   public resetEdgeSets() {
@@ -2931,15 +2931,15 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWith
   }
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideList extends cdktf.ComplexList {
-  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverride[] | cdktf.IResolvable
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideList extends cdktn.ComplexList {
+  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverride[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2960,35 +2960,35 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsVia
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#with_edge_override DataAwsNetworkmanagerCoreNetworkPolicyDocument#with_edge_override}
   */
-  readonly withEdgeOverride?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverride[] | cdktf.IResolvable;
+  readonly withEdgeOverride?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverride[] | cdktn.IResolvable;
 }
 
 export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaOutputReference | DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsVia): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network_function_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.networkFunctionGroups),
-    with_edge_override: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideToTerraform, true)(struct!.withEdgeOverride),
+    network_function_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.networkFunctionGroups),
+    with_edge_override: cdktn.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideToTerraform, true)(struct!.withEdgeOverride),
   }
 }
 
 
 export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaOutputReference | DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsVia): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network_function_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.networkFunctionGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.networkFunctionGroups),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     with_edge_override: {
-      value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideToHclTerraform, true)(struct!.withEdgeOverride),
+      value: cdktn.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideToHclTerraform, true)(struct!.withEdgeOverride),
       isBlock: true,
       type: "list",
       storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideList",
@@ -2999,14 +2999,14 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3040,7 +3040,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaOutp
   // network_function_groups - computed: false, optional: true, required: false
   private _networkFunctionGroups?: string[]; 
   public get networkFunctionGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('network_function_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('network_function_groups'));
   }
   public set networkFunctionGroups(value: string[]) {
     this._networkFunctionGroups = value;
@@ -3058,7 +3058,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaOutp
   public get withEdgeOverride() {
     return this._withEdgeOverride;
   }
-  public putWithEdgeOverride(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverride[] | cdktf.IResolvable) {
+  public putWithEdgeOverride(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverride[] | cdktn.IResolvable) {
     this._withEdgeOverride.internalValue = value;
   }
   public resetWithEdgeOverride() {
@@ -3077,24 +3077,24 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhe
 }
 
 export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentToToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentToOutputReference | DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentTo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    segments: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.segments),
+    segments: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.segments),
   }
 }
 
 
 export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentToToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentToOutputReference | DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentTo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     segments: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.segments),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.segments),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -3105,14 +3105,14 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentToOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentToOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3140,7 +3140,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSen
   // segments - computed: false, optional: true, required: false
   private _segments?: string[]; 
   public get segments() {
-    return cdktf.Fn.tolist(this.getListAttribute('segments'));
+    return cdktn.Fn.tolist(this.getListAttribute('segments'));
   }
   public set segments(value: string[]) {
     this._segments = value;
@@ -3210,21 +3210,21 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions {
   readonly whenSentTo?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentTo;
 }
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    description: cdktf.stringToTerraform(struct!.description),
-    destination_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destinationCidrBlocks),
-    destinations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destinations),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    routing_policy_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.routingPolicyNames),
-    segment: cdktf.stringToTerraform(struct!.segment),
-    share_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.shareWith),
-    share_with_except: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.shareWithExcept),
+    action: cdktn.stringToTerraform(struct!.action),
+    description: cdktn.stringToTerraform(struct!.description),
+    destination_cidr_blocks: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinationCidrBlocks),
+    destinations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinations),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    routing_policy_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.routingPolicyNames),
+    segment: cdktn.stringToTerraform(struct!.segment),
+    share_with: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.shareWith),
+    share_with_except: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.shareWithExcept),
     edge_location_association: dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsEdgeLocationAssociationToTerraform(struct!.edgeLocationAssociation),
     via: dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaToTerraform(struct!.via),
     when_sent_to: dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentToToTerraform(struct!.whenSentTo),
@@ -3232,62 +3232,62 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToTe
 }
 
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination_cidr_blocks: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinationCidrBlocks),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destinationCidrBlocks),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     destinations: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinations),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destinations),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     routing_policy_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.routingPolicyNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.routingPolicyNames),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     segment: {
-      value: cdktf.stringToHclTerraform(struct!.segment),
+      value: cdktn.stringToHclTerraform(struct!.segment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     share_with: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.shareWith),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.shareWith),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     share_with_except: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.shareWithExcept),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.shareWithExcept),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -3316,9 +3316,9 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3326,11 +3326,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3387,7 +3387,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3404,7 +3404,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputR
       this._via.internalValue = undefined;
       this._whenSentTo.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3458,7 +3458,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputR
   // destination_cidr_blocks - computed: false, optional: true, required: false
   private _destinationCidrBlocks?: string[]; 
   public get destinationCidrBlocks() {
-    return cdktf.Fn.tolist(this.getListAttribute('destination_cidr_blocks'));
+    return cdktn.Fn.tolist(this.getListAttribute('destination_cidr_blocks'));
   }
   public set destinationCidrBlocks(value: string[]) {
     this._destinationCidrBlocks = value;
@@ -3474,7 +3474,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputR
   // destinations - computed: false, optional: true, required: false
   private _destinations?: string[]; 
   public get destinations() {
-    return cdktf.Fn.tolist(this.getListAttribute('destinations'));
+    return cdktn.Fn.tolist(this.getListAttribute('destinations'));
   }
   public set destinations(value: string[]) {
     this._destinations = value;
@@ -3506,7 +3506,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputR
   // routing_policy_names - computed: false, optional: true, required: false
   private _routingPolicyNames?: string[]; 
   public get routingPolicyNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('routing_policy_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('routing_policy_names'));
   }
   public set routingPolicyNames(value: string[]) {
     this._routingPolicyNames = value;
@@ -3535,7 +3535,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputR
   // share_with - computed: false, optional: true, required: false
   private _shareWith?: string[]; 
   public get shareWith() {
-    return cdktf.Fn.tolist(this.getListAttribute('share_with'));
+    return cdktn.Fn.tolist(this.getListAttribute('share_with'));
   }
   public set shareWith(value: string[]) {
     this._shareWith = value;
@@ -3551,7 +3551,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputR
   // share_with_except - computed: false, optional: true, required: false
   private _shareWithExcept?: string[]; 
   public get shareWithExcept() {
-    return cdktf.Fn.tolist(this.getListAttribute('share_with_except'));
+    return cdktn.Fn.tolist(this.getListAttribute('share_with_except'));
   }
   public set shareWithExcept(value: string[]) {
     this._shareWithExcept = value;
@@ -3613,15 +3613,15 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputR
   }
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions[] | cdktf.IResolvable
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsList extends cdktn.ComplexList {
+  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3652,7 +3652,7 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#isolate_attachments DataAwsNetworkmanagerCoreNetworkPolicyDocument#isolate_attachments}
   */
-  readonly isolateAttachments?: boolean | cdktf.IResolvable;
+  readonly isolateAttachments?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#name DataAwsNetworkmanagerCoreNetworkPolicyDocument#name}
   */
@@ -3660,70 +3660,70 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#require_attachment_acceptance DataAwsNetworkmanagerCoreNetworkPolicyDocument#require_attachment_acceptance}
   */
-  readonly requireAttachmentAcceptance?: boolean | cdktf.IResolvable;
+  readonly requireAttachmentAcceptance?: boolean | cdktn.IResolvable;
 }
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowFilter),
-    deny_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.denyFilter),
-    description: cdktf.stringToTerraform(struct!.description),
-    edge_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.edgeLocations),
-    isolate_attachments: cdktf.booleanToTerraform(struct!.isolateAttachments),
-    name: cdktf.stringToTerraform(struct!.name),
-    require_attachment_acceptance: cdktf.booleanToTerraform(struct!.requireAttachmentAcceptance),
+    allow_filter: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowFilter),
+    deny_filter: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.denyFilter),
+    description: cdktn.stringToTerraform(struct!.description),
+    edge_locations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.edgeLocations),
+    isolate_attachments: cdktn.booleanToTerraform(struct!.isolateAttachments),
+    name: cdktn.stringToTerraform(struct!.name),
+    require_attachment_acceptance: cdktn.booleanToTerraform(struct!.requireAttachmentAcceptance),
   }
 }
 
 
-export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_filter: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowFilter),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowFilter),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     deny_filter: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.denyFilter),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.denyFilter),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     edge_locations: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.edgeLocations),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.edgeLocations),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     isolate_attachments: {
-      value: cdktf.booleanToHclTerraform(struct!.isolateAttachments),
+      value: cdktn.booleanToHclTerraform(struct!.isolateAttachments),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     require_attachment_acceptance: {
-      value: cdktf.booleanToHclTerraform(struct!.requireAttachmentAcceptance),
+      value: cdktn.booleanToHclTerraform(struct!.requireAttachmentAcceptance),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3734,9 +3734,9 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3744,11 +3744,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3785,7 +3785,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3797,7 +3797,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsOutputReferen
       this._name = undefined;
       this._requireAttachmentAcceptance = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3817,7 +3817,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsOutputReferen
   // allow_filter - computed: false, optional: true, required: false
   private _allowFilter?: string[]; 
   public get allowFilter() {
-    return cdktf.Fn.tolist(this.getListAttribute('allow_filter'));
+    return cdktn.Fn.tolist(this.getListAttribute('allow_filter'));
   }
   public set allowFilter(value: string[]) {
     this._allowFilter = value;
@@ -3833,7 +3833,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsOutputReferen
   // deny_filter - computed: false, optional: true, required: false
   private _denyFilter?: string[]; 
   public get denyFilter() {
-    return cdktf.Fn.tolist(this.getListAttribute('deny_filter'));
+    return cdktn.Fn.tolist(this.getListAttribute('deny_filter'));
   }
   public set denyFilter(value: string[]) {
     this._denyFilter = value;
@@ -3865,7 +3865,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsOutputReferen
   // edge_locations - computed: false, optional: true, required: false
   private _edgeLocations?: string[]; 
   public get edgeLocations() {
-    return cdktf.Fn.tolist(this.getListAttribute('edge_locations'));
+    return cdktn.Fn.tolist(this.getListAttribute('edge_locations'));
   }
   public set edgeLocations(value: string[]) {
     this._edgeLocations = value;
@@ -3879,11 +3879,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsOutputReferen
   }
 
   // isolate_attachments - computed: false, optional: true, required: false
-  private _isolateAttachments?: boolean | cdktf.IResolvable; 
+  private _isolateAttachments?: boolean | cdktn.IResolvable; 
   public get isolateAttachments() {
     return this.getBooleanAttribute('isolate_attachments');
   }
-  public set isolateAttachments(value: boolean | cdktf.IResolvable) {
+  public set isolateAttachments(value: boolean | cdktn.IResolvable) {
     this._isolateAttachments = value;
   }
   public resetIsolateAttachments() {
@@ -3908,11 +3908,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsOutputReferen
   }
 
   // require_attachment_acceptance - computed: false, optional: true, required: false
-  private _requireAttachmentAcceptance?: boolean | cdktf.IResolvable; 
+  private _requireAttachmentAcceptance?: boolean | cdktn.IResolvable; 
   public get requireAttachmentAcceptance() {
     return this.getBooleanAttribute('require_attachment_acceptance');
   }
-  public set requireAttachmentAcceptance(value: boolean | cdktf.IResolvable) {
+  public set requireAttachmentAcceptance(value: boolean | cdktn.IResolvable) {
     this._requireAttachmentAcceptance = value;
   }
   public resetRequireAttachmentAcceptance() {
@@ -3924,15 +3924,15 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsOutputReferen
   }
 }
 
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments[] | cdktf.IResolvable
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList extends cdktn.ComplexList {
+  public internalValue? : DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3947,7 +3947,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document aws_networkmanager_core_network_policy_document}
 */
-export class DataAwsNetworkmanagerCoreNetworkPolicyDocument extends cdktf.TerraformDataSource {
+export class DataAwsNetworkmanagerCoreNetworkPolicyDocument extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -3958,14 +3958,14 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocument extends cdktf.Terraf
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsNetworkmanagerCoreNetworkPolicyDocument resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsNetworkmanagerCoreNetworkPolicyDocument resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsNetworkmanagerCoreNetworkPolicyDocument to import
   * @param importFromId The id of the existing DataAwsNetworkmanagerCoreNetworkPolicyDocument that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_core_network_policy_document#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsNetworkmanagerCoreNetworkPolicyDocument to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_core_network_policy_document", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_core_network_policy_document", importId: importFromId, provider });
       }
 
   // ===========
@@ -4052,7 +4052,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocument extends cdktf.Terraf
   public get attachmentPolicies() {
     return this._attachmentPolicies;
   }
-  public putAttachmentPolicies(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies[] | cdktf.IResolvable) {
+  public putAttachmentPolicies(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies[] | cdktn.IResolvable) {
     this._attachmentPolicies.internalValue = value;
   }
   public resetAttachmentPolicies() {
@@ -4068,7 +4068,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocument extends cdktf.Terraf
   public get attachmentRoutingPolicyRules() {
     return this._attachmentRoutingPolicyRules;
   }
-  public putAttachmentRoutingPolicyRules(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRules[] | cdktf.IResolvable) {
+  public putAttachmentRoutingPolicyRules(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRules[] | cdktn.IResolvable) {
     this._attachmentRoutingPolicyRules.internalValue = value;
   }
   public resetAttachmentRoutingPolicyRules() {
@@ -4084,7 +4084,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocument extends cdktf.Terraf
   public get coreNetworkConfiguration() {
     return this._coreNetworkConfiguration;
   }
-  public putCoreNetworkConfiguration(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfiguration[] | cdktf.IResolvable) {
+  public putCoreNetworkConfiguration(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfiguration[] | cdktn.IResolvable) {
     this._coreNetworkConfiguration.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4097,7 +4097,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocument extends cdktf.Terraf
   public get networkFunctionGroups() {
     return this._networkFunctionGroups;
   }
-  public putNetworkFunctionGroups(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups[] | cdktf.IResolvable) {
+  public putNetworkFunctionGroups(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroups[] | cdktn.IResolvable) {
     this._networkFunctionGroups.internalValue = value;
   }
   public resetNetworkFunctionGroups() {
@@ -4113,7 +4113,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocument extends cdktf.Terraf
   public get routingPolicies() {
     return this._routingPolicies;
   }
-  public putRoutingPolicies(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPolicies[] | cdktf.IResolvable) {
+  public putRoutingPolicies(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPolicies[] | cdktn.IResolvable) {
     this._routingPolicies.internalValue = value;
   }
   public resetRoutingPolicies() {
@@ -4129,7 +4129,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocument extends cdktf.Terraf
   public get segmentActions() {
     return this._segmentActions;
   }
-  public putSegmentActions(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions[] | cdktf.IResolvable) {
+  public putSegmentActions(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions[] | cdktn.IResolvable) {
     this._segmentActions.internalValue = value;
   }
   public resetSegmentActions() {
@@ -4145,7 +4145,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocument extends cdktf.Terraf
   public get segments() {
     return this._segments;
   }
-  public putSegments(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments[] | cdktf.IResolvable) {
+  public putSegments(value: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments[] | cdktn.IResolvable) {
     this._segments.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4159,70 +4159,70 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocument extends cdktf.Terraf
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      version: cdktf.stringToTerraform(this._version),
-      attachment_policies: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesToTerraform, true)(this._attachmentPolicies.internalValue),
-      attachment_routing_policy_rules: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesToTerraform, true)(this._attachmentRoutingPolicyRules.internalValue),
-      core_network_configuration: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationToTerraform, true)(this._coreNetworkConfiguration.internalValue),
-      network_function_groups: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsToTerraform, true)(this._networkFunctionGroups.internalValue),
-      routing_policies: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesToTerraform, true)(this._routingPolicies.internalValue),
-      segment_actions: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToTerraform, true)(this._segmentActions.internalValue),
-      segments: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToTerraform, true)(this._segments.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      version: cdktn.stringToTerraform(this._version),
+      attachment_policies: cdktn.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesToTerraform, true)(this._attachmentPolicies.internalValue),
+      attachment_routing_policy_rules: cdktn.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesToTerraform, true)(this._attachmentRoutingPolicyRules.internalValue),
+      core_network_configuration: cdktn.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationToTerraform, true)(this._coreNetworkConfiguration.internalValue),
+      network_function_groups: cdktn.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsToTerraform, true)(this._networkFunctionGroups.internalValue),
+      routing_policies: cdktn.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesToTerraform, true)(this._routingPolicies.internalValue),
+      segment_actions: cdktn.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToTerraform, true)(this._segmentActions.internalValue),
+      segments: cdktn.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToTerraform, true)(this._segments.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       attachment_policies: {
-        value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesToHclTerraform, true)(this._attachmentPolicies.internalValue),
+        value: cdktn.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesToHclTerraform, true)(this._attachmentPolicies.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesList",
       },
       attachment_routing_policy_rules: {
-        value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesToHclTerraform, true)(this._attachmentRoutingPolicyRules.internalValue),
+        value: cdktn.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesToHclTerraform, true)(this._attachmentRoutingPolicyRules.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentRoutingPolicyRulesList",
       },
       core_network_configuration: {
-        value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationToHclTerraform, true)(this._coreNetworkConfiguration.internalValue),
+        value: cdktn.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationToHclTerraform, true)(this._coreNetworkConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationList",
       },
       network_function_groups: {
-        value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsToHclTerraform, true)(this._networkFunctionGroups.internalValue),
+        value: cdktn.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsToHclTerraform, true)(this._networkFunctionGroups.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsList",
       },
       routing_policies: {
-        value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesToHclTerraform, true)(this._routingPolicies.internalValue),
+        value: cdktn.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesToHclTerraform, true)(this._routingPolicies.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentRoutingPoliciesList",
       },
       segment_actions: {
-        value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToHclTerraform, true)(this._segmentActions.internalValue),
+        value: cdktn.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToHclTerraform, true)(this._segmentActions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsList",
       },
       segments: {
-        value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToHclTerraform, true)(this._segments.internalValue),
+        value: cdktn.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToHclTerraform, true)(this._segments.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList",

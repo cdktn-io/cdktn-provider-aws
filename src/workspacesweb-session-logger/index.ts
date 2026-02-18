@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkspaceswebSessionLoggerConfig extends cdktf.TerraformMetaArguments {
+export interface WorkspaceswebSessionLoggerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_session_logger#additional_encryption_context WorkspaceswebSessionLogger#additional_encryption_context}
   */
@@ -39,20 +39,20 @@ export interface WorkspaceswebSessionLoggerConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_session_logger#event_filter WorkspaceswebSessionLogger#event_filter}
   */
-  readonly eventFilter?: WorkspaceswebSessionLoggerEventFilter[] | cdktf.IResolvable;
+  readonly eventFilter?: WorkspaceswebSessionLoggerEventFilter[] | cdktn.IResolvable;
   /**
   * log_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_session_logger#log_configuration WorkspaceswebSessionLogger#log_configuration}
   */
-  readonly logConfiguration?: WorkspaceswebSessionLoggerLogConfiguration[] | cdktf.IResolvable;
+  readonly logConfiguration?: WorkspaceswebSessionLoggerLogConfiguration[] | cdktn.IResolvable;
 }
 export interface WorkspaceswebSessionLoggerEventFilterAll {
 }
 
-export function workspaceswebSessionLoggerEventFilterAllToTerraform(struct?: WorkspaceswebSessionLoggerEventFilterAll | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebSessionLoggerEventFilterAllToTerraform(struct?: WorkspaceswebSessionLoggerEventFilterAll | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -60,9 +60,9 @@ export function workspaceswebSessionLoggerEventFilterAllToTerraform(struct?: Wor
 }
 
 
-export function workspaceswebSessionLoggerEventFilterAllToHclTerraform(struct?: WorkspaceswebSessionLoggerEventFilterAll | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebSessionLoggerEventFilterAllToHclTerraform(struct?: WorkspaceswebSessionLoggerEventFilterAll | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -70,9 +70,9 @@ export function workspaceswebSessionLoggerEventFilterAllToHclTerraform(struct?: 
   return attrs;
 }
 
-export class WorkspaceswebSessionLoggerEventFilterAllOutputReference extends cdktf.ComplexObject {
+export class WorkspaceswebSessionLoggerEventFilterAllOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -80,11 +80,11 @@ export class WorkspaceswebSessionLoggerEventFilterAllOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkspaceswebSessionLoggerEventFilterAll | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceswebSessionLoggerEventFilterAll | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -93,12 +93,12 @@ export class WorkspaceswebSessionLoggerEventFilterAllOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceswebSessionLoggerEventFilterAll | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceswebSessionLoggerEventFilterAll | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -109,15 +109,15 @@ export class WorkspaceswebSessionLoggerEventFilterAllOutputReference extends cdk
   }
 }
 
-export class WorkspaceswebSessionLoggerEventFilterAllList extends cdktf.ComplexList {
-  public internalValue? : WorkspaceswebSessionLoggerEventFilterAll[] | cdktf.IResolvable
+export class WorkspaceswebSessionLoggerEventFilterAllList extends cdktn.ComplexList {
+  public internalValue? : WorkspaceswebSessionLoggerEventFilterAll[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -138,35 +138,35 @@ export interface WorkspaceswebSessionLoggerEventFilter {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_session_logger#all WorkspaceswebSessionLogger#all}
   */
-  readonly all?: WorkspaceswebSessionLoggerEventFilterAll[] | cdktf.IResolvable;
+  readonly all?: WorkspaceswebSessionLoggerEventFilterAll[] | cdktn.IResolvable;
 }
 
-export function workspaceswebSessionLoggerEventFilterToTerraform(struct?: WorkspaceswebSessionLoggerEventFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebSessionLoggerEventFilterToTerraform(struct?: WorkspaceswebSessionLoggerEventFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.include),
-    all: cdktf.listMapper(workspaceswebSessionLoggerEventFilterAllToTerraform, true)(struct!.all),
+    include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.include),
+    all: cdktn.listMapper(workspaceswebSessionLoggerEventFilterAllToTerraform, true)(struct!.all),
   }
 }
 
 
-export function workspaceswebSessionLoggerEventFilterToHclTerraform(struct?: WorkspaceswebSessionLoggerEventFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebSessionLoggerEventFilterToHclTerraform(struct?: WorkspaceswebSessionLoggerEventFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.include),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.include),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     all: {
-      value: cdktf.listMapperHcl(workspaceswebSessionLoggerEventFilterAllToHclTerraform, true)(struct!.all),
+      value: cdktn.listMapperHcl(workspaceswebSessionLoggerEventFilterAllToHclTerraform, true)(struct!.all),
       isBlock: true,
       type: "list",
       storageClassType: "WorkspaceswebSessionLoggerEventFilterAllList",
@@ -177,9 +177,9 @@ export function workspaceswebSessionLoggerEventFilterToHclTerraform(struct?: Wor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceswebSessionLoggerEventFilterOutputReference extends cdktf.ComplexObject {
+export class WorkspaceswebSessionLoggerEventFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -187,11 +187,11 @@ export class WorkspaceswebSessionLoggerEventFilterOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkspaceswebSessionLoggerEventFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceswebSessionLoggerEventFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -208,14 +208,14 @@ export class WorkspaceswebSessionLoggerEventFilterOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceswebSessionLoggerEventFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceswebSessionLoggerEventFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._include = undefined;
       this._all.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -230,7 +230,7 @@ export class WorkspaceswebSessionLoggerEventFilterOutputReference extends cdktf.
   // include - computed: false, optional: true, required: false
   private _include?: string[]; 
   public get include() {
-    return cdktf.Fn.tolist(this.getListAttribute('include'));
+    return cdktn.Fn.tolist(this.getListAttribute('include'));
   }
   public set include(value: string[]) {
     this._include = value;
@@ -248,7 +248,7 @@ export class WorkspaceswebSessionLoggerEventFilterOutputReference extends cdktf.
   public get all() {
     return this._all;
   }
-  public putAll(value: WorkspaceswebSessionLoggerEventFilterAll[] | cdktf.IResolvable) {
+  public putAll(value: WorkspaceswebSessionLoggerEventFilterAll[] | cdktn.IResolvable) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -260,15 +260,15 @@ export class WorkspaceswebSessionLoggerEventFilterOutputReference extends cdktf.
   }
 }
 
-export class WorkspaceswebSessionLoggerEventFilterList extends cdktf.ComplexList {
-  public internalValue? : WorkspaceswebSessionLoggerEventFilter[] | cdktf.IResolvable
+export class WorkspaceswebSessionLoggerEventFilterList extends cdktn.ComplexList {
+  public internalValue? : WorkspaceswebSessionLoggerEventFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -302,53 +302,53 @@ export interface WorkspaceswebSessionLoggerLogConfigurationS3 {
   readonly logFileFormat: string;
 }
 
-export function workspaceswebSessionLoggerLogConfigurationS3ToTerraform(struct?: WorkspaceswebSessionLoggerLogConfigurationS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebSessionLoggerLogConfigurationS3ToTerraform(struct?: WorkspaceswebSessionLoggerLogConfigurationS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    bucket_owner: cdktf.stringToTerraform(struct!.bucketOwner),
-    folder_structure: cdktf.stringToTerraform(struct!.folderStructure),
-    key_prefix: cdktf.stringToTerraform(struct!.keyPrefix),
-    log_file_format: cdktf.stringToTerraform(struct!.logFileFormat),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    bucket_owner: cdktn.stringToTerraform(struct!.bucketOwner),
+    folder_structure: cdktn.stringToTerraform(struct!.folderStructure),
+    key_prefix: cdktn.stringToTerraform(struct!.keyPrefix),
+    log_file_format: cdktn.stringToTerraform(struct!.logFileFormat),
   }
 }
 
 
-export function workspaceswebSessionLoggerLogConfigurationS3ToHclTerraform(struct?: WorkspaceswebSessionLoggerLogConfigurationS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebSessionLoggerLogConfigurationS3ToHclTerraform(struct?: WorkspaceswebSessionLoggerLogConfigurationS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket_owner: {
-      value: cdktf.stringToHclTerraform(struct!.bucketOwner),
+      value: cdktn.stringToHclTerraform(struct!.bucketOwner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     folder_structure: {
-      value: cdktf.stringToHclTerraform(struct!.folderStructure),
+      value: cdktn.stringToHclTerraform(struct!.folderStructure),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.keyPrefix),
+      value: cdktn.stringToHclTerraform(struct!.keyPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_file_format: {
-      value: cdktf.stringToHclTerraform(struct!.logFileFormat),
+      value: cdktn.stringToHclTerraform(struct!.logFileFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -359,9 +359,9 @@ export function workspaceswebSessionLoggerLogConfigurationS3ToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceswebSessionLoggerLogConfigurationS3OutputReference extends cdktf.ComplexObject {
+export class WorkspaceswebSessionLoggerLogConfigurationS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -369,11 +369,11 @@ export class WorkspaceswebSessionLoggerLogConfigurationS3OutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkspaceswebSessionLoggerLogConfigurationS3 | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceswebSessionLoggerLogConfigurationS3 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -402,7 +402,7 @@ export class WorkspaceswebSessionLoggerLogConfigurationS3OutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceswebSessionLoggerLogConfigurationS3 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceswebSessionLoggerLogConfigurationS3 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -412,7 +412,7 @@ export class WorkspaceswebSessionLoggerLogConfigurationS3OutputReference extends
       this._keyPrefix = undefined;
       this._logFileFormat = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -499,15 +499,15 @@ export class WorkspaceswebSessionLoggerLogConfigurationS3OutputReference extends
   }
 }
 
-export class WorkspaceswebSessionLoggerLogConfigurationS3List extends cdktf.ComplexList {
-  public internalValue? : WorkspaceswebSessionLoggerLogConfigurationS3[] | cdktf.IResolvable
+export class WorkspaceswebSessionLoggerLogConfigurationS3List extends cdktn.ComplexList {
+  public internalValue? : WorkspaceswebSessionLoggerLogConfigurationS3[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -524,28 +524,28 @@ export interface WorkspaceswebSessionLoggerLogConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_session_logger#s3 WorkspaceswebSessionLogger#s3}
   */
-  readonly s3?: WorkspaceswebSessionLoggerLogConfigurationS3[] | cdktf.IResolvable;
+  readonly s3?: WorkspaceswebSessionLoggerLogConfigurationS3[] | cdktn.IResolvable;
 }
 
-export function workspaceswebSessionLoggerLogConfigurationToTerraform(struct?: WorkspaceswebSessionLoggerLogConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebSessionLoggerLogConfigurationToTerraform(struct?: WorkspaceswebSessionLoggerLogConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3: cdktf.listMapper(workspaceswebSessionLoggerLogConfigurationS3ToTerraform, true)(struct!.s3),
+    s3: cdktn.listMapper(workspaceswebSessionLoggerLogConfigurationS3ToTerraform, true)(struct!.s3),
   }
 }
 
 
-export function workspaceswebSessionLoggerLogConfigurationToHclTerraform(struct?: WorkspaceswebSessionLoggerLogConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebSessionLoggerLogConfigurationToHclTerraform(struct?: WorkspaceswebSessionLoggerLogConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3: {
-      value: cdktf.listMapperHcl(workspaceswebSessionLoggerLogConfigurationS3ToHclTerraform, true)(struct!.s3),
+      value: cdktn.listMapperHcl(workspaceswebSessionLoggerLogConfigurationS3ToHclTerraform, true)(struct!.s3),
       isBlock: true,
       type: "list",
       storageClassType: "WorkspaceswebSessionLoggerLogConfigurationS3List",
@@ -556,9 +556,9 @@ export function workspaceswebSessionLoggerLogConfigurationToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceswebSessionLoggerLogConfigurationOutputReference extends cdktf.ComplexObject {
+export class WorkspaceswebSessionLoggerLogConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -566,11 +566,11 @@ export class WorkspaceswebSessionLoggerLogConfigurationOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkspaceswebSessionLoggerLogConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceswebSessionLoggerLogConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -583,13 +583,13 @@ export class WorkspaceswebSessionLoggerLogConfigurationOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceswebSessionLoggerLogConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceswebSessionLoggerLogConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._s3.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -605,7 +605,7 @@ export class WorkspaceswebSessionLoggerLogConfigurationOutputReference extends c
   public get s3() {
     return this._s3;
   }
-  public putS3(value: WorkspaceswebSessionLoggerLogConfigurationS3[] | cdktf.IResolvable) {
+  public putS3(value: WorkspaceswebSessionLoggerLogConfigurationS3[] | cdktn.IResolvable) {
     this._s3.internalValue = value;
   }
   public resetS3() {
@@ -617,15 +617,15 @@ export class WorkspaceswebSessionLoggerLogConfigurationOutputReference extends c
   }
 }
 
-export class WorkspaceswebSessionLoggerLogConfigurationList extends cdktf.ComplexList {
-  public internalValue? : WorkspaceswebSessionLoggerLogConfiguration[] | cdktf.IResolvable
+export class WorkspaceswebSessionLoggerLogConfigurationList extends cdktn.ComplexList {
+  public internalValue? : WorkspaceswebSessionLoggerLogConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -640,7 +640,7 @@ export class WorkspaceswebSessionLoggerLogConfigurationList extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_session_logger aws_workspacesweb_session_logger}
 */
-export class WorkspaceswebSessionLogger extends cdktf.TerraformResource {
+export class WorkspaceswebSessionLogger extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -651,14 +651,14 @@ export class WorkspaceswebSessionLogger extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkspaceswebSessionLogger resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkspaceswebSessionLogger resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceswebSessionLogger to import
   * @param importFromId The id of the existing WorkspaceswebSessionLogger that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_session_logger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceswebSessionLogger to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_session_logger", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_session_logger", importId: importFromId, provider });
       }
 
   // ===========
@@ -792,7 +792,7 @@ export class WorkspaceswebSessionLogger extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -802,7 +802,7 @@ export class WorkspaceswebSessionLogger extends cdktf.TerraformResource {
   public get eventFilter() {
     return this._eventFilter;
   }
-  public putEventFilter(value: WorkspaceswebSessionLoggerEventFilter[] | cdktf.IResolvable) {
+  public putEventFilter(value: WorkspaceswebSessionLoggerEventFilter[] | cdktn.IResolvable) {
     this._eventFilter.internalValue = value;
   }
   public resetEventFilter() {
@@ -818,7 +818,7 @@ export class WorkspaceswebSessionLogger extends cdktf.TerraformResource {
   public get logConfiguration() {
     return this._logConfiguration;
   }
-  public putLogConfiguration(value: WorkspaceswebSessionLoggerLogConfiguration[] | cdktf.IResolvable) {
+  public putLogConfiguration(value: WorkspaceswebSessionLoggerLogConfiguration[] | cdktn.IResolvable) {
     this._logConfiguration.internalValue = value;
   }
   public resetLogConfiguration() {
@@ -835,56 +835,56 @@ export class WorkspaceswebSessionLogger extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_encryption_context: cdktf.hashMapper(cdktf.stringToTerraform)(this._additionalEncryptionContext),
-      customer_managed_key: cdktf.stringToTerraform(this._customerManagedKey),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      event_filter: cdktf.listMapper(workspaceswebSessionLoggerEventFilterToTerraform, true)(this._eventFilter.internalValue),
-      log_configuration: cdktf.listMapper(workspaceswebSessionLoggerLogConfigurationToTerraform, true)(this._logConfiguration.internalValue),
+      additional_encryption_context: cdktn.hashMapper(cdktn.stringToTerraform)(this._additionalEncryptionContext),
+      customer_managed_key: cdktn.stringToTerraform(this._customerManagedKey),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      event_filter: cdktn.listMapper(workspaceswebSessionLoggerEventFilterToTerraform, true)(this._eventFilter.internalValue),
+      log_configuration: cdktn.listMapper(workspaceswebSessionLoggerLogConfigurationToTerraform, true)(this._logConfiguration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_encryption_context: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._additionalEncryptionContext),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._additionalEncryptionContext),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       customer_managed_key: {
-        value: cdktf.stringToHclTerraform(this._customerManagedKey),
+        value: cdktn.stringToHclTerraform(this._customerManagedKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       event_filter: {
-        value: cdktf.listMapperHcl(workspaceswebSessionLoggerEventFilterToHclTerraform, true)(this._eventFilter.internalValue),
+        value: cdktn.listMapperHcl(workspaceswebSessionLoggerEventFilterToHclTerraform, true)(this._eventFilter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "WorkspaceswebSessionLoggerEventFilterList",
       },
       log_configuration: {
-        value: cdktf.listMapperHcl(workspaceswebSessionLoggerLogConfigurationToHclTerraform, true)(this._logConfiguration.internalValue),
+        value: cdktn.listMapperHcl(workspaceswebSessionLoggerLogConfigurationToHclTerraform, true)(this._logConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "WorkspaceswebSessionLoggerLogConfigurationList",

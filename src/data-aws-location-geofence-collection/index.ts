@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsLocationGeofenceCollectionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsLocationGeofenceCollectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/location_geofence_collection#collection_name DataAwsLocationGeofenceCollection#collection_name}
   */
@@ -42,7 +42,7 @@ export interface DataAwsLocationGeofenceCollectionConfig extends cdktf.Terraform
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/location_geofence_collection aws_location_geofence_collection}
 */
-export class DataAwsLocationGeofenceCollection extends cdktf.TerraformDataSource {
+export class DataAwsLocationGeofenceCollection extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class DataAwsLocationGeofenceCollection extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsLocationGeofenceCollection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsLocationGeofenceCollection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLocationGeofenceCollection to import
   * @param importFromId The id of the existing DataAwsLocationGeofenceCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/location_geofence_collection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLocationGeofenceCollection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_location_geofence_collection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_location_geofence_collection", importId: importFromId, provider });
       }
 
   // ===========
@@ -204,42 +204,42 @@ export class DataAwsLocationGeofenceCollection extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      collection_name: cdktf.stringToTerraform(this._collectionName),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      collection_name: cdktn.stringToTerraform(this._collectionName),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       collection_name: {
-        value: cdktf.stringToHclTerraform(this._collectionName),
+        value: cdktn.stringToHclTerraform(this._collectionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

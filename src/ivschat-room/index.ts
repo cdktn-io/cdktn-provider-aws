@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IvschatRoomConfig extends cdktf.TerraformMetaArguments {
+export interface IvschatRoomConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ivschat_room#id IvschatRoom#id}
   *
@@ -74,31 +74,31 @@ export interface IvschatRoomMessageReviewHandler {
 }
 
 export function ivschatRoomMessageReviewHandlerToTerraform(struct?: IvschatRoomMessageReviewHandlerOutputReference | IvschatRoomMessageReviewHandler): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fallback_result: cdktf.stringToTerraform(struct!.fallbackResult),
-    uri: cdktf.stringToTerraform(struct!.uri),
+    fallback_result: cdktn.stringToTerraform(struct!.fallbackResult),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function ivschatRoomMessageReviewHandlerToHclTerraform(struct?: IvschatRoomMessageReviewHandlerOutputReference | IvschatRoomMessageReviewHandler): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fallback_result: {
-      value: cdktf.stringToHclTerraform(struct!.fallbackResult),
+      value: cdktn.stringToHclTerraform(struct!.fallbackResult),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,14 +109,14 @@ export function ivschatRoomMessageReviewHandlerToHclTerraform(struct?: IvschatRo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IvschatRoomMessageReviewHandlerOutputReference extends cdktf.ComplexObject {
+export class IvschatRoomMessageReviewHandlerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -194,39 +194,39 @@ export interface IvschatRoomTimeouts {
   readonly update?: string;
 }
 
-export function ivschatRoomTimeoutsToTerraform(struct?: IvschatRoomTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ivschatRoomTimeoutsToTerraform(struct?: IvschatRoomTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function ivschatRoomTimeoutsToHclTerraform(struct?: IvschatRoomTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ivschatRoomTimeoutsToHclTerraform(struct?: IvschatRoomTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -237,19 +237,19 @@ export function ivschatRoomTimeoutsToHclTerraform(struct?: IvschatRoomTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IvschatRoomTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IvschatRoomTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IvschatRoomTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IvschatRoomTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -270,7 +270,7 @@ export class IvschatRoomTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IvschatRoomTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IvschatRoomTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -278,7 +278,7 @@ export class IvschatRoomTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -343,7 +343,7 @@ export class IvschatRoomTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ivschat_room aws_ivschat_room}
 */
-export class IvschatRoom extends cdktf.TerraformResource {
+export class IvschatRoom extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -354,14 +354,14 @@ export class IvschatRoom extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IvschatRoom resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IvschatRoom resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IvschatRoom to import
   * @param importFromId The id of the existing IvschatRoom that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ivschat_room#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IvschatRoom to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ivschat_room", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ivschat_room", importId: importFromId, provider });
       }
 
   // ===========
@@ -578,14 +578,14 @@ export class IvschatRoom extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      logging_configuration_identifiers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._loggingConfigurationIdentifiers),
-      maximum_message_length: cdktf.numberToTerraform(this._maximumMessageLength),
-      maximum_message_rate_per_second: cdktf.numberToTerraform(this._maximumMessageRatePerSecond),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      id: cdktn.stringToTerraform(this._id),
+      logging_configuration_identifiers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._loggingConfigurationIdentifiers),
+      maximum_message_length: cdktn.numberToTerraform(this._maximumMessageLength),
+      maximum_message_rate_per_second: cdktn.numberToTerraform(this._maximumMessageRatePerSecond),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       message_review_handler: ivschatRoomMessageReviewHandlerToTerraform(this._messageReviewHandler.internalValue),
       timeouts: ivschatRoomTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -594,49 +594,49 @@ export class IvschatRoom extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       logging_configuration_identifiers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._loggingConfigurationIdentifiers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._loggingConfigurationIdentifiers),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       maximum_message_length: {
-        value: cdktf.numberToHclTerraform(this._maximumMessageLength),
+        value: cdktn.numberToHclTerraform(this._maximumMessageLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       maximum_message_rate_per_second: {
-        value: cdktf.numberToHclTerraform(this._maximumMessageRatePerSecond),
+        value: cdktn.numberToHclTerraform(this._maximumMessageRatePerSecond),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

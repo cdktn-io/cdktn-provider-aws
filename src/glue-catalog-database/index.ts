@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlueCatalogDatabaseConfig extends cdktf.TerraformMetaArguments {
+export interface GlueCatalogDatabaseConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_database#catalog_id GlueCatalogDatabase#catalog_id}
   */
@@ -58,7 +58,7 @@ export interface GlueCatalogDatabaseConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_database#create_table_default_permission GlueCatalogDatabase#create_table_default_permission}
   */
-  readonly createTableDefaultPermission?: GlueCatalogDatabaseCreateTableDefaultPermission[] | cdktf.IResolvable;
+  readonly createTableDefaultPermission?: GlueCatalogDatabaseCreateTableDefaultPermission[] | cdktn.IResolvable;
   /**
   * federated_database block
   *
@@ -80,24 +80,24 @@ export interface GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal {
 }
 
 export function glueCatalogDatabaseCreateTableDefaultPermissionPrincipalToTerraform(struct?: GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference | GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_lake_principal_identifier: cdktf.stringToTerraform(struct!.dataLakePrincipalIdentifier),
+    data_lake_principal_identifier: cdktn.stringToTerraform(struct!.dataLakePrincipalIdentifier),
   }
 }
 
 
 export function glueCatalogDatabaseCreateTableDefaultPermissionPrincipalToHclTerraform(struct?: GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference | GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_lake_principal_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.dataLakePrincipalIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.dataLakePrincipalIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -108,14 +108,14 @@ export function glueCatalogDatabaseCreateTableDefaultPermissionPrincipalToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference extends cdktf.ComplexObject {
+export class GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -169,26 +169,26 @@ export interface GlueCatalogDatabaseCreateTableDefaultPermission {
   readonly principal?: GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal;
 }
 
-export function glueCatalogDatabaseCreateTableDefaultPermissionToTerraform(struct?: GlueCatalogDatabaseCreateTableDefaultPermission | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueCatalogDatabaseCreateTableDefaultPermissionToTerraform(struct?: GlueCatalogDatabaseCreateTableDefaultPermission | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.permissions),
+    permissions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.permissions),
     principal: glueCatalogDatabaseCreateTableDefaultPermissionPrincipalToTerraform(struct!.principal),
   }
 }
 
 
-export function glueCatalogDatabaseCreateTableDefaultPermissionToHclTerraform(struct?: GlueCatalogDatabaseCreateTableDefaultPermission | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueCatalogDatabaseCreateTableDefaultPermissionToHclTerraform(struct?: GlueCatalogDatabaseCreateTableDefaultPermission | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     permissions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.permissions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.permissions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -205,9 +205,9 @@ export function glueCatalogDatabaseCreateTableDefaultPermissionToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference extends cdktf.ComplexObject {
+export class GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -215,11 +215,11 @@ export class GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GlueCatalogDatabaseCreateTableDefaultPermission | cdktf.IResolvable | undefined {
+  public get internalValue(): GlueCatalogDatabaseCreateTableDefaultPermission | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -236,14 +236,14 @@ export class GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlueCatalogDatabaseCreateTableDefaultPermission | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlueCatalogDatabaseCreateTableDefaultPermission | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._permissions = undefined;
       this._principal.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -258,7 +258,7 @@ export class GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference exte
   // permissions - computed: false, optional: true, required: false
   private _permissions?: string[]; 
   public get permissions() {
-    return cdktf.Fn.tolist(this.getListAttribute('permissions'));
+    return cdktn.Fn.tolist(this.getListAttribute('permissions'));
   }
   public set permissions(value: string[]) {
     this._permissions = value;
@@ -288,15 +288,15 @@ export class GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference exte
   }
 }
 
-export class GlueCatalogDatabaseCreateTableDefaultPermissionList extends cdktf.ComplexList {
-  public internalValue? : GlueCatalogDatabaseCreateTableDefaultPermission[] | cdktf.IResolvable
+export class GlueCatalogDatabaseCreateTableDefaultPermissionList extends cdktn.ComplexList {
+  public internalValue? : GlueCatalogDatabaseCreateTableDefaultPermission[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -319,31 +319,31 @@ export interface GlueCatalogDatabaseFederatedDatabase {
 }
 
 export function glueCatalogDatabaseFederatedDatabaseToTerraform(struct?: GlueCatalogDatabaseFederatedDatabaseOutputReference | GlueCatalogDatabaseFederatedDatabase): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connection_name: cdktf.stringToTerraform(struct!.connectionName),
-    identifier: cdktf.stringToTerraform(struct!.identifier),
+    connection_name: cdktn.stringToTerraform(struct!.connectionName),
+    identifier: cdktn.stringToTerraform(struct!.identifier),
   }
 }
 
 
 export function glueCatalogDatabaseFederatedDatabaseToHclTerraform(struct?: GlueCatalogDatabaseFederatedDatabaseOutputReference | GlueCatalogDatabaseFederatedDatabase): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connection_name: {
-      value: cdktf.stringToHclTerraform(struct!.connectionName),
+      value: cdktn.stringToHclTerraform(struct!.connectionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identifier: {
-      value: cdktf.stringToHclTerraform(struct!.identifier),
+      value: cdktn.stringToHclTerraform(struct!.identifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -354,14 +354,14 @@ export function glueCatalogDatabaseFederatedDatabaseToHclTerraform(struct?: Glue
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueCatalogDatabaseFederatedDatabaseOutputReference extends cdktf.ComplexObject {
+export class GlueCatalogDatabaseFederatedDatabaseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -440,38 +440,38 @@ export interface GlueCatalogDatabaseTargetDatabase {
 }
 
 export function glueCatalogDatabaseTargetDatabaseToTerraform(struct?: GlueCatalogDatabaseTargetDatabaseOutputReference | GlueCatalogDatabaseTargetDatabase): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog_id: cdktf.stringToTerraform(struct!.catalogId),
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    region: cdktf.stringToTerraform(struct!.region),
+    catalog_id: cdktn.stringToTerraform(struct!.catalogId),
+    database_name: cdktn.stringToTerraform(struct!.databaseName),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
 export function glueCatalogDatabaseTargetDatabaseToHclTerraform(struct?: GlueCatalogDatabaseTargetDatabaseOutputReference | GlueCatalogDatabaseTargetDatabase): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog_id: {
-      value: cdktf.stringToHclTerraform(struct!.catalogId),
+      value: cdktn.stringToHclTerraform(struct!.catalogId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      value: cdktn.stringToHclTerraform(struct!.databaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -482,14 +482,14 @@ export function glueCatalogDatabaseTargetDatabaseToHclTerraform(struct?: GlueCat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueCatalogDatabaseTargetDatabaseOutputReference extends cdktf.ComplexObject {
+export class GlueCatalogDatabaseTargetDatabaseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -572,7 +572,7 @@ export class GlueCatalogDatabaseTargetDatabaseOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_database aws_glue_catalog_database}
 */
-export class GlueCatalogDatabase extends cdktf.TerraformResource {
+export class GlueCatalogDatabase extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -583,14 +583,14 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlueCatalogDatabase resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlueCatalogDatabase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlueCatalogDatabase to import
   * @param importFromId The id of the existing GlueCatalogDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlueCatalogDatabase to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_catalog_database", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_catalog_database", importId: importFromId, provider });
       }
 
   // ===========
@@ -789,7 +789,7 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
   public get createTableDefaultPermission() {
     return this._createTableDefaultPermission;
   }
-  public putCreateTableDefaultPermission(value: GlueCatalogDatabaseCreateTableDefaultPermission[] | cdktf.IResolvable) {
+  public putCreateTableDefaultPermission(value: GlueCatalogDatabaseCreateTableDefaultPermission[] | cdktn.IResolvable) {
     this._createTableDefaultPermission.internalValue = value;
   }
   public resetCreateTableDefaultPermission() {
@@ -838,16 +838,16 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog_id: cdktf.stringToTerraform(this._catalogId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      location_uri: cdktf.stringToTerraform(this._locationUri),
-      name: cdktf.stringToTerraform(this._name),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      create_table_default_permission: cdktf.listMapper(glueCatalogDatabaseCreateTableDefaultPermissionToTerraform, true)(this._createTableDefaultPermission.internalValue),
+      catalog_id: cdktn.stringToTerraform(this._catalogId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      location_uri: cdktn.stringToTerraform(this._locationUri),
+      name: cdktn.stringToTerraform(this._name),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      create_table_default_permission: cdktn.listMapper(glueCatalogDatabaseCreateTableDefaultPermissionToTerraform, true)(this._createTableDefaultPermission.internalValue),
       federated_database: glueCatalogDatabaseFederatedDatabaseToTerraform(this._federatedDatabase.internalValue),
       target_database: glueCatalogDatabaseTargetDatabaseToTerraform(this._targetDatabase.internalValue),
     };
@@ -856,61 +856,61 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       catalog_id: {
-        value: cdktf.stringToHclTerraform(this._catalogId),
+        value: cdktn.stringToHclTerraform(this._catalogId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location_uri: {
-        value: cdktf.stringToHclTerraform(this._locationUri),
+        value: cdktn.stringToHclTerraform(this._locationUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       create_table_default_permission: {
-        value: cdktf.listMapperHcl(glueCatalogDatabaseCreateTableDefaultPermissionToHclTerraform, true)(this._createTableDefaultPermission.internalValue),
+        value: cdktn.listMapperHcl(glueCatalogDatabaseCreateTableDefaultPermissionToHclTerraform, true)(this._createTableDefaultPermission.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "GlueCatalogDatabaseCreateTableDefaultPermissionList",

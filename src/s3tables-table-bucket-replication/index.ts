@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3TablesTableBucketReplicationConfig extends cdktf.TerraformMetaArguments {
+export interface S3TablesTableBucketReplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -31,7 +31,7 @@ export interface S3TablesTableBucketReplicationConfig extends cdktf.TerraformMet
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3tables_table_bucket_replication#rule S3TablesTableBucketReplication#rule}
   */
-  readonly rule?: S3TablesTableBucketReplicationRule[] | cdktf.IResolvable;
+  readonly rule?: S3TablesTableBucketReplicationRule[] | cdktn.IResolvable;
 }
 export interface S3TablesTableBucketReplicationRuleDestination {
   /**
@@ -40,25 +40,25 @@ export interface S3TablesTableBucketReplicationRuleDestination {
   readonly destinationTableBucketArn: string;
 }
 
-export function s3TablesTableBucketReplicationRuleDestinationToTerraform(struct?: S3TablesTableBucketReplicationRuleDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3TablesTableBucketReplicationRuleDestinationToTerraform(struct?: S3TablesTableBucketReplicationRuleDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination_table_bucket_arn: cdktf.stringToTerraform(struct!.destinationTableBucketArn),
+    destination_table_bucket_arn: cdktn.stringToTerraform(struct!.destinationTableBucketArn),
   }
 }
 
 
-export function s3TablesTableBucketReplicationRuleDestinationToHclTerraform(struct?: S3TablesTableBucketReplicationRuleDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3TablesTableBucketReplicationRuleDestinationToHclTerraform(struct?: S3TablesTableBucketReplicationRuleDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination_table_bucket_arn: {
-      value: cdktf.stringToHclTerraform(struct!.destinationTableBucketArn),
+      value: cdktn.stringToHclTerraform(struct!.destinationTableBucketArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -69,9 +69,9 @@ export function s3TablesTableBucketReplicationRuleDestinationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3TablesTableBucketReplicationRuleDestinationOutputReference extends cdktf.ComplexObject {
+export class S3TablesTableBucketReplicationRuleDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -79,11 +79,11 @@ export class S3TablesTableBucketReplicationRuleDestinationOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3TablesTableBucketReplicationRuleDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): S3TablesTableBucketReplicationRuleDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -96,13 +96,13 @@ export class S3TablesTableBucketReplicationRuleDestinationOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3TablesTableBucketReplicationRuleDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3TablesTableBucketReplicationRuleDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._destinationTableBucketArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -127,15 +127,15 @@ export class S3TablesTableBucketReplicationRuleDestinationOutputReference extend
   }
 }
 
-export class S3TablesTableBucketReplicationRuleDestinationList extends cdktf.ComplexList {
-  public internalValue? : S3TablesTableBucketReplicationRuleDestination[] | cdktf.IResolvable
+export class S3TablesTableBucketReplicationRuleDestinationList extends cdktn.ComplexList {
+  public internalValue? : S3TablesTableBucketReplicationRuleDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -152,28 +152,28 @@ export interface S3TablesTableBucketReplicationRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3tables_table_bucket_replication#destination S3TablesTableBucketReplication#destination}
   */
-  readonly destination?: S3TablesTableBucketReplicationRuleDestination[] | cdktf.IResolvable;
+  readonly destination?: S3TablesTableBucketReplicationRuleDestination[] | cdktn.IResolvable;
 }
 
-export function s3TablesTableBucketReplicationRuleToTerraform(struct?: S3TablesTableBucketReplicationRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3TablesTableBucketReplicationRuleToTerraform(struct?: S3TablesTableBucketReplicationRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.listMapper(s3TablesTableBucketReplicationRuleDestinationToTerraform, true)(struct!.destination),
+    destination: cdktn.listMapper(s3TablesTableBucketReplicationRuleDestinationToTerraform, true)(struct!.destination),
   }
 }
 
 
-export function s3TablesTableBucketReplicationRuleToHclTerraform(struct?: S3TablesTableBucketReplicationRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3TablesTableBucketReplicationRuleToHclTerraform(struct?: S3TablesTableBucketReplicationRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.listMapperHcl(s3TablesTableBucketReplicationRuleDestinationToHclTerraform, true)(struct!.destination),
+      value: cdktn.listMapperHcl(s3TablesTableBucketReplicationRuleDestinationToHclTerraform, true)(struct!.destination),
       isBlock: true,
       type: "set",
       storageClassType: "S3TablesTableBucketReplicationRuleDestinationList",
@@ -184,9 +184,9 @@ export function s3TablesTableBucketReplicationRuleToHclTerraform(struct?: S3Tabl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3TablesTableBucketReplicationRuleOutputReference extends cdktf.ComplexObject {
+export class S3TablesTableBucketReplicationRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -194,11 +194,11 @@ export class S3TablesTableBucketReplicationRuleOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3TablesTableBucketReplicationRule | cdktf.IResolvable | undefined {
+  public get internalValue(): S3TablesTableBucketReplicationRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -211,13 +211,13 @@ export class S3TablesTableBucketReplicationRuleOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3TablesTableBucketReplicationRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3TablesTableBucketReplicationRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._destination.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -233,7 +233,7 @@ export class S3TablesTableBucketReplicationRuleOutputReference extends cdktf.Com
   public get destination() {
     return this._destination;
   }
-  public putDestination(value: S3TablesTableBucketReplicationRuleDestination[] | cdktf.IResolvable) {
+  public putDestination(value: S3TablesTableBucketReplicationRuleDestination[] | cdktn.IResolvable) {
     this._destination.internalValue = value;
   }
   public resetDestination() {
@@ -245,15 +245,15 @@ export class S3TablesTableBucketReplicationRuleOutputReference extends cdktf.Com
   }
 }
 
-export class S3TablesTableBucketReplicationRuleList extends cdktf.ComplexList {
-  public internalValue? : S3TablesTableBucketReplicationRule[] | cdktf.IResolvable
+export class S3TablesTableBucketReplicationRuleList extends cdktn.ComplexList {
+  public internalValue? : S3TablesTableBucketReplicationRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -268,7 +268,7 @@ export class S3TablesTableBucketReplicationRuleList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3tables_table_bucket_replication aws_s3tables_table_bucket_replication}
 */
-export class S3TablesTableBucketReplication extends cdktf.TerraformResource {
+export class S3TablesTableBucketReplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -279,14 +279,14 @@ export class S3TablesTableBucketReplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3TablesTableBucketReplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3TablesTableBucketReplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3TablesTableBucketReplication to import
   * @param importFromId The id of the existing S3TablesTableBucketReplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3tables_table_bucket_replication#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3TablesTableBucketReplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3tables_table_bucket_replication", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3tables_table_bucket_replication", importId: importFromId, provider });
       }
 
   // ===========
@@ -378,7 +378,7 @@ export class S3TablesTableBucketReplication extends cdktf.TerraformResource {
   public get rule() {
     return this._rule;
   }
-  public putRule(value: S3TablesTableBucketReplicationRule[] | cdktf.IResolvable) {
+  public putRule(value: S3TablesTableBucketReplicationRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -395,35 +395,35 @@ export class S3TablesTableBucketReplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      role: cdktf.stringToTerraform(this._role),
-      table_bucket_arn: cdktf.stringToTerraform(this._tableBucketArn),
-      rule: cdktf.listMapper(s3TablesTableBucketReplicationRuleToTerraform, true)(this._rule.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      role: cdktn.stringToTerraform(this._role),
+      table_bucket_arn: cdktn.stringToTerraform(this._tableBucketArn),
+      rule: cdktn.listMapper(s3TablesTableBucketReplicationRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_bucket_arn: {
-        value: cdktf.stringToHclTerraform(this._tableBucketArn),
+        value: cdktn.stringToHclTerraform(this._tableBucketArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule: {
-        value: cdktf.listMapperHcl(s3TablesTableBucketReplicationRuleToHclTerraform, true)(this._rule.internalValue),
+        value: cdktn.listMapperHcl(s3TablesTableBucketReplicationRuleToHclTerraform, true)(this._rule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "S3TablesTableBucketReplicationRuleList",

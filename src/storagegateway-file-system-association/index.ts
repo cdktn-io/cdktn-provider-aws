@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StoragegatewayFileSystemAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface StoragegatewayFileSystemAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_file_system_association#audit_destination_arn StoragegatewayFileSystemAssociation#audit_destination_arn}
   */
@@ -74,24 +74,24 @@ export interface StoragegatewayFileSystemAssociationCacheAttributes {
 }
 
 export function storagegatewayFileSystemAssociationCacheAttributesToTerraform(struct?: StoragegatewayFileSystemAssociationCacheAttributesOutputReference | StoragegatewayFileSystemAssociationCacheAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cache_stale_timeout_in_seconds: cdktf.numberToTerraform(struct!.cacheStaleTimeoutInSeconds),
+    cache_stale_timeout_in_seconds: cdktn.numberToTerraform(struct!.cacheStaleTimeoutInSeconds),
   }
 }
 
 
 export function storagegatewayFileSystemAssociationCacheAttributesToHclTerraform(struct?: StoragegatewayFileSystemAssociationCacheAttributesOutputReference | StoragegatewayFileSystemAssociationCacheAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cache_stale_timeout_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.cacheStaleTimeoutInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.cacheStaleTimeoutInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -102,14 +102,14 @@ export function storagegatewayFileSystemAssociationCacheAttributesToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StoragegatewayFileSystemAssociationCacheAttributesOutputReference extends cdktf.ComplexObject {
+export class StoragegatewayFileSystemAssociationCacheAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -165,39 +165,39 @@ export interface StoragegatewayFileSystemAssociationTimeouts {
   readonly update?: string;
 }
 
-export function storagegatewayFileSystemAssociationTimeoutsToTerraform(struct?: StoragegatewayFileSystemAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storagegatewayFileSystemAssociationTimeoutsToTerraform(struct?: StoragegatewayFileSystemAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function storagegatewayFileSystemAssociationTimeoutsToHclTerraform(struct?: StoragegatewayFileSystemAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storagegatewayFileSystemAssociationTimeoutsToHclTerraform(struct?: StoragegatewayFileSystemAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -208,19 +208,19 @@ export function storagegatewayFileSystemAssociationTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StoragegatewayFileSystemAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StoragegatewayFileSystemAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StoragegatewayFileSystemAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StoragegatewayFileSystemAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -241,7 +241,7 @@ export class StoragegatewayFileSystemAssociationTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StoragegatewayFileSystemAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StoragegatewayFileSystemAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -249,7 +249,7 @@ export class StoragegatewayFileSystemAssociationTimeoutsOutputReference extends 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -314,7 +314,7 @@ export class StoragegatewayFileSystemAssociationTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_file_system_association aws_storagegateway_file_system_association}
 */
-export class StoragegatewayFileSystemAssociation extends cdktf.TerraformResource {
+export class StoragegatewayFileSystemAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -325,14 +325,14 @@ export class StoragegatewayFileSystemAssociation extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StoragegatewayFileSystemAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StoragegatewayFileSystemAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StoragegatewayFileSystemAssociation to import
   * @param importFromId The id of the existing StoragegatewayFileSystemAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_file_system_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StoragegatewayFileSystemAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_file_system_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_file_system_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -554,15 +554,15 @@ export class StoragegatewayFileSystemAssociation extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      audit_destination_arn: cdktf.stringToTerraform(this._auditDestinationArn),
-      gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
-      id: cdktf.stringToTerraform(this._id),
-      location_arn: cdktf.stringToTerraform(this._locationArn),
-      password: cdktf.stringToTerraform(this._password),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      username: cdktf.stringToTerraform(this._username),
+      audit_destination_arn: cdktn.stringToTerraform(this._auditDestinationArn),
+      gateway_arn: cdktn.stringToTerraform(this._gatewayArn),
+      id: cdktn.stringToTerraform(this._id),
+      location_arn: cdktn.stringToTerraform(this._locationArn),
+      password: cdktn.stringToTerraform(this._password),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      username: cdktn.stringToTerraform(this._username),
       cache_attributes: storagegatewayFileSystemAssociationCacheAttributesToTerraform(this._cacheAttributes.internalValue),
       timeouts: storagegatewayFileSystemAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -571,55 +571,55 @@ export class StoragegatewayFileSystemAssociation extends cdktf.TerraformResource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       audit_destination_arn: {
-        value: cdktf.stringToHclTerraform(this._auditDestinationArn),
+        value: cdktn.stringToHclTerraform(this._auditDestinationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_arn: {
-        value: cdktf.stringToHclTerraform(this._gatewayArn),
+        value: cdktn.stringToHclTerraform(this._gatewayArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location_arn: {
-        value: cdktf.stringToHclTerraform(this._locationArn),
+        value: cdktn.stringToHclTerraform(this._locationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       username: {
-        value: cdktf.stringToHclTerraform(this._username),
+        value: cdktn.stringToHclTerraform(this._username),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

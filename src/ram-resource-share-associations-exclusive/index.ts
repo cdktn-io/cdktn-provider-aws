@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RamResourceShareAssociationsExclusiveConfig extends cdktf.TerraformMetaArguments {
+export interface RamResourceShareAssociationsExclusiveConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ram_resource_share_associations_exclusive#principals RamResourceShareAssociationsExclusive#principals}
   */
@@ -39,7 +39,7 @@ export interface RamResourceShareAssociationsExclusiveConfig extends cdktf.Terra
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ram_resource_share_associations_exclusive aws_ram_resource_share_associations_exclusive}
 */
-export class RamResourceShareAssociationsExclusive extends cdktf.TerraformResource {
+export class RamResourceShareAssociationsExclusive extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -50,14 +50,14 @@ export class RamResourceShareAssociationsExclusive extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RamResourceShareAssociationsExclusive resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RamResourceShareAssociationsExclusive resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RamResourceShareAssociationsExclusive to import
   * @param importFromId The id of the existing RamResourceShareAssociationsExclusive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ram_resource_share_associations_exclusive#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RamResourceShareAssociationsExclusive to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ram_resource_share_associations_exclusive", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ram_resource_share_associations_exclusive", importId: importFromId, provider });
       }
 
   // ===========
@@ -101,7 +101,7 @@ export class RamResourceShareAssociationsExclusive extends cdktf.TerraformResour
   // principals - computed: false, optional: true, required: false
   private _principals?: string[]; 
   public get principals() {
-    return cdktf.Fn.tolist(this.getListAttribute('principals'));
+    return cdktn.Fn.tolist(this.getListAttribute('principals'));
   }
   public set principals(value: string[]) {
     this._principals = value;
@@ -133,7 +133,7 @@ export class RamResourceShareAssociationsExclusive extends cdktf.TerraformResour
   // resource_arns - computed: false, optional: true, required: false
   private _resourceArns?: string[]; 
   public get resourceArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('resource_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('resource_arns'));
   }
   public set resourceArns(value: string[]) {
     this._resourceArns = value;
@@ -162,7 +162,7 @@ export class RamResourceShareAssociationsExclusive extends cdktf.TerraformResour
   // sources - computed: false, optional: true, required: false
   private _sources?: string[]; 
   public get sources() {
-    return cdktf.Fn.tolist(this.getListAttribute('sources'));
+    return cdktn.Fn.tolist(this.getListAttribute('sources'));
   }
   public set sources(value: string[]) {
     this._sources = value;
@@ -181,42 +181,42 @@ export class RamResourceShareAssociationsExclusive extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      principals: cdktf.listMapper(cdktf.stringToTerraform, false)(this._principals),
-      region: cdktf.stringToTerraform(this._region),
-      resource_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourceArns),
-      resource_share_arn: cdktf.stringToTerraform(this._resourceShareArn),
-      sources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sources),
+      principals: cdktn.listMapper(cdktn.stringToTerraform, false)(this._principals),
+      region: cdktn.stringToTerraform(this._region),
+      resource_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._resourceArns),
+      resource_share_arn: cdktn.stringToTerraform(this._resourceShareArn),
+      sources: cdktn.listMapper(cdktn.stringToTerraform, false)(this._sources),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       principals: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._principals),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._principals),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resourceArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._resourceArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       resource_share_arn: {
-        value: cdktf.stringToHclTerraform(this._resourceShareArn),
+        value: cdktn.stringToHclTerraform(this._resourceShareArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sources: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sources),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._sources),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

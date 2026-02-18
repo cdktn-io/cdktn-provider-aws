@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudwatchLogSubscriptionFilterConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchLogSubscriptionFilterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_subscription_filter#apply_on_transformed_logs CloudwatchLogSubscriptionFilter#apply_on_transformed_logs}
   */
-  readonly applyOnTransformedLogs?: boolean | cdktf.IResolvable;
+  readonly applyOnTransformedLogs?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_subscription_filter#destination_arn CloudwatchLogSubscriptionFilter#destination_arn}
   */
@@ -62,7 +62,7 @@ export interface CloudwatchLogSubscriptionFilterConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_subscription_filter aws_cloudwatch_log_subscription_filter}
 */
-export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
+export class CloudwatchLogSubscriptionFilter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -73,14 +73,14 @@ export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudwatchLogSubscriptionFilter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudwatchLogSubscriptionFilter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchLogSubscriptionFilter to import
   * @param importFromId The id of the existing CloudwatchLogSubscriptionFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_subscription_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchLogSubscriptionFilter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_subscription_filter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_subscription_filter", importId: importFromId, provider });
       }
 
   // ===========
@@ -127,11 +127,11 @@ export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
   // ==========
 
   // apply_on_transformed_logs - computed: true, optional: true, required: false
-  private _applyOnTransformedLogs?: boolean | cdktf.IResolvable; 
+  private _applyOnTransformedLogs?: boolean | cdktn.IResolvable; 
   public get applyOnTransformedLogs() {
     return this.getBooleanAttribute('apply_on_transformed_logs');
   }
-  public set applyOnTransformedLogs(value: boolean | cdktf.IResolvable) {
+  public set applyOnTransformedLogs(value: boolean | cdktn.IResolvable) {
     this._applyOnTransformedLogs = value;
   }
   public resetApplyOnTransformedLogs() {
@@ -174,7 +174,7 @@ export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
   // emit_system_fields - computed: false, optional: true, required: false
   private _emitSystemFields?: string[]; 
   public get emitSystemFields() {
-    return cdktf.Fn.tolist(this.getListAttribute('emit_system_fields'));
+    return cdktn.Fn.tolist(this.getListAttribute('emit_system_fields'));
   }
   public set emitSystemFields(value: string[]) {
     this._emitSystemFields = value;
@@ -280,77 +280,77 @@ export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_on_transformed_logs: cdktf.booleanToTerraform(this._applyOnTransformedLogs),
-      destination_arn: cdktf.stringToTerraform(this._destinationArn),
-      distribution: cdktf.stringToTerraform(this._distribution),
-      emit_system_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(this._emitSystemFields),
-      filter_pattern: cdktf.stringToTerraform(this._filterPattern),
-      id: cdktf.stringToTerraform(this._id),
-      log_group_name: cdktf.stringToTerraform(this._logGroupName),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
+      apply_on_transformed_logs: cdktn.booleanToTerraform(this._applyOnTransformedLogs),
+      destination_arn: cdktn.stringToTerraform(this._destinationArn),
+      distribution: cdktn.stringToTerraform(this._distribution),
+      emit_system_fields: cdktn.listMapper(cdktn.stringToTerraform, false)(this._emitSystemFields),
+      filter_pattern: cdktn.stringToTerraform(this._filterPattern),
+      id: cdktn.stringToTerraform(this._id),
+      log_group_name: cdktn.stringToTerraform(this._logGroupName),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       apply_on_transformed_logs: {
-        value: cdktf.booleanToHclTerraform(this._applyOnTransformedLogs),
+        value: cdktn.booleanToHclTerraform(this._applyOnTransformedLogs),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       destination_arn: {
-        value: cdktf.stringToHclTerraform(this._destinationArn),
+        value: cdktn.stringToHclTerraform(this._destinationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       distribution: {
-        value: cdktf.stringToHclTerraform(this._distribution),
+        value: cdktn.stringToHclTerraform(this._distribution),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       emit_system_fields: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._emitSystemFields),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._emitSystemFields),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       filter_pattern: {
-        value: cdktf.stringToHclTerraform(this._filterPattern),
+        value: cdktn.stringToHclTerraform(this._filterPattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_group_name: {
-        value: cdktf.stringToHclTerraform(this._logGroupName),
+        value: cdktn.stringToHclTerraform(this._logGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

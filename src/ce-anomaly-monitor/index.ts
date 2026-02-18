@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CeAnomalyMonitorConfig extends cdktf.TerraformMetaArguments {
+export interface CeAnomalyMonitorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_anomaly_monitor#id CeAnomalyMonitor#id}
   *
@@ -48,7 +48,7 @@ export interface CeAnomalyMonitorConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_anomaly_monitor aws_ce_anomaly_monitor}
 */
-export class CeAnomalyMonitor extends cdktf.TerraformResource {
+export class CeAnomalyMonitor extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class CeAnomalyMonitor extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CeAnomalyMonitor resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CeAnomalyMonitor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CeAnomalyMonitor to import
   * @param importFromId The id of the existing CeAnomalyMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_anomaly_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CeAnomalyMonitor to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ce_anomaly_monitor", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ce_anomaly_monitor", importId: importFromId, provider });
       }
 
   // ===========
@@ -226,56 +226,56 @@ export class CeAnomalyMonitor extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      monitor_dimension: cdktf.stringToTerraform(this._monitorDimension),
-      monitor_specification: cdktf.stringToTerraform(this._monitorSpecification),
-      monitor_type: cdktf.stringToTerraform(this._monitorType),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      id: cdktn.stringToTerraform(this._id),
+      monitor_dimension: cdktn.stringToTerraform(this._monitorDimension),
+      monitor_specification: cdktn.stringToTerraform(this._monitorSpecification),
+      monitor_type: cdktn.stringToTerraform(this._monitorType),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       monitor_dimension: {
-        value: cdktf.stringToHclTerraform(this._monitorDimension),
+        value: cdktn.stringToHclTerraform(this._monitorDimension),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       monitor_specification: {
-        value: cdktf.stringToHclTerraform(this._monitorSpecification),
+        value: cdktn.stringToHclTerraform(this._monitorSpecification),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       monitor_type: {
-        value: cdktf.stringToHclTerraform(this._monitorType),
+        value: cdktn.stringToHclTerraform(this._monitorType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

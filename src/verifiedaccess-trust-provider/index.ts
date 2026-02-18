@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VerifiedaccessTrustProviderConfig extends cdktf.TerraformMetaArguments {
+export interface VerifiedaccessTrustProviderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_trust_provider#description VerifiedaccessTrustProvider#description}
   */
@@ -92,24 +92,24 @@ export interface VerifiedaccessTrustProviderDeviceOptions {
 }
 
 export function verifiedaccessTrustProviderDeviceOptionsToTerraform(struct?: VerifiedaccessTrustProviderDeviceOptionsOutputReference | VerifiedaccessTrustProviderDeviceOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
   }
 }
 
 
 export function verifiedaccessTrustProviderDeviceOptionsToHclTerraform(struct?: VerifiedaccessTrustProviderDeviceOptionsOutputReference | VerifiedaccessTrustProviderDeviceOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,14 +120,14 @@ export function verifiedaccessTrustProviderDeviceOptionsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessTrustProviderDeviceOptionsOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessTrustProviderDeviceOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -204,73 +204,73 @@ export interface VerifiedaccessTrustProviderNativeApplicationOidcOptions {
 }
 
 export function verifiedaccessTrustProviderNativeApplicationOidcOptionsToTerraform(struct?: VerifiedaccessTrustProviderNativeApplicationOidcOptionsOutputReference | VerifiedaccessTrustProviderNativeApplicationOidcOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authorization_endpoint: cdktf.stringToTerraform(struct!.authorizationEndpoint),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
-    public_signing_key_endpoint: cdktf.stringToTerraform(struct!.publicSigningKeyEndpoint),
-    scope: cdktf.stringToTerraform(struct!.scope),
-    token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
-    user_info_endpoint: cdktf.stringToTerraform(struct!.userInfoEndpoint),
+    authorization_endpoint: cdktn.stringToTerraform(struct!.authorizationEndpoint),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
+    public_signing_key_endpoint: cdktn.stringToTerraform(struct!.publicSigningKeyEndpoint),
+    scope: cdktn.stringToTerraform(struct!.scope),
+    token_endpoint: cdktn.stringToTerraform(struct!.tokenEndpoint),
+    user_info_endpoint: cdktn.stringToTerraform(struct!.userInfoEndpoint),
   }
 }
 
 
 export function verifiedaccessTrustProviderNativeApplicationOidcOptionsToHclTerraform(struct?: VerifiedaccessTrustProviderNativeApplicationOidcOptionsOutputReference | VerifiedaccessTrustProviderNativeApplicationOidcOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authorization_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.authorizationEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.authorizationEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     public_signing_key_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.publicSigningKeyEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.publicSigningKeyEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.tokenEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.tokenEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_info_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.userInfoEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.userInfoEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -281,14 +281,14 @@ export function verifiedaccessTrustProviderNativeApplicationOidcOptionsToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessTrustProviderNativeApplicationOidcOptionsOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessTrustProviderNativeApplicationOidcOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -512,66 +512,66 @@ export interface VerifiedaccessTrustProviderOidcOptions {
 }
 
 export function verifiedaccessTrustProviderOidcOptionsToTerraform(struct?: VerifiedaccessTrustProviderOidcOptionsOutputReference | VerifiedaccessTrustProviderOidcOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authorization_endpoint: cdktf.stringToTerraform(struct!.authorizationEndpoint),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
-    scope: cdktf.stringToTerraform(struct!.scope),
-    token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
-    user_info_endpoint: cdktf.stringToTerraform(struct!.userInfoEndpoint),
+    authorization_endpoint: cdktn.stringToTerraform(struct!.authorizationEndpoint),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
+    scope: cdktn.stringToTerraform(struct!.scope),
+    token_endpoint: cdktn.stringToTerraform(struct!.tokenEndpoint),
+    user_info_endpoint: cdktn.stringToTerraform(struct!.userInfoEndpoint),
   }
 }
 
 
 export function verifiedaccessTrustProviderOidcOptionsToHclTerraform(struct?: VerifiedaccessTrustProviderOidcOptionsOutputReference | VerifiedaccessTrustProviderOidcOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authorization_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.authorizationEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.authorizationEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.tokenEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.tokenEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_info_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.userInfoEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.userInfoEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -582,14 +582,14 @@ export function verifiedaccessTrustProviderOidcOptionsToHclTerraform(struct?: Ve
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessTrustProviderOidcOptionsOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessTrustProviderOidcOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -763,7 +763,7 @@ export interface VerifiedaccessTrustProviderSseSpecification {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_trust_provider#customer_managed_key_enabled VerifiedaccessTrustProvider#customer_managed_key_enabled}
   */
-  readonly customerManagedKeyEnabled?: boolean | cdktf.IResolvable;
+  readonly customerManagedKeyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_trust_provider#kms_key_arn VerifiedaccessTrustProvider#kms_key_arn}
   */
@@ -771,31 +771,31 @@ export interface VerifiedaccessTrustProviderSseSpecification {
 }
 
 export function verifiedaccessTrustProviderSseSpecificationToTerraform(struct?: VerifiedaccessTrustProviderSseSpecificationOutputReference | VerifiedaccessTrustProviderSseSpecification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    customer_managed_key_enabled: cdktf.booleanToTerraform(struct!.customerManagedKeyEnabled),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+    customer_managed_key_enabled: cdktn.booleanToTerraform(struct!.customerManagedKeyEnabled),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
   }
 }
 
 
 export function verifiedaccessTrustProviderSseSpecificationToHclTerraform(struct?: VerifiedaccessTrustProviderSseSpecificationOutputReference | VerifiedaccessTrustProviderSseSpecification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     customer_managed_key_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.customerManagedKeyEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.customerManagedKeyEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -806,14 +806,14 @@ export function verifiedaccessTrustProviderSseSpecificationToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessTrustProviderSseSpecificationOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessTrustProviderSseSpecificationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -845,11 +845,11 @@ export class VerifiedaccessTrustProviderSseSpecificationOutputReference extends 
   }
 
   // customer_managed_key_enabled - computed: false, optional: true, required: false
-  private _customerManagedKeyEnabled?: boolean | cdktf.IResolvable; 
+  private _customerManagedKeyEnabled?: boolean | cdktn.IResolvable; 
   public get customerManagedKeyEnabled() {
     return this.getBooleanAttribute('customer_managed_key_enabled');
   }
-  public set customerManagedKeyEnabled(value: boolean | cdktf.IResolvable) {
+  public set customerManagedKeyEnabled(value: boolean | cdktn.IResolvable) {
     this._customerManagedKeyEnabled = value;
   }
   public resetCustomerManagedKeyEnabled() {
@@ -891,39 +891,39 @@ export interface VerifiedaccessTrustProviderTimeouts {
   readonly update?: string;
 }
 
-export function verifiedaccessTrustProviderTimeoutsToTerraform(struct?: VerifiedaccessTrustProviderTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedaccessTrustProviderTimeoutsToTerraform(struct?: VerifiedaccessTrustProviderTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function verifiedaccessTrustProviderTimeoutsToHclTerraform(struct?: VerifiedaccessTrustProviderTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedaccessTrustProviderTimeoutsToHclTerraform(struct?: VerifiedaccessTrustProviderTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -934,19 +934,19 @@ export function verifiedaccessTrustProviderTimeoutsToHclTerraform(struct?: Verif
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessTrustProviderTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessTrustProviderTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VerifiedaccessTrustProviderTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedaccessTrustProviderTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -967,7 +967,7 @@ export class VerifiedaccessTrustProviderTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedaccessTrustProviderTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedaccessTrustProviderTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -975,7 +975,7 @@ export class VerifiedaccessTrustProviderTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1040,7 +1040,7 @@ export class VerifiedaccessTrustProviderTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider}
 */
-export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
+export class VerifiedaccessTrustProvider extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1051,14 +1051,14 @@ export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VerifiedaccessTrustProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VerifiedaccessTrustProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedaccessTrustProvider to import
   * @param importFromId The id of the existing VerifiedaccessTrustProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_trust_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedaccessTrustProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedaccess_trust_provider", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedaccess_trust_provider", importId: importFromId, provider });
       }
 
   // ===========
@@ -1332,15 +1332,15 @@ export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      device_trust_provider_type: cdktf.stringToTerraform(this._deviceTrustProviderType),
-      id: cdktf.stringToTerraform(this._id),
-      policy_reference_name: cdktf.stringToTerraform(this._policyReferenceName),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      trust_provider_type: cdktf.stringToTerraform(this._trustProviderType),
-      user_trust_provider_type: cdktf.stringToTerraform(this._userTrustProviderType),
+      description: cdktn.stringToTerraform(this._description),
+      device_trust_provider_type: cdktn.stringToTerraform(this._deviceTrustProviderType),
+      id: cdktn.stringToTerraform(this._id),
+      policy_reference_name: cdktn.stringToTerraform(this._policyReferenceName),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      trust_provider_type: cdktn.stringToTerraform(this._trustProviderType),
+      user_trust_provider_type: cdktn.stringToTerraform(this._userTrustProviderType),
       device_options: verifiedaccessTrustProviderDeviceOptionsToTerraform(this._deviceOptions.internalValue),
       native_application_oidc_options: verifiedaccessTrustProviderNativeApplicationOidcOptionsToTerraform(this._nativeApplicationOidcOptions.internalValue),
       oidc_options: verifiedaccessTrustProviderOidcOptionsToTerraform(this._oidcOptions.internalValue),
@@ -1352,55 +1352,55 @@ export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       device_trust_provider_type: {
-        value: cdktf.stringToHclTerraform(this._deviceTrustProviderType),
+        value: cdktn.stringToHclTerraform(this._deviceTrustProviderType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_reference_name: {
-        value: cdktf.stringToHclTerraform(this._policyReferenceName),
+        value: cdktn.stringToHclTerraform(this._policyReferenceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       trust_provider_type: {
-        value: cdktf.stringToHclTerraform(this._trustProviderType),
+        value: cdktn.stringToHclTerraform(this._trustProviderType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_trust_provider_type: {
-        value: cdktf.stringToHclTerraform(this._userTrustProviderType),
+        value: cdktn.stringToHclTerraform(this._userTrustProviderType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlueTriggerConfig extends cdktf.TerraformMetaArguments {
+export interface GlueTriggerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_trigger#description GlueTrigger#description}
   */
@@ -19,7 +19,7 @@ export interface GlueTriggerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_trigger#enabled GlueTrigger#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_trigger#id GlueTrigger#id}
   *
@@ -44,7 +44,7 @@ export interface GlueTriggerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_trigger#start_on_creation GlueTrigger#start_on_creation}
   */
-  readonly startOnCreation?: boolean | cdktf.IResolvable;
+  readonly startOnCreation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_trigger#tags GlueTrigger#tags}
   */
@@ -66,13 +66,13 @@ export interface GlueTriggerConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_trigger#actions GlueTrigger#actions}
   */
-  readonly actions: GlueTriggerActions[] | cdktf.IResolvable;
+  readonly actions: GlueTriggerActions[] | cdktn.IResolvable;
   /**
   * event_batching_condition block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_trigger#event_batching_condition GlueTrigger#event_batching_condition}
   */
-  readonly eventBatchingCondition?: GlueTriggerEventBatchingCondition[] | cdktf.IResolvable;
+  readonly eventBatchingCondition?: GlueTriggerEventBatchingCondition[] | cdktn.IResolvable;
   /**
   * predicate block
   *
@@ -94,24 +94,24 @@ export interface GlueTriggerActionsNotificationProperty {
 }
 
 export function glueTriggerActionsNotificationPropertyToTerraform(struct?: GlueTriggerActionsNotificationPropertyOutputReference | GlueTriggerActionsNotificationProperty): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    notify_delay_after: cdktf.numberToTerraform(struct!.notifyDelayAfter),
+    notify_delay_after: cdktn.numberToTerraform(struct!.notifyDelayAfter),
   }
 }
 
 
 export function glueTriggerActionsNotificationPropertyToHclTerraform(struct?: GlueTriggerActionsNotificationPropertyOutputReference | GlueTriggerActionsNotificationProperty): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     notify_delay_after: {
-      value: cdktf.numberToHclTerraform(struct!.notifyDelayAfter),
+      value: cdktn.numberToHclTerraform(struct!.notifyDelayAfter),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -122,14 +122,14 @@ export function glueTriggerActionsNotificationPropertyToHclTerraform(struct?: Gl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueTriggerActionsNotificationPropertyOutputReference extends cdktf.ComplexObject {
+export class GlueTriggerActionsNotificationPropertyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -199,54 +199,54 @@ export interface GlueTriggerActions {
   readonly notificationProperty?: GlueTriggerActionsNotificationProperty;
 }
 
-export function glueTriggerActionsToTerraform(struct?: GlueTriggerActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueTriggerActionsToTerraform(struct?: GlueTriggerActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arguments: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.arguments),
-    crawler_name: cdktf.stringToTerraform(struct!.crawlerName),
-    job_name: cdktf.stringToTerraform(struct!.jobName),
-    security_configuration: cdktf.stringToTerraform(struct!.securityConfiguration),
-    timeout: cdktf.numberToTerraform(struct!.timeout),
+    arguments: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.arguments),
+    crawler_name: cdktn.stringToTerraform(struct!.crawlerName),
+    job_name: cdktn.stringToTerraform(struct!.jobName),
+    security_configuration: cdktn.stringToTerraform(struct!.securityConfiguration),
+    timeout: cdktn.numberToTerraform(struct!.timeout),
     notification_property: glueTriggerActionsNotificationPropertyToTerraform(struct!.notificationProperty),
   }
 }
 
 
-export function glueTriggerActionsToHclTerraform(struct?: GlueTriggerActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueTriggerActionsToHclTerraform(struct?: GlueTriggerActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arguments: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.arguments),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.arguments),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     crawler_name: {
-      value: cdktf.stringToHclTerraform(struct!.crawlerName),
+      value: cdktn.stringToHclTerraform(struct!.crawlerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     job_name: {
-      value: cdktf.stringToHclTerraform(struct!.jobName),
+      value: cdktn.stringToHclTerraform(struct!.jobName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_configuration: {
-      value: cdktf.stringToHclTerraform(struct!.securityConfiguration),
+      value: cdktn.stringToHclTerraform(struct!.securityConfiguration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout: {
-      value: cdktf.numberToHclTerraform(struct!.timeout),
+      value: cdktn.numberToHclTerraform(struct!.timeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -263,9 +263,9 @@ export function glueTriggerActionsToHclTerraform(struct?: GlueTriggerActions | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueTriggerActionsOutputReference extends cdktf.ComplexObject {
+export class GlueTriggerActionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -273,11 +273,11 @@ export class GlueTriggerActionsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GlueTriggerActions | cdktf.IResolvable | undefined {
+  public get internalValue(): GlueTriggerActions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -310,7 +310,7 @@ export class GlueTriggerActionsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlueTriggerActions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlueTriggerActions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -321,7 +321,7 @@ export class GlueTriggerActionsOutputReference extends cdktf.ComplexObject {
       this._timeout = undefined;
       this._notificationProperty.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -434,15 +434,15 @@ export class GlueTriggerActionsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class GlueTriggerActionsList extends cdktf.ComplexList {
-  public internalValue? : GlueTriggerActions[] | cdktf.IResolvable
+export class GlueTriggerActionsList extends cdktn.ComplexList {
+  public internalValue? : GlueTriggerActions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -464,32 +464,32 @@ export interface GlueTriggerEventBatchingCondition {
   readonly batchWindow?: number;
 }
 
-export function glueTriggerEventBatchingConditionToTerraform(struct?: GlueTriggerEventBatchingCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueTriggerEventBatchingConditionToTerraform(struct?: GlueTriggerEventBatchingCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_size: cdktf.numberToTerraform(struct!.batchSize),
-    batch_window: cdktf.numberToTerraform(struct!.batchWindow),
+    batch_size: cdktn.numberToTerraform(struct!.batchSize),
+    batch_window: cdktn.numberToTerraform(struct!.batchWindow),
   }
 }
 
 
-export function glueTriggerEventBatchingConditionToHclTerraform(struct?: GlueTriggerEventBatchingCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueTriggerEventBatchingConditionToHclTerraform(struct?: GlueTriggerEventBatchingCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_size: {
-      value: cdktf.numberToHclTerraform(struct!.batchSize),
+      value: cdktn.numberToHclTerraform(struct!.batchSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     batch_window: {
-      value: cdktf.numberToHclTerraform(struct!.batchWindow),
+      value: cdktn.numberToHclTerraform(struct!.batchWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -500,9 +500,9 @@ export function glueTriggerEventBatchingConditionToHclTerraform(struct?: GlueTri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueTriggerEventBatchingConditionOutputReference extends cdktf.ComplexObject {
+export class GlueTriggerEventBatchingConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -510,11 +510,11 @@ export class GlueTriggerEventBatchingConditionOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GlueTriggerEventBatchingCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): GlueTriggerEventBatchingCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -531,14 +531,14 @@ export class GlueTriggerEventBatchingConditionOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlueTriggerEventBatchingCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlueTriggerEventBatchingCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._batchSize = undefined;
       this._batchWindow = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -580,15 +580,15 @@ export class GlueTriggerEventBatchingConditionOutputReference extends cdktf.Comp
   }
 }
 
-export class GlueTriggerEventBatchingConditionList extends cdktf.ComplexList {
-  public internalValue? : GlueTriggerEventBatchingCondition[] | cdktf.IResolvable
+export class GlueTriggerEventBatchingConditionList extends cdktn.ComplexList {
+  public internalValue? : GlueTriggerEventBatchingCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -622,53 +622,53 @@ export interface GlueTriggerPredicateConditions {
   readonly state?: string;
 }
 
-export function glueTriggerPredicateConditionsToTerraform(struct?: GlueTriggerPredicateConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueTriggerPredicateConditionsToTerraform(struct?: GlueTriggerPredicateConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    crawl_state: cdktf.stringToTerraform(struct!.crawlState),
-    crawler_name: cdktf.stringToTerraform(struct!.crawlerName),
-    job_name: cdktf.stringToTerraform(struct!.jobName),
-    logical_operator: cdktf.stringToTerraform(struct!.logicalOperator),
-    state: cdktf.stringToTerraform(struct!.state),
+    crawl_state: cdktn.stringToTerraform(struct!.crawlState),
+    crawler_name: cdktn.stringToTerraform(struct!.crawlerName),
+    job_name: cdktn.stringToTerraform(struct!.jobName),
+    logical_operator: cdktn.stringToTerraform(struct!.logicalOperator),
+    state: cdktn.stringToTerraform(struct!.state),
   }
 }
 
 
-export function glueTriggerPredicateConditionsToHclTerraform(struct?: GlueTriggerPredicateConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueTriggerPredicateConditionsToHclTerraform(struct?: GlueTriggerPredicateConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     crawl_state: {
-      value: cdktf.stringToHclTerraform(struct!.crawlState),
+      value: cdktn.stringToHclTerraform(struct!.crawlState),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     crawler_name: {
-      value: cdktf.stringToHclTerraform(struct!.crawlerName),
+      value: cdktn.stringToHclTerraform(struct!.crawlerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     job_name: {
-      value: cdktf.stringToHclTerraform(struct!.jobName),
+      value: cdktn.stringToHclTerraform(struct!.jobName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     logical_operator: {
-      value: cdktf.stringToHclTerraform(struct!.logicalOperator),
+      value: cdktn.stringToHclTerraform(struct!.logicalOperator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -679,9 +679,9 @@ export function glueTriggerPredicateConditionsToHclTerraform(struct?: GlueTrigge
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueTriggerPredicateConditionsOutputReference extends cdktf.ComplexObject {
+export class GlueTriggerPredicateConditionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -689,11 +689,11 @@ export class GlueTriggerPredicateConditionsOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GlueTriggerPredicateConditions | cdktf.IResolvable | undefined {
+  public get internalValue(): GlueTriggerPredicateConditions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -722,7 +722,7 @@ export class GlueTriggerPredicateConditionsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlueTriggerPredicateConditions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlueTriggerPredicateConditions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -732,7 +732,7 @@ export class GlueTriggerPredicateConditionsOutputReference extends cdktf.Complex
       this._logicalOperator = undefined;
       this._state = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -828,15 +828,15 @@ export class GlueTriggerPredicateConditionsOutputReference extends cdktf.Complex
   }
 }
 
-export class GlueTriggerPredicateConditionsList extends cdktf.ComplexList {
-  public internalValue? : GlueTriggerPredicateConditions[] | cdktf.IResolvable
+export class GlueTriggerPredicateConditionsList extends cdktn.ComplexList {
+  public internalValue? : GlueTriggerPredicateConditions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -857,35 +857,35 @@ export interface GlueTriggerPredicate {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_trigger#conditions GlueTrigger#conditions}
   */
-  readonly conditions: GlueTriggerPredicateConditions[] | cdktf.IResolvable;
+  readonly conditions: GlueTriggerPredicateConditions[] | cdktn.IResolvable;
 }
 
 export function glueTriggerPredicateToTerraform(struct?: GlueTriggerPredicateOutputReference | GlueTriggerPredicate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    logical: cdktf.stringToTerraform(struct!.logical),
-    conditions: cdktf.listMapper(glueTriggerPredicateConditionsToTerraform, true)(struct!.conditions),
+    logical: cdktn.stringToTerraform(struct!.logical),
+    conditions: cdktn.listMapper(glueTriggerPredicateConditionsToTerraform, true)(struct!.conditions),
   }
 }
 
 
 export function glueTriggerPredicateToHclTerraform(struct?: GlueTriggerPredicateOutputReference | GlueTriggerPredicate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     logical: {
-      value: cdktf.stringToHclTerraform(struct!.logical),
+      value: cdktn.stringToHclTerraform(struct!.logical),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     conditions: {
-      value: cdktf.listMapperHcl(glueTriggerPredicateConditionsToHclTerraform, true)(struct!.conditions),
+      value: cdktn.listMapperHcl(glueTriggerPredicateConditionsToHclTerraform, true)(struct!.conditions),
       isBlock: true,
       type: "list",
       storageClassType: "GlueTriggerPredicateConditionsList",
@@ -896,14 +896,14 @@ export function glueTriggerPredicateToHclTerraform(struct?: GlueTriggerPredicate
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueTriggerPredicateOutputReference extends cdktf.ComplexObject {
+export class GlueTriggerPredicateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -955,7 +955,7 @@ export class GlueTriggerPredicateOutputReference extends cdktf.ComplexObject {
   public get conditions() {
     return this._conditions;
   }
-  public putConditions(value: GlueTriggerPredicateConditions[] | cdktf.IResolvable) {
+  public putConditions(value: GlueTriggerPredicateConditions[] | cdktn.IResolvable) {
     this._conditions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -978,39 +978,39 @@ export interface GlueTriggerTimeouts {
   readonly update?: string;
 }
 
-export function glueTriggerTimeoutsToTerraform(struct?: GlueTriggerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueTriggerTimeoutsToTerraform(struct?: GlueTriggerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function glueTriggerTimeoutsToHclTerraform(struct?: GlueTriggerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueTriggerTimeoutsToHclTerraform(struct?: GlueTriggerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1021,19 +1021,19 @@ export function glueTriggerTimeoutsToHclTerraform(struct?: GlueTriggerTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueTriggerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GlueTriggerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GlueTriggerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GlueTriggerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1054,7 +1054,7 @@ export class GlueTriggerTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlueTriggerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlueTriggerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1062,7 +1062,7 @@ export class GlueTriggerTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1127,7 +1127,7 @@ export class GlueTriggerTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_trigger aws_glue_trigger}
 */
-export class GlueTrigger extends cdktf.TerraformResource {
+export class GlueTrigger extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1138,14 +1138,14 @@ export class GlueTrigger extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlueTrigger resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlueTrigger resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlueTrigger to import
   * @param importFromId The id of the existing GlueTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_trigger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlueTrigger to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_trigger", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_trigger", importId: importFromId, provider });
       }
 
   // ===========
@@ -1218,11 +1218,11 @@ export class GlueTrigger extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1295,11 +1295,11 @@ export class GlueTrigger extends cdktf.TerraformResource {
   }
 
   // start_on_creation - computed: false, optional: true, required: false
-  private _startOnCreation?: boolean | cdktf.IResolvable; 
+  private _startOnCreation?: boolean | cdktn.IResolvable; 
   public get startOnCreation() {
     return this.getBooleanAttribute('start_on_creation');
   }
-  public set startOnCreation(value: boolean | cdktf.IResolvable) {
+  public set startOnCreation(value: boolean | cdktn.IResolvable) {
     this._startOnCreation = value;
   }
   public resetStartOnCreation() {
@@ -1381,7 +1381,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
   public get actions() {
     return this._actions;
   }
-  public putActions(value: GlueTriggerActions[] | cdktf.IResolvable) {
+  public putActions(value: GlueTriggerActions[] | cdktn.IResolvable) {
     this._actions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1394,7 +1394,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
   public get eventBatchingCondition() {
     return this._eventBatchingCondition;
   }
-  public putEventBatchingCondition(value: GlueTriggerEventBatchingCondition[] | cdktf.IResolvable) {
+  public putEventBatchingCondition(value: GlueTriggerEventBatchingCondition[] | cdktn.IResolvable) {
     this._eventBatchingCondition.internalValue = value;
   }
   public resetEventBatchingCondition() {
@@ -1443,19 +1443,19 @@ export class GlueTrigger extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      schedule: cdktf.stringToTerraform(this._schedule),
-      start_on_creation: cdktf.booleanToTerraform(this._startOnCreation),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      type: cdktf.stringToTerraform(this._type),
-      workflow_name: cdktf.stringToTerraform(this._workflowName),
-      actions: cdktf.listMapper(glueTriggerActionsToTerraform, true)(this._actions.internalValue),
-      event_batching_condition: cdktf.listMapper(glueTriggerEventBatchingConditionToTerraform, true)(this._eventBatchingCondition.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      schedule: cdktn.stringToTerraform(this._schedule),
+      start_on_creation: cdktn.booleanToTerraform(this._startOnCreation),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      type: cdktn.stringToTerraform(this._type),
+      workflow_name: cdktn.stringToTerraform(this._workflowName),
+      actions: cdktn.listMapper(glueTriggerActionsToTerraform, true)(this._actions.internalValue),
+      event_batching_condition: cdktn.listMapper(glueTriggerEventBatchingConditionToTerraform, true)(this._eventBatchingCondition.internalValue),
       predicate: glueTriggerPredicateToTerraform(this._predicate.internalValue),
       timeouts: glueTriggerTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1464,79 +1464,79 @@ export class GlueTrigger extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schedule: {
-        value: cdktf.stringToHclTerraform(this._schedule),
+        value: cdktn.stringToHclTerraform(this._schedule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_on_creation: {
-        value: cdktf.booleanToHclTerraform(this._startOnCreation),
+        value: cdktn.booleanToHclTerraform(this._startOnCreation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workflow_name: {
-        value: cdktf.stringToHclTerraform(this._workflowName),
+        value: cdktn.stringToHclTerraform(this._workflowName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       actions: {
-        value: cdktf.listMapperHcl(glueTriggerActionsToHclTerraform, true)(this._actions.internalValue),
+        value: cdktn.listMapperHcl(glueTriggerActionsToHclTerraform, true)(this._actions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "GlueTriggerActionsList",
       },
       event_batching_condition: {
-        value: cdktf.listMapperHcl(glueTriggerEventBatchingConditionToHclTerraform, true)(this._eventBatchingCondition.internalValue),
+        value: cdktn.listMapperHcl(glueTriggerEventBatchingConditionToHclTerraform, true)(this._eventBatchingCondition.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "GlueTriggerEventBatchingConditionList",

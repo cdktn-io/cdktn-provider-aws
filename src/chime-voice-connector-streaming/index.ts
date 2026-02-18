@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ChimeVoiceConnectorStreamingConfig extends cdktf.TerraformMetaArguments {
+export interface ChimeVoiceConnectorStreamingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector_streaming#data_retention ChimeVoiceConnectorStreaming#data_retention}
   */
@@ -19,7 +19,7 @@ export interface ChimeVoiceConnectorStreamingConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector_streaming#disabled ChimeVoiceConnectorStreaming#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector_streaming#id ChimeVoiceConnectorStreaming#id}
   *
@@ -56,35 +56,35 @@ export interface ChimeVoiceConnectorStreamingMediaInsightsConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector_streaming#disabled ChimeVoiceConnectorStreaming#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
 }
 
 export function chimeVoiceConnectorStreamingMediaInsightsConfigurationToTerraform(struct?: ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference | ChimeVoiceConnectorStreamingMediaInsightsConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    configuration_arn: cdktf.stringToTerraform(struct!.configurationArn),
-    disabled: cdktf.booleanToTerraform(struct!.disabled),
+    configuration_arn: cdktn.stringToTerraform(struct!.configurationArn),
+    disabled: cdktn.booleanToTerraform(struct!.disabled),
   }
 }
 
 
 export function chimeVoiceConnectorStreamingMediaInsightsConfigurationToHclTerraform(struct?: ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference | ChimeVoiceConnectorStreamingMediaInsightsConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     configuration_arn: {
-      value: cdktf.stringToHclTerraform(struct!.configurationArn),
+      value: cdktn.stringToHclTerraform(struct!.configurationArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      value: cdktn.booleanToHclTerraform(struct!.disabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -95,14 +95,14 @@ export function chimeVoiceConnectorStreamingMediaInsightsConfigurationToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference extends cdktf.ComplexObject {
+export class ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -150,11 +150,11 @@ export class ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReferen
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -169,7 +169,7 @@ export class ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReferen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector_streaming aws_chime_voice_connector_streaming}
 */
-export class ChimeVoiceConnectorStreaming extends cdktf.TerraformResource {
+export class ChimeVoiceConnectorStreaming extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -180,14 +180,14 @@ export class ChimeVoiceConnectorStreaming extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ChimeVoiceConnectorStreaming resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ChimeVoiceConnectorStreaming resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChimeVoiceConnectorStreaming to import
   * @param importFromId The id of the existing ChimeVoiceConnectorStreaming that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector_streaming#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChimeVoiceConnectorStreaming to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_chime_voice_connector_streaming", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_chime_voice_connector_streaming", importId: importFromId, provider });
       }
 
   // ===========
@@ -244,11 +244,11 @@ export class ChimeVoiceConnectorStreaming extends cdktf.TerraformResource {
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -294,7 +294,7 @@ export class ChimeVoiceConnectorStreaming extends cdktf.TerraformResource {
   // streaming_notification_targets - computed: false, optional: true, required: false
   private _streamingNotificationTargets?: string[]; 
   public get streamingNotificationTargets() {
-    return cdktf.Fn.tolist(this.getListAttribute('streaming_notification_targets'));
+    return cdktn.Fn.tolist(this.getListAttribute('streaming_notification_targets'));
   }
   public set streamingNotificationTargets(value: string[]) {
     this._streamingNotificationTargets = value;
@@ -342,12 +342,12 @@ export class ChimeVoiceConnectorStreaming extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_retention: cdktf.numberToTerraform(this._dataRetention),
-      disabled: cdktf.booleanToTerraform(this._disabled),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      streaming_notification_targets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._streamingNotificationTargets),
-      voice_connector_id: cdktf.stringToTerraform(this._voiceConnectorId),
+      data_retention: cdktn.numberToTerraform(this._dataRetention),
+      disabled: cdktn.booleanToTerraform(this._disabled),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      streaming_notification_targets: cdktn.listMapper(cdktn.stringToTerraform, false)(this._streamingNotificationTargets),
+      voice_connector_id: cdktn.stringToTerraform(this._voiceConnectorId),
       media_insights_configuration: chimeVoiceConnectorStreamingMediaInsightsConfigurationToTerraform(this._mediaInsightsConfiguration.internalValue),
     };
   }
@@ -355,37 +355,37 @@ export class ChimeVoiceConnectorStreaming extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_retention: {
-        value: cdktf.numberToHclTerraform(this._dataRetention),
+        value: cdktn.numberToHclTerraform(this._dataRetention),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       disabled: {
-        value: cdktf.booleanToHclTerraform(this._disabled),
+        value: cdktn.booleanToHclTerraform(this._disabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       streaming_notification_targets: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._streamingNotificationTargets),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._streamingNotificationTargets),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       voice_connector_id: {
-        value: cdktf.stringToHclTerraform(this._voiceConnectorId),
+        value: cdktn.stringToHclTerraform(this._voiceConnectorId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

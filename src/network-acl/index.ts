@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkAclConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkAclConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_acl#egress NetworkAcl#egress}
   */
-  readonly egress?: NetworkAclEgress[] | cdktf.IResolvable;
+  readonly egress?: NetworkAclEgress[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_acl#id NetworkAcl#id}
   *
@@ -26,7 +26,7 @@ export interface NetworkAclConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_acl#ingress NetworkAcl#ingress}
   */
-  readonly ingress?: NetworkAclIngress[] | cdktf.IResolvable;
+  readonly ingress?: NetworkAclIngress[] | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -89,81 +89,81 @@ export interface NetworkAclEgress {
   readonly toPort?: number;
 }
 
-export function networkAclEgressToTerraform(struct?: NetworkAclEgress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkAclEgressToTerraform(struct?: NetworkAclEgress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: struct!.action === undefined ? null : cdktf.stringToTerraform(struct!.action),
-    cidr_block: struct!.cidrBlock === undefined ? null : cdktf.stringToTerraform(struct!.cidrBlock),
-    from_port: struct!.fromPort === undefined ? null : cdktf.numberToTerraform(struct!.fromPort),
-    icmp_code: struct!.icmpCode === undefined ? null : cdktf.numberToTerraform(struct!.icmpCode),
-    icmp_type: struct!.icmpType === undefined ? null : cdktf.numberToTerraform(struct!.icmpType),
-    ipv6_cidr_block: struct!.ipv6CidrBlock === undefined ? null : cdktf.stringToTerraform(struct!.ipv6CidrBlock),
-    protocol: struct!.protocol === undefined ? null : cdktf.stringToTerraform(struct!.protocol),
-    rule_no: struct!.ruleNo === undefined ? null : cdktf.numberToTerraform(struct!.ruleNo),
-    to_port: struct!.toPort === undefined ? null : cdktf.numberToTerraform(struct!.toPort),
+    action: struct!.action === undefined ? null : cdktn.stringToTerraform(struct!.action),
+    cidr_block: struct!.cidrBlock === undefined ? null : cdktn.stringToTerraform(struct!.cidrBlock),
+    from_port: struct!.fromPort === undefined ? null : cdktn.numberToTerraform(struct!.fromPort),
+    icmp_code: struct!.icmpCode === undefined ? null : cdktn.numberToTerraform(struct!.icmpCode),
+    icmp_type: struct!.icmpType === undefined ? null : cdktn.numberToTerraform(struct!.icmpType),
+    ipv6_cidr_block: struct!.ipv6CidrBlock === undefined ? null : cdktn.stringToTerraform(struct!.ipv6CidrBlock),
+    protocol: struct!.protocol === undefined ? null : cdktn.stringToTerraform(struct!.protocol),
+    rule_no: struct!.ruleNo === undefined ? null : cdktn.numberToTerraform(struct!.ruleNo),
+    to_port: struct!.toPort === undefined ? null : cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
-export function networkAclEgressToHclTerraform(struct?: NetworkAclEgress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkAclEgressToHclTerraform(struct?: NetworkAclEgress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: struct!.action === undefined ? null : cdktf.stringToHclTerraform(struct!.action),
+      value: struct!.action === undefined ? null : cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cidr_block: {
-      value: struct!.cidrBlock === undefined ? null : cdktf.stringToHclTerraform(struct!.cidrBlock),
+      value: struct!.cidrBlock === undefined ? null : cdktn.stringToHclTerraform(struct!.cidrBlock),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     from_port: {
-      value: struct!.fromPort === undefined ? null : cdktf.numberToHclTerraform(struct!.fromPort),
+      value: struct!.fromPort === undefined ? null : cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     icmp_code: {
-      value: struct!.icmpCode === undefined ? null : cdktf.numberToHclTerraform(struct!.icmpCode),
+      value: struct!.icmpCode === undefined ? null : cdktn.numberToHclTerraform(struct!.icmpCode),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     icmp_type: {
-      value: struct!.icmpType === undefined ? null : cdktf.numberToHclTerraform(struct!.icmpType),
+      value: struct!.icmpType === undefined ? null : cdktn.numberToHclTerraform(struct!.icmpType),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ipv6_cidr_block: {
-      value: struct!.ipv6CidrBlock === undefined ? null : cdktf.stringToHclTerraform(struct!.ipv6CidrBlock),
+      value: struct!.ipv6CidrBlock === undefined ? null : cdktn.stringToHclTerraform(struct!.ipv6CidrBlock),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: struct!.protocol === undefined ? null : cdktf.stringToHclTerraform(struct!.protocol),
+      value: struct!.protocol === undefined ? null : cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_no: {
-      value: struct!.ruleNo === undefined ? null : cdktf.numberToHclTerraform(struct!.ruleNo),
+      value: struct!.ruleNo === undefined ? null : cdktn.numberToHclTerraform(struct!.ruleNo),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to_port: {
-      value: struct!.toPort === undefined ? null : cdktf.numberToHclTerraform(struct!.toPort),
+      value: struct!.toPort === undefined ? null : cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -174,9 +174,9 @@ export function networkAclEgressToHclTerraform(struct?: NetworkAclEgress | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkAclEgressOutputReference extends cdktf.ComplexObject {
+export class NetworkAclEgressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -184,11 +184,11 @@ export class NetworkAclEgressOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkAclEgress | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkAclEgress | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -233,7 +233,7 @@ export class NetworkAclEgressOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkAclEgress | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkAclEgress | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -247,7 +247,7 @@ export class NetworkAclEgressOutputReference extends cdktf.ComplexObject {
       this._ruleNo = undefined;
       this._toPort = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -411,15 +411,15 @@ export class NetworkAclEgressOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class NetworkAclEgressList extends cdktf.ComplexList {
-  public internalValue? : NetworkAclEgress[] | cdktf.IResolvable
+export class NetworkAclEgressList extends cdktn.ComplexList {
+  public internalValue? : NetworkAclEgress[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -469,81 +469,81 @@ export interface NetworkAclIngress {
   readonly toPort?: number;
 }
 
-export function networkAclIngressToTerraform(struct?: NetworkAclIngress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkAclIngressToTerraform(struct?: NetworkAclIngress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: struct!.action === undefined ? null : cdktf.stringToTerraform(struct!.action),
-    cidr_block: struct!.cidrBlock === undefined ? null : cdktf.stringToTerraform(struct!.cidrBlock),
-    from_port: struct!.fromPort === undefined ? null : cdktf.numberToTerraform(struct!.fromPort),
-    icmp_code: struct!.icmpCode === undefined ? null : cdktf.numberToTerraform(struct!.icmpCode),
-    icmp_type: struct!.icmpType === undefined ? null : cdktf.numberToTerraform(struct!.icmpType),
-    ipv6_cidr_block: struct!.ipv6CidrBlock === undefined ? null : cdktf.stringToTerraform(struct!.ipv6CidrBlock),
-    protocol: struct!.protocol === undefined ? null : cdktf.stringToTerraform(struct!.protocol),
-    rule_no: struct!.ruleNo === undefined ? null : cdktf.numberToTerraform(struct!.ruleNo),
-    to_port: struct!.toPort === undefined ? null : cdktf.numberToTerraform(struct!.toPort),
+    action: struct!.action === undefined ? null : cdktn.stringToTerraform(struct!.action),
+    cidr_block: struct!.cidrBlock === undefined ? null : cdktn.stringToTerraform(struct!.cidrBlock),
+    from_port: struct!.fromPort === undefined ? null : cdktn.numberToTerraform(struct!.fromPort),
+    icmp_code: struct!.icmpCode === undefined ? null : cdktn.numberToTerraform(struct!.icmpCode),
+    icmp_type: struct!.icmpType === undefined ? null : cdktn.numberToTerraform(struct!.icmpType),
+    ipv6_cidr_block: struct!.ipv6CidrBlock === undefined ? null : cdktn.stringToTerraform(struct!.ipv6CidrBlock),
+    protocol: struct!.protocol === undefined ? null : cdktn.stringToTerraform(struct!.protocol),
+    rule_no: struct!.ruleNo === undefined ? null : cdktn.numberToTerraform(struct!.ruleNo),
+    to_port: struct!.toPort === undefined ? null : cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
-export function networkAclIngressToHclTerraform(struct?: NetworkAclIngress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkAclIngressToHclTerraform(struct?: NetworkAclIngress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: struct!.action === undefined ? null : cdktf.stringToHclTerraform(struct!.action),
+      value: struct!.action === undefined ? null : cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cidr_block: {
-      value: struct!.cidrBlock === undefined ? null : cdktf.stringToHclTerraform(struct!.cidrBlock),
+      value: struct!.cidrBlock === undefined ? null : cdktn.stringToHclTerraform(struct!.cidrBlock),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     from_port: {
-      value: struct!.fromPort === undefined ? null : cdktf.numberToHclTerraform(struct!.fromPort),
+      value: struct!.fromPort === undefined ? null : cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     icmp_code: {
-      value: struct!.icmpCode === undefined ? null : cdktf.numberToHclTerraform(struct!.icmpCode),
+      value: struct!.icmpCode === undefined ? null : cdktn.numberToHclTerraform(struct!.icmpCode),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     icmp_type: {
-      value: struct!.icmpType === undefined ? null : cdktf.numberToHclTerraform(struct!.icmpType),
+      value: struct!.icmpType === undefined ? null : cdktn.numberToHclTerraform(struct!.icmpType),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ipv6_cidr_block: {
-      value: struct!.ipv6CidrBlock === undefined ? null : cdktf.stringToHclTerraform(struct!.ipv6CidrBlock),
+      value: struct!.ipv6CidrBlock === undefined ? null : cdktn.stringToHclTerraform(struct!.ipv6CidrBlock),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: struct!.protocol === undefined ? null : cdktf.stringToHclTerraform(struct!.protocol),
+      value: struct!.protocol === undefined ? null : cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_no: {
-      value: struct!.ruleNo === undefined ? null : cdktf.numberToHclTerraform(struct!.ruleNo),
+      value: struct!.ruleNo === undefined ? null : cdktn.numberToHclTerraform(struct!.ruleNo),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to_port: {
-      value: struct!.toPort === undefined ? null : cdktf.numberToHclTerraform(struct!.toPort),
+      value: struct!.toPort === undefined ? null : cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -554,9 +554,9 @@ export function networkAclIngressToHclTerraform(struct?: NetworkAclIngress | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkAclIngressOutputReference extends cdktf.ComplexObject {
+export class NetworkAclIngressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -564,11 +564,11 @@ export class NetworkAclIngressOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkAclIngress | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkAclIngress | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -613,7 +613,7 @@ export class NetworkAclIngressOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkAclIngress | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkAclIngress | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -627,7 +627,7 @@ export class NetworkAclIngressOutputReference extends cdktf.ComplexObject {
       this._ruleNo = undefined;
       this._toPort = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -791,15 +791,15 @@ export class NetworkAclIngressOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class NetworkAclIngressList extends cdktf.ComplexList {
-  public internalValue? : NetworkAclIngress[] | cdktf.IResolvable
+export class NetworkAclIngressList extends cdktn.ComplexList {
+  public internalValue? : NetworkAclIngress[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -814,7 +814,7 @@ export class NetworkAclIngressList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_acl aws_network_acl}
 */
-export class NetworkAcl extends cdktf.TerraformResource {
+export class NetworkAcl extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -825,14 +825,14 @@ export class NetworkAcl extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkAcl resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkAcl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkAcl to import
   * @param importFromId The id of the existing NetworkAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_acl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkAcl to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_network_acl", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_network_acl", importId: importFromId, provider });
       }
 
   // ===========
@@ -886,7 +886,7 @@ export class NetworkAcl extends cdktf.TerraformResource {
   public get egress() {
     return this._egress;
   }
-  public putEgress(value: NetworkAclEgress[] | cdktf.IResolvable) {
+  public putEgress(value: NetworkAclEgress[] | cdktn.IResolvable) {
     this._egress.internalValue = value;
   }
   public resetEgress() {
@@ -918,7 +918,7 @@ export class NetworkAcl extends cdktf.TerraformResource {
   public get ingress() {
     return this._ingress;
   }
-  public putIngress(value: NetworkAclIngress[] | cdktf.IResolvable) {
+  public putIngress(value: NetworkAclIngress[] | cdktn.IResolvable) {
     this._ingress.internalValue = value;
   }
   public resetIngress() {
@@ -953,7 +953,7 @@ export class NetworkAcl extends cdktf.TerraformResource {
   // subnet_ids - computed: true, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -1017,63 +1017,63 @@ export class NetworkAcl extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      egress: cdktf.listMapper(networkAclEgressToTerraform, false)(this._egress.internalValue),
-      id: cdktf.stringToTerraform(this._id),
-      ingress: cdktf.listMapper(networkAclIngressToTerraform, false)(this._ingress.internalValue),
-      region: cdktf.stringToTerraform(this._region),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      egress: cdktn.listMapper(networkAclEgressToTerraform, false)(this._egress.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      ingress: cdktn.listMapper(networkAclIngressToTerraform, false)(this._ingress.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnetIds),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       egress: {
-        value: cdktf.listMapperHcl(networkAclEgressToHclTerraform, false)(this._egress.internalValue),
+        value: cdktn.listMapperHcl(networkAclEgressToHclTerraform, false)(this._egress.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "NetworkAclEgressList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ingress: {
-        value: cdktf.listMapperHcl(networkAclIngressToHclTerraform, false)(this._ingress.internalValue),
+        value: cdktn.listMapperHcl(networkAclIngressToHclTerraform, false)(this._ingress.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "NetworkAclIngressList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnetIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

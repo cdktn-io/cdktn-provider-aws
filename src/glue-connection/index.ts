@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlueConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface GlueConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_connection#athena_properties GlueConnection#athena_properties}
   */
@@ -84,38 +84,38 @@ export interface GlueConnectionPhysicalConnectionRequirements {
 }
 
 export function glueConnectionPhysicalConnectionRequirementsToTerraform(struct?: GlueConnectionPhysicalConnectionRequirementsOutputReference | GlueConnectionPhysicalConnectionRequirements): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
-    security_group_id_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIdList),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    availability_zone: cdktn.stringToTerraform(struct!.availabilityZone),
+    security_group_id_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIdList),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
 export function glueConnectionPhysicalConnectionRequirementsToHclTerraform(struct?: GlueConnectionPhysicalConnectionRequirementsOutputReference | GlueConnectionPhysicalConnectionRequirements): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability_zone: {
-      value: cdktf.stringToHclTerraform(struct!.availabilityZone),
+      value: cdktn.stringToHclTerraform(struct!.availabilityZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_group_id_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIdList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIdList),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -126,14 +126,14 @@ export function glueConnectionPhysicalConnectionRequirementsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueConnectionPhysicalConnectionRequirementsOutputReference extends cdktf.ComplexObject {
+export class GlueConnectionPhysicalConnectionRequirementsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -189,7 +189,7 @@ export class GlueConnectionPhysicalConnectionRequirementsOutputReference extends
   // security_group_id_list - computed: false, optional: true, required: false
   private _securityGroupIdList?: string[]; 
   public get securityGroupIdList() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_id_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_id_list'));
   }
   public set securityGroupIdList(value: string[]) {
     this._securityGroupIdList = value;
@@ -222,7 +222,7 @@ export class GlueConnectionPhysicalConnectionRequirementsOutputReference extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_connection aws_glue_connection}
 */
-export class GlueConnection extends cdktf.TerraformResource {
+export class GlueConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -233,14 +233,14 @@ export class GlueConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlueConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlueConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlueConnection to import
   * @param importFromId The id of the existing GlueConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlueConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -488,17 +488,17 @@ export class GlueConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      athena_properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._athenaProperties),
-      catalog_id: cdktf.stringToTerraform(this._catalogId),
-      connection_properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._connectionProperties),
-      connection_type: cdktf.stringToTerraform(this._connectionType),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      match_criteria: cdktf.listMapper(cdktf.stringToTerraform, false)(this._matchCriteria),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      athena_properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._athenaProperties),
+      catalog_id: cdktn.stringToTerraform(this._catalogId),
+      connection_properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._connectionProperties),
+      connection_type: cdktn.stringToTerraform(this._connectionType),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      match_criteria: cdktn.listMapper(cdktn.stringToTerraform, false)(this._matchCriteria),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       physical_connection_requirements: glueConnectionPhysicalConnectionRequirementsToTerraform(this._physicalConnectionRequirements.internalValue),
     };
   }
@@ -506,67 +506,67 @@ export class GlueConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       athena_properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._athenaProperties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._athenaProperties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       catalog_id: {
-        value: cdktf.stringToHclTerraform(this._catalogId),
+        value: cdktn.stringToHclTerraform(this._catalogId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connection_properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._connectionProperties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._connectionProperties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       connection_type: {
-        value: cdktf.stringToHclTerraform(this._connectionType),
+        value: cdktn.stringToHclTerraform(this._connectionType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       match_criteria: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._matchCriteria),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._matchCriteria),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsBillingViewsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsBillingViewsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}
   */
@@ -21,8 +21,8 @@ export interface DataAwsBillingViewsBillingView {
 }
 
 export function dataAwsBillingViewsBillingViewToTerraform(struct?: DataAwsBillingViewsBillingView): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -31,8 +31,8 @@ export function dataAwsBillingViewsBillingViewToTerraform(struct?: DataAwsBillin
 
 
 export function dataAwsBillingViewsBillingViewToHclTerraform(struct?: DataAwsBillingViewsBillingView): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -40,7 +40,7 @@ export function dataAwsBillingViewsBillingViewToHclTerraform(struct?: DataAwsBil
   return attrs;
 }
 
-export class DataAwsBillingViewsBillingViewOutputReference extends cdktf.ComplexObject {
+export class DataAwsBillingViewsBillingViewOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -49,7 +49,7 @@ export class DataAwsBillingViewsBillingViewOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -94,14 +94,14 @@ export class DataAwsBillingViewsBillingViewOutputReference extends cdktf.Complex
   }
 }
 
-export class DataAwsBillingViewsBillingViewList extends cdktf.ComplexList {
+export class DataAwsBillingViewsBillingViewList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -116,7 +116,7 @@ export class DataAwsBillingViewsBillingViewList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/billing_views aws_billing_views}
 */
-export class DataAwsBillingViews extends cdktf.TerraformDataSource {
+export class DataAwsBillingViews extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -127,14 +127,14 @@ export class DataAwsBillingViews extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsBillingViews resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsBillingViews resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBillingViews to import
   * @param importFromId The id of the existing DataAwsBillingViews that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/billing_views#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBillingViews to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_billing_views", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_billing_views", importId: importFromId, provider });
       }
 
   // ===========
@@ -199,14 +199,14 @@ export class DataAwsBillingViews extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      billing_view_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._billingViewTypes),
+      billing_view_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._billingViewTypes),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       billing_view_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._billingViewTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._billingViewTypes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

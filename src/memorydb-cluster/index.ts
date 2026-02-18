@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MemorydbClusterConfig extends cdktf.TerraformMetaArguments {
+export interface MemorydbClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/memorydb_cluster#acl_name MemorydbCluster#acl_name}
   */
@@ -19,11 +19,11 @@ export interface MemorydbClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/memorydb_cluster#auto_minor_version_upgrade MemorydbCluster#auto_minor_version_upgrade}
   */
-  readonly autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
+  readonly autoMinorVersionUpgrade?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/memorydb_cluster#data_tiering MemorydbCluster#data_tiering}
   */
-  readonly dataTiering?: boolean | cdktf.IResolvable;
+  readonly dataTiering?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/memorydb_cluster#description MemorydbCluster#description}
   */
@@ -132,7 +132,7 @@ export interface MemorydbClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/memorydb_cluster#tls_enabled MemorydbCluster#tls_enabled}
   */
-  readonly tlsEnabled?: boolean | cdktf.IResolvable;
+  readonly tlsEnabled?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -144,8 +144,8 @@ export interface MemorydbClusterClusterEndpoint {
 }
 
 export function memorydbClusterClusterEndpointToTerraform(struct?: MemorydbClusterClusterEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -154,8 +154,8 @@ export function memorydbClusterClusterEndpointToTerraform(struct?: MemorydbClust
 
 
 export function memorydbClusterClusterEndpointToHclTerraform(struct?: MemorydbClusterClusterEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -163,7 +163,7 @@ export function memorydbClusterClusterEndpointToHclTerraform(struct?: MemorydbCl
   return attrs;
 }
 
-export class MemorydbClusterClusterEndpointOutputReference extends cdktf.ComplexObject {
+export class MemorydbClusterClusterEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -172,7 +172,7 @@ export class MemorydbClusterClusterEndpointOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -202,14 +202,14 @@ export class MemorydbClusterClusterEndpointOutputReference extends cdktf.Complex
   }
 }
 
-export class MemorydbClusterClusterEndpointList extends cdktf.ComplexList {
+export class MemorydbClusterClusterEndpointList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -224,8 +224,8 @@ export interface MemorydbClusterShardsNodesEndpoint {
 }
 
 export function memorydbClusterShardsNodesEndpointToTerraform(struct?: MemorydbClusterShardsNodesEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -234,8 +234,8 @@ export function memorydbClusterShardsNodesEndpointToTerraform(struct?: MemorydbC
 
 
 export function memorydbClusterShardsNodesEndpointToHclTerraform(struct?: MemorydbClusterShardsNodesEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -243,7 +243,7 @@ export function memorydbClusterShardsNodesEndpointToHclTerraform(struct?: Memory
   return attrs;
 }
 
-export class MemorydbClusterShardsNodesEndpointOutputReference extends cdktf.ComplexObject {
+export class MemorydbClusterShardsNodesEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -252,7 +252,7 @@ export class MemorydbClusterShardsNodesEndpointOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -282,14 +282,14 @@ export class MemorydbClusterShardsNodesEndpointOutputReference extends cdktf.Com
   }
 }
 
-export class MemorydbClusterShardsNodesEndpointList extends cdktf.ComplexList {
+export class MemorydbClusterShardsNodesEndpointList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -304,8 +304,8 @@ export interface MemorydbClusterShardsNodes {
 }
 
 export function memorydbClusterShardsNodesToTerraform(struct?: MemorydbClusterShardsNodes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -314,8 +314,8 @@ export function memorydbClusterShardsNodesToTerraform(struct?: MemorydbClusterSh
 
 
 export function memorydbClusterShardsNodesToHclTerraform(struct?: MemorydbClusterShardsNodes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -323,7 +323,7 @@ export function memorydbClusterShardsNodesToHclTerraform(struct?: MemorydbCluste
   return attrs;
 }
 
-export class MemorydbClusterShardsNodesOutputReference extends cdktf.ComplexObject {
+export class MemorydbClusterShardsNodesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -332,7 +332,7 @@ export class MemorydbClusterShardsNodesOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -373,14 +373,14 @@ export class MemorydbClusterShardsNodesOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class MemorydbClusterShardsNodesList extends cdktf.ComplexList {
+export class MemorydbClusterShardsNodesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -395,8 +395,8 @@ export interface MemorydbClusterShards {
 }
 
 export function memorydbClusterShardsToTerraform(struct?: MemorydbClusterShards): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -405,8 +405,8 @@ export function memorydbClusterShardsToTerraform(struct?: MemorydbClusterShards)
 
 
 export function memorydbClusterShardsToHclTerraform(struct?: MemorydbClusterShards): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -414,7 +414,7 @@ export function memorydbClusterShardsToHclTerraform(struct?: MemorydbClusterShar
   return attrs;
 }
 
-export class MemorydbClusterShardsOutputReference extends cdktf.ComplexObject {
+export class MemorydbClusterShardsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -423,7 +423,7 @@ export class MemorydbClusterShardsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -464,14 +464,14 @@ export class MemorydbClusterShardsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class MemorydbClusterShardsList extends cdktf.ComplexList {
+export class MemorydbClusterShardsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -497,39 +497,39 @@ export interface MemorydbClusterTimeouts {
   readonly update?: string;
 }
 
-export function memorydbClusterTimeoutsToTerraform(struct?: MemorydbClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function memorydbClusterTimeoutsToTerraform(struct?: MemorydbClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function memorydbClusterTimeoutsToHclTerraform(struct?: MemorydbClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function memorydbClusterTimeoutsToHclTerraform(struct?: MemorydbClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -540,19 +540,19 @@ export function memorydbClusterTimeoutsToHclTerraform(struct?: MemorydbClusterTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorydbClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MemorydbClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MemorydbClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MemorydbClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -573,7 +573,7 @@ export class MemorydbClusterTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MemorydbClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MemorydbClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -581,7 +581,7 @@ export class MemorydbClusterTimeoutsOutputReference extends cdktf.ComplexObject 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -646,7 +646,7 @@ export class MemorydbClusterTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/memorydb_cluster aws_memorydb_cluster}
 */
-export class MemorydbCluster extends cdktf.TerraformResource {
+export class MemorydbCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -657,14 +657,14 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MemorydbCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MemorydbCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MemorydbCluster to import
   * @param importFromId The id of the existing MemorydbCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/memorydb_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MemorydbCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_memorydb_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_memorydb_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -749,11 +749,11 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   }
 
   // auto_minor_version_upgrade - computed: false, optional: true, required: false
-  private _autoMinorVersionUpgrade?: boolean | cdktf.IResolvable; 
+  private _autoMinorVersionUpgrade?: boolean | cdktn.IResolvable; 
   public get autoMinorVersionUpgrade() {
     return this.getBooleanAttribute('auto_minor_version_upgrade');
   }
-  public set autoMinorVersionUpgrade(value: boolean | cdktf.IResolvable) {
+  public set autoMinorVersionUpgrade(value: boolean | cdktn.IResolvable) {
     this._autoMinorVersionUpgrade = value;
   }
   public resetAutoMinorVersionUpgrade() {
@@ -771,11 +771,11 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   }
 
   // data_tiering - computed: false, optional: true, required: false
-  private _dataTiering?: boolean | cdktf.IResolvable; 
+  private _dataTiering?: boolean | cdktn.IResolvable; 
   public get dataTiering() {
     return this.getBooleanAttribute('data_tiering');
   }
-  public set dataTiering(value: boolean | cdktf.IResolvable) {
+  public set dataTiering(value: boolean | cdktn.IResolvable) {
     this._dataTiering = value;
   }
   public resetDataTiering() {
@@ -1047,7 +1047,7 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -1195,11 +1195,11 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   }
 
   // tls_enabled - computed: false, optional: true, required: false
-  private _tlsEnabled?: boolean | cdktf.IResolvable; 
+  private _tlsEnabled?: boolean | cdktn.IResolvable; 
   public get tlsEnabled() {
     return this.getBooleanAttribute('tls_enabled');
   }
-  public set tlsEnabled(value: boolean | cdktf.IResolvable) {
+  public set tlsEnabled(value: boolean | cdktn.IResolvable) {
     this._tlsEnabled = value;
   }
   public resetTlsEnabled() {
@@ -1232,35 +1232,35 @@ export class MemorydbCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      acl_name: cdktf.stringToTerraform(this._aclName),
-      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
-      data_tiering: cdktf.booleanToTerraform(this._dataTiering),
-      description: cdktf.stringToTerraform(this._description),
-      engine: cdktf.stringToTerraform(this._engine),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      final_snapshot_name: cdktf.stringToTerraform(this._finalSnapshotName),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
-      maintenance_window: cdktf.stringToTerraform(this._maintenanceWindow),
-      multi_region_cluster_name: cdktf.stringToTerraform(this._multiRegionClusterName),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      node_type: cdktf.stringToTerraform(this._nodeType),
-      num_replicas_per_shard: cdktf.numberToTerraform(this._numReplicasPerShard),
-      num_shards: cdktf.numberToTerraform(this._numShards),
-      parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
-      port: cdktf.numberToTerraform(this._port),
-      region: cdktf.stringToTerraform(this._region),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
-      snapshot_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._snapshotArns),
-      snapshot_name: cdktf.stringToTerraform(this._snapshotName),
-      snapshot_retention_limit: cdktf.numberToTerraform(this._snapshotRetentionLimit),
-      snapshot_window: cdktf.stringToTerraform(this._snapshotWindow),
-      sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),
-      subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      tls_enabled: cdktf.booleanToTerraform(this._tlsEnabled),
+      acl_name: cdktn.stringToTerraform(this._aclName),
+      auto_minor_version_upgrade: cdktn.booleanToTerraform(this._autoMinorVersionUpgrade),
+      data_tiering: cdktn.booleanToTerraform(this._dataTiering),
+      description: cdktn.stringToTerraform(this._description),
+      engine: cdktn.stringToTerraform(this._engine),
+      engine_version: cdktn.stringToTerraform(this._engineVersion),
+      final_snapshot_name: cdktn.stringToTerraform(this._finalSnapshotName),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_arn: cdktn.stringToTerraform(this._kmsKeyArn),
+      maintenance_window: cdktn.stringToTerraform(this._maintenanceWindow),
+      multi_region_cluster_name: cdktn.stringToTerraform(this._multiRegionClusterName),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      node_type: cdktn.stringToTerraform(this._nodeType),
+      num_replicas_per_shard: cdktn.numberToTerraform(this._numReplicasPerShard),
+      num_shards: cdktn.numberToTerraform(this._numShards),
+      parameter_group_name: cdktn.stringToTerraform(this._parameterGroupName),
+      port: cdktn.numberToTerraform(this._port),
+      region: cdktn.stringToTerraform(this._region),
+      security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupIds),
+      snapshot_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._snapshotArns),
+      snapshot_name: cdktn.stringToTerraform(this._snapshotName),
+      snapshot_retention_limit: cdktn.numberToTerraform(this._snapshotRetentionLimit),
+      snapshot_window: cdktn.stringToTerraform(this._snapshotWindow),
+      sns_topic_arn: cdktn.stringToTerraform(this._snsTopicArn),
+      subnet_group_name: cdktn.stringToTerraform(this._subnetGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      tls_enabled: cdktn.booleanToTerraform(this._tlsEnabled),
       timeouts: memorydbClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1268,175 +1268,175 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       acl_name: {
-        value: cdktf.stringToHclTerraform(this._aclName),
+        value: cdktn.stringToHclTerraform(this._aclName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auto_minor_version_upgrade: {
-        value: cdktf.booleanToHclTerraform(this._autoMinorVersionUpgrade),
+        value: cdktn.booleanToHclTerraform(this._autoMinorVersionUpgrade),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       data_tiering: {
-        value: cdktf.booleanToHclTerraform(this._dataTiering),
+        value: cdktn.booleanToHclTerraform(this._dataTiering),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_version: {
-        value: cdktf.stringToHclTerraform(this._engineVersion),
+        value: cdktn.stringToHclTerraform(this._engineVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       final_snapshot_name: {
-        value: cdktf.stringToHclTerraform(this._finalSnapshotName),
+        value: cdktn.stringToHclTerraform(this._finalSnapshotName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_arn: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyArn),
+        value: cdktn.stringToHclTerraform(this._kmsKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       maintenance_window: {
-        value: cdktf.stringToHclTerraform(this._maintenanceWindow),
+        value: cdktn.stringToHclTerraform(this._maintenanceWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multi_region_cluster_name: {
-        value: cdktf.stringToHclTerraform(this._multiRegionClusterName),
+        value: cdktn.stringToHclTerraform(this._multiRegionClusterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       node_type: {
-        value: cdktf.stringToHclTerraform(this._nodeType),
+        value: cdktn.stringToHclTerraform(this._nodeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       num_replicas_per_shard: {
-        value: cdktf.numberToHclTerraform(this._numReplicasPerShard),
+        value: cdktn.numberToHclTerraform(this._numReplicasPerShard),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       num_shards: {
-        value: cdktf.numberToHclTerraform(this._numShards),
+        value: cdktn.numberToHclTerraform(this._numShards),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       parameter_group_name: {
-        value: cdktf.stringToHclTerraform(this._parameterGroupName),
+        value: cdktn.stringToHclTerraform(this._parameterGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       snapshot_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._snapshotArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._snapshotArns),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       snapshot_name: {
-        value: cdktf.stringToHclTerraform(this._snapshotName),
+        value: cdktn.stringToHclTerraform(this._snapshotName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       snapshot_retention_limit: {
-        value: cdktf.numberToHclTerraform(this._snapshotRetentionLimit),
+        value: cdktn.numberToHclTerraform(this._snapshotRetentionLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       snapshot_window: {
-        value: cdktf.stringToHclTerraform(this._snapshotWindow),
+        value: cdktn.stringToHclTerraform(this._snapshotWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sns_topic_arn: {
-        value: cdktf.stringToHclTerraform(this._snsTopicArn),
+        value: cdktn.stringToHclTerraform(this._snsTopicArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_group_name: {
-        value: cdktf.stringToHclTerraform(this._subnetGroupName),
+        value: cdktn.stringToHclTerraform(this._subnetGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tls_enabled: {
-        value: cdktf.booleanToHclTerraform(this._tlsEnabled),
+        value: cdktn.booleanToHclTerraform(this._tlsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

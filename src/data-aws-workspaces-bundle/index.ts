@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsWorkspacesBundleConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsWorkspacesBundleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/workspaces_bundle#bundle_id DataAwsWorkspacesBundle#bundle_id}
   */
@@ -42,8 +42,8 @@ export interface DataAwsWorkspacesBundleComputeType {
 }
 
 export function dataAwsWorkspacesBundleComputeTypeToTerraform(struct?: DataAwsWorkspacesBundleComputeType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataAwsWorkspacesBundleComputeTypeToTerraform(struct?: DataAwsWo
 
 
 export function dataAwsWorkspacesBundleComputeTypeToHclTerraform(struct?: DataAwsWorkspacesBundleComputeType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataAwsWorkspacesBundleComputeTypeToHclTerraform(struct?: DataAw
   return attrs;
 }
 
-export class DataAwsWorkspacesBundleComputeTypeOutputReference extends cdktf.ComplexObject {
+export class DataAwsWorkspacesBundleComputeTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataAwsWorkspacesBundleComputeTypeOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -95,14 +95,14 @@ export class DataAwsWorkspacesBundleComputeTypeOutputReference extends cdktf.Com
   }
 }
 
-export class DataAwsWorkspacesBundleComputeTypeList extends cdktf.ComplexList {
+export class DataAwsWorkspacesBundleComputeTypeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -117,8 +117,8 @@ export interface DataAwsWorkspacesBundleRootStorage {
 }
 
 export function dataAwsWorkspacesBundleRootStorageToTerraform(struct?: DataAwsWorkspacesBundleRootStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -127,8 +127,8 @@ export function dataAwsWorkspacesBundleRootStorageToTerraform(struct?: DataAwsWo
 
 
 export function dataAwsWorkspacesBundleRootStorageToHclTerraform(struct?: DataAwsWorkspacesBundleRootStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -136,7 +136,7 @@ export function dataAwsWorkspacesBundleRootStorageToHclTerraform(struct?: DataAw
   return attrs;
 }
 
-export class DataAwsWorkspacesBundleRootStorageOutputReference extends cdktf.ComplexObject {
+export class DataAwsWorkspacesBundleRootStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -145,7 +145,7 @@ export class DataAwsWorkspacesBundleRootStorageOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -170,14 +170,14 @@ export class DataAwsWorkspacesBundleRootStorageOutputReference extends cdktf.Com
   }
 }
 
-export class DataAwsWorkspacesBundleRootStorageList extends cdktf.ComplexList {
+export class DataAwsWorkspacesBundleRootStorageList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -192,8 +192,8 @@ export interface DataAwsWorkspacesBundleUserStorage {
 }
 
 export function dataAwsWorkspacesBundleUserStorageToTerraform(struct?: DataAwsWorkspacesBundleUserStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -202,8 +202,8 @@ export function dataAwsWorkspacesBundleUserStorageToTerraform(struct?: DataAwsWo
 
 
 export function dataAwsWorkspacesBundleUserStorageToHclTerraform(struct?: DataAwsWorkspacesBundleUserStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -211,7 +211,7 @@ export function dataAwsWorkspacesBundleUserStorageToHclTerraform(struct?: DataAw
   return attrs;
 }
 
-export class DataAwsWorkspacesBundleUserStorageOutputReference extends cdktf.ComplexObject {
+export class DataAwsWorkspacesBundleUserStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -220,7 +220,7 @@ export class DataAwsWorkspacesBundleUserStorageOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -245,14 +245,14 @@ export class DataAwsWorkspacesBundleUserStorageOutputReference extends cdktf.Com
   }
 }
 
-export class DataAwsWorkspacesBundleUserStorageList extends cdktf.ComplexList {
+export class DataAwsWorkspacesBundleUserStorageList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -267,7 +267,7 @@ export class DataAwsWorkspacesBundleUserStorageList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/workspaces_bundle aws_workspaces_bundle}
 */
-export class DataAwsWorkspacesBundle extends cdktf.TerraformDataSource {
+export class DataAwsWorkspacesBundle extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -278,14 +278,14 @@ export class DataAwsWorkspacesBundle extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsWorkspacesBundle resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsWorkspacesBundle resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsWorkspacesBundle to import
   * @param importFromId The id of the existing DataAwsWorkspacesBundle that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/workspaces_bundle#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsWorkspacesBundle to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspaces_bundle", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspaces_bundle", importId: importFromId, provider });
       }
 
   // ===========
@@ -435,42 +435,42 @@ export class DataAwsWorkspacesBundle extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bundle_id: cdktf.stringToTerraform(this._bundleId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      owner: cdktf.stringToTerraform(this._owner),
-      region: cdktf.stringToTerraform(this._region),
+      bundle_id: cdktn.stringToTerraform(this._bundleId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      owner: cdktn.stringToTerraform(this._owner),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bundle_id: {
-        value: cdktf.stringToHclTerraform(this._bundleId),
+        value: cdktn.stringToHclTerraform(this._bundleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner: {
-        value: cdktf.stringToHclTerraform(this._owner),
+        value: cdktn.stringToHclTerraform(this._owner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

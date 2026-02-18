@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ResiliencehubResiliencyPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface ResiliencehubResiliencyPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a high-level geographical location constraint for where resilience policy data can be stored.
   *
@@ -51,7 +51,7 @@ export interface ResiliencehubResiliencyPolicyConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/resiliencehub_resiliency_policy#policy ResiliencehubResiliencyPolicy#policy}
   */
-  readonly policy?: ResiliencehubResiliencyPolicyPolicy[] | cdktf.IResolvable;
+  readonly policy?: ResiliencehubResiliencyPolicyPolicy[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -74,32 +74,32 @@ export interface ResiliencehubResiliencyPolicyPolicyAz {
   readonly rto: string;
 }
 
-export function resiliencehubResiliencyPolicyPolicyAzToTerraform(struct?: ResiliencehubResiliencyPolicyPolicyAz | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resiliencehubResiliencyPolicyPolicyAzToTerraform(struct?: ResiliencehubResiliencyPolicyPolicyAz | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rpo: cdktf.stringToTerraform(struct!.rpo),
-    rto: cdktf.stringToTerraform(struct!.rto),
+    rpo: cdktn.stringToTerraform(struct!.rpo),
+    rto: cdktn.stringToTerraform(struct!.rto),
   }
 }
 
 
-export function resiliencehubResiliencyPolicyPolicyAzToHclTerraform(struct?: ResiliencehubResiliencyPolicyPolicyAz | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resiliencehubResiliencyPolicyPolicyAzToHclTerraform(struct?: ResiliencehubResiliencyPolicyPolicyAz | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rpo: {
-      value: cdktf.stringToHclTerraform(struct!.rpo),
+      value: cdktn.stringToHclTerraform(struct!.rpo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rto: {
-      value: cdktf.stringToHclTerraform(struct!.rto),
+      value: cdktn.stringToHclTerraform(struct!.rto),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -110,9 +110,9 @@ export function resiliencehubResiliencyPolicyPolicyAzToHclTerraform(struct?: Res
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResiliencehubResiliencyPolicyPolicyAzOutputReference extends cdktf.ComplexObject {
+export class ResiliencehubResiliencyPolicyPolicyAzOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -120,11 +120,11 @@ export class ResiliencehubResiliencyPolicyPolicyAzOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ResiliencehubResiliencyPolicyPolicyAz | cdktf.IResolvable | undefined {
+  public get internalValue(): ResiliencehubResiliencyPolicyPolicyAz | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -141,14 +141,14 @@ export class ResiliencehubResiliencyPolicyPolicyAzOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ResiliencehubResiliencyPolicyPolicyAz | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ResiliencehubResiliencyPolicyPolicyAz | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._rpo = undefined;
       this._rto = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -187,15 +187,15 @@ export class ResiliencehubResiliencyPolicyPolicyAzOutputReference extends cdktf.
   }
 }
 
-export class ResiliencehubResiliencyPolicyPolicyAzList extends cdktf.ComplexList {
-  public internalValue? : ResiliencehubResiliencyPolicyPolicyAz[] | cdktf.IResolvable
+export class ResiliencehubResiliencyPolicyPolicyAzList extends cdktn.ComplexList {
+  public internalValue? : ResiliencehubResiliencyPolicyPolicyAz[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -221,32 +221,32 @@ export interface ResiliencehubResiliencyPolicyPolicyHardware {
   readonly rto: string;
 }
 
-export function resiliencehubResiliencyPolicyPolicyHardwareToTerraform(struct?: ResiliencehubResiliencyPolicyPolicyHardware | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resiliencehubResiliencyPolicyPolicyHardwareToTerraform(struct?: ResiliencehubResiliencyPolicyPolicyHardware | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rpo: cdktf.stringToTerraform(struct!.rpo),
-    rto: cdktf.stringToTerraform(struct!.rto),
+    rpo: cdktn.stringToTerraform(struct!.rpo),
+    rto: cdktn.stringToTerraform(struct!.rto),
   }
 }
 
 
-export function resiliencehubResiliencyPolicyPolicyHardwareToHclTerraform(struct?: ResiliencehubResiliencyPolicyPolicyHardware | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resiliencehubResiliencyPolicyPolicyHardwareToHclTerraform(struct?: ResiliencehubResiliencyPolicyPolicyHardware | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rpo: {
-      value: cdktf.stringToHclTerraform(struct!.rpo),
+      value: cdktn.stringToHclTerraform(struct!.rpo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rto: {
-      value: cdktf.stringToHclTerraform(struct!.rto),
+      value: cdktn.stringToHclTerraform(struct!.rto),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -257,9 +257,9 @@ export function resiliencehubResiliencyPolicyPolicyHardwareToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResiliencehubResiliencyPolicyPolicyHardwareOutputReference extends cdktf.ComplexObject {
+export class ResiliencehubResiliencyPolicyPolicyHardwareOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -267,11 +267,11 @@ export class ResiliencehubResiliencyPolicyPolicyHardwareOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ResiliencehubResiliencyPolicyPolicyHardware | cdktf.IResolvable | undefined {
+  public get internalValue(): ResiliencehubResiliencyPolicyPolicyHardware | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -288,14 +288,14 @@ export class ResiliencehubResiliencyPolicyPolicyHardwareOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ResiliencehubResiliencyPolicyPolicyHardware | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ResiliencehubResiliencyPolicyPolicyHardware | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._rpo = undefined;
       this._rto = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -334,15 +334,15 @@ export class ResiliencehubResiliencyPolicyPolicyHardwareOutputReference extends 
   }
 }
 
-export class ResiliencehubResiliencyPolicyPolicyHardwareList extends cdktf.ComplexList {
-  public internalValue? : ResiliencehubResiliencyPolicyPolicyHardware[] | cdktf.IResolvable
+export class ResiliencehubResiliencyPolicyPolicyHardwareList extends cdktn.ComplexList {
+  public internalValue? : ResiliencehubResiliencyPolicyPolicyHardware[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -368,32 +368,32 @@ export interface ResiliencehubResiliencyPolicyPolicyRegion {
   readonly rto?: string;
 }
 
-export function resiliencehubResiliencyPolicyPolicyRegionToTerraform(struct?: ResiliencehubResiliencyPolicyPolicyRegion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resiliencehubResiliencyPolicyPolicyRegionToTerraform(struct?: ResiliencehubResiliencyPolicyPolicyRegion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rpo: cdktf.stringToTerraform(struct!.rpo),
-    rto: cdktf.stringToTerraform(struct!.rto),
+    rpo: cdktn.stringToTerraform(struct!.rpo),
+    rto: cdktn.stringToTerraform(struct!.rto),
   }
 }
 
 
-export function resiliencehubResiliencyPolicyPolicyRegionToHclTerraform(struct?: ResiliencehubResiliencyPolicyPolicyRegion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resiliencehubResiliencyPolicyPolicyRegionToHclTerraform(struct?: ResiliencehubResiliencyPolicyPolicyRegion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rpo: {
-      value: cdktf.stringToHclTerraform(struct!.rpo),
+      value: cdktn.stringToHclTerraform(struct!.rpo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rto: {
-      value: cdktf.stringToHclTerraform(struct!.rto),
+      value: cdktn.stringToHclTerraform(struct!.rto),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -404,9 +404,9 @@ export function resiliencehubResiliencyPolicyPolicyRegionToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResiliencehubResiliencyPolicyPolicyRegionOutputReference extends cdktf.ComplexObject {
+export class ResiliencehubResiliencyPolicyPolicyRegionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -414,11 +414,11 @@ export class ResiliencehubResiliencyPolicyPolicyRegionOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ResiliencehubResiliencyPolicyPolicyRegion | cdktf.IResolvable | undefined {
+  public get internalValue(): ResiliencehubResiliencyPolicyPolicyRegion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -435,14 +435,14 @@ export class ResiliencehubResiliencyPolicyPolicyRegionOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ResiliencehubResiliencyPolicyPolicyRegion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ResiliencehubResiliencyPolicyPolicyRegion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._rpo = undefined;
       this._rto = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -487,15 +487,15 @@ export class ResiliencehubResiliencyPolicyPolicyRegionOutputReference extends cd
   }
 }
 
-export class ResiliencehubResiliencyPolicyPolicyRegionList extends cdktf.ComplexList {
-  public internalValue? : ResiliencehubResiliencyPolicyPolicyRegion[] | cdktf.IResolvable
+export class ResiliencehubResiliencyPolicyPolicyRegionList extends cdktn.ComplexList {
+  public internalValue? : ResiliencehubResiliencyPolicyPolicyRegion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -521,32 +521,32 @@ export interface ResiliencehubResiliencyPolicyPolicySoftware {
   readonly rto: string;
 }
 
-export function resiliencehubResiliencyPolicyPolicySoftwareToTerraform(struct?: ResiliencehubResiliencyPolicyPolicySoftware | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resiliencehubResiliencyPolicyPolicySoftwareToTerraform(struct?: ResiliencehubResiliencyPolicyPolicySoftware | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rpo: cdktf.stringToTerraform(struct!.rpo),
-    rto: cdktf.stringToTerraform(struct!.rto),
+    rpo: cdktn.stringToTerraform(struct!.rpo),
+    rto: cdktn.stringToTerraform(struct!.rto),
   }
 }
 
 
-export function resiliencehubResiliencyPolicyPolicySoftwareToHclTerraform(struct?: ResiliencehubResiliencyPolicyPolicySoftware | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resiliencehubResiliencyPolicyPolicySoftwareToHclTerraform(struct?: ResiliencehubResiliencyPolicyPolicySoftware | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rpo: {
-      value: cdktf.stringToHclTerraform(struct!.rpo),
+      value: cdktn.stringToHclTerraform(struct!.rpo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rto: {
-      value: cdktf.stringToHclTerraform(struct!.rto),
+      value: cdktn.stringToHclTerraform(struct!.rto),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -557,9 +557,9 @@ export function resiliencehubResiliencyPolicyPolicySoftwareToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResiliencehubResiliencyPolicyPolicySoftwareOutputReference extends cdktf.ComplexObject {
+export class ResiliencehubResiliencyPolicyPolicySoftwareOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -567,11 +567,11 @@ export class ResiliencehubResiliencyPolicyPolicySoftwareOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ResiliencehubResiliencyPolicyPolicySoftware | cdktf.IResolvable | undefined {
+  public get internalValue(): ResiliencehubResiliencyPolicyPolicySoftware | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -588,14 +588,14 @@ export class ResiliencehubResiliencyPolicyPolicySoftwareOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ResiliencehubResiliencyPolicyPolicySoftware | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ResiliencehubResiliencyPolicyPolicySoftware | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._rpo = undefined;
       this._rto = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -634,15 +634,15 @@ export class ResiliencehubResiliencyPolicyPolicySoftwareOutputReference extends 
   }
 }
 
-export class ResiliencehubResiliencyPolicyPolicySoftwareList extends cdktf.ComplexList {
-  public internalValue? : ResiliencehubResiliencyPolicyPolicySoftware[] | cdktf.IResolvable
+export class ResiliencehubResiliencyPolicyPolicySoftwareList extends cdktn.ComplexList {
+  public internalValue? : ResiliencehubResiliencyPolicyPolicySoftware[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -659,67 +659,67 @@ export interface ResiliencehubResiliencyPolicyPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/resiliencehub_resiliency_policy#az ResiliencehubResiliencyPolicy#az}
   */
-  readonly az?: ResiliencehubResiliencyPolicyPolicyAz[] | cdktf.IResolvable;
+  readonly az?: ResiliencehubResiliencyPolicyPolicyAz[] | cdktn.IResolvable;
   /**
   * hardware block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/resiliencehub_resiliency_policy#hardware ResiliencehubResiliencyPolicy#hardware}
   */
-  readonly hardware?: ResiliencehubResiliencyPolicyPolicyHardware[] | cdktf.IResolvable;
+  readonly hardware?: ResiliencehubResiliencyPolicyPolicyHardware[] | cdktn.IResolvable;
   /**
   * region block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/resiliencehub_resiliency_policy#region ResiliencehubResiliencyPolicy#region}
   */
-  readonly region?: ResiliencehubResiliencyPolicyPolicyRegion[] | cdktf.IResolvable;
+  readonly region?: ResiliencehubResiliencyPolicyPolicyRegion[] | cdktn.IResolvable;
   /**
   * software block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/resiliencehub_resiliency_policy#software ResiliencehubResiliencyPolicy#software}
   */
-  readonly softwareAttribute?: ResiliencehubResiliencyPolicyPolicySoftware[] | cdktf.IResolvable;
+  readonly softwareAttribute?: ResiliencehubResiliencyPolicyPolicySoftware[] | cdktn.IResolvable;
 }
 
-export function resiliencehubResiliencyPolicyPolicyToTerraform(struct?: ResiliencehubResiliencyPolicyPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resiliencehubResiliencyPolicyPolicyToTerraform(struct?: ResiliencehubResiliencyPolicyPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    az: cdktf.listMapper(resiliencehubResiliencyPolicyPolicyAzToTerraform, true)(struct!.az),
-    hardware: cdktf.listMapper(resiliencehubResiliencyPolicyPolicyHardwareToTerraform, true)(struct!.hardware),
-    region: cdktf.listMapper(resiliencehubResiliencyPolicyPolicyRegionToTerraform, true)(struct!.region),
-    software: cdktf.listMapper(resiliencehubResiliencyPolicyPolicySoftwareToTerraform, true)(struct!.softwareAttribute),
+    az: cdktn.listMapper(resiliencehubResiliencyPolicyPolicyAzToTerraform, true)(struct!.az),
+    hardware: cdktn.listMapper(resiliencehubResiliencyPolicyPolicyHardwareToTerraform, true)(struct!.hardware),
+    region: cdktn.listMapper(resiliencehubResiliencyPolicyPolicyRegionToTerraform, true)(struct!.region),
+    software: cdktn.listMapper(resiliencehubResiliencyPolicyPolicySoftwareToTerraform, true)(struct!.softwareAttribute),
   }
 }
 
 
-export function resiliencehubResiliencyPolicyPolicyToHclTerraform(struct?: ResiliencehubResiliencyPolicyPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resiliencehubResiliencyPolicyPolicyToHclTerraform(struct?: ResiliencehubResiliencyPolicyPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     az: {
-      value: cdktf.listMapperHcl(resiliencehubResiliencyPolicyPolicyAzToHclTerraform, true)(struct!.az),
+      value: cdktn.listMapperHcl(resiliencehubResiliencyPolicyPolicyAzToHclTerraform, true)(struct!.az),
       isBlock: true,
       type: "list",
       storageClassType: "ResiliencehubResiliencyPolicyPolicyAzList",
     },
     hardware: {
-      value: cdktf.listMapperHcl(resiliencehubResiliencyPolicyPolicyHardwareToHclTerraform, true)(struct!.hardware),
+      value: cdktn.listMapperHcl(resiliencehubResiliencyPolicyPolicyHardwareToHclTerraform, true)(struct!.hardware),
       isBlock: true,
       type: "list",
       storageClassType: "ResiliencehubResiliencyPolicyPolicyHardwareList",
     },
     region: {
-      value: cdktf.listMapperHcl(resiliencehubResiliencyPolicyPolicyRegionToHclTerraform, true)(struct!.region),
+      value: cdktn.listMapperHcl(resiliencehubResiliencyPolicyPolicyRegionToHclTerraform, true)(struct!.region),
       isBlock: true,
       type: "list",
       storageClassType: "ResiliencehubResiliencyPolicyPolicyRegionList",
     },
     software: {
-      value: cdktf.listMapperHcl(resiliencehubResiliencyPolicyPolicySoftwareToHclTerraform, true)(struct!.softwareAttribute),
+      value: cdktn.listMapperHcl(resiliencehubResiliencyPolicyPolicySoftwareToHclTerraform, true)(struct!.softwareAttribute),
       isBlock: true,
       type: "list",
       storageClassType: "ResiliencehubResiliencyPolicyPolicySoftwareList",
@@ -730,9 +730,9 @@ export function resiliencehubResiliencyPolicyPolicyToHclTerraform(struct?: Resil
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResiliencehubResiliencyPolicyPolicyOutputReference extends cdktf.ComplexObject {
+export class ResiliencehubResiliencyPolicyPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -740,11 +740,11 @@ export class ResiliencehubResiliencyPolicyPolicyOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ResiliencehubResiliencyPolicyPolicy | cdktf.IResolvable | undefined {
+  public get internalValue(): ResiliencehubResiliencyPolicyPolicy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -769,7 +769,7 @@ export class ResiliencehubResiliencyPolicyPolicyOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ResiliencehubResiliencyPolicyPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ResiliencehubResiliencyPolicyPolicy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -778,7 +778,7 @@ export class ResiliencehubResiliencyPolicyPolicyOutputReference extends cdktf.Co
       this._region.internalValue = undefined;
       this._software.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -797,7 +797,7 @@ export class ResiliencehubResiliencyPolicyPolicyOutputReference extends cdktf.Co
   public get az() {
     return this._az;
   }
-  public putAz(value: ResiliencehubResiliencyPolicyPolicyAz[] | cdktf.IResolvable) {
+  public putAz(value: ResiliencehubResiliencyPolicyPolicyAz[] | cdktn.IResolvable) {
     this._az.internalValue = value;
   }
   public resetAz() {
@@ -813,7 +813,7 @@ export class ResiliencehubResiliencyPolicyPolicyOutputReference extends cdktf.Co
   public get hardware() {
     return this._hardware;
   }
-  public putHardware(value: ResiliencehubResiliencyPolicyPolicyHardware[] | cdktf.IResolvable) {
+  public putHardware(value: ResiliencehubResiliencyPolicyPolicyHardware[] | cdktn.IResolvable) {
     this._hardware.internalValue = value;
   }
   public resetHardware() {
@@ -829,7 +829,7 @@ export class ResiliencehubResiliencyPolicyPolicyOutputReference extends cdktf.Co
   public get region() {
     return this._region;
   }
-  public putRegion(value: ResiliencehubResiliencyPolicyPolicyRegion[] | cdktf.IResolvable) {
+  public putRegion(value: ResiliencehubResiliencyPolicyPolicyRegion[] | cdktn.IResolvable) {
     this._region.internalValue = value;
   }
   public resetRegion() {
@@ -845,7 +845,7 @@ export class ResiliencehubResiliencyPolicyPolicyOutputReference extends cdktf.Co
   public get softwareAttribute() {
     return this._software;
   }
-  public putSoftwareAttribute(value: ResiliencehubResiliencyPolicyPolicySoftware[] | cdktf.IResolvable) {
+  public putSoftwareAttribute(value: ResiliencehubResiliencyPolicyPolicySoftware[] | cdktn.IResolvable) {
     this._software.internalValue = value;
   }
   public resetSoftwareAttribute() {
@@ -857,15 +857,15 @@ export class ResiliencehubResiliencyPolicyPolicyOutputReference extends cdktf.Co
   }
 }
 
-export class ResiliencehubResiliencyPolicyPolicyList extends cdktf.ComplexList {
-  public internalValue? : ResiliencehubResiliencyPolicyPolicy[] | cdktf.IResolvable
+export class ResiliencehubResiliencyPolicyPolicyList extends cdktn.ComplexList {
+  public internalValue? : ResiliencehubResiliencyPolicyPolicy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -897,39 +897,39 @@ export interface ResiliencehubResiliencyPolicyTimeouts {
   readonly update?: string;
 }
 
-export function resiliencehubResiliencyPolicyTimeoutsToTerraform(struct?: ResiliencehubResiliencyPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resiliencehubResiliencyPolicyTimeoutsToTerraform(struct?: ResiliencehubResiliencyPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function resiliencehubResiliencyPolicyTimeoutsToHclTerraform(struct?: ResiliencehubResiliencyPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resiliencehubResiliencyPolicyTimeoutsToHclTerraform(struct?: ResiliencehubResiliencyPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -940,19 +940,19 @@ export function resiliencehubResiliencyPolicyTimeoutsToHclTerraform(struct?: Res
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResiliencehubResiliencyPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ResiliencehubResiliencyPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ResiliencehubResiliencyPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ResiliencehubResiliencyPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -973,7 +973,7 @@ export class ResiliencehubResiliencyPolicyTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ResiliencehubResiliencyPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ResiliencehubResiliencyPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -981,7 +981,7 @@ export class ResiliencehubResiliencyPolicyTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1046,7 +1046,7 @@ export class ResiliencehubResiliencyPolicyTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/resiliencehub_resiliency_policy aws_resiliencehub_resiliency_policy}
 */
-export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
+export class ResiliencehubResiliencyPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1057,14 +1057,14 @@ export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ResiliencehubResiliencyPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ResiliencehubResiliencyPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ResiliencehubResiliencyPolicy to import
   * @param importFromId The id of the existing ResiliencehubResiliencyPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/resiliencehub_resiliency_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ResiliencehubResiliencyPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_resiliencehub_resiliency_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_resiliencehub_resiliency_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -1196,7 +1196,7 @@ export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1219,7 +1219,7 @@ export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
   public get policy() {
     return this._policy;
   }
-  public putPolicy(value: ResiliencehubResiliencyPolicyPolicy[] | cdktf.IResolvable) {
+  public putPolicy(value: ResiliencehubResiliencyPolicyPolicy[] | cdktn.IResolvable) {
     this._policy.internalValue = value;
   }
   public resetPolicy() {
@@ -1252,13 +1252,13 @@ export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_location_constraint: cdktf.stringToTerraform(this._dataLocationConstraint),
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tier: cdktf.stringToTerraform(this._tier),
-      policy: cdktf.listMapper(resiliencehubResiliencyPolicyPolicyToTerraform, true)(this._policy.internalValue),
+      data_location_constraint: cdktn.stringToTerraform(this._dataLocationConstraint),
+      description: cdktn.stringToTerraform(this._description),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tier: cdktn.stringToTerraform(this._tier),
+      policy: cdktn.listMapper(resiliencehubResiliencyPolicyPolicyToTerraform, true)(this._policy.internalValue),
       timeouts: resiliencehubResiliencyPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1266,43 +1266,43 @@ export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_location_constraint: {
-        value: cdktf.stringToHclTerraform(this._dataLocationConstraint),
+        value: cdktn.stringToHclTerraform(this._dataLocationConstraint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tier: {
-        value: cdktf.stringToHclTerraform(this._tier),
+        value: cdktn.stringToHclTerraform(this._tier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy: {
-        value: cdktf.listMapperHcl(resiliencehubResiliencyPolicyPolicyToHclTerraform, true)(this._policy.internalValue),
+        value: cdktn.listMapperHcl(resiliencehubResiliencyPolicyPolicyToHclTerraform, true)(this._policy.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ResiliencehubResiliencyPolicyPolicyList",

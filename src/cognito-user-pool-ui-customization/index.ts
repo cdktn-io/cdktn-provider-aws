@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CognitoUserPoolUiCustomizationConfig extends cdktf.TerraformMetaArguments {
+export interface CognitoUserPoolUiCustomizationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_user_pool_ui_customization#client_id CognitoUserPoolUiCustomization#client_id}
   */
@@ -46,7 +46,7 @@ export interface CognitoUserPoolUiCustomizationConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_user_pool_ui_customization aws_cognito_user_pool_ui_customization}
 */
-export class CognitoUserPoolUiCustomization extends cdktf.TerraformResource {
+export class CognitoUserPoolUiCustomization extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class CognitoUserPoolUiCustomization extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CognitoUserPoolUiCustomization resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CognitoUserPoolUiCustomization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitoUserPoolUiCustomization to import
   * @param importFromId The id of the existing CognitoUserPoolUiCustomization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_user_pool_ui_customization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitoUserPoolUiCustomization to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_user_pool_ui_customization", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_user_pool_ui_customization", importId: importFromId, provider });
       }
 
   // ===========
@@ -225,49 +225,49 @@ export class CognitoUserPoolUiCustomization extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_id: cdktf.stringToTerraform(this._clientId),
-      css: cdktf.stringToTerraform(this._css),
-      id: cdktf.stringToTerraform(this._id),
-      image_file: cdktf.stringToTerraform(this._imageFile),
-      region: cdktf.stringToTerraform(this._region),
-      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      css: cdktn.stringToTerraform(this._css),
+      id: cdktn.stringToTerraform(this._id),
+      image_file: cdktn.stringToTerraform(this._imageFile),
+      region: cdktn.stringToTerraform(this._region),
+      user_pool_id: cdktn.stringToTerraform(this._userPoolId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       css: {
-        value: cdktf.stringToHclTerraform(this._css),
+        value: cdktn.stringToHclTerraform(this._css),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_file: {
-        value: cdktf.stringToHclTerraform(this._imageFile),
+        value: cdktn.stringToHclTerraform(this._imageFile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_pool_id: {
-        value: cdktf.stringToHclTerraform(this._userPoolId),
+        value: cdktn.stringToHclTerraform(this._userPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

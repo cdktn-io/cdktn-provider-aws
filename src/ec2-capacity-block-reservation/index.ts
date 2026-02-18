@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2CapacityBlockReservationConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2CapacityBlockReservationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_capacity_block_reservation#capacity_block_offering_id Ec2CapacityBlockReservation#capacity_block_offering_id}
   */
@@ -46,25 +46,25 @@ export interface Ec2CapacityBlockReservationTimeouts {
   readonly create?: string;
 }
 
-export function ec2CapacityBlockReservationTimeoutsToTerraform(struct?: Ec2CapacityBlockReservationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2CapacityBlockReservationTimeoutsToTerraform(struct?: Ec2CapacityBlockReservationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function ec2CapacityBlockReservationTimeoutsToHclTerraform(struct?: Ec2CapacityBlockReservationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2CapacityBlockReservationTimeoutsToHclTerraform(struct?: Ec2CapacityBlockReservationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -75,19 +75,19 @@ export function ec2CapacityBlockReservationTimeoutsToHclTerraform(struct?: Ec2Ca
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2CapacityBlockReservationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Ec2CapacityBlockReservationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Ec2CapacityBlockReservationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Ec2CapacityBlockReservationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -100,13 +100,13 @@ export class Ec2CapacityBlockReservationTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Ec2CapacityBlockReservationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Ec2CapacityBlockReservationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -137,7 +137,7 @@ export class Ec2CapacityBlockReservationTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_capacity_block_reservation aws_ec2_capacity_block_reservation}
 */
-export class Ec2CapacityBlockReservation extends cdktf.TerraformResource {
+export class Ec2CapacityBlockReservation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -148,14 +148,14 @@ export class Ec2CapacityBlockReservation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2CapacityBlockReservation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2CapacityBlockReservation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2CapacityBlockReservation to import
   * @param importFromId The id of the existing Ec2CapacityBlockReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_capacity_block_reservation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2CapacityBlockReservation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_capacity_block_reservation", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_capacity_block_reservation", importId: importFromId, provider });
       }
 
   // ===========
@@ -320,7 +320,7 @@ export class Ec2CapacityBlockReservation extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -352,10 +352,10 @@ export class Ec2CapacityBlockReservation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capacity_block_offering_id: cdktf.stringToTerraform(this._capacityBlockOfferingId),
-      instance_platform: cdktf.stringToTerraform(this._instancePlatform),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      capacity_block_offering_id: cdktn.stringToTerraform(this._capacityBlockOfferingId),
+      instance_platform: cdktn.stringToTerraform(this._instancePlatform),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: ec2CapacityBlockReservationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -363,25 +363,25 @@ export class Ec2CapacityBlockReservation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       capacity_block_offering_id: {
-        value: cdktf.stringToHclTerraform(this._capacityBlockOfferingId),
+        value: cdktn.stringToHclTerraform(this._capacityBlockOfferingId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_platform: {
-        value: cdktf.stringToHclTerraform(this._instancePlatform),
+        value: cdktn.stringToHclTerraform(this._instancePlatform),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

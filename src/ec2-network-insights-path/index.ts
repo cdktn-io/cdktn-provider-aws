@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2NetworkInsightsPathConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2NetworkInsightsPathConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_network_insights_path#destination Ec2NetworkInsightsPath#destination}
   */
@@ -82,31 +82,31 @@ export interface Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRange {
 }
 
 export function ec2NetworkInsightsPathFilterAtDestinationDestinationPortRangeToTerraform(struct?: Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference | Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from_port: cdktf.numberToTerraform(struct!.fromPort),
-    to_port: cdktf.numberToTerraform(struct!.toPort),
+    from_port: cdktn.numberToTerraform(struct!.fromPort),
+    to_port: cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
 export function ec2NetworkInsightsPathFilterAtDestinationDestinationPortRangeToHclTerraform(struct?: Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference | Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from_port: {
-      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      value: cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to_port: {
-      value: cdktf.numberToHclTerraform(struct!.toPort),
+      value: cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -117,14 +117,14 @@ export function ec2NetworkInsightsPathFilterAtDestinationDestinationPortRangeToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference extends cdktf.ComplexObject {
+export class Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -199,31 +199,31 @@ export interface Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange {
 }
 
 export function ec2NetworkInsightsPathFilterAtDestinationSourcePortRangeToTerraform(struct?: Ec2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference | Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from_port: cdktf.numberToTerraform(struct!.fromPort),
-    to_port: cdktf.numberToTerraform(struct!.toPort),
+    from_port: cdktn.numberToTerraform(struct!.fromPort),
+    to_port: cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
 export function ec2NetworkInsightsPathFilterAtDestinationSourcePortRangeToHclTerraform(struct?: Ec2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference | Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from_port: {
-      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      value: cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to_port: {
-      value: cdktf.numberToHclTerraform(struct!.toPort),
+      value: cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -234,14 +234,14 @@ export function ec2NetworkInsightsPathFilterAtDestinationSourcePortRangeToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference extends cdktf.ComplexObject {
+export class Ec2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -328,13 +328,13 @@ export interface Ec2NetworkInsightsPathFilterAtDestination {
 }
 
 export function ec2NetworkInsightsPathFilterAtDestinationToTerraform(struct?: Ec2NetworkInsightsPathFilterAtDestinationOutputReference | Ec2NetworkInsightsPathFilterAtDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination_address: cdktf.stringToTerraform(struct!.destinationAddress),
-    source_address: cdktf.stringToTerraform(struct!.sourceAddress),
+    destination_address: cdktn.stringToTerraform(struct!.destinationAddress),
+    source_address: cdktn.stringToTerraform(struct!.sourceAddress),
     destination_port_range: ec2NetworkInsightsPathFilterAtDestinationDestinationPortRangeToTerraform(struct!.destinationPortRange),
     source_port_range: ec2NetworkInsightsPathFilterAtDestinationSourcePortRangeToTerraform(struct!.sourcePortRange),
   }
@@ -342,19 +342,19 @@ export function ec2NetworkInsightsPathFilterAtDestinationToTerraform(struct?: Ec
 
 
 export function ec2NetworkInsightsPathFilterAtDestinationToHclTerraform(struct?: Ec2NetworkInsightsPathFilterAtDestinationOutputReference | Ec2NetworkInsightsPathFilterAtDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination_address: {
-      value: cdktf.stringToHclTerraform(struct!.destinationAddress),
+      value: cdktn.stringToHclTerraform(struct!.destinationAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_address: {
-      value: cdktf.stringToHclTerraform(struct!.sourceAddress),
+      value: cdktn.stringToHclTerraform(struct!.sourceAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -377,14 +377,14 @@ export function ec2NetworkInsightsPathFilterAtDestinationToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2NetworkInsightsPathFilterAtDestinationOutputReference extends cdktf.ComplexObject {
+export class Ec2NetworkInsightsPathFilterAtDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -503,31 +503,31 @@ export interface Ec2NetworkInsightsPathFilterAtSourceDestinationPortRange {
 }
 
 export function ec2NetworkInsightsPathFilterAtSourceDestinationPortRangeToTerraform(struct?: Ec2NetworkInsightsPathFilterAtSourceDestinationPortRangeOutputReference | Ec2NetworkInsightsPathFilterAtSourceDestinationPortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from_port: cdktf.numberToTerraform(struct!.fromPort),
-    to_port: cdktf.numberToTerraform(struct!.toPort),
+    from_port: cdktn.numberToTerraform(struct!.fromPort),
+    to_port: cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
 export function ec2NetworkInsightsPathFilterAtSourceDestinationPortRangeToHclTerraform(struct?: Ec2NetworkInsightsPathFilterAtSourceDestinationPortRangeOutputReference | Ec2NetworkInsightsPathFilterAtSourceDestinationPortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from_port: {
-      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      value: cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to_port: {
-      value: cdktf.numberToHclTerraform(struct!.toPort),
+      value: cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -538,14 +538,14 @@ export function ec2NetworkInsightsPathFilterAtSourceDestinationPortRangeToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2NetworkInsightsPathFilterAtSourceDestinationPortRangeOutputReference extends cdktf.ComplexObject {
+export class Ec2NetworkInsightsPathFilterAtSourceDestinationPortRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -620,31 +620,31 @@ export interface Ec2NetworkInsightsPathFilterAtSourceSourcePortRange {
 }
 
 export function ec2NetworkInsightsPathFilterAtSourceSourcePortRangeToTerraform(struct?: Ec2NetworkInsightsPathFilterAtSourceSourcePortRangeOutputReference | Ec2NetworkInsightsPathFilterAtSourceSourcePortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from_port: cdktf.numberToTerraform(struct!.fromPort),
-    to_port: cdktf.numberToTerraform(struct!.toPort),
+    from_port: cdktn.numberToTerraform(struct!.fromPort),
+    to_port: cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
 export function ec2NetworkInsightsPathFilterAtSourceSourcePortRangeToHclTerraform(struct?: Ec2NetworkInsightsPathFilterAtSourceSourcePortRangeOutputReference | Ec2NetworkInsightsPathFilterAtSourceSourcePortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from_port: {
-      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      value: cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to_port: {
-      value: cdktf.numberToHclTerraform(struct!.toPort),
+      value: cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -655,14 +655,14 @@ export function ec2NetworkInsightsPathFilterAtSourceSourcePortRangeToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2NetworkInsightsPathFilterAtSourceSourcePortRangeOutputReference extends cdktf.ComplexObject {
+export class Ec2NetworkInsightsPathFilterAtSourceSourcePortRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -749,13 +749,13 @@ export interface Ec2NetworkInsightsPathFilterAtSource {
 }
 
 export function ec2NetworkInsightsPathFilterAtSourceToTerraform(struct?: Ec2NetworkInsightsPathFilterAtSourceOutputReference | Ec2NetworkInsightsPathFilterAtSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination_address: cdktf.stringToTerraform(struct!.destinationAddress),
-    source_address: cdktf.stringToTerraform(struct!.sourceAddress),
+    destination_address: cdktn.stringToTerraform(struct!.destinationAddress),
+    source_address: cdktn.stringToTerraform(struct!.sourceAddress),
     destination_port_range: ec2NetworkInsightsPathFilterAtSourceDestinationPortRangeToTerraform(struct!.destinationPortRange),
     source_port_range: ec2NetworkInsightsPathFilterAtSourceSourcePortRangeToTerraform(struct!.sourcePortRange),
   }
@@ -763,19 +763,19 @@ export function ec2NetworkInsightsPathFilterAtSourceToTerraform(struct?: Ec2Netw
 
 
 export function ec2NetworkInsightsPathFilterAtSourceToHclTerraform(struct?: Ec2NetworkInsightsPathFilterAtSourceOutputReference | Ec2NetworkInsightsPathFilterAtSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination_address: {
-      value: cdktf.stringToHclTerraform(struct!.destinationAddress),
+      value: cdktn.stringToHclTerraform(struct!.destinationAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_address: {
-      value: cdktf.stringToHclTerraform(struct!.sourceAddress),
+      value: cdktn.stringToHclTerraform(struct!.sourceAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -798,14 +798,14 @@ export function ec2NetworkInsightsPathFilterAtSourceToHclTerraform(struct?: Ec2N
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2NetworkInsightsPathFilterAtSourceOutputReference extends cdktf.ComplexObject {
+export class Ec2NetworkInsightsPathFilterAtSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -916,7 +916,7 @@ export class Ec2NetworkInsightsPathFilterAtSourceOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_network_insights_path aws_ec2_network_insights_path}
 */
-export class Ec2NetworkInsightsPath extends cdktf.TerraformResource {
+export class Ec2NetworkInsightsPath extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -927,14 +927,14 @@ export class Ec2NetworkInsightsPath extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2NetworkInsightsPath resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2NetworkInsightsPath resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2NetworkInsightsPath to import
   * @param importFromId The id of the existing Ec2NetworkInsightsPath that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_network_insights_path#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2NetworkInsightsPath to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_network_insights_path", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_network_insights_path", importId: importFromId, provider });
       }
 
   // ===========
@@ -1189,16 +1189,16 @@ export class Ec2NetworkInsightsPath extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination: cdktf.stringToTerraform(this._destination),
-      destination_ip: cdktf.stringToTerraform(this._destinationIp),
-      destination_port: cdktf.numberToTerraform(this._destinationPort),
-      id: cdktf.stringToTerraform(this._id),
-      protocol: cdktf.stringToTerraform(this._protocol),
-      region: cdktf.stringToTerraform(this._region),
-      source: cdktf.stringToTerraform(this._source),
-      source_ip: cdktf.stringToTerraform(this._sourceIp),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      destination: cdktn.stringToTerraform(this._destination),
+      destination_ip: cdktn.stringToTerraform(this._destinationIp),
+      destination_port: cdktn.numberToTerraform(this._destinationPort),
+      id: cdktn.stringToTerraform(this._id),
+      protocol: cdktn.stringToTerraform(this._protocol),
+      region: cdktn.stringToTerraform(this._region),
+      source: cdktn.stringToTerraform(this._source),
+      source_ip: cdktn.stringToTerraform(this._sourceIp),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       filter_at_destination: ec2NetworkInsightsPathFilterAtDestinationToTerraform(this._filterAtDestination.internalValue),
       filter_at_source: ec2NetworkInsightsPathFilterAtSourceToTerraform(this._filterAtSource.internalValue),
     };
@@ -1207,61 +1207,61 @@ export class Ec2NetworkInsightsPath extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       destination: {
-        value: cdktf.stringToHclTerraform(this._destination),
+        value: cdktn.stringToHclTerraform(this._destination),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_ip: {
-        value: cdktf.stringToHclTerraform(this._destinationIp),
+        value: cdktn.stringToHclTerraform(this._destinationIp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_port: {
-        value: cdktf.numberToHclTerraform(this._destinationPort),
+        value: cdktn.numberToHclTerraform(this._destinationPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocol: {
-        value: cdktf.stringToHclTerraform(this._protocol),
+        value: cdktn.stringToHclTerraform(this._protocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source: {
-        value: cdktf.stringToHclTerraform(this._source),
+        value: cdktn.stringToHclTerraform(this._source),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_ip: {
-        value: cdktf.stringToHclTerraform(this._sourceIp),
+        value: cdktn.stringToHclTerraform(this._sourceIp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudfrontkeyvaluestoreKeysExclusiveConfig extends cdktf.TerraformMetaArguments {
+export interface CloudfrontkeyvaluestoreKeysExclusiveConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Amazon Resource Name (ARN) of the Key Value Store.
   *
@@ -29,7 +29,7 @@ export interface CloudfrontkeyvaluestoreKeysExclusiveConfig extends cdktf.Terraf
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfrontkeyvaluestore_keys_exclusive#resource_key_value_pair CloudfrontkeyvaluestoreKeysExclusive#resource_key_value_pair}
   */
-  readonly resourceKeyValuePair?: CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair[] | cdktf.IResolvable;
+  readonly resourceKeyValuePair?: CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair[] | cdktn.IResolvable;
 }
 export interface CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair {
   /**
@@ -46,32 +46,32 @@ export interface CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair {
   readonly value: string;
 }
 
-export function cloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairToTerraform(struct?: CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairToTerraform(struct?: CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function cloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairToHclTerraform(struct?: CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairToHclTerraform(struct?: CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -82,9 +82,9 @@ export function cloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairOutputReference extends cdktf.ComplexObject {
+export class CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -92,11 +92,11 @@ export class CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -113,14 +113,14 @@ export class CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -159,15 +159,15 @@ export class CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairOutputRefer
   }
 }
 
-export class CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairList extends cdktf.ComplexList {
-  public internalValue? : CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair[] | cdktf.IResolvable
+export class CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairList extends cdktn.ComplexList {
+  public internalValue? : CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -182,7 +182,7 @@ export class CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairList extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfrontkeyvaluestore_keys_exclusive aws_cloudfrontkeyvaluestore_keys_exclusive}
 */
-export class CloudfrontkeyvaluestoreKeysExclusive extends cdktf.TerraformResource {
+export class CloudfrontkeyvaluestoreKeysExclusive extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -193,14 +193,14 @@ export class CloudfrontkeyvaluestoreKeysExclusive extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudfrontkeyvaluestoreKeysExclusive resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudfrontkeyvaluestoreKeysExclusive resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudfrontkeyvaluestoreKeysExclusive to import
   * @param importFromId The id of the existing CloudfrontkeyvaluestoreKeysExclusive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfrontkeyvaluestore_keys_exclusive#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudfrontkeyvaluestoreKeysExclusive to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfrontkeyvaluestore_keys_exclusive", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfrontkeyvaluestore_keys_exclusive", importId: importFromId, provider });
       }
 
   // ===========
@@ -278,7 +278,7 @@ export class CloudfrontkeyvaluestoreKeysExclusive extends cdktf.TerraformResourc
   public get resourceKeyValuePair() {
     return this._resourceKeyValuePair;
   }
-  public putResourceKeyValuePair(value: CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair[] | cdktf.IResolvable) {
+  public putResourceKeyValuePair(value: CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair[] | cdktn.IResolvable) {
     this._resourceKeyValuePair.internalValue = value;
   }
   public resetResourceKeyValuePair() {
@@ -295,28 +295,28 @@ export class CloudfrontkeyvaluestoreKeysExclusive extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      key_value_store_arn: cdktf.stringToTerraform(this._keyValueStoreArn),
-      max_batch_size: cdktf.numberToTerraform(this._maxBatchSize),
-      resource_key_value_pair: cdktf.listMapper(cloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairToTerraform, true)(this._resourceKeyValuePair.internalValue),
+      key_value_store_arn: cdktn.stringToTerraform(this._keyValueStoreArn),
+      max_batch_size: cdktn.numberToTerraform(this._maxBatchSize),
+      resource_key_value_pair: cdktn.listMapper(cloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairToTerraform, true)(this._resourceKeyValuePair.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       key_value_store_arn: {
-        value: cdktf.stringToHclTerraform(this._keyValueStoreArn),
+        value: cdktn.stringToHclTerraform(this._keyValueStoreArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_batch_size: {
-        value: cdktf.numberToHclTerraform(this._maxBatchSize),
+        value: cdktn.numberToHclTerraform(this._maxBatchSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       resource_key_value_pair: {
-        value: cdktf.listMapperHcl(cloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairToHclTerraform, true)(this._resourceKeyValuePair.internalValue),
+        value: cdktn.listMapperHcl(cloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairToHclTerraform, true)(this._resourceKeyValuePair.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairList",

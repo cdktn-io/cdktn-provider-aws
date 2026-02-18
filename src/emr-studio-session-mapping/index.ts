@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EmrStudioSessionMappingConfig extends cdktf.TerraformMetaArguments {
+export interface EmrStudioSessionMappingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_studio_session_mapping#id EmrStudioSessionMapping#id}
   *
@@ -50,7 +50,7 @@ export interface EmrStudioSessionMappingConfig extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_studio_session_mapping aws_emr_studio_session_mapping}
 */
-export class EmrStudioSessionMapping extends cdktf.TerraformResource {
+export class EmrStudioSessionMapping extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class EmrStudioSessionMapping extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EmrStudioSessionMapping resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EmrStudioSessionMapping resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmrStudioSessionMapping to import
   * @param importFromId The id of the existing EmrStudioSessionMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_studio_session_mapping#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmrStudioSessionMapping to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_emr_studio_session_mapping", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_emr_studio_session_mapping", importId: importFromId, provider });
       }
 
   // ===========
@@ -220,56 +220,56 @@ export class EmrStudioSessionMapping extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      identity_id: cdktf.stringToTerraform(this._identityId),
-      identity_name: cdktf.stringToTerraform(this._identityName),
-      identity_type: cdktf.stringToTerraform(this._identityType),
-      region: cdktf.stringToTerraform(this._region),
-      session_policy_arn: cdktf.stringToTerraform(this._sessionPolicyArn),
-      studio_id: cdktf.stringToTerraform(this._studioId),
+      id: cdktn.stringToTerraform(this._id),
+      identity_id: cdktn.stringToTerraform(this._identityId),
+      identity_name: cdktn.stringToTerraform(this._identityName),
+      identity_type: cdktn.stringToTerraform(this._identityType),
+      region: cdktn.stringToTerraform(this._region),
+      session_policy_arn: cdktn.stringToTerraform(this._sessionPolicyArn),
+      studio_id: cdktn.stringToTerraform(this._studioId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_id: {
-        value: cdktf.stringToHclTerraform(this._identityId),
+        value: cdktn.stringToHclTerraform(this._identityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_name: {
-        value: cdktf.stringToHclTerraform(this._identityName),
+        value: cdktn.stringToHclTerraform(this._identityName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_type: {
-        value: cdktf.stringToHclTerraform(this._identityType),
+        value: cdktn.stringToHclTerraform(this._identityType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       session_policy_arn: {
-        value: cdktf.stringToHclTerraform(this._sessionPolicyArn),
+        value: cdktn.stringToHclTerraform(this._sessionPolicyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       studio_id: {
-        value: cdktf.stringToHclTerraform(this._studioId),
+        value: cdktn.stringToHclTerraform(this._studioId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcSecurityGroupEgressRuleConfig extends cdktf.TerraformMetaArguments {
+export interface VpcSecurityGroupEgressRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_security_group_egress_rule#cidr_ipv4 VpcSecurityGroupEgressRule#cidr_ipv4}
   */
@@ -63,7 +63,7 @@ export interface VpcSecurityGroupEgressRuleConfig extends cdktf.TerraformMetaArg
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_security_group_egress_rule aws_vpc_security_group_egress_rule}
 */
-export class VpcSecurityGroupEgressRule extends cdktf.TerraformResource {
+export class VpcSecurityGroupEgressRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -74,14 +74,14 @@ export class VpcSecurityGroupEgressRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcSecurityGroupEgressRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcSecurityGroupEgressRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcSecurityGroupEgressRule to import
   * @param importFromId The id of the existing VpcSecurityGroupEgressRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_security_group_egress_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcSecurityGroupEgressRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_security_group_egress_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_security_group_egress_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -298,7 +298,7 @@ export class VpcSecurityGroupEgressRule extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -325,84 +325,84 @@ export class VpcSecurityGroupEgressRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr_ipv4: cdktf.stringToTerraform(this._cidrIpv4),
-      cidr_ipv6: cdktf.stringToTerraform(this._cidrIpv6),
-      description: cdktf.stringToTerraform(this._description),
-      from_port: cdktf.numberToTerraform(this._fromPort),
-      ip_protocol: cdktf.stringToTerraform(this._ipProtocol),
-      prefix_list_id: cdktf.stringToTerraform(this._prefixListId),
-      referenced_security_group_id: cdktf.stringToTerraform(this._referencedSecurityGroupId),
-      region: cdktf.stringToTerraform(this._region),
-      security_group_id: cdktf.stringToTerraform(this._securityGroupId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      to_port: cdktf.numberToTerraform(this._toPort),
+      cidr_ipv4: cdktn.stringToTerraform(this._cidrIpv4),
+      cidr_ipv6: cdktn.stringToTerraform(this._cidrIpv6),
+      description: cdktn.stringToTerraform(this._description),
+      from_port: cdktn.numberToTerraform(this._fromPort),
+      ip_protocol: cdktn.stringToTerraform(this._ipProtocol),
+      prefix_list_id: cdktn.stringToTerraform(this._prefixListId),
+      referenced_security_group_id: cdktn.stringToTerraform(this._referencedSecurityGroupId),
+      region: cdktn.stringToTerraform(this._region),
+      security_group_id: cdktn.stringToTerraform(this._securityGroupId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      to_port: cdktn.numberToTerraform(this._toPort),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cidr_ipv4: {
-        value: cdktf.stringToHclTerraform(this._cidrIpv4),
+        value: cdktn.stringToHclTerraform(this._cidrIpv4),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cidr_ipv6: {
-        value: cdktf.stringToHclTerraform(this._cidrIpv6),
+        value: cdktn.stringToHclTerraform(this._cidrIpv6),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       from_port: {
-        value: cdktf.numberToHclTerraform(this._fromPort),
+        value: cdktn.numberToHclTerraform(this._fromPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       ip_protocol: {
-        value: cdktf.stringToHclTerraform(this._ipProtocol),
+        value: cdktn.stringToHclTerraform(this._ipProtocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       prefix_list_id: {
-        value: cdktf.stringToHclTerraform(this._prefixListId),
+        value: cdktn.stringToHclTerraform(this._prefixListId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       referenced_security_group_id: {
-        value: cdktf.stringToHclTerraform(this._referencedSecurityGroupId),
+        value: cdktn.stringToHclTerraform(this._referencedSecurityGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_id: {
-        value: cdktf.stringToHclTerraform(this._securityGroupId),
+        value: cdktn.stringToHclTerraform(this._securityGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       to_port: {
-        value: cdktf.numberToHclTerraform(this._toPort),
+        value: cdktn.numberToHclTerraform(this._toPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

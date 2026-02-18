@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TransferWebAppCustomizationConfig extends cdktf.TerraformMetaArguments {
+export interface TransferWebAppCustomizationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_web_app_customization#favicon_file TransferWebAppCustomization#favicon_file}
   */
@@ -39,7 +39,7 @@ export interface TransferWebAppCustomizationConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_web_app_customization aws_transfer_web_app_customization}
 */
-export class TransferWebAppCustomization extends cdktf.TerraformResource {
+export class TransferWebAppCustomization extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -50,14 +50,14 @@ export class TransferWebAppCustomization extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TransferWebAppCustomization resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TransferWebAppCustomization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransferWebAppCustomization to import
   * @param importFromId The id of the existing TransferWebAppCustomization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_web_app_customization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransferWebAppCustomization to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_web_app_customization", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_web_app_customization", importId: importFromId, provider });
       }
 
   // ===========
@@ -181,42 +181,42 @@ export class TransferWebAppCustomization extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      favicon_file: cdktf.stringToTerraform(this._faviconFile),
-      logo_file: cdktf.stringToTerraform(this._logoFile),
-      region: cdktf.stringToTerraform(this._region),
-      title: cdktf.stringToTerraform(this._title),
-      web_app_id: cdktf.stringToTerraform(this._webAppId),
+      favicon_file: cdktn.stringToTerraform(this._faviconFile),
+      logo_file: cdktn.stringToTerraform(this._logoFile),
+      region: cdktn.stringToTerraform(this._region),
+      title: cdktn.stringToTerraform(this._title),
+      web_app_id: cdktn.stringToTerraform(this._webAppId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       favicon_file: {
-        value: cdktf.stringToHclTerraform(this._faviconFile),
+        value: cdktn.stringToHclTerraform(this._faviconFile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       logo_file: {
-        value: cdktf.stringToHclTerraform(this._logoFile),
+        value: cdktn.stringToHclTerraform(this._logoFile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       title: {
-        value: cdktf.stringToHclTerraform(this._title),
+        value: cdktn.stringToHclTerraform(this._title),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       web_app_id: {
-        value: cdktf.stringToHclTerraform(this._webAppId),
+        value: cdktn.stringToHclTerraform(this._webAppId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

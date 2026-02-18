@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DynamodbTableExportConfig extends cdktf.TerraformMetaArguments {
+export interface DynamodbTableExportConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table_export#export_format DynamodbTableExport#export_format}
   */
@@ -90,38 +90,38 @@ export interface DynamodbTableExportIncrementalExportSpecification {
 }
 
 export function dynamodbTableExportIncrementalExportSpecificationToTerraform(struct?: DynamodbTableExportIncrementalExportSpecificationOutputReference | DynamodbTableExportIncrementalExportSpecification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    export_from_time: cdktf.stringToTerraform(struct!.exportFromTime),
-    export_to_time: cdktf.stringToTerraform(struct!.exportToTime),
-    export_view_type: cdktf.stringToTerraform(struct!.exportViewType),
+    export_from_time: cdktn.stringToTerraform(struct!.exportFromTime),
+    export_to_time: cdktn.stringToTerraform(struct!.exportToTime),
+    export_view_type: cdktn.stringToTerraform(struct!.exportViewType),
   }
 }
 
 
 export function dynamodbTableExportIncrementalExportSpecificationToHclTerraform(struct?: DynamodbTableExportIncrementalExportSpecificationOutputReference | DynamodbTableExportIncrementalExportSpecification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     export_from_time: {
-      value: cdktf.stringToHclTerraform(struct!.exportFromTime),
+      value: cdktn.stringToHclTerraform(struct!.exportFromTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     export_to_time: {
-      value: cdktf.stringToHclTerraform(struct!.exportToTime),
+      value: cdktn.stringToHclTerraform(struct!.exportToTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     export_view_type: {
-      value: cdktf.stringToHclTerraform(struct!.exportViewType),
+      value: cdktn.stringToHclTerraform(struct!.exportViewType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -132,14 +132,14 @@ export function dynamodbTableExportIncrementalExportSpecificationToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableExportIncrementalExportSpecificationOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableExportIncrementalExportSpecificationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -235,32 +235,32 @@ export interface DynamodbTableExportTimeouts {
   readonly delete?: string;
 }
 
-export function dynamodbTableExportTimeoutsToTerraform(struct?: DynamodbTableExportTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamodbTableExportTimeoutsToTerraform(struct?: DynamodbTableExportTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function dynamodbTableExportTimeoutsToHclTerraform(struct?: DynamodbTableExportTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamodbTableExportTimeoutsToHclTerraform(struct?: DynamodbTableExportTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -271,19 +271,19 @@ export function dynamodbTableExportTimeoutsToHclTerraform(struct?: DynamodbTable
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableExportTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableExportTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DynamodbTableExportTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DynamodbTableExportTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -300,14 +300,14 @@ export class DynamodbTableExportTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DynamodbTableExportTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DynamodbTableExportTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -355,7 +355,7 @@ export class DynamodbTableExportTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table_export aws_dynamodb_table_export}
 */
-export class DynamodbTableExport extends cdktf.TerraformResource {
+export class DynamodbTableExport extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -366,14 +366,14 @@ export class DynamodbTableExport extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DynamodbTableExport resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DynamodbTableExport resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DynamodbTableExport to import
   * @param importFromId The id of the existing DynamodbTableExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table_export#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DynamodbTableExport to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dynamodb_table_export", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dynamodb_table_export", importId: importFromId, provider });
       }
 
   // ===========
@@ -665,17 +665,17 @@ export class DynamodbTableExport extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      export_format: cdktf.stringToTerraform(this._exportFormat),
-      export_time: cdktf.stringToTerraform(this._exportTime),
-      export_type: cdktf.stringToTerraform(this._exportType),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      s3_bucket: cdktf.stringToTerraform(this._s3Bucket),
-      s3_bucket_owner: cdktf.stringToTerraform(this._s3BucketOwner),
-      s3_prefix: cdktf.stringToTerraform(this._s3Prefix),
-      s3_sse_algorithm: cdktf.stringToTerraform(this._s3SseAlgorithm),
-      s3_sse_kms_key_id: cdktf.stringToTerraform(this._s3SseKmsKeyId),
-      table_arn: cdktf.stringToTerraform(this._tableArn),
+      export_format: cdktn.stringToTerraform(this._exportFormat),
+      export_time: cdktn.stringToTerraform(this._exportTime),
+      export_type: cdktn.stringToTerraform(this._exportType),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      s3_bucket: cdktn.stringToTerraform(this._s3Bucket),
+      s3_bucket_owner: cdktn.stringToTerraform(this._s3BucketOwner),
+      s3_prefix: cdktn.stringToTerraform(this._s3Prefix),
+      s3_sse_algorithm: cdktn.stringToTerraform(this._s3SseAlgorithm),
+      s3_sse_kms_key_id: cdktn.stringToTerraform(this._s3SseKmsKeyId),
+      table_arn: cdktn.stringToTerraform(this._tableArn),
       incremental_export_specification: dynamodbTableExportIncrementalExportSpecificationToTerraform(this._incrementalExportSpecification.internalValue),
       timeouts: dynamodbTableExportTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -684,67 +684,67 @@ export class DynamodbTableExport extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       export_format: {
-        value: cdktf.stringToHclTerraform(this._exportFormat),
+        value: cdktn.stringToHclTerraform(this._exportFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       export_time: {
-        value: cdktf.stringToHclTerraform(this._exportTime),
+        value: cdktn.stringToHclTerraform(this._exportTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       export_type: {
-        value: cdktf.stringToHclTerraform(this._exportType),
+        value: cdktn.stringToHclTerraform(this._exportType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_bucket: {
-        value: cdktf.stringToHclTerraform(this._s3Bucket),
+        value: cdktn.stringToHclTerraform(this._s3Bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_bucket_owner: {
-        value: cdktf.stringToHclTerraform(this._s3BucketOwner),
+        value: cdktn.stringToHclTerraform(this._s3BucketOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_prefix: {
-        value: cdktf.stringToHclTerraform(this._s3Prefix),
+        value: cdktn.stringToHclTerraform(this._s3Prefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_sse_algorithm: {
-        value: cdktf.stringToHclTerraform(this._s3SseAlgorithm),
+        value: cdktn.stringToHclTerraform(this._s3SseAlgorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_sse_kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._s3SseKmsKeyId),
+        value: cdktn.stringToHclTerraform(this._s3SseKmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_arn: {
-        value: cdktf.stringToHclTerraform(this._tableArn),
+        value: cdktn.stringToHclTerraform(this._tableArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

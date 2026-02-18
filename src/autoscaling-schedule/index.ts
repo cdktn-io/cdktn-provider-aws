@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AutoscalingScheduleConfig extends cdktf.TerraformMetaArguments {
+export interface AutoscalingScheduleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/autoscaling_schedule#autoscaling_group_name AutoscalingSchedule#autoscaling_group_name}
   */
@@ -66,7 +66,7 @@ export interface AutoscalingScheduleConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/autoscaling_schedule aws_autoscaling_schedule}
 */
-export class AutoscalingSchedule extends cdktf.TerraformResource {
+export class AutoscalingSchedule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class AutoscalingSchedule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AutoscalingSchedule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AutoscalingSchedule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutoscalingSchedule to import
   * @param importFromId The id of the existing AutoscalingSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/autoscaling_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutoscalingSchedule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_autoscaling_schedule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_autoscaling_schedule", importId: importFromId, provider });
       }
 
   // ===========
@@ -312,84 +312,84 @@ export class AutoscalingSchedule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      autoscaling_group_name: cdktf.stringToTerraform(this._autoscalingGroupName),
-      desired_capacity: cdktf.numberToTerraform(this._desiredCapacity),
-      end_time: cdktf.stringToTerraform(this._endTime),
-      id: cdktf.stringToTerraform(this._id),
-      max_size: cdktf.numberToTerraform(this._maxSize),
-      min_size: cdktf.numberToTerraform(this._minSize),
-      recurrence: cdktf.stringToTerraform(this._recurrence),
-      region: cdktf.stringToTerraform(this._region),
-      scheduled_action_name: cdktf.stringToTerraform(this._scheduledActionName),
-      start_time: cdktf.stringToTerraform(this._startTime),
-      time_zone: cdktf.stringToTerraform(this._timeZone),
+      autoscaling_group_name: cdktn.stringToTerraform(this._autoscalingGroupName),
+      desired_capacity: cdktn.numberToTerraform(this._desiredCapacity),
+      end_time: cdktn.stringToTerraform(this._endTime),
+      id: cdktn.stringToTerraform(this._id),
+      max_size: cdktn.numberToTerraform(this._maxSize),
+      min_size: cdktn.numberToTerraform(this._minSize),
+      recurrence: cdktn.stringToTerraform(this._recurrence),
+      region: cdktn.stringToTerraform(this._region),
+      scheduled_action_name: cdktn.stringToTerraform(this._scheduledActionName),
+      start_time: cdktn.stringToTerraform(this._startTime),
+      time_zone: cdktn.stringToTerraform(this._timeZone),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       autoscaling_group_name: {
-        value: cdktf.stringToHclTerraform(this._autoscalingGroupName),
+        value: cdktn.stringToHclTerraform(this._autoscalingGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       desired_capacity: {
-        value: cdktf.numberToHclTerraform(this._desiredCapacity),
+        value: cdktn.numberToHclTerraform(this._desiredCapacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       end_time: {
-        value: cdktf.stringToHclTerraform(this._endTime),
+        value: cdktn.stringToHclTerraform(this._endTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_size: {
-        value: cdktf.numberToHclTerraform(this._maxSize),
+        value: cdktn.numberToHclTerraform(this._maxSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_size: {
-        value: cdktf.numberToHclTerraform(this._minSize),
+        value: cdktn.numberToHclTerraform(this._minSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       recurrence: {
-        value: cdktf.stringToHclTerraform(this._recurrence),
+        value: cdktn.stringToHclTerraform(this._recurrence),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scheduled_action_name: {
-        value: cdktf.stringToHclTerraform(this._scheduledActionName),
+        value: cdktn.stringToHclTerraform(this._scheduledActionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_time: {
-        value: cdktf.stringToHclTerraform(this._startTime),
+        value: cdktn.stringToHclTerraform(this._startTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       time_zone: {
-        value: cdktf.stringToHclTerraform(this._timeZone),
+        value: cdktn.stringToHclTerraform(this._timeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

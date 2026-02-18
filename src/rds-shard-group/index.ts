@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RdsShardGroupConfig extends cdktf.TerraformMetaArguments {
+export interface RdsShardGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_shard_group#compute_redundancy RdsShardGroup#compute_redundancy}
   */
@@ -35,7 +35,7 @@ export interface RdsShardGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_shard_group#publicly_accessible RdsShardGroup#publicly_accessible}
   */
-  readonly publiclyAccessible?: boolean | cdktf.IResolvable;
+  readonly publiclyAccessible?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -74,39 +74,39 @@ export interface RdsShardGroupTimeouts {
   readonly update?: string;
 }
 
-export function rdsShardGroupTimeoutsToTerraform(struct?: RdsShardGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rdsShardGroupTimeoutsToTerraform(struct?: RdsShardGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function rdsShardGroupTimeoutsToHclTerraform(struct?: RdsShardGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rdsShardGroupTimeoutsToHclTerraform(struct?: RdsShardGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,19 +117,19 @@ export function rdsShardGroupTimeoutsToHclTerraform(struct?: RdsShardGroupTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RdsShardGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RdsShardGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RdsShardGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RdsShardGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -150,7 +150,7 @@ export class RdsShardGroupTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RdsShardGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RdsShardGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -158,7 +158,7 @@ export class RdsShardGroupTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -223,7 +223,7 @@ export class RdsShardGroupTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_shard_group aws_rds_shard_group}
 */
-export class RdsShardGroup extends cdktf.TerraformResource {
+export class RdsShardGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -234,14 +234,14 @@ export class RdsShardGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RdsShardGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RdsShardGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RdsShardGroup to import
   * @param importFromId The id of the existing RdsShardGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_shard_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RdsShardGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_shard_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_shard_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -373,11 +373,11 @@ export class RdsShardGroup extends cdktf.TerraformResource {
   }
 
   // publicly_accessible - computed: true, optional: true, required: false
-  private _publiclyAccessible?: boolean | cdktf.IResolvable; 
+  private _publiclyAccessible?: boolean | cdktn.IResolvable; 
   public get publiclyAccessible() {
     return this.getBooleanAttribute('publicly_accessible');
   }
-  public set publiclyAccessible(value: boolean | cdktf.IResolvable) {
+  public set publiclyAccessible(value: boolean | cdktn.IResolvable) {
     this._publiclyAccessible = value;
   }
   public resetPubliclyAccessible() {
@@ -421,7 +421,7 @@ export class RdsShardGroup extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -448,14 +448,14 @@ export class RdsShardGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compute_redundancy: cdktf.numberToTerraform(this._computeRedundancy),
-      db_cluster_identifier: cdktf.stringToTerraform(this._dbClusterIdentifier),
-      db_shard_group_identifier: cdktf.stringToTerraform(this._dbShardGroupIdentifier),
-      max_acu: cdktf.numberToTerraform(this._maxAcu),
-      min_acu: cdktf.numberToTerraform(this._minAcu),
-      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      compute_redundancy: cdktn.numberToTerraform(this._computeRedundancy),
+      db_cluster_identifier: cdktn.stringToTerraform(this._dbClusterIdentifier),
+      db_shard_group_identifier: cdktn.stringToTerraform(this._dbShardGroupIdentifier),
+      max_acu: cdktn.numberToTerraform(this._maxAcu),
+      min_acu: cdktn.numberToTerraform(this._minAcu),
+      publicly_accessible: cdktn.booleanToTerraform(this._publiclyAccessible),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: rdsShardGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -463,49 +463,49 @@ export class RdsShardGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       compute_redundancy: {
-        value: cdktf.numberToHclTerraform(this._computeRedundancy),
+        value: cdktn.numberToHclTerraform(this._computeRedundancy),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       db_cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._dbClusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._dbClusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_shard_group_identifier: {
-        value: cdktf.stringToHclTerraform(this._dbShardGroupIdentifier),
+        value: cdktn.stringToHclTerraform(this._dbShardGroupIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_acu: {
-        value: cdktf.numberToHclTerraform(this._maxAcu),
+        value: cdktn.numberToHclTerraform(this._maxAcu),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_acu: {
-        value: cdktf.numberToHclTerraform(this._minAcu),
+        value: cdktn.numberToHclTerraform(this._minAcu),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       publicly_accessible: {
-        value: cdktf.booleanToHclTerraform(this._publiclyAccessible),
+        value: cdktn.booleanToHclTerraform(this._publiclyAccessible),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

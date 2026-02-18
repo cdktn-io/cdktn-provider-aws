@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AccessanalyzerAnalyzerConfig extends cdktf.TerraformMetaArguments {
+export interface AccessanalyzerAnalyzerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/accessanalyzer_analyzer#analyzer_name AccessanalyzerAnalyzer#analyzer_name}
   */
@@ -63,39 +63,39 @@ export interface AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleIn
   readonly resourceTypes?: string[];
 }
 
-export function accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionToTerraform(struct?: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionToTerraform(struct?: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.accountIds),
-    resource_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceArns),
-    resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
+    account_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.accountIds),
+    resource_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceArns),
+    resource_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceTypes),
   }
 }
 
 
-export function accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionToHclTerraform(struct?: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionToHclTerraform(struct?: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.accountIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.accountIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     resource_arns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceArns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceArns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     resource_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -106,9 +106,9 @@ export function accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionOutputReference extends cdktf.ComplexObject {
+export class AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -116,11 +116,11 @@ export class AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclus
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -141,7 +141,7 @@ export class AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclus
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -149,7 +149,7 @@ export class AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclus
       this._resourceArns = undefined;
       this._resourceTypes = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -211,15 +211,15 @@ export class AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclus
   }
 }
 
-export class AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionList extends cdktf.ComplexList {
-  public internalValue? : AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion[] | cdktf.IResolvable
+export class AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionList extends cdktn.ComplexList {
+  public internalValue? : AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -236,28 +236,28 @@ export interface AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/accessanalyzer_analyzer#inclusion AccessanalyzerAnalyzer#inclusion}
   */
-  readonly inclusion?: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion[] | cdktf.IResolvable;
+  readonly inclusion?: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion[] | cdktn.IResolvable;
 }
 
 export function accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleToTerraform(struct?: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleOutputReference | AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    inclusion: cdktf.listMapper(accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionToTerraform, true)(struct!.inclusion),
+    inclusion: cdktn.listMapper(accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionToTerraform, true)(struct!.inclusion),
   }
 }
 
 
 export function accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleToHclTerraform(struct?: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleOutputReference | AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     inclusion: {
-      value: cdktf.listMapperHcl(accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionToHclTerraform, true)(struct!.inclusion),
+      value: cdktn.listMapperHcl(accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionToHclTerraform, true)(struct!.inclusion),
       isBlock: true,
       type: "list",
       storageClassType: "AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionList",
@@ -268,14 +268,14 @@ export function accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleOutputReference extends cdktf.ComplexObject {
+export class AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -305,7 +305,7 @@ export class AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleOutput
   public get inclusion() {
     return this._inclusion;
   }
-  public putInclusion(value: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion[] | cdktf.IResolvable) {
+  public putInclusion(value: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion[] | cdktn.IResolvable) {
     this._inclusion.internalValue = value;
   }
   public resetInclusion() {
@@ -326,8 +326,8 @@ export interface AccessanalyzerAnalyzerConfigurationInternalAccess {
 }
 
 export function accessanalyzerAnalyzerConfigurationInternalAccessToTerraform(struct?: AccessanalyzerAnalyzerConfigurationInternalAccessOutputReference | AccessanalyzerAnalyzerConfigurationInternalAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -337,8 +337,8 @@ export function accessanalyzerAnalyzerConfigurationInternalAccessToTerraform(str
 
 
 export function accessanalyzerAnalyzerConfigurationInternalAccessToHclTerraform(struct?: AccessanalyzerAnalyzerConfigurationInternalAccessOutputReference | AccessanalyzerAnalyzerConfigurationInternalAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -354,14 +354,14 @@ export function accessanalyzerAnalyzerConfigurationInternalAccessToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessanalyzerAnalyzerConfigurationInternalAccessOutputReference extends cdktf.ComplexObject {
+export class AccessanalyzerAnalyzerConfigurationInternalAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -410,35 +410,35 @@ export interface AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExcl
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/accessanalyzer_analyzer#resource_tags AccessanalyzerAnalyzer#resource_tags}
   */
-  readonly resourceTags?: { [key: string]: string }[] | cdktf.IResolvable;
+  readonly resourceTags?: { [key: string]: string }[] | cdktn.IResolvable;
 }
 
-export function accessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionToTerraform(struct?: AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionToTerraform(struct?: AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.accountIds),
-    resource_tags: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(struct!.resourceTags),
+    account_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.accountIds),
+    resource_tags: cdktn.listMapper(cdktn.hashMapper(cdktn.stringToTerraform), false)(struct!.resourceTags),
   }
 }
 
 
-export function accessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionToHclTerraform(struct?: AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionToHclTerraform(struct?: AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.accountIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.accountIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     resource_tags: {
-      value: cdktf.listMapperHcl(cdktf.hashMapperHcl(cdktf.stringToHclTerraform), false)(struct!.resourceTags),
+      value: cdktn.listMapperHcl(cdktn.hashMapperHcl(cdktn.stringToHclTerraform), false)(struct!.resourceTags),
       isBlock: false,
       type: "list",
       storageClassType: "stringMapList",
@@ -449,9 +449,9 @@ export function accessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionOutputReference extends cdktf.ComplexObject {
+export class AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -459,11 +459,11 @@ export class AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusio
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -480,14 +480,14 @@ export class AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusio
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accountIds = undefined;
       this._resourceTags = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -516,11 +516,11 @@ export class AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusio
   }
 
   // resource_tags - computed: false, optional: true, required: false
-  private _resourceTags?: { [key: string]: string }[] | cdktf.IResolvable; 
+  private _resourceTags?: { [key: string]: string }[] | cdktn.IResolvable; 
   public get resourceTags() {
     return this.interpolationForAttribute('resource_tags');
   }
-  public set resourceTags(value: { [key: string]: string }[] | cdktf.IResolvable) {
+  public set resourceTags(value: { [key: string]: string }[] | cdktn.IResolvable) {
     this._resourceTags = value;
   }
   public resetResourceTags() {
@@ -532,15 +532,15 @@ export class AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusio
   }
 }
 
-export class AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionList extends cdktf.ComplexList {
-  public internalValue? : AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion[] | cdktf.IResolvable
+export class AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionList extends cdktn.ComplexList {
+  public internalValue? : AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -557,28 +557,28 @@ export interface AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/accessanalyzer_analyzer#exclusion AccessanalyzerAnalyzer#exclusion}
   */
-  readonly exclusion?: AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion[] | cdktf.IResolvable;
+  readonly exclusion?: AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion[] | cdktn.IResolvable;
 }
 
 export function accessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleToTerraform(struct?: AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleOutputReference | AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclusion: cdktf.listMapper(accessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionToTerraform, true)(struct!.exclusion),
+    exclusion: cdktn.listMapper(accessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionToTerraform, true)(struct!.exclusion),
   }
 }
 
 
 export function accessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleToHclTerraform(struct?: AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleOutputReference | AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exclusion: {
-      value: cdktf.listMapperHcl(accessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionToHclTerraform, true)(struct!.exclusion),
+      value: cdktn.listMapperHcl(accessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionToHclTerraform, true)(struct!.exclusion),
       isBlock: true,
       type: "list",
       storageClassType: "AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionList",
@@ -589,14 +589,14 @@ export function accessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleOutputReference extends cdktf.ComplexObject {
+export class AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -626,7 +626,7 @@ export class AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleOutputRe
   public get exclusion() {
     return this._exclusion;
   }
-  public putExclusion(value: AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion[] | cdktf.IResolvable) {
+  public putExclusion(value: AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion[] | cdktn.IResolvable) {
     this._exclusion.internalValue = value;
   }
   public resetExclusion() {
@@ -651,25 +651,25 @@ export interface AccessanalyzerAnalyzerConfigurationUnusedAccess {
 }
 
 export function accessanalyzerAnalyzerConfigurationUnusedAccessToTerraform(struct?: AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference | AccessanalyzerAnalyzerConfigurationUnusedAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unused_access_age: cdktf.numberToTerraform(struct!.unusedAccessAge),
+    unused_access_age: cdktn.numberToTerraform(struct!.unusedAccessAge),
     analysis_rule: accessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleToTerraform(struct!.analysisRule),
   }
 }
 
 
 export function accessanalyzerAnalyzerConfigurationUnusedAccessToHclTerraform(struct?: AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference | AccessanalyzerAnalyzerConfigurationUnusedAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unused_access_age: {
-      value: cdktf.numberToHclTerraform(struct!.unusedAccessAge),
+      value: cdktn.numberToHclTerraform(struct!.unusedAccessAge),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -686,14 +686,14 @@ export function accessanalyzerAnalyzerConfigurationUnusedAccessToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference extends cdktf.ComplexObject {
+export class AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -772,8 +772,8 @@ export interface AccessanalyzerAnalyzerConfiguration {
 }
 
 export function accessanalyzerAnalyzerConfigurationToTerraform(struct?: AccessanalyzerAnalyzerConfigurationOutputReference | AccessanalyzerAnalyzerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -784,8 +784,8 @@ export function accessanalyzerAnalyzerConfigurationToTerraform(struct?: Accessan
 
 
 export function accessanalyzerAnalyzerConfigurationToHclTerraform(struct?: AccessanalyzerAnalyzerConfigurationOutputReference | AccessanalyzerAnalyzerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -807,14 +807,14 @@ export function accessanalyzerAnalyzerConfigurationToHclTerraform(struct?: Acces
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessanalyzerAnalyzerConfigurationOutputReference extends cdktf.ComplexObject {
+export class AccessanalyzerAnalyzerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -881,7 +881,7 @@ export class AccessanalyzerAnalyzerConfigurationOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer}
 */
-export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
+export class AccessanalyzerAnalyzer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -892,14 +892,14 @@ export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AccessanalyzerAnalyzer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AccessanalyzerAnalyzer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessanalyzerAnalyzer to import
   * @param importFromId The id of the existing AccessanalyzerAnalyzer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/accessanalyzer_analyzer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessanalyzerAnalyzer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_accessanalyzer_analyzer", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_accessanalyzer_analyzer", importId: importFromId, provider });
       }
 
   // ===========
@@ -1062,12 +1062,12 @@ export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      analyzer_name: cdktf.stringToTerraform(this._analyzerName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      type: cdktf.stringToTerraform(this._type),
+      analyzer_name: cdktn.stringToTerraform(this._analyzerName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      type: cdktn.stringToTerraform(this._type),
       configuration: accessanalyzerAnalyzerConfigurationToTerraform(this._configuration.internalValue),
     };
   }
@@ -1075,37 +1075,37 @@ export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       analyzer_name: {
-        value: cdktf.stringToHclTerraform(this._analyzerName),
+        value: cdktn.stringToHclTerraform(this._analyzerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

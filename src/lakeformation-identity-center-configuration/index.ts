@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LakeformationIdentityCenterConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface LakeformationIdentityCenterConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the Data Catalog.
   *
@@ -35,7 +35,7 @@ export interface LakeformationIdentityCenterConfigurationConfig extends cdktf.Te
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_identity_center_configuration aws_lakeformation_identity_center_configuration}
 */
-export class LakeformationIdentityCenterConfiguration extends cdktf.TerraformResource {
+export class LakeformationIdentityCenterConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -46,14 +46,14 @@ export class LakeformationIdentityCenterConfiguration extends cdktf.TerraformRes
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LakeformationIdentityCenterConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LakeformationIdentityCenterConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LakeformationIdentityCenterConfiguration to import
   * @param importFromId The id of the existing LakeformationIdentityCenterConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_identity_center_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LakeformationIdentityCenterConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lakeformation_identity_center_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lakeformation_identity_center_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -153,28 +153,28 @@ export class LakeformationIdentityCenterConfiguration extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog_id: cdktf.stringToTerraform(this._catalogId),
-      instance_arn: cdktf.stringToTerraform(this._instanceArn),
-      region: cdktf.stringToTerraform(this._region),
+      catalog_id: cdktn.stringToTerraform(this._catalogId),
+      instance_arn: cdktn.stringToTerraform(this._instanceArn),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       catalog_id: {
-        value: cdktf.stringToHclTerraform(this._catalogId),
+        value: cdktn.stringToHclTerraform(this._catalogId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_arn: {
-        value: cdktf.stringToHclTerraform(this._instanceArn),
+        value: cdktn.stringToHclTerraform(this._instanceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

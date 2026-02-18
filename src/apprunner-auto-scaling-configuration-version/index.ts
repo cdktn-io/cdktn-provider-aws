@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApprunnerAutoScalingConfigurationVersionConfig extends cdktf.TerraformMetaArguments {
+export interface ApprunnerAutoScalingConfigurationVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_auto_scaling_configuration_version#auto_scaling_configuration_name ApprunnerAutoScalingConfigurationVersion#auto_scaling_configuration_name}
   */
@@ -54,7 +54,7 @@ export interface ApprunnerAutoScalingConfigurationVersionConfig extends cdktf.Te
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_auto_scaling_configuration_version aws_apprunner_auto_scaling_configuration_version}
 */
-export class ApprunnerAutoScalingConfigurationVersion extends cdktf.TerraformResource {
+export class ApprunnerAutoScalingConfigurationVersion extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class ApprunnerAutoScalingConfigurationVersion extends cdktf.TerraformRes
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApprunnerAutoScalingConfigurationVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApprunnerAutoScalingConfigurationVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApprunnerAutoScalingConfigurationVersion to import
   * @param importFromId The id of the existing ApprunnerAutoScalingConfigurationVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_auto_scaling_configuration_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApprunnerAutoScalingConfigurationVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_apprunner_auto_scaling_configuration_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_apprunner_auto_scaling_configuration_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -277,63 +277,63 @@ export class ApprunnerAutoScalingConfigurationVersion extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_scaling_configuration_name: cdktf.stringToTerraform(this._autoScalingConfigurationName),
-      id: cdktf.stringToTerraform(this._id),
-      max_concurrency: cdktf.numberToTerraform(this._maxConcurrency),
-      max_size: cdktf.numberToTerraform(this._maxSize),
-      min_size: cdktf.numberToTerraform(this._minSize),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      auto_scaling_configuration_name: cdktn.stringToTerraform(this._autoScalingConfigurationName),
+      id: cdktn.stringToTerraform(this._id),
+      max_concurrency: cdktn.numberToTerraform(this._maxConcurrency),
+      max_size: cdktn.numberToTerraform(this._maxSize),
+      min_size: cdktn.numberToTerraform(this._minSize),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_scaling_configuration_name: {
-        value: cdktf.stringToHclTerraform(this._autoScalingConfigurationName),
+        value: cdktn.stringToHclTerraform(this._autoScalingConfigurationName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_concurrency: {
-        value: cdktf.numberToHclTerraform(this._maxConcurrency),
+        value: cdktn.numberToHclTerraform(this._maxConcurrency),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_size: {
-        value: cdktf.numberToHclTerraform(this._maxSize),
+        value: cdktn.numberToHclTerraform(this._maxSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_size: {
-        value: cdktf.numberToHclTerraform(this._minSize),
+        value: cdktn.numberToHclTerraform(this._minSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

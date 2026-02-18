@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AcmpcaCertificateAuthorityConfig extends cdktf.TerraformMetaArguments {
+export interface AcmpcaCertificateAuthorityConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acmpca_certificate_authority#enabled AcmpcaCertificateAuthority#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acmpca_certificate_authority#id AcmpcaCertificateAuthority#id}
   *
@@ -128,108 +128,108 @@ export interface AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubj
 }
 
 export function acmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectToTerraform(struct?: AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference | AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    common_name: cdktf.stringToTerraform(struct!.commonName),
-    country: cdktf.stringToTerraform(struct!.country),
-    distinguished_name_qualifier: cdktf.stringToTerraform(struct!.distinguishedNameQualifier),
-    generation_qualifier: cdktf.stringToTerraform(struct!.generationQualifier),
-    given_name: cdktf.stringToTerraform(struct!.givenName),
-    initials: cdktf.stringToTerraform(struct!.initials),
-    locality: cdktf.stringToTerraform(struct!.locality),
-    organization: cdktf.stringToTerraform(struct!.organization),
-    organizational_unit: cdktf.stringToTerraform(struct!.organizationalUnit),
-    pseudonym: cdktf.stringToTerraform(struct!.pseudonym),
-    state: cdktf.stringToTerraform(struct!.state),
-    surname: cdktf.stringToTerraform(struct!.surname),
-    title: cdktf.stringToTerraform(struct!.title),
+    common_name: cdktn.stringToTerraform(struct!.commonName),
+    country: cdktn.stringToTerraform(struct!.country),
+    distinguished_name_qualifier: cdktn.stringToTerraform(struct!.distinguishedNameQualifier),
+    generation_qualifier: cdktn.stringToTerraform(struct!.generationQualifier),
+    given_name: cdktn.stringToTerraform(struct!.givenName),
+    initials: cdktn.stringToTerraform(struct!.initials),
+    locality: cdktn.stringToTerraform(struct!.locality),
+    organization: cdktn.stringToTerraform(struct!.organization),
+    organizational_unit: cdktn.stringToTerraform(struct!.organizationalUnit),
+    pseudonym: cdktn.stringToTerraform(struct!.pseudonym),
+    state: cdktn.stringToTerraform(struct!.state),
+    surname: cdktn.stringToTerraform(struct!.surname),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function acmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectToHclTerraform(struct?: AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference | AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     common_name: {
-      value: cdktf.stringToHclTerraform(struct!.commonName),
+      value: cdktn.stringToHclTerraform(struct!.commonName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     country: {
-      value: cdktf.stringToHclTerraform(struct!.country),
+      value: cdktn.stringToHclTerraform(struct!.country),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     distinguished_name_qualifier: {
-      value: cdktf.stringToHclTerraform(struct!.distinguishedNameQualifier),
+      value: cdktn.stringToHclTerraform(struct!.distinguishedNameQualifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     generation_qualifier: {
-      value: cdktf.stringToHclTerraform(struct!.generationQualifier),
+      value: cdktn.stringToHclTerraform(struct!.generationQualifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     given_name: {
-      value: cdktf.stringToHclTerraform(struct!.givenName),
+      value: cdktn.stringToHclTerraform(struct!.givenName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     initials: {
-      value: cdktf.stringToHclTerraform(struct!.initials),
+      value: cdktn.stringToHclTerraform(struct!.initials),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     locality: {
-      value: cdktf.stringToHclTerraform(struct!.locality),
+      value: cdktn.stringToHclTerraform(struct!.locality),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organization: {
-      value: cdktf.stringToHclTerraform(struct!.organization),
+      value: cdktn.stringToHclTerraform(struct!.organization),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organizational_unit: {
-      value: cdktf.stringToHclTerraform(struct!.organizationalUnit),
+      value: cdktn.stringToHclTerraform(struct!.organizationalUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pseudonym: {
-      value: cdktf.stringToHclTerraform(struct!.pseudonym),
+      value: cdktn.stringToHclTerraform(struct!.pseudonym),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     surname: {
-      value: cdktf.stringToHclTerraform(struct!.surname),
+      value: cdktn.stringToHclTerraform(struct!.surname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -240,14 +240,14 @@ export function acmpcaCertificateAuthorityCertificateAuthorityConfigurationSubje
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference extends cdktf.ComplexObject {
+export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -570,32 +570,32 @@ export interface AcmpcaCertificateAuthorityCertificateAuthorityConfiguration {
 }
 
 export function acmpcaCertificateAuthorityCertificateAuthorityConfigurationToTerraform(struct?: AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference | AcmpcaCertificateAuthorityCertificateAuthorityConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_algorithm: cdktf.stringToTerraform(struct!.keyAlgorithm),
-    signing_algorithm: cdktf.stringToTerraform(struct!.signingAlgorithm),
+    key_algorithm: cdktn.stringToTerraform(struct!.keyAlgorithm),
+    signing_algorithm: cdktn.stringToTerraform(struct!.signingAlgorithm),
     subject: acmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectToTerraform(struct!.subject),
   }
 }
 
 
 export function acmpcaCertificateAuthorityCertificateAuthorityConfigurationToHclTerraform(struct?: AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference | AcmpcaCertificateAuthorityCertificateAuthorityConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.keyAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.keyAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     signing_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.signingAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.signingAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -612,14 +612,14 @@ export function acmpcaCertificateAuthorityCertificateAuthorityConfigurationToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference extends cdktf.ComplexObject {
+export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -703,7 +703,7 @@ export interface AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurati
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acmpca_certificate_authority#enabled AcmpcaCertificateAuthority#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acmpca_certificate_authority#expiration_in_days AcmpcaCertificateAuthority#expiration_in_days}
   */
@@ -719,52 +719,52 @@ export interface AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurati
 }
 
 export function acmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationToTerraform(struct?: AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference | AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_cname: cdktf.stringToTerraform(struct!.customCname),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    expiration_in_days: cdktf.numberToTerraform(struct!.expirationInDays),
-    s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
-    s3_object_acl: cdktf.stringToTerraform(struct!.s3ObjectAcl),
+    custom_cname: cdktn.stringToTerraform(struct!.customCname),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    expiration_in_days: cdktn.numberToTerraform(struct!.expirationInDays),
+    s3_bucket_name: cdktn.stringToTerraform(struct!.s3BucketName),
+    s3_object_acl: cdktn.stringToTerraform(struct!.s3ObjectAcl),
   }
 }
 
 
 export function acmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationToHclTerraform(struct?: AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference | AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_cname: {
-      value: cdktf.stringToHclTerraform(struct!.customCname),
+      value: cdktn.stringToHclTerraform(struct!.customCname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     expiration_in_days: {
-      value: cdktf.numberToHclTerraform(struct!.expirationInDays),
+      value: cdktn.numberToHclTerraform(struct!.expirationInDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     s3_bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.s3BucketName),
+      value: cdktn.stringToHclTerraform(struct!.s3BucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_object_acl: {
-      value: cdktf.stringToHclTerraform(struct!.s3ObjectAcl),
+      value: cdktn.stringToHclTerraform(struct!.s3ObjectAcl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -775,14 +775,14 @@ export function acmpcaCertificateAuthorityRevocationConfigurationCrlConfiguratio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference extends cdktf.ComplexObject {
+export class AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -848,11 +848,11 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOu
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -915,7 +915,7 @@ export interface AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurat
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acmpca_certificate_authority#enabled AcmpcaCertificateAuthority#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acmpca_certificate_authority#ocsp_custom_cname AcmpcaCertificateAuthority#ocsp_custom_cname}
   */
@@ -923,31 +923,31 @@ export interface AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurat
 }
 
 export function acmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationToTerraform(struct?: AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference | AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    ocsp_custom_cname: cdktf.stringToTerraform(struct!.ocspCustomCname),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    ocsp_custom_cname: cdktn.stringToTerraform(struct!.ocspCustomCname),
   }
 }
 
 
 export function acmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationToHclTerraform(struct?: AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference | AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ocsp_custom_cname: {
-      value: cdktf.stringToHclTerraform(struct!.ocspCustomCname),
+      value: cdktn.stringToHclTerraform(struct!.ocspCustomCname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -958,14 +958,14 @@ export function acmpcaCertificateAuthorityRevocationConfigurationOcspConfigurati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference extends cdktf.ComplexObject {
+export class AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -997,11 +997,11 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationO
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1041,8 +1041,8 @@ export interface AcmpcaCertificateAuthorityRevocationConfiguration {
 }
 
 export function acmpcaCertificateAuthorityRevocationConfigurationToTerraform(struct?: AcmpcaCertificateAuthorityRevocationConfigurationOutputReference | AcmpcaCertificateAuthorityRevocationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1053,8 +1053,8 @@ export function acmpcaCertificateAuthorityRevocationConfigurationToTerraform(str
 
 
 export function acmpcaCertificateAuthorityRevocationConfigurationToHclTerraform(struct?: AcmpcaCertificateAuthorityRevocationConfigurationOutputReference | AcmpcaCertificateAuthorityRevocationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1076,14 +1076,14 @@ export function acmpcaCertificateAuthorityRevocationConfigurationToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AcmpcaCertificateAuthorityRevocationConfigurationOutputReference extends cdktf.ComplexObject {
+export class AcmpcaCertificateAuthorityRevocationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1153,25 +1153,25 @@ export interface AcmpcaCertificateAuthorityTimeouts {
   readonly create?: string;
 }
 
-export function acmpcaCertificateAuthorityTimeoutsToTerraform(struct?: AcmpcaCertificateAuthorityTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function acmpcaCertificateAuthorityTimeoutsToTerraform(struct?: AcmpcaCertificateAuthorityTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function acmpcaCertificateAuthorityTimeoutsToHclTerraform(struct?: AcmpcaCertificateAuthorityTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function acmpcaCertificateAuthorityTimeoutsToHclTerraform(struct?: AcmpcaCertificateAuthorityTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1182,19 +1182,19 @@ export function acmpcaCertificateAuthorityTimeoutsToHclTerraform(struct?: Acmpca
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AcmpcaCertificateAuthorityTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AcmpcaCertificateAuthorityTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AcmpcaCertificateAuthorityTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AcmpcaCertificateAuthorityTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1207,13 +1207,13 @@ export class AcmpcaCertificateAuthorityTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AcmpcaCertificateAuthorityTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AcmpcaCertificateAuthorityTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1244,7 +1244,7 @@ export class AcmpcaCertificateAuthorityTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acmpca_certificate_authority aws_acmpca_certificate_authority}
 */
-export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
+export class AcmpcaCertificateAuthority extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1255,14 +1255,14 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AcmpcaCertificateAuthority resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AcmpcaCertificateAuthority resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AcmpcaCertificateAuthority to import
   * @param importFromId The id of the existing AcmpcaCertificateAuthority that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acmpca_certificate_authority#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AcmpcaCertificateAuthority to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_acmpca_certificate_authority", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_acmpca_certificate_authority", importId: importFromId, provider });
       }
 
   // ===========
@@ -1331,11 +1331,11 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1540,15 +1540,15 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      key_storage_security_standard: cdktf.stringToTerraform(this._keyStorageSecurityStandard),
-      permanent_deletion_time_in_days: cdktf.numberToTerraform(this._permanentDeletionTimeInDays),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      type: cdktf.stringToTerraform(this._type),
-      usage_mode: cdktf.stringToTerraform(this._usageMode),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      key_storage_security_standard: cdktn.stringToTerraform(this._keyStorageSecurityStandard),
+      permanent_deletion_time_in_days: cdktn.numberToTerraform(this._permanentDeletionTimeInDays),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      type: cdktn.stringToTerraform(this._type),
+      usage_mode: cdktn.stringToTerraform(this._usageMode),
       certificate_authority_configuration: acmpcaCertificateAuthorityCertificateAuthorityConfigurationToTerraform(this._certificateAuthorityConfiguration.internalValue),
       revocation_configuration: acmpcaCertificateAuthorityRevocationConfigurationToTerraform(this._revocationConfiguration.internalValue),
       timeouts: acmpcaCertificateAuthorityTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1558,55 +1558,55 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_storage_security_standard: {
-        value: cdktf.stringToHclTerraform(this._keyStorageSecurityStandard),
+        value: cdktn.stringToHclTerraform(this._keyStorageSecurityStandard),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permanent_deletion_time_in_days: {
-        value: cdktf.numberToHclTerraform(this._permanentDeletionTimeInDays),
+        value: cdktn.numberToHclTerraform(this._permanentDeletionTimeInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       usage_mode: {
-        value: cdktf.stringToHclTerraform(this._usageMode),
+        value: cdktn.stringToHclTerraform(this._usageMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

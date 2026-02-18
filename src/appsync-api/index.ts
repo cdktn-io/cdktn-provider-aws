@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppsyncApiConfig extends cdktf.TerraformMetaArguments {
+export interface AppsyncApiConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api#name AppsyncApi#name}
   */
@@ -35,7 +35,7 @@ export interface AppsyncApiConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api#event_config AppsyncApi#event_config}
   */
-  readonly eventConfig?: AppsyncApiEventConfig[] | cdktf.IResolvable;
+  readonly eventConfig?: AppsyncApiEventConfig[] | cdktn.IResolvable;
 }
 export interface AppsyncApiEventConfigAuthProviderCognitoConfig {
   /**
@@ -52,39 +52,39 @@ export interface AppsyncApiEventConfigAuthProviderCognitoConfig {
   readonly userPoolId: string;
 }
 
-export function appsyncApiEventConfigAuthProviderCognitoConfigToTerraform(struct?: AppsyncApiEventConfigAuthProviderCognitoConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigAuthProviderCognitoConfigToTerraform(struct?: AppsyncApiEventConfigAuthProviderCognitoConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    app_id_client_regex: cdktf.stringToTerraform(struct!.appIdClientRegex),
-    aws_region: cdktf.stringToTerraform(struct!.awsRegion),
-    user_pool_id: cdktf.stringToTerraform(struct!.userPoolId),
+    app_id_client_regex: cdktn.stringToTerraform(struct!.appIdClientRegex),
+    aws_region: cdktn.stringToTerraform(struct!.awsRegion),
+    user_pool_id: cdktn.stringToTerraform(struct!.userPoolId),
   }
 }
 
 
-export function appsyncApiEventConfigAuthProviderCognitoConfigToHclTerraform(struct?: AppsyncApiEventConfigAuthProviderCognitoConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigAuthProviderCognitoConfigToHclTerraform(struct?: AppsyncApiEventConfigAuthProviderCognitoConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     app_id_client_regex: {
-      value: cdktf.stringToHclTerraform(struct!.appIdClientRegex),
+      value: cdktn.stringToHclTerraform(struct!.appIdClientRegex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_region: {
-      value: cdktf.stringToHclTerraform(struct!.awsRegion),
+      value: cdktn.stringToHclTerraform(struct!.awsRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_pool_id: {
-      value: cdktf.stringToHclTerraform(struct!.userPoolId),
+      value: cdktn.stringToHclTerraform(struct!.userPoolId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -95,9 +95,9 @@ export function appsyncApiEventConfigAuthProviderCognitoConfigToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncApiEventConfigAuthProviderCognitoConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncApiEventConfigAuthProviderCognitoConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -105,11 +105,11 @@ export class AppsyncApiEventConfigAuthProviderCognitoConfigOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncApiEventConfigAuthProviderCognitoConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncApiEventConfigAuthProviderCognitoConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -130,7 +130,7 @@ export class AppsyncApiEventConfigAuthProviderCognitoConfigOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncApiEventConfigAuthProviderCognitoConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncApiEventConfigAuthProviderCognitoConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -138,7 +138,7 @@ export class AppsyncApiEventConfigAuthProviderCognitoConfigOutputReference exten
       this._awsRegion = undefined;
       this._userPoolId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -194,15 +194,15 @@ export class AppsyncApiEventConfigAuthProviderCognitoConfigOutputReference exten
   }
 }
 
-export class AppsyncApiEventConfigAuthProviderCognitoConfigList extends cdktf.ComplexList {
-  public internalValue? : AppsyncApiEventConfigAuthProviderCognitoConfig[] | cdktf.IResolvable
+export class AppsyncApiEventConfigAuthProviderCognitoConfigList extends cdktn.ComplexList {
+  public internalValue? : AppsyncApiEventConfigAuthProviderCognitoConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -228,39 +228,39 @@ export interface AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig {
   readonly identityValidationExpression?: string;
 }
 
-export function appsyncApiEventConfigAuthProviderLambdaAuthorizerConfigToTerraform(struct?: AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigAuthProviderLambdaAuthorizerConfigToTerraform(struct?: AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authorizer_result_ttl_in_seconds: cdktf.numberToTerraform(struct!.authorizerResultTtlInSeconds),
-    authorizer_uri: cdktf.stringToTerraform(struct!.authorizerUri),
-    identity_validation_expression: cdktf.stringToTerraform(struct!.identityValidationExpression),
+    authorizer_result_ttl_in_seconds: cdktn.numberToTerraform(struct!.authorizerResultTtlInSeconds),
+    authorizer_uri: cdktn.stringToTerraform(struct!.authorizerUri),
+    identity_validation_expression: cdktn.stringToTerraform(struct!.identityValidationExpression),
   }
 }
 
 
-export function appsyncApiEventConfigAuthProviderLambdaAuthorizerConfigToHclTerraform(struct?: AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigAuthProviderLambdaAuthorizerConfigToHclTerraform(struct?: AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authorizer_result_ttl_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.authorizerResultTtlInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.authorizerResultTtlInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     authorizer_uri: {
-      value: cdktf.stringToHclTerraform(struct!.authorizerUri),
+      value: cdktn.stringToHclTerraform(struct!.authorizerUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_validation_expression: {
-      value: cdktf.stringToHclTerraform(struct!.identityValidationExpression),
+      value: cdktn.stringToHclTerraform(struct!.identityValidationExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -271,9 +271,9 @@ export function appsyncApiEventConfigAuthProviderLambdaAuthorizerConfigToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -281,11 +281,11 @@ export class AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfigOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -306,7 +306,7 @@ export class AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfigOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -314,7 +314,7 @@ export class AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfigOutputRefere
       this._authorizerUri = undefined;
       this._identityValidationExpression = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -373,15 +373,15 @@ export class AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfigOutputRefere
   }
 }
 
-export class AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfigList extends cdktf.ComplexList {
-  public internalValue? : AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig[] | cdktf.IResolvable
+export class AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfigList extends cdktn.ComplexList {
+  public internalValue? : AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -411,46 +411,46 @@ export interface AppsyncApiEventConfigAuthProviderOpenidConnectConfig {
   readonly issuer: string;
 }
 
-export function appsyncApiEventConfigAuthProviderOpenidConnectConfigToTerraform(struct?: AppsyncApiEventConfigAuthProviderOpenidConnectConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigAuthProviderOpenidConnectConfigToTerraform(struct?: AppsyncApiEventConfigAuthProviderOpenidConnectConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_ttl: cdktf.numberToTerraform(struct!.authTtl),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    iat_ttl: cdktf.numberToTerraform(struct!.iatTtl),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
+    auth_ttl: cdktn.numberToTerraform(struct!.authTtl),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    iat_ttl: cdktn.numberToTerraform(struct!.iatTtl),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
   }
 }
 
 
-export function appsyncApiEventConfigAuthProviderOpenidConnectConfigToHclTerraform(struct?: AppsyncApiEventConfigAuthProviderOpenidConnectConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigAuthProviderOpenidConnectConfigToHclTerraform(struct?: AppsyncApiEventConfigAuthProviderOpenidConnectConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_ttl: {
-      value: cdktf.numberToHclTerraform(struct!.authTtl),
+      value: cdktn.numberToHclTerraform(struct!.authTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     iat_ttl: {
-      value: cdktf.numberToHclTerraform(struct!.iatTtl),
+      value: cdktn.numberToHclTerraform(struct!.iatTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -461,9 +461,9 @@ export function appsyncApiEventConfigAuthProviderOpenidConnectConfigToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncApiEventConfigAuthProviderOpenidConnectConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncApiEventConfigAuthProviderOpenidConnectConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -471,11 +471,11 @@ export class AppsyncApiEventConfigAuthProviderOpenidConnectConfigOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncApiEventConfigAuthProviderOpenidConnectConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncApiEventConfigAuthProviderOpenidConnectConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -500,7 +500,7 @@ export class AppsyncApiEventConfigAuthProviderOpenidConnectConfigOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncApiEventConfigAuthProviderOpenidConnectConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncApiEventConfigAuthProviderOpenidConnectConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -509,7 +509,7 @@ export class AppsyncApiEventConfigAuthProviderOpenidConnectConfigOutputReference
       this._iatTtl = undefined;
       this._issuer = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -585,15 +585,15 @@ export class AppsyncApiEventConfigAuthProviderOpenidConnectConfigOutputReference
   }
 }
 
-export class AppsyncApiEventConfigAuthProviderOpenidConnectConfigList extends cdktf.ComplexList {
-  public internalValue? : AppsyncApiEventConfigAuthProviderOpenidConnectConfig[] | cdktf.IResolvable
+export class AppsyncApiEventConfigAuthProviderOpenidConnectConfigList extends cdktn.ComplexList {
+  public internalValue? : AppsyncApiEventConfigAuthProviderOpenidConnectConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -614,61 +614,61 @@ export interface AppsyncApiEventConfigAuthProvider {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api#cognito_config AppsyncApi#cognito_config}
   */
-  readonly cognitoConfig?: AppsyncApiEventConfigAuthProviderCognitoConfig[] | cdktf.IResolvable;
+  readonly cognitoConfig?: AppsyncApiEventConfigAuthProviderCognitoConfig[] | cdktn.IResolvable;
   /**
   * lambda_authorizer_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api#lambda_authorizer_config AppsyncApi#lambda_authorizer_config}
   */
-  readonly lambdaAuthorizerConfig?: AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig[] | cdktf.IResolvable;
+  readonly lambdaAuthorizerConfig?: AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig[] | cdktn.IResolvable;
   /**
   * openid_connect_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api#openid_connect_config AppsyncApi#openid_connect_config}
   */
-  readonly openidConnectConfig?: AppsyncApiEventConfigAuthProviderOpenidConnectConfig[] | cdktf.IResolvable;
+  readonly openidConnectConfig?: AppsyncApiEventConfigAuthProviderOpenidConnectConfig[] | cdktn.IResolvable;
 }
 
-export function appsyncApiEventConfigAuthProviderToTerraform(struct?: AppsyncApiEventConfigAuthProvider | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigAuthProviderToTerraform(struct?: AppsyncApiEventConfigAuthProvider | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_type: cdktf.stringToTerraform(struct!.authType),
-    cognito_config: cdktf.listMapper(appsyncApiEventConfigAuthProviderCognitoConfigToTerraform, true)(struct!.cognitoConfig),
-    lambda_authorizer_config: cdktf.listMapper(appsyncApiEventConfigAuthProviderLambdaAuthorizerConfigToTerraform, true)(struct!.lambdaAuthorizerConfig),
-    openid_connect_config: cdktf.listMapper(appsyncApiEventConfigAuthProviderOpenidConnectConfigToTerraform, true)(struct!.openidConnectConfig),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
+    cognito_config: cdktn.listMapper(appsyncApiEventConfigAuthProviderCognitoConfigToTerraform, true)(struct!.cognitoConfig),
+    lambda_authorizer_config: cdktn.listMapper(appsyncApiEventConfigAuthProviderLambdaAuthorizerConfigToTerraform, true)(struct!.lambdaAuthorizerConfig),
+    openid_connect_config: cdktn.listMapper(appsyncApiEventConfigAuthProviderOpenidConnectConfigToTerraform, true)(struct!.openidConnectConfig),
   }
 }
 
 
-export function appsyncApiEventConfigAuthProviderToHclTerraform(struct?: AppsyncApiEventConfigAuthProvider | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigAuthProviderToHclTerraform(struct?: AppsyncApiEventConfigAuthProvider | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cognito_config: {
-      value: cdktf.listMapperHcl(appsyncApiEventConfigAuthProviderCognitoConfigToHclTerraform, true)(struct!.cognitoConfig),
+      value: cdktn.listMapperHcl(appsyncApiEventConfigAuthProviderCognitoConfigToHclTerraform, true)(struct!.cognitoConfig),
       isBlock: true,
       type: "list",
       storageClassType: "AppsyncApiEventConfigAuthProviderCognitoConfigList",
     },
     lambda_authorizer_config: {
-      value: cdktf.listMapperHcl(appsyncApiEventConfigAuthProviderLambdaAuthorizerConfigToHclTerraform, true)(struct!.lambdaAuthorizerConfig),
+      value: cdktn.listMapperHcl(appsyncApiEventConfigAuthProviderLambdaAuthorizerConfigToHclTerraform, true)(struct!.lambdaAuthorizerConfig),
       isBlock: true,
       type: "list",
       storageClassType: "AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfigList",
     },
     openid_connect_config: {
-      value: cdktf.listMapperHcl(appsyncApiEventConfigAuthProviderOpenidConnectConfigToHclTerraform, true)(struct!.openidConnectConfig),
+      value: cdktn.listMapperHcl(appsyncApiEventConfigAuthProviderOpenidConnectConfigToHclTerraform, true)(struct!.openidConnectConfig),
       isBlock: true,
       type: "list",
       storageClassType: "AppsyncApiEventConfigAuthProviderOpenidConnectConfigList",
@@ -679,9 +679,9 @@ export function appsyncApiEventConfigAuthProviderToHclTerraform(struct?: Appsync
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncApiEventConfigAuthProviderOutputReference extends cdktf.ComplexObject {
+export class AppsyncApiEventConfigAuthProviderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -689,11 +689,11 @@ export class AppsyncApiEventConfigAuthProviderOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncApiEventConfigAuthProvider | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncApiEventConfigAuthProvider | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -718,7 +718,7 @@ export class AppsyncApiEventConfigAuthProviderOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncApiEventConfigAuthProvider | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncApiEventConfigAuthProvider | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -727,7 +727,7 @@ export class AppsyncApiEventConfigAuthProviderOutputReference extends cdktf.Comp
       this._lambdaAuthorizerConfig.internalValue = undefined;
       this._openidConnectConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -759,7 +759,7 @@ export class AppsyncApiEventConfigAuthProviderOutputReference extends cdktf.Comp
   public get cognitoConfig() {
     return this._cognitoConfig;
   }
-  public putCognitoConfig(value: AppsyncApiEventConfigAuthProviderCognitoConfig[] | cdktf.IResolvable) {
+  public putCognitoConfig(value: AppsyncApiEventConfigAuthProviderCognitoConfig[] | cdktn.IResolvable) {
     this._cognitoConfig.internalValue = value;
   }
   public resetCognitoConfig() {
@@ -775,7 +775,7 @@ export class AppsyncApiEventConfigAuthProviderOutputReference extends cdktf.Comp
   public get lambdaAuthorizerConfig() {
     return this._lambdaAuthorizerConfig;
   }
-  public putLambdaAuthorizerConfig(value: AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig[] | cdktf.IResolvable) {
+  public putLambdaAuthorizerConfig(value: AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig[] | cdktn.IResolvable) {
     this._lambdaAuthorizerConfig.internalValue = value;
   }
   public resetLambdaAuthorizerConfig() {
@@ -791,7 +791,7 @@ export class AppsyncApiEventConfigAuthProviderOutputReference extends cdktf.Comp
   public get openidConnectConfig() {
     return this._openidConnectConfig;
   }
-  public putOpenidConnectConfig(value: AppsyncApiEventConfigAuthProviderOpenidConnectConfig[] | cdktf.IResolvable) {
+  public putOpenidConnectConfig(value: AppsyncApiEventConfigAuthProviderOpenidConnectConfig[] | cdktn.IResolvable) {
     this._openidConnectConfig.internalValue = value;
   }
   public resetOpenidConnectConfig() {
@@ -803,15 +803,15 @@ export class AppsyncApiEventConfigAuthProviderOutputReference extends cdktf.Comp
   }
 }
 
-export class AppsyncApiEventConfigAuthProviderList extends cdktf.ComplexList {
-  public internalValue? : AppsyncApiEventConfigAuthProvider[] | cdktf.IResolvable
+export class AppsyncApiEventConfigAuthProviderList extends cdktn.ComplexList {
+  public internalValue? : AppsyncApiEventConfigAuthProvider[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -829,25 +829,25 @@ export interface AppsyncApiEventConfigConnectionAuthMode {
   readonly authType: string;
 }
 
-export function appsyncApiEventConfigConnectionAuthModeToTerraform(struct?: AppsyncApiEventConfigConnectionAuthMode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigConnectionAuthModeToTerraform(struct?: AppsyncApiEventConfigConnectionAuthMode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_type: cdktf.stringToTerraform(struct!.authType),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
   }
 }
 
 
-export function appsyncApiEventConfigConnectionAuthModeToHclTerraform(struct?: AppsyncApiEventConfigConnectionAuthMode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigConnectionAuthModeToHclTerraform(struct?: AppsyncApiEventConfigConnectionAuthMode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -858,9 +858,9 @@ export function appsyncApiEventConfigConnectionAuthModeToHclTerraform(struct?: A
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncApiEventConfigConnectionAuthModeOutputReference extends cdktf.ComplexObject {
+export class AppsyncApiEventConfigConnectionAuthModeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -868,11 +868,11 @@ export class AppsyncApiEventConfigConnectionAuthModeOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncApiEventConfigConnectionAuthMode | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncApiEventConfigConnectionAuthMode | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -885,13 +885,13 @@ export class AppsyncApiEventConfigConnectionAuthModeOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncApiEventConfigConnectionAuthMode | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncApiEventConfigConnectionAuthMode | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._authType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -916,15 +916,15 @@ export class AppsyncApiEventConfigConnectionAuthModeOutputReference extends cdkt
   }
 }
 
-export class AppsyncApiEventConfigConnectionAuthModeList extends cdktf.ComplexList {
-  public internalValue? : AppsyncApiEventConfigConnectionAuthMode[] | cdktf.IResolvable
+export class AppsyncApiEventConfigConnectionAuthModeList extends cdktn.ComplexList {
+  public internalValue? : AppsyncApiEventConfigConnectionAuthMode[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -942,25 +942,25 @@ export interface AppsyncApiEventConfigDefaultPublishAuthMode {
   readonly authType: string;
 }
 
-export function appsyncApiEventConfigDefaultPublishAuthModeToTerraform(struct?: AppsyncApiEventConfigDefaultPublishAuthMode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigDefaultPublishAuthModeToTerraform(struct?: AppsyncApiEventConfigDefaultPublishAuthMode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_type: cdktf.stringToTerraform(struct!.authType),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
   }
 }
 
 
-export function appsyncApiEventConfigDefaultPublishAuthModeToHclTerraform(struct?: AppsyncApiEventConfigDefaultPublishAuthMode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigDefaultPublishAuthModeToHclTerraform(struct?: AppsyncApiEventConfigDefaultPublishAuthMode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -971,9 +971,9 @@ export function appsyncApiEventConfigDefaultPublishAuthModeToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncApiEventConfigDefaultPublishAuthModeOutputReference extends cdktf.ComplexObject {
+export class AppsyncApiEventConfigDefaultPublishAuthModeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -981,11 +981,11 @@ export class AppsyncApiEventConfigDefaultPublishAuthModeOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncApiEventConfigDefaultPublishAuthMode | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncApiEventConfigDefaultPublishAuthMode | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -998,13 +998,13 @@ export class AppsyncApiEventConfigDefaultPublishAuthModeOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncApiEventConfigDefaultPublishAuthMode | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncApiEventConfigDefaultPublishAuthMode | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._authType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1029,15 +1029,15 @@ export class AppsyncApiEventConfigDefaultPublishAuthModeOutputReference extends 
   }
 }
 
-export class AppsyncApiEventConfigDefaultPublishAuthModeList extends cdktf.ComplexList {
-  public internalValue? : AppsyncApiEventConfigDefaultPublishAuthMode[] | cdktf.IResolvable
+export class AppsyncApiEventConfigDefaultPublishAuthModeList extends cdktn.ComplexList {
+  public internalValue? : AppsyncApiEventConfigDefaultPublishAuthMode[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1055,25 +1055,25 @@ export interface AppsyncApiEventConfigDefaultSubscribeAuthMode {
   readonly authType: string;
 }
 
-export function appsyncApiEventConfigDefaultSubscribeAuthModeToTerraform(struct?: AppsyncApiEventConfigDefaultSubscribeAuthMode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigDefaultSubscribeAuthModeToTerraform(struct?: AppsyncApiEventConfigDefaultSubscribeAuthMode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_type: cdktf.stringToTerraform(struct!.authType),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
   }
 }
 
 
-export function appsyncApiEventConfigDefaultSubscribeAuthModeToHclTerraform(struct?: AppsyncApiEventConfigDefaultSubscribeAuthMode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigDefaultSubscribeAuthModeToHclTerraform(struct?: AppsyncApiEventConfigDefaultSubscribeAuthMode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1084,9 +1084,9 @@ export function appsyncApiEventConfigDefaultSubscribeAuthModeToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncApiEventConfigDefaultSubscribeAuthModeOutputReference extends cdktf.ComplexObject {
+export class AppsyncApiEventConfigDefaultSubscribeAuthModeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1094,11 +1094,11 @@ export class AppsyncApiEventConfigDefaultSubscribeAuthModeOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncApiEventConfigDefaultSubscribeAuthMode | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncApiEventConfigDefaultSubscribeAuthMode | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1111,13 +1111,13 @@ export class AppsyncApiEventConfigDefaultSubscribeAuthModeOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncApiEventConfigDefaultSubscribeAuthMode | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncApiEventConfigDefaultSubscribeAuthMode | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._authType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1142,15 +1142,15 @@ export class AppsyncApiEventConfigDefaultSubscribeAuthModeOutputReference extend
   }
 }
 
-export class AppsyncApiEventConfigDefaultSubscribeAuthModeList extends cdktf.ComplexList {
-  public internalValue? : AppsyncApiEventConfigDefaultSubscribeAuthMode[] | cdktf.IResolvable
+export class AppsyncApiEventConfigDefaultSubscribeAuthModeList extends cdktn.ComplexList {
+  public internalValue? : AppsyncApiEventConfigDefaultSubscribeAuthMode[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1172,32 +1172,32 @@ export interface AppsyncApiEventConfigLogConfig {
   readonly logLevel: string;
 }
 
-export function appsyncApiEventConfigLogConfigToTerraform(struct?: AppsyncApiEventConfigLogConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigLogConfigToTerraform(struct?: AppsyncApiEventConfigLogConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloudwatch_logs_role_arn: cdktf.stringToTerraform(struct!.cloudwatchLogsRoleArn),
-    log_level: cdktf.stringToTerraform(struct!.logLevel),
+    cloudwatch_logs_role_arn: cdktn.stringToTerraform(struct!.cloudwatchLogsRoleArn),
+    log_level: cdktn.stringToTerraform(struct!.logLevel),
   }
 }
 
 
-export function appsyncApiEventConfigLogConfigToHclTerraform(struct?: AppsyncApiEventConfigLogConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigLogConfigToHclTerraform(struct?: AppsyncApiEventConfigLogConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloudwatch_logs_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.cloudwatchLogsRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.cloudwatchLogsRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_level: {
-      value: cdktf.stringToHclTerraform(struct!.logLevel),
+      value: cdktn.stringToHclTerraform(struct!.logLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1208,9 +1208,9 @@ export function appsyncApiEventConfigLogConfigToHclTerraform(struct?: AppsyncApi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncApiEventConfigLogConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncApiEventConfigLogConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1218,11 +1218,11 @@ export class AppsyncApiEventConfigLogConfigOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncApiEventConfigLogConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncApiEventConfigLogConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1239,14 +1239,14 @@ export class AppsyncApiEventConfigLogConfigOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncApiEventConfigLogConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncApiEventConfigLogConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cloudwatchLogsRoleArn = undefined;
       this._logLevel = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1285,15 +1285,15 @@ export class AppsyncApiEventConfigLogConfigOutputReference extends cdktf.Complex
   }
 }
 
-export class AppsyncApiEventConfigLogConfigList extends cdktf.ComplexList {
-  public internalValue? : AppsyncApiEventConfigLogConfig[] | cdktf.IResolvable
+export class AppsyncApiEventConfigLogConfigList extends cdktn.ComplexList {
+  public internalValue? : AppsyncApiEventConfigLogConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1310,80 +1310,80 @@ export interface AppsyncApiEventConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api#auth_provider AppsyncApi#auth_provider}
   */
-  readonly authProvider?: AppsyncApiEventConfigAuthProvider[] | cdktf.IResolvable;
+  readonly authProvider?: AppsyncApiEventConfigAuthProvider[] | cdktn.IResolvable;
   /**
   * connection_auth_mode block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api#connection_auth_mode AppsyncApi#connection_auth_mode}
   */
-  readonly connectionAuthMode?: AppsyncApiEventConfigConnectionAuthMode[] | cdktf.IResolvable;
+  readonly connectionAuthMode?: AppsyncApiEventConfigConnectionAuthMode[] | cdktn.IResolvable;
   /**
   * default_publish_auth_mode block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api#default_publish_auth_mode AppsyncApi#default_publish_auth_mode}
   */
-  readonly defaultPublishAuthMode?: AppsyncApiEventConfigDefaultPublishAuthMode[] | cdktf.IResolvable;
+  readonly defaultPublishAuthMode?: AppsyncApiEventConfigDefaultPublishAuthMode[] | cdktn.IResolvable;
   /**
   * default_subscribe_auth_mode block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api#default_subscribe_auth_mode AppsyncApi#default_subscribe_auth_mode}
   */
-  readonly defaultSubscribeAuthMode?: AppsyncApiEventConfigDefaultSubscribeAuthMode[] | cdktf.IResolvable;
+  readonly defaultSubscribeAuthMode?: AppsyncApiEventConfigDefaultSubscribeAuthMode[] | cdktn.IResolvable;
   /**
   * log_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api#log_config AppsyncApi#log_config}
   */
-  readonly logConfig?: AppsyncApiEventConfigLogConfig[] | cdktf.IResolvable;
+  readonly logConfig?: AppsyncApiEventConfigLogConfig[] | cdktn.IResolvable;
 }
 
-export function appsyncApiEventConfigToTerraform(struct?: AppsyncApiEventConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigToTerraform(struct?: AppsyncApiEventConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_provider: cdktf.listMapper(appsyncApiEventConfigAuthProviderToTerraform, true)(struct!.authProvider),
-    connection_auth_mode: cdktf.listMapper(appsyncApiEventConfigConnectionAuthModeToTerraform, true)(struct!.connectionAuthMode),
-    default_publish_auth_mode: cdktf.listMapper(appsyncApiEventConfigDefaultPublishAuthModeToTerraform, true)(struct!.defaultPublishAuthMode),
-    default_subscribe_auth_mode: cdktf.listMapper(appsyncApiEventConfigDefaultSubscribeAuthModeToTerraform, true)(struct!.defaultSubscribeAuthMode),
-    log_config: cdktf.listMapper(appsyncApiEventConfigLogConfigToTerraform, true)(struct!.logConfig),
+    auth_provider: cdktn.listMapper(appsyncApiEventConfigAuthProviderToTerraform, true)(struct!.authProvider),
+    connection_auth_mode: cdktn.listMapper(appsyncApiEventConfigConnectionAuthModeToTerraform, true)(struct!.connectionAuthMode),
+    default_publish_auth_mode: cdktn.listMapper(appsyncApiEventConfigDefaultPublishAuthModeToTerraform, true)(struct!.defaultPublishAuthMode),
+    default_subscribe_auth_mode: cdktn.listMapper(appsyncApiEventConfigDefaultSubscribeAuthModeToTerraform, true)(struct!.defaultSubscribeAuthMode),
+    log_config: cdktn.listMapper(appsyncApiEventConfigLogConfigToTerraform, true)(struct!.logConfig),
   }
 }
 
 
-export function appsyncApiEventConfigToHclTerraform(struct?: AppsyncApiEventConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncApiEventConfigToHclTerraform(struct?: AppsyncApiEventConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_provider: {
-      value: cdktf.listMapperHcl(appsyncApiEventConfigAuthProviderToHclTerraform, true)(struct!.authProvider),
+      value: cdktn.listMapperHcl(appsyncApiEventConfigAuthProviderToHclTerraform, true)(struct!.authProvider),
       isBlock: true,
       type: "list",
       storageClassType: "AppsyncApiEventConfigAuthProviderList",
     },
     connection_auth_mode: {
-      value: cdktf.listMapperHcl(appsyncApiEventConfigConnectionAuthModeToHclTerraform, true)(struct!.connectionAuthMode),
+      value: cdktn.listMapperHcl(appsyncApiEventConfigConnectionAuthModeToHclTerraform, true)(struct!.connectionAuthMode),
       isBlock: true,
       type: "list",
       storageClassType: "AppsyncApiEventConfigConnectionAuthModeList",
     },
     default_publish_auth_mode: {
-      value: cdktf.listMapperHcl(appsyncApiEventConfigDefaultPublishAuthModeToHclTerraform, true)(struct!.defaultPublishAuthMode),
+      value: cdktn.listMapperHcl(appsyncApiEventConfigDefaultPublishAuthModeToHclTerraform, true)(struct!.defaultPublishAuthMode),
       isBlock: true,
       type: "list",
       storageClassType: "AppsyncApiEventConfigDefaultPublishAuthModeList",
     },
     default_subscribe_auth_mode: {
-      value: cdktf.listMapperHcl(appsyncApiEventConfigDefaultSubscribeAuthModeToHclTerraform, true)(struct!.defaultSubscribeAuthMode),
+      value: cdktn.listMapperHcl(appsyncApiEventConfigDefaultSubscribeAuthModeToHclTerraform, true)(struct!.defaultSubscribeAuthMode),
       isBlock: true,
       type: "list",
       storageClassType: "AppsyncApiEventConfigDefaultSubscribeAuthModeList",
     },
     log_config: {
-      value: cdktf.listMapperHcl(appsyncApiEventConfigLogConfigToHclTerraform, true)(struct!.logConfig),
+      value: cdktn.listMapperHcl(appsyncApiEventConfigLogConfigToHclTerraform, true)(struct!.logConfig),
       isBlock: true,
       type: "list",
       storageClassType: "AppsyncApiEventConfigLogConfigList",
@@ -1394,9 +1394,9 @@ export function appsyncApiEventConfigToHclTerraform(struct?: AppsyncApiEventConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncApiEventConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncApiEventConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1404,11 +1404,11 @@ export class AppsyncApiEventConfigOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncApiEventConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncApiEventConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1437,7 +1437,7 @@ export class AppsyncApiEventConfigOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncApiEventConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncApiEventConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1447,7 +1447,7 @@ export class AppsyncApiEventConfigOutputReference extends cdktf.ComplexObject {
       this._defaultSubscribeAuthMode.internalValue = undefined;
       this._logConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1467,7 +1467,7 @@ export class AppsyncApiEventConfigOutputReference extends cdktf.ComplexObject {
   public get authProvider() {
     return this._authProvider;
   }
-  public putAuthProvider(value: AppsyncApiEventConfigAuthProvider[] | cdktf.IResolvable) {
+  public putAuthProvider(value: AppsyncApiEventConfigAuthProvider[] | cdktn.IResolvable) {
     this._authProvider.internalValue = value;
   }
   public resetAuthProvider() {
@@ -1483,7 +1483,7 @@ export class AppsyncApiEventConfigOutputReference extends cdktf.ComplexObject {
   public get connectionAuthMode() {
     return this._connectionAuthMode;
   }
-  public putConnectionAuthMode(value: AppsyncApiEventConfigConnectionAuthMode[] | cdktf.IResolvable) {
+  public putConnectionAuthMode(value: AppsyncApiEventConfigConnectionAuthMode[] | cdktn.IResolvable) {
     this._connectionAuthMode.internalValue = value;
   }
   public resetConnectionAuthMode() {
@@ -1499,7 +1499,7 @@ export class AppsyncApiEventConfigOutputReference extends cdktf.ComplexObject {
   public get defaultPublishAuthMode() {
     return this._defaultPublishAuthMode;
   }
-  public putDefaultPublishAuthMode(value: AppsyncApiEventConfigDefaultPublishAuthMode[] | cdktf.IResolvable) {
+  public putDefaultPublishAuthMode(value: AppsyncApiEventConfigDefaultPublishAuthMode[] | cdktn.IResolvable) {
     this._defaultPublishAuthMode.internalValue = value;
   }
   public resetDefaultPublishAuthMode() {
@@ -1515,7 +1515,7 @@ export class AppsyncApiEventConfigOutputReference extends cdktf.ComplexObject {
   public get defaultSubscribeAuthMode() {
     return this._defaultSubscribeAuthMode;
   }
-  public putDefaultSubscribeAuthMode(value: AppsyncApiEventConfigDefaultSubscribeAuthMode[] | cdktf.IResolvable) {
+  public putDefaultSubscribeAuthMode(value: AppsyncApiEventConfigDefaultSubscribeAuthMode[] | cdktn.IResolvable) {
     this._defaultSubscribeAuthMode.internalValue = value;
   }
   public resetDefaultSubscribeAuthMode() {
@@ -1531,7 +1531,7 @@ export class AppsyncApiEventConfigOutputReference extends cdktf.ComplexObject {
   public get logConfig() {
     return this._logConfig;
   }
-  public putLogConfig(value: AppsyncApiEventConfigLogConfig[] | cdktf.IResolvable) {
+  public putLogConfig(value: AppsyncApiEventConfigLogConfig[] | cdktn.IResolvable) {
     this._logConfig.internalValue = value;
   }
   public resetLogConfig() {
@@ -1543,15 +1543,15 @@ export class AppsyncApiEventConfigOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class AppsyncApiEventConfigList extends cdktf.ComplexList {
-  public internalValue? : AppsyncApiEventConfig[] | cdktf.IResolvable
+export class AppsyncApiEventConfigList extends cdktn.ComplexList {
+  public internalValue? : AppsyncApiEventConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1566,7 +1566,7 @@ export class AppsyncApiEventConfigList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api aws_appsync_api}
 */
-export class AppsyncApi extends cdktf.TerraformResource {
+export class AppsyncApi extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1577,14 +1577,14 @@ export class AppsyncApi extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppsyncApi resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppsyncApi resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppsyncApi to import
   * @param importFromId The id of the existing AppsyncApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppsyncApi to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appsync_api", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appsync_api", importId: importFromId, provider });
       }
 
   // ===========
@@ -1636,7 +1636,7 @@ export class AppsyncApi extends cdktf.TerraformResource {
   }
 
   // dns - computed: true, optional: false, required: false
-  private _dns = new cdktf.StringMap(this, "dns");
+  private _dns = new cdktn.StringMap(this, "dns");
   public get dns() {
     return this._dns;
   }
@@ -1703,7 +1703,7 @@ export class AppsyncApi extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1723,7 +1723,7 @@ export class AppsyncApi extends cdktf.TerraformResource {
   public get eventConfig() {
     return this._eventConfig;
   }
-  public putEventConfig(value: AppsyncApiEventConfig[] | cdktf.IResolvable) {
+  public putEventConfig(value: AppsyncApiEventConfig[] | cdktn.IResolvable) {
     this._eventConfig.internalValue = value;
   }
   public resetEventConfig() {
@@ -1740,42 +1740,42 @@ export class AppsyncApi extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      owner_contact: cdktf.stringToTerraform(this._ownerContact),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      event_config: cdktf.listMapper(appsyncApiEventConfigToTerraform, true)(this._eventConfig.internalValue),
+      name: cdktn.stringToTerraform(this._name),
+      owner_contact: cdktn.stringToTerraform(this._ownerContact),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      event_config: cdktn.listMapper(appsyncApiEventConfigToTerraform, true)(this._eventConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner_contact: {
-        value: cdktf.stringToHclTerraform(this._ownerContact),
+        value: cdktn.stringToHclTerraform(this._ownerContact),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       event_config: {
-        value: cdktf.listMapperHcl(appsyncApiEventConfigToHclTerraform, true)(this._eventConfig.internalValue),
+        value: cdktn.listMapperHcl(appsyncApiEventConfigToHclTerraform, true)(this._eventConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppsyncApiEventConfigList",

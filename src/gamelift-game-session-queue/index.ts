@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GameliftGameSessionQueueConfig extends cdktf.TerraformMetaArguments {
+export interface GameliftGameSessionQueueConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/gamelift_game_session_queue#custom_event_data GameliftGameSessionQueue#custom_event_data}
   */
@@ -58,7 +58,7 @@ export interface GameliftGameSessionQueueConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/gamelift_game_session_queue#player_latency_policy GameliftGameSessionQueue#player_latency_policy}
   */
-  readonly playerLatencyPolicy?: GameliftGameSessionQueuePlayerLatencyPolicy[] | cdktf.IResolvable;
+  readonly playerLatencyPolicy?: GameliftGameSessionQueuePlayerLatencyPolicy[] | cdktn.IResolvable;
 }
 export interface GameliftGameSessionQueuePlayerLatencyPolicy {
   /**
@@ -71,32 +71,32 @@ export interface GameliftGameSessionQueuePlayerLatencyPolicy {
   readonly policyDurationSeconds?: number;
 }
 
-export function gameliftGameSessionQueuePlayerLatencyPolicyToTerraform(struct?: GameliftGameSessionQueuePlayerLatencyPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gameliftGameSessionQueuePlayerLatencyPolicyToTerraform(struct?: GameliftGameSessionQueuePlayerLatencyPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    maximum_individual_player_latency_milliseconds: cdktf.numberToTerraform(struct!.maximumIndividualPlayerLatencyMilliseconds),
-    policy_duration_seconds: cdktf.numberToTerraform(struct!.policyDurationSeconds),
+    maximum_individual_player_latency_milliseconds: cdktn.numberToTerraform(struct!.maximumIndividualPlayerLatencyMilliseconds),
+    policy_duration_seconds: cdktn.numberToTerraform(struct!.policyDurationSeconds),
   }
 }
 
 
-export function gameliftGameSessionQueuePlayerLatencyPolicyToHclTerraform(struct?: GameliftGameSessionQueuePlayerLatencyPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gameliftGameSessionQueuePlayerLatencyPolicyToHclTerraform(struct?: GameliftGameSessionQueuePlayerLatencyPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     maximum_individual_player_latency_milliseconds: {
-      value: cdktf.numberToHclTerraform(struct!.maximumIndividualPlayerLatencyMilliseconds),
+      value: cdktn.numberToHclTerraform(struct!.maximumIndividualPlayerLatencyMilliseconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     policy_duration_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.policyDurationSeconds),
+      value: cdktn.numberToHclTerraform(struct!.policyDurationSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -107,9 +107,9 @@ export function gameliftGameSessionQueuePlayerLatencyPolicyToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GameliftGameSessionQueuePlayerLatencyPolicyOutputReference extends cdktf.ComplexObject {
+export class GameliftGameSessionQueuePlayerLatencyPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -117,11 +117,11 @@ export class GameliftGameSessionQueuePlayerLatencyPolicyOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GameliftGameSessionQueuePlayerLatencyPolicy | cdktf.IResolvable | undefined {
+  public get internalValue(): GameliftGameSessionQueuePlayerLatencyPolicy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -138,14 +138,14 @@ export class GameliftGameSessionQueuePlayerLatencyPolicyOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GameliftGameSessionQueuePlayerLatencyPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GameliftGameSessionQueuePlayerLatencyPolicy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._maximumIndividualPlayerLatencyMilliseconds = undefined;
       this._policyDurationSeconds = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -187,15 +187,15 @@ export class GameliftGameSessionQueuePlayerLatencyPolicyOutputReference extends 
   }
 }
 
-export class GameliftGameSessionQueuePlayerLatencyPolicyList extends cdktf.ComplexList {
-  public internalValue? : GameliftGameSessionQueuePlayerLatencyPolicy[] | cdktf.IResolvable
+export class GameliftGameSessionQueuePlayerLatencyPolicyList extends cdktn.ComplexList {
+  public internalValue? : GameliftGameSessionQueuePlayerLatencyPolicy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -210,7 +210,7 @@ export class GameliftGameSessionQueuePlayerLatencyPolicyList extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/gamelift_game_session_queue aws_gamelift_game_session_queue}
 */
-export class GameliftGameSessionQueue extends cdktf.TerraformResource {
+export class GameliftGameSessionQueue extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -221,14 +221,14 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GameliftGameSessionQueue resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GameliftGameSessionQueue resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GameliftGameSessionQueue to import
   * @param importFromId The id of the existing GameliftGameSessionQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/gamelift_game_session_queue#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GameliftGameSessionQueue to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_gamelift_game_session_queue", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_gamelift_game_session_queue", importId: importFromId, provider });
       }
 
   // ===========
@@ -425,7 +425,7 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
   public get playerLatencyPolicy() {
     return this._playerLatencyPolicy;
   }
-  public putPlayerLatencyPolicy(value: GameliftGameSessionQueuePlayerLatencyPolicy[] | cdktf.IResolvable) {
+  public putPlayerLatencyPolicy(value: GameliftGameSessionQueuePlayerLatencyPolicy[] | cdktn.IResolvable) {
     this._playerLatencyPolicy.internalValue = value;
   }
   public resetPlayerLatencyPolicy() {
@@ -442,77 +442,77 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      custom_event_data: cdktf.stringToTerraform(this._customEventData),
-      destinations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._destinations),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      notification_target: cdktf.stringToTerraform(this._notificationTarget),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      timeout_in_seconds: cdktf.numberToTerraform(this._timeoutInSeconds),
-      player_latency_policy: cdktf.listMapper(gameliftGameSessionQueuePlayerLatencyPolicyToTerraform, true)(this._playerLatencyPolicy.internalValue),
+      custom_event_data: cdktn.stringToTerraform(this._customEventData),
+      destinations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._destinations),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      notification_target: cdktn.stringToTerraform(this._notificationTarget),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      timeout_in_seconds: cdktn.numberToTerraform(this._timeoutInSeconds),
+      player_latency_policy: cdktn.listMapper(gameliftGameSessionQueuePlayerLatencyPolicyToTerraform, true)(this._playerLatencyPolicy.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       custom_event_data: {
-        value: cdktf.stringToHclTerraform(this._customEventData),
+        value: cdktn.stringToHclTerraform(this._customEventData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destinations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._destinations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._destinations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_target: {
-        value: cdktf.stringToHclTerraform(this._notificationTarget),
+        value: cdktn.stringToHclTerraform(this._notificationTarget),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       timeout_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._timeoutInSeconds),
+        value: cdktn.numberToHclTerraform(this._timeoutInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       player_latency_policy: {
-        value: cdktf.listMapperHcl(gameliftGameSessionQueuePlayerLatencyPolicyToHclTerraform, true)(this._playerLatencyPolicy.internalValue),
+        value: cdktn.listMapperHcl(gameliftGameSessionQueuePlayerLatencyPolicyToHclTerraform, true)(this._playerLatencyPolicy.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "GameliftGameSessionQueuePlayerLatencyPolicyList",

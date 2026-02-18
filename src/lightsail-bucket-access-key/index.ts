@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LightsailBucketAccessKeyConfig extends cdktf.TerraformMetaArguments {
+export interface LightsailBucketAccessKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_bucket_access_key#bucket_name LightsailBucketAccessKey#bucket_name}
   */
@@ -34,7 +34,7 @@ export interface LightsailBucketAccessKeyConfig extends cdktf.TerraformMetaArgum
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key}
 */
-export class LightsailBucketAccessKey extends cdktf.TerraformResource {
+export class LightsailBucketAccessKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -45,14 +45,14 @@ export class LightsailBucketAccessKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LightsailBucketAccessKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LightsailBucketAccessKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LightsailBucketAccessKey to import
   * @param importFromId The id of the existing LightsailBucketAccessKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_bucket_access_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LightsailBucketAccessKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lightsail_bucket_access_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lightsail_bucket_access_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -162,28 +162,28 @@ export class LightsailBucketAccessKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket_name: cdktf.stringToTerraform(this._bucketName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      bucket_name: cdktn.stringToTerraform(this._bucketName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket_name: {
-        value: cdktf.stringToHclTerraform(this._bucketName),
+        value: cdktn.stringToHclTerraform(this._bucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

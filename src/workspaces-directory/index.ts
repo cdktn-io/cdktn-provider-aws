@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkspacesDirectoryConfig extends cdktf.TerraformMetaArguments {
+export interface WorkspacesDirectoryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_directory#directory_id WorkspacesDirectory#directory_id}
   */
@@ -114,31 +114,31 @@ export interface WorkspacesDirectoryActiveDirectoryConfig {
 }
 
 export function workspacesDirectoryActiveDirectoryConfigToTerraform(struct?: WorkspacesDirectoryActiveDirectoryConfigOutputReference | WorkspacesDirectoryActiveDirectoryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain_name: cdktf.stringToTerraform(struct!.domainName),
-    service_account_secret_arn: cdktf.stringToTerraform(struct!.serviceAccountSecretArn),
+    domain_name: cdktn.stringToTerraform(struct!.domainName),
+    service_account_secret_arn: cdktn.stringToTerraform(struct!.serviceAccountSecretArn),
   }
 }
 
 
 export function workspacesDirectoryActiveDirectoryConfigToHclTerraform(struct?: WorkspacesDirectoryActiveDirectoryConfigOutputReference | WorkspacesDirectoryActiveDirectoryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain_name: {
-      value: cdktf.stringToHclTerraform(struct!.domainName),
+      value: cdktn.stringToHclTerraform(struct!.domainName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_account_secret_arn: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountSecretArn),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountSecretArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -149,14 +149,14 @@ export function workspacesDirectoryActiveDirectoryConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspacesDirectoryActiveDirectoryConfigOutputReference extends cdktf.ComplexObject {
+export class WorkspacesDirectoryActiveDirectoryConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -225,31 +225,31 @@ export interface WorkspacesDirectoryCertificateBasedAuthProperties {
 }
 
 export function workspacesDirectoryCertificateBasedAuthPropertiesToTerraform(struct?: WorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference | WorkspacesDirectoryCertificateBasedAuthProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_authority_arn: cdktf.stringToTerraform(struct!.certificateAuthorityArn),
-    status: cdktf.stringToTerraform(struct!.status),
+    certificate_authority_arn: cdktn.stringToTerraform(struct!.certificateAuthorityArn),
+    status: cdktn.stringToTerraform(struct!.status),
   }
 }
 
 
 export function workspacesDirectoryCertificateBasedAuthPropertiesToHclTerraform(struct?: WorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference | WorkspacesDirectoryCertificateBasedAuthProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate_authority_arn: {
-      value: cdktf.stringToHclTerraform(struct!.certificateAuthorityArn),
+      value: cdktn.stringToHclTerraform(struct!.certificateAuthorityArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -260,14 +260,14 @@ export function workspacesDirectoryCertificateBasedAuthPropertiesToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference extends cdktf.ComplexObject {
+export class WorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -346,38 +346,38 @@ export interface WorkspacesDirectorySamlProperties {
 }
 
 export function workspacesDirectorySamlPropertiesToTerraform(struct?: WorkspacesDirectorySamlPropertiesOutputReference | WorkspacesDirectorySamlProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    relay_state_parameter_name: cdktf.stringToTerraform(struct!.relayStateParameterName),
-    status: cdktf.stringToTerraform(struct!.status),
-    user_access_url: cdktf.stringToTerraform(struct!.userAccessUrl),
+    relay_state_parameter_name: cdktn.stringToTerraform(struct!.relayStateParameterName),
+    status: cdktn.stringToTerraform(struct!.status),
+    user_access_url: cdktn.stringToTerraform(struct!.userAccessUrl),
   }
 }
 
 
 export function workspacesDirectorySamlPropertiesToHclTerraform(struct?: WorkspacesDirectorySamlPropertiesOutputReference | WorkspacesDirectorySamlProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     relay_state_parameter_name: {
-      value: cdktf.stringToHclTerraform(struct!.relayStateParameterName),
+      value: cdktn.stringToHclTerraform(struct!.relayStateParameterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_access_url: {
-      value: cdktf.stringToHclTerraform(struct!.userAccessUrl),
+      value: cdktn.stringToHclTerraform(struct!.userAccessUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -388,14 +388,14 @@ export function workspacesDirectorySamlPropertiesToHclTerraform(struct?: Workspa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspacesDirectorySamlPropertiesOutputReference extends cdktf.ComplexObject {
+export class WorkspacesDirectorySamlPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -484,72 +484,72 @@ export interface WorkspacesDirectorySelfServicePermissions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_directory#change_compute_type WorkspacesDirectory#change_compute_type}
   */
-  readonly changeComputeType?: boolean | cdktf.IResolvable;
+  readonly changeComputeType?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_directory#increase_volume_size WorkspacesDirectory#increase_volume_size}
   */
-  readonly increaseVolumeSize?: boolean | cdktf.IResolvable;
+  readonly increaseVolumeSize?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_directory#rebuild_workspace WorkspacesDirectory#rebuild_workspace}
   */
-  readonly rebuildWorkspace?: boolean | cdktf.IResolvable;
+  readonly rebuildWorkspace?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_directory#restart_workspace WorkspacesDirectory#restart_workspace}
   */
-  readonly restartWorkspace?: boolean | cdktf.IResolvable;
+  readonly restartWorkspace?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_directory#switch_running_mode WorkspacesDirectory#switch_running_mode}
   */
-  readonly switchRunningMode?: boolean | cdktf.IResolvable;
+  readonly switchRunningMode?: boolean | cdktn.IResolvable;
 }
 
 export function workspacesDirectorySelfServicePermissionsToTerraform(struct?: WorkspacesDirectorySelfServicePermissionsOutputReference | WorkspacesDirectorySelfServicePermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    change_compute_type: cdktf.booleanToTerraform(struct!.changeComputeType),
-    increase_volume_size: cdktf.booleanToTerraform(struct!.increaseVolumeSize),
-    rebuild_workspace: cdktf.booleanToTerraform(struct!.rebuildWorkspace),
-    restart_workspace: cdktf.booleanToTerraform(struct!.restartWorkspace),
-    switch_running_mode: cdktf.booleanToTerraform(struct!.switchRunningMode),
+    change_compute_type: cdktn.booleanToTerraform(struct!.changeComputeType),
+    increase_volume_size: cdktn.booleanToTerraform(struct!.increaseVolumeSize),
+    rebuild_workspace: cdktn.booleanToTerraform(struct!.rebuildWorkspace),
+    restart_workspace: cdktn.booleanToTerraform(struct!.restartWorkspace),
+    switch_running_mode: cdktn.booleanToTerraform(struct!.switchRunningMode),
   }
 }
 
 
 export function workspacesDirectorySelfServicePermissionsToHclTerraform(struct?: WorkspacesDirectorySelfServicePermissionsOutputReference | WorkspacesDirectorySelfServicePermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     change_compute_type: {
-      value: cdktf.booleanToHclTerraform(struct!.changeComputeType),
+      value: cdktn.booleanToHclTerraform(struct!.changeComputeType),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     increase_volume_size: {
-      value: cdktf.booleanToHclTerraform(struct!.increaseVolumeSize),
+      value: cdktn.booleanToHclTerraform(struct!.increaseVolumeSize),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     rebuild_workspace: {
-      value: cdktf.booleanToHclTerraform(struct!.rebuildWorkspace),
+      value: cdktn.booleanToHclTerraform(struct!.rebuildWorkspace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     restart_workspace: {
-      value: cdktf.booleanToHclTerraform(struct!.restartWorkspace),
+      value: cdktn.booleanToHclTerraform(struct!.restartWorkspace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     switch_running_mode: {
-      value: cdktf.booleanToHclTerraform(struct!.switchRunningMode),
+      value: cdktn.booleanToHclTerraform(struct!.switchRunningMode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -560,14 +560,14 @@ export function workspacesDirectorySelfServicePermissionsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cdktf.ComplexObject {
+export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -617,11 +617,11 @@ export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cd
   }
 
   // change_compute_type - computed: false, optional: true, required: false
-  private _changeComputeType?: boolean | cdktf.IResolvable; 
+  private _changeComputeType?: boolean | cdktn.IResolvable; 
   public get changeComputeType() {
     return this.getBooleanAttribute('change_compute_type');
   }
-  public set changeComputeType(value: boolean | cdktf.IResolvable) {
+  public set changeComputeType(value: boolean | cdktn.IResolvable) {
     this._changeComputeType = value;
   }
   public resetChangeComputeType() {
@@ -633,11 +633,11 @@ export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cd
   }
 
   // increase_volume_size - computed: false, optional: true, required: false
-  private _increaseVolumeSize?: boolean | cdktf.IResolvable; 
+  private _increaseVolumeSize?: boolean | cdktn.IResolvable; 
   public get increaseVolumeSize() {
     return this.getBooleanAttribute('increase_volume_size');
   }
-  public set increaseVolumeSize(value: boolean | cdktf.IResolvable) {
+  public set increaseVolumeSize(value: boolean | cdktn.IResolvable) {
     this._increaseVolumeSize = value;
   }
   public resetIncreaseVolumeSize() {
@@ -649,11 +649,11 @@ export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cd
   }
 
   // rebuild_workspace - computed: false, optional: true, required: false
-  private _rebuildWorkspace?: boolean | cdktf.IResolvable; 
+  private _rebuildWorkspace?: boolean | cdktn.IResolvable; 
   public get rebuildWorkspace() {
     return this.getBooleanAttribute('rebuild_workspace');
   }
-  public set rebuildWorkspace(value: boolean | cdktf.IResolvable) {
+  public set rebuildWorkspace(value: boolean | cdktn.IResolvable) {
     this._rebuildWorkspace = value;
   }
   public resetRebuildWorkspace() {
@@ -665,11 +665,11 @@ export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cd
   }
 
   // restart_workspace - computed: false, optional: true, required: false
-  private _restartWorkspace?: boolean | cdktf.IResolvable; 
+  private _restartWorkspace?: boolean | cdktn.IResolvable; 
   public get restartWorkspace() {
     return this.getBooleanAttribute('restart_workspace');
   }
-  public set restartWorkspace(value: boolean | cdktf.IResolvable) {
+  public set restartWorkspace(value: boolean | cdktn.IResolvable) {
     this._restartWorkspace = value;
   }
   public resetRestartWorkspace() {
@@ -681,11 +681,11 @@ export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cd
   }
 
   // switch_running_mode - computed: false, optional: true, required: false
-  private _switchRunningMode?: boolean | cdktf.IResolvable; 
+  private _switchRunningMode?: boolean | cdktn.IResolvable; 
   public get switchRunningMode() {
     return this.getBooleanAttribute('switch_running_mode');
   }
-  public set switchRunningMode(value: boolean | cdktf.IResolvable) {
+  public set switchRunningMode(value: boolean | cdktn.IResolvable) {
     this._switchRunningMode = value;
   }
   public resetSwitchRunningMode() {
@@ -732,73 +732,73 @@ export interface WorkspacesDirectoryWorkspaceAccessProperties {
 }
 
 export function workspacesDirectoryWorkspaceAccessPropertiesToTerraform(struct?: WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference | WorkspacesDirectoryWorkspaceAccessProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    device_type_android: cdktf.stringToTerraform(struct!.deviceTypeAndroid),
-    device_type_chromeos: cdktf.stringToTerraform(struct!.deviceTypeChromeos),
-    device_type_ios: cdktf.stringToTerraform(struct!.deviceTypeIos),
-    device_type_linux: cdktf.stringToTerraform(struct!.deviceTypeLinux),
-    device_type_osx: cdktf.stringToTerraform(struct!.deviceTypeOsx),
-    device_type_web: cdktf.stringToTerraform(struct!.deviceTypeWeb),
-    device_type_windows: cdktf.stringToTerraform(struct!.deviceTypeWindows),
-    device_type_zeroclient: cdktf.stringToTerraform(struct!.deviceTypeZeroclient),
+    device_type_android: cdktn.stringToTerraform(struct!.deviceTypeAndroid),
+    device_type_chromeos: cdktn.stringToTerraform(struct!.deviceTypeChromeos),
+    device_type_ios: cdktn.stringToTerraform(struct!.deviceTypeIos),
+    device_type_linux: cdktn.stringToTerraform(struct!.deviceTypeLinux),
+    device_type_osx: cdktn.stringToTerraform(struct!.deviceTypeOsx),
+    device_type_web: cdktn.stringToTerraform(struct!.deviceTypeWeb),
+    device_type_windows: cdktn.stringToTerraform(struct!.deviceTypeWindows),
+    device_type_zeroclient: cdktn.stringToTerraform(struct!.deviceTypeZeroclient),
   }
 }
 
 
 export function workspacesDirectoryWorkspaceAccessPropertiesToHclTerraform(struct?: WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference | WorkspacesDirectoryWorkspaceAccessProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     device_type_android: {
-      value: cdktf.stringToHclTerraform(struct!.deviceTypeAndroid),
+      value: cdktn.stringToHclTerraform(struct!.deviceTypeAndroid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     device_type_chromeos: {
-      value: cdktf.stringToHclTerraform(struct!.deviceTypeChromeos),
+      value: cdktn.stringToHclTerraform(struct!.deviceTypeChromeos),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     device_type_ios: {
-      value: cdktf.stringToHclTerraform(struct!.deviceTypeIos),
+      value: cdktn.stringToHclTerraform(struct!.deviceTypeIos),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     device_type_linux: {
-      value: cdktf.stringToHclTerraform(struct!.deviceTypeLinux),
+      value: cdktn.stringToHclTerraform(struct!.deviceTypeLinux),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     device_type_osx: {
-      value: cdktf.stringToHclTerraform(struct!.deviceTypeOsx),
+      value: cdktn.stringToHclTerraform(struct!.deviceTypeOsx),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     device_type_web: {
-      value: cdktf.stringToHclTerraform(struct!.deviceTypeWeb),
+      value: cdktn.stringToHclTerraform(struct!.deviceTypeWeb),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     device_type_windows: {
-      value: cdktf.stringToHclTerraform(struct!.deviceTypeWindows),
+      value: cdktn.stringToHclTerraform(struct!.deviceTypeWindows),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     device_type_zeroclient: {
-      value: cdktf.stringToHclTerraform(struct!.deviceTypeZeroclient),
+      value: cdktn.stringToHclTerraform(struct!.deviceTypeZeroclient),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -809,14 +809,14 @@ export function workspacesDirectoryWorkspaceAccessPropertiesToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference extends cdktf.ComplexObject {
+export class WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1023,64 +1023,64 @@ export interface WorkspacesDirectoryWorkspaceCreationProperties {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_directory#enable_internet_access WorkspacesDirectory#enable_internet_access}
   */
-  readonly enableInternetAccess?: boolean | cdktf.IResolvable;
+  readonly enableInternetAccess?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_directory#enable_maintenance_mode WorkspacesDirectory#enable_maintenance_mode}
   */
-  readonly enableMaintenanceMode?: boolean | cdktf.IResolvable;
+  readonly enableMaintenanceMode?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_directory#user_enabled_as_local_administrator WorkspacesDirectory#user_enabled_as_local_administrator}
   */
-  readonly userEnabledAsLocalAdministrator?: boolean | cdktf.IResolvable;
+  readonly userEnabledAsLocalAdministrator?: boolean | cdktn.IResolvable;
 }
 
 export function workspacesDirectoryWorkspaceCreationPropertiesToTerraform(struct?: WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference | WorkspacesDirectoryWorkspaceCreationProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_security_group_id: cdktf.stringToTerraform(struct!.customSecurityGroupId),
-    default_ou: cdktf.stringToTerraform(struct!.defaultOu),
-    enable_internet_access: cdktf.booleanToTerraform(struct!.enableInternetAccess),
-    enable_maintenance_mode: cdktf.booleanToTerraform(struct!.enableMaintenanceMode),
-    user_enabled_as_local_administrator: cdktf.booleanToTerraform(struct!.userEnabledAsLocalAdministrator),
+    custom_security_group_id: cdktn.stringToTerraform(struct!.customSecurityGroupId),
+    default_ou: cdktn.stringToTerraform(struct!.defaultOu),
+    enable_internet_access: cdktn.booleanToTerraform(struct!.enableInternetAccess),
+    enable_maintenance_mode: cdktn.booleanToTerraform(struct!.enableMaintenanceMode),
+    user_enabled_as_local_administrator: cdktn.booleanToTerraform(struct!.userEnabledAsLocalAdministrator),
   }
 }
 
 
 export function workspacesDirectoryWorkspaceCreationPropertiesToHclTerraform(struct?: WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference | WorkspacesDirectoryWorkspaceCreationProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_security_group_id: {
-      value: cdktf.stringToHclTerraform(struct!.customSecurityGroupId),
+      value: cdktn.stringToHclTerraform(struct!.customSecurityGroupId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default_ou: {
-      value: cdktf.stringToHclTerraform(struct!.defaultOu),
+      value: cdktn.stringToHclTerraform(struct!.defaultOu),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_internet_access: {
-      value: cdktf.booleanToHclTerraform(struct!.enableInternetAccess),
+      value: cdktn.booleanToHclTerraform(struct!.enableInternetAccess),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_maintenance_mode: {
-      value: cdktf.booleanToHclTerraform(struct!.enableMaintenanceMode),
+      value: cdktn.booleanToHclTerraform(struct!.enableMaintenanceMode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     user_enabled_as_local_administrator: {
-      value: cdktf.booleanToHclTerraform(struct!.userEnabledAsLocalAdministrator),
+      value: cdktn.booleanToHclTerraform(struct!.userEnabledAsLocalAdministrator),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1091,14 +1091,14 @@ export function workspacesDirectoryWorkspaceCreationPropertiesToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference extends cdktf.ComplexObject {
+export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1180,11 +1180,11 @@ export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference exten
   }
 
   // enable_internet_access - computed: false, optional: true, required: false
-  private _enableInternetAccess?: boolean | cdktf.IResolvable; 
+  private _enableInternetAccess?: boolean | cdktn.IResolvable; 
   public get enableInternetAccess() {
     return this.getBooleanAttribute('enable_internet_access');
   }
-  public set enableInternetAccess(value: boolean | cdktf.IResolvable) {
+  public set enableInternetAccess(value: boolean | cdktn.IResolvable) {
     this._enableInternetAccess = value;
   }
   public resetEnableInternetAccess() {
@@ -1196,11 +1196,11 @@ export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference exten
   }
 
   // enable_maintenance_mode - computed: false, optional: true, required: false
-  private _enableMaintenanceMode?: boolean | cdktf.IResolvable; 
+  private _enableMaintenanceMode?: boolean | cdktn.IResolvable; 
   public get enableMaintenanceMode() {
     return this.getBooleanAttribute('enable_maintenance_mode');
   }
-  public set enableMaintenanceMode(value: boolean | cdktf.IResolvable) {
+  public set enableMaintenanceMode(value: boolean | cdktn.IResolvable) {
     this._enableMaintenanceMode = value;
   }
   public resetEnableMaintenanceMode() {
@@ -1212,11 +1212,11 @@ export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference exten
   }
 
   // user_enabled_as_local_administrator - computed: false, optional: true, required: false
-  private _userEnabledAsLocalAdministrator?: boolean | cdktf.IResolvable; 
+  private _userEnabledAsLocalAdministrator?: boolean | cdktn.IResolvable; 
   public get userEnabledAsLocalAdministrator() {
     return this.getBooleanAttribute('user_enabled_as_local_administrator');
   }
-  public set userEnabledAsLocalAdministrator(value: boolean | cdktf.IResolvable) {
+  public set userEnabledAsLocalAdministrator(value: boolean | cdktn.IResolvable) {
     this._userEnabledAsLocalAdministrator = value;
   }
   public resetUserEnabledAsLocalAdministrator() {
@@ -1231,7 +1231,7 @@ export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference exten
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_directory aws_workspaces_directory}
 */
-export class WorkspacesDirectory extends cdktf.TerraformResource {
+export class WorkspacesDirectory extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1242,14 +1242,14 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkspacesDirectory resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkspacesDirectory resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspacesDirectory to import
   * @param importFromId The id of the existing WorkspacesDirectory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_directory#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspacesDirectory to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspaces_directory", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspaces_directory", importId: importFromId, provider });
       }
 
   // ===========
@@ -1341,7 +1341,7 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
 
   // dns_ip_addresses - computed: true, optional: false, required: false
   public get dnsIpAddresses() {
-    return cdktf.Fn.tolist(this.getListAttribute('dns_ip_addresses'));
+    return cdktn.Fn.tolist(this.getListAttribute('dns_ip_addresses'));
   }
 
   // iam_role_id - computed: true, optional: false, required: false
@@ -1368,7 +1368,7 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   // ip_group_ids - computed: true, optional: true, required: false
   private _ipGroupIds?: string[]; 
   public get ipGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('ip_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('ip_group_ids'));
   }
   public set ipGroupIds(value: string[]) {
     this._ipGroupIds = value;
@@ -1405,7 +1405,7 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   // subnet_ids - computed: true, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -1637,18 +1637,18 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      directory_id: cdktf.stringToTerraform(this._directoryId),
-      id: cdktf.stringToTerraform(this._id),
-      ip_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipGroupIds),
-      region: cdktf.stringToTerraform(this._region),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      tenancy: cdktf.stringToTerraform(this._tenancy),
-      user_identity_type: cdktf.stringToTerraform(this._userIdentityType),
-      workspace_directory_description: cdktf.stringToTerraform(this._workspaceDirectoryDescription),
-      workspace_directory_name: cdktf.stringToTerraform(this._workspaceDirectoryName),
-      workspace_type: cdktf.stringToTerraform(this._workspaceType),
+      directory_id: cdktn.stringToTerraform(this._directoryId),
+      id: cdktn.stringToTerraform(this._id),
+      ip_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ipGroupIds),
+      region: cdktn.stringToTerraform(this._region),
+      subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnetIds),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      tenancy: cdktn.stringToTerraform(this._tenancy),
+      user_identity_type: cdktn.stringToTerraform(this._userIdentityType),
+      workspace_directory_description: cdktn.stringToTerraform(this._workspaceDirectoryDescription),
+      workspace_directory_name: cdktn.stringToTerraform(this._workspaceDirectoryName),
+      workspace_type: cdktn.stringToTerraform(this._workspaceType),
       active_directory_config: workspacesDirectoryActiveDirectoryConfigToTerraform(this._activeDirectoryConfig.internalValue),
       certificate_based_auth_properties: workspacesDirectoryCertificateBasedAuthPropertiesToTerraform(this._certificateBasedAuthProperties.internalValue),
       saml_properties: workspacesDirectorySamlPropertiesToTerraform(this._samlProperties.internalValue),
@@ -1661,73 +1661,73 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       directory_id: {
-        value: cdktf.stringToHclTerraform(this._directoryId),
+        value: cdktn.stringToHclTerraform(this._directoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ipGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnetIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tenancy: {
-        value: cdktf.stringToHclTerraform(this._tenancy),
+        value: cdktn.stringToHclTerraform(this._tenancy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_identity_type: {
-        value: cdktf.stringToHclTerraform(this._userIdentityType),
+        value: cdktn.stringToHclTerraform(this._userIdentityType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_directory_description: {
-        value: cdktf.stringToHclTerraform(this._workspaceDirectoryDescription),
+        value: cdktn.stringToHclTerraform(this._workspaceDirectoryDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_directory_name: {
-        value: cdktf.stringToHclTerraform(this._workspaceDirectoryName),
+        value: cdktn.stringToHclTerraform(this._workspaceDirectoryName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_type: {
-        value: cdktf.stringToHclTerraform(this._workspaceType),
+        value: cdktn.stringToHclTerraform(this._workspaceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

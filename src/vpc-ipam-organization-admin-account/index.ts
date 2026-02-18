@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcIpamOrganizationAdminAccountConfig extends cdktf.TerraformMetaArguments {
+export interface VpcIpamOrganizationAdminAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_organization_admin_account#delegated_admin_account_id VpcIpamOrganizationAdminAccount#delegated_admin_account_id}
   */
@@ -28,7 +28,7 @@ export interface VpcIpamOrganizationAdminAccountConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_organization_admin_account aws_vpc_ipam_organization_admin_account}
 */
-export class VpcIpamOrganizationAdminAccount extends cdktf.TerraformResource {
+export class VpcIpamOrganizationAdminAccount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -39,14 +39,14 @@ export class VpcIpamOrganizationAdminAccount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcIpamOrganizationAdminAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcIpamOrganizationAdminAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcIpamOrganizationAdminAccount to import
   * @param importFromId The id of the existing VpcIpamOrganizationAdminAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_organization_admin_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcIpamOrganizationAdminAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_ipam_organization_admin_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_ipam_organization_admin_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -139,21 +139,21 @@ export class VpcIpamOrganizationAdminAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      delegated_admin_account_id: cdktf.stringToTerraform(this._delegatedAdminAccountId),
-      id: cdktf.stringToTerraform(this._id),
+      delegated_admin_account_id: cdktn.stringToTerraform(this._delegatedAdminAccountId),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       delegated_admin_account_id: {
-        value: cdktf.stringToHclTerraform(this._delegatedAdminAccountId),
+        value: cdktn.stringToHclTerraform(this._delegatedAdminAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

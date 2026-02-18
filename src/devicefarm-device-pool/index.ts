@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DevicefarmDevicePoolConfig extends cdktf.TerraformMetaArguments {
+export interface DevicefarmDevicePoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devicefarm_device_pool#description DevicefarmDevicePool#description}
   */
@@ -54,7 +54,7 @@ export interface DevicefarmDevicePoolConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devicefarm_device_pool#rule DevicefarmDevicePool#rule}
   */
-  readonly rule: DevicefarmDevicePoolRule[] | cdktf.IResolvable;
+  readonly rule: DevicefarmDevicePoolRule[] | cdktn.IResolvable;
 }
 export interface DevicefarmDevicePoolRule {
   /**
@@ -71,39 +71,39 @@ export interface DevicefarmDevicePoolRule {
   readonly value?: string;
 }
 
-export function devicefarmDevicePoolRuleToTerraform(struct?: DevicefarmDevicePoolRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devicefarmDevicePoolRuleToTerraform(struct?: DevicefarmDevicePoolRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attribute: cdktf.stringToTerraform(struct!.attribute),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    value: cdktf.stringToTerraform(struct!.value),
+    attribute: cdktn.stringToTerraform(struct!.attribute),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function devicefarmDevicePoolRuleToHclTerraform(struct?: DevicefarmDevicePoolRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devicefarmDevicePoolRuleToHclTerraform(struct?: DevicefarmDevicePoolRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attribute: {
-      value: cdktf.stringToHclTerraform(struct!.attribute),
+      value: cdktn.stringToHclTerraform(struct!.attribute),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -114,9 +114,9 @@ export function devicefarmDevicePoolRuleToHclTerraform(struct?: DevicefarmDevice
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevicefarmDevicePoolRuleOutputReference extends cdktf.ComplexObject {
+export class DevicefarmDevicePoolRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -124,11 +124,11 @@ export class DevicefarmDevicePoolRuleOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DevicefarmDevicePoolRule | cdktf.IResolvable | undefined {
+  public get internalValue(): DevicefarmDevicePoolRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -149,7 +149,7 @@ export class DevicefarmDevicePoolRuleOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DevicefarmDevicePoolRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DevicefarmDevicePoolRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -157,7 +157,7 @@ export class DevicefarmDevicePoolRuleOutputReference extends cdktf.ComplexObject
       this._operator = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -219,15 +219,15 @@ export class DevicefarmDevicePoolRuleOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class DevicefarmDevicePoolRuleList extends cdktf.ComplexList {
-  public internalValue? : DevicefarmDevicePoolRule[] | cdktf.IResolvable
+export class DevicefarmDevicePoolRuleList extends cdktn.ComplexList {
+  public internalValue? : DevicefarmDevicePoolRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -242,7 +242,7 @@ export class DevicefarmDevicePoolRuleList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devicefarm_device_pool aws_devicefarm_device_pool}
 */
-export class DevicefarmDevicePool extends cdktf.TerraformResource {
+export class DevicefarmDevicePool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -253,14 +253,14 @@ export class DevicefarmDevicePool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DevicefarmDevicePool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DevicefarmDevicePool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevicefarmDevicePool to import
   * @param importFromId The id of the existing DevicefarmDevicePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devicefarm_device_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevicefarmDevicePool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_devicefarm_device_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_devicefarm_device_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -442,7 +442,7 @@ export class DevicefarmDevicePool extends cdktf.TerraformResource {
   public get rule() {
     return this._rule;
   }
-  public putRule(value: DevicefarmDevicePoolRule[] | cdktf.IResolvable) {
+  public putRule(value: DevicefarmDevicePoolRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -456,70 +456,70 @@ export class DevicefarmDevicePool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      max_devices: cdktf.numberToTerraform(this._maxDevices),
-      name: cdktf.stringToTerraform(this._name),
-      project_arn: cdktf.stringToTerraform(this._projectArn),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      rule: cdktf.listMapper(devicefarmDevicePoolRuleToTerraform, true)(this._rule.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      max_devices: cdktn.numberToTerraform(this._maxDevices),
+      name: cdktn.stringToTerraform(this._name),
+      project_arn: cdktn.stringToTerraform(this._projectArn),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      rule: cdktn.listMapper(devicefarmDevicePoolRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_devices: {
-        value: cdktf.numberToHclTerraform(this._maxDevices),
+        value: cdktn.numberToHclTerraform(this._maxDevices),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_arn: {
-        value: cdktf.stringToHclTerraform(this._projectArn),
+        value: cdktn.stringToHclTerraform(this._projectArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       rule: {
-        value: cdktf.listMapperHcl(devicefarmDevicePoolRuleToHclTerraform, true)(this._rule.internalValue),
+        value: cdktn.listMapperHcl(devicefarmDevicePoolRuleToHclTerraform, true)(this._rule.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DevicefarmDevicePoolRuleList",

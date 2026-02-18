@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EksCapabilityConfig extends cdktf.TerraformMetaArguments {
+export interface EksCapabilityConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_capability#capability_name EksCapability#capability_name}
   */
@@ -47,7 +47,7 @@ export interface EksCapabilityConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_capability#configuration EksCapability#configuration}
   */
-  readonly configuration?: EksCapabilityConfiguration[] | cdktf.IResolvable;
+  readonly configuration?: EksCapabilityConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -66,32 +66,32 @@ export interface EksCapabilityConfigurationArgoCdAwsIdc {
   readonly idcRegion?: string;
 }
 
-export function eksCapabilityConfigurationArgoCdAwsIdcToTerraform(struct?: EksCapabilityConfigurationArgoCdAwsIdc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksCapabilityConfigurationArgoCdAwsIdcToTerraform(struct?: EksCapabilityConfigurationArgoCdAwsIdc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    idc_instance_arn: cdktf.stringToTerraform(struct!.idcInstanceArn),
-    idc_region: cdktf.stringToTerraform(struct!.idcRegion),
+    idc_instance_arn: cdktn.stringToTerraform(struct!.idcInstanceArn),
+    idc_region: cdktn.stringToTerraform(struct!.idcRegion),
   }
 }
 
 
-export function eksCapabilityConfigurationArgoCdAwsIdcToHclTerraform(struct?: EksCapabilityConfigurationArgoCdAwsIdc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksCapabilityConfigurationArgoCdAwsIdcToHclTerraform(struct?: EksCapabilityConfigurationArgoCdAwsIdc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     idc_instance_arn: {
-      value: cdktf.stringToHclTerraform(struct!.idcInstanceArn),
+      value: cdktn.stringToHclTerraform(struct!.idcInstanceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     idc_region: {
-      value: cdktf.stringToHclTerraform(struct!.idcRegion),
+      value: cdktn.stringToHclTerraform(struct!.idcRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -102,9 +102,9 @@ export function eksCapabilityConfigurationArgoCdAwsIdcToHclTerraform(struct?: Ek
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksCapabilityConfigurationArgoCdAwsIdcOutputReference extends cdktf.ComplexObject {
+export class EksCapabilityConfigurationArgoCdAwsIdcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -112,11 +112,11 @@ export class EksCapabilityConfigurationArgoCdAwsIdcOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EksCapabilityConfigurationArgoCdAwsIdc | cdktf.IResolvable | undefined {
+  public get internalValue(): EksCapabilityConfigurationArgoCdAwsIdc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,14 +133,14 @@ export class EksCapabilityConfigurationArgoCdAwsIdcOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EksCapabilityConfigurationArgoCdAwsIdc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EksCapabilityConfigurationArgoCdAwsIdc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._idcInstanceArn = undefined;
       this._idcRegion = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -187,15 +187,15 @@ export class EksCapabilityConfigurationArgoCdAwsIdcOutputReference extends cdktf
   }
 }
 
-export class EksCapabilityConfigurationArgoCdAwsIdcList extends cdktf.ComplexList {
-  public internalValue? : EksCapabilityConfigurationArgoCdAwsIdc[] | cdktf.IResolvable
+export class EksCapabilityConfigurationArgoCdAwsIdcList extends cdktn.ComplexList {
+  public internalValue? : EksCapabilityConfigurationArgoCdAwsIdc[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -213,25 +213,25 @@ export interface EksCapabilityConfigurationArgoCdNetworkAccess {
   readonly vpceIds?: string[];
 }
 
-export function eksCapabilityConfigurationArgoCdNetworkAccessToTerraform(struct?: EksCapabilityConfigurationArgoCdNetworkAccess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksCapabilityConfigurationArgoCdNetworkAccessToTerraform(struct?: EksCapabilityConfigurationArgoCdNetworkAccess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    vpce_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.vpceIds),
+    vpce_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.vpceIds),
   }
 }
 
 
-export function eksCapabilityConfigurationArgoCdNetworkAccessToHclTerraform(struct?: EksCapabilityConfigurationArgoCdNetworkAccess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksCapabilityConfigurationArgoCdNetworkAccessToHclTerraform(struct?: EksCapabilityConfigurationArgoCdNetworkAccess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     vpce_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.vpceIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.vpceIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -242,9 +242,9 @@ export function eksCapabilityConfigurationArgoCdNetworkAccessToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksCapabilityConfigurationArgoCdNetworkAccessOutputReference extends cdktf.ComplexObject {
+export class EksCapabilityConfigurationArgoCdNetworkAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -252,11 +252,11 @@ export class EksCapabilityConfigurationArgoCdNetworkAccessOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EksCapabilityConfigurationArgoCdNetworkAccess | cdktf.IResolvable | undefined {
+  public get internalValue(): EksCapabilityConfigurationArgoCdNetworkAccess | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -269,13 +269,13 @@ export class EksCapabilityConfigurationArgoCdNetworkAccessOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EksCapabilityConfigurationArgoCdNetworkAccess | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EksCapabilityConfigurationArgoCdNetworkAccess | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._vpceIds = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -289,7 +289,7 @@ export class EksCapabilityConfigurationArgoCdNetworkAccessOutputReference extend
   // vpce_ids - computed: false, optional: true, required: false
   private _vpceIds?: string[]; 
   public get vpceIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('vpce_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('vpce_ids'));
   }
   public set vpceIds(value: string[]) {
     this._vpceIds = value;
@@ -303,15 +303,15 @@ export class EksCapabilityConfigurationArgoCdNetworkAccessOutputReference extend
   }
 }
 
-export class EksCapabilityConfigurationArgoCdNetworkAccessList extends cdktf.ComplexList {
-  public internalValue? : EksCapabilityConfigurationArgoCdNetworkAccess[] | cdktf.IResolvable
+export class EksCapabilityConfigurationArgoCdNetworkAccessList extends cdktn.ComplexList {
+  public internalValue? : EksCapabilityConfigurationArgoCdNetworkAccess[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -336,32 +336,32 @@ export interface EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity {
   readonly type: string;
 }
 
-export function eksCapabilityConfigurationArgoCdRbacRoleMappingIdentityToTerraform(struct?: EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksCapabilityConfigurationArgoCdRbacRoleMappingIdentityToTerraform(struct?: EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    type: cdktf.stringToTerraform(struct!.type),
+    id: cdktn.stringToTerraform(struct!.id),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function eksCapabilityConfigurationArgoCdRbacRoleMappingIdentityToHclTerraform(struct?: EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksCapabilityConfigurationArgoCdRbacRoleMappingIdentityToHclTerraform(struct?: EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -372,9 +372,9 @@ export function eksCapabilityConfigurationArgoCdRbacRoleMappingIdentityToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksCapabilityConfigurationArgoCdRbacRoleMappingIdentityOutputReference extends cdktf.ComplexObject {
+export class EksCapabilityConfigurationArgoCdRbacRoleMappingIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -382,11 +382,11 @@ export class EksCapabilityConfigurationArgoCdRbacRoleMappingIdentityOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity | cdktf.IResolvable | undefined {
+  public get internalValue(): EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -403,14 +403,14 @@ export class EksCapabilityConfigurationArgoCdRbacRoleMappingIdentityOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -449,15 +449,15 @@ export class EksCapabilityConfigurationArgoCdRbacRoleMappingIdentityOutputRefere
   }
 }
 
-export class EksCapabilityConfigurationArgoCdRbacRoleMappingIdentityList extends cdktf.ComplexList {
-  public internalValue? : EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity[] | cdktf.IResolvable
+export class EksCapabilityConfigurationArgoCdRbacRoleMappingIdentityList extends cdktn.ComplexList {
+  public internalValue? : EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -478,35 +478,35 @@ export interface EksCapabilityConfigurationArgoCdRbacRoleMapping {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_capability#identity EksCapability#identity}
   */
-  readonly identity?: EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity[] | cdktf.IResolvable;
+  readonly identity?: EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity[] | cdktn.IResolvable;
 }
 
-export function eksCapabilityConfigurationArgoCdRbacRoleMappingToTerraform(struct?: EksCapabilityConfigurationArgoCdRbacRoleMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksCapabilityConfigurationArgoCdRbacRoleMappingToTerraform(struct?: EksCapabilityConfigurationArgoCdRbacRoleMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role: cdktf.stringToTerraform(struct!.role),
-    identity: cdktf.listMapper(eksCapabilityConfigurationArgoCdRbacRoleMappingIdentityToTerraform, true)(struct!.identity),
+    role: cdktn.stringToTerraform(struct!.role),
+    identity: cdktn.listMapper(eksCapabilityConfigurationArgoCdRbacRoleMappingIdentityToTerraform, true)(struct!.identity),
   }
 }
 
 
-export function eksCapabilityConfigurationArgoCdRbacRoleMappingToHclTerraform(struct?: EksCapabilityConfigurationArgoCdRbacRoleMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksCapabilityConfigurationArgoCdRbacRoleMappingToHclTerraform(struct?: EksCapabilityConfigurationArgoCdRbacRoleMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity: {
-      value: cdktf.listMapperHcl(eksCapabilityConfigurationArgoCdRbacRoleMappingIdentityToHclTerraform, true)(struct!.identity),
+      value: cdktn.listMapperHcl(eksCapabilityConfigurationArgoCdRbacRoleMappingIdentityToHclTerraform, true)(struct!.identity),
       isBlock: true,
       type: "set",
       storageClassType: "EksCapabilityConfigurationArgoCdRbacRoleMappingIdentityList",
@@ -517,9 +517,9 @@ export function eksCapabilityConfigurationArgoCdRbacRoleMappingToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksCapabilityConfigurationArgoCdRbacRoleMappingOutputReference extends cdktf.ComplexObject {
+export class EksCapabilityConfigurationArgoCdRbacRoleMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -527,11 +527,11 @@ export class EksCapabilityConfigurationArgoCdRbacRoleMappingOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EksCapabilityConfigurationArgoCdRbacRoleMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): EksCapabilityConfigurationArgoCdRbacRoleMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -548,14 +548,14 @@ export class EksCapabilityConfigurationArgoCdRbacRoleMappingOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EksCapabilityConfigurationArgoCdRbacRoleMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EksCapabilityConfigurationArgoCdRbacRoleMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._role = undefined;
       this._identity.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -585,7 +585,7 @@ export class EksCapabilityConfigurationArgoCdRbacRoleMappingOutputReference exte
   public get identity() {
     return this._identity;
   }
-  public putIdentity(value: EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity[] | cdktf.IResolvable) {
+  public putIdentity(value: EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity[] | cdktn.IResolvable) {
     this._identity.internalValue = value;
   }
   public resetIdentity() {
@@ -597,15 +597,15 @@ export class EksCapabilityConfigurationArgoCdRbacRoleMappingOutputReference exte
   }
 }
 
-export class EksCapabilityConfigurationArgoCdRbacRoleMappingList extends cdktf.ComplexList {
-  public internalValue? : EksCapabilityConfigurationArgoCdRbacRoleMapping[] | cdktf.IResolvable
+export class EksCapabilityConfigurationArgoCdRbacRoleMappingList extends cdktn.ComplexList {
+  public internalValue? : EksCapabilityConfigurationArgoCdRbacRoleMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -626,61 +626,61 @@ export interface EksCapabilityConfigurationArgoCd {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_capability#aws_idc EksCapability#aws_idc}
   */
-  readonly awsIdc?: EksCapabilityConfigurationArgoCdAwsIdc[] | cdktf.IResolvable;
+  readonly awsIdc?: EksCapabilityConfigurationArgoCdAwsIdc[] | cdktn.IResolvable;
   /**
   * network_access block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_capability#network_access EksCapability#network_access}
   */
-  readonly networkAccess?: EksCapabilityConfigurationArgoCdNetworkAccess[] | cdktf.IResolvable;
+  readonly networkAccess?: EksCapabilityConfigurationArgoCdNetworkAccess[] | cdktn.IResolvable;
   /**
   * rbac_role_mapping block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_capability#rbac_role_mapping EksCapability#rbac_role_mapping}
   */
-  readonly rbacRoleMapping?: EksCapabilityConfigurationArgoCdRbacRoleMapping[] | cdktf.IResolvable;
+  readonly rbacRoleMapping?: EksCapabilityConfigurationArgoCdRbacRoleMapping[] | cdktn.IResolvable;
 }
 
-export function eksCapabilityConfigurationArgoCdToTerraform(struct?: EksCapabilityConfigurationArgoCd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksCapabilityConfigurationArgoCdToTerraform(struct?: EksCapabilityConfigurationArgoCd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    aws_idc: cdktf.listMapper(eksCapabilityConfigurationArgoCdAwsIdcToTerraform, true)(struct!.awsIdc),
-    network_access: cdktf.listMapper(eksCapabilityConfigurationArgoCdNetworkAccessToTerraform, true)(struct!.networkAccess),
-    rbac_role_mapping: cdktf.listMapper(eksCapabilityConfigurationArgoCdRbacRoleMappingToTerraform, true)(struct!.rbacRoleMapping),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    aws_idc: cdktn.listMapper(eksCapabilityConfigurationArgoCdAwsIdcToTerraform, true)(struct!.awsIdc),
+    network_access: cdktn.listMapper(eksCapabilityConfigurationArgoCdNetworkAccessToTerraform, true)(struct!.networkAccess),
+    rbac_role_mapping: cdktn.listMapper(eksCapabilityConfigurationArgoCdRbacRoleMappingToTerraform, true)(struct!.rbacRoleMapping),
   }
 }
 
 
-export function eksCapabilityConfigurationArgoCdToHclTerraform(struct?: EksCapabilityConfigurationArgoCd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksCapabilityConfigurationArgoCdToHclTerraform(struct?: EksCapabilityConfigurationArgoCd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_idc: {
-      value: cdktf.listMapperHcl(eksCapabilityConfigurationArgoCdAwsIdcToHclTerraform, true)(struct!.awsIdc),
+      value: cdktn.listMapperHcl(eksCapabilityConfigurationArgoCdAwsIdcToHclTerraform, true)(struct!.awsIdc),
       isBlock: true,
       type: "list",
       storageClassType: "EksCapabilityConfigurationArgoCdAwsIdcList",
     },
     network_access: {
-      value: cdktf.listMapperHcl(eksCapabilityConfigurationArgoCdNetworkAccessToHclTerraform, true)(struct!.networkAccess),
+      value: cdktn.listMapperHcl(eksCapabilityConfigurationArgoCdNetworkAccessToHclTerraform, true)(struct!.networkAccess),
       isBlock: true,
       type: "list",
       storageClassType: "EksCapabilityConfigurationArgoCdNetworkAccessList",
     },
     rbac_role_mapping: {
-      value: cdktf.listMapperHcl(eksCapabilityConfigurationArgoCdRbacRoleMappingToHclTerraform, true)(struct!.rbacRoleMapping),
+      value: cdktn.listMapperHcl(eksCapabilityConfigurationArgoCdRbacRoleMappingToHclTerraform, true)(struct!.rbacRoleMapping),
       isBlock: true,
       type: "set",
       storageClassType: "EksCapabilityConfigurationArgoCdRbacRoleMappingList",
@@ -691,9 +691,9 @@ export function eksCapabilityConfigurationArgoCdToHclTerraform(struct?: EksCapab
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksCapabilityConfigurationArgoCdOutputReference extends cdktf.ComplexObject {
+export class EksCapabilityConfigurationArgoCdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -701,11 +701,11 @@ export class EksCapabilityConfigurationArgoCdOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EksCapabilityConfigurationArgoCd | cdktf.IResolvable | undefined {
+  public get internalValue(): EksCapabilityConfigurationArgoCd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -730,7 +730,7 @@ export class EksCapabilityConfigurationArgoCdOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EksCapabilityConfigurationArgoCd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EksCapabilityConfigurationArgoCd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -739,7 +739,7 @@ export class EksCapabilityConfigurationArgoCdOutputReference extends cdktf.Compl
       this._networkAccess.internalValue = undefined;
       this._rbacRoleMapping.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -779,7 +779,7 @@ export class EksCapabilityConfigurationArgoCdOutputReference extends cdktf.Compl
   public get awsIdc() {
     return this._awsIdc;
   }
-  public putAwsIdc(value: EksCapabilityConfigurationArgoCdAwsIdc[] | cdktf.IResolvable) {
+  public putAwsIdc(value: EksCapabilityConfigurationArgoCdAwsIdc[] | cdktn.IResolvable) {
     this._awsIdc.internalValue = value;
   }
   public resetAwsIdc() {
@@ -795,7 +795,7 @@ export class EksCapabilityConfigurationArgoCdOutputReference extends cdktf.Compl
   public get networkAccess() {
     return this._networkAccess;
   }
-  public putNetworkAccess(value: EksCapabilityConfigurationArgoCdNetworkAccess[] | cdktf.IResolvable) {
+  public putNetworkAccess(value: EksCapabilityConfigurationArgoCdNetworkAccess[] | cdktn.IResolvable) {
     this._networkAccess.internalValue = value;
   }
   public resetNetworkAccess() {
@@ -811,7 +811,7 @@ export class EksCapabilityConfigurationArgoCdOutputReference extends cdktf.Compl
   public get rbacRoleMapping() {
     return this._rbacRoleMapping;
   }
-  public putRbacRoleMapping(value: EksCapabilityConfigurationArgoCdRbacRoleMapping[] | cdktf.IResolvable) {
+  public putRbacRoleMapping(value: EksCapabilityConfigurationArgoCdRbacRoleMapping[] | cdktn.IResolvable) {
     this._rbacRoleMapping.internalValue = value;
   }
   public resetRbacRoleMapping() {
@@ -823,15 +823,15 @@ export class EksCapabilityConfigurationArgoCdOutputReference extends cdktf.Compl
   }
 }
 
-export class EksCapabilityConfigurationArgoCdList extends cdktf.ComplexList {
-  public internalValue? : EksCapabilityConfigurationArgoCd[] | cdktf.IResolvable
+export class EksCapabilityConfigurationArgoCdList extends cdktn.ComplexList {
+  public internalValue? : EksCapabilityConfigurationArgoCd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -848,28 +848,28 @@ export interface EksCapabilityConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_capability#argo_cd EksCapability#argo_cd}
   */
-  readonly argoCd?: EksCapabilityConfigurationArgoCd[] | cdktf.IResolvable;
+  readonly argoCd?: EksCapabilityConfigurationArgoCd[] | cdktn.IResolvable;
 }
 
-export function eksCapabilityConfigurationToTerraform(struct?: EksCapabilityConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksCapabilityConfigurationToTerraform(struct?: EksCapabilityConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    argo_cd: cdktf.listMapper(eksCapabilityConfigurationArgoCdToTerraform, true)(struct!.argoCd),
+    argo_cd: cdktn.listMapper(eksCapabilityConfigurationArgoCdToTerraform, true)(struct!.argoCd),
   }
 }
 
 
-export function eksCapabilityConfigurationToHclTerraform(struct?: EksCapabilityConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksCapabilityConfigurationToHclTerraform(struct?: EksCapabilityConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     argo_cd: {
-      value: cdktf.listMapperHcl(eksCapabilityConfigurationArgoCdToHclTerraform, true)(struct!.argoCd),
+      value: cdktn.listMapperHcl(eksCapabilityConfigurationArgoCdToHclTerraform, true)(struct!.argoCd),
       isBlock: true,
       type: "list",
       storageClassType: "EksCapabilityConfigurationArgoCdList",
@@ -880,9 +880,9 @@ export function eksCapabilityConfigurationToHclTerraform(struct?: EksCapabilityC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksCapabilityConfigurationOutputReference extends cdktf.ComplexObject {
+export class EksCapabilityConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -890,11 +890,11 @@ export class EksCapabilityConfigurationOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EksCapabilityConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): EksCapabilityConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -907,13 +907,13 @@ export class EksCapabilityConfigurationOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EksCapabilityConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EksCapabilityConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._argoCd.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -929,7 +929,7 @@ export class EksCapabilityConfigurationOutputReference extends cdktf.ComplexObje
   public get argoCd() {
     return this._argoCd;
   }
-  public putArgoCd(value: EksCapabilityConfigurationArgoCd[] | cdktf.IResolvable) {
+  public putArgoCd(value: EksCapabilityConfigurationArgoCd[] | cdktn.IResolvable) {
     this._argoCd.internalValue = value;
   }
   public resetArgoCd() {
@@ -941,15 +941,15 @@ export class EksCapabilityConfigurationOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class EksCapabilityConfigurationList extends cdktf.ComplexList {
-  public internalValue? : EksCapabilityConfiguration[] | cdktf.IResolvable
+export class EksCapabilityConfigurationList extends cdktn.ComplexList {
+  public internalValue? : EksCapabilityConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -981,39 +981,39 @@ export interface EksCapabilityTimeouts {
   readonly update?: string;
 }
 
-export function eksCapabilityTimeoutsToTerraform(struct?: EksCapabilityTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksCapabilityTimeoutsToTerraform(struct?: EksCapabilityTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function eksCapabilityTimeoutsToHclTerraform(struct?: EksCapabilityTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksCapabilityTimeoutsToHclTerraform(struct?: EksCapabilityTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1024,19 +1024,19 @@ export function eksCapabilityTimeoutsToHclTerraform(struct?: EksCapabilityTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksCapabilityTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EksCapabilityTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EksCapabilityTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EksCapabilityTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1057,7 +1057,7 @@ export class EksCapabilityTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EksCapabilityTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EksCapabilityTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1065,7 +1065,7 @@ export class EksCapabilityTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1130,7 +1130,7 @@ export class EksCapabilityTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_capability aws_eks_capability}
 */
-export class EksCapability extends cdktf.TerraformResource {
+export class EksCapability extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1141,14 +1141,14 @@ export class EksCapability extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EksCapability resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EksCapability resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EksCapability to import
   * @param importFromId The id of the existing EksCapability that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_capability#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EksCapability to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_capability", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_capability", importId: importFromId, provider });
       }
 
   // ===========
@@ -1283,7 +1283,7 @@ export class EksCapability extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1311,7 +1311,7 @@ export class EksCapability extends cdktf.TerraformResource {
   public get configuration() {
     return this._configuration;
   }
-  public putConfiguration(value: EksCapabilityConfiguration[] | cdktf.IResolvable) {
+  public putConfiguration(value: EksCapabilityConfiguration[] | cdktn.IResolvable) {
     this._configuration.internalValue = value;
   }
   public resetConfiguration() {
@@ -1344,14 +1344,14 @@ export class EksCapability extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capability_name: cdktf.stringToTerraform(this._capabilityName),
-      cluster_name: cdktf.stringToTerraform(this._clusterName),
-      delete_propagation_policy: cdktf.stringToTerraform(this._deletePropagationPolicy),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      type: cdktf.stringToTerraform(this._type),
-      configuration: cdktf.listMapper(eksCapabilityConfigurationToTerraform, true)(this._configuration.internalValue),
+      capability_name: cdktn.stringToTerraform(this._capabilityName),
+      cluster_name: cdktn.stringToTerraform(this._clusterName),
+      delete_propagation_policy: cdktn.stringToTerraform(this._deletePropagationPolicy),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      type: cdktn.stringToTerraform(this._type),
+      configuration: cdktn.listMapper(eksCapabilityConfigurationToTerraform, true)(this._configuration.internalValue),
       timeouts: eksCapabilityTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1359,49 +1359,49 @@ export class EksCapability extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       capability_name: {
-        value: cdktf.stringToHclTerraform(this._capabilityName),
+        value: cdktn.stringToHclTerraform(this._capabilityName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_name: {
-        value: cdktf.stringToHclTerraform(this._clusterName),
+        value: cdktn.stringToHclTerraform(this._clusterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delete_propagation_policy: {
-        value: cdktf.stringToHclTerraform(this._deletePropagationPolicy),
+        value: cdktn.stringToHclTerraform(this._deletePropagationPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       configuration: {
-        value: cdktf.listMapperHcl(eksCapabilityConfigurationToHclTerraform, true)(this._configuration.internalValue),
+        value: cdktn.listMapperHcl(eksCapabilityConfigurationToHclTerraform, true)(this._configuration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EksCapabilityConfigurationList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppstreamFleetConfig extends cdktf.TerraformMetaArguments {
+export interface AppstreamFleetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_fleet#description AppstreamFleet#description}
   */
@@ -27,7 +27,7 @@ export interface AppstreamFleetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_fleet#enable_default_internet_access AppstreamFleet#enable_default_internet_access}
   */
-  readonly enableDefaultInternetAccess?: boolean | cdktf.IResolvable;
+  readonly enableDefaultInternetAccess?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_fleet#fleet_type AppstreamFleet#fleet_type}
   */
@@ -120,31 +120,31 @@ export interface AppstreamFleetComputeCapacity {
 }
 
 export function appstreamFleetComputeCapacityToTerraform(struct?: AppstreamFleetComputeCapacityOutputReference | AppstreamFleetComputeCapacity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    desired_instances: cdktf.numberToTerraform(struct!.desiredInstances),
-    desired_sessions: cdktf.numberToTerraform(struct!.desiredSessions),
+    desired_instances: cdktn.numberToTerraform(struct!.desiredInstances),
+    desired_sessions: cdktn.numberToTerraform(struct!.desiredSessions),
   }
 }
 
 
 export function appstreamFleetComputeCapacityToHclTerraform(struct?: AppstreamFleetComputeCapacityOutputReference | AppstreamFleetComputeCapacity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     desired_instances: {
-      value: cdktf.numberToHclTerraform(struct!.desiredInstances),
+      value: cdktn.numberToHclTerraform(struct!.desiredInstances),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     desired_sessions: {
-      value: cdktf.numberToHclTerraform(struct!.desiredSessions),
+      value: cdktn.numberToHclTerraform(struct!.desiredSessions),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -155,14 +155,14 @@ export function appstreamFleetComputeCapacityToHclTerraform(struct?: AppstreamFl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppstreamFleetComputeCapacityOutputReference extends cdktf.ComplexObject {
+export class AppstreamFleetComputeCapacityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -252,31 +252,31 @@ export interface AppstreamFleetDomainJoinInfo {
 }
 
 export function appstreamFleetDomainJoinInfoToTerraform(struct?: AppstreamFleetDomainJoinInfoOutputReference | AppstreamFleetDomainJoinInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    directory_name: cdktf.stringToTerraform(struct!.directoryName),
-    organizational_unit_distinguished_name: cdktf.stringToTerraform(struct!.organizationalUnitDistinguishedName),
+    directory_name: cdktn.stringToTerraform(struct!.directoryName),
+    organizational_unit_distinguished_name: cdktn.stringToTerraform(struct!.organizationalUnitDistinguishedName),
   }
 }
 
 
 export function appstreamFleetDomainJoinInfoToHclTerraform(struct?: AppstreamFleetDomainJoinInfoOutputReference | AppstreamFleetDomainJoinInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     directory_name: {
-      value: cdktf.stringToHclTerraform(struct!.directoryName),
+      value: cdktn.stringToHclTerraform(struct!.directoryName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organizational_unit_distinguished_name: {
-      value: cdktf.stringToHclTerraform(struct!.organizationalUnitDistinguishedName),
+      value: cdktn.stringToHclTerraform(struct!.organizationalUnitDistinguishedName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -287,14 +287,14 @@ export function appstreamFleetDomainJoinInfoToHclTerraform(struct?: AppstreamFle
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppstreamFleetDomainJoinInfoOutputReference extends cdktf.ComplexObject {
+export class AppstreamFleetDomainJoinInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -369,31 +369,31 @@ export interface AppstreamFleetVpcConfig {
 }
 
 export function appstreamFleetVpcConfigToTerraform(struct?: AppstreamFleetVpcConfigOutputReference | AppstreamFleetVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
 
 export function appstreamFleetVpcConfigToHclTerraform(struct?: AppstreamFleetVpcConfigOutputReference | AppstreamFleetVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -404,14 +404,14 @@ export function appstreamFleetVpcConfigToHclTerraform(struct?: AppstreamFleetVpc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppstreamFleetVpcConfigOutputReference extends cdktf.ComplexObject {
+export class AppstreamFleetVpcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -478,7 +478,7 @@ export class AppstreamFleetVpcConfigOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_fleet aws_appstream_fleet}
 */
-export class AppstreamFleet extends cdktf.TerraformResource {
+export class AppstreamFleet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -489,14 +489,14 @@ export class AppstreamFleet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppstreamFleet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppstreamFleet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppstreamFleet to import
   * @param importFromId The id of the existing AppstreamFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_fleet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppstreamFleet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appstream_fleet", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appstream_fleet", importId: importFromId, provider });
       }
 
   // ===========
@@ -612,11 +612,11 @@ export class AppstreamFleet extends cdktf.TerraformResource {
   }
 
   // enable_default_internet_access - computed: true, optional: true, required: false
-  private _enableDefaultInternetAccess?: boolean | cdktf.IResolvable; 
+  private _enableDefaultInternetAccess?: boolean | cdktn.IResolvable; 
   public get enableDefaultInternetAccess() {
     return this.getBooleanAttribute('enable_default_internet_access');
   }
-  public set enableDefaultInternetAccess(value: boolean | cdktf.IResolvable) {
+  public set enableDefaultInternetAccess(value: boolean | cdktn.IResolvable) {
     this._enableDefaultInternetAccess = value;
   }
   public resetEnableDefaultInternetAccess() {
@@ -901,24 +901,24 @@ export class AppstreamFleet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      disconnect_timeout_in_seconds: cdktf.numberToTerraform(this._disconnectTimeoutInSeconds),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enable_default_internet_access: cdktf.booleanToTerraform(this._enableDefaultInternetAccess),
-      fleet_type: cdktf.stringToTerraform(this._fleetType),
-      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
-      id: cdktf.stringToTerraform(this._id),
-      idle_disconnect_timeout_in_seconds: cdktf.numberToTerraform(this._idleDisconnectTimeoutInSeconds),
-      image_arn: cdktf.stringToTerraform(this._imageArn),
-      image_name: cdktf.stringToTerraform(this._imageName),
-      instance_type: cdktf.stringToTerraform(this._instanceType),
-      max_sessions_per_instance: cdktf.numberToTerraform(this._maxSessionsPerInstance),
-      max_user_duration_in_seconds: cdktf.numberToTerraform(this._maxUserDurationInSeconds),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      stream_view: cdktf.stringToTerraform(this._streamView),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      description: cdktn.stringToTerraform(this._description),
+      disconnect_timeout_in_seconds: cdktn.numberToTerraform(this._disconnectTimeoutInSeconds),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enable_default_internet_access: cdktn.booleanToTerraform(this._enableDefaultInternetAccess),
+      fleet_type: cdktn.stringToTerraform(this._fleetType),
+      iam_role_arn: cdktn.stringToTerraform(this._iamRoleArn),
+      id: cdktn.stringToTerraform(this._id),
+      idle_disconnect_timeout_in_seconds: cdktn.numberToTerraform(this._idleDisconnectTimeoutInSeconds),
+      image_arn: cdktn.stringToTerraform(this._imageArn),
+      image_name: cdktn.stringToTerraform(this._imageName),
+      instance_type: cdktn.stringToTerraform(this._instanceType),
+      max_sessions_per_instance: cdktn.numberToTerraform(this._maxSessionsPerInstance),
+      max_user_duration_in_seconds: cdktn.numberToTerraform(this._maxUserDurationInSeconds),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      stream_view: cdktn.stringToTerraform(this._streamView),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       compute_capacity: appstreamFleetComputeCapacityToTerraform(this._computeCapacity.internalValue),
       domain_join_info: appstreamFleetDomainJoinInfoToTerraform(this._domainJoinInfo.internalValue),
       vpc_config: appstreamFleetVpcConfigToTerraform(this._vpcConfig.internalValue),
@@ -928,109 +928,109 @@ export class AppstreamFleet extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disconnect_timeout_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._disconnectTimeoutInSeconds),
+        value: cdktn.numberToHclTerraform(this._disconnectTimeoutInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_default_internet_access: {
-        value: cdktf.booleanToHclTerraform(this._enableDefaultInternetAccess),
+        value: cdktn.booleanToHclTerraform(this._enableDefaultInternetAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       fleet_type: {
-        value: cdktf.stringToHclTerraform(this._fleetType),
+        value: cdktn.stringToHclTerraform(this._fleetType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_role_arn: {
-        value: cdktf.stringToHclTerraform(this._iamRoleArn),
+        value: cdktn.stringToHclTerraform(this._iamRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idle_disconnect_timeout_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._idleDisconnectTimeoutInSeconds),
+        value: cdktn.numberToHclTerraform(this._idleDisconnectTimeoutInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       image_arn: {
-        value: cdktf.stringToHclTerraform(this._imageArn),
+        value: cdktn.stringToHclTerraform(this._imageArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_name: {
-        value: cdktf.stringToHclTerraform(this._imageName),
+        value: cdktn.stringToHclTerraform(this._imageName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_type: {
-        value: cdktf.stringToHclTerraform(this._instanceType),
+        value: cdktn.stringToHclTerraform(this._instanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_sessions_per_instance: {
-        value: cdktf.numberToHclTerraform(this._maxSessionsPerInstance),
+        value: cdktn.numberToHclTerraform(this._maxSessionsPerInstance),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_user_duration_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._maxUserDurationInSeconds),
+        value: cdktn.numberToHclTerraform(this._maxUserDurationInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stream_view: {
-        value: cdktf.stringToHclTerraform(this._streamView),
+        value: cdktn.stringToHclTerraform(this._streamView),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

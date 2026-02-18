@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QuicksightIngestionConfig extends cdktf.TerraformMetaArguments {
+export interface QuicksightIngestionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_ingestion#aws_account_id QuicksightIngestion#aws_account_id}
   */
@@ -39,7 +39,7 @@ export interface QuicksightIngestionConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_ingestion aws_quicksight_ingestion}
 */
-export class QuicksightIngestion extends cdktf.TerraformResource {
+export class QuicksightIngestion extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -50,14 +50,14 @@ export class QuicksightIngestion extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QuicksightIngestion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QuicksightIngestion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightIngestion to import
   * @param importFromId The id of the existing QuicksightIngestion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_ingestion#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightIngestion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_ingestion", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_ingestion", importId: importFromId, provider });
       }
 
   // ===========
@@ -190,42 +190,42 @@ export class QuicksightIngestion extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      data_set_id: cdktf.stringToTerraform(this._dataSetId),
-      ingestion_id: cdktf.stringToTerraform(this._ingestionId),
-      ingestion_type: cdktf.stringToTerraform(this._ingestionType),
-      region: cdktf.stringToTerraform(this._region),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      data_set_id: cdktn.stringToTerraform(this._dataSetId),
+      ingestion_id: cdktn.stringToTerraform(this._ingestionId),
+      ingestion_type: cdktn.stringToTerraform(this._ingestionType),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_set_id: {
-        value: cdktf.stringToHclTerraform(this._dataSetId),
+        value: cdktn.stringToHclTerraform(this._dataSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ingestion_id: {
-        value: cdktf.stringToHclTerraform(this._ingestionId),
+        value: cdktn.stringToHclTerraform(this._ingestionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ingestion_type: {
-        value: cdktf.stringToHclTerraform(this._ingestionType),
+        value: cdktn.stringToHclTerraform(this._ingestionType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

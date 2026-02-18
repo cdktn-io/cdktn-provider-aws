@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QuicksightKeyRegistrationConfig extends cdktf.TerraformMetaArguments {
+export interface QuicksightKeyRegistrationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}
   */
@@ -27,45 +27,45 @@ export interface QuicksightKeyRegistrationConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_key_registration#key_registration QuicksightKeyRegistration#key_registration}
   */
-  readonly keyRegistration?: QuicksightKeyRegistrationKeyRegistration[] | cdktf.IResolvable;
+  readonly keyRegistration?: QuicksightKeyRegistrationKeyRegistration[] | cdktn.IResolvable;
 }
 export interface QuicksightKeyRegistrationKeyRegistration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}
   */
-  readonly defaultKey?: boolean | cdktf.IResolvable;
+  readonly defaultKey?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_key_registration#key_arn QuicksightKeyRegistration#key_arn}
   */
   readonly keyArn: string;
 }
 
-export function quicksightKeyRegistrationKeyRegistrationToTerraform(struct?: QuicksightKeyRegistrationKeyRegistration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightKeyRegistrationKeyRegistrationToTerraform(struct?: QuicksightKeyRegistrationKeyRegistration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_key: cdktf.booleanToTerraform(struct!.defaultKey),
-    key_arn: cdktf.stringToTerraform(struct!.keyArn),
+    default_key: cdktn.booleanToTerraform(struct!.defaultKey),
+    key_arn: cdktn.stringToTerraform(struct!.keyArn),
   }
 }
 
 
-export function quicksightKeyRegistrationKeyRegistrationToHclTerraform(struct?: QuicksightKeyRegistrationKeyRegistration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightKeyRegistrationKeyRegistrationToHclTerraform(struct?: QuicksightKeyRegistrationKeyRegistration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_key: {
-      value: cdktf.booleanToHclTerraform(struct!.defaultKey),
+      value: cdktn.booleanToHclTerraform(struct!.defaultKey),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.keyArn),
+      value: cdktn.stringToHclTerraform(struct!.keyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -76,9 +76,9 @@ export function quicksightKeyRegistrationKeyRegistrationToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightKeyRegistrationKeyRegistrationOutputReference extends cdktf.ComplexObject {
+export class QuicksightKeyRegistrationKeyRegistrationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -86,11 +86,11 @@ export class QuicksightKeyRegistrationKeyRegistrationOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightKeyRegistrationKeyRegistration | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightKeyRegistrationKeyRegistration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -107,14 +107,14 @@ export class QuicksightKeyRegistrationKeyRegistrationOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightKeyRegistrationKeyRegistration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightKeyRegistrationKeyRegistration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._defaultKey = undefined;
       this._keyArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -127,11 +127,11 @@ export class QuicksightKeyRegistrationKeyRegistrationOutputReference extends cdk
   }
 
   // default_key - computed: true, optional: true, required: false
-  private _defaultKey?: boolean | cdktf.IResolvable; 
+  private _defaultKey?: boolean | cdktn.IResolvable; 
   public get defaultKey() {
     return this.getBooleanAttribute('default_key');
   }
-  public set defaultKey(value: boolean | cdktf.IResolvable) {
+  public set defaultKey(value: boolean | cdktn.IResolvable) {
     this._defaultKey = value;
   }
   public resetDefaultKey() {
@@ -156,15 +156,15 @@ export class QuicksightKeyRegistrationKeyRegistrationOutputReference extends cdk
   }
 }
 
-export class QuicksightKeyRegistrationKeyRegistrationList extends cdktf.ComplexList {
-  public internalValue? : QuicksightKeyRegistrationKeyRegistration[] | cdktf.IResolvable
+export class QuicksightKeyRegistrationKeyRegistrationList extends cdktn.ComplexList {
+  public internalValue? : QuicksightKeyRegistrationKeyRegistration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -179,7 +179,7 @@ export class QuicksightKeyRegistrationKeyRegistrationList extends cdktf.ComplexL
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_key_registration aws_quicksight_key_registration}
 */
-export class QuicksightKeyRegistration extends cdktf.TerraformResource {
+export class QuicksightKeyRegistration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -190,14 +190,14 @@ export class QuicksightKeyRegistration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QuicksightKeyRegistration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QuicksightKeyRegistration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightKeyRegistration to import
   * @param importFromId The id of the existing QuicksightKeyRegistration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_key_registration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightKeyRegistration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_key_registration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_key_registration", importId: importFromId, provider });
       }
 
   // ===========
@@ -273,7 +273,7 @@ export class QuicksightKeyRegistration extends cdktf.TerraformResource {
   public get keyRegistration() {
     return this._keyRegistration;
   }
-  public putKeyRegistration(value: QuicksightKeyRegistrationKeyRegistration[] | cdktf.IResolvable) {
+  public putKeyRegistration(value: QuicksightKeyRegistrationKeyRegistration[] | cdktn.IResolvable) {
     this._keyRegistration.internalValue = value;
   }
   public resetKeyRegistration() {
@@ -290,28 +290,28 @@ export class QuicksightKeyRegistration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      region: cdktf.stringToTerraform(this._region),
-      key_registration: cdktf.listMapper(quicksightKeyRegistrationKeyRegistrationToTerraform, true)(this._keyRegistration.internalValue),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      region: cdktn.stringToTerraform(this._region),
+      key_registration: cdktn.listMapper(quicksightKeyRegistrationKeyRegistrationToTerraform, true)(this._keyRegistration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_registration: {
-        value: cdktf.listMapperHcl(quicksightKeyRegistrationKeyRegistrationToHclTerraform, true)(this._keyRegistration.internalValue),
+        value: cdktn.listMapperHcl(quicksightKeyRegistrationKeyRegistrationToHclTerraform, true)(this._keyRegistration.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "QuicksightKeyRegistrationKeyRegistrationList",

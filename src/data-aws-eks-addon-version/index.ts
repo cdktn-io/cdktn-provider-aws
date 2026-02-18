@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsEksAddonVersionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEksAddonVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/eks_addon_version#addon_name DataAwsEksAddonVersion#addon_name}
   */
@@ -30,7 +30,7 @@ export interface DataAwsEksAddonVersionConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/eks_addon_version#most_recent DataAwsEksAddonVersion#most_recent}
   */
-  readonly mostRecent?: boolean | cdktf.IResolvable;
+  readonly mostRecent?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -42,7 +42,7 @@ export interface DataAwsEksAddonVersionConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/eks_addon_version aws_eks_addon_version}
 */
-export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
+export class DataAwsEksAddonVersion extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsEksAddonVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsEksAddonVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEksAddonVersion to import
   * @param importFromId The id of the existing DataAwsEksAddonVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/eks_addon_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEksAddonVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_addon_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_addon_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -144,11 +144,11 @@ export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
   }
 
   // most_recent - computed: false, optional: true, required: false
-  private _mostRecent?: boolean | cdktf.IResolvable; 
+  private _mostRecent?: boolean | cdktn.IResolvable; 
   public get mostRecent() {
     return this.getBooleanAttribute('most_recent');
   }
-  public set mostRecent(value: boolean | cdktf.IResolvable) {
+  public set mostRecent(value: boolean | cdktn.IResolvable) {
     this._mostRecent = value;
   }
   public resetMostRecent() {
@@ -186,42 +186,42 @@ export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      addon_name: cdktf.stringToTerraform(this._addonName),
-      id: cdktf.stringToTerraform(this._id),
-      kubernetes_version: cdktf.stringToTerraform(this._kubernetesVersion),
-      most_recent: cdktf.booleanToTerraform(this._mostRecent),
-      region: cdktf.stringToTerraform(this._region),
+      addon_name: cdktn.stringToTerraform(this._addonName),
+      id: cdktn.stringToTerraform(this._id),
+      kubernetes_version: cdktn.stringToTerraform(this._kubernetesVersion),
+      most_recent: cdktn.booleanToTerraform(this._mostRecent),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       addon_name: {
-        value: cdktf.stringToHclTerraform(this._addonName),
+        value: cdktn.stringToHclTerraform(this._addonName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kubernetes_version: {
-        value: cdktf.stringToHclTerraform(this._kubernetesVersion),
+        value: cdktn.stringToHclTerraform(this._kubernetesVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       most_recent: {
-        value: cdktf.booleanToHclTerraform(this._mostRecent),
+        value: cdktn.booleanToHclTerraform(this._mostRecent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

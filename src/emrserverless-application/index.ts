@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EmrserverlessApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface EmrserverlessApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emrserverless_application#architecture EmrserverlessApplication#architecture}
   */
@@ -72,7 +72,7 @@ export interface EmrserverlessApplicationConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emrserverless_application#initial_capacity EmrserverlessApplication#initial_capacity}
   */
-  readonly initialCapacity?: EmrserverlessApplicationInitialCapacity[] | cdktf.IResolvable;
+  readonly initialCapacity?: EmrserverlessApplicationInitialCapacity[] | cdktn.IResolvable;
   /**
   * interactive_configuration block
   *
@@ -102,7 +102,7 @@ export interface EmrserverlessApplicationConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emrserverless_application#runtime_configuration EmrserverlessApplication#runtime_configuration}
   */
-  readonly runtimeConfiguration?: EmrserverlessApplicationRuntimeConfiguration[] | cdktf.IResolvable;
+  readonly runtimeConfiguration?: EmrserverlessApplicationRuntimeConfiguration[] | cdktn.IResolvable;
   /**
   * scheduler_configuration block
   *
@@ -114,28 +114,28 @@ export interface EmrserverlessApplicationAutoStartConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
 export function emrserverlessApplicationAutoStartConfigurationToTerraform(struct?: EmrserverlessApplicationAutoStartConfigurationOutputReference | EmrserverlessApplicationAutoStartConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function emrserverlessApplicationAutoStartConfigurationToHclTerraform(struct?: EmrserverlessApplicationAutoStartConfigurationOutputReference | EmrserverlessApplicationAutoStartConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -146,14 +146,14 @@ export function emrserverlessApplicationAutoStartConfigurationToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationAutoStartConfigurationOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationAutoStartConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -179,11 +179,11 @@ export class EmrserverlessApplicationAutoStartConfigurationOutputReference exten
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -198,7 +198,7 @@ export interface EmrserverlessApplicationAutoStopConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emrserverless_application#idle_timeout_minutes EmrserverlessApplication#idle_timeout_minutes}
   */
@@ -206,31 +206,31 @@ export interface EmrserverlessApplicationAutoStopConfiguration {
 }
 
 export function emrserverlessApplicationAutoStopConfigurationToTerraform(struct?: EmrserverlessApplicationAutoStopConfigurationOutputReference | EmrserverlessApplicationAutoStopConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    idle_timeout_minutes: cdktf.numberToTerraform(struct!.idleTimeoutMinutes),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    idle_timeout_minutes: cdktn.numberToTerraform(struct!.idleTimeoutMinutes),
   }
 }
 
 
 export function emrserverlessApplicationAutoStopConfigurationToHclTerraform(struct?: EmrserverlessApplicationAutoStopConfigurationOutputReference | EmrserverlessApplicationAutoStopConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     idle_timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.idleTimeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.idleTimeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -241,14 +241,14 @@ export function emrserverlessApplicationAutoStopConfigurationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationAutoStopConfigurationOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationAutoStopConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -280,11 +280,11 @@ export class EmrserverlessApplicationAutoStopConfigurationOutputReference extend
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -319,24 +319,24 @@ export interface EmrserverlessApplicationImageConfiguration {
 }
 
 export function emrserverlessApplicationImageConfigurationToTerraform(struct?: EmrserverlessApplicationImageConfigurationOutputReference | EmrserverlessApplicationImageConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    image_uri: cdktf.stringToTerraform(struct!.imageUri),
+    image_uri: cdktn.stringToTerraform(struct!.imageUri),
   }
 }
 
 
 export function emrserverlessApplicationImageConfigurationToHclTerraform(struct?: EmrserverlessApplicationImageConfigurationOutputReference | EmrserverlessApplicationImageConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     image_uri: {
-      value: cdktf.stringToHclTerraform(struct!.imageUri),
+      value: cdktn.stringToHclTerraform(struct!.imageUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -347,14 +347,14 @@ export function emrserverlessApplicationImageConfigurationToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationImageConfigurationOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationImageConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -408,38 +408,38 @@ export interface EmrserverlessApplicationInitialCapacityInitialCapacityConfigWor
 }
 
 export function emrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationToTerraform(struct?: EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference | EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cpu: cdktf.stringToTerraform(struct!.cpu),
-    disk: cdktf.stringToTerraform(struct!.disk),
-    memory: cdktf.stringToTerraform(struct!.memory),
+    cpu: cdktn.stringToTerraform(struct!.cpu),
+    disk: cdktn.stringToTerraform(struct!.disk),
+    memory: cdktn.stringToTerraform(struct!.memory),
   }
 }
 
 
 export function emrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationToHclTerraform(struct?: EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference | EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cpu: {
-      value: cdktf.stringToHclTerraform(struct!.cpu),
+      value: cdktn.stringToHclTerraform(struct!.cpu),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk: {
-      value: cdktf.stringToHclTerraform(struct!.disk),
+      value: cdktn.stringToHclTerraform(struct!.disk),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     memory: {
-      value: cdktf.stringToHclTerraform(struct!.memory),
+      value: cdktn.stringToHclTerraform(struct!.memory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -450,14 +450,14 @@ export function emrserverlessApplicationInitialCapacityInitialCapacityConfigWork
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -550,25 +550,25 @@ export interface EmrserverlessApplicationInitialCapacityInitialCapacityConfig {
 }
 
 export function emrserverlessApplicationInitialCapacityInitialCapacityConfigToTerraform(struct?: EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference | EmrserverlessApplicationInitialCapacityInitialCapacityConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    worker_count: cdktf.numberToTerraform(struct!.workerCount),
+    worker_count: cdktn.numberToTerraform(struct!.workerCount),
     worker_configuration: emrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationToTerraform(struct!.workerConfiguration),
   }
 }
 
 
 export function emrserverlessApplicationInitialCapacityInitialCapacityConfigToHclTerraform(struct?: EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference | EmrserverlessApplicationInitialCapacityInitialCapacityConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     worker_count: {
-      value: cdktf.numberToHclTerraform(struct!.workerCount),
+      value: cdktn.numberToHclTerraform(struct!.workerCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -585,14 +585,14 @@ export function emrserverlessApplicationInitialCapacityInitialCapacityConfigToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -665,26 +665,26 @@ export interface EmrserverlessApplicationInitialCapacity {
   readonly initialCapacityConfig?: EmrserverlessApplicationInitialCapacityInitialCapacityConfig;
 }
 
-export function emrserverlessApplicationInitialCapacityToTerraform(struct?: EmrserverlessApplicationInitialCapacity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function emrserverlessApplicationInitialCapacityToTerraform(struct?: EmrserverlessApplicationInitialCapacity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    initial_capacity_type: cdktf.stringToTerraform(struct!.initialCapacityType),
+    initial_capacity_type: cdktn.stringToTerraform(struct!.initialCapacityType),
     initial_capacity_config: emrserverlessApplicationInitialCapacityInitialCapacityConfigToTerraform(struct!.initialCapacityConfig),
   }
 }
 
 
-export function emrserverlessApplicationInitialCapacityToHclTerraform(struct?: EmrserverlessApplicationInitialCapacity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function emrserverlessApplicationInitialCapacityToHclTerraform(struct?: EmrserverlessApplicationInitialCapacity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     initial_capacity_type: {
-      value: cdktf.stringToHclTerraform(struct!.initialCapacityType),
+      value: cdktn.stringToHclTerraform(struct!.initialCapacityType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -701,9 +701,9 @@ export function emrserverlessApplicationInitialCapacityToHclTerraform(struct?: E
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationInitialCapacityOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationInitialCapacityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -711,11 +711,11 @@ export class EmrserverlessApplicationInitialCapacityOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EmrserverlessApplicationInitialCapacity | cdktf.IResolvable | undefined {
+  public get internalValue(): EmrserverlessApplicationInitialCapacity | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -732,14 +732,14 @@ export class EmrserverlessApplicationInitialCapacityOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EmrserverlessApplicationInitialCapacity | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EmrserverlessApplicationInitialCapacity | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._initialCapacityType = undefined;
       this._initialCapacityConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -781,15 +781,15 @@ export class EmrserverlessApplicationInitialCapacityOutputReference extends cdkt
   }
 }
 
-export class EmrserverlessApplicationInitialCapacityList extends cdktf.ComplexList {
-  public internalValue? : EmrserverlessApplicationInitialCapacity[] | cdktf.IResolvable
+export class EmrserverlessApplicationInitialCapacityList extends cdktn.ComplexList {
+  public internalValue? : EmrserverlessApplicationInitialCapacity[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -804,39 +804,39 @@ export interface EmrserverlessApplicationInteractiveConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emrserverless_application#livy_endpoint_enabled EmrserverlessApplication#livy_endpoint_enabled}
   */
-  readonly livyEndpointEnabled?: boolean | cdktf.IResolvable;
+  readonly livyEndpointEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emrserverless_application#studio_enabled EmrserverlessApplication#studio_enabled}
   */
-  readonly studioEnabled?: boolean | cdktf.IResolvable;
+  readonly studioEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function emrserverlessApplicationInteractiveConfigurationToTerraform(struct?: EmrserverlessApplicationInteractiveConfigurationOutputReference | EmrserverlessApplicationInteractiveConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    livy_endpoint_enabled: cdktf.booleanToTerraform(struct!.livyEndpointEnabled),
-    studio_enabled: cdktf.booleanToTerraform(struct!.studioEnabled),
+    livy_endpoint_enabled: cdktn.booleanToTerraform(struct!.livyEndpointEnabled),
+    studio_enabled: cdktn.booleanToTerraform(struct!.studioEnabled),
   }
 }
 
 
 export function emrserverlessApplicationInteractiveConfigurationToHclTerraform(struct?: EmrserverlessApplicationInteractiveConfigurationOutputReference | EmrserverlessApplicationInteractiveConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     livy_endpoint_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.livyEndpointEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.livyEndpointEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     studio_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.studioEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.studioEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -847,14 +847,14 @@ export function emrserverlessApplicationInteractiveConfigurationToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationInteractiveConfigurationOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationInteractiveConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -886,11 +886,11 @@ export class EmrserverlessApplicationInteractiveConfigurationOutputReference ext
   }
 
   // livy_endpoint_enabled - computed: true, optional: true, required: false
-  private _livyEndpointEnabled?: boolean | cdktf.IResolvable; 
+  private _livyEndpointEnabled?: boolean | cdktn.IResolvable; 
   public get livyEndpointEnabled() {
     return this.getBooleanAttribute('livy_endpoint_enabled');
   }
-  public set livyEndpointEnabled(value: boolean | cdktf.IResolvable) {
+  public set livyEndpointEnabled(value: boolean | cdktn.IResolvable) {
     this._livyEndpointEnabled = value;
   }
   public resetLivyEndpointEnabled() {
@@ -902,11 +902,11 @@ export class EmrserverlessApplicationInteractiveConfigurationOutputReference ext
   }
 
   // studio_enabled - computed: true, optional: true, required: false
-  private _studioEnabled?: boolean | cdktf.IResolvable; 
+  private _studioEnabled?: boolean | cdktn.IResolvable; 
   public get studioEnabled() {
     return this.getBooleanAttribute('studio_enabled');
   }
-  public set studioEnabled(value: boolean | cdktf.IResolvable) {
+  public set studioEnabled(value: boolean | cdktn.IResolvable) {
     this._studioEnabled = value;
   }
   public resetStudioEnabled() {
@@ -933,38 +933,38 @@ export interface EmrserverlessApplicationMaximumCapacity {
 }
 
 export function emrserverlessApplicationMaximumCapacityToTerraform(struct?: EmrserverlessApplicationMaximumCapacityOutputReference | EmrserverlessApplicationMaximumCapacity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cpu: cdktf.stringToTerraform(struct!.cpu),
-    disk: cdktf.stringToTerraform(struct!.disk),
-    memory: cdktf.stringToTerraform(struct!.memory),
+    cpu: cdktn.stringToTerraform(struct!.cpu),
+    disk: cdktn.stringToTerraform(struct!.disk),
+    memory: cdktn.stringToTerraform(struct!.memory),
   }
 }
 
 
 export function emrserverlessApplicationMaximumCapacityToHclTerraform(struct?: EmrserverlessApplicationMaximumCapacityOutputReference | EmrserverlessApplicationMaximumCapacity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cpu: {
-      value: cdktf.stringToHclTerraform(struct!.cpu),
+      value: cdktn.stringToHclTerraform(struct!.cpu),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk: {
-      value: cdktf.stringToHclTerraform(struct!.disk),
+      value: cdktn.stringToHclTerraform(struct!.disk),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     memory: {
-      value: cdktf.stringToHclTerraform(struct!.memory),
+      value: cdktn.stringToHclTerraform(struct!.memory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -975,14 +975,14 @@ export function emrserverlessApplicationMaximumCapacityToHclTerraform(struct?: E
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationMaximumCapacityOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationMaximumCapacityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1072,32 +1072,32 @@ export interface EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggin
   readonly values: string[];
 }
 
-export function emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesToTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesToTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesToHclTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesToHclTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1108,9 +1108,9 @@ export function emrserverlessApplicationMonitoringConfigurationCloudwatchLogging
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1118,11 +1118,11 @@ export class EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingCon
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes | cdktf.IResolvable | undefined {
+  public get internalValue(): EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1139,14 +1139,14 @@ export class EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingCon
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1174,7 +1174,7 @@ export class EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingCon
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1185,15 +1185,15 @@ export class EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingCon
   }
 }
 
-export class EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesList extends cdktf.ComplexList {
-  public internalValue? : EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes[] | cdktf.IResolvable
+export class EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesList extends cdktn.ComplexList {
+  public internalValue? : EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1208,7 +1208,7 @@ export interface EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggin
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}
   */
@@ -1226,56 +1226,56 @@ export interface EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggin
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emrserverless_application#log_types EmrserverlessApplication#log_types}
   */
-  readonly logTypes?: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes[] | cdktf.IResolvable;
+  readonly logTypes?: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes[] | cdktn.IResolvable;
 }
 
 export function emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationToTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    encryption_key_arn: cdktf.stringToTerraform(struct!.encryptionKeyArn),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    log_stream_name_prefix: cdktf.stringToTerraform(struct!.logStreamNamePrefix),
-    log_types: cdktf.listMapper(emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesToTerraform, true)(struct!.logTypes),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    encryption_key_arn: cdktn.stringToTerraform(struct!.encryptionKeyArn),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    log_stream_name_prefix: cdktn.stringToTerraform(struct!.logStreamNamePrefix),
+    log_types: cdktn.listMapper(emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesToTerraform, true)(struct!.logTypes),
   }
 }
 
 
 export function emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationToHclTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encryption_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.encryptionKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_stream_name_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamNamePrefix),
+      value: cdktn.stringToHclTerraform(struct!.logStreamNamePrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_types: {
-      value: cdktf.listMapperHcl(emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesToHclTerraform, true)(struct!.logTypes),
+      value: cdktn.listMapperHcl(emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesToHclTerraform, true)(struct!.logTypes),
       isBlock: true,
       type: "set",
       storageClassType: "EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesList",
@@ -1286,14 +1286,14 @@ export function emrserverlessApplicationMonitoringConfigurationCloudwatchLogging
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1343,11 +1343,11 @@ export class EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingCon
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1408,7 +1408,7 @@ export class EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingCon
   public get logTypes() {
     return this._logTypes;
   }
-  public putLogTypes(value: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes[] | cdktf.IResolvable) {
+  public putLogTypes(value: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes[] | cdktn.IResolvable) {
     this._logTypes.internalValue = value;
   }
   public resetLogTypes() {
@@ -1423,7 +1423,7 @@ export interface EmrserverlessApplicationMonitoringConfigurationManagedPersisten
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}
   */
@@ -1431,31 +1431,31 @@ export interface EmrserverlessApplicationMonitoringConfigurationManagedPersisten
 }
 
 export function emrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationToTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    encryption_key_arn: cdktf.stringToTerraform(struct!.encryptionKeyArn),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    encryption_key_arn: cdktn.stringToTerraform(struct!.encryptionKeyArn),
   }
 }
 
 
 export function emrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationToHclTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encryption_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.encryptionKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1466,14 +1466,14 @@ export function emrserverlessApplicationMonitoringConfigurationManagedPersistenc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1505,11 +1505,11 @@ export class EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMo
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1544,24 +1544,24 @@ export interface EmrserverlessApplicationMonitoringConfigurationPrometheusMonito
 }
 
 export function emrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationToTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    remote_write_url: cdktf.stringToTerraform(struct!.remoteWriteUrl),
+    remote_write_url: cdktn.stringToTerraform(struct!.remoteWriteUrl),
   }
 }
 
 
 export function emrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationToHclTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     remote_write_url: {
-      value: cdktf.stringToHclTerraform(struct!.remoteWriteUrl),
+      value: cdktn.stringToHclTerraform(struct!.remoteWriteUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1572,14 +1572,14 @@ export function emrserverlessApplicationMonitoringConfigurationPrometheusMonitor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1632,31 +1632,31 @@ export interface EmrserverlessApplicationMonitoringConfigurationS3MonitoringConf
 }
 
 export function emrserverlessApplicationMonitoringConfigurationS3MonitoringConfigurationToTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    encryption_key_arn: cdktf.stringToTerraform(struct!.encryptionKeyArn),
-    log_uri: cdktf.stringToTerraform(struct!.logUri),
+    encryption_key_arn: cdktn.stringToTerraform(struct!.encryptionKeyArn),
+    log_uri: cdktn.stringToTerraform(struct!.logUri),
   }
 }
 
 
 export function emrserverlessApplicationMonitoringConfigurationS3MonitoringConfigurationToHclTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     encryption_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.encryptionKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_uri: {
-      value: cdktf.stringToHclTerraform(struct!.logUri),
+      value: cdktn.stringToHclTerraform(struct!.logUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1667,14 +1667,14 @@ export function emrserverlessApplicationMonitoringConfigurationS3MonitoringConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfigurationOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1765,8 +1765,8 @@ export interface EmrserverlessApplicationMonitoringConfiguration {
 }
 
 export function emrserverlessApplicationMonitoringConfigurationToTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1779,8 +1779,8 @@ export function emrserverlessApplicationMonitoringConfigurationToTerraform(struc
 
 
 export function emrserverlessApplicationMonitoringConfigurationToHclTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1814,14 +1814,14 @@ export function emrserverlessApplicationMonitoringConfigurationToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationMonitoringConfigurationOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationMonitoringConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1940,31 +1940,31 @@ export interface EmrserverlessApplicationNetworkConfiguration {
 }
 
 export function emrserverlessApplicationNetworkConfigurationToTerraform(struct?: EmrserverlessApplicationNetworkConfigurationOutputReference | EmrserverlessApplicationNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
 
 export function emrserverlessApplicationNetworkConfigurationToHclTerraform(struct?: EmrserverlessApplicationNetworkConfigurationOutputReference | EmrserverlessApplicationNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1975,14 +1975,14 @@ export function emrserverlessApplicationNetworkConfigurationToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationNetworkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2016,7 +2016,7 @@ export class EmrserverlessApplicationNetworkConfigurationOutputReference extends
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -2032,7 +2032,7 @@ export class EmrserverlessApplicationNetworkConfigurationOutputReference extends
   // subnet_ids - computed: false, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -2056,32 +2056,32 @@ export interface EmrserverlessApplicationRuntimeConfiguration {
   readonly properties?: { [key: string]: string };
 }
 
-export function emrserverlessApplicationRuntimeConfigurationToTerraform(struct?: EmrserverlessApplicationRuntimeConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function emrserverlessApplicationRuntimeConfigurationToTerraform(struct?: EmrserverlessApplicationRuntimeConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    classification: cdktf.stringToTerraform(struct!.classification),
-    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
+    classification: cdktn.stringToTerraform(struct!.classification),
+    properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.properties),
   }
 }
 
 
-export function emrserverlessApplicationRuntimeConfigurationToHclTerraform(struct?: EmrserverlessApplicationRuntimeConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function emrserverlessApplicationRuntimeConfigurationToHclTerraform(struct?: EmrserverlessApplicationRuntimeConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     classification: {
-      value: cdktf.stringToHclTerraform(struct!.classification),
+      value: cdktn.stringToHclTerraform(struct!.classification),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.properties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -2092,9 +2092,9 @@ export function emrserverlessApplicationRuntimeConfigurationToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationRuntimeConfigurationOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationRuntimeConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2102,11 +2102,11 @@ export class EmrserverlessApplicationRuntimeConfigurationOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EmrserverlessApplicationRuntimeConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): EmrserverlessApplicationRuntimeConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2123,14 +2123,14 @@ export class EmrserverlessApplicationRuntimeConfigurationOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EmrserverlessApplicationRuntimeConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EmrserverlessApplicationRuntimeConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._classification = undefined;
       this._properties = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2172,15 +2172,15 @@ export class EmrserverlessApplicationRuntimeConfigurationOutputReference extends
   }
 }
 
-export class EmrserverlessApplicationRuntimeConfigurationList extends cdktf.ComplexList {
-  public internalValue? : EmrserverlessApplicationRuntimeConfiguration[] | cdktf.IResolvable
+export class EmrserverlessApplicationRuntimeConfigurationList extends cdktn.ComplexList {
+  public internalValue? : EmrserverlessApplicationRuntimeConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2203,31 +2203,31 @@ export interface EmrserverlessApplicationSchedulerConfiguration {
 }
 
 export function emrserverlessApplicationSchedulerConfigurationToTerraform(struct?: EmrserverlessApplicationSchedulerConfigurationOutputReference | EmrserverlessApplicationSchedulerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_concurrent_runs: cdktf.numberToTerraform(struct!.maxConcurrentRuns),
-    queue_timeout_minutes: cdktf.numberToTerraform(struct!.queueTimeoutMinutes),
+    max_concurrent_runs: cdktn.numberToTerraform(struct!.maxConcurrentRuns),
+    queue_timeout_minutes: cdktn.numberToTerraform(struct!.queueTimeoutMinutes),
   }
 }
 
 
 export function emrserverlessApplicationSchedulerConfigurationToHclTerraform(struct?: EmrserverlessApplicationSchedulerConfigurationOutputReference | EmrserverlessApplicationSchedulerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_concurrent_runs: {
-      value: cdktf.numberToHclTerraform(struct!.maxConcurrentRuns),
+      value: cdktn.numberToHclTerraform(struct!.maxConcurrentRuns),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     queue_timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.queueTimeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.queueTimeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2238,14 +2238,14 @@ export function emrserverlessApplicationSchedulerConfigurationToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrserverlessApplicationSchedulerConfigurationOutputReference extends cdktf.ComplexObject {
+export class EmrserverlessApplicationSchedulerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2312,7 +2312,7 @@ export class EmrserverlessApplicationSchedulerConfigurationOutputReference exten
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emrserverless_application aws_emrserverless_application}
 */
-export class EmrserverlessApplication extends cdktf.TerraformResource {
+export class EmrserverlessApplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2323,14 +2323,14 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EmrserverlessApplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EmrserverlessApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmrserverlessApplication to import
   * @param importFromId The id of the existing EmrserverlessApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emrserverless_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmrserverlessApplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_emrserverless_application", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_emrserverless_application", importId: importFromId, provider });
       }
 
   // ===========
@@ -2561,7 +2561,7 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
   public get initialCapacity() {
     return this._initialCapacity;
   }
-  public putInitialCapacity(value: EmrserverlessApplicationInitialCapacity[] | cdktf.IResolvable) {
+  public putInitialCapacity(value: EmrserverlessApplicationInitialCapacity[] | cdktn.IResolvable) {
     this._initialCapacity.internalValue = value;
   }
   public resetInitialCapacity() {
@@ -2641,7 +2641,7 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
   public get runtimeConfiguration() {
     return this._runtimeConfiguration;
   }
-  public putRuntimeConfiguration(value: EmrserverlessApplicationRuntimeConfiguration[] | cdktf.IResolvable) {
+  public putRuntimeConfiguration(value: EmrserverlessApplicationRuntimeConfiguration[] | cdktn.IResolvable) {
     this._runtimeConfiguration.internalValue = value;
   }
   public resetRuntimeConfiguration() {
@@ -2674,23 +2674,23 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      architecture: cdktf.stringToTerraform(this._architecture),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      release_label: cdktf.stringToTerraform(this._releaseLabel),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      type: cdktf.stringToTerraform(this._type),
+      architecture: cdktn.stringToTerraform(this._architecture),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      release_label: cdktn.stringToTerraform(this._releaseLabel),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      type: cdktn.stringToTerraform(this._type),
       auto_start_configuration: emrserverlessApplicationAutoStartConfigurationToTerraform(this._autoStartConfiguration.internalValue),
       auto_stop_configuration: emrserverlessApplicationAutoStopConfigurationToTerraform(this._autoStopConfiguration.internalValue),
       image_configuration: emrserverlessApplicationImageConfigurationToTerraform(this._imageConfiguration.internalValue),
-      initial_capacity: cdktf.listMapper(emrserverlessApplicationInitialCapacityToTerraform, true)(this._initialCapacity.internalValue),
+      initial_capacity: cdktn.listMapper(emrserverlessApplicationInitialCapacityToTerraform, true)(this._initialCapacity.internalValue),
       interactive_configuration: emrserverlessApplicationInteractiveConfigurationToTerraform(this._interactiveConfiguration.internalValue),
       maximum_capacity: emrserverlessApplicationMaximumCapacityToTerraform(this._maximumCapacity.internalValue),
       monitoring_configuration: emrserverlessApplicationMonitoringConfigurationToTerraform(this._monitoringConfiguration.internalValue),
       network_configuration: emrserverlessApplicationNetworkConfigurationToTerraform(this._networkConfiguration.internalValue),
-      runtime_configuration: cdktf.listMapper(emrserverlessApplicationRuntimeConfigurationToTerraform, true)(this._runtimeConfiguration.internalValue),
+      runtime_configuration: cdktn.listMapper(emrserverlessApplicationRuntimeConfigurationToTerraform, true)(this._runtimeConfiguration.internalValue),
       scheduler_configuration: emrserverlessApplicationSchedulerConfigurationToTerraform(this._schedulerConfiguration.internalValue),
     };
   }
@@ -2698,49 +2698,49 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       architecture: {
-        value: cdktf.stringToHclTerraform(this._architecture),
+        value: cdktn.stringToHclTerraform(this._architecture),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       release_label: {
-        value: cdktf.stringToHclTerraform(this._releaseLabel),
+        value: cdktn.stringToHclTerraform(this._releaseLabel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -2764,7 +2764,7 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
         storageClassType: "EmrserverlessApplicationImageConfigurationList",
       },
       initial_capacity: {
-        value: cdktf.listMapperHcl(emrserverlessApplicationInitialCapacityToHclTerraform, true)(this._initialCapacity.internalValue),
+        value: cdktn.listMapperHcl(emrserverlessApplicationInitialCapacityToHclTerraform, true)(this._initialCapacity.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "EmrserverlessApplicationInitialCapacityList",
@@ -2794,7 +2794,7 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
         storageClassType: "EmrserverlessApplicationNetworkConfigurationList",
       },
       runtime_configuration: {
-        value: cdktf.listMapperHcl(emrserverlessApplicationRuntimeConfigurationToHclTerraform, true)(this._runtimeConfiguration.internalValue),
+        value: cdktn.listMapperHcl(emrserverlessApplicationRuntimeConfigurationToHclTerraform, true)(this._runtimeConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EmrserverlessApplicationRuntimeConfigurationList",

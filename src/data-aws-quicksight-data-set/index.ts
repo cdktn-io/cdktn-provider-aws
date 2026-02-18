@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsQuicksightDataSetConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsQuicksightDataSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/quicksight_data_set#aws_account_id DataAwsQuicksightDataSet#aws_account_id}
   */
@@ -42,8 +42,8 @@ export interface DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroup {
 }
 
 export function dataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupToTerraform(struct?: DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupToTerra
 
 
 export function dataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupToHclTerraform(struct?: DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupToHclTe
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -105,14 +105,14 @@ export class DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputRefe
   }
 }
 
-export class DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -127,8 +127,8 @@ export interface DataAwsQuicksightDataSetColumnGroups {
 }
 
 export function dataAwsQuicksightDataSetColumnGroupsToTerraform(struct?: DataAwsQuicksightDataSetColumnGroups): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -137,8 +137,8 @@ export function dataAwsQuicksightDataSetColumnGroupsToTerraform(struct?: DataAws
 
 
 export function dataAwsQuicksightDataSetColumnGroupsToHclTerraform(struct?: DataAwsQuicksightDataSetColumnGroups): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -146,7 +146,7 @@ export function dataAwsQuicksightDataSetColumnGroupsToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetColumnGroupsOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetColumnGroupsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -155,7 +155,7 @@ export class DataAwsQuicksightDataSetColumnGroupsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -181,14 +181,14 @@ export class DataAwsQuicksightDataSetColumnGroupsOutputReference extends cdktf.C
   }
 }
 
-export class DataAwsQuicksightDataSetColumnGroupsList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetColumnGroupsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -203,8 +203,8 @@ export interface DataAwsQuicksightDataSetColumnLevelPermissionRules {
 }
 
 export function dataAwsQuicksightDataSetColumnLevelPermissionRulesToTerraform(struct?: DataAwsQuicksightDataSetColumnLevelPermissionRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -213,8 +213,8 @@ export function dataAwsQuicksightDataSetColumnLevelPermissionRulesToTerraform(st
 
 
 export function dataAwsQuicksightDataSetColumnLevelPermissionRulesToHclTerraform(struct?: DataAwsQuicksightDataSetColumnLevelPermissionRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -222,7 +222,7 @@ export function dataAwsQuicksightDataSetColumnLevelPermissionRulesToHclTerraform
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -231,7 +231,7 @@ export class DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -261,14 +261,14 @@ export class DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputReference e
   }
 }
 
-export class DataAwsQuicksightDataSetColumnLevelPermissionRulesList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetColumnLevelPermissionRulesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -283,8 +283,8 @@ export interface DataAwsQuicksightDataSetDataSetUsageConfiguration {
 }
 
 export function dataAwsQuicksightDataSetDataSetUsageConfigurationToTerraform(struct?: DataAwsQuicksightDataSetDataSetUsageConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -293,8 +293,8 @@ export function dataAwsQuicksightDataSetDataSetUsageConfigurationToTerraform(str
 
 
 export function dataAwsQuicksightDataSetDataSetUsageConfigurationToHclTerraform(struct?: DataAwsQuicksightDataSetDataSetUsageConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -302,7 +302,7 @@ export function dataAwsQuicksightDataSetDataSetUsageConfigurationToHclTerraform(
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetDataSetUsageConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetDataSetUsageConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -311,7 +311,7 @@ export class DataAwsQuicksightDataSetDataSetUsageConfigurationOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -341,14 +341,14 @@ export class DataAwsQuicksightDataSetDataSetUsageConfigurationOutputReference ex
   }
 }
 
-export class DataAwsQuicksightDataSetDataSetUsageConfigurationList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetDataSetUsageConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -363,8 +363,8 @@ export interface DataAwsQuicksightDataSetFieldFolders {
 }
 
 export function dataAwsQuicksightDataSetFieldFoldersToTerraform(struct?: DataAwsQuicksightDataSetFieldFolders): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -373,8 +373,8 @@ export function dataAwsQuicksightDataSetFieldFoldersToTerraform(struct?: DataAws
 
 
 export function dataAwsQuicksightDataSetFieldFoldersToHclTerraform(struct?: DataAwsQuicksightDataSetFieldFolders): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -382,7 +382,7 @@ export function dataAwsQuicksightDataSetFieldFoldersToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetFieldFoldersOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetFieldFoldersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -391,7 +391,7 @@ export class DataAwsQuicksightDataSetFieldFoldersOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -426,14 +426,14 @@ export class DataAwsQuicksightDataSetFieldFoldersOutputReference extends cdktf.C
   }
 }
 
-export class DataAwsQuicksightDataSetFieldFoldersList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetFieldFoldersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -448,8 +448,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumn
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -458,8 +458,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnT
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -467,7 +467,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnT
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -476,7 +476,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnType
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -511,14 +511,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnType
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -533,8 +533,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColu
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -543,8 +543,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColum
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -552,7 +552,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColum
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -561,7 +561,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -596,14 +596,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsO
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -618,8 +618,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColu
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -628,8 +628,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColum
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -637,7 +637,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColum
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -646,7 +646,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -672,14 +672,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsO
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -694,8 +694,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOper
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOperationToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -704,8 +704,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOpera
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOperationToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -713,7 +713,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOpera
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOperationOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -722,7 +722,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOperatio
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -747,14 +747,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOperatio
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOperationList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOperationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -769,8 +769,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOpe
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOperationToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -779,8 +779,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOper
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOperationToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -788,7 +788,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOper
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOperationOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -797,7 +797,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOperati
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -822,14 +822,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOperati
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOperationList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOperationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -844,8 +844,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColu
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -854,8 +854,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColum
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -863,7 +863,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColum
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -872,7 +872,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColumnOp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -902,14 +902,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColumnOp
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -924,8 +924,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnO
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -934,8 +934,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOp
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -943,7 +943,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOp
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -952,7 +952,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOpera
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -977,14 +977,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOpera
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -999,8 +999,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnO
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1009,8 +1009,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOp
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1018,7 +1018,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOp
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1027,7 +1027,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOpera
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1058,14 +1058,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOpera
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1080,8 +1080,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnO
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1090,8 +1090,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOp
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1099,7 +1099,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOp
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1108,7 +1108,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOpera
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1139,14 +1139,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOpera
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1161,8 +1161,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColum
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1171,8 +1171,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumn
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1180,7 +1180,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumn
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1189,7 +1189,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumnOpe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1219,14 +1219,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumnOpe
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1241,8 +1241,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMapDataTransforms {
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransforms): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1251,8 +1251,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsToTerraform
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransforms): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1260,7 +1260,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsToHclTerraf
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1269,7 +1269,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1331,14 +1331,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsOutputReferenc
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1353,8 +1353,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLef
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1363,8 +1363,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeft
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1372,7 +1372,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeft
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1381,7 +1381,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1406,14 +1406,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoi
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1428,8 +1428,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRig
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1438,8 +1438,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRigh
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1447,7 +1447,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRigh
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1456,7 +1456,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRightJo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1481,14 +1481,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRightJo
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1503,8 +1503,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstruction {
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstruction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1513,8 +1513,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionToTe
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstruction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1522,7 +1522,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionToHc
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1531,7 +1531,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1583,14 +1583,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionOutputR
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1605,8 +1605,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMapSource {
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapSourceToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1615,8 +1615,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapSourceToTerraform(struct?
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapSourceToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1624,7 +1624,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapSourceToHclTerraform(stru
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapSourceOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1633,7 +1633,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapSourceOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1669,14 +1669,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapSourceOutputReference extend
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapSourceList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapSourceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1691,8 +1691,8 @@ export interface DataAwsQuicksightDataSetLogicalTableMap {
 }
 
 export function dataAwsQuicksightDataSetLogicalTableMapToTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1701,8 +1701,8 @@ export function dataAwsQuicksightDataSetLogicalTableMapToTerraform(struct?: Data
 
 
 export function dataAwsQuicksightDataSetLogicalTableMapToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1710,7 +1710,7 @@ export function dataAwsQuicksightDataSetLogicalTableMapToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetLogicalTableMapOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1719,7 +1719,7 @@ export class DataAwsQuicksightDataSetLogicalTableMapOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1761,14 +1761,14 @@ export class DataAwsQuicksightDataSetLogicalTableMapOutputReference extends cdkt
   }
 }
 
-export class DataAwsQuicksightDataSetLogicalTableMapList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetLogicalTableMapList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1783,8 +1783,8 @@ export interface DataAwsQuicksightDataSetPermissions {
 }
 
 export function dataAwsQuicksightDataSetPermissionsToTerraform(struct?: DataAwsQuicksightDataSetPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1793,8 +1793,8 @@ export function dataAwsQuicksightDataSetPermissionsToTerraform(struct?: DataAwsQ
 
 
 export function dataAwsQuicksightDataSetPermissionsToHclTerraform(struct?: DataAwsQuicksightDataSetPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1802,7 +1802,7 @@ export function dataAwsQuicksightDataSetPermissionsToHclTerraform(struct?: DataA
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetPermissionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1811,7 +1811,7 @@ export class DataAwsQuicksightDataSetPermissionsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1832,7 +1832,7 @@ export class DataAwsQuicksightDataSetPermissionsOutputReference extends cdktf.Co
 
   // actions - computed: true, optional: false, required: false
   public get actions() {
-    return cdktf.Fn.tolist(this.getListAttribute('actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('actions'));
   }
 
   // principal - computed: true, optional: false, required: false
@@ -1841,14 +1841,14 @@ export class DataAwsQuicksightDataSetPermissionsOutputReference extends cdktf.Co
   }
 }
 
-export class DataAwsQuicksightDataSetPermissionsList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetPermissionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1863,8 +1863,8 @@ export interface DataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumns {
 }
 
 export function dataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumnsToTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1873,8 +1873,8 @@ export function dataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumnsToTerraf
 
 
 export function dataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumnsToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1882,7 +1882,7 @@ export function dataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumnsToHclTer
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1891,7 +1891,7 @@ export class DataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1921,14 +1921,14 @@ export class DataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputRefer
   }
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumnsList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumnsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1943,8 +1943,8 @@ export interface DataAwsQuicksightDataSetPhysicalTableMapCustomSql {
 }
 
 export function dataAwsQuicksightDataSetPhysicalTableMapCustomSqlToTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapCustomSql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1953,8 +1953,8 @@ export function dataAwsQuicksightDataSetPhysicalTableMapCustomSqlToTerraform(str
 
 
 export function dataAwsQuicksightDataSetPhysicalTableMapCustomSqlToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapCustomSql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1962,7 +1962,7 @@ export function dataAwsQuicksightDataSetPhysicalTableMapCustomSqlToHclTerraform(
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapCustomSqlOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetPhysicalTableMapCustomSqlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1971,7 +1971,7 @@ export class DataAwsQuicksightDataSetPhysicalTableMapCustomSqlOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2012,14 +2012,14 @@ export class DataAwsQuicksightDataSetPhysicalTableMapCustomSqlOutputReference ex
   }
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapCustomSqlList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetPhysicalTableMapCustomSqlList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2034,8 +2034,8 @@ export interface DataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputCol
 }
 
 export function dataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColumnsToTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2044,8 +2044,8 @@ export function dataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColu
 
 
 export function dataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColumnsToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2053,7 +2053,7 @@ export function dataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColu
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2062,7 +2062,7 @@ export class DataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColumns
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2092,14 +2092,14 @@ export class DataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColumns
   }
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColumnsList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColumnsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2114,8 +2114,8 @@ export interface DataAwsQuicksightDataSetPhysicalTableMapRelationalTable {
 }
 
 export function dataAwsQuicksightDataSetPhysicalTableMapRelationalTableToTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapRelationalTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2124,8 +2124,8 @@ export function dataAwsQuicksightDataSetPhysicalTableMapRelationalTableToTerrafo
 
 
 export function dataAwsQuicksightDataSetPhysicalTableMapRelationalTableToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapRelationalTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2133,7 +2133,7 @@ export function dataAwsQuicksightDataSetPhysicalTableMapRelationalTableToHclTerr
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapRelationalTableOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetPhysicalTableMapRelationalTableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2142,7 +2142,7 @@ export class DataAwsQuicksightDataSetPhysicalTableMapRelationalTableOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2188,14 +2188,14 @@ export class DataAwsQuicksightDataSetPhysicalTableMapRelationalTableOutputRefere
   }
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapRelationalTableList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetPhysicalTableMapRelationalTableList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2210,8 +2210,8 @@ export interface DataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumns {
 }
 
 export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsToTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2220,8 +2220,8 @@ export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsToTe
 
 
 export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2229,7 +2229,7 @@ export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsToHc
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2238,7 +2238,7 @@ export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2268,14 +2268,14 @@ export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputR
   }
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2290,8 +2290,8 @@ export interface DataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettings 
 }
 
 export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettingsToTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2300,8 +2300,8 @@ export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettingsTo
 
 
 export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettingsToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2309,7 +2309,7 @@ export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettingsTo
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettingsOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2318,7 +2318,7 @@ export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettingsOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2363,14 +2363,14 @@ export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettingsOutpu
   }
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettingsList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettingsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2385,8 +2385,8 @@ export interface DataAwsQuicksightDataSetPhysicalTableMapS3Source {
 }
 
 export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceToTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapS3Source): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2395,8 +2395,8 @@ export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceToTerraform(stru
 
 
 export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapS3Source): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2404,7 +2404,7 @@ export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceToHclTerraform(s
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2413,7 +2413,7 @@ export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2450,14 +2450,14 @@ export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceOutputReference ext
   }
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2472,8 +2472,8 @@ export interface DataAwsQuicksightDataSetPhysicalTableMap {
 }
 
 export function dataAwsQuicksightDataSetPhysicalTableMapToTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2482,8 +2482,8 @@ export function dataAwsQuicksightDataSetPhysicalTableMapToTerraform(struct?: Dat
 
 
 export function dataAwsQuicksightDataSetPhysicalTableMapToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2491,7 +2491,7 @@ export function dataAwsQuicksightDataSetPhysicalTableMapToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetPhysicalTableMapOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2500,7 +2500,7 @@ export class DataAwsQuicksightDataSetPhysicalTableMapOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2543,14 +2543,14 @@ export class DataAwsQuicksightDataSetPhysicalTableMapOutputReference extends cdk
   }
 }
 
-export class DataAwsQuicksightDataSetPhysicalTableMapList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetPhysicalTableMapList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2565,8 +2565,8 @@ export interface DataAwsQuicksightDataSetRowLevelPermissionDataSet {
 }
 
 export function dataAwsQuicksightDataSetRowLevelPermissionDataSetToTerraform(struct?: DataAwsQuicksightDataSetRowLevelPermissionDataSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2575,8 +2575,8 @@ export function dataAwsQuicksightDataSetRowLevelPermissionDataSetToTerraform(str
 
 
 export function dataAwsQuicksightDataSetRowLevelPermissionDataSetToHclTerraform(struct?: DataAwsQuicksightDataSetRowLevelPermissionDataSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2584,7 +2584,7 @@ export function dataAwsQuicksightDataSetRowLevelPermissionDataSetToHclTerraform(
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetRowLevelPermissionDataSetOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetRowLevelPermissionDataSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2593,7 +2593,7 @@ export class DataAwsQuicksightDataSetRowLevelPermissionDataSetOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2638,14 +2638,14 @@ export class DataAwsQuicksightDataSetRowLevelPermissionDataSetOutputReference ex
   }
 }
 
-export class DataAwsQuicksightDataSetRowLevelPermissionDataSetList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetRowLevelPermissionDataSetList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2660,8 +2660,8 @@ export interface DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRu
 }
 
 export function dataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRulesToTerraform(struct?: DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2670,8 +2670,8 @@ export function dataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRul
 
 
 export function dataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRulesToHclTerraform(struct?: DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2679,7 +2679,7 @@ export function dataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRul
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2688,7 +2688,7 @@ export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRulesO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2728,14 +2728,14 @@ export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRulesO
   }
 }
 
-export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRulesList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRulesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2750,8 +2750,8 @@ export interface DataAwsQuicksightDataSetRowLevelPermissionTagConfiguration {
 }
 
 export function dataAwsQuicksightDataSetRowLevelPermissionTagConfigurationToTerraform(struct?: DataAwsQuicksightDataSetRowLevelPermissionTagConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2760,8 +2760,8 @@ export function dataAwsQuicksightDataSetRowLevelPermissionTagConfigurationToTerr
 
 
 export function dataAwsQuicksightDataSetRowLevelPermissionTagConfigurationToHclTerraform(struct?: DataAwsQuicksightDataSetRowLevelPermissionTagConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2769,7 +2769,7 @@ export function dataAwsQuicksightDataSetRowLevelPermissionTagConfigurationToHclT
   return attrs;
 }
 
-export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2778,7 +2778,7 @@ export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2809,14 +2809,14 @@ export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationOutputRef
   }
 }
 
-export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationList extends cdktf.ComplexList {
+export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2831,7 +2831,7 @@ export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationList exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/quicksight_data_set aws_quicksight_data_set}
 */
-export class DataAwsQuicksightDataSet extends cdktf.TerraformDataSource {
+export class DataAwsQuicksightDataSet extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -2842,14 +2842,14 @@ export class DataAwsQuicksightDataSet extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsQuicksightDataSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsQuicksightDataSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsQuicksightDataSet to import
   * @param importFromId The id of the existing DataAwsQuicksightDataSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/quicksight_data_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsQuicksightDataSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_data_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_data_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -3042,42 +3042,42 @@ export class DataAwsQuicksightDataSet extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      data_set_id: cdktf.stringToTerraform(this._dataSetId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      data_set_id: cdktn.stringToTerraform(this._dataSetId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_set_id: {
-        value: cdktf.stringToHclTerraform(this._dataSetId),
+        value: cdktn.stringToHclTerraform(this._dataSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlobalacceleratorCrossAccountAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface GlobalacceleratorCrossAccountAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_cross_account_attachment#name GlobalacceleratorCrossAccountAttachment#name}
   */
@@ -29,7 +29,7 @@ export interface GlobalacceleratorCrossAccountAttachmentConfig extends cdktf.Ter
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_cross_account_attachment#resource GlobalacceleratorCrossAccountAttachment#resource}
   */
-  readonly resource?: GlobalacceleratorCrossAccountAttachmentResource[] | cdktf.IResolvable;
+  readonly resource?: GlobalacceleratorCrossAccountAttachmentResource[] | cdktn.IResolvable;
 }
 export interface GlobalacceleratorCrossAccountAttachmentResource {
   /**
@@ -46,39 +46,39 @@ export interface GlobalacceleratorCrossAccountAttachmentResource {
   readonly region?: string;
 }
 
-export function globalacceleratorCrossAccountAttachmentResourceToTerraform(struct?: GlobalacceleratorCrossAccountAttachmentResource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalacceleratorCrossAccountAttachmentResourceToTerraform(struct?: GlobalacceleratorCrossAccountAttachmentResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr_block: cdktf.stringToTerraform(struct!.cidrBlock),
-    endpoint_id: cdktf.stringToTerraform(struct!.endpointId),
-    region: cdktf.stringToTerraform(struct!.region),
+    cidr_block: cdktn.stringToTerraform(struct!.cidrBlock),
+    endpoint_id: cdktn.stringToTerraform(struct!.endpointId),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
-export function globalacceleratorCrossAccountAttachmentResourceToHclTerraform(struct?: GlobalacceleratorCrossAccountAttachmentResource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalacceleratorCrossAccountAttachmentResourceToHclTerraform(struct?: GlobalacceleratorCrossAccountAttachmentResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cidr_block: {
-      value: cdktf.stringToHclTerraform(struct!.cidrBlock),
+      value: cdktn.stringToHclTerraform(struct!.cidrBlock),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint_id: {
-      value: cdktf.stringToHclTerraform(struct!.endpointId),
+      value: cdktn.stringToHclTerraform(struct!.endpointId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -89,9 +89,9 @@ export function globalacceleratorCrossAccountAttachmentResourceToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlobalacceleratorCrossAccountAttachmentResourceOutputReference extends cdktf.ComplexObject {
+export class GlobalacceleratorCrossAccountAttachmentResourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -99,11 +99,11 @@ export class GlobalacceleratorCrossAccountAttachmentResourceOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GlobalacceleratorCrossAccountAttachmentResource | cdktf.IResolvable | undefined {
+  public get internalValue(): GlobalacceleratorCrossAccountAttachmentResource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -124,7 +124,7 @@ export class GlobalacceleratorCrossAccountAttachmentResourceOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlobalacceleratorCrossAccountAttachmentResource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlobalacceleratorCrossAccountAttachmentResource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -132,7 +132,7 @@ export class GlobalacceleratorCrossAccountAttachmentResourceOutputReference exte
       this._endpointId = undefined;
       this._region = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -194,15 +194,15 @@ export class GlobalacceleratorCrossAccountAttachmentResourceOutputReference exte
   }
 }
 
-export class GlobalacceleratorCrossAccountAttachmentResourceList extends cdktf.ComplexList {
-  public internalValue? : GlobalacceleratorCrossAccountAttachmentResource[] | cdktf.IResolvable
+export class GlobalacceleratorCrossAccountAttachmentResourceList extends cdktn.ComplexList {
+  public internalValue? : GlobalacceleratorCrossAccountAttachmentResource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -217,7 +217,7 @@ export class GlobalacceleratorCrossAccountAttachmentResourceList extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_cross_account_attachment aws_globalaccelerator_cross_account_attachment}
 */
-export class GlobalacceleratorCrossAccountAttachment extends cdktf.TerraformResource {
+export class GlobalacceleratorCrossAccountAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -228,14 +228,14 @@ export class GlobalacceleratorCrossAccountAttachment extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlobalacceleratorCrossAccountAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlobalacceleratorCrossAccountAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlobalacceleratorCrossAccountAttachment to import
   * @param importFromId The id of the existing GlobalacceleratorCrossAccountAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_cross_account_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlobalacceleratorCrossAccountAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_globalaccelerator_cross_account_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_globalaccelerator_cross_account_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -311,7 +311,7 @@ export class GlobalacceleratorCrossAccountAttachment extends cdktf.TerraformReso
   // principals - computed: false, optional: true, required: false
   private _principals?: string[]; 
   public get principals() {
-    return cdktf.Fn.tolist(this.getListAttribute('principals'));
+    return cdktn.Fn.tolist(this.getListAttribute('principals'));
   }
   public set principals(value: string[]) {
     this._principals = value;
@@ -341,7 +341,7 @@ export class GlobalacceleratorCrossAccountAttachment extends cdktf.TerraformReso
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -351,7 +351,7 @@ export class GlobalacceleratorCrossAccountAttachment extends cdktf.TerraformReso
   public get resource() {
     return this._resource;
   }
-  public putResource(value: GlobalacceleratorCrossAccountAttachmentResource[] | cdktf.IResolvable) {
+  public putResource(value: GlobalacceleratorCrossAccountAttachmentResource[] | cdktn.IResolvable) {
     this._resource.internalValue = value;
   }
   public resetResource() {
@@ -368,35 +368,35 @@ export class GlobalacceleratorCrossAccountAttachment extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      principals: cdktf.listMapper(cdktf.stringToTerraform, false)(this._principals),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      resource: cdktf.listMapper(globalacceleratorCrossAccountAttachmentResourceToTerraform, true)(this._resource.internalValue),
+      name: cdktn.stringToTerraform(this._name),
+      principals: cdktn.listMapper(cdktn.stringToTerraform, false)(this._principals),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      resource: cdktn.listMapper(globalacceleratorCrossAccountAttachmentResourceToTerraform, true)(this._resource.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principals: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._principals),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._principals),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       resource: {
-        value: cdktf.listMapperHcl(globalacceleratorCrossAccountAttachmentResourceToHclTerraform, true)(this._resource.internalValue),
+        value: cdktn.listMapperHcl(globalacceleratorCrossAccountAttachmentResourceToHclTerraform, true)(this._resource.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "GlobalacceleratorCrossAccountAttachmentResourceList",

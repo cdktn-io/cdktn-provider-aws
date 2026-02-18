@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcIpamPoolConfig extends cdktf.TerraformMetaArguments {
+export interface VpcIpamPoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_pool#address_family VpcIpamPool#address_family}
   */
@@ -35,7 +35,7 @@ export interface VpcIpamPoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_pool#auto_import VpcIpamPool#auto_import}
   */
-  readonly autoImport?: boolean | cdktf.IResolvable;
+  readonly autoImport?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_pool#aws_service VpcIpamPool#aws_service}
   */
@@ -43,7 +43,7 @@ export interface VpcIpamPoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_pool#cascade VpcIpamPool#cascade}
   */
-  readonly cascade?: boolean | cdktf.IResolvable;
+  readonly cascade?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_pool#description VpcIpamPool#description}
   */
@@ -70,7 +70,7 @@ export interface VpcIpamPoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_pool#publicly_advertisable VpcIpamPool#publicly_advertisable}
   */
-  readonly publiclyAdvertisable?: boolean | cdktf.IResolvable;
+  readonly publiclyAdvertisable?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -122,45 +122,45 @@ export interface VpcIpamPoolSourceResource {
 }
 
 export function vpcIpamPoolSourceResourceToTerraform(struct?: VpcIpamPoolSourceResourceOutputReference | VpcIpamPoolSourceResource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_id: cdktf.stringToTerraform(struct!.resourceId),
-    resource_owner: cdktf.stringToTerraform(struct!.resourceOwner),
-    resource_region: cdktf.stringToTerraform(struct!.resourceRegion),
-    resource_type: cdktf.stringToTerraform(struct!.resourceType),
+    resource_id: cdktn.stringToTerraform(struct!.resourceId),
+    resource_owner: cdktn.stringToTerraform(struct!.resourceOwner),
+    resource_region: cdktn.stringToTerraform(struct!.resourceRegion),
+    resource_type: cdktn.stringToTerraform(struct!.resourceType),
   }
 }
 
 
 export function vpcIpamPoolSourceResourceToHclTerraform(struct?: VpcIpamPoolSourceResourceOutputReference | VpcIpamPoolSourceResource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.resourceId),
+      value: cdktn.stringToHclTerraform(struct!.resourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_owner: {
-      value: cdktf.stringToHclTerraform(struct!.resourceOwner),
+      value: cdktn.stringToHclTerraform(struct!.resourceOwner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_region: {
-      value: cdktf.stringToHclTerraform(struct!.resourceRegion),
+      value: cdktn.stringToHclTerraform(struct!.resourceRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_type: {
-      value: cdktf.stringToHclTerraform(struct!.resourceType),
+      value: cdktn.stringToHclTerraform(struct!.resourceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -171,14 +171,14 @@ export function vpcIpamPoolSourceResourceToHclTerraform(struct?: VpcIpamPoolSour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcIpamPoolSourceResourceOutputReference extends cdktf.ComplexObject {
+export class VpcIpamPoolSourceResourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -288,39 +288,39 @@ export interface VpcIpamPoolTimeouts {
   readonly update?: string;
 }
 
-export function vpcIpamPoolTimeoutsToTerraform(struct?: VpcIpamPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcIpamPoolTimeoutsToTerraform(struct?: VpcIpamPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function vpcIpamPoolTimeoutsToHclTerraform(struct?: VpcIpamPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcIpamPoolTimeoutsToHclTerraform(struct?: VpcIpamPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -331,19 +331,19 @@ export function vpcIpamPoolTimeoutsToHclTerraform(struct?: VpcIpamPoolTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcIpamPoolTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VpcIpamPoolTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VpcIpamPoolTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VpcIpamPoolTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -364,7 +364,7 @@ export class VpcIpamPoolTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpcIpamPoolTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpcIpamPoolTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -372,7 +372,7 @@ export class VpcIpamPoolTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -437,7 +437,7 @@ export class VpcIpamPoolTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool}
 */
-export class VpcIpamPool extends cdktf.TerraformResource {
+export class VpcIpamPool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -448,14 +448,14 @@ export class VpcIpamPool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcIpamPool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcIpamPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcIpamPool to import
   * @param importFromId The id of the existing VpcIpamPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcIpamPool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_ipam_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_ipam_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -594,11 +594,11 @@ export class VpcIpamPool extends cdktf.TerraformResource {
   }
 
   // auto_import - computed: false, optional: true, required: false
-  private _autoImport?: boolean | cdktf.IResolvable; 
+  private _autoImport?: boolean | cdktn.IResolvable; 
   public get autoImport() {
     return this.getBooleanAttribute('auto_import');
   }
-  public set autoImport(value: boolean | cdktf.IResolvable) {
+  public set autoImport(value: boolean | cdktn.IResolvable) {
     this._autoImport = value;
   }
   public resetAutoImport() {
@@ -626,11 +626,11 @@ export class VpcIpamPool extends cdktf.TerraformResource {
   }
 
   // cascade - computed: false, optional: true, required: false
-  private _cascade?: boolean | cdktf.IResolvable; 
+  private _cascade?: boolean | cdktn.IResolvable; 
   public get cascade() {
     return this.getBooleanAttribute('cascade');
   }
-  public set cascade(value: boolean | cdktf.IResolvable) {
+  public set cascade(value: boolean | cdktn.IResolvable) {
     this._cascade = value;
   }
   public resetCascade() {
@@ -729,11 +729,11 @@ export class VpcIpamPool extends cdktf.TerraformResource {
   }
 
   // publicly_advertisable - computed: false, optional: true, required: false
-  private _publiclyAdvertisable?: boolean | cdktf.IResolvable; 
+  private _publiclyAdvertisable?: boolean | cdktn.IResolvable; 
   public get publiclyAdvertisable() {
     return this.getBooleanAttribute('publicly_advertisable');
   }
-  public set publiclyAdvertisable(value: boolean | cdktf.IResolvable) {
+  public set publiclyAdvertisable(value: boolean | cdktn.IResolvable) {
     this._publiclyAdvertisable = value;
   }
   public resetPubliclyAdvertisable() {
@@ -851,24 +851,24 @@ export class VpcIpamPool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address_family: cdktf.stringToTerraform(this._addressFamily),
-      allocation_default_netmask_length: cdktf.numberToTerraform(this._allocationDefaultNetmaskLength),
-      allocation_max_netmask_length: cdktf.numberToTerraform(this._allocationMaxNetmaskLength),
-      allocation_min_netmask_length: cdktf.numberToTerraform(this._allocationMinNetmaskLength),
-      allocation_resource_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._allocationResourceTags),
-      auto_import: cdktf.booleanToTerraform(this._autoImport),
-      aws_service: cdktf.stringToTerraform(this._awsService),
-      cascade: cdktf.booleanToTerraform(this._cascade),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      ipam_scope_id: cdktf.stringToTerraform(this._ipamScopeId),
-      locale: cdktf.stringToTerraform(this._locale),
-      public_ip_source: cdktf.stringToTerraform(this._publicIpSource),
-      publicly_advertisable: cdktf.booleanToTerraform(this._publiclyAdvertisable),
-      region: cdktf.stringToTerraform(this._region),
-      source_ipam_pool_id: cdktf.stringToTerraform(this._sourceIpamPoolId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      address_family: cdktn.stringToTerraform(this._addressFamily),
+      allocation_default_netmask_length: cdktn.numberToTerraform(this._allocationDefaultNetmaskLength),
+      allocation_max_netmask_length: cdktn.numberToTerraform(this._allocationMaxNetmaskLength),
+      allocation_min_netmask_length: cdktn.numberToTerraform(this._allocationMinNetmaskLength),
+      allocation_resource_tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._allocationResourceTags),
+      auto_import: cdktn.booleanToTerraform(this._autoImport),
+      aws_service: cdktn.stringToTerraform(this._awsService),
+      cascade: cdktn.booleanToTerraform(this._cascade),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      ipam_scope_id: cdktn.stringToTerraform(this._ipamScopeId),
+      locale: cdktn.stringToTerraform(this._locale),
+      public_ip_source: cdktn.stringToTerraform(this._publicIpSource),
+      publicly_advertisable: cdktn.booleanToTerraform(this._publiclyAdvertisable),
+      region: cdktn.stringToTerraform(this._region),
+      source_ipam_pool_id: cdktn.stringToTerraform(this._sourceIpamPoolId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       source_resource: vpcIpamPoolSourceResourceToTerraform(this._sourceResource.internalValue),
       timeouts: vpcIpamPoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -877,109 +877,109 @@ export class VpcIpamPool extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       address_family: {
-        value: cdktf.stringToHclTerraform(this._addressFamily),
+        value: cdktn.stringToHclTerraform(this._addressFamily),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allocation_default_netmask_length: {
-        value: cdktf.numberToHclTerraform(this._allocationDefaultNetmaskLength),
+        value: cdktn.numberToHclTerraform(this._allocationDefaultNetmaskLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       allocation_max_netmask_length: {
-        value: cdktf.numberToHclTerraform(this._allocationMaxNetmaskLength),
+        value: cdktn.numberToHclTerraform(this._allocationMaxNetmaskLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       allocation_min_netmask_length: {
-        value: cdktf.numberToHclTerraform(this._allocationMinNetmaskLength),
+        value: cdktn.numberToHclTerraform(this._allocationMinNetmaskLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       allocation_resource_tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._allocationResourceTags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._allocationResourceTags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       auto_import: {
-        value: cdktf.booleanToHclTerraform(this._autoImport),
+        value: cdktn.booleanToHclTerraform(this._autoImport),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       aws_service: {
-        value: cdktf.stringToHclTerraform(this._awsService),
+        value: cdktn.stringToHclTerraform(this._awsService),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cascade: {
-        value: cdktf.booleanToHclTerraform(this._cascade),
+        value: cdktn.booleanToHclTerraform(this._cascade),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipam_scope_id: {
-        value: cdktf.stringToHclTerraform(this._ipamScopeId),
+        value: cdktn.stringToHclTerraform(this._ipamScopeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       locale: {
-        value: cdktf.stringToHclTerraform(this._locale),
+        value: cdktn.stringToHclTerraform(this._locale),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_ip_source: {
-        value: cdktf.stringToHclTerraform(this._publicIpSource),
+        value: cdktn.stringToHclTerraform(this._publicIpSource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publicly_advertisable: {
-        value: cdktf.booleanToHclTerraform(this._publiclyAdvertisable),
+        value: cdktn.booleanToHclTerraform(this._publiclyAdvertisable),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_ipam_pool_id: {
-        value: cdktf.stringToHclTerraform(this._sourceIpamPoolId),
+        value: cdktn.stringToHclTerraform(this._sourceIpamPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

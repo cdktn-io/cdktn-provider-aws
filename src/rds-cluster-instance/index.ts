@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RdsClusterInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface RdsClusterInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_cluster_instance#apply_immediately RdsClusterInstance#apply_immediately}
   */
-  readonly applyImmediately?: boolean | cdktf.IResolvable;
+  readonly applyImmediately?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_cluster_instance#auto_minor_version_upgrade RdsClusterInstance#auto_minor_version_upgrade}
   */
-  readonly autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
+  readonly autoMinorVersionUpgrade?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_cluster_instance#availability_zone RdsClusterInstance#availability_zone}
   */
@@ -35,7 +35,7 @@ export interface RdsClusterInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_cluster_instance#copy_tags_to_snapshot RdsClusterInstance#copy_tags_to_snapshot}
   */
-  readonly copyTagsToSnapshot?: boolean | cdktf.IResolvable;
+  readonly copyTagsToSnapshot?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_cluster_instance#custom_iam_instance_profile RdsClusterInstance#custom_iam_instance_profile}
   */
@@ -59,7 +59,7 @@ export interface RdsClusterInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_cluster_instance#force_destroy RdsClusterInstance#force_destroy}
   */
-  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_cluster_instance#id RdsClusterInstance#id}
   *
@@ -90,7 +90,7 @@ export interface RdsClusterInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_cluster_instance#performance_insights_enabled RdsClusterInstance#performance_insights_enabled}
   */
-  readonly performanceInsightsEnabled?: boolean | cdktf.IResolvable;
+  readonly performanceInsightsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_cluster_instance#performance_insights_kms_key_id RdsClusterInstance#performance_insights_kms_key_id}
   */
@@ -114,7 +114,7 @@ export interface RdsClusterInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_cluster_instance#publicly_accessible RdsClusterInstance#publicly_accessible}
   */
-  readonly publiclyAccessible?: boolean | cdktf.IResolvable;
+  readonly publiclyAccessible?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -151,39 +151,39 @@ export interface RdsClusterInstanceTimeouts {
   readonly update?: string;
 }
 
-export function rdsClusterInstanceTimeoutsToTerraform(struct?: RdsClusterInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rdsClusterInstanceTimeoutsToTerraform(struct?: RdsClusterInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function rdsClusterInstanceTimeoutsToHclTerraform(struct?: RdsClusterInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rdsClusterInstanceTimeoutsToHclTerraform(struct?: RdsClusterInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -194,19 +194,19 @@ export function rdsClusterInstanceTimeoutsToHclTerraform(struct?: RdsClusterInst
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RdsClusterInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RdsClusterInstanceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RdsClusterInstanceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RdsClusterInstanceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -227,7 +227,7 @@ export class RdsClusterInstanceTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RdsClusterInstanceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RdsClusterInstanceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -235,7 +235,7 @@ export class RdsClusterInstanceTimeoutsOutputReference extends cdktf.ComplexObje
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -300,7 +300,7 @@ export class RdsClusterInstanceTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_cluster_instance aws_rds_cluster_instance}
 */
-export class RdsClusterInstance extends cdktf.TerraformResource {
+export class RdsClusterInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -311,14 +311,14 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RdsClusterInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RdsClusterInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RdsClusterInstance to import
   * @param importFromId The id of the existing RdsClusterInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_cluster_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RdsClusterInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_cluster_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_cluster_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -384,11 +384,11 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   // ==========
 
   // apply_immediately - computed: true, optional: true, required: false
-  private _applyImmediately?: boolean | cdktf.IResolvable; 
+  private _applyImmediately?: boolean | cdktn.IResolvable; 
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean | cdktf.IResolvable) {
+  public set applyImmediately(value: boolean | cdktn.IResolvable) {
     this._applyImmediately = value;
   }
   public resetApplyImmediately() {
@@ -405,11 +405,11 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   }
 
   // auto_minor_version_upgrade - computed: false, optional: true, required: false
-  private _autoMinorVersionUpgrade?: boolean | cdktf.IResolvable; 
+  private _autoMinorVersionUpgrade?: boolean | cdktn.IResolvable; 
   public get autoMinorVersionUpgrade() {
     return this.getBooleanAttribute('auto_minor_version_upgrade');
   }
-  public set autoMinorVersionUpgrade(value: boolean | cdktf.IResolvable) {
+  public set autoMinorVersionUpgrade(value: boolean | cdktn.IResolvable) {
     this._autoMinorVersionUpgrade = value;
   }
   public resetAutoMinorVersionUpgrade() {
@@ -466,11 +466,11 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   }
 
   // copy_tags_to_snapshot - computed: false, optional: true, required: false
-  private _copyTagsToSnapshot?: boolean | cdktf.IResolvable; 
+  private _copyTagsToSnapshot?: boolean | cdktn.IResolvable; 
   public get copyTagsToSnapshot() {
     return this.getBooleanAttribute('copy_tags_to_snapshot');
   }
-  public set copyTagsToSnapshot(value: boolean | cdktf.IResolvable) {
+  public set copyTagsToSnapshot(value: boolean | cdktn.IResolvable) {
     this._copyTagsToSnapshot = value;
   }
   public resetCopyTagsToSnapshot() {
@@ -574,11 +574,11 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  private _forceDestroy?: boolean | cdktn.IResolvable; 
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+  public set forceDestroy(value: boolean | cdktn.IResolvable) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -693,11 +693,11 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   }
 
   // performance_insights_enabled - computed: true, optional: true, required: false
-  private _performanceInsightsEnabled?: boolean | cdktf.IResolvable; 
+  private _performanceInsightsEnabled?: boolean | cdktn.IResolvable; 
   public get performanceInsightsEnabled() {
     return this.getBooleanAttribute('performance_insights_enabled');
   }
-  public set performanceInsightsEnabled(value: boolean | cdktf.IResolvable) {
+  public set performanceInsightsEnabled(value: boolean | cdktn.IResolvable) {
     this._performanceInsightsEnabled = value;
   }
   public resetPerformanceInsightsEnabled() {
@@ -794,11 +794,11 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   }
 
   // publicly_accessible - computed: true, optional: true, required: false
-  private _publiclyAccessible?: boolean | cdktf.IResolvable; 
+  private _publiclyAccessible?: boolean | cdktn.IResolvable; 
   public get publiclyAccessible() {
     return this.getBooleanAttribute('publicly_accessible');
   }
-  public set publiclyAccessible(value: boolean | cdktf.IResolvable) {
+  public set publiclyAccessible(value: boolean | cdktn.IResolvable) {
     this._publiclyAccessible = value;
   }
   public resetPubliclyAccessible() {
@@ -889,34 +889,34 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
-      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      ca_cert_identifier: cdktf.stringToTerraform(this._caCertIdentifier),
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
-      custom_iam_instance_profile: cdktf.stringToTerraform(this._customIamInstanceProfile),
-      db_parameter_group_name: cdktf.stringToTerraform(this._dbParameterGroupName),
-      db_subnet_group_name: cdktf.stringToTerraform(this._dbSubnetGroupName),
-      engine: cdktf.stringToTerraform(this._engine),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      id: cdktf.stringToTerraform(this._id),
-      identifier: cdktf.stringToTerraform(this._identifier),
-      identifier_prefix: cdktf.stringToTerraform(this._identifierPrefix),
-      instance_class: cdktf.stringToTerraform(this._instanceClass),
-      monitoring_interval: cdktf.numberToTerraform(this._monitoringInterval),
-      monitoring_role_arn: cdktf.stringToTerraform(this._monitoringRoleArn),
-      performance_insights_enabled: cdktf.booleanToTerraform(this._performanceInsightsEnabled),
-      performance_insights_kms_key_id: cdktf.stringToTerraform(this._performanceInsightsKmsKeyId),
-      performance_insights_retention_period: cdktf.numberToTerraform(this._performanceInsightsRetentionPeriod),
-      preferred_backup_window: cdktf.stringToTerraform(this._preferredBackupWindow),
-      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
-      promotion_tier: cdktf.numberToTerraform(this._promotionTier),
-      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      apply_immediately: cdktn.booleanToTerraform(this._applyImmediately),
+      auto_minor_version_upgrade: cdktn.booleanToTerraform(this._autoMinorVersionUpgrade),
+      availability_zone: cdktn.stringToTerraform(this._availabilityZone),
+      ca_cert_identifier: cdktn.stringToTerraform(this._caCertIdentifier),
+      cluster_identifier: cdktn.stringToTerraform(this._clusterIdentifier),
+      copy_tags_to_snapshot: cdktn.booleanToTerraform(this._copyTagsToSnapshot),
+      custom_iam_instance_profile: cdktn.stringToTerraform(this._customIamInstanceProfile),
+      db_parameter_group_name: cdktn.stringToTerraform(this._dbParameterGroupName),
+      db_subnet_group_name: cdktn.stringToTerraform(this._dbSubnetGroupName),
+      engine: cdktn.stringToTerraform(this._engine),
+      engine_version: cdktn.stringToTerraform(this._engineVersion),
+      force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
+      id: cdktn.stringToTerraform(this._id),
+      identifier: cdktn.stringToTerraform(this._identifier),
+      identifier_prefix: cdktn.stringToTerraform(this._identifierPrefix),
+      instance_class: cdktn.stringToTerraform(this._instanceClass),
+      monitoring_interval: cdktn.numberToTerraform(this._monitoringInterval),
+      monitoring_role_arn: cdktn.stringToTerraform(this._monitoringRoleArn),
+      performance_insights_enabled: cdktn.booleanToTerraform(this._performanceInsightsEnabled),
+      performance_insights_kms_key_id: cdktn.stringToTerraform(this._performanceInsightsKmsKeyId),
+      performance_insights_retention_period: cdktn.numberToTerraform(this._performanceInsightsRetentionPeriod),
+      preferred_backup_window: cdktn.stringToTerraform(this._preferredBackupWindow),
+      preferred_maintenance_window: cdktn.stringToTerraform(this._preferredMaintenanceWindow),
+      promotion_tier: cdktn.numberToTerraform(this._promotionTier),
+      publicly_accessible: cdktn.booleanToTerraform(this._publiclyAccessible),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       timeouts: rdsClusterInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -924,169 +924,169 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       apply_immediately: {
-        value: cdktf.booleanToHclTerraform(this._applyImmediately),
+        value: cdktn.booleanToHclTerraform(this._applyImmediately),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auto_minor_version_upgrade: {
-        value: cdktf.booleanToHclTerraform(this._autoMinorVersionUpgrade),
+        value: cdktn.booleanToHclTerraform(this._autoMinorVersionUpgrade),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       availability_zone: {
-        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        value: cdktn.stringToHclTerraform(this._availabilityZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ca_cert_identifier: {
-        value: cdktf.stringToHclTerraform(this._caCertIdentifier),
+        value: cdktn.stringToHclTerraform(this._caCertIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._clusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       copy_tags_to_snapshot: {
-        value: cdktf.booleanToHclTerraform(this._copyTagsToSnapshot),
+        value: cdktn.booleanToHclTerraform(this._copyTagsToSnapshot),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       custom_iam_instance_profile: {
-        value: cdktf.stringToHclTerraform(this._customIamInstanceProfile),
+        value: cdktn.stringToHclTerraform(this._customIamInstanceProfile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_parameter_group_name: {
-        value: cdktf.stringToHclTerraform(this._dbParameterGroupName),
+        value: cdktn.stringToHclTerraform(this._dbParameterGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_subnet_group_name: {
-        value: cdktf.stringToHclTerraform(this._dbSubnetGroupName),
+        value: cdktn.stringToHclTerraform(this._dbSubnetGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_version: {
-        value: cdktf.stringToHclTerraform(this._engineVersion),
+        value: cdktn.stringToHclTerraform(this._engineVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_destroy: {
-        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        value: cdktn.booleanToHclTerraform(this._forceDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identifier: {
-        value: cdktf.stringToHclTerraform(this._identifier),
+        value: cdktn.stringToHclTerraform(this._identifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identifier_prefix: {
-        value: cdktf.stringToHclTerraform(this._identifierPrefix),
+        value: cdktn.stringToHclTerraform(this._identifierPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_class: {
-        value: cdktf.stringToHclTerraform(this._instanceClass),
+        value: cdktn.stringToHclTerraform(this._instanceClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       monitoring_interval: {
-        value: cdktf.numberToHclTerraform(this._monitoringInterval),
+        value: cdktn.numberToHclTerraform(this._monitoringInterval),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       monitoring_role_arn: {
-        value: cdktf.stringToHclTerraform(this._monitoringRoleArn),
+        value: cdktn.stringToHclTerraform(this._monitoringRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       performance_insights_enabled: {
-        value: cdktf.booleanToHclTerraform(this._performanceInsightsEnabled),
+        value: cdktn.booleanToHclTerraform(this._performanceInsightsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       performance_insights_kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._performanceInsightsKmsKeyId),
+        value: cdktn.stringToHclTerraform(this._performanceInsightsKmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       performance_insights_retention_period: {
-        value: cdktf.numberToHclTerraform(this._performanceInsightsRetentionPeriod),
+        value: cdktn.numberToHclTerraform(this._performanceInsightsRetentionPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       preferred_backup_window: {
-        value: cdktf.stringToHclTerraform(this._preferredBackupWindow),
+        value: cdktn.stringToHclTerraform(this._preferredBackupWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_maintenance_window: {
-        value: cdktf.stringToHclTerraform(this._preferredMaintenanceWindow),
+        value: cdktn.stringToHclTerraform(this._preferredMaintenanceWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       promotion_tier: {
-        value: cdktf.numberToHclTerraform(this._promotionTier),
+        value: cdktn.numberToHclTerraform(this._promotionTier),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       publicly_accessible: {
-        value: cdktf.booleanToHclTerraform(this._publiclyAccessible),
+        value: cdktn.booleanToHclTerraform(this._publiclyAccessible),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

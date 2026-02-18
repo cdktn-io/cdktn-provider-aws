@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsEbsDefaultKmsKeyConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEbsDefaultKmsKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ebs_default_kms_key#id DataAwsEbsDefaultKmsKey#id}
   *
@@ -39,25 +39,25 @@ export interface DataAwsEbsDefaultKmsKeyTimeouts {
   readonly read?: string;
 }
 
-export function dataAwsEbsDefaultKmsKeyTimeoutsToTerraform(struct?: DataAwsEbsDefaultKmsKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEbsDefaultKmsKeyTimeoutsToTerraform(struct?: DataAwsEbsDefaultKmsKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAwsEbsDefaultKmsKeyTimeoutsToHclTerraform(struct?: DataAwsEbsDefaultKmsKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEbsDefaultKmsKeyTimeoutsToHclTerraform(struct?: DataAwsEbsDefaultKmsKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -68,19 +68,19 @@ export function dataAwsEbsDefaultKmsKeyTimeoutsToHclTerraform(struct?: DataAwsEb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEbsDefaultKmsKeyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAwsEbsDefaultKmsKeyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAwsEbsDefaultKmsKeyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsEbsDefaultKmsKeyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -93,13 +93,13 @@ export class DataAwsEbsDefaultKmsKeyTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEbsDefaultKmsKeyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEbsDefaultKmsKeyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -130,7 +130,7 @@ export class DataAwsEbsDefaultKmsKeyTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key}
 */
-export class DataAwsEbsDefaultKmsKey extends cdktf.TerraformDataSource {
+export class DataAwsEbsDefaultKmsKey extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -141,14 +141,14 @@ export class DataAwsEbsDefaultKmsKey extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsEbsDefaultKmsKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsEbsDefaultKmsKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEbsDefaultKmsKey to import
   * @param importFromId The id of the existing DataAwsEbsDefaultKmsKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ebs_default_kms_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEbsDefaultKmsKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ebs_default_kms_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ebs_default_kms_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -246,8 +246,8 @@ export class DataAwsEbsDefaultKmsKey extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
       timeouts: dataAwsEbsDefaultKmsKeyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -255,13 +255,13 @@ export class DataAwsEbsDefaultKmsKey extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

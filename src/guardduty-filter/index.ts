@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GuarddutyFilterConfig extends cdktf.TerraformMetaArguments {
+export interface GuarddutyFilterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_filter#action GuarddutyFilter#action}
   */
@@ -99,81 +99,81 @@ export interface GuarddutyFilterFindingCriteriaCriterion {
   readonly notMatches?: string[];
 }
 
-export function guarddutyFilterFindingCriteriaCriterionToTerraform(struct?: GuarddutyFilterFindingCriteriaCriterion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function guarddutyFilterFindingCriteriaCriterionToTerraform(struct?: GuarddutyFilterFindingCriteriaCriterion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    equals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.equalTo),
-    field: cdktf.stringToTerraform(struct!.field),
-    greater_than: cdktf.stringToTerraform(struct!.greaterThan),
-    greater_than_or_equal: cdktf.stringToTerraform(struct!.greaterThanOrEqual),
-    less_than: cdktf.stringToTerraform(struct!.lessThan),
-    less_than_or_equal: cdktf.stringToTerraform(struct!.lessThanOrEqual),
-    matches: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matches),
-    not_equals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notEquals),
-    not_matches: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notMatches),
+    equals: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.equalTo),
+    field: cdktn.stringToTerraform(struct!.field),
+    greater_than: cdktn.stringToTerraform(struct!.greaterThan),
+    greater_than_or_equal: cdktn.stringToTerraform(struct!.greaterThanOrEqual),
+    less_than: cdktn.stringToTerraform(struct!.lessThan),
+    less_than_or_equal: cdktn.stringToTerraform(struct!.lessThanOrEqual),
+    matches: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matches),
+    not_equals: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.notEquals),
+    not_matches: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.notMatches),
   }
 }
 
 
-export function guarddutyFilterFindingCriteriaCriterionToHclTerraform(struct?: GuarddutyFilterFindingCriteriaCriterion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function guarddutyFilterFindingCriteriaCriterionToHclTerraform(struct?: GuarddutyFilterFindingCriteriaCriterion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     equals: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.equalTo),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.equalTo),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     field: {
-      value: cdktf.stringToHclTerraform(struct!.field),
+      value: cdktn.stringToHclTerraform(struct!.field),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     greater_than: {
-      value: cdktf.stringToHclTerraform(struct!.greaterThan),
+      value: cdktn.stringToHclTerraform(struct!.greaterThan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     greater_than_or_equal: {
-      value: cdktf.stringToHclTerraform(struct!.greaterThanOrEqual),
+      value: cdktn.stringToHclTerraform(struct!.greaterThanOrEqual),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     less_than: {
-      value: cdktf.stringToHclTerraform(struct!.lessThan),
+      value: cdktn.stringToHclTerraform(struct!.lessThan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     less_than_or_equal: {
-      value: cdktf.stringToHclTerraform(struct!.lessThanOrEqual),
+      value: cdktn.stringToHclTerraform(struct!.lessThanOrEqual),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     matches: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matches),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matches),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     not_equals: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notEquals),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.notEquals),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     not_matches: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notMatches),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.notMatches),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -184,9 +184,9 @@ export function guarddutyFilterFindingCriteriaCriterionToHclTerraform(struct?: G
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GuarddutyFilterFindingCriteriaCriterionOutputReference extends cdktf.ComplexObject {
+export class GuarddutyFilterFindingCriteriaCriterionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -194,11 +194,11 @@ export class GuarddutyFilterFindingCriteriaCriterionOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GuarddutyFilterFindingCriteriaCriterion | cdktf.IResolvable | undefined {
+  public get internalValue(): GuarddutyFilterFindingCriteriaCriterion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -243,7 +243,7 @@ export class GuarddutyFilterFindingCriteriaCriterionOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GuarddutyFilterFindingCriteriaCriterion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GuarddutyFilterFindingCriteriaCriterion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -257,7 +257,7 @@ export class GuarddutyFilterFindingCriteriaCriterionOutputReference extends cdkt
       this._notEquals = undefined;
       this._notMatches = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -418,15 +418,15 @@ export class GuarddutyFilterFindingCriteriaCriterionOutputReference extends cdkt
   }
 }
 
-export class GuarddutyFilterFindingCriteriaCriterionList extends cdktf.ComplexList {
-  public internalValue? : GuarddutyFilterFindingCriteriaCriterion[] | cdktf.IResolvable
+export class GuarddutyFilterFindingCriteriaCriterionList extends cdktn.ComplexList {
+  public internalValue? : GuarddutyFilterFindingCriteriaCriterion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -443,28 +443,28 @@ export interface GuarddutyFilterFindingCriteria {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_filter#criterion GuarddutyFilter#criterion}
   */
-  readonly criterion: GuarddutyFilterFindingCriteriaCriterion[] | cdktf.IResolvable;
+  readonly criterion: GuarddutyFilterFindingCriteriaCriterion[] | cdktn.IResolvable;
 }
 
 export function guarddutyFilterFindingCriteriaToTerraform(struct?: GuarddutyFilterFindingCriteriaOutputReference | GuarddutyFilterFindingCriteria): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    criterion: cdktf.listMapper(guarddutyFilterFindingCriteriaCriterionToTerraform, true)(struct!.criterion),
+    criterion: cdktn.listMapper(guarddutyFilterFindingCriteriaCriterionToTerraform, true)(struct!.criterion),
   }
 }
 
 
 export function guarddutyFilterFindingCriteriaToHclTerraform(struct?: GuarddutyFilterFindingCriteriaOutputReference | GuarddutyFilterFindingCriteria): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     criterion: {
-      value: cdktf.listMapperHcl(guarddutyFilterFindingCriteriaCriterionToHclTerraform, true)(struct!.criterion),
+      value: cdktn.listMapperHcl(guarddutyFilterFindingCriteriaCriterionToHclTerraform, true)(struct!.criterion),
       isBlock: true,
       type: "set",
       storageClassType: "GuarddutyFilterFindingCriteriaCriterionList",
@@ -475,14 +475,14 @@ export function guarddutyFilterFindingCriteriaToHclTerraform(struct?: GuarddutyF
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GuarddutyFilterFindingCriteriaOutputReference extends cdktf.ComplexObject {
+export class GuarddutyFilterFindingCriteriaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -512,7 +512,7 @@ export class GuarddutyFilterFindingCriteriaOutputReference extends cdktf.Complex
   public get criterion() {
     return this._criterion;
   }
-  public putCriterion(value: GuarddutyFilterFindingCriteriaCriterion[] | cdktf.IResolvable) {
+  public putCriterion(value: GuarddutyFilterFindingCriteriaCriterion[] | cdktn.IResolvable) {
     this._criterion.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -524,7 +524,7 @@ export class GuarddutyFilterFindingCriteriaOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_filter aws_guardduty_filter}
 */
-export class GuarddutyFilter extends cdktf.TerraformResource {
+export class GuarddutyFilter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -535,14 +535,14 @@ export class GuarddutyFilter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GuarddutyFilter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GuarddutyFilter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GuarddutyFilter to import
   * @param importFromId The id of the existing GuarddutyFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GuarddutyFilter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_guardduty_filter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_guardduty_filter", importId: importFromId, provider });
       }
 
   // ===========
@@ -744,15 +744,15 @@ export class GuarddutyFilter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: cdktf.stringToTerraform(this._action),
-      description: cdktf.stringToTerraform(this._description),
-      detector_id: cdktf.stringToTerraform(this._detectorId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      rank: cdktf.numberToTerraform(this._rank),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      action: cdktn.stringToTerraform(this._action),
+      description: cdktn.stringToTerraform(this._description),
+      detector_id: cdktn.stringToTerraform(this._detectorId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      rank: cdktn.numberToTerraform(this._rank),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       finding_criteria: guarddutyFilterFindingCriteriaToTerraform(this._findingCriteria.internalValue),
     };
   }
@@ -760,55 +760,55 @@ export class GuarddutyFilter extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action: {
-        value: cdktf.stringToHclTerraform(this._action),
+        value: cdktn.stringToHclTerraform(this._action),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       detector_id: {
-        value: cdktf.stringToHclTerraform(this._detectorId),
+        value: cdktn.stringToHclTerraform(this._detectorId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rank: {
-        value: cdktf.numberToHclTerraform(this._rank),
+        value: cdktn.numberToHclTerraform(this._rank),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LightsailDiskAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface LightsailDiskAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_disk_attachment#disk_name LightsailDiskAttachment#disk_name}
   */
@@ -42,7 +42,7 @@ export interface LightsailDiskAttachmentConfig extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_disk_attachment aws_lightsail_disk_attachment}
 */
-export class LightsailDiskAttachment extends cdktf.TerraformResource {
+export class LightsailDiskAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class LightsailDiskAttachment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LightsailDiskAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LightsailDiskAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LightsailDiskAttachment to import
   * @param importFromId The id of the existing LightsailDiskAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_disk_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LightsailDiskAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lightsail_disk_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lightsail_disk_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -178,42 +178,42 @@ export class LightsailDiskAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disk_name: cdktf.stringToTerraform(this._diskName),
-      disk_path: cdktf.stringToTerraform(this._diskPath),
-      id: cdktf.stringToTerraform(this._id),
-      instance_name: cdktf.stringToTerraform(this._instanceName),
-      region: cdktf.stringToTerraform(this._region),
+      disk_name: cdktn.stringToTerraform(this._diskName),
+      disk_path: cdktn.stringToTerraform(this._diskPath),
+      id: cdktn.stringToTerraform(this._id),
+      instance_name: cdktn.stringToTerraform(this._instanceName),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       disk_name: {
-        value: cdktf.stringToHclTerraform(this._diskName),
+        value: cdktn.stringToHclTerraform(this._diskName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disk_path: {
-        value: cdktf.stringToHclTerraform(this._diskPath),
+        value: cdktn.stringToHclTerraform(this._diskPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_name: {
-        value: cdktf.stringToHclTerraform(this._instanceName),
+        value: cdktn.stringToHclTerraform(this._instanceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

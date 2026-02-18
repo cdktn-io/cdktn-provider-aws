@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsIamInstanceProfilesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsIamInstanceProfilesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/iam_instance_profiles#id DataAwsIamInstanceProfiles#id}
   *
@@ -28,7 +28,7 @@ export interface DataAwsIamInstanceProfilesConfig extends cdktf.TerraformMetaArg
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/iam_instance_profiles aws_iam_instance_profiles}
 */
-export class DataAwsIamInstanceProfiles extends cdktf.TerraformDataSource {
+export class DataAwsIamInstanceProfiles extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -39,14 +39,14 @@ export class DataAwsIamInstanceProfiles extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsIamInstanceProfiles resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsIamInstanceProfiles resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsIamInstanceProfiles to import
   * @param importFromId The id of the existing DataAwsIamInstanceProfiles that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/iam_instance_profiles#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsIamInstanceProfiles to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_instance_profiles", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_instance_profiles", importId: importFromId, provider });
       }
 
   // ===========
@@ -86,7 +86,7 @@ export class DataAwsIamInstanceProfiles extends cdktf.TerraformDataSource {
 
   // arns - computed: true, optional: false, required: false
   public get arns() {
-    return cdktf.Fn.tolist(this.getListAttribute('arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('arns'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -107,12 +107,12 @@ export class DataAwsIamInstanceProfiles extends cdktf.TerraformDataSource {
 
   // names - computed: true, optional: false, required: false
   public get names() {
-    return cdktf.Fn.tolist(this.getListAttribute('names'));
+    return cdktn.Fn.tolist(this.getListAttribute('names'));
   }
 
   // paths - computed: true, optional: false, required: false
   public get paths() {
-    return cdktf.Fn.tolist(this.getListAttribute('paths'));
+    return cdktn.Fn.tolist(this.getListAttribute('paths'));
   }
 
   // role_name - computed: false, optional: false, required: true
@@ -134,21 +134,21 @@ export class DataAwsIamInstanceProfiles extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      role_name: cdktf.stringToTerraform(this._roleName),
+      id: cdktn.stringToTerraform(this._id),
+      role_name: cdktn.stringToTerraform(this._roleName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_name: {
-        value: cdktf.stringToHclTerraform(this._roleName),
+        value: cdktn.stringToHclTerraform(this._roleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

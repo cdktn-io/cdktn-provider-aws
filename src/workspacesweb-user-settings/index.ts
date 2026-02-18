@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkspaceswebUserSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface WorkspaceswebUserSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_user_settings#additional_encryption_context WorkspaceswebUserSettings#additional_encryption_context}
   */
@@ -67,13 +67,13 @@ export interface WorkspaceswebUserSettingsConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_user_settings#cookie_synchronization_configuration WorkspaceswebUserSettings#cookie_synchronization_configuration}
   */
-  readonly cookieSynchronizationConfiguration?: WorkspaceswebUserSettingsCookieSynchronizationConfiguration[] | cdktf.IResolvable;
+  readonly cookieSynchronizationConfiguration?: WorkspaceswebUserSettingsCookieSynchronizationConfiguration[] | cdktn.IResolvable;
   /**
   * toolbar_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_user_settings#toolbar_configuration WorkspaceswebUserSettings#toolbar_configuration}
   */
-  readonly toolbarConfiguration?: WorkspaceswebUserSettingsToolbarConfiguration[] | cdktf.IResolvable;
+  readonly toolbarConfiguration?: WorkspaceswebUserSettingsToolbarConfiguration[] | cdktn.IResolvable;
 }
 export interface WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct {
   /**
@@ -90,39 +90,39 @@ export interface WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllo
   readonly path?: string;
 }
 
-export function workspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructToTerraform(struct?: WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructToTerraform(struct?: WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain: cdktf.stringToTerraform(struct!.domain),
-    name: cdktf.stringToTerraform(struct!.name),
-    path: cdktf.stringToTerraform(struct!.path),
+    domain: cdktn.stringToTerraform(struct!.domain),
+    name: cdktn.stringToTerraform(struct!.name),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
-export function workspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructToHclTerraform(struct?: WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructToHclTerraform(struct?: WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain: {
-      value: cdktf.stringToHclTerraform(struct!.domain),
+      value: cdktn.stringToHclTerraform(struct!.domain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -133,9 +133,9 @@ export function workspaceswebUserSettingsCookieSynchronizationConfigurationAllow
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructOutputReference extends cdktf.ComplexObject {
+export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -143,11 +143,11 @@ export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlis
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,7 +168,7 @@ export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlis
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -176,7 +176,7 @@ export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlis
       this._name = undefined;
       this._path = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -235,15 +235,15 @@ export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlis
   }
 }
 
-export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructList extends cdktf.ComplexList {
-  public internalValue? : WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct[] | cdktf.IResolvable
+export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructList extends cdktn.ComplexList {
+  public internalValue? : WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -269,39 +269,39 @@ export interface WorkspaceswebUserSettingsCookieSynchronizationConfigurationBloc
   readonly path?: string;
 }
 
-export function workspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructToTerraform(struct?: WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructToTerraform(struct?: WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain: cdktf.stringToTerraform(struct!.domain),
-    name: cdktf.stringToTerraform(struct!.name),
-    path: cdktf.stringToTerraform(struct!.path),
+    domain: cdktn.stringToTerraform(struct!.domain),
+    name: cdktn.stringToTerraform(struct!.name),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
-export function workspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructToHclTerraform(struct?: WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructToHclTerraform(struct?: WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain: {
-      value: cdktf.stringToHclTerraform(struct!.domain),
+      value: cdktn.stringToHclTerraform(struct!.domain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -312,9 +312,9 @@ export function workspaceswebUserSettingsCookieSynchronizationConfigurationBlock
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructOutputReference extends cdktf.ComplexObject {
+export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -322,11 +322,11 @@ export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklis
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -347,7 +347,7 @@ export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklis
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -355,7 +355,7 @@ export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklis
       this._name = undefined;
       this._path = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -414,15 +414,15 @@ export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklis
   }
 }
 
-export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructList extends cdktf.ComplexList {
-  public internalValue? : WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct[] | cdktf.IResolvable
+export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructList extends cdktn.ComplexList {
+  public internalValue? : WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -439,41 +439,41 @@ export interface WorkspaceswebUserSettingsCookieSynchronizationConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_user_settings#allowlist WorkspaceswebUserSettings#allowlist}
   */
-  readonly allowlist?: WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct[] | cdktf.IResolvable;
+  readonly allowlist?: WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct[] | cdktn.IResolvable;
   /**
   * blocklist block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_user_settings#blocklist WorkspaceswebUserSettings#blocklist}
   */
-  readonly blocklist?: WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct[] | cdktf.IResolvable;
+  readonly blocklist?: WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct[] | cdktn.IResolvable;
 }
 
-export function workspaceswebUserSettingsCookieSynchronizationConfigurationToTerraform(struct?: WorkspaceswebUserSettingsCookieSynchronizationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebUserSettingsCookieSynchronizationConfigurationToTerraform(struct?: WorkspaceswebUserSettingsCookieSynchronizationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowlist: cdktf.listMapper(workspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructToTerraform, true)(struct!.allowlist),
-    blocklist: cdktf.listMapper(workspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructToTerraform, true)(struct!.blocklist),
+    allowlist: cdktn.listMapper(workspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructToTerraform, true)(struct!.allowlist),
+    blocklist: cdktn.listMapper(workspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructToTerraform, true)(struct!.blocklist),
   }
 }
 
 
-export function workspaceswebUserSettingsCookieSynchronizationConfigurationToHclTerraform(struct?: WorkspaceswebUserSettingsCookieSynchronizationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebUserSettingsCookieSynchronizationConfigurationToHclTerraform(struct?: WorkspaceswebUserSettingsCookieSynchronizationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowlist: {
-      value: cdktf.listMapperHcl(workspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructToHclTerraform, true)(struct!.allowlist),
+      value: cdktn.listMapperHcl(workspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructToHclTerraform, true)(struct!.allowlist),
       isBlock: true,
       type: "list",
       storageClassType: "WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructList",
     },
     blocklist: {
-      value: cdktf.listMapperHcl(workspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructToHclTerraform, true)(struct!.blocklist),
+      value: cdktn.listMapperHcl(workspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructToHclTerraform, true)(struct!.blocklist),
       isBlock: true,
       type: "list",
       storageClassType: "WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructList",
@@ -484,9 +484,9 @@ export function workspaceswebUserSettingsCookieSynchronizationConfigurationToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationOutputReference extends cdktf.ComplexObject {
+export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -494,11 +494,11 @@ export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkspaceswebUserSettingsCookieSynchronizationConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceswebUserSettingsCookieSynchronizationConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -515,14 +515,14 @@ export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceswebUserSettingsCookieSynchronizationConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceswebUserSettingsCookieSynchronizationConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._allowlist.internalValue = undefined;
       this._blocklist.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -539,7 +539,7 @@ export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationOutputRe
   public get allowlist() {
     return this._allowlist;
   }
-  public putAllowlist(value: WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct[] | cdktf.IResolvable) {
+  public putAllowlist(value: WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct[] | cdktn.IResolvable) {
     this._allowlist.internalValue = value;
   }
   public resetAllowlist() {
@@ -555,7 +555,7 @@ export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationOutputRe
   public get blocklist() {
     return this._blocklist;
   }
-  public putBlocklist(value: WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct[] | cdktf.IResolvable) {
+  public putBlocklist(value: WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct[] | cdktn.IResolvable) {
     this._blocklist.internalValue = value;
   }
   public resetBlocklist() {
@@ -567,15 +567,15 @@ export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationOutputRe
   }
 }
 
-export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationList extends cdktf.ComplexList {
-  public internalValue? : WorkspaceswebUserSettingsCookieSynchronizationConfiguration[] | cdktf.IResolvable
+export class WorkspaceswebUserSettingsCookieSynchronizationConfigurationList extends cdktn.ComplexList {
+  public internalValue? : WorkspaceswebUserSettingsCookieSynchronizationConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -605,46 +605,46 @@ export interface WorkspaceswebUserSettingsToolbarConfiguration {
   readonly visualMode?: string;
 }
 
-export function workspaceswebUserSettingsToolbarConfigurationToTerraform(struct?: WorkspaceswebUserSettingsToolbarConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebUserSettingsToolbarConfigurationToTerraform(struct?: WorkspaceswebUserSettingsToolbarConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hidden_toolbar_items: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hiddenToolbarItems),
-    max_display_resolution: cdktf.stringToTerraform(struct!.maxDisplayResolution),
-    toolbar_type: cdktf.stringToTerraform(struct!.toolbarType),
-    visual_mode: cdktf.stringToTerraform(struct!.visualMode),
+    hidden_toolbar_items: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.hiddenToolbarItems),
+    max_display_resolution: cdktn.stringToTerraform(struct!.maxDisplayResolution),
+    toolbar_type: cdktn.stringToTerraform(struct!.toolbarType),
+    visual_mode: cdktn.stringToTerraform(struct!.visualMode),
   }
 }
 
 
-export function workspaceswebUserSettingsToolbarConfigurationToHclTerraform(struct?: WorkspaceswebUserSettingsToolbarConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebUserSettingsToolbarConfigurationToHclTerraform(struct?: WorkspaceswebUserSettingsToolbarConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hidden_toolbar_items: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.hiddenToolbarItems),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.hiddenToolbarItems),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     max_display_resolution: {
-      value: cdktf.stringToHclTerraform(struct!.maxDisplayResolution),
+      value: cdktn.stringToHclTerraform(struct!.maxDisplayResolution),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     toolbar_type: {
-      value: cdktf.stringToHclTerraform(struct!.toolbarType),
+      value: cdktn.stringToHclTerraform(struct!.toolbarType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     visual_mode: {
-      value: cdktf.stringToHclTerraform(struct!.visualMode),
+      value: cdktn.stringToHclTerraform(struct!.visualMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -655,9 +655,9 @@ export function workspaceswebUserSettingsToolbarConfigurationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceswebUserSettingsToolbarConfigurationOutputReference extends cdktf.ComplexObject {
+export class WorkspaceswebUserSettingsToolbarConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -665,11 +665,11 @@ export class WorkspaceswebUserSettingsToolbarConfigurationOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkspaceswebUserSettingsToolbarConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceswebUserSettingsToolbarConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -694,7 +694,7 @@ export class WorkspaceswebUserSettingsToolbarConfigurationOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceswebUserSettingsToolbarConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceswebUserSettingsToolbarConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -703,7 +703,7 @@ export class WorkspaceswebUserSettingsToolbarConfigurationOutputReference extend
       this._toolbarType = undefined;
       this._visualMode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -782,15 +782,15 @@ export class WorkspaceswebUserSettingsToolbarConfigurationOutputReference extend
   }
 }
 
-export class WorkspaceswebUserSettingsToolbarConfigurationList extends cdktf.ComplexList {
-  public internalValue? : WorkspaceswebUserSettingsToolbarConfiguration[] | cdktf.IResolvable
+export class WorkspaceswebUserSettingsToolbarConfigurationList extends cdktn.ComplexList {
+  public internalValue? : WorkspaceswebUserSettingsToolbarConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -805,7 +805,7 @@ export class WorkspaceswebUserSettingsToolbarConfigurationList extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_user_settings aws_workspacesweb_user_settings}
 */
-export class WorkspaceswebUserSettings extends cdktf.TerraformResource {
+export class WorkspaceswebUserSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -816,14 +816,14 @@ export class WorkspaceswebUserSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkspaceswebUserSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkspaceswebUserSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceswebUserSettings to import
   * @param importFromId The id of the existing WorkspaceswebUserSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_user_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceswebUserSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_user_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_user_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -1043,7 +1043,7 @@ export class WorkspaceswebUserSettings extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1071,7 +1071,7 @@ export class WorkspaceswebUserSettings extends cdktf.TerraformResource {
   public get cookieSynchronizationConfiguration() {
     return this._cookieSynchronizationConfiguration;
   }
-  public putCookieSynchronizationConfiguration(value: WorkspaceswebUserSettingsCookieSynchronizationConfiguration[] | cdktf.IResolvable) {
+  public putCookieSynchronizationConfiguration(value: WorkspaceswebUserSettingsCookieSynchronizationConfiguration[] | cdktn.IResolvable) {
     this._cookieSynchronizationConfiguration.internalValue = value;
   }
   public resetCookieSynchronizationConfiguration() {
@@ -1087,7 +1087,7 @@ export class WorkspaceswebUserSettings extends cdktf.TerraformResource {
   public get toolbarConfiguration() {
     return this._toolbarConfiguration;
   }
-  public putToolbarConfiguration(value: WorkspaceswebUserSettingsToolbarConfiguration[] | cdktf.IResolvable) {
+  public putToolbarConfiguration(value: WorkspaceswebUserSettingsToolbarConfiguration[] | cdktn.IResolvable) {
     this._toolbarConfiguration.internalValue = value;
   }
   public resetToolbarConfiguration() {
@@ -1104,105 +1104,105 @@ export class WorkspaceswebUserSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_encryption_context: cdktf.hashMapper(cdktf.stringToTerraform)(this._additionalEncryptionContext),
-      copy_allowed: cdktf.stringToTerraform(this._copyAllowed),
-      customer_managed_key: cdktf.stringToTerraform(this._customerManagedKey),
-      deep_link_allowed: cdktf.stringToTerraform(this._deepLinkAllowed),
-      disconnect_timeout_in_minutes: cdktf.numberToTerraform(this._disconnectTimeoutInMinutes),
-      download_allowed: cdktf.stringToTerraform(this._downloadAllowed),
-      idle_disconnect_timeout_in_minutes: cdktf.numberToTerraform(this._idleDisconnectTimeoutInMinutes),
-      paste_allowed: cdktf.stringToTerraform(this._pasteAllowed),
-      print_allowed: cdktf.stringToTerraform(this._printAllowed),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      upload_allowed: cdktf.stringToTerraform(this._uploadAllowed),
-      cookie_synchronization_configuration: cdktf.listMapper(workspaceswebUserSettingsCookieSynchronizationConfigurationToTerraform, true)(this._cookieSynchronizationConfiguration.internalValue),
-      toolbar_configuration: cdktf.listMapper(workspaceswebUserSettingsToolbarConfigurationToTerraform, true)(this._toolbarConfiguration.internalValue),
+      additional_encryption_context: cdktn.hashMapper(cdktn.stringToTerraform)(this._additionalEncryptionContext),
+      copy_allowed: cdktn.stringToTerraform(this._copyAllowed),
+      customer_managed_key: cdktn.stringToTerraform(this._customerManagedKey),
+      deep_link_allowed: cdktn.stringToTerraform(this._deepLinkAllowed),
+      disconnect_timeout_in_minutes: cdktn.numberToTerraform(this._disconnectTimeoutInMinutes),
+      download_allowed: cdktn.stringToTerraform(this._downloadAllowed),
+      idle_disconnect_timeout_in_minutes: cdktn.numberToTerraform(this._idleDisconnectTimeoutInMinutes),
+      paste_allowed: cdktn.stringToTerraform(this._pasteAllowed),
+      print_allowed: cdktn.stringToTerraform(this._printAllowed),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      upload_allowed: cdktn.stringToTerraform(this._uploadAllowed),
+      cookie_synchronization_configuration: cdktn.listMapper(workspaceswebUserSettingsCookieSynchronizationConfigurationToTerraform, true)(this._cookieSynchronizationConfiguration.internalValue),
+      toolbar_configuration: cdktn.listMapper(workspaceswebUserSettingsToolbarConfigurationToTerraform, true)(this._toolbarConfiguration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_encryption_context: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._additionalEncryptionContext),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._additionalEncryptionContext),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       copy_allowed: {
-        value: cdktf.stringToHclTerraform(this._copyAllowed),
+        value: cdktn.stringToHclTerraform(this._copyAllowed),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_managed_key: {
-        value: cdktf.stringToHclTerraform(this._customerManagedKey),
+        value: cdktn.stringToHclTerraform(this._customerManagedKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deep_link_allowed: {
-        value: cdktf.stringToHclTerraform(this._deepLinkAllowed),
+        value: cdktn.stringToHclTerraform(this._deepLinkAllowed),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disconnect_timeout_in_minutes: {
-        value: cdktf.numberToHclTerraform(this._disconnectTimeoutInMinutes),
+        value: cdktn.numberToHclTerraform(this._disconnectTimeoutInMinutes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       download_allowed: {
-        value: cdktf.stringToHclTerraform(this._downloadAllowed),
+        value: cdktn.stringToHclTerraform(this._downloadAllowed),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idle_disconnect_timeout_in_minutes: {
-        value: cdktf.numberToHclTerraform(this._idleDisconnectTimeoutInMinutes),
+        value: cdktn.numberToHclTerraform(this._idleDisconnectTimeoutInMinutes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       paste_allowed: {
-        value: cdktf.stringToHclTerraform(this._pasteAllowed),
+        value: cdktn.stringToHclTerraform(this._pasteAllowed),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       print_allowed: {
-        value: cdktf.stringToHclTerraform(this._printAllowed),
+        value: cdktn.stringToHclTerraform(this._printAllowed),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       upload_allowed: {
-        value: cdktf.stringToHclTerraform(this._uploadAllowed),
+        value: cdktn.stringToHclTerraform(this._uploadAllowed),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cookie_synchronization_configuration: {
-        value: cdktf.listMapperHcl(workspaceswebUserSettingsCookieSynchronizationConfigurationToHclTerraform, true)(this._cookieSynchronizationConfiguration.internalValue),
+        value: cdktn.listMapperHcl(workspaceswebUserSettingsCookieSynchronizationConfigurationToHclTerraform, true)(this._cookieSynchronizationConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "WorkspaceswebUserSettingsCookieSynchronizationConfigurationList",
       },
       toolbar_configuration: {
-        value: cdktf.listMapperHcl(workspaceswebUserSettingsToolbarConfigurationToHclTerraform, true)(this._toolbarConfiguration.internalValue),
+        value: cdktn.listMapperHcl(workspaceswebUserSettingsToolbarConfigurationToHclTerraform, true)(this._toolbarConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "WorkspaceswebUserSettingsToolbarConfigurationList",

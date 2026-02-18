@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsS3ControlMultiRegionAccessPointsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsS3ControlMultiRegionAccessPointsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/s3control_multi_region_access_points#account_id DataAwsS3ControlMultiRegionAccessPoints#account_id}
   */
@@ -27,8 +27,8 @@ export interface DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccess
 }
 
 export function dataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlockToTerraform(struct?: DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlock): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -37,8 +37,8 @@ export function dataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessB
 
 
 export function dataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlockToHclTerraform(struct?: DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlock): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -46,7 +46,7 @@ export function dataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessB
   return attrs;
 }
 
-export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlockOutputReference extends cdktf.ComplexObject {
+export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlockOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -55,7 +55,7 @@ export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBloc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -95,14 +95,14 @@ export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBloc
   }
 }
 
-export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlockList extends cdktf.ComplexList {
+export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlockList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -117,8 +117,8 @@ export interface DataAwsS3ControlMultiRegionAccessPointsAccessPointsRegions {
 }
 
 export function dataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsToTerraform(struct?: DataAwsS3ControlMultiRegionAccessPointsAccessPointsRegions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -127,8 +127,8 @@ export function dataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsToTerr
 
 
 export function dataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsToHclTerraform(struct?: DataAwsS3ControlMultiRegionAccessPointsAccessPointsRegions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -136,7 +136,7 @@ export function dataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsToHclT
   return attrs;
 }
 
-export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -145,7 +145,7 @@ export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -180,14 +180,14 @@ export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsOutputRef
   }
 }
 
-export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsList extends cdktf.ComplexList {
+export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -202,8 +202,8 @@ export interface DataAwsS3ControlMultiRegionAccessPointsAccessPoints {
 }
 
 export function dataAwsS3ControlMultiRegionAccessPointsAccessPointsToTerraform(struct?: DataAwsS3ControlMultiRegionAccessPointsAccessPoints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -212,8 +212,8 @@ export function dataAwsS3ControlMultiRegionAccessPointsAccessPointsToTerraform(s
 
 
 export function dataAwsS3ControlMultiRegionAccessPointsAccessPointsToHclTerraform(struct?: DataAwsS3ControlMultiRegionAccessPointsAccessPoints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -221,7 +221,7 @@ export function dataAwsS3ControlMultiRegionAccessPointsAccessPointsToHclTerrafor
   return attrs;
 }
 
-export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsOutputReference extends cdktf.ComplexObject {
+export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -230,7 +230,7 @@ export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -282,14 +282,14 @@ export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsOutputReference 
   }
 }
 
-export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsList extends cdktf.ComplexList {
+export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -304,7 +304,7 @@ export class DataAwsS3ControlMultiRegionAccessPointsAccessPointsList extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/s3control_multi_region_access_points aws_s3control_multi_region_access_points}
 */
-export class DataAwsS3ControlMultiRegionAccessPoints extends cdktf.TerraformDataSource {
+export class DataAwsS3ControlMultiRegionAccessPoints extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -315,14 +315,14 @@ export class DataAwsS3ControlMultiRegionAccessPoints extends cdktf.TerraformData
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsS3ControlMultiRegionAccessPoints resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsS3ControlMultiRegionAccessPoints resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsS3ControlMultiRegionAccessPoints to import
   * @param importFromId The id of the existing DataAwsS3ControlMultiRegionAccessPoints that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/s3control_multi_region_access_points#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsS3ControlMultiRegionAccessPoints to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3control_multi_region_access_points", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3control_multi_region_access_points", importId: importFromId, provider });
       }
 
   // ===========
@@ -404,21 +404,21 @@ export class DataAwsS3ControlMultiRegionAccessPoints extends cdktf.TerraformData
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      region: cdktf.stringToTerraform(this._region),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

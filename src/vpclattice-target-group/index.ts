@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpclatticeTargetGroupConfig extends cdktf.TerraformMetaArguments {
+export interface VpclatticeTargetGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpclattice_target_group#id VpclatticeTargetGroup#id}
   *
@@ -62,24 +62,24 @@ export interface VpclatticeTargetGroupConfigHealthCheckMatcher {
 }
 
 export function vpclatticeTargetGroupConfigHealthCheckMatcherToTerraform(struct?: VpclatticeTargetGroupConfigHealthCheckMatcherOutputReference | VpclatticeTargetGroupConfigHealthCheckMatcher): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.stringToTerraform(struct!.value),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function vpclatticeTargetGroupConfigHealthCheckMatcherToHclTerraform(struct?: VpclatticeTargetGroupConfigHealthCheckMatcherOutputReference | VpclatticeTargetGroupConfigHealthCheckMatcher): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -90,14 +90,14 @@ export function vpclatticeTargetGroupConfigHealthCheckMatcherToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpclatticeTargetGroupConfigHealthCheckMatcherOutputReference extends cdktf.ComplexObject {
+export class VpclatticeTargetGroupConfigHealthCheckMatcherOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -142,7 +142,7 @@ export interface VpclatticeTargetGroupConfigHealthCheck {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpclattice_target_group#enabled VpclatticeTargetGroup#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpclattice_target_group#health_check_interval_seconds VpclatticeTargetGroup#health_check_interval_seconds}
   */
@@ -184,81 +184,81 @@ export interface VpclatticeTargetGroupConfigHealthCheck {
 }
 
 export function vpclatticeTargetGroupConfigHealthCheckToTerraform(struct?: VpclatticeTargetGroupConfigHealthCheckOutputReference | VpclatticeTargetGroupConfigHealthCheck): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    health_check_interval_seconds: cdktf.numberToTerraform(struct!.healthCheckIntervalSeconds),
-    health_check_timeout_seconds: cdktf.numberToTerraform(struct!.healthCheckTimeoutSeconds),
-    healthy_threshold_count: cdktf.numberToTerraform(struct!.healthyThresholdCount),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.numberToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    protocol_version: cdktf.stringToTerraform(struct!.protocolVersion),
-    unhealthy_threshold_count: cdktf.numberToTerraform(struct!.unhealthyThresholdCount),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    health_check_interval_seconds: cdktn.numberToTerraform(struct!.healthCheckIntervalSeconds),
+    health_check_timeout_seconds: cdktn.numberToTerraform(struct!.healthCheckTimeoutSeconds),
+    healthy_threshold_count: cdktn.numberToTerraform(struct!.healthyThresholdCount),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.numberToTerraform(struct!.port),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    protocol_version: cdktn.stringToTerraform(struct!.protocolVersion),
+    unhealthy_threshold_count: cdktn.numberToTerraform(struct!.unhealthyThresholdCount),
     matcher: vpclatticeTargetGroupConfigHealthCheckMatcherToTerraform(struct!.matcher),
   }
 }
 
 
 export function vpclatticeTargetGroupConfigHealthCheckToHclTerraform(struct?: VpclatticeTargetGroupConfigHealthCheckOutputReference | VpclatticeTargetGroupConfigHealthCheck): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     health_check_interval_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.healthCheckIntervalSeconds),
+      value: cdktn.numberToHclTerraform(struct!.healthCheckIntervalSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     health_check_timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.healthCheckTimeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.healthCheckTimeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     healthy_threshold_count: {
-      value: cdktf.numberToHclTerraform(struct!.healthyThresholdCount),
+      value: cdktn.numberToHclTerraform(struct!.healthyThresholdCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol_version: {
-      value: cdktf.stringToHclTerraform(struct!.protocolVersion),
+      value: cdktn.stringToHclTerraform(struct!.protocolVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unhealthy_threshold_count: {
-      value: cdktf.numberToHclTerraform(struct!.unhealthyThresholdCount),
+      value: cdktn.numberToHclTerraform(struct!.unhealthyThresholdCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -275,14 +275,14 @@ export function vpclatticeTargetGroupConfigHealthCheckToHclTerraform(struct?: Vp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpclatticeTargetGroupConfigHealthCheckOutputReference extends cdktf.ComplexObject {
+export class VpclatticeTargetGroupConfigHealthCheckOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -362,11 +362,11 @@ export class VpclatticeTargetGroupConfigHealthCheckOutputReference extends cdktf
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -555,60 +555,60 @@ export interface VpclatticeTargetGroupConfigA {
 }
 
 export function vpclatticeTargetGroupConfigAToTerraform(struct?: VpclatticeTargetGroupConfigAOutputReference | VpclatticeTargetGroupConfigA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_address_type: cdktf.stringToTerraform(struct!.ipAddressType),
-    lambda_event_structure_version: cdktf.stringToTerraform(struct!.lambdaEventStructureVersion),
-    port: cdktf.numberToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    protocol_version: cdktf.stringToTerraform(struct!.protocolVersion),
-    vpc_identifier: cdktf.stringToTerraform(struct!.vpcIdentifier),
+    ip_address_type: cdktn.stringToTerraform(struct!.ipAddressType),
+    lambda_event_structure_version: cdktn.stringToTerraform(struct!.lambdaEventStructureVersion),
+    port: cdktn.numberToTerraform(struct!.port),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    protocol_version: cdktn.stringToTerraform(struct!.protocolVersion),
+    vpc_identifier: cdktn.stringToTerraform(struct!.vpcIdentifier),
     health_check: vpclatticeTargetGroupConfigHealthCheckToTerraform(struct!.healthCheck),
   }
 }
 
 
 export function vpclatticeTargetGroupConfigAToHclTerraform(struct?: VpclatticeTargetGroupConfigAOutputReference | VpclatticeTargetGroupConfigA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_address_type: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddressType),
+      value: cdktn.stringToHclTerraform(struct!.ipAddressType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lambda_event_structure_version: {
-      value: cdktf.stringToHclTerraform(struct!.lambdaEventStructureVersion),
+      value: cdktn.stringToHclTerraform(struct!.lambdaEventStructureVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol_version: {
-      value: cdktf.stringToHclTerraform(struct!.protocolVersion),
+      value: cdktn.stringToHclTerraform(struct!.protocolVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vpc_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.vpcIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.vpcIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -625,14 +625,14 @@ export function vpclatticeTargetGroupConfigAToHclTerraform(struct?: VpclatticeTa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpclatticeTargetGroupConfigAOutputReference extends cdktf.ComplexObject {
+export class VpclatticeTargetGroupConfigAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -820,39 +820,39 @@ export interface VpclatticeTargetGroupTimeouts {
   readonly update?: string;
 }
 
-export function vpclatticeTargetGroupTimeoutsToTerraform(struct?: VpclatticeTargetGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpclatticeTargetGroupTimeoutsToTerraform(struct?: VpclatticeTargetGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function vpclatticeTargetGroupTimeoutsToHclTerraform(struct?: VpclatticeTargetGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpclatticeTargetGroupTimeoutsToHclTerraform(struct?: VpclatticeTargetGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -863,19 +863,19 @@ export function vpclatticeTargetGroupTimeoutsToHclTerraform(struct?: VpclatticeT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpclatticeTargetGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VpclatticeTargetGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VpclatticeTargetGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VpclatticeTargetGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -896,7 +896,7 @@ export class VpclatticeTargetGroupTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpclatticeTargetGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpclatticeTargetGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -904,7 +904,7 @@ export class VpclatticeTargetGroupTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -969,7 +969,7 @@ export class VpclatticeTargetGroupTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpclattice_target_group aws_vpclattice_target_group}
 */
-export class VpclatticeTargetGroup extends cdktf.TerraformResource {
+export class VpclatticeTargetGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -980,14 +980,14 @@ export class VpclatticeTargetGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpclatticeTargetGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpclatticeTargetGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpclatticeTargetGroup to import
   * @param importFromId The id of the existing VpclatticeTargetGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpclattice_target_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpclatticeTargetGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpclattice_target_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpclattice_target_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -1169,12 +1169,12 @@ export class VpclatticeTargetGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      type: cdktf.stringToTerraform(this._type),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      type: cdktn.stringToTerraform(this._type),
       config: vpclatticeTargetGroupConfigAToTerraform(this._config.internalValue),
       timeouts: vpclatticeTargetGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1183,37 +1183,37 @@ export class VpclatticeTargetGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

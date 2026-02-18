@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedshiftserverlessNamespaceConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftserverlessNamespaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftserverless_namespace#admin_password_secret_kms_key_id RedshiftserverlessNamespace#admin_password_secret_kms_key_id}
   */
@@ -62,7 +62,7 @@ export interface RedshiftserverlessNamespaceConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftserverless_namespace#manage_admin_password RedshiftserverlessNamespace#manage_admin_password}
   */
-  readonly manageAdminPassword?: boolean | cdktf.IResolvable;
+  readonly manageAdminPassword?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftserverless_namespace#namespace_name RedshiftserverlessNamespace#namespace_name}
   */
@@ -86,7 +86,7 @@ export interface RedshiftserverlessNamespaceConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace}
 */
-export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
+export class RedshiftserverlessNamespace extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -97,14 +97,14 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedshiftserverlessNamespace resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedshiftserverlessNamespace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftserverlessNamespace to import
   * @param importFromId The id of the existing RedshiftserverlessNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftserverless_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftserverlessNamespace to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshiftserverless_namespace", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshiftserverless_namespace", importId: importFromId, provider });
       }
 
   // ===========
@@ -281,7 +281,7 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
   // iam_roles - computed: true, optional: true, required: false
   private _iamRoles?: string[]; 
   public get iamRoles() {
-    return cdktf.Fn.tolist(this.getListAttribute('iam_roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('iam_roles'));
   }
   public set iamRoles(value: string[]) {
     this._iamRoles = value;
@@ -329,7 +329,7 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
   // log_exports - computed: false, optional: true, required: false
   private _logExports?: string[]; 
   public get logExports() {
-    return cdktf.Fn.tolist(this.getListAttribute('log_exports'));
+    return cdktn.Fn.tolist(this.getListAttribute('log_exports'));
   }
   public set logExports(value: string[]) {
     this._logExports = value;
@@ -343,11 +343,11 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
   }
 
   // manage_admin_password - computed: false, optional: true, required: false
-  private _manageAdminPassword?: boolean | cdktf.IResolvable; 
+  private _manageAdminPassword?: boolean | cdktn.IResolvable; 
   public get manageAdminPassword() {
     return this.getBooleanAttribute('manage_admin_password');
   }
-  public set manageAdminPassword(value: boolean | cdktf.IResolvable) {
+  public set manageAdminPassword(value: boolean | cdktn.IResolvable) {
     this._manageAdminPassword = value;
   }
   public resetManageAdminPassword() {
@@ -430,119 +430,119 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      admin_password_secret_kms_key_id: cdktf.stringToTerraform(this._adminPasswordSecretKmsKeyId),
-      admin_user_password: cdktf.stringToTerraform(this._adminUserPassword),
-      admin_user_password_wo: cdktf.stringToTerraform(this._adminUserPasswordWo),
-      admin_user_password_wo_version: cdktf.numberToTerraform(this._adminUserPasswordWoVersion),
-      admin_username: cdktf.stringToTerraform(this._adminUsername),
-      db_name: cdktf.stringToTerraform(this._dbName),
-      default_iam_role_arn: cdktf.stringToTerraform(this._defaultIamRoleArn),
-      iam_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._iamRoles),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      log_exports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._logExports),
-      manage_admin_password: cdktf.booleanToTerraform(this._manageAdminPassword),
-      namespace_name: cdktf.stringToTerraform(this._namespaceName),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      admin_password_secret_kms_key_id: cdktn.stringToTerraform(this._adminPasswordSecretKmsKeyId),
+      admin_user_password: cdktn.stringToTerraform(this._adminUserPassword),
+      admin_user_password_wo: cdktn.stringToTerraform(this._adminUserPasswordWo),
+      admin_user_password_wo_version: cdktn.numberToTerraform(this._adminUserPasswordWoVersion),
+      admin_username: cdktn.stringToTerraform(this._adminUsername),
+      db_name: cdktn.stringToTerraform(this._dbName),
+      default_iam_role_arn: cdktn.stringToTerraform(this._defaultIamRoleArn),
+      iam_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(this._iamRoles),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      log_exports: cdktn.listMapper(cdktn.stringToTerraform, false)(this._logExports),
+      manage_admin_password: cdktn.booleanToTerraform(this._manageAdminPassword),
+      namespace_name: cdktn.stringToTerraform(this._namespaceName),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       admin_password_secret_kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._adminPasswordSecretKmsKeyId),
+        value: cdktn.stringToHclTerraform(this._adminPasswordSecretKmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       admin_user_password: {
-        value: cdktf.stringToHclTerraform(this._adminUserPassword),
+        value: cdktn.stringToHclTerraform(this._adminUserPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       admin_user_password_wo: {
-        value: cdktf.stringToHclTerraform(this._adminUserPasswordWo),
+        value: cdktn.stringToHclTerraform(this._adminUserPasswordWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       admin_user_password_wo_version: {
-        value: cdktf.numberToHclTerraform(this._adminUserPasswordWoVersion),
+        value: cdktn.numberToHclTerraform(this._adminUserPasswordWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       admin_username: {
-        value: cdktf.stringToHclTerraform(this._adminUsername),
+        value: cdktn.stringToHclTerraform(this._adminUsername),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_name: {
-        value: cdktf.stringToHclTerraform(this._dbName),
+        value: cdktn.stringToHclTerraform(this._dbName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_iam_role_arn: {
-        value: cdktf.stringToHclTerraform(this._defaultIamRoleArn),
+        value: cdktn.stringToHclTerraform(this._defaultIamRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_roles: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._iamRoles),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._iamRoles),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_exports: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._logExports),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._logExports),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       manage_admin_password: {
-        value: cdktf.booleanToHclTerraform(this._manageAdminPassword),
+        value: cdktn.booleanToHclTerraform(this._manageAdminPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       namespace_name: {
-        value: cdktf.stringToHclTerraform(this._namespaceName),
+        value: cdktn.stringToHclTerraform(this._namespaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

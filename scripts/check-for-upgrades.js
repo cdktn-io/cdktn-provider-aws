@@ -6,11 +6,11 @@
 const semver = require("semver");
 const actions = require("@actions/core");
 
-// Code is inlined below, as this import requires us to add all dev dependencies of cdktf-cli as we're not
+// Code is inlined below, as this import requires us to add all dev dependencies of cdktn-cli as we're not
 // using the bundle. A better alternative would be to refactor this method to move to its own package, that
-// the cdktf-cli and others can use (we have the same "problem" with some other code in cdktf, cdktf-cli and
+// the cdktn-cli and others can use (we have the same "problem" with some other code in cdktn, cdktn-cli and
 // the @cdktn/provider-generator package, too)
-// const { versionMatchesConstraint } = require('cdktf-cli/lib/dependencies/version-constraints');
+// const { versionMatchesConstraint } = require('cdktn-cli/lib/dependencies/version-constraints');
 
 // set by the projen file that generates this script
 const CONSTRAINT = "~> 6.0";
@@ -83,7 +83,7 @@ async function getCurrentProviderVersion() {
 }
 
 // SEE NOTICE AT THE TOP WHY THIS IS INLINED CURRENTLY
-// copied from https://github.com/open-constructs/cdk-terrain/blob/df858ccf4ac71a168e3636f053c6743324c98332/packages/%40cdktf/cli-core/src/lib/dependencies/version-constraints.ts
+// copied from https://github.com/open-constructs/cdk-terrain/blob/df858ccf4ac71a168e3636f053c6743324c98332/packages/%40cdktn/cli-core/src/lib/dependencies/version-constraints.ts
 // and converted to JavaScript
 
 // constraints can be prefixed with "~>", ">", "<", "=", ">=", "<=" or "!="

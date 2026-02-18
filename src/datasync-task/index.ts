@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatasyncTaskConfig extends cdktf.TerraformMetaArguments {
+export interface DatasyncTaskConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_task#cloudwatch_log_group_arn DatasyncTask#cloudwatch_log_group_arn}
   */
@@ -102,31 +102,31 @@ export interface DatasyncTaskExcludes {
 }
 
 export function datasyncTaskExcludesToTerraform(struct?: DatasyncTaskExcludesOutputReference | DatasyncTaskExcludes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter_type: cdktf.stringToTerraform(struct!.filterType),
-    value: cdktf.stringToTerraform(struct!.value),
+    filter_type: cdktn.stringToTerraform(struct!.filterType),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function datasyncTaskExcludesToHclTerraform(struct?: DatasyncTaskExcludesOutputReference | DatasyncTaskExcludes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter_type: {
-      value: cdktf.stringToHclTerraform(struct!.filterType),
+      value: cdktn.stringToHclTerraform(struct!.filterType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -137,14 +137,14 @@ export function datasyncTaskExcludesToHclTerraform(struct?: DatasyncTaskExcludes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncTaskExcludesOutputReference extends cdktf.ComplexObject {
+export class DatasyncTaskExcludesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -219,31 +219,31 @@ export interface DatasyncTaskIncludes {
 }
 
 export function datasyncTaskIncludesToTerraform(struct?: DatasyncTaskIncludesOutputReference | DatasyncTaskIncludes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter_type: cdktf.stringToTerraform(struct!.filterType),
-    value: cdktf.stringToTerraform(struct!.value),
+    filter_type: cdktn.stringToTerraform(struct!.filterType),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function datasyncTaskIncludesToHclTerraform(struct?: DatasyncTaskIncludesOutputReference | DatasyncTaskIncludes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter_type: {
-      value: cdktf.stringToHclTerraform(struct!.filterType),
+      value: cdktn.stringToHclTerraform(struct!.filterType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -254,14 +254,14 @@ export function datasyncTaskIncludesToHclTerraform(struct?: DatasyncTaskIncludes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncTaskIncludesOutputReference extends cdktf.ComplexObject {
+export class DatasyncTaskIncludesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -388,122 +388,122 @@ export interface DatasyncTaskOptions {
 }
 
 export function datasyncTaskOptionsToTerraform(struct?: DatasyncTaskOptionsOutputReference | DatasyncTaskOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    atime: cdktf.stringToTerraform(struct!.atime),
-    bytes_per_second: cdktf.numberToTerraform(struct!.bytesPerSecond),
-    gid: cdktf.stringToTerraform(struct!.gid),
-    log_level: cdktf.stringToTerraform(struct!.logLevel),
-    mtime: cdktf.stringToTerraform(struct!.mtime),
-    object_tags: cdktf.stringToTerraform(struct!.objectTags),
-    overwrite_mode: cdktf.stringToTerraform(struct!.overwriteMode),
-    posix_permissions: cdktf.stringToTerraform(struct!.posixPermissions),
-    preserve_deleted_files: cdktf.stringToTerraform(struct!.preserveDeletedFiles),
-    preserve_devices: cdktf.stringToTerraform(struct!.preserveDevices),
-    security_descriptor_copy_flags: cdktf.stringToTerraform(struct!.securityDescriptorCopyFlags),
-    task_queueing: cdktf.stringToTerraform(struct!.taskQueueing),
-    transfer_mode: cdktf.stringToTerraform(struct!.transferMode),
-    uid: cdktf.stringToTerraform(struct!.uid),
-    verify_mode: cdktf.stringToTerraform(struct!.verifyMode),
+    atime: cdktn.stringToTerraform(struct!.atime),
+    bytes_per_second: cdktn.numberToTerraform(struct!.bytesPerSecond),
+    gid: cdktn.stringToTerraform(struct!.gid),
+    log_level: cdktn.stringToTerraform(struct!.logLevel),
+    mtime: cdktn.stringToTerraform(struct!.mtime),
+    object_tags: cdktn.stringToTerraform(struct!.objectTags),
+    overwrite_mode: cdktn.stringToTerraform(struct!.overwriteMode),
+    posix_permissions: cdktn.stringToTerraform(struct!.posixPermissions),
+    preserve_deleted_files: cdktn.stringToTerraform(struct!.preserveDeletedFiles),
+    preserve_devices: cdktn.stringToTerraform(struct!.preserveDevices),
+    security_descriptor_copy_flags: cdktn.stringToTerraform(struct!.securityDescriptorCopyFlags),
+    task_queueing: cdktn.stringToTerraform(struct!.taskQueueing),
+    transfer_mode: cdktn.stringToTerraform(struct!.transferMode),
+    uid: cdktn.stringToTerraform(struct!.uid),
+    verify_mode: cdktn.stringToTerraform(struct!.verifyMode),
   }
 }
 
 
 export function datasyncTaskOptionsToHclTerraform(struct?: DatasyncTaskOptionsOutputReference | DatasyncTaskOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     atime: {
-      value: cdktf.stringToHclTerraform(struct!.atime),
+      value: cdktn.stringToHclTerraform(struct!.atime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bytes_per_second: {
-      value: cdktf.numberToHclTerraform(struct!.bytesPerSecond),
+      value: cdktn.numberToHclTerraform(struct!.bytesPerSecond),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     gid: {
-      value: cdktf.stringToHclTerraform(struct!.gid),
+      value: cdktn.stringToHclTerraform(struct!.gid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_level: {
-      value: cdktf.stringToHclTerraform(struct!.logLevel),
+      value: cdktn.stringToHclTerraform(struct!.logLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mtime: {
-      value: cdktf.stringToHclTerraform(struct!.mtime),
+      value: cdktn.stringToHclTerraform(struct!.mtime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     object_tags: {
-      value: cdktf.stringToHclTerraform(struct!.objectTags),
+      value: cdktn.stringToHclTerraform(struct!.objectTags),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     overwrite_mode: {
-      value: cdktf.stringToHclTerraform(struct!.overwriteMode),
+      value: cdktn.stringToHclTerraform(struct!.overwriteMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     posix_permissions: {
-      value: cdktf.stringToHclTerraform(struct!.posixPermissions),
+      value: cdktn.stringToHclTerraform(struct!.posixPermissions),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     preserve_deleted_files: {
-      value: cdktf.stringToHclTerraform(struct!.preserveDeletedFiles),
+      value: cdktn.stringToHclTerraform(struct!.preserveDeletedFiles),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     preserve_devices: {
-      value: cdktf.stringToHclTerraform(struct!.preserveDevices),
+      value: cdktn.stringToHclTerraform(struct!.preserveDevices),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_descriptor_copy_flags: {
-      value: cdktf.stringToHclTerraform(struct!.securityDescriptorCopyFlags),
+      value: cdktn.stringToHclTerraform(struct!.securityDescriptorCopyFlags),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     task_queueing: {
-      value: cdktf.stringToHclTerraform(struct!.taskQueueing),
+      value: cdktn.stringToHclTerraform(struct!.taskQueueing),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     transfer_mode: {
-      value: cdktf.stringToHclTerraform(struct!.transferMode),
+      value: cdktn.stringToHclTerraform(struct!.transferMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uid: {
-      value: cdktf.stringToHclTerraform(struct!.uid),
+      value: cdktn.stringToHclTerraform(struct!.uid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_mode: {
-      value: cdktf.stringToHclTerraform(struct!.verifyMode),
+      value: cdktn.stringToHclTerraform(struct!.verifyMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -514,14 +514,14 @@ export function datasyncTaskOptionsToHclTerraform(struct?: DatasyncTaskOptionsOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncTaskOptionsOutputReference extends cdktf.ComplexObject {
+export class DatasyncTaskOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -878,24 +878,24 @@ export interface DatasyncTaskSchedule {
 }
 
 export function datasyncTaskScheduleToTerraform(struct?: DatasyncTaskScheduleOutputReference | DatasyncTaskSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    schedule_expression: cdktf.stringToTerraform(struct!.scheduleExpression),
+    schedule_expression: cdktn.stringToTerraform(struct!.scheduleExpression),
   }
 }
 
 
 export function datasyncTaskScheduleToHclTerraform(struct?: DatasyncTaskScheduleOutputReference | DatasyncTaskSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     schedule_expression: {
-      value: cdktf.stringToHclTerraform(struct!.scheduleExpression),
+      value: cdktn.stringToHclTerraform(struct!.scheduleExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -906,14 +906,14 @@ export function datasyncTaskScheduleToHclTerraform(struct?: DatasyncTaskSchedule
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncTaskScheduleOutputReference extends cdktf.ComplexObject {
+export class DatasyncTaskScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -971,45 +971,45 @@ export interface DatasyncTaskTaskReportConfigReportOverrides {
 }
 
 export function datasyncTaskTaskReportConfigReportOverridesToTerraform(struct?: DatasyncTaskTaskReportConfigReportOverridesOutputReference | DatasyncTaskTaskReportConfigReportOverrides): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    deleted_override: cdktf.stringToTerraform(struct!.deletedOverride),
-    skipped_override: cdktf.stringToTerraform(struct!.skippedOverride),
-    transferred_override: cdktf.stringToTerraform(struct!.transferredOverride),
-    verified_override: cdktf.stringToTerraform(struct!.verifiedOverride),
+    deleted_override: cdktn.stringToTerraform(struct!.deletedOverride),
+    skipped_override: cdktn.stringToTerraform(struct!.skippedOverride),
+    transferred_override: cdktn.stringToTerraform(struct!.transferredOverride),
+    verified_override: cdktn.stringToTerraform(struct!.verifiedOverride),
   }
 }
 
 
 export function datasyncTaskTaskReportConfigReportOverridesToHclTerraform(struct?: DatasyncTaskTaskReportConfigReportOverridesOutputReference | DatasyncTaskTaskReportConfigReportOverrides): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     deleted_override: {
-      value: cdktf.stringToHclTerraform(struct!.deletedOverride),
+      value: cdktn.stringToHclTerraform(struct!.deletedOverride),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     skipped_override: {
-      value: cdktf.stringToHclTerraform(struct!.skippedOverride),
+      value: cdktn.stringToHclTerraform(struct!.skippedOverride),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     transferred_override: {
-      value: cdktf.stringToHclTerraform(struct!.transferredOverride),
+      value: cdktn.stringToHclTerraform(struct!.transferredOverride),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verified_override: {
-      value: cdktf.stringToHclTerraform(struct!.verifiedOverride),
+      value: cdktn.stringToHclTerraform(struct!.verifiedOverride),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1020,14 +1020,14 @@ export function datasyncTaskTaskReportConfigReportOverridesToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncTaskTaskReportConfigReportOverridesOutputReference extends cdktf.ComplexObject {
+export class DatasyncTaskTaskReportConfigReportOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1150,38 +1150,38 @@ export interface DatasyncTaskTaskReportConfigS3Destination {
 }
 
 export function datasyncTaskTaskReportConfigS3DestinationToTerraform(struct?: DatasyncTaskTaskReportConfigS3DestinationOutputReference | DatasyncTaskTaskReportConfigS3Destination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_access_role_arn: cdktf.stringToTerraform(struct!.bucketAccessRoleArn),
-    s3_bucket_arn: cdktf.stringToTerraform(struct!.s3BucketArn),
-    subdirectory: cdktf.stringToTerraform(struct!.subdirectory),
+    bucket_access_role_arn: cdktn.stringToTerraform(struct!.bucketAccessRoleArn),
+    s3_bucket_arn: cdktn.stringToTerraform(struct!.s3BucketArn),
+    subdirectory: cdktn.stringToTerraform(struct!.subdirectory),
   }
 }
 
 
 export function datasyncTaskTaskReportConfigS3DestinationToHclTerraform(struct?: DatasyncTaskTaskReportConfigS3DestinationOutputReference | DatasyncTaskTaskReportConfigS3Destination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_access_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bucketAccessRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.bucketAccessRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_bucket_arn: {
-      value: cdktf.stringToHclTerraform(struct!.s3BucketArn),
+      value: cdktn.stringToHclTerraform(struct!.s3BucketArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subdirectory: {
-      value: cdktf.stringToHclTerraform(struct!.subdirectory),
+      value: cdktn.stringToHclTerraform(struct!.subdirectory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1192,14 +1192,14 @@ export function datasyncTaskTaskReportConfigS3DestinationToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncTaskTaskReportConfigS3DestinationOutputReference extends cdktf.ComplexObject {
+export class DatasyncTaskTaskReportConfigS3DestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1306,14 +1306,14 @@ export interface DatasyncTaskTaskReportConfig {
 }
 
 export function datasyncTaskTaskReportConfigToTerraform(struct?: DatasyncTaskTaskReportConfigOutputReference | DatasyncTaskTaskReportConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    output_type: cdktf.stringToTerraform(struct!.outputType),
-    report_level: cdktf.stringToTerraform(struct!.reportLevel),
-    s3_object_versioning: cdktf.stringToTerraform(struct!.s3ObjectVersioning),
+    output_type: cdktn.stringToTerraform(struct!.outputType),
+    report_level: cdktn.stringToTerraform(struct!.reportLevel),
+    s3_object_versioning: cdktn.stringToTerraform(struct!.s3ObjectVersioning),
     report_overrides: datasyncTaskTaskReportConfigReportOverridesToTerraform(struct!.reportOverrides),
     s3_destination: datasyncTaskTaskReportConfigS3DestinationToTerraform(struct!.s3Destination),
   }
@@ -1321,25 +1321,25 @@ export function datasyncTaskTaskReportConfigToTerraform(struct?: DatasyncTaskTas
 
 
 export function datasyncTaskTaskReportConfigToHclTerraform(struct?: DatasyncTaskTaskReportConfigOutputReference | DatasyncTaskTaskReportConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     output_type: {
-      value: cdktf.stringToHclTerraform(struct!.outputType),
+      value: cdktn.stringToHclTerraform(struct!.outputType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     report_level: {
-      value: cdktf.stringToHclTerraform(struct!.reportLevel),
+      value: cdktn.stringToHclTerraform(struct!.reportLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_object_versioning: {
-      value: cdktf.stringToHclTerraform(struct!.s3ObjectVersioning),
+      value: cdktn.stringToHclTerraform(struct!.s3ObjectVersioning),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1362,14 +1362,14 @@ export function datasyncTaskTaskReportConfigToHclTerraform(struct?: DatasyncTask
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncTaskTaskReportConfigOutputReference extends cdktf.ComplexObject {
+export class DatasyncTaskTaskReportConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1502,25 +1502,25 @@ export interface DatasyncTaskTimeouts {
   readonly create?: string;
 }
 
-export function datasyncTaskTimeoutsToTerraform(struct?: DatasyncTaskTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datasyncTaskTimeoutsToTerraform(struct?: DatasyncTaskTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function datasyncTaskTimeoutsToHclTerraform(struct?: DatasyncTaskTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datasyncTaskTimeoutsToHclTerraform(struct?: DatasyncTaskTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1531,19 +1531,19 @@ export function datasyncTaskTimeoutsToHclTerraform(struct?: DatasyncTaskTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncTaskTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DatasyncTaskTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatasyncTaskTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DatasyncTaskTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1556,13 +1556,13 @@ export class DatasyncTaskTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatasyncTaskTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatasyncTaskTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1593,7 +1593,7 @@ export class DatasyncTaskTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_task aws_datasync_task}
 */
-export class DatasyncTask extends cdktf.TerraformResource {
+export class DatasyncTask extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1604,14 +1604,14 @@ export class DatasyncTask extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatasyncTask resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatasyncTask resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatasyncTask to import
   * @param importFromId The id of the existing DatasyncTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_task#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatasyncTask to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_datasync_task", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_datasync_task", importId: importFromId, provider });
       }
 
   // ===========
@@ -1907,15 +1907,15 @@ export class DatasyncTask extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cloudwatch_log_group_arn: cdktf.stringToTerraform(this._cloudwatchLogGroupArn),
-      destination_location_arn: cdktf.stringToTerraform(this._destinationLocationArn),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      source_location_arn: cdktf.stringToTerraform(this._sourceLocationArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      task_mode: cdktf.stringToTerraform(this._taskMode),
+      cloudwatch_log_group_arn: cdktn.stringToTerraform(this._cloudwatchLogGroupArn),
+      destination_location_arn: cdktn.stringToTerraform(this._destinationLocationArn),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      source_location_arn: cdktn.stringToTerraform(this._sourceLocationArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      task_mode: cdktn.stringToTerraform(this._taskMode),
       excludes: datasyncTaskExcludesToTerraform(this._excludes.internalValue),
       includes: datasyncTaskIncludesToTerraform(this._includes.internalValue),
       options: datasyncTaskOptionsToTerraform(this._options.internalValue),
@@ -1928,55 +1928,55 @@ export class DatasyncTask extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cloudwatch_log_group_arn: {
-        value: cdktf.stringToHclTerraform(this._cloudwatchLogGroupArn),
+        value: cdktn.stringToHclTerraform(this._cloudwatchLogGroupArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_location_arn: {
-        value: cdktf.stringToHclTerraform(this._destinationLocationArn),
+        value: cdktn.stringToHclTerraform(this._destinationLocationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_location_arn: {
-        value: cdktf.stringToHclTerraform(this._sourceLocationArn),
+        value: cdktn.stringToHclTerraform(this._sourceLocationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       task_mode: {
-        value: cdktf.stringToHclTerraform(this._taskMode),
+        value: cdktn.stringToHclTerraform(this._taskMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

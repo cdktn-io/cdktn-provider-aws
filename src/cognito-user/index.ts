@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CognitoUserConfig extends cdktf.TerraformMetaArguments {
+export interface CognitoUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_user#attributes CognitoUser#attributes}
   */
@@ -27,11 +27,11 @@ export interface CognitoUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_user#enabled CognitoUser#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_user#force_alias_creation CognitoUser#force_alias_creation}
   */
-  readonly forceAliasCreation?: boolean | cdktf.IResolvable;
+  readonly forceAliasCreation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_user#id CognitoUser#id}
   *
@@ -74,7 +74,7 @@ export interface CognitoUserConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_user aws_cognito_user}
 */
-export class CognitoUser extends cdktf.TerraformResource {
+export class CognitoUser extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -85,14 +85,14 @@ export class CognitoUser extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CognitoUser resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CognitoUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitoUser to import
   * @param importFromId The id of the existing CognitoUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitoUser to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_user", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_user", importId: importFromId, provider });
       }
 
   // ===========
@@ -181,7 +181,7 @@ export class CognitoUser extends cdktf.TerraformResource {
   // desired_delivery_mediums - computed: false, optional: true, required: false
   private _desiredDeliveryMediums?: string[]; 
   public get desiredDeliveryMediums() {
-    return cdktf.Fn.tolist(this.getListAttribute('desired_delivery_mediums'));
+    return cdktn.Fn.tolist(this.getListAttribute('desired_delivery_mediums'));
   }
   public set desiredDeliveryMediums(value: string[]) {
     this._desiredDeliveryMediums = value;
@@ -195,11 +195,11 @@ export class CognitoUser extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -211,11 +211,11 @@ export class CognitoUser extends cdktf.TerraformResource {
   }
 
   // force_alias_creation - computed: false, optional: true, required: false
-  private _forceAliasCreation?: boolean | cdktf.IResolvable; 
+  private _forceAliasCreation?: boolean | cdktn.IResolvable; 
   public get forceAliasCreation() {
     return this.getBooleanAttribute('force_alias_creation');
   }
-  public set forceAliasCreation(value: boolean | cdktf.IResolvable) {
+  public set forceAliasCreation(value: boolean | cdktn.IResolvable) {
     this._forceAliasCreation = value;
   }
   public resetForceAliasCreation() {
@@ -265,7 +265,7 @@ export class CognitoUser extends cdktf.TerraformResource {
 
   // mfa_setting_list - computed: true, optional: false, required: false
   public get mfaSettingList() {
-    return cdktf.Fn.tolist(this.getListAttribute('mfa_setting_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('mfa_setting_list'));
   }
 
   // password - computed: false, optional: true, required: false
@@ -379,98 +379,98 @@ export class CognitoUser extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      attributes: cdktf.hashMapper(cdktf.stringToTerraform)(this._attributes),
-      client_metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._clientMetadata),
-      desired_delivery_mediums: cdktf.listMapper(cdktf.stringToTerraform, false)(this._desiredDeliveryMediums),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      force_alias_creation: cdktf.booleanToTerraform(this._forceAliasCreation),
-      id: cdktf.stringToTerraform(this._id),
-      message_action: cdktf.stringToTerraform(this._messageAction),
-      password: cdktf.stringToTerraform(this._password),
-      region: cdktf.stringToTerraform(this._region),
-      temporary_password: cdktf.stringToTerraform(this._temporaryPassword),
-      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
-      username: cdktf.stringToTerraform(this._username),
-      validation_data: cdktf.hashMapper(cdktf.stringToTerraform)(this._validationData),
+      attributes: cdktn.hashMapper(cdktn.stringToTerraform)(this._attributes),
+      client_metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._clientMetadata),
+      desired_delivery_mediums: cdktn.listMapper(cdktn.stringToTerraform, false)(this._desiredDeliveryMediums),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      force_alias_creation: cdktn.booleanToTerraform(this._forceAliasCreation),
+      id: cdktn.stringToTerraform(this._id),
+      message_action: cdktn.stringToTerraform(this._messageAction),
+      password: cdktn.stringToTerraform(this._password),
+      region: cdktn.stringToTerraform(this._region),
+      temporary_password: cdktn.stringToTerraform(this._temporaryPassword),
+      user_pool_id: cdktn.stringToTerraform(this._userPoolId),
+      username: cdktn.stringToTerraform(this._username),
+      validation_data: cdktn.hashMapper(cdktn.stringToTerraform)(this._validationData),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       attributes: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._attributes),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._attributes),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       client_metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._clientMetadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._clientMetadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       desired_delivery_mediums: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._desiredDeliveryMediums),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._desiredDeliveryMediums),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_alias_creation: {
-        value: cdktf.booleanToHclTerraform(this._forceAliasCreation),
+        value: cdktn.booleanToHclTerraform(this._forceAliasCreation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       message_action: {
-        value: cdktf.stringToHclTerraform(this._messageAction),
+        value: cdktn.stringToHclTerraform(this._messageAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       temporary_password: {
-        value: cdktf.stringToHclTerraform(this._temporaryPassword),
+        value: cdktn.stringToHclTerraform(this._temporaryPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_pool_id: {
-        value: cdktf.stringToHclTerraform(this._userPoolId),
+        value: cdktn.stringToHclTerraform(this._userPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       username: {
-        value: cdktf.stringToHclTerraform(this._username),
+        value: cdktn.stringToHclTerraform(this._username),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       validation_data: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._validationData),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._validationData),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

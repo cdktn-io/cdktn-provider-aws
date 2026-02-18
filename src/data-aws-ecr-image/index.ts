@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsEcrImageConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEcrImageConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecr_image#id DataAwsEcrImage#id}
   *
@@ -30,7 +30,7 @@ export interface DataAwsEcrImageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecr_image#most_recent DataAwsEcrImage#most_recent}
   */
-  readonly mostRecent?: boolean | cdktf.IResolvable;
+  readonly mostRecent?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -50,7 +50,7 @@ export interface DataAwsEcrImageConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecr_image aws_ecr_image}
 */
-export class DataAwsEcrImage extends cdktf.TerraformDataSource {
+export class DataAwsEcrImage extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class DataAwsEcrImage extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsEcrImage resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsEcrImage resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEcrImage to import
   * @param importFromId The id of the existing DataAwsEcrImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecr_image#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEcrImage to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_image", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_image", importId: importFromId, provider });
       }
 
   // ===========
@@ -180,11 +180,11 @@ export class DataAwsEcrImage extends cdktf.TerraformDataSource {
   }
 
   // most_recent - computed: false, optional: true, required: false
-  private _mostRecent?: boolean | cdktf.IResolvable; 
+  private _mostRecent?: boolean | cdktn.IResolvable; 
   public get mostRecent() {
     return this.getBooleanAttribute('most_recent');
   }
-  public set mostRecent(value: boolean | cdktf.IResolvable) {
+  public set mostRecent(value: boolean | cdktn.IResolvable) {
     this._mostRecent = value;
   }
   public resetMostRecent() {
@@ -246,56 +246,56 @@ export class DataAwsEcrImage extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      image_digest: cdktf.stringToTerraform(this._imageDigest),
-      image_tag: cdktf.stringToTerraform(this._imageTag),
-      most_recent: cdktf.booleanToTerraform(this._mostRecent),
-      region: cdktf.stringToTerraform(this._region),
-      registry_id: cdktf.stringToTerraform(this._registryId),
-      repository_name: cdktf.stringToTerraform(this._repositoryName),
+      id: cdktn.stringToTerraform(this._id),
+      image_digest: cdktn.stringToTerraform(this._imageDigest),
+      image_tag: cdktn.stringToTerraform(this._imageTag),
+      most_recent: cdktn.booleanToTerraform(this._mostRecent),
+      region: cdktn.stringToTerraform(this._region),
+      registry_id: cdktn.stringToTerraform(this._registryId),
+      repository_name: cdktn.stringToTerraform(this._repositoryName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_digest: {
-        value: cdktf.stringToHclTerraform(this._imageDigest),
+        value: cdktn.stringToHclTerraform(this._imageDigest),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_tag: {
-        value: cdktf.stringToHclTerraform(this._imageTag),
+        value: cdktn.stringToHclTerraform(this._imageTag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       most_recent: {
-        value: cdktf.booleanToHclTerraform(this._mostRecent),
+        value: cdktn.booleanToHclTerraform(this._mostRecent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       registry_id: {
-        value: cdktf.stringToHclTerraform(this._registryId),
+        value: cdktn.stringToHclTerraform(this._registryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_name: {
-        value: cdktf.stringToHclTerraform(this._repositoryName),
+        value: cdktn.stringToHclTerraform(this._repositoryName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

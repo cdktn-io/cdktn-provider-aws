@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BedrockCustomModelConfig extends cdktf.TerraformMetaArguments {
+export interface BedrockCustomModelConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrock_custom_model#base_model_identifier BedrockCustomModel#base_model_identifier}
   */
@@ -55,7 +55,7 @@ export interface BedrockCustomModelConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrock_custom_model#output_data_config BedrockCustomModel#output_data_config}
   */
-  readonly outputDataConfig?: BedrockCustomModelOutputDataConfig[] | cdktf.IResolvable;
+  readonly outputDataConfig?: BedrockCustomModelOutputDataConfig[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -67,26 +67,26 @@ export interface BedrockCustomModelConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrock_custom_model#training_data_config BedrockCustomModel#training_data_config}
   */
-  readonly trainingDataConfig?: BedrockCustomModelTrainingDataConfig[] | cdktf.IResolvable;
+  readonly trainingDataConfig?: BedrockCustomModelTrainingDataConfig[] | cdktn.IResolvable;
   /**
   * validation_data_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrock_custom_model#validation_data_config BedrockCustomModel#validation_data_config}
   */
-  readonly validationDataConfig?: BedrockCustomModelValidationDataConfig[] | cdktf.IResolvable;
+  readonly validationDataConfig?: BedrockCustomModelValidationDataConfig[] | cdktn.IResolvable;
   /**
   * vpc_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrock_custom_model#vpc_config BedrockCustomModel#vpc_config}
   */
-  readonly vpcConfig?: BedrockCustomModelVpcConfig[] | cdktf.IResolvable;
+  readonly vpcConfig?: BedrockCustomModelVpcConfig[] | cdktn.IResolvable;
 }
 export interface BedrockCustomModelTrainingMetrics {
 }
 
 export function bedrockCustomModelTrainingMetricsToTerraform(struct?: BedrockCustomModelTrainingMetrics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -95,8 +95,8 @@ export function bedrockCustomModelTrainingMetricsToTerraform(struct?: BedrockCus
 
 
 export function bedrockCustomModelTrainingMetricsToHclTerraform(struct?: BedrockCustomModelTrainingMetrics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -104,7 +104,7 @@ export function bedrockCustomModelTrainingMetricsToHclTerraform(struct?: Bedrock
   return attrs;
 }
 
-export class BedrockCustomModelTrainingMetricsOutputReference extends cdktf.ComplexObject {
+export class BedrockCustomModelTrainingMetricsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -113,7 +113,7 @@ export class BedrockCustomModelTrainingMetricsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -138,14 +138,14 @@ export class BedrockCustomModelTrainingMetricsOutputReference extends cdktf.Comp
   }
 }
 
-export class BedrockCustomModelTrainingMetricsList extends cdktf.ComplexList {
+export class BedrockCustomModelTrainingMetricsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -160,8 +160,8 @@ export interface BedrockCustomModelValidationMetrics {
 }
 
 export function bedrockCustomModelValidationMetricsToTerraform(struct?: BedrockCustomModelValidationMetrics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -170,8 +170,8 @@ export function bedrockCustomModelValidationMetricsToTerraform(struct?: BedrockC
 
 
 export function bedrockCustomModelValidationMetricsToHclTerraform(struct?: BedrockCustomModelValidationMetrics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -179,7 +179,7 @@ export function bedrockCustomModelValidationMetricsToHclTerraform(struct?: Bedro
   return attrs;
 }
 
-export class BedrockCustomModelValidationMetricsOutputReference extends cdktf.ComplexObject {
+export class BedrockCustomModelValidationMetricsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -188,7 +188,7 @@ export class BedrockCustomModelValidationMetricsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -213,14 +213,14 @@ export class BedrockCustomModelValidationMetricsOutputReference extends cdktf.Co
   }
 }
 
-export class BedrockCustomModelValidationMetricsList extends cdktf.ComplexList {
+export class BedrockCustomModelValidationMetricsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -238,25 +238,25 @@ export interface BedrockCustomModelOutputDataConfig {
   readonly s3Uri: string;
 }
 
-export function bedrockCustomModelOutputDataConfigToTerraform(struct?: BedrockCustomModelOutputDataConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockCustomModelOutputDataConfigToTerraform(struct?: BedrockCustomModelOutputDataConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_uri: cdktf.stringToTerraform(struct!.s3Uri),
+    s3_uri: cdktn.stringToTerraform(struct!.s3Uri),
   }
 }
 
 
-export function bedrockCustomModelOutputDataConfigToHclTerraform(struct?: BedrockCustomModelOutputDataConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockCustomModelOutputDataConfigToHclTerraform(struct?: BedrockCustomModelOutputDataConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_uri: {
-      value: cdktf.stringToHclTerraform(struct!.s3Uri),
+      value: cdktn.stringToHclTerraform(struct!.s3Uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -267,9 +267,9 @@ export function bedrockCustomModelOutputDataConfigToHclTerraform(struct?: Bedroc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockCustomModelOutputDataConfigOutputReference extends cdktf.ComplexObject {
+export class BedrockCustomModelOutputDataConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -277,11 +277,11 @@ export class BedrockCustomModelOutputDataConfigOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockCustomModelOutputDataConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockCustomModelOutputDataConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -294,13 +294,13 @@ export class BedrockCustomModelOutputDataConfigOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockCustomModelOutputDataConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockCustomModelOutputDataConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._s3Uri = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -325,15 +325,15 @@ export class BedrockCustomModelOutputDataConfigOutputReference extends cdktf.Com
   }
 }
 
-export class BedrockCustomModelOutputDataConfigList extends cdktf.ComplexList {
-  public internalValue? : BedrockCustomModelOutputDataConfig[] | cdktf.IResolvable
+export class BedrockCustomModelOutputDataConfigList extends cdktn.ComplexList {
+  public internalValue? : BedrockCustomModelOutputDataConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -359,32 +359,32 @@ export interface BedrockCustomModelTimeouts {
   readonly delete?: string;
 }
 
-export function bedrockCustomModelTimeoutsToTerraform(struct?: BedrockCustomModelTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockCustomModelTimeoutsToTerraform(struct?: BedrockCustomModelTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function bedrockCustomModelTimeoutsToHclTerraform(struct?: BedrockCustomModelTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockCustomModelTimeoutsToHclTerraform(struct?: BedrockCustomModelTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -395,19 +395,19 @@ export function bedrockCustomModelTimeoutsToHclTerraform(struct?: BedrockCustomM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockCustomModelTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BedrockCustomModelTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BedrockCustomModelTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockCustomModelTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -424,14 +424,14 @@ export class BedrockCustomModelTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockCustomModelTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockCustomModelTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -482,25 +482,25 @@ export interface BedrockCustomModelTrainingDataConfig {
   readonly s3Uri: string;
 }
 
-export function bedrockCustomModelTrainingDataConfigToTerraform(struct?: BedrockCustomModelTrainingDataConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockCustomModelTrainingDataConfigToTerraform(struct?: BedrockCustomModelTrainingDataConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_uri: cdktf.stringToTerraform(struct!.s3Uri),
+    s3_uri: cdktn.stringToTerraform(struct!.s3Uri),
   }
 }
 
 
-export function bedrockCustomModelTrainingDataConfigToHclTerraform(struct?: BedrockCustomModelTrainingDataConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockCustomModelTrainingDataConfigToHclTerraform(struct?: BedrockCustomModelTrainingDataConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_uri: {
-      value: cdktf.stringToHclTerraform(struct!.s3Uri),
+      value: cdktn.stringToHclTerraform(struct!.s3Uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -511,9 +511,9 @@ export function bedrockCustomModelTrainingDataConfigToHclTerraform(struct?: Bedr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockCustomModelTrainingDataConfigOutputReference extends cdktf.ComplexObject {
+export class BedrockCustomModelTrainingDataConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -521,11 +521,11 @@ export class BedrockCustomModelTrainingDataConfigOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockCustomModelTrainingDataConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockCustomModelTrainingDataConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -538,13 +538,13 @@ export class BedrockCustomModelTrainingDataConfigOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockCustomModelTrainingDataConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockCustomModelTrainingDataConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._s3Uri = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -569,15 +569,15 @@ export class BedrockCustomModelTrainingDataConfigOutputReference extends cdktf.C
   }
 }
 
-export class BedrockCustomModelTrainingDataConfigList extends cdktf.ComplexList {
-  public internalValue? : BedrockCustomModelTrainingDataConfig[] | cdktf.IResolvable
+export class BedrockCustomModelTrainingDataConfigList extends cdktn.ComplexList {
+  public internalValue? : BedrockCustomModelTrainingDataConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -595,25 +595,25 @@ export interface BedrockCustomModelValidationDataConfigValidator {
   readonly s3Uri: string;
 }
 
-export function bedrockCustomModelValidationDataConfigValidatorToTerraform(struct?: BedrockCustomModelValidationDataConfigValidator | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockCustomModelValidationDataConfigValidatorToTerraform(struct?: BedrockCustomModelValidationDataConfigValidator | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_uri: cdktf.stringToTerraform(struct!.s3Uri),
+    s3_uri: cdktn.stringToTerraform(struct!.s3Uri),
   }
 }
 
 
-export function bedrockCustomModelValidationDataConfigValidatorToHclTerraform(struct?: BedrockCustomModelValidationDataConfigValidator | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockCustomModelValidationDataConfigValidatorToHclTerraform(struct?: BedrockCustomModelValidationDataConfigValidator | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_uri: {
-      value: cdktf.stringToHclTerraform(struct!.s3Uri),
+      value: cdktn.stringToHclTerraform(struct!.s3Uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -624,9 +624,9 @@ export function bedrockCustomModelValidationDataConfigValidatorToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockCustomModelValidationDataConfigValidatorOutputReference extends cdktf.ComplexObject {
+export class BedrockCustomModelValidationDataConfigValidatorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -634,11 +634,11 @@ export class BedrockCustomModelValidationDataConfigValidatorOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockCustomModelValidationDataConfigValidator | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockCustomModelValidationDataConfigValidator | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -651,13 +651,13 @@ export class BedrockCustomModelValidationDataConfigValidatorOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockCustomModelValidationDataConfigValidator | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockCustomModelValidationDataConfigValidator | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._s3Uri = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -682,15 +682,15 @@ export class BedrockCustomModelValidationDataConfigValidatorOutputReference exte
   }
 }
 
-export class BedrockCustomModelValidationDataConfigValidatorList extends cdktf.ComplexList {
-  public internalValue? : BedrockCustomModelValidationDataConfigValidator[] | cdktf.IResolvable
+export class BedrockCustomModelValidationDataConfigValidatorList extends cdktn.ComplexList {
+  public internalValue? : BedrockCustomModelValidationDataConfigValidator[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -707,28 +707,28 @@ export interface BedrockCustomModelValidationDataConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrock_custom_model#validator BedrockCustomModel#validator}
   */
-  readonly validator?: BedrockCustomModelValidationDataConfigValidator[] | cdktf.IResolvable;
+  readonly validator?: BedrockCustomModelValidationDataConfigValidator[] | cdktn.IResolvable;
 }
 
-export function bedrockCustomModelValidationDataConfigToTerraform(struct?: BedrockCustomModelValidationDataConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockCustomModelValidationDataConfigToTerraform(struct?: BedrockCustomModelValidationDataConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    validator: cdktf.listMapper(bedrockCustomModelValidationDataConfigValidatorToTerraform, true)(struct!.validator),
+    validator: cdktn.listMapper(bedrockCustomModelValidationDataConfigValidatorToTerraform, true)(struct!.validator),
   }
 }
 
 
-export function bedrockCustomModelValidationDataConfigToHclTerraform(struct?: BedrockCustomModelValidationDataConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockCustomModelValidationDataConfigToHclTerraform(struct?: BedrockCustomModelValidationDataConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     validator: {
-      value: cdktf.listMapperHcl(bedrockCustomModelValidationDataConfigValidatorToHclTerraform, true)(struct!.validator),
+      value: cdktn.listMapperHcl(bedrockCustomModelValidationDataConfigValidatorToHclTerraform, true)(struct!.validator),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockCustomModelValidationDataConfigValidatorList",
@@ -739,9 +739,9 @@ export function bedrockCustomModelValidationDataConfigToHclTerraform(struct?: Be
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockCustomModelValidationDataConfigOutputReference extends cdktf.ComplexObject {
+export class BedrockCustomModelValidationDataConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -749,11 +749,11 @@ export class BedrockCustomModelValidationDataConfigOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockCustomModelValidationDataConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockCustomModelValidationDataConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -766,13 +766,13 @@ export class BedrockCustomModelValidationDataConfigOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockCustomModelValidationDataConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockCustomModelValidationDataConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._validator.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -788,7 +788,7 @@ export class BedrockCustomModelValidationDataConfigOutputReference extends cdktf
   public get validator() {
     return this._validator;
   }
-  public putValidator(value: BedrockCustomModelValidationDataConfigValidator[] | cdktf.IResolvable) {
+  public putValidator(value: BedrockCustomModelValidationDataConfigValidator[] | cdktn.IResolvable) {
     this._validator.internalValue = value;
   }
   public resetValidator() {
@@ -800,15 +800,15 @@ export class BedrockCustomModelValidationDataConfigOutputReference extends cdktf
   }
 }
 
-export class BedrockCustomModelValidationDataConfigList extends cdktf.ComplexList {
-  public internalValue? : BedrockCustomModelValidationDataConfig[] | cdktf.IResolvable
+export class BedrockCustomModelValidationDataConfigList extends cdktn.ComplexList {
+  public internalValue? : BedrockCustomModelValidationDataConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -830,32 +830,32 @@ export interface BedrockCustomModelVpcConfig {
   readonly subnetIds: string[];
 }
 
-export function bedrockCustomModelVpcConfigToTerraform(struct?: BedrockCustomModelVpcConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockCustomModelVpcConfigToTerraform(struct?: BedrockCustomModelVpcConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
 
-export function bedrockCustomModelVpcConfigToHclTerraform(struct?: BedrockCustomModelVpcConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockCustomModelVpcConfigToHclTerraform(struct?: BedrockCustomModelVpcConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -866,9 +866,9 @@ export function bedrockCustomModelVpcConfigToHclTerraform(struct?: BedrockCustom
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockCustomModelVpcConfigOutputReference extends cdktf.ComplexObject {
+export class BedrockCustomModelVpcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -876,11 +876,11 @@ export class BedrockCustomModelVpcConfigOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockCustomModelVpcConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockCustomModelVpcConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -897,14 +897,14 @@ export class BedrockCustomModelVpcConfigOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockCustomModelVpcConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockCustomModelVpcConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._securityGroupIds = undefined;
       this._subnetIds = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -919,7 +919,7 @@ export class BedrockCustomModelVpcConfigOutputReference extends cdktf.ComplexObj
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -932,7 +932,7 @@ export class BedrockCustomModelVpcConfigOutputReference extends cdktf.ComplexObj
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -943,15 +943,15 @@ export class BedrockCustomModelVpcConfigOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class BedrockCustomModelVpcConfigList extends cdktf.ComplexList {
-  public internalValue? : BedrockCustomModelVpcConfig[] | cdktf.IResolvable
+export class BedrockCustomModelVpcConfigList extends cdktn.ComplexList {
+  public internalValue? : BedrockCustomModelVpcConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -966,7 +966,7 @@ export class BedrockCustomModelVpcConfigList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrock_custom_model aws_bedrock_custom_model}
 */
-export class BedrockCustomModel extends cdktf.TerraformResource {
+export class BedrockCustomModel extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -977,14 +977,14 @@ export class BedrockCustomModel extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BedrockCustomModel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BedrockCustomModel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockCustomModel to import
   * @param importFromId The id of the existing BedrockCustomModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrock_custom_model#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockCustomModel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrock_custom_model", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrock_custom_model", importId: importFromId, provider });
       }
 
   // ===========
@@ -1184,7 +1184,7 @@ export class BedrockCustomModel extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1206,7 +1206,7 @@ export class BedrockCustomModel extends cdktf.TerraformResource {
   public get outputDataConfig() {
     return this._outputDataConfig;
   }
-  public putOutputDataConfig(value: BedrockCustomModelOutputDataConfig[] | cdktf.IResolvable) {
+  public putOutputDataConfig(value: BedrockCustomModelOutputDataConfig[] | cdktn.IResolvable) {
     this._outputDataConfig.internalValue = value;
   }
   public resetOutputDataConfig() {
@@ -1238,7 +1238,7 @@ export class BedrockCustomModel extends cdktf.TerraformResource {
   public get trainingDataConfig() {
     return this._trainingDataConfig;
   }
-  public putTrainingDataConfig(value: BedrockCustomModelTrainingDataConfig[] | cdktf.IResolvable) {
+  public putTrainingDataConfig(value: BedrockCustomModelTrainingDataConfig[] | cdktn.IResolvable) {
     this._trainingDataConfig.internalValue = value;
   }
   public resetTrainingDataConfig() {
@@ -1254,7 +1254,7 @@ export class BedrockCustomModel extends cdktf.TerraformResource {
   public get validationDataConfig() {
     return this._validationDataConfig;
   }
-  public putValidationDataConfig(value: BedrockCustomModelValidationDataConfig[] | cdktf.IResolvable) {
+  public putValidationDataConfig(value: BedrockCustomModelValidationDataConfig[] | cdktn.IResolvable) {
     this._validationDataConfig.internalValue = value;
   }
   public resetValidationDataConfig() {
@@ -1270,7 +1270,7 @@ export class BedrockCustomModel extends cdktf.TerraformResource {
   public get vpcConfig() {
     return this._vpcConfig;
   }
-  public putVpcConfig(value: BedrockCustomModelVpcConfig[] | cdktf.IResolvable) {
+  public putVpcConfig(value: BedrockCustomModelVpcConfig[] | cdktn.IResolvable) {
     this._vpcConfig.internalValue = value;
   }
   public resetVpcConfig() {
@@ -1287,81 +1287,81 @@ export class BedrockCustomModel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      base_model_identifier: cdktf.stringToTerraform(this._baseModelIdentifier),
-      custom_model_kms_key_id: cdktf.stringToTerraform(this._customModelKmsKeyId),
-      custom_model_name: cdktf.stringToTerraform(this._customModelName),
-      customization_type: cdktf.stringToTerraform(this._customizationType),
-      hyperparameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._hyperparameters),
-      job_name: cdktf.stringToTerraform(this._jobName),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      output_data_config: cdktf.listMapper(bedrockCustomModelOutputDataConfigToTerraform, true)(this._outputDataConfig.internalValue),
+      base_model_identifier: cdktn.stringToTerraform(this._baseModelIdentifier),
+      custom_model_kms_key_id: cdktn.stringToTerraform(this._customModelKmsKeyId),
+      custom_model_name: cdktn.stringToTerraform(this._customModelName),
+      customization_type: cdktn.stringToTerraform(this._customizationType),
+      hyperparameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._hyperparameters),
+      job_name: cdktn.stringToTerraform(this._jobName),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      output_data_config: cdktn.listMapper(bedrockCustomModelOutputDataConfigToTerraform, true)(this._outputDataConfig.internalValue),
       timeouts: bedrockCustomModelTimeoutsToTerraform(this._timeouts.internalValue),
-      training_data_config: cdktf.listMapper(bedrockCustomModelTrainingDataConfigToTerraform, true)(this._trainingDataConfig.internalValue),
-      validation_data_config: cdktf.listMapper(bedrockCustomModelValidationDataConfigToTerraform, true)(this._validationDataConfig.internalValue),
-      vpc_config: cdktf.listMapper(bedrockCustomModelVpcConfigToTerraform, true)(this._vpcConfig.internalValue),
+      training_data_config: cdktn.listMapper(bedrockCustomModelTrainingDataConfigToTerraform, true)(this._trainingDataConfig.internalValue),
+      validation_data_config: cdktn.listMapper(bedrockCustomModelValidationDataConfigToTerraform, true)(this._validationDataConfig.internalValue),
+      vpc_config: cdktn.listMapper(bedrockCustomModelVpcConfigToTerraform, true)(this._vpcConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       base_model_identifier: {
-        value: cdktf.stringToHclTerraform(this._baseModelIdentifier),
+        value: cdktn.stringToHclTerraform(this._baseModelIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_model_kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._customModelKmsKeyId),
+        value: cdktn.stringToHclTerraform(this._customModelKmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_model_name: {
-        value: cdktf.stringToHclTerraform(this._customModelName),
+        value: cdktn.stringToHclTerraform(this._customModelName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customization_type: {
-        value: cdktf.stringToHclTerraform(this._customizationType),
+        value: cdktn.stringToHclTerraform(this._customizationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hyperparameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._hyperparameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._hyperparameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       job_name: {
-        value: cdktf.stringToHclTerraform(this._jobName),
+        value: cdktn.stringToHclTerraform(this._jobName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       output_data_config: {
-        value: cdktf.listMapperHcl(bedrockCustomModelOutputDataConfigToHclTerraform, true)(this._outputDataConfig.internalValue),
+        value: cdktn.listMapperHcl(bedrockCustomModelOutputDataConfigToHclTerraform, true)(this._outputDataConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockCustomModelOutputDataConfigList",
@@ -1373,19 +1373,19 @@ export class BedrockCustomModel extends cdktf.TerraformResource {
         storageClassType: "BedrockCustomModelTimeouts",
       },
       training_data_config: {
-        value: cdktf.listMapperHcl(bedrockCustomModelTrainingDataConfigToHclTerraform, true)(this._trainingDataConfig.internalValue),
+        value: cdktn.listMapperHcl(bedrockCustomModelTrainingDataConfigToHclTerraform, true)(this._trainingDataConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockCustomModelTrainingDataConfigList",
       },
       validation_data_config: {
-        value: cdktf.listMapperHcl(bedrockCustomModelValidationDataConfigToHclTerraform, true)(this._validationDataConfig.internalValue),
+        value: cdktn.listMapperHcl(bedrockCustomModelValidationDataConfigToHclTerraform, true)(this._validationDataConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockCustomModelValidationDataConfigList",
       },
       vpc_config: {
-        value: cdktf.listMapperHcl(bedrockCustomModelVpcConfigToHclTerraform, true)(this._vpcConfig.internalValue),
+        value: cdktn.listMapperHcl(bedrockCustomModelVpcConfigToHclTerraform, true)(this._vpcConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockCustomModelVpcConfigList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Route53RecoveryreadinessReadinessCheckConfig extends cdktf.TerraformMetaArguments {
+export interface Route53RecoveryreadinessReadinessCheckConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53recoveryreadiness_readiness_check#id Route53RecoveryreadinessReadinessCheck#id}
   *
@@ -49,25 +49,25 @@ export interface Route53RecoveryreadinessReadinessCheckTimeouts {
   readonly delete?: string;
 }
 
-export function route53RecoveryreadinessReadinessCheckTimeoutsToTerraform(struct?: Route53RecoveryreadinessReadinessCheckTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53RecoveryreadinessReadinessCheckTimeoutsToTerraform(struct?: Route53RecoveryreadinessReadinessCheckTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete: cdktf.stringToTerraform(struct!.delete),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function route53RecoveryreadinessReadinessCheckTimeoutsToHclTerraform(struct?: Route53RecoveryreadinessReadinessCheckTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53RecoveryreadinessReadinessCheckTimeoutsToHclTerraform(struct?: Route53RecoveryreadinessReadinessCheckTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -78,19 +78,19 @@ export function route53RecoveryreadinessReadinessCheckTimeoutsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecoveryreadinessReadinessCheckTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Route53RecoveryreadinessReadinessCheckTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Route53RecoveryreadinessReadinessCheckTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53RecoveryreadinessReadinessCheckTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -103,13 +103,13 @@ export class Route53RecoveryreadinessReadinessCheckTimeoutsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53RecoveryreadinessReadinessCheckTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53RecoveryreadinessReadinessCheckTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -140,7 +140,7 @@ export class Route53RecoveryreadinessReadinessCheckTimeoutsOutputReference exten
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53recoveryreadiness_readiness_check aws_route53recoveryreadiness_readiness_check}
 */
-export class Route53RecoveryreadinessReadinessCheck extends cdktf.TerraformResource {
+export class Route53RecoveryreadinessReadinessCheck extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -151,14 +151,14 @@ export class Route53RecoveryreadinessReadinessCheck extends cdktf.TerraformResou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Route53RecoveryreadinessReadinessCheck resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Route53RecoveryreadinessReadinessCheck resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53RecoveryreadinessReadinessCheck to import
   * @param importFromId The id of the existing Route53RecoveryreadinessReadinessCheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53recoveryreadiness_readiness_check#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53RecoveryreadinessReadinessCheck to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53recoveryreadiness_readiness_check", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53recoveryreadiness_readiness_check", importId: importFromId, provider });
       }
 
   // ===========
@@ -301,11 +301,11 @@ export class Route53RecoveryreadinessReadinessCheck extends cdktf.TerraformResou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      readiness_check_name: cdktf.stringToTerraform(this._readinessCheckName),
-      resource_set_name: cdktf.stringToTerraform(this._resourceSetName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      id: cdktn.stringToTerraform(this._id),
+      readiness_check_name: cdktn.stringToTerraform(this._readinessCheckName),
+      resource_set_name: cdktn.stringToTerraform(this._resourceSetName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       timeouts: route53RecoveryreadinessReadinessCheckTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -313,31 +313,31 @@ export class Route53RecoveryreadinessReadinessCheck extends cdktf.TerraformResou
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       readiness_check_name: {
-        value: cdktf.stringToHclTerraform(this._readinessCheckName),
+        value: cdktn.stringToHclTerraform(this._readinessCheckName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_set_name: {
-        value: cdktf.stringToHclTerraform(this._resourceSetName),
+        value: cdktn.stringToHclTerraform(this._resourceSetName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

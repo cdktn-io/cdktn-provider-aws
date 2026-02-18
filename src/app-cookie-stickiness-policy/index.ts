@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppCookieStickinessPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface AppCookieStickinessPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/app_cookie_stickiness_policy#cookie_name AppCookieStickinessPolicy#cookie_name}
   */
@@ -46,7 +46,7 @@ export interface AppCookieStickinessPolicyConfig extends cdktf.TerraformMetaArgu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/app_cookie_stickiness_policy aws_app_cookie_stickiness_policy}
 */
-export class AppCookieStickinessPolicy extends cdktf.TerraformResource {
+export class AppCookieStickinessPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class AppCookieStickinessPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppCookieStickinessPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppCookieStickinessPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppCookieStickinessPolicy to import
   * @param importFromId The id of the existing AppCookieStickinessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/app_cookie_stickiness_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppCookieStickinessPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_app_cookie_stickiness_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_app_cookie_stickiness_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -196,49 +196,49 @@ export class AppCookieStickinessPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cookie_name: cdktf.stringToTerraform(this._cookieName),
-      id: cdktf.stringToTerraform(this._id),
-      lb_port: cdktf.numberToTerraform(this._lbPort),
-      load_balancer: cdktf.stringToTerraform(this._loadBalancer),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      cookie_name: cdktn.stringToTerraform(this._cookieName),
+      id: cdktn.stringToTerraform(this._id),
+      lb_port: cdktn.numberToTerraform(this._lbPort),
+      load_balancer: cdktn.stringToTerraform(this._loadBalancer),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cookie_name: {
-        value: cdktf.stringToHclTerraform(this._cookieName),
+        value: cdktn.stringToHclTerraform(this._cookieName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lb_port: {
-        value: cdktf.numberToHclTerraform(this._lbPort),
+        value: cdktn.numberToHclTerraform(this._lbPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       load_balancer: {
-        value: cdktf.stringToHclTerraform(this._loadBalancer),
+        value: cdktn.stringToHclTerraform(this._loadBalancer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

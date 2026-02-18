@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EcrPullTimeUpdateExclusionConfig extends cdktf.TerraformMetaArguments {
+export interface EcrPullTimeUpdateExclusionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_pull_time_update_exclusion#principal_arn EcrPullTimeUpdateExclusion#principal_arn}
   */
@@ -27,7 +27,7 @@ export interface EcrPullTimeUpdateExclusionConfig extends cdktf.TerraformMetaArg
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_pull_time_update_exclusion aws_ecr_pull_time_update_exclusion}
 */
-export class EcrPullTimeUpdateExclusion extends cdktf.TerraformResource {
+export class EcrPullTimeUpdateExclusion extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -38,14 +38,14 @@ export class EcrPullTimeUpdateExclusion extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EcrPullTimeUpdateExclusion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EcrPullTimeUpdateExclusion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EcrPullTimeUpdateExclusion to import
   * @param importFromId The id of the existing EcrPullTimeUpdateExclusion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_pull_time_update_exclusion#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EcrPullTimeUpdateExclusion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_pull_time_update_exclusion", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_pull_time_update_exclusion", importId: importFromId, provider });
       }
 
   // ===========
@@ -118,21 +118,21 @@ export class EcrPullTimeUpdateExclusion extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      principal_arn: cdktf.stringToTerraform(this._principalArn),
-      region: cdktf.stringToTerraform(this._region),
+      principal_arn: cdktn.stringToTerraform(this._principalArn),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       principal_arn: {
-        value: cdktf.stringToHclTerraform(this._principalArn),
+        value: cdktn.stringToHclTerraform(this._principalArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

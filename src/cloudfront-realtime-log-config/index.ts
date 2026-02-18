@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudfrontRealtimeLogConfigConfig extends cdktf.TerraformMetaArguments {
+export interface CloudfrontRealtimeLogConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_realtime_log_config#fields CloudfrontRealtimeLogConfig#fields}
   */
@@ -50,31 +50,31 @@ export interface CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig {
 }
 
 export function cloudfrontRealtimeLogConfigEndpointKinesisStreamConfigToTerraform(struct?: CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference | CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    stream_arn: cdktf.stringToTerraform(struct!.streamArn),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    stream_arn: cdktn.stringToTerraform(struct!.streamArn),
   }
 }
 
 
 export function cloudfrontRealtimeLogConfigEndpointKinesisStreamConfigToHclTerraform(struct?: CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference | CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stream_arn: {
-      value: cdktf.stringToHclTerraform(struct!.streamArn),
+      value: cdktn.stringToHclTerraform(struct!.streamArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -85,14 +85,14 @@ export function cloudfrontRealtimeLogConfigEndpointKinesisStreamConfigToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference extends cdktf.ComplexObject {
+export class CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -163,25 +163,25 @@ export interface CloudfrontRealtimeLogConfigEndpoint {
 }
 
 export function cloudfrontRealtimeLogConfigEndpointToTerraform(struct?: CloudfrontRealtimeLogConfigEndpointOutputReference | CloudfrontRealtimeLogConfigEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    stream_type: cdktf.stringToTerraform(struct!.streamType),
+    stream_type: cdktn.stringToTerraform(struct!.streamType),
     kinesis_stream_config: cloudfrontRealtimeLogConfigEndpointKinesisStreamConfigToTerraform(struct!.kinesisStreamConfig),
   }
 }
 
 
 export function cloudfrontRealtimeLogConfigEndpointToHclTerraform(struct?: CloudfrontRealtimeLogConfigEndpointOutputReference | CloudfrontRealtimeLogConfigEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     stream_type: {
-      value: cdktf.stringToHclTerraform(struct!.streamType),
+      value: cdktn.stringToHclTerraform(struct!.streamType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -198,14 +198,14 @@ export function cloudfrontRealtimeLogConfigEndpointToHclTerraform(struct?: Cloud
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudfrontRealtimeLogConfigEndpointOutputReference extends cdktf.ComplexObject {
+export class CloudfrontRealtimeLogConfigEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -266,7 +266,7 @@ export class CloudfrontRealtimeLogConfigEndpointOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config}
 */
-export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
+export class CloudfrontRealtimeLogConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -277,14 +277,14 @@ export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudfrontRealtimeLogConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudfrontRealtimeLogConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudfrontRealtimeLogConfig to import
   * @param importFromId The id of the existing CloudfrontRealtimeLogConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_realtime_log_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudfrontRealtimeLogConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_realtime_log_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_realtime_log_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -333,7 +333,7 @@ export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
   // fields - computed: false, optional: false, required: true
   private _fields?: string[]; 
   public get fields() {
-    return cdktf.Fn.tolist(this.getListAttribute('fields'));
+    return cdktn.Fn.tolist(this.getListAttribute('fields'));
   }
   public set fields(value: string[]) {
     this._fields = value;
@@ -404,10 +404,10 @@ export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      fields: cdktf.listMapper(cdktf.stringToTerraform, false)(this._fields),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      sampling_rate: cdktf.numberToTerraform(this._samplingRate),
+      fields: cdktn.listMapper(cdktn.stringToTerraform, false)(this._fields),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      sampling_rate: cdktn.numberToTerraform(this._samplingRate),
       endpoint: cloudfrontRealtimeLogConfigEndpointToTerraform(this._endpoint.internalValue),
     };
   }
@@ -415,25 +415,25 @@ export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       fields: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._fields),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._fields),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sampling_rate: {
-        value: cdktf.numberToHclTerraform(this._samplingRate),
+        value: cdktn.numberToHclTerraform(this._samplingRate),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

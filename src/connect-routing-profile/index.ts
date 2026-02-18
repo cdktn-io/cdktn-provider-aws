@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ConnectRoutingProfileConfig extends cdktf.TerraformMetaArguments {
+export interface ConnectRoutingProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_routing_profile#default_outbound_queue_id ConnectRoutingProfile#default_outbound_queue_id}
   */
@@ -54,13 +54,13 @@ export interface ConnectRoutingProfileConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_routing_profile#media_concurrencies ConnectRoutingProfile#media_concurrencies}
   */
-  readonly mediaConcurrencies: ConnectRoutingProfileMediaConcurrencies[] | cdktf.IResolvable;
+  readonly mediaConcurrencies: ConnectRoutingProfileMediaConcurrencies[] | cdktn.IResolvable;
   /**
   * queue_configs block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_routing_profile#queue_configs ConnectRoutingProfile#queue_configs}
   */
-  readonly queueConfigs?: ConnectRoutingProfileQueueConfigs[] | cdktf.IResolvable;
+  readonly queueConfigs?: ConnectRoutingProfileQueueConfigs[] | cdktn.IResolvable;
 }
 export interface ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior {
   /**
@@ -70,24 +70,24 @@ export interface ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior {
 }
 
 export function connectRoutingProfileMediaConcurrenciesCrossChannelBehaviorToTerraform(struct?: ConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorOutputReference | ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    behavior_type: cdktf.stringToTerraform(struct!.behaviorType),
+    behavior_type: cdktn.stringToTerraform(struct!.behaviorType),
   }
 }
 
 
 export function connectRoutingProfileMediaConcurrenciesCrossChannelBehaviorToHclTerraform(struct?: ConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorOutputReference | ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     behavior_type: {
-      value: cdktf.stringToHclTerraform(struct!.behaviorType),
+      value: cdktn.stringToHclTerraform(struct!.behaviorType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -98,14 +98,14 @@ export function connectRoutingProfileMediaConcurrenciesCrossChannelBehaviorToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorOutputReference extends cdktf.ComplexObject {
+export class ConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -160,33 +160,33 @@ export interface ConnectRoutingProfileMediaConcurrencies {
   readonly crossChannelBehavior?: ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior;
 }
 
-export function connectRoutingProfileMediaConcurrenciesToTerraform(struct?: ConnectRoutingProfileMediaConcurrencies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function connectRoutingProfileMediaConcurrenciesToTerraform(struct?: ConnectRoutingProfileMediaConcurrencies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    channel: cdktf.stringToTerraform(struct!.channel),
-    concurrency: cdktf.numberToTerraform(struct!.concurrency),
+    channel: cdktn.stringToTerraform(struct!.channel),
+    concurrency: cdktn.numberToTerraform(struct!.concurrency),
     cross_channel_behavior: connectRoutingProfileMediaConcurrenciesCrossChannelBehaviorToTerraform(struct!.crossChannelBehavior),
   }
 }
 
 
-export function connectRoutingProfileMediaConcurrenciesToHclTerraform(struct?: ConnectRoutingProfileMediaConcurrencies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function connectRoutingProfileMediaConcurrenciesToHclTerraform(struct?: ConnectRoutingProfileMediaConcurrencies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     channel: {
-      value: cdktf.stringToHclTerraform(struct!.channel),
+      value: cdktn.stringToHclTerraform(struct!.channel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     concurrency: {
-      value: cdktf.numberToHclTerraform(struct!.concurrency),
+      value: cdktn.numberToHclTerraform(struct!.concurrency),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -203,9 +203,9 @@ export function connectRoutingProfileMediaConcurrenciesToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConnectRoutingProfileMediaConcurrenciesOutputReference extends cdktf.ComplexObject {
+export class ConnectRoutingProfileMediaConcurrenciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -213,11 +213,11 @@ export class ConnectRoutingProfileMediaConcurrenciesOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConnectRoutingProfileMediaConcurrencies | cdktf.IResolvable | undefined {
+  public get internalValue(): ConnectRoutingProfileMediaConcurrencies | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -238,7 +238,7 @@ export class ConnectRoutingProfileMediaConcurrenciesOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConnectRoutingProfileMediaConcurrencies | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConnectRoutingProfileMediaConcurrencies | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -246,7 +246,7 @@ export class ConnectRoutingProfileMediaConcurrenciesOutputReference extends cdkt
       this._concurrency = undefined;
       this._crossChannelBehavior.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -302,15 +302,15 @@ export class ConnectRoutingProfileMediaConcurrenciesOutputReference extends cdkt
   }
 }
 
-export class ConnectRoutingProfileMediaConcurrenciesList extends cdktf.ComplexList {
-  public internalValue? : ConnectRoutingProfileMediaConcurrencies[] | cdktf.IResolvable
+export class ConnectRoutingProfileMediaConcurrenciesList extends cdktn.ComplexList {
+  public internalValue? : ConnectRoutingProfileMediaConcurrencies[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -340,46 +340,46 @@ export interface ConnectRoutingProfileQueueConfigs {
   readonly queueId: string;
 }
 
-export function connectRoutingProfileQueueConfigsToTerraform(struct?: ConnectRoutingProfileQueueConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function connectRoutingProfileQueueConfigsToTerraform(struct?: ConnectRoutingProfileQueueConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    channel: cdktf.stringToTerraform(struct!.channel),
-    delay: cdktf.numberToTerraform(struct!.delay),
-    priority: cdktf.numberToTerraform(struct!.priority),
-    queue_id: cdktf.stringToTerraform(struct!.queueId),
+    channel: cdktn.stringToTerraform(struct!.channel),
+    delay: cdktn.numberToTerraform(struct!.delay),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    queue_id: cdktn.stringToTerraform(struct!.queueId),
   }
 }
 
 
-export function connectRoutingProfileQueueConfigsToHclTerraform(struct?: ConnectRoutingProfileQueueConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function connectRoutingProfileQueueConfigsToHclTerraform(struct?: ConnectRoutingProfileQueueConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     channel: {
-      value: cdktf.stringToHclTerraform(struct!.channel),
+      value: cdktn.stringToHclTerraform(struct!.channel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delay: {
-      value: cdktf.numberToHclTerraform(struct!.delay),
+      value: cdktn.numberToHclTerraform(struct!.delay),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     queue_id: {
-      value: cdktf.stringToHclTerraform(struct!.queueId),
+      value: cdktn.stringToHclTerraform(struct!.queueId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -390,9 +390,9 @@ export function connectRoutingProfileQueueConfigsToHclTerraform(struct?: Connect
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConnectRoutingProfileQueueConfigsOutputReference extends cdktf.ComplexObject {
+export class ConnectRoutingProfileQueueConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -400,11 +400,11 @@ export class ConnectRoutingProfileQueueConfigsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConnectRoutingProfileQueueConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): ConnectRoutingProfileQueueConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -429,7 +429,7 @@ export class ConnectRoutingProfileQueueConfigsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConnectRoutingProfileQueueConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConnectRoutingProfileQueueConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -438,7 +438,7 @@ export class ConnectRoutingProfileQueueConfigsOutputReference extends cdktf.Comp
       this._priority = undefined;
       this._queueId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -515,15 +515,15 @@ export class ConnectRoutingProfileQueueConfigsOutputReference extends cdktf.Comp
   }
 }
 
-export class ConnectRoutingProfileQueueConfigsList extends cdktf.ComplexList {
-  public internalValue? : ConnectRoutingProfileQueueConfigs[] | cdktf.IResolvable
+export class ConnectRoutingProfileQueueConfigsList extends cdktn.ComplexList {
+  public internalValue? : ConnectRoutingProfileQueueConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -538,7 +538,7 @@ export class ConnectRoutingProfileQueueConfigsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_routing_profile aws_connect_routing_profile}
 */
-export class ConnectRoutingProfile extends cdktf.TerraformResource {
+export class ConnectRoutingProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -549,14 +549,14 @@ export class ConnectRoutingProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ConnectRoutingProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ConnectRoutingProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConnectRoutingProfile to import
   * @param importFromId The id of the existing ConnectRoutingProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_routing_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConnectRoutingProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_routing_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_routing_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -733,7 +733,7 @@ export class ConnectRoutingProfile extends cdktf.TerraformResource {
   public get mediaConcurrencies() {
     return this._mediaConcurrencies;
   }
-  public putMediaConcurrencies(value: ConnectRoutingProfileMediaConcurrencies[] | cdktf.IResolvable) {
+  public putMediaConcurrencies(value: ConnectRoutingProfileMediaConcurrencies[] | cdktn.IResolvable) {
     this._mediaConcurrencies.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -746,7 +746,7 @@ export class ConnectRoutingProfile extends cdktf.TerraformResource {
   public get queueConfigs() {
     return this._queueConfigs;
   }
-  public putQueueConfigs(value: ConnectRoutingProfileQueueConfigs[] | cdktf.IResolvable) {
+  public putQueueConfigs(value: ConnectRoutingProfileQueueConfigs[] | cdktn.IResolvable) {
     this._queueConfigs.internalValue = value;
   }
   public resetQueueConfigs() {
@@ -763,77 +763,77 @@ export class ConnectRoutingProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_outbound_queue_id: cdktf.stringToTerraform(this._defaultOutboundQueueId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      media_concurrencies: cdktf.listMapper(connectRoutingProfileMediaConcurrenciesToTerraform, true)(this._mediaConcurrencies.internalValue),
-      queue_configs: cdktf.listMapper(connectRoutingProfileQueueConfigsToTerraform, true)(this._queueConfigs.internalValue),
+      default_outbound_queue_id: cdktn.stringToTerraform(this._defaultOutboundQueueId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      media_concurrencies: cdktn.listMapper(connectRoutingProfileMediaConcurrenciesToTerraform, true)(this._mediaConcurrencies.internalValue),
+      queue_configs: cdktn.listMapper(connectRoutingProfileQueueConfigsToTerraform, true)(this._queueConfigs.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       default_outbound_queue_id: {
-        value: cdktf.stringToHclTerraform(this._defaultOutboundQueueId),
+        value: cdktn.stringToHclTerraform(this._defaultOutboundQueueId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       media_concurrencies: {
-        value: cdktf.listMapperHcl(connectRoutingProfileMediaConcurrenciesToHclTerraform, true)(this._mediaConcurrencies.internalValue),
+        value: cdktn.listMapperHcl(connectRoutingProfileMediaConcurrenciesToHclTerraform, true)(this._mediaConcurrencies.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ConnectRoutingProfileMediaConcurrenciesList",
       },
       queue_configs: {
-        value: cdktf.listMapperHcl(connectRoutingProfileQueueConfigsToHclTerraform, true)(this._queueConfigs.internalValue),
+        value: cdktn.listMapperHcl(connectRoutingProfileQueueConfigsToHclTerraform, true)(this._queueConfigs.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ConnectRoutingProfileQueueConfigsList",

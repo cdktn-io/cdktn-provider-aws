@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CleanroomsCollaborationConfig extends cdktf.TerraformMetaArguments {
+export interface CleanroomsCollaborationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_collaboration#analytics_engine CleanroomsCollaboration#analytics_engine}
   */
@@ -61,7 +61,7 @@ export interface CleanroomsCollaborationConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_collaboration#member CleanroomsCollaboration#member}
   */
-  readonly member?: CleanroomsCollaborationMember[] | cdktf.IResolvable;
+  readonly member?: CleanroomsCollaborationMember[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -73,61 +73,61 @@ export interface CleanroomsCollaborationDataEncryptionMetadata {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_collaboration#allow_clear_text CleanroomsCollaboration#allow_clear_text}
   */
-  readonly allowClearText: boolean | cdktf.IResolvable;
+  readonly allowClearText: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_collaboration#allow_duplicates CleanroomsCollaboration#allow_duplicates}
   */
-  readonly allowDuplicates: boolean | cdktf.IResolvable;
+  readonly allowDuplicates: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_collaboration#allow_joins_on_columns_with_different_names CleanroomsCollaboration#allow_joins_on_columns_with_different_names}
   */
-  readonly allowJoinsOnColumnsWithDifferentNames: boolean | cdktf.IResolvable;
+  readonly allowJoinsOnColumnsWithDifferentNames: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_collaboration#preserve_nulls CleanroomsCollaboration#preserve_nulls}
   */
-  readonly preserveNulls: boolean | cdktf.IResolvable;
+  readonly preserveNulls: boolean | cdktn.IResolvable;
 }
 
 export function cleanroomsCollaborationDataEncryptionMetadataToTerraform(struct?: CleanroomsCollaborationDataEncryptionMetadataOutputReference | CleanroomsCollaborationDataEncryptionMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_clear_text: cdktf.booleanToTerraform(struct!.allowClearText),
-    allow_duplicates: cdktf.booleanToTerraform(struct!.allowDuplicates),
-    allow_joins_on_columns_with_different_names: cdktf.booleanToTerraform(struct!.allowJoinsOnColumnsWithDifferentNames),
-    preserve_nulls: cdktf.booleanToTerraform(struct!.preserveNulls),
+    allow_clear_text: cdktn.booleanToTerraform(struct!.allowClearText),
+    allow_duplicates: cdktn.booleanToTerraform(struct!.allowDuplicates),
+    allow_joins_on_columns_with_different_names: cdktn.booleanToTerraform(struct!.allowJoinsOnColumnsWithDifferentNames),
+    preserve_nulls: cdktn.booleanToTerraform(struct!.preserveNulls),
   }
 }
 
 
 export function cleanroomsCollaborationDataEncryptionMetadataToHclTerraform(struct?: CleanroomsCollaborationDataEncryptionMetadataOutputReference | CleanroomsCollaborationDataEncryptionMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_clear_text: {
-      value: cdktf.booleanToHclTerraform(struct!.allowClearText),
+      value: cdktn.booleanToHclTerraform(struct!.allowClearText),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_duplicates: {
-      value: cdktf.booleanToHclTerraform(struct!.allowDuplicates),
+      value: cdktn.booleanToHclTerraform(struct!.allowDuplicates),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_joins_on_columns_with_different_names: {
-      value: cdktf.booleanToHclTerraform(struct!.allowJoinsOnColumnsWithDifferentNames),
+      value: cdktn.booleanToHclTerraform(struct!.allowJoinsOnColumnsWithDifferentNames),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     preserve_nulls: {
-      value: cdktf.booleanToHclTerraform(struct!.preserveNulls),
+      value: cdktn.booleanToHclTerraform(struct!.preserveNulls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -138,14 +138,14 @@ export function cleanroomsCollaborationDataEncryptionMetadataToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CleanroomsCollaborationDataEncryptionMetadataOutputReference extends cdktf.ComplexObject {
+export class CleanroomsCollaborationDataEncryptionMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -189,11 +189,11 @@ export class CleanroomsCollaborationDataEncryptionMetadataOutputReference extend
   }
 
   // allow_clear_text - computed: false, optional: false, required: true
-  private _allowClearText?: boolean | cdktf.IResolvable; 
+  private _allowClearText?: boolean | cdktn.IResolvable; 
   public get allowClearText() {
     return this.getBooleanAttribute('allow_clear_text');
   }
-  public set allowClearText(value: boolean | cdktf.IResolvable) {
+  public set allowClearText(value: boolean | cdktn.IResolvable) {
     this._allowClearText = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -202,11 +202,11 @@ export class CleanroomsCollaborationDataEncryptionMetadataOutputReference extend
   }
 
   // allow_duplicates - computed: false, optional: false, required: true
-  private _allowDuplicates?: boolean | cdktf.IResolvable; 
+  private _allowDuplicates?: boolean | cdktn.IResolvable; 
   public get allowDuplicates() {
     return this.getBooleanAttribute('allow_duplicates');
   }
-  public set allowDuplicates(value: boolean | cdktf.IResolvable) {
+  public set allowDuplicates(value: boolean | cdktn.IResolvable) {
     this._allowDuplicates = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -215,11 +215,11 @@ export class CleanroomsCollaborationDataEncryptionMetadataOutputReference extend
   }
 
   // allow_joins_on_columns_with_different_names - computed: false, optional: false, required: true
-  private _allowJoinsOnColumnsWithDifferentNames?: boolean | cdktf.IResolvable; 
+  private _allowJoinsOnColumnsWithDifferentNames?: boolean | cdktn.IResolvable; 
   public get allowJoinsOnColumnsWithDifferentNames() {
     return this.getBooleanAttribute('allow_joins_on_columns_with_different_names');
   }
-  public set allowJoinsOnColumnsWithDifferentNames(value: boolean | cdktf.IResolvable) {
+  public set allowJoinsOnColumnsWithDifferentNames(value: boolean | cdktn.IResolvable) {
     this._allowJoinsOnColumnsWithDifferentNames = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -228,11 +228,11 @@ export class CleanroomsCollaborationDataEncryptionMetadataOutputReference extend
   }
 
   // preserve_nulls - computed: false, optional: false, required: true
-  private _preserveNulls?: boolean | cdktf.IResolvable; 
+  private _preserveNulls?: boolean | cdktn.IResolvable; 
   public get preserveNulls() {
     return this.getBooleanAttribute('preserve_nulls');
   }
-  public set preserveNulls(value: boolean | cdktf.IResolvable) {
+  public set preserveNulls(value: boolean | cdktn.IResolvable) {
     this._preserveNulls = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -255,39 +255,39 @@ export interface CleanroomsCollaborationMember {
   readonly memberAbilities: string[];
 }
 
-export function cleanroomsCollaborationMemberToTerraform(struct?: CleanroomsCollaborationMember | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cleanroomsCollaborationMemberToTerraform(struct?: CleanroomsCollaborationMember | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_id: cdktf.stringToTerraform(struct!.accountId),
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    member_abilities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.memberAbilities),
+    account_id: cdktn.stringToTerraform(struct!.accountId),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    member_abilities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.memberAbilities),
   }
 }
 
 
-export function cleanroomsCollaborationMemberToHclTerraform(struct?: CleanroomsCollaborationMember | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cleanroomsCollaborationMemberToHclTerraform(struct?: CleanroomsCollaborationMember | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_id: {
-      value: cdktf.stringToHclTerraform(struct!.accountId),
+      value: cdktn.stringToHclTerraform(struct!.accountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     member_abilities: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.memberAbilities),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.memberAbilities),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -298,9 +298,9 @@ export function cleanroomsCollaborationMemberToHclTerraform(struct?: CleanroomsC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CleanroomsCollaborationMemberOutputReference extends cdktf.ComplexObject {
+export class CleanroomsCollaborationMemberOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -308,11 +308,11 @@ export class CleanroomsCollaborationMemberOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CleanroomsCollaborationMember | cdktf.IResolvable | undefined {
+  public get internalValue(): CleanroomsCollaborationMember | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -333,7 +333,7 @@ export class CleanroomsCollaborationMemberOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CleanroomsCollaborationMember | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CleanroomsCollaborationMember | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -341,7 +341,7 @@ export class CleanroomsCollaborationMemberOutputReference extends cdktf.ComplexO
       this._displayName = undefined;
       this._memberAbilities = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -399,15 +399,15 @@ export class CleanroomsCollaborationMemberOutputReference extends cdktf.ComplexO
   }
 }
 
-export class CleanroomsCollaborationMemberList extends cdktf.ComplexList {
-  public internalValue? : CleanroomsCollaborationMember[] | cdktf.IResolvable
+export class CleanroomsCollaborationMemberList extends cdktn.ComplexList {
+  public internalValue? : CleanroomsCollaborationMember[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -433,39 +433,39 @@ export interface CleanroomsCollaborationTimeouts {
   readonly update?: string;
 }
 
-export function cleanroomsCollaborationTimeoutsToTerraform(struct?: CleanroomsCollaborationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cleanroomsCollaborationTimeoutsToTerraform(struct?: CleanroomsCollaborationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cleanroomsCollaborationTimeoutsToHclTerraform(struct?: CleanroomsCollaborationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cleanroomsCollaborationTimeoutsToHclTerraform(struct?: CleanroomsCollaborationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -476,19 +476,19 @@ export function cleanroomsCollaborationTimeoutsToHclTerraform(struct?: Cleanroom
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CleanroomsCollaborationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CleanroomsCollaborationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CleanroomsCollaborationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CleanroomsCollaborationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -509,7 +509,7 @@ export class CleanroomsCollaborationTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CleanroomsCollaborationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CleanroomsCollaborationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -517,7 +517,7 @@ export class CleanroomsCollaborationTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -582,7 +582,7 @@ export class CleanroomsCollaborationTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_collaboration aws_cleanrooms_collaboration}
 */
-export class CleanroomsCollaboration extends cdktf.TerraformResource {
+export class CleanroomsCollaboration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -593,14 +593,14 @@ export class CleanroomsCollaboration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CleanroomsCollaboration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CleanroomsCollaboration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CleanroomsCollaboration to import
   * @param importFromId The id of the existing CleanroomsCollaboration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_collaboration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CleanroomsCollaboration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cleanrooms_collaboration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cleanrooms_collaboration", importId: importFromId, provider });
       }
 
   // ===========
@@ -818,7 +818,7 @@ export class CleanroomsCollaboration extends cdktf.TerraformResource {
   public get member() {
     return this._member;
   }
-  public putMember(value: CleanroomsCollaborationMember[] | cdktf.IResolvable) {
+  public putMember(value: CleanroomsCollaborationMember[] | cdktn.IResolvable) {
     this._member.internalValue = value;
   }
   public resetMember() {
@@ -851,17 +851,17 @@ export class CleanroomsCollaboration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      analytics_engine: cdktf.stringToTerraform(this._analyticsEngine),
-      creator_display_name: cdktf.stringToTerraform(this._creatorDisplayName),
-      creator_member_abilities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._creatorMemberAbilities),
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      query_log_status: cdktf.stringToTerraform(this._queryLogStatus),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      analytics_engine: cdktn.stringToTerraform(this._analyticsEngine),
+      creator_display_name: cdktn.stringToTerraform(this._creatorDisplayName),
+      creator_member_abilities: cdktn.listMapper(cdktn.stringToTerraform, false)(this._creatorMemberAbilities),
+      description: cdktn.stringToTerraform(this._description),
+      name: cdktn.stringToTerraform(this._name),
+      query_log_status: cdktn.stringToTerraform(this._queryLogStatus),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       data_encryption_metadata: cleanroomsCollaborationDataEncryptionMetadataToTerraform(this._dataEncryptionMetadata.internalValue),
-      member: cdktf.listMapper(cleanroomsCollaborationMemberToTerraform, true)(this._member.internalValue),
+      member: cdktn.listMapper(cleanroomsCollaborationMemberToTerraform, true)(this._member.internalValue),
       timeouts: cleanroomsCollaborationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -869,55 +869,55 @@ export class CleanroomsCollaboration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       analytics_engine: {
-        value: cdktf.stringToHclTerraform(this._analyticsEngine),
+        value: cdktn.stringToHclTerraform(this._analyticsEngine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       creator_display_name: {
-        value: cdktf.stringToHclTerraform(this._creatorDisplayName),
+        value: cdktn.stringToHclTerraform(this._creatorDisplayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       creator_member_abilities: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._creatorMemberAbilities),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._creatorMemberAbilities),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_log_status: {
-        value: cdktf.stringToHclTerraform(this._queryLogStatus),
+        value: cdktn.stringToHclTerraform(this._queryLogStatus),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -929,7 +929,7 @@ export class CleanroomsCollaboration extends cdktf.TerraformResource {
         storageClassType: "CleanroomsCollaborationDataEncryptionMetadataList",
       },
       member: {
-        value: cdktf.listMapperHcl(cleanroomsCollaborationMemberToHclTerraform, true)(this._member.internalValue),
+        value: cdktn.listMapperHcl(cleanroomsCollaborationMemberToHclTerraform, true)(this._member.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CleanroomsCollaborationMemberList",

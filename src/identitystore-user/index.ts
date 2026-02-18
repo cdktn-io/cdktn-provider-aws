@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IdentitystoreUserConfig extends cdktf.TerraformMetaArguments {
+export interface IdentitystoreUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/identitystore_user#display_name IdentitystoreUser#display_name}
   */
@@ -94,8 +94,8 @@ export interface IdentitystoreUserExternalIds {
 }
 
 export function identitystoreUserExternalIdsToTerraform(struct?: IdentitystoreUserExternalIds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -104,8 +104,8 @@ export function identitystoreUserExternalIdsToTerraform(struct?: IdentitystoreUs
 
 
 export function identitystoreUserExternalIdsToHclTerraform(struct?: IdentitystoreUserExternalIds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -113,7 +113,7 @@ export function identitystoreUserExternalIdsToHclTerraform(struct?: Identitystor
   return attrs;
 }
 
-export class IdentitystoreUserExternalIdsOutputReference extends cdktf.ComplexObject {
+export class IdentitystoreUserExternalIdsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -122,7 +122,7 @@ export class IdentitystoreUserExternalIdsOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -152,14 +152,14 @@ export class IdentitystoreUserExternalIdsOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class IdentitystoreUserExternalIdsList extends cdktf.ComplexList {
+export class IdentitystoreUserExternalIdsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -190,7 +190,7 @@ export interface IdentitystoreUserAddresses {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/identitystore_user#primary IdentitystoreUser#primary}
   */
-  readonly primary?: boolean | cdktf.IResolvable;
+  readonly primary?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/identitystore_user#region IdentitystoreUser#region}
   */
@@ -206,73 +206,73 @@ export interface IdentitystoreUserAddresses {
 }
 
 export function identitystoreUserAddressesToTerraform(struct?: IdentitystoreUserAddressesOutputReference | IdentitystoreUserAddresses): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    country: cdktf.stringToTerraform(struct!.country),
-    formatted: cdktf.stringToTerraform(struct!.formatted),
-    locality: cdktf.stringToTerraform(struct!.locality),
-    postal_code: cdktf.stringToTerraform(struct!.postalCode),
-    primary: cdktf.booleanToTerraform(struct!.primary),
-    region: cdktf.stringToTerraform(struct!.region),
-    street_address: cdktf.stringToTerraform(struct!.streetAddress),
-    type: cdktf.stringToTerraform(struct!.type),
+    country: cdktn.stringToTerraform(struct!.country),
+    formatted: cdktn.stringToTerraform(struct!.formatted),
+    locality: cdktn.stringToTerraform(struct!.locality),
+    postal_code: cdktn.stringToTerraform(struct!.postalCode),
+    primary: cdktn.booleanToTerraform(struct!.primary),
+    region: cdktn.stringToTerraform(struct!.region),
+    street_address: cdktn.stringToTerraform(struct!.streetAddress),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function identitystoreUserAddressesToHclTerraform(struct?: IdentitystoreUserAddressesOutputReference | IdentitystoreUserAddresses): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     country: {
-      value: cdktf.stringToHclTerraform(struct!.country),
+      value: cdktn.stringToHclTerraform(struct!.country),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     formatted: {
-      value: cdktf.stringToHclTerraform(struct!.formatted),
+      value: cdktn.stringToHclTerraform(struct!.formatted),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     locality: {
-      value: cdktf.stringToHclTerraform(struct!.locality),
+      value: cdktn.stringToHclTerraform(struct!.locality),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     postal_code: {
-      value: cdktf.stringToHclTerraform(struct!.postalCode),
+      value: cdktn.stringToHclTerraform(struct!.postalCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary: {
-      value: cdktf.booleanToHclTerraform(struct!.primary),
+      value: cdktn.booleanToHclTerraform(struct!.primary),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     street_address: {
-      value: cdktf.stringToHclTerraform(struct!.streetAddress),
+      value: cdktn.stringToHclTerraform(struct!.streetAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -283,14 +283,14 @@ export function identitystoreUserAddressesToHclTerraform(struct?: IdentitystoreU
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentitystoreUserAddressesOutputReference extends cdktf.ComplexObject {
+export class IdentitystoreUserAddressesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -422,11 +422,11 @@ export class IdentitystoreUserAddressesOutputReference extends cdktf.ComplexObje
   }
 
   // primary - computed: false, optional: true, required: false
-  private _primary?: boolean | cdktf.IResolvable; 
+  private _primary?: boolean | cdktn.IResolvable; 
   public get primary() {
     return this.getBooleanAttribute('primary');
   }
-  public set primary(value: boolean | cdktf.IResolvable) {
+  public set primary(value: boolean | cdktn.IResolvable) {
     this._primary = value;
   }
   public resetPrimary() {
@@ -489,7 +489,7 @@ export interface IdentitystoreUserEmails {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/identitystore_user#primary IdentitystoreUser#primary}
   */
-  readonly primary?: boolean | cdktf.IResolvable;
+  readonly primary?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/identitystore_user#type IdentitystoreUser#type}
   */
@@ -501,38 +501,38 @@ export interface IdentitystoreUserEmails {
 }
 
 export function identitystoreUserEmailsToTerraform(struct?: IdentitystoreUserEmailsOutputReference | IdentitystoreUserEmails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    primary: cdktf.booleanToTerraform(struct!.primary),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    primary: cdktn.booleanToTerraform(struct!.primary),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function identitystoreUserEmailsToHclTerraform(struct?: IdentitystoreUserEmailsOutputReference | IdentitystoreUserEmails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     primary: {
-      value: cdktf.booleanToHclTerraform(struct!.primary),
+      value: cdktn.booleanToHclTerraform(struct!.primary),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -543,14 +543,14 @@ export function identitystoreUserEmailsToHclTerraform(struct?: IdentitystoreUser
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentitystoreUserEmailsOutputReference extends cdktf.ComplexObject {
+export class IdentitystoreUserEmailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -588,11 +588,11 @@ export class IdentitystoreUserEmailsOutputReference extends cdktf.ComplexObject 
   }
 
   // primary - computed: false, optional: true, required: false
-  private _primary?: boolean | cdktf.IResolvable; 
+  private _primary?: boolean | cdktn.IResolvable; 
   public get primary() {
     return this.getBooleanAttribute('primary');
   }
-  public set primary(value: boolean | cdktf.IResolvable) {
+  public set primary(value: boolean | cdktn.IResolvable) {
     this._primary = value;
   }
   public resetPrimary() {
@@ -663,59 +663,59 @@ export interface IdentitystoreUserName {
 }
 
 export function identitystoreUserNameToTerraform(struct?: IdentitystoreUserNameOutputReference | IdentitystoreUserName): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    family_name: cdktf.stringToTerraform(struct!.familyName),
-    formatted: cdktf.stringToTerraform(struct!.formatted),
-    given_name: cdktf.stringToTerraform(struct!.givenName),
-    honorific_prefix: cdktf.stringToTerraform(struct!.honorificPrefix),
-    honorific_suffix: cdktf.stringToTerraform(struct!.honorificSuffix),
-    middle_name: cdktf.stringToTerraform(struct!.middleName),
+    family_name: cdktn.stringToTerraform(struct!.familyName),
+    formatted: cdktn.stringToTerraform(struct!.formatted),
+    given_name: cdktn.stringToTerraform(struct!.givenName),
+    honorific_prefix: cdktn.stringToTerraform(struct!.honorificPrefix),
+    honorific_suffix: cdktn.stringToTerraform(struct!.honorificSuffix),
+    middle_name: cdktn.stringToTerraform(struct!.middleName),
   }
 }
 
 
 export function identitystoreUserNameToHclTerraform(struct?: IdentitystoreUserNameOutputReference | IdentitystoreUserName): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     family_name: {
-      value: cdktf.stringToHclTerraform(struct!.familyName),
+      value: cdktn.stringToHclTerraform(struct!.familyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     formatted: {
-      value: cdktf.stringToHclTerraform(struct!.formatted),
+      value: cdktn.stringToHclTerraform(struct!.formatted),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     given_name: {
-      value: cdktf.stringToHclTerraform(struct!.givenName),
+      value: cdktn.stringToHclTerraform(struct!.givenName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     honorific_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.honorificPrefix),
+      value: cdktn.stringToHclTerraform(struct!.honorificPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     honorific_suffix: {
-      value: cdktf.stringToHclTerraform(struct!.honorificSuffix),
+      value: cdktn.stringToHclTerraform(struct!.honorificSuffix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     middle_name: {
-      value: cdktf.stringToHclTerraform(struct!.middleName),
+      value: cdktn.stringToHclTerraform(struct!.middleName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -726,14 +726,14 @@ export function identitystoreUserNameToHclTerraform(struct?: IdentitystoreUserNa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentitystoreUserNameOutputReference extends cdktf.ComplexObject {
+export class IdentitystoreUserNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -882,7 +882,7 @@ export interface IdentitystoreUserPhoneNumbers {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/identitystore_user#primary IdentitystoreUser#primary}
   */
-  readonly primary?: boolean | cdktf.IResolvable;
+  readonly primary?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/identitystore_user#type IdentitystoreUser#type}
   */
@@ -894,38 +894,38 @@ export interface IdentitystoreUserPhoneNumbers {
 }
 
 export function identitystoreUserPhoneNumbersToTerraform(struct?: IdentitystoreUserPhoneNumbersOutputReference | IdentitystoreUserPhoneNumbers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    primary: cdktf.booleanToTerraform(struct!.primary),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    primary: cdktn.booleanToTerraform(struct!.primary),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function identitystoreUserPhoneNumbersToHclTerraform(struct?: IdentitystoreUserPhoneNumbersOutputReference | IdentitystoreUserPhoneNumbers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     primary: {
-      value: cdktf.booleanToHclTerraform(struct!.primary),
+      value: cdktn.booleanToHclTerraform(struct!.primary),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -936,14 +936,14 @@ export function identitystoreUserPhoneNumbersToHclTerraform(struct?: Identitysto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentitystoreUserPhoneNumbersOutputReference extends cdktf.ComplexObject {
+export class IdentitystoreUserPhoneNumbersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -981,11 +981,11 @@ export class IdentitystoreUserPhoneNumbersOutputReference extends cdktf.ComplexO
   }
 
   // primary - computed: false, optional: true, required: false
-  private _primary?: boolean | cdktf.IResolvable; 
+  private _primary?: boolean | cdktn.IResolvable; 
   public get primary() {
     return this.getBooleanAttribute('primary');
   }
-  public set primary(value: boolean | cdktf.IResolvable) {
+  public set primary(value: boolean | cdktn.IResolvable) {
     this._primary = value;
   }
   public resetPrimary() {
@@ -1032,7 +1032,7 @@ export class IdentitystoreUserPhoneNumbersOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/identitystore_user aws_identitystore_user}
 */
-export class IdentitystoreUser extends cdktf.TerraformResource {
+export class IdentitystoreUser extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1043,14 +1043,14 @@ export class IdentitystoreUser extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IdentitystoreUser resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IdentitystoreUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentitystoreUser to import
   * @param importFromId The id of the existing IdentitystoreUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/identitystore_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentitystoreUser to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_identitystore_user", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_identitystore_user", importId: importFromId, provider });
       }
 
   // ===========
@@ -1363,18 +1363,18 @@ export class IdentitystoreUser extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      identity_store_id: cdktf.stringToTerraform(this._identityStoreId),
-      locale: cdktf.stringToTerraform(this._locale),
-      nickname: cdktf.stringToTerraform(this._nickname),
-      preferred_language: cdktf.stringToTerraform(this._preferredLanguage),
-      profile_url: cdktf.stringToTerraform(this._profileUrl),
-      region: cdktf.stringToTerraform(this._region),
-      timezone: cdktf.stringToTerraform(this._timezone),
-      title: cdktf.stringToTerraform(this._title),
-      user_name: cdktf.stringToTerraform(this._userName),
-      user_type: cdktf.stringToTerraform(this._userType),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      identity_store_id: cdktn.stringToTerraform(this._identityStoreId),
+      locale: cdktn.stringToTerraform(this._locale),
+      nickname: cdktn.stringToTerraform(this._nickname),
+      preferred_language: cdktn.stringToTerraform(this._preferredLanguage),
+      profile_url: cdktn.stringToTerraform(this._profileUrl),
+      region: cdktn.stringToTerraform(this._region),
+      timezone: cdktn.stringToTerraform(this._timezone),
+      title: cdktn.stringToTerraform(this._title),
+      user_name: cdktn.stringToTerraform(this._userName),
+      user_type: cdktn.stringToTerraform(this._userType),
       addresses: identitystoreUserAddressesToTerraform(this._addresses.internalValue),
       emails: identitystoreUserEmailsToTerraform(this._emails.internalValue),
       name: identitystoreUserNameToTerraform(this._name.internalValue),
@@ -1385,73 +1385,73 @@ export class IdentitystoreUser extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_store_id: {
-        value: cdktf.stringToHclTerraform(this._identityStoreId),
+        value: cdktn.stringToHclTerraform(this._identityStoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       locale: {
-        value: cdktf.stringToHclTerraform(this._locale),
+        value: cdktn.stringToHclTerraform(this._locale),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       nickname: {
-        value: cdktf.stringToHclTerraform(this._nickname),
+        value: cdktn.stringToHclTerraform(this._nickname),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_language: {
-        value: cdktf.stringToHclTerraform(this._preferredLanguage),
+        value: cdktn.stringToHclTerraform(this._preferredLanguage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       profile_url: {
-        value: cdktf.stringToHclTerraform(this._profileUrl),
+        value: cdktn.stringToHclTerraform(this._profileUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timezone: {
-        value: cdktf.stringToHclTerraform(this._timezone),
+        value: cdktn.stringToHclTerraform(this._timezone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       title: {
-        value: cdktf.stringToHclTerraform(this._title),
+        value: cdktn.stringToHclTerraform(this._title),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_name: {
-        value: cdktf.stringToHclTerraform(this._userName),
+        value: cdktn.stringToHclTerraform(this._userName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_type: {
-        value: cdktf.stringToHclTerraform(this._userType),
+        value: cdktn.stringToHclTerraform(this._userType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

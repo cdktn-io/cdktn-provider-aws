@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NotificationsOrganizationalUnitAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface NotificationsOrganizationalUnitAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/notifications_organizational_unit_association#notification_configuration_arn NotificationsOrganizationalUnitAssociation#notification_configuration_arn}
   */
@@ -25,7 +25,7 @@ export interface NotificationsOrganizationalUnitAssociationConfig extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/notifications_organizational_unit_association aws_notifications_organizational_unit_association}
 */
-export class NotificationsOrganizationalUnitAssociation extends cdktf.TerraformResource {
+export class NotificationsOrganizationalUnitAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -36,14 +36,14 @@ export class NotificationsOrganizationalUnitAssociation extends cdktf.TerraformR
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NotificationsOrganizationalUnitAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NotificationsOrganizationalUnitAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationsOrganizationalUnitAssociation to import
   * @param importFromId The id of the existing NotificationsOrganizationalUnitAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/notifications_organizational_unit_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationsOrganizationalUnitAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_notifications_organizational_unit_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_notifications_organizational_unit_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -113,21 +113,21 @@ export class NotificationsOrganizationalUnitAssociation extends cdktf.TerraformR
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      notification_configuration_arn: cdktf.stringToTerraform(this._notificationConfigurationArn),
-      organizational_unit_id: cdktf.stringToTerraform(this._organizationalUnitId),
+      notification_configuration_arn: cdktn.stringToTerraform(this._notificationConfigurationArn),
+      organizational_unit_id: cdktn.stringToTerraform(this._organizationalUnitId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       notification_configuration_arn: {
-        value: cdktf.stringToHclTerraform(this._notificationConfigurationArn),
+        value: cdktn.stringToHclTerraform(this._notificationConfigurationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organizational_unit_id: {
-        value: cdktf.stringToHclTerraform(this._organizationalUnitId),
+        value: cdktn.stringToHclTerraform(this._organizationalUnitId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

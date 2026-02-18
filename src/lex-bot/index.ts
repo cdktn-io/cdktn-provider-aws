@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LexBotConfig extends cdktf.TerraformMetaArguments {
+export interface LexBotConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_bot#child_directed LexBot#child_directed}
   */
-  readonly childDirected: boolean | cdktf.IResolvable;
+  readonly childDirected: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_bot#create_version LexBot#create_version}
   */
-  readonly createVersion?: boolean | cdktf.IResolvable;
+  readonly createVersion?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_bot#description LexBot#description}
   */
@@ -27,11 +27,11 @@ export interface LexBotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}
   */
-  readonly detectSentiment?: boolean | cdktf.IResolvable;
+  readonly detectSentiment?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}
   */
-  readonly enableModelImprovements?: boolean | cdktf.IResolvable;
+  readonly enableModelImprovements?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_bot#id LexBot#id}
   *
@@ -86,7 +86,7 @@ export interface LexBotConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_bot#intent LexBot#intent}
   */
-  readonly intent: LexBotIntent[] | cdktf.IResolvable;
+  readonly intent: LexBotIntent[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -109,39 +109,39 @@ export interface LexBotAbortStatementMessage {
   readonly groupNumber?: number;
 }
 
-export function lexBotAbortStatementMessageToTerraform(struct?: LexBotAbortStatementMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexBotAbortStatementMessageToTerraform(struct?: LexBotAbortStatementMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    content_type: cdktf.stringToTerraform(struct!.contentType),
-    group_number: cdktf.numberToTerraform(struct!.groupNumber),
+    content: cdktn.stringToTerraform(struct!.content),
+    content_type: cdktn.stringToTerraform(struct!.contentType),
+    group_number: cdktn.numberToTerraform(struct!.groupNumber),
   }
 }
 
 
-export function lexBotAbortStatementMessageToHclTerraform(struct?: LexBotAbortStatementMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexBotAbortStatementMessageToHclTerraform(struct?: LexBotAbortStatementMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     content_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentType),
+      value: cdktn.stringToHclTerraform(struct!.contentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_number: {
-      value: cdktf.numberToHclTerraform(struct!.groupNumber),
+      value: cdktn.numberToHclTerraform(struct!.groupNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -152,9 +152,9 @@ export function lexBotAbortStatementMessageToHclTerraform(struct?: LexBotAbortSt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexBotAbortStatementMessageOutputReference extends cdktf.ComplexObject {
+export class LexBotAbortStatementMessageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -162,11 +162,11 @@ export class LexBotAbortStatementMessageOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LexBotAbortStatementMessage | cdktf.IResolvable | undefined {
+  public get internalValue(): LexBotAbortStatementMessage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -187,7 +187,7 @@ export class LexBotAbortStatementMessageOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexBotAbortStatementMessage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LexBotAbortStatementMessage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -195,7 +195,7 @@ export class LexBotAbortStatementMessageOutputReference extends cdktf.ComplexObj
       this._contentType = undefined;
       this._groupNumber = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -251,15 +251,15 @@ export class LexBotAbortStatementMessageOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class LexBotAbortStatementMessageList extends cdktf.ComplexList {
-  public internalValue? : LexBotAbortStatementMessage[] | cdktf.IResolvable
+export class LexBotAbortStatementMessageList extends cdktn.ComplexList {
+  public internalValue? : LexBotAbortStatementMessage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -280,35 +280,35 @@ export interface LexBotAbortStatement {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_bot#message LexBot#message}
   */
-  readonly message: LexBotAbortStatementMessage[] | cdktf.IResolvable;
+  readonly message: LexBotAbortStatementMessage[] | cdktn.IResolvable;
 }
 
 export function lexBotAbortStatementToTerraform(struct?: LexBotAbortStatementOutputReference | LexBotAbortStatement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexBotAbortStatementMessageToTerraform, true)(struct!.message),
+    response_card: cdktn.stringToTerraform(struct!.responseCard),
+    message: cdktn.listMapper(lexBotAbortStatementMessageToTerraform, true)(struct!.message),
   }
 }
 
 
 export function lexBotAbortStatementToHclTerraform(struct?: LexBotAbortStatementOutputReference | LexBotAbortStatement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     response_card: {
-      value: cdktf.stringToHclTerraform(struct!.responseCard),
+      value: cdktn.stringToHclTerraform(struct!.responseCard),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message: {
-      value: cdktf.listMapperHcl(lexBotAbortStatementMessageToHclTerraform, true)(struct!.message),
+      value: cdktn.listMapperHcl(lexBotAbortStatementMessageToHclTerraform, true)(struct!.message),
       isBlock: true,
       type: "set",
       storageClassType: "LexBotAbortStatementMessageList",
@@ -319,14 +319,14 @@ export function lexBotAbortStatementToHclTerraform(struct?: LexBotAbortStatement
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexBotAbortStatementOutputReference extends cdktf.ComplexObject {
+export class LexBotAbortStatementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -378,7 +378,7 @@ export class LexBotAbortStatementOutputReference extends cdktf.ComplexObject {
   public get message() {
     return this._message;
   }
-  public putMessage(value: LexBotAbortStatementMessage[] | cdktf.IResolvable) {
+  public putMessage(value: LexBotAbortStatementMessage[] | cdktn.IResolvable) {
     this._message.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -401,39 +401,39 @@ export interface LexBotClarificationPromptMessage {
   readonly groupNumber?: number;
 }
 
-export function lexBotClarificationPromptMessageToTerraform(struct?: LexBotClarificationPromptMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexBotClarificationPromptMessageToTerraform(struct?: LexBotClarificationPromptMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    content_type: cdktf.stringToTerraform(struct!.contentType),
-    group_number: cdktf.numberToTerraform(struct!.groupNumber),
+    content: cdktn.stringToTerraform(struct!.content),
+    content_type: cdktn.stringToTerraform(struct!.contentType),
+    group_number: cdktn.numberToTerraform(struct!.groupNumber),
   }
 }
 
 
-export function lexBotClarificationPromptMessageToHclTerraform(struct?: LexBotClarificationPromptMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexBotClarificationPromptMessageToHclTerraform(struct?: LexBotClarificationPromptMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     content_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentType),
+      value: cdktn.stringToHclTerraform(struct!.contentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_number: {
-      value: cdktf.numberToHclTerraform(struct!.groupNumber),
+      value: cdktn.numberToHclTerraform(struct!.groupNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -444,9 +444,9 @@ export function lexBotClarificationPromptMessageToHclTerraform(struct?: LexBotCl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexBotClarificationPromptMessageOutputReference extends cdktf.ComplexObject {
+export class LexBotClarificationPromptMessageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -454,11 +454,11 @@ export class LexBotClarificationPromptMessageOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LexBotClarificationPromptMessage | cdktf.IResolvable | undefined {
+  public get internalValue(): LexBotClarificationPromptMessage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -479,7 +479,7 @@ export class LexBotClarificationPromptMessageOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexBotClarificationPromptMessage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LexBotClarificationPromptMessage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -487,7 +487,7 @@ export class LexBotClarificationPromptMessageOutputReference extends cdktf.Compl
       this._contentType = undefined;
       this._groupNumber = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -543,15 +543,15 @@ export class LexBotClarificationPromptMessageOutputReference extends cdktf.Compl
   }
 }
 
-export class LexBotClarificationPromptMessageList extends cdktf.ComplexList {
-  public internalValue? : LexBotClarificationPromptMessage[] | cdktf.IResolvable
+export class LexBotClarificationPromptMessageList extends cdktn.ComplexList {
+  public internalValue? : LexBotClarificationPromptMessage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -576,42 +576,42 @@ export interface LexBotClarificationPrompt {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_bot#message LexBot#message}
   */
-  readonly message: LexBotClarificationPromptMessage[] | cdktf.IResolvable;
+  readonly message: LexBotClarificationPromptMessage[] | cdktn.IResolvable;
 }
 
 export function lexBotClarificationPromptToTerraform(struct?: LexBotClarificationPromptOutputReference | LexBotClarificationPrompt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_attempts: cdktf.numberToTerraform(struct!.maxAttempts),
-    response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexBotClarificationPromptMessageToTerraform, true)(struct!.message),
+    max_attempts: cdktn.numberToTerraform(struct!.maxAttempts),
+    response_card: cdktn.stringToTerraform(struct!.responseCard),
+    message: cdktn.listMapper(lexBotClarificationPromptMessageToTerraform, true)(struct!.message),
   }
 }
 
 
 export function lexBotClarificationPromptToHclTerraform(struct?: LexBotClarificationPromptOutputReference | LexBotClarificationPrompt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_attempts: {
-      value: cdktf.numberToHclTerraform(struct!.maxAttempts),
+      value: cdktn.numberToHclTerraform(struct!.maxAttempts),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     response_card: {
-      value: cdktf.stringToHclTerraform(struct!.responseCard),
+      value: cdktn.stringToHclTerraform(struct!.responseCard),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message: {
-      value: cdktf.listMapperHcl(lexBotClarificationPromptMessageToHclTerraform, true)(struct!.message),
+      value: cdktn.listMapperHcl(lexBotClarificationPromptMessageToHclTerraform, true)(struct!.message),
       isBlock: true,
       type: "set",
       storageClassType: "LexBotClarificationPromptMessageList",
@@ -622,14 +622,14 @@ export function lexBotClarificationPromptToHclTerraform(struct?: LexBotClarifica
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexBotClarificationPromptOutputReference extends cdktf.ComplexObject {
+export class LexBotClarificationPromptOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -700,7 +700,7 @@ export class LexBotClarificationPromptOutputReference extends cdktf.ComplexObjec
   public get message() {
     return this._message;
   }
-  public putMessage(value: LexBotClarificationPromptMessage[] | cdktf.IResolvable) {
+  public putMessage(value: LexBotClarificationPromptMessage[] | cdktn.IResolvable) {
     this._message.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -719,32 +719,32 @@ export interface LexBotIntent {
   readonly intentVersion: string;
 }
 
-export function lexBotIntentToTerraform(struct?: LexBotIntent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexBotIntentToTerraform(struct?: LexBotIntent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    intent_name: cdktf.stringToTerraform(struct!.intentName),
-    intent_version: cdktf.stringToTerraform(struct!.intentVersion),
+    intent_name: cdktn.stringToTerraform(struct!.intentName),
+    intent_version: cdktn.stringToTerraform(struct!.intentVersion),
   }
 }
 
 
-export function lexBotIntentToHclTerraform(struct?: LexBotIntent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexBotIntentToHclTerraform(struct?: LexBotIntent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     intent_name: {
-      value: cdktf.stringToHclTerraform(struct!.intentName),
+      value: cdktn.stringToHclTerraform(struct!.intentName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     intent_version: {
-      value: cdktf.stringToHclTerraform(struct!.intentVersion),
+      value: cdktn.stringToHclTerraform(struct!.intentVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -755,9 +755,9 @@ export function lexBotIntentToHclTerraform(struct?: LexBotIntent | cdktf.IResolv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexBotIntentOutputReference extends cdktf.ComplexObject {
+export class LexBotIntentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -765,11 +765,11 @@ export class LexBotIntentOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LexBotIntent | cdktf.IResolvable | undefined {
+  public get internalValue(): LexBotIntent | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -786,14 +786,14 @@ export class LexBotIntentOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexBotIntent | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LexBotIntent | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._intentName = undefined;
       this._intentVersion = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -832,15 +832,15 @@ export class LexBotIntentOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class LexBotIntentList extends cdktf.ComplexList {
-  public internalValue? : LexBotIntent[] | cdktf.IResolvable
+export class LexBotIntentList extends cdktn.ComplexList {
+  public internalValue? : LexBotIntent[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -866,39 +866,39 @@ export interface LexBotTimeouts {
   readonly update?: string;
 }
 
-export function lexBotTimeoutsToTerraform(struct?: LexBotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexBotTimeoutsToTerraform(struct?: LexBotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function lexBotTimeoutsToHclTerraform(struct?: LexBotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexBotTimeoutsToHclTerraform(struct?: LexBotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -909,19 +909,19 @@ export function lexBotTimeoutsToHclTerraform(struct?: LexBotTimeouts | cdktf.IRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexBotTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LexBotTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LexBotTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LexBotTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -942,7 +942,7 @@ export class LexBotTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexBotTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LexBotTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -950,7 +950,7 @@ export class LexBotTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1015,7 +1015,7 @@ export class LexBotTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_bot aws_lex_bot}
 */
-export class LexBot extends cdktf.TerraformResource {
+export class LexBot extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1026,14 +1026,14 @@ export class LexBot extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LexBot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LexBot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LexBot to import
   * @param importFromId The id of the existing LexBot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_bot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LexBot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lex_bot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lex_bot", importId: importFromId, provider });
       }
 
   // ===========
@@ -1097,11 +1097,11 @@ export class LexBot extends cdktf.TerraformResource {
   }
 
   // child_directed - computed: false, optional: false, required: true
-  private _childDirected?: boolean | cdktf.IResolvable; 
+  private _childDirected?: boolean | cdktn.IResolvable; 
   public get childDirected() {
     return this.getBooleanAttribute('child_directed');
   }
-  public set childDirected(value: boolean | cdktf.IResolvable) {
+  public set childDirected(value: boolean | cdktn.IResolvable) {
     this._childDirected = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1110,11 +1110,11 @@ export class LexBot extends cdktf.TerraformResource {
   }
 
   // create_version - computed: false, optional: true, required: false
-  private _createVersion?: boolean | cdktf.IResolvable; 
+  private _createVersion?: boolean | cdktn.IResolvable; 
   public get createVersion() {
     return this.getBooleanAttribute('create_version');
   }
-  public set createVersion(value: boolean | cdktf.IResolvable) {
+  public set createVersion(value: boolean | cdktn.IResolvable) {
     this._createVersion = value;
   }
   public resetCreateVersion() {
@@ -1147,11 +1147,11 @@ export class LexBot extends cdktf.TerraformResource {
   }
 
   // detect_sentiment - computed: false, optional: true, required: false
-  private _detectSentiment?: boolean | cdktf.IResolvable; 
+  private _detectSentiment?: boolean | cdktn.IResolvable; 
   public get detectSentiment() {
     return this.getBooleanAttribute('detect_sentiment');
   }
-  public set detectSentiment(value: boolean | cdktf.IResolvable) {
+  public set detectSentiment(value: boolean | cdktn.IResolvable) {
     this._detectSentiment = value;
   }
   public resetDetectSentiment() {
@@ -1163,11 +1163,11 @@ export class LexBot extends cdktf.TerraformResource {
   }
 
   // enable_model_improvements - computed: false, optional: true, required: false
-  private _enableModelImprovements?: boolean | cdktf.IResolvable; 
+  private _enableModelImprovements?: boolean | cdktn.IResolvable; 
   public get enableModelImprovements() {
     return this.getBooleanAttribute('enable_model_improvements');
   }
-  public set enableModelImprovements(value: boolean | cdktf.IResolvable) {
+  public set enableModelImprovements(value: boolean | cdktn.IResolvable) {
     this._enableModelImprovements = value;
   }
   public resetEnableModelImprovements() {
@@ -1357,7 +1357,7 @@ export class LexBot extends cdktf.TerraformResource {
   public get intent() {
     return this._intent;
   }
-  public putIntent(value: LexBotIntent[] | cdktf.IResolvable) {
+  public putIntent(value: LexBotIntent[] | cdktn.IResolvable) {
     this._intent.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1387,22 +1387,22 @@ export class LexBot extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      child_directed: cdktf.booleanToTerraform(this._childDirected),
-      create_version: cdktf.booleanToTerraform(this._createVersion),
-      description: cdktf.stringToTerraform(this._description),
-      detect_sentiment: cdktf.booleanToTerraform(this._detectSentiment),
-      enable_model_improvements: cdktf.booleanToTerraform(this._enableModelImprovements),
-      id: cdktf.stringToTerraform(this._id),
-      idle_session_ttl_in_seconds: cdktf.numberToTerraform(this._idleSessionTtlInSeconds),
-      locale: cdktf.stringToTerraform(this._locale),
-      name: cdktf.stringToTerraform(this._name),
-      nlu_intent_confidence_threshold: cdktf.numberToTerraform(this._nluIntentConfidenceThreshold),
-      process_behavior: cdktf.stringToTerraform(this._processBehavior),
-      region: cdktf.stringToTerraform(this._region),
-      voice_id: cdktf.stringToTerraform(this._voiceId),
+      child_directed: cdktn.booleanToTerraform(this._childDirected),
+      create_version: cdktn.booleanToTerraform(this._createVersion),
+      description: cdktn.stringToTerraform(this._description),
+      detect_sentiment: cdktn.booleanToTerraform(this._detectSentiment),
+      enable_model_improvements: cdktn.booleanToTerraform(this._enableModelImprovements),
+      id: cdktn.stringToTerraform(this._id),
+      idle_session_ttl_in_seconds: cdktn.numberToTerraform(this._idleSessionTtlInSeconds),
+      locale: cdktn.stringToTerraform(this._locale),
+      name: cdktn.stringToTerraform(this._name),
+      nlu_intent_confidence_threshold: cdktn.numberToTerraform(this._nluIntentConfidenceThreshold),
+      process_behavior: cdktn.stringToTerraform(this._processBehavior),
+      region: cdktn.stringToTerraform(this._region),
+      voice_id: cdktn.stringToTerraform(this._voiceId),
       abort_statement: lexBotAbortStatementToTerraform(this._abortStatement.internalValue),
       clarification_prompt: lexBotClarificationPromptToTerraform(this._clarificationPrompt.internalValue),
-      intent: cdktf.listMapper(lexBotIntentToTerraform, true)(this._intent.internalValue),
+      intent: cdktn.listMapper(lexBotIntentToTerraform, true)(this._intent.internalValue),
       timeouts: lexBotTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1410,79 +1410,79 @@ export class LexBot extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       child_directed: {
-        value: cdktf.booleanToHclTerraform(this._childDirected),
+        value: cdktn.booleanToHclTerraform(this._childDirected),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       create_version: {
-        value: cdktf.booleanToHclTerraform(this._createVersion),
+        value: cdktn.booleanToHclTerraform(this._createVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       detect_sentiment: {
-        value: cdktf.booleanToHclTerraform(this._detectSentiment),
+        value: cdktn.booleanToHclTerraform(this._detectSentiment),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_model_improvements: {
-        value: cdktf.booleanToHclTerraform(this._enableModelImprovements),
+        value: cdktn.booleanToHclTerraform(this._enableModelImprovements),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idle_session_ttl_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._idleSessionTtlInSeconds),
+        value: cdktn.numberToHclTerraform(this._idleSessionTtlInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       locale: {
-        value: cdktf.stringToHclTerraform(this._locale),
+        value: cdktn.stringToHclTerraform(this._locale),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       nlu_intent_confidence_threshold: {
-        value: cdktf.numberToHclTerraform(this._nluIntentConfidenceThreshold),
+        value: cdktn.numberToHclTerraform(this._nluIntentConfidenceThreshold),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       process_behavior: {
-        value: cdktf.stringToHclTerraform(this._processBehavior),
+        value: cdktn.stringToHclTerraform(this._processBehavior),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       voice_id: {
-        value: cdktf.stringToHclTerraform(this._voiceId),
+        value: cdktn.stringToHclTerraform(this._voiceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1500,7 +1500,7 @@ export class LexBot extends cdktf.TerraformResource {
         storageClassType: "LexBotClarificationPromptList",
       },
       intent: {
-        value: cdktf.listMapperHcl(lexBotIntentToHclTerraform, true)(this._intent.internalValue),
+        value: cdktn.listMapperHcl(lexBotIntentToHclTerraform, true)(this._intent.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LexBotIntentList",

@@ -297,7 +297,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.billingView.BillingView.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -379,7 +379,7 @@ public putDataFilterExpression(value: IResolvable | BillingViewDataFilterExpress
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.billingView.BillingView.putDataFilterExpression.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>[]
 
 ---
 
@@ -432,7 +432,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingView.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a BillingView resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingView.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a BillingView resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -504,7 +504,7 @@ import { billingView } from '@cdktn/provider-aws'
 billingView.BillingView.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a BillingView resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a BillingView resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.billingView.BillingView.generateConfigForImport.parameter.scope"></a>
 
@@ -534,7 +534,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.billingView.BillingView.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the BillingView to import is found.
 
@@ -545,19 +545,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.billingViewType">billingViewType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
@@ -566,16 +566,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.ownerAccountId">ownerAccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.sourceAccountId">sourceAccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.sourceViewCount">sourceViewCount</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.tagsAll">tagsAll</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.tagsAll">tagsAll</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.billingView.BillingViewTimeoutsOutputReference">BillingViewTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.updatedAt">updatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.viewDefinitionLastUpdatedAt">viewDefinitionLastUpdatedAt</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.dataFilterExpressionInput">dataFilterExpressionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.dataFilterExpressionInput">dataFilterExpressionInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.sourceViewsInput">sourceViewsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewTimeouts">BillingViewTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewTimeouts">BillingViewTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingView.property.sourceViews">sourceViews</a></code> | <code>string[]</code> | *No description.* |
@@ -601,7 +601,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -651,7 +651,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -661,7 +661,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -671,7 +671,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -691,7 +691,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -701,7 +701,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -711,7 +711,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -721,7 +721,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -811,7 +811,7 @@ public readonly sourceViewCount: number;
 public readonly tagsAll: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -851,7 +851,7 @@ public readonly viewDefinitionLastUpdatedAt: string;
 public readonly dataFilterExpressionInput: IResolvable | BillingViewDataFilterExpression[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>[]
 
 ---
 
@@ -901,7 +901,7 @@ public readonly tagsInput: {[ key: string ]: string};
 public readonly timeoutsInput: IResolvable | BillingViewTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewTimeouts">BillingViewTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewTimeouts">BillingViewTimeouts</a>
 
 ---
 
@@ -979,15 +979,15 @@ const billingViewConfig: billingView.BillingViewConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/billing_view#name BillingView#name}. |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.dataFilterExpression">dataFilterExpression</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>[]</code> | data_filter_expression block. |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.dataFilterExpression">dataFilterExpression</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>[]</code> | data_filter_expression block. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/billing_view#description BillingView#description}. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.sourceViews">sourceViews</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/billing_view#source_views BillingView#source_views}. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/billing_view#tags BillingView#tags}. |
@@ -1001,7 +1001,7 @@ const billingViewConfig: billingView.BillingViewConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1011,7 +1011,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1031,7 +1031,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1041,7 +1041,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1051,7 +1051,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1061,7 +1061,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly dataFilterExpression: IResolvable | BillingViewDataFilterExpression[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>[]
 
 data_filter_expression block.
 
@@ -1155,9 +1155,9 @@ const billingViewDataFilterExpression: billingView.BillingViewDataFilterExpressi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression.property.dimensions">dimensions</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>[]</code> | dimensions block. |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression.property.tags">tags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>[]</code> | tags block. |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression.property.timeRange">timeRange</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>[]</code> | time_range block. |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression.property.dimensions">dimensions</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>[]</code> | dimensions block. |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression.property.tags">tags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>[]</code> | tags block. |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression.property.timeRange">timeRange</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>[]</code> | time_range block. |
 
 ---
 
@@ -1167,7 +1167,7 @@ const billingViewDataFilterExpression: billingView.BillingViewDataFilterExpressi
 public readonly dimensions: IResolvable | BillingViewDataFilterExpressionDimensions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>[]
 
 dimensions block.
 
@@ -1181,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly tags: IResolvable | BillingViewDataFilterExpressionTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>[]
 
 tags block.
 
@@ -1195,7 +1195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly timeRange: IResolvable | BillingViewDataFilterExpressionTimeRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>[]
 
 time_range block.
 
@@ -1408,7 +1408,7 @@ new billingView.BillingViewDataFilterExpressionDimensionsList(terraformResource:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1416,7 +1416,7 @@ new billingView.BillingViewDataFilterExpressionDimensionsList(terraformResource:
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1482,7 +1482,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1517,7 +1517,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>[]</code> | *No description.* |
 
 ---
 
@@ -1551,7 +1551,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | BillingViewDataFilterExpressionDimensions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>[]
 
 ---
 
@@ -1568,7 +1568,7 @@ new billingView.BillingViewDataFilterExpressionDimensionsOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1577,7 +1577,7 @@ new billingView.BillingViewDataFilterExpressionDimensionsOutputReference(terrafo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1763,7 +1763,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1788,7 +1788,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsOutputReference.property.valuesInput">valuesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a></code> | *No description.* |
 
 ---
 
@@ -1862,7 +1862,7 @@ public readonly values: string[];
 public readonly internalValue: IResolvable | BillingViewDataFilterExpressionDimensions;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>
 
 ---
 
@@ -1879,7 +1879,7 @@ new billingView.BillingViewDataFilterExpressionList(terraformResource: IInterpol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1887,7 +1887,7 @@ new billingView.BillingViewDataFilterExpressionList(terraformResource: IInterpol
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1953,7 +1953,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1988,7 +1988,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>[]</code> | *No description.* |
 
 ---
 
@@ -2022,7 +2022,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | BillingViewDataFilterExpression[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>[]
 
 ---
 
@@ -2039,7 +2039,7 @@ new billingView.BillingViewDataFilterExpressionOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2048,7 +2048,7 @@ new billingView.BillingViewDataFilterExpressionOutputReference(terraformResource
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2240,7 +2240,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2262,7 +2262,7 @@ public putDimensions(value: IResolvable | BillingViewDataFilterExpressionDimensi
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.putDimensions.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>[]
 
 ---
 
@@ -2274,7 +2274,7 @@ public putTags(value: IResolvable | BillingViewDataFilterExpressionTags[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.putTags.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>[]
 
 ---
 
@@ -2286,7 +2286,7 @@ public putTimeRange(value: IResolvable | BillingViewDataFilterExpressionTimeRang
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.putTimeRange.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>[]
 
 ---
 
@@ -2318,10 +2318,10 @@ public resetTimeRange(): void
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.property.dimensions">dimensions</a></code> | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsList">BillingViewDataFilterExpressionDimensionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsList">BillingViewDataFilterExpressionTagsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.property.timeRange">timeRange</a></code> | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeList">BillingViewDataFilterExpressionTimeRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.property.dimensionsInput">dimensionsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.property.tagsInput">tagsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.property.timeRangeInput">timeRangeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.property.dimensionsInput">dimensionsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.property.tagsInput">tagsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.property.timeRangeInput">timeRangeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a></code> | *No description.* |
 
 ---
 
@@ -2385,7 +2385,7 @@ public readonly timeRange: BillingViewDataFilterExpressionTimeRangeList;
 public readonly dimensionsInput: IResolvable | BillingViewDataFilterExpressionDimensions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions">BillingViewDataFilterExpressionDimensions</a>[]
 
 ---
 
@@ -2395,7 +2395,7 @@ public readonly dimensionsInput: IResolvable | BillingViewDataFilterExpressionDi
 public readonly tagsInput: IResolvable | BillingViewDataFilterExpressionTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>[]
 
 ---
 
@@ -2405,7 +2405,7 @@ public readonly tagsInput: IResolvable | BillingViewDataFilterExpressionTags[];
 public readonly timeRangeInput: IResolvable | BillingViewDataFilterExpressionTimeRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>[]
 
 ---
 
@@ -2415,7 +2415,7 @@ public readonly timeRangeInput: IResolvable | BillingViewDataFilterExpressionTim
 public readonly internalValue: IResolvable | BillingViewDataFilterExpression;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>
 
 ---
 
@@ -2432,7 +2432,7 @@ new billingView.BillingViewDataFilterExpressionTagsList(terraformResource: IInte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2440,7 +2440,7 @@ new billingView.BillingViewDataFilterExpressionTagsList(terraformResource: IInte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2506,7 +2506,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2541,7 +2541,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>[]</code> | *No description.* |
 
 ---
 
@@ -2575,7 +2575,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | BillingViewDataFilterExpressionTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>[]
 
 ---
 
@@ -2592,7 +2592,7 @@ new billingView.BillingViewDataFilterExpressionTagsOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2601,7 +2601,7 @@ new billingView.BillingViewDataFilterExpressionTagsOutputReference(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2787,7 +2787,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2812,7 +2812,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsOutputReference.property.valuesInput">valuesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a></code> | *No description.* |
 
 ---
 
@@ -2886,7 +2886,7 @@ public readonly values: string[];
 public readonly internalValue: IResolvable | BillingViewDataFilterExpressionTags;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags">BillingViewDataFilterExpressionTags</a>
 
 ---
 
@@ -2903,7 +2903,7 @@ new billingView.BillingViewDataFilterExpressionTimeRangeList(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2911,7 +2911,7 @@ new billingView.BillingViewDataFilterExpressionTimeRangeList(terraformResource: 
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2977,7 +2977,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3012,7 +3012,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>[]</code> | *No description.* |
 
 ---
 
@@ -3046,7 +3046,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | BillingViewDataFilterExpressionTimeRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>[]
 
 ---
 
@@ -3063,7 +3063,7 @@ new billingView.BillingViewDataFilterExpressionTimeRangeOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3072,7 +3072,7 @@ new billingView.BillingViewDataFilterExpressionTimeRangeOutputReference(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3258,7 +3258,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3283,7 +3283,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeOutputReference.property.endDateInclusiveInput">endDateInclusiveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeOutputReference.property.beginDateInclusive">beginDateInclusive</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeOutputReference.property.endDateInclusive">endDateInclusive</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a></code> | *No description.* |
 
 ---
 
@@ -3357,7 +3357,7 @@ public readonly endDateInclusive: string;
 public readonly internalValue: IResolvable | BillingViewDataFilterExpressionTimeRange;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange">BillingViewDataFilterExpressionTimeRange</a>
 
 ---
 
@@ -3374,14 +3374,14 @@ new billingView.BillingViewTimeoutsOutputReference(terraformResource: IInterpola
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.billingView.BillingViewTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3554,7 +3554,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.billingView.BillingViewTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3599,7 +3599,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.billingView.BillingViewTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.billingView.BillingViewTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewTimeouts">BillingViewTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.billingView.BillingViewTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.billingView.BillingViewTimeouts">BillingViewTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3693,7 +3693,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | BillingViewTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewTimeouts">BillingViewTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.billingView.BillingViewTimeouts">BillingViewTimeouts</a>
 
 ---
 

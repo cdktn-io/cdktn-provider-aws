@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PrometheusQueryLoggingConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface PrometheusQueryLoggingConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -27,7 +27,7 @@ export interface PrometheusQueryLoggingConfigurationConfig extends cdktf.Terrafo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/prometheus_query_logging_configuration#destination PrometheusQueryLoggingConfiguration#destination}
   */
-  readonly destination?: PrometheusQueryLoggingConfigurationDestination[] | cdktf.IResolvable;
+  readonly destination?: PrometheusQueryLoggingConfigurationDestination[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -42,25 +42,25 @@ export interface PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs {
   readonly logGroupArn: string;
 }
 
-export function prometheusQueryLoggingConfigurationDestinationCloudwatchLogsToTerraform(struct?: PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function prometheusQueryLoggingConfigurationDestinationCloudwatchLogsToTerraform(struct?: PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    log_group_arn: cdktf.stringToTerraform(struct!.logGroupArn),
+    log_group_arn: cdktn.stringToTerraform(struct!.logGroupArn),
   }
 }
 
 
-export function prometheusQueryLoggingConfigurationDestinationCloudwatchLogsToHclTerraform(struct?: PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function prometheusQueryLoggingConfigurationDestinationCloudwatchLogsToHclTerraform(struct?: PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     log_group_arn: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupArn),
+      value: cdktn.stringToHclTerraform(struct!.logGroupArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -71,9 +71,9 @@ export function prometheusQueryLoggingConfigurationDestinationCloudwatchLogsToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsOutputReference extends cdktf.ComplexObject {
+export class PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -81,11 +81,11 @@ export class PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs | cdktf.IResolvable | undefined {
+  public get internalValue(): PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -98,13 +98,13 @@ export class PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._logGroupArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -129,15 +129,15 @@ export class PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsOutputR
   }
 }
 
-export class PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsList extends cdktf.ComplexList {
-  public internalValue? : PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs[] | cdktf.IResolvable
+export class PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsList extends cdktn.ComplexList {
+  public internalValue? : PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -155,25 +155,25 @@ export interface PrometheusQueryLoggingConfigurationDestinationFilters {
   readonly qspThreshold: number;
 }
 
-export function prometheusQueryLoggingConfigurationDestinationFiltersToTerraform(struct?: PrometheusQueryLoggingConfigurationDestinationFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function prometheusQueryLoggingConfigurationDestinationFiltersToTerraform(struct?: PrometheusQueryLoggingConfigurationDestinationFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    qsp_threshold: cdktf.numberToTerraform(struct!.qspThreshold),
+    qsp_threshold: cdktn.numberToTerraform(struct!.qspThreshold),
   }
 }
 
 
-export function prometheusQueryLoggingConfigurationDestinationFiltersToHclTerraform(struct?: PrometheusQueryLoggingConfigurationDestinationFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function prometheusQueryLoggingConfigurationDestinationFiltersToHclTerraform(struct?: PrometheusQueryLoggingConfigurationDestinationFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     qsp_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.qspThreshold),
+      value: cdktn.numberToHclTerraform(struct!.qspThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -184,9 +184,9 @@ export function prometheusQueryLoggingConfigurationDestinationFiltersToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrometheusQueryLoggingConfigurationDestinationFiltersOutputReference extends cdktf.ComplexObject {
+export class PrometheusQueryLoggingConfigurationDestinationFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -194,11 +194,11 @@ export class PrometheusQueryLoggingConfigurationDestinationFiltersOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrometheusQueryLoggingConfigurationDestinationFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): PrometheusQueryLoggingConfigurationDestinationFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -211,13 +211,13 @@ export class PrometheusQueryLoggingConfigurationDestinationFiltersOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrometheusQueryLoggingConfigurationDestinationFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrometheusQueryLoggingConfigurationDestinationFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._qspThreshold = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -242,15 +242,15 @@ export class PrometheusQueryLoggingConfigurationDestinationFiltersOutputReferenc
   }
 }
 
-export class PrometheusQueryLoggingConfigurationDestinationFiltersList extends cdktf.ComplexList {
-  public internalValue? : PrometheusQueryLoggingConfigurationDestinationFilters[] | cdktf.IResolvable
+export class PrometheusQueryLoggingConfigurationDestinationFiltersList extends cdktn.ComplexList {
+  public internalValue? : PrometheusQueryLoggingConfigurationDestinationFilters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -267,41 +267,41 @@ export interface PrometheusQueryLoggingConfigurationDestination {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/prometheus_query_logging_configuration#cloudwatch_logs PrometheusQueryLoggingConfiguration#cloudwatch_logs}
   */
-  readonly cloudwatchLogs?: PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs[] | cdktf.IResolvable;
+  readonly cloudwatchLogs?: PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs[] | cdktn.IResolvable;
   /**
   * filters block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/prometheus_query_logging_configuration#filters PrometheusQueryLoggingConfiguration#filters}
   */
-  readonly filters?: PrometheusQueryLoggingConfigurationDestinationFilters[] | cdktf.IResolvable;
+  readonly filters?: PrometheusQueryLoggingConfigurationDestinationFilters[] | cdktn.IResolvable;
 }
 
-export function prometheusQueryLoggingConfigurationDestinationToTerraform(struct?: PrometheusQueryLoggingConfigurationDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function prometheusQueryLoggingConfigurationDestinationToTerraform(struct?: PrometheusQueryLoggingConfigurationDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloudwatch_logs: cdktf.listMapper(prometheusQueryLoggingConfigurationDestinationCloudwatchLogsToTerraform, true)(struct!.cloudwatchLogs),
-    filters: cdktf.listMapper(prometheusQueryLoggingConfigurationDestinationFiltersToTerraform, true)(struct!.filters),
+    cloudwatch_logs: cdktn.listMapper(prometheusQueryLoggingConfigurationDestinationCloudwatchLogsToTerraform, true)(struct!.cloudwatchLogs),
+    filters: cdktn.listMapper(prometheusQueryLoggingConfigurationDestinationFiltersToTerraform, true)(struct!.filters),
   }
 }
 
 
-export function prometheusQueryLoggingConfigurationDestinationToHclTerraform(struct?: PrometheusQueryLoggingConfigurationDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function prometheusQueryLoggingConfigurationDestinationToHclTerraform(struct?: PrometheusQueryLoggingConfigurationDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloudwatch_logs: {
-      value: cdktf.listMapperHcl(prometheusQueryLoggingConfigurationDestinationCloudwatchLogsToHclTerraform, true)(struct!.cloudwatchLogs),
+      value: cdktn.listMapperHcl(prometheusQueryLoggingConfigurationDestinationCloudwatchLogsToHclTerraform, true)(struct!.cloudwatchLogs),
       isBlock: true,
       type: "list",
       storageClassType: "PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsList",
     },
     filters: {
-      value: cdktf.listMapperHcl(prometheusQueryLoggingConfigurationDestinationFiltersToHclTerraform, true)(struct!.filters),
+      value: cdktn.listMapperHcl(prometheusQueryLoggingConfigurationDestinationFiltersToHclTerraform, true)(struct!.filters),
       isBlock: true,
       type: "list",
       storageClassType: "PrometheusQueryLoggingConfigurationDestinationFiltersList",
@@ -312,9 +312,9 @@ export function prometheusQueryLoggingConfigurationDestinationToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrometheusQueryLoggingConfigurationDestinationOutputReference extends cdktf.ComplexObject {
+export class PrometheusQueryLoggingConfigurationDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -322,11 +322,11 @@ export class PrometheusQueryLoggingConfigurationDestinationOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrometheusQueryLoggingConfigurationDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): PrometheusQueryLoggingConfigurationDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -343,14 +343,14 @@ export class PrometheusQueryLoggingConfigurationDestinationOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrometheusQueryLoggingConfigurationDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrometheusQueryLoggingConfigurationDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cloudwatchLogs.internalValue = undefined;
       this._filters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -367,7 +367,7 @@ export class PrometheusQueryLoggingConfigurationDestinationOutputReference exten
   public get cloudwatchLogs() {
     return this._cloudwatchLogs;
   }
-  public putCloudwatchLogs(value: PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs[] | cdktf.IResolvable) {
+  public putCloudwatchLogs(value: PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs[] | cdktn.IResolvable) {
     this._cloudwatchLogs.internalValue = value;
   }
   public resetCloudwatchLogs() {
@@ -383,7 +383,7 @@ export class PrometheusQueryLoggingConfigurationDestinationOutputReference exten
   public get filters() {
     return this._filters;
   }
-  public putFilters(value: PrometheusQueryLoggingConfigurationDestinationFilters[] | cdktf.IResolvable) {
+  public putFilters(value: PrometheusQueryLoggingConfigurationDestinationFilters[] | cdktn.IResolvable) {
     this._filters.internalValue = value;
   }
   public resetFilters() {
@@ -395,15 +395,15 @@ export class PrometheusQueryLoggingConfigurationDestinationOutputReference exten
   }
 }
 
-export class PrometheusQueryLoggingConfigurationDestinationList extends cdktf.ComplexList {
-  public internalValue? : PrometheusQueryLoggingConfigurationDestination[] | cdktf.IResolvable
+export class PrometheusQueryLoggingConfigurationDestinationList extends cdktn.ComplexList {
+  public internalValue? : PrometheusQueryLoggingConfigurationDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -435,39 +435,39 @@ export interface PrometheusQueryLoggingConfigurationTimeouts {
   readonly update?: string;
 }
 
-export function prometheusQueryLoggingConfigurationTimeoutsToTerraform(struct?: PrometheusQueryLoggingConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function prometheusQueryLoggingConfigurationTimeoutsToTerraform(struct?: PrometheusQueryLoggingConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function prometheusQueryLoggingConfigurationTimeoutsToHclTerraform(struct?: PrometheusQueryLoggingConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function prometheusQueryLoggingConfigurationTimeoutsToHclTerraform(struct?: PrometheusQueryLoggingConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -478,19 +478,19 @@ export function prometheusQueryLoggingConfigurationTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrometheusQueryLoggingConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PrometheusQueryLoggingConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PrometheusQueryLoggingConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PrometheusQueryLoggingConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -511,7 +511,7 @@ export class PrometheusQueryLoggingConfigurationTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrometheusQueryLoggingConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrometheusQueryLoggingConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -519,7 +519,7 @@ export class PrometheusQueryLoggingConfigurationTimeoutsOutputReference extends 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -584,7 +584,7 @@ export class PrometheusQueryLoggingConfigurationTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/prometheus_query_logging_configuration aws_prometheus_query_logging_configuration}
 */
-export class PrometheusQueryLoggingConfiguration extends cdktf.TerraformResource {
+export class PrometheusQueryLoggingConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -595,14 +595,14 @@ export class PrometheusQueryLoggingConfiguration extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PrometheusQueryLoggingConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PrometheusQueryLoggingConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrometheusQueryLoggingConfiguration to import
   * @param importFromId The id of the existing PrometheusQueryLoggingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/prometheus_query_logging_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrometheusQueryLoggingConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_prometheus_query_logging_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_prometheus_query_logging_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -676,7 +676,7 @@ export class PrometheusQueryLoggingConfiguration extends cdktf.TerraformResource
   public get destination() {
     return this._destination;
   }
-  public putDestination(value: PrometheusQueryLoggingConfigurationDestination[] | cdktf.IResolvable) {
+  public putDestination(value: PrometheusQueryLoggingConfigurationDestination[] | cdktn.IResolvable) {
     this._destination.internalValue = value;
   }
   public resetDestination() {
@@ -709,9 +709,9 @@ export class PrometheusQueryLoggingConfiguration extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
-      destination: cdktf.listMapper(prometheusQueryLoggingConfigurationDestinationToTerraform, true)(this._destination.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
+      destination: cdktn.listMapper(prometheusQueryLoggingConfigurationDestinationToTerraform, true)(this._destination.internalValue),
       timeouts: prometheusQueryLoggingConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -719,19 +719,19 @@ export class PrometheusQueryLoggingConfiguration extends cdktf.TerraformResource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination: {
-        value: cdktf.listMapperHcl(prometheusQueryLoggingConfigurationDestinationToHclTerraform, true)(this._destination.internalValue),
+        value: cdktn.listMapperHcl(prometheusQueryLoggingConfigurationDestinationToHclTerraform, true)(this._destination.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "PrometheusQueryLoggingConfigurationDestinationList",

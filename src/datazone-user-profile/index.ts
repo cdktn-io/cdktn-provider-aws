@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatazoneUserProfileConfig extends cdktf.TerraformMetaArguments {
+export interface DatazoneUserProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_user_profile#domain_identifier DatazoneUserProfile#domain_identifier}
   */
@@ -45,8 +45,8 @@ export interface DatazoneUserProfileDetailsIam {
 }
 
 export function datazoneUserProfileDetailsIamToTerraform(struct?: DatazoneUserProfileDetailsIam): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -55,8 +55,8 @@ export function datazoneUserProfileDetailsIamToTerraform(struct?: DatazoneUserPr
 
 
 export function datazoneUserProfileDetailsIamToHclTerraform(struct?: DatazoneUserProfileDetailsIam): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -64,7 +64,7 @@ export function datazoneUserProfileDetailsIamToHclTerraform(struct?: DatazoneUse
   return attrs;
 }
 
-export class DatazoneUserProfileDetailsIamOutputReference extends cdktf.ComplexObject {
+export class DatazoneUserProfileDetailsIamOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -73,7 +73,7 @@ export class DatazoneUserProfileDetailsIamOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -98,14 +98,14 @@ export class DatazoneUserProfileDetailsIamOutputReference extends cdktf.ComplexO
   }
 }
 
-export class DatazoneUserProfileDetailsIamList extends cdktf.ComplexList {
+export class DatazoneUserProfileDetailsIamList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -120,8 +120,8 @@ export interface DatazoneUserProfileDetailsSso {
 }
 
 export function datazoneUserProfileDetailsSsoToTerraform(struct?: DatazoneUserProfileDetailsSso): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -130,8 +130,8 @@ export function datazoneUserProfileDetailsSsoToTerraform(struct?: DatazoneUserPr
 
 
 export function datazoneUserProfileDetailsSsoToHclTerraform(struct?: DatazoneUserProfileDetailsSso): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -139,7 +139,7 @@ export function datazoneUserProfileDetailsSsoToHclTerraform(struct?: DatazoneUse
   return attrs;
 }
 
-export class DatazoneUserProfileDetailsSsoOutputReference extends cdktf.ComplexObject {
+export class DatazoneUserProfileDetailsSsoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -148,7 +148,7 @@ export class DatazoneUserProfileDetailsSsoOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -183,14 +183,14 @@ export class DatazoneUserProfileDetailsSsoOutputReference extends cdktf.ComplexO
   }
 }
 
-export class DatazoneUserProfileDetailsSsoList extends cdktf.ComplexList {
+export class DatazoneUserProfileDetailsSsoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -205,8 +205,8 @@ export interface DatazoneUserProfileDetails {
 }
 
 export function datazoneUserProfileDetailsToTerraform(struct?: DatazoneUserProfileDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -215,8 +215,8 @@ export function datazoneUserProfileDetailsToTerraform(struct?: DatazoneUserProfi
 
 
 export function datazoneUserProfileDetailsToHclTerraform(struct?: DatazoneUserProfileDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -224,7 +224,7 @@ export function datazoneUserProfileDetailsToHclTerraform(struct?: DatazoneUserPr
   return attrs;
 }
 
-export class DatazoneUserProfileDetailsOutputReference extends cdktf.ComplexObject {
+export class DatazoneUserProfileDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -233,7 +233,7 @@ export class DatazoneUserProfileDetailsOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -265,14 +265,14 @@ export class DatazoneUserProfileDetailsOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class DatazoneUserProfileDetailsList extends cdktf.ComplexList {
+export class DatazoneUserProfileDetailsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -298,32 +298,32 @@ export interface DatazoneUserProfileTimeouts {
   readonly update?: string;
 }
 
-export function datazoneUserProfileTimeoutsToTerraform(struct?: DatazoneUserProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneUserProfileTimeoutsToTerraform(struct?: DatazoneUserProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function datazoneUserProfileTimeoutsToHclTerraform(struct?: DatazoneUserProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneUserProfileTimeoutsToHclTerraform(struct?: DatazoneUserProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -334,19 +334,19 @@ export function datazoneUserProfileTimeoutsToHclTerraform(struct?: DatazoneUserP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatazoneUserProfileTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DatazoneUserProfileTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatazoneUserProfileTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DatazoneUserProfileTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -363,14 +363,14 @@ export class DatazoneUserProfileTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatazoneUserProfileTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatazoneUserProfileTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -418,7 +418,7 @@ export class DatazoneUserProfileTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_user_profile aws_datazone_user_profile}
 */
-export class DatazoneUserProfile extends cdktf.TerraformResource {
+export class DatazoneUserProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -429,14 +429,14 @@ export class DatazoneUserProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatazoneUserProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatazoneUserProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatazoneUserProfile to import
   * @param importFromId The id of the existing DatazoneUserProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_user_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatazoneUserProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_user_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_user_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -590,11 +590,11 @@ export class DatazoneUserProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_identifier: cdktf.stringToTerraform(this._domainIdentifier),
-      region: cdktf.stringToTerraform(this._region),
-      status: cdktf.stringToTerraform(this._status),
-      user_identifier: cdktf.stringToTerraform(this._userIdentifier),
-      user_type: cdktf.stringToTerraform(this._userType),
+      domain_identifier: cdktn.stringToTerraform(this._domainIdentifier),
+      region: cdktn.stringToTerraform(this._region),
+      status: cdktn.stringToTerraform(this._status),
+      user_identifier: cdktn.stringToTerraform(this._userIdentifier),
+      user_type: cdktn.stringToTerraform(this._userType),
       timeouts: datazoneUserProfileTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -602,31 +602,31 @@ export class DatazoneUserProfile extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain_identifier: {
-        value: cdktf.stringToHclTerraform(this._domainIdentifier),
+        value: cdktn.stringToHclTerraform(this._domainIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_identifier: {
-        value: cdktf.stringToHclTerraform(this._userIdentifier),
+        value: cdktn.stringToHclTerraform(this._userIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_type: {
-        value: cdktf.stringToHclTerraform(this._userType),
+        value: cdktn.stringToHclTerraform(this._userType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

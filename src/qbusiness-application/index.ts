@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QbusinessApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface QbusinessApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * A description of the Amazon Q application.
   *
@@ -51,13 +51,13 @@ export interface QbusinessApplicationConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/qbusiness_application#attachments_configuration QbusinessApplication#attachments_configuration}
   */
-  readonly attachmentsConfiguration?: QbusinessApplicationAttachmentsConfiguration[] | cdktf.IResolvable;
+  readonly attachmentsConfiguration?: QbusinessApplicationAttachmentsConfiguration[] | cdktn.IResolvable;
   /**
   * encryption_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/qbusiness_application#encryption_configuration QbusinessApplication#encryption_configuration}
   */
-  readonly encryptionConfiguration?: QbusinessApplicationEncryptionConfiguration[] | cdktf.IResolvable;
+  readonly encryptionConfiguration?: QbusinessApplicationEncryptionConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -74,25 +74,25 @@ export interface QbusinessApplicationAttachmentsConfiguration {
   readonly attachmentsControlMode: string;
 }
 
-export function qbusinessApplicationAttachmentsConfigurationToTerraform(struct?: QbusinessApplicationAttachmentsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function qbusinessApplicationAttachmentsConfigurationToTerraform(struct?: QbusinessApplicationAttachmentsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attachments_control_mode: cdktf.stringToTerraform(struct!.attachmentsControlMode),
+    attachments_control_mode: cdktn.stringToTerraform(struct!.attachmentsControlMode),
   }
 }
 
 
-export function qbusinessApplicationAttachmentsConfigurationToHclTerraform(struct?: QbusinessApplicationAttachmentsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function qbusinessApplicationAttachmentsConfigurationToHclTerraform(struct?: QbusinessApplicationAttachmentsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attachments_control_mode: {
-      value: cdktf.stringToHclTerraform(struct!.attachmentsControlMode),
+      value: cdktn.stringToHclTerraform(struct!.attachmentsControlMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,9 +103,9 @@ export function qbusinessApplicationAttachmentsConfigurationToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QbusinessApplicationAttachmentsConfigurationOutputReference extends cdktf.ComplexObject {
+export class QbusinessApplicationAttachmentsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -113,11 +113,11 @@ export class QbusinessApplicationAttachmentsConfigurationOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QbusinessApplicationAttachmentsConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): QbusinessApplicationAttachmentsConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -130,13 +130,13 @@ export class QbusinessApplicationAttachmentsConfigurationOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QbusinessApplicationAttachmentsConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QbusinessApplicationAttachmentsConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._attachmentsControlMode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -161,15 +161,15 @@ export class QbusinessApplicationAttachmentsConfigurationOutputReference extends
   }
 }
 
-export class QbusinessApplicationAttachmentsConfigurationList extends cdktf.ComplexList {
-  public internalValue? : QbusinessApplicationAttachmentsConfiguration[] | cdktf.IResolvable
+export class QbusinessApplicationAttachmentsConfigurationList extends cdktn.ComplexList {
+  public internalValue? : QbusinessApplicationAttachmentsConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -189,25 +189,25 @@ export interface QbusinessApplicationEncryptionConfiguration {
   readonly kmsKeyId: string;
 }
 
-export function qbusinessApplicationEncryptionConfigurationToTerraform(struct?: QbusinessApplicationEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function qbusinessApplicationEncryptionConfigurationToTerraform(struct?: QbusinessApplicationEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
   }
 }
 
 
-export function qbusinessApplicationEncryptionConfigurationToHclTerraform(struct?: QbusinessApplicationEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function qbusinessApplicationEncryptionConfigurationToHclTerraform(struct?: QbusinessApplicationEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -218,9 +218,9 @@ export function qbusinessApplicationEncryptionConfigurationToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QbusinessApplicationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class QbusinessApplicationEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -228,11 +228,11 @@ export class QbusinessApplicationEncryptionConfigurationOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QbusinessApplicationEncryptionConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): QbusinessApplicationEncryptionConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -245,13 +245,13 @@ export class QbusinessApplicationEncryptionConfigurationOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QbusinessApplicationEncryptionConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QbusinessApplicationEncryptionConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._kmsKeyId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -276,15 +276,15 @@ export class QbusinessApplicationEncryptionConfigurationOutputReference extends 
   }
 }
 
-export class QbusinessApplicationEncryptionConfigurationList extends cdktf.ComplexList {
-  public internalValue? : QbusinessApplicationEncryptionConfiguration[] | cdktf.IResolvable
+export class QbusinessApplicationEncryptionConfigurationList extends cdktn.ComplexList {
+  public internalValue? : QbusinessApplicationEncryptionConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -316,39 +316,39 @@ export interface QbusinessApplicationTimeouts {
   readonly update?: string;
 }
 
-export function qbusinessApplicationTimeoutsToTerraform(struct?: QbusinessApplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function qbusinessApplicationTimeoutsToTerraform(struct?: QbusinessApplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function qbusinessApplicationTimeoutsToHclTerraform(struct?: QbusinessApplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function qbusinessApplicationTimeoutsToHclTerraform(struct?: QbusinessApplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -359,19 +359,19 @@ export function qbusinessApplicationTimeoutsToHclTerraform(struct?: QbusinessApp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QbusinessApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class QbusinessApplicationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): QbusinessApplicationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): QbusinessApplicationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -392,7 +392,7 @@ export class QbusinessApplicationTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QbusinessApplicationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QbusinessApplicationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -400,7 +400,7 @@ export class QbusinessApplicationTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -465,7 +465,7 @@ export class QbusinessApplicationTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/qbusiness_application aws_qbusiness_application}
 */
-export class QbusinessApplication extends cdktf.TerraformResource {
+export class QbusinessApplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -476,14 +476,14 @@ export class QbusinessApplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QbusinessApplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QbusinessApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QbusinessApplication to import
   * @param importFromId The id of the existing QbusinessApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/qbusiness_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QbusinessApplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_qbusiness_application", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_qbusiness_application", importId: importFromId, provider });
       }
 
   // ===========
@@ -631,7 +631,7 @@ export class QbusinessApplication extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -641,7 +641,7 @@ export class QbusinessApplication extends cdktf.TerraformResource {
   public get attachmentsConfiguration() {
     return this._attachmentsConfiguration;
   }
-  public putAttachmentsConfiguration(value: QbusinessApplicationAttachmentsConfiguration[] | cdktf.IResolvable) {
+  public putAttachmentsConfiguration(value: QbusinessApplicationAttachmentsConfiguration[] | cdktn.IResolvable) {
     this._attachmentsConfiguration.internalValue = value;
   }
   public resetAttachmentsConfiguration() {
@@ -657,7 +657,7 @@ export class QbusinessApplication extends cdktf.TerraformResource {
   public get encryptionConfiguration() {
     return this._encryptionConfiguration;
   }
-  public putEncryptionConfiguration(value: QbusinessApplicationEncryptionConfiguration[] | cdktf.IResolvable) {
+  public putEncryptionConfiguration(value: QbusinessApplicationEncryptionConfiguration[] | cdktn.IResolvable) {
     this._encryptionConfiguration.internalValue = value;
   }
   public resetEncryptionConfiguration() {
@@ -690,14 +690,14 @@ export class QbusinessApplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      iam_service_role_arn: cdktf.stringToTerraform(this._iamServiceRoleArn),
-      identity_center_instance_arn: cdktf.stringToTerraform(this._identityCenterInstanceArn),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      attachments_configuration: cdktf.listMapper(qbusinessApplicationAttachmentsConfigurationToTerraform, true)(this._attachmentsConfiguration.internalValue),
-      encryption_configuration: cdktf.listMapper(qbusinessApplicationEncryptionConfigurationToTerraform, true)(this._encryptionConfiguration.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      iam_service_role_arn: cdktn.stringToTerraform(this._iamServiceRoleArn),
+      identity_center_instance_arn: cdktn.stringToTerraform(this._identityCenterInstanceArn),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      attachments_configuration: cdktn.listMapper(qbusinessApplicationAttachmentsConfigurationToTerraform, true)(this._attachmentsConfiguration.internalValue),
+      encryption_configuration: cdktn.listMapper(qbusinessApplicationEncryptionConfigurationToTerraform, true)(this._encryptionConfiguration.internalValue),
       timeouts: qbusinessApplicationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -705,49 +705,49 @@ export class QbusinessApplication extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_service_role_arn: {
-        value: cdktf.stringToHclTerraform(this._iamServiceRoleArn),
+        value: cdktn.stringToHclTerraform(this._iamServiceRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_center_instance_arn: {
-        value: cdktf.stringToHclTerraform(this._identityCenterInstanceArn),
+        value: cdktn.stringToHclTerraform(this._identityCenterInstanceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       attachments_configuration: {
-        value: cdktf.listMapperHcl(qbusinessApplicationAttachmentsConfigurationToHclTerraform, true)(this._attachmentsConfiguration.internalValue),
+        value: cdktn.listMapperHcl(qbusinessApplicationAttachmentsConfigurationToHclTerraform, true)(this._attachmentsConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "QbusinessApplicationAttachmentsConfigurationList",
       },
       encryption_configuration: {
-        value: cdktf.listMapperHcl(qbusinessApplicationEncryptionConfigurationToHclTerraform, true)(this._encryptionConfiguration.internalValue),
+        value: cdktn.listMapperHcl(qbusinessApplicationEncryptionConfigurationToHclTerraform, true)(this._encryptionConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "QbusinessApplicationEncryptionConfigurationList",

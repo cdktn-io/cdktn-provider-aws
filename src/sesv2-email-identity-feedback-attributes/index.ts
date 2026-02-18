@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Sesv2EmailIdentityFeedbackAttributesConfig extends cdktf.TerraformMetaArguments {
+export interface Sesv2EmailIdentityFeedbackAttributesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_email_identity_feedback_attributes#email_forwarding_enabled Sesv2EmailIdentityFeedbackAttributes#email_forwarding_enabled}
   */
-  readonly emailForwardingEnabled?: boolean | cdktf.IResolvable;
+  readonly emailForwardingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_email_identity_feedback_attributes#email_identity Sesv2EmailIdentityFeedbackAttributes#email_identity}
   */
@@ -38,7 +38,7 @@ export interface Sesv2EmailIdentityFeedbackAttributesConfig extends cdktf.Terraf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_email_identity_feedback_attributes aws_sesv2_email_identity_feedback_attributes}
 */
-export class Sesv2EmailIdentityFeedbackAttributes extends cdktf.TerraformResource {
+export class Sesv2EmailIdentityFeedbackAttributes extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class Sesv2EmailIdentityFeedbackAttributes extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Sesv2EmailIdentityFeedbackAttributes resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Sesv2EmailIdentityFeedbackAttributes resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Sesv2EmailIdentityFeedbackAttributes to import
   * @param importFromId The id of the existing Sesv2EmailIdentityFeedbackAttributes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_email_identity_feedback_attributes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Sesv2EmailIdentityFeedbackAttributes to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_email_identity_feedback_attributes", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_email_identity_feedback_attributes", importId: importFromId, provider });
       }
 
   // ===========
@@ -97,11 +97,11 @@ export class Sesv2EmailIdentityFeedbackAttributes extends cdktf.TerraformResourc
   // ==========
 
   // email_forwarding_enabled - computed: false, optional: true, required: false
-  private _emailForwardingEnabled?: boolean | cdktf.IResolvable; 
+  private _emailForwardingEnabled?: boolean | cdktn.IResolvable; 
   public get emailForwardingEnabled() {
     return this.getBooleanAttribute('email_forwarding_enabled');
   }
-  public set emailForwardingEnabled(value: boolean | cdktf.IResolvable) {
+  public set emailForwardingEnabled(value: boolean | cdktn.IResolvable) {
     this._emailForwardingEnabled = value;
   }
   public resetEmailForwardingEnabled() {
@@ -163,35 +163,35 @@ export class Sesv2EmailIdentityFeedbackAttributes extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      email_forwarding_enabled: cdktf.booleanToTerraform(this._emailForwardingEnabled),
-      email_identity: cdktf.stringToTerraform(this._emailIdentity),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      email_forwarding_enabled: cdktn.booleanToTerraform(this._emailForwardingEnabled),
+      email_identity: cdktn.stringToTerraform(this._emailIdentity),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       email_forwarding_enabled: {
-        value: cdktf.booleanToHclTerraform(this._emailForwardingEnabled),
+        value: cdktn.booleanToHclTerraform(this._emailForwardingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       email_identity: {
-        value: cdktf.stringToHclTerraform(this._emailIdentity),
+        value: cdktn.stringToHclTerraform(this._emailIdentity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

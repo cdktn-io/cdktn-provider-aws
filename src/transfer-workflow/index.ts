@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TransferWorkflowConfig extends cdktf.TerraformMetaArguments {
+export interface TransferWorkflowConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_workflow#description TransferWorkflow#description}
   */
@@ -42,13 +42,13 @@ export interface TransferWorkflowConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_workflow#on_exception_steps TransferWorkflow#on_exception_steps}
   */
-  readonly onExceptionSteps?: TransferWorkflowOnExceptionSteps[] | cdktf.IResolvable;
+  readonly onExceptionSteps?: TransferWorkflowOnExceptionSteps[] | cdktn.IResolvable;
   /**
   * steps block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_workflow#steps TransferWorkflow#steps}
   */
-  readonly steps: TransferWorkflowSteps[] | cdktf.IResolvable;
+  readonly steps: TransferWorkflowSteps[] | cdktn.IResolvable;
 }
 export interface TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation {
   /**
@@ -62,31 +62,31 @@ export interface TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileL
 }
 
 export function transferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocationToTerraform(struct?: TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference | TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file_system_id: cdktf.stringToTerraform(struct!.fileSystemId),
-    path: cdktf.stringToTerraform(struct!.path),
+    file_system_id: cdktn.stringToTerraform(struct!.fileSystemId),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
 export function transferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocationToHclTerraform(struct?: TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference | TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file_system_id: {
-      value: cdktf.stringToHclTerraform(struct!.fileSystemId),
+      value: cdktn.stringToHclTerraform(struct!.fileSystemId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -97,14 +97,14 @@ export function transferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -179,31 +179,31 @@ export interface TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileL
 }
 
 export function transferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocationToTerraform(struct?: TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference | TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    key: cdktf.stringToTerraform(struct!.key),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    key: cdktn.stringToTerraform(struct!.key),
   }
 }
 
 
 export function transferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocationToHclTerraform(struct?: TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference | TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -214,14 +214,14 @@ export function transferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -300,8 +300,8 @@ export interface TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileL
 }
 
 export function transferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationToTerraform(struct?: TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationOutputReference | TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -312,8 +312,8 @@ export function transferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLo
 
 
 export function transferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationToHclTerraform(struct?: TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationOutputReference | TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -335,14 +335,14 @@ export function transferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -427,39 +427,39 @@ export interface TransferWorkflowOnExceptionStepsCopyStepDetails {
 }
 
 export function transferWorkflowOnExceptionStepsCopyStepDetailsToTerraform(struct?: TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference | TransferWorkflowOnExceptionStepsCopyStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    overwrite_existing: cdktf.stringToTerraform(struct!.overwriteExisting),
-    source_file_location: cdktf.stringToTerraform(struct!.sourceFileLocation),
+    name: cdktn.stringToTerraform(struct!.name),
+    overwrite_existing: cdktn.stringToTerraform(struct!.overwriteExisting),
+    source_file_location: cdktn.stringToTerraform(struct!.sourceFileLocation),
     destination_file_location: transferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationToTerraform(struct!.destinationFileLocation),
   }
 }
 
 
 export function transferWorkflowOnExceptionStepsCopyStepDetailsToHclTerraform(struct?: TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference | TransferWorkflowOnExceptionStepsCopyStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     overwrite_existing: {
-      value: cdktf.stringToHclTerraform(struct!.overwriteExisting),
+      value: cdktn.stringToHclTerraform(struct!.overwriteExisting),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_file_location: {
-      value: cdktf.stringToHclTerraform(struct!.sourceFileLocation),
+      value: cdktn.stringToHclTerraform(struct!.sourceFileLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -476,14 +476,14 @@ export function transferWorkflowOnExceptionStepsCopyStepDetailsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -610,45 +610,45 @@ export interface TransferWorkflowOnExceptionStepsCustomStepDetails {
 }
 
 export function transferWorkflowOnExceptionStepsCustomStepDetailsToTerraform(struct?: TransferWorkflowOnExceptionStepsCustomStepDetailsOutputReference | TransferWorkflowOnExceptionStepsCustomStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    source_file_location: cdktf.stringToTerraform(struct!.sourceFileLocation),
-    target: cdktf.stringToTerraform(struct!.target),
-    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    name: cdktn.stringToTerraform(struct!.name),
+    source_file_location: cdktn.stringToTerraform(struct!.sourceFileLocation),
+    target: cdktn.stringToTerraform(struct!.target),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
   }
 }
 
 
 export function transferWorkflowOnExceptionStepsCustomStepDetailsToHclTerraform(struct?: TransferWorkflowOnExceptionStepsCustomStepDetailsOutputReference | TransferWorkflowOnExceptionStepsCustomStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_file_location: {
-      value: cdktf.stringToHclTerraform(struct!.sourceFileLocation),
+      value: cdktn.stringToHclTerraform(struct!.sourceFileLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -659,14 +659,14 @@ export function transferWorkflowOnExceptionStepsCustomStepDetailsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowOnExceptionStepsCustomStepDetailsOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowOnExceptionStepsCustomStepDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -785,31 +785,31 @@ export interface TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFi
 }
 
 export function transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationToTerraform(struct?: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference | TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file_system_id: cdktf.stringToTerraform(struct!.fileSystemId),
-    path: cdktf.stringToTerraform(struct!.path),
+    file_system_id: cdktn.stringToTerraform(struct!.fileSystemId),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
 export function transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationToHclTerraform(struct?: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference | TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file_system_id: {
-      value: cdktf.stringToHclTerraform(struct!.fileSystemId),
+      value: cdktn.stringToHclTerraform(struct!.fileSystemId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -820,14 +820,14 @@ export function transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFil
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -902,31 +902,31 @@ export interface TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFi
 }
 
 export function transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocationToTerraform(struct?: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference | TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    key: cdktf.stringToTerraform(struct!.key),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    key: cdktn.stringToTerraform(struct!.key),
   }
 }
 
 
 export function transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocationToHclTerraform(struct?: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference | TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -937,14 +937,14 @@ export function transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFil
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1023,8 +1023,8 @@ export interface TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFi
 }
 
 export function transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationToTerraform(struct?: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationOutputReference | TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1035,8 +1035,8 @@ export function transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFil
 
 
 export function transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationToHclTerraform(struct?: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationOutputReference | TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1058,14 +1058,14 @@ export function transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFil
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1154,46 +1154,46 @@ export interface TransferWorkflowOnExceptionStepsDecryptStepDetails {
 }
 
 export function transferWorkflowOnExceptionStepsDecryptStepDetailsToTerraform(struct?: TransferWorkflowOnExceptionStepsDecryptStepDetailsOutputReference | TransferWorkflowOnExceptionStepsDecryptStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    overwrite_existing: cdktf.stringToTerraform(struct!.overwriteExisting),
-    source_file_location: cdktf.stringToTerraform(struct!.sourceFileLocation),
-    type: cdktf.stringToTerraform(struct!.type),
+    name: cdktn.stringToTerraform(struct!.name),
+    overwrite_existing: cdktn.stringToTerraform(struct!.overwriteExisting),
+    source_file_location: cdktn.stringToTerraform(struct!.sourceFileLocation),
+    type: cdktn.stringToTerraform(struct!.type),
     destination_file_location: transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationToTerraform(struct!.destinationFileLocation),
   }
 }
 
 
 export function transferWorkflowOnExceptionStepsDecryptStepDetailsToHclTerraform(struct?: TransferWorkflowOnExceptionStepsDecryptStepDetailsOutputReference | TransferWorkflowOnExceptionStepsDecryptStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     overwrite_existing: {
-      value: cdktf.stringToHclTerraform(struct!.overwriteExisting),
+      value: cdktn.stringToHclTerraform(struct!.overwriteExisting),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_file_location: {
-      value: cdktf.stringToHclTerraform(struct!.sourceFileLocation),
+      value: cdktn.stringToHclTerraform(struct!.sourceFileLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1210,14 +1210,14 @@ export function transferWorkflowOnExceptionStepsDecryptStepDetailsToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowOnExceptionStepsDecryptStepDetailsOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowOnExceptionStepsDecryptStepDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1355,31 +1355,31 @@ export interface TransferWorkflowOnExceptionStepsDeleteStepDetails {
 }
 
 export function transferWorkflowOnExceptionStepsDeleteStepDetailsToTerraform(struct?: TransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference | TransferWorkflowOnExceptionStepsDeleteStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    source_file_location: cdktf.stringToTerraform(struct!.sourceFileLocation),
+    name: cdktn.stringToTerraform(struct!.name),
+    source_file_location: cdktn.stringToTerraform(struct!.sourceFileLocation),
   }
 }
 
 
 export function transferWorkflowOnExceptionStepsDeleteStepDetailsToHclTerraform(struct?: TransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference | TransferWorkflowOnExceptionStepsDeleteStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_file_location: {
-      value: cdktf.stringToHclTerraform(struct!.sourceFileLocation),
+      value: cdktn.stringToHclTerraform(struct!.sourceFileLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1390,14 +1390,14 @@ export function transferWorkflowOnExceptionStepsDeleteStepDetailsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1471,32 +1471,32 @@ export interface TransferWorkflowOnExceptionStepsTagStepDetailsTags {
   readonly value: string;
 }
 
-export function transferWorkflowOnExceptionStepsTagStepDetailsTagsToTerraform(struct?: TransferWorkflowOnExceptionStepsTagStepDetailsTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWorkflowOnExceptionStepsTagStepDetailsTagsToTerraform(struct?: TransferWorkflowOnExceptionStepsTagStepDetailsTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function transferWorkflowOnExceptionStepsTagStepDetailsTagsToHclTerraform(struct?: TransferWorkflowOnExceptionStepsTagStepDetailsTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWorkflowOnExceptionStepsTagStepDetailsTagsToHclTerraform(struct?: TransferWorkflowOnExceptionStepsTagStepDetailsTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1507,9 +1507,9 @@ export function transferWorkflowOnExceptionStepsTagStepDetailsTagsToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowOnExceptionStepsTagStepDetailsTagsOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowOnExceptionStepsTagStepDetailsTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1517,11 +1517,11 @@ export class TransferWorkflowOnExceptionStepsTagStepDetailsTagsOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TransferWorkflowOnExceptionStepsTagStepDetailsTags | cdktf.IResolvable | undefined {
+  public get internalValue(): TransferWorkflowOnExceptionStepsTagStepDetailsTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1538,14 +1538,14 @@ export class TransferWorkflowOnExceptionStepsTagStepDetailsTagsOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TransferWorkflowOnExceptionStepsTagStepDetailsTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TransferWorkflowOnExceptionStepsTagStepDetailsTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1584,15 +1584,15 @@ export class TransferWorkflowOnExceptionStepsTagStepDetailsTagsOutputReference e
   }
 }
 
-export class TransferWorkflowOnExceptionStepsTagStepDetailsTagsList extends cdktf.ComplexList {
-  public internalValue? : TransferWorkflowOnExceptionStepsTagStepDetailsTags[] | cdktf.IResolvable
+export class TransferWorkflowOnExceptionStepsTagStepDetailsTagsList extends cdktn.ComplexList {
+  public internalValue? : TransferWorkflowOnExceptionStepsTagStepDetailsTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1617,42 +1617,42 @@ export interface TransferWorkflowOnExceptionStepsTagStepDetails {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_workflow#tags TransferWorkflow#tags}
   */
-  readonly tags?: TransferWorkflowOnExceptionStepsTagStepDetailsTags[] | cdktf.IResolvable;
+  readonly tags?: TransferWorkflowOnExceptionStepsTagStepDetailsTags[] | cdktn.IResolvable;
 }
 
 export function transferWorkflowOnExceptionStepsTagStepDetailsToTerraform(struct?: TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference | TransferWorkflowOnExceptionStepsTagStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    source_file_location: cdktf.stringToTerraform(struct!.sourceFileLocation),
-    tags: cdktf.listMapper(transferWorkflowOnExceptionStepsTagStepDetailsTagsToTerraform, true)(struct!.tags),
+    name: cdktn.stringToTerraform(struct!.name),
+    source_file_location: cdktn.stringToTerraform(struct!.sourceFileLocation),
+    tags: cdktn.listMapper(transferWorkflowOnExceptionStepsTagStepDetailsTagsToTerraform, true)(struct!.tags),
   }
 }
 
 
 export function transferWorkflowOnExceptionStepsTagStepDetailsToHclTerraform(struct?: TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference | TransferWorkflowOnExceptionStepsTagStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_file_location: {
-      value: cdktf.stringToHclTerraform(struct!.sourceFileLocation),
+      value: cdktn.stringToHclTerraform(struct!.sourceFileLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags: {
-      value: cdktf.listMapperHcl(transferWorkflowOnExceptionStepsTagStepDetailsTagsToHclTerraform, true)(struct!.tags),
+      value: cdktn.listMapperHcl(transferWorkflowOnExceptionStepsTagStepDetailsTagsToHclTerraform, true)(struct!.tags),
       isBlock: true,
       type: "list",
       storageClassType: "TransferWorkflowOnExceptionStepsTagStepDetailsTagsList",
@@ -1663,14 +1663,14 @@ export function transferWorkflowOnExceptionStepsTagStepDetailsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1744,7 +1744,7 @@ export class TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference exten
   public get tags() {
     return this._tags;
   }
-  public putTags(value: TransferWorkflowOnExceptionStepsTagStepDetailsTags[] | cdktf.IResolvable) {
+  public putTags(value: TransferWorkflowOnExceptionStepsTagStepDetailsTags[] | cdktn.IResolvable) {
     this._tags.internalValue = value;
   }
   public resetTags() {
@@ -1792,13 +1792,13 @@ export interface TransferWorkflowOnExceptionSteps {
   readonly tagStepDetails?: TransferWorkflowOnExceptionStepsTagStepDetails;
 }
 
-export function transferWorkflowOnExceptionStepsToTerraform(struct?: TransferWorkflowOnExceptionSteps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWorkflowOnExceptionStepsToTerraform(struct?: TransferWorkflowOnExceptionSteps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
     copy_step_details: transferWorkflowOnExceptionStepsCopyStepDetailsToTerraform(struct!.copyStepDetails),
     custom_step_details: transferWorkflowOnExceptionStepsCustomStepDetailsToTerraform(struct!.customStepDetails),
     decrypt_step_details: transferWorkflowOnExceptionStepsDecryptStepDetailsToTerraform(struct!.decryptStepDetails),
@@ -1808,14 +1808,14 @@ export function transferWorkflowOnExceptionStepsToTerraform(struct?: TransferWor
 }
 
 
-export function transferWorkflowOnExceptionStepsToHclTerraform(struct?: TransferWorkflowOnExceptionSteps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWorkflowOnExceptionStepsToHclTerraform(struct?: TransferWorkflowOnExceptionSteps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1856,9 +1856,9 @@ export function transferWorkflowOnExceptionStepsToHclTerraform(struct?: Transfer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowOnExceptionStepsOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowOnExceptionStepsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1866,11 +1866,11 @@ export class TransferWorkflowOnExceptionStepsOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TransferWorkflowOnExceptionSteps | cdktf.IResolvable | undefined {
+  public get internalValue(): TransferWorkflowOnExceptionSteps | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1903,7 +1903,7 @@ export class TransferWorkflowOnExceptionStepsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TransferWorkflowOnExceptionSteps | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TransferWorkflowOnExceptionSteps | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1914,7 +1914,7 @@ export class TransferWorkflowOnExceptionStepsOutputReference extends cdktf.Compl
       this._deleteStepDetails.internalValue = undefined;
       this._tagStepDetails.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2024,15 +2024,15 @@ export class TransferWorkflowOnExceptionStepsOutputReference extends cdktf.Compl
   }
 }
 
-export class TransferWorkflowOnExceptionStepsList extends cdktf.ComplexList {
-  public internalValue? : TransferWorkflowOnExceptionSteps[] | cdktf.IResolvable
+export class TransferWorkflowOnExceptionStepsList extends cdktn.ComplexList {
+  public internalValue? : TransferWorkflowOnExceptionSteps[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2055,31 +2055,31 @@ export interface TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsF
 }
 
 export function transferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationToTerraform(struct?: TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference | TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file_system_id: cdktf.stringToTerraform(struct!.fileSystemId),
-    path: cdktf.stringToTerraform(struct!.path),
+    file_system_id: cdktn.stringToTerraform(struct!.fileSystemId),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
 export function transferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationToHclTerraform(struct?: TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference | TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file_system_id: {
-      value: cdktf.stringToHclTerraform(struct!.fileSystemId),
+      value: cdktn.stringToHclTerraform(struct!.fileSystemId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2090,14 +2090,14 @@ export function transferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2172,31 +2172,31 @@ export interface TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3Fi
 }
 
 export function transferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocationToTerraform(struct?: TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference | TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    key: cdktf.stringToTerraform(struct!.key),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    key: cdktn.stringToTerraform(struct!.key),
   }
 }
 
 
 export function transferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocationToHclTerraform(struct?: TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference | TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2207,14 +2207,14 @@ export function transferWorkflowStepsCopyStepDetailsDestinationFileLocationS3Fil
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2293,8 +2293,8 @@ export interface TransferWorkflowStepsCopyStepDetailsDestinationFileLocation {
 }
 
 export function transferWorkflowStepsCopyStepDetailsDestinationFileLocationToTerraform(struct?: TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference | TransferWorkflowStepsCopyStepDetailsDestinationFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2305,8 +2305,8 @@ export function transferWorkflowStepsCopyStepDetailsDestinationFileLocationToTer
 
 
 export function transferWorkflowStepsCopyStepDetailsDestinationFileLocationToHclTerraform(struct?: TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference | TransferWorkflowStepsCopyStepDetailsDestinationFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2328,14 +2328,14 @@ export function transferWorkflowStepsCopyStepDetailsDestinationFileLocationToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2420,39 +2420,39 @@ export interface TransferWorkflowStepsCopyStepDetails {
 }
 
 export function transferWorkflowStepsCopyStepDetailsToTerraform(struct?: TransferWorkflowStepsCopyStepDetailsOutputReference | TransferWorkflowStepsCopyStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    overwrite_existing: cdktf.stringToTerraform(struct!.overwriteExisting),
-    source_file_location: cdktf.stringToTerraform(struct!.sourceFileLocation),
+    name: cdktn.stringToTerraform(struct!.name),
+    overwrite_existing: cdktn.stringToTerraform(struct!.overwriteExisting),
+    source_file_location: cdktn.stringToTerraform(struct!.sourceFileLocation),
     destination_file_location: transferWorkflowStepsCopyStepDetailsDestinationFileLocationToTerraform(struct!.destinationFileLocation),
   }
 }
 
 
 export function transferWorkflowStepsCopyStepDetailsToHclTerraform(struct?: TransferWorkflowStepsCopyStepDetailsOutputReference | TransferWorkflowStepsCopyStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     overwrite_existing: {
-      value: cdktf.stringToHclTerraform(struct!.overwriteExisting),
+      value: cdktn.stringToHclTerraform(struct!.overwriteExisting),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_file_location: {
-      value: cdktf.stringToHclTerraform(struct!.sourceFileLocation),
+      value: cdktn.stringToHclTerraform(struct!.sourceFileLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2469,14 +2469,14 @@ export function transferWorkflowStepsCopyStepDetailsToHclTerraform(struct?: Tran
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowStepsCopyStepDetailsOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowStepsCopyStepDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2603,45 +2603,45 @@ export interface TransferWorkflowStepsCustomStepDetails {
 }
 
 export function transferWorkflowStepsCustomStepDetailsToTerraform(struct?: TransferWorkflowStepsCustomStepDetailsOutputReference | TransferWorkflowStepsCustomStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    source_file_location: cdktf.stringToTerraform(struct!.sourceFileLocation),
-    target: cdktf.stringToTerraform(struct!.target),
-    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    name: cdktn.stringToTerraform(struct!.name),
+    source_file_location: cdktn.stringToTerraform(struct!.sourceFileLocation),
+    target: cdktn.stringToTerraform(struct!.target),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
   }
 }
 
 
 export function transferWorkflowStepsCustomStepDetailsToHclTerraform(struct?: TransferWorkflowStepsCustomStepDetailsOutputReference | TransferWorkflowStepsCustomStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_file_location: {
-      value: cdktf.stringToHclTerraform(struct!.sourceFileLocation),
+      value: cdktn.stringToHclTerraform(struct!.sourceFileLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2652,14 +2652,14 @@ export function transferWorkflowStepsCustomStepDetailsToHclTerraform(struct?: Tr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowStepsCustomStepDetailsOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowStepsCustomStepDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2778,31 +2778,31 @@ export interface TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationE
 }
 
 export function transferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationToTerraform(struct?: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference | TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file_system_id: cdktf.stringToTerraform(struct!.fileSystemId),
-    path: cdktf.stringToTerraform(struct!.path),
+    file_system_id: cdktn.stringToTerraform(struct!.fileSystemId),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
 export function transferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationToHclTerraform(struct?: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference | TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file_system_id: {
-      value: cdktf.stringToHclTerraform(struct!.fileSystemId),
+      value: cdktn.stringToHclTerraform(struct!.fileSystemId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2813,14 +2813,14 @@ export function transferWorkflowStepsDecryptStepDetailsDestinationFileLocationEf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2895,31 +2895,31 @@ export interface TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS
 }
 
 export function transferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocationToTerraform(struct?: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference | TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    key: cdktf.stringToTerraform(struct!.key),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    key: cdktn.stringToTerraform(struct!.key),
   }
 }
 
 
 export function transferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocationToHclTerraform(struct?: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference | TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2930,14 +2930,14 @@ export function transferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3016,8 +3016,8 @@ export interface TransferWorkflowStepsDecryptStepDetailsDestinationFileLocation 
 }
 
 export function transferWorkflowStepsDecryptStepDetailsDestinationFileLocationToTerraform(struct?: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationOutputReference | TransferWorkflowStepsDecryptStepDetailsDestinationFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3028,8 +3028,8 @@ export function transferWorkflowStepsDecryptStepDetailsDestinationFileLocationTo
 
 
 export function transferWorkflowStepsDecryptStepDetailsDestinationFileLocationToHclTerraform(struct?: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationOutputReference | TransferWorkflowStepsDecryptStepDetailsDestinationFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3051,14 +3051,14 @@ export function transferWorkflowStepsDecryptStepDetailsDestinationFileLocationTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3147,46 +3147,46 @@ export interface TransferWorkflowStepsDecryptStepDetails {
 }
 
 export function transferWorkflowStepsDecryptStepDetailsToTerraform(struct?: TransferWorkflowStepsDecryptStepDetailsOutputReference | TransferWorkflowStepsDecryptStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    overwrite_existing: cdktf.stringToTerraform(struct!.overwriteExisting),
-    source_file_location: cdktf.stringToTerraform(struct!.sourceFileLocation),
-    type: cdktf.stringToTerraform(struct!.type),
+    name: cdktn.stringToTerraform(struct!.name),
+    overwrite_existing: cdktn.stringToTerraform(struct!.overwriteExisting),
+    source_file_location: cdktn.stringToTerraform(struct!.sourceFileLocation),
+    type: cdktn.stringToTerraform(struct!.type),
     destination_file_location: transferWorkflowStepsDecryptStepDetailsDestinationFileLocationToTerraform(struct!.destinationFileLocation),
   }
 }
 
 
 export function transferWorkflowStepsDecryptStepDetailsToHclTerraform(struct?: TransferWorkflowStepsDecryptStepDetailsOutputReference | TransferWorkflowStepsDecryptStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     overwrite_existing: {
-      value: cdktf.stringToHclTerraform(struct!.overwriteExisting),
+      value: cdktn.stringToHclTerraform(struct!.overwriteExisting),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_file_location: {
-      value: cdktf.stringToHclTerraform(struct!.sourceFileLocation),
+      value: cdktn.stringToHclTerraform(struct!.sourceFileLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3203,14 +3203,14 @@ export function transferWorkflowStepsDecryptStepDetailsToHclTerraform(struct?: T
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowStepsDecryptStepDetailsOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowStepsDecryptStepDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3348,31 +3348,31 @@ export interface TransferWorkflowStepsDeleteStepDetails {
 }
 
 export function transferWorkflowStepsDeleteStepDetailsToTerraform(struct?: TransferWorkflowStepsDeleteStepDetailsOutputReference | TransferWorkflowStepsDeleteStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    source_file_location: cdktf.stringToTerraform(struct!.sourceFileLocation),
+    name: cdktn.stringToTerraform(struct!.name),
+    source_file_location: cdktn.stringToTerraform(struct!.sourceFileLocation),
   }
 }
 
 
 export function transferWorkflowStepsDeleteStepDetailsToHclTerraform(struct?: TransferWorkflowStepsDeleteStepDetailsOutputReference | TransferWorkflowStepsDeleteStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_file_location: {
-      value: cdktf.stringToHclTerraform(struct!.sourceFileLocation),
+      value: cdktn.stringToHclTerraform(struct!.sourceFileLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3383,14 +3383,14 @@ export function transferWorkflowStepsDeleteStepDetailsToHclTerraform(struct?: Tr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowStepsDeleteStepDetailsOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowStepsDeleteStepDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3464,32 +3464,32 @@ export interface TransferWorkflowStepsTagStepDetailsTags {
   readonly value: string;
 }
 
-export function transferWorkflowStepsTagStepDetailsTagsToTerraform(struct?: TransferWorkflowStepsTagStepDetailsTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWorkflowStepsTagStepDetailsTagsToTerraform(struct?: TransferWorkflowStepsTagStepDetailsTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function transferWorkflowStepsTagStepDetailsTagsToHclTerraform(struct?: TransferWorkflowStepsTagStepDetailsTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWorkflowStepsTagStepDetailsTagsToHclTerraform(struct?: TransferWorkflowStepsTagStepDetailsTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3500,9 +3500,9 @@ export function transferWorkflowStepsTagStepDetailsTagsToHclTerraform(struct?: T
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowStepsTagStepDetailsTagsOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowStepsTagStepDetailsTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3510,11 +3510,11 @@ export class TransferWorkflowStepsTagStepDetailsTagsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TransferWorkflowStepsTagStepDetailsTags | cdktf.IResolvable | undefined {
+  public get internalValue(): TransferWorkflowStepsTagStepDetailsTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3531,14 +3531,14 @@ export class TransferWorkflowStepsTagStepDetailsTagsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TransferWorkflowStepsTagStepDetailsTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TransferWorkflowStepsTagStepDetailsTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3577,15 +3577,15 @@ export class TransferWorkflowStepsTagStepDetailsTagsOutputReference extends cdkt
   }
 }
 
-export class TransferWorkflowStepsTagStepDetailsTagsList extends cdktf.ComplexList {
-  public internalValue? : TransferWorkflowStepsTagStepDetailsTags[] | cdktf.IResolvable
+export class TransferWorkflowStepsTagStepDetailsTagsList extends cdktn.ComplexList {
+  public internalValue? : TransferWorkflowStepsTagStepDetailsTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3610,42 +3610,42 @@ export interface TransferWorkflowStepsTagStepDetails {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_workflow#tags TransferWorkflow#tags}
   */
-  readonly tags?: TransferWorkflowStepsTagStepDetailsTags[] | cdktf.IResolvable;
+  readonly tags?: TransferWorkflowStepsTagStepDetailsTags[] | cdktn.IResolvable;
 }
 
 export function transferWorkflowStepsTagStepDetailsToTerraform(struct?: TransferWorkflowStepsTagStepDetailsOutputReference | TransferWorkflowStepsTagStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    source_file_location: cdktf.stringToTerraform(struct!.sourceFileLocation),
-    tags: cdktf.listMapper(transferWorkflowStepsTagStepDetailsTagsToTerraform, true)(struct!.tags),
+    name: cdktn.stringToTerraform(struct!.name),
+    source_file_location: cdktn.stringToTerraform(struct!.sourceFileLocation),
+    tags: cdktn.listMapper(transferWorkflowStepsTagStepDetailsTagsToTerraform, true)(struct!.tags),
   }
 }
 
 
 export function transferWorkflowStepsTagStepDetailsToHclTerraform(struct?: TransferWorkflowStepsTagStepDetailsOutputReference | TransferWorkflowStepsTagStepDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_file_location: {
-      value: cdktf.stringToHclTerraform(struct!.sourceFileLocation),
+      value: cdktn.stringToHclTerraform(struct!.sourceFileLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags: {
-      value: cdktf.listMapperHcl(transferWorkflowStepsTagStepDetailsTagsToHclTerraform, true)(struct!.tags),
+      value: cdktn.listMapperHcl(transferWorkflowStepsTagStepDetailsTagsToHclTerraform, true)(struct!.tags),
       isBlock: true,
       type: "list",
       storageClassType: "TransferWorkflowStepsTagStepDetailsTagsList",
@@ -3656,14 +3656,14 @@ export function transferWorkflowStepsTagStepDetailsToHclTerraform(struct?: Trans
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowStepsTagStepDetailsOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowStepsTagStepDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3737,7 +3737,7 @@ export class TransferWorkflowStepsTagStepDetailsOutputReference extends cdktf.Co
   public get tags() {
     return this._tags;
   }
-  public putTags(value: TransferWorkflowStepsTagStepDetailsTags[] | cdktf.IResolvable) {
+  public putTags(value: TransferWorkflowStepsTagStepDetailsTags[] | cdktn.IResolvable) {
     this._tags.internalValue = value;
   }
   public resetTags() {
@@ -3785,13 +3785,13 @@ export interface TransferWorkflowSteps {
   readonly tagStepDetails?: TransferWorkflowStepsTagStepDetails;
 }
 
-export function transferWorkflowStepsToTerraform(struct?: TransferWorkflowSteps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWorkflowStepsToTerraform(struct?: TransferWorkflowSteps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
     copy_step_details: transferWorkflowStepsCopyStepDetailsToTerraform(struct!.copyStepDetails),
     custom_step_details: transferWorkflowStepsCustomStepDetailsToTerraform(struct!.customStepDetails),
     decrypt_step_details: transferWorkflowStepsDecryptStepDetailsToTerraform(struct!.decryptStepDetails),
@@ -3801,14 +3801,14 @@ export function transferWorkflowStepsToTerraform(struct?: TransferWorkflowSteps 
 }
 
 
-export function transferWorkflowStepsToHclTerraform(struct?: TransferWorkflowSteps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWorkflowStepsToHclTerraform(struct?: TransferWorkflowSteps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3849,9 +3849,9 @@ export function transferWorkflowStepsToHclTerraform(struct?: TransferWorkflowSte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWorkflowStepsOutputReference extends cdktf.ComplexObject {
+export class TransferWorkflowStepsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3859,11 +3859,11 @@ export class TransferWorkflowStepsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TransferWorkflowSteps | cdktf.IResolvable | undefined {
+  public get internalValue(): TransferWorkflowSteps | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3896,7 +3896,7 @@ export class TransferWorkflowStepsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TransferWorkflowSteps | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TransferWorkflowSteps | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3907,7 +3907,7 @@ export class TransferWorkflowStepsOutputReference extends cdktf.ComplexObject {
       this._deleteStepDetails.internalValue = undefined;
       this._tagStepDetails.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4017,15 +4017,15 @@ export class TransferWorkflowStepsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class TransferWorkflowStepsList extends cdktf.ComplexList {
-  public internalValue? : TransferWorkflowSteps[] | cdktf.IResolvable
+export class TransferWorkflowStepsList extends cdktn.ComplexList {
+  public internalValue? : TransferWorkflowSteps[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4040,7 +4040,7 @@ export class TransferWorkflowStepsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_workflow aws_transfer_workflow}
 */
-export class TransferWorkflow extends cdktf.TerraformResource {
+export class TransferWorkflow extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -4051,14 +4051,14 @@ export class TransferWorkflow extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TransferWorkflow resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TransferWorkflow resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransferWorkflow to import
   * @param importFromId The id of the existing TransferWorkflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_workflow#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransferWorkflow to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_workflow", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_workflow", importId: importFromId, provider });
       }
 
   // ===========
@@ -4191,7 +4191,7 @@ export class TransferWorkflow extends cdktf.TerraformResource {
   public get onExceptionSteps() {
     return this._onExceptionSteps;
   }
-  public putOnExceptionSteps(value: TransferWorkflowOnExceptionSteps[] | cdktf.IResolvable) {
+  public putOnExceptionSteps(value: TransferWorkflowOnExceptionSteps[] | cdktn.IResolvable) {
     this._onExceptionSteps.internalValue = value;
   }
   public resetOnExceptionSteps() {
@@ -4207,7 +4207,7 @@ export class TransferWorkflow extends cdktf.TerraformResource {
   public get steps() {
     return this._steps;
   }
-  public putSteps(value: TransferWorkflowSteps[] | cdktf.IResolvable) {
+  public putSteps(value: TransferWorkflowSteps[] | cdktn.IResolvable) {
     this._steps.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4221,56 +4221,56 @@ export class TransferWorkflow extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      on_exception_steps: cdktf.listMapper(transferWorkflowOnExceptionStepsToTerraform, true)(this._onExceptionSteps.internalValue),
-      steps: cdktf.listMapper(transferWorkflowStepsToTerraform, true)(this._steps.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      on_exception_steps: cdktn.listMapper(transferWorkflowOnExceptionStepsToTerraform, true)(this._onExceptionSteps.internalValue),
+      steps: cdktn.listMapper(transferWorkflowStepsToTerraform, true)(this._steps.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       on_exception_steps: {
-        value: cdktf.listMapperHcl(transferWorkflowOnExceptionStepsToHclTerraform, true)(this._onExceptionSteps.internalValue),
+        value: cdktn.listMapperHcl(transferWorkflowOnExceptionStepsToHclTerraform, true)(this._onExceptionSteps.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TransferWorkflowOnExceptionStepsList",
       },
       steps: {
-        value: cdktf.listMapperHcl(transferWorkflowStepsToHclTerraform, true)(this._steps.internalValue),
+        value: cdktn.listMapperHcl(transferWorkflowStepsToHclTerraform, true)(this._steps.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TransferWorkflowStepsList",

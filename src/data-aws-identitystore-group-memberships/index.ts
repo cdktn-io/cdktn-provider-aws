@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsIdentitystoreGroupMembershipsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsIdentitystoreGroupMembershipsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/identitystore_group_memberships#group_id DataAwsIdentitystoreGroupMemberships#group_id}
   */
@@ -31,8 +31,8 @@ export interface DataAwsIdentitystoreGroupMembershipsGroupMembershipsMemberId {
 }
 
 export function dataAwsIdentitystoreGroupMembershipsGroupMembershipsMemberIdToTerraform(struct?: DataAwsIdentitystoreGroupMembershipsGroupMembershipsMemberId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -41,8 +41,8 @@ export function dataAwsIdentitystoreGroupMembershipsGroupMembershipsMemberIdToTe
 
 
 export function dataAwsIdentitystoreGroupMembershipsGroupMembershipsMemberIdToHclTerraform(struct?: DataAwsIdentitystoreGroupMembershipsGroupMembershipsMemberId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -50,14 +50,14 @@ export function dataAwsIdentitystoreGroupMembershipsGroupMembershipsMemberIdToHc
   return attrs;
 }
 
-export class DataAwsIdentitystoreGroupMembershipsGroupMembershipsMemberIdOutputReference extends cdktf.ComplexObject {
+export class DataAwsIdentitystoreGroupMembershipsGroupMembershipsMemberIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -85,8 +85,8 @@ export interface DataAwsIdentitystoreGroupMembershipsGroupMemberships {
 }
 
 export function dataAwsIdentitystoreGroupMembershipsGroupMembershipsToTerraform(struct?: DataAwsIdentitystoreGroupMembershipsGroupMemberships): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -95,8 +95,8 @@ export function dataAwsIdentitystoreGroupMembershipsGroupMembershipsToTerraform(
 
 
 export function dataAwsIdentitystoreGroupMembershipsGroupMembershipsToHclTerraform(struct?: DataAwsIdentitystoreGroupMembershipsGroupMemberships): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -104,7 +104,7 @@ export function dataAwsIdentitystoreGroupMembershipsGroupMembershipsToHclTerrafo
   return attrs;
 }
 
-export class DataAwsIdentitystoreGroupMembershipsGroupMembershipsOutputReference extends cdktf.ComplexObject {
+export class DataAwsIdentitystoreGroupMembershipsGroupMembershipsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -113,7 +113,7 @@ export class DataAwsIdentitystoreGroupMembershipsGroupMembershipsOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -154,14 +154,14 @@ export class DataAwsIdentitystoreGroupMembershipsGroupMembershipsOutputReference
   }
 }
 
-export class DataAwsIdentitystoreGroupMembershipsGroupMembershipsList extends cdktf.ComplexList {
+export class DataAwsIdentitystoreGroupMembershipsGroupMembershipsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -176,7 +176,7 @@ export class DataAwsIdentitystoreGroupMembershipsGroupMembershipsList extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/identitystore_group_memberships aws_identitystore_group_memberships}
 */
-export class DataAwsIdentitystoreGroupMemberships extends cdktf.TerraformDataSource {
+export class DataAwsIdentitystoreGroupMemberships extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -187,14 +187,14 @@ export class DataAwsIdentitystoreGroupMemberships extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsIdentitystoreGroupMemberships resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsIdentitystoreGroupMemberships resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsIdentitystoreGroupMemberships to import
   * @param importFromId The id of the existing DataAwsIdentitystoreGroupMemberships that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/identitystore_group_memberships#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsIdentitystoreGroupMemberships to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_identitystore_group_memberships", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_identitystore_group_memberships", importId: importFromId, provider });
       }
 
   // ===========
@@ -287,28 +287,28 @@ export class DataAwsIdentitystoreGroupMemberships extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_id: cdktf.stringToTerraform(this._groupId),
-      identity_store_id: cdktf.stringToTerraform(this._identityStoreId),
-      region: cdktf.stringToTerraform(this._region),
+      group_id: cdktn.stringToTerraform(this._groupId),
+      identity_store_id: cdktn.stringToTerraform(this._identityStoreId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       group_id: {
-        value: cdktf.stringToHclTerraform(this._groupId),
+        value: cdktn.stringToHclTerraform(this._groupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_store_id: {
-        value: cdktf.stringToHclTerraform(this._identityStoreId),
+        value: cdktn.stringToHclTerraform(this._identityStoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

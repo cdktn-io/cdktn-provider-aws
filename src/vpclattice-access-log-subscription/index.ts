@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpclatticeAccessLogSubscriptionConfig extends cdktf.TerraformMetaArguments {
+export interface VpclatticeAccessLogSubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpclattice_access_log_subscription#destination_arn VpclatticeAccessLogSubscription#destination_arn}
   */
@@ -50,7 +50,7 @@ export interface VpclatticeAccessLogSubscriptionConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpclattice_access_log_subscription aws_vpclattice_access_log_subscription}
 */
-export class VpclatticeAccessLogSubscription extends cdktf.TerraformResource {
+export class VpclatticeAccessLogSubscription extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class VpclatticeAccessLogSubscription extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpclatticeAccessLogSubscription resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpclatticeAccessLogSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpclatticeAccessLogSubscription to import
   * @param importFromId The id of the existing VpclatticeAccessLogSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpclattice_access_log_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpclatticeAccessLogSubscription to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpclattice_access_log_subscription", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpclattice_access_log_subscription", importId: importFromId, provider });
       }
 
   // ===========
@@ -233,56 +233,56 @@ export class VpclatticeAccessLogSubscription extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination_arn: cdktf.stringToTerraform(this._destinationArn),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      resource_identifier: cdktf.stringToTerraform(this._resourceIdentifier),
-      service_network_log_type: cdktf.stringToTerraform(this._serviceNetworkLogType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      destination_arn: cdktn.stringToTerraform(this._destinationArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      resource_identifier: cdktn.stringToTerraform(this._resourceIdentifier),
+      service_network_log_type: cdktn.stringToTerraform(this._serviceNetworkLogType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       destination_arn: {
-        value: cdktf.stringToHclTerraform(this._destinationArn),
+        value: cdktn.stringToHclTerraform(this._destinationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_identifier: {
-        value: cdktf.stringToHclTerraform(this._resourceIdentifier),
+        value: cdktn.stringToHclTerraform(this._resourceIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_network_log_type: {
-        value: cdktf.stringToHclTerraform(this._serviceNetworkLogType),
+        value: cdktn.stringToHclTerraform(this._serviceNetworkLogType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

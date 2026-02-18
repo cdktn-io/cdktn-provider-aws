@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BedrockagentKnowledgeBaseConfig extends cdktf.TerraformMetaArguments {
+export interface BedrockagentKnowledgeBaseConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#description BedrockagentKnowledgeBase#description}
   */
@@ -39,13 +39,13 @@ export interface BedrockagentKnowledgeBaseConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#knowledge_base_configuration BedrockagentKnowledgeBase#knowledge_base_configuration}
   */
-  readonly knowledgeBaseConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfiguration[] | cdktf.IResolvable;
+  readonly knowledgeBaseConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfiguration[] | cdktn.IResolvable;
   /**
   * storage_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#storage_configuration BedrockagentKnowledgeBase#storage_configuration}
   */
-  readonly storageConfiguration?: BedrockagentKnowledgeBaseStorageConfiguration[] | cdktf.IResolvable;
+  readonly storageConfiguration?: BedrockagentKnowledgeBaseStorageConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -60,25 +60,25 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowle
   readonly kendraIndexArn: string;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kendra_index_arn: cdktf.stringToTerraform(struct!.kendraIndexArn),
+    kendra_index_arn: cdktn.stringToTerraform(struct!.kendraIndexArn),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kendra_index_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kendraIndexArn),
+      value: cdktn.stringToHclTerraform(struct!.kendraIndexArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -89,9 +89,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowled
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -99,11 +99,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeB
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -116,13 +116,13 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeB
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._kendraIndexArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -147,15 +147,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeB
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -181,39 +181,39 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledge
   readonly usernamePasswordSecretArn?: string;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database_user: cdktf.stringToTerraform(struct!.databaseUser),
-    type: cdktf.stringToTerraform(struct!.type),
-    username_password_secret_arn: cdktf.stringToTerraform(struct!.usernamePasswordSecretArn),
+    database_user: cdktn.stringToTerraform(struct!.databaseUser),
+    type: cdktn.stringToTerraform(struct!.type),
+    username_password_secret_arn: cdktn.stringToTerraform(struct!.usernamePasswordSecretArn),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database_user: {
-      value: cdktf.stringToHclTerraform(struct!.databaseUser),
+      value: cdktn.stringToHclTerraform(struct!.databaseUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_password_secret_arn: {
-      value: cdktf.stringToHclTerraform(struct!.usernamePasswordSecretArn),
+      value: cdktn.stringToHclTerraform(struct!.usernamePasswordSecretArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -224,9 +224,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -234,11 +234,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -259,7 +259,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -267,7 +267,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
       this._type = undefined;
       this._usernamePasswordSecretArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -326,15 +326,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -355,35 +355,35 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledge
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#auth_configuration BedrockagentKnowledgeBase#auth_configuration}
   */
-  readonly authConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration[] | cdktf.IResolvable;
+  readonly authConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_identifier: cdktf.stringToTerraform(struct!.clusterIdentifier),
-    auth_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationToTerraform, true)(struct!.authConfiguration),
+    cluster_identifier: cdktn.stringToTerraform(struct!.clusterIdentifier),
+    auth_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationToTerraform, true)(struct!.authConfiguration),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.clusterIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.clusterIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     auth_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationToHclTerraform, true)(struct!.authConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationToHclTerraform, true)(struct!.authConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationList",
@@ -394,9 +394,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -404,11 +404,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -425,14 +425,14 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._clusterIdentifier = undefined;
       this._authConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -462,7 +462,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   public get authConfiguration() {
     return this._authConfiguration;
   }
-  public putAuthConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration[] | cdktf.IResolvable) {
+  public putAuthConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration[] | cdktn.IResolvable) {
     this._authConfiguration.internalValue = value;
   }
   public resetAuthConfiguration() {
@@ -474,15 +474,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -504,32 +504,32 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledge
   readonly usernamePasswordSecretArn?: string;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    username_password_secret_arn: cdktf.stringToTerraform(struct!.usernamePasswordSecretArn),
+    type: cdktn.stringToTerraform(struct!.type),
+    username_password_secret_arn: cdktn.stringToTerraform(struct!.usernamePasswordSecretArn),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_password_secret_arn: {
-      value: cdktf.stringToHclTerraform(struct!.usernamePasswordSecretArn),
+      value: cdktn.stringToHclTerraform(struct!.usernamePasswordSecretArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -540,9 +540,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -550,11 +550,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -571,14 +571,14 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._usernamePasswordSecretArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -620,15 +620,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -649,35 +649,35 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledge
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#auth_configuration BedrockagentKnowledgeBase#auth_configuration}
   */
-  readonly authConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration[] | cdktf.IResolvable;
+  readonly authConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workgroup_arn: cdktf.stringToTerraform(struct!.workgroupArn),
-    auth_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationToTerraform, true)(struct!.authConfiguration),
+    workgroup_arn: cdktn.stringToTerraform(struct!.workgroupArn),
+    auth_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationToTerraform, true)(struct!.authConfiguration),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workgroup_arn: {
-      value: cdktf.stringToHclTerraform(struct!.workgroupArn),
+      value: cdktn.stringToHclTerraform(struct!.workgroupArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     auth_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationToHclTerraform, true)(struct!.authConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationToHclTerraform, true)(struct!.authConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationList",
@@ -688,9 +688,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -698,11 +698,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -719,14 +719,14 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._workgroupArn = undefined;
       this._authConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -756,7 +756,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   public get authConfiguration() {
     return this._authConfiguration;
   }
-  public putAuthConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration[] | cdktf.IResolvable) {
+  public putAuthConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration[] | cdktn.IResolvable) {
     this._authConfiguration.internalValue = value;
   }
   public resetAuthConfiguration() {
@@ -768,15 +768,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -797,48 +797,48 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledge
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#provisioned_configuration BedrockagentKnowledgeBase#provisioned_configuration}
   */
-  readonly provisionedConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration[] | cdktf.IResolvable;
+  readonly provisionedConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration[] | cdktn.IResolvable;
   /**
   * serverless_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#serverless_configuration BedrockagentKnowledgeBase#serverless_configuration}
   */
-  readonly serverlessConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration[] | cdktf.IResolvable;
+  readonly serverlessConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    provisioned_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationToTerraform, true)(struct!.provisionedConfiguration),
-    serverless_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationToTerraform, true)(struct!.serverlessConfiguration),
+    type: cdktn.stringToTerraform(struct!.type),
+    provisioned_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationToTerraform, true)(struct!.provisionedConfiguration),
+    serverless_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationToTerraform, true)(struct!.serverlessConfiguration),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     provisioned_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationToHclTerraform, true)(struct!.provisionedConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationToHclTerraform, true)(struct!.provisionedConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationList",
     },
     serverless_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationToHclTerraform, true)(struct!.serverlessConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationToHclTerraform, true)(struct!.serverlessConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationList",
@@ -849,9 +849,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -859,11 +859,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -884,7 +884,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -892,7 +892,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
       this._provisionedConfiguration.internalValue = undefined;
       this._serverlessConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -923,7 +923,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   public get provisionedConfiguration() {
     return this._provisionedConfiguration;
   }
-  public putProvisionedConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration[] | cdktf.IResolvable) {
+  public putProvisionedConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration[] | cdktn.IResolvable) {
     this._provisionedConfiguration.internalValue = value;
   }
   public resetProvisionedConfiguration() {
@@ -939,7 +939,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   public get serverlessConfiguration() {
     return this._serverlessConfiguration;
   }
-  public putServerlessConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration[] | cdktf.IResolvable) {
+  public putServerlessConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration[] | cdktn.IResolvable) {
     this._serverlessConfiguration.internalValue = value;
   }
   public resetServerlessConfiguration() {
@@ -951,15 +951,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -981,32 +981,32 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledge
   readonly sql: string;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQueryToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQueryToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    natural_language: cdktf.stringToTerraform(struct!.naturalLanguage),
-    sql: cdktf.stringToTerraform(struct!.sql),
+    natural_language: cdktn.stringToTerraform(struct!.naturalLanguage),
+    sql: cdktn.stringToTerraform(struct!.sql),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQueryToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQueryToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     natural_language: {
-      value: cdktf.stringToHclTerraform(struct!.naturalLanguage),
+      value: cdktn.stringToHclTerraform(struct!.naturalLanguage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sql: {
-      value: cdktf.stringToHclTerraform(struct!.sql),
+      value: cdktn.stringToHclTerraform(struct!.sql),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1017,9 +1017,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQueryOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1027,11 +1027,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1048,14 +1048,14 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._naturalLanguage = undefined;
       this._sql = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1094,15 +1094,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQueryList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQueryList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1128,39 +1128,39 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledge
   readonly name?: string;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumnToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumnToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    inclusion: cdktf.stringToTerraform(struct!.inclusion),
-    name: cdktf.stringToTerraform(struct!.name),
+    description: cdktn.stringToTerraform(struct!.description),
+    inclusion: cdktn.stringToTerraform(struct!.inclusion),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumnToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumnToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     inclusion: {
-      value: cdktf.stringToHclTerraform(struct!.inclusion),
+      value: cdktn.stringToHclTerraform(struct!.inclusion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1171,9 +1171,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumnOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1181,11 +1181,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1206,7 +1206,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1214,7 +1214,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
       this._inclusion = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1276,15 +1276,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumnList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumnList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1313,49 +1313,49 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledge
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#column BedrockagentKnowledgeBase#column}
   */
-  readonly column?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn[] | cdktf.IResolvable;
+  readonly column?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    inclusion: cdktf.stringToTerraform(struct!.inclusion),
-    name: cdktf.stringToTerraform(struct!.name),
-    column: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumnToTerraform, true)(struct!.column),
+    description: cdktn.stringToTerraform(struct!.description),
+    inclusion: cdktn.stringToTerraform(struct!.inclusion),
+    name: cdktn.stringToTerraform(struct!.name),
+    column: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumnToTerraform, true)(struct!.column),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     inclusion: {
-      value: cdktf.stringToHclTerraform(struct!.inclusion),
+      value: cdktn.stringToHclTerraform(struct!.inclusion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     column: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumnToHclTerraform, true)(struct!.column),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumnToHclTerraform, true)(struct!.column),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumnList",
@@ -1366,9 +1366,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1376,11 +1376,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1405,7 +1405,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1414,7 +1414,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
       this._name = undefined;
       this._column.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1478,7 +1478,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   public get column() {
     return this._column;
   }
-  public putColumn(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn[] | cdktf.IResolvable) {
+  public putColumn(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn[] | cdktn.IResolvable) {
     this._column.internalValue = value;
   }
   public resetColumn() {
@@ -1490,15 +1490,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1515,41 +1515,41 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledge
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#curated_query BedrockagentKnowledgeBase#curated_query}
   */
-  readonly curatedQuery?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery[] | cdktf.IResolvable;
+  readonly curatedQuery?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery[] | cdktn.IResolvable;
   /**
   * table block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#table BedrockagentKnowledgeBase#table}
   */
-  readonly table?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable[] | cdktf.IResolvable;
+  readonly table?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    curated_query: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQueryToTerraform, true)(struct!.curatedQuery),
-    table: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableToTerraform, true)(struct!.table),
+    curated_query: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQueryToTerraform, true)(struct!.curatedQuery),
+    table: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableToTerraform, true)(struct!.table),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     curated_query: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQueryToHclTerraform, true)(struct!.curatedQuery),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQueryToHclTerraform, true)(struct!.curatedQuery),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQueryList",
     },
     table: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableToHclTerraform, true)(struct!.table),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableToHclTerraform, true)(struct!.table),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableList",
@@ -1560,9 +1560,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1570,11 +1570,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1591,14 +1591,14 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._curatedQuery.internalValue = undefined;
       this._table.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1615,7 +1615,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   public get curatedQuery() {
     return this._curatedQuery;
   }
-  public putCuratedQuery(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery[] | cdktf.IResolvable) {
+  public putCuratedQuery(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery[] | cdktn.IResolvable) {
     this._curatedQuery.internalValue = value;
   }
   public resetCuratedQuery() {
@@ -1631,7 +1631,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   public get table() {
     return this._table;
   }
-  public putTable(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable[] | cdktf.IResolvable) {
+  public putTable(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable[] | cdktn.IResolvable) {
     this._table.internalValue = value;
   }
   public resetTable() {
@@ -1643,15 +1643,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1672,35 +1672,35 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledge
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#generation_context BedrockagentKnowledgeBase#generation_context}
   */
-  readonly generationContext?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext[] | cdktf.IResolvable;
+  readonly generationContext?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    execution_timeout_seconds: cdktf.numberToTerraform(struct!.executionTimeoutSeconds),
-    generation_context: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextToTerraform, true)(struct!.generationContext),
+    execution_timeout_seconds: cdktn.numberToTerraform(struct!.executionTimeoutSeconds),
+    generation_context: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextToTerraform, true)(struct!.generationContext),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     execution_timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.executionTimeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.executionTimeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     generation_context: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextToHclTerraform, true)(struct!.generationContext),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextToHclTerraform, true)(struct!.generationContext),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextList",
@@ -1711,9 +1711,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1721,11 +1721,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1742,14 +1742,14 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._executionTimeoutSeconds = undefined;
       this._generationContext.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1782,7 +1782,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   public get generationContext() {
     return this._generationContext;
   }
-  public putGenerationContext(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext[] | cdktf.IResolvable) {
+  public putGenerationContext(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext[] | cdktn.IResolvable) {
     this._generationContext.internalValue = value;
   }
   public resetGenerationContext() {
@@ -1794,15 +1794,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1820,25 +1820,25 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledge
   readonly tableNames: string[];
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    table_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tableNames),
+    table_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tableNames),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     table_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tableNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tableNames),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1849,9 +1849,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1859,11 +1859,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1876,13 +1876,13 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._tableNames = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1896,7 +1896,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   // table_names - computed: false, optional: false, required: true
   private _tableNames?: string[]; 
   public get tableNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('table_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('table_names'));
   }
   public set tableNames(value: string[]) {
     this._tableNames = value;
@@ -1907,15 +1907,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1933,25 +1933,25 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledge
   readonly databaseName: string;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
+    database_name: cdktn.stringToTerraform(struct!.databaseName),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      value: cdktn.stringToHclTerraform(struct!.databaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1962,9 +1962,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1972,11 +1972,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1989,13 +1989,13 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._databaseName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2020,15 +2020,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2049,48 +2049,48 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledge
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#aws_data_catalog_configuration BedrockagentKnowledgeBase#aws_data_catalog_configuration}
   */
-  readonly awsDataCatalogConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration[] | cdktf.IResolvable;
+  readonly awsDataCatalogConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration[] | cdktn.IResolvable;
   /**
   * redshift_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#redshift_configuration BedrockagentKnowledgeBase#redshift_configuration}
   */
-  readonly redshiftConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration[] | cdktf.IResolvable;
+  readonly redshiftConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    aws_data_catalog_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationToTerraform, true)(struct!.awsDataCatalogConfiguration),
-    redshift_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationToTerraform, true)(struct!.redshiftConfiguration),
+    type: cdktn.stringToTerraform(struct!.type),
+    aws_data_catalog_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationToTerraform, true)(struct!.awsDataCatalogConfiguration),
+    redshift_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationToTerraform, true)(struct!.redshiftConfiguration),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_data_catalog_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationToHclTerraform, true)(struct!.awsDataCatalogConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationToHclTerraform, true)(struct!.awsDataCatalogConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationList",
     },
     redshift_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationToHclTerraform, true)(struct!.redshiftConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationToHclTerraform, true)(struct!.redshiftConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationList",
@@ -2101,9 +2101,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2111,11 +2111,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2136,7 +2136,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2144,7 +2144,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
       this._awsDataCatalogConfiguration.internalValue = undefined;
       this._redshiftConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2175,7 +2175,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   public get awsDataCatalogConfiguration() {
     return this._awsDataCatalogConfiguration;
   }
-  public putAwsDataCatalogConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration[] | cdktf.IResolvable) {
+  public putAwsDataCatalogConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration[] | cdktn.IResolvable) {
     this._awsDataCatalogConfiguration.internalValue = value;
   }
   public resetAwsDataCatalogConfiguration() {
@@ -2191,7 +2191,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   public get redshiftConfiguration() {
     return this._redshiftConfiguration;
   }
-  public putRedshiftConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration[] | cdktf.IResolvable) {
+  public putRedshiftConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration[] | cdktn.IResolvable) {
     this._redshiftConfiguration.internalValue = value;
   }
   public resetRedshiftConfiguration() {
@@ -2203,15 +2203,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2228,54 +2228,54 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledge
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#query_engine_configuration BedrockagentKnowledgeBase#query_engine_configuration}
   */
-  readonly queryEngineConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration[] | cdktf.IResolvable;
+  readonly queryEngineConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration[] | cdktn.IResolvable;
   /**
   * query_generation_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#query_generation_configuration BedrockagentKnowledgeBase#query_generation_configuration}
   */
-  readonly queryGenerationConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration[] | cdktf.IResolvable;
+  readonly queryGenerationConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration[] | cdktn.IResolvable;
   /**
   * storage_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#storage_configuration BedrockagentKnowledgeBase#storage_configuration}
   */
-  readonly storageConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration[] | cdktf.IResolvable;
+  readonly storageConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query_engine_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationToTerraform, true)(struct!.queryEngineConfiguration),
-    query_generation_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationToTerraform, true)(struct!.queryGenerationConfiguration),
-    storage_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationToTerraform, true)(struct!.storageConfiguration),
+    query_engine_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationToTerraform, true)(struct!.queryEngineConfiguration),
+    query_generation_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationToTerraform, true)(struct!.queryGenerationConfiguration),
+    storage_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationToTerraform, true)(struct!.storageConfiguration),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query_engine_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationToHclTerraform, true)(struct!.queryEngineConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationToHclTerraform, true)(struct!.queryEngineConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationList",
     },
     query_generation_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationToHclTerraform, true)(struct!.queryGenerationConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationToHclTerraform, true)(struct!.queryGenerationConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationList",
     },
     storage_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationToHclTerraform, true)(struct!.storageConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationToHclTerraform, true)(struct!.storageConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationList",
@@ -2286,9 +2286,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2296,11 +2296,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2321,7 +2321,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2329,7 +2329,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
       this._queryGenerationConfiguration.internalValue = undefined;
       this._storageConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2347,7 +2347,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   public get queryEngineConfiguration() {
     return this._queryEngineConfiguration;
   }
-  public putQueryEngineConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration[] | cdktf.IResolvable) {
+  public putQueryEngineConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration[] | cdktn.IResolvable) {
     this._queryEngineConfiguration.internalValue = value;
   }
   public resetQueryEngineConfiguration() {
@@ -2363,7 +2363,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   public get queryGenerationConfiguration() {
     return this._queryGenerationConfiguration;
   }
-  public putQueryGenerationConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration[] | cdktf.IResolvable) {
+  public putQueryGenerationConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration[] | cdktn.IResolvable) {
     this._queryGenerationConfiguration.internalValue = value;
   }
   public resetQueryGenerationConfiguration() {
@@ -2379,7 +2379,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   public get storageConfiguration() {
     return this._storageConfiguration;
   }
-  public putStorageConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration[] | cdktf.IResolvable) {
+  public putStorageConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration[] | cdktn.IResolvable) {
     this._storageConfiguration.internalValue = value;
   }
   public resetStorageConfiguration() {
@@ -2391,15 +2391,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2420,35 +2420,35 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledge
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#redshift_configuration BedrockagentKnowledgeBase#redshift_configuration}
   */
-  readonly redshiftConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration[] | cdktf.IResolvable;
+  readonly redshiftConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    redshift_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationToTerraform, true)(struct!.redshiftConfiguration),
+    type: cdktn.stringToTerraform(struct!.type),
+    redshift_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationToTerraform, true)(struct!.redshiftConfiguration),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redshift_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationToHclTerraform, true)(struct!.redshiftConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationToHclTerraform, true)(struct!.redshiftConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationList",
@@ -2459,9 +2459,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2469,11 +2469,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2490,14 +2490,14 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._redshiftConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2527,7 +2527,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   public get redshiftConfiguration() {
     return this._redshiftConfiguration;
   }
-  public putRedshiftConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration[] | cdktf.IResolvable) {
+  public putRedshiftConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration[] | cdktn.IResolvable) {
     this._redshiftConfiguration.internalValue = value;
   }
   public resetRedshiftConfiguration() {
@@ -2539,15 +2539,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBase
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2569,32 +2569,32 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowle
   readonly embeddingDataType?: string;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dimensions: cdktf.numberToTerraform(struct!.dimensions),
-    embedding_data_type: cdktf.stringToTerraform(struct!.embeddingDataType),
+    dimensions: cdktn.numberToTerraform(struct!.dimensions),
+    embedding_data_type: cdktn.stringToTerraform(struct!.embeddingDataType),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dimensions: {
-      value: cdktf.numberToHclTerraform(struct!.dimensions),
+      value: cdktn.numberToHclTerraform(struct!.dimensions),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     embedding_data_type: {
-      value: cdktf.stringToHclTerraform(struct!.embeddingDataType),
+      value: cdktn.stringToHclTerraform(struct!.embeddingDataType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2605,9 +2605,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowled
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2615,11 +2615,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2636,14 +2636,14 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dimensions = undefined;
       this._embeddingDataType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2688,15 +2688,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2713,28 +2713,28 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowle
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#bedrock_embedding_model_configuration BedrockagentKnowledgeBase#bedrock_embedding_model_configuration}
   */
-  readonly bedrockEmbeddingModelConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration[] | cdktf.IResolvable;
+  readonly bedrockEmbeddingModelConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bedrock_embedding_model_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationToTerraform, true)(struct!.bedrockEmbeddingModelConfiguration),
+    bedrock_embedding_model_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationToTerraform, true)(struct!.bedrockEmbeddingModelConfiguration),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bedrock_embedding_model_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationToHclTerraform, true)(struct!.bedrockEmbeddingModelConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationToHclTerraform, true)(struct!.bedrockEmbeddingModelConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationList",
@@ -2745,9 +2745,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowled
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2755,11 +2755,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2772,13 +2772,13 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._bedrockEmbeddingModelConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2794,7 +2794,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   public get bedrockEmbeddingModelConfiguration() {
     return this._bedrockEmbeddingModelConfiguration;
   }
-  public putBedrockEmbeddingModelConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration[] | cdktf.IResolvable) {
+  public putBedrockEmbeddingModelConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration[] | cdktn.IResolvable) {
     this._bedrockEmbeddingModelConfiguration.internalValue = value;
   }
   public resetBedrockEmbeddingModelConfiguration() {
@@ -2806,15 +2806,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2832,25 +2832,25 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowle
   readonly uri: string;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    uri: cdktf.stringToTerraform(struct!.uri),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2861,9 +2861,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowled
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2871,11 +2871,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2888,13 +2888,13 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._uri = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2919,15 +2919,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2948,35 +2948,35 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowle
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#s3_location BedrockagentKnowledgeBase#s3_location}
   */
-  readonly s3Location?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location[] | cdktf.IResolvable;
+  readonly s3Location?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    s3_location: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationToTerraform, true)(struct!.s3Location),
+    type: cdktn.stringToTerraform(struct!.type),
+    s3_location: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationToTerraform, true)(struct!.s3Location),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_location: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationToHclTerraform, true)(struct!.s3Location),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationToHclTerraform, true)(struct!.s3Location),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationList",
@@ -2987,9 +2987,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowled
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2997,11 +2997,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3018,14 +3018,14 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._s3Location.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3055,7 +3055,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   public get s3Location() {
     return this._s3Location;
   }
-  public putS3Location(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location[] | cdktf.IResolvable) {
+  public putS3Location(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location[] | cdktn.IResolvable) {
     this._s3Location.internalValue = value;
   }
   public resetS3Location() {
@@ -3067,15 +3067,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3092,28 +3092,28 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowle
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#storage_location BedrockagentKnowledgeBase#storage_location}
   */
-  readonly storageLocation?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation[] | cdktf.IResolvable;
+  readonly storageLocation?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    storage_location: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationToTerraform, true)(struct!.storageLocation),
+    storage_location: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationToTerraform, true)(struct!.storageLocation),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     storage_location: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationToHclTerraform, true)(struct!.storageLocation),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationToHclTerraform, true)(struct!.storageLocation),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationList",
@@ -3124,9 +3124,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowled
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3134,11 +3134,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3151,13 +3151,13 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._storageLocation.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3173,7 +3173,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   public get storageLocation() {
     return this._storageLocation;
   }
-  public putStorageLocation(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation[] | cdktf.IResolvable) {
+  public putStorageLocation(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation[] | cdktn.IResolvable) {
     this._storageLocation.internalValue = value;
   }
   public resetStorageLocation() {
@@ -3185,15 +3185,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3214,48 +3214,48 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowle
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#embedding_model_configuration BedrockagentKnowledgeBase#embedding_model_configuration}
   */
-  readonly embeddingModelConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration[] | cdktf.IResolvable;
+  readonly embeddingModelConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration[] | cdktn.IResolvable;
   /**
   * supplemental_data_storage_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#supplemental_data_storage_configuration BedrockagentKnowledgeBase#supplemental_data_storage_configuration}
   */
-  readonly supplementalDataStorageConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration[] | cdktf.IResolvable;
+  readonly supplementalDataStorageConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    embedding_model_arn: cdktf.stringToTerraform(struct!.embeddingModelArn),
-    embedding_model_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationToTerraform, true)(struct!.embeddingModelConfiguration),
-    supplemental_data_storage_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationToTerraform, true)(struct!.supplementalDataStorageConfiguration),
+    embedding_model_arn: cdktn.stringToTerraform(struct!.embeddingModelArn),
+    embedding_model_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationToTerraform, true)(struct!.embeddingModelConfiguration),
+    supplemental_data_storage_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationToTerraform, true)(struct!.supplementalDataStorageConfiguration),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     embedding_model_arn: {
-      value: cdktf.stringToHclTerraform(struct!.embeddingModelArn),
+      value: cdktn.stringToHclTerraform(struct!.embeddingModelArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     embedding_model_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationToHclTerraform, true)(struct!.embeddingModelConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationToHclTerraform, true)(struct!.embeddingModelConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationList",
     },
     supplemental_data_storage_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationToHclTerraform, true)(struct!.supplementalDataStorageConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationToHclTerraform, true)(struct!.supplementalDataStorageConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationList",
@@ -3266,9 +3266,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowled
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3276,11 +3276,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3301,7 +3301,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3309,7 +3309,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
       this._embeddingModelConfiguration.internalValue = undefined;
       this._supplementalDataStorageConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3340,7 +3340,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   public get embeddingModelConfiguration() {
     return this._embeddingModelConfiguration;
   }
-  public putEmbeddingModelConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration[] | cdktf.IResolvable) {
+  public putEmbeddingModelConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration[] | cdktn.IResolvable) {
     this._embeddingModelConfiguration.internalValue = value;
   }
   public resetEmbeddingModelConfiguration() {
@@ -3356,7 +3356,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   public get supplementalDataStorageConfiguration() {
     return this._supplementalDataStorageConfiguration;
   }
-  public putSupplementalDataStorageConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration[] | cdktf.IResolvable) {
+  public putSupplementalDataStorageConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration[] | cdktn.IResolvable) {
     this._supplementalDataStorageConfiguration.internalValue = value;
   }
   public resetSupplementalDataStorageConfiguration() {
@@ -3368,15 +3368,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeB
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3397,61 +3397,61 @@ export interface BedrockagentKnowledgeBaseKnowledgeBaseConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#kendra_knowledge_base_configuration BedrockagentKnowledgeBase#kendra_knowledge_base_configuration}
   */
-  readonly kendraKnowledgeBaseConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration[] | cdktf.IResolvable;
+  readonly kendraKnowledgeBaseConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration[] | cdktn.IResolvable;
   /**
   * sql_knowledge_base_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#sql_knowledge_base_configuration BedrockagentKnowledgeBase#sql_knowledge_base_configuration}
   */
-  readonly sqlKnowledgeBaseConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration[] | cdktf.IResolvable;
+  readonly sqlKnowledgeBaseConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration[] | cdktn.IResolvable;
   /**
   * vector_knowledge_base_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#vector_knowledge_base_configuration BedrockagentKnowledgeBase#vector_knowledge_base_configuration}
   */
-  readonly vectorKnowledgeBaseConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration[] | cdktf.IResolvable;
+  readonly vectorKnowledgeBaseConfiguration?: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    kendra_knowledge_base_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationToTerraform, true)(struct!.kendraKnowledgeBaseConfiguration),
-    sql_knowledge_base_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationToTerraform, true)(struct!.sqlKnowledgeBaseConfiguration),
-    vector_knowledge_base_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationToTerraform, true)(struct!.vectorKnowledgeBaseConfiguration),
+    type: cdktn.stringToTerraform(struct!.type),
+    kendra_knowledge_base_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationToTerraform, true)(struct!.kendraKnowledgeBaseConfiguration),
+    sql_knowledge_base_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationToTerraform, true)(struct!.sqlKnowledgeBaseConfiguration),
+    vector_knowledge_base_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationToTerraform, true)(struct!.vectorKnowledgeBaseConfiguration),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseKnowledgeBaseConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kendra_knowledge_base_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationToHclTerraform, true)(struct!.kendraKnowledgeBaseConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationToHclTerraform, true)(struct!.kendraKnowledgeBaseConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationList",
     },
     sql_knowledge_base_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationToHclTerraform, true)(struct!.sqlKnowledgeBaseConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationToHclTerraform, true)(struct!.sqlKnowledgeBaseConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationList",
     },
     vector_knowledge_base_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationToHclTerraform, true)(struct!.vectorKnowledgeBaseConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationToHclTerraform, true)(struct!.vectorKnowledgeBaseConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationList",
@@ -3462,9 +3462,9 @@ export function bedrockagentKnowledgeBaseKnowledgeBaseConfigurationToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3472,11 +3472,11 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseKnowledgeBaseConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3501,7 +3501,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseKnowledgeBaseConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3510,7 +3510,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationOutputReference 
       this._sqlKnowledgeBaseConfiguration.internalValue = undefined;
       this._vectorKnowledgeBaseConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3542,7 +3542,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationOutputReference 
   public get kendraKnowledgeBaseConfiguration() {
     return this._kendraKnowledgeBaseConfiguration;
   }
-  public putKendraKnowledgeBaseConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration[] | cdktf.IResolvable) {
+  public putKendraKnowledgeBaseConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration[] | cdktn.IResolvable) {
     this._kendraKnowledgeBaseConfiguration.internalValue = value;
   }
   public resetKendraKnowledgeBaseConfiguration() {
@@ -3558,7 +3558,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationOutputReference 
   public get sqlKnowledgeBaseConfiguration() {
     return this._sqlKnowledgeBaseConfiguration;
   }
-  public putSqlKnowledgeBaseConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration[] | cdktf.IResolvable) {
+  public putSqlKnowledgeBaseConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration[] | cdktn.IResolvable) {
     this._sqlKnowledgeBaseConfiguration.internalValue = value;
   }
   public resetSqlKnowledgeBaseConfiguration() {
@@ -3574,7 +3574,7 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationOutputReference 
   public get vectorKnowledgeBaseConfiguration() {
     return this._vectorKnowledgeBaseConfiguration;
   }
-  public putVectorKnowledgeBaseConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration[] | cdktf.IResolvable) {
+  public putVectorKnowledgeBaseConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration[] | cdktn.IResolvable) {
     this._vectorKnowledgeBaseConfiguration.internalValue = value;
   }
   public resetVectorKnowledgeBaseConfiguration() {
@@ -3586,15 +3586,15 @@ export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationOutputReference 
   }
 }
 
-export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseKnowledgeBaseConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseKnowledgeBaseConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3620,39 +3620,39 @@ export interface BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfig
   readonly vectorField: string;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metadata_field: cdktf.stringToTerraform(struct!.metadataField),
-    text_field: cdktf.stringToTerraform(struct!.textField),
-    vector_field: cdktf.stringToTerraform(struct!.vectorField),
+    metadata_field: cdktn.stringToTerraform(struct!.metadataField),
+    text_field: cdktn.stringToTerraform(struct!.textField),
+    vector_field: cdktn.stringToTerraform(struct!.vectorField),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metadata_field: {
-      value: cdktf.stringToHclTerraform(struct!.metadataField),
+      value: cdktn.stringToHclTerraform(struct!.metadataField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_field: {
-      value: cdktf.stringToHclTerraform(struct!.textField),
+      value: cdktn.stringToHclTerraform(struct!.textField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vector_field: {
-      value: cdktf.stringToHclTerraform(struct!.vectorField),
+      value: cdktn.stringToHclTerraform(struct!.vectorField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3663,9 +3663,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3673,11 +3673,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurat
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3698,7 +3698,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurat
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3706,7 +3706,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurat
       this._textField = undefined;
       this._vectorField = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3759,15 +3759,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurat
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMapping[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3812,77 +3812,77 @@ export interface BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfig
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#field_mapping BedrockagentKnowledgeBase#field_mapping}
   */
-  readonly fieldMapping?: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMapping[] | cdktf.IResolvable;
+  readonly fieldMapping?: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMapping[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    collection_name: cdktf.stringToTerraform(struct!.collectionName),
-    credentials_secret_arn: cdktf.stringToTerraform(struct!.credentialsSecretArn),
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
-    endpoint_service_name: cdktf.stringToTerraform(struct!.endpointServiceName),
-    text_index_name: cdktf.stringToTerraform(struct!.textIndexName),
-    vector_index_name: cdktf.stringToTerraform(struct!.vectorIndexName),
-    field_mapping: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingToTerraform, true)(struct!.fieldMapping),
+    collection_name: cdktn.stringToTerraform(struct!.collectionName),
+    credentials_secret_arn: cdktn.stringToTerraform(struct!.credentialsSecretArn),
+    database_name: cdktn.stringToTerraform(struct!.databaseName),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    endpoint_service_name: cdktn.stringToTerraform(struct!.endpointServiceName),
+    text_index_name: cdktn.stringToTerraform(struct!.textIndexName),
+    vector_index_name: cdktn.stringToTerraform(struct!.vectorIndexName),
+    field_mapping: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingToTerraform, true)(struct!.fieldMapping),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     collection_name: {
-      value: cdktf.stringToHclTerraform(struct!.collectionName),
+      value: cdktn.stringToHclTerraform(struct!.collectionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     credentials_secret_arn: {
-      value: cdktf.stringToHclTerraform(struct!.credentialsSecretArn),
+      value: cdktn.stringToHclTerraform(struct!.credentialsSecretArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      value: cdktn.stringToHclTerraform(struct!.databaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint_service_name: {
-      value: cdktf.stringToHclTerraform(struct!.endpointServiceName),
+      value: cdktn.stringToHclTerraform(struct!.endpointServiceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_index_name: {
-      value: cdktf.stringToHclTerraform(struct!.textIndexName),
+      value: cdktn.stringToHclTerraform(struct!.textIndexName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vector_index_name: {
-      value: cdktf.stringToHclTerraform(struct!.vectorIndexName),
+      value: cdktn.stringToHclTerraform(struct!.vectorIndexName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_mapping: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingToHclTerraform, true)(struct!.fieldMapping),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingToHclTerraform, true)(struct!.fieldMapping),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingList",
@@ -3893,9 +3893,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3903,11 +3903,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurat
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3948,7 +3948,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurat
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3961,7 +3961,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurat
       this._vectorIndexName = undefined;
       this._fieldMapping.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4081,7 +4081,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurat
   public get fieldMapping() {
     return this._fieldMapping;
   }
-  public putFieldMapping(value: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMapping[] | cdktf.IResolvable) {
+  public putFieldMapping(value: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMapping[] | cdktn.IResolvable) {
     this._fieldMapping.internalValue = value;
   }
   public resetFieldMapping() {
@@ -4093,15 +4093,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurat
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4123,32 +4123,32 @@ export interface BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsCo
   readonly textField: string;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metadata_field: cdktf.stringToTerraform(struct!.metadataField),
-    text_field: cdktf.stringToTerraform(struct!.textField),
+    metadata_field: cdktn.stringToTerraform(struct!.metadataField),
+    text_field: cdktn.stringToTerraform(struct!.textField),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metadata_field: {
-      value: cdktf.stringToHclTerraform(struct!.metadataField),
+      value: cdktn.stringToHclTerraform(struct!.metadataField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_field: {
-      value: cdktf.stringToHclTerraform(struct!.textField),
+      value: cdktn.stringToHclTerraform(struct!.textField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4159,9 +4159,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4169,11 +4169,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfig
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4190,14 +4190,14 @@ export class BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfig
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._metadataField = undefined;
       this._textField = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4236,15 +4236,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfig
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4265,35 +4265,35 @@ export interface BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsCo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#field_mapping BedrockagentKnowledgeBase#field_mapping}
   */
-  readonly fieldMapping?: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping[] | cdktf.IResolvable;
+  readonly fieldMapping?: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    graph_arn: cdktf.stringToTerraform(struct!.graphArn),
-    field_mapping: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingToTerraform, true)(struct!.fieldMapping),
+    graph_arn: cdktn.stringToTerraform(struct!.graphArn),
+    field_mapping: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingToTerraform, true)(struct!.fieldMapping),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     graph_arn: {
-      value: cdktf.stringToHclTerraform(struct!.graphArn),
+      value: cdktn.stringToHclTerraform(struct!.graphArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_mapping: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingToHclTerraform, true)(struct!.fieldMapping),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingToHclTerraform, true)(struct!.fieldMapping),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingList",
@@ -4304,9 +4304,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4314,11 +4314,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfig
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4335,14 +4335,14 @@ export class BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfig
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._graphArn = undefined;
       this._fieldMapping.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4372,7 +4372,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfig
   public get fieldMapping() {
     return this._fieldMapping;
   }
-  public putFieldMapping(value: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping[] | cdktf.IResolvable) {
+  public putFieldMapping(value: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping[] | cdktn.IResolvable) {
     this._fieldMapping.internalValue = value;
   }
   public resetFieldMapping() {
@@ -4384,15 +4384,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfig
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4418,39 +4418,39 @@ export interface BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedC
   readonly vectorField: string;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metadata_field: cdktf.stringToTerraform(struct!.metadataField),
-    text_field: cdktf.stringToTerraform(struct!.textField),
-    vector_field: cdktf.stringToTerraform(struct!.vectorField),
+    metadata_field: cdktn.stringToTerraform(struct!.metadataField),
+    text_field: cdktn.stringToTerraform(struct!.textField),
+    vector_field: cdktn.stringToTerraform(struct!.vectorField),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metadata_field: {
-      value: cdktf.stringToHclTerraform(struct!.metadataField),
+      value: cdktn.stringToHclTerraform(struct!.metadataField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_field: {
-      value: cdktf.stringToHclTerraform(struct!.textField),
+      value: cdktn.stringToHclTerraform(struct!.textField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vector_field: {
-      value: cdktf.stringToHclTerraform(struct!.vectorField),
+      value: cdktn.stringToHclTerraform(struct!.vectorField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4461,9 +4461,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedCl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4471,11 +4471,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClust
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4496,7 +4496,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClust
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4504,7 +4504,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClust
       this._textField = undefined;
       this._vectorField = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4557,15 +4557,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClust
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4594,49 +4594,49 @@ export interface BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedC
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#field_mapping BedrockagentKnowledgeBase#field_mapping}
   */
-  readonly fieldMapping?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping[] | cdktf.IResolvable;
+  readonly fieldMapping?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain_arn: cdktf.stringToTerraform(struct!.domainArn),
-    domain_endpoint: cdktf.stringToTerraform(struct!.domainEndpoint),
-    vector_index_name: cdktf.stringToTerraform(struct!.vectorIndexName),
-    field_mapping: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingToTerraform, true)(struct!.fieldMapping),
+    domain_arn: cdktn.stringToTerraform(struct!.domainArn),
+    domain_endpoint: cdktn.stringToTerraform(struct!.domainEndpoint),
+    vector_index_name: cdktn.stringToTerraform(struct!.vectorIndexName),
+    field_mapping: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingToTerraform, true)(struct!.fieldMapping),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain_arn: {
-      value: cdktf.stringToHclTerraform(struct!.domainArn),
+      value: cdktn.stringToHclTerraform(struct!.domainArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     domain_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.domainEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.domainEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vector_index_name: {
-      value: cdktf.stringToHclTerraform(struct!.vectorIndexName),
+      value: cdktn.stringToHclTerraform(struct!.vectorIndexName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_mapping: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingToHclTerraform, true)(struct!.fieldMapping),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingToHclTerraform, true)(struct!.fieldMapping),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingList",
@@ -4647,9 +4647,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedCl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4657,11 +4657,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClust
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4686,7 +4686,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClust
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4695,7 +4695,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClust
       this._vectorIndexName = undefined;
       this._fieldMapping.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4753,7 +4753,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClust
   public get fieldMapping() {
     return this._fieldMapping;
   }
-  public putFieldMapping(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping[] | cdktf.IResolvable) {
+  public putFieldMapping(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping[] | cdktn.IResolvable) {
     this._fieldMapping.internalValue = value;
   }
   public resetFieldMapping() {
@@ -4765,15 +4765,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClust
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4799,39 +4799,39 @@ export interface BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerle
   readonly vectorField: string;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metadata_field: cdktf.stringToTerraform(struct!.metadataField),
-    text_field: cdktf.stringToTerraform(struct!.textField),
-    vector_field: cdktf.stringToTerraform(struct!.vectorField),
+    metadata_field: cdktn.stringToTerraform(struct!.metadataField),
+    text_field: cdktn.stringToTerraform(struct!.textField),
+    vector_field: cdktn.stringToTerraform(struct!.vectorField),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metadata_field: {
-      value: cdktf.stringToHclTerraform(struct!.metadataField),
+      value: cdktn.stringToHclTerraform(struct!.metadataField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_field: {
-      value: cdktf.stringToHclTerraform(struct!.textField),
+      value: cdktn.stringToHclTerraform(struct!.textField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vector_field: {
-      value: cdktf.stringToHclTerraform(struct!.vectorField),
+      value: cdktn.stringToHclTerraform(struct!.vectorField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4842,9 +4842,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerles
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4852,11 +4852,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessCo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4877,7 +4877,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessCo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4885,7 +4885,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessCo
       this._textField = undefined;
       this._vectorField = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4938,15 +4938,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessCo
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMapping[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4971,42 +4971,42 @@ export interface BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerle
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#field_mapping BedrockagentKnowledgeBase#field_mapping}
   */
-  readonly fieldMapping?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMapping[] | cdktf.IResolvable;
+  readonly fieldMapping?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMapping[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    collection_arn: cdktf.stringToTerraform(struct!.collectionArn),
-    vector_index_name: cdktf.stringToTerraform(struct!.vectorIndexName),
-    field_mapping: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingToTerraform, true)(struct!.fieldMapping),
+    collection_arn: cdktn.stringToTerraform(struct!.collectionArn),
+    vector_index_name: cdktn.stringToTerraform(struct!.vectorIndexName),
+    field_mapping: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingToTerraform, true)(struct!.fieldMapping),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     collection_arn: {
-      value: cdktf.stringToHclTerraform(struct!.collectionArn),
+      value: cdktn.stringToHclTerraform(struct!.collectionArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vector_index_name: {
-      value: cdktf.stringToHclTerraform(struct!.vectorIndexName),
+      value: cdktn.stringToHclTerraform(struct!.vectorIndexName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_mapping: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingToHclTerraform, true)(struct!.fieldMapping),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingToHclTerraform, true)(struct!.fieldMapping),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingList",
@@ -5017,9 +5017,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerles
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5027,11 +5027,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessCo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5052,7 +5052,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessCo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5060,7 +5060,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessCo
       this._vectorIndexName = undefined;
       this._fieldMapping.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5104,7 +5104,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessCo
   public get fieldMapping() {
     return this._fieldMapping;
   }
-  public putFieldMapping(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMapping[] | cdktf.IResolvable) {
+  public putFieldMapping(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMapping[] | cdktn.IResolvable) {
     this._fieldMapping.internalValue = value;
   }
   public resetFieldMapping() {
@@ -5116,15 +5116,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessCo
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5146,32 +5146,32 @@ export interface BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurat
   readonly textField: string;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metadata_field: cdktf.stringToTerraform(struct!.metadataField),
-    text_field: cdktf.stringToTerraform(struct!.textField),
+    metadata_field: cdktn.stringToTerraform(struct!.metadataField),
+    text_field: cdktn.stringToTerraform(struct!.textField),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metadata_field: {
-      value: cdktf.stringToHclTerraform(struct!.metadataField),
+      value: cdktn.stringToHclTerraform(struct!.metadataField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_field: {
-      value: cdktf.stringToHclTerraform(struct!.textField),
+      value: cdktn.stringToHclTerraform(struct!.textField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5182,9 +5182,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5192,11 +5192,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationF
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5213,14 +5213,14 @@ export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationF
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._metadataField = undefined;
       this._textField = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5259,15 +5259,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationF
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMapping[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5296,49 +5296,49 @@ export interface BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurat
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#field_mapping BedrockagentKnowledgeBase#field_mapping}
   */
-  readonly fieldMapping?: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMapping[] | cdktf.IResolvable;
+  readonly fieldMapping?: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMapping[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connection_string: cdktf.stringToTerraform(struct!.connectionString),
-    credentials_secret_arn: cdktf.stringToTerraform(struct!.credentialsSecretArn),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    field_mapping: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingToTerraform, true)(struct!.fieldMapping),
+    connection_string: cdktn.stringToTerraform(struct!.connectionString),
+    credentials_secret_arn: cdktn.stringToTerraform(struct!.credentialsSecretArn),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    field_mapping: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingToTerraform, true)(struct!.fieldMapping),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connection_string: {
-      value: cdktf.stringToHclTerraform(struct!.connectionString),
+      value: cdktn.stringToHclTerraform(struct!.connectionString),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     credentials_secret_arn: {
-      value: cdktf.stringToHclTerraform(struct!.credentialsSecretArn),
+      value: cdktn.stringToHclTerraform(struct!.credentialsSecretArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_mapping: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingToHclTerraform, true)(struct!.fieldMapping),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingToHclTerraform, true)(struct!.fieldMapping),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingList",
@@ -5349,9 +5349,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5359,11 +5359,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationPineconeConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationPineconeConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5388,7 +5388,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5397,7 +5397,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationO
       this._namespace = undefined;
       this._fieldMapping.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5458,7 +5458,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationO
   public get fieldMapping() {
     return this._fieldMapping;
   }
-  public putFieldMapping(value: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMapping[] | cdktf.IResolvable) {
+  public putFieldMapping(value: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMapping[] | cdktn.IResolvable) {
     this._fieldMapping.internalValue = value;
   }
   public resetFieldMapping() {
@@ -5470,15 +5470,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationO
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationPineconeConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationPineconeConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5512,53 +5512,53 @@ export interface BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFi
   readonly vectorField: string;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_metadata_field: cdktf.stringToTerraform(struct!.customMetadataField),
-    metadata_field: cdktf.stringToTerraform(struct!.metadataField),
-    primary_key_field: cdktf.stringToTerraform(struct!.primaryKeyField),
-    text_field: cdktf.stringToTerraform(struct!.textField),
-    vector_field: cdktf.stringToTerraform(struct!.vectorField),
+    custom_metadata_field: cdktn.stringToTerraform(struct!.customMetadataField),
+    metadata_field: cdktn.stringToTerraform(struct!.metadataField),
+    primary_key_field: cdktn.stringToTerraform(struct!.primaryKeyField),
+    text_field: cdktn.stringToTerraform(struct!.textField),
+    vector_field: cdktn.stringToTerraform(struct!.vectorField),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_metadata_field: {
-      value: cdktf.stringToHclTerraform(struct!.customMetadataField),
+      value: cdktn.stringToHclTerraform(struct!.customMetadataField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metadata_field: {
-      value: cdktf.stringToHclTerraform(struct!.metadataField),
+      value: cdktn.stringToHclTerraform(struct!.metadataField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_key_field: {
-      value: cdktf.stringToHclTerraform(struct!.primaryKeyField),
+      value: cdktn.stringToHclTerraform(struct!.primaryKeyField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_field: {
-      value: cdktf.stringToHclTerraform(struct!.textField),
+      value: cdktn.stringToHclTerraform(struct!.textField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vector_field: {
-      value: cdktf.stringToHclTerraform(struct!.vectorField),
+      value: cdktn.stringToHclTerraform(struct!.vectorField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5569,9 +5569,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFie
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5579,11 +5579,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldM
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5612,7 +5612,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldM
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5622,7 +5622,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldM
       this._textField = undefined;
       this._vectorField = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5706,15 +5706,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldM
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMapping[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5747,56 +5747,56 @@ export interface BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#field_mapping BedrockagentKnowledgeBase#field_mapping}
   */
-  readonly fieldMapping?: BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMapping[] | cdktf.IResolvable;
+  readonly fieldMapping?: BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMapping[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    credentials_secret_arn: cdktf.stringToTerraform(struct!.credentialsSecretArn),
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    resource_arn: cdktf.stringToTerraform(struct!.resourceArn),
-    table_name: cdktf.stringToTerraform(struct!.tableName),
-    field_mapping: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingToTerraform, true)(struct!.fieldMapping),
+    credentials_secret_arn: cdktn.stringToTerraform(struct!.credentialsSecretArn),
+    database_name: cdktn.stringToTerraform(struct!.databaseName),
+    resource_arn: cdktn.stringToTerraform(struct!.resourceArn),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
+    field_mapping: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingToTerraform, true)(struct!.fieldMapping),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     credentials_secret_arn: {
-      value: cdktf.stringToHclTerraform(struct!.credentialsSecretArn),
+      value: cdktn.stringToHclTerraform(struct!.credentialsSecretArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      value: cdktn.stringToHclTerraform(struct!.databaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_arn: {
-      value: cdktf.stringToHclTerraform(struct!.resourceArn),
+      value: cdktn.stringToHclTerraform(struct!.resourceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_mapping: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingToHclTerraform, true)(struct!.fieldMapping),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingToHclTerraform, true)(struct!.fieldMapping),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingList",
@@ -5807,9 +5807,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5817,11 +5817,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5850,7 +5850,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5860,7 +5860,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationOutput
       this._tableName = undefined;
       this._fieldMapping.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5932,7 +5932,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationOutput
   public get fieldMapping() {
     return this._fieldMapping;
   }
-  public putFieldMapping(value: BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMapping[] | cdktf.IResolvable) {
+  public putFieldMapping(value: BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMapping[] | cdktn.IResolvable) {
     this._fieldMapping.internalValue = value;
   }
   public resetFieldMapping() {
@@ -5944,15 +5944,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationOutput
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5978,39 +5978,39 @@ export interface BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseClo
   readonly vectorField?: string;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metadata_field: cdktf.stringToTerraform(struct!.metadataField),
-    text_field: cdktf.stringToTerraform(struct!.textField),
-    vector_field: cdktf.stringToTerraform(struct!.vectorField),
+    metadata_field: cdktn.stringToTerraform(struct!.metadataField),
+    text_field: cdktn.stringToTerraform(struct!.textField),
+    vector_field: cdktn.stringToTerraform(struct!.vectorField),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metadata_field: {
-      value: cdktf.stringToHclTerraform(struct!.metadataField),
+      value: cdktn.stringToHclTerraform(struct!.metadataField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_field: {
-      value: cdktf.stringToHclTerraform(struct!.textField),
+      value: cdktn.stringToHclTerraform(struct!.textField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vector_field: {
-      value: cdktf.stringToHclTerraform(struct!.vectorField),
+      value: cdktn.stringToHclTerraform(struct!.vectorField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6021,9 +6021,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseClou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6031,11 +6031,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudCo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6056,7 +6056,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudCo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6064,7 +6064,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudCo
       this._textField = undefined;
       this._vectorField = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6126,15 +6126,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudCo
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6163,49 +6163,49 @@ export interface BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseClo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#field_mapping BedrockagentKnowledgeBase#field_mapping}
   */
-  readonly fieldMapping?: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping[] | cdktf.IResolvable;
+  readonly fieldMapping?: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    credentials_secret_arn: cdktf.stringToTerraform(struct!.credentialsSecretArn),
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
-    vector_index_name: cdktf.stringToTerraform(struct!.vectorIndexName),
-    field_mapping: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingToTerraform, true)(struct!.fieldMapping),
+    credentials_secret_arn: cdktn.stringToTerraform(struct!.credentialsSecretArn),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    vector_index_name: cdktn.stringToTerraform(struct!.vectorIndexName),
+    field_mapping: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingToTerraform, true)(struct!.fieldMapping),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     credentials_secret_arn: {
-      value: cdktf.stringToHclTerraform(struct!.credentialsSecretArn),
+      value: cdktn.stringToHclTerraform(struct!.credentialsSecretArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vector_index_name: {
-      value: cdktf.stringToHclTerraform(struct!.vectorIndexName),
+      value: cdktn.stringToHclTerraform(struct!.vectorIndexName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_mapping: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingToHclTerraform, true)(struct!.fieldMapping),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingToHclTerraform, true)(struct!.fieldMapping),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingList",
@@ -6216,9 +6216,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseClou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6226,11 +6226,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudCo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6255,7 +6255,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudCo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6264,7 +6264,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudCo
       this._vectorIndexName = undefined;
       this._fieldMapping.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6322,7 +6322,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudCo
   public get fieldMapping() {
     return this._fieldMapping;
   }
-  public putFieldMapping(value: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping[] | cdktf.IResolvable) {
+  public putFieldMapping(value: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping[] | cdktn.IResolvable) {
     this._fieldMapping.internalValue = value;
   }
   public resetFieldMapping() {
@@ -6334,15 +6334,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudCo
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6368,39 +6368,39 @@ export interface BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfigura
   readonly vectorBucketArn?: string;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index_arn: cdktf.stringToTerraform(struct!.indexArn),
-    index_name: cdktf.stringToTerraform(struct!.indexName),
-    vector_bucket_arn: cdktf.stringToTerraform(struct!.vectorBucketArn),
+    index_arn: cdktn.stringToTerraform(struct!.indexArn),
+    index_name: cdktn.stringToTerraform(struct!.indexName),
+    vector_bucket_arn: cdktn.stringToTerraform(struct!.vectorBucketArn),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index_arn: {
-      value: cdktf.stringToHclTerraform(struct!.indexArn),
+      value: cdktn.stringToHclTerraform(struct!.indexArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     index_name: {
-      value: cdktf.stringToHclTerraform(struct!.indexName),
+      value: cdktn.stringToHclTerraform(struct!.indexName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vector_bucket_arn: {
-      value: cdktf.stringToHclTerraform(struct!.vectorBucketArn),
+      value: cdktn.stringToHclTerraform(struct!.vectorBucketArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6411,9 +6411,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfigurat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6421,11 +6421,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6446,7 +6446,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6454,7 +6454,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration
       this._indexName = undefined;
       this._vectorBucketArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6516,15 +6516,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6545,126 +6545,126 @@ export interface BedrockagentKnowledgeBaseStorageConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#mongo_db_atlas_configuration BedrockagentKnowledgeBase#mongo_db_atlas_configuration}
   */
-  readonly mongoDbAtlasConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfiguration[] | cdktf.IResolvable;
+  readonly mongoDbAtlasConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfiguration[] | cdktn.IResolvable;
   /**
   * neptune_analytics_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#neptune_analytics_configuration BedrockagentKnowledgeBase#neptune_analytics_configuration}
   */
-  readonly neptuneAnalyticsConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfiguration[] | cdktf.IResolvable;
+  readonly neptuneAnalyticsConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfiguration[] | cdktn.IResolvable;
   /**
   * opensearch_managed_cluster_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#opensearch_managed_cluster_configuration BedrockagentKnowledgeBase#opensearch_managed_cluster_configuration}
   */
-  readonly opensearchManagedClusterConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguration[] | cdktf.IResolvable;
+  readonly opensearchManagedClusterConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguration[] | cdktn.IResolvable;
   /**
   * opensearch_serverless_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#opensearch_serverless_configuration BedrockagentKnowledgeBase#opensearch_serverless_configuration}
   */
-  readonly opensearchServerlessConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfiguration[] | cdktf.IResolvable;
+  readonly opensearchServerlessConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfiguration[] | cdktn.IResolvable;
   /**
   * pinecone_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#pinecone_configuration BedrockagentKnowledgeBase#pinecone_configuration}
   */
-  readonly pineconeConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfiguration[] | cdktf.IResolvable;
+  readonly pineconeConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfiguration[] | cdktn.IResolvable;
   /**
   * rds_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#rds_configuration BedrockagentKnowledgeBase#rds_configuration}
   */
-  readonly rdsConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration[] | cdktf.IResolvable;
+  readonly rdsConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration[] | cdktn.IResolvable;
   /**
   * redis_enterprise_cloud_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#redis_enterprise_cloud_configuration BedrockagentKnowledgeBase#redis_enterprise_cloud_configuration}
   */
-  readonly redisEnterpriseCloudConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfiguration[] | cdktf.IResolvable;
+  readonly redisEnterpriseCloudConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfiguration[] | cdktn.IResolvable;
   /**
   * s3_vectors_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#s3_vectors_configuration BedrockagentKnowledgeBase#s3_vectors_configuration}
   */
-  readonly s3VectorsConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration[] | cdktf.IResolvable;
+  readonly s3VectorsConfiguration?: BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration[] | cdktn.IResolvable;
 }
 
-export function bedrockagentKnowledgeBaseStorageConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationToTerraform(struct?: BedrockagentKnowledgeBaseStorageConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    mongo_db_atlas_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationToTerraform, true)(struct!.mongoDbAtlasConfiguration),
-    neptune_analytics_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationToTerraform, true)(struct!.neptuneAnalyticsConfiguration),
-    opensearch_managed_cluster_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationToTerraform, true)(struct!.opensearchManagedClusterConfiguration),
-    opensearch_serverless_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationToTerraform, true)(struct!.opensearchServerlessConfiguration),
-    pinecone_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationToTerraform, true)(struct!.pineconeConfiguration),
-    rds_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationToTerraform, true)(struct!.rdsConfiguration),
-    redis_enterprise_cloud_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationToTerraform, true)(struct!.redisEnterpriseCloudConfiguration),
-    s3_vectors_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfigurationToTerraform, true)(struct!.s3VectorsConfiguration),
+    type: cdktn.stringToTerraform(struct!.type),
+    mongo_db_atlas_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationToTerraform, true)(struct!.mongoDbAtlasConfiguration),
+    neptune_analytics_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationToTerraform, true)(struct!.neptuneAnalyticsConfiguration),
+    opensearch_managed_cluster_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationToTerraform, true)(struct!.opensearchManagedClusterConfiguration),
+    opensearch_serverless_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationToTerraform, true)(struct!.opensearchServerlessConfiguration),
+    pinecone_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationToTerraform, true)(struct!.pineconeConfiguration),
+    rds_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationToTerraform, true)(struct!.rdsConfiguration),
+    redis_enterprise_cloud_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationToTerraform, true)(struct!.redisEnterpriseCloudConfiguration),
+    s3_vectors_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfigurationToTerraform, true)(struct!.s3VectorsConfiguration),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseStorageConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseStorageConfigurationToHclTerraform(struct?: BedrockagentKnowledgeBaseStorageConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mongo_db_atlas_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationToHclTerraform, true)(struct!.mongoDbAtlasConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationToHclTerraform, true)(struct!.mongoDbAtlasConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationList",
     },
     neptune_analytics_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationToHclTerraform, true)(struct!.neptuneAnalyticsConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationToHclTerraform, true)(struct!.neptuneAnalyticsConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationList",
     },
     opensearch_managed_cluster_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationToHclTerraform, true)(struct!.opensearchManagedClusterConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationToHclTerraform, true)(struct!.opensearchManagedClusterConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationList",
     },
     opensearch_serverless_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationToHclTerraform, true)(struct!.opensearchServerlessConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationToHclTerraform, true)(struct!.opensearchServerlessConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationList",
     },
     pinecone_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationToHclTerraform, true)(struct!.pineconeConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationToHclTerraform, true)(struct!.pineconeConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationList",
     },
     rds_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationToHclTerraform, true)(struct!.rdsConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationToHclTerraform, true)(struct!.rdsConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationList",
     },
     redis_enterprise_cloud_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationToHclTerraform, true)(struct!.redisEnterpriseCloudConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationToHclTerraform, true)(struct!.redisEnterpriseCloudConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationList",
     },
     s3_vectors_configuration: {
-      value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfigurationToHclTerraform, true)(struct!.s3VectorsConfiguration),
+      value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfigurationToHclTerraform, true)(struct!.s3VectorsConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfigurationList",
@@ -6675,9 +6675,9 @@ export function bedrockagentKnowledgeBaseStorageConfigurationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseStorageConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6685,11 +6685,11 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseStorageConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseStorageConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6734,7 +6734,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseStorageConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6748,7 +6748,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOutputReference extend
       this._redisEnterpriseCloudConfiguration.internalValue = undefined;
       this._s3VectorsConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6785,7 +6785,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOutputReference extend
   public get mongoDbAtlasConfiguration() {
     return this._mongoDbAtlasConfiguration;
   }
-  public putMongoDbAtlasConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfiguration[] | cdktf.IResolvable) {
+  public putMongoDbAtlasConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationMongoDbAtlasConfiguration[] | cdktn.IResolvable) {
     this._mongoDbAtlasConfiguration.internalValue = value;
   }
   public resetMongoDbAtlasConfiguration() {
@@ -6801,7 +6801,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOutputReference extend
   public get neptuneAnalyticsConfiguration() {
     return this._neptuneAnalyticsConfiguration;
   }
-  public putNeptuneAnalyticsConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfiguration[] | cdktf.IResolvable) {
+  public putNeptuneAnalyticsConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfiguration[] | cdktn.IResolvable) {
     this._neptuneAnalyticsConfiguration.internalValue = value;
   }
   public resetNeptuneAnalyticsConfiguration() {
@@ -6817,7 +6817,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOutputReference extend
   public get opensearchManagedClusterConfiguration() {
     return this._opensearchManagedClusterConfiguration;
   }
-  public putOpensearchManagedClusterConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguration[] | cdktf.IResolvable) {
+  public putOpensearchManagedClusterConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguration[] | cdktn.IResolvable) {
     this._opensearchManagedClusterConfiguration.internalValue = value;
   }
   public resetOpensearchManagedClusterConfiguration() {
@@ -6833,7 +6833,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOutputReference extend
   public get opensearchServerlessConfiguration() {
     return this._opensearchServerlessConfiguration;
   }
-  public putOpensearchServerlessConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfiguration[] | cdktf.IResolvable) {
+  public putOpensearchServerlessConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfiguration[] | cdktn.IResolvable) {
     this._opensearchServerlessConfiguration.internalValue = value;
   }
   public resetOpensearchServerlessConfiguration() {
@@ -6849,7 +6849,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOutputReference extend
   public get pineconeConfiguration() {
     return this._pineconeConfiguration;
   }
-  public putPineconeConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfiguration[] | cdktf.IResolvable) {
+  public putPineconeConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationPineconeConfiguration[] | cdktn.IResolvable) {
     this._pineconeConfiguration.internalValue = value;
   }
   public resetPineconeConfiguration() {
@@ -6865,7 +6865,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOutputReference extend
   public get rdsConfiguration() {
     return this._rdsConfiguration;
   }
-  public putRdsConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration[] | cdktf.IResolvable) {
+  public putRdsConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration[] | cdktn.IResolvable) {
     this._rdsConfiguration.internalValue = value;
   }
   public resetRdsConfiguration() {
@@ -6881,7 +6881,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOutputReference extend
   public get redisEnterpriseCloudConfiguration() {
     return this._redisEnterpriseCloudConfiguration;
   }
-  public putRedisEnterpriseCloudConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfiguration[] | cdktf.IResolvable) {
+  public putRedisEnterpriseCloudConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfiguration[] | cdktn.IResolvable) {
     this._redisEnterpriseCloudConfiguration.internalValue = value;
   }
   public resetRedisEnterpriseCloudConfiguration() {
@@ -6897,7 +6897,7 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOutputReference extend
   public get s3VectorsConfiguration() {
     return this._s3VectorsConfiguration;
   }
-  public putS3VectorsConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration[] | cdktf.IResolvable) {
+  public putS3VectorsConfiguration(value: BedrockagentKnowledgeBaseStorageConfigurationS3VectorsConfiguration[] | cdktn.IResolvable) {
     this._s3VectorsConfiguration.internalValue = value;
   }
   public resetS3VectorsConfiguration() {
@@ -6909,15 +6909,15 @@ export class BedrockagentKnowledgeBaseStorageConfigurationOutputReference extend
   }
 }
 
-export class BedrockagentKnowledgeBaseStorageConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentKnowledgeBaseStorageConfiguration[] | cdktf.IResolvable
+export class BedrockagentKnowledgeBaseStorageConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentKnowledgeBaseStorageConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6949,39 +6949,39 @@ export interface BedrockagentKnowledgeBaseTimeouts {
   readonly update?: string;
 }
 
-export function bedrockagentKnowledgeBaseTimeoutsToTerraform(struct?: BedrockagentKnowledgeBaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseTimeoutsToTerraform(struct?: BedrockagentKnowledgeBaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function bedrockagentKnowledgeBaseTimeoutsToHclTerraform(struct?: BedrockagentKnowledgeBaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentKnowledgeBaseTimeoutsToHclTerraform(struct?: BedrockagentKnowledgeBaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6992,19 +6992,19 @@ export function bedrockagentKnowledgeBaseTimeoutsToHclTerraform(struct?: Bedrock
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentKnowledgeBaseTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentKnowledgeBaseTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BedrockagentKnowledgeBaseTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentKnowledgeBaseTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7025,7 +7025,7 @@ export class BedrockagentKnowledgeBaseTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentKnowledgeBaseTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentKnowledgeBaseTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7033,7 +7033,7 @@ export class BedrockagentKnowledgeBaseTimeoutsOutputReference extends cdktf.Comp
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7098,7 +7098,7 @@ export class BedrockagentKnowledgeBaseTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base aws_bedrockagent_knowledge_base}
 */
-export class BedrockagentKnowledgeBase extends cdktf.TerraformResource {
+export class BedrockagentKnowledgeBase extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -7109,14 +7109,14 @@ export class BedrockagentKnowledgeBase extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BedrockagentKnowledgeBase resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BedrockagentKnowledgeBase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentKnowledgeBase to import
   * @param importFromId The id of the existing BedrockagentKnowledgeBase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_knowledge_base#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentKnowledgeBase to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagent_knowledge_base", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagent_knowledge_base", importId: importFromId, provider });
       }
 
   // ===========
@@ -7255,7 +7255,7 @@ export class BedrockagentKnowledgeBase extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -7270,7 +7270,7 @@ export class BedrockagentKnowledgeBase extends cdktf.TerraformResource {
   public get knowledgeBaseConfiguration() {
     return this._knowledgeBaseConfiguration;
   }
-  public putKnowledgeBaseConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfiguration[] | cdktf.IResolvable) {
+  public putKnowledgeBaseConfiguration(value: BedrockagentKnowledgeBaseKnowledgeBaseConfiguration[] | cdktn.IResolvable) {
     this._knowledgeBaseConfiguration.internalValue = value;
   }
   public resetKnowledgeBaseConfiguration() {
@@ -7286,7 +7286,7 @@ export class BedrockagentKnowledgeBase extends cdktf.TerraformResource {
   public get storageConfiguration() {
     return this._storageConfiguration;
   }
-  public putStorageConfiguration(value: BedrockagentKnowledgeBaseStorageConfiguration[] | cdktf.IResolvable) {
+  public putStorageConfiguration(value: BedrockagentKnowledgeBaseStorageConfiguration[] | cdktn.IResolvable) {
     this._storageConfiguration.internalValue = value;
   }
   public resetStorageConfiguration() {
@@ -7319,13 +7319,13 @@ export class BedrockagentKnowledgeBase extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      knowledge_base_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationToTerraform, true)(this._knowledgeBaseConfiguration.internalValue),
-      storage_configuration: cdktf.listMapper(bedrockagentKnowledgeBaseStorageConfigurationToTerraform, true)(this._storageConfiguration.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      knowledge_base_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationToTerraform, true)(this._knowledgeBaseConfiguration.internalValue),
+      storage_configuration: cdktn.listMapper(bedrockagentKnowledgeBaseStorageConfigurationToTerraform, true)(this._storageConfiguration.internalValue),
       timeouts: bedrockagentKnowledgeBaseTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -7333,43 +7333,43 @@ export class BedrockagentKnowledgeBase extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       knowledge_base_configuration: {
-        value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationToHclTerraform, true)(this._knowledgeBaseConfiguration.internalValue),
+        value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseKnowledgeBaseConfigurationToHclTerraform, true)(this._knowledgeBaseConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockagentKnowledgeBaseKnowledgeBaseConfigurationList",
       },
       storage_configuration: {
-        value: cdktf.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationToHclTerraform, true)(this._storageConfiguration.internalValue),
+        value: cdktn.listMapperHcl(bedrockagentKnowledgeBaseStorageConfigurationToHclTerraform, true)(this._storageConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockagentKnowledgeBaseStorageConfigurationList",

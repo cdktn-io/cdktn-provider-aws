@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArguments {
+export interface StoragegatewaySmbFileShareConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_smb_file_share#access_based_enumeration StoragegatewaySmbFileShare#access_based_enumeration}
   */
-  readonly accessBasedEnumeration?: boolean | cdktf.IResolvable;
+  readonly accessBasedEnumeration?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_smb_file_share#admin_user_list StoragegatewaySmbFileShare#admin_user_list}
   */
@@ -51,7 +51,7 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_smb_file_share#guess_mime_type_enabled StoragegatewaySmbFileShare#guess_mime_type_enabled}
   */
-  readonly guessMimeTypeEnabled?: boolean | cdktf.IResolvable;
+  readonly guessMimeTypeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_smb_file_share#id StoragegatewaySmbFileShare#id}
   *
@@ -66,7 +66,7 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_smb_file_share#kms_encrypted StoragegatewaySmbFileShare#kms_encrypted}
   */
-  readonly kmsEncrypted?: boolean | cdktf.IResolvable;
+  readonly kmsEncrypted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_smb_file_share#kms_key_arn StoragegatewaySmbFileShare#kms_key_arn}
   */
@@ -86,11 +86,11 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_smb_file_share#oplocks_enabled StoragegatewaySmbFileShare#oplocks_enabled}
   */
-  readonly oplocksEnabled?: boolean | cdktf.IResolvable;
+  readonly oplocksEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_smb_file_share#read_only StoragegatewaySmbFileShare#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -100,7 +100,7 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_smb_file_share#requester_pays StoragegatewaySmbFileShare#requester_pays}
   */
-  readonly requesterPays?: boolean | cdktf.IResolvable;
+  readonly requesterPays?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_smb_file_share#role_arn StoragegatewaySmbFileShare#role_arn}
   */
@@ -108,7 +108,7 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_smb_file_share#smb_acl_enabled StoragegatewaySmbFileShare#smb_acl_enabled}
   */
-  readonly smbAclEnabled?: boolean | cdktf.IResolvable;
+  readonly smbAclEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_smb_file_share#tags StoragegatewaySmbFileShare#tags}
   */
@@ -146,24 +146,24 @@ export interface StoragegatewaySmbFileShareCacheAttributes {
 }
 
 export function storagegatewaySmbFileShareCacheAttributesToTerraform(struct?: StoragegatewaySmbFileShareCacheAttributesOutputReference | StoragegatewaySmbFileShareCacheAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cache_stale_timeout_in_seconds: cdktf.numberToTerraform(struct!.cacheStaleTimeoutInSeconds),
+    cache_stale_timeout_in_seconds: cdktn.numberToTerraform(struct!.cacheStaleTimeoutInSeconds),
   }
 }
 
 
 export function storagegatewaySmbFileShareCacheAttributesToHclTerraform(struct?: StoragegatewaySmbFileShareCacheAttributesOutputReference | StoragegatewaySmbFileShareCacheAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cache_stale_timeout_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.cacheStaleTimeoutInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.cacheStaleTimeoutInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -174,14 +174,14 @@ export function storagegatewaySmbFileShareCacheAttributesToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StoragegatewaySmbFileShareCacheAttributesOutputReference extends cdktf.ComplexObject {
+export class StoragegatewaySmbFileShareCacheAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -237,39 +237,39 @@ export interface StoragegatewaySmbFileShareTimeouts {
   readonly update?: string;
 }
 
-export function storagegatewaySmbFileShareTimeoutsToTerraform(struct?: StoragegatewaySmbFileShareTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storagegatewaySmbFileShareTimeoutsToTerraform(struct?: StoragegatewaySmbFileShareTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function storagegatewaySmbFileShareTimeoutsToHclTerraform(struct?: StoragegatewaySmbFileShareTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storagegatewaySmbFileShareTimeoutsToHclTerraform(struct?: StoragegatewaySmbFileShareTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -280,19 +280,19 @@ export function storagegatewaySmbFileShareTimeoutsToHclTerraform(struct?: Storag
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StoragegatewaySmbFileShareTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StoragegatewaySmbFileShareTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StoragegatewaySmbFileShareTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StoragegatewaySmbFileShareTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -313,7 +313,7 @@ export class StoragegatewaySmbFileShareTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StoragegatewaySmbFileShareTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StoragegatewaySmbFileShareTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -321,7 +321,7 @@ export class StoragegatewaySmbFileShareTimeoutsOutputReference extends cdktf.Com
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -386,7 +386,7 @@ export class StoragegatewaySmbFileShareTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_smb_file_share aws_storagegateway_smb_file_share}
 */
-export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
+export class StoragegatewaySmbFileShare extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -397,14 +397,14 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StoragegatewaySmbFileShare resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StoragegatewaySmbFileShare resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StoragegatewaySmbFileShare to import
   * @param importFromId The id of the existing StoragegatewaySmbFileShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_smb_file_share#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StoragegatewaySmbFileShare to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_smb_file_share", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_smb_file_share", importId: importFromId, provider });
       }
 
   // ===========
@@ -470,11 +470,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // ==========
 
   // access_based_enumeration - computed: false, optional: true, required: false
-  private _accessBasedEnumeration?: boolean | cdktf.IResolvable; 
+  private _accessBasedEnumeration?: boolean | cdktn.IResolvable; 
   public get accessBasedEnumeration() {
     return this.getBooleanAttribute('access_based_enumeration');
   }
-  public set accessBasedEnumeration(value: boolean | cdktf.IResolvable) {
+  public set accessBasedEnumeration(value: boolean | cdktn.IResolvable) {
     this._accessBasedEnumeration = value;
   }
   public resetAccessBasedEnumeration() {
@@ -488,7 +488,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // admin_user_list - computed: false, optional: true, required: false
   private _adminUserList?: string[]; 
   public get adminUserList() {
-    return cdktf.Fn.tolist(this.getListAttribute('admin_user_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('admin_user_list'));
   }
   public set adminUserList(value: string[]) {
     this._adminUserList = value;
@@ -621,11 +621,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // guess_mime_type_enabled - computed: false, optional: true, required: false
-  private _guessMimeTypeEnabled?: boolean | cdktf.IResolvable; 
+  private _guessMimeTypeEnabled?: boolean | cdktn.IResolvable; 
   public get guessMimeTypeEnabled() {
     return this.getBooleanAttribute('guess_mime_type_enabled');
   }
-  public set guessMimeTypeEnabled(value: boolean | cdktf.IResolvable) {
+  public set guessMimeTypeEnabled(value: boolean | cdktn.IResolvable) {
     this._guessMimeTypeEnabled = value;
   }
   public resetGuessMimeTypeEnabled() {
@@ -655,7 +655,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // invalid_user_list - computed: false, optional: true, required: false
   private _invalidUserList?: string[]; 
   public get invalidUserList() {
-    return cdktf.Fn.tolist(this.getListAttribute('invalid_user_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('invalid_user_list'));
   }
   public set invalidUserList(value: string[]) {
     this._invalidUserList = value;
@@ -669,11 +669,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // kms_encrypted - computed: false, optional: true, required: false
-  private _kmsEncrypted?: boolean | cdktf.IResolvable; 
+  private _kmsEncrypted?: boolean | cdktn.IResolvable; 
   public get kmsEncrypted() {
     return this.getBooleanAttribute('kms_encrypted');
   }
-  public set kmsEncrypted(value: boolean | cdktf.IResolvable) {
+  public set kmsEncrypted(value: boolean | cdktn.IResolvable) {
     this._kmsEncrypted = value;
   }
   public resetKmsEncrypted() {
@@ -746,11 +746,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // oplocks_enabled - computed: true, optional: true, required: false
-  private _oplocksEnabled?: boolean | cdktf.IResolvable; 
+  private _oplocksEnabled?: boolean | cdktn.IResolvable; 
   public get oplocksEnabled() {
     return this.getBooleanAttribute('oplocks_enabled');
   }
-  public set oplocksEnabled(value: boolean | cdktf.IResolvable) {
+  public set oplocksEnabled(value: boolean | cdktn.IResolvable) {
     this._oplocksEnabled = value;
   }
   public resetOplocksEnabled() {
@@ -767,11 +767,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -799,11 +799,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // requester_pays - computed: false, optional: true, required: false
-  private _requesterPays?: boolean | cdktf.IResolvable; 
+  private _requesterPays?: boolean | cdktn.IResolvable; 
   public get requesterPays() {
     return this.getBooleanAttribute('requester_pays');
   }
-  public set requesterPays(value: boolean | cdktf.IResolvable) {
+  public set requesterPays(value: boolean | cdktn.IResolvable) {
     this._requesterPays = value;
   }
   public resetRequesterPays() {
@@ -828,11 +828,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // smb_acl_enabled - computed: false, optional: true, required: false
-  private _smbAclEnabled?: boolean | cdktf.IResolvable; 
+  private _smbAclEnabled?: boolean | cdktn.IResolvable; 
   public get smbAclEnabled() {
     return this.getBooleanAttribute('smb_acl_enabled');
   }
-  public set smbAclEnabled(value: boolean | cdktf.IResolvable) {
+  public set smbAclEnabled(value: boolean | cdktn.IResolvable) {
     this._smbAclEnabled = value;
   }
   public resetSmbAclEnabled() {
@@ -878,7 +878,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // valid_user_list - computed: false, optional: true, required: false
   private _validUserList?: string[]; 
   public get validUserList() {
-    return cdktf.Fn.tolist(this.getListAttribute('valid_user_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('valid_user_list'));
   }
   public set validUserList(value: string[]) {
     this._validUserList = value;
@@ -945,33 +945,33 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_based_enumeration: cdktf.booleanToTerraform(this._accessBasedEnumeration),
-      admin_user_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._adminUserList),
-      audit_destination_arn: cdktf.stringToTerraform(this._auditDestinationArn),
-      authentication: cdktf.stringToTerraform(this._authentication),
-      bucket_region: cdktf.stringToTerraform(this._bucketRegion),
-      case_sensitivity: cdktf.stringToTerraform(this._caseSensitivity),
-      default_storage_class: cdktf.stringToTerraform(this._defaultStorageClass),
-      file_share_name: cdktf.stringToTerraform(this._fileShareName),
-      gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
-      guess_mime_type_enabled: cdktf.booleanToTerraform(this._guessMimeTypeEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      invalid_user_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._invalidUserList),
-      kms_encrypted: cdktf.booleanToTerraform(this._kmsEncrypted),
-      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
-      location_arn: cdktf.stringToTerraform(this._locationArn),
-      notification_policy: cdktf.stringToTerraform(this._notificationPolicy),
-      object_acl: cdktf.stringToTerraform(this._objectAcl),
-      oplocks_enabled: cdktf.booleanToTerraform(this._oplocksEnabled),
-      read_only: cdktf.booleanToTerraform(this._readOnly),
-      region: cdktf.stringToTerraform(this._region),
-      requester_pays: cdktf.booleanToTerraform(this._requesterPays),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      smb_acl_enabled: cdktf.booleanToTerraform(this._smbAclEnabled),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      valid_user_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._validUserList),
-      vpc_endpoint_dns_name: cdktf.stringToTerraform(this._vpcEndpointDnsName),
+      access_based_enumeration: cdktn.booleanToTerraform(this._accessBasedEnumeration),
+      admin_user_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._adminUserList),
+      audit_destination_arn: cdktn.stringToTerraform(this._auditDestinationArn),
+      authentication: cdktn.stringToTerraform(this._authentication),
+      bucket_region: cdktn.stringToTerraform(this._bucketRegion),
+      case_sensitivity: cdktn.stringToTerraform(this._caseSensitivity),
+      default_storage_class: cdktn.stringToTerraform(this._defaultStorageClass),
+      file_share_name: cdktn.stringToTerraform(this._fileShareName),
+      gateway_arn: cdktn.stringToTerraform(this._gatewayArn),
+      guess_mime_type_enabled: cdktn.booleanToTerraform(this._guessMimeTypeEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      invalid_user_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._invalidUserList),
+      kms_encrypted: cdktn.booleanToTerraform(this._kmsEncrypted),
+      kms_key_arn: cdktn.stringToTerraform(this._kmsKeyArn),
+      location_arn: cdktn.stringToTerraform(this._locationArn),
+      notification_policy: cdktn.stringToTerraform(this._notificationPolicy),
+      object_acl: cdktn.stringToTerraform(this._objectAcl),
+      oplocks_enabled: cdktn.booleanToTerraform(this._oplocksEnabled),
+      read_only: cdktn.booleanToTerraform(this._readOnly),
+      region: cdktn.stringToTerraform(this._region),
+      requester_pays: cdktn.booleanToTerraform(this._requesterPays),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      smb_acl_enabled: cdktn.booleanToTerraform(this._smbAclEnabled),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      valid_user_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._validUserList),
+      vpc_endpoint_dns_name: cdktn.stringToTerraform(this._vpcEndpointDnsName),
       cache_attributes: storagegatewaySmbFileShareCacheAttributesToTerraform(this._cacheAttributes.internalValue),
       timeouts: storagegatewaySmbFileShareTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -980,163 +980,163 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_based_enumeration: {
-        value: cdktf.booleanToHclTerraform(this._accessBasedEnumeration),
+        value: cdktn.booleanToHclTerraform(this._accessBasedEnumeration),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       admin_user_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._adminUserList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._adminUserList),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       audit_destination_arn: {
-        value: cdktf.stringToHclTerraform(this._auditDestinationArn),
+        value: cdktn.stringToHclTerraform(this._auditDestinationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authentication: {
-        value: cdktf.stringToHclTerraform(this._authentication),
+        value: cdktn.stringToHclTerraform(this._authentication),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bucket_region: {
-        value: cdktf.stringToHclTerraform(this._bucketRegion),
+        value: cdktn.stringToHclTerraform(this._bucketRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       case_sensitivity: {
-        value: cdktf.stringToHclTerraform(this._caseSensitivity),
+        value: cdktn.stringToHclTerraform(this._caseSensitivity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_storage_class: {
-        value: cdktf.stringToHclTerraform(this._defaultStorageClass),
+        value: cdktn.stringToHclTerraform(this._defaultStorageClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file_share_name: {
-        value: cdktf.stringToHclTerraform(this._fileShareName),
+        value: cdktn.stringToHclTerraform(this._fileShareName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_arn: {
-        value: cdktf.stringToHclTerraform(this._gatewayArn),
+        value: cdktn.stringToHclTerraform(this._gatewayArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       guess_mime_type_enabled: {
-        value: cdktf.booleanToHclTerraform(this._guessMimeTypeEnabled),
+        value: cdktn.booleanToHclTerraform(this._guessMimeTypeEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       invalid_user_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._invalidUserList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._invalidUserList),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       kms_encrypted: {
-        value: cdktf.booleanToHclTerraform(this._kmsEncrypted),
+        value: cdktn.booleanToHclTerraform(this._kmsEncrypted),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       kms_key_arn: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyArn),
+        value: cdktn.stringToHclTerraform(this._kmsKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location_arn: {
-        value: cdktf.stringToHclTerraform(this._locationArn),
+        value: cdktn.stringToHclTerraform(this._locationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_policy: {
-        value: cdktf.stringToHclTerraform(this._notificationPolicy),
+        value: cdktn.stringToHclTerraform(this._notificationPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_acl: {
-        value: cdktf.stringToHclTerraform(this._objectAcl),
+        value: cdktn.stringToHclTerraform(this._objectAcl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oplocks_enabled: {
-        value: cdktf.booleanToHclTerraform(this._oplocksEnabled),
+        value: cdktn.booleanToHclTerraform(this._oplocksEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       read_only: {
-        value: cdktf.booleanToHclTerraform(this._readOnly),
+        value: cdktn.booleanToHclTerraform(this._readOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       requester_pays: {
-        value: cdktf.booleanToHclTerraform(this._requesterPays),
+        value: cdktn.booleanToHclTerraform(this._requesterPays),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       smb_acl_enabled: {
-        value: cdktf.booleanToHclTerraform(this._smbAclEnabled),
+        value: cdktn.booleanToHclTerraform(this._smbAclEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       valid_user_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._validUserList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._validUserList),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       vpc_endpoint_dns_name: {
-        value: cdktf.stringToHclTerraform(this._vpcEndpointDnsName),
+        value: cdktn.stringToHclTerraform(this._vpcEndpointDnsName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

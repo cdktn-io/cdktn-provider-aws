@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppfabricAppAuthorizationConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface AppfabricAppAuthorizationConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_app_authorization_connection#app_authorization_arn AppfabricAppAuthorizationConnection#app_authorization_arn}
   */
@@ -31,7 +31,7 @@ export interface AppfabricAppAuthorizationConnectionConfig extends cdktf.Terrafo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_app_authorization_connection#auth_request AppfabricAppAuthorizationConnection#auth_request}
   */
-  readonly authRequest?: AppfabricAppAuthorizationConnectionAuthRequest[] | cdktf.IResolvable;
+  readonly authRequest?: AppfabricAppAuthorizationConnectionAuthRequest[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -43,8 +43,8 @@ export interface AppfabricAppAuthorizationConnectionTenant {
 }
 
 export function appfabricAppAuthorizationConnectionTenantToTerraform(struct?: AppfabricAppAuthorizationConnectionTenant): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -53,8 +53,8 @@ export function appfabricAppAuthorizationConnectionTenantToTerraform(struct?: Ap
 
 
 export function appfabricAppAuthorizationConnectionTenantToHclTerraform(struct?: AppfabricAppAuthorizationConnectionTenant): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -62,7 +62,7 @@ export function appfabricAppAuthorizationConnectionTenantToHclTerraform(struct?:
   return attrs;
 }
 
-export class AppfabricAppAuthorizationConnectionTenantOutputReference extends cdktf.ComplexObject {
+export class AppfabricAppAuthorizationConnectionTenantOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -71,7 +71,7 @@ export class AppfabricAppAuthorizationConnectionTenantOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -101,14 +101,14 @@ export class AppfabricAppAuthorizationConnectionTenantOutputReference extends cd
   }
 }
 
-export class AppfabricAppAuthorizationConnectionTenantList extends cdktf.ComplexList {
+export class AppfabricAppAuthorizationConnectionTenantList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -130,32 +130,32 @@ export interface AppfabricAppAuthorizationConnectionAuthRequest {
   readonly redirectUri: string;
 }
 
-export function appfabricAppAuthorizationConnectionAuthRequestToTerraform(struct?: AppfabricAppAuthorizationConnectionAuthRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricAppAuthorizationConnectionAuthRequestToTerraform(struct?: AppfabricAppAuthorizationConnectionAuthRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    code: cdktf.stringToTerraform(struct!.code),
-    redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
+    code: cdktn.stringToTerraform(struct!.code),
+    redirect_uri: cdktn.stringToTerraform(struct!.redirectUri),
   }
 }
 
 
-export function appfabricAppAuthorizationConnectionAuthRequestToHclTerraform(struct?: AppfabricAppAuthorizationConnectionAuthRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricAppAuthorizationConnectionAuthRequestToHclTerraform(struct?: AppfabricAppAuthorizationConnectionAuthRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     code: {
-      value: cdktf.stringToHclTerraform(struct!.code),
+      value: cdktn.stringToHclTerraform(struct!.code),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_uri: {
-      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      value: cdktn.stringToHclTerraform(struct!.redirectUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -166,9 +166,9 @@ export function appfabricAppAuthorizationConnectionAuthRequestToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppfabricAppAuthorizationConnectionAuthRequestOutputReference extends cdktf.ComplexObject {
+export class AppfabricAppAuthorizationConnectionAuthRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -176,11 +176,11 @@ export class AppfabricAppAuthorizationConnectionAuthRequestOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppfabricAppAuthorizationConnectionAuthRequest | cdktf.IResolvable | undefined {
+  public get internalValue(): AppfabricAppAuthorizationConnectionAuthRequest | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -197,14 +197,14 @@ export class AppfabricAppAuthorizationConnectionAuthRequestOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppfabricAppAuthorizationConnectionAuthRequest | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppfabricAppAuthorizationConnectionAuthRequest | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._code = undefined;
       this._redirectUri = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -243,15 +243,15 @@ export class AppfabricAppAuthorizationConnectionAuthRequestOutputReference exten
   }
 }
 
-export class AppfabricAppAuthorizationConnectionAuthRequestList extends cdktf.ComplexList {
-  public internalValue? : AppfabricAppAuthorizationConnectionAuthRequest[] | cdktf.IResolvable
+export class AppfabricAppAuthorizationConnectionAuthRequestList extends cdktn.ComplexList {
+  public internalValue? : AppfabricAppAuthorizationConnectionAuthRequest[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -271,25 +271,25 @@ export interface AppfabricAppAuthorizationConnectionTimeouts {
   readonly create?: string;
 }
 
-export function appfabricAppAuthorizationConnectionTimeoutsToTerraform(struct?: AppfabricAppAuthorizationConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricAppAuthorizationConnectionTimeoutsToTerraform(struct?: AppfabricAppAuthorizationConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function appfabricAppAuthorizationConnectionTimeoutsToHclTerraform(struct?: AppfabricAppAuthorizationConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricAppAuthorizationConnectionTimeoutsToHclTerraform(struct?: AppfabricAppAuthorizationConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -300,19 +300,19 @@ export function appfabricAppAuthorizationConnectionTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppfabricAppAuthorizationConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AppfabricAppAuthorizationConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppfabricAppAuthorizationConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AppfabricAppAuthorizationConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -325,13 +325,13 @@ export class AppfabricAppAuthorizationConnectionTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppfabricAppAuthorizationConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppfabricAppAuthorizationConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -362,7 +362,7 @@ export class AppfabricAppAuthorizationConnectionTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_app_authorization_connection aws_appfabric_app_authorization_connection}
 */
-export class AppfabricAppAuthorizationConnection extends cdktf.TerraformResource {
+export class AppfabricAppAuthorizationConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -373,14 +373,14 @@ export class AppfabricAppAuthorizationConnection extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppfabricAppAuthorizationConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppfabricAppAuthorizationConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppfabricAppAuthorizationConnection to import
   * @param importFromId The id of the existing AppfabricAppAuthorizationConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_app_authorization_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppfabricAppAuthorizationConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appfabric_app_authorization_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appfabric_app_authorization_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -484,7 +484,7 @@ export class AppfabricAppAuthorizationConnection extends cdktf.TerraformResource
   public get authRequest() {
     return this._authRequest;
   }
-  public putAuthRequest(value: AppfabricAppAuthorizationConnectionAuthRequest[] | cdktf.IResolvable) {
+  public putAuthRequest(value: AppfabricAppAuthorizationConnectionAuthRequest[] | cdktn.IResolvable) {
     this._authRequest.internalValue = value;
   }
   public resetAuthRequest() {
@@ -517,10 +517,10 @@ export class AppfabricAppAuthorizationConnection extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_authorization_arn: cdktf.stringToTerraform(this._appAuthorizationArn),
-      app_bundle_arn: cdktf.stringToTerraform(this._appBundleArn),
-      region: cdktf.stringToTerraform(this._region),
-      auth_request: cdktf.listMapper(appfabricAppAuthorizationConnectionAuthRequestToTerraform, true)(this._authRequest.internalValue),
+      app_authorization_arn: cdktn.stringToTerraform(this._appAuthorizationArn),
+      app_bundle_arn: cdktn.stringToTerraform(this._appBundleArn),
+      region: cdktn.stringToTerraform(this._region),
+      auth_request: cdktn.listMapper(appfabricAppAuthorizationConnectionAuthRequestToTerraform, true)(this._authRequest.internalValue),
       timeouts: appfabricAppAuthorizationConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -528,25 +528,25 @@ export class AppfabricAppAuthorizationConnection extends cdktf.TerraformResource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_authorization_arn: {
-        value: cdktf.stringToHclTerraform(this._appAuthorizationArn),
+        value: cdktn.stringToHclTerraform(this._appAuthorizationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       app_bundle_arn: {
-        value: cdktf.stringToHclTerraform(this._appBundleArn),
+        value: cdktn.stringToHclTerraform(this._appBundleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auth_request: {
-        value: cdktf.listMapperHcl(appfabricAppAuthorizationConnectionAuthRequestToHclTerraform, true)(this._authRequest.internalValue),
+        value: cdktn.listMapperHcl(appfabricAppAuthorizationConnectionAuthRequestToHclTerraform, true)(this._authRequest.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppfabricAppAuthorizationConnectionAuthRequestList",

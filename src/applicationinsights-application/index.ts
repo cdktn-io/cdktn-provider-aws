@@ -7,23 +7,23 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApplicationinsightsApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface ApplicationinsightsApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/applicationinsights_application#auto_config_enabled ApplicationinsightsApplication#auto_config_enabled}
   */
-  readonly autoConfigEnabled?: boolean | cdktf.IResolvable;
+  readonly autoConfigEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/applicationinsights_application#auto_create ApplicationinsightsApplication#auto_create}
   */
-  readonly autoCreate?: boolean | cdktf.IResolvable;
+  readonly autoCreate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/applicationinsights_application#cwe_monitor_enabled ApplicationinsightsApplication#cwe_monitor_enabled}
   */
-  readonly cweMonitorEnabled?: boolean | cdktf.IResolvable;
+  readonly cweMonitorEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/applicationinsights_application#grouping_type ApplicationinsightsApplication#grouping_type}
   */
@@ -38,7 +38,7 @@ export interface ApplicationinsightsApplicationConfig extends cdktf.TerraformMet
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/applicationinsights_application#ops_center_enabled ApplicationinsightsApplication#ops_center_enabled}
   */
-  readonly opsCenterEnabled?: boolean | cdktf.IResolvable;
+  readonly opsCenterEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/applicationinsights_application#ops_item_sns_topic_arn ApplicationinsightsApplication#ops_item_sns_topic_arn}
   */
@@ -66,7 +66,7 @@ export interface ApplicationinsightsApplicationConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/applicationinsights_application aws_applicationinsights_application}
 */
-export class ApplicationinsightsApplication extends cdktf.TerraformResource {
+export class ApplicationinsightsApplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class ApplicationinsightsApplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApplicationinsightsApplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApplicationinsightsApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationinsightsApplication to import
   * @param importFromId The id of the existing ApplicationinsightsApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/applicationinsights_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationinsightsApplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_applicationinsights_application", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_applicationinsights_application", importId: importFromId, provider });
       }
 
   // ===========
@@ -137,11 +137,11 @@ export class ApplicationinsightsApplication extends cdktf.TerraformResource {
   }
 
   // auto_config_enabled - computed: false, optional: true, required: false
-  private _autoConfigEnabled?: boolean | cdktf.IResolvable; 
+  private _autoConfigEnabled?: boolean | cdktn.IResolvable; 
   public get autoConfigEnabled() {
     return this.getBooleanAttribute('auto_config_enabled');
   }
-  public set autoConfigEnabled(value: boolean | cdktf.IResolvable) {
+  public set autoConfigEnabled(value: boolean | cdktn.IResolvable) {
     this._autoConfigEnabled = value;
   }
   public resetAutoConfigEnabled() {
@@ -153,11 +153,11 @@ export class ApplicationinsightsApplication extends cdktf.TerraformResource {
   }
 
   // auto_create - computed: false, optional: true, required: false
-  private _autoCreate?: boolean | cdktf.IResolvable; 
+  private _autoCreate?: boolean | cdktn.IResolvable; 
   public get autoCreate() {
     return this.getBooleanAttribute('auto_create');
   }
-  public set autoCreate(value: boolean | cdktf.IResolvable) {
+  public set autoCreate(value: boolean | cdktn.IResolvable) {
     this._autoCreate = value;
   }
   public resetAutoCreate() {
@@ -169,11 +169,11 @@ export class ApplicationinsightsApplication extends cdktf.TerraformResource {
   }
 
   // cwe_monitor_enabled - computed: false, optional: true, required: false
-  private _cweMonitorEnabled?: boolean | cdktf.IResolvable; 
+  private _cweMonitorEnabled?: boolean | cdktn.IResolvable; 
   public get cweMonitorEnabled() {
     return this.getBooleanAttribute('cwe_monitor_enabled');
   }
-  public set cweMonitorEnabled(value: boolean | cdktf.IResolvable) {
+  public set cweMonitorEnabled(value: boolean | cdktn.IResolvable) {
     this._cweMonitorEnabled = value;
   }
   public resetCweMonitorEnabled() {
@@ -217,11 +217,11 @@ export class ApplicationinsightsApplication extends cdktf.TerraformResource {
   }
 
   // ops_center_enabled - computed: false, optional: true, required: false
-  private _opsCenterEnabled?: boolean | cdktf.IResolvable; 
+  private _opsCenterEnabled?: boolean | cdktn.IResolvable; 
   public get opsCenterEnabled() {
     return this.getBooleanAttribute('ops_center_enabled');
   }
-  public set opsCenterEnabled(value: boolean | cdktf.IResolvable) {
+  public set opsCenterEnabled(value: boolean | cdktn.IResolvable) {
     this._opsCenterEnabled = value;
   }
   public resetOpsCenterEnabled() {
@@ -315,84 +315,84 @@ export class ApplicationinsightsApplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_config_enabled: cdktf.booleanToTerraform(this._autoConfigEnabled),
-      auto_create: cdktf.booleanToTerraform(this._autoCreate),
-      cwe_monitor_enabled: cdktf.booleanToTerraform(this._cweMonitorEnabled),
-      grouping_type: cdktf.stringToTerraform(this._groupingType),
-      id: cdktf.stringToTerraform(this._id),
-      ops_center_enabled: cdktf.booleanToTerraform(this._opsCenterEnabled),
-      ops_item_sns_topic_arn: cdktf.stringToTerraform(this._opsItemSnsTopicArn),
-      region: cdktf.stringToTerraform(this._region),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      auto_config_enabled: cdktn.booleanToTerraform(this._autoConfigEnabled),
+      auto_create: cdktn.booleanToTerraform(this._autoCreate),
+      cwe_monitor_enabled: cdktn.booleanToTerraform(this._cweMonitorEnabled),
+      grouping_type: cdktn.stringToTerraform(this._groupingType),
+      id: cdktn.stringToTerraform(this._id),
+      ops_center_enabled: cdktn.booleanToTerraform(this._opsCenterEnabled),
+      ops_item_sns_topic_arn: cdktn.stringToTerraform(this._opsItemSnsTopicArn),
+      region: cdktn.stringToTerraform(this._region),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_config_enabled: {
-        value: cdktf.booleanToHclTerraform(this._autoConfigEnabled),
+        value: cdktn.booleanToHclTerraform(this._autoConfigEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auto_create: {
-        value: cdktf.booleanToHclTerraform(this._autoCreate),
+        value: cdktn.booleanToHclTerraform(this._autoCreate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cwe_monitor_enabled: {
-        value: cdktf.booleanToHclTerraform(this._cweMonitorEnabled),
+        value: cdktn.booleanToHclTerraform(this._cweMonitorEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       grouping_type: {
-        value: cdktf.stringToHclTerraform(this._groupingType),
+        value: cdktn.stringToHclTerraform(this._groupingType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ops_center_enabled: {
-        value: cdktf.booleanToHclTerraform(this._opsCenterEnabled),
+        value: cdktn.booleanToHclTerraform(this._opsCenterEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ops_item_sns_topic_arn: {
-        value: cdktf.stringToHclTerraform(this._opsItemSnsTopicArn),
+        value: cdktn.stringToHclTerraform(this._opsItemSnsTopicArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

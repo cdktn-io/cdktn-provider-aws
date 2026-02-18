@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudfrontTrustStoreConfig extends cdktf.TerraformMetaArguments {
+export interface CloudfrontTrustStoreConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_trust_store#name CloudfrontTrustStore#name}
   */
@@ -25,7 +25,7 @@ export interface CloudfrontTrustStoreConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_trust_store#ca_certificates_bundle_source CloudfrontTrustStore#ca_certificates_bundle_source}
   */
-  readonly caCertificatesBundleSource?: CloudfrontTrustStoreCaCertificatesBundleSource[] | cdktf.IResolvable;
+  readonly caCertificatesBundleSource?: CloudfrontTrustStoreCaCertificatesBundleSource[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -52,46 +52,46 @@ export interface CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBun
   readonly version?: string;
 }
 
-export function cloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationToTerraform(struct?: CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationToTerraform(struct?: CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    key: cdktf.stringToTerraform(struct!.key),
-    region: cdktf.stringToTerraform(struct!.region),
-    version: cdktf.stringToTerraform(struct!.version),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    key: cdktn.stringToTerraform(struct!.key),
+    region: cdktn.stringToTerraform(struct!.region),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
-export function cloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationToHclTerraform(struct?: CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationToHclTerraform(struct?: CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -102,9 +102,9 @@ export function cloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBund
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationOutputReference extends cdktf.ComplexObject {
+export class CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -112,11 +112,11 @@ export class CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -141,7 +141,7 @@ export class CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -150,7 +150,7 @@ export class CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS
       this._region = undefined;
       this._version = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -220,15 +220,15 @@ export class CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS
   }
 }
 
-export class CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationList extends cdktf.ComplexList {
-  public internalValue? : CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location[] | cdktf.IResolvable
+export class CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationList extends cdktn.ComplexList {
+  public internalValue? : CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -245,28 +245,28 @@ export interface CloudfrontTrustStoreCaCertificatesBundleSource {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_trust_store#ca_certificates_bundle_s3_location CloudfrontTrustStore#ca_certificates_bundle_s3_location}
   */
-  readonly caCertificatesBundleS3Location?: CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location[] | cdktf.IResolvable;
+  readonly caCertificatesBundleS3Location?: CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location[] | cdktn.IResolvable;
 }
 
-export function cloudfrontTrustStoreCaCertificatesBundleSourceToTerraform(struct?: CloudfrontTrustStoreCaCertificatesBundleSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontTrustStoreCaCertificatesBundleSourceToTerraform(struct?: CloudfrontTrustStoreCaCertificatesBundleSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ca_certificates_bundle_s3_location: cdktf.listMapper(cloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationToTerraform, true)(struct!.caCertificatesBundleS3Location),
+    ca_certificates_bundle_s3_location: cdktn.listMapper(cloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationToTerraform, true)(struct!.caCertificatesBundleS3Location),
   }
 }
 
 
-export function cloudfrontTrustStoreCaCertificatesBundleSourceToHclTerraform(struct?: CloudfrontTrustStoreCaCertificatesBundleSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontTrustStoreCaCertificatesBundleSourceToHclTerraform(struct?: CloudfrontTrustStoreCaCertificatesBundleSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ca_certificates_bundle_s3_location: {
-      value: cdktf.listMapperHcl(cloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationToHclTerraform, true)(struct!.caCertificatesBundleS3Location),
+      value: cdktn.listMapperHcl(cloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationToHclTerraform, true)(struct!.caCertificatesBundleS3Location),
       isBlock: true,
       type: "list",
       storageClassType: "CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationList",
@@ -277,9 +277,9 @@ export function cloudfrontTrustStoreCaCertificatesBundleSourceToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudfrontTrustStoreCaCertificatesBundleSourceOutputReference extends cdktf.ComplexObject {
+export class CloudfrontTrustStoreCaCertificatesBundleSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -287,11 +287,11 @@ export class CloudfrontTrustStoreCaCertificatesBundleSourceOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudfrontTrustStoreCaCertificatesBundleSource | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudfrontTrustStoreCaCertificatesBundleSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -304,13 +304,13 @@ export class CloudfrontTrustStoreCaCertificatesBundleSourceOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudfrontTrustStoreCaCertificatesBundleSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudfrontTrustStoreCaCertificatesBundleSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._caCertificatesBundleS3Location.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -326,7 +326,7 @@ export class CloudfrontTrustStoreCaCertificatesBundleSourceOutputReference exten
   public get caCertificatesBundleS3Location() {
     return this._caCertificatesBundleS3Location;
   }
-  public putCaCertificatesBundleS3Location(value: CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location[] | cdktf.IResolvable) {
+  public putCaCertificatesBundleS3Location(value: CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location[] | cdktn.IResolvable) {
     this._caCertificatesBundleS3Location.internalValue = value;
   }
   public resetCaCertificatesBundleS3Location() {
@@ -338,15 +338,15 @@ export class CloudfrontTrustStoreCaCertificatesBundleSourceOutputReference exten
   }
 }
 
-export class CloudfrontTrustStoreCaCertificatesBundleSourceList extends cdktf.ComplexList {
-  public internalValue? : CloudfrontTrustStoreCaCertificatesBundleSource[] | cdktf.IResolvable
+export class CloudfrontTrustStoreCaCertificatesBundleSourceList extends cdktn.ComplexList {
+  public internalValue? : CloudfrontTrustStoreCaCertificatesBundleSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -378,39 +378,39 @@ export interface CloudfrontTrustStoreTimeouts {
   readonly update?: string;
 }
 
-export function cloudfrontTrustStoreTimeoutsToTerraform(struct?: CloudfrontTrustStoreTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontTrustStoreTimeoutsToTerraform(struct?: CloudfrontTrustStoreTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cloudfrontTrustStoreTimeoutsToHclTerraform(struct?: CloudfrontTrustStoreTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontTrustStoreTimeoutsToHclTerraform(struct?: CloudfrontTrustStoreTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -421,19 +421,19 @@ export function cloudfrontTrustStoreTimeoutsToHclTerraform(struct?: CloudfrontTr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudfrontTrustStoreTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CloudfrontTrustStoreTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CloudfrontTrustStoreTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudfrontTrustStoreTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -454,7 +454,7 @@ export class CloudfrontTrustStoreTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudfrontTrustStoreTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudfrontTrustStoreTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -462,7 +462,7 @@ export class CloudfrontTrustStoreTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -527,7 +527,7 @@ export class CloudfrontTrustStoreTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_trust_store aws_cloudfront_trust_store}
 */
-export class CloudfrontTrustStore extends cdktf.TerraformResource {
+export class CloudfrontTrustStore extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -538,14 +538,14 @@ export class CloudfrontTrustStore extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudfrontTrustStore resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudfrontTrustStore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudfrontTrustStore to import
   * @param importFromId The id of the existing CloudfrontTrustStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_trust_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudfrontTrustStore to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_trust_store", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_trust_store", importId: importFromId, provider });
       }
 
   // ===========
@@ -635,7 +635,7 @@ export class CloudfrontTrustStore extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -645,7 +645,7 @@ export class CloudfrontTrustStore extends cdktf.TerraformResource {
   public get caCertificatesBundleSource() {
     return this._caCertificatesBundleSource;
   }
-  public putCaCertificatesBundleSource(value: CloudfrontTrustStoreCaCertificatesBundleSource[] | cdktf.IResolvable) {
+  public putCaCertificatesBundleSource(value: CloudfrontTrustStoreCaCertificatesBundleSource[] | cdktn.IResolvable) {
     this._caCertificatesBundleSource.internalValue = value;
   }
   public resetCaCertificatesBundleSource() {
@@ -678,9 +678,9 @@ export class CloudfrontTrustStore extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      ca_certificates_bundle_source: cdktf.listMapper(cloudfrontTrustStoreCaCertificatesBundleSourceToTerraform, true)(this._caCertificatesBundleSource.internalValue),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      ca_certificates_bundle_source: cdktn.listMapper(cloudfrontTrustStoreCaCertificatesBundleSourceToTerraform, true)(this._caCertificatesBundleSource.internalValue),
       timeouts: cloudfrontTrustStoreTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -688,19 +688,19 @@ export class CloudfrontTrustStore extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       ca_certificates_bundle_source: {
-        value: cdktf.listMapperHcl(cloudfrontTrustStoreCaCertificatesBundleSourceToHclTerraform, true)(this._caCertificatesBundleSource.internalValue),
+        value: cdktn.listMapperHcl(cloudfrontTrustStoreCaCertificatesBundleSourceToHclTerraform, true)(this._caCertificatesBundleSource.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CloudfrontTrustStoreCaCertificatesBundleSourceList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface InvoicingInvoiceUnitConfig extends cdktf.TerraformMetaArguments {
+export interface InvoicingInvoiceUnitConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/invoicing_invoice_unit#description InvoicingInvoiceUnit#description}
   */
@@ -37,13 +37,13 @@ export interface InvoicingInvoiceUnitConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/invoicing_invoice_unit#tax_inheritance_disabled InvoicingInvoiceUnit#tax_inheritance_disabled}
   */
-  readonly taxInheritanceDisabled?: boolean | cdktf.IResolvable;
+  readonly taxInheritanceDisabled?: boolean | cdktn.IResolvable;
   /**
   * rule block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/invoicing_invoice_unit#rule InvoicingInvoiceUnit#rule}
   */
-  readonly rule?: InvoicingInvoiceUnitRule[] | cdktf.IResolvable;
+  readonly rule?: InvoicingInvoiceUnitRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -58,25 +58,25 @@ export interface InvoicingInvoiceUnitRule {
   readonly linkedAccounts: string[];
 }
 
-export function invoicingInvoiceUnitRuleToTerraform(struct?: InvoicingInvoiceUnitRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function invoicingInvoiceUnitRuleToTerraform(struct?: InvoicingInvoiceUnitRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    linked_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.linkedAccounts),
+    linked_accounts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.linkedAccounts),
   }
 }
 
 
-export function invoicingInvoiceUnitRuleToHclTerraform(struct?: InvoicingInvoiceUnitRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function invoicingInvoiceUnitRuleToHclTerraform(struct?: InvoicingInvoiceUnitRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     linked_accounts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.linkedAccounts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.linkedAccounts),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -87,9 +87,9 @@ export function invoicingInvoiceUnitRuleToHclTerraform(struct?: InvoicingInvoice
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InvoicingInvoiceUnitRuleOutputReference extends cdktf.ComplexObject {
+export class InvoicingInvoiceUnitRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -97,11 +97,11 @@ export class InvoicingInvoiceUnitRuleOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): InvoicingInvoiceUnitRule | cdktf.IResolvable | undefined {
+  public get internalValue(): InvoicingInvoiceUnitRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -114,13 +114,13 @@ export class InvoicingInvoiceUnitRuleOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: InvoicingInvoiceUnitRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: InvoicingInvoiceUnitRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._linkedAccounts = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -134,7 +134,7 @@ export class InvoicingInvoiceUnitRuleOutputReference extends cdktf.ComplexObject
   // linked_accounts - computed: false, optional: false, required: true
   private _linkedAccounts?: string[]; 
   public get linkedAccounts() {
-    return cdktf.Fn.tolist(this.getListAttribute('linked_accounts'));
+    return cdktn.Fn.tolist(this.getListAttribute('linked_accounts'));
   }
   public set linkedAccounts(value: string[]) {
     this._linkedAccounts = value;
@@ -145,15 +145,15 @@ export class InvoicingInvoiceUnitRuleOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class InvoicingInvoiceUnitRuleList extends cdktf.ComplexList {
-  public internalValue? : InvoicingInvoiceUnitRule[] | cdktf.IResolvable
+export class InvoicingInvoiceUnitRuleList extends cdktn.ComplexList {
+  public internalValue? : InvoicingInvoiceUnitRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -185,39 +185,39 @@ export interface InvoicingInvoiceUnitTimeouts {
   readonly update?: string;
 }
 
-export function invoicingInvoiceUnitTimeoutsToTerraform(struct?: InvoicingInvoiceUnitTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function invoicingInvoiceUnitTimeoutsToTerraform(struct?: InvoicingInvoiceUnitTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function invoicingInvoiceUnitTimeoutsToHclTerraform(struct?: InvoicingInvoiceUnitTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function invoicingInvoiceUnitTimeoutsToHclTerraform(struct?: InvoicingInvoiceUnitTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -228,19 +228,19 @@ export function invoicingInvoiceUnitTimeoutsToHclTerraform(struct?: InvoicingInv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InvoicingInvoiceUnitTimeoutsOutputReference extends cdktf.ComplexObject {
+export class InvoicingInvoiceUnitTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): InvoicingInvoiceUnitTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): InvoicingInvoiceUnitTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -261,7 +261,7 @@ export class InvoicingInvoiceUnitTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: InvoicingInvoiceUnitTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: InvoicingInvoiceUnitTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -269,7 +269,7 @@ export class InvoicingInvoiceUnitTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -334,7 +334,7 @@ export class InvoicingInvoiceUnitTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/invoicing_invoice_unit aws_invoicing_invoice_unit}
 */
-export class InvoicingInvoiceUnit extends cdktf.TerraformResource {
+export class InvoicingInvoiceUnit extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -345,14 +345,14 @@ export class InvoicingInvoiceUnit extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a InvoicingInvoiceUnit resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a InvoicingInvoiceUnit resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the InvoicingInvoiceUnit to import
   * @param importFromId The id of the existing InvoicingInvoiceUnit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/invoicing_invoice_unit#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the InvoicingInvoiceUnit to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_invoicing_invoice_unit", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_invoicing_invoice_unit", importId: importFromId, provider });
       }
 
   // ===========
@@ -481,17 +481,17 @@ export class InvoicingInvoiceUnit extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
 
   // tax_inheritance_disabled - computed: true, optional: true, required: false
-  private _taxInheritanceDisabled?: boolean | cdktf.IResolvable; 
+  private _taxInheritanceDisabled?: boolean | cdktn.IResolvable; 
   public get taxInheritanceDisabled() {
     return this.getBooleanAttribute('tax_inheritance_disabled');
   }
-  public set taxInheritanceDisabled(value: boolean | cdktf.IResolvable) {
+  public set taxInheritanceDisabled(value: boolean | cdktn.IResolvable) {
     this._taxInheritanceDisabled = value;
   }
   public resetTaxInheritanceDisabled() {
@@ -507,7 +507,7 @@ export class InvoicingInvoiceUnit extends cdktf.TerraformResource {
   public get rule() {
     return this._rule;
   }
-  public putRule(value: InvoicingInvoiceUnitRule[] | cdktf.IResolvable) {
+  public putRule(value: InvoicingInvoiceUnitRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -540,13 +540,13 @@ export class InvoicingInvoiceUnit extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      invoice_receiver: cdktf.stringToTerraform(this._invoiceReceiver),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tax_inheritance_disabled: cdktf.booleanToTerraform(this._taxInheritanceDisabled),
-      rule: cdktf.listMapper(invoicingInvoiceUnitRuleToTerraform, true)(this._rule.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      invoice_receiver: cdktn.stringToTerraform(this._invoiceReceiver),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tax_inheritance_disabled: cdktn.booleanToTerraform(this._taxInheritanceDisabled),
+      rule: cdktn.listMapper(invoicingInvoiceUnitRuleToTerraform, true)(this._rule.internalValue),
       timeouts: invoicingInvoiceUnitTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -554,43 +554,43 @@ export class InvoicingInvoiceUnit extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       invoice_receiver: {
-        value: cdktf.stringToHclTerraform(this._invoiceReceiver),
+        value: cdktn.stringToHclTerraform(this._invoiceReceiver),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tax_inheritance_disabled: {
-        value: cdktf.booleanToHclTerraform(this._taxInheritanceDisabled),
+        value: cdktn.booleanToHclTerraform(this._taxInheritanceDisabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       rule: {
-        value: cdktf.listMapperHcl(invoicingInvoiceUnitRuleToHclTerraform, true)(this._rule.internalValue),
+        value: cdktn.listMapperHcl(invoicingInvoiceUnitRuleToHclTerraform, true)(this._rule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "InvoicingInvoiceUnitRuleList",

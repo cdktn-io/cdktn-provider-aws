@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SagemakerModelCardExportJobConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerModelCardExportJobConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_model_card_export_job#model_card_export_job_name SagemakerModelCardExportJob#model_card_export_job_name}
   */
@@ -35,7 +35,7 @@ export interface SagemakerModelCardExportJobConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_model_card_export_job#output_config SagemakerModelCardExportJob#output_config}
   */
-  readonly outputConfig?: SagemakerModelCardExportJobOutputConfig[] | cdktf.IResolvable;
+  readonly outputConfig?: SagemakerModelCardExportJobOutputConfig[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -47,8 +47,8 @@ export interface SagemakerModelCardExportJobExportArtifacts {
 }
 
 export function sagemakerModelCardExportJobExportArtifactsToTerraform(struct?: SagemakerModelCardExportJobExportArtifacts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -57,8 +57,8 @@ export function sagemakerModelCardExportJobExportArtifactsToTerraform(struct?: S
 
 
 export function sagemakerModelCardExportJobExportArtifactsToHclTerraform(struct?: SagemakerModelCardExportJobExportArtifacts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -66,7 +66,7 @@ export function sagemakerModelCardExportJobExportArtifactsToHclTerraform(struct?
   return attrs;
 }
 
-export class SagemakerModelCardExportJobExportArtifactsOutputReference extends cdktf.ComplexObject {
+export class SagemakerModelCardExportJobExportArtifactsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -75,7 +75,7 @@ export class SagemakerModelCardExportJobExportArtifactsOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -100,14 +100,14 @@ export class SagemakerModelCardExportJobExportArtifactsOutputReference extends c
   }
 }
 
-export class SagemakerModelCardExportJobExportArtifactsList extends cdktf.ComplexList {
+export class SagemakerModelCardExportJobExportArtifactsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -125,25 +125,25 @@ export interface SagemakerModelCardExportJobOutputConfig {
   readonly s3OutputPath: string;
 }
 
-export function sagemakerModelCardExportJobOutputConfigToTerraform(struct?: SagemakerModelCardExportJobOutputConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerModelCardExportJobOutputConfigToTerraform(struct?: SagemakerModelCardExportJobOutputConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_output_path: cdktf.stringToTerraform(struct!.s3OutputPath),
+    s3_output_path: cdktn.stringToTerraform(struct!.s3OutputPath),
   }
 }
 
 
-export function sagemakerModelCardExportJobOutputConfigToHclTerraform(struct?: SagemakerModelCardExportJobOutputConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerModelCardExportJobOutputConfigToHclTerraform(struct?: SagemakerModelCardExportJobOutputConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_output_path: {
-      value: cdktf.stringToHclTerraform(struct!.s3OutputPath),
+      value: cdktn.stringToHclTerraform(struct!.s3OutputPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -154,9 +154,9 @@ export function sagemakerModelCardExportJobOutputConfigToHclTerraform(struct?: S
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerModelCardExportJobOutputConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerModelCardExportJobOutputConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -164,11 +164,11 @@ export class SagemakerModelCardExportJobOutputConfigOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerModelCardExportJobOutputConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerModelCardExportJobOutputConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -181,13 +181,13 @@ export class SagemakerModelCardExportJobOutputConfigOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerModelCardExportJobOutputConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerModelCardExportJobOutputConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._s3OutputPath = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -212,15 +212,15 @@ export class SagemakerModelCardExportJobOutputConfigOutputReference extends cdkt
   }
 }
 
-export class SagemakerModelCardExportJobOutputConfigList extends cdktf.ComplexList {
-  public internalValue? : SagemakerModelCardExportJobOutputConfig[] | cdktf.IResolvable
+export class SagemakerModelCardExportJobOutputConfigList extends cdktn.ComplexList {
+  public internalValue? : SagemakerModelCardExportJobOutputConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -240,25 +240,25 @@ export interface SagemakerModelCardExportJobTimeouts {
   readonly create?: string;
 }
 
-export function sagemakerModelCardExportJobTimeoutsToTerraform(struct?: SagemakerModelCardExportJobTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerModelCardExportJobTimeoutsToTerraform(struct?: SagemakerModelCardExportJobTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function sagemakerModelCardExportJobTimeoutsToHclTerraform(struct?: SagemakerModelCardExportJobTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerModelCardExportJobTimeoutsToHclTerraform(struct?: SagemakerModelCardExportJobTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -269,19 +269,19 @@ export function sagemakerModelCardExportJobTimeoutsToHclTerraform(struct?: Sagem
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerModelCardExportJobTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SagemakerModelCardExportJobTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SagemakerModelCardExportJobTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerModelCardExportJobTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -294,13 +294,13 @@ export class SagemakerModelCardExportJobTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerModelCardExportJobTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerModelCardExportJobTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -331,7 +331,7 @@ export class SagemakerModelCardExportJobTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_model_card_export_job aws_sagemaker_model_card_export_job}
 */
-export class SagemakerModelCardExportJob extends cdktf.TerraformResource {
+export class SagemakerModelCardExportJob extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -342,14 +342,14 @@ export class SagemakerModelCardExportJob extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SagemakerModelCardExportJob resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SagemakerModelCardExportJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerModelCardExportJob to import
   * @param importFromId The id of the existing SagemakerModelCardExportJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_model_card_export_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerModelCardExportJob to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_model_card_export_job", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_model_card_export_job", importId: importFromId, provider });
       }
 
   // ===========
@@ -465,7 +465,7 @@ export class SagemakerModelCardExportJob extends cdktf.TerraformResource {
   public get outputConfig() {
     return this._outputConfig;
   }
-  public putOutputConfig(value: SagemakerModelCardExportJobOutputConfig[] | cdktf.IResolvable) {
+  public putOutputConfig(value: SagemakerModelCardExportJobOutputConfig[] | cdktn.IResolvable) {
     this._outputConfig.internalValue = value;
   }
   public resetOutputConfig() {
@@ -498,11 +498,11 @@ export class SagemakerModelCardExportJob extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      model_card_export_job_name: cdktf.stringToTerraform(this._modelCardExportJobName),
-      model_card_name: cdktf.stringToTerraform(this._modelCardName),
-      model_card_version: cdktf.numberToTerraform(this._modelCardVersion),
-      region: cdktf.stringToTerraform(this._region),
-      output_config: cdktf.listMapper(sagemakerModelCardExportJobOutputConfigToTerraform, true)(this._outputConfig.internalValue),
+      model_card_export_job_name: cdktn.stringToTerraform(this._modelCardExportJobName),
+      model_card_name: cdktn.stringToTerraform(this._modelCardName),
+      model_card_version: cdktn.numberToTerraform(this._modelCardVersion),
+      region: cdktn.stringToTerraform(this._region),
+      output_config: cdktn.listMapper(sagemakerModelCardExportJobOutputConfigToTerraform, true)(this._outputConfig.internalValue),
       timeouts: sagemakerModelCardExportJobTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -510,31 +510,31 @@ export class SagemakerModelCardExportJob extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       model_card_export_job_name: {
-        value: cdktf.stringToHclTerraform(this._modelCardExportJobName),
+        value: cdktn.stringToHclTerraform(this._modelCardExportJobName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       model_card_name: {
-        value: cdktf.stringToHclTerraform(this._modelCardName),
+        value: cdktn.stringToHclTerraform(this._modelCardName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       model_card_version: {
-        value: cdktf.numberToHclTerraform(this._modelCardVersion),
+        value: cdktn.numberToHclTerraform(this._modelCardVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       output_config: {
-        value: cdktf.listMapperHcl(sagemakerModelCardExportJobOutputConfigToHclTerraform, true)(this._outputConfig.internalValue),
+        value: cdktn.listMapperHcl(sagemakerModelCardExportJobOutputConfigToHclTerraform, true)(this._outputConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SagemakerModelCardExportJobOutputConfigList",

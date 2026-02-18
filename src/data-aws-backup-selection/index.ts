@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsBackupSelectionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsBackupSelectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/backup_selection#id DataAwsBackupSelection#id}
   *
@@ -38,7 +38,7 @@ export interface DataAwsBackupSelectionConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/backup_selection aws_backup_selection}
 */
-export class DataAwsBackupSelection extends cdktf.TerraformDataSource {
+export class DataAwsBackupSelection extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class DataAwsBackupSelection extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsBackupSelection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsBackupSelection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBackupSelection to import
   * @param importFromId The id of the existing DataAwsBackupSelection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/backup_selection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBackupSelection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_selection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_selection", importId: importFromId, provider });
       }
 
   // ===========
@@ -153,7 +153,7 @@ export class DataAwsBackupSelection extends cdktf.TerraformDataSource {
 
   // resources - computed: true, optional: false, required: false
   public get resources() {
-    return cdktf.Fn.tolist(this.getListAttribute('resources'));
+    return cdktn.Fn.tolist(this.getListAttribute('resources'));
   }
 
   // selection_id - computed: false, optional: false, required: true
@@ -175,35 +175,35 @@ export class DataAwsBackupSelection extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      plan_id: cdktf.stringToTerraform(this._planId),
-      region: cdktf.stringToTerraform(this._region),
-      selection_id: cdktf.stringToTerraform(this._selectionId),
+      id: cdktn.stringToTerraform(this._id),
+      plan_id: cdktn.stringToTerraform(this._planId),
+      region: cdktn.stringToTerraform(this._region),
+      selection_id: cdktn.stringToTerraform(this._selectionId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       plan_id: {
-        value: cdktf.stringToHclTerraform(this._planId),
+        value: cdktn.stringToHclTerraform(this._planId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       selection_id: {
-        value: cdktf.stringToHclTerraform(this._selectionId),
+        value: cdktn.stringToHclTerraform(this._selectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

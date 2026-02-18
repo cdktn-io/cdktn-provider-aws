@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CurReportDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface CurReportDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cur_report_definition#additional_artifacts CurReportDefinition#additional_artifacts}
   */
@@ -38,7 +38,7 @@ export interface CurReportDefinitionConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cur_report_definition#refresh_closed_reports CurReportDefinition#refresh_closed_reports}
   */
-  readonly refreshClosedReports?: boolean | cdktf.IResolvable;
+  readonly refreshClosedReports?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cur_report_definition#report_name CurReportDefinition#report_name}
   */
@@ -76,7 +76,7 @@ export interface CurReportDefinitionConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cur_report_definition aws_cur_report_definition}
 */
-export class CurReportDefinition extends cdktf.TerraformResource {
+export class CurReportDefinition extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -87,14 +87,14 @@ export class CurReportDefinition extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CurReportDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CurReportDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CurReportDefinition to import
   * @param importFromId The id of the existing CurReportDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cur_report_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CurReportDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cur_report_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cur_report_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -147,7 +147,7 @@ export class CurReportDefinition extends cdktf.TerraformResource {
   // additional_artifacts - computed: false, optional: true, required: false
   private _additionalArtifacts?: string[]; 
   public get additionalArtifacts() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_artifacts'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_artifacts'));
   }
   public set additionalArtifacts(value: string[]) {
     this._additionalArtifacts = value;
@@ -163,7 +163,7 @@ export class CurReportDefinition extends cdktf.TerraformResource {
   // additional_schema_elements - computed: false, optional: false, required: true
   private _additionalSchemaElements?: string[]; 
   public get additionalSchemaElements() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_schema_elements'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_schema_elements'));
   }
   public set additionalSchemaElements(value: string[]) {
     this._additionalSchemaElements = value;
@@ -221,11 +221,11 @@ export class CurReportDefinition extends cdktf.TerraformResource {
   }
 
   // refresh_closed_reports - computed: false, optional: true, required: false
-  private _refreshClosedReports?: boolean | cdktf.IResolvable; 
+  private _refreshClosedReports?: boolean | cdktn.IResolvable; 
   public get refreshClosedReports() {
     return this.getBooleanAttribute('refresh_closed_reports');
   }
-  public set refreshClosedReports(value: boolean | cdktf.IResolvable) {
+  public set refreshClosedReports(value: boolean | cdktn.IResolvable) {
     this._refreshClosedReports = value;
   }
   public resetRefreshClosedReports() {
@@ -355,105 +355,105 @@ export class CurReportDefinition extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_artifacts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._additionalArtifacts),
-      additional_schema_elements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._additionalSchemaElements),
-      compression: cdktf.stringToTerraform(this._compression),
-      format: cdktf.stringToTerraform(this._format),
-      id: cdktf.stringToTerraform(this._id),
-      refresh_closed_reports: cdktf.booleanToTerraform(this._refreshClosedReports),
-      report_name: cdktf.stringToTerraform(this._reportName),
-      report_versioning: cdktf.stringToTerraform(this._reportVersioning),
-      s3_bucket: cdktf.stringToTerraform(this._s3Bucket),
-      s3_prefix: cdktf.stringToTerraform(this._s3Prefix),
-      s3_region: cdktf.stringToTerraform(this._s3Region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      time_unit: cdktf.stringToTerraform(this._timeUnit),
+      additional_artifacts: cdktn.listMapper(cdktn.stringToTerraform, false)(this._additionalArtifacts),
+      additional_schema_elements: cdktn.listMapper(cdktn.stringToTerraform, false)(this._additionalSchemaElements),
+      compression: cdktn.stringToTerraform(this._compression),
+      format: cdktn.stringToTerraform(this._format),
+      id: cdktn.stringToTerraform(this._id),
+      refresh_closed_reports: cdktn.booleanToTerraform(this._refreshClosedReports),
+      report_name: cdktn.stringToTerraform(this._reportName),
+      report_versioning: cdktn.stringToTerraform(this._reportVersioning),
+      s3_bucket: cdktn.stringToTerraform(this._s3Bucket),
+      s3_prefix: cdktn.stringToTerraform(this._s3Prefix),
+      s3_region: cdktn.stringToTerraform(this._s3Region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      time_unit: cdktn.stringToTerraform(this._timeUnit),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_artifacts: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._additionalArtifacts),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._additionalArtifacts),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       additional_schema_elements: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._additionalSchemaElements),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._additionalSchemaElements),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       compression: {
-        value: cdktf.stringToHclTerraform(this._compression),
+        value: cdktn.stringToHclTerraform(this._compression),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       format: {
-        value: cdktf.stringToHclTerraform(this._format),
+        value: cdktn.stringToHclTerraform(this._format),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       refresh_closed_reports: {
-        value: cdktf.booleanToHclTerraform(this._refreshClosedReports),
+        value: cdktn.booleanToHclTerraform(this._refreshClosedReports),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       report_name: {
-        value: cdktf.stringToHclTerraform(this._reportName),
+        value: cdktn.stringToHclTerraform(this._reportName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       report_versioning: {
-        value: cdktf.stringToHclTerraform(this._reportVersioning),
+        value: cdktn.stringToHclTerraform(this._reportVersioning),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_bucket: {
-        value: cdktf.stringToHclTerraform(this._s3Bucket),
+        value: cdktn.stringToHclTerraform(this._s3Bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_prefix: {
-        value: cdktf.stringToHclTerraform(this._s3Prefix),
+        value: cdktn.stringToHclTerraform(this._s3Prefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_region: {
-        value: cdktf.stringToHclTerraform(this._s3Region),
+        value: cdktn.stringToHclTerraform(this._s3Region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       time_unit: {
-        value: cdktf.stringToHclTerraform(this._timeUnit),
+        value: cdktn.stringToHclTerraform(this._timeUnit),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

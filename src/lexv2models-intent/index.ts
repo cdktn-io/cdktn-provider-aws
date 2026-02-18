@@ -51,8 +51,8 @@ lexv2ModelsIntentTimeoutsToHclTerraform,
 Lexv2ModelsIntentTimeoutsOutputReference} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
-export interface Lexv2ModelsIntentConfig extends cdktf.TerraformMetaArguments {
+import * as cdktn from 'cdktn';
+export interface Lexv2ModelsIntentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#bot_id Lexv2ModelsIntent#bot_id}
   */
@@ -88,61 +88,61 @@ export interface Lexv2ModelsIntentConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#closing_setting Lexv2ModelsIntent#closing_setting}
   */
-  readonly closingSetting?: Lexv2ModelsIntentClosingSetting[] | cdktf.IResolvable;
+  readonly closingSetting?: Lexv2ModelsIntentClosingSetting[] | cdktn.IResolvable;
   /**
   * confirmation_setting block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#confirmation_setting Lexv2ModelsIntent#confirmation_setting}
   */
-  readonly confirmationSetting?: Lexv2ModelsIntentConfirmationSetting[] | cdktf.IResolvable;
+  readonly confirmationSetting?: Lexv2ModelsIntentConfirmationSetting[] | cdktn.IResolvable;
   /**
   * dialog_code_hook block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#dialog_code_hook Lexv2ModelsIntent#dialog_code_hook}
   */
-  readonly dialogCodeHook?: Lexv2ModelsIntentDialogCodeHook[] | cdktf.IResolvable;
+  readonly dialogCodeHook?: Lexv2ModelsIntentDialogCodeHook[] | cdktn.IResolvable;
   /**
   * fulfillment_code_hook block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#fulfillment_code_hook Lexv2ModelsIntent#fulfillment_code_hook}
   */
-  readonly fulfillmentCodeHook?: Lexv2ModelsIntentFulfillmentCodeHook[] | cdktf.IResolvable;
+  readonly fulfillmentCodeHook?: Lexv2ModelsIntentFulfillmentCodeHook[] | cdktn.IResolvable;
   /**
   * initial_response_setting block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#initial_response_setting Lexv2ModelsIntent#initial_response_setting}
   */
-  readonly initialResponseSetting?: Lexv2ModelsIntentInitialResponseSetting[] | cdktf.IResolvable;
+  readonly initialResponseSetting?: Lexv2ModelsIntentInitialResponseSetting[] | cdktn.IResolvable;
   /**
   * input_context block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#input_context Lexv2ModelsIntent#input_context}
   */
-  readonly inputContext?: Lexv2ModelsIntentInputContext[] | cdktf.IResolvable;
+  readonly inputContext?: Lexv2ModelsIntentInputContext[] | cdktn.IResolvable;
   /**
   * kendra_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#kendra_configuration Lexv2ModelsIntent#kendra_configuration}
   */
-  readonly kendraConfiguration?: Lexv2ModelsIntentKendraConfiguration[] | cdktf.IResolvable;
+  readonly kendraConfiguration?: Lexv2ModelsIntentKendraConfiguration[] | cdktn.IResolvable;
   /**
   * output_context block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#output_context Lexv2ModelsIntent#output_context}
   */
-  readonly outputContext?: Lexv2ModelsIntentOutputContext[] | cdktf.IResolvable;
+  readonly outputContext?: Lexv2ModelsIntentOutputContext[] | cdktn.IResolvable;
   /**
   * sample_utterance block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#sample_utterance Lexv2ModelsIntent#sample_utterance}
   */
-  readonly sampleUtterance?: Lexv2ModelsIntentSampleUtterance[] | cdktf.IResolvable;
+  readonly sampleUtterance?: Lexv2ModelsIntentSampleUtterance[] | cdktn.IResolvable;
   /**
   * slot_priority block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#slot_priority Lexv2ModelsIntent#slot_priority}
   */
-  readonly slotPriority?: Lexv2ModelsIntentSlotPriority[] | cdktf.IResolvable;
+  readonly slotPriority?: Lexv2ModelsIntentSlotPriority[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -154,7 +154,7 @@ export interface Lexv2ModelsIntentConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent aws_lexv2models_intent}
 */
-export class Lexv2ModelsIntent extends cdktf.TerraformResource {
+export class Lexv2ModelsIntent extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -165,14 +165,14 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Lexv2ModelsIntent resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Lexv2ModelsIntent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Lexv2ModelsIntent to import
   * @param importFromId The id of the existing Lexv2ModelsIntent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Lexv2ModelsIntent to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lexv2models_intent", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lexv2models_intent", importId: importFromId, provider });
       }
 
   // ===========
@@ -351,7 +351,7 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
   public get closingSetting() {
     return this._closingSetting;
   }
-  public putClosingSetting(value: Lexv2ModelsIntentClosingSetting[] | cdktf.IResolvable) {
+  public putClosingSetting(value: Lexv2ModelsIntentClosingSetting[] | cdktn.IResolvable) {
     this._closingSetting.internalValue = value;
   }
   public resetClosingSetting() {
@@ -367,7 +367,7 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
   public get confirmationSetting() {
     return this._confirmationSetting;
   }
-  public putConfirmationSetting(value: Lexv2ModelsIntentConfirmationSetting[] | cdktf.IResolvable) {
+  public putConfirmationSetting(value: Lexv2ModelsIntentConfirmationSetting[] | cdktn.IResolvable) {
     this._confirmationSetting.internalValue = value;
   }
   public resetConfirmationSetting() {
@@ -383,7 +383,7 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
   public get dialogCodeHook() {
     return this._dialogCodeHook;
   }
-  public putDialogCodeHook(value: Lexv2ModelsIntentDialogCodeHook[] | cdktf.IResolvable) {
+  public putDialogCodeHook(value: Lexv2ModelsIntentDialogCodeHook[] | cdktn.IResolvable) {
     this._dialogCodeHook.internalValue = value;
   }
   public resetDialogCodeHook() {
@@ -399,7 +399,7 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
   public get fulfillmentCodeHook() {
     return this._fulfillmentCodeHook;
   }
-  public putFulfillmentCodeHook(value: Lexv2ModelsIntentFulfillmentCodeHook[] | cdktf.IResolvable) {
+  public putFulfillmentCodeHook(value: Lexv2ModelsIntentFulfillmentCodeHook[] | cdktn.IResolvable) {
     this._fulfillmentCodeHook.internalValue = value;
   }
   public resetFulfillmentCodeHook() {
@@ -415,7 +415,7 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
   public get initialResponseSetting() {
     return this._initialResponseSetting;
   }
-  public putInitialResponseSetting(value: Lexv2ModelsIntentInitialResponseSetting[] | cdktf.IResolvable) {
+  public putInitialResponseSetting(value: Lexv2ModelsIntentInitialResponseSetting[] | cdktn.IResolvable) {
     this._initialResponseSetting.internalValue = value;
   }
   public resetInitialResponseSetting() {
@@ -431,7 +431,7 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
   public get inputContext() {
     return this._inputContext;
   }
-  public putInputContext(value: Lexv2ModelsIntentInputContext[] | cdktf.IResolvable) {
+  public putInputContext(value: Lexv2ModelsIntentInputContext[] | cdktn.IResolvable) {
     this._inputContext.internalValue = value;
   }
   public resetInputContext() {
@@ -447,7 +447,7 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
   public get kendraConfiguration() {
     return this._kendraConfiguration;
   }
-  public putKendraConfiguration(value: Lexv2ModelsIntentKendraConfiguration[] | cdktf.IResolvable) {
+  public putKendraConfiguration(value: Lexv2ModelsIntentKendraConfiguration[] | cdktn.IResolvable) {
     this._kendraConfiguration.internalValue = value;
   }
   public resetKendraConfiguration() {
@@ -463,7 +463,7 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
   public get outputContext() {
     return this._outputContext;
   }
-  public putOutputContext(value: Lexv2ModelsIntentOutputContext[] | cdktf.IResolvable) {
+  public putOutputContext(value: Lexv2ModelsIntentOutputContext[] | cdktn.IResolvable) {
     this._outputContext.internalValue = value;
   }
   public resetOutputContext() {
@@ -479,7 +479,7 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
   public get sampleUtterance() {
     return this._sampleUtterance;
   }
-  public putSampleUtterance(value: Lexv2ModelsIntentSampleUtterance[] | cdktf.IResolvable) {
+  public putSampleUtterance(value: Lexv2ModelsIntentSampleUtterance[] | cdktn.IResolvable) {
     this._sampleUtterance.internalValue = value;
   }
   public resetSampleUtterance() {
@@ -495,7 +495,7 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
   public get slotPriority() {
     return this._slotPriority;
   }
-  public putSlotPriority(value: Lexv2ModelsIntentSlotPriority[] | cdktf.IResolvable) {
+  public putSlotPriority(value: Lexv2ModelsIntentSlotPriority[] | cdktn.IResolvable) {
     this._slotPriority.internalValue = value;
   }
   public resetSlotPriority() {
@@ -528,23 +528,23 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bot_id: cdktf.stringToTerraform(this._botId),
-      bot_version: cdktf.stringToTerraform(this._botVersion),
-      description: cdktf.stringToTerraform(this._description),
-      locale_id: cdktf.stringToTerraform(this._localeId),
-      name: cdktf.stringToTerraform(this._name),
-      parent_intent_signature: cdktf.stringToTerraform(this._parentIntentSignature),
-      region: cdktf.stringToTerraform(this._region),
-      closing_setting: cdktf.listMapper(lexv2ModelsIntentClosingSettingToTerraform, true)(this._closingSetting.internalValue),
-      confirmation_setting: cdktf.listMapper(lexv2ModelsIntentConfirmationSettingToTerraform, true)(this._confirmationSetting.internalValue),
-      dialog_code_hook: cdktf.listMapper(lexv2ModelsIntentDialogCodeHookToTerraform, true)(this._dialogCodeHook.internalValue),
-      fulfillment_code_hook: cdktf.listMapper(lexv2ModelsIntentFulfillmentCodeHookToTerraform, true)(this._fulfillmentCodeHook.internalValue),
-      initial_response_setting: cdktf.listMapper(lexv2ModelsIntentInitialResponseSettingToTerraform, true)(this._initialResponseSetting.internalValue),
-      input_context: cdktf.listMapper(lexv2ModelsIntentInputContextToTerraform, true)(this._inputContext.internalValue),
-      kendra_configuration: cdktf.listMapper(lexv2ModelsIntentKendraConfigurationToTerraform, true)(this._kendraConfiguration.internalValue),
-      output_context: cdktf.listMapper(lexv2ModelsIntentOutputContextToTerraform, true)(this._outputContext.internalValue),
-      sample_utterance: cdktf.listMapper(lexv2ModelsIntentSampleUtteranceToTerraform, true)(this._sampleUtterance.internalValue),
-      slot_priority: cdktf.listMapper(lexv2ModelsIntentSlotPriorityToTerraform, true)(this._slotPriority.internalValue),
+      bot_id: cdktn.stringToTerraform(this._botId),
+      bot_version: cdktn.stringToTerraform(this._botVersion),
+      description: cdktn.stringToTerraform(this._description),
+      locale_id: cdktn.stringToTerraform(this._localeId),
+      name: cdktn.stringToTerraform(this._name),
+      parent_intent_signature: cdktn.stringToTerraform(this._parentIntentSignature),
+      region: cdktn.stringToTerraform(this._region),
+      closing_setting: cdktn.listMapper(lexv2ModelsIntentClosingSettingToTerraform, true)(this._closingSetting.internalValue),
+      confirmation_setting: cdktn.listMapper(lexv2ModelsIntentConfirmationSettingToTerraform, true)(this._confirmationSetting.internalValue),
+      dialog_code_hook: cdktn.listMapper(lexv2ModelsIntentDialogCodeHookToTerraform, true)(this._dialogCodeHook.internalValue),
+      fulfillment_code_hook: cdktn.listMapper(lexv2ModelsIntentFulfillmentCodeHookToTerraform, true)(this._fulfillmentCodeHook.internalValue),
+      initial_response_setting: cdktn.listMapper(lexv2ModelsIntentInitialResponseSettingToTerraform, true)(this._initialResponseSetting.internalValue),
+      input_context: cdktn.listMapper(lexv2ModelsIntentInputContextToTerraform, true)(this._inputContext.internalValue),
+      kendra_configuration: cdktn.listMapper(lexv2ModelsIntentKendraConfigurationToTerraform, true)(this._kendraConfiguration.internalValue),
+      output_context: cdktn.listMapper(lexv2ModelsIntentOutputContextToTerraform, true)(this._outputContext.internalValue),
+      sample_utterance: cdktn.listMapper(lexv2ModelsIntentSampleUtteranceToTerraform, true)(this._sampleUtterance.internalValue),
+      slot_priority: cdktn.listMapper(lexv2ModelsIntentSlotPriorityToTerraform, true)(this._slotPriority.internalValue),
       timeouts: lexv2ModelsIntentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -552,103 +552,103 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bot_id: {
-        value: cdktf.stringToHclTerraform(this._botId),
+        value: cdktn.stringToHclTerraform(this._botId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bot_version: {
-        value: cdktf.stringToHclTerraform(this._botVersion),
+        value: cdktn.stringToHclTerraform(this._botVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       locale_id: {
-        value: cdktf.stringToHclTerraform(this._localeId),
+        value: cdktn.stringToHclTerraform(this._localeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent_intent_signature: {
-        value: cdktf.stringToHclTerraform(this._parentIntentSignature),
+        value: cdktn.stringToHclTerraform(this._parentIntentSignature),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       closing_setting: {
-        value: cdktf.listMapperHcl(lexv2ModelsIntentClosingSettingToHclTerraform, true)(this._closingSetting.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsIntentClosingSettingToHclTerraform, true)(this._closingSetting.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsIntentClosingSettingList",
       },
       confirmation_setting: {
-        value: cdktf.listMapperHcl(lexv2ModelsIntentConfirmationSettingToHclTerraform, true)(this._confirmationSetting.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsIntentConfirmationSettingToHclTerraform, true)(this._confirmationSetting.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsIntentConfirmationSettingList",
       },
       dialog_code_hook: {
-        value: cdktf.listMapperHcl(lexv2ModelsIntentDialogCodeHookToHclTerraform, true)(this._dialogCodeHook.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsIntentDialogCodeHookToHclTerraform, true)(this._dialogCodeHook.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsIntentDialogCodeHookList",
       },
       fulfillment_code_hook: {
-        value: cdktf.listMapperHcl(lexv2ModelsIntentFulfillmentCodeHookToHclTerraform, true)(this._fulfillmentCodeHook.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsIntentFulfillmentCodeHookToHclTerraform, true)(this._fulfillmentCodeHook.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsIntentFulfillmentCodeHookList",
       },
       initial_response_setting: {
-        value: cdktf.listMapperHcl(lexv2ModelsIntentInitialResponseSettingToHclTerraform, true)(this._initialResponseSetting.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsIntentInitialResponseSettingToHclTerraform, true)(this._initialResponseSetting.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsIntentInitialResponseSettingList",
       },
       input_context: {
-        value: cdktf.listMapperHcl(lexv2ModelsIntentInputContextToHclTerraform, true)(this._inputContext.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsIntentInputContextToHclTerraform, true)(this._inputContext.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsIntentInputContextList",
       },
       kendra_configuration: {
-        value: cdktf.listMapperHcl(lexv2ModelsIntentKendraConfigurationToHclTerraform, true)(this._kendraConfiguration.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsIntentKendraConfigurationToHclTerraform, true)(this._kendraConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsIntentKendraConfigurationList",
       },
       output_context: {
-        value: cdktf.listMapperHcl(lexv2ModelsIntentOutputContextToHclTerraform, true)(this._outputContext.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsIntentOutputContextToHclTerraform, true)(this._outputContext.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsIntentOutputContextList",
       },
       sample_utterance: {
-        value: cdktf.listMapperHcl(lexv2ModelsIntentSampleUtteranceToHclTerraform, true)(this._sampleUtterance.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsIntentSampleUtteranceToHclTerraform, true)(this._sampleUtterance.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsIntentSampleUtteranceList",
       },
       slot_priority: {
-        value: cdktf.listMapperHcl(lexv2ModelsIntentSlotPriorityToHclTerraform, true)(this._slotPriority.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsIntentSlotPriorityToHclTerraform, true)(this._slotPriority.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsIntentSlotPriorityList",

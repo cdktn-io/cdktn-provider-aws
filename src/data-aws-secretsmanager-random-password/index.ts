@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsSecretsmanagerRandomPasswordConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSecretsmanagerRandomPasswordConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_random_password#exclude_characters DataAwsSecretsmanagerRandomPassword#exclude_characters}
   */
@@ -19,19 +19,19 @@ export interface DataAwsSecretsmanagerRandomPasswordConfig extends cdktf.Terrafo
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_random_password#exclude_lowercase DataAwsSecretsmanagerRandomPassword#exclude_lowercase}
   */
-  readonly excludeLowercase?: boolean | cdktf.IResolvable;
+  readonly excludeLowercase?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_random_password#exclude_numbers DataAwsSecretsmanagerRandomPassword#exclude_numbers}
   */
-  readonly excludeNumbers?: boolean | cdktf.IResolvable;
+  readonly excludeNumbers?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_random_password#exclude_punctuation DataAwsSecretsmanagerRandomPassword#exclude_punctuation}
   */
-  readonly excludePunctuation?: boolean | cdktf.IResolvable;
+  readonly excludePunctuation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_random_password#exclude_uppercase DataAwsSecretsmanagerRandomPassword#exclude_uppercase}
   */
-  readonly excludeUppercase?: boolean | cdktf.IResolvable;
+  readonly excludeUppercase?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_random_password#id DataAwsSecretsmanagerRandomPassword#id}
   *
@@ -42,7 +42,7 @@ export interface DataAwsSecretsmanagerRandomPasswordConfig extends cdktf.Terrafo
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_random_password#include_space DataAwsSecretsmanagerRandomPassword#include_space}
   */
-  readonly includeSpace?: boolean | cdktf.IResolvable;
+  readonly includeSpace?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_random_password#password_length DataAwsSecretsmanagerRandomPassword#password_length}
   */
@@ -56,13 +56,13 @@ export interface DataAwsSecretsmanagerRandomPasswordConfig extends cdktf.Terrafo
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_random_password#require_each_included_type DataAwsSecretsmanagerRandomPassword#require_each_included_type}
   */
-  readonly requireEachIncludedType?: boolean | cdktf.IResolvable;
+  readonly requireEachIncludedType?: boolean | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password}
 */
-export class DataAwsSecretsmanagerRandomPassword extends cdktf.TerraformDataSource {
+export class DataAwsSecretsmanagerRandomPassword extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -73,14 +73,14 @@ export class DataAwsSecretsmanagerRandomPassword extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsSecretsmanagerRandomPassword resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsSecretsmanagerRandomPassword resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSecretsmanagerRandomPassword to import
   * @param importFromId The id of the existing DataAwsSecretsmanagerRandomPassword that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_random_password#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSecretsmanagerRandomPassword to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_secretsmanager_random_password", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_secretsmanager_random_password", importId: importFromId, provider });
       }
 
   // ===========
@@ -143,11 +143,11 @@ export class DataAwsSecretsmanagerRandomPassword extends cdktf.TerraformDataSour
   }
 
   // exclude_lowercase - computed: false, optional: true, required: false
-  private _excludeLowercase?: boolean | cdktf.IResolvable; 
+  private _excludeLowercase?: boolean | cdktn.IResolvable; 
   public get excludeLowercase() {
     return this.getBooleanAttribute('exclude_lowercase');
   }
-  public set excludeLowercase(value: boolean | cdktf.IResolvable) {
+  public set excludeLowercase(value: boolean | cdktn.IResolvable) {
     this._excludeLowercase = value;
   }
   public resetExcludeLowercase() {
@@ -159,11 +159,11 @@ export class DataAwsSecretsmanagerRandomPassword extends cdktf.TerraformDataSour
   }
 
   // exclude_numbers - computed: false, optional: true, required: false
-  private _excludeNumbers?: boolean | cdktf.IResolvable; 
+  private _excludeNumbers?: boolean | cdktn.IResolvable; 
   public get excludeNumbers() {
     return this.getBooleanAttribute('exclude_numbers');
   }
-  public set excludeNumbers(value: boolean | cdktf.IResolvable) {
+  public set excludeNumbers(value: boolean | cdktn.IResolvable) {
     this._excludeNumbers = value;
   }
   public resetExcludeNumbers() {
@@ -175,11 +175,11 @@ export class DataAwsSecretsmanagerRandomPassword extends cdktf.TerraformDataSour
   }
 
   // exclude_punctuation - computed: false, optional: true, required: false
-  private _excludePunctuation?: boolean | cdktf.IResolvable; 
+  private _excludePunctuation?: boolean | cdktn.IResolvable; 
   public get excludePunctuation() {
     return this.getBooleanAttribute('exclude_punctuation');
   }
-  public set excludePunctuation(value: boolean | cdktf.IResolvable) {
+  public set excludePunctuation(value: boolean | cdktn.IResolvable) {
     this._excludePunctuation = value;
   }
   public resetExcludePunctuation() {
@@ -191,11 +191,11 @@ export class DataAwsSecretsmanagerRandomPassword extends cdktf.TerraformDataSour
   }
 
   // exclude_uppercase - computed: false, optional: true, required: false
-  private _excludeUppercase?: boolean | cdktf.IResolvable; 
+  private _excludeUppercase?: boolean | cdktn.IResolvable; 
   public get excludeUppercase() {
     return this.getBooleanAttribute('exclude_uppercase');
   }
-  public set excludeUppercase(value: boolean | cdktf.IResolvable) {
+  public set excludeUppercase(value: boolean | cdktn.IResolvable) {
     this._excludeUppercase = value;
   }
   public resetExcludeUppercase() {
@@ -223,11 +223,11 @@ export class DataAwsSecretsmanagerRandomPassword extends cdktf.TerraformDataSour
   }
 
   // include_space - computed: false, optional: true, required: false
-  private _includeSpace?: boolean | cdktf.IResolvable; 
+  private _includeSpace?: boolean | cdktn.IResolvable; 
   public get includeSpace() {
     return this.getBooleanAttribute('include_space');
   }
-  public set includeSpace(value: boolean | cdktf.IResolvable) {
+  public set includeSpace(value: boolean | cdktn.IResolvable) {
     this._includeSpace = value;
   }
   public resetIncludeSpace() {
@@ -276,11 +276,11 @@ export class DataAwsSecretsmanagerRandomPassword extends cdktf.TerraformDataSour
   }
 
   // require_each_included_type - computed: false, optional: true, required: false
-  private _requireEachIncludedType?: boolean | cdktf.IResolvable; 
+  private _requireEachIncludedType?: boolean | cdktn.IResolvable; 
   public get requireEachIncludedType() {
     return this.getBooleanAttribute('require_each_included_type');
   }
-  public set requireEachIncludedType(value: boolean | cdktf.IResolvable) {
+  public set requireEachIncludedType(value: boolean | cdktn.IResolvable) {
     this._requireEachIncludedType = value;
   }
   public resetRequireEachIncludedType() {
@@ -297,77 +297,77 @@ export class DataAwsSecretsmanagerRandomPassword extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      exclude_characters: cdktf.stringToTerraform(this._excludeCharacters),
-      exclude_lowercase: cdktf.booleanToTerraform(this._excludeLowercase),
-      exclude_numbers: cdktf.booleanToTerraform(this._excludeNumbers),
-      exclude_punctuation: cdktf.booleanToTerraform(this._excludePunctuation),
-      exclude_uppercase: cdktf.booleanToTerraform(this._excludeUppercase),
-      id: cdktf.stringToTerraform(this._id),
-      include_space: cdktf.booleanToTerraform(this._includeSpace),
-      password_length: cdktf.numberToTerraform(this._passwordLength),
-      region: cdktf.stringToTerraform(this._region),
-      require_each_included_type: cdktf.booleanToTerraform(this._requireEachIncludedType),
+      exclude_characters: cdktn.stringToTerraform(this._excludeCharacters),
+      exclude_lowercase: cdktn.booleanToTerraform(this._excludeLowercase),
+      exclude_numbers: cdktn.booleanToTerraform(this._excludeNumbers),
+      exclude_punctuation: cdktn.booleanToTerraform(this._excludePunctuation),
+      exclude_uppercase: cdktn.booleanToTerraform(this._excludeUppercase),
+      id: cdktn.stringToTerraform(this._id),
+      include_space: cdktn.booleanToTerraform(this._includeSpace),
+      password_length: cdktn.numberToTerraform(this._passwordLength),
+      region: cdktn.stringToTerraform(this._region),
+      require_each_included_type: cdktn.booleanToTerraform(this._requireEachIncludedType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       exclude_characters: {
-        value: cdktf.stringToHclTerraform(this._excludeCharacters),
+        value: cdktn.stringToHclTerraform(this._excludeCharacters),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       exclude_lowercase: {
-        value: cdktf.booleanToHclTerraform(this._excludeLowercase),
+        value: cdktn.booleanToHclTerraform(this._excludeLowercase),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       exclude_numbers: {
-        value: cdktf.booleanToHclTerraform(this._excludeNumbers),
+        value: cdktn.booleanToHclTerraform(this._excludeNumbers),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       exclude_punctuation: {
-        value: cdktf.booleanToHclTerraform(this._excludePunctuation),
+        value: cdktn.booleanToHclTerraform(this._excludePunctuation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       exclude_uppercase: {
-        value: cdktf.booleanToHclTerraform(this._excludeUppercase),
+        value: cdktn.booleanToHclTerraform(this._excludeUppercase),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_space: {
-        value: cdktf.booleanToHclTerraform(this._includeSpace),
+        value: cdktn.booleanToHclTerraform(this._includeSpace),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       password_length: {
-        value: cdktf.numberToHclTerraform(this._passwordLength),
+        value: cdktn.numberToHclTerraform(this._passwordLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       require_each_included_type: {
-        value: cdktf.booleanToHclTerraform(this._requireEachIncludedType),
+        value: cdktn.booleanToHclTerraform(this._requireEachIncludedType),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

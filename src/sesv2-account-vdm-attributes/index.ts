@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Sesv2AccountVdmAttributesConfig extends cdktf.TerraformMetaArguments {
+export interface Sesv2AccountVdmAttributesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_account_vdm_attributes#id Sesv2AccountVdmAttributes#id}
   *
@@ -50,24 +50,24 @@ export interface Sesv2AccountVdmAttributesDashboardAttributes {
 }
 
 export function sesv2AccountVdmAttributesDashboardAttributesToTerraform(struct?: Sesv2AccountVdmAttributesDashboardAttributesOutputReference | Sesv2AccountVdmAttributesDashboardAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    engagement_metrics: cdktf.stringToTerraform(struct!.engagementMetrics),
+    engagement_metrics: cdktn.stringToTerraform(struct!.engagementMetrics),
   }
 }
 
 
 export function sesv2AccountVdmAttributesDashboardAttributesToHclTerraform(struct?: Sesv2AccountVdmAttributesDashboardAttributesOutputReference | Sesv2AccountVdmAttributesDashboardAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     engagement_metrics: {
-      value: cdktf.stringToHclTerraform(struct!.engagementMetrics),
+      value: cdktn.stringToHclTerraform(struct!.engagementMetrics),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -78,14 +78,14 @@ export function sesv2AccountVdmAttributesDashboardAttributesToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Sesv2AccountVdmAttributesDashboardAttributesOutputReference extends cdktf.ComplexObject {
+export class Sesv2AccountVdmAttributesDashboardAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -134,24 +134,24 @@ export interface Sesv2AccountVdmAttributesGuardianAttributes {
 }
 
 export function sesv2AccountVdmAttributesGuardianAttributesToTerraform(struct?: Sesv2AccountVdmAttributesGuardianAttributesOutputReference | Sesv2AccountVdmAttributesGuardianAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    optimized_shared_delivery: cdktf.stringToTerraform(struct!.optimizedSharedDelivery),
+    optimized_shared_delivery: cdktn.stringToTerraform(struct!.optimizedSharedDelivery),
   }
 }
 
 
 export function sesv2AccountVdmAttributesGuardianAttributesToHclTerraform(struct?: Sesv2AccountVdmAttributesGuardianAttributesOutputReference | Sesv2AccountVdmAttributesGuardianAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     optimized_shared_delivery: {
-      value: cdktf.stringToHclTerraform(struct!.optimizedSharedDelivery),
+      value: cdktn.stringToHclTerraform(struct!.optimizedSharedDelivery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -162,14 +162,14 @@ export function sesv2AccountVdmAttributesGuardianAttributesToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Sesv2AccountVdmAttributesGuardianAttributesOutputReference extends cdktf.ComplexObject {
+export class Sesv2AccountVdmAttributesGuardianAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -214,7 +214,7 @@ export class Sesv2AccountVdmAttributesGuardianAttributesOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_account_vdm_attributes aws_sesv2_account_vdm_attributes}
 */
-export class Sesv2AccountVdmAttributes extends cdktf.TerraformResource {
+export class Sesv2AccountVdmAttributes extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -225,14 +225,14 @@ export class Sesv2AccountVdmAttributes extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Sesv2AccountVdmAttributes resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Sesv2AccountVdmAttributes resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Sesv2AccountVdmAttributes to import
   * @param importFromId The id of the existing Sesv2AccountVdmAttributes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_account_vdm_attributes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Sesv2AccountVdmAttributes to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_account_vdm_attributes", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_account_vdm_attributes", importId: importFromId, provider });
       }
 
   // ===========
@@ -356,9 +356,9 @@ export class Sesv2AccountVdmAttributes extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      vdm_enabled: cdktf.stringToTerraform(this._vdmEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      vdm_enabled: cdktn.stringToTerraform(this._vdmEnabled),
       dashboard_attributes: sesv2AccountVdmAttributesDashboardAttributesToTerraform(this._dashboardAttributes.internalValue),
       guardian_attributes: sesv2AccountVdmAttributesGuardianAttributesToTerraform(this._guardianAttributes.internalValue),
     };
@@ -367,19 +367,19 @@ export class Sesv2AccountVdmAttributes extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vdm_enabled: {
-        value: cdktf.stringToHclTerraform(this._vdmEnabled),
+        value: cdktn.stringToHclTerraform(this._vdmEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IotDomainConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface IotDomainConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_domain_configuration#application_protocol IotDomainConfiguration#application_protocol}
   */
@@ -82,7 +82,7 @@ export interface IotDomainConfigurationAuthorizerConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_domain_configuration#allow_authorizer_override IotDomainConfiguration#allow_authorizer_override}
   */
-  readonly allowAuthorizerOverride?: boolean | cdktf.IResolvable;
+  readonly allowAuthorizerOverride?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_domain_configuration#default_authorizer_name IotDomainConfiguration#default_authorizer_name}
   */
@@ -90,31 +90,31 @@ export interface IotDomainConfigurationAuthorizerConfig {
 }
 
 export function iotDomainConfigurationAuthorizerConfigToTerraform(struct?: IotDomainConfigurationAuthorizerConfigOutputReference | IotDomainConfigurationAuthorizerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_authorizer_override: cdktf.booleanToTerraform(struct!.allowAuthorizerOverride),
-    default_authorizer_name: cdktf.stringToTerraform(struct!.defaultAuthorizerName),
+    allow_authorizer_override: cdktn.booleanToTerraform(struct!.allowAuthorizerOverride),
+    default_authorizer_name: cdktn.stringToTerraform(struct!.defaultAuthorizerName),
   }
 }
 
 
 export function iotDomainConfigurationAuthorizerConfigToHclTerraform(struct?: IotDomainConfigurationAuthorizerConfigOutputReference | IotDomainConfigurationAuthorizerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_authorizer_override: {
-      value: cdktf.booleanToHclTerraform(struct!.allowAuthorizerOverride),
+      value: cdktn.booleanToHclTerraform(struct!.allowAuthorizerOverride),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     default_authorizer_name: {
-      value: cdktf.stringToHclTerraform(struct!.defaultAuthorizerName),
+      value: cdktn.stringToHclTerraform(struct!.defaultAuthorizerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,14 +125,14 @@ export function iotDomainConfigurationAuthorizerConfigToHclTerraform(struct?: Io
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotDomainConfigurationAuthorizerConfigOutputReference extends cdktf.ComplexObject {
+export class IotDomainConfigurationAuthorizerConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -164,11 +164,11 @@ export class IotDomainConfigurationAuthorizerConfigOutputReference extends cdktf
   }
 
   // allow_authorizer_override - computed: false, optional: true, required: false
-  private _allowAuthorizerOverride?: boolean | cdktf.IResolvable; 
+  private _allowAuthorizerOverride?: boolean | cdktn.IResolvable; 
   public get allowAuthorizerOverride() {
     return this.getBooleanAttribute('allow_authorizer_override');
   }
-  public set allowAuthorizerOverride(value: boolean | cdktf.IResolvable) {
+  public set allowAuthorizerOverride(value: boolean | cdktn.IResolvable) {
     this._allowAuthorizerOverride = value;
   }
   public resetAllowAuthorizerOverride() {
@@ -203,24 +203,24 @@ export interface IotDomainConfigurationTlsConfig {
 }
 
 export function iotDomainConfigurationTlsConfigToTerraform(struct?: IotDomainConfigurationTlsConfigOutputReference | IotDomainConfigurationTlsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_policy: cdktf.stringToTerraform(struct!.securityPolicy),
+    security_policy: cdktn.stringToTerraform(struct!.securityPolicy),
   }
 }
 
 
 export function iotDomainConfigurationTlsConfigToHclTerraform(struct?: IotDomainConfigurationTlsConfigOutputReference | IotDomainConfigurationTlsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_policy: {
-      value: cdktf.stringToHclTerraform(struct!.securityPolicy),
+      value: cdktn.stringToHclTerraform(struct!.securityPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -231,14 +231,14 @@ export function iotDomainConfigurationTlsConfigToHclTerraform(struct?: IotDomain
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotDomainConfigurationTlsConfigOutputReference extends cdktf.ComplexObject {
+export class IotDomainConfigurationTlsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -283,7 +283,7 @@ export class IotDomainConfigurationTlsConfigOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_domain_configuration aws_iot_domain_configuration}
 */
-export class IotDomainConfiguration extends cdktf.TerraformResource {
+export class IotDomainConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -294,14 +294,14 @@ export class IotDomainConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IotDomainConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IotDomainConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotDomainConfiguration to import
   * @param importFromId The id of the existing IotDomainConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_domain_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotDomainConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_domain_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_domain_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -457,7 +457,7 @@ export class IotDomainConfiguration extends cdktf.TerraformResource {
   // server_certificate_arns - computed: false, optional: true, required: false
   private _serverCertificateArns?: string[]; 
   public get serverCertificateArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('server_certificate_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('server_certificate_arns'));
   }
   public set serverCertificateArns(value: string[]) {
     this._serverCertificateArns = value;
@@ -588,18 +588,18 @@ export class IotDomainConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_protocol: cdktf.stringToTerraform(this._applicationProtocol),
-      authentication_type: cdktf.stringToTerraform(this._authenticationType),
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      server_certificate_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._serverCertificateArns),
-      service_type: cdktf.stringToTerraform(this._serviceType),
-      status: cdktf.stringToTerraform(this._status),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      validation_certificate_arn: cdktf.stringToTerraform(this._validationCertificateArn),
+      application_protocol: cdktn.stringToTerraform(this._applicationProtocol),
+      authentication_type: cdktn.stringToTerraform(this._authenticationType),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      server_certificate_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._serverCertificateArns),
+      service_type: cdktn.stringToTerraform(this._serviceType),
+      status: cdktn.stringToTerraform(this._status),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      validation_certificate_arn: cdktn.stringToTerraform(this._validationCertificateArn),
       authorizer_config: iotDomainConfigurationAuthorizerConfigToTerraform(this._authorizerConfig.internalValue),
       tls_config: iotDomainConfigurationTlsConfigToTerraform(this._tlsConfig.internalValue),
     };
@@ -608,73 +608,73 @@ export class IotDomainConfiguration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_protocol: {
-        value: cdktf.stringToHclTerraform(this._applicationProtocol),
+        value: cdktn.stringToHclTerraform(this._applicationProtocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authentication_type: {
-        value: cdktf.stringToHclTerraform(this._authenticationType),
+        value: cdktn.stringToHclTerraform(this._authenticationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_certificate_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._serverCertificateArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._serverCertificateArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       service_type: {
-        value: cdktf.stringToHclTerraform(this._serviceType),
+        value: cdktn.stringToHclTerraform(this._serviceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       validation_certificate_arn: {
-        value: cdktf.stringToHclTerraform(this._validationCertificateArn),
+        value: cdktn.stringToHclTerraform(this._validationCertificateArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

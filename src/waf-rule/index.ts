@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WafRuleConfig extends cdktf.TerraformMetaArguments {
+export interface WafRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_rule#id WafRule#id}
   *
@@ -40,7 +40,7 @@ export interface WafRuleConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_rule#predicates WafRule#predicates}
   */
-  readonly predicates?: WafRulePredicates[] | cdktf.IResolvable;
+  readonly predicates?: WafRulePredicates[] | cdktn.IResolvable;
 }
 export interface WafRulePredicates {
   /**
@@ -50,46 +50,46 @@ export interface WafRulePredicates {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_rule#negated WafRule#negated}
   */
-  readonly negated: boolean | cdktf.IResolvable;
+  readonly negated: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_rule#type WafRule#type}
   */
   readonly type: string;
 }
 
-export function wafRulePredicatesToTerraform(struct?: WafRulePredicates | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafRulePredicatesToTerraform(struct?: WafRulePredicates | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_id: cdktf.stringToTerraform(struct!.dataId),
-    negated: cdktf.booleanToTerraform(struct!.negated),
-    type: cdktf.stringToTerraform(struct!.type),
+    data_id: cdktn.stringToTerraform(struct!.dataId),
+    negated: cdktn.booleanToTerraform(struct!.negated),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function wafRulePredicatesToHclTerraform(struct?: WafRulePredicates | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafRulePredicatesToHclTerraform(struct?: WafRulePredicates | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_id: {
-      value: cdktf.stringToHclTerraform(struct!.dataId),
+      value: cdktn.stringToHclTerraform(struct!.dataId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     negated: {
-      value: cdktf.booleanToHclTerraform(struct!.negated),
+      value: cdktn.booleanToHclTerraform(struct!.negated),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,9 +100,9 @@ export function wafRulePredicatesToHclTerraform(struct?: WafRulePredicates | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WafRulePredicatesOutputReference extends cdktf.ComplexObject {
+export class WafRulePredicatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -110,11 +110,11 @@ export class WafRulePredicatesOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WafRulePredicates | cdktf.IResolvable | undefined {
+  public get internalValue(): WafRulePredicates | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -135,7 +135,7 @@ export class WafRulePredicatesOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WafRulePredicates | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WafRulePredicates | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -143,7 +143,7 @@ export class WafRulePredicatesOutputReference extends cdktf.ComplexObject {
       this._negated = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -170,11 +170,11 @@ export class WafRulePredicatesOutputReference extends cdktf.ComplexObject {
   }
 
   // negated - computed: false, optional: false, required: true
-  private _negated?: boolean | cdktf.IResolvable; 
+  private _negated?: boolean | cdktn.IResolvable; 
   public get negated() {
     return this.getBooleanAttribute('negated');
   }
-  public set negated(value: boolean | cdktf.IResolvable) {
+  public set negated(value: boolean | cdktn.IResolvable) {
     this._negated = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -196,15 +196,15 @@ export class WafRulePredicatesOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class WafRulePredicatesList extends cdktf.ComplexList {
-  public internalValue? : WafRulePredicates[] | cdktf.IResolvable
+export class WafRulePredicatesList extends cdktn.ComplexList {
+  public internalValue? : WafRulePredicates[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -219,7 +219,7 @@ export class WafRulePredicatesList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_rule aws_waf_rule}
 */
-export class WafRule extends cdktf.TerraformResource {
+export class WafRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -230,14 +230,14 @@ export class WafRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WafRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WafRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafRule to import
   * @param importFromId The id of the existing WafRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_waf_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_waf_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -363,7 +363,7 @@ export class WafRule extends cdktf.TerraformResource {
   public get predicates() {
     return this._predicates;
   }
-  public putPredicates(value: WafRulePredicates[] | cdktf.IResolvable) {
+  public putPredicates(value: WafRulePredicates[] | cdktn.IResolvable) {
     this._predicates.internalValue = value;
   }
   public resetPredicates() {
@@ -380,49 +380,49 @@ export class WafRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      metric_name: cdktf.stringToTerraform(this._metricName),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      predicates: cdktf.listMapper(wafRulePredicatesToTerraform, true)(this._predicates.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      metric_name: cdktn.stringToTerraform(this._metricName),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      predicates: cdktn.listMapper(wafRulePredicatesToTerraform, true)(this._predicates.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metric_name: {
-        value: cdktf.stringToHclTerraform(this._metricName),
+        value: cdktn.stringToHclTerraform(this._metricName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       predicates: {
-        value: cdktf.listMapperHcl(wafRulePredicatesToHclTerraform, true)(this._predicates.internalValue),
+        value: cdktn.listMapperHcl(wafRulePredicatesToHclTerraform, true)(this._predicates.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "WafRulePredicatesList",

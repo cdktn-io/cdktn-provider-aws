@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EcrPullThroughCacheRuleConfig extends cdktf.TerraformMetaArguments {
+export interface EcrPullThroughCacheRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_pull_through_cache_rule#credential_arn EcrPullThroughCacheRule#credential_arn}
   */
@@ -50,7 +50,7 @@ export interface EcrPullThroughCacheRuleConfig extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule}
 */
-export class EcrPullThroughCacheRule extends cdktf.TerraformResource {
+export class EcrPullThroughCacheRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class EcrPullThroughCacheRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EcrPullThroughCacheRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EcrPullThroughCacheRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EcrPullThroughCacheRule to import
   * @param importFromId The id of the existing EcrPullThroughCacheRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_pull_through_cache_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EcrPullThroughCacheRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_pull_through_cache_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_pull_through_cache_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -228,56 +228,56 @@ export class EcrPullThroughCacheRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      credential_arn: cdktf.stringToTerraform(this._credentialArn),
-      custom_role_arn: cdktf.stringToTerraform(this._customRoleArn),
-      ecr_repository_prefix: cdktf.stringToTerraform(this._ecrRepositoryPrefix),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      upstream_registry_url: cdktf.stringToTerraform(this._upstreamRegistryUrl),
-      upstream_repository_prefix: cdktf.stringToTerraform(this._upstreamRepositoryPrefix),
+      credential_arn: cdktn.stringToTerraform(this._credentialArn),
+      custom_role_arn: cdktn.stringToTerraform(this._customRoleArn),
+      ecr_repository_prefix: cdktn.stringToTerraform(this._ecrRepositoryPrefix),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      upstream_registry_url: cdktn.stringToTerraform(this._upstreamRegistryUrl),
+      upstream_repository_prefix: cdktn.stringToTerraform(this._upstreamRepositoryPrefix),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       credential_arn: {
-        value: cdktf.stringToHclTerraform(this._credentialArn),
+        value: cdktn.stringToHclTerraform(this._credentialArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_role_arn: {
-        value: cdktf.stringToHclTerraform(this._customRoleArn),
+        value: cdktn.stringToHclTerraform(this._customRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ecr_repository_prefix: {
-        value: cdktf.stringToHclTerraform(this._ecrRepositoryPrefix),
+        value: cdktn.stringToHclTerraform(this._ecrRepositoryPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       upstream_registry_url: {
-        value: cdktf.stringToHclTerraform(this._upstreamRegistryUrl),
+        value: cdktn.stringToHclTerraform(this._upstreamRegistryUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       upstream_repository_prefix: {
-        value: cdktf.stringToHclTerraform(this._upstreamRepositoryPrefix),
+        value: cdktn.stringToHclTerraform(this._upstreamRepositoryPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

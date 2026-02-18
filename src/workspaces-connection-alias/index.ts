@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkspacesConnectionAliasConfig extends cdktf.TerraformMetaArguments {
+export interface WorkspacesConnectionAliasConfig extends cdktn.TerraformMetaArguments {
   /**
   * The connection string specified for the connection alias. The connection string must be in the form of a fully qualified domain name (FQDN), such as www.example.com.
   *
@@ -50,32 +50,32 @@ export interface WorkspacesConnectionAliasTimeouts {
   readonly delete?: string;
 }
 
-export function workspacesConnectionAliasTimeoutsToTerraform(struct?: WorkspacesConnectionAliasTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspacesConnectionAliasTimeoutsToTerraform(struct?: WorkspacesConnectionAliasTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function workspacesConnectionAliasTimeoutsToHclTerraform(struct?: WorkspacesConnectionAliasTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspacesConnectionAliasTimeoutsToHclTerraform(struct?: WorkspacesConnectionAliasTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -86,19 +86,19 @@ export function workspacesConnectionAliasTimeoutsToHclTerraform(struct?: Workspa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspacesConnectionAliasTimeoutsOutputReference extends cdktf.ComplexObject {
+export class WorkspacesConnectionAliasTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspacesConnectionAliasTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspacesConnectionAliasTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -115,14 +115,14 @@ export class WorkspacesConnectionAliasTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspacesConnectionAliasTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspacesConnectionAliasTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -170,7 +170,7 @@ export class WorkspacesConnectionAliasTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_connection_alias aws_workspaces_connection_alias}
 */
-export class WorkspacesConnectionAlias extends cdktf.TerraformResource {
+export class WorkspacesConnectionAlias extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -181,14 +181,14 @@ export class WorkspacesConnectionAlias extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkspacesConnectionAlias resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkspacesConnectionAlias resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspacesConnectionAlias to import
   * @param importFromId The id of the existing WorkspacesConnectionAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_connection_alias#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspacesConnectionAlias to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspaces_connection_alias", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspaces_connection_alias", importId: importFromId, provider });
       }
 
   // ===========
@@ -289,7 +289,7 @@ export class WorkspacesConnectionAlias extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -316,9 +316,9 @@ export class WorkspacesConnectionAlias extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_string: cdktf.stringToTerraform(this._connectionString),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      connection_string: cdktn.stringToTerraform(this._connectionString),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: workspacesConnectionAliasTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -326,19 +326,19 @@ export class WorkspacesConnectionAlias extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       connection_string: {
-        value: cdktf.stringToHclTerraform(this._connectionString),
+        value: cdktn.stringToHclTerraform(this._connectionString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

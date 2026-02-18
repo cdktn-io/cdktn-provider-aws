@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiGatewayAuthorizerConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayAuthorizerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_authorizer#authorizer_credentials ApiGatewayAuthorizer#authorizer_credentials}
   */
@@ -66,7 +66,7 @@ export interface ApiGatewayAuthorizerConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_authorizer aws_api_gateway_authorizer}
 */
-export class ApiGatewayAuthorizer extends cdktf.TerraformResource {
+export class ApiGatewayAuthorizer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class ApiGatewayAuthorizer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiGatewayAuthorizer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiGatewayAuthorizer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiGatewayAuthorizer to import
   * @param importFromId The id of the existing ApiGatewayAuthorizer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_authorizer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiGatewayAuthorizer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_authorizer", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_authorizer", importId: importFromId, provider });
       }
 
   // ===========
@@ -248,7 +248,7 @@ export class ApiGatewayAuthorizer extends cdktf.TerraformResource {
   // provider_arns - computed: false, optional: true, required: false
   private _providerArns?: string[]; 
   public get providerArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('provider_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('provider_arns'));
   }
   public set providerArns(value: string[]) {
     this._providerArns = value;
@@ -312,84 +312,84 @@ export class ApiGatewayAuthorizer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authorizer_credentials: cdktf.stringToTerraform(this._authorizerCredentials),
-      authorizer_result_ttl_in_seconds: cdktf.numberToTerraform(this._authorizerResultTtlInSeconds),
-      authorizer_uri: cdktf.stringToTerraform(this._authorizerUri),
-      id: cdktf.stringToTerraform(this._id),
-      identity_source: cdktf.stringToTerraform(this._identitySource),
-      identity_validation_expression: cdktf.stringToTerraform(this._identityValidationExpression),
-      name: cdktf.stringToTerraform(this._name),
-      provider_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._providerArns),
-      region: cdktf.stringToTerraform(this._region),
-      rest_api_id: cdktf.stringToTerraform(this._restApiId),
-      type: cdktf.stringToTerraform(this._type),
+      authorizer_credentials: cdktn.stringToTerraform(this._authorizerCredentials),
+      authorizer_result_ttl_in_seconds: cdktn.numberToTerraform(this._authorizerResultTtlInSeconds),
+      authorizer_uri: cdktn.stringToTerraform(this._authorizerUri),
+      id: cdktn.stringToTerraform(this._id),
+      identity_source: cdktn.stringToTerraform(this._identitySource),
+      identity_validation_expression: cdktn.stringToTerraform(this._identityValidationExpression),
+      name: cdktn.stringToTerraform(this._name),
+      provider_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._providerArns),
+      region: cdktn.stringToTerraform(this._region),
+      rest_api_id: cdktn.stringToTerraform(this._restApiId),
+      type: cdktn.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authorizer_credentials: {
-        value: cdktf.stringToHclTerraform(this._authorizerCredentials),
+        value: cdktn.stringToHclTerraform(this._authorizerCredentials),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authorizer_result_ttl_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._authorizerResultTtlInSeconds),
+        value: cdktn.numberToHclTerraform(this._authorizerResultTtlInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       authorizer_uri: {
-        value: cdktf.stringToHclTerraform(this._authorizerUri),
+        value: cdktn.stringToHclTerraform(this._authorizerUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_source: {
-        value: cdktf.stringToHclTerraform(this._identitySource),
+        value: cdktn.stringToHclTerraform(this._identitySource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_validation_expression: {
-        value: cdktf.stringToHclTerraform(this._identityValidationExpression),
+        value: cdktn.stringToHclTerraform(this._identityValidationExpression),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provider_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._providerArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._providerArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rest_api_id: {
-        value: cdktf.stringToHclTerraform(this._restApiId),
+        value: cdktn.stringToHclTerraform(this._restApiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

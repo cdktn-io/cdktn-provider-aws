@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DxConnectionAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface DxConnectionAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}
   */
@@ -38,7 +38,7 @@ export interface DxConnectionAssociationConfig extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_connection_association aws_dx_connection_association}
 */
-export class DxConnectionAssociation extends cdktf.TerraformResource {
+export class DxConnectionAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class DxConnectionAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DxConnectionAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DxConnectionAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DxConnectionAssociation to import
   * @param importFromId The id of the existing DxConnectionAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_connection_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DxConnectionAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_connection_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_connection_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class DxConnectionAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_id: cdktf.stringToTerraform(this._connectionId),
-      id: cdktf.stringToTerraform(this._id),
-      lag_id: cdktf.stringToTerraform(this._lagId),
-      region: cdktf.stringToTerraform(this._region),
+      connection_id: cdktn.stringToTerraform(this._connectionId),
+      id: cdktn.stringToTerraform(this._id),
+      lag_id: cdktn.stringToTerraform(this._lagId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       connection_id: {
-        value: cdktf.stringToHclTerraform(this._connectionId),
+        value: cdktn.stringToHclTerraform(this._connectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lag_id: {
-        value: cdktf.stringToHclTerraform(this._lagId),
+        value: cdktn.stringToHclTerraform(this._lagId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

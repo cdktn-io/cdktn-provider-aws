@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SnsTopicConfig extends cdktf.TerraformMetaArguments {
+export interface SnsTopicConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_topic#application_failure_feedback_role_arn SnsTopic#application_failure_feedback_role_arn}
   */
@@ -31,7 +31,7 @@ export interface SnsTopicConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_topic#content_based_deduplication SnsTopic#content_based_deduplication}
   */
-  readonly contentBasedDeduplication?: boolean | cdktf.IResolvable;
+  readonly contentBasedDeduplication?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_topic#delivery_policy SnsTopic#delivery_policy}
   */
@@ -47,7 +47,7 @@ export interface SnsTopicConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_topic#fifo_topic SnsTopic#fifo_topic}
   */
-  readonly fifoTopic?: boolean | cdktf.IResolvable;
+  readonly fifoTopic?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_topic#firehose_failure_feedback_role_arn SnsTopic#firehose_failure_feedback_role_arn}
   */
@@ -146,7 +146,7 @@ export interface SnsTopicConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_topic aws_sns_topic}
 */
-export class SnsTopic extends cdktf.TerraformResource {
+export class SnsTopic extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -157,14 +157,14 @@ export class SnsTopic extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SnsTopic resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SnsTopic resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SnsTopic to import
   * @param importFromId The id of the existing SnsTopic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_topic#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SnsTopic to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sns_topic", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sns_topic", importId: importFromId, provider });
       }
 
   // ===========
@@ -306,11 +306,11 @@ export class SnsTopic extends cdktf.TerraformResource {
   }
 
   // content_based_deduplication - computed: false, optional: true, required: false
-  private _contentBasedDeduplication?: boolean | cdktf.IResolvable; 
+  private _contentBasedDeduplication?: boolean | cdktn.IResolvable; 
   public get contentBasedDeduplication() {
     return this.getBooleanAttribute('content_based_deduplication');
   }
-  public set contentBasedDeduplication(value: boolean | cdktf.IResolvable) {
+  public set contentBasedDeduplication(value: boolean | cdktn.IResolvable) {
     this._contentBasedDeduplication = value;
   }
   public resetContentBasedDeduplication() {
@@ -370,11 +370,11 @@ export class SnsTopic extends cdktf.TerraformResource {
   }
 
   // fifo_topic - computed: false, optional: true, required: false
-  private _fifoTopic?: boolean | cdktf.IResolvable; 
+  private _fifoTopic?: boolean | cdktn.IResolvable; 
   public get fifoTopic() {
     return this.getBooleanAttribute('fifo_topic');
   }
-  public set fifoTopic(value: boolean | cdktf.IResolvable) {
+  public set fifoTopic(value: boolean | cdktn.IResolvable) {
     this._fifoTopic = value;
   }
   public resetFifoTopic() {
@@ -748,224 +748,224 @@ export class SnsTopic extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_failure_feedback_role_arn: cdktf.stringToTerraform(this._applicationFailureFeedbackRoleArn),
-      application_success_feedback_role_arn: cdktf.stringToTerraform(this._applicationSuccessFeedbackRoleArn),
-      application_success_feedback_sample_rate: cdktf.numberToTerraform(this._applicationSuccessFeedbackSampleRate),
-      archive_policy: cdktf.stringToTerraform(this._archivePolicy),
-      content_based_deduplication: cdktf.booleanToTerraform(this._contentBasedDeduplication),
-      delivery_policy: cdktf.stringToTerraform(this._deliveryPolicy),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      fifo_throughput_scope: cdktf.stringToTerraform(this._fifoThroughputScope),
-      fifo_topic: cdktf.booleanToTerraform(this._fifoTopic),
-      firehose_failure_feedback_role_arn: cdktf.stringToTerraform(this._firehoseFailureFeedbackRoleArn),
-      firehose_success_feedback_role_arn: cdktf.stringToTerraform(this._firehoseSuccessFeedbackRoleArn),
-      firehose_success_feedback_sample_rate: cdktf.numberToTerraform(this._firehoseSuccessFeedbackSampleRate),
-      http_failure_feedback_role_arn: cdktf.stringToTerraform(this._httpFailureFeedbackRoleArn),
-      http_success_feedback_role_arn: cdktf.stringToTerraform(this._httpSuccessFeedbackRoleArn),
-      http_success_feedback_sample_rate: cdktf.numberToTerraform(this._httpSuccessFeedbackSampleRate),
-      id: cdktf.stringToTerraform(this._id),
-      kms_master_key_id: cdktf.stringToTerraform(this._kmsMasterKeyId),
-      lambda_failure_feedback_role_arn: cdktf.stringToTerraform(this._lambdaFailureFeedbackRoleArn),
-      lambda_success_feedback_role_arn: cdktf.stringToTerraform(this._lambdaSuccessFeedbackRoleArn),
-      lambda_success_feedback_sample_rate: cdktf.numberToTerraform(this._lambdaSuccessFeedbackSampleRate),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      policy: cdktf.stringToTerraform(this._policy),
-      region: cdktf.stringToTerraform(this._region),
-      signature_version: cdktf.numberToTerraform(this._signatureVersion),
-      sqs_failure_feedback_role_arn: cdktf.stringToTerraform(this._sqsFailureFeedbackRoleArn),
-      sqs_success_feedback_role_arn: cdktf.stringToTerraform(this._sqsSuccessFeedbackRoleArn),
-      sqs_success_feedback_sample_rate: cdktf.numberToTerraform(this._sqsSuccessFeedbackSampleRate),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      tracing_config: cdktf.stringToTerraform(this._tracingConfig),
+      application_failure_feedback_role_arn: cdktn.stringToTerraform(this._applicationFailureFeedbackRoleArn),
+      application_success_feedback_role_arn: cdktn.stringToTerraform(this._applicationSuccessFeedbackRoleArn),
+      application_success_feedback_sample_rate: cdktn.numberToTerraform(this._applicationSuccessFeedbackSampleRate),
+      archive_policy: cdktn.stringToTerraform(this._archivePolicy),
+      content_based_deduplication: cdktn.booleanToTerraform(this._contentBasedDeduplication),
+      delivery_policy: cdktn.stringToTerraform(this._deliveryPolicy),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      fifo_throughput_scope: cdktn.stringToTerraform(this._fifoThroughputScope),
+      fifo_topic: cdktn.booleanToTerraform(this._fifoTopic),
+      firehose_failure_feedback_role_arn: cdktn.stringToTerraform(this._firehoseFailureFeedbackRoleArn),
+      firehose_success_feedback_role_arn: cdktn.stringToTerraform(this._firehoseSuccessFeedbackRoleArn),
+      firehose_success_feedback_sample_rate: cdktn.numberToTerraform(this._firehoseSuccessFeedbackSampleRate),
+      http_failure_feedback_role_arn: cdktn.stringToTerraform(this._httpFailureFeedbackRoleArn),
+      http_success_feedback_role_arn: cdktn.stringToTerraform(this._httpSuccessFeedbackRoleArn),
+      http_success_feedback_sample_rate: cdktn.numberToTerraform(this._httpSuccessFeedbackSampleRate),
+      id: cdktn.stringToTerraform(this._id),
+      kms_master_key_id: cdktn.stringToTerraform(this._kmsMasterKeyId),
+      lambda_failure_feedback_role_arn: cdktn.stringToTerraform(this._lambdaFailureFeedbackRoleArn),
+      lambda_success_feedback_role_arn: cdktn.stringToTerraform(this._lambdaSuccessFeedbackRoleArn),
+      lambda_success_feedback_sample_rate: cdktn.numberToTerraform(this._lambdaSuccessFeedbackSampleRate),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      policy: cdktn.stringToTerraform(this._policy),
+      region: cdktn.stringToTerraform(this._region),
+      signature_version: cdktn.numberToTerraform(this._signatureVersion),
+      sqs_failure_feedback_role_arn: cdktn.stringToTerraform(this._sqsFailureFeedbackRoleArn),
+      sqs_success_feedback_role_arn: cdktn.stringToTerraform(this._sqsSuccessFeedbackRoleArn),
+      sqs_success_feedback_sample_rate: cdktn.numberToTerraform(this._sqsSuccessFeedbackSampleRate),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      tracing_config: cdktn.stringToTerraform(this._tracingConfig),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_failure_feedback_role_arn: {
-        value: cdktf.stringToHclTerraform(this._applicationFailureFeedbackRoleArn),
+        value: cdktn.stringToHclTerraform(this._applicationFailureFeedbackRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       application_success_feedback_role_arn: {
-        value: cdktf.stringToHclTerraform(this._applicationSuccessFeedbackRoleArn),
+        value: cdktn.stringToHclTerraform(this._applicationSuccessFeedbackRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       application_success_feedback_sample_rate: {
-        value: cdktf.numberToHclTerraform(this._applicationSuccessFeedbackSampleRate),
+        value: cdktn.numberToHclTerraform(this._applicationSuccessFeedbackSampleRate),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       archive_policy: {
-        value: cdktf.stringToHclTerraform(this._archivePolicy),
+        value: cdktn.stringToHclTerraform(this._archivePolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_based_deduplication: {
-        value: cdktf.booleanToHclTerraform(this._contentBasedDeduplication),
+        value: cdktn.booleanToHclTerraform(this._contentBasedDeduplication),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       delivery_policy: {
-        value: cdktf.stringToHclTerraform(this._deliveryPolicy),
+        value: cdktn.stringToHclTerraform(this._deliveryPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       fifo_throughput_scope: {
-        value: cdktf.stringToHclTerraform(this._fifoThroughputScope),
+        value: cdktn.stringToHclTerraform(this._fifoThroughputScope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       fifo_topic: {
-        value: cdktf.booleanToHclTerraform(this._fifoTopic),
+        value: cdktn.booleanToHclTerraform(this._fifoTopic),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       firehose_failure_feedback_role_arn: {
-        value: cdktf.stringToHclTerraform(this._firehoseFailureFeedbackRoleArn),
+        value: cdktn.stringToHclTerraform(this._firehoseFailureFeedbackRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       firehose_success_feedback_role_arn: {
-        value: cdktf.stringToHclTerraform(this._firehoseSuccessFeedbackRoleArn),
+        value: cdktn.stringToHclTerraform(this._firehoseSuccessFeedbackRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       firehose_success_feedback_sample_rate: {
-        value: cdktf.numberToHclTerraform(this._firehoseSuccessFeedbackSampleRate),
+        value: cdktn.numberToHclTerraform(this._firehoseSuccessFeedbackSampleRate),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       http_failure_feedback_role_arn: {
-        value: cdktf.stringToHclTerraform(this._httpFailureFeedbackRoleArn),
+        value: cdktn.stringToHclTerraform(this._httpFailureFeedbackRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       http_success_feedback_role_arn: {
-        value: cdktf.stringToHclTerraform(this._httpSuccessFeedbackRoleArn),
+        value: cdktn.stringToHclTerraform(this._httpSuccessFeedbackRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       http_success_feedback_sample_rate: {
-        value: cdktf.numberToHclTerraform(this._httpSuccessFeedbackSampleRate),
+        value: cdktn.numberToHclTerraform(this._httpSuccessFeedbackSampleRate),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_master_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsMasterKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsMasterKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lambda_failure_feedback_role_arn: {
-        value: cdktf.stringToHclTerraform(this._lambdaFailureFeedbackRoleArn),
+        value: cdktn.stringToHclTerraform(this._lambdaFailureFeedbackRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lambda_success_feedback_role_arn: {
-        value: cdktf.stringToHclTerraform(this._lambdaSuccessFeedbackRoleArn),
+        value: cdktn.stringToHclTerraform(this._lambdaSuccessFeedbackRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lambda_success_feedback_sample_rate: {
-        value: cdktf.numberToHclTerraform(this._lambdaSuccessFeedbackSampleRate),
+        value: cdktn.numberToHclTerraform(this._lambdaSuccessFeedbackSampleRate),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy: {
-        value: cdktf.stringToHclTerraform(this._policy),
+        value: cdktn.stringToHclTerraform(this._policy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       signature_version: {
-        value: cdktf.numberToHclTerraform(this._signatureVersion),
+        value: cdktn.numberToHclTerraform(this._signatureVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       sqs_failure_feedback_role_arn: {
-        value: cdktf.stringToHclTerraform(this._sqsFailureFeedbackRoleArn),
+        value: cdktn.stringToHclTerraform(this._sqsFailureFeedbackRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sqs_success_feedback_role_arn: {
-        value: cdktf.stringToHclTerraform(this._sqsSuccessFeedbackRoleArn),
+        value: cdktn.stringToHclTerraform(this._sqsSuccessFeedbackRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sqs_success_feedback_sample_rate: {
-        value: cdktf.numberToHclTerraform(this._sqsSuccessFeedbackSampleRate),
+        value: cdktn.numberToHclTerraform(this._sqsSuccessFeedbackSampleRate),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tracing_config: {
-        value: cdktf.stringToHclTerraform(this._tracingConfig),
+        value: cdktn.stringToHclTerraform(this._tracingConfig),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

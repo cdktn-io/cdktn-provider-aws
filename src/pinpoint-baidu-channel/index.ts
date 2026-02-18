@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PinpointBaiduChannelConfig extends cdktf.TerraformMetaArguments {
+export interface PinpointBaiduChannelConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_baidu_channel#api_key PinpointBaiduChannel#api_key}
   */
@@ -23,7 +23,7 @@ export interface PinpointBaiduChannelConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_baidu_channel#enabled PinpointBaiduChannel#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_baidu_channel#id PinpointBaiduChannel#id}
   *
@@ -46,7 +46,7 @@ export interface PinpointBaiduChannelConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_baidu_channel aws_pinpoint_baidu_channel}
 */
-export class PinpointBaiduChannel extends cdktf.TerraformResource {
+export class PinpointBaiduChannel extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class PinpointBaiduChannel extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PinpointBaiduChannel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PinpointBaiduChannel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PinpointBaiduChannel to import
   * @param importFromId The id of the existing PinpointBaiduChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_baidu_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PinpointBaiduChannel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_pinpoint_baidu_channel", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_pinpoint_baidu_channel", importId: importFromId, provider });
       }
 
   // ===========
@@ -133,11 +133,11 @@ export class PinpointBaiduChannel extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -199,49 +199,49 @@ export class PinpointBaiduChannel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key: cdktf.stringToTerraform(this._apiKey),
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      secret_key: cdktf.stringToTerraform(this._secretKey),
+      api_key: cdktn.stringToTerraform(this._apiKey),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      secret_key: cdktn.stringToTerraform(this._secretKey),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_key: {
-        value: cdktf.stringToHclTerraform(this._apiKey),
+        value: cdktn.stringToHclTerraform(this._apiKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_key: {
-        value: cdktf.stringToHclTerraform(this._secretKey),
+        value: cdktn.stringToHclTerraform(this._secretKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SagemakerNotebookInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerNotebookInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_notebook_instance#additional_code_repositories SagemakerNotebookInstance#additional_code_repositories}
   */
@@ -100,24 +100,24 @@ export interface SagemakerNotebookInstanceInstanceMetadataServiceConfiguration {
 }
 
 export function sagemakerNotebookInstanceInstanceMetadataServiceConfigurationToTerraform(struct?: SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference | SagemakerNotebookInstanceInstanceMetadataServiceConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    minimum_instance_metadata_service_version: cdktf.stringToTerraform(struct!.minimumInstanceMetadataServiceVersion),
+    minimum_instance_metadata_service_version: cdktn.stringToTerraform(struct!.minimumInstanceMetadataServiceVersion),
   }
 }
 
 
 export function sagemakerNotebookInstanceInstanceMetadataServiceConfigurationToHclTerraform(struct?: SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference | SagemakerNotebookInstanceInstanceMetadataServiceConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     minimum_instance_metadata_service_version: {
-      value: cdktf.stringToHclTerraform(struct!.minimumInstanceMetadataServiceVersion),
+      value: cdktn.stringToHclTerraform(struct!.minimumInstanceMetadataServiceVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -128,14 +128,14 @@ export function sagemakerNotebookInstanceInstanceMetadataServiceConfigurationToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference extends cdktf.ComplexObject {
+export class SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -180,7 +180,7 @@ export class SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutput
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_notebook_instance aws_sagemaker_notebook_instance}
 */
-export class SagemakerNotebookInstance extends cdktf.TerraformResource {
+export class SagemakerNotebookInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -191,14 +191,14 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SagemakerNotebookInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SagemakerNotebookInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerNotebookInstance to import
   * @param importFromId The id of the existing SagemakerNotebookInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_notebook_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerNotebookInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_notebook_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_notebook_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -255,7 +255,7 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
   // additional_code_repositories - computed: false, optional: true, required: false
   private _additionalCodeRepositories?: string[]; 
   public get additionalCodeRepositories() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_code_repositories'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_code_repositories'));
   }
   public set additionalCodeRepositories(value: string[]) {
     this._additionalCodeRepositories = value;
@@ -448,7 +448,7 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -552,23 +552,23 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_code_repositories: cdktf.listMapper(cdktf.stringToTerraform, false)(this._additionalCodeRepositories),
-      default_code_repository: cdktf.stringToTerraform(this._defaultCodeRepository),
-      direct_internet_access: cdktf.stringToTerraform(this._directInternetAccess),
-      id: cdktf.stringToTerraform(this._id),
-      instance_type: cdktf.stringToTerraform(this._instanceType),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      lifecycle_config_name: cdktf.stringToTerraform(this._lifecycleConfigName),
-      name: cdktf.stringToTerraform(this._name),
-      platform_identifier: cdktf.stringToTerraform(this._platformIdentifier),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      root_access: cdktf.stringToTerraform(this._rootAccess),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      volume_size: cdktf.numberToTerraform(this._volumeSize),
+      additional_code_repositories: cdktn.listMapper(cdktn.stringToTerraform, false)(this._additionalCodeRepositories),
+      default_code_repository: cdktn.stringToTerraform(this._defaultCodeRepository),
+      direct_internet_access: cdktn.stringToTerraform(this._directInternetAccess),
+      id: cdktn.stringToTerraform(this._id),
+      instance_type: cdktn.stringToTerraform(this._instanceType),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      lifecycle_config_name: cdktn.stringToTerraform(this._lifecycleConfigName),
+      name: cdktn.stringToTerraform(this._name),
+      platform_identifier: cdktn.stringToTerraform(this._platformIdentifier),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      root_access: cdktn.stringToTerraform(this._rootAccess),
+      security_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroups),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      volume_size: cdktn.numberToTerraform(this._volumeSize),
       instance_metadata_service_configuration: sagemakerNotebookInstanceInstanceMetadataServiceConfigurationToTerraform(this._instanceMetadataServiceConfiguration.internalValue),
     };
   }
@@ -576,103 +576,103 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_code_repositories: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._additionalCodeRepositories),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._additionalCodeRepositories),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       default_code_repository: {
-        value: cdktf.stringToHclTerraform(this._defaultCodeRepository),
+        value: cdktn.stringToHclTerraform(this._defaultCodeRepository),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       direct_internet_access: {
-        value: cdktf.stringToHclTerraform(this._directInternetAccess),
+        value: cdktn.stringToHclTerraform(this._directInternetAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_type: {
-        value: cdktf.stringToHclTerraform(this._instanceType),
+        value: cdktn.stringToHclTerraform(this._instanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lifecycle_config_name: {
-        value: cdktf.stringToHclTerraform(this._lifecycleConfigName),
+        value: cdktn.stringToHclTerraform(this._lifecycleConfigName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       platform_identifier: {
-        value: cdktf.stringToHclTerraform(this._platformIdentifier),
+        value: cdktn.stringToHclTerraform(this._platformIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       root_access: {
-        value: cdktf.stringToHclTerraform(this._rootAccess),
+        value: cdktn.stringToHclTerraform(this._rootAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroups),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       volume_size: {
-        value: cdktf.numberToHclTerraform(this._volumeSize),
+        value: cdktn.numberToHclTerraform(this._volumeSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

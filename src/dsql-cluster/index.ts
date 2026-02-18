@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DsqlClusterConfig extends cdktf.TerraformMetaArguments {
+export interface DsqlClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dsql_cluster#deletion_protection_enabled DsqlCluster#deletion_protection_enabled}
   */
-  readonly deletionProtectionEnabled?: boolean | cdktf.IResolvable;
+  readonly deletionProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dsql_cluster#force_destroy DsqlCluster#force_destroy}
   */
-  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dsql_cluster#kms_encryption_key DsqlCluster#kms_encryption_key}
   */
@@ -39,7 +39,7 @@ export interface DsqlClusterConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dsql_cluster#multi_region_properties DsqlCluster#multi_region_properties}
   */
-  readonly multiRegionProperties?: DsqlClusterMultiRegionProperties[] | cdktf.IResolvable;
+  readonly multiRegionProperties?: DsqlClusterMultiRegionProperties[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -51,8 +51,8 @@ export interface DsqlClusterEncryptionDetails {
 }
 
 export function dsqlClusterEncryptionDetailsToTerraform(struct?: DsqlClusterEncryptionDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -61,8 +61,8 @@ export function dsqlClusterEncryptionDetailsToTerraform(struct?: DsqlClusterEncr
 
 
 export function dsqlClusterEncryptionDetailsToHclTerraform(struct?: DsqlClusterEncryptionDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -70,7 +70,7 @@ export function dsqlClusterEncryptionDetailsToHclTerraform(struct?: DsqlClusterE
   return attrs;
 }
 
-export class DsqlClusterEncryptionDetailsOutputReference extends cdktf.ComplexObject {
+export class DsqlClusterEncryptionDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -79,7 +79,7 @@ export class DsqlClusterEncryptionDetailsOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -109,14 +109,14 @@ export class DsqlClusterEncryptionDetailsOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DsqlClusterEncryptionDetailsList extends cdktf.ComplexList {
+export class DsqlClusterEncryptionDetailsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -138,32 +138,32 @@ export interface DsqlClusterMultiRegionProperties {
   readonly witnessRegion?: string;
 }
 
-export function dsqlClusterMultiRegionPropertiesToTerraform(struct?: DsqlClusterMultiRegionProperties | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dsqlClusterMultiRegionPropertiesToTerraform(struct?: DsqlClusterMultiRegionProperties | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    clusters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.clusters),
-    witness_region: cdktf.stringToTerraform(struct!.witnessRegion),
+    clusters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.clusters),
+    witness_region: cdktn.stringToTerraform(struct!.witnessRegion),
   }
 }
 
 
-export function dsqlClusterMultiRegionPropertiesToHclTerraform(struct?: DsqlClusterMultiRegionProperties | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dsqlClusterMultiRegionPropertiesToHclTerraform(struct?: DsqlClusterMultiRegionProperties | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     clusters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.clusters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.clusters),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     witness_region: {
-      value: cdktf.stringToHclTerraform(struct!.witnessRegion),
+      value: cdktn.stringToHclTerraform(struct!.witnessRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -174,9 +174,9 @@ export function dsqlClusterMultiRegionPropertiesToHclTerraform(struct?: DsqlClus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DsqlClusterMultiRegionPropertiesOutputReference extends cdktf.ComplexObject {
+export class DsqlClusterMultiRegionPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -184,11 +184,11 @@ export class DsqlClusterMultiRegionPropertiesOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DsqlClusterMultiRegionProperties | cdktf.IResolvable | undefined {
+  public get internalValue(): DsqlClusterMultiRegionProperties | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -205,14 +205,14 @@ export class DsqlClusterMultiRegionPropertiesOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DsqlClusterMultiRegionProperties | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DsqlClusterMultiRegionProperties | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._clusters = undefined;
       this._witnessRegion = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -227,7 +227,7 @@ export class DsqlClusterMultiRegionPropertiesOutputReference extends cdktf.Compl
   // clusters - computed: true, optional: true, required: false
   private _clusters?: string[]; 
   public get clusters() {
-    return cdktf.Fn.tolist(this.getListAttribute('clusters'));
+    return cdktn.Fn.tolist(this.getListAttribute('clusters'));
   }
   public set clusters(value: string[]) {
     this._clusters = value;
@@ -257,15 +257,15 @@ export class DsqlClusterMultiRegionPropertiesOutputReference extends cdktf.Compl
   }
 }
 
-export class DsqlClusterMultiRegionPropertiesList extends cdktf.ComplexList {
-  public internalValue? : DsqlClusterMultiRegionProperties[] | cdktf.IResolvable
+export class DsqlClusterMultiRegionPropertiesList extends cdktn.ComplexList {
+  public internalValue? : DsqlClusterMultiRegionProperties[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -297,39 +297,39 @@ export interface DsqlClusterTimeouts {
   readonly update?: string;
 }
 
-export function dsqlClusterTimeoutsToTerraform(struct?: DsqlClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dsqlClusterTimeoutsToTerraform(struct?: DsqlClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dsqlClusterTimeoutsToHclTerraform(struct?: DsqlClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dsqlClusterTimeoutsToHclTerraform(struct?: DsqlClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -340,19 +340,19 @@ export function dsqlClusterTimeoutsToHclTerraform(struct?: DsqlClusterTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DsqlClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DsqlClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DsqlClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DsqlClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -373,7 +373,7 @@ export class DsqlClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DsqlClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DsqlClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -381,7 +381,7 @@ export class DsqlClusterTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -446,7 +446,7 @@ export class DsqlClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dsql_cluster aws_dsql_cluster}
 */
-export class DsqlCluster extends cdktf.TerraformResource {
+export class DsqlCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -457,14 +457,14 @@ export class DsqlCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DsqlCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DsqlCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DsqlCluster to import
   * @param importFromId The id of the existing DsqlCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dsql_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DsqlCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dsql_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dsql_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -513,11 +513,11 @@ export class DsqlCluster extends cdktf.TerraformResource {
   }
 
   // deletion_protection_enabled - computed: true, optional: true, required: false
-  private _deletionProtectionEnabled?: boolean | cdktf.IResolvable; 
+  private _deletionProtectionEnabled?: boolean | cdktn.IResolvable; 
   public get deletionProtectionEnabled() {
     return this.getBooleanAttribute('deletion_protection_enabled');
   }
-  public set deletionProtectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set deletionProtectionEnabled(value: boolean | cdktn.IResolvable) {
     this._deletionProtectionEnabled = value;
   }
   public resetDeletionProtectionEnabled() {
@@ -535,11 +535,11 @@ export class DsqlCluster extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: true, optional: true, required: false
-  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  private _forceDestroy?: boolean | cdktn.IResolvable; 
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+  public set forceDestroy(value: boolean | cdktn.IResolvable) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -604,7 +604,7 @@ export class DsqlCluster extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -619,7 +619,7 @@ export class DsqlCluster extends cdktf.TerraformResource {
   public get multiRegionProperties() {
     return this._multiRegionProperties;
   }
-  public putMultiRegionProperties(value: DsqlClusterMultiRegionProperties[] | cdktf.IResolvable) {
+  public putMultiRegionProperties(value: DsqlClusterMultiRegionProperties[] | cdktn.IResolvable) {
     this._multiRegionProperties.internalValue = value;
   }
   public resetMultiRegionProperties() {
@@ -652,12 +652,12 @@ export class DsqlCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_protection_enabled: cdktf.booleanToTerraform(this._deletionProtectionEnabled),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      kms_encryption_key: cdktf.stringToTerraform(this._kmsEncryptionKey),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      multi_region_properties: cdktf.listMapper(dsqlClusterMultiRegionPropertiesToTerraform, true)(this._multiRegionProperties.internalValue),
+      deletion_protection_enabled: cdktn.booleanToTerraform(this._deletionProtectionEnabled),
+      force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
+      kms_encryption_key: cdktn.stringToTerraform(this._kmsEncryptionKey),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      multi_region_properties: cdktn.listMapper(dsqlClusterMultiRegionPropertiesToTerraform, true)(this._multiRegionProperties.internalValue),
       timeouts: dsqlClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -665,37 +665,37 @@ export class DsqlCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deletion_protection_enabled: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtectionEnabled),
+        value: cdktn.booleanToHclTerraform(this._deletionProtectionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_destroy: {
-        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        value: cdktn.booleanToHclTerraform(this._forceDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       kms_encryption_key: {
-        value: cdktf.stringToHclTerraform(this._kmsEncryptionKey),
+        value: cdktn.stringToHclTerraform(this._kmsEncryptionKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       multi_region_properties: {
-        value: cdktf.listMapperHcl(dsqlClusterMultiRegionPropertiesToHclTerraform, true)(this._multiRegionProperties.internalValue),
+        value: cdktn.listMapperHcl(dsqlClusterMultiRegionPropertiesToHclTerraform, true)(this._multiRegionProperties.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DsqlClusterMultiRegionPropertiesList",

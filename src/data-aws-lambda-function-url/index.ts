@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsLambdaFunctionUrlConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsLambdaFunctionUrlConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/lambda_function_url#function_name DataAwsLambdaFunctionUrl#function_name}
   */
@@ -38,8 +38,8 @@ export interface DataAwsLambdaFunctionUrlCors {
 }
 
 export function dataAwsLambdaFunctionUrlCorsToTerraform(struct?: DataAwsLambdaFunctionUrlCors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAwsLambdaFunctionUrlCorsToTerraform(struct?: DataAwsLambdaFu
 
 
 export function dataAwsLambdaFunctionUrlCorsToHclTerraform(struct?: DataAwsLambdaFunctionUrlCors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAwsLambdaFunctionUrlCorsToHclTerraform(struct?: DataAwsLambd
   return attrs;
 }
 
-export class DataAwsLambdaFunctionUrlCorsOutputReference extends cdktf.ComplexObject {
+export class DataAwsLambdaFunctionUrlCorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAwsLambdaFunctionUrlCorsOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -116,14 +116,14 @@ export class DataAwsLambdaFunctionUrlCorsOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DataAwsLambdaFunctionUrlCorsList extends cdktf.ComplexList {
+export class DataAwsLambdaFunctionUrlCorsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -138,7 +138,7 @@ export class DataAwsLambdaFunctionUrlCorsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/lambda_function_url aws_lambda_function_url}
 */
-export class DataAwsLambdaFunctionUrl extends cdktf.TerraformDataSource {
+export class DataAwsLambdaFunctionUrl extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -149,14 +149,14 @@ export class DataAwsLambdaFunctionUrl extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsLambdaFunctionUrl resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsLambdaFunctionUrl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLambdaFunctionUrl to import
   * @param importFromId The id of the existing DataAwsLambdaFunctionUrl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/lambda_function_url#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLambdaFunctionUrl to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_function_url", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_function_url", importId: importFromId, provider });
       }
 
   // ===========
@@ -304,35 +304,35 @@ export class DataAwsLambdaFunctionUrl extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      function_name: cdktf.stringToTerraform(this._functionName),
-      id: cdktf.stringToTerraform(this._id),
-      qualifier: cdktf.stringToTerraform(this._qualifier),
-      region: cdktf.stringToTerraform(this._region),
+      function_name: cdktn.stringToTerraform(this._functionName),
+      id: cdktn.stringToTerraform(this._id),
+      qualifier: cdktn.stringToTerraform(this._qualifier),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       function_name: {
-        value: cdktf.stringToHclTerraform(this._functionName),
+        value: cdktn.stringToHclTerraform(this._functionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       qualifier: {
-        value: cdktf.stringToHclTerraform(this._qualifier),
+        value: cdktn.stringToHclTerraform(this._qualifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

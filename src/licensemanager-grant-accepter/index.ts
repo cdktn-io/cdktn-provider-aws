@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LicensemanagerGrantAccepterConfig extends cdktf.TerraformMetaArguments {
+export interface LicensemanagerGrantAccepterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Amazon Resource Name (ARN) of the grant.
   *
@@ -36,7 +36,7 @@ export interface LicensemanagerGrantAccepterConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter}
 */
-export class LicensemanagerGrantAccepter extends cdktf.TerraformResource {
+export class LicensemanagerGrantAccepter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class LicensemanagerGrantAccepter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LicensemanagerGrantAccepter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LicensemanagerGrantAccepter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LicensemanagerGrantAccepter to import
   * @param importFromId The id of the existing LicensemanagerGrantAccepter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/licensemanager_grant_accepter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LicensemanagerGrantAccepter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_licensemanager_grant_accepter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_licensemanager_grant_accepter", importId: importFromId, provider });
       }
 
   // ===========
@@ -95,7 +95,7 @@ export class LicensemanagerGrantAccepter extends cdktf.TerraformResource {
 
   // allowed_operations - computed: true, optional: false, required: false
   public get allowedOperations() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_operations'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_operations'));
   }
 
   // grant_arn - computed: false, optional: false, required: true
@@ -184,28 +184,28 @@ export class LicensemanagerGrantAccepter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      grant_arn: cdktf.stringToTerraform(this._grantArn),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      grant_arn: cdktn.stringToTerraform(this._grantArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       grant_arn: {
-        value: cdktf.stringToHclTerraform(this._grantArn),
+        value: cdktn.stringToHclTerraform(this._grantArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BedrockagentcoreGatewayTargetConfig extends cdktf.TerraformMetaArguments {
+export interface BedrockagentcoreGatewayTargetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
@@ -35,13 +35,13 @@ export interface BedrockagentcoreGatewayTargetConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#credential_provider_configuration BedrockagentcoreGatewayTarget#credential_provider_configuration}
   */
-  readonly credentialProviderConfiguration?: BedrockagentcoreGatewayTargetCredentialProviderConfiguration[] | cdktf.IResolvable;
+  readonly credentialProviderConfiguration?: BedrockagentcoreGatewayTargetCredentialProviderConfiguration[] | cdktn.IResolvable;
   /**
   * target_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#target_configuration BedrockagentcoreGatewayTarget#target_configuration}
   */
-  readonly targetConfiguration?: BedrockagentcoreGatewayTargetTargetConfiguration[] | cdktf.IResolvable;
+  readonly targetConfiguration?: BedrockagentcoreGatewayTargetTargetConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -68,46 +68,46 @@ export interface BedrockagentcoreGatewayTargetCredentialProviderConfigurationApi
   readonly providerArn: string;
 }
 
-export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyToTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyToTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    credential_location: cdktf.stringToTerraform(struct!.credentialLocation),
-    credential_parameter_name: cdktf.stringToTerraform(struct!.credentialParameterName),
-    credential_prefix: cdktf.stringToTerraform(struct!.credentialPrefix),
-    provider_arn: cdktf.stringToTerraform(struct!.providerArn),
+    credential_location: cdktn.stringToTerraform(struct!.credentialLocation),
+    credential_parameter_name: cdktn.stringToTerraform(struct!.credentialParameterName),
+    credential_prefix: cdktn.stringToTerraform(struct!.credentialPrefix),
+    provider_arn: cdktn.stringToTerraform(struct!.providerArn),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyToHclTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyToHclTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     credential_location: {
-      value: cdktf.stringToHclTerraform(struct!.credentialLocation),
+      value: cdktn.stringToHclTerraform(struct!.credentialLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     credential_parameter_name: {
-      value: cdktf.stringToHclTerraform(struct!.credentialParameterName),
+      value: cdktn.stringToHclTerraform(struct!.credentialParameterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     credential_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.credentialPrefix),
+      value: cdktn.stringToHclTerraform(struct!.credentialPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     provider_arn: {
-      value: cdktf.stringToHclTerraform(struct!.providerArn),
+      value: cdktn.stringToHclTerraform(struct!.providerArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,9 +118,9 @@ export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationApiK
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -128,11 +128,11 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -157,7 +157,7 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -166,7 +166,7 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyO
       this._credentialPrefix = undefined;
       this._providerArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -242,15 +242,15 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyO
   }
 }
 
-export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -264,9 +264,9 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyL
 export interface BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole {
 }
 
-export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleToTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleToTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -274,9 +274,9 @@ export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationGate
 }
 
 
-export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleToHclTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleToHclTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -284,9 +284,9 @@ export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationGate
   return attrs;
 }
 
-export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -294,11 +294,11 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationGateway
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -307,12 +307,12 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationGateway
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -323,15 +323,15 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationGateway
   }
 }
 
-export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -357,39 +357,39 @@ export interface BedrockagentcoreGatewayTargetCredentialProviderConfigurationOau
   readonly scopes: string[];
 }
 
-export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthToTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthToTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.customParameters),
-    provider_arn: cdktf.stringToTerraform(struct!.providerArn),
-    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
+    custom_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.customParameters),
+    provider_arn: cdktn.stringToTerraform(struct!.providerArn),
+    scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.scopes),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthToHclTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthToHclTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.customParameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.customParameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     provider_arn: {
-      value: cdktf.stringToHclTerraform(struct!.providerArn),
+      value: cdktn.stringToHclTerraform(struct!.providerArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.scopes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -400,9 +400,9 @@ export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationOaut
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -410,11 +410,11 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -435,7 +435,7 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -443,7 +443,7 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthOu
       this._providerArn = undefined;
       this._scopes = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -488,7 +488,7 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthOu
   // scopes - computed: false, optional: false, required: true
   private _scopes?: string[]; 
   public get scopes() {
-    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
+    return cdktn.Fn.tolist(this.getListAttribute('scopes'));
   }
   public set scopes(value: string[]) {
     this._scopes = value;
@@ -499,15 +499,15 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthOu
   }
 }
 
-export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -524,54 +524,54 @@ export interface BedrockagentcoreGatewayTargetCredentialProviderConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#api_key BedrockagentcoreGatewayTarget#api_key}
   */
-  readonly apiKey?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey[] | cdktf.IResolvable;
+  readonly apiKey?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey[] | cdktn.IResolvable;
   /**
   * gateway_iam_role block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#gateway_iam_role BedrockagentcoreGatewayTarget#gateway_iam_role}
   */
-  readonly gatewayIamRole?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole[] | cdktf.IResolvable;
+  readonly gatewayIamRole?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole[] | cdktn.IResolvable;
   /**
   * oauth block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#oauth BedrockagentcoreGatewayTarget#oauth}
   */
-  readonly oauth?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth[] | cdktf.IResolvable;
+  readonly oauth?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationToTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationToTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_key: cdktf.listMapper(bedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyToTerraform, true)(struct!.apiKey),
-    gateway_iam_role: cdktf.listMapper(bedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleToTerraform, true)(struct!.gatewayIamRole),
-    oauth: cdktf.listMapper(bedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthToTerraform, true)(struct!.oauth),
+    api_key: cdktn.listMapper(bedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyToTerraform, true)(struct!.apiKey),
+    gateway_iam_role: cdktn.listMapper(bedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleToTerraform, true)(struct!.gatewayIamRole),
+    oauth: cdktn.listMapper(bedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthToTerraform, true)(struct!.oauth),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationToHclTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationToHclTerraform(struct?: BedrockagentcoreGatewayTargetCredentialProviderConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_key: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyToHclTerraform, true)(struct!.apiKey),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyToHclTerraform, true)(struct!.apiKey),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyList",
     },
     gateway_iam_role: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleToHclTerraform, true)(struct!.gatewayIamRole),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleToHclTerraform, true)(struct!.gatewayIamRole),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleList",
     },
     oauth: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthToHclTerraform, true)(struct!.oauth),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthToHclTerraform, true)(struct!.oauth),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthList",
@@ -582,9 +582,9 @@ export function bedrockagentcoreGatewayTargetCredentialProviderConfigurationToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -592,11 +592,11 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetCredentialProviderConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetCredentialProviderConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -617,7 +617,7 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetCredentialProviderConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetCredentialProviderConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -625,7 +625,7 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOutputR
       this._gatewayIamRole.internalValue = undefined;
       this._oauth.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -643,7 +643,7 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOutputR
   public get apiKey() {
     return this._apiKey;
   }
-  public putApiKey(value: BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey[] | cdktf.IResolvable) {
+  public putApiKey(value: BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey[] | cdktn.IResolvable) {
     this._apiKey.internalValue = value;
   }
   public resetApiKey() {
@@ -659,7 +659,7 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOutputR
   public get gatewayIamRole() {
     return this._gatewayIamRole;
   }
-  public putGatewayIamRole(value: BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole[] | cdktf.IResolvable) {
+  public putGatewayIamRole(value: BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole[] | cdktn.IResolvable) {
     this._gatewayIamRole.internalValue = value;
   }
   public resetGatewayIamRole() {
@@ -675,7 +675,7 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOutputR
   public get oauth() {
     return this._oauth;
   }
-  public putOauth(value: BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth[] | cdktf.IResolvable) {
+  public putOauth(value: BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth[] | cdktn.IResolvable) {
     this._oauth.internalValue = value;
   }
   public resetOauth() {
@@ -687,15 +687,15 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationOutputR
   }
 }
 
-export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetCredentialProviderConfiguration[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetCredentialProviderConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -725,46 +725,46 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   readonly type: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    items_json: cdktf.stringToTerraform(struct!.itemsJson),
-    properties_json: cdktf.stringToTerraform(struct!.propertiesJson),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    items_json: cdktn.stringToTerraform(struct!.itemsJson),
+    properties_json: cdktn.stringToTerraform(struct!.propertiesJson),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items_json: {
-      value: cdktf.stringToHclTerraform(struct!.itemsJson),
+      value: cdktn.stringToHclTerraform(struct!.itemsJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties_json: {
-      value: cdktf.stringToHclTerraform(struct!.propertiesJson),
+      value: cdktn.stringToHclTerraform(struct!.propertiesJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -775,9 +775,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -785,11 +785,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -814,7 +814,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -823,7 +823,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._propertiesJson = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -899,15 +899,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -938,67 +938,67 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
-  readonly required?: boolean | cdktf.IResolvable;
+  readonly required?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    items_json: cdktf.stringToTerraform(struct!.itemsJson),
-    name: cdktf.stringToTerraform(struct!.name),
-    properties_json: cdktf.stringToTerraform(struct!.propertiesJson),
-    required: cdktf.booleanToTerraform(struct!.required),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    items_json: cdktn.stringToTerraform(struct!.itemsJson),
+    name: cdktn.stringToTerraform(struct!.name),
+    properties_json: cdktn.stringToTerraform(struct!.propertiesJson),
+    required: cdktn.booleanToTerraform(struct!.required),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items_json: {
-      value: cdktf.stringToHclTerraform(struct!.itemsJson),
+      value: cdktn.stringToHclTerraform(struct!.itemsJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties_json: {
-      value: cdktf.stringToHclTerraform(struct!.propertiesJson),
+      value: cdktn.stringToHclTerraform(struct!.propertiesJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     required: {
-      value: cdktf.booleanToHclTerraform(struct!.required),
+      value: cdktn.booleanToHclTerraform(struct!.required),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1009,9 +1009,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1019,11 +1019,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1056,7 +1056,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1067,7 +1067,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._required = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1145,11 +1145,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 
   // required - computed: true, optional: true, required: false
-  private _required?: boolean | cdktf.IResolvable; 
+  private _required?: boolean | cdktn.IResolvable; 
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
+  public set required(value: boolean | cdktn.IResolvable) {
     this._required = value;
   }
   public resetRequired() {
@@ -1174,15 +1174,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1207,55 +1207,55 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
-  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems[] | cdktf.IResolvable;
+  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems[] | cdktn.IResolvable;
   /**
   * property block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
-  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty[] | cdktf.IResolvable;
+  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    type: cdktf.stringToTerraform(struct!.type),
-    items: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsToTerraform, true)(struct!.items),
-    property: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyToTerraform, true)(struct!.property),
+    description: cdktn.stringToTerraform(struct!.description),
+    type: cdktn.stringToTerraform(struct!.type),
+    items: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsToTerraform, true)(struct!.items),
+    property: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyToTerraform, true)(struct!.property),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsList",
     },
     property: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyToHclTerraform, true)(struct!.property),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyToHclTerraform, true)(struct!.property),
       isBlock: true,
       type: "set",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyList",
@@ -1266,9 +1266,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1276,11 +1276,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1305,7 +1305,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1314,7 +1314,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._items.internalValue = undefined;
       this._property.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1362,7 +1362,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get items() {
     return this._items;
   }
-  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems[] | cdktf.IResolvable) {
+  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -1378,7 +1378,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get property() {
     return this._property;
   }
-  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty[] | cdktf.IResolvable) {
+  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty[] | cdktn.IResolvable) {
     this._property.internalValue = value;
   }
   public resetProperty() {
@@ -1390,15 +1390,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1428,46 +1428,46 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   readonly type: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    items_json: cdktf.stringToTerraform(struct!.itemsJson),
-    properties_json: cdktf.stringToTerraform(struct!.propertiesJson),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    items_json: cdktn.stringToTerraform(struct!.itemsJson),
+    properties_json: cdktn.stringToTerraform(struct!.propertiesJson),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items_json: {
-      value: cdktf.stringToHclTerraform(struct!.itemsJson),
+      value: cdktn.stringToHclTerraform(struct!.itemsJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties_json: {
-      value: cdktf.stringToHclTerraform(struct!.propertiesJson),
+      value: cdktn.stringToHclTerraform(struct!.propertiesJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1478,9 +1478,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1488,11 +1488,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1517,7 +1517,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1526,7 +1526,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._propertiesJson = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1602,15 +1602,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1641,67 +1641,67 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
-  readonly required?: boolean | cdktf.IResolvable;
+  readonly required?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    items_json: cdktf.stringToTerraform(struct!.itemsJson),
-    name: cdktf.stringToTerraform(struct!.name),
-    properties_json: cdktf.stringToTerraform(struct!.propertiesJson),
-    required: cdktf.booleanToTerraform(struct!.required),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    items_json: cdktn.stringToTerraform(struct!.itemsJson),
+    name: cdktn.stringToTerraform(struct!.name),
+    properties_json: cdktn.stringToTerraform(struct!.propertiesJson),
+    required: cdktn.booleanToTerraform(struct!.required),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items_json: {
-      value: cdktf.stringToHclTerraform(struct!.itemsJson),
+      value: cdktn.stringToHclTerraform(struct!.itemsJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties_json: {
-      value: cdktf.stringToHclTerraform(struct!.propertiesJson),
+      value: cdktn.stringToHclTerraform(struct!.propertiesJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     required: {
-      value: cdktf.booleanToHclTerraform(struct!.required),
+      value: cdktn.booleanToHclTerraform(struct!.required),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1712,9 +1712,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1722,11 +1722,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1759,7 +1759,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1770,7 +1770,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._required = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1848,11 +1848,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 
   // required - computed: true, optional: true, required: false
-  private _required?: boolean | cdktf.IResolvable; 
+  private _required?: boolean | cdktn.IResolvable; 
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
+  public set required(value: boolean | cdktn.IResolvable) {
     this._required = value;
   }
   public resetRequired() {
@@ -1877,15 +1877,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1910,55 +1910,55 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
-  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems[] | cdktf.IResolvable;
+  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems[] | cdktn.IResolvable;
   /**
   * property block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
-  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty[] | cdktf.IResolvable;
+  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    type: cdktf.stringToTerraform(struct!.type),
-    items: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsToTerraform, true)(struct!.items),
-    property: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyToTerraform, true)(struct!.property),
+    description: cdktn.stringToTerraform(struct!.description),
+    type: cdktn.stringToTerraform(struct!.type),
+    items: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsToTerraform, true)(struct!.items),
+    property: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyToTerraform, true)(struct!.property),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsList",
     },
     property: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyToHclTerraform, true)(struct!.property),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyToHclTerraform, true)(struct!.property),
       isBlock: true,
       type: "set",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyList",
@@ -1969,9 +1969,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1979,11 +1979,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2008,7 +2008,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2017,7 +2017,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._items.internalValue = undefined;
       this._property.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2065,7 +2065,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get items() {
     return this._items;
   }
-  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems[] | cdktf.IResolvable) {
+  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -2081,7 +2081,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get property() {
     return this._property;
   }
-  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty[] | cdktf.IResolvable) {
+  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty[] | cdktn.IResolvable) {
     this._property.internalValue = value;
   }
   public resetProperty() {
@@ -2093,15 +2093,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2132,67 +2132,67 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
-  readonly required?: boolean | cdktf.IResolvable;
+  readonly required?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    items_json: cdktf.stringToTerraform(struct!.itemsJson),
-    name: cdktf.stringToTerraform(struct!.name),
-    properties_json: cdktf.stringToTerraform(struct!.propertiesJson),
-    required: cdktf.booleanToTerraform(struct!.required),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    items_json: cdktn.stringToTerraform(struct!.itemsJson),
+    name: cdktn.stringToTerraform(struct!.name),
+    properties_json: cdktn.stringToTerraform(struct!.propertiesJson),
+    required: cdktn.booleanToTerraform(struct!.required),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items_json: {
-      value: cdktf.stringToHclTerraform(struct!.itemsJson),
+      value: cdktn.stringToHclTerraform(struct!.itemsJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties_json: {
-      value: cdktf.stringToHclTerraform(struct!.propertiesJson),
+      value: cdktn.stringToHclTerraform(struct!.propertiesJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     required: {
-      value: cdktf.booleanToHclTerraform(struct!.required),
+      value: cdktn.booleanToHclTerraform(struct!.required),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2203,9 +2203,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2213,11 +2213,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2250,7 +2250,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2261,7 +2261,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._required = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2339,11 +2339,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 
   // required - computed: true, optional: true, required: false
-  private _required?: boolean | cdktf.IResolvable; 
+  private _required?: boolean | cdktn.IResolvable; 
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
+  public set required(value: boolean | cdktn.IResolvable) {
     this._required = value;
   }
   public resetRequired() {
@@ -2368,15 +2368,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2399,7 +2399,7 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
-  readonly required?: boolean | cdktf.IResolvable;
+  readonly required?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
@@ -2409,69 +2409,69 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
-  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems[] | cdktf.IResolvable;
+  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems[] | cdktn.IResolvable;
   /**
   * property block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
-  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty[] | cdktf.IResolvable;
+  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    required: cdktf.booleanToTerraform(struct!.required),
-    type: cdktf.stringToTerraform(struct!.type),
-    items: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsToTerraform, true)(struct!.items),
-    property: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyToTerraform, true)(struct!.property),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    required: cdktn.booleanToTerraform(struct!.required),
+    type: cdktn.stringToTerraform(struct!.type),
+    items: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsToTerraform, true)(struct!.items),
+    property: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyToTerraform, true)(struct!.property),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     required: {
-      value: cdktf.booleanToHclTerraform(struct!.required),
+      value: cdktn.booleanToHclTerraform(struct!.required),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsList",
     },
     property: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyToHclTerraform, true)(struct!.property),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyToHclTerraform, true)(struct!.property),
       isBlock: true,
       type: "set",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyList",
@@ -2482,9 +2482,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2492,11 +2492,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2529,7 +2529,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2540,7 +2540,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._items.internalValue = undefined;
       this._property.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2586,11 +2586,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 
   // required - computed: true, optional: true, required: false
-  private _required?: boolean | cdktf.IResolvable; 
+  private _required?: boolean | cdktn.IResolvable; 
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
+  public set required(value: boolean | cdktn.IResolvable) {
     this._required = value;
   }
   public resetRequired() {
@@ -2619,7 +2619,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get items() {
     return this._items;
   }
-  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems[] | cdktf.IResolvable) {
+  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -2635,7 +2635,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get property() {
     return this._property;
   }
-  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty[] | cdktf.IResolvable) {
+  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty[] | cdktn.IResolvable) {
     this._property.internalValue = value;
   }
   public resetProperty() {
@@ -2647,15 +2647,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2680,55 +2680,55 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
-  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems[] | cdktf.IResolvable;
+  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems[] | cdktn.IResolvable;
   /**
   * property block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
-  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty[] | cdktf.IResolvable;
+  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    type: cdktf.stringToTerraform(struct!.type),
-    items: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsToTerraform, true)(struct!.items),
-    property: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyToTerraform, true)(struct!.property),
+    description: cdktn.stringToTerraform(struct!.description),
+    type: cdktn.stringToTerraform(struct!.type),
+    items: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsToTerraform, true)(struct!.items),
+    property: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyToTerraform, true)(struct!.property),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsList",
     },
     property: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyToHclTerraform, true)(struct!.property),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyToHclTerraform, true)(struct!.property),
       isBlock: true,
       type: "set",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyList",
@@ -2739,9 +2739,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2749,11 +2749,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2778,7 +2778,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2787,7 +2787,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._items.internalValue = undefined;
       this._property.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2835,7 +2835,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get items() {
     return this._items;
   }
-  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems[] | cdktf.IResolvable) {
+  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -2851,7 +2851,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get property() {
     return this._property;
   }
-  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty[] | cdktf.IResolvable) {
+  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty[] | cdktn.IResolvable) {
     this._property.internalValue = value;
   }
   public resetProperty() {
@@ -2863,15 +2863,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2901,46 +2901,46 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   readonly type: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    items_json: cdktf.stringToTerraform(struct!.itemsJson),
-    properties_json: cdktf.stringToTerraform(struct!.propertiesJson),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    items_json: cdktn.stringToTerraform(struct!.itemsJson),
+    properties_json: cdktn.stringToTerraform(struct!.propertiesJson),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items_json: {
-      value: cdktf.stringToHclTerraform(struct!.itemsJson),
+      value: cdktn.stringToHclTerraform(struct!.itemsJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties_json: {
-      value: cdktf.stringToHclTerraform(struct!.propertiesJson),
+      value: cdktn.stringToHclTerraform(struct!.propertiesJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2951,9 +2951,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2961,11 +2961,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2990,7 +2990,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2999,7 +2999,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._propertiesJson = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3075,15 +3075,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3114,67 +3114,67 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
-  readonly required?: boolean | cdktf.IResolvable;
+  readonly required?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    items_json: cdktf.stringToTerraform(struct!.itemsJson),
-    name: cdktf.stringToTerraform(struct!.name),
-    properties_json: cdktf.stringToTerraform(struct!.propertiesJson),
-    required: cdktf.booleanToTerraform(struct!.required),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    items_json: cdktn.stringToTerraform(struct!.itemsJson),
+    name: cdktn.stringToTerraform(struct!.name),
+    properties_json: cdktn.stringToTerraform(struct!.propertiesJson),
+    required: cdktn.booleanToTerraform(struct!.required),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items_json: {
-      value: cdktf.stringToHclTerraform(struct!.itemsJson),
+      value: cdktn.stringToHclTerraform(struct!.itemsJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties_json: {
-      value: cdktf.stringToHclTerraform(struct!.propertiesJson),
+      value: cdktn.stringToHclTerraform(struct!.propertiesJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     required: {
-      value: cdktf.booleanToHclTerraform(struct!.required),
+      value: cdktn.booleanToHclTerraform(struct!.required),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3185,9 +3185,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3195,11 +3195,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3232,7 +3232,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3243,7 +3243,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._required = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3321,11 +3321,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 
   // required - computed: true, optional: true, required: false
-  private _required?: boolean | cdktf.IResolvable; 
+  private _required?: boolean | cdktn.IResolvable; 
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
+  public set required(value: boolean | cdktn.IResolvable) {
     this._required = value;
   }
   public resetRequired() {
@@ -3350,15 +3350,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3383,55 +3383,55 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
-  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems[] | cdktf.IResolvable;
+  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems[] | cdktn.IResolvable;
   /**
   * property block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
-  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty[] | cdktf.IResolvable;
+  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    type: cdktf.stringToTerraform(struct!.type),
-    items: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsToTerraform, true)(struct!.items),
-    property: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyToTerraform, true)(struct!.property),
+    description: cdktn.stringToTerraform(struct!.description),
+    type: cdktn.stringToTerraform(struct!.type),
+    items: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsToTerraform, true)(struct!.items),
+    property: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyToTerraform, true)(struct!.property),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsList",
     },
     property: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyToHclTerraform, true)(struct!.property),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyToHclTerraform, true)(struct!.property),
       isBlock: true,
       type: "set",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyList",
@@ -3442,9 +3442,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3452,11 +3452,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3481,7 +3481,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3490,7 +3490,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._items.internalValue = undefined;
       this._property.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3538,7 +3538,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get items() {
     return this._items;
   }
-  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems[] | cdktf.IResolvable) {
+  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -3554,7 +3554,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get property() {
     return this._property;
   }
-  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty[] | cdktf.IResolvable) {
+  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty[] | cdktn.IResolvable) {
     this._property.internalValue = value;
   }
   public resetProperty() {
@@ -3566,15 +3566,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3604,46 +3604,46 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   readonly type: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    items_json: cdktf.stringToTerraform(struct!.itemsJson),
-    properties_json: cdktf.stringToTerraform(struct!.propertiesJson),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    items_json: cdktn.stringToTerraform(struct!.itemsJson),
+    properties_json: cdktn.stringToTerraform(struct!.propertiesJson),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items_json: {
-      value: cdktf.stringToHclTerraform(struct!.itemsJson),
+      value: cdktn.stringToHclTerraform(struct!.itemsJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties_json: {
-      value: cdktf.stringToHclTerraform(struct!.propertiesJson),
+      value: cdktn.stringToHclTerraform(struct!.propertiesJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3654,9 +3654,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3664,11 +3664,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3693,7 +3693,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3702,7 +3702,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._propertiesJson = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3778,15 +3778,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3817,67 +3817,67 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
-  readonly required?: boolean | cdktf.IResolvable;
+  readonly required?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    items_json: cdktf.stringToTerraform(struct!.itemsJson),
-    name: cdktf.stringToTerraform(struct!.name),
-    properties_json: cdktf.stringToTerraform(struct!.propertiesJson),
-    required: cdktf.booleanToTerraform(struct!.required),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    items_json: cdktn.stringToTerraform(struct!.itemsJson),
+    name: cdktn.stringToTerraform(struct!.name),
+    properties_json: cdktn.stringToTerraform(struct!.propertiesJson),
+    required: cdktn.booleanToTerraform(struct!.required),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items_json: {
-      value: cdktf.stringToHclTerraform(struct!.itemsJson),
+      value: cdktn.stringToHclTerraform(struct!.itemsJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties_json: {
-      value: cdktf.stringToHclTerraform(struct!.propertiesJson),
+      value: cdktn.stringToHclTerraform(struct!.propertiesJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     required: {
-      value: cdktf.booleanToHclTerraform(struct!.required),
+      value: cdktn.booleanToHclTerraform(struct!.required),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3888,9 +3888,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3898,11 +3898,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3935,7 +3935,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3946,7 +3946,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._required = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4024,11 +4024,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 
   // required - computed: true, optional: true, required: false
-  private _required?: boolean | cdktf.IResolvable; 
+  private _required?: boolean | cdktn.IResolvable; 
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
+  public set required(value: boolean | cdktn.IResolvable) {
     this._required = value;
   }
   public resetRequired() {
@@ -4053,15 +4053,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4086,55 +4086,55 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
-  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems[] | cdktf.IResolvable;
+  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems[] | cdktn.IResolvable;
   /**
   * property block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
-  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty[] | cdktf.IResolvable;
+  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    type: cdktf.stringToTerraform(struct!.type),
-    items: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsToTerraform, true)(struct!.items),
-    property: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyToTerraform, true)(struct!.property),
+    description: cdktn.stringToTerraform(struct!.description),
+    type: cdktn.stringToTerraform(struct!.type),
+    items: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsToTerraform, true)(struct!.items),
+    property: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyToTerraform, true)(struct!.property),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsList",
     },
     property: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyToHclTerraform, true)(struct!.property),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyToHclTerraform, true)(struct!.property),
       isBlock: true,
       type: "set",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyList",
@@ -4145,9 +4145,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4155,11 +4155,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4184,7 +4184,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4193,7 +4193,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._items.internalValue = undefined;
       this._property.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4241,7 +4241,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get items() {
     return this._items;
   }
-  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems[] | cdktf.IResolvable) {
+  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -4257,7 +4257,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get property() {
     return this._property;
   }
-  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty[] | cdktf.IResolvable) {
+  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty[] | cdktn.IResolvable) {
     this._property.internalValue = value;
   }
   public resetProperty() {
@@ -4269,15 +4269,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4308,67 +4308,67 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
-  readonly required?: boolean | cdktf.IResolvable;
+  readonly required?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    items_json: cdktf.stringToTerraform(struct!.itemsJson),
-    name: cdktf.stringToTerraform(struct!.name),
-    properties_json: cdktf.stringToTerraform(struct!.propertiesJson),
-    required: cdktf.booleanToTerraform(struct!.required),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    items_json: cdktn.stringToTerraform(struct!.itemsJson),
+    name: cdktn.stringToTerraform(struct!.name),
+    properties_json: cdktn.stringToTerraform(struct!.propertiesJson),
+    required: cdktn.booleanToTerraform(struct!.required),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items_json: {
-      value: cdktf.stringToHclTerraform(struct!.itemsJson),
+      value: cdktn.stringToHclTerraform(struct!.itemsJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties_json: {
-      value: cdktf.stringToHclTerraform(struct!.propertiesJson),
+      value: cdktn.stringToHclTerraform(struct!.propertiesJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     required: {
-      value: cdktf.booleanToHclTerraform(struct!.required),
+      value: cdktn.booleanToHclTerraform(struct!.required),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4379,9 +4379,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4389,11 +4389,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4426,7 +4426,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4437,7 +4437,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._required = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4515,11 +4515,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 
   // required - computed: true, optional: true, required: false
-  private _required?: boolean | cdktf.IResolvable; 
+  private _required?: boolean | cdktn.IResolvable; 
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
+  public set required(value: boolean | cdktn.IResolvable) {
     this._required = value;
   }
   public resetRequired() {
@@ -4544,15 +4544,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4575,7 +4575,7 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
-  readonly required?: boolean | cdktf.IResolvable;
+  readonly required?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
@@ -4585,69 +4585,69 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
-  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems[] | cdktf.IResolvable;
+  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems[] | cdktn.IResolvable;
   /**
   * property block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
-  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty[] | cdktf.IResolvable;
+  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    required: cdktf.booleanToTerraform(struct!.required),
-    type: cdktf.stringToTerraform(struct!.type),
-    items: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsToTerraform, true)(struct!.items),
-    property: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyToTerraform, true)(struct!.property),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    required: cdktn.booleanToTerraform(struct!.required),
+    type: cdktn.stringToTerraform(struct!.type),
+    items: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsToTerraform, true)(struct!.items),
+    property: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyToTerraform, true)(struct!.property),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     required: {
-      value: cdktf.booleanToHclTerraform(struct!.required),
+      value: cdktn.booleanToHclTerraform(struct!.required),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsList",
     },
     property: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyToHclTerraform, true)(struct!.property),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyToHclTerraform, true)(struct!.property),
       isBlock: true,
       type: "set",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyList",
@@ -4658,9 +4658,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4668,11 +4668,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4705,7 +4705,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4716,7 +4716,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._items.internalValue = undefined;
       this._property.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4762,11 +4762,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 
   // required - computed: true, optional: true, required: false
-  private _required?: boolean | cdktf.IResolvable; 
+  private _required?: boolean | cdktn.IResolvable; 
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
+  public set required(value: boolean | cdktn.IResolvable) {
     this._required = value;
   }
   public resetRequired() {
@@ -4795,7 +4795,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get items() {
     return this._items;
   }
-  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems[] | cdktf.IResolvable) {
+  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -4811,7 +4811,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get property() {
     return this._property;
   }
-  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty[] | cdktf.IResolvable) {
+  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty[] | cdktn.IResolvable) {
     this._property.internalValue = value;
   }
   public resetProperty() {
@@ -4823,15 +4823,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4856,55 +4856,55 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
-  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems[] | cdktf.IResolvable;
+  readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems[] | cdktn.IResolvable;
   /**
   * property block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
-  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty[] | cdktf.IResolvable;
+  readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    type: cdktf.stringToTerraform(struct!.type),
-    items: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsToTerraform, true)(struct!.items),
-    property: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyToTerraform, true)(struct!.property),
+    description: cdktn.stringToTerraform(struct!.description),
+    type: cdktn.stringToTerraform(struct!.type),
+    items: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsToTerraform, true)(struct!.items),
+    property: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyToTerraform, true)(struct!.property),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsList",
     },
     property: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyToHclTerraform, true)(struct!.property),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyToHclTerraform, true)(struct!.property),
       isBlock: true,
       type: "set",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyList",
@@ -4915,9 +4915,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4925,11 +4925,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4954,7 +4954,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4963,7 +4963,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._items.internalValue = undefined;
       this._property.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5011,7 +5011,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get items() {
     return this._items;
   }
-  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems[] | cdktf.IResolvable) {
+  public putItems(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -5027,7 +5027,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get property() {
     return this._property;
   }
-  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty[] | cdktf.IResolvable) {
+  public putProperty(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty[] | cdktn.IResolvable) {
     this._property.internalValue = value;
   }
   public resetProperty() {
@@ -5039,15 +5039,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5072,55 +5072,55 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#input_schema BedrockagentcoreGatewayTarget#input_schema}
   */
-  readonly inputSchema?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema[] | cdktf.IResolvable;
+  readonly inputSchema?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema[] | cdktn.IResolvable;
   /**
   * output_schema block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#output_schema BedrockagentcoreGatewayTarget#output_schema}
   */
-  readonly outputSchema?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema[] | cdktf.IResolvable;
+  readonly outputSchema?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    input_schema: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaToTerraform, true)(struct!.inputSchema),
-    output_schema: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaToTerraform, true)(struct!.outputSchema),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    input_schema: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaToTerraform, true)(struct!.inputSchema),
+    output_schema: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaToTerraform, true)(struct!.outputSchema),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     input_schema: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaToHclTerraform, true)(struct!.inputSchema),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaToHclTerraform, true)(struct!.inputSchema),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaList",
     },
     output_schema: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaToHclTerraform, true)(struct!.outputSchema),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaToHclTerraform, true)(struct!.outputSchema),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaList",
@@ -5131,9 +5131,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5141,11 +5141,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5170,7 +5170,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5179,7 +5179,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
       this._inputSchema.internalValue = undefined;
       this._outputSchema.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5224,7 +5224,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get inputSchema() {
     return this._inputSchema;
   }
-  public putInputSchema(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema[] | cdktf.IResolvable) {
+  public putInputSchema(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema[] | cdktn.IResolvable) {
     this._inputSchema.internalValue = value;
   }
   public resetInputSchema() {
@@ -5240,7 +5240,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get outputSchema() {
     return this._outputSchema;
   }
-  public putOutputSchema(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema[] | cdktf.IResolvable) {
+  public putOutputSchema(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema[] | cdktn.IResolvable) {
     this._outputSchema.internalValue = value;
   }
   public resetOutputSchema() {
@@ -5252,15 +5252,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5282,32 +5282,32 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   readonly uri?: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3ToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3ToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_owner_account_id: cdktf.stringToTerraform(struct!.bucketOwnerAccountId),
-    uri: cdktf.stringToTerraform(struct!.uri),
+    bucket_owner_account_id: cdktn.stringToTerraform(struct!.bucketOwnerAccountId),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3ToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3ToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_owner_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.bucketOwnerAccountId),
+      value: cdktn.stringToHclTerraform(struct!.bucketOwnerAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5318,9 +5318,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3OutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5328,11 +5328,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3 | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5349,14 +5349,14 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._bucketOwnerAccountId = undefined;
       this._uri = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5401,15 +5401,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3List extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3List extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5426,41 +5426,41 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#inline_payload BedrockagentcoreGatewayTarget#inline_payload}
   */
-  readonly inlinePayload?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload[] | cdktf.IResolvable;
+  readonly inlinePayload?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload[] | cdktn.IResolvable;
   /**
   * s3 block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#s3 BedrockagentcoreGatewayTarget#s3}
   */
-  readonly s3?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3[] | cdktf.IResolvable;
+  readonly s3?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    inline_payload: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadToTerraform, true)(struct!.inlinePayload),
-    s3: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3ToTerraform, true)(struct!.s3),
+    inline_payload: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadToTerraform, true)(struct!.inlinePayload),
+    s3: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3ToTerraform, true)(struct!.s3),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     inline_payload: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadToHclTerraform, true)(struct!.inlinePayload),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadToHclTerraform, true)(struct!.inlinePayload),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadList",
     },
     s3: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3ToHclTerraform, true)(struct!.s3),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3ToHclTerraform, true)(struct!.s3),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3List",
@@ -5471,9 +5471,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5481,11 +5481,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5502,14 +5502,14 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._inlinePayload.internalValue = undefined;
       this._s3.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5526,7 +5526,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get inlinePayload() {
     return this._inlinePayload;
   }
-  public putInlinePayload(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload[] | cdktf.IResolvable) {
+  public putInlinePayload(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload[] | cdktn.IResolvable) {
     this._inlinePayload.internalValue = value;
   }
   public resetInlinePayload() {
@@ -5542,7 +5542,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   public get s3() {
     return this._s3;
   }
-  public putS3(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3[] | cdktf.IResolvable) {
+  public putS3(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3[] | cdktn.IResolvable) {
     this._s3.internalValue = value;
   }
   public resetS3() {
@@ -5554,15 +5554,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5583,35 +5583,35 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#tool_schema BedrockagentcoreGatewayTarget#tool_schema}
   */
-  readonly toolSchema?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema[] | cdktf.IResolvable;
+  readonly toolSchema?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lambda_arn: cdktf.stringToTerraform(struct!.lambdaArn),
-    tool_schema: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaToTerraform, true)(struct!.toolSchema),
+    lambda_arn: cdktn.stringToTerraform(struct!.lambdaArn),
+    tool_schema: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaToTerraform, true)(struct!.toolSchema),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lambda_arn: {
-      value: cdktf.stringToHclTerraform(struct!.lambdaArn),
+      value: cdktn.stringToHclTerraform(struct!.lambdaArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tool_schema: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaToHclTerraform, true)(struct!.toolSchema),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaToHclTerraform, true)(struct!.toolSchema),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaList",
@@ -5622,9 +5622,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5632,11 +5632,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5653,14 +5653,14 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._lambdaArn = undefined;
       this._toolSchema.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5690,7 +5690,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaOutputRefe
   public get toolSchema() {
     return this._toolSchema;
   }
-  public putToolSchema(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema[] | cdktf.IResolvable) {
+  public putToolSchema(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema[] | cdktn.IResolvable) {
     this._toolSchema.internalValue = value;
   }
   public resetToolSchema() {
@@ -5702,15 +5702,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaOutputRefe
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5728,25 +5728,25 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer {
   readonly endpoint: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5757,9 +5757,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5767,11 +5767,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5784,13 +5784,13 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._endpoint = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5815,15 +5815,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerOutputR
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5841,25 +5841,25 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchem
   readonly payload: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    payload: cdktf.stringToTerraform(struct!.payload),
+    payload: cdktn.stringToTerraform(struct!.payload),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     payload: {
-      value: cdktf.stringToHclTerraform(struct!.payload),
+      value: cdktn.stringToHclTerraform(struct!.payload),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5870,9 +5870,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5880,11 +5880,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5897,13 +5897,13 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._payload = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5928,15 +5928,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInl
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5958,32 +5958,32 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchem
   readonly uri?: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3ToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3ToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_owner_account_id: cdktf.stringToTerraform(struct!.bucketOwnerAccountId),
-    uri: cdktf.stringToTerraform(struct!.uri),
+    bucket_owner_account_id: cdktn.stringToTerraform(struct!.bucketOwnerAccountId),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3ToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3ToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_owner_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.bucketOwnerAccountId),
+      value: cdktn.stringToHclTerraform(struct!.bucketOwnerAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5994,9 +5994,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3OutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6004,11 +6004,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3O
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3 | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6025,14 +6025,14 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3O
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._bucketOwnerAccountId = undefined;
       this._uri = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6077,15 +6077,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3O
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3List extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3List extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6102,41 +6102,41 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchem
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#inline_payload BedrockagentcoreGatewayTarget#inline_payload}
   */
-  readonly inlinePayload?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload[] | cdktf.IResolvable;
+  readonly inlinePayload?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload[] | cdktn.IResolvable;
   /**
   * s3 block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#s3 BedrockagentcoreGatewayTarget#s3}
   */
-  readonly s3?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3[] | cdktf.IResolvable;
+  readonly s3?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    inline_payload: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadToTerraform, true)(struct!.inlinePayload),
-    s3: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3ToTerraform, true)(struct!.s3),
+    inline_payload: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadToTerraform, true)(struct!.inlinePayload),
+    s3: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3ToTerraform, true)(struct!.s3),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     inline_payload: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadToHclTerraform, true)(struct!.inlinePayload),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadToHclTerraform, true)(struct!.inlinePayload),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadList",
     },
     s3: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3ToHclTerraform, true)(struct!.s3),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3ToHclTerraform, true)(struct!.s3),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3List",
@@ -6147,9 +6147,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6157,11 +6157,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6178,14 +6178,14 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._inlinePayload.internalValue = undefined;
       this._s3.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6202,7 +6202,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaOut
   public get inlinePayload() {
     return this._inlinePayload;
   }
-  public putInlinePayload(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload[] | cdktf.IResolvable) {
+  public putInlinePayload(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload[] | cdktn.IResolvable) {
     this._inlinePayload.internalValue = value;
   }
   public resetInlinePayload() {
@@ -6218,7 +6218,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaOut
   public get s3() {
     return this._s3;
   }
-  public putS3(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3[] | cdktf.IResolvable) {
+  public putS3(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3[] | cdktn.IResolvable) {
     this._s3.internalValue = value;
   }
   public resetS3() {
@@ -6230,15 +6230,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaOut
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6256,25 +6256,25 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelI
   readonly payload: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    payload: cdktf.stringToTerraform(struct!.payload),
+    payload: cdktn.stringToTerraform(struct!.payload),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     payload: {
-      value: cdktf.stringToHclTerraform(struct!.payload),
+      value: cdktn.stringToHclTerraform(struct!.payload),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6285,9 +6285,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6295,11 +6295,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlin
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6312,13 +6312,13 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlin
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._payload = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6343,15 +6343,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlin
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6373,32 +6373,32 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS
   readonly uri?: string;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3ToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3ToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_owner_account_id: cdktf.stringToTerraform(struct!.bucketOwnerAccountId),
-    uri: cdktf.stringToTerraform(struct!.uri),
+    bucket_owner_account_id: cdktn.stringToTerraform(struct!.bucketOwnerAccountId),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3ToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3ToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_owner_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.bucketOwnerAccountId),
+      value: cdktn.stringToHclTerraform(struct!.bucketOwnerAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6409,9 +6409,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3OutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6419,11 +6419,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3Out
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3 | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6440,14 +6440,14 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3Out
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._bucketOwnerAccountId = undefined;
       this._uri = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6492,15 +6492,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3Out
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3List extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3List extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6517,41 +6517,41 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#inline_payload BedrockagentcoreGatewayTarget#inline_payload}
   */
-  readonly inlinePayload?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload[] | cdktf.IResolvable;
+  readonly inlinePayload?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload[] | cdktn.IResolvable;
   /**
   * s3 block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#s3 BedrockagentcoreGatewayTarget#s3}
   */
-  readonly s3?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3[] | cdktf.IResolvable;
+  readonly s3?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    inline_payload: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadToTerraform, true)(struct!.inlinePayload),
-    s3: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3ToTerraform, true)(struct!.s3),
+    inline_payload: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadToTerraform, true)(struct!.inlinePayload),
+    s3: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3ToTerraform, true)(struct!.s3),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     inline_payload: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadToHclTerraform, true)(struct!.inlinePayload),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadToHclTerraform, true)(struct!.inlinePayload),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadList",
     },
     s3: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3ToHclTerraform, true)(struct!.s3),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3ToHclTerraform, true)(struct!.s3),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3List",
@@ -6562,9 +6562,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6572,11 +6572,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6593,14 +6593,14 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._inlinePayload.internalValue = undefined;
       this._s3.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6617,7 +6617,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelOutpu
   public get inlinePayload() {
     return this._inlinePayload;
   }
-  public putInlinePayload(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload[] | cdktf.IResolvable) {
+  public putInlinePayload(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload[] | cdktn.IResolvable) {
     this._inlinePayload.internalValue = value;
   }
   public resetInlinePayload() {
@@ -6633,7 +6633,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelOutpu
   public get s3() {
     return this._s3;
   }
-  public putS3(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3[] | cdktf.IResolvable) {
+  public putS3(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3[] | cdktn.IResolvable) {
     this._s3.internalValue = value;
   }
   public resetS3() {
@@ -6645,15 +6645,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelOutpu
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6670,67 +6670,67 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcp {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#lambda BedrockagentcoreGatewayTarget#lambda}
   */
-  readonly lambda?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda[] | cdktf.IResolvable;
+  readonly lambda?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda[] | cdktn.IResolvable;
   /**
   * mcp_server block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#mcp_server BedrockagentcoreGatewayTarget#mcp_server}
   */
-  readonly mcpServer?: BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer[] | cdktf.IResolvable;
+  readonly mcpServer?: BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer[] | cdktn.IResolvable;
   /**
   * open_api_schema block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#open_api_schema BedrockagentcoreGatewayTarget#open_api_schema}
   */
-  readonly openApiSchema?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema[] | cdktf.IResolvable;
+  readonly openApiSchema?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema[] | cdktn.IResolvable;
   /**
   * smithy_model block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#smithy_model BedrockagentcoreGatewayTarget#smithy_model}
   */
-  readonly smithyModel?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel[] | cdktf.IResolvable;
+  readonly smithyModel?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lambda: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToTerraform, true)(struct!.lambda),
-    mcp_server: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerToTerraform, true)(struct!.mcpServer),
-    open_api_schema: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaToTerraform, true)(struct!.openApiSchema),
-    smithy_model: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelToTerraform, true)(struct!.smithyModel),
+    lambda: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToTerraform, true)(struct!.lambda),
+    mcp_server: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerToTerraform, true)(struct!.mcpServer),
+    open_api_schema: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaToTerraform, true)(struct!.openApiSchema),
+    smithy_model: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelToTerraform, true)(struct!.smithyModel),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationMcpToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lambda: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToHclTerraform, true)(struct!.lambda),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToHclTerraform, true)(struct!.lambda),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaList",
     },
     mcp_server: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerToHclTerraform, true)(struct!.mcpServer),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerToHclTerraform, true)(struct!.mcpServer),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerList",
     },
     open_api_schema: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaToHclTerraform, true)(struct!.openApiSchema),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaToHclTerraform, true)(struct!.openApiSchema),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaList",
     },
     smithy_model: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelToHclTerraform, true)(struct!.smithyModel),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelToHclTerraform, true)(struct!.smithyModel),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelList",
@@ -6741,9 +6741,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6751,11 +6751,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcp | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcp | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6780,7 +6780,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcp | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcp | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6789,7 +6789,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference 
       this._openApiSchema.internalValue = undefined;
       this._smithyModel.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6808,7 +6808,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference 
   public get lambda() {
     return this._lambda;
   }
-  public putLambda(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda[] | cdktf.IResolvable) {
+  public putLambda(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda[] | cdktn.IResolvable) {
     this._lambda.internalValue = value;
   }
   public resetLambda() {
@@ -6824,7 +6824,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference 
   public get mcpServer() {
     return this._mcpServer;
   }
-  public putMcpServer(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer[] | cdktf.IResolvable) {
+  public putMcpServer(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer[] | cdktn.IResolvable) {
     this._mcpServer.internalValue = value;
   }
   public resetMcpServer() {
@@ -6840,7 +6840,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference 
   public get openApiSchema() {
     return this._openApiSchema;
   }
-  public putOpenApiSchema(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema[] | cdktf.IResolvable) {
+  public putOpenApiSchema(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema[] | cdktn.IResolvable) {
     this._openApiSchema.internalValue = value;
   }
   public resetOpenApiSchema() {
@@ -6856,7 +6856,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference 
   public get smithyModel() {
     return this._smithyModel;
   }
-  public putSmithyModel(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel[] | cdktf.IResolvable) {
+  public putSmithyModel(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel[] | cdktn.IResolvable) {
     this._smithyModel.internalValue = value;
   }
   public resetSmithyModel() {
@@ -6868,15 +6868,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference 
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationMcpList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcp[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcp[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6893,28 +6893,28 @@ export interface BedrockagentcoreGatewayTargetTargetConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#mcp BedrockagentcoreGatewayTarget#mcp}
   */
-  readonly mcp?: BedrockagentcoreGatewayTargetTargetConfigurationMcp[] | cdktf.IResolvable;
+  readonly mcp?: BedrockagentcoreGatewayTargetTargetConfigurationMcp[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mcp: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpToTerraform, true)(struct!.mcp),
+    mcp: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpToTerraform, true)(struct!.mcp),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTargetConfigurationToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTargetConfigurationToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mcp: {
-      value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpToHclTerraform, true)(struct!.mcp),
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpToHclTerraform, true)(struct!.mcp),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpList",
@@ -6925,9 +6925,9 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTargetConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6935,11 +6935,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6952,13 +6952,13 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mcp.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6974,7 +6974,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationOutputReference ext
   public get mcp() {
     return this._mcp;
   }
-  public putMcp(value: BedrockagentcoreGatewayTargetTargetConfigurationMcp[] | cdktf.IResolvable) {
+  public putMcp(value: BedrockagentcoreGatewayTargetTargetConfigurationMcp[] | cdktn.IResolvable) {
     this._mcp.internalValue = value;
   }
   public resetMcp() {
@@ -6986,15 +6986,15 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationOutputReference ext
   }
 }
 
-export class BedrockagentcoreGatewayTargetTargetConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreGatewayTargetTargetConfiguration[] | cdktf.IResolvable
+export class BedrockagentcoreGatewayTargetTargetConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7026,39 +7026,39 @@ export interface BedrockagentcoreGatewayTargetTimeouts {
   readonly update?: string;
 }
 
-export function bedrockagentcoreGatewayTargetTimeoutsToTerraform(struct?: BedrockagentcoreGatewayTargetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTimeoutsToTerraform(struct?: BedrockagentcoreGatewayTargetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function bedrockagentcoreGatewayTargetTimeoutsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreGatewayTargetTimeoutsToHclTerraform(struct?: BedrockagentcoreGatewayTargetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7069,19 +7069,19 @@ export function bedrockagentcoreGatewayTargetTimeoutsToHclTerraform(struct?: Bed
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreGatewayTargetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreGatewayTargetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BedrockagentcoreGatewayTargetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreGatewayTargetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7102,7 +7102,7 @@ export class BedrockagentcoreGatewayTargetTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreGatewayTargetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreGatewayTargetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7110,7 +7110,7 @@ export class BedrockagentcoreGatewayTargetTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7175,7 +7175,7 @@ export class BedrockagentcoreGatewayTargetTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target aws_bedrockagentcore_gateway_target}
 */
-export class BedrockagentcoreGatewayTarget extends cdktf.TerraformResource {
+export class BedrockagentcoreGatewayTarget extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -7186,14 +7186,14 @@ export class BedrockagentcoreGatewayTarget extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BedrockagentcoreGatewayTarget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BedrockagentcoreGatewayTarget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentcoreGatewayTarget to import
   * @param importFromId The id of the existing BedrockagentcoreGatewayTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_gateway_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentcoreGatewayTarget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagentcore_gateway_target", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagentcore_gateway_target", importId: importFromId, provider });
       }
 
   // ===========
@@ -7304,7 +7304,7 @@ export class BedrockagentcoreGatewayTarget extends cdktf.TerraformResource {
   public get credentialProviderConfiguration() {
     return this._credentialProviderConfiguration;
   }
-  public putCredentialProviderConfiguration(value: BedrockagentcoreGatewayTargetCredentialProviderConfiguration[] | cdktf.IResolvable) {
+  public putCredentialProviderConfiguration(value: BedrockagentcoreGatewayTargetCredentialProviderConfiguration[] | cdktn.IResolvable) {
     this._credentialProviderConfiguration.internalValue = value;
   }
   public resetCredentialProviderConfiguration() {
@@ -7320,7 +7320,7 @@ export class BedrockagentcoreGatewayTarget extends cdktf.TerraformResource {
   public get targetConfiguration() {
     return this._targetConfiguration;
   }
-  public putTargetConfiguration(value: BedrockagentcoreGatewayTargetTargetConfiguration[] | cdktf.IResolvable) {
+  public putTargetConfiguration(value: BedrockagentcoreGatewayTargetTargetConfiguration[] | cdktn.IResolvable) {
     this._targetConfiguration.internalValue = value;
   }
   public resetTargetConfiguration() {
@@ -7353,12 +7353,12 @@ export class BedrockagentcoreGatewayTarget extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      gateway_identifier: cdktf.stringToTerraform(this._gatewayIdentifier),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      credential_provider_configuration: cdktf.listMapper(bedrockagentcoreGatewayTargetCredentialProviderConfigurationToTerraform, true)(this._credentialProviderConfiguration.internalValue),
-      target_configuration: cdktf.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationToTerraform, true)(this._targetConfiguration.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      gateway_identifier: cdktn.stringToTerraform(this._gatewayIdentifier),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      credential_provider_configuration: cdktn.listMapper(bedrockagentcoreGatewayTargetCredentialProviderConfigurationToTerraform, true)(this._credentialProviderConfiguration.internalValue),
+      target_configuration: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationToTerraform, true)(this._targetConfiguration.internalValue),
       timeouts: bedrockagentcoreGatewayTargetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -7366,37 +7366,37 @@ export class BedrockagentcoreGatewayTarget extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_identifier: {
-        value: cdktf.stringToHclTerraform(this._gatewayIdentifier),
+        value: cdktn.stringToHclTerraform(this._gatewayIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       credential_provider_configuration: {
-        value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetCredentialProviderConfigurationToHclTerraform, true)(this._credentialProviderConfiguration.internalValue),
+        value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetCredentialProviderConfigurationToHclTerraform, true)(this._credentialProviderConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockagentcoreGatewayTargetCredentialProviderConfigurationList",
       },
       target_configuration: {
-        value: cdktf.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationToHclTerraform, true)(this._targetConfiguration.internalValue),
+        value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationToHclTerraform, true)(this._targetConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationList",

@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsRoute53ZoneConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRoute53ZoneConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_zone#enable_accelerated_recovery DataAwsRoute53Zone#enable_accelerated_recovery}
   */
-  readonly enableAcceleratedRecovery?: boolean | cdktf.IResolvable;
+  readonly enableAcceleratedRecovery?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_zone#id DataAwsRoute53Zone#id}
   *
@@ -30,7 +30,7 @@ export interface DataAwsRoute53ZoneConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_zone#private_zone DataAwsRoute53Zone#private_zone}
   */
-  readonly privateZone?: boolean | cdktf.IResolvable;
+  readonly privateZone?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_zone#tags DataAwsRoute53Zone#tags}
   */
@@ -48,7 +48,7 @@ export interface DataAwsRoute53ZoneConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_zone aws_route53_zone}
 */
-export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
+export class DataAwsRoute53Zone extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsRoute53Zone resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsRoute53Zone resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRoute53Zone to import
   * @param importFromId The id of the existing DataAwsRoute53Zone that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_zone#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRoute53Zone to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_zone", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_zone", importId: importFromId, provider });
       }
 
   // ===========
@@ -125,11 +125,11 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
   }
 
   // enable_accelerated_recovery - computed: false, optional: true, required: false
-  private _enableAcceleratedRecovery?: boolean | cdktf.IResolvable; 
+  private _enableAcceleratedRecovery?: boolean | cdktn.IResolvable; 
   public get enableAcceleratedRecovery() {
     return this.getBooleanAttribute('enable_accelerated_recovery');
   }
-  public set enableAcceleratedRecovery(value: boolean | cdktf.IResolvable) {
+  public set enableAcceleratedRecovery(value: boolean | cdktn.IResolvable) {
     this._enableAcceleratedRecovery = value;
   }
   public resetEnableAcceleratedRecovery() {
@@ -193,11 +193,11 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
   }
 
   // private_zone - computed: false, optional: true, required: false
-  private _privateZone?: boolean | cdktf.IResolvable; 
+  private _privateZone?: boolean | cdktn.IResolvable; 
   public get privateZone() {
     return this.getBooleanAttribute('private_zone');
   }
-  public set privateZone(value: boolean | cdktf.IResolvable) {
+  public set privateZone(value: boolean | cdktn.IResolvable) {
     this._privateZone = value;
   }
   public resetPrivateZone() {
@@ -267,56 +267,56 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enable_accelerated_recovery: cdktf.booleanToTerraform(this._enableAcceleratedRecovery),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      private_zone: cdktf.booleanToTerraform(this._privateZone),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      enable_accelerated_recovery: cdktn.booleanToTerraform(this._enableAcceleratedRecovery),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      private_zone: cdktn.booleanToTerraform(this._privateZone),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enable_accelerated_recovery: {
-        value: cdktf.booleanToHclTerraform(this._enableAcceleratedRecovery),
+        value: cdktn.booleanToHclTerraform(this._enableAcceleratedRecovery),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_zone: {
-        value: cdktf.booleanToHclTerraform(this._privateZone),
+        value: cdktn.booleanToHclTerraform(this._privateZone),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

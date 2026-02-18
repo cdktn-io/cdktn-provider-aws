@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudcontrolapiResourceConfig extends cdktf.TerraformMetaArguments {
+export interface CloudcontrolapiResourceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudcontrolapi_resource#desired_state CloudcontrolapiResource#desired_state}
   */
@@ -67,39 +67,39 @@ export interface CloudcontrolapiResourceTimeouts {
   readonly update?: string;
 }
 
-export function cloudcontrolapiResourceTimeoutsToTerraform(struct?: CloudcontrolapiResourceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudcontrolapiResourceTimeoutsToTerraform(struct?: CloudcontrolapiResourceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cloudcontrolapiResourceTimeoutsToHclTerraform(struct?: CloudcontrolapiResourceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudcontrolapiResourceTimeoutsToHclTerraform(struct?: CloudcontrolapiResourceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -110,19 +110,19 @@ export function cloudcontrolapiResourceTimeoutsToHclTerraform(struct?: Cloudcont
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudcontrolapiResourceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CloudcontrolapiResourceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CloudcontrolapiResourceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudcontrolapiResourceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -143,7 +143,7 @@ export class CloudcontrolapiResourceTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudcontrolapiResourceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudcontrolapiResourceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -151,7 +151,7 @@ export class CloudcontrolapiResourceTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -216,7 +216,7 @@ export class CloudcontrolapiResourceTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudcontrolapi_resource aws_cloudcontrolapi_resource}
 */
-export class CloudcontrolapiResource extends cdktf.TerraformResource {
+export class CloudcontrolapiResource extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -227,14 +227,14 @@ export class CloudcontrolapiResource extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudcontrolapiResource resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudcontrolapiResource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudcontrolapiResource to import
   * @param importFromId The id of the existing CloudcontrolapiResource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudcontrolapi_resource#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudcontrolapiResource to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudcontrolapi_resource", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudcontrolapi_resource", importId: importFromId, provider });
       }
 
   // ===========
@@ -411,13 +411,13 @@ export class CloudcontrolapiResource extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      desired_state: cdktf.stringToTerraform(this._desiredState),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      schema: cdktf.stringToTerraform(this._schema),
-      type_name: cdktf.stringToTerraform(this._typeName),
-      type_version_id: cdktf.stringToTerraform(this._typeVersionId),
+      desired_state: cdktn.stringToTerraform(this._desiredState),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      schema: cdktn.stringToTerraform(this._schema),
+      type_name: cdktn.stringToTerraform(this._typeName),
+      type_version_id: cdktn.stringToTerraform(this._typeVersionId),
       timeouts: cloudcontrolapiResourceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -425,43 +425,43 @@ export class CloudcontrolapiResource extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       desired_state: {
-        value: cdktf.stringToHclTerraform(this._desiredState),
+        value: cdktn.stringToHclTerraform(this._desiredState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type_name: {
-        value: cdktf.stringToHclTerraform(this._typeName),
+        value: cdktn.stringToHclTerraform(this._typeName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type_version_id: {
-        value: cdktf.stringToHclTerraform(this._typeVersionId),
+        value: cdktn.stringToHclTerraform(this._typeVersionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

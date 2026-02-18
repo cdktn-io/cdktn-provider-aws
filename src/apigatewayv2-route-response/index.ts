@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Apigatewayv2RouteResponseConfig extends cdktf.TerraformMetaArguments {
+export interface Apigatewayv2RouteResponseConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_route_response#api_id Apigatewayv2RouteResponse#api_id}
   */
@@ -50,7 +50,7 @@ export interface Apigatewayv2RouteResponseConfig extends cdktf.TerraformMetaArgu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_route_response aws_apigatewayv2_route_response}
 */
-export class Apigatewayv2RouteResponse extends cdktf.TerraformResource {
+export class Apigatewayv2RouteResponse extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class Apigatewayv2RouteResponse extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Apigatewayv2RouteResponse resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Apigatewayv2RouteResponse resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Apigatewayv2RouteResponse to import
   * @param importFromId The id of the existing Apigatewayv2RouteResponse that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_route_response#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Apigatewayv2RouteResponse to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_route_response", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_route_response", importId: importFromId, provider });
       }
 
   // ===========
@@ -220,56 +220,56 @@ export class Apigatewayv2RouteResponse extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      id: cdktf.stringToTerraform(this._id),
-      model_selection_expression: cdktf.stringToTerraform(this._modelSelectionExpression),
-      region: cdktf.stringToTerraform(this._region),
-      response_models: cdktf.hashMapper(cdktf.stringToTerraform)(this._responseModels),
-      route_id: cdktf.stringToTerraform(this._routeId),
-      route_response_key: cdktf.stringToTerraform(this._routeResponseKey),
+      api_id: cdktn.stringToTerraform(this._apiId),
+      id: cdktn.stringToTerraform(this._id),
+      model_selection_expression: cdktn.stringToTerraform(this._modelSelectionExpression),
+      region: cdktn.stringToTerraform(this._region),
+      response_models: cdktn.hashMapper(cdktn.stringToTerraform)(this._responseModels),
+      route_id: cdktn.stringToTerraform(this._routeId),
+      route_response_key: cdktn.stringToTerraform(this._routeResponseKey),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_id: {
-        value: cdktf.stringToHclTerraform(this._apiId),
+        value: cdktn.stringToHclTerraform(this._apiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       model_selection_expression: {
-        value: cdktf.stringToHclTerraform(this._modelSelectionExpression),
+        value: cdktn.stringToHclTerraform(this._modelSelectionExpression),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       response_models: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._responseModels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._responseModels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       route_id: {
-        value: cdktf.stringToHclTerraform(this._routeId),
+        value: cdktn.stringToHclTerraform(this._routeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       route_response_key: {
-        value: cdktf.stringToHclTerraform(this._routeResponseKey),
+        value: cdktn.stringToHclTerraform(this._routeResponseKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

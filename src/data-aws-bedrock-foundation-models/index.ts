@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsBedrockFoundationModelsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsBedrockFoundationModelsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrock_foundation_models#by_customization_type DataAwsBedrockFoundationModels#by_customization_type}
   */
@@ -39,8 +39,8 @@ export interface DataAwsBedrockFoundationModelsModelSummaries {
 }
 
 export function dataAwsBedrockFoundationModelsModelSummariesToTerraform(struct?: DataAwsBedrockFoundationModelsModelSummaries): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -49,8 +49,8 @@ export function dataAwsBedrockFoundationModelsModelSummariesToTerraform(struct?:
 
 
 export function dataAwsBedrockFoundationModelsModelSummariesToHclTerraform(struct?: DataAwsBedrockFoundationModelsModelSummaries): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -58,7 +58,7 @@ export function dataAwsBedrockFoundationModelsModelSummariesToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsBedrockFoundationModelsModelSummariesOutputReference extends cdktf.ComplexObject {
+export class DataAwsBedrockFoundationModelsModelSummariesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -67,7 +67,7 @@ export class DataAwsBedrockFoundationModelsModelSummariesOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -88,17 +88,17 @@ export class DataAwsBedrockFoundationModelsModelSummariesOutputReference extends
 
   // customizations_supported - computed: true, optional: false, required: false
   public get customizationsSupported() {
-    return cdktf.Fn.tolist(this.getListAttribute('customizations_supported'));
+    return cdktn.Fn.tolist(this.getListAttribute('customizations_supported'));
   }
 
   // inference_types_supported - computed: true, optional: false, required: false
   public get inferenceTypesSupported() {
-    return cdktf.Fn.tolist(this.getListAttribute('inference_types_supported'));
+    return cdktn.Fn.tolist(this.getListAttribute('inference_types_supported'));
   }
 
   // input_modalities - computed: true, optional: false, required: false
   public get inputModalities() {
-    return cdktf.Fn.tolist(this.getListAttribute('input_modalities'));
+    return cdktn.Fn.tolist(this.getListAttribute('input_modalities'));
   }
 
   // model_arn - computed: true, optional: false, required: false
@@ -118,7 +118,7 @@ export class DataAwsBedrockFoundationModelsModelSummariesOutputReference extends
 
   // output_modalities - computed: true, optional: false, required: false
   public get outputModalities() {
-    return cdktf.Fn.tolist(this.getListAttribute('output_modalities'));
+    return cdktn.Fn.tolist(this.getListAttribute('output_modalities'));
   }
 
   // provider_name - computed: true, optional: false, required: false
@@ -132,14 +132,14 @@ export class DataAwsBedrockFoundationModelsModelSummariesOutputReference extends
   }
 }
 
-export class DataAwsBedrockFoundationModelsModelSummariesList extends cdktf.ComplexList {
+export class DataAwsBedrockFoundationModelsModelSummariesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -154,7 +154,7 @@ export class DataAwsBedrockFoundationModelsModelSummariesList extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrock_foundation_models aws_bedrock_foundation_models}
 */
-export class DataAwsBedrockFoundationModels extends cdktf.TerraformDataSource {
+export class DataAwsBedrockFoundationModels extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -165,14 +165,14 @@ export class DataAwsBedrockFoundationModels extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsBedrockFoundationModels resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsBedrockFoundationModels resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBedrockFoundationModels to import
   * @param importFromId The id of the existing DataAwsBedrockFoundationModels that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrock_foundation_models#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBedrockFoundationModels to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrock_foundation_models", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrock_foundation_models", importId: importFromId, provider });
       }
 
   // ===========
@@ -310,42 +310,42 @@ export class DataAwsBedrockFoundationModels extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      by_customization_type: cdktf.stringToTerraform(this._byCustomizationType),
-      by_inference_type: cdktf.stringToTerraform(this._byInferenceType),
-      by_output_modality: cdktf.stringToTerraform(this._byOutputModality),
-      by_provider: cdktf.stringToTerraform(this._byProvider),
-      region: cdktf.stringToTerraform(this._region),
+      by_customization_type: cdktn.stringToTerraform(this._byCustomizationType),
+      by_inference_type: cdktn.stringToTerraform(this._byInferenceType),
+      by_output_modality: cdktn.stringToTerraform(this._byOutputModality),
+      by_provider: cdktn.stringToTerraform(this._byProvider),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       by_customization_type: {
-        value: cdktf.stringToHclTerraform(this._byCustomizationType),
+        value: cdktn.stringToHclTerraform(this._byCustomizationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       by_inference_type: {
-        value: cdktf.stringToHclTerraform(this._byInferenceType),
+        value: cdktn.stringToHclTerraform(this._byInferenceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       by_output_modality: {
-        value: cdktf.stringToHclTerraform(this._byOutputModality),
+        value: cdktn.stringToHclTerraform(this._byOutputModality),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       by_provider: {
-        value: cdktf.stringToHclTerraform(this._byProvider),
+        value: cdktn.stringToHclTerraform(this._byProvider),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

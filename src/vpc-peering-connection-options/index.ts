@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcPeeringConnectionOptionsConfig extends cdktf.TerraformMetaArguments {
+export interface VpcPeeringConnectionOptionsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_peering_connection_options#id VpcPeeringConnectionOptions#id}
   *
@@ -46,28 +46,28 @@ export interface VpcPeeringConnectionOptionsAccepter {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_peering_connection_options#allow_remote_vpc_dns_resolution VpcPeeringConnectionOptions#allow_remote_vpc_dns_resolution}
   */
-  readonly allowRemoteVpcDnsResolution?: boolean | cdktf.IResolvable;
+  readonly allowRemoteVpcDnsResolution?: boolean | cdktn.IResolvable;
 }
 
 export function vpcPeeringConnectionOptionsAccepterToTerraform(struct?: VpcPeeringConnectionOptionsAccepterOutputReference | VpcPeeringConnectionOptionsAccepter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_remote_vpc_dns_resolution: cdktf.booleanToTerraform(struct!.allowRemoteVpcDnsResolution),
+    allow_remote_vpc_dns_resolution: cdktn.booleanToTerraform(struct!.allowRemoteVpcDnsResolution),
   }
 }
 
 
 export function vpcPeeringConnectionOptionsAccepterToHclTerraform(struct?: VpcPeeringConnectionOptionsAccepterOutputReference | VpcPeeringConnectionOptionsAccepter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_remote_vpc_dns_resolution: {
-      value: cdktf.booleanToHclTerraform(struct!.allowRemoteVpcDnsResolution),
+      value: cdktn.booleanToHclTerraform(struct!.allowRemoteVpcDnsResolution),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -78,14 +78,14 @@ export function vpcPeeringConnectionOptionsAccepterToHclTerraform(struct?: VpcPe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcPeeringConnectionOptionsAccepterOutputReference extends cdktf.ComplexObject {
+export class VpcPeeringConnectionOptionsAccepterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -111,11 +111,11 @@ export class VpcPeeringConnectionOptionsAccepterOutputReference extends cdktf.Co
   }
 
   // allow_remote_vpc_dns_resolution - computed: false, optional: true, required: false
-  private _allowRemoteVpcDnsResolution?: boolean | cdktf.IResolvable; 
+  private _allowRemoteVpcDnsResolution?: boolean | cdktn.IResolvable; 
   public get allowRemoteVpcDnsResolution() {
     return this.getBooleanAttribute('allow_remote_vpc_dns_resolution');
   }
-  public set allowRemoteVpcDnsResolution(value: boolean | cdktf.IResolvable) {
+  public set allowRemoteVpcDnsResolution(value: boolean | cdktn.IResolvable) {
     this._allowRemoteVpcDnsResolution = value;
   }
   public resetAllowRemoteVpcDnsResolution() {
@@ -130,28 +130,28 @@ export interface VpcPeeringConnectionOptionsRequester {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_peering_connection_options#allow_remote_vpc_dns_resolution VpcPeeringConnectionOptions#allow_remote_vpc_dns_resolution}
   */
-  readonly allowRemoteVpcDnsResolution?: boolean | cdktf.IResolvable;
+  readonly allowRemoteVpcDnsResolution?: boolean | cdktn.IResolvable;
 }
 
 export function vpcPeeringConnectionOptionsRequesterToTerraform(struct?: VpcPeeringConnectionOptionsRequesterOutputReference | VpcPeeringConnectionOptionsRequester): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_remote_vpc_dns_resolution: cdktf.booleanToTerraform(struct!.allowRemoteVpcDnsResolution),
+    allow_remote_vpc_dns_resolution: cdktn.booleanToTerraform(struct!.allowRemoteVpcDnsResolution),
   }
 }
 
 
 export function vpcPeeringConnectionOptionsRequesterToHclTerraform(struct?: VpcPeeringConnectionOptionsRequesterOutputReference | VpcPeeringConnectionOptionsRequester): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_remote_vpc_dns_resolution: {
-      value: cdktf.booleanToHclTerraform(struct!.allowRemoteVpcDnsResolution),
+      value: cdktn.booleanToHclTerraform(struct!.allowRemoteVpcDnsResolution),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -162,14 +162,14 @@ export function vpcPeeringConnectionOptionsRequesterToHclTerraform(struct?: VpcP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcPeeringConnectionOptionsRequesterOutputReference extends cdktf.ComplexObject {
+export class VpcPeeringConnectionOptionsRequesterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -195,11 +195,11 @@ export class VpcPeeringConnectionOptionsRequesterOutputReference extends cdktf.C
   }
 
   // allow_remote_vpc_dns_resolution - computed: false, optional: true, required: false
-  private _allowRemoteVpcDnsResolution?: boolean | cdktf.IResolvable; 
+  private _allowRemoteVpcDnsResolution?: boolean | cdktn.IResolvable; 
   public get allowRemoteVpcDnsResolution() {
     return this.getBooleanAttribute('allow_remote_vpc_dns_resolution');
   }
-  public set allowRemoteVpcDnsResolution(value: boolean | cdktf.IResolvable) {
+  public set allowRemoteVpcDnsResolution(value: boolean | cdktn.IResolvable) {
     this._allowRemoteVpcDnsResolution = value;
   }
   public resetAllowRemoteVpcDnsResolution() {
@@ -214,7 +214,7 @@ export class VpcPeeringConnectionOptionsRequesterOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_peering_connection_options aws_vpc_peering_connection_options}
 */
-export class VpcPeeringConnectionOptions extends cdktf.TerraformResource {
+export class VpcPeeringConnectionOptions extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -225,14 +225,14 @@ export class VpcPeeringConnectionOptions extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcPeeringConnectionOptions resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcPeeringConnectionOptions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcPeeringConnectionOptions to import
   * @param importFromId The id of the existing VpcPeeringConnectionOptions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_peering_connection_options#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcPeeringConnectionOptions to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_peering_connection_options", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_peering_connection_options", importId: importFromId, provider });
       }
 
   // ===========
@@ -356,9 +356,9 @@ export class VpcPeeringConnectionOptions extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      vpc_peering_connection_id: cdktf.stringToTerraform(this._vpcPeeringConnectionId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      vpc_peering_connection_id: cdktn.stringToTerraform(this._vpcPeeringConnectionId),
       accepter: vpcPeeringConnectionOptionsAccepterToTerraform(this._accepter.internalValue),
       requester: vpcPeeringConnectionOptionsRequesterToTerraform(this._requester.internalValue),
     };
@@ -367,19 +367,19 @@ export class VpcPeeringConnectionOptions extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_peering_connection_id: {
-        value: cdktf.stringToHclTerraform(this._vpcPeeringConnectionId),
+        value: cdktn.stringToHclTerraform(this._vpcPeeringConnectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

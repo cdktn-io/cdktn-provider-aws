@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KmsGrantConfig extends cdktf.TerraformMetaArguments {
+export interface KmsGrantConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_grant#grant_creation_tokens KmsGrant#grant_creation_tokens}
   */
@@ -48,7 +48,7 @@ export interface KmsGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_grant#retire_on_delete KmsGrant#retire_on_delete}
   */
-  readonly retireOnDelete?: boolean | cdktf.IResolvable;
+  readonly retireOnDelete?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_grant#retiring_principal KmsGrant#retiring_principal}
   */
@@ -58,7 +58,7 @@ export interface KmsGrantConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_grant#constraints KmsGrant#constraints}
   */
-  readonly constraints?: KmsGrantConstraints[] | cdktf.IResolvable;
+  readonly constraints?: KmsGrantConstraints[] | cdktn.IResolvable;
 }
 export interface KmsGrantConstraints {
   /**
@@ -71,32 +71,32 @@ export interface KmsGrantConstraints {
   readonly encryptionContextSubset?: { [key: string]: string };
 }
 
-export function kmsGrantConstraintsToTerraform(struct?: KmsGrantConstraints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kmsGrantConstraintsToTerraform(struct?: KmsGrantConstraints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    encryption_context_equals: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.encryptionContextEquals),
-    encryption_context_subset: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.encryptionContextSubset),
+    encryption_context_equals: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.encryptionContextEquals),
+    encryption_context_subset: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.encryptionContextSubset),
   }
 }
 
 
-export function kmsGrantConstraintsToHclTerraform(struct?: KmsGrantConstraints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kmsGrantConstraintsToHclTerraform(struct?: KmsGrantConstraints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     encryption_context_equals: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.encryptionContextEquals),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.encryptionContextEquals),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     encryption_context_subset: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.encryptionContextSubset),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.encryptionContextSubset),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -107,9 +107,9 @@ export function kmsGrantConstraintsToHclTerraform(struct?: KmsGrantConstraints |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KmsGrantConstraintsOutputReference extends cdktf.ComplexObject {
+export class KmsGrantConstraintsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -117,11 +117,11 @@ export class KmsGrantConstraintsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KmsGrantConstraints | cdktf.IResolvable | undefined {
+  public get internalValue(): KmsGrantConstraints | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -138,14 +138,14 @@ export class KmsGrantConstraintsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KmsGrantConstraints | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KmsGrantConstraints | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._encryptionContextEquals = undefined;
       this._encryptionContextSubset = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -190,15 +190,15 @@ export class KmsGrantConstraintsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class KmsGrantConstraintsList extends cdktf.ComplexList {
-  public internalValue? : KmsGrantConstraints[] | cdktf.IResolvable
+export class KmsGrantConstraintsList extends cdktn.ComplexList {
+  public internalValue? : KmsGrantConstraints[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -213,7 +213,7 @@ export class KmsGrantConstraintsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_grant aws_kms_grant}
 */
-export class KmsGrant extends cdktf.TerraformResource {
+export class KmsGrant extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -224,14 +224,14 @@ export class KmsGrant extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KmsGrant resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KmsGrant resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmsGrant to import
   * @param importFromId The id of the existing KmsGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_grant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmsGrant to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_kms_grant", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_kms_grant", importId: importFromId, provider });
       }
 
   // ===========
@@ -280,7 +280,7 @@ export class KmsGrant extends cdktf.TerraformResource {
   // grant_creation_tokens - computed: false, optional: true, required: false
   private _grantCreationTokens?: string[]; 
   public get grantCreationTokens() {
-    return cdktf.Fn.tolist(this.getListAttribute('grant_creation_tokens'));
+    return cdktn.Fn.tolist(this.getListAttribute('grant_creation_tokens'));
   }
   public set grantCreationTokens(value: string[]) {
     this._grantCreationTokens = value;
@@ -364,7 +364,7 @@ export class KmsGrant extends cdktf.TerraformResource {
   // operations - computed: false, optional: false, required: true
   private _operations?: string[]; 
   public get operations() {
-    return cdktf.Fn.tolist(this.getListAttribute('operations'));
+    return cdktn.Fn.tolist(this.getListAttribute('operations'));
   }
   public set operations(value: string[]) {
     this._operations = value;
@@ -391,11 +391,11 @@ export class KmsGrant extends cdktf.TerraformResource {
   }
 
   // retire_on_delete - computed: false, optional: true, required: false
-  private _retireOnDelete?: boolean | cdktf.IResolvable; 
+  private _retireOnDelete?: boolean | cdktn.IResolvable; 
   public get retireOnDelete() {
     return this.getBooleanAttribute('retire_on_delete');
   }
-  public set retireOnDelete(value: boolean | cdktf.IResolvable) {
+  public set retireOnDelete(value: boolean | cdktn.IResolvable) {
     this._retireOnDelete = value;
   }
   public resetRetireOnDelete() {
@@ -427,7 +427,7 @@ export class KmsGrant extends cdktf.TerraformResource {
   public get constraints() {
     return this._constraints;
   }
-  public putConstraints(value: KmsGrantConstraints[] | cdktf.IResolvable) {
+  public putConstraints(value: KmsGrantConstraints[] | cdktn.IResolvable) {
     this._constraints.internalValue = value;
   }
   public resetConstraints() {
@@ -444,77 +444,77 @@ export class KmsGrant extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      grant_creation_tokens: cdktf.listMapper(cdktf.stringToTerraform, false)(this._grantCreationTokens),
-      grantee_principal: cdktf.stringToTerraform(this._granteePrincipal),
-      id: cdktf.stringToTerraform(this._id),
-      key_id: cdktf.stringToTerraform(this._keyId),
-      name: cdktf.stringToTerraform(this._name),
-      operations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._operations),
-      region: cdktf.stringToTerraform(this._region),
-      retire_on_delete: cdktf.booleanToTerraform(this._retireOnDelete),
-      retiring_principal: cdktf.stringToTerraform(this._retiringPrincipal),
-      constraints: cdktf.listMapper(kmsGrantConstraintsToTerraform, true)(this._constraints.internalValue),
+      grant_creation_tokens: cdktn.listMapper(cdktn.stringToTerraform, false)(this._grantCreationTokens),
+      grantee_principal: cdktn.stringToTerraform(this._granteePrincipal),
+      id: cdktn.stringToTerraform(this._id),
+      key_id: cdktn.stringToTerraform(this._keyId),
+      name: cdktn.stringToTerraform(this._name),
+      operations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._operations),
+      region: cdktn.stringToTerraform(this._region),
+      retire_on_delete: cdktn.booleanToTerraform(this._retireOnDelete),
+      retiring_principal: cdktn.stringToTerraform(this._retiringPrincipal),
+      constraints: cdktn.listMapper(kmsGrantConstraintsToTerraform, true)(this._constraints.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       grant_creation_tokens: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._grantCreationTokens),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._grantCreationTokens),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       grantee_principal: {
-        value: cdktf.stringToHclTerraform(this._granteePrincipal),
+        value: cdktn.stringToHclTerraform(this._granteePrincipal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_id: {
-        value: cdktf.stringToHclTerraform(this._keyId),
+        value: cdktn.stringToHclTerraform(this._keyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       operations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._operations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._operations),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retire_on_delete: {
-        value: cdktf.booleanToHclTerraform(this._retireOnDelete),
+        value: cdktn.booleanToHclTerraform(this._retireOnDelete),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       retiring_principal: {
-        value: cdktf.stringToHclTerraform(this._retiringPrincipal),
+        value: cdktn.stringToHclTerraform(this._retiringPrincipal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       constraints: {
-        value: cdktf.listMapperHcl(kmsGrantConstraintsToHclTerraform, true)(this._constraints.internalValue),
+        value: cdktn.listMapperHcl(kmsGrantConstraintsToHclTerraform, true)(this._constraints.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "KmsGrantConstraintsList",

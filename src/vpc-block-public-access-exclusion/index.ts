@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcBlockPublicAccessExclusionConfig extends cdktf.TerraformMetaArguments {
+export interface VpcBlockPublicAccessExclusionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_block_public_access_exclusion#internet_gateway_exclusion_mode VpcBlockPublicAccessExclusion#internet_gateway_exclusion_mode}
   */
@@ -62,39 +62,39 @@ export interface VpcBlockPublicAccessExclusionTimeouts {
   readonly update?: string;
 }
 
-export function vpcBlockPublicAccessExclusionTimeoutsToTerraform(struct?: VpcBlockPublicAccessExclusionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcBlockPublicAccessExclusionTimeoutsToTerraform(struct?: VpcBlockPublicAccessExclusionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function vpcBlockPublicAccessExclusionTimeoutsToHclTerraform(struct?: VpcBlockPublicAccessExclusionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcBlockPublicAccessExclusionTimeoutsToHclTerraform(struct?: VpcBlockPublicAccessExclusionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -105,19 +105,19 @@ export function vpcBlockPublicAccessExclusionTimeoutsToHclTerraform(struct?: Vpc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcBlockPublicAccessExclusionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VpcBlockPublicAccessExclusionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VpcBlockPublicAccessExclusionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VpcBlockPublicAccessExclusionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -138,7 +138,7 @@ export class VpcBlockPublicAccessExclusionTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpcBlockPublicAccessExclusionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpcBlockPublicAccessExclusionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -146,7 +146,7 @@ export class VpcBlockPublicAccessExclusionTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -211,7 +211,7 @@ export class VpcBlockPublicAccessExclusionTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_block_public_access_exclusion aws_vpc_block_public_access_exclusion}
 */
-export class VpcBlockPublicAccessExclusion extends cdktf.TerraformResource {
+export class VpcBlockPublicAccessExclusion extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -222,14 +222,14 @@ export class VpcBlockPublicAccessExclusion extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcBlockPublicAccessExclusion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcBlockPublicAccessExclusion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcBlockPublicAccessExclusion to import
   * @param importFromId The id of the existing VpcBlockPublicAccessExclusion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_block_public_access_exclusion#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcBlockPublicAccessExclusion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_block_public_access_exclusion", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_block_public_access_exclusion", importId: importFromId, provider });
       }
 
   // ===========
@@ -343,7 +343,7 @@ export class VpcBlockPublicAccessExclusion extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -386,11 +386,11 @@ export class VpcBlockPublicAccessExclusion extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      internet_gateway_exclusion_mode: cdktf.stringToTerraform(this._internetGatewayExclusionMode),
-      region: cdktf.stringToTerraform(this._region),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      internet_gateway_exclusion_mode: cdktn.stringToTerraform(this._internetGatewayExclusionMode),
+      region: cdktn.stringToTerraform(this._region),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
       timeouts: vpcBlockPublicAccessExclusionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -398,31 +398,31 @@ export class VpcBlockPublicAccessExclusion extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       internet_gateway_exclusion_mode: {
-        value: cdktf.stringToHclTerraform(this._internetGatewayExclusionMode),
+        value: cdktn.stringToHclTerraform(this._internetGatewayExclusionMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

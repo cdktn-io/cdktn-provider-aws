@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EfsMountTargetConfig extends cdktf.TerraformMetaArguments {
+export interface EfsMountTargetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_mount_target#file_system_id EfsMountTarget#file_system_id}
   */
@@ -67,32 +67,32 @@ export interface EfsMountTargetTimeouts {
   readonly delete?: string;
 }
 
-export function efsMountTargetTimeoutsToTerraform(struct?: EfsMountTargetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function efsMountTargetTimeoutsToTerraform(struct?: EfsMountTargetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function efsMountTargetTimeoutsToHclTerraform(struct?: EfsMountTargetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function efsMountTargetTimeoutsToHclTerraform(struct?: EfsMountTargetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,19 +103,19 @@ export function efsMountTargetTimeoutsToHclTerraform(struct?: EfsMountTargetTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EfsMountTargetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EfsMountTargetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EfsMountTargetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EfsMountTargetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -132,14 +132,14 @@ export class EfsMountTargetTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EfsMountTargetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EfsMountTargetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -187,7 +187,7 @@ export class EfsMountTargetTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_mount_target aws_efs_mount_target}
 */
-export class EfsMountTarget extends cdktf.TerraformResource {
+export class EfsMountTarget extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -198,14 +198,14 @@ export class EfsMountTarget extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EfsMountTarget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EfsMountTarget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EfsMountTarget to import
   * @param importFromId The id of the existing EfsMountTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_mount_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EfsMountTarget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_efs_mount_target", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_efs_mount_target", importId: importFromId, provider });
       }
 
   // ===========
@@ -381,7 +381,7 @@ export class EfsMountTarget extends cdktf.TerraformResource {
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -429,14 +429,14 @@ export class EfsMountTarget extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      file_system_id: cdktf.stringToTerraform(this._fileSystemId),
-      id: cdktf.stringToTerraform(this._id),
-      ip_address: cdktf.stringToTerraform(this._ipAddress),
-      ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
-      ipv6_address: cdktf.stringToTerraform(this._ipv6Address),
-      region: cdktf.stringToTerraform(this._region),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      file_system_id: cdktn.stringToTerraform(this._fileSystemId),
+      id: cdktn.stringToTerraform(this._id),
+      ip_address: cdktn.stringToTerraform(this._ipAddress),
+      ip_address_type: cdktn.stringToTerraform(this._ipAddressType),
+      ipv6_address: cdktn.stringToTerraform(this._ipv6Address),
+      region: cdktn.stringToTerraform(this._region),
+      security_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroups),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
       timeouts: efsMountTargetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -444,49 +444,49 @@ export class EfsMountTarget extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       file_system_id: {
-        value: cdktf.stringToHclTerraform(this._fileSystemId),
+        value: cdktn.stringToHclTerraform(this._fileSystemId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_address: {
-        value: cdktf.stringToHclTerraform(this._ipAddress),
+        value: cdktn.stringToHclTerraform(this._ipAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_address_type: {
-        value: cdktf.stringToHclTerraform(this._ipAddressType),
+        value: cdktn.stringToHclTerraform(this._ipAddressType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv6_address: {
-        value: cdktf.stringToHclTerraform(this._ipv6Address),
+        value: cdktn.stringToHclTerraform(this._ipv6Address),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroups),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

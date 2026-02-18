@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ChatbotSlackChannelConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface ChatbotSlackChannelConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chatbot_slack_channel_configuration#configuration_name ChatbotSlackChannelConfiguration#configuration_name}
   */
@@ -53,7 +53,7 @@ export interface ChatbotSlackChannelConfigurationConfig extends cdktf.TerraformM
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chatbot_slack_channel_configuration#user_authorization_required ChatbotSlackChannelConfiguration#user_authorization_required}
   */
-  readonly userAuthorizationRequired?: boolean | cdktf.IResolvable;
+  readonly userAuthorizationRequired?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -82,39 +82,39 @@ export interface ChatbotSlackChannelConfigurationTimeouts {
   readonly update?: string;
 }
 
-export function chatbotSlackChannelConfigurationTimeoutsToTerraform(struct?: ChatbotSlackChannelConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chatbotSlackChannelConfigurationTimeoutsToTerraform(struct?: ChatbotSlackChannelConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function chatbotSlackChannelConfigurationTimeoutsToHclTerraform(struct?: ChatbotSlackChannelConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chatbotSlackChannelConfigurationTimeoutsToHclTerraform(struct?: ChatbotSlackChannelConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,19 +125,19 @@ export function chatbotSlackChannelConfigurationTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChatbotSlackChannelConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ChatbotSlackChannelConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ChatbotSlackChannelConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ChatbotSlackChannelConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -158,7 +158,7 @@ export class ChatbotSlackChannelConfigurationTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChatbotSlackChannelConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChatbotSlackChannelConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -166,7 +166,7 @@ export class ChatbotSlackChannelConfigurationTimeoutsOutputReference extends cdk
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -231,7 +231,7 @@ export class ChatbotSlackChannelConfigurationTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chatbot_slack_channel_configuration aws_chatbot_slack_channel_configuration}
 */
-export class ChatbotSlackChannelConfiguration extends cdktf.TerraformResource {
+export class ChatbotSlackChannelConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -242,14 +242,14 @@ export class ChatbotSlackChannelConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ChatbotSlackChannelConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ChatbotSlackChannelConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChatbotSlackChannelConfiguration to import
   * @param importFromId The id of the existing ChatbotSlackChannelConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chatbot_slack_channel_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChatbotSlackChannelConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_chatbot_slack_channel_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_chatbot_slack_channel_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -414,7 +414,7 @@ export class ChatbotSlackChannelConfiguration extends cdktf.TerraformResource {
   // sns_topic_arns - computed: true, optional: true, required: false
   private _snsTopicArns?: string[]; 
   public get snsTopicArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('sns_topic_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('sns_topic_arns'));
   }
   public set snsTopicArns(value: string[]) {
     this._snsTopicArns = value;
@@ -444,17 +444,17 @@ export class ChatbotSlackChannelConfiguration extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
 
   // user_authorization_required - computed: true, optional: true, required: false
-  private _userAuthorizationRequired?: boolean | cdktf.IResolvable; 
+  private _userAuthorizationRequired?: boolean | cdktn.IResolvable; 
   public get userAuthorizationRequired() {
     return this.getBooleanAttribute('user_authorization_required');
   }
-  public set userAuthorizationRequired(value: boolean | cdktf.IResolvable) {
+  public set userAuthorizationRequired(value: boolean | cdktn.IResolvable) {
     this._userAuthorizationRequired = value;
   }
   public resetUserAuthorizationRequired() {
@@ -487,16 +487,16 @@ export class ChatbotSlackChannelConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      configuration_name: cdktf.stringToTerraform(this._configurationName),
-      guardrail_policy_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._guardrailPolicyArns),
-      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
-      logging_level: cdktf.stringToTerraform(this._loggingLevel),
-      region: cdktf.stringToTerraform(this._region),
-      slack_channel_id: cdktf.stringToTerraform(this._slackChannelId),
-      slack_team_id: cdktf.stringToTerraform(this._slackTeamId),
-      sns_topic_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._snsTopicArns),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      user_authorization_required: cdktf.booleanToTerraform(this._userAuthorizationRequired),
+      configuration_name: cdktn.stringToTerraform(this._configurationName),
+      guardrail_policy_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._guardrailPolicyArns),
+      iam_role_arn: cdktn.stringToTerraform(this._iamRoleArn),
+      logging_level: cdktn.stringToTerraform(this._loggingLevel),
+      region: cdktn.stringToTerraform(this._region),
+      slack_channel_id: cdktn.stringToTerraform(this._slackChannelId),
+      slack_team_id: cdktn.stringToTerraform(this._slackTeamId),
+      sns_topic_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._snsTopicArns),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      user_authorization_required: cdktn.booleanToTerraform(this._userAuthorizationRequired),
       timeouts: chatbotSlackChannelConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -504,61 +504,61 @@ export class ChatbotSlackChannelConfiguration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       configuration_name: {
-        value: cdktf.stringToHclTerraform(this._configurationName),
+        value: cdktn.stringToHclTerraform(this._configurationName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       guardrail_policy_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._guardrailPolicyArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._guardrailPolicyArns),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       iam_role_arn: {
-        value: cdktf.stringToHclTerraform(this._iamRoleArn),
+        value: cdktn.stringToHclTerraform(this._iamRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       logging_level: {
-        value: cdktf.stringToHclTerraform(this._loggingLevel),
+        value: cdktn.stringToHclTerraform(this._loggingLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       slack_channel_id: {
-        value: cdktf.stringToHclTerraform(this._slackChannelId),
+        value: cdktn.stringToHclTerraform(this._slackChannelId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       slack_team_id: {
-        value: cdktf.stringToHclTerraform(this._slackTeamId),
+        value: cdktn.stringToHclTerraform(this._slackTeamId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sns_topic_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._snsTopicArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._snsTopicArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       user_authorization_required: {
-        value: cdktf.booleanToHclTerraform(this._userAuthorizationRequired),
+        value: cdktn.booleanToHclTerraform(this._userAuthorizationRequired),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

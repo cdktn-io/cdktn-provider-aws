@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SchemasRegistryPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface SchemasRegistryPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/schemas_registry_policy#id SchemasRegistryPolicy#id}
   *
@@ -38,7 +38,7 @@ export interface SchemasRegistryPolicyConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/schemas_registry_policy aws_schemas_registry_policy}
 */
-export class SchemasRegistryPolicy extends cdktf.TerraformResource {
+export class SchemasRegistryPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class SchemasRegistryPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SchemasRegistryPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SchemasRegistryPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SchemasRegistryPolicy to import
   * @param importFromId The id of the existing SchemasRegistryPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/schemas_registry_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SchemasRegistryPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_schemas_registry_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_schemas_registry_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class SchemasRegistryPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      policy: cdktf.stringToTerraform(this._policy),
-      region: cdktf.stringToTerraform(this._region),
-      registry_name: cdktf.stringToTerraform(this._registryName),
+      id: cdktn.stringToTerraform(this._id),
+      policy: cdktn.stringToTerraform(this._policy),
+      region: cdktn.stringToTerraform(this._region),
+      registry_name: cdktn.stringToTerraform(this._registryName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy: {
-        value: cdktf.stringToHclTerraform(this._policy),
+        value: cdktn.stringToHclTerraform(this._policy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       registry_name: {
-        value: cdktf.stringToHclTerraform(this._registryName),
+        value: cdktn.stringToHclTerraform(this._registryName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

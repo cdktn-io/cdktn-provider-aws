@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsApiGatewayVpcLinkConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsApiGatewayVpcLinkConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/api_gateway_vpc_link#name DataAwsApiGatewayVpcLink#name}
   */
@@ -31,7 +31,7 @@ export interface DataAwsApiGatewayVpcLinkConfig extends cdktf.TerraformMetaArgum
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/api_gateway_vpc_link aws_api_gateway_vpc_link}
 */
-export class DataAwsApiGatewayVpcLink extends cdktf.TerraformDataSource {
+export class DataAwsApiGatewayVpcLink extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -42,14 +42,14 @@ export class DataAwsApiGatewayVpcLink extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsApiGatewayVpcLink resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsApiGatewayVpcLink resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsApiGatewayVpcLink to import
   * @param importFromId The id of the existing DataAwsApiGatewayVpcLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/api_gateway_vpc_link#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsApiGatewayVpcLink to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_vpc_link", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_vpc_link", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,7 +160,7 @@ export class DataAwsApiGatewayVpcLink extends cdktf.TerraformDataSource {
 
   // target_arns - computed: true, optional: false, required: false
   public get targetArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('target_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('target_arns'));
   }
 
   // =========
@@ -169,28 +169,28 @@ export class DataAwsApiGatewayVpcLink extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

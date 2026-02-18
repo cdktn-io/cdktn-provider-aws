@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CustomerprofilesDomainConfig extends cdktf.TerraformMetaArguments {
+export interface CustomerprofilesDomainConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/customerprofiles_domain#dead_letter_queue_url CustomerprofilesDomain#dead_letter_queue_url}
   */
@@ -74,31 +74,31 @@ export interface CustomerprofilesDomainMatchingAutoMergingConflictResolution {
 }
 
 export function customerprofilesDomainMatchingAutoMergingConflictResolutionToTerraform(struct?: CustomerprofilesDomainMatchingAutoMergingConflictResolutionOutputReference | CustomerprofilesDomainMatchingAutoMergingConflictResolution): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    conflict_resolving_model: cdktf.stringToTerraform(struct!.conflictResolvingModel),
-    source_name: cdktf.stringToTerraform(struct!.sourceName),
+    conflict_resolving_model: cdktn.stringToTerraform(struct!.conflictResolvingModel),
+    source_name: cdktn.stringToTerraform(struct!.sourceName),
   }
 }
 
 
 export function customerprofilesDomainMatchingAutoMergingConflictResolutionToHclTerraform(struct?: CustomerprofilesDomainMatchingAutoMergingConflictResolutionOutputReference | CustomerprofilesDomainMatchingAutoMergingConflictResolution): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     conflict_resolving_model: {
-      value: cdktf.stringToHclTerraform(struct!.conflictResolvingModel),
+      value: cdktn.stringToHclTerraform(struct!.conflictResolvingModel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_name: {
-      value: cdktf.stringToHclTerraform(struct!.sourceName),
+      value: cdktn.stringToHclTerraform(struct!.sourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,14 +109,14 @@ export function customerprofilesDomainMatchingAutoMergingConflictResolutionToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesDomainMatchingAutoMergingConflictResolutionOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesDomainMatchingAutoMergingConflictResolutionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -180,28 +180,28 @@ export interface CustomerprofilesDomainMatchingAutoMergingConsolidation {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/customerprofiles_domain#matching_attributes_list CustomerprofilesDomain#matching_attributes_list}
   */
-  readonly matchingAttributesList: string[][] | cdktf.IResolvable;
+  readonly matchingAttributesList: string[][] | cdktn.IResolvable;
 }
 
 export function customerprofilesDomainMatchingAutoMergingConsolidationToTerraform(struct?: CustomerprofilesDomainMatchingAutoMergingConsolidationOutputReference | CustomerprofilesDomainMatchingAutoMergingConsolidation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    matching_attributes_list: cdktf.listMapper(cdktf.listMapper(cdktf.stringToTerraform, false), false)(struct!.matchingAttributesList),
+    matching_attributes_list: cdktn.listMapper(cdktn.listMapper(cdktn.stringToTerraform, false), false)(struct!.matchingAttributesList),
   }
 }
 
 
 export function customerprofilesDomainMatchingAutoMergingConsolidationToHclTerraform(struct?: CustomerprofilesDomainMatchingAutoMergingConsolidationOutputReference | CustomerprofilesDomainMatchingAutoMergingConsolidation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     matching_attributes_list: {
-      value: cdktf.listMapperHcl(cdktf.listMapperHcl(cdktf.stringToHclTerraform, false), false)(struct!.matchingAttributesList),
+      value: cdktn.listMapperHcl(cdktn.listMapperHcl(cdktn.stringToHclTerraform, false), false)(struct!.matchingAttributesList),
       isBlock: false,
       type: "list",
       storageClassType: "stringListList",
@@ -212,14 +212,14 @@ export function customerprofilesDomainMatchingAutoMergingConsolidationToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesDomainMatchingAutoMergingConsolidationOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesDomainMatchingAutoMergingConsolidationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -245,11 +245,11 @@ export class CustomerprofilesDomainMatchingAutoMergingConsolidationOutputReferen
   }
 
   // matching_attributes_list - computed: false, optional: false, required: true
-  private _matchingAttributesList?: string[][] | cdktf.IResolvable; 
+  private _matchingAttributesList?: string[][] | cdktn.IResolvable; 
   public get matchingAttributesList() {
     return this.interpolationForAttribute('matching_attributes_list');
   }
-  public set matchingAttributesList(value: string[][] | cdktf.IResolvable) {
+  public set matchingAttributesList(value: string[][] | cdktn.IResolvable) {
     this._matchingAttributesList = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -261,7 +261,7 @@ export interface CustomerprofilesDomainMatchingAutoMerging {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/customerprofiles_domain#enabled CustomerprofilesDomain#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/customerprofiles_domain#min_allowed_confidence_score_for_merging CustomerprofilesDomain#min_allowed_confidence_score_for_merging}
   */
@@ -281,13 +281,13 @@ export interface CustomerprofilesDomainMatchingAutoMerging {
 }
 
 export function customerprofilesDomainMatchingAutoMergingToTerraform(struct?: CustomerprofilesDomainMatchingAutoMergingOutputReference | CustomerprofilesDomainMatchingAutoMerging): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    min_allowed_confidence_score_for_merging: cdktf.numberToTerraform(struct!.minAllowedConfidenceScoreForMerging),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    min_allowed_confidence_score_for_merging: cdktn.numberToTerraform(struct!.minAllowedConfidenceScoreForMerging),
     conflict_resolution: customerprofilesDomainMatchingAutoMergingConflictResolutionToTerraform(struct!.conflictResolution),
     consolidation: customerprofilesDomainMatchingAutoMergingConsolidationToTerraform(struct!.consolidation),
   }
@@ -295,19 +295,19 @@ export function customerprofilesDomainMatchingAutoMergingToTerraform(struct?: Cu
 
 
 export function customerprofilesDomainMatchingAutoMergingToHclTerraform(struct?: CustomerprofilesDomainMatchingAutoMergingOutputReference | CustomerprofilesDomainMatchingAutoMerging): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     min_allowed_confidence_score_for_merging: {
-      value: cdktf.numberToHclTerraform(struct!.minAllowedConfidenceScoreForMerging),
+      value: cdktn.numberToHclTerraform(struct!.minAllowedConfidenceScoreForMerging),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -330,14 +330,14 @@ export function customerprofilesDomainMatchingAutoMergingToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesDomainMatchingAutoMergingOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesDomainMatchingAutoMergingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -381,11 +381,11 @@ export class CustomerprofilesDomainMatchingAutoMergingOutputReference extends cd
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -453,31 +453,31 @@ export interface CustomerprofilesDomainMatchingExportingConfigS3Exporting {
 }
 
 export function customerprofilesDomainMatchingExportingConfigS3ExportingToTerraform(struct?: CustomerprofilesDomainMatchingExportingConfigS3ExportingOutputReference | CustomerprofilesDomainMatchingExportingConfigS3Exporting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
-    s3_key_name: cdktf.stringToTerraform(struct!.s3KeyName),
+    s3_bucket_name: cdktn.stringToTerraform(struct!.s3BucketName),
+    s3_key_name: cdktn.stringToTerraform(struct!.s3KeyName),
   }
 }
 
 
 export function customerprofilesDomainMatchingExportingConfigS3ExportingToHclTerraform(struct?: CustomerprofilesDomainMatchingExportingConfigS3ExportingOutputReference | CustomerprofilesDomainMatchingExportingConfigS3Exporting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.s3BucketName),
+      value: cdktn.stringToHclTerraform(struct!.s3BucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.s3KeyName),
+      value: cdktn.stringToHclTerraform(struct!.s3KeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -488,14 +488,14 @@ export function customerprofilesDomainMatchingExportingConfigS3ExportingToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesDomainMatchingExportingConfigS3ExportingOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesDomainMatchingExportingConfigS3ExportingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -565,8 +565,8 @@ export interface CustomerprofilesDomainMatchingExportingConfig {
 }
 
 export function customerprofilesDomainMatchingExportingConfigToTerraform(struct?: CustomerprofilesDomainMatchingExportingConfigOutputReference | CustomerprofilesDomainMatchingExportingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -576,8 +576,8 @@ export function customerprofilesDomainMatchingExportingConfigToTerraform(struct?
 
 
 export function customerprofilesDomainMatchingExportingConfigToHclTerraform(struct?: CustomerprofilesDomainMatchingExportingConfigOutputReference | CustomerprofilesDomainMatchingExportingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -593,14 +593,14 @@ export function customerprofilesDomainMatchingExportingConfigToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesDomainMatchingExportingConfigOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesDomainMatchingExportingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -653,31 +653,31 @@ export interface CustomerprofilesDomainMatchingJobSchedule {
 }
 
 export function customerprofilesDomainMatchingJobScheduleToTerraform(struct?: CustomerprofilesDomainMatchingJobScheduleOutputReference | CustomerprofilesDomainMatchingJobSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_the_week: cdktf.stringToTerraform(struct!.dayOfTheWeek),
-    time: cdktf.stringToTerraform(struct!.time),
+    day_of_the_week: cdktn.stringToTerraform(struct!.dayOfTheWeek),
+    time: cdktn.stringToTerraform(struct!.time),
   }
 }
 
 
 export function customerprofilesDomainMatchingJobScheduleToHclTerraform(struct?: CustomerprofilesDomainMatchingJobScheduleOutputReference | CustomerprofilesDomainMatchingJobSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_the_week: {
-      value: cdktf.stringToHclTerraform(struct!.dayOfTheWeek),
+      value: cdktn.stringToHclTerraform(struct!.dayOfTheWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time: {
-      value: cdktf.stringToHclTerraform(struct!.time),
+      value: cdktn.stringToHclTerraform(struct!.time),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -688,14 +688,14 @@ export function customerprofilesDomainMatchingJobScheduleToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesDomainMatchingJobScheduleOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesDomainMatchingJobScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -756,7 +756,7 @@ export interface CustomerprofilesDomainMatching {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/customerprofiles_domain#enabled CustomerprofilesDomain#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * auto_merging block
   *
@@ -778,12 +778,12 @@ export interface CustomerprofilesDomainMatching {
 }
 
 export function customerprofilesDomainMatchingToTerraform(struct?: CustomerprofilesDomainMatchingOutputReference | CustomerprofilesDomainMatching): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
     auto_merging: customerprofilesDomainMatchingAutoMergingToTerraform(struct!.autoMerging),
     exporting_config: customerprofilesDomainMatchingExportingConfigToTerraform(struct!.exportingConfig),
     job_schedule: customerprofilesDomainMatchingJobScheduleToTerraform(struct!.jobSchedule),
@@ -792,13 +792,13 @@ export function customerprofilesDomainMatchingToTerraform(struct?: Customerprofi
 
 
 export function customerprofilesDomainMatchingToHclTerraform(struct?: CustomerprofilesDomainMatchingOutputReference | CustomerprofilesDomainMatching): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -827,14 +827,14 @@ export function customerprofilesDomainMatchingToHclTerraform(struct?: Customerpr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesDomainMatchingOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesDomainMatchingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -878,11 +878,11 @@ export class CustomerprofilesDomainMatchingOutputReference extends cdktf.Complex
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -958,45 +958,45 @@ export interface CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelector {
 }
 
 export function customerprofilesDomainRuleBasedMatchingAttributeTypesSelectorToTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelectorOutputReference | CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.address),
-    attribute_matching_model: cdktf.stringToTerraform(struct!.attributeMatchingModel),
-    email_address: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailAddress),
-    phone_number: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.phoneNumber),
+    address: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.address),
+    attribute_matching_model: cdktn.stringToTerraform(struct!.attributeMatchingModel),
+    email_address: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.emailAddress),
+    phone_number: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.phoneNumber),
   }
 }
 
 
 export function customerprofilesDomainRuleBasedMatchingAttributeTypesSelectorToHclTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelectorOutputReference | CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.address),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.address),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     attribute_matching_model: {
-      value: cdktf.stringToHclTerraform(struct!.attributeMatchingModel),
+      value: cdktn.stringToHclTerraform(struct!.attributeMatchingModel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     email_address: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.emailAddress),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.emailAddress),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     phone_number: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.phoneNumber),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.phoneNumber),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1007,14 +1007,14 @@ export function customerprofilesDomainRuleBasedMatchingAttributeTypesSelectorToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelectorOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1130,31 +1130,31 @@ export interface CustomerprofilesDomainRuleBasedMatchingConflictResolution {
 }
 
 export function customerprofilesDomainRuleBasedMatchingConflictResolutionToTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingConflictResolutionOutputReference | CustomerprofilesDomainRuleBasedMatchingConflictResolution): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    conflict_resolving_model: cdktf.stringToTerraform(struct!.conflictResolvingModel),
-    source_name: cdktf.stringToTerraform(struct!.sourceName),
+    conflict_resolving_model: cdktn.stringToTerraform(struct!.conflictResolvingModel),
+    source_name: cdktn.stringToTerraform(struct!.sourceName),
   }
 }
 
 
 export function customerprofilesDomainRuleBasedMatchingConflictResolutionToHclTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingConflictResolutionOutputReference | CustomerprofilesDomainRuleBasedMatchingConflictResolution): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     conflict_resolving_model: {
-      value: cdktf.stringToHclTerraform(struct!.conflictResolvingModel),
+      value: cdktn.stringToHclTerraform(struct!.conflictResolvingModel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_name: {
-      value: cdktf.stringToHclTerraform(struct!.sourceName),
+      value: cdktn.stringToHclTerraform(struct!.sourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1165,14 +1165,14 @@ export function customerprofilesDomainRuleBasedMatchingConflictResolutionToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesDomainRuleBasedMatchingConflictResolutionOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesDomainRuleBasedMatchingConflictResolutionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1244,31 +1244,31 @@ export interface CustomerprofilesDomainRuleBasedMatchingExportingConfigS3Exporti
 }
 
 export function customerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingToTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingOutputReference | CustomerprofilesDomainRuleBasedMatchingExportingConfigS3Exporting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
-    s3_key_name: cdktf.stringToTerraform(struct!.s3KeyName),
+    s3_bucket_name: cdktn.stringToTerraform(struct!.s3BucketName),
+    s3_key_name: cdktn.stringToTerraform(struct!.s3KeyName),
   }
 }
 
 
 export function customerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingToHclTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingOutputReference | CustomerprofilesDomainRuleBasedMatchingExportingConfigS3Exporting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.s3BucketName),
+      value: cdktn.stringToHclTerraform(struct!.s3BucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.s3KeyName),
+      value: cdktn.stringToHclTerraform(struct!.s3KeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1279,14 +1279,14 @@ export function customerprofilesDomainRuleBasedMatchingExportingConfigS3Exportin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1356,8 +1356,8 @@ export interface CustomerprofilesDomainRuleBasedMatchingExportingConfig {
 }
 
 export function customerprofilesDomainRuleBasedMatchingExportingConfigToTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingExportingConfigOutputReference | CustomerprofilesDomainRuleBasedMatchingExportingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1367,8 +1367,8 @@ export function customerprofilesDomainRuleBasedMatchingExportingConfigToTerrafor
 
 
 export function customerprofilesDomainRuleBasedMatchingExportingConfigToHclTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingExportingConfigOutputReference | CustomerprofilesDomainRuleBasedMatchingExportingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1384,14 +1384,14 @@ export function customerprofilesDomainRuleBasedMatchingExportingConfigToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesDomainRuleBasedMatchingExportingConfigOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesDomainRuleBasedMatchingExportingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1439,25 +1439,25 @@ export interface CustomerprofilesDomainRuleBasedMatchingMatchingRules {
   readonly rule: string[];
 }
 
-export function customerprofilesDomainRuleBasedMatchingMatchingRulesToTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingMatchingRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customerprofilesDomainRuleBasedMatchingMatchingRulesToTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingMatchingRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rule: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rule),
+    rule: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rule),
   }
 }
 
 
-export function customerprofilesDomainRuleBasedMatchingMatchingRulesToHclTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingMatchingRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customerprofilesDomainRuleBasedMatchingMatchingRulesToHclTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingMatchingRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rule: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rule),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rule),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1468,9 +1468,9 @@ export function customerprofilesDomainRuleBasedMatchingMatchingRulesToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesDomainRuleBasedMatchingMatchingRulesOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesDomainRuleBasedMatchingMatchingRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1478,11 +1478,11 @@ export class CustomerprofilesDomainRuleBasedMatchingMatchingRulesOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CustomerprofilesDomainRuleBasedMatchingMatchingRules | cdktf.IResolvable | undefined {
+  public get internalValue(): CustomerprofilesDomainRuleBasedMatchingMatchingRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1495,13 +1495,13 @@ export class CustomerprofilesDomainRuleBasedMatchingMatchingRulesOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomerprofilesDomainRuleBasedMatchingMatchingRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CustomerprofilesDomainRuleBasedMatchingMatchingRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._rule = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1526,15 +1526,15 @@ export class CustomerprofilesDomainRuleBasedMatchingMatchingRulesOutputReference
   }
 }
 
-export class CustomerprofilesDomainRuleBasedMatchingMatchingRulesList extends cdktf.ComplexList {
-  public internalValue? : CustomerprofilesDomainRuleBasedMatchingMatchingRules[] | cdktf.IResolvable
+export class CustomerprofilesDomainRuleBasedMatchingMatchingRulesList extends cdktn.ComplexList {
+  public internalValue? : CustomerprofilesDomainRuleBasedMatchingMatchingRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1549,7 +1549,7 @@ export interface CustomerprofilesDomainRuleBasedMatching {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/customerprofiles_domain#enabled CustomerprofilesDomain#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/customerprofiles_domain#max_allowed_rule_level_for_matching CustomerprofilesDomain#max_allowed_rule_level_for_matching}
   */
@@ -1585,53 +1585,53 @@ export interface CustomerprofilesDomainRuleBasedMatching {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/customerprofiles_domain#matching_rules CustomerprofilesDomain#matching_rules}
   */
-  readonly matchingRules?: CustomerprofilesDomainRuleBasedMatchingMatchingRules[] | cdktf.IResolvable;
+  readonly matchingRules?: CustomerprofilesDomainRuleBasedMatchingMatchingRules[] | cdktn.IResolvable;
 }
 
 export function customerprofilesDomainRuleBasedMatchingToTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingOutputReference | CustomerprofilesDomainRuleBasedMatching): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    max_allowed_rule_level_for_matching: cdktf.numberToTerraform(struct!.maxAllowedRuleLevelForMatching),
-    max_allowed_rule_level_for_merging: cdktf.numberToTerraform(struct!.maxAllowedRuleLevelForMerging),
-    status: cdktf.stringToTerraform(struct!.status),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    max_allowed_rule_level_for_matching: cdktn.numberToTerraform(struct!.maxAllowedRuleLevelForMatching),
+    max_allowed_rule_level_for_merging: cdktn.numberToTerraform(struct!.maxAllowedRuleLevelForMerging),
+    status: cdktn.stringToTerraform(struct!.status),
     attribute_types_selector: customerprofilesDomainRuleBasedMatchingAttributeTypesSelectorToTerraform(struct!.attributeTypesSelector),
     conflict_resolution: customerprofilesDomainRuleBasedMatchingConflictResolutionToTerraform(struct!.conflictResolution),
     exporting_config: customerprofilesDomainRuleBasedMatchingExportingConfigToTerraform(struct!.exportingConfig),
-    matching_rules: cdktf.listMapper(customerprofilesDomainRuleBasedMatchingMatchingRulesToTerraform, true)(struct!.matchingRules),
+    matching_rules: cdktn.listMapper(customerprofilesDomainRuleBasedMatchingMatchingRulesToTerraform, true)(struct!.matchingRules),
   }
 }
 
 
 export function customerprofilesDomainRuleBasedMatchingToHclTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingOutputReference | CustomerprofilesDomainRuleBasedMatching): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_allowed_rule_level_for_matching: {
-      value: cdktf.numberToHclTerraform(struct!.maxAllowedRuleLevelForMatching),
+      value: cdktn.numberToHclTerraform(struct!.maxAllowedRuleLevelForMatching),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_allowed_rule_level_for_merging: {
-      value: cdktf.numberToHclTerraform(struct!.maxAllowedRuleLevelForMerging),
+      value: cdktn.numberToHclTerraform(struct!.maxAllowedRuleLevelForMerging),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1655,7 +1655,7 @@ export function customerprofilesDomainRuleBasedMatchingToHclTerraform(struct?: C
       storageClassType: "CustomerprofilesDomainRuleBasedMatchingExportingConfigList",
     },
     matching_rules: {
-      value: cdktf.listMapperHcl(customerprofilesDomainRuleBasedMatchingMatchingRulesToHclTerraform, true)(struct!.matchingRules),
+      value: cdktn.listMapperHcl(customerprofilesDomainRuleBasedMatchingMatchingRulesToHclTerraform, true)(struct!.matchingRules),
       isBlock: true,
       type: "set",
       storageClassType: "CustomerprofilesDomainRuleBasedMatchingMatchingRulesList",
@@ -1666,14 +1666,14 @@ export function customerprofilesDomainRuleBasedMatchingToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomerprofilesDomainRuleBasedMatchingOutputReference extends cdktf.ComplexObject {
+export class CustomerprofilesDomainRuleBasedMatchingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1741,11 +1741,11 @@ export class CustomerprofilesDomainRuleBasedMatchingOutputReference extends cdkt
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1854,7 +1854,7 @@ export class CustomerprofilesDomainRuleBasedMatchingOutputReference extends cdkt
   public get matchingRules() {
     return this._matchingRules;
   }
-  public putMatchingRules(value: CustomerprofilesDomainRuleBasedMatchingMatchingRules[] | cdktf.IResolvable) {
+  public putMatchingRules(value: CustomerprofilesDomainRuleBasedMatchingMatchingRules[] | cdktn.IResolvable) {
     this._matchingRules.internalValue = value;
   }
   public resetMatchingRules() {
@@ -1869,7 +1869,7 @@ export class CustomerprofilesDomainRuleBasedMatchingOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/customerprofiles_domain aws_customerprofiles_domain}
 */
-export class CustomerprofilesDomain extends cdktf.TerraformResource {
+export class CustomerprofilesDomain extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1880,14 +1880,14 @@ export class CustomerprofilesDomain extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CustomerprofilesDomain resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CustomerprofilesDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomerprofilesDomain to import
   * @param importFromId The id of the existing CustomerprofilesDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/customerprofiles_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomerprofilesDomain to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_customerprofiles_domain", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_customerprofiles_domain", importId: importFromId, provider });
       }
 
   // ===========
@@ -2098,14 +2098,14 @@ export class CustomerprofilesDomain extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dead_letter_queue_url: cdktf.stringToTerraform(this._deadLetterQueueUrl),
-      default_encryption_key: cdktf.stringToTerraform(this._defaultEncryptionKey),
-      default_expiration_days: cdktf.numberToTerraform(this._defaultExpirationDays),
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      dead_letter_queue_url: cdktn.stringToTerraform(this._deadLetterQueueUrl),
+      default_encryption_key: cdktn.stringToTerraform(this._defaultEncryptionKey),
+      default_expiration_days: cdktn.numberToTerraform(this._defaultExpirationDays),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       matching: customerprofilesDomainMatchingToTerraform(this._matching.internalValue),
       rule_based_matching: customerprofilesDomainRuleBasedMatchingToTerraform(this._ruleBasedMatching.internalValue),
     };
@@ -2114,49 +2114,49 @@ export class CustomerprofilesDomain extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       dead_letter_queue_url: {
-        value: cdktf.stringToHclTerraform(this._deadLetterQueueUrl),
+        value: cdktn.stringToHclTerraform(this._deadLetterQueueUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_encryption_key: {
-        value: cdktf.stringToHclTerraform(this._defaultEncryptionKey),
+        value: cdktn.stringToHclTerraform(this._defaultEncryptionKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_expiration_days: {
-        value: cdktf.numberToHclTerraform(this._defaultExpirationDays),
+        value: cdktn.numberToHclTerraform(this._defaultExpirationDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

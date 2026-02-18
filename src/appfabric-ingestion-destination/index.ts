@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppfabricIngestionDestinationConfig extends cdktf.TerraformMetaArguments {
+export interface AppfabricIngestionDestinationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_ingestion_destination#app_bundle_arn AppfabricIngestionDestination#app_bundle_arn}
   */
@@ -35,13 +35,13 @@ export interface AppfabricIngestionDestinationConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_ingestion_destination#destination_configuration AppfabricIngestionDestination#destination_configuration}
   */
-  readonly destinationConfiguration?: AppfabricIngestionDestinationDestinationConfiguration[] | cdktf.IResolvable;
+  readonly destinationConfiguration?: AppfabricIngestionDestinationDestinationConfiguration[] | cdktn.IResolvable;
   /**
   * processing_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_ingestion_destination#processing_configuration AppfabricIngestionDestination#processing_configuration}
   */
-  readonly processingConfiguration?: AppfabricIngestionDestinationProcessingConfiguration[] | cdktf.IResolvable;
+  readonly processingConfiguration?: AppfabricIngestionDestinationProcessingConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -56,25 +56,25 @@ export interface AppfabricIngestionDestinationDestinationConfigurationAuditLogDe
   readonly streamName: string;
 }
 
-export function appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamToTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamToTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    stream_name: cdktf.stringToTerraform(struct!.streamName),
+    stream_name: cdktn.stringToTerraform(struct!.streamName),
   }
 }
 
 
-export function appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamToHclTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamToHclTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.streamName),
+      value: cdktn.stringToHclTerraform(struct!.streamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -85,9 +85,9 @@ export function appfabricIngestionDestinationDestinationConfigurationAuditLogDes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamOutputReference extends cdktf.ComplexObject {
+export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -95,11 +95,11 @@ export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestin
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream | cdktf.IResolvable | undefined {
+  public get internalValue(): AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -112,13 +112,13 @@ export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestin
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._streamName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -143,15 +143,15 @@ export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestin
   }
 }
 
-export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamList extends cdktf.ComplexList {
-  public internalValue? : AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream[] | cdktf.IResolvable
+export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamList extends cdktn.ComplexList {
+  public internalValue? : AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -173,32 +173,32 @@ export interface AppfabricIngestionDestinationDestinationConfigurationAuditLogDe
   readonly prefix?: string;
 }
 
-export function appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketToTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketToTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
   }
 }
 
 
-export function appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketToHclTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketToHclTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -209,9 +209,9 @@ export function appfabricIngestionDestinationDestinationConfigurationAuditLogDes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketOutputReference extends cdktf.ComplexObject {
+export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -219,11 +219,11 @@ export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestin
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket | cdktf.IResolvable | undefined {
+  public get internalValue(): AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -240,14 +240,14 @@ export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestin
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._bucketName = undefined;
       this._prefix = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -289,15 +289,15 @@ export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestin
   }
 }
 
-export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketList extends cdktf.ComplexList {
-  public internalValue? : AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket[] | cdktf.IResolvable
+export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketList extends cdktn.ComplexList {
+  public internalValue? : AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -314,41 +314,41 @@ export interface AppfabricIngestionDestinationDestinationConfigurationAuditLogDe
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_ingestion_destination#firehose_stream AppfabricIngestionDestination#firehose_stream}
   */
-  readonly firehoseStream?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream[] | cdktf.IResolvable;
+  readonly firehoseStream?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream[] | cdktn.IResolvable;
   /**
   * s3_bucket block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_ingestion_destination#s3_bucket AppfabricIngestionDestination#s3_bucket}
   */
-  readonly s3Bucket?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket[] | cdktf.IResolvable;
+  readonly s3Bucket?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket[] | cdktn.IResolvable;
 }
 
-export function appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationToTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationToTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    firehose_stream: cdktf.listMapper(appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamToTerraform, true)(struct!.firehoseStream),
-    s3_bucket: cdktf.listMapper(appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketToTerraform, true)(struct!.s3Bucket),
+    firehose_stream: cdktn.listMapper(appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamToTerraform, true)(struct!.firehoseStream),
+    s3_bucket: cdktn.listMapper(appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketToTerraform, true)(struct!.s3Bucket),
   }
 }
 
 
-export function appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationToHclTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationToHclTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     firehose_stream: {
-      value: cdktf.listMapperHcl(appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamToHclTerraform, true)(struct!.firehoseStream),
+      value: cdktn.listMapperHcl(appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamToHclTerraform, true)(struct!.firehoseStream),
       isBlock: true,
       type: "list",
       storageClassType: "AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamList",
     },
     s3_bucket: {
-      value: cdktf.listMapperHcl(appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketToHclTerraform, true)(struct!.s3Bucket),
+      value: cdktn.listMapperHcl(appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketToHclTerraform, true)(struct!.s3Bucket),
       isBlock: true,
       type: "list",
       storageClassType: "AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketList",
@@ -359,9 +359,9 @@ export function appfabricIngestionDestinationDestinationConfigurationAuditLogDes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationOutputReference extends cdktf.ComplexObject {
+export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -369,11 +369,11 @@ export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestin
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -390,14 +390,14 @@ export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestin
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._firehoseStream.internalValue = undefined;
       this._s3Bucket.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -414,7 +414,7 @@ export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestin
   public get firehoseStream() {
     return this._firehoseStream;
   }
-  public putFirehoseStream(value: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream[] | cdktf.IResolvable) {
+  public putFirehoseStream(value: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream[] | cdktn.IResolvable) {
     this._firehoseStream.internalValue = value;
   }
   public resetFirehoseStream() {
@@ -430,7 +430,7 @@ export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestin
   public get s3Bucket() {
     return this._s3Bucket;
   }
-  public putS3Bucket(value: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket[] | cdktf.IResolvable) {
+  public putS3Bucket(value: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket[] | cdktn.IResolvable) {
     this._s3Bucket.internalValue = value;
   }
   public resetS3Bucket() {
@@ -442,15 +442,15 @@ export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestin
   }
 }
 
-export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationList extends cdktf.ComplexList {
-  public internalValue? : AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination[] | cdktf.IResolvable
+export class AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationList extends cdktn.ComplexList {
+  public internalValue? : AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -467,28 +467,28 @@ export interface AppfabricIngestionDestinationDestinationConfigurationAuditLog {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_ingestion_destination#destination AppfabricIngestionDestination#destination}
   */
-  readonly destination?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination[] | cdktf.IResolvable;
+  readonly destination?: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination[] | cdktn.IResolvable;
 }
 
-export function appfabricIngestionDestinationDestinationConfigurationAuditLogToTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationDestinationConfigurationAuditLogToTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.listMapper(appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationToTerraform, true)(struct!.destination),
+    destination: cdktn.listMapper(appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationToTerraform, true)(struct!.destination),
   }
 }
 
 
-export function appfabricIngestionDestinationDestinationConfigurationAuditLogToHclTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationDestinationConfigurationAuditLogToHclTerraform(struct?: AppfabricIngestionDestinationDestinationConfigurationAuditLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.listMapperHcl(appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationToHclTerraform, true)(struct!.destination),
+      value: cdktn.listMapperHcl(appfabricIngestionDestinationDestinationConfigurationAuditLogDestinationToHclTerraform, true)(struct!.destination),
       isBlock: true,
       type: "list",
       storageClassType: "AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationList",
@@ -499,9 +499,9 @@ export function appfabricIngestionDestinationDestinationConfigurationAuditLogToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppfabricIngestionDestinationDestinationConfigurationAuditLogOutputReference extends cdktf.ComplexObject {
+export class AppfabricIngestionDestinationDestinationConfigurationAuditLogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -509,11 +509,11 @@ export class AppfabricIngestionDestinationDestinationConfigurationAuditLogOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppfabricIngestionDestinationDestinationConfigurationAuditLog | cdktf.IResolvable | undefined {
+  public get internalValue(): AppfabricIngestionDestinationDestinationConfigurationAuditLog | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -526,13 +526,13 @@ export class AppfabricIngestionDestinationDestinationConfigurationAuditLogOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppfabricIngestionDestinationDestinationConfigurationAuditLog | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppfabricIngestionDestinationDestinationConfigurationAuditLog | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._destination.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -548,7 +548,7 @@ export class AppfabricIngestionDestinationDestinationConfigurationAuditLogOutput
   public get destination() {
     return this._destination;
   }
-  public putDestination(value: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination[] | cdktf.IResolvable) {
+  public putDestination(value: AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination[] | cdktn.IResolvable) {
     this._destination.internalValue = value;
   }
   public resetDestination() {
@@ -560,15 +560,15 @@ export class AppfabricIngestionDestinationDestinationConfigurationAuditLogOutput
   }
 }
 
-export class AppfabricIngestionDestinationDestinationConfigurationAuditLogList extends cdktf.ComplexList {
-  public internalValue? : AppfabricIngestionDestinationDestinationConfigurationAuditLog[] | cdktf.IResolvable
+export class AppfabricIngestionDestinationDestinationConfigurationAuditLogList extends cdktn.ComplexList {
+  public internalValue? : AppfabricIngestionDestinationDestinationConfigurationAuditLog[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -585,28 +585,28 @@ export interface AppfabricIngestionDestinationDestinationConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_ingestion_destination#audit_log AppfabricIngestionDestination#audit_log}
   */
-  readonly auditLog?: AppfabricIngestionDestinationDestinationConfigurationAuditLog[] | cdktf.IResolvable;
+  readonly auditLog?: AppfabricIngestionDestinationDestinationConfigurationAuditLog[] | cdktn.IResolvable;
 }
 
-export function appfabricIngestionDestinationDestinationConfigurationToTerraform(struct?: AppfabricIngestionDestinationDestinationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationDestinationConfigurationToTerraform(struct?: AppfabricIngestionDestinationDestinationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audit_log: cdktf.listMapper(appfabricIngestionDestinationDestinationConfigurationAuditLogToTerraform, true)(struct!.auditLog),
+    audit_log: cdktn.listMapper(appfabricIngestionDestinationDestinationConfigurationAuditLogToTerraform, true)(struct!.auditLog),
   }
 }
 
 
-export function appfabricIngestionDestinationDestinationConfigurationToHclTerraform(struct?: AppfabricIngestionDestinationDestinationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationDestinationConfigurationToHclTerraform(struct?: AppfabricIngestionDestinationDestinationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audit_log: {
-      value: cdktf.listMapperHcl(appfabricIngestionDestinationDestinationConfigurationAuditLogToHclTerraform, true)(struct!.auditLog),
+      value: cdktn.listMapperHcl(appfabricIngestionDestinationDestinationConfigurationAuditLogToHclTerraform, true)(struct!.auditLog),
       isBlock: true,
       type: "list",
       storageClassType: "AppfabricIngestionDestinationDestinationConfigurationAuditLogList",
@@ -617,9 +617,9 @@ export function appfabricIngestionDestinationDestinationConfigurationToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppfabricIngestionDestinationDestinationConfigurationOutputReference extends cdktf.ComplexObject {
+export class AppfabricIngestionDestinationDestinationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -627,11 +627,11 @@ export class AppfabricIngestionDestinationDestinationConfigurationOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppfabricIngestionDestinationDestinationConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): AppfabricIngestionDestinationDestinationConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -644,13 +644,13 @@ export class AppfabricIngestionDestinationDestinationConfigurationOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppfabricIngestionDestinationDestinationConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppfabricIngestionDestinationDestinationConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._auditLog.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -666,7 +666,7 @@ export class AppfabricIngestionDestinationDestinationConfigurationOutputReferenc
   public get auditLog() {
     return this._auditLog;
   }
-  public putAuditLog(value: AppfabricIngestionDestinationDestinationConfigurationAuditLog[] | cdktf.IResolvable) {
+  public putAuditLog(value: AppfabricIngestionDestinationDestinationConfigurationAuditLog[] | cdktn.IResolvable) {
     this._auditLog.internalValue = value;
   }
   public resetAuditLog() {
@@ -678,15 +678,15 @@ export class AppfabricIngestionDestinationDestinationConfigurationOutputReferenc
   }
 }
 
-export class AppfabricIngestionDestinationDestinationConfigurationList extends cdktf.ComplexList {
-  public internalValue? : AppfabricIngestionDestinationDestinationConfiguration[] | cdktf.IResolvable
+export class AppfabricIngestionDestinationDestinationConfigurationList extends cdktn.ComplexList {
+  public internalValue? : AppfabricIngestionDestinationDestinationConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -708,32 +708,32 @@ export interface AppfabricIngestionDestinationProcessingConfigurationAuditLog {
   readonly schema: string;
 }
 
-export function appfabricIngestionDestinationProcessingConfigurationAuditLogToTerraform(struct?: AppfabricIngestionDestinationProcessingConfigurationAuditLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationProcessingConfigurationAuditLogToTerraform(struct?: AppfabricIngestionDestinationProcessingConfigurationAuditLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    format: cdktf.stringToTerraform(struct!.format),
-    schema: cdktf.stringToTerraform(struct!.schema),
+    format: cdktn.stringToTerraform(struct!.format),
+    schema: cdktn.stringToTerraform(struct!.schema),
   }
 }
 
 
-export function appfabricIngestionDestinationProcessingConfigurationAuditLogToHclTerraform(struct?: AppfabricIngestionDestinationProcessingConfigurationAuditLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationProcessingConfigurationAuditLogToHclTerraform(struct?: AppfabricIngestionDestinationProcessingConfigurationAuditLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     format: {
-      value: cdktf.stringToHclTerraform(struct!.format),
+      value: cdktn.stringToHclTerraform(struct!.format),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schema: {
-      value: cdktf.stringToHclTerraform(struct!.schema),
+      value: cdktn.stringToHclTerraform(struct!.schema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -744,9 +744,9 @@ export function appfabricIngestionDestinationProcessingConfigurationAuditLogToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppfabricIngestionDestinationProcessingConfigurationAuditLogOutputReference extends cdktf.ComplexObject {
+export class AppfabricIngestionDestinationProcessingConfigurationAuditLogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -754,11 +754,11 @@ export class AppfabricIngestionDestinationProcessingConfigurationAuditLogOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppfabricIngestionDestinationProcessingConfigurationAuditLog | cdktf.IResolvable | undefined {
+  public get internalValue(): AppfabricIngestionDestinationProcessingConfigurationAuditLog | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -775,14 +775,14 @@ export class AppfabricIngestionDestinationProcessingConfigurationAuditLogOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppfabricIngestionDestinationProcessingConfigurationAuditLog | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppfabricIngestionDestinationProcessingConfigurationAuditLog | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._format = undefined;
       this._schema = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -821,15 +821,15 @@ export class AppfabricIngestionDestinationProcessingConfigurationAuditLogOutputR
   }
 }
 
-export class AppfabricIngestionDestinationProcessingConfigurationAuditLogList extends cdktf.ComplexList {
-  public internalValue? : AppfabricIngestionDestinationProcessingConfigurationAuditLog[] | cdktf.IResolvable
+export class AppfabricIngestionDestinationProcessingConfigurationAuditLogList extends cdktn.ComplexList {
+  public internalValue? : AppfabricIngestionDestinationProcessingConfigurationAuditLog[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -846,28 +846,28 @@ export interface AppfabricIngestionDestinationProcessingConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_ingestion_destination#audit_log AppfabricIngestionDestination#audit_log}
   */
-  readonly auditLog?: AppfabricIngestionDestinationProcessingConfigurationAuditLog[] | cdktf.IResolvable;
+  readonly auditLog?: AppfabricIngestionDestinationProcessingConfigurationAuditLog[] | cdktn.IResolvable;
 }
 
-export function appfabricIngestionDestinationProcessingConfigurationToTerraform(struct?: AppfabricIngestionDestinationProcessingConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationProcessingConfigurationToTerraform(struct?: AppfabricIngestionDestinationProcessingConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audit_log: cdktf.listMapper(appfabricIngestionDestinationProcessingConfigurationAuditLogToTerraform, true)(struct!.auditLog),
+    audit_log: cdktn.listMapper(appfabricIngestionDestinationProcessingConfigurationAuditLogToTerraform, true)(struct!.auditLog),
   }
 }
 
 
-export function appfabricIngestionDestinationProcessingConfigurationToHclTerraform(struct?: AppfabricIngestionDestinationProcessingConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationProcessingConfigurationToHclTerraform(struct?: AppfabricIngestionDestinationProcessingConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audit_log: {
-      value: cdktf.listMapperHcl(appfabricIngestionDestinationProcessingConfigurationAuditLogToHclTerraform, true)(struct!.auditLog),
+      value: cdktn.listMapperHcl(appfabricIngestionDestinationProcessingConfigurationAuditLogToHclTerraform, true)(struct!.auditLog),
       isBlock: true,
       type: "list",
       storageClassType: "AppfabricIngestionDestinationProcessingConfigurationAuditLogList",
@@ -878,9 +878,9 @@ export function appfabricIngestionDestinationProcessingConfigurationToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppfabricIngestionDestinationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+export class AppfabricIngestionDestinationProcessingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -888,11 +888,11 @@ export class AppfabricIngestionDestinationProcessingConfigurationOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppfabricIngestionDestinationProcessingConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): AppfabricIngestionDestinationProcessingConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -905,13 +905,13 @@ export class AppfabricIngestionDestinationProcessingConfigurationOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppfabricIngestionDestinationProcessingConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppfabricIngestionDestinationProcessingConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._auditLog.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -927,7 +927,7 @@ export class AppfabricIngestionDestinationProcessingConfigurationOutputReference
   public get auditLog() {
     return this._auditLog;
   }
-  public putAuditLog(value: AppfabricIngestionDestinationProcessingConfigurationAuditLog[] | cdktf.IResolvable) {
+  public putAuditLog(value: AppfabricIngestionDestinationProcessingConfigurationAuditLog[] | cdktn.IResolvable) {
     this._auditLog.internalValue = value;
   }
   public resetAuditLog() {
@@ -939,15 +939,15 @@ export class AppfabricIngestionDestinationProcessingConfigurationOutputReference
   }
 }
 
-export class AppfabricIngestionDestinationProcessingConfigurationList extends cdktf.ComplexList {
-  public internalValue? : AppfabricIngestionDestinationProcessingConfiguration[] | cdktf.IResolvable
+export class AppfabricIngestionDestinationProcessingConfigurationList extends cdktn.ComplexList {
+  public internalValue? : AppfabricIngestionDestinationProcessingConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -979,39 +979,39 @@ export interface AppfabricIngestionDestinationTimeouts {
   readonly update?: string;
 }
 
-export function appfabricIngestionDestinationTimeoutsToTerraform(struct?: AppfabricIngestionDestinationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationTimeoutsToTerraform(struct?: AppfabricIngestionDestinationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function appfabricIngestionDestinationTimeoutsToHclTerraform(struct?: AppfabricIngestionDestinationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricIngestionDestinationTimeoutsToHclTerraform(struct?: AppfabricIngestionDestinationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1022,19 +1022,19 @@ export function appfabricIngestionDestinationTimeoutsToHclTerraform(struct?: App
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppfabricIngestionDestinationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AppfabricIngestionDestinationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppfabricIngestionDestinationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AppfabricIngestionDestinationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1055,7 +1055,7 @@ export class AppfabricIngestionDestinationTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppfabricIngestionDestinationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppfabricIngestionDestinationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1063,7 +1063,7 @@ export class AppfabricIngestionDestinationTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1128,7 +1128,7 @@ export class AppfabricIngestionDestinationTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_ingestion_destination aws_appfabric_ingestion_destination}
 */
-export class AppfabricIngestionDestination extends cdktf.TerraformResource {
+export class AppfabricIngestionDestination extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1139,14 +1139,14 @@ export class AppfabricIngestionDestination extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppfabricIngestionDestination resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppfabricIngestionDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppfabricIngestionDestination to import
   * @param importFromId The id of the existing AppfabricIngestionDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_ingestion_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppfabricIngestionDestination to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appfabric_ingestion_destination", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appfabric_ingestion_destination", importId: importFromId, provider });
       }
 
   // ===========
@@ -1258,7 +1258,7 @@ export class AppfabricIngestionDestination extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1268,7 +1268,7 @@ export class AppfabricIngestionDestination extends cdktf.TerraformResource {
   public get destinationConfiguration() {
     return this._destinationConfiguration;
   }
-  public putDestinationConfiguration(value: AppfabricIngestionDestinationDestinationConfiguration[] | cdktf.IResolvable) {
+  public putDestinationConfiguration(value: AppfabricIngestionDestinationDestinationConfiguration[] | cdktn.IResolvable) {
     this._destinationConfiguration.internalValue = value;
   }
   public resetDestinationConfiguration() {
@@ -1284,7 +1284,7 @@ export class AppfabricIngestionDestination extends cdktf.TerraformResource {
   public get processingConfiguration() {
     return this._processingConfiguration;
   }
-  public putProcessingConfiguration(value: AppfabricIngestionDestinationProcessingConfiguration[] | cdktf.IResolvable) {
+  public putProcessingConfiguration(value: AppfabricIngestionDestinationProcessingConfiguration[] | cdktn.IResolvable) {
     this._processingConfiguration.internalValue = value;
   }
   public resetProcessingConfiguration() {
@@ -1317,12 +1317,12 @@ export class AppfabricIngestionDestination extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_bundle_arn: cdktf.stringToTerraform(this._appBundleArn),
-      ingestion_arn: cdktf.stringToTerraform(this._ingestionArn),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      destination_configuration: cdktf.listMapper(appfabricIngestionDestinationDestinationConfigurationToTerraform, true)(this._destinationConfiguration.internalValue),
-      processing_configuration: cdktf.listMapper(appfabricIngestionDestinationProcessingConfigurationToTerraform, true)(this._processingConfiguration.internalValue),
+      app_bundle_arn: cdktn.stringToTerraform(this._appBundleArn),
+      ingestion_arn: cdktn.stringToTerraform(this._ingestionArn),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      destination_configuration: cdktn.listMapper(appfabricIngestionDestinationDestinationConfigurationToTerraform, true)(this._destinationConfiguration.internalValue),
+      processing_configuration: cdktn.listMapper(appfabricIngestionDestinationProcessingConfigurationToTerraform, true)(this._processingConfiguration.internalValue),
       timeouts: appfabricIngestionDestinationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1330,37 +1330,37 @@ export class AppfabricIngestionDestination extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_bundle_arn: {
-        value: cdktf.stringToHclTerraform(this._appBundleArn),
+        value: cdktn.stringToHclTerraform(this._appBundleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ingestion_arn: {
-        value: cdktf.stringToHclTerraform(this._ingestionArn),
+        value: cdktn.stringToHclTerraform(this._ingestionArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       destination_configuration: {
-        value: cdktf.listMapperHcl(appfabricIngestionDestinationDestinationConfigurationToHclTerraform, true)(this._destinationConfiguration.internalValue),
+        value: cdktn.listMapperHcl(appfabricIngestionDestinationDestinationConfigurationToHclTerraform, true)(this._destinationConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppfabricIngestionDestinationDestinationConfigurationList",
       },
       processing_configuration: {
-        value: cdktf.listMapperHcl(appfabricIngestionDestinationProcessingConfigurationToHclTerraform, true)(this._processingConfiguration.internalValue),
+        value: cdktn.listMapperHcl(appfabricIngestionDestinationProcessingConfigurationToHclTerraform, true)(this._processingConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppfabricIngestionDestinationProcessingConfigurationList",

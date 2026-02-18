@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BackupSelectionConfig extends cdktf.TerraformMetaArguments {
+export interface BackupSelectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_selection#iam_role_arn BackupSelection#iam_role_arn}
   */
@@ -50,13 +50,13 @@ export interface BackupSelectionConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_selection#condition BackupSelection#condition}
   */
-  readonly condition?: BackupSelectionCondition[] | cdktf.IResolvable;
+  readonly condition?: BackupSelectionCondition[] | cdktn.IResolvable;
   /**
   * selection_tag block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_selection#selection_tag BackupSelection#selection_tag}
   */
-  readonly selectionTag?: BackupSelectionSelectionTag[] | cdktf.IResolvable;
+  readonly selectionTag?: BackupSelectionSelectionTag[] | cdktn.IResolvable;
 }
 export interface BackupSelectionConditionStringEquals {
   /**
@@ -69,32 +69,32 @@ export interface BackupSelectionConditionStringEquals {
   readonly value: string;
 }
 
-export function backupSelectionConditionStringEqualsToTerraform(struct?: BackupSelectionConditionStringEquals | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupSelectionConditionStringEqualsToTerraform(struct?: BackupSelectionConditionStringEquals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function backupSelectionConditionStringEqualsToHclTerraform(struct?: BackupSelectionConditionStringEquals | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupSelectionConditionStringEqualsToHclTerraform(struct?: BackupSelectionConditionStringEquals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -105,9 +105,9 @@ export function backupSelectionConditionStringEqualsToHclTerraform(struct?: Back
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupSelectionConditionStringEqualsOutputReference extends cdktf.ComplexObject {
+export class BackupSelectionConditionStringEqualsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -115,11 +115,11 @@ export class BackupSelectionConditionStringEqualsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BackupSelectionConditionStringEquals | cdktf.IResolvable | undefined {
+  public get internalValue(): BackupSelectionConditionStringEquals | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -136,14 +136,14 @@ export class BackupSelectionConditionStringEqualsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BackupSelectionConditionStringEquals | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BackupSelectionConditionStringEquals | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -182,15 +182,15 @@ export class BackupSelectionConditionStringEqualsOutputReference extends cdktf.C
   }
 }
 
-export class BackupSelectionConditionStringEqualsList extends cdktf.ComplexList {
-  public internalValue? : BackupSelectionConditionStringEquals[] | cdktf.IResolvable
+export class BackupSelectionConditionStringEqualsList extends cdktn.ComplexList {
+  public internalValue? : BackupSelectionConditionStringEquals[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -212,32 +212,32 @@ export interface BackupSelectionConditionStringLike {
   readonly value: string;
 }
 
-export function backupSelectionConditionStringLikeToTerraform(struct?: BackupSelectionConditionStringLike | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupSelectionConditionStringLikeToTerraform(struct?: BackupSelectionConditionStringLike | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function backupSelectionConditionStringLikeToHclTerraform(struct?: BackupSelectionConditionStringLike | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupSelectionConditionStringLikeToHclTerraform(struct?: BackupSelectionConditionStringLike | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -248,9 +248,9 @@ export function backupSelectionConditionStringLikeToHclTerraform(struct?: Backup
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupSelectionConditionStringLikeOutputReference extends cdktf.ComplexObject {
+export class BackupSelectionConditionStringLikeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -258,11 +258,11 @@ export class BackupSelectionConditionStringLikeOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BackupSelectionConditionStringLike | cdktf.IResolvable | undefined {
+  public get internalValue(): BackupSelectionConditionStringLike | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -279,14 +279,14 @@ export class BackupSelectionConditionStringLikeOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BackupSelectionConditionStringLike | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BackupSelectionConditionStringLike | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -325,15 +325,15 @@ export class BackupSelectionConditionStringLikeOutputReference extends cdktf.Com
   }
 }
 
-export class BackupSelectionConditionStringLikeList extends cdktf.ComplexList {
-  public internalValue? : BackupSelectionConditionStringLike[] | cdktf.IResolvable
+export class BackupSelectionConditionStringLikeList extends cdktn.ComplexList {
+  public internalValue? : BackupSelectionConditionStringLike[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -355,32 +355,32 @@ export interface BackupSelectionConditionStringNotEquals {
   readonly value: string;
 }
 
-export function backupSelectionConditionStringNotEqualsToTerraform(struct?: BackupSelectionConditionStringNotEquals | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupSelectionConditionStringNotEqualsToTerraform(struct?: BackupSelectionConditionStringNotEquals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function backupSelectionConditionStringNotEqualsToHclTerraform(struct?: BackupSelectionConditionStringNotEquals | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupSelectionConditionStringNotEqualsToHclTerraform(struct?: BackupSelectionConditionStringNotEquals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -391,9 +391,9 @@ export function backupSelectionConditionStringNotEqualsToHclTerraform(struct?: B
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupSelectionConditionStringNotEqualsOutputReference extends cdktf.ComplexObject {
+export class BackupSelectionConditionStringNotEqualsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -401,11 +401,11 @@ export class BackupSelectionConditionStringNotEqualsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BackupSelectionConditionStringNotEquals | cdktf.IResolvable | undefined {
+  public get internalValue(): BackupSelectionConditionStringNotEquals | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -422,14 +422,14 @@ export class BackupSelectionConditionStringNotEqualsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BackupSelectionConditionStringNotEquals | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BackupSelectionConditionStringNotEquals | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -468,15 +468,15 @@ export class BackupSelectionConditionStringNotEqualsOutputReference extends cdkt
   }
 }
 
-export class BackupSelectionConditionStringNotEqualsList extends cdktf.ComplexList {
-  public internalValue? : BackupSelectionConditionStringNotEquals[] | cdktf.IResolvable
+export class BackupSelectionConditionStringNotEqualsList extends cdktn.ComplexList {
+  public internalValue? : BackupSelectionConditionStringNotEquals[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -498,32 +498,32 @@ export interface BackupSelectionConditionStringNotLike {
   readonly value: string;
 }
 
-export function backupSelectionConditionStringNotLikeToTerraform(struct?: BackupSelectionConditionStringNotLike | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupSelectionConditionStringNotLikeToTerraform(struct?: BackupSelectionConditionStringNotLike | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function backupSelectionConditionStringNotLikeToHclTerraform(struct?: BackupSelectionConditionStringNotLike | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupSelectionConditionStringNotLikeToHclTerraform(struct?: BackupSelectionConditionStringNotLike | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -534,9 +534,9 @@ export function backupSelectionConditionStringNotLikeToHclTerraform(struct?: Bac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupSelectionConditionStringNotLikeOutputReference extends cdktf.ComplexObject {
+export class BackupSelectionConditionStringNotLikeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -544,11 +544,11 @@ export class BackupSelectionConditionStringNotLikeOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BackupSelectionConditionStringNotLike | cdktf.IResolvable | undefined {
+  public get internalValue(): BackupSelectionConditionStringNotLike | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -565,14 +565,14 @@ export class BackupSelectionConditionStringNotLikeOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BackupSelectionConditionStringNotLike | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BackupSelectionConditionStringNotLike | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -611,15 +611,15 @@ export class BackupSelectionConditionStringNotLikeOutputReference extends cdktf.
   }
 }
 
-export class BackupSelectionConditionStringNotLikeList extends cdktf.ComplexList {
-  public internalValue? : BackupSelectionConditionStringNotLike[] | cdktf.IResolvable
+export class BackupSelectionConditionStringNotLikeList extends cdktn.ComplexList {
+  public internalValue? : BackupSelectionConditionStringNotLike[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -636,67 +636,67 @@ export interface BackupSelectionCondition {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_selection#string_equals BackupSelection#string_equals}
   */
-  readonly stringEquals?: BackupSelectionConditionStringEquals[] | cdktf.IResolvable;
+  readonly stringEquals?: BackupSelectionConditionStringEquals[] | cdktn.IResolvable;
   /**
   * string_like block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_selection#string_like BackupSelection#string_like}
   */
-  readonly stringLike?: BackupSelectionConditionStringLike[] | cdktf.IResolvable;
+  readonly stringLike?: BackupSelectionConditionStringLike[] | cdktn.IResolvable;
   /**
   * string_not_equals block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_selection#string_not_equals BackupSelection#string_not_equals}
   */
-  readonly stringNotEquals?: BackupSelectionConditionStringNotEquals[] | cdktf.IResolvable;
+  readonly stringNotEquals?: BackupSelectionConditionStringNotEquals[] | cdktn.IResolvable;
   /**
   * string_not_like block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_selection#string_not_like BackupSelection#string_not_like}
   */
-  readonly stringNotLike?: BackupSelectionConditionStringNotLike[] | cdktf.IResolvable;
+  readonly stringNotLike?: BackupSelectionConditionStringNotLike[] | cdktn.IResolvable;
 }
 
-export function backupSelectionConditionToTerraform(struct?: BackupSelectionCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupSelectionConditionToTerraform(struct?: BackupSelectionCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    string_equals: cdktf.listMapper(backupSelectionConditionStringEqualsToTerraform, true)(struct!.stringEquals),
-    string_like: cdktf.listMapper(backupSelectionConditionStringLikeToTerraform, true)(struct!.stringLike),
-    string_not_equals: cdktf.listMapper(backupSelectionConditionStringNotEqualsToTerraform, true)(struct!.stringNotEquals),
-    string_not_like: cdktf.listMapper(backupSelectionConditionStringNotLikeToTerraform, true)(struct!.stringNotLike),
+    string_equals: cdktn.listMapper(backupSelectionConditionStringEqualsToTerraform, true)(struct!.stringEquals),
+    string_like: cdktn.listMapper(backupSelectionConditionStringLikeToTerraform, true)(struct!.stringLike),
+    string_not_equals: cdktn.listMapper(backupSelectionConditionStringNotEqualsToTerraform, true)(struct!.stringNotEquals),
+    string_not_like: cdktn.listMapper(backupSelectionConditionStringNotLikeToTerraform, true)(struct!.stringNotLike),
   }
 }
 
 
-export function backupSelectionConditionToHclTerraform(struct?: BackupSelectionCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupSelectionConditionToHclTerraform(struct?: BackupSelectionCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     string_equals: {
-      value: cdktf.listMapperHcl(backupSelectionConditionStringEqualsToHclTerraform, true)(struct!.stringEquals),
+      value: cdktn.listMapperHcl(backupSelectionConditionStringEqualsToHclTerraform, true)(struct!.stringEquals),
       isBlock: true,
       type: "set",
       storageClassType: "BackupSelectionConditionStringEqualsList",
     },
     string_like: {
-      value: cdktf.listMapperHcl(backupSelectionConditionStringLikeToHclTerraform, true)(struct!.stringLike),
+      value: cdktn.listMapperHcl(backupSelectionConditionStringLikeToHclTerraform, true)(struct!.stringLike),
       isBlock: true,
       type: "set",
       storageClassType: "BackupSelectionConditionStringLikeList",
     },
     string_not_equals: {
-      value: cdktf.listMapperHcl(backupSelectionConditionStringNotEqualsToHclTerraform, true)(struct!.stringNotEquals),
+      value: cdktn.listMapperHcl(backupSelectionConditionStringNotEqualsToHclTerraform, true)(struct!.stringNotEquals),
       isBlock: true,
       type: "set",
       storageClassType: "BackupSelectionConditionStringNotEqualsList",
     },
     string_not_like: {
-      value: cdktf.listMapperHcl(backupSelectionConditionStringNotLikeToHclTerraform, true)(struct!.stringNotLike),
+      value: cdktn.listMapperHcl(backupSelectionConditionStringNotLikeToHclTerraform, true)(struct!.stringNotLike),
       isBlock: true,
       type: "set",
       storageClassType: "BackupSelectionConditionStringNotLikeList",
@@ -707,9 +707,9 @@ export function backupSelectionConditionToHclTerraform(struct?: BackupSelectionC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupSelectionConditionOutputReference extends cdktf.ComplexObject {
+export class BackupSelectionConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -717,11 +717,11 @@ export class BackupSelectionConditionOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BackupSelectionCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): BackupSelectionCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -746,7 +746,7 @@ export class BackupSelectionConditionOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BackupSelectionCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BackupSelectionCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -755,7 +755,7 @@ export class BackupSelectionConditionOutputReference extends cdktf.ComplexObject
       this._stringNotEquals.internalValue = undefined;
       this._stringNotLike.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -774,7 +774,7 @@ export class BackupSelectionConditionOutputReference extends cdktf.ComplexObject
   public get stringEquals() {
     return this._stringEquals;
   }
-  public putStringEquals(value: BackupSelectionConditionStringEquals[] | cdktf.IResolvable) {
+  public putStringEquals(value: BackupSelectionConditionStringEquals[] | cdktn.IResolvable) {
     this._stringEquals.internalValue = value;
   }
   public resetStringEquals() {
@@ -790,7 +790,7 @@ export class BackupSelectionConditionOutputReference extends cdktf.ComplexObject
   public get stringLike() {
     return this._stringLike;
   }
-  public putStringLike(value: BackupSelectionConditionStringLike[] | cdktf.IResolvable) {
+  public putStringLike(value: BackupSelectionConditionStringLike[] | cdktn.IResolvable) {
     this._stringLike.internalValue = value;
   }
   public resetStringLike() {
@@ -806,7 +806,7 @@ export class BackupSelectionConditionOutputReference extends cdktf.ComplexObject
   public get stringNotEquals() {
     return this._stringNotEquals;
   }
-  public putStringNotEquals(value: BackupSelectionConditionStringNotEquals[] | cdktf.IResolvable) {
+  public putStringNotEquals(value: BackupSelectionConditionStringNotEquals[] | cdktn.IResolvable) {
     this._stringNotEquals.internalValue = value;
   }
   public resetStringNotEquals() {
@@ -822,7 +822,7 @@ export class BackupSelectionConditionOutputReference extends cdktf.ComplexObject
   public get stringNotLike() {
     return this._stringNotLike;
   }
-  public putStringNotLike(value: BackupSelectionConditionStringNotLike[] | cdktf.IResolvable) {
+  public putStringNotLike(value: BackupSelectionConditionStringNotLike[] | cdktn.IResolvable) {
     this._stringNotLike.internalValue = value;
   }
   public resetStringNotLike() {
@@ -834,15 +834,15 @@ export class BackupSelectionConditionOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class BackupSelectionConditionList extends cdktf.ComplexList {
-  public internalValue? : BackupSelectionCondition[] | cdktf.IResolvable
+export class BackupSelectionConditionList extends cdktn.ComplexList {
+  public internalValue? : BackupSelectionCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -868,39 +868,39 @@ export interface BackupSelectionSelectionTag {
   readonly value: string;
 }
 
-export function backupSelectionSelectionTagToTerraform(struct?: BackupSelectionSelectionTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupSelectionSelectionTagToTerraform(struct?: BackupSelectionSelectionTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function backupSelectionSelectionTagToHclTerraform(struct?: BackupSelectionSelectionTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupSelectionSelectionTagToHclTerraform(struct?: BackupSelectionSelectionTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -911,9 +911,9 @@ export function backupSelectionSelectionTagToHclTerraform(struct?: BackupSelecti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupSelectionSelectionTagOutputReference extends cdktf.ComplexObject {
+export class BackupSelectionSelectionTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -921,11 +921,11 @@ export class BackupSelectionSelectionTagOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BackupSelectionSelectionTag | cdktf.IResolvable | undefined {
+  public get internalValue(): BackupSelectionSelectionTag | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -946,7 +946,7 @@ export class BackupSelectionSelectionTagOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BackupSelectionSelectionTag | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BackupSelectionSelectionTag | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -954,7 +954,7 @@ export class BackupSelectionSelectionTagOutputReference extends cdktf.ComplexObj
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1007,15 +1007,15 @@ export class BackupSelectionSelectionTagOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class BackupSelectionSelectionTagList extends cdktf.ComplexList {
-  public internalValue? : BackupSelectionSelectionTag[] | cdktf.IResolvable
+export class BackupSelectionSelectionTagList extends cdktn.ComplexList {
+  public internalValue? : BackupSelectionSelectionTag[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1030,7 +1030,7 @@ export class BackupSelectionSelectionTagList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_selection aws_backup_selection}
 */
-export class BackupSelection extends cdktf.TerraformResource {
+export class BackupSelection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1041,14 +1041,14 @@ export class BackupSelection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BackupSelection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BackupSelection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupSelection to import
   * @param importFromId The id of the existing BackupSelection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_selection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupSelection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_selection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_selection", importId: importFromId, provider });
       }
 
   // ===========
@@ -1138,7 +1138,7 @@ export class BackupSelection extends cdktf.TerraformResource {
   // not_resources - computed: true, optional: true, required: false
   private _notResources?: string[]; 
   public get notResources() {
-    return cdktf.Fn.tolist(this.getListAttribute('not_resources'));
+    return cdktn.Fn.tolist(this.getListAttribute('not_resources'));
   }
   public set notResources(value: string[]) {
     this._notResources = value;
@@ -1183,7 +1183,7 @@ export class BackupSelection extends cdktf.TerraformResource {
   // resources - computed: false, optional: true, required: false
   private _resources?: string[]; 
   public get resources() {
-    return cdktf.Fn.tolist(this.getListAttribute('resources'));
+    return cdktn.Fn.tolist(this.getListAttribute('resources'));
   }
   public set resources(value: string[]) {
     this._resources = value;
@@ -1201,7 +1201,7 @@ export class BackupSelection extends cdktf.TerraformResource {
   public get condition() {
     return this._condition;
   }
-  public putCondition(value: BackupSelectionCondition[] | cdktf.IResolvable) {
+  public putCondition(value: BackupSelectionCondition[] | cdktn.IResolvable) {
     this._condition.internalValue = value;
   }
   public resetCondition() {
@@ -1217,7 +1217,7 @@ export class BackupSelection extends cdktf.TerraformResource {
   public get selectionTag() {
     return this._selectionTag;
   }
-  public putSelectionTag(value: BackupSelectionSelectionTag[] | cdktf.IResolvable) {
+  public putSelectionTag(value: BackupSelectionSelectionTag[] | cdktn.IResolvable) {
     this._selectionTag.internalValue = value;
   }
   public resetSelectionTag() {
@@ -1234,70 +1234,70 @@ export class BackupSelection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      not_resources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notResources),
-      plan_id: cdktf.stringToTerraform(this._planId),
-      region: cdktf.stringToTerraform(this._region),
-      resources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resources),
-      condition: cdktf.listMapper(backupSelectionConditionToTerraform, true)(this._condition.internalValue),
-      selection_tag: cdktf.listMapper(backupSelectionSelectionTagToTerraform, true)(this._selectionTag.internalValue),
+      iam_role_arn: cdktn.stringToTerraform(this._iamRoleArn),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      not_resources: cdktn.listMapper(cdktn.stringToTerraform, false)(this._notResources),
+      plan_id: cdktn.stringToTerraform(this._planId),
+      region: cdktn.stringToTerraform(this._region),
+      resources: cdktn.listMapper(cdktn.stringToTerraform, false)(this._resources),
+      condition: cdktn.listMapper(backupSelectionConditionToTerraform, true)(this._condition.internalValue),
+      selection_tag: cdktn.listMapper(backupSelectionSelectionTagToTerraform, true)(this._selectionTag.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       iam_role_arn: {
-        value: cdktf.stringToHclTerraform(this._iamRoleArn),
+        value: cdktn.stringToHclTerraform(this._iamRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       not_resources: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notResources),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._notResources),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       plan_id: {
-        value: cdktf.stringToHclTerraform(this._planId),
+        value: cdktn.stringToHclTerraform(this._planId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resources: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resources),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._resources),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       condition: {
-        value: cdktf.listMapperHcl(backupSelectionConditionToHclTerraform, true)(this._condition.internalValue),
+        value: cdktn.listMapperHcl(backupSelectionConditionToHclTerraform, true)(this._condition.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "BackupSelectionConditionList",
       },
       selection_tag: {
-        value: cdktf.listMapperHcl(backupSelectionSelectionTagToHclTerraform, true)(this._selectionTag.internalValue),
+        value: cdktn.listMapperHcl(backupSelectionSelectionTagToHclTerraform, true)(this._selectionTag.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "BackupSelectionSelectionTagList",

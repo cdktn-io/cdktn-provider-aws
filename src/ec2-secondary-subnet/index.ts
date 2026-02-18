@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2SecondarySubnetConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2SecondarySubnetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#availability_zone Ec2SecondarySubnet#availability_zone}
   */
@@ -49,8 +49,8 @@ export interface Ec2SecondarySubnetIpv4CidrBlockAssociations {
 }
 
 export function ec2SecondarySubnetIpv4CidrBlockAssociationsToTerraform(struct?: Ec2SecondarySubnetIpv4CidrBlockAssociations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -59,8 +59,8 @@ export function ec2SecondarySubnetIpv4CidrBlockAssociationsToTerraform(struct?: 
 
 
 export function ec2SecondarySubnetIpv4CidrBlockAssociationsToHclTerraform(struct?: Ec2SecondarySubnetIpv4CidrBlockAssociations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -68,7 +68,7 @@ export function ec2SecondarySubnetIpv4CidrBlockAssociationsToHclTerraform(struct
   return attrs;
 }
 
-export class Ec2SecondarySubnetIpv4CidrBlockAssociationsOutputReference extends cdktf.ComplexObject {
+export class Ec2SecondarySubnetIpv4CidrBlockAssociationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -77,7 +77,7 @@ export class Ec2SecondarySubnetIpv4CidrBlockAssociationsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -112,14 +112,14 @@ export class Ec2SecondarySubnetIpv4CidrBlockAssociationsOutputReference extends 
   }
 }
 
-export class Ec2SecondarySubnetIpv4CidrBlockAssociationsList extends cdktf.ComplexList {
+export class Ec2SecondarySubnetIpv4CidrBlockAssociationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -151,39 +151,39 @@ export interface Ec2SecondarySubnetTimeouts {
   readonly update?: string;
 }
 
-export function ec2SecondarySubnetTimeoutsToTerraform(struct?: Ec2SecondarySubnetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2SecondarySubnetTimeoutsToTerraform(struct?: Ec2SecondarySubnetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function ec2SecondarySubnetTimeoutsToHclTerraform(struct?: Ec2SecondarySubnetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2SecondarySubnetTimeoutsToHclTerraform(struct?: Ec2SecondarySubnetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -194,19 +194,19 @@ export function ec2SecondarySubnetTimeoutsToHclTerraform(struct?: Ec2SecondarySu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2SecondarySubnetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Ec2SecondarySubnetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Ec2SecondarySubnetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Ec2SecondarySubnetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -227,7 +227,7 @@ export class Ec2SecondarySubnetTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Ec2SecondarySubnetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Ec2SecondarySubnetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -235,7 +235,7 @@ export class Ec2SecondarySubnetTimeoutsOutputReference extends cdktf.ComplexObje
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -300,7 +300,7 @@ export class Ec2SecondarySubnetTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet aws_ec2_secondary_subnet}
 */
-export class Ec2SecondarySubnet extends cdktf.TerraformResource {
+export class Ec2SecondarySubnet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -311,14 +311,14 @@ export class Ec2SecondarySubnet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2SecondarySubnet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2SecondarySubnet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2SecondarySubnet to import
   * @param importFromId The id of the existing Ec2SecondarySubnet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2SecondarySubnet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_secondary_subnet", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_secondary_subnet", importId: importFromId, provider });
       }
 
   // ===========
@@ -488,7 +488,7 @@ export class Ec2SecondarySubnet extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -515,12 +515,12 @@ export class Ec2SecondarySubnet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      availability_zone_id: cdktf.stringToTerraform(this._availabilityZoneId),
-      ipv4_cidr_block: cdktf.stringToTerraform(this._ipv4CidrBlock),
-      region: cdktf.stringToTerraform(this._region),
-      secondary_network_id: cdktf.stringToTerraform(this._secondaryNetworkId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      availability_zone: cdktn.stringToTerraform(this._availabilityZone),
+      availability_zone_id: cdktn.stringToTerraform(this._availabilityZoneId),
+      ipv4_cidr_block: cdktn.stringToTerraform(this._ipv4CidrBlock),
+      region: cdktn.stringToTerraform(this._region),
+      secondary_network_id: cdktn.stringToTerraform(this._secondaryNetworkId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: ec2SecondarySubnetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -528,37 +528,37 @@ export class Ec2SecondarySubnet extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       availability_zone: {
-        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        value: cdktn.stringToHclTerraform(this._availabilityZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       availability_zone_id: {
-        value: cdktf.stringToHclTerraform(this._availabilityZoneId),
+        value: cdktn.stringToHclTerraform(this._availabilityZoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv4_cidr_block: {
-        value: cdktf.stringToHclTerraform(this._ipv4CidrBlock),
+        value: cdktn.stringToHclTerraform(this._ipv4CidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secondary_network_id: {
-        value: cdktf.stringToHclTerraform(this._secondaryNetworkId),
+        value: cdktn.stringToHclTerraform(this._secondaryNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

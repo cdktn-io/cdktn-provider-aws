@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlobalacceleratorAcceleratorConfig extends cdktf.TerraformMetaArguments {
+export interface GlobalacceleratorAcceleratorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_accelerator#enabled GlobalacceleratorAccelerator#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_accelerator#id GlobalacceleratorAccelerator#id}
   *
@@ -60,8 +60,8 @@ export interface GlobalacceleratorAcceleratorIpSets {
 }
 
 export function globalacceleratorAcceleratorIpSetsToTerraform(struct?: GlobalacceleratorAcceleratorIpSets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -70,8 +70,8 @@ export function globalacceleratorAcceleratorIpSetsToTerraform(struct?: Globalacc
 
 
 export function globalacceleratorAcceleratorIpSetsToHclTerraform(struct?: GlobalacceleratorAcceleratorIpSets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -79,7 +79,7 @@ export function globalacceleratorAcceleratorIpSetsToHclTerraform(struct?: Global
   return attrs;
 }
 
-export class GlobalacceleratorAcceleratorIpSetsOutputReference extends cdktf.ComplexObject {
+export class GlobalacceleratorAcceleratorIpSetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -88,7 +88,7 @@ export class GlobalacceleratorAcceleratorIpSetsOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -118,14 +118,14 @@ export class GlobalacceleratorAcceleratorIpSetsOutputReference extends cdktf.Com
   }
 }
 
-export class GlobalacceleratorAcceleratorIpSetsList extends cdktf.ComplexList {
+export class GlobalacceleratorAcceleratorIpSetsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -140,7 +140,7 @@ export interface GlobalacceleratorAcceleratorAttributes {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_accelerator#flow_logs_enabled GlobalacceleratorAccelerator#flow_logs_enabled}
   */
-  readonly flowLogsEnabled?: boolean | cdktf.IResolvable;
+  readonly flowLogsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_accelerator#flow_logs_s3_bucket GlobalacceleratorAccelerator#flow_logs_s3_bucket}
   */
@@ -152,38 +152,38 @@ export interface GlobalacceleratorAcceleratorAttributes {
 }
 
 export function globalacceleratorAcceleratorAttributesToTerraform(struct?: GlobalacceleratorAcceleratorAttributesOutputReference | GlobalacceleratorAcceleratorAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    flow_logs_enabled: cdktf.booleanToTerraform(struct!.flowLogsEnabled),
-    flow_logs_s3_bucket: cdktf.stringToTerraform(struct!.flowLogsS3Bucket),
-    flow_logs_s3_prefix: cdktf.stringToTerraform(struct!.flowLogsS3Prefix),
+    flow_logs_enabled: cdktn.booleanToTerraform(struct!.flowLogsEnabled),
+    flow_logs_s3_bucket: cdktn.stringToTerraform(struct!.flowLogsS3Bucket),
+    flow_logs_s3_prefix: cdktn.stringToTerraform(struct!.flowLogsS3Prefix),
   }
 }
 
 
 export function globalacceleratorAcceleratorAttributesToHclTerraform(struct?: GlobalacceleratorAcceleratorAttributesOutputReference | GlobalacceleratorAcceleratorAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     flow_logs_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.flowLogsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.flowLogsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     flow_logs_s3_bucket: {
-      value: cdktf.stringToHclTerraform(struct!.flowLogsS3Bucket),
+      value: cdktn.stringToHclTerraform(struct!.flowLogsS3Bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     flow_logs_s3_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.flowLogsS3Prefix),
+      value: cdktn.stringToHclTerraform(struct!.flowLogsS3Prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -194,14 +194,14 @@ export function globalacceleratorAcceleratorAttributesToHclTerraform(struct?: Gl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlobalacceleratorAcceleratorAttributesOutputReference extends cdktf.ComplexObject {
+export class GlobalacceleratorAcceleratorAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -239,11 +239,11 @@ export class GlobalacceleratorAcceleratorAttributesOutputReference extends cdktf
   }
 
   // flow_logs_enabled - computed: false, optional: true, required: false
-  private _flowLogsEnabled?: boolean | cdktf.IResolvable; 
+  private _flowLogsEnabled?: boolean | cdktn.IResolvable; 
   public get flowLogsEnabled() {
     return this.getBooleanAttribute('flow_logs_enabled');
   }
-  public set flowLogsEnabled(value: boolean | cdktf.IResolvable) {
+  public set flowLogsEnabled(value: boolean | cdktn.IResolvable) {
     this._flowLogsEnabled = value;
   }
   public resetFlowLogsEnabled() {
@@ -297,32 +297,32 @@ export interface GlobalacceleratorAcceleratorTimeouts {
   readonly update?: string;
 }
 
-export function globalacceleratorAcceleratorTimeoutsToTerraform(struct?: GlobalacceleratorAcceleratorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalacceleratorAcceleratorTimeoutsToTerraform(struct?: GlobalacceleratorAcceleratorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function globalacceleratorAcceleratorTimeoutsToHclTerraform(struct?: GlobalacceleratorAcceleratorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalacceleratorAcceleratorTimeoutsToHclTerraform(struct?: GlobalacceleratorAcceleratorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -333,19 +333,19 @@ export function globalacceleratorAcceleratorTimeoutsToHclTerraform(struct?: Glob
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlobalacceleratorAcceleratorTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GlobalacceleratorAcceleratorTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GlobalacceleratorAcceleratorTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GlobalacceleratorAcceleratorTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -362,14 +362,14 @@ export class GlobalacceleratorAcceleratorTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlobalacceleratorAcceleratorTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlobalacceleratorAcceleratorTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -417,7 +417,7 @@ export class GlobalacceleratorAcceleratorTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_accelerator aws_globalaccelerator_accelerator}
 */
-export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
+export class GlobalacceleratorAccelerator extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -428,14 +428,14 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlobalacceleratorAccelerator resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlobalacceleratorAccelerator resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlobalacceleratorAccelerator to import
   * @param importFromId The id of the existing GlobalacceleratorAccelerator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_accelerator#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlobalacceleratorAccelerator to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_globalaccelerator_accelerator", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_globalaccelerator_accelerator", importId: importFromId, provider });
       }
 
   // ===========
@@ -496,11 +496,11 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -653,13 +653,13 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
-      ip_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipAddresses),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      ip_address_type: cdktn.stringToTerraform(this._ipAddressType),
+      ip_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ipAddresses),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       attributes: globalacceleratorAcceleratorAttributesToTerraform(this._attributes.internalValue),
       timeouts: globalacceleratorAcceleratorTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -668,43 +668,43 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_address_type: {
-        value: cdktf.stringToHclTerraform(this._ipAddressType),
+        value: cdktn.stringToHclTerraform(this._ipAddressType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_addresses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipAddresses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ipAddresses),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QuicksightDataSourceConfig extends cdktf.TerraformMetaArguments {
+export interface QuicksightDataSourceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_source#aws_account_id QuicksightDataSource#aws_account_id}
   */
@@ -66,7 +66,7 @@ export interface QuicksightDataSourceConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_source#permission QuicksightDataSource#permission}
   */
-  readonly permission?: QuicksightDataSourcePermission[] | cdktf.IResolvable;
+  readonly permission?: QuicksightDataSourcePermission[] | cdktn.IResolvable;
   /**
   * ssl_properties block
   *
@@ -92,31 +92,31 @@ export interface QuicksightDataSourceCredentialsCredentialPair {
 }
 
 export function quicksightDataSourceCredentialsCredentialPairToTerraform(struct?: QuicksightDataSourceCredentialsCredentialPairOutputReference | QuicksightDataSourceCredentialsCredentialPair): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function quicksightDataSourceCredentialsCredentialPairToHclTerraform(struct?: QuicksightDataSourceCredentialsCredentialPairOutputReference | QuicksightDataSourceCredentialsCredentialPair): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,14 +127,14 @@ export function quicksightDataSourceCredentialsCredentialPairToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceCredentialsCredentialPairOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceCredentialsCredentialPairOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -209,32 +209,32 @@ export interface QuicksightDataSourceCredentials {
 }
 
 export function quicksightDataSourceCredentialsToTerraform(struct?: QuicksightDataSourceCredentialsOutputReference | QuicksightDataSourceCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    copy_source_arn: cdktf.stringToTerraform(struct!.copySourceArn),
-    secret_arn: cdktf.stringToTerraform(struct!.secretArn),
+    copy_source_arn: cdktn.stringToTerraform(struct!.copySourceArn),
+    secret_arn: cdktn.stringToTerraform(struct!.secretArn),
     credential_pair: quicksightDataSourceCredentialsCredentialPairToTerraform(struct!.credentialPair),
   }
 }
 
 
 export function quicksightDataSourceCredentialsToHclTerraform(struct?: QuicksightDataSourceCredentialsOutputReference | QuicksightDataSourceCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     copy_source_arn: {
-      value: cdktf.stringToHclTerraform(struct!.copySourceArn),
+      value: cdktn.stringToHclTerraform(struct!.copySourceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_arn: {
-      value: cdktf.stringToHclTerraform(struct!.secretArn),
+      value: cdktn.stringToHclTerraform(struct!.secretArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -251,14 +251,14 @@ export function quicksightDataSourceCredentialsToHclTerraform(struct?: Quicksigh
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceCredentialsOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceCredentialsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -351,24 +351,24 @@ export interface QuicksightDataSourceParametersAmazonElasticsearch {
 }
 
 export function quicksightDataSourceParametersAmazonElasticsearchToTerraform(struct?: QuicksightDataSourceParametersAmazonElasticsearchOutputReference | QuicksightDataSourceParametersAmazonElasticsearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain: cdktf.stringToTerraform(struct!.domain),
+    domain: cdktn.stringToTerraform(struct!.domain),
   }
 }
 
 
 export function quicksightDataSourceParametersAmazonElasticsearchToHclTerraform(struct?: QuicksightDataSourceParametersAmazonElasticsearchOutputReference | QuicksightDataSourceParametersAmazonElasticsearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain: {
-      value: cdktf.stringToHclTerraform(struct!.domain),
+      value: cdktn.stringToHclTerraform(struct!.domain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -379,14 +379,14 @@ export function quicksightDataSourceParametersAmazonElasticsearchToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersAmazonElasticsearchOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersAmazonElasticsearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -432,24 +432,24 @@ export interface QuicksightDataSourceParametersAthena {
 }
 
 export function quicksightDataSourceParametersAthenaToTerraform(struct?: QuicksightDataSourceParametersAthenaOutputReference | QuicksightDataSourceParametersAthena): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    work_group: cdktf.stringToTerraform(struct!.workGroup),
+    work_group: cdktn.stringToTerraform(struct!.workGroup),
   }
 }
 
 
 export function quicksightDataSourceParametersAthenaToHclTerraform(struct?: QuicksightDataSourceParametersAthenaOutputReference | QuicksightDataSourceParametersAthena): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     work_group: {
-      value: cdktf.stringToHclTerraform(struct!.workGroup),
+      value: cdktn.stringToHclTerraform(struct!.workGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -460,14 +460,14 @@ export function quicksightDataSourceParametersAthenaToHclTerraform(struct?: Quic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersAthenaOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersAthenaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -524,38 +524,38 @@ export interface QuicksightDataSourceParametersAurora {
 }
 
 export function quicksightDataSourceParametersAuroraToTerraform(struct?: QuicksightDataSourceParametersAuroraOutputReference | QuicksightDataSourceParametersAurora): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database: cdktf.stringToTerraform(struct!.database),
-    host: cdktf.stringToTerraform(struct!.host),
-    port: cdktf.numberToTerraform(struct!.port),
+    database: cdktn.stringToTerraform(struct!.database),
+    host: cdktn.stringToTerraform(struct!.host),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
 export function quicksightDataSourceParametersAuroraToHclTerraform(struct?: QuicksightDataSourceParametersAuroraOutputReference | QuicksightDataSourceParametersAurora): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -566,14 +566,14 @@ export function quicksightDataSourceParametersAuroraToHclTerraform(struct?: Quic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersAuroraOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersAuroraOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -665,38 +665,38 @@ export interface QuicksightDataSourceParametersAuroraPostgresql {
 }
 
 export function quicksightDataSourceParametersAuroraPostgresqlToTerraform(struct?: QuicksightDataSourceParametersAuroraPostgresqlOutputReference | QuicksightDataSourceParametersAuroraPostgresql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database: cdktf.stringToTerraform(struct!.database),
-    host: cdktf.stringToTerraform(struct!.host),
-    port: cdktf.numberToTerraform(struct!.port),
+    database: cdktn.stringToTerraform(struct!.database),
+    host: cdktn.stringToTerraform(struct!.host),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
 export function quicksightDataSourceParametersAuroraPostgresqlToHclTerraform(struct?: QuicksightDataSourceParametersAuroraPostgresqlOutputReference | QuicksightDataSourceParametersAuroraPostgresql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -707,14 +707,14 @@ export function quicksightDataSourceParametersAuroraPostgresqlToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersAuroraPostgresqlOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersAuroraPostgresqlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -798,24 +798,24 @@ export interface QuicksightDataSourceParametersAwsIotAnalytics {
 }
 
 export function quicksightDataSourceParametersAwsIotAnalyticsToTerraform(struct?: QuicksightDataSourceParametersAwsIotAnalyticsOutputReference | QuicksightDataSourceParametersAwsIotAnalytics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_set_name: cdktf.stringToTerraform(struct!.dataSetName),
+    data_set_name: cdktn.stringToTerraform(struct!.dataSetName),
   }
 }
 
 
 export function quicksightDataSourceParametersAwsIotAnalyticsToHclTerraform(struct?: QuicksightDataSourceParametersAwsIotAnalyticsOutputReference | QuicksightDataSourceParametersAwsIotAnalytics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_set_name: {
-      value: cdktf.stringToHclTerraform(struct!.dataSetName),
+      value: cdktn.stringToHclTerraform(struct!.dataSetName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -826,14 +826,14 @@ export function quicksightDataSourceParametersAwsIotAnalyticsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersAwsIotAnalyticsOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersAwsIotAnalyticsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -887,38 +887,38 @@ export interface QuicksightDataSourceParametersDatabricks {
 }
 
 export function quicksightDataSourceParametersDatabricksToTerraform(struct?: QuicksightDataSourceParametersDatabricksOutputReference | QuicksightDataSourceParametersDatabricks): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    port: cdktf.numberToTerraform(struct!.port),
-    sql_endpoint_path: cdktf.stringToTerraform(struct!.sqlEndpointPath),
+    host: cdktn.stringToTerraform(struct!.host),
+    port: cdktn.numberToTerraform(struct!.port),
+    sql_endpoint_path: cdktn.stringToTerraform(struct!.sqlEndpointPath),
   }
 }
 
 
 export function quicksightDataSourceParametersDatabricksToHclTerraform(struct?: QuicksightDataSourceParametersDatabricksOutputReference | QuicksightDataSourceParametersDatabricks): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     sql_endpoint_path: {
-      value: cdktf.stringToHclTerraform(struct!.sqlEndpointPath),
+      value: cdktn.stringToHclTerraform(struct!.sqlEndpointPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -929,14 +929,14 @@ export function quicksightDataSourceParametersDatabricksToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersDatabricksOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersDatabricksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1020,24 +1020,24 @@ export interface QuicksightDataSourceParametersJira {
 }
 
 export function quicksightDataSourceParametersJiraToTerraform(struct?: QuicksightDataSourceParametersJiraOutputReference | QuicksightDataSourceParametersJira): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    site_base_url: cdktf.stringToTerraform(struct!.siteBaseUrl),
+    site_base_url: cdktn.stringToTerraform(struct!.siteBaseUrl),
   }
 }
 
 
 export function quicksightDataSourceParametersJiraToHclTerraform(struct?: QuicksightDataSourceParametersJiraOutputReference | QuicksightDataSourceParametersJira): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     site_base_url: {
-      value: cdktf.stringToHclTerraform(struct!.siteBaseUrl),
+      value: cdktn.stringToHclTerraform(struct!.siteBaseUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1048,14 +1048,14 @@ export function quicksightDataSourceParametersJiraToHclTerraform(struct?: Quicks
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersJiraOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersJiraOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1109,38 +1109,38 @@ export interface QuicksightDataSourceParametersMariaDb {
 }
 
 export function quicksightDataSourceParametersMariaDbToTerraform(struct?: QuicksightDataSourceParametersMariaDbOutputReference | QuicksightDataSourceParametersMariaDb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database: cdktf.stringToTerraform(struct!.database),
-    host: cdktf.stringToTerraform(struct!.host),
-    port: cdktf.numberToTerraform(struct!.port),
+    database: cdktn.stringToTerraform(struct!.database),
+    host: cdktn.stringToTerraform(struct!.host),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
 export function quicksightDataSourceParametersMariaDbToHclTerraform(struct?: QuicksightDataSourceParametersMariaDbOutputReference | QuicksightDataSourceParametersMariaDb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1151,14 +1151,14 @@ export function quicksightDataSourceParametersMariaDbToHclTerraform(struct?: Qui
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersMariaDbOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersMariaDbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1250,38 +1250,38 @@ export interface QuicksightDataSourceParametersMysql {
 }
 
 export function quicksightDataSourceParametersMysqlToTerraform(struct?: QuicksightDataSourceParametersMysqlOutputReference | QuicksightDataSourceParametersMysql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database: cdktf.stringToTerraform(struct!.database),
-    host: cdktf.stringToTerraform(struct!.host),
-    port: cdktf.numberToTerraform(struct!.port),
+    database: cdktn.stringToTerraform(struct!.database),
+    host: cdktn.stringToTerraform(struct!.host),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
 export function quicksightDataSourceParametersMysqlToHclTerraform(struct?: QuicksightDataSourceParametersMysqlOutputReference | QuicksightDataSourceParametersMysql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1292,14 +1292,14 @@ export function quicksightDataSourceParametersMysqlToHclTerraform(struct?: Quick
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersMysqlOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersMysqlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1391,38 +1391,38 @@ export interface QuicksightDataSourceParametersOracle {
 }
 
 export function quicksightDataSourceParametersOracleToTerraform(struct?: QuicksightDataSourceParametersOracleOutputReference | QuicksightDataSourceParametersOracle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database: cdktf.stringToTerraform(struct!.database),
-    host: cdktf.stringToTerraform(struct!.host),
-    port: cdktf.numberToTerraform(struct!.port),
+    database: cdktn.stringToTerraform(struct!.database),
+    host: cdktn.stringToTerraform(struct!.host),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
 export function quicksightDataSourceParametersOracleToHclTerraform(struct?: QuicksightDataSourceParametersOracleOutputReference | QuicksightDataSourceParametersOracle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1433,14 +1433,14 @@ export function quicksightDataSourceParametersOracleToHclTerraform(struct?: Quic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersOracleOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersOracleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1532,38 +1532,38 @@ export interface QuicksightDataSourceParametersPostgresql {
 }
 
 export function quicksightDataSourceParametersPostgresqlToTerraform(struct?: QuicksightDataSourceParametersPostgresqlOutputReference | QuicksightDataSourceParametersPostgresql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database: cdktf.stringToTerraform(struct!.database),
-    host: cdktf.stringToTerraform(struct!.host),
-    port: cdktf.numberToTerraform(struct!.port),
+    database: cdktn.stringToTerraform(struct!.database),
+    host: cdktn.stringToTerraform(struct!.host),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
 export function quicksightDataSourceParametersPostgresqlToHclTerraform(struct?: QuicksightDataSourceParametersPostgresqlOutputReference | QuicksightDataSourceParametersPostgresql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1574,14 +1574,14 @@ export function quicksightDataSourceParametersPostgresqlToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersPostgresqlOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersPostgresqlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1673,38 +1673,38 @@ export interface QuicksightDataSourceParametersPresto {
 }
 
 export function quicksightDataSourceParametersPrestoToTerraform(struct?: QuicksightDataSourceParametersPrestoOutputReference | QuicksightDataSourceParametersPresto): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog: cdktf.stringToTerraform(struct!.catalog),
-    host: cdktf.stringToTerraform(struct!.host),
-    port: cdktf.numberToTerraform(struct!.port),
+    catalog: cdktn.stringToTerraform(struct!.catalog),
+    host: cdktn.stringToTerraform(struct!.host),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
 export function quicksightDataSourceParametersPrestoToHclTerraform(struct?: QuicksightDataSourceParametersPrestoOutputReference | QuicksightDataSourceParametersPresto): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog: {
-      value: cdktf.stringToHclTerraform(struct!.catalog),
+      value: cdktn.stringToHclTerraform(struct!.catalog),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1715,14 +1715,14 @@ export function quicksightDataSourceParametersPrestoToHclTerraform(struct?: Quic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersPrestoOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersPrestoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1810,31 +1810,31 @@ export interface QuicksightDataSourceParametersRds {
 }
 
 export function quicksightDataSourceParametersRdsToTerraform(struct?: QuicksightDataSourceParametersRdsOutputReference | QuicksightDataSourceParametersRds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database: cdktf.stringToTerraform(struct!.database),
-    instance_id: cdktf.stringToTerraform(struct!.instanceId),
+    database: cdktn.stringToTerraform(struct!.database),
+    instance_id: cdktn.stringToTerraform(struct!.instanceId),
   }
 }
 
 
 export function quicksightDataSourceParametersRdsToHclTerraform(struct?: QuicksightDataSourceParametersRdsOutputReference | QuicksightDataSourceParametersRds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     instance_id: {
-      value: cdktf.stringToHclTerraform(struct!.instanceId),
+      value: cdktn.stringToHclTerraform(struct!.instanceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1845,14 +1845,14 @@ export function quicksightDataSourceParametersRdsToHclTerraform(struct?: Quicksi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersRdsOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersRdsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1929,45 +1929,45 @@ export interface QuicksightDataSourceParametersRedshift {
 }
 
 export function quicksightDataSourceParametersRedshiftToTerraform(struct?: QuicksightDataSourceParametersRedshiftOutputReference | QuicksightDataSourceParametersRedshift): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_id: cdktf.stringToTerraform(struct!.clusterId),
-    database: cdktf.stringToTerraform(struct!.database),
-    host: cdktf.stringToTerraform(struct!.host),
-    port: cdktf.numberToTerraform(struct!.port),
+    cluster_id: cdktn.stringToTerraform(struct!.clusterId),
+    database: cdktn.stringToTerraform(struct!.database),
+    host: cdktn.stringToTerraform(struct!.host),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
 export function quicksightDataSourceParametersRedshiftToHclTerraform(struct?: QuicksightDataSourceParametersRedshiftOutputReference | QuicksightDataSourceParametersRedshift): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_id: {
-      value: cdktf.stringToHclTerraform(struct!.clusterId),
+      value: cdktn.stringToHclTerraform(struct!.clusterId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1978,14 +1978,14 @@ export function quicksightDataSourceParametersRedshiftToHclTerraform(struct?: Qu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersRedshiftOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersRedshiftOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2101,31 +2101,31 @@ export interface QuicksightDataSourceParametersS3ManifestFileLocation {
 }
 
 export function quicksightDataSourceParametersS3ManifestFileLocationToTerraform(struct?: QuicksightDataSourceParametersS3ManifestFileLocationOutputReference | QuicksightDataSourceParametersS3ManifestFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    key: cdktf.stringToTerraform(struct!.key),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    key: cdktn.stringToTerraform(struct!.key),
   }
 }
 
 
 export function quicksightDataSourceParametersS3ManifestFileLocationToHclTerraform(struct?: QuicksightDataSourceParametersS3ManifestFileLocationOutputReference | QuicksightDataSourceParametersS3ManifestFileLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2136,14 +2136,14 @@ export function quicksightDataSourceParametersS3ManifestFileLocationToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersS3ManifestFileLocationOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersS3ManifestFileLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2214,25 +2214,25 @@ export interface QuicksightDataSourceParametersS3 {
 }
 
 export function quicksightDataSourceParametersS3ToTerraform(struct?: QuicksightDataSourceParametersS3OutputReference | QuicksightDataSourceParametersS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
     manifest_file_location: quicksightDataSourceParametersS3ManifestFileLocationToTerraform(struct!.manifestFileLocation),
   }
 }
 
 
 export function quicksightDataSourceParametersS3ToHclTerraform(struct?: QuicksightDataSourceParametersS3OutputReference | QuicksightDataSourceParametersS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2249,14 +2249,14 @@ export function quicksightDataSourceParametersS3ToHclTerraform(struct?: Quicksig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersS3OutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2324,24 +2324,24 @@ export interface QuicksightDataSourceParametersServiceNow {
 }
 
 export function quicksightDataSourceParametersServiceNowToTerraform(struct?: QuicksightDataSourceParametersServiceNowOutputReference | QuicksightDataSourceParametersServiceNow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    site_base_url: cdktf.stringToTerraform(struct!.siteBaseUrl),
+    site_base_url: cdktn.stringToTerraform(struct!.siteBaseUrl),
   }
 }
 
 
 export function quicksightDataSourceParametersServiceNowToHclTerraform(struct?: QuicksightDataSourceParametersServiceNowOutputReference | QuicksightDataSourceParametersServiceNow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     site_base_url: {
-      value: cdktf.stringToHclTerraform(struct!.siteBaseUrl),
+      value: cdktn.stringToHclTerraform(struct!.siteBaseUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2352,14 +2352,14 @@ export function quicksightDataSourceParametersServiceNowToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersServiceNowOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersServiceNowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2413,38 +2413,38 @@ export interface QuicksightDataSourceParametersSnowflake {
 }
 
 export function quicksightDataSourceParametersSnowflakeToTerraform(struct?: QuicksightDataSourceParametersSnowflakeOutputReference | QuicksightDataSourceParametersSnowflake): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database: cdktf.stringToTerraform(struct!.database),
-    host: cdktf.stringToTerraform(struct!.host),
-    warehouse: cdktf.stringToTerraform(struct!.warehouse),
+    database: cdktn.stringToTerraform(struct!.database),
+    host: cdktn.stringToTerraform(struct!.host),
+    warehouse: cdktn.stringToTerraform(struct!.warehouse),
   }
 }
 
 
 export function quicksightDataSourceParametersSnowflakeToHclTerraform(struct?: QuicksightDataSourceParametersSnowflakeOutputReference | QuicksightDataSourceParametersSnowflake): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     warehouse: {
-      value: cdktf.stringToHclTerraform(struct!.warehouse),
+      value: cdktn.stringToHclTerraform(struct!.warehouse),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2455,14 +2455,14 @@ export function quicksightDataSourceParametersSnowflakeToHclTerraform(struct?: Q
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersSnowflakeOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersSnowflakeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2550,31 +2550,31 @@ export interface QuicksightDataSourceParametersSpark {
 }
 
 export function quicksightDataSourceParametersSparkToTerraform(struct?: QuicksightDataSourceParametersSparkOutputReference | QuicksightDataSourceParametersSpark): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    port: cdktf.numberToTerraform(struct!.port),
+    host: cdktn.stringToTerraform(struct!.host),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
 export function quicksightDataSourceParametersSparkToHclTerraform(struct?: QuicksightDataSourceParametersSparkOutputReference | QuicksightDataSourceParametersSpark): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2585,14 +2585,14 @@ export function quicksightDataSourceParametersSparkToHclTerraform(struct?: Quick
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersSparkOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersSparkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2665,38 +2665,38 @@ export interface QuicksightDataSourceParametersSqlServer {
 }
 
 export function quicksightDataSourceParametersSqlServerToTerraform(struct?: QuicksightDataSourceParametersSqlServerOutputReference | QuicksightDataSourceParametersSqlServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database: cdktf.stringToTerraform(struct!.database),
-    host: cdktf.stringToTerraform(struct!.host),
-    port: cdktf.numberToTerraform(struct!.port),
+    database: cdktn.stringToTerraform(struct!.database),
+    host: cdktn.stringToTerraform(struct!.host),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
 export function quicksightDataSourceParametersSqlServerToHclTerraform(struct?: QuicksightDataSourceParametersSqlServerOutputReference | QuicksightDataSourceParametersSqlServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2707,14 +2707,14 @@ export function quicksightDataSourceParametersSqlServerToHclTerraform(struct?: Q
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersSqlServerOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersSqlServerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2806,38 +2806,38 @@ export interface QuicksightDataSourceParametersTeradata {
 }
 
 export function quicksightDataSourceParametersTeradataToTerraform(struct?: QuicksightDataSourceParametersTeradataOutputReference | QuicksightDataSourceParametersTeradata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database: cdktf.stringToTerraform(struct!.database),
-    host: cdktf.stringToTerraform(struct!.host),
-    port: cdktf.numberToTerraform(struct!.port),
+    database: cdktn.stringToTerraform(struct!.database),
+    host: cdktn.stringToTerraform(struct!.host),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
 export function quicksightDataSourceParametersTeradataToHclTerraform(struct?: QuicksightDataSourceParametersTeradataOutputReference | QuicksightDataSourceParametersTeradata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2848,14 +2848,14 @@ export function quicksightDataSourceParametersTeradataToHclTerraform(struct?: Qu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersTeradataOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersTeradataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2943,31 +2943,31 @@ export interface QuicksightDataSourceParametersTwitter {
 }
 
 export function quicksightDataSourceParametersTwitterToTerraform(struct?: QuicksightDataSourceParametersTwitterOutputReference | QuicksightDataSourceParametersTwitter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_rows: cdktf.numberToTerraform(struct!.maxRows),
-    query: cdktf.stringToTerraform(struct!.query),
+    max_rows: cdktn.numberToTerraform(struct!.maxRows),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function quicksightDataSourceParametersTwitterToHclTerraform(struct?: QuicksightDataSourceParametersTwitterOutputReference | QuicksightDataSourceParametersTwitter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_rows: {
-      value: cdktf.numberToHclTerraform(struct!.maxRows),
+      value: cdktn.numberToHclTerraform(struct!.maxRows),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2978,14 +2978,14 @@ export function quicksightDataSourceParametersTwitterToHclTerraform(struct?: Qui
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersTwitterOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersTwitterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3172,8 +3172,8 @@ export interface QuicksightDataSourceParameters {
 }
 
 export function quicksightDataSourceParametersToTerraform(struct?: QuicksightDataSourceParametersOutputReference | QuicksightDataSourceParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3203,8 +3203,8 @@ export function quicksightDataSourceParametersToTerraform(struct?: QuicksightDat
 
 
 export function quicksightDataSourceParametersToHclTerraform(struct?: QuicksightDataSourceParametersOutputReference | QuicksightDataSourceParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3340,14 +3340,14 @@ export function quicksightDataSourceParametersToHclTerraform(struct?: Quicksight
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceParametersOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3839,32 +3839,32 @@ export interface QuicksightDataSourcePermission {
   readonly principal: string;
 }
 
-export function quicksightDataSourcePermissionToTerraform(struct?: QuicksightDataSourcePermission | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSourcePermissionToTerraform(struct?: QuicksightDataSourcePermission | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
-    principal: cdktf.stringToTerraform(struct!.principal),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
+    principal: cdktn.stringToTerraform(struct!.principal),
   }
 }
 
 
-export function quicksightDataSourcePermissionToHclTerraform(struct?: QuicksightDataSourcePermission | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightDataSourcePermissionToHclTerraform(struct?: QuicksightDataSourcePermission | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     principal: {
-      value: cdktf.stringToHclTerraform(struct!.principal),
+      value: cdktn.stringToHclTerraform(struct!.principal),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3875,9 +3875,9 @@ export function quicksightDataSourcePermissionToHclTerraform(struct?: Quicksight
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourcePermissionOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourcePermissionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3885,11 +3885,11 @@ export class QuicksightDataSourcePermissionOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightDataSourcePermission | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightDataSourcePermission | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3906,14 +3906,14 @@ export class QuicksightDataSourcePermissionOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightDataSourcePermission | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightDataSourcePermission | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._actions = undefined;
       this._principal = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3928,7 +3928,7 @@ export class QuicksightDataSourcePermissionOutputReference extends cdktf.Complex
   // actions - computed: false, optional: false, required: true
   private _actions?: string[]; 
   public get actions() {
-    return cdktf.Fn.tolist(this.getListAttribute('actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('actions'));
   }
   public set actions(value: string[]) {
     this._actions = value;
@@ -3952,15 +3952,15 @@ export class QuicksightDataSourcePermissionOutputReference extends cdktf.Complex
   }
 }
 
-export class QuicksightDataSourcePermissionList extends cdktf.ComplexList {
-  public internalValue? : QuicksightDataSourcePermission[] | cdktf.IResolvable
+export class QuicksightDataSourcePermissionList extends cdktn.ComplexList {
+  public internalValue? : QuicksightDataSourcePermission[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3975,28 +3975,28 @@ export interface QuicksightDataSourceSslProperties {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_source#disable_ssl QuicksightDataSource#disable_ssl}
   */
-  readonly disableSsl: boolean | cdktf.IResolvable;
+  readonly disableSsl: boolean | cdktn.IResolvable;
 }
 
 export function quicksightDataSourceSslPropertiesToTerraform(struct?: QuicksightDataSourceSslPropertiesOutputReference | QuicksightDataSourceSslProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disable_ssl: cdktf.booleanToTerraform(struct!.disableSsl),
+    disable_ssl: cdktn.booleanToTerraform(struct!.disableSsl),
   }
 }
 
 
 export function quicksightDataSourceSslPropertiesToHclTerraform(struct?: QuicksightDataSourceSslPropertiesOutputReference | QuicksightDataSourceSslProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disable_ssl: {
-      value: cdktf.booleanToHclTerraform(struct!.disableSsl),
+      value: cdktn.booleanToHclTerraform(struct!.disableSsl),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -4007,14 +4007,14 @@ export function quicksightDataSourceSslPropertiesToHclTerraform(struct?: Quicksi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceSslPropertiesOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceSslPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4040,11 +4040,11 @@ export class QuicksightDataSourceSslPropertiesOutputReference extends cdktf.Comp
   }
 
   // disable_ssl - computed: false, optional: false, required: true
-  private _disableSsl?: boolean | cdktf.IResolvable; 
+  private _disableSsl?: boolean | cdktn.IResolvable; 
   public get disableSsl() {
     return this.getBooleanAttribute('disable_ssl');
   }
-  public set disableSsl(value: boolean | cdktf.IResolvable) {
+  public set disableSsl(value: boolean | cdktn.IResolvable) {
     this._disableSsl = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4060,24 +4060,24 @@ export interface QuicksightDataSourceVpcConnectionProperties {
 }
 
 export function quicksightDataSourceVpcConnectionPropertiesToTerraform(struct?: QuicksightDataSourceVpcConnectionPropertiesOutputReference | QuicksightDataSourceVpcConnectionProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    vpc_connection_arn: cdktf.stringToTerraform(struct!.vpcConnectionArn),
+    vpc_connection_arn: cdktn.stringToTerraform(struct!.vpcConnectionArn),
   }
 }
 
 
 export function quicksightDataSourceVpcConnectionPropertiesToHclTerraform(struct?: QuicksightDataSourceVpcConnectionPropertiesOutputReference | QuicksightDataSourceVpcConnectionProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     vpc_connection_arn: {
-      value: cdktf.stringToHclTerraform(struct!.vpcConnectionArn),
+      value: cdktn.stringToHclTerraform(struct!.vpcConnectionArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4088,14 +4088,14 @@ export function quicksightDataSourceVpcConnectionPropertiesToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightDataSourceVpcConnectionPropertiesOutputReference extends cdktf.ComplexObject {
+export class QuicksightDataSourceVpcConnectionPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4137,7 +4137,7 @@ export class QuicksightDataSourceVpcConnectionPropertiesOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_source aws_quicksight_data_source}
 */
-export class QuicksightDataSource extends cdktf.TerraformResource {
+export class QuicksightDataSource extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -4148,14 +4148,14 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QuicksightDataSource resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QuicksightDataSource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightDataSource to import
   * @param importFromId The id of the existing QuicksightDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_data_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightDataSource to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_data_source", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_data_source", importId: importFromId, provider });
       }
 
   // ===========
@@ -4362,7 +4362,7 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   public get permission() {
     return this._permission;
   }
-  public putPermission(value: QuicksightDataSourcePermission[] | cdktf.IResolvable) {
+  public putPermission(value: QuicksightDataSourcePermission[] | cdktn.IResolvable) {
     this._permission.internalValue = value;
   }
   public resetPermission() {
@@ -4411,17 +4411,17 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      data_source_id: cdktf.stringToTerraform(this._dataSourceId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      type: cdktf.stringToTerraform(this._type),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      data_source_id: cdktn.stringToTerraform(this._dataSourceId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      type: cdktn.stringToTerraform(this._type),
       credentials: quicksightDataSourceCredentialsToTerraform(this._credentials.internalValue),
       parameters: quicksightDataSourceParametersToTerraform(this._parameters.internalValue),
-      permission: cdktf.listMapper(quicksightDataSourcePermissionToTerraform, true)(this._permission.internalValue),
+      permission: cdktn.listMapper(quicksightDataSourcePermissionToTerraform, true)(this._permission.internalValue),
       ssl_properties: quicksightDataSourceSslPropertiesToTerraform(this._sslProperties.internalValue),
       vpc_connection_properties: quicksightDataSourceVpcConnectionPropertiesToTerraform(this._vpcConnectionProperties.internalValue),
     };
@@ -4430,49 +4430,49 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_source_id: {
-        value: cdktf.stringToHclTerraform(this._dataSourceId),
+        value: cdktn.stringToHclTerraform(this._dataSourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -4490,7 +4490,7 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
         storageClassType: "QuicksightDataSourceParametersList",
       },
       permission: {
-        value: cdktf.listMapperHcl(quicksightDataSourcePermissionToHclTerraform, true)(this._permission.internalValue),
+        value: cdktn.listMapperHcl(quicksightDataSourcePermissionToHclTerraform, true)(this._permission.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "QuicksightDataSourcePermissionList",

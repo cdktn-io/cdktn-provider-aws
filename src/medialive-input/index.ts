@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MedialiveInputConfig extends cdktf.TerraformMetaArguments {
+export interface MedialiveInputConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_input#id MedialiveInput#id}
   *
@@ -54,25 +54,25 @@ export interface MedialiveInputConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_input#destinations MedialiveInput#destinations}
   */
-  readonly destinations?: MedialiveInputDestinations[] | cdktf.IResolvable;
+  readonly destinations?: MedialiveInputDestinations[] | cdktn.IResolvable;
   /**
   * input_devices block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_input#input_devices MedialiveInput#input_devices}
   */
-  readonly inputDevices?: MedialiveInputInputDevices[] | cdktf.IResolvable;
+  readonly inputDevices?: MedialiveInputInputDevices[] | cdktn.IResolvable;
   /**
   * media_connect_flows block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_input#media_connect_flows MedialiveInput#media_connect_flows}
   */
-  readonly mediaConnectFlows?: MedialiveInputMediaConnectFlows[] | cdktf.IResolvable;
+  readonly mediaConnectFlows?: MedialiveInputMediaConnectFlows[] | cdktn.IResolvable;
   /**
   * sources block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_input#sources MedialiveInput#sources}
   */
-  readonly sources?: MedialiveInputSources[] | cdktf.IResolvable;
+  readonly sources?: MedialiveInputSources[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -93,25 +93,25 @@ export interface MedialiveInputDestinations {
   readonly streamName: string;
 }
 
-export function medialiveInputDestinationsToTerraform(struct?: MedialiveInputDestinations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveInputDestinationsToTerraform(struct?: MedialiveInputDestinations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    stream_name: cdktf.stringToTerraform(struct!.streamName),
+    stream_name: cdktn.stringToTerraform(struct!.streamName),
   }
 }
 
 
-export function medialiveInputDestinationsToHclTerraform(struct?: MedialiveInputDestinations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveInputDestinationsToHclTerraform(struct?: MedialiveInputDestinations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.streamName),
+      value: cdktn.stringToHclTerraform(struct!.streamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -122,9 +122,9 @@ export function medialiveInputDestinationsToHclTerraform(struct?: MedialiveInput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MedialiveInputDestinationsOutputReference extends cdktf.ComplexObject {
+export class MedialiveInputDestinationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -132,11 +132,11 @@ export class MedialiveInputDestinationsOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MedialiveInputDestinations | cdktf.IResolvable | undefined {
+  public get internalValue(): MedialiveInputDestinations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -149,13 +149,13 @@ export class MedialiveInputDestinationsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MedialiveInputDestinations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MedialiveInputDestinations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._streamName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -180,15 +180,15 @@ export class MedialiveInputDestinationsOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class MedialiveInputDestinationsList extends cdktf.ComplexList {
-  public internalValue? : MedialiveInputDestinations[] | cdktf.IResolvable
+export class MedialiveInputDestinationsList extends cdktn.ComplexList {
+  public internalValue? : MedialiveInputDestinations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -209,25 +209,25 @@ export interface MedialiveInputInputDevices {
   readonly id: string;
 }
 
-export function medialiveInputInputDevicesToTerraform(struct?: MedialiveInputInputDevices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveInputInputDevicesToTerraform(struct?: MedialiveInputInputDevices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function medialiveInputInputDevicesToHclTerraform(struct?: MedialiveInputInputDevices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveInputInputDevicesToHclTerraform(struct?: MedialiveInputInputDevices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -238,9 +238,9 @@ export function medialiveInputInputDevicesToHclTerraform(struct?: MedialiveInput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MedialiveInputInputDevicesOutputReference extends cdktf.ComplexObject {
+export class MedialiveInputInputDevicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -248,11 +248,11 @@ export class MedialiveInputInputDevicesOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MedialiveInputInputDevices | cdktf.IResolvable | undefined {
+  public get internalValue(): MedialiveInputInputDevices | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -265,13 +265,13 @@ export class MedialiveInputInputDevicesOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MedialiveInputInputDevices | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MedialiveInputInputDevices | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -296,15 +296,15 @@ export class MedialiveInputInputDevicesOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class MedialiveInputInputDevicesList extends cdktf.ComplexList {
-  public internalValue? : MedialiveInputInputDevices[] | cdktf.IResolvable
+export class MedialiveInputInputDevicesList extends cdktn.ComplexList {
+  public internalValue? : MedialiveInputInputDevices[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -322,25 +322,25 @@ export interface MedialiveInputMediaConnectFlows {
   readonly flowArn: string;
 }
 
-export function medialiveInputMediaConnectFlowsToTerraform(struct?: MedialiveInputMediaConnectFlows | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveInputMediaConnectFlowsToTerraform(struct?: MedialiveInputMediaConnectFlows | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    flow_arn: cdktf.stringToTerraform(struct!.flowArn),
+    flow_arn: cdktn.stringToTerraform(struct!.flowArn),
   }
 }
 
 
-export function medialiveInputMediaConnectFlowsToHclTerraform(struct?: MedialiveInputMediaConnectFlows | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveInputMediaConnectFlowsToHclTerraform(struct?: MedialiveInputMediaConnectFlows | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     flow_arn: {
-      value: cdktf.stringToHclTerraform(struct!.flowArn),
+      value: cdktn.stringToHclTerraform(struct!.flowArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -351,9 +351,9 @@ export function medialiveInputMediaConnectFlowsToHclTerraform(struct?: Medialive
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MedialiveInputMediaConnectFlowsOutputReference extends cdktf.ComplexObject {
+export class MedialiveInputMediaConnectFlowsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -361,11 +361,11 @@ export class MedialiveInputMediaConnectFlowsOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MedialiveInputMediaConnectFlows | cdktf.IResolvable | undefined {
+  public get internalValue(): MedialiveInputMediaConnectFlows | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -378,13 +378,13 @@ export class MedialiveInputMediaConnectFlowsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MedialiveInputMediaConnectFlows | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MedialiveInputMediaConnectFlows | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._flowArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -409,15 +409,15 @@ export class MedialiveInputMediaConnectFlowsOutputReference extends cdktf.Comple
   }
 }
 
-export class MedialiveInputMediaConnectFlowsList extends cdktf.ComplexList {
-  public internalValue? : MedialiveInputMediaConnectFlows[] | cdktf.IResolvable
+export class MedialiveInputMediaConnectFlowsList extends cdktn.ComplexList {
+  public internalValue? : MedialiveInputMediaConnectFlows[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -443,39 +443,39 @@ export interface MedialiveInputSources {
   readonly username: string;
 }
 
-export function medialiveInputSourcesToTerraform(struct?: MedialiveInputSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveInputSourcesToTerraform(struct?: MedialiveInputSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password_param: cdktf.stringToTerraform(struct!.passwordParam),
-    url: cdktf.stringToTerraform(struct!.url),
-    username: cdktf.stringToTerraform(struct!.username),
+    password_param: cdktn.stringToTerraform(struct!.passwordParam),
+    url: cdktn.stringToTerraform(struct!.url),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function medialiveInputSourcesToHclTerraform(struct?: MedialiveInputSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveInputSourcesToHclTerraform(struct?: MedialiveInputSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password_param: {
-      value: cdktf.stringToHclTerraform(struct!.passwordParam),
+      value: cdktn.stringToHclTerraform(struct!.passwordParam),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -486,9 +486,9 @@ export function medialiveInputSourcesToHclTerraform(struct?: MedialiveInputSourc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MedialiveInputSourcesOutputReference extends cdktf.ComplexObject {
+export class MedialiveInputSourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -496,11 +496,11 @@ export class MedialiveInputSourcesOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MedialiveInputSources | cdktf.IResolvable | undefined {
+  public get internalValue(): MedialiveInputSources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -521,7 +521,7 @@ export class MedialiveInputSourcesOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MedialiveInputSources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MedialiveInputSources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -529,7 +529,7 @@ export class MedialiveInputSourcesOutputReference extends cdktf.ComplexObject {
       this._url = undefined;
       this._username = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -582,15 +582,15 @@ export class MedialiveInputSourcesOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class MedialiveInputSourcesList extends cdktf.ComplexList {
-  public internalValue? : MedialiveInputSources[] | cdktf.IResolvable
+export class MedialiveInputSourcesList extends cdktn.ComplexList {
+  public internalValue? : MedialiveInputSources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -616,39 +616,39 @@ export interface MedialiveInputTimeouts {
   readonly update?: string;
 }
 
-export function medialiveInputTimeoutsToTerraform(struct?: MedialiveInputTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveInputTimeoutsToTerraform(struct?: MedialiveInputTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function medialiveInputTimeoutsToHclTerraform(struct?: MedialiveInputTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveInputTimeoutsToHclTerraform(struct?: MedialiveInputTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -659,19 +659,19 @@ export function medialiveInputTimeoutsToHclTerraform(struct?: MedialiveInputTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MedialiveInputTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MedialiveInputTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MedialiveInputTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MedialiveInputTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -692,7 +692,7 @@ export class MedialiveInputTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MedialiveInputTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MedialiveInputTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -700,7 +700,7 @@ export class MedialiveInputTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -773,31 +773,31 @@ export interface MedialiveInputVpc {
 }
 
 export function medialiveInputVpcToTerraform(struct?: MedialiveInputVpcOutputReference | MedialiveInputVpc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
 
 export function medialiveInputVpcToHclTerraform(struct?: MedialiveInputVpcOutputReference | MedialiveInputVpc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -808,14 +808,14 @@ export function medialiveInputVpcToHclTerraform(struct?: MedialiveInputVpcOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MedialiveInputVpcOutputReference extends cdktf.ComplexObject {
+export class MedialiveInputVpcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -879,7 +879,7 @@ export class MedialiveInputVpcOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_input aws_medialive_input}
 */
-export class MedialiveInput extends cdktf.TerraformResource {
+export class MedialiveInput extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -890,14 +890,14 @@ export class MedialiveInput extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MedialiveInput resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MedialiveInput resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MedialiveInput to import
   * @param importFromId The id of the existing MedialiveInput that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_input#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MedialiveInput to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_medialive_input", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_medialive_input", importId: importFromId, provider });
       }
 
   // ===========
@@ -1099,7 +1099,7 @@ export class MedialiveInput extends cdktf.TerraformResource {
   public get destinations() {
     return this._destinations;
   }
-  public putDestinations(value: MedialiveInputDestinations[] | cdktf.IResolvable) {
+  public putDestinations(value: MedialiveInputDestinations[] | cdktn.IResolvable) {
     this._destinations.internalValue = value;
   }
   public resetDestinations() {
@@ -1115,7 +1115,7 @@ export class MedialiveInput extends cdktf.TerraformResource {
   public get inputDevices() {
     return this._inputDevices;
   }
-  public putInputDevices(value: MedialiveInputInputDevices[] | cdktf.IResolvable) {
+  public putInputDevices(value: MedialiveInputInputDevices[] | cdktn.IResolvable) {
     this._inputDevices.internalValue = value;
   }
   public resetInputDevices() {
@@ -1131,7 +1131,7 @@ export class MedialiveInput extends cdktf.TerraformResource {
   public get mediaConnectFlows() {
     return this._mediaConnectFlows;
   }
-  public putMediaConnectFlows(value: MedialiveInputMediaConnectFlows[] | cdktf.IResolvable) {
+  public putMediaConnectFlows(value: MedialiveInputMediaConnectFlows[] | cdktn.IResolvable) {
     this._mediaConnectFlows.internalValue = value;
   }
   public resetMediaConnectFlows() {
@@ -1147,7 +1147,7 @@ export class MedialiveInput extends cdktf.TerraformResource {
   public get sources() {
     return this._sources;
   }
-  public putSources(value: MedialiveInputSources[] | cdktf.IResolvable) {
+  public putSources(value: MedialiveInputSources[] | cdktn.IResolvable) {
     this._sources.internalValue = value;
   }
   public resetSources() {
@@ -1196,18 +1196,18 @@ export class MedialiveInput extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      input_security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._inputSecurityGroups),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      type: cdktf.stringToTerraform(this._type),
-      destinations: cdktf.listMapper(medialiveInputDestinationsToTerraform, true)(this._destinations.internalValue),
-      input_devices: cdktf.listMapper(medialiveInputInputDevicesToTerraform, true)(this._inputDevices.internalValue),
-      media_connect_flows: cdktf.listMapper(medialiveInputMediaConnectFlowsToTerraform, true)(this._mediaConnectFlows.internalValue),
-      sources: cdktf.listMapper(medialiveInputSourcesToTerraform, true)(this._sources.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      input_security_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._inputSecurityGroups),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      type: cdktn.stringToTerraform(this._type),
+      destinations: cdktn.listMapper(medialiveInputDestinationsToTerraform, true)(this._destinations.internalValue),
+      input_devices: cdktn.listMapper(medialiveInputInputDevicesToTerraform, true)(this._inputDevices.internalValue),
+      media_connect_flows: cdktn.listMapper(medialiveInputMediaConnectFlowsToTerraform, true)(this._mediaConnectFlows.internalValue),
+      sources: cdktn.listMapper(medialiveInputSourcesToTerraform, true)(this._sources.internalValue),
       timeouts: medialiveInputTimeoutsToTerraform(this._timeouts.internalValue),
       vpc: medialiveInputVpcToTerraform(this._vpc.internalValue),
     };
@@ -1216,73 +1216,73 @@ export class MedialiveInput extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       input_security_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._inputSecurityGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._inputSecurityGroups),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destinations: {
-        value: cdktf.listMapperHcl(medialiveInputDestinationsToHclTerraform, true)(this._destinations.internalValue),
+        value: cdktn.listMapperHcl(medialiveInputDestinationsToHclTerraform, true)(this._destinations.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "MedialiveInputDestinationsList",
       },
       input_devices: {
-        value: cdktf.listMapperHcl(medialiveInputInputDevicesToHclTerraform, true)(this._inputDevices.internalValue),
+        value: cdktn.listMapperHcl(medialiveInputInputDevicesToHclTerraform, true)(this._inputDevices.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "MedialiveInputInputDevicesList",
       },
       media_connect_flows: {
-        value: cdktf.listMapperHcl(medialiveInputMediaConnectFlowsToHclTerraform, true)(this._mediaConnectFlows.internalValue),
+        value: cdktn.listMapperHcl(medialiveInputMediaConnectFlowsToHclTerraform, true)(this._mediaConnectFlows.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "MedialiveInputMediaConnectFlowsList",
       },
       sources: {
-        value: cdktf.listMapperHcl(medialiveInputSourcesToHclTerraform, true)(this._sources.internalValue),
+        value: cdktn.listMapperHcl(medialiveInputSourcesToHclTerraform, true)(this._sources.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "MedialiveInputSourcesList",

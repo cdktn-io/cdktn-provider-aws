@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TranscribeVocabularyConfig extends cdktf.TerraformMetaArguments {
+export interface TranscribeVocabularyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transcribe_vocabulary#id TranscribeVocabulary#id}
   *
@@ -71,39 +71,39 @@ export interface TranscribeVocabularyTimeouts {
   readonly update?: string;
 }
 
-export function transcribeVocabularyTimeoutsToTerraform(struct?: TranscribeVocabularyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transcribeVocabularyTimeoutsToTerraform(struct?: TranscribeVocabularyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function transcribeVocabularyTimeoutsToHclTerraform(struct?: TranscribeVocabularyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transcribeVocabularyTimeoutsToHclTerraform(struct?: TranscribeVocabularyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -114,19 +114,19 @@ export function transcribeVocabularyTimeoutsToHclTerraform(struct?: TranscribeVo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TranscribeVocabularyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class TranscribeVocabularyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): TranscribeVocabularyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): TranscribeVocabularyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -147,7 +147,7 @@ export class TranscribeVocabularyTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TranscribeVocabularyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TranscribeVocabularyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -155,7 +155,7 @@ export class TranscribeVocabularyTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -220,7 +220,7 @@ export class TranscribeVocabularyTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transcribe_vocabulary aws_transcribe_vocabulary}
 */
-export class TranscribeVocabulary extends cdktf.TerraformResource {
+export class TranscribeVocabulary extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -231,14 +231,14 @@ export class TranscribeVocabulary extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TranscribeVocabulary resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TranscribeVocabulary resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TranscribeVocabulary to import
   * @param importFromId The id of the existing TranscribeVocabulary that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transcribe_vocabulary#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TranscribeVocabulary to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_transcribe_vocabulary", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_transcribe_vocabulary", importId: importFromId, provider });
       }
 
   // ===========
@@ -437,14 +437,14 @@ export class TranscribeVocabulary extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      language_code: cdktf.stringToTerraform(this._languageCode),
-      phrases: cdktf.listMapper(cdktf.stringToTerraform, false)(this._phrases),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vocabulary_file_uri: cdktf.stringToTerraform(this._vocabularyFileUri),
-      vocabulary_name: cdktf.stringToTerraform(this._vocabularyName),
+      id: cdktn.stringToTerraform(this._id),
+      language_code: cdktn.stringToTerraform(this._languageCode),
+      phrases: cdktn.listMapper(cdktn.stringToTerraform, false)(this._phrases),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      vocabulary_file_uri: cdktn.stringToTerraform(this._vocabularyFileUri),
+      vocabulary_name: cdktn.stringToTerraform(this._vocabularyName),
       timeouts: transcribeVocabularyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -452,49 +452,49 @@ export class TranscribeVocabulary extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       language_code: {
-        value: cdktf.stringToHclTerraform(this._languageCode),
+        value: cdktn.stringToHclTerraform(this._languageCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       phrases: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._phrases),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._phrases),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vocabulary_file_uri: {
-        value: cdktf.stringToHclTerraform(this._vocabularyFileUri),
+        value: cdktn.stringToHclTerraform(this._vocabularyFileUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vocabulary_name: {
-        value: cdktf.stringToHclTerraform(this._vocabularyName),
+        value: cdktn.stringToHclTerraform(this._vocabularyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppstreamImageBuilderConfig extends cdktf.TerraformMetaArguments {
+export interface AppstreamImageBuilderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_image_builder#appstream_agent_version AppstreamImageBuilder#appstream_agent_version}
   */
@@ -27,7 +27,7 @@ export interface AppstreamImageBuilderConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_image_builder#enable_default_internet_access AppstreamImageBuilder#enable_default_internet_access}
   */
-  readonly enableDefaultInternetAccess?: boolean | cdktf.IResolvable;
+  readonly enableDefaultInternetAccess?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_image_builder#iam_role_arn AppstreamImageBuilder#iam_role_arn}
   */
@@ -74,7 +74,7 @@ export interface AppstreamImageBuilderConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_image_builder#access_endpoint AppstreamImageBuilder#access_endpoint}
   */
-  readonly accessEndpoint?: AppstreamImageBuilderAccessEndpoint[] | cdktf.IResolvable;
+  readonly accessEndpoint?: AppstreamImageBuilderAccessEndpoint[] | cdktn.IResolvable;
   /**
   * domain_join_info block
   *
@@ -99,32 +99,32 @@ export interface AppstreamImageBuilderAccessEndpoint {
   readonly vpceId?: string;
 }
 
-export function appstreamImageBuilderAccessEndpointToTerraform(struct?: AppstreamImageBuilderAccessEndpoint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appstreamImageBuilderAccessEndpointToTerraform(struct?: AppstreamImageBuilderAccessEndpoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint_type: cdktf.stringToTerraform(struct!.endpointType),
-    vpce_id: cdktf.stringToTerraform(struct!.vpceId),
+    endpoint_type: cdktn.stringToTerraform(struct!.endpointType),
+    vpce_id: cdktn.stringToTerraform(struct!.vpceId),
   }
 }
 
 
-export function appstreamImageBuilderAccessEndpointToHclTerraform(struct?: AppstreamImageBuilderAccessEndpoint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appstreamImageBuilderAccessEndpointToHclTerraform(struct?: AppstreamImageBuilderAccessEndpoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint_type: {
-      value: cdktf.stringToHclTerraform(struct!.endpointType),
+      value: cdktn.stringToHclTerraform(struct!.endpointType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vpce_id: {
-      value: cdktf.stringToHclTerraform(struct!.vpceId),
+      value: cdktn.stringToHclTerraform(struct!.vpceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,9 +135,9 @@ export function appstreamImageBuilderAccessEndpointToHclTerraform(struct?: Appst
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppstreamImageBuilderAccessEndpointOutputReference extends cdktf.ComplexObject {
+export class AppstreamImageBuilderAccessEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -145,11 +145,11 @@ export class AppstreamImageBuilderAccessEndpointOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppstreamImageBuilderAccessEndpoint | cdktf.IResolvable | undefined {
+  public get internalValue(): AppstreamImageBuilderAccessEndpoint | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -166,14 +166,14 @@ export class AppstreamImageBuilderAccessEndpointOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppstreamImageBuilderAccessEndpoint | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppstreamImageBuilderAccessEndpoint | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._endpointType = undefined;
       this._vpceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -215,15 +215,15 @@ export class AppstreamImageBuilderAccessEndpointOutputReference extends cdktf.Co
   }
 }
 
-export class AppstreamImageBuilderAccessEndpointList extends cdktf.ComplexList {
-  public internalValue? : AppstreamImageBuilderAccessEndpoint[] | cdktf.IResolvable
+export class AppstreamImageBuilderAccessEndpointList extends cdktn.ComplexList {
+  public internalValue? : AppstreamImageBuilderAccessEndpoint[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -246,31 +246,31 @@ export interface AppstreamImageBuilderDomainJoinInfo {
 }
 
 export function appstreamImageBuilderDomainJoinInfoToTerraform(struct?: AppstreamImageBuilderDomainJoinInfoOutputReference | AppstreamImageBuilderDomainJoinInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    directory_name: cdktf.stringToTerraform(struct!.directoryName),
-    organizational_unit_distinguished_name: cdktf.stringToTerraform(struct!.organizationalUnitDistinguishedName),
+    directory_name: cdktn.stringToTerraform(struct!.directoryName),
+    organizational_unit_distinguished_name: cdktn.stringToTerraform(struct!.organizationalUnitDistinguishedName),
   }
 }
 
 
 export function appstreamImageBuilderDomainJoinInfoToHclTerraform(struct?: AppstreamImageBuilderDomainJoinInfoOutputReference | AppstreamImageBuilderDomainJoinInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     directory_name: {
-      value: cdktf.stringToHclTerraform(struct!.directoryName),
+      value: cdktn.stringToHclTerraform(struct!.directoryName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organizational_unit_distinguished_name: {
-      value: cdktf.stringToHclTerraform(struct!.organizationalUnitDistinguishedName),
+      value: cdktn.stringToHclTerraform(struct!.organizationalUnitDistinguishedName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -281,14 +281,14 @@ export function appstreamImageBuilderDomainJoinInfoToHclTerraform(struct?: Appst
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppstreamImageBuilderDomainJoinInfoOutputReference extends cdktf.ComplexObject {
+export class AppstreamImageBuilderDomainJoinInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -363,31 +363,31 @@ export interface AppstreamImageBuilderVpcConfig {
 }
 
 export function appstreamImageBuilderVpcConfigToTerraform(struct?: AppstreamImageBuilderVpcConfigOutputReference | AppstreamImageBuilderVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
 
 export function appstreamImageBuilderVpcConfigToHclTerraform(struct?: AppstreamImageBuilderVpcConfigOutputReference | AppstreamImageBuilderVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -398,14 +398,14 @@ export function appstreamImageBuilderVpcConfigToHclTerraform(struct?: AppstreamI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppstreamImageBuilderVpcConfigOutputReference extends cdktf.ComplexObject {
+export class AppstreamImageBuilderVpcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -439,7 +439,7 @@ export class AppstreamImageBuilderVpcConfigOutputReference extends cdktf.Complex
   // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -455,7 +455,7 @@ export class AppstreamImageBuilderVpcConfigOutputReference extends cdktf.Complex
   // subnet_ids - computed: true, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -472,7 +472,7 @@ export class AppstreamImageBuilderVpcConfigOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_image_builder aws_appstream_image_builder}
 */
-export class AppstreamImageBuilder extends cdktf.TerraformResource {
+export class AppstreamImageBuilder extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -483,14 +483,14 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppstreamImageBuilder resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppstreamImageBuilder resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppstreamImageBuilder to import
   * @param importFromId The id of the existing AppstreamImageBuilder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_image_builder#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppstreamImageBuilder to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appstream_image_builder", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appstream_image_builder", importId: importFromId, provider });
       }
 
   // ===========
@@ -601,11 +601,11 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
   }
 
   // enable_default_internet_access - computed: true, optional: true, required: false
-  private _enableDefaultInternetAccess?: boolean | cdktf.IResolvable; 
+  private _enableDefaultInternetAccess?: boolean | cdktn.IResolvable; 
   public get enableDefaultInternetAccess() {
     return this.getBooleanAttribute('enable_default_internet_access');
   }
-  public set enableDefaultInternetAccess(value: boolean | cdktf.IResolvable) {
+  public set enableDefaultInternetAccess(value: boolean | cdktn.IResolvable) {
     this._enableDefaultInternetAccess = value;
   }
   public resetEnableDefaultInternetAccess() {
@@ -764,7 +764,7 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
   public get accessEndpoint() {
     return this._accessEndpoint;
   }
-  public putAccessEndpoint(value: AppstreamImageBuilderAccessEndpoint[] | cdktf.IResolvable) {
+  public putAccessEndpoint(value: AppstreamImageBuilderAccessEndpoint[] | cdktn.IResolvable) {
     this._accessEndpoint.internalValue = value;
   }
   public resetAccessEndpoint() {
@@ -813,20 +813,20 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      appstream_agent_version: cdktf.stringToTerraform(this._appstreamAgentVersion),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enable_default_internet_access: cdktf.booleanToTerraform(this._enableDefaultInternetAccess),
-      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
-      id: cdktf.stringToTerraform(this._id),
-      image_arn: cdktf.stringToTerraform(this._imageArn),
-      image_name: cdktf.stringToTerraform(this._imageName),
-      instance_type: cdktf.stringToTerraform(this._instanceType),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      access_endpoint: cdktf.listMapper(appstreamImageBuilderAccessEndpointToTerraform, true)(this._accessEndpoint.internalValue),
+      appstream_agent_version: cdktn.stringToTerraform(this._appstreamAgentVersion),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enable_default_internet_access: cdktn.booleanToTerraform(this._enableDefaultInternetAccess),
+      iam_role_arn: cdktn.stringToTerraform(this._iamRoleArn),
+      id: cdktn.stringToTerraform(this._id),
+      image_arn: cdktn.stringToTerraform(this._imageArn),
+      image_name: cdktn.stringToTerraform(this._imageName),
+      instance_type: cdktn.stringToTerraform(this._instanceType),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      access_endpoint: cdktn.listMapper(appstreamImageBuilderAccessEndpointToTerraform, true)(this._accessEndpoint.internalValue),
       domain_join_info: appstreamImageBuilderDomainJoinInfoToTerraform(this._domainJoinInfo.internalValue),
       vpc_config: appstreamImageBuilderVpcConfigToTerraform(this._vpcConfig.internalValue),
     };
@@ -835,85 +835,85 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       appstream_agent_version: {
-        value: cdktf.stringToHclTerraform(this._appstreamAgentVersion),
+        value: cdktn.stringToHclTerraform(this._appstreamAgentVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_default_internet_access: {
-        value: cdktf.booleanToHclTerraform(this._enableDefaultInternetAccess),
+        value: cdktn.booleanToHclTerraform(this._enableDefaultInternetAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       iam_role_arn: {
-        value: cdktf.stringToHclTerraform(this._iamRoleArn),
+        value: cdktn.stringToHclTerraform(this._iamRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_arn: {
-        value: cdktf.stringToHclTerraform(this._imageArn),
+        value: cdktn.stringToHclTerraform(this._imageArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_name: {
-        value: cdktf.stringToHclTerraform(this._imageName),
+        value: cdktn.stringToHclTerraform(this._imageName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_type: {
-        value: cdktf.stringToHclTerraform(this._instanceType),
+        value: cdktn.stringToHclTerraform(this._instanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       access_endpoint: {
-        value: cdktf.listMapperHcl(appstreamImageBuilderAccessEndpointToHclTerraform, true)(this._accessEndpoint.internalValue),
+        value: cdktn.listMapperHcl(appstreamImageBuilderAccessEndpointToHclTerraform, true)(this._accessEndpoint.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AppstreamImageBuilderAccessEndpointList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SagemakerSpaceConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerSpaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_space#domain_id SagemakerSpace#domain_id}
   */
@@ -72,24 +72,24 @@ export interface SagemakerSpaceOwnershipSettings {
 }
 
 export function sagemakerSpaceOwnershipSettingsToTerraform(struct?: SagemakerSpaceOwnershipSettingsOutputReference | SagemakerSpaceOwnershipSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    owner_user_profile_name: cdktf.stringToTerraform(struct!.ownerUserProfileName),
+    owner_user_profile_name: cdktn.stringToTerraform(struct!.ownerUserProfileName),
   }
 }
 
 
 export function sagemakerSpaceOwnershipSettingsToHclTerraform(struct?: SagemakerSpaceOwnershipSettingsOutputReference | SagemakerSpaceOwnershipSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     owner_user_profile_name: {
-      value: cdktf.stringToHclTerraform(struct!.ownerUserProfileName),
+      value: cdktn.stringToHclTerraform(struct!.ownerUserProfileName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,14 +100,14 @@ export function sagemakerSpaceOwnershipSettingsToHclTerraform(struct?: Sagemaker
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceOwnershipSettingsOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceOwnershipSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -153,24 +153,24 @@ export interface SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleMan
 }
 
 export function sagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsToTerraform(struct?: SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsOutputReference | SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    idle_timeout_in_minutes: cdktf.numberToTerraform(struct!.idleTimeoutInMinutes),
+    idle_timeout_in_minutes: cdktn.numberToTerraform(struct!.idleTimeoutInMinutes),
   }
 }
 
 
 export function sagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsToHclTerraform(struct?: SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsOutputReference | SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     idle_timeout_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.idleTimeoutInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.idleTimeoutInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -181,14 +181,14 @@ export function sagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleMana
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -239,8 +239,8 @@ export interface SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleMan
 }
 
 export function sagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementToTerraform(struct?: SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference | SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -250,8 +250,8 @@ export function sagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleMana
 
 
 export function sagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementToHclTerraform(struct?: SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference | SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -267,14 +267,14 @@ export function sagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleMana
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -339,52 +339,52 @@ export interface SagemakerSpaceSpaceSettingsCodeEditorAppSettingsDefaultResource
 }
 
 export function sagemakerSpaceSpaceSettingsCodeEditorAppSettingsDefaultResourceSpecToTerraform(struct?: SagemakerSpaceSpaceSettingsCodeEditorAppSettingsDefaultResourceSpecOutputReference | SagemakerSpaceSpaceSettingsCodeEditorAppSettingsDefaultResourceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_type: cdktf.stringToTerraform(struct!.instanceType),
-    lifecycle_config_arn: cdktf.stringToTerraform(struct!.lifecycleConfigArn),
-    sagemaker_image_arn: cdktf.stringToTerraform(struct!.sagemakerImageArn),
-    sagemaker_image_version_alias: cdktf.stringToTerraform(struct!.sagemakerImageVersionAlias),
-    sagemaker_image_version_arn: cdktf.stringToTerraform(struct!.sagemakerImageVersionArn),
+    instance_type: cdktn.stringToTerraform(struct!.instanceType),
+    lifecycle_config_arn: cdktn.stringToTerraform(struct!.lifecycleConfigArn),
+    sagemaker_image_arn: cdktn.stringToTerraform(struct!.sagemakerImageArn),
+    sagemaker_image_version_alias: cdktn.stringToTerraform(struct!.sagemakerImageVersionAlias),
+    sagemaker_image_version_arn: cdktn.stringToTerraform(struct!.sagemakerImageVersionArn),
   }
 }
 
 
 export function sagemakerSpaceSpaceSettingsCodeEditorAppSettingsDefaultResourceSpecToHclTerraform(struct?: SagemakerSpaceSpaceSettingsCodeEditorAppSettingsDefaultResourceSpecOutputReference | SagemakerSpaceSpaceSettingsCodeEditorAppSettingsDefaultResourceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_type: {
-      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      value: cdktn.stringToHclTerraform(struct!.instanceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lifecycle_config_arn: {
-      value: cdktf.stringToHclTerraform(struct!.lifecycleConfigArn),
+      value: cdktn.stringToHclTerraform(struct!.lifecycleConfigArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sagemaker_image_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sagemakerImageArn),
+      value: cdktn.stringToHclTerraform(struct!.sagemakerImageArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sagemaker_image_version_alias: {
-      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
+      value: cdktn.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sagemaker_image_version_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionArn),
+      value: cdktn.stringToHclTerraform(struct!.sagemakerImageVersionArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -395,14 +395,14 @@ export function sagemakerSpaceSpaceSettingsCodeEditorAppSettingsDefaultResourceS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsCodeEditorAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsCodeEditorAppSettingsDefaultResourceSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -547,8 +547,8 @@ export interface SagemakerSpaceSpaceSettingsCodeEditorAppSettings {
 }
 
 export function sagemakerSpaceSpaceSettingsCodeEditorAppSettingsToTerraform(struct?: SagemakerSpaceSpaceSettingsCodeEditorAppSettingsOutputReference | SagemakerSpaceSpaceSettingsCodeEditorAppSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -559,8 +559,8 @@ export function sagemakerSpaceSpaceSettingsCodeEditorAppSettingsToTerraform(stru
 
 
 export function sagemakerSpaceSpaceSettingsCodeEditorAppSettingsToHclTerraform(struct?: SagemakerSpaceSpaceSettingsCodeEditorAppSettingsOutputReference | SagemakerSpaceSpaceSettingsCodeEditorAppSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -582,14 +582,14 @@ export function sagemakerSpaceSpaceSettingsCodeEditorAppSettingsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsCodeEditorAppSettingsOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsCodeEditorAppSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -657,24 +657,24 @@ export interface SagemakerSpaceSpaceSettingsCustomFileSystemEfsFileSystem {
 }
 
 export function sagemakerSpaceSpaceSettingsCustomFileSystemEfsFileSystemToTerraform(struct?: SagemakerSpaceSpaceSettingsCustomFileSystemEfsFileSystemOutputReference | SagemakerSpaceSpaceSettingsCustomFileSystemEfsFileSystem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file_system_id: cdktf.stringToTerraform(struct!.fileSystemId),
+    file_system_id: cdktn.stringToTerraform(struct!.fileSystemId),
   }
 }
 
 
 export function sagemakerSpaceSpaceSettingsCustomFileSystemEfsFileSystemToHclTerraform(struct?: SagemakerSpaceSpaceSettingsCustomFileSystemEfsFileSystemOutputReference | SagemakerSpaceSpaceSettingsCustomFileSystemEfsFileSystem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file_system_id: {
-      value: cdktf.stringToHclTerraform(struct!.fileSystemId),
+      value: cdktn.stringToHclTerraform(struct!.fileSystemId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -685,14 +685,14 @@ export function sagemakerSpaceSpaceSettingsCustomFileSystemEfsFileSystemToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsCustomFileSystemEfsFileSystemOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsCustomFileSystemEfsFileSystemOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -739,9 +739,9 @@ export interface SagemakerSpaceSpaceSettingsCustomFileSystem {
   readonly efsFileSystem: SagemakerSpaceSpaceSettingsCustomFileSystemEfsFileSystem;
 }
 
-export function sagemakerSpaceSpaceSettingsCustomFileSystemToTerraform(struct?: SagemakerSpaceSpaceSettingsCustomFileSystem | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerSpaceSpaceSettingsCustomFileSystemToTerraform(struct?: SagemakerSpaceSpaceSettingsCustomFileSystem | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -750,9 +750,9 @@ export function sagemakerSpaceSpaceSettingsCustomFileSystemToTerraform(struct?: 
 }
 
 
-export function sagemakerSpaceSpaceSettingsCustomFileSystemToHclTerraform(struct?: SagemakerSpaceSpaceSettingsCustomFileSystem | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerSpaceSpaceSettingsCustomFileSystemToHclTerraform(struct?: SagemakerSpaceSpaceSettingsCustomFileSystem | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -768,9 +768,9 @@ export function sagemakerSpaceSpaceSettingsCustomFileSystemToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsCustomFileSystemOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsCustomFileSystemOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -778,11 +778,11 @@ export class SagemakerSpaceSpaceSettingsCustomFileSystemOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerSpaceSpaceSettingsCustomFileSystem | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerSpaceSpaceSettingsCustomFileSystem | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -795,13 +795,13 @@ export class SagemakerSpaceSpaceSettingsCustomFileSystemOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerSpaceSpaceSettingsCustomFileSystem | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerSpaceSpaceSettingsCustomFileSystem | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._efsFileSystem.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -826,15 +826,15 @@ export class SagemakerSpaceSpaceSettingsCustomFileSystemOutputReference extends 
   }
 }
 
-export class SagemakerSpaceSpaceSettingsCustomFileSystemList extends cdktf.ComplexList {
-  public internalValue? : SagemakerSpaceSpaceSettingsCustomFileSystem[] | cdktf.IResolvable
+export class SagemakerSpaceSpaceSettingsCustomFileSystemList extends cdktn.ComplexList {
+  public internalValue? : SagemakerSpaceSpaceSettingsCustomFileSystem[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -853,24 +853,24 @@ export interface SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleMan
 }
 
 export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsToTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsOutputReference | SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    idle_timeout_in_minutes: cdktf.numberToTerraform(struct!.idleTimeoutInMinutes),
+    idle_timeout_in_minutes: cdktn.numberToTerraform(struct!.idleTimeoutInMinutes),
   }
 }
 
 
 export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsToHclTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsOutputReference | SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     idle_timeout_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.idleTimeoutInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.idleTimeoutInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -881,14 +881,14 @@ export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleMana
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -939,8 +939,8 @@ export interface SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleMan
 }
 
 export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementToTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference | SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -950,8 +950,8 @@ export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleMana
 
 
 export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementToHclTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference | SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -967,14 +967,14 @@ export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleMana
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1022,25 +1022,25 @@ export interface SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepository 
   readonly repositoryUrl: string;
 }
 
-export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryToTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepository | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryToTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepository | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    repository_url: cdktf.stringToTerraform(struct!.repositoryUrl),
+    repository_url: cdktn.stringToTerraform(struct!.repositoryUrl),
   }
 }
 
 
-export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryToHclTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepository | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryToHclTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepository | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     repository_url: {
-      value: cdktf.stringToHclTerraform(struct!.repositoryUrl),
+      value: cdktn.stringToHclTerraform(struct!.repositoryUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1051,9 +1051,9 @@ export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1061,11 +1061,11 @@ export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepository | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepository | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1078,13 +1078,13 @@ export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepository | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepository | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._repositoryUrl = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1109,15 +1109,15 @@ export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryOutpu
   }
 }
 
-export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryList extends cdktf.ComplexList {
-  public internalValue? : SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepository[] | cdktf.IResolvable
+export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryList extends cdktn.ComplexList {
+  public internalValue? : SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepository[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1152,52 +1152,52 @@ export interface SagemakerSpaceSpaceSettingsJupyterLabAppSettingsDefaultResource
 }
 
 export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecToTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecOutputReference | SagemakerSpaceSpaceSettingsJupyterLabAppSettingsDefaultResourceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_type: cdktf.stringToTerraform(struct!.instanceType),
-    lifecycle_config_arn: cdktf.stringToTerraform(struct!.lifecycleConfigArn),
-    sagemaker_image_arn: cdktf.stringToTerraform(struct!.sagemakerImageArn),
-    sagemaker_image_version_alias: cdktf.stringToTerraform(struct!.sagemakerImageVersionAlias),
-    sagemaker_image_version_arn: cdktf.stringToTerraform(struct!.sagemakerImageVersionArn),
+    instance_type: cdktn.stringToTerraform(struct!.instanceType),
+    lifecycle_config_arn: cdktn.stringToTerraform(struct!.lifecycleConfigArn),
+    sagemaker_image_arn: cdktn.stringToTerraform(struct!.sagemakerImageArn),
+    sagemaker_image_version_alias: cdktn.stringToTerraform(struct!.sagemakerImageVersionAlias),
+    sagemaker_image_version_arn: cdktn.stringToTerraform(struct!.sagemakerImageVersionArn),
   }
 }
 
 
 export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecToHclTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecOutputReference | SagemakerSpaceSpaceSettingsJupyterLabAppSettingsDefaultResourceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_type: {
-      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      value: cdktn.stringToHclTerraform(struct!.instanceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lifecycle_config_arn: {
-      value: cdktf.stringToHclTerraform(struct!.lifecycleConfigArn),
+      value: cdktn.stringToHclTerraform(struct!.lifecycleConfigArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sagemaker_image_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sagemakerImageArn),
+      value: cdktn.stringToHclTerraform(struct!.sagemakerImageArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sagemaker_image_version_alias: {
-      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
+      value: cdktn.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sagemaker_image_version_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionArn),
+      value: cdktn.stringToHclTerraform(struct!.sagemakerImageVersionArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1208,14 +1208,14 @@ export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsDefaultResourceS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1356,7 +1356,7 @@ export interface SagemakerSpaceSpaceSettingsJupyterLabAppSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_space#code_repository SagemakerSpace#code_repository}
   */
-  readonly codeRepository?: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepository[] | cdktf.IResolvable;
+  readonly codeRepository?: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepository[] | cdktn.IResolvable;
   /**
   * default_resource_spec block
   *
@@ -1366,21 +1366,21 @@ export interface SagemakerSpaceSpaceSettingsJupyterLabAppSettings {
 }
 
 export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsToTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsOutputReference | SagemakerSpaceSpaceSettingsJupyterLabAppSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     app_lifecycle_management: sagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementToTerraform(struct!.appLifecycleManagement),
-    code_repository: cdktf.listMapper(sagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryToTerraform, true)(struct!.codeRepository),
+    code_repository: cdktn.listMapper(sagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryToTerraform, true)(struct!.codeRepository),
     default_resource_spec: sagemakerSpaceSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecToTerraform(struct!.defaultResourceSpec),
   }
 }
 
 
 export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsToHclTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsOutputReference | SagemakerSpaceSpaceSettingsJupyterLabAppSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1391,7 +1391,7 @@ export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsToHclTerraform(s
       storageClassType: "SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementList",
     },
     code_repository: {
-      value: cdktf.listMapperHcl(sagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryToHclTerraform, true)(struct!.codeRepository),
+      value: cdktn.listMapperHcl(sagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryToHclTerraform, true)(struct!.codeRepository),
       isBlock: true,
       type: "set",
       storageClassType: "SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryList",
@@ -1408,14 +1408,14 @@ export function sagemakerSpaceSpaceSettingsJupyterLabAppSettingsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1473,7 +1473,7 @@ export class SagemakerSpaceSpaceSettingsJupyterLabAppSettingsOutputReference ext
   public get codeRepository() {
     return this._codeRepository;
   }
-  public putCodeRepository(value: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepository[] | cdktf.IResolvable) {
+  public putCodeRepository(value: SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepository[] | cdktn.IResolvable) {
     this._codeRepository.internalValue = value;
   }
   public resetCodeRepository() {
@@ -1504,25 +1504,25 @@ export interface SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeReposito
   readonly repositoryUrl: string;
 }
 
-export function sagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryToTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryToTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    repository_url: cdktf.stringToTerraform(struct!.repositoryUrl),
+    repository_url: cdktn.stringToTerraform(struct!.repositoryUrl),
   }
 }
 
 
-export function sagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryToHclTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryToHclTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     repository_url: {
-      value: cdktf.stringToHclTerraform(struct!.repositoryUrl),
+      value: cdktn.stringToHclTerraform(struct!.repositoryUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1533,9 +1533,9 @@ export function sagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1543,11 +1543,11 @@ export class SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1560,13 +1560,13 @@ export class SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._repositoryUrl = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1591,15 +1591,15 @@ export class SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryOu
   }
 }
 
-export class SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryList extends cdktf.ComplexList {
-  public internalValue? : SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository[] | cdktf.IResolvable
+export class SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryList extends cdktn.ComplexList {
+  public internalValue? : SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1634,52 +1634,52 @@ export interface SagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResou
 }
 
 export function sagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecToTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference | SagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_type: cdktf.stringToTerraform(struct!.instanceType),
-    lifecycle_config_arn: cdktf.stringToTerraform(struct!.lifecycleConfigArn),
-    sagemaker_image_arn: cdktf.stringToTerraform(struct!.sagemakerImageArn),
-    sagemaker_image_version_alias: cdktf.stringToTerraform(struct!.sagemakerImageVersionAlias),
-    sagemaker_image_version_arn: cdktf.stringToTerraform(struct!.sagemakerImageVersionArn),
+    instance_type: cdktn.stringToTerraform(struct!.instanceType),
+    lifecycle_config_arn: cdktn.stringToTerraform(struct!.lifecycleConfigArn),
+    sagemaker_image_arn: cdktn.stringToTerraform(struct!.sagemakerImageArn),
+    sagemaker_image_version_alias: cdktn.stringToTerraform(struct!.sagemakerImageVersionAlias),
+    sagemaker_image_version_arn: cdktn.stringToTerraform(struct!.sagemakerImageVersionArn),
   }
 }
 
 
 export function sagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecToHclTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference | SagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_type: {
-      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      value: cdktn.stringToHclTerraform(struct!.instanceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lifecycle_config_arn: {
-      value: cdktf.stringToHclTerraform(struct!.lifecycleConfigArn),
+      value: cdktn.stringToHclTerraform(struct!.lifecycleConfigArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sagemaker_image_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sagemakerImageArn),
+      value: cdktn.stringToHclTerraform(struct!.sagemakerImageArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sagemaker_image_version_alias: {
-      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
+      value: cdktn.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sagemaker_image_version_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionArn),
+      value: cdktn.stringToHclTerraform(struct!.sagemakerImageVersionArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1690,14 +1690,14 @@ export function sagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1836,7 +1836,7 @@ export interface SagemakerSpaceSpaceSettingsJupyterServerAppSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_space#code_repository SagemakerSpace#code_repository}
   */
-  readonly codeRepository?: SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository[] | cdktf.IResolvable;
+  readonly codeRepository?: SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository[] | cdktn.IResolvable;
   /**
   * default_resource_spec block
   *
@@ -1846,32 +1846,32 @@ export interface SagemakerSpaceSpaceSettingsJupyterServerAppSettings {
 }
 
 export function sagemakerSpaceSpaceSettingsJupyterServerAppSettingsToTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference | SagemakerSpaceSpaceSettingsJupyterServerAppSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lifecycle_config_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.lifecycleConfigArns),
-    code_repository: cdktf.listMapper(sagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryToTerraform, true)(struct!.codeRepository),
+    lifecycle_config_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.lifecycleConfigArns),
+    code_repository: cdktn.listMapper(sagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryToTerraform, true)(struct!.codeRepository),
     default_resource_spec: sagemakerSpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecToTerraform(struct!.defaultResourceSpec),
   }
 }
 
 
 export function sagemakerSpaceSpaceSettingsJupyterServerAppSettingsToHclTerraform(struct?: SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference | SagemakerSpaceSpaceSettingsJupyterServerAppSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lifecycle_config_arns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.lifecycleConfigArns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.lifecycleConfigArns),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     code_repository: {
-      value: cdktf.listMapperHcl(sagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryToHclTerraform, true)(struct!.codeRepository),
+      value: cdktn.listMapperHcl(sagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryToHclTerraform, true)(struct!.codeRepository),
       isBlock: true,
       type: "set",
       storageClassType: "SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryList",
@@ -1888,14 +1888,14 @@ export function sagemakerSpaceSpaceSettingsJupyterServerAppSettingsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1935,7 +1935,7 @@ export class SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference 
   // lifecycle_config_arns - computed: false, optional: true, required: false
   private _lifecycleConfigArns?: string[]; 
   public get lifecycleConfigArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('lifecycle_config_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('lifecycle_config_arns'));
   }
   public set lifecycleConfigArns(value: string[]) {
     this._lifecycleConfigArns = value;
@@ -1953,7 +1953,7 @@ export class SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference 
   public get codeRepository() {
     return this._codeRepository;
   }
-  public putCodeRepository(value: SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository[] | cdktf.IResolvable) {
+  public putCodeRepository(value: SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepository[] | cdktn.IResolvable) {
     this._codeRepository.internalValue = value;
   }
   public resetCodeRepository() {
@@ -1992,39 +1992,39 @@ export interface SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage 
   readonly imageVersionNumber?: number;
 }
 
-export function sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageToTerraform(struct?: SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageToTerraform(struct?: SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    app_image_config_name: cdktf.stringToTerraform(struct!.appImageConfigName),
-    image_name: cdktf.stringToTerraform(struct!.imageName),
-    image_version_number: cdktf.numberToTerraform(struct!.imageVersionNumber),
+    app_image_config_name: cdktn.stringToTerraform(struct!.appImageConfigName),
+    image_name: cdktn.stringToTerraform(struct!.imageName),
+    image_version_number: cdktn.numberToTerraform(struct!.imageVersionNumber),
   }
 }
 
 
-export function sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageToHclTerraform(struct?: SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageToHclTerraform(struct?: SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     app_image_config_name: {
-      value: cdktf.stringToHclTerraform(struct!.appImageConfigName),
+      value: cdktn.stringToHclTerraform(struct!.appImageConfigName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     image_name: {
-      value: cdktf.stringToHclTerraform(struct!.imageName),
+      value: cdktn.stringToHclTerraform(struct!.imageName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     image_version_number: {
-      value: cdktf.numberToHclTerraform(struct!.imageVersionNumber),
+      value: cdktn.numberToHclTerraform(struct!.imageVersionNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2035,9 +2035,9 @@ export function sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2045,11 +2045,11 @@ export class SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2070,7 +2070,7 @@ export class SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2078,7 +2078,7 @@ export class SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageOutpu
       this._imageName = undefined;
       this._imageVersionNumber = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2134,15 +2134,15 @@ export class SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageOutpu
   }
 }
 
-export class SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageList extends cdktf.ComplexList {
-  public internalValue? : SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage[] | cdktf.IResolvable
+export class SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageList extends cdktn.ComplexList {
+  public internalValue? : SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2177,52 +2177,52 @@ export interface SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResou
 }
 
 export function sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecToTerraform(struct?: SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference | SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_type: cdktf.stringToTerraform(struct!.instanceType),
-    lifecycle_config_arn: cdktf.stringToTerraform(struct!.lifecycleConfigArn),
-    sagemaker_image_arn: cdktf.stringToTerraform(struct!.sagemakerImageArn),
-    sagemaker_image_version_alias: cdktf.stringToTerraform(struct!.sagemakerImageVersionAlias),
-    sagemaker_image_version_arn: cdktf.stringToTerraform(struct!.sagemakerImageVersionArn),
+    instance_type: cdktn.stringToTerraform(struct!.instanceType),
+    lifecycle_config_arn: cdktn.stringToTerraform(struct!.lifecycleConfigArn),
+    sagemaker_image_arn: cdktn.stringToTerraform(struct!.sagemakerImageArn),
+    sagemaker_image_version_alias: cdktn.stringToTerraform(struct!.sagemakerImageVersionAlias),
+    sagemaker_image_version_arn: cdktn.stringToTerraform(struct!.sagemakerImageVersionArn),
   }
 }
 
 
 export function sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecToHclTerraform(struct?: SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference | SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_type: {
-      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      value: cdktn.stringToHclTerraform(struct!.instanceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lifecycle_config_arn: {
-      value: cdktf.stringToHclTerraform(struct!.lifecycleConfigArn),
+      value: cdktn.stringToHclTerraform(struct!.lifecycleConfigArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sagemaker_image_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sagemakerImageArn),
+      value: cdktn.stringToHclTerraform(struct!.sagemakerImageArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sagemaker_image_version_alias: {
-      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
+      value: cdktn.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sagemaker_image_version_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionArn),
+      value: cdktn.stringToHclTerraform(struct!.sagemakerImageVersionArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2233,14 +2233,14 @@ export function sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2379,7 +2379,7 @@ export interface SagemakerSpaceSpaceSettingsKernelGatewayAppSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_space#custom_image SagemakerSpace#custom_image}
   */
-  readonly customImage?: SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage[] | cdktf.IResolvable;
+  readonly customImage?: SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage[] | cdktn.IResolvable;
   /**
   * default_resource_spec block
   *
@@ -2389,32 +2389,32 @@ export interface SagemakerSpaceSpaceSettingsKernelGatewayAppSettings {
 }
 
 export function sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsToTerraform(struct?: SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputReference | SagemakerSpaceSpaceSettingsKernelGatewayAppSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lifecycle_config_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.lifecycleConfigArns),
-    custom_image: cdktf.listMapper(sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageToTerraform, true)(struct!.customImage),
+    lifecycle_config_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.lifecycleConfigArns),
+    custom_image: cdktn.listMapper(sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageToTerraform, true)(struct!.customImage),
     default_resource_spec: sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecToTerraform(struct!.defaultResourceSpec),
   }
 }
 
 
 export function sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsToHclTerraform(struct?: SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputReference | SagemakerSpaceSpaceSettingsKernelGatewayAppSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lifecycle_config_arns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.lifecycleConfigArns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.lifecycleConfigArns),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     custom_image: {
-      value: cdktf.listMapperHcl(sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageToHclTerraform, true)(struct!.customImage),
+      value: cdktn.listMapperHcl(sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageToHclTerraform, true)(struct!.customImage),
       isBlock: true,
       type: "list",
       storageClassType: "SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImageList",
@@ -2431,14 +2431,14 @@ export function sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2478,7 +2478,7 @@ export class SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputReference 
   // lifecycle_config_arns - computed: false, optional: true, required: false
   private _lifecycleConfigArns?: string[]; 
   public get lifecycleConfigArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('lifecycle_config_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('lifecycle_config_arns'));
   }
   public set lifecycleConfigArns(value: string[]) {
     this._lifecycleConfigArns = value;
@@ -2496,7 +2496,7 @@ export class SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputReference 
   public get customImage() {
     return this._customImage;
   }
-  public putCustomImage(value: SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage[] | cdktf.IResolvable) {
+  public putCustomImage(value: SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsCustomImage[] | cdktn.IResolvable) {
     this._customImage.internalValue = value;
   }
   public resetCustomImage() {
@@ -2528,24 +2528,24 @@ export interface SagemakerSpaceSpaceSettingsSpaceStorageSettingsEbsStorageSettin
 }
 
 export function sagemakerSpaceSpaceSettingsSpaceStorageSettingsEbsStorageSettingsToTerraform(struct?: SagemakerSpaceSpaceSettingsSpaceStorageSettingsEbsStorageSettingsOutputReference | SagemakerSpaceSpaceSettingsSpaceStorageSettingsEbsStorageSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ebs_volume_size_in_gb: cdktf.numberToTerraform(struct!.ebsVolumeSizeInGb),
+    ebs_volume_size_in_gb: cdktn.numberToTerraform(struct!.ebsVolumeSizeInGb),
   }
 }
 
 
 export function sagemakerSpaceSpaceSettingsSpaceStorageSettingsEbsStorageSettingsToHclTerraform(struct?: SagemakerSpaceSpaceSettingsSpaceStorageSettingsEbsStorageSettingsOutputReference | SagemakerSpaceSpaceSettingsSpaceStorageSettingsEbsStorageSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ebs_volume_size_in_gb: {
-      value: cdktf.numberToHclTerraform(struct!.ebsVolumeSizeInGb),
+      value: cdktn.numberToHclTerraform(struct!.ebsVolumeSizeInGb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2556,14 +2556,14 @@ export function sagemakerSpaceSpaceSettingsSpaceStorageSettingsEbsStorageSetting
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsSpaceStorageSettingsEbsStorageSettingsOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsSpaceStorageSettingsEbsStorageSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2611,8 +2611,8 @@ export interface SagemakerSpaceSpaceSettingsSpaceStorageSettings {
 }
 
 export function sagemakerSpaceSpaceSettingsSpaceStorageSettingsToTerraform(struct?: SagemakerSpaceSpaceSettingsSpaceStorageSettingsOutputReference | SagemakerSpaceSpaceSettingsSpaceStorageSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2622,8 +2622,8 @@ export function sagemakerSpaceSpaceSettingsSpaceStorageSettingsToTerraform(struc
 
 
 export function sagemakerSpaceSpaceSettingsSpaceStorageSettingsToHclTerraform(struct?: SagemakerSpaceSpaceSettingsSpaceStorageSettingsOutputReference | SagemakerSpaceSpaceSettingsSpaceStorageSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2639,14 +2639,14 @@ export function sagemakerSpaceSpaceSettingsSpaceStorageSettingsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsSpaceStorageSettingsOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsSpaceStorageSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2700,7 +2700,7 @@ export interface SagemakerSpaceSpaceSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_space#custom_file_system SagemakerSpace#custom_file_system}
   */
-  readonly customFileSystem?: SagemakerSpaceSpaceSettingsCustomFileSystem[] | cdktf.IResolvable;
+  readonly customFileSystem?: SagemakerSpaceSpaceSettingsCustomFileSystem[] | cdktn.IResolvable;
   /**
   * jupyter_lab_app_settings block
   *
@@ -2728,14 +2728,14 @@ export interface SagemakerSpaceSpaceSettings {
 }
 
 export function sagemakerSpaceSpaceSettingsToTerraform(struct?: SagemakerSpaceSpaceSettingsOutputReference | SagemakerSpaceSpaceSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    app_type: cdktf.stringToTerraform(struct!.appType),
+    app_type: cdktn.stringToTerraform(struct!.appType),
     code_editor_app_settings: sagemakerSpaceSpaceSettingsCodeEditorAppSettingsToTerraform(struct!.codeEditorAppSettings),
-    custom_file_system: cdktf.listMapper(sagemakerSpaceSpaceSettingsCustomFileSystemToTerraform, true)(struct!.customFileSystem),
+    custom_file_system: cdktn.listMapper(sagemakerSpaceSpaceSettingsCustomFileSystemToTerraform, true)(struct!.customFileSystem),
     jupyter_lab_app_settings: sagemakerSpaceSpaceSettingsJupyterLabAppSettingsToTerraform(struct!.jupyterLabAppSettings),
     jupyter_server_app_settings: sagemakerSpaceSpaceSettingsJupyterServerAppSettingsToTerraform(struct!.jupyterServerAppSettings),
     kernel_gateway_app_settings: sagemakerSpaceSpaceSettingsKernelGatewayAppSettingsToTerraform(struct!.kernelGatewayAppSettings),
@@ -2745,13 +2745,13 @@ export function sagemakerSpaceSpaceSettingsToTerraform(struct?: SagemakerSpaceSp
 
 
 export function sagemakerSpaceSpaceSettingsToHclTerraform(struct?: SagemakerSpaceSpaceSettingsOutputReference | SagemakerSpaceSpaceSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     app_type: {
-      value: cdktf.stringToHclTerraform(struct!.appType),
+      value: cdktn.stringToHclTerraform(struct!.appType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2763,7 +2763,7 @@ export function sagemakerSpaceSpaceSettingsToHclTerraform(struct?: SagemakerSpac
       storageClassType: "SagemakerSpaceSpaceSettingsCodeEditorAppSettingsList",
     },
     custom_file_system: {
-      value: cdktf.listMapperHcl(sagemakerSpaceSpaceSettingsCustomFileSystemToHclTerraform, true)(struct!.customFileSystem),
+      value: cdktn.listMapperHcl(sagemakerSpaceSpaceSettingsCustomFileSystemToHclTerraform, true)(struct!.customFileSystem),
       isBlock: true,
       type: "list",
       storageClassType: "SagemakerSpaceSpaceSettingsCustomFileSystemList",
@@ -2798,14 +2798,14 @@ export function sagemakerSpaceSpaceSettingsToHclTerraform(struct?: SagemakerSpac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSettingsOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2903,7 +2903,7 @@ export class SagemakerSpaceSpaceSettingsOutputReference extends cdktf.ComplexObj
   public get customFileSystem() {
     return this._customFileSystem;
   }
-  public putCustomFileSystem(value: SagemakerSpaceSpaceSettingsCustomFileSystem[] | cdktf.IResolvable) {
+  public putCustomFileSystem(value: SagemakerSpaceSpaceSettingsCustomFileSystem[] | cdktn.IResolvable) {
     this._customFileSystem.internalValue = value;
   }
   public resetCustomFileSystem() {
@@ -2986,24 +2986,24 @@ export interface SagemakerSpaceSpaceSharingSettings {
 }
 
 export function sagemakerSpaceSpaceSharingSettingsToTerraform(struct?: SagemakerSpaceSpaceSharingSettingsOutputReference | SagemakerSpaceSpaceSharingSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    sharing_type: cdktf.stringToTerraform(struct!.sharingType),
+    sharing_type: cdktn.stringToTerraform(struct!.sharingType),
   }
 }
 
 
 export function sagemakerSpaceSpaceSharingSettingsToHclTerraform(struct?: SagemakerSpaceSpaceSharingSettingsOutputReference | SagemakerSpaceSpaceSharingSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     sharing_type: {
-      value: cdktf.stringToHclTerraform(struct!.sharingType),
+      value: cdktn.stringToHclTerraform(struct!.sharingType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3014,14 +3014,14 @@ export function sagemakerSpaceSpaceSharingSettingsToHclTerraform(struct?: Sagema
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerSpaceSpaceSharingSettingsOutputReference extends cdktf.ComplexObject {
+export class SagemakerSpaceSpaceSharingSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3063,7 +3063,7 @@ export class SagemakerSpaceSpaceSharingSettingsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_space aws_sagemaker_space}
 */
-export class SagemakerSpace extends cdktf.TerraformResource {
+export class SagemakerSpace extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -3074,14 +3074,14 @@ export class SagemakerSpace extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SagemakerSpace resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SagemakerSpace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerSpace to import
   * @param importFromId The id of the existing SagemakerSpace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_space#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerSpace to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_space", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_space", importId: importFromId, provider });
       }
 
   // ===========
@@ -3302,13 +3302,13 @@ export class SagemakerSpace extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_id: cdktf.stringToTerraform(this._domainId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      space_display_name: cdktf.stringToTerraform(this._spaceDisplayName),
-      space_name: cdktf.stringToTerraform(this._spaceName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      domain_id: cdktn.stringToTerraform(this._domainId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      space_display_name: cdktn.stringToTerraform(this._spaceDisplayName),
+      space_name: cdktn.stringToTerraform(this._spaceName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       ownership_settings: sagemakerSpaceOwnershipSettingsToTerraform(this._ownershipSettings.internalValue),
       space_settings: sagemakerSpaceSpaceSettingsToTerraform(this._spaceSettings.internalValue),
       space_sharing_settings: sagemakerSpaceSpaceSharingSettingsToTerraform(this._spaceSharingSettings.internalValue),
@@ -3318,43 +3318,43 @@ export class SagemakerSpace extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain_id: {
-        value: cdktf.stringToHclTerraform(this._domainId),
+        value: cdktn.stringToHclTerraform(this._domainId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       space_display_name: {
-        value: cdktf.stringToHclTerraform(this._spaceDisplayName),
+        value: cdktn.stringToHclTerraform(this._spaceDisplayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       space_name: {
-        value: cdktf.stringToHclTerraform(this._spaceName),
+        value: cdktn.stringToHclTerraform(this._spaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

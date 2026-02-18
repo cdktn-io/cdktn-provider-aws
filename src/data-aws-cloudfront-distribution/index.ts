@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsCloudfrontDistributionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCloudfrontDistributionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cloudfront_distribution#id DataAwsCloudfrontDistribution#id}
   *
@@ -28,7 +28,7 @@ export interface DataAwsCloudfrontDistributionConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cloudfront_distribution aws_cloudfront_distribution}
 */
-export class DataAwsCloudfrontDistribution extends cdktf.TerraformDataSource {
+export class DataAwsCloudfrontDistribution extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -39,14 +39,14 @@ export class DataAwsCloudfrontDistribution extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsCloudfrontDistribution resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsCloudfrontDistribution resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCloudfrontDistribution to import
   * @param importFromId The id of the existing DataAwsCloudfrontDistribution that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cloudfront_distribution#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCloudfrontDistribution to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_distribution", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_distribution", importId: importFromId, provider });
       }
 
   // ===========
@@ -86,7 +86,7 @@ export class DataAwsCloudfrontDistribution extends cdktf.TerraformDataSource {
 
   // aliases - computed: true, optional: false, required: false
   public get aliases() {
-    return cdktf.Fn.tolist(this.getListAttribute('aliases'));
+    return cdktn.Fn.tolist(this.getListAttribute('aliases'));
   }
 
   // anycast_ip_list_id - computed: true, optional: false, required: false
@@ -174,21 +174,21 @@ export class DataAwsCloudfrontDistribution extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

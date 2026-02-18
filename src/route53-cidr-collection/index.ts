@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Route53CidrCollectionConfig extends cdktf.TerraformMetaArguments {
+export interface Route53CidrCollectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_cidr_collection#name Route53CidrCollection#name}
   */
@@ -21,7 +21,7 @@ export interface Route53CidrCollectionConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_cidr_collection aws_route53_cidr_collection}
 */
-export class Route53CidrCollection extends cdktf.TerraformResource {
+export class Route53CidrCollection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -32,14 +32,14 @@ export class Route53CidrCollection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Route53CidrCollection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Route53CidrCollection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53CidrCollection to import
   * @param importFromId The id of the existing Route53CidrCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_cidr_collection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53CidrCollection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_cidr_collection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_cidr_collection", importId: importFromId, provider });
       }
 
   // ===========
@@ -110,14 +110,14 @@ export class Route53CidrCollection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

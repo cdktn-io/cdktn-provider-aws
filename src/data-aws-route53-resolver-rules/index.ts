@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsRoute53ResolverRulesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRoute53ResolverRulesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_resolver_rules#id DataAwsRoute53ResolverRules#id}
   *
@@ -50,7 +50,7 @@ export interface DataAwsRoute53ResolverRulesConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_resolver_rules aws_route53_resolver_rules}
 */
-export class DataAwsRoute53ResolverRules extends cdktf.TerraformDataSource {
+export class DataAwsRoute53ResolverRules extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class DataAwsRoute53ResolverRules extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsRoute53ResolverRules resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsRoute53ResolverRules resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRoute53ResolverRules to import
   * @param importFromId The id of the existing DataAwsRoute53ResolverRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/route53_resolver_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRoute53ResolverRules to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_resolver_rules", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_resolver_rules", importId: importFromId, provider });
       }
 
   // ===========
@@ -193,7 +193,7 @@ export class DataAwsRoute53ResolverRules extends cdktf.TerraformDataSource {
 
   // resolver_rule_ids - computed: true, optional: false, required: false
   public get resolverRuleIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('resolver_rule_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('resolver_rule_ids'));
   }
 
   // rule_type - computed: false, optional: true, required: false
@@ -234,56 +234,56 @@ export class DataAwsRoute53ResolverRules extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name_regex: cdktf.stringToTerraform(this._nameRegex),
-      owner_id: cdktf.stringToTerraform(this._ownerId),
-      region: cdktf.stringToTerraform(this._region),
-      resolver_endpoint_id: cdktf.stringToTerraform(this._resolverEndpointId),
-      rule_type: cdktf.stringToTerraform(this._ruleType),
-      share_status: cdktf.stringToTerraform(this._shareStatus),
+      id: cdktn.stringToTerraform(this._id),
+      name_regex: cdktn.stringToTerraform(this._nameRegex),
+      owner_id: cdktn.stringToTerraform(this._ownerId),
+      region: cdktn.stringToTerraform(this._region),
+      resolver_endpoint_id: cdktn.stringToTerraform(this._resolverEndpointId),
+      rule_type: cdktn.stringToTerraform(this._ruleType),
+      share_status: cdktn.stringToTerraform(this._shareStatus),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_regex: {
-        value: cdktf.stringToHclTerraform(this._nameRegex),
+        value: cdktn.stringToHclTerraform(this._nameRegex),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner_id: {
-        value: cdktf.stringToHclTerraform(this._ownerId),
+        value: cdktn.stringToHclTerraform(this._ownerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resolver_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._resolverEndpointId),
+        value: cdktn.stringToHclTerraform(this._resolverEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule_type: {
-        value: cdktf.stringToHclTerraform(this._ruleType),
+        value: cdktn.stringToHclTerraform(this._ruleType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       share_status: {
-        value: cdktf.stringToHclTerraform(this._shareStatus),
+        value: cdktn.stringToHclTerraform(this._shareStatus),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

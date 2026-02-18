@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SagemakerMlflowTrackingServerConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerMlflowTrackingServerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_mlflow_tracking_server#artifact_store_uri SagemakerMlflowTrackingServer#artifact_store_uri}
   */
@@ -19,7 +19,7 @@ export interface SagemakerMlflowTrackingServerConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_mlflow_tracking_server#automatic_model_registration SagemakerMlflowTrackingServer#automatic_model_registration}
   */
-  readonly automaticModelRegistration?: boolean | cdktf.IResolvable;
+  readonly automaticModelRegistration?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_mlflow_tracking_server#id SagemakerMlflowTrackingServer#id}
   *
@@ -66,7 +66,7 @@ export interface SagemakerMlflowTrackingServerConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_mlflow_tracking_server aws_sagemaker_mlflow_tracking_server}
 */
-export class SagemakerMlflowTrackingServer extends cdktf.TerraformResource {
+export class SagemakerMlflowTrackingServer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class SagemakerMlflowTrackingServer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SagemakerMlflowTrackingServer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SagemakerMlflowTrackingServer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerMlflowTrackingServer to import
   * @param importFromId The id of the existing SagemakerMlflowTrackingServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_mlflow_tracking_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerMlflowTrackingServer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_mlflow_tracking_server", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_mlflow_tracking_server", importId: importFromId, provider });
       }
 
   // ===========
@@ -150,11 +150,11 @@ export class SagemakerMlflowTrackingServer extends cdktf.TerraformResource {
   }
 
   // automatic_model_registration - computed: false, optional: true, required: false
-  private _automaticModelRegistration?: boolean | cdktf.IResolvable; 
+  private _automaticModelRegistration?: boolean | cdktn.IResolvable; 
   public get automaticModelRegistration() {
     return this.getBooleanAttribute('automatic_model_registration');
   }
-  public set automaticModelRegistration(value: boolean | cdktf.IResolvable) {
+  public set automaticModelRegistration(value: boolean | cdktn.IResolvable) {
     this._automaticModelRegistration = value;
   }
   public resetAutomaticModelRegistration() {
@@ -314,84 +314,84 @@ export class SagemakerMlflowTrackingServer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      artifact_store_uri: cdktf.stringToTerraform(this._artifactStoreUri),
-      automatic_model_registration: cdktf.booleanToTerraform(this._automaticModelRegistration),
-      id: cdktf.stringToTerraform(this._id),
-      mlflow_version: cdktf.stringToTerraform(this._mlflowVersion),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      tracking_server_name: cdktf.stringToTerraform(this._trackingServerName),
-      tracking_server_size: cdktf.stringToTerraform(this._trackingServerSize),
-      weekly_maintenance_window_start: cdktf.stringToTerraform(this._weeklyMaintenanceWindowStart),
+      artifact_store_uri: cdktn.stringToTerraform(this._artifactStoreUri),
+      automatic_model_registration: cdktn.booleanToTerraform(this._automaticModelRegistration),
+      id: cdktn.stringToTerraform(this._id),
+      mlflow_version: cdktn.stringToTerraform(this._mlflowVersion),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      tracking_server_name: cdktn.stringToTerraform(this._trackingServerName),
+      tracking_server_size: cdktn.stringToTerraform(this._trackingServerSize),
+      weekly_maintenance_window_start: cdktn.stringToTerraform(this._weeklyMaintenanceWindowStart),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       artifact_store_uri: {
-        value: cdktf.stringToHclTerraform(this._artifactStoreUri),
+        value: cdktn.stringToHclTerraform(this._artifactStoreUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       automatic_model_registration: {
-        value: cdktf.booleanToHclTerraform(this._automaticModelRegistration),
+        value: cdktn.booleanToHclTerraform(this._automaticModelRegistration),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mlflow_version: {
-        value: cdktf.stringToHclTerraform(this._mlflowVersion),
+        value: cdktn.stringToHclTerraform(this._mlflowVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tracking_server_name: {
-        value: cdktf.stringToHclTerraform(this._trackingServerName),
+        value: cdktn.stringToHclTerraform(this._trackingServerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tracking_server_size: {
-        value: cdktf.stringToHclTerraform(this._trackingServerSize),
+        value: cdktn.stringToHclTerraform(this._trackingServerSize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       weekly_maintenance_window_start: {
-        value: cdktf.stringToHclTerraform(this._weeklyMaintenanceWindowStart),
+        value: cdktn.stringToHclTerraform(this._weeklyMaintenanceWindowStart),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

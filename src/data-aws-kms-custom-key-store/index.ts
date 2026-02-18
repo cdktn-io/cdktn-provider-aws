@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsKmsCustomKeyStoreConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsKmsCustomKeyStoreConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/kms_custom_key_store#custom_key_store_id DataAwsKmsCustomKeyStore#custom_key_store_id}
   */
@@ -38,7 +38,7 @@ export interface DataAwsKmsCustomKeyStoreConfig extends cdktf.TerraformMetaArgum
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/kms_custom_key_store aws_kms_custom_key_store}
 */
-export class DataAwsKmsCustomKeyStore extends cdktf.TerraformDataSource {
+export class DataAwsKmsCustomKeyStore extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class DataAwsKmsCustomKeyStore extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsKmsCustomKeyStore resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsKmsCustomKeyStore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsKmsCustomKeyStore to import
   * @param importFromId The id of the existing DataAwsKmsCustomKeyStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/kms_custom_key_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsKmsCustomKeyStore to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_kms_custom_key_store", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_kms_custom_key_store", importId: importFromId, provider });
       }
 
   // ===========
@@ -186,35 +186,35 @@ export class DataAwsKmsCustomKeyStore extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      custom_key_store_id: cdktf.stringToTerraform(this._customKeyStoreId),
-      custom_key_store_name: cdktf.stringToTerraform(this._customKeyStoreName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      custom_key_store_id: cdktn.stringToTerraform(this._customKeyStoreId),
+      custom_key_store_name: cdktn.stringToTerraform(this._customKeyStoreName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       custom_key_store_id: {
-        value: cdktf.stringToHclTerraform(this._customKeyStoreId),
+        value: cdktn.stringToHclTerraform(this._customKeyStoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_key_store_name: {
-        value: cdktf.stringToHclTerraform(this._customKeyStoreName),
+        value: cdktn.stringToHclTerraform(this._customKeyStoreName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

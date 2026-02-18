@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EipAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface EipAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eip_association#allocation_id EipAssociation#allocation_id}
   */
@@ -19,7 +19,7 @@ export interface EipAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eip_association#allow_reassociation EipAssociation#allow_reassociation}
   */
-  readonly allowReassociation?: boolean | cdktf.IResolvable;
+  readonly allowReassociation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eip_association#id EipAssociation#id}
   *
@@ -54,7 +54,7 @@ export interface EipAssociationConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eip_association aws_eip_association}
 */
-export class EipAssociation extends cdktf.TerraformResource {
+export class EipAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class EipAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EipAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EipAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EipAssociation to import
   * @param importFromId The id of the existing EipAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eip_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EipAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_eip_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_eip_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -133,11 +133,11 @@ export class EipAssociation extends cdktf.TerraformResource {
   }
 
   // allow_reassociation - computed: false, optional: true, required: false
-  private _allowReassociation?: boolean | cdktf.IResolvable; 
+  private _allowReassociation?: boolean | cdktn.IResolvable; 
   public get allowReassociation() {
     return this.getBooleanAttribute('allow_reassociation');
   }
-  public set allowReassociation(value: boolean | cdktf.IResolvable) {
+  public set allowReassociation(value: boolean | cdktn.IResolvable) {
     this._allowReassociation = value;
   }
   public resetAllowReassociation() {
@@ -250,63 +250,63 @@ export class EipAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocation_id: cdktf.stringToTerraform(this._allocationId),
-      allow_reassociation: cdktf.booleanToTerraform(this._allowReassociation),
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
-      private_ip_address: cdktf.stringToTerraform(this._privateIpAddress),
-      public_ip: cdktf.stringToTerraform(this._publicIp),
-      region: cdktf.stringToTerraform(this._region),
+      allocation_id: cdktn.stringToTerraform(this._allocationId),
+      allow_reassociation: cdktn.booleanToTerraform(this._allowReassociation),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      network_interface_id: cdktn.stringToTerraform(this._networkInterfaceId),
+      private_ip_address: cdktn.stringToTerraform(this._privateIpAddress),
+      public_ip: cdktn.stringToTerraform(this._publicIp),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allocation_id: {
-        value: cdktf.stringToHclTerraform(this._allocationId),
+        value: cdktn.stringToHclTerraform(this._allocationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allow_reassociation: {
-        value: cdktf.booleanToHclTerraform(this._allowReassociation),
+        value: cdktn.booleanToHclTerraform(this._allowReassociation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_interface_id: {
-        value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        value: cdktn.stringToHclTerraform(this._networkInterfaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_ip_address: {
-        value: cdktf.stringToHclTerraform(this._privateIpAddress),
+        value: cdktn.stringToHclTerraform(this._privateIpAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_ip: {
-        value: cdktf.stringToHclTerraform(this._publicIp),
+        value: cdktn.stringToHclTerraform(this._publicIp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

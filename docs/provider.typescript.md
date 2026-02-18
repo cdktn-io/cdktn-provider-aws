@@ -389,7 +389,7 @@ public resetUserAgent(): void
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a AwsProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a AwsProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -461,7 +461,7 @@ import { provider } from '@cdktn/provider-aws'
 provider.AwsProvider.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a AwsProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a AwsProvider resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.provider.AwsProvider.generateConfigForImport.parameter.scope"></a>
 
@@ -491,7 +491,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.provider.AwsProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the AwsProvider to import is found.
 
@@ -502,84 +502,84 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.metaAttributes">metaAttributes</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.accessKeyInput">accessKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.allowedAccountIdsInput">allowedAccountIdsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.assumeRoleInput">assumeRoleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentityInput">assumeRoleWithWebIdentityInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.assumeRoleInput">assumeRoleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentityInput">assumeRoleWithWebIdentityInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.customCaBundleInput">customCaBundleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.defaultTagsInput">defaultTagsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.defaultTagsInput">defaultTagsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointInput">ec2MetadataServiceEndpointInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointModeInput">ec2MetadataServiceEndpointModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.endpointsInput">endpointsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.endpointsInput">endpointsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.forbiddenAccountIdsInput">forbiddenAccountIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.httpProxyInput">httpProxyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.httpsProxyInput">httpsProxyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.ignoreTagsInput">ignoreTagsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.insecureInput">insecureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.ignoreTagsInput">ignoreTagsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.insecureInput">insecureInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.maxRetriesInput">maxRetriesInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.noProxyInput">noProxyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.profileInput">profileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.retryModeInput">retryModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.s3UsEast1RegionalEndpointInput">s3UsEast1RegionalEndpointInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.s3UsePathStyleInput">s3UsePathStyleInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.s3UsePathStyleInput">s3UsePathStyleInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.secretKeyInput">secretKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.sharedConfigFilesInput">sharedConfigFilesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.sharedCredentialsFilesInput">sharedCredentialsFilesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipCredentialsValidationInput">skipCredentialsValidationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipCredentialsValidationInput">skipCredentialsValidationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipMetadataApiCheckInput">skipMetadataApiCheckInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipRegionValidationInput">skipRegionValidationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipRequestingAccountIdInput">skipRequestingAccountIdInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipRegionValidationInput">skipRegionValidationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipRequestingAccountIdInput">skipRequestingAccountIdInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.stsRegionInput">stsRegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.tagPolicyComplianceInput">tagPolicyComplianceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.tokenBucketRateLimiterCapacityInput">tokenBucketRateLimiterCapacityInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.tokenInput">tokenInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.useDualstackEndpointInput">useDualstackEndpointInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.useFipsEndpointInput">useFipsEndpointInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.useDualstackEndpointInput">useDualstackEndpointInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.useFipsEndpointInput">useFipsEndpointInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.userAgentInput">userAgentInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.accessKey">accessKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.allowedAccountIds">allowedAccountIds</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.assumeRole">assumeRole</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentity">assumeRoleWithWebIdentity</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.assumeRole">assumeRole</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentity">assumeRoleWithWebIdentity</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.customCaBundle">customCaBundle</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.defaultTags">defaultTags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.defaultTags">defaultTags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpoint">ec2MetadataServiceEndpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointMode">ec2MetadataServiceEndpointMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.endpoints">endpoints</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.endpoints">endpoints</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.forbiddenAccountIds">forbiddenAccountIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.httpProxy">httpProxy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.httpsProxy">httpsProxy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.ignoreTags">ignoreTags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.insecure">insecure</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.ignoreTags">ignoreTags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.insecure">insecure</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.maxRetries">maxRetries</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.noProxy">noProxy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.profile">profile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.retryMode">retryMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.s3UsEast1RegionalEndpoint">s3UsEast1RegionalEndpoint</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.s3UsePathStyle">s3UsePathStyle</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.s3UsePathStyle">s3UsePathStyle</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.secretKey">secretKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.sharedConfigFiles">sharedConfigFiles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.sharedCredentialsFiles">sharedCredentialsFiles</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipMetadataApiCheck">skipMetadataApiCheck</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipRegionValidation">skipRegionValidation</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipRequestingAccountId">skipRequestingAccountId</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipRegionValidation">skipRegionValidation</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipRequestingAccountId">skipRequestingAccountId</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.stsRegion">stsRegion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.tagPolicyCompliance">tagPolicyCompliance</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.token">token</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.tokenBucketRateLimiterCapacity">tokenBucketRateLimiterCapacity</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.useDualstackEndpoint">useDualstackEndpoint</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.useFipsEndpoint">useFipsEndpoint</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.useDualstackEndpoint">useDualstackEndpoint</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.useFipsEndpoint">useFipsEndpoint</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.userAgent">userAgent</a></code> | <code>string[]</code> | *No description.* |
 
 ---
@@ -602,7 +602,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -652,7 +652,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -712,7 +712,7 @@ public readonly allowedAccountIdsInput: string[];
 public readonly assumeRoleInput: IResolvable | AwsProviderAssumeRole[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>[]
 
 ---
 
@@ -722,7 +722,7 @@ public readonly assumeRoleInput: IResolvable | AwsProviderAssumeRole[];
 public readonly assumeRoleWithWebIdentityInput: IResolvable | AwsProviderAssumeRoleWithWebIdentity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>[]
 
 ---
 
@@ -742,7 +742,7 @@ public readonly customCaBundleInput: string;
 public readonly defaultTagsInput: IResolvable | AwsProviderDefaultTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>[]
 
 ---
 
@@ -772,7 +772,7 @@ public readonly ec2MetadataServiceEndpointModeInput: string;
 public readonly endpointsInput: IResolvable | AwsProviderEndpoints[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>[]
 
 ---
 
@@ -812,7 +812,7 @@ public readonly httpsProxyInput: string;
 public readonly ignoreTagsInput: IResolvable | AwsProviderIgnoreTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>[]
 
 ---
 
@@ -822,7 +822,7 @@ public readonly ignoreTagsInput: IResolvable | AwsProviderIgnoreTags[];
 public readonly insecureInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -892,7 +892,7 @@ public readonly s3UsEast1RegionalEndpointInput: string;
 public readonly s3UsePathStyleInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -932,7 +932,7 @@ public readonly sharedCredentialsFilesInput: string[];
 public readonly skipCredentialsValidationInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -952,7 +952,7 @@ public readonly skipMetadataApiCheckInput: string;
 public readonly skipRegionValidationInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -962,7 +962,7 @@ public readonly skipRegionValidationInput: boolean | IResolvable;
 public readonly skipRequestingAccountIdInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly tokenInput: string;
 public readonly useDualstackEndpointInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1022,7 +1022,7 @@ public readonly useDualstackEndpointInput: boolean | IResolvable;
 public readonly useFipsEndpointInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1062,7 +1062,7 @@ public readonly allowedAccountIds: string[];
 public readonly assumeRole: IResolvable | AwsProviderAssumeRole[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>[]
 
 ---
 
@@ -1072,7 +1072,7 @@ public readonly assumeRole: IResolvable | AwsProviderAssumeRole[];
 public readonly assumeRoleWithWebIdentity: IResolvable | AwsProviderAssumeRoleWithWebIdentity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>[]
 
 ---
 
@@ -1092,7 +1092,7 @@ public readonly customCaBundle: string;
 public readonly defaultTags: IResolvable | AwsProviderDefaultTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>[]
 
 ---
 
@@ -1122,7 +1122,7 @@ public readonly ec2MetadataServiceEndpointMode: string;
 public readonly endpoints: IResolvable | AwsProviderEndpoints[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>[]
 
 ---
 
@@ -1162,7 +1162,7 @@ public readonly httpsProxy: string;
 public readonly ignoreTags: IResolvable | AwsProviderIgnoreTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>[]
 
 ---
 
@@ -1172,7 +1172,7 @@ public readonly ignoreTags: IResolvable | AwsProviderIgnoreTags[];
 public readonly insecure: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1242,7 +1242,7 @@ public readonly s3UsEast1RegionalEndpoint: string;
 public readonly s3UsePathStyle: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1282,7 +1282,7 @@ public readonly sharedCredentialsFiles: string[];
 public readonly skipCredentialsValidation: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1302,7 +1302,7 @@ public readonly skipMetadataApiCheck: string;
 public readonly skipRegionValidation: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1312,7 +1312,7 @@ public readonly skipRegionValidation: boolean | IResolvable;
 public readonly skipRequestingAccountId: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1362,7 +1362,7 @@ public readonly tokenBucketRateLimiterCapacity: number;
 public readonly useDualstackEndpoint: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1372,7 +1372,7 @@ public readonly useDualstackEndpoint: boolean | IResolvable;
 public readonly useFipsEndpoint: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1697,38 +1697,38 @@ const awsProviderConfig: provider.AwsProviderConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.accessKey">accessKey</a></code> | <code>string</code> | The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.allowedAccountIds">allowedAccountIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs#allowed_account_ids AwsProvider#allowed_account_ids}. |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.assumeRole">assumeRole</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>[]</code> | assume_role block. |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.assumeRoleWithWebIdentity">assumeRoleWithWebIdentity</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>[]</code> | assume_role_with_web_identity block. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.assumeRole">assumeRole</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>[]</code> | assume_role block. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.assumeRoleWithWebIdentity">assumeRoleWithWebIdentity</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>[]</code> | assume_role_with_web_identity block. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.customCaBundle">customCaBundle</a></code> | <code>string</code> | File containing custom root and intermediate certificates. |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.defaultTags">defaultTags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>[]</code> | default_tags block. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.defaultTags">defaultTags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>[]</code> | default_tags block. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpoint">ec2MetadataServiceEndpoint</a></code> | <code>string</code> | Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpointMode">ec2MetadataServiceEndpointMode</a></code> | <code>string</code> | Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable. |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.endpoints">endpoints</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>[]</code> | endpoints block. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.endpoints">endpoints</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>[]</code> | endpoints block. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.forbiddenAccountIds">forbiddenAccountIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.httpProxy">httpProxy</a></code> | <code>string</code> | URL of a proxy to use for HTTP requests when accessing the AWS API. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.httpsProxy">httpsProxy</a></code> | <code>string</code> | URL of a proxy to use for HTTPS requests when accessing the AWS API. |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.ignoreTags">ignoreTags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>[]</code> | ignore_tags block. |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.insecure">insecure</a></code> | <code>boolean \| cdktf.IResolvable</code> | Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.ignoreTags">ignoreTags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>[]</code> | ignore_tags block. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.insecure">insecure</a></code> | <code>boolean \| cdktn.IResolvable</code> | Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.maxRetries">maxRetries</a></code> | <code>number</code> | The maximum number of times an AWS API request is being executed. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.noProxy">noProxy</a></code> | <code>string</code> | Comma-separated list of hosts that should not use HTTP or HTTPS proxies. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.profile">profile</a></code> | <code>string</code> | The profile for API operations. If not set, the default profile created with `aws configure` will be used. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.region">region</a></code> | <code>string</code> | The region where AWS operations will take place. Examples are us-east-1, us-west-2, etc. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.retryMode">retryMode</a></code> | <code>string</code> | Specifies how retries are attempted. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.s3UsEast1RegionalEndpoint">s3UsEast1RegionalEndpoint</a></code> | <code>string</code> | Specifies whether S3 API calls in the `us-east-1` region use the legacy global endpoint or a regional endpoint. |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.s3UsePathStyle">s3UsePathStyle</a></code> | <code>boolean \| cdktf.IResolvable</code> | Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.s3UsePathStyle">s3UsePathStyle</a></code> | <code>boolean \| cdktn.IResolvable</code> | Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.secretKey">secretKey</a></code> | <code>string</code> | The secret key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.sharedConfigFiles">sharedConfigFiles</a></code> | <code>string[]</code> | List of paths to shared config files. If not set, defaults to [~/.aws/config]. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.sharedCredentialsFiles">sharedCredentialsFiles</a></code> | <code>string[]</code> | List of paths to shared credentials files. If not set, defaults to [~/.aws/credentials]. |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>boolean \| cdktf.IResolvable</code> | Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.skipMetadataApiCheck">skipMetadataApiCheck</a></code> | <code>string</code> | Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint. |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.skipRegionValidation">skipRegionValidation</a></code> | <code>boolean \| cdktf.IResolvable</code> | Skip static validation of region name. |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.skipRequestingAccountId">skipRequestingAccountId</a></code> | <code>boolean \| cdktf.IResolvable</code> | Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.skipRegionValidation">skipRegionValidation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Skip static validation of region name. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.skipRequestingAccountId">skipRequestingAccountId</a></code> | <code>boolean \| cdktn.IResolvable</code> | Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.stsRegion">stsRegion</a></code> | <code>string</code> | The region where AWS STS operations will take place. Examples are us-east-1 and us-west-2. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.tagPolicyCompliance">tagPolicyCompliance</a></code> | <code>string</code> | The severity with which to enforce organizational tagging policies on resources managed by this provider instance. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.token">token</a></code> | <code>string</code> | session token. A session token is only required if you are using temporary security credentials. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.tokenBucketRateLimiterCapacity">tokenBucketRateLimiterCapacity</a></code> | <code>number</code> | The capacity of the AWS SDK's token bucket rate limiter. |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.useDualstackEndpoint">useDualstackEndpoint</a></code> | <code>boolean \| cdktf.IResolvable</code> | Resolve an endpoint with DualStack capability. |
-| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.useFipsEndpoint">useFipsEndpoint</a></code> | <code>boolean \| cdktf.IResolvable</code> | Resolve an endpoint with FIPS capability. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.useDualstackEndpoint">useDualstackEndpoint</a></code> | <code>boolean \| cdktn.IResolvable</code> | Resolve an endpoint with DualStack capability. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.useFipsEndpoint">useFipsEndpoint</a></code> | <code>boolean \| cdktn.IResolvable</code> | Resolve an endpoint with FIPS capability. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.userAgent">userAgent</a></code> | <code>string[]</code> | Product details to append to the User-Agent string sent in all AWS API calls. |
 
 ---
@@ -1779,7 +1779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly assumeRole: IResolvable | AwsProviderAssumeRole[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>[]
 
 assume_role block.
 
@@ -1793,7 +1793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly assumeRoleWithWebIdentity: IResolvable | AwsProviderAssumeRoleWithWebIdentity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>[]
 
 assume_role_with_web_identity block.
 
@@ -1823,7 +1823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly defaultTags: IResolvable | AwsProviderDefaultTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>[]
 
 default_tags block.
 
@@ -1865,7 +1865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly endpoints: IResolvable | AwsProviderEndpoints[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>[]
 
 endpoints block.
 
@@ -1923,7 +1923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ignoreTags: IResolvable | AwsProviderIgnoreTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>[]
 
 ignore_tags block.
 
@@ -1937,7 +1937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly insecure: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`.
 
@@ -2044,7 +2044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly s3UsePathStyle: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service.
 
@@ -2100,7 +2100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly skipCredentialsValidation: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented.
 
@@ -2128,7 +2128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly skipRegionValidation: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Skip static validation of region name.
 
@@ -2144,7 +2144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly skipRequestingAccountId: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API.
 
@@ -2216,7 +2216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly useDualstackEndpoint: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Resolve an endpoint with DualStack capability.
 
@@ -2230,7 +2230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly useFipsEndpoint: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Resolve an endpoint with FIPS capability.
 

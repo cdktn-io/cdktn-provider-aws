@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BackupVaultLockConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface BackupVaultLockConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_vault_lock_configuration#backup_vault_name BackupVaultLockConfiguration#backup_vault_name}
   */
@@ -46,7 +46,7 @@ export interface BackupVaultLockConfigurationConfig extends cdktf.TerraformMetaA
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_vault_lock_configuration aws_backup_vault_lock_configuration}
 */
-export class BackupVaultLockConfiguration extends cdktf.TerraformResource {
+export class BackupVaultLockConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class BackupVaultLockConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BackupVaultLockConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BackupVaultLockConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupVaultLockConfiguration to import
   * @param importFromId The id of the existing BackupVaultLockConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_vault_lock_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupVaultLockConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_vault_lock_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_vault_lock_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -210,49 +210,49 @@ export class BackupVaultLockConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backup_vault_name: cdktf.stringToTerraform(this._backupVaultName),
-      changeable_for_days: cdktf.numberToTerraform(this._changeableForDays),
-      id: cdktf.stringToTerraform(this._id),
-      max_retention_days: cdktf.numberToTerraform(this._maxRetentionDays),
-      min_retention_days: cdktf.numberToTerraform(this._minRetentionDays),
-      region: cdktf.stringToTerraform(this._region),
+      backup_vault_name: cdktn.stringToTerraform(this._backupVaultName),
+      changeable_for_days: cdktn.numberToTerraform(this._changeableForDays),
+      id: cdktn.stringToTerraform(this._id),
+      max_retention_days: cdktn.numberToTerraform(this._maxRetentionDays),
+      min_retention_days: cdktn.numberToTerraform(this._minRetentionDays),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backup_vault_name: {
-        value: cdktf.stringToHclTerraform(this._backupVaultName),
+        value: cdktn.stringToHclTerraform(this._backupVaultName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       changeable_for_days: {
-        value: cdktf.numberToHclTerraform(this._changeableForDays),
+        value: cdktn.numberToHclTerraform(this._changeableForDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_retention_days: {
-        value: cdktf.numberToHclTerraform(this._maxRetentionDays),
+        value: cdktn.numberToHclTerraform(this._maxRetentionDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_retention_days: {
-        value: cdktf.numberToHclTerraform(this._minRetentionDays),
+        value: cdktn.numberToHclTerraform(this._minRetentionDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsoadminApplicationAssignmentConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface SsoadminApplicationAssignmentConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_application_assignment_configuration#application_arn SsoadminApplicationAssignmentConfiguration#application_arn}
   */
@@ -19,7 +19,7 @@ export interface SsoadminApplicationAssignmentConfigurationConfig extends cdktf.
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_application_assignment_configuration#assignment_required SsoadminApplicationAssignmentConfiguration#assignment_required}
   */
-  readonly assignmentRequired: boolean | cdktf.IResolvable;
+  readonly assignmentRequired: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -31,7 +31,7 @@ export interface SsoadminApplicationAssignmentConfigurationConfig extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration}
 */
-export class SsoadminApplicationAssignmentConfiguration extends cdktf.TerraformResource {
+export class SsoadminApplicationAssignmentConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -42,14 +42,14 @@ export class SsoadminApplicationAssignmentConfiguration extends cdktf.TerraformR
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsoadminApplicationAssignmentConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsoadminApplicationAssignmentConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsoadminApplicationAssignmentConfiguration to import
   * @param importFromId The id of the existing SsoadminApplicationAssignmentConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_application_assignment_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsoadminApplicationAssignmentConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_application_assignment_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_application_assignment_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -102,11 +102,11 @@ export class SsoadminApplicationAssignmentConfiguration extends cdktf.TerraformR
   }
 
   // assignment_required - computed: false, optional: false, required: true
-  private _assignmentRequired?: boolean | cdktf.IResolvable; 
+  private _assignmentRequired?: boolean | cdktn.IResolvable; 
   public get assignmentRequired() {
     return this.getBooleanAttribute('assignment_required');
   }
-  public set assignmentRequired(value: boolean | cdktf.IResolvable) {
+  public set assignmentRequired(value: boolean | cdktn.IResolvable) {
     this._assignmentRequired = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -141,28 +141,28 @@ export class SsoadminApplicationAssignmentConfiguration extends cdktf.TerraformR
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_arn: cdktf.stringToTerraform(this._applicationArn),
-      assignment_required: cdktf.booleanToTerraform(this._assignmentRequired),
-      region: cdktf.stringToTerraform(this._region),
+      application_arn: cdktn.stringToTerraform(this._applicationArn),
+      assignment_required: cdktn.booleanToTerraform(this._assignmentRequired),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_arn: {
-        value: cdktf.stringToHclTerraform(this._applicationArn),
+        value: cdktn.stringToHclTerraform(this._applicationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       assignment_required: {
-        value: cdktf.booleanToHclTerraform(this._assignmentRequired),
+        value: cdktn.booleanToHclTerraform(this._assignmentRequired),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3BucketVersioningAConfig extends cdktf.TerraformMetaArguments {
+export interface S3BucketVersioningAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_versioning#bucket S3BucketVersioningA#bucket}
   */
@@ -56,31 +56,31 @@ export interface S3BucketVersioningVersioningConfiguration {
 }
 
 export function s3BucketVersioningVersioningConfigurationToTerraform(struct?: S3BucketVersioningVersioningConfigurationOutputReference | S3BucketVersioningVersioningConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mfa_delete: cdktf.stringToTerraform(struct!.mfaDelete),
-    status: cdktf.stringToTerraform(struct!.status),
+    mfa_delete: cdktn.stringToTerraform(struct!.mfaDelete),
+    status: cdktn.stringToTerraform(struct!.status),
   }
 }
 
 
 export function s3BucketVersioningVersioningConfigurationToHclTerraform(struct?: S3BucketVersioningVersioningConfigurationOutputReference | S3BucketVersioningVersioningConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mfa_delete: {
-      value: cdktf.stringToHclTerraform(struct!.mfaDelete),
+      value: cdktn.stringToHclTerraform(struct!.mfaDelete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,14 +91,14 @@ export function s3BucketVersioningVersioningConfigurationToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketVersioningVersioningConfigurationOutputReference extends cdktf.ComplexObject {
+export class S3BucketVersioningVersioningConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -162,7 +162,7 @@ export class S3BucketVersioningVersioningConfigurationOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_versioning aws_s3_bucket_versioning}
 */
-export class S3BucketVersioningA extends cdktf.TerraformResource {
+export class S3BucketVersioningA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -173,14 +173,14 @@ export class S3BucketVersioningA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3BucketVersioningA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3BucketVersioningA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketVersioningA to import
   * @param importFromId The id of the existing S3BucketVersioningA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_versioning#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketVersioningA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_versioning", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_versioning", importId: importFromId, provider });
       }
 
   // ===========
@@ -318,11 +318,11 @@ export class S3BucketVersioningA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
-      id: cdktf.stringToTerraform(this._id),
-      mfa: cdktf.stringToTerraform(this._mfa),
-      region: cdktf.stringToTerraform(this._region),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      expected_bucket_owner: cdktn.stringToTerraform(this._expectedBucketOwner),
+      id: cdktn.stringToTerraform(this._id),
+      mfa: cdktn.stringToTerraform(this._mfa),
+      region: cdktn.stringToTerraform(this._region),
       versioning_configuration: s3BucketVersioningVersioningConfigurationToTerraform(this._versioningConfiguration.internalValue),
     };
   }
@@ -330,31 +330,31 @@ export class S3BucketVersioningA extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expected_bucket_owner: {
-        value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
+        value: cdktn.stringToHclTerraform(this._expectedBucketOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mfa: {
-        value: cdktf.stringToHclTerraform(this._mfa),
+        value: cdktn.stringToHclTerraform(this._mfa),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

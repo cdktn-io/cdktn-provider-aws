@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ElasticsearchDomainSamlOptionsConfig extends cdktf.TerraformMetaArguments {
+export interface ElasticsearchDomainSamlOptionsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticsearch_domain_saml_options#domain_name ElasticsearchDomainSamlOptions#domain_name}
   */
@@ -54,31 +54,31 @@ export interface ElasticsearchDomainSamlOptionsSamlOptionsIdp {
 }
 
 export function elasticsearchDomainSamlOptionsSamlOptionsIdpToTerraform(struct?: ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference | ElasticsearchDomainSamlOptionsSamlOptionsIdp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entity_id: cdktf.stringToTerraform(struct!.entityId),
-    metadata_content: cdktf.stringToTerraform(struct!.metadataContent),
+    entity_id: cdktn.stringToTerraform(struct!.entityId),
+    metadata_content: cdktn.stringToTerraform(struct!.metadataContent),
   }
 }
 
 
 export function elasticsearchDomainSamlOptionsSamlOptionsIdpToHclTerraform(struct?: ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference | ElasticsearchDomainSamlOptionsSamlOptionsIdp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entity_id: {
-      value: cdktf.stringToHclTerraform(struct!.entityId),
+      value: cdktn.stringToHclTerraform(struct!.entityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metadata_content: {
-      value: cdktf.stringToHclTerraform(struct!.metadataContent),
+      value: cdktn.stringToHclTerraform(struct!.metadataContent),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -89,14 +89,14 @@ export function elasticsearchDomainSamlOptionsSamlOptionsIdpToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference extends cdktf.ComplexObject {
+export class ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -157,7 +157,7 @@ export interface ElasticsearchDomainSamlOptionsSamlOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticsearch_domain_saml_options#enabled ElasticsearchDomainSamlOptions#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticsearch_domain_saml_options#master_backend_role ElasticsearchDomainSamlOptions#master_backend_role}
   */
@@ -187,60 +187,60 @@ export interface ElasticsearchDomainSamlOptionsSamlOptions {
 }
 
 export function elasticsearchDomainSamlOptionsSamlOptionsToTerraform(struct?: ElasticsearchDomainSamlOptionsSamlOptionsOutputReference | ElasticsearchDomainSamlOptionsSamlOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    master_backend_role: cdktf.stringToTerraform(struct!.masterBackendRole),
-    master_user_name: cdktf.stringToTerraform(struct!.masterUserName),
-    roles_key: cdktf.stringToTerraform(struct!.rolesKey),
-    session_timeout_minutes: cdktf.numberToTerraform(struct!.sessionTimeoutMinutes),
-    subject_key: cdktf.stringToTerraform(struct!.subjectKey),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    master_backend_role: cdktn.stringToTerraform(struct!.masterBackendRole),
+    master_user_name: cdktn.stringToTerraform(struct!.masterUserName),
+    roles_key: cdktn.stringToTerraform(struct!.rolesKey),
+    session_timeout_minutes: cdktn.numberToTerraform(struct!.sessionTimeoutMinutes),
+    subject_key: cdktn.stringToTerraform(struct!.subjectKey),
     idp: elasticsearchDomainSamlOptionsSamlOptionsIdpToTerraform(struct!.idp),
   }
 }
 
 
 export function elasticsearchDomainSamlOptionsSamlOptionsToHclTerraform(struct?: ElasticsearchDomainSamlOptionsSamlOptionsOutputReference | ElasticsearchDomainSamlOptionsSamlOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     master_backend_role: {
-      value: cdktf.stringToHclTerraform(struct!.masterBackendRole),
+      value: cdktn.stringToHclTerraform(struct!.masterBackendRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     master_user_name: {
-      value: cdktf.stringToHclTerraform(struct!.masterUserName),
+      value: cdktn.stringToHclTerraform(struct!.masterUserName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     roles_key: {
-      value: cdktf.stringToHclTerraform(struct!.rolesKey),
+      value: cdktn.stringToHclTerraform(struct!.rolesKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     session_timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.sessionTimeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.sessionTimeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     subject_key: {
-      value: cdktf.stringToHclTerraform(struct!.subjectKey),
+      value: cdktn.stringToHclTerraform(struct!.subjectKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -257,14 +257,14 @@ export function elasticsearchDomainSamlOptionsSamlOptionsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticsearchDomainSamlOptionsSamlOptionsOutputReference extends cdktf.ComplexObject {
+export class ElasticsearchDomainSamlOptionsSamlOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -326,11 +326,11 @@ export class ElasticsearchDomainSamlOptionsSamlOptionsOutputReference extends cd
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -448,32 +448,32 @@ export interface ElasticsearchDomainSamlOptionsTimeouts {
   readonly update?: string;
 }
 
-export function elasticsearchDomainSamlOptionsTimeoutsToTerraform(struct?: ElasticsearchDomainSamlOptionsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticsearchDomainSamlOptionsTimeoutsToTerraform(struct?: ElasticsearchDomainSamlOptionsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function elasticsearchDomainSamlOptionsTimeoutsToHclTerraform(struct?: ElasticsearchDomainSamlOptionsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticsearchDomainSamlOptionsTimeoutsToHclTerraform(struct?: ElasticsearchDomainSamlOptionsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -484,19 +484,19 @@ export function elasticsearchDomainSamlOptionsTimeoutsToHclTerraform(struct?: El
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticsearchDomainSamlOptionsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ElasticsearchDomainSamlOptionsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ElasticsearchDomainSamlOptionsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ElasticsearchDomainSamlOptionsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -513,14 +513,14 @@ export class ElasticsearchDomainSamlOptionsTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElasticsearchDomainSamlOptionsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElasticsearchDomainSamlOptionsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -568,7 +568,7 @@ export class ElasticsearchDomainSamlOptionsTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options}
 */
-export class ElasticsearchDomainSamlOptions extends cdktf.TerraformResource {
+export class ElasticsearchDomainSamlOptions extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -579,14 +579,14 @@ export class ElasticsearchDomainSamlOptions extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ElasticsearchDomainSamlOptions resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ElasticsearchDomainSamlOptions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElasticsearchDomainSamlOptions to import
   * @param importFromId The id of the existing ElasticsearchDomainSamlOptions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticsearch_domain_saml_options#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElasticsearchDomainSamlOptions to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticsearch_domain_saml_options", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticsearch_domain_saml_options", importId: importFromId, provider });
       }
 
   // ===========
@@ -710,9 +710,9 @@ export class ElasticsearchDomainSamlOptions extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
       saml_options: elasticsearchDomainSamlOptionsSamlOptionsToTerraform(this._samlOptions.internalValue),
       timeouts: elasticsearchDomainSamlOptionsTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -721,19 +721,19 @@ export class ElasticsearchDomainSamlOptions extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

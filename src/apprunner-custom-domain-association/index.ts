@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApprunnerCustomDomainAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface ApprunnerCustomDomainAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_custom_domain_association#domain_name ApprunnerCustomDomainAssociation#domain_name}
   */
@@ -19,7 +19,7 @@ export interface ApprunnerCustomDomainAssociationConfig extends cdktf.TerraformM
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_custom_domain_association#enable_www_subdomain ApprunnerCustomDomainAssociation#enable_www_subdomain}
   */
-  readonly enableWwwSubdomain?: boolean | cdktf.IResolvable;
+  readonly enableWwwSubdomain?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_custom_domain_association#id ApprunnerCustomDomainAssociation#id}
   *
@@ -42,8 +42,8 @@ export interface ApprunnerCustomDomainAssociationCertificateValidationRecords {
 }
 
 export function apprunnerCustomDomainAssociationCertificateValidationRecordsToTerraform(struct?: ApprunnerCustomDomainAssociationCertificateValidationRecords): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function apprunnerCustomDomainAssociationCertificateValidationRecordsToTe
 
 
 export function apprunnerCustomDomainAssociationCertificateValidationRecordsToHclTerraform(struct?: ApprunnerCustomDomainAssociationCertificateValidationRecords): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function apprunnerCustomDomainAssociationCertificateValidationRecordsToHc
   return attrs;
 }
 
-export class ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference extends cdktf.ComplexObject {
+export class ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -110,14 +110,14 @@ export class ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputR
   }
 }
 
-export class ApprunnerCustomDomainAssociationCertificateValidationRecordsList extends cdktf.ComplexList {
+export class ApprunnerCustomDomainAssociationCertificateValidationRecordsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -132,7 +132,7 @@ export class ApprunnerCustomDomainAssociationCertificateValidationRecordsList ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_custom_domain_association aws_apprunner_custom_domain_association}
 */
-export class ApprunnerCustomDomainAssociation extends cdktf.TerraformResource {
+export class ApprunnerCustomDomainAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -143,14 +143,14 @@ export class ApprunnerCustomDomainAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApprunnerCustomDomainAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApprunnerCustomDomainAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApprunnerCustomDomainAssociation to import
   * @param importFromId The id of the existing ApprunnerCustomDomainAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_custom_domain_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApprunnerCustomDomainAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_apprunner_custom_domain_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_apprunner_custom_domain_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -216,11 +216,11 @@ export class ApprunnerCustomDomainAssociation extends cdktf.TerraformResource {
   }
 
   // enable_www_subdomain - computed: false, optional: true, required: false
-  private _enableWwwSubdomain?: boolean | cdktf.IResolvable; 
+  private _enableWwwSubdomain?: boolean | cdktn.IResolvable; 
   public get enableWwwSubdomain() {
     return this.getBooleanAttribute('enable_www_subdomain');
   }
-  public set enableWwwSubdomain(value: boolean | cdktf.IResolvable) {
+  public set enableWwwSubdomain(value: boolean | cdktn.IResolvable) {
     this._enableWwwSubdomain = value;
   }
   public resetEnableWwwSubdomain() {
@@ -287,42 +287,42 @@ export class ApprunnerCustomDomainAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      enable_www_subdomain: cdktf.booleanToTerraform(this._enableWwwSubdomain),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      service_arn: cdktf.stringToTerraform(this._serviceArn),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      enable_www_subdomain: cdktn.booleanToTerraform(this._enableWwwSubdomain),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      service_arn: cdktn.stringToTerraform(this._serviceArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_www_subdomain: {
-        value: cdktf.booleanToHclTerraform(this._enableWwwSubdomain),
+        value: cdktn.booleanToHclTerraform(this._enableWwwSubdomain),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_arn: {
-        value: cdktf.stringToHclTerraform(this._serviceArn),
+        value: cdktn.stringToHclTerraform(this._serviceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

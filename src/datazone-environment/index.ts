@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatazoneEnvironmentConfig extends cdktf.TerraformMetaArguments {
+export interface DatazoneEnvironmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_environment#account_identifier DatazoneEnvironment#account_identifier}
   */
@@ -65,14 +65,14 @@ export interface DatazoneEnvironmentConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_environment#user_parameters DatazoneEnvironment#user_parameters}
   */
-  readonly userParameters?: DatazoneEnvironmentUserParameters[] | cdktf.IResolvable;
+  readonly userParameters?: DatazoneEnvironmentUserParameters[] | cdktn.IResolvable;
 }
 export interface DatazoneEnvironmentLastDeploymentFailureReasons {
 }
 
 export function datazoneEnvironmentLastDeploymentFailureReasonsToTerraform(struct?: DatazoneEnvironmentLastDeploymentFailureReasons): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -81,8 +81,8 @@ export function datazoneEnvironmentLastDeploymentFailureReasonsToTerraform(struc
 
 
 export function datazoneEnvironmentLastDeploymentFailureReasonsToHclTerraform(struct?: DatazoneEnvironmentLastDeploymentFailureReasons): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -90,7 +90,7 @@ export function datazoneEnvironmentLastDeploymentFailureReasonsToHclTerraform(st
   return attrs;
 }
 
-export class DatazoneEnvironmentLastDeploymentFailureReasonsOutputReference extends cdktf.ComplexObject {
+export class DatazoneEnvironmentLastDeploymentFailureReasonsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -99,7 +99,7 @@ export class DatazoneEnvironmentLastDeploymentFailureReasonsOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -129,14 +129,14 @@ export class DatazoneEnvironmentLastDeploymentFailureReasonsOutputReference exte
   }
 }
 
-export class DatazoneEnvironmentLastDeploymentFailureReasonsList extends cdktf.ComplexList {
+export class DatazoneEnvironmentLastDeploymentFailureReasonsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -151,8 +151,8 @@ export interface DatazoneEnvironmentLastDeployment {
 }
 
 export function datazoneEnvironmentLastDeploymentToTerraform(struct?: DatazoneEnvironmentLastDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -161,8 +161,8 @@ export function datazoneEnvironmentLastDeploymentToTerraform(struct?: DatazoneEn
 
 
 export function datazoneEnvironmentLastDeploymentToHclTerraform(struct?: DatazoneEnvironmentLastDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -170,7 +170,7 @@ export function datazoneEnvironmentLastDeploymentToHclTerraform(struct?: Datazon
   return attrs;
 }
 
-export class DatazoneEnvironmentLastDeploymentOutputReference extends cdktf.ComplexObject {
+export class DatazoneEnvironmentLastDeploymentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -179,7 +179,7 @@ export class DatazoneEnvironmentLastDeploymentOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -230,14 +230,14 @@ export class DatazoneEnvironmentLastDeploymentOutputReference extends cdktf.Comp
   }
 }
 
-export class DatazoneEnvironmentLastDeploymentList extends cdktf.ComplexList {
+export class DatazoneEnvironmentLastDeploymentList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -252,8 +252,8 @@ export interface DatazoneEnvironmentProvisionedResources {
 }
 
 export function datazoneEnvironmentProvisionedResourcesToTerraform(struct?: DatazoneEnvironmentProvisionedResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -262,8 +262,8 @@ export function datazoneEnvironmentProvisionedResourcesToTerraform(struct?: Data
 
 
 export function datazoneEnvironmentProvisionedResourcesToHclTerraform(struct?: DatazoneEnvironmentProvisionedResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -271,7 +271,7 @@ export function datazoneEnvironmentProvisionedResourcesToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DatazoneEnvironmentProvisionedResourcesOutputReference extends cdktf.ComplexObject {
+export class DatazoneEnvironmentProvisionedResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -280,7 +280,7 @@ export class DatazoneEnvironmentProvisionedResourcesOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -320,14 +320,14 @@ export class DatazoneEnvironmentProvisionedResourcesOutputReference extends cdkt
   }
 }
 
-export class DatazoneEnvironmentProvisionedResourcesList extends cdktf.ComplexList {
+export class DatazoneEnvironmentProvisionedResourcesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -359,39 +359,39 @@ export interface DatazoneEnvironmentTimeouts {
   readonly update?: string;
 }
 
-export function datazoneEnvironmentTimeoutsToTerraform(struct?: DatazoneEnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneEnvironmentTimeoutsToTerraform(struct?: DatazoneEnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function datazoneEnvironmentTimeoutsToHclTerraform(struct?: DatazoneEnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneEnvironmentTimeoutsToHclTerraform(struct?: DatazoneEnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -402,19 +402,19 @@ export function datazoneEnvironmentTimeoutsToHclTerraform(struct?: DatazoneEnvir
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatazoneEnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DatazoneEnvironmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatazoneEnvironmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DatazoneEnvironmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -435,7 +435,7 @@ export class DatazoneEnvironmentTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatazoneEnvironmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatazoneEnvironmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -443,7 +443,7 @@ export class DatazoneEnvironmentTimeoutsOutputReference extends cdktf.ComplexObj
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -515,32 +515,32 @@ export interface DatazoneEnvironmentUserParameters {
   readonly value?: string;
 }
 
-export function datazoneEnvironmentUserParametersToTerraform(struct?: DatazoneEnvironmentUserParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneEnvironmentUserParametersToTerraform(struct?: DatazoneEnvironmentUserParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function datazoneEnvironmentUserParametersToHclTerraform(struct?: DatazoneEnvironmentUserParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneEnvironmentUserParametersToHclTerraform(struct?: DatazoneEnvironmentUserParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -551,9 +551,9 @@ export function datazoneEnvironmentUserParametersToHclTerraform(struct?: Datazon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatazoneEnvironmentUserParametersOutputReference extends cdktf.ComplexObject {
+export class DatazoneEnvironmentUserParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -561,11 +561,11 @@ export class DatazoneEnvironmentUserParametersOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatazoneEnvironmentUserParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): DatazoneEnvironmentUserParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -582,14 +582,14 @@ export class DatazoneEnvironmentUserParametersOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatazoneEnvironmentUserParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatazoneEnvironmentUserParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -634,15 +634,15 @@ export class DatazoneEnvironmentUserParametersOutputReference extends cdktf.Comp
   }
 }
 
-export class DatazoneEnvironmentUserParametersList extends cdktf.ComplexList {
-  public internalValue? : DatazoneEnvironmentUserParameters[] | cdktf.IResolvable
+export class DatazoneEnvironmentUserParametersList extends cdktn.ComplexList {
+  public internalValue? : DatazoneEnvironmentUserParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -657,7 +657,7 @@ export class DatazoneEnvironmentUserParametersList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_environment aws_datazone_environment}
 */
-export class DatazoneEnvironment extends cdktf.TerraformResource {
+export class DatazoneEnvironment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -668,14 +668,14 @@ export class DatazoneEnvironment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatazoneEnvironment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatazoneEnvironment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatazoneEnvironment to import
   * @param importFromId The id of the existing DatazoneEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatazoneEnvironment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_environment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_environment", importId: importFromId, provider });
       }
 
   // ===========
@@ -924,7 +924,7 @@ export class DatazoneEnvironment extends cdktf.TerraformResource {
   public get userParameters() {
     return this._userParameters;
   }
-  public putUserParameters(value: DatazoneEnvironmentUserParameters[] | cdktf.IResolvable) {
+  public putUserParameters(value: DatazoneEnvironmentUserParameters[] | cdktn.IResolvable) {
     this._userParameters.internalValue = value;
   }
   public resetUserParameters() {
@@ -941,79 +941,79 @@ export class DatazoneEnvironment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_identifier: cdktf.stringToTerraform(this._accountIdentifier),
-      account_region: cdktf.stringToTerraform(this._accountRegion),
-      blueprint_identifier: cdktf.stringToTerraform(this._blueprintIdentifier),
-      description: cdktf.stringToTerraform(this._description),
-      domain_identifier: cdktf.stringToTerraform(this._domainIdentifier),
-      glossary_terms: cdktf.listMapper(cdktf.stringToTerraform, false)(this._glossaryTerms),
-      name: cdktf.stringToTerraform(this._name),
-      profile_identifier: cdktf.stringToTerraform(this._profileIdentifier),
-      project_identifier: cdktf.stringToTerraform(this._projectIdentifier),
-      region: cdktf.stringToTerraform(this._region),
+      account_identifier: cdktn.stringToTerraform(this._accountIdentifier),
+      account_region: cdktn.stringToTerraform(this._accountRegion),
+      blueprint_identifier: cdktn.stringToTerraform(this._blueprintIdentifier),
+      description: cdktn.stringToTerraform(this._description),
+      domain_identifier: cdktn.stringToTerraform(this._domainIdentifier),
+      glossary_terms: cdktn.listMapper(cdktn.stringToTerraform, false)(this._glossaryTerms),
+      name: cdktn.stringToTerraform(this._name),
+      profile_identifier: cdktn.stringToTerraform(this._profileIdentifier),
+      project_identifier: cdktn.stringToTerraform(this._projectIdentifier),
+      region: cdktn.stringToTerraform(this._region),
       timeouts: datazoneEnvironmentTimeoutsToTerraform(this._timeouts.internalValue),
-      user_parameters: cdktf.listMapper(datazoneEnvironmentUserParametersToTerraform, true)(this._userParameters.internalValue),
+      user_parameters: cdktn.listMapper(datazoneEnvironmentUserParametersToTerraform, true)(this._userParameters.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_identifier: {
-        value: cdktf.stringToHclTerraform(this._accountIdentifier),
+        value: cdktn.stringToHclTerraform(this._accountIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       account_region: {
-        value: cdktf.stringToHclTerraform(this._accountRegion),
+        value: cdktn.stringToHclTerraform(this._accountRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       blueprint_identifier: {
-        value: cdktf.stringToHclTerraform(this._blueprintIdentifier),
+        value: cdktn.stringToHclTerraform(this._blueprintIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_identifier: {
-        value: cdktf.stringToHclTerraform(this._domainIdentifier),
+        value: cdktn.stringToHclTerraform(this._domainIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       glossary_terms: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._glossaryTerms),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._glossaryTerms),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       profile_identifier: {
-        value: cdktf.stringToHclTerraform(this._profileIdentifier),
+        value: cdktn.stringToHclTerraform(this._profileIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_identifier: {
-        value: cdktf.stringToHclTerraform(this._projectIdentifier),
+        value: cdktn.stringToHclTerraform(this._projectIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1025,7 +1025,7 @@ export class DatazoneEnvironment extends cdktf.TerraformResource {
         storageClassType: "DatazoneEnvironmentTimeouts",
       },
       user_parameters: {
-        value: cdktf.listMapperHcl(datazoneEnvironmentUserParametersToHclTerraform, true)(this._userParameters.internalValue),
+        value: cdktn.listMapperHcl(datazoneEnvironmentUserParametersToHclTerraform, true)(this._userParameters.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatazoneEnvironmentUserParametersList",

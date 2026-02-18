@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AmiFromInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface AmiFromInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ami_from_instance#deprecation_time AmiFromInstance#deprecation_time}
   */
@@ -40,7 +40,7 @@ export interface AmiFromInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ami_from_instance#snapshot_without_reboot AmiFromInstance#snapshot_without_reboot}
   */
-  readonly snapshotWithoutReboot?: boolean | cdktf.IResolvable;
+  readonly snapshotWithoutReboot?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ami_from_instance#source_instance_id AmiFromInstance#source_instance_id}
   */
@@ -58,13 +58,13 @@ export interface AmiFromInstanceConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ami_from_instance#ebs_block_device AmiFromInstance#ebs_block_device}
   */
-  readonly ebsBlockDevice?: AmiFromInstanceEbsBlockDevice[] | cdktf.IResolvable;
+  readonly ebsBlockDevice?: AmiFromInstanceEbsBlockDevice[] | cdktn.IResolvable;
   /**
   * ephemeral_block_device block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ami_from_instance#ephemeral_block_device AmiFromInstance#ephemeral_block_device}
   */
-  readonly ephemeralBlockDevice?: AmiFromInstanceEphemeralBlockDevice[] | cdktf.IResolvable;
+  readonly ephemeralBlockDevice?: AmiFromInstanceEphemeralBlockDevice[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -75,9 +75,9 @@ export interface AmiFromInstanceConfig extends cdktf.TerraformMetaArguments {
 export interface AmiFromInstanceEbsBlockDevice {
 }
 
-export function amiFromInstanceEbsBlockDeviceToTerraform(struct?: AmiFromInstanceEbsBlockDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function amiFromInstanceEbsBlockDeviceToTerraform(struct?: AmiFromInstanceEbsBlockDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -85,9 +85,9 @@ export function amiFromInstanceEbsBlockDeviceToTerraform(struct?: AmiFromInstanc
 }
 
 
-export function amiFromInstanceEbsBlockDeviceToHclTerraform(struct?: AmiFromInstanceEbsBlockDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function amiFromInstanceEbsBlockDeviceToHclTerraform(struct?: AmiFromInstanceEbsBlockDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -95,9 +95,9 @@ export function amiFromInstanceEbsBlockDeviceToHclTerraform(struct?: AmiFromInst
   return attrs;
 }
 
-export class AmiFromInstanceEbsBlockDeviceOutputReference extends cdktf.ComplexObject {
+export class AmiFromInstanceEbsBlockDeviceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -105,11 +105,11 @@ export class AmiFromInstanceEbsBlockDeviceOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AmiFromInstanceEbsBlockDevice | cdktf.IResolvable | undefined {
+  public get internalValue(): AmiFromInstanceEbsBlockDevice | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -118,12 +118,12 @@ export class AmiFromInstanceEbsBlockDeviceOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AmiFromInstanceEbsBlockDevice | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AmiFromInstanceEbsBlockDevice | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -179,15 +179,15 @@ export class AmiFromInstanceEbsBlockDeviceOutputReference extends cdktf.ComplexO
   }
 }
 
-export class AmiFromInstanceEbsBlockDeviceList extends cdktf.ComplexList {
-  public internalValue? : AmiFromInstanceEbsBlockDevice[] | cdktf.IResolvable
+export class AmiFromInstanceEbsBlockDeviceList extends cdktn.ComplexList {
+  public internalValue? : AmiFromInstanceEbsBlockDevice[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -201,9 +201,9 @@ export class AmiFromInstanceEbsBlockDeviceList extends cdktf.ComplexList {
 export interface AmiFromInstanceEphemeralBlockDevice {
 }
 
-export function amiFromInstanceEphemeralBlockDeviceToTerraform(struct?: AmiFromInstanceEphemeralBlockDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function amiFromInstanceEphemeralBlockDeviceToTerraform(struct?: AmiFromInstanceEphemeralBlockDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -211,9 +211,9 @@ export function amiFromInstanceEphemeralBlockDeviceToTerraform(struct?: AmiFromI
 }
 
 
-export function amiFromInstanceEphemeralBlockDeviceToHclTerraform(struct?: AmiFromInstanceEphemeralBlockDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function amiFromInstanceEphemeralBlockDeviceToHclTerraform(struct?: AmiFromInstanceEphemeralBlockDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -221,9 +221,9 @@ export function amiFromInstanceEphemeralBlockDeviceToHclTerraform(struct?: AmiFr
   return attrs;
 }
 
-export class AmiFromInstanceEphemeralBlockDeviceOutputReference extends cdktf.ComplexObject {
+export class AmiFromInstanceEphemeralBlockDeviceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -231,11 +231,11 @@ export class AmiFromInstanceEphemeralBlockDeviceOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AmiFromInstanceEphemeralBlockDevice | cdktf.IResolvable | undefined {
+  public get internalValue(): AmiFromInstanceEphemeralBlockDevice | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -244,12 +244,12 @@ export class AmiFromInstanceEphemeralBlockDeviceOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AmiFromInstanceEphemeralBlockDevice | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AmiFromInstanceEphemeralBlockDevice | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -270,15 +270,15 @@ export class AmiFromInstanceEphemeralBlockDeviceOutputReference extends cdktf.Co
   }
 }
 
-export class AmiFromInstanceEphemeralBlockDeviceList extends cdktf.ComplexList {
-  public internalValue? : AmiFromInstanceEphemeralBlockDevice[] | cdktf.IResolvable
+export class AmiFromInstanceEphemeralBlockDeviceList extends cdktn.ComplexList {
+  public internalValue? : AmiFromInstanceEphemeralBlockDevice[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -304,39 +304,39 @@ export interface AmiFromInstanceTimeouts {
   readonly update?: string;
 }
 
-export function amiFromInstanceTimeoutsToTerraform(struct?: AmiFromInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function amiFromInstanceTimeoutsToTerraform(struct?: AmiFromInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function amiFromInstanceTimeoutsToHclTerraform(struct?: AmiFromInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function amiFromInstanceTimeoutsToHclTerraform(struct?: AmiFromInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -347,19 +347,19 @@ export function amiFromInstanceTimeoutsToHclTerraform(struct?: AmiFromInstanceTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AmiFromInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AmiFromInstanceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AmiFromInstanceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AmiFromInstanceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -380,7 +380,7 @@ export class AmiFromInstanceTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AmiFromInstanceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AmiFromInstanceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -388,7 +388,7 @@ export class AmiFromInstanceTimeoutsOutputReference extends cdktf.ComplexObject 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -453,7 +453,7 @@ export class AmiFromInstanceTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ami_from_instance aws_ami_from_instance}
 */
-export class AmiFromInstance extends cdktf.TerraformResource {
+export class AmiFromInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -464,14 +464,14 @@ export class AmiFromInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AmiFromInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AmiFromInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AmiFromInstance to import
   * @param importFromId The id of the existing AmiFromInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ami_from_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AmiFromInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ami_from_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ami_from_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -692,11 +692,11 @@ export class AmiFromInstance extends cdktf.TerraformResource {
   }
 
   // snapshot_without_reboot - computed: false, optional: true, required: false
-  private _snapshotWithoutReboot?: boolean | cdktf.IResolvable; 
+  private _snapshotWithoutReboot?: boolean | cdktn.IResolvable; 
   public get snapshotWithoutReboot() {
     return this.getBooleanAttribute('snapshot_without_reboot');
   }
-  public set snapshotWithoutReboot(value: boolean | cdktf.IResolvable) {
+  public set snapshotWithoutReboot(value: boolean | cdktn.IResolvable) {
     this._snapshotWithoutReboot = value;
   }
   public resetSnapshotWithoutReboot() {
@@ -782,7 +782,7 @@ export class AmiFromInstance extends cdktf.TerraformResource {
   public get ebsBlockDevice() {
     return this._ebsBlockDevice;
   }
-  public putEbsBlockDevice(value: AmiFromInstanceEbsBlockDevice[] | cdktf.IResolvable) {
+  public putEbsBlockDevice(value: AmiFromInstanceEbsBlockDevice[] | cdktn.IResolvable) {
     this._ebsBlockDevice.internalValue = value;
   }
   public resetEbsBlockDevice() {
@@ -798,7 +798,7 @@ export class AmiFromInstance extends cdktf.TerraformResource {
   public get ephemeralBlockDevice() {
     return this._ephemeralBlockDevice;
   }
-  public putEphemeralBlockDevice(value: AmiFromInstanceEphemeralBlockDevice[] | cdktf.IResolvable) {
+  public putEphemeralBlockDevice(value: AmiFromInstanceEphemeralBlockDevice[] | cdktn.IResolvable) {
     this._ephemeralBlockDevice.internalValue = value;
   }
   public resetEphemeralBlockDevice() {
@@ -831,17 +831,17 @@ export class AmiFromInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deprecation_time: cdktf.stringToTerraform(this._deprecationTime),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      snapshot_without_reboot: cdktf.booleanToTerraform(this._snapshotWithoutReboot),
-      source_instance_id: cdktf.stringToTerraform(this._sourceInstanceId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      ebs_block_device: cdktf.listMapper(amiFromInstanceEbsBlockDeviceToTerraform, true)(this._ebsBlockDevice.internalValue),
-      ephemeral_block_device: cdktf.listMapper(amiFromInstanceEphemeralBlockDeviceToTerraform, true)(this._ephemeralBlockDevice.internalValue),
+      deprecation_time: cdktn.stringToTerraform(this._deprecationTime),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      snapshot_without_reboot: cdktn.booleanToTerraform(this._snapshotWithoutReboot),
+      source_instance_id: cdktn.stringToTerraform(this._sourceInstanceId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      ebs_block_device: cdktn.listMapper(amiFromInstanceEbsBlockDeviceToTerraform, true)(this._ebsBlockDevice.internalValue),
+      ephemeral_block_device: cdktn.listMapper(amiFromInstanceEphemeralBlockDeviceToTerraform, true)(this._ephemeralBlockDevice.internalValue),
       timeouts: amiFromInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -849,67 +849,67 @@ export class AmiFromInstance extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deprecation_time: {
-        value: cdktf.stringToHclTerraform(this._deprecationTime),
+        value: cdktn.stringToHclTerraform(this._deprecationTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       snapshot_without_reboot: {
-        value: cdktf.booleanToHclTerraform(this._snapshotWithoutReboot),
+        value: cdktn.booleanToHclTerraform(this._snapshotWithoutReboot),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       source_instance_id: {
-        value: cdktf.stringToHclTerraform(this._sourceInstanceId),
+        value: cdktn.stringToHclTerraform(this._sourceInstanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       ebs_block_device: {
-        value: cdktf.listMapperHcl(amiFromInstanceEbsBlockDeviceToHclTerraform, true)(this._ebsBlockDevice.internalValue),
+        value: cdktn.listMapperHcl(amiFromInstanceEbsBlockDeviceToHclTerraform, true)(this._ebsBlockDevice.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AmiFromInstanceEbsBlockDeviceList",
       },
       ephemeral_block_device: {
-        value: cdktf.listMapperHcl(amiFromInstanceEphemeralBlockDeviceToHclTerraform, true)(this._ephemeralBlockDevice.internalValue),
+        value: cdktn.listMapperHcl(amiFromInstanceEphemeralBlockDeviceToHclTerraform, true)(this._ephemeralBlockDevice.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AmiFromInstanceEphemeralBlockDeviceList",

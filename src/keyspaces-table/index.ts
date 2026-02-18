@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KeyspacesTableConfig extends cdktf.TerraformMetaArguments {
+export interface KeyspacesTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/keyspaces_table#default_time_to_live KeyspacesTable#default_time_to_live}
   */
@@ -110,38 +110,38 @@ export interface KeyspacesTableCapacitySpecification {
 }
 
 export function keyspacesTableCapacitySpecificationToTerraform(struct?: KeyspacesTableCapacitySpecificationOutputReference | KeyspacesTableCapacitySpecification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read_capacity_units: cdktf.numberToTerraform(struct!.readCapacityUnits),
-    throughput_mode: cdktf.stringToTerraform(struct!.throughputMode),
-    write_capacity_units: cdktf.numberToTerraform(struct!.writeCapacityUnits),
+    read_capacity_units: cdktn.numberToTerraform(struct!.readCapacityUnits),
+    throughput_mode: cdktn.stringToTerraform(struct!.throughputMode),
+    write_capacity_units: cdktn.numberToTerraform(struct!.writeCapacityUnits),
   }
 }
 
 
 export function keyspacesTableCapacitySpecificationToHclTerraform(struct?: KeyspacesTableCapacitySpecificationOutputReference | KeyspacesTableCapacitySpecification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read_capacity_units: {
-      value: cdktf.numberToHclTerraform(struct!.readCapacityUnits),
+      value: cdktn.numberToHclTerraform(struct!.readCapacityUnits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     throughput_mode: {
-      value: cdktf.stringToHclTerraform(struct!.throughputMode),
+      value: cdktn.stringToHclTerraform(struct!.throughputMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     write_capacity_units: {
-      value: cdktf.numberToHclTerraform(struct!.writeCapacityUnits),
+      value: cdktn.numberToHclTerraform(struct!.writeCapacityUnits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -152,14 +152,14 @@ export function keyspacesTableCapacitySpecificationToHclTerraform(struct?: Keysp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyspacesTableCapacitySpecificationOutputReference extends cdktf.ComplexObject {
+export class KeyspacesTableCapacitySpecificationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -252,24 +252,24 @@ export interface KeyspacesTableClientSideTimestamps {
 }
 
 export function keyspacesTableClientSideTimestampsToTerraform(struct?: KeyspacesTableClientSideTimestampsOutputReference | KeyspacesTableClientSideTimestamps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    status: cdktf.stringToTerraform(struct!.status),
+    status: cdktn.stringToTerraform(struct!.status),
   }
 }
 
 
 export function keyspacesTableClientSideTimestampsToHclTerraform(struct?: KeyspacesTableClientSideTimestampsOutputReference | KeyspacesTableClientSideTimestamps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -280,14 +280,14 @@ export function keyspacesTableClientSideTimestampsToHclTerraform(struct?: Keyspa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyspacesTableClientSideTimestampsOutputReference extends cdktf.ComplexObject {
+export class KeyspacesTableClientSideTimestampsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -333,24 +333,24 @@ export interface KeyspacesTableComment {
 }
 
 export function keyspacesTableCommentToTerraform(struct?: KeyspacesTableCommentOutputReference | KeyspacesTableComment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message: cdktf.stringToTerraform(struct!.message),
+    message: cdktn.stringToTerraform(struct!.message),
   }
 }
 
 
 export function keyspacesTableCommentToHclTerraform(struct?: KeyspacesTableCommentOutputReference | KeyspacesTableComment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     message: {
-      value: cdktf.stringToHclTerraform(struct!.message),
+      value: cdktn.stringToHclTerraform(struct!.message),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -361,14 +361,14 @@ export function keyspacesTableCommentToHclTerraform(struct?: KeyspacesTableComme
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyspacesTableCommentOutputReference extends cdktf.ComplexObject {
+export class KeyspacesTableCommentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -421,31 +421,31 @@ export interface KeyspacesTableEncryptionSpecification {
 }
 
 export function keyspacesTableEncryptionSpecificationToTerraform(struct?: KeyspacesTableEncryptionSpecificationOutputReference | KeyspacesTableEncryptionSpecification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_identifier: cdktf.stringToTerraform(struct!.kmsKeyIdentifier),
-    type: cdktf.stringToTerraform(struct!.type),
+    kms_key_identifier: cdktn.stringToTerraform(struct!.kmsKeyIdentifier),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function keyspacesTableEncryptionSpecificationToHclTerraform(struct?: KeyspacesTableEncryptionSpecificationOutputReference | KeyspacesTableEncryptionSpecification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -456,14 +456,14 @@ export function keyspacesTableEncryptionSpecificationToHclTerraform(struct?: Key
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyspacesTableEncryptionSpecificationOutputReference extends cdktf.ComplexObject {
+export class KeyspacesTableEncryptionSpecificationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -534,24 +534,24 @@ export interface KeyspacesTablePointInTimeRecovery {
 }
 
 export function keyspacesTablePointInTimeRecoveryToTerraform(struct?: KeyspacesTablePointInTimeRecoveryOutputReference | KeyspacesTablePointInTimeRecovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    status: cdktf.stringToTerraform(struct!.status),
+    status: cdktn.stringToTerraform(struct!.status),
   }
 }
 
 
 export function keyspacesTablePointInTimeRecoveryToHclTerraform(struct?: KeyspacesTablePointInTimeRecoveryOutputReference | KeyspacesTablePointInTimeRecovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -562,14 +562,14 @@ export function keyspacesTablePointInTimeRecoveryToHclTerraform(struct?: Keyspac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyspacesTablePointInTimeRecoveryOutputReference extends cdktf.ComplexObject {
+export class KeyspacesTablePointInTimeRecoveryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -621,32 +621,32 @@ export interface KeyspacesTableSchemaDefinitionClusteringKey {
   readonly orderBy: string;
 }
 
-export function keyspacesTableSchemaDefinitionClusteringKeyToTerraform(struct?: KeyspacesTableSchemaDefinitionClusteringKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyspacesTableSchemaDefinitionClusteringKeyToTerraform(struct?: KeyspacesTableSchemaDefinitionClusteringKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    order_by: cdktf.stringToTerraform(struct!.orderBy),
+    name: cdktn.stringToTerraform(struct!.name),
+    order_by: cdktn.stringToTerraform(struct!.orderBy),
   }
 }
 
 
-export function keyspacesTableSchemaDefinitionClusteringKeyToHclTerraform(struct?: KeyspacesTableSchemaDefinitionClusteringKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyspacesTableSchemaDefinitionClusteringKeyToHclTerraform(struct?: KeyspacesTableSchemaDefinitionClusteringKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order_by: {
-      value: cdktf.stringToHclTerraform(struct!.orderBy),
+      value: cdktn.stringToHclTerraform(struct!.orderBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -657,9 +657,9 @@ export function keyspacesTableSchemaDefinitionClusteringKeyToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyspacesTableSchemaDefinitionClusteringKeyOutputReference extends cdktf.ComplexObject {
+export class KeyspacesTableSchemaDefinitionClusteringKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -667,11 +667,11 @@ export class KeyspacesTableSchemaDefinitionClusteringKeyOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KeyspacesTableSchemaDefinitionClusteringKey | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyspacesTableSchemaDefinitionClusteringKey | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -688,14 +688,14 @@ export class KeyspacesTableSchemaDefinitionClusteringKeyOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyspacesTableSchemaDefinitionClusteringKey | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyspacesTableSchemaDefinitionClusteringKey | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._orderBy = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -734,15 +734,15 @@ export class KeyspacesTableSchemaDefinitionClusteringKeyOutputReference extends 
   }
 }
 
-export class KeyspacesTableSchemaDefinitionClusteringKeyList extends cdktf.ComplexList {
-  public internalValue? : KeyspacesTableSchemaDefinitionClusteringKey[] | cdktf.IResolvable
+export class KeyspacesTableSchemaDefinitionClusteringKeyList extends cdktn.ComplexList {
+  public internalValue? : KeyspacesTableSchemaDefinitionClusteringKey[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -764,32 +764,32 @@ export interface KeyspacesTableSchemaDefinitionColumn {
   readonly type: string;
 }
 
-export function keyspacesTableSchemaDefinitionColumnToTerraform(struct?: KeyspacesTableSchemaDefinitionColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyspacesTableSchemaDefinitionColumnToTerraform(struct?: KeyspacesTableSchemaDefinitionColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function keyspacesTableSchemaDefinitionColumnToHclTerraform(struct?: KeyspacesTableSchemaDefinitionColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyspacesTableSchemaDefinitionColumnToHclTerraform(struct?: KeyspacesTableSchemaDefinitionColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -800,9 +800,9 @@ export function keyspacesTableSchemaDefinitionColumnToHclTerraform(struct?: Keys
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyspacesTableSchemaDefinitionColumnOutputReference extends cdktf.ComplexObject {
+export class KeyspacesTableSchemaDefinitionColumnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -810,11 +810,11 @@ export class KeyspacesTableSchemaDefinitionColumnOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KeyspacesTableSchemaDefinitionColumn | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyspacesTableSchemaDefinitionColumn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -831,14 +831,14 @@ export class KeyspacesTableSchemaDefinitionColumnOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyspacesTableSchemaDefinitionColumn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyspacesTableSchemaDefinitionColumn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -877,15 +877,15 @@ export class KeyspacesTableSchemaDefinitionColumnOutputReference extends cdktf.C
   }
 }
 
-export class KeyspacesTableSchemaDefinitionColumnList extends cdktf.ComplexList {
-  public internalValue? : KeyspacesTableSchemaDefinitionColumn[] | cdktf.IResolvable
+export class KeyspacesTableSchemaDefinitionColumnList extends cdktn.ComplexList {
+  public internalValue? : KeyspacesTableSchemaDefinitionColumn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -903,25 +903,25 @@ export interface KeyspacesTableSchemaDefinitionPartitionKey {
   readonly name: string;
 }
 
-export function keyspacesTableSchemaDefinitionPartitionKeyToTerraform(struct?: KeyspacesTableSchemaDefinitionPartitionKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyspacesTableSchemaDefinitionPartitionKeyToTerraform(struct?: KeyspacesTableSchemaDefinitionPartitionKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function keyspacesTableSchemaDefinitionPartitionKeyToHclTerraform(struct?: KeyspacesTableSchemaDefinitionPartitionKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyspacesTableSchemaDefinitionPartitionKeyToHclTerraform(struct?: KeyspacesTableSchemaDefinitionPartitionKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -932,9 +932,9 @@ export function keyspacesTableSchemaDefinitionPartitionKeyToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyspacesTableSchemaDefinitionPartitionKeyOutputReference extends cdktf.ComplexObject {
+export class KeyspacesTableSchemaDefinitionPartitionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -942,11 +942,11 @@ export class KeyspacesTableSchemaDefinitionPartitionKeyOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KeyspacesTableSchemaDefinitionPartitionKey | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyspacesTableSchemaDefinitionPartitionKey | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -959,13 +959,13 @@ export class KeyspacesTableSchemaDefinitionPartitionKeyOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyspacesTableSchemaDefinitionPartitionKey | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyspacesTableSchemaDefinitionPartitionKey | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -990,15 +990,15 @@ export class KeyspacesTableSchemaDefinitionPartitionKeyOutputReference extends c
   }
 }
 
-export class KeyspacesTableSchemaDefinitionPartitionKeyList extends cdktf.ComplexList {
-  public internalValue? : KeyspacesTableSchemaDefinitionPartitionKey[] | cdktf.IResolvable
+export class KeyspacesTableSchemaDefinitionPartitionKeyList extends cdktn.ComplexList {
+  public internalValue? : KeyspacesTableSchemaDefinitionPartitionKey[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1016,25 +1016,25 @@ export interface KeyspacesTableSchemaDefinitionStaticColumn {
   readonly name: string;
 }
 
-export function keyspacesTableSchemaDefinitionStaticColumnToTerraform(struct?: KeyspacesTableSchemaDefinitionStaticColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyspacesTableSchemaDefinitionStaticColumnToTerraform(struct?: KeyspacesTableSchemaDefinitionStaticColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function keyspacesTableSchemaDefinitionStaticColumnToHclTerraform(struct?: KeyspacesTableSchemaDefinitionStaticColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyspacesTableSchemaDefinitionStaticColumnToHclTerraform(struct?: KeyspacesTableSchemaDefinitionStaticColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1045,9 +1045,9 @@ export function keyspacesTableSchemaDefinitionStaticColumnToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyspacesTableSchemaDefinitionStaticColumnOutputReference extends cdktf.ComplexObject {
+export class KeyspacesTableSchemaDefinitionStaticColumnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1055,11 +1055,11 @@ export class KeyspacesTableSchemaDefinitionStaticColumnOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KeyspacesTableSchemaDefinitionStaticColumn | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyspacesTableSchemaDefinitionStaticColumn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1072,13 +1072,13 @@ export class KeyspacesTableSchemaDefinitionStaticColumnOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyspacesTableSchemaDefinitionStaticColumn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyspacesTableSchemaDefinitionStaticColumn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1103,15 +1103,15 @@ export class KeyspacesTableSchemaDefinitionStaticColumnOutputReference extends c
   }
 }
 
-export class KeyspacesTableSchemaDefinitionStaticColumnList extends cdktf.ComplexList {
-  public internalValue? : KeyspacesTableSchemaDefinitionStaticColumn[] | cdktf.IResolvable
+export class KeyspacesTableSchemaDefinitionStaticColumnList extends cdktn.ComplexList {
+  public internalValue? : KeyspacesTableSchemaDefinitionStaticColumn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1128,67 +1128,67 @@ export interface KeyspacesTableSchemaDefinition {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/keyspaces_table#clustering_key KeyspacesTable#clustering_key}
   */
-  readonly clusteringKey?: KeyspacesTableSchemaDefinitionClusteringKey[] | cdktf.IResolvable;
+  readonly clusteringKey?: KeyspacesTableSchemaDefinitionClusteringKey[] | cdktn.IResolvable;
   /**
   * column block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/keyspaces_table#column KeyspacesTable#column}
   */
-  readonly column: KeyspacesTableSchemaDefinitionColumn[] | cdktf.IResolvable;
+  readonly column: KeyspacesTableSchemaDefinitionColumn[] | cdktn.IResolvable;
   /**
   * partition_key block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/keyspaces_table#partition_key KeyspacesTable#partition_key}
   */
-  readonly partitionKey: KeyspacesTableSchemaDefinitionPartitionKey[] | cdktf.IResolvable;
+  readonly partitionKey: KeyspacesTableSchemaDefinitionPartitionKey[] | cdktn.IResolvable;
   /**
   * static_column block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/keyspaces_table#static_column KeyspacesTable#static_column}
   */
-  readonly staticColumn?: KeyspacesTableSchemaDefinitionStaticColumn[] | cdktf.IResolvable;
+  readonly staticColumn?: KeyspacesTableSchemaDefinitionStaticColumn[] | cdktn.IResolvable;
 }
 
 export function keyspacesTableSchemaDefinitionToTerraform(struct?: KeyspacesTableSchemaDefinitionOutputReference | KeyspacesTableSchemaDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    clustering_key: cdktf.listMapper(keyspacesTableSchemaDefinitionClusteringKeyToTerraform, true)(struct!.clusteringKey),
-    column: cdktf.listMapper(keyspacesTableSchemaDefinitionColumnToTerraform, true)(struct!.column),
-    partition_key: cdktf.listMapper(keyspacesTableSchemaDefinitionPartitionKeyToTerraform, true)(struct!.partitionKey),
-    static_column: cdktf.listMapper(keyspacesTableSchemaDefinitionStaticColumnToTerraform, true)(struct!.staticColumn),
+    clustering_key: cdktn.listMapper(keyspacesTableSchemaDefinitionClusteringKeyToTerraform, true)(struct!.clusteringKey),
+    column: cdktn.listMapper(keyspacesTableSchemaDefinitionColumnToTerraform, true)(struct!.column),
+    partition_key: cdktn.listMapper(keyspacesTableSchemaDefinitionPartitionKeyToTerraform, true)(struct!.partitionKey),
+    static_column: cdktn.listMapper(keyspacesTableSchemaDefinitionStaticColumnToTerraform, true)(struct!.staticColumn),
   }
 }
 
 
 export function keyspacesTableSchemaDefinitionToHclTerraform(struct?: KeyspacesTableSchemaDefinitionOutputReference | KeyspacesTableSchemaDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     clustering_key: {
-      value: cdktf.listMapperHcl(keyspacesTableSchemaDefinitionClusteringKeyToHclTerraform, true)(struct!.clusteringKey),
+      value: cdktn.listMapperHcl(keyspacesTableSchemaDefinitionClusteringKeyToHclTerraform, true)(struct!.clusteringKey),
       isBlock: true,
       type: "list",
       storageClassType: "KeyspacesTableSchemaDefinitionClusteringKeyList",
     },
     column: {
-      value: cdktf.listMapperHcl(keyspacesTableSchemaDefinitionColumnToHclTerraform, true)(struct!.column),
+      value: cdktn.listMapperHcl(keyspacesTableSchemaDefinitionColumnToHclTerraform, true)(struct!.column),
       isBlock: true,
       type: "set",
       storageClassType: "KeyspacesTableSchemaDefinitionColumnList",
     },
     partition_key: {
-      value: cdktf.listMapperHcl(keyspacesTableSchemaDefinitionPartitionKeyToHclTerraform, true)(struct!.partitionKey),
+      value: cdktn.listMapperHcl(keyspacesTableSchemaDefinitionPartitionKeyToHclTerraform, true)(struct!.partitionKey),
       isBlock: true,
       type: "list",
       storageClassType: "KeyspacesTableSchemaDefinitionPartitionKeyList",
     },
     static_column: {
-      value: cdktf.listMapperHcl(keyspacesTableSchemaDefinitionStaticColumnToHclTerraform, true)(struct!.staticColumn),
+      value: cdktn.listMapperHcl(keyspacesTableSchemaDefinitionStaticColumnToHclTerraform, true)(struct!.staticColumn),
       isBlock: true,
       type: "set",
       storageClassType: "KeyspacesTableSchemaDefinitionStaticColumnList",
@@ -1199,14 +1199,14 @@ export function keyspacesTableSchemaDefinitionToHclTerraform(struct?: KeyspacesT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyspacesTableSchemaDefinitionOutputReference extends cdktf.ComplexObject {
+export class KeyspacesTableSchemaDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1254,7 +1254,7 @@ export class KeyspacesTableSchemaDefinitionOutputReference extends cdktf.Complex
   public get clusteringKey() {
     return this._clusteringKey;
   }
-  public putClusteringKey(value: KeyspacesTableSchemaDefinitionClusteringKey[] | cdktf.IResolvable) {
+  public putClusteringKey(value: KeyspacesTableSchemaDefinitionClusteringKey[] | cdktn.IResolvable) {
     this._clusteringKey.internalValue = value;
   }
   public resetClusteringKey() {
@@ -1270,7 +1270,7 @@ export class KeyspacesTableSchemaDefinitionOutputReference extends cdktf.Complex
   public get column() {
     return this._column;
   }
-  public putColumn(value: KeyspacesTableSchemaDefinitionColumn[] | cdktf.IResolvable) {
+  public putColumn(value: KeyspacesTableSchemaDefinitionColumn[] | cdktn.IResolvable) {
     this._column.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1283,7 +1283,7 @@ export class KeyspacesTableSchemaDefinitionOutputReference extends cdktf.Complex
   public get partitionKey() {
     return this._partitionKey;
   }
-  public putPartitionKey(value: KeyspacesTableSchemaDefinitionPartitionKey[] | cdktf.IResolvable) {
+  public putPartitionKey(value: KeyspacesTableSchemaDefinitionPartitionKey[] | cdktn.IResolvable) {
     this._partitionKey.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1296,7 +1296,7 @@ export class KeyspacesTableSchemaDefinitionOutputReference extends cdktf.Complex
   public get staticColumn() {
     return this._staticColumn;
   }
-  public putStaticColumn(value: KeyspacesTableSchemaDefinitionStaticColumn[] | cdktf.IResolvable) {
+  public putStaticColumn(value: KeyspacesTableSchemaDefinitionStaticColumn[] | cdktn.IResolvable) {
     this._staticColumn.internalValue = value;
   }
   public resetStaticColumn() {
@@ -1322,39 +1322,39 @@ export interface KeyspacesTableTimeouts {
   readonly update?: string;
 }
 
-export function keyspacesTableTimeoutsToTerraform(struct?: KeyspacesTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyspacesTableTimeoutsToTerraform(struct?: KeyspacesTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function keyspacesTableTimeoutsToHclTerraform(struct?: KeyspacesTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyspacesTableTimeoutsToHclTerraform(struct?: KeyspacesTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1365,19 +1365,19 @@ export function keyspacesTableTimeoutsToHclTerraform(struct?: KeyspacesTableTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyspacesTableTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KeyspacesTableTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KeyspacesTableTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyspacesTableTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1398,7 +1398,7 @@ export class KeyspacesTableTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyspacesTableTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyspacesTableTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1406,7 +1406,7 @@ export class KeyspacesTableTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1475,24 +1475,24 @@ export interface KeyspacesTableTtl {
 }
 
 export function keyspacesTableTtlToTerraform(struct?: KeyspacesTableTtlOutputReference | KeyspacesTableTtl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    status: cdktf.stringToTerraform(struct!.status),
+    status: cdktn.stringToTerraform(struct!.status),
   }
 }
 
 
 export function keyspacesTableTtlToHclTerraform(struct?: KeyspacesTableTtlOutputReference | KeyspacesTableTtl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1503,14 +1503,14 @@ export function keyspacesTableTtlToHclTerraform(struct?: KeyspacesTableTtlOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyspacesTableTtlOutputReference extends cdktf.ComplexObject {
+export class KeyspacesTableTtlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1552,7 +1552,7 @@ export class KeyspacesTableTtlOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/keyspaces_table aws_keyspaces_table}
 */
-export class KeyspacesTable extends cdktf.TerraformResource {
+export class KeyspacesTable extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1563,14 +1563,14 @@ export class KeyspacesTable extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KeyspacesTable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KeyspacesTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeyspacesTable to import
   * @param importFromId The id of the existing KeyspacesTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/keyspaces_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeyspacesTable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_keyspaces_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_keyspaces_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -1863,13 +1863,13 @@ export class KeyspacesTable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_time_to_live: cdktf.numberToTerraform(this._defaultTimeToLive),
-      id: cdktf.stringToTerraform(this._id),
-      keyspace_name: cdktf.stringToTerraform(this._keyspaceName),
-      region: cdktf.stringToTerraform(this._region),
-      table_name: cdktf.stringToTerraform(this._tableName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      default_time_to_live: cdktn.numberToTerraform(this._defaultTimeToLive),
+      id: cdktn.stringToTerraform(this._id),
+      keyspace_name: cdktn.stringToTerraform(this._keyspaceName),
+      region: cdktn.stringToTerraform(this._region),
+      table_name: cdktn.stringToTerraform(this._tableName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       capacity_specification: keyspacesTableCapacitySpecificationToTerraform(this._capacitySpecification.internalValue),
       client_side_timestamps: keyspacesTableClientSideTimestampsToTerraform(this._clientSideTimestamps.internalValue),
       comment: keyspacesTableCommentToTerraform(this._comment.internalValue),
@@ -1884,43 +1884,43 @@ export class KeyspacesTable extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       default_time_to_live: {
-        value: cdktf.numberToHclTerraform(this._defaultTimeToLive),
+        value: cdktn.numberToHclTerraform(this._defaultTimeToLive),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       keyspace_name: {
-        value: cdktf.stringToHclTerraform(this._keyspaceName),
+        value: cdktn.stringToHclTerraform(this._keyspaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_name: {
-        value: cdktf.stringToHclTerraform(this._tableName),
+        value: cdktn.stringToHclTerraform(this._tableName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

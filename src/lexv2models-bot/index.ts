@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Lexv2ModelsBotConfig extends cdktf.TerraformMetaArguments {
+export interface Lexv2ModelsBotConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_bot#description Lexv2ModelsBot#description}
   */
@@ -51,13 +51,13 @@ export interface Lexv2ModelsBotConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_bot#data_privacy Lexv2ModelsBot#data_privacy}
   */
-  readonly dataPrivacy?: Lexv2ModelsBotDataPrivacy[] | cdktf.IResolvable;
+  readonly dataPrivacy?: Lexv2ModelsBotDataPrivacy[] | cdktn.IResolvable;
   /**
   * members block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_bot#members Lexv2ModelsBot#members}
   */
-  readonly members?: Lexv2ModelsBotMembers[] | cdktf.IResolvable;
+  readonly members?: Lexv2ModelsBotMembers[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -69,28 +69,28 @@ export interface Lexv2ModelsBotDataPrivacy {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_bot#child_directed Lexv2ModelsBot#child_directed}
   */
-  readonly childDirected: boolean | cdktf.IResolvable;
+  readonly childDirected: boolean | cdktn.IResolvable;
 }
 
-export function lexv2ModelsBotDataPrivacyToTerraform(struct?: Lexv2ModelsBotDataPrivacy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsBotDataPrivacyToTerraform(struct?: Lexv2ModelsBotDataPrivacy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    child_directed: cdktf.booleanToTerraform(struct!.childDirected),
+    child_directed: cdktn.booleanToTerraform(struct!.childDirected),
   }
 }
 
 
-export function lexv2ModelsBotDataPrivacyToHclTerraform(struct?: Lexv2ModelsBotDataPrivacy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsBotDataPrivacyToHclTerraform(struct?: Lexv2ModelsBotDataPrivacy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     child_directed: {
-      value: cdktf.booleanToHclTerraform(struct!.childDirected),
+      value: cdktn.booleanToHclTerraform(struct!.childDirected),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -101,9 +101,9 @@ export function lexv2ModelsBotDataPrivacyToHclTerraform(struct?: Lexv2ModelsBotD
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsBotDataPrivacyOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsBotDataPrivacyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -111,11 +111,11 @@ export class Lexv2ModelsBotDataPrivacyOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsBotDataPrivacy | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsBotDataPrivacy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -128,13 +128,13 @@ export class Lexv2ModelsBotDataPrivacyOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsBotDataPrivacy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsBotDataPrivacy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._childDirected = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -146,11 +146,11 @@ export class Lexv2ModelsBotDataPrivacyOutputReference extends cdktf.ComplexObjec
   }
 
   // child_directed - computed: false, optional: false, required: true
-  private _childDirected?: boolean | cdktf.IResolvable; 
+  private _childDirected?: boolean | cdktn.IResolvable; 
   public get childDirected() {
     return this.getBooleanAttribute('child_directed');
   }
-  public set childDirected(value: boolean | cdktf.IResolvable) {
+  public set childDirected(value: boolean | cdktn.IResolvable) {
     this._childDirected = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -159,15 +159,15 @@ export class Lexv2ModelsBotDataPrivacyOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class Lexv2ModelsBotDataPrivacyList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsBotDataPrivacy[] | cdktf.IResolvable
+export class Lexv2ModelsBotDataPrivacyList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsBotDataPrivacy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -204,53 +204,53 @@ export interface Lexv2ModelsBotMembers {
   readonly version: string;
 }
 
-export function lexv2ModelsBotMembersToTerraform(struct?: Lexv2ModelsBotMembers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsBotMembersToTerraform(struct?: Lexv2ModelsBotMembers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alias_id: cdktf.stringToTerraform(struct!.aliasId),
-    alias_name: cdktf.stringToTerraform(struct!.aliasName),
-    id: cdktf.stringToTerraform(struct!.id),
-    name: cdktf.stringToTerraform(struct!.name),
-    version: cdktf.stringToTerraform(struct!.version),
+    alias_id: cdktn.stringToTerraform(struct!.aliasId),
+    alias_name: cdktn.stringToTerraform(struct!.aliasName),
+    id: cdktn.stringToTerraform(struct!.id),
+    name: cdktn.stringToTerraform(struct!.name),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
-export function lexv2ModelsBotMembersToHclTerraform(struct?: Lexv2ModelsBotMembers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsBotMembersToHclTerraform(struct?: Lexv2ModelsBotMembers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alias_id: {
-      value: cdktf.stringToHclTerraform(struct!.aliasId),
+      value: cdktn.stringToHclTerraform(struct!.aliasId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     alias_name: {
-      value: cdktf.stringToHclTerraform(struct!.aliasName),
+      value: cdktn.stringToHclTerraform(struct!.aliasName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -261,9 +261,9 @@ export function lexv2ModelsBotMembersToHclTerraform(struct?: Lexv2ModelsBotMembe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsBotMembersOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsBotMembersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -271,11 +271,11 @@ export class Lexv2ModelsBotMembersOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsBotMembers | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsBotMembers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -304,7 +304,7 @@ export class Lexv2ModelsBotMembersOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsBotMembers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsBotMembers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -314,7 +314,7 @@ export class Lexv2ModelsBotMembersOutputReference extends cdktf.ComplexObject {
       this._name = undefined;
       this._version = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -395,15 +395,15 @@ export class Lexv2ModelsBotMembersOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class Lexv2ModelsBotMembersList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsBotMembers[] | cdktf.IResolvable
+export class Lexv2ModelsBotMembersList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsBotMembers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -435,39 +435,39 @@ export interface Lexv2ModelsBotTimeouts {
   readonly update?: string;
 }
 
-export function lexv2ModelsBotTimeoutsToTerraform(struct?: Lexv2ModelsBotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsBotTimeoutsToTerraform(struct?: Lexv2ModelsBotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function lexv2ModelsBotTimeoutsToHclTerraform(struct?: Lexv2ModelsBotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsBotTimeoutsToHclTerraform(struct?: Lexv2ModelsBotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -478,19 +478,19 @@ export function lexv2ModelsBotTimeoutsToHclTerraform(struct?: Lexv2ModelsBotTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsBotTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsBotTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Lexv2ModelsBotTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsBotTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -511,7 +511,7 @@ export class Lexv2ModelsBotTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsBotTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsBotTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -519,7 +519,7 @@ export class Lexv2ModelsBotTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -584,7 +584,7 @@ export class Lexv2ModelsBotTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_bot aws_lexv2models_bot}
 */
-export class Lexv2ModelsBot extends cdktf.TerraformResource {
+export class Lexv2ModelsBot extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -595,14 +595,14 @@ export class Lexv2ModelsBot extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Lexv2ModelsBot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Lexv2ModelsBot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Lexv2ModelsBot to import
   * @param importFromId The id of the existing Lexv2ModelsBot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_bot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Lexv2ModelsBot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lexv2models_bot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lexv2models_bot", importId: importFromId, provider });
       }
 
   // ===========
@@ -747,7 +747,7 @@ export class Lexv2ModelsBot extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -789,7 +789,7 @@ export class Lexv2ModelsBot extends cdktf.TerraformResource {
   public get dataPrivacy() {
     return this._dataPrivacy;
   }
-  public putDataPrivacy(value: Lexv2ModelsBotDataPrivacy[] | cdktf.IResolvable) {
+  public putDataPrivacy(value: Lexv2ModelsBotDataPrivacy[] | cdktn.IResolvable) {
     this._dataPrivacy.internalValue = value;
   }
   public resetDataPrivacy() {
@@ -805,7 +805,7 @@ export class Lexv2ModelsBot extends cdktf.TerraformResource {
   public get members() {
     return this._members;
   }
-  public putMembers(value: Lexv2ModelsBotMembers[] | cdktf.IResolvable) {
+  public putMembers(value: Lexv2ModelsBotMembers[] | cdktn.IResolvable) {
     this._members.internalValue = value;
   }
   public resetMembers() {
@@ -838,16 +838,16 @@ export class Lexv2ModelsBot extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      idle_session_ttl_in_seconds: cdktf.numberToTerraform(this._idleSessionTtlInSeconds),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      test_bot_alias_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._testBotAliasTags),
-      type: cdktf.stringToTerraform(this._type),
-      data_privacy: cdktf.listMapper(lexv2ModelsBotDataPrivacyToTerraform, true)(this._dataPrivacy.internalValue),
-      members: cdktf.listMapper(lexv2ModelsBotMembersToTerraform, true)(this._members.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      idle_session_ttl_in_seconds: cdktn.numberToTerraform(this._idleSessionTtlInSeconds),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      test_bot_alias_tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._testBotAliasTags),
+      type: cdktn.stringToTerraform(this._type),
+      data_privacy: cdktn.listMapper(lexv2ModelsBotDataPrivacyToTerraform, true)(this._dataPrivacy.internalValue),
+      members: cdktn.listMapper(lexv2ModelsBotMembersToTerraform, true)(this._members.internalValue),
       timeouts: lexv2ModelsBotTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -855,61 +855,61 @@ export class Lexv2ModelsBot extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idle_session_ttl_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._idleSessionTtlInSeconds),
+        value: cdktn.numberToHclTerraform(this._idleSessionTtlInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       test_bot_alias_tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._testBotAliasTags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._testBotAliasTags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_privacy: {
-        value: cdktf.listMapperHcl(lexv2ModelsBotDataPrivacyToHclTerraform, true)(this._dataPrivacy.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsBotDataPrivacyToHclTerraform, true)(this._dataPrivacy.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsBotDataPrivacyList",
       },
       members: {
-        value: cdktf.listMapperHcl(lexv2ModelsBotMembersToHclTerraform, true)(this._members.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsBotMembersToHclTerraform, true)(this._members.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsBotMembersList",

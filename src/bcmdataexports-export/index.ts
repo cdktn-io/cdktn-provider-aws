@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BcmdataexportsExportConfig extends cdktf.TerraformMetaArguments {
+export interface BcmdataexportsExportConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bcmdataexports_export#tags BcmdataexportsExport#tags}
   */
@@ -21,7 +21,7 @@ export interface BcmdataexportsExportConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bcmdataexports_export#export BcmdataexportsExport#export}
   */
-  readonly export?: BcmdataexportsExportExport[] | cdktf.IResolvable;
+  readonly export?: BcmdataexportsExportExport[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -37,35 +37,35 @@ export interface BcmdataexportsExportExportDataQuery {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bcmdataexports_export#table_configurations BcmdataexportsExport#table_configurations}
   */
-  readonly tableConfigurations?: { [key: string]: { [key: string]: string } } | cdktf.IResolvable;
+  readonly tableConfigurations?: { [key: string]: { [key: string]: string } } | cdktn.IResolvable;
 }
 
-export function bcmdataexportsExportExportDataQueryToTerraform(struct?: BcmdataexportsExportExportDataQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bcmdataexportsExportExportDataQueryToTerraform(struct?: BcmdataexportsExportExportDataQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query_statement: cdktf.stringToTerraform(struct!.queryStatement),
-    table_configurations: cdktf.hashMapper(cdktf.hashMapper(cdktf.stringToTerraform))(struct!.tableConfigurations),
+    query_statement: cdktn.stringToTerraform(struct!.queryStatement),
+    table_configurations: cdktn.hashMapper(cdktn.hashMapper(cdktn.stringToTerraform))(struct!.tableConfigurations),
   }
 }
 
 
-export function bcmdataexportsExportExportDataQueryToHclTerraform(struct?: BcmdataexportsExportExportDataQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bcmdataexportsExportExportDataQueryToHclTerraform(struct?: BcmdataexportsExportExportDataQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query_statement: {
-      value: cdktf.stringToHclTerraform(struct!.queryStatement),
+      value: cdktn.stringToHclTerraform(struct!.queryStatement),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_configurations: {
-      value: cdktf.hashMapperHcl(cdktf.hashMapperHcl(cdktf.stringToHclTerraform))(struct!.tableConfigurations),
+      value: cdktn.hashMapperHcl(cdktn.hashMapperHcl(cdktn.stringToHclTerraform))(struct!.tableConfigurations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMapMap",
@@ -76,9 +76,9 @@ export function bcmdataexportsExportExportDataQueryToHclTerraform(struct?: Bcmda
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BcmdataexportsExportExportDataQueryOutputReference extends cdktf.ComplexObject {
+export class BcmdataexportsExportExportDataQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -86,11 +86,11 @@ export class BcmdataexportsExportExportDataQueryOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BcmdataexportsExportExportDataQuery | cdktf.IResolvable | undefined {
+  public get internalValue(): BcmdataexportsExportExportDataQuery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -107,14 +107,14 @@ export class BcmdataexportsExportExportDataQueryOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BcmdataexportsExportExportDataQuery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BcmdataexportsExportExportDataQuery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._queryStatement = undefined;
       this._tableConfigurations = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -140,11 +140,11 @@ export class BcmdataexportsExportExportDataQueryOutputReference extends cdktf.Co
   }
 
   // table_configurations - computed: true, optional: true, required: false
-  private _tableConfigurations?: { [key: string]: { [key: string]: string } } | cdktf.IResolvable; 
+  private _tableConfigurations?: { [key: string]: { [key: string]: string } } | cdktn.IResolvable; 
   public get tableConfigurations() {
     return this.interpolationForAttribute('table_configurations');
   }
-  public set tableConfigurations(value: { [key: string]: { [key: string]: string } } | cdktf.IResolvable) {
+  public set tableConfigurations(value: { [key: string]: { [key: string]: string } } | cdktn.IResolvable) {
     this._tableConfigurations = value;
   }
   public resetTableConfigurations() {
@@ -156,15 +156,15 @@ export class BcmdataexportsExportExportDataQueryOutputReference extends cdktf.Co
   }
 }
 
-export class BcmdataexportsExportExportDataQueryList extends cdktf.ComplexList {
-  public internalValue? : BcmdataexportsExportExportDataQuery[] | cdktf.IResolvable
+export class BcmdataexportsExportExportDataQueryList extends cdktn.ComplexList {
+  public internalValue? : BcmdataexportsExportExportDataQuery[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -194,46 +194,46 @@ export interface BcmdataexportsExportExportDestinationConfigurationsS3Destinatio
   readonly overwrite: string;
 }
 
-export function bcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsToTerraform(struct?: BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsToTerraform(struct?: BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    compression: cdktf.stringToTerraform(struct!.compression),
-    format: cdktf.stringToTerraform(struct!.format),
-    output_type: cdktf.stringToTerraform(struct!.outputType),
-    overwrite: cdktf.stringToTerraform(struct!.overwrite),
+    compression: cdktn.stringToTerraform(struct!.compression),
+    format: cdktn.stringToTerraform(struct!.format),
+    output_type: cdktn.stringToTerraform(struct!.outputType),
+    overwrite: cdktn.stringToTerraform(struct!.overwrite),
   }
 }
 
 
-export function bcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsToHclTerraform(struct?: BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsToHclTerraform(struct?: BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     compression: {
-      value: cdktf.stringToHclTerraform(struct!.compression),
+      value: cdktn.stringToHclTerraform(struct!.compression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     format: {
-      value: cdktf.stringToHclTerraform(struct!.format),
+      value: cdktn.stringToHclTerraform(struct!.format),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     output_type: {
-      value: cdktf.stringToHclTerraform(struct!.outputType),
+      value: cdktn.stringToHclTerraform(struct!.outputType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     overwrite: {
-      value: cdktf.stringToHclTerraform(struct!.overwrite),
+      value: cdktn.stringToHclTerraform(struct!.overwrite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -244,9 +244,9 @@ export function bcmdataexportsExportExportDestinationConfigurationsS3Destination
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsOutputReference extends cdktf.ComplexObject {
+export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -254,11 +254,11 @@ export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3O
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations | cdktf.IResolvable | undefined {
+  public get internalValue(): BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -283,7 +283,7 @@ export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3O
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -292,7 +292,7 @@ export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3O
       this._outputType = undefined;
       this._overwrite = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -359,15 +359,15 @@ export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3O
   }
 }
 
-export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsList extends cdktf.ComplexList {
-  public internalValue? : BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations[] | cdktf.IResolvable
+export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsList extends cdktn.ComplexList {
+  public internalValue? : BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -396,49 +396,49 @@ export interface BcmdataexportsExportExportDestinationConfigurationsS3Destinatio
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bcmdataexports_export#s3_output_configurations BcmdataexportsExport#s3_output_configurations}
   */
-  readonly s3OutputConfigurations?: BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations[] | cdktf.IResolvable;
+  readonly s3OutputConfigurations?: BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations[] | cdktn.IResolvable;
 }
 
-export function bcmdataexportsExportExportDestinationConfigurationsS3DestinationToTerraform(struct?: BcmdataexportsExportExportDestinationConfigurationsS3Destination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bcmdataexportsExportExportDestinationConfigurationsS3DestinationToTerraform(struct?: BcmdataexportsExportExportDestinationConfigurationsS3Destination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_bucket: cdktf.stringToTerraform(struct!.s3Bucket),
-    s3_prefix: cdktf.stringToTerraform(struct!.s3Prefix),
-    s3_region: cdktf.stringToTerraform(struct!.s3Region),
-    s3_output_configurations: cdktf.listMapper(bcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsToTerraform, true)(struct!.s3OutputConfigurations),
+    s3_bucket: cdktn.stringToTerraform(struct!.s3Bucket),
+    s3_prefix: cdktn.stringToTerraform(struct!.s3Prefix),
+    s3_region: cdktn.stringToTerraform(struct!.s3Region),
+    s3_output_configurations: cdktn.listMapper(bcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsToTerraform, true)(struct!.s3OutputConfigurations),
   }
 }
 
 
-export function bcmdataexportsExportExportDestinationConfigurationsS3DestinationToHclTerraform(struct?: BcmdataexportsExportExportDestinationConfigurationsS3Destination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bcmdataexportsExportExportDestinationConfigurationsS3DestinationToHclTerraform(struct?: BcmdataexportsExportExportDestinationConfigurationsS3Destination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_bucket: {
-      value: cdktf.stringToHclTerraform(struct!.s3Bucket),
+      value: cdktn.stringToHclTerraform(struct!.s3Bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.s3Prefix),
+      value: cdktn.stringToHclTerraform(struct!.s3Prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_region: {
-      value: cdktf.stringToHclTerraform(struct!.s3Region),
+      value: cdktn.stringToHclTerraform(struct!.s3Region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_output_configurations: {
-      value: cdktf.listMapperHcl(bcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsToHclTerraform, true)(struct!.s3OutputConfigurations),
+      value: cdktn.listMapperHcl(bcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsToHclTerraform, true)(struct!.s3OutputConfigurations),
       isBlock: true,
       type: "list",
       storageClassType: "BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsList",
@@ -449,9 +449,9 @@ export function bcmdataexportsExportExportDestinationConfigurationsS3Destination
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationOutputReference extends cdktf.ComplexObject {
+export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -459,11 +459,11 @@ export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BcmdataexportsExportExportDestinationConfigurationsS3Destination | cdktf.IResolvable | undefined {
+  public get internalValue(): BcmdataexportsExportExportDestinationConfigurationsS3Destination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -488,7 +488,7 @@ export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BcmdataexportsExportExportDestinationConfigurationsS3Destination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BcmdataexportsExportExportDestinationConfigurationsS3Destination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -497,7 +497,7 @@ export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationOut
       this._s3Region = undefined;
       this._s3OutputConfigurations.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -555,7 +555,7 @@ export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationOut
   public get s3OutputConfigurations() {
     return this._s3OutputConfigurations;
   }
-  public putS3OutputConfigurations(value: BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations[] | cdktf.IResolvable) {
+  public putS3OutputConfigurations(value: BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations[] | cdktn.IResolvable) {
     this._s3OutputConfigurations.internalValue = value;
   }
   public resetS3OutputConfigurations() {
@@ -567,15 +567,15 @@ export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationOut
   }
 }
 
-export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationList extends cdktf.ComplexList {
-  public internalValue? : BcmdataexportsExportExportDestinationConfigurationsS3Destination[] | cdktf.IResolvable
+export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationList extends cdktn.ComplexList {
+  public internalValue? : BcmdataexportsExportExportDestinationConfigurationsS3Destination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -592,28 +592,28 @@ export interface BcmdataexportsExportExportDestinationConfigurations {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bcmdataexports_export#s3_destination BcmdataexportsExport#s3_destination}
   */
-  readonly s3Destination?: BcmdataexportsExportExportDestinationConfigurationsS3Destination[] | cdktf.IResolvable;
+  readonly s3Destination?: BcmdataexportsExportExportDestinationConfigurationsS3Destination[] | cdktn.IResolvable;
 }
 
-export function bcmdataexportsExportExportDestinationConfigurationsToTerraform(struct?: BcmdataexportsExportExportDestinationConfigurations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bcmdataexportsExportExportDestinationConfigurationsToTerraform(struct?: BcmdataexportsExportExportDestinationConfigurations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_destination: cdktf.listMapper(bcmdataexportsExportExportDestinationConfigurationsS3DestinationToTerraform, true)(struct!.s3Destination),
+    s3_destination: cdktn.listMapper(bcmdataexportsExportExportDestinationConfigurationsS3DestinationToTerraform, true)(struct!.s3Destination),
   }
 }
 
 
-export function bcmdataexportsExportExportDestinationConfigurationsToHclTerraform(struct?: BcmdataexportsExportExportDestinationConfigurations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bcmdataexportsExportExportDestinationConfigurationsToHclTerraform(struct?: BcmdataexportsExportExportDestinationConfigurations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_destination: {
-      value: cdktf.listMapperHcl(bcmdataexportsExportExportDestinationConfigurationsS3DestinationToHclTerraform, true)(struct!.s3Destination),
+      value: cdktn.listMapperHcl(bcmdataexportsExportExportDestinationConfigurationsS3DestinationToHclTerraform, true)(struct!.s3Destination),
       isBlock: true,
       type: "list",
       storageClassType: "BcmdataexportsExportExportDestinationConfigurationsS3DestinationList",
@@ -624,9 +624,9 @@ export function bcmdataexportsExportExportDestinationConfigurationsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BcmdataexportsExportExportDestinationConfigurationsOutputReference extends cdktf.ComplexObject {
+export class BcmdataexportsExportExportDestinationConfigurationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -634,11 +634,11 @@ export class BcmdataexportsExportExportDestinationConfigurationsOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BcmdataexportsExportExportDestinationConfigurations | cdktf.IResolvable | undefined {
+  public get internalValue(): BcmdataexportsExportExportDestinationConfigurations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -651,13 +651,13 @@ export class BcmdataexportsExportExportDestinationConfigurationsOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BcmdataexportsExportExportDestinationConfigurations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BcmdataexportsExportExportDestinationConfigurations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._s3Destination.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -673,7 +673,7 @@ export class BcmdataexportsExportExportDestinationConfigurationsOutputReference 
   public get s3Destination() {
     return this._s3Destination;
   }
-  public putS3Destination(value: BcmdataexportsExportExportDestinationConfigurationsS3Destination[] | cdktf.IResolvable) {
+  public putS3Destination(value: BcmdataexportsExportExportDestinationConfigurationsS3Destination[] | cdktn.IResolvable) {
     this._s3Destination.internalValue = value;
   }
   public resetS3Destination() {
@@ -685,15 +685,15 @@ export class BcmdataexportsExportExportDestinationConfigurationsOutputReference 
   }
 }
 
-export class BcmdataexportsExportExportDestinationConfigurationsList extends cdktf.ComplexList {
-  public internalValue? : BcmdataexportsExportExportDestinationConfigurations[] | cdktf.IResolvable
+export class BcmdataexportsExportExportDestinationConfigurationsList extends cdktn.ComplexList {
+  public internalValue? : BcmdataexportsExportExportDestinationConfigurations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -711,25 +711,25 @@ export interface BcmdataexportsExportExportRefreshCadence {
   readonly frequency: string;
 }
 
-export function bcmdataexportsExportExportRefreshCadenceToTerraform(struct?: BcmdataexportsExportExportRefreshCadence | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bcmdataexportsExportExportRefreshCadenceToTerraform(struct?: BcmdataexportsExportExportRefreshCadence | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    frequency: cdktf.stringToTerraform(struct!.frequency),
+    frequency: cdktn.stringToTerraform(struct!.frequency),
   }
 }
 
 
-export function bcmdataexportsExportExportRefreshCadenceToHclTerraform(struct?: BcmdataexportsExportExportRefreshCadence | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bcmdataexportsExportExportRefreshCadenceToHclTerraform(struct?: BcmdataexportsExportExportRefreshCadence | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     frequency: {
-      value: cdktf.stringToHclTerraform(struct!.frequency),
+      value: cdktn.stringToHclTerraform(struct!.frequency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -740,9 +740,9 @@ export function bcmdataexportsExportExportRefreshCadenceToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BcmdataexportsExportExportRefreshCadenceOutputReference extends cdktf.ComplexObject {
+export class BcmdataexportsExportExportRefreshCadenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -750,11 +750,11 @@ export class BcmdataexportsExportExportRefreshCadenceOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BcmdataexportsExportExportRefreshCadence | cdktf.IResolvable | undefined {
+  public get internalValue(): BcmdataexportsExportExportRefreshCadence | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -767,13 +767,13 @@ export class BcmdataexportsExportExportRefreshCadenceOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BcmdataexportsExportExportRefreshCadence | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BcmdataexportsExportExportRefreshCadence | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._frequency = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -798,15 +798,15 @@ export class BcmdataexportsExportExportRefreshCadenceOutputReference extends cdk
   }
 }
 
-export class BcmdataexportsExportExportRefreshCadenceList extends cdktf.ComplexList {
-  public internalValue? : BcmdataexportsExportExportRefreshCadence[] | cdktf.IResolvable
+export class BcmdataexportsExportExportRefreshCadenceList extends cdktn.ComplexList {
+  public internalValue? : BcmdataexportsExportExportRefreshCadence[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -831,68 +831,68 @@ export interface BcmdataexportsExportExport {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bcmdataexports_export#data_query BcmdataexportsExport#data_query}
   */
-  readonly dataQuery?: BcmdataexportsExportExportDataQuery[] | cdktf.IResolvable;
+  readonly dataQuery?: BcmdataexportsExportExportDataQuery[] | cdktn.IResolvable;
   /**
   * destination_configurations block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bcmdataexports_export#destination_configurations BcmdataexportsExport#destination_configurations}
   */
-  readonly destinationConfigurations?: BcmdataexportsExportExportDestinationConfigurations[] | cdktf.IResolvable;
+  readonly destinationConfigurations?: BcmdataexportsExportExportDestinationConfigurations[] | cdktn.IResolvable;
   /**
   * refresh_cadence block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bcmdataexports_export#refresh_cadence BcmdataexportsExport#refresh_cadence}
   */
-  readonly refreshCadence?: BcmdataexportsExportExportRefreshCadence[] | cdktf.IResolvable;
+  readonly refreshCadence?: BcmdataexportsExportExportRefreshCadence[] | cdktn.IResolvable;
 }
 
-export function bcmdataexportsExportExportToTerraform(struct?: BcmdataexportsExportExport | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bcmdataexportsExportExportToTerraform(struct?: BcmdataexportsExportExport | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    data_query: cdktf.listMapper(bcmdataexportsExportExportDataQueryToTerraform, true)(struct!.dataQuery),
-    destination_configurations: cdktf.listMapper(bcmdataexportsExportExportDestinationConfigurationsToTerraform, true)(struct!.destinationConfigurations),
-    refresh_cadence: cdktf.listMapper(bcmdataexportsExportExportRefreshCadenceToTerraform, true)(struct!.refreshCadence),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    data_query: cdktn.listMapper(bcmdataexportsExportExportDataQueryToTerraform, true)(struct!.dataQuery),
+    destination_configurations: cdktn.listMapper(bcmdataexportsExportExportDestinationConfigurationsToTerraform, true)(struct!.destinationConfigurations),
+    refresh_cadence: cdktn.listMapper(bcmdataexportsExportExportRefreshCadenceToTerraform, true)(struct!.refreshCadence),
   }
 }
 
 
-export function bcmdataexportsExportExportToHclTerraform(struct?: BcmdataexportsExportExport | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bcmdataexportsExportExportToHclTerraform(struct?: BcmdataexportsExportExport | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_query: {
-      value: cdktf.listMapperHcl(bcmdataexportsExportExportDataQueryToHclTerraform, true)(struct!.dataQuery),
+      value: cdktn.listMapperHcl(bcmdataexportsExportExportDataQueryToHclTerraform, true)(struct!.dataQuery),
       isBlock: true,
       type: "list",
       storageClassType: "BcmdataexportsExportExportDataQueryList",
     },
     destination_configurations: {
-      value: cdktf.listMapperHcl(bcmdataexportsExportExportDestinationConfigurationsToHclTerraform, true)(struct!.destinationConfigurations),
+      value: cdktn.listMapperHcl(bcmdataexportsExportExportDestinationConfigurationsToHclTerraform, true)(struct!.destinationConfigurations),
       isBlock: true,
       type: "list",
       storageClassType: "BcmdataexportsExportExportDestinationConfigurationsList",
     },
     refresh_cadence: {
-      value: cdktf.listMapperHcl(bcmdataexportsExportExportRefreshCadenceToHclTerraform, true)(struct!.refreshCadence),
+      value: cdktn.listMapperHcl(bcmdataexportsExportExportRefreshCadenceToHclTerraform, true)(struct!.refreshCadence),
       isBlock: true,
       type: "list",
       storageClassType: "BcmdataexportsExportExportRefreshCadenceList",
@@ -903,9 +903,9 @@ export function bcmdataexportsExportExportToHclTerraform(struct?: Bcmdataexports
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BcmdataexportsExportExportOutputReference extends cdktf.ComplexObject {
+export class BcmdataexportsExportExportOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -913,11 +913,11 @@ export class BcmdataexportsExportExportOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BcmdataexportsExportExport | cdktf.IResolvable | undefined {
+  public get internalValue(): BcmdataexportsExportExport | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -946,7 +946,7 @@ export class BcmdataexportsExportExportOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BcmdataexportsExportExport | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BcmdataexportsExportExport | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -956,7 +956,7 @@ export class BcmdataexportsExportExportOutputReference extends cdktf.ComplexObje
       this._destinationConfigurations.internalValue = undefined;
       this._refreshCadence.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1010,7 +1010,7 @@ export class BcmdataexportsExportExportOutputReference extends cdktf.ComplexObje
   public get dataQuery() {
     return this._dataQuery;
   }
-  public putDataQuery(value: BcmdataexportsExportExportDataQuery[] | cdktf.IResolvable) {
+  public putDataQuery(value: BcmdataexportsExportExportDataQuery[] | cdktn.IResolvable) {
     this._dataQuery.internalValue = value;
   }
   public resetDataQuery() {
@@ -1026,7 +1026,7 @@ export class BcmdataexportsExportExportOutputReference extends cdktf.ComplexObje
   public get destinationConfigurations() {
     return this._destinationConfigurations;
   }
-  public putDestinationConfigurations(value: BcmdataexportsExportExportDestinationConfigurations[] | cdktf.IResolvable) {
+  public putDestinationConfigurations(value: BcmdataexportsExportExportDestinationConfigurations[] | cdktn.IResolvable) {
     this._destinationConfigurations.internalValue = value;
   }
   public resetDestinationConfigurations() {
@@ -1042,7 +1042,7 @@ export class BcmdataexportsExportExportOutputReference extends cdktf.ComplexObje
   public get refreshCadence() {
     return this._refreshCadence;
   }
-  public putRefreshCadence(value: BcmdataexportsExportExportRefreshCadence[] | cdktf.IResolvable) {
+  public putRefreshCadence(value: BcmdataexportsExportExportRefreshCadence[] | cdktn.IResolvable) {
     this._refreshCadence.internalValue = value;
   }
   public resetRefreshCadence() {
@@ -1054,15 +1054,15 @@ export class BcmdataexportsExportExportOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class BcmdataexportsExportExportList extends cdktf.ComplexList {
-  public internalValue? : BcmdataexportsExportExport[] | cdktf.IResolvable
+export class BcmdataexportsExportExportList extends cdktn.ComplexList {
+  public internalValue? : BcmdataexportsExportExport[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1088,32 +1088,32 @@ export interface BcmdataexportsExportTimeouts {
   readonly update?: string;
 }
 
-export function bcmdataexportsExportTimeoutsToTerraform(struct?: BcmdataexportsExportTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bcmdataexportsExportTimeoutsToTerraform(struct?: BcmdataexportsExportTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function bcmdataexportsExportTimeoutsToHclTerraform(struct?: BcmdataexportsExportTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bcmdataexportsExportTimeoutsToHclTerraform(struct?: BcmdataexportsExportTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1124,19 +1124,19 @@ export function bcmdataexportsExportTimeoutsToHclTerraform(struct?: Bcmdataexpor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BcmdataexportsExportTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BcmdataexportsExportTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BcmdataexportsExportTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BcmdataexportsExportTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1153,14 +1153,14 @@ export class BcmdataexportsExportTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BcmdataexportsExportTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BcmdataexportsExportTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1208,7 +1208,7 @@ export class BcmdataexportsExportTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bcmdataexports_export aws_bcmdataexports_export}
 */
-export class BcmdataexportsExport extends cdktf.TerraformResource {
+export class BcmdataexportsExport extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1219,14 +1219,14 @@ export class BcmdataexportsExport extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BcmdataexportsExport resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BcmdataexportsExport resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BcmdataexportsExport to import
   * @param importFromId The id of the existing BcmdataexportsExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bcmdataexports_export#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BcmdataexportsExport to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bcmdataexports_export", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bcmdataexports_export", importId: importFromId, provider });
       }
 
   // ===========
@@ -1292,7 +1292,7 @@ export class BcmdataexportsExport extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1302,7 +1302,7 @@ export class BcmdataexportsExport extends cdktf.TerraformResource {
   public get export() {
     return this._export;
   }
-  public putExport(value: BcmdataexportsExportExport[] | cdktf.IResolvable) {
+  public putExport(value: BcmdataexportsExportExport[] | cdktn.IResolvable) {
     this._export.internalValue = value;
   }
   public resetExport() {
@@ -1335,8 +1335,8 @@ export class BcmdataexportsExport extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      export: cdktf.listMapper(bcmdataexportsExportExportToTerraform, true)(this._export.internalValue),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      export: cdktn.listMapper(bcmdataexportsExportExportToTerraform, true)(this._export.internalValue),
       timeouts: bcmdataexportsExportTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1344,13 +1344,13 @@ export class BcmdataexportsExport extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       export: {
-        value: cdktf.listMapperHcl(bcmdataexportsExportExportToHclTerraform, true)(this._export.internalValue),
+        value: cdktn.listMapperHcl(bcmdataexportsExportExportToHclTerraform, true)(this._export.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BcmdataexportsExportExportList",

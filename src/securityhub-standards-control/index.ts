@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecurityhubStandardsControlConfig extends cdktf.TerraformMetaArguments {
+export interface SecurityhubStandardsControlConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_standards_control#control_status SecurityhubStandardsControl#control_status}
   */
@@ -42,7 +42,7 @@ export interface SecurityhubStandardsControlConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_standards_control aws_securityhub_standards_control}
 */
-export class SecurityhubStandardsControl extends cdktf.TerraformResource {
+export class SecurityhubStandardsControl extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class SecurityhubStandardsControl extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecurityhubStandardsControl resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecurityhubStandardsControl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityhubStandardsControl to import
   * @param importFromId The id of the existing SecurityhubStandardsControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_standards_control#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityhubStandardsControl to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_securityhub_standards_control", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_securityhub_standards_control", importId: importFromId, provider });
       }
 
   // ===========
@@ -216,42 +216,42 @@ export class SecurityhubStandardsControl extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      control_status: cdktf.stringToTerraform(this._controlStatus),
-      disabled_reason: cdktf.stringToTerraform(this._disabledReason),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      standards_control_arn: cdktf.stringToTerraform(this._standardsControlArn),
+      control_status: cdktn.stringToTerraform(this._controlStatus),
+      disabled_reason: cdktn.stringToTerraform(this._disabledReason),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      standards_control_arn: cdktn.stringToTerraform(this._standardsControlArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       control_status: {
-        value: cdktf.stringToHclTerraform(this._controlStatus),
+        value: cdktn.stringToHclTerraform(this._controlStatus),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disabled_reason: {
-        value: cdktf.stringToHclTerraform(this._disabledReason),
+        value: cdktn.stringToHclTerraform(this._disabledReason),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       standards_control_arn: {
-        value: cdktf.stringToHclTerraform(this._standardsControlArn),
+        value: cdktn.stringToHclTerraform(this._standardsControlArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

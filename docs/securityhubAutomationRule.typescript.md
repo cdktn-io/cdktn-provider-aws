@@ -298,7 +298,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -380,7 +380,7 @@ public putActions(value: IResolvable | SecurityhubAutomationRuleActions[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.putActions.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>[]
 
 ---
 
@@ -392,7 +392,7 @@ public putCriteria(value: IResolvable | SecurityhubAutomationRuleCriteria[]): vo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.putCriteria.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>[]
 
 ---
 
@@ -439,7 +439,7 @@ public resetTags(): void
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a SecurityhubAutomationRule resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a SecurityhubAutomationRule resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -511,7 +511,7 @@ import { securityhubAutomationRule } from '@cdktn/provider-aws'
 securityhubAutomationRule.SecurityhubAutomationRule.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a SecurityhubAutomationRule resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a SecurityhubAutomationRule resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.generateConfigForImport.parameter.scope"></a>
 
@@ -541,7 +541,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the SecurityhubAutomationRule to import is found.
 
@@ -552,35 +552,35 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.actions">actions</a></code> | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList">SecurityhubAutomationRuleActionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.criteria">criteria</a></code> | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList">SecurityhubAutomationRuleCriteriaList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.tagsAll">tagsAll</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.actionsInput">actionsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.criteriaInput">criteriaInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.tagsAll">tagsAll</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.actionsInput">actionsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.criteriaInput">criteriaInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminalInput">isTerminalInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminalInput">isTerminalInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.ruleNameInput">ruleNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.ruleOrderInput">ruleOrderInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.ruleStatusInput">ruleStatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminal">isTerminal</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminal">isTerminal</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.ruleName">ruleName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.ruleOrder">ruleOrder</a></code> | <code>number</code> | *No description.* |
@@ -607,7 +607,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -657,7 +657,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -667,7 +667,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -677,7 +677,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -697,7 +697,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -707,7 +707,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -717,7 +717,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -727,7 +727,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -777,7 +777,7 @@ public readonly id: string;
 public readonly tagsAll: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -787,7 +787,7 @@ public readonly tagsAll: StringMap;
 public readonly actionsInput: IResolvable | SecurityhubAutomationRuleActions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>[]
 
 ---
 
@@ -797,7 +797,7 @@ public readonly actionsInput: IResolvable | SecurityhubAutomationRuleActions[];
 public readonly criteriaInput: IResolvable | SecurityhubAutomationRuleCriteria[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>[]
 
 ---
 
@@ -817,7 +817,7 @@ public readonly descriptionInput: string;
 public readonly isTerminalInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -887,7 +887,7 @@ public readonly description: string;
 public readonly isTerminal: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -975,7 +975,7 @@ const securityhubAutomationRuleActions: securityhubAutomationRule.SecurityhubAut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.findingFieldsUpdate">findingFieldsUpdate</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>[]</code> | finding_fields_update block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.findingFieldsUpdate">findingFieldsUpdate</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>[]</code> | finding_fields_update block. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}. |
 
 ---
@@ -986,7 +986,7 @@ const securityhubAutomationRuleActions: securityhubAutomationRule.SecurityhubAut
 public readonly findingFieldsUpdate: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdate[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>[]
 
 finding_fields_update block.
 
@@ -1022,13 +1022,13 @@ const securityhubAutomationRuleActionsFindingFieldsUpdate: securityhubAutomation
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.confidence">confidence</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.criticality">criticality</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.note">note</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>[]</code> | note block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.relatedFindings">relatedFindings</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>[]</code> | related_findings block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.severity">severity</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>[]</code> | severity block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.note">note</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>[]</code> | note block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.relatedFindings">relatedFindings</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>[]</code> | related_findings block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.severity">severity</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>[]</code> | severity block. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.types">types</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#types SecurityhubAutomationRule#types}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.userDefinedFields">userDefinedFields</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.verificationState">verificationState</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.workflow">workflow</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>[]</code> | workflow block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.workflow">workflow</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>[]</code> | workflow block. |
 
 ---
 
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly note: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateNote[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>[]
 
 note block.
 
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly relatedFindings: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>[]
 
 related_findings block.
 
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly severity: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>[]
 
 severity block.
 
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly workflow: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>[]
 
 workflow block.
 
@@ -1324,19 +1324,19 @@ const securityhubAutomationRuleConfig: securityhubAutomationRule.SecurityhubAuto
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleName">ruleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleOrder">ruleOrder</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.actions">actions</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>[]</code> | actions block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.criteria">criteria</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>[]</code> | criteria block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.isTerminal">isTerminal</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.actions">actions</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>[]</code> | actions block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.criteria">criteria</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>[]</code> | criteria block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.isTerminal">isTerminal</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleStatus">ruleStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}. |
@@ -1349,7 +1349,7 @@ const securityhubAutomationRuleConfig: securityhubAutomationRule.SecurityhubAuto
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1359,7 +1359,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1369,7 +1369,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1379,7 +1379,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1389,7 +1389,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1399,7 +1399,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1409,7 +1409,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1455,7 +1455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly actions: IResolvable | SecurityhubAutomationRuleActions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>[]
 
 actions block.
 
@@ -1469,7 +1469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly criteria: IResolvable | SecurityhubAutomationRuleCriteria[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>[]
 
 criteria block.
 
@@ -1483,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly isTerminal: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}.
 
@@ -1541,44 +1541,44 @@ const securityhubAutomationRuleCriteria: securityhubAutomationRule.SecurityhubAu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountId">awsAccountId</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>[]</code> | aws_account_id block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountName">awsAccountName</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>[]</code> | aws_account_name block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.companyName">companyName</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>[]</code> | company_name block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceAssociatedStandardsId">complianceAssociatedStandardsId</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>[]</code> | compliance_associated_standards_id block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceSecurityControlId">complianceSecurityControlId</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>[]</code> | compliance_security_control_id block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceStatus">complianceStatus</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>[]</code> | compliance_status block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.confidence">confidence</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>[]</code> | confidence block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.createdAt">createdAt</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>[]</code> | created_at block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.criticality">criticality</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>[]</code> | criticality block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.description">description</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>[]</code> | description block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.firstObservedAt">firstObservedAt</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>[]</code> | first_observed_at block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.generatorId">generatorId</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>[]</code> | generator_id block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.id">id</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>[]</code> | id block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.lastObservedAt">lastObservedAt</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>[]</code> | last_observed_at block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteText">noteText</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>[]</code> | note_text block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedAt">noteUpdatedAt</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>[]</code> | note_updated_at block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedBy">noteUpdatedBy</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>[]</code> | note_updated_by block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productArn">productArn</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>[]</code> | product_arn block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productName">productName</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>[]</code> | product_name block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.recordState">recordState</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>[]</code> | record_state block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsId">relatedFindingsId</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>[]</code> | related_findings_id block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsProductArn">relatedFindingsProductArn</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>[]</code> | related_findings_product_arn block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationArn">resourceApplicationArn</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>[]</code> | resource_application_arn block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationName">resourceApplicationName</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>[]</code> | resource_application_name block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceDetailsOther">resourceDetailsOther</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>[]</code> | resource_details_other block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceId">resourceId</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>[]</code> | resource_id block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourcePartition">resourcePartition</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>[]</code> | resource_partition block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceRegion">resourceRegion</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>[]</code> | resource_region block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceTags">resourceTags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>[]</code> | resource_tags block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceType">resourceType</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>[]</code> | resource_type block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.severityLabel">severityLabel</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>[]</code> | severity_label block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.sourceUrl">sourceUrl</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>[]</code> | source_url block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.title">title</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>[]</code> | title block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.type">type</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>[]</code> | type block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.updatedAt">updatedAt</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>[]</code> | updated_at block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.userDefinedFields">userDefinedFields</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>[]</code> | user_defined_fields block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.verificationState">verificationState</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>[]</code> | verification_state block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.workflowStatus">workflowStatus</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>[]</code> | workflow_status block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountId">awsAccountId</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>[]</code> | aws_account_id block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountName">awsAccountName</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>[]</code> | aws_account_name block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.companyName">companyName</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>[]</code> | company_name block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceAssociatedStandardsId">complianceAssociatedStandardsId</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>[]</code> | compliance_associated_standards_id block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceSecurityControlId">complianceSecurityControlId</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>[]</code> | compliance_security_control_id block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceStatus">complianceStatus</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>[]</code> | compliance_status block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.confidence">confidence</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>[]</code> | confidence block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.createdAt">createdAt</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>[]</code> | created_at block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.criticality">criticality</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>[]</code> | criticality block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.description">description</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>[]</code> | description block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.firstObservedAt">firstObservedAt</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>[]</code> | first_observed_at block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.generatorId">generatorId</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>[]</code> | generator_id block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.id">id</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>[]</code> | id block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.lastObservedAt">lastObservedAt</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>[]</code> | last_observed_at block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteText">noteText</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>[]</code> | note_text block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedAt">noteUpdatedAt</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>[]</code> | note_updated_at block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedBy">noteUpdatedBy</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>[]</code> | note_updated_by block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productArn">productArn</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>[]</code> | product_arn block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productName">productName</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>[]</code> | product_name block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.recordState">recordState</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>[]</code> | record_state block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsId">relatedFindingsId</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>[]</code> | related_findings_id block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsProductArn">relatedFindingsProductArn</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>[]</code> | related_findings_product_arn block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationArn">resourceApplicationArn</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>[]</code> | resource_application_arn block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationName">resourceApplicationName</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>[]</code> | resource_application_name block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceDetailsOther">resourceDetailsOther</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>[]</code> | resource_details_other block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceId">resourceId</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>[]</code> | resource_id block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourcePartition">resourcePartition</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>[]</code> | resource_partition block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceRegion">resourceRegion</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>[]</code> | resource_region block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceTags">resourceTags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>[]</code> | resource_tags block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceType">resourceType</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>[]</code> | resource_type block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.severityLabel">severityLabel</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>[]</code> | severity_label block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.sourceUrl">sourceUrl</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>[]</code> | source_url block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.title">title</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>[]</code> | title block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.type">type</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>[]</code> | type block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.updatedAt">updatedAt</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>[]</code> | updated_at block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.userDefinedFields">userDefinedFields</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>[]</code> | user_defined_fields block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.verificationState">verificationState</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>[]</code> | verification_state block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.workflowStatus">workflowStatus</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>[]</code> | workflow_status block. |
 
 ---
 
@@ -1588,7 +1588,7 @@ const securityhubAutomationRuleCriteria: securityhubAutomationRule.SecurityhubAu
 public readonly awsAccountId: IResolvable | SecurityhubAutomationRuleCriteriaAwsAccountId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>[]
 
 aws_account_id block.
 
@@ -1602,7 +1602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly awsAccountName: IResolvable | SecurityhubAutomationRuleCriteriaAwsAccountName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>[]
 
 aws_account_name block.
 
@@ -1616,7 +1616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly companyName: IResolvable | SecurityhubAutomationRuleCriteriaCompanyName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>[]
 
 company_name block.
 
@@ -1630,7 +1630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly complianceAssociatedStandardsId: IResolvable | SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>[]
 
 compliance_associated_standards_id block.
 
@@ -1644,7 +1644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly complianceSecurityControlId: IResolvable | SecurityhubAutomationRuleCriteriaComplianceSecurityControlId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>[]
 
 compliance_security_control_id block.
 
@@ -1658,7 +1658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly complianceStatus: IResolvable | SecurityhubAutomationRuleCriteriaComplianceStatus[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>[]
 
 compliance_status block.
 
@@ -1672,7 +1672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly confidence: IResolvable | SecurityhubAutomationRuleCriteriaConfidence[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>[]
 
 confidence block.
 
@@ -1686,7 +1686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly createdAt: IResolvable | SecurityhubAutomationRuleCriteriaCreatedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>[]
 
 created_at block.
 
@@ -1700,7 +1700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly criticality: IResolvable | SecurityhubAutomationRuleCriteriaCriticality[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>[]
 
 criticality block.
 
@@ -1714,7 +1714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly description: IResolvable | SecurityhubAutomationRuleCriteriaDescription[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>[]
 
 description block.
 
@@ -1728,7 +1728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly firstObservedAt: IResolvable | SecurityhubAutomationRuleCriteriaFirstObservedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>[]
 
 first_observed_at block.
 
@@ -1742,7 +1742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly generatorId: IResolvable | SecurityhubAutomationRuleCriteriaGeneratorId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>[]
 
 generator_id block.
 
@@ -1756,7 +1756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly id: IResolvable | SecurityhubAutomationRuleCriteriaId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>[]
 
 id block.
 
@@ -1773,7 +1773,7 @@ If you experience problems setting this value it might not be settable. Please t
 public readonly lastObservedAt: IResolvable | SecurityhubAutomationRuleCriteriaLastObservedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>[]
 
 last_observed_at block.
 
@@ -1787,7 +1787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly noteText: IResolvable | SecurityhubAutomationRuleCriteriaNoteText[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>[]
 
 note_text block.
 
@@ -1801,7 +1801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly noteUpdatedAt: IResolvable | SecurityhubAutomationRuleCriteriaNoteUpdatedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>[]
 
 note_updated_at block.
 
@@ -1815,7 +1815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly noteUpdatedBy: IResolvable | SecurityhubAutomationRuleCriteriaNoteUpdatedBy[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>[]
 
 note_updated_by block.
 
@@ -1829,7 +1829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly productArn: IResolvable | SecurityhubAutomationRuleCriteriaProductArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>[]
 
 product_arn block.
 
@@ -1843,7 +1843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly productName: IResolvable | SecurityhubAutomationRuleCriteriaProductName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>[]
 
 product_name block.
 
@@ -1857,7 +1857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly recordState: IResolvable | SecurityhubAutomationRuleCriteriaRecordState[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>[]
 
 record_state block.
 
@@ -1871,7 +1871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly relatedFindingsId: IResolvable | SecurityhubAutomationRuleCriteriaRelatedFindingsId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>[]
 
 related_findings_id block.
 
@@ -1885,7 +1885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly relatedFindingsProductArn: IResolvable | SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>[]
 
 related_findings_product_arn block.
 
@@ -1899,7 +1899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly resourceApplicationArn: IResolvable | SecurityhubAutomationRuleCriteriaResourceApplicationArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>[]
 
 resource_application_arn block.
 
@@ -1913,7 +1913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly resourceApplicationName: IResolvable | SecurityhubAutomationRuleCriteriaResourceApplicationName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>[]
 
 resource_application_name block.
 
@@ -1927,7 +1927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly resourceDetailsOther: IResolvable | SecurityhubAutomationRuleCriteriaResourceDetailsOther[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>[]
 
 resource_details_other block.
 
@@ -1941,7 +1941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly resourceId: IResolvable | SecurityhubAutomationRuleCriteriaResourceId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>[]
 
 resource_id block.
 
@@ -1955,7 +1955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly resourcePartition: IResolvable | SecurityhubAutomationRuleCriteriaResourcePartition[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>[]
 
 resource_partition block.
 
@@ -1969,7 +1969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly resourceRegion: IResolvable | SecurityhubAutomationRuleCriteriaResourceRegion[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>[]
 
 resource_region block.
 
@@ -1983,7 +1983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly resourceTags: IResolvable | SecurityhubAutomationRuleCriteriaResourceTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>[]
 
 resource_tags block.
 
@@ -1997,7 +1997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly resourceType: IResolvable | SecurityhubAutomationRuleCriteriaResourceType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>[]
 
 resource_type block.
 
@@ -2011,7 +2011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly severityLabel: IResolvable | SecurityhubAutomationRuleCriteriaSeverityLabel[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>[]
 
 severity_label block.
 
@@ -2025,7 +2025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly sourceUrl: IResolvable | SecurityhubAutomationRuleCriteriaSourceUrl[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>[]
 
 source_url block.
 
@@ -2039,7 +2039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly title: IResolvable | SecurityhubAutomationRuleCriteriaTitle[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>[]
 
 title block.
 
@@ -2053,7 +2053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly type: IResolvable | SecurityhubAutomationRuleCriteriaType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>[]
 
 type block.
 
@@ -2067,7 +2067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly updatedAt: IResolvable | SecurityhubAutomationRuleCriteriaUpdatedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>[]
 
 updated_at block.
 
@@ -2081,7 +2081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly userDefinedFields: IResolvable | SecurityhubAutomationRuleCriteriaUserDefinedFields[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>[]
 
 user_defined_fields block.
 
@@ -2095,7 +2095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly verificationState: IResolvable | SecurityhubAutomationRuleCriteriaVerificationState[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>[]
 
 verification_state block.
 
@@ -2109,7 +2109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly workflowStatus: IResolvable | SecurityhubAutomationRuleCriteriaWorkflowStatus[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>[]
 
 workflow_status block.
 
@@ -2471,7 +2471,7 @@ const securityhubAutomationRuleCriteriaCreatedAt: securityhubAutomationRule.Secu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.dateRange">dateRange</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>[]</code> | date_range block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.dateRange">dateRange</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>[]</code> | date_range block. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.end">end</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.start">start</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
@@ -2483,7 +2483,7 @@ const securityhubAutomationRuleCriteriaCreatedAt: securityhubAutomationRule.Secu
 public readonly dateRange: IResolvable | SecurityhubAutomationRuleCriteriaCreatedAtDateRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>[]
 
 date_range block.
 
@@ -2697,7 +2697,7 @@ const securityhubAutomationRuleCriteriaFirstObservedAt: securityhubAutomationRul
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.dateRange">dateRange</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>[]</code> | date_range block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.dateRange">dateRange</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>[]</code> | date_range block. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.end">end</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.start">start</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
@@ -2709,7 +2709,7 @@ const securityhubAutomationRuleCriteriaFirstObservedAt: securityhubAutomationRul
 public readonly dateRange: IResolvable | SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>[]
 
 date_range block.
 
@@ -2884,7 +2884,7 @@ const securityhubAutomationRuleCriteriaLastObservedAt: securityhubAutomationRule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.dateRange">dateRange</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>[]</code> | date_range block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.dateRange">dateRange</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>[]</code> | date_range block. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.end">end</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.start">start</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
@@ -2896,7 +2896,7 @@ const securityhubAutomationRuleCriteriaLastObservedAt: securityhubAutomationRule
 public readonly dateRange: IResolvable | SecurityhubAutomationRuleCriteriaLastObservedAtDateRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>[]
 
 date_range block.
 
@@ -3028,7 +3028,7 @@ const securityhubAutomationRuleCriteriaNoteUpdatedAt: securityhubAutomationRule.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.dateRange">dateRange</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>[]</code> | date_range block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.dateRange">dateRange</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>[]</code> | date_range block. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.end">end</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.start">start</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
@@ -3040,7 +3040,7 @@ const securityhubAutomationRuleCriteriaNoteUpdatedAt: securityhubAutomationRule.
 public readonly dateRange: IResolvable | SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>[]
 
 date_range block.
 
@@ -3929,7 +3929,7 @@ const securityhubAutomationRuleCriteriaUpdatedAt: securityhubAutomationRule.Secu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.dateRange">dateRange</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>[]</code> | date_range block. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.dateRange">dateRange</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>[]</code> | date_range block. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.end">end</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.start">start</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
@@ -3941,7 +3941,7 @@ const securityhubAutomationRuleCriteriaUpdatedAt: securityhubAutomationRule.Secu
 public readonly dateRange: IResolvable | SecurityhubAutomationRuleCriteriaUpdatedAtDateRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>[]
 
 date_range block.
 
@@ -4172,7 +4172,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4180,7 +4180,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4246,7 +4246,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4281,7 +4281,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>[]</code> | *No description.* |
 
 ---
 
@@ -4315,7 +4315,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdate[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>[]
 
 ---
 
@@ -4332,7 +4332,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4340,7 +4340,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4406,7 +4406,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4441,7 +4441,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>[]</code> | *No description.* |
 
 ---
 
@@ -4475,7 +4475,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateNote[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>[]
 
 ---
 
@@ -4492,7 +4492,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4501,7 +4501,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4687,7 +4687,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4712,7 +4712,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.updatedByInput">updatedByInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.text">text</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.updatedBy">updatedBy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a></code> | *No description.* |
 
 ---
 
@@ -4786,7 +4786,7 @@ public readonly updatedBy: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateNote;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>
 
 ---
 
@@ -4803,7 +4803,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4812,7 +4812,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5011,7 +5011,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5033,7 +5033,7 @@ public putNote(value: IResolvable | SecurityhubAutomationRuleActionsFindingField
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putNote.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>[]
 
 ---
 
@@ -5045,7 +5045,7 @@ public putRelatedFindings(value: IResolvable | SecurityhubAutomationRuleActionsF
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putRelatedFindings.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>[]
 
 ---
 
@@ -5057,7 +5057,7 @@ public putSeverity(value: IResolvable | SecurityhubAutomationRuleActionsFindingF
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putSeverity.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>[]
 
 ---
 
@@ -5069,7 +5069,7 @@ public putWorkflow(value: IResolvable | SecurityhubAutomationRuleActionsFindingF
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putWorkflow.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>[]
 
 ---
 
@@ -5140,19 +5140,19 @@ public resetWorkflow(): void
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.workflow">workflow</a></code> | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.confidenceInput">confidenceInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.criticalityInput">criticalityInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.noteInput">noteInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.relatedFindingsInput">relatedFindingsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.severityInput">severityInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.noteInput">noteInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.relatedFindingsInput">relatedFindingsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.severityInput">severityInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.typesInput">typesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.userDefinedFieldsInput">userDefinedFieldsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.verificationStateInput">verificationStateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.workflowInput">workflowInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.workflowInput">workflowInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.confidence">confidence</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.criticality">criticality</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.types">types</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.userDefinedFields">userDefinedFields</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.verificationState">verificationState</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a></code> | *No description.* |
 
 ---
 
@@ -5246,7 +5246,7 @@ public readonly criticalityInput: number;
 public readonly noteInput: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateNote[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>[]
 
 ---
 
@@ -5256,7 +5256,7 @@ public readonly noteInput: IResolvable | SecurityhubAutomationRuleActionsFinding
 public readonly relatedFindingsInput: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>[]
 
 ---
 
@@ -5266,7 +5266,7 @@ public readonly relatedFindingsInput: IResolvable | SecurityhubAutomationRuleAct
 public readonly severityInput: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>[]
 
 ---
 
@@ -5306,7 +5306,7 @@ public readonly verificationStateInput: string;
 public readonly workflowInput: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>[]
 
 ---
 
@@ -5366,7 +5366,7 @@ public readonly verificationState: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdate;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>
 
 ---
 
@@ -5383,7 +5383,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5391,7 +5391,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5457,7 +5457,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5492,7 +5492,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>[]</code> | *No description.* |
 
 ---
 
@@ -5526,7 +5526,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>[]
 
 ---
 
@@ -5543,7 +5543,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5552,7 +5552,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5738,7 +5738,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5763,7 +5763,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.productArnInput">productArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.productArn">productArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a></code> | *No description.* |
 
 ---
 
@@ -5837,7 +5837,7 @@ public readonly productArn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>
 
 ---
 
@@ -5854,7 +5854,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5862,7 +5862,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5928,7 +5928,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5963,7 +5963,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>[]</code> | *No description.* |
 
 ---
 
@@ -5997,7 +5997,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>[]
 
 ---
 
@@ -6014,7 +6014,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6023,7 +6023,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6211,7 +6211,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6248,7 +6248,7 @@ public resetProduct(): void
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.productInput">productInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.label">label</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.product">product</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a></code> | *No description.* |
 
 ---
 
@@ -6322,7 +6322,7 @@ public readonly product: number;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>
 
 ---
 
@@ -6339,7 +6339,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6347,7 +6347,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6413,7 +6413,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6448,7 +6448,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>[]</code> | *No description.* |
 
 ---
 
@@ -6482,7 +6482,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>[]
 
 ---
 
@@ -6499,7 +6499,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6508,7 +6508,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6695,7 +6695,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6724,7 +6724,7 @@ public resetStatus(): void
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.statusInput">statusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a></code> | *No description.* |
 
 ---
 
@@ -6778,7 +6778,7 @@ public readonly status: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>
 
 ---
 
@@ -6795,7 +6795,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsList(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6803,7 +6803,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsList(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6869,7 +6869,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6904,7 +6904,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>[]</code> | *No description.* |
 
 ---
 
@@ -6938,7 +6938,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleActions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>[]
 
 ---
 
@@ -6955,7 +6955,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6964,7 +6964,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7153,7 +7153,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7175,7 +7175,7 @@ public putFindingFieldsUpdate(value: IResolvable | SecurityhubAutomationRuleActi
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.putFindingFieldsUpdate.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>[]
 
 ---
 
@@ -7199,10 +7199,10 @@ public resetType(): void
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.findingFieldsUpdate">findingFieldsUpdate</a></code> | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList">SecurityhubAutomationRuleActionsFindingFieldsUpdateList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.findingFieldsUpdateInput">findingFieldsUpdateInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.findingFieldsUpdateInput">findingFieldsUpdateInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a></code> | *No description.* |
 
 ---
 
@@ -7246,7 +7246,7 @@ public readonly findingFieldsUpdate: SecurityhubAutomationRuleActionsFindingFiel
 public readonly findingFieldsUpdateInput: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdate[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>[]
 
 ---
 
@@ -7276,7 +7276,7 @@ public readonly type: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleActions;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>
 
 ---
 
@@ -7293,7 +7293,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7301,7 +7301,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7367,7 +7367,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7402,7 +7402,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>[]</code> | *No description.* |
 
 ---
 
@@ -7436,7 +7436,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaAwsAccountId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>[]
 
 ---
 
@@ -7453,7 +7453,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7462,7 +7462,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7648,7 +7648,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7673,7 +7673,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a></code> | *No description.* |
 
 ---
 
@@ -7747,7 +7747,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaAwsAccountId;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>
 
 ---
 
@@ -7764,7 +7764,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7772,7 +7772,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7838,7 +7838,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7873,7 +7873,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>[]</code> | *No description.* |
 
 ---
 
@@ -7907,7 +7907,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaAwsAccountName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>[]
 
 ---
 
@@ -7924,7 +7924,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7933,7 +7933,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8119,7 +8119,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8144,7 +8144,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a></code> | *No description.* |
 
 ---
 
@@ -8218,7 +8218,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaAwsAccountName;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>
 
 ---
 
@@ -8235,7 +8235,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8243,7 +8243,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8309,7 +8309,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8344,7 +8344,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>[]</code> | *No description.* |
 
 ---
 
@@ -8378,7 +8378,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaCompanyName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>[]
 
 ---
 
@@ -8395,7 +8395,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8404,7 +8404,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8590,7 +8590,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8615,7 +8615,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a></code> | *No description.* |
 
 ---
 
@@ -8689,7 +8689,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaCompanyName;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>
 
 ---
 
@@ -8706,7 +8706,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssocia
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8714,7 +8714,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssocia
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8780,7 +8780,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8815,7 +8815,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>[]</code> | *No description.* |
 
 ---
 
@@ -8849,7 +8849,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>[]
 
 ---
 
@@ -8866,7 +8866,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssocia
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8875,7 +8875,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssocia
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9061,7 +9061,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9086,7 +9086,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a></code> | *No description.* |
 
 ---
 
@@ -9160,7 +9160,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>
 
 ---
 
@@ -9177,7 +9177,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9185,7 +9185,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurit
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9251,7 +9251,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9286,7 +9286,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>[]</code> | *No description.* |
 
 ---
 
@@ -9320,7 +9320,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaComplianceSecurityControlId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>[]
 
 ---
 
@@ -9337,7 +9337,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9346,7 +9346,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurit
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9532,7 +9532,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9557,7 +9557,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a></code> | *No description.* |
 
 ---
 
@@ -9631,7 +9631,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaComplianceSecurityControlId;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>
 
 ---
 
@@ -9648,7 +9648,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9656,7 +9656,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusL
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9722,7 +9722,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9757,7 +9757,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>[]</code> | *No description.* |
 
 ---
 
@@ -9791,7 +9791,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaComplianceStatus[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>[]
 
 ---
 
@@ -9808,7 +9808,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9817,7 +9817,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusO
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10003,7 +10003,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10028,7 +10028,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a></code> | *No description.* |
 
 ---
 
@@ -10102,7 +10102,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaComplianceStatus;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>
 
 ---
 
@@ -10119,7 +10119,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10127,7 +10127,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10193,7 +10193,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10228,7 +10228,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>[]</code> | *No description.* |
 
 ---
 
@@ -10262,7 +10262,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaConfidence[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>[]
 
 ---
 
@@ -10279,7 +10279,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10288,7 +10288,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10479,7 +10479,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10540,7 +10540,7 @@ public resetLte(): void
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.gte">gte</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.lt">lt</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.lte">lte</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a></code> | *No description.* |
 
 ---
 
@@ -10674,7 +10674,7 @@ public readonly lte: number;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaConfidence;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>
 
 ---
 
@@ -10691,7 +10691,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRang
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10699,7 +10699,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRang
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10765,7 +10765,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10800,7 +10800,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>[]</code> | *No description.* |
 
 ---
 
@@ -10834,7 +10834,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaCreatedAtDateRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>[]
 
 ---
 
@@ -10851,7 +10851,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRang
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10860,7 +10860,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRang
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11046,7 +11046,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11071,7 +11071,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.valueInput">valueInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.unit">unit</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.value">value</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a></code> | *No description.* |
 
 ---
 
@@ -11145,7 +11145,7 @@ public readonly value: number;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaCreatedAtDateRange;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>
 
 ---
 
@@ -11162,7 +11162,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11170,7 +11170,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList(ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11236,7 +11236,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11271,7 +11271,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -11305,7 +11305,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaCreatedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>[]
 
 ---
 
@@ -11322,7 +11322,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11331,7 +11331,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11521,7 +11521,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11543,7 +11543,7 @@ public putDateRange(value: IResolvable | SecurityhubAutomationRuleCriteriaCreate
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.putDateRange.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>[]
 
 ---
 
@@ -11573,12 +11573,12 @@ public resetStart(): void
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.dateRange">dateRange</a></code> | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList">SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.endInput">endInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a></code> | *No description.* |
 
 ---
 
@@ -11622,7 +11622,7 @@ public readonly dateRange: SecurityhubAutomationRuleCriteriaCreatedAtDateRangeLi
 public readonly dateRangeInput: IResolvable | SecurityhubAutomationRuleCriteriaCreatedAtDateRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>[]
 
 ---
 
@@ -11672,7 +11672,7 @@ public readonly start: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaCreatedAt;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>
 
 ---
 
@@ -11689,7 +11689,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11697,7 +11697,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11763,7 +11763,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11798,7 +11798,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>[]</code> | *No description.* |
 
 ---
 
@@ -11832,7 +11832,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaCriticality[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>[]
 
 ---
 
@@ -11849,7 +11849,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11858,7 +11858,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12049,7 +12049,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12110,7 +12110,7 @@ public resetLte(): void
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.gte">gte</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.lt">lt</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.lte">lte</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a></code> | *No description.* |
 
 ---
 
@@ -12244,7 +12244,7 @@ public readonly lte: number;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaCriticality;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>
 
 ---
 
@@ -12261,7 +12261,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12269,7 +12269,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12335,7 +12335,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12370,7 +12370,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>[]</code> | *No description.* |
 
 ---
 
@@ -12404,7 +12404,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaDescription[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>[]
 
 ---
 
@@ -12421,7 +12421,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12430,7 +12430,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12616,7 +12616,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12641,7 +12641,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a></code> | *No description.* |
 
 ---
 
@@ -12715,7 +12715,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaDescription;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>
 
 ---
 
@@ -12732,7 +12732,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12740,7 +12740,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12806,7 +12806,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12841,7 +12841,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>[]</code> | *No description.* |
 
 ---
 
@@ -12875,7 +12875,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>[]
 
 ---
 
@@ -12892,7 +12892,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12901,7 +12901,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13087,7 +13087,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13112,7 +13112,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.valueInput">valueInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.unit">unit</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.value">value</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a></code> | *No description.* |
 
 ---
 
@@ -13186,7 +13186,7 @@ public readonly value: number;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>
 
 ---
 
@@ -13203,7 +13203,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtLi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13211,7 +13211,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtLi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13277,7 +13277,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13312,7 +13312,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -13346,7 +13346,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaFirstObservedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>[]
 
 ---
 
@@ -13363,7 +13363,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13372,7 +13372,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13562,7 +13562,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13584,7 +13584,7 @@ public putDateRange(value: IResolvable | SecurityhubAutomationRuleCriteriaFirstO
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.putDateRange.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>[]
 
 ---
 
@@ -13614,12 +13614,12 @@ public resetStart(): void
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.dateRange">dateRange</a></code> | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.endInput">endInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -13663,7 +13663,7 @@ public readonly dateRange: SecurityhubAutomationRuleCriteriaFirstObservedAtDateR
 public readonly dateRangeInput: IResolvable | SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>[]
 
 ---
 
@@ -13713,7 +13713,7 @@ public readonly start: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaFirstObservedAt;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>
 
 ---
 
@@ -13730,7 +13730,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13738,7 +13738,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13804,7 +13804,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13839,7 +13839,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>[]</code> | *No description.* |
 
 ---
 
@@ -13873,7 +13873,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaGeneratorId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>[]
 
 ---
 
@@ -13890,7 +13890,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13899,7 +13899,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14085,7 +14085,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14110,7 +14110,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a></code> | *No description.* |
 
 ---
 
@@ -14184,7 +14184,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaGeneratorId;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>
 
 ---
 
@@ -14201,7 +14201,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14209,7 +14209,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList(terraformR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14275,7 +14275,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14310,7 +14310,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>[]</code> | *No description.* |
 
 ---
 
@@ -14344,7 +14344,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>[]
 
 ---
 
@@ -14361,7 +14361,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14370,7 +14370,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14556,7 +14556,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14581,7 +14581,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a></code> | *No description.* |
 
 ---
 
@@ -14655,7 +14655,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaId;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>
 
 ---
 
@@ -14672,7 +14672,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14680,7 +14680,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14746,7 +14746,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14781,7 +14781,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>[]</code> | *No description.* |
 
 ---
 
@@ -14815,7 +14815,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaLastObservedAtDateRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>[]
 
 ---
 
@@ -14832,7 +14832,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14841,7 +14841,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15027,7 +15027,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15052,7 +15052,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.valueInput">valueInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.unit">unit</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.value">value</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a></code> | *No description.* |
 
 ---
 
@@ -15126,7 +15126,7 @@ public readonly value: number;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaLastObservedAtDateRange;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>
 
 ---
 
@@ -15143,7 +15143,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15151,7 +15151,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15217,7 +15217,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15252,7 +15252,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -15286,7 +15286,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaLastObservedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>[]
 
 ---
 
@@ -15303,7 +15303,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15312,7 +15312,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15502,7 +15502,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15524,7 +15524,7 @@ public putDateRange(value: IResolvable | SecurityhubAutomationRuleCriteriaLastOb
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.putDateRange.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>[]
 
 ---
 
@@ -15554,12 +15554,12 @@ public resetStart(): void
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.dateRange">dateRange</a></code> | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList">SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.endInput">endInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -15603,7 +15603,7 @@ public readonly dateRange: SecurityhubAutomationRuleCriteriaLastObservedAtDateRa
 public readonly dateRangeInput: IResolvable | SecurityhubAutomationRuleCriteriaLastObservedAtDateRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>[]
 
 ---
 
@@ -15653,7 +15653,7 @@ public readonly start: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaLastObservedAt;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>
 
 ---
 
@@ -15670,7 +15670,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15678,7 +15678,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15744,7 +15744,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15779,7 +15779,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>[]</code> | *No description.* |
 
 ---
 
@@ -15813,7 +15813,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteria[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>[]
 
 ---
 
@@ -15830,7 +15830,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15838,7 +15838,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15904,7 +15904,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15939,7 +15939,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>[]</code> | *No description.* |
 
 ---
 
@@ -15973,7 +15973,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaNoteText[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>[]
 
 ---
 
@@ -15990,7 +15990,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15999,7 +15999,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputRef
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16185,7 +16185,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16210,7 +16210,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a></code> | *No description.* |
 
 ---
 
@@ -16284,7 +16284,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaNoteText;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>
 
 ---
 
@@ -16301,7 +16301,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDate
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16309,7 +16309,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDate
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16375,7 +16375,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16410,7 +16410,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>[]</code> | *No description.* |
 
 ---
 
@@ -16444,7 +16444,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>[]
 
 ---
 
@@ -16461,7 +16461,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDate
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16470,7 +16470,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDate
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16656,7 +16656,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16681,7 +16681,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.valueInput">valueInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.unit">unit</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.value">value</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a></code> | *No description.* |
 
 ---
 
@@ -16755,7 +16755,7 @@ public readonly value: number;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>
 
 ---
 
@@ -16772,7 +16772,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16780,7 +16780,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16846,7 +16846,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16881,7 +16881,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -16915,7 +16915,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaNoteUpdatedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>[]
 
 ---
 
@@ -16932,7 +16932,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16941,7 +16941,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17131,7 +17131,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17153,7 +17153,7 @@ public putDateRange(value: IResolvable | SecurityhubAutomationRuleCriteriaNoteUp
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.putDateRange.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>[]
 
 ---
 
@@ -17183,12 +17183,12 @@ public resetStart(): void
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.dateRange">dateRange</a></code> | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.endInput">endInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -17232,7 +17232,7 @@ public readonly dateRange: SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRan
 public readonly dateRangeInput: IResolvable | SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>[]
 
 ---
 
@@ -17282,7 +17282,7 @@ public readonly start: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaNoteUpdatedAt;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>
 
 ---
 
@@ -17299,7 +17299,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17307,7 +17307,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17373,7 +17373,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17408,7 +17408,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>[]</code> | *No description.* |
 
 ---
 
@@ -17442,7 +17442,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaNoteUpdatedBy[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>[]
 
 ---
 
@@ -17459,7 +17459,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17468,7 +17468,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17654,7 +17654,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17679,7 +17679,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a></code> | *No description.* |
 
 ---
 
@@ -17753,7 +17753,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaNoteUpdatedBy;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>
 
 ---
 
@@ -17770,7 +17770,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17779,7 +17779,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18041,7 +18041,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18063,7 +18063,7 @@ public putAwsAccountId(value: IResolvable | SecurityhubAutomationRuleCriteriaAws
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putAwsAccountId.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>[]
 
 ---
 
@@ -18075,7 +18075,7 @@ public putAwsAccountName(value: IResolvable | SecurityhubAutomationRuleCriteriaA
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putAwsAccountName.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>[]
 
 ---
 
@@ -18087,7 +18087,7 @@ public putCompanyName(value: IResolvable | SecurityhubAutomationRuleCriteriaComp
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putCompanyName.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>[]
 
 ---
 
@@ -18099,7 +18099,7 @@ public putComplianceAssociatedStandardsId(value: IResolvable | SecurityhubAutoma
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putComplianceAssociatedStandardsId.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>[]
 
 ---
 
@@ -18111,7 +18111,7 @@ public putComplianceSecurityControlId(value: IResolvable | SecurityhubAutomation
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putComplianceSecurityControlId.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>[]
 
 ---
 
@@ -18123,7 +18123,7 @@ public putComplianceStatus(value: IResolvable | SecurityhubAutomationRuleCriteri
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putComplianceStatus.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>[]
 
 ---
 
@@ -18135,7 +18135,7 @@ public putConfidence(value: IResolvable | SecurityhubAutomationRuleCriteriaConfi
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putConfidence.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>[]
 
 ---
 
@@ -18147,7 +18147,7 @@ public putCreatedAt(value: IResolvable | SecurityhubAutomationRuleCriteriaCreate
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putCreatedAt.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>[]
 
 ---
 
@@ -18159,7 +18159,7 @@ public putCriticality(value: IResolvable | SecurityhubAutomationRuleCriteriaCrit
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putCriticality.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>[]
 
 ---
 
@@ -18171,7 +18171,7 @@ public putDescription(value: IResolvable | SecurityhubAutomationRuleCriteriaDesc
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putDescription.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>[]
 
 ---
 
@@ -18183,7 +18183,7 @@ public putFirstObservedAt(value: IResolvable | SecurityhubAutomationRuleCriteria
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putFirstObservedAt.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>[]
 
 ---
 
@@ -18195,7 +18195,7 @@ public putGeneratorId(value: IResolvable | SecurityhubAutomationRuleCriteriaGene
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putGeneratorId.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>[]
 
 ---
 
@@ -18207,7 +18207,7 @@ public putId(value: IResolvable | SecurityhubAutomationRuleCriteriaId[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putId.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>[]
 
 ---
 
@@ -18219,7 +18219,7 @@ public putLastObservedAt(value: IResolvable | SecurityhubAutomationRuleCriteriaL
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putLastObservedAt.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>[]
 
 ---
 
@@ -18231,7 +18231,7 @@ public putNoteText(value: IResolvable | SecurityhubAutomationRuleCriteriaNoteTex
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putNoteText.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>[]
 
 ---
 
@@ -18243,7 +18243,7 @@ public putNoteUpdatedAt(value: IResolvable | SecurityhubAutomationRuleCriteriaNo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putNoteUpdatedAt.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>[]
 
 ---
 
@@ -18255,7 +18255,7 @@ public putNoteUpdatedBy(value: IResolvable | SecurityhubAutomationRuleCriteriaNo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putNoteUpdatedBy.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>[]
 
 ---
 
@@ -18267,7 +18267,7 @@ public putProductArn(value: IResolvable | SecurityhubAutomationRuleCriteriaProdu
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putProductArn.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>[]
 
 ---
 
@@ -18279,7 +18279,7 @@ public putProductName(value: IResolvable | SecurityhubAutomationRuleCriteriaProd
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putProductName.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>[]
 
 ---
 
@@ -18291,7 +18291,7 @@ public putRecordState(value: IResolvable | SecurityhubAutomationRuleCriteriaReco
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putRecordState.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>[]
 
 ---
 
@@ -18303,7 +18303,7 @@ public putRelatedFindingsId(value: IResolvable | SecurityhubAutomationRuleCriter
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putRelatedFindingsId.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>[]
 
 ---
 
@@ -18315,7 +18315,7 @@ public putRelatedFindingsProductArn(value: IResolvable | SecurityhubAutomationRu
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putRelatedFindingsProductArn.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>[]
 
 ---
 
@@ -18327,7 +18327,7 @@ public putResourceApplicationArn(value: IResolvable | SecurityhubAutomationRuleC
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceApplicationArn.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>[]
 
 ---
 
@@ -18339,7 +18339,7 @@ public putResourceApplicationName(value: IResolvable | SecurityhubAutomationRule
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceApplicationName.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>[]
 
 ---
 
@@ -18351,7 +18351,7 @@ public putResourceDetailsOther(value: IResolvable | SecurityhubAutomationRuleCri
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceDetailsOther.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>[]
 
 ---
 
@@ -18363,7 +18363,7 @@ public putResourceId(value: IResolvable | SecurityhubAutomationRuleCriteriaResou
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceId.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>[]
 
 ---
 
@@ -18375,7 +18375,7 @@ public putResourcePartition(value: IResolvable | SecurityhubAutomationRuleCriter
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourcePartition.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>[]
 
 ---
 
@@ -18387,7 +18387,7 @@ public putResourceRegion(value: IResolvable | SecurityhubAutomationRuleCriteriaR
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceRegion.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>[]
 
 ---
 
@@ -18399,7 +18399,7 @@ public putResourceTags(value: IResolvable | SecurityhubAutomationRuleCriteriaRes
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceTags.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>[]
 
 ---
 
@@ -18411,7 +18411,7 @@ public putResourceType(value: IResolvable | SecurityhubAutomationRuleCriteriaRes
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceType.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>[]
 
 ---
 
@@ -18423,7 +18423,7 @@ public putSeverityLabel(value: IResolvable | SecurityhubAutomationRuleCriteriaSe
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putSeverityLabel.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>[]
 
 ---
 
@@ -18435,7 +18435,7 @@ public putSourceUrl(value: IResolvable | SecurityhubAutomationRuleCriteriaSource
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putSourceUrl.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>[]
 
 ---
 
@@ -18447,7 +18447,7 @@ public putTitle(value: IResolvable | SecurityhubAutomationRuleCriteriaTitle[]): 
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putTitle.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>[]
 
 ---
 
@@ -18459,7 +18459,7 @@ public putType(value: IResolvable | SecurityhubAutomationRuleCriteriaType[]): vo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putType.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>[]
 
 ---
 
@@ -18471,7 +18471,7 @@ public putUpdatedAt(value: IResolvable | SecurityhubAutomationRuleCriteriaUpdate
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putUpdatedAt.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>[]
 
 ---
 
@@ -18483,7 +18483,7 @@ public putUserDefinedFields(value: IResolvable | SecurityhubAutomationRuleCriter
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putUserDefinedFields.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>[]
 
 ---
 
@@ -18495,7 +18495,7 @@ public putVerificationState(value: IResolvable | SecurityhubAutomationRuleCriter
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putVerificationState.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>[]
 
 ---
 
@@ -18507,7 +18507,7 @@ public putWorkflowStatus(value: IResolvable | SecurityhubAutomationRuleCriteriaW
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putWorkflowStatus.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>[]
 
 ---
 
@@ -18784,45 +18784,45 @@ public resetWorkflowStatus(): void
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.userDefinedFields">userDefinedFields</a></code> | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList">SecurityhubAutomationRuleCriteriaUserDefinedFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.verificationState">verificationState</a></code> | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList">SecurityhubAutomationRuleCriteriaVerificationStateList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.workflowStatus">workflowStatus</a></code> | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList">SecurityhubAutomationRuleCriteriaWorkflowStatusList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountIdInput">awsAccountIdInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountNameInput">awsAccountNameInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.companyNameInput">companyNameInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceAssociatedStandardsIdInput">complianceAssociatedStandardsIdInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceSecurityControlIdInput">complianceSecurityControlIdInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceStatusInput">complianceStatusInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.confidenceInput">confidenceInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.createdAtInput">createdAtInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.criticalityInput">criticalityInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.firstObservedAtInput">firstObservedAtInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.generatorIdInput">generatorIdInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.idInput">idInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.lastObservedAtInput">lastObservedAtInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteTextInput">noteTextInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedAtInput">noteUpdatedAtInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedByInput">noteUpdatedByInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productArnInput">productArnInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productNameInput">productNameInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.recordStateInput">recordStateInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsIdInput">relatedFindingsIdInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsProductArnInput">relatedFindingsProductArnInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationArnInput">resourceApplicationArnInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationNameInput">resourceApplicationNameInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceDetailsOtherInput">resourceDetailsOtherInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceIdInput">resourceIdInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourcePartitionInput">resourcePartitionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceRegionInput">resourceRegionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTagsInput">resourceTagsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTypeInput">resourceTypeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.severityLabelInput">severityLabelInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.sourceUrlInput">sourceUrlInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.titleInput">titleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.typeInput">typeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.updatedAtInput">updatedAtInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.userDefinedFieldsInput">userDefinedFieldsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.verificationStateInput">verificationStateInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.workflowStatusInput">workflowStatusInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountIdInput">awsAccountIdInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountNameInput">awsAccountNameInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.companyNameInput">companyNameInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceAssociatedStandardsIdInput">complianceAssociatedStandardsIdInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceSecurityControlIdInput">complianceSecurityControlIdInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceStatusInput">complianceStatusInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.confidenceInput">confidenceInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.createdAtInput">createdAtInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.criticalityInput">criticalityInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.firstObservedAtInput">firstObservedAtInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.generatorIdInput">generatorIdInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.idInput">idInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.lastObservedAtInput">lastObservedAtInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteTextInput">noteTextInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedAtInput">noteUpdatedAtInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedByInput">noteUpdatedByInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productArnInput">productArnInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productNameInput">productNameInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.recordStateInput">recordStateInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsIdInput">relatedFindingsIdInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsProductArnInput">relatedFindingsProductArnInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationArnInput">resourceApplicationArnInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationNameInput">resourceApplicationNameInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceDetailsOtherInput">resourceDetailsOtherInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceIdInput">resourceIdInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourcePartitionInput">resourcePartitionInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceRegionInput">resourceRegionInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTagsInput">resourceTagsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTypeInput">resourceTypeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.severityLabelInput">severityLabelInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.sourceUrlInput">sourceUrlInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.titleInput">titleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.typeInput">typeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.updatedAtInput">updatedAtInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.userDefinedFieldsInput">userDefinedFieldsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.verificationStateInput">verificationStateInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.workflowStatusInput">workflowStatusInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a></code> | *No description.* |
 
 ---
 
@@ -19236,7 +19236,7 @@ public readonly workflowStatus: SecurityhubAutomationRuleCriteriaWorkflowStatusL
 public readonly awsAccountIdInput: IResolvable | SecurityhubAutomationRuleCriteriaAwsAccountId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>[]
 
 ---
 
@@ -19246,7 +19246,7 @@ public readonly awsAccountIdInput: IResolvable | SecurityhubAutomationRuleCriter
 public readonly awsAccountNameInput: IResolvable | SecurityhubAutomationRuleCriteriaAwsAccountName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>[]
 
 ---
 
@@ -19256,7 +19256,7 @@ public readonly awsAccountNameInput: IResolvable | SecurityhubAutomationRuleCrit
 public readonly companyNameInput: IResolvable | SecurityhubAutomationRuleCriteriaCompanyName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>[]
 
 ---
 
@@ -19266,7 +19266,7 @@ public readonly companyNameInput: IResolvable | SecurityhubAutomationRuleCriteri
 public readonly complianceAssociatedStandardsIdInput: IResolvable | SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>[]
 
 ---
 
@@ -19276,7 +19276,7 @@ public readonly complianceAssociatedStandardsIdInput: IResolvable | SecurityhubA
 public readonly complianceSecurityControlIdInput: IResolvable | SecurityhubAutomationRuleCriteriaComplianceSecurityControlId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>[]
 
 ---
 
@@ -19286,7 +19286,7 @@ public readonly complianceSecurityControlIdInput: IResolvable | SecurityhubAutom
 public readonly complianceStatusInput: IResolvable | SecurityhubAutomationRuleCriteriaComplianceStatus[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>[]
 
 ---
 
@@ -19296,7 +19296,7 @@ public readonly complianceStatusInput: IResolvable | SecurityhubAutomationRuleCr
 public readonly confidenceInput: IResolvable | SecurityhubAutomationRuleCriteriaConfidence[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>[]
 
 ---
 
@@ -19306,7 +19306,7 @@ public readonly confidenceInput: IResolvable | SecurityhubAutomationRuleCriteria
 public readonly createdAtInput: IResolvable | SecurityhubAutomationRuleCriteriaCreatedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>[]
 
 ---
 
@@ -19316,7 +19316,7 @@ public readonly createdAtInput: IResolvable | SecurityhubAutomationRuleCriteriaC
 public readonly criticalityInput: IResolvable | SecurityhubAutomationRuleCriteriaCriticality[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>[]
 
 ---
 
@@ -19326,7 +19326,7 @@ public readonly criticalityInput: IResolvable | SecurityhubAutomationRuleCriteri
 public readonly descriptionInput: IResolvable | SecurityhubAutomationRuleCriteriaDescription[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>[]
 
 ---
 
@@ -19336,7 +19336,7 @@ public readonly descriptionInput: IResolvable | SecurityhubAutomationRuleCriteri
 public readonly firstObservedAtInput: IResolvable | SecurityhubAutomationRuleCriteriaFirstObservedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>[]
 
 ---
 
@@ -19346,7 +19346,7 @@ public readonly firstObservedAtInput: IResolvable | SecurityhubAutomationRuleCri
 public readonly generatorIdInput: IResolvable | SecurityhubAutomationRuleCriteriaGeneratorId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>[]
 
 ---
 
@@ -19356,7 +19356,7 @@ public readonly generatorIdInput: IResolvable | SecurityhubAutomationRuleCriteri
 public readonly idInput: IResolvable | SecurityhubAutomationRuleCriteriaId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>[]
 
 ---
 
@@ -19366,7 +19366,7 @@ public readonly idInput: IResolvable | SecurityhubAutomationRuleCriteriaId[];
 public readonly lastObservedAtInput: IResolvable | SecurityhubAutomationRuleCriteriaLastObservedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>[]
 
 ---
 
@@ -19376,7 +19376,7 @@ public readonly lastObservedAtInput: IResolvable | SecurityhubAutomationRuleCrit
 public readonly noteTextInput: IResolvable | SecurityhubAutomationRuleCriteriaNoteText[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>[]
 
 ---
 
@@ -19386,7 +19386,7 @@ public readonly noteTextInput: IResolvable | SecurityhubAutomationRuleCriteriaNo
 public readonly noteUpdatedAtInput: IResolvable | SecurityhubAutomationRuleCriteriaNoteUpdatedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>[]
 
 ---
 
@@ -19396,7 +19396,7 @@ public readonly noteUpdatedAtInput: IResolvable | SecurityhubAutomationRuleCrite
 public readonly noteUpdatedByInput: IResolvable | SecurityhubAutomationRuleCriteriaNoteUpdatedBy[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>[]
 
 ---
 
@@ -19406,7 +19406,7 @@ public readonly noteUpdatedByInput: IResolvable | SecurityhubAutomationRuleCrite
 public readonly productArnInput: IResolvable | SecurityhubAutomationRuleCriteriaProductArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>[]
 
 ---
 
@@ -19416,7 +19416,7 @@ public readonly productArnInput: IResolvable | SecurityhubAutomationRuleCriteria
 public readonly productNameInput: IResolvable | SecurityhubAutomationRuleCriteriaProductName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>[]
 
 ---
 
@@ -19426,7 +19426,7 @@ public readonly productNameInput: IResolvable | SecurityhubAutomationRuleCriteri
 public readonly recordStateInput: IResolvable | SecurityhubAutomationRuleCriteriaRecordState[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>[]
 
 ---
 
@@ -19436,7 +19436,7 @@ public readonly recordStateInput: IResolvable | SecurityhubAutomationRuleCriteri
 public readonly relatedFindingsIdInput: IResolvable | SecurityhubAutomationRuleCriteriaRelatedFindingsId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>[]
 
 ---
 
@@ -19446,7 +19446,7 @@ public readonly relatedFindingsIdInput: IResolvable | SecurityhubAutomationRuleC
 public readonly relatedFindingsProductArnInput: IResolvable | SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>[]
 
 ---
 
@@ -19456,7 +19456,7 @@ public readonly relatedFindingsProductArnInput: IResolvable | SecurityhubAutomat
 public readonly resourceApplicationArnInput: IResolvable | SecurityhubAutomationRuleCriteriaResourceApplicationArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>[]
 
 ---
 
@@ -19466,7 +19466,7 @@ public readonly resourceApplicationArnInput: IResolvable | SecurityhubAutomation
 public readonly resourceApplicationNameInput: IResolvable | SecurityhubAutomationRuleCriteriaResourceApplicationName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>[]
 
 ---
 
@@ -19476,7 +19476,7 @@ public readonly resourceApplicationNameInput: IResolvable | SecurityhubAutomatio
 public readonly resourceDetailsOtherInput: IResolvable | SecurityhubAutomationRuleCriteriaResourceDetailsOther[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>[]
 
 ---
 
@@ -19486,7 +19486,7 @@ public readonly resourceDetailsOtherInput: IResolvable | SecurityhubAutomationRu
 public readonly resourceIdInput: IResolvable | SecurityhubAutomationRuleCriteriaResourceId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>[]
 
 ---
 
@@ -19496,7 +19496,7 @@ public readonly resourceIdInput: IResolvable | SecurityhubAutomationRuleCriteria
 public readonly resourcePartitionInput: IResolvable | SecurityhubAutomationRuleCriteriaResourcePartition[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>[]
 
 ---
 
@@ -19506,7 +19506,7 @@ public readonly resourcePartitionInput: IResolvable | SecurityhubAutomationRuleC
 public readonly resourceRegionInput: IResolvable | SecurityhubAutomationRuleCriteriaResourceRegion[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>[]
 
 ---
 
@@ -19516,7 +19516,7 @@ public readonly resourceRegionInput: IResolvable | SecurityhubAutomationRuleCrit
 public readonly resourceTagsInput: IResolvable | SecurityhubAutomationRuleCriteriaResourceTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>[]
 
 ---
 
@@ -19526,7 +19526,7 @@ public readonly resourceTagsInput: IResolvable | SecurityhubAutomationRuleCriter
 public readonly resourceTypeInput: IResolvable | SecurityhubAutomationRuleCriteriaResourceType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>[]
 
 ---
 
@@ -19536,7 +19536,7 @@ public readonly resourceTypeInput: IResolvable | SecurityhubAutomationRuleCriter
 public readonly severityLabelInput: IResolvable | SecurityhubAutomationRuleCriteriaSeverityLabel[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>[]
 
 ---
 
@@ -19546,7 +19546,7 @@ public readonly severityLabelInput: IResolvable | SecurityhubAutomationRuleCrite
 public readonly sourceUrlInput: IResolvable | SecurityhubAutomationRuleCriteriaSourceUrl[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>[]
 
 ---
 
@@ -19556,7 +19556,7 @@ public readonly sourceUrlInput: IResolvable | SecurityhubAutomationRuleCriteriaS
 public readonly titleInput: IResolvable | SecurityhubAutomationRuleCriteriaTitle[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>[]
 
 ---
 
@@ -19566,7 +19566,7 @@ public readonly titleInput: IResolvable | SecurityhubAutomationRuleCriteriaTitle
 public readonly typeInput: IResolvable | SecurityhubAutomationRuleCriteriaType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>[]
 
 ---
 
@@ -19576,7 +19576,7 @@ public readonly typeInput: IResolvable | SecurityhubAutomationRuleCriteriaType[]
 public readonly updatedAtInput: IResolvable | SecurityhubAutomationRuleCriteriaUpdatedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>[]
 
 ---
 
@@ -19586,7 +19586,7 @@ public readonly updatedAtInput: IResolvable | SecurityhubAutomationRuleCriteriaU
 public readonly userDefinedFieldsInput: IResolvable | SecurityhubAutomationRuleCriteriaUserDefinedFields[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>[]
 
 ---
 
@@ -19596,7 +19596,7 @@ public readonly userDefinedFieldsInput: IResolvable | SecurityhubAutomationRuleC
 public readonly verificationStateInput: IResolvable | SecurityhubAutomationRuleCriteriaVerificationState[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>[]
 
 ---
 
@@ -19606,7 +19606,7 @@ public readonly verificationStateInput: IResolvable | SecurityhubAutomationRuleC
 public readonly workflowStatusInput: IResolvable | SecurityhubAutomationRuleCriteriaWorkflowStatus[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>[]
 
 ---
 
@@ -19616,7 +19616,7 @@ public readonly workflowStatusInput: IResolvable | SecurityhubAutomationRuleCrit
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteria;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>
 
 ---
 
@@ -19633,7 +19633,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19641,7 +19641,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19707,7 +19707,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19742,7 +19742,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>[]</code> | *No description.* |
 
 ---
 
@@ -19776,7 +19776,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaProductArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>[]
 
 ---
 
@@ -19793,7 +19793,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19802,7 +19802,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19988,7 +19988,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20013,7 +20013,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a></code> | *No description.* |
 
 ---
 
@@ -20087,7 +20087,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaProductArn;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>
 
 ---
 
@@ -20104,7 +20104,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20112,7 +20112,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20178,7 +20178,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20213,7 +20213,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>[]</code> | *No description.* |
 
 ---
 
@@ -20247,7 +20247,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaProductName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>[]
 
 ---
 
@@ -20264,7 +20264,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20273,7 +20273,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20459,7 +20459,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20484,7 +20484,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a></code> | *No description.* |
 
 ---
 
@@ -20558,7 +20558,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaProductName;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>
 
 ---
 
@@ -20575,7 +20575,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20583,7 +20583,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20649,7 +20649,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20684,7 +20684,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>[]</code> | *No description.* |
 
 ---
 
@@ -20718,7 +20718,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaRecordState[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>[]
 
 ---
 
@@ -20735,7 +20735,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20744,7 +20744,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20930,7 +20930,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20955,7 +20955,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a></code> | *No description.* |
 
 ---
 
@@ -21029,7 +21029,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaRecordState;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>
 
 ---
 
@@ -21046,7 +21046,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21054,7 +21054,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21120,7 +21120,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21155,7 +21155,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>[]</code> | *No description.* |
 
 ---
 
@@ -21189,7 +21189,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaRelatedFindingsId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>[]
 
 ---
 
@@ -21206,7 +21206,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -21215,7 +21215,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21401,7 +21401,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21426,7 +21426,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a></code> | *No description.* |
 
 ---
 
@@ -21500,7 +21500,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaRelatedFindingsId;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>
 
 ---
 
@@ -21517,7 +21517,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsPr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21525,7 +21525,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsPr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21591,7 +21591,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21626,7 +21626,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>[]</code> | *No description.* |
 
 ---
 
@@ -21660,7 +21660,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>[]
 
 ---
 
@@ -21677,7 +21677,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsPr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -21686,7 +21686,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsPr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21872,7 +21872,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21897,7 +21897,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a></code> | *No description.* |
 
 ---
 
@@ -21971,7 +21971,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>
 
 ---
 
@@ -21988,7 +21988,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21996,7 +21996,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicati
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22062,7 +22062,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22097,7 +22097,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>[]</code> | *No description.* |
 
 ---
 
@@ -22131,7 +22131,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourceApplicationArn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>[]
 
 ---
 
@@ -22148,7 +22148,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -22157,7 +22157,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicati
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22343,7 +22343,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22368,7 +22368,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a></code> | *No description.* |
 
 ---
 
@@ -22442,7 +22442,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourceApplicationArn;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>
 
 ---
 
@@ -22459,7 +22459,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -22467,7 +22467,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicati
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22533,7 +22533,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22568,7 +22568,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>[]</code> | *No description.* |
 
 ---
 
@@ -22602,7 +22602,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourceApplicationName[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>[]
 
 ---
 
@@ -22619,7 +22619,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -22628,7 +22628,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicati
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22814,7 +22814,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22839,7 +22839,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a></code> | *No description.* |
 
 ---
 
@@ -22913,7 +22913,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourceApplicationName;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>
 
 ---
 
@@ -22930,7 +22930,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -22938,7 +22938,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOt
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23004,7 +23004,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23039,7 +23039,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>[]</code> | *No description.* |
 
 ---
 
@@ -23073,7 +23073,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourceDetailsOther[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>[]
 
 ---
 
@@ -23090,7 +23090,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -23099,7 +23099,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOt
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23285,7 +23285,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23312,7 +23312,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a></code> | *No description.* |
 
 ---
 
@@ -23406,7 +23406,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourceDetailsOther;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>
 
 ---
 
@@ -23423,7 +23423,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -23431,7 +23431,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23497,7 +23497,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23532,7 +23532,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>[]</code> | *No description.* |
 
 ---
 
@@ -23566,7 +23566,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourceId[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>[]
 
 ---
 
@@ -23583,7 +23583,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -23592,7 +23592,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23778,7 +23778,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23803,7 +23803,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a></code> | *No description.* |
 
 ---
 
@@ -23877,7 +23877,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourceId;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>
 
 ---
 
@@ -23894,7 +23894,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -23902,7 +23902,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23968,7 +23968,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24003,7 +24003,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>[]</code> | *No description.* |
 
 ---
 
@@ -24037,7 +24037,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourcePartition[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>[]
 
 ---
 
@@ -24054,7 +24054,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24063,7 +24063,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24249,7 +24249,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24274,7 +24274,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a></code> | *No description.* |
 
 ---
 
@@ -24348,7 +24348,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourcePartition;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>
 
 ---
 
@@ -24365,7 +24365,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -24373,7 +24373,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24439,7 +24439,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24474,7 +24474,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>[]</code> | *No description.* |
 
 ---
 
@@ -24508,7 +24508,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourceRegion[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>[]
 
 ---
 
@@ -24525,7 +24525,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24534,7 +24534,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24720,7 +24720,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24745,7 +24745,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a></code> | *No description.* |
 
 ---
 
@@ -24819,7 +24819,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourceRegion;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>
 
 ---
 
@@ -24836,7 +24836,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -24844,7 +24844,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24910,7 +24910,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24945,7 +24945,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>[]</code> | *No description.* |
 
 ---
 
@@ -24979,7 +24979,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourceTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>[]
 
 ---
 
@@ -24996,7 +24996,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -25005,7 +25005,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25191,7 +25191,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25218,7 +25218,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a></code> | *No description.* |
 
 ---
 
@@ -25312,7 +25312,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourceTags;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>
 
 ---
 
@@ -25329,7 +25329,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25337,7 +25337,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25403,7 +25403,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25438,7 +25438,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>[]</code> | *No description.* |
 
 ---
 
@@ -25472,7 +25472,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourceType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>[]
 
 ---
 
@@ -25489,7 +25489,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -25498,7 +25498,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25684,7 +25684,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25709,7 +25709,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a></code> | *No description.* |
 
 ---
 
@@ -25783,7 +25783,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaResourceType;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>
 
 ---
 
@@ -25800,7 +25800,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25808,7 +25808,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25874,7 +25874,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25909,7 +25909,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>[]</code> | *No description.* |
 
 ---
 
@@ -25943,7 +25943,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaSeverityLabel[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>[]
 
 ---
 
@@ -25960,7 +25960,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -25969,7 +25969,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26155,7 +26155,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26180,7 +26180,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a></code> | *No description.* |
 
 ---
 
@@ -26254,7 +26254,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaSeverityLabel;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>
 
 ---
 
@@ -26271,7 +26271,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -26279,7 +26279,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList(ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26345,7 +26345,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26380,7 +26380,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>[]</code> | *No description.* |
 
 ---
 
@@ -26414,7 +26414,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaSourceUrl[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>[]
 
 ---
 
@@ -26431,7 +26431,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -26440,7 +26440,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26626,7 +26626,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26651,7 +26651,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a></code> | *No description.* |
 
 ---
 
@@ -26725,7 +26725,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaSourceUrl;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>
 
 ---
 
@@ -26742,7 +26742,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -26750,7 +26750,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList(terrafo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26816,7 +26816,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26851,7 +26851,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>[]</code> | *No description.* |
 
 ---
 
@@ -26885,7 +26885,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaTitle[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>[]
 
 ---
 
@@ -26902,7 +26902,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -26911,7 +26911,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputRefere
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27097,7 +27097,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27122,7 +27122,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a></code> | *No description.* |
 
 ---
 
@@ -27196,7 +27196,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaTitle;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>
 
 ---
 
@@ -27213,7 +27213,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -27221,7 +27221,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27287,7 +27287,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27322,7 +27322,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>[]</code> | *No description.* |
 
 ---
 
@@ -27356,7 +27356,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaType[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>[]
 
 ---
 
@@ -27373,7 +27373,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -27382,7 +27382,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReferen
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27568,7 +27568,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27593,7 +27593,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a></code> | *No description.* |
 
 ---
 
@@ -27667,7 +27667,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaType;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>
 
 ---
 
@@ -27684,7 +27684,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRang
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -27692,7 +27692,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRang
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27758,7 +27758,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27793,7 +27793,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>[]</code> | *No description.* |
 
 ---
 
@@ -27827,7 +27827,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaUpdatedAtDateRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>[]
 
 ---
 
@@ -27844,7 +27844,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRang
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -27853,7 +27853,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRang
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28039,7 +28039,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28064,7 +28064,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.valueInput">valueInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.unit">unit</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.value">value</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a></code> | *No description.* |
 
 ---
 
@@ -28138,7 +28138,7 @@ public readonly value: number;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaUpdatedAtDateRange;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>
 
 ---
 
@@ -28155,7 +28155,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -28163,7 +28163,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList(ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28229,7 +28229,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28264,7 +28264,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -28298,7 +28298,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaUpdatedAt[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>[]
 
 ---
 
@@ -28315,7 +28315,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -28324,7 +28324,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28514,7 +28514,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28536,7 +28536,7 @@ public putDateRange(value: IResolvable | SecurityhubAutomationRuleCriteriaUpdate
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.putDateRange.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>[]
 
 ---
 
@@ -28566,12 +28566,12 @@ public resetStart(): void
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.dateRange">dateRange</a></code> | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList">SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.endInput">endInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -28615,7 +28615,7 @@ public readonly dateRange: SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeLi
 public readonly dateRangeInput: IResolvable | SecurityhubAutomationRuleCriteriaUpdatedAtDateRange[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>[]
 
 ---
 
@@ -28665,7 +28665,7 @@ public readonly start: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaUpdatedAt;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>
 
 ---
 
@@ -28682,7 +28682,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -28690,7 +28690,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28756,7 +28756,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28791,7 +28791,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -28825,7 +28825,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaUserDefinedFields[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>[]
 
 ---
 
@@ -28842,7 +28842,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -28851,7 +28851,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29037,7 +29037,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29064,7 +29064,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a></code> | *No description.* |
 
 ---
 
@@ -29158,7 +29158,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaUserDefinedFields;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>
 
 ---
 
@@ -29175,7 +29175,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -29183,7 +29183,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29249,7 +29249,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29284,7 +29284,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>[]</code> | *No description.* |
 
 ---
 
@@ -29318,7 +29318,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaVerificationState[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>[]
 
 ---
 
@@ -29335,7 +29335,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29344,7 +29344,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29530,7 +29530,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29555,7 +29555,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a></code> | *No description.* |
 
 ---
 
@@ -29629,7 +29629,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaVerificationState;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>
 
 ---
 
@@ -29646,7 +29646,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -29654,7 +29654,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29720,7 +29720,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29755,7 +29755,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>[]</code> | *No description.* |
 
 ---
 
@@ -29789,7 +29789,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaWorkflowStatus[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>[]
 
 ---
 
@@ -29806,7 +29806,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29815,7 +29815,7 @@ new securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30001,7 +30001,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30026,7 +30026,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a></code> | *No description.* |
 
 ---
 
@@ -30100,7 +30100,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SecurityhubAutomationRuleCriteriaWorkflowStatus;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>
 
 ---
 

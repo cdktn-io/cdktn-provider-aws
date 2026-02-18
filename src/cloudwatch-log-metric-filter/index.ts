@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudwatchLogMetricFilterConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchLogMetricFilterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_metric_filter#apply_on_transformed_logs CloudwatchLogMetricFilter#apply_on_transformed_logs}
   */
-  readonly applyOnTransformedLogs?: boolean | cdktf.IResolvable;
+  readonly applyOnTransformedLogs?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_metric_filter#id CloudwatchLogMetricFilter#id}
   *
@@ -76,59 +76,59 @@ export interface CloudwatchLogMetricFilterMetricTransformation {
 }
 
 export function cloudwatchLogMetricFilterMetricTransformationToTerraform(struct?: CloudwatchLogMetricFilterMetricTransformationOutputReference | CloudwatchLogMetricFilterMetricTransformation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_value: cdktf.stringToTerraform(struct!.defaultValue),
-    dimensions: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.dimensions),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    unit: cdktf.stringToTerraform(struct!.unit),
-    value: cdktf.stringToTerraform(struct!.value),
+    default_value: cdktn.stringToTerraform(struct!.defaultValue),
+    dimensions: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.dimensions),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function cloudwatchLogMetricFilterMetricTransformationToHclTerraform(struct?: CloudwatchLogMetricFilterMetricTransformationOutputReference | CloudwatchLogMetricFilterMetricTransformation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_value: {
-      value: cdktf.stringToHclTerraform(struct!.defaultValue),
+      value: cdktn.stringToHclTerraform(struct!.defaultValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dimensions: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.dimensions),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.dimensions),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -139,14 +139,14 @@ export function cloudwatchLogMetricFilterMetricTransformationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogMetricFilterMetricTransformationOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogMetricFilterMetricTransformationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -292,7 +292,7 @@ export class CloudwatchLogMetricFilterMetricTransformationOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_metric_filter aws_cloudwatch_log_metric_filter}
 */
-export class CloudwatchLogMetricFilter extends cdktf.TerraformResource {
+export class CloudwatchLogMetricFilter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -303,14 +303,14 @@ export class CloudwatchLogMetricFilter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudwatchLogMetricFilter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudwatchLogMetricFilter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchLogMetricFilter to import
   * @param importFromId The id of the existing CloudwatchLogMetricFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_metric_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchLogMetricFilter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_metric_filter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_metric_filter", importId: importFromId, provider });
       }
 
   // ===========
@@ -354,11 +354,11 @@ export class CloudwatchLogMetricFilter extends cdktf.TerraformResource {
   // ==========
 
   // apply_on_transformed_logs - computed: true, optional: true, required: false
-  private _applyOnTransformedLogs?: boolean | cdktf.IResolvable; 
+  private _applyOnTransformedLogs?: boolean | cdktn.IResolvable; 
   public get applyOnTransformedLogs() {
     return this.getBooleanAttribute('apply_on_transformed_logs');
   }
-  public set applyOnTransformedLogs(value: boolean | cdktf.IResolvable) {
+  public set applyOnTransformedLogs(value: boolean | cdktn.IResolvable) {
     this._applyOnTransformedLogs = value;
   }
   public resetApplyOnTransformedLogs() {
@@ -459,12 +459,12 @@ export class CloudwatchLogMetricFilter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_on_transformed_logs: cdktf.booleanToTerraform(this._applyOnTransformedLogs),
-      id: cdktf.stringToTerraform(this._id),
-      log_group_name: cdktf.stringToTerraform(this._logGroupName),
-      name: cdktf.stringToTerraform(this._name),
-      pattern: cdktf.stringToTerraform(this._pattern),
-      region: cdktf.stringToTerraform(this._region),
+      apply_on_transformed_logs: cdktn.booleanToTerraform(this._applyOnTransformedLogs),
+      id: cdktn.stringToTerraform(this._id),
+      log_group_name: cdktn.stringToTerraform(this._logGroupName),
+      name: cdktn.stringToTerraform(this._name),
+      pattern: cdktn.stringToTerraform(this._pattern),
+      region: cdktn.stringToTerraform(this._region),
       metric_transformation: cloudwatchLogMetricFilterMetricTransformationToTerraform(this._metricTransformation.internalValue),
     };
   }
@@ -472,37 +472,37 @@ export class CloudwatchLogMetricFilter extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       apply_on_transformed_logs: {
-        value: cdktf.booleanToHclTerraform(this._applyOnTransformedLogs),
+        value: cdktn.booleanToHclTerraform(this._applyOnTransformedLogs),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_group_name: {
-        value: cdktf.stringToHclTerraform(this._logGroupName),
+        value: cdktn.stringToHclTerraform(this._logGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pattern: {
-        value: cdktf.stringToHclTerraform(this._pattern),
+        value: cdktn.stringToHclTerraform(this._pattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

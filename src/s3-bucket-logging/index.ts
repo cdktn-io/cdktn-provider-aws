@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3BucketLoggingAConfig extends cdktf.TerraformMetaArguments {
+export interface S3BucketLoggingAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_logging#bucket S3BucketLoggingA#bucket}
   */
@@ -46,7 +46,7 @@ export interface S3BucketLoggingAConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_logging#target_grant S3BucketLoggingA#target_grant}
   */
-  readonly targetGrant?: S3BucketLoggingTargetGrant[] | cdktf.IResolvable;
+  readonly targetGrant?: S3BucketLoggingTargetGrant[] | cdktn.IResolvable;
   /**
   * target_object_key_format block
   *
@@ -77,45 +77,45 @@ export interface S3BucketLoggingTargetGrantGrantee {
 }
 
 export function s3BucketLoggingTargetGrantGranteeToTerraform(struct?: S3BucketLoggingTargetGrantGranteeOutputReference | S3BucketLoggingTargetGrantGrantee): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email_address: cdktf.stringToTerraform(struct!.emailAddress),
-    id: cdktf.stringToTerraform(struct!.id),
-    type: cdktf.stringToTerraform(struct!.type),
-    uri: cdktf.stringToTerraform(struct!.uri),
+    email_address: cdktn.stringToTerraform(struct!.emailAddress),
+    id: cdktn.stringToTerraform(struct!.id),
+    type: cdktn.stringToTerraform(struct!.type),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function s3BucketLoggingTargetGrantGranteeToHclTerraform(struct?: S3BucketLoggingTargetGrantGranteeOutputReference | S3BucketLoggingTargetGrantGrantee): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email_address: {
-      value: cdktf.stringToHclTerraform(struct!.emailAddress),
+      value: cdktn.stringToHclTerraform(struct!.emailAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -126,14 +126,14 @@ export function s3BucketLoggingTargetGrantGranteeToHclTerraform(struct?: S3Bucke
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketLoggingTargetGrantGranteeOutputReference extends cdktf.ComplexObject {
+export class S3BucketLoggingTargetGrantGranteeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -255,26 +255,26 @@ export interface S3BucketLoggingTargetGrant {
   readonly grantee: S3BucketLoggingTargetGrantGrantee;
 }
 
-export function s3BucketLoggingTargetGrantToTerraform(struct?: S3BucketLoggingTargetGrant | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketLoggingTargetGrantToTerraform(struct?: S3BucketLoggingTargetGrant | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    permission: cdktf.stringToTerraform(struct!.permission),
+    permission: cdktn.stringToTerraform(struct!.permission),
     grantee: s3BucketLoggingTargetGrantGranteeToTerraform(struct!.grantee),
   }
 }
 
 
-export function s3BucketLoggingTargetGrantToHclTerraform(struct?: S3BucketLoggingTargetGrant | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketLoggingTargetGrantToHclTerraform(struct?: S3BucketLoggingTargetGrant | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     permission: {
-      value: cdktf.stringToHclTerraform(struct!.permission),
+      value: cdktn.stringToHclTerraform(struct!.permission),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -291,9 +291,9 @@ export function s3BucketLoggingTargetGrantToHclTerraform(struct?: S3BucketLoggin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketLoggingTargetGrantOutputReference extends cdktf.ComplexObject {
+export class S3BucketLoggingTargetGrantOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -301,11 +301,11 @@ export class S3BucketLoggingTargetGrantOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketLoggingTargetGrant | cdktf.IResolvable | undefined {
+  public get internalValue(): S3BucketLoggingTargetGrant | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -322,14 +322,14 @@ export class S3BucketLoggingTargetGrantOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketLoggingTargetGrant | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3BucketLoggingTargetGrant | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._permission = undefined;
       this._grantee.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -368,15 +368,15 @@ export class S3BucketLoggingTargetGrantOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class S3BucketLoggingTargetGrantList extends cdktf.ComplexList {
-  public internalValue? : S3BucketLoggingTargetGrant[] | cdktf.IResolvable
+export class S3BucketLoggingTargetGrantList extends cdktn.ComplexList {
+  public internalValue? : S3BucketLoggingTargetGrant[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -395,24 +395,24 @@ export interface S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix {
 }
 
 export function s3BucketLoggingTargetObjectKeyFormatPartitionedPrefixToTerraform(struct?: S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference | S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    partition_date_source: cdktf.stringToTerraform(struct!.partitionDateSource),
+    partition_date_source: cdktn.stringToTerraform(struct!.partitionDateSource),
   }
 }
 
 
 export function s3BucketLoggingTargetObjectKeyFormatPartitionedPrefixToHclTerraform(struct?: S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference | S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     partition_date_source: {
-      value: cdktf.stringToHclTerraform(struct!.partitionDateSource),
+      value: cdktn.stringToHclTerraform(struct!.partitionDateSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -423,14 +423,14 @@ export function s3BucketLoggingTargetObjectKeyFormatPartitionedPrefixToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference extends cdktf.ComplexObject {
+export class S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -472,8 +472,8 @@ export interface S3BucketLoggingTargetObjectKeyFormatSimplePrefix {
 }
 
 export function s3BucketLoggingTargetObjectKeyFormatSimplePrefixToTerraform(struct?: S3BucketLoggingTargetObjectKeyFormatSimplePrefixOutputReference | S3BucketLoggingTargetObjectKeyFormatSimplePrefix): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -482,8 +482,8 @@ export function s3BucketLoggingTargetObjectKeyFormatSimplePrefixToTerraform(stru
 
 
 export function s3BucketLoggingTargetObjectKeyFormatSimplePrefixToHclTerraform(struct?: S3BucketLoggingTargetObjectKeyFormatSimplePrefixOutputReference | S3BucketLoggingTargetObjectKeyFormatSimplePrefix): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -491,14 +491,14 @@ export function s3BucketLoggingTargetObjectKeyFormatSimplePrefixToHclTerraform(s
   return attrs;
 }
 
-export class S3BucketLoggingTargetObjectKeyFormatSimplePrefixOutputReference extends cdktf.ComplexObject {
+export class S3BucketLoggingTargetObjectKeyFormatSimplePrefixOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -533,8 +533,8 @@ export interface S3BucketLoggingTargetObjectKeyFormat {
 }
 
 export function s3BucketLoggingTargetObjectKeyFormatToTerraform(struct?: S3BucketLoggingTargetObjectKeyFormatOutputReference | S3BucketLoggingTargetObjectKeyFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -545,8 +545,8 @@ export function s3BucketLoggingTargetObjectKeyFormatToTerraform(struct?: S3Bucke
 
 
 export function s3BucketLoggingTargetObjectKeyFormatToHclTerraform(struct?: S3BucketLoggingTargetObjectKeyFormatOutputReference | S3BucketLoggingTargetObjectKeyFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -568,14 +568,14 @@ export function s3BucketLoggingTargetObjectKeyFormatToHclTerraform(struct?: S3Bu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketLoggingTargetObjectKeyFormatOutputReference extends cdktf.ComplexObject {
+export class S3BucketLoggingTargetObjectKeyFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -642,7 +642,7 @@ export class S3BucketLoggingTargetObjectKeyFormatOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_logging aws_s3_bucket_logging}
 */
-export class S3BucketLoggingA extends cdktf.TerraformResource {
+export class S3BucketLoggingA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -653,14 +653,14 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3BucketLoggingA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3BucketLoggingA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketLoggingA to import
   * @param importFromId The id of the existing S3BucketLoggingA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_logging#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketLoggingA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_logging", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_logging", importId: importFromId, provider });
       }
 
   // ===========
@@ -796,7 +796,7 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
   public get targetGrant() {
     return this._targetGrant;
   }
-  public putTargetGrant(value: S3BucketLoggingTargetGrant[] | cdktf.IResolvable) {
+  public putTargetGrant(value: S3BucketLoggingTargetGrant[] | cdktn.IResolvable) {
     this._targetGrant.internalValue = value;
   }
   public resetTargetGrant() {
@@ -829,13 +829,13 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      target_bucket: cdktf.stringToTerraform(this._targetBucket),
-      target_prefix: cdktf.stringToTerraform(this._targetPrefix),
-      target_grant: cdktf.listMapper(s3BucketLoggingTargetGrantToTerraform, true)(this._targetGrant.internalValue),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      expected_bucket_owner: cdktn.stringToTerraform(this._expectedBucketOwner),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      target_bucket: cdktn.stringToTerraform(this._targetBucket),
+      target_prefix: cdktn.stringToTerraform(this._targetPrefix),
+      target_grant: cdktn.listMapper(s3BucketLoggingTargetGrantToTerraform, true)(this._targetGrant.internalValue),
       target_object_key_format: s3BucketLoggingTargetObjectKeyFormatToTerraform(this._targetObjectKeyFormat.internalValue),
     };
   }
@@ -843,43 +843,43 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expected_bucket_owner: {
-        value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
+        value: cdktn.stringToHclTerraform(this._expectedBucketOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_bucket: {
-        value: cdktf.stringToHclTerraform(this._targetBucket),
+        value: cdktn.stringToHclTerraform(this._targetBucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_prefix: {
-        value: cdktf.stringToHclTerraform(this._targetPrefix),
+        value: cdktn.stringToHclTerraform(this._targetPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_grant: {
-        value: cdktf.listMapperHcl(s3BucketLoggingTargetGrantToHclTerraform, true)(this._targetGrant.internalValue),
+        value: cdktn.listMapperHcl(s3BucketLoggingTargetGrantToHclTerraform, true)(this._targetGrant.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "S3BucketLoggingTargetGrantList",

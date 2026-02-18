@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EcrpublicRepositoryConfig extends cdktf.TerraformMetaArguments {
+export interface EcrpublicRepositoryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecrpublic_repository#force_destroy EcrpublicRepository#force_destroy}
   */
-  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecrpublic_repository#id EcrpublicRepository#id}
   *
@@ -82,59 +82,59 @@ export interface EcrpublicRepositoryCatalogData {
 }
 
 export function ecrpublicRepositoryCatalogDataToTerraform(struct?: EcrpublicRepositoryCatalogDataOutputReference | EcrpublicRepositoryCatalogData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    about_text: cdktf.stringToTerraform(struct!.aboutText),
-    architectures: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.architectures),
-    description: cdktf.stringToTerraform(struct!.description),
-    logo_image_blob: cdktf.stringToTerraform(struct!.logoImageBlob),
-    operating_systems: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.operatingSystems),
-    usage_text: cdktf.stringToTerraform(struct!.usageText),
+    about_text: cdktn.stringToTerraform(struct!.aboutText),
+    architectures: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.architectures),
+    description: cdktn.stringToTerraform(struct!.description),
+    logo_image_blob: cdktn.stringToTerraform(struct!.logoImageBlob),
+    operating_systems: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.operatingSystems),
+    usage_text: cdktn.stringToTerraform(struct!.usageText),
   }
 }
 
 
 export function ecrpublicRepositoryCatalogDataToHclTerraform(struct?: EcrpublicRepositoryCatalogDataOutputReference | EcrpublicRepositoryCatalogData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     about_text: {
-      value: cdktf.stringToHclTerraform(struct!.aboutText),
+      value: cdktn.stringToHclTerraform(struct!.aboutText),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     architectures: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.architectures),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.architectures),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     logo_image_blob: {
-      value: cdktf.stringToHclTerraform(struct!.logoImageBlob),
+      value: cdktn.stringToHclTerraform(struct!.logoImageBlob),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operating_systems: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.operatingSystems),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.operatingSystems),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     usage_text: {
-      value: cdktf.stringToHclTerraform(struct!.usageText),
+      value: cdktn.stringToHclTerraform(struct!.usageText),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -145,14 +145,14 @@ export function ecrpublicRepositoryCatalogDataToHclTerraform(struct?: EcrpublicR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EcrpublicRepositoryCatalogDataOutputReference extends cdktf.ComplexObject {
+export class EcrpublicRepositoryCatalogDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -226,7 +226,7 @@ export class EcrpublicRepositoryCatalogDataOutputReference extends cdktf.Complex
   // architectures - computed: false, optional: true, required: false
   private _architectures?: string[]; 
   public get architectures() {
-    return cdktf.Fn.tolist(this.getListAttribute('architectures'));
+    return cdktn.Fn.tolist(this.getListAttribute('architectures'));
   }
   public set architectures(value: string[]) {
     this._architectures = value;
@@ -274,7 +274,7 @@ export class EcrpublicRepositoryCatalogDataOutputReference extends cdktf.Complex
   // operating_systems - computed: false, optional: true, required: false
   private _operatingSystems?: string[]; 
   public get operatingSystems() {
-    return cdktf.Fn.tolist(this.getListAttribute('operating_systems'));
+    return cdktn.Fn.tolist(this.getListAttribute('operating_systems'));
   }
   public set operatingSystems(value: string[]) {
     this._operatingSystems = value;
@@ -310,25 +310,25 @@ export interface EcrpublicRepositoryTimeouts {
   readonly delete?: string;
 }
 
-export function ecrpublicRepositoryTimeoutsToTerraform(struct?: EcrpublicRepositoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrpublicRepositoryTimeoutsToTerraform(struct?: EcrpublicRepositoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete: cdktf.stringToTerraform(struct!.delete),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function ecrpublicRepositoryTimeoutsToHclTerraform(struct?: EcrpublicRepositoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrpublicRepositoryTimeoutsToHclTerraform(struct?: EcrpublicRepositoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -339,19 +339,19 @@ export function ecrpublicRepositoryTimeoutsToHclTerraform(struct?: EcrpublicRepo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EcrpublicRepositoryTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EcrpublicRepositoryTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EcrpublicRepositoryTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EcrpublicRepositoryTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -364,13 +364,13 @@ export class EcrpublicRepositoryTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EcrpublicRepositoryTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EcrpublicRepositoryTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -401,7 +401,7 @@ export class EcrpublicRepositoryTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecrpublic_repository aws_ecrpublic_repository}
 */
-export class EcrpublicRepository extends cdktf.TerraformResource {
+export class EcrpublicRepository extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -412,14 +412,14 @@ export class EcrpublicRepository extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EcrpublicRepository resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EcrpublicRepository resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EcrpublicRepository to import
   * @param importFromId The id of the existing EcrpublicRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecrpublic_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EcrpublicRepository to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecrpublic_repository", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecrpublic_repository", importId: importFromId, provider });
       }
 
   // ===========
@@ -469,11 +469,11 @@ export class EcrpublicRepository extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  private _forceDestroy?: boolean | cdktn.IResolvable; 
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+  public set forceDestroy(value: boolean | cdktn.IResolvable) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -609,12 +609,12 @@ export class EcrpublicRepository extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      repository_name: cdktf.stringToTerraform(this._repositoryName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      repository_name: cdktn.stringToTerraform(this._repositoryName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       catalog_data: ecrpublicRepositoryCatalogDataToTerraform(this._catalogData.internalValue),
       timeouts: ecrpublicRepositoryTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -623,37 +623,37 @@ export class EcrpublicRepository extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       force_destroy: {
-        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        value: cdktn.booleanToHclTerraform(this._forceDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_name: {
-        value: cdktf.stringToHclTerraform(this._repositoryName),
+        value: cdktn.stringToHclTerraform(this._repositoryName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppautoscalingTargetConfig extends cdktf.TerraformMetaArguments {
+export interface AppautoscalingTargetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appautoscaling_target#id AppautoscalingTarget#id}
   *
@@ -68,50 +68,50 @@ export interface AppautoscalingTargetSuspendedState {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appautoscaling_target#dynamic_scaling_in_suspended AppautoscalingTarget#dynamic_scaling_in_suspended}
   */
-  readonly dynamicScalingInSuspended?: boolean | cdktf.IResolvable;
+  readonly dynamicScalingInSuspended?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appautoscaling_target#dynamic_scaling_out_suspended AppautoscalingTarget#dynamic_scaling_out_suspended}
   */
-  readonly dynamicScalingOutSuspended?: boolean | cdktf.IResolvable;
+  readonly dynamicScalingOutSuspended?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appautoscaling_target#scheduled_scaling_suspended AppautoscalingTarget#scheduled_scaling_suspended}
   */
-  readonly scheduledScalingSuspended?: boolean | cdktf.IResolvable;
+  readonly scheduledScalingSuspended?: boolean | cdktn.IResolvable;
 }
 
 export function appautoscalingTargetSuspendedStateToTerraform(struct?: AppautoscalingTargetSuspendedStateOutputReference | AppautoscalingTargetSuspendedState): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dynamic_scaling_in_suspended: cdktf.booleanToTerraform(struct!.dynamicScalingInSuspended),
-    dynamic_scaling_out_suspended: cdktf.booleanToTerraform(struct!.dynamicScalingOutSuspended),
-    scheduled_scaling_suspended: cdktf.booleanToTerraform(struct!.scheduledScalingSuspended),
+    dynamic_scaling_in_suspended: cdktn.booleanToTerraform(struct!.dynamicScalingInSuspended),
+    dynamic_scaling_out_suspended: cdktn.booleanToTerraform(struct!.dynamicScalingOutSuspended),
+    scheduled_scaling_suspended: cdktn.booleanToTerraform(struct!.scheduledScalingSuspended),
   }
 }
 
 
 export function appautoscalingTargetSuspendedStateToHclTerraform(struct?: AppautoscalingTargetSuspendedStateOutputReference | AppautoscalingTargetSuspendedState): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dynamic_scaling_in_suspended: {
-      value: cdktf.booleanToHclTerraform(struct!.dynamicScalingInSuspended),
+      value: cdktn.booleanToHclTerraform(struct!.dynamicScalingInSuspended),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     dynamic_scaling_out_suspended: {
-      value: cdktf.booleanToHclTerraform(struct!.dynamicScalingOutSuspended),
+      value: cdktn.booleanToHclTerraform(struct!.dynamicScalingOutSuspended),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     scheduled_scaling_suspended: {
-      value: cdktf.booleanToHclTerraform(struct!.scheduledScalingSuspended),
+      value: cdktn.booleanToHclTerraform(struct!.scheduledScalingSuspended),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -122,14 +122,14 @@ export function appautoscalingTargetSuspendedStateToHclTerraform(struct?: Appaut
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppautoscalingTargetSuspendedStateOutputReference extends cdktf.ComplexObject {
+export class AppautoscalingTargetSuspendedStateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -167,11 +167,11 @@ export class AppautoscalingTargetSuspendedStateOutputReference extends cdktf.Com
   }
 
   // dynamic_scaling_in_suspended - computed: false, optional: true, required: false
-  private _dynamicScalingInSuspended?: boolean | cdktf.IResolvable; 
+  private _dynamicScalingInSuspended?: boolean | cdktn.IResolvable; 
   public get dynamicScalingInSuspended() {
     return this.getBooleanAttribute('dynamic_scaling_in_suspended');
   }
-  public set dynamicScalingInSuspended(value: boolean | cdktf.IResolvable) {
+  public set dynamicScalingInSuspended(value: boolean | cdktn.IResolvable) {
     this._dynamicScalingInSuspended = value;
   }
   public resetDynamicScalingInSuspended() {
@@ -183,11 +183,11 @@ export class AppautoscalingTargetSuspendedStateOutputReference extends cdktf.Com
   }
 
   // dynamic_scaling_out_suspended - computed: false, optional: true, required: false
-  private _dynamicScalingOutSuspended?: boolean | cdktf.IResolvable; 
+  private _dynamicScalingOutSuspended?: boolean | cdktn.IResolvable; 
   public get dynamicScalingOutSuspended() {
     return this.getBooleanAttribute('dynamic_scaling_out_suspended');
   }
-  public set dynamicScalingOutSuspended(value: boolean | cdktf.IResolvable) {
+  public set dynamicScalingOutSuspended(value: boolean | cdktn.IResolvable) {
     this._dynamicScalingOutSuspended = value;
   }
   public resetDynamicScalingOutSuspended() {
@@ -199,11 +199,11 @@ export class AppautoscalingTargetSuspendedStateOutputReference extends cdktf.Com
   }
 
   // scheduled_scaling_suspended - computed: false, optional: true, required: false
-  private _scheduledScalingSuspended?: boolean | cdktf.IResolvable; 
+  private _scheduledScalingSuspended?: boolean | cdktn.IResolvable; 
   public get scheduledScalingSuspended() {
     return this.getBooleanAttribute('scheduled_scaling_suspended');
   }
-  public set scheduledScalingSuspended(value: boolean | cdktf.IResolvable) {
+  public set scheduledScalingSuspended(value: boolean | cdktn.IResolvable) {
     this._scheduledScalingSuspended = value;
   }
   public resetScheduledScalingSuspended() {
@@ -218,7 +218,7 @@ export class AppautoscalingTargetSuspendedStateOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appautoscaling_target aws_appautoscaling_target}
 */
-export class AppautoscalingTarget extends cdktf.TerraformResource {
+export class AppautoscalingTarget extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -229,14 +229,14 @@ export class AppautoscalingTarget extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppautoscalingTarget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppautoscalingTarget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppautoscalingTarget to import
   * @param importFromId The id of the existing AppautoscalingTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appautoscaling_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppautoscalingTarget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appautoscaling_target", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appautoscaling_target", importId: importFromId, provider });
       }
 
   // ===========
@@ -455,16 +455,16 @@ export class AppautoscalingTarget extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      max_capacity: cdktf.numberToTerraform(this._maxCapacity),
-      min_capacity: cdktf.numberToTerraform(this._minCapacity),
-      region: cdktf.stringToTerraform(this._region),
-      resource_id: cdktf.stringToTerraform(this._resourceId),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      scalable_dimension: cdktf.stringToTerraform(this._scalableDimension),
-      service_namespace: cdktf.stringToTerraform(this._serviceNamespace),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      id: cdktn.stringToTerraform(this._id),
+      max_capacity: cdktn.numberToTerraform(this._maxCapacity),
+      min_capacity: cdktn.numberToTerraform(this._minCapacity),
+      region: cdktn.stringToTerraform(this._region),
+      resource_id: cdktn.stringToTerraform(this._resourceId),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      scalable_dimension: cdktn.stringToTerraform(this._scalableDimension),
+      service_namespace: cdktn.stringToTerraform(this._serviceNamespace),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       suspended_state: appautoscalingTargetSuspendedStateToTerraform(this._suspendedState.internalValue),
     };
   }
@@ -472,61 +472,61 @@ export class AppautoscalingTarget extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_capacity: {
-        value: cdktf.numberToHclTerraform(this._maxCapacity),
+        value: cdktn.numberToHclTerraform(this._maxCapacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_capacity: {
-        value: cdktf.numberToHclTerraform(this._minCapacity),
+        value: cdktn.numberToHclTerraform(this._minCapacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_id: {
-        value: cdktf.stringToHclTerraform(this._resourceId),
+        value: cdktn.stringToHclTerraform(this._resourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scalable_dimension: {
-        value: cdktf.stringToHclTerraform(this._scalableDimension),
+        value: cdktn.stringToHclTerraform(this._scalableDimension),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_namespace: {
-        value: cdktf.stringToHclTerraform(this._serviceNamespace),
+        value: cdktn.stringToHclTerraform(this._serviceNamespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

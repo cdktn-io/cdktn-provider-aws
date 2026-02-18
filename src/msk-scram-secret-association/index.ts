@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MskScramSecretAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface MskScramSecretAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_scram_secret_association#cluster_arn MskScramSecretAssociation#cluster_arn}
   */
@@ -38,7 +38,7 @@ export interface MskScramSecretAssociationConfig extends cdktf.TerraformMetaArgu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_scram_secret_association aws_msk_scram_secret_association}
 */
-export class MskScramSecretAssociation extends cdktf.TerraformResource {
+export class MskScramSecretAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class MskScramSecretAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MskScramSecretAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MskScramSecretAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MskScramSecretAssociation to import
   * @param importFromId The id of the existing MskScramSecretAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_scram_secret_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MskScramSecretAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_msk_scram_secret_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_msk_scram_secret_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -144,7 +144,7 @@ export class MskScramSecretAssociation extends cdktf.TerraformResource {
   // secret_arn_list - computed: false, optional: false, required: true
   private _secretArnList?: string[]; 
   public get secretArnList() {
-    return cdktf.Fn.tolist(this.getListAttribute('secret_arn_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('secret_arn_list'));
   }
   public set secretArnList(value: string[]) {
     this._secretArnList = value;
@@ -160,35 +160,35 @@ export class MskScramSecretAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_arn: cdktf.stringToTerraform(this._clusterArn),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      secret_arn_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._secretArnList),
+      cluster_arn: cdktn.stringToTerraform(this._clusterArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      secret_arn_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._secretArnList),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_arn: {
-        value: cdktf.stringToHclTerraform(this._clusterArn),
+        value: cdktn.stringToHclTerraform(this._clusterArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_arn_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._secretArnList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._secretArnList),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

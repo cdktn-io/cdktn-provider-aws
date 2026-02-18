@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DynamodbTableItemConfig extends cdktf.TerraformMetaArguments {
+export interface DynamodbTableItemConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table_item#hash_key DynamodbTableItem#hash_key}
   */
@@ -46,7 +46,7 @@ export interface DynamodbTableItemConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table_item aws_dynamodb_table_item}
 */
-export class DynamodbTableItem extends cdktf.TerraformResource {
+export class DynamodbTableItem extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class DynamodbTableItem extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DynamodbTableItem resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DynamodbTableItem resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DynamodbTableItem to import
   * @param importFromId The id of the existing DynamodbTableItem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table_item#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DynamodbTableItem to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dynamodb_table_item", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dynamodb_table_item", importId: importFromId, provider });
       }
 
   // ===========
@@ -199,49 +199,49 @@ export class DynamodbTableItem extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hash_key: cdktf.stringToTerraform(this._hashKey),
-      id: cdktf.stringToTerraform(this._id),
-      item: cdktf.stringToTerraform(this._item),
-      range_key: cdktf.stringToTerraform(this._rangeKey),
-      region: cdktf.stringToTerraform(this._region),
-      table_name: cdktf.stringToTerraform(this._tableName),
+      hash_key: cdktn.stringToTerraform(this._hashKey),
+      id: cdktn.stringToTerraform(this._id),
+      item: cdktn.stringToTerraform(this._item),
+      range_key: cdktn.stringToTerraform(this._rangeKey),
+      region: cdktn.stringToTerraform(this._region),
+      table_name: cdktn.stringToTerraform(this._tableName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       hash_key: {
-        value: cdktf.stringToHclTerraform(this._hashKey),
+        value: cdktn.stringToHclTerraform(this._hashKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       item: {
-        value: cdktf.stringToHclTerraform(this._item),
+        value: cdktn.stringToHclTerraform(this._item),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       range_key: {
-        value: cdktf.stringToHclTerraform(this._rangeKey),
+        value: cdktn.stringToHclTerraform(this._rangeKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_name: {
-        value: cdktf.stringToHclTerraform(this._tableName),
+        value: cdktn.stringToHclTerraform(this._tableName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

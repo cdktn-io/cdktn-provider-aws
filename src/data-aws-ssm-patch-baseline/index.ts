@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsSsmPatchBaselineConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSsmPatchBaselineConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssm_patch_baseline#default_baseline DataAwsSsmPatchBaseline#default_baseline}
   */
-  readonly defaultBaseline?: boolean | cdktf.IResolvable;
+  readonly defaultBaseline?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssm_patch_baseline#id DataAwsSsmPatchBaseline#id}
   *
@@ -46,8 +46,8 @@ export interface DataAwsSsmPatchBaselineApprovalRulePatchFilter {
 }
 
 export function dataAwsSsmPatchBaselineApprovalRulePatchFilterToTerraform(struct?: DataAwsSsmPatchBaselineApprovalRulePatchFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -56,8 +56,8 @@ export function dataAwsSsmPatchBaselineApprovalRulePatchFilterToTerraform(struct
 
 
 export function dataAwsSsmPatchBaselineApprovalRulePatchFilterToHclTerraform(struct?: DataAwsSsmPatchBaselineApprovalRulePatchFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -65,7 +65,7 @@ export function dataAwsSsmPatchBaselineApprovalRulePatchFilterToHclTerraform(str
   return attrs;
 }
 
-export class DataAwsSsmPatchBaselineApprovalRulePatchFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmPatchBaselineApprovalRulePatchFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -74,7 +74,7 @@ export class DataAwsSsmPatchBaselineApprovalRulePatchFilterOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -104,14 +104,14 @@ export class DataAwsSsmPatchBaselineApprovalRulePatchFilterOutputReference exten
   }
 }
 
-export class DataAwsSsmPatchBaselineApprovalRulePatchFilterList extends cdktf.ComplexList {
+export class DataAwsSsmPatchBaselineApprovalRulePatchFilterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -126,8 +126,8 @@ export interface DataAwsSsmPatchBaselineApprovalRule {
 }
 
 export function dataAwsSsmPatchBaselineApprovalRuleToTerraform(struct?: DataAwsSsmPatchBaselineApprovalRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -136,8 +136,8 @@ export function dataAwsSsmPatchBaselineApprovalRuleToTerraform(struct?: DataAwsS
 
 
 export function dataAwsSsmPatchBaselineApprovalRuleToHclTerraform(struct?: DataAwsSsmPatchBaselineApprovalRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -145,7 +145,7 @@ export function dataAwsSsmPatchBaselineApprovalRuleToHclTerraform(struct?: DataA
   return attrs;
 }
 
-export class DataAwsSsmPatchBaselineApprovalRuleOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmPatchBaselineApprovalRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -154,7 +154,7 @@ export class DataAwsSsmPatchBaselineApprovalRuleOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -200,14 +200,14 @@ export class DataAwsSsmPatchBaselineApprovalRuleOutputReference extends cdktf.Co
   }
 }
 
-export class DataAwsSsmPatchBaselineApprovalRuleList extends cdktf.ComplexList {
+export class DataAwsSsmPatchBaselineApprovalRuleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -222,8 +222,8 @@ export interface DataAwsSsmPatchBaselineGlobalFilter {
 }
 
 export function dataAwsSsmPatchBaselineGlobalFilterToTerraform(struct?: DataAwsSsmPatchBaselineGlobalFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -232,8 +232,8 @@ export function dataAwsSsmPatchBaselineGlobalFilterToTerraform(struct?: DataAwsS
 
 
 export function dataAwsSsmPatchBaselineGlobalFilterToHclTerraform(struct?: DataAwsSsmPatchBaselineGlobalFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -241,7 +241,7 @@ export function dataAwsSsmPatchBaselineGlobalFilterToHclTerraform(struct?: DataA
   return attrs;
 }
 
-export class DataAwsSsmPatchBaselineGlobalFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmPatchBaselineGlobalFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -250,7 +250,7 @@ export class DataAwsSsmPatchBaselineGlobalFilterOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -280,14 +280,14 @@ export class DataAwsSsmPatchBaselineGlobalFilterOutputReference extends cdktf.Co
   }
 }
 
-export class DataAwsSsmPatchBaselineGlobalFilterList extends cdktf.ComplexList {
+export class DataAwsSsmPatchBaselineGlobalFilterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -302,8 +302,8 @@ export interface DataAwsSsmPatchBaselineSource {
 }
 
 export function dataAwsSsmPatchBaselineSourceToTerraform(struct?: DataAwsSsmPatchBaselineSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -312,8 +312,8 @@ export function dataAwsSsmPatchBaselineSourceToTerraform(struct?: DataAwsSsmPatc
 
 
 export function dataAwsSsmPatchBaselineSourceToHclTerraform(struct?: DataAwsSsmPatchBaselineSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -321,7 +321,7 @@ export function dataAwsSsmPatchBaselineSourceToHclTerraform(struct?: DataAwsSsmP
   return attrs;
 }
 
-export class DataAwsSsmPatchBaselineSourceOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmPatchBaselineSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -330,7 +330,7 @@ export class DataAwsSsmPatchBaselineSourceOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -365,14 +365,14 @@ export class DataAwsSsmPatchBaselineSourceOutputReference extends cdktf.ComplexO
   }
 }
 
-export class DataAwsSsmPatchBaselineSourceList extends cdktf.ComplexList {
+export class DataAwsSsmPatchBaselineSourceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -387,7 +387,7 @@ export class DataAwsSsmPatchBaselineSourceList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssm_patch_baseline aws_ssm_patch_baseline}
 */
-export class DataAwsSsmPatchBaseline extends cdktf.TerraformDataSource {
+export class DataAwsSsmPatchBaseline extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -398,14 +398,14 @@ export class DataAwsSsmPatchBaseline extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsSsmPatchBaseline resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsSsmPatchBaseline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSsmPatchBaseline to import
   * @param importFromId The id of the existing DataAwsSsmPatchBaseline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssm_patch_baseline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSsmPatchBaseline to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_patch_baseline", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_patch_baseline", importId: importFromId, provider });
       }
 
   // ===========
@@ -474,11 +474,11 @@ export class DataAwsSsmPatchBaseline extends cdktf.TerraformDataSource {
   }
 
   // default_baseline - computed: false, optional: true, required: false
-  private _defaultBaseline?: boolean | cdktf.IResolvable; 
+  private _defaultBaseline?: boolean | cdktn.IResolvable; 
   public get defaultBaseline() {
     return this.getBooleanAttribute('default_baseline');
   }
-  public set defaultBaseline(value: boolean | cdktf.IResolvable) {
+  public set defaultBaseline(value: boolean | cdktn.IResolvable) {
     this._defaultBaseline = value;
   }
   public resetDefaultBaseline() {
@@ -609,49 +609,49 @@ export class DataAwsSsmPatchBaseline extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_baseline: cdktf.booleanToTerraform(this._defaultBaseline),
-      id: cdktf.stringToTerraform(this._id),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      operating_system: cdktf.stringToTerraform(this._operatingSystem),
-      owner: cdktf.stringToTerraform(this._owner),
-      region: cdktf.stringToTerraform(this._region),
+      default_baseline: cdktn.booleanToTerraform(this._defaultBaseline),
+      id: cdktn.stringToTerraform(this._id),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      operating_system: cdktn.stringToTerraform(this._operatingSystem),
+      owner: cdktn.stringToTerraform(this._owner),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       default_baseline: {
-        value: cdktf.booleanToHclTerraform(this._defaultBaseline),
+        value: cdktn.booleanToHclTerraform(this._defaultBaseline),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       operating_system: {
-        value: cdktf.stringToHclTerraform(this._operatingSystem),
+        value: cdktn.stringToHclTerraform(this._operatingSystem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner: {
-        value: cdktf.stringToHclTerraform(this._owner),
+        value: cdktn.stringToHclTerraform(this._owner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

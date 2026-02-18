@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GameliftGameServerGroupConfig extends cdktf.TerraformMetaArguments {
+export interface GameliftGameServerGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/gamelift_game_server_group#balancing_strategy GameliftGameServerGroup#balancing_strategy}
   */
@@ -72,7 +72,7 @@ export interface GameliftGameServerGroupConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/gamelift_game_server_group#instance_definition GameliftGameServerGroup#instance_definition}
   */
-  readonly instanceDefinition: GameliftGameServerGroupInstanceDefinition[] | cdktf.IResolvable;
+  readonly instanceDefinition: GameliftGameServerGroupInstanceDefinition[] | cdktn.IResolvable;
   /**
   * launch_template block
   *
@@ -94,24 +94,24 @@ export interface GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigura
 }
 
 export function gameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationToTerraform(struct?: GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference | GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target_value: cdktf.numberToTerraform(struct!.targetValue),
+    target_value: cdktn.numberToTerraform(struct!.targetValue),
   }
 }
 
 
 export function gameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationToHclTerraform(struct?: GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference | GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     target_value: {
-      value: cdktf.numberToHclTerraform(struct!.targetValue),
+      value: cdktn.numberToHclTerraform(struct!.targetValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -122,14 +122,14 @@ export function gameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference extends cdktf.ComplexObject {
+export class GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -181,25 +181,25 @@ export interface GameliftGameServerGroupAutoScalingPolicy {
 }
 
 export function gameliftGameServerGroupAutoScalingPolicyToTerraform(struct?: GameliftGameServerGroupAutoScalingPolicyOutputReference | GameliftGameServerGroupAutoScalingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    estimated_instance_warmup: cdktf.numberToTerraform(struct!.estimatedInstanceWarmup),
+    estimated_instance_warmup: cdktn.numberToTerraform(struct!.estimatedInstanceWarmup),
     target_tracking_configuration: gameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationToTerraform(struct!.targetTrackingConfiguration),
   }
 }
 
 
 export function gameliftGameServerGroupAutoScalingPolicyToHclTerraform(struct?: GameliftGameServerGroupAutoScalingPolicyOutputReference | GameliftGameServerGroupAutoScalingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     estimated_instance_warmup: {
-      value: cdktf.numberToHclTerraform(struct!.estimatedInstanceWarmup),
+      value: cdktn.numberToHclTerraform(struct!.estimatedInstanceWarmup),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -216,14 +216,14 @@ export function gameliftGameServerGroupAutoScalingPolicyToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GameliftGameServerGroupAutoScalingPolicyOutputReference extends cdktf.ComplexObject {
+export class GameliftGameServerGroupAutoScalingPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -294,32 +294,32 @@ export interface GameliftGameServerGroupInstanceDefinition {
   readonly weightedCapacity?: string;
 }
 
-export function gameliftGameServerGroupInstanceDefinitionToTerraform(struct?: GameliftGameServerGroupInstanceDefinition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gameliftGameServerGroupInstanceDefinitionToTerraform(struct?: GameliftGameServerGroupInstanceDefinition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_type: cdktf.stringToTerraform(struct!.instanceType),
-    weighted_capacity: cdktf.stringToTerraform(struct!.weightedCapacity),
+    instance_type: cdktn.stringToTerraform(struct!.instanceType),
+    weighted_capacity: cdktn.stringToTerraform(struct!.weightedCapacity),
   }
 }
 
 
-export function gameliftGameServerGroupInstanceDefinitionToHclTerraform(struct?: GameliftGameServerGroupInstanceDefinition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gameliftGameServerGroupInstanceDefinitionToHclTerraform(struct?: GameliftGameServerGroupInstanceDefinition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_type: {
-      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      value: cdktn.stringToHclTerraform(struct!.instanceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weighted_capacity: {
-      value: cdktf.stringToHclTerraform(struct!.weightedCapacity),
+      value: cdktn.stringToHclTerraform(struct!.weightedCapacity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -330,9 +330,9 @@ export function gameliftGameServerGroupInstanceDefinitionToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GameliftGameServerGroupInstanceDefinitionOutputReference extends cdktf.ComplexObject {
+export class GameliftGameServerGroupInstanceDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -340,11 +340,11 @@ export class GameliftGameServerGroupInstanceDefinitionOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GameliftGameServerGroupInstanceDefinition | cdktf.IResolvable | undefined {
+  public get internalValue(): GameliftGameServerGroupInstanceDefinition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -361,14 +361,14 @@ export class GameliftGameServerGroupInstanceDefinitionOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GameliftGameServerGroupInstanceDefinition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GameliftGameServerGroupInstanceDefinition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._instanceType = undefined;
       this._weightedCapacity = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -410,15 +410,15 @@ export class GameliftGameServerGroupInstanceDefinitionOutputReference extends cd
   }
 }
 
-export class GameliftGameServerGroupInstanceDefinitionList extends cdktf.ComplexList {
-  public internalValue? : GameliftGameServerGroupInstanceDefinition[] | cdktf.IResolvable
+export class GameliftGameServerGroupInstanceDefinitionList extends cdktn.ComplexList {
+  public internalValue? : GameliftGameServerGroupInstanceDefinition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -448,38 +448,38 @@ export interface GameliftGameServerGroupLaunchTemplate {
 }
 
 export function gameliftGameServerGroupLaunchTemplateToTerraform(struct?: GameliftGameServerGroupLaunchTemplateOutputReference | GameliftGameServerGroupLaunchTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    name: cdktf.stringToTerraform(struct!.name),
-    version: cdktf.stringToTerraform(struct!.version),
+    id: cdktn.stringToTerraform(struct!.id),
+    name: cdktn.stringToTerraform(struct!.name),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function gameliftGameServerGroupLaunchTemplateToHclTerraform(struct?: GameliftGameServerGroupLaunchTemplateOutputReference | GameliftGameServerGroupLaunchTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -490,14 +490,14 @@ export function gameliftGameServerGroupLaunchTemplateToHclTerraform(struct?: Gam
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GameliftGameServerGroupLaunchTemplateOutputReference extends cdktf.ComplexObject {
+export class GameliftGameServerGroupLaunchTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -593,32 +593,32 @@ export interface GameliftGameServerGroupTimeouts {
   readonly delete?: string;
 }
 
-export function gameliftGameServerGroupTimeoutsToTerraform(struct?: GameliftGameServerGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gameliftGameServerGroupTimeoutsToTerraform(struct?: GameliftGameServerGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function gameliftGameServerGroupTimeoutsToHclTerraform(struct?: GameliftGameServerGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gameliftGameServerGroupTimeoutsToHclTerraform(struct?: GameliftGameServerGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -629,19 +629,19 @@ export function gameliftGameServerGroupTimeoutsToHclTerraform(struct?: GameliftG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GameliftGameServerGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GameliftGameServerGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GameliftGameServerGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GameliftGameServerGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -658,14 +658,14 @@ export class GameliftGameServerGroupTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GameliftGameServerGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GameliftGameServerGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -713,7 +713,7 @@ export class GameliftGameServerGroupTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/gamelift_game_server_group aws_gamelift_game_server_group}
 */
-export class GameliftGameServerGroup extends cdktf.TerraformResource {
+export class GameliftGameServerGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -724,14 +724,14 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GameliftGameServerGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GameliftGameServerGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GameliftGameServerGroup to import
   * @param importFromId The id of the existing GameliftGameServerGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/gamelift_game_server_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GameliftGameServerGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_gamelift_game_server_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_gamelift_game_server_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -943,7 +943,7 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
   // vpc_subnets - computed: false, optional: true, required: false
   private _vpcSubnets?: string[]; 
   public get vpcSubnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('vpc_subnets'));
+    return cdktn.Fn.tolist(this.getListAttribute('vpc_subnets'));
   }
   public set vpcSubnets(value: string[]) {
     this._vpcSubnets = value;
@@ -977,7 +977,7 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
   public get instanceDefinition() {
     return this._instanceDefinition;
   }
-  public putInstanceDefinition(value: GameliftGameServerGroupInstanceDefinition[] | cdktf.IResolvable) {
+  public putInstanceDefinition(value: GameliftGameServerGroupInstanceDefinition[] | cdktn.IResolvable) {
     this._instanceDefinition.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1020,19 +1020,19 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      balancing_strategy: cdktf.stringToTerraform(this._balancingStrategy),
-      game_server_group_name: cdktf.stringToTerraform(this._gameServerGroupName),
-      game_server_protection_policy: cdktf.stringToTerraform(this._gameServerProtectionPolicy),
-      id: cdktf.stringToTerraform(this._id),
-      max_size: cdktf.numberToTerraform(this._maxSize),
-      min_size: cdktf.numberToTerraform(this._minSize),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSubnets),
+      balancing_strategy: cdktn.stringToTerraform(this._balancingStrategy),
+      game_server_group_name: cdktn.stringToTerraform(this._gameServerGroupName),
+      game_server_protection_policy: cdktn.stringToTerraform(this._gameServerProtectionPolicy),
+      id: cdktn.stringToTerraform(this._id),
+      max_size: cdktn.numberToTerraform(this._maxSize),
+      min_size: cdktn.numberToTerraform(this._minSize),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      vpc_subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(this._vpcSubnets),
       auto_scaling_policy: gameliftGameServerGroupAutoScalingPolicyToTerraform(this._autoScalingPolicy.internalValue),
-      instance_definition: cdktf.listMapper(gameliftGameServerGroupInstanceDefinitionToTerraform, true)(this._instanceDefinition.internalValue),
+      instance_definition: cdktn.listMapper(gameliftGameServerGroupInstanceDefinitionToTerraform, true)(this._instanceDefinition.internalValue),
       launch_template: gameliftGameServerGroupLaunchTemplateToTerraform(this._launchTemplate.internalValue),
       timeouts: gameliftGameServerGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1041,67 +1041,67 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       balancing_strategy: {
-        value: cdktf.stringToHclTerraform(this._balancingStrategy),
+        value: cdktn.stringToHclTerraform(this._balancingStrategy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       game_server_group_name: {
-        value: cdktf.stringToHclTerraform(this._gameServerGroupName),
+        value: cdktn.stringToHclTerraform(this._gameServerGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       game_server_protection_policy: {
-        value: cdktf.stringToHclTerraform(this._gameServerProtectionPolicy),
+        value: cdktn.stringToHclTerraform(this._gameServerProtectionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_size: {
-        value: cdktf.numberToHclTerraform(this._maxSize),
+        value: cdktn.numberToHclTerraform(this._maxSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_size: {
-        value: cdktf.numberToHclTerraform(this._minSize),
+        value: cdktn.numberToHclTerraform(this._minSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_subnets: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vpcSubnets),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._vpcSubnets),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
@@ -1113,7 +1113,7 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
         storageClassType: "GameliftGameServerGroupAutoScalingPolicyList",
       },
       instance_definition: {
-        value: cdktf.listMapperHcl(gameliftGameServerGroupInstanceDefinitionToHclTerraform, true)(this._instanceDefinition.internalValue),
+        value: cdktn.listMapperHcl(gameliftGameServerGroupInstanceDefinitionToHclTerraform, true)(this._instanceDefinition.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "GameliftGameServerGroupInstanceDefinitionList",

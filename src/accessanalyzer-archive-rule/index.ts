@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AccessanalyzerArchiveRuleConfig extends cdktf.TerraformMetaArguments {
+export interface AccessanalyzerArchiveRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/accessanalyzer_archive_rule#analyzer_name AccessanalyzerArchiveRule#analyzer_name}
   */
@@ -38,7 +38,7 @@ export interface AccessanalyzerArchiveRuleConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/accessanalyzer_archive_rule#filter AccessanalyzerArchiveRule#filter}
   */
-  readonly filter: AccessanalyzerArchiveRuleFilter[] | cdktf.IResolvable;
+  readonly filter: AccessanalyzerArchiveRuleFilter[] | cdktn.IResolvable;
 }
 export interface AccessanalyzerArchiveRuleFilter {
   /**
@@ -63,53 +63,53 @@ export interface AccessanalyzerArchiveRuleFilter {
   readonly neq?: string[];
 }
 
-export function accessanalyzerArchiveRuleFilterToTerraform(struct?: AccessanalyzerArchiveRuleFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessanalyzerArchiveRuleFilterToTerraform(struct?: AccessanalyzerArchiveRuleFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    contains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.contains),
-    criteria: cdktf.stringToTerraform(struct!.criteria),
-    eq: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eq),
-    exists: cdktf.stringToTerraform(struct!.exists),
-    neq: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.neq),
+    contains: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.contains),
+    criteria: cdktn.stringToTerraform(struct!.criteria),
+    eq: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.eq),
+    exists: cdktn.stringToTerraform(struct!.exists),
+    neq: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.neq),
   }
 }
 
 
-export function accessanalyzerArchiveRuleFilterToHclTerraform(struct?: AccessanalyzerArchiveRuleFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessanalyzerArchiveRuleFilterToHclTerraform(struct?: AccessanalyzerArchiveRuleFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     contains: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.contains),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.contains),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     criteria: {
-      value: cdktf.stringToHclTerraform(struct!.criteria),
+      value: cdktn.stringToHclTerraform(struct!.criteria),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     eq: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.eq),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.eq),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     exists: {
-      value: cdktf.stringToHclTerraform(struct!.exists),
+      value: cdktn.stringToHclTerraform(struct!.exists),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     neq: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.neq),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.neq),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -120,9 +120,9 @@ export function accessanalyzerArchiveRuleFilterToHclTerraform(struct?: Accessana
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessanalyzerArchiveRuleFilterOutputReference extends cdktf.ComplexObject {
+export class AccessanalyzerArchiveRuleFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -130,11 +130,11 @@ export class AccessanalyzerArchiveRuleFilterOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessanalyzerArchiveRuleFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessanalyzerArchiveRuleFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -163,7 +163,7 @@ export class AccessanalyzerArchiveRuleFilterOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessanalyzerArchiveRuleFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessanalyzerArchiveRuleFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class AccessanalyzerArchiveRuleFilterOutputReference extends cdktf.Comple
       this._exists = undefined;
       this._neq = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -266,15 +266,15 @@ export class AccessanalyzerArchiveRuleFilterOutputReference extends cdktf.Comple
   }
 }
 
-export class AccessanalyzerArchiveRuleFilterList extends cdktf.ComplexList {
-  public internalValue? : AccessanalyzerArchiveRuleFilter[] | cdktf.IResolvable
+export class AccessanalyzerArchiveRuleFilterList extends cdktn.ComplexList {
+  public internalValue? : AccessanalyzerArchiveRuleFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -289,7 +289,7 @@ export class AccessanalyzerArchiveRuleFilterList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/accessanalyzer_archive_rule aws_accessanalyzer_archive_rule}
 */
-export class AccessanalyzerArchiveRule extends cdktf.TerraformResource {
+export class AccessanalyzerArchiveRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -300,14 +300,14 @@ export class AccessanalyzerArchiveRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AccessanalyzerArchiveRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AccessanalyzerArchiveRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessanalyzerArchiveRule to import
   * @param importFromId The id of the existing AccessanalyzerArchiveRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/accessanalyzer_archive_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessanalyzerArchiveRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_accessanalyzer_archive_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_accessanalyzer_archive_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -411,7 +411,7 @@ export class AccessanalyzerArchiveRule extends cdktf.TerraformResource {
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: AccessanalyzerArchiveRuleFilter[] | cdktf.IResolvable) {
+  public putFilter(value: AccessanalyzerArchiveRuleFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -425,42 +425,42 @@ export class AccessanalyzerArchiveRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      analyzer_name: cdktf.stringToTerraform(this._analyzerName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      rule_name: cdktf.stringToTerraform(this._ruleName),
-      filter: cdktf.listMapper(accessanalyzerArchiveRuleFilterToTerraform, true)(this._filter.internalValue),
+      analyzer_name: cdktn.stringToTerraform(this._analyzerName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      rule_name: cdktn.stringToTerraform(this._ruleName),
+      filter: cdktn.listMapper(accessanalyzerArchiveRuleFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       analyzer_name: {
-        value: cdktf.stringToHclTerraform(this._analyzerName),
+        value: cdktn.stringToHclTerraform(this._analyzerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule_name: {
-        value: cdktf.stringToHclTerraform(this._ruleName),
+        value: cdktn.stringToHclTerraform(this._ruleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter: {
-        value: cdktf.listMapperHcl(accessanalyzerArchiveRuleFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(accessanalyzerArchiveRuleFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AccessanalyzerArchiveRuleFilterList",

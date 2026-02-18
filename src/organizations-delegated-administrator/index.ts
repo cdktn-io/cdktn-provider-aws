@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OrganizationsDelegatedAdministratorConfig extends cdktf.TerraformMetaArguments {
+export interface OrganizationsDelegatedAdministratorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/organizations_delegated_administrator#account_id OrganizationsDelegatedAdministrator#account_id}
   */
@@ -32,7 +32,7 @@ export interface OrganizationsDelegatedAdministratorConfig extends cdktf.Terrafo
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/organizations_delegated_administrator aws_organizations_delegated_administrator}
 */
-export class OrganizationsDelegatedAdministrator extends cdktf.TerraformResource {
+export class OrganizationsDelegatedAdministrator extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class OrganizationsDelegatedAdministrator extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OrganizationsDelegatedAdministrator resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OrganizationsDelegatedAdministrator resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationsDelegatedAdministrator to import
   * @param importFromId The id of the existing OrganizationsDelegatedAdministrator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/organizations_delegated_administrator#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationsDelegatedAdministrator to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_organizations_delegated_administrator", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_organizations_delegated_administrator", importId: importFromId, provider });
       }
 
   // ===========
@@ -172,28 +172,28 @@ export class OrganizationsDelegatedAdministrator extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      service_principal: cdktf.stringToTerraform(this._servicePrincipal),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      service_principal: cdktn.stringToTerraform(this._servicePrincipal),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_principal: {
-        value: cdktf.stringToHclTerraform(this._servicePrincipal),
+        value: cdktn.stringToHclTerraform(this._servicePrincipal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

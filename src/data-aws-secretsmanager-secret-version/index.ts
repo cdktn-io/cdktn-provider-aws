@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsSecretsmanagerSecretVersionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSecretsmanagerSecretVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_secret_version#id DataAwsSecretsmanagerSecretVersion#id}
   *
@@ -42,7 +42,7 @@ export interface DataAwsSecretsmanagerSecretVersionConfig extends cdktf.Terrafor
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_secret_version aws_secretsmanager_secret_version}
 */
-export class DataAwsSecretsmanagerSecretVersion extends cdktf.TerraformDataSource {
+export class DataAwsSecretsmanagerSecretVersion extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class DataAwsSecretsmanagerSecretVersion extends cdktf.TerraformDataSourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsSecretsmanagerSecretVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsSecretsmanagerSecretVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSecretsmanagerSecretVersion to import
   * @param importFromId The id of the existing DataAwsSecretsmanagerSecretVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/secretsmanager_secret_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSecretsmanagerSecretVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_secretsmanager_secret_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_secretsmanager_secret_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -200,7 +200,7 @@ export class DataAwsSecretsmanagerSecretVersion extends cdktf.TerraformDataSourc
 
   // version_stages - computed: true, optional: false, required: false
   public get versionStages() {
-    return cdktf.Fn.tolist(this.getListAttribute('version_stages'));
+    return cdktn.Fn.tolist(this.getListAttribute('version_stages'));
   }
 
   // =========
@@ -209,42 +209,42 @@ export class DataAwsSecretsmanagerSecretVersion extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      secret_id: cdktf.stringToTerraform(this._secretId),
-      version_id: cdktf.stringToTerraform(this._versionId),
-      version_stage: cdktf.stringToTerraform(this._versionStage),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      secret_id: cdktn.stringToTerraform(this._secretId),
+      version_id: cdktn.stringToTerraform(this._versionId),
+      version_stage: cdktn.stringToTerraform(this._versionStage),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_id: {
-        value: cdktf.stringToHclTerraform(this._secretId),
+        value: cdktn.stringToHclTerraform(this._secretId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version_id: {
-        value: cdktf.stringToHclTerraform(this._versionId),
+        value: cdktn.stringToHclTerraform(this._versionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version_stage: {
-        value: cdktf.stringToHclTerraform(this._versionStage),
+        value: cdktn.stringToHclTerraform(this._versionStage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

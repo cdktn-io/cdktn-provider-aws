@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamUserGroupMembershipConfig extends cdktf.TerraformMetaArguments {
+export interface IamUserGroupMembershipConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_user_group_membership#groups IamUserGroupMembership#groups}
   */
@@ -32,7 +32,7 @@ export interface IamUserGroupMembershipConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_user_group_membership aws_iam_user_group_membership}
 */
-export class IamUserGroupMembership extends cdktf.TerraformResource {
+export class IamUserGroupMembership extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class IamUserGroupMembership extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamUserGroupMembership resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamUserGroupMembership resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamUserGroupMembership to import
   * @param importFromId The id of the existing IamUserGroupMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_user_group_membership#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamUserGroupMembership to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_user_group_membership", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_user_group_membership", importId: importFromId, provider });
       }
 
   // ===========
@@ -92,7 +92,7 @@ export class IamUserGroupMembership extends cdktf.TerraformResource {
   // groups - computed: false, optional: false, required: true
   private _groups?: string[]; 
   public get groups() {
-    return cdktf.Fn.tolist(this.getListAttribute('groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('groups'));
   }
   public set groups(value: string[]) {
     this._groups = value;
@@ -137,28 +137,28 @@ export class IamUserGroupMembership extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groups),
-      id: cdktf.stringToTerraform(this._id),
-      user: cdktf.stringToTerraform(this._user),
+      groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._groups),
+      id: cdktn.stringToTerraform(this._id),
+      user: cdktn.stringToTerraform(this._user),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._groups),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user: {
-        value: cdktf.stringToHclTerraform(this._user),
+        value: cdktn.stringToHclTerraform(this._user),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

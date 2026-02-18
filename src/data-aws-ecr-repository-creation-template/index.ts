@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsEcrRepositoryCreationTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEcrRepositoryCreationTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecr_repository_creation_template#id DataAwsEcrRepositoryCreationTemplate#id}
   *
@@ -38,8 +38,8 @@ export interface DataAwsEcrRepositoryCreationTemplateEncryptionConfiguration {
 }
 
 export function dataAwsEcrRepositoryCreationTemplateEncryptionConfigurationToTerraform(struct?: DataAwsEcrRepositoryCreationTemplateEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAwsEcrRepositoryCreationTemplateEncryptionConfigurationToTer
 
 
 export function dataAwsEcrRepositoryCreationTemplateEncryptionConfigurationToHclTerraform(struct?: DataAwsEcrRepositoryCreationTemplateEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAwsEcrRepositoryCreationTemplateEncryptionConfigurationToHcl
   return attrs;
 }
 
-export class DataAwsEcrRepositoryCreationTemplateEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsEcrRepositoryCreationTemplateEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAwsEcrRepositoryCreationTemplateEncryptionConfigurationOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -96,14 +96,14 @@ export class DataAwsEcrRepositoryCreationTemplateEncryptionConfigurationOutputRe
   }
 }
 
-export class DataAwsEcrRepositoryCreationTemplateEncryptionConfigurationList extends cdktf.ComplexList {
+export class DataAwsEcrRepositoryCreationTemplateEncryptionConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -118,8 +118,8 @@ export interface DataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusion
 }
 
 export function dataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterToTerraform(struct?: DataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -128,8 +128,8 @@ export function dataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusionF
 
 
 export function dataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterToHclTerraform(struct?: DataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -137,7 +137,7 @@ export function dataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusionF
   return attrs;
 }
 
-export class DataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -146,7 +146,7 @@ export class DataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusionFilt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -176,14 +176,14 @@ export class DataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusionFilt
   }
 }
 
-export class DataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList extends cdktf.ComplexList {
+export class DataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -198,7 +198,7 @@ export class DataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusionFilt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecr_repository_creation_template aws_ecr_repository_creation_template}
 */
-export class DataAwsEcrRepositoryCreationTemplate extends cdktf.TerraformDataSource {
+export class DataAwsEcrRepositoryCreationTemplate extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -209,14 +209,14 @@ export class DataAwsEcrRepositoryCreationTemplate extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsEcrRepositoryCreationTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsEcrRepositoryCreationTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEcrRepositoryCreationTemplate to import
   * @param importFromId The id of the existing DataAwsEcrRepositoryCreationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecr_repository_creation_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEcrRepositoryCreationTemplate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_repository_creation_template", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_repository_creation_template", importId: importFromId, provider });
       }
 
   // ===========
@@ -258,7 +258,7 @@ export class DataAwsEcrRepositoryCreationTemplate extends cdktf.TerraformDataSou
 
   // applied_for - computed: true, optional: false, required: false
   public get appliedFor() {
-    return cdktf.Fn.tolist(this.getListAttribute('applied_for'));
+    return cdktn.Fn.tolist(this.getListAttribute('applied_for'));
   }
 
   // custom_role_arn - computed: true, optional: false, required: false
@@ -370,35 +370,35 @@ export class DataAwsEcrRepositoryCreationTemplate extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      prefix: cdktf.stringToTerraform(this._prefix),
-      region: cdktf.stringToTerraform(this._region),
-      resource_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._resourceTags),
+      id: cdktn.stringToTerraform(this._id),
+      prefix: cdktn.stringToTerraform(this._prefix),
+      region: cdktn.stringToTerraform(this._region),
+      resource_tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._resourceTags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       prefix: {
-        value: cdktf.stringToHclTerraform(this._prefix),
+        value: cdktn.stringToHclTerraform(this._prefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._resourceTags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._resourceTags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

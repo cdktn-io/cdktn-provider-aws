@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VerifiedpermissionsPolicyStoreConfig extends cdktf.TerraformMetaArguments {
+export interface VerifiedpermissionsPolicyStoreConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_policy_store#deletion_protection VerifiedpermissionsPolicyStore#deletion_protection}
   */
@@ -35,7 +35,7 @@ export interface VerifiedpermissionsPolicyStoreConfig extends cdktf.TerraformMet
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_policy_store#validation_settings VerifiedpermissionsPolicyStore#validation_settings}
   */
-  readonly validationSettings?: VerifiedpermissionsPolicyStoreValidationSettings[] | cdktf.IResolvable;
+  readonly validationSettings?: VerifiedpermissionsPolicyStoreValidationSettings[] | cdktn.IResolvable;
 }
 export interface VerifiedpermissionsPolicyStoreValidationSettings {
   /**
@@ -44,25 +44,25 @@ export interface VerifiedpermissionsPolicyStoreValidationSettings {
   readonly mode: string;
 }
 
-export function verifiedpermissionsPolicyStoreValidationSettingsToTerraform(struct?: VerifiedpermissionsPolicyStoreValidationSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsPolicyStoreValidationSettingsToTerraform(struct?: VerifiedpermissionsPolicyStoreValidationSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
+    mode: cdktn.stringToTerraform(struct!.mode),
   }
 }
 
 
-export function verifiedpermissionsPolicyStoreValidationSettingsToHclTerraform(struct?: VerifiedpermissionsPolicyStoreValidationSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsPolicyStoreValidationSettingsToHclTerraform(struct?: VerifiedpermissionsPolicyStoreValidationSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -73,9 +73,9 @@ export function verifiedpermissionsPolicyStoreValidationSettingsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedpermissionsPolicyStoreValidationSettingsOutputReference extends cdktf.ComplexObject {
+export class VerifiedpermissionsPolicyStoreValidationSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -83,11 +83,11 @@ export class VerifiedpermissionsPolicyStoreValidationSettingsOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedpermissionsPolicyStoreValidationSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedpermissionsPolicyStoreValidationSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -100,13 +100,13 @@ export class VerifiedpermissionsPolicyStoreValidationSettingsOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedpermissionsPolicyStoreValidationSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedpermissionsPolicyStoreValidationSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -131,15 +131,15 @@ export class VerifiedpermissionsPolicyStoreValidationSettingsOutputReference ext
   }
 }
 
-export class VerifiedpermissionsPolicyStoreValidationSettingsList extends cdktf.ComplexList {
-  public internalValue? : VerifiedpermissionsPolicyStoreValidationSettings[] | cdktf.IResolvable
+export class VerifiedpermissionsPolicyStoreValidationSettingsList extends cdktn.ComplexList {
+  public internalValue? : VerifiedpermissionsPolicyStoreValidationSettings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -154,7 +154,7 @@ export class VerifiedpermissionsPolicyStoreValidationSettingsList extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store}
 */
-export class VerifiedpermissionsPolicyStore extends cdktf.TerraformResource {
+export class VerifiedpermissionsPolicyStore extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -165,14 +165,14 @@ export class VerifiedpermissionsPolicyStore extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VerifiedpermissionsPolicyStore resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VerifiedpermissionsPolicyStore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedpermissionsPolicyStore to import
   * @param importFromId The id of the existing VerifiedpermissionsPolicyStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_policy_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedpermissionsPolicyStore to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedpermissions_policy_store", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedpermissions_policy_store", importId: importFromId, provider });
       }
 
   // ===========
@@ -293,7 +293,7 @@ export class VerifiedpermissionsPolicyStore extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -303,7 +303,7 @@ export class VerifiedpermissionsPolicyStore extends cdktf.TerraformResource {
   public get validationSettings() {
     return this._validationSettings;
   }
-  public putValidationSettings(value: VerifiedpermissionsPolicyStoreValidationSettings[] | cdktf.IResolvable) {
+  public putValidationSettings(value: VerifiedpermissionsPolicyStoreValidationSettings[] | cdktn.IResolvable) {
     this._validationSettings.internalValue = value;
   }
   public resetValidationSettings() {
@@ -320,42 +320,42 @@ export class VerifiedpermissionsPolicyStore extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_protection: cdktf.stringToTerraform(this._deletionProtection),
-      description: cdktf.stringToTerraform(this._description),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      validation_settings: cdktf.listMapper(verifiedpermissionsPolicyStoreValidationSettingsToTerraform, true)(this._validationSettings.internalValue),
+      deletion_protection: cdktn.stringToTerraform(this._deletionProtection),
+      description: cdktn.stringToTerraform(this._description),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      validation_settings: cdktn.listMapper(verifiedpermissionsPolicyStoreValidationSettingsToTerraform, true)(this._validationSettings.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deletion_protection: {
-        value: cdktf.stringToHclTerraform(this._deletionProtection),
+        value: cdktn.stringToHclTerraform(this._deletionProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       validation_settings: {
-        value: cdktf.listMapperHcl(verifiedpermissionsPolicyStoreValidationSettingsToHclTerraform, true)(this._validationSettings.internalValue),
+        value: cdktn.listMapperHcl(verifiedpermissionsPolicyStoreValidationSettingsToHclTerraform, true)(this._validationSettings.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VerifiedpermissionsPolicyStoreValidationSettingsList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
+export interface DynamodbTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#billing_mode DynamodbTable#billing_mode}
   */
@@ -19,7 +19,7 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}
   */
-  readonly deletionProtectionEnabled?: boolean | cdktf.IResolvable;
+  readonly deletionProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}
   */
@@ -64,11 +64,11 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#restore_to_latest_time DynamodbTable#restore_to_latest_time}
   */
-  readonly restoreToLatestTime?: boolean | cdktf.IResolvable;
+  readonly restoreToLatestTime?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#stream_enabled DynamodbTable#stream_enabled}
   */
-  readonly streamEnabled?: boolean | cdktf.IResolvable;
+  readonly streamEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#stream_view_type DynamodbTable#stream_view_type}
   */
@@ -94,13 +94,13 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#attribute DynamodbTable#attribute}
   */
-  readonly attribute?: DynamodbTableAttribute[] | cdktf.IResolvable;
+  readonly attribute?: DynamodbTableAttribute[] | cdktn.IResolvable;
   /**
   * global_secondary_index block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#global_secondary_index DynamodbTable#global_secondary_index}
   */
-  readonly globalSecondaryIndex?: DynamodbTableGlobalSecondaryIndex[] | cdktf.IResolvable;
+  readonly globalSecondaryIndex?: DynamodbTableGlobalSecondaryIndex[] | cdktn.IResolvable;
   /**
   * global_table_witness block
   *
@@ -118,7 +118,7 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#local_secondary_index DynamodbTable#local_secondary_index}
   */
-  readonly localSecondaryIndex?: DynamodbTableLocalSecondaryIndex[] | cdktf.IResolvable;
+  readonly localSecondaryIndex?: DynamodbTableLocalSecondaryIndex[] | cdktn.IResolvable;
   /**
   * on_demand_throughput block
   *
@@ -136,7 +136,7 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#replica DynamodbTable#replica}
   */
-  readonly replica?: DynamodbTableReplica[] | cdktf.IResolvable;
+  readonly replica?: DynamodbTableReplica[] | cdktn.IResolvable;
   /**
   * server_side_encryption block
   *
@@ -173,32 +173,32 @@ export interface DynamodbTableAttribute {
   readonly type: string;
 }
 
-export function dynamodbTableAttributeToTerraform(struct?: DynamodbTableAttribute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamodbTableAttributeToTerraform(struct?: DynamodbTableAttribute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function dynamodbTableAttributeToHclTerraform(struct?: DynamodbTableAttribute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamodbTableAttributeToHclTerraform(struct?: DynamodbTableAttribute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -209,9 +209,9 @@ export function dynamodbTableAttributeToHclTerraform(struct?: DynamodbTableAttri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableAttributeOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableAttributeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -219,11 +219,11 @@ export class DynamodbTableAttributeOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DynamodbTableAttribute | cdktf.IResolvable | undefined {
+  public get internalValue(): DynamodbTableAttribute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -240,14 +240,14 @@ export class DynamodbTableAttributeOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DynamodbTableAttribute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DynamodbTableAttribute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -286,15 +286,15 @@ export class DynamodbTableAttributeOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DynamodbTableAttributeList extends cdktf.ComplexList {
-  public internalValue? : DynamodbTableAttribute[] | cdktf.IResolvable
+export class DynamodbTableAttributeList extends cdktn.ComplexList {
+  public internalValue? : DynamodbTableAttribute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -316,32 +316,32 @@ export interface DynamodbTableGlobalSecondaryIndexKeySchema {
   readonly keyType: string;
 }
 
-export function dynamodbTableGlobalSecondaryIndexKeySchemaToTerraform(struct?: DynamodbTableGlobalSecondaryIndexKeySchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamodbTableGlobalSecondaryIndexKeySchemaToTerraform(struct?: DynamodbTableGlobalSecondaryIndexKeySchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attribute_name: cdktf.stringToTerraform(struct!.attributeName),
-    key_type: cdktf.stringToTerraform(struct!.keyType),
+    attribute_name: cdktn.stringToTerraform(struct!.attributeName),
+    key_type: cdktn.stringToTerraform(struct!.keyType),
   }
 }
 
 
-export function dynamodbTableGlobalSecondaryIndexKeySchemaToHclTerraform(struct?: DynamodbTableGlobalSecondaryIndexKeySchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamodbTableGlobalSecondaryIndexKeySchemaToHclTerraform(struct?: DynamodbTableGlobalSecondaryIndexKeySchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attribute_name: {
-      value: cdktf.stringToHclTerraform(struct!.attributeName),
+      value: cdktn.stringToHclTerraform(struct!.attributeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_type: {
-      value: cdktf.stringToHclTerraform(struct!.keyType),
+      value: cdktn.stringToHclTerraform(struct!.keyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -352,9 +352,9 @@ export function dynamodbTableGlobalSecondaryIndexKeySchemaToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -362,11 +362,11 @@ export class DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DynamodbTableGlobalSecondaryIndexKeySchema | cdktf.IResolvable | undefined {
+  public get internalValue(): DynamodbTableGlobalSecondaryIndexKeySchema | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -383,14 +383,14 @@ export class DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DynamodbTableGlobalSecondaryIndexKeySchema | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DynamodbTableGlobalSecondaryIndexKeySchema | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._attributeName = undefined;
       this._keyType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -429,15 +429,15 @@ export class DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference extends c
   }
 }
 
-export class DynamodbTableGlobalSecondaryIndexKeySchemaList extends cdktf.ComplexList {
-  public internalValue? : DynamodbTableGlobalSecondaryIndexKeySchema[] | cdktf.IResolvable
+export class DynamodbTableGlobalSecondaryIndexKeySchemaList extends cdktn.ComplexList {
+  public internalValue? : DynamodbTableGlobalSecondaryIndexKeySchema[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -460,31 +460,31 @@ export interface DynamodbTableGlobalSecondaryIndexOnDemandThroughput {
 }
 
 export function dynamodbTableGlobalSecondaryIndexOnDemandThroughputToTerraform(struct?: DynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference | DynamodbTableGlobalSecondaryIndexOnDemandThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_read_request_units: cdktf.numberToTerraform(struct!.maxReadRequestUnits),
-    max_write_request_units: cdktf.numberToTerraform(struct!.maxWriteRequestUnits),
+    max_read_request_units: cdktn.numberToTerraform(struct!.maxReadRequestUnits),
+    max_write_request_units: cdktn.numberToTerraform(struct!.maxWriteRequestUnits),
   }
 }
 
 
 export function dynamodbTableGlobalSecondaryIndexOnDemandThroughputToHclTerraform(struct?: DynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference | DynamodbTableGlobalSecondaryIndexOnDemandThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_read_request_units: {
-      value: cdktf.numberToHclTerraform(struct!.maxReadRequestUnits),
+      value: cdktn.numberToHclTerraform(struct!.maxReadRequestUnits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_write_request_units: {
-      value: cdktf.numberToHclTerraform(struct!.maxWriteRequestUnits),
+      value: cdktn.numberToHclTerraform(struct!.maxWriteRequestUnits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -495,14 +495,14 @@ export function dynamodbTableGlobalSecondaryIndexOnDemandThroughputToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -577,31 +577,31 @@ export interface DynamodbTableGlobalSecondaryIndexWarmThroughput {
 }
 
 export function dynamodbTableGlobalSecondaryIndexWarmThroughputToTerraform(struct?: DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference | DynamodbTableGlobalSecondaryIndexWarmThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read_units_per_second: cdktf.numberToTerraform(struct!.readUnitsPerSecond),
-    write_units_per_second: cdktf.numberToTerraform(struct!.writeUnitsPerSecond),
+    read_units_per_second: cdktn.numberToTerraform(struct!.readUnitsPerSecond),
+    write_units_per_second: cdktn.numberToTerraform(struct!.writeUnitsPerSecond),
   }
 }
 
 
 export function dynamodbTableGlobalSecondaryIndexWarmThroughputToHclTerraform(struct?: DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference | DynamodbTableGlobalSecondaryIndexWarmThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read_units_per_second: {
-      value: cdktf.numberToHclTerraform(struct!.readUnitsPerSecond),
+      value: cdktn.numberToHclTerraform(struct!.readUnitsPerSecond),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     write_units_per_second: {
-      value: cdktf.numberToHclTerraform(struct!.writeUnitsPerSecond),
+      value: cdktn.numberToHclTerraform(struct!.writeUnitsPerSecond),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -612,14 +612,14 @@ export function dynamodbTableGlobalSecondaryIndexWarmThroughputToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -716,7 +716,7 @@ export interface DynamodbTableGlobalSecondaryIndex {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#key_schema DynamodbTable#key_schema}
   */
-  readonly keySchema?: DynamodbTableGlobalSecondaryIndexKeySchema[] | cdktf.IResolvable;
+  readonly keySchema?: DynamodbTableGlobalSecondaryIndexKeySchema[] | cdktn.IResolvable;
   /**
   * on_demand_throughput block
   *
@@ -731,76 +731,76 @@ export interface DynamodbTableGlobalSecondaryIndex {
   readonly warmThroughput?: DynamodbTableGlobalSecondaryIndexWarmThroughput;
 }
 
-export function dynamodbTableGlobalSecondaryIndexToTerraform(struct?: DynamodbTableGlobalSecondaryIndex | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamodbTableGlobalSecondaryIndexToTerraform(struct?: DynamodbTableGlobalSecondaryIndex | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hash_key: cdktf.stringToTerraform(struct!.hashKey),
-    name: cdktf.stringToTerraform(struct!.name),
-    non_key_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.nonKeyAttributes),
-    projection_type: cdktf.stringToTerraform(struct!.projectionType),
-    range_key: cdktf.stringToTerraform(struct!.rangeKey),
-    read_capacity: cdktf.numberToTerraform(struct!.readCapacity),
-    write_capacity: cdktf.numberToTerraform(struct!.writeCapacity),
-    key_schema: cdktf.listMapper(dynamodbTableGlobalSecondaryIndexKeySchemaToTerraform, true)(struct!.keySchema),
+    hash_key: cdktn.stringToTerraform(struct!.hashKey),
+    name: cdktn.stringToTerraform(struct!.name),
+    non_key_attributes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.nonKeyAttributes),
+    projection_type: cdktn.stringToTerraform(struct!.projectionType),
+    range_key: cdktn.stringToTerraform(struct!.rangeKey),
+    read_capacity: cdktn.numberToTerraform(struct!.readCapacity),
+    write_capacity: cdktn.numberToTerraform(struct!.writeCapacity),
+    key_schema: cdktn.listMapper(dynamodbTableGlobalSecondaryIndexKeySchemaToTerraform, true)(struct!.keySchema),
     on_demand_throughput: dynamodbTableGlobalSecondaryIndexOnDemandThroughputToTerraform(struct!.onDemandThroughput),
     warm_throughput: dynamodbTableGlobalSecondaryIndexWarmThroughputToTerraform(struct!.warmThroughput),
   }
 }
 
 
-export function dynamodbTableGlobalSecondaryIndexToHclTerraform(struct?: DynamodbTableGlobalSecondaryIndex | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamodbTableGlobalSecondaryIndexToHclTerraform(struct?: DynamodbTableGlobalSecondaryIndex | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hash_key: {
-      value: cdktf.stringToHclTerraform(struct!.hashKey),
+      value: cdktn.stringToHclTerraform(struct!.hashKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     non_key_attributes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.nonKeyAttributes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.nonKeyAttributes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     projection_type: {
-      value: cdktf.stringToHclTerraform(struct!.projectionType),
+      value: cdktn.stringToHclTerraform(struct!.projectionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     range_key: {
-      value: cdktf.stringToHclTerraform(struct!.rangeKey),
+      value: cdktn.stringToHclTerraform(struct!.rangeKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_capacity: {
-      value: cdktf.numberToHclTerraform(struct!.readCapacity),
+      value: cdktn.numberToHclTerraform(struct!.readCapacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     write_capacity: {
-      value: cdktf.numberToHclTerraform(struct!.writeCapacity),
+      value: cdktn.numberToHclTerraform(struct!.writeCapacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     key_schema: {
-      value: cdktf.listMapperHcl(dynamodbTableGlobalSecondaryIndexKeySchemaToHclTerraform, true)(struct!.keySchema),
+      value: cdktn.listMapperHcl(dynamodbTableGlobalSecondaryIndexKeySchemaToHclTerraform, true)(struct!.keySchema),
       isBlock: true,
       type: "list",
       storageClassType: "DynamodbTableGlobalSecondaryIndexKeySchemaList",
@@ -823,9 +823,9 @@ export function dynamodbTableGlobalSecondaryIndexToHclTerraform(struct?: Dynamod
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableGlobalSecondaryIndexOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableGlobalSecondaryIndexOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -833,11 +833,11 @@ export class DynamodbTableGlobalSecondaryIndexOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DynamodbTableGlobalSecondaryIndex | cdktf.IResolvable | undefined {
+  public get internalValue(): DynamodbTableGlobalSecondaryIndex | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -886,7 +886,7 @@ export class DynamodbTableGlobalSecondaryIndexOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DynamodbTableGlobalSecondaryIndex | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DynamodbTableGlobalSecondaryIndex | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -901,7 +901,7 @@ export class DynamodbTableGlobalSecondaryIndexOutputReference extends cdktf.Comp
       this._onDemandThroughput.internalValue = undefined;
       this._warmThroughput.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -953,7 +953,7 @@ export class DynamodbTableGlobalSecondaryIndexOutputReference extends cdktf.Comp
   // non_key_attributes - computed: false, optional: true, required: false
   private _nonKeyAttributes?: string[]; 
   public get nonKeyAttributes() {
-    return cdktf.Fn.tolist(this.getListAttribute('non_key_attributes'));
+    return cdktn.Fn.tolist(this.getListAttribute('non_key_attributes'));
   }
   public set nonKeyAttributes(value: string[]) {
     this._nonKeyAttributes = value;
@@ -1032,7 +1032,7 @@ export class DynamodbTableGlobalSecondaryIndexOutputReference extends cdktf.Comp
   public get keySchema() {
     return this._keySchema;
   }
-  public putKeySchema(value: DynamodbTableGlobalSecondaryIndexKeySchema[] | cdktf.IResolvable) {
+  public putKeySchema(value: DynamodbTableGlobalSecondaryIndexKeySchema[] | cdktn.IResolvable) {
     this._keySchema.internalValue = value;
   }
   public resetKeySchema() {
@@ -1076,15 +1076,15 @@ export class DynamodbTableGlobalSecondaryIndexOutputReference extends cdktf.Comp
   }
 }
 
-export class DynamodbTableGlobalSecondaryIndexList extends cdktf.ComplexList {
-  public internalValue? : DynamodbTableGlobalSecondaryIndex[] | cdktf.IResolvable
+export class DynamodbTableGlobalSecondaryIndexList extends cdktn.ComplexList {
+  public internalValue? : DynamodbTableGlobalSecondaryIndex[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1103,24 +1103,24 @@ export interface DynamodbTableGlobalTableWitness {
 }
 
 export function dynamodbTableGlobalTableWitnessToTerraform(struct?: DynamodbTableGlobalTableWitnessOutputReference | DynamodbTableGlobalTableWitness): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    region_name: cdktf.stringToTerraform(struct!.regionName),
+    region_name: cdktn.stringToTerraform(struct!.regionName),
   }
 }
 
 
 export function dynamodbTableGlobalTableWitnessToHclTerraform(struct?: DynamodbTableGlobalTableWitnessOutputReference | DynamodbTableGlobalTableWitness): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     region_name: {
-      value: cdktf.stringToHclTerraform(struct!.regionName),
+      value: cdktn.stringToHclTerraform(struct!.regionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1131,14 +1131,14 @@ export function dynamodbTableGlobalTableWitnessToHclTerraform(struct?: DynamodbT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableGlobalTableWitnessOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableGlobalTableWitnessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1191,31 +1191,31 @@ export interface DynamodbTableImportTableInputFormatOptionsCsv {
 }
 
 export function dynamodbTableImportTableInputFormatOptionsCsvToTerraform(struct?: DynamodbTableImportTableInputFormatOptionsCsvOutputReference | DynamodbTableImportTableInputFormatOptionsCsv): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delimiter: cdktf.stringToTerraform(struct!.delimiter),
-    header_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.headerList),
+    delimiter: cdktn.stringToTerraform(struct!.delimiter),
+    header_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.headerList),
   }
 }
 
 
 export function dynamodbTableImportTableInputFormatOptionsCsvToHclTerraform(struct?: DynamodbTableImportTableInputFormatOptionsCsvOutputReference | DynamodbTableImportTableInputFormatOptionsCsv): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delimiter: {
-      value: cdktf.stringToHclTerraform(struct!.delimiter),
+      value: cdktn.stringToHclTerraform(struct!.delimiter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.headerList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.headerList),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1226,14 +1226,14 @@ export function dynamodbTableImportTableInputFormatOptionsCsvToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableImportTableInputFormatOptionsCsvOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableImportTableInputFormatOptionsCsvOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1283,7 +1283,7 @@ export class DynamodbTableImportTableInputFormatOptionsCsvOutputReference extend
   // header_list - computed: false, optional: true, required: false
   private _headerList?: string[]; 
   public get headerList() {
-    return cdktf.Fn.tolist(this.getListAttribute('header_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('header_list'));
   }
   public set headerList(value: string[]) {
     this._headerList = value;
@@ -1306,8 +1306,8 @@ export interface DynamodbTableImportTableInputFormatOptions {
 }
 
 export function dynamodbTableImportTableInputFormatOptionsToTerraform(struct?: DynamodbTableImportTableInputFormatOptionsOutputReference | DynamodbTableImportTableInputFormatOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1317,8 +1317,8 @@ export function dynamodbTableImportTableInputFormatOptionsToTerraform(struct?: D
 
 
 export function dynamodbTableImportTableInputFormatOptionsToHclTerraform(struct?: DynamodbTableImportTableInputFormatOptionsOutputReference | DynamodbTableImportTableInputFormatOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1334,14 +1334,14 @@ export function dynamodbTableImportTableInputFormatOptionsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableImportTableInputFormatOptionsOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableImportTableInputFormatOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1398,38 +1398,38 @@ export interface DynamodbTableImportTableS3BucketSource {
 }
 
 export function dynamodbTableImportTableS3BucketSourceToTerraform(struct?: DynamodbTableImportTableS3BucketSourceOutputReference | DynamodbTableImportTableS3BucketSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    bucket_owner: cdktf.stringToTerraform(struct!.bucketOwner),
-    key_prefix: cdktf.stringToTerraform(struct!.keyPrefix),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    bucket_owner: cdktn.stringToTerraform(struct!.bucketOwner),
+    key_prefix: cdktn.stringToTerraform(struct!.keyPrefix),
   }
 }
 
 
 export function dynamodbTableImportTableS3BucketSourceToHclTerraform(struct?: DynamodbTableImportTableS3BucketSourceOutputReference | DynamodbTableImportTableS3BucketSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket_owner: {
-      value: cdktf.stringToHclTerraform(struct!.bucketOwner),
+      value: cdktn.stringToHclTerraform(struct!.bucketOwner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.keyPrefix),
+      value: cdktn.stringToHclTerraform(struct!.keyPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1440,14 +1440,14 @@ export function dynamodbTableImportTableS3BucketSourceToHclTerraform(struct?: Dy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableImportTableS3BucketSourceOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableImportTableS3BucketSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1553,13 +1553,13 @@ export interface DynamodbTableImportTable {
 }
 
 export function dynamodbTableImportTableToTerraform(struct?: DynamodbTableImportTableOutputReference | DynamodbTableImportTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    input_compression_type: cdktf.stringToTerraform(struct!.inputCompressionType),
-    input_format: cdktf.stringToTerraform(struct!.inputFormat),
+    input_compression_type: cdktn.stringToTerraform(struct!.inputCompressionType),
+    input_format: cdktn.stringToTerraform(struct!.inputFormat),
     input_format_options: dynamodbTableImportTableInputFormatOptionsToTerraform(struct!.inputFormatOptions),
     s3_bucket_source: dynamodbTableImportTableS3BucketSourceToTerraform(struct!.s3BucketSource),
   }
@@ -1567,19 +1567,19 @@ export function dynamodbTableImportTableToTerraform(struct?: DynamodbTableImport
 
 
 export function dynamodbTableImportTableToHclTerraform(struct?: DynamodbTableImportTableOutputReference | DynamodbTableImportTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     input_compression_type: {
-      value: cdktf.stringToHclTerraform(struct!.inputCompressionType),
+      value: cdktn.stringToHclTerraform(struct!.inputCompressionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     input_format: {
-      value: cdktf.stringToHclTerraform(struct!.inputFormat),
+      value: cdktn.stringToHclTerraform(struct!.inputFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1602,14 +1602,14 @@ export function dynamodbTableImportTableToHclTerraform(struct?: DynamodbTableImp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableImportTableOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableImportTableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1729,46 +1729,46 @@ export interface DynamodbTableLocalSecondaryIndex {
   readonly rangeKey: string;
 }
 
-export function dynamodbTableLocalSecondaryIndexToTerraform(struct?: DynamodbTableLocalSecondaryIndex | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamodbTableLocalSecondaryIndexToTerraform(struct?: DynamodbTableLocalSecondaryIndex | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    non_key_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.nonKeyAttributes),
-    projection_type: cdktf.stringToTerraform(struct!.projectionType),
-    range_key: cdktf.stringToTerraform(struct!.rangeKey),
+    name: cdktn.stringToTerraform(struct!.name),
+    non_key_attributes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.nonKeyAttributes),
+    projection_type: cdktn.stringToTerraform(struct!.projectionType),
+    range_key: cdktn.stringToTerraform(struct!.rangeKey),
   }
 }
 
 
-export function dynamodbTableLocalSecondaryIndexToHclTerraform(struct?: DynamodbTableLocalSecondaryIndex | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamodbTableLocalSecondaryIndexToHclTerraform(struct?: DynamodbTableLocalSecondaryIndex | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     non_key_attributes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.nonKeyAttributes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.nonKeyAttributes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     projection_type: {
-      value: cdktf.stringToHclTerraform(struct!.projectionType),
+      value: cdktn.stringToHclTerraform(struct!.projectionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     range_key: {
-      value: cdktf.stringToHclTerraform(struct!.rangeKey),
+      value: cdktn.stringToHclTerraform(struct!.rangeKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1779,9 +1779,9 @@ export function dynamodbTableLocalSecondaryIndexToHclTerraform(struct?: Dynamodb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableLocalSecondaryIndexOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableLocalSecondaryIndexOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1789,11 +1789,11 @@ export class DynamodbTableLocalSecondaryIndexOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DynamodbTableLocalSecondaryIndex | cdktf.IResolvable | undefined {
+  public get internalValue(): DynamodbTableLocalSecondaryIndex | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1818,7 +1818,7 @@ export class DynamodbTableLocalSecondaryIndexOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DynamodbTableLocalSecondaryIndex | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DynamodbTableLocalSecondaryIndex | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1827,7 +1827,7 @@ export class DynamodbTableLocalSecondaryIndexOutputReference extends cdktf.Compl
       this._projectionType = undefined;
       this._rangeKey = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1897,15 +1897,15 @@ export class DynamodbTableLocalSecondaryIndexOutputReference extends cdktf.Compl
   }
 }
 
-export class DynamodbTableLocalSecondaryIndexList extends cdktf.ComplexList {
-  public internalValue? : DynamodbTableLocalSecondaryIndex[] | cdktf.IResolvable
+export class DynamodbTableLocalSecondaryIndexList extends cdktn.ComplexList {
+  public internalValue? : DynamodbTableLocalSecondaryIndex[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1928,31 +1928,31 @@ export interface DynamodbTableOnDemandThroughput {
 }
 
 export function dynamodbTableOnDemandThroughputToTerraform(struct?: DynamodbTableOnDemandThroughputOutputReference | DynamodbTableOnDemandThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_read_request_units: cdktf.numberToTerraform(struct!.maxReadRequestUnits),
-    max_write_request_units: cdktf.numberToTerraform(struct!.maxWriteRequestUnits),
+    max_read_request_units: cdktn.numberToTerraform(struct!.maxReadRequestUnits),
+    max_write_request_units: cdktn.numberToTerraform(struct!.maxWriteRequestUnits),
   }
 }
 
 
 export function dynamodbTableOnDemandThroughputToHclTerraform(struct?: DynamodbTableOnDemandThroughputOutputReference | DynamodbTableOnDemandThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_read_request_units: {
-      value: cdktf.numberToHclTerraform(struct!.maxReadRequestUnits),
+      value: cdktn.numberToHclTerraform(struct!.maxReadRequestUnits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_write_request_units: {
-      value: cdktf.numberToHclTerraform(struct!.maxWriteRequestUnits),
+      value: cdktn.numberToHclTerraform(struct!.maxWriteRequestUnits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1963,14 +1963,14 @@ export function dynamodbTableOnDemandThroughputToHclTerraform(struct?: DynamodbT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableOnDemandThroughputOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableOnDemandThroughputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2037,7 +2037,7 @@ export interface DynamodbTablePointInTimeRecovery {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#recovery_period_in_days DynamodbTable#recovery_period_in_days}
   */
@@ -2045,31 +2045,31 @@ export interface DynamodbTablePointInTimeRecovery {
 }
 
 export function dynamodbTablePointInTimeRecoveryToTerraform(struct?: DynamodbTablePointInTimeRecoveryOutputReference | DynamodbTablePointInTimeRecovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    recovery_period_in_days: cdktf.numberToTerraform(struct!.recoveryPeriodInDays),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    recovery_period_in_days: cdktn.numberToTerraform(struct!.recoveryPeriodInDays),
   }
 }
 
 
 export function dynamodbTablePointInTimeRecoveryToHclTerraform(struct?: DynamodbTablePointInTimeRecoveryOutputReference | DynamodbTablePointInTimeRecovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     recovery_period_in_days: {
-      value: cdktf.numberToHclTerraform(struct!.recoveryPeriodInDays),
+      value: cdktn.numberToHclTerraform(struct!.recoveryPeriodInDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2080,14 +2080,14 @@ export function dynamodbTablePointInTimeRecoveryToHclTerraform(struct?: Dynamodb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTablePointInTimeRecoveryOutputReference extends cdktf.ComplexObject {
+export class DynamodbTablePointInTimeRecoveryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2119,11 +2119,11 @@ export class DynamodbTablePointInTimeRecoveryOutputReference extends cdktf.Compl
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2155,7 +2155,7 @@ export interface DynamodbTableReplica {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}
   */
-  readonly deletionProtectionEnabled?: boolean | cdktf.IResolvable;
+  readonly deletionProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}
   */
@@ -2163,71 +2163,71 @@ export interface DynamodbTableReplica {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#point_in_time_recovery DynamodbTable#point_in_time_recovery}
   */
-  readonly pointInTimeRecovery?: boolean | cdktf.IResolvable;
+  readonly pointInTimeRecovery?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#propagate_tags DynamodbTable#propagate_tags}
   */
-  readonly propagateTags?: boolean | cdktf.IResolvable;
+  readonly propagateTags?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#region_name DynamodbTable#region_name}
   */
   readonly regionName: string;
 }
 
-export function dynamodbTableReplicaToTerraform(struct?: DynamodbTableReplica | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamodbTableReplicaToTerraform(struct?: DynamodbTableReplica | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    consistency_mode: cdktf.stringToTerraform(struct!.consistencyMode),
-    deletion_protection_enabled: cdktf.booleanToTerraform(struct!.deletionProtectionEnabled),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    point_in_time_recovery: cdktf.booleanToTerraform(struct!.pointInTimeRecovery),
-    propagate_tags: cdktf.booleanToTerraform(struct!.propagateTags),
-    region_name: cdktf.stringToTerraform(struct!.regionName),
+    consistency_mode: cdktn.stringToTerraform(struct!.consistencyMode),
+    deletion_protection_enabled: cdktn.booleanToTerraform(struct!.deletionProtectionEnabled),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    point_in_time_recovery: cdktn.booleanToTerraform(struct!.pointInTimeRecovery),
+    propagate_tags: cdktn.booleanToTerraform(struct!.propagateTags),
+    region_name: cdktn.stringToTerraform(struct!.regionName),
   }
 }
 
 
-export function dynamodbTableReplicaToHclTerraform(struct?: DynamodbTableReplica | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamodbTableReplicaToHclTerraform(struct?: DynamodbTableReplica | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     consistency_mode: {
-      value: cdktf.stringToHclTerraform(struct!.consistencyMode),
+      value: cdktn.stringToHclTerraform(struct!.consistencyMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     deletion_protection_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.deletionProtectionEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.deletionProtectionEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     point_in_time_recovery: {
-      value: cdktf.booleanToHclTerraform(struct!.pointInTimeRecovery),
+      value: cdktn.booleanToHclTerraform(struct!.pointInTimeRecovery),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     propagate_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.propagateTags),
+      value: cdktn.booleanToHclTerraform(struct!.propagateTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     region_name: {
-      value: cdktf.stringToHclTerraform(struct!.regionName),
+      value: cdktn.stringToHclTerraform(struct!.regionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2238,9 +2238,9 @@ export function dynamodbTableReplicaToHclTerraform(struct?: DynamodbTableReplica
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableReplicaOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableReplicaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2248,11 +2248,11 @@ export class DynamodbTableReplicaOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DynamodbTableReplica | cdktf.IResolvable | undefined {
+  public get internalValue(): DynamodbTableReplica | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2285,7 +2285,7 @@ export class DynamodbTableReplicaOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DynamodbTableReplica | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DynamodbTableReplica | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2296,7 +2296,7 @@ export class DynamodbTableReplicaOutputReference extends cdktf.ComplexObject {
       this._propagateTags = undefined;
       this._regionName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2334,11 +2334,11 @@ export class DynamodbTableReplicaOutputReference extends cdktf.ComplexObject {
   }
 
   // deletion_protection_enabled - computed: true, optional: true, required: false
-  private _deletionProtectionEnabled?: boolean | cdktf.IResolvable; 
+  private _deletionProtectionEnabled?: boolean | cdktn.IResolvable; 
   public get deletionProtectionEnabled() {
     return this.getBooleanAttribute('deletion_protection_enabled');
   }
-  public set deletionProtectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set deletionProtectionEnabled(value: boolean | cdktn.IResolvable) {
     this._deletionProtectionEnabled = value;
   }
   public resetDeletionProtectionEnabled() {
@@ -2366,11 +2366,11 @@ export class DynamodbTableReplicaOutputReference extends cdktf.ComplexObject {
   }
 
   // point_in_time_recovery - computed: false, optional: true, required: false
-  private _pointInTimeRecovery?: boolean | cdktf.IResolvable; 
+  private _pointInTimeRecovery?: boolean | cdktn.IResolvable; 
   public get pointInTimeRecovery() {
     return this.getBooleanAttribute('point_in_time_recovery');
   }
-  public set pointInTimeRecovery(value: boolean | cdktf.IResolvable) {
+  public set pointInTimeRecovery(value: boolean | cdktn.IResolvable) {
     this._pointInTimeRecovery = value;
   }
   public resetPointInTimeRecovery() {
@@ -2382,11 +2382,11 @@ export class DynamodbTableReplicaOutputReference extends cdktf.ComplexObject {
   }
 
   // propagate_tags - computed: false, optional: true, required: false
-  private _propagateTags?: boolean | cdktf.IResolvable; 
+  private _propagateTags?: boolean | cdktn.IResolvable; 
   public get propagateTags() {
     return this.getBooleanAttribute('propagate_tags');
   }
-  public set propagateTags(value: boolean | cdktf.IResolvable) {
+  public set propagateTags(value: boolean | cdktn.IResolvable) {
     this._propagateTags = value;
   }
   public resetPropagateTags() {
@@ -2421,15 +2421,15 @@ export class DynamodbTableReplicaOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DynamodbTableReplicaList extends cdktf.ComplexList {
-  public internalValue? : DynamodbTableReplica[] | cdktf.IResolvable
+export class DynamodbTableReplicaList extends cdktn.ComplexList {
+  public internalValue? : DynamodbTableReplica[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2444,7 +2444,7 @@ export interface DynamodbTableServerSideEncryption {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}
   */
@@ -2452,31 +2452,31 @@ export interface DynamodbTableServerSideEncryption {
 }
 
 export function dynamodbTableServerSideEncryptionToTerraform(struct?: DynamodbTableServerSideEncryptionOutputReference | DynamodbTableServerSideEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
   }
 }
 
 
 export function dynamodbTableServerSideEncryptionToHclTerraform(struct?: DynamodbTableServerSideEncryptionOutputReference | DynamodbTableServerSideEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2487,14 +2487,14 @@ export function dynamodbTableServerSideEncryptionToHclTerraform(struct?: Dynamod
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableServerSideEncryptionOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableServerSideEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2526,11 +2526,11 @@ export class DynamodbTableServerSideEncryptionOutputReference extends cdktf.Comp
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2569,39 +2569,39 @@ export interface DynamodbTableTimeouts {
   readonly update?: string;
 }
 
-export function dynamodbTableTimeoutsToTerraform(struct?: DynamodbTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamodbTableTimeoutsToTerraform(struct?: DynamodbTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dynamodbTableTimeoutsToHclTerraform(struct?: DynamodbTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamodbTableTimeoutsToHclTerraform(struct?: DynamodbTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2612,19 +2612,19 @@ export function dynamodbTableTimeoutsToHclTerraform(struct?: DynamodbTableTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DynamodbTableTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DynamodbTableTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2645,7 +2645,7 @@ export class DynamodbTableTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DynamodbTableTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DynamodbTableTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2653,7 +2653,7 @@ export class DynamodbTableTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2722,35 +2722,35 @@ export interface DynamodbTableTtl {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
 export function dynamodbTableTtlToTerraform(struct?: DynamodbTableTtlOutputReference | DynamodbTableTtl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attribute_name: cdktf.stringToTerraform(struct!.attributeName),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    attribute_name: cdktn.stringToTerraform(struct!.attributeName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function dynamodbTableTtlToHclTerraform(struct?: DynamodbTableTtlOutputReference | DynamodbTableTtl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attribute_name: {
-      value: cdktf.stringToHclTerraform(struct!.attributeName),
+      value: cdktn.stringToHclTerraform(struct!.attributeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2761,14 +2761,14 @@ export function dynamodbTableTtlToHclTerraform(struct?: DynamodbTableTtlOutputRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableTtlOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableTtlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2816,11 +2816,11 @@ export class DynamodbTableTtlOutputReference extends cdktf.ComplexObject {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -2843,31 +2843,31 @@ export interface DynamodbTableWarmThroughput {
 }
 
 export function dynamodbTableWarmThroughputToTerraform(struct?: DynamodbTableWarmThroughputOutputReference | DynamodbTableWarmThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read_units_per_second: cdktf.numberToTerraform(struct!.readUnitsPerSecond),
-    write_units_per_second: cdktf.numberToTerraform(struct!.writeUnitsPerSecond),
+    read_units_per_second: cdktn.numberToTerraform(struct!.readUnitsPerSecond),
+    write_units_per_second: cdktn.numberToTerraform(struct!.writeUnitsPerSecond),
   }
 }
 
 
 export function dynamodbTableWarmThroughputToHclTerraform(struct?: DynamodbTableWarmThroughputOutputReference | DynamodbTableWarmThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read_units_per_second: {
-      value: cdktf.numberToHclTerraform(struct!.readUnitsPerSecond),
+      value: cdktn.numberToHclTerraform(struct!.readUnitsPerSecond),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     write_units_per_second: {
-      value: cdktf.numberToHclTerraform(struct!.writeUnitsPerSecond),
+      value: cdktn.numberToHclTerraform(struct!.writeUnitsPerSecond),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2878,14 +2878,14 @@ export function dynamodbTableWarmThroughputToHclTerraform(struct?: DynamodbTable
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamodbTableWarmThroughputOutputReference extends cdktf.ComplexObject {
+export class DynamodbTableWarmThroughputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2952,7 +2952,7 @@ export class DynamodbTableWarmThroughputOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table aws_dynamodb_table}
 */
-export class DynamodbTable extends cdktf.TerraformResource {
+export class DynamodbTable extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2963,14 +2963,14 @@ export class DynamodbTable extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DynamodbTable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DynamodbTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DynamodbTable to import
   * @param importFromId The id of the existing DynamodbTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DynamodbTable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dynamodb_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dynamodb_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -3058,11 +3058,11 @@ export class DynamodbTable extends cdktf.TerraformResource {
   }
 
   // deletion_protection_enabled - computed: false, optional: true, required: false
-  private _deletionProtectionEnabled?: boolean | cdktf.IResolvable; 
+  private _deletionProtectionEnabled?: boolean | cdktn.IResolvable; 
   public get deletionProtectionEnabled() {
     return this.getBooleanAttribute('deletion_protection_enabled');
   }
-  public set deletionProtectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set deletionProtectionEnabled(value: boolean | cdktn.IResolvable) {
     this._deletionProtectionEnabled = value;
   }
   public resetDeletionProtectionEnabled() {
@@ -3215,11 +3215,11 @@ export class DynamodbTable extends cdktf.TerraformResource {
   }
 
   // restore_to_latest_time - computed: false, optional: true, required: false
-  private _restoreToLatestTime?: boolean | cdktf.IResolvable; 
+  private _restoreToLatestTime?: boolean | cdktn.IResolvable; 
   public get restoreToLatestTime() {
     return this.getBooleanAttribute('restore_to_latest_time');
   }
-  public set restoreToLatestTime(value: boolean | cdktf.IResolvable) {
+  public set restoreToLatestTime(value: boolean | cdktn.IResolvable) {
     this._restoreToLatestTime = value;
   }
   public resetRestoreToLatestTime() {
@@ -3236,11 +3236,11 @@ export class DynamodbTable extends cdktf.TerraformResource {
   }
 
   // stream_enabled - computed: false, optional: true, required: false
-  private _streamEnabled?: boolean | cdktf.IResolvable; 
+  private _streamEnabled?: boolean | cdktn.IResolvable; 
   public get streamEnabled() {
     return this.getBooleanAttribute('stream_enabled');
   }
-  public set streamEnabled(value: boolean | cdktf.IResolvable) {
+  public set streamEnabled(value: boolean | cdktn.IResolvable) {
     this._streamEnabled = value;
   }
   public resetStreamEnabled() {
@@ -3341,7 +3341,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
   public get attribute() {
     return this._attribute;
   }
-  public putAttribute(value: DynamodbTableAttribute[] | cdktf.IResolvable) {
+  public putAttribute(value: DynamodbTableAttribute[] | cdktn.IResolvable) {
     this._attribute.internalValue = value;
   }
   public resetAttribute() {
@@ -3357,7 +3357,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
   public get globalSecondaryIndex() {
     return this._globalSecondaryIndex;
   }
-  public putGlobalSecondaryIndex(value: DynamodbTableGlobalSecondaryIndex[] | cdktf.IResolvable) {
+  public putGlobalSecondaryIndex(value: DynamodbTableGlobalSecondaryIndex[] | cdktn.IResolvable) {
     this._globalSecondaryIndex.internalValue = value;
   }
   public resetGlobalSecondaryIndex() {
@@ -3405,7 +3405,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
   public get localSecondaryIndex() {
     return this._localSecondaryIndex;
   }
-  public putLocalSecondaryIndex(value: DynamodbTableLocalSecondaryIndex[] | cdktf.IResolvable) {
+  public putLocalSecondaryIndex(value: DynamodbTableLocalSecondaryIndex[] | cdktn.IResolvable) {
     this._localSecondaryIndex.internalValue = value;
   }
   public resetLocalSecondaryIndex() {
@@ -3453,7 +3453,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
   public get replica() {
     return this._replica;
   }
-  public putReplica(value: DynamodbTableReplica[] | cdktf.IResolvable) {
+  public putReplica(value: DynamodbTableReplica[] | cdktn.IResolvable) {
     this._replica.internalValue = value;
   }
   public resetReplica() {
@@ -3534,32 +3534,32 @@ export class DynamodbTable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      billing_mode: cdktf.stringToTerraform(this._billingMode),
-      deletion_protection_enabled: cdktf.booleanToTerraform(this._deletionProtectionEnabled),
-      hash_key: cdktf.stringToTerraform(this._hashKey),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      range_key: cdktf.stringToTerraform(this._rangeKey),
-      read_capacity: cdktf.numberToTerraform(this._readCapacity),
-      region: cdktf.stringToTerraform(this._region),
-      restore_date_time: cdktf.stringToTerraform(this._restoreDateTime),
-      restore_source_name: cdktf.stringToTerraform(this._restoreSourceName),
-      restore_source_table_arn: cdktf.stringToTerraform(this._restoreSourceTableArn),
-      restore_to_latest_time: cdktf.booleanToTerraform(this._restoreToLatestTime),
-      stream_enabled: cdktf.booleanToTerraform(this._streamEnabled),
-      stream_view_type: cdktf.stringToTerraform(this._streamViewType),
-      table_class: cdktf.stringToTerraform(this._tableClass),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      write_capacity: cdktf.numberToTerraform(this._writeCapacity),
-      attribute: cdktf.listMapper(dynamodbTableAttributeToTerraform, true)(this._attribute.internalValue),
-      global_secondary_index: cdktf.listMapper(dynamodbTableGlobalSecondaryIndexToTerraform, true)(this._globalSecondaryIndex.internalValue),
+      billing_mode: cdktn.stringToTerraform(this._billingMode),
+      deletion_protection_enabled: cdktn.booleanToTerraform(this._deletionProtectionEnabled),
+      hash_key: cdktn.stringToTerraform(this._hashKey),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      range_key: cdktn.stringToTerraform(this._rangeKey),
+      read_capacity: cdktn.numberToTerraform(this._readCapacity),
+      region: cdktn.stringToTerraform(this._region),
+      restore_date_time: cdktn.stringToTerraform(this._restoreDateTime),
+      restore_source_name: cdktn.stringToTerraform(this._restoreSourceName),
+      restore_source_table_arn: cdktn.stringToTerraform(this._restoreSourceTableArn),
+      restore_to_latest_time: cdktn.booleanToTerraform(this._restoreToLatestTime),
+      stream_enabled: cdktn.booleanToTerraform(this._streamEnabled),
+      stream_view_type: cdktn.stringToTerraform(this._streamViewType),
+      table_class: cdktn.stringToTerraform(this._tableClass),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      write_capacity: cdktn.numberToTerraform(this._writeCapacity),
+      attribute: cdktn.listMapper(dynamodbTableAttributeToTerraform, true)(this._attribute.internalValue),
+      global_secondary_index: cdktn.listMapper(dynamodbTableGlobalSecondaryIndexToTerraform, true)(this._globalSecondaryIndex.internalValue),
       global_table_witness: dynamodbTableGlobalTableWitnessToTerraform(this._globalTableWitness.internalValue),
       import_table: dynamodbTableImportTableToTerraform(this._importTable.internalValue),
-      local_secondary_index: cdktf.listMapper(dynamodbTableLocalSecondaryIndexToTerraform, true)(this._localSecondaryIndex.internalValue),
+      local_secondary_index: cdktn.listMapper(dynamodbTableLocalSecondaryIndexToTerraform, true)(this._localSecondaryIndex.internalValue),
       on_demand_throughput: dynamodbTableOnDemandThroughputToTerraform(this._onDemandThroughput.internalValue),
       point_in_time_recovery: dynamodbTablePointInTimeRecoveryToTerraform(this._pointInTimeRecovery.internalValue),
-      replica: cdktf.listMapper(dynamodbTableReplicaToTerraform, true)(this._replica.internalValue),
+      replica: cdktn.listMapper(dynamodbTableReplicaToTerraform, true)(this._replica.internalValue),
       server_side_encryption: dynamodbTableServerSideEncryptionToTerraform(this._serverSideEncryption.internalValue),
       timeouts: dynamodbTableTimeoutsToTerraform(this._timeouts.internalValue),
       ttl: dynamodbTableTtlToTerraform(this._ttl.internalValue),
@@ -3570,121 +3570,121 @@ export class DynamodbTable extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       billing_mode: {
-        value: cdktf.stringToHclTerraform(this._billingMode),
+        value: cdktn.stringToHclTerraform(this._billingMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deletion_protection_enabled: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtectionEnabled),
+        value: cdktn.booleanToHclTerraform(this._deletionProtectionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       hash_key: {
-        value: cdktf.stringToHclTerraform(this._hashKey),
+        value: cdktn.stringToHclTerraform(this._hashKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       range_key: {
-        value: cdktf.stringToHclTerraform(this._rangeKey),
+        value: cdktn.stringToHclTerraform(this._rangeKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       read_capacity: {
-        value: cdktf.numberToHclTerraform(this._readCapacity),
+        value: cdktn.numberToHclTerraform(this._readCapacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       restore_date_time: {
-        value: cdktf.stringToHclTerraform(this._restoreDateTime),
+        value: cdktn.stringToHclTerraform(this._restoreDateTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       restore_source_name: {
-        value: cdktf.stringToHclTerraform(this._restoreSourceName),
+        value: cdktn.stringToHclTerraform(this._restoreSourceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       restore_source_table_arn: {
-        value: cdktf.stringToHclTerraform(this._restoreSourceTableArn),
+        value: cdktn.stringToHclTerraform(this._restoreSourceTableArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       restore_to_latest_time: {
-        value: cdktf.booleanToHclTerraform(this._restoreToLatestTime),
+        value: cdktn.booleanToHclTerraform(this._restoreToLatestTime),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       stream_enabled: {
-        value: cdktf.booleanToHclTerraform(this._streamEnabled),
+        value: cdktn.booleanToHclTerraform(this._streamEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       stream_view_type: {
-        value: cdktf.stringToHclTerraform(this._streamViewType),
+        value: cdktn.stringToHclTerraform(this._streamViewType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_class: {
-        value: cdktf.stringToHclTerraform(this._tableClass),
+        value: cdktn.stringToHclTerraform(this._tableClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       write_capacity: {
-        value: cdktf.numberToHclTerraform(this._writeCapacity),
+        value: cdktn.numberToHclTerraform(this._writeCapacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       attribute: {
-        value: cdktf.listMapperHcl(dynamodbTableAttributeToHclTerraform, true)(this._attribute.internalValue),
+        value: cdktn.listMapperHcl(dynamodbTableAttributeToHclTerraform, true)(this._attribute.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DynamodbTableAttributeList",
       },
       global_secondary_index: {
-        value: cdktf.listMapperHcl(dynamodbTableGlobalSecondaryIndexToHclTerraform, true)(this._globalSecondaryIndex.internalValue),
+        value: cdktn.listMapperHcl(dynamodbTableGlobalSecondaryIndexToHclTerraform, true)(this._globalSecondaryIndex.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DynamodbTableGlobalSecondaryIndexList",
@@ -3702,7 +3702,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
         storageClassType: "DynamodbTableImportTableList",
       },
       local_secondary_index: {
-        value: cdktf.listMapperHcl(dynamodbTableLocalSecondaryIndexToHclTerraform, true)(this._localSecondaryIndex.internalValue),
+        value: cdktn.listMapperHcl(dynamodbTableLocalSecondaryIndexToHclTerraform, true)(this._localSecondaryIndex.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DynamodbTableLocalSecondaryIndexList",
@@ -3720,7 +3720,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
         storageClassType: "DynamodbTablePointInTimeRecoveryList",
       },
       replica: {
-        value: cdktf.listMapperHcl(dynamodbTableReplicaToHclTerraform, true)(this._replica.internalValue),
+        value: cdktn.listMapperHcl(dynamodbTableReplicaToHclTerraform, true)(this._replica.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DynamodbTableReplicaList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments {
+export interface SecretsmanagerSecretConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/secretsmanager_secret#description SecretsmanagerSecret#description}
   */
@@ -19,7 +19,7 @@ export interface SecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/secretsmanager_secret#force_overwrite_replica_secret SecretsmanagerSecret#force_overwrite_replica_secret}
   */
-  readonly forceOverwriteReplicaSecret?: boolean | cdktf.IResolvable;
+  readonly forceOverwriteReplicaSecret?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/secretsmanager_secret#id SecretsmanagerSecret#id}
   *
@@ -66,7 +66,7 @@ export interface SecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/secretsmanager_secret#replica SecretsmanagerSecret#replica}
   */
-  readonly replica?: SecretsmanagerSecretReplica[] | cdktf.IResolvable;
+  readonly replica?: SecretsmanagerSecretReplica[] | cdktn.IResolvable;
 }
 export interface SecretsmanagerSecretReplica {
   /**
@@ -79,32 +79,32 @@ export interface SecretsmanagerSecretReplica {
   readonly region: string;
 }
 
-export function secretsmanagerSecretReplicaToTerraform(struct?: SecretsmanagerSecretReplica | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function secretsmanagerSecretReplicaToTerraform(struct?: SecretsmanagerSecretReplica | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
-    region: cdktf.stringToTerraform(struct!.region),
+    kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
-export function secretsmanagerSecretReplicaToHclTerraform(struct?: SecretsmanagerSecretReplica | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function secretsmanagerSecretReplicaToHclTerraform(struct?: SecretsmanagerSecretReplica | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,9 +115,9 @@ export function secretsmanagerSecretReplicaToHclTerraform(struct?: Secretsmanage
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecretsmanagerSecretReplicaOutputReference extends cdktf.ComplexObject {
+export class SecretsmanagerSecretReplicaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -125,11 +125,11 @@ export class SecretsmanagerSecretReplicaOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecretsmanagerSecretReplica | cdktf.IResolvable | undefined {
+  public get internalValue(): SecretsmanagerSecretReplica | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -146,14 +146,14 @@ export class SecretsmanagerSecretReplicaOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecretsmanagerSecretReplica | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecretsmanagerSecretReplica | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._kmsKeyId = undefined;
       this._region = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -210,15 +210,15 @@ export class SecretsmanagerSecretReplicaOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class SecretsmanagerSecretReplicaList extends cdktf.ComplexList {
-  public internalValue? : SecretsmanagerSecretReplica[] | cdktf.IResolvable
+export class SecretsmanagerSecretReplicaList extends cdktn.ComplexList {
+  public internalValue? : SecretsmanagerSecretReplica[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -233,7 +233,7 @@ export class SecretsmanagerSecretReplicaList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/secretsmanager_secret aws_secretsmanager_secret}
 */
-export class SecretsmanagerSecret extends cdktf.TerraformResource {
+export class SecretsmanagerSecret extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -244,14 +244,14 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecretsmanagerSecret resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecretsmanagerSecret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretsmanagerSecret to import
   * @param importFromId The id of the existing SecretsmanagerSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/secretsmanager_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretsmanagerSecret to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_secretsmanager_secret", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_secretsmanager_secret", importId: importFromId, provider });
       }
 
   // ===========
@@ -321,11 +321,11 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   }
 
   // force_overwrite_replica_secret - computed: false, optional: true, required: false
-  private _forceOverwriteReplicaSecret?: boolean | cdktf.IResolvable; 
+  private _forceOverwriteReplicaSecret?: boolean | cdktn.IResolvable; 
   public get forceOverwriteReplicaSecret() {
     return this.getBooleanAttribute('force_overwrite_replica_secret');
   }
-  public set forceOverwriteReplicaSecret(value: boolean | cdktf.IResolvable) {
+  public set forceOverwriteReplicaSecret(value: boolean | cdktn.IResolvable) {
     this._forceOverwriteReplicaSecret = value;
   }
   public resetForceOverwriteReplicaSecret() {
@@ -485,7 +485,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   public get replica() {
     return this._replica;
   }
-  public putReplica(value: SecretsmanagerSecretReplica[] | cdktf.IResolvable) {
+  public putReplica(value: SecretsmanagerSecretReplica[] | cdktn.IResolvable) {
     this._replica.internalValue = value;
   }
   public resetReplica() {
@@ -502,91 +502,91 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      force_overwrite_replica_secret: cdktf.booleanToTerraform(this._forceOverwriteReplicaSecret),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      policy: cdktf.stringToTerraform(this._policy),
-      recovery_window_in_days: cdktf.numberToTerraform(this._recoveryWindowInDays),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      replica: cdktf.listMapper(secretsmanagerSecretReplicaToTerraform, true)(this._replica.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      force_overwrite_replica_secret: cdktn.booleanToTerraform(this._forceOverwriteReplicaSecret),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      policy: cdktn.stringToTerraform(this._policy),
+      recovery_window_in_days: cdktn.numberToTerraform(this._recoveryWindowInDays),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      replica: cdktn.listMapper(secretsmanagerSecretReplicaToTerraform, true)(this._replica.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_overwrite_replica_secret: {
-        value: cdktf.booleanToHclTerraform(this._forceOverwriteReplicaSecret),
+        value: cdktn.booleanToHclTerraform(this._forceOverwriteReplicaSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy: {
-        value: cdktf.stringToHclTerraform(this._policy),
+        value: cdktn.stringToHclTerraform(this._policy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_window_in_days: {
-        value: cdktf.numberToHclTerraform(this._recoveryWindowInDays),
+        value: cdktn.numberToHclTerraform(this._recoveryWindowInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       replica: {
-        value: cdktf.listMapperHcl(secretsmanagerSecretReplicaToHclTerraform, true)(this._replica.internalValue),
+        value: cdktn.listMapperHcl(secretsmanagerSecretReplicaToHclTerraform, true)(this._replica.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SecretsmanagerSecretReplicaList",

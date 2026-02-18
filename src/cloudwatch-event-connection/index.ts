@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudwatchEventConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchEventConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#authorization_type CloudwatchEventConnection#authorization_type}
   */
@@ -66,31 +66,31 @@ export interface CloudwatchEventConnectionAuthParametersApiKey {
 }
 
 export function cloudwatchEventConnectionAuthParametersApiKeyToTerraform(struct?: CloudwatchEventConnectionAuthParametersApiKeyOutputReference | CloudwatchEventConnectionAuthParametersApiKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function cloudwatchEventConnectionAuthParametersApiKeyToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersApiKeyOutputReference | CloudwatchEventConnectionAuthParametersApiKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -101,14 +101,14 @@ export function cloudwatchEventConnectionAuthParametersApiKeyToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventConnectionAuthParametersApiKeyOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventConnectionAuthParametersApiKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -177,31 +177,31 @@ export interface CloudwatchEventConnectionAuthParametersBasic {
 }
 
 export function cloudwatchEventConnectionAuthParametersBasicToTerraform(struct?: CloudwatchEventConnectionAuthParametersBasicOutputReference | CloudwatchEventConnectionAuthParametersBasic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function cloudwatchEventConnectionAuthParametersBasicToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersBasicOutputReference | CloudwatchEventConnectionAuthParametersBasic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -212,14 +212,14 @@ export function cloudwatchEventConnectionAuthParametersBasicToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventConnectionAuthParametersBasicOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventConnectionAuthParametersBasicOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -280,7 +280,7 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
-  readonly isValueSecret?: boolean | cdktf.IResolvable;
+  readonly isValueSecret?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
@@ -291,39 +291,39 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
   readonly value?: string;
 }
 
-export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyToTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyToTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_value_secret: cdktf.booleanToTerraform(struct!.isValueSecret),
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    is_value_secret: cdktn.booleanToTerraform(struct!.isValueSecret),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_value_secret: {
-      value: cdktf.booleanToHclTerraform(struct!.isValueSecret),
+      value: cdktn.booleanToHclTerraform(struct!.isValueSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -334,9 +334,9 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -344,11 +344,11 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -369,7 +369,7 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -377,7 +377,7 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -391,11 +391,11 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody
   }
 
   // is_value_secret - computed: false, optional: true, required: false
-  private _isValueSecret?: boolean | cdktf.IResolvable; 
+  private _isValueSecret?: boolean | cdktn.IResolvable; 
   public get isValueSecret() {
     return this.getBooleanAttribute('is_value_secret');
   }
-  public set isValueSecret(value: boolean | cdktf.IResolvable) {
+  public set isValueSecret(value: boolean | cdktn.IResolvable) {
     this._isValueSecret = value;
   }
   public resetIsValueSecret() {
@@ -439,15 +439,15 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody
   }
 }
 
-export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody[] | cdktf.IResolvable
+export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -462,7 +462,7 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
-  readonly isValueSecret?: boolean | cdktf.IResolvable;
+  readonly isValueSecret?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
@@ -473,39 +473,39 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
   readonly value?: string;
 }
 
-export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderToTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderToTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_value_secret: cdktf.booleanToTerraform(struct!.isValueSecret),
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    is_value_secret: cdktn.booleanToTerraform(struct!.isValueSecret),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_value_secret: {
-      value: cdktf.booleanToHclTerraform(struct!.isValueSecret),
+      value: cdktn.booleanToHclTerraform(struct!.isValueSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -516,9 +516,9 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -526,11 +526,11 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersHead
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -551,7 +551,7 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersHead
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -559,7 +559,7 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersHead
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -573,11 +573,11 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersHead
   }
 
   // is_value_secret - computed: false, optional: true, required: false
-  private _isValueSecret?: boolean | cdktf.IResolvable; 
+  private _isValueSecret?: boolean | cdktn.IResolvable; 
   public get isValueSecret() {
     return this.getBooleanAttribute('is_value_secret');
   }
-  public set isValueSecret(value: boolean | cdktf.IResolvable) {
+  public set isValueSecret(value: boolean | cdktn.IResolvable) {
     this._isValueSecret = value;
   }
   public resetIsValueSecret() {
@@ -621,15 +621,15 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersHead
   }
 }
 
-export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader[] | cdktf.IResolvable
+export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -644,7 +644,7 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
-  readonly isValueSecret?: boolean | cdktf.IResolvable;
+  readonly isValueSecret?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
@@ -655,39 +655,39 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
   readonly value?: string;
 }
 
-export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringToTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringToTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_value_secret: cdktf.booleanToTerraform(struct!.isValueSecret),
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    is_value_secret: cdktn.booleanToTerraform(struct!.isValueSecret),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_value_secret: {
-      value: cdktf.booleanToHclTerraform(struct!.isValueSecret),
+      value: cdktn.booleanToHclTerraform(struct!.isValueSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -698,9 +698,9 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersQ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -708,11 +708,11 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersQuer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -733,7 +733,7 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersQuer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -741,7 +741,7 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersQuer
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -755,11 +755,11 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersQuer
   }
 
   // is_value_secret - computed: false, optional: true, required: false
-  private _isValueSecret?: boolean | cdktf.IResolvable; 
+  private _isValueSecret?: boolean | cdktn.IResolvable; 
   public get isValueSecret() {
     return this.getBooleanAttribute('is_value_secret');
   }
-  public set isValueSecret(value: boolean | cdktf.IResolvable) {
+  public set isValueSecret(value: boolean | cdktn.IResolvable) {
     this._isValueSecret = value;
   }
   public resetIsValueSecret() {
@@ -803,15 +803,15 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersQuer
   }
 }
 
-export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString[] | cdktf.IResolvable
+export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -828,54 +828,54 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
   */
-  readonly body?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody[] | cdktf.IResolvable;
+  readonly body?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody[] | cdktn.IResolvable;
   /**
   * header block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
   */
-  readonly header?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader[] | cdktf.IResolvable;
+  readonly header?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader[] | cdktn.IResolvable;
   /**
   * query_string block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
   */
-  readonly queryString?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString[] | cdktf.IResolvable;
+  readonly queryString?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString[] | cdktn.IResolvable;
 }
 
 export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersToTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference | CloudwatchEventConnectionAuthParametersInvocationHttpParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    body: cdktf.listMapper(cloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyToTerraform, true)(struct!.body),
-    header: cdktf.listMapper(cloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderToTerraform, true)(struct!.header),
-    query_string: cdktf.listMapper(cloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringToTerraform, true)(struct!.queryString),
+    body: cdktn.listMapper(cloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyToTerraform, true)(struct!.body),
+    header: cdktn.listMapper(cloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderToTerraform, true)(struct!.header),
+    query_string: cdktn.listMapper(cloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringToTerraform, true)(struct!.queryString),
   }
 }
 
 
 export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference | CloudwatchEventConnectionAuthParametersInvocationHttpParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     body: {
-      value: cdktf.listMapperHcl(cloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyToHclTerraform, true)(struct!.body),
+      value: cdktn.listMapperHcl(cloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyToHclTerraform, true)(struct!.body),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyList",
     },
     header: {
-      value: cdktf.listMapperHcl(cloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderToHclTerraform, true)(struct!.header),
+      value: cdktn.listMapperHcl(cloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderToHclTerraform, true)(struct!.header),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderList",
     },
     query_string: {
-      value: cdktf.listMapperHcl(cloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringToHclTerraform, true)(struct!.queryString),
+      value: cdktn.listMapperHcl(cloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringToHclTerraform, true)(struct!.queryString),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList",
@@ -886,14 +886,14 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -935,7 +935,7 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutp
   public get body() {
     return this._body;
   }
-  public putBody(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody[] | cdktf.IResolvable) {
+  public putBody(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody[] | cdktn.IResolvable) {
     this._body.internalValue = value;
   }
   public resetBody() {
@@ -951,7 +951,7 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutp
   public get header() {
     return this._header;
   }
-  public putHeader(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader[] | cdktf.IResolvable) {
+  public putHeader(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader[] | cdktn.IResolvable) {
     this._header.internalValue = value;
   }
   public resetHeader() {
@@ -967,7 +967,7 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutp
   public get queryString() {
     return this._queryString;
   }
-  public putQueryString(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString[] | cdktf.IResolvable) {
+  public putQueryString(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString[] | cdktn.IResolvable) {
     this._queryString.internalValue = value;
   }
   public resetQueryString() {
@@ -990,31 +990,31 @@ export interface CloudwatchEventConnectionAuthParametersOauthClientParameters {
 }
 
 export function cloudwatchEventConnectionAuthParametersOauthClientParametersToTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference | CloudwatchEventConnectionAuthParametersOauthClientParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
   }
 }
 
 
 export function cloudwatchEventConnectionAuthParametersOauthClientParametersToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference | CloudwatchEventConnectionAuthParametersOauthClientParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1025,14 +1025,14 @@ export function cloudwatchEventConnectionAuthParametersOauthClientParametersToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1093,7 +1093,7 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
-  readonly isValueSecret?: boolean | cdktf.IResolvable;
+  readonly isValueSecret?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
@@ -1104,39 +1104,39 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
   readonly value?: string;
 }
 
-export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyToTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyToTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_value_secret: cdktf.booleanToTerraform(struct!.isValueSecret),
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    is_value_secret: cdktn.booleanToTerraform(struct!.isValueSecret),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_value_secret: {
-      value: cdktf.booleanToHclTerraform(struct!.isValueSecret),
+      value: cdktn.booleanToHclTerraform(struct!.isValueSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1147,9 +1147,9 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1157,11 +1157,11 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1182,7 +1182,7 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1190,7 +1190,7 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1204,11 +1204,11 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody
   }
 
   // is_value_secret - computed: false, optional: true, required: false
-  private _isValueSecret?: boolean | cdktf.IResolvable; 
+  private _isValueSecret?: boolean | cdktn.IResolvable; 
   public get isValueSecret() {
     return this.getBooleanAttribute('is_value_secret');
   }
-  public set isValueSecret(value: boolean | cdktf.IResolvable) {
+  public set isValueSecret(value: boolean | cdktn.IResolvable) {
     this._isValueSecret = value;
   }
   public resetIsValueSecret() {
@@ -1252,15 +1252,15 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody
   }
 }
 
-export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody[] | cdktf.IResolvable
+export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1275,7 +1275,7 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
-  readonly isValueSecret?: boolean | cdktf.IResolvable;
+  readonly isValueSecret?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
@@ -1286,39 +1286,39 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
   readonly value?: string;
 }
 
-export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderToTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderToTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_value_secret: cdktf.booleanToTerraform(struct!.isValueSecret),
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    is_value_secret: cdktn.booleanToTerraform(struct!.isValueSecret),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_value_secret: {
-      value: cdktf.booleanToHclTerraform(struct!.isValueSecret),
+      value: cdktn.booleanToHclTerraform(struct!.isValueSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1329,9 +1329,9 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1339,11 +1339,11 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHead
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1364,7 +1364,7 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHead
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1372,7 +1372,7 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHead
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1386,11 +1386,11 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHead
   }
 
   // is_value_secret - computed: false, optional: true, required: false
-  private _isValueSecret?: boolean | cdktf.IResolvable; 
+  private _isValueSecret?: boolean | cdktn.IResolvable; 
   public get isValueSecret() {
     return this.getBooleanAttribute('is_value_secret');
   }
-  public set isValueSecret(value: boolean | cdktf.IResolvable) {
+  public set isValueSecret(value: boolean | cdktn.IResolvable) {
     this._isValueSecret = value;
   }
   public resetIsValueSecret() {
@@ -1434,15 +1434,15 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHead
   }
 }
 
-export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader[] | cdktf.IResolvable
+export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1457,7 +1457,7 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
-  readonly isValueSecret?: boolean | cdktf.IResolvable;
+  readonly isValueSecret?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
@@ -1468,39 +1468,39 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
   readonly value?: string;
 }
 
-export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringToTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringToTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_value_secret: cdktf.booleanToTerraform(struct!.isValueSecret),
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    is_value_secret: cdktn.booleanToTerraform(struct!.isValueSecret),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_value_secret: {
-      value: cdktf.booleanToHclTerraform(struct!.isValueSecret),
+      value: cdktn.booleanToHclTerraform(struct!.isValueSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1511,9 +1511,9 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1521,11 +1521,11 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQuer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1546,7 +1546,7 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQuer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1554,7 +1554,7 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQuer
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1568,11 +1568,11 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQuer
   }
 
   // is_value_secret - computed: false, optional: true, required: false
-  private _isValueSecret?: boolean | cdktf.IResolvable; 
+  private _isValueSecret?: boolean | cdktn.IResolvable; 
   public get isValueSecret() {
     return this.getBooleanAttribute('is_value_secret');
   }
-  public set isValueSecret(value: boolean | cdktf.IResolvable) {
+  public set isValueSecret(value: boolean | cdktn.IResolvable) {
     this._isValueSecret = value;
   }
   public resetIsValueSecret() {
@@ -1616,15 +1616,15 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQuer
   }
 }
 
-export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString[] | cdktf.IResolvable
+export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1641,54 +1641,54 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
   */
-  readonly body?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody[] | cdktf.IResolvable;
+  readonly body?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody[] | cdktn.IResolvable;
   /**
   * header block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
   */
-  readonly header?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader[] | cdktf.IResolvable;
+  readonly header?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader[] | cdktn.IResolvable;
   /**
   * query_string block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
   */
-  readonly queryString?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString[] | cdktf.IResolvable;
+  readonly queryString?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString[] | cdktn.IResolvable;
 }
 
 export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersToTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference | CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    body: cdktf.listMapper(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyToTerraform, true)(struct!.body),
-    header: cdktf.listMapper(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderToTerraform, true)(struct!.header),
-    query_string: cdktf.listMapper(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringToTerraform, true)(struct!.queryString),
+    body: cdktn.listMapper(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyToTerraform, true)(struct!.body),
+    header: cdktn.listMapper(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderToTerraform, true)(struct!.header),
+    query_string: cdktn.listMapper(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringToTerraform, true)(struct!.queryString),
   }
 }
 
 
 export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference | CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     body: {
-      value: cdktf.listMapperHcl(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyToHclTerraform, true)(struct!.body),
+      value: cdktn.listMapperHcl(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyToHclTerraform, true)(struct!.body),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList",
     },
     header: {
-      value: cdktf.listMapperHcl(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderToHclTerraform, true)(struct!.header),
+      value: cdktn.listMapperHcl(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderToHclTerraform, true)(struct!.header),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderList",
     },
     query_string: {
-      value: cdktf.listMapperHcl(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringToHclTerraform, true)(struct!.queryString),
+      value: cdktn.listMapperHcl(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringToHclTerraform, true)(struct!.queryString),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringList",
@@ -1699,14 +1699,14 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1748,7 +1748,7 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutp
   public get body() {
     return this._body;
   }
-  public putBody(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody[] | cdktf.IResolvable) {
+  public putBody(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody[] | cdktn.IResolvable) {
     this._body.internalValue = value;
   }
   public resetBody() {
@@ -1764,7 +1764,7 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutp
   public get header() {
     return this._header;
   }
-  public putHeader(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader[] | cdktf.IResolvable) {
+  public putHeader(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader[] | cdktn.IResolvable) {
     this._header.internalValue = value;
   }
   public resetHeader() {
@@ -1780,7 +1780,7 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutp
   public get queryString() {
     return this._queryString;
   }
-  public putQueryString(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString[] | cdktf.IResolvable) {
+  public putQueryString(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString[] | cdktn.IResolvable) {
     this._queryString.internalValue = value;
   }
   public resetQueryString() {
@@ -1815,13 +1815,13 @@ export interface CloudwatchEventConnectionAuthParametersOauth {
 }
 
 export function cloudwatchEventConnectionAuthParametersOauthToTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOutputReference | CloudwatchEventConnectionAuthParametersOauth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authorization_endpoint: cdktf.stringToTerraform(struct!.authorizationEndpoint),
-    http_method: cdktf.stringToTerraform(struct!.httpMethod),
+    authorization_endpoint: cdktn.stringToTerraform(struct!.authorizationEndpoint),
+    http_method: cdktn.stringToTerraform(struct!.httpMethod),
     client_parameters: cloudwatchEventConnectionAuthParametersOauthClientParametersToTerraform(struct!.clientParameters),
     oauth_http_parameters: cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersToTerraform(struct!.oauthHttpParameters),
   }
@@ -1829,19 +1829,19 @@ export function cloudwatchEventConnectionAuthParametersOauthToTerraform(struct?:
 
 
 export function cloudwatchEventConnectionAuthParametersOauthToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOutputReference | CloudwatchEventConnectionAuthParametersOauth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authorization_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.authorizationEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.authorizationEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_method: {
-      value: cdktf.stringToHclTerraform(struct!.httpMethod),
+      value: cdktn.stringToHclTerraform(struct!.httpMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1864,14 +1864,14 @@ export function cloudwatchEventConnectionAuthParametersOauthToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventConnectionAuthParametersOauthOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventConnectionAuthParametersOauthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1997,8 +1997,8 @@ export interface CloudwatchEventConnectionAuthParameters {
 }
 
 export function cloudwatchEventConnectionAuthParametersToTerraform(struct?: CloudwatchEventConnectionAuthParametersOutputReference | CloudwatchEventConnectionAuthParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2011,8 +2011,8 @@ export function cloudwatchEventConnectionAuthParametersToTerraform(struct?: Clou
 
 
 export function cloudwatchEventConnectionAuthParametersToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOutputReference | CloudwatchEventConnectionAuthParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2046,14 +2046,14 @@ export function cloudwatchEventConnectionAuthParametersToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventConnectionAuthParametersOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventConnectionAuthParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2168,24 +2168,24 @@ export interface CloudwatchEventConnectionInvocationConnectivityParametersResour
 }
 
 export function cloudwatchEventConnectionInvocationConnectivityParametersResourceParametersToTerraform(struct?: CloudwatchEventConnectionInvocationConnectivityParametersResourceParametersOutputReference | CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_configuration_arn: cdktf.stringToTerraform(struct!.resourceConfigurationArn),
+    resource_configuration_arn: cdktn.stringToTerraform(struct!.resourceConfigurationArn),
   }
 }
 
 
 export function cloudwatchEventConnectionInvocationConnectivityParametersResourceParametersToHclTerraform(struct?: CloudwatchEventConnectionInvocationConnectivityParametersResourceParametersOutputReference | CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource_configuration_arn: {
-      value: cdktf.stringToHclTerraform(struct!.resourceConfigurationArn),
+      value: cdktn.stringToHclTerraform(struct!.resourceConfigurationArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2196,14 +2196,14 @@ export function cloudwatchEventConnectionInvocationConnectivityParametersResourc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventConnectionInvocationConnectivityParametersResourceParametersOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventConnectionInvocationConnectivityParametersResourceParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2256,8 +2256,8 @@ export interface CloudwatchEventConnectionInvocationConnectivityParameters {
 }
 
 export function cloudwatchEventConnectionInvocationConnectivityParametersToTerraform(struct?: CloudwatchEventConnectionInvocationConnectivityParametersOutputReference | CloudwatchEventConnectionInvocationConnectivityParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2267,8 +2267,8 @@ export function cloudwatchEventConnectionInvocationConnectivityParametersToTerra
 
 
 export function cloudwatchEventConnectionInvocationConnectivityParametersToHclTerraform(struct?: CloudwatchEventConnectionInvocationConnectivityParametersOutputReference | CloudwatchEventConnectionInvocationConnectivityParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2284,14 +2284,14 @@ export function cloudwatchEventConnectionInvocationConnectivityParametersToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchEventConnectionInvocationConnectivityParametersOutputReference extends cdktf.ComplexObject {
+export class CloudwatchEventConnectionInvocationConnectivityParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2333,7 +2333,7 @@ export class CloudwatchEventConnectionInvocationConnectivityParametersOutputRefe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection}
 */
-export class CloudwatchEventConnection extends cdktf.TerraformResource {
+export class CloudwatchEventConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2344,14 +2344,14 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudwatchEventConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudwatchEventConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchEventConnection to import
   * @param importFromId The id of the existing CloudwatchEventConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchEventConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_event_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_event_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -2530,12 +2530,12 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authorization_type: cdktf.stringToTerraform(this._authorizationType),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_identifier: cdktf.stringToTerraform(this._kmsKeyIdentifier),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      authorization_type: cdktn.stringToTerraform(this._authorizationType),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_identifier: cdktn.stringToTerraform(this._kmsKeyIdentifier),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
       auth_parameters: cloudwatchEventConnectionAuthParametersToTerraform(this._authParameters.internalValue),
       invocation_connectivity_parameters: cloudwatchEventConnectionInvocationConnectivityParametersToTerraform(this._invocationConnectivityParameters.internalValue),
     };
@@ -2544,37 +2544,37 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authorization_type: {
-        value: cdktf.stringToHclTerraform(this._authorizationType),
+        value: cdktn.stringToHclTerraform(this._authorizationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_identifier: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyIdentifier),
+        value: cdktn.stringToHclTerraform(this._kmsKeyIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

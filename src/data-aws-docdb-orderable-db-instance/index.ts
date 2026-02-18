@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsDocdbOrderableDbInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsDocdbOrderableDbInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/docdb_orderable_db_instance#engine DataAwsDocdbOrderableDbInstance#engine}
   */
@@ -48,13 +48,13 @@ export interface DataAwsDocdbOrderableDbInstanceConfig extends cdktf.TerraformMe
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/docdb_orderable_db_instance#vpc DataAwsDocdbOrderableDbInstance#vpc}
   */
-  readonly vpc?: boolean | cdktf.IResolvable;
+  readonly vpc?: boolean | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/docdb_orderable_db_instance aws_docdb_orderable_db_instance}
 */
-export class DataAwsDocdbOrderableDbInstance extends cdktf.TerraformDataSource {
+export class DataAwsDocdbOrderableDbInstance extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class DataAwsDocdbOrderableDbInstance extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsDocdbOrderableDbInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsDocdbOrderableDbInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsDocdbOrderableDbInstance to import
   * @param importFromId The id of the existing DataAwsDocdbOrderableDbInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/docdb_orderable_db_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsDocdbOrderableDbInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_docdb_orderable_db_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_docdb_orderable_db_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -234,11 +234,11 @@ export class DataAwsDocdbOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // vpc - computed: true, optional: true, required: false
-  private _vpc?: boolean | cdktf.IResolvable; 
+  private _vpc?: boolean | cdktn.IResolvable; 
   public get vpc() {
     return this.getBooleanAttribute('vpc');
   }
-  public set vpc(value: boolean | cdktf.IResolvable) {
+  public set vpc(value: boolean | cdktn.IResolvable) {
     this._vpc = value;
   }
   public resetVpc() {
@@ -255,63 +255,63 @@ export class DataAwsDocdbOrderableDbInstance extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      engine: cdktf.stringToTerraform(this._engine),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      id: cdktf.stringToTerraform(this._id),
-      instance_class: cdktf.stringToTerraform(this._instanceClass),
-      license_model: cdktf.stringToTerraform(this._licenseModel),
-      preferred_instance_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredInstanceClasses),
-      region: cdktf.stringToTerraform(this._region),
-      vpc: cdktf.booleanToTerraform(this._vpc),
+      engine: cdktn.stringToTerraform(this._engine),
+      engine_version: cdktn.stringToTerraform(this._engineVersion),
+      id: cdktn.stringToTerraform(this._id),
+      instance_class: cdktn.stringToTerraform(this._instanceClass),
+      license_model: cdktn.stringToTerraform(this._licenseModel),
+      preferred_instance_classes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._preferredInstanceClasses),
+      region: cdktn.stringToTerraform(this._region),
+      vpc: cdktn.booleanToTerraform(this._vpc),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_version: {
-        value: cdktf.stringToHclTerraform(this._engineVersion),
+        value: cdktn.stringToHclTerraform(this._engineVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_class: {
-        value: cdktf.stringToHclTerraform(this._instanceClass),
+        value: cdktn.stringToHclTerraform(this._instanceClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       license_model: {
-        value: cdktf.stringToHclTerraform(this._licenseModel),
+        value: cdktn.stringToHclTerraform(this._licenseModel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_instance_classes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredInstanceClasses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._preferredInstanceClasses),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc: {
-        value: cdktf.booleanToHclTerraform(this._vpc),
+        value: cdktn.booleanToHclTerraform(this._vpc),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
+export interface LambdaFunctionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function#architectures LambdaFunction#architectures}
   */
@@ -70,7 +70,7 @@ export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function#publish LambdaFunction#publish}
   */
-  readonly publish?: boolean | cdktf.IResolvable;
+  readonly publish?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function#publish_to LambdaFunction#publish_to}
   */
@@ -84,7 +84,7 @@ export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function#replace_security_groups_on_destroy LambdaFunction#replace_security_groups_on_destroy}
   */
-  readonly replaceSecurityGroupsOnDestroy?: boolean | cdktf.IResolvable;
+  readonly replaceSecurityGroupsOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function#replacement_security_group_ids LambdaFunction#replacement_security_group_ids}
   */
@@ -116,7 +116,7 @@ export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function#skip_destroy LambdaFunction#skip_destroy}
   */
-  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  readonly skipDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function#source_code_hash LambdaFunction#source_code_hash}
   */
@@ -232,38 +232,38 @@ export interface LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapac
 }
 
 export function lambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigToTerraform(struct?: LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigOutputReference | LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity_provider_arn: cdktf.stringToTerraform(struct!.capacityProviderArn),
-    execution_environment_memory_gib_per_vcpu: cdktf.numberToTerraform(struct!.executionEnvironmentMemoryGibPerVcpu),
-    per_execution_environment_max_concurrency: cdktf.numberToTerraform(struct!.perExecutionEnvironmentMaxConcurrency),
+    capacity_provider_arn: cdktn.stringToTerraform(struct!.capacityProviderArn),
+    execution_environment_memory_gib_per_vcpu: cdktn.numberToTerraform(struct!.executionEnvironmentMemoryGibPerVcpu),
+    per_execution_environment_max_concurrency: cdktn.numberToTerraform(struct!.perExecutionEnvironmentMaxConcurrency),
   }
 }
 
 
 export function lambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigToHclTerraform(struct?: LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigOutputReference | LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity_provider_arn: {
-      value: cdktf.stringToHclTerraform(struct!.capacityProviderArn),
+      value: cdktn.stringToHclTerraform(struct!.capacityProviderArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     execution_environment_memory_gib_per_vcpu: {
-      value: cdktf.numberToHclTerraform(struct!.executionEnvironmentMemoryGibPerVcpu),
+      value: cdktn.numberToHclTerraform(struct!.executionEnvironmentMemoryGibPerVcpu),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     per_execution_environment_max_concurrency: {
-      value: cdktf.numberToHclTerraform(struct!.perExecutionEnvironmentMaxConcurrency),
+      value: cdktn.numberToHclTerraform(struct!.perExecutionEnvironmentMaxConcurrency),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -274,14 +274,14 @@ export function lambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapaci
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -373,8 +373,8 @@ export interface LambdaFunctionCapacityProviderConfig {
 }
 
 export function lambdaFunctionCapacityProviderConfigToTerraform(struct?: LambdaFunctionCapacityProviderConfigOutputReference | LambdaFunctionCapacityProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -384,8 +384,8 @@ export function lambdaFunctionCapacityProviderConfigToTerraform(struct?: LambdaF
 
 
 export function lambdaFunctionCapacityProviderConfigToHclTerraform(struct?: LambdaFunctionCapacityProviderConfigOutputReference | LambdaFunctionCapacityProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -401,14 +401,14 @@ export function lambdaFunctionCapacityProviderConfigToHclTerraform(struct?: Lamb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionCapacityProviderConfigOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionCapacityProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -454,24 +454,24 @@ export interface LambdaFunctionDeadLetterConfig {
 }
 
 export function lambdaFunctionDeadLetterConfigToTerraform(struct?: LambdaFunctionDeadLetterConfigOutputReference | LambdaFunctionDeadLetterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target_arn: cdktf.stringToTerraform(struct!.targetArn),
+    target_arn: cdktn.stringToTerraform(struct!.targetArn),
   }
 }
 
 
 export function lambdaFunctionDeadLetterConfigToHclTerraform(struct?: LambdaFunctionDeadLetterConfigOutputReference | LambdaFunctionDeadLetterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     target_arn: {
-      value: cdktf.stringToHclTerraform(struct!.targetArn),
+      value: cdktn.stringToHclTerraform(struct!.targetArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -482,14 +482,14 @@ export function lambdaFunctionDeadLetterConfigToHclTerraform(struct?: LambdaFunc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionDeadLetterConfigOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionDeadLetterConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -539,31 +539,31 @@ export interface LambdaFunctionDurableConfig {
 }
 
 export function lambdaFunctionDurableConfigToTerraform(struct?: LambdaFunctionDurableConfigOutputReference | LambdaFunctionDurableConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    execution_timeout: cdktf.numberToTerraform(struct!.executionTimeout),
-    retention_period: cdktf.numberToTerraform(struct!.retentionPeriod),
+    execution_timeout: cdktn.numberToTerraform(struct!.executionTimeout),
+    retention_period: cdktn.numberToTerraform(struct!.retentionPeriod),
   }
 }
 
 
 export function lambdaFunctionDurableConfigToHclTerraform(struct?: LambdaFunctionDurableConfigOutputReference | LambdaFunctionDurableConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     execution_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.executionTimeout),
+      value: cdktn.numberToHclTerraform(struct!.executionTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     retention_period: {
-      value: cdktf.numberToHclTerraform(struct!.retentionPeriod),
+      value: cdktn.numberToHclTerraform(struct!.retentionPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -574,14 +574,14 @@ export function lambdaFunctionDurableConfigToHclTerraform(struct?: LambdaFunctio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionDurableConfigOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionDurableConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -649,24 +649,24 @@ export interface LambdaFunctionEnvironment {
 }
 
 export function lambdaFunctionEnvironmentToTerraform(struct?: LambdaFunctionEnvironmentOutputReference | LambdaFunctionEnvironment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.variables),
+    variables: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.variables),
   }
 }
 
 
 export function lambdaFunctionEnvironmentToHclTerraform(struct?: LambdaFunctionEnvironmentOutputReference | LambdaFunctionEnvironment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     variables: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.variables),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.variables),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -677,14 +677,14 @@ export function lambdaFunctionEnvironmentToHclTerraform(struct?: LambdaFunctionE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionEnvironmentOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionEnvironmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -733,24 +733,24 @@ export interface LambdaFunctionEphemeralStorage {
 }
 
 export function lambdaFunctionEphemeralStorageToTerraform(struct?: LambdaFunctionEphemeralStorageOutputReference | LambdaFunctionEphemeralStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    size: cdktf.numberToTerraform(struct!.size),
+    size: cdktn.numberToTerraform(struct!.size),
   }
 }
 
 
 export function lambdaFunctionEphemeralStorageToHclTerraform(struct?: LambdaFunctionEphemeralStorageOutputReference | LambdaFunctionEphemeralStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     size: {
-      value: cdktf.numberToHclTerraform(struct!.size),
+      value: cdktn.numberToHclTerraform(struct!.size),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -761,14 +761,14 @@ export function lambdaFunctionEphemeralStorageToHclTerraform(struct?: LambdaFunc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionEphemeralStorageOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionEphemeralStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -821,31 +821,31 @@ export interface LambdaFunctionFileSystemConfig {
 }
 
 export function lambdaFunctionFileSystemConfigToTerraform(struct?: LambdaFunctionFileSystemConfigOutputReference | LambdaFunctionFileSystemConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
-    local_mount_path: cdktf.stringToTerraform(struct!.localMountPath),
+    arn: cdktn.stringToTerraform(struct!.arn),
+    local_mount_path: cdktn.stringToTerraform(struct!.localMountPath),
   }
 }
 
 
 export function lambdaFunctionFileSystemConfigToHclTerraform(struct?: LambdaFunctionFileSystemConfigOutputReference | LambdaFunctionFileSystemConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     local_mount_path: {
-      value: cdktf.stringToHclTerraform(struct!.localMountPath),
+      value: cdktn.stringToHclTerraform(struct!.localMountPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -856,14 +856,14 @@ export function lambdaFunctionFileSystemConfigToHclTerraform(struct?: LambdaFunc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionFileSystemConfigOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionFileSystemConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -936,38 +936,38 @@ export interface LambdaFunctionImageConfig {
 }
 
 export function lambdaFunctionImageConfigToTerraform(struct?: LambdaFunctionImageConfigOutputReference | LambdaFunctionImageConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
-    entry_point: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.entryPoint),
-    working_directory: cdktf.stringToTerraform(struct!.workingDirectory),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
+    entry_point: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.entryPoint),
+    working_directory: cdktn.stringToTerraform(struct!.workingDirectory),
   }
 }
 
 
 export function lambdaFunctionImageConfigToHclTerraform(struct?: LambdaFunctionImageConfigOutputReference | LambdaFunctionImageConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     entry_point: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.entryPoint),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.entryPoint),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     working_directory: {
-      value: cdktf.stringToHclTerraform(struct!.workingDirectory),
+      value: cdktn.stringToHclTerraform(struct!.workingDirectory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -978,14 +978,14 @@ export function lambdaFunctionImageConfigToHclTerraform(struct?: LambdaFunctionI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionImageConfigOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionImageConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1090,45 +1090,45 @@ export interface LambdaFunctionLoggingConfig {
 }
 
 export function lambdaFunctionLoggingConfigToTerraform(struct?: LambdaFunctionLoggingConfigOutputReference | LambdaFunctionLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    application_log_level: cdktf.stringToTerraform(struct!.applicationLogLevel),
-    log_format: cdktf.stringToTerraform(struct!.logFormat),
-    log_group: cdktf.stringToTerraform(struct!.logGroup),
-    system_log_level: cdktf.stringToTerraform(struct!.systemLogLevel),
+    application_log_level: cdktn.stringToTerraform(struct!.applicationLogLevel),
+    log_format: cdktn.stringToTerraform(struct!.logFormat),
+    log_group: cdktn.stringToTerraform(struct!.logGroup),
+    system_log_level: cdktn.stringToTerraform(struct!.systemLogLevel),
   }
 }
 
 
 export function lambdaFunctionLoggingConfigToHclTerraform(struct?: LambdaFunctionLoggingConfigOutputReference | LambdaFunctionLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     application_log_level: {
-      value: cdktf.stringToHclTerraform(struct!.applicationLogLevel),
+      value: cdktn.stringToHclTerraform(struct!.applicationLogLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_format: {
-      value: cdktf.stringToHclTerraform(struct!.logFormat),
+      value: cdktn.stringToHclTerraform(struct!.logFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_group: {
-      value: cdktf.stringToHclTerraform(struct!.logGroup),
+      value: cdktn.stringToHclTerraform(struct!.logGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     system_log_level: {
-      value: cdktf.stringToHclTerraform(struct!.systemLogLevel),
+      value: cdktn.stringToHclTerraform(struct!.systemLogLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1139,14 +1139,14 @@ export function lambdaFunctionLoggingConfigToHclTerraform(struct?: LambdaFunctio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionLoggingConfigOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionLoggingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1258,24 +1258,24 @@ export interface LambdaFunctionSnapStart {
 }
 
 export function lambdaFunctionSnapStartToTerraform(struct?: LambdaFunctionSnapStartOutputReference | LambdaFunctionSnapStart): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    apply_on: cdktf.stringToTerraform(struct!.applyOn),
+    apply_on: cdktn.stringToTerraform(struct!.applyOn),
   }
 }
 
 
 export function lambdaFunctionSnapStartToHclTerraform(struct?: LambdaFunctionSnapStartOutputReference | LambdaFunctionSnapStart): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     apply_on: {
-      value: cdktf.stringToHclTerraform(struct!.applyOn),
+      value: cdktn.stringToHclTerraform(struct!.applyOn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1286,14 +1286,14 @@ export function lambdaFunctionSnapStartToHclTerraform(struct?: LambdaFunctionSna
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionSnapStartOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionSnapStartOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1344,24 +1344,24 @@ export interface LambdaFunctionTenancyConfig {
 }
 
 export function lambdaFunctionTenancyConfigToTerraform(struct?: LambdaFunctionTenancyConfigOutputReference | LambdaFunctionTenancyConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tenant_isolation_mode: cdktf.stringToTerraform(struct!.tenantIsolationMode),
+    tenant_isolation_mode: cdktn.stringToTerraform(struct!.tenantIsolationMode),
   }
 }
 
 
 export function lambdaFunctionTenancyConfigToHclTerraform(struct?: LambdaFunctionTenancyConfigOutputReference | LambdaFunctionTenancyConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     tenant_isolation_mode: {
-      value: cdktf.stringToHclTerraform(struct!.tenantIsolationMode),
+      value: cdktn.stringToHclTerraform(struct!.tenantIsolationMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1372,14 +1372,14 @@ export function lambdaFunctionTenancyConfigToHclTerraform(struct?: LambdaFunctio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionTenancyConfigOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionTenancyConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1432,39 +1432,39 @@ export interface LambdaFunctionTimeouts {
   readonly update?: string;
 }
 
-export function lambdaFunctionTimeoutsToTerraform(struct?: LambdaFunctionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaFunctionTimeoutsToTerraform(struct?: LambdaFunctionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function lambdaFunctionTimeoutsToHclTerraform(struct?: LambdaFunctionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaFunctionTimeoutsToHclTerraform(struct?: LambdaFunctionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1475,19 +1475,19 @@ export function lambdaFunctionTimeoutsToHclTerraform(struct?: LambdaFunctionTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LambdaFunctionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LambdaFunctionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1508,7 +1508,7 @@ export class LambdaFunctionTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LambdaFunctionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LambdaFunctionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1516,7 +1516,7 @@ export class LambdaFunctionTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1585,24 +1585,24 @@ export interface LambdaFunctionTracingConfig {
 }
 
 export function lambdaFunctionTracingConfigToTerraform(struct?: LambdaFunctionTracingConfigOutputReference | LambdaFunctionTracingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
+    mode: cdktn.stringToTerraform(struct!.mode),
   }
 }
 
 
 export function lambdaFunctionTracingConfigToHclTerraform(struct?: LambdaFunctionTracingConfigOutputReference | LambdaFunctionTracingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1613,14 +1613,14 @@ export function lambdaFunctionTracingConfigToHclTerraform(struct?: LambdaFunctio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionTracingConfigOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionTracingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1662,7 +1662,7 @@ export interface LambdaFunctionVpcConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function#ipv6_allowed_for_dual_stack LambdaFunction#ipv6_allowed_for_dual_stack}
   */
-  readonly ipv6AllowedForDualStack?: boolean | cdktf.IResolvable;
+  readonly ipv6AllowedForDualStack?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function#security_group_ids LambdaFunction#security_group_ids}
   */
@@ -1674,38 +1674,38 @@ export interface LambdaFunctionVpcConfig {
 }
 
 export function lambdaFunctionVpcConfigToTerraform(struct?: LambdaFunctionVpcConfigOutputReference | LambdaFunctionVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ipv6_allowed_for_dual_stack: cdktf.booleanToTerraform(struct!.ipv6AllowedForDualStack),
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    ipv6_allowed_for_dual_stack: cdktn.booleanToTerraform(struct!.ipv6AllowedForDualStack),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
 
 export function lambdaFunctionVpcConfigToHclTerraform(struct?: LambdaFunctionVpcConfigOutputReference | LambdaFunctionVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ipv6_allowed_for_dual_stack: {
-      value: cdktf.booleanToHclTerraform(struct!.ipv6AllowedForDualStack),
+      value: cdktn.booleanToHclTerraform(struct!.ipv6AllowedForDualStack),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1716,14 +1716,14 @@ export function lambdaFunctionVpcConfigToHclTerraform(struct?: LambdaFunctionVpc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaFunctionVpcConfigOutputReference extends cdktf.ComplexObject {
+export class LambdaFunctionVpcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1761,11 +1761,11 @@ export class LambdaFunctionVpcConfigOutputReference extends cdktf.ComplexObject 
   }
 
   // ipv6_allowed_for_dual_stack - computed: false, optional: true, required: false
-  private _ipv6AllowedForDualStack?: boolean | cdktf.IResolvable; 
+  private _ipv6AllowedForDualStack?: boolean | cdktn.IResolvable; 
   public get ipv6AllowedForDualStack() {
     return this.getBooleanAttribute('ipv6_allowed_for_dual_stack');
   }
-  public set ipv6AllowedForDualStack(value: boolean | cdktf.IResolvable) {
+  public set ipv6AllowedForDualStack(value: boolean | cdktn.IResolvable) {
     this._ipv6AllowedForDualStack = value;
   }
   public resetIpv6AllowedForDualStack() {
@@ -1779,7 +1779,7 @@ export class LambdaFunctionVpcConfigOutputReference extends cdktf.ComplexObject 
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -1792,7 +1792,7 @@ export class LambdaFunctionVpcConfigOutputReference extends cdktf.ComplexObject 
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -1811,7 +1811,7 @@ export class LambdaFunctionVpcConfigOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function aws_lambda_function}
 */
-export class LambdaFunction extends cdktf.TerraformResource {
+export class LambdaFunction extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1822,14 +1822,14 @@ export class LambdaFunction extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LambdaFunction resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LambdaFunction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LambdaFunction to import
   * @param importFromId The id of the existing LambdaFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LambdaFunction to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_function", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_function", importId: importFromId, provider });
       }
 
   // ===========
@@ -2129,11 +2129,11 @@ export class LambdaFunction extends cdktf.TerraformResource {
   }
 
   // publish - computed: false, optional: true, required: false
-  private _publish?: boolean | cdktf.IResolvable; 
+  private _publish?: boolean | cdktn.IResolvable; 
   public get publish() {
     return this.getBooleanAttribute('publish');
   }
-  public set publish(value: boolean | cdktf.IResolvable) {
+  public set publish(value: boolean | cdktn.IResolvable) {
     this._publish = value;
   }
   public resetPublish() {
@@ -2187,11 +2187,11 @@ export class LambdaFunction extends cdktf.TerraformResource {
   }
 
   // replace_security_groups_on_destroy - computed: false, optional: true, required: false
-  private _replaceSecurityGroupsOnDestroy?: boolean | cdktf.IResolvable; 
+  private _replaceSecurityGroupsOnDestroy?: boolean | cdktn.IResolvable; 
   public get replaceSecurityGroupsOnDestroy() {
     return this.getBooleanAttribute('replace_security_groups_on_destroy');
   }
-  public set replaceSecurityGroupsOnDestroy(value: boolean | cdktf.IResolvable) {
+  public set replaceSecurityGroupsOnDestroy(value: boolean | cdktn.IResolvable) {
     this._replaceSecurityGroupsOnDestroy = value;
   }
   public resetReplaceSecurityGroupsOnDestroy() {
@@ -2205,7 +2205,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
   // replacement_security_group_ids - computed: false, optional: true, required: false
   private _replacementSecurityGroupIds?: string[]; 
   public get replacementSecurityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('replacement_security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('replacement_security_group_ids'));
   }
   public set replacementSecurityGroupIds(value: string[]) {
     this._replacementSecurityGroupIds = value;
@@ -2327,11 +2327,11 @@ export class LambdaFunction extends cdktf.TerraformResource {
   }
 
   // skip_destroy - computed: false, optional: true, required: false
-  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  private _skipDestroy?: boolean | cdktn.IResolvable; 
   public get skipDestroy() {
     return this.getBooleanAttribute('skip_destroy');
   }
-  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+  public set skipDestroy(value: boolean | cdktn.IResolvable) {
     this._skipDestroy = value;
   }
   public resetSkipDestroy() {
@@ -2646,36 +2646,36 @@ export class LambdaFunction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      architectures: cdktf.listMapper(cdktf.stringToTerraform, false)(this._architectures),
-      code_sha256: cdktf.stringToTerraform(this._codeSha256),
-      code_signing_config_arn: cdktf.stringToTerraform(this._codeSigningConfigArn),
-      description: cdktf.stringToTerraform(this._description),
-      filename: cdktf.stringToTerraform(this._filename),
-      function_name: cdktf.stringToTerraform(this._functionName),
-      handler: cdktf.stringToTerraform(this._handler),
-      id: cdktf.stringToTerraform(this._id),
-      image_uri: cdktf.stringToTerraform(this._imageUri),
-      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
-      layers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._layers),
-      memory_size: cdktf.numberToTerraform(this._memorySize),
-      package_type: cdktf.stringToTerraform(this._packageType),
-      publish: cdktf.booleanToTerraform(this._publish),
-      publish_to: cdktf.stringToTerraform(this._publishTo),
-      region: cdktf.stringToTerraform(this._region),
-      replace_security_groups_on_destroy: cdktf.booleanToTerraform(this._replaceSecurityGroupsOnDestroy),
-      replacement_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._replacementSecurityGroupIds),
-      reserved_concurrent_executions: cdktf.numberToTerraform(this._reservedConcurrentExecutions),
-      role: cdktf.stringToTerraform(this._role),
-      runtime: cdktf.stringToTerraform(this._runtime),
-      s3_bucket: cdktf.stringToTerraform(this._s3Bucket),
-      s3_key: cdktf.stringToTerraform(this._s3Key),
-      s3_object_version: cdktf.stringToTerraform(this._s3ObjectVersion),
-      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
-      source_code_hash: cdktf.stringToTerraform(this._sourceCodeHash),
-      source_kms_key_arn: cdktf.stringToTerraform(this._sourceKmsKeyArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      timeout: cdktf.numberToTerraform(this._timeout),
+      architectures: cdktn.listMapper(cdktn.stringToTerraform, false)(this._architectures),
+      code_sha256: cdktn.stringToTerraform(this._codeSha256),
+      code_signing_config_arn: cdktn.stringToTerraform(this._codeSigningConfigArn),
+      description: cdktn.stringToTerraform(this._description),
+      filename: cdktn.stringToTerraform(this._filename),
+      function_name: cdktn.stringToTerraform(this._functionName),
+      handler: cdktn.stringToTerraform(this._handler),
+      id: cdktn.stringToTerraform(this._id),
+      image_uri: cdktn.stringToTerraform(this._imageUri),
+      kms_key_arn: cdktn.stringToTerraform(this._kmsKeyArn),
+      layers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._layers),
+      memory_size: cdktn.numberToTerraform(this._memorySize),
+      package_type: cdktn.stringToTerraform(this._packageType),
+      publish: cdktn.booleanToTerraform(this._publish),
+      publish_to: cdktn.stringToTerraform(this._publishTo),
+      region: cdktn.stringToTerraform(this._region),
+      replace_security_groups_on_destroy: cdktn.booleanToTerraform(this._replaceSecurityGroupsOnDestroy),
+      replacement_security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._replacementSecurityGroupIds),
+      reserved_concurrent_executions: cdktn.numberToTerraform(this._reservedConcurrentExecutions),
+      role: cdktn.stringToTerraform(this._role),
+      runtime: cdktn.stringToTerraform(this._runtime),
+      s3_bucket: cdktn.stringToTerraform(this._s3Bucket),
+      s3_key: cdktn.stringToTerraform(this._s3Key),
+      s3_object_version: cdktn.stringToTerraform(this._s3ObjectVersion),
+      skip_destroy: cdktn.booleanToTerraform(this._skipDestroy),
+      source_code_hash: cdktn.stringToTerraform(this._sourceCodeHash),
+      source_kms_key_arn: cdktn.stringToTerraform(this._sourceKmsKeyArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      timeout: cdktn.numberToTerraform(this._timeout),
       capacity_provider_config: lambdaFunctionCapacityProviderConfigToTerraform(this._capacityProviderConfig.internalValue),
       dead_letter_config: lambdaFunctionDeadLetterConfigToTerraform(this._deadLetterConfig.internalValue),
       durable_config: lambdaFunctionDurableConfigToTerraform(this._durableConfig.internalValue),
@@ -2695,181 +2695,181 @@ export class LambdaFunction extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       architectures: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._architectures),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._architectures),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       code_sha256: {
-        value: cdktf.stringToHclTerraform(this._codeSha256),
+        value: cdktn.stringToHclTerraform(this._codeSha256),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       code_signing_config_arn: {
-        value: cdktf.stringToHclTerraform(this._codeSigningConfigArn),
+        value: cdktn.stringToHclTerraform(this._codeSigningConfigArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filename: {
-        value: cdktf.stringToHclTerraform(this._filename),
+        value: cdktn.stringToHclTerraform(this._filename),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       function_name: {
-        value: cdktf.stringToHclTerraform(this._functionName),
+        value: cdktn.stringToHclTerraform(this._functionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       handler: {
-        value: cdktf.stringToHclTerraform(this._handler),
+        value: cdktn.stringToHclTerraform(this._handler),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_uri: {
-        value: cdktf.stringToHclTerraform(this._imageUri),
+        value: cdktn.stringToHclTerraform(this._imageUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_arn: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyArn),
+        value: cdktn.stringToHclTerraform(this._kmsKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       layers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._layers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._layers),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       memory_size: {
-        value: cdktf.numberToHclTerraform(this._memorySize),
+        value: cdktn.numberToHclTerraform(this._memorySize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       package_type: {
-        value: cdktf.stringToHclTerraform(this._packageType),
+        value: cdktn.stringToHclTerraform(this._packageType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publish: {
-        value: cdktf.booleanToHclTerraform(this._publish),
+        value: cdktn.booleanToHclTerraform(this._publish),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       publish_to: {
-        value: cdktf.stringToHclTerraform(this._publishTo),
+        value: cdktn.stringToHclTerraform(this._publishTo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replace_security_groups_on_destroy: {
-        value: cdktf.booleanToHclTerraform(this._replaceSecurityGroupsOnDestroy),
+        value: cdktn.booleanToHclTerraform(this._replaceSecurityGroupsOnDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       replacement_security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._replacementSecurityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._replacementSecurityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       reserved_concurrent_executions: {
-        value: cdktf.numberToHclTerraform(this._reservedConcurrentExecutions),
+        value: cdktn.numberToHclTerraform(this._reservedConcurrentExecutions),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       runtime: {
-        value: cdktf.stringToHclTerraform(this._runtime),
+        value: cdktn.stringToHclTerraform(this._runtime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_bucket: {
-        value: cdktf.stringToHclTerraform(this._s3Bucket),
+        value: cdktn.stringToHclTerraform(this._s3Bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_key: {
-        value: cdktf.stringToHclTerraform(this._s3Key),
+        value: cdktn.stringToHclTerraform(this._s3Key),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_object_version: {
-        value: cdktf.stringToHclTerraform(this._s3ObjectVersion),
+        value: cdktn.stringToHclTerraform(this._s3ObjectVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_destroy: {
-        value: cdktf.booleanToHclTerraform(this._skipDestroy),
+        value: cdktn.booleanToHclTerraform(this._skipDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       source_code_hash: {
-        value: cdktf.stringToHclTerraform(this._sourceCodeHash),
+        value: cdktn.stringToHclTerraform(this._sourceCodeHash),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_kms_key_arn: {
-        value: cdktf.stringToHclTerraform(this._sourceKmsKeyArn),
+        value: cdktn.stringToHclTerraform(this._sourceKmsKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       timeout: {
-        value: cdktf.numberToHclTerraform(this._timeout),
+        value: cdktn.numberToHclTerraform(this._timeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

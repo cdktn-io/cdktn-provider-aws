@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QuicksightFolderConfig extends cdktf.TerraformMetaArguments {
+export interface QuicksightFolderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_folder#aws_account_id QuicksightFolder#aws_account_id}
   */
@@ -58,7 +58,7 @@ export interface QuicksightFolderConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_folder#permissions QuicksightFolder#permissions}
   */
-  readonly permissions?: QuicksightFolderPermissions[] | cdktf.IResolvable;
+  readonly permissions?: QuicksightFolderPermissions[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -77,32 +77,32 @@ export interface QuicksightFolderPermissions {
   readonly principal: string;
 }
 
-export function quicksightFolderPermissionsToTerraform(struct?: QuicksightFolderPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightFolderPermissionsToTerraform(struct?: QuicksightFolderPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
-    principal: cdktf.stringToTerraform(struct!.principal),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
+    principal: cdktn.stringToTerraform(struct!.principal),
   }
 }
 
 
-export function quicksightFolderPermissionsToHclTerraform(struct?: QuicksightFolderPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightFolderPermissionsToHclTerraform(struct?: QuicksightFolderPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     principal: {
-      value: cdktf.stringToHclTerraform(struct!.principal),
+      value: cdktn.stringToHclTerraform(struct!.principal),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,9 +113,9 @@ export function quicksightFolderPermissionsToHclTerraform(struct?: QuicksightFol
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightFolderPermissionsOutputReference extends cdktf.ComplexObject {
+export class QuicksightFolderPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -123,11 +123,11 @@ export class QuicksightFolderPermissionsOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightFolderPermissions | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightFolderPermissions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -144,14 +144,14 @@ export class QuicksightFolderPermissionsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightFolderPermissions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightFolderPermissions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._actions = undefined;
       this._principal = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -166,7 +166,7 @@ export class QuicksightFolderPermissionsOutputReference extends cdktf.ComplexObj
   // actions - computed: false, optional: false, required: true
   private _actions?: string[]; 
   public get actions() {
-    return cdktf.Fn.tolist(this.getListAttribute('actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('actions'));
   }
   public set actions(value: string[]) {
     this._actions = value;
@@ -190,15 +190,15 @@ export class QuicksightFolderPermissionsOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class QuicksightFolderPermissionsList extends cdktf.ComplexList {
-  public internalValue? : QuicksightFolderPermissions[] | cdktf.IResolvable
+export class QuicksightFolderPermissionsList extends cdktn.ComplexList {
+  public internalValue? : QuicksightFolderPermissions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -228,46 +228,46 @@ export interface QuicksightFolderTimeouts {
   readonly update?: string;
 }
 
-export function quicksightFolderTimeoutsToTerraform(struct?: QuicksightFolderTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightFolderTimeoutsToTerraform(struct?: QuicksightFolderTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function quicksightFolderTimeoutsToHclTerraform(struct?: QuicksightFolderTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightFolderTimeoutsToHclTerraform(struct?: QuicksightFolderTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -278,19 +278,19 @@ export function quicksightFolderTimeoutsToHclTerraform(struct?: QuicksightFolder
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightFolderTimeoutsOutputReference extends cdktf.ComplexObject {
+export class QuicksightFolderTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): QuicksightFolderTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightFolderTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -315,7 +315,7 @@ export class QuicksightFolderTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightFolderTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightFolderTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -324,7 +324,7 @@ export class QuicksightFolderTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -406,7 +406,7 @@ export class QuicksightFolderTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_folder aws_quicksight_folder}
 */
-export class QuicksightFolder extends cdktf.TerraformResource {
+export class QuicksightFolder extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -417,14 +417,14 @@ export class QuicksightFolder extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QuicksightFolder resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QuicksightFolder resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightFolder to import
   * @param importFromId The id of the existing QuicksightFolder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_folder#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightFolder to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_folder", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_folder", importId: importFromId, provider });
       }
 
   // ===========
@@ -637,7 +637,7 @@ export class QuicksightFolder extends cdktf.TerraformResource {
   public get permissions() {
     return this._permissions;
   }
-  public putPermissions(value: QuicksightFolderPermissions[] | cdktf.IResolvable) {
+  public putPermissions(value: QuicksightFolderPermissions[] | cdktn.IResolvable) {
     this._permissions.internalValue = value;
   }
   public resetPermissions() {
@@ -670,16 +670,16 @@ export class QuicksightFolder extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      folder_id: cdktf.stringToTerraform(this._folderId),
-      folder_type: cdktf.stringToTerraform(this._folderType),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      parent_folder_arn: cdktf.stringToTerraform(this._parentFolderArn),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      permissions: cdktf.listMapper(quicksightFolderPermissionsToTerraform, true)(this._permissions.internalValue),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      folder_id: cdktn.stringToTerraform(this._folderId),
+      folder_type: cdktn.stringToTerraform(this._folderType),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      parent_folder_arn: cdktn.stringToTerraform(this._parentFolderArn),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      permissions: cdktn.listMapper(quicksightFolderPermissionsToTerraform, true)(this._permissions.internalValue),
       timeouts: quicksightFolderTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -687,61 +687,61 @@ export class QuicksightFolder extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       folder_id: {
-        value: cdktf.stringToHclTerraform(this._folderId),
+        value: cdktn.stringToHclTerraform(this._folderId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       folder_type: {
-        value: cdktf.stringToHclTerraform(this._folderType),
+        value: cdktn.stringToHclTerraform(this._folderType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent_folder_arn: {
-        value: cdktf.stringToHclTerraform(this._parentFolderArn),
+        value: cdktn.stringToHclTerraform(this._parentFolderArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       permissions: {
-        value: cdktf.listMapperHcl(quicksightFolderPermissionsToHclTerraform, true)(this._permissions.internalValue),
+        value: cdktn.listMapperHcl(quicksightFolderPermissionsToHclTerraform, true)(this._permissions.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "QuicksightFolderPermissionsList",

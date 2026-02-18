@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RekognitionStreamProcessorConfig extends cdktf.TerraformMetaArguments {
+export interface RekognitionStreamProcessorConfig extends cdktn.TerraformMetaArguments {
   /**
   * The identifier for your AWS Key Management Service key (AWS KMS key). You can supply the Amazon Resource Name (ARN) of your KMS key, the ID of your KMS key, an alias for your KMS key, or an alias ARN.
   *
@@ -45,37 +45,37 @@ export interface RekognitionStreamProcessorConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor#data_sharing_preference RekognitionStreamProcessor#data_sharing_preference}
   */
-  readonly dataSharingPreference?: RekognitionStreamProcessorDataSharingPreference[] | cdktf.IResolvable;
+  readonly dataSharingPreference?: RekognitionStreamProcessorDataSharingPreference[] | cdktn.IResolvable;
   /**
   * input block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor#input RekognitionStreamProcessor#input}
   */
-  readonly input?: RekognitionStreamProcessorInput[] | cdktf.IResolvable;
+  readonly input?: RekognitionStreamProcessorInput[] | cdktn.IResolvable;
   /**
   * notification_channel block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor#notification_channel RekognitionStreamProcessor#notification_channel}
   */
-  readonly notificationChannel?: RekognitionStreamProcessorNotificationChannel[] | cdktf.IResolvable;
+  readonly notificationChannel?: RekognitionStreamProcessorNotificationChannel[] | cdktn.IResolvable;
   /**
   * output block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor#output RekognitionStreamProcessor#output}
   */
-  readonly output?: RekognitionStreamProcessorOutput[] | cdktf.IResolvable;
+  readonly output?: RekognitionStreamProcessorOutput[] | cdktn.IResolvable;
   /**
   * regions_of_interest block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor#regions_of_interest RekognitionStreamProcessor#regions_of_interest}
   */
-  readonly regionsOfInterest?: RekognitionStreamProcessorRegionsOfInterest[] | cdktf.IResolvable;
+  readonly regionsOfInterest?: RekognitionStreamProcessorRegionsOfInterest[] | cdktn.IResolvable;
   /**
   * settings block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor#settings RekognitionStreamProcessor#settings}
   */
-  readonly settings?: RekognitionStreamProcessorSettings[] | cdktf.IResolvable;
+  readonly settings?: RekognitionStreamProcessorSettings[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -89,28 +89,28 @@ export interface RekognitionStreamProcessorDataSharingPreference {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor#opt_in RekognitionStreamProcessor#opt_in}
   */
-  readonly optIn: boolean | cdktf.IResolvable;
+  readonly optIn: boolean | cdktn.IResolvable;
 }
 
-export function rekognitionStreamProcessorDataSharingPreferenceToTerraform(struct?: RekognitionStreamProcessorDataSharingPreference | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorDataSharingPreferenceToTerraform(struct?: RekognitionStreamProcessorDataSharingPreference | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    opt_in: cdktf.booleanToTerraform(struct!.optIn),
+    opt_in: cdktn.booleanToTerraform(struct!.optIn),
   }
 }
 
 
-export function rekognitionStreamProcessorDataSharingPreferenceToHclTerraform(struct?: RekognitionStreamProcessorDataSharingPreference | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorDataSharingPreferenceToHclTerraform(struct?: RekognitionStreamProcessorDataSharingPreference | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     opt_in: {
-      value: cdktf.booleanToHclTerraform(struct!.optIn),
+      value: cdktn.booleanToHclTerraform(struct!.optIn),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -121,9 +121,9 @@ export function rekognitionStreamProcessorDataSharingPreferenceToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RekognitionStreamProcessorDataSharingPreferenceOutputReference extends cdktf.ComplexObject {
+export class RekognitionStreamProcessorDataSharingPreferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -131,11 +131,11 @@ export class RekognitionStreamProcessorDataSharingPreferenceOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RekognitionStreamProcessorDataSharingPreference | cdktf.IResolvable | undefined {
+  public get internalValue(): RekognitionStreamProcessorDataSharingPreference | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,13 +148,13 @@ export class RekognitionStreamProcessorDataSharingPreferenceOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RekognitionStreamProcessorDataSharingPreference | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RekognitionStreamProcessorDataSharingPreference | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._optIn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -166,11 +166,11 @@ export class RekognitionStreamProcessorDataSharingPreferenceOutputReference exte
   }
 
   // opt_in - computed: false, optional: false, required: true
-  private _optIn?: boolean | cdktf.IResolvable; 
+  private _optIn?: boolean | cdktn.IResolvable; 
   public get optIn() {
     return this.getBooleanAttribute('opt_in');
   }
-  public set optIn(value: boolean | cdktf.IResolvable) {
+  public set optIn(value: boolean | cdktn.IResolvable) {
     this._optIn = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -179,15 +179,15 @@ export class RekognitionStreamProcessorDataSharingPreferenceOutputReference exte
   }
 }
 
-export class RekognitionStreamProcessorDataSharingPreferenceList extends cdktf.ComplexList {
-  public internalValue? : RekognitionStreamProcessorDataSharingPreference[] | cdktf.IResolvable
+export class RekognitionStreamProcessorDataSharingPreferenceList extends cdktn.ComplexList {
+  public internalValue? : RekognitionStreamProcessorDataSharingPreference[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -207,25 +207,25 @@ export interface RekognitionStreamProcessorInputKinesisVideoStream {
   readonly arn: string;
 }
 
-export function rekognitionStreamProcessorInputKinesisVideoStreamToTerraform(struct?: RekognitionStreamProcessorInputKinesisVideoStream | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorInputKinesisVideoStreamToTerraform(struct?: RekognitionStreamProcessorInputKinesisVideoStream | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
+    arn: cdktn.stringToTerraform(struct!.arn),
   }
 }
 
 
-export function rekognitionStreamProcessorInputKinesisVideoStreamToHclTerraform(struct?: RekognitionStreamProcessorInputKinesisVideoStream | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorInputKinesisVideoStreamToHclTerraform(struct?: RekognitionStreamProcessorInputKinesisVideoStream | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -236,9 +236,9 @@ export function rekognitionStreamProcessorInputKinesisVideoStreamToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RekognitionStreamProcessorInputKinesisVideoStreamOutputReference extends cdktf.ComplexObject {
+export class RekognitionStreamProcessorInputKinesisVideoStreamOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -246,11 +246,11 @@ export class RekognitionStreamProcessorInputKinesisVideoStreamOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RekognitionStreamProcessorInputKinesisVideoStream | cdktf.IResolvable | undefined {
+  public get internalValue(): RekognitionStreamProcessorInputKinesisVideoStream | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -263,13 +263,13 @@ export class RekognitionStreamProcessorInputKinesisVideoStreamOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RekognitionStreamProcessorInputKinesisVideoStream | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RekognitionStreamProcessorInputKinesisVideoStream | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._arn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -294,15 +294,15 @@ export class RekognitionStreamProcessorInputKinesisVideoStreamOutputReference ex
   }
 }
 
-export class RekognitionStreamProcessorInputKinesisVideoStreamList extends cdktf.ComplexList {
-  public internalValue? : RekognitionStreamProcessorInputKinesisVideoStream[] | cdktf.IResolvable
+export class RekognitionStreamProcessorInputKinesisVideoStreamList extends cdktn.ComplexList {
+  public internalValue? : RekognitionStreamProcessorInputKinesisVideoStream[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -319,28 +319,28 @@ export interface RekognitionStreamProcessorInput {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor#kinesis_video_stream RekognitionStreamProcessor#kinesis_video_stream}
   */
-  readonly kinesisVideoStream?: RekognitionStreamProcessorInputKinesisVideoStream[] | cdktf.IResolvable;
+  readonly kinesisVideoStream?: RekognitionStreamProcessorInputKinesisVideoStream[] | cdktn.IResolvable;
 }
 
-export function rekognitionStreamProcessorInputToTerraform(struct?: RekognitionStreamProcessorInput | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorInputToTerraform(struct?: RekognitionStreamProcessorInput | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kinesis_video_stream: cdktf.listMapper(rekognitionStreamProcessorInputKinesisVideoStreamToTerraform, true)(struct!.kinesisVideoStream),
+    kinesis_video_stream: cdktn.listMapper(rekognitionStreamProcessorInputKinesisVideoStreamToTerraform, true)(struct!.kinesisVideoStream),
   }
 }
 
 
-export function rekognitionStreamProcessorInputToHclTerraform(struct?: RekognitionStreamProcessorInput | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorInputToHclTerraform(struct?: RekognitionStreamProcessorInput | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kinesis_video_stream: {
-      value: cdktf.listMapperHcl(rekognitionStreamProcessorInputKinesisVideoStreamToHclTerraform, true)(struct!.kinesisVideoStream),
+      value: cdktn.listMapperHcl(rekognitionStreamProcessorInputKinesisVideoStreamToHclTerraform, true)(struct!.kinesisVideoStream),
       isBlock: true,
       type: "list",
       storageClassType: "RekognitionStreamProcessorInputKinesisVideoStreamList",
@@ -351,9 +351,9 @@ export function rekognitionStreamProcessorInputToHclTerraform(struct?: Rekogniti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RekognitionStreamProcessorInputOutputReference extends cdktf.ComplexObject {
+export class RekognitionStreamProcessorInputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -361,11 +361,11 @@ export class RekognitionStreamProcessorInputOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RekognitionStreamProcessorInput | cdktf.IResolvable | undefined {
+  public get internalValue(): RekognitionStreamProcessorInput | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -378,13 +378,13 @@ export class RekognitionStreamProcessorInputOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RekognitionStreamProcessorInput | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RekognitionStreamProcessorInput | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._kinesisVideoStream.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -400,7 +400,7 @@ export class RekognitionStreamProcessorInputOutputReference extends cdktf.Comple
   public get kinesisVideoStream() {
     return this._kinesisVideoStream;
   }
-  public putKinesisVideoStream(value: RekognitionStreamProcessorInputKinesisVideoStream[] | cdktf.IResolvable) {
+  public putKinesisVideoStream(value: RekognitionStreamProcessorInputKinesisVideoStream[] | cdktn.IResolvable) {
     this._kinesisVideoStream.internalValue = value;
   }
   public resetKinesisVideoStream() {
@@ -412,15 +412,15 @@ export class RekognitionStreamProcessorInputOutputReference extends cdktf.Comple
   }
 }
 
-export class RekognitionStreamProcessorInputList extends cdktf.ComplexList {
-  public internalValue? : RekognitionStreamProcessorInput[] | cdktf.IResolvable
+export class RekognitionStreamProcessorInputList extends cdktn.ComplexList {
+  public internalValue? : RekognitionStreamProcessorInput[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -440,25 +440,25 @@ export interface RekognitionStreamProcessorNotificationChannel {
   readonly snsTopicArn?: string;
 }
 
-export function rekognitionStreamProcessorNotificationChannelToTerraform(struct?: RekognitionStreamProcessorNotificationChannel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorNotificationChannelToTerraform(struct?: RekognitionStreamProcessorNotificationChannel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    sns_topic_arn: cdktf.stringToTerraform(struct!.snsTopicArn),
+    sns_topic_arn: cdktn.stringToTerraform(struct!.snsTopicArn),
   }
 }
 
 
-export function rekognitionStreamProcessorNotificationChannelToHclTerraform(struct?: RekognitionStreamProcessorNotificationChannel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorNotificationChannelToHclTerraform(struct?: RekognitionStreamProcessorNotificationChannel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     sns_topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.snsTopicArn),
+      value: cdktn.stringToHclTerraform(struct!.snsTopicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -469,9 +469,9 @@ export function rekognitionStreamProcessorNotificationChannelToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RekognitionStreamProcessorNotificationChannelOutputReference extends cdktf.ComplexObject {
+export class RekognitionStreamProcessorNotificationChannelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -479,11 +479,11 @@ export class RekognitionStreamProcessorNotificationChannelOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RekognitionStreamProcessorNotificationChannel | cdktf.IResolvable | undefined {
+  public get internalValue(): RekognitionStreamProcessorNotificationChannel | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -496,13 +496,13 @@ export class RekognitionStreamProcessorNotificationChannelOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RekognitionStreamProcessorNotificationChannel | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RekognitionStreamProcessorNotificationChannel | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._snsTopicArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -530,15 +530,15 @@ export class RekognitionStreamProcessorNotificationChannelOutputReference extend
   }
 }
 
-export class RekognitionStreamProcessorNotificationChannelList extends cdktf.ComplexList {
-  public internalValue? : RekognitionStreamProcessorNotificationChannel[] | cdktf.IResolvable
+export class RekognitionStreamProcessorNotificationChannelList extends cdktn.ComplexList {
+  public internalValue? : RekognitionStreamProcessorNotificationChannel[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -558,25 +558,25 @@ export interface RekognitionStreamProcessorOutputKinesisDataStream {
   readonly arn?: string;
 }
 
-export function rekognitionStreamProcessorOutputKinesisDataStreamToTerraform(struct?: RekognitionStreamProcessorOutputKinesisDataStream | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorOutputKinesisDataStreamToTerraform(struct?: RekognitionStreamProcessorOutputKinesisDataStream | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
+    arn: cdktn.stringToTerraform(struct!.arn),
   }
 }
 
 
-export function rekognitionStreamProcessorOutputKinesisDataStreamToHclTerraform(struct?: RekognitionStreamProcessorOutputKinesisDataStream | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorOutputKinesisDataStreamToHclTerraform(struct?: RekognitionStreamProcessorOutputKinesisDataStream | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -587,9 +587,9 @@ export function rekognitionStreamProcessorOutputKinesisDataStreamToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RekognitionStreamProcessorOutputKinesisDataStreamOutputReference extends cdktf.ComplexObject {
+export class RekognitionStreamProcessorOutputKinesisDataStreamOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -597,11 +597,11 @@ export class RekognitionStreamProcessorOutputKinesisDataStreamOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RekognitionStreamProcessorOutputKinesisDataStream | cdktf.IResolvable | undefined {
+  public get internalValue(): RekognitionStreamProcessorOutputKinesisDataStream | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -614,13 +614,13 @@ export class RekognitionStreamProcessorOutputKinesisDataStreamOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RekognitionStreamProcessorOutputKinesisDataStream | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RekognitionStreamProcessorOutputKinesisDataStream | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._arn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -648,15 +648,15 @@ export class RekognitionStreamProcessorOutputKinesisDataStreamOutputReference ex
   }
 }
 
-export class RekognitionStreamProcessorOutputKinesisDataStreamList extends cdktf.ComplexList {
-  public internalValue? : RekognitionStreamProcessorOutputKinesisDataStream[] | cdktf.IResolvable
+export class RekognitionStreamProcessorOutputKinesisDataStreamList extends cdktn.ComplexList {
+  public internalValue? : RekognitionStreamProcessorOutputKinesisDataStream[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -682,32 +682,32 @@ export interface RekognitionStreamProcessorOutputS3Destination {
   readonly keyPrefix?: string;
 }
 
-export function rekognitionStreamProcessorOutputS3DestinationToTerraform(struct?: RekognitionStreamProcessorOutputS3Destination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorOutputS3DestinationToTerraform(struct?: RekognitionStreamProcessorOutputS3Destination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    key_prefix: cdktf.stringToTerraform(struct!.keyPrefix),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    key_prefix: cdktn.stringToTerraform(struct!.keyPrefix),
   }
 }
 
 
-export function rekognitionStreamProcessorOutputS3DestinationToHclTerraform(struct?: RekognitionStreamProcessorOutputS3Destination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorOutputS3DestinationToHclTerraform(struct?: RekognitionStreamProcessorOutputS3Destination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.keyPrefix),
+      value: cdktn.stringToHclTerraform(struct!.keyPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -718,9 +718,9 @@ export function rekognitionStreamProcessorOutputS3DestinationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RekognitionStreamProcessorOutputS3DestinationOutputReference extends cdktf.ComplexObject {
+export class RekognitionStreamProcessorOutputS3DestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -728,11 +728,11 @@ export class RekognitionStreamProcessorOutputS3DestinationOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RekognitionStreamProcessorOutputS3Destination | cdktf.IResolvable | undefined {
+  public get internalValue(): RekognitionStreamProcessorOutputS3Destination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -749,14 +749,14 @@ export class RekognitionStreamProcessorOutputS3DestinationOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RekognitionStreamProcessorOutputS3Destination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RekognitionStreamProcessorOutputS3Destination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._bucket = undefined;
       this._keyPrefix = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -801,15 +801,15 @@ export class RekognitionStreamProcessorOutputS3DestinationOutputReference extend
   }
 }
 
-export class RekognitionStreamProcessorOutputS3DestinationList extends cdktf.ComplexList {
-  public internalValue? : RekognitionStreamProcessorOutputS3Destination[] | cdktf.IResolvable
+export class RekognitionStreamProcessorOutputS3DestinationList extends cdktn.ComplexList {
+  public internalValue? : RekognitionStreamProcessorOutputS3Destination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -826,41 +826,41 @@ export interface RekognitionStreamProcessorOutput {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor#kinesis_data_stream RekognitionStreamProcessor#kinesis_data_stream}
   */
-  readonly kinesisDataStream?: RekognitionStreamProcessorOutputKinesisDataStream[] | cdktf.IResolvable;
+  readonly kinesisDataStream?: RekognitionStreamProcessorOutputKinesisDataStream[] | cdktn.IResolvable;
   /**
   * s3_destination block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor#s3_destination RekognitionStreamProcessor#s3_destination}
   */
-  readonly s3Destination?: RekognitionStreamProcessorOutputS3Destination[] | cdktf.IResolvable;
+  readonly s3Destination?: RekognitionStreamProcessorOutputS3Destination[] | cdktn.IResolvable;
 }
 
-export function rekognitionStreamProcessorOutputToTerraform(struct?: RekognitionStreamProcessorOutput | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorOutputToTerraform(struct?: RekognitionStreamProcessorOutput | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kinesis_data_stream: cdktf.listMapper(rekognitionStreamProcessorOutputKinesisDataStreamToTerraform, true)(struct!.kinesisDataStream),
-    s3_destination: cdktf.listMapper(rekognitionStreamProcessorOutputS3DestinationToTerraform, true)(struct!.s3Destination),
+    kinesis_data_stream: cdktn.listMapper(rekognitionStreamProcessorOutputKinesisDataStreamToTerraform, true)(struct!.kinesisDataStream),
+    s3_destination: cdktn.listMapper(rekognitionStreamProcessorOutputS3DestinationToTerraform, true)(struct!.s3Destination),
   }
 }
 
 
-export function rekognitionStreamProcessorOutputToHclTerraform(struct?: RekognitionStreamProcessorOutput | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorOutputToHclTerraform(struct?: RekognitionStreamProcessorOutput | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kinesis_data_stream: {
-      value: cdktf.listMapperHcl(rekognitionStreamProcessorOutputKinesisDataStreamToHclTerraform, true)(struct!.kinesisDataStream),
+      value: cdktn.listMapperHcl(rekognitionStreamProcessorOutputKinesisDataStreamToHclTerraform, true)(struct!.kinesisDataStream),
       isBlock: true,
       type: "list",
       storageClassType: "RekognitionStreamProcessorOutputKinesisDataStreamList",
     },
     s3_destination: {
-      value: cdktf.listMapperHcl(rekognitionStreamProcessorOutputS3DestinationToHclTerraform, true)(struct!.s3Destination),
+      value: cdktn.listMapperHcl(rekognitionStreamProcessorOutputS3DestinationToHclTerraform, true)(struct!.s3Destination),
       isBlock: true,
       type: "list",
       storageClassType: "RekognitionStreamProcessorOutputS3DestinationList",
@@ -871,9 +871,9 @@ export function rekognitionStreamProcessorOutputToHclTerraform(struct?: Rekognit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RekognitionStreamProcessorOutputOutputReference extends cdktf.ComplexObject {
+export class RekognitionStreamProcessorOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -881,11 +881,11 @@ export class RekognitionStreamProcessorOutputOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RekognitionStreamProcessorOutput | cdktf.IResolvable | undefined {
+  public get internalValue(): RekognitionStreamProcessorOutput | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -902,14 +902,14 @@ export class RekognitionStreamProcessorOutputOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RekognitionStreamProcessorOutput | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RekognitionStreamProcessorOutput | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._kinesisDataStream.internalValue = undefined;
       this._s3Destination.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -926,7 +926,7 @@ export class RekognitionStreamProcessorOutputOutputReference extends cdktf.Compl
   public get kinesisDataStream() {
     return this._kinesisDataStream;
   }
-  public putKinesisDataStream(value: RekognitionStreamProcessorOutputKinesisDataStream[] | cdktf.IResolvable) {
+  public putKinesisDataStream(value: RekognitionStreamProcessorOutputKinesisDataStream[] | cdktn.IResolvable) {
     this._kinesisDataStream.internalValue = value;
   }
   public resetKinesisDataStream() {
@@ -942,7 +942,7 @@ export class RekognitionStreamProcessorOutputOutputReference extends cdktf.Compl
   public get s3Destination() {
     return this._s3Destination;
   }
-  public putS3Destination(value: RekognitionStreamProcessorOutputS3Destination[] | cdktf.IResolvable) {
+  public putS3Destination(value: RekognitionStreamProcessorOutputS3Destination[] | cdktn.IResolvable) {
     this._s3Destination.internalValue = value;
   }
   public resetS3Destination() {
@@ -954,15 +954,15 @@ export class RekognitionStreamProcessorOutputOutputReference extends cdktf.Compl
   }
 }
 
-export class RekognitionStreamProcessorOutputList extends cdktf.ComplexList {
-  public internalValue? : RekognitionStreamProcessorOutput[] | cdktf.IResolvable
+export class RekognitionStreamProcessorOutputList extends cdktn.ComplexList {
+  public internalValue? : RekognitionStreamProcessorOutput[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1000,46 +1000,46 @@ export interface RekognitionStreamProcessorRegionsOfInterestBoundingBox {
   readonly width?: number;
 }
 
-export function rekognitionStreamProcessorRegionsOfInterestBoundingBoxToTerraform(struct?: RekognitionStreamProcessorRegionsOfInterestBoundingBox | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorRegionsOfInterestBoundingBoxToTerraform(struct?: RekognitionStreamProcessorRegionsOfInterestBoundingBox | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    height: cdktf.numberToTerraform(struct!.height),
-    left: cdktf.numberToTerraform(struct!.left),
-    top: cdktf.numberToTerraform(struct!.top),
-    width: cdktf.numberToTerraform(struct!.width),
+    height: cdktn.numberToTerraform(struct!.height),
+    left: cdktn.numberToTerraform(struct!.left),
+    top: cdktn.numberToTerraform(struct!.top),
+    width: cdktn.numberToTerraform(struct!.width),
   }
 }
 
 
-export function rekognitionStreamProcessorRegionsOfInterestBoundingBoxToHclTerraform(struct?: RekognitionStreamProcessorRegionsOfInterestBoundingBox | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorRegionsOfInterestBoundingBoxToHclTerraform(struct?: RekognitionStreamProcessorRegionsOfInterestBoundingBox | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     height: {
-      value: cdktf.numberToHclTerraform(struct!.height),
+      value: cdktn.numberToHclTerraform(struct!.height),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     left: {
-      value: cdktf.numberToHclTerraform(struct!.left),
+      value: cdktn.numberToHclTerraform(struct!.left),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     top: {
-      value: cdktf.numberToHclTerraform(struct!.top),
+      value: cdktn.numberToHclTerraform(struct!.top),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     width: {
-      value: cdktf.numberToHclTerraform(struct!.width),
+      value: cdktn.numberToHclTerraform(struct!.width),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1050,9 +1050,9 @@ export function rekognitionStreamProcessorRegionsOfInterestBoundingBoxToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference extends cdktf.ComplexObject {
+export class RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1060,11 +1060,11 @@ export class RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RekognitionStreamProcessorRegionsOfInterestBoundingBox | cdktf.IResolvable | undefined {
+  public get internalValue(): RekognitionStreamProcessorRegionsOfInterestBoundingBox | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1089,7 +1089,7 @@ export class RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RekognitionStreamProcessorRegionsOfInterestBoundingBox | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RekognitionStreamProcessorRegionsOfInterestBoundingBox | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1098,7 +1098,7 @@ export class RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReferen
       this._top = undefined;
       this._width = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1177,15 +1177,15 @@ export class RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReferen
   }
 }
 
-export class RekognitionStreamProcessorRegionsOfInterestBoundingBoxList extends cdktf.ComplexList {
-  public internalValue? : RekognitionStreamProcessorRegionsOfInterestBoundingBox[] | cdktf.IResolvable
+export class RekognitionStreamProcessorRegionsOfInterestBoundingBoxList extends cdktn.ComplexList {
+  public internalValue? : RekognitionStreamProcessorRegionsOfInterestBoundingBox[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1211,32 +1211,32 @@ export interface RekognitionStreamProcessorRegionsOfInterestPolygon {
   readonly y?: number;
 }
 
-export function rekognitionStreamProcessorRegionsOfInterestPolygonToTerraform(struct?: RekognitionStreamProcessorRegionsOfInterestPolygon | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorRegionsOfInterestPolygonToTerraform(struct?: RekognitionStreamProcessorRegionsOfInterestPolygon | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    x: cdktf.numberToTerraform(struct!.x),
-    y: cdktf.numberToTerraform(struct!.y),
+    x: cdktn.numberToTerraform(struct!.x),
+    y: cdktn.numberToTerraform(struct!.y),
   }
 }
 
 
-export function rekognitionStreamProcessorRegionsOfInterestPolygonToHclTerraform(struct?: RekognitionStreamProcessorRegionsOfInterestPolygon | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorRegionsOfInterestPolygonToHclTerraform(struct?: RekognitionStreamProcessorRegionsOfInterestPolygon | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     x: {
-      value: cdktf.numberToHclTerraform(struct!.x),
+      value: cdktn.numberToHclTerraform(struct!.x),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     y: {
-      value: cdktf.numberToHclTerraform(struct!.y),
+      value: cdktn.numberToHclTerraform(struct!.y),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1247,9 +1247,9 @@ export function rekognitionStreamProcessorRegionsOfInterestPolygonToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RekognitionStreamProcessorRegionsOfInterestPolygonOutputReference extends cdktf.ComplexObject {
+export class RekognitionStreamProcessorRegionsOfInterestPolygonOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1257,11 +1257,11 @@ export class RekognitionStreamProcessorRegionsOfInterestPolygonOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RekognitionStreamProcessorRegionsOfInterestPolygon | cdktf.IResolvable | undefined {
+  public get internalValue(): RekognitionStreamProcessorRegionsOfInterestPolygon | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1278,14 +1278,14 @@ export class RekognitionStreamProcessorRegionsOfInterestPolygonOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RekognitionStreamProcessorRegionsOfInterestPolygon | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RekognitionStreamProcessorRegionsOfInterestPolygon | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._x = undefined;
       this._y = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1330,15 +1330,15 @@ export class RekognitionStreamProcessorRegionsOfInterestPolygonOutputReference e
   }
 }
 
-export class RekognitionStreamProcessorRegionsOfInterestPolygonList extends cdktf.ComplexList {
-  public internalValue? : RekognitionStreamProcessorRegionsOfInterestPolygon[] | cdktf.IResolvable
+export class RekognitionStreamProcessorRegionsOfInterestPolygonList extends cdktn.ComplexList {
+  public internalValue? : RekognitionStreamProcessorRegionsOfInterestPolygon[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1355,41 +1355,41 @@ export interface RekognitionStreamProcessorRegionsOfInterest {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor#bounding_box RekognitionStreamProcessor#bounding_box}
   */
-  readonly boundingBox?: RekognitionStreamProcessorRegionsOfInterestBoundingBox[] | cdktf.IResolvable;
+  readonly boundingBox?: RekognitionStreamProcessorRegionsOfInterestBoundingBox[] | cdktn.IResolvable;
   /**
   * polygon block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor#polygon RekognitionStreamProcessor#polygon}
   */
-  readonly polygon?: RekognitionStreamProcessorRegionsOfInterestPolygon[] | cdktf.IResolvable;
+  readonly polygon?: RekognitionStreamProcessorRegionsOfInterestPolygon[] | cdktn.IResolvable;
 }
 
-export function rekognitionStreamProcessorRegionsOfInterestToTerraform(struct?: RekognitionStreamProcessorRegionsOfInterest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorRegionsOfInterestToTerraform(struct?: RekognitionStreamProcessorRegionsOfInterest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bounding_box: cdktf.listMapper(rekognitionStreamProcessorRegionsOfInterestBoundingBoxToTerraform, true)(struct!.boundingBox),
-    polygon: cdktf.listMapper(rekognitionStreamProcessorRegionsOfInterestPolygonToTerraform, true)(struct!.polygon),
+    bounding_box: cdktn.listMapper(rekognitionStreamProcessorRegionsOfInterestBoundingBoxToTerraform, true)(struct!.boundingBox),
+    polygon: cdktn.listMapper(rekognitionStreamProcessorRegionsOfInterestPolygonToTerraform, true)(struct!.polygon),
   }
 }
 
 
-export function rekognitionStreamProcessorRegionsOfInterestToHclTerraform(struct?: RekognitionStreamProcessorRegionsOfInterest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorRegionsOfInterestToHclTerraform(struct?: RekognitionStreamProcessorRegionsOfInterest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bounding_box: {
-      value: cdktf.listMapperHcl(rekognitionStreamProcessorRegionsOfInterestBoundingBoxToHclTerraform, true)(struct!.boundingBox),
+      value: cdktn.listMapperHcl(rekognitionStreamProcessorRegionsOfInterestBoundingBoxToHclTerraform, true)(struct!.boundingBox),
       isBlock: true,
       type: "list",
       storageClassType: "RekognitionStreamProcessorRegionsOfInterestBoundingBoxList",
     },
     polygon: {
-      value: cdktf.listMapperHcl(rekognitionStreamProcessorRegionsOfInterestPolygonToHclTerraform, true)(struct!.polygon),
+      value: cdktn.listMapperHcl(rekognitionStreamProcessorRegionsOfInterestPolygonToHclTerraform, true)(struct!.polygon),
       isBlock: true,
       type: "list",
       storageClassType: "RekognitionStreamProcessorRegionsOfInterestPolygonList",
@@ -1400,9 +1400,9 @@ export function rekognitionStreamProcessorRegionsOfInterestToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RekognitionStreamProcessorRegionsOfInterestOutputReference extends cdktf.ComplexObject {
+export class RekognitionStreamProcessorRegionsOfInterestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1410,11 +1410,11 @@ export class RekognitionStreamProcessorRegionsOfInterestOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RekognitionStreamProcessorRegionsOfInterest | cdktf.IResolvable | undefined {
+  public get internalValue(): RekognitionStreamProcessorRegionsOfInterest | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1431,14 +1431,14 @@ export class RekognitionStreamProcessorRegionsOfInterestOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RekognitionStreamProcessorRegionsOfInterest | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RekognitionStreamProcessorRegionsOfInterest | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._boundingBox.internalValue = undefined;
       this._polygon.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1455,7 +1455,7 @@ export class RekognitionStreamProcessorRegionsOfInterestOutputReference extends 
   public get boundingBox() {
     return this._boundingBox;
   }
-  public putBoundingBox(value: RekognitionStreamProcessorRegionsOfInterestBoundingBox[] | cdktf.IResolvable) {
+  public putBoundingBox(value: RekognitionStreamProcessorRegionsOfInterestBoundingBox[] | cdktn.IResolvable) {
     this._boundingBox.internalValue = value;
   }
   public resetBoundingBox() {
@@ -1471,7 +1471,7 @@ export class RekognitionStreamProcessorRegionsOfInterestOutputReference extends 
   public get polygon() {
     return this._polygon;
   }
-  public putPolygon(value: RekognitionStreamProcessorRegionsOfInterestPolygon[] | cdktf.IResolvable) {
+  public putPolygon(value: RekognitionStreamProcessorRegionsOfInterestPolygon[] | cdktn.IResolvable) {
     this._polygon.internalValue = value;
   }
   public resetPolygon() {
@@ -1483,15 +1483,15 @@ export class RekognitionStreamProcessorRegionsOfInterestOutputReference extends 
   }
 }
 
-export class RekognitionStreamProcessorRegionsOfInterestList extends cdktf.ComplexList {
-  public internalValue? : RekognitionStreamProcessorRegionsOfInterest[] | cdktf.IResolvable
+export class RekognitionStreamProcessorRegionsOfInterestList extends cdktn.ComplexList {
+  public internalValue? : RekognitionStreamProcessorRegionsOfInterest[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1517,32 +1517,32 @@ export interface RekognitionStreamProcessorSettingsConnectedHome {
   readonly minConfidence?: number;
 }
 
-export function rekognitionStreamProcessorSettingsConnectedHomeToTerraform(struct?: RekognitionStreamProcessorSettingsConnectedHome | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorSettingsConnectedHomeToTerraform(struct?: RekognitionStreamProcessorSettingsConnectedHome | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    labels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.labels),
-    min_confidence: cdktf.numberToTerraform(struct!.minConfidence),
+    labels: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.labels),
+    min_confidence: cdktn.numberToTerraform(struct!.minConfidence),
   }
 }
 
 
-export function rekognitionStreamProcessorSettingsConnectedHomeToHclTerraform(struct?: RekognitionStreamProcessorSettingsConnectedHome | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorSettingsConnectedHomeToHclTerraform(struct?: RekognitionStreamProcessorSettingsConnectedHome | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     labels: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.labels),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.labels),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     min_confidence: {
-      value: cdktf.numberToHclTerraform(struct!.minConfidence),
+      value: cdktn.numberToHclTerraform(struct!.minConfidence),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1553,9 +1553,9 @@ export function rekognitionStreamProcessorSettingsConnectedHomeToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RekognitionStreamProcessorSettingsConnectedHomeOutputReference extends cdktf.ComplexObject {
+export class RekognitionStreamProcessorSettingsConnectedHomeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1563,11 +1563,11 @@ export class RekognitionStreamProcessorSettingsConnectedHomeOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RekognitionStreamProcessorSettingsConnectedHome | cdktf.IResolvable | undefined {
+  public get internalValue(): RekognitionStreamProcessorSettingsConnectedHome | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1584,14 +1584,14 @@ export class RekognitionStreamProcessorSettingsConnectedHomeOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RekognitionStreamProcessorSettingsConnectedHome | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RekognitionStreamProcessorSettingsConnectedHome | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._labels = undefined;
       this._minConfidence = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1636,15 +1636,15 @@ export class RekognitionStreamProcessorSettingsConnectedHomeOutputReference exte
   }
 }
 
-export class RekognitionStreamProcessorSettingsConnectedHomeList extends cdktf.ComplexList {
-  public internalValue? : RekognitionStreamProcessorSettingsConnectedHome[] | cdktf.IResolvable
+export class RekognitionStreamProcessorSettingsConnectedHomeList extends cdktn.ComplexList {
+  public internalValue? : RekognitionStreamProcessorSettingsConnectedHome[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1670,32 +1670,32 @@ export interface RekognitionStreamProcessorSettingsFaceSearch {
   readonly faceMatchThreshold?: number;
 }
 
-export function rekognitionStreamProcessorSettingsFaceSearchToTerraform(struct?: RekognitionStreamProcessorSettingsFaceSearch | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorSettingsFaceSearchToTerraform(struct?: RekognitionStreamProcessorSettingsFaceSearch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    collection_id: cdktf.stringToTerraform(struct!.collectionId),
-    face_match_threshold: cdktf.numberToTerraform(struct!.faceMatchThreshold),
+    collection_id: cdktn.stringToTerraform(struct!.collectionId),
+    face_match_threshold: cdktn.numberToTerraform(struct!.faceMatchThreshold),
   }
 }
 
 
-export function rekognitionStreamProcessorSettingsFaceSearchToHclTerraform(struct?: RekognitionStreamProcessorSettingsFaceSearch | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorSettingsFaceSearchToHclTerraform(struct?: RekognitionStreamProcessorSettingsFaceSearch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     collection_id: {
-      value: cdktf.stringToHclTerraform(struct!.collectionId),
+      value: cdktn.stringToHclTerraform(struct!.collectionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     face_match_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.faceMatchThreshold),
+      value: cdktn.numberToHclTerraform(struct!.faceMatchThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1706,9 +1706,9 @@ export function rekognitionStreamProcessorSettingsFaceSearchToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RekognitionStreamProcessorSettingsFaceSearchOutputReference extends cdktf.ComplexObject {
+export class RekognitionStreamProcessorSettingsFaceSearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1716,11 +1716,11 @@ export class RekognitionStreamProcessorSettingsFaceSearchOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RekognitionStreamProcessorSettingsFaceSearch | cdktf.IResolvable | undefined {
+  public get internalValue(): RekognitionStreamProcessorSettingsFaceSearch | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1737,14 +1737,14 @@ export class RekognitionStreamProcessorSettingsFaceSearchOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RekognitionStreamProcessorSettingsFaceSearch | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RekognitionStreamProcessorSettingsFaceSearch | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._collectionId = undefined;
       this._faceMatchThreshold = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1786,15 +1786,15 @@ export class RekognitionStreamProcessorSettingsFaceSearchOutputReference extends
   }
 }
 
-export class RekognitionStreamProcessorSettingsFaceSearchList extends cdktf.ComplexList {
-  public internalValue? : RekognitionStreamProcessorSettingsFaceSearch[] | cdktf.IResolvable
+export class RekognitionStreamProcessorSettingsFaceSearchList extends cdktn.ComplexList {
+  public internalValue? : RekognitionStreamProcessorSettingsFaceSearch[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1811,41 +1811,41 @@ export interface RekognitionStreamProcessorSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor#connected_home RekognitionStreamProcessor#connected_home}
   */
-  readonly connectedHome?: RekognitionStreamProcessorSettingsConnectedHome[] | cdktf.IResolvable;
+  readonly connectedHome?: RekognitionStreamProcessorSettingsConnectedHome[] | cdktn.IResolvable;
   /**
   * face_search block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor#face_search RekognitionStreamProcessor#face_search}
   */
-  readonly faceSearch?: RekognitionStreamProcessorSettingsFaceSearch[] | cdktf.IResolvable;
+  readonly faceSearch?: RekognitionStreamProcessorSettingsFaceSearch[] | cdktn.IResolvable;
 }
 
-export function rekognitionStreamProcessorSettingsToTerraform(struct?: RekognitionStreamProcessorSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorSettingsToTerraform(struct?: RekognitionStreamProcessorSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connected_home: cdktf.listMapper(rekognitionStreamProcessorSettingsConnectedHomeToTerraform, true)(struct!.connectedHome),
-    face_search: cdktf.listMapper(rekognitionStreamProcessorSettingsFaceSearchToTerraform, true)(struct!.faceSearch),
+    connected_home: cdktn.listMapper(rekognitionStreamProcessorSettingsConnectedHomeToTerraform, true)(struct!.connectedHome),
+    face_search: cdktn.listMapper(rekognitionStreamProcessorSettingsFaceSearchToTerraform, true)(struct!.faceSearch),
   }
 }
 
 
-export function rekognitionStreamProcessorSettingsToHclTerraform(struct?: RekognitionStreamProcessorSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorSettingsToHclTerraform(struct?: RekognitionStreamProcessorSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connected_home: {
-      value: cdktf.listMapperHcl(rekognitionStreamProcessorSettingsConnectedHomeToHclTerraform, true)(struct!.connectedHome),
+      value: cdktn.listMapperHcl(rekognitionStreamProcessorSettingsConnectedHomeToHclTerraform, true)(struct!.connectedHome),
       isBlock: true,
       type: "list",
       storageClassType: "RekognitionStreamProcessorSettingsConnectedHomeList",
     },
     face_search: {
-      value: cdktf.listMapperHcl(rekognitionStreamProcessorSettingsFaceSearchToHclTerraform, true)(struct!.faceSearch),
+      value: cdktn.listMapperHcl(rekognitionStreamProcessorSettingsFaceSearchToHclTerraform, true)(struct!.faceSearch),
       isBlock: true,
       type: "list",
       storageClassType: "RekognitionStreamProcessorSettingsFaceSearchList",
@@ -1856,9 +1856,9 @@ export function rekognitionStreamProcessorSettingsToHclTerraform(struct?: Rekogn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RekognitionStreamProcessorSettingsOutputReference extends cdktf.ComplexObject {
+export class RekognitionStreamProcessorSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1866,11 +1866,11 @@ export class RekognitionStreamProcessorSettingsOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RekognitionStreamProcessorSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): RekognitionStreamProcessorSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1887,14 +1887,14 @@ export class RekognitionStreamProcessorSettingsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RekognitionStreamProcessorSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RekognitionStreamProcessorSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._connectedHome.internalValue = undefined;
       this._faceSearch.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1911,7 +1911,7 @@ export class RekognitionStreamProcessorSettingsOutputReference extends cdktf.Com
   public get connectedHome() {
     return this._connectedHome;
   }
-  public putConnectedHome(value: RekognitionStreamProcessorSettingsConnectedHome[] | cdktf.IResolvable) {
+  public putConnectedHome(value: RekognitionStreamProcessorSettingsConnectedHome[] | cdktn.IResolvable) {
     this._connectedHome.internalValue = value;
   }
   public resetConnectedHome() {
@@ -1927,7 +1927,7 @@ export class RekognitionStreamProcessorSettingsOutputReference extends cdktf.Com
   public get faceSearch() {
     return this._faceSearch;
   }
-  public putFaceSearch(value: RekognitionStreamProcessorSettingsFaceSearch[] | cdktf.IResolvable) {
+  public putFaceSearch(value: RekognitionStreamProcessorSettingsFaceSearch[] | cdktn.IResolvable) {
     this._faceSearch.internalValue = value;
   }
   public resetFaceSearch() {
@@ -1939,15 +1939,15 @@ export class RekognitionStreamProcessorSettingsOutputReference extends cdktf.Com
   }
 }
 
-export class RekognitionStreamProcessorSettingsList extends cdktf.ComplexList {
-  public internalValue? : RekognitionStreamProcessorSettings[] | cdktf.IResolvable
+export class RekognitionStreamProcessorSettingsList extends cdktn.ComplexList {
+  public internalValue? : RekognitionStreamProcessorSettings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1979,39 +1979,39 @@ export interface RekognitionStreamProcessorTimeouts {
   readonly update?: string;
 }
 
-export function rekognitionStreamProcessorTimeoutsToTerraform(struct?: RekognitionStreamProcessorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorTimeoutsToTerraform(struct?: RekognitionStreamProcessorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function rekognitionStreamProcessorTimeoutsToHclTerraform(struct?: RekognitionStreamProcessorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rekognitionStreamProcessorTimeoutsToHclTerraform(struct?: RekognitionStreamProcessorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2022,19 +2022,19 @@ export function rekognitionStreamProcessorTimeoutsToHclTerraform(struct?: Rekogn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RekognitionStreamProcessorTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RekognitionStreamProcessorTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RekognitionStreamProcessorTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RekognitionStreamProcessorTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2055,7 +2055,7 @@ export class RekognitionStreamProcessorTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RekognitionStreamProcessorTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RekognitionStreamProcessorTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2063,7 +2063,7 @@ export class RekognitionStreamProcessorTimeoutsOutputReference extends cdktf.Com
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2128,7 +2128,7 @@ export class RekognitionStreamProcessorTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor}
 */
-export class RekognitionStreamProcessor extends cdktf.TerraformResource {
+export class RekognitionStreamProcessor extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2139,14 +2139,14 @@ export class RekognitionStreamProcessor extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RekognitionStreamProcessor resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RekognitionStreamProcessor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RekognitionStreamProcessor to import
   * @param importFromId The id of the existing RekognitionStreamProcessor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rekognition_stream_processor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RekognitionStreamProcessor to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_rekognition_stream_processor", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_rekognition_stream_processor", importId: importFromId, provider });
       }
 
   // ===========
@@ -2279,7 +2279,7 @@ export class RekognitionStreamProcessor extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -2289,7 +2289,7 @@ export class RekognitionStreamProcessor extends cdktf.TerraformResource {
   public get dataSharingPreference() {
     return this._dataSharingPreference;
   }
-  public putDataSharingPreference(value: RekognitionStreamProcessorDataSharingPreference[] | cdktf.IResolvable) {
+  public putDataSharingPreference(value: RekognitionStreamProcessorDataSharingPreference[] | cdktn.IResolvable) {
     this._dataSharingPreference.internalValue = value;
   }
   public resetDataSharingPreference() {
@@ -2305,7 +2305,7 @@ export class RekognitionStreamProcessor extends cdktf.TerraformResource {
   public get input() {
     return this._input;
   }
-  public putInput(value: RekognitionStreamProcessorInput[] | cdktf.IResolvable) {
+  public putInput(value: RekognitionStreamProcessorInput[] | cdktn.IResolvable) {
     this._input.internalValue = value;
   }
   public resetInput() {
@@ -2321,7 +2321,7 @@ export class RekognitionStreamProcessor extends cdktf.TerraformResource {
   public get notificationChannel() {
     return this._notificationChannel;
   }
-  public putNotificationChannel(value: RekognitionStreamProcessorNotificationChannel[] | cdktf.IResolvable) {
+  public putNotificationChannel(value: RekognitionStreamProcessorNotificationChannel[] | cdktn.IResolvable) {
     this._notificationChannel.internalValue = value;
   }
   public resetNotificationChannel() {
@@ -2337,7 +2337,7 @@ export class RekognitionStreamProcessor extends cdktf.TerraformResource {
   public get output() {
     return this._output;
   }
-  public putOutput(value: RekognitionStreamProcessorOutput[] | cdktf.IResolvable) {
+  public putOutput(value: RekognitionStreamProcessorOutput[] | cdktn.IResolvable) {
     this._output.internalValue = value;
   }
   public resetOutput() {
@@ -2353,7 +2353,7 @@ export class RekognitionStreamProcessor extends cdktf.TerraformResource {
   public get regionsOfInterest() {
     return this._regionsOfInterest;
   }
-  public putRegionsOfInterest(value: RekognitionStreamProcessorRegionsOfInterest[] | cdktf.IResolvable) {
+  public putRegionsOfInterest(value: RekognitionStreamProcessorRegionsOfInterest[] | cdktn.IResolvable) {
     this._regionsOfInterest.internalValue = value;
   }
   public resetRegionsOfInterest() {
@@ -2369,7 +2369,7 @@ export class RekognitionStreamProcessor extends cdktf.TerraformResource {
   public get settings() {
     return this._settings;
   }
-  public putSettings(value: RekognitionStreamProcessorSettings[] | cdktf.IResolvable) {
+  public putSettings(value: RekognitionStreamProcessorSettings[] | cdktn.IResolvable) {
     this._settings.internalValue = value;
   }
   public resetSettings() {
@@ -2402,17 +2402,17 @@ export class RekognitionStreamProcessor extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      data_sharing_preference: cdktf.listMapper(rekognitionStreamProcessorDataSharingPreferenceToTerraform, true)(this._dataSharingPreference.internalValue),
-      input: cdktf.listMapper(rekognitionStreamProcessorInputToTerraform, true)(this._input.internalValue),
-      notification_channel: cdktf.listMapper(rekognitionStreamProcessorNotificationChannelToTerraform, true)(this._notificationChannel.internalValue),
-      output: cdktf.listMapper(rekognitionStreamProcessorOutputToTerraform, true)(this._output.internalValue),
-      regions_of_interest: cdktf.listMapper(rekognitionStreamProcessorRegionsOfInterestToTerraform, true)(this._regionsOfInterest.internalValue),
-      settings: cdktf.listMapper(rekognitionStreamProcessorSettingsToTerraform, true)(this._settings.internalValue),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      data_sharing_preference: cdktn.listMapper(rekognitionStreamProcessorDataSharingPreferenceToTerraform, true)(this._dataSharingPreference.internalValue),
+      input: cdktn.listMapper(rekognitionStreamProcessorInputToTerraform, true)(this._input.internalValue),
+      notification_channel: cdktn.listMapper(rekognitionStreamProcessorNotificationChannelToTerraform, true)(this._notificationChannel.internalValue),
+      output: cdktn.listMapper(rekognitionStreamProcessorOutputToTerraform, true)(this._output.internalValue),
+      regions_of_interest: cdktn.listMapper(rekognitionStreamProcessorRegionsOfInterestToTerraform, true)(this._regionsOfInterest.internalValue),
+      settings: cdktn.listMapper(rekognitionStreamProcessorSettingsToTerraform, true)(this._settings.internalValue),
       timeouts: rekognitionStreamProcessorTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -2420,67 +2420,67 @@ export class RekognitionStreamProcessor extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       data_sharing_preference: {
-        value: cdktf.listMapperHcl(rekognitionStreamProcessorDataSharingPreferenceToHclTerraform, true)(this._dataSharingPreference.internalValue),
+        value: cdktn.listMapperHcl(rekognitionStreamProcessorDataSharingPreferenceToHclTerraform, true)(this._dataSharingPreference.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RekognitionStreamProcessorDataSharingPreferenceList",
       },
       input: {
-        value: cdktf.listMapperHcl(rekognitionStreamProcessorInputToHclTerraform, true)(this._input.internalValue),
+        value: cdktn.listMapperHcl(rekognitionStreamProcessorInputToHclTerraform, true)(this._input.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RekognitionStreamProcessorInputList",
       },
       notification_channel: {
-        value: cdktf.listMapperHcl(rekognitionStreamProcessorNotificationChannelToHclTerraform, true)(this._notificationChannel.internalValue),
+        value: cdktn.listMapperHcl(rekognitionStreamProcessorNotificationChannelToHclTerraform, true)(this._notificationChannel.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RekognitionStreamProcessorNotificationChannelList",
       },
       output: {
-        value: cdktf.listMapperHcl(rekognitionStreamProcessorOutputToHclTerraform, true)(this._output.internalValue),
+        value: cdktn.listMapperHcl(rekognitionStreamProcessorOutputToHclTerraform, true)(this._output.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RekognitionStreamProcessorOutputList",
       },
       regions_of_interest: {
-        value: cdktf.listMapperHcl(rekognitionStreamProcessorRegionsOfInterestToHclTerraform, true)(this._regionsOfInterest.internalValue),
+        value: cdktn.listMapperHcl(rekognitionStreamProcessorRegionsOfInterestToHclTerraform, true)(this._regionsOfInterest.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RekognitionStreamProcessorRegionsOfInterestList",
       },
       settings: {
-        value: cdktf.listMapperHcl(rekognitionStreamProcessorSettingsToHclTerraform, true)(this._settings.internalValue),
+        value: cdktn.listMapperHcl(rekognitionStreamProcessorSettingsToHclTerraform, true)(this._settings.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RekognitionStreamProcessorSettingsList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DmsEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface DmsEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#certificate_arn DmsEndpoint#certificate_arn}
   */
@@ -54,7 +54,7 @@ export interface DmsEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#pause_replication_tasks DmsEndpoint#pause_replication_tasks}
   */
-  readonly pauseReplicationTasks?: boolean | cdktf.IResolvable;
+  readonly pauseReplicationTasks?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#port DmsEndpoint#port}
   */
@@ -178,56 +178,56 @@ export interface DmsEndpointElasticsearchSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#use_new_mapping_type DmsEndpoint#use_new_mapping_type}
   */
-  readonly useNewMappingType?: boolean | cdktf.IResolvable;
+  readonly useNewMappingType?: boolean | cdktn.IResolvable;
 }
 
 export function dmsEndpointElasticsearchSettingsToTerraform(struct?: DmsEndpointElasticsearchSettingsOutputReference | DmsEndpointElasticsearchSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint_uri: cdktf.stringToTerraform(struct!.endpointUri),
-    error_retry_duration: cdktf.numberToTerraform(struct!.errorRetryDuration),
-    full_load_error_percentage: cdktf.numberToTerraform(struct!.fullLoadErrorPercentage),
-    service_access_role_arn: cdktf.stringToTerraform(struct!.serviceAccessRoleArn),
-    use_new_mapping_type: cdktf.booleanToTerraform(struct!.useNewMappingType),
+    endpoint_uri: cdktn.stringToTerraform(struct!.endpointUri),
+    error_retry_duration: cdktn.numberToTerraform(struct!.errorRetryDuration),
+    full_load_error_percentage: cdktn.numberToTerraform(struct!.fullLoadErrorPercentage),
+    service_access_role_arn: cdktn.stringToTerraform(struct!.serviceAccessRoleArn),
+    use_new_mapping_type: cdktn.booleanToTerraform(struct!.useNewMappingType),
   }
 }
 
 
 export function dmsEndpointElasticsearchSettingsToHclTerraform(struct?: DmsEndpointElasticsearchSettingsOutputReference | DmsEndpointElasticsearchSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint_uri: {
-      value: cdktf.stringToHclTerraform(struct!.endpointUri),
+      value: cdktn.stringToHclTerraform(struct!.endpointUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     error_retry_duration: {
-      value: cdktf.numberToHclTerraform(struct!.errorRetryDuration),
+      value: cdktn.numberToHclTerraform(struct!.errorRetryDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     full_load_error_percentage: {
-      value: cdktf.numberToHclTerraform(struct!.fullLoadErrorPercentage),
+      value: cdktn.numberToHclTerraform(struct!.fullLoadErrorPercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service_access_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccessRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccessRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_new_mapping_type: {
-      value: cdktf.booleanToHclTerraform(struct!.useNewMappingType),
+      value: cdktn.booleanToHclTerraform(struct!.useNewMappingType),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -238,14 +238,14 @@ export function dmsEndpointElasticsearchSettingsToHclTerraform(struct?: DmsEndpo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DmsEndpointElasticsearchSettingsOutputReference extends cdktf.ComplexObject {
+export class DmsEndpointElasticsearchSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -353,11 +353,11 @@ export class DmsEndpointElasticsearchSettingsOutputReference extends cdktf.Compl
   }
 
   // use_new_mapping_type - computed: false, optional: true, required: false
-  private _useNewMappingType?: boolean | cdktf.IResolvable; 
+  private _useNewMappingType?: boolean | cdktn.IResolvable; 
   public get useNewMappingType() {
     return this.getBooleanAttribute('use_new_mapping_type');
   }
-  public set useNewMappingType(value: boolean | cdktf.IResolvable) {
+  public set useNewMappingType(value: boolean | cdktn.IResolvable) {
     this._useNewMappingType = value;
   }
   public resetUseNewMappingType() {
@@ -376,23 +376,23 @@ export interface DmsEndpointKafkaSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}
   */
-  readonly includeControlDetails?: boolean | cdktf.IResolvable;
+  readonly includeControlDetails?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}
   */
-  readonly includeNullAndEmpty?: boolean | cdktf.IResolvable;
+  readonly includeNullAndEmpty?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}
   */
-  readonly includePartitionValue?: boolean | cdktf.IResolvable;
+  readonly includePartitionValue?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}
   */
-  readonly includeTableAlterOperations?: boolean | cdktf.IResolvable;
+  readonly includeTableAlterOperations?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}
   */
-  readonly includeTransactionDetails?: boolean | cdktf.IResolvable;
+  readonly includeTransactionDetails?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}
   */
@@ -404,11 +404,11 @@ export interface DmsEndpointKafkaSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#no_hex_prefix DmsEndpoint#no_hex_prefix}
   */
-  readonly noHexPrefix?: boolean | cdktf.IResolvable;
+  readonly noHexPrefix?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}
   */
-  readonly partitionIncludeSchemaTable?: boolean | cdktf.IResolvable;
+  readonly partitionIncludeSchemaTable?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#sasl_mechanism DmsEndpoint#sasl_mechanism}
   */
@@ -448,150 +448,150 @@ export interface DmsEndpointKafkaSettings {
 }
 
 export function dmsEndpointKafkaSettingsToTerraform(struct?: DmsEndpointKafkaSettingsOutputReference | DmsEndpointKafkaSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    broker: cdktf.stringToTerraform(struct!.broker),
-    include_control_details: cdktf.booleanToTerraform(struct!.includeControlDetails),
-    include_null_and_empty: cdktf.booleanToTerraform(struct!.includeNullAndEmpty),
-    include_partition_value: cdktf.booleanToTerraform(struct!.includePartitionValue),
-    include_table_alter_operations: cdktf.booleanToTerraform(struct!.includeTableAlterOperations),
-    include_transaction_details: cdktf.booleanToTerraform(struct!.includeTransactionDetails),
-    message_format: cdktf.stringToTerraform(struct!.messageFormat),
-    message_max_bytes: cdktf.numberToTerraform(struct!.messageMaxBytes),
-    no_hex_prefix: cdktf.booleanToTerraform(struct!.noHexPrefix),
-    partition_include_schema_table: cdktf.booleanToTerraform(struct!.partitionIncludeSchemaTable),
-    sasl_mechanism: cdktf.stringToTerraform(struct!.saslMechanism),
-    sasl_password: cdktf.stringToTerraform(struct!.saslPassword),
-    sasl_username: cdktf.stringToTerraform(struct!.saslUsername),
-    security_protocol: cdktf.stringToTerraform(struct!.securityProtocol),
-    ssl_ca_certificate_arn: cdktf.stringToTerraform(struct!.sslCaCertificateArn),
-    ssl_client_certificate_arn: cdktf.stringToTerraform(struct!.sslClientCertificateArn),
-    ssl_client_key_arn: cdktf.stringToTerraform(struct!.sslClientKeyArn),
-    ssl_client_key_password: cdktf.stringToTerraform(struct!.sslClientKeyPassword),
-    topic: cdktf.stringToTerraform(struct!.topic),
+    broker: cdktn.stringToTerraform(struct!.broker),
+    include_control_details: cdktn.booleanToTerraform(struct!.includeControlDetails),
+    include_null_and_empty: cdktn.booleanToTerraform(struct!.includeNullAndEmpty),
+    include_partition_value: cdktn.booleanToTerraform(struct!.includePartitionValue),
+    include_table_alter_operations: cdktn.booleanToTerraform(struct!.includeTableAlterOperations),
+    include_transaction_details: cdktn.booleanToTerraform(struct!.includeTransactionDetails),
+    message_format: cdktn.stringToTerraform(struct!.messageFormat),
+    message_max_bytes: cdktn.numberToTerraform(struct!.messageMaxBytes),
+    no_hex_prefix: cdktn.booleanToTerraform(struct!.noHexPrefix),
+    partition_include_schema_table: cdktn.booleanToTerraform(struct!.partitionIncludeSchemaTable),
+    sasl_mechanism: cdktn.stringToTerraform(struct!.saslMechanism),
+    sasl_password: cdktn.stringToTerraform(struct!.saslPassword),
+    sasl_username: cdktn.stringToTerraform(struct!.saslUsername),
+    security_protocol: cdktn.stringToTerraform(struct!.securityProtocol),
+    ssl_ca_certificate_arn: cdktn.stringToTerraform(struct!.sslCaCertificateArn),
+    ssl_client_certificate_arn: cdktn.stringToTerraform(struct!.sslClientCertificateArn),
+    ssl_client_key_arn: cdktn.stringToTerraform(struct!.sslClientKeyArn),
+    ssl_client_key_password: cdktn.stringToTerraform(struct!.sslClientKeyPassword),
+    topic: cdktn.stringToTerraform(struct!.topic),
   }
 }
 
 
 export function dmsEndpointKafkaSettingsToHclTerraform(struct?: DmsEndpointKafkaSettingsOutputReference | DmsEndpointKafkaSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     broker: {
-      value: cdktf.stringToHclTerraform(struct!.broker),
+      value: cdktn.stringToHclTerraform(struct!.broker),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     include_control_details: {
-      value: cdktf.booleanToHclTerraform(struct!.includeControlDetails),
+      value: cdktn.booleanToHclTerraform(struct!.includeControlDetails),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_null_and_empty: {
-      value: cdktf.booleanToHclTerraform(struct!.includeNullAndEmpty),
+      value: cdktn.booleanToHclTerraform(struct!.includeNullAndEmpty),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_partition_value: {
-      value: cdktf.booleanToHclTerraform(struct!.includePartitionValue),
+      value: cdktn.booleanToHclTerraform(struct!.includePartitionValue),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_table_alter_operations: {
-      value: cdktf.booleanToHclTerraform(struct!.includeTableAlterOperations),
+      value: cdktn.booleanToHclTerraform(struct!.includeTableAlterOperations),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_transaction_details: {
-      value: cdktf.booleanToHclTerraform(struct!.includeTransactionDetails),
+      value: cdktn.booleanToHclTerraform(struct!.includeTransactionDetails),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     message_format: {
-      value: cdktf.stringToHclTerraform(struct!.messageFormat),
+      value: cdktn.stringToHclTerraform(struct!.messageFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message_max_bytes: {
-      value: cdktf.numberToHclTerraform(struct!.messageMaxBytes),
+      value: cdktn.numberToHclTerraform(struct!.messageMaxBytes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     no_hex_prefix: {
-      value: cdktf.booleanToHclTerraform(struct!.noHexPrefix),
+      value: cdktn.booleanToHclTerraform(struct!.noHexPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     partition_include_schema_table: {
-      value: cdktf.booleanToHclTerraform(struct!.partitionIncludeSchemaTable),
+      value: cdktn.booleanToHclTerraform(struct!.partitionIncludeSchemaTable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sasl_mechanism: {
-      value: cdktf.stringToHclTerraform(struct!.saslMechanism),
+      value: cdktn.stringToHclTerraform(struct!.saslMechanism),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sasl_password: {
-      value: cdktf.stringToHclTerraform(struct!.saslPassword),
+      value: cdktn.stringToHclTerraform(struct!.saslPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sasl_username: {
-      value: cdktf.stringToHclTerraform(struct!.saslUsername),
+      value: cdktn.stringToHclTerraform(struct!.saslUsername),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_protocol: {
-      value: cdktf.stringToHclTerraform(struct!.securityProtocol),
+      value: cdktn.stringToHclTerraform(struct!.securityProtocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssl_ca_certificate_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sslCaCertificateArn),
+      value: cdktn.stringToHclTerraform(struct!.sslCaCertificateArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssl_client_certificate_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sslClientCertificateArn),
+      value: cdktn.stringToHclTerraform(struct!.sslClientCertificateArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssl_client_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sslClientKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.sslClientKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssl_client_key_password: {
-      value: cdktf.stringToHclTerraform(struct!.sslClientKeyPassword),
+      value: cdktn.stringToHclTerraform(struct!.sslClientKeyPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic: {
-      value: cdktf.stringToHclTerraform(struct!.topic),
+      value: cdktn.stringToHclTerraform(struct!.topic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -602,14 +602,14 @@ export function dmsEndpointKafkaSettingsToHclTerraform(struct?: DmsEndpointKafka
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject {
+export class DmsEndpointKafkaSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -756,11 +756,11 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   }
 
   // include_control_details - computed: false, optional: true, required: false
-  private _includeControlDetails?: boolean | cdktf.IResolvable; 
+  private _includeControlDetails?: boolean | cdktn.IResolvable; 
   public get includeControlDetails() {
     return this.getBooleanAttribute('include_control_details');
   }
-  public set includeControlDetails(value: boolean | cdktf.IResolvable) {
+  public set includeControlDetails(value: boolean | cdktn.IResolvable) {
     this._includeControlDetails = value;
   }
   public resetIncludeControlDetails() {
@@ -772,11 +772,11 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   }
 
   // include_null_and_empty - computed: false, optional: true, required: false
-  private _includeNullAndEmpty?: boolean | cdktf.IResolvable; 
+  private _includeNullAndEmpty?: boolean | cdktn.IResolvable; 
   public get includeNullAndEmpty() {
     return this.getBooleanAttribute('include_null_and_empty');
   }
-  public set includeNullAndEmpty(value: boolean | cdktf.IResolvable) {
+  public set includeNullAndEmpty(value: boolean | cdktn.IResolvable) {
     this._includeNullAndEmpty = value;
   }
   public resetIncludeNullAndEmpty() {
@@ -788,11 +788,11 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   }
 
   // include_partition_value - computed: false, optional: true, required: false
-  private _includePartitionValue?: boolean | cdktf.IResolvable; 
+  private _includePartitionValue?: boolean | cdktn.IResolvable; 
   public get includePartitionValue() {
     return this.getBooleanAttribute('include_partition_value');
   }
-  public set includePartitionValue(value: boolean | cdktf.IResolvable) {
+  public set includePartitionValue(value: boolean | cdktn.IResolvable) {
     this._includePartitionValue = value;
   }
   public resetIncludePartitionValue() {
@@ -804,11 +804,11 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   }
 
   // include_table_alter_operations - computed: false, optional: true, required: false
-  private _includeTableAlterOperations?: boolean | cdktf.IResolvable; 
+  private _includeTableAlterOperations?: boolean | cdktn.IResolvable; 
   public get includeTableAlterOperations() {
     return this.getBooleanAttribute('include_table_alter_operations');
   }
-  public set includeTableAlterOperations(value: boolean | cdktf.IResolvable) {
+  public set includeTableAlterOperations(value: boolean | cdktn.IResolvable) {
     this._includeTableAlterOperations = value;
   }
   public resetIncludeTableAlterOperations() {
@@ -820,11 +820,11 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   }
 
   // include_transaction_details - computed: false, optional: true, required: false
-  private _includeTransactionDetails?: boolean | cdktf.IResolvable; 
+  private _includeTransactionDetails?: boolean | cdktn.IResolvable; 
   public get includeTransactionDetails() {
     return this.getBooleanAttribute('include_transaction_details');
   }
-  public set includeTransactionDetails(value: boolean | cdktf.IResolvable) {
+  public set includeTransactionDetails(value: boolean | cdktn.IResolvable) {
     this._includeTransactionDetails = value;
   }
   public resetIncludeTransactionDetails() {
@@ -868,11 +868,11 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   }
 
   // no_hex_prefix - computed: false, optional: true, required: false
-  private _noHexPrefix?: boolean | cdktf.IResolvable; 
+  private _noHexPrefix?: boolean | cdktn.IResolvable; 
   public get noHexPrefix() {
     return this.getBooleanAttribute('no_hex_prefix');
   }
-  public set noHexPrefix(value: boolean | cdktf.IResolvable) {
+  public set noHexPrefix(value: boolean | cdktn.IResolvable) {
     this._noHexPrefix = value;
   }
   public resetNoHexPrefix() {
@@ -884,11 +884,11 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   }
 
   // partition_include_schema_table - computed: false, optional: true, required: false
-  private _partitionIncludeSchemaTable?: boolean | cdktf.IResolvable; 
+  private _partitionIncludeSchemaTable?: boolean | cdktn.IResolvable; 
   public get partitionIncludeSchemaTable() {
     return this.getBooleanAttribute('partition_include_schema_table');
   }
-  public set partitionIncludeSchemaTable(value: boolean | cdktf.IResolvable) {
+  public set partitionIncludeSchemaTable(value: boolean | cdktn.IResolvable) {
     this._partitionIncludeSchemaTable = value;
   }
   public resetPartitionIncludeSchemaTable() {
@@ -1047,23 +1047,23 @@ export interface DmsEndpointKinesisSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}
   */
-  readonly includeControlDetails?: boolean | cdktf.IResolvable;
+  readonly includeControlDetails?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}
   */
-  readonly includeNullAndEmpty?: boolean | cdktf.IResolvable;
+  readonly includeNullAndEmpty?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}
   */
-  readonly includePartitionValue?: boolean | cdktf.IResolvable;
+  readonly includePartitionValue?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}
   */
-  readonly includeTableAlterOperations?: boolean | cdktf.IResolvable;
+  readonly includeTableAlterOperations?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}
   */
-  readonly includeTransactionDetails?: boolean | cdktf.IResolvable;
+  readonly includeTransactionDetails?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}
   */
@@ -1071,7 +1071,7 @@ export interface DmsEndpointKinesisSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}
   */
-  readonly partitionIncludeSchemaTable?: boolean | cdktf.IResolvable;
+  readonly partitionIncludeSchemaTable?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}
   */
@@ -1083,91 +1083,91 @@ export interface DmsEndpointKinesisSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#use_large_integer_value DmsEndpoint#use_large_integer_value}
   */
-  readonly useLargeIntegerValue?: boolean | cdktf.IResolvable;
+  readonly useLargeIntegerValue?: boolean | cdktn.IResolvable;
 }
 
 export function dmsEndpointKinesisSettingsToTerraform(struct?: DmsEndpointKinesisSettingsOutputReference | DmsEndpointKinesisSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_control_details: cdktf.booleanToTerraform(struct!.includeControlDetails),
-    include_null_and_empty: cdktf.booleanToTerraform(struct!.includeNullAndEmpty),
-    include_partition_value: cdktf.booleanToTerraform(struct!.includePartitionValue),
-    include_table_alter_operations: cdktf.booleanToTerraform(struct!.includeTableAlterOperations),
-    include_transaction_details: cdktf.booleanToTerraform(struct!.includeTransactionDetails),
-    message_format: cdktf.stringToTerraform(struct!.messageFormat),
-    partition_include_schema_table: cdktf.booleanToTerraform(struct!.partitionIncludeSchemaTable),
-    service_access_role_arn: cdktf.stringToTerraform(struct!.serviceAccessRoleArn),
-    stream_arn: cdktf.stringToTerraform(struct!.streamArn),
-    use_large_integer_value: cdktf.booleanToTerraform(struct!.useLargeIntegerValue),
+    include_control_details: cdktn.booleanToTerraform(struct!.includeControlDetails),
+    include_null_and_empty: cdktn.booleanToTerraform(struct!.includeNullAndEmpty),
+    include_partition_value: cdktn.booleanToTerraform(struct!.includePartitionValue),
+    include_table_alter_operations: cdktn.booleanToTerraform(struct!.includeTableAlterOperations),
+    include_transaction_details: cdktn.booleanToTerraform(struct!.includeTransactionDetails),
+    message_format: cdktn.stringToTerraform(struct!.messageFormat),
+    partition_include_schema_table: cdktn.booleanToTerraform(struct!.partitionIncludeSchemaTable),
+    service_access_role_arn: cdktn.stringToTerraform(struct!.serviceAccessRoleArn),
+    stream_arn: cdktn.stringToTerraform(struct!.streamArn),
+    use_large_integer_value: cdktn.booleanToTerraform(struct!.useLargeIntegerValue),
   }
 }
 
 
 export function dmsEndpointKinesisSettingsToHclTerraform(struct?: DmsEndpointKinesisSettingsOutputReference | DmsEndpointKinesisSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_control_details: {
-      value: cdktf.booleanToHclTerraform(struct!.includeControlDetails),
+      value: cdktn.booleanToHclTerraform(struct!.includeControlDetails),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_null_and_empty: {
-      value: cdktf.booleanToHclTerraform(struct!.includeNullAndEmpty),
+      value: cdktn.booleanToHclTerraform(struct!.includeNullAndEmpty),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_partition_value: {
-      value: cdktf.booleanToHclTerraform(struct!.includePartitionValue),
+      value: cdktn.booleanToHclTerraform(struct!.includePartitionValue),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_table_alter_operations: {
-      value: cdktf.booleanToHclTerraform(struct!.includeTableAlterOperations),
+      value: cdktn.booleanToHclTerraform(struct!.includeTableAlterOperations),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_transaction_details: {
-      value: cdktf.booleanToHclTerraform(struct!.includeTransactionDetails),
+      value: cdktn.booleanToHclTerraform(struct!.includeTransactionDetails),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     message_format: {
-      value: cdktf.stringToHclTerraform(struct!.messageFormat),
+      value: cdktn.stringToHclTerraform(struct!.messageFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     partition_include_schema_table: {
-      value: cdktf.booleanToHclTerraform(struct!.partitionIncludeSchemaTable),
+      value: cdktn.booleanToHclTerraform(struct!.partitionIncludeSchemaTable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     service_access_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccessRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccessRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stream_arn: {
-      value: cdktf.stringToHclTerraform(struct!.streamArn),
+      value: cdktn.stringToHclTerraform(struct!.streamArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_large_integer_value: {
-      value: cdktf.booleanToHclTerraform(struct!.useLargeIntegerValue),
+      value: cdktn.booleanToHclTerraform(struct!.useLargeIntegerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1178,14 +1178,14 @@ export function dmsEndpointKinesisSettingsToHclTerraform(struct?: DmsEndpointKin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObject {
+export class DmsEndpointKinesisSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1265,11 +1265,11 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   }
 
   // include_control_details - computed: false, optional: true, required: false
-  private _includeControlDetails?: boolean | cdktf.IResolvable; 
+  private _includeControlDetails?: boolean | cdktn.IResolvable; 
   public get includeControlDetails() {
     return this.getBooleanAttribute('include_control_details');
   }
-  public set includeControlDetails(value: boolean | cdktf.IResolvable) {
+  public set includeControlDetails(value: boolean | cdktn.IResolvable) {
     this._includeControlDetails = value;
   }
   public resetIncludeControlDetails() {
@@ -1281,11 +1281,11 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   }
 
   // include_null_and_empty - computed: false, optional: true, required: false
-  private _includeNullAndEmpty?: boolean | cdktf.IResolvable; 
+  private _includeNullAndEmpty?: boolean | cdktn.IResolvable; 
   public get includeNullAndEmpty() {
     return this.getBooleanAttribute('include_null_and_empty');
   }
-  public set includeNullAndEmpty(value: boolean | cdktf.IResolvable) {
+  public set includeNullAndEmpty(value: boolean | cdktn.IResolvable) {
     this._includeNullAndEmpty = value;
   }
   public resetIncludeNullAndEmpty() {
@@ -1297,11 +1297,11 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   }
 
   // include_partition_value - computed: false, optional: true, required: false
-  private _includePartitionValue?: boolean | cdktf.IResolvable; 
+  private _includePartitionValue?: boolean | cdktn.IResolvable; 
   public get includePartitionValue() {
     return this.getBooleanAttribute('include_partition_value');
   }
-  public set includePartitionValue(value: boolean | cdktf.IResolvable) {
+  public set includePartitionValue(value: boolean | cdktn.IResolvable) {
     this._includePartitionValue = value;
   }
   public resetIncludePartitionValue() {
@@ -1313,11 +1313,11 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   }
 
   // include_table_alter_operations - computed: false, optional: true, required: false
-  private _includeTableAlterOperations?: boolean | cdktf.IResolvable; 
+  private _includeTableAlterOperations?: boolean | cdktn.IResolvable; 
   public get includeTableAlterOperations() {
     return this.getBooleanAttribute('include_table_alter_operations');
   }
-  public set includeTableAlterOperations(value: boolean | cdktf.IResolvable) {
+  public set includeTableAlterOperations(value: boolean | cdktn.IResolvable) {
     this._includeTableAlterOperations = value;
   }
   public resetIncludeTableAlterOperations() {
@@ -1329,11 +1329,11 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   }
 
   // include_transaction_details - computed: false, optional: true, required: false
-  private _includeTransactionDetails?: boolean | cdktf.IResolvable; 
+  private _includeTransactionDetails?: boolean | cdktn.IResolvable; 
   public get includeTransactionDetails() {
     return this.getBooleanAttribute('include_transaction_details');
   }
-  public set includeTransactionDetails(value: boolean | cdktf.IResolvable) {
+  public set includeTransactionDetails(value: boolean | cdktn.IResolvable) {
     this._includeTransactionDetails = value;
   }
   public resetIncludeTransactionDetails() {
@@ -1361,11 +1361,11 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   }
 
   // partition_include_schema_table - computed: false, optional: true, required: false
-  private _partitionIncludeSchemaTable?: boolean | cdktf.IResolvable; 
+  private _partitionIncludeSchemaTable?: boolean | cdktn.IResolvable; 
   public get partitionIncludeSchemaTable() {
     return this.getBooleanAttribute('partition_include_schema_table');
   }
-  public set partitionIncludeSchemaTable(value: boolean | cdktf.IResolvable) {
+  public set partitionIncludeSchemaTable(value: boolean | cdktn.IResolvable) {
     this._partitionIncludeSchemaTable = value;
   }
   public resetPartitionIncludeSchemaTable() {
@@ -1409,11 +1409,11 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   }
 
   // use_large_integer_value - computed: false, optional: true, required: false
-  private _useLargeIntegerValue?: boolean | cdktf.IResolvable; 
+  private _useLargeIntegerValue?: boolean | cdktn.IResolvable; 
   public get useLargeIntegerValue() {
     return this.getBooleanAttribute('use_large_integer_value');
   }
-  public set useLargeIntegerValue(value: boolean | cdktf.IResolvable) {
+  public set useLargeIntegerValue(value: boolean | cdktn.IResolvable) {
     this._useLargeIntegerValue = value;
   }
   public resetUseLargeIntegerValue() {
@@ -1452,59 +1452,59 @@ export interface DmsEndpointMongodbSettings {
 }
 
 export function dmsEndpointMongodbSettingsToTerraform(struct?: DmsEndpointMongodbSettingsOutputReference | DmsEndpointMongodbSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_mechanism: cdktf.stringToTerraform(struct!.authMechanism),
-    auth_source: cdktf.stringToTerraform(struct!.authSource),
-    auth_type: cdktf.stringToTerraform(struct!.authType),
-    docs_to_investigate: cdktf.stringToTerraform(struct!.docsToInvestigate),
-    extract_doc_id: cdktf.stringToTerraform(struct!.extractDocId),
-    nesting_level: cdktf.stringToTerraform(struct!.nestingLevel),
+    auth_mechanism: cdktn.stringToTerraform(struct!.authMechanism),
+    auth_source: cdktn.stringToTerraform(struct!.authSource),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
+    docs_to_investigate: cdktn.stringToTerraform(struct!.docsToInvestigate),
+    extract_doc_id: cdktn.stringToTerraform(struct!.extractDocId),
+    nesting_level: cdktn.stringToTerraform(struct!.nestingLevel),
   }
 }
 
 
 export function dmsEndpointMongodbSettingsToHclTerraform(struct?: DmsEndpointMongodbSettingsOutputReference | DmsEndpointMongodbSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_mechanism: {
-      value: cdktf.stringToHclTerraform(struct!.authMechanism),
+      value: cdktn.stringToHclTerraform(struct!.authMechanism),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     auth_source: {
-      value: cdktf.stringToHclTerraform(struct!.authSource),
+      value: cdktn.stringToHclTerraform(struct!.authSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     docs_to_investigate: {
-      value: cdktf.stringToHclTerraform(struct!.docsToInvestigate),
+      value: cdktn.stringToHclTerraform(struct!.docsToInvestigate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     extract_doc_id: {
-      value: cdktf.stringToHclTerraform(struct!.extractDocId),
+      value: cdktn.stringToHclTerraform(struct!.extractDocId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     nesting_level: {
-      value: cdktf.stringToHclTerraform(struct!.nestingLevel),
+      value: cdktn.stringToHclTerraform(struct!.nestingLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1515,14 +1515,14 @@ export function dmsEndpointMongodbSettingsToHclTerraform(struct?: DmsEndpointMon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DmsEndpointMongodbSettingsOutputReference extends cdktf.ComplexObject {
+export class DmsEndpointMongodbSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1685,7 +1685,7 @@ export interface DmsEndpointMysqlSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#clean_source_metadata_on_mismatch DmsEndpoint#clean_source_metadata_on_mismatch}
   */
-  readonly cleanSourceMetadataOnMismatch?: boolean | cdktf.IResolvable;
+  readonly cleanSourceMetadataOnMismatch?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#events_poll_interval DmsEndpoint#events_poll_interval}
   */
@@ -1717,87 +1717,87 @@ export interface DmsEndpointMysqlSettings {
 }
 
 export function dmsEndpointMysqlSettingsToTerraform(struct?: DmsEndpointMysqlSettingsOutputReference | DmsEndpointMysqlSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    after_connect_script: cdktf.stringToTerraform(struct!.afterConnectScript),
-    authentication_method: cdktf.stringToTerraform(struct!.authenticationMethod),
-    clean_source_metadata_on_mismatch: cdktf.booleanToTerraform(struct!.cleanSourceMetadataOnMismatch),
-    events_poll_interval: cdktf.numberToTerraform(struct!.eventsPollInterval),
-    execute_timeout: cdktf.numberToTerraform(struct!.executeTimeout),
-    max_file_size: cdktf.numberToTerraform(struct!.maxFileSize),
-    parallel_load_threads: cdktf.numberToTerraform(struct!.parallelLoadThreads),
-    server_timezone: cdktf.stringToTerraform(struct!.serverTimezone),
-    service_access_role_arn: cdktf.stringToTerraform(struct!.serviceAccessRoleArn),
-    target_db_type: cdktf.stringToTerraform(struct!.targetDbType),
+    after_connect_script: cdktn.stringToTerraform(struct!.afterConnectScript),
+    authentication_method: cdktn.stringToTerraform(struct!.authenticationMethod),
+    clean_source_metadata_on_mismatch: cdktn.booleanToTerraform(struct!.cleanSourceMetadataOnMismatch),
+    events_poll_interval: cdktn.numberToTerraform(struct!.eventsPollInterval),
+    execute_timeout: cdktn.numberToTerraform(struct!.executeTimeout),
+    max_file_size: cdktn.numberToTerraform(struct!.maxFileSize),
+    parallel_load_threads: cdktn.numberToTerraform(struct!.parallelLoadThreads),
+    server_timezone: cdktn.stringToTerraform(struct!.serverTimezone),
+    service_access_role_arn: cdktn.stringToTerraform(struct!.serviceAccessRoleArn),
+    target_db_type: cdktn.stringToTerraform(struct!.targetDbType),
   }
 }
 
 
 export function dmsEndpointMysqlSettingsToHclTerraform(struct?: DmsEndpointMysqlSettingsOutputReference | DmsEndpointMysqlSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     after_connect_script: {
-      value: cdktf.stringToHclTerraform(struct!.afterConnectScript),
+      value: cdktn.stringToHclTerraform(struct!.afterConnectScript),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     authentication_method: {
-      value: cdktf.stringToHclTerraform(struct!.authenticationMethod),
+      value: cdktn.stringToHclTerraform(struct!.authenticationMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     clean_source_metadata_on_mismatch: {
-      value: cdktf.booleanToHclTerraform(struct!.cleanSourceMetadataOnMismatch),
+      value: cdktn.booleanToHclTerraform(struct!.cleanSourceMetadataOnMismatch),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     events_poll_interval: {
-      value: cdktf.numberToHclTerraform(struct!.eventsPollInterval),
+      value: cdktn.numberToHclTerraform(struct!.eventsPollInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     execute_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.executeTimeout),
+      value: cdktn.numberToHclTerraform(struct!.executeTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_file_size: {
-      value: cdktf.numberToHclTerraform(struct!.maxFileSize),
+      value: cdktn.numberToHclTerraform(struct!.maxFileSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     parallel_load_threads: {
-      value: cdktf.numberToHclTerraform(struct!.parallelLoadThreads),
+      value: cdktn.numberToHclTerraform(struct!.parallelLoadThreads),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     server_timezone: {
-      value: cdktf.stringToHclTerraform(struct!.serverTimezone),
+      value: cdktn.stringToHclTerraform(struct!.serverTimezone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_access_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccessRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccessRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_db_type: {
-      value: cdktf.stringToHclTerraform(struct!.targetDbType),
+      value: cdktn.stringToHclTerraform(struct!.targetDbType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1808,14 +1808,14 @@ export function dmsEndpointMysqlSettingsToHclTerraform(struct?: DmsEndpointMysql
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DmsEndpointMysqlSettingsOutputReference extends cdktf.ComplexObject {
+export class DmsEndpointMysqlSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1927,11 +1927,11 @@ export class DmsEndpointMysqlSettingsOutputReference extends cdktf.ComplexObject
   }
 
   // clean_source_metadata_on_mismatch - computed: true, optional: true, required: false
-  private _cleanSourceMetadataOnMismatch?: boolean | cdktf.IResolvable; 
+  private _cleanSourceMetadataOnMismatch?: boolean | cdktn.IResolvable; 
   public get cleanSourceMetadataOnMismatch() {
     return this.getBooleanAttribute('clean_source_metadata_on_mismatch');
   }
-  public set cleanSourceMetadataOnMismatch(value: boolean | cdktf.IResolvable) {
+  public set cleanSourceMetadataOnMismatch(value: boolean | cdktn.IResolvable) {
     this._cleanSourceMetadataOnMismatch = value;
   }
   public resetCleanSourceMetadataOnMismatch() {
@@ -2062,24 +2062,24 @@ export interface DmsEndpointOracleSettings {
 }
 
 export function dmsEndpointOracleSettingsToTerraform(struct?: DmsEndpointOracleSettingsOutputReference | DmsEndpointOracleSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authentication_method: cdktf.stringToTerraform(struct!.authenticationMethod),
+    authentication_method: cdktn.stringToTerraform(struct!.authenticationMethod),
   }
 }
 
 
 export function dmsEndpointOracleSettingsToHclTerraform(struct?: DmsEndpointOracleSettingsOutputReference | DmsEndpointOracleSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authentication_method: {
-      value: cdktf.stringToHclTerraform(struct!.authenticationMethod),
+      value: cdktn.stringToHclTerraform(struct!.authenticationMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2090,14 +2090,14 @@ export function dmsEndpointOracleSettingsToHclTerraform(struct?: DmsEndpointOrac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DmsEndpointOracleSettingsOutputReference extends cdktf.ComplexObject {
+export class DmsEndpointOracleSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2154,7 +2154,7 @@ export interface DmsEndpointPostgresSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#capture_ddls DmsEndpoint#capture_ddls}
   */
-  readonly captureDdls?: boolean | cdktf.IResolvable;
+  readonly captureDdls?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#database_mode DmsEndpoint#database_mode}
   */
@@ -2170,11 +2170,11 @@ export interface DmsEndpointPostgresSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#fail_tasks_on_lob_truncation DmsEndpoint#fail_tasks_on_lob_truncation}
   */
-  readonly failTasksOnLobTruncation?: boolean | cdktf.IResolvable;
+  readonly failTasksOnLobTruncation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#heartbeat_enable DmsEndpoint#heartbeat_enable}
   */
-  readonly heartbeatEnable?: boolean | cdktf.IResolvable;
+  readonly heartbeatEnable?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#heartbeat_frequency DmsEndpoint#heartbeat_frequency}
   */
@@ -2186,11 +2186,11 @@ export interface DmsEndpointPostgresSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#map_boolean_as_boolean DmsEndpoint#map_boolean_as_boolean}
   */
-  readonly mapBooleanAsBoolean?: boolean | cdktf.IResolvable;
+  readonly mapBooleanAsBoolean?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#map_jsonb_as_clob DmsEndpoint#map_jsonb_as_clob}
   */
-  readonly mapJsonbAsClob?: boolean | cdktf.IResolvable;
+  readonly mapJsonbAsClob?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#map_long_varchar_as DmsEndpoint#map_long_varchar_as}
   */
@@ -2214,143 +2214,143 @@ export interface DmsEndpointPostgresSettings {
 }
 
 export function dmsEndpointPostgresSettingsToTerraform(struct?: DmsEndpointPostgresSettingsOutputReference | DmsEndpointPostgresSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    after_connect_script: cdktf.stringToTerraform(struct!.afterConnectScript),
-    authentication_method: cdktf.stringToTerraform(struct!.authenticationMethod),
-    babelfish_database_name: cdktf.stringToTerraform(struct!.babelfishDatabaseName),
-    capture_ddls: cdktf.booleanToTerraform(struct!.captureDdls),
-    database_mode: cdktf.stringToTerraform(struct!.databaseMode),
-    ddl_artifacts_schema: cdktf.stringToTerraform(struct!.ddlArtifactsSchema),
-    execute_timeout: cdktf.numberToTerraform(struct!.executeTimeout),
-    fail_tasks_on_lob_truncation: cdktf.booleanToTerraform(struct!.failTasksOnLobTruncation),
-    heartbeat_enable: cdktf.booleanToTerraform(struct!.heartbeatEnable),
-    heartbeat_frequency: cdktf.numberToTerraform(struct!.heartbeatFrequency),
-    heartbeat_schema: cdktf.stringToTerraform(struct!.heartbeatSchema),
-    map_boolean_as_boolean: cdktf.booleanToTerraform(struct!.mapBooleanAsBoolean),
-    map_jsonb_as_clob: cdktf.booleanToTerraform(struct!.mapJsonbAsClob),
-    map_long_varchar_as: cdktf.stringToTerraform(struct!.mapLongVarcharAs),
-    max_file_size: cdktf.numberToTerraform(struct!.maxFileSize),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    service_access_role_arn: cdktf.stringToTerraform(struct!.serviceAccessRoleArn),
-    slot_name: cdktf.stringToTerraform(struct!.slotName),
+    after_connect_script: cdktn.stringToTerraform(struct!.afterConnectScript),
+    authentication_method: cdktn.stringToTerraform(struct!.authenticationMethod),
+    babelfish_database_name: cdktn.stringToTerraform(struct!.babelfishDatabaseName),
+    capture_ddls: cdktn.booleanToTerraform(struct!.captureDdls),
+    database_mode: cdktn.stringToTerraform(struct!.databaseMode),
+    ddl_artifacts_schema: cdktn.stringToTerraform(struct!.ddlArtifactsSchema),
+    execute_timeout: cdktn.numberToTerraform(struct!.executeTimeout),
+    fail_tasks_on_lob_truncation: cdktn.booleanToTerraform(struct!.failTasksOnLobTruncation),
+    heartbeat_enable: cdktn.booleanToTerraform(struct!.heartbeatEnable),
+    heartbeat_frequency: cdktn.numberToTerraform(struct!.heartbeatFrequency),
+    heartbeat_schema: cdktn.stringToTerraform(struct!.heartbeatSchema),
+    map_boolean_as_boolean: cdktn.booleanToTerraform(struct!.mapBooleanAsBoolean),
+    map_jsonb_as_clob: cdktn.booleanToTerraform(struct!.mapJsonbAsClob),
+    map_long_varchar_as: cdktn.stringToTerraform(struct!.mapLongVarcharAs),
+    max_file_size: cdktn.numberToTerraform(struct!.maxFileSize),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    service_access_role_arn: cdktn.stringToTerraform(struct!.serviceAccessRoleArn),
+    slot_name: cdktn.stringToTerraform(struct!.slotName),
   }
 }
 
 
 export function dmsEndpointPostgresSettingsToHclTerraform(struct?: DmsEndpointPostgresSettingsOutputReference | DmsEndpointPostgresSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     after_connect_script: {
-      value: cdktf.stringToHclTerraform(struct!.afterConnectScript),
+      value: cdktn.stringToHclTerraform(struct!.afterConnectScript),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     authentication_method: {
-      value: cdktf.stringToHclTerraform(struct!.authenticationMethod),
+      value: cdktn.stringToHclTerraform(struct!.authenticationMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     babelfish_database_name: {
-      value: cdktf.stringToHclTerraform(struct!.babelfishDatabaseName),
+      value: cdktn.stringToHclTerraform(struct!.babelfishDatabaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     capture_ddls: {
-      value: cdktf.booleanToHclTerraform(struct!.captureDdls),
+      value: cdktn.booleanToHclTerraform(struct!.captureDdls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     database_mode: {
-      value: cdktf.stringToHclTerraform(struct!.databaseMode),
+      value: cdktn.stringToHclTerraform(struct!.databaseMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ddl_artifacts_schema: {
-      value: cdktf.stringToHclTerraform(struct!.ddlArtifactsSchema),
+      value: cdktn.stringToHclTerraform(struct!.ddlArtifactsSchema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     execute_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.executeTimeout),
+      value: cdktn.numberToHclTerraform(struct!.executeTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     fail_tasks_on_lob_truncation: {
-      value: cdktf.booleanToHclTerraform(struct!.failTasksOnLobTruncation),
+      value: cdktn.booleanToHclTerraform(struct!.failTasksOnLobTruncation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     heartbeat_enable: {
-      value: cdktf.booleanToHclTerraform(struct!.heartbeatEnable),
+      value: cdktn.booleanToHclTerraform(struct!.heartbeatEnable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     heartbeat_frequency: {
-      value: cdktf.numberToHclTerraform(struct!.heartbeatFrequency),
+      value: cdktn.numberToHclTerraform(struct!.heartbeatFrequency),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     heartbeat_schema: {
-      value: cdktf.stringToHclTerraform(struct!.heartbeatSchema),
+      value: cdktn.stringToHclTerraform(struct!.heartbeatSchema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     map_boolean_as_boolean: {
-      value: cdktf.booleanToHclTerraform(struct!.mapBooleanAsBoolean),
+      value: cdktn.booleanToHclTerraform(struct!.mapBooleanAsBoolean),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     map_jsonb_as_clob: {
-      value: cdktf.booleanToHclTerraform(struct!.mapJsonbAsClob),
+      value: cdktn.booleanToHclTerraform(struct!.mapJsonbAsClob),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     map_long_varchar_as: {
-      value: cdktf.stringToHclTerraform(struct!.mapLongVarcharAs),
+      value: cdktn.stringToHclTerraform(struct!.mapLongVarcharAs),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_file_size: {
-      value: cdktf.numberToHclTerraform(struct!.maxFileSize),
+      value: cdktn.numberToHclTerraform(struct!.maxFileSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_access_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccessRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccessRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     slot_name: {
-      value: cdktf.stringToHclTerraform(struct!.slotName),
+      value: cdktn.stringToHclTerraform(struct!.slotName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2361,14 +2361,14 @@ export function dmsEndpointPostgresSettingsToHclTerraform(struct?: DmsEndpointPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DmsEndpointPostgresSettingsOutputReference extends cdktf.ComplexObject {
+export class DmsEndpointPostgresSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2544,11 +2544,11 @@ export class DmsEndpointPostgresSettingsOutputReference extends cdktf.ComplexObj
   }
 
   // capture_ddls - computed: false, optional: true, required: false
-  private _captureDdls?: boolean | cdktf.IResolvable; 
+  private _captureDdls?: boolean | cdktn.IResolvable; 
   public get captureDdls() {
     return this.getBooleanAttribute('capture_ddls');
   }
-  public set captureDdls(value: boolean | cdktf.IResolvable) {
+  public set captureDdls(value: boolean | cdktn.IResolvable) {
     this._captureDdls = value;
   }
   public resetCaptureDdls() {
@@ -2608,11 +2608,11 @@ export class DmsEndpointPostgresSettingsOutputReference extends cdktf.ComplexObj
   }
 
   // fail_tasks_on_lob_truncation - computed: false, optional: true, required: false
-  private _failTasksOnLobTruncation?: boolean | cdktf.IResolvable; 
+  private _failTasksOnLobTruncation?: boolean | cdktn.IResolvable; 
   public get failTasksOnLobTruncation() {
     return this.getBooleanAttribute('fail_tasks_on_lob_truncation');
   }
-  public set failTasksOnLobTruncation(value: boolean | cdktf.IResolvable) {
+  public set failTasksOnLobTruncation(value: boolean | cdktn.IResolvable) {
     this._failTasksOnLobTruncation = value;
   }
   public resetFailTasksOnLobTruncation() {
@@ -2624,11 +2624,11 @@ export class DmsEndpointPostgresSettingsOutputReference extends cdktf.ComplexObj
   }
 
   // heartbeat_enable - computed: false, optional: true, required: false
-  private _heartbeatEnable?: boolean | cdktf.IResolvable; 
+  private _heartbeatEnable?: boolean | cdktn.IResolvable; 
   public get heartbeatEnable() {
     return this.getBooleanAttribute('heartbeat_enable');
   }
-  public set heartbeatEnable(value: boolean | cdktf.IResolvable) {
+  public set heartbeatEnable(value: boolean | cdktn.IResolvable) {
     this._heartbeatEnable = value;
   }
   public resetHeartbeatEnable() {
@@ -2672,11 +2672,11 @@ export class DmsEndpointPostgresSettingsOutputReference extends cdktf.ComplexObj
   }
 
   // map_boolean_as_boolean - computed: false, optional: true, required: false
-  private _mapBooleanAsBoolean?: boolean | cdktf.IResolvable; 
+  private _mapBooleanAsBoolean?: boolean | cdktn.IResolvable; 
   public get mapBooleanAsBoolean() {
     return this.getBooleanAttribute('map_boolean_as_boolean');
   }
-  public set mapBooleanAsBoolean(value: boolean | cdktf.IResolvable) {
+  public set mapBooleanAsBoolean(value: boolean | cdktn.IResolvable) {
     this._mapBooleanAsBoolean = value;
   }
   public resetMapBooleanAsBoolean() {
@@ -2688,11 +2688,11 @@ export class DmsEndpointPostgresSettingsOutputReference extends cdktf.ComplexObj
   }
 
   // map_jsonb_as_clob - computed: false, optional: true, required: false
-  private _mapJsonbAsClob?: boolean | cdktf.IResolvable; 
+  private _mapJsonbAsClob?: boolean | cdktn.IResolvable; 
   public get mapJsonbAsClob() {
     return this.getBooleanAttribute('map_jsonb_as_clob');
   }
-  public set mapJsonbAsClob(value: boolean | cdktf.IResolvable) {
+  public set mapJsonbAsClob(value: boolean | cdktn.IResolvable) {
     this._mapJsonbAsClob = value;
   }
   public resetMapJsonbAsClob() {
@@ -2815,66 +2815,66 @@ export interface DmsEndpointRedisSettings {
 }
 
 export function dmsEndpointRedisSettingsToTerraform(struct?: DmsEndpointRedisSettingsOutputReference | DmsEndpointRedisSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_password: cdktf.stringToTerraform(struct!.authPassword),
-    auth_type: cdktf.stringToTerraform(struct!.authType),
-    auth_user_name: cdktf.stringToTerraform(struct!.authUserName),
-    port: cdktf.numberToTerraform(struct!.port),
-    server_name: cdktf.stringToTerraform(struct!.serverName),
-    ssl_ca_certificate_arn: cdktf.stringToTerraform(struct!.sslCaCertificateArn),
-    ssl_security_protocol: cdktf.stringToTerraform(struct!.sslSecurityProtocol),
+    auth_password: cdktn.stringToTerraform(struct!.authPassword),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
+    auth_user_name: cdktn.stringToTerraform(struct!.authUserName),
+    port: cdktn.numberToTerraform(struct!.port),
+    server_name: cdktn.stringToTerraform(struct!.serverName),
+    ssl_ca_certificate_arn: cdktn.stringToTerraform(struct!.sslCaCertificateArn),
+    ssl_security_protocol: cdktn.stringToTerraform(struct!.sslSecurityProtocol),
   }
 }
 
 
 export function dmsEndpointRedisSettingsToHclTerraform(struct?: DmsEndpointRedisSettingsOutputReference | DmsEndpointRedisSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_password: {
-      value: cdktf.stringToHclTerraform(struct!.authPassword),
+      value: cdktn.stringToHclTerraform(struct!.authPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     auth_user_name: {
-      value: cdktf.stringToHclTerraform(struct!.authUserName),
+      value: cdktn.stringToHclTerraform(struct!.authUserName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     server_name: {
-      value: cdktf.stringToHclTerraform(struct!.serverName),
+      value: cdktn.stringToHclTerraform(struct!.serverName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssl_ca_certificate_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sslCaCertificateArn),
+      value: cdktn.stringToHclTerraform(struct!.sslCaCertificateArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssl_security_protocol: {
-      value: cdktf.stringToHclTerraform(struct!.sslSecurityProtocol),
+      value: cdktn.stringToHclTerraform(struct!.sslSecurityProtocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2885,14 +2885,14 @@ export function dmsEndpointRedisSettingsToHclTerraform(struct?: DmsEndpointRedis
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DmsEndpointRedisSettingsOutputReference extends cdktf.ComplexObject {
+export class DmsEndpointRedisSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3080,52 +3080,52 @@ export interface DmsEndpointRedshiftSettings {
 }
 
 export function dmsEndpointRedshiftSettingsToTerraform(struct?: DmsEndpointRedshiftSettingsOutputReference | DmsEndpointRedshiftSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_folder: cdktf.stringToTerraform(struct!.bucketFolder),
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    encryption_mode: cdktf.stringToTerraform(struct!.encryptionMode),
-    server_side_encryption_kms_key_id: cdktf.stringToTerraform(struct!.serverSideEncryptionKmsKeyId),
-    service_access_role_arn: cdktf.stringToTerraform(struct!.serviceAccessRoleArn),
+    bucket_folder: cdktn.stringToTerraform(struct!.bucketFolder),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    encryption_mode: cdktn.stringToTerraform(struct!.encryptionMode),
+    server_side_encryption_kms_key_id: cdktn.stringToTerraform(struct!.serverSideEncryptionKmsKeyId),
+    service_access_role_arn: cdktn.stringToTerraform(struct!.serviceAccessRoleArn),
   }
 }
 
 
 export function dmsEndpointRedshiftSettingsToHclTerraform(struct?: DmsEndpointRedshiftSettingsOutputReference | DmsEndpointRedshiftSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_folder: {
-      value: cdktf.stringToHclTerraform(struct!.bucketFolder),
+      value: cdktn.stringToHclTerraform(struct!.bucketFolder),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encryption_mode: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionMode),
+      value: cdktn.stringToHclTerraform(struct!.encryptionMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     server_side_encryption_kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.serverSideEncryptionKmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.serverSideEncryptionKmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_access_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccessRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccessRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3136,14 +3136,14 @@ export function dmsEndpointRedshiftSettingsToHclTerraform(struct?: DmsEndpointRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DmsEndpointRedshiftSettingsOutputReference extends cdktf.ComplexObject {
+export class DmsEndpointRedshiftSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3283,32 +3283,32 @@ export interface DmsEndpointTimeouts {
   readonly delete?: string;
 }
 
-export function dmsEndpointTimeoutsToTerraform(struct?: DmsEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dmsEndpointTimeoutsToTerraform(struct?: DmsEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function dmsEndpointTimeoutsToHclTerraform(struct?: DmsEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dmsEndpointTimeoutsToHclTerraform(struct?: DmsEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3319,19 +3319,19 @@ export function dmsEndpointTimeoutsToHclTerraform(struct?: DmsEndpointTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DmsEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DmsEndpointTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DmsEndpointTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DmsEndpointTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3348,14 +3348,14 @@ export class DmsEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DmsEndpointTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DmsEndpointTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3403,7 +3403,7 @@ export class DmsEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint aws_dms_endpoint}
 */
-export class DmsEndpoint extends cdktf.TerraformResource {
+export class DmsEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -3414,14 +3414,14 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DmsEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DmsEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DmsEndpoint to import
   * @param importFromId The id of the existing DmsEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DmsEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dms_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dms_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -3628,11 +3628,11 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   }
 
   // pause_replication_tasks - computed: false, optional: true, required: false
-  private _pauseReplicationTasks?: boolean | cdktf.IResolvable; 
+  private _pauseReplicationTasks?: boolean | cdktn.IResolvable; 
   public get pauseReplicationTasks() {
     return this.getBooleanAttribute('pause_replication_tasks');
   }
-  public set pauseReplicationTasks(value: boolean | cdktf.IResolvable) {
+  public set pauseReplicationTasks(value: boolean | cdktn.IResolvable) {
     this._pauseReplicationTasks = value;
   }
   public resetPauseReplicationTasks() {
@@ -3969,26 +3969,26 @@ export class DmsEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_arn: cdktf.stringToTerraform(this._certificateArn),
-      database_name: cdktf.stringToTerraform(this._databaseName),
-      endpoint_id: cdktf.stringToTerraform(this._endpointId),
-      endpoint_type: cdktf.stringToTerraform(this._endpointType),
-      engine_name: cdktf.stringToTerraform(this._engineName),
-      extra_connection_attributes: cdktf.stringToTerraform(this._extraConnectionAttributes),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
-      password: cdktf.stringToTerraform(this._password),
-      pause_replication_tasks: cdktf.booleanToTerraform(this._pauseReplicationTasks),
-      port: cdktf.numberToTerraform(this._port),
-      region: cdktf.stringToTerraform(this._region),
-      secrets_manager_access_role_arn: cdktf.stringToTerraform(this._secretsManagerAccessRoleArn),
-      secrets_manager_arn: cdktf.stringToTerraform(this._secretsManagerArn),
-      server_name: cdktf.stringToTerraform(this._serverName),
-      service_access_role: cdktf.stringToTerraform(this._serviceAccessRole),
-      ssl_mode: cdktf.stringToTerraform(this._sslMode),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      username: cdktf.stringToTerraform(this._username),
+      certificate_arn: cdktn.stringToTerraform(this._certificateArn),
+      database_name: cdktn.stringToTerraform(this._databaseName),
+      endpoint_id: cdktn.stringToTerraform(this._endpointId),
+      endpoint_type: cdktn.stringToTerraform(this._endpointType),
+      engine_name: cdktn.stringToTerraform(this._engineName),
+      extra_connection_attributes: cdktn.stringToTerraform(this._extraConnectionAttributes),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_arn: cdktn.stringToTerraform(this._kmsKeyArn),
+      password: cdktn.stringToTerraform(this._password),
+      pause_replication_tasks: cdktn.booleanToTerraform(this._pauseReplicationTasks),
+      port: cdktn.numberToTerraform(this._port),
+      region: cdktn.stringToTerraform(this._region),
+      secrets_manager_access_role_arn: cdktn.stringToTerraform(this._secretsManagerAccessRoleArn),
+      secrets_manager_arn: cdktn.stringToTerraform(this._secretsManagerArn),
+      server_name: cdktn.stringToTerraform(this._serverName),
+      service_access_role: cdktn.stringToTerraform(this._serviceAccessRole),
+      ssl_mode: cdktn.stringToTerraform(this._sslMode),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      username: cdktn.stringToTerraform(this._username),
       elasticsearch_settings: dmsEndpointElasticsearchSettingsToTerraform(this._elasticsearchSettings.internalValue),
       kafka_settings: dmsEndpointKafkaSettingsToTerraform(this._kafkaSettings.internalValue),
       kinesis_settings: dmsEndpointKinesisSettingsToTerraform(this._kinesisSettings.internalValue),
@@ -4005,121 +4005,121 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       certificate_arn: {
-        value: cdktf.stringToHclTerraform(this._certificateArn),
+        value: cdktn.stringToHclTerraform(this._certificateArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_name: {
-        value: cdktf.stringToHclTerraform(this._databaseName),
+        value: cdktn.stringToHclTerraform(this._databaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._endpointId),
+        value: cdktn.stringToHclTerraform(this._endpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_type: {
-        value: cdktf.stringToHclTerraform(this._endpointType),
+        value: cdktn.stringToHclTerraform(this._endpointType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_name: {
-        value: cdktf.stringToHclTerraform(this._engineName),
+        value: cdktn.stringToHclTerraform(this._engineName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       extra_connection_attributes: {
-        value: cdktf.stringToHclTerraform(this._extraConnectionAttributes),
+        value: cdktn.stringToHclTerraform(this._extraConnectionAttributes),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_arn: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyArn),
+        value: cdktn.stringToHclTerraform(this._kmsKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pause_replication_tasks: {
-        value: cdktf.booleanToHclTerraform(this._pauseReplicationTasks),
+        value: cdktn.booleanToHclTerraform(this._pauseReplicationTasks),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secrets_manager_access_role_arn: {
-        value: cdktf.stringToHclTerraform(this._secretsManagerAccessRoleArn),
+        value: cdktn.stringToHclTerraform(this._secretsManagerAccessRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secrets_manager_arn: {
-        value: cdktf.stringToHclTerraform(this._secretsManagerArn),
+        value: cdktn.stringToHclTerraform(this._secretsManagerArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_name: {
-        value: cdktf.stringToHclTerraform(this._serverName),
+        value: cdktn.stringToHclTerraform(this._serverName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_access_role: {
-        value: cdktf.stringToHclTerraform(this._serviceAccessRole),
+        value: cdktn.stringToHclTerraform(this._serviceAccessRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ssl_mode: {
-        value: cdktf.stringToHclTerraform(this._sslMode),
+        value: cdktn.stringToHclTerraform(this._sslMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       username: {
-        value: cdktf.stringToHclTerraform(this._username),
+        value: cdktn.stringToHclTerraform(this._username),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

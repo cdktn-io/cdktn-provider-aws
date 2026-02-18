@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsmquicksetupConfigurationManagerConfig extends cdktf.TerraformMetaArguments {
+export interface SsmquicksetupConfigurationManagerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmquicksetup_configuration_manager#description SsmquicksetupConfigurationManager#description}
   */
@@ -35,7 +35,7 @@ export interface SsmquicksetupConfigurationManagerConfig extends cdktf.Terraform
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmquicksetup_configuration_manager#configuration_definition SsmquicksetupConfigurationManager#configuration_definition}
   */
-  readonly configurationDefinition?: SsmquicksetupConfigurationManagerConfigurationDefinition[] | cdktf.IResolvable;
+  readonly configurationDefinition?: SsmquicksetupConfigurationManagerConfigurationDefinition[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -47,8 +47,8 @@ export interface SsmquicksetupConfigurationManagerStatusSummaries {
 }
 
 export function ssmquicksetupConfigurationManagerStatusSummariesToTerraform(struct?: SsmquicksetupConfigurationManagerStatusSummaries): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -57,8 +57,8 @@ export function ssmquicksetupConfigurationManagerStatusSummariesToTerraform(stru
 
 
 export function ssmquicksetupConfigurationManagerStatusSummariesToHclTerraform(struct?: SsmquicksetupConfigurationManagerStatusSummaries): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -66,7 +66,7 @@ export function ssmquicksetupConfigurationManagerStatusSummariesToHclTerraform(s
   return attrs;
 }
 
-export class SsmquicksetupConfigurationManagerStatusSummariesOutputReference extends cdktf.ComplexObject {
+export class SsmquicksetupConfigurationManagerStatusSummariesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -75,7 +75,7 @@ export class SsmquicksetupConfigurationManagerStatusSummariesOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -110,14 +110,14 @@ export class SsmquicksetupConfigurationManagerStatusSummariesOutputReference ext
   }
 }
 
-export class SsmquicksetupConfigurationManagerStatusSummariesList extends cdktf.ComplexList {
+export class SsmquicksetupConfigurationManagerStatusSummariesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -151,53 +151,53 @@ export interface SsmquicksetupConfigurationManagerConfigurationDefinition {
   readonly typeVersion?: string;
 }
 
-export function ssmquicksetupConfigurationManagerConfigurationDefinitionToTerraform(struct?: SsmquicksetupConfigurationManagerConfigurationDefinition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmquicksetupConfigurationManagerConfigurationDefinitionToTerraform(struct?: SsmquicksetupConfigurationManagerConfigurationDefinition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    local_deployment_administration_role_arn: cdktf.stringToTerraform(struct!.localDeploymentAdministrationRoleArn),
-    local_deployment_execution_role_name: cdktf.stringToTerraform(struct!.localDeploymentExecutionRoleName),
-    parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
-    type: cdktf.stringToTerraform(struct!.type),
-    type_version: cdktf.stringToTerraform(struct!.typeVersion),
+    local_deployment_administration_role_arn: cdktn.stringToTerraform(struct!.localDeploymentAdministrationRoleArn),
+    local_deployment_execution_role_name: cdktn.stringToTerraform(struct!.localDeploymentExecutionRoleName),
+    parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
+    type: cdktn.stringToTerraform(struct!.type),
+    type_version: cdktn.stringToTerraform(struct!.typeVersion),
   }
 }
 
 
-export function ssmquicksetupConfigurationManagerConfigurationDefinitionToHclTerraform(struct?: SsmquicksetupConfigurationManagerConfigurationDefinition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmquicksetupConfigurationManagerConfigurationDefinitionToHclTerraform(struct?: SsmquicksetupConfigurationManagerConfigurationDefinition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     local_deployment_administration_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.localDeploymentAdministrationRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.localDeploymentAdministrationRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     local_deployment_execution_role_name: {
-      value: cdktf.stringToHclTerraform(struct!.localDeploymentExecutionRoleName),
+      value: cdktn.stringToHclTerraform(struct!.localDeploymentExecutionRoleName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type_version: {
-      value: cdktf.stringToHclTerraform(struct!.typeVersion),
+      value: cdktn.stringToHclTerraform(struct!.typeVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -208,9 +208,9 @@ export function ssmquicksetupConfigurationManagerConfigurationDefinitionToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmquicksetupConfigurationManagerConfigurationDefinitionOutputReference extends cdktf.ComplexObject {
+export class SsmquicksetupConfigurationManagerConfigurationDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -218,11 +218,11 @@ export class SsmquicksetupConfigurationManagerConfigurationDefinitionOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmquicksetupConfigurationManagerConfigurationDefinition | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmquicksetupConfigurationManagerConfigurationDefinition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -251,7 +251,7 @@ export class SsmquicksetupConfigurationManagerConfigurationDefinitionOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmquicksetupConfigurationManagerConfigurationDefinition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmquicksetupConfigurationManagerConfigurationDefinition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -261,7 +261,7 @@ export class SsmquicksetupConfigurationManagerConfigurationDefinitionOutputRefer
       this._type = undefined;
       this._typeVersion = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -356,15 +356,15 @@ export class SsmquicksetupConfigurationManagerConfigurationDefinitionOutputRefer
   }
 }
 
-export class SsmquicksetupConfigurationManagerConfigurationDefinitionList extends cdktf.ComplexList {
-  public internalValue? : SsmquicksetupConfigurationManagerConfigurationDefinition[] | cdktf.IResolvable
+export class SsmquicksetupConfigurationManagerConfigurationDefinitionList extends cdktn.ComplexList {
+  public internalValue? : SsmquicksetupConfigurationManagerConfigurationDefinition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -396,39 +396,39 @@ export interface SsmquicksetupConfigurationManagerTimeouts {
   readonly update?: string;
 }
 
-export function ssmquicksetupConfigurationManagerTimeoutsToTerraform(struct?: SsmquicksetupConfigurationManagerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmquicksetupConfigurationManagerTimeoutsToTerraform(struct?: SsmquicksetupConfigurationManagerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function ssmquicksetupConfigurationManagerTimeoutsToHclTerraform(struct?: SsmquicksetupConfigurationManagerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmquicksetupConfigurationManagerTimeoutsToHclTerraform(struct?: SsmquicksetupConfigurationManagerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -439,19 +439,19 @@ export function ssmquicksetupConfigurationManagerTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmquicksetupConfigurationManagerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SsmquicksetupConfigurationManagerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SsmquicksetupConfigurationManagerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmquicksetupConfigurationManagerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -472,7 +472,7 @@ export class SsmquicksetupConfigurationManagerTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmquicksetupConfigurationManagerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmquicksetupConfigurationManagerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -480,7 +480,7 @@ export class SsmquicksetupConfigurationManagerTimeoutsOutputReference extends cd
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -545,7 +545,7 @@ export class SsmquicksetupConfigurationManagerTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmquicksetup_configuration_manager aws_ssmquicksetup_configuration_manager}
 */
-export class SsmquicksetupConfigurationManager extends cdktf.TerraformResource {
+export class SsmquicksetupConfigurationManager extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -556,14 +556,14 @@ export class SsmquicksetupConfigurationManager extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsmquicksetupConfigurationManager resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsmquicksetupConfigurationManager resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmquicksetupConfigurationManager to import
   * @param importFromId The id of the existing SsmquicksetupConfigurationManager that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmquicksetup_configuration_manager#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmquicksetupConfigurationManager to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssmquicksetup_configuration_manager", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssmquicksetup_configuration_manager", importId: importFromId, provider });
       }
 
   // ===========
@@ -678,7 +678,7 @@ export class SsmquicksetupConfigurationManager extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -688,7 +688,7 @@ export class SsmquicksetupConfigurationManager extends cdktf.TerraformResource {
   public get configurationDefinition() {
     return this._configurationDefinition;
   }
-  public putConfigurationDefinition(value: SsmquicksetupConfigurationManagerConfigurationDefinition[] | cdktf.IResolvable) {
+  public putConfigurationDefinition(value: SsmquicksetupConfigurationManagerConfigurationDefinition[] | cdktn.IResolvable) {
     this._configurationDefinition.internalValue = value;
   }
   public resetConfigurationDefinition() {
@@ -721,11 +721,11 @@ export class SsmquicksetupConfigurationManager extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      configuration_definition: cdktf.listMapper(ssmquicksetupConfigurationManagerConfigurationDefinitionToTerraform, true)(this._configurationDefinition.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      configuration_definition: cdktn.listMapper(ssmquicksetupConfigurationManagerConfigurationDefinitionToTerraform, true)(this._configurationDefinition.internalValue),
       timeouts: ssmquicksetupConfigurationManagerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -733,31 +733,31 @@ export class SsmquicksetupConfigurationManager extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       configuration_definition: {
-        value: cdktf.listMapperHcl(ssmquicksetupConfigurationManagerConfigurationDefinitionToHclTerraform, true)(this._configurationDefinition.internalValue),
+        value: cdktn.listMapperHcl(ssmquicksetupConfigurationManagerConfigurationDefinitionToHclTerraform, true)(this._configurationDefinition.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SsmquicksetupConfigurationManagerConfigurationDefinitionList",

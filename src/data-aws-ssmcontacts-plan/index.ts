@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsSsmcontactsPlanConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSsmcontactsPlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssmcontacts_plan#contact_id DataAwsSsmcontactsPlan#contact_id}
   */
@@ -34,8 +34,8 @@ export interface DataAwsSsmcontactsPlanStageTargetChannelTargetInfo {
 }
 
 export function dataAwsSsmcontactsPlanStageTargetChannelTargetInfoToTerraform(struct?: DataAwsSsmcontactsPlanStageTargetChannelTargetInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -44,8 +44,8 @@ export function dataAwsSsmcontactsPlanStageTargetChannelTargetInfoToTerraform(st
 
 
 export function dataAwsSsmcontactsPlanStageTargetChannelTargetInfoToHclTerraform(struct?: DataAwsSsmcontactsPlanStageTargetChannelTargetInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -53,7 +53,7 @@ export function dataAwsSsmcontactsPlanStageTargetChannelTargetInfoToHclTerraform
   return attrs;
 }
 
-export class DataAwsSsmcontactsPlanStageTargetChannelTargetInfoOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmcontactsPlanStageTargetChannelTargetInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -62,7 +62,7 @@ export class DataAwsSsmcontactsPlanStageTargetChannelTargetInfoOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -92,14 +92,14 @@ export class DataAwsSsmcontactsPlanStageTargetChannelTargetInfoOutputReference e
   }
 }
 
-export class DataAwsSsmcontactsPlanStageTargetChannelTargetInfoList extends cdktf.ComplexList {
+export class DataAwsSsmcontactsPlanStageTargetChannelTargetInfoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -114,8 +114,8 @@ export interface DataAwsSsmcontactsPlanStageTargetContactTargetInfo {
 }
 
 export function dataAwsSsmcontactsPlanStageTargetContactTargetInfoToTerraform(struct?: DataAwsSsmcontactsPlanStageTargetContactTargetInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -124,8 +124,8 @@ export function dataAwsSsmcontactsPlanStageTargetContactTargetInfoToTerraform(st
 
 
 export function dataAwsSsmcontactsPlanStageTargetContactTargetInfoToHclTerraform(struct?: DataAwsSsmcontactsPlanStageTargetContactTargetInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -133,7 +133,7 @@ export function dataAwsSsmcontactsPlanStageTargetContactTargetInfoToHclTerraform
   return attrs;
 }
 
-export class DataAwsSsmcontactsPlanStageTargetContactTargetInfoOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmcontactsPlanStageTargetContactTargetInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -142,7 +142,7 @@ export class DataAwsSsmcontactsPlanStageTargetContactTargetInfoOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -172,14 +172,14 @@ export class DataAwsSsmcontactsPlanStageTargetContactTargetInfoOutputReference e
   }
 }
 
-export class DataAwsSsmcontactsPlanStageTargetContactTargetInfoList extends cdktf.ComplexList {
+export class DataAwsSsmcontactsPlanStageTargetContactTargetInfoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -194,8 +194,8 @@ export interface DataAwsSsmcontactsPlanStageTarget {
 }
 
 export function dataAwsSsmcontactsPlanStageTargetToTerraform(struct?: DataAwsSsmcontactsPlanStageTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -204,8 +204,8 @@ export function dataAwsSsmcontactsPlanStageTargetToTerraform(struct?: DataAwsSsm
 
 
 export function dataAwsSsmcontactsPlanStageTargetToHclTerraform(struct?: DataAwsSsmcontactsPlanStageTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -213,7 +213,7 @@ export function dataAwsSsmcontactsPlanStageTargetToHclTerraform(struct?: DataAws
   return attrs;
 }
 
-export class DataAwsSsmcontactsPlanStageTargetOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmcontactsPlanStageTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -222,7 +222,7 @@ export class DataAwsSsmcontactsPlanStageTargetOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -254,14 +254,14 @@ export class DataAwsSsmcontactsPlanStageTargetOutputReference extends cdktf.Comp
   }
 }
 
-export class DataAwsSsmcontactsPlanStageTargetList extends cdktf.ComplexList {
+export class DataAwsSsmcontactsPlanStageTargetList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -276,8 +276,8 @@ export interface DataAwsSsmcontactsPlanStage {
 }
 
 export function dataAwsSsmcontactsPlanStageToTerraform(struct?: DataAwsSsmcontactsPlanStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -286,8 +286,8 @@ export function dataAwsSsmcontactsPlanStageToTerraform(struct?: DataAwsSsmcontac
 
 
 export function dataAwsSsmcontactsPlanStageToHclTerraform(struct?: DataAwsSsmcontactsPlanStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -295,7 +295,7 @@ export function dataAwsSsmcontactsPlanStageToHclTerraform(struct?: DataAwsSsmcon
   return attrs;
 }
 
-export class DataAwsSsmcontactsPlanStageOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmcontactsPlanStageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -304,7 +304,7 @@ export class DataAwsSsmcontactsPlanStageOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -335,14 +335,14 @@ export class DataAwsSsmcontactsPlanStageOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class DataAwsSsmcontactsPlanStageList extends cdktf.ComplexList {
+export class DataAwsSsmcontactsPlanStageList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -357,7 +357,7 @@ export class DataAwsSsmcontactsPlanStageList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssmcontacts_plan aws_ssmcontacts_plan}
 */
-export class DataAwsSsmcontactsPlan extends cdktf.TerraformDataSource {
+export class DataAwsSsmcontactsPlan extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -368,14 +368,14 @@ export class DataAwsSsmcontactsPlan extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsSsmcontactsPlan resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsSsmcontactsPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSsmcontactsPlan to import
   * @param importFromId The id of the existing DataAwsSsmcontactsPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssmcontacts_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSsmcontactsPlan to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssmcontacts_plan", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssmcontacts_plan", importId: importFromId, provider });
       }
 
   // ===========
@@ -471,28 +471,28 @@ export class DataAwsSsmcontactsPlan extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      contact_id: cdktf.stringToTerraform(this._contactId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      contact_id: cdktn.stringToTerraform(this._contactId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       contact_id: {
-        value: cdktf.stringToHclTerraform(this._contactId),
+        value: cdktn.stringToHclTerraform(this._contactId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

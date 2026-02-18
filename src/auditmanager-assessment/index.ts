@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AuditmanagerAssessmentConfig extends cdktf.TerraformMetaArguments {
+export interface AuditmanagerAssessmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_assessment#description AuditmanagerAssessment#description}
   */
@@ -39,26 +39,26 @@ export interface AuditmanagerAssessmentConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_assessment#assessment_reports_destination AuditmanagerAssessment#assessment_reports_destination}
   */
-  readonly assessmentReportsDestination?: AuditmanagerAssessmentAssessmentReportsDestination[] | cdktf.IResolvable;
+  readonly assessmentReportsDestination?: AuditmanagerAssessmentAssessmentReportsDestination[] | cdktn.IResolvable;
   /**
   * roles block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_assessment#roles AuditmanagerAssessment#roles}
   */
-  readonly roles?: AuditmanagerAssessmentRoles[] | cdktf.IResolvable;
+  readonly roles?: AuditmanagerAssessmentRoles[] | cdktn.IResolvable;
   /**
   * scope block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_assessment#scope AuditmanagerAssessment#scope}
   */
-  readonly scope?: AuditmanagerAssessmentScope[] | cdktf.IResolvable;
+  readonly scope?: AuditmanagerAssessmentScope[] | cdktn.IResolvable;
 }
 export interface AuditmanagerAssessmentRolesAll {
 }
 
 export function auditmanagerAssessmentRolesAllToTerraform(struct?: AuditmanagerAssessmentRolesAll): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -67,8 +67,8 @@ export function auditmanagerAssessmentRolesAllToTerraform(struct?: AuditmanagerA
 
 
 export function auditmanagerAssessmentRolesAllToHclTerraform(struct?: AuditmanagerAssessmentRolesAll): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -76,7 +76,7 @@ export function auditmanagerAssessmentRolesAllToHclTerraform(struct?: Auditmanag
   return attrs;
 }
 
-export class AuditmanagerAssessmentRolesAllOutputReference extends cdktf.ComplexObject {
+export class AuditmanagerAssessmentRolesAllOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -85,7 +85,7 @@ export class AuditmanagerAssessmentRolesAllOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -115,14 +115,14 @@ export class AuditmanagerAssessmentRolesAllOutputReference extends cdktf.Complex
   }
 }
 
-export class AuditmanagerAssessmentRolesAllList extends cdktf.ComplexList {
+export class AuditmanagerAssessmentRolesAllList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -144,32 +144,32 @@ export interface AuditmanagerAssessmentAssessmentReportsDestination {
   readonly destinationType: string;
 }
 
-export function auditmanagerAssessmentAssessmentReportsDestinationToTerraform(struct?: AuditmanagerAssessmentAssessmentReportsDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function auditmanagerAssessmentAssessmentReportsDestinationToTerraform(struct?: AuditmanagerAssessmentAssessmentReportsDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
-    destination_type: cdktf.stringToTerraform(struct!.destinationType),
+    destination: cdktn.stringToTerraform(struct!.destination),
+    destination_type: cdktn.stringToTerraform(struct!.destinationType),
   }
 }
 
 
-export function auditmanagerAssessmentAssessmentReportsDestinationToHclTerraform(struct?: AuditmanagerAssessmentAssessmentReportsDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function auditmanagerAssessmentAssessmentReportsDestinationToHclTerraform(struct?: AuditmanagerAssessmentAssessmentReportsDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination_type: {
-      value: cdktf.stringToHclTerraform(struct!.destinationType),
+      value: cdktn.stringToHclTerraform(struct!.destinationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -180,9 +180,9 @@ export function auditmanagerAssessmentAssessmentReportsDestinationToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AuditmanagerAssessmentAssessmentReportsDestinationOutputReference extends cdktf.ComplexObject {
+export class AuditmanagerAssessmentAssessmentReportsDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -190,11 +190,11 @@ export class AuditmanagerAssessmentAssessmentReportsDestinationOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AuditmanagerAssessmentAssessmentReportsDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): AuditmanagerAssessmentAssessmentReportsDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -211,14 +211,14 @@ export class AuditmanagerAssessmentAssessmentReportsDestinationOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AuditmanagerAssessmentAssessmentReportsDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AuditmanagerAssessmentAssessmentReportsDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._destination = undefined;
       this._destinationType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -257,15 +257,15 @@ export class AuditmanagerAssessmentAssessmentReportsDestinationOutputReference e
   }
 }
 
-export class AuditmanagerAssessmentAssessmentReportsDestinationList extends cdktf.ComplexList {
-  public internalValue? : AuditmanagerAssessmentAssessmentReportsDestination[] | cdktf.IResolvable
+export class AuditmanagerAssessmentAssessmentReportsDestinationList extends cdktn.ComplexList {
+  public internalValue? : AuditmanagerAssessmentAssessmentReportsDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -287,32 +287,32 @@ export interface AuditmanagerAssessmentRoles {
   readonly roleType: string;
 }
 
-export function auditmanagerAssessmentRolesToTerraform(struct?: AuditmanagerAssessmentRoles | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function auditmanagerAssessmentRolesToTerraform(struct?: AuditmanagerAssessmentRoles | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    role_type: cdktf.stringToTerraform(struct!.roleType),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    role_type: cdktn.stringToTerraform(struct!.roleType),
   }
 }
 
 
-export function auditmanagerAssessmentRolesToHclTerraform(struct?: AuditmanagerAssessmentRoles | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function auditmanagerAssessmentRolesToHclTerraform(struct?: AuditmanagerAssessmentRoles | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_type: {
-      value: cdktf.stringToHclTerraform(struct!.roleType),
+      value: cdktn.stringToHclTerraform(struct!.roleType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -323,9 +323,9 @@ export function auditmanagerAssessmentRolesToHclTerraform(struct?: AuditmanagerA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AuditmanagerAssessmentRolesOutputReference extends cdktf.ComplexObject {
+export class AuditmanagerAssessmentRolesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -333,11 +333,11 @@ export class AuditmanagerAssessmentRolesOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AuditmanagerAssessmentRoles | cdktf.IResolvable | undefined {
+  public get internalValue(): AuditmanagerAssessmentRoles | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -354,14 +354,14 @@ export class AuditmanagerAssessmentRolesOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AuditmanagerAssessmentRoles | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AuditmanagerAssessmentRoles | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._roleArn = undefined;
       this._roleType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -400,15 +400,15 @@ export class AuditmanagerAssessmentRolesOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class AuditmanagerAssessmentRolesList extends cdktf.ComplexList {
-  public internalValue? : AuditmanagerAssessmentRoles[] | cdktf.IResolvable
+export class AuditmanagerAssessmentRolesList extends cdktn.ComplexList {
+  public internalValue? : AuditmanagerAssessmentRoles[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -429,25 +429,25 @@ export interface AuditmanagerAssessmentScopeAwsAccounts {
   readonly id: string;
 }
 
-export function auditmanagerAssessmentScopeAwsAccountsToTerraform(struct?: AuditmanagerAssessmentScopeAwsAccounts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function auditmanagerAssessmentScopeAwsAccountsToTerraform(struct?: AuditmanagerAssessmentScopeAwsAccounts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function auditmanagerAssessmentScopeAwsAccountsToHclTerraform(struct?: AuditmanagerAssessmentScopeAwsAccounts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function auditmanagerAssessmentScopeAwsAccountsToHclTerraform(struct?: AuditmanagerAssessmentScopeAwsAccounts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -458,9 +458,9 @@ export function auditmanagerAssessmentScopeAwsAccountsToHclTerraform(struct?: Au
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AuditmanagerAssessmentScopeAwsAccountsOutputReference extends cdktf.ComplexObject {
+export class AuditmanagerAssessmentScopeAwsAccountsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -468,11 +468,11 @@ export class AuditmanagerAssessmentScopeAwsAccountsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AuditmanagerAssessmentScopeAwsAccounts | cdktf.IResolvable | undefined {
+  public get internalValue(): AuditmanagerAssessmentScopeAwsAccounts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -485,13 +485,13 @@ export class AuditmanagerAssessmentScopeAwsAccountsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AuditmanagerAssessmentScopeAwsAccounts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AuditmanagerAssessmentScopeAwsAccounts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -516,15 +516,15 @@ export class AuditmanagerAssessmentScopeAwsAccountsOutputReference extends cdktf
   }
 }
 
-export class AuditmanagerAssessmentScopeAwsAccountsList extends cdktf.ComplexList {
-  public internalValue? : AuditmanagerAssessmentScopeAwsAccounts[] | cdktf.IResolvable
+export class AuditmanagerAssessmentScopeAwsAccountsList extends cdktn.ComplexList {
+  public internalValue? : AuditmanagerAssessmentScopeAwsAccounts[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -542,25 +542,25 @@ export interface AuditmanagerAssessmentScopeAwsServices {
   readonly serviceName: string;
 }
 
-export function auditmanagerAssessmentScopeAwsServicesToTerraform(struct?: AuditmanagerAssessmentScopeAwsServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function auditmanagerAssessmentScopeAwsServicesToTerraform(struct?: AuditmanagerAssessmentScopeAwsServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service_name: cdktf.stringToTerraform(struct!.serviceName),
+    service_name: cdktn.stringToTerraform(struct!.serviceName),
   }
 }
 
 
-export function auditmanagerAssessmentScopeAwsServicesToHclTerraform(struct?: AuditmanagerAssessmentScopeAwsServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function auditmanagerAssessmentScopeAwsServicesToHclTerraform(struct?: AuditmanagerAssessmentScopeAwsServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service_name: {
-      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      value: cdktn.stringToHclTerraform(struct!.serviceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -571,9 +571,9 @@ export function auditmanagerAssessmentScopeAwsServicesToHclTerraform(struct?: Au
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AuditmanagerAssessmentScopeAwsServicesOutputReference extends cdktf.ComplexObject {
+export class AuditmanagerAssessmentScopeAwsServicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -581,11 +581,11 @@ export class AuditmanagerAssessmentScopeAwsServicesOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AuditmanagerAssessmentScopeAwsServices | cdktf.IResolvable | undefined {
+  public get internalValue(): AuditmanagerAssessmentScopeAwsServices | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -598,13 +598,13 @@ export class AuditmanagerAssessmentScopeAwsServicesOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AuditmanagerAssessmentScopeAwsServices | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AuditmanagerAssessmentScopeAwsServices | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._serviceName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -629,15 +629,15 @@ export class AuditmanagerAssessmentScopeAwsServicesOutputReference extends cdktf
   }
 }
 
-export class AuditmanagerAssessmentScopeAwsServicesList extends cdktf.ComplexList {
-  public internalValue? : AuditmanagerAssessmentScopeAwsServices[] | cdktf.IResolvable
+export class AuditmanagerAssessmentScopeAwsServicesList extends cdktn.ComplexList {
+  public internalValue? : AuditmanagerAssessmentScopeAwsServices[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -654,41 +654,41 @@ export interface AuditmanagerAssessmentScope {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_assessment#aws_accounts AuditmanagerAssessment#aws_accounts}
   */
-  readonly awsAccounts?: AuditmanagerAssessmentScopeAwsAccounts[] | cdktf.IResolvable;
+  readonly awsAccounts?: AuditmanagerAssessmentScopeAwsAccounts[] | cdktn.IResolvable;
   /**
   * aws_services block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_assessment#aws_services AuditmanagerAssessment#aws_services}
   */
-  readonly awsServices?: AuditmanagerAssessmentScopeAwsServices[] | cdktf.IResolvable;
+  readonly awsServices?: AuditmanagerAssessmentScopeAwsServices[] | cdktn.IResolvable;
 }
 
-export function auditmanagerAssessmentScopeToTerraform(struct?: AuditmanagerAssessmentScope | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function auditmanagerAssessmentScopeToTerraform(struct?: AuditmanagerAssessmentScope | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_accounts: cdktf.listMapper(auditmanagerAssessmentScopeAwsAccountsToTerraform, true)(struct!.awsAccounts),
-    aws_services: cdktf.listMapper(auditmanagerAssessmentScopeAwsServicesToTerraform, true)(struct!.awsServices),
+    aws_accounts: cdktn.listMapper(auditmanagerAssessmentScopeAwsAccountsToTerraform, true)(struct!.awsAccounts),
+    aws_services: cdktn.listMapper(auditmanagerAssessmentScopeAwsServicesToTerraform, true)(struct!.awsServices),
   }
 }
 
 
-export function auditmanagerAssessmentScopeToHclTerraform(struct?: AuditmanagerAssessmentScope | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function auditmanagerAssessmentScopeToHclTerraform(struct?: AuditmanagerAssessmentScope | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_accounts: {
-      value: cdktf.listMapperHcl(auditmanagerAssessmentScopeAwsAccountsToHclTerraform, true)(struct!.awsAccounts),
+      value: cdktn.listMapperHcl(auditmanagerAssessmentScopeAwsAccountsToHclTerraform, true)(struct!.awsAccounts),
       isBlock: true,
       type: "set",
       storageClassType: "AuditmanagerAssessmentScopeAwsAccountsList",
     },
     aws_services: {
-      value: cdktf.listMapperHcl(auditmanagerAssessmentScopeAwsServicesToHclTerraform, true)(struct!.awsServices),
+      value: cdktn.listMapperHcl(auditmanagerAssessmentScopeAwsServicesToHclTerraform, true)(struct!.awsServices),
       isBlock: true,
       type: "set",
       storageClassType: "AuditmanagerAssessmentScopeAwsServicesList",
@@ -699,9 +699,9 @@ export function auditmanagerAssessmentScopeToHclTerraform(struct?: AuditmanagerA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AuditmanagerAssessmentScopeOutputReference extends cdktf.ComplexObject {
+export class AuditmanagerAssessmentScopeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -709,11 +709,11 @@ export class AuditmanagerAssessmentScopeOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AuditmanagerAssessmentScope | cdktf.IResolvable | undefined {
+  public get internalValue(): AuditmanagerAssessmentScope | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -730,14 +730,14 @@ export class AuditmanagerAssessmentScopeOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AuditmanagerAssessmentScope | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AuditmanagerAssessmentScope | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._awsAccounts.internalValue = undefined;
       this._awsServices.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -754,7 +754,7 @@ export class AuditmanagerAssessmentScopeOutputReference extends cdktf.ComplexObj
   public get awsAccounts() {
     return this._awsAccounts;
   }
-  public putAwsAccounts(value: AuditmanagerAssessmentScopeAwsAccounts[] | cdktf.IResolvable) {
+  public putAwsAccounts(value: AuditmanagerAssessmentScopeAwsAccounts[] | cdktn.IResolvable) {
     this._awsAccounts.internalValue = value;
   }
   public resetAwsAccounts() {
@@ -770,7 +770,7 @@ export class AuditmanagerAssessmentScopeOutputReference extends cdktf.ComplexObj
   public get awsServices() {
     return this._awsServices;
   }
-  public putAwsServices(value: AuditmanagerAssessmentScopeAwsServices[] | cdktf.IResolvable) {
+  public putAwsServices(value: AuditmanagerAssessmentScopeAwsServices[] | cdktn.IResolvable) {
     this._awsServices.internalValue = value;
   }
   public resetAwsServices() {
@@ -782,15 +782,15 @@ export class AuditmanagerAssessmentScopeOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class AuditmanagerAssessmentScopeList extends cdktf.ComplexList {
-  public internalValue? : AuditmanagerAssessmentScope[] | cdktf.IResolvable
+export class AuditmanagerAssessmentScopeList extends cdktn.ComplexList {
+  public internalValue? : AuditmanagerAssessmentScope[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -805,7 +805,7 @@ export class AuditmanagerAssessmentScopeList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_assessment aws_auditmanager_assessment}
 */
-export class AuditmanagerAssessment extends cdktf.TerraformResource {
+export class AuditmanagerAssessment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -816,14 +816,14 @@ export class AuditmanagerAssessment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AuditmanagerAssessment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AuditmanagerAssessment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AuditmanagerAssessment to import
   * @param importFromId The id of the existing AuditmanagerAssessment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_assessment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AuditmanagerAssessment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_auditmanager_assessment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_auditmanager_assessment", importId: importFromId, provider });
       }
 
   // ===========
@@ -963,7 +963,7 @@ export class AuditmanagerAssessment extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -973,7 +973,7 @@ export class AuditmanagerAssessment extends cdktf.TerraformResource {
   public get assessmentReportsDestination() {
     return this._assessmentReportsDestination;
   }
-  public putAssessmentReportsDestination(value: AuditmanagerAssessmentAssessmentReportsDestination[] | cdktf.IResolvable) {
+  public putAssessmentReportsDestination(value: AuditmanagerAssessmentAssessmentReportsDestination[] | cdktn.IResolvable) {
     this._assessmentReportsDestination.internalValue = value;
   }
   public resetAssessmentReportsDestination() {
@@ -989,7 +989,7 @@ export class AuditmanagerAssessment extends cdktf.TerraformResource {
   public get roles() {
     return this._roles;
   }
-  public putRoles(value: AuditmanagerAssessmentRoles[] | cdktf.IResolvable) {
+  public putRoles(value: AuditmanagerAssessmentRoles[] | cdktn.IResolvable) {
     this._roles.internalValue = value;
   }
   public resetRoles() {
@@ -1005,7 +1005,7 @@ export class AuditmanagerAssessment extends cdktf.TerraformResource {
   public get scope() {
     return this._scope;
   }
-  public putScope(value: AuditmanagerAssessmentScope[] | cdktf.IResolvable) {
+  public putScope(value: AuditmanagerAssessmentScope[] | cdktn.IResolvable) {
     this._scope.internalValue = value;
   }
   public resetScope() {
@@ -1022,63 +1022,63 @@ export class AuditmanagerAssessment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      framework_id: cdktf.stringToTerraform(this._frameworkId),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      assessment_reports_destination: cdktf.listMapper(auditmanagerAssessmentAssessmentReportsDestinationToTerraform, true)(this._assessmentReportsDestination.internalValue),
-      roles: cdktf.listMapper(auditmanagerAssessmentRolesToTerraform, true)(this._roles.internalValue),
-      scope: cdktf.listMapper(auditmanagerAssessmentScopeToTerraform, true)(this._scope.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      framework_id: cdktn.stringToTerraform(this._frameworkId),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      assessment_reports_destination: cdktn.listMapper(auditmanagerAssessmentAssessmentReportsDestinationToTerraform, true)(this._assessmentReportsDestination.internalValue),
+      roles: cdktn.listMapper(auditmanagerAssessmentRolesToTerraform, true)(this._roles.internalValue),
+      scope: cdktn.listMapper(auditmanagerAssessmentScopeToTerraform, true)(this._scope.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       framework_id: {
-        value: cdktf.stringToHclTerraform(this._frameworkId),
+        value: cdktn.stringToHclTerraform(this._frameworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       assessment_reports_destination: {
-        value: cdktf.listMapperHcl(auditmanagerAssessmentAssessmentReportsDestinationToHclTerraform, true)(this._assessmentReportsDestination.internalValue),
+        value: cdktn.listMapperHcl(auditmanagerAssessmentAssessmentReportsDestinationToHclTerraform, true)(this._assessmentReportsDestination.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AuditmanagerAssessmentAssessmentReportsDestinationList",
       },
       roles: {
-        value: cdktf.listMapperHcl(auditmanagerAssessmentRolesToHclTerraform, true)(this._roles.internalValue),
+        value: cdktn.listMapperHcl(auditmanagerAssessmentRolesToHclTerraform, true)(this._roles.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AuditmanagerAssessmentRolesList",
       },
       scope: {
-        value: cdktf.listMapperHcl(auditmanagerAssessmentScopeToHclTerraform, true)(this._scope.internalValue),
+        value: cdktn.listMapperHcl(auditmanagerAssessmentScopeToHclTerraform, true)(this._scope.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AuditmanagerAssessmentScopeList",

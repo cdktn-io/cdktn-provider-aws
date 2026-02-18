@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AccountPrimaryContactConfig extends cdktf.TerraformMetaArguments {
+export interface AccountPrimaryContactConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/account_primary_contact#account_id AccountPrimaryContact#account_id}
   */
@@ -76,7 +76,7 @@ export interface AccountPrimaryContactConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/account_primary_contact aws_account_primary_contact}
 */
-export class AccountPrimaryContact extends cdktf.TerraformResource {
+export class AccountPrimaryContact extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -87,14 +87,14 @@ export class AccountPrimaryContact extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AccountPrimaryContact resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AccountPrimaryContact resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountPrimaryContact to import
   * @param importFromId The id of the existing AccountPrimaryContact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/account_primary_contact#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountPrimaryContact to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_account_primary_contact", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_account_primary_contact", importId: importFromId, provider });
       }
 
   // ===========
@@ -356,105 +356,105 @@ export class AccountPrimaryContact extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      address_line_1: cdktf.stringToTerraform(this._addressLine1),
-      address_line_2: cdktf.stringToTerraform(this._addressLine2),
-      address_line_3: cdktf.stringToTerraform(this._addressLine3),
-      city: cdktf.stringToTerraform(this._city),
-      company_name: cdktf.stringToTerraform(this._companyName),
-      country_code: cdktf.stringToTerraform(this._countryCode),
-      district_or_county: cdktf.stringToTerraform(this._districtOrCounty),
-      full_name: cdktf.stringToTerraform(this._fullName),
-      id: cdktf.stringToTerraform(this._id),
-      phone_number: cdktf.stringToTerraform(this._phoneNumber),
-      postal_code: cdktf.stringToTerraform(this._postalCode),
-      state_or_region: cdktf.stringToTerraform(this._stateOrRegion),
-      website_url: cdktf.stringToTerraform(this._websiteUrl),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      address_line_1: cdktn.stringToTerraform(this._addressLine1),
+      address_line_2: cdktn.stringToTerraform(this._addressLine2),
+      address_line_3: cdktn.stringToTerraform(this._addressLine3),
+      city: cdktn.stringToTerraform(this._city),
+      company_name: cdktn.stringToTerraform(this._companyName),
+      country_code: cdktn.stringToTerraform(this._countryCode),
+      district_or_county: cdktn.stringToTerraform(this._districtOrCounty),
+      full_name: cdktn.stringToTerraform(this._fullName),
+      id: cdktn.stringToTerraform(this._id),
+      phone_number: cdktn.stringToTerraform(this._phoneNumber),
+      postal_code: cdktn.stringToTerraform(this._postalCode),
+      state_or_region: cdktn.stringToTerraform(this._stateOrRegion),
+      website_url: cdktn.stringToTerraform(this._websiteUrl),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       address_line_1: {
-        value: cdktf.stringToHclTerraform(this._addressLine1),
+        value: cdktn.stringToHclTerraform(this._addressLine1),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       address_line_2: {
-        value: cdktf.stringToHclTerraform(this._addressLine2),
+        value: cdktn.stringToHclTerraform(this._addressLine2),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       address_line_3: {
-        value: cdktf.stringToHclTerraform(this._addressLine3),
+        value: cdktn.stringToHclTerraform(this._addressLine3),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       city: {
-        value: cdktf.stringToHclTerraform(this._city),
+        value: cdktn.stringToHclTerraform(this._city),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       company_name: {
-        value: cdktf.stringToHclTerraform(this._companyName),
+        value: cdktn.stringToHclTerraform(this._companyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       country_code: {
-        value: cdktf.stringToHclTerraform(this._countryCode),
+        value: cdktn.stringToHclTerraform(this._countryCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       district_or_county: {
-        value: cdktf.stringToHclTerraform(this._districtOrCounty),
+        value: cdktn.stringToHclTerraform(this._districtOrCounty),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       full_name: {
-        value: cdktf.stringToHclTerraform(this._fullName),
+        value: cdktn.stringToHclTerraform(this._fullName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       phone_number: {
-        value: cdktf.stringToHclTerraform(this._phoneNumber),
+        value: cdktn.stringToHclTerraform(this._phoneNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       postal_code: {
-        value: cdktf.stringToHclTerraform(this._postalCode),
+        value: cdktn.stringToHclTerraform(this._postalCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       state_or_region: {
-        value: cdktf.stringToHclTerraform(this._stateOrRegion),
+        value: cdktn.stringToHclTerraform(this._stateOrRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       website_url: {
-        value: cdktf.stringToHclTerraform(this._websiteUrl),
+        value: cdktn.stringToHclTerraform(this._websiteUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

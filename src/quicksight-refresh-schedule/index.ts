@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QuicksightRefreshScheduleConfig extends cdktf.TerraformMetaArguments {
+export interface QuicksightRefreshScheduleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_refresh_schedule#aws_account_id QuicksightRefreshSchedule#aws_account_id}
   */
@@ -35,7 +35,7 @@ export interface QuicksightRefreshScheduleConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_refresh_schedule#schedule QuicksightRefreshSchedule#schedule}
   */
-  readonly schedule?: QuicksightRefreshScheduleSchedule[] | cdktf.IResolvable;
+  readonly schedule?: QuicksightRefreshScheduleSchedule[] | cdktn.IResolvable;
 }
 export interface QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay {
   /**
@@ -48,32 +48,32 @@ export interface QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay 
   readonly dayOfWeek?: string;
 }
 
-export function quicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayToTerraform(struct?: QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayToTerraform(struct?: QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_month: cdktf.stringToTerraform(struct!.dayOfMonth),
-    day_of_week: cdktf.stringToTerraform(struct!.dayOfWeek),
+    day_of_month: cdktn.stringToTerraform(struct!.dayOfMonth),
+    day_of_week: cdktn.stringToTerraform(struct!.dayOfWeek),
   }
 }
 
 
-export function quicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayToHclTerraform(struct?: QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayToHclTerraform(struct?: QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_month: {
-      value: cdktf.stringToHclTerraform(struct!.dayOfMonth),
+      value: cdktn.stringToHclTerraform(struct!.dayOfMonth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     day_of_week: {
-      value: cdktf.stringToHclTerraform(struct!.dayOfWeek),
+      value: cdktn.stringToHclTerraform(struct!.dayOfWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -84,9 +84,9 @@ export function quicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayOutputReference extends cdktf.ComplexObject {
+export class QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -94,11 +94,11 @@ export class QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -115,14 +115,14 @@ export class QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dayOfMonth = undefined;
       this._dayOfWeek = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -167,15 +167,15 @@ export class QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayOutpu
   }
 }
 
-export class QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayList extends cdktf.ComplexList {
-  public internalValue? : QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay[] | cdktf.IResolvable
+export class QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayList extends cdktn.ComplexList {
+  public internalValue? : QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -204,49 +204,49 @@ export interface QuicksightRefreshScheduleScheduleScheduleFrequency {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_refresh_schedule#refresh_on_day QuicksightRefreshSchedule#refresh_on_day}
   */
-  readonly refreshOnDay?: QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay[] | cdktf.IResolvable;
+  readonly refreshOnDay?: QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay[] | cdktn.IResolvable;
 }
 
-export function quicksightRefreshScheduleScheduleScheduleFrequencyToTerraform(struct?: QuicksightRefreshScheduleScheduleScheduleFrequency | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightRefreshScheduleScheduleScheduleFrequencyToTerraform(struct?: QuicksightRefreshScheduleScheduleScheduleFrequency | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    interval: cdktf.stringToTerraform(struct!.interval),
-    time_of_the_day: cdktf.stringToTerraform(struct!.timeOfTheDay),
-    timezone: cdktf.stringToTerraform(struct!.timezone),
-    refresh_on_day: cdktf.listMapper(quicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayToTerraform, true)(struct!.refreshOnDay),
+    interval: cdktn.stringToTerraform(struct!.interval),
+    time_of_the_day: cdktn.stringToTerraform(struct!.timeOfTheDay),
+    timezone: cdktn.stringToTerraform(struct!.timezone),
+    refresh_on_day: cdktn.listMapper(quicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayToTerraform, true)(struct!.refreshOnDay),
   }
 }
 
 
-export function quicksightRefreshScheduleScheduleScheduleFrequencyToHclTerraform(struct?: QuicksightRefreshScheduleScheduleScheduleFrequency | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightRefreshScheduleScheduleScheduleFrequencyToHclTerraform(struct?: QuicksightRefreshScheduleScheduleScheduleFrequency | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     interval: {
-      value: cdktf.stringToHclTerraform(struct!.interval),
+      value: cdktn.stringToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_of_the_day: {
-      value: cdktf.stringToHclTerraform(struct!.timeOfTheDay),
+      value: cdktn.stringToHclTerraform(struct!.timeOfTheDay),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timezone: {
-      value: cdktf.stringToHclTerraform(struct!.timezone),
+      value: cdktn.stringToHclTerraform(struct!.timezone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     refresh_on_day: {
-      value: cdktf.listMapperHcl(quicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayToHclTerraform, true)(struct!.refreshOnDay),
+      value: cdktn.listMapperHcl(quicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayToHclTerraform, true)(struct!.refreshOnDay),
       isBlock: true,
       type: "list",
       storageClassType: "QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayList",
@@ -257,9 +257,9 @@ export function quicksightRefreshScheduleScheduleScheduleFrequencyToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightRefreshScheduleScheduleScheduleFrequencyOutputReference extends cdktf.ComplexObject {
+export class QuicksightRefreshScheduleScheduleScheduleFrequencyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -267,11 +267,11 @@ export class QuicksightRefreshScheduleScheduleScheduleFrequencyOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightRefreshScheduleScheduleScheduleFrequency | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightRefreshScheduleScheduleScheduleFrequency | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -296,7 +296,7 @@ export class QuicksightRefreshScheduleScheduleScheduleFrequencyOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightRefreshScheduleScheduleScheduleFrequency | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightRefreshScheduleScheduleScheduleFrequency | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -305,7 +305,7 @@ export class QuicksightRefreshScheduleScheduleScheduleFrequencyOutputReference e
       this._timezone = undefined;
       this._refreshOnDay.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -369,7 +369,7 @@ export class QuicksightRefreshScheduleScheduleScheduleFrequencyOutputReference e
   public get refreshOnDay() {
     return this._refreshOnDay;
   }
-  public putRefreshOnDay(value: QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay[] | cdktf.IResolvable) {
+  public putRefreshOnDay(value: QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay[] | cdktn.IResolvable) {
     this._refreshOnDay.internalValue = value;
   }
   public resetRefreshOnDay() {
@@ -381,15 +381,15 @@ export class QuicksightRefreshScheduleScheduleScheduleFrequencyOutputReference e
   }
 }
 
-export class QuicksightRefreshScheduleScheduleScheduleFrequencyList extends cdktf.ComplexList {
-  public internalValue? : QuicksightRefreshScheduleScheduleScheduleFrequency[] | cdktf.IResolvable
+export class QuicksightRefreshScheduleScheduleScheduleFrequencyList extends cdktn.ComplexList {
+  public internalValue? : QuicksightRefreshScheduleScheduleScheduleFrequency[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -414,42 +414,42 @@ export interface QuicksightRefreshScheduleSchedule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_refresh_schedule#schedule_frequency QuicksightRefreshSchedule#schedule_frequency}
   */
-  readonly scheduleFrequency?: QuicksightRefreshScheduleScheduleScheduleFrequency[] | cdktf.IResolvable;
+  readonly scheduleFrequency?: QuicksightRefreshScheduleScheduleScheduleFrequency[] | cdktn.IResolvable;
 }
 
-export function quicksightRefreshScheduleScheduleToTerraform(struct?: QuicksightRefreshScheduleSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightRefreshScheduleScheduleToTerraform(struct?: QuicksightRefreshScheduleSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    refresh_type: cdktf.stringToTerraform(struct!.refreshType),
-    start_after_date_time: cdktf.stringToTerraform(struct!.startAfterDateTime),
-    schedule_frequency: cdktf.listMapper(quicksightRefreshScheduleScheduleScheduleFrequencyToTerraform, true)(struct!.scheduleFrequency),
+    refresh_type: cdktn.stringToTerraform(struct!.refreshType),
+    start_after_date_time: cdktn.stringToTerraform(struct!.startAfterDateTime),
+    schedule_frequency: cdktn.listMapper(quicksightRefreshScheduleScheduleScheduleFrequencyToTerraform, true)(struct!.scheduleFrequency),
   }
 }
 
 
-export function quicksightRefreshScheduleScheduleToHclTerraform(struct?: QuicksightRefreshScheduleSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightRefreshScheduleScheduleToHclTerraform(struct?: QuicksightRefreshScheduleSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     refresh_type: {
-      value: cdktf.stringToHclTerraform(struct!.refreshType),
+      value: cdktn.stringToHclTerraform(struct!.refreshType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_after_date_time: {
-      value: cdktf.stringToHclTerraform(struct!.startAfterDateTime),
+      value: cdktn.stringToHclTerraform(struct!.startAfterDateTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schedule_frequency: {
-      value: cdktf.listMapperHcl(quicksightRefreshScheduleScheduleScheduleFrequencyToHclTerraform, true)(struct!.scheduleFrequency),
+      value: cdktn.listMapperHcl(quicksightRefreshScheduleScheduleScheduleFrequencyToHclTerraform, true)(struct!.scheduleFrequency),
       isBlock: true,
       type: "list",
       storageClassType: "QuicksightRefreshScheduleScheduleScheduleFrequencyList",
@@ -460,9 +460,9 @@ export function quicksightRefreshScheduleScheduleToHclTerraform(struct?: Quicksi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightRefreshScheduleScheduleOutputReference extends cdktf.ComplexObject {
+export class QuicksightRefreshScheduleScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -470,11 +470,11 @@ export class QuicksightRefreshScheduleScheduleOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightRefreshScheduleSchedule | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightRefreshScheduleSchedule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -495,7 +495,7 @@ export class QuicksightRefreshScheduleScheduleOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightRefreshScheduleSchedule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightRefreshScheduleSchedule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -503,7 +503,7 @@ export class QuicksightRefreshScheduleScheduleOutputReference extends cdktf.Comp
       this._startAfterDateTime = undefined;
       this._scheduleFrequency.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -550,7 +550,7 @@ export class QuicksightRefreshScheduleScheduleOutputReference extends cdktf.Comp
   public get scheduleFrequency() {
     return this._scheduleFrequency;
   }
-  public putScheduleFrequency(value: QuicksightRefreshScheduleScheduleScheduleFrequency[] | cdktf.IResolvable) {
+  public putScheduleFrequency(value: QuicksightRefreshScheduleScheduleScheduleFrequency[] | cdktn.IResolvable) {
     this._scheduleFrequency.internalValue = value;
   }
   public resetScheduleFrequency() {
@@ -562,15 +562,15 @@ export class QuicksightRefreshScheduleScheduleOutputReference extends cdktf.Comp
   }
 }
 
-export class QuicksightRefreshScheduleScheduleList extends cdktf.ComplexList {
-  public internalValue? : QuicksightRefreshScheduleSchedule[] | cdktf.IResolvable
+export class QuicksightRefreshScheduleScheduleList extends cdktn.ComplexList {
+  public internalValue? : QuicksightRefreshScheduleSchedule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -585,7 +585,7 @@ export class QuicksightRefreshScheduleScheduleList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_refresh_schedule aws_quicksight_refresh_schedule}
 */
-export class QuicksightRefreshSchedule extends cdktf.TerraformResource {
+export class QuicksightRefreshSchedule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -596,14 +596,14 @@ export class QuicksightRefreshSchedule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QuicksightRefreshSchedule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QuicksightRefreshSchedule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightRefreshSchedule to import
   * @param importFromId The id of the existing QuicksightRefreshSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_refresh_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightRefreshSchedule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_refresh_schedule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_refresh_schedule", importId: importFromId, provider });
       }
 
   // ===========
@@ -717,7 +717,7 @@ export class QuicksightRefreshSchedule extends cdktf.TerraformResource {
   public get schedule() {
     return this._schedule;
   }
-  public putSchedule(value: QuicksightRefreshScheduleSchedule[] | cdktf.IResolvable) {
+  public putSchedule(value: QuicksightRefreshScheduleSchedule[] | cdktn.IResolvable) {
     this._schedule.internalValue = value;
   }
   public resetSchedule() {
@@ -734,42 +734,42 @@ export class QuicksightRefreshSchedule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      data_set_id: cdktf.stringToTerraform(this._dataSetId),
-      region: cdktf.stringToTerraform(this._region),
-      schedule_id: cdktf.stringToTerraform(this._scheduleId),
-      schedule: cdktf.listMapper(quicksightRefreshScheduleScheduleToTerraform, true)(this._schedule.internalValue),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      data_set_id: cdktn.stringToTerraform(this._dataSetId),
+      region: cdktn.stringToTerraform(this._region),
+      schedule_id: cdktn.stringToTerraform(this._scheduleId),
+      schedule: cdktn.listMapper(quicksightRefreshScheduleScheduleToTerraform, true)(this._schedule.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_set_id: {
-        value: cdktf.stringToHclTerraform(this._dataSetId),
+        value: cdktn.stringToHclTerraform(this._dataSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schedule_id: {
-        value: cdktf.stringToHclTerraform(this._scheduleId),
+        value: cdktn.stringToHclTerraform(this._scheduleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schedule: {
-        value: cdktf.listMapperHcl(quicksightRefreshScheduleScheduleToHclTerraform, true)(this._schedule.internalValue),
+        value: cdktn.listMapperHcl(quicksightRefreshScheduleScheduleToHclTerraform, true)(this._schedule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "QuicksightRefreshScheduleScheduleList",

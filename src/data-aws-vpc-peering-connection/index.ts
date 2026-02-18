@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsVpcPeeringConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsVpcPeeringConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/vpc_peering_connection#cidr_block DataAwsVpcPeeringConnection#cidr_block}
   */
@@ -56,7 +56,7 @@ export interface DataAwsVpcPeeringConnectionConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/vpc_peering_connection#filter DataAwsVpcPeeringConnection#filter}
   */
-  readonly filter?: DataAwsVpcPeeringConnectionFilter[] | cdktf.IResolvable;
+  readonly filter?: DataAwsVpcPeeringConnectionFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -68,8 +68,8 @@ export interface DataAwsVpcPeeringConnectionCidrBlockSet {
 }
 
 export function dataAwsVpcPeeringConnectionCidrBlockSetToTerraform(struct?: DataAwsVpcPeeringConnectionCidrBlockSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -78,8 +78,8 @@ export function dataAwsVpcPeeringConnectionCidrBlockSetToTerraform(struct?: Data
 
 
 export function dataAwsVpcPeeringConnectionCidrBlockSetToHclTerraform(struct?: DataAwsVpcPeeringConnectionCidrBlockSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -87,7 +87,7 @@ export function dataAwsVpcPeeringConnectionCidrBlockSetToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsVpcPeeringConnectionCidrBlockSetOutputReference extends cdktf.ComplexObject {
+export class DataAwsVpcPeeringConnectionCidrBlockSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -96,7 +96,7 @@ export class DataAwsVpcPeeringConnectionCidrBlockSetOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -121,14 +121,14 @@ export class DataAwsVpcPeeringConnectionCidrBlockSetOutputReference extends cdkt
   }
 }
 
-export class DataAwsVpcPeeringConnectionCidrBlockSetList extends cdktf.ComplexList {
+export class DataAwsVpcPeeringConnectionCidrBlockSetList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -143,8 +143,8 @@ export interface DataAwsVpcPeeringConnectionIpv6CidrBlockSet {
 }
 
 export function dataAwsVpcPeeringConnectionIpv6CidrBlockSetToTerraform(struct?: DataAwsVpcPeeringConnectionIpv6CidrBlockSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -153,8 +153,8 @@ export function dataAwsVpcPeeringConnectionIpv6CidrBlockSetToTerraform(struct?: 
 
 
 export function dataAwsVpcPeeringConnectionIpv6CidrBlockSetToHclTerraform(struct?: DataAwsVpcPeeringConnectionIpv6CidrBlockSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -162,7 +162,7 @@ export function dataAwsVpcPeeringConnectionIpv6CidrBlockSetToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsVpcPeeringConnectionIpv6CidrBlockSetOutputReference extends cdktf.ComplexObject {
+export class DataAwsVpcPeeringConnectionIpv6CidrBlockSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -171,7 +171,7 @@ export class DataAwsVpcPeeringConnectionIpv6CidrBlockSetOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -196,14 +196,14 @@ export class DataAwsVpcPeeringConnectionIpv6CidrBlockSetOutputReference extends 
   }
 }
 
-export class DataAwsVpcPeeringConnectionIpv6CidrBlockSetList extends cdktf.ComplexList {
+export class DataAwsVpcPeeringConnectionIpv6CidrBlockSetList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -218,8 +218,8 @@ export interface DataAwsVpcPeeringConnectionPeerCidrBlockSet {
 }
 
 export function dataAwsVpcPeeringConnectionPeerCidrBlockSetToTerraform(struct?: DataAwsVpcPeeringConnectionPeerCidrBlockSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -228,8 +228,8 @@ export function dataAwsVpcPeeringConnectionPeerCidrBlockSetToTerraform(struct?: 
 
 
 export function dataAwsVpcPeeringConnectionPeerCidrBlockSetToHclTerraform(struct?: DataAwsVpcPeeringConnectionPeerCidrBlockSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -237,7 +237,7 @@ export function dataAwsVpcPeeringConnectionPeerCidrBlockSetToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsVpcPeeringConnectionPeerCidrBlockSetOutputReference extends cdktf.ComplexObject {
+export class DataAwsVpcPeeringConnectionPeerCidrBlockSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -246,7 +246,7 @@ export class DataAwsVpcPeeringConnectionPeerCidrBlockSetOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -271,14 +271,14 @@ export class DataAwsVpcPeeringConnectionPeerCidrBlockSetOutputReference extends 
   }
 }
 
-export class DataAwsVpcPeeringConnectionPeerCidrBlockSetList extends cdktf.ComplexList {
+export class DataAwsVpcPeeringConnectionPeerCidrBlockSetList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -293,8 +293,8 @@ export interface DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSet {
 }
 
 export function dataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetToTerraform(struct?: DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -303,8 +303,8 @@ export function dataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetToTerraform(struc
 
 
 export function dataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetToHclTerraform(struct?: DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -312,7 +312,7 @@ export function dataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetToHclTerraform(st
   return attrs;
 }
 
-export class DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetOutputReference extends cdktf.ComplexObject {
+export class DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -321,7 +321,7 @@ export class DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -346,14 +346,14 @@ export class DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetOutputReference exte
   }
 }
 
-export class DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetList extends cdktf.ComplexList {
+export class DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -375,32 +375,32 @@ export interface DataAwsVpcPeeringConnectionFilter {
   readonly values: string[];
 }
 
-export function dataAwsVpcPeeringConnectionFilterToTerraform(struct?: DataAwsVpcPeeringConnectionFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsVpcPeeringConnectionFilterToTerraform(struct?: DataAwsVpcPeeringConnectionFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataAwsVpcPeeringConnectionFilterToHclTerraform(struct?: DataAwsVpcPeeringConnectionFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsVpcPeeringConnectionFilterToHclTerraform(struct?: DataAwsVpcPeeringConnectionFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -411,9 +411,9 @@ export function dataAwsVpcPeeringConnectionFilterToHclTerraform(struct?: DataAws
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsVpcPeeringConnectionFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsVpcPeeringConnectionFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -421,11 +421,11 @@ export class DataAwsVpcPeeringConnectionFilterOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsVpcPeeringConnectionFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsVpcPeeringConnectionFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -442,14 +442,14 @@ export class DataAwsVpcPeeringConnectionFilterOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsVpcPeeringConnectionFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsVpcPeeringConnectionFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -477,7 +477,7 @@ export class DataAwsVpcPeeringConnectionFilterOutputReference extends cdktf.Comp
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -488,15 +488,15 @@ export class DataAwsVpcPeeringConnectionFilterOutputReference extends cdktf.Comp
   }
 }
 
-export class DataAwsVpcPeeringConnectionFilterList extends cdktf.ComplexList {
-  public internalValue? : DataAwsVpcPeeringConnectionFilter[] | cdktf.IResolvable
+export class DataAwsVpcPeeringConnectionFilterList extends cdktn.ComplexList {
+  public internalValue? : DataAwsVpcPeeringConnectionFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -514,25 +514,25 @@ export interface DataAwsVpcPeeringConnectionTimeouts {
   readonly read?: string;
 }
 
-export function dataAwsVpcPeeringConnectionTimeoutsToTerraform(struct?: DataAwsVpcPeeringConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsVpcPeeringConnectionTimeoutsToTerraform(struct?: DataAwsVpcPeeringConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAwsVpcPeeringConnectionTimeoutsToHclTerraform(struct?: DataAwsVpcPeeringConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsVpcPeeringConnectionTimeoutsToHclTerraform(struct?: DataAwsVpcPeeringConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -543,19 +543,19 @@ export function dataAwsVpcPeeringConnectionTimeoutsToHclTerraform(struct?: DataA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsVpcPeeringConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAwsVpcPeeringConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAwsVpcPeeringConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsVpcPeeringConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -568,13 +568,13 @@ export class DataAwsVpcPeeringConnectionTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsVpcPeeringConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsVpcPeeringConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -605,7 +605,7 @@ export class DataAwsVpcPeeringConnectionTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection}
 */
-export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
+export class DataAwsVpcPeeringConnection extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -616,14 +616,14 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsVpcPeeringConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsVpcPeeringConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsVpcPeeringConnection to import
   * @param importFromId The id of the existing DataAwsVpcPeeringConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/vpc_peering_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsVpcPeeringConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_peering_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_peering_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -671,7 +671,7 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
   // ==========
 
   // accepter - computed: true, optional: false, required: false
-  private _accepter = new cdktf.BooleanMap(this, "accepter");
+  private _accepter = new cdktn.BooleanMap(this, "accepter");
   public get accepter() {
     return this._accepter;
   }
@@ -807,7 +807,7 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
   }
 
   // requester - computed: true, optional: false, required: false
-  private _requester = new cdktf.BooleanMap(this, "requester");
+  private _requester = new cdktn.BooleanMap(this, "requester");
   public get requester() {
     return this._requester;
   }
@@ -870,7 +870,7 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: DataAwsVpcPeeringConnectionFilter[] | cdktf.IResolvable) {
+  public putFilter(value: DataAwsVpcPeeringConnectionFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -903,16 +903,16 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr_block: cdktf.stringToTerraform(this._cidrBlock),
-      id: cdktf.stringToTerraform(this._id),
-      owner_id: cdktf.stringToTerraform(this._ownerId),
-      peer_cidr_block: cdktf.stringToTerraform(this._peerCidrBlock),
-      peer_owner_id: cdktf.stringToTerraform(this._peerOwnerId),
-      peer_vpc_id: cdktf.stringToTerraform(this._peerVpcId),
-      status: cdktf.stringToTerraform(this._status),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
-      filter: cdktf.listMapper(dataAwsVpcPeeringConnectionFilterToTerraform, true)(this._filter.internalValue),
+      cidr_block: cdktn.stringToTerraform(this._cidrBlock),
+      id: cdktn.stringToTerraform(this._id),
+      owner_id: cdktn.stringToTerraform(this._ownerId),
+      peer_cidr_block: cdktn.stringToTerraform(this._peerCidrBlock),
+      peer_owner_id: cdktn.stringToTerraform(this._peerOwnerId),
+      peer_vpc_id: cdktn.stringToTerraform(this._peerVpcId),
+      status: cdktn.stringToTerraform(this._status),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
+      filter: cdktn.listMapper(dataAwsVpcPeeringConnectionFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsVpcPeeringConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -920,61 +920,61 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cidr_block: {
-        value: cdktf.stringToHclTerraform(this._cidrBlock),
+        value: cdktn.stringToHclTerraform(this._cidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner_id: {
-        value: cdktf.stringToHclTerraform(this._ownerId),
+        value: cdktn.stringToHclTerraform(this._ownerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_cidr_block: {
-        value: cdktf.stringToHclTerraform(this._peerCidrBlock),
+        value: cdktn.stringToHclTerraform(this._peerCidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_owner_id: {
-        value: cdktf.stringToHclTerraform(this._peerOwnerId),
+        value: cdktn.stringToHclTerraform(this._peerOwnerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_vpc_id: {
-        value: cdktf.stringToHclTerraform(this._peerVpcId),
+        value: cdktn.stringToHclTerraform(this._peerVpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter: {
-        value: cdktf.listMapperHcl(dataAwsVpcPeeringConnectionFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(dataAwsVpcPeeringConnectionFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsVpcPeeringConnectionFilterList",

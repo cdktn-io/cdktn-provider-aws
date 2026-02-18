@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CognitoManagedLoginBrandingConfig extends cdktf.TerraformMetaArguments {
+export interface CognitoManagedLoginBrandingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_login_branding#client_id CognitoManagedLoginBranding#client_id}
   */
@@ -29,7 +29,7 @@ export interface CognitoManagedLoginBrandingConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_login_branding#use_cognito_provided_values CognitoManagedLoginBranding#use_cognito_provided_values}
   */
-  readonly useCognitoProvidedValues?: boolean | cdktf.IResolvable;
+  readonly useCognitoProvidedValues?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_login_branding#user_pool_id CognitoManagedLoginBranding#user_pool_id}
   */
@@ -39,7 +39,7 @@ export interface CognitoManagedLoginBrandingConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_login_branding#asset CognitoManagedLoginBranding#asset}
   */
-  readonly asset?: CognitoManagedLoginBrandingAsset[] | cdktf.IResolvable;
+  readonly asset?: CognitoManagedLoginBrandingAsset[] | cdktn.IResolvable;
 }
 export interface CognitoManagedLoginBrandingAsset {
   /**
@@ -64,53 +64,53 @@ export interface CognitoManagedLoginBrandingAsset {
   readonly resourceId?: string;
 }
 
-export function cognitoManagedLoginBrandingAssetToTerraform(struct?: CognitoManagedLoginBrandingAsset | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoManagedLoginBrandingAssetToTerraform(struct?: CognitoManagedLoginBrandingAsset | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bytes: cdktf.stringToTerraform(struct!.bytes),
-    category: cdktf.stringToTerraform(struct!.category),
-    color_mode: cdktf.stringToTerraform(struct!.colorMode),
-    extension: cdktf.stringToTerraform(struct!.extension),
-    resource_id: cdktf.stringToTerraform(struct!.resourceId),
+    bytes: cdktn.stringToTerraform(struct!.bytes),
+    category: cdktn.stringToTerraform(struct!.category),
+    color_mode: cdktn.stringToTerraform(struct!.colorMode),
+    extension: cdktn.stringToTerraform(struct!.extension),
+    resource_id: cdktn.stringToTerraform(struct!.resourceId),
   }
 }
 
 
-export function cognitoManagedLoginBrandingAssetToHclTerraform(struct?: CognitoManagedLoginBrandingAsset | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoManagedLoginBrandingAssetToHclTerraform(struct?: CognitoManagedLoginBrandingAsset | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bytes: {
-      value: cdktf.stringToHclTerraform(struct!.bytes),
+      value: cdktn.stringToHclTerraform(struct!.bytes),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     category: {
-      value: cdktf.stringToHclTerraform(struct!.category),
+      value: cdktn.stringToHclTerraform(struct!.category),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     color_mode: {
-      value: cdktf.stringToHclTerraform(struct!.colorMode),
+      value: cdktn.stringToHclTerraform(struct!.colorMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     extension: {
-      value: cdktf.stringToHclTerraform(struct!.extension),
+      value: cdktn.stringToHclTerraform(struct!.extension),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.resourceId),
+      value: cdktn.stringToHclTerraform(struct!.resourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -121,9 +121,9 @@ export function cognitoManagedLoginBrandingAssetToHclTerraform(struct?: CognitoM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoManagedLoginBrandingAssetOutputReference extends cdktf.ComplexObject {
+export class CognitoManagedLoginBrandingAssetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -131,11 +131,11 @@ export class CognitoManagedLoginBrandingAssetOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CognitoManagedLoginBrandingAsset | cdktf.IResolvable | undefined {
+  public get internalValue(): CognitoManagedLoginBrandingAsset | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -164,7 +164,7 @@ export class CognitoManagedLoginBrandingAssetOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CognitoManagedLoginBrandingAsset | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CognitoManagedLoginBrandingAsset | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -174,7 +174,7 @@ export class CognitoManagedLoginBrandingAssetOutputReference extends cdktf.Compl
       this._extension = undefined;
       this._resourceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -261,15 +261,15 @@ export class CognitoManagedLoginBrandingAssetOutputReference extends cdktf.Compl
   }
 }
 
-export class CognitoManagedLoginBrandingAssetList extends cdktf.ComplexList {
-  public internalValue? : CognitoManagedLoginBrandingAsset[] | cdktf.IResolvable
+export class CognitoManagedLoginBrandingAssetList extends cdktn.ComplexList {
+  public internalValue? : CognitoManagedLoginBrandingAsset[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -284,7 +284,7 @@ export class CognitoManagedLoginBrandingAssetList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_login_branding aws_cognito_managed_login_branding}
 */
-export class CognitoManagedLoginBranding extends cdktf.TerraformResource {
+export class CognitoManagedLoginBranding extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -295,14 +295,14 @@ export class CognitoManagedLoginBranding extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CognitoManagedLoginBranding resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CognitoManagedLoginBranding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitoManagedLoginBranding to import
   * @param importFromId The id of the existing CognitoManagedLoginBranding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_login_branding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitoManagedLoginBranding to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_managed_login_branding", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_managed_login_branding", importId: importFromId, provider });
       }
 
   // ===========
@@ -400,11 +400,11 @@ export class CognitoManagedLoginBranding extends cdktf.TerraformResource {
   }
 
   // use_cognito_provided_values - computed: true, optional: true, required: false
-  private _useCognitoProvidedValues?: boolean | cdktf.IResolvable; 
+  private _useCognitoProvidedValues?: boolean | cdktn.IResolvable; 
   public get useCognitoProvidedValues() {
     return this.getBooleanAttribute('use_cognito_provided_values');
   }
-  public set useCognitoProvidedValues(value: boolean | cdktf.IResolvable) {
+  public set useCognitoProvidedValues(value: boolean | cdktn.IResolvable) {
     this._useCognitoProvidedValues = value;
   }
   public resetUseCognitoProvidedValues() {
@@ -433,7 +433,7 @@ export class CognitoManagedLoginBranding extends cdktf.TerraformResource {
   public get asset() {
     return this._asset;
   }
-  public putAsset(value: CognitoManagedLoginBrandingAsset[] | cdktf.IResolvable) {
+  public putAsset(value: CognitoManagedLoginBrandingAsset[] | cdktn.IResolvable) {
     this._asset.internalValue = value;
   }
   public resetAsset() {
@@ -450,49 +450,49 @@ export class CognitoManagedLoginBranding extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_id: cdktf.stringToTerraform(this._clientId),
-      region: cdktf.stringToTerraform(this._region),
-      settings: cdktf.stringToTerraform(this._settings),
-      use_cognito_provided_values: cdktf.booleanToTerraform(this._useCognitoProvidedValues),
-      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
-      asset: cdktf.listMapper(cognitoManagedLoginBrandingAssetToTerraform, true)(this._asset.internalValue),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      region: cdktn.stringToTerraform(this._region),
+      settings: cdktn.stringToTerraform(this._settings),
+      use_cognito_provided_values: cdktn.booleanToTerraform(this._useCognitoProvidedValues),
+      user_pool_id: cdktn.stringToTerraform(this._userPoolId),
+      asset: cdktn.listMapper(cognitoManagedLoginBrandingAssetToTerraform, true)(this._asset.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       settings: {
-        value: cdktf.stringToHclTerraform(this._settings),
+        value: cdktn.stringToHclTerraform(this._settings),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_cognito_provided_values: {
-        value: cdktf.booleanToHclTerraform(this._useCognitoProvidedValues),
+        value: cdktn.booleanToHclTerraform(this._useCognitoProvidedValues),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       user_pool_id: {
-        value: cdktf.stringToHclTerraform(this._userPoolId),
+        value: cdktn.stringToHclTerraform(this._userPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       asset: {
-        value: cdktf.listMapperHcl(cognitoManagedLoginBrandingAssetToHclTerraform, true)(this._asset.internalValue),
+        value: cdktn.listMapperHcl(cognitoManagedLoginBrandingAssetToHclTerraform, true)(this._asset.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CognitoManagedLoginBrandingAssetList",

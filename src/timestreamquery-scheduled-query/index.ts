@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TimestreamqueryScheduledQueryConfig extends cdktf.TerraformMetaArguments {
+export interface TimestreamqueryScheduledQueryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#execution_role_arn TimestreamqueryScheduledQuery#execution_role_arn}
   */
@@ -43,37 +43,37 @@ export interface TimestreamqueryScheduledQueryConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#error_report_configuration TimestreamqueryScheduledQuery#error_report_configuration}
   */
-  readonly errorReportConfiguration?: TimestreamqueryScheduledQueryErrorReportConfiguration[] | cdktf.IResolvable;
+  readonly errorReportConfiguration?: TimestreamqueryScheduledQueryErrorReportConfiguration[] | cdktn.IResolvable;
   /**
   * last_run_summary block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#last_run_summary TimestreamqueryScheduledQuery#last_run_summary}
   */
-  readonly lastRunSummary?: TimestreamqueryScheduledQueryLastRunSummary[] | cdktf.IResolvable;
+  readonly lastRunSummary?: TimestreamqueryScheduledQueryLastRunSummary[] | cdktn.IResolvable;
   /**
   * notification_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#notification_configuration TimestreamqueryScheduledQuery#notification_configuration}
   */
-  readonly notificationConfiguration?: TimestreamqueryScheduledQueryNotificationConfiguration[] | cdktf.IResolvable;
+  readonly notificationConfiguration?: TimestreamqueryScheduledQueryNotificationConfiguration[] | cdktn.IResolvable;
   /**
   * recently_failed_runs block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#recently_failed_runs TimestreamqueryScheduledQuery#recently_failed_runs}
   */
-  readonly recentlyFailedRuns?: TimestreamqueryScheduledQueryRecentlyFailedRuns[] | cdktf.IResolvable;
+  readonly recentlyFailedRuns?: TimestreamqueryScheduledQueryRecentlyFailedRuns[] | cdktn.IResolvable;
   /**
   * schedule_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#schedule_configuration TimestreamqueryScheduledQuery#schedule_configuration}
   */
-  readonly scheduleConfiguration?: TimestreamqueryScheduledQueryScheduleConfiguration[] | cdktf.IResolvable;
+  readonly scheduleConfiguration?: TimestreamqueryScheduledQueryScheduleConfiguration[] | cdktn.IResolvable;
   /**
   * target_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#target_configuration TimestreamqueryScheduledQuery#target_configuration}
   */
-  readonly targetConfiguration?: TimestreamqueryScheduledQueryTargetConfiguration[] | cdktf.IResolvable;
+  readonly targetConfiguration?: TimestreamqueryScheduledQueryTargetConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -96,39 +96,39 @@ export interface TimestreamqueryScheduledQueryErrorReportConfigurationS3Configur
   readonly objectKeyPrefix?: string;
 }
 
-export function timestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationToTerraform(struct?: TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationToTerraform(struct?: TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    encryption_option: cdktf.stringToTerraform(struct!.encryptionOption),
-    object_key_prefix: cdktf.stringToTerraform(struct!.objectKeyPrefix),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    encryption_option: cdktn.stringToTerraform(struct!.encryptionOption),
+    object_key_prefix: cdktn.stringToTerraform(struct!.objectKeyPrefix),
   }
 }
 
 
-export function timestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationToHclTerraform(struct?: TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationToHclTerraform(struct?: TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encryption_option: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionOption),
+      value: cdktn.stringToHclTerraform(struct!.encryptionOption),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     object_key_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.objectKeyPrefix),
+      value: cdktn.stringToHclTerraform(struct!.objectKeyPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -139,9 +139,9 @@ export function timestreamqueryScheduledQueryErrorReportConfigurationS3Configura
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -149,11 +149,11 @@ export class TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuratio
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -174,7 +174,7 @@ export class TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuratio
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -182,7 +182,7 @@ export class TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuratio
       this._encryptionOption = undefined;
       this._objectKeyPrefix = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -241,15 +241,15 @@ export class TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuratio
   }
 }
 
-export class TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -266,28 +266,28 @@ export interface TimestreamqueryScheduledQueryErrorReportConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#s3_configuration TimestreamqueryScheduledQuery#s3_configuration}
   */
-  readonly s3Configuration?: TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration[] | cdktf.IResolvable;
+  readonly s3Configuration?: TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryErrorReportConfigurationToTerraform(struct?: TimestreamqueryScheduledQueryErrorReportConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryErrorReportConfigurationToTerraform(struct?: TimestreamqueryScheduledQueryErrorReportConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_configuration: cdktf.listMapper(timestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationToTerraform, true)(struct!.s3Configuration),
+    s3_configuration: cdktn.listMapper(timestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationToTerraform, true)(struct!.s3Configuration),
   }
 }
 
 
-export function timestreamqueryScheduledQueryErrorReportConfigurationToHclTerraform(struct?: TimestreamqueryScheduledQueryErrorReportConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryErrorReportConfigurationToHclTerraform(struct?: TimestreamqueryScheduledQueryErrorReportConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_configuration: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationToHclTerraform, true)(struct!.s3Configuration),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationToHclTerraform, true)(struct!.s3Configuration),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationList",
@@ -298,9 +298,9 @@ export function timestreamqueryScheduledQueryErrorReportConfigurationToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryErrorReportConfigurationOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryErrorReportConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -308,11 +308,11 @@ export class TimestreamqueryScheduledQueryErrorReportConfigurationOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryErrorReportConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryErrorReportConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -325,13 +325,13 @@ export class TimestreamqueryScheduledQueryErrorReportConfigurationOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryErrorReportConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryErrorReportConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._s3Configuration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -347,7 +347,7 @@ export class TimestreamqueryScheduledQueryErrorReportConfigurationOutputReferenc
   public get s3Configuration() {
     return this._s3Configuration;
   }
-  public putS3Configuration(value: TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration[] | cdktf.IResolvable) {
+  public putS3Configuration(value: TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration[] | cdktn.IResolvable) {
     this._s3Configuration.internalValue = value;
   }
   public resetS3Configuration() {
@@ -359,15 +359,15 @@ export class TimestreamqueryScheduledQueryErrorReportConfigurationOutputReferenc
   }
 }
 
-export class TimestreamqueryScheduledQueryErrorReportConfigurationList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryErrorReportConfiguration[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryErrorReportConfigurationList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryErrorReportConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -381,9 +381,9 @@ export class TimestreamqueryScheduledQueryErrorReportConfigurationList extends c
 export interface TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation {
 }
 
-export function timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -391,9 +391,9 @@ export function timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3
 }
 
 
-export function timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -401,9 +401,9 @@ export function timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3
   return attrs;
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -411,11 +411,11 @@ export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3Rep
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -424,12 +424,12 @@ export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3Rep
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -450,15 +450,15 @@ export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3Rep
   }
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -475,28 +475,28 @@ export interface TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#s3_report_location TimestreamqueryScheduledQuery#s3_report_location}
   */
-  readonly s3ReportLocation?: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation[] | cdktf.IResolvable;
+  readonly s3ReportLocation?: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_report_location: cdktf.listMapper(timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationToTerraform, true)(struct!.s3ReportLocation),
+    s3_report_location: cdktn.listMapper(timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationToTerraform, true)(struct!.s3ReportLocation),
   }
 }
 
 
-export function timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_report_location: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationToHclTerraform, true)(struct!.s3ReportLocation),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationToHclTerraform, true)(struct!.s3ReportLocation),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationList",
@@ -507,9 +507,9 @@ export function timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -517,11 +517,11 @@ export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -534,13 +534,13 @@ export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._s3ReportLocation.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -556,7 +556,7 @@ export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutpu
   public get s3ReportLocation() {
     return this._s3ReportLocation;
   }
-  public putS3ReportLocation(value: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation[] | cdktf.IResolvable) {
+  public putS3ReportLocation(value: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation[] | cdktn.IResolvable) {
     this._s3ReportLocation.internalValue = value;
   }
   public resetS3ReportLocation() {
@@ -568,15 +568,15 @@ export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutpu
   }
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -590,9 +590,9 @@ export class TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationList 
 export interface TimestreamqueryScheduledQueryLastRunSummaryExecutionStats {
 }
 
-export function timestreamqueryScheduledQueryLastRunSummaryExecutionStatsToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryExecutionStats | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryExecutionStatsToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryExecutionStats | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -600,9 +600,9 @@ export function timestreamqueryScheduledQueryLastRunSummaryExecutionStatsToTerra
 }
 
 
-export function timestreamqueryScheduledQueryLastRunSummaryExecutionStatsToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryExecutionStats | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryExecutionStatsToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryExecutionStats | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -610,9 +610,9 @@ export function timestreamqueryScheduledQueryLastRunSummaryExecutionStatsToHclTe
   return attrs;
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -620,11 +620,11 @@ export class TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryExecutionStats | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryExecutionStats | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -633,12 +633,12 @@ export class TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryExecutionStats | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryExecutionStats | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -679,15 +679,15 @@ export class TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsOutputRefe
   }
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryExecutionStats[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryExecutionStats[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -701,9 +701,9 @@ export class TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsList exten
 export interface TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax {
 }
 
-export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -711,9 +711,9 @@ export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse
 }
 
 
-export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -721,9 +721,9 @@ export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse
   return attrs;
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -731,11 +731,11 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQue
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -744,12 +744,12 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQue
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -775,15 +775,15 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQue
   }
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -800,28 +800,28 @@ export interface TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsRespons
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#max TimestreamqueryScheduledQuery#max}
   */
-  readonly max?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax[] | cdktf.IResolvable;
+  readonly max?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max: cdktf.listMapper(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxToTerraform, true)(struct!.max),
+    max: cdktn.listMapper(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxToTerraform, true)(struct!.max),
   }
 }
 
 
-export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxToHclTerraform, true)(struct!.max),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxToHclTerraform, true)(struct!.max),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxList",
@@ -832,9 +832,9 @@ export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -842,11 +842,11 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQue
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -859,13 +859,13 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQue
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._max.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -881,7 +881,7 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQue
   public get max() {
     return this._max;
   }
-  public putMax(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax[] | cdktf.IResolvable) {
+  public putMax(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax[] | cdktn.IResolvable) {
     this._max.internalValue = value;
   }
   public resetMax() {
@@ -893,15 +893,15 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQue
   }
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -915,9 +915,9 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQue
 export interface TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax {
 }
 
-export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -925,9 +925,9 @@ export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse
 }
 
 
-export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -935,9 +935,9 @@ export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse
   return attrs;
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -945,11 +945,11 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQue
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -958,12 +958,12 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQue
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -984,15 +984,15 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQue
   }
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1009,28 +1009,28 @@ export interface TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsRespons
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#max TimestreamqueryScheduledQuery#max}
   */
-  readonly max?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax[] | cdktf.IResolvable;
+  readonly max?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max: cdktf.listMapper(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxToTerraform, true)(struct!.max),
+    max: cdktn.listMapper(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxToTerraform, true)(struct!.max),
   }
 }
 
 
-export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxToHclTerraform, true)(struct!.max),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxToHclTerraform, true)(struct!.max),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxList",
@@ -1041,9 +1041,9 @@ export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1051,11 +1051,11 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQue
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1068,13 +1068,13 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQue
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._max.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1090,7 +1090,7 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQue
   public get max() {
     return this._max;
   }
-  public putMax(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax[] | cdktf.IResolvable) {
+  public putMax(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax[] | cdktn.IResolvable) {
     this._max.internalValue = value;
   }
   public resetMax() {
@@ -1102,15 +1102,15 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQue
   }
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1127,41 +1127,41 @@ export interface TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsRespons
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#query_spatial_coverage TimestreamqueryScheduledQuery#query_spatial_coverage}
   */
-  readonly querySpatialCoverage?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage[] | cdktf.IResolvable;
+  readonly querySpatialCoverage?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage[] | cdktn.IResolvable;
   /**
   * query_temporal_range block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#query_temporal_range TimestreamqueryScheduledQuery#query_temporal_range}
   */
-  readonly queryTemporalRange?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange[] | cdktf.IResolvable;
+  readonly queryTemporalRange?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query_spatial_coverage: cdktf.listMapper(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageToTerraform, true)(struct!.querySpatialCoverage),
-    query_temporal_range: cdktf.listMapper(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeToTerraform, true)(struct!.queryTemporalRange),
+    query_spatial_coverage: cdktn.listMapper(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageToTerraform, true)(struct!.querySpatialCoverage),
+    query_temporal_range: cdktn.listMapper(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeToTerraform, true)(struct!.queryTemporalRange),
   }
 }
 
 
-export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query_spatial_coverage: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageToHclTerraform, true)(struct!.querySpatialCoverage),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageToHclTerraform, true)(struct!.querySpatialCoverage),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageList",
     },
     query_temporal_range: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeToHclTerraform, true)(struct!.queryTemporalRange),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeToHclTerraform, true)(struct!.queryTemporalRange),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeList",
@@ -1172,9 +1172,9 @@ export function timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1182,11 +1182,11 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1203,14 +1203,14 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._querySpatialCoverage.internalValue = undefined;
       this._queryTemporalRange.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1242,7 +1242,7 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOut
   public get querySpatialCoverage() {
     return this._querySpatialCoverage;
   }
-  public putQuerySpatialCoverage(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage[] | cdktf.IResolvable) {
+  public putQuerySpatialCoverage(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage[] | cdktn.IResolvable) {
     this._querySpatialCoverage.internalValue = value;
   }
   public resetQuerySpatialCoverage() {
@@ -1258,7 +1258,7 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOut
   public get queryTemporalRange() {
     return this._queryTemporalRange;
   }
-  public putQueryTemporalRange(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange[] | cdktf.IResolvable) {
+  public putQueryTemporalRange(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange[] | cdktn.IResolvable) {
     this._queryTemporalRange.internalValue = value;
   }
   public resetQueryTemporalRange() {
@@ -1270,15 +1270,15 @@ export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOut
   }
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1295,54 +1295,54 @@ export interface TimestreamqueryScheduledQueryLastRunSummary {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#error_report_location TimestreamqueryScheduledQuery#error_report_location}
   */
-  readonly errorReportLocation?: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation[] | cdktf.IResolvable;
+  readonly errorReportLocation?: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation[] | cdktn.IResolvable;
   /**
   * execution_stats block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#execution_stats TimestreamqueryScheduledQuery#execution_stats}
   */
-  readonly executionStats?: TimestreamqueryScheduledQueryLastRunSummaryExecutionStats[] | cdktf.IResolvable;
+  readonly executionStats?: TimestreamqueryScheduledQueryLastRunSummaryExecutionStats[] | cdktn.IResolvable;
   /**
   * query_insights_response block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#query_insights_response TimestreamqueryScheduledQuery#query_insights_response}
   */
-  readonly queryInsightsResponse?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse[] | cdktf.IResolvable;
+  readonly queryInsightsResponse?: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryLastRunSummaryToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummary | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryToTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummary | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    error_report_location: cdktf.listMapper(timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationToTerraform, true)(struct!.errorReportLocation),
-    execution_stats: cdktf.listMapper(timestreamqueryScheduledQueryLastRunSummaryExecutionStatsToTerraform, true)(struct!.executionStats),
-    query_insights_response: cdktf.listMapper(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseToTerraform, true)(struct!.queryInsightsResponse),
+    error_report_location: cdktn.listMapper(timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationToTerraform, true)(struct!.errorReportLocation),
+    execution_stats: cdktn.listMapper(timestreamqueryScheduledQueryLastRunSummaryExecutionStatsToTerraform, true)(struct!.executionStats),
+    query_insights_response: cdktn.listMapper(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseToTerraform, true)(struct!.queryInsightsResponse),
   }
 }
 
 
-export function timestreamqueryScheduledQueryLastRunSummaryToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummary | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryLastRunSummaryToHclTerraform(struct?: TimestreamqueryScheduledQueryLastRunSummary | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     error_report_location: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationToHclTerraform, true)(struct!.errorReportLocation),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryErrorReportLocationToHclTerraform, true)(struct!.errorReportLocation),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationList",
     },
     execution_stats: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryExecutionStatsToHclTerraform, true)(struct!.executionStats),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryExecutionStatsToHclTerraform, true)(struct!.executionStats),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsList",
     },
     query_insights_response: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseToHclTerraform, true)(struct!.queryInsightsResponse),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseToHclTerraform, true)(struct!.queryInsightsResponse),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseList",
@@ -1353,9 +1353,9 @@ export function timestreamqueryScheduledQueryLastRunSummaryToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryLastRunSummaryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1363,11 +1363,11 @@ export class TimestreamqueryScheduledQueryLastRunSummaryOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummary | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryLastRunSummary | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1388,7 +1388,7 @@ export class TimestreamqueryScheduledQueryLastRunSummaryOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummary | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryLastRunSummary | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1396,7 +1396,7 @@ export class TimestreamqueryScheduledQueryLastRunSummaryOutputReference extends 
       this._executionStats.internalValue = undefined;
       this._queryInsightsResponse.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1434,7 +1434,7 @@ export class TimestreamqueryScheduledQueryLastRunSummaryOutputReference extends 
   public get errorReportLocation() {
     return this._errorReportLocation;
   }
-  public putErrorReportLocation(value: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation[] | cdktf.IResolvable) {
+  public putErrorReportLocation(value: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation[] | cdktn.IResolvable) {
     this._errorReportLocation.internalValue = value;
   }
   public resetErrorReportLocation() {
@@ -1450,7 +1450,7 @@ export class TimestreamqueryScheduledQueryLastRunSummaryOutputReference extends 
   public get executionStats() {
     return this._executionStats;
   }
-  public putExecutionStats(value: TimestreamqueryScheduledQueryLastRunSummaryExecutionStats[] | cdktf.IResolvable) {
+  public putExecutionStats(value: TimestreamqueryScheduledQueryLastRunSummaryExecutionStats[] | cdktn.IResolvable) {
     this._executionStats.internalValue = value;
   }
   public resetExecutionStats() {
@@ -1466,7 +1466,7 @@ export class TimestreamqueryScheduledQueryLastRunSummaryOutputReference extends 
   public get queryInsightsResponse() {
     return this._queryInsightsResponse;
   }
-  public putQueryInsightsResponse(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse[] | cdktf.IResolvable) {
+  public putQueryInsightsResponse(value: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse[] | cdktn.IResolvable) {
     this._queryInsightsResponse.internalValue = value;
   }
   public resetQueryInsightsResponse() {
@@ -1478,15 +1478,15 @@ export class TimestreamqueryScheduledQueryLastRunSummaryOutputReference extends 
   }
 }
 
-export class TimestreamqueryScheduledQueryLastRunSummaryList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryLastRunSummary[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryLastRunSummaryList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryLastRunSummary[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1504,25 +1504,25 @@ export interface TimestreamqueryScheduledQueryNotificationConfigurationSnsConfig
   readonly topicArn: string;
 }
 
-export function timestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationToTerraform(struct?: TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationToTerraform(struct?: TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+    topic_arn: cdktn.stringToTerraform(struct!.topicArn),
   }
 }
 
 
-export function timestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationToHclTerraform(struct?: TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationToHclTerraform(struct?: TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      value: cdktn.stringToHclTerraform(struct!.topicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1533,9 +1533,9 @@ export function timestreamqueryScheduledQueryNotificationConfigurationSnsConfigu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1543,11 +1543,11 @@ export class TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurat
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1560,13 +1560,13 @@ export class TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurat
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._topicArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1591,15 +1591,15 @@ export class TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurat
   }
 }
 
-export class TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1616,28 +1616,28 @@ export interface TimestreamqueryScheduledQueryNotificationConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#sns_configuration TimestreamqueryScheduledQuery#sns_configuration}
   */
-  readonly snsConfiguration?: TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration[] | cdktf.IResolvable;
+  readonly snsConfiguration?: TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryNotificationConfigurationToTerraform(struct?: TimestreamqueryScheduledQueryNotificationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryNotificationConfigurationToTerraform(struct?: TimestreamqueryScheduledQueryNotificationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    sns_configuration: cdktf.listMapper(timestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationToTerraform, true)(struct!.snsConfiguration),
+    sns_configuration: cdktn.listMapper(timestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationToTerraform, true)(struct!.snsConfiguration),
   }
 }
 
 
-export function timestreamqueryScheduledQueryNotificationConfigurationToHclTerraform(struct?: TimestreamqueryScheduledQueryNotificationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryNotificationConfigurationToHclTerraform(struct?: TimestreamqueryScheduledQueryNotificationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     sns_configuration: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationToHclTerraform, true)(struct!.snsConfiguration),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationToHclTerraform, true)(struct!.snsConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationList",
@@ -1648,9 +1648,9 @@ export function timestreamqueryScheduledQueryNotificationConfigurationToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryNotificationConfigurationOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryNotificationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1658,11 +1658,11 @@ export class TimestreamqueryScheduledQueryNotificationConfigurationOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryNotificationConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryNotificationConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1675,13 +1675,13 @@ export class TimestreamqueryScheduledQueryNotificationConfigurationOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryNotificationConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryNotificationConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._snsConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1697,7 +1697,7 @@ export class TimestreamqueryScheduledQueryNotificationConfigurationOutputReferen
   public get snsConfiguration() {
     return this._snsConfiguration;
   }
-  public putSnsConfiguration(value: TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration[] | cdktf.IResolvable) {
+  public putSnsConfiguration(value: TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration[] | cdktn.IResolvable) {
     this._snsConfiguration.internalValue = value;
   }
   public resetSnsConfiguration() {
@@ -1709,15 +1709,15 @@ export class TimestreamqueryScheduledQueryNotificationConfigurationOutputReferen
   }
 }
 
-export class TimestreamqueryScheduledQueryNotificationConfigurationList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryNotificationConfiguration[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryNotificationConfigurationList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryNotificationConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1731,9 +1731,9 @@ export class TimestreamqueryScheduledQueryNotificationConfigurationList extends 
 export interface TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation {
 }
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1741,9 +1741,9 @@ export function timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocati
 }
 
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1751,9 +1751,9 @@ export function timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocati
   return attrs;
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1761,11 +1761,11 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1774,12 +1774,12 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1800,15 +1800,15 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS
   }
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1825,28 +1825,28 @@ export interface TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocat
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#s3_report_location TimestreamqueryScheduledQuery#s3_report_location}
   */
-  readonly s3ReportLocation?: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation[] | cdktf.IResolvable;
+  readonly s3ReportLocation?: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_report_location: cdktf.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationToTerraform, true)(struct!.s3ReportLocation),
+    s3_report_location: cdktn.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationToTerraform, true)(struct!.s3ReportLocation),
   }
 }
 
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_report_location: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationToHclTerraform, true)(struct!.s3ReportLocation),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationToHclTerraform, true)(struct!.s3ReportLocation),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationList",
@@ -1857,9 +1857,9 @@ export function timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1867,11 +1867,11 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1884,13 +1884,13 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._s3ReportLocation.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1906,7 +1906,7 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationO
   public get s3ReportLocation() {
     return this._s3ReportLocation;
   }
-  public putS3ReportLocation(value: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation[] | cdktf.IResolvable) {
+  public putS3ReportLocation(value: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation[] | cdktn.IResolvable) {
     this._s3ReportLocation.internalValue = value;
   }
   public resetS3ReportLocation() {
@@ -1918,15 +1918,15 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationO
   }
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1940,9 +1940,9 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationL
 export interface TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats {
 }
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1950,9 +1950,9 @@ export function timestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsToT
 }
 
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1960,9 +1960,9 @@ export function timestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsToH
   return attrs;
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1970,11 +1970,11 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1983,12 +1983,12 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2029,15 +2029,15 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsOutput
   }
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2051,9 +2051,9 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsList e
 export interface TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax {
 }
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2061,9 +2061,9 @@ export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResp
 }
 
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2071,9 +2071,9 @@ export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResp
   return attrs;
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2081,11 +2081,11 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2094,12 +2094,12 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2125,15 +2125,15 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
   }
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2150,28 +2150,28 @@ export interface TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRes
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#max TimestreamqueryScheduledQuery#max}
   */
-  readonly max?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax[] | cdktf.IResolvable;
+  readonly max?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max: cdktf.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxToTerraform, true)(struct!.max),
+    max: cdktn.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxToTerraform, true)(struct!.max),
   }
 }
 
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxToHclTerraform, true)(struct!.max),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxToHclTerraform, true)(struct!.max),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxList",
@@ -2182,9 +2182,9 @@ export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2192,11 +2192,11 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2209,13 +2209,13 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._max.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2231,7 +2231,7 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
   public get max() {
     return this._max;
   }
-  public putMax(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax[] | cdktf.IResolvable) {
+  public putMax(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax[] | cdktn.IResolvable) {
     this._max.internalValue = value;
   }
   public resetMax() {
@@ -2243,15 +2243,15 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
   }
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2265,9 +2265,9 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
 export interface TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax {
 }
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2275,9 +2275,9 @@ export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResp
 }
 
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2285,9 +2285,9 @@ export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResp
   return attrs;
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2295,11 +2295,11 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2308,12 +2308,12 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2334,15 +2334,15 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
   }
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2359,28 +2359,28 @@ export interface TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRes
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#max TimestreamqueryScheduledQuery#max}
   */
-  readonly max?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax[] | cdktf.IResolvable;
+  readonly max?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max: cdktf.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxToTerraform, true)(struct!.max),
+    max: cdktn.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxToTerraform, true)(struct!.max),
   }
 }
 
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxToHclTerraform, true)(struct!.max),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxToHclTerraform, true)(struct!.max),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxList",
@@ -2391,9 +2391,9 @@ export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2401,11 +2401,11 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2418,13 +2418,13 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._max.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2440,7 +2440,7 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
   public get max() {
     return this._max;
   }
-  public putMax(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax[] | cdktf.IResolvable) {
+  public putMax(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax[] | cdktn.IResolvable) {
     this._max.internalValue = value;
   }
   public resetMax() {
@@ -2452,15 +2452,15 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
   }
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2477,41 +2477,41 @@ export interface TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRes
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#query_spatial_coverage TimestreamqueryScheduledQuery#query_spatial_coverage}
   */
-  readonly querySpatialCoverage?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage[] | cdktf.IResolvable;
+  readonly querySpatialCoverage?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage[] | cdktn.IResolvable;
   /**
   * query_temporal_range block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#query_temporal_range TimestreamqueryScheduledQuery#query_temporal_range}
   */
-  readonly queryTemporalRange?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange[] | cdktf.IResolvable;
+  readonly queryTemporalRange?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query_spatial_coverage: cdktf.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageToTerraform, true)(struct!.querySpatialCoverage),
-    query_temporal_range: cdktf.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeToTerraform, true)(struct!.queryTemporalRange),
+    query_spatial_coverage: cdktn.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageToTerraform, true)(struct!.querySpatialCoverage),
+    query_temporal_range: cdktn.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeToTerraform, true)(struct!.queryTemporalRange),
   }
 }
 
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query_spatial_coverage: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageToHclTerraform, true)(struct!.querySpatialCoverage),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageToHclTerraform, true)(struct!.querySpatialCoverage),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageList",
     },
     query_temporal_range: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeToHclTerraform, true)(struct!.queryTemporalRange),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeToHclTerraform, true)(struct!.queryTemporalRange),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeList",
@@ -2522,9 +2522,9 @@ export function timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2532,11 +2532,11 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2553,14 +2553,14 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._querySpatialCoverage.internalValue = undefined;
       this._queryTemporalRange.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2592,7 +2592,7 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
   public get querySpatialCoverage() {
     return this._querySpatialCoverage;
   }
-  public putQuerySpatialCoverage(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage[] | cdktf.IResolvable) {
+  public putQuerySpatialCoverage(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage[] | cdktn.IResolvable) {
     this._querySpatialCoverage.internalValue = value;
   }
   public resetQuerySpatialCoverage() {
@@ -2608,7 +2608,7 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
   public get queryTemporalRange() {
     return this._queryTemporalRange;
   }
-  public putQueryTemporalRange(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange[] | cdktf.IResolvable) {
+  public putQueryTemporalRange(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange[] | cdktn.IResolvable) {
     this._queryTemporalRange.internalValue = value;
   }
   public resetQueryTemporalRange() {
@@ -2620,15 +2620,15 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsRespons
   }
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2645,54 +2645,54 @@ export interface TimestreamqueryScheduledQueryRecentlyFailedRuns {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#error_report_location TimestreamqueryScheduledQuery#error_report_location}
   */
-  readonly errorReportLocation?: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation[] | cdktf.IResolvable;
+  readonly errorReportLocation?: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation[] | cdktn.IResolvable;
   /**
   * execution_stats block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#execution_stats TimestreamqueryScheduledQuery#execution_stats}
   */
-  readonly executionStats?: TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats[] | cdktf.IResolvable;
+  readonly executionStats?: TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats[] | cdktn.IResolvable;
   /**
   * query_insights_response block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#query_insights_response TimestreamqueryScheduledQuery#query_insights_response}
   */
-  readonly queryInsightsResponse?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse[] | cdktf.IResolvable;
+  readonly queryInsightsResponse?: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRuns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsToTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRuns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    error_report_location: cdktf.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationToTerraform, true)(struct!.errorReportLocation),
-    execution_stats: cdktf.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsToTerraform, true)(struct!.executionStats),
-    query_insights_response: cdktf.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseToTerraform, true)(struct!.queryInsightsResponse),
+    error_report_location: cdktn.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationToTerraform, true)(struct!.errorReportLocation),
+    execution_stats: cdktn.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsToTerraform, true)(struct!.executionStats),
+    query_insights_response: cdktn.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseToTerraform, true)(struct!.queryInsightsResponse),
   }
 }
 
 
-export function timestreamqueryScheduledQueryRecentlyFailedRunsToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRuns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryRecentlyFailedRunsToHclTerraform(struct?: TimestreamqueryScheduledQueryRecentlyFailedRuns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     error_report_location: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationToHclTerraform, true)(struct!.errorReportLocation),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationToHclTerraform, true)(struct!.errorReportLocation),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationList",
     },
     execution_stats: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsToHclTerraform, true)(struct!.executionStats),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsToHclTerraform, true)(struct!.executionStats),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsList",
     },
     query_insights_response: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseToHclTerraform, true)(struct!.queryInsightsResponse),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseToHclTerraform, true)(struct!.queryInsightsResponse),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseList",
@@ -2703,9 +2703,9 @@ export function timestreamqueryScheduledQueryRecentlyFailedRunsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2713,11 +2713,11 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRuns | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryRecentlyFailedRuns | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2738,7 +2738,7 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRuns | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryRecentlyFailedRuns | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2746,7 +2746,7 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference exte
       this._executionStats.internalValue = undefined;
       this._queryInsightsResponse.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2784,7 +2784,7 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference exte
   public get errorReportLocation() {
     return this._errorReportLocation;
   }
-  public putErrorReportLocation(value: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation[] | cdktf.IResolvable) {
+  public putErrorReportLocation(value: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation[] | cdktn.IResolvable) {
     this._errorReportLocation.internalValue = value;
   }
   public resetErrorReportLocation() {
@@ -2800,7 +2800,7 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference exte
   public get executionStats() {
     return this._executionStats;
   }
-  public putExecutionStats(value: TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats[] | cdktf.IResolvable) {
+  public putExecutionStats(value: TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats[] | cdktn.IResolvable) {
     this._executionStats.internalValue = value;
   }
   public resetExecutionStats() {
@@ -2816,7 +2816,7 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference exte
   public get queryInsightsResponse() {
     return this._queryInsightsResponse;
   }
-  public putQueryInsightsResponse(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse[] | cdktf.IResolvable) {
+  public putQueryInsightsResponse(value: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse[] | cdktn.IResolvable) {
     this._queryInsightsResponse.internalValue = value;
   }
   public resetQueryInsightsResponse() {
@@ -2828,15 +2828,15 @@ export class TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference exte
   }
 }
 
-export class TimestreamqueryScheduledQueryRecentlyFailedRunsList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRuns[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryRecentlyFailedRunsList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryRecentlyFailedRuns[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2854,25 +2854,25 @@ export interface TimestreamqueryScheduledQueryScheduleConfiguration {
   readonly scheduleExpression: string;
 }
 
-export function timestreamqueryScheduledQueryScheduleConfigurationToTerraform(struct?: TimestreamqueryScheduledQueryScheduleConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryScheduleConfigurationToTerraform(struct?: TimestreamqueryScheduledQueryScheduleConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    schedule_expression: cdktf.stringToTerraform(struct!.scheduleExpression),
+    schedule_expression: cdktn.stringToTerraform(struct!.scheduleExpression),
   }
 }
 
 
-export function timestreamqueryScheduledQueryScheduleConfigurationToHclTerraform(struct?: TimestreamqueryScheduledQueryScheduleConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryScheduleConfigurationToHclTerraform(struct?: TimestreamqueryScheduledQueryScheduleConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     schedule_expression: {
-      value: cdktf.stringToHclTerraform(struct!.scheduleExpression),
+      value: cdktn.stringToHclTerraform(struct!.scheduleExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2883,9 +2883,9 @@ export function timestreamqueryScheduledQueryScheduleConfigurationToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryScheduleConfigurationOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryScheduleConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2893,11 +2893,11 @@ export class TimestreamqueryScheduledQueryScheduleConfigurationOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryScheduleConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryScheduleConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2910,13 +2910,13 @@ export class TimestreamqueryScheduledQueryScheduleConfigurationOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryScheduleConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryScheduleConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._scheduleExpression = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2941,15 +2941,15 @@ export class TimestreamqueryScheduledQueryScheduleConfigurationOutputReference e
   }
 }
 
-export class TimestreamqueryScheduledQueryScheduleConfigurationList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryScheduleConfiguration[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryScheduleConfigurationList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryScheduleConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2971,32 +2971,32 @@ export interface TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfi
   readonly name: string;
 }
 
-export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingToTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingToTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dimension_value_type: cdktf.stringToTerraform(struct!.dimensionValueType),
-    name: cdktf.stringToTerraform(struct!.name),
+    dimension_value_type: cdktn.stringToTerraform(struct!.dimensionValueType),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingToHclTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingToHclTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dimension_value_type: {
-      value: cdktf.stringToHclTerraform(struct!.dimensionValueType),
+      value: cdktn.stringToHclTerraform(struct!.dimensionValueType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3007,9 +3007,9 @@ export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3017,11 +3017,11 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3038,14 +3038,14 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dimensionValueType = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3084,15 +3084,15 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   }
 }
 
-export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3118,39 +3118,39 @@ export interface TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfi
   readonly targetMultiMeasureAttributeName?: string;
 }
 
-export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingToTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingToTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    measure_value_type: cdktf.stringToTerraform(struct!.measureValueType),
-    source_column: cdktf.stringToTerraform(struct!.sourceColumn),
-    target_multi_measure_attribute_name: cdktf.stringToTerraform(struct!.targetMultiMeasureAttributeName),
+    measure_value_type: cdktn.stringToTerraform(struct!.measureValueType),
+    source_column: cdktn.stringToTerraform(struct!.sourceColumn),
+    target_multi_measure_attribute_name: cdktn.stringToTerraform(struct!.targetMultiMeasureAttributeName),
   }
 }
 
 
-export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingToHclTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingToHclTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     measure_value_type: {
-      value: cdktf.stringToHclTerraform(struct!.measureValueType),
+      value: cdktn.stringToHclTerraform(struct!.measureValueType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_column: {
-      value: cdktf.stringToHclTerraform(struct!.sourceColumn),
+      value: cdktn.stringToHclTerraform(struct!.sourceColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_multi_measure_attribute_name: {
-      value: cdktf.stringToHclTerraform(struct!.targetMultiMeasureAttributeName),
+      value: cdktn.stringToHclTerraform(struct!.targetMultiMeasureAttributeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3161,9 +3161,9 @@ export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3171,11 +3171,11 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3196,7 +3196,7 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3204,7 +3204,7 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
       this._sourceColumn = undefined;
       this._targetMultiMeasureAttributeName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3260,15 +3260,15 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   }
 }
 
-export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3301,56 +3301,56 @@ export interface TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfi
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#multi_measure_attribute_mapping TimestreamqueryScheduledQuery#multi_measure_attribute_mapping}
   */
-  readonly multiMeasureAttributeMapping?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping[] | cdktf.IResolvable;
+  readonly multiMeasureAttributeMapping?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingToTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingToTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    measure_name: cdktf.stringToTerraform(struct!.measureName),
-    measure_value_type: cdktf.stringToTerraform(struct!.measureValueType),
-    source_column: cdktf.stringToTerraform(struct!.sourceColumn),
-    target_measure_name: cdktf.stringToTerraform(struct!.targetMeasureName),
-    multi_measure_attribute_mapping: cdktf.listMapper(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingToTerraform, true)(struct!.multiMeasureAttributeMapping),
+    measure_name: cdktn.stringToTerraform(struct!.measureName),
+    measure_value_type: cdktn.stringToTerraform(struct!.measureValueType),
+    source_column: cdktn.stringToTerraform(struct!.sourceColumn),
+    target_measure_name: cdktn.stringToTerraform(struct!.targetMeasureName),
+    multi_measure_attribute_mapping: cdktn.listMapper(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingToTerraform, true)(struct!.multiMeasureAttributeMapping),
   }
 }
 
 
-export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingToHclTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingToHclTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     measure_name: {
-      value: cdktf.stringToHclTerraform(struct!.measureName),
+      value: cdktn.stringToHclTerraform(struct!.measureName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     measure_value_type: {
-      value: cdktf.stringToHclTerraform(struct!.measureValueType),
+      value: cdktn.stringToHclTerraform(struct!.measureValueType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_column: {
-      value: cdktf.stringToHclTerraform(struct!.sourceColumn),
+      value: cdktn.stringToHclTerraform(struct!.sourceColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_measure_name: {
-      value: cdktf.stringToHclTerraform(struct!.targetMeasureName),
+      value: cdktn.stringToHclTerraform(struct!.targetMeasureName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     multi_measure_attribute_mapping: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingToHclTerraform, true)(struct!.multiMeasureAttributeMapping),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingToHclTerraform, true)(struct!.multiMeasureAttributeMapping),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingList",
@@ -3361,9 +3361,9 @@ export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3371,11 +3371,11 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3404,7 +3404,7 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3414,7 +3414,7 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
       this._targetMeasureName = undefined;
       this._multiMeasureAttributeMapping.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3495,7 +3495,7 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   public get multiMeasureAttributeMapping() {
     return this._multiMeasureAttributeMapping;
   }
-  public putMultiMeasureAttributeMapping(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping[] | cdktf.IResolvable) {
+  public putMultiMeasureAttributeMapping(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping[] | cdktn.IResolvable) {
     this._multiMeasureAttributeMapping.internalValue = value;
   }
   public resetMultiMeasureAttributeMapping() {
@@ -3507,15 +3507,15 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   }
 }
 
-export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3541,39 +3541,39 @@ export interface TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfi
   readonly targetMultiMeasureAttributeName?: string;
 }
 
-export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingToTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingToTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    measure_value_type: cdktf.stringToTerraform(struct!.measureValueType),
-    source_column: cdktf.stringToTerraform(struct!.sourceColumn),
-    target_multi_measure_attribute_name: cdktf.stringToTerraform(struct!.targetMultiMeasureAttributeName),
+    measure_value_type: cdktn.stringToTerraform(struct!.measureValueType),
+    source_column: cdktn.stringToTerraform(struct!.sourceColumn),
+    target_multi_measure_attribute_name: cdktn.stringToTerraform(struct!.targetMultiMeasureAttributeName),
   }
 }
 
 
-export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingToHclTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingToHclTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     measure_value_type: {
-      value: cdktf.stringToHclTerraform(struct!.measureValueType),
+      value: cdktn.stringToHclTerraform(struct!.measureValueType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_column: {
-      value: cdktf.stringToHclTerraform(struct!.sourceColumn),
+      value: cdktn.stringToHclTerraform(struct!.sourceColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_multi_measure_attribute_name: {
-      value: cdktf.stringToHclTerraform(struct!.targetMultiMeasureAttributeName),
+      value: cdktn.stringToHclTerraform(struct!.targetMultiMeasureAttributeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3584,9 +3584,9 @@ export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3594,11 +3594,11 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3619,7 +3619,7 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3627,7 +3627,7 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
       this._sourceColumn = undefined;
       this._targetMultiMeasureAttributeName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3683,15 +3683,15 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   }
 }
 
-export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3712,35 +3712,35 @@ export interface TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfi
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#multi_measure_attribute_mapping TimestreamqueryScheduledQuery#multi_measure_attribute_mapping}
   */
-  readonly multiMeasureAttributeMapping?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping[] | cdktf.IResolvable;
+  readonly multiMeasureAttributeMapping?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsToTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsToTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target_multi_measure_name: cdktf.stringToTerraform(struct!.targetMultiMeasureName),
-    multi_measure_attribute_mapping: cdktf.listMapper(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingToTerraform, true)(struct!.multiMeasureAttributeMapping),
+    target_multi_measure_name: cdktn.stringToTerraform(struct!.targetMultiMeasureName),
+    multi_measure_attribute_mapping: cdktn.listMapper(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingToTerraform, true)(struct!.multiMeasureAttributeMapping),
   }
 }
 
 
-export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsToHclTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsToHclTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     target_multi_measure_name: {
-      value: cdktf.stringToHclTerraform(struct!.targetMultiMeasureName),
+      value: cdktn.stringToHclTerraform(struct!.targetMultiMeasureName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     multi_measure_attribute_mapping: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingToHclTerraform, true)(struct!.multiMeasureAttributeMapping),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingToHclTerraform, true)(struct!.multiMeasureAttributeMapping),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingList",
@@ -3751,9 +3751,9 @@ export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3761,11 +3761,11 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3782,14 +3782,14 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._targetMultiMeasureName = undefined;
       this._multiMeasureAttributeMapping.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3822,7 +3822,7 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   public get multiMeasureAttributeMapping() {
     return this._multiMeasureAttributeMapping;
   }
-  public putMultiMeasureAttributeMapping(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping[] | cdktf.IResolvable) {
+  public putMultiMeasureAttributeMapping(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping[] | cdktn.IResolvable) {
     this._multiMeasureAttributeMapping.internalValue = value;
   }
   public resetMultiMeasureAttributeMapping() {
@@ -3834,15 +3834,15 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   }
 }
 
-export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3875,82 +3875,82 @@ export interface TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfi
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#dimension_mapping TimestreamqueryScheduledQuery#dimension_mapping}
   */
-  readonly dimensionMapping?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping[] | cdktf.IResolvable;
+  readonly dimensionMapping?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping[] | cdktn.IResolvable;
   /**
   * mixed_measure_mapping block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#mixed_measure_mapping TimestreamqueryScheduledQuery#mixed_measure_mapping}
   */
-  readonly mixedMeasureMapping?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping[] | cdktf.IResolvable;
+  readonly mixedMeasureMapping?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping[] | cdktn.IResolvable;
   /**
   * multi_measure_mappings block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#multi_measure_mappings TimestreamqueryScheduledQuery#multi_measure_mappings}
   */
-  readonly multiMeasureMappings?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings[] | cdktf.IResolvable;
+  readonly multiMeasureMappings?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationToTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationToTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    measure_name_column: cdktf.stringToTerraform(struct!.measureNameColumn),
-    table_name: cdktf.stringToTerraform(struct!.tableName),
-    time_column: cdktf.stringToTerraform(struct!.timeColumn),
-    dimension_mapping: cdktf.listMapper(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingToTerraform, true)(struct!.dimensionMapping),
-    mixed_measure_mapping: cdktf.listMapper(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingToTerraform, true)(struct!.mixedMeasureMapping),
-    multi_measure_mappings: cdktf.listMapper(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsToTerraform, true)(struct!.multiMeasureMappings),
+    database_name: cdktn.stringToTerraform(struct!.databaseName),
+    measure_name_column: cdktn.stringToTerraform(struct!.measureNameColumn),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
+    time_column: cdktn.stringToTerraform(struct!.timeColumn),
+    dimension_mapping: cdktn.listMapper(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingToTerraform, true)(struct!.dimensionMapping),
+    mixed_measure_mapping: cdktn.listMapper(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingToTerraform, true)(struct!.mixedMeasureMapping),
+    multi_measure_mappings: cdktn.listMapper(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsToTerraform, true)(struct!.multiMeasureMappings),
   }
 }
 
 
-export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationToHclTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationToHclTerraform(struct?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      value: cdktn.stringToHclTerraform(struct!.databaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     measure_name_column: {
-      value: cdktf.stringToHclTerraform(struct!.measureNameColumn),
+      value: cdktn.stringToHclTerraform(struct!.measureNameColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_column: {
-      value: cdktf.stringToHclTerraform(struct!.timeColumn),
+      value: cdktn.stringToHclTerraform(struct!.timeColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dimension_mapping: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingToHclTerraform, true)(struct!.dimensionMapping),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingToHclTerraform, true)(struct!.dimensionMapping),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingList",
     },
     mixed_measure_mapping: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingToHclTerraform, true)(struct!.mixedMeasureMapping),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingToHclTerraform, true)(struct!.mixedMeasureMapping),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingList",
     },
     multi_measure_mappings: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsToHclTerraform, true)(struct!.multiMeasureMappings),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsToHclTerraform, true)(struct!.multiMeasureMappings),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsList",
@@ -3961,9 +3961,9 @@ export function timestreamqueryScheduledQueryTargetConfigurationTimestreamConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3971,11 +3971,11 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4012,7 +4012,7 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4024,7 +4024,7 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
       this._mixedMeasureMapping.internalValue = undefined;
       this._multiMeasureMappings.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4101,7 +4101,7 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   public get dimensionMapping() {
     return this._dimensionMapping;
   }
-  public putDimensionMapping(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping[] | cdktf.IResolvable) {
+  public putDimensionMapping(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping[] | cdktn.IResolvable) {
     this._dimensionMapping.internalValue = value;
   }
   public resetDimensionMapping() {
@@ -4117,7 +4117,7 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   public get mixedMeasureMapping() {
     return this._mixedMeasureMapping;
   }
-  public putMixedMeasureMapping(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping[] | cdktf.IResolvable) {
+  public putMixedMeasureMapping(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping[] | cdktn.IResolvable) {
     this._mixedMeasureMapping.internalValue = value;
   }
   public resetMixedMeasureMapping() {
@@ -4133,7 +4133,7 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   public get multiMeasureMappings() {
     return this._multiMeasureMappings;
   }
-  public putMultiMeasureMappings(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings[] | cdktf.IResolvable) {
+  public putMultiMeasureMappings(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings[] | cdktn.IResolvable) {
     this._multiMeasureMappings.internalValue = value;
   }
   public resetMultiMeasureMappings() {
@@ -4145,15 +4145,15 @@ export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigura
   }
 }
 
-export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4170,28 +4170,28 @@ export interface TimestreamqueryScheduledQueryTargetConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#timestream_configuration TimestreamqueryScheduledQuery#timestream_configuration}
   */
-  readonly timestreamConfiguration?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration[] | cdktf.IResolvable;
+  readonly timestreamConfiguration?: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration[] | cdktn.IResolvable;
 }
 
-export function timestreamqueryScheduledQueryTargetConfigurationToTerraform(struct?: TimestreamqueryScheduledQueryTargetConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTargetConfigurationToTerraform(struct?: TimestreamqueryScheduledQueryTargetConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    timestream_configuration: cdktf.listMapper(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationToTerraform, true)(struct!.timestreamConfiguration),
+    timestream_configuration: cdktn.listMapper(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationToTerraform, true)(struct!.timestreamConfiguration),
   }
 }
 
 
-export function timestreamqueryScheduledQueryTargetConfigurationToHclTerraform(struct?: TimestreamqueryScheduledQueryTargetConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTargetConfigurationToHclTerraform(struct?: TimestreamqueryScheduledQueryTargetConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     timestream_configuration: {
-      value: cdktf.listMapperHcl(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationToHclTerraform, true)(struct!.timestreamConfiguration),
+      value: cdktn.listMapperHcl(timestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationToHclTerraform, true)(struct!.timestreamConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationList",
@@ -4202,9 +4202,9 @@ export function timestreamqueryScheduledQueryTargetConfigurationToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryTargetConfigurationOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryTargetConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4212,11 +4212,11 @@ export class TimestreamqueryScheduledQueryTargetConfigurationOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryTargetConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryTargetConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4229,13 +4229,13 @@ export class TimestreamqueryScheduledQueryTargetConfigurationOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryTargetConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryTargetConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._timestreamConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4251,7 +4251,7 @@ export class TimestreamqueryScheduledQueryTargetConfigurationOutputReference ext
   public get timestreamConfiguration() {
     return this._timestreamConfiguration;
   }
-  public putTimestreamConfiguration(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration[] | cdktf.IResolvable) {
+  public putTimestreamConfiguration(value: TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration[] | cdktn.IResolvable) {
     this._timestreamConfiguration.internalValue = value;
   }
   public resetTimestreamConfiguration() {
@@ -4263,15 +4263,15 @@ export class TimestreamqueryScheduledQueryTargetConfigurationOutputReference ext
   }
 }
 
-export class TimestreamqueryScheduledQueryTargetConfigurationList extends cdktf.ComplexList {
-  public internalValue? : TimestreamqueryScheduledQueryTargetConfiguration[] | cdktf.IResolvable
+export class TimestreamqueryScheduledQueryTargetConfigurationList extends cdktn.ComplexList {
+  public internalValue? : TimestreamqueryScheduledQueryTargetConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4303,39 +4303,39 @@ export interface TimestreamqueryScheduledQueryTimeouts {
   readonly update?: string;
 }
 
-export function timestreamqueryScheduledQueryTimeoutsToTerraform(struct?: TimestreamqueryScheduledQueryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTimeoutsToTerraform(struct?: TimestreamqueryScheduledQueryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function timestreamqueryScheduledQueryTimeoutsToHclTerraform(struct?: TimestreamqueryScheduledQueryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreamqueryScheduledQueryTimeoutsToHclTerraform(struct?: TimestreamqueryScheduledQueryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4346,19 +4346,19 @@ export function timestreamqueryScheduledQueryTimeoutsToHclTerraform(struct?: Tim
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreamqueryScheduledQueryTimeoutsOutputReference extends cdktf.ComplexObject {
+export class TimestreamqueryScheduledQueryTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): TimestreamqueryScheduledQueryTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreamqueryScheduledQueryTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4379,7 +4379,7 @@ export class TimestreamqueryScheduledQueryTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreamqueryScheduledQueryTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreamqueryScheduledQueryTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4387,7 +4387,7 @@ export class TimestreamqueryScheduledQueryTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4452,7 +4452,7 @@ export class TimestreamqueryScheduledQueryTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query aws_timestreamquery_scheduled_query}
 */
-export class TimestreamqueryScheduledQuery extends cdktf.TerraformResource {
+export class TimestreamqueryScheduledQuery extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -4463,14 +4463,14 @@ export class TimestreamqueryScheduledQuery extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TimestreamqueryScheduledQuery resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TimestreamqueryScheduledQuery resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TimestreamqueryScheduledQuery to import
   * @param importFromId The id of the existing TimestreamqueryScheduledQuery that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreamquery_scheduled_query#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TimestreamqueryScheduledQuery to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_timestreamquery_scheduled_query", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_timestreamquery_scheduled_query", importId: importFromId, provider });
       }
 
   // ===========
@@ -4632,7 +4632,7 @@ export class TimestreamqueryScheduledQuery extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -4642,7 +4642,7 @@ export class TimestreamqueryScheduledQuery extends cdktf.TerraformResource {
   public get errorReportConfiguration() {
     return this._errorReportConfiguration;
   }
-  public putErrorReportConfiguration(value: TimestreamqueryScheduledQueryErrorReportConfiguration[] | cdktf.IResolvable) {
+  public putErrorReportConfiguration(value: TimestreamqueryScheduledQueryErrorReportConfiguration[] | cdktn.IResolvable) {
     this._errorReportConfiguration.internalValue = value;
   }
   public resetErrorReportConfiguration() {
@@ -4658,7 +4658,7 @@ export class TimestreamqueryScheduledQuery extends cdktf.TerraformResource {
   public get lastRunSummary() {
     return this._lastRunSummary;
   }
-  public putLastRunSummary(value: TimestreamqueryScheduledQueryLastRunSummary[] | cdktf.IResolvable) {
+  public putLastRunSummary(value: TimestreamqueryScheduledQueryLastRunSummary[] | cdktn.IResolvable) {
     this._lastRunSummary.internalValue = value;
   }
   public resetLastRunSummary() {
@@ -4674,7 +4674,7 @@ export class TimestreamqueryScheduledQuery extends cdktf.TerraformResource {
   public get notificationConfiguration() {
     return this._notificationConfiguration;
   }
-  public putNotificationConfiguration(value: TimestreamqueryScheduledQueryNotificationConfiguration[] | cdktf.IResolvable) {
+  public putNotificationConfiguration(value: TimestreamqueryScheduledQueryNotificationConfiguration[] | cdktn.IResolvable) {
     this._notificationConfiguration.internalValue = value;
   }
   public resetNotificationConfiguration() {
@@ -4690,7 +4690,7 @@ export class TimestreamqueryScheduledQuery extends cdktf.TerraformResource {
   public get recentlyFailedRuns() {
     return this._recentlyFailedRuns;
   }
-  public putRecentlyFailedRuns(value: TimestreamqueryScheduledQueryRecentlyFailedRuns[] | cdktf.IResolvable) {
+  public putRecentlyFailedRuns(value: TimestreamqueryScheduledQueryRecentlyFailedRuns[] | cdktn.IResolvable) {
     this._recentlyFailedRuns.internalValue = value;
   }
   public resetRecentlyFailedRuns() {
@@ -4706,7 +4706,7 @@ export class TimestreamqueryScheduledQuery extends cdktf.TerraformResource {
   public get scheduleConfiguration() {
     return this._scheduleConfiguration;
   }
-  public putScheduleConfiguration(value: TimestreamqueryScheduledQueryScheduleConfiguration[] | cdktf.IResolvable) {
+  public putScheduleConfiguration(value: TimestreamqueryScheduledQueryScheduleConfiguration[] | cdktn.IResolvable) {
     this._scheduleConfiguration.internalValue = value;
   }
   public resetScheduleConfiguration() {
@@ -4722,7 +4722,7 @@ export class TimestreamqueryScheduledQuery extends cdktf.TerraformResource {
   public get targetConfiguration() {
     return this._targetConfiguration;
   }
-  public putTargetConfiguration(value: TimestreamqueryScheduledQueryTargetConfiguration[] | cdktf.IResolvable) {
+  public putTargetConfiguration(value: TimestreamqueryScheduledQueryTargetConfiguration[] | cdktn.IResolvable) {
     this._targetConfiguration.internalValue = value;
   }
   public resetTargetConfiguration() {
@@ -4755,18 +4755,18 @@ export class TimestreamqueryScheduledQuery extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      execution_role_arn: cdktf.stringToTerraform(this._executionRoleArn),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      name: cdktf.stringToTerraform(this._name),
-      query_string: cdktf.stringToTerraform(this._queryString),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      error_report_configuration: cdktf.listMapper(timestreamqueryScheduledQueryErrorReportConfigurationToTerraform, true)(this._errorReportConfiguration.internalValue),
-      last_run_summary: cdktf.listMapper(timestreamqueryScheduledQueryLastRunSummaryToTerraform, true)(this._lastRunSummary.internalValue),
-      notification_configuration: cdktf.listMapper(timestreamqueryScheduledQueryNotificationConfigurationToTerraform, true)(this._notificationConfiguration.internalValue),
-      recently_failed_runs: cdktf.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsToTerraform, true)(this._recentlyFailedRuns.internalValue),
-      schedule_configuration: cdktf.listMapper(timestreamqueryScheduledQueryScheduleConfigurationToTerraform, true)(this._scheduleConfiguration.internalValue),
-      target_configuration: cdktf.listMapper(timestreamqueryScheduledQueryTargetConfigurationToTerraform, true)(this._targetConfiguration.internalValue),
+      execution_role_arn: cdktn.stringToTerraform(this._executionRoleArn),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      name: cdktn.stringToTerraform(this._name),
+      query_string: cdktn.stringToTerraform(this._queryString),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      error_report_configuration: cdktn.listMapper(timestreamqueryScheduledQueryErrorReportConfigurationToTerraform, true)(this._errorReportConfiguration.internalValue),
+      last_run_summary: cdktn.listMapper(timestreamqueryScheduledQueryLastRunSummaryToTerraform, true)(this._lastRunSummary.internalValue),
+      notification_configuration: cdktn.listMapper(timestreamqueryScheduledQueryNotificationConfigurationToTerraform, true)(this._notificationConfiguration.internalValue),
+      recently_failed_runs: cdktn.listMapper(timestreamqueryScheduledQueryRecentlyFailedRunsToTerraform, true)(this._recentlyFailedRuns.internalValue),
+      schedule_configuration: cdktn.listMapper(timestreamqueryScheduledQueryScheduleConfigurationToTerraform, true)(this._scheduleConfiguration.internalValue),
+      target_configuration: cdktn.listMapper(timestreamqueryScheduledQueryTargetConfigurationToTerraform, true)(this._targetConfiguration.internalValue),
       timeouts: timestreamqueryScheduledQueryTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -4774,73 +4774,73 @@ export class TimestreamqueryScheduledQuery extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       execution_role_arn: {
-        value: cdktf.stringToHclTerraform(this._executionRoleArn),
+        value: cdktn.stringToHclTerraform(this._executionRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_string: {
-        value: cdktf.stringToHclTerraform(this._queryString),
+        value: cdktn.stringToHclTerraform(this._queryString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       error_report_configuration: {
-        value: cdktf.listMapperHcl(timestreamqueryScheduledQueryErrorReportConfigurationToHclTerraform, true)(this._errorReportConfiguration.internalValue),
+        value: cdktn.listMapperHcl(timestreamqueryScheduledQueryErrorReportConfigurationToHclTerraform, true)(this._errorReportConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TimestreamqueryScheduledQueryErrorReportConfigurationList",
       },
       last_run_summary: {
-        value: cdktf.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryToHclTerraform, true)(this._lastRunSummary.internalValue),
+        value: cdktn.listMapperHcl(timestreamqueryScheduledQueryLastRunSummaryToHclTerraform, true)(this._lastRunSummary.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TimestreamqueryScheduledQueryLastRunSummaryList",
       },
       notification_configuration: {
-        value: cdktf.listMapperHcl(timestreamqueryScheduledQueryNotificationConfigurationToHclTerraform, true)(this._notificationConfiguration.internalValue),
+        value: cdktn.listMapperHcl(timestreamqueryScheduledQueryNotificationConfigurationToHclTerraform, true)(this._notificationConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TimestreamqueryScheduledQueryNotificationConfigurationList",
       },
       recently_failed_runs: {
-        value: cdktf.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsToHclTerraform, true)(this._recentlyFailedRuns.internalValue),
+        value: cdktn.listMapperHcl(timestreamqueryScheduledQueryRecentlyFailedRunsToHclTerraform, true)(this._recentlyFailedRuns.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TimestreamqueryScheduledQueryRecentlyFailedRunsList",
       },
       schedule_configuration: {
-        value: cdktf.listMapperHcl(timestreamqueryScheduledQueryScheduleConfigurationToHclTerraform, true)(this._scheduleConfiguration.internalValue),
+        value: cdktn.listMapperHcl(timestreamqueryScheduledQueryScheduleConfigurationToHclTerraform, true)(this._scheduleConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TimestreamqueryScheduledQueryScheduleConfigurationList",
       },
       target_configuration: {
-        value: cdktf.listMapperHcl(timestreamqueryScheduledQueryTargetConfigurationToHclTerraform, true)(this._targetConfiguration.internalValue),
+        value: cdktn.listMapperHcl(timestreamqueryScheduledQueryTargetConfigurationToHclTerraform, true)(this._targetConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TimestreamqueryScheduledQueryTargetConfigurationList",

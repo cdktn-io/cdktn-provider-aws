@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsAppmeshRouteConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsAppmeshRouteConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/appmesh_route#id DataAwsAppmeshRoute#id}
   *
@@ -50,8 +50,8 @@ export interface DataAwsAppmeshRouteSpecGrpcRouteActionWeightedTarget {
 }
 
 export function dataAwsAppmeshRouteSpecGrpcRouteActionWeightedTargetToTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteActionWeightedTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -60,8 +60,8 @@ export function dataAwsAppmeshRouteSpecGrpcRouteActionWeightedTargetToTerraform(
 
 
 export function dataAwsAppmeshRouteSpecGrpcRouteActionWeightedTargetToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteActionWeightedTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -69,7 +69,7 @@ export function dataAwsAppmeshRouteSpecGrpcRouteActionWeightedTargetToHclTerrafo
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -78,7 +78,7 @@ export class DataAwsAppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -113,14 +113,14 @@ export class DataAwsAppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference
   }
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteActionWeightedTargetList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecGrpcRouteActionWeightedTargetList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -135,8 +135,8 @@ export interface DataAwsAppmeshRouteSpecGrpcRouteAction {
 }
 
 export function dataAwsAppmeshRouteSpecGrpcRouteActionToTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -145,8 +145,8 @@ export function dataAwsAppmeshRouteSpecGrpcRouteActionToTerraform(struct?: DataA
 
 
 export function dataAwsAppmeshRouteSpecGrpcRouteActionToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -154,7 +154,7 @@ export function dataAwsAppmeshRouteSpecGrpcRouteActionToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteActionOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecGrpcRouteActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -163,7 +163,7 @@ export class DataAwsAppmeshRouteSpecGrpcRouteActionOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -189,14 +189,14 @@ export class DataAwsAppmeshRouteSpecGrpcRouteActionOutputReference extends cdktf
   }
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteActionList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecGrpcRouteActionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -211,8 +211,8 @@ export interface DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRange {
 }
 
 export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeToTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -221,8 +221,8 @@ export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeToTerrafo
 
 
 export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -230,7 +230,7 @@ export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeToHclTerr
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -239,7 +239,7 @@ export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -269,14 +269,14 @@ export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputRefere
   }
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -291,8 +291,8 @@ export interface DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatch {
 }
 
 export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchToTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -301,8 +301,8 @@ export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchToTerraform(st
 
 
 export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -310,7 +310,7 @@ export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchToHclTerraform
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -319,7 +319,7 @@ export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -365,14 +365,14 @@ export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference e
   }
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -387,8 +387,8 @@ export interface DataAwsAppmeshRouteSpecGrpcRouteMatchMetadata {
 }
 
 export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataToTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteMatchMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -397,8 +397,8 @@ export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataToTerraform(struct?
 
 
 export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteMatchMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -406,7 +406,7 @@ export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataToHclTerraform(stru
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -415,7 +415,7 @@ export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -451,14 +451,14 @@ export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataOutputReference extend
   }
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -473,8 +473,8 @@ export interface DataAwsAppmeshRouteSpecGrpcRouteMatch {
 }
 
 export function dataAwsAppmeshRouteSpecGrpcRouteMatchToTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -483,8 +483,8 @@ export function dataAwsAppmeshRouteSpecGrpcRouteMatchToTerraform(struct?: DataAw
 
 
 export function dataAwsAppmeshRouteSpecGrpcRouteMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -492,7 +492,7 @@ export function dataAwsAppmeshRouteSpecGrpcRouteMatchToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -501,7 +501,7 @@ export class DataAwsAppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -547,14 +547,14 @@ export class DataAwsAppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.
   }
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteMatchList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecGrpcRouteMatchList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -569,8 +569,8 @@ export interface DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout {
 }
 
 export function dataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutToTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -579,8 +579,8 @@ export function dataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutToTerr
 
 
 export function dataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -588,7 +588,7 @@ export function dataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutToHclT
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -597,7 +597,7 @@ export class DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -627,14 +627,14 @@ export class DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputRef
   }
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -649,8 +649,8 @@ export interface DataAwsAppmeshRouteSpecGrpcRouteRetryPolicy {
 }
 
 export function dataAwsAppmeshRouteSpecGrpcRouteRetryPolicyToTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -659,8 +659,8 @@ export function dataAwsAppmeshRouteSpecGrpcRouteRetryPolicyToTerraform(struct?: 
 
 
 export function dataAwsAppmeshRouteSpecGrpcRouteRetryPolicyToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -668,7 +668,7 @@ export function dataAwsAppmeshRouteSpecGrpcRouteRetryPolicyToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -677,7 +677,7 @@ export class DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -698,12 +698,12 @@ export class DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends 
 
   // grpc_retry_events - computed: true, optional: false, required: false
   public get grpcRetryEvents() {
-    return cdktf.Fn.tolist(this.getListAttribute('grpc_retry_events'));
+    return cdktn.Fn.tolist(this.getListAttribute('grpc_retry_events'));
   }
 
   // http_retry_events - computed: true, optional: false, required: false
   public get httpRetryEvents() {
-    return cdktf.Fn.tolist(this.getListAttribute('http_retry_events'));
+    return cdktn.Fn.tolist(this.getListAttribute('http_retry_events'));
   }
 
   // max_retries - computed: true, optional: false, required: false
@@ -719,18 +719,18 @@ export class DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends 
 
   // tcp_retry_events - computed: true, optional: false, required: false
   public get tcpRetryEvents() {
-    return cdktf.Fn.tolist(this.getListAttribute('tcp_retry_events'));
+    return cdktn.Fn.tolist(this.getListAttribute('tcp_retry_events'));
   }
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -745,8 +745,8 @@ export interface DataAwsAppmeshRouteSpecGrpcRouteTimeoutIdle {
 }
 
 export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutIdleToTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteTimeoutIdle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -755,8 +755,8 @@ export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutIdleToTerraform(struct?: 
 
 
 export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutIdleToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteTimeoutIdle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -764,7 +764,7 @@ export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutIdleToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -773,7 +773,7 @@ export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -803,14 +803,14 @@ export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference extends 
   }
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutIdleList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutIdleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -825,8 +825,8 @@ export interface DataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequest {
 }
 
 export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequestToTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -835,8 +835,8 @@ export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequestToTerraform(str
 
 
 export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequestToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -844,7 +844,7 @@ export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequestToHclTerraform(
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -853,7 +853,7 @@ export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -883,14 +883,14 @@ export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference ex
   }
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequestList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequestList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -905,8 +905,8 @@ export interface DataAwsAppmeshRouteSpecGrpcRouteTimeout {
 }
 
 export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutToTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -915,8 +915,8 @@ export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutToTerraform(struct?: Data
 
 
 export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -924,7 +924,7 @@ export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -933,7 +933,7 @@ export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -965,14 +965,14 @@ export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutOutputReference extends cdkt
   }
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -987,8 +987,8 @@ export interface DataAwsAppmeshRouteSpecGrpcRoute {
 }
 
 export function dataAwsAppmeshRouteSpecGrpcRouteToTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRoute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -997,8 +997,8 @@ export function dataAwsAppmeshRouteSpecGrpcRouteToTerraform(struct?: DataAwsAppm
 
 
 export function dataAwsAppmeshRouteSpecGrpcRouteToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRoute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1006,7 +1006,7 @@ export function dataAwsAppmeshRouteSpecGrpcRouteToHclTerraform(struct?: DataAwsA
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecGrpcRouteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1015,7 +1015,7 @@ export class DataAwsAppmeshRouteSpecGrpcRouteOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1059,14 +1059,14 @@ export class DataAwsAppmeshRouteSpecGrpcRouteOutputReference extends cdktf.Compl
   }
 }
 
-export class DataAwsAppmeshRouteSpecGrpcRouteList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecGrpcRouteList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1081,8 +1081,8 @@ export interface DataAwsAppmeshRouteSpecHttp2RouteActionWeightedTarget {
 }
 
 export function dataAwsAppmeshRouteSpecHttp2RouteActionWeightedTargetToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteActionWeightedTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1091,8 +1091,8 @@ export function dataAwsAppmeshRouteSpecHttp2RouteActionWeightedTargetToTerraform
 
 
 export function dataAwsAppmeshRouteSpecHttp2RouteActionWeightedTargetToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteActionWeightedTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1100,7 +1100,7 @@ export function dataAwsAppmeshRouteSpecHttp2RouteActionWeightedTargetToHclTerraf
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1109,7 +1109,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1144,14 +1144,14 @@ export class DataAwsAppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReferenc
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteActionWeightedTargetList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttp2RouteActionWeightedTargetList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1166,8 +1166,8 @@ export interface DataAwsAppmeshRouteSpecHttp2RouteAction {
 }
 
 export function dataAwsAppmeshRouteSpecHttp2RouteActionToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1176,8 +1176,8 @@ export function dataAwsAppmeshRouteSpecHttp2RouteActionToTerraform(struct?: Data
 
 
 export function dataAwsAppmeshRouteSpecHttp2RouteActionToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1185,7 +1185,7 @@ export function dataAwsAppmeshRouteSpecHttp2RouteActionToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteActionOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttp2RouteActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1194,7 +1194,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteActionOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1220,14 +1220,14 @@ export class DataAwsAppmeshRouteSpecHttp2RouteActionOutputReference extends cdkt
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteActionList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttp2RouteActionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1242,8 +1242,8 @@ export interface DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRange {
 }
 
 export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1252,8 +1252,8 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeToTerrafor
 
 
 export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1261,7 +1261,7 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeToHclTerra
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1270,7 +1270,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1300,14 +1300,14 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReferen
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1322,8 +1322,8 @@ export interface DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatch {
 }
 
 export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1332,8 +1332,8 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchToTerraform(str
 
 
 export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1341,7 +1341,7 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchToHclTerraform(
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1350,7 +1350,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1396,14 +1396,14 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference ex
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1418,8 +1418,8 @@ export interface DataAwsAppmeshRouteSpecHttp2RouteMatchHeader {
 }
 
 export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1428,8 +1428,8 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderToTerraform(struct?:
 
 
 export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1437,7 +1437,7 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1446,7 +1446,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1482,14 +1482,14 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderOutputReference extends
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1504,8 +1504,8 @@ export interface DataAwsAppmeshRouteSpecHttp2RouteMatchPath {
 }
 
 export function dataAwsAppmeshRouteSpecHttp2RouteMatchPathToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1514,8 +1514,8 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchPathToTerraform(struct?: D
 
 
 export function dataAwsAppmeshRouteSpecHttp2RouteMatchPathToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1523,7 +1523,7 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchPathToHclTerraform(struct?
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteMatchPathOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchPathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1532,7 +1532,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchPathOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1562,14 +1562,14 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchPathOutputReference extends c
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteMatchPathList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchPathList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1584,8 +1584,8 @@ export interface DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatch {
 }
 
 export function dataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1594,8 +1594,8 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchToTerra
 
 
 export function dataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1603,7 +1603,7 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchToHclTe
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1612,7 +1612,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1637,14 +1637,14 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputRefe
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1659,8 +1659,8 @@ export interface DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameter {
 }
 
 export function dataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1669,8 +1669,8 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterToTerraform(
 
 
 export function dataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1678,7 +1678,7 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterToHclTerrafo
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1687,7 +1687,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1718,14 +1718,14 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterOutputReference
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1740,8 +1740,8 @@ export interface DataAwsAppmeshRouteSpecHttp2RouteMatch {
 }
 
 export function dataAwsAppmeshRouteSpecHttp2RouteMatchToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1750,8 +1750,8 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchToTerraform(struct?: DataA
 
 
 export function dataAwsAppmeshRouteSpecHttp2RouteMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1759,7 +1759,7 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1768,7 +1768,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1826,14 +1826,14 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteMatchList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1848,8 +1848,8 @@ export interface DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout {
 }
 
 export function dataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1858,8 +1858,8 @@ export function dataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutToTer
 
 
 export function dataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1867,7 +1867,7 @@ export function dataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutToHcl
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1876,7 +1876,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1906,14 +1906,14 @@ export class DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputRe
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1928,8 +1928,8 @@ export interface DataAwsAppmeshRouteSpecHttp2RouteRetryPolicy {
 }
 
 export function dataAwsAppmeshRouteSpecHttp2RouteRetryPolicyToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1938,8 +1938,8 @@ export function dataAwsAppmeshRouteSpecHttp2RouteRetryPolicyToTerraform(struct?:
 
 
 export function dataAwsAppmeshRouteSpecHttp2RouteRetryPolicyToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1947,7 +1947,7 @@ export function dataAwsAppmeshRouteSpecHttp2RouteRetryPolicyToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1956,7 +1956,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1977,7 +1977,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyOutputReference extends
 
   // http_retry_events - computed: true, optional: false, required: false
   public get httpRetryEvents() {
-    return cdktf.Fn.tolist(this.getListAttribute('http_retry_events'));
+    return cdktn.Fn.tolist(this.getListAttribute('http_retry_events'));
   }
 
   // max_retries - computed: true, optional: false, required: false
@@ -1993,18 +1993,18 @@ export class DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyOutputReference extends
 
   // tcp_retry_events - computed: true, optional: false, required: false
   public get tcpRetryEvents() {
-    return cdktf.Fn.tolist(this.getListAttribute('tcp_retry_events'));
+    return cdktn.Fn.tolist(this.getListAttribute('tcp_retry_events'));
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2019,8 +2019,8 @@ export interface DataAwsAppmeshRouteSpecHttp2RouteTimeoutIdle {
 }
 
 export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutIdleToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteTimeoutIdle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2029,8 +2029,8 @@ export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutIdleToTerraform(struct?:
 
 
 export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutIdleToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteTimeoutIdle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2038,7 +2038,7 @@ export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutIdleToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2047,7 +2047,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2077,14 +2077,14 @@ export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference extends
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutIdleList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutIdleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2099,8 +2099,8 @@ export interface DataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequest {
 }
 
 export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequestToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2109,8 +2109,8 @@ export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequestToTerraform(st
 
 
 export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequestToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2118,7 +2118,7 @@ export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequestToHclTerraform
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2127,7 +2127,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2157,14 +2157,14 @@ export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference e
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequestList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequestList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2179,8 +2179,8 @@ export interface DataAwsAppmeshRouteSpecHttp2RouteTimeout {
 }
 
 export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2189,8 +2189,8 @@ export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutToTerraform(struct?: Dat
 
 
 export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2198,7 +2198,7 @@ export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2207,7 +2207,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2239,14 +2239,14 @@ export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutOutputReference extends cdk
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2261,8 +2261,8 @@ export interface DataAwsAppmeshRouteSpecHttp2Route {
 }
 
 export function dataAwsAppmeshRouteSpecHttp2RouteToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2Route): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2271,8 +2271,8 @@ export function dataAwsAppmeshRouteSpecHttp2RouteToTerraform(struct?: DataAwsApp
 
 
 export function dataAwsAppmeshRouteSpecHttp2RouteToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2Route): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2280,7 +2280,7 @@ export function dataAwsAppmeshRouteSpecHttp2RouteToHclTerraform(struct?: DataAws
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttp2RouteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2289,7 +2289,7 @@ export class DataAwsAppmeshRouteSpecHttp2RouteOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2333,14 +2333,14 @@ export class DataAwsAppmeshRouteSpecHttp2RouteOutputReference extends cdktf.Comp
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttp2RouteList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttp2RouteList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2355,8 +2355,8 @@ export interface DataAwsAppmeshRouteSpecHttpRouteActionWeightedTarget {
 }
 
 export function dataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteActionWeightedTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2365,8 +2365,8 @@ export function dataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetToTerraform(
 
 
 export function dataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteActionWeightedTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2374,7 +2374,7 @@ export function dataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetToHclTerrafo
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2383,7 +2383,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2418,14 +2418,14 @@ export class DataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2440,8 +2440,8 @@ export interface DataAwsAppmeshRouteSpecHttpRouteAction {
 }
 
 export function dataAwsAppmeshRouteSpecHttpRouteActionToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2450,8 +2450,8 @@ export function dataAwsAppmeshRouteSpecHttpRouteActionToTerraform(struct?: DataA
 
 
 export function dataAwsAppmeshRouteSpecHttpRouteActionToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2459,7 +2459,7 @@ export function dataAwsAppmeshRouteSpecHttpRouteActionToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteActionOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttpRouteActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2468,7 +2468,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteActionOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2494,14 +2494,14 @@ export class DataAwsAppmeshRouteSpecHttpRouteActionOutputReference extends cdktf
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteActionList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttpRouteActionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2516,8 +2516,8 @@ export interface DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRange {
 }
 
 export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2526,8 +2526,8 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeToTerraform
 
 
 export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2535,7 +2535,7 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeToHclTerraf
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2544,7 +2544,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2574,14 +2574,14 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReferenc
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2596,8 +2596,8 @@ export interface DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatch {
 }
 
 export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2606,8 +2606,8 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchToTerraform(stru
 
 
 export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2615,7 +2615,7 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchToHclTerraform(s
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2624,7 +2624,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2670,14 +2670,14 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference ext
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2692,8 +2692,8 @@ export interface DataAwsAppmeshRouteSpecHttpRouteMatchHeader {
 }
 
 export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2702,8 +2702,8 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderToTerraform(struct?: 
 
 
 export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2711,7 +2711,7 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2720,7 +2720,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2756,14 +2756,14 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderOutputReference extends 
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2778,8 +2778,8 @@ export interface DataAwsAppmeshRouteSpecHttpRouteMatchPath {
 }
 
 export function dataAwsAppmeshRouteSpecHttpRouteMatchPathToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2788,8 +2788,8 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchPathToTerraform(struct?: Da
 
 
 export function dataAwsAppmeshRouteSpecHttpRouteMatchPathToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2797,7 +2797,7 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchPathToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteMatchPathOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttpRouteMatchPathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2806,7 +2806,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchPathOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2836,14 +2836,14 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchPathOutputReference extends cd
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteMatchPathList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttpRouteMatchPathList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2858,8 +2858,8 @@ export interface DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatch {
 }
 
 export function dataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2868,8 +2868,8 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchToTerraf
 
 
 export function dataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2877,7 +2877,7 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchToHclTer
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2886,7 +2886,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2911,14 +2911,14 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputRefer
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2933,8 +2933,8 @@ export interface DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameter {
 }
 
 export function dataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2943,8 +2943,8 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterToTerraform(s
 
 
 export function dataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2952,7 +2952,7 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterToHclTerrafor
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2961,7 +2961,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2992,14 +2992,14 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterOutputReference 
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3014,8 +3014,8 @@ export interface DataAwsAppmeshRouteSpecHttpRouteMatch {
 }
 
 export function dataAwsAppmeshRouteSpecHttpRouteMatchToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3024,8 +3024,8 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchToTerraform(struct?: DataAw
 
 
 export function dataAwsAppmeshRouteSpecHttpRouteMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3033,7 +3033,7 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttpRouteMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3042,7 +3042,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3100,14 +3100,14 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteMatchList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttpRouteMatchList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3122,8 +3122,8 @@ export interface DataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout {
 }
 
 export function dataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3132,8 +3132,8 @@ export function dataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutToTerr
 
 
 export function dataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3141,7 +3141,7 @@ export function dataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutToHclT
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3150,7 +3150,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3180,14 +3180,14 @@ export class DataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputRef
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3202,8 +3202,8 @@ export interface DataAwsAppmeshRouteSpecHttpRouteRetryPolicy {
 }
 
 export function dataAwsAppmeshRouteSpecHttpRouteRetryPolicyToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3212,8 +3212,8 @@ export function dataAwsAppmeshRouteSpecHttpRouteRetryPolicyToTerraform(struct?: 
 
 
 export function dataAwsAppmeshRouteSpecHttpRouteRetryPolicyToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3221,7 +3221,7 @@ export function dataAwsAppmeshRouteSpecHttpRouteRetryPolicyToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteRetryPolicyOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttpRouteRetryPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3230,7 +3230,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteRetryPolicyOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3251,7 +3251,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteRetryPolicyOutputReference extends 
 
   // http_retry_events - computed: true, optional: false, required: false
   public get httpRetryEvents() {
-    return cdktf.Fn.tolist(this.getListAttribute('http_retry_events'));
+    return cdktn.Fn.tolist(this.getListAttribute('http_retry_events'));
   }
 
   // max_retries - computed: true, optional: false, required: false
@@ -3267,18 +3267,18 @@ export class DataAwsAppmeshRouteSpecHttpRouteRetryPolicyOutputReference extends 
 
   // tcp_retry_events - computed: true, optional: false, required: false
   public get tcpRetryEvents() {
-    return cdktf.Fn.tolist(this.getListAttribute('tcp_retry_events'));
+    return cdktn.Fn.tolist(this.getListAttribute('tcp_retry_events'));
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteRetryPolicyList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttpRouteRetryPolicyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3293,8 +3293,8 @@ export interface DataAwsAppmeshRouteSpecHttpRouteTimeoutIdle {
 }
 
 export function dataAwsAppmeshRouteSpecHttpRouteTimeoutIdleToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteTimeoutIdle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3303,8 +3303,8 @@ export function dataAwsAppmeshRouteSpecHttpRouteTimeoutIdleToTerraform(struct?: 
 
 
 export function dataAwsAppmeshRouteSpecHttpRouteTimeoutIdleToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteTimeoutIdle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3312,7 +3312,7 @@ export function dataAwsAppmeshRouteSpecHttpRouteTimeoutIdleToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteTimeoutIdleOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttpRouteTimeoutIdleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3321,7 +3321,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteTimeoutIdleOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3351,14 +3351,14 @@ export class DataAwsAppmeshRouteSpecHttpRouteTimeoutIdleOutputReference extends 
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteTimeoutIdleList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttpRouteTimeoutIdleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3373,8 +3373,8 @@ export interface DataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequest {
 }
 
 export function dataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequestToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3383,8 +3383,8 @@ export function dataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequestToTerraform(str
 
 
 export function dataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequestToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3392,7 +3392,7 @@ export function dataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequestToHclTerraform(
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3401,7 +3401,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3431,14 +3431,14 @@ export class DataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference ex
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequestList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequestList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3453,8 +3453,8 @@ export interface DataAwsAppmeshRouteSpecHttpRouteTimeout {
 }
 
 export function dataAwsAppmeshRouteSpecHttpRouteTimeoutToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3463,8 +3463,8 @@ export function dataAwsAppmeshRouteSpecHttpRouteTimeoutToTerraform(struct?: Data
 
 
 export function dataAwsAppmeshRouteSpecHttpRouteTimeoutToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3472,7 +3472,7 @@ export function dataAwsAppmeshRouteSpecHttpRouteTimeoutToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteTimeoutOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttpRouteTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3481,7 +3481,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteTimeoutOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3513,14 +3513,14 @@ export class DataAwsAppmeshRouteSpecHttpRouteTimeoutOutputReference extends cdkt
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteTimeoutList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttpRouteTimeoutList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3535,8 +3535,8 @@ export interface DataAwsAppmeshRouteSpecHttpRoute {
 }
 
 export function dataAwsAppmeshRouteSpecHttpRouteToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRoute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3545,8 +3545,8 @@ export function dataAwsAppmeshRouteSpecHttpRouteToTerraform(struct?: DataAwsAppm
 
 
 export function dataAwsAppmeshRouteSpecHttpRouteToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRoute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3554,7 +3554,7 @@ export function dataAwsAppmeshRouteSpecHttpRouteToHclTerraform(struct?: DataAwsA
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecHttpRouteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3563,7 +3563,7 @@ export class DataAwsAppmeshRouteSpecHttpRouteOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3607,14 +3607,14 @@ export class DataAwsAppmeshRouteSpecHttpRouteOutputReference extends cdktf.Compl
   }
 }
 
-export class DataAwsAppmeshRouteSpecHttpRouteList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecHttpRouteList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3629,8 +3629,8 @@ export interface DataAwsAppmeshRouteSpecTcpRouteActionWeightedTarget {
 }
 
 export function dataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetToTerraform(struct?: DataAwsAppmeshRouteSpecTcpRouteActionWeightedTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3639,8 +3639,8 @@ export function dataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetToTerraform(s
 
 
 export function dataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetToHclTerraform(struct?: DataAwsAppmeshRouteSpecTcpRouteActionWeightedTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3648,7 +3648,7 @@ export function dataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetToHclTerrafor
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3657,7 +3657,7 @@ export class DataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3692,14 +3692,14 @@ export class DataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference 
   }
 }
 
-export class DataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3714,8 +3714,8 @@ export interface DataAwsAppmeshRouteSpecTcpRouteAction {
 }
 
 export function dataAwsAppmeshRouteSpecTcpRouteActionToTerraform(struct?: DataAwsAppmeshRouteSpecTcpRouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3724,8 +3724,8 @@ export function dataAwsAppmeshRouteSpecTcpRouteActionToTerraform(struct?: DataAw
 
 
 export function dataAwsAppmeshRouteSpecTcpRouteActionToHclTerraform(struct?: DataAwsAppmeshRouteSpecTcpRouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3733,7 +3733,7 @@ export function dataAwsAppmeshRouteSpecTcpRouteActionToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecTcpRouteActionOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecTcpRouteActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3742,7 +3742,7 @@ export class DataAwsAppmeshRouteSpecTcpRouteActionOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3768,14 +3768,14 @@ export class DataAwsAppmeshRouteSpecTcpRouteActionOutputReference extends cdktf.
   }
 }
 
-export class DataAwsAppmeshRouteSpecTcpRouteActionList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecTcpRouteActionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3790,8 +3790,8 @@ export interface DataAwsAppmeshRouteSpecTcpRouteMatch {
 }
 
 export function dataAwsAppmeshRouteSpecTcpRouteMatchToTerraform(struct?: DataAwsAppmeshRouteSpecTcpRouteMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3800,8 +3800,8 @@ export function dataAwsAppmeshRouteSpecTcpRouteMatchToTerraform(struct?: DataAws
 
 
 export function dataAwsAppmeshRouteSpecTcpRouteMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecTcpRouteMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3809,7 +3809,7 @@ export function dataAwsAppmeshRouteSpecTcpRouteMatchToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecTcpRouteMatchOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecTcpRouteMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3818,7 +3818,7 @@ export class DataAwsAppmeshRouteSpecTcpRouteMatchOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3843,14 +3843,14 @@ export class DataAwsAppmeshRouteSpecTcpRouteMatchOutputReference extends cdktf.C
   }
 }
 
-export class DataAwsAppmeshRouteSpecTcpRouteMatchList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecTcpRouteMatchList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3865,8 +3865,8 @@ export interface DataAwsAppmeshRouteSpecTcpRouteTimeoutIdle {
 }
 
 export function dataAwsAppmeshRouteSpecTcpRouteTimeoutIdleToTerraform(struct?: DataAwsAppmeshRouteSpecTcpRouteTimeoutIdle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3875,8 +3875,8 @@ export function dataAwsAppmeshRouteSpecTcpRouteTimeoutIdleToTerraform(struct?: D
 
 
 export function dataAwsAppmeshRouteSpecTcpRouteTimeoutIdleToHclTerraform(struct?: DataAwsAppmeshRouteSpecTcpRouteTimeoutIdle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3884,7 +3884,7 @@ export function dataAwsAppmeshRouteSpecTcpRouteTimeoutIdleToHclTerraform(struct?
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecTcpRouteTimeoutIdleOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecTcpRouteTimeoutIdleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3893,7 +3893,7 @@ export class DataAwsAppmeshRouteSpecTcpRouteTimeoutIdleOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3923,14 +3923,14 @@ export class DataAwsAppmeshRouteSpecTcpRouteTimeoutIdleOutputReference extends c
   }
 }
 
-export class DataAwsAppmeshRouteSpecTcpRouteTimeoutIdleList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecTcpRouteTimeoutIdleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3945,8 +3945,8 @@ export interface DataAwsAppmeshRouteSpecTcpRouteTimeout {
 }
 
 export function dataAwsAppmeshRouteSpecTcpRouteTimeoutToTerraform(struct?: DataAwsAppmeshRouteSpecTcpRouteTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3955,8 +3955,8 @@ export function dataAwsAppmeshRouteSpecTcpRouteTimeoutToTerraform(struct?: DataA
 
 
 export function dataAwsAppmeshRouteSpecTcpRouteTimeoutToHclTerraform(struct?: DataAwsAppmeshRouteSpecTcpRouteTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3964,7 +3964,7 @@ export function dataAwsAppmeshRouteSpecTcpRouteTimeoutToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecTcpRouteTimeoutOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecTcpRouteTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3973,7 +3973,7 @@ export class DataAwsAppmeshRouteSpecTcpRouteTimeoutOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3999,14 +3999,14 @@ export class DataAwsAppmeshRouteSpecTcpRouteTimeoutOutputReference extends cdktf
   }
 }
 
-export class DataAwsAppmeshRouteSpecTcpRouteTimeoutList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecTcpRouteTimeoutList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4021,8 +4021,8 @@ export interface DataAwsAppmeshRouteSpecTcpRoute {
 }
 
 export function dataAwsAppmeshRouteSpecTcpRouteToTerraform(struct?: DataAwsAppmeshRouteSpecTcpRoute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4031,8 +4031,8 @@ export function dataAwsAppmeshRouteSpecTcpRouteToTerraform(struct?: DataAwsAppme
 
 
 export function dataAwsAppmeshRouteSpecTcpRouteToHclTerraform(struct?: DataAwsAppmeshRouteSpecTcpRoute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4040,7 +4040,7 @@ export function dataAwsAppmeshRouteSpecTcpRouteToHclTerraform(struct?: DataAwsAp
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecTcpRouteOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecTcpRouteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4049,7 +4049,7 @@ export class DataAwsAppmeshRouteSpecTcpRouteOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4087,14 +4087,14 @@ export class DataAwsAppmeshRouteSpecTcpRouteOutputReference extends cdktf.Comple
   }
 }
 
-export class DataAwsAppmeshRouteSpecTcpRouteList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecTcpRouteList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4109,8 +4109,8 @@ export interface DataAwsAppmeshRouteSpec {
 }
 
 export function dataAwsAppmeshRouteSpecToTerraform(struct?: DataAwsAppmeshRouteSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4119,8 +4119,8 @@ export function dataAwsAppmeshRouteSpecToTerraform(struct?: DataAwsAppmeshRouteS
 
 
 export function dataAwsAppmeshRouteSpecToHclTerraform(struct?: DataAwsAppmeshRouteSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4128,7 +4128,7 @@ export function dataAwsAppmeshRouteSpecToHclTerraform(struct?: DataAwsAppmeshRou
   return attrs;
 }
 
-export class DataAwsAppmeshRouteSpecOutputReference extends cdktf.ComplexObject {
+export class DataAwsAppmeshRouteSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4137,7 +4137,7 @@ export class DataAwsAppmeshRouteSpecOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4186,14 +4186,14 @@ export class DataAwsAppmeshRouteSpecOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class DataAwsAppmeshRouteSpecList extends cdktf.ComplexList {
+export class DataAwsAppmeshRouteSpecList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4208,7 +4208,7 @@ export class DataAwsAppmeshRouteSpecList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/appmesh_route aws_appmesh_route}
 */
-export class DataAwsAppmeshRoute extends cdktf.TerraformDataSource {
+export class DataAwsAppmeshRoute extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -4219,14 +4219,14 @@ export class DataAwsAppmeshRoute extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsAppmeshRoute resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsAppmeshRoute resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAppmeshRoute to import
   * @param importFromId The id of the existing DataAwsAppmeshRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/appmesh_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAppmeshRoute to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appmesh_route", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appmesh_route", importId: importFromId, provider });
       }
 
   // ===========
@@ -4404,56 +4404,56 @@ export class DataAwsAppmeshRoute extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      mesh_name: cdktf.stringToTerraform(this._meshName),
-      mesh_owner: cdktf.stringToTerraform(this._meshOwner),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      virtual_router_name: cdktf.stringToTerraform(this._virtualRouterName),
+      id: cdktn.stringToTerraform(this._id),
+      mesh_name: cdktn.stringToTerraform(this._meshName),
+      mesh_owner: cdktn.stringToTerraform(this._meshOwner),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      virtual_router_name: cdktn.stringToTerraform(this._virtualRouterName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mesh_name: {
-        value: cdktf.stringToHclTerraform(this._meshName),
+        value: cdktn.stringToHclTerraform(this._meshName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mesh_owner: {
-        value: cdktf.stringToHclTerraform(this._meshOwner),
+        value: cdktn.stringToHclTerraform(this._meshOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       virtual_router_name: {
-        value: cdktf.stringToHclTerraform(this._virtualRouterName),
+        value: cdktn.stringToHclTerraform(this._virtualRouterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

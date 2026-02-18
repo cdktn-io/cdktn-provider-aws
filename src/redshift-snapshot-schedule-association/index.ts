@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedshiftSnapshotScheduleAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftSnapshotScheduleAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_snapshot_schedule_association#cluster_identifier RedshiftSnapshotScheduleAssociation#cluster_identifier}
   */
@@ -38,7 +38,7 @@ export interface RedshiftSnapshotScheduleAssociationConfig extends cdktf.Terrafo
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_snapshot_schedule_association aws_redshift_snapshot_schedule_association}
 */
-export class RedshiftSnapshotScheduleAssociation extends cdktf.TerraformResource {
+export class RedshiftSnapshotScheduleAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class RedshiftSnapshotScheduleAssociation extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedshiftSnapshotScheduleAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedshiftSnapshotScheduleAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftSnapshotScheduleAssociation to import
   * @param importFromId The id of the existing RedshiftSnapshotScheduleAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_snapshot_schedule_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftSnapshotScheduleAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_snapshot_schedule_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_snapshot_schedule_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class RedshiftSnapshotScheduleAssociation extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      schedule_identifier: cdktf.stringToTerraform(this._scheduleIdentifier),
+      cluster_identifier: cdktn.stringToTerraform(this._clusterIdentifier),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      schedule_identifier: cdktn.stringToTerraform(this._scheduleIdentifier),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._clusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schedule_identifier: {
-        value: cdktf.stringToHclTerraform(this._scheduleIdentifier),
+        value: cdktn.stringToHclTerraform(this._scheduleIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

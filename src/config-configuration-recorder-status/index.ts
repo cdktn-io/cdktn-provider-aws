@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ConfigConfigurationRecorderStatusConfig extends cdktf.TerraformMetaArguments {
+export interface ConfigConfigurationRecorderStatusConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_configuration_recorder_status#id ConfigConfigurationRecorderStatus#id}
   *
@@ -22,7 +22,7 @@ export interface ConfigConfigurationRecorderStatusConfig extends cdktf.Terraform
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_configuration_recorder_status#is_enabled ConfigConfigurationRecorderStatus#is_enabled}
   */
-  readonly isEnabled: boolean | cdktf.IResolvable;
+  readonly isEnabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_configuration_recorder_status#name ConfigConfigurationRecorderStatus#name}
   */
@@ -38,7 +38,7 @@ export interface ConfigConfigurationRecorderStatusConfig extends cdktf.Terraform
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_configuration_recorder_status aws_config_configuration_recorder_status}
 */
-export class ConfigConfigurationRecorderStatus extends cdktf.TerraformResource {
+export class ConfigConfigurationRecorderStatus extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class ConfigConfigurationRecorderStatus extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ConfigConfigurationRecorderStatus resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ConfigConfigurationRecorderStatus resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfigConfigurationRecorderStatus to import
   * @param importFromId The id of the existing ConfigConfigurationRecorderStatus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_configuration_recorder_status#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfigConfigurationRecorderStatus to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_config_configuration_recorder_status", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_config_configuration_recorder_status", importId: importFromId, provider });
       }
 
   // ===========
@@ -113,11 +113,11 @@ export class ConfigConfigurationRecorderStatus extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: false, required: true
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -160,35 +160,35 @@ export class ConfigConfigurationRecorderStatus extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      is_enabled: cdktf.booleanToTerraform(this._isEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      is_enabled: cdktn.booleanToTerraform(this._isEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_enabled: {
-        value: cdktf.booleanToHclTerraform(this._isEnabled),
+        value: cdktn.booleanToHclTerraform(this._isEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

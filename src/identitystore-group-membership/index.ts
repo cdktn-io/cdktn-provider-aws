@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IdentitystoreGroupMembershipConfig extends cdktf.TerraformMetaArguments {
+export interface IdentitystoreGroupMembershipConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/identitystore_group_membership#group_id IdentitystoreGroupMembership#group_id}
   */
@@ -42,7 +42,7 @@ export interface IdentitystoreGroupMembershipConfig extends cdktf.TerraformMetaA
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/identitystore_group_membership aws_identitystore_group_membership}
 */
-export class IdentitystoreGroupMembership extends cdktf.TerraformResource {
+export class IdentitystoreGroupMembership extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class IdentitystoreGroupMembership extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IdentitystoreGroupMembership resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IdentitystoreGroupMembership resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentitystoreGroupMembership to import
   * @param importFromId The id of the existing IdentitystoreGroupMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/identitystore_group_membership#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentitystoreGroupMembership to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_identitystore_group_membership", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_identitystore_group_membership", importId: importFromId, provider });
       }
 
   // ===========
@@ -183,42 +183,42 @@ export class IdentitystoreGroupMembership extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_id: cdktf.stringToTerraform(this._groupId),
-      id: cdktf.stringToTerraform(this._id),
-      identity_store_id: cdktf.stringToTerraform(this._identityStoreId),
-      member_id: cdktf.stringToTerraform(this._memberId),
-      region: cdktf.stringToTerraform(this._region),
+      group_id: cdktn.stringToTerraform(this._groupId),
+      id: cdktn.stringToTerraform(this._id),
+      identity_store_id: cdktn.stringToTerraform(this._identityStoreId),
+      member_id: cdktn.stringToTerraform(this._memberId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       group_id: {
-        value: cdktf.stringToHclTerraform(this._groupId),
+        value: cdktn.stringToHclTerraform(this._groupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_store_id: {
-        value: cdktf.stringToHclTerraform(this._identityStoreId),
+        value: cdktn.stringToHclTerraform(this._identityStoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       member_id: {
-        value: cdktf.stringToHclTerraform(this._memberId),
+        value: cdktn.stringToHclTerraform(this._memberId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

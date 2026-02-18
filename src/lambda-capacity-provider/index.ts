@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LambdaCapacityProviderConfig extends cdktf.TerraformMetaArguments {
+export interface LambdaCapacityProviderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_capacity_provider#capacity_provider_scaling_config LambdaCapacityProvider#capacity_provider_scaling_config}
   */
-  readonly capacityProviderScalingConfig?: LambdaCapacityProviderCapacityProviderScalingConfig[] | cdktf.IResolvable;
+  readonly capacityProviderScalingConfig?: LambdaCapacityProviderCapacityProviderScalingConfig[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_capacity_provider#instance_requirements LambdaCapacityProvider#instance_requirements}
   */
-  readonly instanceRequirements?: LambdaCapacityProviderInstanceRequirements[] | cdktf.IResolvable;
+  readonly instanceRequirements?: LambdaCapacityProviderInstanceRequirements[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_capacity_provider#kms_key_arn LambdaCapacityProvider#kms_key_arn}
   */
@@ -43,7 +43,7 @@ export interface LambdaCapacityProviderConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_capacity_provider#permissions_config LambdaCapacityProvider#permissions_config}
   */
-  readonly permissionsConfig?: LambdaCapacityProviderPermissionsConfig[] | cdktf.IResolvable;
+  readonly permissionsConfig?: LambdaCapacityProviderPermissionsConfig[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -55,7 +55,7 @@ export interface LambdaCapacityProviderConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_capacity_provider#vpc_config LambdaCapacityProvider#vpc_config}
   */
-  readonly vpcConfig?: LambdaCapacityProviderVpcConfig[] | cdktf.IResolvable;
+  readonly vpcConfig?: LambdaCapacityProviderVpcConfig[] | cdktn.IResolvable;
 }
 export interface LambdaCapacityProviderCapacityProviderScalingConfigScalingPolicies {
   /**
@@ -68,32 +68,32 @@ export interface LambdaCapacityProviderCapacityProviderScalingConfigScalingPolic
   readonly targetValue?: number;
 }
 
-export function lambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesToTerraform(struct?: LambdaCapacityProviderCapacityProviderScalingConfigScalingPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesToTerraform(struct?: LambdaCapacityProviderCapacityProviderScalingConfigScalingPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    predefined_metric_type: cdktf.stringToTerraform(struct!.predefinedMetricType),
-    target_value: cdktf.numberToTerraform(struct!.targetValue),
+    predefined_metric_type: cdktn.stringToTerraform(struct!.predefinedMetricType),
+    target_value: cdktn.numberToTerraform(struct!.targetValue),
   }
 }
 
 
-export function lambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesToHclTerraform(struct?: LambdaCapacityProviderCapacityProviderScalingConfigScalingPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesToHclTerraform(struct?: LambdaCapacityProviderCapacityProviderScalingConfigScalingPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     predefined_metric_type: {
-      value: cdktf.stringToHclTerraform(struct!.predefinedMetricType),
+      value: cdktn.stringToHclTerraform(struct!.predefinedMetricType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_value: {
-      value: cdktf.numberToHclTerraform(struct!.targetValue),
+      value: cdktn.numberToHclTerraform(struct!.targetValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -104,9 +104,9 @@ export function lambdaCapacityProviderCapacityProviderScalingConfigScalingPolici
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesOutputReference extends cdktf.ComplexObject {
+export class LambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -114,11 +114,11 @@ export class LambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LambdaCapacityProviderCapacityProviderScalingConfigScalingPolicies | cdktf.IResolvable | undefined {
+  public get internalValue(): LambdaCapacityProviderCapacityProviderScalingConfigScalingPolicies | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -135,14 +135,14 @@ export class LambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LambdaCapacityProviderCapacityProviderScalingConfigScalingPolicies | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LambdaCapacityProviderCapacityProviderScalingConfigScalingPolicies | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._predefinedMetricType = undefined;
       this._targetValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -187,15 +187,15 @@ export class LambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesO
   }
 }
 
-export class LambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesList extends cdktf.ComplexList {
-  public internalValue? : LambdaCapacityProviderCapacityProviderScalingConfigScalingPolicies[] | cdktf.IResolvable
+export class LambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesList extends cdktn.ComplexList {
+  public internalValue? : LambdaCapacityProviderCapacityProviderScalingConfigScalingPolicies[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -218,42 +218,42 @@ export interface LambdaCapacityProviderCapacityProviderScalingConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_capacity_provider#scaling_policies LambdaCapacityProvider#scaling_policies}
   */
-  readonly scalingPolicies?: LambdaCapacityProviderCapacityProviderScalingConfigScalingPolicies[] | cdktf.IResolvable;
+  readonly scalingPolicies?: LambdaCapacityProviderCapacityProviderScalingConfigScalingPolicies[] | cdktn.IResolvable;
 }
 
-export function lambdaCapacityProviderCapacityProviderScalingConfigToTerraform(struct?: LambdaCapacityProviderCapacityProviderScalingConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaCapacityProviderCapacityProviderScalingConfigToTerraform(struct?: LambdaCapacityProviderCapacityProviderScalingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_vcpu_count: cdktf.numberToTerraform(struct!.maxVcpuCount),
-    scaling_mode: cdktf.stringToTerraform(struct!.scalingMode),
-    scaling_policies: cdktf.listMapper(lambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesToTerraform, false)(struct!.scalingPolicies),
+    max_vcpu_count: cdktn.numberToTerraform(struct!.maxVcpuCount),
+    scaling_mode: cdktn.stringToTerraform(struct!.scalingMode),
+    scaling_policies: cdktn.listMapper(lambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesToTerraform, false)(struct!.scalingPolicies),
   }
 }
 
 
-export function lambdaCapacityProviderCapacityProviderScalingConfigToHclTerraform(struct?: LambdaCapacityProviderCapacityProviderScalingConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaCapacityProviderCapacityProviderScalingConfigToHclTerraform(struct?: LambdaCapacityProviderCapacityProviderScalingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_vcpu_count: {
-      value: cdktf.numberToHclTerraform(struct!.maxVcpuCount),
+      value: cdktn.numberToHclTerraform(struct!.maxVcpuCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     scaling_mode: {
-      value: cdktf.stringToHclTerraform(struct!.scalingMode),
+      value: cdktn.stringToHclTerraform(struct!.scalingMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scaling_policies: {
-      value: cdktf.listMapperHcl(lambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesToHclTerraform, false)(struct!.scalingPolicies),
+      value: cdktn.listMapperHcl(lambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesToHclTerraform, false)(struct!.scalingPolicies),
       isBlock: true,
       type: "list",
       storageClassType: "LambdaCapacityProviderCapacityProviderScalingConfigScalingPoliciesList",
@@ -264,9 +264,9 @@ export function lambdaCapacityProviderCapacityProviderScalingConfigToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaCapacityProviderCapacityProviderScalingConfigOutputReference extends cdktf.ComplexObject {
+export class LambdaCapacityProviderCapacityProviderScalingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -274,11 +274,11 @@ export class LambdaCapacityProviderCapacityProviderScalingConfigOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LambdaCapacityProviderCapacityProviderScalingConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): LambdaCapacityProviderCapacityProviderScalingConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -299,7 +299,7 @@ export class LambdaCapacityProviderCapacityProviderScalingConfigOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LambdaCapacityProviderCapacityProviderScalingConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LambdaCapacityProviderCapacityProviderScalingConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -307,7 +307,7 @@ export class LambdaCapacityProviderCapacityProviderScalingConfigOutputReference 
       this._scalingMode = undefined;
       this._scalingPolicies.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -357,7 +357,7 @@ export class LambdaCapacityProviderCapacityProviderScalingConfigOutputReference 
   public get scalingPolicies() {
     return this._scalingPolicies;
   }
-  public putScalingPolicies(value: LambdaCapacityProviderCapacityProviderScalingConfigScalingPolicies[] | cdktf.IResolvable) {
+  public putScalingPolicies(value: LambdaCapacityProviderCapacityProviderScalingConfigScalingPolicies[] | cdktn.IResolvable) {
     this._scalingPolicies.internalValue = value;
   }
   public resetScalingPolicies() {
@@ -369,15 +369,15 @@ export class LambdaCapacityProviderCapacityProviderScalingConfigOutputReference 
   }
 }
 
-export class LambdaCapacityProviderCapacityProviderScalingConfigList extends cdktf.ComplexList {
-  public internalValue? : LambdaCapacityProviderCapacityProviderScalingConfig[] | cdktf.IResolvable
+export class LambdaCapacityProviderCapacityProviderScalingConfigList extends cdktn.ComplexList {
+  public internalValue? : LambdaCapacityProviderCapacityProviderScalingConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -403,39 +403,39 @@ export interface LambdaCapacityProviderInstanceRequirements {
   readonly excludedInstanceTypes?: string[];
 }
 
-export function lambdaCapacityProviderInstanceRequirementsToTerraform(struct?: LambdaCapacityProviderInstanceRequirements | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaCapacityProviderInstanceRequirementsToTerraform(struct?: LambdaCapacityProviderInstanceRequirements | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_instance_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedInstanceTypes),
-    architectures: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.architectures),
-    excluded_instance_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedInstanceTypes),
+    allowed_instance_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedInstanceTypes),
+    architectures: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.architectures),
+    excluded_instance_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedInstanceTypes),
   }
 }
 
 
-export function lambdaCapacityProviderInstanceRequirementsToHclTerraform(struct?: LambdaCapacityProviderInstanceRequirements | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaCapacityProviderInstanceRequirementsToHclTerraform(struct?: LambdaCapacityProviderInstanceRequirements | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_instance_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedInstanceTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedInstanceTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     architectures: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.architectures),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.architectures),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     excluded_instance_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedInstanceTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedInstanceTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -446,9 +446,9 @@ export function lambdaCapacityProviderInstanceRequirementsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaCapacityProviderInstanceRequirementsOutputReference extends cdktf.ComplexObject {
+export class LambdaCapacityProviderInstanceRequirementsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -456,11 +456,11 @@ export class LambdaCapacityProviderInstanceRequirementsOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LambdaCapacityProviderInstanceRequirements | cdktf.IResolvable | undefined {
+  public get internalValue(): LambdaCapacityProviderInstanceRequirements | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -481,7 +481,7 @@ export class LambdaCapacityProviderInstanceRequirementsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LambdaCapacityProviderInstanceRequirements | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LambdaCapacityProviderInstanceRequirements | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -489,7 +489,7 @@ export class LambdaCapacityProviderInstanceRequirementsOutputReference extends c
       this._architectures = undefined;
       this._excludedInstanceTypes = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -551,15 +551,15 @@ export class LambdaCapacityProviderInstanceRequirementsOutputReference extends c
   }
 }
 
-export class LambdaCapacityProviderInstanceRequirementsList extends cdktf.ComplexList {
-  public internalValue? : LambdaCapacityProviderInstanceRequirements[] | cdktf.IResolvable
+export class LambdaCapacityProviderInstanceRequirementsList extends cdktn.ComplexList {
+  public internalValue? : LambdaCapacityProviderInstanceRequirements[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -577,25 +577,25 @@ export interface LambdaCapacityProviderPermissionsConfig {
   readonly capacityProviderOperatorRoleArn: string;
 }
 
-export function lambdaCapacityProviderPermissionsConfigToTerraform(struct?: LambdaCapacityProviderPermissionsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaCapacityProviderPermissionsConfigToTerraform(struct?: LambdaCapacityProviderPermissionsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity_provider_operator_role_arn: cdktf.stringToTerraform(struct!.capacityProviderOperatorRoleArn),
+    capacity_provider_operator_role_arn: cdktn.stringToTerraform(struct!.capacityProviderOperatorRoleArn),
   }
 }
 
 
-export function lambdaCapacityProviderPermissionsConfigToHclTerraform(struct?: LambdaCapacityProviderPermissionsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaCapacityProviderPermissionsConfigToHclTerraform(struct?: LambdaCapacityProviderPermissionsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity_provider_operator_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.capacityProviderOperatorRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.capacityProviderOperatorRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -606,9 +606,9 @@ export function lambdaCapacityProviderPermissionsConfigToHclTerraform(struct?: L
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaCapacityProviderPermissionsConfigOutputReference extends cdktf.ComplexObject {
+export class LambdaCapacityProviderPermissionsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -616,11 +616,11 @@ export class LambdaCapacityProviderPermissionsConfigOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LambdaCapacityProviderPermissionsConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): LambdaCapacityProviderPermissionsConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -633,13 +633,13 @@ export class LambdaCapacityProviderPermissionsConfigOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LambdaCapacityProviderPermissionsConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LambdaCapacityProviderPermissionsConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._capacityProviderOperatorRoleArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -664,15 +664,15 @@ export class LambdaCapacityProviderPermissionsConfigOutputReference extends cdkt
   }
 }
 
-export class LambdaCapacityProviderPermissionsConfigList extends cdktf.ComplexList {
-  public internalValue? : LambdaCapacityProviderPermissionsConfig[] | cdktf.IResolvable
+export class LambdaCapacityProviderPermissionsConfigList extends cdktn.ComplexList {
+  public internalValue? : LambdaCapacityProviderPermissionsConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -704,39 +704,39 @@ export interface LambdaCapacityProviderTimeouts {
   readonly update?: string;
 }
 
-export function lambdaCapacityProviderTimeoutsToTerraform(struct?: LambdaCapacityProviderTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaCapacityProviderTimeoutsToTerraform(struct?: LambdaCapacityProviderTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function lambdaCapacityProviderTimeoutsToHclTerraform(struct?: LambdaCapacityProviderTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaCapacityProviderTimeoutsToHclTerraform(struct?: LambdaCapacityProviderTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -747,19 +747,19 @@ export function lambdaCapacityProviderTimeoutsToHclTerraform(struct?: LambdaCapa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaCapacityProviderTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LambdaCapacityProviderTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LambdaCapacityProviderTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LambdaCapacityProviderTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -780,7 +780,7 @@ export class LambdaCapacityProviderTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LambdaCapacityProviderTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LambdaCapacityProviderTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -788,7 +788,7 @@ export class LambdaCapacityProviderTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -860,32 +860,32 @@ export interface LambdaCapacityProviderVpcConfig {
   readonly subnetIds: string[];
 }
 
-export function lambdaCapacityProviderVpcConfigToTerraform(struct?: LambdaCapacityProviderVpcConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaCapacityProviderVpcConfigToTerraform(struct?: LambdaCapacityProviderVpcConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
 
-export function lambdaCapacityProviderVpcConfigToHclTerraform(struct?: LambdaCapacityProviderVpcConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lambdaCapacityProviderVpcConfigToHclTerraform(struct?: LambdaCapacityProviderVpcConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -896,9 +896,9 @@ export function lambdaCapacityProviderVpcConfigToHclTerraform(struct?: LambdaCap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LambdaCapacityProviderVpcConfigOutputReference extends cdktf.ComplexObject {
+export class LambdaCapacityProviderVpcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -906,11 +906,11 @@ export class LambdaCapacityProviderVpcConfigOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LambdaCapacityProviderVpcConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): LambdaCapacityProviderVpcConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -927,14 +927,14 @@ export class LambdaCapacityProviderVpcConfigOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LambdaCapacityProviderVpcConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LambdaCapacityProviderVpcConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._securityGroupIds = undefined;
       this._subnetIds = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -949,7 +949,7 @@ export class LambdaCapacityProviderVpcConfigOutputReference extends cdktf.Comple
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -962,7 +962,7 @@ export class LambdaCapacityProviderVpcConfigOutputReference extends cdktf.Comple
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -973,15 +973,15 @@ export class LambdaCapacityProviderVpcConfigOutputReference extends cdktf.Comple
   }
 }
 
-export class LambdaCapacityProviderVpcConfigList extends cdktf.ComplexList {
-  public internalValue? : LambdaCapacityProviderVpcConfig[] | cdktf.IResolvable
+export class LambdaCapacityProviderVpcConfigList extends cdktn.ComplexList {
+  public internalValue? : LambdaCapacityProviderVpcConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -996,7 +996,7 @@ export class LambdaCapacityProviderVpcConfigList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_capacity_provider aws_lambda_capacity_provider}
 */
-export class LambdaCapacityProvider extends cdktf.TerraformResource {
+export class LambdaCapacityProvider extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1007,14 +1007,14 @@ export class LambdaCapacityProvider extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LambdaCapacityProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LambdaCapacityProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LambdaCapacityProvider to import
   * @param importFromId The id of the existing LambdaCapacityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_capacity_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LambdaCapacityProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_capacity_provider", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_capacity_provider", importId: importFromId, provider });
       }
 
   // ===========
@@ -1069,7 +1069,7 @@ export class LambdaCapacityProvider extends cdktf.TerraformResource {
   public get capacityProviderScalingConfig() {
     return this._capacityProviderScalingConfig;
   }
-  public putCapacityProviderScalingConfig(value: LambdaCapacityProviderCapacityProviderScalingConfig[] | cdktf.IResolvable) {
+  public putCapacityProviderScalingConfig(value: LambdaCapacityProviderCapacityProviderScalingConfig[] | cdktn.IResolvable) {
     this._capacityProviderScalingConfig.internalValue = value;
   }
   public resetCapacityProviderScalingConfig() {
@@ -1085,7 +1085,7 @@ export class LambdaCapacityProvider extends cdktf.TerraformResource {
   public get instanceRequirements() {
     return this._instanceRequirements;
   }
-  public putInstanceRequirements(value: LambdaCapacityProviderInstanceRequirements[] | cdktf.IResolvable) {
+  public putInstanceRequirements(value: LambdaCapacityProviderInstanceRequirements[] | cdktn.IResolvable) {
     this._instanceRequirements.internalValue = value;
   }
   public resetInstanceRequirements() {
@@ -1158,7 +1158,7 @@ export class LambdaCapacityProvider extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1168,7 +1168,7 @@ export class LambdaCapacityProvider extends cdktf.TerraformResource {
   public get permissionsConfig() {
     return this._permissionsConfig;
   }
-  public putPermissionsConfig(value: LambdaCapacityProviderPermissionsConfig[] | cdktf.IResolvable) {
+  public putPermissionsConfig(value: LambdaCapacityProviderPermissionsConfig[] | cdktn.IResolvable) {
     this._permissionsConfig.internalValue = value;
   }
   public resetPermissionsConfig() {
@@ -1200,7 +1200,7 @@ export class LambdaCapacityProvider extends cdktf.TerraformResource {
   public get vpcConfig() {
     return this._vpcConfig;
   }
-  public putVpcConfig(value: LambdaCapacityProviderVpcConfig[] | cdktf.IResolvable) {
+  public putVpcConfig(value: LambdaCapacityProviderVpcConfig[] | cdktn.IResolvable) {
     this._vpcConfig.internalValue = value;
   }
   public resetVpcConfig() {
@@ -1217,58 +1217,58 @@ export class LambdaCapacityProvider extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capacity_provider_scaling_config: cdktf.listMapper(lambdaCapacityProviderCapacityProviderScalingConfigToTerraform, false)(this._capacityProviderScalingConfig.internalValue),
-      instance_requirements: cdktf.listMapper(lambdaCapacityProviderInstanceRequirementsToTerraform, false)(this._instanceRequirements.internalValue),
-      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      permissions_config: cdktf.listMapper(lambdaCapacityProviderPermissionsConfigToTerraform, true)(this._permissionsConfig.internalValue),
+      capacity_provider_scaling_config: cdktn.listMapper(lambdaCapacityProviderCapacityProviderScalingConfigToTerraform, false)(this._capacityProviderScalingConfig.internalValue),
+      instance_requirements: cdktn.listMapper(lambdaCapacityProviderInstanceRequirementsToTerraform, false)(this._instanceRequirements.internalValue),
+      kms_key_arn: cdktn.stringToTerraform(this._kmsKeyArn),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      permissions_config: cdktn.listMapper(lambdaCapacityProviderPermissionsConfigToTerraform, true)(this._permissionsConfig.internalValue),
       timeouts: lambdaCapacityProviderTimeoutsToTerraform(this._timeouts.internalValue),
-      vpc_config: cdktf.listMapper(lambdaCapacityProviderVpcConfigToTerraform, true)(this._vpcConfig.internalValue),
+      vpc_config: cdktn.listMapper(lambdaCapacityProviderVpcConfigToTerraform, true)(this._vpcConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       capacity_provider_scaling_config: {
-        value: cdktf.listMapperHcl(lambdaCapacityProviderCapacityProviderScalingConfigToHclTerraform, false)(this._capacityProviderScalingConfig.internalValue),
+        value: cdktn.listMapperHcl(lambdaCapacityProviderCapacityProviderScalingConfigToHclTerraform, false)(this._capacityProviderScalingConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LambdaCapacityProviderCapacityProviderScalingConfigList",
       },
       instance_requirements: {
-        value: cdktf.listMapperHcl(lambdaCapacityProviderInstanceRequirementsToHclTerraform, false)(this._instanceRequirements.internalValue),
+        value: cdktn.listMapperHcl(lambdaCapacityProviderInstanceRequirementsToHclTerraform, false)(this._instanceRequirements.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LambdaCapacityProviderInstanceRequirementsList",
       },
       kms_key_arn: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyArn),
+        value: cdktn.stringToHclTerraform(this._kmsKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       permissions_config: {
-        value: cdktf.listMapperHcl(lambdaCapacityProviderPermissionsConfigToHclTerraform, true)(this._permissionsConfig.internalValue),
+        value: cdktn.listMapperHcl(lambdaCapacityProviderPermissionsConfigToHclTerraform, true)(this._permissionsConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LambdaCapacityProviderPermissionsConfigList",
@@ -1280,7 +1280,7 @@ export class LambdaCapacityProvider extends cdktf.TerraformResource {
         storageClassType: "LambdaCapacityProviderTimeouts",
       },
       vpc_config: {
-        value: cdktf.listMapperHcl(lambdaCapacityProviderVpcConfigToHclTerraform, true)(this._vpcConfig.internalValue),
+        value: cdktn.listMapperHcl(lambdaCapacityProviderVpcConfigToHclTerraform, true)(this._vpcConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LambdaCapacityProviderVpcConfigList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RdsCustomDbEngineVersionConfig extends cdktf.TerraformMetaArguments {
+export interface RdsCustomDbEngineVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_custom_db_engine_version#database_installation_files_s3_bucket_name RdsCustomDbEngineVersion#database_installation_files_s3_bucket_name}
   */
@@ -99,39 +99,39 @@ export interface RdsCustomDbEngineVersionTimeouts {
   readonly update?: string;
 }
 
-export function rdsCustomDbEngineVersionTimeoutsToTerraform(struct?: RdsCustomDbEngineVersionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rdsCustomDbEngineVersionTimeoutsToTerraform(struct?: RdsCustomDbEngineVersionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function rdsCustomDbEngineVersionTimeoutsToHclTerraform(struct?: RdsCustomDbEngineVersionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rdsCustomDbEngineVersionTimeoutsToHclTerraform(struct?: RdsCustomDbEngineVersionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -142,19 +142,19 @@ export function rdsCustomDbEngineVersionTimeoutsToHclTerraform(struct?: RdsCusto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RdsCustomDbEngineVersionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RdsCustomDbEngineVersionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RdsCustomDbEngineVersionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RdsCustomDbEngineVersionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -175,7 +175,7 @@ export class RdsCustomDbEngineVersionTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RdsCustomDbEngineVersionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RdsCustomDbEngineVersionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -183,7 +183,7 @@ export class RdsCustomDbEngineVersionTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -248,7 +248,7 @@ export class RdsCustomDbEngineVersionTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_custom_db_engine_version aws_rds_custom_db_engine_version}
 */
-export class RdsCustomDbEngineVersion extends cdktf.TerraformResource {
+export class RdsCustomDbEngineVersion extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -259,14 +259,14 @@ export class RdsCustomDbEngineVersion extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RdsCustomDbEngineVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RdsCustomDbEngineVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RdsCustomDbEngineVersion to import
   * @param importFromId The id of the existing RdsCustomDbEngineVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_custom_db_engine_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RdsCustomDbEngineVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_custom_db_engine_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_custom_db_engine_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -604,21 +604,21 @@ export class RdsCustomDbEngineVersion extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database_installation_files_s3_bucket_name: cdktf.stringToTerraform(this._databaseInstallationFilesS3BucketName),
-      database_installation_files_s3_prefix: cdktf.stringToTerraform(this._databaseInstallationFilesS3Prefix),
-      description: cdktf.stringToTerraform(this._description),
-      engine: cdktf.stringToTerraform(this._engine),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      filename: cdktf.stringToTerraform(this._filename),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      manifest: cdktf.stringToTerraform(this._manifest),
-      manifest_hash: cdktf.stringToTerraform(this._manifestHash),
-      region: cdktf.stringToTerraform(this._region),
-      source_image_id: cdktf.stringToTerraform(this._sourceImageId),
-      status: cdktf.stringToTerraform(this._status),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      database_installation_files_s3_bucket_name: cdktn.stringToTerraform(this._databaseInstallationFilesS3BucketName),
+      database_installation_files_s3_prefix: cdktn.stringToTerraform(this._databaseInstallationFilesS3Prefix),
+      description: cdktn.stringToTerraform(this._description),
+      engine: cdktn.stringToTerraform(this._engine),
+      engine_version: cdktn.stringToTerraform(this._engineVersion),
+      filename: cdktn.stringToTerraform(this._filename),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      manifest: cdktn.stringToTerraform(this._manifest),
+      manifest_hash: cdktn.stringToTerraform(this._manifestHash),
+      region: cdktn.stringToTerraform(this._region),
+      source_image_id: cdktn.stringToTerraform(this._sourceImageId),
+      status: cdktn.stringToTerraform(this._status),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       timeouts: rdsCustomDbEngineVersionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -626,91 +626,91 @@ export class RdsCustomDbEngineVersion extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       database_installation_files_s3_bucket_name: {
-        value: cdktf.stringToHclTerraform(this._databaseInstallationFilesS3BucketName),
+        value: cdktn.stringToHclTerraform(this._databaseInstallationFilesS3BucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_installation_files_s3_prefix: {
-        value: cdktf.stringToHclTerraform(this._databaseInstallationFilesS3Prefix),
+        value: cdktn.stringToHclTerraform(this._databaseInstallationFilesS3Prefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_version: {
-        value: cdktf.stringToHclTerraform(this._engineVersion),
+        value: cdktn.stringToHclTerraform(this._engineVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filename: {
-        value: cdktf.stringToHclTerraform(this._filename),
+        value: cdktn.stringToHclTerraform(this._filename),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       manifest: {
-        value: cdktf.stringToHclTerraform(this._manifest),
+        value: cdktn.stringToHclTerraform(this._manifest),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       manifest_hash: {
-        value: cdktf.stringToHclTerraform(this._manifestHash),
+        value: cdktn.stringToHclTerraform(this._manifestHash),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_image_id: {
-        value: cdktf.stringToHclTerraform(this._sourceImageId),
+        value: cdktn.stringToHclTerraform(this._sourceImageId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

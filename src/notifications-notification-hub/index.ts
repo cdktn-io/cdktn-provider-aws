@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NotificationsNotificationHubConfig extends cdktf.TerraformMetaArguments {
+export interface NotificationsNotificationHubConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/notifications_notification_hub#notification_hub_region NotificationsNotificationHub#notification_hub_region}
   */
@@ -38,32 +38,32 @@ export interface NotificationsNotificationHubTimeouts {
   readonly delete?: string;
 }
 
-export function notificationsNotificationHubTimeoutsToTerraform(struct?: NotificationsNotificationHubTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationsNotificationHubTimeoutsToTerraform(struct?: NotificationsNotificationHubTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function notificationsNotificationHubTimeoutsToHclTerraform(struct?: NotificationsNotificationHubTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationsNotificationHubTimeoutsToHclTerraform(struct?: NotificationsNotificationHubTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -74,19 +74,19 @@ export function notificationsNotificationHubTimeoutsToHclTerraform(struct?: Noti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotificationsNotificationHubTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NotificationsNotificationHubTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NotificationsNotificationHubTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NotificationsNotificationHubTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -103,14 +103,14 @@ export class NotificationsNotificationHubTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NotificationsNotificationHubTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NotificationsNotificationHubTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -158,7 +158,7 @@ export class NotificationsNotificationHubTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/notifications_notification_hub aws_notifications_notification_hub}
 */
-export class NotificationsNotificationHub extends cdktf.TerraformResource {
+export class NotificationsNotificationHub extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -169,14 +169,14 @@ export class NotificationsNotificationHub extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NotificationsNotificationHub resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NotificationsNotificationHub resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationsNotificationHub to import
   * @param importFromId The id of the existing NotificationsNotificationHub that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/notifications_notification_hub#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationsNotificationHub to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_notifications_notification_hub", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_notifications_notification_hub", importId: importFromId, provider });
       }
 
   // ===========
@@ -249,7 +249,7 @@ export class NotificationsNotificationHub extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      notification_hub_region: cdktf.stringToTerraform(this._notificationHubRegion),
+      notification_hub_region: cdktn.stringToTerraform(this._notificationHubRegion),
       timeouts: notificationsNotificationHubTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -257,7 +257,7 @@ export class NotificationsNotificationHub extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       notification_hub_region: {
-        value: cdktf.stringToHclTerraform(this._notificationHubRegion),
+        value: cdktn.stringToHclTerraform(this._notificationHubRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

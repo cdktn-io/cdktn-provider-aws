@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsNetworkmanagerLinksConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsNetworkmanagerLinksConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_links#global_network_id DataAwsNetworkmanagerLinks#global_network_id}
   */
@@ -44,7 +44,7 @@ export interface DataAwsNetworkmanagerLinksConfig extends cdktf.TerraformMetaArg
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_links aws_networkmanager_links}
 */
-export class DataAwsNetworkmanagerLinks extends cdktf.TerraformDataSource {
+export class DataAwsNetworkmanagerLinks extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -55,14 +55,14 @@ export class DataAwsNetworkmanagerLinks extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsNetworkmanagerLinks resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsNetworkmanagerLinks resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsNetworkmanagerLinks to import
   * @param importFromId The id of the existing DataAwsNetworkmanagerLinks that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_links#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsNetworkmanagerLinks to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_links", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_links", importId: importFromId, provider });
       }
 
   // ===========
@@ -208,49 +208,49 @@ export class DataAwsNetworkmanagerLinks extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      global_network_id: cdktf.stringToTerraform(this._globalNetworkId),
-      id: cdktf.stringToTerraform(this._id),
-      provider_name: cdktf.stringToTerraform(this._providerName),
-      site_id: cdktf.stringToTerraform(this._siteId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      type: cdktf.stringToTerraform(this._type),
+      global_network_id: cdktn.stringToTerraform(this._globalNetworkId),
+      id: cdktn.stringToTerraform(this._id),
+      provider_name: cdktn.stringToTerraform(this._providerName),
+      site_id: cdktn.stringToTerraform(this._siteId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      type: cdktn.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       global_network_id: {
-        value: cdktf.stringToHclTerraform(this._globalNetworkId),
+        value: cdktn.stringToHclTerraform(this._globalNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provider_name: {
-        value: cdktf.stringToHclTerraform(this._providerName),
+        value: cdktn.stringToHclTerraform(this._providerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       site_id: {
-        value: cdktf.stringToHclTerraform(this._siteId),
+        value: cdktn.stringToHclTerraform(this._siteId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

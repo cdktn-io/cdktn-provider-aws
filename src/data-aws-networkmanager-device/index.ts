@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsNetworkmanagerDeviceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsNetworkmanagerDeviceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_device#device_id DataAwsNetworkmanagerDevice#device_id}
   */
@@ -36,8 +36,8 @@ export interface DataAwsNetworkmanagerDeviceAwsLocation {
 }
 
 export function dataAwsNetworkmanagerDeviceAwsLocationToTerraform(struct?: DataAwsNetworkmanagerDeviceAwsLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -46,8 +46,8 @@ export function dataAwsNetworkmanagerDeviceAwsLocationToTerraform(struct?: DataA
 
 
 export function dataAwsNetworkmanagerDeviceAwsLocationToHclTerraform(struct?: DataAwsNetworkmanagerDeviceAwsLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -55,7 +55,7 @@ export function dataAwsNetworkmanagerDeviceAwsLocationToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsNetworkmanagerDeviceAwsLocationOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerDeviceAwsLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -64,7 +64,7 @@ export class DataAwsNetworkmanagerDeviceAwsLocationOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -94,14 +94,14 @@ export class DataAwsNetworkmanagerDeviceAwsLocationOutputReference extends cdktf
   }
 }
 
-export class DataAwsNetworkmanagerDeviceAwsLocationList extends cdktf.ComplexList {
+export class DataAwsNetworkmanagerDeviceAwsLocationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -116,8 +116,8 @@ export interface DataAwsNetworkmanagerDeviceLocation {
 }
 
 export function dataAwsNetworkmanagerDeviceLocationToTerraform(struct?: DataAwsNetworkmanagerDeviceLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -126,8 +126,8 @@ export function dataAwsNetworkmanagerDeviceLocationToTerraform(struct?: DataAwsN
 
 
 export function dataAwsNetworkmanagerDeviceLocationToHclTerraform(struct?: DataAwsNetworkmanagerDeviceLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -135,7 +135,7 @@ export function dataAwsNetworkmanagerDeviceLocationToHclTerraform(struct?: DataA
   return attrs;
 }
 
-export class DataAwsNetworkmanagerDeviceLocationOutputReference extends cdktf.ComplexObject {
+export class DataAwsNetworkmanagerDeviceLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -144,7 +144,7 @@ export class DataAwsNetworkmanagerDeviceLocationOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -179,14 +179,14 @@ export class DataAwsNetworkmanagerDeviceLocationOutputReference extends cdktf.Co
   }
 }
 
-export class DataAwsNetworkmanagerDeviceLocationList extends cdktf.ComplexList {
+export class DataAwsNetworkmanagerDeviceLocationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -201,7 +201,7 @@ export class DataAwsNetworkmanagerDeviceLocationList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_device aws_networkmanager_device}
 */
-export class DataAwsNetworkmanagerDevice extends cdktf.TerraformDataSource {
+export class DataAwsNetworkmanagerDevice extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -212,14 +212,14 @@ export class DataAwsNetworkmanagerDevice extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsNetworkmanagerDevice resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsNetworkmanagerDevice resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsNetworkmanagerDevice to import
   * @param importFromId The id of the existing DataAwsNetworkmanagerDevice that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/networkmanager_device#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsNetworkmanagerDevice to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_device", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_device", importId: importFromId, provider });
       }
 
   // ===========
@@ -370,35 +370,35 @@ export class DataAwsNetworkmanagerDevice extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      device_id: cdktf.stringToTerraform(this._deviceId),
-      global_network_id: cdktf.stringToTerraform(this._globalNetworkId),
-      id: cdktf.stringToTerraform(this._id),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      device_id: cdktn.stringToTerraform(this._deviceId),
+      global_network_id: cdktn.stringToTerraform(this._globalNetworkId),
+      id: cdktn.stringToTerraform(this._id),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       device_id: {
-        value: cdktf.stringToHclTerraform(this._deviceId),
+        value: cdktn.stringToHclTerraform(this._deviceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       global_network_id: {
-        value: cdktf.stringToHclTerraform(this._globalNetworkId),
+        value: cdktn.stringToHclTerraform(this._globalNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

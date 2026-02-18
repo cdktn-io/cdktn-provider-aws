@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsmResourceDataSyncConfig extends cdktf.TerraformMetaArguments {
+export interface SsmResourceDataSyncConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_resource_data_sync#id SsmResourceDataSync#id}
   *
@@ -60,52 +60,52 @@ export interface SsmResourceDataSyncS3Destination {
 }
 
 export function ssmResourceDataSyncS3DestinationToTerraform(struct?: SsmResourceDataSyncS3DestinationOutputReference | SsmResourceDataSyncS3Destination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    region: cdktf.stringToTerraform(struct!.region),
-    sync_format: cdktf.stringToTerraform(struct!.syncFormat),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    region: cdktn.stringToTerraform(struct!.region),
+    sync_format: cdktn.stringToTerraform(struct!.syncFormat),
   }
 }
 
 
 export function ssmResourceDataSyncS3DestinationToHclTerraform(struct?: SsmResourceDataSyncS3DestinationOutputReference | SsmResourceDataSyncS3Destination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sync_format: {
-      value: cdktf.stringToHclTerraform(struct!.syncFormat),
+      value: cdktn.stringToHclTerraform(struct!.syncFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -116,14 +116,14 @@ export function ssmResourceDataSyncS3DestinationToHclTerraform(struct?: SsmResou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmResourceDataSyncS3DestinationOutputReference extends cdktf.ComplexObject {
+export class SsmResourceDataSyncS3DestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -250,7 +250,7 @@ export class SsmResourceDataSyncS3DestinationOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_resource_data_sync aws_ssm_resource_data_sync}
 */
-export class SsmResourceDataSync extends cdktf.TerraformResource {
+export class SsmResourceDataSync extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -261,14 +261,14 @@ export class SsmResourceDataSync extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsmResourceDataSync resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsmResourceDataSync resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmResourceDataSync to import
   * @param importFromId The id of the existing SsmResourceDataSync that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_resource_data_sync#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmResourceDataSync to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_resource_data_sync", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_resource_data_sync", importId: importFromId, provider });
       }
 
   // ===========
@@ -372,9 +372,9 @@ export class SsmResourceDataSync extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
       s3_destination: ssmResourceDataSyncS3DestinationToTerraform(this._s3Destination.internalValue),
     };
   }
@@ -382,19 +382,19 @@ export class SsmResourceDataSync extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

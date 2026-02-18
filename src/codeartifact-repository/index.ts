@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CodeartifactRepositoryConfig extends cdktf.TerraformMetaArguments {
+export interface CodeartifactRepositoryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codeartifact_repository#description CodeartifactRepository#description}
   */
@@ -60,7 +60,7 @@ export interface CodeartifactRepositoryConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codeartifact_repository#upstream CodeartifactRepository#upstream}
   */
-  readonly upstream?: CodeartifactRepositoryUpstream[] | cdktf.IResolvable;
+  readonly upstream?: CodeartifactRepositoryUpstream[] | cdktn.IResolvable;
 }
 export interface CodeartifactRepositoryExternalConnections {
   /**
@@ -70,24 +70,24 @@ export interface CodeartifactRepositoryExternalConnections {
 }
 
 export function codeartifactRepositoryExternalConnectionsToTerraform(struct?: CodeartifactRepositoryExternalConnectionsOutputReference | CodeartifactRepositoryExternalConnections): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_connection_name: cdktf.stringToTerraform(struct!.externalConnectionName),
+    external_connection_name: cdktn.stringToTerraform(struct!.externalConnectionName),
   }
 }
 
 
 export function codeartifactRepositoryExternalConnectionsToHclTerraform(struct?: CodeartifactRepositoryExternalConnectionsOutputReference | CodeartifactRepositoryExternalConnections): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_connection_name: {
-      value: cdktf.stringToHclTerraform(struct!.externalConnectionName),
+      value: cdktn.stringToHclTerraform(struct!.externalConnectionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -98,14 +98,14 @@ export function codeartifactRepositoryExternalConnectionsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodeartifactRepositoryExternalConnectionsOutputReference extends cdktf.ComplexObject {
+export class CodeartifactRepositoryExternalConnectionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -160,25 +160,25 @@ export interface CodeartifactRepositoryUpstream {
   readonly repositoryName: string;
 }
 
-export function codeartifactRepositoryUpstreamToTerraform(struct?: CodeartifactRepositoryUpstream | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codeartifactRepositoryUpstreamToTerraform(struct?: CodeartifactRepositoryUpstream | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    repository_name: cdktf.stringToTerraform(struct!.repositoryName),
+    repository_name: cdktn.stringToTerraform(struct!.repositoryName),
   }
 }
 
 
-export function codeartifactRepositoryUpstreamToHclTerraform(struct?: CodeartifactRepositoryUpstream | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codeartifactRepositoryUpstreamToHclTerraform(struct?: CodeartifactRepositoryUpstream | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     repository_name: {
-      value: cdktf.stringToHclTerraform(struct!.repositoryName),
+      value: cdktn.stringToHclTerraform(struct!.repositoryName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -189,9 +189,9 @@ export function codeartifactRepositoryUpstreamToHclTerraform(struct?: Codeartifa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodeartifactRepositoryUpstreamOutputReference extends cdktf.ComplexObject {
+export class CodeartifactRepositoryUpstreamOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -199,11 +199,11 @@ export class CodeartifactRepositoryUpstreamOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodeartifactRepositoryUpstream | cdktf.IResolvable | undefined {
+  public get internalValue(): CodeartifactRepositoryUpstream | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -216,13 +216,13 @@ export class CodeartifactRepositoryUpstreamOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodeartifactRepositoryUpstream | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodeartifactRepositoryUpstream | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._repositoryName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,15 +247,15 @@ export class CodeartifactRepositoryUpstreamOutputReference extends cdktf.Complex
   }
 }
 
-export class CodeartifactRepositoryUpstreamList extends cdktf.ComplexList {
-  public internalValue? : CodeartifactRepositoryUpstream[] | cdktf.IResolvable
+export class CodeartifactRepositoryUpstreamList extends cdktn.ComplexList {
+  public internalValue? : CodeartifactRepositoryUpstream[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -270,7 +270,7 @@ export class CodeartifactRepositoryUpstreamList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codeartifact_repository aws_codeartifact_repository}
 */
-export class CodeartifactRepository extends cdktf.TerraformResource {
+export class CodeartifactRepository extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -281,14 +281,14 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CodeartifactRepository resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CodeartifactRepository resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodeartifactRepository to import
   * @param importFromId The id of the existing CodeartifactRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codeartifact_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodeartifactRepository to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_codeartifact_repository", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_codeartifact_repository", importId: importFromId, provider });
       }
 
   // ===========
@@ -487,7 +487,7 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
   public get upstream() {
     return this._upstream;
   }
-  public putUpstream(value: CodeartifactRepositoryUpstream[] | cdktf.IResolvable) {
+  public putUpstream(value: CodeartifactRepositoryUpstream[] | cdktn.IResolvable) {
     this._upstream.internalValue = value;
   }
   public resetUpstream() {
@@ -504,65 +504,65 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      domain: cdktf.stringToTerraform(this._domain),
-      domain_owner: cdktf.stringToTerraform(this._domainOwner),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      repository: cdktf.stringToTerraform(this._repository),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      description: cdktn.stringToTerraform(this._description),
+      domain: cdktn.stringToTerraform(this._domain),
+      domain_owner: cdktn.stringToTerraform(this._domainOwner),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      repository: cdktn.stringToTerraform(this._repository),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       external_connections: codeartifactRepositoryExternalConnectionsToTerraform(this._externalConnections.internalValue),
-      upstream: cdktf.listMapper(codeartifactRepositoryUpstreamToTerraform, true)(this._upstream.internalValue),
+      upstream: cdktn.listMapper(codeartifactRepositoryUpstreamToTerraform, true)(this._upstream.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain: {
-        value: cdktf.stringToHclTerraform(this._domain),
+        value: cdktn.stringToHclTerraform(this._domain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_owner: {
-        value: cdktf.stringToHclTerraform(this._domainOwner),
+        value: cdktn.stringToHclTerraform(this._domainOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository: {
-        value: cdktf.stringToHclTerraform(this._repository),
+        value: cdktn.stringToHclTerraform(this._repository),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -574,7 +574,7 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
         storageClassType: "CodeartifactRepositoryExternalConnectionsList",
       },
       upstream: {
-        value: cdktf.listMapperHcl(codeartifactRepositoryUpstreamToHclTerraform, true)(this._upstream.internalValue),
+        value: cdktn.listMapperHcl(codeartifactRepositoryUpstreamToHclTerraform, true)(this._upstream.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CodeartifactRepositoryUpstreamList",

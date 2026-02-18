@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecuritylakeSubscriberConfig extends cdktf.TerraformMetaArguments {
+export interface SecuritylakeSubscriberConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_subscriber#access_type SecuritylakeSubscriber#access_type}
   */
@@ -39,13 +39,13 @@ export interface SecuritylakeSubscriberConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_subscriber#source SecuritylakeSubscriber#source}
   */
-  readonly source?: SecuritylakeSubscriberSource[] | cdktf.IResolvable;
+  readonly source?: SecuritylakeSubscriberSource[] | cdktn.IResolvable;
   /**
   * subscriber_identity block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_subscriber#subscriber_identity SecuritylakeSubscriber#subscriber_identity}
   */
-  readonly subscriberIdentity?: SecuritylakeSubscriberSubscriberIdentity[] | cdktf.IResolvable;
+  readonly subscriberIdentity?: SecuritylakeSubscriberSubscriberIdentity[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -64,32 +64,32 @@ export interface SecuritylakeSubscriberSourceAwsLogSourceResource {
   readonly sourceVersion?: string;
 }
 
-export function securitylakeSubscriberSourceAwsLogSourceResourceToTerraform(struct?: SecuritylakeSubscriberSourceAwsLogSourceResource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberSourceAwsLogSourceResourceToTerraform(struct?: SecuritylakeSubscriberSourceAwsLogSourceResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source_name: cdktf.stringToTerraform(struct!.sourceName),
-    source_version: cdktf.stringToTerraform(struct!.sourceVersion),
+    source_name: cdktn.stringToTerraform(struct!.sourceName),
+    source_version: cdktn.stringToTerraform(struct!.sourceVersion),
   }
 }
 
 
-export function securitylakeSubscriberSourceAwsLogSourceResourceToHclTerraform(struct?: SecuritylakeSubscriberSourceAwsLogSourceResource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberSourceAwsLogSourceResourceToHclTerraform(struct?: SecuritylakeSubscriberSourceAwsLogSourceResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source_name: {
-      value: cdktf.stringToHclTerraform(struct!.sourceName),
+      value: cdktn.stringToHclTerraform(struct!.sourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_version: {
-      value: cdktf.stringToHclTerraform(struct!.sourceVersion),
+      value: cdktn.stringToHclTerraform(struct!.sourceVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,9 +100,9 @@ export function securitylakeSubscriberSourceAwsLogSourceResourceToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -110,11 +110,11 @@ export class SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeSubscriberSourceAwsLogSourceResource | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeSubscriberSourceAwsLogSourceResource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -131,14 +131,14 @@ export class SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeSubscriberSourceAwsLogSourceResource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeSubscriberSourceAwsLogSourceResource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._sourceName = undefined;
       this._sourceVersion = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -180,15 +180,15 @@ export class SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference ext
   }
 }
 
-export class SecuritylakeSubscriberSourceAwsLogSourceResourceList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeSubscriberSourceAwsLogSourceResource[] | cdktf.IResolvable
+export class SecuritylakeSubscriberSourceAwsLogSourceResourceList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeSubscriberSourceAwsLogSourceResource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -203,8 +203,8 @@ export interface SecuritylakeSubscriberSourceCustomLogSourceResourceAttributes {
 }
 
 export function securitylakeSubscriberSourceCustomLogSourceResourceAttributesToTerraform(struct?: SecuritylakeSubscriberSourceCustomLogSourceResourceAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -213,8 +213,8 @@ export function securitylakeSubscriberSourceCustomLogSourceResourceAttributesToT
 
 
 export function securitylakeSubscriberSourceCustomLogSourceResourceAttributesToHclTerraform(struct?: SecuritylakeSubscriberSourceCustomLogSourceResourceAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -222,7 +222,7 @@ export function securitylakeSubscriberSourceCustomLogSourceResourceAttributesToH
   return attrs;
 }
 
-export class SecuritylakeSubscriberSourceCustomLogSourceResourceAttributesOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeSubscriberSourceCustomLogSourceResourceAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -231,7 +231,7 @@ export class SecuritylakeSubscriberSourceCustomLogSourceResourceAttributesOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -266,14 +266,14 @@ export class SecuritylakeSubscriberSourceCustomLogSourceResourceAttributesOutput
   }
 }
 
-export class SecuritylakeSubscriberSourceCustomLogSourceResourceAttributesList extends cdktf.ComplexList {
+export class SecuritylakeSubscriberSourceCustomLogSourceResourceAttributesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -288,8 +288,8 @@ export interface SecuritylakeSubscriberSourceCustomLogSourceResourceProvider {
 }
 
 export function securitylakeSubscriberSourceCustomLogSourceResourceProviderToTerraform(struct?: SecuritylakeSubscriberSourceCustomLogSourceResourceProvider): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -298,8 +298,8 @@ export function securitylakeSubscriberSourceCustomLogSourceResourceProviderToTer
 
 
 export function securitylakeSubscriberSourceCustomLogSourceResourceProviderToHclTerraform(struct?: SecuritylakeSubscriberSourceCustomLogSourceResourceProvider): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -307,7 +307,7 @@ export function securitylakeSubscriberSourceCustomLogSourceResourceProviderToHcl
   return attrs;
 }
 
-export class SecuritylakeSubscriberSourceCustomLogSourceResourceProviderOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeSubscriberSourceCustomLogSourceResourceProviderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -316,7 +316,7 @@ export class SecuritylakeSubscriberSourceCustomLogSourceResourceProviderOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -346,14 +346,14 @@ export class SecuritylakeSubscriberSourceCustomLogSourceResourceProviderOutputRe
   }
 }
 
-export class SecuritylakeSubscriberSourceCustomLogSourceResourceProviderList extends cdktf.ComplexList {
+export class SecuritylakeSubscriberSourceCustomLogSourceResourceProviderList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -375,32 +375,32 @@ export interface SecuritylakeSubscriberSourceCustomLogSourceResource {
   readonly sourceVersion?: string;
 }
 
-export function securitylakeSubscriberSourceCustomLogSourceResourceToTerraform(struct?: SecuritylakeSubscriberSourceCustomLogSourceResource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberSourceCustomLogSourceResourceToTerraform(struct?: SecuritylakeSubscriberSourceCustomLogSourceResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source_name: cdktf.stringToTerraform(struct!.sourceName),
-    source_version: cdktf.stringToTerraform(struct!.sourceVersion),
+    source_name: cdktn.stringToTerraform(struct!.sourceName),
+    source_version: cdktn.stringToTerraform(struct!.sourceVersion),
   }
 }
 
 
-export function securitylakeSubscriberSourceCustomLogSourceResourceToHclTerraform(struct?: SecuritylakeSubscriberSourceCustomLogSourceResource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberSourceCustomLogSourceResourceToHclTerraform(struct?: SecuritylakeSubscriberSourceCustomLogSourceResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source_name: {
-      value: cdktf.stringToHclTerraform(struct!.sourceName),
+      value: cdktn.stringToHclTerraform(struct!.sourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_version: {
-      value: cdktf.stringToHclTerraform(struct!.sourceVersion),
+      value: cdktn.stringToHclTerraform(struct!.sourceVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -411,9 +411,9 @@ export function securitylakeSubscriberSourceCustomLogSourceResourceToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeSubscriberSourceCustomLogSourceResourceOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeSubscriberSourceCustomLogSourceResourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -421,11 +421,11 @@ export class SecuritylakeSubscriberSourceCustomLogSourceResourceOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeSubscriberSourceCustomLogSourceResource | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeSubscriberSourceCustomLogSourceResource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -442,14 +442,14 @@ export class SecuritylakeSubscriberSourceCustomLogSourceResourceOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeSubscriberSourceCustomLogSourceResource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeSubscriberSourceCustomLogSourceResource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._sourceName = undefined;
       this._sourceVersion = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -503,15 +503,15 @@ export class SecuritylakeSubscriberSourceCustomLogSourceResourceOutputReference 
   }
 }
 
-export class SecuritylakeSubscriberSourceCustomLogSourceResourceList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeSubscriberSourceCustomLogSourceResource[] | cdktf.IResolvable
+export class SecuritylakeSubscriberSourceCustomLogSourceResourceList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeSubscriberSourceCustomLogSourceResource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -528,41 +528,41 @@ export interface SecuritylakeSubscriberSource {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_subscriber#aws_log_source_resource SecuritylakeSubscriber#aws_log_source_resource}
   */
-  readonly awsLogSourceResource?: SecuritylakeSubscriberSourceAwsLogSourceResource[] | cdktf.IResolvable;
+  readonly awsLogSourceResource?: SecuritylakeSubscriberSourceAwsLogSourceResource[] | cdktn.IResolvable;
   /**
   * custom_log_source_resource block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_subscriber#custom_log_source_resource SecuritylakeSubscriber#custom_log_source_resource}
   */
-  readonly customLogSourceResource?: SecuritylakeSubscriberSourceCustomLogSourceResource[] | cdktf.IResolvable;
+  readonly customLogSourceResource?: SecuritylakeSubscriberSourceCustomLogSourceResource[] | cdktn.IResolvable;
 }
 
-export function securitylakeSubscriberSourceToTerraform(struct?: SecuritylakeSubscriberSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberSourceToTerraform(struct?: SecuritylakeSubscriberSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_log_source_resource: cdktf.listMapper(securitylakeSubscriberSourceAwsLogSourceResourceToTerraform, true)(struct!.awsLogSourceResource),
-    custom_log_source_resource: cdktf.listMapper(securitylakeSubscriberSourceCustomLogSourceResourceToTerraform, true)(struct!.customLogSourceResource),
+    aws_log_source_resource: cdktn.listMapper(securitylakeSubscriberSourceAwsLogSourceResourceToTerraform, true)(struct!.awsLogSourceResource),
+    custom_log_source_resource: cdktn.listMapper(securitylakeSubscriberSourceCustomLogSourceResourceToTerraform, true)(struct!.customLogSourceResource),
   }
 }
 
 
-export function securitylakeSubscriberSourceToHclTerraform(struct?: SecuritylakeSubscriberSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberSourceToHclTerraform(struct?: SecuritylakeSubscriberSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_log_source_resource: {
-      value: cdktf.listMapperHcl(securitylakeSubscriberSourceAwsLogSourceResourceToHclTerraform, true)(struct!.awsLogSourceResource),
+      value: cdktn.listMapperHcl(securitylakeSubscriberSourceAwsLogSourceResourceToHclTerraform, true)(struct!.awsLogSourceResource),
       isBlock: true,
       type: "list",
       storageClassType: "SecuritylakeSubscriberSourceAwsLogSourceResourceList",
     },
     custom_log_source_resource: {
-      value: cdktf.listMapperHcl(securitylakeSubscriberSourceCustomLogSourceResourceToHclTerraform, true)(struct!.customLogSourceResource),
+      value: cdktn.listMapperHcl(securitylakeSubscriberSourceCustomLogSourceResourceToHclTerraform, true)(struct!.customLogSourceResource),
       isBlock: true,
       type: "list",
       storageClassType: "SecuritylakeSubscriberSourceCustomLogSourceResourceList",
@@ -573,9 +573,9 @@ export function securitylakeSubscriberSourceToHclTerraform(struct?: Securitylake
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeSubscriberSourceOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeSubscriberSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -583,11 +583,11 @@ export class SecuritylakeSubscriberSourceOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeSubscriberSource | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeSubscriberSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -604,14 +604,14 @@ export class SecuritylakeSubscriberSourceOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeSubscriberSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeSubscriberSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._awsLogSourceResource.internalValue = undefined;
       this._customLogSourceResource.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -628,7 +628,7 @@ export class SecuritylakeSubscriberSourceOutputReference extends cdktf.ComplexOb
   public get awsLogSourceResource() {
     return this._awsLogSourceResource;
   }
-  public putAwsLogSourceResource(value: SecuritylakeSubscriberSourceAwsLogSourceResource[] | cdktf.IResolvable) {
+  public putAwsLogSourceResource(value: SecuritylakeSubscriberSourceAwsLogSourceResource[] | cdktn.IResolvable) {
     this._awsLogSourceResource.internalValue = value;
   }
   public resetAwsLogSourceResource() {
@@ -644,7 +644,7 @@ export class SecuritylakeSubscriberSourceOutputReference extends cdktf.ComplexOb
   public get customLogSourceResource() {
     return this._customLogSourceResource;
   }
-  public putCustomLogSourceResource(value: SecuritylakeSubscriberSourceCustomLogSourceResource[] | cdktf.IResolvable) {
+  public putCustomLogSourceResource(value: SecuritylakeSubscriberSourceCustomLogSourceResource[] | cdktn.IResolvable) {
     this._customLogSourceResource.internalValue = value;
   }
   public resetCustomLogSourceResource() {
@@ -656,15 +656,15 @@ export class SecuritylakeSubscriberSourceOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class SecuritylakeSubscriberSourceList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeSubscriberSource[] | cdktf.IResolvable
+export class SecuritylakeSubscriberSourceList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeSubscriberSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -686,32 +686,32 @@ export interface SecuritylakeSubscriberSubscriberIdentity {
   readonly principal: string;
 }
 
-export function securitylakeSubscriberSubscriberIdentityToTerraform(struct?: SecuritylakeSubscriberSubscriberIdentity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberSubscriberIdentityToTerraform(struct?: SecuritylakeSubscriberSubscriberIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    principal: cdktf.stringToTerraform(struct!.principal),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    principal: cdktn.stringToTerraform(struct!.principal),
   }
 }
 
 
-export function securitylakeSubscriberSubscriberIdentityToHclTerraform(struct?: SecuritylakeSubscriberSubscriberIdentity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberSubscriberIdentityToHclTerraform(struct?: SecuritylakeSubscriberSubscriberIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     principal: {
-      value: cdktf.stringToHclTerraform(struct!.principal),
+      value: cdktn.stringToHclTerraform(struct!.principal),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -722,9 +722,9 @@ export function securitylakeSubscriberSubscriberIdentityToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeSubscriberSubscriberIdentityOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeSubscriberSubscriberIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -732,11 +732,11 @@ export class SecuritylakeSubscriberSubscriberIdentityOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeSubscriberSubscriberIdentity | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeSubscriberSubscriberIdentity | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -753,14 +753,14 @@ export class SecuritylakeSubscriberSubscriberIdentityOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeSubscriberSubscriberIdentity | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeSubscriberSubscriberIdentity | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._externalId = undefined;
       this._principal = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -799,15 +799,15 @@ export class SecuritylakeSubscriberSubscriberIdentityOutputReference extends cdk
   }
 }
 
-export class SecuritylakeSubscriberSubscriberIdentityList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeSubscriberSubscriberIdentity[] | cdktf.IResolvable
+export class SecuritylakeSubscriberSubscriberIdentityList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeSubscriberSubscriberIdentity[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -839,39 +839,39 @@ export interface SecuritylakeSubscriberTimeouts {
   readonly update?: string;
 }
 
-export function securitylakeSubscriberTimeoutsToTerraform(struct?: SecuritylakeSubscriberTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberTimeoutsToTerraform(struct?: SecuritylakeSubscriberTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function securitylakeSubscriberTimeoutsToHclTerraform(struct?: SecuritylakeSubscriberTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberTimeoutsToHclTerraform(struct?: SecuritylakeSubscriberTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -882,19 +882,19 @@ export function securitylakeSubscriberTimeoutsToHclTerraform(struct?: Securityla
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeSubscriberTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeSubscriberTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SecuritylakeSubscriberTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeSubscriberTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -915,7 +915,7 @@ export class SecuritylakeSubscriberTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeSubscriberTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeSubscriberTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -923,7 +923,7 @@ export class SecuritylakeSubscriberTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -988,7 +988,7 @@ export class SecuritylakeSubscriberTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_subscriber aws_securitylake_subscriber}
 */
-export class SecuritylakeSubscriber extends cdktf.TerraformResource {
+export class SecuritylakeSubscriber extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -999,14 +999,14 @@ export class SecuritylakeSubscriber extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecuritylakeSubscriber resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecuritylakeSubscriber resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecuritylakeSubscriber to import
   * @param importFromId The id of the existing SecuritylakeSubscriber that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_subscriber#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecuritylakeSubscriber to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_securitylake_subscriber", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_securitylake_subscriber", importId: importFromId, provider });
       }
 
   // ===========
@@ -1171,7 +1171,7 @@ export class SecuritylakeSubscriber extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1181,7 +1181,7 @@ export class SecuritylakeSubscriber extends cdktf.TerraformResource {
   public get source() {
     return this._source;
   }
-  public putSource(value: SecuritylakeSubscriberSource[] | cdktf.IResolvable) {
+  public putSource(value: SecuritylakeSubscriberSource[] | cdktn.IResolvable) {
     this._source.internalValue = value;
   }
   public resetSource() {
@@ -1197,7 +1197,7 @@ export class SecuritylakeSubscriber extends cdktf.TerraformResource {
   public get subscriberIdentity() {
     return this._subscriberIdentity;
   }
-  public putSubscriberIdentity(value: SecuritylakeSubscriberSubscriberIdentity[] | cdktf.IResolvable) {
+  public putSubscriberIdentity(value: SecuritylakeSubscriberSubscriberIdentity[] | cdktn.IResolvable) {
     this._subscriberIdentity.internalValue = value;
   }
   public resetSubscriberIdentity() {
@@ -1230,13 +1230,13 @@ export class SecuritylakeSubscriber extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_type: cdktf.stringToTerraform(this._accessType),
-      region: cdktf.stringToTerraform(this._region),
-      subscriber_description: cdktf.stringToTerraform(this._subscriberDescription),
-      subscriber_name: cdktf.stringToTerraform(this._subscriberName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      source: cdktf.listMapper(securitylakeSubscriberSourceToTerraform, true)(this._source.internalValue),
-      subscriber_identity: cdktf.listMapper(securitylakeSubscriberSubscriberIdentityToTerraform, true)(this._subscriberIdentity.internalValue),
+      access_type: cdktn.stringToTerraform(this._accessType),
+      region: cdktn.stringToTerraform(this._region),
+      subscriber_description: cdktn.stringToTerraform(this._subscriberDescription),
+      subscriber_name: cdktn.stringToTerraform(this._subscriberName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      source: cdktn.listMapper(securitylakeSubscriberSourceToTerraform, true)(this._source.internalValue),
+      subscriber_identity: cdktn.listMapper(securitylakeSubscriberSubscriberIdentityToTerraform, true)(this._subscriberIdentity.internalValue),
       timeouts: securitylakeSubscriberTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1244,43 +1244,43 @@ export class SecuritylakeSubscriber extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_type: {
-        value: cdktf.stringToHclTerraform(this._accessType),
+        value: cdktn.stringToHclTerraform(this._accessType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subscriber_description: {
-        value: cdktf.stringToHclTerraform(this._subscriberDescription),
+        value: cdktn.stringToHclTerraform(this._subscriberDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subscriber_name: {
-        value: cdktf.stringToHclTerraform(this._subscriberName),
+        value: cdktn.stringToHclTerraform(this._subscriberName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       source: {
-        value: cdktf.listMapperHcl(securitylakeSubscriberSourceToHclTerraform, true)(this._source.internalValue),
+        value: cdktn.listMapperHcl(securitylakeSubscriberSourceToHclTerraform, true)(this._source.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SecuritylakeSubscriberSourceList",
       },
       subscriber_identity: {
-        value: cdktf.listMapperHcl(securitylakeSubscriberSubscriberIdentityToHclTerraform, true)(this._subscriberIdentity.internalValue),
+        value: cdktn.listMapperHcl(securitylakeSubscriberSubscriberIdentityToHclTerraform, true)(this._subscriberIdentity.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SecuritylakeSubscriberSubscriberIdentityList",

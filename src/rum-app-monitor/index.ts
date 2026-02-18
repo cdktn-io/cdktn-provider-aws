@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RumAppMonitorConfig extends cdktf.TerraformMetaArguments {
+export interface RumAppMonitorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rum_app_monitor#cw_log_enabled RumAppMonitor#cw_log_enabled}
   */
-  readonly cwLogEnabled?: boolean | cdktf.IResolvable;
+  readonly cwLogEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rum_app_monitor#domain RumAppMonitor#domain}
   */
@@ -66,11 +66,11 @@ export interface RumAppMonitorAppMonitorConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rum_app_monitor#allow_cookies RumAppMonitor#allow_cookies}
   */
-  readonly allowCookies?: boolean | cdktf.IResolvable;
+  readonly allowCookies?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rum_app_monitor#enable_xray RumAppMonitor#enable_xray}
   */
-  readonly enableXray?: boolean | cdktf.IResolvable;
+  readonly enableXray?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rum_app_monitor#excluded_pages RumAppMonitor#excluded_pages}
   */
@@ -102,80 +102,80 @@ export interface RumAppMonitorAppMonitorConfiguration {
 }
 
 export function rumAppMonitorAppMonitorConfigurationToTerraform(struct?: RumAppMonitorAppMonitorConfigurationOutputReference | RumAppMonitorAppMonitorConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_cookies: cdktf.booleanToTerraform(struct!.allowCookies),
-    enable_xray: cdktf.booleanToTerraform(struct!.enableXray),
-    excluded_pages: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedPages),
-    favorite_pages: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.favoritePages),
-    guest_role_arn: cdktf.stringToTerraform(struct!.guestRoleArn),
-    identity_pool_id: cdktf.stringToTerraform(struct!.identityPoolId),
-    included_pages: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPages),
-    session_sample_rate: cdktf.numberToTerraform(struct!.sessionSampleRate),
-    telemetries: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.telemetries),
+    allow_cookies: cdktn.booleanToTerraform(struct!.allowCookies),
+    enable_xray: cdktn.booleanToTerraform(struct!.enableXray),
+    excluded_pages: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedPages),
+    favorite_pages: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.favoritePages),
+    guest_role_arn: cdktn.stringToTerraform(struct!.guestRoleArn),
+    identity_pool_id: cdktn.stringToTerraform(struct!.identityPoolId),
+    included_pages: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedPages),
+    session_sample_rate: cdktn.numberToTerraform(struct!.sessionSampleRate),
+    telemetries: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.telemetries),
   }
 }
 
 
 export function rumAppMonitorAppMonitorConfigurationToHclTerraform(struct?: RumAppMonitorAppMonitorConfigurationOutputReference | RumAppMonitorAppMonitorConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_cookies: {
-      value: cdktf.booleanToHclTerraform(struct!.allowCookies),
+      value: cdktn.booleanToHclTerraform(struct!.allowCookies),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_xray: {
-      value: cdktf.booleanToHclTerraform(struct!.enableXray),
+      value: cdktn.booleanToHclTerraform(struct!.enableXray),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     excluded_pages: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedPages),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedPages),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     favorite_pages: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.favoritePages),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.favoritePages),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     guest_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.guestRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.guestRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_pool_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityPoolId),
+      value: cdktn.stringToHclTerraform(struct!.identityPoolId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     included_pages: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedPages),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includedPages),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     session_sample_rate: {
-      value: cdktf.numberToHclTerraform(struct!.sessionSampleRate),
+      value: cdktn.numberToHclTerraform(struct!.sessionSampleRate),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     telemetries: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.telemetries),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.telemetries),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -186,14 +186,14 @@ export function rumAppMonitorAppMonitorConfigurationToHclTerraform(struct?: RumA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RumAppMonitorAppMonitorConfigurationOutputReference extends cdktf.ComplexObject {
+export class RumAppMonitorAppMonitorConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -267,11 +267,11 @@ export class RumAppMonitorAppMonitorConfigurationOutputReference extends cdktf.C
   }
 
   // allow_cookies - computed: false, optional: true, required: false
-  private _allowCookies?: boolean | cdktf.IResolvable; 
+  private _allowCookies?: boolean | cdktn.IResolvable; 
   public get allowCookies() {
     return this.getBooleanAttribute('allow_cookies');
   }
-  public set allowCookies(value: boolean | cdktf.IResolvable) {
+  public set allowCookies(value: boolean | cdktn.IResolvable) {
     this._allowCookies = value;
   }
   public resetAllowCookies() {
@@ -283,11 +283,11 @@ export class RumAppMonitorAppMonitorConfigurationOutputReference extends cdktf.C
   }
 
   // enable_xray - computed: false, optional: true, required: false
-  private _enableXray?: boolean | cdktf.IResolvable; 
+  private _enableXray?: boolean | cdktn.IResolvable; 
   public get enableXray() {
     return this.getBooleanAttribute('enable_xray');
   }
-  public set enableXray(value: boolean | cdktf.IResolvable) {
+  public set enableXray(value: boolean | cdktn.IResolvable) {
     this._enableXray = value;
   }
   public resetEnableXray() {
@@ -301,7 +301,7 @@ export class RumAppMonitorAppMonitorConfigurationOutputReference extends cdktf.C
   // excluded_pages - computed: false, optional: true, required: false
   private _excludedPages?: string[]; 
   public get excludedPages() {
-    return cdktf.Fn.tolist(this.getListAttribute('excluded_pages'));
+    return cdktn.Fn.tolist(this.getListAttribute('excluded_pages'));
   }
   public set excludedPages(value: string[]) {
     this._excludedPages = value;
@@ -317,7 +317,7 @@ export class RumAppMonitorAppMonitorConfigurationOutputReference extends cdktf.C
   // favorite_pages - computed: false, optional: true, required: false
   private _favoritePages?: string[]; 
   public get favoritePages() {
-    return cdktf.Fn.tolist(this.getListAttribute('favorite_pages'));
+    return cdktn.Fn.tolist(this.getListAttribute('favorite_pages'));
   }
   public set favoritePages(value: string[]) {
     this._favoritePages = value;
@@ -365,7 +365,7 @@ export class RumAppMonitorAppMonitorConfigurationOutputReference extends cdktf.C
   // included_pages - computed: false, optional: true, required: false
   private _includedPages?: string[]; 
   public get includedPages() {
-    return cdktf.Fn.tolist(this.getListAttribute('included_pages'));
+    return cdktn.Fn.tolist(this.getListAttribute('included_pages'));
   }
   public set includedPages(value: string[]) {
     this._includedPages = value;
@@ -397,7 +397,7 @@ export class RumAppMonitorAppMonitorConfigurationOutputReference extends cdktf.C
   // telemetries - computed: false, optional: true, required: false
   private _telemetries?: string[]; 
   public get telemetries() {
-    return cdktf.Fn.tolist(this.getListAttribute('telemetries'));
+    return cdktn.Fn.tolist(this.getListAttribute('telemetries'));
   }
   public set telemetries(value: string[]) {
     this._telemetries = value;
@@ -418,24 +418,24 @@ export interface RumAppMonitorCustomEvents {
 }
 
 export function rumAppMonitorCustomEventsToTerraform(struct?: RumAppMonitorCustomEventsOutputReference | RumAppMonitorCustomEvents): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    status: cdktf.stringToTerraform(struct!.status),
+    status: cdktn.stringToTerraform(struct!.status),
   }
 }
 
 
 export function rumAppMonitorCustomEventsToHclTerraform(struct?: RumAppMonitorCustomEventsOutputReference | RumAppMonitorCustomEvents): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -446,14 +446,14 @@ export function rumAppMonitorCustomEventsToHclTerraform(struct?: RumAppMonitorCu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RumAppMonitorCustomEventsOutputReference extends cdktf.ComplexObject {
+export class RumAppMonitorCustomEventsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -498,7 +498,7 @@ export class RumAppMonitorCustomEventsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rum_app_monitor aws_rum_app_monitor}
 */
-export class RumAppMonitor extends cdktf.TerraformResource {
+export class RumAppMonitor extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -509,14 +509,14 @@ export class RumAppMonitor extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RumAppMonitor resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RumAppMonitor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RumAppMonitor to import
   * @param importFromId The id of the existing RumAppMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rum_app_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RumAppMonitor to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_rum_app_monitor", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_rum_app_monitor", importId: importFromId, provider });
       }
 
   // ===========
@@ -573,11 +573,11 @@ export class RumAppMonitor extends cdktf.TerraformResource {
   }
 
   // cw_log_enabled - computed: false, optional: true, required: false
-  private _cwLogEnabled?: boolean | cdktf.IResolvable; 
+  private _cwLogEnabled?: boolean | cdktn.IResolvable; 
   public get cwLogEnabled() {
     return this.getBooleanAttribute('cw_log_enabled');
   }
-  public set cwLogEnabled(value: boolean | cdktf.IResolvable) {
+  public set cwLogEnabled(value: boolean | cdktn.IResolvable) {
     this._cwLogEnabled = value;
   }
   public resetCwLogEnabled() {
@@ -740,14 +740,14 @@ export class RumAppMonitor extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cw_log_enabled: cdktf.booleanToTerraform(this._cwLogEnabled),
-      domain: cdktf.stringToTerraform(this._domain),
-      domain_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._domainList),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      cw_log_enabled: cdktn.booleanToTerraform(this._cwLogEnabled),
+      domain: cdktn.stringToTerraform(this._domain),
+      domain_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._domainList),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       app_monitor_configuration: rumAppMonitorAppMonitorConfigurationToTerraform(this._appMonitorConfiguration.internalValue),
       custom_events: rumAppMonitorCustomEventsToTerraform(this._customEvents.internalValue),
     };
@@ -756,49 +756,49 @@ export class RumAppMonitor extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cw_log_enabled: {
-        value: cdktf.booleanToHclTerraform(this._cwLogEnabled),
+        value: cdktn.booleanToHclTerraform(this._cwLogEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       domain: {
-        value: cdktf.stringToHclTerraform(this._domain),
+        value: cdktn.stringToHclTerraform(this._domain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._domainList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._domainList),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

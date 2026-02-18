@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BedrockProvisionedModelThroughputConfig extends cdktf.TerraformMetaArguments {
+export interface BedrockProvisionedModelThroughputConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrock_provisioned_model_throughput#commitment_duration BedrockProvisionedModelThroughput#commitment_duration}
   */
@@ -54,25 +54,25 @@ export interface BedrockProvisionedModelThroughputTimeouts {
   readonly create?: string;
 }
 
-export function bedrockProvisionedModelThroughputTimeoutsToTerraform(struct?: BedrockProvisionedModelThroughputTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockProvisionedModelThroughputTimeoutsToTerraform(struct?: BedrockProvisionedModelThroughputTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function bedrockProvisionedModelThroughputTimeoutsToHclTerraform(struct?: BedrockProvisionedModelThroughputTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockProvisionedModelThroughputTimeoutsToHclTerraform(struct?: BedrockProvisionedModelThroughputTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,19 +83,19 @@ export function bedrockProvisionedModelThroughputTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockProvisionedModelThroughputTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BedrockProvisionedModelThroughputTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BedrockProvisionedModelThroughputTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockProvisionedModelThroughputTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -108,13 +108,13 @@ export class BedrockProvisionedModelThroughputTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockProvisionedModelThroughputTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockProvisionedModelThroughputTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -145,7 +145,7 @@ export class BedrockProvisionedModelThroughputTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrock_provisioned_model_throughput aws_bedrock_provisioned_model_throughput}
 */
-export class BedrockProvisionedModelThroughput extends cdktf.TerraformResource {
+export class BedrockProvisionedModelThroughput extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -156,14 +156,14 @@ export class BedrockProvisionedModelThroughput extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BedrockProvisionedModelThroughput resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BedrockProvisionedModelThroughput resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockProvisionedModelThroughput to import
   * @param importFromId The id of the existing BedrockProvisionedModelThroughput that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrock_provisioned_model_throughput#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockProvisionedModelThroughput to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrock_provisioned_model_throughput", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrock_provisioned_model_throughput", importId: importFromId, provider });
       }
 
   // ===========
@@ -304,7 +304,7 @@ export class BedrockProvisionedModelThroughput extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -331,12 +331,12 @@ export class BedrockProvisionedModelThroughput extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      commitment_duration: cdktf.stringToTerraform(this._commitmentDuration),
-      model_arn: cdktf.stringToTerraform(this._modelArn),
-      model_units: cdktf.numberToTerraform(this._modelUnits),
-      provisioned_model_name: cdktf.stringToTerraform(this._provisionedModelName),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      commitment_duration: cdktn.stringToTerraform(this._commitmentDuration),
+      model_arn: cdktn.stringToTerraform(this._modelArn),
+      model_units: cdktn.numberToTerraform(this._modelUnits),
+      provisioned_model_name: cdktn.stringToTerraform(this._provisionedModelName),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: bedrockProvisionedModelThroughputTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -344,37 +344,37 @@ export class BedrockProvisionedModelThroughput extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       commitment_duration: {
-        value: cdktf.stringToHclTerraform(this._commitmentDuration),
+        value: cdktn.stringToHclTerraform(this._commitmentDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       model_arn: {
-        value: cdktf.stringToHclTerraform(this._modelArn),
+        value: cdktn.stringToHclTerraform(this._modelArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       model_units: {
-        value: cdktf.numberToHclTerraform(this._modelUnits),
+        value: cdktn.numberToHclTerraform(this._modelUnits),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       provisioned_model_name: {
-        value: cdktf.stringToHclTerraform(this._provisionedModelName),
+        value: cdktn.stringToHclTerraform(this._provisionedModelName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

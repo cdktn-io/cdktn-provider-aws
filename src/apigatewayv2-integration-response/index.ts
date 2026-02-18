@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Apigatewayv2IntegrationResponseConfig extends cdktf.TerraformMetaArguments {
+export interface Apigatewayv2IntegrationResponseConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_integration_response#api_id Apigatewayv2IntegrationResponse#api_id}
   */
@@ -54,7 +54,7 @@ export interface Apigatewayv2IntegrationResponseConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_integration_response aws_apigatewayv2_integration_response}
 */
-export class Apigatewayv2IntegrationResponse extends cdktf.TerraformResource {
+export class Apigatewayv2IntegrationResponse extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class Apigatewayv2IntegrationResponse extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Apigatewayv2IntegrationResponse resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Apigatewayv2IntegrationResponse resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Apigatewayv2IntegrationResponse to import
   * @param importFromId The id of the existing Apigatewayv2IntegrationResponse that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_integration_response#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Apigatewayv2IntegrationResponse to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_integration_response", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_integration_response", importId: importFromId, provider });
       }
 
   // ===========
@@ -241,63 +241,63 @@ export class Apigatewayv2IntegrationResponse extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      content_handling_strategy: cdktf.stringToTerraform(this._contentHandlingStrategy),
-      id: cdktf.stringToTerraform(this._id),
-      integration_id: cdktf.stringToTerraform(this._integrationId),
-      integration_response_key: cdktf.stringToTerraform(this._integrationResponseKey),
-      region: cdktf.stringToTerraform(this._region),
-      response_templates: cdktf.hashMapper(cdktf.stringToTerraform)(this._responseTemplates),
-      template_selection_expression: cdktf.stringToTerraform(this._templateSelectionExpression),
+      api_id: cdktn.stringToTerraform(this._apiId),
+      content_handling_strategy: cdktn.stringToTerraform(this._contentHandlingStrategy),
+      id: cdktn.stringToTerraform(this._id),
+      integration_id: cdktn.stringToTerraform(this._integrationId),
+      integration_response_key: cdktn.stringToTerraform(this._integrationResponseKey),
+      region: cdktn.stringToTerraform(this._region),
+      response_templates: cdktn.hashMapper(cdktn.stringToTerraform)(this._responseTemplates),
+      template_selection_expression: cdktn.stringToTerraform(this._templateSelectionExpression),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_id: {
-        value: cdktf.stringToHclTerraform(this._apiId),
+        value: cdktn.stringToHclTerraform(this._apiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_handling_strategy: {
-        value: cdktf.stringToHclTerraform(this._contentHandlingStrategy),
+        value: cdktn.stringToHclTerraform(this._contentHandlingStrategy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_id: {
-        value: cdktf.stringToHclTerraform(this._integrationId),
+        value: cdktn.stringToHclTerraform(this._integrationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_response_key: {
-        value: cdktf.stringToHclTerraform(this._integrationResponseKey),
+        value: cdktn.stringToHclTerraform(this._integrationResponseKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       response_templates: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._responseTemplates),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._responseTemplates),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       template_selection_expression: {
-        value: cdktf.stringToHclTerraform(this._templateSelectionExpression),
+        value: cdktn.stringToHclTerraform(this._templateSelectionExpression),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

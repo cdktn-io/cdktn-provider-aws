@@ -80,7 +80,7 @@ jobs:
       - name: Check deprecation status
         id: check_status
         run: |-
-          IS_DEPRECATED=$(cat package.json | jq .cdktf.isDeprecated -r)
+          IS_DEPRECATED=$(cat package.json | jq '(.cdktn // .cdktf).isDeprecated' -r)
           echo "is_deprecated=$IS_DEPRECATED"
           echo "is_deprecated=$IS_DEPRECATED" >> $GITHUB_OUTPUT
       - name: Deprecate the package on NPM
@@ -90,7 +90,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |-
           npm set "//$NPM_REGISTRY/:_authToken=$NPM_TOKEN"
-          npm deprecate @cdktn/provider-aws "See https://cdk.tf/imports for details on how to continue to use the aws provider in your CDK for Terraform (CDKTF) projects by generating the bindings locally."
+          npm deprecate @cdktn/provider-aws "See https://cdktn.io/docs/concepts/providers#import-providers for details on how to continue to use the aws provider in your CDK Terrain (cdktn) projects by generating the bindings locally."
   release_github:
     name: Publish to GitHub Releases
     needs: release
@@ -284,7 +284,7 @@ jobs:
         run: rm -f .repo/dist/go/.copywrite.hcl
       - name: Remove some text from the README that doesn't apply to Go
         run: |-
-          sed -i 's/# CDKTF prebuilt bindings for/# CDKTF Go bindings for/' .repo/dist/go/*/README.md
+          sed -i 's/# CDKTN prebuilt bindings for/# CDKTN Go bindings for/' .repo/dist/go/*/README.md
           sed -i -e '/## Available Packages/,/### Go/!b' -e '/### Go/!d;p; s/### Go/## Go Package/' -e 'd' .repo/dist/go/*/README.md
           sed -i 's/### Go/## Go Package/' .repo/dist/go/*/README.md
           sed -i -e '/API.typescript.md/,/You can also visit a hosted version/!b' -e 'd' .repo/dist/go/*/README.md

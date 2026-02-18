@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EvidentlyLaunchConfig extends cdktf.TerraformMetaArguments {
+export interface EvidentlyLaunchConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/evidently_launch#description EvidentlyLaunch#description}
   */
@@ -54,13 +54,13 @@ export interface EvidentlyLaunchConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/evidently_launch#groups EvidentlyLaunch#groups}
   */
-  readonly groups: EvidentlyLaunchGroups[] | cdktf.IResolvable;
+  readonly groups: EvidentlyLaunchGroups[] | cdktn.IResolvable;
   /**
   * metric_monitors block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/evidently_launch#metric_monitors EvidentlyLaunch#metric_monitors}
   */
-  readonly metricMonitors?: EvidentlyLaunchMetricMonitors[] | cdktf.IResolvable;
+  readonly metricMonitors?: EvidentlyLaunchMetricMonitors[] | cdktn.IResolvable;
   /**
   * scheduled_splits_config block
   *
@@ -78,8 +78,8 @@ export interface EvidentlyLaunchExecution {
 }
 
 export function evidentlyLaunchExecutionToTerraform(struct?: EvidentlyLaunchExecution): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -88,8 +88,8 @@ export function evidentlyLaunchExecutionToTerraform(struct?: EvidentlyLaunchExec
 
 
 export function evidentlyLaunchExecutionToHclTerraform(struct?: EvidentlyLaunchExecution): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -97,7 +97,7 @@ export function evidentlyLaunchExecutionToHclTerraform(struct?: EvidentlyLaunchE
   return attrs;
 }
 
-export class EvidentlyLaunchExecutionOutputReference extends cdktf.ComplexObject {
+export class EvidentlyLaunchExecutionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -106,7 +106,7 @@ export class EvidentlyLaunchExecutionOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -136,14 +136,14 @@ export class EvidentlyLaunchExecutionOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class EvidentlyLaunchExecutionList extends cdktf.ComplexList {
+export class EvidentlyLaunchExecutionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -173,46 +173,46 @@ export interface EvidentlyLaunchGroups {
   readonly variation: string;
 }
 
-export function evidentlyLaunchGroupsToTerraform(struct?: EvidentlyLaunchGroups | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function evidentlyLaunchGroupsToTerraform(struct?: EvidentlyLaunchGroups | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    feature: cdktf.stringToTerraform(struct!.feature),
-    name: cdktf.stringToTerraform(struct!.name),
-    variation: cdktf.stringToTerraform(struct!.variation),
+    description: cdktn.stringToTerraform(struct!.description),
+    feature: cdktn.stringToTerraform(struct!.feature),
+    name: cdktn.stringToTerraform(struct!.name),
+    variation: cdktn.stringToTerraform(struct!.variation),
   }
 }
 
 
-export function evidentlyLaunchGroupsToHclTerraform(struct?: EvidentlyLaunchGroups | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function evidentlyLaunchGroupsToHclTerraform(struct?: EvidentlyLaunchGroups | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     feature: {
-      value: cdktf.stringToHclTerraform(struct!.feature),
+      value: cdktn.stringToHclTerraform(struct!.feature),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     variation: {
-      value: cdktf.stringToHclTerraform(struct!.variation),
+      value: cdktn.stringToHclTerraform(struct!.variation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -223,9 +223,9 @@ export function evidentlyLaunchGroupsToHclTerraform(struct?: EvidentlyLaunchGrou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EvidentlyLaunchGroupsOutputReference extends cdktf.ComplexObject {
+export class EvidentlyLaunchGroupsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -233,11 +233,11 @@ export class EvidentlyLaunchGroupsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EvidentlyLaunchGroups | cdktf.IResolvable | undefined {
+  public get internalValue(): EvidentlyLaunchGroups | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -262,7 +262,7 @@ export class EvidentlyLaunchGroupsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EvidentlyLaunchGroups | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EvidentlyLaunchGroups | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -271,7 +271,7 @@ export class EvidentlyLaunchGroupsOutputReference extends cdktf.ComplexObject {
       this._name = undefined;
       this._variation = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -341,15 +341,15 @@ export class EvidentlyLaunchGroupsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class EvidentlyLaunchGroupsList extends cdktf.ComplexList {
-  public internalValue? : EvidentlyLaunchGroups[] | cdktf.IResolvable
+export class EvidentlyLaunchGroupsList extends cdktn.ComplexList {
+  public internalValue? : EvidentlyLaunchGroups[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -384,52 +384,52 @@ export interface EvidentlyLaunchMetricMonitorsMetricDefinition {
 }
 
 export function evidentlyLaunchMetricMonitorsMetricDefinitionToTerraform(struct?: EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference | EvidentlyLaunchMetricMonitorsMetricDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entity_id_key: cdktf.stringToTerraform(struct!.entityIdKey),
-    event_pattern: cdktf.stringToTerraform(struct!.eventPattern),
-    name: cdktf.stringToTerraform(struct!.name),
-    unit_label: cdktf.stringToTerraform(struct!.unitLabel),
-    value_key: cdktf.stringToTerraform(struct!.valueKey),
+    entity_id_key: cdktn.stringToTerraform(struct!.entityIdKey),
+    event_pattern: cdktn.stringToTerraform(struct!.eventPattern),
+    name: cdktn.stringToTerraform(struct!.name),
+    unit_label: cdktn.stringToTerraform(struct!.unitLabel),
+    value_key: cdktn.stringToTerraform(struct!.valueKey),
   }
 }
 
 
 export function evidentlyLaunchMetricMonitorsMetricDefinitionToHclTerraform(struct?: EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference | EvidentlyLaunchMetricMonitorsMetricDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entity_id_key: {
-      value: cdktf.stringToHclTerraform(struct!.entityIdKey),
+      value: cdktn.stringToHclTerraform(struct!.entityIdKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     event_pattern: {
-      value: cdktf.stringToHclTerraform(struct!.eventPattern),
+      value: cdktn.stringToHclTerraform(struct!.eventPattern),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unit_label: {
-      value: cdktf.stringToHclTerraform(struct!.unitLabel),
+      value: cdktn.stringToHclTerraform(struct!.unitLabel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value_key: {
-      value: cdktf.stringToHclTerraform(struct!.valueKey),
+      value: cdktn.stringToHclTerraform(struct!.valueKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -440,14 +440,14 @@ export function evidentlyLaunchMetricMonitorsMetricDefinitionToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference extends cdktf.ComplexObject {
+export class EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -576,9 +576,9 @@ export interface EvidentlyLaunchMetricMonitors {
   readonly metricDefinition: EvidentlyLaunchMetricMonitorsMetricDefinition;
 }
 
-export function evidentlyLaunchMetricMonitorsToTerraform(struct?: EvidentlyLaunchMetricMonitors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function evidentlyLaunchMetricMonitorsToTerraform(struct?: EvidentlyLaunchMetricMonitors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -587,9 +587,9 @@ export function evidentlyLaunchMetricMonitorsToTerraform(struct?: EvidentlyLaunc
 }
 
 
-export function evidentlyLaunchMetricMonitorsToHclTerraform(struct?: EvidentlyLaunchMetricMonitors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function evidentlyLaunchMetricMonitorsToHclTerraform(struct?: EvidentlyLaunchMetricMonitors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -605,9 +605,9 @@ export function evidentlyLaunchMetricMonitorsToHclTerraform(struct?: EvidentlyLa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EvidentlyLaunchMetricMonitorsOutputReference extends cdktf.ComplexObject {
+export class EvidentlyLaunchMetricMonitorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -615,11 +615,11 @@ export class EvidentlyLaunchMetricMonitorsOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EvidentlyLaunchMetricMonitors | cdktf.IResolvable | undefined {
+  public get internalValue(): EvidentlyLaunchMetricMonitors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -632,13 +632,13 @@ export class EvidentlyLaunchMetricMonitorsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EvidentlyLaunchMetricMonitors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EvidentlyLaunchMetricMonitors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._metricDefinition.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -663,15 +663,15 @@ export class EvidentlyLaunchMetricMonitorsOutputReference extends cdktf.ComplexO
   }
 }
 
-export class EvidentlyLaunchMetricMonitorsList extends cdktf.ComplexList {
-  public internalValue? : EvidentlyLaunchMetricMonitors[] | cdktf.IResolvable
+export class EvidentlyLaunchMetricMonitorsList extends cdktn.ComplexList {
+  public internalValue? : EvidentlyLaunchMetricMonitors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -697,39 +697,39 @@ export interface EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides {
   readonly weights: { [key: string]: number };
 }
 
-export function evidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesToTerraform(struct?: EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function evidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesToTerraform(struct?: EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    evaluation_order: cdktf.numberToTerraform(struct!.evaluationOrder),
-    segment: cdktf.stringToTerraform(struct!.segment),
-    weights: cdktf.hashMapper(cdktf.numberToTerraform)(struct!.weights),
+    evaluation_order: cdktn.numberToTerraform(struct!.evaluationOrder),
+    segment: cdktn.stringToTerraform(struct!.segment),
+    weights: cdktn.hashMapper(cdktn.numberToTerraform)(struct!.weights),
   }
 }
 
 
-export function evidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesToHclTerraform(struct?: EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function evidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesToHclTerraform(struct?: EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     evaluation_order: {
-      value: cdktf.numberToHclTerraform(struct!.evaluationOrder),
+      value: cdktn.numberToHclTerraform(struct!.evaluationOrder),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     segment: {
-      value: cdktf.stringToHclTerraform(struct!.segment),
+      value: cdktn.stringToHclTerraform(struct!.segment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weights: {
-      value: cdktf.hashMapperHcl(cdktf.numberToHclTerraform)(struct!.weights),
+      value: cdktn.hashMapperHcl(cdktn.numberToHclTerraform)(struct!.weights),
       isBlock: false,
       type: "map",
       storageClassType: "numberMap",
@@ -740,9 +740,9 @@ export function evidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputReference extends cdktf.ComplexObject {
+export class EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -750,11 +750,11 @@ export class EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -775,7 +775,7 @@ export class EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -783,7 +783,7 @@ export class EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputRefe
       this._segment = undefined;
       this._weights = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -836,15 +836,15 @@ export class EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputRefe
   }
 }
 
-export class EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList extends cdktf.ComplexList {
-  public internalValue? : EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides[] | cdktf.IResolvable
+export class EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList extends cdktn.ComplexList {
+  public internalValue? : EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -869,42 +869,42 @@ export interface EvidentlyLaunchScheduledSplitsConfigSteps {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/evidently_launch#segment_overrides EvidentlyLaunch#segment_overrides}
   */
-  readonly segmentOverrides?: EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides[] | cdktf.IResolvable;
+  readonly segmentOverrides?: EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides[] | cdktn.IResolvable;
 }
 
-export function evidentlyLaunchScheduledSplitsConfigStepsToTerraform(struct?: EvidentlyLaunchScheduledSplitsConfigSteps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function evidentlyLaunchScheduledSplitsConfigStepsToTerraform(struct?: EvidentlyLaunchScheduledSplitsConfigSteps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_weights: cdktf.hashMapper(cdktf.numberToTerraform)(struct!.groupWeights),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
-    segment_overrides: cdktf.listMapper(evidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesToTerraform, true)(struct!.segmentOverrides),
+    group_weights: cdktn.hashMapper(cdktn.numberToTerraform)(struct!.groupWeights),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
+    segment_overrides: cdktn.listMapper(evidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesToTerraform, true)(struct!.segmentOverrides),
   }
 }
 
 
-export function evidentlyLaunchScheduledSplitsConfigStepsToHclTerraform(struct?: EvidentlyLaunchScheduledSplitsConfigSteps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function evidentlyLaunchScheduledSplitsConfigStepsToHclTerraform(struct?: EvidentlyLaunchScheduledSplitsConfigSteps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group_weights: {
-      value: cdktf.hashMapperHcl(cdktf.numberToHclTerraform)(struct!.groupWeights),
+      value: cdktn.hashMapperHcl(cdktn.numberToHclTerraform)(struct!.groupWeights),
       isBlock: false,
       type: "map",
       storageClassType: "numberMap",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     segment_overrides: {
-      value: cdktf.listMapperHcl(evidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesToHclTerraform, true)(struct!.segmentOverrides),
+      value: cdktn.listMapperHcl(evidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesToHclTerraform, true)(struct!.segmentOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList",
@@ -915,9 +915,9 @@ export function evidentlyLaunchScheduledSplitsConfigStepsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EvidentlyLaunchScheduledSplitsConfigStepsOutputReference extends cdktf.ComplexObject {
+export class EvidentlyLaunchScheduledSplitsConfigStepsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -925,11 +925,11 @@ export class EvidentlyLaunchScheduledSplitsConfigStepsOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EvidentlyLaunchScheduledSplitsConfigSteps | cdktf.IResolvable | undefined {
+  public get internalValue(): EvidentlyLaunchScheduledSplitsConfigSteps | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -950,7 +950,7 @@ export class EvidentlyLaunchScheduledSplitsConfigStepsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EvidentlyLaunchScheduledSplitsConfigSteps | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EvidentlyLaunchScheduledSplitsConfigSteps | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -958,7 +958,7 @@ export class EvidentlyLaunchScheduledSplitsConfigStepsOutputReference extends cd
       this._startTime = undefined;
       this._segmentOverrides.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1002,7 +1002,7 @@ export class EvidentlyLaunchScheduledSplitsConfigStepsOutputReference extends cd
   public get segmentOverrides() {
     return this._segmentOverrides;
   }
-  public putSegmentOverrides(value: EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides[] | cdktf.IResolvable) {
+  public putSegmentOverrides(value: EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides[] | cdktn.IResolvable) {
     this._segmentOverrides.internalValue = value;
   }
   public resetSegmentOverrides() {
@@ -1014,15 +1014,15 @@ export class EvidentlyLaunchScheduledSplitsConfigStepsOutputReference extends cd
   }
 }
 
-export class EvidentlyLaunchScheduledSplitsConfigStepsList extends cdktf.ComplexList {
-  public internalValue? : EvidentlyLaunchScheduledSplitsConfigSteps[] | cdktf.IResolvable
+export class EvidentlyLaunchScheduledSplitsConfigStepsList extends cdktn.ComplexList {
+  public internalValue? : EvidentlyLaunchScheduledSplitsConfigSteps[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1039,28 +1039,28 @@ export interface EvidentlyLaunchScheduledSplitsConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/evidently_launch#steps EvidentlyLaunch#steps}
   */
-  readonly steps: EvidentlyLaunchScheduledSplitsConfigSteps[] | cdktf.IResolvable;
+  readonly steps: EvidentlyLaunchScheduledSplitsConfigSteps[] | cdktn.IResolvable;
 }
 
 export function evidentlyLaunchScheduledSplitsConfigToTerraform(struct?: EvidentlyLaunchScheduledSplitsConfigOutputReference | EvidentlyLaunchScheduledSplitsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    steps: cdktf.listMapper(evidentlyLaunchScheduledSplitsConfigStepsToTerraform, true)(struct!.steps),
+    steps: cdktn.listMapper(evidentlyLaunchScheduledSplitsConfigStepsToTerraform, true)(struct!.steps),
   }
 }
 
 
 export function evidentlyLaunchScheduledSplitsConfigToHclTerraform(struct?: EvidentlyLaunchScheduledSplitsConfigOutputReference | EvidentlyLaunchScheduledSplitsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     steps: {
-      value: cdktf.listMapperHcl(evidentlyLaunchScheduledSplitsConfigStepsToHclTerraform, true)(struct!.steps),
+      value: cdktn.listMapperHcl(evidentlyLaunchScheduledSplitsConfigStepsToHclTerraform, true)(struct!.steps),
       isBlock: true,
       type: "list",
       storageClassType: "EvidentlyLaunchScheduledSplitsConfigStepsList",
@@ -1071,14 +1071,14 @@ export function evidentlyLaunchScheduledSplitsConfigToHclTerraform(struct?: Evid
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EvidentlyLaunchScheduledSplitsConfigOutputReference extends cdktf.ComplexObject {
+export class EvidentlyLaunchScheduledSplitsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1108,7 +1108,7 @@ export class EvidentlyLaunchScheduledSplitsConfigOutputReference extends cdktf.C
   public get steps() {
     return this._steps;
   }
-  public putSteps(value: EvidentlyLaunchScheduledSplitsConfigSteps[] | cdktf.IResolvable) {
+  public putSteps(value: EvidentlyLaunchScheduledSplitsConfigSteps[] | cdktn.IResolvable) {
     this._steps.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1131,39 +1131,39 @@ export interface EvidentlyLaunchTimeouts {
   readonly update?: string;
 }
 
-export function evidentlyLaunchTimeoutsToTerraform(struct?: EvidentlyLaunchTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function evidentlyLaunchTimeoutsToTerraform(struct?: EvidentlyLaunchTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function evidentlyLaunchTimeoutsToHclTerraform(struct?: EvidentlyLaunchTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function evidentlyLaunchTimeoutsToHclTerraform(struct?: EvidentlyLaunchTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1174,19 +1174,19 @@ export function evidentlyLaunchTimeoutsToHclTerraform(struct?: EvidentlyLaunchTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EvidentlyLaunchTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EvidentlyLaunchTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EvidentlyLaunchTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EvidentlyLaunchTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1207,7 +1207,7 @@ export class EvidentlyLaunchTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EvidentlyLaunchTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EvidentlyLaunchTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1215,7 +1215,7 @@ export class EvidentlyLaunchTimeoutsOutputReference extends cdktf.ComplexObject 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1280,7 +1280,7 @@ export class EvidentlyLaunchTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/evidently_launch aws_evidently_launch}
 */
-export class EvidentlyLaunch extends cdktf.TerraformResource {
+export class EvidentlyLaunch extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1291,14 +1291,14 @@ export class EvidentlyLaunch extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EvidentlyLaunch resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EvidentlyLaunch resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EvidentlyLaunch to import
   * @param importFromId The id of the existing EvidentlyLaunch that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/evidently_launch#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EvidentlyLaunch to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_evidently_launch", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_evidently_launch", importId: importFromId, provider });
       }
 
   // ===========
@@ -1509,7 +1509,7 @@ export class EvidentlyLaunch extends cdktf.TerraformResource {
   public get groups() {
     return this._groups;
   }
-  public putGroups(value: EvidentlyLaunchGroups[] | cdktf.IResolvable) {
+  public putGroups(value: EvidentlyLaunchGroups[] | cdktn.IResolvable) {
     this._groups.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1522,7 +1522,7 @@ export class EvidentlyLaunch extends cdktf.TerraformResource {
   public get metricMonitors() {
     return this._metricMonitors;
   }
-  public putMetricMonitors(value: EvidentlyLaunchMetricMonitors[] | cdktf.IResolvable) {
+  public putMetricMonitors(value: EvidentlyLaunchMetricMonitors[] | cdktn.IResolvable) {
     this._metricMonitors.internalValue = value;
   }
   public resetMetricMonitors() {
@@ -1571,16 +1571,16 @@ export class EvidentlyLaunch extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      randomization_salt: cdktf.stringToTerraform(this._randomizationSalt),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      groups: cdktf.listMapper(evidentlyLaunchGroupsToTerraform, true)(this._groups.internalValue),
-      metric_monitors: cdktf.listMapper(evidentlyLaunchMetricMonitorsToTerraform, true)(this._metricMonitors.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      randomization_salt: cdktn.stringToTerraform(this._randomizationSalt),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      groups: cdktn.listMapper(evidentlyLaunchGroupsToTerraform, true)(this._groups.internalValue),
+      metric_monitors: cdktn.listMapper(evidentlyLaunchMetricMonitorsToTerraform, true)(this._metricMonitors.internalValue),
       scheduled_splits_config: evidentlyLaunchScheduledSplitsConfigToTerraform(this._scheduledSplitsConfig.internalValue),
       timeouts: evidentlyLaunchTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1589,61 +1589,61 @@ export class EvidentlyLaunch extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       randomization_salt: {
-        value: cdktf.stringToHclTerraform(this._randomizationSalt),
+        value: cdktn.stringToHclTerraform(this._randomizationSalt),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       groups: {
-        value: cdktf.listMapperHcl(evidentlyLaunchGroupsToHclTerraform, true)(this._groups.internalValue),
+        value: cdktn.listMapperHcl(evidentlyLaunchGroupsToHclTerraform, true)(this._groups.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EvidentlyLaunchGroupsList",
       },
       metric_monitors: {
-        value: cdktf.listMapperHcl(evidentlyLaunchMetricMonitorsToHclTerraform, true)(this._metricMonitors.internalValue),
+        value: cdktn.listMapperHcl(evidentlyLaunchMetricMonitorsToHclTerraform, true)(this._metricMonitors.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EvidentlyLaunchMetricMonitorsList",

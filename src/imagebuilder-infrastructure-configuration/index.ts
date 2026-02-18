@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ImagebuilderInfrastructureConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface ImagebuilderInfrastructureConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_infrastructure_configuration#description ImagebuilderInfrastructureConfiguration#description}
   */
@@ -72,7 +72,7 @@ export interface ImagebuilderInfrastructureConfigurationConfig extends cdktf.Ter
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_infrastructure_configuration#terminate_instance_on_failure ImagebuilderInfrastructureConfiguration#terminate_instance_on_failure}
   */
-  readonly terminateInstanceOnFailure?: boolean | cdktf.IResolvable;
+  readonly terminateInstanceOnFailure?: boolean | cdktn.IResolvable;
   /**
   * instance_metadata_options block
   *
@@ -104,31 +104,31 @@ export interface ImagebuilderInfrastructureConfigurationInstanceMetadataOptions 
 }
 
 export function imagebuilderInfrastructureConfigurationInstanceMetadataOptionsToTerraform(struct?: ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference | ImagebuilderInfrastructureConfigurationInstanceMetadataOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    http_put_response_hop_limit: cdktf.numberToTerraform(struct!.httpPutResponseHopLimit),
-    http_tokens: cdktf.stringToTerraform(struct!.httpTokens),
+    http_put_response_hop_limit: cdktn.numberToTerraform(struct!.httpPutResponseHopLimit),
+    http_tokens: cdktn.stringToTerraform(struct!.httpTokens),
   }
 }
 
 
 export function imagebuilderInfrastructureConfigurationInstanceMetadataOptionsToHclTerraform(struct?: ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference | ImagebuilderInfrastructureConfigurationInstanceMetadataOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     http_put_response_hop_limit: {
-      value: cdktf.numberToHclTerraform(struct!.httpPutResponseHopLimit),
+      value: cdktn.numberToHclTerraform(struct!.httpPutResponseHopLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     http_tokens: {
-      value: cdktf.stringToHclTerraform(struct!.httpTokens),
+      value: cdktn.stringToHclTerraform(struct!.httpTokens),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -139,14 +139,14 @@ export function imagebuilderInfrastructureConfigurationInstanceMetadataOptionsTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -221,31 +221,31 @@ export interface ImagebuilderInfrastructureConfigurationLoggingS3Logs {
 }
 
 export function imagebuilderInfrastructureConfigurationLoggingS3LogsToTerraform(struct?: ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference | ImagebuilderInfrastructureConfigurationLoggingS3Logs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
-    s3_key_prefix: cdktf.stringToTerraform(struct!.s3KeyPrefix),
+    s3_bucket_name: cdktn.stringToTerraform(struct!.s3BucketName),
+    s3_key_prefix: cdktn.stringToTerraform(struct!.s3KeyPrefix),
   }
 }
 
 
 export function imagebuilderInfrastructureConfigurationLoggingS3LogsToHclTerraform(struct?: ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference | ImagebuilderInfrastructureConfigurationLoggingS3Logs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.s3BucketName),
+      value: cdktn.stringToHclTerraform(struct!.s3BucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_key_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.s3KeyPrefix),
+      value: cdktn.stringToHclTerraform(struct!.s3KeyPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -256,14 +256,14 @@ export function imagebuilderInfrastructureConfigurationLoggingS3LogsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -333,8 +333,8 @@ export interface ImagebuilderInfrastructureConfigurationLogging {
 }
 
 export function imagebuilderInfrastructureConfigurationLoggingToTerraform(struct?: ImagebuilderInfrastructureConfigurationLoggingOutputReference | ImagebuilderInfrastructureConfigurationLogging): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -344,8 +344,8 @@ export function imagebuilderInfrastructureConfigurationLoggingToTerraform(struct
 
 
 export function imagebuilderInfrastructureConfigurationLoggingToHclTerraform(struct?: ImagebuilderInfrastructureConfigurationLoggingOutputReference | ImagebuilderInfrastructureConfigurationLogging): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -361,14 +361,14 @@ export function imagebuilderInfrastructureConfigurationLoggingToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderInfrastructureConfigurationLoggingOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderInfrastructureConfigurationLoggingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -426,45 +426,45 @@ export interface ImagebuilderInfrastructureConfigurationPlacement {
 }
 
 export function imagebuilderInfrastructureConfigurationPlacementToTerraform(struct?: ImagebuilderInfrastructureConfigurationPlacementOutputReference | ImagebuilderInfrastructureConfigurationPlacement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
-    host_id: cdktf.stringToTerraform(struct!.hostId),
-    host_resource_group_arn: cdktf.stringToTerraform(struct!.hostResourceGroupArn),
-    tenancy: cdktf.stringToTerraform(struct!.tenancy),
+    availability_zone: cdktn.stringToTerraform(struct!.availabilityZone),
+    host_id: cdktn.stringToTerraform(struct!.hostId),
+    host_resource_group_arn: cdktn.stringToTerraform(struct!.hostResourceGroupArn),
+    tenancy: cdktn.stringToTerraform(struct!.tenancy),
   }
 }
 
 
 export function imagebuilderInfrastructureConfigurationPlacementToHclTerraform(struct?: ImagebuilderInfrastructureConfigurationPlacementOutputReference | ImagebuilderInfrastructureConfigurationPlacement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability_zone: {
-      value: cdktf.stringToHclTerraform(struct!.availabilityZone),
+      value: cdktn.stringToHclTerraform(struct!.availabilityZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_id: {
-      value: cdktf.stringToHclTerraform(struct!.hostId),
+      value: cdktn.stringToHclTerraform(struct!.hostId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_resource_group_arn: {
-      value: cdktf.stringToHclTerraform(struct!.hostResourceGroupArn),
+      value: cdktn.stringToHclTerraform(struct!.hostResourceGroupArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenancy: {
-      value: cdktf.stringToHclTerraform(struct!.tenancy),
+      value: cdktn.stringToHclTerraform(struct!.tenancy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -475,14 +475,14 @@ export function imagebuilderInfrastructureConfigurationPlacementToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderInfrastructureConfigurationPlacementOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderInfrastructureConfigurationPlacementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -593,7 +593,7 @@ export class ImagebuilderInfrastructureConfigurationPlacementOutputReference ext
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration}
 */
-export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformResource {
+export class ImagebuilderInfrastructureConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -604,14 +604,14 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ImagebuilderInfrastructureConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ImagebuilderInfrastructureConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ImagebuilderInfrastructureConfiguration to import
   * @param importFromId The id of the existing ImagebuilderInfrastructureConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_infrastructure_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ImagebuilderInfrastructureConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_imagebuilder_infrastructure_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_imagebuilder_infrastructure_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -727,7 +727,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   // instance_types - computed: false, optional: true, required: false
   private _instanceTypes?: string[]; 
   public get instanceTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('instance_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('instance_types'));
   }
   public set instanceTypes(value: string[]) {
     this._instanceTypes = value;
@@ -804,7 +804,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -882,11 +882,11 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   }
 
   // terminate_instance_on_failure - computed: false, optional: true, required: false
-  private _terminateInstanceOnFailure?: boolean | cdktf.IResolvable; 
+  private _terminateInstanceOnFailure?: boolean | cdktn.IResolvable; 
   public get terminateInstanceOnFailure() {
     return this.getBooleanAttribute('terminate_instance_on_failure');
   }
-  public set terminateInstanceOnFailure(value: boolean | cdktf.IResolvable) {
+  public set terminateInstanceOnFailure(value: boolean | cdktn.IResolvable) {
     this._terminateInstanceOnFailure = value;
   }
   public resetTerminateInstanceOnFailure() {
@@ -951,20 +951,20 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      instance_profile_name: cdktf.stringToTerraform(this._instanceProfileName),
-      instance_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._instanceTypes),
-      key_pair: cdktf.stringToTerraform(this._keyPair),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      resource_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._resourceTags),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
-      sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      terminate_instance_on_failure: cdktf.booleanToTerraform(this._terminateInstanceOnFailure),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      instance_profile_name: cdktn.stringToTerraform(this._instanceProfileName),
+      instance_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._instanceTypes),
+      key_pair: cdktn.stringToTerraform(this._keyPair),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      resource_tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._resourceTags),
+      security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupIds),
+      sns_topic_arn: cdktn.stringToTerraform(this._snsTopicArn),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      terminate_instance_on_failure: cdktn.booleanToTerraform(this._terminateInstanceOnFailure),
       instance_metadata_options: imagebuilderInfrastructureConfigurationInstanceMetadataOptionsToTerraform(this._instanceMetadataOptions.internalValue),
       logging: imagebuilderInfrastructureConfigurationLoggingToTerraform(this._logging.internalValue),
       placement: imagebuilderInfrastructureConfigurationPlacementToTerraform(this._placement.internalValue),
@@ -974,85 +974,85 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_profile_name: {
-        value: cdktf.stringToHclTerraform(this._instanceProfileName),
+        value: cdktn.stringToHclTerraform(this._instanceProfileName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._instanceTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._instanceTypes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       key_pair: {
-        value: cdktf.stringToHclTerraform(this._keyPair),
+        value: cdktn.stringToHclTerraform(this._keyPair),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._resourceTags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._resourceTags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       sns_topic_arn: {
-        value: cdktf.stringToHclTerraform(this._snsTopicArn),
+        value: cdktn.stringToHclTerraform(this._snsTopicArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       terminate_instance_on_failure: {
-        value: cdktf.booleanToHclTerraform(this._terminateInstanceOnFailure),
+        value: cdktn.booleanToHclTerraform(this._terminateInstanceOnFailure),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

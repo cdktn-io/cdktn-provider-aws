@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3ObjectCopyConfig extends cdktf.TerraformMetaArguments {
+export interface S3ObjectCopyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_object_copy#acl S3ObjectCopy#acl}
   */
@@ -23,7 +23,7 @@ export interface S3ObjectCopyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_object_copy#bucket_key_enabled S3ObjectCopy#bucket_key_enabled}
   */
-  readonly bucketKeyEnabled?: boolean | cdktf.IResolvable;
+  readonly bucketKeyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_object_copy#cache_control S3ObjectCopy#cache_control}
   */
@@ -91,7 +91,7 @@ export interface S3ObjectCopyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_object_copy#force_destroy S3ObjectCopy#force_destroy}
   */
-  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_object_copy#id S3ObjectCopy#id}
   *
@@ -186,7 +186,7 @@ export interface S3ObjectCopyConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_object_copy#grant S3ObjectCopy#grant}
   */
-  readonly grant?: S3ObjectCopyGrant[] | cdktf.IResolvable;
+  readonly grant?: S3ObjectCopyGrant[] | cdktn.IResolvable;
   /**
   * override_provider block
   *
@@ -220,53 +220,53 @@ export interface S3ObjectCopyGrant {
   readonly uri?: string;
 }
 
-export function s3ObjectCopyGrantToTerraform(struct?: S3ObjectCopyGrant | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3ObjectCopyGrantToTerraform(struct?: S3ObjectCopyGrant | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
-    id: cdktf.stringToTerraform(struct!.id),
-    permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.permissions),
-    type: cdktf.stringToTerraform(struct!.type),
-    uri: cdktf.stringToTerraform(struct!.uri),
+    email: cdktn.stringToTerraform(struct!.email),
+    id: cdktn.stringToTerraform(struct!.id),
+    permissions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.permissions),
+    type: cdktn.stringToTerraform(struct!.type),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
-export function s3ObjectCopyGrantToHclTerraform(struct?: S3ObjectCopyGrant | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3ObjectCopyGrantToHclTerraform(struct?: S3ObjectCopyGrant | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     permissions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.permissions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.permissions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -277,9 +277,9 @@ export function s3ObjectCopyGrantToHclTerraform(struct?: S3ObjectCopyGrant | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3ObjectCopyGrantOutputReference extends cdktf.ComplexObject {
+export class S3ObjectCopyGrantOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -287,11 +287,11 @@ export class S3ObjectCopyGrantOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3ObjectCopyGrant | cdktf.IResolvable | undefined {
+  public get internalValue(): S3ObjectCopyGrant | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -320,7 +320,7 @@ export class S3ObjectCopyGrantOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3ObjectCopyGrant | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3ObjectCopyGrant | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -330,7 +330,7 @@ export class S3ObjectCopyGrantOutputReference extends cdktf.ComplexObject {
       this._type = undefined;
       this._uri = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -380,7 +380,7 @@ export class S3ObjectCopyGrantOutputReference extends cdktf.ComplexObject {
   // permissions - computed: false, optional: false, required: true
   private _permissions?: string[]; 
   public get permissions() {
-    return cdktf.Fn.tolist(this.getListAttribute('permissions'));
+    return cdktn.Fn.tolist(this.getListAttribute('permissions'));
   }
   public set permissions(value: string[]) {
     this._permissions = value;
@@ -420,15 +420,15 @@ export class S3ObjectCopyGrantOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class S3ObjectCopyGrantList extends cdktf.ComplexList {
-  public internalValue? : S3ObjectCopyGrant[] | cdktf.IResolvable
+export class S3ObjectCopyGrantList extends cdktn.ComplexList {
+  public internalValue? : S3ObjectCopyGrant[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -447,24 +447,24 @@ export interface S3ObjectCopyOverrideProviderDefaultTags {
 }
 
 export function s3ObjectCopyOverrideProviderDefaultTagsToTerraform(struct?: S3ObjectCopyOverrideProviderDefaultTagsOutputReference | S3ObjectCopyOverrideProviderDefaultTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
+    tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tags),
   }
 }
 
 
 export function s3ObjectCopyOverrideProviderDefaultTagsToHclTerraform(struct?: S3ObjectCopyOverrideProviderDefaultTagsOutputReference | S3ObjectCopyOverrideProviderDefaultTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -475,14 +475,14 @@ export function s3ObjectCopyOverrideProviderDefaultTagsToHclTerraform(struct?: S
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3ObjectCopyOverrideProviderDefaultTagsOutputReference extends cdktf.ComplexObject {
+export class S3ObjectCopyOverrideProviderDefaultTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -533,8 +533,8 @@ export interface S3ObjectCopyOverrideProvider {
 }
 
 export function s3ObjectCopyOverrideProviderToTerraform(struct?: S3ObjectCopyOverrideProviderOutputReference | S3ObjectCopyOverrideProvider): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -544,8 +544,8 @@ export function s3ObjectCopyOverrideProviderToTerraform(struct?: S3ObjectCopyOve
 
 
 export function s3ObjectCopyOverrideProviderToHclTerraform(struct?: S3ObjectCopyOverrideProviderOutputReference | S3ObjectCopyOverrideProvider): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -561,14 +561,14 @@ export function s3ObjectCopyOverrideProviderToHclTerraform(struct?: S3ObjectCopy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3ObjectCopyOverrideProviderOutputReference extends cdktf.ComplexObject {
+export class S3ObjectCopyOverrideProviderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -613,7 +613,7 @@ export class S3ObjectCopyOverrideProviderOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_object_copy aws_s3_object_copy}
 */
-export class S3ObjectCopy extends cdktf.TerraformResource {
+export class S3ObjectCopy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -624,14 +624,14 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3ObjectCopy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3ObjectCopy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3ObjectCopy to import
   * @param importFromId The id of the existing S3ObjectCopy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_object_copy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3ObjectCopy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_object_copy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_object_copy", importId: importFromId, provider });
       }
 
   // ===========
@@ -745,11 +745,11 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   }
 
   // bucket_key_enabled - computed: true, optional: true, required: false
-  private _bucketKeyEnabled?: boolean | cdktf.IResolvable; 
+  private _bucketKeyEnabled?: boolean | cdktn.IResolvable; 
   public get bucketKeyEnabled() {
     return this.getBooleanAttribute('bucket_key_enabled');
   }
-  public set bucketKeyEnabled(value: boolean | cdktf.IResolvable) {
+  public set bucketKeyEnabled(value: boolean | cdktn.IResolvable) {
     this._bucketKeyEnabled = value;
   }
   public resetBucketKeyEnabled() {
@@ -1052,11 +1052,11 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  private _forceDestroy?: boolean | cdktn.IResolvable; 
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+  public set forceDestroy(value: boolean | cdktn.IResolvable) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -1422,7 +1422,7 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   public get grant() {
     return this._grant;
   }
-  public putGrant(value: S3ObjectCopyGrant[] | cdktf.IResolvable) {
+  public putGrant(value: S3ObjectCopyGrant[] | cdktn.IResolvable) {
     this._grant.internalValue = value;
   }
   public resetGrant() {
@@ -1455,48 +1455,48 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      acl: cdktf.stringToTerraform(this._acl),
-      bucket: cdktf.stringToTerraform(this._bucket),
-      bucket_key_enabled: cdktf.booleanToTerraform(this._bucketKeyEnabled),
-      cache_control: cdktf.stringToTerraform(this._cacheControl),
-      checksum_algorithm: cdktf.stringToTerraform(this._checksumAlgorithm),
-      content_disposition: cdktf.stringToTerraform(this._contentDisposition),
-      content_encoding: cdktf.stringToTerraform(this._contentEncoding),
-      content_language: cdktf.stringToTerraform(this._contentLanguage),
-      content_type: cdktf.stringToTerraform(this._contentType),
-      copy_if_match: cdktf.stringToTerraform(this._copyIfMatch),
-      copy_if_modified_since: cdktf.stringToTerraform(this._copyIfModifiedSince),
-      copy_if_none_match: cdktf.stringToTerraform(this._copyIfNoneMatch),
-      copy_if_unmodified_since: cdktf.stringToTerraform(this._copyIfUnmodifiedSince),
-      customer_algorithm: cdktf.stringToTerraform(this._customerAlgorithm),
-      customer_key: cdktf.stringToTerraform(this._customerKey),
-      customer_key_md5: cdktf.stringToTerraform(this._customerKeyMd5),
-      expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
-      expected_source_bucket_owner: cdktf.stringToTerraform(this._expectedSourceBucketOwner),
-      expires: cdktf.stringToTerraform(this._expires),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      id: cdktf.stringToTerraform(this._id),
-      key: cdktf.stringToTerraform(this._key),
-      kms_encryption_context: cdktf.stringToTerraform(this._kmsEncryptionContext),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
-      metadata_directive: cdktf.stringToTerraform(this._metadataDirective),
-      object_lock_legal_hold_status: cdktf.stringToTerraform(this._objectLockLegalHoldStatus),
-      object_lock_mode: cdktf.stringToTerraform(this._objectLockMode),
-      object_lock_retain_until_date: cdktf.stringToTerraform(this._objectLockRetainUntilDate),
-      region: cdktf.stringToTerraform(this._region),
-      request_payer: cdktf.stringToTerraform(this._requestPayer),
-      server_side_encryption: cdktf.stringToTerraform(this._serverSideEncryption),
-      source: cdktf.stringToTerraform(this._source),
-      source_customer_algorithm: cdktf.stringToTerraform(this._sourceCustomerAlgorithm),
-      source_customer_key: cdktf.stringToTerraform(this._sourceCustomerKey),
-      source_customer_key_md5: cdktf.stringToTerraform(this._sourceCustomerKeyMd5),
-      storage_class: cdktf.stringToTerraform(this._storageClass),
-      tagging_directive: cdktf.stringToTerraform(this._taggingDirective),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      website_redirect: cdktf.stringToTerraform(this._websiteRedirect),
-      grant: cdktf.listMapper(s3ObjectCopyGrantToTerraform, true)(this._grant.internalValue),
+      acl: cdktn.stringToTerraform(this._acl),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      bucket_key_enabled: cdktn.booleanToTerraform(this._bucketKeyEnabled),
+      cache_control: cdktn.stringToTerraform(this._cacheControl),
+      checksum_algorithm: cdktn.stringToTerraform(this._checksumAlgorithm),
+      content_disposition: cdktn.stringToTerraform(this._contentDisposition),
+      content_encoding: cdktn.stringToTerraform(this._contentEncoding),
+      content_language: cdktn.stringToTerraform(this._contentLanguage),
+      content_type: cdktn.stringToTerraform(this._contentType),
+      copy_if_match: cdktn.stringToTerraform(this._copyIfMatch),
+      copy_if_modified_since: cdktn.stringToTerraform(this._copyIfModifiedSince),
+      copy_if_none_match: cdktn.stringToTerraform(this._copyIfNoneMatch),
+      copy_if_unmodified_since: cdktn.stringToTerraform(this._copyIfUnmodifiedSince),
+      customer_algorithm: cdktn.stringToTerraform(this._customerAlgorithm),
+      customer_key: cdktn.stringToTerraform(this._customerKey),
+      customer_key_md5: cdktn.stringToTerraform(this._customerKeyMd5),
+      expected_bucket_owner: cdktn.stringToTerraform(this._expectedBucketOwner),
+      expected_source_bucket_owner: cdktn.stringToTerraform(this._expectedSourceBucketOwner),
+      expires: cdktn.stringToTerraform(this._expires),
+      force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
+      id: cdktn.stringToTerraform(this._id),
+      key: cdktn.stringToTerraform(this._key),
+      kms_encryption_context: cdktn.stringToTerraform(this._kmsEncryptionContext),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._metadata),
+      metadata_directive: cdktn.stringToTerraform(this._metadataDirective),
+      object_lock_legal_hold_status: cdktn.stringToTerraform(this._objectLockLegalHoldStatus),
+      object_lock_mode: cdktn.stringToTerraform(this._objectLockMode),
+      object_lock_retain_until_date: cdktn.stringToTerraform(this._objectLockRetainUntilDate),
+      region: cdktn.stringToTerraform(this._region),
+      request_payer: cdktn.stringToTerraform(this._requestPayer),
+      server_side_encryption: cdktn.stringToTerraform(this._serverSideEncryption),
+      source: cdktn.stringToTerraform(this._source),
+      source_customer_algorithm: cdktn.stringToTerraform(this._sourceCustomerAlgorithm),
+      source_customer_key: cdktn.stringToTerraform(this._sourceCustomerKey),
+      source_customer_key_md5: cdktn.stringToTerraform(this._sourceCustomerKeyMd5),
+      storage_class: cdktn.stringToTerraform(this._storageClass),
+      tagging_directive: cdktn.stringToTerraform(this._taggingDirective),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      website_redirect: cdktn.stringToTerraform(this._websiteRedirect),
+      grant: cdktn.listMapper(s3ObjectCopyGrantToTerraform, true)(this._grant.internalValue),
       override_provider: s3ObjectCopyOverrideProviderToTerraform(this._overrideProvider.internalValue),
     };
   }
@@ -1504,253 +1504,253 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       acl: {
-        value: cdktf.stringToHclTerraform(this._acl),
+        value: cdktn.stringToHclTerraform(this._acl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bucket_key_enabled: {
-        value: cdktf.booleanToHclTerraform(this._bucketKeyEnabled),
+        value: cdktn.booleanToHclTerraform(this._bucketKeyEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cache_control: {
-        value: cdktf.stringToHclTerraform(this._cacheControl),
+        value: cdktn.stringToHclTerraform(this._cacheControl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       checksum_algorithm: {
-        value: cdktf.stringToHclTerraform(this._checksumAlgorithm),
+        value: cdktn.stringToHclTerraform(this._checksumAlgorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_disposition: {
-        value: cdktf.stringToHclTerraform(this._contentDisposition),
+        value: cdktn.stringToHclTerraform(this._contentDisposition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_encoding: {
-        value: cdktf.stringToHclTerraform(this._contentEncoding),
+        value: cdktn.stringToHclTerraform(this._contentEncoding),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_language: {
-        value: cdktf.stringToHclTerraform(this._contentLanguage),
+        value: cdktn.stringToHclTerraform(this._contentLanguage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_type: {
-        value: cdktf.stringToHclTerraform(this._contentType),
+        value: cdktn.stringToHclTerraform(this._contentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       copy_if_match: {
-        value: cdktf.stringToHclTerraform(this._copyIfMatch),
+        value: cdktn.stringToHclTerraform(this._copyIfMatch),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       copy_if_modified_since: {
-        value: cdktf.stringToHclTerraform(this._copyIfModifiedSince),
+        value: cdktn.stringToHclTerraform(this._copyIfModifiedSince),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       copy_if_none_match: {
-        value: cdktf.stringToHclTerraform(this._copyIfNoneMatch),
+        value: cdktn.stringToHclTerraform(this._copyIfNoneMatch),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       copy_if_unmodified_since: {
-        value: cdktf.stringToHclTerraform(this._copyIfUnmodifiedSince),
+        value: cdktn.stringToHclTerraform(this._copyIfUnmodifiedSince),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_algorithm: {
-        value: cdktf.stringToHclTerraform(this._customerAlgorithm),
+        value: cdktn.stringToHclTerraform(this._customerAlgorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_key: {
-        value: cdktf.stringToHclTerraform(this._customerKey),
+        value: cdktn.stringToHclTerraform(this._customerKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_key_md5: {
-        value: cdktf.stringToHclTerraform(this._customerKeyMd5),
+        value: cdktn.stringToHclTerraform(this._customerKeyMd5),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expected_bucket_owner: {
-        value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
+        value: cdktn.stringToHclTerraform(this._expectedBucketOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expected_source_bucket_owner: {
-        value: cdktf.stringToHclTerraform(this._expectedSourceBucketOwner),
+        value: cdktn.stringToHclTerraform(this._expectedSourceBucketOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expires: {
-        value: cdktf.stringToHclTerraform(this._expires),
+        value: cdktn.stringToHclTerraform(this._expires),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_destroy: {
-        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        value: cdktn.booleanToHclTerraform(this._forceDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key: {
-        value: cdktf.stringToHclTerraform(this._key),
+        value: cdktn.stringToHclTerraform(this._key),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_encryption_context: {
-        value: cdktf.stringToHclTerraform(this._kmsEncryptionContext),
+        value: cdktn.stringToHclTerraform(this._kmsEncryptionContext),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._metadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._metadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       metadata_directive: {
-        value: cdktf.stringToHclTerraform(this._metadataDirective),
+        value: cdktn.stringToHclTerraform(this._metadataDirective),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_lock_legal_hold_status: {
-        value: cdktf.stringToHclTerraform(this._objectLockLegalHoldStatus),
+        value: cdktn.stringToHclTerraform(this._objectLockLegalHoldStatus),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_lock_mode: {
-        value: cdktf.stringToHclTerraform(this._objectLockMode),
+        value: cdktn.stringToHclTerraform(this._objectLockMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_lock_retain_until_date: {
-        value: cdktf.stringToHclTerraform(this._objectLockRetainUntilDate),
+        value: cdktn.stringToHclTerraform(this._objectLockRetainUntilDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_payer: {
-        value: cdktf.stringToHclTerraform(this._requestPayer),
+        value: cdktn.stringToHclTerraform(this._requestPayer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_side_encryption: {
-        value: cdktf.stringToHclTerraform(this._serverSideEncryption),
+        value: cdktn.stringToHclTerraform(this._serverSideEncryption),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source: {
-        value: cdktf.stringToHclTerraform(this._source),
+        value: cdktn.stringToHclTerraform(this._source),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_customer_algorithm: {
-        value: cdktf.stringToHclTerraform(this._sourceCustomerAlgorithm),
+        value: cdktn.stringToHclTerraform(this._sourceCustomerAlgorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_customer_key: {
-        value: cdktf.stringToHclTerraform(this._sourceCustomerKey),
+        value: cdktn.stringToHclTerraform(this._sourceCustomerKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_customer_key_md5: {
-        value: cdktf.stringToHclTerraform(this._sourceCustomerKeyMd5),
+        value: cdktn.stringToHclTerraform(this._sourceCustomerKeyMd5),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_class: {
-        value: cdktf.stringToHclTerraform(this._storageClass),
+        value: cdktn.stringToHclTerraform(this._storageClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tagging_directive: {
-        value: cdktf.stringToHclTerraform(this._taggingDirective),
+        value: cdktn.stringToHclTerraform(this._taggingDirective),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       website_redirect: {
-        value: cdktf.stringToHclTerraform(this._websiteRedirect),
+        value: cdktn.stringToHclTerraform(this._websiteRedirect),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       grant: {
-        value: cdktf.listMapperHcl(s3ObjectCopyGrantToHclTerraform, true)(this._grant.internalValue),
+        value: cdktn.listMapperHcl(s3ObjectCopyGrantToHclTerraform, true)(this._grant.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "S3ObjectCopyGrantList",

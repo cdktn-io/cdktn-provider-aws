@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsConnectInstanceStorageConfigConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsConnectInstanceStorageConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/connect_instance_storage_config#association_id DataAwsConnectInstanceStorageConfig#association_id}
   */
@@ -42,8 +42,8 @@ export interface DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehose
 }
 
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigToTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseC
 
 
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigToHclTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseC
   return attrs;
 }
 
-export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -95,14 +95,14 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConf
   }
 }
 
-export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigList extends cdktf.ComplexList {
+export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -117,8 +117,8 @@ export interface DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamCo
 }
 
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigToTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -127,8 +127,8 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamCon
 
 
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigToHclTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -136,7 +136,7 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamCon
   return attrs;
 }
 
-export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -145,7 +145,7 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfig
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -170,14 +170,14 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfig
   }
 }
 
-export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigList extends cdktf.ComplexList {
+export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -192,8 +192,8 @@ export interface DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStr
 }
 
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigToTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -202,8 +202,8 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStre
 
 
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigToHclTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -211,7 +211,7 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStre
   return attrs;
 }
 
-export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -220,7 +220,7 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamC
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -250,14 +250,14 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamC
   }
 }
 
-export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigList extends cdktf.ComplexList {
+export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -272,8 +272,8 @@ export interface DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStr
 }
 
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigToTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -282,8 +282,8 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStre
 
 
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigToHclTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -291,7 +291,7 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStre
   return attrs;
 }
 
-export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -300,7 +300,7 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamC
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -336,14 +336,14 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamC
   }
 }
 
-export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigList extends cdktf.ComplexList {
+export class DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -358,8 +358,8 @@ export interface DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncrypt
 }
 
 export function dataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigToTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -368,8 +368,8 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncrypti
 
 
 export function dataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigToHclTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -377,7 +377,7 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncrypti
   return attrs;
 }
 
-export class DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -386,7 +386,7 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionC
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -416,14 +416,14 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionC
   }
 }
 
-export class DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigList extends cdktf.ComplexList {
+export class DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -438,8 +438,8 @@ export interface DataAwsConnectInstanceStorageConfigStorageConfigS3Config {
 }
 
 export function dataAwsConnectInstanceStorageConfigStorageConfigS3ConfigToTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigS3Config): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -448,8 +448,8 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigS3ConfigToTerraf
 
 
 export function dataAwsConnectInstanceStorageConfigStorageConfigS3ConfigToHclTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigS3Config): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -457,7 +457,7 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigS3ConfigToHclTer
   return attrs;
 }
 
-export class DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -466,7 +466,7 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -502,14 +502,14 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigOutputRefer
   }
 }
 
-export class DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigList extends cdktf.ComplexList {
+export class DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -524,8 +524,8 @@ export interface DataAwsConnectInstanceStorageConfigStorageConfig {
 }
 
 export function dataAwsConnectInstanceStorageConfigStorageConfigToTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -534,8 +534,8 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigToTerraform(stru
 
 
 export function dataAwsConnectInstanceStorageConfigStorageConfigToHclTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -543,7 +543,7 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigToHclTerraform(s
   return attrs;
 }
 
-export class DataAwsConnectInstanceStorageConfigStorageConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectInstanceStorageConfigStorageConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -552,7 +552,7 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -601,14 +601,14 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigOutputReference ext
   }
 }
 
-export class DataAwsConnectInstanceStorageConfigStorageConfigList extends cdktf.ComplexList {
+export class DataAwsConnectInstanceStorageConfigStorageConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -623,7 +623,7 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigList extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/connect_instance_storage_config aws_connect_instance_storage_config}
 */
-export class DataAwsConnectInstanceStorageConfig extends cdktf.TerraformDataSource {
+export class DataAwsConnectInstanceStorageConfig extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -634,14 +634,14 @@ export class DataAwsConnectInstanceStorageConfig extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsConnectInstanceStorageConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsConnectInstanceStorageConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsConnectInstanceStorageConfig to import
   * @param importFromId The id of the existing DataAwsConnectInstanceStorageConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/connect_instance_storage_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsConnectInstanceStorageConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_instance_storage_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_instance_storage_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -765,42 +765,42 @@ export class DataAwsConnectInstanceStorageConfig extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      association_id: cdktf.stringToTerraform(this._associationId),
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      region: cdktf.stringToTerraform(this._region),
-      resource_type: cdktf.stringToTerraform(this._resourceType),
+      association_id: cdktn.stringToTerraform(this._associationId),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      region: cdktn.stringToTerraform(this._region),
+      resource_type: cdktn.stringToTerraform(this._resourceType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       association_id: {
-        value: cdktf.stringToHclTerraform(this._associationId),
+        value: cdktn.stringToHclTerraform(this._associationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_type: {
-        value: cdktf.stringToHclTerraform(this._resourceType),
+        value: cdktn.stringToHclTerraform(this._resourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

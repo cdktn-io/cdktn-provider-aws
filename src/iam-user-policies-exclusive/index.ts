@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamUserPoliciesExclusiveConfig extends cdktf.TerraformMetaArguments {
+export interface IamUserPoliciesExclusiveConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_user_policies_exclusive#policy_names IamUserPoliciesExclusive#policy_names}
   */
@@ -25,7 +25,7 @@ export interface IamUserPoliciesExclusiveConfig extends cdktf.TerraformMetaArgum
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_user_policies_exclusive aws_iam_user_policies_exclusive}
 */
-export class IamUserPoliciesExclusive extends cdktf.TerraformResource {
+export class IamUserPoliciesExclusive extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -36,14 +36,14 @@ export class IamUserPoliciesExclusive extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamUserPoliciesExclusive resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamUserPoliciesExclusive resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamUserPoliciesExclusive to import
   * @param importFromId The id of the existing IamUserPoliciesExclusive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_user_policies_exclusive#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamUserPoliciesExclusive to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_user_policies_exclusive", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_user_policies_exclusive", importId: importFromId, provider });
       }
 
   // ===========
@@ -84,7 +84,7 @@ export class IamUserPoliciesExclusive extends cdktf.TerraformResource {
   // policy_names - computed: false, optional: false, required: true
   private _policyNames?: string[]; 
   public get policyNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('policy_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('policy_names'));
   }
   public set policyNames(value: string[]) {
     this._policyNames = value;
@@ -113,21 +113,21 @@ export class IamUserPoliciesExclusive extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policyNames),
-      user_name: cdktf.stringToTerraform(this._userName),
+      policy_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._policyNames),
+      user_name: cdktn.stringToTerraform(this._userName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       policy_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policyNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._policyNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       user_name: {
-        value: cdktf.stringToHclTerraform(this._userName),
+        value: cdktn.stringToHclTerraform(this._userName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

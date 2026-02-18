@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcEndpointConnectionNotificationConfig extends cdktf.TerraformMetaArguments {
+export interface VpcEndpointConnectionNotificationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_connection_notification#connection_events VpcEndpointConnectionNotification#connection_events}
   */
@@ -46,7 +46,7 @@ export interface VpcEndpointConnectionNotificationConfig extends cdktf.Terraform
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_connection_notification aws_vpc_endpoint_connection_notification}
 */
-export class VpcEndpointConnectionNotification extends cdktf.TerraformResource {
+export class VpcEndpointConnectionNotification extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class VpcEndpointConnectionNotification extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcEndpointConnectionNotification resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcEndpointConnectionNotification resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcEndpointConnectionNotification to import
   * @param importFromId The id of the existing VpcEndpointConnectionNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_connection_notification#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcEndpointConnectionNotification to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_endpoint_connection_notification", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_endpoint_connection_notification", importId: importFromId, provider });
       }
 
   // ===========
@@ -109,7 +109,7 @@ export class VpcEndpointConnectionNotification extends cdktf.TerraformResource {
   // connection_events - computed: false, optional: false, required: true
   private _connectionEvents?: string[]; 
   public get connectionEvents() {
-    return cdktf.Fn.tolist(this.getListAttribute('connection_events'));
+    return cdktn.Fn.tolist(this.getListAttribute('connection_events'));
   }
   public set connectionEvents(value: string[]) {
     this._connectionEvents = value;
@@ -212,49 +212,49 @@ export class VpcEndpointConnectionNotification extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_events: cdktf.listMapper(cdktf.stringToTerraform, false)(this._connectionEvents),
-      connection_notification_arn: cdktf.stringToTerraform(this._connectionNotificationArn),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
-      vpc_endpoint_service_id: cdktf.stringToTerraform(this._vpcEndpointServiceId),
+      connection_events: cdktn.listMapper(cdktn.stringToTerraform, false)(this._connectionEvents),
+      connection_notification_arn: cdktn.stringToTerraform(this._connectionNotificationArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      vpc_endpoint_id: cdktn.stringToTerraform(this._vpcEndpointId),
+      vpc_endpoint_service_id: cdktn.stringToTerraform(this._vpcEndpointServiceId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       connection_events: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._connectionEvents),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._connectionEvents),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       connection_notification_arn: {
-        value: cdktf.stringToHclTerraform(this._connectionNotificationArn),
+        value: cdktn.stringToHclTerraform(this._connectionNotificationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._vpcEndpointId),
+        value: cdktn.stringToHclTerraform(this._vpcEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_endpoint_service_id: {
-        value: cdktf.stringToHclTerraform(this._vpcEndpointServiceId),
+        value: cdktn.stringToHclTerraform(this._vpcEndpointServiceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

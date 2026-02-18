@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CodebuildReportGroupConfig extends cdktf.TerraformMetaArguments {
+export interface CodebuildReportGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_report_group#delete_reports CodebuildReportGroup#delete_reports}
   */
-  readonly deleteReports?: boolean | cdktf.IResolvable;
+  readonly deleteReports?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_report_group#id CodebuildReportGroup#id}
   *
@@ -60,7 +60,7 @@ export interface CodebuildReportGroupExportConfigS3Destination {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_report_group#encryption_disabled CodebuildReportGroup#encryption_disabled}
   */
-  readonly encryptionDisabled?: boolean | cdktf.IResolvable;
+  readonly encryptionDisabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_report_group#encryption_key CodebuildReportGroup#encryption_key}
   */
@@ -76,52 +76,52 @@ export interface CodebuildReportGroupExportConfigS3Destination {
 }
 
 export function codebuildReportGroupExportConfigS3DestinationToTerraform(struct?: CodebuildReportGroupExportConfigS3DestinationOutputReference | CodebuildReportGroupExportConfigS3Destination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    encryption_disabled: cdktf.booleanToTerraform(struct!.encryptionDisabled),
-    encryption_key: cdktf.stringToTerraform(struct!.encryptionKey),
-    packaging: cdktf.stringToTerraform(struct!.packaging),
-    path: cdktf.stringToTerraform(struct!.path),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    encryption_disabled: cdktn.booleanToTerraform(struct!.encryptionDisabled),
+    encryption_key: cdktn.stringToTerraform(struct!.encryptionKey),
+    packaging: cdktn.stringToTerraform(struct!.packaging),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
 export function codebuildReportGroupExportConfigS3DestinationToHclTerraform(struct?: CodebuildReportGroupExportConfigS3DestinationOutputReference | CodebuildReportGroupExportConfigS3Destination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encryption_disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.encryptionDisabled),
+      value: cdktn.booleanToHclTerraform(struct!.encryptionDisabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encryption_key: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionKey),
+      value: cdktn.stringToHclTerraform(struct!.encryptionKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     packaging: {
-      value: cdktf.stringToHclTerraform(struct!.packaging),
+      value: cdktn.stringToHclTerraform(struct!.packaging),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -132,14 +132,14 @@ export function codebuildReportGroupExportConfigS3DestinationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildReportGroupExportConfigS3DestinationOutputReference extends cdktf.ComplexObject {
+export class CodebuildReportGroupExportConfigS3DestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -202,11 +202,11 @@ export class CodebuildReportGroupExportConfigS3DestinationOutputReference extend
   }
 
   // encryption_disabled - computed: false, optional: true, required: false
-  private _encryptionDisabled?: boolean | cdktf.IResolvable; 
+  private _encryptionDisabled?: boolean | cdktn.IResolvable; 
   public get encryptionDisabled() {
     return this.getBooleanAttribute('encryption_disabled');
   }
-  public set encryptionDisabled(value: boolean | cdktf.IResolvable) {
+  public set encryptionDisabled(value: boolean | cdktn.IResolvable) {
     this._encryptionDisabled = value;
   }
   public resetEncryptionDisabled() {
@@ -276,25 +276,25 @@ export interface CodebuildReportGroupExportConfig {
 }
 
 export function codebuildReportGroupExportConfigToTerraform(struct?: CodebuildReportGroupExportConfigOutputReference | CodebuildReportGroupExportConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
     s3_destination: codebuildReportGroupExportConfigS3DestinationToTerraform(struct!.s3Destination),
   }
 }
 
 
 export function codebuildReportGroupExportConfigToHclTerraform(struct?: CodebuildReportGroupExportConfigOutputReference | CodebuildReportGroupExportConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -311,14 +311,14 @@ export function codebuildReportGroupExportConfigToHclTerraform(struct?: Codebuil
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildReportGroupExportConfigOutputReference extends cdktf.ComplexObject {
+export class CodebuildReportGroupExportConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -382,7 +382,7 @@ export class CodebuildReportGroupExportConfigOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_report_group aws_codebuild_report_group}
 */
-export class CodebuildReportGroup extends cdktf.TerraformResource {
+export class CodebuildReportGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -393,14 +393,14 @@ export class CodebuildReportGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CodebuildReportGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CodebuildReportGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodebuildReportGroup to import
   * @param importFromId The id of the existing CodebuildReportGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_report_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodebuildReportGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_codebuild_report_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_codebuild_report_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -455,11 +455,11 @@ export class CodebuildReportGroup extends cdktf.TerraformResource {
   }
 
   // delete_reports - computed: false, optional: true, required: false
-  private _deleteReports?: boolean | cdktf.IResolvable; 
+  private _deleteReports?: boolean | cdktn.IResolvable; 
   public get deleteReports() {
     return this.getBooleanAttribute('delete_reports');
   }
-  public set deleteReports(value: boolean | cdktf.IResolvable) {
+  public set deleteReports(value: boolean | cdktn.IResolvable) {
     this._deleteReports = value;
   }
   public resetDeleteReports() {
@@ -579,13 +579,13 @@ export class CodebuildReportGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      delete_reports: cdktf.booleanToTerraform(this._deleteReports),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      type: cdktf.stringToTerraform(this._type),
+      delete_reports: cdktn.booleanToTerraform(this._deleteReports),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      type: cdktn.stringToTerraform(this._type),
       export_config: codebuildReportGroupExportConfigToTerraform(this._exportConfig.internalValue),
     };
   }
@@ -593,43 +593,43 @@ export class CodebuildReportGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       delete_reports: {
-        value: cdktf.booleanToHclTerraform(this._deleteReports),
+        value: cdktn.booleanToHclTerraform(this._deleteReports),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

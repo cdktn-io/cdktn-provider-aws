@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecretsmanagerSecretRotationConfig extends cdktf.TerraformMetaArguments {
+export interface SecretsmanagerSecretRotationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/secretsmanager_secret_rotation#id SecretsmanagerSecretRotation#id}
   *
@@ -28,7 +28,7 @@ export interface SecretsmanagerSecretRotationConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/secretsmanager_secret_rotation#rotate_immediately SecretsmanagerSecretRotation#rotate_immediately}
   */
-  readonly rotateImmediately?: boolean | cdktf.IResolvable;
+  readonly rotateImmediately?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/secretsmanager_secret_rotation#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}
   */
@@ -60,38 +60,38 @@ export interface SecretsmanagerSecretRotationRotationRules {
 }
 
 export function secretsmanagerSecretRotationRotationRulesToTerraform(struct?: SecretsmanagerSecretRotationRotationRulesOutputReference | SecretsmanagerSecretRotationRotationRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    automatically_after_days: cdktf.numberToTerraform(struct!.automaticallyAfterDays),
-    duration: cdktf.stringToTerraform(struct!.duration),
-    schedule_expression: cdktf.stringToTerraform(struct!.scheduleExpression),
+    automatically_after_days: cdktn.numberToTerraform(struct!.automaticallyAfterDays),
+    duration: cdktn.stringToTerraform(struct!.duration),
+    schedule_expression: cdktn.stringToTerraform(struct!.scheduleExpression),
   }
 }
 
 
 export function secretsmanagerSecretRotationRotationRulesToHclTerraform(struct?: SecretsmanagerSecretRotationRotationRulesOutputReference | SecretsmanagerSecretRotationRotationRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     automatically_after_days: {
-      value: cdktf.numberToHclTerraform(struct!.automaticallyAfterDays),
+      value: cdktn.numberToHclTerraform(struct!.automaticallyAfterDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     duration: {
-      value: cdktf.stringToHclTerraform(struct!.duration),
+      value: cdktn.stringToHclTerraform(struct!.duration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schedule_expression: {
-      value: cdktf.stringToHclTerraform(struct!.scheduleExpression),
+      value: cdktn.stringToHclTerraform(struct!.scheduleExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -102,14 +102,14 @@ export function secretsmanagerSecretRotationRotationRulesToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecretsmanagerSecretRotationRotationRulesOutputReference extends cdktf.ComplexObject {
+export class SecretsmanagerSecretRotationRotationRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -198,7 +198,7 @@ export class SecretsmanagerSecretRotationRotationRulesOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation}
 */
-export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
+export class SecretsmanagerSecretRotation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -209,14 +209,14 @@ export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecretsmanagerSecretRotation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecretsmanagerSecretRotation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretsmanagerSecretRotation to import
   * @param importFromId The id of the existing SecretsmanagerSecretRotation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/secretsmanager_secret_rotation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretsmanagerSecretRotation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_secretsmanager_secret_rotation", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_secretsmanager_secret_rotation", importId: importFromId, provider });
       }
 
   // ===========
@@ -291,11 +291,11 @@ export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
   }
 
   // rotate_immediately - computed: false, optional: true, required: false
-  private _rotateImmediately?: boolean | cdktf.IResolvable; 
+  private _rotateImmediately?: boolean | cdktn.IResolvable; 
   public get rotateImmediately() {
     return this.getBooleanAttribute('rotate_immediately');
   }
-  public set rotateImmediately(value: boolean | cdktf.IResolvable) {
+  public set rotateImmediately(value: boolean | cdktn.IResolvable) {
     this._rotateImmediately = value;
   }
   public resetRotateImmediately() {
@@ -359,11 +359,11 @@ export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      rotate_immediately: cdktf.booleanToTerraform(this._rotateImmediately),
-      rotation_lambda_arn: cdktf.stringToTerraform(this._rotationLambdaArn),
-      secret_id: cdktf.stringToTerraform(this._secretId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      rotate_immediately: cdktn.booleanToTerraform(this._rotateImmediately),
+      rotation_lambda_arn: cdktn.stringToTerraform(this._rotationLambdaArn),
+      secret_id: cdktn.stringToTerraform(this._secretId),
       rotation_rules: secretsmanagerSecretRotationRotationRulesToTerraform(this._rotationRules.internalValue),
     };
   }
@@ -371,31 +371,31 @@ export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rotate_immediately: {
-        value: cdktf.booleanToHclTerraform(this._rotateImmediately),
+        value: cdktn.booleanToHclTerraform(this._rotateImmediately),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       rotation_lambda_arn: {
-        value: cdktf.stringToHclTerraform(this._rotationLambdaArn),
+        value: cdktn.stringToHclTerraform(this._rotationLambdaArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_id: {
-        value: cdktf.stringToHclTerraform(this._secretId),
+        value: cdktn.stringToHclTerraform(this._secretId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

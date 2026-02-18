@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ControltowerControlConfig extends cdktf.TerraformMetaArguments {
+export interface ControltowerControlConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/controltower_control#control_identifier ControltowerControl#control_identifier}
   */
@@ -38,7 +38,7 @@ export interface ControltowerControlConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/controltower_control#parameters ControltowerControl#parameters}
   */
-  readonly parameters?: ControltowerControlParameters[] | cdktf.IResolvable;
+  readonly parameters?: ControltowerControlParameters[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -57,32 +57,32 @@ export interface ControltowerControlParameters {
   readonly value: string;
 }
 
-export function controltowerControlParametersToTerraform(struct?: ControltowerControlParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function controltowerControlParametersToTerraform(struct?: ControltowerControlParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function controltowerControlParametersToHclTerraform(struct?: ControltowerControlParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function controltowerControlParametersToHclTerraform(struct?: ControltowerControlParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -93,9 +93,9 @@ export function controltowerControlParametersToHclTerraform(struct?: Controltowe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ControltowerControlParametersOutputReference extends cdktf.ComplexObject {
+export class ControltowerControlParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -103,11 +103,11 @@ export class ControltowerControlParametersOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ControltowerControlParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): ControltowerControlParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -124,14 +124,14 @@ export class ControltowerControlParametersOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ControltowerControlParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ControltowerControlParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -170,15 +170,15 @@ export class ControltowerControlParametersOutputReference extends cdktf.ComplexO
   }
 }
 
-export class ControltowerControlParametersList extends cdktf.ComplexList {
-  public internalValue? : ControltowerControlParameters[] | cdktf.IResolvable
+export class ControltowerControlParametersList extends cdktn.ComplexList {
+  public internalValue? : ControltowerControlParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -204,39 +204,39 @@ export interface ControltowerControlTimeouts {
   readonly update?: string;
 }
 
-export function controltowerControlTimeoutsToTerraform(struct?: ControltowerControlTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function controltowerControlTimeoutsToTerraform(struct?: ControltowerControlTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function controltowerControlTimeoutsToHclTerraform(struct?: ControltowerControlTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function controltowerControlTimeoutsToHclTerraform(struct?: ControltowerControlTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -247,19 +247,19 @@ export function controltowerControlTimeoutsToHclTerraform(struct?: ControltowerC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ControltowerControlTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ControltowerControlTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ControltowerControlTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ControltowerControlTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -280,7 +280,7 @@ export class ControltowerControlTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ControltowerControlTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ControltowerControlTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -288,7 +288,7 @@ export class ControltowerControlTimeoutsOutputReference extends cdktf.ComplexObj
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -353,7 +353,7 @@ export class ControltowerControlTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/controltower_control aws_controltower_control}
 */
-export class ControltowerControl extends cdktf.TerraformResource {
+export class ControltowerControl extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -364,14 +364,14 @@ export class ControltowerControl extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ControltowerControl resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ControltowerControl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ControltowerControl to import
   * @param importFromId The id of the existing ControltowerControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/controltower_control#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ControltowerControl to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_controltower_control", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_controltower_control", importId: importFromId, provider });
       }
 
   // ===========
@@ -481,7 +481,7 @@ export class ControltowerControl extends cdktf.TerraformResource {
   public get parameters() {
     return this._parameters;
   }
-  public putParameters(value: ControltowerControlParameters[] | cdktf.IResolvable) {
+  public putParameters(value: ControltowerControlParameters[] | cdktn.IResolvable) {
     this._parameters.internalValue = value;
   }
   public resetParameters() {
@@ -514,11 +514,11 @@ export class ControltowerControl extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      control_identifier: cdktf.stringToTerraform(this._controlIdentifier),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      target_identifier: cdktf.stringToTerraform(this._targetIdentifier),
-      parameters: cdktf.listMapper(controltowerControlParametersToTerraform, true)(this._parameters.internalValue),
+      control_identifier: cdktn.stringToTerraform(this._controlIdentifier),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      target_identifier: cdktn.stringToTerraform(this._targetIdentifier),
+      parameters: cdktn.listMapper(controltowerControlParametersToTerraform, true)(this._parameters.internalValue),
       timeouts: controltowerControlTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -526,31 +526,31 @@ export class ControltowerControl extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       control_identifier: {
-        value: cdktf.stringToHclTerraform(this._controlIdentifier),
+        value: cdktn.stringToHclTerraform(this._controlIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_identifier: {
-        value: cdktf.stringToHclTerraform(this._targetIdentifier),
+        value: cdktn.stringToHclTerraform(this._targetIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.listMapperHcl(controltowerControlParametersToHclTerraform, true)(this._parameters.internalValue),
+        value: cdktn.listMapperHcl(controltowerControlParametersToHclTerraform, true)(this._parameters.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ControltowerControlParametersList",

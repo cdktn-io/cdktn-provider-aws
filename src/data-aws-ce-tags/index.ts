@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsCeTagsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCeTagsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ce_tags#id DataAwsCeTags#id}
   *
@@ -38,7 +38,7 @@ export interface DataAwsCeTagsConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ce_tags#sort_by DataAwsCeTags#sort_by}
   */
-  readonly sortBy?: DataAwsCeTagsSortBy[] | cdktf.IResolvable;
+  readonly sortBy?: DataAwsCeTagsSortBy[] | cdktn.IResolvable;
   /**
   * time_period block
   *
@@ -62,38 +62,38 @@ export interface DataAwsCeTagsFilterAndCostCategory {
 }
 
 export function dataAwsCeTagsFilterAndCostCategoryToTerraform(struct?: DataAwsCeTagsFilterAndCostCategoryOutputReference | DataAwsCeTagsFilterAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function dataAwsCeTagsFilterAndCostCategoryToHclTerraform(struct?: DataAwsCeTagsFilterAndCostCategoryOutputReference | DataAwsCeTagsFilterAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -104,14 +104,14 @@ export function dataAwsCeTagsFilterAndCostCategoryToHclTerraform(struct?: DataAw
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterAndCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterAndCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -167,7 +167,7 @@ export class DataAwsCeTagsFilterAndCostCategoryOutputReference extends cdktf.Com
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -183,7 +183,7 @@ export class DataAwsCeTagsFilterAndCostCategoryOutputReference extends cdktf.Com
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -212,38 +212,38 @@ export interface DataAwsCeTagsFilterAndDimension {
 }
 
 export function dataAwsCeTagsFilterAndDimensionToTerraform(struct?: DataAwsCeTagsFilterAndDimensionOutputReference | DataAwsCeTagsFilterAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function dataAwsCeTagsFilterAndDimensionToHclTerraform(struct?: DataAwsCeTagsFilterAndDimensionOutputReference | DataAwsCeTagsFilterAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -254,14 +254,14 @@ export function dataAwsCeTagsFilterAndDimensionToHclTerraform(struct?: DataAwsCe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterAndDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterAndDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -317,7 +317,7 @@ export class DataAwsCeTagsFilterAndDimensionOutputReference extends cdktf.Comple
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -333,7 +333,7 @@ export class DataAwsCeTagsFilterAndDimensionOutputReference extends cdktf.Comple
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -362,38 +362,38 @@ export interface DataAwsCeTagsFilterAndTags {
 }
 
 export function dataAwsCeTagsFilterAndTagsToTerraform(struct?: DataAwsCeTagsFilterAndTagsOutputReference | DataAwsCeTagsFilterAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function dataAwsCeTagsFilterAndTagsToHclTerraform(struct?: DataAwsCeTagsFilterAndTagsOutputReference | DataAwsCeTagsFilterAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -404,14 +404,14 @@ export function dataAwsCeTagsFilterAndTagsToHclTerraform(struct?: DataAwsCeTagsF
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterAndTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterAndTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -467,7 +467,7 @@ export class DataAwsCeTagsFilterAndTagsOutputReference extends cdktf.ComplexObje
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -483,7 +483,7 @@ export class DataAwsCeTagsFilterAndTagsOutputReference extends cdktf.ComplexObje
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -517,9 +517,9 @@ export interface DataAwsCeTagsFilterAnd {
   readonly tags?: DataAwsCeTagsFilterAndTags;
 }
 
-export function dataAwsCeTagsFilterAndToTerraform(struct?: DataAwsCeTagsFilterAnd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsCeTagsFilterAndToTerraform(struct?: DataAwsCeTagsFilterAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -530,9 +530,9 @@ export function dataAwsCeTagsFilterAndToTerraform(struct?: DataAwsCeTagsFilterAn
 }
 
 
-export function dataAwsCeTagsFilterAndToHclTerraform(struct?: DataAwsCeTagsFilterAnd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsCeTagsFilterAndToHclTerraform(struct?: DataAwsCeTagsFilterAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -560,9 +560,9 @@ export function dataAwsCeTagsFilterAndToHclTerraform(struct?: DataAwsCeTagsFilte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterAndOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterAndOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -570,11 +570,11 @@ export class DataAwsCeTagsFilterAndOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsCeTagsFilterAnd | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsCeTagsFilterAnd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -595,7 +595,7 @@ export class DataAwsCeTagsFilterAndOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsCeTagsFilterAnd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsCeTagsFilterAnd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -603,7 +603,7 @@ export class DataAwsCeTagsFilterAndOutputReference extends cdktf.ComplexObject {
       this._dimension.internalValue = undefined;
       this._tags.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -665,15 +665,15 @@ export class DataAwsCeTagsFilterAndOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DataAwsCeTagsFilterAndList extends cdktf.ComplexList {
-  public internalValue? : DataAwsCeTagsFilterAnd[] | cdktf.IResolvable
+export class DataAwsCeTagsFilterAndList extends cdktn.ComplexList {
+  public internalValue? : DataAwsCeTagsFilterAnd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -700,38 +700,38 @@ export interface DataAwsCeTagsFilterCostCategory {
 }
 
 export function dataAwsCeTagsFilterCostCategoryToTerraform(struct?: DataAwsCeTagsFilterCostCategoryOutputReference | DataAwsCeTagsFilterCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function dataAwsCeTagsFilterCostCategoryToHclTerraform(struct?: DataAwsCeTagsFilterCostCategoryOutputReference | DataAwsCeTagsFilterCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -742,14 +742,14 @@ export function dataAwsCeTagsFilterCostCategoryToHclTerraform(struct?: DataAwsCe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -805,7 +805,7 @@ export class DataAwsCeTagsFilterCostCategoryOutputReference extends cdktf.Comple
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -821,7 +821,7 @@ export class DataAwsCeTagsFilterCostCategoryOutputReference extends cdktf.Comple
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -850,38 +850,38 @@ export interface DataAwsCeTagsFilterDimension {
 }
 
 export function dataAwsCeTagsFilterDimensionToTerraform(struct?: DataAwsCeTagsFilterDimensionOutputReference | DataAwsCeTagsFilterDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function dataAwsCeTagsFilterDimensionToHclTerraform(struct?: DataAwsCeTagsFilterDimensionOutputReference | DataAwsCeTagsFilterDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -892,14 +892,14 @@ export function dataAwsCeTagsFilterDimensionToHclTerraform(struct?: DataAwsCeTag
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -955,7 +955,7 @@ export class DataAwsCeTagsFilterDimensionOutputReference extends cdktf.ComplexOb
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -971,7 +971,7 @@ export class DataAwsCeTagsFilterDimensionOutputReference extends cdktf.ComplexOb
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1000,38 +1000,38 @@ export interface DataAwsCeTagsFilterNotCostCategory {
 }
 
 export function dataAwsCeTagsFilterNotCostCategoryToTerraform(struct?: DataAwsCeTagsFilterNotCostCategoryOutputReference | DataAwsCeTagsFilterNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function dataAwsCeTagsFilterNotCostCategoryToHclTerraform(struct?: DataAwsCeTagsFilterNotCostCategoryOutputReference | DataAwsCeTagsFilterNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1042,14 +1042,14 @@ export function dataAwsCeTagsFilterNotCostCategoryToHclTerraform(struct?: DataAw
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterNotCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterNotCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1105,7 +1105,7 @@ export class DataAwsCeTagsFilterNotCostCategoryOutputReference extends cdktf.Com
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -1121,7 +1121,7 @@ export class DataAwsCeTagsFilterNotCostCategoryOutputReference extends cdktf.Com
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1150,38 +1150,38 @@ export interface DataAwsCeTagsFilterNotDimension {
 }
 
 export function dataAwsCeTagsFilterNotDimensionToTerraform(struct?: DataAwsCeTagsFilterNotDimensionOutputReference | DataAwsCeTagsFilterNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function dataAwsCeTagsFilterNotDimensionToHclTerraform(struct?: DataAwsCeTagsFilterNotDimensionOutputReference | DataAwsCeTagsFilterNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1192,14 +1192,14 @@ export function dataAwsCeTagsFilterNotDimensionToHclTerraform(struct?: DataAwsCe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterNotDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterNotDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1255,7 +1255,7 @@ export class DataAwsCeTagsFilterNotDimensionOutputReference extends cdktf.Comple
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -1271,7 +1271,7 @@ export class DataAwsCeTagsFilterNotDimensionOutputReference extends cdktf.Comple
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1300,38 +1300,38 @@ export interface DataAwsCeTagsFilterNotTags {
 }
 
 export function dataAwsCeTagsFilterNotTagsToTerraform(struct?: DataAwsCeTagsFilterNotTagsOutputReference | DataAwsCeTagsFilterNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function dataAwsCeTagsFilterNotTagsToHclTerraform(struct?: DataAwsCeTagsFilterNotTagsOutputReference | DataAwsCeTagsFilterNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1342,14 +1342,14 @@ export function dataAwsCeTagsFilterNotTagsToHclTerraform(struct?: DataAwsCeTagsF
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterNotTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterNotTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1405,7 +1405,7 @@ export class DataAwsCeTagsFilterNotTagsOutputReference extends cdktf.ComplexObje
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -1421,7 +1421,7 @@ export class DataAwsCeTagsFilterNotTagsOutputReference extends cdktf.ComplexObje
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1456,8 +1456,8 @@ export interface DataAwsCeTagsFilterNot {
 }
 
 export function dataAwsCeTagsFilterNotToTerraform(struct?: DataAwsCeTagsFilterNotOutputReference | DataAwsCeTagsFilterNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1469,8 +1469,8 @@ export function dataAwsCeTagsFilterNotToTerraform(struct?: DataAwsCeTagsFilterNo
 
 
 export function dataAwsCeTagsFilterNotToHclTerraform(struct?: DataAwsCeTagsFilterNotOutputReference | DataAwsCeTagsFilterNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1498,14 +1498,14 @@ export function dataAwsCeTagsFilterNotToHclTerraform(struct?: DataAwsCeTagsFilte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterNotOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterNotOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1606,38 +1606,38 @@ export interface DataAwsCeTagsFilterOrCostCategory {
 }
 
 export function dataAwsCeTagsFilterOrCostCategoryToTerraform(struct?: DataAwsCeTagsFilterOrCostCategoryOutputReference | DataAwsCeTagsFilterOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function dataAwsCeTagsFilterOrCostCategoryToHclTerraform(struct?: DataAwsCeTagsFilterOrCostCategoryOutputReference | DataAwsCeTagsFilterOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1648,14 +1648,14 @@ export function dataAwsCeTagsFilterOrCostCategoryToHclTerraform(struct?: DataAws
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterOrCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterOrCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1711,7 +1711,7 @@ export class DataAwsCeTagsFilterOrCostCategoryOutputReference extends cdktf.Comp
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -1727,7 +1727,7 @@ export class DataAwsCeTagsFilterOrCostCategoryOutputReference extends cdktf.Comp
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1756,38 +1756,38 @@ export interface DataAwsCeTagsFilterOrDimension {
 }
 
 export function dataAwsCeTagsFilterOrDimensionToTerraform(struct?: DataAwsCeTagsFilterOrDimensionOutputReference | DataAwsCeTagsFilterOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function dataAwsCeTagsFilterOrDimensionToHclTerraform(struct?: DataAwsCeTagsFilterOrDimensionOutputReference | DataAwsCeTagsFilterOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1798,14 +1798,14 @@ export function dataAwsCeTagsFilterOrDimensionToHclTerraform(struct?: DataAwsCeT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterOrDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterOrDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1861,7 +1861,7 @@ export class DataAwsCeTagsFilterOrDimensionOutputReference extends cdktf.Complex
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -1877,7 +1877,7 @@ export class DataAwsCeTagsFilterOrDimensionOutputReference extends cdktf.Complex
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1906,38 +1906,38 @@ export interface DataAwsCeTagsFilterOrTags {
 }
 
 export function dataAwsCeTagsFilterOrTagsToTerraform(struct?: DataAwsCeTagsFilterOrTagsOutputReference | DataAwsCeTagsFilterOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function dataAwsCeTagsFilterOrTagsToHclTerraform(struct?: DataAwsCeTagsFilterOrTagsOutputReference | DataAwsCeTagsFilterOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1948,14 +1948,14 @@ export function dataAwsCeTagsFilterOrTagsToHclTerraform(struct?: DataAwsCeTagsFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterOrTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterOrTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2011,7 +2011,7 @@ export class DataAwsCeTagsFilterOrTagsOutputReference extends cdktf.ComplexObjec
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -2027,7 +2027,7 @@ export class DataAwsCeTagsFilterOrTagsOutputReference extends cdktf.ComplexObjec
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -2061,9 +2061,9 @@ export interface DataAwsCeTagsFilterOr {
   readonly tags?: DataAwsCeTagsFilterOrTags;
 }
 
-export function dataAwsCeTagsFilterOrToTerraform(struct?: DataAwsCeTagsFilterOr | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsCeTagsFilterOrToTerraform(struct?: DataAwsCeTagsFilterOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2074,9 +2074,9 @@ export function dataAwsCeTagsFilterOrToTerraform(struct?: DataAwsCeTagsFilterOr 
 }
 
 
-export function dataAwsCeTagsFilterOrToHclTerraform(struct?: DataAwsCeTagsFilterOr | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsCeTagsFilterOrToHclTerraform(struct?: DataAwsCeTagsFilterOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2104,9 +2104,9 @@ export function dataAwsCeTagsFilterOrToHclTerraform(struct?: DataAwsCeTagsFilter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterOrOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterOrOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2114,11 +2114,11 @@ export class DataAwsCeTagsFilterOrOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsCeTagsFilterOr | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsCeTagsFilterOr | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2139,7 +2139,7 @@ export class DataAwsCeTagsFilterOrOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsCeTagsFilterOr | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsCeTagsFilterOr | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2147,7 +2147,7 @@ export class DataAwsCeTagsFilterOrOutputReference extends cdktf.ComplexObject {
       this._dimension.internalValue = undefined;
       this._tags.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2209,15 +2209,15 @@ export class DataAwsCeTagsFilterOrOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DataAwsCeTagsFilterOrList extends cdktf.ComplexList {
-  public internalValue? : DataAwsCeTagsFilterOr[] | cdktf.IResolvable
+export class DataAwsCeTagsFilterOrList extends cdktn.ComplexList {
+  public internalValue? : DataAwsCeTagsFilterOr[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2244,38 +2244,38 @@ export interface DataAwsCeTagsFilterTags {
 }
 
 export function dataAwsCeTagsFilterTagsToTerraform(struct?: DataAwsCeTagsFilterTagsOutputReference | DataAwsCeTagsFilterTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function dataAwsCeTagsFilterTagsToHclTerraform(struct?: DataAwsCeTagsFilterTagsOutputReference | DataAwsCeTagsFilterTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -2286,14 +2286,14 @@ export function dataAwsCeTagsFilterTagsToHclTerraform(struct?: DataAwsCeTagsFilt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2349,7 +2349,7 @@ export class DataAwsCeTagsFilterTagsOutputReference extends cdktf.ComplexObject 
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -2365,7 +2365,7 @@ export class DataAwsCeTagsFilterTagsOutputReference extends cdktf.ComplexObject 
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -2384,7 +2384,7 @@ export interface DataAwsCeTagsFilter {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ce_tags#and DataAwsCeTags#and}
   */
-  readonly and?: DataAwsCeTagsFilterAnd[] | cdktf.IResolvable;
+  readonly and?: DataAwsCeTagsFilterAnd[] | cdktn.IResolvable;
   /**
   * cost_category block
   *
@@ -2408,7 +2408,7 @@ export interface DataAwsCeTagsFilter {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ce_tags#or DataAwsCeTags#or}
   */
-  readonly or?: DataAwsCeTagsFilterOr[] | cdktf.IResolvable;
+  readonly or?: DataAwsCeTagsFilterOr[] | cdktn.IResolvable;
   /**
   * tags block
   *
@@ -2418,29 +2418,29 @@ export interface DataAwsCeTagsFilter {
 }
 
 export function dataAwsCeTagsFilterToTerraform(struct?: DataAwsCeTagsFilterOutputReference | DataAwsCeTagsFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    and: cdktf.listMapper(dataAwsCeTagsFilterAndToTerraform, true)(struct!.and),
+    and: cdktn.listMapper(dataAwsCeTagsFilterAndToTerraform, true)(struct!.and),
     cost_category: dataAwsCeTagsFilterCostCategoryToTerraform(struct!.costCategory),
     dimension: dataAwsCeTagsFilterDimensionToTerraform(struct!.dimension),
     not: dataAwsCeTagsFilterNotToTerraform(struct!.not),
-    or: cdktf.listMapper(dataAwsCeTagsFilterOrToTerraform, true)(struct!.or),
+    or: cdktn.listMapper(dataAwsCeTagsFilterOrToTerraform, true)(struct!.or),
     tags: dataAwsCeTagsFilterTagsToTerraform(struct!.tags),
   }
 }
 
 
 export function dataAwsCeTagsFilterToHclTerraform(struct?: DataAwsCeTagsFilterOutputReference | DataAwsCeTagsFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     and: {
-      value: cdktf.listMapperHcl(dataAwsCeTagsFilterAndToHclTerraform, true)(struct!.and),
+      value: cdktn.listMapperHcl(dataAwsCeTagsFilterAndToHclTerraform, true)(struct!.and),
       isBlock: true,
       type: "set",
       storageClassType: "DataAwsCeTagsFilterAndList",
@@ -2464,7 +2464,7 @@ export function dataAwsCeTagsFilterToHclTerraform(struct?: DataAwsCeTagsFilterOu
       storageClassType: "DataAwsCeTagsFilterNotList",
     },
     or: {
-      value: cdktf.listMapperHcl(dataAwsCeTagsFilterOrToHclTerraform, true)(struct!.or),
+      value: cdktn.listMapperHcl(dataAwsCeTagsFilterOrToHclTerraform, true)(struct!.or),
       isBlock: true,
       type: "set",
       storageClassType: "DataAwsCeTagsFilterOrList",
@@ -2481,14 +2481,14 @@ export function dataAwsCeTagsFilterToHclTerraform(struct?: DataAwsCeTagsFilterOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2548,7 +2548,7 @@ export class DataAwsCeTagsFilterOutputReference extends cdktf.ComplexObject {
   public get and() {
     return this._and;
   }
-  public putAnd(value: DataAwsCeTagsFilterAnd[] | cdktf.IResolvable) {
+  public putAnd(value: DataAwsCeTagsFilterAnd[] | cdktn.IResolvable) {
     this._and.internalValue = value;
   }
   public resetAnd() {
@@ -2612,7 +2612,7 @@ export class DataAwsCeTagsFilterOutputReference extends cdktf.ComplexObject {
   public get or() {
     return this._or;
   }
-  public putOr(value: DataAwsCeTagsFilterOr[] | cdktf.IResolvable) {
+  public putOr(value: DataAwsCeTagsFilterOr[] | cdktn.IResolvable) {
     this._or.internalValue = value;
   }
   public resetOr() {
@@ -2650,32 +2650,32 @@ export interface DataAwsCeTagsSortBy {
   readonly sortOrder?: string;
 }
 
-export function dataAwsCeTagsSortByToTerraform(struct?: DataAwsCeTagsSortBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsCeTagsSortByToTerraform(struct?: DataAwsCeTagsSortBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    sort_order: cdktf.stringToTerraform(struct!.sortOrder),
+    key: cdktn.stringToTerraform(struct!.key),
+    sort_order: cdktn.stringToTerraform(struct!.sortOrder),
   }
 }
 
 
-export function dataAwsCeTagsSortByToHclTerraform(struct?: DataAwsCeTagsSortBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsCeTagsSortByToHclTerraform(struct?: DataAwsCeTagsSortBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sort_order: {
-      value: cdktf.stringToHclTerraform(struct!.sortOrder),
+      value: cdktn.stringToHclTerraform(struct!.sortOrder),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2686,9 +2686,9 @@ export function dataAwsCeTagsSortByToHclTerraform(struct?: DataAwsCeTagsSortBy |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsSortByOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsSortByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2696,11 +2696,11 @@ export class DataAwsCeTagsSortByOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsCeTagsSortBy | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsCeTagsSortBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2717,14 +2717,14 @@ export class DataAwsCeTagsSortByOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsCeTagsSortBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsCeTagsSortBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._sortOrder = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2769,15 +2769,15 @@ export class DataAwsCeTagsSortByOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DataAwsCeTagsSortByList extends cdktf.ComplexList {
-  public internalValue? : DataAwsCeTagsSortBy[] | cdktf.IResolvable
+export class DataAwsCeTagsSortByList extends cdktn.ComplexList {
+  public internalValue? : DataAwsCeTagsSortBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2800,31 +2800,31 @@ export interface DataAwsCeTagsTimePeriod {
 }
 
 export function dataAwsCeTagsTimePeriodToTerraform(struct?: DataAwsCeTagsTimePeriodOutputReference | DataAwsCeTagsTimePeriod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end: cdktf.stringToTerraform(struct!.end),
-    start: cdktf.stringToTerraform(struct!.start),
+    end: cdktn.stringToTerraform(struct!.end),
+    start: cdktn.stringToTerraform(struct!.start),
   }
 }
 
 
 export function dataAwsCeTagsTimePeriodToHclTerraform(struct?: DataAwsCeTagsTimePeriodOutputReference | DataAwsCeTagsTimePeriod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end: {
-      value: cdktf.stringToHclTerraform(struct!.end),
+      value: cdktn.stringToHclTerraform(struct!.end),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start: {
-      value: cdktf.stringToHclTerraform(struct!.start),
+      value: cdktn.stringToHclTerraform(struct!.start),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2835,14 +2835,14 @@ export function dataAwsCeTagsTimePeriodToHclTerraform(struct?: DataAwsCeTagsTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsCeTagsTimePeriodOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeTagsTimePeriodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2903,7 +2903,7 @@ export class DataAwsCeTagsTimePeriodOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ce_tags aws_ce_tags}
 */
-export class DataAwsCeTags extends cdktf.TerraformDataSource {
+export class DataAwsCeTags extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -2914,14 +2914,14 @@ export class DataAwsCeTags extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsCeTags resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsCeTags resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCeTags to import
   * @param importFromId The id of the existing DataAwsCeTags that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ce_tags#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCeTags to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ce_tags", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ce_tags", importId: importFromId, provider });
       }
 
   // ===========
@@ -3013,7 +3013,7 @@ export class DataAwsCeTags extends cdktf.TerraformDataSource {
 
   // tags - computed: true, optional: false, required: false
   public get tags() {
-    return cdktf.Fn.tolist(this.getListAttribute('tags'));
+    return cdktn.Fn.tolist(this.getListAttribute('tags'));
   }
 
   // filter - computed: false, optional: true, required: false
@@ -3037,7 +3037,7 @@ export class DataAwsCeTags extends cdktf.TerraformDataSource {
   public get sortBy() {
     return this._sortBy;
   }
-  public putSortBy(value: DataAwsCeTagsSortBy[] | cdktf.IResolvable) {
+  public putSortBy(value: DataAwsCeTagsSortBy[] | cdktn.IResolvable) {
     this._sortBy.internalValue = value;
   }
   public resetSortBy() {
@@ -3067,11 +3067,11 @@ export class DataAwsCeTags extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      search_string: cdktf.stringToTerraform(this._searchString),
-      tag_key: cdktf.stringToTerraform(this._tagKey),
+      id: cdktn.stringToTerraform(this._id),
+      search_string: cdktn.stringToTerraform(this._searchString),
+      tag_key: cdktn.stringToTerraform(this._tagKey),
       filter: dataAwsCeTagsFilterToTerraform(this._filter.internalValue),
-      sort_by: cdktf.listMapper(dataAwsCeTagsSortByToTerraform, true)(this._sortBy.internalValue),
+      sort_by: cdktn.listMapper(dataAwsCeTagsSortByToTerraform, true)(this._sortBy.internalValue),
       time_period: dataAwsCeTagsTimePeriodToTerraform(this._timePeriod.internalValue),
     };
   }
@@ -3079,19 +3079,19 @@ export class DataAwsCeTags extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       search_string: {
-        value: cdktf.stringToHclTerraform(this._searchString),
+        value: cdktn.stringToHclTerraform(this._searchString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tag_key: {
-        value: cdktf.stringToHclTerraform(this._tagKey),
+        value: cdktn.stringToHclTerraform(this._tagKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -3103,7 +3103,7 @@ export class DataAwsCeTags extends cdktf.TerraformDataSource {
         storageClassType: "DataAwsCeTagsFilterList",
       },
       sort_by: {
-        value: cdktf.listMapperHcl(dataAwsCeTagsSortByToHclTerraform, true)(this._sortBy.internalValue),
+        value: cdktn.listMapperHcl(dataAwsCeTagsSortByToHclTerraform, true)(this._sortBy.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsCeTagsSortByList",

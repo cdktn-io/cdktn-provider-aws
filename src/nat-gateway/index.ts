@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NatGatewayConfig extends cdktf.TerraformMetaArguments {
+export interface NatGatewayConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}
   */
@@ -74,7 +74,7 @@ export interface NatGatewayConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/nat_gateway#availability_zone_address NatGateway#availability_zone_address}
   */
-  readonly availabilityZoneAddress?: NatGatewayAvailabilityZoneAddress[] | cdktf.IResolvable;
+  readonly availabilityZoneAddress?: NatGatewayAvailabilityZoneAddress[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -86,8 +86,8 @@ export interface NatGatewayRegionalNatGatewayAddress {
 }
 
 export function natGatewayRegionalNatGatewayAddressToTerraform(struct?: NatGatewayRegionalNatGatewayAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -96,8 +96,8 @@ export function natGatewayRegionalNatGatewayAddressToTerraform(struct?: NatGatew
 
 
 export function natGatewayRegionalNatGatewayAddressToHclTerraform(struct?: NatGatewayRegionalNatGatewayAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -105,7 +105,7 @@ export function natGatewayRegionalNatGatewayAddressToHclTerraform(struct?: NatGa
   return attrs;
 }
 
-export class NatGatewayRegionalNatGatewayAddressOutputReference extends cdktf.ComplexObject {
+export class NatGatewayRegionalNatGatewayAddressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -114,7 +114,7 @@ export class NatGatewayRegionalNatGatewayAddressOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -169,14 +169,14 @@ export class NatGatewayRegionalNatGatewayAddressOutputReference extends cdktf.Co
   }
 }
 
-export class NatGatewayRegionalNatGatewayAddressList extends cdktf.ComplexList {
+export class NatGatewayRegionalNatGatewayAddressList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -202,39 +202,39 @@ export interface NatGatewayAvailabilityZoneAddress {
   readonly availabilityZoneId?: string;
 }
 
-export function natGatewayAvailabilityZoneAddressToTerraform(struct?: NatGatewayAvailabilityZoneAddress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function natGatewayAvailabilityZoneAddressToTerraform(struct?: NatGatewayAvailabilityZoneAddress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allocation_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allocationIds),
-    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
-    availability_zone_id: cdktf.stringToTerraform(struct!.availabilityZoneId),
+    allocation_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allocationIds),
+    availability_zone: cdktn.stringToTerraform(struct!.availabilityZone),
+    availability_zone_id: cdktn.stringToTerraform(struct!.availabilityZoneId),
   }
 }
 
 
-export function natGatewayAvailabilityZoneAddressToHclTerraform(struct?: NatGatewayAvailabilityZoneAddress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function natGatewayAvailabilityZoneAddressToHclTerraform(struct?: NatGatewayAvailabilityZoneAddress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allocation_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allocationIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allocationIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     availability_zone: {
-      value: cdktf.stringToHclTerraform(struct!.availabilityZone),
+      value: cdktn.stringToHclTerraform(struct!.availabilityZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     availability_zone_id: {
-      value: cdktf.stringToHclTerraform(struct!.availabilityZoneId),
+      value: cdktn.stringToHclTerraform(struct!.availabilityZoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -245,9 +245,9 @@ export function natGatewayAvailabilityZoneAddressToHclTerraform(struct?: NatGate
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NatGatewayAvailabilityZoneAddressOutputReference extends cdktf.ComplexObject {
+export class NatGatewayAvailabilityZoneAddressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -255,11 +255,11 @@ export class NatGatewayAvailabilityZoneAddressOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NatGatewayAvailabilityZoneAddress | cdktf.IResolvable | undefined {
+  public get internalValue(): NatGatewayAvailabilityZoneAddress | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -280,7 +280,7 @@ export class NatGatewayAvailabilityZoneAddressOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NatGatewayAvailabilityZoneAddress | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NatGatewayAvailabilityZoneAddress | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -288,7 +288,7 @@ export class NatGatewayAvailabilityZoneAddressOutputReference extends cdktf.Comp
       this._availabilityZone = undefined;
       this._availabilityZoneId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -304,7 +304,7 @@ export class NatGatewayAvailabilityZoneAddressOutputReference extends cdktf.Comp
   // allocation_ids - computed: false, optional: true, required: false
   private _allocationIds?: string[]; 
   public get allocationIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('allocation_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('allocation_ids'));
   }
   public set allocationIds(value: string[]) {
     this._allocationIds = value;
@@ -350,15 +350,15 @@ export class NatGatewayAvailabilityZoneAddressOutputReference extends cdktf.Comp
   }
 }
 
-export class NatGatewayAvailabilityZoneAddressList extends cdktf.ComplexList {
-  public internalValue? : NatGatewayAvailabilityZoneAddress[] | cdktf.IResolvable
+export class NatGatewayAvailabilityZoneAddressList extends cdktn.ComplexList {
+  public internalValue? : NatGatewayAvailabilityZoneAddress[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -384,39 +384,39 @@ export interface NatGatewayTimeouts {
   readonly update?: string;
 }
 
-export function natGatewayTimeoutsToTerraform(struct?: NatGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function natGatewayTimeoutsToTerraform(struct?: NatGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function natGatewayTimeoutsToHclTerraform(struct?: NatGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function natGatewayTimeoutsToHclTerraform(struct?: NatGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -427,19 +427,19 @@ export function natGatewayTimeoutsToHclTerraform(struct?: NatGatewayTimeouts | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NatGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NatGatewayTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NatGatewayTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NatGatewayTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -460,7 +460,7 @@ export class NatGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NatGatewayTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NatGatewayTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -468,7 +468,7 @@ export class NatGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -533,7 +533,7 @@ export class NatGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/nat_gateway aws_nat_gateway}
 */
-export class NatGateway extends cdktf.TerraformResource {
+export class NatGateway extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -544,14 +544,14 @@ export class NatGateway extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NatGateway resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NatGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NatGateway to import
   * @param importFromId The id of the existing NatGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/nat_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NatGateway to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_nat_gateway", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_nat_gateway", importId: importFromId, provider });
       }
 
   // ===========
@@ -742,7 +742,7 @@ export class NatGateway extends cdktf.TerraformResource {
   // secondary_allocation_ids - computed: true, optional: true, required: false
   private _secondaryAllocationIds?: string[]; 
   public get secondaryAllocationIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('secondary_allocation_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('secondary_allocation_ids'));
   }
   public set secondaryAllocationIds(value: string[]) {
     this._secondaryAllocationIds = value;
@@ -774,7 +774,7 @@ export class NatGateway extends cdktf.TerraformResource {
   // secondary_private_ip_addresses - computed: true, optional: true, required: false
   private _secondaryPrivateIpAddresses?: string[]; 
   public get secondaryPrivateIpAddresses() {
-    return cdktf.Fn.tolist(this.getListAttribute('secondary_private_ip_addresses'));
+    return cdktn.Fn.tolist(this.getListAttribute('secondary_private_ip_addresses'));
   }
   public set secondaryPrivateIpAddresses(value: string[]) {
     this._secondaryPrivateIpAddresses = value;
@@ -856,7 +856,7 @@ export class NatGateway extends cdktf.TerraformResource {
   public get availabilityZoneAddress() {
     return this._availabilityZoneAddress;
   }
-  public putAvailabilityZoneAddress(value: NatGatewayAvailabilityZoneAddress[] | cdktf.IResolvable) {
+  public putAvailabilityZoneAddress(value: NatGatewayAvailabilityZoneAddress[] | cdktn.IResolvable) {
     this._availabilityZoneAddress.internalValue = value;
   }
   public resetAvailabilityZoneAddress() {
@@ -889,20 +889,20 @@ export class NatGateway extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocation_id: cdktf.stringToTerraform(this._allocationId),
-      availability_mode: cdktf.stringToTerraform(this._availabilityMode),
-      connectivity_type: cdktf.stringToTerraform(this._connectivityType),
-      id: cdktf.stringToTerraform(this._id),
-      private_ip: cdktf.stringToTerraform(this._privateIp),
-      region: cdktf.stringToTerraform(this._region),
-      secondary_allocation_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._secondaryAllocationIds),
-      secondary_private_ip_address_count: cdktf.numberToTerraform(this._secondaryPrivateIpAddressCount),
-      secondary_private_ip_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._secondaryPrivateIpAddresses),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
-      availability_zone_address: cdktf.listMapper(natGatewayAvailabilityZoneAddressToTerraform, true)(this._availabilityZoneAddress.internalValue),
+      allocation_id: cdktn.stringToTerraform(this._allocationId),
+      availability_mode: cdktn.stringToTerraform(this._availabilityMode),
+      connectivity_type: cdktn.stringToTerraform(this._connectivityType),
+      id: cdktn.stringToTerraform(this._id),
+      private_ip: cdktn.stringToTerraform(this._privateIp),
+      region: cdktn.stringToTerraform(this._region),
+      secondary_allocation_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._secondaryAllocationIds),
+      secondary_private_ip_address_count: cdktn.numberToTerraform(this._secondaryPrivateIpAddressCount),
+      secondary_private_ip_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._secondaryPrivateIpAddresses),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
+      availability_zone_address: cdktn.listMapper(natGatewayAvailabilityZoneAddressToTerraform, true)(this._availabilityZoneAddress.internalValue),
       timeouts: natGatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -910,85 +910,85 @@ export class NatGateway extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allocation_id: {
-        value: cdktf.stringToHclTerraform(this._allocationId),
+        value: cdktn.stringToHclTerraform(this._allocationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       availability_mode: {
-        value: cdktf.stringToHclTerraform(this._availabilityMode),
+        value: cdktn.stringToHclTerraform(this._availabilityMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connectivity_type: {
-        value: cdktf.stringToHclTerraform(this._connectivityType),
+        value: cdktn.stringToHclTerraform(this._connectivityType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_ip: {
-        value: cdktf.stringToHclTerraform(this._privateIp),
+        value: cdktn.stringToHclTerraform(this._privateIp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secondary_allocation_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._secondaryAllocationIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._secondaryAllocationIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       secondary_private_ip_address_count: {
-        value: cdktf.numberToHclTerraform(this._secondaryPrivateIpAddressCount),
+        value: cdktn.numberToHclTerraform(this._secondaryPrivateIpAddressCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       secondary_private_ip_addresses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._secondaryPrivateIpAddresses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._secondaryPrivateIpAddresses),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       availability_zone_address: {
-        value: cdktf.listMapperHcl(natGatewayAvailabilityZoneAddressToHclTerraform, true)(this._availabilityZoneAddress.internalValue),
+        value: cdktn.listMapperHcl(natGatewayAvailabilityZoneAddressToHclTerraform, true)(this._availabilityZoneAddress.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "NatGatewayAvailabilityZoneAddressList",

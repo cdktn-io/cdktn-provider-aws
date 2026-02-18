@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudfrontVpcOriginConfig extends cdktf.TerraformMetaArguments {
+export interface CloudfrontVpcOriginConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_vpc_origin#tags CloudfrontVpcOrigin#tags}
   */
@@ -27,7 +27,7 @@ export interface CloudfrontVpcOriginConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_vpc_origin#vpc_origin_endpoint_config CloudfrontVpcOrigin#vpc_origin_endpoint_config}
   */
-  readonly vpcOriginEndpointConfig?: CloudfrontVpcOriginVpcOriginEndpointConfig[] | cdktf.IResolvable;
+  readonly vpcOriginEndpointConfig?: CloudfrontVpcOriginVpcOriginEndpointConfig[] | cdktn.IResolvable;
 }
 export interface CloudfrontVpcOriginTimeouts {
   /**
@@ -50,39 +50,39 @@ export interface CloudfrontVpcOriginTimeouts {
   readonly update?: string;
 }
 
-export function cloudfrontVpcOriginTimeoutsToTerraform(struct?: CloudfrontVpcOriginTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontVpcOriginTimeoutsToTerraform(struct?: CloudfrontVpcOriginTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cloudfrontVpcOriginTimeoutsToHclTerraform(struct?: CloudfrontVpcOriginTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontVpcOriginTimeoutsToHclTerraform(struct?: CloudfrontVpcOriginTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -93,19 +93,19 @@ export function cloudfrontVpcOriginTimeoutsToHclTerraform(struct?: CloudfrontVpc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudfrontVpcOriginTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CloudfrontVpcOriginTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CloudfrontVpcOriginTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudfrontVpcOriginTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -126,7 +126,7 @@ export class CloudfrontVpcOriginTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudfrontVpcOriginTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudfrontVpcOriginTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -134,7 +134,7 @@ export class CloudfrontVpcOriginTimeoutsOutputReference extends cdktf.ComplexObj
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -206,32 +206,32 @@ export interface CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols {
   readonly quantity: number;
 }
 
-export function cloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsToTerraform(struct?: CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsToTerraform(struct?: CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    items: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.items),
-    quantity: cdktf.numberToTerraform(struct!.quantity),
+    items: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.items),
+    quantity: cdktn.numberToTerraform(struct!.quantity),
   }
 }
 
 
-export function cloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsToHclTerraform(struct?: CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsToHclTerraform(struct?: CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     items: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.items),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.items),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     quantity: {
-      value: cdktf.numberToHclTerraform(struct!.quantity),
+      value: cdktn.numberToHclTerraform(struct!.quantity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -242,9 +242,9 @@ export function cloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsOutputReference extends cdktf.ComplexObject {
+export class CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -252,11 +252,11 @@ export class CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -273,14 +273,14 @@ export class CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._items = undefined;
       this._quantity = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -295,7 +295,7 @@ export class CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsOutputR
   // items - computed: false, optional: false, required: true
   private _items?: string[]; 
   public get items() {
-    return cdktf.Fn.tolist(this.getListAttribute('items'));
+    return cdktn.Fn.tolist(this.getListAttribute('items'));
   }
   public set items(value: string[]) {
     this._items = value;
@@ -319,15 +319,15 @@ export class CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsOutputR
   }
 }
 
-export class CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsList extends cdktf.ComplexList {
-  public internalValue? : CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols[] | cdktf.IResolvable
+export class CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsList extends cdktn.ComplexList {
+  public internalValue? : CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -364,63 +364,63 @@ export interface CloudfrontVpcOriginVpcOriginEndpointConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_vpc_origin#origin_ssl_protocols CloudfrontVpcOrigin#origin_ssl_protocols}
   */
-  readonly originSslProtocols?: CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols[] | cdktf.IResolvable;
+  readonly originSslProtocols?: CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols[] | cdktn.IResolvable;
 }
 
-export function cloudfrontVpcOriginVpcOriginEndpointConfigToTerraform(struct?: CloudfrontVpcOriginVpcOriginEndpointConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontVpcOriginVpcOriginEndpointConfigToTerraform(struct?: CloudfrontVpcOriginVpcOriginEndpointConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
-    http_port: cdktf.numberToTerraform(struct!.httpPort),
-    https_port: cdktf.numberToTerraform(struct!.httpsPort),
-    name: cdktf.stringToTerraform(struct!.name),
-    origin_protocol_policy: cdktf.stringToTerraform(struct!.originProtocolPolicy),
-    origin_ssl_protocols: cdktf.listMapper(cloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsToTerraform, true)(struct!.originSslProtocols),
+    arn: cdktn.stringToTerraform(struct!.arn),
+    http_port: cdktn.numberToTerraform(struct!.httpPort),
+    https_port: cdktn.numberToTerraform(struct!.httpsPort),
+    name: cdktn.stringToTerraform(struct!.name),
+    origin_protocol_policy: cdktn.stringToTerraform(struct!.originProtocolPolicy),
+    origin_ssl_protocols: cdktn.listMapper(cloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsToTerraform, true)(struct!.originSslProtocols),
   }
 }
 
 
-export function cloudfrontVpcOriginVpcOriginEndpointConfigToHclTerraform(struct?: CloudfrontVpcOriginVpcOriginEndpointConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontVpcOriginVpcOriginEndpointConfigToHclTerraform(struct?: CloudfrontVpcOriginVpcOriginEndpointConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_port: {
-      value: cdktf.numberToHclTerraform(struct!.httpPort),
+      value: cdktn.numberToHclTerraform(struct!.httpPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     https_port: {
-      value: cdktf.numberToHclTerraform(struct!.httpsPort),
+      value: cdktn.numberToHclTerraform(struct!.httpsPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     origin_protocol_policy: {
-      value: cdktf.stringToHclTerraform(struct!.originProtocolPolicy),
+      value: cdktn.stringToHclTerraform(struct!.originProtocolPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     origin_ssl_protocols: {
-      value: cdktf.listMapperHcl(cloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsToHclTerraform, true)(struct!.originSslProtocols),
+      value: cdktn.listMapperHcl(cloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsToHclTerraform, true)(struct!.originSslProtocols),
       isBlock: true,
       type: "list",
       storageClassType: "CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsList",
@@ -431,9 +431,9 @@ export function cloudfrontVpcOriginVpcOriginEndpointConfigToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudfrontVpcOriginVpcOriginEndpointConfigOutputReference extends cdktf.ComplexObject {
+export class CloudfrontVpcOriginVpcOriginEndpointConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -441,11 +441,11 @@ export class CloudfrontVpcOriginVpcOriginEndpointConfigOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudfrontVpcOriginVpcOriginEndpointConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudfrontVpcOriginVpcOriginEndpointConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -478,7 +478,7 @@ export class CloudfrontVpcOriginVpcOriginEndpointConfigOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudfrontVpcOriginVpcOriginEndpointConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudfrontVpcOriginVpcOriginEndpointConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -489,7 +489,7 @@ export class CloudfrontVpcOriginVpcOriginEndpointConfigOutputReference extends c
       this._originProtocolPolicy = undefined;
       this._originSslProtocols.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -575,7 +575,7 @@ export class CloudfrontVpcOriginVpcOriginEndpointConfigOutputReference extends c
   public get originSslProtocols() {
     return this._originSslProtocols;
   }
-  public putOriginSslProtocols(value: CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols[] | cdktf.IResolvable) {
+  public putOriginSslProtocols(value: CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols[] | cdktn.IResolvable) {
     this._originSslProtocols.internalValue = value;
   }
   public resetOriginSslProtocols() {
@@ -587,15 +587,15 @@ export class CloudfrontVpcOriginVpcOriginEndpointConfigOutputReference extends c
   }
 }
 
-export class CloudfrontVpcOriginVpcOriginEndpointConfigList extends cdktf.ComplexList {
-  public internalValue? : CloudfrontVpcOriginVpcOriginEndpointConfig[] | cdktf.IResolvable
+export class CloudfrontVpcOriginVpcOriginEndpointConfigList extends cdktn.ComplexList {
+  public internalValue? : CloudfrontVpcOriginVpcOriginEndpointConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -610,7 +610,7 @@ export class CloudfrontVpcOriginVpcOriginEndpointConfigList extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_vpc_origin aws_cloudfront_vpc_origin}
 */
-export class CloudfrontVpcOrigin extends cdktf.TerraformResource {
+export class CloudfrontVpcOrigin extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -621,14 +621,14 @@ export class CloudfrontVpcOrigin extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudfrontVpcOrigin resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudfrontVpcOrigin resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudfrontVpcOrigin to import
   * @param importFromId The id of the existing CloudfrontVpcOrigin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_vpc_origin#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudfrontVpcOrigin to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_vpc_origin", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_vpc_origin", importId: importFromId, provider });
       }
 
   // ===========
@@ -699,7 +699,7 @@ export class CloudfrontVpcOrigin extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -725,7 +725,7 @@ export class CloudfrontVpcOrigin extends cdktf.TerraformResource {
   public get vpcOriginEndpointConfig() {
     return this._vpcOriginEndpointConfig;
   }
-  public putVpcOriginEndpointConfig(value: CloudfrontVpcOriginVpcOriginEndpointConfig[] | cdktf.IResolvable) {
+  public putVpcOriginEndpointConfig(value: CloudfrontVpcOriginVpcOriginEndpointConfig[] | cdktn.IResolvable) {
     this._vpcOriginEndpointConfig.internalValue = value;
   }
   public resetVpcOriginEndpointConfig() {
@@ -742,16 +742,16 @@ export class CloudfrontVpcOrigin extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: cloudfrontVpcOriginTimeoutsToTerraform(this._timeouts.internalValue),
-      vpc_origin_endpoint_config: cdktf.listMapper(cloudfrontVpcOriginVpcOriginEndpointConfigToTerraform, true)(this._vpcOriginEndpointConfig.internalValue),
+      vpc_origin_endpoint_config: cdktn.listMapper(cloudfrontVpcOriginVpcOriginEndpointConfigToTerraform, true)(this._vpcOriginEndpointConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -763,7 +763,7 @@ export class CloudfrontVpcOrigin extends cdktf.TerraformResource {
         storageClassType: "CloudfrontVpcOriginTimeouts",
       },
       vpc_origin_endpoint_config: {
-        value: cdktf.listMapperHcl(cloudfrontVpcOriginVpcOriginEndpointConfigToHclTerraform, true)(this._vpcOriginEndpointConfig.internalValue),
+        value: cdktn.listMapperHcl(cloudfrontVpcOriginVpcOriginEndpointConfigToHclTerraform, true)(this._vpcOriginEndpointConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CloudfrontVpcOriginVpcOriginEndpointConfigList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StoragegatewayGatewayConfig extends cdktf.TerraformMetaArguments {
+export interface StoragegatewayGatewayConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_gateway#activation_key StoragegatewayGateway#activation_key}
   */
@@ -68,7 +68,7 @@ export interface StoragegatewayGatewayConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_gateway#smb_file_share_visibility StoragegatewayGateway#smb_file_share_visibility}
   */
-  readonly smbFileShareVisibility?: boolean | cdktf.IResolvable;
+  readonly smbFileShareVisibility?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_gateway#smb_guest_password StoragegatewayGateway#smb_guest_password}
   */
@@ -112,8 +112,8 @@ export interface StoragegatewayGatewayGatewayNetworkInterface {
 }
 
 export function storagegatewayGatewayGatewayNetworkInterfaceToTerraform(struct?: StoragegatewayGatewayGatewayNetworkInterface): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -122,8 +122,8 @@ export function storagegatewayGatewayGatewayNetworkInterfaceToTerraform(struct?:
 
 
 export function storagegatewayGatewayGatewayNetworkInterfaceToHclTerraform(struct?: StoragegatewayGatewayGatewayNetworkInterface): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -131,7 +131,7 @@ export function storagegatewayGatewayGatewayNetworkInterfaceToHclTerraform(struc
   return attrs;
 }
 
-export class StoragegatewayGatewayGatewayNetworkInterfaceOutputReference extends cdktf.ComplexObject {
+export class StoragegatewayGatewayGatewayNetworkInterfaceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -140,7 +140,7 @@ export class StoragegatewayGatewayGatewayNetworkInterfaceOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -165,14 +165,14 @@ export class StoragegatewayGatewayGatewayNetworkInterfaceOutputReference extends
   }
 }
 
-export class StoragegatewayGatewayGatewayNetworkInterfaceList extends cdktf.ComplexList {
+export class StoragegatewayGatewayGatewayNetworkInterfaceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -203,45 +203,45 @@ export interface StoragegatewayGatewayMaintenanceStartTime {
 }
 
 export function storagegatewayGatewayMaintenanceStartTimeToTerraform(struct?: StoragegatewayGatewayMaintenanceStartTimeOutputReference | StoragegatewayGatewayMaintenanceStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_month: cdktf.stringToTerraform(struct!.dayOfMonth),
-    day_of_week: cdktf.stringToTerraform(struct!.dayOfWeek),
-    hour_of_day: cdktf.numberToTerraform(struct!.hourOfDay),
-    minute_of_hour: cdktf.numberToTerraform(struct!.minuteOfHour),
+    day_of_month: cdktn.stringToTerraform(struct!.dayOfMonth),
+    day_of_week: cdktn.stringToTerraform(struct!.dayOfWeek),
+    hour_of_day: cdktn.numberToTerraform(struct!.hourOfDay),
+    minute_of_hour: cdktn.numberToTerraform(struct!.minuteOfHour),
   }
 }
 
 
 export function storagegatewayGatewayMaintenanceStartTimeToHclTerraform(struct?: StoragegatewayGatewayMaintenanceStartTimeOutputReference | StoragegatewayGatewayMaintenanceStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_month: {
-      value: cdktf.stringToHclTerraform(struct!.dayOfMonth),
+      value: cdktn.stringToHclTerraform(struct!.dayOfMonth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     day_of_week: {
-      value: cdktf.stringToHclTerraform(struct!.dayOfWeek),
+      value: cdktn.stringToHclTerraform(struct!.dayOfWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hour_of_day: {
-      value: cdktf.numberToHclTerraform(struct!.hourOfDay),
+      value: cdktn.numberToHclTerraform(struct!.hourOfDay),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minute_of_hour: {
-      value: cdktf.numberToHclTerraform(struct!.minuteOfHour),
+      value: cdktn.numberToHclTerraform(struct!.minuteOfHour),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -252,14 +252,14 @@ export function storagegatewayGatewayMaintenanceStartTimeToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StoragegatewayGatewayMaintenanceStartTimeOutputReference extends cdktf.ComplexObject {
+export class StoragegatewayGatewayMaintenanceStartTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -391,59 +391,59 @@ export interface StoragegatewayGatewaySmbActiveDirectorySettings {
 }
 
 export function storagegatewayGatewaySmbActiveDirectorySettingsToTerraform(struct?: StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference | StoragegatewayGatewaySmbActiveDirectorySettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain_controllers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.domainControllers),
-    domain_name: cdktf.stringToTerraform(struct!.domainName),
-    organizational_unit: cdktf.stringToTerraform(struct!.organizationalUnit),
-    password: cdktf.stringToTerraform(struct!.password),
-    timeout_in_seconds: cdktf.numberToTerraform(struct!.timeoutInSeconds),
-    username: cdktf.stringToTerraform(struct!.username),
+    domain_controllers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.domainControllers),
+    domain_name: cdktn.stringToTerraform(struct!.domainName),
+    organizational_unit: cdktn.stringToTerraform(struct!.organizationalUnit),
+    password: cdktn.stringToTerraform(struct!.password),
+    timeout_in_seconds: cdktn.numberToTerraform(struct!.timeoutInSeconds),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function storagegatewayGatewaySmbActiveDirectorySettingsToHclTerraform(struct?: StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference | StoragegatewayGatewaySmbActiveDirectorySettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain_controllers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.domainControllers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.domainControllers),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     domain_name: {
-      value: cdktf.stringToHclTerraform(struct!.domainName),
+      value: cdktn.stringToHclTerraform(struct!.domainName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organizational_unit: {
-      value: cdktf.stringToHclTerraform(struct!.organizationalUnit),
+      value: cdktn.stringToHclTerraform(struct!.organizationalUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -454,14 +454,14 @@ export function storagegatewayGatewaySmbActiveDirectorySettingsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference extends cdktf.ComplexObject {
+export class StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -524,7 +524,7 @@ export class StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference exte
   // domain_controllers - computed: false, optional: true, required: false
   private _domainControllers?: string[]; 
   public get domainControllers() {
-    return cdktf.Fn.tolist(this.getListAttribute('domain_controllers'));
+    return cdktn.Fn.tolist(this.getListAttribute('domain_controllers'));
   }
   public set domainControllers(value: string[]) {
     this._domainControllers = value;
@@ -615,25 +615,25 @@ export interface StoragegatewayGatewayTimeouts {
   readonly create?: string;
 }
 
-export function storagegatewayGatewayTimeoutsToTerraform(struct?: StoragegatewayGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storagegatewayGatewayTimeoutsToTerraform(struct?: StoragegatewayGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function storagegatewayGatewayTimeoutsToHclTerraform(struct?: StoragegatewayGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storagegatewayGatewayTimeoutsToHclTerraform(struct?: StoragegatewayGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -644,19 +644,19 @@ export function storagegatewayGatewayTimeoutsToHclTerraform(struct?: Storagegate
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StoragegatewayGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StoragegatewayGatewayTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StoragegatewayGatewayTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StoragegatewayGatewayTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -669,13 +669,13 @@ export class StoragegatewayGatewayTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StoragegatewayGatewayTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StoragegatewayGatewayTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -706,7 +706,7 @@ export class StoragegatewayGatewayTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_gateway aws_storagegateway_gateway}
 */
-export class StoragegatewayGateway extends cdktf.TerraformResource {
+export class StoragegatewayGateway extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -717,14 +717,14 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StoragegatewayGateway resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StoragegatewayGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StoragegatewayGateway to import
   * @param importFromId The id of the existing StoragegatewayGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StoragegatewayGateway to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_gateway", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_gateway", importId: importFromId, provider });
       }
 
   // ===========
@@ -999,11 +999,11 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
   }
 
   // smb_file_share_visibility - computed: false, optional: true, required: false
-  private _smbFileShareVisibility?: boolean | cdktf.IResolvable; 
+  private _smbFileShareVisibility?: boolean | cdktn.IResolvable; 
   public get smbFileShareVisibility() {
     return this.getBooleanAttribute('smb_file_share_visibility');
   }
-  public set smbFileShareVisibility(value: boolean | cdktf.IResolvable) {
+  public set smbFileShareVisibility(value: boolean | cdktn.IResolvable) {
     this._smbFileShareVisibility = value;
   }
   public resetSmbFileShareVisibility() {
@@ -1148,24 +1148,24 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      activation_key: cdktf.stringToTerraform(this._activationKey),
-      average_download_rate_limit_in_bits_per_sec: cdktf.numberToTerraform(this._averageDownloadRateLimitInBitsPerSec),
-      average_upload_rate_limit_in_bits_per_sec: cdktf.numberToTerraform(this._averageUploadRateLimitInBitsPerSec),
-      cloudwatch_log_group_arn: cdktf.stringToTerraform(this._cloudwatchLogGroupArn),
-      gateway_ip_address: cdktf.stringToTerraform(this._gatewayIpAddress),
-      gateway_name: cdktf.stringToTerraform(this._gatewayName),
-      gateway_timezone: cdktf.stringToTerraform(this._gatewayTimezone),
-      gateway_type: cdktf.stringToTerraform(this._gatewayType),
-      gateway_vpc_endpoint: cdktf.stringToTerraform(this._gatewayVpcEndpoint),
-      id: cdktf.stringToTerraform(this._id),
-      medium_changer_type: cdktf.stringToTerraform(this._mediumChangerType),
-      region: cdktf.stringToTerraform(this._region),
-      smb_file_share_visibility: cdktf.booleanToTerraform(this._smbFileShareVisibility),
-      smb_guest_password: cdktf.stringToTerraform(this._smbGuestPassword),
-      smb_security_strategy: cdktf.stringToTerraform(this._smbSecurityStrategy),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      tape_drive_type: cdktf.stringToTerraform(this._tapeDriveType),
+      activation_key: cdktn.stringToTerraform(this._activationKey),
+      average_download_rate_limit_in_bits_per_sec: cdktn.numberToTerraform(this._averageDownloadRateLimitInBitsPerSec),
+      average_upload_rate_limit_in_bits_per_sec: cdktn.numberToTerraform(this._averageUploadRateLimitInBitsPerSec),
+      cloudwatch_log_group_arn: cdktn.stringToTerraform(this._cloudwatchLogGroupArn),
+      gateway_ip_address: cdktn.stringToTerraform(this._gatewayIpAddress),
+      gateway_name: cdktn.stringToTerraform(this._gatewayName),
+      gateway_timezone: cdktn.stringToTerraform(this._gatewayTimezone),
+      gateway_type: cdktn.stringToTerraform(this._gatewayType),
+      gateway_vpc_endpoint: cdktn.stringToTerraform(this._gatewayVpcEndpoint),
+      id: cdktn.stringToTerraform(this._id),
+      medium_changer_type: cdktn.stringToTerraform(this._mediumChangerType),
+      region: cdktn.stringToTerraform(this._region),
+      smb_file_share_visibility: cdktn.booleanToTerraform(this._smbFileShareVisibility),
+      smb_guest_password: cdktn.stringToTerraform(this._smbGuestPassword),
+      smb_security_strategy: cdktn.stringToTerraform(this._smbSecurityStrategy),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      tape_drive_type: cdktn.stringToTerraform(this._tapeDriveType),
       maintenance_start_time: storagegatewayGatewayMaintenanceStartTimeToTerraform(this._maintenanceStartTime.internalValue),
       smb_active_directory_settings: storagegatewayGatewaySmbActiveDirectorySettingsToTerraform(this._smbActiveDirectorySettings.internalValue),
       timeouts: storagegatewayGatewayTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1175,109 +1175,109 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       activation_key: {
-        value: cdktf.stringToHclTerraform(this._activationKey),
+        value: cdktn.stringToHclTerraform(this._activationKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       average_download_rate_limit_in_bits_per_sec: {
-        value: cdktf.numberToHclTerraform(this._averageDownloadRateLimitInBitsPerSec),
+        value: cdktn.numberToHclTerraform(this._averageDownloadRateLimitInBitsPerSec),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       average_upload_rate_limit_in_bits_per_sec: {
-        value: cdktf.numberToHclTerraform(this._averageUploadRateLimitInBitsPerSec),
+        value: cdktn.numberToHclTerraform(this._averageUploadRateLimitInBitsPerSec),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       cloudwatch_log_group_arn: {
-        value: cdktf.stringToHclTerraform(this._cloudwatchLogGroupArn),
+        value: cdktn.stringToHclTerraform(this._cloudwatchLogGroupArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_ip_address: {
-        value: cdktf.stringToHclTerraform(this._gatewayIpAddress),
+        value: cdktn.stringToHclTerraform(this._gatewayIpAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_name: {
-        value: cdktf.stringToHclTerraform(this._gatewayName),
+        value: cdktn.stringToHclTerraform(this._gatewayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_timezone: {
-        value: cdktf.stringToHclTerraform(this._gatewayTimezone),
+        value: cdktn.stringToHclTerraform(this._gatewayTimezone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_type: {
-        value: cdktf.stringToHclTerraform(this._gatewayType),
+        value: cdktn.stringToHclTerraform(this._gatewayType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_vpc_endpoint: {
-        value: cdktf.stringToHclTerraform(this._gatewayVpcEndpoint),
+        value: cdktn.stringToHclTerraform(this._gatewayVpcEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       medium_changer_type: {
-        value: cdktf.stringToHclTerraform(this._mediumChangerType),
+        value: cdktn.stringToHclTerraform(this._mediumChangerType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       smb_file_share_visibility: {
-        value: cdktf.booleanToHclTerraform(this._smbFileShareVisibility),
+        value: cdktn.booleanToHclTerraform(this._smbFileShareVisibility),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       smb_guest_password: {
-        value: cdktf.stringToHclTerraform(this._smbGuestPassword),
+        value: cdktn.stringToHclTerraform(this._smbGuestPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       smb_security_strategy: {
-        value: cdktf.stringToHclTerraform(this._smbSecurityStrategy),
+        value: cdktn.stringToHclTerraform(this._smbSecurityStrategy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tape_drive_type: {
-        value: cdktf.stringToHclTerraform(this._tapeDriveType),
+        value: cdktn.stringToHclTerraform(this._tapeDriveType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

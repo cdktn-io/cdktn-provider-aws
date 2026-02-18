@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsmMaintenanceWindowConfig extends cdktf.TerraformMetaArguments {
+export interface SsmMaintenanceWindowConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window#allow_unassociated_targets SsmMaintenanceWindow#allow_unassociated_targets}
   */
-  readonly allowUnassociatedTargets?: boolean | cdktf.IResolvable;
+  readonly allowUnassociatedTargets?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window#cutoff SsmMaintenanceWindow#cutoff}
   */
@@ -31,7 +31,7 @@ export interface SsmMaintenanceWindowConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window#enabled SsmMaintenanceWindow#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window#end_date SsmMaintenanceWindow#end_date}
   */
@@ -82,7 +82,7 @@ export interface SsmMaintenanceWindowConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window aws_ssm_maintenance_window}
 */
-export class SsmMaintenanceWindow extends cdktf.TerraformResource {
+export class SsmMaintenanceWindow extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -93,14 +93,14 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsmMaintenanceWindow resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsmMaintenanceWindow resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmMaintenanceWindow to import
   * @param importFromId The id of the existing SsmMaintenanceWindow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmMaintenanceWindow to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_maintenance_window", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_maintenance_window", importId: importFromId, provider });
       }
 
   // ===========
@@ -152,11 +152,11 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
   // ==========
 
   // allow_unassociated_targets - computed: false, optional: true, required: false
-  private _allowUnassociatedTargets?: boolean | cdktf.IResolvable; 
+  private _allowUnassociatedTargets?: boolean | cdktn.IResolvable; 
   public get allowUnassociatedTargets() {
     return this.getBooleanAttribute('allow_unassociated_targets');
   }
-  public set allowUnassociatedTargets(value: boolean | cdktf.IResolvable) {
+  public set allowUnassociatedTargets(value: boolean | cdktn.IResolvable) {
     this._allowUnassociatedTargets = value;
   }
   public resetAllowUnassociatedTargets() {
@@ -210,11 +210,11 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -385,112 +385,112 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_unassociated_targets: cdktf.booleanToTerraform(this._allowUnassociatedTargets),
-      cutoff: cdktf.numberToTerraform(this._cutoff),
-      description: cdktf.stringToTerraform(this._description),
-      duration: cdktf.numberToTerraform(this._duration),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      end_date: cdktf.stringToTerraform(this._endDate),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      schedule: cdktf.stringToTerraform(this._schedule),
-      schedule_offset: cdktf.numberToTerraform(this._scheduleOffset),
-      schedule_timezone: cdktf.stringToTerraform(this._scheduleTimezone),
-      start_date: cdktf.stringToTerraform(this._startDate),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      allow_unassociated_targets: cdktn.booleanToTerraform(this._allowUnassociatedTargets),
+      cutoff: cdktn.numberToTerraform(this._cutoff),
+      description: cdktn.stringToTerraform(this._description),
+      duration: cdktn.numberToTerraform(this._duration),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      end_date: cdktn.stringToTerraform(this._endDate),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      schedule: cdktn.stringToTerraform(this._schedule),
+      schedule_offset: cdktn.numberToTerraform(this._scheduleOffset),
+      schedule_timezone: cdktn.stringToTerraform(this._scheduleTimezone),
+      start_date: cdktn.stringToTerraform(this._startDate),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_unassociated_targets: {
-        value: cdktf.booleanToHclTerraform(this._allowUnassociatedTargets),
+        value: cdktn.booleanToHclTerraform(this._allowUnassociatedTargets),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cutoff: {
-        value: cdktf.numberToHclTerraform(this._cutoff),
+        value: cdktn.numberToHclTerraform(this._cutoff),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       duration: {
-        value: cdktf.numberToHclTerraform(this._duration),
+        value: cdktn.numberToHclTerraform(this._duration),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       end_date: {
-        value: cdktf.stringToHclTerraform(this._endDate),
+        value: cdktn.stringToHclTerraform(this._endDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schedule: {
-        value: cdktf.stringToHclTerraform(this._schedule),
+        value: cdktn.stringToHclTerraform(this._schedule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schedule_offset: {
-        value: cdktf.numberToHclTerraform(this._scheduleOffset),
+        value: cdktn.numberToHclTerraform(this._scheduleOffset),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       schedule_timezone: {
-        value: cdktf.stringToHclTerraform(this._scheduleTimezone),
+        value: cdktn.stringToHclTerraform(this._scheduleTimezone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_date: {
-        value: cdktf.stringToHclTerraform(this._startDate),
+        value: cdktn.stringToHclTerraform(this._startDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

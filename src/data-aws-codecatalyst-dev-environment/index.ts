@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsCodecatalystDevEnvironmentConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCodecatalystDevEnvironmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/codecatalyst_dev_environment#alias DataAwsCodecatalystDevEnvironment#alias}
   */
@@ -54,14 +54,14 @@ export interface DataAwsCodecatalystDevEnvironmentConfig extends cdktf.Terraform
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/codecatalyst_dev_environment#repositories DataAwsCodecatalystDevEnvironment#repositories}
   */
-  readonly repositories?: DataAwsCodecatalystDevEnvironmentRepositories[] | cdktf.IResolvable;
+  readonly repositories?: DataAwsCodecatalystDevEnvironmentRepositories[] | cdktn.IResolvable;
 }
 export interface DataAwsCodecatalystDevEnvironmentIdes {
 }
 
 export function dataAwsCodecatalystDevEnvironmentIdesToTerraform(struct?: DataAwsCodecatalystDevEnvironmentIdes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -70,8 +70,8 @@ export function dataAwsCodecatalystDevEnvironmentIdesToTerraform(struct?: DataAw
 
 
 export function dataAwsCodecatalystDevEnvironmentIdesToHclTerraform(struct?: DataAwsCodecatalystDevEnvironmentIdes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -79,7 +79,7 @@ export function dataAwsCodecatalystDevEnvironmentIdesToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataAwsCodecatalystDevEnvironmentIdesOutputReference extends cdktf.ComplexObject {
+export class DataAwsCodecatalystDevEnvironmentIdesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -88,7 +88,7 @@ export class DataAwsCodecatalystDevEnvironmentIdesOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -118,14 +118,14 @@ export class DataAwsCodecatalystDevEnvironmentIdesOutputReference extends cdktf.
   }
 }
 
-export class DataAwsCodecatalystDevEnvironmentIdesList extends cdktf.ComplexList {
+export class DataAwsCodecatalystDevEnvironmentIdesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -140,8 +140,8 @@ export interface DataAwsCodecatalystDevEnvironmentPersistentStorage {
 }
 
 export function dataAwsCodecatalystDevEnvironmentPersistentStorageToTerraform(struct?: DataAwsCodecatalystDevEnvironmentPersistentStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -150,8 +150,8 @@ export function dataAwsCodecatalystDevEnvironmentPersistentStorageToTerraform(st
 
 
 export function dataAwsCodecatalystDevEnvironmentPersistentStorageToHclTerraform(struct?: DataAwsCodecatalystDevEnvironmentPersistentStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -159,7 +159,7 @@ export function dataAwsCodecatalystDevEnvironmentPersistentStorageToHclTerraform
   return attrs;
 }
 
-export class DataAwsCodecatalystDevEnvironmentPersistentStorageOutputReference extends cdktf.ComplexObject {
+export class DataAwsCodecatalystDevEnvironmentPersistentStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -168,7 +168,7 @@ export class DataAwsCodecatalystDevEnvironmentPersistentStorageOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -193,14 +193,14 @@ export class DataAwsCodecatalystDevEnvironmentPersistentStorageOutputReference e
   }
 }
 
-export class DataAwsCodecatalystDevEnvironmentPersistentStorageList extends cdktf.ComplexList {
+export class DataAwsCodecatalystDevEnvironmentPersistentStorageList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -214,9 +214,9 @@ export class DataAwsCodecatalystDevEnvironmentPersistentStorageList extends cdkt
 export interface DataAwsCodecatalystDevEnvironmentRepositories {
 }
 
-export function dataAwsCodecatalystDevEnvironmentRepositoriesToTerraform(struct?: DataAwsCodecatalystDevEnvironmentRepositories | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsCodecatalystDevEnvironmentRepositoriesToTerraform(struct?: DataAwsCodecatalystDevEnvironmentRepositories | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -224,9 +224,9 @@ export function dataAwsCodecatalystDevEnvironmentRepositoriesToTerraform(struct?
 }
 
 
-export function dataAwsCodecatalystDevEnvironmentRepositoriesToHclTerraform(struct?: DataAwsCodecatalystDevEnvironmentRepositories | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsCodecatalystDevEnvironmentRepositoriesToHclTerraform(struct?: DataAwsCodecatalystDevEnvironmentRepositories | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -234,9 +234,9 @@ export function dataAwsCodecatalystDevEnvironmentRepositoriesToHclTerraform(stru
   return attrs;
 }
 
-export class DataAwsCodecatalystDevEnvironmentRepositoriesOutputReference extends cdktf.ComplexObject {
+export class DataAwsCodecatalystDevEnvironmentRepositoriesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -244,11 +244,11 @@ export class DataAwsCodecatalystDevEnvironmentRepositoriesOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsCodecatalystDevEnvironmentRepositories | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsCodecatalystDevEnvironmentRepositories | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -257,12 +257,12 @@ export class DataAwsCodecatalystDevEnvironmentRepositoriesOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsCodecatalystDevEnvironmentRepositories | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsCodecatalystDevEnvironmentRepositories | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -283,15 +283,15 @@ export class DataAwsCodecatalystDevEnvironmentRepositoriesOutputReference extend
   }
 }
 
-export class DataAwsCodecatalystDevEnvironmentRepositoriesList extends cdktf.ComplexList {
-  public internalValue? : DataAwsCodecatalystDevEnvironmentRepositories[] | cdktf.IResolvable
+export class DataAwsCodecatalystDevEnvironmentRepositoriesList extends cdktn.ComplexList {
+  public internalValue? : DataAwsCodecatalystDevEnvironmentRepositories[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -306,7 +306,7 @@ export class DataAwsCodecatalystDevEnvironmentRepositoriesList extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/codecatalyst_dev_environment aws_codecatalyst_dev_environment}
 */
-export class DataAwsCodecatalystDevEnvironment extends cdktf.TerraformDataSource {
+export class DataAwsCodecatalystDevEnvironment extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -317,14 +317,14 @@ export class DataAwsCodecatalystDevEnvironment extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsCodecatalystDevEnvironment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsCodecatalystDevEnvironment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCodecatalystDevEnvironment to import
   * @param importFromId The id of the existing DataAwsCodecatalystDevEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/codecatalyst_dev_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCodecatalystDevEnvironment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_codecatalyst_dev_environment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_codecatalyst_dev_environment", importId: importFromId, provider });
       }
 
   // ===========
@@ -530,7 +530,7 @@ export class DataAwsCodecatalystDevEnvironment extends cdktf.TerraformDataSource
   public get repositories() {
     return this._repositories;
   }
-  public putRepositories(value: DataAwsCodecatalystDevEnvironmentRepositories[] | cdktf.IResolvable) {
+  public putRepositories(value: DataAwsCodecatalystDevEnvironmentRepositories[] | cdktn.IResolvable) {
     this._repositories.internalValue = value;
   }
   public resetRepositories() {
@@ -547,70 +547,70 @@ export class DataAwsCodecatalystDevEnvironment extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias: cdktf.stringToTerraform(this._alias),
-      creator_id: cdktf.stringToTerraform(this._creatorId),
-      env_id: cdktf.stringToTerraform(this._envId),
-      id: cdktf.stringToTerraform(this._id),
-      project_name: cdktf.stringToTerraform(this._projectName),
-      region: cdktf.stringToTerraform(this._region),
-      space_name: cdktf.stringToTerraform(this._spaceName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      repositories: cdktf.listMapper(dataAwsCodecatalystDevEnvironmentRepositoriesToTerraform, true)(this._repositories.internalValue),
+      alias: cdktn.stringToTerraform(this._alias),
+      creator_id: cdktn.stringToTerraform(this._creatorId),
+      env_id: cdktn.stringToTerraform(this._envId),
+      id: cdktn.stringToTerraform(this._id),
+      project_name: cdktn.stringToTerraform(this._projectName),
+      region: cdktn.stringToTerraform(this._region),
+      space_name: cdktn.stringToTerraform(this._spaceName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      repositories: cdktn.listMapper(dataAwsCodecatalystDevEnvironmentRepositoriesToTerraform, true)(this._repositories.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       creator_id: {
-        value: cdktf.stringToHclTerraform(this._creatorId),
+        value: cdktn.stringToHclTerraform(this._creatorId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       env_id: {
-        value: cdktf.stringToHclTerraform(this._envId),
+        value: cdktn.stringToHclTerraform(this._envId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_name: {
-        value: cdktf.stringToHclTerraform(this._projectName),
+        value: cdktn.stringToHclTerraform(this._projectName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       space_name: {
-        value: cdktf.stringToHclTerraform(this._spaceName),
+        value: cdktn.stringToHclTerraform(this._spaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       repositories: {
-        value: cdktf.listMapperHcl(dataAwsCodecatalystDevEnvironmentRepositoriesToHclTerraform, true)(this._repositories.internalValue),
+        value: cdktn.listMapperHcl(dataAwsCodecatalystDevEnvironmentRepositoriesToHclTerraform, true)(this._repositories.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsCodecatalystDevEnvironmentRepositoriesList",

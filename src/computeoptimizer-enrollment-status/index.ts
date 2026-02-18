@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeoptimizerEnrollmentStatusConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeoptimizerEnrollmentStatusConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/computeoptimizer_enrollment_status#include_member_accounts ComputeoptimizerEnrollmentStatus#include_member_accounts}
   */
-  readonly includeMemberAccounts?: boolean | cdktf.IResolvable;
+  readonly includeMemberAccounts?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -48,32 +48,32 @@ export interface ComputeoptimizerEnrollmentStatusTimeouts {
   readonly update?: string;
 }
 
-export function computeoptimizerEnrollmentStatusTimeoutsToTerraform(struct?: ComputeoptimizerEnrollmentStatusTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeoptimizerEnrollmentStatusTimeoutsToTerraform(struct?: ComputeoptimizerEnrollmentStatusTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeoptimizerEnrollmentStatusTimeoutsToHclTerraform(struct?: ComputeoptimizerEnrollmentStatusTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeoptimizerEnrollmentStatusTimeoutsToHclTerraform(struct?: ComputeoptimizerEnrollmentStatusTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -84,19 +84,19 @@ export function computeoptimizerEnrollmentStatusTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeoptimizerEnrollmentStatusTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeoptimizerEnrollmentStatusTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeoptimizerEnrollmentStatusTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeoptimizerEnrollmentStatusTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -113,14 +113,14 @@ export class ComputeoptimizerEnrollmentStatusTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeoptimizerEnrollmentStatusTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeoptimizerEnrollmentStatusTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -168,7 +168,7 @@ export class ComputeoptimizerEnrollmentStatusTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/computeoptimizer_enrollment_status aws_computeoptimizer_enrollment_status}
 */
-export class ComputeoptimizerEnrollmentStatus extends cdktf.TerraformResource {
+export class ComputeoptimizerEnrollmentStatus extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -179,14 +179,14 @@ export class ComputeoptimizerEnrollmentStatus extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeoptimizerEnrollmentStatus resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeoptimizerEnrollmentStatus resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeoptimizerEnrollmentStatus to import
   * @param importFromId The id of the existing ComputeoptimizerEnrollmentStatus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/computeoptimizer_enrollment_status#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeoptimizerEnrollmentStatus to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_computeoptimizer_enrollment_status", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_computeoptimizer_enrollment_status", importId: importFromId, provider });
       }
 
   // ===========
@@ -232,11 +232,11 @@ export class ComputeoptimizerEnrollmentStatus extends cdktf.TerraformResource {
   }
 
   // include_member_accounts - computed: true, optional: true, required: false
-  private _includeMemberAccounts?: boolean | cdktf.IResolvable; 
+  private _includeMemberAccounts?: boolean | cdktn.IResolvable; 
   public get includeMemberAccounts() {
     return this.getBooleanAttribute('include_member_accounts');
   }
-  public set includeMemberAccounts(value: boolean | cdktf.IResolvable) {
+  public set includeMemberAccounts(value: boolean | cdktn.IResolvable) {
     this._includeMemberAccounts = value;
   }
   public resetIncludeMemberAccounts() {
@@ -303,9 +303,9 @@ export class ComputeoptimizerEnrollmentStatus extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      include_member_accounts: cdktf.booleanToTerraform(this._includeMemberAccounts),
-      region: cdktf.stringToTerraform(this._region),
-      status: cdktf.stringToTerraform(this._status),
+      include_member_accounts: cdktn.booleanToTerraform(this._includeMemberAccounts),
+      region: cdktn.stringToTerraform(this._region),
+      status: cdktn.stringToTerraform(this._status),
       timeouts: computeoptimizerEnrollmentStatusTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -313,19 +313,19 @@ export class ComputeoptimizerEnrollmentStatus extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       include_member_accounts: {
-        value: cdktf.booleanToHclTerraform(this._includeMemberAccounts),
+        value: cdktn.booleanToHclTerraform(this._includeMemberAccounts),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SagemakerWorkteamConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerWorkteamConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_workteam#description SagemakerWorkteam#description}
   */
@@ -50,7 +50,7 @@ export interface SagemakerWorkteamConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_workteam#member_definition SagemakerWorkteam#member_definition}
   */
-  readonly memberDefinition: SagemakerWorkteamMemberDefinition[] | cdktf.IResolvable;
+  readonly memberDefinition: SagemakerWorkteamMemberDefinition[] | cdktn.IResolvable;
   /**
   * notification_configuration block
   *
@@ -80,38 +80,38 @@ export interface SagemakerWorkteamMemberDefinitionCognitoMemberDefinition {
 }
 
 export function sagemakerWorkteamMemberDefinitionCognitoMemberDefinitionToTerraform(struct?: SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference | SagemakerWorkteamMemberDefinitionCognitoMemberDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    user_group: cdktf.stringToTerraform(struct!.userGroup),
-    user_pool: cdktf.stringToTerraform(struct!.userPool),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    user_group: cdktn.stringToTerraform(struct!.userGroup),
+    user_pool: cdktn.stringToTerraform(struct!.userPool),
   }
 }
 
 
 export function sagemakerWorkteamMemberDefinitionCognitoMemberDefinitionToHclTerraform(struct?: SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference | SagemakerWorkteamMemberDefinitionCognitoMemberDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_group: {
-      value: cdktf.stringToHclTerraform(struct!.userGroup),
+      value: cdktn.stringToHclTerraform(struct!.userGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_pool: {
-      value: cdktf.stringToHclTerraform(struct!.userPool),
+      value: cdktn.stringToHclTerraform(struct!.userPool),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -122,14 +122,14 @@ export function sagemakerWorkteamMemberDefinitionCognitoMemberDefinitionToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference extends cdktf.ComplexObject {
+export class SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -213,24 +213,24 @@ export interface SagemakerWorkteamMemberDefinitionOidcMemberDefinition {
 }
 
 export function sagemakerWorkteamMemberDefinitionOidcMemberDefinitionToTerraform(struct?: SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference | SagemakerWorkteamMemberDefinitionOidcMemberDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groups),
+    groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groups),
   }
 }
 
 
 export function sagemakerWorkteamMemberDefinitionOidcMemberDefinitionToHclTerraform(struct?: SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference | SagemakerWorkteamMemberDefinitionOidcMemberDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.groups),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -241,14 +241,14 @@ export function sagemakerWorkteamMemberDefinitionOidcMemberDefinitionToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference extends cdktf.ComplexObject {
+export class SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -276,7 +276,7 @@ export class SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReferenc
   // groups - computed: false, optional: false, required: true
   private _groups?: string[]; 
   public get groups() {
-    return cdktf.Fn.tolist(this.getListAttribute('groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('groups'));
   }
   public set groups(value: string[]) {
     this._groups = value;
@@ -301,9 +301,9 @@ export interface SagemakerWorkteamMemberDefinition {
   readonly oidcMemberDefinition?: SagemakerWorkteamMemberDefinitionOidcMemberDefinition;
 }
 
-export function sagemakerWorkteamMemberDefinitionToTerraform(struct?: SagemakerWorkteamMemberDefinition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerWorkteamMemberDefinitionToTerraform(struct?: SagemakerWorkteamMemberDefinition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -313,9 +313,9 @@ export function sagemakerWorkteamMemberDefinitionToTerraform(struct?: SagemakerW
 }
 
 
-export function sagemakerWorkteamMemberDefinitionToHclTerraform(struct?: SagemakerWorkteamMemberDefinition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerWorkteamMemberDefinitionToHclTerraform(struct?: SagemakerWorkteamMemberDefinition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -337,9 +337,9 @@ export function sagemakerWorkteamMemberDefinitionToHclTerraform(struct?: Sagemak
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerWorkteamMemberDefinitionOutputReference extends cdktf.ComplexObject {
+export class SagemakerWorkteamMemberDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -347,11 +347,11 @@ export class SagemakerWorkteamMemberDefinitionOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerWorkteamMemberDefinition | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerWorkteamMemberDefinition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -368,14 +368,14 @@ export class SagemakerWorkteamMemberDefinitionOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerWorkteamMemberDefinition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerWorkteamMemberDefinition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cognitoMemberDefinition.internalValue = undefined;
       this._oidcMemberDefinition.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -420,15 +420,15 @@ export class SagemakerWorkteamMemberDefinitionOutputReference extends cdktf.Comp
   }
 }
 
-export class SagemakerWorkteamMemberDefinitionList extends cdktf.ComplexList {
-  public internalValue? : SagemakerWorkteamMemberDefinition[] | cdktf.IResolvable
+export class SagemakerWorkteamMemberDefinitionList extends cdktn.ComplexList {
+  public internalValue? : SagemakerWorkteamMemberDefinition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -447,24 +447,24 @@ export interface SagemakerWorkteamNotificationConfiguration {
 }
 
 export function sagemakerWorkteamNotificationConfigurationToTerraform(struct?: SagemakerWorkteamNotificationConfigurationOutputReference | SagemakerWorkteamNotificationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    notification_topic_arn: cdktf.stringToTerraform(struct!.notificationTopicArn),
+    notification_topic_arn: cdktn.stringToTerraform(struct!.notificationTopicArn),
   }
 }
 
 
 export function sagemakerWorkteamNotificationConfigurationToHclTerraform(struct?: SagemakerWorkteamNotificationConfigurationOutputReference | SagemakerWorkteamNotificationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     notification_topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.notificationTopicArn),
+      value: cdktn.stringToHclTerraform(struct!.notificationTopicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -475,14 +475,14 @@ export function sagemakerWorkteamNotificationConfigurationToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerWorkteamNotificationConfigurationOutputReference extends cdktf.ComplexObject {
+export class SagemakerWorkteamNotificationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -535,31 +535,31 @@ export interface SagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyCon
 }
 
 export function sagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraintsToTerraform(struct?: SagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraintsOutputReference | SagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source_ip: cdktf.stringToTerraform(struct!.sourceIp),
-    vpc_source_ip: cdktf.stringToTerraform(struct!.vpcSourceIp),
+    source_ip: cdktn.stringToTerraform(struct!.sourceIp),
+    vpc_source_ip: cdktn.stringToTerraform(struct!.vpcSourceIp),
   }
 }
 
 
 export function sagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraintsToHclTerraform(struct?: SagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraintsOutputReference | SagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source_ip: {
-      value: cdktf.stringToHclTerraform(struct!.sourceIp),
+      value: cdktn.stringToHclTerraform(struct!.sourceIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vpc_source_ip: {
-      value: cdktf.stringToHclTerraform(struct!.vpcSourceIp),
+      value: cdktn.stringToHclTerraform(struct!.vpcSourceIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -570,14 +570,14 @@ export function sagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyCons
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraintsOutputReference extends cdktf.ComplexObject {
+export class SagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraintsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -650,8 +650,8 @@ export interface SagemakerWorkteamWorkerAccessConfigurationS3Presign {
 }
 
 export function sagemakerWorkteamWorkerAccessConfigurationS3PresignToTerraform(struct?: SagemakerWorkteamWorkerAccessConfigurationS3PresignOutputReference | SagemakerWorkteamWorkerAccessConfigurationS3Presign): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -661,8 +661,8 @@ export function sagemakerWorkteamWorkerAccessConfigurationS3PresignToTerraform(s
 
 
 export function sagemakerWorkteamWorkerAccessConfigurationS3PresignToHclTerraform(struct?: SagemakerWorkteamWorkerAccessConfigurationS3PresignOutputReference | SagemakerWorkteamWorkerAccessConfigurationS3Presign): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -678,14 +678,14 @@ export function sagemakerWorkteamWorkerAccessConfigurationS3PresignToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerWorkteamWorkerAccessConfigurationS3PresignOutputReference extends cdktf.ComplexObject {
+export class SagemakerWorkteamWorkerAccessConfigurationS3PresignOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -736,8 +736,8 @@ export interface SagemakerWorkteamWorkerAccessConfiguration {
 }
 
 export function sagemakerWorkteamWorkerAccessConfigurationToTerraform(struct?: SagemakerWorkteamWorkerAccessConfigurationOutputReference | SagemakerWorkteamWorkerAccessConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -747,8 +747,8 @@ export function sagemakerWorkteamWorkerAccessConfigurationToTerraform(struct?: S
 
 
 export function sagemakerWorkteamWorkerAccessConfigurationToHclTerraform(struct?: SagemakerWorkteamWorkerAccessConfigurationOutputReference | SagemakerWorkteamWorkerAccessConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -764,14 +764,14 @@ export function sagemakerWorkteamWorkerAccessConfigurationToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerWorkteamWorkerAccessConfigurationOutputReference extends cdktf.ComplexObject {
+export class SagemakerWorkteamWorkerAccessConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -816,7 +816,7 @@ export class SagemakerWorkteamWorkerAccessConfigurationOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_workteam aws_sagemaker_workteam}
 */
-export class SagemakerWorkteam extends cdktf.TerraformResource {
+export class SagemakerWorkteam extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -827,14 +827,14 @@ export class SagemakerWorkteam extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SagemakerWorkteam resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SagemakerWorkteam resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerWorkteam to import
   * @param importFromId The id of the existing SagemakerWorkteam that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_workteam#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerWorkteam to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_workteam", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_workteam", importId: importFromId, provider });
       }
 
   // ===========
@@ -1001,7 +1001,7 @@ export class SagemakerWorkteam extends cdktf.TerraformResource {
   public get memberDefinition() {
     return this._memberDefinition;
   }
-  public putMemberDefinition(value: SagemakerWorkteamMemberDefinition[] | cdktf.IResolvable) {
+  public putMemberDefinition(value: SagemakerWorkteamMemberDefinition[] | cdktn.IResolvable) {
     this._memberDefinition.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1047,14 +1047,14 @@ export class SagemakerWorkteam extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      workforce_name: cdktf.stringToTerraform(this._workforceName),
-      workteam_name: cdktf.stringToTerraform(this._workteamName),
-      member_definition: cdktf.listMapper(sagemakerWorkteamMemberDefinitionToTerraform, true)(this._memberDefinition.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      workforce_name: cdktn.stringToTerraform(this._workforceName),
+      workteam_name: cdktn.stringToTerraform(this._workteamName),
+      member_definition: cdktn.listMapper(sagemakerWorkteamMemberDefinitionToTerraform, true)(this._memberDefinition.internalValue),
       notification_configuration: sagemakerWorkteamNotificationConfigurationToTerraform(this._notificationConfiguration.internalValue),
       worker_access_configuration: sagemakerWorkteamWorkerAccessConfigurationToTerraform(this._workerAccessConfiguration.internalValue),
     };
@@ -1063,49 +1063,49 @@ export class SagemakerWorkteam extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       workforce_name: {
-        value: cdktf.stringToHclTerraform(this._workforceName),
+        value: cdktn.stringToHclTerraform(this._workforceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workteam_name: {
-        value: cdktf.stringToHclTerraform(this._workteamName),
+        value: cdktn.stringToHclTerraform(this._workteamName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       member_definition: {
-        value: cdktf.listMapperHcl(sagemakerWorkteamMemberDefinitionToHclTerraform, true)(this._memberDefinition.internalValue),
+        value: cdktn.listMapperHcl(sagemakerWorkteamMemberDefinitionToHclTerraform, true)(this._memberDefinition.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SagemakerWorkteamMemberDefinitionList",

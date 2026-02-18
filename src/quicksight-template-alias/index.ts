@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QuicksightTemplateAliasConfig extends cdktf.TerraformMetaArguments {
+export interface QuicksightTemplateAliasConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_template_alias#alias_name QuicksightTemplateAlias#alias_name}
   */
@@ -39,7 +39,7 @@ export interface QuicksightTemplateAliasConfig extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_template_alias aws_quicksight_template_alias}
 */
-export class QuicksightTemplateAlias extends cdktf.TerraformResource {
+export class QuicksightTemplateAlias extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -50,14 +50,14 @@ export class QuicksightTemplateAlias extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QuicksightTemplateAlias resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QuicksightTemplateAlias resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightTemplateAlias to import
   * @param importFromId The id of the existing QuicksightTemplateAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_template_alias#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightTemplateAlias to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_template_alias", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_template_alias", importId: importFromId, provider });
       }
 
   // ===========
@@ -185,42 +185,42 @@ export class QuicksightTemplateAlias extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias_name: cdktf.stringToTerraform(this._aliasName),
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      region: cdktf.stringToTerraform(this._region),
-      template_id: cdktf.stringToTerraform(this._templateId),
-      template_version_number: cdktf.numberToTerraform(this._templateVersionNumber),
+      alias_name: cdktn.stringToTerraform(this._aliasName),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      region: cdktn.stringToTerraform(this._region),
+      template_id: cdktn.stringToTerraform(this._templateId),
+      template_version_number: cdktn.numberToTerraform(this._templateVersionNumber),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias_name: {
-        value: cdktf.stringToHclTerraform(this._aliasName),
+        value: cdktn.stringToHclTerraform(this._aliasName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       template_id: {
-        value: cdktf.stringToHclTerraform(this._templateId),
+        value: cdktn.stringToHclTerraform(this._templateId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       template_version_number: {
-        value: cdktf.numberToHclTerraform(this._templateVersionNumber),
+        value: cdktn.numberToHclTerraform(this._templateVersionNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

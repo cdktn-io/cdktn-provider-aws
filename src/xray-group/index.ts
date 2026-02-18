@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface XrayGroupConfig extends cdktf.TerraformMetaArguments {
+export interface XrayGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/xray_group#filter_expression XrayGroup#filter_expression}
   */
@@ -52,39 +52,39 @@ export interface XrayGroupInsightsConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/xray_group#insights_enabled XrayGroup#insights_enabled}
   */
-  readonly insightsEnabled: boolean | cdktf.IResolvable;
+  readonly insightsEnabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/xray_group#notifications_enabled XrayGroup#notifications_enabled}
   */
-  readonly notificationsEnabled?: boolean | cdktf.IResolvable;
+  readonly notificationsEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function xrayGroupInsightsConfigurationToTerraform(struct?: XrayGroupInsightsConfigurationOutputReference | XrayGroupInsightsConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    insights_enabled: cdktf.booleanToTerraform(struct!.insightsEnabled),
-    notifications_enabled: cdktf.booleanToTerraform(struct!.notificationsEnabled),
+    insights_enabled: cdktn.booleanToTerraform(struct!.insightsEnabled),
+    notifications_enabled: cdktn.booleanToTerraform(struct!.notificationsEnabled),
   }
 }
 
 
 export function xrayGroupInsightsConfigurationToHclTerraform(struct?: XrayGroupInsightsConfigurationOutputReference | XrayGroupInsightsConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     insights_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.insightsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.insightsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     notifications_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.notificationsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.notificationsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -95,14 +95,14 @@ export function xrayGroupInsightsConfigurationToHclTerraform(struct?: XrayGroupI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class XrayGroupInsightsConfigurationOutputReference extends cdktf.ComplexObject {
+export class XrayGroupInsightsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -134,11 +134,11 @@ export class XrayGroupInsightsConfigurationOutputReference extends cdktf.Complex
   }
 
   // insights_enabled - computed: false, optional: false, required: true
-  private _insightsEnabled?: boolean | cdktf.IResolvable; 
+  private _insightsEnabled?: boolean | cdktn.IResolvable; 
   public get insightsEnabled() {
     return this.getBooleanAttribute('insights_enabled');
   }
-  public set insightsEnabled(value: boolean | cdktf.IResolvable) {
+  public set insightsEnabled(value: boolean | cdktn.IResolvable) {
     this._insightsEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -147,11 +147,11 @@ export class XrayGroupInsightsConfigurationOutputReference extends cdktf.Complex
   }
 
   // notifications_enabled - computed: true, optional: true, required: false
-  private _notificationsEnabled?: boolean | cdktf.IResolvable; 
+  private _notificationsEnabled?: boolean | cdktn.IResolvable; 
   public get notificationsEnabled() {
     return this.getBooleanAttribute('notifications_enabled');
   }
-  public set notificationsEnabled(value: boolean | cdktf.IResolvable) {
+  public set notificationsEnabled(value: boolean | cdktn.IResolvable) {
     this._notificationsEnabled = value;
   }
   public resetNotificationsEnabled() {
@@ -166,7 +166,7 @@ export class XrayGroupInsightsConfigurationOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/xray_group aws_xray_group}
 */
-export class XrayGroup extends cdktf.TerraformResource {
+export class XrayGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -177,14 +177,14 @@ export class XrayGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a XrayGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a XrayGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the XrayGroup to import
   * @param importFromId The id of the existing XrayGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/xray_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the XrayGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_xray_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_xray_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -344,12 +344,12 @@ export class XrayGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      filter_expression: cdktf.stringToTerraform(this._filterExpression),
-      group_name: cdktf.stringToTerraform(this._groupName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      filter_expression: cdktn.stringToTerraform(this._filterExpression),
+      group_name: cdktn.stringToTerraform(this._groupName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       insights_configuration: xrayGroupInsightsConfigurationToTerraform(this._insightsConfiguration.internalValue),
     };
   }
@@ -357,37 +357,37 @@ export class XrayGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       filter_expression: {
-        value: cdktf.stringToHclTerraform(this._filterExpression),
+        value: cdktn.stringToHclTerraform(this._filterExpression),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       group_name: {
-        value: cdktf.stringToHclTerraform(this._groupName),
+        value: cdktn.stringToHclTerraform(this._groupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

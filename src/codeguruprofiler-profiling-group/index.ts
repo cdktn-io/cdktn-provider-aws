@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CodeguruprofilerProfilingGroupConfig extends cdktf.TerraformMetaArguments {
+export interface CodeguruprofilerProfilingGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codeguruprofiler_profiling_group#compute_platform CodeguruprofilerProfilingGroup#compute_platform}
   */
@@ -35,34 +35,34 @@ export interface CodeguruprofilerProfilingGroupConfig extends cdktf.TerraformMet
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codeguruprofiler_profiling_group#agent_orchestration_config CodeguruprofilerProfilingGroup#agent_orchestration_config}
   */
-  readonly agentOrchestrationConfig?: CodeguruprofilerProfilingGroupAgentOrchestrationConfig[] | cdktf.IResolvable;
+  readonly agentOrchestrationConfig?: CodeguruprofilerProfilingGroupAgentOrchestrationConfig[] | cdktn.IResolvable;
 }
 export interface CodeguruprofilerProfilingGroupAgentOrchestrationConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codeguruprofiler_profiling_group#profiling_enabled CodeguruprofilerProfilingGroup#profiling_enabled}
   */
-  readonly profilingEnabled: boolean | cdktf.IResolvable;
+  readonly profilingEnabled: boolean | cdktn.IResolvable;
 }
 
-export function codeguruprofilerProfilingGroupAgentOrchestrationConfigToTerraform(struct?: CodeguruprofilerProfilingGroupAgentOrchestrationConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codeguruprofilerProfilingGroupAgentOrchestrationConfigToTerraform(struct?: CodeguruprofilerProfilingGroupAgentOrchestrationConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    profiling_enabled: cdktf.booleanToTerraform(struct!.profilingEnabled),
+    profiling_enabled: cdktn.booleanToTerraform(struct!.profilingEnabled),
   }
 }
 
 
-export function codeguruprofilerProfilingGroupAgentOrchestrationConfigToHclTerraform(struct?: CodeguruprofilerProfilingGroupAgentOrchestrationConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codeguruprofilerProfilingGroupAgentOrchestrationConfigToHclTerraform(struct?: CodeguruprofilerProfilingGroupAgentOrchestrationConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     profiling_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.profilingEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.profilingEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -73,9 +73,9 @@ export function codeguruprofilerProfilingGroupAgentOrchestrationConfigToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReference extends cdktf.ComplexObject {
+export class CodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -83,11 +83,11 @@ export class CodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodeguruprofilerProfilingGroupAgentOrchestrationConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): CodeguruprofilerProfilingGroupAgentOrchestrationConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -100,13 +100,13 @@ export class CodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodeguruprofilerProfilingGroupAgentOrchestrationConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodeguruprofilerProfilingGroupAgentOrchestrationConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._profilingEnabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -118,11 +118,11 @@ export class CodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReferen
   }
 
   // profiling_enabled - computed: false, optional: false, required: true
-  private _profilingEnabled?: boolean | cdktf.IResolvable; 
+  private _profilingEnabled?: boolean | cdktn.IResolvable; 
   public get profilingEnabled() {
     return this.getBooleanAttribute('profiling_enabled');
   }
-  public set profilingEnabled(value: boolean | cdktf.IResolvable) {
+  public set profilingEnabled(value: boolean | cdktn.IResolvable) {
     this._profilingEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -131,15 +131,15 @@ export class CodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReferen
   }
 }
 
-export class CodeguruprofilerProfilingGroupAgentOrchestrationConfigList extends cdktf.ComplexList {
-  public internalValue? : CodeguruprofilerProfilingGroupAgentOrchestrationConfig[] | cdktf.IResolvable
+export class CodeguruprofilerProfilingGroupAgentOrchestrationConfigList extends cdktn.ComplexList {
+  public internalValue? : CodeguruprofilerProfilingGroupAgentOrchestrationConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -154,7 +154,7 @@ export class CodeguruprofilerProfilingGroupAgentOrchestrationConfigList extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group}
 */
-export class CodeguruprofilerProfilingGroup extends cdktf.TerraformResource {
+export class CodeguruprofilerProfilingGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -165,14 +165,14 @@ export class CodeguruprofilerProfilingGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CodeguruprofilerProfilingGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CodeguruprofilerProfilingGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodeguruprofilerProfilingGroup to import
   * @param importFromId The id of the existing CodeguruprofilerProfilingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codeguruprofiler_profiling_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodeguruprofilerProfilingGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_codeguruprofiler_profiling_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_codeguruprofiler_profiling_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -285,7 +285,7 @@ export class CodeguruprofilerProfilingGroup extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -295,7 +295,7 @@ export class CodeguruprofilerProfilingGroup extends cdktf.TerraformResource {
   public get agentOrchestrationConfig() {
     return this._agentOrchestrationConfig;
   }
-  public putAgentOrchestrationConfig(value: CodeguruprofilerProfilingGroupAgentOrchestrationConfig[] | cdktf.IResolvable) {
+  public putAgentOrchestrationConfig(value: CodeguruprofilerProfilingGroupAgentOrchestrationConfig[] | cdktn.IResolvable) {
     this._agentOrchestrationConfig.internalValue = value;
   }
   public resetAgentOrchestrationConfig() {
@@ -312,42 +312,42 @@ export class CodeguruprofilerProfilingGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compute_platform: cdktf.stringToTerraform(this._computePlatform),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      agent_orchestration_config: cdktf.listMapper(codeguruprofilerProfilingGroupAgentOrchestrationConfigToTerraform, true)(this._agentOrchestrationConfig.internalValue),
+      compute_platform: cdktn.stringToTerraform(this._computePlatform),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      agent_orchestration_config: cdktn.listMapper(codeguruprofilerProfilingGroupAgentOrchestrationConfigToTerraform, true)(this._agentOrchestrationConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       compute_platform: {
-        value: cdktf.stringToHclTerraform(this._computePlatform),
+        value: cdktn.stringToHclTerraform(this._computePlatform),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       agent_orchestration_config: {
-        value: cdktf.listMapperHcl(codeguruprofilerProfilingGroupAgentOrchestrationConfigToHclTerraform, true)(this._agentOrchestrationConfig.internalValue),
+        value: cdktn.listMapperHcl(codeguruprofilerProfilingGroupAgentOrchestrationConfigToHclTerraform, true)(this._agentOrchestrationConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CodeguruprofilerProfilingGroupAgentOrchestrationConfigList",

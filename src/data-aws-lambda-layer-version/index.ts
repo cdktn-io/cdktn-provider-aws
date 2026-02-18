@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsLambdaLayerVersionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsLambdaLayerVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/lambda_layer_version#compatible_architecture DataAwsLambdaLayerVersion#compatible_architecture}
   */
@@ -46,7 +46,7 @@ export interface DataAwsLambdaLayerVersionConfig extends cdktf.TerraformMetaArgu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/lambda_layer_version aws_lambda_layer_version}
 */
-export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
+export class DataAwsLambdaLayerVersion extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsLambdaLayerVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsLambdaLayerVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLambdaLayerVersion to import
   * @param importFromId The id of the existing DataAwsLambdaLayerVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/lambda_layer_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLambdaLayerVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_layer_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_layer_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -134,7 +134,7 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
 
   // compatible_architectures - computed: true, optional: false, required: false
   public get compatibleArchitectures() {
-    return cdktf.Fn.tolist(this.getListAttribute('compatible_architectures'));
+    return cdktn.Fn.tolist(this.getListAttribute('compatible_architectures'));
   }
 
   // compatible_runtime - computed: false, optional: true, required: false
@@ -155,7 +155,7 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
 
   // compatible_runtimes - computed: true, optional: false, required: false
   public get compatibleRuntimes() {
-    return cdktf.Fn.tolist(this.getListAttribute('compatible_runtimes'));
+    return cdktn.Fn.tolist(this.getListAttribute('compatible_runtimes'));
   }
 
   // created_date - computed: true, optional: false, required: false
@@ -265,49 +265,49 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compatible_architecture: cdktf.stringToTerraform(this._compatibleArchitecture),
-      compatible_runtime: cdktf.stringToTerraform(this._compatibleRuntime),
-      id: cdktf.stringToTerraform(this._id),
-      layer_name: cdktf.stringToTerraform(this._layerName),
-      region: cdktf.stringToTerraform(this._region),
-      version: cdktf.numberToTerraform(this._version),
+      compatible_architecture: cdktn.stringToTerraform(this._compatibleArchitecture),
+      compatible_runtime: cdktn.stringToTerraform(this._compatibleRuntime),
+      id: cdktn.stringToTerraform(this._id),
+      layer_name: cdktn.stringToTerraform(this._layerName),
+      region: cdktn.stringToTerraform(this._region),
+      version: cdktn.numberToTerraform(this._version),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       compatible_architecture: {
-        value: cdktf.stringToHclTerraform(this._compatibleArchitecture),
+        value: cdktn.stringToHclTerraform(this._compatibleArchitecture),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       compatible_runtime: {
-        value: cdktf.stringToHclTerraform(this._compatibleRuntime),
+        value: cdktn.stringToHclTerraform(this._compatibleRuntime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       layer_name: {
-        value: cdktf.stringToHclTerraform(this._layerName),
+        value: cdktn.stringToHclTerraform(this._layerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.numberToHclTerraform(this._version),
+        value: cdktn.numberToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

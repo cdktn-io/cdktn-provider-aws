@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EcrRepositoryCreationTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface EcrRepositoryCreationTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_repository_creation_template#applied_for EcrRepositoryCreationTemplate#applied_for}
   */
@@ -62,13 +62,13 @@ export interface EcrRepositoryCreationTemplateConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_repository_creation_template#encryption_configuration EcrRepositoryCreationTemplate#encryption_configuration}
   */
-  readonly encryptionConfiguration?: EcrRepositoryCreationTemplateEncryptionConfiguration[] | cdktf.IResolvable;
+  readonly encryptionConfiguration?: EcrRepositoryCreationTemplateEncryptionConfiguration[] | cdktn.IResolvable;
   /**
   * image_tag_mutability_exclusion_filter block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_repository_creation_template#image_tag_mutability_exclusion_filter EcrRepositoryCreationTemplate#image_tag_mutability_exclusion_filter}
   */
-  readonly imageTagMutabilityExclusionFilter?: EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter[] | cdktf.IResolvable;
+  readonly imageTagMutabilityExclusionFilter?: EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter[] | cdktn.IResolvable;
 }
 export interface EcrRepositoryCreationTemplateEncryptionConfiguration {
   /**
@@ -81,32 +81,32 @@ export interface EcrRepositoryCreationTemplateEncryptionConfiguration {
   readonly kmsKey?: string;
 }
 
-export function ecrRepositoryCreationTemplateEncryptionConfigurationToTerraform(struct?: EcrRepositoryCreationTemplateEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrRepositoryCreationTemplateEncryptionConfigurationToTerraform(struct?: EcrRepositoryCreationTemplateEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    encryption_type: cdktf.stringToTerraform(struct!.encryptionType),
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
+    encryption_type: cdktn.stringToTerraform(struct!.encryptionType),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
   }
 }
 
 
-export function ecrRepositoryCreationTemplateEncryptionConfigurationToHclTerraform(struct?: EcrRepositoryCreationTemplateEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrRepositoryCreationTemplateEncryptionConfigurationToHclTerraform(struct?: EcrRepositoryCreationTemplateEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     encryption_type: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionType),
+      value: cdktn.stringToHclTerraform(struct!.encryptionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,9 +117,9 @@ export function ecrRepositoryCreationTemplateEncryptionConfigurationToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EcrRepositoryCreationTemplateEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class EcrRepositoryCreationTemplateEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -127,11 +127,11 @@ export class EcrRepositoryCreationTemplateEncryptionConfigurationOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EcrRepositoryCreationTemplateEncryptionConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): EcrRepositoryCreationTemplateEncryptionConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,14 +148,14 @@ export class EcrRepositoryCreationTemplateEncryptionConfigurationOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EcrRepositoryCreationTemplateEncryptionConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EcrRepositoryCreationTemplateEncryptionConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._encryptionType = undefined;
       this._kmsKey = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -200,15 +200,15 @@ export class EcrRepositoryCreationTemplateEncryptionConfigurationOutputReference
   }
 }
 
-export class EcrRepositoryCreationTemplateEncryptionConfigurationList extends cdktf.ComplexList {
-  public internalValue? : EcrRepositoryCreationTemplateEncryptionConfiguration[] | cdktf.IResolvable
+export class EcrRepositoryCreationTemplateEncryptionConfigurationList extends cdktn.ComplexList {
+  public internalValue? : EcrRepositoryCreationTemplateEncryptionConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -230,32 +230,32 @@ export interface EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter 
   readonly filterType: string;
 }
 
-export function ecrRepositoryCreationTemplateImageTagMutabilityExclusionFilterToTerraform(struct?: EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrRepositoryCreationTemplateImageTagMutabilityExclusionFilterToTerraform(struct?: EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter: cdktf.stringToTerraform(struct!.filter),
-    filter_type: cdktf.stringToTerraform(struct!.filterType),
+    filter: cdktn.stringToTerraform(struct!.filter),
+    filter_type: cdktn.stringToTerraform(struct!.filterType),
   }
 }
 
 
-export function ecrRepositoryCreationTemplateImageTagMutabilityExclusionFilterToHclTerraform(struct?: EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrRepositoryCreationTemplateImageTagMutabilityExclusionFilterToHclTerraform(struct?: EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter: {
-      value: cdktf.stringToHclTerraform(struct!.filter),
+      value: cdktn.stringToHclTerraform(struct!.filter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filter_type: {
-      value: cdktf.stringToHclTerraform(struct!.filterType),
+      value: cdktn.stringToHclTerraform(struct!.filterType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -266,9 +266,9 @@ export function ecrRepositoryCreationTemplateImageTagMutabilityExclusionFilterTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterOutputReference extends cdktf.ComplexObject {
+export class EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -276,11 +276,11 @@ export class EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -297,14 +297,14 @@ export class EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._filter = undefined;
       this._filterType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -343,15 +343,15 @@ export class EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterOutpu
   }
 }
 
-export class EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList extends cdktf.ComplexList {
-  public internalValue? : EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter[] | cdktf.IResolvable
+export class EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList extends cdktn.ComplexList {
+  public internalValue? : EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -366,7 +366,7 @@ export class EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template}
 */
-export class EcrRepositoryCreationTemplate extends cdktf.TerraformResource {
+export class EcrRepositoryCreationTemplate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -377,14 +377,14 @@ export class EcrRepositoryCreationTemplate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EcrRepositoryCreationTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EcrRepositoryCreationTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EcrRepositoryCreationTemplate to import
   * @param importFromId The id of the existing EcrRepositoryCreationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_repository_creation_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EcrRepositoryCreationTemplate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_repository_creation_template", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_repository_creation_template", importId: importFromId, provider });
       }
 
   // ===========
@@ -435,7 +435,7 @@ export class EcrRepositoryCreationTemplate extends cdktf.TerraformResource {
   // applied_for - computed: false, optional: false, required: true
   private _appliedFor?: string[]; 
   public get appliedFor() {
-    return cdktf.Fn.tolist(this.getListAttribute('applied_for'));
+    return cdktn.Fn.tolist(this.getListAttribute('applied_for'));
   }
   public set appliedFor(value: string[]) {
     this._appliedFor = value;
@@ -596,7 +596,7 @@ export class EcrRepositoryCreationTemplate extends cdktf.TerraformResource {
   public get encryptionConfiguration() {
     return this._encryptionConfiguration;
   }
-  public putEncryptionConfiguration(value: EcrRepositoryCreationTemplateEncryptionConfiguration[] | cdktf.IResolvable) {
+  public putEncryptionConfiguration(value: EcrRepositoryCreationTemplateEncryptionConfiguration[] | cdktn.IResolvable) {
     this._encryptionConfiguration.internalValue = value;
   }
   public resetEncryptionConfiguration() {
@@ -612,7 +612,7 @@ export class EcrRepositoryCreationTemplate extends cdktf.TerraformResource {
   public get imageTagMutabilityExclusionFilter() {
     return this._imageTagMutabilityExclusionFilter;
   }
-  public putImageTagMutabilityExclusionFilter(value: EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter[] | cdktf.IResolvable) {
+  public putImageTagMutabilityExclusionFilter(value: EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter[] | cdktn.IResolvable) {
     this._imageTagMutabilityExclusionFilter.internalValue = value;
   }
   public resetImageTagMutabilityExclusionFilter() {
@@ -629,91 +629,91 @@ export class EcrRepositoryCreationTemplate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      applied_for: cdktf.listMapper(cdktf.stringToTerraform, false)(this._appliedFor),
-      custom_role_arn: cdktf.stringToTerraform(this._customRoleArn),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      image_tag_mutability: cdktf.stringToTerraform(this._imageTagMutability),
-      lifecycle_policy: cdktf.stringToTerraform(this._lifecyclePolicy),
-      prefix: cdktf.stringToTerraform(this._prefix),
-      region: cdktf.stringToTerraform(this._region),
-      repository_policy: cdktf.stringToTerraform(this._repositoryPolicy),
-      resource_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._resourceTags),
-      encryption_configuration: cdktf.listMapper(ecrRepositoryCreationTemplateEncryptionConfigurationToTerraform, true)(this._encryptionConfiguration.internalValue),
-      image_tag_mutability_exclusion_filter: cdktf.listMapper(ecrRepositoryCreationTemplateImageTagMutabilityExclusionFilterToTerraform, true)(this._imageTagMutabilityExclusionFilter.internalValue),
+      applied_for: cdktn.listMapper(cdktn.stringToTerraform, false)(this._appliedFor),
+      custom_role_arn: cdktn.stringToTerraform(this._customRoleArn),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      image_tag_mutability: cdktn.stringToTerraform(this._imageTagMutability),
+      lifecycle_policy: cdktn.stringToTerraform(this._lifecyclePolicy),
+      prefix: cdktn.stringToTerraform(this._prefix),
+      region: cdktn.stringToTerraform(this._region),
+      repository_policy: cdktn.stringToTerraform(this._repositoryPolicy),
+      resource_tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._resourceTags),
+      encryption_configuration: cdktn.listMapper(ecrRepositoryCreationTemplateEncryptionConfigurationToTerraform, true)(this._encryptionConfiguration.internalValue),
+      image_tag_mutability_exclusion_filter: cdktn.listMapper(ecrRepositoryCreationTemplateImageTagMutabilityExclusionFilterToTerraform, true)(this._imageTagMutabilityExclusionFilter.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       applied_for: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._appliedFor),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._appliedFor),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       custom_role_arn: {
-        value: cdktf.stringToHclTerraform(this._customRoleArn),
+        value: cdktn.stringToHclTerraform(this._customRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_tag_mutability: {
-        value: cdktf.stringToHclTerraform(this._imageTagMutability),
+        value: cdktn.stringToHclTerraform(this._imageTagMutability),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lifecycle_policy: {
-        value: cdktf.stringToHclTerraform(this._lifecyclePolicy),
+        value: cdktn.stringToHclTerraform(this._lifecyclePolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       prefix: {
-        value: cdktf.stringToHclTerraform(this._prefix),
+        value: cdktn.stringToHclTerraform(this._prefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_policy: {
-        value: cdktf.stringToHclTerraform(this._repositoryPolicy),
+        value: cdktn.stringToHclTerraform(this._repositoryPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._resourceTags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._resourceTags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       encryption_configuration: {
-        value: cdktf.listMapperHcl(ecrRepositoryCreationTemplateEncryptionConfigurationToHclTerraform, true)(this._encryptionConfiguration.internalValue),
+        value: cdktn.listMapperHcl(ecrRepositoryCreationTemplateEncryptionConfigurationToHclTerraform, true)(this._encryptionConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EcrRepositoryCreationTemplateEncryptionConfigurationList",
       },
       image_tag_mutability_exclusion_filter: {
-        value: cdktf.listMapperHcl(ecrRepositoryCreationTemplateImageTagMutabilityExclusionFilterToHclTerraform, true)(this._imageTagMutabilityExclusionFilter.internalValue),
+        value: cdktn.listMapperHcl(ecrRepositoryCreationTemplateImageTagMutabilityExclusionFilterToHclTerraform, true)(this._imageTagMutabilityExclusionFilter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList",

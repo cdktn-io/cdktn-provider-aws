@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DrsReplicationConfigurationTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface DrsReplicationConfigurationTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/drs_replication_configuration_template#associate_default_security_group DrsReplicationConfigurationTemplate#associate_default_security_group}
   */
-  readonly associateDefaultSecurityGroup: boolean | cdktf.IResolvable;
+  readonly associateDefaultSecurityGroup: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/drs_replication_configuration_template#auto_replicate_new_disks DrsReplicationConfigurationTemplate#auto_replicate_new_disks}
   */
-  readonly autoReplicateNewDisks?: boolean | cdktf.IResolvable;
+  readonly autoReplicateNewDisks?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/drs_replication_configuration_template#bandwidth_throttling DrsReplicationConfigurationTemplate#bandwidth_throttling}
   */
@@ -27,7 +27,7 @@ export interface DrsReplicationConfigurationTemplateConfig extends cdktf.Terrafo
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/drs_replication_configuration_template#create_public_ip DrsReplicationConfigurationTemplate#create_public_ip}
   */
-  readonly createPublicIp: boolean | cdktf.IResolvable;
+  readonly createPublicIp: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/drs_replication_configuration_template#data_plane_routing DrsReplicationConfigurationTemplate#data_plane_routing}
   */
@@ -73,13 +73,13 @@ export interface DrsReplicationConfigurationTemplateConfig extends cdktf.Terrafo
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/drs_replication_configuration_template#use_dedicated_replication_server DrsReplicationConfigurationTemplate#use_dedicated_replication_server}
   */
-  readonly useDedicatedReplicationServer: boolean | cdktf.IResolvable;
+  readonly useDedicatedReplicationServer: boolean | cdktn.IResolvable;
   /**
   * pit_policy block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/drs_replication_configuration_template#pit_policy DrsReplicationConfigurationTemplate#pit_policy}
   */
-  readonly pitPolicy?: DrsReplicationConfigurationTemplatePitPolicy[] | cdktf.IResolvable;
+  readonly pitPolicy?: DrsReplicationConfigurationTemplatePitPolicy[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -91,7 +91,7 @@ export interface DrsReplicationConfigurationTemplatePitPolicy {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/drs_replication_configuration_template#enabled DrsReplicationConfigurationTemplate#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/drs_replication_configuration_template#interval DrsReplicationConfigurationTemplate#interval}
   */
@@ -110,53 +110,53 @@ export interface DrsReplicationConfigurationTemplatePitPolicy {
   readonly units: string;
 }
 
-export function drsReplicationConfigurationTemplatePitPolicyToTerraform(struct?: DrsReplicationConfigurationTemplatePitPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function drsReplicationConfigurationTemplatePitPolicyToTerraform(struct?: DrsReplicationConfigurationTemplatePitPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    interval: cdktf.numberToTerraform(struct!.interval),
-    retention_duration: cdktf.numberToTerraform(struct!.retentionDuration),
-    rule_id: cdktf.numberToTerraform(struct!.ruleId),
-    units: cdktf.stringToTerraform(struct!.units),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    retention_duration: cdktn.numberToTerraform(struct!.retentionDuration),
+    rule_id: cdktn.numberToTerraform(struct!.ruleId),
+    units: cdktn.stringToTerraform(struct!.units),
   }
 }
 
 
-export function drsReplicationConfigurationTemplatePitPolicyToHclTerraform(struct?: DrsReplicationConfigurationTemplatePitPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function drsReplicationConfigurationTemplatePitPolicyToHclTerraform(struct?: DrsReplicationConfigurationTemplatePitPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     retention_duration: {
-      value: cdktf.numberToHclTerraform(struct!.retentionDuration),
+      value: cdktn.numberToHclTerraform(struct!.retentionDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rule_id: {
-      value: cdktf.numberToHclTerraform(struct!.ruleId),
+      value: cdktn.numberToHclTerraform(struct!.ruleId),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     units: {
-      value: cdktf.stringToHclTerraform(struct!.units),
+      value: cdktn.stringToHclTerraform(struct!.units),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -167,9 +167,9 @@ export function drsReplicationConfigurationTemplatePitPolicyToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DrsReplicationConfigurationTemplatePitPolicyOutputReference extends cdktf.ComplexObject {
+export class DrsReplicationConfigurationTemplatePitPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -177,11 +177,11 @@ export class DrsReplicationConfigurationTemplatePitPolicyOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DrsReplicationConfigurationTemplatePitPolicy | cdktf.IResolvable | undefined {
+  public get internalValue(): DrsReplicationConfigurationTemplatePitPolicy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -210,7 +210,7 @@ export class DrsReplicationConfigurationTemplatePitPolicyOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DrsReplicationConfigurationTemplatePitPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DrsReplicationConfigurationTemplatePitPolicy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -220,7 +220,7 @@ export class DrsReplicationConfigurationTemplatePitPolicyOutputReference extends
       this._ruleId = undefined;
       this._units = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -236,11 +236,11 @@ export class DrsReplicationConfigurationTemplatePitPolicyOutputReference extends
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -307,15 +307,15 @@ export class DrsReplicationConfigurationTemplatePitPolicyOutputReference extends
   }
 }
 
-export class DrsReplicationConfigurationTemplatePitPolicyList extends cdktf.ComplexList {
-  public internalValue? : DrsReplicationConfigurationTemplatePitPolicy[] | cdktf.IResolvable
+export class DrsReplicationConfigurationTemplatePitPolicyList extends cdktn.ComplexList {
+  public internalValue? : DrsReplicationConfigurationTemplatePitPolicy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -347,39 +347,39 @@ export interface DrsReplicationConfigurationTemplateTimeouts {
   readonly update?: string;
 }
 
-export function drsReplicationConfigurationTemplateTimeoutsToTerraform(struct?: DrsReplicationConfigurationTemplateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function drsReplicationConfigurationTemplateTimeoutsToTerraform(struct?: DrsReplicationConfigurationTemplateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function drsReplicationConfigurationTemplateTimeoutsToHclTerraform(struct?: DrsReplicationConfigurationTemplateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function drsReplicationConfigurationTemplateTimeoutsToHclTerraform(struct?: DrsReplicationConfigurationTemplateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -390,19 +390,19 @@ export function drsReplicationConfigurationTemplateTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DrsReplicationConfigurationTemplateTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DrsReplicationConfigurationTemplateTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DrsReplicationConfigurationTemplateTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DrsReplicationConfigurationTemplateTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -423,7 +423,7 @@ export class DrsReplicationConfigurationTemplateTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DrsReplicationConfigurationTemplateTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DrsReplicationConfigurationTemplateTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -431,7 +431,7 @@ export class DrsReplicationConfigurationTemplateTimeoutsOutputReference extends 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -496,7 +496,7 @@ export class DrsReplicationConfigurationTemplateTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/drs_replication_configuration_template aws_drs_replication_configuration_template}
 */
-export class DrsReplicationConfigurationTemplate extends cdktf.TerraformResource {
+export class DrsReplicationConfigurationTemplate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -507,14 +507,14 @@ export class DrsReplicationConfigurationTemplate extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DrsReplicationConfigurationTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DrsReplicationConfigurationTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DrsReplicationConfigurationTemplate to import
   * @param importFromId The id of the existing DrsReplicationConfigurationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/drs_replication_configuration_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DrsReplicationConfigurationTemplate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_drs_replication_configuration_template", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_drs_replication_configuration_template", importId: importFromId, provider });
       }
 
   // ===========
@@ -573,11 +573,11 @@ export class DrsReplicationConfigurationTemplate extends cdktf.TerraformResource
   }
 
   // associate_default_security_group - computed: false, optional: false, required: true
-  private _associateDefaultSecurityGroup?: boolean | cdktf.IResolvable; 
+  private _associateDefaultSecurityGroup?: boolean | cdktn.IResolvable; 
   public get associateDefaultSecurityGroup() {
     return this.getBooleanAttribute('associate_default_security_group');
   }
-  public set associateDefaultSecurityGroup(value: boolean | cdktf.IResolvable) {
+  public set associateDefaultSecurityGroup(value: boolean | cdktn.IResolvable) {
     this._associateDefaultSecurityGroup = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -586,11 +586,11 @@ export class DrsReplicationConfigurationTemplate extends cdktf.TerraformResource
   }
 
   // auto_replicate_new_disks - computed: true, optional: true, required: false
-  private _autoReplicateNewDisks?: boolean | cdktf.IResolvable; 
+  private _autoReplicateNewDisks?: boolean | cdktn.IResolvable; 
   public get autoReplicateNewDisks() {
     return this.getBooleanAttribute('auto_replicate_new_disks');
   }
-  public set autoReplicateNewDisks(value: boolean | cdktf.IResolvable) {
+  public set autoReplicateNewDisks(value: boolean | cdktn.IResolvable) {
     this._autoReplicateNewDisks = value;
   }
   public resetAutoReplicateNewDisks() {
@@ -615,11 +615,11 @@ export class DrsReplicationConfigurationTemplate extends cdktf.TerraformResource
   }
 
   // create_public_ip - computed: false, optional: false, required: true
-  private _createPublicIp?: boolean | cdktf.IResolvable; 
+  private _createPublicIp?: boolean | cdktn.IResolvable; 
   public get createPublicIp() {
     return this.getBooleanAttribute('create_public_ip');
   }
-  public set createPublicIp(value: boolean | cdktf.IResolvable) {
+  public set createPublicIp(value: boolean | cdktn.IResolvable) {
     this._createPublicIp = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -772,17 +772,17 @@ export class DrsReplicationConfigurationTemplate extends cdktf.TerraformResource
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
 
   // use_dedicated_replication_server - computed: false, optional: false, required: true
-  private _useDedicatedReplicationServer?: boolean | cdktf.IResolvable; 
+  private _useDedicatedReplicationServer?: boolean | cdktn.IResolvable; 
   public get useDedicatedReplicationServer() {
     return this.getBooleanAttribute('use_dedicated_replication_server');
   }
-  public set useDedicatedReplicationServer(value: boolean | cdktf.IResolvable) {
+  public set useDedicatedReplicationServer(value: boolean | cdktn.IResolvable) {
     this._useDedicatedReplicationServer = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -795,7 +795,7 @@ export class DrsReplicationConfigurationTemplate extends cdktf.TerraformResource
   public get pitPolicy() {
     return this._pitPolicy;
   }
-  public putPitPolicy(value: DrsReplicationConfigurationTemplatePitPolicy[] | cdktf.IResolvable) {
+  public putPitPolicy(value: DrsReplicationConfigurationTemplatePitPolicy[] | cdktn.IResolvable) {
     this._pitPolicy.internalValue = value;
   }
   public resetPitPolicy() {
@@ -828,22 +828,22 @@ export class DrsReplicationConfigurationTemplate extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      associate_default_security_group: cdktf.booleanToTerraform(this._associateDefaultSecurityGroup),
-      auto_replicate_new_disks: cdktf.booleanToTerraform(this._autoReplicateNewDisks),
-      bandwidth_throttling: cdktf.numberToTerraform(this._bandwidthThrottling),
-      create_public_ip: cdktf.booleanToTerraform(this._createPublicIp),
-      data_plane_routing: cdktf.stringToTerraform(this._dataPlaneRouting),
-      default_large_staging_disk_type: cdktf.stringToTerraform(this._defaultLargeStagingDiskType),
-      ebs_encryption: cdktf.stringToTerraform(this._ebsEncryption),
-      ebs_encryption_key_arn: cdktf.stringToTerraform(this._ebsEncryptionKeyArn),
-      region: cdktf.stringToTerraform(this._region),
-      replication_server_instance_type: cdktf.stringToTerraform(this._replicationServerInstanceType),
-      replication_servers_security_groups_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._replicationServersSecurityGroupsIds),
-      staging_area_subnet_id: cdktf.stringToTerraform(this._stagingAreaSubnetId),
-      staging_area_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._stagingAreaTags),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      use_dedicated_replication_server: cdktf.booleanToTerraform(this._useDedicatedReplicationServer),
-      pit_policy: cdktf.listMapper(drsReplicationConfigurationTemplatePitPolicyToTerraform, true)(this._pitPolicy.internalValue),
+      associate_default_security_group: cdktn.booleanToTerraform(this._associateDefaultSecurityGroup),
+      auto_replicate_new_disks: cdktn.booleanToTerraform(this._autoReplicateNewDisks),
+      bandwidth_throttling: cdktn.numberToTerraform(this._bandwidthThrottling),
+      create_public_ip: cdktn.booleanToTerraform(this._createPublicIp),
+      data_plane_routing: cdktn.stringToTerraform(this._dataPlaneRouting),
+      default_large_staging_disk_type: cdktn.stringToTerraform(this._defaultLargeStagingDiskType),
+      ebs_encryption: cdktn.stringToTerraform(this._ebsEncryption),
+      ebs_encryption_key_arn: cdktn.stringToTerraform(this._ebsEncryptionKeyArn),
+      region: cdktn.stringToTerraform(this._region),
+      replication_server_instance_type: cdktn.stringToTerraform(this._replicationServerInstanceType),
+      replication_servers_security_groups_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._replicationServersSecurityGroupsIds),
+      staging_area_subnet_id: cdktn.stringToTerraform(this._stagingAreaSubnetId),
+      staging_area_tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._stagingAreaTags),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      use_dedicated_replication_server: cdktn.booleanToTerraform(this._useDedicatedReplicationServer),
+      pit_policy: cdktn.listMapper(drsReplicationConfigurationTemplatePitPolicyToTerraform, true)(this._pitPolicy.internalValue),
       timeouts: drsReplicationConfigurationTemplateTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -851,97 +851,97 @@ export class DrsReplicationConfigurationTemplate extends cdktf.TerraformResource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       associate_default_security_group: {
-        value: cdktf.booleanToHclTerraform(this._associateDefaultSecurityGroup),
+        value: cdktn.booleanToHclTerraform(this._associateDefaultSecurityGroup),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auto_replicate_new_disks: {
-        value: cdktf.booleanToHclTerraform(this._autoReplicateNewDisks),
+        value: cdktn.booleanToHclTerraform(this._autoReplicateNewDisks),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       bandwidth_throttling: {
-        value: cdktf.numberToHclTerraform(this._bandwidthThrottling),
+        value: cdktn.numberToHclTerraform(this._bandwidthThrottling),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       create_public_ip: {
-        value: cdktf.booleanToHclTerraform(this._createPublicIp),
+        value: cdktn.booleanToHclTerraform(this._createPublicIp),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       data_plane_routing: {
-        value: cdktf.stringToHclTerraform(this._dataPlaneRouting),
+        value: cdktn.stringToHclTerraform(this._dataPlaneRouting),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_large_staging_disk_type: {
-        value: cdktf.stringToHclTerraform(this._defaultLargeStagingDiskType),
+        value: cdktn.stringToHclTerraform(this._defaultLargeStagingDiskType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ebs_encryption: {
-        value: cdktf.stringToHclTerraform(this._ebsEncryption),
+        value: cdktn.stringToHclTerraform(this._ebsEncryption),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ebs_encryption_key_arn: {
-        value: cdktf.stringToHclTerraform(this._ebsEncryptionKeyArn),
+        value: cdktn.stringToHclTerraform(this._ebsEncryptionKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication_server_instance_type: {
-        value: cdktf.stringToHclTerraform(this._replicationServerInstanceType),
+        value: cdktn.stringToHclTerraform(this._replicationServerInstanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication_servers_security_groups_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._replicationServersSecurityGroupsIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._replicationServersSecurityGroupsIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       staging_area_subnet_id: {
-        value: cdktf.stringToHclTerraform(this._stagingAreaSubnetId),
+        value: cdktn.stringToHclTerraform(this._stagingAreaSubnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       staging_area_tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._stagingAreaTags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._stagingAreaTags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       use_dedicated_replication_server: {
-        value: cdktf.booleanToHclTerraform(this._useDedicatedReplicationServer),
+        value: cdktn.booleanToHclTerraform(this._useDedicatedReplicationServer),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       pit_policy: {
-        value: cdktf.listMapperHcl(drsReplicationConfigurationTemplatePitPolicyToHclTerraform, true)(this._pitPolicy.internalValue),
+        value: cdktn.listMapperHcl(drsReplicationConfigurationTemplatePitPolicyToHclTerraform, true)(this._pitPolicy.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DrsReplicationConfigurationTemplatePitPolicyList",

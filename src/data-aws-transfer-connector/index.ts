@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsTransferConnectorConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsTransferConnectorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/transfer_connector#id DataAwsTransferConnector#id}
   *
@@ -30,8 +30,8 @@ export interface DataAwsTransferConnectorAs2Config {
 }
 
 export function dataAwsTransferConnectorAs2ConfigToTerraform(struct?: DataAwsTransferConnectorAs2Config): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -40,8 +40,8 @@ export function dataAwsTransferConnectorAs2ConfigToTerraform(struct?: DataAwsTra
 
 
 export function dataAwsTransferConnectorAs2ConfigToHclTerraform(struct?: DataAwsTransferConnectorAs2Config): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -49,7 +49,7 @@ export function dataAwsTransferConnectorAs2ConfigToHclTerraform(struct?: DataAws
   return attrs;
 }
 
-export class DataAwsTransferConnectorAs2ConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsTransferConnectorAs2ConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -58,7 +58,7 @@ export class DataAwsTransferConnectorAs2ConfigOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -123,14 +123,14 @@ export class DataAwsTransferConnectorAs2ConfigOutputReference extends cdktf.Comp
   }
 }
 
-export class DataAwsTransferConnectorAs2ConfigList extends cdktf.ComplexList {
+export class DataAwsTransferConnectorAs2ConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -145,8 +145,8 @@ export interface DataAwsTransferConnectorEgressConfigVpcLattice {
 }
 
 export function dataAwsTransferConnectorEgressConfigVpcLatticeToTerraform(struct?: DataAwsTransferConnectorEgressConfigVpcLattice): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -155,8 +155,8 @@ export function dataAwsTransferConnectorEgressConfigVpcLatticeToTerraform(struct
 
 
 export function dataAwsTransferConnectorEgressConfigVpcLatticeToHclTerraform(struct?: DataAwsTransferConnectorEgressConfigVpcLattice): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -164,7 +164,7 @@ export function dataAwsTransferConnectorEgressConfigVpcLatticeToHclTerraform(str
   return attrs;
 }
 
-export class DataAwsTransferConnectorEgressConfigVpcLatticeOutputReference extends cdktf.ComplexObject {
+export class DataAwsTransferConnectorEgressConfigVpcLatticeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -173,7 +173,7 @@ export class DataAwsTransferConnectorEgressConfigVpcLatticeOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -203,14 +203,14 @@ export class DataAwsTransferConnectorEgressConfigVpcLatticeOutputReference exten
   }
 }
 
-export class DataAwsTransferConnectorEgressConfigVpcLatticeList extends cdktf.ComplexList {
+export class DataAwsTransferConnectorEgressConfigVpcLatticeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -225,8 +225,8 @@ export interface DataAwsTransferConnectorEgressConfig {
 }
 
 export function dataAwsTransferConnectorEgressConfigToTerraform(struct?: DataAwsTransferConnectorEgressConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -235,8 +235,8 @@ export function dataAwsTransferConnectorEgressConfigToTerraform(struct?: DataAws
 
 
 export function dataAwsTransferConnectorEgressConfigToHclTerraform(struct?: DataAwsTransferConnectorEgressConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -244,7 +244,7 @@ export function dataAwsTransferConnectorEgressConfigToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAwsTransferConnectorEgressConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsTransferConnectorEgressConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -253,7 +253,7 @@ export class DataAwsTransferConnectorEgressConfigOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -279,14 +279,14 @@ export class DataAwsTransferConnectorEgressConfigOutputReference extends cdktf.C
   }
 }
 
-export class DataAwsTransferConnectorEgressConfigList extends cdktf.ComplexList {
+export class DataAwsTransferConnectorEgressConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -301,8 +301,8 @@ export interface DataAwsTransferConnectorSftpConfig {
 }
 
 export function dataAwsTransferConnectorSftpConfigToTerraform(struct?: DataAwsTransferConnectorSftpConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -311,8 +311,8 @@ export function dataAwsTransferConnectorSftpConfigToTerraform(struct?: DataAwsTr
 
 
 export function dataAwsTransferConnectorSftpConfigToHclTerraform(struct?: DataAwsTransferConnectorSftpConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -320,7 +320,7 @@ export function dataAwsTransferConnectorSftpConfigToHclTerraform(struct?: DataAw
   return attrs;
 }
 
-export class DataAwsTransferConnectorSftpConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsTransferConnectorSftpConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -329,7 +329,7 @@ export class DataAwsTransferConnectorSftpConfigOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -359,14 +359,14 @@ export class DataAwsTransferConnectorSftpConfigOutputReference extends cdktf.Com
   }
 }
 
-export class DataAwsTransferConnectorSftpConfigList extends cdktf.ComplexList {
+export class DataAwsTransferConnectorSftpConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -381,7 +381,7 @@ export class DataAwsTransferConnectorSftpConfigList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/transfer_connector aws_transfer_connector}
 */
-export class DataAwsTransferConnector extends cdktf.TerraformDataSource {
+export class DataAwsTransferConnector extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -392,14 +392,14 @@ export class DataAwsTransferConnector extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsTransferConnector resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsTransferConnector resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsTransferConnector to import
   * @param importFromId The id of the existing DataAwsTransferConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/transfer_connector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsTransferConnector to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_connector", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_connector", importId: importFromId, provider });
       }
 
   // ===========
@@ -510,7 +510,7 @@ export class DataAwsTransferConnector extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -526,21 +526,21 @@ export class DataAwsTransferConnector extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

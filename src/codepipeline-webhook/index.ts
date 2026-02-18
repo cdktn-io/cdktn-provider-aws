@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CodepipelineWebhookConfig extends cdktf.TerraformMetaArguments {
+export interface CodepipelineWebhookConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline_webhook#authentication CodepipelineWebhook#authentication}
   */
@@ -60,7 +60,7 @@ export interface CodepipelineWebhookConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline_webhook#filter CodepipelineWebhook#filter}
   */
-  readonly filter: CodepipelineWebhookFilter[] | cdktf.IResolvable;
+  readonly filter: CodepipelineWebhookFilter[] | cdktn.IResolvable;
 }
 export interface CodepipelineWebhookAuthenticationConfiguration {
   /**
@@ -74,31 +74,31 @@ export interface CodepipelineWebhookAuthenticationConfiguration {
 }
 
 export function codepipelineWebhookAuthenticationConfigurationToTerraform(struct?: CodepipelineWebhookAuthenticationConfigurationOutputReference | CodepipelineWebhookAuthenticationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_ip_range: cdktf.stringToTerraform(struct!.allowedIpRange),
-    secret_token: cdktf.stringToTerraform(struct!.secretToken),
+    allowed_ip_range: cdktn.stringToTerraform(struct!.allowedIpRange),
+    secret_token: cdktn.stringToTerraform(struct!.secretToken),
   }
 }
 
 
 export function codepipelineWebhookAuthenticationConfigurationToHclTerraform(struct?: CodepipelineWebhookAuthenticationConfigurationOutputReference | CodepipelineWebhookAuthenticationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_ip_range: {
-      value: cdktf.stringToHclTerraform(struct!.allowedIpRange),
+      value: cdktn.stringToHclTerraform(struct!.allowedIpRange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_token: {
-      value: cdktf.stringToHclTerraform(struct!.secretToken),
+      value: cdktn.stringToHclTerraform(struct!.secretToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,14 +109,14 @@ export function codepipelineWebhookAuthenticationConfigurationToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineWebhookAuthenticationConfigurationOutputReference extends cdktf.ComplexObject {
+export class CodepipelineWebhookAuthenticationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -190,32 +190,32 @@ export interface CodepipelineWebhookFilter {
   readonly matchEquals: string;
 }
 
-export function codepipelineWebhookFilterToTerraform(struct?: CodepipelineWebhookFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineWebhookFilterToTerraform(struct?: CodepipelineWebhookFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    json_path: cdktf.stringToTerraform(struct!.jsonPath),
-    match_equals: cdktf.stringToTerraform(struct!.matchEquals),
+    json_path: cdktn.stringToTerraform(struct!.jsonPath),
+    match_equals: cdktn.stringToTerraform(struct!.matchEquals),
   }
 }
 
 
-export function codepipelineWebhookFilterToHclTerraform(struct?: CodepipelineWebhookFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineWebhookFilterToHclTerraform(struct?: CodepipelineWebhookFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     json_path: {
-      value: cdktf.stringToHclTerraform(struct!.jsonPath),
+      value: cdktn.stringToHclTerraform(struct!.jsonPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_equals: {
-      value: cdktf.stringToHclTerraform(struct!.matchEquals),
+      value: cdktn.stringToHclTerraform(struct!.matchEquals),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -226,9 +226,9 @@ export function codepipelineWebhookFilterToHclTerraform(struct?: CodepipelineWeb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineWebhookFilterOutputReference extends cdktf.ComplexObject {
+export class CodepipelineWebhookFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -236,11 +236,11 @@ export class CodepipelineWebhookFilterOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodepipelineWebhookFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): CodepipelineWebhookFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -257,14 +257,14 @@ export class CodepipelineWebhookFilterOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodepipelineWebhookFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodepipelineWebhookFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._jsonPath = undefined;
       this._matchEquals = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -303,15 +303,15 @@ export class CodepipelineWebhookFilterOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class CodepipelineWebhookFilterList extends cdktf.ComplexList {
-  public internalValue? : CodepipelineWebhookFilter[] | cdktf.IResolvable
+export class CodepipelineWebhookFilterList extends cdktn.ComplexList {
+  public internalValue? : CodepipelineWebhookFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -326,7 +326,7 @@ export class CodepipelineWebhookFilterList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline_webhook aws_codepipeline_webhook}
 */
-export class CodepipelineWebhook extends cdktf.TerraformResource {
+export class CodepipelineWebhook extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -337,14 +337,14 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CodepipelineWebhook resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CodepipelineWebhook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodepipelineWebhook to import
   * @param importFromId The id of the existing CodepipelineWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline_webhook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodepipelineWebhook to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_codepipeline_webhook", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_codepipeline_webhook", importId: importFromId, provider });
       }
 
   // ===========
@@ -537,7 +537,7 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: CodepipelineWebhookFilter[] | cdktf.IResolvable) {
+  public putFilter(value: CodepipelineWebhookFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -551,65 +551,65 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authentication: cdktf.stringToTerraform(this._authentication),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target_action: cdktf.stringToTerraform(this._targetAction),
-      target_pipeline: cdktf.stringToTerraform(this._targetPipeline),
+      authentication: cdktn.stringToTerraform(this._authentication),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      target_action: cdktn.stringToTerraform(this._targetAction),
+      target_pipeline: cdktn.stringToTerraform(this._targetPipeline),
       authentication_configuration: codepipelineWebhookAuthenticationConfigurationToTerraform(this._authenticationConfiguration.internalValue),
-      filter: cdktf.listMapper(codepipelineWebhookFilterToTerraform, true)(this._filter.internalValue),
+      filter: cdktn.listMapper(codepipelineWebhookFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authentication: {
-        value: cdktf.stringToHclTerraform(this._authentication),
+        value: cdktn.stringToHclTerraform(this._authentication),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target_action: {
-        value: cdktf.stringToHclTerraform(this._targetAction),
+        value: cdktn.stringToHclTerraform(this._targetAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_pipeline: {
-        value: cdktf.stringToHclTerraform(this._targetPipeline),
+        value: cdktn.stringToHclTerraform(this._targetPipeline),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -621,7 +621,7 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
         storageClassType: "CodepipelineWebhookAuthenticationConfigurationList",
       },
       filter: {
-        value: cdktf.listMapperHcl(codepipelineWebhookFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(codepipelineWebhookFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CodepipelineWebhookFilterList",

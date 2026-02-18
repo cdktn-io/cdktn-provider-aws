@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EksPodIdentityAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface EksPodIdentityAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_pod_identity_association#cluster_name EksPodIdentityAssociation#cluster_name}
   */
@@ -19,7 +19,7 @@ export interface EksPodIdentityAssociationConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_pod_identity_association#disable_session_tags EksPodIdentityAssociation#disable_session_tags}
   */
-  readonly disableSessionTags?: boolean | cdktf.IResolvable;
+  readonly disableSessionTags?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_pod_identity_association#namespace EksPodIdentityAssociation#namespace}
   */
@@ -51,7 +51,7 @@ export interface EksPodIdentityAssociationConfig extends cdktf.TerraformMetaArgu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association}
 */
-export class EksPodIdentityAssociation extends cdktf.TerraformResource {
+export class EksPodIdentityAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -62,14 +62,14 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EksPodIdentityAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EksPodIdentityAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EksPodIdentityAssociation to import
   * @param importFromId The id of the existing EksPodIdentityAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_pod_identity_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EksPodIdentityAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_pod_identity_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_pod_identity_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -137,11 +137,11 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
   }
 
   // disable_session_tags - computed: true, optional: true, required: false
-  private _disableSessionTags?: boolean | cdktf.IResolvable; 
+  private _disableSessionTags?: boolean | cdktn.IResolvable; 
   public get disableSessionTags() {
     return this.getBooleanAttribute('disable_session_tags');
   }
-  public set disableSessionTags(value: boolean | cdktf.IResolvable) {
+  public set disableSessionTags(value: boolean | cdktn.IResolvable) {
     this._disableSessionTags = value;
   }
   public resetDisableSessionTags() {
@@ -234,7 +234,7 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -261,63 +261,63 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_name: cdktf.stringToTerraform(this._clusterName),
-      disable_session_tags: cdktf.booleanToTerraform(this._disableSessionTags),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      service_account: cdktf.stringToTerraform(this._serviceAccount),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      target_role_arn: cdktf.stringToTerraform(this._targetRoleArn),
+      cluster_name: cdktn.stringToTerraform(this._clusterName),
+      disable_session_tags: cdktn.booleanToTerraform(this._disableSessionTags),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      service_account: cdktn.stringToTerraform(this._serviceAccount),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      target_role_arn: cdktn.stringToTerraform(this._targetRoleArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_name: {
-        value: cdktf.stringToHclTerraform(this._clusterName),
+        value: cdktn.stringToHclTerraform(this._clusterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_session_tags: {
-        value: cdktf.booleanToHclTerraform(this._disableSessionTags),
+        value: cdktn.booleanToHclTerraform(this._disableSessionTags),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_account: {
-        value: cdktf.stringToHclTerraform(this._serviceAccount),
+        value: cdktn.stringToHclTerraform(this._serviceAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target_role_arn: {
-        value: cdktf.stringToHclTerraform(this._targetRoleArn),
+        value: cdktn.stringToHclTerraform(this._targetRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

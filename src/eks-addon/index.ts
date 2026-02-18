@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EksAddonConfig extends cdktf.TerraformMetaArguments {
+export interface EksAddonConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_addon#addon_name EksAddon#addon_name}
   */
@@ -38,7 +38,7 @@ export interface EksAddonConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_addon#preserve EksAddon#preserve}
   */
-  readonly preserve?: boolean | cdktf.IResolvable;
+  readonly preserve?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -70,7 +70,7 @@ export interface EksAddonConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_addon#pod_identity_association EksAddon#pod_identity_association}
   */
-  readonly podIdentityAssociation?: EksAddonPodIdentityAssociation[] | cdktf.IResolvable;
+  readonly podIdentityAssociation?: EksAddonPodIdentityAssociation[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -89,32 +89,32 @@ export interface EksAddonPodIdentityAssociation {
   readonly serviceAccount: string;
 }
 
-export function eksAddonPodIdentityAssociationToTerraform(struct?: EksAddonPodIdentityAssociation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksAddonPodIdentityAssociationToTerraform(struct?: EksAddonPodIdentityAssociation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    service_account: cdktf.stringToTerraform(struct!.serviceAccount),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    service_account: cdktn.stringToTerraform(struct!.serviceAccount),
   }
 }
 
 
-export function eksAddonPodIdentityAssociationToHclTerraform(struct?: EksAddonPodIdentityAssociation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksAddonPodIdentityAssociationToHclTerraform(struct?: EksAddonPodIdentityAssociation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_account: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccount),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,9 +125,9 @@ export function eksAddonPodIdentityAssociationToHclTerraform(struct?: EksAddonPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksAddonPodIdentityAssociationOutputReference extends cdktf.ComplexObject {
+export class EksAddonPodIdentityAssociationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -135,11 +135,11 @@ export class EksAddonPodIdentityAssociationOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EksAddonPodIdentityAssociation | cdktf.IResolvable | undefined {
+  public get internalValue(): EksAddonPodIdentityAssociation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,14 +156,14 @@ export class EksAddonPodIdentityAssociationOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EksAddonPodIdentityAssociation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EksAddonPodIdentityAssociation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._roleArn = undefined;
       this._serviceAccount = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -202,15 +202,15 @@ export class EksAddonPodIdentityAssociationOutputReference extends cdktf.Complex
   }
 }
 
-export class EksAddonPodIdentityAssociationList extends cdktf.ComplexList {
-  public internalValue? : EksAddonPodIdentityAssociation[] | cdktf.IResolvable
+export class EksAddonPodIdentityAssociationList extends cdktn.ComplexList {
+  public internalValue? : EksAddonPodIdentityAssociation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -236,39 +236,39 @@ export interface EksAddonTimeouts {
   readonly update?: string;
 }
 
-export function eksAddonTimeoutsToTerraform(struct?: EksAddonTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksAddonTimeoutsToTerraform(struct?: EksAddonTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function eksAddonTimeoutsToHclTerraform(struct?: EksAddonTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksAddonTimeoutsToHclTerraform(struct?: EksAddonTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -279,19 +279,19 @@ export function eksAddonTimeoutsToHclTerraform(struct?: EksAddonTimeouts | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksAddonTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EksAddonTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EksAddonTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EksAddonTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -312,7 +312,7 @@ export class EksAddonTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EksAddonTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EksAddonTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -320,7 +320,7 @@ export class EksAddonTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -385,7 +385,7 @@ export class EksAddonTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_addon aws_eks_addon}
 */
-export class EksAddon extends cdktf.TerraformResource {
+export class EksAddon extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -396,14 +396,14 @@ export class EksAddon extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EksAddon resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EksAddon resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EksAddon to import
   * @param importFromId The id of the existing EksAddon that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_addon#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EksAddon to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_addon", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_addon", importId: importFromId, provider });
       }
 
   // ===========
@@ -543,11 +543,11 @@ export class EksAddon extends cdktf.TerraformResource {
   }
 
   // preserve - computed: false, optional: true, required: false
-  private _preserve?: boolean | cdktf.IResolvable; 
+  private _preserve?: boolean | cdktn.IResolvable; 
   public get preserve() {
     return this.getBooleanAttribute('preserve');
   }
-  public set preserve(value: boolean | cdktf.IResolvable) {
+  public set preserve(value: boolean | cdktn.IResolvable) {
     this._preserve = value;
   }
   public resetPreserve() {
@@ -659,7 +659,7 @@ export class EksAddon extends cdktf.TerraformResource {
   public get podIdentityAssociation() {
     return this._podIdentityAssociation;
   }
-  public putPodIdentityAssociation(value: EksAddonPodIdentityAssociation[] | cdktf.IResolvable) {
+  public putPodIdentityAssociation(value: EksAddonPodIdentityAssociation[] | cdktn.IResolvable) {
     this._podIdentityAssociation.internalValue = value;
   }
   public resetPodIdentityAssociation() {
@@ -692,19 +692,19 @@ export class EksAddon extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      addon_name: cdktf.stringToTerraform(this._addonName),
-      addon_version: cdktf.stringToTerraform(this._addonVersion),
-      cluster_name: cdktf.stringToTerraform(this._clusterName),
-      configuration_values: cdktf.stringToTerraform(this._configurationValues),
-      id: cdktf.stringToTerraform(this._id),
-      preserve: cdktf.booleanToTerraform(this._preserve),
-      region: cdktf.stringToTerraform(this._region),
-      resolve_conflicts_on_create: cdktf.stringToTerraform(this._resolveConflictsOnCreate),
-      resolve_conflicts_on_update: cdktf.stringToTerraform(this._resolveConflictsOnUpdate),
-      service_account_role_arn: cdktf.stringToTerraform(this._serviceAccountRoleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      pod_identity_association: cdktf.listMapper(eksAddonPodIdentityAssociationToTerraform, true)(this._podIdentityAssociation.internalValue),
+      addon_name: cdktn.stringToTerraform(this._addonName),
+      addon_version: cdktn.stringToTerraform(this._addonVersion),
+      cluster_name: cdktn.stringToTerraform(this._clusterName),
+      configuration_values: cdktn.stringToTerraform(this._configurationValues),
+      id: cdktn.stringToTerraform(this._id),
+      preserve: cdktn.booleanToTerraform(this._preserve),
+      region: cdktn.stringToTerraform(this._region),
+      resolve_conflicts_on_create: cdktn.stringToTerraform(this._resolveConflictsOnCreate),
+      resolve_conflicts_on_update: cdktn.stringToTerraform(this._resolveConflictsOnUpdate),
+      service_account_role_arn: cdktn.stringToTerraform(this._serviceAccountRoleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      pod_identity_association: cdktn.listMapper(eksAddonPodIdentityAssociationToTerraform, true)(this._podIdentityAssociation.internalValue),
       timeouts: eksAddonTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -712,79 +712,79 @@ export class EksAddon extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       addon_name: {
-        value: cdktf.stringToHclTerraform(this._addonName),
+        value: cdktn.stringToHclTerraform(this._addonName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       addon_version: {
-        value: cdktf.stringToHclTerraform(this._addonVersion),
+        value: cdktn.stringToHclTerraform(this._addonVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_name: {
-        value: cdktf.stringToHclTerraform(this._clusterName),
+        value: cdktn.stringToHclTerraform(this._clusterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       configuration_values: {
-        value: cdktf.stringToHclTerraform(this._configurationValues),
+        value: cdktn.stringToHclTerraform(this._configurationValues),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preserve: {
-        value: cdktf.booleanToHclTerraform(this._preserve),
+        value: cdktn.booleanToHclTerraform(this._preserve),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resolve_conflicts_on_create: {
-        value: cdktf.stringToHclTerraform(this._resolveConflictsOnCreate),
+        value: cdktn.stringToHclTerraform(this._resolveConflictsOnCreate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resolve_conflicts_on_update: {
-        value: cdktf.stringToHclTerraform(this._resolveConflictsOnUpdate),
+        value: cdktn.stringToHclTerraform(this._resolveConflictsOnUpdate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_account_role_arn: {
-        value: cdktf.stringToHclTerraform(this._serviceAccountRoleArn),
+        value: cdktn.stringToHclTerraform(this._serviceAccountRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       pod_identity_association: {
-        value: cdktf.listMapperHcl(eksAddonPodIdentityAssociationToHclTerraform, true)(this._podIdentityAssociation.internalValue),
+        value: cdktn.listMapperHcl(eksAddonPodIdentityAssociationToHclTerraform, true)(this._podIdentityAssociation.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "EksAddonPodIdentityAssociationList",

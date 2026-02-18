@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DxPublicVirtualInterfaceConfig extends cdktf.TerraformMetaArguments {
+export interface DxPublicVirtualInterfaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_public_virtual_interface#address_family DxPublicVirtualInterface#address_family}
   */
@@ -87,32 +87,32 @@ export interface DxPublicVirtualInterfaceTimeouts {
   readonly delete?: string;
 }
 
-export function dxPublicVirtualInterfaceTimeoutsToTerraform(struct?: DxPublicVirtualInterfaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dxPublicVirtualInterfaceTimeoutsToTerraform(struct?: DxPublicVirtualInterfaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function dxPublicVirtualInterfaceTimeoutsToHclTerraform(struct?: DxPublicVirtualInterfaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dxPublicVirtualInterfaceTimeoutsToHclTerraform(struct?: DxPublicVirtualInterfaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,19 +123,19 @@ export function dxPublicVirtualInterfaceTimeoutsToHclTerraform(struct?: DxPublic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DxPublicVirtualInterfaceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DxPublicVirtualInterfaceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DxPublicVirtualInterfaceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DxPublicVirtualInterfaceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,14 +152,14 @@ export class DxPublicVirtualInterfaceTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DxPublicVirtualInterfaceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DxPublicVirtualInterfaceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -207,7 +207,7 @@ export class DxPublicVirtualInterfaceTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_public_virtual_interface aws_dx_public_virtual_interface}
 */
-export class DxPublicVirtualInterface extends cdktf.TerraformResource {
+export class DxPublicVirtualInterface extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -218,14 +218,14 @@ export class DxPublicVirtualInterface extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DxPublicVirtualInterface resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DxPublicVirtualInterface resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DxPublicVirtualInterface to import
   * @param importFromId The id of the existing DxPublicVirtualInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_public_virtual_interface#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DxPublicVirtualInterface to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_public_virtual_interface", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_public_virtual_interface", importId: importFromId, provider });
       }
 
   // ===========
@@ -425,7 +425,7 @@ export class DxPublicVirtualInterface extends cdktf.TerraformResource {
   // route_filter_prefixes - computed: false, optional: false, required: true
   private _routeFilterPrefixes?: string[]; 
   public get routeFilterPrefixes() {
-    return cdktf.Fn.tolist(this.getListAttribute('route_filter_prefixes'));
+    return cdktn.Fn.tolist(this.getListAttribute('route_filter_prefixes'));
   }
   public set routeFilterPrefixes(value: string[]) {
     this._routeFilterPrefixes = value;
@@ -502,19 +502,19 @@ export class DxPublicVirtualInterface extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address_family: cdktf.stringToTerraform(this._addressFamily),
-      amazon_address: cdktf.stringToTerraform(this._amazonAddress),
-      bgp_asn: cdktf.numberToTerraform(this._bgpAsn),
-      bgp_auth_key: cdktf.stringToTerraform(this._bgpAuthKey),
-      connection_id: cdktf.stringToTerraform(this._connectionId),
-      customer_address: cdktf.stringToTerraform(this._customerAddress),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      route_filter_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._routeFilterPrefixes),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vlan: cdktf.numberToTerraform(this._vlan),
+      address_family: cdktn.stringToTerraform(this._addressFamily),
+      amazon_address: cdktn.stringToTerraform(this._amazonAddress),
+      bgp_asn: cdktn.numberToTerraform(this._bgpAsn),
+      bgp_auth_key: cdktn.stringToTerraform(this._bgpAuthKey),
+      connection_id: cdktn.stringToTerraform(this._connectionId),
+      customer_address: cdktn.stringToTerraform(this._customerAddress),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      route_filter_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._routeFilterPrefixes),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      vlan: cdktn.numberToTerraform(this._vlan),
       timeouts: dxPublicVirtualInterfaceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -522,79 +522,79 @@ export class DxPublicVirtualInterface extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       address_family: {
-        value: cdktf.stringToHclTerraform(this._addressFamily),
+        value: cdktn.stringToHclTerraform(this._addressFamily),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       amazon_address: {
-        value: cdktf.stringToHclTerraform(this._amazonAddress),
+        value: cdktn.stringToHclTerraform(this._amazonAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bgp_asn: {
-        value: cdktf.numberToHclTerraform(this._bgpAsn),
+        value: cdktn.numberToHclTerraform(this._bgpAsn),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       bgp_auth_key: {
-        value: cdktf.stringToHclTerraform(this._bgpAuthKey),
+        value: cdktn.stringToHclTerraform(this._bgpAuthKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connection_id: {
-        value: cdktf.stringToHclTerraform(this._connectionId),
+        value: cdktn.stringToHclTerraform(this._connectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_address: {
-        value: cdktf.stringToHclTerraform(this._customerAddress),
+        value: cdktn.stringToHclTerraform(this._customerAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       route_filter_prefixes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._routeFilterPrefixes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._routeFilterPrefixes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vlan: {
-        value: cdktf.numberToHclTerraform(this._vlan),
+        value: cdktn.numberToHclTerraform(this._vlan),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

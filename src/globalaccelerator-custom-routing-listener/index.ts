@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlobalacceleratorCustomRoutingListenerConfig extends cdktf.TerraformMetaArguments {
+export interface GlobalacceleratorCustomRoutingListenerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_custom_routing_listener#accelerator_arn GlobalacceleratorCustomRoutingListener#accelerator_arn}
   */
@@ -28,7 +28,7 @@ export interface GlobalacceleratorCustomRoutingListenerConfig extends cdktf.Terr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_custom_routing_listener#port_range GlobalacceleratorCustomRoutingListener#port_range}
   */
-  readonly portRange: GlobalacceleratorCustomRoutingListenerPortRange[] | cdktf.IResolvable;
+  readonly portRange: GlobalacceleratorCustomRoutingListenerPortRange[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -47,32 +47,32 @@ export interface GlobalacceleratorCustomRoutingListenerPortRange {
   readonly toPort?: number;
 }
 
-export function globalacceleratorCustomRoutingListenerPortRangeToTerraform(struct?: GlobalacceleratorCustomRoutingListenerPortRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalacceleratorCustomRoutingListenerPortRangeToTerraform(struct?: GlobalacceleratorCustomRoutingListenerPortRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from_port: cdktf.numberToTerraform(struct!.fromPort),
-    to_port: cdktf.numberToTerraform(struct!.toPort),
+    from_port: cdktn.numberToTerraform(struct!.fromPort),
+    to_port: cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
-export function globalacceleratorCustomRoutingListenerPortRangeToHclTerraform(struct?: GlobalacceleratorCustomRoutingListenerPortRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalacceleratorCustomRoutingListenerPortRangeToHclTerraform(struct?: GlobalacceleratorCustomRoutingListenerPortRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from_port: {
-      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      value: cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to_port: {
-      value: cdktf.numberToHclTerraform(struct!.toPort),
+      value: cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -83,9 +83,9 @@ export function globalacceleratorCustomRoutingListenerPortRangeToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlobalacceleratorCustomRoutingListenerPortRangeOutputReference extends cdktf.ComplexObject {
+export class GlobalacceleratorCustomRoutingListenerPortRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -93,11 +93,11 @@ export class GlobalacceleratorCustomRoutingListenerPortRangeOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GlobalacceleratorCustomRoutingListenerPortRange | cdktf.IResolvable | undefined {
+  public get internalValue(): GlobalacceleratorCustomRoutingListenerPortRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -114,14 +114,14 @@ export class GlobalacceleratorCustomRoutingListenerPortRangeOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlobalacceleratorCustomRoutingListenerPortRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlobalacceleratorCustomRoutingListenerPortRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._fromPort = undefined;
       this._toPort = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -166,15 +166,15 @@ export class GlobalacceleratorCustomRoutingListenerPortRangeOutputReference exte
   }
 }
 
-export class GlobalacceleratorCustomRoutingListenerPortRangeList extends cdktf.ComplexList {
-  public internalValue? : GlobalacceleratorCustomRoutingListenerPortRange[] | cdktf.IResolvable
+export class GlobalacceleratorCustomRoutingListenerPortRangeList extends cdktn.ComplexList {
+  public internalValue? : GlobalacceleratorCustomRoutingListenerPortRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -200,39 +200,39 @@ export interface GlobalacceleratorCustomRoutingListenerTimeouts {
   readonly update?: string;
 }
 
-export function globalacceleratorCustomRoutingListenerTimeoutsToTerraform(struct?: GlobalacceleratorCustomRoutingListenerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalacceleratorCustomRoutingListenerTimeoutsToTerraform(struct?: GlobalacceleratorCustomRoutingListenerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function globalacceleratorCustomRoutingListenerTimeoutsToHclTerraform(struct?: GlobalacceleratorCustomRoutingListenerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalacceleratorCustomRoutingListenerTimeoutsToHclTerraform(struct?: GlobalacceleratorCustomRoutingListenerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -243,19 +243,19 @@ export function globalacceleratorCustomRoutingListenerTimeoutsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlobalacceleratorCustomRoutingListenerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GlobalacceleratorCustomRoutingListenerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GlobalacceleratorCustomRoutingListenerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GlobalacceleratorCustomRoutingListenerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -276,7 +276,7 @@ export class GlobalacceleratorCustomRoutingListenerTimeoutsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlobalacceleratorCustomRoutingListenerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlobalacceleratorCustomRoutingListenerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -284,7 +284,7 @@ export class GlobalacceleratorCustomRoutingListenerTimeoutsOutputReference exten
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -349,7 +349,7 @@ export class GlobalacceleratorCustomRoutingListenerTimeoutsOutputReference exten
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_custom_routing_listener aws_globalaccelerator_custom_routing_listener}
 */
-export class GlobalacceleratorCustomRoutingListener extends cdktf.TerraformResource {
+export class GlobalacceleratorCustomRoutingListener extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -360,14 +360,14 @@ export class GlobalacceleratorCustomRoutingListener extends cdktf.TerraformResou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlobalacceleratorCustomRoutingListener resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlobalacceleratorCustomRoutingListener resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlobalacceleratorCustomRoutingListener to import
   * @param importFromId The id of the existing GlobalacceleratorCustomRoutingListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_custom_routing_listener#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlobalacceleratorCustomRoutingListener to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_globalaccelerator_custom_routing_listener", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_globalaccelerator_custom_routing_listener", importId: importFromId, provider });
       }
 
   // ===========
@@ -446,7 +446,7 @@ export class GlobalacceleratorCustomRoutingListener extends cdktf.TerraformResou
   public get portRange() {
     return this._portRange;
   }
-  public putPortRange(value: GlobalacceleratorCustomRoutingListenerPortRange[] | cdktf.IResolvable) {
+  public putPortRange(value: GlobalacceleratorCustomRoutingListenerPortRange[] | cdktn.IResolvable) {
     this._portRange.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -476,9 +476,9 @@ export class GlobalacceleratorCustomRoutingListener extends cdktf.TerraformResou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      accelerator_arn: cdktf.stringToTerraform(this._acceleratorArn),
-      id: cdktf.stringToTerraform(this._id),
-      port_range: cdktf.listMapper(globalacceleratorCustomRoutingListenerPortRangeToTerraform, true)(this._portRange.internalValue),
+      accelerator_arn: cdktn.stringToTerraform(this._acceleratorArn),
+      id: cdktn.stringToTerraform(this._id),
+      port_range: cdktn.listMapper(globalacceleratorCustomRoutingListenerPortRangeToTerraform, true)(this._portRange.internalValue),
       timeouts: globalacceleratorCustomRoutingListenerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -486,19 +486,19 @@ export class GlobalacceleratorCustomRoutingListener extends cdktf.TerraformResou
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       accelerator_arn: {
-        value: cdktf.stringToHclTerraform(this._acceleratorArn),
+        value: cdktn.stringToHclTerraform(this._acceleratorArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port_range: {
-        value: cdktf.listMapperHcl(globalacceleratorCustomRoutingListenerPortRangeToHclTerraform, true)(this._portRange.internalValue),
+        value: cdktn.listMapperHcl(globalacceleratorCustomRoutingListenerPortRangeToHclTerraform, true)(this._portRange.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "GlobalacceleratorCustomRoutingListenerPortRangeList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LambdaPermissionConfig extends cdktf.TerraformMetaArguments {
+export interface LambdaPermissionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_permission#action LambdaPermission#action}
   */
@@ -38,7 +38,7 @@ export interface LambdaPermissionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_permission#invoked_via_function_url LambdaPermission#invoked_via_function_url}
   */
-  readonly invokedViaFunctionUrl?: boolean | cdktf.IResolvable;
+  readonly invokedViaFunctionUrl?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_permission#principal LambdaPermission#principal}
   */
@@ -78,7 +78,7 @@ export interface LambdaPermissionConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_permission aws_lambda_permission}
 */
-export class LambdaPermission extends cdktf.TerraformResource {
+export class LambdaPermission extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -89,14 +89,14 @@ export class LambdaPermission extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LambdaPermission resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LambdaPermission resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LambdaPermission to import
   * @param importFromId The id of the existing LambdaPermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_permission#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LambdaPermission to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_permission", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_permission", importId: importFromId, provider });
       }
 
   // ===========
@@ -221,11 +221,11 @@ export class LambdaPermission extends cdktf.TerraformResource {
   }
 
   // invoked_via_function_url - computed: false, optional: true, required: false
-  private _invokedViaFunctionUrl?: boolean | cdktf.IResolvable; 
+  private _invokedViaFunctionUrl?: boolean | cdktn.IResolvable; 
   public get invokedViaFunctionUrl() {
     return this.getBooleanAttribute('invoked_via_function_url');
   }
-  public set invokedViaFunctionUrl(value: boolean | cdktf.IResolvable) {
+  public set invokedViaFunctionUrl(value: boolean | cdktn.IResolvable) {
     this._invokedViaFunctionUrl = value;
   }
   public resetInvokedViaFunctionUrl() {
@@ -367,105 +367,105 @@ export class LambdaPermission extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: cdktf.stringToTerraform(this._action),
-      event_source_token: cdktf.stringToTerraform(this._eventSourceToken),
-      function_name: cdktf.stringToTerraform(this._functionName),
-      function_url_auth_type: cdktf.stringToTerraform(this._functionUrlAuthType),
-      id: cdktf.stringToTerraform(this._id),
-      invoked_via_function_url: cdktf.booleanToTerraform(this._invokedViaFunctionUrl),
-      principal: cdktf.stringToTerraform(this._principal),
-      principal_org_id: cdktf.stringToTerraform(this._principalOrgId),
-      qualifier: cdktf.stringToTerraform(this._qualifier),
-      region: cdktf.stringToTerraform(this._region),
-      source_account: cdktf.stringToTerraform(this._sourceAccount),
-      source_arn: cdktf.stringToTerraform(this._sourceArn),
-      statement_id: cdktf.stringToTerraform(this._statementId),
-      statement_id_prefix: cdktf.stringToTerraform(this._statementIdPrefix),
+      action: cdktn.stringToTerraform(this._action),
+      event_source_token: cdktn.stringToTerraform(this._eventSourceToken),
+      function_name: cdktn.stringToTerraform(this._functionName),
+      function_url_auth_type: cdktn.stringToTerraform(this._functionUrlAuthType),
+      id: cdktn.stringToTerraform(this._id),
+      invoked_via_function_url: cdktn.booleanToTerraform(this._invokedViaFunctionUrl),
+      principal: cdktn.stringToTerraform(this._principal),
+      principal_org_id: cdktn.stringToTerraform(this._principalOrgId),
+      qualifier: cdktn.stringToTerraform(this._qualifier),
+      region: cdktn.stringToTerraform(this._region),
+      source_account: cdktn.stringToTerraform(this._sourceAccount),
+      source_arn: cdktn.stringToTerraform(this._sourceArn),
+      statement_id: cdktn.stringToTerraform(this._statementId),
+      statement_id_prefix: cdktn.stringToTerraform(this._statementIdPrefix),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action: {
-        value: cdktf.stringToHclTerraform(this._action),
+        value: cdktn.stringToHclTerraform(this._action),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_source_token: {
-        value: cdktf.stringToHclTerraform(this._eventSourceToken),
+        value: cdktn.stringToHclTerraform(this._eventSourceToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       function_name: {
-        value: cdktf.stringToHclTerraform(this._functionName),
+        value: cdktn.stringToHclTerraform(this._functionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       function_url_auth_type: {
-        value: cdktf.stringToHclTerraform(this._functionUrlAuthType),
+        value: cdktn.stringToHclTerraform(this._functionUrlAuthType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       invoked_via_function_url: {
-        value: cdktf.booleanToHclTerraform(this._invokedViaFunctionUrl),
+        value: cdktn.booleanToHclTerraform(this._invokedViaFunctionUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       principal: {
-        value: cdktf.stringToHclTerraform(this._principal),
+        value: cdktn.stringToHclTerraform(this._principal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal_org_id: {
-        value: cdktf.stringToHclTerraform(this._principalOrgId),
+        value: cdktn.stringToHclTerraform(this._principalOrgId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       qualifier: {
-        value: cdktf.stringToHclTerraform(this._qualifier),
+        value: cdktn.stringToHclTerraform(this._qualifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_account: {
-        value: cdktf.stringToHclTerraform(this._sourceAccount),
+        value: cdktn.stringToHclTerraform(this._sourceAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_arn: {
-        value: cdktf.stringToHclTerraform(this._sourceArn),
+        value: cdktn.stringToHclTerraform(this._sourceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       statement_id: {
-        value: cdktf.stringToHclTerraform(this._statementId),
+        value: cdktn.stringToHclTerraform(this._statementId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       statement_id_prefix: {
-        value: cdktf.stringToHclTerraform(this._statementIdPrefix),
+        value: cdktn.stringToHclTerraform(this._statementIdPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecuritylakeSubscriberNotificationConfig extends cdktf.TerraformMetaArguments {
+export interface SecuritylakeSubscriberNotificationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -27,7 +27,7 @@ export interface SecuritylakeSubscriberNotificationConfig extends cdktf.Terrafor
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_subscriber_notification#configuration SecuritylakeSubscriberNotification#configuration}
   */
-  readonly configuration?: SecuritylakeSubscriberNotificationConfiguration[] | cdktf.IResolvable;
+  readonly configuration?: SecuritylakeSubscriberNotificationConfiguration[] | cdktn.IResolvable;
 }
 export interface SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration {
   /**
@@ -52,53 +52,53 @@ export interface SecuritylakeSubscriberNotificationConfigurationHttpsNotificatio
   readonly targetRoleArn: string;
 }
 
-export function securitylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationToTerraform(struct?: SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationToTerraform(struct?: SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authorization_api_key_name: cdktf.stringToTerraform(struct!.authorizationApiKeyName),
-    authorization_api_key_value: cdktf.stringToTerraform(struct!.authorizationApiKeyValue),
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
-    http_method: cdktf.stringToTerraform(struct!.httpMethod),
-    target_role_arn: cdktf.stringToTerraform(struct!.targetRoleArn),
+    authorization_api_key_name: cdktn.stringToTerraform(struct!.authorizationApiKeyName),
+    authorization_api_key_value: cdktn.stringToTerraform(struct!.authorizationApiKeyValue),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    http_method: cdktn.stringToTerraform(struct!.httpMethod),
+    target_role_arn: cdktn.stringToTerraform(struct!.targetRoleArn),
   }
 }
 
 
-export function securitylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationToHclTerraform(struct?: SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationToHclTerraform(struct?: SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authorization_api_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.authorizationApiKeyName),
+      value: cdktn.stringToHclTerraform(struct!.authorizationApiKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     authorization_api_key_value: {
-      value: cdktf.stringToHclTerraform(struct!.authorizationApiKeyValue),
+      value: cdktn.stringToHclTerraform(struct!.authorizationApiKeyValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_method: {
-      value: cdktf.stringToHclTerraform(struct!.httpMethod),
+      value: cdktn.stringToHclTerraform(struct!.httpMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.targetRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.targetRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,9 +109,9 @@ export function securitylakeSubscriberNotificationConfigurationHttpsNotification
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -119,11 +119,11 @@ export class SecuritylakeSubscriberNotificationConfigurationHttpsNotificationCon
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,7 +152,7 @@ export class SecuritylakeSubscriberNotificationConfigurationHttpsNotificationCon
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -162,7 +162,7 @@ export class SecuritylakeSubscriberNotificationConfigurationHttpsNotificationCon
       this._httpMethod = undefined;
       this._targetRoleArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -252,15 +252,15 @@ export class SecuritylakeSubscriberNotificationConfigurationHttpsNotificationCon
   }
 }
 
-export class SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration[] | cdktf.IResolvable
+export class SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -274,9 +274,9 @@ export class SecuritylakeSubscriberNotificationConfigurationHttpsNotificationCon
 export interface SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration {
 }
 
-export function securitylakeSubscriberNotificationConfigurationSqsNotificationConfigurationToTerraform(struct?: SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberNotificationConfigurationSqsNotificationConfigurationToTerraform(struct?: SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -284,9 +284,9 @@ export function securitylakeSubscriberNotificationConfigurationSqsNotificationCo
 }
 
 
-export function securitylakeSubscriberNotificationConfigurationSqsNotificationConfigurationToHclTerraform(struct?: SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberNotificationConfigurationSqsNotificationConfigurationToHclTerraform(struct?: SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -294,9 +294,9 @@ export function securitylakeSubscriberNotificationConfigurationSqsNotificationCo
   return attrs;
 }
 
-export class SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfigurationOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -304,11 +304,11 @@ export class SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -317,12 +317,12 @@ export class SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -333,15 +333,15 @@ export class SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfi
   }
 }
 
-export class SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfigurationList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration[] | cdktf.IResolvable
+export class SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfigurationList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -358,41 +358,41 @@ export interface SecuritylakeSubscriberNotificationConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_subscriber_notification#https_notification_configuration SecuritylakeSubscriberNotification#https_notification_configuration}
   */
-  readonly httpsNotificationConfiguration?: SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration[] | cdktf.IResolvable;
+  readonly httpsNotificationConfiguration?: SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration[] | cdktn.IResolvable;
   /**
   * sqs_notification_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_subscriber_notification#sqs_notification_configuration SecuritylakeSubscriberNotification#sqs_notification_configuration}
   */
-  readonly sqsNotificationConfiguration?: SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration[] | cdktf.IResolvable;
+  readonly sqsNotificationConfiguration?: SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration[] | cdktn.IResolvable;
 }
 
-export function securitylakeSubscriberNotificationConfigurationToTerraform(struct?: SecuritylakeSubscriberNotificationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberNotificationConfigurationToTerraform(struct?: SecuritylakeSubscriberNotificationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    https_notification_configuration: cdktf.listMapper(securitylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationToTerraform, true)(struct!.httpsNotificationConfiguration),
-    sqs_notification_configuration: cdktf.listMapper(securitylakeSubscriberNotificationConfigurationSqsNotificationConfigurationToTerraform, true)(struct!.sqsNotificationConfiguration),
+    https_notification_configuration: cdktn.listMapper(securitylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationToTerraform, true)(struct!.httpsNotificationConfiguration),
+    sqs_notification_configuration: cdktn.listMapper(securitylakeSubscriberNotificationConfigurationSqsNotificationConfigurationToTerraform, true)(struct!.sqsNotificationConfiguration),
   }
 }
 
 
-export function securitylakeSubscriberNotificationConfigurationToHclTerraform(struct?: SecuritylakeSubscriberNotificationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeSubscriberNotificationConfigurationToHclTerraform(struct?: SecuritylakeSubscriberNotificationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     https_notification_configuration: {
-      value: cdktf.listMapperHcl(securitylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationToHclTerraform, true)(struct!.httpsNotificationConfiguration),
+      value: cdktn.listMapperHcl(securitylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationToHclTerraform, true)(struct!.httpsNotificationConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationList",
     },
     sqs_notification_configuration: {
-      value: cdktf.listMapperHcl(securitylakeSubscriberNotificationConfigurationSqsNotificationConfigurationToHclTerraform, true)(struct!.sqsNotificationConfiguration),
+      value: cdktn.listMapperHcl(securitylakeSubscriberNotificationConfigurationSqsNotificationConfigurationToHclTerraform, true)(struct!.sqsNotificationConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfigurationList",
@@ -403,9 +403,9 @@ export function securitylakeSubscriberNotificationConfigurationToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeSubscriberNotificationConfigurationOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeSubscriberNotificationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -413,11 +413,11 @@ export class SecuritylakeSubscriberNotificationConfigurationOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeSubscriberNotificationConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeSubscriberNotificationConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -434,14 +434,14 @@ export class SecuritylakeSubscriberNotificationConfigurationOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeSubscriberNotificationConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeSubscriberNotificationConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._httpsNotificationConfiguration.internalValue = undefined;
       this._sqsNotificationConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -458,7 +458,7 @@ export class SecuritylakeSubscriberNotificationConfigurationOutputReference exte
   public get httpsNotificationConfiguration() {
     return this._httpsNotificationConfiguration;
   }
-  public putHttpsNotificationConfiguration(value: SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration[] | cdktf.IResolvable) {
+  public putHttpsNotificationConfiguration(value: SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration[] | cdktn.IResolvable) {
     this._httpsNotificationConfiguration.internalValue = value;
   }
   public resetHttpsNotificationConfiguration() {
@@ -474,7 +474,7 @@ export class SecuritylakeSubscriberNotificationConfigurationOutputReference exte
   public get sqsNotificationConfiguration() {
     return this._sqsNotificationConfiguration;
   }
-  public putSqsNotificationConfiguration(value: SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration[] | cdktf.IResolvable) {
+  public putSqsNotificationConfiguration(value: SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration[] | cdktn.IResolvable) {
     this._sqsNotificationConfiguration.internalValue = value;
   }
   public resetSqsNotificationConfiguration() {
@@ -486,15 +486,15 @@ export class SecuritylakeSubscriberNotificationConfigurationOutputReference exte
   }
 }
 
-export class SecuritylakeSubscriberNotificationConfigurationList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeSubscriberNotificationConfiguration[] | cdktf.IResolvable
+export class SecuritylakeSubscriberNotificationConfigurationList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeSubscriberNotificationConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -509,7 +509,7 @@ export class SecuritylakeSubscriberNotificationConfigurationList extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_subscriber_notification aws_securitylake_subscriber_notification}
 */
-export class SecuritylakeSubscriberNotification extends cdktf.TerraformResource {
+export class SecuritylakeSubscriberNotification extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -520,14 +520,14 @@ export class SecuritylakeSubscriberNotification extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecuritylakeSubscriberNotification resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecuritylakeSubscriberNotification resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecuritylakeSubscriberNotification to import
   * @param importFromId The id of the existing SecuritylakeSubscriberNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_subscriber_notification#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecuritylakeSubscriberNotification to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_securitylake_subscriber_notification", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_securitylake_subscriber_notification", importId: importFromId, provider });
       }
 
   // ===========
@@ -615,7 +615,7 @@ export class SecuritylakeSubscriberNotification extends cdktf.TerraformResource 
   public get configuration() {
     return this._configuration;
   }
-  public putConfiguration(value: SecuritylakeSubscriberNotificationConfiguration[] | cdktf.IResolvable) {
+  public putConfiguration(value: SecuritylakeSubscriberNotificationConfiguration[] | cdktn.IResolvable) {
     this._configuration.internalValue = value;
   }
   public resetConfiguration() {
@@ -632,28 +632,28 @@ export class SecuritylakeSubscriberNotification extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      subscriber_id: cdktf.stringToTerraform(this._subscriberId),
-      configuration: cdktf.listMapper(securitylakeSubscriberNotificationConfigurationToTerraform, true)(this._configuration.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      subscriber_id: cdktn.stringToTerraform(this._subscriberId),
+      configuration: cdktn.listMapper(securitylakeSubscriberNotificationConfigurationToTerraform, true)(this._configuration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subscriber_id: {
-        value: cdktf.stringToHclTerraform(this._subscriberId),
+        value: cdktn.stringToHclTerraform(this._subscriberId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       configuration: {
-        value: cdktf.listMapperHcl(securitylakeSubscriberNotificationConfigurationToHclTerraform, true)(this._configuration.internalValue),
+        value: cdktn.listMapperHcl(securitylakeSubscriberNotificationConfigurationToHclTerraform, true)(this._configuration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SecuritylakeSubscriberNotificationConfigurationList",

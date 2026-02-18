@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedshiftLoggingConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftLoggingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_logging#bucket_name RedshiftLogging#bucket_name}
   */
@@ -43,7 +43,7 @@ export interface RedshiftLoggingConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_logging aws_redshift_logging}
 */
-export class RedshiftLogging extends cdktf.TerraformResource {
+export class RedshiftLogging extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -54,14 +54,14 @@ export class RedshiftLogging extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedshiftLogging resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedshiftLogging resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftLogging to import
   * @param importFromId The id of the existing RedshiftLogging that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_logging#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftLogging to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_logging", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_logging", importId: importFromId, provider });
       }
 
   // ===========
@@ -156,7 +156,7 @@ export class RedshiftLogging extends cdktf.TerraformResource {
   // log_exports - computed: false, optional: true, required: false
   private _logExports?: string[]; 
   public get logExports() {
-    return cdktf.Fn.tolist(this.getListAttribute('log_exports'));
+    return cdktn.Fn.tolist(this.getListAttribute('log_exports'));
   }
   public set logExports(value: string[]) {
     this._logExports = value;
@@ -207,49 +207,49 @@ export class RedshiftLogging extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket_name: cdktf.stringToTerraform(this._bucketName),
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      log_destination_type: cdktf.stringToTerraform(this._logDestinationType),
-      log_exports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._logExports),
-      region: cdktf.stringToTerraform(this._region),
-      s3_key_prefix: cdktf.stringToTerraform(this._s3KeyPrefix),
+      bucket_name: cdktn.stringToTerraform(this._bucketName),
+      cluster_identifier: cdktn.stringToTerraform(this._clusterIdentifier),
+      log_destination_type: cdktn.stringToTerraform(this._logDestinationType),
+      log_exports: cdktn.listMapper(cdktn.stringToTerraform, false)(this._logExports),
+      region: cdktn.stringToTerraform(this._region),
+      s3_key_prefix: cdktn.stringToTerraform(this._s3KeyPrefix),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket_name: {
-        value: cdktf.stringToHclTerraform(this._bucketName),
+        value: cdktn.stringToHclTerraform(this._bucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._clusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_destination_type: {
-        value: cdktf.stringToHclTerraform(this._logDestinationType),
+        value: cdktn.stringToHclTerraform(this._logDestinationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_exports: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._logExports),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._logExports),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_key_prefix: {
-        value: cdktf.stringToHclTerraform(this._s3KeyPrefix),
+        value: cdktn.stringToHclTerraform(this._s3KeyPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

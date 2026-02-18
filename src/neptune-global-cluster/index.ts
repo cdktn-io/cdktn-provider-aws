@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NeptuneGlobalClusterConfig extends cdktf.TerraformMetaArguments {
+export interface NeptuneGlobalClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_global_cluster#deletion_protection NeptuneGlobalCluster#deletion_protection}
   */
-  readonly deletionProtection?: boolean | cdktf.IResolvable;
+  readonly deletionProtection?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_global_cluster#engine NeptuneGlobalCluster#engine}
   */
@@ -48,7 +48,7 @@ export interface NeptuneGlobalClusterConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_global_cluster#storage_encrypted NeptuneGlobalCluster#storage_encrypted}
   */
-  readonly storageEncrypted?: boolean | cdktf.IResolvable;
+  readonly storageEncrypted?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -60,8 +60,8 @@ export interface NeptuneGlobalClusterGlobalClusterMembers {
 }
 
 export function neptuneGlobalClusterGlobalClusterMembersToTerraform(struct?: NeptuneGlobalClusterGlobalClusterMembers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -70,8 +70,8 @@ export function neptuneGlobalClusterGlobalClusterMembersToTerraform(struct?: Nep
 
 
 export function neptuneGlobalClusterGlobalClusterMembersToHclTerraform(struct?: NeptuneGlobalClusterGlobalClusterMembers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -79,7 +79,7 @@ export function neptuneGlobalClusterGlobalClusterMembersToHclTerraform(struct?: 
   return attrs;
 }
 
-export class NeptuneGlobalClusterGlobalClusterMembersOutputReference extends cdktf.ComplexObject {
+export class NeptuneGlobalClusterGlobalClusterMembersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -88,7 +88,7 @@ export class NeptuneGlobalClusterGlobalClusterMembersOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -118,14 +118,14 @@ export class NeptuneGlobalClusterGlobalClusterMembersOutputReference extends cdk
   }
 }
 
-export class NeptuneGlobalClusterGlobalClusterMembersList extends cdktf.ComplexList {
+export class NeptuneGlobalClusterGlobalClusterMembersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -151,39 +151,39 @@ export interface NeptuneGlobalClusterTimeouts {
   readonly update?: string;
 }
 
-export function neptuneGlobalClusterTimeoutsToTerraform(struct?: NeptuneGlobalClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function neptuneGlobalClusterTimeoutsToTerraform(struct?: NeptuneGlobalClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function neptuneGlobalClusterTimeoutsToHclTerraform(struct?: NeptuneGlobalClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function neptuneGlobalClusterTimeoutsToHclTerraform(struct?: NeptuneGlobalClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -194,19 +194,19 @@ export function neptuneGlobalClusterTimeoutsToHclTerraform(struct?: NeptuneGloba
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NeptuneGlobalClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NeptuneGlobalClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NeptuneGlobalClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NeptuneGlobalClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -227,7 +227,7 @@ export class NeptuneGlobalClusterTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NeptuneGlobalClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NeptuneGlobalClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -235,7 +235,7 @@ export class NeptuneGlobalClusterTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -300,7 +300,7 @@ export class NeptuneGlobalClusterTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_global_cluster aws_neptune_global_cluster}
 */
-export class NeptuneGlobalCluster extends cdktf.TerraformResource {
+export class NeptuneGlobalCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -311,14 +311,14 @@ export class NeptuneGlobalCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NeptuneGlobalCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NeptuneGlobalCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NeptuneGlobalCluster to import
   * @param importFromId The id of the existing NeptuneGlobalCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_global_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NeptuneGlobalCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_neptune_global_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_neptune_global_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -369,11 +369,11 @@ export class NeptuneGlobalCluster extends cdktf.TerraformResource {
   }
 
   // deletion_protection - computed: false, optional: true, required: false
-  private _deletionProtection?: boolean | cdktf.IResolvable; 
+  private _deletionProtection?: boolean | cdktn.IResolvable; 
   public get deletionProtection() {
     return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean | cdktf.IResolvable) {
+  public set deletionProtection(value: boolean | cdktn.IResolvable) {
     this._deletionProtection = value;
   }
   public resetDeletionProtection() {
@@ -494,11 +494,11 @@ export class NeptuneGlobalCluster extends cdktf.TerraformResource {
   }
 
   // storage_encrypted - computed: true, optional: true, required: false
-  private _storageEncrypted?: boolean | cdktf.IResolvable; 
+  private _storageEncrypted?: boolean | cdktn.IResolvable; 
   public get storageEncrypted() {
     return this.getBooleanAttribute('storage_encrypted');
   }
-  public set storageEncrypted(value: boolean | cdktf.IResolvable) {
+  public set storageEncrypted(value: boolean | cdktn.IResolvable) {
     this._storageEncrypted = value;
   }
   public resetStorageEncrypted() {
@@ -531,14 +531,14 @@ export class NeptuneGlobalCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
-      engine: cdktf.stringToTerraform(this._engine),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      global_cluster_identifier: cdktf.stringToTerraform(this._globalClusterIdentifier),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      source_db_cluster_identifier: cdktf.stringToTerraform(this._sourceDbClusterIdentifier),
-      storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
+      deletion_protection: cdktn.booleanToTerraform(this._deletionProtection),
+      engine: cdktn.stringToTerraform(this._engine),
+      engine_version: cdktn.stringToTerraform(this._engineVersion),
+      global_cluster_identifier: cdktn.stringToTerraform(this._globalClusterIdentifier),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      source_db_cluster_identifier: cdktn.stringToTerraform(this._sourceDbClusterIdentifier),
+      storage_encrypted: cdktn.booleanToTerraform(this._storageEncrypted),
       timeouts: neptuneGlobalClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -546,49 +546,49 @@ export class NeptuneGlobalCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deletion_protection: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtection),
+        value: cdktn.booleanToHclTerraform(this._deletionProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_version: {
-        value: cdktf.stringToHclTerraform(this._engineVersion),
+        value: cdktn.stringToHclTerraform(this._engineVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       global_cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._globalClusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._globalClusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_db_cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._sourceDbClusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._sourceDbClusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_encrypted: {
-        value: cdktf.booleanToHclTerraform(this._storageEncrypted),
+        value: cdktn.booleanToHclTerraform(this._storageEncrypted),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

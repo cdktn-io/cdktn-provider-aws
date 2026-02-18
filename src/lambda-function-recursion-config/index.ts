@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LambdaFunctionRecursionConfigConfig extends cdktf.TerraformMetaArguments {
+export interface LambdaFunctionRecursionConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function_recursion_config#function_name LambdaFunctionRecursionConfig#function_name}
   */
@@ -31,7 +31,7 @@ export interface LambdaFunctionRecursionConfigConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function_recursion_config aws_lambda_function_recursion_config}
 */
-export class LambdaFunctionRecursionConfig extends cdktf.TerraformResource {
+export class LambdaFunctionRecursionConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -42,14 +42,14 @@ export class LambdaFunctionRecursionConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LambdaFunctionRecursionConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LambdaFunctionRecursionConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LambdaFunctionRecursionConfig to import
   * @param importFromId The id of the existing LambdaFunctionRecursionConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_function_recursion_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LambdaFunctionRecursionConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_function_recursion_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_function_recursion_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -136,28 +136,28 @@ export class LambdaFunctionRecursionConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      function_name: cdktf.stringToTerraform(this._functionName),
-      recursive_loop: cdktf.stringToTerraform(this._recursiveLoop),
-      region: cdktf.stringToTerraform(this._region),
+      function_name: cdktn.stringToTerraform(this._functionName),
+      recursive_loop: cdktn.stringToTerraform(this._recursiveLoop),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       function_name: {
-        value: cdktf.stringToHclTerraform(this._functionName),
+        value: cdktn.stringToHclTerraform(this._functionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recursive_loop: {
-        value: cdktf.stringToHclTerraform(this._recursiveLoop),
+        value: cdktn.stringToHclTerraform(this._recursiveLoop),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsmPatchGroupConfig extends cdktf.TerraformMetaArguments {
+export interface SsmPatchGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_patch_group#baseline_id SsmPatchGroup#baseline_id}
   */
@@ -38,7 +38,7 @@ export interface SsmPatchGroupConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_patch_group aws_ssm_patch_group}
 */
-export class SsmPatchGroup extends cdktf.TerraformResource {
+export class SsmPatchGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class SsmPatchGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsmPatchGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsmPatchGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmPatchGroup to import
   * @param importFromId The id of the existing SsmPatchGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_patch_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmPatchGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_patch_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_patch_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class SsmPatchGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      baseline_id: cdktf.stringToTerraform(this._baselineId),
-      id: cdktf.stringToTerraform(this._id),
-      patch_group: cdktf.stringToTerraform(this._patchGroup),
-      region: cdktf.stringToTerraform(this._region),
+      baseline_id: cdktn.stringToTerraform(this._baselineId),
+      id: cdktn.stringToTerraform(this._id),
+      patch_group: cdktn.stringToTerraform(this._patchGroup),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       baseline_id: {
-        value: cdktf.stringToHclTerraform(this._baselineId),
+        value: cdktn.stringToHclTerraform(this._baselineId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       patch_group: {
-        value: cdktf.stringToHclTerraform(this._patchGroup),
+        value: cdktn.stringToHclTerraform(this._patchGroup),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

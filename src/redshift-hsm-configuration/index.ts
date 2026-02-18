@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedshiftHsmConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftHsmConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_hsm_configuration#description RedshiftHsmConfiguration#description}
   */
@@ -62,7 +62,7 @@ export interface RedshiftHsmConfigurationConfig extends cdktf.TerraformMetaArgum
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_hsm_configuration aws_redshift_hsm_configuration}
 */
-export class RedshiftHsmConfiguration extends cdktf.TerraformResource {
+export class RedshiftHsmConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -73,14 +73,14 @@ export class RedshiftHsmConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedshiftHsmConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedshiftHsmConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftHsmConfiguration to import
   * @param importFromId The id of the existing RedshiftHsmConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_hsm_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftHsmConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_hsm_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_hsm_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -279,77 +279,77 @@ export class RedshiftHsmConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      hsm_configuration_identifier: cdktf.stringToTerraform(this._hsmConfigurationIdentifier),
-      hsm_ip_address: cdktf.stringToTerraform(this._hsmIpAddress),
-      hsm_partition_name: cdktf.stringToTerraform(this._hsmPartitionName),
-      hsm_partition_password: cdktf.stringToTerraform(this._hsmPartitionPassword),
-      hsm_server_public_certificate: cdktf.stringToTerraform(this._hsmServerPublicCertificate),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      description: cdktn.stringToTerraform(this._description),
+      hsm_configuration_identifier: cdktn.stringToTerraform(this._hsmConfigurationIdentifier),
+      hsm_ip_address: cdktn.stringToTerraform(this._hsmIpAddress),
+      hsm_partition_name: cdktn.stringToTerraform(this._hsmPartitionName),
+      hsm_partition_password: cdktn.stringToTerraform(this._hsmPartitionPassword),
+      hsm_server_public_certificate: cdktn.stringToTerraform(this._hsmServerPublicCertificate),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hsm_configuration_identifier: {
-        value: cdktf.stringToHclTerraform(this._hsmConfigurationIdentifier),
+        value: cdktn.stringToHclTerraform(this._hsmConfigurationIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hsm_ip_address: {
-        value: cdktf.stringToHclTerraform(this._hsmIpAddress),
+        value: cdktn.stringToHclTerraform(this._hsmIpAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hsm_partition_name: {
-        value: cdktf.stringToHclTerraform(this._hsmPartitionName),
+        value: cdktn.stringToHclTerraform(this._hsmPartitionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hsm_partition_password: {
-        value: cdktf.stringToHclTerraform(this._hsmPartitionPassword),
+        value: cdktn.stringToHclTerraform(this._hsmPartitionPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hsm_server_public_certificate: {
-        value: cdktf.stringToHclTerraform(this._hsmServerPublicCertificate),
+        value: cdktn.stringToHclTerraform(this._hsmServerPublicCertificate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

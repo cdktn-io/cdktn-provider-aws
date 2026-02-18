@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppstreamDirectoryConfigConfig extends cdktf.TerraformMetaArguments {
+export interface AppstreamDirectoryConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_directory_config#directory_name AppstreamDirectoryConfig#directory_name}
   */
@@ -58,31 +58,31 @@ export interface AppstreamDirectoryConfigCertificateBasedAuthProperties {
 }
 
 export function appstreamDirectoryConfigCertificateBasedAuthPropertiesToTerraform(struct?: AppstreamDirectoryConfigCertificateBasedAuthPropertiesOutputReference | AppstreamDirectoryConfigCertificateBasedAuthProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_authority_arn: cdktf.stringToTerraform(struct!.certificateAuthorityArn),
-    status: cdktf.stringToTerraform(struct!.status),
+    certificate_authority_arn: cdktn.stringToTerraform(struct!.certificateAuthorityArn),
+    status: cdktn.stringToTerraform(struct!.status),
   }
 }
 
 
 export function appstreamDirectoryConfigCertificateBasedAuthPropertiesToHclTerraform(struct?: AppstreamDirectoryConfigCertificateBasedAuthPropertiesOutputReference | AppstreamDirectoryConfigCertificateBasedAuthProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate_authority_arn: {
-      value: cdktf.stringToHclTerraform(struct!.certificateAuthorityArn),
+      value: cdktn.stringToHclTerraform(struct!.certificateAuthorityArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -93,14 +93,14 @@ export function appstreamDirectoryConfigCertificateBasedAuthPropertiesToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppstreamDirectoryConfigCertificateBasedAuthPropertiesOutputReference extends cdktf.ComplexObject {
+export class AppstreamDirectoryConfigCertificateBasedAuthPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -175,31 +175,31 @@ export interface AppstreamDirectoryConfigServiceAccountCredentials {
 }
 
 export function appstreamDirectoryConfigServiceAccountCredentialsToTerraform(struct?: AppstreamDirectoryConfigServiceAccountCredentialsOutputReference | AppstreamDirectoryConfigServiceAccountCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_name: cdktf.stringToTerraform(struct!.accountName),
-    account_password: cdktf.stringToTerraform(struct!.accountPassword),
+    account_name: cdktn.stringToTerraform(struct!.accountName),
+    account_password: cdktn.stringToTerraform(struct!.accountPassword),
   }
 }
 
 
 export function appstreamDirectoryConfigServiceAccountCredentialsToHclTerraform(struct?: AppstreamDirectoryConfigServiceAccountCredentialsOutputReference | AppstreamDirectoryConfigServiceAccountCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_name: {
-      value: cdktf.stringToHclTerraform(struct!.accountName),
+      value: cdktn.stringToHclTerraform(struct!.accountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     account_password: {
-      value: cdktf.stringToHclTerraform(struct!.accountPassword),
+      value: cdktn.stringToHclTerraform(struct!.accountPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -210,14 +210,14 @@ export function appstreamDirectoryConfigServiceAccountCredentialsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppstreamDirectoryConfigServiceAccountCredentialsOutputReference extends cdktf.ComplexObject {
+export class AppstreamDirectoryConfigServiceAccountCredentialsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -278,7 +278,7 @@ export class AppstreamDirectoryConfigServiceAccountCredentialsOutputReference ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_directory_config aws_appstream_directory_config}
 */
-export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
+export class AppstreamDirectoryConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -289,14 +289,14 @@ export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppstreamDirectoryConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppstreamDirectoryConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppstreamDirectoryConfig to import
   * @param importFromId The id of the existing AppstreamDirectoryConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_directory_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppstreamDirectoryConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appstream_directory_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appstream_directory_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -375,7 +375,7 @@ export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
   // organizational_unit_distinguished_names - computed: false, optional: false, required: true
   private _organizationalUnitDistinguishedNames?: string[]; 
   public get organizationalUnitDistinguishedNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('organizational_unit_distinguished_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('organizational_unit_distinguished_names'));
   }
   public set organizationalUnitDistinguishedNames(value: string[]) {
     this._organizationalUnitDistinguishedNames = value;
@@ -436,10 +436,10 @@ export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      directory_name: cdktf.stringToTerraform(this._directoryName),
-      id: cdktf.stringToTerraform(this._id),
-      organizational_unit_distinguished_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._organizationalUnitDistinguishedNames),
-      region: cdktf.stringToTerraform(this._region),
+      directory_name: cdktn.stringToTerraform(this._directoryName),
+      id: cdktn.stringToTerraform(this._id),
+      organizational_unit_distinguished_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._organizationalUnitDistinguishedNames),
+      region: cdktn.stringToTerraform(this._region),
       certificate_based_auth_properties: appstreamDirectoryConfigCertificateBasedAuthPropertiesToTerraform(this._certificateBasedAuthProperties.internalValue),
       service_account_credentials: appstreamDirectoryConfigServiceAccountCredentialsToTerraform(this._serviceAccountCredentials.internalValue),
     };
@@ -448,25 +448,25 @@ export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       directory_name: {
-        value: cdktf.stringToHclTerraform(this._directoryName),
+        value: cdktn.stringToHclTerraform(this._directoryName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organizational_unit_distinguished_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._organizationalUnitDistinguishedNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._organizationalUnitDistinguishedNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

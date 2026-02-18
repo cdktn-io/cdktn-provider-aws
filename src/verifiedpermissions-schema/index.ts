@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VerifiedpermissionsSchemaConfig extends cdktf.TerraformMetaArguments {
+export interface VerifiedpermissionsSchemaConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_schema#policy_store_id VerifiedpermissionsSchema#policy_store_id}
   */
@@ -27,7 +27,7 @@ export interface VerifiedpermissionsSchemaConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_schema#definition VerifiedpermissionsSchema#definition}
   */
-  readonly definition?: VerifiedpermissionsSchemaDefinition[] | cdktf.IResolvable;
+  readonly definition?: VerifiedpermissionsSchemaDefinition[] | cdktn.IResolvable;
 }
 export interface VerifiedpermissionsSchemaDefinition {
   /**
@@ -36,25 +36,25 @@ export interface VerifiedpermissionsSchemaDefinition {
   readonly value: string;
 }
 
-export function verifiedpermissionsSchemaDefinitionToTerraform(struct?: VerifiedpermissionsSchemaDefinition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsSchemaDefinitionToTerraform(struct?: VerifiedpermissionsSchemaDefinition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.stringToTerraform(struct!.value),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function verifiedpermissionsSchemaDefinitionToHclTerraform(struct?: VerifiedpermissionsSchemaDefinition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function verifiedpermissionsSchemaDefinitionToHclTerraform(struct?: VerifiedpermissionsSchemaDefinition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -65,9 +65,9 @@ export function verifiedpermissionsSchemaDefinitionToHclTerraform(struct?: Verif
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedpermissionsSchemaDefinitionOutputReference extends cdktf.ComplexObject {
+export class VerifiedpermissionsSchemaDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -75,11 +75,11 @@ export class VerifiedpermissionsSchemaDefinitionOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VerifiedpermissionsSchemaDefinition | cdktf.IResolvable | undefined {
+  public get internalValue(): VerifiedpermissionsSchemaDefinition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -92,13 +92,13 @@ export class VerifiedpermissionsSchemaDefinitionOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VerifiedpermissionsSchemaDefinition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VerifiedpermissionsSchemaDefinition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -123,15 +123,15 @@ export class VerifiedpermissionsSchemaDefinitionOutputReference extends cdktf.Co
   }
 }
 
-export class VerifiedpermissionsSchemaDefinitionList extends cdktf.ComplexList {
-  public internalValue? : VerifiedpermissionsSchemaDefinition[] | cdktf.IResolvable
+export class VerifiedpermissionsSchemaDefinitionList extends cdktn.ComplexList {
+  public internalValue? : VerifiedpermissionsSchemaDefinition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -146,7 +146,7 @@ export class VerifiedpermissionsSchemaDefinitionList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema}
 */
-export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
+export class VerifiedpermissionsSchema extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -157,14 +157,14 @@ export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VerifiedpermissionsSchema resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VerifiedpermissionsSchema resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedpermissionsSchema to import
   * @param importFromId The id of the existing VerifiedpermissionsSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedpermissions_schema#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedpermissionsSchema to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedpermissions_schema", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedpermissions_schema", importId: importFromId, provider });
       }
 
   // ===========
@@ -210,7 +210,7 @@ export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
 
   // namespaces - computed: true, optional: false, required: false
   public get namespaces() {
-    return cdktf.Fn.tolist(this.getListAttribute('namespaces'));
+    return cdktn.Fn.tolist(this.getListAttribute('namespaces'));
   }
 
   // policy_store_id - computed: false, optional: false, required: true
@@ -247,7 +247,7 @@ export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
   public get definition() {
     return this._definition;
   }
-  public putDefinition(value: VerifiedpermissionsSchemaDefinition[] | cdktf.IResolvable) {
+  public putDefinition(value: VerifiedpermissionsSchemaDefinition[] | cdktn.IResolvable) {
     this._definition.internalValue = value;
   }
   public resetDefinition() {
@@ -264,28 +264,28 @@ export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy_store_id: cdktf.stringToTerraform(this._policyStoreId),
-      region: cdktf.stringToTerraform(this._region),
-      definition: cdktf.listMapper(verifiedpermissionsSchemaDefinitionToTerraform, true)(this._definition.internalValue),
+      policy_store_id: cdktn.stringToTerraform(this._policyStoreId),
+      region: cdktn.stringToTerraform(this._region),
+      definition: cdktn.listMapper(verifiedpermissionsSchemaDefinitionToTerraform, true)(this._definition.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       policy_store_id: {
-        value: cdktf.stringToHclTerraform(this._policyStoreId),
+        value: cdktn.stringToHclTerraform(this._policyStoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       definition: {
-        value: cdktf.listMapperHcl(verifiedpermissionsSchemaDefinitionToHclTerraform, true)(this._definition.internalValue),
+        value: cdktn.listMapperHcl(verifiedpermissionsSchemaDefinitionToHclTerraform, true)(this._definition.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VerifiedpermissionsSchemaDefinitionList",

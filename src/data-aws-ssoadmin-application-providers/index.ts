@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsSsoadminApplicationProvidersConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSsoadminApplicationProvidersConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -23,8 +23,8 @@ export interface DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayD
 }
 
 export function dataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataToTerraform(struct?: DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -33,8 +33,8 @@ export function dataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDa
 
 
 export function dataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataToHclTerraform(struct?: DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -42,7 +42,7 @@ export function dataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDa
   return attrs;
 }
 
-export class DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -51,7 +51,7 @@ export class DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -86,14 +86,14 @@ export class DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataO
   }
 }
 
-export class DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataList extends cdktf.ComplexList {
+export class DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -108,8 +108,8 @@ export interface DataAwsSsoadminApplicationProvidersApplicationProviders {
 }
 
 export function dataAwsSsoadminApplicationProvidersApplicationProvidersToTerraform(struct?: DataAwsSsoadminApplicationProvidersApplicationProviders): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -118,8 +118,8 @@ export function dataAwsSsoadminApplicationProvidersApplicationProvidersToTerrafo
 
 
 export function dataAwsSsoadminApplicationProvidersApplicationProvidersToHclTerraform(struct?: DataAwsSsoadminApplicationProvidersApplicationProviders): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -127,7 +127,7 @@ export function dataAwsSsoadminApplicationProvidersApplicationProvidersToHclTerr
   return attrs;
 }
 
-export class DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -136,7 +136,7 @@ export class DataAwsSsoadminApplicationProvidersApplicationProvidersOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -172,14 +172,14 @@ export class DataAwsSsoadminApplicationProvidersApplicationProvidersOutputRefere
   }
 }
 
-export class DataAwsSsoadminApplicationProvidersApplicationProvidersList extends cdktf.ComplexList {
+export class DataAwsSsoadminApplicationProvidersApplicationProvidersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -194,7 +194,7 @@ export class DataAwsSsoadminApplicationProvidersApplicationProvidersList extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssoadmin_application_providers aws_ssoadmin_application_providers}
 */
-export class DataAwsSsoadminApplicationProviders extends cdktf.TerraformDataSource {
+export class DataAwsSsoadminApplicationProviders extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -205,14 +205,14 @@ export class DataAwsSsoadminApplicationProviders extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsSsoadminApplicationProviders resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsSsoadminApplicationProviders resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSsoadminApplicationProviders to import
   * @param importFromId The id of the existing DataAwsSsoadminApplicationProviders that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssoadmin_application_providers#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSsoadminApplicationProviders to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_application_providers", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_application_providers", importId: importFromId, provider });
       }
 
   // ===========
@@ -282,14 +282,14 @@ export class DataAwsSsoadminApplicationProviders extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

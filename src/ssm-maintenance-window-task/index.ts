@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsmMaintenanceWindowTaskConfig extends cdktf.TerraformMetaArguments {
+export interface SsmMaintenanceWindowTaskConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window_task#cutoff_behavior SsmMaintenanceWindowTask#cutoff_behavior}
   */
@@ -70,7 +70,7 @@ export interface SsmMaintenanceWindowTaskConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window_task#targets SsmMaintenanceWindowTask#targets}
   */
-  readonly targets?: SsmMaintenanceWindowTaskTargets[] | cdktf.IResolvable;
+  readonly targets?: SsmMaintenanceWindowTaskTargets[] | cdktn.IResolvable;
   /**
   * task_invocation_parameters block
   *
@@ -89,32 +89,32 @@ export interface SsmMaintenanceWindowTaskTargets {
   readonly values: string[];
 }
 
-export function ssmMaintenanceWindowTaskTargetsToTerraform(struct?: SsmMaintenanceWindowTaskTargets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmMaintenanceWindowTaskTargetsToTerraform(struct?: SsmMaintenanceWindowTaskTargets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function ssmMaintenanceWindowTaskTargetsToHclTerraform(struct?: SsmMaintenanceWindowTaskTargets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmMaintenanceWindowTaskTargetsToHclTerraform(struct?: SsmMaintenanceWindowTaskTargets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -125,9 +125,9 @@ export function ssmMaintenanceWindowTaskTargetsToHclTerraform(struct?: SsmMainte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmMaintenanceWindowTaskTargetsOutputReference extends cdktf.ComplexObject {
+export class SsmMaintenanceWindowTaskTargetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -135,11 +135,11 @@ export class SsmMaintenanceWindowTaskTargetsOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmMaintenanceWindowTaskTargets | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmMaintenanceWindowTaskTargets | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,14 +156,14 @@ export class SsmMaintenanceWindowTaskTargetsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmMaintenanceWindowTaskTargets | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmMaintenanceWindowTaskTargets | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -202,15 +202,15 @@ export class SsmMaintenanceWindowTaskTargetsOutputReference extends cdktf.Comple
   }
 }
 
-export class SsmMaintenanceWindowTaskTargetsList extends cdktf.ComplexList {
-  public internalValue? : SsmMaintenanceWindowTaskTargets[] | cdktf.IResolvable
+export class SsmMaintenanceWindowTaskTargetsList extends cdktn.ComplexList {
+  public internalValue? : SsmMaintenanceWindowTaskTargets[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -232,32 +232,32 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParam
   readonly values: string[];
 }
 
-export function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterToHclTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterToHclTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -268,9 +268,9 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParame
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference extends cdktf.ComplexObject {
+export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -278,11 +278,11 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameter
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -299,14 +299,14 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameter
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -345,15 +345,15 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameter
   }
 }
 
-export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterList extends cdktf.ComplexList {
-  public internalValue? : SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[] | cdktf.IResolvable
+export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterList extends cdktn.ComplexList {
+  public internalValue? : SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -374,35 +374,35 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParam
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window_task#parameter SsmMaintenanceWindowTask#parameter}
   */
-  readonly parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[] | cdktf.IResolvable;
+  readonly parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[] | cdktn.IResolvable;
 }
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    document_version: cdktf.stringToTerraform(struct!.documentVersion),
-    parameter: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterToTerraform, true)(struct!.parameter),
+    document_version: cdktn.stringToTerraform(struct!.documentVersion),
+    parameter: cdktn.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterToTerraform, true)(struct!.parameter),
   }
 }
 
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersToHclTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     document_version: {
-      value: cdktf.stringToHclTerraform(struct!.documentVersion),
+      value: cdktn.stringToHclTerraform(struct!.documentVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter: {
-      value: cdktf.listMapperHcl(ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterToHclTerraform, true)(struct!.parameter),
+      value: cdktn.listMapperHcl(ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterToHclTerraform, true)(struct!.parameter),
       isBlock: true,
       type: "set",
       storageClassType: "SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterList",
@@ -413,14 +413,14 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParame
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference extends cdktf.ComplexObject {
+export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -472,7 +472,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameter
   public get parameter() {
     return this._parameter;
   }
-  public putParameter(value: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[] | cdktf.IResolvable) {
+  public putParameter(value: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[] | cdktn.IResolvable) {
     this._parameter.internalValue = value;
   }
   public resetParameter() {
@@ -499,38 +499,38 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameter
 }
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_context: cdktf.stringToTerraform(struct!.clientContext),
-    payload: cdktf.stringToTerraform(struct!.payload),
-    qualifier: cdktf.stringToTerraform(struct!.qualifier),
+    client_context: cdktn.stringToTerraform(struct!.clientContext),
+    payload: cdktn.stringToTerraform(struct!.payload),
+    qualifier: cdktn.stringToTerraform(struct!.qualifier),
   }
 }
 
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersToHclTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_context: {
-      value: cdktf.stringToHclTerraform(struct!.clientContext),
+      value: cdktn.stringToHclTerraform(struct!.clientContext),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     payload: {
-      value: cdktf.stringToHclTerraform(struct!.payload),
+      value: cdktn.stringToHclTerraform(struct!.payload),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     qualifier: {
-      value: cdktf.stringToHclTerraform(struct!.qualifier),
+      value: cdktn.stringToHclTerraform(struct!.qualifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -541,14 +541,14 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference extends cdktf.ComplexObject {
+export class SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -641,35 +641,35 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParam
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window_task#cloudwatch_output_enabled SsmMaintenanceWindowTask#cloudwatch_output_enabled}
   */
-  readonly cloudwatchOutputEnabled?: boolean | cdktf.IResolvable;
+  readonly cloudwatchOutputEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloudwatch_log_group_name: cdktf.stringToTerraform(struct!.cloudwatchLogGroupName),
-    cloudwatch_output_enabled: cdktf.booleanToTerraform(struct!.cloudwatchOutputEnabled),
+    cloudwatch_log_group_name: cdktn.stringToTerraform(struct!.cloudwatchLogGroupName),
+    cloudwatch_output_enabled: cdktn.booleanToTerraform(struct!.cloudwatchOutputEnabled),
   }
 }
 
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigToHclTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloudwatch_log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.cloudwatchLogGroupName),
+      value: cdktn.stringToHclTerraform(struct!.cloudwatchLogGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cloudwatch_output_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.cloudwatchOutputEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.cloudwatchOutputEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -680,14 +680,14 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParame
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference extends cdktf.ComplexObject {
+export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -735,11 +735,11 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   }
 
   // cloudwatch_output_enabled - computed: false, optional: true, required: false
-  private _cloudwatchOutputEnabled?: boolean | cdktf.IResolvable; 
+  private _cloudwatchOutputEnabled?: boolean | cdktn.IResolvable; 
   public get cloudwatchOutputEnabled() {
     return this.getBooleanAttribute('cloudwatch_output_enabled');
   }
-  public set cloudwatchOutputEnabled(value: boolean | cdktf.IResolvable) {
+  public set cloudwatchOutputEnabled(value: boolean | cdktn.IResolvable) {
     this._cloudwatchOutputEnabled = value;
   }
   public resetCloudwatchOutputEnabled() {
@@ -766,38 +766,38 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParam
 }
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    notification_arn: cdktf.stringToTerraform(struct!.notificationArn),
-    notification_events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notificationEvents),
-    notification_type: cdktf.stringToTerraform(struct!.notificationType),
+    notification_arn: cdktn.stringToTerraform(struct!.notificationArn),
+    notification_events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.notificationEvents),
+    notification_type: cdktn.stringToTerraform(struct!.notificationType),
   }
 }
 
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigToHclTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     notification_arn: {
-      value: cdktf.stringToHclTerraform(struct!.notificationArn),
+      value: cdktn.stringToHclTerraform(struct!.notificationArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     notification_events: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notificationEvents),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.notificationEvents),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     notification_type: {
-      value: cdktf.stringToHclTerraform(struct!.notificationType),
+      value: cdktn.stringToHclTerraform(struct!.notificationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -808,14 +808,14 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParame
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference extends cdktf.ComplexObject {
+export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -911,32 +911,32 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParam
   readonly values: string[];
 }
 
-export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterToHclTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterToHclTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -947,9 +947,9 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParame
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterOutputReference extends cdktf.ComplexObject {
+export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -957,11 +957,11 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -978,14 +978,14 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1024,15 +1024,15 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   }
 }
 
-export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList extends cdktf.ComplexList {
-  public internalValue? : SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[] | cdktf.IResolvable
+export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList extends cdktn.ComplexList {
+  public internalValue? : SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1093,80 +1093,80 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParam
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window_task#parameter SsmMaintenanceWindowTask#parameter}
   */
-  readonly parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[] | cdktf.IResolvable;
+  readonly parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[] | cdktn.IResolvable;
 }
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comment: cdktf.stringToTerraform(struct!.comment),
-    document_hash: cdktf.stringToTerraform(struct!.documentHash),
-    document_hash_type: cdktf.stringToTerraform(struct!.documentHashType),
-    document_version: cdktf.stringToTerraform(struct!.documentVersion),
-    output_s3_bucket: cdktf.stringToTerraform(struct!.outputS3Bucket),
-    output_s3_key_prefix: cdktf.stringToTerraform(struct!.outputS3KeyPrefix),
-    service_role_arn: cdktf.stringToTerraform(struct!.serviceRoleArn),
-    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    comment: cdktn.stringToTerraform(struct!.comment),
+    document_hash: cdktn.stringToTerraform(struct!.documentHash),
+    document_hash_type: cdktn.stringToTerraform(struct!.documentHashType),
+    document_version: cdktn.stringToTerraform(struct!.documentVersion),
+    output_s3_bucket: cdktn.stringToTerraform(struct!.outputS3Bucket),
+    output_s3_key_prefix: cdktn.stringToTerraform(struct!.outputS3KeyPrefix),
+    service_role_arn: cdktn.stringToTerraform(struct!.serviceRoleArn),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
     cloudwatch_config: ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigToTerraform(struct!.cloudwatchConfig),
     notification_config: ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigToTerraform(struct!.notificationConfig),
-    parameter: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterToTerraform, true)(struct!.parameter),
+    parameter: cdktn.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterToTerraform, true)(struct!.parameter),
   }
 }
 
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersToHclTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comment: {
-      value: cdktf.stringToHclTerraform(struct!.comment),
+      value: cdktn.stringToHclTerraform(struct!.comment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     document_hash: {
-      value: cdktf.stringToHclTerraform(struct!.documentHash),
+      value: cdktn.stringToHclTerraform(struct!.documentHash),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     document_hash_type: {
-      value: cdktf.stringToHclTerraform(struct!.documentHashType),
+      value: cdktn.stringToHclTerraform(struct!.documentHashType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     document_version: {
-      value: cdktf.stringToHclTerraform(struct!.documentVersion),
+      value: cdktn.stringToHclTerraform(struct!.documentVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     output_s3_bucket: {
-      value: cdktf.stringToHclTerraform(struct!.outputS3Bucket),
+      value: cdktn.stringToHclTerraform(struct!.outputS3Bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     output_s3_key_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.outputS3KeyPrefix),
+      value: cdktn.stringToHclTerraform(struct!.outputS3KeyPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.serviceRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.serviceRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1184,7 +1184,7 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParame
       storageClassType: "SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigList",
     },
     parameter: {
-      value: cdktf.listMapperHcl(ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterToHclTerraform, true)(struct!.parameter),
+      value: cdktn.listMapperHcl(ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterToHclTerraform, true)(struct!.parameter),
       isBlock: true,
       type: "set",
       storageClassType: "SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList",
@@ -1195,14 +1195,14 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParame
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference extends cdktf.ComplexObject {
+export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1452,7 +1452,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   public get parameter() {
     return this._parameter;
   }
-  public putParameter(value: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[] | cdktf.IResolvable) {
+  public putParameter(value: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[] | cdktn.IResolvable) {
     this._parameter.internalValue = value;
   }
   public resetParameter() {
@@ -1475,31 +1475,31 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsPa
 }
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    input: cdktf.stringToTerraform(struct!.input),
-    name: cdktf.stringToTerraform(struct!.name),
+    input: cdktn.stringToTerraform(struct!.input),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersToHclTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     input: {
-      value: cdktf.stringToHclTerraform(struct!.input),
+      value: cdktn.stringToHclTerraform(struct!.input),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1510,14 +1510,14 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsPar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference extends cdktf.ComplexObject {
+export class SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1608,8 +1608,8 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParameters {
 }
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference | SsmMaintenanceWindowTaskTaskInvocationParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1622,8 +1622,8 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersToTerraform(stru
 
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersToHclTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference | SsmMaintenanceWindowTaskTaskInvocationParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1657,14 +1657,14 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference extends cdktf.ComplexObject {
+export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1775,7 +1775,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference ext
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window_task aws_ssm_maintenance_window_task}
 */
-export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
+export class SsmMaintenanceWindowTask extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1786,14 +1786,14 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsmMaintenanceWindowTask resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsmMaintenanceWindowTask resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmMaintenanceWindowTask to import
   * @param importFromId The id of the existing SsmMaintenanceWindowTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_maintenance_window_task#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmMaintenanceWindowTask to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_maintenance_window_task", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_maintenance_window_task", importId: importFromId, provider });
       }
 
   // ===========
@@ -2041,7 +2041,7 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
   public get targets() {
     return this._targets;
   }
-  public putTargets(value: SsmMaintenanceWindowTaskTargets[] | cdktf.IResolvable) {
+  public putTargets(value: SsmMaintenanceWindowTaskTargets[] | cdktn.IResolvable) {
     this._targets.internalValue = value;
   }
   public resetTargets() {
@@ -2074,19 +2074,19 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cutoff_behavior: cdktf.stringToTerraform(this._cutoffBehavior),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      max_concurrency: cdktf.stringToTerraform(this._maxConcurrency),
-      max_errors: cdktf.stringToTerraform(this._maxErrors),
-      name: cdktf.stringToTerraform(this._name),
-      priority: cdktf.numberToTerraform(this._priority),
-      region: cdktf.stringToTerraform(this._region),
-      service_role_arn: cdktf.stringToTerraform(this._serviceRoleArn),
-      task_arn: cdktf.stringToTerraform(this._taskArn),
-      task_type: cdktf.stringToTerraform(this._taskType),
-      window_id: cdktf.stringToTerraform(this._windowId),
-      targets: cdktf.listMapper(ssmMaintenanceWindowTaskTargetsToTerraform, true)(this._targets.internalValue),
+      cutoff_behavior: cdktn.stringToTerraform(this._cutoffBehavior),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      max_concurrency: cdktn.stringToTerraform(this._maxConcurrency),
+      max_errors: cdktn.stringToTerraform(this._maxErrors),
+      name: cdktn.stringToTerraform(this._name),
+      priority: cdktn.numberToTerraform(this._priority),
+      region: cdktn.stringToTerraform(this._region),
+      service_role_arn: cdktn.stringToTerraform(this._serviceRoleArn),
+      task_arn: cdktn.stringToTerraform(this._taskArn),
+      task_type: cdktn.stringToTerraform(this._taskType),
+      window_id: cdktn.stringToTerraform(this._windowId),
+      targets: cdktn.listMapper(ssmMaintenanceWindowTaskTargetsToTerraform, true)(this._targets.internalValue),
       task_invocation_parameters: ssmMaintenanceWindowTaskTaskInvocationParametersToTerraform(this._taskInvocationParameters.internalValue),
     };
   }
@@ -2094,79 +2094,79 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cutoff_behavior: {
-        value: cdktf.stringToHclTerraform(this._cutoffBehavior),
+        value: cdktn.stringToHclTerraform(this._cutoffBehavior),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_concurrency: {
-        value: cdktf.stringToHclTerraform(this._maxConcurrency),
+        value: cdktn.stringToHclTerraform(this._maxConcurrency),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_errors: {
-        value: cdktf.stringToHclTerraform(this._maxErrors),
+        value: cdktn.stringToHclTerraform(this._maxErrors),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_role_arn: {
-        value: cdktf.stringToHclTerraform(this._serviceRoleArn),
+        value: cdktn.stringToHclTerraform(this._serviceRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       task_arn: {
-        value: cdktf.stringToHclTerraform(this._taskArn),
+        value: cdktn.stringToHclTerraform(this._taskArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       task_type: {
-        value: cdktf.stringToHclTerraform(this._taskType),
+        value: cdktn.stringToHclTerraform(this._taskType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       window_id: {
-        value: cdktf.stringToHclTerraform(this._windowId),
+        value: cdktn.stringToHclTerraform(this._windowId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       targets: {
-        value: cdktf.listMapperHcl(ssmMaintenanceWindowTaskTargetsToHclTerraform, true)(this._targets.internalValue),
+        value: cdktn.listMapperHcl(ssmMaintenanceWindowTaskTargetsToHclTerraform, true)(this._targets.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SsmMaintenanceWindowTaskTargetsList",

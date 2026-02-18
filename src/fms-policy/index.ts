@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FmsPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface FmsPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#delete_all_policy_resources FmsPolicy#delete_all_policy_resources}
   */
-  readonly deleteAllPolicyResources?: boolean | cdktf.IResolvable;
+  readonly deleteAllPolicyResources?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#delete_unused_fm_managed_resources FmsPolicy#delete_unused_fm_managed_resources}
   */
-  readonly deleteUnusedFmManagedResources?: boolean | cdktf.IResolvable;
+  readonly deleteUnusedFmManagedResources?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#description FmsPolicy#description}
   */
@@ -27,7 +27,7 @@ export interface FmsPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#exclude_resource_tags FmsPolicy#exclude_resource_tags}
   */
-  readonly excludeResourceTags: boolean | cdktf.IResolvable;
+  readonly excludeResourceTags: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#id FmsPolicy#id}
   *
@@ -48,7 +48,7 @@ export interface FmsPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#remediation_enabled FmsPolicy#remediation_enabled}
   */
-  readonly remediationEnabled?: boolean | cdktf.IResolvable;
+  readonly remediationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#resource_set_ids FmsPolicy#resource_set_ids}
   */
@@ -108,31 +108,31 @@ export interface FmsPolicyExcludeMap {
 }
 
 export function fmsPolicyExcludeMapToTerraform(struct?: FmsPolicyExcludeMapOutputReference | FmsPolicyExcludeMap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.account),
-    orgunit: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.orgunit),
+    account: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.account),
+    orgunit: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.orgunit),
   }
 }
 
 
 export function fmsPolicyExcludeMapToHclTerraform(struct?: FmsPolicyExcludeMapOutputReference | FmsPolicyExcludeMap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.account),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.account),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     orgunit: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.orgunit),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.orgunit),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -143,14 +143,14 @@ export function fmsPolicyExcludeMapToHclTerraform(struct?: FmsPolicyExcludeMapOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FmsPolicyExcludeMapOutputReference extends cdktf.ComplexObject {
+export class FmsPolicyExcludeMapOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -184,7 +184,7 @@ export class FmsPolicyExcludeMapOutputReference extends cdktf.ComplexObject {
   // account - computed: false, optional: true, required: false
   private _account?: string[]; 
   public get account() {
-    return cdktf.Fn.tolist(this.getListAttribute('account'));
+    return cdktn.Fn.tolist(this.getListAttribute('account'));
   }
   public set account(value: string[]) {
     this._account = value;
@@ -200,7 +200,7 @@ export class FmsPolicyExcludeMapOutputReference extends cdktf.ComplexObject {
   // orgunit - computed: false, optional: true, required: false
   private _orgunit?: string[]; 
   public get orgunit() {
-    return cdktf.Fn.tolist(this.getListAttribute('orgunit'));
+    return cdktn.Fn.tolist(this.getListAttribute('orgunit'));
   }
   public set orgunit(value: string[]) {
     this._orgunit = value;
@@ -225,31 +225,31 @@ export interface FmsPolicyIncludeMap {
 }
 
 export function fmsPolicyIncludeMapToTerraform(struct?: FmsPolicyIncludeMapOutputReference | FmsPolicyIncludeMap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.account),
-    orgunit: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.orgunit),
+    account: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.account),
+    orgunit: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.orgunit),
   }
 }
 
 
 export function fmsPolicyIncludeMapToHclTerraform(struct?: FmsPolicyIncludeMapOutputReference | FmsPolicyIncludeMap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.account),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.account),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     orgunit: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.orgunit),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.orgunit),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -260,14 +260,14 @@ export function fmsPolicyIncludeMapToHclTerraform(struct?: FmsPolicyIncludeMapOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FmsPolicyIncludeMapOutputReference extends cdktf.ComplexObject {
+export class FmsPolicyIncludeMapOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -301,7 +301,7 @@ export class FmsPolicyIncludeMapOutputReference extends cdktf.ComplexObject {
   // account - computed: false, optional: true, required: false
   private _account?: string[]; 
   public get account() {
-    return cdktf.Fn.tolist(this.getListAttribute('account'));
+    return cdktn.Fn.tolist(this.getListAttribute('account'));
   }
   public set account(value: string[]) {
     this._account = value;
@@ -317,7 +317,7 @@ export class FmsPolicyIncludeMapOutputReference extends cdktf.ComplexObject {
   // orgunit - computed: false, optional: true, required: false
   private _orgunit?: string[]; 
   public get orgunit() {
-    return cdktf.Fn.tolist(this.getListAttribute('orgunit'));
+    return cdktn.Fn.tolist(this.getListAttribute('orgunit'));
   }
   public set orgunit(value: string[]) {
     this._orgunit = value;
@@ -341,32 +341,32 @@ export interface FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonP
   readonly type?: number;
 }
 
-export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    code: cdktf.numberToTerraform(struct!.code),
-    type: cdktf.numberToTerraform(struct!.type),
+    code: cdktn.numberToTerraform(struct!.code),
+    type: cdktn.numberToTerraform(struct!.type),
   }
 }
 
 
-export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     code: {
-      value: cdktf.numberToHclTerraform(struct!.code),
+      value: cdktn.numberToHclTerraform(struct!.code),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.numberToHclTerraform(struct!.type),
+      value: cdktn.numberToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -377,9 +377,9 @@ export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeOutputReference extends cdktf.ComplexObject {
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -387,11 +387,11 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode | cdktf.IResolvable | undefined {
+  public get internalValue(): FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -408,14 +408,14 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._code = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -460,15 +460,15 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   }
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeList extends cdktf.ComplexList {
-  public internalValue? : FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode[] | cdktf.IResolvable
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeList extends cdktn.ComplexList {
+  public internalValue? : FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -490,32 +490,32 @@ export interface FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonP
   readonly to?: number;
 }
 
-export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from: cdktf.numberToTerraform(struct!.from),
-    to: cdktf.numberToTerraform(struct!.to),
+    from: cdktn.numberToTerraform(struct!.from),
+    to: cdktn.numberToTerraform(struct!.to),
   }
 }
 
 
-export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from: {
-      value: cdktf.numberToHclTerraform(struct!.from),
+      value: cdktn.numberToHclTerraform(struct!.from),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to: {
-      value: cdktf.numberToHclTerraform(struct!.to),
+      value: cdktn.numberToHclTerraform(struct!.to),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -526,9 +526,9 @@ export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeOutputReference extends cdktf.ComplexObject {
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -536,11 +536,11 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange | cdktf.IResolvable | undefined {
+  public get internalValue(): FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -557,14 +557,14 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._from = undefined;
       this._to = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -609,15 +609,15 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   }
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeList extends cdktf.ComplexList {
-  public internalValue? : FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange[] | cdktf.IResolvable
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeList extends cdktn.ComplexList {
+  public internalValue? : FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -636,7 +636,7 @@ export interface FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonP
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#egress FmsPolicy#egress}
   */
-  readonly egress: boolean | cdktf.IResolvable;
+  readonly egress: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#ipv6_cidr_block FmsPolicy#ipv6_cidr_block}
   */
@@ -654,76 +654,76 @@ export interface FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonP
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#icmp_type_code FmsPolicy#icmp_type_code}
   */
-  readonly icmpTypeCode?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode[] | cdktf.IResolvable;
+  readonly icmpTypeCode?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode[] | cdktn.IResolvable;
   /**
   * port_range block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#port_range FmsPolicy#port_range}
   */
-  readonly portRange?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange[] | cdktf.IResolvable;
+  readonly portRange?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange[] | cdktn.IResolvable;
 }
 
-export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr_block: cdktf.stringToTerraform(struct!.cidrBlock),
-    egress: cdktf.booleanToTerraform(struct!.egress),
-    ipv6_cidr_block: cdktf.stringToTerraform(struct!.ipv6CidrBlock),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    rule_action: cdktf.stringToTerraform(struct!.ruleAction),
-    icmp_type_code: cdktf.listMapper(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeToTerraform, true)(struct!.icmpTypeCode),
-    port_range: cdktf.listMapper(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeToTerraform, true)(struct!.portRange),
+    cidr_block: cdktn.stringToTerraform(struct!.cidrBlock),
+    egress: cdktn.booleanToTerraform(struct!.egress),
+    ipv6_cidr_block: cdktn.stringToTerraform(struct!.ipv6CidrBlock),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    rule_action: cdktn.stringToTerraform(struct!.ruleAction),
+    icmp_type_code: cdktn.listMapper(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeToTerraform, true)(struct!.icmpTypeCode),
+    port_range: cdktn.listMapper(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeToTerraform, true)(struct!.portRange),
   }
 }
 
 
-export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cidr_block: {
-      value: cdktf.stringToHclTerraform(struct!.cidrBlock),
+      value: cdktn.stringToHclTerraform(struct!.cidrBlock),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     egress: {
-      value: cdktf.booleanToHclTerraform(struct!.egress),
+      value: cdktn.booleanToHclTerraform(struct!.egress),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ipv6_cidr_block: {
-      value: cdktf.stringToHclTerraform(struct!.ipv6CidrBlock),
+      value: cdktn.stringToHclTerraform(struct!.ipv6CidrBlock),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_action: {
-      value: cdktf.stringToHclTerraform(struct!.ruleAction),
+      value: cdktn.stringToHclTerraform(struct!.ruleAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     icmp_type_code: {
-      value: cdktf.listMapperHcl(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeToHclTerraform, true)(struct!.icmpTypeCode),
+      value: cdktn.listMapperHcl(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeToHclTerraform, true)(struct!.icmpTypeCode),
       isBlock: true,
       type: "list",
       storageClassType: "FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeList",
     },
     port_range: {
-      value: cdktf.listMapperHcl(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeToHclTerraform, true)(struct!.portRange),
+      value: cdktn.listMapperHcl(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeToHclTerraform, true)(struct!.portRange),
       isBlock: true,
       type: "list",
       storageClassType: "FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeList",
@@ -734,9 +734,9 @@ export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryOutputReference extends cdktf.ComplexObject {
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -744,11 +744,11 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry | cdktf.IResolvable | undefined {
+  public get internalValue(): FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -785,7 +785,7 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -797,7 +797,7 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
       this._icmpTypeCode.internalValue = undefined;
       this._portRange.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -831,11 +831,11 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   }
 
   // egress - computed: false, optional: false, required: true
-  private _egress?: boolean | cdktf.IResolvable; 
+  private _egress?: boolean | cdktn.IResolvable; 
   public get egress() {
     return this.getBooleanAttribute('egress');
   }
-  public set egress(value: boolean | cdktf.IResolvable) {
+  public set egress(value: boolean | cdktn.IResolvable) {
     this._egress = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -890,7 +890,7 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   public get icmpTypeCode() {
     return this._icmpTypeCode;
   }
-  public putIcmpTypeCode(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode[] | cdktf.IResolvable) {
+  public putIcmpTypeCode(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode[] | cdktn.IResolvable) {
     this._icmpTypeCode.internalValue = value;
   }
   public resetIcmpTypeCode() {
@@ -906,7 +906,7 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   public get portRange() {
     return this._portRange;
   }
-  public putPortRange(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange[] | cdktf.IResolvable) {
+  public putPortRange(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange[] | cdktn.IResolvable) {
     this._portRange.internalValue = value;
   }
   public resetPortRange() {
@@ -918,15 +918,15 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   }
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryList extends cdktf.ComplexList {
-  public internalValue? : FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry[] | cdktf.IResolvable
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryList extends cdktn.ComplexList {
+  public internalValue? : FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -948,32 +948,32 @@ export interface FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonP
   readonly type?: number;
 }
 
-export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    code: cdktf.numberToTerraform(struct!.code),
-    type: cdktf.numberToTerraform(struct!.type),
+    code: cdktn.numberToTerraform(struct!.code),
+    type: cdktn.numberToTerraform(struct!.type),
   }
 }
 
 
-export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     code: {
-      value: cdktf.numberToHclTerraform(struct!.code),
+      value: cdktn.numberToHclTerraform(struct!.code),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.numberToHclTerraform(struct!.type),
+      value: cdktn.numberToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -984,9 +984,9 @@ export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeOutputReference extends cdktf.ComplexObject {
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -994,11 +994,11 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode | cdktf.IResolvable | undefined {
+  public get internalValue(): FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1015,14 +1015,14 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._code = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1067,15 +1067,15 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   }
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeList extends cdktf.ComplexList {
-  public internalValue? : FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode[] | cdktf.IResolvable
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeList extends cdktn.ComplexList {
+  public internalValue? : FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1097,32 +1097,32 @@ export interface FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonP
   readonly to?: number;
 }
 
-export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from: cdktf.numberToTerraform(struct!.from),
-    to: cdktf.numberToTerraform(struct!.to),
+    from: cdktn.numberToTerraform(struct!.from),
+    to: cdktn.numberToTerraform(struct!.to),
   }
 }
 
 
-export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from: {
-      value: cdktf.numberToHclTerraform(struct!.from),
+      value: cdktn.numberToHclTerraform(struct!.from),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to: {
-      value: cdktf.numberToHclTerraform(struct!.to),
+      value: cdktn.numberToHclTerraform(struct!.to),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1133,9 +1133,9 @@ export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeOutputReference extends cdktf.ComplexObject {
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1143,11 +1143,11 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange | cdktf.IResolvable | undefined {
+  public get internalValue(): FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1164,14 +1164,14 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._from = undefined;
       this._to = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1216,15 +1216,15 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   }
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeList extends cdktf.ComplexList {
-  public internalValue? : FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange[] | cdktf.IResolvable
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeList extends cdktn.ComplexList {
+  public internalValue? : FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1243,7 +1243,7 @@ export interface FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonP
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#egress FmsPolicy#egress}
   */
-  readonly egress: boolean | cdktf.IResolvable;
+  readonly egress: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#ipv6_cidr_block FmsPolicy#ipv6_cidr_block}
   */
@@ -1261,76 +1261,76 @@ export interface FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonP
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#icmp_type_code FmsPolicy#icmp_type_code}
   */
-  readonly icmpTypeCode?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode[] | cdktf.IResolvable;
+  readonly icmpTypeCode?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode[] | cdktn.IResolvable;
   /**
   * port_range block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#port_range FmsPolicy#port_range}
   */
-  readonly portRange?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange[] | cdktf.IResolvable;
+  readonly portRange?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange[] | cdktn.IResolvable;
 }
 
-export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr_block: cdktf.stringToTerraform(struct!.cidrBlock),
-    egress: cdktf.booleanToTerraform(struct!.egress),
-    ipv6_cidr_block: cdktf.stringToTerraform(struct!.ipv6CidrBlock),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    rule_action: cdktf.stringToTerraform(struct!.ruleAction),
-    icmp_type_code: cdktf.listMapper(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeToTerraform, true)(struct!.icmpTypeCode),
-    port_range: cdktf.listMapper(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeToTerraform, true)(struct!.portRange),
+    cidr_block: cdktn.stringToTerraform(struct!.cidrBlock),
+    egress: cdktn.booleanToTerraform(struct!.egress),
+    ipv6_cidr_block: cdktn.stringToTerraform(struct!.ipv6CidrBlock),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    rule_action: cdktn.stringToTerraform(struct!.ruleAction),
+    icmp_type_code: cdktn.listMapper(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeToTerraform, true)(struct!.icmpTypeCode),
+    port_range: cdktn.listMapper(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeToTerraform, true)(struct!.portRange),
   }
 }
 
 
-export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cidr_block: {
-      value: cdktf.stringToHclTerraform(struct!.cidrBlock),
+      value: cdktn.stringToHclTerraform(struct!.cidrBlock),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     egress: {
-      value: cdktf.booleanToHclTerraform(struct!.egress),
+      value: cdktn.booleanToHclTerraform(struct!.egress),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ipv6_cidr_block: {
-      value: cdktf.stringToHclTerraform(struct!.ipv6CidrBlock),
+      value: cdktn.stringToHclTerraform(struct!.ipv6CidrBlock),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_action: {
-      value: cdktf.stringToHclTerraform(struct!.ruleAction),
+      value: cdktn.stringToHclTerraform(struct!.ruleAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     icmp_type_code: {
-      value: cdktf.listMapperHcl(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeToHclTerraform, true)(struct!.icmpTypeCode),
+      value: cdktn.listMapperHcl(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeToHclTerraform, true)(struct!.icmpTypeCode),
       isBlock: true,
       type: "list",
       storageClassType: "FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeList",
     },
     port_range: {
-      value: cdktf.listMapperHcl(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeToHclTerraform, true)(struct!.portRange),
+      value: cdktn.listMapperHcl(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeToHclTerraform, true)(struct!.portRange),
       isBlock: true,
       type: "list",
       storageClassType: "FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeList",
@@ -1341,9 +1341,9 @@ export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryOutputReference extends cdktf.ComplexObject {
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1351,11 +1351,11 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry | cdktf.IResolvable | undefined {
+  public get internalValue(): FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1392,7 +1392,7 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1404,7 +1404,7 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
       this._icmpTypeCode.internalValue = undefined;
       this._portRange.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1438,11 +1438,11 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   }
 
   // egress - computed: false, optional: false, required: true
-  private _egress?: boolean | cdktf.IResolvable; 
+  private _egress?: boolean | cdktn.IResolvable; 
   public get egress() {
     return this.getBooleanAttribute('egress');
   }
-  public set egress(value: boolean | cdktf.IResolvable) {
+  public set egress(value: boolean | cdktn.IResolvable) {
     this._egress = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1497,7 +1497,7 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   public get icmpTypeCode() {
     return this._icmpTypeCode;
   }
-  public putIcmpTypeCode(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode[] | cdktf.IResolvable) {
+  public putIcmpTypeCode(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode[] | cdktn.IResolvable) {
     this._icmpTypeCode.internalValue = value;
   }
   public resetIcmpTypeCode() {
@@ -1513,7 +1513,7 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   public get portRange() {
     return this._portRange;
   }
-  public putPortRange(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange[] | cdktf.IResolvable) {
+  public putPortRange(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange[] | cdktn.IResolvable) {
     this._portRange.internalValue = value;
   }
   public resetPortRange() {
@@ -1525,15 +1525,15 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   }
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryList extends cdktf.ComplexList {
-  public internalValue? : FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry[] | cdktf.IResolvable
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryList extends cdktn.ComplexList {
+  public internalValue? : FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1548,65 +1548,65 @@ export interface FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonP
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#force_remediate_for_first_entries FmsPolicy#force_remediate_for_first_entries}
   */
-  readonly forceRemediateForFirstEntries: boolean | cdktf.IResolvable;
+  readonly forceRemediateForFirstEntries: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#force_remediate_for_last_entries FmsPolicy#force_remediate_for_last_entries}
   */
-  readonly forceRemediateForLastEntries: boolean | cdktf.IResolvable;
+  readonly forceRemediateForLastEntries: boolean | cdktn.IResolvable;
   /**
   * first_entry block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#first_entry FmsPolicy#first_entry}
   */
-  readonly firstEntry?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry[] | cdktf.IResolvable;
+  readonly firstEntry?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry[] | cdktn.IResolvable;
   /**
   * last_entry block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#last_entry FmsPolicy#last_entry}
   */
-  readonly lastEntry?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry[] | cdktf.IResolvable;
+  readonly lastEntry?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry[] | cdktn.IResolvable;
 }
 
 export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetOutputReference | FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    force_remediate_for_first_entries: cdktf.booleanToTerraform(struct!.forceRemediateForFirstEntries),
-    force_remediate_for_last_entries: cdktf.booleanToTerraform(struct!.forceRemediateForLastEntries),
-    first_entry: cdktf.listMapper(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryToTerraform, true)(struct!.firstEntry),
-    last_entry: cdktf.listMapper(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryToTerraform, true)(struct!.lastEntry),
+    force_remediate_for_first_entries: cdktn.booleanToTerraform(struct!.forceRemediateForFirstEntries),
+    force_remediate_for_last_entries: cdktn.booleanToTerraform(struct!.forceRemediateForLastEntries),
+    first_entry: cdktn.listMapper(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryToTerraform, true)(struct!.firstEntry),
+    last_entry: cdktn.listMapper(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryToTerraform, true)(struct!.lastEntry),
   }
 }
 
 
 export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetOutputReference | FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     force_remediate_for_first_entries: {
-      value: cdktf.booleanToHclTerraform(struct!.forceRemediateForFirstEntries),
+      value: cdktn.booleanToHclTerraform(struct!.forceRemediateForFirstEntries),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     force_remediate_for_last_entries: {
-      value: cdktf.booleanToHclTerraform(struct!.forceRemediateForLastEntries),
+      value: cdktn.booleanToHclTerraform(struct!.forceRemediateForLastEntries),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     first_entry: {
-      value: cdktf.listMapperHcl(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryToHclTerraform, true)(struct!.firstEntry),
+      value: cdktn.listMapperHcl(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryToHclTerraform, true)(struct!.firstEntry),
       isBlock: true,
       type: "set",
       storageClassType: "FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryList",
     },
     last_entry: {
-      value: cdktf.listMapperHcl(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryToHclTerraform, true)(struct!.lastEntry),
+      value: cdktn.listMapperHcl(fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryToHclTerraform, true)(struct!.lastEntry),
       isBlock: true,
       type: "set",
       storageClassType: "FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryList",
@@ -1617,14 +1617,14 @@ export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetOutputReference extends cdktf.ComplexObject {
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1668,11 +1668,11 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   }
 
   // force_remediate_for_first_entries - computed: false, optional: false, required: true
-  private _forceRemediateForFirstEntries?: boolean | cdktf.IResolvable; 
+  private _forceRemediateForFirstEntries?: boolean | cdktn.IResolvable; 
   public get forceRemediateForFirstEntries() {
     return this.getBooleanAttribute('force_remediate_for_first_entries');
   }
-  public set forceRemediateForFirstEntries(value: boolean | cdktf.IResolvable) {
+  public set forceRemediateForFirstEntries(value: boolean | cdktn.IResolvable) {
     this._forceRemediateForFirstEntries = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1681,11 +1681,11 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   }
 
   // force_remediate_for_last_entries - computed: false, optional: false, required: true
-  private _forceRemediateForLastEntries?: boolean | cdktf.IResolvable; 
+  private _forceRemediateForLastEntries?: boolean | cdktn.IResolvable; 
   public get forceRemediateForLastEntries() {
     return this.getBooleanAttribute('force_remediate_for_last_entries');
   }
-  public set forceRemediateForLastEntries(value: boolean | cdktf.IResolvable) {
+  public set forceRemediateForLastEntries(value: boolean | cdktn.IResolvable) {
     this._forceRemediateForLastEntries = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1698,7 +1698,7 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   public get firstEntry() {
     return this._firstEntry;
   }
-  public putFirstEntry(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry[] | cdktf.IResolvable) {
+  public putFirstEntry(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry[] | cdktn.IResolvable) {
     this._firstEntry.internalValue = value;
   }
   public resetFirstEntry() {
@@ -1714,7 +1714,7 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolic
   public get lastEntry() {
     return this._lastEntry;
   }
-  public putLastEntry(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry[] | cdktf.IResolvable) {
+  public putLastEntry(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry[] | cdktn.IResolvable) {
     this._lastEntry.internalValue = value;
   }
   public resetLastEntry() {
@@ -1735,8 +1735,8 @@ export interface FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonP
 }
 
 export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyOutputReference | FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1746,8 +1746,8 @@ export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPo
 
 
 export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyOutputReference | FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1763,14 +1763,14 @@ export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyOutputReference extends cdktf.ComplexObject {
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1819,24 +1819,24 @@ export interface FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPo
 }
 
 export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyOutputReference | FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    firewall_deployment_model: cdktf.stringToTerraform(struct!.firewallDeploymentModel),
+    firewall_deployment_model: cdktn.stringToTerraform(struct!.firewallDeploymentModel),
   }
 }
 
 
 export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyOutputReference | FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     firewall_deployment_model: {
-      value: cdktf.stringToHclTerraform(struct!.firewallDeploymentModel),
+      value: cdktn.stringToHclTerraform(struct!.firewallDeploymentModel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1847,14 +1847,14 @@ export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPol
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyOutputReference extends cdktf.ComplexObject {
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1903,24 +1903,24 @@ export interface FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewal
 }
 
 export function fmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference | FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    firewall_deployment_model: cdktf.stringToTerraform(struct!.firewallDeploymentModel),
+    firewall_deployment_model: cdktn.stringToTerraform(struct!.firewallDeploymentModel),
   }
 }
 
 
 export function fmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference | FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     firewall_deployment_model: {
-      value: cdktf.stringToHclTerraform(struct!.firewallDeploymentModel),
+      value: cdktn.stringToHclTerraform(struct!.firewallDeploymentModel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1931,14 +1931,14 @@ export function fmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewall
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference extends cdktf.ComplexObject {
+export class FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2001,8 +2001,8 @@ export interface FmsPolicySecurityServicePolicyDataPolicyOption {
 }
 
 export function fmsPolicySecurityServicePolicyDataPolicyOptionToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference | FmsPolicySecurityServicePolicyDataPolicyOption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2014,8 +2014,8 @@ export function fmsPolicySecurityServicePolicyDataPolicyOptionToTerraform(struct
 
 
 export function fmsPolicySecurityServicePolicyDataPolicyOptionToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference | FmsPolicySecurityServicePolicyDataPolicyOption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2043,14 +2043,14 @@ export function fmsPolicySecurityServicePolicyDataPolicyOptionToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference extends cdktf.ComplexObject {
+export class FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2153,32 +2153,32 @@ export interface FmsPolicySecurityServicePolicyData {
 }
 
 export function fmsPolicySecurityServicePolicyDataToTerraform(struct?: FmsPolicySecurityServicePolicyDataOutputReference | FmsPolicySecurityServicePolicyData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    managed_service_data: cdktf.stringToTerraform(struct!.managedServiceData),
-    type: cdktf.stringToTerraform(struct!.type),
+    managed_service_data: cdktn.stringToTerraform(struct!.managedServiceData),
+    type: cdktn.stringToTerraform(struct!.type),
     policy_option: fmsPolicySecurityServicePolicyDataPolicyOptionToTerraform(struct!.policyOption),
   }
 }
 
 
 export function fmsPolicySecurityServicePolicyDataToHclTerraform(struct?: FmsPolicySecurityServicePolicyDataOutputReference | FmsPolicySecurityServicePolicyData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     managed_service_data: {
-      value: cdktf.stringToHclTerraform(struct!.managedServiceData),
+      value: cdktn.stringToHclTerraform(struct!.managedServiceData),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2195,14 +2195,14 @@ export function fmsPolicySecurityServicePolicyDataToHclTerraform(struct?: FmsPol
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FmsPolicySecurityServicePolicyDataOutputReference extends cdktf.ComplexObject {
+export class FmsPolicySecurityServicePolicyDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2288,7 +2288,7 @@ export class FmsPolicySecurityServicePolicyDataOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy aws_fms_policy}
 */
-export class FmsPolicy extends cdktf.TerraformResource {
+export class FmsPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2299,14 +2299,14 @@ export class FmsPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a FmsPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a FmsPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FmsPolicy to import
   * @param importFromId The id of the existing FmsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fms_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FmsPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_fms_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_fms_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -2366,11 +2366,11 @@ export class FmsPolicy extends cdktf.TerraformResource {
   }
 
   // delete_all_policy_resources - computed: false, optional: true, required: false
-  private _deleteAllPolicyResources?: boolean | cdktf.IResolvable; 
+  private _deleteAllPolicyResources?: boolean | cdktn.IResolvable; 
   public get deleteAllPolicyResources() {
     return this.getBooleanAttribute('delete_all_policy_resources');
   }
-  public set deleteAllPolicyResources(value: boolean | cdktf.IResolvable) {
+  public set deleteAllPolicyResources(value: boolean | cdktn.IResolvable) {
     this._deleteAllPolicyResources = value;
   }
   public resetDeleteAllPolicyResources() {
@@ -2382,11 +2382,11 @@ export class FmsPolicy extends cdktf.TerraformResource {
   }
 
   // delete_unused_fm_managed_resources - computed: false, optional: true, required: false
-  private _deleteUnusedFmManagedResources?: boolean | cdktf.IResolvable; 
+  private _deleteUnusedFmManagedResources?: boolean | cdktn.IResolvable; 
   public get deleteUnusedFmManagedResources() {
     return this.getBooleanAttribute('delete_unused_fm_managed_resources');
   }
-  public set deleteUnusedFmManagedResources(value: boolean | cdktf.IResolvable) {
+  public set deleteUnusedFmManagedResources(value: boolean | cdktn.IResolvable) {
     this._deleteUnusedFmManagedResources = value;
   }
   public resetDeleteUnusedFmManagedResources() {
@@ -2414,11 +2414,11 @@ export class FmsPolicy extends cdktf.TerraformResource {
   }
 
   // exclude_resource_tags - computed: false, optional: false, required: true
-  private _excludeResourceTags?: boolean | cdktf.IResolvable; 
+  private _excludeResourceTags?: boolean | cdktn.IResolvable; 
   public get excludeResourceTags() {
     return this.getBooleanAttribute('exclude_resource_tags');
   }
-  public set excludeResourceTags(value: boolean | cdktf.IResolvable) {
+  public set excludeResourceTags(value: boolean | cdktn.IResolvable) {
     this._excludeResourceTags = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2477,11 +2477,11 @@ export class FmsPolicy extends cdktf.TerraformResource {
   }
 
   // remediation_enabled - computed: false, optional: true, required: false
-  private _remediationEnabled?: boolean | cdktf.IResolvable; 
+  private _remediationEnabled?: boolean | cdktn.IResolvable; 
   public get remediationEnabled() {
     return this.getBooleanAttribute('remediation_enabled');
   }
-  public set remediationEnabled(value: boolean | cdktf.IResolvable) {
+  public set remediationEnabled(value: boolean | cdktn.IResolvable) {
     this._remediationEnabled = value;
   }
   public resetRemediationEnabled() {
@@ -2495,7 +2495,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
   // resource_set_ids - computed: true, optional: true, required: false
   private _resourceSetIds?: string[]; 
   public get resourceSetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('resource_set_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('resource_set_ids'));
   }
   public set resourceSetIds(value: string[]) {
     this._resourceSetIds = value;
@@ -2559,7 +2559,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
   // resource_type_list - computed: true, optional: true, required: false
   private _resourceTypeList?: string[]; 
   public get resourceTypeList() {
-    return cdktf.Fn.tolist(this.getListAttribute('resource_type_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('resource_type_list'));
   }
   public set resourceTypeList(value: string[]) {
     this._resourceTypeList = value;
@@ -2655,21 +2655,21 @@ export class FmsPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      delete_all_policy_resources: cdktf.booleanToTerraform(this._deleteAllPolicyResources),
-      delete_unused_fm_managed_resources: cdktf.booleanToTerraform(this._deleteUnusedFmManagedResources),
-      description: cdktf.stringToTerraform(this._description),
-      exclude_resource_tags: cdktf.booleanToTerraform(this._excludeResourceTags),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      remediation_enabled: cdktf.booleanToTerraform(this._remediationEnabled),
-      resource_set_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourceSetIds),
-      resource_tag_logical_operator: cdktf.stringToTerraform(this._resourceTagLogicalOperator),
-      resource_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._resourceTags),
-      resource_type: cdktf.stringToTerraform(this._resourceType),
-      resource_type_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourceTypeList),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      delete_all_policy_resources: cdktn.booleanToTerraform(this._deleteAllPolicyResources),
+      delete_unused_fm_managed_resources: cdktn.booleanToTerraform(this._deleteUnusedFmManagedResources),
+      description: cdktn.stringToTerraform(this._description),
+      exclude_resource_tags: cdktn.booleanToTerraform(this._excludeResourceTags),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      remediation_enabled: cdktn.booleanToTerraform(this._remediationEnabled),
+      resource_set_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._resourceSetIds),
+      resource_tag_logical_operator: cdktn.stringToTerraform(this._resourceTagLogicalOperator),
+      resource_tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._resourceTags),
+      resource_type: cdktn.stringToTerraform(this._resourceType),
+      resource_type_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._resourceTypeList),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       exclude_map: fmsPolicyExcludeMapToTerraform(this._excludeMap.internalValue),
       include_map: fmsPolicyIncludeMapToTerraform(this._includeMap.internalValue),
       security_service_policy_data: fmsPolicySecurityServicePolicyDataToTerraform(this._securityServicePolicyData.internalValue),
@@ -2679,91 +2679,91 @@ export class FmsPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       delete_all_policy_resources: {
-        value: cdktf.booleanToHclTerraform(this._deleteAllPolicyResources),
+        value: cdktn.booleanToHclTerraform(this._deleteAllPolicyResources),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       delete_unused_fm_managed_resources: {
-        value: cdktf.booleanToHclTerraform(this._deleteUnusedFmManagedResources),
+        value: cdktn.booleanToHclTerraform(this._deleteUnusedFmManagedResources),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       exclude_resource_tags: {
-        value: cdktf.booleanToHclTerraform(this._excludeResourceTags),
+        value: cdktn.booleanToHclTerraform(this._excludeResourceTags),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       remediation_enabled: {
-        value: cdktf.booleanToHclTerraform(this._remediationEnabled),
+        value: cdktn.booleanToHclTerraform(this._remediationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_set_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resourceSetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._resourceSetIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       resource_tag_logical_operator: {
-        value: cdktf.stringToHclTerraform(this._resourceTagLogicalOperator),
+        value: cdktn.stringToHclTerraform(this._resourceTagLogicalOperator),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._resourceTags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._resourceTags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       resource_type: {
-        value: cdktf.stringToHclTerraform(this._resourceType),
+        value: cdktn.stringToHclTerraform(this._resourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_type_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resourceTypeList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._resourceTypeList),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2ManagedPrefixListEntryAConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2ManagedPrefixListEntryAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_managed_prefix_list_entry#cidr Ec2ManagedPrefixListEntryA#cidr}
   */
@@ -42,7 +42,7 @@ export interface Ec2ManagedPrefixListEntryAConfig extends cdktf.TerraformMetaArg
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_managed_prefix_list_entry aws_ec2_managed_prefix_list_entry}
 */
-export class Ec2ManagedPrefixListEntryA extends cdktf.TerraformResource {
+export class Ec2ManagedPrefixListEntryA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class Ec2ManagedPrefixListEntryA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2ManagedPrefixListEntryA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2ManagedPrefixListEntryA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2ManagedPrefixListEntryA to import
   * @param importFromId The id of the existing Ec2ManagedPrefixListEntryA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_managed_prefix_list_entry#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2ManagedPrefixListEntryA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_managed_prefix_list_entry", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_managed_prefix_list_entry", importId: importFromId, provider });
       }
 
   // ===========
@@ -181,42 +181,42 @@ export class Ec2ManagedPrefixListEntryA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr: cdktf.stringToTerraform(this._cidr),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      prefix_list_id: cdktf.stringToTerraform(this._prefixListId),
-      region: cdktf.stringToTerraform(this._region),
+      cidr: cdktn.stringToTerraform(this._cidr),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      prefix_list_id: cdktn.stringToTerraform(this._prefixListId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cidr: {
-        value: cdktf.stringToHclTerraform(this._cidr),
+        value: cdktn.stringToHclTerraform(this._cidr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       prefix_list_id: {
-        value: cdktf.stringToHclTerraform(this._prefixListId),
+        value: cdktn.stringToHclTerraform(this._prefixListId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

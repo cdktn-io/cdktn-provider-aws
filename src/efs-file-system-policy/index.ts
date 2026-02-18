@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EfsFileSystemPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface EfsFileSystemPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_file_system_policy#bypass_policy_lockout_safety_check EfsFileSystemPolicy#bypass_policy_lockout_safety_check}
   */
-  readonly bypassPolicyLockoutSafetyCheck?: boolean | cdktf.IResolvable;
+  readonly bypassPolicyLockoutSafetyCheck?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_file_system_policy#file_system_id EfsFileSystemPolicy#file_system_id}
   */
@@ -42,7 +42,7 @@ export interface EfsFileSystemPolicyConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_file_system_policy aws_efs_file_system_policy}
 */
-export class EfsFileSystemPolicy extends cdktf.TerraformResource {
+export class EfsFileSystemPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class EfsFileSystemPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EfsFileSystemPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EfsFileSystemPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EfsFileSystemPolicy to import
   * @param importFromId The id of the existing EfsFileSystemPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_file_system_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EfsFileSystemPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_efs_file_system_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_efs_file_system_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -102,11 +102,11 @@ export class EfsFileSystemPolicy extends cdktf.TerraformResource {
   // ==========
 
   // bypass_policy_lockout_safety_check - computed: false, optional: true, required: false
-  private _bypassPolicyLockoutSafetyCheck?: boolean | cdktf.IResolvable; 
+  private _bypassPolicyLockoutSafetyCheck?: boolean | cdktn.IResolvable; 
   public get bypassPolicyLockoutSafetyCheck() {
     return this.getBooleanAttribute('bypass_policy_lockout_safety_check');
   }
-  public set bypassPolicyLockoutSafetyCheck(value: boolean | cdktf.IResolvable) {
+  public set bypassPolicyLockoutSafetyCheck(value: boolean | cdktn.IResolvable) {
     this._bypassPolicyLockoutSafetyCheck = value;
   }
   public resetBypassPolicyLockoutSafetyCheck() {
@@ -181,42 +181,42 @@ export class EfsFileSystemPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bypass_policy_lockout_safety_check: cdktf.booleanToTerraform(this._bypassPolicyLockoutSafetyCheck),
-      file_system_id: cdktf.stringToTerraform(this._fileSystemId),
-      id: cdktf.stringToTerraform(this._id),
-      policy: cdktf.stringToTerraform(this._policy),
-      region: cdktf.stringToTerraform(this._region),
+      bypass_policy_lockout_safety_check: cdktn.booleanToTerraform(this._bypassPolicyLockoutSafetyCheck),
+      file_system_id: cdktn.stringToTerraform(this._fileSystemId),
+      id: cdktn.stringToTerraform(this._id),
+      policy: cdktn.stringToTerraform(this._policy),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bypass_policy_lockout_safety_check: {
-        value: cdktf.booleanToHclTerraform(this._bypassPolicyLockoutSafetyCheck),
+        value: cdktn.booleanToHclTerraform(this._bypassPolicyLockoutSafetyCheck),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       file_system_id: {
-        value: cdktf.stringToHclTerraform(this._fileSystemId),
+        value: cdktn.stringToHclTerraform(this._fileSystemId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy: {
-        value: cdktf.stringToHclTerraform(this._policy),
+        value: cdktn.stringToHclTerraform(this._policy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

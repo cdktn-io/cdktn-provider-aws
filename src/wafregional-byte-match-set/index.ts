@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WafregionalByteMatchSetConfig extends cdktf.TerraformMetaArguments {
+export interface WafregionalByteMatchSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_byte_match_set#id WafregionalByteMatchSet#id}
   *
@@ -34,7 +34,7 @@ export interface WafregionalByteMatchSetConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_byte_match_set#byte_match_tuples WafregionalByteMatchSet#byte_match_tuples}
   */
-  readonly byteMatchTuples?: WafregionalByteMatchSetByteMatchTuples[] | cdktf.IResolvable;
+  readonly byteMatchTuples?: WafregionalByteMatchSetByteMatchTuples[] | cdktn.IResolvable;
 }
 export interface WafregionalByteMatchSetByteMatchTuplesFieldToMatch {
   /**
@@ -48,31 +48,31 @@ export interface WafregionalByteMatchSetByteMatchTuplesFieldToMatch {
 }
 
 export function wafregionalByteMatchSetByteMatchTuplesFieldToMatchToTerraform(struct?: WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference | WafregionalByteMatchSetByteMatchTuplesFieldToMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data: cdktf.stringToTerraform(struct!.data),
-    type: cdktf.stringToTerraform(struct!.type),
+    data: cdktn.stringToTerraform(struct!.data),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function wafregionalByteMatchSetByteMatchTuplesFieldToMatchToHclTerraform(struct?: WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference | WafregionalByteMatchSetByteMatchTuplesFieldToMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data: {
-      value: cdktf.stringToHclTerraform(struct!.data),
+      value: cdktn.stringToHclTerraform(struct!.data),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,14 +83,14 @@ export function wafregionalByteMatchSetByteMatchTuplesFieldToMatchToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference extends cdktf.ComplexObject {
+export class WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -171,40 +171,40 @@ export interface WafregionalByteMatchSetByteMatchTuples {
   readonly fieldToMatch: WafregionalByteMatchSetByteMatchTuplesFieldToMatch;
 }
 
-export function wafregionalByteMatchSetByteMatchTuplesToTerraform(struct?: WafregionalByteMatchSetByteMatchTuples | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafregionalByteMatchSetByteMatchTuplesToTerraform(struct?: WafregionalByteMatchSetByteMatchTuples | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    positional_constraint: cdktf.stringToTerraform(struct!.positionalConstraint),
-    target_string: cdktf.stringToTerraform(struct!.targetString),
-    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
+    positional_constraint: cdktn.stringToTerraform(struct!.positionalConstraint),
+    target_string: cdktn.stringToTerraform(struct!.targetString),
+    text_transformation: cdktn.stringToTerraform(struct!.textTransformation),
     field_to_match: wafregionalByteMatchSetByteMatchTuplesFieldToMatchToTerraform(struct!.fieldToMatch),
   }
 }
 
 
-export function wafregionalByteMatchSetByteMatchTuplesToHclTerraform(struct?: WafregionalByteMatchSetByteMatchTuples | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafregionalByteMatchSetByteMatchTuplesToHclTerraform(struct?: WafregionalByteMatchSetByteMatchTuples | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     positional_constraint: {
-      value: cdktf.stringToHclTerraform(struct!.positionalConstraint),
+      value: cdktn.stringToHclTerraform(struct!.positionalConstraint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_string: {
-      value: cdktf.stringToHclTerraform(struct!.targetString),
+      value: cdktn.stringToHclTerraform(struct!.targetString),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_transformation: {
-      value: cdktf.stringToHclTerraform(struct!.textTransformation),
+      value: cdktn.stringToHclTerraform(struct!.textTransformation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -221,9 +221,9 @@ export function wafregionalByteMatchSetByteMatchTuplesToHclTerraform(struct?: Wa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WafregionalByteMatchSetByteMatchTuplesOutputReference extends cdktf.ComplexObject {
+export class WafregionalByteMatchSetByteMatchTuplesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -231,11 +231,11 @@ export class WafregionalByteMatchSetByteMatchTuplesOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WafregionalByteMatchSetByteMatchTuples | cdktf.IResolvable | undefined {
+  public get internalValue(): WafregionalByteMatchSetByteMatchTuples | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -260,7 +260,7 @@ export class WafregionalByteMatchSetByteMatchTuplesOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WafregionalByteMatchSetByteMatchTuples | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WafregionalByteMatchSetByteMatchTuples | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -269,7 +269,7 @@ export class WafregionalByteMatchSetByteMatchTuplesOutputReference extends cdktf
       this._textTransformation = undefined;
       this._fieldToMatch.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -339,15 +339,15 @@ export class WafregionalByteMatchSetByteMatchTuplesOutputReference extends cdktf
   }
 }
 
-export class WafregionalByteMatchSetByteMatchTuplesList extends cdktf.ComplexList {
-  public internalValue? : WafregionalByteMatchSetByteMatchTuples[] | cdktf.IResolvable
+export class WafregionalByteMatchSetByteMatchTuplesList extends cdktn.ComplexList {
+  public internalValue? : WafregionalByteMatchSetByteMatchTuples[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -362,7 +362,7 @@ export class WafregionalByteMatchSetByteMatchTuplesList extends cdktf.ComplexLis
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_byte_match_set aws_wafregional_byte_match_set}
 */
-export class WafregionalByteMatchSet extends cdktf.TerraformResource {
+export class WafregionalByteMatchSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -373,14 +373,14 @@ export class WafregionalByteMatchSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WafregionalByteMatchSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WafregionalByteMatchSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafregionalByteMatchSet to import
   * @param importFromId The id of the existing WafregionalByteMatchSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_byte_match_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafregionalByteMatchSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafregional_byte_match_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafregional_byte_match_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -470,7 +470,7 @@ export class WafregionalByteMatchSet extends cdktf.TerraformResource {
   public get byteMatchTuples() {
     return this._byteMatchTuples;
   }
-  public putByteMatchTuples(value: WafregionalByteMatchSetByteMatchTuples[] | cdktf.IResolvable) {
+  public putByteMatchTuples(value: WafregionalByteMatchSetByteMatchTuples[] | cdktn.IResolvable) {
     this._byteMatchTuples.internalValue = value;
   }
   public resetByteMatchTuples() {
@@ -487,35 +487,35 @@ export class WafregionalByteMatchSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      byte_match_tuples: cdktf.listMapper(wafregionalByteMatchSetByteMatchTuplesToTerraform, true)(this._byteMatchTuples.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      byte_match_tuples: cdktn.listMapper(wafregionalByteMatchSetByteMatchTuplesToTerraform, true)(this._byteMatchTuples.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       byte_match_tuples: {
-        value: cdktf.listMapperHcl(wafregionalByteMatchSetByteMatchTuplesToHclTerraform, true)(this._byteMatchTuples.internalValue),
+        value: cdktn.listMapperHcl(wafregionalByteMatchSetByteMatchTuplesToHclTerraform, true)(this._byteMatchTuples.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "WafregionalByteMatchSetByteMatchTuplesList",

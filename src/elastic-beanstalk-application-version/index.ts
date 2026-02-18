@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ElasticBeanstalkApplicationVersionConfig extends cdktf.TerraformMetaArguments {
+export interface ElasticBeanstalkApplicationVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastic_beanstalk_application_version#application ElasticBeanstalkApplicationVersion#application}
   */
@@ -27,7 +27,7 @@ export interface ElasticBeanstalkApplicationVersionConfig extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastic_beanstalk_application_version#force_delete ElasticBeanstalkApplicationVersion#force_delete}
   */
-  readonly forceDelete?: boolean | cdktf.IResolvable;
+  readonly forceDelete?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastic_beanstalk_application_version#id ElasticBeanstalkApplicationVersion#id}
   *
@@ -46,7 +46,7 @@ export interface ElasticBeanstalkApplicationVersionConfig extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastic_beanstalk_application_version#process ElasticBeanstalkApplicationVersion#process}
   */
-  readonly process?: boolean | cdktf.IResolvable;
+  readonly process?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -66,7 +66,7 @@ export interface ElasticBeanstalkApplicationVersionConfig extends cdktf.Terrafor
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version}
 */
-export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource {
+export class ElasticBeanstalkApplicationVersion extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ElasticBeanstalkApplicationVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ElasticBeanstalkApplicationVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElasticBeanstalkApplicationVersion to import
   * @param importFromId The id of the existing ElasticBeanstalkApplicationVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastic_beanstalk_application_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElasticBeanstalkApplicationVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_elastic_beanstalk_application_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_elastic_beanstalk_application_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -179,11 +179,11 @@ export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource 
   }
 
   // force_delete - computed: false, optional: true, required: false
-  private _forceDelete?: boolean | cdktf.IResolvable; 
+  private _forceDelete?: boolean | cdktn.IResolvable; 
   public get forceDelete() {
     return this.getBooleanAttribute('force_delete');
   }
-  public set forceDelete(value: boolean | cdktf.IResolvable) {
+  public set forceDelete(value: boolean | cdktn.IResolvable) {
     this._forceDelete = value;
   }
   public resetForceDelete() {
@@ -237,11 +237,11 @@ export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource 
   }
 
   // process - computed: false, optional: true, required: false
-  private _process?: boolean | cdktf.IResolvable; 
+  private _process?: boolean | cdktn.IResolvable; 
   public get process() {
     return this.getBooleanAttribute('process');
   }
-  public set process(value: boolean | cdktf.IResolvable) {
+  public set process(value: boolean | cdktn.IResolvable) {
     this._process = value;
   }
   public resetProcess() {
@@ -306,84 +306,84 @@ export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application: cdktf.stringToTerraform(this._application),
-      bucket: cdktf.stringToTerraform(this._bucket),
-      description: cdktf.stringToTerraform(this._description),
-      force_delete: cdktf.booleanToTerraform(this._forceDelete),
-      id: cdktf.stringToTerraform(this._id),
-      key: cdktf.stringToTerraform(this._key),
-      name: cdktf.stringToTerraform(this._name),
-      process: cdktf.booleanToTerraform(this._process),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      application: cdktn.stringToTerraform(this._application),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      description: cdktn.stringToTerraform(this._description),
+      force_delete: cdktn.booleanToTerraform(this._forceDelete),
+      id: cdktn.stringToTerraform(this._id),
+      key: cdktn.stringToTerraform(this._key),
+      name: cdktn.stringToTerraform(this._name),
+      process: cdktn.booleanToTerraform(this._process),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application: {
-        value: cdktf.stringToHclTerraform(this._application),
+        value: cdktn.stringToHclTerraform(this._application),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_delete: {
-        value: cdktf.booleanToHclTerraform(this._forceDelete),
+        value: cdktn.booleanToHclTerraform(this._forceDelete),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key: {
-        value: cdktf.stringToHclTerraform(this._key),
+        value: cdktn.stringToHclTerraform(this._key),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       process: {
-        value: cdktf.booleanToHclTerraform(this._process),
+        value: cdktn.booleanToHclTerraform(this._process),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

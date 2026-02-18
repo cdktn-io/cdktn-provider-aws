@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsSesActiveReceiptRuleSetConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSesActiveReceiptRuleSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ses_active_receipt_rule_set#id DataAwsSesActiveReceiptRuleSet#id}
   *
@@ -30,7 +30,7 @@ export interface DataAwsSesActiveReceiptRuleSetConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set}
 */
-export class DataAwsSesActiveReceiptRuleSet extends cdktf.TerraformDataSource {
+export class DataAwsSesActiveReceiptRuleSet extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -41,14 +41,14 @@ export class DataAwsSesActiveReceiptRuleSet extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsSesActiveReceiptRuleSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsSesActiveReceiptRuleSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSesActiveReceiptRuleSet to import
   * @param importFromId The id of the existing DataAwsSesActiveReceiptRuleSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ses_active_receipt_rule_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSesActiveReceiptRuleSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ses_active_receipt_rule_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ses_active_receipt_rule_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -134,21 +134,21 @@ export class DataAwsSesActiveReceiptRuleSet extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

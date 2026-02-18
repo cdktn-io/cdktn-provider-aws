@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsConnectUserHierarchyStructureConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsConnectUserHierarchyStructureConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/connect_user_hierarchy_structure#id DataAwsConnectUserHierarchyStructure#id}
   *
@@ -34,8 +34,8 @@ export interface DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFive
 }
 
 export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveToTerraform(struct?: DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -44,8 +44,8 @@ export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveT
 
 
 export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveToHclTerraform(struct?: DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -53,7 +53,7 @@ export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveT
   return attrs;
 }
 
-export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -62,7 +62,7 @@ export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -97,14 +97,14 @@ export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveOutp
   }
 }
 
-export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveList extends cdktf.ComplexList {
+export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -119,8 +119,8 @@ export interface DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFour
 }
 
 export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelFourToTerraform(struct?: DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFour): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -129,8 +129,8 @@ export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelFourT
 
 
 export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelFourToHclTerraform(struct?: DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFour): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -138,7 +138,7 @@ export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelFourT
   return attrs;
 }
 
-export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -147,7 +147,7 @@ export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFourOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -182,14 +182,14 @@ export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFourOutp
   }
 }
 
-export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFourList extends cdktf.ComplexList {
+export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFourList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -204,8 +204,8 @@ export interface DataAwsConnectUserHierarchyStructureHierarchyStructureLevelOne 
 }
 
 export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelOneToTerraform(struct?: DataAwsConnectUserHierarchyStructureHierarchyStructureLevelOne): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -214,8 +214,8 @@ export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelOneTo
 
 
 export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelOneToHclTerraform(struct?: DataAwsConnectUserHierarchyStructureHierarchyStructureLevelOne): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -223,7 +223,7 @@ export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelOneTo
   return attrs;
 }
 
-export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -232,7 +232,7 @@ export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelOneOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -267,14 +267,14 @@ export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelOneOutpu
   }
 }
 
-export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelOneList extends cdktf.ComplexList {
+export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelOneList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -289,8 +289,8 @@ export interface DataAwsConnectUserHierarchyStructureHierarchyStructureLevelThre
 }
 
 export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelThreeToTerraform(struct?: DataAwsConnectUserHierarchyStructureHierarchyStructureLevelThree): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -299,8 +299,8 @@ export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelThree
 
 
 export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelThreeToHclTerraform(struct?: DataAwsConnectUserHierarchyStructureHierarchyStructureLevelThree): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -308,7 +308,7 @@ export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelThree
   return attrs;
 }
 
-export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -317,7 +317,7 @@ export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelThreeOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -352,14 +352,14 @@ export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelThreeOut
   }
 }
 
-export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelThreeList extends cdktf.ComplexList {
+export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelThreeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -374,8 +374,8 @@ export interface DataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwo 
 }
 
 export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwoToTerraform(struct?: DataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -384,8 +384,8 @@ export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwoTo
 
 
 export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwoToHclTerraform(struct?: DataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -393,7 +393,7 @@ export function dataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwoTo
   return attrs;
 }
 
-export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -402,7 +402,7 @@ export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwoOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -437,14 +437,14 @@ export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwoOutpu
   }
 }
 
-export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwoList extends cdktf.ComplexList {
+export class DataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -459,8 +459,8 @@ export interface DataAwsConnectUserHierarchyStructureHierarchyStructure {
 }
 
 export function dataAwsConnectUserHierarchyStructureHierarchyStructureToTerraform(struct?: DataAwsConnectUserHierarchyStructureHierarchyStructure): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -469,8 +469,8 @@ export function dataAwsConnectUserHierarchyStructureHierarchyStructureToTerrafor
 
 
 export function dataAwsConnectUserHierarchyStructureHierarchyStructureToHclTerraform(struct?: DataAwsConnectUserHierarchyStructureHierarchyStructure): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -478,7 +478,7 @@ export function dataAwsConnectUserHierarchyStructureHierarchyStructureToHclTerra
   return attrs;
 }
 
-export class DataAwsConnectUserHierarchyStructureHierarchyStructureOutputReference extends cdktf.ComplexObject {
+export class DataAwsConnectUserHierarchyStructureHierarchyStructureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -487,7 +487,7 @@ export class DataAwsConnectUserHierarchyStructureHierarchyStructureOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -537,14 +537,14 @@ export class DataAwsConnectUserHierarchyStructureHierarchyStructureOutputReferen
   }
 }
 
-export class DataAwsConnectUserHierarchyStructureHierarchyStructureList extends cdktf.ComplexList {
+export class DataAwsConnectUserHierarchyStructureHierarchyStructureList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -559,7 +559,7 @@ export class DataAwsConnectUserHierarchyStructureHierarchyStructureList extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/connect_user_hierarchy_structure aws_connect_user_hierarchy_structure}
 */
-export class DataAwsConnectUserHierarchyStructure extends cdktf.TerraformDataSource {
+export class DataAwsConnectUserHierarchyStructure extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -570,14 +570,14 @@ export class DataAwsConnectUserHierarchyStructure extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsConnectUserHierarchyStructure resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsConnectUserHierarchyStructure resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsConnectUserHierarchyStructure to import
   * @param importFromId The id of the existing DataAwsConnectUserHierarchyStructure that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/connect_user_hierarchy_structure#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsConnectUserHierarchyStructure to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_user_hierarchy_structure", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_user_hierarchy_structure", importId: importFromId, provider });
       }
 
   // ===========
@@ -673,28 +673,28 @@ export class DataAwsConnectUserHierarchyStructure extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

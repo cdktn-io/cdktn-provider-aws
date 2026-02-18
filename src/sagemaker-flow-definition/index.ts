@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SagemakerFlowDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerFlowDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_flow_definition#flow_definition_name SagemakerFlowDefinition#flow_definition_name}
   */
@@ -74,24 +74,24 @@ export interface SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActiva
 }
 
 export function sagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigToTerraform(struct?: SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference | SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    human_loop_activation_conditions: cdktf.stringToTerraform(struct!.humanLoopActivationConditions),
+    human_loop_activation_conditions: cdktn.stringToTerraform(struct!.humanLoopActivationConditions),
   }
 }
 
 
 export function sagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigToHclTerraform(struct?: SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference | SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     human_loop_activation_conditions: {
-      value: cdktf.stringToHclTerraform(struct!.humanLoopActivationConditions),
+      value: cdktn.stringToHclTerraform(struct!.humanLoopActivationConditions),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -102,14 +102,14 @@ export function sagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -157,8 +157,8 @@ export interface SagemakerFlowDefinitionHumanLoopActivationConfig {
 }
 
 export function sagemakerFlowDefinitionHumanLoopActivationConfigToTerraform(struct?: SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference | SagemakerFlowDefinitionHumanLoopActivationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -168,8 +168,8 @@ export function sagemakerFlowDefinitionHumanLoopActivationConfigToTerraform(stru
 
 
 export function sagemakerFlowDefinitionHumanLoopActivationConfigToHclTerraform(struct?: SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference | SagemakerFlowDefinitionHumanLoopActivationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -185,14 +185,14 @@ export function sagemakerFlowDefinitionHumanLoopActivationConfigToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -249,38 +249,38 @@ export interface SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceA
 }
 
 export function sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdToTerraform(struct?: SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference | SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cents: cdktf.numberToTerraform(struct!.cents),
-    dollars: cdktf.numberToTerraform(struct!.dollars),
-    tenth_fractions_of_a_cent: cdktf.numberToTerraform(struct!.tenthFractionsOfACent),
+    cents: cdktn.numberToTerraform(struct!.cents),
+    dollars: cdktn.numberToTerraform(struct!.dollars),
+    tenth_fractions_of_a_cent: cdktn.numberToTerraform(struct!.tenthFractionsOfACent),
   }
 }
 
 
 export function sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdToHclTerraform(struct?: SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference | SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cents: {
-      value: cdktf.numberToHclTerraform(struct!.cents),
+      value: cdktn.numberToHclTerraform(struct!.cents),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     dollars: {
-      value: cdktf.numberToHclTerraform(struct!.dollars),
+      value: cdktn.numberToHclTerraform(struct!.dollars),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tenth_fractions_of_a_cent: {
-      value: cdktf.numberToHclTerraform(struct!.tenthFractionsOfACent),
+      value: cdktn.numberToHclTerraform(struct!.tenthFractionsOfACent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -291,14 +291,14 @@ export function sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAm
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference extends cdktf.ComplexObject {
+export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -393,8 +393,8 @@ export interface SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice 
 }
 
 export function sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceToTerraform(struct?: SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference | SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -404,8 +404,8 @@ export function sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceTo
 
 
 export function sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceToHclTerraform(struct?: SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference | SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -421,14 +421,14 @@ export function sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference extends cdktf.ComplexObject {
+export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -511,74 +511,74 @@ export interface SagemakerFlowDefinitionHumanLoopConfig {
 }
 
 export function sagemakerFlowDefinitionHumanLoopConfigToTerraform(struct?: SagemakerFlowDefinitionHumanLoopConfigOutputReference | SagemakerFlowDefinitionHumanLoopConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    human_task_ui_arn: cdktf.stringToTerraform(struct!.humanTaskUiArn),
-    task_availability_lifetime_in_seconds: cdktf.numberToTerraform(struct!.taskAvailabilityLifetimeInSeconds),
-    task_count: cdktf.numberToTerraform(struct!.taskCount),
-    task_description: cdktf.stringToTerraform(struct!.taskDescription),
-    task_keywords: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.taskKeywords),
-    task_time_limit_in_seconds: cdktf.numberToTerraform(struct!.taskTimeLimitInSeconds),
-    task_title: cdktf.stringToTerraform(struct!.taskTitle),
-    workteam_arn: cdktf.stringToTerraform(struct!.workteamArn),
+    human_task_ui_arn: cdktn.stringToTerraform(struct!.humanTaskUiArn),
+    task_availability_lifetime_in_seconds: cdktn.numberToTerraform(struct!.taskAvailabilityLifetimeInSeconds),
+    task_count: cdktn.numberToTerraform(struct!.taskCount),
+    task_description: cdktn.stringToTerraform(struct!.taskDescription),
+    task_keywords: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.taskKeywords),
+    task_time_limit_in_seconds: cdktn.numberToTerraform(struct!.taskTimeLimitInSeconds),
+    task_title: cdktn.stringToTerraform(struct!.taskTitle),
+    workteam_arn: cdktn.stringToTerraform(struct!.workteamArn),
     public_workforce_task_price: sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceToTerraform(struct!.publicWorkforceTaskPrice),
   }
 }
 
 
 export function sagemakerFlowDefinitionHumanLoopConfigToHclTerraform(struct?: SagemakerFlowDefinitionHumanLoopConfigOutputReference | SagemakerFlowDefinitionHumanLoopConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     human_task_ui_arn: {
-      value: cdktf.stringToHclTerraform(struct!.humanTaskUiArn),
+      value: cdktn.stringToHclTerraform(struct!.humanTaskUiArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     task_availability_lifetime_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.taskAvailabilityLifetimeInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.taskAvailabilityLifetimeInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     task_count: {
-      value: cdktf.numberToHclTerraform(struct!.taskCount),
+      value: cdktn.numberToHclTerraform(struct!.taskCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     task_description: {
-      value: cdktf.stringToHclTerraform(struct!.taskDescription),
+      value: cdktn.stringToHclTerraform(struct!.taskDescription),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     task_keywords: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.taskKeywords),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.taskKeywords),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     task_time_limit_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.taskTimeLimitInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.taskTimeLimitInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     task_title: {
-      value: cdktf.stringToHclTerraform(struct!.taskTitle),
+      value: cdktn.stringToHclTerraform(struct!.taskTitle),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workteam_arn: {
-      value: cdktf.stringToHclTerraform(struct!.workteamArn),
+      value: cdktn.stringToHclTerraform(struct!.workteamArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -595,14 +595,14 @@ export function sagemakerFlowDefinitionHumanLoopConfigToHclTerraform(struct?: Sa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFlowDefinitionHumanLoopConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerFlowDefinitionHumanLoopConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -733,7 +733,7 @@ export class SagemakerFlowDefinitionHumanLoopConfigOutputReference extends cdktf
   // task_keywords - computed: false, optional: true, required: false
   private _taskKeywords?: string[]; 
   public get taskKeywords() {
-    return cdktf.Fn.tolist(this.getListAttribute('task_keywords'));
+    return cdktn.Fn.tolist(this.getListAttribute('task_keywords'));
   }
   public set taskKeywords(value: string[]) {
     this._taskKeywords = value;
@@ -812,24 +812,24 @@ export interface SagemakerFlowDefinitionHumanLoopRequestSource {
 }
 
 export function sagemakerFlowDefinitionHumanLoopRequestSourceToTerraform(struct?: SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference | SagemakerFlowDefinitionHumanLoopRequestSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_managed_human_loop_request_source: cdktf.stringToTerraform(struct!.awsManagedHumanLoopRequestSource),
+    aws_managed_human_loop_request_source: cdktn.stringToTerraform(struct!.awsManagedHumanLoopRequestSource),
   }
 }
 
 
 export function sagemakerFlowDefinitionHumanLoopRequestSourceToHclTerraform(struct?: SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference | SagemakerFlowDefinitionHumanLoopRequestSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_managed_human_loop_request_source: {
-      value: cdktf.stringToHclTerraform(struct!.awsManagedHumanLoopRequestSource),
+      value: cdktn.stringToHclTerraform(struct!.awsManagedHumanLoopRequestSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -840,14 +840,14 @@ export function sagemakerFlowDefinitionHumanLoopRequestSourceToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference extends cdktf.ComplexObject {
+export class SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -897,31 +897,31 @@ export interface SagemakerFlowDefinitionOutputConfig {
 }
 
 export function sagemakerFlowDefinitionOutputConfigToTerraform(struct?: SagemakerFlowDefinitionOutputConfigOutputReference | SagemakerFlowDefinitionOutputConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
-    s3_output_path: cdktf.stringToTerraform(struct!.s3OutputPath),
+    kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
+    s3_output_path: cdktn.stringToTerraform(struct!.s3OutputPath),
   }
 }
 
 
 export function sagemakerFlowDefinitionOutputConfigToHclTerraform(struct?: SagemakerFlowDefinitionOutputConfigOutputReference | SagemakerFlowDefinitionOutputConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_output_path: {
-      value: cdktf.stringToHclTerraform(struct!.s3OutputPath),
+      value: cdktn.stringToHclTerraform(struct!.s3OutputPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -932,14 +932,14 @@ export function sagemakerFlowDefinitionOutputConfigToHclTerraform(struct?: Sagem
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFlowDefinitionOutputConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerFlowDefinitionOutputConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1003,7 +1003,7 @@ export class SagemakerFlowDefinitionOutputConfigOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_flow_definition aws_sagemaker_flow_definition}
 */
-export class SagemakerFlowDefinition extends cdktf.TerraformResource {
+export class SagemakerFlowDefinition extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1014,14 +1014,14 @@ export class SagemakerFlowDefinition extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SagemakerFlowDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SagemakerFlowDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerFlowDefinition to import
   * @param importFromId The id of the existing SagemakerFlowDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_flow_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerFlowDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_flow_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_flow_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -1226,12 +1226,12 @@ export class SagemakerFlowDefinition extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      flow_definition_name: cdktf.stringToTerraform(this._flowDefinitionName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      flow_definition_name: cdktn.stringToTerraform(this._flowDefinitionName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       human_loop_activation_config: sagemakerFlowDefinitionHumanLoopActivationConfigToTerraform(this._humanLoopActivationConfig.internalValue),
       human_loop_config: sagemakerFlowDefinitionHumanLoopConfigToTerraform(this._humanLoopConfig.internalValue),
       human_loop_request_source: sagemakerFlowDefinitionHumanLoopRequestSourceToTerraform(this._humanLoopRequestSource.internalValue),
@@ -1242,37 +1242,37 @@ export class SagemakerFlowDefinition extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       flow_definition_name: {
-        value: cdktf.stringToHclTerraform(this._flowDefinitionName),
+        value: cdktn.stringToHclTerraform(this._flowDefinitionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
